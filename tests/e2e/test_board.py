@@ -104,7 +104,7 @@ def reach_promotion(page: Page) -> None:
 
 
 def test_promotion_picker_is_an_overlay_with_four_pieces(page: Page, seed_prefs):
-    seed_prefs(["sicilian-alapin.main"], color="white", timeControl="none")
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     sent = fake_api(page, PROMOTION_LINE)
     page.goto("/")
     play(page)
@@ -133,7 +133,7 @@ def test_promotion_picker_is_an_overlay_with_four_pieces(page: Page, seed_prefs)
 
 
 def test_check_highlight_and_checkmate_ends_the_game(page: Page, seed_prefs):
-    seed_prefs(["caro-kann.advance.short"], color="black", timeControl="none")
+    seed_prefs(["1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3"], color="black", timeControl="none")
     sent = fake_api(page, [("f2f3", "f3"), ("g2g4", "g4")], first_bot_move=True)
     page.goto("/")
     play(page)
@@ -148,7 +148,7 @@ def test_check_highlight_and_checkmate_ends_the_game(page: Page, seed_prefs):
 
 
 def test_check_chip_on_the_users_king(page: Page, seed_prefs):
-    seed_prefs(["sicilian-alapin.main"], color="white", timeControl="none")
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     fake_api(page, [("e7e6", "e6"), ("f8b4", "Bb4+")])
     page.goto("/")
     play(page)
@@ -166,7 +166,7 @@ def has_class(page: Page, name: str, css_class: str) -> bool:
 
 
 def test_highlights_selected_targets_captures_and_last_move(page: Page, seed_prefs):
-    seed_prefs(["sicilian-alapin.main"], color="white", timeControl="none")
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     fake_api(page, [("d7d5", "d5"), ("g8f6", "Nf6")])
     page.goto("/")
     play(page)
@@ -196,7 +196,7 @@ def test_highlights_selected_targets_captures_and_last_move(page: Page, seed_pre
 
 
 def test_illegal_targets_do_not_move(page: Page, seed_prefs):
-    seed_prefs(["sicilian-alapin.main"], color="white", timeControl="none")
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     page.goto("/")
     play(page)
     wait_for_your_move(page)
@@ -206,7 +206,7 @@ def test_illegal_targets_do_not_move(page: Page, seed_prefs):
 
 
 def test_drag_dropped_outside_keeps_the_piece(page: Page, seed_prefs):
-    seed_prefs(["sicilian-alapin.main"], color="white", timeControl="none")
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     page.goto("/")
     play(page)
     wait_for_your_move(page)
@@ -226,7 +226,7 @@ def test_drag_dropped_outside_keeps_the_piece(page: Page, seed_prefs):
 def test_touch_drag_moves_a_piece(browser, seed_prefs, device, page: Page):
     if device != "mobile":
         return
-    seed_prefs(["sicilian-alapin.main"], color="white", timeControl="none")
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     page.goto("/")
     play(page)
     wait_for_your_move(page)
@@ -251,7 +251,7 @@ def test_touch_drag_moves_a_piece(browser, seed_prefs, device, page: Page):
 
 
 def test_board_flips_to_the_users_color_with_coordinates(page: Page, seed_prefs):
-    seed_prefs(["caro-kann.advance.short"], color="white", timeControl="none")
+    seed_prefs(["1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3"], color="white", timeControl="none")
     page.goto("/")
     first = page.locator(".square").first
     expect(first).to_have_attribute("data-square", "a8")

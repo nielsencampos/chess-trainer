@@ -47,11 +47,11 @@ def page(context) -> Page:
 def seed_prefs(page: Page, all_variants):
     """Stores setup preferences so a test starts with exactly the given variations selected."""
 
-    def seed(selected: list[str], **prefs) -> None:
-        unselected = [v["variant_id"] for v in all_variants if v["variant_id"] not in selected]
-        stored = json.dumps(
-            {"unselected": unselected, "pace": "instant", "level": "warmup", **prefs}
-        )
+    ids_by_pgn = {variant["pgn"]: variant["variant_id"] for variant in all_variants}
+
+    def seed(selected_pgns: list[str], **prefs) -> None:
+        selected = [ids_by_pgn[pgn] for pgn in selected_pgns]
+        stored = json.dumps({"selected": selected, "pace": "instant", "level": "warmup", **prefs})
         page.add_init_script(
             f"if (!localStorage.getItem('chess-trainer.prefs')) "
             f"localStorage.setItem('chess-trainer.prefs', {json.dumps(stored)});"

@@ -33,6 +33,9 @@ export function applyI18n(root) {
   for (const element of root.querySelectorAll("[data-i18n]")) {
     element.textContent = t(element.getAttribute("data-i18n"));
   }
+  for (const element of root.querySelectorAll("[data-i18n-placeholder]")) {
+    element.setAttribute("placeholder", t(element.getAttribute("data-i18n-placeholder")));
+  }
 }
 
 /**

@@ -6,53 +6,144 @@ from playwright.sync_api import Page, expect
 
 from tests.e2e.conftest import click_move, play, wait_for_your_move
 
-ALAPIN = "sicilian-alapin.main"
+ALAPIN = "1. e4 c5 2. c3"
 
 
-def test_openings_follow_the_color_and_variations_collapse(page: Page):
+def family(page: Page, name: str):
+    return page.locator(f'.opening[data-repertoire="{name}"]')
+
+
+def hold_repertoires(page: Page) -> list:
+    """Keeps the book request waiting, to test the page before the book has arrived."""
+    held: list = []
+
+    def hold(route) -> None:
+        held.append(route)
+
+    page.route("**/api/repertoires", hold)
+    return held
+
+
+def wait_until_held(page: Page, held: list) -> None:
+    for _ in range(100):
+        if held:
+            return
+        page.wait_for_timeout(50)
+    raise AssertionError("the book was never requested")
+
+
+def test_all_catalog_families_are_listed_and_nothing_starts_selected(page: Page):
     page.goto("/")
-    openings = page.locator("#openings .opening summary > span:not(.opening-count)")
-    expect(openings).to_have_text(
-        [
-            "Sicilian Defense: Alapin",
-            "Sicilian Defense: Moscow",
-            "Sicilian Defense: Rossolimo",
-            "Vienna Game",
-        ]
-    )
-    page.locator('input[name="color"][value="black"]').check()
-    expect(openings).to_have_text(["Caro-Kann Defense", "Sicilian Defense: Taimanov"])
-
-    caro = page.locator('.opening[data-repertoire="caro-kann"]')
-    expect(caro.locator(".variants")).to_be_hidden()
-    caro.locator("summary > span").first.click()
-    expect(caro.locator(".variants")).to_be_visible()
-    expect(caro.locator(".variant")).to_have_count(17)
-    expect(caro.locator(".opening-count")).to_have_text("17/17")
-
-
-def test_multi_select_and_play_needs_a_selection(page: Page):
-    page.goto("/")
-    alapin = page.locator('.opening[data-repertoire="sicilian-alapin"]')
-    alapin.locator("summary > span").first.click()
-    alapin.locator('input[value="sicilian-alapin.stoltz"]').uncheck()
-    expect(alapin.locator(".opening-count")).to_have_text("3/4")
-    assert alapin.locator(".opening-check").evaluate("(box) => box.indeterminate")
-
-    for repertoire in ("sicilian-alapin", "sicilian-moscow", "sicilian-rossolimo", "vienna"):
-        box = page.locator(f'.opening[data-repertoire="{repertoire}"] .opening-check')
-        box.check()
-        box.uncheck()
-    expect(alapin.locator(".opening-count")).to_have_text("0/4")
+    expect(page.locator("#openings .opening")).to_have_count(149)
+    expect(page.locator("#selected-total")).to_have_text("0 selected")
     expect(page.locator("#play")).to_be_disabled()
     expect(page.locator("#setup-hint")).to_be_visible()
 
-    alapin.locator(f'input[value="{ALAPIN}"]').check()
+
+def test_play_stays_disabled_until_the_book_has_loaded(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none")
+    held = hold_repertoires(page)
+    page.goto("/")
+    expect(page.locator("#play")).to_be_disabled()
+    wait_until_held(page, held)
+    expect(page.locator("#play")).to_be_disabled()
+    held[0].continue_()
     expect(page.locator("#play")).to_be_enabled()
-    expect(page.locator("#setup-hint")).to_be_hidden()
+
+
+def test_same_openings_for_both_colors_and_board_flips(page: Page):
+    page.goto("/")
+    expect(page.locator("#openings .opening")).to_have_count(149)
+    page.locator('input[name="color"][value="black"]').check()
+    expect(page.locator("#openings .opening")).to_have_count(149)
+    expect(page.locator(".square").first).to_have_attribute("data-square", "h1")
+
+
+def test_families_collapse_and_render_lines_when_opened(page: Page):
+    page.goto("/")
+    caro = family(page, "caro-kann-defense")
+    expect(caro.locator(".opening-count")).to_have_text("0/110")
+    expect(caro.locator(".variant")).to_have_count(0)
+    caro.locator(".opening-name").click()
+    expect(caro.locator(".variant")).to_have_count(110)
+    expect(caro.locator(".variant-moves").first).to_contain_text("1. e4 c6")
+
+
+def test_family_checkbox_selection_persists(page: Page):
+    page.goto("/")
+    caro = family(page, "caro-kann-defense")
+    caro.locator(".opening-check").check()
+    expect(caro.locator(".opening-count")).to_have_text("110/110")
+    expect(page.locator("#selected-total")).to_have_text("110 selected")
+    expect(page.locator("#play")).to_be_enabled()
+
+    caro.locator(".opening-name").click()
+    caro.locator(".variant input").first.uncheck()
+    expect(caro.locator(".opening-count")).to_have_text("109/110")
+    assert caro.locator(".opening-check").evaluate("(box) => box.indeterminate")
 
     page.reload()
-    expect(alapin.locator(".opening-count")).to_have_text("1/4")
+    expect(family(page, "caro-kann-defense").locator(".opening-count")).to_have_text("109/110")
+    page.locator("#clear-selection").click()
+    expect(page.locator("#selected-total")).to_have_text("0 selected")
+    expect(page.locator("#play")).to_be_disabled()
+
+
+def test_search_by_name_eco_and_moves(page: Page):
+    page.goto("/")
+    search = page.locator("#opening-search")
+
+    search.fill("taimanov")
+    sicilian = family(page, "sicilian-defense")
+    expect(sicilian.locator(".variant").first).to_be_visible()
+    expect(sicilian.locator(".variant-text").first).to_contain_text("Taimanov")
+
+    search.fill("B46")
+    expect(sicilian.locator(".variant-eco").first).to_have_text("B46")
+
+    search.fill("1. e4 c5 2. c3")
+    expect(sicilian.locator(".variant").first).to_be_visible()
+    expect(sicilian.locator(".variant-moves").first).to_contain_text("1. e4 c5 2. c3")
+
+    search.fill("zzzz")
+    expect(page.locator("#no-matches")).to_be_visible()
+    expect(page.locator("#openings .opening")).to_have_count(0)
+
+    search.fill("")
+    expect(page.locator("#openings .opening")).to_have_count(149)
+
+
+def test_search_typed_before_the_book_loads_still_applies(page: Page):
+    held = hold_repertoires(page)
+    page.goto("/")
+    page.locator("#opening-search").fill("taimanov")
+    wait_until_held(page, held)
+    held[0].continue_()
+    variant = family(page, "sicilian-defense").locator(".variant-text").first
+    expect(variant).to_contain_text("Taimanov")
+    expect(page.locator("#openings .opening")).not_to_have_count(149)
+
+
+def test_family_checkbox_during_a_search_only_selects_the_results(page: Page):
+    page.goto("/")
+    page.locator("#opening-search").fill("B46")
+    sicilian = family(page, "sicilian-defense")
+    sicilian.locator(".variant").first.wait_for()
+    results = sicilian.locator(".variant").count()
+    sicilian.locator(".opening-check").check()
+    expect(page.locator("#selected-total")).to_have_text(f"{results} selected")
+
+
+def test_game_from_the_ui_selection(page: Page):
+    page.goto("/")
+    page.locator("#opening-search").fill(ALAPIN)
+    line = page.locator(".variant", has_text="Alapin Variation").first
+    line.locator("input").check()
+    expect(page.locator("#selected-total")).not_to_have_text("0 selected")
+    page.locator('input[name="pace"][value="instant"]').check()
+    page.locator("#time-control").select_option("none")
+    play(page)
+    wait_for_your_move(page)
 
 
 def test_time_controls_and_levels_are_offered(page: Page):

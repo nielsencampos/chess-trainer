@@ -15,8 +15,8 @@ from tests.e2e.conftest import (
     wait_for_your_move,
 )
 
-ALAPIN = "sicilian-alapin.main"
-CARO_SHORT = "caro-kann.advance.short"
+ALAPIN = "1. e4 c5 2. c3"
+CARO_SHORT = "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3"
 
 
 def resign(page: Page) -> None:
@@ -51,7 +51,7 @@ def test_book_then_engine_then_resign_with_end_card(page: Page, seed_prefs, devi
     expect(page.locator("#end-result")).to_have_text("You lost")
     expect(page.locator("#end-termination")).to_have_text("by resignation")
     expect(page.locator("#end-variation")).to_contain_text("B22")
-    expect(page.locator("#end-variation")).to_contain_text("Alapin 2.c3")
+    expect(page.locator("#end-variation")).to_contain_text("Sicilian Defense: Alapin Variation")
     expect(page.locator("#end-theory")).to_have_text("until move 2 (3 of 4 plies)")
     expect(page.locator("#end-deviations")).to_contain_text("No deviations.")
     href = page.locator("#lichess-link").get_attribute("href")
@@ -83,7 +83,7 @@ def test_deviation_is_marked_and_listed_with_the_expected_move(page: Page, seed_
 
 
 def test_unselected_variation_counts_as_a_deviation(page: Page, seed_prefs):
-    seed_prefs(["sicilian-rossolimo.main"], color="white", timeControl="none")
+    seed_prefs(["1. e4 c5 2. Nf3 Nc6 3. Bb5"], color="white", timeControl="none")
     page.goto("/")
     play(page)
     wait_for_your_move(page)
@@ -96,7 +96,7 @@ def test_unselected_variation_counts_as_a_deviation(page: Page, seed_prefs):
 
 
 def test_selected_variation_switch_is_not_a_deviation(page: Page, seed_prefs):
-    seed_prefs(["sicilian-rossolimo.main", ALAPIN], color="white", timeControl="none")
+    seed_prefs(["1. e4 c5 2. Nf3 Nc6 3. Bb5", ALAPIN], color="white", timeControl="none")
     page.goto("/")
     play(page)
     wait_for_your_move(page)

@@ -40,7 +40,7 @@ export function renderEndCard(summary) {
   byId("end-termination").textContent = t(`end.termination.${summary.termination}`);
 
   const eco = summary.eco ? `${summary.eco} · ` : "";
-  byId("end-variation").textContent = `${eco}${localizedName(summary.variant_names)}`;
+  byId("end-variation").textContent = `${eco}${summary.opening ?? localizedName(summary.variant_names)}`;
 
   const theoryPlies = summary.state.theory_until_ply;
   byId("end-theory").textContent = theoryPlies === 0

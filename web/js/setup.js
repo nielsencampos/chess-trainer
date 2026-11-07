@@ -1,4 +1,5 @@
 // The setup card: color, openings and variations, level, clock, pace, options.
+// The whole catalog is selectable, so families render their lines only when opened.
 
 import { localizedName, t } from "./i18n.js";
 import { getPref, setPref } from "./prefs.js";
@@ -11,9 +12,13 @@ export const TIME_CONTROLS = {
   none: null,
 };
 
+const SEARCH_DEBOUNCE_MS = 150;
+const MAX_SEARCH_RESULTS_PER_FAMILY = 200;
+
 /**
- * @typedef {{variant_id: string, names: Record<string, string>, eco: string | null}} VariantInfo
- * @typedef {{repertoire_id: string, color: string, names: Record<string, string>, variants: VariantInfo[]}} RepertoireInfo
+ * @typedef {{variant_id: string, names: Record<string, string>, eco: string | null,
+ *   opening: string | null, pgn: string}} VariantInfo
+ * @typedef {{repertoire_id: string, names: Record<string, string>, variants: VariantInfo[]}} RepertoireInfo
  * @typedef {{
  *   color: "white" | "black", variant_ids: string[], level: string, pace: "human" | "instant",
  *   time_control: string, scoresheet: boolean, warning: boolean, autoplay: boolean,
@@ -26,6 +31,14 @@ const radios = (selector) => /** @type {NodeListOf<HTMLInputElement>} */ (docume
 /** @param {string} id */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
+/**
+ * @param {VariantInfo} variant
+ * @param {string} query  Lowercase.
+ */
+function matches(variant, query) {
+  return [variant.opening, variant.eco, variant.pgn].some((text) => text?.toLowerCase().includes(query));
+}
+
 export class SetupCard {
   /**
    * @param {RepertoireInfo[]} repertoires
@@ -35,10 +48,15 @@ export class SetupCard {
    * @param {(setup: GameSetup) => void} onPlay
    */
   constructor(repertoires, levels, defaultLevel, onColorChange, onPlay) {
-    this.repertoires = repertoires;
+    this.repertoires = [...repertoires].sort((a, b) =>
+      localizedName(a.names).localeCompare(localizedName(b.names)),
+    );
     this.onColorChange = onColorChange;
+    const known = new Set(repertoires.flatMap((rep) => rep.variants.map((v) => v.variant_id)));
     /** @type {Set<string>} */
-    this.unselected = new Set(getPref("unselected", []));
+    this.selected = new Set(getPref("selected", []).filter((id) => known.has(id)));
+    // The field is usable before the book arrives, so it may already have text.
+    this.query = byId("opening-search").value.trim().toLowerCase();
 
     const levelSelect = byId("level");
     for (const key of levels) levelSelect.add(new Option(t(`level.${key}`), key));
@@ -58,10 +76,23 @@ export class SetupCard {
 
     for (const radio of radios('input[name="color"]')) {
       radio.addEventListener("change", () => {
-        this.renderOpenings();
+        setPref("color", this.color);
         this.onColorChange(this.color);
       });
     }
+    let debounce = 0;
+    byId("opening-search").addEventListener("input", (/** @type {any} */ event) => {
+      clearTimeout(debounce);
+      debounce = setTimeout(() => {
+        this.query = event.target.value.trim().toLowerCase();
+        this.renderOpenings();
+      }, SEARCH_DEBOUNCE_MS);
+    });
+    byId("clear-selection").addEventListener("click", () => {
+      this.selected.clear();
+      this.saveSelection();
+      this.renderOpenings();
+    });
     byId("play").addEventListener("click", () => {
       const setup = this.read();
       this.save(setup);
@@ -80,7 +111,9 @@ export class SetupCard {
 
   /** @param {string} name */
   radioValue(name) {
-    return document.querySelector(`input[name="${name}"]:checked`)?.value;
+    return /** @type {HTMLInputElement | null} */ (
+      document.querySelector(`input[name="${name}"]:checked`)
+    )?.value;
   }
 
   /** @returns {"white" | "black"} */
@@ -90,25 +123,27 @@ export class SetupCard {
 
   renderOpenings() {
     const container = byId("openings");
-    container.replaceChildren();
-    const openState = new Set(getPref("openRepertoires", []));
+    const elements = [];
     for (const repertoire of this.repertoires) {
-      if (repertoire.color !== this.color) continue;
-      container.append(this.openingElement(repertoire, openState.has(repertoire.repertoire_id)));
+      const familyMatches = localizedName(repertoire.names).toLowerCase().includes(this.query);
+      const shown = this.query && !familyMatches
+        ? repertoire.variants.filter((variant) => matches(variant, this.query))
+        : repertoire.variants;
+      if (shown.length > 0) elements.push(this.familyElement(repertoire, shown));
     }
-    this.updatePlay();
+    container.replaceChildren(...elements);
+    byId("no-matches").hidden = elements.length > 0;
+    this.updateSelectionState();
   }
 
   /**
    * @param {RepertoireInfo} repertoire
-   * @param {boolean} isOpen
+   * @param {VariantInfo[]} shown  The lines the search left; all of them without a search.
    */
-  openingElement(repertoire, isOpen) {
+  familyElement(repertoire, shown) {
     const details = document.createElement("details");
     details.className = "opening";
     details.dataset.repertoire = repertoire.repertoire_id;
-    details.open = isOpen;
-    details.addEventListener("toggle", () => this.saveOpenState());
 
     const summary = document.createElement("summary");
     const all = document.createElement("input");
@@ -116,6 +151,7 @@ export class SetupCard {
     all.className = "opening-check";
     all.setAttribute("aria-label", localizedName(repertoire.names));
     const name = document.createElement("span");
+    name.className = "opening-name";
     name.textContent = localizedName(repertoire.names);
     const count = document.createElement("span");
     count.className = "opening-count";
@@ -123,84 +159,84 @@ export class SetupCard {
 
     const list = document.createElement("div");
     list.className = "variants";
-    /** @type {HTMLInputElement[]} */
-    const boxes = [];
     const refresh = () => {
-      const selected = boxes.filter((box) => box.checked).length;
-      all.checked = selected === boxes.length;
-      all.indeterminate = selected > 0 && selected < boxes.length;
-      count.textContent = t("setup.selectedCount", { selected, total: boxes.length });
+      const selected = shown.filter((variant) => this.selected.has(variant.variant_id)).length;
+      all.checked = selected === shown.length;
+      all.indeterminate = selected > 0 && selected < shown.length;
+      count.textContent = t("setup.selectedCount", { selected, total: shown.length });
     };
-    for (const variant of repertoire.variants) {
-      const label = document.createElement("label");
-      label.className = "variant";
-      const box = document.createElement("input");
-      box.type = "checkbox";
-      box.value = variant.variant_id;
-      box.checked = !this.unselected.has(variant.variant_id);
-      box.addEventListener("change", () => {
-        this.toggle(variant.variant_id, box.checked);
-        refresh();
-      });
-      const text = document.createElement("span");
-      text.textContent = localizedName(variant.names);
-      const eco = document.createElement("span");
-      eco.className = "variant-eco";
-      eco.textContent = variant.eco ?? "";
-      label.append(box, text, eco);
-      list.append(label);
-      boxes.push(box);
-    }
     all.addEventListener("click", (event) => event.stopPropagation());
     all.addEventListener("change", () => {
-      for (const box of boxes) {
-        box.checked = all.checked;
-        this.toggle(box.value, all.checked);
+      for (const variant of shown) {
+        if (all.checked) this.selected.add(variant.variant_id);
+        else this.selected.delete(variant.variant_id);
       }
+      for (const box of list.querySelectorAll("input")) box.checked = all.checked;
+      this.saveSelection();
       refresh();
+    });
+    details.addEventListener("toggle", () => {
+      if (details.open && !list.hasChildNodes()) {
+        list.append(...shown.map((variant) => this.variantElement(variant, refresh)));
+      }
     });
     refresh();
     details.append(summary, list);
+    // Show results right away when a search narrowed this family down.
+    if (this.query && shown.length <= MAX_SEARCH_RESULTS_PER_FAMILY) details.open = true;
     return details;
   }
 
   /**
-   * @param {string} variantId
-   * @param {boolean} selected
+   * @param {VariantInfo} variant
+   * @param {() => void} refresh
    */
-  toggle(variantId, selected) {
-    if (selected) this.unselected.delete(variantId);
-    else this.unselected.add(variantId);
-    setPref("unselected", [...this.unselected]);
-    this.updatePlay();
+  variantElement(variant, refresh) {
+    const label = document.createElement("label");
+    label.className = "variant";
+    const box = document.createElement("input");
+    box.type = "checkbox";
+    box.value = variant.variant_id;
+    box.checked = this.selected.has(variant.variant_id);
+    box.addEventListener("change", () => {
+      if (box.checked) this.selected.add(variant.variant_id);
+      else this.selected.delete(variant.variant_id);
+      this.saveSelection();
+      refresh();
+    });
+    const text = document.createElement("span");
+    text.className = "variant-text";
+    const name = document.createElement("span");
+    name.textContent = localizedName(variant.names);
+    const moves = document.createElement("span");
+    moves.className = "variant-moves";
+    moves.textContent = variant.pgn;
+    text.append(name, moves);
+    const eco = document.createElement("span");
+    eco.className = "variant-eco";
+    eco.textContent = variant.eco ?? "";
+    label.append(box, text, eco);
+    return label;
   }
 
-  saveOpenState() {
-    const open = [...document.querySelectorAll(".opening[open]")].map(
-      (element) => /** @type {HTMLElement} */ (element).dataset.repertoire,
-    );
-    setPref("openRepertoires", open);
+  saveSelection() {
+    setPref("selected", [...this.selected]);
+    this.updateSelectionState();
   }
 
-  selectedVariantIds() {
-    return this.repertoires
-      .filter((repertoire) => repertoire.color === this.color)
-      .flatMap((repertoire) => repertoire.variants)
-      .map((variant) => variant.variant_id)
-      .filter((id) => !this.unselected.has(id));
-  }
-
-  updatePlay() {
-    const hasSelection = this.selectedVariantIds().length > 0;
-    byId("play").disabled = !hasSelection;
-    byId("setup-hint").hidden = hasSelection;
+  updateSelectionState() {
+    const total = this.selected.size;
+    byId("selected-total").textContent = t("setup.selectedTotal", { count: total });
+    byId("clear-selection").hidden = total === 0;
+    byId("play").disabled = total === 0;
+    byId("setup-hint").hidden = total > 0;
   }
 
   /** @returns {GameSetup} */
   read() {
     return {
       color: this.color,
-      variant_ids: this.selectedVariantIds(),
+      variant_ids: [...this.selected],
       level: byId("level").value,
       pace: /** @type {"human" | "instant"} */ (this.radioValue("pace")),
       time_control: byId("time-control").value,

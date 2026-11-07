@@ -440,7 +440,8 @@ export class GameController {
       chips.push([t("chip.gameOver"), ""]);
     } else if (this.botThinking) {
       chips.push([t("chip.botThinking"), ""]);
-    } else {
+    } else if (this.gameId !== null) {
+      // Without a game id the server has not answered yet and the board is still locked.
       chips.push([t("chip.yourMove"), "chip-accent"]);
     }
     if (warning || this.over) {
