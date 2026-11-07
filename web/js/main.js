@@ -6,6 +6,7 @@ import { GameController } from "./game.js";
 import { initI18n, t } from "./i18n.js";
 import { initLayout } from "./layout.js";
 import { getPref, setPref } from "./prefs.js";
+import { Review } from "./review.js";
 import { SavedGames } from "./saved.js";
 import { SetupCard } from "./setup.js";
 import { initSoundControls } from "./sound.js";
@@ -61,10 +62,26 @@ async function main() {
       defaultLevel,
       timeControls,
       (color) => game.renderIdle(color),
-      (chosen) => void game.start(chosen),
+      (chosen) => {
+        review.close();
+        void game.start(chosen);
+      },
+      (variantId) => void review.openLine(variantId),
+    );
+    const review = new Review(
+      board,
+      () => game.renderIdle(setup.color),
+      (gameId, ply) => {
+        byId("tab-from-saved").click();
+        void setup.chooseSaved(gameId, ply);
+      },
     );
     game.renderIdle(setup.color);
-    new SavedGames((key) => setup.timeLabelFor(key));
+    new SavedGames(
+      (key) => setup.timeLabelFor(key),
+      setup,
+      (gameId) => void review.openGame(gameId),
+    );
     const { game: active } = await api.activeGame();
     if (active) game.resume(active, setup.clockFor(active.setup.time_control));
     const buildTag = health.engine.build_tag ? ` (${health.engine.build_tag})` : "";
