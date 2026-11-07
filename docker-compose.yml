@@ -1,0 +1,13 @@
+services:
+  chess-trainer:
+    image: chess-trainer:local
+    build:
+      context: .
+      args:
+        STOCKFISH_VERSION: ${STOCKFISH_VERSION:-latest}
+    ports:
+      # Published on loopback only. The app has no login: set CHESS_TRAINER_BIND to expose it
+      # to your network only if you trust that network.
+      - "${CHESS_TRAINER_BIND:-127.0.0.1}:${CHESS_TRAINER_PORT:-8000}:8000"
+    init: true
+    restart: unless-stopped
