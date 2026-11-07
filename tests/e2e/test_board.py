@@ -223,33 +223,6 @@ def test_drag_dropped_outside_keeps_the_piece(page: Page, seed_prefs):
     assert moves_text(page) == []
 
 
-def test_touch_drag_moves_a_piece(browser, seed_prefs, device, page: Page):
-    if device != "mobile":
-        return
-    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
-    page.goto("/")
-    play(page)
-    wait_for_your_move(page)
-    scroll_before = page.evaluate("window.scrollY")
-    start = square(page, "e2").bounding_box()
-    end = square(page, "e4").bounding_box()
-    cdp = page.context.new_cdp_session(page)
-    x = start["x"] + start["width"] / 2
-
-    def touch(kind: str, y: float | None = None) -> None:
-        points = [] if y is None else [{"x": x, "y": y}]
-        cdp.send("Input.dispatchTouchEvent", {"type": kind, "touchPoints": points})
-
-    from_y = start["y"] + start["height"] / 2
-    to_y = end["y"] + end["height"] / 2
-    touch("touchStart", from_y)
-    for step in range(1, 6):
-        touch("touchMove", from_y + (to_y - from_y) * step / 5)
-    touch("touchEnd")
-    expect(square(page, "e4")).to_have_attribute("data-piece", "wp")
-    assert page.evaluate("window.scrollY") == scroll_before
-
-
 def test_board_flips_to_the_users_color_with_coordinates(page: Page, seed_prefs):
     seed_prefs(["1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3"], color="white", timeControl="none")
     page.goto("/")

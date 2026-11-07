@@ -58,7 +58,7 @@ jobs:
           uv sync --frozen
           scripts/extract-stockfish.sh chess-trainer:local
           STOCKFISH_PATH=.cache/stockfish uv run pytest -m engine
-      - name: Browser tests (desktop and mobile)
+      - name: Browser tests
         if: matrix.arch == 'amd64'
         run: |
           uv run playwright install --with-deps chromium

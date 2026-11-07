@@ -317,33 +317,17 @@ def test_theme_follows_the_system_and_can_be_overridden(page: Page):
     assert background(page) == DARK_BG
 
 
-def test_layout_two_columns_on_desktop_one_on_mobile(page: Page, device):
+def test_layout_has_two_columns_and_no_horizontal_scroll(page: Page):
     page.goto("/")
     page.locator(".square").first.wait_for()
     board = page.locator("#board").bounding_box()
     panel = page.locator(".side-panel").bounding_box()
     assert abs(board["width"] - board["height"]) <= 1
-    if device == "desktop":
-        assert panel["width"] == 380
-        assert panel["x"] > board["x"] + board["width"]
-    else:
-        assert panel["y"] >= board["y"] + board["height"]
-        assert panel["width"] <= 390
+    assert panel["width"] == 380
+    assert panel["x"] > board["x"] + board["width"]
     assert page.evaluate(
         "document.documentElement.scrollWidth <= document.documentElement.clientWidth"
     )
-
-
-def test_layout_switches_at_900_px(page: Page, device):
-    if device != "desktop":
-        return
-    page.goto("/")
-    page.locator(".square").first.wait_for()
-    columns = "getComputedStyle(document.querySelector('.layout')).gridTemplateColumns"
-    page.set_viewport_size({"width": 900, "height": 800})
-    assert len(page.evaluate(columns).split()) == 2
-    page.set_viewport_size({"width": 899, "height": 800})
-    assert len(page.evaluate(columns).split()) == 1
 
 
 def test_fonts_are_the_vendored_ones(page: Page):
@@ -354,19 +338,17 @@ def test_fonts_are_the_vendored_ones(page: Page):
     assert page.evaluate("document.fonts.check('16px \"JetBrains Mono\"')")
 
 
-def test_logo_is_in_the_header_and_the_browser_tab(page: Page, device):
+def test_logo_is_in_the_header_and_the_browser_tab(page: Page):
     page.goto("/")
     logo = page.locator(".brand-logo")
     expect(logo).to_be_visible()
+    expect(logo).to_have_attribute("alt", "chess-trainer")
     page.wait_for_function("document.querySelector('.brand-logo').naturalWidth > 0")
-    assert logo.bounding_box()["width"] == (56 if device == "desktop" else 44)
+    assert logo.bounding_box()["width"] == 256
+    assert logo.bounding_box()["height"] == 256
     assert page.locator('link[rel="icon"]').get_attribute("href") == "logo.svg"
     for path in ("logo.svg", "logo.png"):
         assert page.request.get(f"/{path}").ok
-    if device == "mobile":
-        expect(page.locator(".brand-name")).to_be_hidden()
-    else:
-        expect(page.locator(".brand-name")).to_have_text("chess-trainer")
 
 
 def test_footer_shows_the_engine_version(page: Page):

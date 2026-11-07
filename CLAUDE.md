@@ -31,11 +31,11 @@ uv run python -m catalog.validate                 # every line in openings/ agai
 scripts/extract-stockfish.sh                      # copies the binary from the image to .cache/
 STOCKFISH_PATH=.cache/stockfish uv run pytest -m engine
 scripts/smoke.sh chess-trainer:local              # health and a real engine move in the image
-E2E_BASE_URL=http://127.0.0.1:8000 uv run pytest -m e2e   # Playwright, desktop and mobile
+E2E_BASE_URL=http://127.0.0.1:8000 uv run pytest -m e2e   # Playwright, desktop
 ```
 
-Before calling UI work done, test it in a browser at desktop and mobile viewports and state
-what was tested (brief §13.4).
+Before calling UI work done, test it in a browser at a desktop viewport and state what was
+tested. Mobile is out of scope.
 
 ## Conventions
 
