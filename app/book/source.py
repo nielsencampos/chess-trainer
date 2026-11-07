@@ -1,4 +1,4 @@
-"""Reads openings/<family>.json, the source of the book. Any problem fails loudly."""
+"""Reads openings/<group>/[others/]<family>.json, the source of the book. Problems fail loudly."""
 
 import hashlib
 import json
@@ -9,6 +9,8 @@ import chess
 
 from app.book.models import BookError, BookMoveRow
 
+GROUPS = ("kings-pawn", "queens-pawn", "flank", "others")
+
 
 @dataclass(frozen=True)
 class OpeningLine:
@@ -18,6 +20,7 @@ class OpeningLine:
     opening: str | None
     source: str
     moves: tuple[str, ...]
+    subgroup: dict[str, str] | None = None
 
 
 @dataclass(frozen=True)
@@ -27,6 +30,8 @@ class OpeningFile:
     lines: tuple[OpeningLine, ...]
     file_name: str
     file_hash: str
+    group: str = "others"
+    order: int | None = None
 
 
 @dataclass(frozen=True)
@@ -42,7 +47,7 @@ def _names(value: object, where: str) -> dict[str, str]:
     return value
 
 
-def _parse_line(raw: object, where: str) -> OpeningLine:
+def _parse_line(raw: object, where: str, subgroup: dict[str, str] | None = None) -> OpeningLine:
     if not isinstance(raw, dict):
         raise BookError(f"{where}: a line must be an object")
     line_id = raw.get("id")
@@ -62,12 +67,29 @@ def _parse_line(raw: object, where: str) -> OpeningLine:
         opening=raw.get("opening"),
         source=source,
         moves=tuple(moves),
+        subgroup=subgroup,
     )
+
+
+def _parse_lines(raw: dict, where: str) -> tuple[OpeningLine, ...]:
+    """Lines in their variants first, then the loose ones ("Others")."""
+    variants = raw.get("variants", [])
+    loose = raw.get("lines", [])
+    if not isinstance(variants, list) or not isinstance(loose, list) or not (variants or loose):
+        raise BookError(f"{where}: 'lines' must be a non-empty list")
+    lines: list[OpeningLine] = []
+    for variant in variants:
+        if not isinstance(variant, dict) or not variant.get("lines"):
+            raise BookError(f"{where}: a variant must have 'lines'")
+        names = _names(variant.get("names"), where)
+        lines.extend(_parse_line(item, where, names) for item in variant["lines"])
+    lines.extend(_parse_line(item, where) for item in loose)
+    return tuple(lines)
 
 
 def read_opening_files(directory: Path) -> list[OpeningFile]:
     """Checks structure and uniqueness across all files. Legality is checked by `replay`."""
-    paths = sorted(directory.glob("*.json"))
+    paths = sorted(directory.rglob("*.json"))
     if not paths:
         raise BookError(f"no opening files in {directory}")
 
@@ -85,11 +107,15 @@ def read_opening_files(directory: Path) -> list[OpeningFile]:
         family_id = raw.get("id")
         if family_id != path.stem:
             raise BookError(f"{path.name}: 'id' must match the file name, got {family_id!r}")
-        raw_lines = raw.get("lines")
-        if not isinstance(raw_lines, list) or not raw_lines:
-            raise BookError(f"{path.name}: 'lines' must be a non-empty list")
+        relative = path.relative_to(directory)
+        group = relative.parts[0] if len(relative.parts) > 1 else "others"
+        if group not in GROUPS:
+            raise BookError(f"{relative}: unknown group {group!r}, expected one of {GROUPS}")
+        order = raw.get("order")
+        if order is not None and not isinstance(order, int):
+            raise BookError(f"{path.name}: 'order' must be a number or null")
 
-        lines = tuple(_parse_line(item, path.name) for item in raw_lines)
+        lines = _parse_lines(raw, path.name)
         for line in lines:
             if line.line_id in seen_ids:
                 raise BookError(
@@ -107,7 +133,9 @@ def read_opening_files(directory: Path) -> list[OpeningFile]:
                 family_id=family_id,
                 names=_names(raw.get("names"), path.name),
                 lines=lines,
-                file_name=path.name,
+                file_name=str(relative),
+                group=group,
+                order=order,
                 file_hash=hashlib.sha256(content).hexdigest(),
             )
         )

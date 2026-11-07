@@ -10,7 +10,7 @@ from app.config import Settings
 from app.db.connection import DatabaseError, apply_migrations, open_database
 from catalog.generate_openings import line_id_of, render
 from catalog.loader import index_by_position, load_catalog, source_commit
-from catalog.validate import validate
+from catalog.validate import name_coverage, validate
 
 SETTINGS = Settings()
 
@@ -62,9 +62,9 @@ def count(database, table, where="true"):
 
 def test_migrations_apply_once(tmp_path):
     database = open_database(tmp_path / "test.duckdb")
-    assert apply_migrations(database) == [1]
+    assert apply_migrations(database) == [1, 2, 3, 4]
     assert apply_migrations(database) == []
-    assert count(database, "schema_migrations") == 1
+    assert count(database, "schema_migrations") == 4
     database.close()
 
 
@@ -161,9 +161,13 @@ def test_line_moved_between_files_stays_active(connection, openings):
 
 def test_imported_families_survive_a_sync(connection, openings):
     sync_openings(connection, openings)
-    connection.execute("INSERT INTO repertoires VALUES ('mine', 'user', NULL, NULL, now())")
     connection.execute(
-        "INSERT INTO variants VALUES ('m1','mine',NULL,NULL,'1. d4',['d4'],'x','me',true)"
+        "INSERT INTO repertoires (repertoire_id, source, loaded_at) VALUES ('mine', 'user', now())"
+    )
+    connection.execute(
+        "INSERT INTO variants "
+        "(variant_id, repertoire_id, pgn, moves_san, final_epd, source, active) "
+        "VALUES ('m1','mine','1. d4',['d4'],'x','me',true)"
     )
     (openings / "vienna.json").unlink()
     sync_openings(connection, openings)
@@ -263,6 +267,36 @@ def test_empty_directory_and_empty_book_fail(connection, tmp_path):
         load_book(connection)
 
 
+def test_groups_come_from_the_folders_and_subgroups_load(connection, tmp_path):
+    directory = tmp_path / "tree"
+    (directory / "kings-pawn" / "others").mkdir(parents=True)
+    document = {
+        "id": "x",
+        "names": {"en": "X"},
+        "order": 2,
+        "variants": [{"names": {"en": "V", "es": "Ve"}, "lines": [line("a", ["e4", "c5"])]}],
+        "lines": [line("b", ["e4", "c6"])],
+    }
+    (directory / "kings-pawn" / "x.json").write_text(json.dumps(document), encoding="utf-8")
+    rare = {"id": "y", "names": {"en": "Y"}, "order": None, "lines": [line("c", ["e4", "e5"])]}
+    (directory / "kings-pawn" / "others" / "y.json").write_text(json.dumps(rare), encoding="utf-8")
+    sync_openings(connection, directory)
+    book = load_book(connection)
+    assert (book.repertoires["x"].group, book.repertoires["x"].order) == ("kings-pawn", 2)
+    assert (book.repertoires["y"].group, book.repertoires["y"].order) == ("kings-pawn", None)
+    assert book.variants["a"].subgroup == {"en": "V", "es": "Ve"}
+    assert book.variants["b"].subgroup is None
+
+
+def test_unknown_group_folder_fails(connection, tmp_path):
+    directory = tmp_path / "tree"
+    (directory / "nope").mkdir(parents=True)
+    document = {"id": "x", "names": {"en": "X"}, "lines": [line("a", ["e4"])]}
+    (directory / "nope" / "x.json").write_text(json.dumps(document), encoding="utf-8")
+    with pytest.raises(BookError, match="unknown group"):
+        sync_openings(connection, directory)
+
+
 # --- Committed files and reference catalog ---
 
 
@@ -283,7 +317,7 @@ def test_catalog_is_complete(catalog):
 
 
 def test_committed_openings_cover_the_catalog(committed, catalog):
-    assert len(committed) == 149
+    assert len(committed) == 122
     assert sum(len(item.lines) for item in committed) == 3865
     by_id = {line.line_id for item in committed for line in item.lines}
     assert by_id == {line_id_of(entry.pgn) for entry in catalog}
@@ -302,6 +336,32 @@ def test_validator_detects_a_wrong_name(tmp_path, catalog):
 def test_validator_accepts_our_own_lines_without_a_catalog_name(tmp_path, catalog):
     write_family(tmp_path, "x", line("x1", ["e4", "c6", "d4", "d5", "e5", "Bf5", "Nf3", "e6"]))
     assert validate(read_opening_files(tmp_path), index_by_position(catalog)) == []
+
+
+def test_every_name_has_english_and_coverage_is_measured(committed):
+    coverage = name_coverage(committed)
+    assert coverage["en"]["lines"] == (3865, 3865)
+    assert coverage["en"]["families"] == (122, 122)
+    for locale in ("pt-BR", "es"):
+        assert coverage[locale]["lines"][0] > 0
+        assert coverage[locale]["families"][0] > 0
+
+
+def test_every_vienna_line_starts_with_the_vienna(committed):
+    vienna = next(item for item in committed if item.family_id == "vienna-game")
+    assert len(vienna.lines) == 59
+    assert all(line.moves[:3] == ("e4", "e5", "Nc3") for line in vienna.lines)
+
+
+def test_fragmented_families_stay_merged(committed):
+    families = {item.family_id for item in committed}
+    assert "king-s-gambit" in families
+    assert not families & {
+        "king-s-gambit-accepted",
+        "queen-s-gambit-declined",
+        "vienna-gambit-with-max-lange-defense",
+        "london-system-with-bd3",
+    }
 
 
 def test_committed_sources_name_the_catalog_commit(committed):
@@ -326,5 +386,5 @@ def test_full_book_loads(loaded_database):
     database = open_database(loaded_database)
     book = load_book(database)
     assert len(book.variants) == 3865
-    assert len(book.repertoires) == 149
+    assert len(book.repertoires) == 122
     database.close()

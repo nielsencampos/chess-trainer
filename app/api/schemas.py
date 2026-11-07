@@ -14,6 +14,7 @@ class NewGameRequest(BaseModel):
     level: str
     pace: Literal["instant", "human"]
     time_control: str
+    ui: dict[str, bool] = Field(default_factory=dict)
 
 
 class MoveRequest(BaseModel):
@@ -23,12 +24,26 @@ class MoveRequest(BaseModel):
     think_ms: int | None = Field(default=None, ge=0)
 
 
+class ImportRequest(BaseModel):
+    pgn: str = Field(max_length=50_000_000)
+
+
+class ExportRequest(BaseModel):
+    game_ids: list[str] = Field(min_length=1)
+
+
 class FlagRequest(BaseModel):
     side: Literal["user", "bot"]
     shown_plies: int = Field(ge=0)
 
 
+class OpeningOut(BaseModel):
+    eco: str
+    name: str
+
+
 class BotMoveOut(BaseModel):
+    opening: OpeningOut | None = None
     uci: str
     san: str
     ply: int
@@ -38,6 +53,7 @@ class BotMoveOut(BaseModel):
 
 
 class GameStateOut(BaseModel):
+    opening: OpeningOut | None = None
     game_id: str
     fen: str
     ply: int
@@ -53,6 +69,7 @@ class NewGameResponse(BaseModel):
 
 
 class UserMoveOut(BaseModel):
+    opening: OpeningOut | None = None
     uci: str
     san: str
     ply: int
@@ -96,8 +113,74 @@ class GameSummary(BaseModel):
     lichess_url: str
 
 
+class ResumeMove(BaseModel):
+    ply: int
+    san: str
+    uci: str
+    by: Literal["user", "bot"]
+    in_theory: bool
+    deviation: bool
+
+
+class ResumeSetup(BaseModel):
+    color: Literal["white", "black"]
+    level: str
+    pace: str
+    time_control: str
+    variant_ids: list[str]
+    ui: dict[str, bool]
+
+
+class ResumeClocks(BaseModel):
+    user_ms: int | None
+    bot_ms: int | None
+
+
+class ActiveGame(BaseModel):
+    state: GameStateOut
+    setup: ResumeSetup
+    moves: list[ResumeMove]
+    clocks: ResumeClocks
+
+
+class ActiveGameResponse(BaseModel):
+    game: ActiveGame | None
+
+
+def active_game(session: GameSession) -> ActiveGame:
+    deviation_plies = {deviation.ply for deviation in session.deviations}
+    return ActiveGame(
+        state=state_out(session),
+        setup=ResumeSetup(
+            color="white" if session.user_color else "black",
+            level=session.level,
+            pace=session.pace,
+            time_control=session.time_control_key,
+            variant_ids=[variant.variant_id for variant in session.selection.variants],
+            ui=session.ui,
+        ),
+        moves=[
+            ResumeMove(
+                ply=record.ply,
+                san=record.san,
+                uci=record.uci,
+                by=record.by,
+                in_theory=record.in_theory,
+                deviation=record.ply in deviation_plies,
+            )
+            for record in session.moves
+        ],
+        clocks=ResumeClocks(user_ms=session.user_clock_ms, bot_ms=session.bot_clock_ms),
+    )
+
+
+def opening_out(opening: tuple[str, str] | None) -> OpeningOut | None:
+    return OpeningOut(eco=opening[0], name=opening[1]) if opening else None
+
+
 def state_out(session: GameSession) -> GameStateOut:
     return GameStateOut(
+        opening=opening_out(session.opening),
         game_id=session.game_id,
         fen=session.board.fen(),
         ply=session.ply,
@@ -113,6 +196,7 @@ def bot_move_out(reply: BotReply | None) -> BotMoveOut | None:
         return None
     record = reply.record
     return BotMoveOut(
+        opening=opening_out(record.opening),
         uci=record.uci,
         san=record.san,
         ply=record.ply,

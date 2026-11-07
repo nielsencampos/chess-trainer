@@ -1,21 +1,27 @@
 """HTTP routes. Business rules stay in app.game; errors map to status codes here."""
 
-from fastapi import APIRouter, HTTPException, Request
+from fastapi import APIRouter, HTTPException, Request, Response
 
 from app import __version__
 from app.api.schemas import (
+    ActiveGameResponse,
+    ExportRequest,
     FlagRequest,
     GameSummary,
+    ImportRequest,
     MoveRequest,
     MoveResponse,
     NewGameRequest,
     NewGameResponse,
     UserMoveOut,
+    active_game,
     bot_move_out,
     deviation_out,
     game_summary,
+    opening_out,
     state_out,
 )
+from app.book.source import GROUPS
 from app.engine.levels import LEVEL_ORDER
 from app.engine.process import EngineUnavailableError
 from app.game.pace import (
@@ -79,6 +85,8 @@ async def repertoires(request: Request) -> dict:
             {
                 "repertoire_id": repertoire.repertoire_id,
                 "names": repertoire.names,
+                "group": repertoire.group,
+                "order": repertoire.order,
                 "variants": [
                     {
                         "variant_id": variant.variant_id,
@@ -86,11 +94,20 @@ async def repertoires(request: Request) -> dict:
                         "eco": variant.eco,
                         "opening": variant.opening,
                         "pgn": variant.pgn,
+                        "subgroup": variant.subgroup,
                     }
                     for variant in (book.variants[key] for key in repertoire.variant_ids)
                 ],
             }
-            for repertoire in book.repertoires.values()
+            for repertoire in sorted(
+                book.repertoires.values(),
+                key=lambda item: (
+                    GROUPS.index(item.group),
+                    item.order is None,
+                    item.order or 0,
+                    item.names.get("en", ""),
+                ),
+            )
         ]
     }
 
@@ -112,8 +129,12 @@ async def time_controls() -> dict:
                         "key": key,
                         "base_ms": control.base_ms,
                         "increment_ms": control.increment_ms,
-                        "moves_to_bonus": control.moves_to_bonus,
-                        "bonus_ms": control.bonus_ms,
+                        "periods": [
+                            {"after_moves": period.after_moves, "add_ms": period.add_ms}
+                            for period in control.periods
+                        ],
+                        "delay_ms": control.delay_ms,
+                        "delay_kind": control.delay_kind,
                     }
                     for key, control in controls.items()
                 ],
@@ -129,11 +150,43 @@ async def time_controls() -> dict:
 async def create_game(body: NewGameRequest, request: Request) -> NewGameResponse:
     try:
         session, reply = await _service(request).create_game(
-            body.color, body.variant_ids, body.level, body.pace, body.time_control
+            body.color, body.variant_ids, body.level, body.pace, body.time_control, body.ui
         )
     except GAME_ERRORS as error:
         raise _http_error(error) from error
     return NewGameResponse(state=state_out(session), bot_move=bot_move_out(reply))
+
+
+@router.get("/games")
+async def saved_games(request: Request) -> dict:
+    return {"games": _service(request).store.finished_games()}
+
+
+@router.post("/games/import")
+async def import_games(body: ImportRequest, request: Request) -> dict:
+    return _service(request).import_pgn(body.pgn)
+
+
+@router.post("/games/export")
+async def export_games(body: ExportRequest, request: Request) -> Response:
+    pgns = _service(request).store.finished_pgns(body.game_ids)
+    missing = sorted(set(body.game_ids) - set(pgns))
+    if missing:
+        raise HTTPException(422, f"not a finished game: {missing[0]}")
+    return Response(
+        content="\n\n".join(pgns.values()) + "\n",
+        media_type="application/x-chess-pgn",
+        headers={"Content-Disposition": 'attachment; filename="chess-trainer.pgn"'},
+    )
+
+
+@router.get("/games/active")
+async def get_active_game(request: Request) -> ActiveGameResponse:
+    try:
+        session = await _service(request).resume_active()
+    except GAME_ERRORS as error:
+        raise _http_error(error) from error
+    return ActiveGameResponse(game=active_game(session) if session else None)
 
 
 @router.post("/games/{game_id}/moves")
@@ -146,7 +199,11 @@ async def post_move(game_id: str, body: MoveRequest, request: Request) -> MoveRe
         raise _http_error(error) from error
     return MoveResponse(
         user_move=UserMoveOut(
-            uci=record.uci, san=record.san, ply=record.ply, in_theory=record.in_theory
+            opening=opening_out(record.opening),
+            uci=record.uci,
+            san=record.san,
+            ply=record.ply,
+            in_theory=record.in_theory,
         ),
         deviation=deviation_out(deviation) if deviation else None,
         bot_move=bot_move_out(reply),

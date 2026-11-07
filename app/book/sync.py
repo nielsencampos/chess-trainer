@@ -1,6 +1,7 @@
 """Loads openings/ and the reference catalog into DuckDB, and reads the book back from there."""
 
 import hashlib
+import json
 from collections import defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
@@ -49,7 +50,15 @@ def sync_openings(connection: duckdb.DuckDBPyConnection, directory: Path) -> lis
     for opening_file in changed:
         family_id = opening_file.family_id
         repertoire_rows.append(
-            (family_id, REPO_SOURCE, opening_file.file_name, opening_file.file_hash, now)
+            (
+                family_id,
+                REPO_SOURCE,
+                opening_file.file_name,
+                opening_file.file_hash,
+                now,
+                opening_file.group,
+                opening_file.order,
+            )
         )
         name_rows.extend(
             ("repertoire", family_id, locale, name) for locale, name in opening_file.names.items()
@@ -67,6 +76,7 @@ def sync_openings(connection: duckdb.DuckDBPyConnection, directory: Path) -> lis
                     replayed.final_epd,
                     line.source,
                     True,
+                    json.dumps(line.subgroup) if line.subgroup else None,
                 )
             )
             move_rows.extend(
@@ -87,8 +97,8 @@ def sync_openings(connection: duckdb.DuckDBPyConnection, directory: Path) -> lis
             )
         for family_id in removed:
             connection.execute("DELETE FROM repertoires WHERE repertoire_id = ?", [family_id])
-        _insert_many(connection, "INSERT OR REPLACE INTO repertoires VALUES", 5, repertoire_rows)
-        _insert_many(connection, "INSERT OR REPLACE INTO variants VALUES", 9, variant_rows)
+        _insert_many(connection, "INSERT OR REPLACE INTO repertoires VALUES", 7, repertoire_rows)
+        _insert_many(connection, "INSERT OR REPLACE INTO variants VALUES", 10, variant_rows)
         _insert_many(connection, "INSERT OR REPLACE INTO names VALUES", 4, name_rows)
         _insert_many(connection, "INSERT INTO book_moves VALUES", 6, move_rows)
         connection.commit()
@@ -135,6 +145,12 @@ def sync_catalog(connection: duckdb.DuckDBPyConnection, data_dir: Path) -> bool:
     return True
 
 
+def load_opening_names(connection: duckdb.DuckDBPyConnection) -> dict[str, tuple[str, str]]:
+    """Position -> (ECO, name), to name any position like Lichess does (brief §6)."""
+    rows = connection.execute("SELECT epd, eco, name FROM openings_catalog").fetchall()
+    return {epd: (eco, name) for epd, eco, name in rows}
+
+
 def _names(connection: duckdb.DuckDBPyConnection, entity_type: str) -> dict[str, dict[str, str]]:
     names: dict[str, dict[str, str]] = defaultdict(dict)
     for entity_id, locale, name in connection.execute(
@@ -156,10 +172,12 @@ def load_book(connection: duckdb.DuckDBPyConnection) -> Book:
     repertoire_names = _names(connection, "repertoire")
     variants: dict[str, Variant] = {}
     members: dict[str, list[str]] = defaultdict(list)
-    for variant_id, repertoire_id, eco, opening, pgn, final_epd, source in connection.execute(
-        "SELECT variant_id, repertoire_id, eco, opening, pgn, final_epd, source FROM variants "
+    for row in connection.execute(
+        "SELECT variant_id, repertoire_id, eco, opening, pgn, final_epd, source, subgroup_json "
+        "FROM variants "
         "WHERE active ORDER BY repertoire_id, pgn"
     ).fetchall():
+        variant_id, repertoire_id, eco, opening, pgn, final_epd, source, subgroup_json = row
         book_moves, positions = index_moves(moves[variant_id], final_epd)
         variants[variant_id] = Variant(
             variant_id=variant_id,
@@ -172,11 +190,19 @@ def load_book(connection: duckdb.DuckDBPyConnection) -> Book:
             moves=book_moves,
             positions=positions,
             final_epd=final_epd,
+            subgroup=json.loads(subgroup_json) if subgroup_json else None,
         )
         members[repertoire_id].append(variant_id)
     if not variants:
         raise BookError("the book is empty")
+    places = {
+        key: (group, order)
+        for key, group, order in connection.execute(
+            "SELECT repertoire_id, group_key, sort_order FROM repertoires"
+        ).fetchall()
+    }
     repertoires = {
-        key: Repertoire(key, repertoire_names[key], tuple(ids)) for key, ids in members.items()
+        key: Repertoire(key, repertoire_names[key], tuple(ids), *places.get(key, ("others", None)))
+        for key, ids in members.items()
     }
     return Book(repertoires=repertoires, variants=variants)
