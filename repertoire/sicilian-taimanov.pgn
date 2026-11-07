@@ -1,0 +1,107 @@
+[RepertoireId "sicilian-taimanov"]
+[RepertoireName_en "Sicilian Defense: Taimanov"]
+[VariantId "sicilian-taimanov.main"]
+[Color "black"]
+[Name_en "Main Line 5.Nc3 a6"]
+[ECO "B46"]
+[Opening "Sicilian Defense: Taimanov Variation"]
+[Source "lichess-org/chess-openings@3ba6b20d31b2e6125cb0e6a2e792f400717d9d39 (CC0-1.0)"]
+[Result "*"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 a6 *
+
+[RepertoireId "sicilian-taimanov"]
+[RepertoireName_en "Sicilian Defense: Taimanov"]
+[VariantId "sicilian-taimanov.bastrikov"]
+[Color "black"]
+[Name_en "Bastrikov 5.Nc3 Qc7"]
+[ECO "B47"]
+[Opening "Sicilian Defense: Taimanov Variation, Bastrikov Variation"]
+[Source "lichess-org/chess-openings@3ba6b20d31b2e6125cb0e6a2e792f400717d9d39 (CC0-1.0)"]
+[Result "*"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 *
+
+[RepertoireId "sicilian-taimanov"]
+[RepertoireName_en "Sicilian Defense: Taimanov"]
+[VariantId "sicilian-taimanov.bastrikov.english"]
+[Color "black"]
+[Name_en "Bastrikov · English Attack 6.Be3"]
+[ECO "B48"]
+[Opening "Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack"]
+[Source "lichess-org/chess-openings@3ba6b20d31b2e6125cb0e6a2e792f400717d9d39 (CC0-1.0)"]
+[Result "*"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be3 *
+
+[RepertoireId "sicilian-taimanov"]
+[RepertoireName_en "Sicilian Defense: Taimanov"]
+[VariantId "sicilian-taimanov.bastrikov.be3-be2"]
+[Color "black"]
+[Name_en "Bastrikov · 6.Be3 a6 7.Be2"]
+[ECO "B49"]
+[Opening "Sicilian Defense: Taimanov Variation, Bastrikov Variation"]
+[Source "lichess-org/chess-openings@3ba6b20d31b2e6125cb0e6a2e792f400717d9d39 (CC0-1.0)"]
+[Result "*"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be3 a6 7. Be2 *
+
+[RepertoireId "sicilian-taimanov"]
+[RepertoireName_en "Sicilian Defense: Taimanov"]
+[VariantId "sicilian-taimanov.bastrikov.classical"]
+[Color "black"]
+[Name_en "Bastrikov · Classical 6.Be2 a6 7.O-O"]
+[ECO "B85"]
+[Opening "Sicilian Defense: Scheveningen Variation, Classical Main Line"]
+[Source "lichess-org/chess-openings@3ba6b20d31b2e6125cb0e6a2e792f400717d9d39 (CC0-1.0)"]
+[Result "*"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be2 a6 7. O-O Nf6 8. Be3 Be7 9. f4 d6 10. Qe1 O-O *
+
+[RepertoireId "sicilian-taimanov"]
+[RepertoireName_en "Sicilian Defense: Taimanov"]
+[VariantId "sicilian-taimanov.ponomariov"]
+[Color "black"]
+[Name_en "Bastrikov · Ponomariov Gambit 6.Ndb5"]
+[ECO "B47"]
+[Opening "Sicilian Defense: Taimanov Variation, Bastrikov Variation, Ponomariov Gambit"]
+[Source "lichess-org/chess-openings@3ba6b20d31b2e6125cb0e6a2e792f400717d9d39 (CC0-1.0)"]
+[Result "*"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Ndb5 Qb8 7. Be3 a6 8. Bb6 *
+
+[RepertoireId "sicilian-taimanov"]
+[RepertoireName_en "Sicilian Defense: Taimanov"]
+[VariantId "sicilian-taimanov.szen"]
+[Color "black"]
+[Name_en "Szén Variation 5.Nb5"]
+[ECO "B44"]
+[Opening "Sicilian Defense: Taimanov Variation, Szén Variation"]
+[Source "lichess-org/chess-openings@3ba6b20d31b2e6125cb0e6a2e792f400717d9d39 (CC0-1.0)"]
+[Result "*"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nb5 *
+
+[RepertoireId "sicilian-taimanov"]
+[RepertoireName_en "Sicilian Defense: Taimanov"]
+[VariantId "sicilian-taimanov.szen.modern"]
+[Color "black"]
+[Name_en "Szén · Modern Line 5...d6 6.c4"]
+[ECO "B44"]
+[Opening "Sicilian Defense: Taimanov Variation, Modern Line"]
+[Source "lichess-org/chess-openings@3ba6b20d31b2e6125cb0e6a2e792f400717d9d39 (CC0-1.0)"]
+[Result "*"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nb5 d6 6. c4 Nf6 7. N1c3 a6 8. Na3 Be7 9. Be2 O-O 10. O-O b6 *
+
+[RepertoireId "sicilian-taimanov"]
+[RepertoireName_en "Sicilian Defense: Taimanov"]
+[VariantId "sicilian-taimanov.szen.gary"]
+[Color "black"]
+[Name_en "Szén · Gary Gambit 8...d5"]
+[ECO "B44"]
+[Opening "Sicilian Defense: Taimanov Variation, Gary Gambit"]
+[Source "lichess-org/chess-openings@3ba6b20d31b2e6125cb0e6a2e792f400717d9d39 (CC0-1.0)"]
+[Result "*"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nb5 d6 6. c4 Nf6 7. N1c3 a6 8. Na3 d5 *
