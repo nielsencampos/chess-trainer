@@ -41,15 +41,17 @@ async function main() {
   initPiecePicker(board);
 
   try {
-    const [{ repertoires }, { levels, default: defaultLevel }, health] = await Promise.all([
+    const [{ repertoires }, { levels, default: defaultLevel }, timeControls, health] = await Promise.all([
       api.repertoires(),
       api.levels(),
+      api.timeControls(),
       api.health(),
     ]);
     const setup = new SetupCard(
       repertoires,
       levels,
       defaultLevel,
+      timeControls,
       (color) => game.renderIdle(color),
       (chosen) => void game.start(chosen),
     );

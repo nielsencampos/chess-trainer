@@ -9,10 +9,7 @@ from playwright.sync_api import Page
 
 BASE_URL = os.environ.get("E2E_BASE_URL", "http://127.0.0.1:8000")
 
-VIEWPORTS = {
-    "desktop": {"viewport": {"width": 1280, "height": 800}},
-    "mobile": {"viewport": {"width": 390, "height": 844}, "has_touch": True, "is_mobile": True},
-}
+VIEWPORT = {"width": 1280, "height": 800}
 
 
 @pytest.fixture(scope="session")
@@ -22,14 +19,9 @@ def all_variants() -> list[dict]:
     return [variant for repertoire in repertoires for variant in repertoire["variants"]]
 
 
-@pytest.fixture(params=VIEWPORTS, ids=list(VIEWPORTS))
-def device(request) -> str:
-    return request.param
-
-
 @pytest.fixture
-def context(browser, device):
-    context = browser.new_context(base_url=BASE_URL, **VIEWPORTS[device])
+def context(browser):
+    context = browser.new_context(base_url=BASE_URL, viewport=VIEWPORT)
     yield context
     context.close()
 

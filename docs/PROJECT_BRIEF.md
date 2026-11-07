@@ -47,8 +47,9 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 - Color selection (White/Black), selected openings and **selected variations** (a collapsible multi-select per opening). Each selected variation has the same chance of being drawn.
 - Theory = selected variations only. Playing a move from an unselected variation counts as a deviation.
 - User deviations are recorded with the expected move(s) and shown at the end of the game.
-- Clock with increment (3+2, 10+5, 15+10, 45+30, no clock). Bot response time "Instant" or "Human" (human-like, based on the clock).
-- Scoresheet mode (hides the move list so you write on paper), out-of-theory warning, auto-play next game.
+- Clock with increment. Bullet: 20s+1, 30s+0, 1+0, 1+1, 2+1. Blitz: 3+0, 3+2, 5+0, 5+3. Rapid: 10+0, 10+5, 15+10, 20+0, 30+0, 60+0. Classical: 90 + 30 min with 30 s and 45 + 15 min with 15 s, where the extra minutes are added on completing move 40 and the increment runs from move 1. Or no clock. The groups are for training and do not follow FIDE's categories exactly.
+- The engine never searches for longer than the bot's clock allows. Bot response time "Instant" or "Human" (human-like, based on the clock).
+- Scoresheet mode (hides the move list so you write on paper), offered only for classical and no clock, out-of-theory warning, auto-play next game.
 - End of game: result, variation, how far theory went, deviations, copy PGN, link to Lichess analysis.
 - Green/cream board (a1 is dark), SVG piece sets with a picker (Merida, Cburnett, Chessnut, Fantasy, Unicode), light and dark theme, mobile layout, click **and** drag to move.
 - Board flips to the user's color. Coordinates on the left file and bottom rank. Highlights: last move, selected square, legal targets (dot; ring for captures), king in check.
@@ -74,7 +75,7 @@ Design tokens (CSS custom properties):
 
 - Fonts (Google Fonts, vendored): Familjen Grotesk (UI), JetBrains Mono (clocks, move list, numbers).
 - Theme follows `prefers-color-scheme`, with a manual override.
-- Clock turns accent-colored on the side to move and red under 20 s.
+- Clock turns accent-colored on the side to move and red under 20 s or 10% of the starting time, whichever is less.
 - Move list in scoresheet style: numbered rows, white and black columns, out-of-theory moves in `--warn`, the user's deviation in bold `--bad`.
 
 ## 5. Architecture

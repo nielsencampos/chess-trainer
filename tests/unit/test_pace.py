@@ -1,8 +1,12 @@
 import random
 
-from app.game.pace import TIME_CONTROLS, human_delay_ms
+import chess.engine
 
-LONG = TIME_CONTROLS["45+30"]
+from app.engine.levels import Level
+from app.engine.process import limit_for
+from app.game.pace import TIME_CONTROLS, engine_budget_s, human_delay_ms
+
+LONG = TIME_CONTROLS["90+30+30"]
 BLITZ = TIME_CONTROLS["3+2"]
 
 
@@ -11,14 +15,14 @@ def samples(time_control, remaining, in_book):
     return [human_delay_ms(time_control, remaining, in_book, rng) for _ in range(500)]
 
 
-def test_45_30_out_of_book_is_about_60_to_100_seconds():
+def test_classical_out_of_book_is_about_two_to_three_minutes():
     delays = samples(LONG, LONG.base_ms, in_book=False)
-    assert min(delays) >= 60_000 and max(delays) <= 100_000
+    assert min(delays) >= 110_000 and max(delays) <= 180_000
 
 
-def test_45_30_in_book_is_about_5_to_15_seconds():
+def test_classical_in_book_is_much_faster():
     delays = samples(LONG, LONG.base_ms, in_book=True)
-    assert min(delays) >= 4_500 and max(delays) <= 15_000
+    assert min(delays) >= 9_000 and max(delays) <= 27_000
 
 
 def test_blitz_is_much_faster():
@@ -32,3 +36,26 @@ def test_no_clock_uses_fixed_ranges():
 
 def test_never_spends_more_than_half_of_the_remaining_time():
     assert all(delay <= 2000 for delay in samples(LONG, 4000, in_book=False))
+
+
+def test_bullet_pace_never_spends_too_much():
+    bullet = TIME_CONTROLS["20s+1"]
+    assert all(delay <= 10_000 for delay in samples(bullet, 20_000, in_book=False))
+    assert all(delay <= 500 for delay in samples(bullet, 1000, in_book=False))
+
+
+def test_engine_budget_follows_the_clock():
+    assert engine_budget_s(None, None) is None
+    assert engine_budget_s(TIME_CONTROLS["30s+0"], 30_000) == 1.0
+    assert engine_budget_s(TIME_CONTROLS["30s+0"], 300) == 0.01
+    assert engine_budget_s(TIME_CONTROLS["1+1"], 60_000) == 2.5
+
+
+def test_limit_uses_the_shorter_of_level_and_budget():
+    level = Level("x", {}, chess.engine.Limit(time=1.0))
+    assert limit_for(level, None).time == 1.0
+    assert limit_for(level, 0.2).time == 0.2
+    assert limit_for(level, 5.0).time == 1.0
+    deep = Level("y", {}, chess.engine.Limit(depth=2))
+    assert limit_for(deep, 0.2).time == 0.2
+    assert limit_for(deep, 0.2).depth == 2

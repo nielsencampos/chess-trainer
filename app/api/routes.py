@@ -18,6 +18,12 @@ from app.api.schemas import (
 )
 from app.engine.levels import LEVEL_ORDER
 from app.engine.process import EngineUnavailableError
+from app.game.pace import (
+    DEFAULT_TIME_CONTROL,
+    NO_CLOCK,
+    SCORESHEET_GROUPS,
+    TIME_CONTROL_GROUPS,
+)
 from app.game.service import GameService, InvalidSetupError, UnknownGameError
 from app.game.session import GameFinishedError, IllegalMoveError, NotYourTurnError
 
@@ -92,6 +98,31 @@ async def repertoires(request: Request) -> dict:
 @router.get("/engine/levels")
 async def levels() -> dict:
     return {"levels": list(LEVEL_ORDER), "default": "club"}
+
+
+@router.get("/time-controls")
+async def time_controls() -> dict:
+    return {
+        "groups": [
+            {
+                "key": group,
+                "scoresheet": group in SCORESHEET_GROUPS,
+                "items": [
+                    {
+                        "key": key,
+                        "base_ms": control.base_ms,
+                        "increment_ms": control.increment_ms,
+                        "moves_to_bonus": control.moves_to_bonus,
+                        "bonus_ms": control.bonus_ms,
+                    }
+                    for key, control in controls.items()
+                ],
+            }
+            for group, controls in TIME_CONTROL_GROUPS.items()
+        ],
+        "no_clock": NO_CLOCK,
+        "default": DEFAULT_TIME_CONTROL,
+    }
 
 
 @router.post("/games", status_code=201)

@@ -11,7 +11,7 @@ import chess
 from app.book.models import Book
 from app.engine.levels import Level
 from app.engine.process import MoveEngine
-from app.game.pace import TIME_CONTROLS, human_delay_ms
+from app.game.pace import TIME_CONTROLS, engine_budget_s, human_delay_ms
 from app.game.session import Deviation, GameSession, MoveRecord, Selection, Side
 
 MAX_GAMES_IN_MEMORY = 32
@@ -120,7 +120,8 @@ class GameService:
         if book_move is not None:
             move = chess.Move.from_uci(book_move.uci)
         else:
-            move = await self.engine.play(session.board, self.levels[session.level])
+            budget = engine_budget_s(session.time_control, bot_clock_ms)
+            move = await self.engine.play(session.board, self.levels[session.level], budget)
             if session.is_over:  # the user's clock ran out during the search
                 return None
         in_book = book_move is not None

@@ -3,11 +3,10 @@
 
 import { Chess } from "./vendor/chess.js";
 import { api } from "./api.js";
-import { Clocks, formatClock, LOW_TIME_MS } from "./clock.js";
+import { Clocks, formatClock } from "./clock.js";
 import { renderEndCard } from "./endcard.js";
 import { t } from "./i18n.js";
 import { renderMoveList } from "./movelist.js";
-import { TIME_CONTROLS } from "./setup.js";
 
 const RESIGN_CONFIRM_MS = 3000;
 const AUTO_NEXT_SECONDS = 5;
@@ -111,7 +110,7 @@ export class GameController {
     this.board.setPosition(this.chess.fen());
     this.board.setMovable(null);
     this.renderNames(setup);
-    this.clocks.reset(TIME_CONTROLS[setup.time_control]);
+    this.clocks.reset(setup.clock);
     this.renderMoves();
 
     // The side to move starts running at once, including a bot that opens the game.
@@ -429,7 +428,7 @@ export class GameController {
     const remaining = this.clocks.remaining[color];
     element.textContent = formatClock(remaining);
     element.classList.toggle("active", this.clocks.active === color);
-    element.classList.toggle("low", remaining < LOW_TIME_MS);
+    element.classList.toggle("low", remaining < this.clocks.lowTime);
   }
 
   renderChips() {

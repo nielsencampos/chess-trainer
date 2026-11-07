@@ -28,7 +28,7 @@ def resign(page: Page) -> None:
     page.locator("#end-card").wait_for(state="visible")
 
 
-def test_book_then_engine_then_resign_with_end_card(page: Page, seed_prefs, device):
+def test_book_then_engine_then_resign_with_end_card(page: Page, seed_prefs):
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     play(page)

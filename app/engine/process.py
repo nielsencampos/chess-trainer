@@ -27,7 +27,18 @@ class MoveEngine(Protocol):
 
     async def stop(self) -> None: ...
 
-    async def play(self, board: chess.Board, level: Level) -> chess.Move: ...
+    async def play(
+        self, board: chess.Board, level: Level, max_time_s: float | None = None
+    ) -> chess.Move: ...
+
+
+def limit_for(level: Level, max_time_s: float | None) -> chess.engine.Limit:
+    """The level's limit, shortened when the bot's clock has less time than the level would use."""
+    if max_time_s is None:
+        return level.limit
+    level_time = level.limit.time
+    time = max_time_s if level_time is None else min(level_time, max_time_s)
+    return chess.engine.Limit(time=time, depth=level.limit.depth, nodes=level.limit.nodes)
 
 
 class StockfishEngine:
@@ -57,23 +68,28 @@ class StockfishEngine:
                 logger.warning("engine did not quit cleanly")
             self._engine = None
 
-    async def play(self, board: chess.Board, level: Level) -> chess.Move:
+    async def play(
+        self, board: chess.Board, level: Level, max_time_s: float | None = None
+    ) -> chess.Move:
+        limit = limit_for(level, max_time_s)
         async with self._lock:
             try:
-                return await self._search(board, level)
+                return await self._search(board, level, limit)
             except (chess.engine.EngineError, EngineUnavailableError) as error:
                 logger.warning("engine failed (%s), restarting", error)
             try:
                 await self.stop()
                 await self.start()
-                return await self._search(board, level)
+                return await self._search(board, level, limit)
             except (chess.engine.EngineError, OSError) as error:
                 raise EngineUnavailableError(str(error)) from error
 
-    async def _search(self, board: chess.Board, level: Level) -> chess.Move:
+    async def _search(
+        self, board: chess.Board, level: Level, limit: chess.engine.Limit
+    ) -> chess.Move:
         if self._engine is None:
             raise EngineUnavailableError("engine is not running")
-        result = await self._engine.play(board, level.limit, options=level.options)
+        result = await self._engine.play(board, limit, options=level.options)
         if result.move is None:
             raise EngineUnavailableError("engine returned no move")
         return result.move

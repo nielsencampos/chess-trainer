@@ -4,14 +4,6 @@
 import { localizedName, t } from "./i18n.js";
 import { getPref, setPref } from "./prefs.js";
 
-export const TIME_CONTROLS = {
-  "3+2": { base_ms: 180_000, increment_ms: 2_000 },
-  "10+5": { base_ms: 600_000, increment_ms: 5_000 },
-  "15+10": { base_ms: 900_000, increment_ms: 10_000 },
-  "45+30": { base_ms: 2_700_000, increment_ms: 30_000 },
-  none: null,
-};
-
 const SEARCH_DEBOUNCE_MS = 150;
 const MAX_SEARCH_RESULTS_PER_FAMILY = 200;
 
@@ -19,9 +11,14 @@ const MAX_SEARCH_RESULTS_PER_FAMILY = 200;
  * @typedef {{variant_id: string, names: Record<string, string>, eco: string | null,
  *   opening: string | null, pgn: string}} VariantInfo
  * @typedef {{repertoire_id: string, names: Record<string, string>, variants: VariantInfo[]}} RepertoireInfo
+ * @typedef {{key: string, base_ms: number, increment_ms: number, moves_to_bonus: number | null,
+ *   bonus_ms: number}} TimeControlInfo
+ * @typedef {{key: string, scoresheet: boolean, items: TimeControlInfo[]}} TimeControlGroup
+ * @typedef {{groups: TimeControlGroup[], no_clock: string, default: string}} TimeControls
  * @typedef {{
  *   color: "white" | "black", variant_ids: string[], level: string, pace: "human" | "instant",
- *   time_control: string, scoresheet: boolean, warning: boolean, autoplay: boolean,
+ *   time_control: string, clock: TimeControlInfo | null,
+ *   scoresheet: boolean, warning: boolean, autoplay: boolean,
  * }} GameSetup
  */
 
@@ -44,10 +41,11 @@ export class SetupCard {
    * @param {RepertoireInfo[]} repertoires
    * @param {string[]} levels
    * @param {string} defaultLevel
+   * @param {TimeControls} timeControls
    * @param {(color: "white" | "black") => void} onColorChange
    * @param {(setup: GameSetup) => void} onPlay
    */
-  constructor(repertoires, levels, defaultLevel, onColorChange, onPlay) {
+  constructor(repertoires, levels, defaultLevel, timeControls, onColorChange, onPlay) {
     this.repertoires = [...repertoires].sort((a, b) =>
       localizedName(a.names).localeCompare(localizedName(b.names)),
     );
@@ -62,11 +60,19 @@ export class SetupCard {
     for (const key of levels) levelSelect.add(new Option(t(`level.${key}`), key));
     levelSelect.value = getPref("level", defaultLevel);
 
+    this.timeControls = timeControls;
     const timeSelect = byId("time-control");
-    for (const key of Object.keys(TIME_CONTROLS)) {
-      timeSelect.add(new Option(key === "none" ? t("setup.noClock") : key, key));
+    for (const group of timeControls.groups) {
+      const optgroup = document.createElement("optgroup");
+      optgroup.label = t(`setup.group.${group.key}`);
+      for (const item of group.items) optgroup.append(new Option(this.timeLabel(item), item.key));
+      timeSelect.append(optgroup);
     }
-    timeSelect.value = getPref("timeControl", "10+5");
+    timeSelect.add(new Option(t("setup.noClock"), timeControls.no_clock));
+    timeSelect.value = getPref("timeControl", timeControls.default);
+    if (timeSelect.value === "") timeSelect.value = timeControls.default; // A removed one was saved.
+    timeSelect.addEventListener("change", () => this.updateScoresheetOption());
+    this.updateScoresheetOption();
 
     this.setRadio("color", getPref("color", "white"));
     this.setRadio("pace", getPref("pace", "human"));
@@ -99,6 +105,38 @@ export class SetupCard {
       onPlay(setup);
     });
     this.renderOpenings();
+  }
+
+  /** @param {TimeControlInfo} item */
+  timeLabel(item) {
+    if (item.moves_to_bonus === null) return item.key;
+    return t("setup.classicalLabel", {
+      base: item.base_ms / 60_000,
+      bonus: item.bonus_ms / 60_000,
+      increment: item.increment_ms / 1000,
+    });
+  }
+
+  /** Scoresheet mode exists only where moves are written on paper. */
+  allowsScoresheet() {
+    const key = byId("time-control").value;
+    if (key === this.timeControls.no_clock) return true;
+    return this.timeControls.groups.some(
+      (group) => group.scoresheet && group.items.some((item) => item.key === key),
+    );
+  }
+
+  updateScoresheetOption() {
+    byId("scoresheet-option").hidden = !this.allowsScoresheet();
+  }
+
+  /** @returns {TimeControlInfo | null} */
+  selectedClock() {
+    const key = byId("time-control").value;
+    return (
+      this.timeControls.groups.flatMap((group) => group.items).find((item) => item.key === key) ??
+      null
+    );
   }
 
   /**
@@ -240,7 +278,8 @@ export class SetupCard {
       level: byId("level").value,
       pace: /** @type {"human" | "instant"} */ (this.radioValue("pace")),
       time_control: byId("time-control").value,
-      scoresheet: byId("opt-scoresheet").checked,
+      clock: this.selectedClock(),
+      scoresheet: this.allowsScoresheet() && byId("opt-scoresheet").checked,
       warning: byId("opt-warning").checked,
       autoplay: byId("opt-autoplay").checked,
     };
@@ -252,7 +291,7 @@ export class SetupCard {
     setPref("level", setup.level);
     setPref("pace", setup.pace);
     setPref("timeControl", setup.time_control);
-    setPref("scoresheet", setup.scoresheet);
+    setPref("scoresheet", byId("opt-scoresheet").checked);
     setPref("warning", setup.warning);
     setPref("autoplay", setup.autoplay);
   }
