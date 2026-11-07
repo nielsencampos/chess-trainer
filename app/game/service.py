@@ -8,7 +8,7 @@ from dataclasses import dataclass
 
 import chess
 
-from app.book.loader import Book
+from app.book.models import Book
 from app.engine.levels import Level
 from app.engine.process import MoveEngine
 from app.game.pace import TIME_CONTROLS, human_delay_ms
@@ -64,8 +64,6 @@ class GameService:
             variant = self.book.variants.get(variant_id)
             if variant is None:
                 raise InvalidSetupError(f"unknown variation {variant_id!r}")
-            if variant.color != color:
-                raise InvalidSetupError(f"{variant_id} is a {variant.color} variation")
             variants.append(variant)
 
         session = GameSession(

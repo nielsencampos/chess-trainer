@@ -1,3 +1,4 @@
+import dataclasses
 import random
 from pathlib import Path
 
@@ -5,6 +6,9 @@ import chess
 import pytest
 from fastapi.testclient import TestClient
 
+from app.book.sync import sync_catalog, sync_openings
+from app.config import Settings
+from app.db.connection import apply_migrations, open_database
 from app.engine.levels import Level
 from app.main import create_app
 
@@ -37,9 +41,22 @@ def engine() -> FakeEngine:
     return FakeEngine()
 
 
+@pytest.fixture(scope="session")
+def loaded_database(tmp_path_factory) -> Path:
+    """A database with the book loaded once: the load is too slow to repeat per test."""
+    path = tmp_path_factory.mktemp("db") / "test.duckdb"
+    connection = open_database(path)
+    apply_migrations(connection)
+    sync_openings(connection, Settings().openings_dir)
+    sync_catalog(connection, Settings().catalog_dir)
+    connection.close()
+    return path
+
+
 @pytest.fixture
-def client(engine):
-    app = create_app(engine=engine, rng=random.Random(7))
+def client(engine, loaded_database):
+    settings = dataclasses.replace(Settings(), database_path=loaded_database)
+    app = create_app(settings, engine=engine, rng=random.Random(7))
     with TestClient(app) as test_client:
         yield test_client
 

@@ -35,8 +35,13 @@ docker exec "$name" sh -c 'id -u | grep -qx 1000' || { echo "not running as uid 
 curl -fsS "$base/" | grep -q '<title>' || { echo "frontend not served"; exit 1; }
 
 # Alapin line: after 1.e4 c5 2.c3 the line ends, so the next bot move comes from Stockfish.
+alapin="$(curl -fsS "$base/api/repertoires" | python3 -c '
+import json, sys
+repertoires = json.load(sys.stdin)["repertoires"]
+print(next(v["variant_id"] for r in repertoires for v in r["variants"] if v["pgn"] == "1. e4 c5 2. c3"))
+')"
 game="$(curl -fsS -X POST "$base/api/games" -H 'content-type: application/json' \
-  -d '{"color":"white","variant_ids":["sicilian-alapin.main"],"level":"club","pace":"instant","time_control":"none"}')"
+  -d "{\"color\":\"white\",\"variant_ids\":[\"$alapin\"],\"level\":\"club\",\"pace\":\"instant\",\"time_control\":\"none\"}")"
 game_id="$(python3 -c 'import json,sys; print(json.loads(sys.argv[1])["state"]["game_id"])' "$game")"
 curl -fsS -X POST "$base/api/games/$game_id/moves" -H 'content-type: application/json' -d '{"uci":"e2e4"}' >/dev/null
 reply="$(curl -fsS -X POST "$base/api/games/$game_id/moves" -H 'content-type: application/json' -d '{"uci":"c2c3"}')"

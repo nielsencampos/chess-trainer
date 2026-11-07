@@ -15,7 +15,7 @@ from urllib.parse import quote
 import chess
 import chess.pgn
 
-from app.book.loader import BookMove, Variant
+from app.book.models import BookMove, Variant
 from app.game.pace import TimeControl
 
 Side = Literal["user", "bot"]

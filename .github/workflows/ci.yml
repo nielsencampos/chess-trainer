@@ -23,7 +23,7 @@ jobs:
           uv run ruff format --check .
       - name: Unit and API tests
         run: uv run pytest
-      - name: Repertoire validation
+      - name: Opening files validation
         run: uv run python -m catalog.validate
 
   image:

@@ -66,13 +66,12 @@ async def health(request: Request) -> dict:
 
 
 @router.get("/repertoires")
-async def repertoires(request: Request, color: str | None = None) -> dict:
+async def repertoires(request: Request) -> dict:
     book = _service(request).book
     return {
         "repertoires": [
             {
                 "repertoire_id": repertoire.repertoire_id,
-                "color": repertoire.color,
                 "names": repertoire.names,
                 "variants": [
                     {
@@ -80,13 +79,12 @@ async def repertoires(request: Request, color: str | None = None) -> dict:
                         "names": variant.names,
                         "eco": variant.eco,
                         "opening": variant.opening,
-                        "moves_san": variant.moves_san,
+                        "pgn": variant.pgn,
                     }
                     for variant in (book.variants[key] for key in repertoire.variant_ids)
                 ],
             }
             for repertoire in book.repertoires.values()
-            if color is None or repertoire.color == color
         ]
     }
 

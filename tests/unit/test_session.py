@@ -6,7 +6,7 @@ import chess
 import chess.pgn
 import pytest
 
-from app.book.loader import Variant, _walk
+from app.book.models import BookMoveRow, Variant, index_moves
 from app.game.session import (
     GameFinishedError,
     GameSession,
@@ -16,21 +16,36 @@ from app.game.session import (
 )
 
 
-def variant(variant_id, pgn, color="white"):
+def walk_game(game):
+    """Flattens a game with side variations, to test positions that have several book moves."""
+    rows = []
+
+    def visit(node, board, ply):
+        for child in node.variations:
+            rows.append(BookMoveRow(board.epd(), ply + 1, child.move.uci(), board.san(child.move)))
+            next_board = board.copy(stack=False)
+            next_board.push(child.move)
+            visit(child, next_board, ply + 1)
+
+    visit(game, game.board(), 0)
+    return rows
+
+
+def variant(variant_id, pgn):
     game = chess.pgn.read_game(io.StringIO(pgn + " *"))
-    moves, positions = _walk(game)
+    final_epd = game.end().board().epd()
+    moves, positions = index_moves(walk_game(game), final_epd)
     return Variant(
         variant_id=variant_id,
         repertoire_id="r",
-        color=color,
         names={"en": variant_id},
         eco=None,
         opening=None,
         source="test",
-        moves_san=(),
+        pgn=pgn,
         moves=moves,
         positions=positions,
-        final_epd=game.end().board().epd(),
+        final_epd=final_epd,
     )
 
 

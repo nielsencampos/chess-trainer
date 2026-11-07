@@ -35,13 +35,15 @@ LABEL org.opencontainers.image.title="chess-trainer" \
       org.opencontainers.image.licenses="GPL-3.0-only" \
       io.github.nielsencampos.chess-trainer.stockfish-requested="${STOCKFISH_VERSION}"
 
-RUN useradd --create-home --uid 1000 app
+RUN useradd --create-home --uid 1000 app \
+    && install -d -o app -g app /app/data
 
 COPY --from=stockfish /opt/stockfish /opt/stockfish
 RUN ln -s /opt/stockfish/stockfish /usr/local/bin/stockfish
 COPY --from=deps /app/.venv /app/.venv
 COPY app /app/app
-COPY repertoire /app/repertoire
+COPY catalog /app/catalog
+COPY openings /app/openings
 COPY web /app/web
 COPY LICENSE THIRD_PARTY_LICENSES.md /app/
 
