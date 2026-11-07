@@ -1,0 +1,40 @@
+[project]
+name = "chess-trainer"
+version = "0.1.0"
+description = "Local opening trainer: drill your repertoire against a bot that plays your book lines, then Stockfish when theory ends."
+readme = "README.md"
+license = "GPL-3.0-only"
+requires-python = ">=3.12"
+dependencies = [
+    "chess>=1.11,<2",
+    "duckdb>=1.1",
+    "fastapi>=0.115",
+    "uvicorn>=0.32",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.27",
+    "pytest>=8",
+    "pytest-playwright>=0.6",
+    "ruff>=0.8",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-m 'not engine and not e2e' --strict-markers"
+markers = [
+    "engine: needs a real Stockfish binary (STOCKFISH_PATH)",
+    "e2e: Playwright browser flows against a running app (E2E_BASE_URL)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]

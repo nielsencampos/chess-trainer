@@ -1,0 +1,68 @@
+{
+  "id": "barnes-opening",
+  "names": {
+    "en": "Barnes Opening"
+  },
+  "lines": [
+    {
+      "id": "line-6f818492e74d92a6",
+      "names": {
+        "en": "Barnes Opening"
+      },
+      "eco": "A00",
+      "opening": "Barnes Opening",
+      "moves": ["f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d32d1731b52c8f09",
+      "names": {
+        "en": "Gedult Gambit"
+      },
+      "eco": "A00",
+      "opening": "Barnes Opening: Gedult Gambit",
+      "moves": ["f3", "d5", "e4", "g6", "d4", "dxe4", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-60d5cef448f6bc3c",
+      "names": {
+        "en": "Hammerschlag"
+      },
+      "eco": "A00",
+      "opening": "Barnes Opening: Hammerschlag",
+      "moves": ["f3", "e5", "Kf2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cf8ad9c78fcfc1d5",
+      "names": {
+        "en": "Walkerling"
+      },
+      "eco": "C20",
+      "opening": "Barnes Opening: Walkerling",
+      "moves": ["f3", "e5", "e4", "Nf6", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-615b7ce0e661407d",
+      "names": {
+        "en": "Fool's Mate"
+      },
+      "eco": "A00",
+      "opening": "Barnes Opening: Fool's Mate",
+      "moves": ["f3", "e5", "g4", "Qh4#"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-90b80b5259b8b041",
+      "names": {
+        "en": "Gedult Gambit"
+      },
+      "eco": "A00",
+      "opening": "Barnes Opening: Gedult Gambit",
+      "moves": ["f3", "f5", "e4", "fxe4", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.3.3
+      - run: uv sync --frozen
+      - name: Lint
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+      - name: Unit and API tests
+        run: uv run pytest
+      - name: Opening files validation
+        run: uv run python -m catalog.validate
+
+  image:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: amd64
+            runner: ubuntu-24.04
+          - arch: arm64
+            runner: ubuntu-24.04-arm
+    runs-on: ${{ matrix.runner }}
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Resolve the Stockfish release
+        run: |
+          python3 docker/fetch_stockfish.py resolve latest /tmp/stockfish-tag
+          echo "STOCKFISH_VERSION=$(cat /tmp/stockfish-tag)" >> "$GITHUB_ENV"
+      - name: Build image
+        run: |
+          docker build --pull \
+            --secret id=github_token,env=GITHUB_TOKEN \
+            --build-arg "STOCKFISH_VERSION=$STOCKFISH_VERSION" \
+            -t chess-trainer:local .
+      - name: Smoke test
+        run: scripts/smoke.sh chess-trainer:local
+      - uses: astral-sh/setup-uv@v10.3.3
+      - name: Engine tests against the real binary
+        run: |
+          uv sync --frozen
+          scripts/extract-stockfish.sh chess-trainer:local
+          STOCKFISH_PATH=.cache/stockfish uv run pytest -m engine
+      - name: Browser tests (desktop and mobile)
+        if: matrix.arch == 'amd64'
+        run: |
+          uv run playwright install --with-deps chromium
+          docker run -d --name app -p 127.0.0.1:8000:8000 chess-trainer:local
+          for _ in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:8000/api/health && break
+            sleep 1
+          done
+          E2E_BASE_URL=http://127.0.0.1:8000 uv run pytest -m e2e

@@ -1,0 +1,388 @@
+{
+  "id": "king-s-pawn-game",
+  "names": {
+    "en": "King's Pawn Game"
+  },
+  "lines": [
+    {
+      "id": "line-912570a715105476",
+      "names": {
+        "en": "King's Pawn Game"
+      },
+      "eco": "B00",
+      "opening": "King's Pawn Game",
+      "moves": ["e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f7041892850ee1c8",
+      "names": {
+        "en": "Maróczy Defense"
+      },
+      "eco": "B07",
+      "opening": "King's Pawn Game: Maróczy Defense",
+      "moves": ["e4", "d6", "d4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-32fe66cf001eb80f",
+      "names": {
+        "en": "King's Pawn Game"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game",
+      "moves": ["e4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fc7edba99dae32f7",
+      "names": {
+        "en": "Tortoise Opening"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Tortoise Opening",
+      "moves": ["e4", "e5", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1271d91540392363",
+      "names": {
+        "en": "Alapin Opening"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Alapin Opening",
+      "moves": ["e4", "e5", "Ne2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6784b42f163c1da9",
+      "names": {
+        "en": "Busch-Gass Gambit"
+      },
+      "eco": "C40",
+      "opening": "King's Pawn Game: Busch-Gass Gambit",
+      "moves": ["e4", "e5", "Nf3", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ee966aa650f98484",
+      "names": {
+        "en": "Busch-Gass Gambit, Chiodini Gambit"
+      },
+      "eco": "C40",
+      "opening": "King's Pawn Game: Busch-Gass Gambit, Chiodini Gambit",
+      "moves": ["e4", "e5", "Nf3", "Bc5", "Nxe5", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f6c5472467c1529a",
+      "names": {
+        "en": "Tayler Opening"
+      },
+      "eco": "C44",
+      "opening": "King's Pawn Game: Tayler Opening",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Be2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9a64196f7407cd01",
+      "names": {
+        "en": "Tayler Opening, Inverted Hanham"
+      },
+      "eco": "C44",
+      "opening": "King's Pawn Game: Tayler Opening, Inverted Hanham",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Be2", "Nf6", "d3", "d5", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cd8b900e307fccae",
+      "names": {
+        "en": "Tayler Opening"
+      },
+      "eco": "C44",
+      "opening": "King's Pawn Game: Tayler Opening",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Be2", "Nf6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ca6535b22c7637b0",
+      "names": {
+        "en": "Tayler Opening, Basman Gambit"
+      },
+      "eco": "C44",
+      "opening": "King's Pawn Game: Tayler Opening, Basman Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Be2", "Nf6", "d4", "exd4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2e089994cd69a1be",
+      "names": {
+        "en": "Schulze-Müller Gambit"
+      },
+      "eco": "C44",
+      "opening": "King's Pawn Game: Schulze-Müller Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Nxe5", "Nxe5", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e8c53ff2fb38d04c",
+      "names": {
+        "en": "Pachman Wing Gambit"
+      },
+      "eco": "C44",
+      "opening": "King's Pawn Game: Pachman Wing Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7457180fa151a59f",
+      "names": {
+        "en": "Dresden Opening"
+      },
+      "eco": "C44",
+      "opening": "King's Pawn Game: Dresden Opening",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-881e3ed967558d96",
+      "names": {
+        "en": "Gunderam Defense, Gunderam Gambit"
+      },
+      "eco": "C40",
+      "opening": "King's Pawn Game: Gunderam Defense, Gunderam Gambit",
+      "moves": ["e4", "e5", "Nf3", "Qe7", "Bc4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-164e1675e854014e",
+      "names": {
+        "en": "McConnell Defense"
+      },
+      "eco": "C40",
+      "opening": "King's Pawn Game: McConnell Defense",
+      "moves": ["e4", "e5", "Nf3", "Qf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fdd77a8713c6c745",
+      "names": {
+        "en": "La Bourdonnais Gambit"
+      },
+      "eco": "C40",
+      "opening": "King's Pawn Game: La Bourdonnais Gambit",
+      "moves": ["e4", "e5", "Nf3", "Qf6", "Bc4", "Qg6", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f20b24b0ecff3138",
+      "names": {
+        "en": "Gunderam Gambit"
+      },
+      "eco": "C40",
+      "opening": "King's Pawn Game: Gunderam Gambit",
+      "moves": ["e4", "e5", "Nf3", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5b7f8f621cfad1ab",
+      "names": {
+        "en": "Damiano Defense"
+      },
+      "eco": "C40",
+      "opening": "King's Pawn Game: Damiano Defense",
+      "moves": ["e4", "e5", "Nf3", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0ce93b4f2f601883",
+      "names": {
+        "en": "Damiano Defense, Damiano Gambit, Chigorin Gambit"
+      },
+      "eco": "C40",
+      "opening": "King's Pawn Game: Damiano Defense, Damiano Gambit, Chigorin Gambit",
+      "moves": ["e4", "e5", "Nf3", "f6", "Nxe5", "Qe7", "Nf3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-92617c4325b14e4d",
+      "names": {
+        "en": "Damiano Defense, Damiano Gambit"
+      },
+      "eco": "C40",
+      "opening": "King's Pawn Game: Damiano Defense, Damiano Gambit",
+      "moves": ["e4", "e5", "Nf3", "f6", "Nxe5", "fxe5", "Qh5+", "g6", "Qxe5+", "Qe7", "Qxh8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f02f659b09ef56f9",
+      "names": {
+        "en": "Napoleon Attack"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Napoleon Attack",
+      "moves": ["e4", "e5", "Qf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-708e0cb868ef2dbe",
+      "names": {
+        "en": "Wayward Queen Attack"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Wayward Queen Attack",
+      "moves": ["e4", "e5", "Qh5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-883f537ee1c119b7",
+      "names": {
+        "en": "Wayward Queen Attack, Mellon Gambit"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Wayward Queen Attack, Mellon Gambit",
+      "moves": ["e4", "e5", "Qh5", "Nc6", "Bc4", "Nh6", "d3", "g6", "Qf3", "f6", "Ne2", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-93c1d3beb7e7fb82",
+      "names": {
+        "en": "Wayward Queen Attack, Kiddie Countergambit"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Wayward Queen Attack, Kiddie Countergambit",
+      "moves": ["e4", "e5", "Qh5", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-17bc79b3f35c695a",
+      "names": {
+        "en": "Mengarini's Opening"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Mengarini's Opening",
+      "moves": ["e4", "e5", "a3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a9b8fd5577ac3a4e",
+      "names": {
+        "en": "MacLeod Attack"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: MacLeod Attack",
+      "moves": ["e4", "e5", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0b1d62c0aecf1638",
+      "names": {
+        "en": "MacLeod Attack, Norwalde Gambit"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: MacLeod Attack, Norwalde Gambit",
+      "moves": ["e4", "e5", "c3", "d5", "Qh5", "Bd6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0c29cace0af87dd7",
+      "names": {
+        "en": "MacLeod Attack, Lasa Gambit"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: MacLeod Attack, Lasa Gambit",
+      "moves": ["e4", "e5", "c3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c9c72650cdc76058",
+      "names": {
+        "en": "Bavarian Gambit"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Bavarian Gambit",
+      "moves": ["e4", "e5", "c4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a1d9d4d3b8853781",
+      "names": {
+        "en": "Leonardis Variation"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Leonardis Variation",
+      "moves": ["e4", "e5", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-73142aa4d76a65ae",
+      "names": {
+        "en": "Clam Variation, Radisch Gambit"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Clam Variation, Radisch Gambit",
+      "moves": ["e4", "e5", "d3", "Nf6", "f4", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e5d822f59dd9ad1f",
+      "names": {
+        "en": "Weber Gambit"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Weber Gambit",
+      "moves": ["e4", "e5", "d3", "d5", "exd5", "c6", "dxc6", "Nxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fb446cf5b4ad7148",
+      "names": {
+        "en": "Clam Variation, King's Gambit Reversed"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Clam Variation, King's Gambit Reversed",
+      "moves": ["e4", "e5", "d3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-555fc1500fd3c36e",
+      "names": {
+        "en": "Beyer Gambit"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Beyer Gambit",
+      "moves": ["e4", "e5", "d4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5e5d12256a179fe4",
+      "names": {
+        "en": "Philidor Gambit"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: Philidor Gambit",
+      "moves": ["e4", "e5", "d4", "d6", "dxe5", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6158d06b66541a0b",
+      "names": {
+        "en": "King's Head Opening"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: King's Head Opening",
+      "moves": ["e4", "e5", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d8efd4c3fd892a50",
+      "names": {
+        "en": "King's Head Opening"
+      },
+      "eco": "C20",
+      "opening": "King's Pawn Game: King's Head Opening",
+      "moves": ["e4", "e5", "f3", "Nf6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "amar-opening",
+  "names": {
+    "en": "Amar Opening"
+  },
+  "lines": [
+    {
+      "id": "line-a42cf8c232616f75",
+      "names": {
+        "en": "Amar Opening"
+      },
+      "eco": "A00",
+      "opening": "Amar Opening",
+      "moves": ["Nh3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2a5ff1eb632ec55a",
+      "names": {
+        "en": "Paris Gambit"
+      },
+      "eco": "A00",
+      "opening": "Amar Opening: Paris Gambit",
+      "moves": ["Nh3", "d5", "g3", "e5", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a2810f02d198fddb",
+      "names": {
+        "en": "Paris Gambit, Gent Gambit"
+      },
+      "eco": "A00",
+      "opening": "Amar Opening: Paris Gambit, Gent Gambit",
+      "moves": ["Nh3", "d5", "g3", "e5", "f4", "Bxh3", "Bxh3", "exf4", "O-O", "fxg3", "hxg3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

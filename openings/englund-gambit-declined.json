@@ -1,0 +1,78 @@
+{
+  "id": "englund-gambit-declined",
+  "names": {
+    "en": "Englund Gambit Declined"
+  },
+  "lines": [
+    {
+      "id": "line-ca1477972110e34b",
+      "names": {
+        "en": "Reversed Alekhine"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Reversed Alekhine",
+      "moves": ["d4", "e5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-96d5185dece4c6bf",
+      "names": {
+        "en": "Reversed Krebs"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Reversed Krebs",
+      "moves": ["d4", "e5", "Nf3", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ae33b30e575ee96d",
+      "names": {
+        "en": "Reversed Mokele Mbembe"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Reversed Mokele Mbembe",
+      "moves": ["d4", "e5", "Nf3", "e4", "Ne5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-01abfa813167d03e",
+      "names": {
+        "en": "Reversed Brooklyn"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Reversed Brooklyn",
+      "moves": ["d4", "e5", "Nf3", "e4", "Ng1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-67cad688b2911651",
+      "names": {
+        "en": "Englund Gambit Declined"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined",
+      "moves": ["d4", "e5", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-686f984162e90aff",
+      "names": {
+        "en": "Diemer Counterattack"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Diemer Counterattack",
+      "moves": ["d4", "e5", "d5", "Bc5", "e4", "Qh4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-07aeffc27b388c7f",
+      "names": {
+        "en": "Reversed French"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Reversed French",
+      "moves": ["d4", "e5", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

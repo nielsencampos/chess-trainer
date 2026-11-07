@@ -1,0 +1,328 @@
+{
+  "id": "catalan-opening",
+  "names": {
+    "en": "Catalan Opening"
+  },
+  "lines": [
+    {
+      "id": "line-239037f67801c000",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "E06",
+      "opening": "Catalan Opening: Closed",
+      "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Be7", "d4", "O-O", "O-O", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fd3207ed12e13fcc",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "E06",
+      "opening": "Catalan Opening: Closed",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "O-O", "O-O", "c6", "Bf4", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-aae3a6bc19a52767",
+      "names": {
+        "en": "Closed, Main Line"
+      },
+      "eco": "E09",
+      "opening": "Catalan Opening: Closed, Main Line",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "g3", "Be7", "Bg2", "O-O", "O-O", "Nbd7", "Qc2", "c6", "Bf4", "b6", "Nbd2", "Bb7", "e4", "dxe4", "Nxe4", "Nxe4", "Qxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-da0caa755e71b74d",
+      "names": {
+        "en": "Closed, Main Line"
+      },
+      "eco": "E09",
+      "opening": "Catalan Opening: Closed, Main Line",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "g3", "Be7", "Bg2", "O-O", "O-O", "Nbd7", "Qc2", "c6", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cd683d8dea198690",
+      "names": {
+        "en": "Closed Variation, Traditional Variation"
+      },
+      "eco": "E09",
+      "opening": "Catalan Opening: Closed Variation, Traditional Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "g3", "Be7", "Bg2", "O-O", "O-O", "Nbd7", "Qc2", "c6", "Nbd2", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-47c8650fa0eb7a82",
+      "names": {
+        "en": "Closed, Main Line"
+      },
+      "eco": "E09",
+      "opening": "Catalan Opening: Closed, Main Line",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "g3", "Be7", "Bg2", "O-O", "O-O", "c6", "Qc2", "b6", "Nbd2", "Bb7", "e4", "Nbd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-33f51b3aaa941c38",
+      "names": {
+        "en": "Open Defense, Classical Line"
+      },
+      "eco": "E05",
+      "opening": "Catalan Opening: Open Defense, Classical Line",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "g3", "Be7", "Bg2", "O-O", "O-O", "dxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-292d1e438c52c5b9",
+      "names": {
+        "en": "Open Defense"
+      },
+      "eco": "E04",
+      "opening": "Catalan Opening: Open Defense",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "g3", "c6", "Bg2", "dxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2a6a698c288553dd",
+      "names": {
+        "en": "Catalan Opening"
+      },
+      "eco": "E00",
+      "opening": "Catalan Opening",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-284ceda150dbabf7",
+      "names": {
+        "en": "Closed, Spassky Gambit"
+      },
+      "eco": "E08",
+      "opening": "Catalan Opening: Closed, Spassky Gambit",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "Be7", "Bg2", "d5", "Nf3", "O-O", "O-O", "Nbd7", "Qc2", "c6", "b3", "b6", "Rd1", "Bb7", "Nc3", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b89ab022c90e8ede",
+      "names": {
+        "en": "Catalan Opening"
+      },
+      "eco": "E00",
+      "opening": "Catalan Opening",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ae20bebe70e36e26",
+      "names": {
+        "en": "Open Defense"
+      },
+      "eco": "E01",
+      "opening": "Catalan Opening: Open Defense",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e76db0ed23c0717",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "E06",
+      "opening": "Catalan Opening: Closed",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-973ccb29b4af08ac",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "E07",
+      "opening": "Catalan Opening: Closed",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7", "Nf3", "O-O", "O-O", "Nbd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-aa3deab58fe062b5",
+      "names": {
+        "en": "Closed, Botvinnik Variation"
+      },
+      "eco": "E07",
+      "opening": "Catalan Opening: Closed, Botvinnik Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7", "Nf3", "O-O", "O-O", "Nbd7", "Nc3", "c6", "Qd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-532e6993bfd387d4",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "E08",
+      "opening": "Catalan Opening: Closed",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7", "Nf3", "O-O", "O-O", "Nbd7", "Qc2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-64384e771db61bf5",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "E08",
+      "opening": "Catalan Opening: Closed",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7", "Nf3", "O-O", "O-O", "Nbd7", "Qc2", "c6", "Bf4", "b6", "Nbd2", "Bb7", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c6d581dc8f1dcf81",
+      "names": {
+        "en": "Closed, Sokolsky Variation"
+      },
+      "eco": "E09",
+      "opening": "Catalan Opening: Closed, Sokolsky Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7", "Nf3", "O-O", "O-O", "Nbd7", "Qc2", "c6", "Nbd2", "b6", "b3", "a5", "Bb2", "Ba6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-648fad0b2bf19960",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "E08",
+      "opening": "Catalan Opening: Closed",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7", "Nf3", "O-O", "O-O", "Nbd7", "Qc2", "c6", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-be09796328812608",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "E08",
+      "opening": "Catalan Opening: Closed",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7", "Nf3", "O-O", "O-O", "Nbd7", "Qc2", "c6", "b3", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c3b97fb9d63696d7",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "E06",
+      "opening": "Catalan Opening: Closed",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7", "Nf3", "O-O", "O-O", "c6", "Qc2", "b6", "Nbd2", "Bb7", "e4", "Na6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f27e19dcb996f4ea",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "E08",
+      "opening": "Catalan Opening: Closed",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7", "Nf3", "O-O", "O-O", "c6", "Qc2", "b6", "Rd1", "Nbd7", "Bf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1cc1411212c1c365",
+      "names": {
+        "en": "Tarrasch Defense"
+      },
+      "eco": "E01",
+      "opening": "Catalan Opening: Tarrasch Defense",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "c5", "Nf3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bf8b9ff597f55eea",
+      "names": {
+        "en": "Open Defense"
+      },
+      "eco": "E02",
+      "opening": "Catalan Opening: Open Defense",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "dxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ef3854739d4d7639",
+      "names": {
+        "en": "Open Defense"
+      },
+      "eco": "E04",
+      "opening": "Catalan Opening: Open Defense",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "dxc4", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5b4d4819dbf8c965",
+      "names": {
+        "en": "Open Defense, Classical Line"
+      },
+      "eco": "E05",
+      "opening": "Catalan Opening: Open Defense, Classical Line",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "dxc4", "Nf3", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5e179bb22ecdf617",
+      "names": {
+        "en": "Open Defense, Modern Sharp Variation"
+      },
+      "eco": "E04",
+      "opening": "Catalan Opening: Open Defense, Modern Sharp Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "dxc4", "Nf3", "Nc6", "Qa4", "Bb4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-13cfae504c50a999",
+      "names": {
+        "en": "Open Defense"
+      },
+      "eco": "E03",
+      "opening": "Catalan Opening: Open Defense",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "dxc4", "Qa4+", "Nbd7", "Qxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-06f4d16586d5fc11",
+      "names": {
+        "en": "Open Defense, Alekhine Variation"
+      },
+      "eco": "E03",
+      "opening": "Catalan Opening: Open Defense, Alekhine Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "dxc4", "Qa4+", "Nbd7", "Qxc4", "a6", "Qc2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-531ae2f052edd3ad",
+      "names": {
+        "en": "Hungarian Gambit"
+      },
+      "eco": "E00",
+      "opening": "Catalan Opening: Hungarian Gambit",
+      "moves": ["d4", "Nf6", "c4", "e6", "g3", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8b033ba49a88ad58",
+      "names": {
+        "en": "Closed Variation, Rabinovich Variation"
+      },
+      "eco": "E09",
+      "opening": "Catalan Opening: Closed Variation, Rabinovich Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Qc2", "e6", "Nbd2", "Be7", "g3", "Nbd7", "Bg2", "O-O", "O-O", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-81f91c066585baac",
+      "names": {
+        "en": "Closed, Zagoryansky Variation"
+      },
+      "eco": "E08",
+      "opening": "Catalan Opening: Closed, Zagoryansky Variation",
+      "moves": ["d4", "e6", "c4", "Nf6", "Nf3", "d5", "g3", "Be7", "Bg2", "O-O", "O-O", "Nbd7", "Qc2", "c6", "Rd1", "b6", "a4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

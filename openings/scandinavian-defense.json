@@ -1,0 +1,458 @@
+{
+  "id": "scandinavian-defense",
+  "names": {
+    "en": "Scandinavian Defense"
+  },
+  "lines": [
+    {
+      "id": "line-5411720c9eab1c3b",
+      "names": {
+        "en": "Scandinavian Defense"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense",
+      "moves": ["e4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-55fda045cdba304a",
+      "names": {
+        "en": "Scandinavian Defense"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense",
+      "moves": ["e4", "d5", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f470e93475b1bb2a",
+      "names": {
+        "en": "Zilbermints Gambit"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Zilbermints Gambit",
+      "moves": ["e4", "d5", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-65d269bed05dce60",
+      "names": {
+        "en": "Modern Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Modern Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d5a7d1a96c7b7783",
+      "names": {
+        "en": "Panov Transfer"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Panov Transfer",
+      "moves": ["e4", "d5", "exd5", "Nf6", "c4", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-99354987835b7253",
+      "names": {
+        "en": "Icelandic-Palme Gambit"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Icelandic-Palme Gambit",
+      "moves": ["e4", "d5", "exd5", "Nf6", "c4", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-60cffc02d9b903e4",
+      "names": {
+        "en": "Modern Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Modern Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-83b40fc4779bf6b0",
+      "names": {
+        "en": "Portuguese Gambit"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Portuguese Gambit",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c7034cc0da6e1bde",
+      "names": {
+        "en": "Portuguese Gambit, Lusophobe Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Portuguese Gambit, Lusophobe Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Bg4", "Bb5+", "Nbd7", "Be2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-788d5c397aa6b48c",
+      "names": {
+        "en": "Portuguese Gambit, Elbow Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Portuguese Gambit, Elbow Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Bg4", "Bb5+", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-55bd392363cf2703",
+      "names": {
+        "en": "Portuguese Gambit, Wuss Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Portuguese Gambit, Wuss Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Bg4", "Be2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-90d31e2e991a4479",
+      "names": {
+        "en": "Portuguese Gambit, Classical Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Portuguese Gambit, Classical Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Bg4", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c0e968eb33d83e45",
+      "names": {
+        "en": "Portuguese Gambit, Melbourne Shuffle Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Portuguese Gambit, Melbourne Shuffle Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Bg4", "f3", "Bf5", "Bb5+", "Nbd7", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-932e71a89943759d",
+      "names": {
+        "en": "Portuguese Gambit, Jadoul Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Portuguese Gambit, Jadoul Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Bg4", "f3", "Bf5", "Bb5+", "Nbd7", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-caa7ccd8a3592205",
+      "names": {
+        "en": "Portuguese Gambit, Banker Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Portuguese Gambit, Banker Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Bg4", "f3", "Bf5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-22b91bf4cbad2fd4",
+      "names": {
+        "en": "Portuguese Gambit, Correspondence Refutation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Portuguese Gambit, Correspondence Refutation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Bg4", "f3", "Bf5", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f3b8cf53009e83d1",
+      "names": {
+        "en": "Marshall Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Marshall Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Nxd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-660c23ad54e69cd5",
+      "names": {
+        "en": "Modern Variation, Gipslis Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Modern Variation, Gipslis Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Nxd5", "Nf3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e1b3251e1df10db3",
+      "names": {
+        "en": "Richter Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Richter Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Nxd5", "Nf3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9a93adad449185ba",
+      "names": {
+        "en": "Kiel Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Kiel Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Nxd5", "c4", "Nb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3028d08238975972",
+      "names": {
+        "en": "Kádas Gambit"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Kádas Gambit",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "c6", "dxc6", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-023006c51719c71c",
+      "names": {
+        "en": "Richter Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Richter Variation",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4dc03a0c1cd112e0",
+      "names": {
+        "en": "Modern Variation, Wing Gambit"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Modern Variation, Wing Gambit",
+      "moves": ["e4", "d5", "exd5", "Nf6", "d4", "g6", "c4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-646d3fec78796b6c",
+      "names": {
+        "en": "Mieses-Kotrč Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Mieses-Kotrč Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-666dac385286d92d",
+      "names": {
+        "en": "Main Line"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Main Line",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-68cb7c773349a988",
+      "names": {
+        "en": "Main Line, Leonhardt Gambit"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Main Line, Leonhardt Gambit",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9cd77d43691135c6",
+      "names": {
+        "en": "Main Line, Mieses Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Main Line, Mieses Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5", "d4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-344466e1da232232",
+      "names": {
+        "en": "Classical Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Classical Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5", "d4", "Nf6", "Nf3", "Bf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e3e6330493a8b892",
+      "names": {
+        "en": "Grünfeld Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Grünfeld Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5", "d4", "Nf6", "Nf3", "Bf5", "Ne5", "c6", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4ccf498c99401546",
+      "names": {
+        "en": "Lasker Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Lasker Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5", "d4", "Nf6", "Nf3", "Bg4", "h3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c6bcfbc8d7cd17f3",
+      "names": {
+        "en": "Anderssen Counterattack"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Anderssen Counterattack",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5", "d4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3a3d5340a3072538",
+      "names": {
+        "en": "Anderssen Counterattack, Goteborg System"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Anderssen Counterattack, Goteborg System",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5", "d4", "e5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-666dea699e264d4e",
+      "names": {
+        "en": "Anderssen Counterattack, Collijn Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Anderssen Counterattack, Collijn Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5", "d4", "e5", "Nf3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-049eec27caa72bd0",
+      "names": {
+        "en": "Anderssen Counterattack, Orthodox Attack"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Anderssen Counterattack, Orthodox Attack",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5", "d4", "e5", "dxe5", "Nc6", "Nf3", "Bb4", "Bd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-21386ca399459fb1",
+      "names": {
+        "en": "Gubinsky-Melts Defense"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Gubinsky-Melts Defense",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qd6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e4fa983e35fb35fa",
+      "names": {
+        "en": "Schiller-Pytel Variation, Modern Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Schiller-Pytel Variation, Modern Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qd6", "d4", "Nf6", "Bc4", "c6", "Nge2", "Bf5", "Bf4", "Qb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6a8fb9be7339e24d",
+      "names": {
+        "en": "Bronstein Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Bronstein Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qd6", "d4", "Nf6", "Nf3", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-84a862b4bd287f0c",
+      "names": {
+        "en": "Schiller-Pytel Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Schiller-Pytel Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qd6", "d4", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dbf2319afebb5dd8",
+      "names": {
+        "en": "Valencian Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Valencian Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qd8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd8b030d3e2211d0",
+      "names": {
+        "en": "Valencian Variation, Main Line"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Valencian Variation, Main Line",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qd8", "d4", "Nf6", "Nf3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-afe8587d114aa15a",
+      "names": {
+        "en": "Valencian Variation, Ilundain Variation"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Valencian Variation, Ilundain Variation",
+      "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qd8", "d4", "Nf6", "Nf3", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bddf4bd17e468dbf",
+      "names": {
+        "en": "Blackburne-Kloosterboer Gambit"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Blackburne-Kloosterboer Gambit",
+      "moves": ["e4", "d5", "exd5", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dbdd1ade8aa90dc3",
+      "names": {
+        "en": "Blackburne Gambit"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Blackburne Gambit",
+      "moves": ["e4", "d5", "exd5", "c6", "dxc6", "Nxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-76d7aa419048bc4d",
+      "names": {
+        "en": "Kloosterboer Gambit"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Kloosterboer Gambit",
+      "moves": ["e4", "d5", "exd5", "c6", "dxc6", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-802fc6ad5b4aef59",
+      "names": {
+        "en": "Boehnke Gambit"
+      },
+      "eco": "B01",
+      "opening": "Scandinavian Defense: Boehnke Gambit",
+      "moves": ["e4", "d5", "exd5", "e5", "dxe6", "Bxe6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

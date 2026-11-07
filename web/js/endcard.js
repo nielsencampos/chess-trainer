@@ -1,0 +1,88 @@
+// End-of-game card: result, variation, how far theory went, deviations, PGN, Lichess link.
+
+import { localizedName, t } from "./i18n.js";
+
+const COPY_FEEDBACK_MS = 1500;
+
+/** @param {string} id */
+const byId = (id) => /** @type {any} */ (document.getElementById(id));
+
+/** @param {string} text */
+async function copyText(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+  // Fallback for plain http on a network address, where the Clipboard API does not exist.
+  const area = document.createElement("textarea");
+  area.value = text;
+  area.style.position = "fixed";
+  area.style.opacity = "0";
+  document.body.append(area);
+  area.select();
+  const ok = document.execCommand("copy");
+  area.remove();
+  if (!ok) throw new Error("copy failed");
+}
+
+/**
+ * @param {number} ply
+ * @param {string} san
+ */
+function numbered(ply, san) {
+  const number = Math.ceil(ply / 2);
+  return { number: ply % 2 === 1 ? `${number}.` : `${number}...`, san };
+}
+
+/** @param {any} summary  The API's GameSummary. */
+export function renderEndCard(summary) {
+  byId("end-result").textContent = t(`end.${summary.result}`);
+  byId("end-termination").textContent = t(`end.termination.${summary.termination}`);
+
+  const eco = summary.eco ? `${summary.eco} · ` : "";
+  byId("end-variation").textContent = `${eco}${summary.opening ?? localizedName(summary.variant_names)}`;
+
+  const theoryPlies = summary.state.theory_until_ply;
+  byId("end-theory").textContent = theoryPlies === 0
+    ? t("end.theoryNone")
+    : t("end.theoryUntil", {
+        move: Math.ceil(theoryPlies / 2),
+        plies: theoryPlies,
+        total: summary.total_plies,
+      });
+
+  const list = byId("end-deviations");
+  list.replaceChildren();
+  if (summary.deviations.length === 0) {
+    const item = document.createElement("li");
+    item.className = "muted";
+    item.textContent = t("end.noDeviations");
+    list.append(item);
+  }
+  for (const deviation of summary.deviations) {
+    const { number, san } = numbered(deviation.ply, deviation.played_san);
+    const item = document.createElement("li");
+    const played = document.createElement("span");
+    played.className = "played";
+    played.textContent = `${number} ${san}`;
+    item.append(played, ` — ${t("end.deviationLine", { expected: deviation.expected_san.join(", ") })}`);
+    list.append(item);
+  }
+
+  const copyButton = byId("copy-pgn");
+  copyButton.hidden = false;
+  byId("lichess-link").hidden = false;
+  copyButton.textContent = t("end.copyPgn");
+  copyButton.onclick = async () => {
+    try {
+      await copyText(summary.pgn);
+      copyButton.textContent = t("end.copied");
+    } catch {
+      copyButton.textContent = t("end.copyFailed");
+    }
+    setTimeout(() => {
+      copyButton.textContent = t("end.copyPgn");
+    }, COPY_FEEDBACK_MS);
+  };
+  byId("lichess-link").href = summary.lichess_url;
+}

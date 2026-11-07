@@ -1,0 +1,148 @@
+{
+  "id": "old-indian-defense",
+  "names": {
+    "en": "Old Indian Defense"
+  },
+  "lines": [
+    {
+      "id": "line-b9b0e82e59476271",
+      "names": {
+        "en": "Old Indian Defense"
+      },
+      "eco": "A53",
+      "opening": "Old Indian Defense",
+      "moves": ["d4", "Nf6", "c4", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-11b519cd5e75ac70",
+      "names": {
+        "en": "Janowski Variation"
+      },
+      "eco": "A53",
+      "opening": "Old Indian Defense: Janowski Variation",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nc3", "Bf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c39aa7617e0d1d36",
+      "names": {
+        "en": "Janowski Variation, Grinberg Gambit"
+      },
+      "eco": "A53",
+      "opening": "Old Indian Defense: Janowski Variation, Grinberg Gambit",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nc3", "Bf5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-51386bba27905a15",
+      "names": {
+        "en": "Janowski Variation, Main Line"
+      },
+      "eco": "A53",
+      "opening": "Old Indian Defense: Janowski Variation, Main Line",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nc3", "Bf5", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a484a4af8176a47b",
+      "names": {
+        "en": "Janowski Variation, Fianchetto Variation"
+      },
+      "eco": "A53",
+      "opening": "Old Indian Defense: Janowski Variation, Fianchetto Variation",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nc3", "Bf5", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-44d5e5054bb3f3f8",
+      "names": {
+        "en": "Normal Variation"
+      },
+      "eco": "A55",
+      "opening": "Old Indian Defense: Normal Variation",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nc3", "Nbd7", "e4", "e5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f668f29c582d96ba",
+      "names": {
+        "en": "Czech Variation, with Nc3"
+      },
+      "eco": "A53",
+      "opening": "Old Indian Defense: Czech Variation, with Nc3",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nc3", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e9def9eb0208bee7",
+      "names": {
+        "en": "Ukrainian Variation"
+      },
+      "eco": "A54",
+      "opening": "Old Indian Defense: Ukrainian Variation",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nc3", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8ba7c0a5d5e83d80",
+      "names": {
+        "en": "Two Knights Variation"
+      },
+      "eco": "A54",
+      "opening": "Old Indian Defense: Two Knights Variation",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nc3", "e5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3a3a4b6e5d2e017b",
+      "names": {
+        "en": "Duz-Khotimirsky Variation"
+      },
+      "eco": "A54",
+      "opening": "Old Indian Defense: Duz-Khotimirsky Variation",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nc3", "e5", "e3", "Nbd7", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8878e103dce5cb53",
+      "names": {
+        "en": "Tartakower-Indian"
+      },
+      "eco": "A54",
+      "opening": "Old Indian Defense: Tartakower-Indian",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nf3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-92e81b42a811ee58",
+      "names": {
+        "en": "Czech Variation, with Nf3"
+      },
+      "eco": "A53",
+      "opening": "Old Indian Defense: Czech Variation, with Nf3",
+      "moves": ["d4", "Nf6", "c4", "d6", "Nf3", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4a2210605b6f1b4d",
+      "names": {
+        "en": "Aged Gibbon Gambit"
+      },
+      "eco": "A53",
+      "opening": "Old Indian Defense: Aged Gibbon Gambit",
+      "moves": ["d4", "Nf6", "c4", "d6", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ffe8276cfcd7f893",
+      "names": {
+        "en": "Old Indian Defense"
+      },
+      "eco": "A41",
+      "opening": "Old Indian Defense",
+      "moves": ["d4", "d6", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

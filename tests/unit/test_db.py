@@ -1,0 +1,330 @@
+import json
+
+import chess
+import pytest
+
+from app.book.models import BookError
+from app.book.source import read_opening_files
+from app.book.sync import load_book, sync_catalog, sync_openings
+from app.config import Settings
+from app.db.connection import DatabaseError, apply_migrations, open_database
+from catalog.generate_openings import line_id_of, render
+from catalog.loader import index_by_position, load_catalog, source_commit
+from catalog.validate import validate
+
+SETTINGS = Settings()
+
+
+def line(line_id, moves, name="Line", **extra):
+    return {
+        "id": line_id,
+        "names": {"en": name},
+        "moves": moves,
+        "source": "test",
+        **extra,
+    }
+
+
+def write_family(directory, family_id, *lines, name="Family"):
+    document = {"id": family_id, "names": {"en": name}, "lines": list(lines)}
+    (directory / f"{family_id}.json").write_text(json.dumps(document), encoding="utf-8")
+
+
+@pytest.fixture
+def connection(tmp_path):
+    database = open_database(tmp_path / "new" / "test.duckdb")
+    apply_migrations(database)
+    yield database
+    database.close()
+
+
+@pytest.fixture
+def openings(tmp_path):
+    directory = tmp_path / "openings"
+    directory.mkdir()
+    write_family(
+        directory,
+        "caro",
+        line("c1", ["e4", "c6"], eco="B10", opening="Caro-Kann Defense"),
+        line("c2", ["e4", "c6", "d4", "d5", "e5"], name="Advance", eco="B12"),
+        name="Caro-Kann Defense",
+    )
+    write_family(directory, "vienna", line("v1", ["e4", "e5", "Nc3"]), name="Vienna Game")
+    return directory
+
+
+def count(database, table, where="true"):
+    return database.execute(f"SELECT count(*) FROM {table} WHERE {where}").fetchone()[0]
+
+
+# --- Migrations and connection ---
+
+
+def test_migrations_apply_once(tmp_path):
+    database = open_database(tmp_path / "test.duckdb")
+    assert apply_migrations(database) == [1]
+    assert apply_migrations(database) == []
+    assert count(database, "schema_migrations") == 1
+    database.close()
+
+
+def test_failed_migration_rolls_back_and_fails_loudly(tmp_path):
+    database = open_database(tmp_path / "test.duckdb")
+    directory = tmp_path / "migrations"
+    directory.mkdir()
+    (directory / "001_bad.sql").write_text("CREATE TABLE t (a INT); SELECT nope;", encoding="utf-8")
+    with pytest.raises(DatabaseError, match="001_bad"):
+        apply_migrations(database, directory)
+    assert count(database, "schema_migrations") == 0
+    assert ("t",) not in database.execute("SELECT table_name FROM duckdb_tables()").fetchall()
+    database.close()
+
+
+def test_bad_migration_file_name_fails(tmp_path):
+    database = open_database(tmp_path / "test.duckdb")
+    directory = tmp_path / "migrations"
+    directory.mkdir()
+    (directory / "1_bad.sql").write_text("SELECT 1;", encoding="utf-8")
+    with pytest.raises(DatabaseError, match="bad migration file name"):
+        apply_migrations(database, directory)
+    database.close()
+
+
+def test_unusable_path_fails_with_a_helpful_message(tmp_path):
+    blocker = tmp_path / "file"
+    blocker.write_text("x", encoding="utf-8")
+    with pytest.raises(DatabaseError, match="UID 1000"):
+        open_database(blocker / "db" / "test.duckdb")
+
+
+# --- Opening files ---
+
+
+def test_sync_fills_the_tables(connection, openings):
+    assert sync_openings(connection, openings) == ["caro", "vienna"]
+    assert count(connection, "variants") == 3
+    assert count(connection, "repertoires", "source = 'repo'") == 2
+    assert count(connection, "book_moves") == 2 + 5 + 3
+    row = connection.execute("SELECT pgn, moves_san FROM variants WHERE variant_id='v1'").fetchone()
+    assert row == ("1. e4 e5 2. Nc3", ["e4", "e5", "Nc3"])
+
+
+def test_only_changed_files_reload(connection, openings):
+    sync_openings(connection, openings)
+    assert sync_openings(connection, openings) == []
+
+    write_family(openings, "vienna", line("v1", ["e4", "e5", "Nc3", "Nf6"]), name="Vienna Game")
+    assert sync_openings(connection, openings) == ["vienna"]
+    assert count(connection, "book_moves", "variant_id = 'v1'") == 4
+    assert count(connection, "book_moves", "variant_id = 'c1'") == 2
+
+
+def test_extended_line_keeps_its_id(connection, openings):
+    sync_openings(connection, openings)
+    write_family(openings, "vienna", line("v1", ["e4", "e5", "Nc3", "Nf6"]), name="Vienna Game")
+    sync_openings(connection, openings)
+    book = load_book(connection)
+    assert book.variants["v1"].pgn == "1. e4 e5 2. Nc3 Nf6"
+
+
+def test_removed_line_becomes_inactive_and_stays_in_the_table(connection, openings):
+    sync_openings(connection, openings)
+    write_family(openings, "caro", line("c1", ["e4", "c6"]), name="Caro-Kann Defense")
+    sync_openings(connection, openings)
+    assert count(connection, "variants", "variant_id = 'c2' AND NOT active") == 1
+    assert count(connection, "book_moves", "variant_id = 'c2'") == 0
+    assert "c2" not in load_book(connection).variants
+
+
+def test_removed_file_deactivates_its_lines(connection, openings):
+    sync_openings(connection, openings)
+    (openings / "vienna.json").unlink()
+    assert sync_openings(connection, openings) == []
+    assert count(connection, "variants", "variant_id = 'v1' AND NOT active") == 1
+    assert set(load_book(connection).repertoires) == {"caro"}
+
+
+def test_line_moved_between_files_stays_active(connection, openings):
+    sync_openings(connection, openings)
+    write_family(openings, "caro", line("c1", ["e4", "c6"]), name="Caro-Kann Defense")
+    write_family(
+        openings,
+        "vienna",
+        line("v1", ["e4", "e5", "Nc3"]),
+        line("c2", ["e4", "c6", "d4", "d5", "e5"], name="Advance"),
+        name="Vienna Game",
+    )
+    sync_openings(connection, openings)
+    book = load_book(connection)
+    assert book.variants["c2"].repertoire_id == "vienna"
+
+
+def test_imported_families_survive_a_sync(connection, openings):
+    sync_openings(connection, openings)
+    connection.execute("INSERT INTO repertoires VALUES ('mine', 'user', NULL, NULL, now())")
+    connection.execute(
+        "INSERT INTO variants VALUES ('m1','mine',NULL,NULL,'1. d4',['d4'],'x','me',true)"
+    )
+    (openings / "vienna.json").unlink()
+    sync_openings(connection, openings)
+    assert count(connection, "variants", "variant_id = 'm1' AND active") == 1
+    assert count(connection, "repertoires", "repertoire_id = 'mine'") == 1
+
+
+def test_database_survives_reopening(tmp_path, openings):
+    path = tmp_path / "test.duckdb"
+    database = open_database(path)
+    apply_migrations(database)
+    sync_openings(database, openings)
+    database.close()
+    reopened = open_database(path)
+    assert apply_migrations(reopened) == []
+    assert sync_openings(reopened, openings) == []
+    assert len(load_book(reopened).variants) == 3
+    reopened.close()
+
+
+def test_book_read_from_the_database(connection, openings):
+    sync_openings(connection, openings)
+    book = load_book(connection)
+    assert book.repertoires["caro"].names == {"en": "Caro-Kann Defense"}
+    assert len(book.repertoires["caro"].variant_ids) == 2
+    variant = book.variants["c2"]
+    assert variant.eco == "B12"
+    assert variant.names == {"en": "Advance"}
+    assert [move.san for move in variant.moves[chess.Board().epd()]] == ["e4"]
+    assert variant.final_epd in variant.positions
+    assert variant.final_epd not in variant.moves
+
+
+def test_translated_names_load(connection, tmp_path):
+    directory = tmp_path / "translated"
+    directory.mkdir()
+    document = {
+        "id": "x",
+        "names": {"en": "X", "pt-BR": "Xis"},
+        "lines": [{**line("x1", ["e4"]), "names": {"en": "L", "pt-BR": "Linha"}}],
+    }
+    (directory / "x.json").write_text(json.dumps(document), encoding="utf-8")
+    sync_openings(connection, directory)
+    book = load_book(connection)
+    assert book.repertoires["x"].names["pt-BR"] == "Xis"
+    assert book.variants["x1"].names["pt-BR"] == "Linha"
+
+
+@pytest.mark.parametrize(
+    ("content", "message"),
+    [
+        ("not json", "invalid JSON"),
+        ('{"id": "other", "names": {"en": "X"}, "lines": []}', "match the file name"),
+        ('{"id": "bad", "names": {"en": "X"}, "lines": []}', "non-empty list"),
+        (json.dumps({"id": "bad", "names": {}, "lines": [line("a", ["e4"])]}), "'en'"),
+        (
+            json.dumps(
+                {"id": "bad", "names": {"en": "X"}, "lines": [{"id": "a", "moves": ["e4"]}]}
+            ),
+            "'source'",
+        ),
+        (json.dumps({"id": "bad", "names": {"en": "X"}, "lines": [line("a", [])]}), "'moves'"),
+    ],
+)
+def test_invalid_file_fails_loudly(connection, tmp_path, content, message):
+    directory = tmp_path / "broken"
+    directory.mkdir()
+    (directory / "bad.json").write_text(content, encoding="utf-8")
+    with pytest.raises(BookError, match=message):
+        sync_openings(connection, directory)
+
+
+def test_illegal_move_fails_and_changes_nothing(connection, openings):
+    sync_openings(connection, openings)
+    write_family(openings, "vienna", line("v1", ["e4", "e4"]), name="Vienna Game")
+    with pytest.raises(BookError, match="illegal move"):
+        sync_openings(connection, openings)
+    assert count(connection, "book_moves", "variant_id = 'v1'") == 3
+
+
+def test_duplicate_id_across_files_fails(connection, openings):
+    write_family(openings, "other", line("v1", ["d4"]))
+    with pytest.raises(BookError, match="duplicate line id"):
+        sync_openings(connection, openings)
+
+
+def test_duplicate_moves_fail(connection, openings):
+    write_family(openings, "other", line("o1", ["e4", "e5", "Nc3"]))
+    with pytest.raises(BookError, match="same moves"):
+        sync_openings(connection, openings)
+
+
+def test_empty_directory_and_empty_book_fail(connection, tmp_path):
+    with pytest.raises(BookError, match="no opening files"):
+        sync_openings(connection, tmp_path)
+    with pytest.raises(BookError, match="empty"):
+        load_book(connection)
+
+
+# --- Committed files and reference catalog ---
+
+
+@pytest.fixture(scope="module")
+def committed():
+    return read_opening_files(SETTINGS.openings_dir)
+
+
+@pytest.fixture(scope="module")
+def catalog():
+    return load_catalog()
+
+
+def test_catalog_is_complete(catalog):
+    assert len(catalog) == 3865
+    assert sum(entry.name.startswith("Caro-Kann") for entry in catalog) == 110
+    assert len(source_commit()) == 40
+
+
+def test_committed_openings_cover_the_catalog(committed, catalog):
+    assert len(committed) == 149
+    assert sum(len(item.lines) for item in committed) == 3865
+    by_id = {line.line_id for item in committed for line in item.lines}
+    assert by_id == {line_id_of(entry.pgn) for entry in catalog}
+
+
+def test_committed_openings_match_the_catalog(committed, catalog):
+    assert validate(committed, index_by_position(catalog)) == []
+
+
+def test_validator_detects_a_wrong_name(tmp_path, catalog):
+    write_family(tmp_path, "x", line("x1", ["e4", "c6"], opening="Made Up", eco="B10"))
+    problems = validate(read_opening_files(tmp_path), index_by_position(catalog))
+    assert "Made Up" in problems[0]
+
+
+def test_validator_accepts_our_own_lines_without_a_catalog_name(tmp_path, catalog):
+    write_family(tmp_path, "x", line("x1", ["e4", "c6", "d4", "d5", "e5", "Bf5", "Nf3", "e6"]))
+    assert validate(read_opening_files(tmp_path), index_by_position(catalog)) == []
+
+
+def test_committed_sources_name_the_catalog_commit(committed):
+    short = source_commit()[:7]
+    assert all(short in line.source for item in committed for line in item.lines)
+
+
+def test_files_keep_move_lists_on_one_line():
+    text = render({"id": "x", "lines": [{"moves": ["e4", "c6"]}]})
+    assert '"moves": ["e4", "c6"]' in text
+    assert json.loads(text)["lines"][0]["moves"] == ["e4", "c6"]
+
+
+def test_catalog_sync_is_idempotent(connection):
+    assert sync_catalog(connection, SETTINGS.catalog_dir) is True
+    assert sync_catalog(connection, SETTINGS.catalog_dir) is False
+    assert count(connection, "openings_catalog") == 3865
+    assert count(connection, "catalog_loads") == 1
+
+
+def test_full_book_loads(loaded_database):
+    database = open_database(loaded_database)
+    book = load_book(database)
+    assert len(book.variants) == 3865
+    assert len(book.repertoires) == 149
+    database.close()

@@ -1,0 +1,538 @@
+{
+  "id": "scotch-game",
+  "names": {
+    "en": "Scotch Game"
+  },
+  "lines": [
+    {
+      "id": "line-d0894841bd42e1e6",
+      "names": {
+        "en": "Benima Defense"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Benima Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Be7", "d4", "exd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bafec7408139b32c",
+      "names": {
+        "en": "Scotch Gambit, Dubois Réti Defense"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Scotch Gambit, Dubois Réti Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-34dde3f446c2ee26",
+      "names": {
+        "en": "Scotch Gambit, Kingside Variation"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Scotch Gambit, Kingside Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "e5", "Ng4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1e293043fc2cf615",
+      "names": {
+        "en": "Scotch Game"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5916ca5b17e516df",
+      "names": {
+        "en": "Lolli Variation"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Lolli Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "Nxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-70895c295d4456df",
+      "names": {
+        "en": "Napoleon Gambit"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Napoleon Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "Nxd4", "Nxd4", "exd4", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cf3fe4a85478b176",
+      "names": {
+        "en": "Lolli Variation"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Lolli Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "Nxd4", "Nxd4", "exd4", "Qxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-12ac90fe16e063e8",
+      "names": {
+        "en": "Scotch Game"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-148d3fc52314ef8e",
+      "names": {
+        "en": "Relfsson Gambit"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Relfsson Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b8512e52c159e4dd",
+      "names": {
+        "en": "Scotch Gambit"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Scotch Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-21d4a7843ef68ee4",
+      "names": {
+        "en": "Scotch Gambit, London Defense"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Scotch Gambit, London Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Bb4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cf2d5bbaf5da3211",
+      "names": {
+        "en": "Hanneken Variation"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Hanneken Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Bb4+", "c3", "dxc3", "O-O", "cxb2", "Bxb2", "Nf6", "Ng5", "O-O", "e5", "Nxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-de18bce08838a2b7",
+      "names": {
+        "en": "Cochrane Variation"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Cochrane Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Bb4+", "c3", "dxc3", "bxc3", "Ba5", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8c7fd768fbcfc693",
+      "names": {
+        "en": "Haxo Gambit"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Haxo Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3d4b72d19babf54a",
+      "names": {
+        "en": "Scotch Gambit, Sarratt Variation"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Scotch Gambit, Sarratt Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Bc5", "Ng5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-69b116349552ae5c",
+      "names": {
+        "en": "Cochrane-Shumov Defense"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Cochrane-Shumov Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Bc5", "Ng5", "Nh6", "Nxf7", "Nxf7", "Bxf7+", "Kxf7", "Qh5+", "g6", "Qxc5", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-59c8229a8481d5da",
+      "names": {
+        "en": "Vitzthum Attack"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Vitzthum Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Bc5", "Ng5", "Nh6", "Qh5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-73b3737b9f88bbf2",
+      "names": {
+        "en": "Scotch Gambit, Cochrane-Anderssen Variation"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Scotch Gambit, Cochrane-Anderssen Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Bc5", "O-O", "d6", "c3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d8665e20a46136e6",
+      "names": {
+        "en": "Scotch Gambit, Advance Variation"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Scotch Gambit, Advance Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Nf6", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ca802b4c4a0b9eee",
+      "names": {
+        "en": "Scotch Game"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b918ae8c6013f2f9",
+      "names": {
+        "en": "Malaniuk Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Malaniuk Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bb4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b73d0ec9dd6208d3",
+      "names": {
+        "en": "Classical Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Classical Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f02fb1f8feeb1349",
+      "names": {
+        "en": "Blumenfeld Attack"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Blumenfeld Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "Nb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d20d3cdd49787b20",
+      "names": {
+        "en": "Paulsen Attack"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Paulsen Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Bb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5d20df9f30ff5a8a",
+      "names": {
+        "en": "Paulsen, Gunsberg Defense"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Paulsen, Gunsberg Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Bb5", "Nd8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7d0b418b5b14ea8d",
+      "names": {
+        "en": "Meitner Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Meitner Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Nc2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-42d908415d1ec566",
+      "names": {
+        "en": "Classical Variation, Blackburne Attack"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Classical Variation, Blackburne Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Qd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fa7e9ffae2bc90c7",
+      "names": {
+        "en": "Gottschall Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Gottschall Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Nge7", "Qd2", "d5", "Nb5", "Bxe3", "Qxe3", "O-O", "Nxc7", "Rb8", "Nxd5", "Nxd5", "exd5", "Nb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c9e510ecf4ce88fe",
+      "names": {
+        "en": "Classical Variation, Millennium Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Classical Variation, Millennium Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Be3", "Qf6", "c3", "Qg6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b02bcdccace97c8d",
+      "names": {
+        "en": "Potter Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Potter Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nb3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3e97d8b1f1d78455",
+      "names": {
+        "en": "Romanishin Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Romanishin Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nb3", "Bb4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0eb1f0bbfb41c70c",
+      "names": {
+        "en": "Classical Variation, Intermezzo Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Classical Variation, Intermezzo Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bc5", "Nxc6", "Qf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-068ec480ed98bcf0",
+      "names": {
+        "en": "Schmidt Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Schmidt Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d51cdddd2f944117",
+      "names": {
+        "en": "Tartakower Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Tartakower Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nf6", "Nxc6", "bxc6", "Nd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-351ad35c573ccb6b",
+      "names": {
+        "en": "Mieses Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Mieses Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nf6", "Nxc6", "bxc6", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0140600c766a9eb3",
+      "names": {
+        "en": "Alekhine Gambit"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Alekhine Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nf6", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8835632c148cfba8",
+      "names": {
+        "en": "Ghulam-Kassim Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Ghulam-Kassim Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nxd4", "Qxd4", "d6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-13a2d854f5e57ccc",
+      "names": {
+        "en": "Steinitz Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Steinitz Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Qh4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fa3b4a227b94ee4b",
+      "names": {
+        "en": "Braune Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Braune Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Qh4", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-180fe16f2e09d4a8",
+      "names": {
+        "en": "Horwitz Attack"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Horwitz Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Qh4", "Nb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-17eb4975b54374ac",
+      "names": {
+        "en": "Scotch Game"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Qh4", "Nb5", "Bb4+", "Bd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2ceeb6f183d2cb67",
+      "names": {
+        "en": "Rosenthal Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Rosenthal Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Qh4", "Nb5", "Bb4+", "Bd2", "Qxe4+", "Be2", "Kd8", "O-O", "Bxd2", "Nxd2", "Qg6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-993c14654328d414",
+      "names": {
+        "en": "Horwitz Attack, Blackburne Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Horwitz Attack, Blackburne Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Qh4", "Nb5", "Bb4+", "Bd2", "Qxe4+", "Be2", "Kd8", "O-O", "Bxd2", "Qxd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e0a74f3a6ebc0f3d",
+      "names": {
+        "en": "Steinitz Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Steinitz Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Qh4", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a657ddc647d58ebb",
+      "names": {
+        "en": "Modern Defense"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Modern Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Qh4", "Nc3", "Bb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c5fc741cd5a7f926",
+      "names": {
+        "en": "Fraser Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Fraser Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Qh4", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5ad26031cea94b43",
+      "names": {
+        "en": "Paulsen Variation"
+      },
+      "eco": "C45",
+      "opening": "Scotch Game: Paulsen Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Qh4", "Nf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-84ac77b1178c3e79",
+      "names": {
+        "en": "Göring Gambit"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Göring Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-edad1784e9597d3d",
+      "names": {
+        "en": "Scotch Gambit, Göring Gambit Declined"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Scotch Gambit, Göring Gambit Declined",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "c3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-61f3844e0d7d59a7",
+      "names": {
+        "en": "Göring Gambit, Double Pawn Sacrifice"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Göring Gambit, Double Pawn Sacrifice",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "c3", "dxc3", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4bbf75e09933e74d",
+      "names": {
+        "en": "Göring Gambit, Bardeleben Variation"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Göring Gambit, Bardeleben Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "c3", "dxc3", "Bc4", "Nf6", "Nxc3", "Bb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-128208eaf110c185",
+      "names": {
+        "en": "Göring Gambit, Main Line"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Göring Gambit, Main Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "c3", "dxc3", "Nxc3", "Bb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1c5a62e1499d16b6",
+      "names": {
+        "en": "Sea-Cadet Mate"
+      },
+      "eco": "C44",
+      "opening": "Scotch Game: Sea-Cadet Mate",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "c3", "dxc3", "Nxc3", "d6", "Bc4", "Bg4", "O-O", "Ne5", "Nxe5", "Bxd1", "Bxf7+", "Ke7", "Nd5#"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

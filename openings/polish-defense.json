@@ -1,0 +1,28 @@
+{
+  "id": "polish-defense",
+  "names": {
+    "en": "Polish Defense"
+  },
+  "lines": [
+    {
+      "id": "line-cdbedae953594726",
+      "names": {
+        "en": "Polish Defense"
+      },
+      "eco": "A40",
+      "opening": "Polish Defense",
+      "moves": ["d4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-238dec5c6fafdb98",
+      "names": {
+        "en": "Spassky Gambit Accepted"
+      },
+      "eco": "A40",
+      "opening": "Polish Defense: Spassky Gambit Accepted",
+      "moves": ["d4", "b5", "e4", "Bb7", "Bxb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

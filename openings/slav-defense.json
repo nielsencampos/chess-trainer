@@ -1,0 +1,528 @@
+{
+  "id": "slav-defense",
+  "names": {
+    "en": "Slav Defense"
+  },
+  "lines": [
+    {
+      "id": "line-9b72e167681f2239",
+      "names": {
+        "en": "Modern Line"
+      },
+      "eco": "D11",
+      "opening": "Slav Defense: Modern Line",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "g3", "c6", "Bg2", "Bg4", "O-O", "Nbd7", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a970f3d69ce5dce5",
+      "names": {
+        "en": "Slav Defense"
+      },
+      "eco": "D10",
+      "opening": "Slav Defense",
+      "moves": ["d4", "d5", "c4", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd68f1dda0a322bc",
+      "names": {
+        "en": "Slav Defense"
+      },
+      "eco": "D10",
+      "opening": "Slav Defense",
+      "moves": ["d4", "d5", "c4", "c6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2bc5697b8ca7002c",
+      "names": {
+        "en": "Slav Defense"
+      },
+      "eco": "D10",
+      "opening": "Slav Defense",
+      "moves": ["d4", "d5", "c4", "c6", "Nc3", "dxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-439e1763368db66e",
+      "names": {
+        "en": "Slav Gambit, Alekhine Attack"
+      },
+      "eco": "D10",
+      "opening": "Slav Defense: Slav Gambit, Alekhine Attack",
+      "moves": ["d4", "d5", "c4", "c6", "Nc3", "dxc4", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fb3c73dce30aaf78",
+      "names": {
+        "en": "Winawer Countergambit"
+      },
+      "eco": "D10",
+      "opening": "Slav Defense: Winawer Countergambit",
+      "moves": ["d4", "d5", "c4", "c6", "Nc3", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9b529eb87c425f56",
+      "names": {
+        "en": "Winawer Countergambit, Anti-Winawer Gambit"
+      },
+      "eco": "D10",
+      "opening": "Slav Defense: Winawer Countergambit, Anti-Winawer Gambit",
+      "moves": ["d4", "d5", "c4", "c6", "Nc3", "e5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-33715753c65b4110",
+      "names": {
+        "en": "Modern Line"
+      },
+      "eco": "D11",
+      "opening": "Slav Defense: Modern Line",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-27de0b9a0d4687a3",
+      "names": {
+        "en": "Bonet Gambit"
+      },
+      "eco": "D11",
+      "opening": "Slav Defense: Bonet Gambit",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9184b66260584f4b",
+      "names": {
+        "en": "Breyer Variation"
+      },
+      "eco": "D11",
+      "opening": "Slav Defense: Breyer Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0040854b71c67398",
+      "names": {
+        "en": "Three Knights Variation"
+      },
+      "eco": "D15",
+      "opening": "Slav Defense: Three Knights Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e12acd14357c5cec",
+      "names": {
+        "en": "Süchting Variation"
+      },
+      "eco": "D15",
+      "opening": "Slav Defense: Süchting Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "Qb6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4f0a96cf53a08786",
+      "names": {
+        "en": "Chebanenko Variation"
+      },
+      "eco": "D15",
+      "opening": "Slav Defense: Chebanenko Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-92eeee884ec31c3d",
+      "names": {
+        "en": "Chebanenko Variation, Advance System"
+      },
+      "eco": "D15",
+      "opening": "Slav Defense: Chebanenko Variation, Advance System",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "a6", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5e4be43874e8b387",
+      "names": {
+        "en": "Chebanenko Variation"
+      },
+      "eco": "D15",
+      "opening": "Slav Defense: Chebanenko Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "a6", "e3", "Bf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6d3657d7ab1b8d24",
+      "names": {
+        "en": "Two Knights Attack"
+      },
+      "eco": "D15",
+      "opening": "Slav Defense: Two Knights Attack",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5852d6c96f0ae748",
+      "names": {
+        "en": "Alapin Variation"
+      },
+      "eco": "D16",
+      "opening": "Slav Defense: Alapin Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e5ea0ccb18f95b1f",
+      "names": {
+        "en": "Czech Variation"
+      },
+      "eco": "D17",
+      "opening": "Slav Defense: Czech Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a4995332af8b7624",
+      "names": {
+        "en": "Czech Variation, Krause Attack"
+      },
+      "eco": "D17",
+      "opening": "Slav Defense: Czech Variation, Krause Attack",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "Ne5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ec158d0802f853f8",
+      "names": {
+        "en": "Czech Variation, Krause Attack, Fazekas Gambit"
+      },
+      "eco": "D17",
+      "opening": "Slav Defense: Czech Variation, Krause Attack, Fazekas Gambit",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "Ne5", "Na6", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b2fca5d6d7c3dfb0",
+      "names": {
+        "en": "Czech Variation, Carlsbad Variation"
+      },
+      "eco": "D17",
+      "opening": "Slav Defense: Czech Variation, Carlsbad Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "Ne5", "Nbd7", "Nxc4", "Qc7", "g3", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-536a64de652922c7",
+      "names": {
+        "en": "Czech Variation, Carlsbad Variation, Morozevich Variation"
+      },
+      "eco": "D17",
+      "opening": "Slav Defense: Czech Variation, Carlsbad Variation, Morozevich Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "Ne5", "Nbd7", "Nxc4", "Qc7", "g3", "e5", "dxe5", "Nxe5", "Bf4", "Nfd7", "Bg2", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a15f4fa975dc6c6c",
+      "names": {
+        "en": "Czech Variation, Wiesbaden Variation"
+      },
+      "eco": "D17",
+      "opening": "Slav Defense: Czech Variation, Wiesbaden Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "Ne5", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f6fe26063cd13315",
+      "names": {
+        "en": "Czech Variation, Wiesbaden Variation, Sharp Line"
+      },
+      "eco": "D17",
+      "opening": "Slav Defense: Czech Variation, Wiesbaden Variation, Sharp Line",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "Ne5", "e6", "f3", "Bb4", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-654ea90774e19798",
+      "names": {
+        "en": "Czech Variation, Bled Attack"
+      },
+      "eco": "D17",
+      "opening": "Slav Defense: Czech Variation, Bled Attack",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "Nh4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fe66a960c4469cae",
+      "names": {
+        "en": "Czech Variation, Classical System"
+      },
+      "eco": "D18",
+      "opening": "Slav Defense: Czech Variation, Classical System",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-13168a1b85613cea",
+      "names": {
+        "en": "Czech Variation, Lasker Variation"
+      },
+      "eco": "D18",
+      "opening": "Slav Defense: Czech Variation, Lasker Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "e3", "Na6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-64cdac40f96489b4",
+      "names": {
+        "en": "Czech Variation, Dutch Variation"
+      },
+      "eco": "D19",
+      "opening": "Slav Defense: Czech Variation, Dutch Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "e3", "e6", "Bxc4", "Bb4", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd739133d4f8421e",
+      "names": {
+        "en": "Czech Variation, Classical System, Main Line"
+      },
+      "eco": "D19",
+      "opening": "Slav Defense: Czech Variation, Classical System, Main Line",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "e3", "e6", "Bxc4", "Bb4", "O-O", "O-O", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-43cbe924e0403908",
+      "names": {
+        "en": "Czech Variation, Dutch Variation, Sämisch Variation"
+      },
+      "eco": "D19",
+      "opening": "Slav Defense: Czech Variation, Dutch Variation, Sämisch Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bf5", "e3", "e6", "Bxc4", "Bb4", "O-O", "O-O", "Qe2", "Ne4", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9a586db0bc3c386a",
+      "names": {
+        "en": "Steiner Variation"
+      },
+      "eco": "D16",
+      "opening": "Slav Defense: Steiner Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-859069deeb0b385a",
+      "names": {
+        "en": "Smyslov Variation"
+      },
+      "eco": "D16",
+      "opening": "Slav Defense: Smyslov Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "Na6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c35f99bd8b4a6e4d",
+      "names": {
+        "en": "Soultanbeieff Variation"
+      },
+      "eco": "D16",
+      "opening": "Slav Defense: Soultanbeieff Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "a4", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4552033c7ac1c490",
+      "names": {
+        "en": "Alekhine Variation"
+      },
+      "eco": "D15",
+      "opening": "Slav Defense: Alekhine Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e42043143bdc80d",
+      "names": {
+        "en": "Geller Gambit"
+      },
+      "eco": "D15",
+      "opening": "Slav Defense: Geller Gambit",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e14a035aeef5c689",
+      "names": {
+        "en": "Geller Gambit"
+      },
+      "eco": "D15",
+      "opening": "Slav Defense: Geller Gambit",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4", "e4", "b5", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b19776d6680c4f5b",
+      "names": {
+        "en": "Schlechter Variation"
+      },
+      "eco": "D15",
+      "opening": "Slav Defense: Schlechter Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f168fa2dfe4a8ce3",
+      "names": {
+        "en": "Exchange Variation"
+      },
+      "eco": "D13",
+      "opening": "Slav Defense: Exchange Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "cxd5", "cxd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bb69361990b4af9a",
+      "names": {
+        "en": "Exchange Variation, Trifunovic Variation"
+      },
+      "eco": "D14",
+      "opening": "Slav Defense: Exchange Variation, Trifunovic Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "cxd5", "cxd5", "Nc3", "Nc6", "Bf4", "Bf5", "e3", "e6", "Qb3", "Bb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-528432c827fd0707",
+      "names": {
+        "en": "Quiet Variation"
+      },
+      "eco": "D11",
+      "opening": "Slav Defense: Quiet Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5e1d2ed44c89a5c7",
+      "names": {
+        "en": "Quiet Variation, Schallopp Defense"
+      },
+      "eco": "D12",
+      "opening": "Slav Defense: Quiet Variation, Schallopp Defense",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "e3", "Bf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-679b415b5f6da959",
+      "names": {
+        "en": "Quiet Variation, Schallopp Defense"
+      },
+      "eco": "D12",
+      "opening": "Slav Defense: Quiet Variation, Schallopp Defense",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "e3", "Bf5", "Nc3", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3cecb165f2186718",
+      "names": {
+        "en": "Exchange Variation, Schallopp Variation"
+      },
+      "eco": "D13",
+      "opening": "Slav Defense: Exchange Variation, Schallopp Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "e3", "Bf5", "cxd5", "cxd5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8f49552067a8e827",
+      "names": {
+        "en": "Quiet Variation, Amsterdam Variation"
+      },
+      "eco": "D12",
+      "opening": "Slav Defense: Quiet Variation, Amsterdam Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "e3", "Bf5", "cxd5", "cxd5", "Nc3", "e6", "Ne5", "Nfd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b7a7609c4bb211fe",
+      "names": {
+        "en": "Quiet Variation, Landau Variation"
+      },
+      "eco": "D12",
+      "opening": "Slav Defense: Quiet Variation, Landau Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "e3", "Bf5", "cxd5", "cxd5", "Qb3", "Qc8", "Bd2", "e6", "Na3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3d44b7e9a6dffbd7",
+      "names": {
+        "en": "Quiet Variation, Pin Defense"
+      },
+      "eco": "D11",
+      "opening": "Slav Defense: Quiet Variation, Pin Defense",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "e3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-79f6c4863698ec5e",
+      "names": {
+        "en": "Modern Line"
+      },
+      "eco": "D11",
+      "opening": "Slav Defense: Modern Line",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "g3", "Bg4", "Bg2", "e6", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-627f29cfb09c69b7",
+      "names": {
+        "en": "Modern Line"
+      },
+      "eco": "D11",
+      "opening": "Slav Defense: Modern Line",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "g3", "dxc4", "Bg2", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c519d84ebf2a5ccf",
+      "names": {
+        "en": "Exchange Variation"
+      },
+      "eco": "D10",
+      "opening": "Slav Defense: Exchange Variation",
+      "moves": ["d4", "d5", "c4", "c6", "cxd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-508088c7e8542f8a",
+      "names": {
+        "en": "Exchange Variation, Symmetrical Line"
+      },
+      "eco": "D14",
+      "opening": "Slav Defense: Exchange Variation, Symmetrical Line",
+      "moves": ["d4", "d5", "c4", "c6", "cxd5", "cxd5", "Nc3", "Nf6", "Nf3", "Nc6", "Bf4", "Bf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-950f501272ab7183",
+      "names": {
+        "en": "Exchange Variation, Boor Attack"
+      },
+      "eco": "D10",
+      "opening": "Slav Defense: Exchange Variation, Boor Attack",
+      "moves": ["d4", "d5", "c4", "c6", "cxd5", "cxd5", "Nc3", "Nf6", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-16a918b696c28237",
+      "names": {
+        "en": "Diemer Gambit"
+      },
+      "eco": "D10",
+      "opening": "Slav Defense: Diemer Gambit",
+      "moves": ["d4", "d5", "c4", "c6", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

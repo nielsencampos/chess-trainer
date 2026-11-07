@@ -1,0 +1,2128 @@
+{
+  "id": "french-defense",
+  "names": {
+    "en": "French Defense"
+  },
+  "lines": [
+    {
+      "id": "line-63fde8f61b246397",
+      "names": {
+        "en": "French Defense"
+      },
+      "eco": "C00",
+      "opening": "French Defense",
+      "moves": ["e4", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5b747b4a2f6a66e1",
+      "names": {
+        "en": "Bird Invitation"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Bird Invitation",
+      "moves": ["e4", "e6", "Bb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-569c3aa622b7786e",
+      "names": {
+        "en": "Queen's Knight"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Queen's Knight",
+      "moves": ["e4", "e6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cb5329eb69c7c6da",
+      "names": {
+        "en": "McCutcheon Variation, Duras Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Duras Variation",
+      "moves": ["e4", "e6", "Nc3", "d5", "d4", "Nf6", "Bg5", "Bb4", "e5", "h6", "Bd2", "Bxc3", "bxc3", "Ne4", "Qg4", "Kf8", "Bc1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c1504b6813ce01b3",
+      "names": {
+        "en": "Pelikan Variation"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Pelikan Variation",
+      "moves": ["e4", "e6", "Nc3", "d5", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9d2c8a9772ab27de",
+      "names": {
+        "en": "Knight Variation"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Knight Variation",
+      "moves": ["e4", "e6", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0b7f8c2041eb2986",
+      "names": {
+        "en": "Two Knights Variation"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Two Knights Variation",
+      "moves": ["e4", "e6", "Nf3", "d5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e739c46385ab4721",
+      "names": {
+        "en": "Wing Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Wing Gambit",
+      "moves": ["e4", "e6", "Nf3", "d5", "e5", "c5", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7938e206e0019e95",
+      "names": {
+        "en": "Knight Variation, Franco-Hiva Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Knight Variation, Franco-Hiva Gambit",
+      "moves": ["e4", "e6", "Nf3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b593fd122705f462",
+      "names": {
+        "en": "Chigorin Variation"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Chigorin Variation",
+      "moves": ["e4", "e6", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7a710e773a91958c",
+      "names": {
+        "en": "Horwitz Attack"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Horwitz Attack",
+      "moves": ["e4", "e6", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f4b516ad3e22a109",
+      "names": {
+        "en": "Horwitz Attack, Papa-Ticulat Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Horwitz Attack, Papa-Ticulat Gambit",
+      "moves": ["e4", "e6", "b3", "d5", "Bb2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ed7b08638ac65ca4",
+      "names": {
+        "en": "Banzai-Leong Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Banzai-Leong Gambit",
+      "moves": ["e4", "e6", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-32c015f4163b1862",
+      "names": {
+        "en": "Banzai-Leong Gambit, Pinova Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Banzai-Leong Gambit, Pinova Gambit",
+      "moves": ["e4", "e6", "b4", "Bxb4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0d7e6360a637db49",
+      "names": {
+        "en": "Steiner Variation"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Steiner Variation",
+      "moves": ["e4", "e6", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-216aee28620b18c7",
+      "names": {
+        "en": "Orthoschnapp Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Orthoschnapp Gambit",
+      "moves": ["e4", "e6", "c4", "d5", "cxd5", "exd5", "Qb3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-adbe6b04bf7a8ebb",
+      "names": {
+        "en": "King's Indian Attack"
+      },
+      "eco": "C00",
+      "opening": "French Defense: King's Indian Attack",
+      "moves": ["e4", "e6", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f5fa97fc0a5bcab5",
+      "names": {
+        "en": "Reversed Philidor Formation"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Reversed Philidor Formation",
+      "moves": ["e4", "e6", "d3", "d5", "Nd2", "Nf6", "Ngf3", "Nc6", "Be2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ca9c0b0ff2fab237",
+      "names": {
+        "en": "King's Indian Attack, Franco-Hiva Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: King's Indian Attack, Franco-Hiva Gambit",
+      "moves": ["e4", "e6", "d3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-aa35a106b8bf30fd",
+      "names": {
+        "en": "Normal Variation"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Normal Variation",
+      "moves": ["e4", "e6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a2e44ff004cacf88",
+      "names": {
+        "en": "Mediterranean Defense"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Mediterranean Defense",
+      "moves": ["e4", "e6", "d4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-49a52de0eedc4a49",
+      "names": {
+        "en": "St. George Defense"
+      },
+      "eco": "C00",
+      "opening": "French Defense: St. George Defense",
+      "moves": ["e4", "e6", "d4", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-724f22b542343a41",
+      "names": {
+        "en": "St. George Defense, Traditional Line"
+      },
+      "eco": "C00",
+      "opening": "French Defense: St. George Defense, Traditional Line",
+      "moves": ["e4", "e6", "d4", "a6", "Nf3", "b5", "Bd3", "c5", "c3", "Bb7", "O-O", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2edf7d45625f6af7",
+      "names": {
+        "en": "St. George Defense, Three Pawn Attack"
+      },
+      "eco": "C00",
+      "opening": "French Defense: St. George Defense, Three Pawn Attack",
+      "moves": ["e4", "e6", "d4", "a6", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-36c17f7b5617cc29",
+      "names": {
+        "en": "St. George Defense, Sanky-George Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: St. George Defense, Sanky-George Gambit",
+      "moves": ["e4", "e6", "d4", "a6", "c4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f3ec2466ab966549",
+      "names": {
+        "en": "St. George Defense, St. George Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: St. George Defense, St. George Gambit",
+      "moves": ["e4", "e6", "d4", "a6", "c4", "b5", "cxb5", "axb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4e7a026cb7a2cb2e",
+      "names": {
+        "en": "Baeuerle Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Baeuerle Gambit",
+      "moves": ["e4", "e6", "d4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-76cec3294e7e56c6",
+      "names": {
+        "en": "Franco-Sicilian Defense"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Franco-Sicilian Defense",
+      "moves": ["e4", "e6", "d4", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9ec088aeefd79c8a",
+      "names": {
+        "en": "French Defense"
+      },
+      "eco": "C00",
+      "opening": "French Defense",
+      "moves": ["e4", "e6", "d4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1975602c5ba54e26",
+      "names": {
+        "en": "Schlechter Variation"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Schlechter Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-03bdc10e8bd26134",
+      "names": {
+        "en": "Alapin Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Alapin Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0656a4f26effdee0",
+      "names": {
+        "en": "Paulsen Variation"
+      },
+      "eco": "C10",
+      "opening": "French Defense: Paulsen Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-54ab735f67d44521",
+      "names": {
+        "en": "Winawer Variation"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dea131a890fe1f9d",
+      "names": {
+        "en": "Winawer Variation, Fingerslip Variation"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Fingerslip Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "Bd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-49012a88d9b86090",
+      "names": {
+        "en": "Winawer Variation, Fingerslip Variation, Schwarz's Line"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Fingerslip Variation, Schwarz's Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "Bd2", "Ne7", "Nb1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ff8bb6aa46691a80",
+      "names": {
+        "en": "Winawer Variation, Fingerslip Variation, Main Line"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Fingerslip Variation, Main Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "Bd2", "dxe4", "Qg4", "Nf6", "Qxg7", "Rg8", "Qh6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bafd0d6a171b9924",
+      "names": {
+        "en": "Winawer Variation, Fingerslip Variation, Kunin Double Gambit"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Fingerslip Variation, Kunin Double Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "Bd2", "dxe4", "Qg4", "Qxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d63344a48c486141",
+      "names": {
+        "en": "Winawer Variation, Kondratiyev Variation"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Kondratiyev Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "Bd3", "c5", "exd5", "Qxd5", "Bd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cc805dea91ff4032",
+      "names": {
+        "en": "Winawer Variation, Alekhine-Maróczy Gambit"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Alekhine-Maróczy Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "Ne2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7b24917e08e317d7",
+      "names": {
+        "en": "McCutcheon Variation, Wolf Gambit"
+      },
+      "eco": "C15",
+      "opening": "French Defense: McCutcheon Variation, Wolf Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "Ne2", "Nf6", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-524c34edcbea56a7",
+      "names": {
+        "en": "Winawer Variation, Alekhine Gambit, Alatortsev Variation"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Alekhine Gambit, Alatortsev Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "Ne2", "dxe4", "a3", "Be7", "Nxe4", "Nf6", "N2g3", "O-O", "Be2", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6997535a1642308f",
+      "names": {
+        "en": "Winawer Variation, Alekhine Gambit Accepted"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Alekhine Gambit Accepted",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "Ne2", "dxe4", "a3", "Bxc3+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-575952ee7fd06534",
+      "names": {
+        "en": "Winawer Variation, Alekhine Gambit, Kan Variation"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Alekhine Gambit, Kan Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "Ne2", "dxe4", "a3", "Bxc3+", "Nxc3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cca0f3aa3652a2fa",
+      "names": {
+        "en": "Winawer Variation, Winckelmann-Reimer Gambit"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Winckelmann-Reimer Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "a3", "Bxc3+", "bxc3", "dxe4", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5ac00d11b0a42c9a",
+      "names": {
+        "en": "Winawer Variation, Advance Variation"
+      },
+      "eco": "C16",
+      "opening": "French Defense: Winawer Variation, Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fd4230a34beae09b",
+      "names": {
+        "en": "Winawer Variation, Advance Variation, Smyslov Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Advance Variation, Smyslov Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "Ne7", "a3", "Bxc3+", "bxc3", "c5", "a4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ce108d036f338ae4",
+      "names": {
+        "en": "Winawer Variation, Advance Variation, Smyslov Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Advance Variation, Smyslov Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "Ne7", "a3", "Bxc3+", "bxc3", "c5", "a4", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b61dc77c6de9dfb6",
+      "names": {
+        "en": "Winawer Variation, Petrosian Variation"
+      },
+      "eco": "C16",
+      "opening": "French Defense: Winawer Variation, Petrosian Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "Qd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1d2b69d2356abab9",
+      "names": {
+        "en": "Winawer Variation, Advance Variation"
+      },
+      "eco": "C17",
+      "opening": "French Defense: Winawer Variation, Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e885cbf4b6979584",
+      "names": {
+        "en": "Winawer Variation, Bogoljubow Variation"
+      },
+      "eco": "C17",
+      "opening": "French Defense: Winawer Variation, Bogoljubow Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "Bd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8913ce989929bfaa",
+      "names": {
+        "en": "Winawer Variation, Bogoljubow Variation, Icelandic Defense"
+      },
+      "eco": "C17",
+      "opening": "French Defense: Winawer Variation, Bogoljubow Variation, Icelandic Defense",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "Bd2", "Ne7", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7bfe230b9686d8e6",
+      "names": {
+        "en": "Winawer Variation, Advance Variation, Moscow Variation"
+      },
+      "eco": "C17",
+      "opening": "French Defense: Winawer Variation, Advance Variation, Moscow Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "Qg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f6cb0fa6e923c2f9",
+      "names": {
+        "en": "Winawer Variation, Advance Variation"
+      },
+      "eco": "C17",
+      "opening": "French Defense: Winawer Variation, Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-049ce876e36ba25e",
+      "names": {
+        "en": "Winawer Variation, Retreat Variation"
+      },
+      "eco": "C17",
+      "opening": "French Defense: Winawer Variation, Retreat Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Ba5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-677238ef10f96c43",
+      "names": {
+        "en": "Winawer Variation, Retreat Variation, Armenian Line"
+      },
+      "eco": "C17",
+      "opening": "French Defense: Winawer Variation, Retreat Variation, Armenian Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Ba5", "b4", "cxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7231b69ffa22ddbd",
+      "names": {
+        "en": "Winawer Variation, Advance Variation"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-41cc5e445e47d5f6",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Nc6", "Nf3", "Nge7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f8a4ceddcc451e01",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Nc6", "Nf3", "Qa5", "Bd2", "Nge7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd02e0a50c06feff",
+      "names": {
+        "en": "Winawer Variation, Advance Variation"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0b06e6620edb7855",
+      "names": {
+        "en": "Winawer Variation, Advance Variation, with Bd3"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Advance Variation, with Bd3",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4fdce38b2c18f606",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Bd3", "Nbc6", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cedfd814115283fd",
+      "names": {
+        "en": "Winawer Variation, Advance Variation, with Bd3"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Advance Variation, with Bd3",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Bd3", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-af4626b4284b9b87",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5e723a32f322f367",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Nf3", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4a1038c17f73df24",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Nf3", "Qc7", "h4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5421b3fc7410e80d",
+      "names": {
+        "en": "Winawer Variation, Eingorn Variation"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Eingorn Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Qg4", "Kf8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8a3e2650ceb7212d",
+      "names": {
+        "en": "Winawer Variation, Warsaw Variation"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Warsaw Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Qg4", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b4a874a2775499e1",
+      "names": {
+        "en": "Winawer Variation, Poisoned Pawn Variation"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Poisoned Pawn Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Qg4", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2f20bd09564d6cef",
+      "names": {
+        "en": "Winawer Variation, Poisoned Pawn Variation Declined"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Poisoned Pawn Variation Declined",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Qg4", "Qc7", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-87765cc32978e685",
+      "names": {
+        "en": "Winawer Variation, Poisoned Pawn Variation, Paoli Variation"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Poisoned Pawn Variation, Paoli Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Qg4", "Qc7", "Qxg7", "Rg8", "Qxh7", "cxd4", "Kd1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5e44fedc08e354a1",
+      "names": {
+        "en": "Winawer Variation, Poisoned Pawn Variation, Main Line"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Poisoned Pawn Variation, Main Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Qg4", "Qc7", "Qxg7", "Rg8", "Qxh7", "cxd4", "Ne2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7a74d7c0c07e1cbb",
+      "names": {
+        "en": "Winawer Variation, Poisoned Pawn Variation"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Poisoned Pawn Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Qg4", "cxd4", "Qxg7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d836972b57a16097",
+      "names": {
+        "en": "Winawer Variation, Poisoned Pawn Variation"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Poisoned Pawn Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "Qg4", "cxd4", "Qxg7", "Rg8", "Qxh7", "Nbc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cdd30bfbaeb30501",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "a4", "Nbc6", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-48070ed15f0f95f4",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "a4", "Nbc6", "Nf3", "Qa5", "Bd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-958086833c8766e4",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "a4", "Nbc6", "Nf3", "Qa5", "Bd2", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd647a46ff4a9671",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "a4", "Nbc6", "Nf3", "Qa5", "Bd2", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3b0978fc7ef1f6d0",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "a4", "Nbc6", "Nf3", "Qa5", "Qd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-09c5140d6399e585",
+      "names": {
+        "en": "Winawer Variation, Positional Variation"
+      },
+      "eco": "C19",
+      "opening": "French Defense: Winawer Variation, Positional Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "a4", "Nbc6", "Nf3", "Qa5", "Qd2", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c801f2f44399167d",
+      "names": {
+        "en": "Winawer Variation, Advance Variation, with h4"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Advance Variation, with h4",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "h4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ab812700848e15b0",
+      "names": {
+        "en": "Winawer Variation, Advance Variation, with h4"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Advance Variation, with h4",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Ne7", "h4", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c4194020cba15df9",
+      "names": {
+        "en": "Winawer Variation, Portisch-Hook Variation"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Portisch-Hook Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ef23240c96a53491",
+      "names": {
+        "en": "Winawer Variation, Classical Variation"
+      },
+      "eco": "C18",
+      "opening": "French Defense: Winawer Variation, Classical Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "Bxc3+", "bxc3", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cf79c60bf8596f78",
+      "names": {
+        "en": "Winawer Variation, Maróczy-Wallis Variation"
+      },
+      "eco": "C17",
+      "opening": "French Defense: Winawer Variation, Maróczy-Wallis Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "cxd4", "axb4", "dxc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c2f964728d7b0b7b",
+      "names": {
+        "en": "Winawer Variation, Advance Variation"
+      },
+      "eco": "C17",
+      "opening": "French Defense: Winawer Variation, Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "e5", "c5", "a3", "cxd4", "axb4", "dxc3", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cd0c1faafa69f38c",
+      "names": {
+        "en": "Winawer Variation, Delayed Exchange Variation"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Delayed Exchange Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "exd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5f35f3a23acf6c96",
+      "names": {
+        "en": "Winawer Variation, Exchange Variation, Canal Attack"
+      },
+      "eco": "C15",
+      "opening": "French Defense: Winawer Variation, Exchange Variation, Canal Attack",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4", "exd5", "exd5", "Bd3", "Ne7", "Qh5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c7cefa8f20fea187",
+      "names": {
+        "en": "Hecht-Reefschläger Variation"
+      },
+      "eco": "C10",
+      "opening": "French Defense: Hecht-Reefschläger Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4f8abf4ecef5474f",
+      "names": {
+        "en": "Classical Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Classical Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c00118fd0671d47d",
+      "names": {
+        "en": "Classical Variation, Swiss Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Classical Variation, Swiss Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7d8259b3816c636d",
+      "names": {
+        "en": "Henneberger Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Henneberger Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2c7786e4e86251dc",
+      "names": {
+        "en": "Classical, 4. Bg5"
+      },
+      "eco": "C12",
+      "opening": "French Defense: Classical, 4. Bg5",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c2bec451cff7ad8e",
+      "names": {
+        "en": "McCutcheon Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b66c2c07d55c816d",
+      "names": {
+        "en": "McCutcheon Variation, Advance Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b01d71d200694ca0",
+      "names": {
+        "en": "McCutcheon Variation, Dr. Olland Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Dr. Olland Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "e5", "h6", "Bc1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9ddf53a3f9d638b4",
+      "names": {
+        "en": "McCutcheon Variation, Lasker Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Lasker Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "e5", "h6", "Bd2", "Bxc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-38997f14c4c95346",
+      "names": {
+        "en": "McCutcheon Variation, Lasker Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Lasker Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "e5", "h6", "Bd2", "Bxc3", "bxc3", "Ne4", "Qg4", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-58af5cc57c7b6b20",
+      "names": {
+        "en": "McCutcheon Variation, Tartakower Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Tartakower Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "e5", "h6", "Bd2", "Nfd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e2a494195ab66ad5",
+      "names": {
+        "en": "McCutcheon Variation, Janowski Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Janowski Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "e5", "h6", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ca4eb288af99810b",
+      "names": {
+        "en": "McCutcheon Variation, Bernstein Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Bernstein Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "e5", "h6", "Bh4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e0829aedb8beaa7e",
+      "names": {
+        "en": "McCutcheon Variation, Chigorin Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Chigorin Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "e5", "h6", "exf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c851aa9e75ccbec9",
+      "names": {
+        "en": "McCutcheon Variation, Grigoriev Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Grigoriev Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "e5", "h6", "exf6", "hxg5", "fxg7", "Rg8", "h4", "gxh4", "Qg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9c586f51ade191e2",
+      "names": {
+        "en": "McCutcheon Variation, Exchange Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Exchange Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "exd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3bb4d70d5a5b38d7",
+      "names": {
+        "en": "McCutcheon Variation, Bogoljubow Variation"
+      },
+      "eco": "C12",
+      "opening": "French Defense: McCutcheon Variation, Bogoljubow Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Bb4", "exd5", "Qxd5", "Bxf6", "gxf6", "Qd2", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-43a44073328af65f",
+      "names": {
+        "en": "Classical Variation, Normal Variation"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Classical Variation, Normal Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a6932735f1468c85",
+      "names": {
+        "en": "Classical Variation, Richter Attack"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Classical Variation, Richter Attack",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "Bxf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-893c05c37626a145",
+      "names": {
+        "en": "Classical Variation, Richter Attack"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Classical Variation, Richter Attack",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "Bxf6", "Bxf6", "e5", "Be7", "Qg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-34b00f570bb53a3b",
+      "names": {
+        "en": "Classical Variation, Tartakower Variation"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Classical Variation, Tartakower Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Ne4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a54af24abbc7ba72",
+      "names": {
+        "en": "Classical Variation"
+      },
+      "eco": "C14",
+      "opening": "French Defense: Classical Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "Bxe7", "Qxe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4344ff71b4e8cc87",
+      "names": {
+        "en": "Classical Variation, Tarrasch Variation"
+      },
+      "eco": "C14",
+      "opening": "French Defense: Classical Variation, Tarrasch Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "Bxe7", "Qxe7", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1a38493660ee40ef",
+      "names": {
+        "en": "Classical Variation, Alapin Variation"
+      },
+      "eco": "C14",
+      "opening": "French Defense: Classical Variation, Alapin Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "Bxe7", "Qxe7", "Nb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-88eeb10bb8c286b6",
+      "names": {
+        "en": "Classical Variation, Rubinstein Variation"
+      },
+      "eco": "C14",
+      "opening": "French Defense: Classical Variation, Rubinstein Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "Bxe7", "Qxe7", "Qd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6699d9e8a226ff82",
+      "names": {
+        "en": "Classical Variation, Pollock Variation"
+      },
+      "eco": "C14",
+      "opening": "French Defense: Classical Variation, Pollock Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "Bxe7", "Qxe7", "Qg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ed724b777ec6b5de",
+      "names": {
+        "en": "Classical Variation, Steinitz Variation"
+      },
+      "eco": "C14",
+      "opening": "French Defense: Classical Variation, Steinitz Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "Bxe7", "Qxe7", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fa2fcffff5b9127c",
+      "names": {
+        "en": "Classical Variation, Stahlberg Variation"
+      },
+      "eco": "C14",
+      "opening": "French Defense: Classical Variation, Stahlberg Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "Bxe7", "Qxe7", "f4", "O-O", "Nf3", "c5", "Qd2", "Nc6", "O-O-O", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-33cf8121574016a0",
+      "names": {
+        "en": "Alekhine-Chatard Attack"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Alekhine-Chatard Attack",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "h4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-876205eac43901b7",
+      "names": {
+        "en": "Alekhine-Chatard Attack, Albin-Chatard Gambit"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Alekhine-Chatard Attack, Albin-Chatard Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "h4", "Bxg5", "hxg5", "Qxg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d53c2aacaaa9d835",
+      "names": {
+        "en": "Alekhine-Chatard Attack, Spielmann Variation"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Alekhine-Chatard Attack, Spielmann Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "h4", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-db82c40c38bb8995",
+      "names": {
+        "en": "Alekhine-Chatard Attack, Maróczy Variation"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Alekhine-Chatard Attack, Maróczy Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "h4", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1030dfce2ea19479",
+      "names": {
+        "en": "Alekhine-Chatard Attack, Breyer Variation"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Alekhine-Chatard Attack, Breyer Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "h4", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1488ded05b4c52a8",
+      "names": {
+        "en": "Alekhine-Chatard Attack, Teichmann Variation"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Alekhine-Chatard Attack, Teichmann Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Nfd7", "h4", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0053c63aea1e5602",
+      "names": {
+        "en": "Classical Variation, Vistaneckis Variation"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Classical Variation, Vistaneckis Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Ng8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-db5049533bc15194",
+      "names": {
+        "en": "Classical Variation, Frankfurt Variation"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Classical Variation, Frankfurt Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "Be7", "e5", "Ng8", "Be3", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-58741e3aa77b5722",
+      "names": {
+        "en": "Classical Variation, Burn Variation"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Classical Variation, Burn Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "dxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-87859e962e21c772",
+      "names": {
+        "en": "Classical Variation"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Classical Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "dxe4", "Nxe4", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c8ae49ea870142d2",
+      "names": {
+        "en": "Classical Variation, Burn Variation, Main Line"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Classical Variation, Burn Variation, Main Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "dxe4", "Nxe4", "Be7", "Bxf6", "Bxf6", "Nf3", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-51f2c8252e90cfaf",
+      "names": {
+        "en": "Classical Variation, Burn Variation, Morozevich Line"
+      },
+      "eco": "C13",
+      "opening": "French Defense: Classical Variation, Burn Variation, Morozevich Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "Bg5", "dxe4", "Nxe4", "Be7", "Bxf6", "gxf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2f4b0ce4de9932fb",
+      "names": {
+        "en": "Classical Variation, Steinitz Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Classical Variation, Steinitz Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-46a40b33c31c5949",
+      "names": {
+        "en": "Classical Variation, Shirov-Anand Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Classical Variation, Shirov-Anand Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "e5", "Nfd7", "Nce2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7c82b9e4cac77f4d",
+      "names": {
+        "en": "Steinitz Variation, Gledhill Attack"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Steinitz Variation, Gledhill Attack",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "e5", "Nfd7", "Qg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ca7271d9ed9026d7",
+      "names": {
+        "en": "Steinitz Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Steinitz Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "e5", "Nfd7", "f4", "c5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5f096d01b7bb6cea",
+      "names": {
+        "en": "Steinitz Variation, Boleslavsky Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Steinitz Variation, Boleslavsky Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "e5", "Nfd7", "f4", "c5", "Nf3", "Nc6", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cd677aaff90f5514",
+      "names": {
+        "en": "Steinitz Variation, Bradford Attack Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Steinitz Variation, Bradford Attack Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "e5", "Nfd7", "f4", "c5", "dxc5", "Bxc5", "Qg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7dab93c03315b911",
+      "names": {
+        "en": "Steinitz Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Steinitz Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "e5", "Nfd7", "f4", "c5", "dxc5", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4eb5134f229d4b30",
+      "names": {
+        "en": "Steinitz Variation, Brodsky-Jones Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Steinitz Variation, Brodsky-Jones Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "e5", "Nfd7", "f4", "c5", "dxc5", "Nc6", "a3", "Bxc5", "Qg4", "O-O", "Nf3", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-702c630db766cd1f",
+      "names": {
+        "en": "Classical Variation, Delayed Exchange Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Classical Variation, Delayed Exchange Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "exd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-36c7d3dfa324dc37",
+      "names": {
+        "en": "Exchange Variation, Svenonius Variation"
+      },
+      "eco": "C01",
+      "opening": "French Defense: Exchange Variation, Svenonius Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6", "exd5", "exd5", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d315dac9814802bd",
+      "names": {
+        "en": "Steinitz Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Steinitz Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "a6", "Nf3", "Nf6", "e5", "Nfd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f24fcfed7cf3b087",
+      "names": {
+        "en": "Classical Variation"
+      },
+      "eco": "C14",
+      "opening": "French Defense: Classical Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "a6", "Nf3", "Nf6", "e5", "Nfd7", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5807fd4209827378",
+      "names": {
+        "en": "Steinitz Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Steinitz Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "a6", "Nf3", "Nf6", "e5", "Nfd7", "Ne2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a8006c82a4f5d3b3",
+      "names": {
+        "en": "Steinitz Variation"
+      },
+      "eco": "C11",
+      "opening": "French Defense: Steinitz Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "a6", "Nf3", "Nf6", "e5", "Nfd7", "a3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3430dbab33113b2e",
+      "names": {
+        "en": "Marshall Gambit"
+      },
+      "eco": "C10",
+      "opening": "French Defense: Marshall Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-faaa98244c4ce686",
+      "names": {
+        "en": "Rubinstein Variation"
+      },
+      "eco": "C10",
+      "opening": "French Defense: Rubinstein Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "dxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8c83bed6a57b3f1f",
+      "names": {
+        "en": "Rubinstein Variation, Fort Knox Variation"
+      },
+      "eco": "C10",
+      "opening": "French Defense: Rubinstein Variation, Fort Knox Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "dxe4", "Nxe4", "Bd7", "Nf3", "Bc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b9c1e7c72113c722",
+      "names": {
+        "en": "Rubinstein Variation, Blackburne Defense"
+      },
+      "eco": "C10",
+      "opening": "French Defense: Rubinstein Variation, Blackburne Defense",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "dxe4", "Nxe4", "Nd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-70d640c94bd687ed",
+      "names": {
+        "en": "Rubinstein Variation, Capablanca Line"
+      },
+      "eco": "C10",
+      "opening": "French Defense: Rubinstein Variation, Capablanca Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "dxe4", "Nxe4", "Nd7", "Nf3", "Ngf6", "Nxf6+", "Nxf6", "Ne5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a32f74fbebf27289",
+      "names": {
+        "en": "Rubinstein Variation, Maric Variation"
+      },
+      "eco": "C10",
+      "opening": "French Defense: Rubinstein Variation, Maric Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "dxe4", "Nxe4", "Qd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d547ca8f2ed57417",
+      "names": {
+        "en": "Rubinstein Variation, Ellis Gambit"
+      },
+      "eco": "C10",
+      "opening": "French Defense: Rubinstein Variation, Ellis Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nc3", "dxe4", "Nxe4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0f2d9254007a19c5",
+      "names": {
+        "en": "Tarrasch Variation"
+      },
+      "eco": "C03",
+      "opening": "French Defense: Tarrasch Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7b463eb8cb153c14",
+      "names": {
+        "en": "Tarrasch Variation, Morozevich Variation"
+      },
+      "eco": "C03",
+      "opening": "French Defense: Tarrasch Variation, Morozevich Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ac51c220e7b984ad",
+      "names": {
+        "en": "Tarrasch Variation, Guimard Defense"
+      },
+      "eco": "C03",
+      "opening": "French Defense: Tarrasch Variation, Guimard Defense",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3a66f27b402b6fa8",
+      "names": {
+        "en": "Tarrasch Variation, Guimard Defense, Main Line"
+      },
+      "eco": "C04",
+      "opening": "French Defense: Tarrasch Variation, Guimard Defense, Main Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "Nc6", "Ngf3", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-51fc245e16141a93",
+      "names": {
+        "en": "Tarrasch Variation, Guimard Defense, Thunderbunny Variation"
+      },
+      "eco": "C03",
+      "opening": "French Defense: Tarrasch Variation, Guimard Defense, Thunderbunny Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "Nc6", "c3", "dxe4", "Nxe4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f58421dc3e5a3cee",
+      "names": {
+        "en": "Tarrasch Variation, Closed Variation"
+      },
+      "eco": "C05",
+      "opening": "French Defense: Tarrasch Variation, Closed Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c80b218e276691a1",
+      "names": {
+        "en": "Tarrasch Variation, Closed Variation"
+      },
+      "eco": "C05",
+      "opening": "French Defense: Tarrasch Variation, Closed Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "Nf6", "e5", "Nfd7", "Bd3", "c5", "c3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6076590dc2e98b8e",
+      "names": {
+        "en": "Tarrasch Variation, Closed Variation, Main Line"
+      },
+      "eco": "C06",
+      "opening": "French Defense: Tarrasch Variation, Closed Variation, Main Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "Nf6", "e5", "Nfd7", "Bd3", "c5", "c3", "Nc6", "Ne2", "cxd4", "cxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-120210c04acc8fad",
+      "names": {
+        "en": "Tarrasch Variation, Leningrad Variation"
+      },
+      "eco": "C06",
+      "opening": "French Defense: Tarrasch Variation, Leningrad Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "Nf6", "e5", "Nfd7", "Bd3", "c5", "c3", "Nc6", "Ne2", "cxd4", "cxd4", "Nb6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-916eda6ff6271dd0",
+      "names": {
+        "en": "Tarrasch Variation, Botvinnik Variation"
+      },
+      "eco": "C05",
+      "opening": "French Defense: Tarrasch Variation, Botvinnik Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "Nf6", "e5", "Nfd7", "Bd3", "c5", "c3", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b8f995f2c21cca30",
+      "names": {
+        "en": "Tarrasch Variation, Pawn Center Variation"
+      },
+      "eco": "C05",
+      "opening": "French Defense: Tarrasch Variation, Pawn Center Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "Nf6", "e5", "Nfd7", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-97ef2e0124c6882f",
+      "names": {
+        "en": "Tarrasch Variation, Modern System"
+      },
+      "eco": "C03",
+      "opening": "French Defense: Tarrasch Variation, Modern System",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-98f3926ef8b0f087",
+      "names": {
+        "en": "Tarrasch Variation, Open System"
+      },
+      "eco": "C07",
+      "opening": "French Defense: Tarrasch Variation, Open System",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5ee1c0202ad8bbc8",
+      "names": {
+        "en": "Tarrasch Variation, Open System, Euwe-Keres Line"
+      },
+      "eco": "C07",
+      "opening": "French Defense: Tarrasch Variation, Open System, Euwe-Keres Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5", "Ngf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-36a3595915ab52df",
+      "names": {
+        "en": "Tarrasch Variation, Open System, Süchting Line"
+      },
+      "eco": "C07",
+      "opening": "French Defense: Tarrasch Variation, Open System, Süchting Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cffea1da041f26ec",
+      "names": {
+        "en": "Tarrasch Variation, Open System, Shaposhnikov Gambit"
+      },
+      "eco": "C07",
+      "opening": "French Defense: Tarrasch Variation, Open System, Shaposhnikov Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5", "exd5", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5203a87e8d0fbff2",
+      "names": {
+        "en": "Tarrasch Variation, Chistyakov Defense"
+      },
+      "eco": "C07",
+      "opening": "French Defense: Tarrasch Variation, Chistyakov Defense",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5", "exd5", "Qxd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6c33a68359779700",
+      "names": {
+        "en": "Tarrasch Variation, Chistyakov Defense, Modern Line"
+      },
+      "eco": "C07",
+      "opening": "French Defense: Tarrasch Variation, Chistyakov Defense, Modern Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5", "exd5", "Qxd5", "Ngf3", "cxd4", "Bc4", "Qd6", "O-O", "Nf6", "Nb3", "Nc6", "Nbxd4", "Nxd4", "Nxd4", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d141da8d1bc91e51",
+      "names": {
+        "en": "Tarrasch Variation, Eliskases Variation"
+      },
+      "eco": "C07",
+      "opening": "French Defense: Tarrasch Variation, Eliskases Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5", "exd5", "Qxd5", "Ngf3", "cxd4", "Bc4", "Qd8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fa8c15f25d13b02d",
+      "names": {
+        "en": "Tarrasch Variation, Open System"
+      },
+      "eco": "C08",
+      "opening": "French Defense: Tarrasch Variation, Open System",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5", "exd5", "exd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1bbe31ca527cd646",
+      "names": {
+        "en": "Tarrasch Variation, Open System, Main Line"
+      },
+      "eco": "C09",
+      "opening": "French Defense: Tarrasch Variation, Open System, Main Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5", "exd5", "exd5", "Ngf3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f6c48a5913c27e21",
+      "names": {
+        "en": "Tarrasch Variation, Open System, Main Line"
+      },
+      "eco": "C09",
+      "opening": "French Defense: Tarrasch Variation, Open System, Main Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5", "exd5", "exd5", "Ngf3", "Nc6", "Bb5", "Bd6", "dxc5", "Bxc5", "O-O", "Ne7", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-299f0d45fb879aa6",
+      "names": {
+        "en": "Tarrasch Variation, Open System, Advance Line"
+      },
+      "eco": "C08",
+      "opening": "French Defense: Tarrasch Variation, Open System, Advance Line",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "c5", "exd5", "exd5", "Ngf3", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7e861a79a3875c24",
+      "names": {
+        "en": "Rubinstein Variation, Kasparov Attack"
+      },
+      "eco": "C10",
+      "opening": "French Defense: Rubinstein Variation, Kasparov Attack",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "dxe4", "Nxe4", "Nd7", "Nf3", "Ngf6", "Nxf6+", "Nxf6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7e403cd6ffe6ffa7",
+      "names": {
+        "en": "Tarrasch Variation, Haberditz Variation"
+      },
+      "eco": "C03",
+      "opening": "French Defense: Tarrasch Variation, Haberditz Variation",
+      "moves": ["e4", "e6", "d4", "d5", "Nd2", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2fca517bdd364836",
+      "names": {
+        "en": "Perseus Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Perseus Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2215aa2172684398",
+      "names": {
+        "en": "Carlson Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Carlson Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nf3", "dxe4", "Ne5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b07c40db19e53a02",
+      "names": {
+        "en": "Morphy Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Morphy Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Nh3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1d1caeda651f7da5",
+      "names": {
+        "en": "Hoffmann Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Hoffmann Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "Qe2", "e5", "f4", "exf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cd25e0d926113abb",
+      "names": {
+        "en": "Diemer-Duhm Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Diemer-Duhm Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d9a85bdfcd8bf1fe",
+      "names": {
+        "en": "Diemer-Duhm Gambit Accepted"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Diemer-Duhm Gambit Accepted",
+      "moves": ["e4", "e6", "d4", "d5", "c4", "dxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ef24bd065e28091d",
+      "names": {
+        "en": "Advance Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-686a154ff809e4d7",
+      "names": {
+        "en": "Advance Variation, Extended Bishop Swap"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Extended Bishop Swap",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6f06b3035cbcd443",
+      "names": {
+        "en": "Advance Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b50a10bd84d3b1dc",
+      "names": {
+        "en": "Advance Variation, Nimzowitsch System"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Nimzowitsch System",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-78aec84aae9feda8",
+      "names": {
+        "en": "Advance Variation, Ruisdonk Gambit"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Ruisdonk Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "Nf3", "cxd4", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f604217cec3d367b",
+      "names": {
+        "en": "Advance Variation, Nimzowitsch Attack"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Nimzowitsch Attack",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "Qg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-633cca5b7e8ec9fc",
+      "names": {
+        "en": "Advance Variation, Nimzowitsch Gambit"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Nimzowitsch Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "Qg4", "cxd4", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3d9d15dc30620b91",
+      "names": {
+        "en": "Advance Variation, Frenkel Gambit"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Frenkel Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0a089880015beed5",
+      "names": {
+        "en": "Advance Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-58d1838738a159ac",
+      "names": {
+        "en": "Advance Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2a9ef81fb679ee7f",
+      "names": {
+        "en": "Advance Variation, Kupreichik Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Kupreichik Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9c524f0fd207278d",
+      "names": {
+        "en": "Advance Variation, Paulsen Attack"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Paulsen Attack",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-989906fbd6f70989",
+      "names": {
+        "en": "Advance Variation, Euwe Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Euwe Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6", "Nf3", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1db2d52a0b9a76a2",
+      "names": {
+        "en": "Advance Variation, Milner-Barry Gambit"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Milner-Barry Gambit",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6", "Nf3", "Qb6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f8cd15ba53c5cc80",
+      "names": {
+        "en": "Advance Variation, Milner-Barry Gambit, Hector Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Milner-Barry Gambit, Hector Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6", "Nf3", "Qb6", "Bd3", "cxd4", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0d6db3b04cfe3d1a",
+      "names": {
+        "en": "Advance Variation, Milner-Barry Gambit, Hector Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Milner-Barry Gambit, Hector Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6", "Nf3", "Qb6", "Bd3", "cxd4", "O-O", "Bd7", "Re1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a39a33e2abb63d9a",
+      "names": {
+        "en": "Advance Variation, Milner-Barry Gambit, Main Line"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Milner-Barry Gambit, Main Line",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6", "Nf3", "Qb6", "Bd3", "cxd4", "cxd4", "Bd7", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a1eacfc190e62275",
+      "names": {
+        "en": "Advance Variation, Milner-Barry Gambit, Sørensen Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Milner-Barry Gambit, Sørensen Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6", "Nf3", "Qb6", "Bd3", "cxd4", "cxd4", "Bd7", "O-O", "Nxd4", "Ng5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7c9ce45357cc1e24",
+      "names": {
+        "en": "Advance Variation, Main Line"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Main Line",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6", "Nf3", "Qb6", "a3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7c34302e931cb8d3",
+      "names": {
+        "en": "Advance Variation, Lputian Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Lputian Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Nc6", "Nf3", "Qb6", "a3", "Nh6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bb917f2ca9e42264",
+      "names": {
+        "en": "Advance Variation, Wade Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Wade Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "c3", "Qb6", "Nf3", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-039350f088e6c2c7",
+      "names": {
+        "en": "Advance Variation, Steinitz Variation"
+      },
+      "eco": "C02",
+      "opening": "French Defense: Advance Variation, Steinitz Variation",
+      "moves": ["e4", "e6", "d4", "d5", "e5", "c5", "dxc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e0df8bbecf9f34be",
+      "names": {
+        "en": "Exchange Variation"
+      },
+      "eco": "C01",
+      "opening": "French Defense: Exchange Variation",
+      "moves": ["e4", "e6", "d4", "d5", "exd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4cd274d830220ce0",
+      "names": {
+        "en": "Exchange Variation"
+      },
+      "eco": "C01",
+      "opening": "French Defense: Exchange Variation",
+      "moves": ["e4", "e6", "d4", "d5", "exd5", "exd5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ae82047594e84800",
+      "names": {
+        "en": "Exchange Variation, Bogoljubow Variation"
+      },
+      "eco": "C01",
+      "opening": "French Defense: Exchange Variation, Bogoljubow Variation",
+      "moves": ["e4", "e6", "d4", "d5", "exd5", "exd5", "Nc3", "Nf6", "Bg5", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ed1f482af5ffd8b2",
+      "names": {
+        "en": "Exchange Variation"
+      },
+      "eco": "C01",
+      "opening": "French Defense: Exchange Variation",
+      "moves": ["e4", "e6", "d4", "d5", "exd5", "exd5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9e269e60b0ef3ebf",
+      "names": {
+        "en": "Exchange Variation, Monte Carlo Variation"
+      },
+      "eco": "C01",
+      "opening": "French Defense: Exchange Variation, Monte Carlo Variation",
+      "moves": ["e4", "e6", "d4", "d5", "exd5", "exd5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-09901ae9e2878dda",
+      "names": {
+        "en": "Franco-Hiva Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Franco-Hiva Gambit",
+      "moves": ["e4", "e6", "d4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0cb7243599b332f8",
+      "names": {
+        "en": "Franco-Hiva Gambit Accepted"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Franco-Hiva Gambit Accepted",
+      "moves": ["e4", "e6", "d4", "f5", "exf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-891e71fdfed27299",
+      "names": {
+        "en": "Steinitz Attack"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Steinitz Attack",
+      "moves": ["e4", "e6", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f6fc60b990026809",
+      "names": {
+        "en": "La Bourdonnais Variation"
+      },
+      "eco": "C00",
+      "opening": "French Defense: La Bourdonnais Variation",
+      "moves": ["e4", "e6", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a430b9fd764b40af",
+      "names": {
+        "en": "La Bourdonnais Variation, Reuter Gambit"
+      },
+      "eco": "C00",
+      "opening": "French Defense: La Bourdonnais Variation, Reuter Gambit",
+      "moves": ["e4", "e6", "f4", "d5", "Nf3", "dxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ba18dbfc33a3c4f3",
+      "names": {
+        "en": "Réti-Spielmann Attack"
+      },
+      "eco": "C00",
+      "opening": "French Defense: Réti-Spielmann Attack",
+      "moves": ["e4", "e6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

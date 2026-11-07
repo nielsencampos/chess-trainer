@@ -1,0 +1,508 @@
+{
+  "id": "petrov-s-defense",
+  "names": {
+    "en": "Petrov's Defense"
+  },
+  "lines": [
+    {
+      "id": "line-33765f014cef455e",
+      "names": {
+        "en": "Petrov's Defense"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense",
+      "moves": ["e4", "e5", "Nf3", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-89a59ea893974633",
+      "names": {
+        "en": "Italian Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Italian Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-29573a91d32607f3",
+      "names": {
+        "en": "Three Knights Game"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Three Knights Game",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e0b2c12dd66e7af5",
+      "names": {
+        "en": "Petrov's Defense"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4eee3d1ce45c9851",
+      "names": {
+        "en": "Stafford Gambit"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Stafford Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-df12e99eb33c6087",
+      "names": {
+        "en": "Stafford Gambit Accepted"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Stafford Gambit Accepted",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "Nc6", "Nxc6", "dxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fb402eb0fb0e7b18",
+      "names": {
+        "en": "Stafford Gambit Accepted"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Stafford Gambit Accepted",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "Nc6", "Nxc6", "dxc6", "Nc3", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2cdfc609b2f27024",
+      "names": {
+        "en": "Stafford Gambit Accepted"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Stafford Gambit Accepted",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "Nc6", "Nxc6", "dxc6", "d3", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a385f343e4949d9e",
+      "names": {
+        "en": "Damiano Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Damiano Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "Nxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0cee85da546f5ea3",
+      "names": {
+        "en": "Damiano Variation, Kholmov Gambit"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Damiano Variation, Kholmov Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "Nxe4", "Qe2", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7f917cac1701e660",
+      "names": {
+        "en": "Petrov's Defense"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6ca128ab23e7ba4f",
+      "names": {
+        "en": "Paulsen Attack"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Paulsen Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ea136543b890d763",
+      "names": {
+        "en": "Karklins-Martinovsky Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Karklins-Martinovsky Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6ef4bf645fb7172d",
+      "names": {
+        "en": "Petrov's Defense"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-97d2500ba8f2f7f6",
+      "names": {
+        "en": "Petrov's Defense"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-27221e7052dbe787",
+      "names": {
+        "en": "Millennium Attack"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Millennium Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6c10ba368aefd482",
+      "names": {
+        "en": "Nimzowitsch Attack"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Nimzowitsch Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-634badf28ac56bba",
+      "names": {
+        "en": "Cozio Attack"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Cozio Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-07e234ba11821142",
+      "names": {
+        "en": "Kaufmann Attack"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Kaufmann Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-395de97639b1d3ef",
+      "names": {
+        "en": "French Attack"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: French Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2ff2eef25e39c71d",
+      "names": {
+        "en": "Classical Attack"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f9a8482272a0c697",
+      "names": {
+        "en": "Classical Attack, Closed Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Closed Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-719e64f9b7c1e96d",
+      "names": {
+        "en": "Classical Attack, Marshall Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Marshall Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Bd6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7bc698e0d5543b88",
+      "names": {
+        "en": "Classical Attack, Tarrasch Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Tarrasch Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Bd6", "O-O", "O-O", "c4", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-aee640bbd5fb21f1",
+      "names": {
+        "en": "Classical Attack, Marshall Trap"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Marshall Trap",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Bd6", "O-O", "O-O", "c4", "Bg4", "cxd5", "f5", "Re1", "Bxh2+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-580c146d5269689d",
+      "names": {
+        "en": "Classical Attack, Staunton Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Staunton Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Bd6", "O-O", "O-O", "c4", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9fd219d7a2e85f4e",
+      "names": {
+        "en": "Classical Attack, Marshall Variation, Chinese Gambit"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Marshall Variation, Chinese Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Bd6", "O-O", "O-O", "c4", "c6", "Re1", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-85d5038e6473782d",
+      "names": {
+        "en": "Classical Attack, Chigorin Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Chigorin Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Be7", "O-O", "Nc6", "Re1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-49e501363af3e97f",
+      "names": {
+        "en": "Classical Attack, Berger Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Berger Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Be7", "O-O", "Nc6", "Re1", "Bg4", "c3", "f5", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1f8a821639a2a011",
+      "names": {
+        "en": "Classical Attack, Maróczy Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Maróczy Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Be7", "O-O", "Nc6", "Re1", "Bg4", "c3", "f5", "c4", "Bh4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-22194ceb115621af",
+      "names": {
+        "en": "Classical Attack, Mason Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Mason Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Be7", "O-O", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-334e68a3a8ff26d1",
+      "names": {
+        "en": "Classical Attack, Mason-Showalter Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Mason-Showalter Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-62edb67ea98c9711",
+      "names": {
+        "en": "Classical Attack, Krause Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Krause Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Nc6", "O-O", "Be7", "Re1", "Bg4", "c3", "f5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2d75576e2a040402",
+      "names": {
+        "en": "Classical Attack, Jaenisch Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Jaenisch Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Nc6", "O-O", "Be7", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-07a0af3d9bdb07dc",
+      "names": {
+        "en": "Classical Attack, Chigorin Variation, Main Line"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Chigorin Variation, Main Line",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Nc6", "O-O", "Be7", "c4", "Nb4", "Be2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-25f433d9b42f335b",
+      "names": {
+        "en": "Classical Attack, Chigorin Variation, Browne Attack"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Classical Attack, Chigorin Variation, Browne Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nf3", "Nxe4", "d4", "d5", "Bd3", "Nc6", "O-O", "Be7", "c4", "Nb4", "cxd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7fc21b3865650db3",
+      "names": {
+        "en": "Cochrane Gambit"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Cochrane Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nxf7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d127d0bfba7f31c2",
+      "names": {
+        "en": "Cochrane Gambit, Bishop Check Line"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Cochrane Gambit, Bishop Check Line",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nxf7", "Kxf7", "Bc4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b268ae404db04f3e",
+      "names": {
+        "en": "Cochrane Gambit, Center Variation"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Cochrane Gambit, Center Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Nxe5", "d6", "Nxf7", "Kxf7", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d3f3618daf0eecaf",
+      "names": {
+        "en": "Moody Gambit"
+      },
+      "eco": "C42",
+      "opening": "Petrov's Defense: Moody Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "Qe2", "Nc6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-62ad728b5275c938",
+      "names": {
+        "en": "Modern Attack"
+      },
+      "eco": "C43",
+      "opening": "Petrov's Defense: Modern Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d3c7fe08b2649c3b",
+      "names": {
+        "en": "Modern Attack, Center Variation"
+      },
+      "eco": "C43",
+      "opening": "Petrov's Defense: Modern Attack, Center Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "d4", "Nxe4", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b78a16aa8ee5267a",
+      "names": {
+        "en": "Modern Attack, Murrey Variation"
+      },
+      "eco": "C43",
+      "opening": "Petrov's Defense: Modern Attack, Murrey Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "d4", "Nxe4", "Bd3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2cc0b2a03f86ce04",
+      "names": {
+        "en": "Modern Attack, Trifunovic Variation"
+      },
+      "eco": "C43",
+      "opening": "Petrov's Defense: Modern Attack, Trifunovic Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "d4", "Nxe4", "Bd3", "d5", "Nxe5", "Bd6", "O-O", "O-O", "c4", "Bxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b95609ccfece243f",
+      "names": {
+        "en": "Modern Attack, Symmetrical Variation"
+      },
+      "eco": "C43",
+      "opening": "Petrov's Defense: Modern Attack, Symmetrical Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "d4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2abfee757dfbe497",
+      "names": {
+        "en": "Modern Attack"
+      },
+      "eco": "C43",
+      "opening": "Petrov's Defense: Modern Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "d4", "exd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ff30f3cd7cc2de87",
+      "names": {
+        "en": "Modern Attack, Tal Gambit"
+      },
+      "eco": "C43",
+      "opening": "Petrov's Defense: Modern Attack, Tal Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "d4", "exd4", "e5", "Ne4", "Bb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-21e94e03cee9becc",
+      "names": {
+        "en": "Modern Attack, Steinitz Variation"
+      },
+      "eco": "C43",
+      "opening": "Petrov's Defense: Modern Attack, Steinitz Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "d4", "exd4", "e5", "Ne4", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b60d6246aa418675",
+      "names": {
+        "en": "Modern Attack, Bardeleben Variation"
+      },
+      "eco": "C43",
+      "opening": "Petrov's Defense: Modern Attack, Bardeleben Variation",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "d4", "exd4", "e5", "Ne4", "Qe2", "Nc5", "Nxd4", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dcfa3fc2246b8438",
+      "names": {
+        "en": "Modern Attack, Center Attack"
+      },
+      "eco": "C43",
+      "opening": "Petrov's Defense: Modern Attack, Center Attack",
+      "moves": ["e4", "e5", "Nf3", "Nf6", "d4", "exd4", "e5", "Ne4", "Qxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

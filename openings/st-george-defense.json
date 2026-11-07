@@ -1,0 +1,48 @@
+{
+  "id": "st-george-defense",
+  "names": {
+    "en": "St. George Defense"
+  },
+  "lines": [
+    {
+      "id": "line-94d6501d0d44fed6",
+      "names": {
+        "en": "St. George Defense"
+      },
+      "eco": "B00",
+      "opening": "St. George Defense",
+      "moves": ["e4", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7bcfa8ab4d802d3b",
+      "names": {
+        "en": "San Jorge Variation"
+      },
+      "eco": "B00",
+      "opening": "St. George Defense: San Jorge Variation",
+      "moves": ["e4", "a6", "d4", "b5", "Nf3", "Bb7", "Bd3", "d6", "O-O", "g6", "c3", "Bg7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4ea65d840d9b2248",
+      "names": {
+        "en": "Polish Variation"
+      },
+      "eco": "B00",
+      "opening": "St. George Defense: Polish Variation",
+      "moves": ["e4", "a6", "d4", "b5", "Nf3", "Bb7", "Bd3", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-301b417ca89f2161",
+      "names": {
+        "en": "Zilbermints Gambit"
+      },
+      "eco": "B00",
+      "opening": "St. George Defense: Zilbermints Gambit",
+      "moves": ["e4", "a6", "d4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

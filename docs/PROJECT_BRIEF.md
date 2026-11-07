@@ -22,7 +22,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 ## 2. Goals
 
 1. Implement everything described in §4 and §4.1.
-2. Split it into modules: Python backend, ES-module JavaScript frontend, repertoire in PGN files.
+2. Split it into modules: Python backend, ES-module JavaScript frontend, book in JSON files loaded into DuckDB.
 3. Run with `docker compose up` from a single image containing Python, Stockfish and the frontend.
 4. Store repertoire, games and statistics in a local DuckDB file (no browser storage for data).
 5. UI and opening names in **English and Brazilian Portuguese (pt-BR)**, structured so new languages (Spanish is next) need no code changes.
@@ -50,7 +50,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 - Clock with increment (3+2, 10+5, 15+10, 45+30, no clock). Bot response time "Instant" or "Human" (human-like, based on the clock).
 - Scoresheet mode (hides the move list so you write on paper), out-of-theory warning, auto-play next game.
 - End of game: result, variation, how far theory went, deviations, copy PGN, link to Lichess analysis.
-- Green/cream board (a1 is dark), SVG piece sets with a picker (Merida, Cburnett, Maestro, Alpha, Unicode), light and dark theme, mobile layout, click **and** drag to move.
+- Green/cream board (a1 is dark), SVG piece sets with a picker (Merida, Cburnett, Chessnut, Fantasy, Unicode), light and dark theme, mobile layout, click **and** drag to move.
 - Board flips to the user's color. Coordinates on the left file and bottom rank. Highlights: last move, selected square, legal targets (dot; ring for captures), king in check.
 - Promotion picker (Q/R/B/N) as an overlay on the board.
 - Resign needs a second click to confirm (no browser dialogs).
@@ -84,12 +84,14 @@ chess-trainer/
 ├── app/
 │   ├── main.py            # FastAPI: mounts the API and serves web/
 │   ├── api/               # routes: repertoire, games, engine, stats, settings
-│   ├── book/              # PGN loading → move tree, variation IDs
+│   ├── book/              # opening files → DuckDB sync, book read from the database
+│   ├── game/              # variation draw, theory tracking, bot pace, final report
 │   ├── engine/            # Stockfish process, strength levels
 │   ├── db/                # DuckDB connection, versioned SQL migrations
 │   └── i18n/              # backend strings (if any)
-├── repertoire/            # one .pgn per opening (§6)
-├── catalog/               # loader for the Lichess openings catalog (§6)
+├── openings/              # the book: one JSON per opening family (§6)
+├── catalog/               # pinned Lichess catalog, reference only: seed and validation (§6)
+├── data/                  # chess-trainer.duckdb, bind-mounted, not versioned (§7)
 ├── web/
 │   ├── index.html
 │   ├── css/
@@ -112,47 +114,68 @@ chess-trainer/
 - **Server:** source of truth for the repertoire, variation draw, bot moves (book or Stockfish), game recording.
 - Everything ships in the container: FastAPI serves `web/`, so JS, CSS and piece sets come from the image. Nothing loads from a CDN; the app works without internet.
 
-## 6. Repertoire: PGN in git, DuckDB as the working store
+## 6. The book: our JSON files in git, DuckDB as the working store
+
+**Decision (2026-11-07):** every opening of the Lichess catalog is available to drill, in our own format. Any line can be drilled with either color: the color is chosen in the setup, not stored with the line.
 
 "Source → serving layer":
-- **Source (versioned in git):** `repertoire/*.pgn`, one file per opening; each game in the PGN is one variation. This is what goes through PRs, review and community contributions.
-- **Working store (DuckDB):** on startup the backend loads the PGNs into tables (§7). The app reads the book only from the database. Names per language live in a translation table, so the same opening can be compared side by side in English, Portuguese and Spanish.
-- **User repertoire:** openings created or imported from the UI (paste PGN, Lichess study) go straight to the database with `source = 'user'` and can be exported back to PGN.
-- Loading is idempotent: only changed files are reloaded (file hash). User variations and statistics are never deleted.
+- **Source (versioned in git):** `openings/<family>.json`, one file per opening family, 149 at the start. They are ours: lines can be edited, extended or removed through PRs.
+- **Working store (DuckDB):** on startup the backend loads these files into tables (§7). The app reads the book only from the database.
+- **User lines (next step):** openings imported from the UI (paste PGN, Lichess study) go through the same validation into the database with `source = 'user'`, and can be exported to JSON. A sync never touches them.
+- Loading is idempotent: only changed files are reloaded (file hash). A failed load changes nothing.
 
-Required headers per variation:
-- `[RepertoireId "caro-kann"]`
-- `[VariantId "caro-kann.advance.short"]` — stable, never changes; statistics are keyed on it
-- `[Color "black"]` — the user's color
-- `[Name_en "Advance · Short Variation 4.Nf3"]` — required, it is the fallback
-- `[Name_pt-BR "Avançada · Linha Curta 4.Nf3"]`, `[Name_es "..."]` — optional, one per language
-- `[ECO "B12"]` (optional)
-- `[Source "..."]` — where the line came from (Lichess study URL, catalog, author)
+File format:
 
-**Lichess openings catalog** (`lichess-org/chess-openings`, CC0)
-- 5 TSV files (`a.tsv`–`e.tsv`, one per ECO letter), 3,865 named openings, columns `eco`, `name`, `pgn`.
-- Import **all** of them into the `openings_catalog` table with a versioned load script. Pin the source commit so the load is reproducible.
-- Uses:
-  1. **Name any position**, like Lichess does: during and after the game, show the most specific opening name matching the moves, even outside the repertoire.
-  2. **Basis for building and fixing the repertoire**, e.g. `name LIKE 'Caro-Kann%'` (110 lines).
-  3. **Validate** each variation's `ECO` and `Name_en` against the catalog.
-- The catalog is **not** the bot's book. It lists named positions, not repertoire replies. The bot plays only repertoire variations.
-- Catalog names are English only. pt-BR and es translations go into the `names` table over time, starting with repertoire openings.
+```json
+{
+  "id": "caro-kann-defense",
+  "names": { "en": "Caro-Kann Defense", "pt-BR": "Defesa Caro-Kann" },
+  "lines": [
+    {
+      "id": "line-3f2a9c10b7d4e681",
+      "names": { "en": "Advance Variation, Short Variation" },
+      "eco": "B12",
+      "opening": "Caro-Kann Defense: Advance Variation, Short Variation",
+      "moves": ["e4", "c6", "d4", "d5", "e5", "Bf5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}
+```
 
-Rules:
-- Side variations (RAV) inside a PGN are allowed and become branches of the book.
-- Loading **fails loudly** on an illegal move, a duplicate `VariantId` or a variation without `Name_en`.
-- The initial repertoire is built from the catalog (and Lichess studies), not copied from the prototype, whose lines had no source and some wrong names.
+- `id` (family) must match the file name. `names.en` is required and is the fallback; other locales are optional.
+- `id` (line) is stored and **never changes**, even if the moves are extended, because statistics are keyed on it. A line that disappears becomes `active = false` and is never deleted.
+- `eco` and `opening` are optional. `opening` is the exact catalog name of the line's final position and is validated against the catalog. A line we extended or imported drops it, or it fails validation.
+- `moves` is a flat list of SAN moves. There are no side variations: an alternative is another line, so each one has the same chance in the draw.
+
+**Lichess catalog** (`lichess-org/chess-openings`, CC0), pinned in `catalog/`, is **reference only**. The bot does not play from it. It is used to:
+1. Seed `openings/` once, with `catalog/generate_openings.py`.
+2. Validate `eco` and `opening`, matching by position (EPD), because catalog names repeat and lines transpose (`catalog/validate.py`).
+3. Name any position (still to do): during and after the game, show the most specific opening name matching the moves.
+
+A newer catalog does not enter by itself: comparing it with `openings/` and accepting the differences through a PR is still to be built.
+
+**Known limit:** the catalog lists named positions, not repertoire replies, so seeded lines are often short, can end on either side's move and include offbeat gambits. Nothing is selected by default; the user picks what to drill, with search by name, ECO or moves.
+
+**Selection and draw**
+- A book is a set of positions (EPD) with their moves, so transpositions are recognized.
+- At game start one selected variation is drawn with equal chance, and the bot follows it.
+- If the user plays a move from another selected variation, the bot redraws among the selected variations containing that position.
+- When the drawn variation ends, the engine takes over, even if another selected variation continues.
+- Theory is the union of the selected variations. A user move outside it, when that union has a move for the position, is a deviation. Once out of theory a game does not return to it.
+
+Loading **fails loudly** on an illegal move or an empty book: the app does not start.
 
 ## 7. Database (DuckDB)
 
 Local file `data/chess-trainer.duckdb`, bind-mounted (`./data`) so it is visible on the host and easy to back up. Numbered SQL migrations (`app/db/migrations/001_init.sql`…), applied on startup.
 
 Repertoire tables:
-- `repertoires` — repertoire_id, color, source (`repo`/`user`), file_path, file_hash, loaded_at
-- `variants` — variant_id, repertoire_id, eco, pgn, moves_san (list), source, active
+- `catalog_loads` — content_hash, source_commit, loaded_at
+- `repertoires` — repertoire_id (catalog family), source (`catalog`/`user`), file_path, file_hash, loaded_at
+- `variants` — variant_id, repertoire_id, eco, opening (catalog name), pgn, moves_san (list), final_epd, source, active
 - `names` — entity_type (`repertoire`/`variant`/`catalog`), entity_id, locale, name. Translations live here.
-- `book_moves` — repertoire_id, fen_before, ply, san, variant_id. The book tree, flattened for fast lookup.
+- `book_moves` — repertoire_id, variant_id, epd_before, ply, uci, san. The book tree, flattened for fast lookup.
 - `openings_catalog` — eco, name (en), pgn, uci, epd (final position), source_commit
 
 Usage tables:
@@ -176,9 +199,9 @@ Rules:
 
 ## 9. Engine
 
-- **Always the latest Stockfish.** The Dockerfile resolves the newest official release (GitHub `official-stockfish/Stockfish`, `releases/latest`) at build time and downloads the right binary for the architecture (amd64, arm64; pick the fastest supported CPU flavor, e.g. AVX2 vs. generic x86-64).
-- A build arg `STOCKFISH_VERSION` defaults to `latest` and can be set to a specific tag to reproduce an old build or work around a bad release.
-- The resolved version is recorded: image label, `/api/health`, shown in the UI footer, and stored per game (`games.engine_version`), so stats can be compared across engine versions.
+- **Always the latest Stockfish.** The Dockerfile resolves the newest official release (GitHub `official-stockfish/Stockfish`, `releases/latest`) at build time and downloads the right binary for the architecture (amd64, arm64). Since `sf_19` the official binaries are *universal*: they detect the CPU at run time, so there is no flavor to pick.
+- A build arg `STOCKFISH_VERSION` defaults to `latest` and can be set to a specific tag to reproduce an old build or work around a bad release. Only `sf_19` or newer is accepted (older releases have no universal binary and no Linux arm64 build); anything older fails the build with a clear message.
+- The resolved version is recorded: `/api/health` and a `VERSION` file in the image are the authority, shown in the UI footer, and stored per game (`games.engine_version`), so stats can be compared across engine versions. The image label holds the version that was requested, because a `LABEL` is fixed before the download runs; it names a real version only when a tag is passed explicitly (as CI does).
 - Updating = rebuilding the image (`docker compose build --pull`). A scheduled CI job (weekly) rebuilds and runs the tests against the newest release, so a breaking Stockfish change is caught early.
 - Four levels (Warm-up, Club, Strong, Max) mapped to `Skill Level` + depth/movetime, configurable in a file. Evaluate `UCI_LimitStrength`/`UCI_Elo` for a ~1200 level; note `UCI_Elo` has a floor (around 1320 in recent versions).
 - One long-lived Stockfish process behind a queue: one search at a time.
@@ -187,9 +210,9 @@ Rules:
 ## 10. Claude Code: CLAUDE.md and project skills
 
 - `CLAUDE.md` — overview, how to run, how to test, conventions (code and identifiers in English; user-facing text through i18n), never break a `VariantId`, link to this brief.
-- Skills in `.claude/skills/`:
-  - **add-opening** — takes a PGN (pasted, file or Lichess study), normalizes headers, generates `VariantId`s, validates with python-chess and the catalog, runs tests, opens a PR.
-  - **review-repertoire** — checks names and ECO of every variation against the catalog, flags lines that stop mid-theory.
+- Skills in `.claude/skills/`, none yet:
+  - **add-opening** — takes a PGN or Lichess study, writes it in the format of §6, validates, runs tests and opens a PR.
+  - **review-catalog** — checks a new catalog commit against `openings/`: what changed and what to accept.
   - **release** — bumps version, changelog, tag and Docker image.
   - **db-migration** — creates the next numbered migration with a test.
 
@@ -197,36 +220,35 @@ Rules:
 
 **Closed**
 - Local, open-source, single-user app, no login. Listens on `127.0.0.1` by default.
-- Repertoire: PGN in git as source, DuckDB as working store, translated names in a table.
+- Book: `openings/*.json` in git as source, seeded from the Lichess catalog, DuckDB as working store, translated names in a table. Any line plays with either color.
 - Statistics only in the local DuckDB file.
 - Built from scratch; the HTML prototype is not in the repository.
 - English SAN notation always.
-- **License: GPL-3.0.** Compatible with Stockfish and the Lichess piece sets. `THIRD_PARTY_LICENSES.md` lists Stockfish, chess.js, the openings catalog and each piece set.
+- **License: GPL-3.0.** Compatible with Stockfish and the chosen piece sets. `THIRD_PARTY_LICENSES.md` lists Stockfish, chess.js, the openings catalog, the fonts and each piece set. Lichess's Maestro (CC BY-NC-SA) and Alpha (non-commercial) sets are excluded because of their non-commercial terms.
 - Stockfish: always the latest official release, resolved at build time (§9), with an override for a specific version.
 - Stockfish runs only in the container. No Stockfish WASM in the browser; the app does not run without the backend.
-- Openings catalog: import all of `lichess-org/chess-openings`.
+- Openings catalog: import all of `lichess-org/chess-openings` as reference; `openings/` starts with all of its lines.
 
-**Repertoire sources** (reviewed case by case, recorded in `[Source]`)
-- Lichess openings catalog (CC0).
+**Future sources for user lines** (reviewed case by case)
 - Lichess studies exported as PGN.
 - Other sites (e.g. chessme.io): check their terms before copying lines into this public repository.
 
 **Open ⚠️**
-1. Lichess opening explorer **live** (the bot plays what people at your rating actually play; needs internet) or **reference only** when building PGNs (app stays fully offline)? Default until decided: reference only.
+1. Lichess opening explorer **live** (the bot plays what people at your rating actually play; needs internet) or **reference only** when building PGNs (app stays fully offline)? Default until decided: reference only. Note: the explorer API now requires authentication (HTTP 401 without a token, checked 2026-11-07), so a live mode would need a per-user token.
 
 ## 12. Delivery phases
 
-1. **Foundation:** repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), first repertoire in PGN from the Lichess catalog, validation tests. *Done when: every item in §4 works in the browser (desktop and mobile).*
-2. **Data:** DuckDB, repertoire and catalog loading, opening name on screen, recording of games, moves and deviations, settings on the server.
+1. **Foundation:** repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), the book in `openings/*.json` loaded into DuckDB, validation tests. Includes the real Stockfish with provisional levels, because §4 needs it. The book lives in DuckDB. Games live in RAM and UI preferences stay in `localStorage` until Phase 2. UI strings are English only until Phase 4. *Done when: every item in §4 works in the browser (desktop and mobile).*
+2. **Data:** opening name on screen, recording of games, moves and deviations, settings on the server.
 3. **Engine on the server:** native Stockfish with calibrated levels.
 4. **Languages:** complete en and pt-BR, language picker.
 5. **Statistics:** per-variation screen (where I deviate most, how far I get in theory, progress over time).
-6. **Backlog:** opening-only drill mode, take-back, sounds, new repertoires (King's Indian incl. London/Colle, Modern Benoni), PDF report with diagrams.
+6. **Backlog:** opening-only drill mode, take-back, sounds, PDF report with diagrams.
 
 ## 13. Working rules
 
 1. One phase at a time. At the end of each: what changed, how to test it, what was left for later.
-2. Every repertoire move is validated by tests, never by memory.
+2. Every book move is validated by tests, never by memory.
 3. Never change a `VariantId` or delete database data without a migration and a note.
 4. Test in a browser (desktop and mobile viewport) before calling something done, and state what was tested.
 5. If anything in this brief is ambiguous or conflicting, ask before inventing.

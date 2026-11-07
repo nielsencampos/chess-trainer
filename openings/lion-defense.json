@@ -1,0 +1,68 @@
+{
+  "id": "lion-defense",
+  "names": {
+    "en": "Lion Defense"
+  },
+  "lines": [
+    {
+      "id": "line-f30b52b4f0a7d18d",
+      "names": {
+        "en": "Lion Defense"
+      },
+      "eco": "B07",
+      "opening": "Lion Defense",
+      "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "Nbd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-021d1ed00574d266",
+      "names": {
+        "en": "Anti-Philidor"
+      },
+      "eco": "B07",
+      "opening": "Lion Defense: Anti-Philidor",
+      "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "Nbd7", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-30d3c56c496adac8",
+      "names": {
+        "en": "Anti-Philidor, Lion's Cave"
+      },
+      "eco": "B07",
+      "opening": "Lion Defense: Anti-Philidor, Lion's Cave",
+      "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "Nbd7", "f4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e4aef2d4b50537a6",
+      "names": {
+        "en": "Anti-Philidor, Lion's Cave, Lion Claw Gambit"
+      },
+      "eco": "B07",
+      "opening": "Lion Defense: Anti-Philidor, Lion's Cave, Lion Claw Gambit",
+      "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "Nbd7", "f4", "e5", "Nf3", "exd4", "Qxd4", "c6", "Bc4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-35863d7b26b517cb",
+      "names": {
+        "en": "Bayonet Attack"
+      },
+      "eco": "B07",
+      "opening": "Lion Defense: Bayonet Attack",
+      "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "Nbd7", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bd4ea88641b40878",
+      "names": {
+        "en": "Lion's Jaw"
+      },
+      "eco": "B00",
+      "opening": "Lion Defense: Lion's Jaw",
+      "moves": ["e4", "d6", "d4", "Nf6", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

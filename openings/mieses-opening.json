@@ -1,0 +1,48 @@
+{
+  "id": "mieses-opening",
+  "names": {
+    "en": "Mieses Opening"
+  },
+  "lines": [
+    {
+      "id": "line-89485da362d2c8a1",
+      "names": {
+        "en": "Mieses Opening"
+      },
+      "eco": "A00",
+      "opening": "Mieses Opening",
+      "moves": ["d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3c999177dc62fd03",
+      "names": {
+        "en": "Venezolana Variation"
+      },
+      "eco": "A00",
+      "opening": "Mieses Opening: Venezolana Variation",
+      "moves": ["d3", "c5", "Nc3", "Nc6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e35e90a02aa776e3",
+      "names": {
+        "en": "Reversed Rat"
+      },
+      "eco": "A00",
+      "opening": "Mieses Opening: Reversed Rat",
+      "moves": ["d3", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e8974f85af2c8645",
+      "names": {
+        "en": "Myers Spike Attack"
+      },
+      "eco": "A00",
+      "opening": "Mieses Opening: Myers Spike Attack",
+      "moves": ["d3", "g6", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}
