@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.cache/
+data/
+test-results/
+.env
+
+# Claude Code: keep project skills, ignore local state
+.claude/worktrees/
+.claude/settings.local.json

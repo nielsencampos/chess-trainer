@@ -50,7 +50,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 - Clock with increment (3+2, 10+5, 15+10, 45+30, no clock). Bot response time "Instant" or "Human" (human-like, based on the clock).
 - Scoresheet mode (hides the move list so you write on paper), out-of-theory warning, auto-play next game.
 - End of game: result, variation, how far theory went, deviations, copy PGN, link to Lichess analysis.
-- Green/cream board (a1 is dark), SVG piece sets with a picker (Merida, Cburnett, Maestro, Alpha, Unicode), light and dark theme, mobile layout, click **and** drag to move.
+- Green/cream board (a1 is dark), SVG piece sets with a picker (Merida, Cburnett, Chessnut, Fantasy, Unicode), light and dark theme, mobile layout, click **and** drag to move.
 - Board flips to the user's color. Coordinates on the left file and bottom rank. Highlights: last move, selected square, legal targets (dot; ring for captures), king in check.
 - Promotion picker (Q/R/B/N) as an overlay on the board.
 - Resign needs a second click to confirm (no browser dialogs).
@@ -122,11 +122,13 @@ chess-trainer/
 
 Required headers per variation:
 - `[RepertoireId "caro-kann"]`
+- `[RepertoireName_en "Caro-Kann Defense"]` — the opening's UI name; `RepertoireName_<locale>` for translations
 - `[VariantId "caro-kann.advance.short"]` — stable, never changes; statistics are keyed on it
 - `[Color "black"]` — the user's color
-- `[Name_en "Advance · Short Variation 4.Nf3"]` — required, it is the fallback
+- `[Name_en "Advance · Short Variation 4.Nf3"]` — required, it is the fallback; a free-form UI label, not validated against the catalog
 - `[Name_pt-BR "Avançada · Linha Curta 4.Nf3"]`, `[Name_es "..."]` — optional, one per language
 - `[ECO "B12"]` (optional)
+- `[Opening "Caro-Kann Defense: Advance Variation, Short Variation"]` (optional) — the exact catalog name; validated together with `ECO` against the catalog entry of the line's final position
 - `[Source "..."]` — where the line came from (Lichess study URL, catalog, author)
 
 **Lichess openings catalog** (`lichess-org/chess-openings`, CC0)
@@ -135,9 +137,16 @@ Required headers per variation:
 - Uses:
   1. **Name any position**, like Lichess does: during and after the game, show the most specific opening name matching the moves, even outside the repertoire.
   2. **Basis for building and fixing the repertoire**, e.g. `name LIKE 'Caro-Kann%'` (110 lines).
-  3. **Validate** each variation's `ECO` and `Name_en` against the catalog.
+  3. **Validate** each variation's `ECO` and `Opening` against the catalog, matching by position (EPD), because catalog names repeat and lines transpose.
 - The catalog is **not** the bot's book. It lists named positions, not repertoire replies. The bot plays only repertoire variations.
 - Catalog names are English only. pt-BR and es translations go into the `names` table over time, starting with repertoire openings.
+
+**Selection and draw**
+- A book is a set of positions (EPD) with their moves, so transpositions are recognized.
+- At game start one selected variation is drawn with equal chance, and the bot follows it (random between its RAV branches).
+- If the user plays a move from another selected variation, the bot redraws among the selected variations containing that position.
+- When the drawn variation ends, the engine takes over, even if another selected variation continues.
+- Theory is the union of the selected variations. A user move outside it, when that union has a move for the position, is a deviation. Once out of theory a game does not return to it.
 
 Rules:
 - Side variations (RAV) inside a PGN are allowed and become branches of the book.
@@ -176,9 +185,9 @@ Rules:
 
 ## 9. Engine
 
-- **Always the latest Stockfish.** The Dockerfile resolves the newest official release (GitHub `official-stockfish/Stockfish`, `releases/latest`) at build time and downloads the right binary for the architecture (amd64, arm64; pick the fastest supported CPU flavor, e.g. AVX2 vs. generic x86-64).
-- A build arg `STOCKFISH_VERSION` defaults to `latest` and can be set to a specific tag to reproduce an old build or work around a bad release.
-- The resolved version is recorded: image label, `/api/health`, shown in the UI footer, and stored per game (`games.engine_version`), so stats can be compared across engine versions.
+- **Always the latest Stockfish.** The Dockerfile resolves the newest official release (GitHub `official-stockfish/Stockfish`, `releases/latest`) at build time and downloads the right binary for the architecture (amd64, arm64). Since `sf_19` the official binaries are *universal*: they detect the CPU at run time, so there is no flavor to pick.
+- A build arg `STOCKFISH_VERSION` defaults to `latest` and can be set to a specific tag to reproduce an old build or work around a bad release. Only `sf_19` or newer is accepted (older releases have no universal binary and no Linux arm64 build); anything older fails the build with a clear message.
+- The resolved version is recorded: `/api/health` and a `VERSION` file in the image are the authority, shown in the UI footer, and stored per game (`games.engine_version`), so stats can be compared across engine versions. The image label holds the version that was requested, because a `LABEL` is fixed before the download runs; it names a real version only when a tag is passed explicitly (as CI does).
 - Updating = rebuilding the image (`docker compose build --pull`). A scheduled CI job (weekly) rebuilds and runs the tests against the newest release, so a breaking Stockfish change is caught early.
 - Four levels (Warm-up, Club, Strong, Max) mapped to `Skill Level` + depth/movetime, configurable in a file. Evaluate `UCI_LimitStrength`/`UCI_Elo` for a ~1200 level; note `UCI_Elo` has a floor (around 1320 in recent versions).
 - One long-lived Stockfish process behind a queue: one search at a time.
@@ -201,7 +210,7 @@ Rules:
 - Statistics only in the local DuckDB file.
 - Built from scratch; the HTML prototype is not in the repository.
 - English SAN notation always.
-- **License: GPL-3.0.** Compatible with Stockfish and the Lichess piece sets. `THIRD_PARTY_LICENSES.md` lists Stockfish, chess.js, the openings catalog and each piece set.
+- **License: GPL-3.0.** Compatible with Stockfish and the chosen piece sets. `THIRD_PARTY_LICENSES.md` lists Stockfish, chess.js, the openings catalog, the fonts and each piece set. Lichess's Maestro (CC BY-NC-SA) and Alpha (non-commercial) sets are excluded because of their non-commercial terms.
 - Stockfish: always the latest official release, resolved at build time (§9), with an override for a specific version.
 - Stockfish runs only in the container. No Stockfish WASM in the browser; the app does not run without the backend.
 - Openings catalog: import all of `lichess-org/chess-openings`.
@@ -212,11 +221,11 @@ Rules:
 - Other sites (e.g. chessme.io): check their terms before copying lines into this public repository.
 
 **Open ⚠️**
-1. Lichess opening explorer **live** (the bot plays what people at your rating actually play; needs internet) or **reference only** when building PGNs (app stays fully offline)? Default until decided: reference only.
+1. Lichess opening explorer **live** (the bot plays what people at your rating actually play; needs internet) or **reference only** when building PGNs (app stays fully offline)? Default until decided: reference only. Note: the explorer API now requires authentication (HTTP 401 without a token, checked 2026-11-07), so a live mode would need a per-user token.
 
 ## 12. Delivery phases
 
-1. **Foundation:** repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), first repertoire in PGN from the Lichess catalog, validation tests. *Done when: every item in §4 works in the browser (desktop and mobile).*
+1. **Foundation:** repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), first repertoire in PGN from the Lichess catalog, validation tests. Includes the real Stockfish with provisional levels, because §4 needs it. The book is loaded from PGN into memory and games live in RAM; nothing is persisted yet and UI preferences stay in `localStorage` until Phase 2. UI strings are English only until Phase 4. *Done when: every item in §4 works in the browser (desktop and mobile).*
 2. **Data:** DuckDB, repertoire and catalog loading, opening name on screen, recording of games, moves and deviations, settings on the server.
 3. **Engine on the server:** native Stockfish with calibrated levels.
 4. **Languages:** complete en and pt-BR, language picker.
