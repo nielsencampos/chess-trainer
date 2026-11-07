@@ -27,15 +27,15 @@ STOCKFISH_PATH=/path/to/stockfish uv run uvicorn --factory app.main:create_app -
 ```bash
 uv run ruff check . && uv run ruff format --check .
 uv run pytest                                     # unit + API, uses a fake engine
-uv run python -m catalog.validate                 # every line in openings/ against the catalog
+uv run python -m catalog.validate                 # lines against the catalog, names coverage
 scripts/extract-stockfish.sh                      # copies the binary from the image to .cache/
 STOCKFISH_PATH=.cache/stockfish uv run pytest -m engine
 scripts/smoke.sh chess-trainer:local              # health and a real engine move in the image
 E2E_BASE_URL=http://127.0.0.1:8000 uv run pytest -m e2e   # Playwright, desktop
 ```
 
-Before calling UI work done, test it in a browser at a desktop viewport and state what was
-tested. Mobile is out of scope.
+Before calling UI work done, test it in a browser at 1280x720 and state what was tested. HD is
+the smallest supported screen, and mobile is out of scope.
 
 ## Conventions
 
@@ -50,7 +50,7 @@ tested. Mobile is out of scope.
 
 ## Book rules
 
-- `openings/<family>.json` is the source of the book (format in brief §6). The app reads the book
+- `openings/<group>/[others/]<family>.json` is the source of the book (format in brief §6). The app reads the book
   only from DuckDB. `catalog/` is reference only: the bot does not play from it.
 - **Never change or reuse a line `id`**, even when extending its moves. Statistics are keyed on it.
   Lines that disappear become inactive and are never deleted.
