@@ -75,14 +75,8 @@ select {
 .brand-logo {
   display: block;
   flex: none;
-  width: 56px;
-  height: 56px;
-}
-
-.brand-name {
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  width: 256px;
+  height: 256px;
 }
 
 .topbar-controls {
@@ -113,7 +107,7 @@ select {
 
 .board-column {
   /* Fits the board, two player bars and the chips in the viewport height. */
-  width: min(100%, calc(100dvh - 216px));
+  width: min(100%, calc(100dvh - 416px));
   min-width: 320px;
   margin: 0 auto;
   display: flex;
@@ -151,15 +145,8 @@ select {
     min-width: 0;
   }
 
-  .brand-logo {
-    width: 44px;
-    height: 44px;
-  }
-}
-
-/* The logo already says the name, and a phone has no room for both next to the controls. */
-@media (max-width: 480px) {
-  .brand-name {
-    display: none;
+  .topbar-controls {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
