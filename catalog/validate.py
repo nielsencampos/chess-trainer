@@ -1,50 +1,49 @@
-"""Validate every repertoire line against the catalog. Exits non-zero on any problem.
+"""Checks every line in openings/: legal moves, and ECO and name against the catalog.
 
-Usage: uv run python -m catalog.validate [REPERTOIRE_DIR]
+A line without an `opening` is ours (extended or imported) and only has to be legal.
+Usage: uv run python -m catalog.validate [OPENINGS_DIR]
 """
 
 import sys
 from pathlib import Path
 
-from app.book.loader import Book, BookError, load_book
+from app.book.source import BookError, OpeningFile, read_opening_files, replay
 from catalog.loader import index_by_position, load_catalog
 
-DEFAULT_DIR = Path(__file__).parent.parent / "repertoire"
+DEFAULT_DIR = Path(__file__).parent.parent / "openings"
 
 
-def validate(book: Book, index: dict) -> list[str]:
-    """Return one message per variation whose ECO or Opening disagrees with the catalog."""
+def validate(files: list[OpeningFile], index: dict) -> list[str]:
+    """Returns one message per line that disagrees with the catalog."""
     problems: list[str] = []
-    for variant in book.variants.values():
-        if variant.eco is None and variant.opening is None:
-            continue
-        entries = index.get(variant.final_epd, [])
-        if not entries:
-            problems.append(f"{variant.variant_id}: final position is not in the catalog")
-            continue
-        matches = [
-            entry
-            for entry in entries
-            if variant.opening in (None, entry.name) and variant.eco in (None, entry.eco)
-        ]
-        if not matches:
-            found = "; ".join(f"{entry.eco} {entry.name}" for entry in entries)
-            problems.append(
-                f"{variant.variant_id}: has {variant.eco} {variant.opening!r}, catalog has {found}"
-            )
+    for opening_file in files:
+        for line in opening_file.lines:
+            final_epd = replay(line).final_epd
+            if line.opening is None:
+                continue
+            entries = index.get(final_epd, [])
+            if not any(
+                entry.name == line.opening and line.eco in (None, entry.eco) for entry in entries
+            ):
+                found = "; ".join(f"{entry.eco} {entry.name}" for entry in entries) or "nothing"
+                problems.append(
+                    f"{opening_file.family_id}/{line.line_id}: has {line.eco} "
+                    f"{line.opening!r}, catalog has {found}"
+                )
     return problems
 
 
-def main(repertoire_dir: Path) -> int:
+def main(directory: Path) -> int:
     try:
-        book = load_book(repertoire_dir)
+        files = read_opening_files(directory)
+        problems = validate(files, index_by_position(load_catalog()))
     except BookError as error:
-        print(f"LOAD FAILED: {error}", file=sys.stderr)
+        print(f"INVALID: {error}", file=sys.stderr)
         return 1
-    problems = validate(book, index_by_position(load_catalog()))
     for problem in problems:
         print(f"INVALID: {problem}", file=sys.stderr)
-    print(f"{len(book.variants)} variations checked, {len(problems)} problems")
+    total = sum(len(opening_file.lines) for opening_file in files)
+    print(f"{len(files)} families, {total} lines checked, {len(problems)} problems")
     return 1 if problems else 0
 
 

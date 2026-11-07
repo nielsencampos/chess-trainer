@@ -1,0 +1,108 @@
+{
+  "id": "benko-gambit-accepted",
+  "names": {
+    "en": "Benko Gambit Accepted"
+  },
+  "lines": [
+    {
+      "id": "line-04ce656d2fe9c49d",
+      "names": {
+        "en": "Benko Gambit Accepted"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Accepted",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ed14618f6ac16a0c",
+      "names": {
+        "en": "Pawn Return Variation"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Accepted: Pawn Return Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a6fca7e2645c241e",
+      "names": {
+        "en": "Fully Accepted Variation"
+      },
+      "eco": "A58",
+      "opening": "Benko Gambit Accepted: Fully Accepted Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1f69385319324979",
+      "names": {
+        "en": "Yugoslav"
+      },
+      "eco": "A59",
+      "opening": "Benko Gambit Accepted: Yugoslav",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "Bxa6", "Nc3", "d6", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-13d5380b806881c3",
+      "names": {
+        "en": "King Walk Variation"
+      },
+      "eco": "A59",
+      "opening": "Benko Gambit Accepted: King Walk Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "g6", "Nc3", "Bxa6", "Nf3", "d6", "e4", "Bxf1", "Kxf1", "Bg7", "g3", "O-O", "Kg2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f1d6ef53901c3418",
+      "names": {
+        "en": "Yugoslav"
+      },
+      "eco": "A59",
+      "opening": "Benko Gambit Accepted: Yugoslav",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "g6", "Nc3", "Bxa6", "e4", "Bxf1", "Kxf1", "d6", "Nge2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e83d6dab0bec3c3",
+      "names": {
+        "en": "Central Storming Variation"
+      },
+      "eco": "A58",
+      "opening": "Benko Gambit Accepted: Central Storming Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "g6", "Nc3", "Bxa6", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e3c1accb5421b66b",
+      "names": {
+        "en": "Fianchetto Variation"
+      },
+      "eco": "A58",
+      "opening": "Benko Gambit Accepted: Fianchetto Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "g6", "Nc3", "Bxa6", "g3", "d6", "Bg2", "Bg7", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4a8382fbde41ec9d",
+      "names": {
+        "en": "Modern Variation"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Accepted: Modern Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5e5308e11b8707bd",
+      "names": {
+        "en": "Dlugy Variation"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Accepted: Dlugy Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

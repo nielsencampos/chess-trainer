@@ -1,0 +1,48 @@
+{
+  "id": "mikenas-defense",
+  "names": {
+    "en": "Mikenas Defense"
+  },
+  "lines": [
+    {
+      "id": "line-e9d502ef93738f26",
+      "names": {
+        "en": "Mikenas Defense"
+      },
+      "eco": "A40",
+      "opening": "Mikenas Defense",
+      "moves": ["d4", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-02b56e479d26375f",
+      "names": {
+        "en": "Lithuanian Variation"
+      },
+      "eco": "A40",
+      "opening": "Mikenas Defense: Lithuanian Variation",
+      "moves": ["d4", "Nc6", "c4", "e5", "d5", "Nce7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ecca67853951985c",
+      "names": {
+        "en": "Cannstatter Variation"
+      },
+      "eco": "A40",
+      "opening": "Mikenas Defense: Cannstatter Variation",
+      "moves": ["d4", "Nc6", "c4", "e5", "d5", "Nd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3ee0e5e32d350746",
+      "names": {
+        "en": "Pozarek Gambit"
+      },
+      "eco": "A40",
+      "opening": "Mikenas Defense: Pozarek Gambit",
+      "moves": ["d4", "Nc6", "c4", "e5", "dxe5", "Nxe5", "Nc3", "Nxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

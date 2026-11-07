@@ -1,0 +1,538 @@
+{
+  "id": "king-s-gambit-declined",
+  "names": {
+    "en": "King's Gambit Declined"
+  },
+  "lines": [
+    {
+      "id": "line-dbd755a8130bf4b3",
+      "names": {
+        "en": "Mafia Defense"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Mafia Defense",
+      "moves": ["e4", "c5", "f4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd968ca05a078000",
+      "names": {
+        "en": "Classical, Svenonius Variation"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Classical, Svenonius Variation",
+      "moves": ["e4", "e5", "Bc4", "Nc6", "Nc3", "Nf6", "d3", "Bc5", "f4", "d6", "Nf3", "Bg4", "h3", "Bxf3", "Qxf3", "exf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-534d4096041d0b74",
+      "names": {
+        "en": "Falkbeer Countergambit, Charousek Gambit, Morphy Defense"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Morphy Defense",
+      "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5", "exd5", "e4", "d3", "Bb4", "Bd2", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-934318f046fa9fd4",
+      "names": {
+        "en": "Classical Variation"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Classical Variation",
+      "moves": ["e4", "e5", "f4", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b44f545f2e4fd670",
+      "names": {
+        "en": "Classical, Hanham Variation"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Classical, Hanham Variation",
+      "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "Nc3", "Nd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e2d87e737c075aa4",
+      "names": {
+        "en": "Classical Variation, Rotlewi Countergambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Classical Variation, Rotlewi Countergambit",
+      "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a62025900f322d9f",
+      "names": {
+        "en": "Classical Variation"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Classical Variation",
+      "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e64cf7a91cfb02bb",
+      "names": {
+        "en": "Classical Variation, Euwe Attack"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Classical Variation, Euwe Attack",
+      "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "c3", "Bg4", "fxe5", "dxe5", "Qa4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-34b872698f0ed40b",
+      "names": {
+        "en": "Classical Variation, Rubinstein Countergambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Classical Variation, Rubinstein Countergambit",
+      "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "c3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-61ad0595bb8a78ff",
+      "names": {
+        "en": "Classical, Réti Variation"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Classical, Réti Variation",
+      "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "c3", "f5", "fxe5", "dxe5", "d4", "exd4", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-91bc8e4a9ddb73c9",
+      "names": {
+        "en": "Classical, Soldatenkov Variation"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Classical, Soldatenkov Variation",
+      "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "fxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d4619b978d0bb352",
+      "names": {
+        "en": "Senechaud Countergambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Senechaud Countergambit",
+      "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0f9a42689e8781bb",
+      "names": {
+        "en": "Classical Variation, Walthoffen Attack"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Classical Variation, Walthoffen Attack",
+      "moves": ["e4", "e5", "f4", "Bc5", "Qh5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e47b2cf8da1ac7ac",
+      "names": {
+        "en": "Queen's Knight Defense"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Queen's Knight Defense",
+      "moves": ["e4", "e5", "f4", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-78dea44237ddfc28",
+      "names": {
+        "en": "Miles Defense"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Miles Defense",
+      "moves": ["e4", "e5", "f4", "Nc6", "Nf3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7cbf82f969af2245",
+      "names": {
+        "en": "Zilbermints Double Gambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Zilbermints Double Gambit",
+      "moves": ["e4", "e5", "f4", "Nc6", "Nf3", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd02bbc0f0e6b41d",
+      "names": {
+        "en": "Hobbs-Zilbermints Gambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Hobbs-Zilbermints Gambit",
+      "moves": ["e4", "e5", "f4", "Nc6", "Nf3", "g5", "fxg5", "h6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-099f1cc14bc524f5",
+      "names": {
+        "en": "Petrov's Defense"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Petrov's Defense",
+      "moves": ["e4", "e5", "f4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-160bd392119f0b95",
+      "names": {
+        "en": "Norwalde Variation"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Norwalde Variation",
+      "moves": ["e4", "e5", "f4", "Qf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b7ff0fc18783bcb6",
+      "names": {
+        "en": "Norwalde Variation, Bücker Gambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Norwalde Variation, Bücker Gambit",
+      "moves": ["e4", "e5", "f4", "Qf6", "Nc3", "Qxf4", "Nf3", "Bb4", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-79b92a94a36659ff",
+      "names": {
+        "en": "Norwalde Variation, Schubert Variation"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Norwalde Variation, Schubert Variation",
+      "moves": ["e4", "e5", "f4", "Qf6", "Nc3", "Qxf4", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ac3062c740f6e1af",
+      "names": {
+        "en": "Keene's Defense"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Keene's Defense",
+      "moves": ["e4", "e5", "f4", "Qh4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3a7dda6b6100f9f4",
+      "names": {
+        "en": "Keene's Defense"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Keene's Defense",
+      "moves": ["e4", "e5", "f4", "Qh4+", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7a2ab0cec9810a38",
+      "names": {
+        "en": "Keene Defense"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Keene Defense",
+      "moves": ["e4", "e5", "f4", "Qh4+", "g3", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3b5bfe9e97e8e21e",
+      "names": {
+        "en": "Falkbeer Countergambit"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit",
+      "moves": ["e4", "e5", "f4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b3fd43210c98c370",
+      "names": {
+        "en": "Falkbeer Countergambit, Milner-Barry Variation"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Milner-Barry Variation",
+      "moves": ["e4", "e5", "f4", "d5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4e920c1cfe4889ae",
+      "names": {
+        "en": "Falkbeer Countergambit, Blackburne Attack"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Blackburne Attack",
+      "moves": ["e4", "e5", "f4", "d5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c85626cd10bee626",
+      "names": {
+        "en": "Falkbeer Countergambit, Hinrichsen Gambit"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Hinrichsen Gambit",
+      "moves": ["e4", "e5", "f4", "d5", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ac25dc07eba47cc9",
+      "names": {
+        "en": "Falkbeer Countergambit Accepted"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit Accepted",
+      "moves": ["e4", "e5", "f4", "d5", "exd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ad710a7248cad8b8",
+      "names": {
+        "en": "Falkbeer Countergambit, Miles Gambit"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Miles Gambit",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d02c45512ab07931",
+      "names": {
+        "en": "Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9c9bc9f5d4699a3f",
+      "names": {
+        "en": "Falkbeer Countergambit, Pickler Gambit"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Pickler Gambit",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "c6", "dxc6", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1074c85e467cf336",
+      "names": {
+        "en": "Falkbeer Countergambit, Staunton Line"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Staunton Line",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f8725f69746636ac",
+      "names": {
+        "en": "Falkbeer Countergambit, Anderssen Attack"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Anderssen Attack",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "Bb5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b9124b2fbab8e323",
+      "names": {
+        "en": "Falkbeer Countergambit, Rubinstein Variation"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Rubinstein Variation",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "Nc3", "Nf6", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-808ef4b37e7259ea",
+      "names": {
+        "en": "Falkbeer Countergambit, Charousek Gambit"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-89e200d10bf3520e",
+      "names": {
+        "en": "Falkbeer Countergambit, Charousek Gambit, Keres Variation"
+      },
+      "eco": "C32",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "Nd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-729f10bfd3746687",
+      "names": {
+        "en": "Falkbeer Countergambit, Charousek Gambit, Old Line"
+      },
+      "eco": "C32",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Old Line",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2404b5530331fa85",
+      "names": {
+        "en": "Falkbeer Countergambit, Charousek Gambit Accepted"
+      },
+      "eco": "C32",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit Accepted",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9938f72465f6e6d8",
+      "names": {
+        "en": "Falkbeer Countergambit, Alapin Variation"
+      },
+      "eco": "C32",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Alapin Variation",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4", "Nxe4", "Nf3", "Bc5", "Qe2", "Bf2+", "Kd1", "Qxd5+", "Nfd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0d20a7c431025fb9",
+      "names": {
+        "en": "Falkbeer Countergambit, Charousek Gambit, Main Line"
+      },
+      "eco": "C32",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Main Line",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4", "Nxe4", "Nf3", "Bc5", "Qe2", "Bf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-99f435d5f22709ec",
+      "names": {
+        "en": "Falkbeer Countergambit, Tarrasch Variation"
+      },
+      "eco": "C32",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Tarrasch Variation",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4", "Nxe4", "Nf3", "Bc5", "Qe2", "Bf5", "g4", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d3d34b50c11ae700",
+      "names": {
+        "en": "Falkbeer Countergambit, Charousek Gambit"
+      },
+      "eco": "C32",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4", "Nxe4", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-37f6fb8d9f76afa6",
+      "names": {
+        "en": "Falkbeer Countergambit, Charousek Variation"
+      },
+      "eco": "C32",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Variation",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4", "Nxe4", "Qe2", "Qxd5", "Nd2", "f5", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-db19a2fef9a070cd",
+      "names": {
+        "en": "Falkbeer Countergambit, Modern Transfer"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Modern Transfer",
+      "moves": ["e4", "e5", "f4", "d5", "exd5", "exf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7484088714f3cf73",
+      "names": {
+        "en": "Panteldakis Countergambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Panteldakis Countergambit",
+      "moves": ["e4", "e5", "f4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-375f13ae4f0630f9",
+      "names": {
+        "en": "Panteldakis Countergambit, Schiller's Defense"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Panteldakis Countergambit, Schiller's Defense",
+      "moves": ["e4", "e5", "f4", "f5", "exf5", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e26f4f72ed2d9d4f",
+      "names": {
+        "en": "Panteldakis Countergambit, Greco Variation"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Panteldakis Countergambit, Greco Variation",
+      "moves": ["e4", "e5", "f4", "f5", "exf5", "Qh4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-73ac5360a1052517",
+      "names": {
+        "en": "Panteldakis Countergambit, Symmetrical Variation"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Panteldakis Countergambit, Symmetrical Variation",
+      "moves": ["e4", "e5", "f4", "f5", "exf5", "exf4", "Nf3", "d5", "d4", "Bd6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0ff57737d5e06dc1",
+      "names": {
+        "en": "Panteldakis Countergambit, Shirazi Line"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Panteldakis Countergambit, Shirazi Line",
+      "moves": ["e4", "e5", "f4", "f5", "exf5", "exf4", "Qh5+", "Ke7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fbc8d2af1b344c52",
+      "names": {
+        "en": "Panteldakis Countergambit, Pawn Sacrifice Line"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Panteldakis Countergambit, Pawn Sacrifice Line",
+      "moves": ["e4", "e5", "f4", "f5", "exf5", "exf4", "Qh5+", "g6", "fxg6", "Qe7+", "Kd1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b142c9c3f8b0cf71",
+      "names": {
+        "en": "Soller-Zilbermints Gambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Soller-Zilbermints Gambit",
+      "moves": ["e4", "e5", "f4", "f6", "fxe5", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-766ab7067ef52250",
+      "names": {
+        "en": "Zilbermints Double Countergambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Zilbermints Double Countergambit",
+      "moves": ["e4", "e5", "f4", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

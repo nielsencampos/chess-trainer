@@ -1,0 +1,58 @@
+{
+  "id": "borg-defense",
+  "names": {
+    "en": "Borg Defense"
+  },
+  "lines": [
+    {
+      "id": "line-d7cc1986b19f68cf",
+      "names": {
+        "en": "Borg Gambit"
+      },
+      "eco": "A40",
+      "opening": "Borg Defense: Borg Gambit",
+      "moves": ["d4", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-93886723784d01ed",
+      "names": {
+        "en": "Borg Defense"
+      },
+      "eco": "B00",
+      "opening": "Borg Defense",
+      "moves": ["e4", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-34b53dbdbc9da338",
+      "names": {
+        "en": "Borg Gambit"
+      },
+      "eco": "B00",
+      "opening": "Borg Defense: Borg Gambit",
+      "moves": ["e4", "g5", "d4", "Bg7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cd8a3a62bc26b23f",
+      "names": {
+        "en": "Zilbermints Gambit"
+      },
+      "eco": "B00",
+      "opening": "Borg Defense: Zilbermints Gambit",
+      "moves": ["e4", "g5", "d4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9106f5049e3c1ba5",
+      "names": {
+        "en": "Troon Gambit"
+      },
+      "eco": "B00",
+      "opening": "Borg Defense: Troon Gambit",
+      "moves": ["e4", "g5", "d4", "h6", "h4", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

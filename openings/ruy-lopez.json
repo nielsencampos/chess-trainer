@@ -1,0 +1,2358 @@
+{
+  "id": "ruy-lopez",
+  "names": {
+    "en": "Ruy Lopez"
+  },
+  "lines": [
+    {
+      "id": "line-ebb7a3bf3955aeb1",
+      "names": {
+        "en": "Ruy Lopez"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-604bdf0a80411b1c",
+      "names": {
+        "en": "Alapin Defense"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Alapin Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Bb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e519a6eb6ca486fd",
+      "names": {
+        "en": "Alapin Defense, Alapin Gambit"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Bb4", "c3", "Ba5", "Bxc6", "dxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fe6baeffcbae081a",
+      "names": {
+        "en": "Classical Variation"
+      },
+      "eco": "C64",
+      "opening": "Ruy Lopez: Classical Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-16797776818147c3",
+      "names": {
+        "en": "Classical Defense, Zaitsev Variation"
+      },
+      "eco": "C64",
+      "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Bc5", "O-O", "Nd4", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dda2bb6d7b7d4d05",
+      "names": {
+        "en": "Classical Variation, Spanish Wing Gambit"
+      },
+      "eco": "C64",
+      "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Bc5", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3b3ca90b4af07cd7",
+      "names": {
+        "en": "Classical Variation, Central Variation"
+      },
+      "eco": "C64",
+      "opening": "Ruy Lopez: Classical Variation, Central Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Bc5", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f1698afb2a373e92",
+      "names": {
+        "en": "Classical Variation, Charousek Variation"
+      },
+      "eco": "C64",
+      "opening": "Ruy Lopez: Classical Variation, Charousek Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Bc5", "c3", "Bb6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-de0a2b480c2e4b67",
+      "names": {
+        "en": "Classical Defense, Boden Variation"
+      },
+      "eco": "C64",
+      "opening": "Ruy Lopez: Classical Defense, Boden Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Bc5", "c3", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ce0e4a2ffcc3cb28",
+      "names": {
+        "en": "Classical Variation, Konikowski Gambit"
+      },
+      "eco": "C64",
+      "opening": "Ruy Lopez: Classical Variation, Konikowski Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Bc5", "c3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ae6f83f45b3b5161",
+      "names": {
+        "en": "Classical Variation, Cordel Gambit"
+      },
+      "eco": "C64",
+      "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Bc5", "c3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0d52b61ec15d5ad5",
+      "names": {
+        "en": "Lucena Variation"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Lucena Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c565a629b1d27a8c",
+      "names": {
+        "en": "Pollock Defense"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Pollock Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Na5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-06e6f81201bea502",
+      "names": {
+        "en": "Retreat Variation"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Retreat Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nb8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d8277919ad387060",
+      "names": {
+        "en": "Bird Variation"
+      },
+      "eco": "C61",
+      "opening": "Ruy Lopez: Bird Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1421e1a6f24c798f",
+      "names": {
+        "en": "Bird Variation, Paulsen Variation"
+      },
+      "eco": "C61",
+      "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nd4", "Nxd4", "exd4", "O-O", "Ne7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-94c5267ae2efa406",
+      "names": {
+        "en": "Berlin Defense"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a5139c888a6f8dee",
+      "names": {
+        "en": "Halloween Attack"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Halloween Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "Nxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0d34d859d5440c41",
+      "names": {
+        "en": "Berlin Defense"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-234d79d5aff8d38f",
+      "names": {
+        "en": "Berlin Defense, Beverwijk Variation"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense, Beverwijk Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-707da7d78a5e2a09",
+      "names": {
+        "en": "Classical Variation, Zukertort Gambit"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Classical Variation, Zukertort Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Bc5", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f2b0f8bfbfdc74d5",
+      "names": {
+        "en": "Classical Defense, Benelux Variation"
+      },
+      "eco": "C64",
+      "opening": "Ruy Lopez: Classical Defense, Benelux Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Bc5", "c3", "O-O", "d4", "Bb6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-764a66cf17e0724e",
+      "names": {
+        "en": "Classical Variation, Modern Main Line"
+      },
+      "eco": "C64",
+      "opening": "Ruy Lopez: Classical Variation, Modern Main Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Bc5", "c3", "O-O", "d4", "Bb6", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fee3afe1a601a8f2",
+      "names": {
+        "en": "Berlin Defense, Fishing Pole Variation"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense, Fishing Pole Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Ng4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-54dca74526384b8d",
+      "names": {
+        "en": "Berlin Defense, Rio Gambit Accepted"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Rio Gambit Accepted",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2fe889ccd50c3bf7",
+      "names": {
+        "en": "Berlin Defense, Rio de Janeiro Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6a9fd5c7a8e70680",
+      "names": {
+        "en": "Berlin Defense, Rio de Janeiro Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Be7", "Qe2", "Nd6", "Bxc6", "bxc6", "dxe5", "Nb7", "Nc3", "O-O", "Re1", "Nc5", "Nd4", "Ne6", "Be3", "Nxd4", "Bxd4", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2f5312bca4494e8e",
+      "names": {
+        "en": "Berlin Defense, Winawer Attack"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Winawer Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Be7", "Qe2", "Nd6", "Bxc6", "bxc6", "dxe5", "Nb7", "Nd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1cebeb8cff1ddfc6",
+      "names": {
+        "en": "Berlin Defense, Pillsbury Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Pillsbury Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Be7", "Qe2", "Nd6", "Bxc6", "bxc6", "dxe5", "Nb7", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-81afd578796344a8",
+      "names": {
+        "en": "Berlin Defense, Zukertort Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Zukertort Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Be7", "Qe2", "Nd6", "Bxc6", "bxc6", "dxe5", "Nb7", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2ae607def5f492bd",
+      "names": {
+        "en": "Berlin Defense, Cordel Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Cordel Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Be7", "Qe2", "Nd6", "Bxc6", "bxc6", "dxe5", "Nf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f0fff318aa5f7c5f",
+      "names": {
+        "en": "Berlin Defense, Trifunovic Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Trifunovic Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Be7", "Qe2", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-794127de1aca3b77",
+      "names": {
+        "en": "Berlin Defense, Minckwitz Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Minckwitz Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Be7", "dxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2c39ace1ce33a6bf",
+      "names": {
+        "en": "Berlin Defense, l'Hermet Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Nd6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d60d7fded7840057",
+      "names": {
+        "en": "Open Berlin Defense, Showalter Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Open Berlin Defense, Showalter Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Nd6", "Ba4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-046430836798d3ed",
+      "names": {
+        "en": "Berlin Defense, l'Hermet Variation, Westerinen Line"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation, Westerinen Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Nd6", "Bxc6", "dxc6", "dxe5", "Ne4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-164565d3adba071e",
+      "names": {
+        "en": "Berlin Defense, l'Hermet Variation, Berlin Wall Defense"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Nd6", "Bxc6", "dxc6", "dxe5", "Nf5", "Qxd8+", "Kxd8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-56b5b2fc28ddd9a3",
+      "names": {
+        "en": "Berlin Defense, Berlin Wall"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Berlin Wall",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Nd6", "Bxc6", "dxc6", "dxe5", "Nf5", "Qxd8+", "Kxd8", "Nc3", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5641fe3f3729a7a3",
+      "names": {
+        "en": "Open Berlin Defense, l'Hermet Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Open Berlin Defense, l'Hermet Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "Nd6", "dxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7ce882a14e12a4fd",
+      "names": {
+        "en": "Berlin Defense, Rosenthal Variation"
+      },
+      "eco": "C67",
+      "opening": "Ruy Lopez: Berlin Defense, Rosenthal Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "Nxe4", "d4", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d7cb323372eb872f",
+      "names": {
+        "en": "Berlin Defense, Improved Steinitz Defense"
+      },
+      "eco": "C66",
+      "opening": "Ruy Lopez: Berlin Defense, Improved Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a2dd31a076a1c9fa",
+      "names": {
+        "en": "Berlin Defense, Hedgehog Variation"
+      },
+      "eco": "C66",
+      "opening": "Ruy Lopez: Berlin Defense, Hedgehog Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "d6", "d4", "Bd7", "Nc3", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a8882687ec68c025",
+      "names": {
+        "en": "Berlin Defense, Closed Bernstein Variation"
+      },
+      "eco": "C66",
+      "opening": "Ruy Lopez: Berlin Defense, Closed Bernstein Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "d6", "d4", "Bd7", "Nc3", "Be7", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-42cf3e72fd1d5ff8",
+      "names": {
+        "en": "Berlin Defense, Closed Showalter Variation"
+      },
+      "eco": "C66",
+      "opening": "Ruy Lopez: Berlin Defense, Closed Showalter Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "d6", "d4", "Bd7", "Nc3", "Be7", "Bxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c6b219645bfb7159",
+      "names": {
+        "en": "Berlin Defense, Closed Wolf Variation"
+      },
+      "eco": "C66",
+      "opening": "Ruy Lopez: Berlin Defense, Closed Wolf Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "d6", "d4", "Bd7", "Nc3", "exd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-296019e5018aeab3",
+      "names": {
+        "en": "Closed Berlin Defense, Chigorin Variation"
+      },
+      "eco": "C66",
+      "opening": "Ruy Lopez: Closed Berlin Defense, Chigorin Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O", "d6", "d4", "Nd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1886930d27307c2e",
+      "names": {
+        "en": "Berlin Defense, Anti-Berlin Variation"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8e578c46c553f76c",
+      "names": {
+        "en": "Berlin Defense, Anti-Berlin Variation, Kaufmann Variation"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Kaufmann Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "d3", "Bc5", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6a6239e97d542f8e",
+      "names": {
+        "en": "Berlin Defense, Anti-Berlin Variation, Mortimer Variation"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "d3", "Ne7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-31d093c8a4a5da7a",
+      "names": {
+        "en": "Berlin Defense, Anti-Berlin Variation, Mortimer Trap"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Trap",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "d3", "Ne7", "Nxe5", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-db476f1f9d91dfb0",
+      "names": {
+        "en": "Berlin Defense, Anti-Berlin Variation, Anderssen Variation"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Anderssen Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "d3", "d6", "Bxc6+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e65c02484aef0c4e",
+      "names": {
+        "en": "Berlin Defense, Anti-Berlin Variation, Duras Variation"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Duras Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "d3", "d6", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-22ae7863ebf08c33",
+      "names": {
+        "en": "Berlin Defense, Nyholm Attack"
+      },
+      "eco": "C65",
+      "opening": "Ruy Lopez: Berlin Defense, Nyholm Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "d4", "exd4", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-78407c3a2ab1ab69",
+      "names": {
+        "en": "Cozio Defense"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Cozio Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nge7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-65912bca3259096f",
+      "names": {
+        "en": "Cozio Defense, Paulsen Variation"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nge7", "Nc3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-396ccafe7ff71d8c",
+      "names": {
+        "en": "Vinogradov Variation"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Vinogradov Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-56e59508c479de89",
+      "names": {
+        "en": "Bulgarian Variation"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Bulgarian Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7694e37aa6d77e2a",
+      "names": {
+        "en": "Morphy Defense"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ac5f8b63c3845e25",
+      "names": {
+        "en": "Morphy Defense, Alapin's Defense Deferred"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense, Alapin's Defense Deferred",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Bb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ac4f5cd72b881ef9",
+      "names": {
+        "en": "Morphy Defense, Classical Defense Deferred"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-74109eb30b193387",
+      "names": {
+        "en": "Bird's Defense Deferred"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Bird's Defense Deferred",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-11dbadfafd24145b",
+      "names": {
+        "en": "Morphy Defense, Bayreuth Variation"
+      },
+      "eco": "C77",
+      "opening": "Ruy Lopez: Morphy Defense, Bayreuth Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "Bxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-510658f515dc9c4c",
+      "names": {
+        "en": "Morphy Defense, Tarrasch Variation"
+      },
+      "eco": "C77",
+      "opening": "Ruy Lopez: Morphy Defense, Tarrasch Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-58b46394d2881882",
+      "names": {
+        "en": "Morphy Defense"
+      },
+      "eco": "C78",
+      "opening": "Ruy Lopez: Morphy Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c99cda672147aca4",
+      "names": {
+        "en": "Morphy Defense, Møller Variation"
+      },
+      "eco": "C78",
+      "opening": "Ruy Lopez: Morphy Defense, Møller Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3f3540fa42ef5a7b",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "C84",
+      "opening": "Ruy Lopez: Closed",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-89735a36d5f9ec7c",
+      "names": {
+        "en": "Closed, Delayed Exchange"
+      },
+      "eco": "C85",
+      "opening": "Ruy Lopez: Closed, Delayed Exchange",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Bxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-999272ac886d1fb5",
+      "names": {
+        "en": "Closed, Morphy Attack"
+      },
+      "eco": "C84",
+      "opening": "Ruy Lopez: Closed, Morphy Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-64c7232d400e8d6c",
+      "names": {
+        "en": "Closed, Worrall Attack"
+      },
+      "eco": "C86",
+      "opening": "Ruy Lopez: Closed, Worrall Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2cf2201c783b3b0c",
+      "names": {
+        "en": "Closed, Worrall Attack, Castling Line"
+      },
+      "eco": "C86",
+      "opening": "Ruy Lopez: Closed, Worrall Attack, Castling Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Qe2", "b5", "Bb3", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9b8c2d3a1572f261",
+      "names": {
+        "en": "Closed, Worrall Attack, Delayed Castling Line"
+      },
+      "eco": "C86",
+      "opening": "Ruy Lopez: Closed, Worrall Attack, Delayed Castling Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Qe2", "b5", "Bb3", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-18703d8fe354de35",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "C88",
+      "opening": "Ruy Lopez: Closed",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1b07daa0add1dd84",
+      "names": {
+        "en": "Closed, Trajkovic Counterattack"
+      },
+      "eco": "C88",
+      "opening": "Ruy Lopez: Closed, Trajkovic Counterattack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "Bb7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a7cc431c9b9ebb88",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "C88",
+      "opening": "Ruy Lopez: Closed",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-81ad67541b3f6883",
+      "names": {
+        "en": "Closed, Anti-Marshall"
+      },
+      "eco": "C88",
+      "opening": "Ruy Lopez: Closed, Anti-Marshall",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "a4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0ac40f6cd2474284",
+      "names": {
+        "en": "Marshall Attack"
+      },
+      "eco": "C89",
+      "opening": "Ruy Lopez: Marshall Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "c3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-125882289d4357e5",
+      "names": {
+        "en": "Marshall Attack, Original Marshall Attack"
+      },
+      "eco": "C89",
+      "opening": "Ruy Lopez: Marshall Attack, Original Marshall Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "c3", "d5", "exd5", "Nxd5", "Nxe5", "Nxe5", "Rxe5", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a8d096c2e5c8d6ff",
+      "names": {
+        "en": "Marshall Attack, Modern Variation"
+      },
+      "eco": "C89",
+      "opening": "Ruy Lopez: Marshall Attack, Modern Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "c3", "d5", "exd5", "Nxd5", "Nxe5", "Nxe5", "Rxe5", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4df8ec8da76a6949",
+      "names": {
+        "en": "Marshall Attack, Re3 Variation"
+      },
+      "eco": "C89",
+      "opening": "Ruy Lopez: Marshall Attack, Re3 Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "c3", "d5", "exd5", "Nxd5", "Nxe5", "Nxe5", "Rxe5", "c6", "Bxd5", "cxd5", "d4", "Bd6", "Re3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b0959f61bcc4772e",
+      "names": {
+        "en": "Marshall Attack, Main Line"
+      },
+      "eco": "C89",
+      "opening": "Ruy Lopez: Marshall Attack, Main Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "c3", "d5", "exd5", "Nxd5", "Nxe5", "Nxe5", "Rxe5", "c6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b6a568f314e06745",
+      "names": {
+        "en": "Marshall Attack, Modern Main Line"
+      },
+      "eco": "C89",
+      "opening": "Ruy Lopez: Marshall Attack, Modern Main Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "c3", "d5", "exd5", "Nxd5", "Nxe5", "Nxe5", "Rxe5", "c6", "d4", "Bd6", "Re1", "Qh4", "g3", "Qh3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e4b8bbcb65e25180",
+      "names": {
+        "en": "Marshall Attack, Main Line, Spassky Variation"
+      },
+      "eco": "C89",
+      "opening": "Ruy Lopez: Marshall Attack, Main Line, Spassky Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "c3", "d5", "exd5", "Nxd5", "Nxe5", "Nxe5", "Rxe5", "c6", "d4", "Bd6", "Re1", "Qh4", "g3", "Qh3", "Be3", "Bg4", "Qd3", "Rae8", "Nd2", "Re6", "a4", "Qh5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-13b6dee010d4316a",
+      "names": {
+        "en": "Marshall Attack"
+      },
+      "eco": "C89",
+      "opening": "Ruy Lopez: Marshall Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "c3", "d5", "exd5", "Nxd5", "a4", "Bb7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-09885b7303d2071c",
+      "names": {
+        "en": "Marshall Attack, Steiner Variation"
+      },
+      "eco": "C89",
+      "opening": "Ruy Lopez: Marshall Attack, Steiner Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "c3", "d5", "exd5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4502a3d3c1b2e2cc",
+      "names": {
+        "en": "Closed, Pilnik Variation"
+      },
+      "eco": "C90",
+      "opening": "Ruy Lopez: Closed, Pilnik Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "O-O", "d3", "d6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2636247272818f2d",
+      "names": {
+        "en": "Closed, Alekhine Gambit"
+      },
+      "eco": "C88",
+      "opening": "Ruy Lopez: Closed, Alekhine Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "Na5", "Bc2", "c5", "d4", "Qc7", "Nbd2", "O-O", "Nf1", "Bg4", "Ne3", "Bxf3", "Qxf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7082dafa806cee21",
+      "names": {
+        "en": "Closed, Balla Variation"
+      },
+      "eco": "C88",
+      "opening": "Ruy Lopez: Closed, Balla Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "Na5", "Bc2", "c5", "d4", "Qc7", "a4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b0409d5fe6f777fa",
+      "names": {
+        "en": "Closed, Leonhardt Variation"
+      },
+      "eco": "C88",
+      "opening": "Ruy Lopez: Closed, Leonhardt Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "Na5", "Bc2", "c5", "d4", "Qc7", "h3", "Nc6", "d5", "Nb8", "Nbd2", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c685374e09fb967e",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "C90",
+      "opening": "Ruy Lopez: Closed",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4fa2e9fc47a99eb6",
+      "names": {
+        "en": "Closed, Lutikov Variation"
+      },
+      "eco": "C90",
+      "opening": "Ruy Lopez: Closed, Lutikov Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "Bc2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5680b357135b68b6",
+      "names": {
+        "en": "Closed, Suetin Variation"
+      },
+      "eco": "C90",
+      "opening": "Ruy Lopez: Closed, Suetin Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "a3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a80ea450be7596c1",
+      "names": {
+        "en": "Closed, Yates Variation"
+      },
+      "eco": "C91",
+      "opening": "Ruy Lopez: Closed, Yates Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6ce881ba65021351",
+      "names": {
+        "en": "Closed, Bogoljubow Variation"
+      },
+      "eco": "C91",
+      "opening": "Ruy Lopez: Closed, Bogoljubow Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "d4", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8abf6e611837b734",
+      "names": {
+        "en": "Closed, Yates Variation, Short Attack"
+      },
+      "eco": "C91",
+      "opening": "Ruy Lopez: Closed, Yates Variation, Short Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "d4", "Bg4", "a4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b62b77af4f042af9",
+      "names": {
+        "en": "Closed"
+      },
+      "eco": "C92",
+      "opening": "Ruy Lopez: Closed",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-23ebc72309ff0579",
+      "names": {
+        "en": "Closed, Flohr System"
+      },
+      "eco": "C92",
+      "opening": "Ruy Lopez: Closed, Flohr System",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Bb7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8838ee1fdc879ef0",
+      "names": {
+        "en": "Closed, Smyslov-Breyer-Zaitsev Hybrid"
+      },
+      "eco": "C92",
+      "opening": "Ruy Lopez: Closed, Smyslov-Breyer-Zaitsev Hybrid",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Bb7", "d4", "Re8", "Nbd2", "Bf8", "a3", "h6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1202c729194bb08e",
+      "names": {
+        "en": "Closed, Kholmov Variation"
+      },
+      "eco": "C92",
+      "opening": "Ruy Lopez: Closed, Kholmov Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Be6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-df53005459240c49",
+      "names": {
+        "en": "Closed, Chigorin Defense"
+      },
+      "eco": "C97",
+      "opening": "Ruy Lopez: Closed, Chigorin Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d3ba6bb50ca5a7ba",
+      "names": {
+        "en": "Closed, Chigorin Defense"
+      },
+      "eco": "C96",
+      "opening": "Ruy Lopez: Closed, Chigorin Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-06bc5a490d361857",
+      "names": {
+        "en": "Closed, Chigorin Defense"
+      },
+      "eco": "C96",
+      "opening": "Ruy Lopez: Closed, Chigorin Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3a0e661379ece5d1",
+      "names": {
+        "en": "Closed, Borisenko Variation"
+      },
+      "eco": "C96",
+      "opening": "Ruy Lopez: Closed, Borisenko Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2", "c5", "d4", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1f912eb103a13159",
+      "names": {
+        "en": "Closed, Keres Defense"
+      },
+      "eco": "C96",
+      "opening": "Ruy Lopez: Closed, Keres Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2", "c5", "d4", "Nd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0f0ed02de62e9f32",
+      "names": {
+        "en": "Closed, Chigorin Defense"
+      },
+      "eco": "C97",
+      "opening": "Ruy Lopez: Closed, Chigorin Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2", "c5", "d4", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b578fbb7df0b346b",
+      "names": {
+        "en": "Closed, Chigorin, Yugoslav System"
+      },
+      "eco": "C97",
+      "opening": "Ruy Lopez: Closed, Chigorin, Yugoslav System",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2", "c5", "d4", "Qc7", "Nbd2", "Bd7", "Nf1", "Rfe8", "Ne3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ba21d7c70b918801",
+      "names": {
+        "en": "Closed, Chigorin Defense"
+      },
+      "eco": "C98",
+      "opening": "Ruy Lopez: Closed, Chigorin Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2", "c5", "d4", "Qc7", "Nbd2", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2f758e40e6ee6846",
+      "names": {
+        "en": "Closed, Chigorin Defense"
+      },
+      "eco": "C98",
+      "opening": "Ruy Lopez: Closed, Chigorin Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2", "c5", "d4", "Qc7", "Nbd2", "Nc6", "dxc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a922d104b9aa29a2",
+      "names": {
+        "en": "Closed, Chigorin Defense, Panov System"
+      },
+      "eco": "C99",
+      "opening": "Ruy Lopez: Closed, Chigorin Defense, Panov System",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2", "c5", "d4", "Qc7", "Nbd2", "cxd4", "cxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8ffbaedee3a33de8",
+      "names": {
+        "en": "Closed, Rossolimo Defense"
+      },
+      "eco": "C96",
+      "opening": "Ruy Lopez: Closed, Rossolimo Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2", "c6", "d4", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-79789d8871b0a889",
+      "names": {
+        "en": "Closed, Chigorin Defense, Gajewski Gambit"
+      },
+      "eco": "C96",
+      "opening": "Ruy Lopez: Closed, Chigorin Defense, Gajewski Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Na5", "Bc2", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-704180f76a165d03",
+      "names": {
+        "en": "Closed, Breyer Defense"
+      },
+      "eco": "C94",
+      "opening": "Ruy Lopez: Closed, Breyer Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Nb8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e9eceb8f9bb4b5c5",
+      "names": {
+        "en": "Closed, Breyer Defense, Quiet Variation"
+      },
+      "eco": "C94",
+      "opening": "Ruy Lopez: Closed, Breyer Defense, Quiet Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Nb8", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b20a1376d189a79a",
+      "names": {
+        "en": "Closed, Breyer"
+      },
+      "eco": "C95",
+      "opening": "Ruy Lopez: Closed, Breyer",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Nb8", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6d49440d5674a4cf",
+      "names": {
+        "en": "Closed, Breyer Defense, Zaitsev Hybrid"
+      },
+      "eco": "C95",
+      "opening": "Ruy Lopez: Closed, Breyer Defense, Zaitsev Hybrid",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Nb8", "d4", "Nbd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e850eca6576bb3aa",
+      "names": {
+        "en": "Closed, Breyer Defense"
+      },
+      "eco": "C95",
+      "opening": "Ruy Lopez: Closed, Breyer Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Nb8", "d4", "Nbd7", "Nbd2", "Bb7", "Bc2", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-af0637b556a15bc9",
+      "names": {
+        "en": "Closed, Breyer Defense"
+      },
+      "eco": "C95",
+      "opening": "Ruy Lopez: Closed, Breyer Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Nb8", "d4", "Nbd7", "Nh4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-65babb83dee24db8",
+      "names": {
+        "en": "Closed, Karpov Variation"
+      },
+      "eco": "C92",
+      "opening": "Ruy Lopez: Closed, Karpov Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Nd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ab1f87ddf854e99d",
+      "names": {
+        "en": "Closed, Zaitsev System"
+      },
+      "eco": "C92",
+      "opening": "Ruy Lopez: Closed, Zaitsev System",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "Re8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-222b481593f84150",
+      "names": {
+        "en": "Closed, Smyslov Defense"
+      },
+      "eco": "C93",
+      "opening": "Ruy Lopez: Closed, Smyslov Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "c3", "O-O", "h3", "h6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3229e5dc159cb9b9",
+      "names": {
+        "en": "Closed, Rosen Attack"
+      },
+      "eco": "C88",
+      "opening": "Ruy Lopez: Closed, Rosen Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-387c9af308b48a08",
+      "names": {
+        "en": "Noah's Ark Trap"
+      },
+      "eco": "C88",
+      "opening": "Ruy Lopez: Noah's Ark Trap",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "b5", "Bb3", "d6", "d4", "Nxd4", "Nxd4", "exd4", "Qxd4", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ea9138d5db8569ee",
+      "names": {
+        "en": "Closed, Averbakh Variation"
+      },
+      "eco": "C87",
+      "opening": "Ruy Lopez: Closed, Averbakh Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "Re1", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8cf0cb7736c2c8fe",
+      "names": {
+        "en": "Closed, Martinez Variation"
+      },
+      "eco": "C84",
+      "opening": "Ruy Lopez: Closed, Martinez Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ff71cfab9930c890",
+      "names": {
+        "en": "Closed, Center Attack"
+      },
+      "eco": "C84",
+      "opening": "Ruy Lopez: Closed, Center Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c60fcd41c679e997",
+      "names": {
+        "en": "Closed, Basque Gambit"
+      },
+      "eco": "C84",
+      "opening": "Ruy Lopez: Closed, Basque Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "d4", "exd4", "e5", "Ne4", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-16cec16153b874c5",
+      "names": {
+        "en": "Closed, Center Attack, Basque Gambit"
+      },
+      "eco": "C84",
+      "opening": "Ruy Lopez: Closed, Center Attack, Basque Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7", "d4", "exd4", "e5", "Ne4", "c3", "dxc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-660e0f3a81b21119",
+      "names": {
+        "en": "Open"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d024056cc5e9c0ac",
+      "names": {
+        "en": "Open, Knorre Variation"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Knorre Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ee6fb319de5ecf65",
+      "names": {
+        "en": "Morphy Defense, Tartakower Variation"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Morphy Defense, Tartakower Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c1ad1353be9d695f",
+      "names": {
+        "en": "Open, Skipworth Gambit"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Skipworth Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "Re1", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9e9bacecf6eee5bf",
+      "names": {
+        "en": "Open"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-42e4926f557a049a",
+      "names": {
+        "en": "Open, Classical Defense, Main Line"
+      },
+      "eco": "C83",
+      "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "Be7", "Re1", "b5", "Bb3", "d5", "dxe5", "Be6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-46c66e3be4dd0d7c",
+      "names": {
+        "en": "Open"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-68670a40f18b9d7a",
+      "names": {
+        "en": "Open, Schlechter Defense"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Schlechter Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "a4", "Nxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-38bd4dded28756a4",
+      "names": {
+        "en": "Open, Berger Variation"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Berger Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "a4", "Nxd4", "Nxd4", "exd4", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c3fe2ab7fc36838f",
+      "names": {
+        "en": "Open, Harksen Gambit"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Harksen Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f2b81bc1c16f6d75",
+      "names": {
+        "en": "Open"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e0ab2e66f5a7b0c3",
+      "names": {
+        "en": "Open, Main Line"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Main Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e82907b69235cd66",
+      "names": {
+        "en": "Open, Bernstein Variation"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Bernstein Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-622f5473ad07e88d",
+      "names": {
+        "en": "Open, Bernstein Variation, Luther Line"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Bernstein Variation, Luther Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "Nbd2", "Bc5", "Qe1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f036f1164592eaf2",
+      "names": {
+        "en": "Open, Classical Defense"
+      },
+      "eco": "C83",
+      "opening": "Ruy Lopez: Open, Classical Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "Nbd2", "Nc5", "c3", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-198f31c4294e9731",
+      "names": {
+        "en": "Open, Karpov Gambit"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Karpov Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "Nbd2", "Nc5", "c3", "d4", "Ng5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-87b35fb2144613d6",
+      "names": {
+        "en": "Open, Howell Attack"
+      },
+      "eco": "C81",
+      "opening": "Ruy Lopez: Open, Howell Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e27dc0e6345433b9",
+      "names": {
+        "en": "Open, Howell Attack, Ekstrom Variation"
+      },
+      "eco": "C81",
+      "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "Qe2", "Be7", "Rd1", "O-O", "c4", "bxc4", "Bxc4", "Qd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bca9874fe1b3de61",
+      "names": {
+        "en": "Open, Howell Attack"
+      },
+      "eco": "C81",
+      "opening": "Ruy Lopez: Open, Howell Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "Qe2", "Be7", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4b5a12f34bd1cc15",
+      "names": {
+        "en": "Open"
+      },
+      "eco": "C82",
+      "opening": "Ruy Lopez: Open",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ecce1d332c763b16",
+      "names": {
+        "en": "Open, Italian Variation"
+      },
+      "eco": "C82",
+      "opening": "Ruy Lopez: Open, Italian Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9487abc74a6eaa7b",
+      "names": {
+        "en": "Open, St. Petersburg Variation"
+      },
+      "eco": "C82",
+      "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3", "Bc5", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5cdffb1dbd83195a",
+      "names": {
+        "en": "Open, Dilworth Variation"
+      },
+      "eco": "C82",
+      "opening": "Ruy Lopez: Open, Dilworth Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3", "Bc5", "Nbd2", "O-O", "Bc2", "Nxf2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b1c742cd77a1896f",
+      "names": {
+        "en": "Open, Motzko Attack"
+      },
+      "eco": "C82",
+      "opening": "Ruy Lopez: Open, Motzko Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3", "Bc5", "Qd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b00d71731fd0d8c8",
+      "names": {
+        "en": "Open, Motzko Attack, Nenarokov Variation"
+      },
+      "eco": "C82",
+      "opening": "Ruy Lopez: Open, Motzko Attack, Nenarokov Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3", "Bc5", "Qd3", "Ne7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-714c796bfabf88b0",
+      "names": {
+        "en": "Open, Classical Defense"
+      },
+      "eco": "C83",
+      "opening": "Ruy Lopez: Open, Classical Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-36972ac430a54bd3",
+      "names": {
+        "en": "Open, Malkin Variation"
+      },
+      "eco": "C83",
+      "opening": "Ruy Lopez: Open, Malkin Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3", "Be7", "Nbd2", "O-O", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-246bb578f757a54c",
+      "names": {
+        "en": "Open, Breslau Variation"
+      },
+      "eco": "C83",
+      "opening": "Ruy Lopez: Open, Breslau Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3", "Be7", "Re1", "O-O", "Nd4", "Nxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-53734803ebc085be",
+      "names": {
+        "en": "Open, Tarrasch Trap"
+      },
+      "eco": "C83",
+      "opening": "Ruy Lopez: Open, Tarrasch Trap",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3", "Be7", "Re1", "O-O", "Nd4", "Qd7", "Nxe6", "fxe6", "Rxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9a968b42a2126680",
+      "names": {
+        "en": "Open, Berlin Variation"
+      },
+      "eco": "C82",
+      "opening": "Ruy Lopez: Open, Berlin Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Be6", "c3", "Nc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-753d877a5a2f453b",
+      "names": {
+        "en": "Open, Zukertort Variation"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Zukertort Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Bb3", "d5", "dxe5", "Ne7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fc5e440567971999",
+      "names": {
+        "en": "Open, Friess Attack"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Friess Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "Nxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-751f6eda0cc367ce",
+      "names": {
+        "en": "Open, Richter Variation"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Richter Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "b5", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-881e937cb90d5b87",
+      "names": {
+        "en": "Open, Riga Variation"
+      },
+      "eco": "C80",
+      "opening": "Ruy Lopez: Open, Riga Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Nxe4", "d4", "exd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-66cd20fbaacaf3ee",
+      "names": {
+        "en": "Morphy Defense, Arkhangelsk Variation"
+      },
+      "eco": "C78",
+      "opening": "Ruy Lopez: Morphy Defense, Arkhangelsk Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "b5", "Bb3", "Bb7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1d6c7995b508fa25",
+      "names": {
+        "en": "Morphy Defense, Neo-Arkhangelsk Variation"
+      },
+      "eco": "C78",
+      "opening": "Ruy Lopez: Morphy Defense, Neo-Arkhangelsk Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "b5", "Bb3", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5f2413875530f0af",
+      "names": {
+        "en": "Morphy Defense, Wing Attack"
+      },
+      "eco": "C78",
+      "opening": "Ruy Lopez: Morphy Defense, Wing Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "b5", "Bb3", "Be7", "a4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6bb7cc0f35ab0feb",
+      "names": {
+        "en": "Morphy Defense"
+      },
+      "eco": "C78",
+      "opening": "Ruy Lopez: Morphy Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "b5", "Bb3", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c07770578d5d96e2",
+      "names": {
+        "en": "Rabinovich Variation"
+      },
+      "eco": "C78",
+      "opening": "Ruy Lopez: Rabinovich Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "b5", "Bb3", "d6", "Ng5", "d5", "exd5", "Nd4", "Re1", "Bc5", "Rxe5+", "Kf8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-14bee417e16997f0",
+      "names": {
+        "en": "Central Countergambit"
+      },
+      "eco": "C78",
+      "opening": "Ruy Lopez: Central Countergambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7cb2d9c690bf6562",
+      "names": {
+        "en": "Morphy Defense, Steinitz Deferred"
+      },
+      "eco": "C79",
+      "opening": "Ruy Lopez: Morphy Defense, Steinitz Deferred",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fa2a91c2cdf538b3",
+      "names": {
+        "en": "Steinitz Defense Deferred, Lipnitsky Variation"
+      },
+      "eco": "C79",
+      "opening": "Ruy Lopez: Steinitz Defense Deferred, Lipnitsky Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "d6", "Bxc6+", "bxc6", "d4", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-db6832e83c0bc554",
+      "names": {
+        "en": "Morphy Defense, Steinitz Deferred"
+      },
+      "eco": "C79",
+      "opening": "Ruy Lopez: Morphy Defense, Steinitz Deferred",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "d6", "Bxc6+", "bxc6", "d4", "Nxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-863dca0a50b96c9e",
+      "names": {
+        "en": "Steinitz Defense Deferred, Boleslavsky Variation"
+      },
+      "eco": "C79",
+      "opening": "Ruy Lopez: Steinitz Defense Deferred, Boleslavsky Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "d6", "Bxc6+", "bxc6", "d4", "Nxe4", "Re1", "f5", "dxe5", "d5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9a444cb581d2e1b7",
+      "names": {
+        "en": "Brix Variation"
+      },
+      "eco": "C78",
+      "opening": "Ruy Lopez: Brix Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-652b8baad3bb7391",
+      "names": {
+        "en": "Morphy Defense, Wormald Attack"
+      },
+      "eco": "C77",
+      "opening": "Ruy Lopez: Morphy Defense, Wormald Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6b4e5467d061a063",
+      "names": {
+        "en": "Closed, Worrall Attack, Castling Line"
+      },
+      "eco": "C86",
+      "opening": "Ruy Lopez: Closed, Worrall Attack, Castling Line",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "Qe2", "Be7", "O-O", "b5", "Bb3", "O-O", "c3", "d5", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-05fa00418f9b1e40",
+      "names": {
+        "en": "Wormald Attack, Grünfeld Variation"
+      },
+      "eco": "C77",
+      "opening": "Ruy Lopez: Wormald Attack, Grünfeld Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "Qe2", "b5", "Bb3", "Be7", "d4", "d6", "c3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-146ce55015d77673",
+      "names": {
+        "en": "Morphy Defense, Jaffe Gambit"
+      },
+      "eco": "C77",
+      "opening": "Ruy Lopez: Morphy Defense, Jaffe Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c57ef8f929b7be75",
+      "names": {
+        "en": "Morphy Defense, Anderssen Variation"
+      },
+      "eco": "C77",
+      "opening": "Ruy Lopez: Morphy Defense, Anderssen Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7c5b163769e9fb47",
+      "names": {
+        "en": "Morphy Defense, Duras Variation"
+      },
+      "eco": "C77",
+      "opening": "Ruy Lopez: Morphy Defense, Duras Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "d3", "d6", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a5d7d33ca9d2451c",
+      "names": {
+        "en": "Morphy Defense, Mackenzie Variation"
+      },
+      "eco": "C77",
+      "opening": "Ruy Lopez: Morphy Defense, Mackenzie Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9e69f4c554e8f537",
+      "names": {
+        "en": "Morphy Defense, Cozio Defense"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense, Cozio Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nge7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2c6646bfeabff013",
+      "names": {
+        "en": "Morphy Defense, Caro Variation"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense, Caro Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9737e9e10931699d",
+      "names": {
+        "en": "Morphy Defense, Graz Variation"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense, Graz Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "b5", "Bb3", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-125c4b7f362147da",
+      "names": {
+        "en": "Morphy Defense, Norwegian Variation"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense, Norwegian Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "b5", "Bb3", "Na5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8db66a6d927298fc",
+      "names": {
+        "en": "Morphy Defense, Norwegian Variation, Nightingale Gambit"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense, Norwegian Variation, Nightingale Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "b5", "Bb3", "Na5", "Bxf7+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-904794c31a2b3ee0",
+      "names": {
+        "en": "Noah's Ark Trap"
+      },
+      "eco": "C71",
+      "opening": "Ruy Lopez: Noah's Ark Trap",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "b5", "Bb3", "d6", "d4", "Nxd4", "Nxd4", "exd4", "Qxd4", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2b5ab2b835ea3afb",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense"
+      },
+      "eco": "C71",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f537d49a67130429",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense"
+      },
+      "eco": "C73",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "Bxc6+", "bxc6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9ee323942a478936",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense"
+      },
+      "eco": "C73",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "Bxc6+", "bxc6", "d4", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9b8a78aafc6311d4",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense"
+      },
+      "eco": "C71",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7a18eb3ff3fe214e",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense"
+      },
+      "eco": "C72",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f00ad6f80cfb09f9",
+      "names": {
+        "en": "Closed, Kecskemet Variation"
+      },
+      "eco": "C72",
+      "opening": "Ruy Lopez: Closed, Kecskemet Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "O-O", "Bd7", "c3", "Nf6", "d4", "Be7", "Nbd2", "O-O", "Re1", "Be8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-566ab5beaf8f94bc",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense"
+      },
+      "eco": "C74",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-63874646f4f93697",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense"
+      },
+      "eco": "C75",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "c3", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2f0f1347cf21919b",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense"
+      },
+      "eco": "C75",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "c3", "Bd7", "d4", "Nge7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-47d9c5450ad5d899",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense, Siesta Variation"
+      },
+      "eco": "C74",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Siesta Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "c3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2b4e3390110d15bd",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense"
+      },
+      "eco": "C74",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "c3", "f5", "exf5", "Bxf5", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0a76074533feb1f3",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense"
+      },
+      "eco": "C71",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "d6", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a2bc97d0c02c63a3",
+      "names": {
+        "en": "Morphy Defense, Schliemann Defense Deferred"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-735fa5df05554b8e",
+      "names": {
+        "en": "Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "f5", "exf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2101e1c05ad1f91d",
+      "names": {
+        "en": "Morphy Defense, Fianchetto Defense Deferred"
+      },
+      "eco": "C70",
+      "opening": "Ruy Lopez: Morphy Defense, Fianchetto Defense Deferred",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0c13be423df4fa32",
+      "names": {
+        "en": "Exchange Variation"
+      },
+      "eco": "C68",
+      "opening": "Ruy Lopez: Exchange Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-42652e4184b54d38",
+      "names": {
+        "en": "Exchange Variation, Lutikov Variation"
+      },
+      "eco": "C68",
+      "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6", "bxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7727d818c9907fdc",
+      "names": {
+        "en": "Exchange Variation, Keres Variation"
+      },
+      "eco": "C68",
+      "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6", "dxc6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e4c2100f8bef8352",
+      "names": {
+        "en": "Exchange Variation, Romanovsky Variation"
+      },
+      "eco": "C68",
+      "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6", "dxc6", "Nc3", "f6", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-20bb13a537f4e8db",
+      "names": {
+        "en": "Exchange Variation, Normal Variation"
+      },
+      "eco": "C69",
+      "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6", "dxc6", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-568f05c7ccbc5261",
+      "names": {
+        "en": "Exchange Variation, King's Bishop Variation"
+      },
+      "eco": "C69",
+      "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6", "dxc6", "O-O", "Bd6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b232930b37b39931",
+      "names": {
+        "en": "Exchange Variation, Alapin Gambit"
+      },
+      "eco": "C69",
+      "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6", "dxc6", "O-O", "Bg4", "h3", "h5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-53108c58002f1ddc",
+      "names": {
+        "en": "Exchange Variation, Bronstein Variation"
+      },
+      "eco": "C69",
+      "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6", "dxc6", "O-O", "Qd6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e938edc3b0bf3b98",
+      "names": {
+        "en": "Exchange Variation, Gligoric Variation"
+      },
+      "eco": "C69",
+      "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6", "dxc6", "O-O", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7cc78f26e97adb8e",
+      "names": {
+        "en": "Exchange Variation, Alekhine Variation"
+      },
+      "eco": "C68",
+      "opening": "Ruy Lopez: Exchange Variation, Alekhine Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6", "dxc6", "d4", "exd4", "Qxd4", "Qxd4", "Nxd4", "Bd6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-91fdc3aed78445c6",
+      "names": {
+        "en": "Exchange, Alekhine Variation"
+      },
+      "eco": "C68",
+      "opening": "Ruy Lopez: Exchange, Alekhine Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6", "dxc6", "d4", "exd4", "Qxd4", "Qxd4", "Nxd4", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cd11345b74785228",
+      "names": {
+        "en": "Rotary-Albany Gambit"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Rotary-Albany Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5a29ab01ec15feeb",
+      "names": {
+        "en": "Spanish Countergambit"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Spanish Countergambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e565b8fb96f98de",
+      "names": {
+        "en": "Spanish Countergambit, Harding Gambit"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "d5", "Nxe5", "Qg5", "Nxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-615bf8908165734e",
+      "names": {
+        "en": "Spanish Countergambit, Harding Countergambit, Fricke Gambit"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "d5", "Nxe5", "Qg5", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-506868479455960c",
+      "names": {
+        "en": "Steinitz Defense"
+      },
+      "eco": "C62",
+      "opening": "Ruy Lopez: Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e77a1bf43fc42202",
+      "names": {
+        "en": "Steinitz Defense"
+      },
+      "eco": "C62",
+      "opening": "Ruy Lopez: Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "d6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5f6bd1ac1bd7b8f7",
+      "names": {
+        "en": "Steinitz Defense, Nimzowitsch Attack"
+      },
+      "eco": "C62",
+      "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "d6", "d4", "Bd7", "Nc3", "Nf6", "Bxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-04d479440747f624",
+      "names": {
+        "en": "Berlin Defense, Tarrasch Trap"
+      },
+      "eco": "C66",
+      "opening": "Ruy Lopez: Berlin Defense, Tarrasch Trap",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "d6", "d4", "Bd7", "Nc3", "Nf6", "O-O", "Be7", "Re1", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b4581d791e68128e",
+      "names": {
+        "en": "Steinitz Defense, Semi-Duras Variation"
+      },
+      "eco": "C62",
+      "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "d6", "d4", "Bd7", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3e86f2f484523000",
+      "names": {
+        "en": "Steinitz Defense, Center Gambit"
+      },
+      "eco": "C62",
+      "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "d6", "d4", "exd4", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8ad0a1f809d33e09",
+      "names": {
+        "en": "Schliemann Defense"
+      },
+      "eco": "C63",
+      "opening": "Ruy Lopez: Schliemann Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5afda458b06d7331",
+      "names": {
+        "en": "Schliemann Defense, Exchange Variation"
+      },
+      "eco": "C63",
+      "opening": "Ruy Lopez: Schliemann Defense, Exchange Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "f5", "Bxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c08b3b3040b8b47a",
+      "names": {
+        "en": "Schliemann Defense, Dyckhoff Variation"
+      },
+      "eco": "C63",
+      "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "f5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-466b96f7cb4dad9e",
+      "names": {
+        "en": "Schliemann Defense, Kostić Defense"
+      },
+      "eco": "C63",
+      "opening": "Ruy Lopez: Schliemann Defense, Kostić Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "f5", "Nc3", "fxe4", "Nxe4", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2711f9d667cb8fb3",
+      "names": {
+        "en": "Schliemann Defense, Tartakower Variation"
+      },
+      "eco": "C63",
+      "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "f5", "Nc3", "fxe4", "Nxe4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1cd62eda2ad8d62c",
+      "names": {
+        "en": "Schliemann Defense, Möhring Variation"
+      },
+      "eco": "C63",
+      "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "f5", "Nc3", "fxe4", "Nxe4", "d5", "Nxe5", "dxe4", "Nxc6", "Qd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2f458b01e20763ea",
+      "names": {
+        "en": "Schliemann Defense, Classical Variation"
+      },
+      "eco": "C63",
+      "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "f5", "Nc3", "fxe4", "Nxe4", "d5", "Nxe5", "dxe4", "Nxc6", "Qg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b2d6c8af845dc4be",
+      "names": {
+        "en": "Schliemann Defense, Schönemann Attack"
+      },
+      "eco": "C63",
+      "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "f5", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-33dde00120f356d2",
+      "names": {
+        "en": "Schliemann Defense, Jaenisch Gambit Accepted"
+      },
+      "eco": "C63",
+      "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "f5", "exf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-66ecccb7ef4512fe",
+      "names": {
+        "en": "Nürnberg Variation"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Nürnberg Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-502f2c9dd4295bb5",
+      "names": {
+        "en": "Brentano Gambit"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Brentano Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8f8f0895a53bf3ca",
+      "names": {
+        "en": "Fianchetto Defense"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Fianchetto Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a4dd9b3e242d82b6",
+      "names": {
+        "en": "Morphy Defense, Modern Steinitz Defense, Fianchetto Variation"
+      },
+      "eco": "C76",
+      "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Fianchetto Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "g6", "c3", "a6", "Ba4", "d6", "d4", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1413a12a07e08f72",
+      "names": {
+        "en": "Fianchetto Defense, Kevitz Gambit"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "g6", "c3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9ec9e7971934d289",
+      "names": {
+        "en": "Cozio Defense, Tartakower Gambit"
+      },
+      "eco": "C60",
+      "opening": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "g6", "d4", "exd4", "Nxd4", "Bg7", "Be3", "Nge7", "Nc3", "O-O", "Qd2", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

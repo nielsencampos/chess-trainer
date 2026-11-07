@@ -1,0 +1,48 @@
+{
+  "id": "elephant-gambit",
+  "names": {
+    "en": "Elephant Gambit"
+  },
+  "lines": [
+    {
+      "id": "line-c6097c13f222f06c",
+      "names": {
+        "en": "Elephant Gambit"
+      },
+      "eco": "C40",
+      "opening": "Elephant Gambit",
+      "moves": ["e4", "e5", "Nf3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-53ab54a9265a5238",
+      "names": {
+        "en": "Wasp Variation"
+      },
+      "eco": "C40",
+      "opening": "Elephant Gambit: Wasp Variation",
+      "moves": ["e4", "e5", "Nf3", "d5", "Nxe5", "dxe4", "Bc4", "Qg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4947be00e4676113",
+      "names": {
+        "en": "Maróczy Gambit"
+      },
+      "eco": "C40",
+      "opening": "Elephant Gambit: Maróczy Gambit",
+      "moves": ["e4", "e5", "Nf3", "d5", "exd5", "Bd6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-80ea65eefe55a7ed",
+      "names": {
+        "en": "Paulsen Countergambit"
+      },
+      "eco": "C40",
+      "opening": "Elephant Gambit: Paulsen Countergambit",
+      "moves": ["e4", "e5", "Nf3", "d5", "exd5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

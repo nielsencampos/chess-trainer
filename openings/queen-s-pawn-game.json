@@ -1,0 +1,828 @@
+{
+  "id": "queen-s-pawn-game",
+  "names": {
+    "en": "Queen's Pawn Game"
+  },
+  "lines": [
+    {
+      "id": "line-71a9d3305ffbc915",
+      "names": {
+        "en": "Anti-Torre"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Anti-Torre",
+      "moves": ["Nf3", "d5", "d4", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dee2695a1f198a6d",
+      "names": {
+        "en": "Symmetrical Variation, Pseudo-Catalan"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Symmetrical Variation, Pseudo-Catalan",
+      "moves": ["Nf3", "d5", "g3", "c6", "Bg2", "Nf6", "O-O", "Bg4", "d4", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1195e12519b16c17",
+      "names": {
+        "en": "Queen's Pawn Game"
+      },
+      "eco": "A40",
+      "opening": "Queen's Pawn Game",
+      "moves": ["d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f390d1b3824a01f1",
+      "names": {
+        "en": "Chigorin Variation"
+      },
+      "eco": "A45",
+      "opening": "Queen's Pawn Game: Chigorin Variation",
+      "moves": ["d4", "Nf6", "Nc3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-15cd31189558865d",
+      "names": {
+        "en": "Hübsch Gambit"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Hübsch Gambit",
+      "moves": ["d4", "Nf6", "Nc3", "d5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0ef1d002dce5f4ac",
+      "names": {
+        "en": "Torre Attack, Breyer Variation"
+      },
+      "eco": "A46",
+      "opening": "Queen's Pawn Game: Torre Attack, Breyer Variation",
+      "moves": ["d4", "Nf6", "Nf3", "e6", "Bg5", "d5", "e3", "c5", "c3", "Qb6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7952ceb25dff7d3c",
+      "names": {
+        "en": "Veresov Attack, Classical Defense"
+      },
+      "eco": "A46",
+      "opening": "Queen's Pawn Game: Veresov Attack, Classical Defense",
+      "moves": ["d4", "Nf6", "Nf3", "e6", "Nc3", "d5", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6da73b1de6b914be",
+      "names": {
+        "en": "Colle System"
+      },
+      "eco": "D05",
+      "opening": "Queen's Pawn Game: Colle System",
+      "moves": ["d4", "Nf6", "Nf3", "e6", "e3", "b6", "Bd3", "Bb7", "O-O", "c5", "b3", "Be7", "Bb2", "O-O", "Nbd2", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f667e420b45a2799",
+      "names": {
+        "en": "Colle System, Traditional Colle"
+      },
+      "eco": "D05",
+      "opening": "Queen's Pawn Game: Colle System, Traditional Colle",
+      "moves": ["d4", "Nf6", "Nf3", "e6", "e3", "c5", "Bd3", "d5", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-18ae500077e9afc3",
+      "names": {
+        "en": "Torre Attack, Grünfeld Variation, Main Line"
+      },
+      "eco": "A48",
+      "opening": "Queen's Pawn Game: Torre Attack, Grünfeld Variation, Main Line",
+      "moves": ["d4", "Nf6", "Nf3", "g6", "Bg5", "Bg7", "Nbd2", "d5", "e3", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-65742a17c88a4cf1",
+      "names": {
+        "en": "Barry Attack"
+      },
+      "eco": "A48",
+      "opening": "Queen's Pawn Game: Barry Attack",
+      "moves": ["d4", "Nf6", "Nf3", "g6", "Nc3", "d5", "Bf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dc7ac9a90e91c1f4",
+      "names": {
+        "en": "Barry Attack"
+      },
+      "eco": "A48",
+      "opening": "Queen's Pawn Game: Barry Attack",
+      "moves": ["d4", "Nf6", "Nf3", "g6", "Nc3", "d5", "Bf4", "Bg7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5ca7f0de317aa008",
+      "names": {
+        "en": "Barry Attack, Tarzan Attack"
+      },
+      "eco": "A48",
+      "opening": "Queen's Pawn Game: Barry Attack, Tarzan Attack",
+      "moves": ["d4", "Nf6", "Nf3", "g6", "Nc3", "d5", "Bf4", "Bg7", "Qd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a799e0920b0f8cb8",
+      "names": {
+        "en": "Barry Attack, Grünfeld Variation"
+      },
+      "eco": "A48",
+      "opening": "Queen's Pawn Game: Barry Attack, Grünfeld Variation",
+      "moves": ["d4", "Nf6", "Nf3", "g6", "Nc3", "d5", "Bf4", "Bg7", "e3", "O-O", "Be2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6f325e42b939297f",
+      "names": {
+        "en": "Veresov, Richter Attack"
+      },
+      "eco": "A45",
+      "opening": "Queen's Pawn Game: Veresov, Richter Attack",
+      "moves": ["d4", "Nf6", "f3", "d5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fac115e5e4abcf45",
+      "names": {
+        "en": "Liedmann Gambit"
+      },
+      "eco": "A43",
+      "opening": "Queen's Pawn Game: Liedmann Gambit",
+      "moves": ["d4", "c5", "c4", "cxd4", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bae5b7fb265c2fe0",
+      "names": {
+        "en": "Anglo-Slav Opening"
+      },
+      "eco": "A40",
+      "opening": "Queen's Pawn Game: Anglo-Slav Opening",
+      "moves": ["d4", "c6", "c4", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e2c3c86e2fcae82f",
+      "names": {
+        "en": "Queen's Pawn Game"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game",
+      "moves": ["d4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3ca195745cbdd957",
+      "names": {
+        "en": "Accelerated London System"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Accelerated London System",
+      "moves": ["d4", "d5", "Bf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-47f7210b0f743e30",
+      "names": {
+        "en": "Accelerated London System, Steinitz Countergambit"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit",
+      "moves": ["d4", "d5", "Bf4", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fd560c01ffca4544",
+      "names": {
+        "en": "Accelerated London System, Steinitz Countergambit Accepted"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit Accepted",
+      "moves": ["d4", "d5", "Bf4", "c5", "dxc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3dc5a41548508da4",
+      "names": {
+        "en": "Accelerated London System, Steinitz Countergambit, Morris Countergambit"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit, Morris Countergambit",
+      "moves": ["d4", "d5", "Bf4", "c5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2d090871a5693fc8",
+      "names": {
+        "en": "Accelerated London System, Steinitz Countergambit, Morris Countergambit Accepted"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit, Morris Countergambit Accepted",
+      "moves": ["d4", "d5", "Bf4", "c5", "e4", "dxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-57d7ef2579863b66",
+      "names": {
+        "en": "Levitsky Attack"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Levitsky Attack",
+      "moves": ["d4", "d5", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-87673c5023fe8c85",
+      "names": {
+        "en": "Levitsky Attack, Welling Variation"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Levitsky Attack, Welling Variation",
+      "moves": ["d4", "d5", "Bg5", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e3d8f55ed611da3",
+      "names": {
+        "en": "Chigorin Variation"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Chigorin Variation",
+      "moves": ["d4", "d5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f7f036e5a887f94c",
+      "names": {
+        "en": "Chigorin Variation, Alburt Defense"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Chigorin Variation, Alburt Defense",
+      "moves": ["d4", "d5", "Nc3", "Bf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-299a4786def548b8",
+      "names": {
+        "en": "Chigorin Variation, Anti-Veresov"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Chigorin Variation, Anti-Veresov",
+      "moves": ["d4", "d5", "Nc3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-91766d04dbc23957",
+      "names": {
+        "en": "Chigorin Variation, Irish Gambit"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Chigorin Variation, Irish Gambit",
+      "moves": ["d4", "d5", "Nc3", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d93a825b652faa59",
+      "names": {
+        "en": "Chigorin Variation, Shaviliuk Gambit"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Chigorin Variation, Shaviliuk Gambit",
+      "moves": ["d4", "d5", "Nc3", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-51b4466f95baa540",
+      "names": {
+        "en": "Chigorin Variation"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Chigorin Variation",
+      "moves": ["d4", "d5", "Nc3", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-26b3b357a02798d5",
+      "names": {
+        "en": "Chigorin Variation, Shropshire Defense"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Chigorin Variation, Shropshire Defense",
+      "moves": ["d4", "d5", "Nc3", "h5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b8dd37798c33c854",
+      "names": {
+        "en": "Zukertort Variation"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Zukertort Variation",
+      "moves": ["d4", "d5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-65d36e02a60b0069",
+      "names": {
+        "en": "Chigorin Variation"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Chigorin Variation",
+      "moves": ["d4", "d5", "Nf3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8517ff8a17cde537",
+      "names": {
+        "en": "Symmetrical Variation"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Symmetrical Variation",
+      "moves": ["d4", "d5", "Nf3", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fd7fa61f664c5d60",
+      "names": {
+        "en": "London System"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: London System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-63d9827573db7446",
+      "names": {
+        "en": "London System"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: London System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bf4", "c5", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fb0efc0acbb310d0",
+      "names": {
+        "en": "London System"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: London System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bf4", "c5", "e3", "Nc6", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-56efdb975ffe43ef",
+      "names": {
+        "en": "London System"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: London System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bf4", "c5", "e3", "Nc6", "Nbd2", "e6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-20807b9bae9b9038",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-df2bf45c8f0119a9",
+      "names": {
+        "en": "Torre Attack, Gossip Variation"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack, Gossip Variation",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "Ne4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0f7b5c5df5d4f572",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "e6", "Nbd2", "Be7", "c3", "Nbd7", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2502b7cdfb661b45",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "e6", "e3", "Nbd7", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-eb211b6618db9b9a",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "e6", "e3", "c5", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-11aa9320ed148799",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "e6", "e3", "c5", "Nbd2", "Nc6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-32518b614cfb63b8",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "e6", "e3", "c5", "c3", "Nbd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d0297e467723f73a",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "e6", "e3", "c5", "c3", "Nbd7", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e7e480c323a992e9",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "e6", "e3", "c5", "c3", "Nbd7", "Nbd2", "Bd6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-483b17385f8aec47",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "e6", "e3", "c5", "c3", "Nbd7", "Nbd2", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0cf449ac6ccb28a5",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "e6", "e3", "c5", "c3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9b6b2ae3b4fc6613",
+      "names": {
+        "en": "Torre Attack"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "e6", "e3", "c5", "c3", "Nc6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9f3441a8ef8d2570",
+      "names": {
+        "en": "Torre Attack, Grünfeld Variation"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack, Grünfeld Variation",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-612c7bbdf72fa7ce",
+      "names": {
+        "en": "Torre Attack, Grünfeld Variation"
+      },
+      "eco": "D03",
+      "opening": "Queen's Pawn Game: Torre Attack, Grünfeld Variation",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "Bg5", "g6", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d8a69b8e3ba28533",
+      "names": {
+        "en": "Zilbermints Countergambit"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Zilbermints Countergambit",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "c4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9a3ca625324a0c3a",
+      "names": {
+        "en": "Colle System"
+      },
+      "eco": "D04",
+      "opening": "Queen's Pawn Game: Colle System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-90371a5d0c330c44",
+      "names": {
+        "en": "Colle System, Anti-Colle"
+      },
+      "eco": "D04",
+      "opening": "Queen's Pawn Game: Colle System, Anti-Colle",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "e3", "Bf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ac47c9c8f73c9c58",
+      "names": {
+        "en": "Colle System"
+      },
+      "eco": "D05",
+      "opening": "Queen's Pawn Game: Colle System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "e3", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dcb71ec7b730c257",
+      "names": {
+        "en": "Colle System"
+      },
+      "eco": "D05",
+      "opening": "Queen's Pawn Game: Colle System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "e3", "e6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0355b514b66a868c",
+      "names": {
+        "en": "Colle System"
+      },
+      "eco": "D05",
+      "opening": "Queen's Pawn Game: Colle System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "e3", "e6", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d8766e13180f1523",
+      "names": {
+        "en": "Colle System"
+      },
+      "eco": "D05",
+      "opening": "Queen's Pawn Game: Colle System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "e3", "e6", "b3", "c5", "Bb2", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-97e9d14f246c6964",
+      "names": {
+        "en": "Colle System"
+      },
+      "eco": "D05",
+      "opening": "Queen's Pawn Game: Colle System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "e3", "e6", "b3", "c5", "Bb2", "Nc6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-030e8ec3f157e61f",
+      "names": {
+        "en": "Colle System"
+      },
+      "eco": "D05",
+      "opening": "Queen's Pawn Game: Colle System",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "e3", "e6", "b3", "c5", "Bb2", "Nc6", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4e6e0d9823c081f6",
+      "names": {
+        "en": "Colle System, Grünfeld Formation"
+      },
+      "eco": "D04",
+      "opening": "Queen's Pawn Game: Colle System, Grünfeld Formation",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "e3", "g6", "Bd3", "Bg7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-80af3b9772ca2290",
+      "names": {
+        "en": "Symmetrical Variation, Pseudo-Catalan"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Symmetrical Variation, Pseudo-Catalan",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-05542894c8abc699",
+      "names": {
+        "en": "Symmetrical Variation, Pseudo-Catalan"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Symmetrical Variation, Pseudo-Catalan",
+      "moves": ["d4", "d5", "Nf3", "Nf6", "g3", "c6", "Bg2", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a55ef5fe3275c274",
+      "names": {
+        "en": "Krause Variation"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Krause Variation",
+      "moves": ["d4", "d5", "Nf3", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd7eb000e41f083c",
+      "names": {
+        "en": "Zukertort Variation"
+      },
+      "eco": "D05",
+      "opening": "Queen's Pawn Game: Zukertort Variation",
+      "moves": ["d4", "d5", "Nf3", "c5", "e3", "Nf6", "Nbd2", "e6", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-117789ff0353b869",
+      "names": {
+        "en": "Chandler Gambit"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Chandler Gambit",
+      "moves": ["d4", "d5", "Nf3", "c5", "g3", "cxd4", "Bg2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-69bb26d2c7ab3b61",
+      "names": {
+        "en": "Levitsky Attack, Euwe Variation, Modern Line"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: Levitsky Attack, Euwe Variation, Modern Line",
+      "moves": ["d4", "d5", "Nf3", "c6", "Bg5", "h6", "Bh4", "Qb6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b62399040b1170c8",
+      "names": {
+        "en": "London System, with e6"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: London System, with e6",
+      "moves": ["d4", "d5", "Nf3", "e6", "Bf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2126ab298bfe28c7",
+      "names": {
+        "en": "London System, with e6"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: London System, with e6",
+      "moves": ["d4", "d5", "Nf3", "e6", "Bf4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-43e28e84113c63d3",
+      "names": {
+        "en": "Queen's Pawn Game"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game",
+      "moves": ["d4", "d5", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-de9551f8b9c5589d",
+      "names": {
+        "en": "Queen's Pawn Game"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game",
+      "moves": ["d4", "d5", "e3", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a5a7a878ff063b92",
+      "names": {
+        "en": "Stonewall Attack"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Stonewall Attack",
+      "moves": ["d4", "d5", "e3", "Nf6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6df3e42081de79eb",
+      "names": {
+        "en": "Mason Attack"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Mason Attack",
+      "moves": ["d4", "d5", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-69102b6caf9dbf2f",
+      "names": {
+        "en": "Zurich Gambit"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Zurich Gambit",
+      "moves": ["d4", "d5", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-26f8a92b2c16dd2b",
+      "names": {
+        "en": "Queen's Pawn Game"
+      },
+      "eco": "A41",
+      "opening": "Queen's Pawn Game",
+      "moves": ["d4", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d465f79e851018a2",
+      "names": {
+        "en": "Rossolimo Variation"
+      },
+      "eco": "A41",
+      "opening": "Queen's Pawn Game: Rossolimo Variation",
+      "moves": ["d4", "d6", "Nf3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7a8faf4b65cb4abe",
+      "names": {
+        "en": "Veresov Attack, Dutch System"
+      },
+      "eco": "A80",
+      "opening": "Queen's Pawn Game: Veresov Attack, Dutch System",
+      "moves": ["d4", "f5", "Nc3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c5293efd1fdfdece",
+      "names": {
+        "en": "Modern Defense"
+      },
+      "eco": "A40",
+      "opening": "Queen's Pawn Game: Modern Defense",
+      "moves": ["d4", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7cbfc5fa250c3d55",
+      "names": {
+        "en": "London System, Pterodactyl Variation"
+      },
+      "eco": "D02",
+      "opening": "Queen's Pawn Game: London System, Pterodactyl Variation",
+      "moves": ["d4", "g6", "Nf3", "Bg7", "Bf4", "c5", "c3", "cxd4", "cxd4", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-808323d7cf8d22a6",
+      "names": {
+        "en": "Chigorin Variation, Fianchetto Defense"
+      },
+      "eco": "D00",
+      "opening": "Queen's Pawn Game: Chigorin Variation, Fianchetto Defense",
+      "moves": ["d4", "g6", "Nf3", "Bg7", "Nc3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

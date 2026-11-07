@@ -1,0 +1,88 @@
+{
+  "id": "benko-gambit",
+  "names": {
+    "en": "Benko Gambit"
+  },
+  "lines": [
+    {
+      "id": "line-6f0af1b7209a07f5",
+      "names": {
+        "en": "Benko Gambit"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-99fdb63c94d10145",
+      "names": {
+        "en": "Zaitsev System"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit: Zaitsev System",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d6510a1abe2d7c44",
+      "names": {
+        "en": "Zaitsev Variation, Nescafe Frappe Attack"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit: Zaitsev Variation, Nescafe Frappe Attack",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "Nc3", "axb5", "e4", "b4", "Nb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2533502e98e7abf5",
+      "names": {
+        "en": "Nescafe Frappe Attack"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit: Nescafe Frappe Attack",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "Nc3", "axb5", "e4", "b4", "Nb5", "d6", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f4b6fbd99db73b8a",
+      "names": {
+        "en": "Nd2 Variation"
+      },
+      "eco": "A58",
+      "opening": "Benko Gambit: Nd2 Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "Bxa6", "Nc3", "d6", "Nf3", "g6", "Nd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8dbef8056cb79876",
+      "names": {
+        "en": "Fianchetto Variation"
+      },
+      "eco": "A58",
+      "opening": "Benko Gambit: Fianchetto Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "Bxa6", "Nc3", "d6", "Nf3", "g6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b1b812f2203c3127",
+      "names": {
+        "en": "Benko Gambit"
+      },
+      "eco": "A59",
+      "opening": "Benko Gambit",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "g6", "Nc3", "Bxa6", "e4", "Bxf1", "Kxf1", "d6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c6d546aadc923d63",
+      "names": {
+        "en": "Mutkin Countergambit"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit: Mutkin Countergambit",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

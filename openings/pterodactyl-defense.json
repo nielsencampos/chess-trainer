@@ -1,0 +1,338 @@
+{
+  "id": "pterodactyl-defense",
+  "names": {
+    "en": "Pterodactyl Defense"
+  },
+  "lines": [
+    {
+      "id": "line-52031ed28dcdddc0",
+      "names": {
+        "en": "Pterodactyl Defense"
+      },
+      "eco": "A42",
+      "opening": "Pterodactyl Defense",
+      "moves": ["Nf3", "c5", "c4", "g6", "d4", "Bg7", "e4", "Qa5+", "Nc3", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-677aed25f19b34cb",
+      "names": {
+        "en": "Eastern, Benoni Pterodactyl"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Eastern, Benoni Pterodactyl",
+      "moves": ["d4", "g6", "Nc3", "Bg7", "e4", "c5", "d5", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1bdaa726d329bc0e",
+      "names": {
+        "en": "Fianchetto, Queen Pterodactyl"
+      },
+      "eco": "A40",
+      "opening": "Pterodactyl Defense: Fianchetto, Queen Pterodactyl",
+      "moves": ["d4", "g6", "Nf3", "Bg7", "g3", "c5", "Bg2", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dc8bd3fab6173d1c",
+      "names": {
+        "en": "Fianchetto, Queen Pteranodon"
+      },
+      "eco": "A40",
+      "opening": "Pterodactyl Defense: Fianchetto, Queen Pteranodon",
+      "moves": ["d4", "g6", "c4", "Bg7", "Nc3", "c5", "d5", "Bxc3+", "bxc3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-79ef02457540f2d5",
+      "names": {
+        "en": "Fianchetto, Queen Benoni Pterodactyl"
+      },
+      "eco": "A40",
+      "opening": "Pterodactyl Defense: Fianchetto, Queen Benoni Pterodactyl",
+      "moves": ["d4", "g6", "c4", "Bg7", "Nc3", "c5", "d5", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-728b0c9ef8c94d83",
+      "names": {
+        "en": "Central, Benoni Beefeater Pterodactyl"
+      },
+      "eco": "A40",
+      "opening": "Pterodactyl Defense: Central, Benoni Beefeater Pterodactyl",
+      "moves": ["d4", "g6", "c4", "Bg7", "Nc3", "c5", "d5", "d6", "e4", "Bxc3+", "bxc3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5c2ae7d0586f55af",
+      "names": {
+        "en": "Queen Pterodactyl, Quiet Line"
+      },
+      "eco": "A40",
+      "opening": "Pterodactyl Defense: Queen Pterodactyl, Quiet Line",
+      "moves": ["d4", "g6", "c4", "Bg7", "Nc3", "c5", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d6a10ad9dded3d3e",
+      "names": {
+        "en": "Central, Benoni Pterodactyl"
+      },
+      "eco": "A40",
+      "opening": "Pterodactyl Defense: Central, Benoni Pterodactyl",
+      "moves": ["d4", "g6", "c4", "Bg7", "e4", "c5", "d5", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bc26beb9752cc518",
+      "names": {
+        "en": "Central, Bogolubovia"
+      },
+      "eco": "A42",
+      "opening": "Pterodactyl Defense: Central, Bogolubovia",
+      "moves": ["d4", "g6", "c4", "Bg7", "e4", "d6", "Nc3", "c5", "Nge2", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-481eeb55b207d350",
+      "names": {
+        "en": "Eastern, Benoni"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Eastern, Benoni",
+      "moves": ["d4", "g6", "e4", "Bg7", "Nc3", "c5", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e1512443c173127b",
+      "names": {
+        "en": "Western, Pterodactyl"
+      },
+      "eco": "B27",
+      "opening": "Pterodactyl Defense: Western, Pterodactyl",
+      "moves": ["e4", "c5", "Nf3", "g6", "c3", "Bg7", "d4", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bab653646cf37ad9",
+      "names": {
+        "en": "Sicilian, Unpin"
+      },
+      "eco": "B27",
+      "opening": "Pterodactyl Defense: Sicilian, Unpin",
+      "moves": ["e4", "c5", "Nf3", "g6", "d4", "Bg7", "Nc3", "Qa5", "Bd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e6687d87c14132bb",
+      "names": {
+        "en": "Sicilian, Anhanguera"
+      },
+      "eco": "B27",
+      "opening": "Pterodactyl Defense: Sicilian, Anhanguera",
+      "moves": ["e4", "c5", "Nf3", "g6", "d4", "Bg7", "Nc3", "Qa5", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e895ab04cd12b13d",
+      "names": {
+        "en": "Sicilian, Benoni Gambit"
+      },
+      "eco": "B27",
+      "opening": "Pterodactyl Defense: Sicilian, Benoni Gambit",
+      "moves": ["e4", "c5", "Nf3", "g6", "d4", "Bg7", "Nc3", "Qa5", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-313c13dae292290f",
+      "names": {
+        "en": "Western, Rhamphorhynchus"
+      },
+      "eco": "B27",
+      "opening": "Pterodactyl Defense: Western, Rhamphorhynchus",
+      "moves": ["e4", "c5", "Nf3", "g6", "d4", "Bg7", "dxc5", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f4ac6af9d858df38",
+      "names": {
+        "en": "Sicilian, Rhamphorhynchus"
+      },
+      "eco": "B27",
+      "opening": "Pterodactyl Defense: Sicilian, Rhamphorhynchus",
+      "moves": ["e4", "c5", "Nf3", "g6", "d4", "Bg7", "dxc5", "Qa5+", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9f1b08de57208644",
+      "names": {
+        "en": "Sicilian, Pteranodon"
+      },
+      "eco": "B27",
+      "opening": "Pterodactyl Defense: Sicilian, Pteranodon",
+      "moves": ["e4", "c5", "Nf3", "g6", "d4", "Bg7", "dxc5", "Qa5+", "Nc3", "Bxc3+", "bxc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6808d5f49b89693c",
+      "names": {
+        "en": "Austrian, Grand Prix Pterodactyl"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Austrian, Grand Prix Pterodactyl",
+      "moves": ["e4", "g6", "Nc3", "Bg7", "f4", "c5", "Nf3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-aa513b2be56c8eb4",
+      "names": {
+        "en": "Western, Siroccopteryx"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Western, Siroccopteryx",
+      "moves": ["e4", "g6", "Nf3", "Bg7", "d4", "c5", "Bc4", "cxd4", "Nxd4", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b6d68415193566ae",
+      "names": {
+        "en": "Eastern, Anhanguera"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Eastern, Anhanguera",
+      "moves": ["e4", "g6", "d4", "Bg7", "Nc3", "c5", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-686b443bb90bf276",
+      "names": {
+        "en": "Sicilian, Siroccopteryx"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Sicilian, Siroccopteryx",
+      "moves": ["e4", "g6", "d4", "Bg7", "Nc3", "c5", "Nf3", "Qa5", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9e40f64cdcccd7e0",
+      "names": {
+        "en": "Sicilian, Quetzalcoatlus"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Sicilian, Quetzalcoatlus",
+      "moves": ["e4", "g6", "d4", "Bg7", "Nc3", "c5", "Nf3", "Qa5", "Be2", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-83f139489f94ac86",
+      "names": {
+        "en": "Eastern, Benoni Pteranodon"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Eastern, Benoni Pteranodon",
+      "moves": ["e4", "g6", "d4", "Bg7", "Nc3", "c5", "d5", "Bxc3+", "bxc3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6678f1b0d437e5a7",
+      "names": {
+        "en": "Eastern, Pteranodon"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Eastern, Pteranodon",
+      "moves": ["e4", "g6", "d4", "Bg7", "Nc3", "c5", "dxc5", "Bxc3+", "bxc3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c027114ffdfa6b1e",
+      "names": {
+        "en": "Eastern, Rhamphorhynchus"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Eastern, Rhamphorhynchus",
+      "moves": ["e4", "g6", "d4", "Bg7", "Nc3", "c5", "dxc5", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4148c2bba7f4bf21",
+      "names": {
+        "en": "Western, Anhanguera"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Western, Anhanguera",
+      "moves": ["e4", "g6", "d4", "Bg7", "Nf3", "c5", "Be3", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fcc0bb240cd0fed0",
+      "names": {
+        "en": "Central, Anhanguera"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Central, Anhanguera",
+      "moves": ["e4", "g6", "d4", "Bg7", "c4", "c5", "Nc3", "d6", "Be3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-29307d1f0f7ec97c",
+      "names": {
+        "en": "Central, Quetzalcoatlus Gambit"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Central, Quetzalcoatlus Gambit",
+      "moves": ["e4", "g6", "d4", "Bg7", "c4", "c5", "Nc3", "d6", "dxc5", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b5b3241c87377f24",
+      "names": {
+        "en": "Central, Benoni Quetzalcoatlus"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Central, Benoni Quetzalcoatlus",
+      "moves": ["e4", "g6", "d4", "Bg7", "c4", "c5", "d5", "d6", "Nc3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7e64056839cf0932",
+      "names": {
+        "en": "Austrian, Austriadactylus Western"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Austrian, Austriadactylus Western",
+      "moves": ["e4", "g6", "d4", "Bg7", "f4", "c5", "Nf3", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-53da5836b2091293",
+      "names": {
+        "en": "Austrian, Pteranodon"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Austrian, Pteranodon",
+      "moves": ["e4", "g6", "d4", "Bg7", "f4", "c5", "c3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7bb3738f2b4552bb",
+      "names": {
+        "en": "Fianchetto, King Pterodactyl"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Fianchetto, King Pterodactyl",
+      "moves": ["e4", "g6", "d4", "Bg7", "g3", "c5", "Nf3", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-04486c98f2cafc3a",
+      "names": {
+        "en": "Fianchetto, Rhamphorhynchus"
+      },
+      "eco": "B06",
+      "opening": "Pterodactyl Defense: Fianchetto, Rhamphorhynchus",
+      "moves": ["e4", "g6", "d4", "Bg7", "g3", "c5", "dxc5", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

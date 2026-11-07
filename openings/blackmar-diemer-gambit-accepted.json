@@ -1,0 +1,228 @@
+{
+  "id": "blackmar-diemer-gambit-accepted",
+  "names": {
+    "en": "Blackmar-Diemer Gambit Accepted"
+  },
+  "lines": [
+    {
+      "id": "line-b74a150424c052aa",
+      "names": {
+        "en": "Blackmar-Diemer Gambit Accepted"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-41e5c21190c665fe",
+      "names": {
+        "en": "Gunderam Defense"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Gunderam Defense",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "Bf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5444129a4662697c",
+      "names": {
+        "en": "Gunderam Defense, Stader Variation"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Gunderam Defense, Stader Variation",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "Bf5", "Ne5", "e6", "g4", "Be4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-177b17e1055e66f5",
+      "names": {
+        "en": "Teichmann Defense"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Teichmann Defense",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-012f14bd9a45cb1e",
+      "names": {
+        "en": "Teichmann Defense, Classical Variation"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Teichmann Defense, Classical Variation",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "Bg4", "h3", "Bxf3", "Qxf3", "c6", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-094b09947f699584",
+      "names": {
+        "en": "Teichmann Defense, Ciesielski Variation"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Teichmann Defense, Ciesielski Variation",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "Bg4", "h3", "Bxf3", "Qxf3", "c6", "Qf2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ef0dbd0cbc97aa74",
+      "names": {
+        "en": "Teichmann Defense, Seidel-Hall Attack"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Teichmann Defense, Seidel-Hall Attack",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "Bg4", "h3", "Bxf3", "Qxf3", "c6", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d497e2b2b5ffe51e",
+      "names": {
+        "en": "Schlutter Defense"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Schlutter Defense",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "Nbd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e56c6cf464b65c5e",
+      "names": {
+        "en": "Pietrowsky Defense"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Pietrowsky Defense",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1a4c6a317e17be19",
+      "names": {
+        "en": "Holwell Defense"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Holwell Defense",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "Qd6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-de821769f74219a9",
+      "names": {
+        "en": "Ritter Defense"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Ritter Defense",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-617c81dbc6147b36",
+      "names": {
+        "en": "Kaulich Defense"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Kaulich Defense",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8cc30eb14472887d",
+      "names": {
+        "en": "Ziegler Defense"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Ziegler Defense",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d38645a90173e390",
+      "names": {
+        "en": "Euwe Defense"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Euwe Defense",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-13be4e2dc183b054",
+      "names": {
+        "en": "Euwe Defense, Duthilleul Gambit"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Euwe Defense, Duthilleul Gambit",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "e6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-426e2866c2332728",
+      "names": {
+        "en": "Euwe Defense, Zilbermints Gambit"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Euwe Defense, Zilbermints Gambit",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "e6", "Bg5", "Be7", "Bd3", "Nc6", "O-O", "Nxd4", "Kh1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-25dbd870cd72efcd",
+      "names": {
+        "en": "Bogoljubow Defense"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Bogoljubow Defense",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e5e90012e9ec97b6",
+      "names": {
+        "en": "Bogoljubow Defense, Nimzowitsch Attack"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Bogoljubow Defense, Nimzowitsch Attack",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "g6", "Bc4", "Bg7", "Ne5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b9dc454273e7d1cc",
+      "names": {
+        "en": "Bogoljubow Defense, Kloss Attack"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Bogoljubow Defense, Kloss Attack",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "g6", "Bc4", "Bg7", "O-O", "O-O", "Kh1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9b7c74427b12105e",
+      "names": {
+        "en": "Bogoljubow Defense, Studier Attack"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Bogoljubow Defense, Studier Attack",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "g6", "Bc4", "Bg7", "O-O", "O-O", "Qe1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bb04b0a9aea38a81",
+      "names": {
+        "en": "Bogoljubow Defense, Mad Dog Attack"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Bogoljubow Defense, Mad Dog Attack",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Nxf3", "g6", "Bc4", "Bg7", "h4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-90166fa97a63a457",
+      "names": {
+        "en": "Ryder Gambit"
+      },
+      "eco": "D00",
+      "opening": "Blackmar-Diemer Gambit Accepted: Ryder Gambit",
+      "moves": ["d4", "d5", "e4", "dxe4", "Nc3", "Nf6", "f3", "exf3", "Qxf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}
