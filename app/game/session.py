@@ -78,6 +78,16 @@ class GameResult:
     termination: str
 
 
+def _pgn_time_control(control: TimeControl) -> str:
+    base_s = control.base_ms // 1000
+    increment_s = control.increment_ms // 1000
+    if control.moves_to_bonus is None:
+        return f"{base_s}+{increment_s}"
+    return (
+        f"{control.moves_to_bonus}/{base_s}+{increment_s}:{control.bonus_ms // 1000}+{increment_s}"
+    )
+
+
 class GameSession:
     def __init__(
         self,
@@ -268,8 +278,7 @@ class GameSession:
         if self.variant.opening:
             game.headers["Opening"] = self.variant.opening
         if self.time_control is not None:
-            base_s = self.time_control.base_ms // 1000
-            game.headers["TimeControl"] = f"{base_s}+{self.time_control.increment_ms // 1000}"
+            game.headers["TimeControl"] = _pgn_time_control(self.time_control)
         node: chess.pgn.GameNode = game
         for record in self.moves:
             node = node.add_variation(chess.Move.from_uci(record.uci))

@@ -34,6 +34,7 @@ export const api = {
   health: () => request("/health"),
   repertoires: () => request("/repertoires"),
   levels: () => request("/engine/levels"),
+  timeControls: () => request("/time-controls"),
   /** @param {object} setup */
   newGame: (setup) => request("/games", setup),
   /**

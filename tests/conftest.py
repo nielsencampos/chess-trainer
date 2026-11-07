@@ -22,6 +22,7 @@ class FakeEngine:
     def __init__(self) -> None:
         self.script: list[str] = []
         self.calls = 0
+        self.last_max_time_s: float | None = None
 
     async def start(self) -> None:
         pass
@@ -29,8 +30,11 @@ class FakeEngine:
     async def stop(self) -> None:
         pass
 
-    async def play(self, board: chess.Board, level: Level) -> chess.Move:
+    async def play(
+        self, board: chess.Board, level: Level, max_time_s: float | None = None
+    ) -> chess.Move:
         self.calls += 1
+        self.last_max_time_s = max_time_s
         if self.script:
             return board.parse_san(self.script.pop(0))
         return next(iter(board.legal_moves))

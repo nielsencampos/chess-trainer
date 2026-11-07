@@ -56,6 +56,76 @@ def test_levels(client):
     ]
 
 
+def test_time_controls_are_grouped_with_scoresheet_only_for_classical(client):
+    body = client.get("/api/time-controls").json()
+    groups = {group["key"]: group for group in body["groups"]}
+    assert [item["key"] for item in groups["bullet"]["items"]] == [
+        "20s+1",
+        "30s+0",
+        "1+0",
+        "1+1",
+        "2+1",
+    ]
+    assert [item["key"] for item in groups["blitz"]["items"]] == ["3+0", "3+2", "5+0", "5+3"]
+    assert [item["key"] for item in groups["rapid"]["items"]] == [
+        "10+0",
+        "10+5",
+        "15+10",
+        "20+0",
+        "30+0",
+        "60+0",
+    ]
+    assert groups["classical"]["items"] == [
+        {
+            "key": "90+30+30",
+            "base_ms": 5_400_000,
+            "increment_ms": 30_000,
+            "moves_to_bonus": 40,
+            "bonus_ms": 1_800_000,
+        },
+        {
+            "key": "45+15+15",
+            "base_ms": 2_700_000,
+            "increment_ms": 15_000,
+            "moves_to_bonus": 40,
+            "bonus_ms": 900_000,
+        },
+    ]
+    assert [key for key, group in groups.items() if group["scoresheet"]] == ["classical"]
+    assert body["no_clock"] == "none"
+    assert sum(len(group["items"]) for group in groups.values()) + 1 == 18
+
+
+def test_every_time_control_starts_a_game(client, ids):
+    body = client.get("/api/time-controls").json()
+    keys = [item["key"] for group in body["groups"] for item in group["items"]] + ["none"]
+    for key in keys:
+        assert new_game(client, ids, time_control=key).status_code == 201, key
+
+
+def test_engine_search_is_limited_by_the_bots_clock(client, ids, engine):
+    game_id = new_game(client, ids, color="white", pgn=ALAPIN_PGN, time_control="30s+0")
+    game_id = game_id.json()["state"]["game_id"]
+    client.post(f"/api/games/{game_id}/moves", json={"uci": "e2e4", "bot_clock_ms": 30_000})
+    client.post(f"/api/games/{game_id}/moves", json={"uci": "c2c3", "bot_clock_ms": 30_000})
+    assert engine.calls == 1
+    assert engine.last_max_time_s == pytest.approx(1.0)
+
+
+def test_no_clock_does_not_limit_the_engine(client, ids, engine):
+    game_id = new_game(client, ids, color="white", pgn=ALAPIN_PGN).json()["state"]["game_id"]
+    client.post(f"/api/games/{game_id}/moves", json={"uci": "e2e4"})
+    client.post(f"/api/games/{game_id}/moves", json={"uci": "c2c3"})
+    assert engine.calls == 1
+    assert engine.last_max_time_s is None
+
+
+def test_classical_pgn_records_the_bonus(client, ids):
+    game_id = new_game(client, ids, time_control="90+30+30").json()["state"]["game_id"]
+    summary = client.post(f"/api/games/{game_id}/resign").json()
+    assert '[TimeControl "40/5400+30:1800+30"]' in summary["pgn"]
+
+
 def test_new_game_as_black_gets_bot_first_move(client, ids):
     response = new_game(client, ids)
     assert response.status_code == 201
@@ -82,7 +152,8 @@ def test_same_line_plays_with_either_color(client, ids):
         {"variant_ids": []},
         {"variant_ids": ["nope"]},
         {"level": "nope"},
-        {"time_control": "1+1"},
+        {"time_control": "7+7"},
+        {"time_control": "45+30"},
         {"pace": "slow"},
         {"color": "red"},
     ],
@@ -147,8 +218,8 @@ def test_full_flow_book_then_deviation_then_engine(client, ids, engine):
 
 
 def test_human_pace_returns_a_delay(client, ids):
-    bot_move = new_game(client, ids, pace="human", time_control="45+30").json()["bot_move"]
-    assert 4_500 <= bot_move["delay_ms"] <= 15_000
+    bot_move = new_game(client, ids, pace="human", time_control="90+30+30").json()["bot_move"]
+    assert 9_000 <= bot_move["delay_ms"] <= 27_000
 
 
 def test_instant_pace_has_no_delay(client, ids):

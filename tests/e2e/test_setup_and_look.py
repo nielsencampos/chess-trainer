@@ -148,10 +148,102 @@ def test_game_from_the_ui_selection(page: Page):
 
 def test_time_controls_and_levels_are_offered(page: Page):
     page.goto("/")
+    groups = page.locator("#time-control optgroup")
+    expect(groups).to_have_count(4)
+    assert [g.get_attribute("label") for g in groups.all()] == [
+        "Bullet",
+        "Blitz",
+        "Rapid",
+        "Classical",
+    ]
     expect(page.locator("#time-control option")).to_have_text(
-        ["3+2", "10+5", "15+10", "45+30", "No clock"]
+        [
+            "20s+1",
+            "30s+0",
+            "1+0",
+            "1+1",
+            "2+1",
+            "3+0",
+            "3+2",
+            "5+0",
+            "5+3",
+            "10+0",
+            "10+5",
+            "15+10",
+            "20+0",
+            "30+0",
+            "60+0",
+            "90 + 30 min, +30 s",
+            "45 + 15 min, +15 s",
+            "No clock",
+        ]
     )
     expect(page.locator("#level option")).to_have_text(["Warm-up", "Club", "Strong", "Max"])
+
+
+def test_a_removed_saved_time_control_falls_back_to_the_default(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], timeControl="45+30")
+    page.goto("/")
+    expect(page.locator("#time-control")).to_have_value("10+5")
+
+
+def test_scoresheet_is_offered_only_for_classical_and_no_clock(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="10+5", scoresheet=True)
+    page.goto("/")
+    option = page.locator("#scoresheet-option")
+    select = page.locator("#time-control")
+    expect(option).to_be_hidden()
+    for key in ("90+30+30", "45+15+15", "none"):
+        select.select_option(key)
+        expect(option).to_be_visible()
+    select.select_option("3+2")
+    expect(option).to_be_hidden()
+
+    play(page)
+    wait_for_your_move(page)
+    # The saved option does not apply here. The list is empty, so check the attribute.
+    expect(page.locator("#movelist")).to_have_js_property("hidden", False)
+    expect(page.locator("#scoresheet-note")).to_be_hidden()
+
+
+def test_classical_clock_shows_hours_and_adds_the_bonus_at_move_40(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="90+30+30")
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page)
+    expect(page.locator("#bottom-clock")).to_have_text("1:30:00")
+    remaining = page.evaluate(
+        """async () => {
+          const { Clocks } = await import("/js/clock.js");
+          const clocks = new Clocks(() => {}, () => {});
+          clocks.reset({
+            base_ms: 1000, increment_ms: 30000, moves_to_bonus: 40, bonus_ms: 1800000,
+          });
+          const seen = [];
+          for (let move = 1; move <= 41; move += 1) {
+            clocks.press("w");
+            seen.push(clocks.remaining.w);
+          }
+          return { seen, black: clocks.remaining.b };
+        }"""
+    )
+    assert remaining["seen"][38] == 1000 + 39 * 30_000  # after move 39: increment only
+    assert remaining["seen"][39] == 1000 + 40 * 30_000 + 1_800_000  # move 40 earns the bonus
+    assert remaining["seen"][40] == 1000 + 41 * 30_000 + 1_800_000  # and only once
+    assert remaining["black"] == 1000
+
+
+def test_short_game_does_not_start_in_red(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="20s+1")
+    page.clock.install()
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page)
+    mine = page.locator("#bottom-clock")
+    expect(mine).to_have_text("00:20")
+    expect(mine).not_to_have_class(re.compile(r"\blow\b"))
+    page.clock.run_for(18_500)
+    expect(mine).to_have_class(re.compile(r"\blow\b"))
 
 
 def test_clock_runs_adds_increment_turns_red_and_flags(page: Page, seed_prefs):
@@ -260,6 +352,21 @@ def test_fonts_are_the_vendored_ones(page: Page):
     page.evaluate("document.fonts.ready")
     assert page.evaluate("document.fonts.check('16px \"Familjen Grotesk\"')")
     assert page.evaluate("document.fonts.check('16px \"JetBrains Mono\"')")
+
+
+def test_logo_is_in_the_header_and_the_browser_tab(page: Page, device):
+    page.goto("/")
+    logo = page.locator(".brand-logo")
+    expect(logo).to_be_visible()
+    page.wait_for_function("document.querySelector('.brand-logo').naturalWidth > 0")
+    assert logo.bounding_box()["width"] == (56 if device == "desktop" else 44)
+    assert page.locator('link[rel="icon"]').get_attribute("href") == "logo.svg"
+    for path in ("logo.svg", "logo.png"):
+        assert page.request.get(f"/{path}").ok
+    if device == "mobile":
+        expect(page.locator(".brand-name")).to_be_hidden()
+    else:
+        expect(page.locator(".brand-name")).to_have_text("chess-trainer")
 
 
 def test_footer_shows_the_engine_version(page: Page):
