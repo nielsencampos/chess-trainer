@@ -90,5 +90,5 @@ def test_mixed_colors_in_repertoire_fail(tmp_path):
 
 
 def test_empty_directory_fails(tmp_path):
-    with pytest.raises(BookError, match="no .pgn"):
+    with pytest.raises(BookError, match=r"no \.pgn"):
         load_book(tmp_path)
