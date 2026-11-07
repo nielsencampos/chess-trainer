@@ -2,14 +2,14 @@
 
 import json
 import os
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 import pytest
 from playwright.sync_api import Page
 
 BASE_URL = os.environ.get("E2E_BASE_URL", "http://127.0.0.1:8000")
 
-VIEWPORT = {"width": 1280, "height": 800}
+VIEWPORT = {"width": 1280, "height": 720}  # HD is the smallest supported screen
 
 
 @pytest.fixture(scope="session")
@@ -26,8 +26,18 @@ def context(browser):
     context.close()
 
 
+def resign_active_game() -> None:
+    """An unfinished game would be resumed by the next test."""
+    with urlopen(f"{BASE_URL}/api/games/active") as response:
+        game = json.load(response)["game"]
+    if game and not game["state"]["game_over"]:
+        request = Request(f"{BASE_URL}/api/games/{game['state']['game_id']}/resign", method="POST")
+        urlopen(request).close()
+
+
 @pytest.fixture
 def page(context) -> Page:
+    resign_active_game()
     page = context.new_page()
     errors: list[str] = []
     page.on("pageerror", lambda error: errors.append(str(error)))

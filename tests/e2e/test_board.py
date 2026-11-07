@@ -9,7 +9,12 @@ from playwright.sync_api import Page, expect
 from tests.e2e.conftest import click_move, moves_text, play, square, wait_for_your_move
 
 
-def fake_api(page: Page, bot_moves: list[tuple[str, str]], first_bot_move: bool = False) -> list:
+def fake_api(
+    page: Page,
+    bot_moves: list[tuple[str, str]],
+    first_bot_move: bool = False,
+    delay_ms: int = 0,
+) -> list:
     """Bot replies come from a script. Returns the list of request bodies the app sent."""
     script = list(bot_moves)
     sent: list[dict] = []
@@ -36,7 +41,7 @@ def fake_api(page: Page, bot_moves: list[tuple[str, str]], first_bot_move: bool 
             "san": san,
             "ply": ply["value"],
             "source": "book",
-            "delay_ms": 0,
+            "delay_ms": delay_ms,
             "in_theory": True,
         }
 
@@ -268,3 +273,284 @@ def test_all_piece_sets_load(page: Page):
 
     page.reload()
     expect(page.locator("#piece-set")).to_have_value("unicode")
+
+
+PREMOVE_LINE = [("a7a6", "a6"), ("b7b6", "b6"), ("c7c6", "c6"), ("d7d6", "d6")]
+
+
+def start_with_premoves(page: Page, seed_prefs, line, **options) -> list:
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none", **options)
+    sent = fake_api(page, line, delay_ms=700)
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page)
+    return sent
+
+
+def wait_for_sent(page: Page, sent: list, count: int) -> None:
+    for _ in range(100):
+        if len(sent) >= count:
+            return
+        page.wait_for_timeout(50)
+    raise AssertionError(f"expected {count} moves, got {sent}")
+
+
+def test_premove_plays_as_soon_as_the_bot_replies(page: Page, seed_prefs):
+    sent = start_with_premoves(page, seed_prefs, PREMOVE_LINE)
+    click_move(page, "e2", "e4")
+    click_move(page, "d2", "d4")
+    assert has_class(page, "d2", "premove")
+    assert has_class(page, "d4", "premove")
+    expect(page.locator("#chips")).to_contain_text("Premove set")
+    wait_for_sent(page, sent, 2)
+    assert [move["uci"] for move in sent] == ["e2e4", "d2d4"]
+    expect(square(page, "d4")).to_have_attribute("data-piece", "wp")
+    assert not has_class(page, "d4", "premove")
+    expect(page.locator("#chips")).not_to_contain_text("Premove set")
+
+
+def test_illegal_premove_is_dropped_and_it_stays_the_users_turn(page: Page, seed_prefs):
+    sent = start_with_premoves(page, seed_prefs, PREMOVE_LINE)
+    click_move(page, "e2", "e4")
+    click_move(page, "e4", "d5")  # a capture that needs a black piece on d5, which never comes
+    assert has_class(page, "d5", "premove")
+    wait_for_your_move(page)
+    page.wait_for_timeout(200)
+    assert [move["uci"] for move in sent] == ["e2e4"]
+    expect(square(page, "e4")).to_have_attribute("data-piece", "wp")
+    assert not has_class(page, "d5", "premove")
+
+
+def test_right_click_cancels_a_premove(page: Page, seed_prefs):
+    sent = start_with_premoves(page, seed_prefs, PREMOVE_LINE)
+    click_move(page, "e2", "e4")
+    click_move(page, "d2", "d4")
+    square(page, "h4").click(button="right")
+    assert not has_class(page, "d2", "premove")
+    expect(page.locator("#chips")).not_to_contain_text("Premove set")
+    wait_for_your_move(page)
+    page.wait_for_timeout(200)
+    assert [move["uci"] for move in sent] == ["e2e4"]
+
+
+def test_clicking_elsewhere_cancels_a_premove(page: Page, seed_prefs):
+    sent = start_with_premoves(page, seed_prefs, PREMOVE_LINE)
+    click_move(page, "e2", "e4")
+    click_move(page, "d2", "d4")
+    square(page, "h5").click()
+    assert not has_class(page, "d2", "premove")
+    wait_for_your_move(page)
+    page.wait_for_timeout(200)
+    assert [move["uci"] for move in sent] == ["e2e4"]
+
+
+def test_premove_can_be_turned_off(page: Page, seed_prefs):
+    sent = start_with_premoves(page, seed_prefs, PREMOVE_LINE, premoves=False)
+    click_move(page, "e2", "e4")
+    click_move(page, "d2", "d4")
+    assert not has_class(page, "d2", "premove")
+    wait_for_your_move(page)
+    page.wait_for_timeout(200)
+    assert [move["uci"] for move in sent] == ["e2e4"]
+
+
+def test_premove_before_the_bots_first_move(page: Page, seed_prefs):
+    seed_prefs(["1. e4 c5 2. c3"], color="black", timeControl="none")
+    sent = fake_api(page, [("e2e4", "e4"), ("d2d4", "d4")], first_bot_move=True, delay_ms=1500)
+    page.goto("/")
+    play(page)
+    click_move(page, "c7", "c5")
+    assert has_class(page, "c5", "premove")
+    wait_for_sent(page, sent, 1)
+    assert sent[0]["uci"] == "c7c5"
+
+
+def test_premove_promotes_to_a_queen(page: Page, seed_prefs):
+    sent = start_with_premoves(page, seed_prefs, PROMOTION_LINE)
+    for origin, target in [("a2", "a4"), ("a4", "b5"), ("b5", "a6")]:
+        click_move(page, origin, target)
+        wait_for_your_move(page)
+    click_move(page, "a6", "b7")
+    click_move(page, "b7", "a8")
+    expect(page.locator(".board .promotion")).to_have_count(0)
+    wait_for_sent(page, sent, 5)
+    assert sent[-1]["uci"] == "b7a8q"
+    expect(square(page, "a8")).to_have_attribute("data-piece", "wq")
+
+
+def test_premove_destinations_by_shape(page: Page):
+    page.goto("/")
+    page.locator(".square").first.wait_for()
+    result = page.evaluate(
+        """async () => {
+          const { premoveDestinations: at } = await import("/js/premove.js");
+          return {
+            whitePawn: at("e2", { color: "w", type: "p" }),
+            blackPawn: at("a7", { color: "b", type: "p" }),
+            knight: at("a1", { color: "w", type: "n" }),
+            king: at("e1", { color: "w", type: "k" }),
+            rook: at("a1", { color: "w", type: "r" }).length,
+            queen: at("d4", { color: "w", type: "q" }).length,
+          };
+        }"""
+    )
+    assert sorted(result["whitePawn"]) == ["d3", "e3", "e4", "f3"]
+    assert sorted(result["blackPawn"]) == ["a5", "a6", "b6"]
+    assert sorted(result["knight"]) == ["b3", "c2"]
+    assert sorted(result["king"]) == ["c1", "d1", "d2", "e2", "f1", "f2", "g1"]
+    assert result["rook"] == 14
+    assert result["queen"] == 27
+
+
+RECORD_SOUNDS = """
+window.sounds = [];
+document.addEventListener("chess-trainer:sound", (event) => window.sounds.push(event.detail));
+"""
+
+
+def sounds(page: Page) -> list[str]:
+    return [
+        f"{item['type']}{'-bot' if item['byBot'] else ''}"
+        for item in page.evaluate("window.sounds")
+    ]
+
+
+def test_each_event_plays_its_sound(page: Page, seed_prefs):
+    page.add_init_script(RECORD_SOUNDS)
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
+    fake_api(
+        page,
+        [
+            ("d7d5", "d5"),
+            ("a7a6", "a6"),
+            ("b7b6", "b6"),
+            ("g7g6", "g6"),
+            ("h7h6", "h6"),
+            ("a6a5", "a5"),
+        ],
+    )
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page)
+    click_move(page, "e2", "e4")
+    wait_for_your_move(page)
+    click_move(page, "e4", "d5")  # capture
+    wait_for_your_move(page)
+    click_move(page, "g1", "f3")
+    wait_for_your_move(page)
+    click_move(page, "f1", "c4")
+    wait_for_your_move(page)
+    click_move(page, "e1", "g1")  # castling
+    wait_for_your_move(page)
+    assert sounds(page) == [
+        "start",
+        "move",
+        "move-bot",
+        "capture",
+        "move-bot",
+        "move",
+        "move-bot",
+        "move",
+        "move-bot",
+        "castle",
+        "move-bot",
+    ]
+
+
+def test_bot_capture_and_castling_sound_like_the_bots(page: Page, seed_prefs):
+    page.add_init_script(RECORD_SOUNDS)
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
+    fake_api(page, [("d7d5", "d5"), ("d5e4", "dxe4"), ("a7a6", "a6")])
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page)
+    click_move(page, "e2", "e4")
+    wait_for_your_move(page)
+    click_move(page, "g1", "f3")
+    wait_for_your_move(page)
+    assert "capture-bot" in sounds(page)
+
+
+def test_game_end_plays_a_sound_and_a_reload_stays_silent(page: Page, seed_prefs):
+    page.add_init_script(RECORD_SOUNDS)
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page)
+    page.reload()  # no click yet in this page: the browser allows no audio
+    wait_for_your_move(page)
+    assert sounds(page) == []
+    click_move(page, "e2", "e4")  # the first click allows it
+    wait_for_your_move(page)
+    assert sounds(page)[-1] == "move-bot"
+    page.locator("#resign").click()
+    page.locator("#resign").click()
+    page.locator("#end-card").wait_for(state="visible")
+    assert sounds(page)[-1] == "end"
+
+
+def test_sound_can_be_turned_off_and_the_choice_is_kept(page: Page, seed_prefs):
+    page.add_init_script(RECORD_SOUNDS)
+    seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
+    fake_api(page, [("d7d5", "d5"), ("a7a6", "a6")])
+    page.goto("/")
+    toggle = page.locator("#sound-toggle")
+    expect(toggle).to_have_text("Sound: on")
+    toggle.click()
+    expect(toggle).to_have_text("Sound: off")
+    expect(page.locator("#sound-volume")).to_be_disabled()
+    play(page)
+    wait_for_your_move(page)
+    click_move(page, "e2", "e4")
+    wait_for_your_move(page)
+    assert sounds(page) == []
+    page.reload()
+    expect(page.locator("#sound-toggle")).to_have_text("Sound: off")
+
+
+def test_volume_is_kept(page: Page):
+    page.goto("/")
+    slider = page.locator("#sound-volume")
+    expect(slider).to_have_value("0.7")
+    slider.fill("0.3")
+    page.reload()
+    expect(page.locator("#sound-volume")).to_have_value("0.3")
+
+
+def test_generated_sounds_are_audible_and_different(page: Page):
+    page.goto("/")
+    page.locator(".square").first.wait_for()
+    result = page.evaluate(
+        """async () => {
+          const { scheduleSound } = await import("/js/sound.js");
+          const render = async (type, byBot = false) => {
+            const context = new OfflineAudioContext(1, 44100, 44100);
+            scheduleSound(context, context.destination, type, 0, byBot);
+            const samples = (await context.startRendering()).getChannelData(0);
+            let peak = 0, last = 0, energy = 0, crossings = 0;
+            for (let i = 0; i < samples.length; i += 1) {
+              const value = Math.abs(samples[i]);
+              if (value > peak) peak = value;
+              if (value > 0.001) last = i;
+              energy += samples[i] * samples[i];
+              // Just after the click and before a second knock: this window shows the pitch.
+              if (i > 900 && i < 2500 && samples[i - 1] * samples[i] < 0) crossings += 1;
+            }
+            return { peak, seconds: last / 44100, energy, crossings };
+          };
+          const out = {};
+          for (const type of ["move", "capture", "castle", "start", "end"]) {
+            out[type] = await render(type);
+          }
+          out.bot = await render("move", true);
+          return out;
+        }"""
+    )
+    for name, item in result.items():
+        assert item["peak"] > 0.05, name
+        assert item["seconds"] < 0.8, name
+    assert result["capture"]["energy"] > result["move"]["energy"]
+    assert result["capture"]["crossings"] < result["move"]["crossings"]  # lower pitch
+    assert result["castle"]["seconds"] > result["move"]["seconds"]  # two knocks
+    assert result["bot"]["crossings"] < result["move"]["crossings"]
+    assert result["end"]["seconds"] > result["start"]["seconds"]

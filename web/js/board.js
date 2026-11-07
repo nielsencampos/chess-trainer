@@ -15,6 +15,9 @@ export const PIECE_SETS = ["merida", "cburnett", "chessnut", "fantasy", "unicode
  * @typedef {{
  *   legalMoves: (square: string) => LegalMove[],
  *   onMove: (from: string, to: string, promotion?: string) => void,
+ *   premoveTargets?: (square: string) => LegalMove[],
+ *   onPremove?: (from: string, to: string) => void,
+ *   onPremoveCancel?: () => void,
  * }} BoardCallbacks
  */
 
@@ -54,6 +57,10 @@ export class Board {
     this.fen = "";
     /** @type {"w" | "b" | null} */
     this.movableColor = null;
+    /** @type {"w" | "b" | null} */
+    this.premoveColor = null;
+    /** @type {string[]} */
+    this.premoveSquares = [];
     /** @type {string[]} */
     this.lastMove = [];
     /** @type {string | null} */
@@ -76,7 +83,10 @@ export class Board {
     root.addEventListener("pointermove", (event) => this.onPointerMove(event));
     root.addEventListener("pointerup", (event) => this.onPointerUp(event));
     root.addEventListener("pointercancel", () => this.cancelPress());
-    root.addEventListener("contextmenu", (event) => event.preventDefault());
+    root.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+      if (this.premoveSquares.length > 0) this.callbacks.onPremoveCancel?.();
+    });
     new ResizeObserver(() => this.updateSquareSize()).observe(root);
   }
 
@@ -106,14 +116,29 @@ export class Board {
     this.render();
   }
 
-  /** @param {"w" | "b" | null} color  Whose pieces can be moved; null locks the board. */
-  setMovable(color) {
+  /**
+   * @param {"w" | "b" | null} color  Whose pieces can be moved; null locks the board.
+   * @param {"w" | "b" | null} [premoveColor]  Whose pieces can queue a premove meanwhile.
+   */
+  setMovable(color, premoveColor = null) {
     this.movableColor = color;
-    this.root.classList.toggle("can-move", color !== null);
-    if (color === null) {
+    this.premoveColor = premoveColor;
+    this.root.classList.toggle("can-move", this.activeColor !== null);
+    if (this.activeColor === null) {
       this.clearSelection();
       this.closePromotion();
     }
+    this.render();
+  }
+
+  /** The color the user can act with now, for a move or a premove. */
+  get activeColor() {
+    return this.movableColor ?? this.premoveColor;
+  }
+
+  /** @param {string[]} squares  The queued premove's from and to, or nothing. */
+  setPremoveSquares(squares) {
+    this.premoveSquares = squares;
     this.render();
   }
 
@@ -167,7 +192,8 @@ export class Board {
       element.classList.toggle("check", this.checkSquare === name);
       element.classList.toggle("target", target !== undefined && !target.capture);
       element.classList.toggle("capture", target !== undefined && target.capture);
-      element.classList.toggle("movable", piece?.color === this.movableColor);
+      element.classList.toggle("movable", piece?.color === this.activeColor);
+      element.classList.toggle("premove", this.premoveSquares.includes(name));
       element.dataset.piece = piece ? `${piece.color}${piece.type}` : "";
     }
   }
@@ -208,14 +234,15 @@ export class Board {
 
   /** @param {string} square */
   isMovablePiece(square) {
-    return this.movableColor !== null && parsePlacement(this.fen).get(square)?.color === this.movableColor;
+    return this.activeColor !== null && parsePlacement(this.fen).get(square)?.color === this.activeColor;
   }
 
   /** @param {PointerEvent} event */
   onPointerDown(event) {
-    if (event.button !== 0 || this.movableColor === null || this.promotion) return;
+    if (event.button !== 0 || this.activeColor === null || this.promotion) return;
     const square = this.squareAt(event);
     if (!square) return;
+    if (this.premoveSquares.length > 0) this.callbacks.onPremoveCancel?.();
 
     if (this.selected && this.targets.some((target) => target.to === square)) {
       this.finishMove(this.selected, square);
@@ -302,7 +329,9 @@ export class Board {
   /** @param {string} square */
   select(square) {
     this.selected = square;
-    this.targets = this.callbacks.legalMoves(square);
+    this.targets = this.movableColor !== null
+      ? this.callbacks.legalMoves(square)
+      : (this.callbacks.premoveTargets?.(square) ?? []);
     this.render();
   }
 
@@ -316,6 +345,11 @@ export class Board {
    * @param {string} to
    */
   finishMove(from, to) {
+    if (this.movableColor === null) {
+      this.clearSelection();
+      this.callbacks.onPremove?.(from, to);
+      return;
+    }
     const target = this.targets.find((candidate) => candidate.to === to);
     if (target?.promotion) {
       this.openPromotion(from, to);

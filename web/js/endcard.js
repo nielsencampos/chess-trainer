@@ -25,6 +25,16 @@ async function copyText(text) {
   if (!ok) throw new Error("copy failed");
 }
 
+/** @param {string} pgn */
+function downloadPgn(pgn) {
+  const date = new Date().toISOString().slice(0, 10);
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(new Blob([pgn], { type: "application/x-chess-pgn" }));
+  link.download = `chess-trainer-${date}.pgn`;
+  link.click();
+  URL.revokeObjectURL(link.href);
+}
+
 /**
  * @param {number} ply
  * @param {string} san
@@ -85,4 +95,8 @@ export function renderEndCard(summary) {
     }, COPY_FEEDBACK_MS);
   };
   byId("lichess-link").href = summary.lichess_url;
+
+  const downloadButton = byId("download-pgn");
+  downloadButton.hidden = false;
+  downloadButton.onclick = () => downloadPgn(summary.pgn);
 }

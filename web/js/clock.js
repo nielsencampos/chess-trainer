@@ -28,8 +28,13 @@ export class Clocks {
     this.onTick = onTick;
     this.enabled = false;
     this.increment = 0;
-    this.movesToBonus = null;
-    this.bonus = 0;
+    /** @type {{after_moves: number, add_ms: number}[]} */
+    this.periods = [];
+    this.delay = 0;
+    /** @type {string | null} */
+    this.delayKind = null;
+    this.turnStartRemaining = 0;
+    this.usDelayLeft = 0;
     this.lowTime = LOW_TIME_MS;
     this.remaining = { w: 0, b: 0 };
     this.movesMade = { w: 0, b: 0 };
@@ -40,19 +45,33 @@ export class Clocks {
   }
 
   /**
-   * @param {{base_ms: number, increment_ms: number, moves_to_bonus: number | null,
-   *   bonus_ms: number} | null} timeControl
+   * @param {{base_ms: number, increment_ms: number,
+   *   periods: {after_moves: number, add_ms: number}[],
+   *   delay_ms: number, delay_kind: string | null} | null} timeControl
    */
   reset(timeControl) {
     this.stop();
     this.enabled = timeControl !== null;
     this.increment = timeControl?.increment_ms ?? 0;
-    this.movesToBonus = timeControl?.moves_to_bonus ?? null;
-    this.bonus = timeControl?.bonus_ms ?? 0;
+    this.periods = timeControl?.periods ?? [];
+    this.delay = timeControl?.delay_ms ?? 0;
+    this.delayKind = timeControl?.delay_kind ?? null;
     this.remaining = { w: timeControl?.base_ms ?? 0, b: timeControl?.base_ms ?? 0 };
     this.movesMade = { w: 0, b: 0 };
     // A short game would otherwise start in red.
     this.lowTime = Math.min(LOW_TIME_MS, (timeControl?.base_ms ?? 0) * LOW_TIME_SHARE);
+    this.onTick();
+  }
+
+  /**
+   * Puts the clocks back where a saved game left them.
+   * @param {{w: number | null, b: number | null}} remaining
+   * @param {{w: number, b: number}} movesMade
+   */
+  restore(remaining, movesMade) {
+    if (!this.enabled) return;
+    this.remaining = { w: remaining.w ?? this.remaining.w, b: remaining.b ?? this.remaining.b };
+    this.movesMade = { ...movesMade };
     this.onTick();
   }
 
@@ -61,6 +80,8 @@ export class Clocks {
     if (!this.enabled) return;
     this.settle();
     this.active = color;
+    this.turnStartRemaining = this.remaining[color];
+    this.usDelayLeft = this.delayKind === "us" ? this.delay : 0;
     this.lastTick = performance.now();
     clearInterval(this.timer);
     this.timer = setInterval(() => this.tick(), TICK_MS);
@@ -74,15 +95,22 @@ export class Clocks {
   }
 
   /**
-   * A player finished a move: stop their time, add the increment and any bonus it earned.
+   * A player finished a move: stop their time, then add the increment, any Bronstein refund
+   * and the time of a new period.
    * @param {"w" | "b"} color
    */
   press(color) {
     if (!this.enabled) return;
     this.stop();
     this.remaining[color] += this.increment;
+    if (this.delayKind === "bronstein") {
+      const used = this.turnStartRemaining - this.remaining[color] + this.increment;
+      this.remaining[color] += Math.min(used, this.delay);
+    }
     this.movesMade[color] += 1;
-    if (this.movesMade[color] === this.movesToBonus) this.remaining[color] += this.bonus;
+    for (const period of this.periods) {
+      if (this.movesMade[color] === period.after_moves) this.remaining[color] += period.add_ms;
+    }
     this.onTick();
   }
 
@@ -99,7 +127,11 @@ export class Clocks {
   settle() {
     if (this.active === null) return;
     const now = performance.now();
-    this.remaining[this.active] = Math.max(0, this.remaining[this.active] - (now - this.lastTick));
+    let elapsed = now - this.lastTick;
+    const free = Math.min(this.usDelayLeft, elapsed);
+    this.usDelayLeft -= free;
+    elapsed -= free;
+    this.remaining[this.active] = Math.max(0, this.remaining[this.active] - elapsed);
     this.lastTick = now;
   }
 

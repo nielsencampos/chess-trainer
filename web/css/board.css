@@ -31,7 +31,8 @@
 
 .square.last::before,
 .square.selected::before,
-.square.check::before {
+.square.check::before,
+.square.premove::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -39,6 +40,10 @@
 
 .square.last::before {
   background: var(--highlight-last);
+}
+
+.square.premove::before {
+  background: var(--highlight-premove);
 }
 
 .square.selected::before {
