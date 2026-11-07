@@ -10,13 +10,13 @@ from datetime import UTC, datetime
 
 import chess
 
-from app.book.models import Book
+from app.book.models import Book, Variant
 from app.engine.levels import Level
 from app.engine.process import MoveEngine
 from app.game.imports import read_pgn_text
 from app.game.pace import TIME_CONTROLS, clock_after_move, engine_budget_s, human_delay_ms
 from app.game.session import Deviation, GameResult, GameSession, MoveRecord, Selection, Side
-from app.game.store import GameStore, restore_session
+from app.game.store import GAME_LINE_PREFIX, GameStore, restore_session
 
 MAX_GAMES_IN_MEMORY = 32
 GAME_ID_ALPHABET = string.ascii_lowercase + string.digits
@@ -35,6 +35,13 @@ class UnknownGameError(KeyError):
 
 class InvalidSetupError(ValueError):
     pass
+
+
+@dataclass(frozen=True, slots=True)
+class FromGame:
+    game_id: str
+    upto_ply: int | None = None
+    from_position: bool = False
 
 
 @dataclass(frozen=True, slots=True)
@@ -74,19 +81,23 @@ class GameService:
         pace: str,
         time_control: str,
         ui: Mapping[str, bool] | None = None,
+        from_game: FromGame | None = None,
     ) -> tuple[GameSession, BotReply | None]:
-        if not variant_ids:
+        if from_game is None and not variant_ids:
             raise InvalidSetupError("select at least one variation")
         if level not in self.levels:
             raise InvalidSetupError(f"unknown level {level!r}")
         if time_control not in TIME_CONTROLS:
             raise InvalidSetupError(f"unknown time control {time_control!r}")
         variants = []
-        for variant_id in dict.fromkeys(variant_ids):
-            variant = self.book.variants.get(variant_id)
-            if variant is None:
-                raise InvalidSetupError(f"unknown variation {variant_id!r}")
-            variants.append(variant)
+        if from_game is not None:
+            variants.append(self._saved_game_line(from_game))
+        else:
+            for variant_id in dict.fromkeys(variant_ids):
+                variant = self.book.variants.get(variant_id)
+                if variant is None:
+                    raise InvalidSetupError(f"unknown variation {variant_id!r}")
+                variants.append(variant)
 
         self._abandon_active()
         control = TIME_CONTROLS[time_control]
@@ -103,6 +114,8 @@ class GameService:
             engine_name=self.engine.name,
         )
         session.ui = dict(ui or {})
+        if from_game is not None and from_game.from_position:
+            self._play_given_moves(session, variants[0])
         if control is not None:
             session.user_clock_ms = control.base_ms
             session.bot_clock_ms = control.base_ms
@@ -111,6 +124,31 @@ class GameService:
 
         reply = None if session.is_user_turn else await self._bot_turn(session)
         return session, reply
+
+    def _saved_game_line(self, from_game: FromGame) -> Variant:
+        rows = self.store.finished_games()
+        game = next((item for item in rows if item["game_id"] == from_game.game_id), None)
+        if game is None:
+            raise InvalidSetupError("not a finished game")
+        if game["chess960"]:
+            raise InvalidSetupError("playing from a Chess960 game is not supported yet")
+        plies = from_game.upto_ply or game["plies"]
+        if not 1 <= plies <= game["plies"]:
+            raise InvalidSetupError(f"the game has {game['plies']} plies, not {plies}")
+        line = self.store.game_line(f"{GAME_LINE_PREFIX}{from_game.game_id}:{plies}")
+        if line is None:
+            raise InvalidSetupError("this game cannot be played from")
+        return line
+
+    @staticmethod
+    def _play_given_moves(session: GameSession, line: Variant) -> None:
+        board = chess.Board()
+        for _ in range(len(line.pgn.split())):
+            uci = line.moves[board.epd()][0].uci
+            session.play_given_move(uci)
+            board.push_uci(uci)
+        if session.is_over:
+            raise InvalidSetupError("the game is already over at this move")
 
     def _abandon_active(self) -> None:
         """Only one game runs at a time. The app itself never starts a game over another."""
@@ -125,7 +163,7 @@ class GameService:
             return None
         session = self._games.get(row["game_id"])
         if session is None:
-            session = restore_session(row, self.book, self.opening_names, self.rng)
+            session = restore_session(row, self.book, self.opening_names, self.rng, self.store)
             if session is None:
                 return None
             self._remember(session)

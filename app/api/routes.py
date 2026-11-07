@@ -30,7 +30,8 @@ from app.game.pace import (
     SCORESHEET_GROUPS,
     TIME_CONTROL_GROUPS,
 )
-from app.game.service import GameService, InvalidSetupError, UnknownGameError
+from app.game.review import review_of_pgn
+from app.game.service import FromGame, GameService, InvalidSetupError, UnknownGameError
 from app.game.session import GameFinishedError, IllegalMoveError, NotYourTurnError
 
 router = APIRouter(prefix="/api")
@@ -150,7 +151,19 @@ async def time_controls() -> dict:
 async def create_game(body: NewGameRequest, request: Request) -> NewGameResponse:
     try:
         session, reply = await _service(request).create_game(
-            body.color, body.variant_ids, body.level, body.pace, body.time_control, body.ui
+            body.color,
+            body.variant_ids,
+            body.level,
+            body.pace,
+            body.time_control,
+            body.ui,
+            FromGame(
+                body.from_game.game_id,
+                body.from_game.upto_ply,
+                body.from_game.mode == "position",
+            )
+            if body.from_game
+            else None,
         )
     except GAME_ERRORS as error:
         raise _http_error(error) from error
@@ -178,6 +191,40 @@ async def export_games(body: ExportRequest, request: Request) -> Response:
         media_type="application/x-chess-pgn",
         headers={"Content-Disposition": 'attachment; filename="chess-trainer.pgn"'},
     )
+
+
+@router.get("/games/{game_id}/review")
+async def review_game(game_id: str, request: Request) -> dict:
+    game = _service(request).store.finished_game(game_id)
+    review = review_of_pgn(game["pgn"]) if game else None
+    if review is None:
+        raise HTTPException(404, "game not found")
+    return {
+        **review,
+        "white": game["white"],
+        "black": game["black"],
+        "result": game["result"],
+        "eco": game["eco"],
+        "opening": game["opening"],
+        "chess960": "chess960" in game["pgn"].lower(),
+    }
+
+
+@router.get("/lines/{variant_id}/review")
+async def review_line(variant_id: str, request: Request) -> dict:
+    variant = _service(request).book.variants.get(variant_id)
+    review = review_of_pgn(f"{variant.pgn} *") if variant else None
+    if review is None:
+        raise HTTPException(404, "line not found")
+    return {
+        **review,
+        "white": None,
+        "black": None,
+        "result": None,
+        "eco": variant.eco,
+        "opening": variant.opening,
+        "chess960": False,
+    }
 
 
 @router.get("/games/active")
