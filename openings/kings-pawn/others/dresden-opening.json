@@ -1,0 +1,21 @@
+{
+  "id": "dresden-opening",
+  "names": {
+    "en": "Dresden Opening",
+    "pt-BR": "Abertura Dresden",
+    "es": "Apertura Dresden"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-5970f48d3d81a788",
+      "names": {
+        "en": "The Goblin"
+      },
+      "eco": "C44",
+      "opening": "Dresden Opening: The Goblin",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "c4", "Nf6", "Nxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

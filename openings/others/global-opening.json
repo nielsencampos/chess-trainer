@@ -1,0 +1,23 @@
+{
+  "id": "global-opening",
+  "names": {
+    "en": "Global Opening",
+    "pt-BR": "Abertura Global",
+    "es": "Apertura Global"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-a77eb62c9da8df0d",
+      "names": {
+        "en": "Global Opening",
+        "pt-BR": "Abertura Global",
+        "es": "Apertura Global"
+      },
+      "eco": "A00",
+      "opening": "Global Opening",
+      "moves": ["h3", "e5", "a3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

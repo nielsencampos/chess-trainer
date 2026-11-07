@@ -1,0 +1,115 @@
+{
+  "id": "london-system",
+  "names": {
+    "en": "London System",
+    "pt-BR": "Sistema Londres",
+    "es": "Sistema Londres"
+  },
+  "order": 9,
+  "variants": [
+    {
+      "names": {
+        "en": "Main",
+        "pt-BR": "Principal",
+        "es": "Principal"
+      },
+      "lines": [
+        {
+          "id": "line-241685a82b326794",
+          "names": {
+            "en": "London System",
+            "pt-BR": "Sistema Londres",
+            "es": "Sistema Londres"
+          },
+          "eco": "A48",
+          "opening": "London System",
+          "moves": ["d4", "Nf6", "Nf3", "g6", "Bf4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b5cb57184ceadcbe",
+          "names": {
+            "en": "London System",
+            "pt-BR": "Sistema Londres",
+            "es": "Sistema Londres"
+          },
+          "eco": "A48",
+          "opening": "London System",
+          "moves": ["d4", "Nf6", "Nf3", "g6", "Bf4", "Bg7", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-70e6ab2ae0ecc4f8",
+          "names": {
+            "en": "London System",
+            "pt-BR": "Sistema Londres",
+            "es": "Sistema Londres"
+          },
+          "eco": "A48",
+          "opening": "London System",
+          "moves": ["d4", "Nf6", "Nf3", "g6", "Bf4", "Bg7", "e3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "with Be2"
+      },
+      "lines": [
+        {
+          "id": "line-49d6de391043b3e8",
+          "names": {
+            "en": "with Be2"
+          },
+          "eco": "A48",
+          "opening": "London System, with Be2",
+          "moves": ["d4", "Nf6", "Nf3", "g6", "Bf4", "Bg7", "e3", "d6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9c1cd6cd3cf87ee8",
+          "names": {
+            "en": "with Be2"
+          },
+          "eco": "A48",
+          "opening": "London System, with Be2",
+          "moves": ["d4", "Nf6", "Nf3", "g6", "Bf4", "Bg7", "e3", "d6", "Be2", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-280e13d8c5103906",
+          "names": {
+            "en": "with Be2"
+          },
+          "eco": "A48",
+          "opening": "London System, with Be2",
+          "moves": ["d4", "Nf6", "Nf3", "g6", "Bf4", "Bg7", "e3", "d6", "h3", "c5", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-553dc0e3086e8f4f",
+      "names": {
+        "en": "Poisoned Pawn Variation"
+      },
+      "eco": "D02",
+      "opening": "London System: Poisoned Pawn Variation",
+      "moves": ["d4", "Nf6", "Nf3", "d5", "Bf4", "c5", "e3", "Qb6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b9fe5406cb061330",
+      "names": {
+        "en": "with Bd3"
+      },
+      "eco": "A48",
+      "opening": "London System, with Bd3",
+      "moves": ["d4", "Nf6", "Nf3", "g6", "Bf4", "Bg7", "e3", "d6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

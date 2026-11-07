@@ -1,0 +1,1434 @@
+{
+  "id": "king-s-indian-defense",
+  "names": {
+    "en": "King's Indian Defense",
+    "pt-BR": "Defesa Índia do Rei",
+    "es": "Defensa India de Rey"
+  },
+  "order": 4,
+  "variants": [
+    {
+      "names": {
+        "en": "Fianchetto Variation",
+        "pt-BR": "Variação do Fianqueto",
+        "es": "Variante del Fianchetto"
+      },
+      "lines": [
+        {
+          "id": "line-539f3c2e87cf916f",
+          "names": {
+            "en": "Fianchetto Variation, Delayed Fianchetto"
+          },
+          "eco": "E62",
+          "opening": "King's Indian Defense: Fianchetto Variation, Delayed Fianchetto",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "Nf3", "d6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6f96485de1fbf09c",
+          "names": {
+            "en": "Fianchetto Variation, Long Variation"
+          },
+          "eco": "E68",
+          "opening": "King's Indian Defense: Fianchetto Variation, Long Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "Nf3", "d6", "g3", "O-O", "Bg2", "Nbd7", "O-O", "e5", "e4", "Re8", "h3", "exd4", "Nxd4", "Nc5", "Re1", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8bf581592d22448a",
+          "names": {
+            "en": "Fianchetto Variation, Simagin Variation",
+            "pt-BR": "Variação do Fianqueto, Variação Simagin",
+            "es": "Variante del Fianchetto, Variante Simagin"
+          },
+          "eco": "E62",
+          "opening": "King's Indian Defense: Fianchetto Variation, Simagin Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "Nf3", "d6", "g3", "O-O", "Bg2", "Nc6", "O-O", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-de029d4ccbe717e5",
+          "names": {
+            "en": "Fianchetto Variation, Larsen Defense",
+            "pt-BR": "Variação do Fianqueto, Defesa Larsen",
+            "es": "Variante del Fianchetto, Defensa Larsen"
+          },
+          "eco": "E62",
+          "opening": "King's Indian Defense: Fianchetto Variation, Larsen Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "Nf3", "d6", "g3", "O-O", "Bg2", "c6", "O-O", "Bf5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-81b4eadf6407b3e4",
+          "names": {
+            "en": "Fianchetto Variation, Benjamin Defense",
+            "pt-BR": "Variação do Fianqueto, Defesa Benjamin",
+            "es": "Variante del Fianchetto, Defensa Benjamin"
+          },
+          "eco": "E61",
+          "opening": "King's Indian Defense: Fianchetto Variation, Benjamin Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "Nf3", "d6", "g3", "O-O", "Bg2", "c6", "O-O", "Qb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9f0026b22bd63d5a",
+          "names": {
+            "en": "Fianchetto Variation",
+            "pt-BR": "Variação do Fianqueto",
+            "es": "Variante del Fianchetto"
+          },
+          "eco": "E60",
+          "opening": "King's Indian Defense: Fianchetto Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-63e6c763868c359c",
+          "names": {
+            "en": "Fianchetto Variation, Classical Fianchetto"
+          },
+          "eco": "E67",
+          "opening": "King's Indian Defense: Fianchetto Variation, Classical Fianchetto",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "Nbd7", "Nc3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-66ddb7b661cfa4cd",
+          "names": {
+            "en": "Fianchetto Variation, Classical Variation",
+            "pt-BR": "Variação do Fianqueto, Variação Clássica",
+            "es": "Variante del Fianchetto, Variante Clásica"
+          },
+          "eco": "E68",
+          "opening": "King's Indian Defense: Fianchetto Variation, Classical Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "Nbd7", "Nc3", "e5", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-903e354652344600",
+          "names": {
+            "en": "Fianchetto Variation, Classical Main Line"
+          },
+          "eco": "E69",
+          "opening": "King's Indian Defense: Fianchetto Variation, Classical Main Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "Nbd7", "Nc3", "e5", "e4", "c6", "h3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-148819dfec9c1d40",
+          "names": {
+            "en": "Fianchetto Variation, Panno Variation",
+            "pt-BR": "Variação do Fianqueto, Variação Panno",
+            "es": "Variante del Fianchetto, Variante Panno"
+          },
+          "eco": "E63",
+          "opening": "King's Indian Defense: Fianchetto Variation, Panno Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "Nc6", "Nc3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ae94eb40a5a79ab7",
+          "names": {
+            "en": "Fianchetto Variation, Panno Variation, Donner Line",
+            "pt-BR": "Variação do Fianqueto, Variação Panno, Linha Donner",
+            "es": "Variante del Fianchetto, Variante Panno, Línea Donner"
+          },
+          "eco": "E63",
+          "opening": "King's Indian Defense: Fianchetto Variation, Panno Variation, Donner Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "Nc6", "Nc3", "a6", "d5", "Na5", "Nd2", "c5", "Qc2", "Rb8", "b3", "b5", "Bb2", "bxc4", "bxc4", "Bh6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9652a0605767d512",
+          "names": {
+            "en": "Fianchetto Variation, Panno Variation, Blockade Line",
+            "pt-BR": "Variação do Fianqueto, Variação Panno, Linha Blockade",
+            "es": "Variante del Fianchetto, Variante Panno, Línea Blockade"
+          },
+          "eco": "E63",
+          "opening": "King's Indian Defense: Fianchetto Variation, Panno Variation, Blockade Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "Nc6", "Nc3", "a6", "d5", "Na5", "Nd2", "c5", "Qc2", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-76c59b7c7b864f2f",
+          "names": {
+            "en": "Fianchetto Variation, Panno Variation, Korchnoi Line",
+            "pt-BR": "Variação do Fianqueto, Variação Panno, Linha Korchnoi",
+            "es": "Variante del Fianchetto, Variante Panno, Línea Korchnoi"
+          },
+          "eco": "E63",
+          "opening": "King's Indian Defense: Fianchetto Variation, Panno Variation, Korchnoi Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "Nc6", "Nc3", "a6", "h3", "Rb8", "Be3", "b5", "Nd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-057ae0495666487f",
+          "names": {
+            "en": "Fianchetto Variation, Uhlmann-Szabo System",
+            "pt-BR": "Variação do Fianqueto, Sistema Uhlmann-Szabo",
+            "es": "Variante del Fianchetto, Sistema Uhlmann-Szabo"
+          },
+          "eco": "E62",
+          "opening": "King's Indian Defense: Fianchetto Variation, Uhlmann-Szabo System",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "Nc6", "Nc3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1614526e139a2410",
+          "names": {
+            "en": "Fianchetto Variation, Yugoslav Variation"
+          },
+          "eco": "E65",
+          "opening": "King's Indian Defense: Fianchetto Variation, Yugoslav Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "c5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7797b5b88e02baf2",
+          "names": {
+            "en": "Fianchetto Variation, Yugoslav Variation, Advance Line"
+          },
+          "eco": "E66",
+          "opening": "King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Advance Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "c5", "Nc3", "Nc6", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c4e25b97de7f85fe",
+          "names": {
+            "en": "Fianchetto Variation, Yugoslav Variation, Exchange Line"
+          },
+          "eco": "E65",
+          "opening": "King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Exchange Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "c5", "Nc3", "Nc6", "dxc5", "dxc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c5fa785b67d7d3d7",
+          "names": {
+            "en": "Fianchetto Variation, Kavalek Defense",
+            "pt-BR": "Variação do Fianqueto, Defesa Kavalek",
+            "es": "Variante del Fianchetto, Defensa Kavalek"
+          },
+          "eco": "E62",
+          "opening": "King's Indian Defense: Fianchetto Variation, Kavalek Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "O-O", "Bg2", "d6", "O-O", "c6", "Nc3", "Qa5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-63e49a8efaa5fa5c",
+          "names": {
+            "en": "Fianchetto Variation, Pterodactyl Variation",
+            "pt-BR": "Variação do Fianqueto, Variação Pterodactyl",
+            "es": "Variante del Fianchetto, Variante Pterodactyl"
+          },
+          "eco": "E64",
+          "opening": "King's Indian Defense: Fianchetto Variation, Pterodactyl Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "c5", "Bg2", "Qa5+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a0e5335dd793cb5e",
+          "names": {
+            "en": "Fianchetto Variation, Hungarian Variation"
+          },
+          "eco": "E64",
+          "opening": "King's Indian Defense: Fianchetto Variation, Hungarian Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "d6", "Bg2", "O-O", "O-O", "Nbd7", "Nc3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7e1e45c8bbff2cf7",
+          "names": {
+            "en": "Fianchetto Variation, Double Fianchetto Attack"
+          },
+          "eco": "E64",
+          "opening": "King's Indian Defense: Fianchetto Variation, Double Fianchetto Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "d6", "Bg2", "O-O", "O-O", "Nbd7", "Nc3", "e5", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fcd44a9616b18ee6",
+          "names": {
+            "en": "Fianchetto Variation, Yugoslav System"
+          },
+          "eco": "E64",
+          "opening": "King's Indian Defense: Fianchetto Variation, Yugoslav System",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "d6", "Bg2", "O-O", "O-O", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1dac52321fdd60d5",
+          "names": {
+            "en": "Fianchetto Variation, Immediate Fianchetto"
+          },
+          "eco": "E60",
+          "opening": "King's Indian Defense: Fianchetto Variation, Immediate Fianchetto",
+          "moves": ["d4", "Nf6", "c4", "g6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b96a766d24da8415",
+          "names": {
+            "en": "Fianchetto Variation, Debrecen Defense",
+            "pt-BR": "Variação do Fianqueto, Defesa Debrecen",
+            "es": "Variante del Fianchetto, Defensa Debrecen"
+          },
+          "eco": "E67",
+          "opening": "King's Indian Defense: Fianchetto Variation, Debrecen Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "g3", "Bg7", "Bg2", "O-O", "Nc3", "d6", "Nf3", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f592435e49ee4440",
+          "names": {
+            "en": "Fianchetto Variation, Carlsbad Variation",
+            "pt-BR": "Variação do Fianqueto, Variação Carlsbad",
+            "es": "Variante del Fianchetto, Variante Carlsbad"
+          },
+          "eco": "E62",
+          "opening": "King's Indian Defense: Fianchetto Variation, Carlsbad Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "g3", "Bg7", "Bg2", "O-O", "Nc3", "d6", "Nf3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6de8677b0d64d241",
+          "names": {
+            "en": "Fianchetto Variation, Lesser Simagin (Spassky)"
+          },
+          "eco": "E62",
+          "opening": "King's Indian Defense: Fianchetto Variation, Lesser Simagin (Spassky)",
+          "moves": ["d4", "Nf6", "c4", "g6", "g3", "Bg7", "Bg2", "O-O", "Nc3", "d6", "Nf3", "Nc6", "O-O", "Bf5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-302b9fa3259d22a1",
+          "names": {
+            "en": "Fianchetto Variation, Yugoslav Variation, Rare Line"
+          },
+          "eco": "E64",
+          "opening": "King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Rare Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "g3", "Bg7", "Bg2", "O-O", "Nc3", "d6", "Nf3", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Orthodox Variation",
+        "pt-BR": "Variação Orthodox",
+        "es": "Variante Orthodox"
+      },
+      "lines": [
+        {
+          "id": "line-2cf43e2f31b3a34f",
+          "names": {
+            "en": "Orthodox Variation, Positional Defense",
+            "pt-BR": "Variação Orthodox, Defesa Positional",
+            "es": "Variante Orthodox, Defensa Positional"
+          },
+          "eco": "E94",
+          "opening": "King's Indian Defense: Orthodox Variation, Positional Defense",
+          "moves": ["d4", "Nf6", "c4", "d6", "Nc3", "Nbd7", "e4", "e5", "Nf3", "g6", "Be2", "Bg7", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6359dfab17f88d02",
+          "names": {
+            "en": "Orthodox Variation",
+            "pt-BR": "Variação Orthodox",
+            "es": "Variante Orthodox"
+          },
+          "eco": "E91",
+          "opening": "King's Indian Defense: Orthodox Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-041c7c1782d0927a",
+          "names": {
+            "en": "Orthodox Variation, Positional Defense, Closed Line"
+          },
+          "eco": "E94",
+          "opening": "King's Indian Defense: Orthodox Variation, Positional Defense, Closed Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "Nbd7", "O-O", "e5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0a70edba985ddbcb",
+          "names": {
+            "en": "Orthodox Variation",
+            "pt-BR": "Variação Orthodox",
+            "es": "Variante Orthodox"
+          },
+          "eco": "E92",
+          "opening": "King's Indian Defense: Orthodox Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6a38758786dc26dd",
+          "names": {
+            "en": "Orthodox Variation, Gligoric-Taimanov System",
+            "pt-BR": "Variação Orthodox, Sistema Gligoric-Taimanov",
+            "es": "Variante Orthodox, Sistema Gligoric-Taimanov"
+          },
+          "eco": "E92",
+          "opening": "King's Indian Defense: Orthodox Variation, Gligoric-Taimanov System",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4d47eb00ea319c80",
+          "names": {
+            "en": "Orthodox Variation",
+            "pt-BR": "Variação Orthodox",
+            "es": "Variante Orthodox"
+          },
+          "eco": "E94",
+          "opening": "King's Indian Defense: Orthodox Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c8353758db4416a5",
+          "names": {
+            "en": "Orthodox Variation, Glek Defense",
+            "pt-BR": "Variação Orthodox, Defesa Glek",
+            "es": "Variante Orthodox, Defensa Glek"
+          },
+          "eco": "E94",
+          "opening": "King's Indian Defense: Orthodox Variation, Glek Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Na6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d6d384b895159411",
+          "names": {
+            "en": "Orthodox Variation",
+            "pt-BR": "Variação Orthodox",
+            "es": "Variante Orthodox"
+          },
+          "eco": "E95",
+          "opening": "King's Indian Defense: Orthodox Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nbd7", "Re1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6031957f1d6b03e8",
+          "names": {
+            "en": "Orthodox Variation, Positional Defense, Main Line",
+            "pt-BR": "Variação Orthodox, Defesa Positional, Linha Principal",
+            "es": "Variante Orthodox, Defensa Positional, Línea Principal"
+          },
+          "eco": "E96",
+          "opening": "King's Indian Defense: Orthodox Variation, Positional Defense, Main Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nbd7", "Re1", "c6", "Bf1", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cc103480ed14c106",
+          "names": {
+            "en": "Orthodox Variation, Aronin-Taimanov Defense",
+            "pt-BR": "Variação Orthodox, Defesa Aronin-Taimanov",
+            "es": "Variante Orthodox, Defensa Aronin-Taimanov"
+          },
+          "eco": "E97",
+          "opening": "King's Indian Defense: Orthodox Variation, Aronin-Taimanov Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fc2913b99e9a7db4",
+          "names": {
+            "en": "Orthodox Variation, Korchnoi Attack",
+            "pt-BR": "Variação Orthodox, Ataque Korchnoi",
+            "es": "Variante Orthodox, Ataque Korchnoi"
+          },
+          "eco": "E97",
+          "opening": "King's Indian Defense: Orthodox Variation, Korchnoi Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6", "d5", "Ne7", "Bd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-559fcf7ee6e4b475",
+          "names": {
+            "en": "Orthodox Variation, Modern System"
+          },
+          "eco": "E97",
+          "opening": "King's Indian Defense: Orthodox Variation, Modern System",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6", "d5", "Ne7", "Nd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0d05c9c41c731455",
+          "names": {
+            "en": "Orthodox Variation, Classical System"
+          },
+          "eco": "E98",
+          "opening": "King's Indian Defense: Orthodox Variation, Classical System",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6", "d5", "Ne7", "Ne1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dd05b25a381e2f65",
+          "names": {
+            "en": "Orthodox Variation, Classical System, Neo-Classical Line"
+          },
+          "eco": "E98",
+          "opening": "King's Indian Defense: Orthodox Variation, Classical System, Neo-Classical Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6", "d5", "Ne7", "Ne1", "Nd7", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a93c9bbf8d6f7cb4",
+          "names": {
+            "en": "Orthodox Variation, Classical System, Kozul Gambit"
+          },
+          "eco": "E98",
+          "opening": "King's Indian Defense: Orthodox Variation, Classical System, Kozul Gambit",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6", "d5", "Ne7", "Ne1", "Nd7", "Be3", "f5", "f3", "f4", "Bf2", "g5", "Rc1", "Ng6", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-57b29f9d2d5d2610",
+          "names": {
+            "en": "Orthodox Variation, Classical System, Traditional Line"
+          },
+          "eco": "E99",
+          "opening": "King's Indian Defense: Orthodox Variation, Classical System, Traditional Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6", "d5", "Ne7", "Ne1", "Nd7", "f3", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9b4da7e0780eaa5c",
+          "names": {
+            "en": "Orthodox Variation, Classical System, Benko Attack"
+          },
+          "eco": "E99",
+          "opening": "King's Indian Defense: Orthodox Variation, Classical System, Benko Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6", "d5", "Ne7", "Ne1", "Nd7", "f3", "f5", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d512f3aa18bb3326",
+          "names": {
+            "en": "Orthodox Variation, Bayonet Attack",
+            "pt-BR": "Variação Orthodox, Ataque Bayonet",
+            "es": "Variante Orthodox, Ataque Bayonet"
+          },
+          "eco": "E97",
+          "opening": "King's Indian Defense: Orthodox Variation, Bayonet Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6", "d5", "Ne7", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-97ec78c490859a98",
+          "names": {
+            "en": "Orthodox Variation, Bayonet Attack, Yepishin's Line",
+            "pt-BR": "Variação Orthodox, Ataque Bayonet, Linha Yepishin's",
+            "es": "Variante Orthodox, Ataque Bayonet, Línea Yepishin's"
+          },
+          "eco": "E97",
+          "opening": "King's Indian Defense: Orthodox Variation, Bayonet Attack, Yepishin's Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6", "d5", "Ne7", "b4", "Nh5", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0ce364a6a6d49135",
+          "names": {
+            "en": "Orthodox Variation, Bayonet Attack, Sokolov's Line",
+            "pt-BR": "Variação Orthodox, Ataque Bayonet, Linha Sokolov's",
+            "es": "Variante Orthodox, Ataque Bayonet, Línea Sokolov's"
+          },
+          "eco": "E97",
+          "opening": "King's Indian Defense: Orthodox Variation, Bayonet Attack, Sokolov's Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "Nc6", "d5", "Ne7", "b4", "Nh5", "Re1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9e1c649be9f5a971",
+          "names": {
+            "en": "Orthodox Variation, Ukrainian Defense",
+            "pt-BR": "Variação Orthodox, Defesa Ukrainian",
+            "es": "Variante Orthodox, Defensa Ukrainian"
+          },
+          "eco": "E94",
+          "opening": "King's Indian Defense: Orthodox Variation, Ukrainian Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b3f153c48b709091",
+          "names": {
+            "en": "Orthodox Variation, Donner Defense",
+            "pt-BR": "Variação Orthodox, Defesa Donner",
+            "es": "Variante Orthodox, Defensa Donner"
+          },
+          "eco": "E94",
+          "opening": "King's Indian Defense: Orthodox Variation, Donner Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "O-O", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Sämisch Variation",
+        "pt-BR": "Variação Sämisch",
+        "es": "Variante Sämisch"
+      },
+      "lines": [
+        {
+          "id": "line-58b963e376da0a00",
+          "names": {
+            "en": "Sämisch Variation",
+            "pt-BR": "Variação Sämisch",
+            "es": "Variante Sämisch"
+          },
+          "eco": "E80",
+          "opening": "King's Indian Defense: Sämisch Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-793d645c1cd61e7e",
+          "names": {
+            "en": "Sämisch Variation, Normal Defense",
+            "pt-BR": "Variação Sämisch, Defesa Normal",
+            "es": "Variante Sämisch, Defensa Normal"
+          },
+          "eco": "E81",
+          "opening": "King's Indian Defense: Sämisch Variation, Normal Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0cb62c719b0ae77a",
+          "names": {
+            "en": "Sämisch Variation, Yates Defense",
+            "pt-BR": "Variação Sämisch, Defesa Yates",
+            "es": "Variante Sämisch, Defensa Yates"
+          },
+          "eco": "E83",
+          "opening": "King's Indian Defense: Sämisch Variation, Yates Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f6a1fed699b2ed56",
+          "names": {
+            "en": "Sämisch Variation, Ruban Variation",
+            "pt-BR": "Variação Sämisch, Variação Ruban",
+            "es": "Variante Sämisch, Variante Ruban"
+          },
+          "eco": "E83",
+          "opening": "King's Indian Defense: Sämisch Variation, Ruban Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "Nc6", "Nge2", "Rb8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0b6517f673f9ee05",
+          "names": {
+            "en": "Sämisch Variation, Panno Formation",
+            "pt-BR": "Variação Sämisch, Formação Panno",
+            "es": "Variante Sämisch, Formación Panno"
+          },
+          "eco": "E83",
+          "opening": "King's Indian Defense: Sämisch Variation, Panno Formation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "Nc6", "Nge2", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1f8638dd8a84e7d8",
+          "names": {
+            "en": "Sämisch Variation, Panno Main Line"
+          },
+          "eco": "E84",
+          "opening": "King's Indian Defense: Sämisch Variation, Panno Main Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "Nc6", "Nge2", "a6", "Qd2", "Rb8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3de27fa7c1eb48e3",
+          "names": {
+            "en": "Sämisch Variation, Double Fianchetto"
+          },
+          "eco": "E82",
+          "opening": "King's Indian Defense: Sämisch Variation, Double Fianchetto",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c4f2038e2992e796",
+          "names": {
+            "en": "Sämisch Variation, Sämisch Gambit",
+            "pt-BR": "Variação Sämisch, Gambito Sämisch",
+            "es": "Variante Sämisch, Gambito Sämisch"
+          },
+          "eco": "E81",
+          "opening": "King's Indian Defense: Sämisch Variation, Sämisch Gambit",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-aa8f019dd19589f8",
+          "names": {
+            "en": "Sämisch Variation, Sämisch Gambit Accepted"
+          },
+          "eco": "E81",
+          "opening": "King's Indian Defense: Sämisch Variation, Sämisch Gambit Accepted",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "c5", "dxc5", "dxc5", "Qxd8", "Rxd8", "Bxc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-807ffc7369c5daa3",
+          "names": {
+            "en": "Sämisch Variation, Byrne Defense",
+            "pt-BR": "Variação Sämisch, Defesa Byrne",
+            "es": "Variante Sämisch, Defensa Byrne"
+          },
+          "eco": "E81",
+          "opening": "King's Indian Defense: Sämisch Variation, Byrne Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "c6", "Bd3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4785b27b4a716f7c",
+          "names": {
+            "en": "Sämisch Variation, Orthodox Variation",
+            "pt-BR": "Variação Sämisch, Variação Orthodox",
+            "es": "Variante Sämisch, Variante Orthodox"
+          },
+          "eco": "E85",
+          "opening": "King's Indian Defense: Sämisch Variation, Orthodox Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-34424e76b1294373",
+          "names": {
+            "en": "Sämisch Variation",
+            "pt-BR": "Variação Sämisch",
+            "es": "Variante Sämisch"
+          },
+          "eco": "E86",
+          "opening": "King's Indian Defense: Sämisch Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "e5", "Nge2", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e073387c1f73488d",
+          "names": {
+            "en": "Sämisch Variation, Closed Variation, Main Line",
+            "pt-BR": "Variação Sämisch, Variação Fechada, Linha Principal",
+            "es": "Variante Sämisch, Variante Cerrada, Línea Principal"
+          },
+          "eco": "E89",
+          "opening": "King's Indian Defense: Sämisch Variation, Closed Variation, Main Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "e5", "Nge2", "c6", "d5", "cxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-41a8e95f6e9f9c6c",
+          "names": {
+            "en": "Sämisch Variation, Closed Variation",
+            "pt-BR": "Variação Sämisch, Variação Fechada",
+            "es": "Variante Sämisch, Variante Cerrada"
+          },
+          "eco": "E87",
+          "opening": "King's Indian Defense: Sämisch Variation, Closed Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "e5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-59ab8174a775aabc",
+          "names": {
+            "en": "Sämisch Variation, Bronstein Defense",
+            "pt-BR": "Variação Sämisch, Defesa Bronstein",
+            "es": "Variante Sämisch, Defensa Bronstein"
+          },
+          "eco": "E87",
+          "opening": "King's Indian Defense: Sämisch Variation, Bronstein Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "e5", "d5", "Nh5", "Qd2", "Qh4+", "g3", "Nxg3", "Qf2", "Nxf1", "Qxh4", "Nxe3", "Ke2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cfb2c7c99e427417",
+          "names": {
+            "en": "Sämisch Variation, Orthodox Variation, Bronstein Variation",
+            "pt-BR": "Variação Sämisch, Variação Orthodox, Variação Bronstein",
+            "es": "Variante Sämisch, Variante Orthodox, Variante Bronstein"
+          },
+          "eco": "E87",
+          "opening": "King's Indian Defense: Sämisch Variation, Orthodox Variation, Bronstein Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "e5", "d5", "Nh5", "Qd2", "Qh4+", "g3", "Nxg3", "Qf2", "Nxf1", "Qxh4", "Nxe3", "Ke2", "Nxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bf9288ca147b97c6",
+          "names": {
+            "en": "Sämisch Variation, Closed Variation",
+            "pt-BR": "Variação Sämisch, Variação Fechada",
+            "es": "Variante Sämisch, Variante Cerrada"
+          },
+          "eco": "E88",
+          "opening": "King's Indian Defense: Sämisch Variation, Closed Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Be3", "e5", "d5", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c9cc28e158283294",
+          "names": {
+            "en": "Sämisch Variation, Bobotsov-Korchnoi-Petrosian Variation",
+            "pt-BR": "Variação Sämisch, Variação Bobotsov-Korchnoi-Petrosian",
+            "es": "Variante Sämisch, Variante Bobotsov-Korchnoi-Petrosian"
+          },
+          "eco": "E81",
+          "opening": "King's Indian Defense: Sämisch Variation, Bobotsov-Korchnoi-Petrosian Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Nge2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Averbakh Variation",
+        "pt-BR": "Variação Averbakh",
+        "es": "Variante Averbakh"
+      },
+      "lines": [
+        {
+          "id": "line-26e61b3aca72714f",
+          "names": {
+            "en": "Averbakh Variation",
+            "pt-BR": "Variação Averbakh",
+            "es": "Variante Averbakh"
+          },
+          "eco": "E73",
+          "opening": "King's Indian Defense: Averbakh Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-375a84ab7d6ea14e",
+          "names": {
+            "en": "Averbakh Variation, Modern Defense",
+            "pt-BR": "Variação Averbakh, Defesa Moderna",
+            "es": "Variante Averbakh, Defensa Moderna"
+          },
+          "eco": "E73",
+          "opening": "King's Indian Defense: Averbakh Variation, Modern Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5", "Na6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ebef65399d56e271",
+          "names": {
+            "en": "Averbakh Variation, Modern Defense, Burgess Line",
+            "pt-BR": "Variação Averbakh, Defesa Moderna, Linha Burgess",
+            "es": "Variante Averbakh, Defensa Moderna, Línea Burgess"
+          },
+          "eco": "E73",
+          "opening": "King's Indian Defense: Averbakh Variation, Modern Defense, Burgess Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5", "Na6", "Qd2", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e42f87501c63c439",
+          "names": {
+            "en": "Averbakh Variation, Geller Defense",
+            "pt-BR": "Variação Averbakh, Defesa Geller",
+            "es": "Variante Averbakh, Defensa Geller"
+          },
+          "eco": "E73",
+          "opening": "King's Indian Defense: Averbakh Variation, Geller Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-22740041b046fe88",
+          "names": {
+            "en": "Averbakh Variation, Nc6 Defense",
+            "pt-BR": "Variação Averbakh, Defesa Nc6",
+            "es": "Variante Averbakh, Defensa Nc6"
+          },
+          "eco": "E73",
+          "opening": "King's Indian Defense: Averbakh Variation, Nc6 Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-96da69472ad1147c",
+          "names": {
+            "en": "Averbakh Variation, Spanish Defense"
+          },
+          "eco": "E73",
+          "opening": "King's Indian Defense: Averbakh Variation, Spanish Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0600dc1bc7349bd1",
+          "names": {
+            "en": "Averbakh Variation, Benoni Defense",
+            "pt-BR": "Variação Averbakh, Defesa Benoni",
+            "es": "Variante Averbakh, Defensa Benoni"
+          },
+          "eco": "E74",
+          "opening": "King's Indian Defense: Averbakh Variation, Benoni Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1c1f60a90c985389",
+          "names": {
+            "en": "Averbakh Variation, Benoni Defense, Advance Variation",
+            "pt-BR": "Variação Averbakh, Defesa Benoni, Variação do Avanço",
+            "es": "Variante Averbakh, Defensa Benoni, Variante del Avance"
+          },
+          "eco": "E74",
+          "opening": "King's Indian Defense: Averbakh Variation, Benoni Defense, Advance Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5", "c5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-969651376e7edaab",
+          "names": {
+            "en": "Averbakh Variation, Main Line",
+            "pt-BR": "Variação Averbakh, Linha Principal",
+            "es": "Variante Averbakh, Línea Principal"
+          },
+          "eco": "E75",
+          "opening": "King's Indian Defense: Averbakh Variation, Main Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5", "c5", "d5", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4d097df7a42bf23d",
+          "names": {
+            "en": "Averbakh Variation, Benoni Defense, Exchange Variation",
+            "pt-BR": "Variação Averbakh, Defesa Benoni, Variação da Troca",
+            "es": "Variante Averbakh, Defensa Benoni, Variante del Cambio"
+          },
+          "eco": "E74",
+          "opening": "King's Indian Defense: Averbakh Variation, Benoni Defense, Exchange Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5", "c5", "dxc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e5f1dcb847fc563d",
+          "names": {
+            "en": "Averbakh Variation, Flexible Defense",
+            "pt-BR": "Variação Averbakh, Defesa Flexible",
+            "es": "Variante Averbakh, Defensa Flexible"
+          },
+          "eco": "E73",
+          "opening": "King's Indian Defense: Averbakh Variation, Flexible Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5", "h6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Four Pawns Attack"
+      },
+      "lines": [
+        {
+          "id": "line-9460aee886b1a990",
+          "names": {
+            "en": "Four Pawns Attack"
+          },
+          "eco": "E77",
+          "opening": "King's Indian Defense: Four Pawns Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-84b0abe40d643e66",
+          "names": {
+            "en": "Four Pawns Attack"
+          },
+          "eco": "E76",
+          "opening": "King's Indian Defense: Four Pawns Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1f23e97af0fb8362",
+          "names": {
+            "en": "Four Pawns Attack, Modern Defense"
+          },
+          "eco": "E76",
+          "opening": "King's Indian Defense: Four Pawns Attack, Modern Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f4", "Na6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8497458bed871e82",
+          "names": {
+            "en": "Four Pawns Attack, Fluid Attack"
+          },
+          "eco": "E78",
+          "opening": "King's Indian Defense: Four Pawns Attack, Fluid Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f4", "O-O", "Nf3", "c5", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b84531b112542d41",
+          "names": {
+            "en": "Four Pawns Attack, Exchange Variation"
+          },
+          "eco": "E79",
+          "opening": "King's Indian Defense: Four Pawns Attack, Exchange Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f4", "O-O", "Nf3", "c5", "Be2", "cxd4", "Nxd4", "Nc6", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1d5e4a640df88ea3",
+          "names": {
+            "en": "Four Pawns Attack, Dynamic Attack"
+          },
+          "eco": "E76",
+          "opening": "King's Indian Defense: Four Pawns Attack, Dynamic Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f4", "O-O", "Nf3", "c5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-798496f4815b65e3",
+          "names": {
+            "en": "Four Pawns Attack, Normal Attack"
+          },
+          "eco": "E77",
+          "opening": "King's Indian Defense: Four Pawns Attack, Normal Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f4", "O-O", "Nf3", "c5", "d5", "e6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0b926e41d78676d6",
+          "names": {
+            "en": "Four Pawns Attack, Florentine Gambit"
+          },
+          "eco": "E77",
+          "opening": "King's Indian Defense: Four Pawns Attack, Florentine Gambit",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f4", "O-O", "Nf3", "c5", "d5", "e6", "Be2", "exd5", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Normal Variation",
+        "pt-BR": "Variação Normal",
+        "es": "Variante Normal"
+      },
+      "lines": [
+        {
+          "id": "line-fb4141765a71fdbf",
+          "names": {
+            "en": "Normal Variation, King's Knight Variation"
+          },
+          "eco": "E60",
+          "opening": "King's Indian Defense: Normal Variation, King's Knight Variation",
+          "moves": ["d4", "Nf6", "Nf3", "g6", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3d0abdde2034c429",
+          "names": {
+            "en": "Normal Variation",
+            "pt-BR": "Variação Normal",
+            "es": "Variante Normal"
+          },
+          "eco": "E70",
+          "opening": "King's Indian Defense: Normal Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a1b1b6c49586fa68",
+          "names": {
+            "en": "Normal Variation",
+            "pt-BR": "Variação Normal",
+            "es": "Variante Normal"
+          },
+          "eco": "E70",
+          "opening": "King's Indian Defense: Normal Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a3262b1e56247037",
+          "names": {
+            "en": "Normal Variation, Standard Development"
+          },
+          "eco": "E73",
+          "opening": "King's Indian Defense: Normal Variation, Standard Development",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6bc5b3a342c04aad",
+          "names": {
+            "en": "Normal Variation, Rare Defenses"
+          },
+          "eco": "E90",
+          "opening": "King's Indian Defense: Normal Variation, Rare Defenses",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6331ce5609f4834e",
+          "names": {
+            "en": "Normal Variation, Deferred Fianchetto"
+          },
+          "eco": "E72",
+          "opening": "King's Indian Defense: Normal Variation, Deferred Fianchetto",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Semi-Classical Variation"
+      },
+      "lines": [
+        {
+          "id": "line-587cb41d591cd94c",
+          "names": {
+            "en": "Semi-Classical Variation, Hollywood Variation"
+          },
+          "eco": "E60",
+          "opening": "King's Indian Defense: Semi-Classical Variation, Hollywood Variation",
+          "moves": ["d4", "Nf6", "Nf3", "g6", "c4", "Bg7", "Nc3", "O-O", "e3", "d6", "Be2", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0deace66a6661683",
+          "names": {
+            "en": "Semi-Classical Variation"
+          },
+          "eco": "E61",
+          "opening": "King's Indian Defense: Semi-Classical Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "Nf3", "O-O", "e3", "d6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a3e8840370ed3cfd",
+          "names": {
+            "en": "Semi-Classical Variation, Queenside Storm Line"
+          },
+          "eco": "E61",
+          "opening": "King's Indian Defense: Semi-Classical Variation, Queenside Storm Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "Nf3", "O-O", "e3", "d6", "Be2", "Nbd7", "O-O", "e5", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-14f793ebc9ba46a9",
+          "names": {
+            "en": "Semi-Classical Variation, Exchange Variation"
+          },
+          "eco": "E61",
+          "opening": "King's Indian Defense: Semi-Classical Variation, Exchange Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "Nf3", "O-O", "e3", "d6", "Be2", "Nbd7", "O-O", "e5", "dxe5", "dxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-57656d33279ded8b",
+          "names": {
+            "en": "Semi-Classical Variation, Benoni Variation"
+          },
+          "eco": "E60",
+          "opening": "King's Indian Defense: Semi-Classical Variation, Benoni Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "Nf3", "O-O", "e3", "d6", "Be2", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Petrosian Variation",
+        "pt-BR": "Variação Petrosian",
+        "es": "Variante Petrosian"
+      },
+      "lines": [
+        {
+          "id": "line-b3ff3d7c1549c54d",
+          "names": {
+            "en": "Petrosian Variation",
+            "pt-BR": "Variação Petrosian",
+            "es": "Variante Petrosian"
+          },
+          "eco": "E92",
+          "opening": "King's Indian Defense: Petrosian Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a71030ca4d16fe5f",
+          "names": {
+            "en": "Petrosian Variation, Normal Defense",
+            "pt-BR": "Variação Petrosian, Defesa Normal",
+            "es": "Variante Petrosian, Defensa Normal"
+          },
+          "eco": "E93",
+          "opening": "King's Indian Defense: Petrosian Variation, Normal Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "d5", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ec1d9e0dbfe9fbc4",
+          "names": {
+            "en": "Petrosian Variation, Keres Defense",
+            "pt-BR": "Variação Petrosian, Defesa Keres",
+            "es": "Variante Petrosian, Defensa Keres"
+          },
+          "eco": "E93",
+          "opening": "King's Indian Defense: Petrosian Variation, Keres Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "d5", "Nbd7", "Bg5", "h6", "Bh4", "g5", "Bg3", "Nh5", "h4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c5a66fc10c3c7acc",
+          "names": {
+            "en": "Petrosian Variation, Stein Defense",
+            "pt-BR": "Variação Petrosian, Defesa Stein",
+            "es": "Variante Petrosian, Defensa Stein"
+          },
+          "eco": "E92",
+          "opening": "King's Indian Defense: Petrosian Variation, Stein Defense",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "d5", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Steiner Attack",
+        "pt-BR": "Ataque Steiner",
+        "es": "Ataque Steiner"
+      },
+      "lines": [
+        {
+          "id": "line-1501b9835e7ab0a8",
+          "names": {
+            "en": "Steiner Attack",
+            "pt-BR": "Ataque Steiner",
+            "es": "Ataque Steiner"
+          },
+          "eco": "E81",
+          "opening": "King's Indian Defense: Steiner Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e6d3810ed6f690f4",
+          "names": {
+            "en": "Steiner Attack",
+            "pt-BR": "Ataque Steiner",
+            "es": "Ataque Steiner"
+          },
+          "eco": "E81",
+          "opening": "King's Indian Defense: Steiner Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Bg5", "c5", "d5", "e6", "Qd2", "exd5", "Nxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1851710b6df34772",
+          "names": {
+            "en": "Steiner Attack",
+            "pt-BR": "Ataque Steiner",
+            "es": "Ataque Steiner"
+          },
+          "eco": "E81",
+          "opening": "King's Indian Defense: Steiner Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Bg5", "c5", "d5", "e6", "Qd2", "h6", "Bxh6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dee59abe123488ab",
+          "names": {
+            "en": "Steiner Attack",
+            "pt-BR": "Ataque Steiner",
+            "es": "Ataque Steiner"
+          },
+          "eco": "E81",
+          "opening": "King's Indian Defense: Steiner Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Bg5", "c5", "d5", "h6", "Bf4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-34ff53d419a74acc",
+      "names": {
+        "en": "Accelerated Averbakh Variation"
+      },
+      "eco": "E70",
+      "opening": "King's Indian Defense: Accelerated Averbakh Variation",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-40351740532c73cb",
+      "names": {
+        "en": "Exchange Variation",
+        "pt-BR": "Variação da Troca",
+        "es": "Variante del Cambio"
+      },
+      "eco": "E92",
+      "opening": "King's Indian Defense: Exchange Variation",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5", "dxe5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cc4be9e29eb754c1",
+      "names": {
+        "en": "Karpov System",
+        "pt-BR": "Sistema Karpov",
+        "es": "Sistema Karpov"
+      },
+      "eco": "E71",
+      "opening": "King's Indian Defense: Karpov System",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "h3", "O-O", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e6e93af78a07931",
+      "names": {
+        "en": "Kazakh Variation",
+        "pt-BR": "Variação Kazakh",
+        "es": "Variante Kazakh"
+      },
+      "eco": "E91",
+      "opening": "King's Indian Defense: Kazakh Variation",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "Na6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-34ba9d82911df236",
+      "names": {
+        "en": "Kramer Variation",
+        "pt-BR": "Variação Kramer",
+        "es": "Variante Kramer"
+      },
+      "eco": "E70",
+      "opening": "King's Indian Defense: Kramer Variation",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nge2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d92b3ef5ea088636",
+      "names": {
+        "en": "Larsen Variation",
+        "pt-BR": "Variação Larsen",
+        "es": "Variante Larsen"
+      },
+      "eco": "E90",
+      "opening": "King's Indian Defense: Larsen Variation",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1b9868adac1a61ce",
+      "names": {
+        "en": "King's Indian Defense",
+        "pt-BR": "Defesa Índia do Rei",
+        "es": "Defensa India de Rey"
+      },
+      "eco": "E61",
+      "opening": "King's Indian Defense",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d5e619582db6d90c",
+      "names": {
+        "en": "Makogonov Variation",
+        "pt-BR": "Variação Makogonov",
+        "es": "Variante Makogonov"
+      },
+      "eco": "E71",
+      "opening": "King's Indian Defense: Makogonov Variation",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "h3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-66c8168d69184b0e",
+      "names": {
+        "en": "Pomar System",
+        "pt-BR": "Sistema Pomar",
+        "es": "Sistema Pomar"
+      },
+      "eco": "E72",
+      "opening": "King's Indian Defense: Pomar System",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "g3", "O-O", "Bg2", "e5", "Nge2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5fbd947e7533bcf4",
+      "names": {
+        "en": "Santasiere Variation",
+        "pt-BR": "Variação Santasiere",
+        "es": "Variante Santasiere"
+      },
+      "eco": "E60",
+      "opening": "King's Indian Defense: Santasiere Variation",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-650e68205bef3b4a",
+      "names": {
+        "en": "Semi-Averbakh System",
+        "pt-BR": "Sistema Semi-Averbakh",
+        "es": "Sistema Semi-Averbakh"
+      },
+      "eco": "E73",
+      "opening": "King's Indian Defense: Semi-Averbakh System",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-78e127651be48542",
+      "names": {
+        "en": "Six Pawns Attack",
+        "pt-BR": "Ataque Six Pawns",
+        "es": "Ataque Six Pawns"
+      },
+      "eco": "E77",
+      "opening": "King's Indian Defense: Six Pawns Attack",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f4", "O-O", "Be2", "c5", "d5", "e6", "dxe6", "fxe6", "g4", "Nc6", "h4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a228746ba345fa3d",
+      "names": {
+        "en": "Smyslov Variation",
+        "pt-BR": "Variação Smyslov",
+        "es": "Variante Smyslov"
+      },
+      "eco": "E61",
+      "opening": "King's Indian Defense: Smyslov Variation",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "Nf3", "d6", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1fdd2b288371d46e",
+      "names": {
+        "en": "Zinnowitz Variation",
+        "pt-BR": "Variação Zinnowitz",
+        "es": "Variante Zinnowitz"
+      },
+      "eco": "E90",
+      "opening": "King's Indian Defense: Zinnowitz Variation",
+      "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "sodium-attack",
+  "names": {
+    "en": "Sodium Attack",
+    "pt-BR": "Ataque Sodium",
+    "es": "Ataque Sodium"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-cf61bc2ddb290c46",
+      "names": {
+        "en": "Celadon Variation",
+        "pt-BR": "Variação Celadon",
+        "es": "Variante Celadon"
+      },
+      "eco": "A00",
+      "opening": "Sodium Attack: Celadon Variation",
+      "moves": ["Na3", "e5", "d3", "Bxa3", "bxa3", "d5", "e3", "c5", "Rb1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-04bd06d21135a10f",
+      "names": {
+        "en": "Chenoboskion Variation",
+        "pt-BR": "Variação Chenoboskion",
+        "es": "Variante Chenoboskion"
+      },
+      "eco": "A00",
+      "opening": "Sodium Attack: Chenoboskion Variation",
+      "moves": ["Na3", "g6", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bbc458432eb240a5",
+      "names": {
+        "en": "Durkin Gambit",
+        "pt-BR": "Gambito Durkin",
+        "es": "Gambito Durkin"
+      },
+      "eco": "A00",
+      "opening": "Sodium Attack: Durkin Gambit",
+      "moves": ["Na3", "e5", "Nc4", "Nc6", "e4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9cf14e6582835f8c",
+      "names": {
+        "en": "Sodium Attack",
+        "pt-BR": "Ataque Sodium",
+        "es": "Ataque Sodium"
+      },
+      "eco": "A00",
+      "opening": "Sodium Attack",
+      "moves": ["Na3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

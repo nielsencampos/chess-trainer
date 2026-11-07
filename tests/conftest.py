@@ -1,5 +1,6 @@
 import dataclasses
 import random
+import shutil
 from pathlib import Path
 
 import chess
@@ -58,8 +59,16 @@ def loaded_database(tmp_path_factory) -> Path:
 
 
 @pytest.fixture
-def client(engine, loaded_database):
-    settings = dataclasses.replace(Settings(), database_path=loaded_database)
+def database_path(loaded_database, tmp_path) -> Path:
+    """A copy per test, because games are saved in it."""
+    path = tmp_path / "test.duckdb"
+    shutil.copy(loaded_database, path)
+    return path
+
+
+@pytest.fixture
+def client(engine, database_path):
+    settings = dataclasses.replace(Settings(), database_path=database_path)
     app = create_app(settings, engine=engine, rng=random.Random(7))
     with TestClient(app) as test_client:
         yield test_client

@@ -1,0 +1,189 @@
+{
+  "id": "englund-gambit",
+  "names": {
+    "en": "Englund Gambit",
+    "pt-BR": "Gambito Englund",
+    "es": "Gambito Englund"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-67cad688b2911651",
+      "names": {
+        "en": "Declined",
+        "pt-BR": "Recusado",
+        "es": "Rehusado"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined",
+      "moves": ["d4", "e5", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-686f984162e90aff",
+      "names": {
+        "en": "Declined: Diemer Counterattack"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Diemer Counterattack",
+      "moves": ["d4", "e5", "d5", "Bc5", "e4", "Qh4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ca1477972110e34b",
+      "names": {
+        "en": "Declined: Reversed Alekhine"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Reversed Alekhine",
+      "moves": ["d4", "e5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-01abfa813167d03e",
+      "names": {
+        "en": "Declined: Reversed Brooklyn"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Reversed Brooklyn",
+      "moves": ["d4", "e5", "Nf3", "e4", "Ng1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-07aeffc27b388c7f",
+      "names": {
+        "en": "Declined: Reversed French"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Reversed French",
+      "moves": ["d4", "e5", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-96d5185dece4c6bf",
+      "names": {
+        "en": "Declined: Reversed Krebs"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Reversed Krebs",
+      "moves": ["d4", "e5", "Nf3", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ae33b30e575ee96d",
+      "names": {
+        "en": "Declined: Reversed Mokele Mbembe"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit Declined: Reversed Mokele Mbembe",
+      "moves": ["d4", "e5", "Nf3", "e4", "Ne5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-635cef29e809b91a",
+      "names": {
+        "en": "Felbecker Gambit",
+        "pt-BR": "Gambito Felbecker",
+        "es": "Gambito Felbecker"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit: Felbecker Gambit",
+      "moves": ["d4", "e5", "dxe5", "Nc6", "Nf3", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-706a2b96fcdeba5a",
+      "names": {
+        "en": "Hartlaub-Charlick Gambit",
+        "pt-BR": "Gambito Hartlaub-Charlick",
+        "es": "Gambito Hartlaub-Charlick"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit: Hartlaub-Charlick Gambit",
+      "moves": ["d4", "e5", "dxe5", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5b710b61c5d94573",
+      "names": {
+        "en": "Englund Gambit",
+        "pt-BR": "Gambito Englund",
+        "es": "Gambito Englund"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit",
+      "moves": ["d4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7b259b38d318c9ea",
+      "names": {
+        "en": "Main Line",
+        "pt-BR": "Linha Principal",
+        "es": "Línea Principal"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit: Main Line",
+      "moves": ["d4", "e5", "dxe5", "Nc6", "Nf3", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-db0a889a3588ffad",
+      "names": {
+        "en": "Mosquito Gambit",
+        "pt-BR": "Gambito Mosquito",
+        "es": "Gambito Mosquito"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit: Mosquito Gambit",
+      "moves": ["d4", "e5", "dxe5", "Qh4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d1f3e02ce9bbbeae",
+      "names": {
+        "en": "Soller Gambit",
+        "pt-BR": "Gambito Soller",
+        "es": "Gambito Soller"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit: Soller Gambit",
+      "moves": ["d4", "e5", "dxe5", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-911603db610cd8d8",
+      "names": {
+        "en": "Soller Gambit Deferred"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit: Soller Gambit Deferred",
+      "moves": ["d4", "e5", "dxe5", "Nc6", "Nf3", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cbf6bb2886c6b5d5",
+      "names": {
+        "en": "Stockholm Variation",
+        "pt-BR": "Variação Stockholm",
+        "es": "Variante Stockholm"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit: Stockholm Variation",
+      "moves": ["d4", "e5", "dxe5", "Nc6", "Nf3", "Qe7", "Qd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1ac906c0e64d48dc",
+      "names": {
+        "en": "Zilbermints Gambit",
+        "pt-BR": "Gambito Zilbermints",
+        "es": "Gambito Zilbermints"
+      },
+      "eco": "A40",
+      "opening": "Englund Gambit: Zilbermints Gambit",
+      "moves": ["d4", "e5", "dxe5", "Nc6", "Nf3", "Nge7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

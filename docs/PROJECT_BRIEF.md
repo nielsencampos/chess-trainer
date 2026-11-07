@@ -11,7 +11,7 @@
 
 ## 1. Context
 
-chess-trainer is an **open-source opening trainer** you run on your own machine. You pick a color and the openings/variations you want to drill; a bot plays the book lines at random, and when theory ends (or someone leaves it) Stockfish takes over. Every game is recorded so you can see where you leave theory and which lines you know.
+chess-trainer is an **open-source opening trainer** you run on your own machine. You pick a color and the openings/variations you want to drill; a bot plays the book lines at random, and when theory ends (or someone leaves it) Stockfish takes over. Every game is saved, and it shows at the end where you left theory.
 
 It started as a personal single-file HTML prototype. This project rebuilds it from scratch as a modular application: Python backend, plain JavaScript frontend, Stockfish and DuckDB, all in one Docker image. The prototype is **not** part of the repository; §4 and §4.1 are the full specification of the expected behavior and look.
 
@@ -24,7 +24,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 1. Implement everything described in §4 and §4.1.
 2. Split it into modules: Python backend, ES-module JavaScript frontend, book in JSON files loaded into DuckDB.
 3. Run with `docker compose up` from a single image containing Python, Stockfish and the frontend.
-4. Store repertoire, games and statistics in a local DuckDB file (no browser storage for data).
+4. Store the book and games in a local DuckDB file (no browser storage for data).
 5. UI and opening names in **English and Brazilian Portuguese (pt-BR)**, structured so new languages (Spanish is next) need no code changes.
 
 ## 3. Stack (decided)
@@ -34,7 +34,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 | Backend | Python 3.12+, FastAPI, Uvicorn | **Single worker** (DuckDB allows one writing process per file) |
 | Rules / PGN | python-chess | Parses PGN with variations, validates moves, renders SVG for reports |
 | Engine | Stockfish (official binary, **latest release**) | Driven through `chess.engine` (async) |
-| Database | DuckDB (local file in `./data`) | Repertoire and translations, games, deviations, stats, settings |
+| Database | DuckDB (local file in `./data`) | Book and translations, games, settings |
 | Frontend | Plain HTML + CSS + JS, ES modules, **no build step, no Node** | Types via JSDoc. chess.js and piece sets are vendored, no CDN |
 | Python packaging | uv (`pyproject.toml` + `uv.lock`) | |
 | Container | Multi-stage Dockerfile + `docker-compose.yml` | Slim final image, non-root user, healthcheck |
@@ -47,18 +47,20 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 - Color selection (White/Black), selected openings and **selected variations** (a collapsible multi-select per opening). Each selected variation has the same chance of being drawn.
 - Theory = selected variations only. Playing a move from an unselected variation counts as a deviation.
 - User deviations are recorded with the expected move(s) and shown at the end of the game.
-- Clock with increment. Bullet: 20s+1, 30s+0, 1+0, 1+1, 2+1. Blitz: 3+0, 3+2, 5+0, 5+3. Rapid: 10+0, 10+5, 15+10, 20+0, 30+0, 60+0. Classical: 90 + 30 min with 30 s and 45 + 15 min with 15 s, where the extra minutes are added on completing move 40 and the increment runs from move 1. Or no clock. The groups are for training and do not follow FIDE's categories exactly.
+- Clock: the presets of a DGT 3000 for blitz, rapid and classical, or no clock. Blitz: 5, 10, 3 + 2 s, 5 + 2 s US delay. Rapid: 25, 25 + 10 s, 25 + 10 s delay, 25 + 5 s US delay. Classical: 60, 120, 120 + 30, 120 + 60, 120 + 60 + 30, 120 + 60 + 60, 90 + 30 s, 90 + 30 + 30 s, 100 + 50 + 15 + 30 s, 115 + 5 s delay, 120 + 15 + 30 s delay, 120 + 60 + 15 + 30 s delay, 115 + 60 + 5 s US delay. A later period is added on completing move 40, then move 60; a DGT adds it when a clock reaches 0:00 instead.
 - The engine never searches for longer than the bot's clock allows. Bot response time "Instant" or "Human" (human-like, based on the clock).
 - Scoresheet mode (hides the move list so you write on paper), offered only for classical and no clock, out-of-theory warning, auto-play next game.
 - End of game: result, variation, how far theory went, deviations, copy PGN, link to Lichess analysis.
 - Green/cream board (a1 is dark), SVG piece sets with a picker (Merida, Cburnett, Chessnut, Fantasy, Unicode), light and dark theme, mobile layout, click **and** drag to move.
 - Board flips to the user's color. Coordinates on the left file and bottom rank. Highlights: last move, selected square, legal targets (dot; ring for captures), king in check.
+- Sounds generated in the browser, with no audio files: start, end, move, capture and castling (two knocks). The bot's moves sound slightly lower. An on/off button and a volume control are kept per browser. There is no low-time warning, as in a real game.
 - Promotion picker (Q/R/B/N) as an overlay on the board.
+- Premove: while the bot thinks, one move can be queued. It plays as soon as the bot replies if it is legal, and is dropped otherwise. It promotes to a queen. Clicking elsewhere or right-clicking cancels it, and an option in the setup turns it off.
 - Resign needs a second click to confirm (no browser dialogs).
 
 ### 4.1 Visual specification
 
-Layout: board column on the left, a 380 px side panel on the right (setup card, game card with the move list, end-of-game card). Below 900 px wide, a single column. Bot name and clock above the board, user name and clock below, status chips under the board ("Your move", "In theory", "Left theory at move N", "Check").
+Smallest supported screen: HD (1280x720). Layout: a 380 px sidebar on the left that scrolls on its own (logo, setup card, resign, end-of-game card, piece picker, theme, versions), the board in the middle as the largest square that fits the window, and a 280 px bar on the right with the opening name and the move list. The opening name is hidden in scoresheet mode until the end of the game. Both bars can be resized by dragging or with the arrow keys (double-click restores the width), and hidden and shown again with a button that stays visible. The logo follows the width of the left bar, and the board grows into the free space. These choices are kept per browser. Bot name and clock above the board, user name and clock below, status chips under the board ("Your move", "In theory", "Left theory at move N", "Check").
 
 Design tokens (CSS custom properties):
 
@@ -120,7 +122,7 @@ chess-trainer/
 **Decision (2026-11-07):** every opening of the Lichess catalog is available to drill, in our own format. Any line can be drilled with either color: the color is chosen in the setup, not stored with the line.
 
 "Source → serving layer":
-- **Source (versioned in git):** `openings/<family>.json`, one file per opening family, 149 at the start. They are ours: lines can be edited, extended or removed through PRs.
+- **Source (versioned in git):** `openings/<group>/<family>.json`, 122 families in four groups: `kings-pawn`, `queens-pawn`, `flank` and `others`. Less common families of the first three sit in an `others/` folder. The tree on screen is group > opening > subgroup > line, the same as the folders and files. They are ours: lines can be edited, extended or removed through PRs.
 - **Working store (DuckDB):** on startup the backend loads these files into tables (§7). The app reads the book only from the database.
 - **User lines (next step):** openings imported from the UI (paste PGN, Lichess study) go through the same validation into the database with `source = 'user'`, and can be exported to JSON. A sync never touches them.
 - Loading is idempotent: only changed files are reloaded (file hash). A failed load changes nothing.
@@ -130,29 +132,39 @@ File format:
 ```json
 {
   "id": "caro-kann-defense",
-  "names": { "en": "Caro-Kann Defense", "pt-BR": "Defesa Caro-Kann" },
-  "lines": [
+  "names": { "en": "Caro-Kann Defense", "pt-BR": "Defesa Caro-Kann", "es": "Defensa Caro-Kann" },
+  "order": 3,
+  "variants": [
     {
-      "id": "line-3f2a9c10b7d4e681",
-      "names": { "en": "Advance Variation, Short Variation" },
-      "eco": "B12",
-      "opening": "Caro-Kann Defense: Advance Variation, Short Variation",
-      "moves": ["e4", "c6", "d4", "d5", "e5", "Bf5", "Nf3"],
-      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+      "names": { "en": "Advance Variation", "pt-BR": "Variação do Avanço", "es": "Variante del Avance" },
+      "lines": [
+        {
+          "id": "line-3f2a9c10b7d4e681",
+          "names": { "en": "Advance Variation, Short Variation" },
+          "eco": "B12",
+          "opening": "Caro-Kann Defense: Advance Variation, Short Variation",
+          "moves": ["e4", "c6", "d4", "d5", "e5", "Bf5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
     }
-  ]
+  ],
+  "lines": []
 }
 ```
 
 - `id` (family) must match the file name. `names.en` is required and is the fallback; other locales are optional.
 - `id` (line) is stored and **never changes**, even if the moves are extended, because statistics are keyed on it. A line that disappears becomes `active = false` and is never deleted.
 - `eco` and `opening` are optional. `opening` is the exact catalog name of the line's final position and is validated against the catalog. A line we extended or imported drops it, or it fails validation.
+- `order` places a family within its group, from a curated list of well-known openings, not from measured popularity. `null` puts it under "Others".
+- `variants` are subgroups. `lines` directly in the family are its loose lines, shown under "Others".
+- Names in `pt-BR` and `es` were generated by rules and a glossary and have not been reviewed by a chess player. A name that could not be translated safely is left out and falls back to `en`. `catalog/validate.py` reports the coverage per locale.
 - `moves` is a flat list of SAN moves. There are no side variations: an alternative is another line, so each one has the same chance in the draw.
 
 **Lichess catalog** (`lichess-org/chess-openings`, CC0), pinned in `catalog/`, is **reference only**. The bot does not play from it. It is used to:
 1. Seed `openings/` once, with `catalog/generate_openings.py`.
 2. Validate `eco` and `opening`, matching by position (EPD), because catalog names repeat and lines transpose (`catalog/validate.py`).
-3. Name any position (still to do): during and after the game, show the most specific opening name matching the moves.
+3. Name any position: during and after the game, show the name of the last named position reached, even outside the selected lines.
 
 A newer catalog does not enter by itself: comparing it with `openings/` and accepting the differences through a PR is still to be built.
 
@@ -179,16 +191,20 @@ Repertoire tables:
 - `book_moves` — repertoire_id, variant_id, epd_before, ply, uci, san. The book tree, flattened for fast lookup.
 - `openings_catalog` — eco, name (en), pgn, uci, epd (final position), source_commit
 
-Usage tables:
-- `games` — id, started_at, ended_at, repertoire_id, variant_id (drawn), user_color, time_control, bot_level, bot_pace, result (win/draw/loss), termination, theory_until_ply, total_plies, pgn, app_version, engine_version
-- `moves` — game_id, ply, san, uci, fen_before, by (`user`/`bot`), source (`book`/`engine`), clock_ms_after, think_ms
-- `deviations` — game_id, ply, played_san, expected_san (list)
-- `settings` — key, value (JSON)
-- Stats views: W/D/L per repertoire and per variation, deviation rate per variation and per move, average think time inside theory.
+Game table:
+- `games` — one row per game, rewritten on every move: game_id (UTC timestamp to the microsecond plus a random part, such as `20261107131159012345-agjrbaghrbag-rkajgrjabgaa`), status (`active`/`finished`), started_at, ended_at, user_color, time_control, level, pace, variant_ids, current_variant_id, result, termination, in_theory, theory_until_ply, moves_json, deviations_json, user_clock_ms, bot_clock_ms, ui_json, pgn, eco, opening, app_version, engine_name.
+
+**Decision (2026-11-07):** this is a training tool, so it keeps no statistics. Games are saved to continue them and to export them.
+
+**Resuming:** opening the page always continues an unfinished game, after a reload, a closed tab, a restarted container or a powered-off computer. Clocks stop while the app is closed and continue from the values of the last saved move. Resigning is how a game is given up. A premove is not saved.
+
+**PGN:** the Seven Tag Roster plus `ECO`, `Opening`, `TimeControl`, `Termination` and `VariantId`, with `[%clk]` on each move and deviations as comments. It can be copied or downloaded at the end of a game. The "Saved games" tab lists finished games with filters, and exports the selected ones into one PGN file, oldest first.
+
+**Importing games:** the same tab takes pasted text or a `.pgn` file with one or more games. A bad game is listed with its reason and never stops the others. Duplicates (same players, date and moves) are skipped. Side variations are dropped and comments are kept. Only PGN is accepted: never a loose FEN, and a `[FEN]` tag only for Chess960. Imported games keep the PGN's result, since the app does not know which side was the user.
 
 Rules:
 - One connection per process, one cursor per request. Uvicorn runs with `--workers 1`.
-- Export endpoint (CSV/Parquet); backup procedure documented in the README.
+- Backup procedure documented in the README.
 
 ## 8. Internationalization
 
@@ -222,7 +238,7 @@ Rules:
 **Closed**
 - Local, open-source, single-user app, no login. Listens on `127.0.0.1` by default.
 - Book: `openings/*.json` in git as source, seeded from the Lichess catalog, DuckDB as working store, translated names in a table. Any line plays with either color.
-- Statistics only in the local DuckDB file.
+- No statistics: the goal is training.
 - Built from scratch; the HTML prototype is not in the repository.
 - English SAN notation always.
 - **License: GPL-3.0.** Compatible with Stockfish and the chosen piece sets. `THIRD_PARTY_LICENSES.md` lists Stockfish, chess.js, the openings catalog, the fonts and each piece set. Lichess's Maestro (CC BY-NC-SA) and Alpha (non-commercial) sets are excluded because of their non-commercial terms.
@@ -243,7 +259,6 @@ Rules:
 2. **Data:** opening name on screen, recording of games, moves and deviations, settings on the server.
 3. **Engine on the server:** native Stockfish with calibrated levels.
 4. **Languages:** complete en and pt-BR, language picker.
-5. **Statistics:** per-variation screen (where I deviate most, how far I get in theory, progress over time).
 6. **Backlog:** opening-only drill mode, take-back, sounds, PDF report with diagrams.
 
 ## 13. Working rules

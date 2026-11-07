@@ -1,0 +1,130 @@
+{
+  "id": "kadas-opening",
+  "names": {
+    "en": "Kádas Opening",
+    "pt-BR": "Abertura Kádas",
+    "es": "Apertura Kádas"
+  },
+  "order": null,
+  "variants": [
+    {
+      "names": {
+        "en": "Kádas Gambit",
+        "pt-BR": "Gambito Kádas",
+        "es": "Gambito Kádas"
+      },
+      "lines": [
+        {
+          "id": "line-0c57ab6f5dd0e347",
+          "names": {
+            "en": "Kádas Gambit",
+            "pt-BR": "Gambito Kádas",
+            "es": "Gambito Kádas"
+          },
+          "eco": "A00",
+          "opening": "Kádas Opening: Kádas Gambit",
+          "moves": ["h4", "c5", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2f8e3c6fa32e2f7d",
+          "names": {
+            "en": "Kádas Gambit",
+            "pt-BR": "Gambito Kádas",
+            "es": "Gambito Kádas"
+          },
+          "eco": "A00",
+          "opening": "Kádas Opening: Kádas Gambit",
+          "moves": ["h4", "d5", "d4", "c5", "Nf3", "cxd4", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-be6d2ccea039e6a7",
+          "names": {
+            "en": "Kádas Gambit",
+            "pt-BR": "Gambito Kádas",
+            "es": "Gambito Kádas"
+          },
+          "eco": "A00",
+          "opening": "Kádas Opening: Kádas Gambit",
+          "moves": ["h4", "e5", "d4", "exd4", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-34d6a8791674d450",
+      "names": {
+        "en": "Beginner's Trap",
+        "pt-BR": "Armadilha Beginner's",
+        "es": "Trampa Beginner's"
+      },
+      "eco": "A00",
+      "opening": "Kádas Opening: Beginner's Trap",
+      "moves": ["h4", "d5", "Rh3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ea3b613e427d9467",
+      "names": {
+        "en": "Koola-Koola Variation",
+        "pt-BR": "Variação Koola-Koola",
+        "es": "Variante Koola-Koola"
+      },
+      "eco": "A00",
+      "opening": "Kádas Opening: Koola-Koola Variation",
+      "moves": ["h4", "a5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b5036c3277d70901",
+      "names": {
+        "en": "Kádas Opening",
+        "pt-BR": "Abertura Kádas",
+        "es": "Apertura Kádas"
+      },
+      "eco": "A00",
+      "opening": "Kádas Opening",
+      "moves": ["h4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f3ac34085ea37e9f",
+      "names": {
+        "en": "Myers Variation",
+        "pt-BR": "Variação Myers",
+        "es": "Variante Myers"
+      },
+      "eco": "A00",
+      "opening": "Kádas Opening: Myers Variation",
+      "moves": ["h4", "d5", "d4", "c5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c7b8013883ad561d",
+      "names": {
+        "en": "Schneider Gambit",
+        "pt-BR": "Gambito Schneider",
+        "es": "Gambito Schneider"
+      },
+      "eco": "A00",
+      "opening": "Kádas Opening: Schneider Gambit",
+      "moves": ["h4", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-98d613c89cb78363",
+      "names": {
+        "en": "Steinbok Gambit",
+        "pt-BR": "Gambito Steinbok",
+        "es": "Gambito Steinbok"
+      },
+      "eco": "A00",
+      "opening": "Kádas Opening: Steinbok Gambit",
+      "moves": ["h4", "f5", "e4", "fxe4", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

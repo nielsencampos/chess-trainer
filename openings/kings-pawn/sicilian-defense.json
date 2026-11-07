@@ -1,0 +1,4813 @@
+{
+  "id": "sicilian-defense",
+  "names": {
+    "en": "Sicilian Defense",
+    "pt-BR": "Defesa Siciliana",
+    "es": "Defensa Siciliana"
+  },
+  "order": 1,
+  "variants": [
+    {
+      "names": {
+        "en": "Dragon Variation",
+        "pt-BR": "Variação do Dragão",
+        "es": "Variante del Dragón"
+      },
+      "lines": [
+        {
+          "id": "line-a2d2bd6e84b40c48",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Stockholm Attack",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Ataque Stockholm",
+            "es": "Variante del Dragón, Variante Clásica, Ataque Stockholm"
+          },
+          "eco": "B74",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Stockholm Attack",
+          "moves": ["e4", "c5", "Nc3", "d6", "f4", "Nc6", "Nf3", "g6", "d4", "cxd4", "Nxd4", "Bg7", "Be3", "Nf6", "Be2", "O-O", "Nb3", "Be6", "O-O", "Na5", "f5", "Bc4", "Nxa5", "Bxe2", "Qxe2", "Qxa5", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ea35680127e5c547",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Amsterdam Variation",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Variação Amsterdam",
+            "es": "Variante del Dragón, Variante Clásica, Variante Amsterdam"
+          },
+          "eco": "B72",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Amsterdam Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Be2", "g6", "Be3", "Bg7", "Qd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bdae87f94f1d2075",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Grigoriev Variation",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Variação Grigoriev",
+            "es": "Variante del Dragón, Variante Clásica, Variante Grigoriev"
+          },
+          "eco": "B72",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Grigoriev Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Be2", "g6", "Be3", "Bg7", "Qd2", "O-O", "O-O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f8b0fa96b8f9a273",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Zollner Gambit",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Gambito Zollner",
+            "es": "Variante del Dragón, Variante Clásica, Gambito Zollner"
+          },
+          "eco": "B73",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Zollner Gambit",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "Be3", "Bg7", "Be2", "Nf6", "Nc3", "O-O", "O-O", "d6", "f4", "Qb6", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-18a57d9477b6103b",
+          "names": {
+            "en": "Dragon Variation, Modern Bc4 Variation"
+          },
+          "eco": "B35",
+          "opening": "Sicilian Defense: Dragon Variation, Modern Bc4 Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "Nc3", "Bg7", "Be3", "Nf6", "Bc4", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4ca70c14c477c054",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Spielmann Variation",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Variação Spielmann",
+            "es": "Variante del Dragón, Variante Clásica, Variante Spielmann"
+          },
+          "eco": "B74",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Spielmann Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "Nc3", "Bg7", "Be3", "Nf6", "Be2", "O-O", "Nb3", "d6", "O-O", "Be6", "f4", "Na5", "f5", "Bc4", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-08e2eee731ff12c5",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Alekhine Line",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Linha Alekhine",
+            "es": "Variante del Dragón, Variante Clásica, Línea Alekhine"
+          },
+          "eco": "B74",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Alekhine Line",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "Nc3", "Bg7", "Be3", "Nf6", "Be2", "O-O", "O-O", "d6", "Nb3", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c840b7be1f2e2698",
+          "names": {
+            "en": "Dragon Variation",
+            "pt-BR": "Variação do Dragão",
+            "es": "Variante del Dragón"
+          },
+          "eco": "B70",
+          "opening": "Sicilian Defense: Dragon Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2782327ba666e12a",
+          "names": {
+            "en": "Dragon Variation, Classical Variation",
+            "pt-BR": "Variação do Dragão, Variação Clássica",
+            "es": "Variante del Dragón, Variante Clásica"
+          },
+          "eco": "B70",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-accc34320aec0c81",
+          "names": {
+            "en": "Dragon Variation, Classical Variation",
+            "pt-BR": "Variação do Dragão, Variação Clássica",
+            "es": "Variante del Dragón, Variante Clásica"
+          },
+          "eco": "B73",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be2", "Bg7", "O-O", "Nc6", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c98a5e63010e1ea3",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Normal Line",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Linha Normal",
+            "es": "Variante del Dragón, Variante Clásica, Línea Normal"
+          },
+          "eco": "B74",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Normal Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be2", "Bg7", "O-O", "O-O", "Be3", "Nc6", "Nb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e3b898c052bddf1a",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Maróczy Line",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Linha Maróczy",
+            "es": "Variante del Dragón, Variante Clásica, Línea Maróczy"
+          },
+          "eco": "B74",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Maróczy Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be2", "Bg7", "O-O", "O-O", "Be3", "Nc6", "Nb3", "Be6", "f4", "Na5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c5be4c58dedfeeb4",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Tartakower Line",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Linha Tartakower",
+            "es": "Variante del Dragón, Variante Clásica, Línea Tartakower"
+          },
+          "eco": "B74",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Tartakower Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be2", "Bg7", "O-O", "O-O", "Be3", "Nc6", "Nb3", "Be6", "f4", "Qc8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7ee44243e1811158",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Battery Variation",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Variação Battery",
+            "es": "Variante del Dragón, Variante Clásica, Variante Battery"
+          },
+          "eco": "B73",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Battery Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be2", "Bg7", "O-O", "O-O", "Be3", "Nc6", "Qd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-01ddbbce3caab227",
+          "names": {
+            "en": "Dragon Variation",
+            "pt-BR": "Variação do Dragão",
+            "es": "Variante del Dragón"
+          },
+          "eco": "B72",
+          "opening": "Sicilian Defense: Dragon Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-91b07a088ec0bfd2",
+          "names": {
+            "en": "Dragon Variation, Classical Variation",
+            "pt-BR": "Variação do Dragão, Variação Clássica",
+            "es": "Variante del Dragón, Variante Clásica"
+          },
+          "eco": "B72",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6558d2bf1eca3c08",
+          "names": {
+            "en": "Dragon Variation, Classical Variation",
+            "pt-BR": "Variação do Dragão, Variação Clássica",
+            "es": "Variante del Dragón, Variante Clásica"
+          },
+          "eco": "B72",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "Be2", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f8dea98e2f402d28",
+          "names": {
+            "en": "Dragon Variation, Classical Variation",
+            "pt-BR": "Variação do Dragão, Variação Clássica",
+            "es": "Variante del Dragón, Variante Clásica"
+          },
+          "eco": "B72",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "Be2", "Nc6", "Nb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a7410499d9e01ae6",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Early Deviations"
+          },
+          "eco": "B75",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Early Deviations",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eac0844fbd6c38ed",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Belezky Line"
+          },
+          "eco": "B75",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Belezky Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f4dac1918d85403d",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Sosonko Variation"
+          },
+          "eco": "B77",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Sosonko Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "Nc6", "Qd2", "O-O", "Bc4", "Nd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9fbc4af3dd40ce5b",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Czerniak Variation"
+          },
+          "eco": "B77",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Czerniak Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "Nc6", "Qd2", "O-O", "Bc4", "Nxd4", "Bxd4", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-12d6ab034b64de47",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Czerniak Variation"
+          },
+          "eco": "B77",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Czerniak Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "Nc6", "Qd2", "O-O", "Bc4", "Nxd4", "Bxd4", "Be6", "Bb3", "Qa5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-422d88251e172f86",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Modern Line"
+          },
+          "eco": "B76",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "Nc6", "Qd2", "O-O", "O-O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-04ed2ea7fc142fa6",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack"
+          },
+          "eco": "B76",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8d27fb3fad28f60c",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack"
+          },
+          "eco": "B76",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5e116bb897d7d13d",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Main Line"
+          },
+          "eco": "B77",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Main Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-906a777e6db49c52",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Main Line"
+          },
+          "eco": "B77",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Main Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "Bc4", "Bd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0fd081ae679525b8",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Main Line"
+          },
+          "eco": "B77",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Main Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "Bc4", "Bd7", "Bb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4d390a974bae2e77",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack"
+          },
+          "eco": "B78",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "Bc4", "Bd7", "O-O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5804b9ac1eec5be2",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Soltis Variation"
+          },
+          "eco": "B79",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Soltis Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "Bc4", "Bd7", "O-O-O", "Qa5", "h4", "Rfc8", "Bb3", "h5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c7928382fabc1e1e",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Chinese Dragon"
+          },
+          "eco": "B78",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Chinese Dragon",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "Bc4", "Bd7", "O-O-O", "Rb8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d38be6111880b846",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Old Line"
+          },
+          "eco": "B78",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Old Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "Bc4", "Bd7", "O-O-O", "Rc8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-509e7bb92658e924",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Topalov Variation"
+          },
+          "eco": "B78",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Topalov Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "Bc4", "Bd7", "O-O-O", "Rc8", "Bb3", "Nxd4", "Bxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ca5bc6f2484433d2",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack"
+          },
+          "eco": "B79",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "Bc4", "Bd7", "h4", "Qa5", "O-O-O", "Rfc8", "Bb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c8c343972188d1cd",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Byrne Variation"
+          },
+          "eco": "B77",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Byrne Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "Bc4", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9f0f5825d1529e0b",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Panov Variation"
+          },
+          "eco": "B76",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Panov Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Bg7", "f3", "O-O", "Qd2", "Nc6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b38f615231111e2e",
+          "names": {
+            "en": "Dragon Variation, Yugoslav Attack, Hungarian Dragon"
+          },
+          "eco": "B75",
+          "opening": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Hungarian Dragon",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "Be3", "Nc6", "f3", "h5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-09be889dd3053a83",
+          "names": {
+            "en": "Dragon Variation, Levenfish Variation",
+            "pt-BR": "Variação do Dragão, Variação Levenfish",
+            "es": "Variante del Dragón, Variante Levenfish"
+          },
+          "eco": "B71",
+          "opening": "Sicilian Defense: Dragon Variation, Levenfish Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dafcd348faec17ac",
+          "names": {
+            "en": "Dragon Variation, Levenfish Variation, Main Line",
+            "pt-BR": "Variação do Dragão, Variação Levenfish, Linha Principal",
+            "es": "Variante del Dragón, Variante Levenfish, Línea Principal"
+          },
+          "eco": "B71",
+          "opening": "Sicilian Defense: Dragon Variation, Levenfish Variation, Main Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "f4", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4f8d07c38a2ba273",
+          "names": {
+            "en": "Dragon Variation, Fianchetto Variation",
+            "pt-BR": "Variação do Dragão, Variação do Fianqueto",
+            "es": "Variante del Dragón, Variante del Fianchetto"
+          },
+          "eco": "B70",
+          "opening": "Sicilian Defense: Dragon Variation, Fianchetto Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ed32620091d9f18c",
+          "names": {
+            "en": "Dragon Variation, Accelerated Dragon",
+            "pt-BR": "Variação do Dragão, Dragão Acelerado",
+            "es": "Variante del Dragón, Dragón Acelerado"
+          },
+          "eco": "B54",
+          "opening": "Sicilian Defense: Dragon Variation, Accelerated Dragon",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c388c2c991b0873f",
+          "names": {
+            "en": "Dragon Variation, Classical Variation, Bernard Defense",
+            "pt-BR": "Variação do Dragão, Variação Clássica, Defesa Bernard",
+            "es": "Variante del Dragón, Variante Clásica, Defensa Bernard"
+          },
+          "eco": "B74",
+          "opening": "Sicilian Defense: Dragon Variation, Classical Variation, Bernard Defense",
+          "moves": ["e4", "c5", "Nf3", "g6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Be2", "Bg7", "O-O", "O-O", "Be3", "Nc6", "Nb3", "Be6", "f4", "Na5", "f5", "Bc4", "Bd3", "Bxd3", "cxd3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Najdorf Variation",
+        "pt-BR": "Variação Najdorf",
+        "es": "Variante Najdorf"
+      },
+      "lines": [
+        {
+          "id": "line-6013e695ab9456e1",
+          "names": {
+            "en": "Najdorf Variation, Opocensky Variation",
+            "pt-BR": "Variação Najdorf, Variação Opocensky",
+            "es": "Variante Najdorf, Variante Opocensky"
+          },
+          "eco": "B92",
+          "opening": "Sicilian Defense: Najdorf Variation, Opocensky Variation",
+          "moves": ["e4", "c5", "Nf3", "Nf6", "Nc3", "d6", "d4", "cxd4", "Nxd4", "a6", "Be2", "e5", "Nb3", "Be6", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b6b24dd82bfc7726",
+          "names": {
+            "en": "Najdorf Variation",
+            "pt-BR": "Variação Najdorf",
+            "es": "Variante Najdorf"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7eca00247270a198",
+          "names": {
+            "en": "Najdorf Variation, Lipnitsky Attack",
+            "pt-BR": "Variação Najdorf, Ataque Lipnitsky",
+            "es": "Variante Najdorf, Ataque Lipnitsky"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, Lipnitsky Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bf7a63493c8dc006",
+          "names": {
+            "en": "Najdorf Variation, Yates Variation",
+            "pt-BR": "Variação Najdorf, Variação Yates",
+            "es": "Variante Najdorf, Variante Yates"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, Yates Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b49b96c38810ae0f",
+          "names": {
+            "en": "Najdorf Variation, Opocensky Variation",
+            "pt-BR": "Variação Najdorf, Variação Opocensky",
+            "es": "Variante Najdorf, Variante Opocensky"
+          },
+          "eco": "B92",
+          "opening": "Sicilian Defense: Najdorf Variation, Opocensky Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5551cb955345c9d3",
+          "names": {
+            "en": "Najdorf Variation, Opocensky Variation, Modern Line"
+          },
+          "eco": "B92",
+          "opening": "Sicilian Defense: Najdorf Variation, Opocensky Variation, Modern Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be2", "e5", "Nb3", "Be7", "O-O", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e9ba4d1b2c796518",
+          "names": {
+            "en": "Najdorf Variation, Opocensky Variation, Traditional Line",
+            "pt-BR": "Variação Najdorf, Variação Opocensky, Linha Traditional",
+            "es": "Variante Najdorf, Variante Opocensky, Línea Traditional"
+          },
+          "eco": "B92",
+          "opening": "Sicilian Defense: Najdorf Variation, Opocensky Variation, Traditional Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be2", "e5", "Nb3", "Be7", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fca838dbe91e0055",
+          "names": {
+            "en": "Najdorf Variation, Scheveningen Variation",
+            "pt-BR": "Variação Najdorf, Variação Scheveningen",
+            "es": "Variante Najdorf, Variante Scheveningen"
+          },
+          "eco": "B84",
+          "opening": "Sicilian Defense: Najdorf Variation, Scheveningen Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be2", "e6", "O-O", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2ac6c80ccb4a32da",
+          "names": {
+            "en": "Najdorf Variation, English Attack"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, English Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c98654d6b645cfcf",
+          "names": {
+            "en": "Najdorf Variation, English Attack, Anti-English"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, English Attack, Anti-English",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be3", "Ng4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3c5386efd21e7185",
+          "names": {
+            "en": "Najdorf Variation, English Attack"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, English Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be3", "e5", "Nb3", "Be6", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-25f311dc9add7961",
+          "names": {
+            "en": "Najdorf Variation, English Attack"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, English Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be3", "e5", "Nb3", "Be6", "h3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dc40cd106c512f38",
+          "names": {
+            "en": "Najdorf Variation, English Attack"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, English Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be3", "e5", "Nb3", "Be7", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b2e2cd998f3e62bb",
+          "names": {
+            "en": "Najdorf Variation, English Attack"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, English Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be3", "e5", "Nb3", "Be7", "h3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b329d0ade173f5e2",
+          "names": {
+            "en": "Najdorf Variation",
+            "pt-BR": "Variação Najdorf",
+            "es": "Variante Najdorf"
+          },
+          "eco": "B94",
+          "opening": "Sicilian Defense: Najdorf Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-14156554be1dcf79",
+          "names": {
+            "en": "Najdorf Variation, Ivkov Variation",
+            "pt-BR": "Variação Najdorf, Variação Ivkov",
+            "es": "Variante Najdorf, Variante Ivkov"
+          },
+          "eco": "B94",
+          "opening": "Sicilian Defense: Najdorf Variation, Ivkov Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "Nbd7", "Bc4", "Qa5", "Qd2", "e6", "O-O-O", "b5", "Bb3", "Bb7", "Rhe1", "Nc5", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8edddc2d741e3ce7",
+          "names": {
+            "en": "Najdorf Variation",
+            "pt-BR": "Variação Najdorf",
+            "es": "Variante Najdorf"
+          },
+          "eco": "B95",
+          "opening": "Sicilian Defense: Najdorf Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-acaa88d976ee6cab",
+          "names": {
+            "en": "Najdorf Variation",
+            "pt-BR": "Variação Najdorf",
+            "es": "Variante Najdorf"
+          },
+          "eco": "B96",
+          "opening": "Sicilian Defense: Najdorf Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-af397ef48ea8be1e",
+          "names": {
+            "en": "Najdorf Variation",
+            "pt-BR": "Variação Najdorf",
+            "es": "Variante Najdorf"
+          },
+          "eco": "B98",
+          "opening": "Sicilian Defense: Najdorf Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e2db1de09f6a7ad9",
+          "names": {
+            "en": "Najdorf Variation, Traditional Line",
+            "pt-BR": "Variação Najdorf, Linha Traditional",
+            "es": "Variante Najdorf, Línea Traditional"
+          },
+          "eco": "B98",
+          "opening": "Sicilian Defense: Najdorf Variation, Traditional Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Be7", "Qf3", "Qc7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ec3ea7946649846e",
+          "names": {
+            "en": "Najdorf Variation, Main Line",
+            "pt-BR": "Variação Najdorf, Linha Principal",
+            "es": "Variante Najdorf, Línea Principal"
+          },
+          "eco": "B99",
+          "opening": "Sicilian Defense: Najdorf Variation, Main Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Be7", "Qf3", "Qc7", "O-O-O", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3a0b8403002057f6",
+          "names": {
+            "en": "Najdorf Variation, Browne Variation",
+            "pt-BR": "Variação Najdorf, Variação Browne",
+            "es": "Variante Najdorf, Variante Browne"
+          },
+          "eco": "B98",
+          "opening": "Sicilian Defense: Najdorf Variation, Browne Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Be7", "Qf3", "h6", "Bh4", "Qc7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-599420acb45ca5d9",
+          "names": {
+            "en": "Najdorf Variation, Goteborg Variation",
+            "pt-BR": "Variação Najdorf, Variação Goteborg",
+            "es": "Variante Najdorf, Variante Goteborg"
+          },
+          "eco": "B98",
+          "opening": "Sicilian Defense: Najdorf Variation, Goteborg Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Be7", "Qf3", "h6", "Bh4", "g5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7829ef1fdd0922ba",
+          "names": {
+            "en": "Najdorf Variation, Neo-Classical Defense"
+          },
+          "eco": "B96",
+          "opening": "Sicilian Defense: Najdorf Variation, Neo-Classical Defense",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-81cf6889653b31d0",
+          "names": {
+            "en": "Najdorf Variation, Poisoned Pawn Variation"
+          },
+          "eco": "B97",
+          "opening": "Sicilian Defense: Najdorf Variation, Poisoned Pawn Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Qb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-94e438df2d964e8a",
+          "names": {
+            "en": "Najdorf Variation, Poisoned Pawn Accepted"
+          },
+          "eco": "B97",
+          "opening": "Sicilian Defense: Najdorf Variation, Poisoned Pawn Accepted",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "Qb6", "Qd2", "Qxb2", "Rb1", "Qa3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-de02c08a54103f71",
+          "names": {
+            "en": "Najdorf Variation, Polugaevsky Variation",
+            "pt-BR": "Variação Najdorf, Variação Polugaevsky",
+            "es": "Variante Najdorf, Variante Polugaevsky"
+          },
+          "eco": "B96",
+          "opening": "Sicilian Defense: Najdorf Variation, Polugaevsky Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3cd2a8d213aef819",
+          "names": {
+            "en": "Najdorf Variation, Polugaevsky Variation, Simagin Line",
+            "pt-BR": "Variação Najdorf, Variação Polugaevsky, Linha Simagin",
+            "es": "Variante Najdorf, Variante Polugaevsky, Línea Simagin"
+          },
+          "eco": "B96",
+          "opening": "Sicilian Defense: Najdorf Variation, Polugaevsky Variation, Simagin Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bg5", "e6", "f4", "b5", "e5", "dxe5", "fxe5", "Qc7", "Qe2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cb49e02cb6f6849e",
+          "names": {
+            "en": "Najdorf Variation, Petronić Attack",
+            "pt-BR": "Variação Najdorf, Ataque Petronić",
+            "es": "Variante Najdorf, Ataque Petronić"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, Petronić Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Rg1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d7b61add6e13ccc3",
+          "names": {
+            "en": "Najdorf Variation, Amsterdam Variation",
+            "pt-BR": "Variação Najdorf, Variação Amsterdam",
+            "es": "Variante Najdorf, Variante Amsterdam"
+          },
+          "eco": "B93",
+          "opening": "Sicilian Defense: Najdorf Variation, Amsterdam Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-47984bebab26ee8c",
+          "names": {
+            "en": "Najdorf Variation, Zagreb Variation",
+            "pt-BR": "Variação Najdorf, Variação Zagreb",
+            "es": "Variante Najdorf, Variante Zagreb"
+          },
+          "eco": "B91",
+          "opening": "Sicilian Defense: Najdorf Variation, Zagreb Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-209054e3a2e349c6",
+          "names": {
+            "en": "Najdorf Variation, Dekker Gambit",
+            "pt-BR": "Variação Najdorf, Gambito Dekker",
+            "es": "Variante Najdorf, Gambito Dekker"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, Dekker Gambit",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-79e32e493dc31a59",
+          "names": {
+            "en": "Najdorf Variation, Adams Attack",
+            "pt-BR": "Variação Najdorf, Ataque Adams",
+            "es": "Variante Najdorf, Ataque Adams"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Najdorf Variation, Adams Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "h3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Closed",
+        "pt-BR": "Fechada",
+        "es": "Cerrada"
+      },
+      "lines": [
+        {
+          "id": "line-d7beb12c20b97e64",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-314bddbcf0c421f0",
+          "names": {
+            "en": "Closed, Traditional"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed, Traditional",
+          "moves": ["e4", "c5", "Nc3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9e255a75dd6527c0",
+          "names": {
+            "en": "Closed, Chameleon Variation",
+            "pt-BR": "Fechada, Variação Chameleon",
+            "es": "Cerrada, Variante Chameleon"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed, Chameleon Variation",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "Nge2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9f4d0893686a8d1f",
+          "names": {
+            "en": "Closed, Portland Attack",
+            "pt-BR": "Fechada, Ataque Portland",
+            "es": "Cerrada, Ataque Portland"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed, Portland Attack",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "d3", "g6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d2be20674a1125e8",
+          "names": {
+            "en": "Closed, Fianchetto Variation",
+            "pt-BR": "Fechada, Variação do Fianqueto",
+            "es": "Cerrada, Variante del Fianchetto"
+          },
+          "eco": "B24",
+          "opening": "Sicilian Defense: Closed, Fianchetto Variation",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1bf7e3c515ded8b3",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B24",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e19f57c232bb5389",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B24",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e887b07adf56d6be",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B25",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "d3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ce64d1d5147c1279",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B26",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "d3", "d6", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6a8b4c9c7815198d",
+          "names": {
+            "en": "Closed, Botvinnik Defense, with Nge2"
+          },
+          "eco": "B25",
+          "opening": "Sicilian Defense: Closed, Botvinnik Defense, with Nge2",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "d3", "d6", "Nge2", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2cec4f137966b3c3",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B25",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "d3", "d6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-544dd17170c0d3b9",
+          "names": {
+            "en": "Closed, Botvinnik Defense, with f4"
+          },
+          "eco": "B25",
+          "opening": "Sicilian Defense: Closed, Botvinnik Defense, with f4",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "d3", "d6", "f4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e7be4141b17439cd",
+          "names": {
+            "en": "Closed, Botvinnik Defense, Edge Variation",
+            "pt-BR": "Fechada, Defesa Botvinnik, Variação Edge",
+            "es": "Cerrada, Defensa Botvinnik, Variante Edge"
+          },
+          "eco": "B25",
+          "opening": "Sicilian Defense: Closed, Botvinnik Defense, Edge Variation",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "d3", "d6", "f4", "e5", "Nh3", "Nge7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d69420098548cb03",
+          "names": {
+            "en": "Closed, Smyslov Variation",
+            "pt-BR": "Fechada, Variação Smyslov",
+            "es": "Cerrada, Variante Smyslov"
+          },
+          "eco": "B24",
+          "opening": "Sicilian Defense: Closed, Smyslov Variation",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "d3", "e6", "Be3", "Nd4", "Nce2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0a44765bf1b4b9ff",
+          "names": {
+            "en": "Closed, Grob Attack",
+            "pt-BR": "Fechada, Ataque Grob",
+            "es": "Cerrada, Ataque Grob"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed, Grob Attack",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9c524a957f899daa",
+          "names": {
+            "en": "Closed, Carlsen Variation",
+            "pt-BR": "Fechada, Variação Carlsen",
+            "es": "Cerrada, Variante Carlsen"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed, Carlsen Variation",
+          "moves": ["e4", "c5", "Nc3", "d6", "d4", "cxd4", "Qxd4", "Nc6", "Qd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4d3b66dd4dd00645",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a53dcc01bdcf9bd9",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3", "e6", "Nge2", "a6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-23cf3e753c8308c4",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3", "e6", "f4", "Nc6", "Nf3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-284002610e1c4c54",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3", "e6", "f4", "Nc6", "Nf3", "d5", "Bb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-542ba4fded3032b9",
+          "names": {
+            "en": "Closed",
+            "pt-BR": "Fechada",
+            "es": "Cerrada"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed",
+          "moves": ["e4", "c5", "Nc3", "e6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7bfb245822450d7b",
+          "names": {
+            "en": "Closed, Korchnoi Defense",
+            "pt-BR": "Fechada, Defesa Korchnoi",
+            "es": "Cerrada, Defensa Korchnoi"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Closed, Korchnoi Defense",
+          "moves": ["e4", "c5", "Nc3", "e6", "g3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-645b027ffdfc416d",
+          "names": {
+            "en": "Closed, Anti-Sveshnikov Variation",
+            "pt-BR": "Fechada, Variação Anti-Sveshnikov",
+            "es": "Cerrada, Variante Anti-Sveshnikov"
+          },
+          "eco": "B30",
+          "opening": "Sicilian Defense: Closed, Anti-Sveshnikov Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Nc3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c3b1de1d8c8158c9",
+          "names": {
+            "en": "Closed, Anti-Sveshnikov Variation, with Nf6"
+          },
+          "eco": "B30",
+          "opening": "Sicilian Defense: Closed, Anti-Sveshnikov Variation, with Nf6",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Nc3", "e5", "Bc4", "Be7", "d3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d544b3ec48d27de8",
+          "names": {
+            "en": "Closed, Anti-Sveshnikov Variation, with d6"
+          },
+          "eco": "B30",
+          "opening": "Sicilian Defense: Closed, Anti-Sveshnikov Variation, with d6",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Nc3", "e5", "Bc4", "Be7", "d3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9e29fbebaf227f50",
+          "names": {
+            "en": "Closed, Anti-Sveshnikov Variation, Kharlov-Kramnik Line",
+            "pt-BR": "Fechada, Variação Anti-Sveshnikov, Linha Kharlov-Kramnik",
+            "es": "Cerrada, Variante Anti-Sveshnikov, Línea Kharlov-Kramnik"
+          },
+          "eco": "B30",
+          "opening": "Sicilian Defense: Closed, Anti-Sveshnikov Variation, Kharlov-Kramnik Line",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Nc3", "e5", "Bc4", "Be7", "d3", "d6", "Nd2", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "O'Kelly Variation",
+        "pt-BR": "Variação O'Kelly",
+        "es": "Variante O'Kelly"
+      },
+      "lines": [
+        {
+          "id": "line-bcb59c5cb35cec81",
+          "names": {
+            "en": "O'Kelly Variation, Maróczy Bind, Geller Line"
+          },
+          "eco": "B32",
+          "opening": "Sicilian Defense: O'Kelly Variation, Maróczy Bind, Geller Line",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "a6", "c4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e378d06b4e8c6f64",
+          "names": {
+            "en": "O'Kelly Variation",
+            "pt-BR": "Variação O'Kelly",
+            "es": "Variante O'Kelly"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation",
+          "moves": ["e4", "c5", "Nf3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-afbeb5373e8b7904",
+          "names": {
+            "en": "O'Kelly Variation, Aronin System",
+            "pt-BR": "Variação O'Kelly, Sistema Aronin",
+            "es": "Variante O'Kelly, Sistema Aronin"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Aronin System",
+          "moves": ["e4", "c5", "Nf3", "a6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-596febbdaf537581",
+          "names": {
+            "en": "O'Kelly Variation, Yerevan System",
+            "pt-BR": "Variação O'Kelly, Sistema Yerevan",
+            "es": "Variante O'Kelly, Sistema Yerevan"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Yerevan System",
+          "moves": ["e4", "c5", "Nf3", "a6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8ebda5333158d912",
+          "names": {
+            "en": "O'Kelly Variation, Kieseritzky System",
+            "pt-BR": "Variação O'Kelly, Sistema Kieseritzky",
+            "es": "Variante O'Kelly, Sistema Kieseritzky"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Kieseritzky System",
+          "moves": ["e4", "c5", "Nf3", "a6", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-04c4c250e771e30e",
+          "names": {
+            "en": "O'Kelly Variation, Wing Gambit"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Wing Gambit",
+          "moves": ["e4", "c5", "Nf3", "a6", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e72ddecdb3dfc528",
+          "names": {
+            "en": "O'Kelly Variation, Venice System",
+            "pt-BR": "Variação O'Kelly, Sistema Venice",
+            "es": "Variante O'Kelly, Sistema Venice"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Venice System",
+          "moves": ["e4", "c5", "Nf3", "a6", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-36b5fe1f77c40d4a",
+          "names": {
+            "en": "O'Kelly Variation, Venice System, Barcza Line",
+            "pt-BR": "Variação O'Kelly, Sistema Venice, Linha Barcza",
+            "es": "Variante O'Kelly, Sistema Venice, Línea Barcza"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Venice System, Barcza Line",
+          "moves": ["e4", "c5", "Nf3", "a6", "c3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3704f955a73c0153",
+          "names": {
+            "en": "O'Kelly Variation, Venice System, Ljubojevic Line",
+            "pt-BR": "Variação O'Kelly, Sistema Venice, Linha Ljubojevic",
+            "es": "Variante O'Kelly, Sistema Venice, Línea Ljubojevic"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Venice System, Ljubojevic Line",
+          "moves": ["e4", "c5", "Nf3", "a6", "c3", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e8df5cc886168ca7",
+          "names": {
+            "en": "O'Kelly Variation, Venice System, Gambit Line"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Venice System, Gambit Line",
+          "moves": ["e4", "c5", "Nf3", "a6", "c3", "d5", "exd5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8d32bc9e93583906",
+          "names": {
+            "en": "O'Kelly Variation, Venice System, Steiner Line",
+            "pt-BR": "Variação O'Kelly, Sistema Venice, Linha Steiner",
+            "es": "Variante O'Kelly, Sistema Venice, Línea Steiner"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Venice System, Steiner Line",
+          "moves": ["e4", "c5", "Nf3", "a6", "c3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8fe2ab5ef00a6a6c",
+          "names": {
+            "en": "O'Kelly Variation, Maróczy Bind"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Maróczy Bind",
+          "moves": ["e4", "c5", "Nf3", "a6", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d371b2d5050f06ae",
+          "names": {
+            "en": "O'Kelly Variation, Maróczy Bind, Robatsch Line"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Maróczy Bind, Robatsch Line",
+          "moves": ["e4", "c5", "Nf3", "a6", "c4", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0ed2ff52115efa5d",
+          "names": {
+            "en": "O'Kelly Variation, Maróczy Bind, Paulsen Line"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Maróczy Bind, Paulsen Line",
+          "moves": ["e4", "c5", "Nf3", "a6", "c4", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-491cd105d9f26d6b",
+          "names": {
+            "en": "O'Kelly Variation, Quiet System"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Quiet System",
+          "moves": ["e4", "c5", "Nf3", "a6", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a91b461e1baaf283",
+          "names": {
+            "en": "O'Kelly Variation, Normal System",
+            "pt-BR": "Variação O'Kelly, Sistema Normal",
+            "es": "Variante O'Kelly, Sistema Normal"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Normal System",
+          "moves": ["e4", "c5", "Nf3", "a6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f7d46e73e65fdff1",
+          "names": {
+            "en": "O'Kelly Variation, Normal System, Cortlever Gambit",
+            "pt-BR": "Variação O'Kelly, Sistema Normal, Gambito Cortlever",
+            "es": "Variante O'Kelly, Sistema Normal, Gambito Cortlever"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Normal System, Cortlever Gambit",
+          "moves": ["e4", "c5", "Nf3", "a6", "d4", "cxd4", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-20adeaeb7f86d1f1",
+          "names": {
+            "en": "O'Kelly Variation, Normal System, Taimanov Line",
+            "pt-BR": "Variação O'Kelly, Sistema Normal, Linha Taimanov",
+            "es": "Variante O'Kelly, Sistema Normal, Línea Taimanov"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Normal System, Taimanov Line",
+          "moves": ["e4", "c5", "Nf3", "a6", "d4", "cxd4", "Nxd4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-954cb535aaf463da",
+          "names": {
+            "en": "O'Kelly Variation, Normal System, Zagorovsky Line",
+            "pt-BR": "Variação O'Kelly, Sistema Normal, Linha Zagorovsky",
+            "es": "Variante O'Kelly, Sistema Normal, Línea Zagorovsky"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Normal System, Zagorovsky Line",
+          "moves": ["e4", "c5", "Nf3", "a6", "d4", "cxd4", "Qxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-57fa7b42022cd1a4",
+          "names": {
+            "en": "O'Kelly Variation, Normal System, Smith-Morra Line",
+            "pt-BR": "Variação O'Kelly, Sistema Normal, Linha Smith-Morra",
+            "es": "Variante O'Kelly, Sistema Normal, Línea Smith-Morra"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Normal System, Smith-Morra Line",
+          "moves": ["e4", "c5", "Nf3", "a6", "d4", "cxd4", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ee56859dd7850b22",
+          "names": {
+            "en": "O'Kelly Variation, Réti System",
+            "pt-BR": "Variação O'Kelly, Sistema Réti",
+            "es": "Variante O'Kelly, Sistema Réti"
+          },
+          "eco": "B28",
+          "opening": "Sicilian Defense: O'Kelly Variation, Réti System",
+          "moves": ["e4", "c5", "Nf3", "a6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Richter-Rauzer Variation",
+        "pt-BR": "Variação Richter-Rauzer",
+        "es": "Variante Richter-Rauzer"
+      },
+      "lines": [
+        {
+          "id": "line-97d106ba052c9ea2",
+          "names": {
+            "en": "Richter-Rauzer Variation, Modern Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação Moderna",
+            "es": "Variante Richter-Rauzer, Variante Moderna"
+          },
+          "eco": "B61",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Modern Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bg5", "Bd7", "Qd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6e70f7fd3efe1cd6",
+          "names": {
+            "en": "Richter-Rauzer Variation, Podebrady Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação Podebrady",
+            "es": "Variante Richter-Rauzer, Variante Podebrady"
+          },
+          "eco": "B62",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Podebrady Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bg5", "e6", "Nb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2917dd4d46ad55f6",
+          "names": {
+            "en": "Richter-Rauzer Variation, Classical Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação Clássica",
+            "es": "Variante Richter-Rauzer, Variante Clásica"
+          },
+          "eco": "B64",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bg5", "e6", "Qd2", "Be7", "O-O-O", "O-O", "f4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-50956cdc1ffead9a",
+          "names": {
+            "en": "Richter-Rauzer Variation, Neo-Modern Variation"
+          },
+          "eco": "B67",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bg5", "e6", "Qd2", "a6", "O-O-O", "Bd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1af15b541ae310fe",
+          "names": {
+            "en": "Richter-Rauzer Variation, Neo-Modern Variation"
+          },
+          "eco": "B68",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bg5", "e6", "Qd2", "a6", "O-O-O", "Bd7", "f4", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-19effe502783bd84",
+          "names": {
+            "en": "Richter-Rauzer Variation, Neo-Modern Variation, Nyezhmetdinov Attack"
+          },
+          "eco": "B69",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation, Nyezhmetdinov Attack",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bg5", "e6", "Qd2", "a6", "O-O-O", "Bd7", "f4", "Be7", "Nf3", "b5", "Bxf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dccdbbd97a651ab0",
+          "names": {
+            "en": "Richter-Rauzer Variation, Dragon Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação do Dragão",
+            "es": "Variante Richter-Rauzer, Variante del Dragón"
+          },
+          "eco": "B60",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Dragon Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bg5", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4063a6266cb751d2",
+          "names": {
+            "en": "Richter-Rauzer Variation",
+            "pt-BR": "Variação Richter-Rauzer",
+            "es": "Variante Richter-Rauzer"
+          },
+          "eco": "B60",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cfb81eef8538f745",
+          "names": {
+            "en": "Richter-Rauzer Variation, Modern Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação Moderna",
+            "es": "Variante Richter-Rauzer, Variante Moderna"
+          },
+          "eco": "B60",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Modern Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "Bd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5cf1241d5c23d4ff",
+          "names": {
+            "en": "Richter-Rauzer Variation",
+            "pt-BR": "Variação Richter-Rauzer",
+            "es": "Variante Richter-Rauzer"
+          },
+          "eco": "B62",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f1568fe477c7774d",
+          "names": {
+            "en": "Richter-Rauzer Variation, Vitolins Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação Vitolins",
+            "es": "Variante Richter-Rauzer, Variante Vitolins"
+          },
+          "eco": "B62",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Vitolins Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Bb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-58ef160ec5323d2e",
+          "names": {
+            "en": "Richter-Rauzer Variation, Exchange Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação da Troca",
+            "es": "Variante Richter-Rauzer, Variante del Cambio"
+          },
+          "eco": "B62",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Exchange Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Nxc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-19f36931831a8fd4",
+          "names": {
+            "en": "Richter-Rauzer Variation, Traditional Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação Traditional",
+            "es": "Variante Richter-Rauzer, Variante Traditional"
+          },
+          "eco": "B63",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Traditional Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Qd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1661cef544e33ac6",
+          "names": {
+            "en": "Richter-Rauzer Variation, Classical Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação Clássica",
+            "es": "Variante Richter-Rauzer, Variante Clásica"
+          },
+          "eco": "B63",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Qd2", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6673bbc223ca0429",
+          "names": {
+            "en": "Richter-Rauzer Variation, Classical Variation, Kantscher Line",
+            "pt-BR": "Variação Richter-Rauzer, Variação Clássica, Linha Kantscher",
+            "es": "Variante Richter-Rauzer, Variante Clásica, Línea Kantscher"
+          },
+          "eco": "B63",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Classical Variation, Kantscher Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Qd2", "Be7", "O-O-O", "Nxd4", "Qxd4", "a6", "f4", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7b4b838e91231f68",
+          "names": {
+            "en": "Richter-Rauzer Variation, Classical Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação Clássica",
+            "es": "Variante Richter-Rauzer, Variante Clásica"
+          },
+          "eco": "B64",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Qd2", "Be7", "O-O-O", "O-O", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e33fb042604c53aa",
+          "names": {
+            "en": "Richter-Rauzer Variation, Rauzer Attack",
+            "pt-BR": "Variação Richter-Rauzer, Ataque Rauzer",
+            "es": "Variante Richter-Rauzer, Ataque Rauzer"
+          },
+          "eco": "B65",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Rauzer Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Qd2", "Be7", "O-O-O", "O-O", "f4", "Nxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d14701ea74825bac",
+          "names": {
+            "en": "Richter-Rauzer Variation, Classical Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação Clássica",
+            "es": "Variante Richter-Rauzer, Variante Clásica"
+          },
+          "eco": "B65",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Qd2", "Be7", "O-O-O", "O-O", "f4", "Nxd4", "Qxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eb2265fdfa39f66c",
+          "names": {
+            "en": "Richter-Rauzer Variation, Ivanov Variation",
+            "pt-BR": "Variação Richter-Rauzer, Variação Ivanov",
+            "es": "Variante Richter-Rauzer, Variante Ivanov"
+          },
+          "eco": "B63",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Ivanov Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Qd2", "Qb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-728aa4e9efc7177e",
+          "names": {
+            "en": "Richter-Rauzer Variation, Neo-Modern Variation, Early Deviations"
+          },
+          "eco": "B66",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation, Early Deviations",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Qd2", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5e09a5df4a87b5d5",
+          "names": {
+            "en": "Richter-Rauzer Variation",
+            "pt-BR": "Variação Richter-Rauzer",
+            "es": "Variante Richter-Rauzer"
+          },
+          "eco": "B62",
+          "opening": "Sicilian Defense: Richter-Rauzer Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bg5", "e6", "Qd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Smith-Morra Gambit Accepted"
+      },
+      "lines": [
+        {
+          "id": "line-17ba1f3105766f26",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c0cbd0f42c677b6a",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Danish Variation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Danish Variation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-207e8ddb07344fa5",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Sozin Formation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Sozin Formation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Bc4", "e6", "Nf3", "d6", "O-O", "a6", "Qe2", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cd581b4fec755049",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Chicago Defense"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Chicago Defense",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Bc4", "e6", "Nf3", "d6", "O-O", "a6", "Qe2", "b5", "Bb3", "Ra7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5e9fee1a0f0bd008",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Classical Formation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Classical Formation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "d6", "Bc4", "a6", "O-O", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9397d6d765a26645",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Scheveningen Formation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "d6", "Bc4", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0b818c87ea2ccb34",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Fianchetto Defense"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Fianchetto Defense",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "d6", "Bc4", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-73355903b08081bb",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Pin Defense"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Pin Defense",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7b097f4bbaa517b6",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Morphy Defense"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Morphy Defense",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-afbfa17834395d3f",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Siberian Variation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Siberian Variation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4", "Qc7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0714bf33fb2dcb99",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Siberian Variation, Siberian Trap"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Siberian Variation, Siberian Trap",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4", "Qc7", "Qe2", "Nf6", "O-O", "Ng4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-78f1719ac35b57c0",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Larsen Defense"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Larsen Defense",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4", "Qc7", "Qe2", "a6", "O-O", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-84588207dc8d8522",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Paulsen Formation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e33b11ac81e974ab",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Morphy Defense Deferred"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Morphy Defense Deferred",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4", "a6", "O-O", "b5", "Bb3", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7505cd6f718f38cb",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Fianchetto Defense"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Fianchetto Defense",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-15e72395b1aced9c",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Chicago Defense"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Chicago Defense",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "d6", "Nf3", "e6", "Bc4", "Nf6", "O-O", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-36c98d390426e8cd",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Fianchetto Defense"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Fianchetto Defense",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "d6", "Nf3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0de4979b57548013",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Taimanov Formation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Taimanov Formation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "e6", "Bc4", "a6", "Nf3", "Ne7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ff0f17518c631afd",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Kan Formation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Kan Formation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "e6", "Nf3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-edead78030ba90c1",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Finegold Defense"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Finegold Defense",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "e6", "Nf3", "d6", "Bc4", "a6", "O-O", "Be7", "Qe2", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f43386b23fe1aafa",
+          "names": {
+            "en": "Smith-Morra Gambit Accepted, Fianchetto Defense"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Accepted, Fianchetto Defense",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Scheveningen Variation",
+        "pt-BR": "Variação Scheveningen",
+        "es": "Variante Scheveningen"
+      },
+      "lines": [
+        {
+          "id": "line-e69ed7e742226333",
+          "names": {
+            "en": "Scheveningen Variation, Classical Variation",
+            "pt-BR": "Variação Scheveningen, Variação Clássica",
+            "es": "Variante Scheveningen, Variante Clásica"
+          },
+          "eco": "B84",
+          "opening": "Sicilian Defense: Scheveningen Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be2", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4913ba29ba4c9dda",
+          "names": {
+            "en": "Scheveningen Variation, Classical Variation",
+            "pt-BR": "Variação Scheveningen, Variação Clássica",
+            "es": "Variante Scheveningen, Variante Clásica"
+          },
+          "eco": "B84",
+          "opening": "Sicilian Defense: Scheveningen Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be2", "e6", "O-O", "Qc7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ccdc61e859dabbe3",
+          "names": {
+            "en": "Scheveningen Variation, English Attack, with Qd2"
+          },
+          "eco": "B80",
+          "opening": "Sicilian Defense: Scheveningen Variation, English Attack, with Qd2",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be3", "e6", "Qd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1ff968c44754c5aa",
+          "names": {
+            "en": "Scheveningen Variation, English Attack, with f3"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Scheveningen Variation, English Attack, with f3",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be3", "e6", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c0c82234a06d48ec",
+          "names": {
+            "en": "Scheveningen Variation, Delayed Keres Attack"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Scheveningen Variation, Delayed Keres Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be3", "e6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-25c1028754ebd529",
+          "names": {
+            "en": "Scheveningen Variation, Delayed Keres Attack, Perenyi Gambit"
+          },
+          "eco": "B90",
+          "opening": "Sicilian Defense: Scheveningen Variation, Delayed Keres Attack, Perenyi Gambit",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Be3", "e6", "g4", "e5", "Nf5", "g6", "g5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2baddca112515844",
+          "names": {
+            "en": "Scheveningen Variation, Classical Variation, Paulsen Variation",
+            "pt-BR": "Variação Scheveningen, Variação Clássica, Variação Paulsen",
+            "es": "Variante Scheveningen, Variante Clásica, Variante Paulsen"
+          },
+          "eco": "B85",
+          "opening": "Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "f4", "e6", "Be2", "Qc7", "O-O", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8131ea33764fd406",
+          "names": {
+            "en": "Scheveningen Variation, Classical Main Line"
+          },
+          "eco": "B85",
+          "opening": "Sicilian Defense: Scheveningen Variation, Classical Main Line",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Qc7", "Be2", "a6", "O-O", "Nf6", "Be3", "Be7", "f4", "d6", "Qe1", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-afc8ad7be39f1696",
+          "names": {
+            "en": "Scheveningen Variation, Classical Variation, Paulsen Variation",
+            "pt-BR": "Variação Scheveningen, Variação Clássica, Variação Paulsen",
+            "es": "Variante Scheveningen, Variante Clásica, Variante Paulsen"
+          },
+          "eco": "B85",
+          "opening": "Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Qc7", "Be2", "a6", "O-O", "Nf6", "Be3", "d6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-010b96e1a017c0eb",
+          "names": {
+            "en": "Scheveningen Variation, Classical Variation, Paulsen Variation",
+            "pt-BR": "Variação Scheveningen, Variação Clássica, Variação Paulsen",
+            "es": "Variante Scheveningen, Variante Clásica, Variante Paulsen"
+          },
+          "eco": "B85",
+          "opening": "Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Qc7", "Be2", "a6", "O-O", "Nf6", "Kh1", "Be7", "f4", "d6", "a4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a77979782dc0ea41",
+          "names": {
+            "en": "Scheveningen Variation, Modern Variation",
+            "pt-BR": "Variação Scheveningen, Variação Moderna",
+            "es": "Variante Scheveningen, Variante Moderna"
+          },
+          "eco": "B83",
+          "opening": "Sicilian Defense: Scheveningen Variation, Modern Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "d6", "Be2", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-38773480e4670993",
+          "names": {
+            "en": "Scheveningen Variation",
+            "pt-BR": "Variação Scheveningen",
+            "es": "Variante Scheveningen"
+          },
+          "eco": "B80",
+          "opening": "Sicilian Defense: Scheveningen Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5b797f9022726f31",
+          "names": {
+            "en": "Scheveningen Variation, Vitolins Variation",
+            "pt-BR": "Variação Scheveningen, Variação Vitolins",
+            "es": "Variante Scheveningen, Variante Vitolins"
+          },
+          "eco": "B80",
+          "opening": "Sicilian Defense: Scheveningen Variation, Vitolins Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bb5+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-04ea3d2de2de0291",
+          "names": {
+            "en": "Scheveningen Variation, Classical Variation",
+            "pt-BR": "Variação Scheveningen, Variação Clássica",
+            "es": "Variante Scheveningen, Variante Clásica"
+          },
+          "eco": "B83",
+          "opening": "Sicilian Defense: Scheveningen Variation, Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1a476361e744c8d0",
+          "names": {
+            "en": "Scheveningen Variation, Modern Variation",
+            "pt-BR": "Variação Scheveningen, Variação Moderna",
+            "es": "Variante Scheveningen, Variante Moderna"
+          },
+          "eco": "B83",
+          "opening": "Sicilian Defense: Scheveningen Variation, Modern Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Be2", "Be7", "O-O", "O-O", "f4", "Nc6", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-402a53a2f83388ca",
+          "names": {
+            "en": "Scheveningen Variation, Modern Variation",
+            "pt-BR": "Variação Scheveningen, Variação Moderna",
+            "es": "Variante Scheveningen, Variante Moderna"
+          },
+          "eco": "B83",
+          "opening": "Sicilian Defense: Scheveningen Variation, Modern Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Be2", "Be7", "O-O", "O-O", "f4", "Nc6", "Be3", "Bd7", "Nb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9d71a60c7aa9f6f0",
+          "names": {
+            "en": "Scheveningen Variation, Matanovic Attack",
+            "pt-BR": "Variação Scheveningen, Ataque Matanovic",
+            "es": "Variante Scheveningen, Ataque Matanovic"
+          },
+          "eco": "B82",
+          "opening": "Sicilian Defense: Scheveningen Variation, Matanovic Attack",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8b276e9668faf271",
+          "names": {
+            "en": "Scheveningen Variation, Tal Variation",
+            "pt-BR": "Variação Scheveningen, Variação Tal",
+            "es": "Variante Scheveningen, Variante Tal"
+          },
+          "eco": "B82",
+          "opening": "Sicilian Defense: Scheveningen Variation, Tal Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "f4", "Nc6", "Be3", "Be7", "Qf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5f1f6875f361cb16",
+          "names": {
+            "en": "Scheveningen Variation, Fianchetto Variation",
+            "pt-BR": "Variação Scheveningen, Variação do Fianqueto",
+            "es": "Variante Scheveningen, Variante del Fianchetto"
+          },
+          "eco": "B80",
+          "opening": "Sicilian Defense: Scheveningen Variation, Fianchetto Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2b944172d1830373",
+          "names": {
+            "en": "Scheveningen Variation, Keres Attack",
+            "pt-BR": "Variação Scheveningen, Ataque Keres",
+            "es": "Variante Scheveningen, Ataque Keres"
+          },
+          "eco": "B81",
+          "opening": "Sicilian Defense: Scheveningen Variation, Keres Attack",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Kan Variation",
+        "pt-BR": "Variação Kan",
+        "es": "Variante Kan"
+      },
+      "lines": [
+        {
+          "id": "line-42895114d9ebfdf6",
+          "names": {
+            "en": "Kan Variation, Wing Attack, Fianchetto Variation"
+          },
+          "eco": "B40",
+          "opening": "Sicilian Defense: Kan Variation, Wing Attack, Fianchetto Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "Nc3", "a6", "g3", "b5", "d4", "cxd4", "Nxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-874368e06db0b183",
+          "names": {
+            "en": "Kan Variation",
+            "pt-BR": "Variação Kan",
+            "es": "Variante Kan"
+          },
+          "eco": "B41",
+          "opening": "Sicilian Defense: Kan Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7bc3f31399499317",
+          "names": {
+            "en": "Kan Variation, Modern Variation",
+            "pt-BR": "Variação Kan, Variação Moderna",
+            "es": "Variante Kan, Variante Moderna"
+          },
+          "eco": "B42",
+          "opening": "Sicilian Defense: Kan Variation, Modern Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-240d01735e63eab7",
+          "names": {
+            "en": "Kan Variation, Polugaevsky Variation",
+            "pt-BR": "Variação Kan, Variação Polugaevsky",
+            "es": "Variante Kan, Variante Polugaevsky"
+          },
+          "eco": "B42",
+          "opening": "Sicilian Defense: Kan Variation, Polugaevsky Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "Bd3", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-37de1a57c12e7a27",
+          "names": {
+            "en": "Kan Variation, Gipslis Variation",
+            "pt-BR": "Variação Kan, Variação Gipslis",
+            "es": "Variante Kan, Variante Gipslis"
+          },
+          "eco": "B42",
+          "opening": "Sicilian Defense: Kan Variation, Gipslis Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "Bd3", "Nf6", "O-O", "d6", "c4", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7e1cad9f2261d7d1",
+          "names": {
+            "en": "Kan Variation, Swiss Cheese Variation"
+          },
+          "eco": "B42",
+          "opening": "Sicilian Defense: Kan Variation, Swiss Cheese Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "Bd3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-02a85fe706952ccf",
+          "names": {
+            "en": "Kan Variation, Knight Variation"
+          },
+          "eco": "B43",
+          "opening": "Sicilian Defense: Kan Variation, Knight Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-901925ba88ec8e9d",
+          "names": {
+            "en": "Kan Variation, Wing Attack"
+          },
+          "eco": "B43",
+          "opening": "Sicilian Defense: Kan Variation, Wing Attack",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "Nc3", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0ac6614c842ba377",
+          "names": {
+            "en": "Kan Variation, Wing Attack, Christiansen's Dream"
+          },
+          "eco": "B43",
+          "opening": "Sicilian Defense: Kan Variation, Wing Attack, Christiansen's Dream",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "Nc3", "b5", "Bd3", "Qb6", "Be3", "Bc5", "Qg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d34922b5279de437",
+          "names": {
+            "en": "Kan Variation, Wing Attack, Spraggett Attack"
+          },
+          "eco": "B43",
+          "opening": "Sicilian Defense: Kan Variation, Wing Attack, Spraggett Attack",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "Nc3", "b5", "Bd3", "Qb6", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-76a5f09a5b8f8742",
+          "names": {
+            "en": "Kan Variation, Knight Variation"
+          },
+          "eco": "B43",
+          "opening": "Sicilian Defense: Kan Variation, Knight Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "Nc3", "b5", "g3", "Bb7", "Bg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-01b4853f938035a8",
+          "names": {
+            "en": "Kan Variation, Maróczy Bind, Réti Variation"
+          },
+          "eco": "B41",
+          "opening": "Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2796ffcb1d29ba6d",
+          "names": {
+            "en": "Kan Variation, Maróczy Bind, Bronstein Variation"
+          },
+          "eco": "B41",
+          "opening": "Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "c4", "Nf6", "Nc3", "Bb4", "Bd3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ffe20e20633a3db3",
+          "names": {
+            "en": "Kan Variation, Maróczy Bind, Bronstein Variation"
+          },
+          "eco": "B41",
+          "opening": "Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "c4", "Nf6", "Nc3", "Bb4", "Bd3", "Nc6", "Bc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2a04f05cc8c33089",
+          "names": {
+            "en": "Kan Variation, Maróczy Bind, Hedgehog Variation"
+          },
+          "eco": "B41",
+          "opening": "Sicilian Defense: Kan Variation, Maróczy Bind, Hedgehog Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "a6", "c4", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Alapin Variation",
+        "pt-BR": "Variação Alapin",
+        "es": "Variante Alapin"
+      },
+      "lines": [
+        {
+          "id": "line-b5b64ae305be280e",
+          "names": {
+            "en": "Alapin Variation, Sherzer Variation",
+            "pt-BR": "Variação Alapin, Variação Sherzer",
+            "es": "Variante Alapin, Variante Sherzer"
+          },
+          "eco": "B40",
+          "opening": "Sicilian Defense: Alapin Variation, Sherzer Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "c3", "Nf6", "e5", "Nd5", "d4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-54eea631209d4776",
+          "names": {
+            "en": "Alapin Variation",
+            "pt-BR": "Variação Alapin",
+            "es": "Variante Alapin"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation",
+          "moves": ["e4", "c5", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5b2c0a1426056ece",
+          "names": {
+            "en": "Alapin Variation, Stoltz Attack",
+            "pt-BR": "Variação Alapin, Ataque Stoltz",
+            "es": "Variante Alapin, Ataque Stoltz"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Stoltz Attack",
+          "moves": ["e4", "c5", "c3", "Nf6", "e5", "Nd5", "Nf3", "Nc6", "Bc4", "Nb6", "Bb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-62737e79f3f8e367",
+          "names": {
+            "en": "Alapin Variation, Stoltz Attack, Ivanchuk Line",
+            "pt-BR": "Variação Alapin, Ataque Stoltz, Linha Ivanchuk",
+            "es": "Variante Alapin, Ataque Stoltz, Línea Ivanchuk"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Stoltz Attack, Ivanchuk Line",
+          "moves": ["e4", "c5", "c3", "Nf6", "e5", "Nd5", "Nf3", "Nc6", "Bc4", "Nb6", "Bb3", "c4", "Bc2", "Qc7", "Qe2", "g5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6ad7528afc7a12f0",
+          "names": {
+            "en": "Alapin Variation, Smith-Morra Declined"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Smith-Morra Declined",
+          "moves": ["e4", "c5", "c3", "Nf6", "e5", "Nd5", "d4", "cxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-598e6b9247db4be0",
+          "names": {
+            "en": "Alapin Variation, Anti-Alapin Gambit",
+            "pt-BR": "Variação Alapin, Gambito Anti-Alapin",
+            "es": "Variante Alapin, Gambito Anti-Alapin"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Anti-Alapin Gambit",
+          "moves": ["e4", "c5", "c3", "d5", "exd5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ace8c959cd88da8a",
+          "names": {
+            "en": "Alapin Variation, Barmen Defense",
+            "pt-BR": "Variação Alapin, Defesa Barmen",
+            "es": "Variante Alapin, Defensa Barmen"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Barmen Defense",
+          "moves": ["e4", "c5", "c3", "d5", "exd5", "Qxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-84c671c28b567720",
+          "names": {
+            "en": "Alapin Variation, Barmen Defense",
+            "pt-BR": "Variação Alapin, Defesa Barmen",
+            "es": "Variante Alapin, Defensa Barmen"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Barmen Defense",
+          "moves": ["e4", "c5", "c3", "d5", "exd5", "Qxd5", "d4", "Nc6", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-98dad4a544667840",
+          "names": {
+            "en": "Alapin Variation, Barmen Defense, Milner-Barry Attack",
+            "pt-BR": "Variação Alapin, Defesa Barmen, Ataque Milner-Barry",
+            "es": "Variante Alapin, Defensa Barmen, Ataque Milner-Barry"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Barmen Defense, Milner-Barry Attack",
+          "moves": ["e4", "c5", "c3", "d5", "exd5", "Qxd5", "d4", "Nc6", "Nf3", "cxd4", "cxd4", "e5", "Nc3", "Bb4", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5034f06705e6eb97",
+          "names": {
+            "en": "Alapin Variation, Barmen Defense, Modern Line"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line",
+          "moves": ["e4", "c5", "c3", "d5", "exd5", "Qxd5", "d4", "Nf6", "Nf3", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-adb374c29126acce",
+          "names": {
+            "en": "Alapin Variation, Barmen Defense, Central Exchange"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Barmen Defense, Central Exchange",
+          "moves": ["e4", "c5", "c3", "d5", "exd5", "Qxd5", "d4", "cxd4", "cxd4", "Nc6", "Nf3", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-94d7091dac39b3af",
+          "names": {
+            "en": "Alapin Variation, Barmen Defense, Endgame Variation",
+            "pt-BR": "Variação Alapin, Defesa Barmen, Variação Endgame",
+            "es": "Variante Alapin, Defensa Barmen, Variante Endgame"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Barmen Defense, Endgame Variation",
+          "moves": ["e4", "c5", "c3", "d5", "exd5", "Qxd5", "d4", "cxd4", "cxd4", "Nc6", "Nf3", "Bg4", "Nc3", "Bxf3", "gxf3", "Qxd4", "Qxd4", "Nxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e6295f346bd8fc63",
+          "names": {
+            "en": "Alapin Variation, Barmen Defense",
+            "pt-BR": "Variação Alapin, Defesa Barmen",
+            "es": "Variante Alapin, Defensa Barmen"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Alapin Variation, Barmen Defense",
+          "moves": ["e4", "c5", "c3", "d5", "exd5", "Qxd5", "d4", "g6", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accelerated Dragon",
+        "pt-BR": "Dragão Acelerado",
+        "es": "Dragón Acelerado"
+      },
+      "lines": [
+        {
+          "id": "line-e96b605f3bc2db00",
+          "names": {
+            "en": "Accelerated Dragon",
+            "pt-BR": "Dragão Acelerado",
+            "es": "Dragón Acelerado"
+          },
+          "eco": "B32",
+          "opening": "Sicilian Defense: Accelerated Dragon",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e3b495c074a8097a",
+          "names": {
+            "en": "Accelerated Dragon, Modern Variation",
+            "pt-BR": "Dragão Acelerado, Variação Moderna",
+            "es": "Dragón Acelerado, Variante Moderna"
+          },
+          "eco": "B34",
+          "opening": "Sicilian Defense: Accelerated Dragon, Modern Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1fa339fd1e2f659b",
+          "names": {
+            "en": "Accelerated Dragon, Modern Bc4 Variation"
+          },
+          "eco": "B35",
+          "opening": "Sicilian Defense: Accelerated Dragon, Modern Bc4 Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "Nc3", "Bg7", "Be3", "Nf6", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4a6627b9ee72fd88",
+          "names": {
+            "en": "Accelerated Dragon, Exchange Variation",
+            "pt-BR": "Dragão Acelerado, Variação da Troca",
+            "es": "Dragón Acelerado, Variante del Cambio"
+          },
+          "eco": "B34",
+          "opening": "Sicilian Defense: Accelerated Dragon, Exchange Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "Nxc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-186d4270b62a691c",
+          "names": {
+            "en": "Accelerated Dragon, Maróczy Bind"
+          },
+          "eco": "B36",
+          "opening": "Sicilian Defense: Accelerated Dragon, Maróczy Bind",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b6939e52ab8cede2",
+          "names": {
+            "en": "Accelerated Dragon, Maróczy Bind"
+          },
+          "eco": "B37",
+          "opening": "Sicilian Defense: Accelerated Dragon, Maróczy Bind",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "c4", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8f69d7ba32659ec9",
+          "names": {
+            "en": "Accelerated Dragon, Maróczy Bind"
+          },
+          "eco": "B38",
+          "opening": "Sicilian Defense: Accelerated Dragon, Maróczy Bind",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "c4", "Bg7", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3792aa25a6d94ef0",
+          "names": {
+            "en": "Accelerated Dragon, Maróczy Bind, Breyer Variation"
+          },
+          "eco": "B39",
+          "opening": "Sicilian Defense: Accelerated Dragon, Maróczy Bind, Breyer Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "c4", "Bg7", "Be3", "Nf6", "Nc3", "Ng4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7a426fcc869d9a8a",
+          "names": {
+            "en": "Accelerated Dragon, Simagin Variation",
+            "pt-BR": "Dragão Acelerado, Variação Simagin",
+            "es": "Dragón Acelerado, Variante Simagin"
+          },
+          "eco": "B37",
+          "opening": "Sicilian Defense: Accelerated Dragon, Simagin Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "c4", "Bg7", "Nc2", "d6", "Be2", "Nh6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4e6b3548a9840ef7",
+          "names": {
+            "en": "Accelerated Dragon, Maróczy Bind, Gurgenidze Variation"
+          },
+          "eco": "B36",
+          "opening": "Sicilian Defense: Accelerated Dragon, Maróczy Bind, Gurgenidze Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6", "c4", "Nf6", "Nc3", "Nxd4", "Qxd4", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Lasker-Pelikan Variation",
+        "pt-BR": "Variação Lasker-Pelikan",
+        "es": "Variante Lasker-Pelikan"
+      },
+      "lines": [
+        {
+          "id": "line-7645f70a93440a4a",
+          "names": {
+            "en": "Lasker-Pelikan Variation",
+            "pt-BR": "Variação Lasker-Pelikan",
+            "es": "Variante Lasker-Pelikan"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Lasker-Pelikan Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-78c4d57c89dd9071",
+          "names": {
+            "en": "Lasker-Pelikan Variation, Schlechter Variation",
+            "pt-BR": "Variação Lasker-Pelikan, Variação Schlechter",
+            "es": "Variante Lasker-Pelikan, Variante Schlechter"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5", "Nb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e7df34512c50626d",
+          "names": {
+            "en": "Lasker-Pelikan Variation, Bird Variation"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Lasker-Pelikan Variation, Bird Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5", "Ndb5", "d6", "Bg5", "a6", "Na3", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-96a23a920aec3911",
+          "names": {
+            "en": "Lasker-Pelikan Variation, Sveshnikov Variation",
+            "pt-BR": "Variação Lasker-Pelikan, Variação Sveshnikov",
+            "es": "Variante Lasker-Pelikan, Variante Sveshnikov"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5", "Ndb5", "d6", "Bg5", "a6", "Na3", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2d93f3396237b87d",
+          "names": {
+            "en": "Lasker-Pelikan Variation, Sveshnikov Variation, Novosibirsk Variation",
+            "pt-BR": "Variação Lasker-Pelikan, Variação Sveshnikov, Variação Novosibirsk",
+            "es": "Variante Lasker-Pelikan, Variante Sveshnikov, Variante Novosibirsk"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Novosibirsk Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5", "Ndb5", "d6", "Bg5", "a6", "Na3", "b5", "Bxf6", "gxf6", "Nd5", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-66639d78e3816f71",
+          "names": {
+            "en": "Lasker-Pelikan Variation, Sveshnikov Variation",
+            "pt-BR": "Variação Lasker-Pelikan, Variação Sveshnikov",
+            "es": "Variante Lasker-Pelikan, Variante Sveshnikov"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5", "Ndb5", "d6", "Bg5", "a6", "Na3", "b5", "Bxf6", "gxf6", "Nd5", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eeb61c2b2a0d33b1",
+          "names": {
+            "en": "Lasker-Pelikan Variation, Sveshnikov Variation, Peresypkin's Sacrifice"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Peresypkin's Sacrifice",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5", "Ndb5", "d6", "Bg5", "a6", "Na3", "b5", "Bxf6", "gxf6", "Nd5", "f5", "Bxb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f7c36a44309a2366",
+          "names": {
+            "en": "Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation",
+            "pt-BR": "Variação Lasker-Pelikan, Variação Sveshnikov, Variação Chelyabinsk",
+            "es": "Variante Lasker-Pelikan, Variante Sveshnikov, Variante Chelyabinsk"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5", "Ndb5", "d6", "Bg5", "a6", "Na3", "b5", "Nd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ef424658c233499e",
+          "names": {
+            "en": "Lasker-Pelikan Variation, Retreat Variation"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a260cc9857ebe17f",
+          "names": {
+            "en": "Lasker-Pelikan Variation, Exchange Variation",
+            "pt-BR": "Variação Lasker-Pelikan, Variação da Troca",
+            "es": "Variante Lasker-Pelikan, Variante del Cambio"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5", "Nxc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Taimanov Variation",
+        "pt-BR": "Variação Taimanov",
+        "es": "Variante Taimanov"
+      },
+      "lines": [
+        {
+          "id": "line-9f23ec06cf224136",
+          "names": {
+            "en": "Taimanov Variation",
+            "pt-BR": "Variação Taimanov",
+            "es": "Variante Taimanov"
+          },
+          "eco": "B44",
+          "opening": "Sicilian Defense: Taimanov Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7a67e1dc279d91b7",
+          "names": {
+            "en": "Taimanov Variation, Szén Variation",
+            "pt-BR": "Variação Taimanov, Variação Szén",
+            "es": "Variante Taimanov, Variante Szén"
+          },
+          "eco": "B44",
+          "opening": "Sicilian Defense: Taimanov Variation, Szén Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-82b242f594816152",
+          "names": {
+            "en": "Taimanov Variation, Modern Line"
+          },
+          "eco": "B44",
+          "opening": "Sicilian Defense: Taimanov Variation, Modern Line",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nb5", "d6", "c4", "Nf6", "N1c3", "a6", "Na3", "Be7", "Be2", "O-O", "O-O", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ea4c019ec2bea51c",
+          "names": {
+            "en": "Taimanov Variation, Gary Gambit",
+            "pt-BR": "Variação Taimanov, Gambito Gary",
+            "es": "Variante Taimanov, Gambito Gary"
+          },
+          "eco": "B44",
+          "opening": "Sicilian Defense: Taimanov Variation, Gary Gambit",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nb5", "d6", "c4", "Nf6", "N1c3", "a6", "Na3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2bae6824c721a6a1",
+          "names": {
+            "en": "Taimanov Variation",
+            "pt-BR": "Variação Taimanov",
+            "es": "Variante Taimanov"
+          },
+          "eco": "B45",
+          "opening": "Sicilian Defense: Taimanov Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eef06a74321cc323",
+          "names": {
+            "en": "Taimanov Variation, Bastrikov Variation",
+            "pt-BR": "Variação Taimanov, Variação Bastrikov",
+            "es": "Variante Taimanov, Variante Bastrikov"
+          },
+          "eco": "B47",
+          "opening": "Sicilian Defense: Taimanov Variation, Bastrikov Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Qc7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6f03c09d15b53498",
+          "names": {
+            "en": "Taimanov Variation, Bastrikov Variation, English Attack"
+          },
+          "eco": "B48",
+          "opening": "Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Qc7", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-24c7c4bcc5d1d574",
+          "names": {
+            "en": "Taimanov Variation, Bastrikov Variation",
+            "pt-BR": "Variação Taimanov, Variação Bastrikov",
+            "es": "Variante Taimanov, Variante Bastrikov"
+          },
+          "eco": "B49",
+          "opening": "Sicilian Defense: Taimanov Variation, Bastrikov Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Qc7", "Be3", "a6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-711fd590f7bfa274",
+          "names": {
+            "en": "Taimanov Variation, Bastrikov Variation, Ponomariov Gambit",
+            "pt-BR": "Variação Taimanov, Variação Bastrikov, Gambito Ponomariov",
+            "es": "Variante Taimanov, Variante Bastrikov, Gambito Ponomariov"
+          },
+          "eco": "B47",
+          "opening": "Sicilian Defense: Taimanov Variation, Bastrikov Variation, Ponomariov Gambit",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Qc7", "Ndb5", "Qb8", "Be3", "a6", "Bb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-162d9b0b3b4f76c0",
+          "names": {
+            "en": "Taimanov Variation",
+            "pt-BR": "Variação Taimanov",
+            "es": "Variante Taimanov"
+          },
+          "eco": "B46",
+          "opening": "Sicilian Defense: Taimanov Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Wing Gambit"
+      },
+      "lines": [
+        {
+          "id": "line-c84417ab0d167af2",
+          "names": {
+            "en": "Wing Gambit, Deferred Variation"
+          },
+          "eco": "B50",
+          "opening": "Sicilian Defense: Wing Gambit, Deferred Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-73c2778e6caf622b",
+          "names": {
+            "en": "Wing Gambit"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Wing Gambit",
+          "moves": ["e4", "c5", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-52b90c011c97cd91",
+          "names": {
+            "en": "Wing Gambit, Abrahams Variation"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Wing Gambit, Abrahams Variation",
+          "moves": ["e4", "c5", "b4", "cxb4", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-595d81f08e3c957f",
+          "names": {
+            "en": "Wing Gambit, Marshall Variation"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Wing Gambit, Marshall Variation",
+          "moves": ["e4", "c5", "b4", "cxb4", "a3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-66a15261500ca40e",
+          "names": {
+            "en": "Wing Gambit, Carlsbad Variation"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Wing Gambit, Carlsbad Variation",
+          "moves": ["e4", "c5", "b4", "cxb4", "a3", "bxa3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-713f820bb95fd94e",
+          "names": {
+            "en": "Wing Gambit, Marienbad Variation"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Wing Gambit, Marienbad Variation",
+          "moves": ["e4", "c5", "b4", "cxb4", "a3", "d5", "exd5", "Qxd5", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8a66e21fbf01d575",
+          "names": {
+            "en": "Wing Gambit, Romanian Defense"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Wing Gambit, Romanian Defense",
+          "moves": ["e4", "c5", "b4", "cxb4", "a3", "d5", "exd5", "Qxd5", "Nf3", "e5", "Bb2", "Nc6", "c4", "Qe6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5d08302ccecd506b",
+          "names": {
+            "en": "Wing Gambit, Nanu Gambit"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Wing Gambit, Nanu Gambit",
+          "moves": ["e4", "c5", "b4", "cxb4", "a3", "d5", "exd5", "Qxd5", "Nf3", "e5", "c4", "Qe6", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ffb9787803dd79ba",
+          "names": {
+            "en": "Wing Gambit, Santasiere Variation"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Wing Gambit, Santasiere Variation",
+          "moves": ["e4", "c5", "b4", "cxb4", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "McDonnell Attack",
+        "pt-BR": "Ataque McDonnell",
+        "es": "Ataque McDonnell"
+      },
+      "lines": [
+        {
+          "id": "line-e0de99ee30205600",
+          "names": {
+            "en": "McDonnell Attack",
+            "pt-BR": "Ataque McDonnell",
+            "es": "Ataque McDonnell"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: McDonnell Attack",
+          "moves": ["e4", "c5", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bfbb78faba270f12",
+          "names": {
+            "en": "McDonnell Attack",
+            "pt-BR": "Ataque McDonnell",
+            "es": "Ataque McDonnell"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: McDonnell Attack",
+          "moves": ["e4", "c5", "f4", "Nc6", "Nf3", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-95ed24e60b7ac1e0",
+          "names": {
+            "en": "McDonnell Attack",
+            "pt-BR": "Ataque McDonnell",
+            "es": "Ataque McDonnell"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: McDonnell Attack",
+          "moves": ["e4", "c5", "f4", "Nc6", "Nf3", "e6", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7004fe37bef77ca3",
+          "names": {
+            "en": "McDonnell Attack",
+            "pt-BR": "Ataque McDonnell",
+            "es": "Ataque McDonnell"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: McDonnell Attack",
+          "moves": ["e4", "c5", "f4", "Nc6", "Nf3", "g6", "Bb5", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9488a5c62233cd55",
+          "names": {
+            "en": "McDonnell Attack",
+            "pt-BR": "Ataque McDonnell",
+            "es": "Ataque McDonnell"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: McDonnell Attack",
+          "moves": ["e4", "c5", "f4", "Nc6", "Nf3", "g6", "Bb5", "Bg7", "Bxc6", "bxc6", "O-O", "d6", "d3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c9166147ca3fee19",
+          "names": {
+            "en": "McDonnell Attack",
+            "pt-BR": "Ataque McDonnell",
+            "es": "Ataque McDonnell"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: McDonnell Attack",
+          "moves": ["e4", "c5", "f4", "Nc6", "Nf3", "g6", "Bb5", "Bg7", "c3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ce82ebcae9c72160",
+          "names": {
+            "en": "McDonnell Attack, Toilet Variation",
+            "pt-BR": "Ataque McDonnell, Variação Toilet",
+            "es": "Ataque McDonnell, Variante Toilet"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: McDonnell Attack, Toilet Variation",
+          "moves": ["e4", "c5", "f4", "d5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c9b2812274e15d07",
+          "names": {
+            "en": "McDonnell Attack, Tal Gambit",
+            "pt-BR": "Ataque McDonnell, Gambito Tal",
+            "es": "Ataque McDonnell, Gambito Tal"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: McDonnell Attack, Tal Gambit",
+          "moves": ["e4", "c5", "f4", "d5", "exd5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Nyezhmetdinov-Rossolimo Attack",
+        "pt-BR": "Ataque Nyezhmetdinov-Rossolimo",
+        "es": "Ataque Nyezhmetdinov-Rossolimo"
+      },
+      "lines": [
+        {
+          "id": "line-633f2a52cf7e5031",
+          "names": {
+            "en": "Nyezhmetdinov-Rossolimo Attack",
+            "pt-BR": "Ataque Nyezhmetdinov-Rossolimo",
+            "es": "Ataque Nyezhmetdinov-Rossolimo"
+          },
+          "eco": "B30",
+          "opening": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Bb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-378e058cee3e339a",
+          "names": {
+            "en": "Nyezhmetdinov-Rossolimo Attack, San Francisco Gambit",
+            "pt-BR": "Ataque Nyezhmetdinov-Rossolimo, Gambito San Francisco",
+            "es": "Ataque Nyezhmetdinov-Rossolimo, Gambito San Francisco"
+          },
+          "eco": "B30",
+          "opening": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, San Francisco Gambit",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Bb5", "Na5", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ce5d546d7d112506",
+          "names": {
+            "en": "Nyezhmetdinov-Rossolimo Attack, Brooklyn Retreat Defense"
+          },
+          "eco": "B30",
+          "opening": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Brooklyn Retreat Defense",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Bb5", "Nb8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c76a6dd857d4391c",
+          "names": {
+            "en": "Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation",
+            "pt-BR": "Ataque Nyezhmetdinov-Rossolimo, Variação do Fianqueto",
+            "es": "Ataque Nyezhmetdinov-Rossolimo, Variante del Fianchetto"
+          },
+          "eco": "B31",
+          "opening": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Bb5", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8cdabc61e69495e9",
+          "names": {
+            "en": "Nyezhmetdinov-Rossolimo Attack, Gurgenidze Variation",
+            "pt-BR": "Ataque Nyezhmetdinov-Rossolimo, Variação Gurgenidze",
+            "es": "Ataque Nyezhmetdinov-Rossolimo, Variante Gurgenidze"
+          },
+          "eco": "B31",
+          "opening": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Gurgenidze Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Bb5", "g6", "O-O", "Bg7", "Re1", "e5", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4b787e9502b4e43a",
+          "names": {
+            "en": "Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Totsky Attack",
+            "pt-BR": "Ataque Nyezhmetdinov-Rossolimo, Variação do Fianqueto, Ataque Totsky",
+            "es": "Ataque Nyezhmetdinov-Rossolimo, Variante del Fianchetto, Ataque Totsky"
+          },
+          "eco": "B31",
+          "opening": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Totsky Attack",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Bb5", "g6", "O-O", "Bg7", "c3", "Nf6", "Qa4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c3fab6205f4afd82",
+          "names": {
+            "en": "Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Lutikov Gambit",
+            "pt-BR": "Ataque Nyezhmetdinov-Rossolimo, Variação do Fianqueto, Gambito Lutikov",
+            "es": "Ataque Nyezhmetdinov-Rossolimo, Variante del Fianchetto, Gambito Lutikov"
+          },
+          "eco": "B31",
+          "opening": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Lutikov Gambit",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Bb5", "g6", "O-O", "Bg7", "c3", "Nf6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9a41afd266713c12",
+          "names": {
+            "en": "Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Gufeld Gambit",
+            "pt-BR": "Ataque Nyezhmetdinov-Rossolimo, Variação do Fianqueto, Gambito Gufeld",
+            "es": "Ataque Nyezhmetdinov-Rossolimo, Variante del Fianchetto, Gambito Gufeld"
+          },
+          "eco": "B31",
+          "opening": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Gufeld Gambit",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "Bb5", "g6", "O-O", "Bg7", "c3", "e5", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Classical Variation",
+        "pt-BR": "Variação Clássica",
+        "es": "Variante Clásica"
+      },
+      "lines": [
+        {
+          "id": "line-97b9eb97a7016832",
+          "names": {
+            "en": "Classical Variation, Anti-Sozin Variation",
+            "pt-BR": "Variação Clássica, Variação Anti-Sozin",
+            "es": "Variante Clásica, Variante Anti-Sozin"
+          },
+          "eco": "B57",
+          "opening": "Sicilian Defense: Classical Variation, Anti-Sozin Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bc4", "Qb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-36db2de2b62e0927",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "B56",
+          "opening": "Sicilian Defense: Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-64eef9400aff1642",
+          "names": {
+            "en": "Classical Variation, Sozin Attack",
+            "pt-BR": "Variação Clássica, Ataque Sozin",
+            "es": "Variante Clásica, Ataque Sozin"
+          },
+          "eco": "B57",
+          "opening": "Sicilian Defense: Classical Variation, Sozin Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ba132729220425b5",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "B58",
+          "opening": "Sicilian Defense: Classical Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3a6d8730eaac3ea4",
+          "names": {
+            "en": "Classical Variation, Dragon Transfer"
+          },
+          "eco": "B58",
+          "opening": "Sicilian Defense: Classical Variation, Dragon Transfer",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Be2", "Nxd4", "Qxd4", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b821832eb0ad1081",
+          "names": {
+            "en": "Classical Variation, Fianchetto Variation",
+            "pt-BR": "Variação Clássica, Variação do Fianqueto",
+            "es": "Variante Clásica, Variante del Fianchetto"
+          },
+          "eco": "B56",
+          "opening": "Sicilian Defense: Classical Variation, Fianchetto Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Delayed Alapin Variation"
+      },
+      "lines": [
+        {
+          "id": "line-a466a462e0da4acb",
+          "names": {
+            "en": "Delayed Alapin Variation, with d6"
+          },
+          "eco": "B50",
+          "opening": "Sicilian Defense: Delayed Alapin Variation, with d6",
+          "moves": ["e4", "c5", "Nf3", "d6", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1a11bef29c613b3d",
+          "names": {
+            "en": "Delayed Alapin Variation, Basman-Palatnik Gambit"
+          },
+          "eco": "B50",
+          "opening": "Sicilian Defense: Delayed Alapin Variation, Basman-Palatnik Gambit",
+          "moves": ["e4", "c5", "Nf3", "d6", "c3", "Nf6", "Be2", "Nc6", "d4", "cxd4", "cxd4", "Nxe4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7fda56aae3e750a4",
+          "names": {
+            "en": "Delayed Alapin Variation, Basman-Palatnik Double Gambit"
+          },
+          "eco": "B50",
+          "opening": "Sicilian Defense: Delayed Alapin Variation, Basman-Palatnik Double Gambit",
+          "moves": ["e4", "c5", "Nf3", "d6", "c3", "Nf6", "Be2", "Nc6", "d4", "cxd4", "cxd4", "Nxe4", "d5", "Qa5+", "Nc3", "Nxc3", "bxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b281023684c1df9a",
+          "names": {
+            "en": "Delayed Alapin Variation, with e6"
+          },
+          "eco": "B40",
+          "opening": "Sicilian Defense: Delayed Alapin Variation, with e6",
+          "moves": ["e4", "c5", "Nf3", "e6", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dd21fee355f91e4f",
+          "names": {
+            "en": "Delayed Alapin Variation"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Delayed Alapin Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "c3", "d5", "exd5", "Qxd5", "d4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b6ba8c5da77cd2b0",
+          "names": {
+            "en": "Delayed Alapin Variation"
+          },
+          "eco": "B22",
+          "opening": "Sicilian Defense: Delayed Alapin Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "c3", "d5", "exd5", "exd5", "Bb5+", "Nc6", "O-O", "Bd6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Modern Variations"
+      },
+      "lines": [
+        {
+          "id": "line-70ba3a6f1889fb94",
+          "names": {
+            "en": "Modern Variations"
+          },
+          "eco": "B50",
+          "opening": "Sicilian Defense: Modern Variations",
+          "moves": ["e4", "c5", "Nf3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b60dc0b69f58eb58",
+          "names": {
+            "en": "Modern Variations, Anti-Qxd4 Move Order"
+          },
+          "eco": "B50",
+          "opening": "Sicilian Defense: Modern Variations, Anti-Qxd4 Move Order",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e3cc417c50b87a42",
+          "names": {
+            "en": "Modern Variations, Anti-Qxd4 Move Order Accepted"
+          },
+          "eco": "B50",
+          "opening": "Sicilian Defense: Modern Variations, Anti-Qxd4 Move Order Accepted",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "Nf6", "dxc5", "Nxe4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-20edb64423e6ce6f",
+          "names": {
+            "en": "Modern Variations, Main Line"
+          },
+          "eco": "B54",
+          "opening": "Sicilian Defense: Modern Variations, Main Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-580fff34ccac3d88",
+          "names": {
+            "en": "Modern Variations, Ginsberg Gambit"
+          },
+          "eco": "B54",
+          "opening": "Sicilian Defense: Modern Variations, Ginsberg Gambit",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1080177a455dc53e",
+          "names": {
+            "en": "Modern Variations, Tartakower"
+          },
+          "eco": "B50",
+          "opening": "Sicilian Defense: Modern Variations, Tartakower",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Moscow Variation"
+      },
+      "lines": [
+        {
+          "id": "line-b6106781bf31c6f0",
+          "names": {
+            "en": "Moscow Variation"
+          },
+          "eco": "B51",
+          "opening": "Sicilian Defense: Moscow Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "Bb5+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-62f44ddef1ee0a71",
+          "names": {
+            "en": "Moscow Variation, Main Line"
+          },
+          "eco": "B52",
+          "opening": "Sicilian Defense: Moscow Variation, Main Line",
+          "moves": ["e4", "c5", "Nf3", "d6", "Bb5+", "Bd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cba8a4bcb3c9fa97",
+          "names": {
+            "en": "Moscow Variation, Haag Gambit"
+          },
+          "eco": "B52",
+          "opening": "Sicilian Defense: Moscow Variation, Haag Gambit",
+          "moves": ["e4", "c5", "Nf3", "d6", "Bb5+", "Bd7", "Bxd7+", "Qxd7", "O-O", "Nc6", "c3", "Nf6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f6fcdfacbc39e60f",
+          "names": {
+            "en": "Moscow Variation, Sokolsky Variation"
+          },
+          "eco": "B52",
+          "opening": "Sicilian Defense: Moscow Variation, Sokolsky Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "Bb5+", "Bd7", "Bxd7+", "Qxd7", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fb6b687ae5ebdf71",
+          "names": {
+            "en": "Moscow Variation, Dorfman Gambit"
+          },
+          "eco": "B51",
+          "opening": "Sicilian Defense: Moscow Variation, Dorfman Gambit",
+          "moves": ["e4", "c5", "Nf3", "d6", "Bb5+", "Nc6", "O-O", "Bd7", "Qe2", "g6", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e17cc17f5de4c69d",
+          "names": {
+            "en": "Moscow Variation, Moscow Gambit"
+          },
+          "eco": "B51",
+          "opening": "Sicilian Defense: Moscow Variation, Moscow Gambit",
+          "moves": ["e4", "c5", "Nf3", "d6", "Bb5+", "Nc6", "O-O", "Bd7", "c3", "Nf6", "Re1", "a6", "Bxc6", "Bxc6", "d4", "Bxe4", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Smith-Morra Gambit Declined"
+      },
+      "lines": [
+        {
+          "id": "line-caaf79f4a0c527d6",
+          "names": {
+            "en": "Smith-Morra Gambit Declined, Alapin Formation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Declined, Alapin Formation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d70568b2e76d01ab",
+          "names": {
+            "en": "Smith-Morra Gambit Declined, Wing Formation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Declined, Wing Formation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "Qa5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a1efaea04d87ccee",
+          "names": {
+            "en": "Smith-Morra Gambit Declined, Push Variation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Declined, Push Variation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a5a82cd854ff1f9c",
+          "names": {
+            "en": "Smith-Morra Gambit Declined, Dubois Variation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Declined, Dubois Variation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "d3", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f5f317235f394a65",
+          "names": {
+            "en": "Smith-Morra Gambit Declined, Scandinavian Formation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Declined, Scandinavian Formation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bcccfeb047ca623e",
+          "names": {
+            "en": "Smith-Morra Gambit Declined, Center Formation"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit Declined, Center Formation",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Sozin Attack",
+        "pt-BR": "Ataque Sozin",
+        "es": "Ataque Sozin"
+      },
+      "lines": [
+        {
+          "id": "line-5f70dac25c303f6c",
+          "names": {
+            "en": "Sozin Attack, Leonhardt Variation",
+            "pt-BR": "Ataque Sozin, Variação Leonhardt",
+            "es": "Ataque Sozin, Variante Leonhardt"
+          },
+          "eco": "B88",
+          "opening": "Sicilian Defense: Sozin Attack, Leonhardt Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bc4", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0e8aedcf43c8098a",
+          "names": {
+            "en": "Sozin Attack, Fischer Variation",
+            "pt-BR": "Ataque Sozin, Variação Fischer",
+            "es": "Ataque Sozin, Variante Fischer"
+          },
+          "eco": "B88",
+          "opening": "Sicilian Defense: Sozin Attack, Fischer Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bc4", "e6", "Bb3", "Be7", "Be3", "O-O", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d14b3e5071e7f408",
+          "names": {
+            "en": "Sozin Attack, Main Line",
+            "pt-BR": "Ataque Sozin, Linha Principal",
+            "es": "Ataque Sozin, Línea Principal"
+          },
+          "eco": "B89",
+          "opening": "Sicilian Defense: Sozin Attack, Main Line",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bc4", "e6", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-53266f070c6984d1",
+          "names": {
+            "en": "Sozin Attack, Main Line, Sherbakov Variation",
+            "pt-BR": "Ataque Sozin, Linha Principal, Variação Sherbakov",
+            "es": "Ataque Sozin, Línea Principal, Variante Sherbakov"
+          },
+          "eco": "B89",
+          "opening": "Sicilian Defense: Sozin Attack, Main Line, Sherbakov Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Bc4", "e6", "Be3", "Be7", "Bb3", "O-O", "O-O", "Na5", "f4", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6557f8adcc2cc802",
+          "names": {
+            "en": "Sozin Attack, Flank Variation",
+            "pt-BR": "Ataque Sozin, Variação Flank",
+            "es": "Ataque Sozin, Variante Flank"
+          },
+          "eco": "B87",
+          "opening": "Sicilian Defense: Sozin Attack, Flank Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6", "Bc4", "e6", "Bb3", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ff516a95da0864f9",
+          "names": {
+            "en": "Sozin Attack",
+            "pt-BR": "Ataque Sozin",
+            "es": "Ataque Sozin"
+          },
+          "eco": "B86",
+          "opening": "Sicilian Defense: Sozin Attack",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Four Knights Variation"
+      },
+      "lines": [
+        {
+          "id": "line-2a1738e0aab957d3",
+          "names": {
+            "en": "Four Knights Variation"
+          },
+          "eco": "B45",
+          "opening": "Sicilian Defense: Four Knights Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-58721446f59872ab",
+          "names": {
+            "en": "Four Knights Variation, American Attack"
+          },
+          "eco": "B45",
+          "opening": "Sicilian Defense: Four Knights Variation, American Attack",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Nf6", "Ndb5", "Bb4", "Nd6+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-09c8c00d7a1d34ec",
+          "names": {
+            "en": "Four Knights Variation, Cobra Variation"
+          },
+          "eco": "B45",
+          "opening": "Sicilian Defense: Four Knights Variation, Cobra Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Nf6", "Ndb5", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-25963e2c38e22fe5",
+          "names": {
+            "en": "Four Knights Variation, Sveshnikov Transfer"
+          },
+          "eco": "B45",
+          "opening": "Sicilian Defense: Four Knights Variation, Sveshnikov Transfer",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Nf6", "Ndb5", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-430811ca41c9f81e",
+          "names": {
+            "en": "Four Knights Variation, Exchange Variation"
+          },
+          "eco": "B45",
+          "opening": "Sicilian Defense: Four Knights Variation, Exchange Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nc6", "Nc3", "Nf6", "Nxc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Nimzowitsch Variation",
+        "pt-BR": "Variação Nimzowitsch",
+        "es": "Variante Nimzowitsch"
+      },
+      "lines": [
+        {
+          "id": "line-513bf6496c8aa511",
+          "names": {
+            "en": "Nimzowitsch Variation",
+            "pt-BR": "Variação Nimzowitsch",
+            "es": "Variante Nimzowitsch"
+          },
+          "eco": "B29",
+          "opening": "Sicilian Defense: Nimzowitsch Variation",
+          "moves": ["e4", "c5", "Nf3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0c5369d735bc880d",
+          "names": {
+            "en": "Nimzowitsch Variation, Closed Variation",
+            "pt-BR": "Variação Nimzowitsch, Variação Fechada",
+            "es": "Variante Nimzowitsch, Variante Cerrada"
+          },
+          "eco": "B29",
+          "opening": "Sicilian Defense: Nimzowitsch Variation, Closed Variation",
+          "moves": ["e4", "c5", "Nf3", "Nf6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7cb87e5e6ab1e864",
+          "names": {
+            "en": "Nimzowitsch Variation, Advance Variation",
+            "pt-BR": "Variação Nimzowitsch, Variação do Avanço",
+            "es": "Variante Nimzowitsch, Variante del Avance"
+          },
+          "eco": "B29",
+          "opening": "Sicilian Defense: Nimzowitsch Variation, Advance Variation",
+          "moves": ["e4", "c5", "Nf3", "Nf6", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-843e29057841b739",
+          "names": {
+            "en": "Nimzowitsch Variation, Exchange Variation",
+            "pt-BR": "Variação Nimzowitsch, Variação da Troca",
+            "es": "Variante Nimzowitsch, Variante del Cambio"
+          },
+          "eco": "B29",
+          "opening": "Sicilian Defense: Nimzowitsch Variation, Exchange Variation",
+          "moves": ["e4", "c5", "Nf3", "Nf6", "e5", "Nd5", "Nc3", "Nxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b1edfc10aaa85aa2",
+          "names": {
+            "en": "Nimzowitsch Variation, Main Line",
+            "pt-BR": "Variação Nimzowitsch, Linha Principal",
+            "es": "Variante Nimzowitsch, Línea Principal"
+          },
+          "eco": "B29",
+          "opening": "Sicilian Defense: Nimzowitsch Variation, Main Line",
+          "moves": ["e4", "c5", "Nf3", "Nf6", "e5", "Nd5", "Nc3", "e6", "Nxd5", "exd5", "d4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "French Variation"
+      },
+      "lines": [
+        {
+          "id": "line-abc00a7a4f13a79b",
+          "names": {
+            "en": "French Variation"
+          },
+          "eco": "B40",
+          "opening": "Sicilian Defense: French Variation",
+          "moves": ["e4", "c5", "Nf3", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8c6ac3ad07608efb",
+          "names": {
+            "en": "French Variation, Westerinen Attack"
+          },
+          "eco": "B40",
+          "opening": "Sicilian Defense: French Variation, Westerinen Attack",
+          "moves": ["e4", "c5", "Nf3", "e6", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e1145d7929e5c740",
+          "names": {
+            "en": "French Variation, Open"
+          },
+          "eco": "B40",
+          "opening": "Sicilian Defense: French Variation, Open",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b9e24010b65c5799",
+          "names": {
+            "en": "French Variation, Normal"
+          },
+          "eco": "B40",
+          "opening": "Sicilian Defense: French Variation, Normal",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Main",
+        "pt-BR": "Principal",
+        "es": "Principal"
+      },
+      "lines": [
+        {
+          "id": "line-de7519e3a3934acd",
+          "names": {
+            "en": "Sicilian Defense",
+            "pt-BR": "Defesa Siciliana",
+            "es": "Defensa Siciliana"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense",
+          "moves": ["e4", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7a97f42a7507c648",
+          "names": {
+            "en": "Sicilian Defense",
+            "pt-BR": "Defesa Siciliana",
+            "es": "Defensa Siciliana"
+          },
+          "eco": "B27",
+          "opening": "Sicilian Defense",
+          "moves": ["e4", "c5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bad79eb560e43763",
+          "names": {
+            "en": "Sicilian Defense",
+            "pt-BR": "Defesa Siciliana",
+            "es": "Defensa Siciliana"
+          },
+          "eco": "B50",
+          "opening": "Sicilian Defense",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3153abbe7c34043d",
+          "names": {
+            "en": "Sicilian Defense",
+            "pt-BR": "Defesa Siciliana",
+            "es": "Defensa Siciliana"
+          },
+          "eco": "B50",
+          "opening": "Sicilian Defense",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Open",
+        "pt-BR": "Aberta",
+        "es": "Abierta"
+      },
+      "lines": [
+        {
+          "id": "line-224b35abb6fbd8c1",
+          "names": {
+            "en": "Open",
+            "pt-BR": "Aberta",
+            "es": "Abierta"
+          },
+          "eco": "B32",
+          "opening": "Sicilian Defense: Open",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-100d32ee192f22fd",
+          "names": {
+            "en": "Open",
+            "pt-BR": "Aberta",
+            "es": "Abierta"
+          },
+          "eco": "B32",
+          "opening": "Sicilian Defense: Open",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9ec76090f4c99410",
+          "names": {
+            "en": "Open",
+            "pt-BR": "Aberta",
+            "es": "Abierta"
+          },
+          "eco": "B32",
+          "opening": "Sicilian Defense: Open",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3ba99463593789c2",
+          "names": {
+            "en": "Open",
+            "pt-BR": "Aberta",
+            "es": "Abierta"
+          },
+          "eco": "B33",
+          "opening": "Sicilian Defense: Open",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Boleslavsky Variation",
+        "pt-BR": "Variação Boleslavsky",
+        "es": "Variante Boleslavsky"
+      },
+      "lines": [
+        {
+          "id": "line-eca0bca27a872f5a",
+          "names": {
+            "en": "Boleslavsky Variation",
+            "pt-BR": "Variação Boleslavsky",
+            "es": "Variante Boleslavsky"
+          },
+          "eco": "B59",
+          "opening": "Sicilian Defense: Boleslavsky Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Be2", "e5", "Nb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-76c2a878117bee5a",
+          "names": {
+            "en": "Boleslavsky Variation, Louma Variation",
+            "pt-BR": "Variação Boleslavsky, Variação Louma",
+            "es": "Variante Boleslavsky, Variante Louma"
+          },
+          "eco": "B58",
+          "opening": "Sicilian Defense: Boleslavsky Variation, Louma Variation",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Be2", "e5", "Nxc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-593caf46ecb15606",
+          "names": {
+            "en": "Boleslavsky Variation",
+            "pt-BR": "Variação Boleslavsky",
+            "es": "Variante Boleslavsky"
+          },
+          "eco": "B58",
+          "opening": "Sicilian Defense: Boleslavsky Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6", "Be2", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Pin Variation",
+        "pt-BR": "Variação Pin",
+        "es": "Variante Pin"
+      },
+      "lines": [
+        {
+          "id": "line-f943ecf67d84b0eb",
+          "names": {
+            "en": "Pin Variation",
+            "pt-BR": "Variação Pin",
+            "es": "Variante Pin"
+          },
+          "eco": "B40",
+          "opening": "Sicilian Defense: Pin Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7af368f2c16db5f2",
+          "names": {
+            "en": "Pin Variation, Jaffe Variation",
+            "pt-BR": "Variação Pin, Variação Jaffe",
+            "es": "Variante Pin, Variante Jaffe"
+          },
+          "eco": "B40",
+          "opening": "Sicilian Defense: Pin Variation, Jaffe Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Bb4", "Bd3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5796980602d0f89a",
+          "names": {
+            "en": "Pin Variation, Koch Variation",
+            "pt-BR": "Variação Pin, Variação Koch",
+            "es": "Variante Pin, Variante Koch"
+          },
+          "eco": "B40",
+          "opening": "Sicilian Defense: Pin Variation, Koch Variation",
+          "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Bb4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Chekhover Variation",
+        "pt-BR": "Variação Chekhover",
+        "es": "Variante Chekhover"
+      },
+      "lines": [
+        {
+          "id": "line-e346d7005c697ccc",
+          "names": {
+            "en": "Chekhover Variation",
+            "pt-BR": "Variação Chekhover",
+            "es": "Variante Chekhover"
+          },
+          "eco": "B53",
+          "opening": "Sicilian Defense: Chekhover Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Qxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e98e25463f37f1bc",
+          "names": {
+            "en": "Chekhover Variation, Zaitsev Defense",
+            "pt-BR": "Variação Chekhover, Defesa Zaitsev",
+            "es": "Variante Chekhover, Defensa Zaitsev"
+          },
+          "eco": "B53",
+          "opening": "Sicilian Defense: Chekhover Variation, Zaitsev Defense",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Qxd4", "Nc6", "Bb5", "Qd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Czerniak Attack",
+        "pt-BR": "Ataque Czerniak",
+        "es": "Ataque Czerniak"
+      },
+      "lines": [
+        {
+          "id": "line-01e41d63cda58be9",
+          "names": {
+            "en": "Czerniak Attack",
+            "pt-BR": "Ataque Czerniak",
+            "es": "Ataque Czerniak"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Czerniak Attack",
+          "moves": ["e4", "c5", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c3c5e41b95d3c9b6",
+          "names": {
+            "en": "Czerniak Attack, Queen Fianchetto Variation"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Czerniak Attack, Queen Fianchetto Variation",
+          "moves": ["e4", "c5", "b3", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Grand Prix Attack",
+        "pt-BR": "Ataque Grand Prix",
+        "es": "Ataque Grand Prix"
+      },
+      "lines": [
+        {
+          "id": "line-7bd313c651acc642",
+          "names": {
+            "en": "Grand Prix Attack",
+            "pt-BR": "Ataque Grand Prix",
+            "es": "Ataque Grand Prix"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Grand Prix Attack",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ffe2e0892a51b9ab",
+          "names": {
+            "en": "Grand Prix Attack, Schofman Variation",
+            "pt-BR": "Ataque Grand Prix, Variação Schofman",
+            "es": "Ataque Grand Prix, Variante Schofman"
+          },
+          "eco": "B23",
+          "opening": "Sicilian Defense: Grand Prix Attack, Schofman Variation",
+          "moves": ["e4", "c5", "Nc3", "Nc6", "f4", "g6", "Nf3", "Bg7", "Bc4", "e6", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Hyperaccelerated Dragon"
+      },
+      "lines": [
+        {
+          "id": "line-acb4f28b1762a789",
+          "names": {
+            "en": "Hyperaccelerated Dragon"
+          },
+          "eco": "B27",
+          "opening": "Sicilian Defense: Hyperaccelerated Dragon",
+          "moves": ["e4", "c5", "Nf3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5aa5e38bb36a4911",
+          "names": {
+            "en": "Hyperaccelerated Dragon"
+          },
+          "eco": "B27",
+          "opening": "Sicilian Defense: Hyperaccelerated Dragon",
+          "moves": ["e4", "c5", "Nf3", "g6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Hyperaccelerated Pterodactyl"
+      },
+      "lines": [
+        {
+          "id": "line-5c81c12162960d94",
+          "names": {
+            "en": "Hyperaccelerated Pterodactyl"
+          },
+          "eco": "B27",
+          "opening": "Sicilian Defense: Hyperaccelerated Pterodactyl",
+          "moves": ["e4", "c5", "Nf3", "g6", "d4", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-57f2bd8a9fb7613f",
+          "names": {
+            "en": "Hyperaccelerated Pterodactyl, Exchange Variation"
+          },
+          "eco": "B27",
+          "opening": "Sicilian Defense: Hyperaccelerated Pterodactyl, Exchange Variation",
+          "moves": ["e4", "c5", "Nf3", "g6", "d4", "Bg7", "dxc5", "Qa5+", "Nc3", "Bxc3+", "bxc3", "Qxc3+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Kronberger Variation",
+        "pt-BR": "Variação Kronberger",
+        "es": "Variante Kronberger"
+      },
+      "lines": [
+        {
+          "id": "line-ad086fbe79458f44",
+          "names": {
+            "en": "Kronberger Variation",
+            "pt-BR": "Variação Kronberger",
+            "es": "Variante Kronberger"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Kronberger Variation",
+          "moves": ["e4", "c5", "Na3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-abb73487b34bcf2c",
+          "names": {
+            "en": "Kronberger Variation, Nemeth Gambit",
+            "pt-BR": "Variação Kronberger, Gambito Nemeth",
+            "es": "Variante Kronberger, Gambito Nemeth"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Kronberger Variation, Nemeth Gambit",
+          "moves": ["e4", "c5", "Na3", "Nc6", "d4", "cxd4", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Morphy Gambit",
+        "pt-BR": "Gambito Morphy",
+        "es": "Gambito Morphy"
+      },
+      "lines": [
+        {
+          "id": "line-3f1b10af8c80b5d6",
+          "names": {
+            "en": "Morphy Gambit",
+            "pt-BR": "Gambito Morphy",
+            "es": "Gambito Morphy"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Morphy Gambit",
+          "moves": ["e4", "c5", "d4", "cxd4", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-14a49661135d8a29",
+          "names": {
+            "en": "Morphy Gambit, Andreaschek Gambit",
+            "pt-BR": "Gambito Morphy, Gambito Andreaschek",
+            "es": "Gambito Morphy, Gambito Andreaschek"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Morphy Gambit, Andreaschek Gambit",
+          "moves": ["e4", "c5", "d4", "cxd4", "Nf3", "e5", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Myers Attack",
+        "pt-BR": "Ataque Myers",
+        "es": "Ataque Myers"
+      },
+      "lines": [
+        {
+          "id": "line-5bda8e8edc898b0f",
+          "names": {
+            "en": "Myers Attack, with a4"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Myers Attack, with a4",
+          "moves": ["e4", "c5", "a4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2293e2c317b34337",
+          "names": {
+            "en": "Myers Attack, with h4"
+          },
+          "eco": "B20",
+          "opening": "Sicilian Defense: Myers Attack, with h4",
+          "moves": ["e4", "c5", "h4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Prins Variation",
+        "pt-BR": "Variação Prins",
+        "es": "Variante Prins"
+      },
+      "lines": [
+        {
+          "id": "line-e64da70ad5ef93f7",
+          "names": {
+            "en": "Prins Variation",
+            "pt-BR": "Variação Prins",
+            "es": "Variante Prins"
+          },
+          "eco": "B54",
+          "opening": "Sicilian Defense: Prins Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dbbc1b9e21126f9a",
+          "names": {
+            "en": "Prins Variation, Venice Attack",
+            "pt-BR": "Variação Prins, Ataque Venice",
+            "es": "Variante Prins, Ataque Venice"
+          },
+          "eco": "B55",
+          "opening": "Sicilian Defense: Prins Variation, Venice Attack",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "f3", "e5", "Bb5+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Smith-Morra Gambit",
+        "pt-BR": "Gambito Smith-Morra",
+        "es": "Gambito Smith-Morra"
+      },
+      "lines": [
+        {
+          "id": "line-726c291d9e512ffb",
+          "names": {
+            "en": "Smith-Morra Gambit",
+            "pt-BR": "Gambito Smith-Morra",
+            "es": "Gambito Smith-Morra"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit",
+          "moves": ["e4", "c5", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-682f1f1f21cad585",
+          "names": {
+            "en": "Smith-Morra Gambit",
+            "pt-BR": "Gambito Smith-Morra",
+            "es": "Gambito Smith-Morra"
+          },
+          "eco": "B21",
+          "opening": "Sicilian Defense: Smith-Morra Gambit",
+          "moves": ["e4", "c5", "d4", "cxd4", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-c597894f1c4111d8",
+      "names": {
+        "en": "Acton Extension"
+      },
+      "eco": "B27",
+      "opening": "Sicilian Defense: Acton Extension",
+      "moves": ["e4", "c5", "Nf3", "g6", "c4", "Bh6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f196fa9884e9b60f",
+      "names": {
+        "en": "Amazon Attack",
+        "pt-BR": "Ataque Amazon",
+        "es": "Ataque Amazon"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Amazon Attack",
+      "moves": ["e4", "c5", "Qg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-069b47c773301045",
+      "names": {
+        "en": "Big Clamp Formation"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Big Clamp Formation",
+      "moves": ["e4", "c5", "d3", "Nc6", "c3", "d6", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a63d49ae636f7585",
+      "names": {
+        "en": "Bowdler Attack",
+        "pt-BR": "Ataque Bowdler",
+        "es": "Ataque Bowdler"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Bowdler Attack",
+      "moves": ["e4", "c5", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6bb90d630b2684a3",
+      "names": {
+        "en": "Brick Variation",
+        "pt-BR": "Variação Brick",
+        "es": "Variante Brick"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Brick Variation",
+      "moves": ["e4", "c5", "Nh3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f95e8ceeef1c3312",
+      "names": {
+        "en": "Brussels Gambit",
+        "pt-BR": "Gambito Brussels",
+        "es": "Gambito Brussels"
+      },
+      "eco": "B27",
+      "opening": "Sicilian Defense: Brussels Gambit",
+      "moves": ["e4", "c5", "Nf3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6e5e390785f32305",
+      "names": {
+        "en": "Bücker Variation",
+        "pt-BR": "Variação Bücker",
+        "es": "Variante Bücker"
+      },
+      "eco": "B27",
+      "opening": "Sicilian Defense: Bücker Variation",
+      "moves": ["e4", "c5", "Nf3", "h6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-91f87d43a9757b08",
+      "names": {
+        "en": "Coles Sicilian Gambit"
+      },
+      "eco": "B21",
+      "opening": "Sicilian Defense: Coles Sicilian Gambit",
+      "moves": ["e4", "c5", "d4", "cxd4", "Qxd4", "Nc6", "Qd1", "Nf6", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-57235351348e58cc",
+      "names": {
+        "en": "Double-Dutch Gambit"
+      },
+      "eco": "B27",
+      "opening": "Sicilian Defense: Double-Dutch Gambit",
+      "moves": ["e4", "c5", "Nf3", "f5", "exf5", "Nh6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-db11a53fc3a0b4a7",
+      "names": {
+        "en": "Drazic Variation",
+        "pt-BR": "Variação Drazic",
+        "es": "Variante Drazic"
+      },
+      "eco": "B40",
+      "opening": "Sicilian Defense: Drazic Variation",
+      "moves": ["e4", "c5", "Nf3", "e6", "d4", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-62e16495c6bc2d58",
+      "names": {
+        "en": "Euwe Attack, Prins Gambit",
+        "pt-BR": "Ataque Euwe, Gambito Prins",
+        "es": "Ataque Euwe, Gambito Prins"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Euwe Attack, Prins Gambit",
+      "moves": ["e4", "c5", "b3", "d5", "Bb2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-014b0c63dda490c2",
+      "names": {
+        "en": "Flohr Variation",
+        "pt-BR": "Variação Flohr",
+        "es": "Variante Flohr"
+      },
+      "eco": "B32",
+      "opening": "Sicilian Defense: Flohr Variation",
+      "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3e606f859e10f1d8",
+      "names": {
+        "en": "Franco-Sicilian Variation"
+      },
+      "eco": "B32",
+      "opening": "Sicilian Defense: Franco-Sicilian Variation",
+      "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d5cc4e6e282041f9",
+      "names": {
+        "en": "Frederico Variation",
+        "pt-BR": "Variação Frederico",
+        "es": "Variante Frederico"
+      },
+      "eco": "B27",
+      "opening": "Sicilian Defense: Frederico Variation",
+      "moves": ["e4", "c5", "Nf3", "g6", "d4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-534ee03b04a5f5f0",
+      "names": {
+        "en": "Gaw-Paw Variation",
+        "pt-BR": "Variação Gaw-Paw",
+        "es": "Variante Gaw-Paw"
+      },
+      "eco": "B40",
+      "opening": "Sicilian Defense: Gaw-Paw Variation",
+      "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Qb6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8655b7e01b1ae167",
+      "names": {
+        "en": "Gloria Variation",
+        "pt-BR": "Variação Gloria",
+        "es": "Variante Gloria"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Gloria Variation",
+      "moves": ["e4", "c5", "c4", "d6", "Nc3", "Nc6", "g3", "h5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3eade834f72e803f",
+      "names": {
+        "en": "Godiva Variation",
+        "pt-BR": "Variação Godiva",
+        "es": "Variante Godiva"
+      },
+      "eco": "B32",
+      "opening": "Sicilian Defense: Godiva Variation",
+      "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Qb6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-34388dc5bd5a78a4",
+      "names": {
+        "en": "Grob Variation",
+        "pt-BR": "Variação Grob",
+        "es": "Variante Grob"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Grob Variation",
+      "moves": ["e4", "c5", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-71f954705ec4e70c",
+      "names": {
+        "en": "Halasz Gambit",
+        "pt-BR": "Gambito Halasz",
+        "es": "Gambito Halasz"
+      },
+      "eco": "B21",
+      "opening": "Sicilian Defense: Halasz Gambit",
+      "moves": ["e4", "c5", "d4", "cxd4", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-15e3dd8988b6caa3",
+      "names": {
+        "en": "Heidenfeld Variation",
+        "pt-BR": "Variação Heidenfeld",
+        "es": "Variante Heidenfeld"
+      },
+      "eco": "B22",
+      "opening": "Sicilian Defense: Heidenfeld Variation",
+      "moves": ["e4", "c5", "c3", "Nf6", "e5", "Nd5", "Nf3", "Nc6", "Na3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fc9df63b68677b17",
+      "names": {
+        "en": "Jalalabad Variation",
+        "pt-BR": "Variação Jalalabad",
+        "es": "Variante Jalalabad"
+      },
+      "eco": "B27",
+      "opening": "Sicilian Defense: Jalalabad Variation",
+      "moves": ["e4", "c5", "Nf3", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9ecf9cedeaf78649",
+      "names": {
+        "en": "Kalashnikov Variation",
+        "pt-BR": "Variação Kalashnikov",
+        "es": "Variante Kalashnikov"
+      },
+      "eco": "B32",
+      "opening": "Sicilian Defense: Kalashnikov Variation",
+      "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "e5", "Nb5", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-153cc8e5f98d0087",
+      "names": {
+        "en": "Katalimov Variation",
+        "pt-BR": "Variação Katalimov",
+        "es": "Variante Katalimov"
+      },
+      "eco": "B27",
+      "opening": "Sicilian Defense: Katalimov Variation",
+      "moves": ["e4", "c5", "Nf3", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e5624a1ac5c4e4e3",
+      "names": {
+        "en": "Keres Variation",
+        "pt-BR": "Variação Keres",
+        "es": "Variante Keres"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Keres Variation",
+      "moves": ["e4", "c5", "Ne2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6fb18fc43e41570d",
+      "names": {
+        "en": "King David's Opening"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: King David's Opening",
+      "moves": ["e4", "c5", "Ke2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-370287e2c0fe11eb",
+      "names": {
+        "en": "Kopec System",
+        "pt-BR": "Sistema Kopec",
+        "es": "Sistema Kopec"
+      },
+      "eco": "B50",
+      "opening": "Sicilian Defense: Kopec System",
+      "moves": ["e4", "c5", "Nf3", "d6", "Bd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9d1ac20f01fff5d5",
+      "names": {
+        "en": "Kotov Gambit",
+        "pt-BR": "Gambito Kotov",
+        "es": "Gambito Kotov"
+      },
+      "eco": "B50",
+      "opening": "Sicilian Defense: Kotov Gambit",
+      "moves": ["e4", "c5", "Nf3", "d6", "g3", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d2f94f1acc449957",
+      "names": {
+        "en": "Kramnik Variation",
+        "pt-BR": "Variação Kramnik",
+        "es": "Variante Kramnik"
+      },
+      "eco": "B40",
+      "opening": "Sicilian Defense: Kramnik Variation",
+      "moves": ["e4", "c5", "Nf3", "e6", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-68e391796bdf4103",
+      "names": {
+        "en": "Kupreichik Variation",
+        "pt-BR": "Variação Kupreichik",
+        "es": "Variante Kupreichik"
+      },
+      "eco": "B56",
+      "opening": "Sicilian Defense: Kupreichik Variation",
+      "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c634affcbbbf5f2b",
+      "names": {
+        "en": "Kveinis Variation",
+        "pt-BR": "Variação Kveinis",
+        "es": "Variante Kveinis"
+      },
+      "eco": "B40",
+      "opening": "Sicilian Defense: Kveinis Variation",
+      "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Qb6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-62bd3267a2676a25",
+      "names": {
+        "en": "Lasker-Dunne Attack",
+        "pt-BR": "Ataque Lasker-Dunne",
+        "es": "Ataque Lasker-Dunne"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Lasker-Dunne Attack",
+      "moves": ["e4", "c5", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6ea0e7e476427e63",
+      "names": {
+        "en": "Löwenthal Variation",
+        "pt-BR": "Variação Löwenthal",
+        "es": "Variante Löwenthal"
+      },
+      "eco": "B32",
+      "opening": "Sicilian Defense: Löwenthal Variation",
+      "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dda60cea259430f6",
+      "names": {
+        "en": "Magnus Smith Trap",
+        "pt-BR": "Armadilha Magnus Smith",
+        "es": "Trampa Magnus Smith"
+      },
+      "eco": "B57",
+      "opening": "Sicilian Defense: Magnus Smith Trap",
+      "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bc4", "g6", "Nxc6", "bxc6", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8db3468e5b738138",
+      "names": {
+        "en": "Marshall Counterattack"
+      },
+      "eco": "B40",
+      "opening": "Sicilian Defense: Marshall Counterattack",
+      "moves": ["e4", "c5", "Nf3", "e6", "d4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-16dc3abf5cf3be5e",
+      "names": {
+        "en": "Mengarini Variation",
+        "pt-BR": "Variação Mengarini",
+        "es": "Variante Mengarini"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Mengarini Variation",
+      "moves": ["e4", "c5", "a3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-27d522539ce81052",
+      "names": {
+        "en": "Mongoose Variation",
+        "pt-BR": "Variação Mongoose",
+        "es": "Variante Mongoose"
+      },
+      "eco": "B27",
+      "opening": "Sicilian Defense: Mongoose Variation",
+      "moves": ["e4", "c5", "Nf3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-101f12f900ac0fbf",
+      "names": {
+        "en": "Nimzo-American Variation"
+      },
+      "eco": "B32",
+      "opening": "Sicilian Defense: Nimzo-American Variation",
+      "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-aae40295b7735afd",
+      "names": {
+        "en": "Old Sicilian"
+      },
+      "eco": "B30",
+      "opening": "Sicilian Defense: Old Sicilian",
+      "moves": ["e4", "c5", "Nf3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-96fb3c15b8a404e4",
+      "names": {
+        "en": "Paulsen-Basman Defense",
+        "pt-BR": "Defesa Paulsen-Basman",
+        "es": "Defensa Paulsen-Basman"
+      },
+      "eco": "B40",
+      "opening": "Sicilian Defense: Paulsen-Basman Defense",
+      "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "Nxd4", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-418df39087836e39",
+      "names": {
+        "en": "Polish Gambit"
+      },
+      "eco": "B27",
+      "opening": "Sicilian Defense: Polish Gambit",
+      "moves": ["e4", "c5", "Nf3", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-04260d314daba804",
+      "names": {
+        "en": "Portsmouth Gambit",
+        "pt-BR": "Gambito Portsmouth",
+        "es": "Gambito Portsmouth"
+      },
+      "eco": "B30",
+      "opening": "Sicilian Defense: Portsmouth Gambit",
+      "moves": ["e4", "c5", "Nf3", "Nc6", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fb0be3150be73b5d",
+      "names": {
+        "en": "Quinteros Variation",
+        "pt-BR": "Variação Quinteros",
+        "es": "Variante Quinteros"
+      },
+      "eco": "B27",
+      "opening": "Sicilian Defense: Quinteros Variation",
+      "moves": ["e4", "c5", "Nf3", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cf9f619e823af7f9",
+      "names": {
+        "en": "Smith-Morra Gambit Deferred"
+      },
+      "eco": "B40",
+      "opening": "Sicilian Defense: Smith-Morra Gambit Deferred",
+      "moves": ["e4", "c5", "Nf3", "e6", "d4", "cxd4", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-edc23948ebb949be",
+      "names": {
+        "en": "Spielmann Variation",
+        "pt-BR": "Variação Spielmann",
+        "es": "Variante Spielmann"
+      },
+      "eco": "B56",
+      "opening": "Sicilian Defense: Spielmann Variation",
+      "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Nde2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e31810b21a80f4bf",
+      "names": {
+        "en": "Staunton-Cochrane Variation",
+        "pt-BR": "Variação Staunton-Cochrane",
+        "es": "Variante Staunton-Cochrane"
+      },
+      "eco": "B20",
+      "opening": "Sicilian Defense: Staunton-Cochrane Variation",
+      "moves": ["e4", "c5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-30d97f3e92b1de3f",
+      "names": {
+        "en": "Velimirovic Attack",
+        "pt-BR": "Ataque Velimirovic",
+        "es": "Ataque Velimirovic"
+      },
+      "eco": "B89",
+      "opening": "Sicilian Defense: Velimirovic Attack",
+      "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "d6", "Bc4", "e6", "Be3", "Be7", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6ca3b169bbc1b6ff",
+      "names": {
+        "en": "Venice Attack",
+        "pt-BR": "Ataque Venice",
+        "es": "Ataque Venice"
+      },
+      "eco": "B56",
+      "opening": "Sicilian Defense: Venice Attack",
+      "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e5", "Bb5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c0e6f54dd9b9925d",
+      "names": {
+        "en": "Wing Gambit Deferred"
+      },
+      "eco": "B40",
+      "opening": "Sicilian Defense: Wing Gambit Deferred",
+      "moves": ["e4", "c5", "Nf3", "e6", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

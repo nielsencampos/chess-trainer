@@ -1,0 +1,91 @@
+{
+  "id": "ware-opening",
+  "names": {
+    "en": "Ware Opening",
+    "pt-BR": "Abertura Ware",
+    "es": "Apertura Ware"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-fcda042cbca224ec",
+      "names": {
+        "en": "Cologne Gambit",
+        "pt-BR": "Gambito Cologne",
+        "es": "Gambito Cologne"
+      },
+      "eco": "A00",
+      "opening": "Ware Opening: Cologne Gambit",
+      "moves": ["a4", "b6", "d4", "d5", "Nc3", "Nd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7413827ae10e348d",
+      "names": {
+        "en": "Crab Variation"
+      },
+      "eco": "A00",
+      "opening": "Ware Opening: Crab Variation",
+      "moves": ["a4", "e5", "h4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-512317a73f74e5c5",
+      "names": {
+        "en": "Ware Opening",
+        "pt-BR": "Abertura Ware",
+        "es": "Apertura Ware"
+      },
+      "eco": "A00",
+      "opening": "Ware Opening",
+      "moves": ["a4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0f86558896eb9487",
+      "names": {
+        "en": "Meadow Hay Trap",
+        "pt-BR": "Armadilha Meadow Hay",
+        "es": "Trampa Meadow Hay"
+      },
+      "eco": "A00",
+      "opening": "Ware Opening: Meadow Hay Trap",
+      "moves": ["a4", "e5", "Ra3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-70ad1e004de77fff",
+      "names": {
+        "en": "Symmetric Variation",
+        "pt-BR": "Variação Symmetric",
+        "es": "Variante Symmetric"
+      },
+      "eco": "A00",
+      "opening": "Ware Opening: Symmetric Variation",
+      "moves": ["a4", "a5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9a91fbf7cc245066",
+      "names": {
+        "en": "Ware Gambit",
+        "pt-BR": "Gambito Ware",
+        "es": "Gambito Ware"
+      },
+      "eco": "A00",
+      "opening": "Ware Opening: Ware Gambit",
+      "moves": ["a4", "e5", "a5", "d5", "e3", "f5", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dbb03a33831e0d8a",
+      "names": {
+        "en": "Wing Gambit"
+      },
+      "eco": "A00",
+      "opening": "Ware Opening: Wing Gambit",
+      "moves": ["a4", "b5", "axb5", "Bb7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

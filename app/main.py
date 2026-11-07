@@ -9,12 +9,13 @@ from fastapi.staticfiles import StaticFiles
 
 from app import __version__
 from app.api.routes import router
-from app.book.sync import load_book, sync_catalog, sync_openings
+from app.book.sync import load_book, load_opening_names, sync_catalog, sync_openings
 from app.config import Settings, settings_from_env
 from app.db.connection import apply_migrations, open_database
 from app.engine.levels import load_levels
 from app.engine.process import MoveEngine, StockfishEngine
 from app.game.service import GameService
+from app.game.store import GameStore
 
 
 def create_app(
@@ -29,6 +30,7 @@ def create_app(
     sync_openings(database, settings.openings_dir)
     sync_catalog(database, settings.catalog_dir)
     book = load_book(database)
+    opening_names = load_opening_names(database)
     levels = load_levels(settings.levels_file)
     engine = engine or StockfishEngine(
         settings.stockfish_path,
@@ -45,7 +47,7 @@ def create_app(
         database.close()
 
     app = FastAPI(title="chess-trainer", version=__version__, lifespan=lifespan)
-    app.state.games = GameService(book, engine, levels, rng)
+    app.state.games = GameService(book, engine, levels, GameStore(database), rng, opening_names)
     app.state.database = database
     app.include_router(router)
     app.mount("/", StaticFiles(directory=settings.web_dir, html=True), name="web")

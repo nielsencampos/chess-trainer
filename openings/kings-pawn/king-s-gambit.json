@@ -1,0 +1,2444 @@
+{
+  "id": "king-s-gambit",
+  "names": {
+    "en": "King's Gambit",
+    "pt-BR": "Gambito do Rei",
+    "es": "Gambito de Rey"
+  },
+  "order": 13,
+  "variants": [
+    {
+      "names": {
+        "en": "Accepted: Bishop's Gambit",
+        "pt-BR": "Aceito: Gambito do Bispo",
+        "es": "Aceptado: Gambito de Alfil"
+      },
+      "lines": [
+        {
+          "id": "line-3ffed3f713bc01b6",
+          "names": {
+            "en": "Accepted: Bishop's Gambit",
+            "pt-BR": "Aceito: Gambito do Bispo",
+            "es": "Aceptado: Gambito de Alfil"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fd10d898c1c6d774",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Maurian Defense",
+            "pt-BR": "Aceito: Gambito do Bispo, Defesa Maurian",
+            "es": "Aceptado: Gambito de Alfil, Defensa Maurian"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Maurian Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e37e78ab4a4fde14",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Steinitz Defense",
+            "pt-BR": "Aceito: Gambito do Bispo, Defesa Steinitz",
+            "es": "Aceptado: Gambito de Alfil, Defensa Steinitz"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Steinitz Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Ne7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-06be9c968f509bd4",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Cozio Defense",
+            "pt-BR": "Aceito: Gambito do Bispo, Defesa Cozio",
+            "es": "Aceptado: Gambito de Alfil, Defensa Cozio"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Cozio Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0f6e33412551d9f4",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Bogoljubow Variation",
+            "pt-BR": "Aceito: Gambito do Bispo, Variação Bogoljubow",
+            "es": "Aceptado: Gambito de Alfil, Variante Bogoljubow"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Bogoljubow Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Nf6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ddef86c22b7eb9a7",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Paulsen Attack",
+            "pt-BR": "Aceito: Gambito do Bispo, Ataque Paulsen",
+            "es": "Aceptado: Gambito de Alfil, Ataque Paulsen"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Paulsen Attack",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Nf6", "Nc3", "Bb4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6cab1e4dbcf1e530",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Bogoljubow Defense",
+            "pt-BR": "Aceito: Gambito do Bispo, Defesa Bogoljubow",
+            "es": "Aceptado: Gambito de Alfil, Defensa Bogoljubow"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Bogoljubow Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Nf6", "Nc3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c1ad620a8545aa22",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Greco Variation",
+            "pt-BR": "Aceito: Gambito do Bispo, Variação Greco",
+            "es": "Aceptado: Gambito de Alfil, Variante Greco"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Greco Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0a2e9b3b5f7ce7b8",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Boden Variation",
+            "pt-BR": "Aceito: Gambito do Bispo, Variação Boden",
+            "es": "Aceptado: Gambito de Alfil, Variante Boden"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Boden Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2351636c26df0ead",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Classical Defense"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Classical Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "Ne7", "Nc3", "g5", "d4", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-54cbc29cea8da2ea",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, First Jaenisch Variation",
+            "pt-BR": "Aceito: Gambito do Bispo, Variação First Jaenisch",
+            "es": "Aceptado: Gambito de Alfil, Variante First Jaenisch"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, First Jaenisch Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2bbd2c14469ce8cb",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Bryan Countergambit",
+            "pt-BR": "Aceito: Gambito do Bispo, Contragambito Bryan",
+            "es": "Aceptado: Gambito de Alfil, Contragambito Bryan"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Bryan Countergambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-db2a04e6d3a3bb62",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Chigorin's Attack",
+            "pt-BR": "Aceito: Gambito do Bispo, Ataque Chigorin's",
+            "es": "Aceptado: Gambito de Alfil, Ataque Chigorin's"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Chigorin's Attack",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "d5", "Bxd5", "g5", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-754b1fd232378ce2",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Cozio Variation",
+            "pt-BR": "Aceito: Gambito do Bispo, Variação Cozio",
+            "es": "Aceptado: Gambito de Alfil, Variante Cozio"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Cozio Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-69cc038fc7cfd6b2",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Lopez Variation",
+            "pt-BR": "Aceito: Gambito do Bispo, Variação Lopez",
+            "es": "Aceptado: Gambito de Alfil, Variante Lopez"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Lopez Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "g5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f2db64e42417debf",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, McDonnell Attack",
+            "pt-BR": "Aceito: Gambito do Bispo, Ataque McDonnell",
+            "es": "Aceptado: Gambito de Alfil, Ataque McDonnell"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, McDonnell Attack",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "g5", "Nc3", "Bg7", "d4", "Ne7", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9472eeb6ce62877c",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Grimm Attack",
+            "pt-BR": "Aceito: Gambito do Bispo, Ataque Grimm",
+            "es": "Aceptado: Gambito de Alfil, Ataque Grimm"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Grimm Attack",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "g5", "Nc3", "Bg7", "d4", "d6", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-31a6ae1f72b43b0d",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, McDonnell Attack",
+            "pt-BR": "Aceito: Gambito do Bispo, Ataque McDonnell",
+            "es": "Aceptado: Gambito de Alfil, Ataque McDonnell"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, McDonnell Attack",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "g5", "Nc3", "Bg7", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8492991c3c1c2b7b",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Fraser Variation",
+            "pt-BR": "Aceito: Gambito do Bispo, Variação Fraser",
+            "es": "Aceptado: Gambito de Alfil, Variante Fraser"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Fraser Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "g5", "Nc3", "Bg7", "g3", "fxg3", "Qf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-43e0718c3d5d9a01",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Classical Defense, Cozio Attack"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Classical Defense, Cozio Attack",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "Qh4+", "Kf1", "g5", "Qf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-90a0ff4d64b57570",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Kieseritzky Gambit",
+            "pt-BR": "Aceito: Gambito do Bispo, Gambito Kieseritzky",
+            "es": "Aceptado: Gambito de Alfil, Gambito Kieseritzky"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Kieseritzky Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2cf9489430d978e1",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Lopez Defense",
+            "pt-BR": "Aceito: Gambito do Bispo, Defesa Lopez",
+            "es": "Aceptado: Gambito de Alfil, Defensa Lopez"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Lopez Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a26457fd7f936c9f",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Bledow Variation",
+            "pt-BR": "Aceito: Gambito do Bispo, Variação Bledow",
+            "es": "Aceptado: Gambito de Alfil, Variante Bledow"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Bledow Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ce8e3fc7811ed869",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Bledow Countergambit",
+            "pt-BR": "Aceito: Gambito do Bispo, Contragambito Bledow",
+            "es": "Aceptado: Gambito de Alfil, Contragambito Bledow"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Bledow Countergambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "d5", "Bxd5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5411b3ef2e824a0e",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Boren-Svenonius Variation",
+            "pt-BR": "Aceito: Gambito do Bispo, Variação Boren-Svenonius",
+            "es": "Aceptado: Gambito de Alfil, Variante Boren-Svenonius"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Boren-Svenonius Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "d5", "Bxd5", "Qh4+", "Kf1", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-43dfde610e28fcc6",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Anderssen Variation",
+            "pt-BR": "Aceito: Gambito do Bispo, Variação Anderssen",
+            "es": "Aceptado: Gambito de Alfil, Variante Anderssen"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Anderssen Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "d5", "Bxd5", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-98d55c85685cd32c",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Gianutio Gambit",
+            "pt-BR": "Aceito: Gambito do Bispo, Gambito Gianutio",
+            "es": "Aceptado: Gambito de Alfil, Gambito Gianutio"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Gianutio Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-12d12a9a0246ef46",
+          "names": {
+            "en": "Accepted: Bishop's Gambit, Anderssen Defense",
+            "pt-BR": "Aceito: Gambito do Bispo, Defesa Anderssen",
+            "es": "Aceptado: Gambito de Alfil, Defensa Anderssen"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Bishop's Gambit, Anderssen Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Bc4", "g5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Falkbeer Countergambit",
+        "pt-BR": "Recusado: Contragambito Falkbeer",
+        "es": "Rehusado: Contragambito Falkbeer"
+      },
+      "lines": [
+        {
+          "id": "line-3b5bfe9e97e8e21e",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit",
+            "pt-BR": "Recusado: Contragambito Falkbeer",
+            "es": "Rehusado: Contragambito Falkbeer"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit",
+          "moves": ["e4", "e5", "f4", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b3fd43210c98c370",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Milner-Barry Variation",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Variação Milner-Barry",
+            "es": "Rehusado: Contragambito Falkbeer, Variante Milner-Barry"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Milner-Barry Variation",
+          "moves": ["e4", "e5", "f4", "d5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4e920c1cfe4889ae",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Blackburne Attack",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Ataque Blackburne",
+            "es": "Rehusado: Contragambito Falkbeer, Ataque Blackburne"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Blackburne Attack",
+          "moves": ["e4", "e5", "f4", "d5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c85626cd10bee626",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Hinrichsen Gambit",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Hinrichsen",
+            "es": "Rehusado: Contragambito Falkbeer, Gambito Hinrichsen"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Hinrichsen Gambit",
+          "moves": ["e4", "e5", "f4", "d5", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ad710a7248cad8b8",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Miles Gambit",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Miles",
+            "es": "Rehusado: Contragambito Falkbeer, Gambito Miles"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Miles Gambit",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d02c45512ab07931",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Contragambito Nimzowitsch-Marshall",
+            "es": "Rehusado: Contragambito Falkbeer, Contragambito Nimzowitsch-Marshall"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9c9bc9f5d4699a3f",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Pickler Gambit",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Pickler",
+            "es": "Rehusado: Contragambito Falkbeer, Gambito Pickler"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Pickler Gambit",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "c6", "dxc6", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1074c85e467cf336",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Staunton Line",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Linha Staunton",
+            "es": "Rehusado: Contragambito Falkbeer, Línea Staunton"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Staunton Line",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f8725f69746636ac",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Anderssen Attack",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Ataque Anderssen",
+            "es": "Rehusado: Contragambito Falkbeer, Ataque Anderssen"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Anderssen Attack",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "Bb5+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b9124b2fbab8e323",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Rubinstein Variation",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Variação Rubinstein",
+            "es": "Rehusado: Contragambito Falkbeer, Variante Rubinstein"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Rubinstein Variation",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "Nc3", "Nf6", "Qe2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-808ef4b37e7259ea",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Charousek Gambit",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek",
+            "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-89e200d10bf3520e",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek, Variação Keres",
+            "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Variante Keres"
+          },
+          "eco": "C32",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "Nd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-729f10bfd3746687",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Charousek Gambit, Old Line"
+          },
+          "eco": "C32",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Old Line",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "Qe2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2404b5530331fa85",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Charousek Gambit Accepted"
+          },
+          "eco": "C32",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit Accepted",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9938f72465f6e6d8",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Alapin Variation",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Variação Alapin",
+            "es": "Rehusado: Contragambito Falkbeer, Variante Alapin"
+          },
+          "eco": "C32",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Alapin Variation",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4", "Nxe4", "Nf3", "Bc5", "Qe2", "Bf2+", "Kd1", "Qxd5+", "Nfd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0d20a7c431025fb9",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Charousek Gambit, Main Line",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek, Linha Principal",
+            "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Línea Principal"
+          },
+          "eco": "C32",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Main Line",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4", "Nxe4", "Nf3", "Bc5", "Qe2", "Bf5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-99f435d5f22709ec",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Tarrasch Variation",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Variação Tarrasch",
+            "es": "Rehusado: Contragambito Falkbeer, Variante Tarrasch"
+          },
+          "eco": "C32",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Tarrasch Variation",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4", "Nxe4", "Nf3", "Bc5", "Qe2", "Bf5", "g4", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d3d34b50c11ae700",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Charousek Gambit",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek",
+            "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek"
+          },
+          "eco": "C32",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4", "Nxe4", "Qe2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-37f6fb8d9f76afa6",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Charousek Variation",
+            "pt-BR": "Recusado: Contragambito Falkbeer, Variação Charousek",
+            "es": "Rehusado: Contragambito Falkbeer, Variante Charousek"
+          },
+          "eco": "C32",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Variation",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "e4", "d3", "Nf6", "dxe4", "Nxe4", "Qe2", "Qxd5", "Nd2", "f5", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-db19a2fef9a070cd",
+          "names": {
+            "en": "Declined: Falkbeer Countergambit, Modern Transfer"
+          },
+          "eco": "C31",
+          "opening": "King's Gambit Declined: Falkbeer Countergambit, Modern Transfer",
+          "moves": ["e4", "e5", "f4", "d5", "exd5", "exf4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Kieseritzky Gambit",
+        "pt-BR": "Aceito: Gambito Kieseritzky",
+        "es": "Aceptado: Gambito Kieseritzky"
+      },
+      "lines": [
+        {
+          "id": "line-c52fdd58adff0302",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit",
+            "pt-BR": "Aceito: Gambito Kieseritzky",
+            "es": "Aceptado: Gambito Kieseritzky"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e0e6d07e78914feb",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Paulsen Defense",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Paulsen",
+            "es": "Aceptado: Gambito Kieseritzky, Defensa Paulsen"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ad94edba2ca50ead",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Neumann Defense",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Neumann",
+            "es": "Aceptado: Gambito Kieseritzky, Defensa Neumann"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Neumann Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4c7362057e9369eb",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Berlin Defense",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Berlim",
+            "es": "Aceptado: Gambito Kieseritzky, Defensa Berlín"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5783e13b7942dd03",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Anderssen Defense",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Anderssen",
+            "es": "Aceptado: Gambito Kieseritzky, Defensa Anderssen"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Anderssen Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Nf6", "Bc4", "d5", "exd5", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-08fff2c2cbc0ae15",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Rice Gambit",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Gambito Rice",
+            "es": "Aceptado: Gambito Kieseritzky, Gambito Rice"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Rice Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Nf6", "Bc4", "d5", "exd5", "Bd6", "O-O", "Bxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8b76c226bf0b5eea",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Gambito Anderssen-Cordel",
+            "es": "Aceptado: Gambito Kieseritzky, Gambito Anderssen-Cordel"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Nf6", "Bc4", "d5", "exd5", "Bd6", "d4", "Nh5", "Bxf4", "Nxf4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4cf02c466ab36224",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Paulsen Defense Deferred"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense Deferred",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Nf6", "Bc4", "d5", "exd5", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bb72646d7c3bc3d7",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Berlin Defense, de Riviere Variation"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, de Riviere Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Nf6", "Nxg4", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b78f64d159a9693c",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Berlin Defense, Rubinstein Variation",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Berlim, Variação Rubinstein",
+            "es": "Aceptado: Gambito Kieseritzky, Defensa Berlín, Variante Rubinstein"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, Rubinstein Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Nf6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ab2928122f2e94c9",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Rosenthal Defense",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Rosenthal",
+            "es": "Aceptado: Gambito Kieseritzky, Defensa Rosenthal"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Rosenthal Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Qe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d307ca7bb6e6fcb4",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Brentano Defense",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Brentano",
+            "es": "Aceptado: Gambito Kieseritzky, Defensa Brentano"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6c61f7509976c8e6",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Brentano Defense",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Brentano",
+            "es": "Aceptado: Gambito Kieseritzky, Defensa Brentano"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "d5", "d4", "Nf6", "Bxf4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-207e0d566f37c894",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Brentano Defense, Caro Variation",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Brentano, Variação Caro",
+            "es": "Aceptado: Gambito Kieseritzky, Defensa Brentano, Variante Caro"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense, Caro Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "d5", "d4", "Nf6", "Bxf4", "Nxe4", "Nd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a86d6561f0f5e985",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Kolisch Defense",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Kolisch",
+            "es": "Aceptado: Gambito Kieseritzky, Defensa Kolisch"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Kolisch Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-78681137d16652b7",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Long Whip"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Long Whip",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "h5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9ca99941cbb0bf96",
+          "names": {
+            "en": "Accepted: Kieseritzky Gambit, Cotter Gambit",
+            "pt-BR": "Aceito: Gambito Kieseritzky, Gambito Cotter",
+            "es": "Aceptado: Gambito Kieseritzky, Gambito Cotter"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky Gambit, Cotter Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5", "h6", "Nxf7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Salvio Gambit",
+        "pt-BR": "Aceito: Gambito Salvio",
+        "es": "Aceptado: Gambito Salvio"
+      },
+      "lines": [
+        {
+          "id": "line-e2ae5640b0f6ec35",
+          "names": {
+            "en": "Accepted: Salvio Gambit",
+            "pt-BR": "Aceito: Gambito Salvio",
+            "es": "Aceptado: Gambito Salvio"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Salvio Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "Ne5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-10e362154fdc07b7",
+          "names": {
+            "en": "Accepted: Salvio Gambit, Viennese Variation",
+            "pt-BR": "Aceito: Gambito Salvio, Variação Viennese",
+            "es": "Aceptado: Gambito Salvio, Variante Viennese"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Salvio Gambit, Viennese Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "Ne5", "Qh4+", "Kf1", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5fbf1d347c09a8df",
+          "names": {
+            "en": "Accepted: Salvio Gambit, Santa Maria Defense",
+            "pt-BR": "Aceito: Gambito Salvio, Defesa Santa Maria",
+            "es": "Aceptado: Gambito Salvio, Defensa Santa Maria"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Salvio Gambit, Santa Maria Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "Ne5", "Qh4+", "Kf1", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d6873a87ddce5c08",
+          "names": {
+            "en": "Accepted: Salvio Gambit, Silberschmidt Defense",
+            "pt-BR": "Aceito: Gambito Salvio, Defesa Silberschmidt",
+            "es": "Aceptado: Gambito Salvio, Defensa Silberschmidt"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Salvio Gambit, Silberschmidt Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "Ne5", "Qh4+", "Kf1", "Nh6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1179e625acb9c9a4",
+          "names": {
+            "en": "Accepted: Salvio Gambit, Anderssen Counterattack"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Salvio Gambit, Anderssen Counterattack",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "Ne5", "Qh4+", "Kf1", "Nh6", "d4", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c6ac106bb4a6122a",
+          "names": {
+            "en": "Accepted: Salvio Gambit, Cochrane Gambit",
+            "pt-BR": "Aceito: Gambito Salvio, Gambito Cochrane",
+            "es": "Aceptado: Gambito Salvio, Gambito Cochrane"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Salvio Gambit, Cochrane Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "Ne5", "Qh4+", "Kf1", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Classical Variation",
+        "pt-BR": "Recusado: Variação Clássica",
+        "es": "Rehusado: Variante Clásica"
+      },
+      "lines": [
+        {
+          "id": "line-934318f046fa9fd4",
+          "names": {
+            "en": "Declined: Classical Variation",
+            "pt-BR": "Recusado: Variação Clássica",
+            "es": "Rehusado: Variante Clásica"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Classical Variation",
+          "moves": ["e4", "e5", "f4", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e2d87e737c075aa4",
+          "names": {
+            "en": "Declined: Classical Variation, Rotlewi Countergambit",
+            "pt-BR": "Recusado: Variação Clássica, Contragambito Rotlewi",
+            "es": "Rehusado: Variante Clásica, Contragambito Rotlewi"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Classical Variation, Rotlewi Countergambit",
+          "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a62025900f322d9f",
+          "names": {
+            "en": "Declined: Classical Variation",
+            "pt-BR": "Recusado: Variação Clássica",
+            "es": "Rehusado: Variante Clásica"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Classical Variation",
+          "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e64cf7a91cfb02bb",
+          "names": {
+            "en": "Declined: Classical Variation, Euwe Attack",
+            "pt-BR": "Recusado: Variação Clássica, Ataque Euwe",
+            "es": "Rehusado: Variante Clásica, Ataque Euwe"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Classical Variation, Euwe Attack",
+          "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "c3", "Bg4", "fxe5", "dxe5", "Qa4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-34b872698f0ed40b",
+          "names": {
+            "en": "Declined: Classical Variation, Rubinstein Countergambit",
+            "pt-BR": "Recusado: Variação Clássica, Contragambito Rubinstein",
+            "es": "Rehusado: Variante Clásica, Contragambito Rubinstein"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Classical Variation, Rubinstein Countergambit",
+          "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "c3", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0f9a42689e8781bb",
+          "names": {
+            "en": "Declined: Classical Variation, Walthoffen Attack",
+            "pt-BR": "Recusado: Variação Clássica, Ataque Walthoffen",
+            "es": "Rehusado: Variante Clásica, Ataque Walthoffen"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Classical Variation, Walthoffen Attack",
+          "moves": ["e4", "e5", "f4", "Bc5", "Qh5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Panteldakis Countergambit",
+        "pt-BR": "Recusado: Contragambito Panteldakis",
+        "es": "Rehusado: Contragambito Panteldakis"
+      },
+      "lines": [
+        {
+          "id": "line-7484088714f3cf73",
+          "names": {
+            "en": "Declined: Panteldakis Countergambit",
+            "pt-BR": "Recusado: Contragambito Panteldakis",
+            "es": "Rehusado: Contragambito Panteldakis"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Panteldakis Countergambit",
+          "moves": ["e4", "e5", "f4", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-375f13ae4f0630f9",
+          "names": {
+            "en": "Declined: Panteldakis Countergambit, Schiller's Defense",
+            "pt-BR": "Recusado: Contragambito Panteldakis, Defesa Schiller's",
+            "es": "Rehusado: Contragambito Panteldakis, Defensa Schiller's"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Panteldakis Countergambit, Schiller's Defense",
+          "moves": ["e4", "e5", "f4", "f5", "exf5", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e26f4f72ed2d9d4f",
+          "names": {
+            "en": "Declined: Panteldakis Countergambit, Greco Variation",
+            "pt-BR": "Recusado: Contragambito Panteldakis, Variação Greco",
+            "es": "Rehusado: Contragambito Panteldakis, Variante Greco"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Panteldakis Countergambit, Greco Variation",
+          "moves": ["e4", "e5", "f4", "f5", "exf5", "Qh4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-73ac5360a1052517",
+          "names": {
+            "en": "Declined: Panteldakis Countergambit, Symmetrical Variation",
+            "pt-BR": "Recusado: Contragambito Panteldakis, Variação Symmetrical",
+            "es": "Rehusado: Contragambito Panteldakis, Variante Symmetrical"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Panteldakis Countergambit, Symmetrical Variation",
+          "moves": ["e4", "e5", "f4", "f5", "exf5", "exf4", "Nf3", "d5", "d4", "Bd6", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0ff57737d5e06dc1",
+          "names": {
+            "en": "Declined: Panteldakis Countergambit, Shirazi Line",
+            "pt-BR": "Recusado: Contragambito Panteldakis, Linha Shirazi",
+            "es": "Rehusado: Contragambito Panteldakis, Línea Shirazi"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Panteldakis Countergambit, Shirazi Line",
+          "moves": ["e4", "e5", "f4", "f5", "exf5", "exf4", "Qh5+", "Ke7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fbc8d2af1b344c52",
+          "names": {
+            "en": "Declined: Panteldakis Countergambit, Pawn Sacrifice Line"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Panteldakis Countergambit, Pawn Sacrifice Line",
+          "moves": ["e4", "e5", "f4", "f5", "exf5", "exf4", "Qh5+", "g6", "fxg6", "Qe7+", "Kd1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Allgaier"
+      },
+      "lines": [
+        {
+          "id": "line-55fd71201511c403",
+          "names": {
+            "en": "Accepted: Allgaier, Schlechter Defense"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Allgaier, Schlechter Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5d5674ff56cd6ff0",
+          "names": {
+            "en": "Accepted: Allgaier, Urusov Attack"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Allgaier, Urusov Attack",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5", "h6", "Nxf7", "Kxf7", "Bc4+", "d5", "Bxd5+", "Kg7", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-01f6b5f458655f3b",
+          "names": {
+            "en": "Accepted: Allgaier, Blackburne Gambit"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Allgaier, Blackburne Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5", "h6", "Nxf7", "Kxf7", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-495f7b50195d2bff",
+          "names": {
+            "en": "Accepted: Allgaier, Horny Defense"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Allgaier, Horny Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5", "h6", "Nxf7", "Kxf7", "Qxg4", "Nf6", "Qxf4", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3c20fe22b99ef29e",
+          "names": {
+            "en": "Accepted: Allgaier, Cook Variation"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Allgaier, Cook Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5", "h6", "Nxf7", "Kxf7", "d4", "d5", "Bxf4", "dxe4", "Bc4+", "Kg7", "Be5+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Double Muzio Gambit"
+      },
+      "lines": [
+        {
+          "id": "line-b609016a64d49e86",
+          "names": {
+            "en": "Accepted: Double Muzio Gambit, Young Gambit"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Double Muzio Gambit, Young Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "gxf3", "Qxf3", "Qf6", "Bxf7+", "Kxf7", "d4", "Qxd4+", "Be3", "Qf6", "Nc3", "fxe3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4f53e09fe633af92",
+          "names": {
+            "en": "Accepted: Double Muzio Gambit, Bello Gambit"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Double Muzio Gambit, Bello Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "gxf3", "Qxf3", "Qf6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6175cbcf81fd32c4",
+          "names": {
+            "en": "Accepted: Double Muzio Gambit, Baldwin Gambit"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Double Muzio Gambit, Baldwin Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "gxf3", "Qxf3", "Qf6", "Nc3", "Qd4+", "Kh1", "Qxc4", "Nd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-57946b401ea401a6",
+          "names": {
+            "en": "Accepted: Double Muzio Gambit"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Double Muzio Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "gxf3", "Qxf3", "Qf6", "e5", "Qxe5", "Bxf7+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-55d63d4497468aec",
+          "names": {
+            "en": "Accepted: Double Muzio Gambit, Paulsen Defense"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Double Muzio Gambit, Paulsen Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "gxf3", "Qxf3", "Qf6", "e5", "Qxe5", "d3", "Bh6", "Nc3", "Ne7", "Bd2", "Nbc6", "Rae1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Muzio Gambit",
+        "pt-BR": "Aceito: Gambito Muzio",
+        "es": "Aceptado: Gambito Muzio"
+      },
+      "lines": [
+        {
+          "id": "line-27851c768680be3c",
+          "names": {
+            "en": "Accepted: Muzio Gambit, Wild Muzio Gambit",
+            "pt-BR": "Aceito: Gambito Muzio, Gambito Wild Muzio",
+            "es": "Aceptado: Gambito Muzio, Gambito Wild Muzio"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Muzio Gambit, Wild Muzio Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-70c41c832d1372d6",
+          "names": {
+            "en": "Accepted: Muzio Gambit, Kling and Horwitz Counterattack"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Muzio Gambit, Kling and Horwitz Counterattack",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "Qe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a93c46064a1052f0",
+          "names": {
+            "en": "Accepted: Muzio Gambit, Brentano Defense",
+            "pt-BR": "Aceito: Gambito Muzio, Defesa Brentano",
+            "es": "Aceptado: Gambito Muzio, Defensa Brentano"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Muzio Gambit, Brentano Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2d8b1b398de3c5d7",
+          "names": {
+            "en": "Accepted: Muzio Gambit, Holloway Defense",
+            "pt-BR": "Aceito: Gambito Muzio, Defesa Holloway",
+            "es": "Aceptado: Gambito Muzio, Defensa Holloway"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Muzio Gambit, Holloway Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "gxf3", "Qxf3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4d9794be424356d1",
+          "names": {
+            "en": "Accepted: Muzio Gambit, Sarratt Defense",
+            "pt-BR": "Aceito: Gambito Muzio, Defesa Sarratt",
+            "es": "Aceptado: Gambito Muzio, Defensa Sarratt"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Muzio Gambit, Sarratt Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "gxf3", "Qxf3", "Qf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Cunningham Defense",
+        "pt-BR": "Aceito: Defesa Cunningham",
+        "es": "Aceptado: Defensa Cunningham"
+      },
+      "lines": [
+        {
+          "id": "line-31146d4cd7c2e63d",
+          "names": {
+            "en": "Accepted: Cunningham Defense",
+            "pt-BR": "Aceito: Defesa Cunningham",
+            "es": "Aceptado: Defensa Cunningham"
+          },
+          "eco": "C35",
+          "opening": "King's Gambit Accepted: Cunningham Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-afface7344c9ea68",
+          "names": {
+            "en": "Accepted: Cunningham Defense, Bertin Gambit",
+            "pt-BR": "Aceito: Defesa Cunningham, Gambito Bertin",
+            "es": "Aceptado: Defensa Cunningham, Gambito Bertin"
+          },
+          "eco": "C35",
+          "opening": "King's Gambit Accepted: Cunningham Defense, Bertin Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "Be7", "Bc4", "Bh4+", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-00fc98d784aa3620",
+          "names": {
+            "en": "Accepted: Cunningham Defense, Bertin Gambit",
+            "pt-BR": "Aceito: Defesa Cunningham, Gambito Bertin",
+            "es": "Aceptado: Defensa Cunningham, Gambito Bertin"
+          },
+          "eco": "C35",
+          "opening": "King's Gambit Accepted: Cunningham Defense, Bertin Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "Be7", "Bc4", "Bh4+", "g3", "fxg3", "O-O", "gxh2+", "Kh1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6f23d08e3593d4a4",
+          "names": {
+            "en": "Accepted: Cunningham Defense, McCormick Defense",
+            "pt-BR": "Aceito: Defesa Cunningham, Defesa McCormick",
+            "es": "Aceptado: Defensa Cunningham, Defensa McCormick"
+          },
+          "eco": "C35",
+          "opening": "King's Gambit Accepted: Cunningham Defense, McCormick Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "Be7", "Bc4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Kieseritzky"
+      },
+      "lines": [
+        {
+          "id": "line-3a5fd7862e207673",
+          "names": {
+            "en": "Accepted: Kieseritzky, Polerio Defense"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky, Polerio Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-351acca904349460",
+          "names": {
+            "en": "Accepted: Kieseritzky, Rice Gambit"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky, Rice Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Nf6", "Bc4", "d5", "exd5", "Bd6", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9812dc6f6b47df45",
+          "names": {
+            "en": "Accepted: Kieseritzky, Salvio Defense, Cozio Variation"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky, Salvio Defense, Cozio Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "Qe7", "d4", "f5", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fb53275abf1b8373",
+          "names": {
+            "en": "Accepted: Kieseritzky, Long Whip Defense, Jaenisch Variation"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Kieseritzky, Long Whip Defense, Jaenisch Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ne5", "h5", "Bc4", "Rh7", "d4", "Bh6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: King's Knight's Gambit"
+      },
+      "lines": [
+        {
+          "id": "line-4dbbdf500c414bc2",
+          "names": {
+            "en": "Accepted: King's Knight's Gambit"
+          },
+          "eco": "C34",
+          "opening": "King's Gambit Accepted: King's Knight's Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1f95f18363d45d48",
+          "names": {
+            "en": "Accepted: King's Knight's Gambit"
+          },
+          "eco": "C34",
+          "opening": "King's Gambit Accepted: King's Knight's Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ddc176b743ceb444",
+          "names": {
+            "en": "Accepted: King's Knight's Gambit"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: King's Knight's Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7ad55c6302361a10",
+          "names": {
+            "en": "Accepted: King's Knight's Gambit"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: King's Knight's Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Rosentreter Gambit",
+        "pt-BR": "Aceito: Gambito Rosentreter",
+        "es": "Aceptado: Gambito Rosentreter"
+      },
+      "lines": [
+        {
+          "id": "line-92e151aaabcc258e",
+          "names": {
+            "en": "Accepted: Rosentreter Gambit",
+            "pt-BR": "Aceito: Gambito Rosentreter",
+            "es": "Aceptado: Gambito Rosentreter"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Rosentreter Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e95e46f81ba8fdb1",
+          "names": {
+            "en": "Accepted: Rosentreter Gambit, Testa Variation",
+            "pt-BR": "Aceito: Gambito Rosentreter, Variação Testa",
+            "es": "Aceptado: Gambito Rosentreter, Variante Testa"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Rosentreter Gambit, Testa Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "d4", "g4", "Bxf4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c4f566782c0e0e6f",
+          "names": {
+            "en": "Accepted: Rosentreter Gambit, Sörensen Gambit",
+            "pt-BR": "Aceito: Gambito Rosentreter, Gambito Sörensen",
+            "es": "Aceptado: Gambito Rosentreter, Gambito Sörensen"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Rosentreter Gambit, Sörensen Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "d4", "g4", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9c326b1389d561f5",
+          "names": {
+            "en": "Accepted: Rosentreter Gambit, Bird Gambit"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Rosentreter Gambit, Bird Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "d4", "g4", "Ne5", "Qh4+", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Classical",
+        "pt-BR": "Recusado: Clássica",
+        "es": "Rehusado: Clásica"
+      },
+      "lines": [
+        {
+          "id": "line-b44f545f2e4fd670",
+          "names": {
+            "en": "Declined: Classical, Hanham Variation",
+            "pt-BR": "Recusado: Clássica, Variação Hanham",
+            "es": "Rehusado: Clásica, Variante Hanham"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Classical, Hanham Variation",
+          "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "Nc3", "Nd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-61ad0595bb8a78ff",
+          "names": {
+            "en": "Declined: Classical, Réti Variation",
+            "pt-BR": "Recusado: Clássica, Variação Réti",
+            "es": "Rehusado: Clásica, Variante Réti"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Classical, Réti Variation",
+          "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "c3", "f5", "fxe5", "dxe5", "d4", "exd4", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-91bc8e4a9ddb73c9",
+          "names": {
+            "en": "Declined: Classical, Soldatenkov Variation",
+            "pt-BR": "Recusado: Clássica, Variação Soldatenkov",
+            "es": "Rehusado: Clásica, Variante Soldatenkov"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Classical, Soldatenkov Variation",
+          "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "d6", "fxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dd968ca05a078000",
+          "names": {
+            "en": "Declined: Classical, Svenonius Variation",
+            "pt-BR": "Recusado: Clássica, Variação Svenonius",
+            "es": "Rehusado: Clásica, Variante Svenonius"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Classical, Svenonius Variation",
+          "moves": ["e4", "e5", "f4", "Nc6", "Bc4", "Nf6", "Nc3", "Bc5", "d3", "d6", "Nf3", "Bg4", "h3", "Bxf3", "Qxf3", "exf4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Allgaier Gambit",
+        "pt-BR": "Aceito: Gambito Allgaier",
+        "es": "Aceptado: Gambito Allgaier"
+      },
+      "lines": [
+        {
+          "id": "line-a7cbb33d43b57f26",
+          "names": {
+            "en": "Accepted: Allgaier Gambit",
+            "pt-BR": "Aceito: Gambito Allgaier",
+            "es": "Aceptado: Gambito Allgaier"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Allgaier Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a6194587cf0cd31d",
+          "names": {
+            "en": "Accepted: Allgaier Gambit, Urusov Attack",
+            "pt-BR": "Aceito: Gambito Allgaier, Ataque Urusov",
+            "es": "Aceptado: Gambito Allgaier, Ataque Urusov"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Allgaier Gambit, Urusov Attack",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5", "h6", "Nxf7", "Kxf7", "Bc4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-225476a72cf67af8",
+          "names": {
+            "en": "Accepted: Allgaier Gambit, Thorold Attack",
+            "pt-BR": "Aceito: Gambito Allgaier, Ataque Thorold",
+            "es": "Aceptado: Gambito Allgaier, Ataque Thorold"
+          },
+          "eco": "C39",
+          "opening": "King's Gambit Accepted: Allgaier Gambit, Thorold Attack",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5", "h6", "Nxf7", "Kxf7", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Fischer Defense",
+        "pt-BR": "Aceito: Defesa Fischer",
+        "es": "Aceptado: Defensa Fischer"
+      },
+      "lines": [
+        {
+          "id": "line-b10d9b2a3c4112fb",
+          "names": {
+            "en": "Accepted: Fischer Defense",
+            "pt-BR": "Aceito: Defesa Fischer",
+            "es": "Aceptado: Defensa Fischer"
+          },
+          "eco": "C34",
+          "opening": "King's Gambit Accepted: Fischer Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-85e0184a4d777b6e",
+          "names": {
+            "en": "Accepted: Fischer Defense, Schulder Gambit",
+            "pt-BR": "Aceito: Defesa Fischer, Gambito Schulder",
+            "es": "Aceptado: Defensa Fischer, Gambito Schulder"
+          },
+          "eco": "C34",
+          "opening": "King's Gambit Accepted: Fischer Defense, Schulder Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "d6", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b4d1690a9c13c5bb",
+          "names": {
+            "en": "Accepted: Fischer Defense, Spanish Variation"
+          },
+          "eco": "C34",
+          "opening": "King's Gambit Accepted: Fischer Defense, Spanish Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "d6", "d4", "Nf6", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Norwalde Variation",
+        "pt-BR": "Recusado: Variação Norwalde",
+        "es": "Rehusado: Variante Norwalde"
+      },
+      "lines": [
+        {
+          "id": "line-160bd392119f0b95",
+          "names": {
+            "en": "Declined: Norwalde Variation",
+            "pt-BR": "Recusado: Variação Norwalde",
+            "es": "Rehusado: Variante Norwalde"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Norwalde Variation",
+          "moves": ["e4", "e5", "f4", "Qf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b7ff0fc18783bcb6",
+          "names": {
+            "en": "Declined: Norwalde Variation, Bücker Gambit",
+            "pt-BR": "Recusado: Variação Norwalde, Gambito Bücker",
+            "es": "Rehusado: Variante Norwalde, Gambito Bücker"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Norwalde Variation, Bücker Gambit",
+          "moves": ["e4", "e5", "f4", "Qf6", "Nc3", "Qxf4", "Nf3", "Bb4", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-79b92a94a36659ff",
+          "names": {
+            "en": "Declined: Norwalde Variation, Schubert Variation",
+            "pt-BR": "Recusado: Variação Norwalde, Variação Schubert",
+            "es": "Rehusado: Variante Norwalde, Variante Schubert"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Norwalde Variation, Schubert Variation",
+          "moves": ["e4", "e5", "f4", "Qf6", "Nc3", "Qxf4", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Abbazia Defense",
+        "pt-BR": "Aceito: Defesa Abbazia",
+        "es": "Aceptado: Defensa Abbazia"
+      },
+      "lines": [
+        {
+          "id": "line-ff974bb17c67c6a8",
+          "names": {
+            "en": "Accepted: Abbazia Defense",
+            "pt-BR": "Aceito: Defesa Abbazia",
+            "es": "Aceptado: Defensa Abbazia"
+          },
+          "eco": "C36",
+          "opening": "King's Gambit Accepted: Abbazia Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "d5", "exd5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a30dbd5372a01a6c",
+          "names": {
+            "en": "Accepted: Abbazia Defense, Main Line",
+            "pt-BR": "Aceito: Defesa Abbazia, Linha Principal",
+            "es": "Aceptado: Defensa Abbazia, Línea Principal"
+          },
+          "eco": "C36",
+          "opening": "King's Gambit Accepted: Abbazia Defense, Main Line",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "d5", "exd5", "Nf6", "Bb5+", "c6", "dxc6", "bxc6", "Bc4", "Nd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Ghulam-Kassim Gambit",
+        "pt-BR": "Aceito: Gambito Ghulam-Kassim",
+        "es": "Aceptado: Gambito Ghulam-Kassim"
+      },
+      "lines": [
+        {
+          "id": "line-951cadab9fe4d20d",
+          "names": {
+            "en": "Accepted: Ghulam-Kassim Gambit",
+            "pt-BR": "Aceito: Gambito Ghulam-Kassim",
+            "es": "Aceptado: Gambito Ghulam-Kassim"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Ghulam-Kassim Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ed05f1df2e3d69df",
+          "names": {
+            "en": "Accepted: Ghulam-Kassim Gambit",
+            "pt-BR": "Aceito: Gambito Ghulam-Kassim",
+            "es": "Aceptado: Gambito Ghulam-Kassim"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Ghulam-Kassim Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "d4", "gxf3", "Qxf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Greco Gambit",
+        "pt-BR": "Aceito: Gambito Greco",
+        "es": "Aceptado: Gambito Greco"
+      },
+      "lines": [
+        {
+          "id": "line-c4b75511b4257bba",
+          "names": {
+            "en": "Accepted: Greco Gambit",
+            "pt-BR": "Aceito: Gambito Greco",
+            "es": "Aceptado: Gambito Greco"
+          },
+          "eco": "C34",
+          "opening": "King's Gambit Accepted: Greco Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "d6", "Bc4", "h6", "d4", "g5", "h4", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-53a344eedd163856",
+          "names": {
+            "en": "Accepted: Greco Gambit",
+            "pt-BR": "Aceito: Gambito Greco",
+            "es": "Aceptado: Gambito Greco"
+          },
+          "eco": "C38",
+          "opening": "King's Gambit Accepted: Greco Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "Bg7", "h4", "h6", "d4", "d6", "Nc3", "c6", "hxg5", "hxg5", "Rxh8", "Bxh8", "Ne5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Lolli Gambit",
+        "pt-BR": "Aceito: Gambito Lolli",
+        "es": "Aceptado: Gambito Lolli"
+      },
+      "lines": [
+        {
+          "id": "line-434ab212a4faf769",
+          "names": {
+            "en": "Accepted: Lolli Gambit",
+            "pt-BR": "Aceito: Gambito Lolli",
+            "es": "Aceptado: Gambito Lolli"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Lolli Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "Bxf7+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-72057bd83a0ae019",
+          "names": {
+            "en": "Accepted: Lolli Gambit, Young Variation"
+          },
+          "eco": "C37",
+          "opening": "King's Gambit Accepted: Lolli Gambit, Young Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "Bxf7+", "Kxf7", "O-O", "gxf3", "Qxf3", "Qf6", "d4", "Qxd4+", "Be3", "Qf6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Modern Defense",
+        "pt-BR": "Aceito: Defesa Moderna",
+        "es": "Aceptado: Defensa Moderna"
+      },
+      "lines": [
+        {
+          "id": "line-1029dacf59c77f9a",
+          "names": {
+            "en": "Accepted: Modern Defense",
+            "pt-BR": "Aceito: Defesa Moderna",
+            "es": "Aceptado: Defensa Moderna"
+          },
+          "eco": "C36",
+          "opening": "King's Gambit Accepted: Modern Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-26938f1d1a5190c1",
+          "names": {
+            "en": "Accepted: Modern Defense",
+            "pt-BR": "Aceito: Defesa Moderna",
+            "es": "Aceptado: Defensa Moderna"
+          },
+          "eco": "C36",
+          "opening": "King's Gambit Accepted: Modern Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "d5", "exd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Philidor Gambit",
+        "pt-BR": "Aceito: Gambito Philidor",
+        "es": "Aceptado: Gambito Philidor"
+      },
+      "lines": [
+        {
+          "id": "line-7fa1e88efc8eb9b7",
+          "names": {
+            "en": "Accepted: Philidor Gambit",
+            "pt-BR": "Aceito: Gambito Philidor",
+            "es": "Aceptado: Gambito Philidor"
+          },
+          "eco": "C38",
+          "opening": "King's Gambit Accepted: Philidor Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "Bg7", "h4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8e96ed47e43d1d3f",
+          "names": {
+            "en": "Accepted: Philidor Gambit, Schultz Variation",
+            "pt-BR": "Aceito: Gambito Philidor, Variação Schultz",
+            "es": "Aceptado: Gambito Philidor, Variante Schultz"
+          },
+          "eco": "C38",
+          "opening": "King's Gambit Accepted: Philidor Gambit, Schultz Variation",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "h6", "Bc4", "d6", "d4", "g5", "h4", "Bg7", "Qd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Schallopp Defense",
+        "pt-BR": "Aceito: Defesa Schallopp",
+        "es": "Aceptado: Defensa Schallopp"
+      },
+      "lines": [
+        {
+          "id": "line-ddfb7ac477e694ef",
+          "names": {
+            "en": "Accepted: Schallopp Defense",
+            "pt-BR": "Aceito: Defesa Schallopp",
+            "es": "Aceptado: Defensa Schallopp"
+          },
+          "eco": "C34",
+          "opening": "King's Gambit Accepted: Schallopp Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-850949212337190f",
+          "names": {
+            "en": "Accepted: Schallopp Defense, Tashkent Attack",
+            "pt-BR": "Aceito: Defesa Schallopp, Ataque Tashkent",
+            "es": "Aceptado: Defensa Schallopp, Ataque Tashkent"
+          },
+          "eco": "C34",
+          "opening": "King's Gambit Accepted: Schallopp Defense, Tashkent Attack",
+          "moves": ["e4", "e5", "f4", "exf4", "Nf3", "Nf6", "e5", "Nh5", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Schurig Gambit",
+        "pt-BR": "Aceito: Gambito Schurig",
+        "es": "Aceptado: Gambito Schurig"
+      },
+      "lines": [
+        {
+          "id": "line-4a87cf625897a6b7",
+          "names": {
+            "en": "Accepted: Schurig Gambit, with Bb5"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Schurig Gambit, with Bb5",
+          "moves": ["e4", "e5", "f4", "exf4", "Bb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-285969404459edb4",
+          "names": {
+            "en": "Accepted: Schurig Gambit, with Bd3"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Schurig Gambit, with Bd3",
+          "moves": ["e4", "e5", "f4", "exf4", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Tartakower Gambit",
+        "pt-BR": "Aceito: Gambito Tartakower",
+        "es": "Aceptado: Gambito Tartakower"
+      },
+      "lines": [
+        {
+          "id": "line-abf1c4949b60c3b0",
+          "names": {
+            "en": "Accepted: Tartakower Gambit",
+            "pt-BR": "Aceito: Gambito Tartakower",
+            "es": "Aceptado: Gambito Tartakower"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Tartakower Gambit",
+          "moves": ["e4", "e5", "f4", "exf4", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c6d02e370fab0dfe",
+          "names": {
+            "en": "Accepted: Tartakower Gambit, Weiss Defense",
+            "pt-BR": "Aceito: Gambito Tartakower, Defesa Weiss",
+            "es": "Aceptado: Gambito Tartakower, Defensa Weiss"
+          },
+          "eco": "C33",
+          "opening": "King's Gambit Accepted: Tartakower Gambit, Weiss Defense",
+          "moves": ["e4", "e5", "f4", "exf4", "Be2", "f5", "exf5", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Keene's Defense",
+        "pt-BR": "Recusado: Defesa Keene's",
+        "es": "Rehusado: Defensa Keene's"
+      },
+      "lines": [
+        {
+          "id": "line-ac3062c740f6e1af",
+          "names": {
+            "en": "Declined: Keene's Defense",
+            "pt-BR": "Recusado: Defesa Keene's",
+            "es": "Rehusado: Defensa Keene's"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Keene's Defense",
+          "moves": ["e4", "e5", "f4", "Qh4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3a7dda6b6100f9f4",
+          "names": {
+            "en": "Declined: Keene's Defense",
+            "pt-BR": "Recusado: Defesa Keene's",
+            "es": "Rehusado: Defensa Keene's"
+          },
+          "eco": "C30",
+          "opening": "King's Gambit Declined: Keene's Defense",
+          "moves": ["e4", "e5", "f4", "Qh4+", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-70a4e6cd956de5e7",
+      "names": {
+        "en": "Accepted",
+        "pt-BR": "Aceito",
+        "es": "Aceptado"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted",
+      "moves": ["e4", "e5", "f4", "exf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dfa29e62beda877d",
+      "names": {
+        "en": "Accepted: Australian Gambit"
+      },
+      "eco": "C37",
+      "opening": "King's Gambit Accepted: Australian Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "h4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-42d912bf483fed8d",
+      "names": {
+        "en": "Accepted: Basman Gambit",
+        "pt-BR": "Aceito: Gambito Basman",
+        "es": "Aceptado: Gambito Basman"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Basman Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-24ec3968334ba5f3",
+      "names": {
+        "en": "Accepted: Becker Defense",
+        "pt-BR": "Aceito: Defesa Becker",
+        "es": "Aceptado: Defensa Becker"
+      },
+      "eco": "C34",
+      "opening": "King's Gambit Accepted: Becker Defense",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "h6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9fb6c3a669b22194",
+      "names": {
+        "en": "Accepted: Blachly Gambit",
+        "pt-BR": "Aceito: Gambito Blachly",
+        "es": "Aceptado: Gambito Blachly"
+      },
+      "eco": "C37",
+      "opening": "King's Gambit Accepted: Blachly Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "Nc6", "Bc4", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9d6cc173e6be5347",
+      "names": {
+        "en": "Accepted: Bonsch-Osmolovsky Variation",
+        "pt-BR": "Aceito: Variação Bonsch-Osmolovsky",
+        "es": "Aceptado: Variante Bonsch-Osmolovsky"
+      },
+      "eco": "C34",
+      "opening": "King's Gambit Accepted: Bonsch-Osmolovsky Variation",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "Ne7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0666ae6a008b705a",
+      "names": {
+        "en": "Accepted: Breyer Gambit",
+        "pt-BR": "Aceito: Gambito Breyer",
+        "es": "Aceptado: Gambito Breyer"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Breyer Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Qf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f2f2ced478234a28",
+      "names": {
+        "en": "Accepted: Carrera Gambit",
+        "pt-BR": "Aceito: Gambito Carrera",
+        "es": "Aceptado: Gambito Carrera"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Carrera Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Qh5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6f9947fd337cd972",
+      "names": {
+        "en": "Accepted: Dodo Variation",
+        "pt-BR": "Aceito: Variação Dodo",
+        "es": "Aceptado: Variante Dodo"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Dodo Variation",
+      "moves": ["e4", "e5", "f4", "exf4", "Qg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f30f2d91ce4bbb7b",
+      "names": {
+        "en": "Accepted: Eisenberg Variation",
+        "pt-BR": "Aceito: Variação Eisenberg",
+        "es": "Aceptado: Variante Eisenberg"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Eisenberg Variation",
+      "moves": ["e4", "e5", "f4", "exf4", "Nh3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b6784a025b9a014c",
+      "names": {
+        "en": "Accepted: Gaga Gambit",
+        "pt-BR": "Aceito: Gambito Gaga",
+        "es": "Aceptado: Gambito Gaga"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Gaga Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f9aceb975d9a1772",
+      "names": {
+        "en": "Accepted: Gianutio Countergambit",
+        "pt-BR": "Aceito: Contragambito Gianutio",
+        "es": "Aceptado: Contragambito Gianutio"
+      },
+      "eco": "C34",
+      "opening": "King's Gambit Accepted: Gianutio Countergambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-62363189236bef00",
+      "names": {
+        "en": "Accepted: Hanstein Gambit",
+        "pt-BR": "Aceito: Gambito Hanstein",
+        "es": "Aceptado: Gambito Hanstein"
+      },
+      "eco": "C38",
+      "opening": "King's Gambit Accepted: Hanstein Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "Bg7", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-46db0d865c670520",
+      "names": {
+        "en": "Accepted: Kotov Gambit",
+        "pt-BR": "Aceito: Gambito Kotov",
+        "es": "Aceptado: Gambito Kotov"
+      },
+      "eco": "C37",
+      "opening": "King's Gambit Accepted: Kotov Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "d4", "gxf3", "Bxf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-28c297e229773edf",
+      "names": {
+        "en": "Accepted: Lopez-Gianutio Countergambit, Hein Variation",
+        "pt-BR": "Aceito: Contragambito Lopez-Gianutio, Variação Hein",
+        "es": "Aceptado: Contragambito Lopez-Gianutio, Variante Hein"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Lopez-Gianutio Countergambit, Hein Variation",
+      "moves": ["e4", "e5", "f4", "exf4", "Bc4", "f5", "Qe2", "Qh4+", "Kd1", "fxe4", "Nc3", "Kd8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3ff757d0aa326210",
+      "names": {
+        "en": "Accepted: MacLeod Defense",
+        "pt-BR": "Aceito: Defesa MacLeod",
+        "es": "Aceptado: Defensa MacLeod"
+      },
+      "eco": "C34",
+      "opening": "King's Gambit Accepted: MacLeod Defense",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f4883a2856a5fc69",
+      "names": {
+        "en": "Accepted: Mason-Keres Gambit",
+        "pt-BR": "Aceito: Gambito Mason-Keres",
+        "es": "Aceptado: Gambito Mason-Keres"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Mason-Keres Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd0b37687bd44323",
+      "names": {
+        "en": "Accepted: Mayet Gambit",
+        "pt-BR": "Aceito: Gambito Mayet",
+        "es": "Aceptado: Gambito Mayet"
+      },
+      "eco": "C38",
+      "opening": "King's Gambit Accepted: Mayet Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "Bg7", "d4", "d6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cd1aed5de5f63711",
+      "names": {
+        "en": "Accepted: McDonnell Gambit",
+        "pt-BR": "Aceito: Gambito McDonnell",
+        "es": "Aceptado: Gambito McDonnell"
+      },
+      "eco": "C37",
+      "opening": "King's Gambit Accepted: McDonnell Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd826856d594d651",
+      "names": {
+        "en": "Accepted: Middleton Countergambit",
+        "pt-BR": "Aceito: Contragambito Middleton",
+        "es": "Aceptado: Contragambito Middleton"
+      },
+      "eco": "C37",
+      "opening": "King's Gambit Accepted: Middleton Countergambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "d6", "O-O", "Bg4", "h3", "h5", "hxg4", "hxg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6dbaffe8395e65ef",
+      "names": {
+        "en": "Accepted: Muzio Gambit Accepted, From's Defense"
+      },
+      "eco": "C37",
+      "opening": "King's Gambit Accepted: Muzio Gambit Accepted, From's Defense",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "gxf3", "Qxf3", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7126b18a4238f0b5",
+      "names": {
+        "en": "Accepted: Orsini Gambit",
+        "pt-BR": "Aceito: Gambito Orsini",
+        "es": "Aceptado: Gambito Orsini"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Orsini Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-98e19a02c8e0192d",
+      "names": {
+        "en": "Accepted: Paris Gambit"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Paris Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Ne2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bccd23114ef4aa36",
+      "names": {
+        "en": "Accepted: Quaade Gambit",
+        "pt-BR": "Aceito: Gambito Quaade",
+        "es": "Aceptado: Gambito Quaade"
+      },
+      "eco": "C37",
+      "opening": "King's Gambit Accepted: Quaade Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7321e7555bf30a57",
+      "names": {
+        "en": "Accepted: Silberschmidt Gambit",
+        "pt-BR": "Aceito: Gambito Silberschmidt",
+        "es": "Aceptado: Gambito Silberschmidt"
+      },
+      "eco": "C37",
+      "opening": "King's Gambit Accepted: Silberschmidt Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "Ne5", "Qh4+", "Kf1", "Nh6", "d4", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9f5680e761d7b87c",
+      "names": {
+        "en": "Accepted: Stamma Gambit",
+        "pt-BR": "Aceito: Gambito Stamma",
+        "es": "Aceptado: Gambito Stamma"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Stamma Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "h4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-430292cbb00b9e4c",
+      "names": {
+        "en": "Accepted: Sörensen Gambit",
+        "pt-BR": "Aceito: Gambito Sörensen",
+        "es": "Aceptado: Gambito Sörensen"
+      },
+      "eco": "C37",
+      "opening": "King's Gambit Accepted: Sörensen Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "d4", "g4", "Ne5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2890113c4d4a2557",
+      "names": {
+        "en": "Accepted: Traditional Variation",
+        "pt-BR": "Aceito: Variação Traditional",
+        "es": "Aceptado: Variante Traditional"
+      },
+      "eco": "C38",
+      "opening": "King's Gambit Accepted: Traditional Variation",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "g5", "Bc4", "Bg7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8951e226d8769735",
+      "names": {
+        "en": "Accepted: Tumbleweed"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Tumbleweed",
+      "moves": ["e4", "e5", "f4", "exf4", "Kf2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7d3d4d84995edd40",
+      "names": {
+        "en": "Accepted: Villemson Gambit",
+        "pt-BR": "Aceito: Gambito Villemson",
+        "es": "Aceptado: Gambito Villemson"
+      },
+      "eco": "C33",
+      "opening": "King's Gambit Accepted: Villemson Gambit",
+      "moves": ["e4", "e5", "f4", "exf4", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cec85da220bc6728",
+      "names": {
+        "en": "Accepted: Wagenbach Defense",
+        "pt-BR": "Aceito: Defesa Wagenbach",
+        "es": "Aceptado: Defensa Wagenbach"
+      },
+      "eco": "C34",
+      "opening": "King's Gambit Accepted: Wagenbach Defense",
+      "moves": ["e4", "e5", "f4", "exf4", "Nf3", "h5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ac25dc07eba47cc9",
+      "names": {
+        "en": "Declined: Falkbeer Countergambit Accepted"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit Accepted",
+      "moves": ["e4", "e5", "f4", "d5", "exd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dd02bbc0f0e6b41d",
+      "names": {
+        "en": "Declined: Hobbs-Zilbermints Gambit",
+        "pt-BR": "Recusado: Gambito Hobbs-Zilbermints",
+        "es": "Rehusado: Gambito Hobbs-Zilbermints"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Hobbs-Zilbermints Gambit",
+      "moves": ["e4", "e5", "f4", "Nc6", "Nf3", "g5", "fxg5", "h6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7a2ab0cec9810a38",
+      "names": {
+        "en": "Declined: Keene Defense",
+        "pt-BR": "Recusado: Defesa Keene",
+        "es": "Rehusado: Defensa Keene"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Keene Defense",
+      "moves": ["e4", "e5", "f4", "Qh4+", "g3", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dbd755a8130bf4b3",
+      "names": {
+        "en": "Declined: Mafia Defense",
+        "pt-BR": "Recusado: Defesa Mafia",
+        "es": "Rehusado: Defensa Mafia"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Mafia Defense",
+      "moves": ["e4", "c5", "f4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-78dea44237ddfc28",
+      "names": {
+        "en": "Declined: Miles Defense",
+        "pt-BR": "Recusado: Defesa Miles",
+        "es": "Rehusado: Defensa Miles"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Miles Defense",
+      "moves": ["e4", "e5", "f4", "Nc6", "Nf3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-099f1cc14bc524f5",
+      "names": {
+        "en": "Declined: Petrov's Defense",
+        "pt-BR": "Recusado: Defesa Petrov",
+        "es": "Rehusado: Defensa Petrov"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Petrov's Defense",
+      "moves": ["e4", "e5", "f4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e47b2cf8da1ac7ac",
+      "names": {
+        "en": "Declined: Queen's Knight Defense"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Queen's Knight Defense",
+      "moves": ["e4", "e5", "f4", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d4619b978d0bb352",
+      "names": {
+        "en": "Declined: Senechaud Countergambit",
+        "pt-BR": "Recusado: Contragambito Senechaud",
+        "es": "Rehusado: Contragambito Senechaud"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Senechaud Countergambit",
+      "moves": ["e4", "e5", "f4", "Bc5", "Nf3", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b142c9c3f8b0cf71",
+      "names": {
+        "en": "Declined: Soller-Zilbermints Gambit",
+        "pt-BR": "Recusado: Gambito Soller-Zilbermints",
+        "es": "Rehusado: Gambito Soller-Zilbermints"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Soller-Zilbermints Gambit",
+      "moves": ["e4", "e5", "f4", "f6", "fxe5", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-766ab7067ef52250",
+      "names": {
+        "en": "Declined: Zilbermints Double Countergambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Zilbermints Double Countergambit",
+      "moves": ["e4", "e5", "f4", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7cbf82f969af2245",
+      "names": {
+        "en": "Declined: Zilbermints Double Gambit"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit Declined: Zilbermints Double Gambit",
+      "moves": ["e4", "e5", "f4", "Nc6", "Nf3", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-91beed2c21d74ad8",
+      "names": {
+        "en": "King's Gambit",
+        "pt-BR": "Gambito do Rei",
+        "es": "Gambito de Rey"
+      },
+      "eco": "C30",
+      "opening": "King's Gambit",
+      "moves": ["e4", "e5", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

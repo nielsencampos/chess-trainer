@@ -1,4 +1,7 @@
-"""One-time seed: writes openings/<family>.json from the catalog. Those files are ours afterwards.
+"""One-time seed: wrote flat openings/<family>.json from the catalog. Those files are ours now.
+
+They have since been reorganized into groups, subgroups and three languages, so running this
+again with --force would not reproduce them. It stays for line_id_of and render.
 
 Usage: uv run python -m catalog.generate_openings [--force]
 

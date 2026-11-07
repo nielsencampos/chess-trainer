@@ -1,0 +1,23 @@
+{
+  "id": "paleface-attack",
+  "names": {
+    "en": "Paleface Attack",
+    "pt-BR": "Ataque Paleface",
+    "es": "Ataque Paleface"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-d04268154a52292e",
+      "names": {
+        "en": "Paleface Attack",
+        "pt-BR": "Ataque Paleface",
+        "es": "Ataque Paleface"
+      },
+      "eco": "A45",
+      "opening": "Paleface Attack",
+      "moves": ["d4", "Nf6", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

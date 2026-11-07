@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>chess-trainer</title>
+    <title>Chess Trainer</title>
     <link rel="icon" href="logo.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="logo.png" />
     <link rel="stylesheet" href="css/tokens.css" />
@@ -13,34 +13,53 @@
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <header class="topbar">
-      <div class="brand">
-        <img class="brand-logo" src="logo.svg" alt="chess-trainer" width="256" height="256" />
-      </div>
-      <div class="topbar-controls">
-        <label class="inline-field">
-          <span data-i18n="board.pieces"></span>
-          <select id="piece-set"></select>
-        </label>
-        <button id="theme-toggle" class="button button-ghost" type="button"></button>
-      </div>
-    </header>
-
-    <main class="layout">
-      <section class="board-column">
-        <div class="player">
-          <span id="top-name" class="player-name"></span>
-          <span id="top-clock" class="clock" hidden></span>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <img class="brand-logo" src="logo.svg" alt="Chess Trainer" width="256" height="256" />
         </div>
-        <div id="board" class="board"></div>
-        <div class="player">
-          <span id="bottom-name" class="player-name"></span>
-          <span id="bottom-clock" class="clock" hidden></span>
-        </div>
-        <div id="chips" class="chips" aria-live="polite"></div>
-      </section>
 
-      <aside class="side-panel">
+        <nav id="sidebar-tabs" class="tabs">
+          <button id="tab-new" class="tab active" type="button" data-i18n="tabs.new"></button>
+          <button id="tab-saved" class="tab" type="button" data-i18n="tabs.saved"></button>
+        </nav>
+
+        <div class="side-panel">
+          <section id="saved-card" class="card" hidden>
+            <h2 data-i18n="tabs.saved"></h2>
+            <details id="import-box" class="import-box">
+              <summary data-i18n="import.title"></summary>
+              <textarea id="import-text" class="search import-text" rows="5" data-i18n-placeholder="import.placeholder"></textarea>
+              <div class="button-row">
+                <button id="import-paste" class="button button-primary" type="button" data-i18n="import.paste"></button>
+                <label class="button import-file"><span data-i18n="import.file"></span><input id="import-file" type="file" accept=".pgn,.txt,text/plain,application/x-chess-pgn" hidden /></label>
+              </div>
+              <p id="import-summary" class="hint" hidden></p>
+              <ul id="import-errors" class="import-errors"></ul>
+            </details>
+            <input id="saved-search" class="search" type="search" data-i18n-placeholder="saved.search" autocomplete="off" />
+            <div class="field-row">
+              <select id="saved-color" aria-label="Color">
+                <option value="" data-i18n="saved.anyColor"></option>
+                <option value="white" data-i18n="setup.white"></option>
+                <option value="black" data-i18n="setup.black"></option>
+              </select>
+              <select id="saved-result" aria-label="Result">
+                <option value="" data-i18n="saved.anyResult"></option>
+                <option value="win" data-i18n="saved.result.win"></option>
+                <option value="draw" data-i18n="saved.result.draw"></option>
+                <option value="loss" data-i18n="saved.result.loss"></option>
+              </select>
+            </div>
+            <div class="selection-line">
+              <label class="toggle"><input id="saved-select-all" type="checkbox" /><span id="saved-count" class="hint"></span></label>
+            </div>
+            <div id="saved-list" class="saved-list"></div>
+            <p id="saved-empty" class="hint" hidden></p>
+            <p id="saved-error" class="error" role="alert" hidden></p>
+            <button id="saved-export" class="button button-primary button-wide" type="button" disabled></button>
+          </section>
+
         <section id="setup-card" class="card">
           <h2 data-i18n="setup.title"></h2>
 
@@ -85,6 +104,7 @@
           <div class="toggles">
             <label id="scoresheet-option" class="toggle"><input id="opt-scoresheet" type="checkbox" /><span data-i18n="setup.scoresheet"></span></label>
             <label class="toggle"><input id="opt-warning" type="checkbox" /><span data-i18n="setup.warning"></span></label>
+            <label class="toggle"><input id="opt-premoves" type="checkbox" /><span data-i18n="setup.premoves"></span></label>
             <label class="toggle"><input id="opt-autoplay" type="checkbox" /><span data-i18n="setup.autoplay"></span></label>
           </div>
 
@@ -105,6 +125,7 @@
           <ul id="end-deviations" class="deviations"></ul>
           <div class="button-row">
             <button id="copy-pgn" class="button" type="button" data-i18n="end.copyPgn"></button>
+            <button id="download-pgn" class="button" type="button" data-i18n="end.downloadPgn"></button>
             <a id="lichess-link" class="button" target="_blank" rel="noopener noreferrer" data-i18n="end.lichess"></a>
           </div>
           <div class="button-row">
@@ -118,15 +139,59 @@
         </section>
 
         <section id="game-card" class="card" hidden>
-          <h2 data-i18n="game.moves"></h2>
-          <p id="scoresheet-note" class="hint" hidden data-i18n="game.scoresheetNote"></p>
-          <div id="movelist" class="movelist"></div>
           <p id="game-error" class="error" role="alert" hidden></p>
           <button id="resign" class="button button-danger button-wide" type="button"></button>
         </section>
-      </aside>
-    </main>
+        </div>
 
-    <footer class="footer"><span id="footer-versions"></span></footer>
+        <div class="sidebar-controls">
+          <label class="inline-field">
+            <span data-i18n="board.pieces"></span>
+            <select id="piece-set"></select>
+          </label>
+          <button id="theme-toggle" class="button button-ghost" type="button"></button>
+        </div>
+
+        <div class="sidebar-controls">
+          <button id="sound-toggle" class="button button-ghost" type="button"></button>
+          <input id="sound-volume" class="volume" type="range" min="0" max="1" step="0.05" />
+        </div>
+
+        <footer class="footer"><span id="footer-versions"></span></footer>
+      </aside>
+
+      <div id="resize-left" class="resizer resizer-left" role="separator" aria-orientation="vertical" tabindex="0"></div>
+      <div id="resize-right" class="resizer resizer-right" role="separator" aria-orientation="vertical" tabindex="0"></div>
+
+      <main class="board-area">
+        <button id="toggle-left" class="bar-toggle bar-toggle-left" type="button"></button>
+        <button id="toggle-right" class="bar-toggle bar-toggle-right" type="button"></button>
+        <section class="board-column">
+        <div class="player">
+          <span id="top-name" class="player-name"></span>
+          <span id="top-clock" class="clock" hidden></span>
+        </div>
+        <div id="board" class="board"></div>
+        <div class="player">
+          <span id="bottom-name" class="player-name"></span>
+          <span id="bottom-clock" class="clock" hidden></span>
+        </div>
+        <div id="chips" class="chips" aria-live="polite"></div>
+      </section>
+
+      </main>
+
+      <aside class="movebar">
+        <section class="opening-box">
+          <h2 data-i18n="moves.opening"></h2>
+          <p id="opening-name" class="opening-title"></p>
+        </section>
+        <section class="moves-box">
+          <h2 data-i18n="game.moves"></h2>
+          <p id="scoresheet-note" class="hint" hidden data-i18n="game.scoresheetNote"></p>
+          <div id="movelist" class="movelist"></div>
+        </section>
+      </aside>
+    </div>
   </body>
 </html>

@@ -1,0 +1,35 @@
+{
+  "id": "goldsmith-defense",
+  "names": {
+    "en": "Goldsmith Defense",
+    "pt-BR": "Defesa Goldsmith",
+    "es": "Defensa Goldsmith"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-cf94f5f6d623e13d",
+      "names": {
+        "en": "Goldsmith Defense",
+        "pt-BR": "Defesa Goldsmith",
+        "es": "Defensa Goldsmith"
+      },
+      "eco": "B00",
+      "opening": "Goldsmith Defense",
+      "moves": ["e4", "h5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d55f8b819d3cad20",
+      "names": {
+        "en": "Picklepuss Defense",
+        "pt-BR": "Defesa Picklepuss",
+        "es": "Defensa Picklepuss"
+      },
+      "eco": "B00",
+      "opening": "Goldsmith Defense: Picklepuss Defense",
+      "moves": ["e4", "h5", "d4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "id": "bird-opening",
+  "names": {
+    "en": "Bird Opening",
+    "pt-BR": "Abertura Bird",
+    "es": "Apertura Bird"
+  },
+  "order": 5,
+  "variants": [
+    {
+      "names": {
+        "en": "From's Gambit",
+        "pt-BR": "Gambito From's",
+        "es": "Gambito From's"
+      },
+      "lines": [
+        {
+          "id": "line-04ef061ac8e37ce9",
+          "names": {
+            "en": "From's Gambit",
+            "pt-BR": "Gambito From's",
+            "es": "Gambito From's"
+          },
+          "eco": "A02",
+          "opening": "Bird Opening: From's Gambit",
+          "moves": ["f4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-75f3e2ee6264fdb6",
+          "names": {
+            "en": "From's Gambit, Bahr Gambit",
+            "pt-BR": "Gambito From's, Gambito Bahr",
+            "es": "Gambito From's, Gambito Bahr"
+          },
+          "eco": "A02",
+          "opening": "Bird Opening: From's Gambit, Bahr Gambit",
+          "moves": ["f4", "e5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-19d7875f19556b8f",
+          "names": {
+            "en": "From's Gambit, Lipke Variation",
+            "pt-BR": "Gambito From's, Variação Lipke",
+            "es": "Gambito From's, Variante Lipke"
+          },
+          "eco": "A02",
+          "opening": "Bird Opening: From's Gambit, Lipke Variation",
+          "moves": ["f4", "e5", "fxe5", "d6", "exd6", "Bxd6", "Nf3", "Nh6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-baa881f358250808",
+          "names": {
+            "en": "From's Gambit, Lasker Variation",
+            "pt-BR": "Gambito From's, Variação Lasker",
+            "es": "Gambito From's, Variante Lasker"
+          },
+          "eco": "A02",
+          "opening": "Bird Opening: From's Gambit, Lasker Variation",
+          "moves": ["f4", "e5", "fxe5", "d6", "exd6", "Bxd6", "Nf3", "g5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-740bdc2812c3e24b",
+          "names": {
+            "en": "From's Gambit, Langheld Gambit",
+            "pt-BR": "Gambito From's, Gambito Langheld",
+            "es": "Gambito From's, Gambito Langheld"
+          },
+          "eco": "A02",
+          "opening": "Bird Opening: From's Gambit, Langheld Gambit",
+          "moves": ["f4", "e5", "fxe5", "d6", "exd6", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Dutch Variation"
+      },
+      "lines": [
+        {
+          "id": "line-5474b4c87b0b9b7b",
+          "names": {
+            "en": "Dutch Variation, Batavo Gambit"
+          },
+          "eco": "B21",
+          "opening": "Bird Opening: Dutch Variation, Batavo Gambit",
+          "moves": ["e4", "c5", "f4", "d5", "Nf3", "dxe4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ae50b45ee8b4cf5d",
+          "names": {
+            "en": "Dutch Variation"
+          },
+          "eco": "A03",
+          "opening": "Bird Opening: Dutch Variation",
+          "moves": ["f4", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5e42b4db2392330a",
+          "names": {
+            "en": "Dutch Variation, Dudweiler Gambit"
+          },
+          "eco": "A03",
+          "opening": "Bird Opening: Dutch Variation, Dudweiler Gambit",
+          "moves": ["f4", "d5", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Williams Gambit",
+        "pt-BR": "Gambito Williams",
+        "es": "Gambito Williams"
+      },
+      "lines": [
+        {
+          "id": "line-ee3f76927ec2356b",
+          "names": {
+            "en": "Williams Gambit",
+            "pt-BR": "Gambito Williams",
+            "es": "Gambito Williams"
+          },
+          "eco": "A03",
+          "opening": "Bird Opening: Williams Gambit",
+          "moves": ["f4", "d5", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2ca05b7a522c3707",
+          "names": {
+            "en": "Williams Gambit",
+            "pt-BR": "Gambito Williams",
+            "es": "Gambito Williams"
+          },
+          "eco": "A03",
+          "opening": "Bird Opening: Williams Gambit",
+          "moves": ["f4", "d5", "e4", "dxe4", "Nc3", "Nf6", "Qe2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-befef6307fd86dc5",
+      "names": {
+        "en": "Batavo-Polish Attack"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Batavo-Polish Attack",
+      "moves": ["f4", "Nf6", "Nf3", "g6", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2ef7ed929515ecfa",
+      "names": {
+        "en": "Double Duck Formation"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Double Duck Formation",
+      "moves": ["f4", "f5", "d4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f48e2a3bdbfc03b4",
+      "names": {
+        "en": "Hobbs Gambit",
+        "pt-BR": "Gambito Hobbs",
+        "es": "Gambito Hobbs"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Hobbs Gambit",
+      "moves": ["f4", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e12240a178ae5669",
+      "names": {
+        "en": "Hobbs-Zilbermints Gambit",
+        "pt-BR": "Gambito Hobbs-Zilbermints",
+        "es": "Gambito Hobbs-Zilbermints"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Hobbs-Zilbermints Gambit",
+      "moves": ["f4", "h6", "Nf3", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6a27cc38b80055c2",
+      "names": {
+        "en": "Horsefly Defense",
+        "pt-BR": "Defesa Horsefly",
+        "es": "Defensa Horsefly"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Horsefly Defense",
+      "moves": ["f4", "Nh6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1bc4f726eb3cde79",
+      "names": {
+        "en": "Lasker Gambit",
+        "pt-BR": "Gambito Lasker",
+        "es": "Gambito Lasker"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Lasker Gambit",
+      "moves": ["f4", "e5", "fxe5", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-80e58582eab94f8d",
+      "names": {
+        "en": "Lasker Variation",
+        "pt-BR": "Variação Lasker",
+        "es": "Variante Lasker"
+      },
+      "eco": "A03",
+      "opening": "Bird Opening: Lasker Variation",
+      "moves": ["f4", "d5", "Nf3", "Nf6", "e3", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-25d6daacfb0e691f",
+      "names": {
+        "en": "Bird Opening",
+        "pt-BR": "Abertura Bird",
+        "es": "Apertura Bird"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening",
+      "moves": ["f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a11fd3ecc1746581",
+      "names": {
+        "en": "Mujannah"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Mujannah",
+      "moves": ["f4", "Nf6", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-942d04300c531107",
+      "names": {
+        "en": "Myers Defense",
+        "pt-BR": "Defesa Myers",
+        "es": "Defensa Myers"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Myers Defense",
+      "moves": ["f4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c4ae06c28db2ea49",
+      "names": {
+        "en": "Platz Gambit",
+        "pt-BR": "Gambito Platz",
+        "es": "Gambito Platz"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Platz Gambit",
+      "moves": ["f4", "e5", "fxe5", "Ne7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b2928a594bc422f3",
+      "names": {
+        "en": "Schlechter Gambit",
+        "pt-BR": "Gambito Schlechter",
+        "es": "Gambito Schlechter"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Schlechter Gambit",
+      "moves": ["f4", "e5", "fxe5", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-66709dbba6e78b8b",
+      "names": {
+        "en": "Siegener Gambit",
+        "pt-BR": "Gambito Siegener",
+        "es": "Gambito Siegener"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Siegener Gambit",
+      "moves": ["f4", "e5", "d4", "exd4", "Nf3", "c5", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b97eebc6e6fe48e1",
+      "names": {
+        "en": "Sturm Gambit",
+        "pt-BR": "Gambito Sturm",
+        "es": "Gambito Sturm"
+      },
+      "eco": "A03",
+      "opening": "Bird Opening: Sturm Gambit",
+      "moves": ["f4", "d5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-70dc40f2a2fbc9c4",
+      "names": {
+        "en": "Swiss Gambit"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Swiss Gambit",
+      "moves": ["f4", "f5", "e4", "fxe4", "Nc3", "Nf6", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c19f95d65cfb66e1",
+      "names": {
+        "en": "Thomas Gambit",
+        "pt-BR": "Gambito Thomas",
+        "es": "Gambito Thomas"
+      },
+      "eco": "A03",
+      "opening": "Bird Opening: Thomas Gambit",
+      "moves": ["f4", "d5", "b3", "Nf6", "Bb2", "d4", "Nf3", "c5", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-83b79ee866601ebc",
+      "names": {
+        "en": "Wagner-Zwitersch Gambit",
+        "pt-BR": "Gambito Wagner-Zwitersch",
+        "es": "Gambito Wagner-Zwitersch"
+      },
+      "eco": "A02",
+      "opening": "Bird Opening: Wagner-Zwitersch Gambit",
+      "moves": ["f4", "f5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a00a95cf4c64609b",
+      "names": {
+        "en": "Williams-Zilbermints Gambit",
+        "pt-BR": "Gambito Williams-Zilbermints",
+        "es": "Gambito Williams-Zilbermints"
+      },
+      "eco": "A03",
+      "opening": "Bird Opening: Williams-Zilbermints Gambit",
+      "moves": ["f4", "d5", "e4", "dxe4", "Nc3", "Nf6", "Nge2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

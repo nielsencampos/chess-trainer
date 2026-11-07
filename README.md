@@ -36,8 +36,8 @@ set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust. `CHESS_TRAINER_PORT` c
 
 Scoresheet mode hides the move list, so you can write on paper during long time controls.
 
-**Current state (Phase 1):** the book is in DuckDB (`data/chess-trainer.duckdb`), but games live in
-memory and are not saved after the server stops. Bot levels are provisional. The UI is in English. See the [project brief](docs/PROJECT_BRIEF.md) for
+**Current state:** the book and games are in DuckDB (`data/chess-trainer.duckdb`). Bot levels are
+provisional. The UI is in English. See the [project brief](docs/PROJECT_BRIEF.md) for
 what comes next.
 
 ## The book
@@ -50,7 +50,8 @@ engine plays on from there. They can be extended by pull request, recording the 
 is in [the brief, §6](docs/PROJECT_BRIEF.md).
 
 The database lives in `./data`, which the container writes as UID 1000. To back it up, stop the app
-and copy the file.
+and copy the file. Every move is saved there, so an unfinished game continues when you open the page
+again, even after a restart. Clocks stop while the app is closed.
 
 ## Update Stockfish
 
@@ -108,7 +109,7 @@ desvio: ele é registrado com os lances esperados e aparece no fim da partida. Q
 alguém sai da teoria, o Stockfish assume no nível escolhido. O modo súmula esconde a lista de lances
 para você anotar no papel.
 
-**Estado atual (Fase 1):** o livro já está no DuckDB, mas as partidas ficam na memória e não são salvas quando o servidor para. Os
+**Estado atual:** o livro e as partidas ficam no DuckDB, e uma partida não terminada continua quando você reabre a página. Os
 níveis do bot são provisórios e a interface está em inglês; o pt-BR chega na Fase 4.
 
 **Para atualizar o Stockfish:** rode `docker compose build --pull` e depois `docker compose up -d`.

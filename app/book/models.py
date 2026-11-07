@@ -33,6 +33,7 @@ class Variant:
     moves: dict[str, tuple[BookMove, ...]]
     positions: frozenset[str]
     final_epd: str
+    subgroup: dict[str, str] | None = None
 
 
 @dataclass(frozen=True)
@@ -40,6 +41,8 @@ class Repertoire:
     repertoire_id: str
     names: dict[str, str]
     variant_ids: tuple[str, ...]
+    group: str = "others"
+    order: int | None = None
 
 
 @dataclass(frozen=True)

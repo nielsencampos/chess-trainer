@@ -1,0 +1,943 @@
+{
+  "id": "queen-s-indian-defense",
+  "names": {
+    "en": "Queen's Indian Defense",
+    "pt-BR": "Defesa Índia da Dama",
+    "es": "Defensa India de Dama"
+  },
+  "order": 6,
+  "variants": [
+    {
+      "names": {
+        "en": "with e3"
+      },
+      "lines": [
+        {
+          "id": "line-60e9cf6e6a1aabb3",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["Nf3", "d5", "e3", "Nf6", "c4", "e6", "Nc3", "Be7", "d4", "O-O", "b3", "b6", "cxd5", "exd5", "Bb2", "Bb7", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8e4d2cce679b42b8",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "Nf3", "d5", "c4", "e6", "e3", "b6", "b3", "Bb7", "Bd3", "Nbd7", "O-O", "Bd6", "Bb2", "O-O", "Nbd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-81b30004d5e3cd3f",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "Nf3", "e6", "e3", "b6", "Bd3", "Bb7", "Nbd2", "c5", "b3", "Be7", "Bb2", "d6", "O-O", "O-O", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-58f397ece6b70db0",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "Nf3", "e6", "e3", "b6", "Bd3", "Bb7", "O-O", "Be7", "c4", "O-O", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9a9525df7e671354",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "Nf3", "e6", "e3", "b6", "Bd3", "Bb7", "O-O", "c5", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-747bad9ff21ec1a4",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "Nf3", "e6", "e3", "b6", "Bd3", "Bb7", "O-O", "c5", "c4", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-00d701b90f05f003",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "Nf3", "e6", "e3", "b6", "Bd3", "Bb7", "O-O", "c5", "c4", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-95c30c1ae6938e49",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Nbd2", "b6", "a3", "Bxd2+", "Qxd2", "Bb7", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3557a964375e6dec",
+          "names": {
+            "en": "with e3, Bb4+ Line"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3, Bb4+ Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Nbd2", "b6", "e3", "Bb7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a1d5a6dc10f8ad9b",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "e3", "Be7", "Nc3", "O-O", "b3", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e85ea4b71a9c2a2a",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "e3", "Be7", "b3", "O-O", "Bb2", "b6", "Nbd2", "Bb7", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-238657b33ea06fc1",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "e3", "Be7", "b3", "O-O", "Bd3", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5cfadd7d9fbefb3a",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "e3", "b6", "Nc3", "Bb7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6979920fb421562b",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "e3", "b6", "Nc3", "Bd6", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7b6f61a82bbeb075",
+          "names": {
+            "en": "with e3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense, with e3",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "e3", "b6", "Nc3", "Bd6", "Bd3", "O-O", "O-O", "Bb7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Fianchetto Variation",
+        "pt-BR": "Variação do Fianqueto",
+        "es": "Variante del Fianchetto"
+      },
+      "lines": [
+        {
+          "id": "line-4e408bc86ea55e80",
+          "names": {
+            "en": "Fianchetto Variation",
+            "pt-BR": "Variação do Fianqueto",
+            "es": "Variante del Fianchetto"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eb194761fa19ce34",
+          "names": {
+            "en": "Fianchetto Variation, Nimzowitsch Variation",
+            "pt-BR": "Variação do Fianqueto, Variação Nimzowitsch",
+            "es": "Variante del Fianchetto, Variante Nimzowitsch"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Ba6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2f0166e47972860f",
+          "names": {
+            "en": "Fianchetto Variation, Nimzowitsch Variation, Nimzowitsch Attack",
+            "pt-BR": "Variação do Fianqueto, Variação Nimzowitsch, Ataque Nimzowitsch",
+            "es": "Variante del Fianchetto, Variante Nimzowitsch, Ataque Nimzowitsch"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation, Nimzowitsch Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Ba6", "Qa4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e3e32359a6265547",
+          "names": {
+            "en": "Fianchetto Variation, Nimzowitsch Variation, Timman's Line",
+            "pt-BR": "Variação do Fianqueto, Variação Nimzowitsch, Linha Timman's",
+            "es": "Variante del Fianchetto, Variante Nimzowitsch, Línea Timman's"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation, Timman's Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Ba6", "Qb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8da0cd8c8b13d436",
+          "names": {
+            "en": "Fianchetto Variation, Nimzowitsch Variation, Quiet Line"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation, Quiet Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Ba6", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9e743d1c52dcea30",
+          "names": {
+            "en": "Fianchetto Variation, Check Variation",
+            "pt-BR": "Variação do Fianqueto, Variação Check",
+            "es": "Variante del Fianchetto, Variante Check"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Check Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Ba6", "b3", "Bb4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7802b1bb9c5d59a2",
+          "names": {
+            "en": "Fianchetto Variation, Check Variation, Intermezzo Line",
+            "pt-BR": "Variação do Fianqueto, Variação Check, Linha Intermezzo",
+            "es": "Variante del Fianchetto, Variante Check, Línea Intermezzo"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Check Variation, Intermezzo Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Ba6", "b3", "Bb4+", "Bd2", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cbbd3339f19026af",
+          "names": {
+            "en": "Fianchetto Variation, Check Variation, Modern Line"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Check Variation, Modern Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Ba6", "b3", "Bb4+", "Bd2", "Qe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b0970eaab6eee3b5",
+          "names": {
+            "en": "Fianchetto Variation, Traditional Line",
+            "pt-BR": "Variação do Fianqueto, Linha Traditional",
+            "es": "Variante del Fianchetto, Línea Traditional"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Traditional Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0a632cd16173783f",
+          "names": {
+            "en": "Fianchetto Variation, Kramnik Variation",
+            "pt-BR": "Variação do Fianqueto, Variação Kramnik",
+            "es": "Variante del Fianchetto, Variante Kramnik"
+          },
+          "eco": "E17",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Kramnik Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "O-O", "O-O", "Re1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-720d9cd114a59dba",
+          "names": {
+            "en": "Fianchetto Variation, Sämisch Variation",
+            "pt-BR": "Variação do Fianqueto, Variação Sämisch",
+            "es": "Variante del Fianchetto, Variante Sämisch"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Sämisch Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1da826492a2ae472",
+          "names": {
+            "en": "Fianchetto Variation, Rubinstein Variation",
+            "pt-BR": "Variação do Fianqueto, Variação Rubinstein",
+            "es": "Variante del Fianchetto, Variante Rubinstein"
+          },
+          "eco": "E15",
+          "opening": "Queen's Indian Defense: Fianchetto Variation, Rubinstein Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "c5", "d5", "exd5", "Nh4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Kasparov-Petrosian Variation",
+        "pt-BR": "Variação Kasparov-Petrosian",
+        "es": "Variante Kasparov-Petrosian"
+      },
+      "lines": [
+        {
+          "id": "line-4f3876236c9ff4fd",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Polovodin Gambit",
+            "pt-BR": "Variação Kasparov-Petrosian, Gambito Polovodin",
+            "es": "Variante Kasparov-Petrosian, Gambito Polovodin"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Polovodin Gambit",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "Nc3", "Bb7", "a3", "d5", "cxd5", "Nxd5", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d1d677d79a699c3a",
+          "names": {
+            "en": "Kasparov-Petrosian Variation",
+            "pt-BR": "Variação Kasparov-Petrosian",
+            "es": "Variante Kasparov-Petrosian"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-23c5a0c1c54a07fe",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Marco Defense",
+            "pt-BR": "Variação Kasparov-Petrosian, Defesa Marco",
+            "es": "Variante Kasparov-Petrosian, Defensa Marco"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Marco Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7fb840fb2d3a7e17",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Andersson Variation",
+            "pt-BR": "Variação Kasparov-Petrosian, Variação Andersson",
+            "es": "Variante Kasparov-Petrosian, Variante Andersson"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Andersson Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3", "Ne4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4b8ab3bbdd2a6651",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Main Line",
+            "pt-BR": "Variação Kasparov-Petrosian, Linha Principal",
+            "es": "Variante Kasparov-Petrosian, Línea Principal"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Main Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a27372138be43239",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Modern Variation",
+            "pt-BR": "Variação Kasparov-Petrosian, Variação Moderna",
+            "es": "Variante Kasparov-Petrosian, Variante Moderna"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Modern Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3", "d5", "cxd5", "Nxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f69f1f9cd0ff61a4",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Romanishin Attack",
+            "pt-BR": "Variação Kasparov-Petrosian, Ataque Romanishin",
+            "es": "Variante Kasparov-Petrosian, Ataque Romanishin"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Romanishin Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3", "d5", "cxd5", "Nxd5", "Bd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-29d7fa0c5748b244",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Rashkovsky Attack",
+            "pt-BR": "Variação Kasparov-Petrosian, Ataque Rashkovsky",
+            "es": "Variante Kasparov-Petrosian, Ataque Rashkovsky"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Rashkovsky Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3", "d5", "cxd5", "Nxd5", "Qa4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2206605a09c77079",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Kasparov Attack",
+            "pt-BR": "Variação Kasparov-Petrosian, Ataque Kasparov",
+            "es": "Variante Kasparov-Petrosian, Ataque Kasparov"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Kasparov Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3", "d5", "cxd5", "Nxd5", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-976a8d016c9d8296",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Petrosian Attack",
+            "pt-BR": "Variação Kasparov-Petrosian, Ataque Petrosian",
+            "es": "Variante Kasparov-Petrosian, Ataque Petrosian"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Petrosian Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3", "d5", "cxd5", "Nxd5", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-41a135b3eece087e",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Classical Variation",
+            "pt-BR": "Variação Kasparov-Petrosian, Variação Clássica",
+            "es": "Variante Kasparov-Petrosian, Variante Clásica"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Classical Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3", "d5", "cxd5", "exd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-25119b87cec176bd",
+          "names": {
+            "en": "Kasparov-Petrosian Variation, Hedgehog Variation"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov-Petrosian Variation, Hedgehog Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Bb7", "Nc3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Classical Variation",
+        "pt-BR": "Variação Clássica",
+        "es": "Variante Clásica"
+      },
+      "lines": [
+        {
+          "id": "line-c2b2c1e25fb05672",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "E17",
+          "opening": "Queen's Indian Defense: Classical Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2fce3f1f702a63bc",
+          "names": {
+            "en": "Classical Variation, Traditional Variation",
+            "pt-BR": "Variação Clássica, Variação Traditional",
+            "es": "Variante Clásica, Variante Traditional"
+          },
+          "eco": "E18",
+          "opening": "Queen's Indian Defense: Classical Variation, Traditional Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "O-O", "O-O", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5dd60b6e315a65b9",
+          "names": {
+            "en": "Classical Variation, Tiviakov Defense",
+            "pt-BR": "Variação Clássica, Defesa Tiviakov",
+            "es": "Variante Clásica, Defensa Tiviakov"
+          },
+          "eco": "E18",
+          "opening": "Queen's Indian Defense: Classical Variation, Tiviakov Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "O-O", "O-O", "Nc3", "Na6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0f507d679d2d609f",
+          "names": {
+            "en": "Classical Variation, Traditional Variation, Main Line",
+            "pt-BR": "Variação Clássica, Variação Traditional, Linha Principal",
+            "es": "Variante Clásica, Variante Traditional, Línea Principal"
+          },
+          "eco": "E19",
+          "opening": "Queen's Indian Defense: Classical Variation, Traditional Variation, Main Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "O-O", "O-O", "Nc3", "Ne4", "Qc2", "Nxc3", "Qxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b5b2b839e8f129c6",
+          "names": {
+            "en": "Classical Variation, Traditional Variation, Nimzowitsch Line",
+            "pt-BR": "Variação Clássica, Variação Traditional, Linha Nimzowitsch",
+            "es": "Variante Clásica, Variante Traditional, Línea Nimzowitsch"
+          },
+          "eco": "E18",
+          "opening": "Queen's Indian Defense: Classical Variation, Traditional Variation, Nimzowitsch Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "O-O", "O-O", "Nc3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0ddb262e847f6f24",
+          "names": {
+            "en": "Classical Variation, Taimanov Gambit",
+            "pt-BR": "Variação Clássica, Gambito Taimanov",
+            "es": "Variante Clásica, Gambito Taimanov"
+          },
+          "eco": "E17",
+          "opening": "Queen's Indian Defense: Classical Variation, Taimanov Gambit",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "O-O", "O-O", "d5", "exd5", "Nd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b32544b8db25bfc2",
+          "names": {
+            "en": "Classical Variation, Polugaevsky Gambit",
+            "pt-BR": "Variação Clássica, Gambito Polugaevsky",
+            "es": "Variante Clásica, Gambito Polugaevsky"
+          },
+          "eco": "E17",
+          "opening": "Queen's Indian Defense: Classical Variation, Polugaevsky Gambit",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "O-O", "O-O", "d5", "exd5", "Nh4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Capablanca Variation",
+        "pt-BR": "Variação Capablanca",
+        "es": "Variante Capablanca"
+      },
+      "lines": [
+        {
+          "id": "line-17b9ed6bd4818c80",
+          "names": {
+            "en": "Capablanca Variation",
+            "pt-BR": "Variação Capablanca",
+            "es": "Variante Capablanca"
+          },
+          "eco": "E16",
+          "opening": "Queen's Indian Defense: Capablanca Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Bb4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1d75b63782ed862a",
+          "names": {
+            "en": "Capablanca Variation",
+            "pt-BR": "Variação Capablanca",
+            "es": "Variante Capablanca"
+          },
+          "eco": "E16",
+          "opening": "Queen's Indian Defense: Capablanca Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Bb4+", "Nbd2", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6dccd3433c10f16d",
+          "names": {
+            "en": "Capablanca Variation",
+            "pt-BR": "Variação Capablanca",
+            "es": "Variante Capablanca"
+          },
+          "eco": "E16",
+          "opening": "Queen's Indian Defense: Capablanca Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Bb4+", "Nbd2", "O-O", "O-O", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b7e8caf0872ddfd1",
+          "names": {
+            "en": "Capablanca Variation",
+            "pt-BR": "Variação Capablanca",
+            "es": "Variante Capablanca"
+          },
+          "eco": "E16",
+          "opening": "Queen's Indian Defense: Capablanca Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Bb4+", "Nbd2", "O-O", "O-O", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Spassky System",
+        "pt-BR": "Sistema Spassky",
+        "es": "Sistema Spassky"
+      },
+      "lines": [
+        {
+          "id": "line-ef285152b219407f",
+          "names": {
+            "en": "Spassky System",
+            "pt-BR": "Sistema Spassky",
+            "es": "Sistema Spassky"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense: Spassky System",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-64ed73d4b2ce9f3e",
+          "names": {
+            "en": "Spassky System",
+            "pt-BR": "Sistema Spassky",
+            "es": "Sistema Spassky"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense: Spassky System",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "e3", "Bb7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7a047e2ce9f92ec4",
+          "names": {
+            "en": "Spassky System",
+            "pt-BR": "Sistema Spassky",
+            "es": "Sistema Spassky"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense: Spassky System",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "e3", "Bb7", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d90d3d6e3730b15c",
+          "names": {
+            "en": "Spassky System",
+            "pt-BR": "Sistema Spassky",
+            "es": "Sistema Spassky"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense: Spassky System",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "e3", "Bb7", "Bd3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Kasparov Variation",
+        "pt-BR": "Variação Kasparov",
+        "es": "Variante Kasparov"
+      },
+      "lines": [
+        {
+          "id": "line-c663d50b13fe9075",
+          "names": {
+            "en": "Kasparov Variation",
+            "pt-BR": "Variação Kasparov",
+            "es": "Variante Kasparov"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ec981307eb9c37d6",
+          "names": {
+            "en": "Kasparov Variation",
+            "pt-BR": "Variação Kasparov",
+            "es": "Variante Kasparov"
+          },
+          "eco": "E13",
+          "opening": "Queen's Indian Defense: Kasparov Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "Nc3", "Bb4", "Bg5", "h6", "Bh4", "Bb7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-276734a459f2a2e8",
+          "names": {
+            "en": "Kasparov Variation, Botvinnik Attack",
+            "pt-BR": "Variação Kasparov, Ataque Botvinnik",
+            "es": "Variante Kasparov, Ataque Botvinnik"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Kasparov Variation, Botvinnik Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "Nc3", "Bb7", "Bg5", "h6", "Bh4", "g5", "Bg3", "Nh5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Riumin Variation",
+        "pt-BR": "Variação Riumin",
+        "es": "Variante Riumin"
+      },
+      "lines": [
+        {
+          "id": "line-34a7628a97ca710a",
+          "names": {
+            "en": "Riumin Variation",
+            "pt-BR": "Variação Riumin",
+            "es": "Variante Riumin"
+          },
+          "eco": "E16",
+          "opening": "Queen's Indian Defense: Riumin Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Bb4+", "Bd2", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-51187e4442b113b5",
+          "names": {
+            "en": "Riumin Variation",
+            "pt-BR": "Variação Riumin",
+            "es": "Variante Riumin"
+          },
+          "eco": "E16",
+          "opening": "Queen's Indian Defense: Riumin Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Bb4+", "Bd2", "Be7", "O-O", "O-O", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8c25d428ce082186",
+          "names": {
+            "en": "Riumin Variation",
+            "pt-BR": "Variação Riumin",
+            "es": "Variante Riumin"
+          },
+          "eco": "E16",
+          "opening": "Queen's Indian Defense: Riumin Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Bb4+", "Bd2", "Be7", "O-O", "O-O", "Nc3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Petrosian Variation",
+        "pt-BR": "Variação Petrosian",
+        "es": "Variante Petrosian"
+      },
+      "lines": [
+        {
+          "id": "line-54d34d38e80c2d23",
+          "names": {
+            "en": "Petrosian Variation",
+            "pt-BR": "Variação Petrosian",
+            "es": "Variante Petrosian"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Petrosian Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-644dd59eae9efb3c",
+          "names": {
+            "en": "Petrosian Variation, Farago Defense",
+            "pt-BR": "Variação Petrosian, Defesa Farago",
+            "es": "Variante Petrosian, Defensa Farago"
+          },
+          "eco": "E12",
+          "opening": "Queen's Indian Defense: Petrosian Variation, Farago Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "a3", "Ba6", "Qc2", "Bb7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Spassky System3"
+      },
+      "lines": [
+        {
+          "id": "line-7cbbde592d6f1a82",
+          "names": {
+            "en": "Spassky System3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense: Spassky System3",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "e3", "Bb7", "Bd3", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ff5314728c562faf",
+          "names": {
+            "en": "Spassky System3"
+          },
+          "eco": "E14",
+          "opening": "Queen's Indian Defense: Spassky System3",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "e3", "Bb7", "Bd3", "c5", "Nc3", "cxd4", "exd4", "Be7", "O-O", "d5", "cxd5", "Nxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-41538182a5d40128",
+      "names": {
+        "en": "Accelerated"
+      },
+      "eco": "A50",
+      "opening": "Queen's Indian Accelerated",
+      "moves": ["d4", "Nf6", "c4", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f6c149c49d84e57d",
+      "names": {
+        "en": "Anti-Queen's Indian System"
+      },
+      "eco": "E17",
+      "opening": "Queen's Indian Defense: Anti-Queen's Indian System",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-793873e1f320c270",
+      "names": {
+        "en": "Averbakh Variation",
+        "pt-BR": "Variação Averbakh",
+        "es": "Variante Averbakh"
+      },
+      "eco": "E14",
+      "opening": "Queen's Indian Defense: Averbakh Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "e3", "Bb7", "Bd3", "c5", "O-O", "Be7", "b3", "O-O", "Bb2", "cxd4", "Nxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c89d3cbd8ada49ea",
+      "names": {
+        "en": "Buerger Variation",
+        "pt-BR": "Variação Buerger",
+        "es": "Variante Buerger"
+      },
+      "eco": "E15",
+      "opening": "Queen's Indian Defense: Buerger Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "c5", "d5", "exd5", "Ng5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d1d4654b6454d3dc",
+      "names": {
+        "en": "Euwe Variation",
+        "pt-BR": "Variação Euwe",
+        "es": "Variante Euwe"
+      },
+      "eco": "E17",
+      "opening": "Queen's Indian Defense: Euwe Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "O-O", "O-O", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-13f0ad3f9aff5f81",
+      "names": {
+        "en": "Queen's Indian Defense",
+        "pt-BR": "Defesa Índia da Dama",
+        "es": "Defensa India de Dama"
+      },
+      "eco": "E12",
+      "opening": "Queen's Indian Defense",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-36fc4df798706c14",
+      "names": {
+        "en": "Miles Variation",
+        "pt-BR": "Variação Miles",
+        "es": "Variante Miles"
+      },
+      "eco": "E12",
+      "opening": "Queen's Indian Defense: Miles Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "Bf4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ed181f6f492296d7",
+      "names": {
+        "en": "Opocensky Variation",
+        "pt-BR": "Variação Opocensky",
+        "es": "Variante Opocensky"
+      },
+      "eco": "E17",
+      "opening": "Queen's Indian Defense: Opocensky Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7", "Nc3", "Ne4", "Bd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f96800023f9179ae",
+      "names": {
+        "en": "Traditional Variation",
+        "pt-BR": "Variação Traditional",
+        "es": "Variante Traditional"
+      },
+      "eco": "E17",
+      "opening": "Queen's Indian Defense: Traditional Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d4957280807ccb77",
+      "names": {
+        "en": "Yates Variation",
+        "pt-BR": "Variação Yates",
+        "es": "Variante Yates"
+      },
+      "eco": "E16",
+      "opening": "Queen's Indian Defense: Yates Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Bd2", "a5", "g3", "b6", "Bg2", "Bb7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

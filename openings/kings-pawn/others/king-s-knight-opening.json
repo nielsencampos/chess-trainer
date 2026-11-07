@@ -1,0 +1,41 @@
+{
+  "id": "king-s-knight-opening",
+  "names": {
+    "en": "King's Knight Opening"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-03e0e9a533ca0748",
+      "names": {
+        "en": "King's Knight Opening"
+      },
+      "eco": "C40",
+      "opening": "King's Knight Opening",
+      "moves": ["e4", "e5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b2cadbc184f8fcf6",
+      "names": {
+        "en": "Normal Variation",
+        "pt-BR": "Variação Normal",
+        "es": "Variante Normal"
+      },
+      "eco": "C44",
+      "opening": "King's Knight Opening: Normal Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-39782d35d3351a23",
+      "names": {
+        "en": "Konstantinopolsky"
+      },
+      "eco": "C44",
+      "opening": "King's Knight Opening: Konstantinopolsky",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

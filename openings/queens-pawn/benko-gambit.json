@@ -1,0 +1,299 @@
+{
+  "id": "benko-gambit",
+  "names": {
+    "en": "Benko Gambit",
+    "pt-BR": "Gambito Benko",
+    "es": "Gambito Benko"
+  },
+  "order": 11,
+  "variants": [
+    {
+      "names": {
+        "en": "Accepted: Yugoslav"
+      },
+      "lines": [
+        {
+          "id": "line-1f69385319324979",
+          "names": {
+            "en": "Accepted: Yugoslav"
+          },
+          "eco": "A59",
+          "opening": "Benko Gambit Accepted: Yugoslav",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "Bxa6", "Nc3", "d6", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f1d6ef53901c3418",
+          "names": {
+            "en": "Accepted: Yugoslav"
+          },
+          "eco": "A59",
+          "opening": "Benko Gambit Accepted: Yugoslav",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "g6", "Nc3", "Bxa6", "e4", "Bxf1", "Kxf1", "d6", "Nge2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Main",
+        "pt-BR": "Principal",
+        "es": "Principal"
+      },
+      "lines": [
+        {
+          "id": "line-6f0af1b7209a07f5",
+          "names": {
+            "en": "Benko Gambit",
+            "pt-BR": "Gambito Benko",
+            "es": "Gambito Benko"
+          },
+          "eco": "A57",
+          "opening": "Benko Gambit",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b1b812f2203c3127",
+          "names": {
+            "en": "Benko Gambit",
+            "pt-BR": "Gambito Benko",
+            "es": "Gambito Benko"
+          },
+          "eco": "A59",
+          "opening": "Benko Gambit",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "g6", "Nc3", "Bxa6", "e4", "Bxf1", "Kxf1", "d6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-04ce656d2fe9c49d",
+      "names": {
+        "en": "Accepted",
+        "pt-BR": "Aceito",
+        "es": "Aceptado"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Accepted",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e83d6dab0bec3c3",
+      "names": {
+        "en": "Accepted: Central Storming Variation"
+      },
+      "eco": "A58",
+      "opening": "Benko Gambit Accepted: Central Storming Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "g6", "Nc3", "Bxa6", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5e5308e11b8707bd",
+      "names": {
+        "en": "Accepted: Dlugy Variation",
+        "pt-BR": "Aceito: Variação Dlugy",
+        "es": "Aceptado: Variante Dlugy"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Accepted: Dlugy Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e3c1accb5421b66b",
+      "names": {
+        "en": "Accepted: Fianchetto Variation",
+        "pt-BR": "Aceito: Variação do Fianqueto",
+        "es": "Aceptado: Variante del Fianchetto"
+      },
+      "eco": "A58",
+      "opening": "Benko Gambit Accepted: Fianchetto Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "g6", "Nc3", "Bxa6", "g3", "d6", "Bg2", "Bg7", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a6fca7e2645c241e",
+      "names": {
+        "en": "Accepted: Fully Accepted Variation"
+      },
+      "eco": "A58",
+      "opening": "Benko Gambit Accepted: Fully Accepted Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-13d5380b806881c3",
+      "names": {
+        "en": "Accepted: King Walk Variation"
+      },
+      "eco": "A59",
+      "opening": "Benko Gambit Accepted: King Walk Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "g6", "Nc3", "Bxa6", "Nf3", "d6", "e4", "Bxf1", "Kxf1", "Bg7", "g3", "O-O", "Kg2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4a8382fbde41ec9d",
+      "names": {
+        "en": "Accepted: Modern Variation",
+        "pt-BR": "Aceito: Variação Moderna",
+        "es": "Aceptado: Variante Moderna"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Accepted: Modern Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ed14618f6ac16a0c",
+      "names": {
+        "en": "Accepted: Pawn Return Variation"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Accepted: Pawn Return Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e584a4eea17210ab",
+      "names": {
+        "en": "Declined: Bishop Attack"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Declined: Bishop Attack",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-db8a8e23749b0e1a",
+      "names": {
+        "en": "Declined: Hjørring Countergambit",
+        "pt-BR": "Recusado: Contragambito Hjørring",
+        "es": "Rehusado: Contragambito Hjørring"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Declined: Hjørring Countergambit",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-39c22456f41927d4",
+      "names": {
+        "en": "Declined: Main Line",
+        "pt-BR": "Recusado: Linha Principal",
+        "es": "Rehusado: Línea Principal"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Declined: Main Line",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-af4e594a302b8d0a",
+      "names": {
+        "en": "Declined: Pseudo-Sämisch"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Declined: Pseudo-Sämisch",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c67c2a71c8894d54",
+      "names": {
+        "en": "Declined: Quiet Line"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Declined: Quiet Line",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "Nd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-274709f87775e28f",
+      "names": {
+        "en": "Declined: Sosonko Variation",
+        "pt-BR": "Recusado: Variação Sosonko",
+        "es": "Rehusado: Variante Sosonko"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit Declined: Sosonko Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "a4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8dbef8056cb79876",
+      "names": {
+        "en": "Fianchetto Variation",
+        "pt-BR": "Variação do Fianqueto",
+        "es": "Variante del Fianchetto"
+      },
+      "eco": "A58",
+      "opening": "Benko Gambit: Fianchetto Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "Bxa6", "Nc3", "d6", "Nf3", "g6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c6d546aadc923d63",
+      "names": {
+        "en": "Mutkin Countergambit",
+        "pt-BR": "Contragambito Mutkin",
+        "es": "Contragambito Mutkin"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit: Mutkin Countergambit",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f4b6fbd99db73b8a",
+      "names": {
+        "en": "Nd2 Variation",
+        "pt-BR": "Variação Nd2",
+        "es": "Variante Nd2"
+      },
+      "eco": "A58",
+      "opening": "Benko Gambit: Nd2 Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "bxa6", "Bxa6", "Nc3", "d6", "Nf3", "g6", "Nd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2533502e98e7abf5",
+      "names": {
+        "en": "Nescafe Frappe Attack",
+        "pt-BR": "Ataque Nescafe Frappe",
+        "es": "Ataque Nescafe Frappe"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit: Nescafe Frappe Attack",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "Nc3", "axb5", "e4", "b4", "Nb5", "d6", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-99fdb63c94d10145",
+      "names": {
+        "en": "Zaitsev System",
+        "pt-BR": "Sistema Zaitsev",
+        "es": "Sistema Zaitsev"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit: Zaitsev System",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d6510a1abe2d7c44",
+      "names": {
+        "en": "Zaitsev Variation, Nescafe Frappe Attack",
+        "pt-BR": "Variação Zaitsev, Ataque Nescafe Frappe",
+        "es": "Variante Zaitsev, Ataque Nescafe Frappe"
+      },
+      "eco": "A57",
+      "opening": "Benko Gambit: Zaitsev Variation, Nescafe Frappe Attack",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5", "cxb5", "a6", "Nc3", "axb5", "e4", "b4", "Nb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

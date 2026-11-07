@@ -1,0 +1,31 @@
+{
+  "id": "slav-indian",
+  "names": {
+    "en": "Slav Indian"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-a9166e2840acc900",
+      "names": {
+        "en": "Slav Indian"
+      },
+      "eco": "A50",
+      "opening": "Slav Indian",
+      "moves": ["d4", "Nf6", "c4", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ae1051b04d15cc21",
+      "names": {
+        "en": "Kudischewitsch Gambit",
+        "pt-BR": "Gambito Kudischewitsch",
+        "es": "Gambito Kudischewitsch"
+      },
+      "eco": "A40",
+      "opening": "Slav Indian: Kudischewitsch Gambit",
+      "moves": ["d4", "c6", "Nf3", "Nf6", "c4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

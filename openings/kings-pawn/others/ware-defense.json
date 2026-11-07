@@ -1,0 +1,35 @@
+{
+  "id": "ware-defense",
+  "names": {
+    "en": "Ware Defense",
+    "pt-BR": "Defesa Ware",
+    "es": "Defensa Ware"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-62fe6eb5132816d8",
+      "names": {
+        "en": "Ware Defense",
+        "pt-BR": "Defesa Ware",
+        "es": "Defensa Ware"
+      },
+      "eco": "B00",
+      "opening": "Ware Defense",
+      "moves": ["e4", "a5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d5a552899ec5d2dc",
+      "names": {
+        "en": "Snagglepuss Defense",
+        "pt-BR": "Defesa Snagglepuss",
+        "es": "Defensa Snagglepuss"
+      },
+      "eco": "B00",
+      "opening": "Ware Defense: Snagglepuss Defense",
+      "moves": ["e4", "a5", "d4", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

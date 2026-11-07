@@ -1,0 +1,138 @@
+{
+  "id": "rat-defense",
+  "names": {
+    "en": "Rat Defense"
+  },
+  "order": null,
+  "variants": [
+    {
+      "names": {
+        "en": "English Rat"
+      },
+      "lines": [
+        {
+          "id": "line-8424941469ea3ac4",
+          "names": {
+            "en": "English Rat"
+          },
+          "eco": "A41",
+          "opening": "Rat Defense: English Rat",
+          "moves": ["d4", "d6", "c4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-20ab90c3766a08be",
+          "names": {
+            "en": "English Rat, Pounds Gambit"
+          },
+          "eco": "A41",
+          "opening": "Rat Defense: English Rat, Pounds Gambit",
+          "moves": ["d4", "d6", "c4", "e5", "dxe5", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-53412ee6d30f2f4f",
+          "names": {
+            "en": "English Rat, Lisbon Gambit"
+          },
+          "eco": "A41",
+          "opening": "Rat Defense: English Rat, Lisbon Gambit",
+          "moves": ["d4", "d6", "c4", "e5", "dxe5", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-77da22966180be6d",
+      "names": {
+        "en": "Accelerated Gurgenidze"
+      },
+      "eco": "B06",
+      "opening": "Rat Defense: Accelerated Gurgenidze",
+      "moves": ["e4", "g6", "d4", "d6", "Nc3", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2bdc57045c974188",
+      "names": {
+        "en": "Antal Defense",
+        "pt-BR": "Defesa Antal",
+        "es": "Defensa Antal"
+      },
+      "eco": "B00",
+      "opening": "Rat Defense: Antal Defense",
+      "moves": ["e4", "d6", "d4", "Nd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f038c81503d79246",
+      "names": {
+        "en": "Balogh Defense",
+        "pt-BR": "Defesa Balogh",
+        "es": "Defensa Balogh"
+      },
+      "eco": "A82",
+      "opening": "Rat Defense: Balogh Defense",
+      "moves": ["e4", "d6", "d4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ec817c16132adbec",
+      "names": {
+        "en": "Fuller Gambit",
+        "pt-BR": "Gambito Fuller",
+        "es": "Gambito Fuller"
+      },
+      "eco": "B00",
+      "opening": "Rat Defense: Fuller Gambit",
+      "moves": ["e4", "d6", "f4", "d5", "exd5", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-88b88098ea6e7861",
+      "names": {
+        "en": "Harmonist"
+      },
+      "eco": "B00",
+      "opening": "Rat Defense: Harmonist",
+      "moves": ["e4", "d6", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e8f91e11cacd155",
+      "names": {
+        "en": "Petruccioli Attack",
+        "pt-BR": "Ataque Petruccioli",
+        "es": "Ataque Petruccioli"
+      },
+      "eco": "B00",
+      "opening": "Rat Defense: Petruccioli Attack",
+      "moves": ["e4", "d6", "h4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e48b63e0b5fbb86",
+      "names": {
+        "en": "Small Center Defense"
+      },
+      "eco": "C00",
+      "opening": "Rat Defense: Small Center Defense",
+      "moves": ["d4", "e6", "e4", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f3c85bb62cdc6b6c",
+      "names": {
+        "en": "Spike Attack",
+        "pt-BR": "Ataque Spike",
+        "es": "Ataque Spike"
+      },
+      "eco": "B00",
+      "opening": "Rat Defense: Spike Attack",
+      "moves": ["e4", "d6", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

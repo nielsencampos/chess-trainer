@@ -35,6 +35,20 @@ export const api = {
   repertoires: () => request("/repertoires"),
   levels: () => request("/engine/levels"),
   timeControls: () => request("/time-controls"),
+  activeGame: () => request("/games/active"),
+  savedGames: () => request("/games"),
+  /** @param {string} pgn */
+  importGames: (pgn) => request("/games/import", { pgn }),
+  /** @param {string[]} gameIds */
+  exportGames: async (gameIds) => {
+    const response = await fetch("api/games/export", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ game_ids: gameIds }),
+    });
+    if (!response.ok) throw new ApiError(response.status, `${response.status} on export`);
+    return response.blob();
+  },
   /** @param {object} setup */
   newGame: (setup) => request("/games", setup),
   /**

@@ -1,0 +1,23 @@
+{
+  "id": "bongcloud-attack",
+  "names": {
+    "en": "Bongcloud Attack",
+    "pt-BR": "Ataque Bongcloud",
+    "es": "Ataque Bongcloud"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-b808e9fb6a5288fc",
+      "names": {
+        "en": "Bongcloud Attack",
+        "pt-BR": "Ataque Bongcloud",
+        "es": "Ataque Bongcloud"
+      },
+      "eco": "C20",
+      "opening": "Bongcloud Attack",
+      "moves": ["e4", "e5", "Ke2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

@@ -1,0 +1,810 @@
+{
+  "id": "benoni-defense",
+  "names": {
+    "en": "Benoni Defense",
+    "pt-BR": "Defesa Benoni",
+    "es": "Defensa Benoni"
+  },
+  "order": 10,
+  "variants": [
+    {
+      "names": {
+        "en": "Classical Variation",
+        "pt-BR": "Variação Clássica",
+        "es": "Variante Clásica"
+      },
+      "lines": [
+        {
+          "id": "line-b0a550cd2e0516e7",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "A72",
+          "opening": "Benoni Defense: Classical Variation",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "Nf3", "Bg7", "Be2", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4a80bc582ca7cd19",
+          "names": {
+            "en": "Classical Variation, Main Line",
+            "pt-BR": "Variação Clássica, Linha Principal",
+            "es": "Variante Clásica, Línea Principal"
+          },
+          "eco": "A73",
+          "opening": "Benoni Defense: Classical Variation, Main Line",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "Nf3", "Bg7", "Be2", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a52ceb34b05d8abd",
+          "names": {
+            "en": "Classical Variation, Czerniak Defense",
+            "pt-BR": "Variação Clássica, Defesa Czerniak",
+            "es": "Variante Clásica, Defensa Czerniak"
+          },
+          "eco": "A76",
+          "opening": "Benoni Defense: Classical Variation, Czerniak Defense",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "Nf3", "Bg7", "Be2", "O-O", "O-O", "Re8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5440ab80c3584bbc",
+          "names": {
+            "en": "Classical Variation, Czerniak Defense, Tal Line",
+            "pt-BR": "Variação Clássica, Defesa Czerniak, Linha Tal",
+            "es": "Variante Clásica, Defensa Czerniak, Línea Tal"
+          },
+          "eco": "A77",
+          "opening": "Benoni Defense: Classical Variation, Czerniak Defense, Tal Line",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "Nf3", "Bg7", "Be2", "O-O", "O-O", "Re8", "Nd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c0871283a41270ea",
+          "names": {
+            "en": "Classical Variation, Czerniak Defense",
+            "pt-BR": "Variação Clássica, Defesa Czerniak",
+            "es": "Variante Clásica, Defensa Czerniak"
+          },
+          "eco": "A79",
+          "opening": "Benoni Defense: Classical Variation, Czerniak Defense",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "Nf3", "Bg7", "Be2", "O-O", "O-O", "Re8", "Nd2", "Na6", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ae52e2149c5cb0a0",
+          "names": {
+            "en": "Classical Variation, Czerniak Defense, Tal Line",
+            "pt-BR": "Variação Clássica, Defesa Czerniak, Linha Tal",
+            "es": "Variante Clásica, Defensa Czerniak, Línea Tal"
+          },
+          "eco": "A77",
+          "opening": "Benoni Defense: Classical Variation, Czerniak Defense, Tal Line",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "Nf3", "Bg7", "Be2", "O-O", "O-O", "Re8", "Nd2", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-df308666199801ba",
+          "names": {
+            "en": "Classical Variation, Full Line",
+            "pt-BR": "Variação Clássica, Linha Full",
+            "es": "Variante Clásica, Línea Full"
+          },
+          "eco": "A74",
+          "opening": "Benoni Defense: Classical Variation, Full Line",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "Nf3", "Bg7", "Be2", "O-O", "O-O", "a6", "a4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-59f8da1ab36c802b",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "A70",
+          "opening": "Benoni Defense: Classical Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5e9ec616195764c9",
+          "names": {
+            "en": "Classical Variation, Traditional Variation",
+            "pt-BR": "Variação Clássica, Variação Traditional",
+            "es": "Variante Clásica, Variante Traditional"
+          },
+          "eco": "A70",
+          "opening": "Benoni Defense: Classical Variation, Traditional Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "e4", "Bg7", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-90801643bddd9902",
+          "names": {
+            "en": "Classical Variation, Czerniak Defense",
+            "pt-BR": "Variação Clássica, Defesa Czerniak",
+            "es": "Variante Clásica, Defensa Czerniak"
+          },
+          "eco": "A78",
+          "opening": "Benoni Defense: Classical Variation, Czerniak Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "e4", "Bg7", "Be2", "O-O", "O-O", "Re8", "Nd2", "Na6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5971344271d23cd3",
+          "names": {
+            "en": "Classical Variation, Argentine Counterattack"
+          },
+          "eco": "A75",
+          "opening": "Benoni Defense: Classical Variation, Argentine Counterattack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "e4", "Bg7", "Be2", "O-O", "O-O", "a6", "a4", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b0f25301a6f52173",
+          "names": {
+            "en": "Classical Variation, Averbakh-Grivas Attack",
+            "pt-BR": "Variação Clássica, Ataque Averbakh-Grivas",
+            "es": "Variante Clásica, Ataque Averbakh-Grivas"
+          },
+          "eco": "A71",
+          "opening": "Benoni Defense: Classical Variation, Averbakh-Grivas Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "e4", "Bg7", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-aeccfc26ef396d0f",
+          "names": {
+            "en": "Classical Variation, New York Variation"
+          },
+          "eco": "A70",
+          "opening": "Benoni Defense: Classical Variation, New York Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "e4", "Bg7", "h3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "King's Pawn Line"
+      },
+      "lines": [
+        {
+          "id": "line-cdaec880d79bfd9c",
+          "names": {
+            "en": "King's Pawn Line"
+          },
+          "eco": "A65",
+          "opening": "Benoni Defense: King's Pawn Line",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-594bca84ed2243c1",
+          "names": {
+            "en": "King's Pawn Line"
+          },
+          "eco": "A65",
+          "opening": "Benoni Defense: King's Pawn Line",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f3", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-32a9de08faf1740d",
+          "names": {
+            "en": "King's Pawn Line, with Be3"
+          },
+          "eco": "A65",
+          "opening": "Benoni Defense: King's Pawn Line, with Be3",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f3", "Bg7", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d34361853335d793",
+          "names": {
+            "en": "King's Pawn Line, with Bg5"
+          },
+          "eco": "A65",
+          "opening": "Benoni Defense: King's Pawn Line, with Bg5",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f3", "Bg7", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-04786668b3088c5d",
+          "names": {
+            "en": "King's Pawn Line, with Nge2"
+          },
+          "eco": "A65",
+          "opening": "Benoni Defense: King's Pawn Line, with Nge2",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f3", "Bg7", "Nge2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-669365bbb72df0e4",
+          "names": {
+            "en": "King's Pawn Line, with Bg5"
+          },
+          "eco": "A65",
+          "opening": "Benoni Defense: King's Pawn Line, with Bg5",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Bg5", "c5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7e591af15c9e1f08",
+          "names": {
+            "en": "King's Pawn Line, with Bg5"
+          },
+          "eco": "A65",
+          "opening": "Benoni Defense: King's Pawn Line, with Bg5",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Bg5", "c5", "d5", "e6", "Qd2", "exd5", "exd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-82ab07b7cdffc3fc",
+          "names": {
+            "en": "King's Pawn Line, with Nge2"
+          },
+          "eco": "A65",
+          "opening": "Benoni Defense: King's Pawn Line, with Nge2",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3", "O-O", "Nge2", "c5", "d5", "e6", "Ng3", "exd5", "cxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-aa452af28eac3ec5",
+          "names": {
+            "en": "King's Pawn Line"
+          },
+          "eco": "A65",
+          "opening": "Benoni Defense: King's Pawn Line",
+          "moves": ["d4", "Nf6", "c4", "g6", "f3", "c5", "d5", "d6", "e4", "Bg7", "Nc3", "e6", "Be3", "O-O", "Qd2", "exd5", "cxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Four Pawns Attack"
+      },
+      "lines": [
+        {
+          "id": "line-f93611c5eed9f707",
+          "names": {
+            "en": "Four Pawns Attack"
+          },
+          "eco": "A68",
+          "opening": "Benoni Defense: Four Pawns Attack",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f4", "Bg7", "Nf3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-374862a5dea6284b",
+          "names": {
+            "en": "Four Pawns Attack"
+          },
+          "eco": "A68",
+          "opening": "Benoni Defense: Four Pawns Attack",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f4", "Bg7", "Nf3", "O-O", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-af57e844627f6f2c",
+          "names": {
+            "en": "Four Pawns Attack, Main Line"
+          },
+          "eco": "A69",
+          "opening": "Benoni Defense: Four Pawns Attack, Main Line",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f4", "Bg7", "Nf3", "O-O", "Be2", "Nbd7", "O-O", "Re8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e78085d7c48fa642",
+          "names": {
+            "en": "Four Pawns Attack, Main Line"
+          },
+          "eco": "A69",
+          "opening": "Benoni Defense: Four Pawns Attack, Main Line",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f4", "Bg7", "Nf3", "O-O", "Be2", "Nbd7", "O-O", "Re8", "Nd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dcb199201f7e89d9",
+          "names": {
+            "en": "Four Pawns Attack, Main Line"
+          },
+          "eco": "A69",
+          "opening": "Benoni Defense: Four Pawns Attack, Main Line",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f4", "Bg7", "Nf3", "O-O", "Be2", "Re8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7c7ac4bb7e12081b",
+          "names": {
+            "en": "Four Pawns Attack, Main Line"
+          },
+          "eco": "A69",
+          "opening": "Benoni Defense: Four Pawns Attack, Main Line",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f4", "Bg7", "Nf3", "O-O", "Be2", "a6", "a4", "Re8", "Nd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Old Benoni"
+      },
+      "lines": [
+        {
+          "id": "line-f8f8d80dda095965",
+          "names": {
+            "en": "Old Benoni"
+          },
+          "eco": "A43",
+          "opening": "Benoni Defense: Old Benoni",
+          "moves": ["d4", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-46f3ff8b5492ce8c",
+          "names": {
+            "en": "Old Benoni"
+          },
+          "eco": "A43",
+          "opening": "Benoni Defense: Old Benoni",
+          "moves": ["d4", "c5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0ae7290be72c434e",
+          "names": {
+            "en": "Old Benoni"
+          },
+          "eco": "A43",
+          "opening": "Benoni Defense: Old Benoni",
+          "moves": ["d4", "c5", "d5", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-648dd5f64ee3eae6",
+          "names": {
+            "en": "Old Benoni, Schmid Variation"
+          },
+          "eco": "A43",
+          "opening": "Benoni Defense: Old Benoni, Schmid Variation",
+          "moves": ["d4", "c5", "d5", "d6", "Nc3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-154ccce6838d8408",
+          "names": {
+            "en": "Old Benoni"
+          },
+          "eco": "A44",
+          "opening": "Benoni Defense: Old Benoni",
+          "moves": ["d4", "c5", "d5", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8429c259d9b57920",
+          "names": {
+            "en": "Old Benoni, Mujannah Formation"
+          },
+          "eco": "A43",
+          "opening": "Benoni Defense: Old Benoni, Mujannah Formation",
+          "moves": ["d4", "c5", "d5", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Fianchetto Variation",
+        "pt-BR": "Variação do Fianqueto",
+        "es": "Variante del Fianchetto"
+      },
+      "lines": [
+        {
+          "id": "line-963bc752dc1920b3",
+          "names": {
+            "en": "Fianchetto Variation",
+            "pt-BR": "Variação do Fianqueto",
+            "es": "Variante del Fianchetto"
+          },
+          "eco": "A61",
+          "opening": "Benoni Defense: Fianchetto Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5c60f3a871188822",
+          "names": {
+            "en": "Fianchetto Variation",
+            "pt-BR": "Variação do Fianqueto",
+            "es": "Variante del Fianchetto"
+          },
+          "eco": "A62",
+          "opening": "Benoni Defense: Fianchetto Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "Bg2", "Bg7", "Nf3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-32a71043871a20e4",
+          "names": {
+            "en": "Fianchetto Variation, Hastings Defense",
+            "pt-BR": "Variação do Fianqueto, Defesa Hastings",
+            "es": "Variante del Fianchetto, Defensa Hastings"
+          },
+          "eco": "A63",
+          "opening": "Benoni Defense: Fianchetto Variation, Hastings Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "Bg2", "Bg7", "Nf3", "O-O", "O-O", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3edb917af9718856",
+          "names": {
+            "en": "Fianchetto Variation, Hastings Defense, Main Line",
+            "pt-BR": "Variação do Fianqueto, Defesa Hastings, Linha Principal",
+            "es": "Variante del Fianchetto, Defensa Hastings, Línea Principal"
+          },
+          "eco": "A64",
+          "opening": "Benoni Defense: Fianchetto Variation, Hastings Defense, Main Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "Bg2", "Bg7", "Nf3", "O-O", "O-O", "a6", "a4", "Nbd7", "Nd2", "Re8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Zilbermints-Benoni Gambit",
+        "pt-BR": "Gambito Zilbermints-Benoni",
+        "es": "Gambito Zilbermints-Benoni"
+      },
+      "lines": [
+        {
+          "id": "line-9cfd343ce7f34b8e",
+          "names": {
+            "en": "Zilbermints-Benoni Gambit",
+            "pt-BR": "Gambito Zilbermints-Benoni",
+            "es": "Gambito Zilbermints-Benoni"
+          },
+          "eco": "A43",
+          "opening": "Benoni Defense: Zilbermints-Benoni Gambit",
+          "moves": ["d4", "c5", "Nf3", "cxd4", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-87f60142feba7ec4",
+          "names": {
+            "en": "Zilbermints-Benoni Gambit, Tamarkin Countergambit",
+            "pt-BR": "Gambito Zilbermints-Benoni, Contragambito Tamarkin",
+            "es": "Gambito Zilbermints-Benoni, Contragambito Tamarkin"
+          },
+          "eco": "A43",
+          "opening": "Benoni Defense: Zilbermints-Benoni Gambit, Tamarkin Countergambit",
+          "moves": ["d4", "c5", "Nf3", "cxd4", "b4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5cdd6e54a7c75d53",
+          "names": {
+            "en": "Zilbermints-Benoni Gambit",
+            "pt-BR": "Gambito Zilbermints-Benoni",
+            "es": "Gambito Zilbermints-Benoni"
+          },
+          "eco": "A43",
+          "opening": "Benoni Defense: Zilbermints-Benoni Gambit",
+          "moves": ["d4", "c5", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Benoni-Indian Defense"
+      },
+      "lines": [
+        {
+          "id": "line-85a8e49c736d9eca",
+          "names": {
+            "en": "Benoni-Indian Defense"
+          },
+          "eco": "A43",
+          "opening": "Benoni Defense: Benoni-Indian Defense",
+          "moves": ["d4", "c5", "d5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-376ee525ebbd2ac6",
+          "names": {
+            "en": "Benoni-Indian Defense, Kingside Move Order"
+          },
+          "eco": "A43",
+          "opening": "Benoni Defense: Benoni-Indian Defense, Kingside Move Order",
+          "moves": ["d4", "c5", "d5", "Nf6", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Main",
+        "pt-BR": "Principal",
+        "es": "Principal"
+      },
+      "lines": [
+        {
+          "id": "line-4e5beea0ecf11b39",
+          "names": {
+            "en": "Benoni Defense",
+            "pt-BR": "Defesa Benoni",
+            "es": "Defensa Benoni"
+          },
+          "eco": "A56",
+          "opening": "Benoni Defense",
+          "moves": ["d4", "Nf6", "c4", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9dd9613c97689b8b",
+          "names": {
+            "en": "Benoni Defense",
+            "pt-BR": "Defesa Benoni",
+            "es": "Defensa Benoni"
+          },
+          "eco": "A61",
+          "opening": "Benoni Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Modern Variation",
+        "pt-BR": "Variação Moderna",
+        "es": "Variante Moderna"
+      },
+      "lines": [
+        {
+          "id": "line-92eba592cf87c649",
+          "names": {
+            "en": "Modern Variation",
+            "pt-BR": "Variação Moderna",
+            "es": "Variante Moderna"
+          },
+          "eco": "A60",
+          "opening": "Benoni Defense: Modern Variation",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e5797272de80a0cf",
+          "names": {
+            "en": "Modern Variation, Snake Variation",
+            "pt-BR": "Variação Moderna, Variação Snake",
+            "es": "Variante Moderna, Variante Snake"
+          },
+          "eco": "A60",
+          "opening": "Benoni Defense: Modern Variation, Snake Variation",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-eccd0fc418d0c773",
+      "names": {
+        "en": "Benoni Gambit, Schlenker Defense",
+        "pt-BR": "Gambito Benoni, Defesa Schlenker",
+        "es": "Gambito Benoni, Defensa Schlenker"
+      },
+      "eco": "A43",
+      "opening": "Benoni Defense: Benoni Gambit, Schlenker Defense",
+      "moves": ["d4", "c5", "dxc5", "Na6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-41746249becdfc14",
+      "names": {
+        "en": "Benoni Gambit Accepted"
+      },
+      "eco": "A43",
+      "opening": "Benoni Defense: Benoni Gambit Accepted",
+      "moves": ["d4", "c5", "dxc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c456ab81f06f0d11",
+      "names": {
+        "en": "Benoni-Staunton Gambit",
+        "pt-BR": "Gambito Benoni-Staunton",
+        "es": "Gambito Benoni-Staunton"
+      },
+      "eco": "A43",
+      "opening": "Benoni Defense: Benoni-Staunton Gambit",
+      "moves": ["d4", "c5", "d5", "f5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cd3554b4c900edcf",
+      "names": {
+        "en": "Cormorant Gambit",
+        "pt-BR": "Gambito Cormorant",
+        "es": "Gambito Cormorant"
+      },
+      "eco": "A43",
+      "opening": "Benoni Defense: Cormorant Gambit",
+      "moves": ["d4", "c5", "dxc5", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b8a4aa4bdb58ed28",
+      "names": {
+        "en": "Czech Benoni Defense"
+      },
+      "eco": "A56",
+      "opening": "Benoni Defense: Czech Benoni Defense",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d4e9defb5f4e508c",
+      "names": {
+        "en": "Franco-Sicilian Hybrid"
+      },
+      "eco": "A40",
+      "opening": "Benoni Defense: Franco-Sicilian Hybrid",
+      "moves": ["d4", "e6", "c4", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "e4", "Bg7", "Nf3", "Ne7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4aef92df2fb194ad",
+      "names": {
+        "en": "French Benoni"
+      },
+      "eco": "A43",
+      "opening": "Benoni Defense: French Benoni",
+      "moves": ["e4", "e6", "d4", "c5", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-15ef36eb80bac40e",
+      "names": {
+        "en": "Hawk Variation",
+        "pt-BR": "Variação Hawk",
+        "es": "Variante Hawk"
+      },
+      "eco": "A43",
+      "opening": "Benoni Defense: Hawk Variation",
+      "moves": ["d4", "Nf6", "Nf3", "c5", "d5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-555d46955fa44c51",
+      "names": {
+        "en": "Hromádka System",
+        "pt-BR": "Sistema Hromádka",
+        "es": "Sistema Hromádka"
+      },
+      "eco": "A56",
+      "opening": "Benoni Defense: Hromádka System",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-20829ca04beac5d3",
+      "names": {
+        "en": "King's Indian System"
+      },
+      "eco": "A56",
+      "opening": "Benoni Defense: King's Indian System",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "e5", "Nc3", "d6", "e4", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a3d5af5a1b922d6e",
+      "names": {
+        "en": "Knight's Tour Variation"
+      },
+      "eco": "A61",
+      "opening": "Benoni Defense: Knight's Tour Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "Nd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c3d8925bac1c62db",
+      "names": {
+        "en": "Mikenas Variation",
+        "pt-BR": "Variação Mikenas",
+        "es": "Variante Mikenas"
+      },
+      "eco": "A66",
+      "opening": "Benoni Defense: Mikenas Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f4", "Bg7", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-14d27f8085acd92d",
+      "names": {
+        "en": "Pawn Storm Variation"
+      },
+      "eco": "A66",
+      "opening": "Benoni Defense: Pawn Storm Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-20879b8dccfa3c38",
+      "names": {
+        "en": "Semi-Benoni"
+      },
+      "eco": "A44",
+      "opening": "Benoni Defense: Semi-Benoni",
+      "moves": ["d4", "c5", "d5", "e5", "e4", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-aca45fdd105d7fc5",
+      "names": {
+        "en": "Snail Variation",
+        "pt-BR": "Variação Snail",
+        "es": "Variante Snail"
+      },
+      "eco": "A43",
+      "opening": "Benoni Defense: Snail Variation",
+      "moves": ["d4", "c5", "d5", "Na6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6ea1d454440a19e4",
+      "names": {
+        "en": "Taimanov Variation",
+        "pt-BR": "Variação Taimanov",
+        "es": "Variante Taimanov"
+      },
+      "eco": "A67",
+      "opening": "Benoni Defense: Taimanov Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6", "e4", "g6", "f4", "Bg7", "Bb5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3900732f6d4a0bb2",
+      "names": {
+        "en": "Uhlmann Variation",
+        "pt-BR": "Variação Uhlmann",
+        "es": "Variante Uhlmann"
+      },
+      "eco": "A61",
+      "opening": "Benoni Defense: Uhlmann Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "c5", "d5", "exd5", "cxd5", "d6", "Nc3", "g6", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-aa865ba266952fbf",
+      "names": {
+        "en": "Weenink Variation",
+        "pt-BR": "Variação Weenink",
+        "es": "Variante Weenink"
+      },
+      "eco": "A56",
+      "opening": "Benoni Defense: Weenink Variation",
+      "moves": ["d4", "Nf6", "c4", "c5", "dxc5", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-efe13049ccba2896",
+      "names": {
+        "en": "Woozle"
+      },
+      "eco": "A43",
+      "opening": "Benoni Defense: Woozle",
+      "moves": ["d4", "c5", "d5", "Nf6", "Nc3", "Qa5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

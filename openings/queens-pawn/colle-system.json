@@ -1,0 +1,47 @@
+{
+  "id": "colle-system",
+  "names": {
+    "en": "Colle System",
+    "pt-BR": "Sistema Colle",
+    "es": "Sistema Colle"
+  },
+  "order": 18,
+  "lines": [
+    {
+      "id": "line-b52b60a5f91b370e",
+      "names": {
+        "en": "Rhamphorhynchus Variation",
+        "pt-BR": "Variação Rhamphorhynchus",
+        "es": "Variante Rhamphorhynchus"
+      },
+      "eco": "A04",
+      "opening": "Colle System: Rhamphorhynchus Variation",
+      "moves": ["Nf3", "c5", "e3", "g6", "d4", "Bg7", "dxc5", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c1cd54259410a514",
+      "names": {
+        "en": "Pterodactyl Variation",
+        "pt-BR": "Variação Pterodactyl",
+        "es": "Variante Pterodactyl"
+      },
+      "eco": "A40",
+      "opening": "Colle System: Pterodactyl Variation",
+      "moves": ["d4", "g6", "Nf3", "Bg7", "e3", "c5", "Bd3", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a4da4a8af9e5295b",
+      "names": {
+        "en": "Siroccopteryx Variation",
+        "pt-BR": "Variação Siroccopteryx",
+        "es": "Variante Siroccopteryx"
+      },
+      "eco": "A40",
+      "opening": "Colle System: Siroccopteryx Variation",
+      "moves": ["d4", "g6", "Nf3", "Bg7", "e3", "c5", "Bd3", "cxd4", "Nxd4", "Qa5+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

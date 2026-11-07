@@ -4,8 +4,11 @@ import { api } from "./api.js";
 import { Board, PIECE_SETS } from "./board.js";
 import { GameController } from "./game.js";
 import { initI18n, t } from "./i18n.js";
+import { initLayout } from "./layout.js";
 import { getPref, setPref } from "./prefs.js";
+import { SavedGames } from "./saved.js";
 import { SetupCard } from "./setup.js";
+import { initSoundControls } from "./sound.js";
 import { initTheme } from "./theme.js";
 
 /** @param {string} id */
@@ -24,6 +27,8 @@ function initPiecePicker(/** @type {Board} */ board) {
 async function main() {
   await initI18n(getPref("locale", "en"));
   initTheme(byId("theme-toggle"));
+  initLayout();
+  initSoundControls(byId("sound-toggle"), byId("sound-volume"), t);
 
   const savedSet = getPref("pieceSet", "cburnett");
   const pieceSet = PIECE_SETS.includes(savedSet) ? savedSet : "cburnett";
@@ -34,6 +39,9 @@ async function main() {
     {
       legalMoves: (square) => game.legalMoves(square),
       onMove: (from, to, promotion) => void game.onUserMove(from, to, promotion),
+      premoveTargets: (square) => game.premoveTargets(square),
+      onPremove: (from, to) => game.setPremove(from, to),
+      onPremoveCancel: () => game.clearPremove(),
     },
     pieceSet,
   );
@@ -56,9 +64,12 @@ async function main() {
       (chosen) => void game.start(chosen),
     );
     game.renderIdle(setup.color);
+    new SavedGames((key) => setup.timeLabelFor(key));
+    const { game: active } = await api.activeGame();
+    if (active) game.resume(active, setup.clockFor(active.setup.time_control));
     const buildTag = health.engine.build_tag ? ` (${health.engine.build_tag})` : "";
     byId("footer-versions").textContent =
-      `chess-trainer ${health.app_version} · ${health.engine.name}${buildTag}`;
+      `Chess Trainer ${health.app_version} · ${health.engine.name}${buildTag}`;
   } catch (error) {
     console.error(error);
     byId("setup-hint").textContent = t("setup.loadError");

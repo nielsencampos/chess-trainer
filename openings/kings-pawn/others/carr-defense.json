@@ -1,0 +1,35 @@
+{
+  "id": "carr-defense",
+  "names": {
+    "en": "Carr Defense",
+    "pt-BR": "Defesa Carr",
+    "es": "Defensa Carr"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-4e9697024db27ea7",
+      "names": {
+        "en": "Carr Defense",
+        "pt-BR": "Defesa Carr",
+        "es": "Defensa Carr"
+      },
+      "eco": "B00",
+      "opening": "Carr Defense",
+      "moves": ["e4", "h6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b7ef36ea6b584b12",
+      "names": {
+        "en": "Zilbermints Gambit",
+        "pt-BR": "Gambito Zilbermints",
+        "es": "Gambito Zilbermints"
+      },
+      "eco": "B00",
+      "opening": "Carr Defense: Zilbermints Gambit",
+      "moves": ["e4", "h6", "d4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

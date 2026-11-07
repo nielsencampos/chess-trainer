@@ -6,7 +6,7 @@ order that transposes back into a selected line is still theory.
 
 import io
 import random
-from collections.abc import Sequence
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from typing import Literal
@@ -63,6 +63,7 @@ class MoveRecord:
     in_theory: bool
     clock_ms_after: int | None
     think_ms: int | None
+    opening: tuple[str, str] | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -78,14 +79,27 @@ class GameResult:
     termination: str
 
 
+def _pgn_termination(termination: str) -> str:
+    if termination.startswith("timeout"):
+        return "Time forfeit"
+    return "Abandoned" if termination == "abandoned" else "Normal"
+
+
 def _pgn_time_control(control: TimeControl) -> str:
-    base_s = control.base_ms // 1000
-    increment_s = control.increment_ms // 1000
-    if control.moves_to_bonus is None:
-        return f"{base_s}+{increment_s}"
-    return (
-        f"{control.moves_to_bonus}/{base_s}+{increment_s}:{control.bonus_ms // 1000}+{increment_s}"
-    )
+    """Standard PGN for periods and increment. Delay has no standard form: d or us, in seconds."""
+    suffix = f"+{control.increment_ms // 1000}"
+    if control.delay_kind is not None:
+        marker = "us" if control.delay_kind == "us" else "d"
+        suffix = f"{marker}{control.delay_ms // 1000}"
+    parts = []
+    seconds = control.base_ms // 1000
+    played = 0
+    for period in control.periods:
+        parts.append(f"{period.after_moves - played}/{seconds}{suffix}")
+        played = period.after_moves
+        seconds = period.add_ms // 1000
+    parts.append(f"{seconds}{suffix}")
+    return ":".join(parts)
 
 
 class GameSession:
@@ -99,6 +113,8 @@ class GameSession:
         level: str,
         pace: str,
         rng: random.Random,
+        opening_names: Mapping[str, tuple[str, str]] | None = None,
+        engine_name: str = "Bot",
     ) -> None:
         if not selection.variants:
             raise ValueError("a game needs at least one selected variation")
@@ -110,6 +126,11 @@ class GameSession:
         self.level = level
         self.pace = pace
         self.rng = rng
+        self.opening_names = opening_names or {}
+        self.engine_name = engine_name
+        self.ui: dict[str, bool] = {}
+        self.user_clock_ms: int | None = None
+        self.bot_clock_ms: int | None = None
         self.board = chess.Board()
         self.started_at = datetime.now(UTC)
         self.moves: list[MoveRecord] = []
@@ -122,6 +143,11 @@ class GameSession:
     @property
     def ply(self) -> int:
         return len(self.moves)
+
+    @property
+    def opening(self) -> tuple[str, str] | None:
+        """(ECO, name) of the last named position reached in this game."""
+        return self.moves[-1].opening if self.moves else None
 
     @property
     def is_over(self) -> bool:
@@ -222,18 +248,22 @@ class GameSession:
         clock_ms_after: int | None,
         think_ms: int | None,
     ) -> MoveRecord:
+        ply = self.ply + 1
+        san = self.board.san(move)
+        fen_before = self.board.fen()
+        self.board.push(move)
         record = MoveRecord(
-            ply=self.ply + 1,
-            san=self.board.san(move),
+            ply=ply,
+            san=san,
             uci=move.uci(),
-            fen_before=self.board.fen(),
+            fen_before=fen_before,
             by=by,
             source=source,
             in_theory=self.in_theory,
             clock_ms_after=clock_ms_after,
             think_ms=think_ms,
+            opening=self.opening_names.get(self.board.epd(), self.opening),
         )
-        self.board.push(move)
         self.moves.append(record)
         if self.in_theory:
             self.theory_until_ply = record.ply
@@ -257,6 +287,11 @@ class GameSession:
             result = "win" if outcome.winner == self.user_color else "loss"
         self.outcome = GameResult(result, outcome.termination.name.lower())
 
+    def players(self) -> tuple[str, str]:
+        """(White, Black), as written in the PGN."""
+        bot = f"{self.engine_name} ({self.level})"
+        return ("You", bot) if self.user_color == chess.WHITE else (bot, "You")
+
     def result_tag(self) -> str:
         if self.outcome is None:
             return "*"
@@ -270,18 +305,27 @@ class GameSession:
         game.headers["Event"] = "chess-trainer"
         game.headers["Site"] = "local"
         game.headers["Date"] = self.started_at.strftime("%Y.%m.%d")
-        game.headers["White"] = "You" if self.user_color == chess.WHITE else "Bot"
-        game.headers["Black"] = "You" if self.user_color == chess.BLACK else "Bot"
+        game.headers["White"], game.headers["Black"] = self.players()
         game.headers["Result"] = self.result_tag()
-        if self.variant.eco:
-            game.headers["ECO"] = self.variant.eco
-        if self.variant.opening:
-            game.headers["Opening"] = self.variant.opening
+        eco, opening = self.opening or (self.variant.eco, self.variant.opening)
+        if eco:
+            game.headers["ECO"] = eco
+        if opening:
+            game.headers["Opening"] = opening
+        game.headers["VariantId"] = self.variant.variant_id
+        if self.outcome is not None:
+            game.headers["Termination"] = _pgn_termination(self.outcome.termination)
         if self.time_control is not None:
             game.headers["TimeControl"] = _pgn_time_control(self.time_control)
         node: chess.pgn.GameNode = game
+        deviations = {deviation.ply: deviation for deviation in self.deviations}
         for record in self.moves:
             node = node.add_variation(chess.Move.from_uci(record.uci))
+            deviation = deviations.get(record.ply)
+            if deviation is not None:
+                node.comment = f"Deviation: expected {', '.join(deviation.expected_san)}"
+            if record.clock_ms_after is not None:
+                node.set_clock(record.clock_ms_after / 1000)
         output = io.StringIO()
         print(game, file=output)
         return output.getvalue().strip()
