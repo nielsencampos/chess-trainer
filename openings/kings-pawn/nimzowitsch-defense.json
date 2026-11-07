@@ -1,0 +1,525 @@
+{
+  "id": "nimzowitsch-defense",
+  "names": {
+    "en": "Nimzowitsch Defense",
+    "pt-BR": "Defesa Nimzowitsch",
+    "es": "Defensa Nimzowitsch"
+  },
+  "order": 22,
+  "variants": [
+    {
+      "names": {
+        "en": "Scandinavian Variation"
+      },
+      "lines": [
+        {
+          "id": "line-cd4fd75837f3798b",
+          "names": {
+            "en": "Scandinavian Variation"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation",
+          "moves": ["e4", "Nc6", "d4", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f05c971c92eb63d5",
+          "names": {
+            "en": "Scandinavian Variation, Bogoljubow Variation"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation",
+          "moves": ["e4", "Nc6", "d4", "d5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f0b09a4d8a58f8ba",
+          "names": {
+            "en": "Scandinavian Variation, Bogoljubow Variation, Vehre Variation"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Vehre Variation",
+          "moves": ["e4", "Nc6", "d4", "d5", "Nc3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4b6929860ebbd2eb",
+          "names": {
+            "en": "Scandinavian Variation, Bogoljubow Variation, Brandics Gambit"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Brandics Gambit",
+          "moves": ["e4", "Nc6", "d4", "d5", "Nc3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-628d2eb68288b859",
+          "names": {
+            "en": "Scandinavian Variation, Bogoljubow Variation"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation",
+          "moves": ["e4", "Nc6", "d4", "d5", "Nc3", "dxe4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e336318b9b0bea63",
+          "names": {
+            "en": "Scandinavian Variation, Bogoljubow Variation, Richter Gambit"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Richter Gambit",
+          "moves": ["e4", "Nc6", "d4", "d5", "Nc3", "dxe4", "d5", "Nb8", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5a2ccb358977d948",
+          "names": {
+            "en": "Scandinavian Variation, Bogoljubow Variation, Nimzowitsch Gambit"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Nimzowitsch Gambit",
+          "moves": ["e4", "Nc6", "d4", "d5", "Nc3", "dxe4", "d5", "Ne5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-457dc94573cb4093",
+          "names": {
+            "en": "Scandinavian Variation, Bogoljubow Variation, Heinola-Deppe Gambit"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Heinola-Deppe Gambit",
+          "moves": ["e4", "Nc6", "d4", "d5", "Nc3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5e2c095357de136e",
+          "names": {
+            "en": "Scandinavian Variation, Bogoljubow Variation, Erben Gambit"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Erben Gambit",
+          "moves": ["e4", "Nc6", "d4", "d5", "Nc3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-efc13a27cdd6e55c",
+          "names": {
+            "en": "Scandinavian Variation, Advance Variation"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Advance Variation",
+          "moves": ["e4", "Nc6", "d4", "d5", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2aa6f00d3dadd16b",
+          "names": {
+            "en": "Scandinavian Variation, Aachen Gambit"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Aachen Gambit",
+          "moves": ["e4", "Nc6", "d4", "d5", "exd5", "Nb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6371840f92f19ecb",
+          "names": {
+            "en": "Scandinavian Variation, Exchange Variation"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Exchange Variation",
+          "moves": ["e4", "Nc6", "d4", "d5", "exd5", "Qxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a4a2fa3f11cc756a",
+          "names": {
+            "en": "Scandinavian Variation, Exchange Variation, Marshall Gambit"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Scandinavian Variation, Exchange Variation, Marshall Gambit",
+          "moves": ["e4", "Nc6", "d4", "d5", "exd5", "Qxd5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Kennedy Variation",
+        "pt-BR": "Variação Kennedy",
+        "es": "Variante Kennedy"
+      },
+      "lines": [
+        {
+          "id": "line-0c48056e56805bc9",
+          "names": {
+            "en": "Kennedy Variation",
+            "pt-BR": "Variação Kennedy",
+            "es": "Variante Kennedy"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Kennedy Variation",
+          "moves": ["e4", "Nc6", "d4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3ddb594d5da25c15",
+          "names": {
+            "en": "Kennedy Variation, Linksspringer Variation",
+            "pt-BR": "Variação Kennedy, Variação Linksspringer",
+            "es": "Variante Kennedy, Variante Linksspringer"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Kennedy Variation, Linksspringer Variation",
+          "moves": ["e4", "Nc6", "d4", "e5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c88653c38693fb67",
+          "names": {
+            "en": "Kennedy Variation, Bielefelder Gambit",
+            "pt-BR": "Variação Kennedy, Gambito Bielefelder",
+            "es": "Variante Kennedy, Gambito Bielefelder"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Kennedy Variation, Bielefelder Gambit",
+          "moves": ["e4", "Nc6", "d4", "e5", "dxe5", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-58635dc866761219",
+          "names": {
+            "en": "Kennedy Variation, Keres Attack",
+            "pt-BR": "Variação Kennedy, Ataque Keres",
+            "es": "Variante Kennedy, Ataque Keres"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Kennedy Variation, Keres Attack",
+          "moves": ["e4", "Nc6", "d4", "e5", "dxe5", "Nxe5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-53703baf83b9430a",
+          "names": {
+            "en": "Kennedy Variation, Paulsen Attack",
+            "pt-BR": "Variação Kennedy, Ataque Paulsen",
+            "es": "Variante Kennedy, Ataque Paulsen"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Kennedy Variation, Paulsen Attack",
+          "moves": ["e4", "Nc6", "d4", "e5", "dxe5", "Nxe5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5bbfa84859761c67",
+          "names": {
+            "en": "Kennedy Variation, Riemann Defense",
+            "pt-BR": "Variação Kennedy, Defesa Riemann",
+            "es": "Variante Kennedy, Defensa Riemann"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Kennedy Variation, Riemann Defense",
+          "moves": ["e4", "Nc6", "d4", "e5", "dxe5", "Nxe5", "f4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f766714ce3ac6bbb",
+          "names": {
+            "en": "Kennedy Variation, Main Line",
+            "pt-BR": "Variação Kennedy, Linha Principal",
+            "es": "Variante Kennedy, Línea Principal"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Kennedy Variation, Main Line",
+          "moves": ["e4", "Nc6", "d4", "e5", "dxe5", "Nxe5", "f4", "Ng6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e7e8be213afd6970",
+          "names": {
+            "en": "Kennedy Variation, Herford Gambit",
+            "pt-BR": "Variação Kennedy, Gambito Herford",
+            "es": "Variante Kennedy, Gambito Herford"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Kennedy Variation, Herford Gambit",
+          "moves": ["e4", "Nc6", "d4", "e5", "dxe5", "Qh4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-66117763748c18f5",
+          "names": {
+            "en": "Kennedy Variation, de Smet Gambit"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Kennedy Variation, de Smet Gambit",
+          "moves": ["e4", "Nc6", "d4", "e5", "dxe5", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6beca9f6c4a7245b",
+          "names": {
+            "en": "Kennedy Variation, Hammer Gambit",
+            "pt-BR": "Variação Kennedy, Gambito Hammer",
+            "es": "Variante Kennedy, Gambito Hammer"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: Kennedy Variation, Hammer Gambit",
+          "moves": ["e4", "Nc6", "d4", "e5", "dxe5", "f6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "El Columpio Defense",
+        "pt-BR": "Defesa El Columpio",
+        "es": "Defensa El Columpio"
+      },
+      "lines": [
+        {
+          "id": "line-91f2d3fac3631e40",
+          "names": {
+            "en": "El Columpio Defense",
+            "pt-BR": "Defesa El Columpio",
+            "es": "Defensa El Columpio"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: El Columpio Defense",
+          "moves": ["e4", "Nc6", "Nf3", "Nf6", "e5", "Ng4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-632b4e7ccca219b1",
+          "names": {
+            "en": "El Columpio Defense, Pin Variation",
+            "pt-BR": "Defesa El Columpio, Variação Pin",
+            "es": "Defensa El Columpio, Variante Pin"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: El Columpio Defense, Pin Variation",
+          "moves": ["e4", "Nc6", "Nf3", "Nf6", "e5", "Ng4", "d4", "d6", "h3", "Nh6", "Bb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b4877f70f63e1a58",
+          "names": {
+            "en": "El Columpio Defense, El Columpio Gambit",
+            "pt-BR": "Defesa El Columpio, Gambito El Columpio",
+            "es": "Defensa El Columpio, Gambito El Columpio"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: El Columpio Defense, El Columpio Gambit",
+          "moves": ["e4", "Nc6", "Nf3", "Nf6", "e5", "Ng4", "d4", "d6", "h3", "Nh6", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-37e41d8fa9ca3428",
+          "names": {
+            "en": "El Columpio Defense, Exchange Variation",
+            "pt-BR": "Defesa El Columpio, Variação da Troca",
+            "es": "Defensa El Columpio, Variante del Cambio"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense: El Columpio Defense, Exchange Variation",
+          "moves": ["e4", "Nc6", "Nf3", "Nf6", "e5", "Ng4", "d4", "d6", "h3", "Nh6", "exd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Main",
+        "pt-BR": "Principal",
+        "es": "Principal"
+      },
+      "lines": [
+        {
+          "id": "line-c42763f5d13fe66b",
+          "names": {
+            "en": "Nimzowitsch Defense",
+            "pt-BR": "Defesa Nimzowitsch",
+            "es": "Defensa Nimzowitsch"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense",
+          "moves": ["e4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-41cd21d4442a3b4d",
+          "names": {
+            "en": "Nimzowitsch Defense",
+            "pt-BR": "Defesa Nimzowitsch",
+            "es": "Defensa Nimzowitsch"
+          },
+          "eco": "B00",
+          "opening": "Nimzowitsch Defense",
+          "moves": ["e4", "Nc6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-cba79f96568ec575",
+      "names": {
+        "en": "Breyer Variation",
+        "pt-BR": "Variação Breyer",
+        "es": "Variante Breyer"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Breyer Variation",
+      "moves": ["e4", "Nc6", "Nc3", "Nf6", "d4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3b5b47ce2b4b5605",
+      "names": {
+        "en": "Colorado Countergambit",
+        "pt-BR": "Contragambito Colorado",
+        "es": "Contragambito Colorado"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Colorado Countergambit",
+      "moves": ["e4", "Nc6", "Nf3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-be581b37f1549609",
+      "names": {
+        "en": "Colorado Countergambit Accepted"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Colorado Countergambit Accepted",
+      "moves": ["e4", "Nc6", "Nf3", "f5", "exf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0570244fe4dac56a",
+      "names": {
+        "en": "Declined Variation"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Declined Variation",
+      "moves": ["e4", "Nc6", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-83415d5448ccd3a6",
+      "names": {
+        "en": "Franco-Nimzowitsch Variation",
+        "pt-BR": "Variação Franco-Nimzowitsch",
+        "es": "Variante Franco-Nimzowitsch"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Franco-Nimzowitsch Variation",
+      "moves": ["e4", "Nc6", "Nf3", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-294313a2d6dab627",
+      "names": {
+        "en": "French Connection"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: French Connection",
+      "moves": ["e4", "Nc6", "Nc3", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3603ce8dcd6d8a7f",
+      "names": {
+        "en": "Hornung Gambit",
+        "pt-BR": "Gambito Hornung",
+        "es": "Gambito Hornung"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Hornung Gambit",
+      "moves": ["e4", "Nc6", "d4", "d5", "Be3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e0c2ab6c68cce7a1",
+      "names": {
+        "en": "Mikenas Variation",
+        "pt-BR": "Variação Mikenas",
+        "es": "Variante Mikenas"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Mikenas Variation",
+      "moves": ["e4", "Nc6", "d4", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4d6bfefce2aebfe3",
+      "names": {
+        "en": "Neo-Mongoloid Defense",
+        "pt-BR": "Defesa Neo-Mongoloid",
+        "es": "Defensa Neo-Mongoloid"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Neo-Mongoloid Defense",
+      "moves": ["e4", "Nc6", "d4", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e0369414565c0377",
+      "names": {
+        "en": "Pirc Connection"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Pirc Connection",
+      "moves": ["e4", "Nc6", "Nc3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-be7434b4bdf8c6ec",
+      "names": {
+        "en": "Pseudo-Spanish Variation"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Pseudo-Spanish Variation",
+      "moves": ["e4", "Nc6", "Bb5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a0fc3779873a7d0b",
+      "names": {
+        "en": "Wheeler Gambit",
+        "pt-BR": "Gambito Wheeler",
+        "es": "Gambito Wheeler"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Wheeler Gambit",
+      "moves": ["e4", "Nc6", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0f19327e3d24f0ea",
+      "names": {
+        "en": "Williams Variation",
+        "pt-BR": "Variação Williams",
+        "es": "Variante Williams"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Williams Variation",
+      "moves": ["e4", "Nc6", "Nf3", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-abf811c31f22648f",
+      "names": {
+        "en": "Woodchuck Variation",
+        "pt-BR": "Variação Woodchuck",
+        "es": "Variante Woodchuck"
+      },
+      "eco": "B00",
+      "opening": "Nimzowitsch Defense: Woodchuck Variation",
+      "moves": ["e4", "Nc6", "d4", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

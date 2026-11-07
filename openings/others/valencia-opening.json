@@ -1,0 +1,23 @@
+{
+  "id": "valencia-opening",
+  "names": {
+    "en": "Valencia Opening",
+    "pt-BR": "Abertura Valencia",
+    "es": "Apertura Valencia"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-783de1bb56ea2806",
+      "names": {
+        "en": "Valencia Opening",
+        "pt-BR": "Abertura Valencia",
+        "es": "Apertura Valencia"
+      },
+      "eco": "A00",
+      "opening": "Valencia Opening",
+      "moves": ["d3", "e5", "Nd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

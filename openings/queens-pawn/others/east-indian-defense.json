@@ -1,0 +1,19 @@
+{
+  "id": "east-indian-defense",
+  "names": {
+    "en": "East Indian Defense"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-af22f6fd5e87ad25",
+      "names": {
+        "en": "East Indian Defense"
+      },
+      "eco": "A48",
+      "opening": "East Indian Defense",
+      "moves": ["d4", "Nf6", "Nf3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

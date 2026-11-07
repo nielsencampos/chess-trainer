@@ -1,0 +1,33 @@
+{
+  "id": "anderssen-s-opening",
+  "names": {
+    "en": "Anderssen's Opening",
+    "pt-BR": "Abertura Anderssen's",
+    "es": "Apertura Anderssen's"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-7ecfaf619cdb0064",
+      "names": {
+        "en": "Anderssen's Opening",
+        "pt-BR": "Abertura Anderssen's",
+        "es": "Apertura Anderssen's"
+      },
+      "eco": "A00",
+      "opening": "Anderssen's Opening",
+      "moves": ["a3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b7c194763ee6c6d5",
+      "names": {
+        "en": "Polish Gambit"
+      },
+      "eco": "A00",
+      "opening": "Anderssen's Opening: Polish Gambit",
+      "moves": ["a3", "a5", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

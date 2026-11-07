@@ -1,0 +1,19 @@
+{
+  "id": "fried-fox-defense",
+  "names": {
+    "en": "Fried Fox Defense"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-4d13752bd010c668",
+      "names": {
+        "en": "Fried Fox Defense"
+      },
+      "eco": "B00",
+      "opening": "Fried Fox Defense",
+      "moves": ["e4", "f6", "d4", "Kf7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

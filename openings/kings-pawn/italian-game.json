@@ -1,0 +1,2143 @@
+{
+  "id": "italian-game",
+  "names": {
+    "en": "Italian Game",
+    "pt-BR": "Abertura Italiana",
+    "es": "Apertura Italiana"
+  },
+  "order": 5,
+  "variants": [
+    {
+      "names": {
+        "en": "Two Knights Defense",
+        "pt-BR": "Defesa dos Dois Cavalos",
+        "es": "Defensa de los Dos Caballos"
+      },
+      "lines": [
+        {
+          "id": "line-7b05cf9446eafdc9",
+          "names": {
+            "en": "Two Knights Defense",
+            "pt-BR": "Defesa dos Dois Cavalos",
+            "es": "Defensa de los Dos Caballos"
+          },
+          "eco": "C55",
+          "opening": "Italian Game: Two Knights Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a7939989bbbb22d2",
+          "names": {
+            "en": "Two Knights Defense",
+            "pt-BR": "Defesa dos Dois Cavalos",
+            "es": "Defensa de los Dos Caballos"
+          },
+          "eco": "C55",
+          "opening": "Italian Game: Two Knights Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Nc3", "Nxe4", "Nxe4", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8d284d46b761ca0f",
+          "names": {
+            "en": "Two Knights Defense, Knight Attack"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Knight Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-74055feb1aa8fffe",
+          "names": {
+            "en": "Two Knights Defense, Traxler Counterattack"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Traxler Counterattack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c5abe009f619b25b",
+          "names": {
+            "en": "Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "Bc5", "Bxf7+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9e218e10e712c762",
+          "names": {
+            "en": "Two Knights Defense, Traxler Variation, Trencianske-Teplice Gambit",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Traxler, Gambito Trencianske-Teplice",
+            "es": "Defensa de los Dos Caballos, Variante Traxler, Gambito Trencianske-Teplice"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Traxler Variation, Trencianske-Teplice Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "Bc5", "Bxf7+", "Ke7", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ac7dc24bc7a4a0e4",
+          "names": {
+            "en": "Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "Bc5", "Nxf7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9e6fc3af6d0aff8d",
+          "names": {
+            "en": "Two Knights Defense, Traxler Counterattack, King March Line"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Traxler Counterattack, King March Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "Bc5", "Nxf7", "Bxf2+", "Kxf2", "Nxe4+", "Ke3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-269d072fddc91578",
+          "names": {
+            "en": "Two Knights Defense, Ponziani-Steinitz Gambit",
+            "pt-BR": "Defesa dos Dois Cavalos, Gambito Ponziani-Steinitz",
+            "es": "Defensa de los Dos Caballos, Gambito Ponziani-Steinitz"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Ponziani-Steinitz Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "Nxe4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ca380c957d3875e0",
+          "names": {
+            "en": "Two Knights Defense, Knight Attack, Normal Variation"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Knight Attack, Normal Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7ebe9964f8cbab4e",
+          "names": {
+            "en": "Two Knights Defense, Polerio Defense",
+            "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio",
+            "es": "Defensa de los Dos Caballos, Defensa Polerio"
+          },
+          "eco": "C58",
+          "opening": "Italian Game: Two Knights Defense, Polerio Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1b83d25529fcdce1",
+          "names": {
+            "en": "Two Knights Defense, Polerio Defense, Bishop Check Line"
+          },
+          "eco": "C58",
+          "opening": "Italian Game: Two Knights Defense, Polerio Defense, Bishop Check Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "Bb5+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e0034ef490d15d67",
+          "names": {
+            "en": "Two Knights Defense",
+            "pt-BR": "Defesa dos Dois Cavalos",
+            "es": "Defensa de los Dos Caballos"
+          },
+          "eco": "C58",
+          "opening": "Italian Game: Two Knights Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "Bb5+", "c6", "dxc6", "bxc6", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5af2eee6ad891f72",
+          "names": {
+            "en": "Two Knights Defense, Polerio Defense, Suhle Defense",
+            "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Defesa Suhle",
+            "es": "Defensa de los Dos Caballos, Defensa Polerio, Defensa Suhle"
+          },
+          "eco": "C59",
+          "opening": "Italian Game: Two Knights Defense, Polerio Defense, Suhle Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "Bb5+", "c6", "dxc6", "bxc6", "Be2", "h6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-80ed3b008a28e175",
+          "names": {
+            "en": "Two Knights Defense, Knorre Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Knorre",
+            "es": "Defensa de los Dos Caballos, Variante Knorre"
+          },
+          "eco": "C59",
+          "opening": "Italian Game: Two Knights Defense, Knorre Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "Bb5+", "c6", "dxc6", "bxc6", "Be2", "h6", "Nf3", "e4", "Ne5", "Bd6", "d4", "Qc7", "Bd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-35d1b1e9aafddd88",
+          "names": {
+            "en": "Two Knights Defense, Polerio Defense, Göring Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Variação Göring",
+            "es": "Defensa de los Dos Caballos, Defensa Polerio, Variante Göring"
+          },
+          "eco": "C59",
+          "opening": "Italian Game: Two Knights Defense, Polerio Defense, Göring Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "Bb5+", "c6", "dxc6", "bxc6", "Be2", "h6", "Nf3", "e4", "Ne5", "Qc7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d9a061268aff965a",
+          "names": {
+            "en": "Two Knights Defense, Steinitz Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Steinitz",
+            "es": "Defensa de los Dos Caballos, Variante Steinitz"
+          },
+          "eco": "C59",
+          "opening": "Italian Game: Two Knights Defense, Steinitz Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "Bb5+", "c6", "dxc6", "bxc6", "Be2", "h6", "Nh3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a42cd26f5e152854",
+          "names": {
+            "en": "Two Knights Defense, Polerio Defense, Bogoljubow Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Variação Bogoljubow",
+            "es": "Defensa de los Dos Caballos, Defensa Polerio, Variante Bogoljubow"
+          },
+          "eco": "C58",
+          "opening": "Italian Game: Two Knights Defense, Polerio Defense, Bogoljubow Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "Bb5+", "c6", "dxc6", "bxc6", "Qf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eb5b32077939f5e2",
+          "names": {
+            "en": "Two Knights Defense, Paoli Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Paoli",
+            "es": "Defensa de los Dos Caballos, Variante Paoli"
+          },
+          "eco": "C58",
+          "opening": "Italian Game: Two Knights Defense, Paoli Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "Bb5+", "c6", "dxc6", "bxc6", "Qf3", "Qc7", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b27c875d5b96a874",
+          "names": {
+            "en": "Two Knights Defense, Colman Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Colman",
+            "es": "Defensa de los Dos Caballos, Variante Colman"
+          },
+          "eco": "C58",
+          "opening": "Italian Game: Two Knights Defense, Colman Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "Bb5+", "c6", "dxc6", "bxc6", "Qf3", "Rb8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-03875176e3a8526f",
+          "names": {
+            "en": "Two Knights Defense, Blackburne Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Blackburne",
+            "es": "Defensa de los Dos Caballos, Variante Blackburne"
+          },
+          "eco": "C58",
+          "opening": "Italian Game: Two Knights Defense, Blackburne Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "Bb5+", "c6", "dxc6", "bxc6", "Qf3", "cxb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-65cf9f8c74e1bdd2",
+          "names": {
+            "en": "Two Knights Defense, Polerio Defense, Kieseritzky Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Variação Kieseritzky",
+            "es": "Defensa de los Dos Caballos, Defensa Polerio, Variante Kieseritzky"
+          },
+          "eco": "C58",
+          "opening": "Italian Game: Two Knights Defense, Polerio Defense, Kieseritzky Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a696b8c0e4fb2897",
+          "names": {
+            "en": "Two Knights Defense, Polerio Defense, Yankovich Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Variação Yankovich",
+            "es": "Defensa de los Dos Caballos, Defensa Polerio, Variante Yankovich"
+          },
+          "eco": "C58",
+          "opening": "Italian Game: Two Knights Defense, Polerio Defense, Yankovich Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "d3", "h6", "Nf3", "e4", "Qe2", "Nxc4", "dxc4", "Bc5", "Nfd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-095cefc34d76f6e3",
+          "names": {
+            "en": "Two Knights Defense, Maróczy Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Maróczy",
+            "es": "Defensa de los Dos Caballos, Variante Maróczy"
+          },
+          "eco": "C58",
+          "opening": "Italian Game: Two Knights Defense, Maróczy Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Na5", "d3", "h6", "Nf3", "e4", "Qe2", "Nxc4", "dxc4", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a3d189dff965e581",
+          "names": {
+            "en": "Two Knights Defense, Kloss Gambit",
+            "pt-BR": "Defesa dos Dois Cavalos, Gambito Kloss",
+            "es": "Defensa de los Dos Caballos, Gambito Kloss"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Kloss Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Nb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9f8bb31652c1641c",
+          "names": {
+            "en": "Two Knights Defense, Fritz Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Fritz",
+            "es": "Defensa de los Dos Caballos, Variante Fritz"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Fritz Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Nd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-22c8d095c971c94d",
+          "names": {
+            "en": "Two Knights Defense, Fritz, Gruber Variation"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Fritz, Gruber Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Nd4", "c3", "b5", "Bf1", "Nxd5", "Ne4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-28118d0b26549d3e",
+          "names": {
+            "en": "Two Knights Defense, Fried Liver Attack",
+            "pt-BR": "Defesa dos Dois Cavalos, Ataque Fried Liver",
+            "es": "Defensa de los Dos Caballos, Ataque Fried Liver"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Fried Liver Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Nxd5", "Nxf7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c7421bf756d9926a",
+          "names": {
+            "en": "Two Knights Defense, Fegatello Attack, Leonhardt Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Ataque Fegatello, Variação Leonhardt",
+            "es": "Defensa de los Dos Caballos, Ataque Fegatello, Variante Leonhardt"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Fegatello Attack, Leonhardt Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Nxd5", "Nxf7", "Kxf7", "Qf3+", "Ke6", "Nc3", "Nb4", "Qe4", "c6", "a3", "Na6", "d4", "Nc7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a9fbc0797b619c01",
+          "names": {
+            "en": "Two Knights Defense, Lolli Attack",
+            "pt-BR": "Defesa dos Dois Cavalos, Ataque Lolli",
+            "es": "Defensa de los Dos Caballos, Ataque Lolli"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Lolli Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Nxd5", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4172e24af11e3075",
+          "names": {
+            "en": "Two Knights Defense, Pincus Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Pincus",
+            "es": "Defensa de los Dos Caballos, Variante Pincus"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Pincus Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Nxd5", "d4", "Bb4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-929545e80732f242",
+          "names": {
+            "en": "Two Knights Defense, Ulvestad Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Ulvestad",
+            "es": "Defensa de los Dos Caballos, Variante Ulvestad"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Ulvestad Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f7c2bfcef72a7331",
+          "names": {
+            "en": "Two Knights Defense, Ulvestad Variation, Kurkin Gambit",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Ulvestad, Gambito Kurkin",
+            "es": "Defensa de los Dos Caballos, Variante Ulvestad, Gambito Kurkin"
+          },
+          "eco": "C57",
+          "opening": "Italian Game: Two Knights Defense, Ulvestad Variation, Kurkin Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "b5", "Bf1", "h6", "Nxf7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-97f3949ed77e5b1f",
+          "names": {
+            "en": "Two Knights Defense",
+            "pt-BR": "Defesa dos Dois Cavalos",
+            "es": "Defensa de los Dos Caballos"
+          },
+          "eco": "C55",
+          "opening": "Italian Game: Two Knights Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "O-O", "Bc5", "d4", "Bxd4", "Nxd4", "Nxd4", "Bg5", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b9e7d38dccb3d11a",
+          "names": {
+            "en": "Two Knights Defense, Modern Bishop's Opening"
+          },
+          "eco": "C55",
+          "opening": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eae69efa7261b24d",
+          "names": {
+            "en": "Two Knights Defense, Modern Bishop's Opening"
+          },
+          "eco": "C55",
+          "opening": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d3", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b13be2d62ab7ff50",
+          "names": {
+            "en": "Two Knights Defense, Modern Bishop's Opening"
+          },
+          "eco": "C55",
+          "opening": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d3", "h6", "O-O", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-522f637b9ed026f7",
+          "names": {
+            "en": "Two Knights Defense, Open Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Aberta",
+            "es": "Defensa de los Dos Caballos, Variante Abierta"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Two Knights Defense, Open Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1943306cac423756",
+          "names": {
+            "en": "Two Knights Defense, Perreux Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Perreux",
+            "es": "Defensa de los Dos Caballos, Variante Perreux"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Two Knights Defense, Perreux Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "Ng5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-69509bb1d4dd3e42",
+          "names": {
+            "en": "Two Knights Defense, Max Lange Attack, Krause Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Ataque Max Lange, Variação Krause",
+            "es": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Krause"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Krause Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "O-O", "Bc5", "e5", "Ng4", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a97a201652fb456a",
+          "names": {
+            "en": "Two Knights Defense, Max Lange Attack, Rubinstein Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Ataque Max Lange, Variação Rubinstein",
+            "es": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Rubinstein"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Rubinstein Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "O-O", "Bc5", "e5", "d5", "exf6", "dxc4", "Re1+", "Be6", "Ng5", "Qd5", "Nc3", "Qf5", "Nce4", "Bf8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1eb03bc76867af2a",
+          "names": {
+            "en": "Two Knights Defense, Max Lange Attack, Berger Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Ataque Max Lange, Variação Berger",
+            "es": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Berger"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Berger Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "O-O", "Bc5", "e5", "d5", "exf6", "dxc4", "Re1+", "Be6", "Ng5", "Qd5", "Nc3", "Qf5", "g4", "Qg6", "Nce4", "Bb6", "f4", "O-O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4ca98cf73196de46",
+          "names": {
+            "en": "Two Knights Defense, Keidansky Variation",
+            "pt-BR": "Defesa dos Dois Cavalos, Variação Keidansky",
+            "es": "Defensa de los Dos Caballos, Variante Keidansky"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Two Knights Defense, Keidansky Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "e5", "d5", "Bb5", "Ne4", "Nxd4", "Bc5", "Nxc6", "Bxf2+", "Kf1", "Qh4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-91cc850d5958e902",
+          "names": {
+            "en": "Two Knights Defense, Max Lange Attack, Loman Defense",
+            "pt-BR": "Defesa dos Dois Cavalos, Ataque Max Lange, Defesa Loman",
+            "es": "Defensa de los Dos Caballos, Ataque Max Lange, Defensa Loman"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Loman Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Bc5", "O-O", "Nf6", "e5", "d5", "exf6", "dxc4", "Re1+", "Be6", "Ng5", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-200a4d63bbd0a20a",
+          "names": {
+            "en": "Two Knights Defense, Max Lange Attack",
+            "pt-BR": "Defesa dos Dois Cavalos, Ataque Max Lange",
+            "es": "Defensa de los Dos Caballos, Ataque Max Lange"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Two Knights Defense, Max Lange Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Nf6", "O-O", "Bc5", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-be420e7e87202a55",
+          "names": {
+            "en": "Two Knights Defense, Yurdansky Attack",
+            "pt-BR": "Defesa dos Dois Cavalos, Ataque Yurdansky",
+            "es": "Defensa de los Dos Caballos, Ataque Yurdansky"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Two Knights Defense, Yurdansky Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Nf6", "O-O", "Nxe4", "Re1", "d5", "Bxd5", "Qxd5", "Nc3", "Qa5", "Nxe4", "Be6", "Bg5", "h6", "Bh4", "g5", "Nf6+", "Ke7", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Classical Variation",
+        "pt-BR": "Variação Clássica",
+        "es": "Variante Clásica"
+      },
+      "lines": [
+        {
+          "id": "line-c95031e36bab1bca",
+          "names": {
+            "en": "Classical Variation, Albin Gambit",
+            "pt-BR": "Variação Clássica, Gambito Albin",
+            "es": "Variante Clásica, Gambito Albin"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Classical Variation, Albin Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4de60f5bfaa402b4",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "O-O", "c3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8e0518e46ac5d588",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo, with a5"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a5",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "a5", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-75975ce3be525b80",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-42fd0757e4ed17f2",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "Bb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9e2cd5018a7b0d2b",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bef93a610cdd9c43",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fba1dfac840909d0",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5271c92b4d9f803d",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "a6", "Re1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8c7cebdb88ecdb19",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "a6", "Re1", "Ba7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6b29bd26a6ab2bb4",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "a6", "a4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fae99720e3be5319",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "a6", "a4", "Ba7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c3b556f8bc48372e",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "a6", "a4", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-09d37e44da9cde40",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo, with h6"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with h6",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "h6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fcf3a244480da7a3",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "h6", "Nbd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c7361527ac0b6a99",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "d6", "c3", "h6", "Re1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b2f446fed741acae",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d3", "h6", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-43da6eda081ae301",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "C53",
+          "opening": "Italian Game: Classical Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c4dff4b92727f3fa",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2be06894d8a8935d",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d15fb005ce63db6f",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo, with a6"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a6",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-810de248c7663e5c",
+          "names": {
+            "en": "Classical Variation, with d5"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, with d5",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-21cd630f4f06c3ff",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-877a2a41762b215c",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d3", "d6", "Nbd2", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-af43997229f9b69e",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo, with a6"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a6",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d3", "d6", "Nbd2", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1fe955ee37480fca",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo, Main Line"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, Main Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d3", "d6", "O-O", "O-O", "Re1", "a6", "Bb3", "Ba7", "h3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-be9bf55d5915e98c",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo, with a4 a5"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a4 a5",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d3", "d6", "O-O", "O-O", "a4", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5c8606caa5e75c8a",
+          "names": {
+            "en": "Classical Variation, Giuoco Pianissimo, Albin Variation"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, Albin Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d3", "d6", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f73cb7044c6806e7",
+          "names": {
+            "en": "Classical Variation, Center Attack"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Center Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7e08609551931a52",
+          "names": {
+            "en": "Classical Variation, Greco Gambit, Dubov Italian"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Greco Gambit, Dubov Italian",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-57e4b673094638f6",
+          "names": {
+            "en": "Classical Variation, Greco Gambit, Traditional Line",
+            "pt-BR": "Variação Clássica, Gambito Greco, Linha Traditional",
+            "es": "Variante Clásica, Gambito Greco, Línea Traditional"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Greco Gambit, Traditional Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3d2dcbf8a60c5395",
+          "names": {
+            "en": "Classical Variation, Greco Gambit, Main Line",
+            "pt-BR": "Variação Clássica, Gambito Greco, Linha Principal",
+            "es": "Variante Clásica, Gambito Greco, Línea Principal"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Greco Gambit, Main Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Nc3", "Nxe4", "O-O", "Bxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a119969db711b49d",
+          "names": {
+            "en": "Classical Variation, Greco Gambit, Moeller-Therkatz Attack",
+            "pt-BR": "Variação Clássica, Gambito Greco, Ataque Moeller-Therkatz",
+            "es": "Variante Clásica, Gambito Greco, Ataque Moeller-Therkatz"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Greco Gambit, Moeller-Therkatz Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Nc3", "Nxe4", "O-O", "Bxc3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-334dcdcc6639e9c2",
+          "names": {
+            "en": "Classical Variation, Greco Gambit, Moeller-Bayonet Attack",
+            "pt-BR": "Variação Clássica, Gambito Greco, Ataque Moeller-Bayonet",
+            "es": "Variante Clásica, Gambito Greco, Ataque Moeller-Bayonet"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Greco Gambit, Moeller-Bayonet Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Nc3", "Nxe4", "O-O", "Bxc3", "d5", "Bf6", "Re1", "Ne7", "Rxe4", "d6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a2e7c9c4f9a89e0a",
+          "names": {
+            "en": "Classical Variation, Greco Gambit, Greco Variation",
+            "pt-BR": "Variação Clássica, Gambito Greco, Variação Greco",
+            "es": "Variante Clásica, Gambito Greco, Variante Greco"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Greco Gambit, Greco Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Nc3", "Nxe4", "O-O", "Nxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0f4f088fcec3df6a",
+          "names": {
+            "en": "Classical Variation, Greco Gambit, Modern Line"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Greco Gambit, Modern Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-68710104a6ef117e",
+          "names": {
+            "en": "Classical Variation, Ghulam-Kassim Variation",
+            "pt-BR": "Variação Clássica, Variação Ghulam-Kassim",
+            "es": "Variante Clásica, Variante Ghulam-Kassim"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Ghulam-Kassim Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "e5", "Ne4", "Bd5", "Nxf2", "Kxf2", "dxc3+", "Kg3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f39c3cbb266990d0",
+          "names": {
+            "en": "Classical Variation, Greco Gambit, Modern Line"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Greco Gambit, Modern Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "e5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4373bcea5273f79f",
+          "names": {
+            "en": "Classical Variation, Greco Gambit, Anderssen Variation",
+            "pt-BR": "Variação Clássica, Gambito Greco, Variação Anderssen",
+            "es": "Variante Clásica, Gambito Greco, Variante Anderssen"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Classical Variation, Greco Gambit, Anderssen Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "e5", "d5", "Bb5", "Ne4", "cxd4", "Bb4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f5eb7346117e90d9",
+          "names": {
+            "en": "Classical Variation, Closed Variation",
+            "pt-BR": "Variação Clássica, Variação Fechada",
+            "es": "Variante Clásica, Variante Cerrada"
+          },
+          "eco": "C53",
+          "opening": "Italian Game: Classical Variation, Closed Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Qe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-da0c6624cb39c957",
+          "names": {
+            "en": "Classical Variation, Center Holding Variation"
+          },
+          "eco": "C53",
+          "opening": "Italian Game: Classical Variation, Center Holding Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Qe7", "d4", "Bb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-46780047e185447c",
+          "names": {
+            "en": "Classical Variation, Mestel Variation",
+            "pt-BR": "Variação Clássica, Variação Mestel",
+            "es": "Variante Clásica, Variante Mestel"
+          },
+          "eco": "C53",
+          "opening": "Italian Game: Classical Variation, Mestel Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Qe7", "d4", "Bb6", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-42d1c46af6298d5c",
+          "names": {
+            "en": "Classical Variation, Tarrasch Variation",
+            "pt-BR": "Variação Clássica, Variação Tarrasch",
+            "es": "Variante Clásica, Variante Tarrasch"
+          },
+          "eco": "C53",
+          "opening": "Italian Game: Classical Variation, Tarrasch Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Qe7", "d4", "Bb6", "O-O", "d6", "a4", "a6", "h3", "Nf6", "Re1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-779e2a404b7d049f",
+          "names": {
+            "en": "Classical Variation, Eisinger Variation",
+            "pt-BR": "Variação Clássica, Variação Eisinger",
+            "es": "Variante Clásica, Variante Eisinger"
+          },
+          "eco": "C53",
+          "opening": "Italian Game: Classical Variation, Eisinger Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Qe7", "d4", "Bb6", "d5", "Nb8", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-522446fdd5f2f3ff",
+          "names": {
+            "en": "Classical Variation, La Bourdonnais Variation",
+            "pt-BR": "Variação Clássica, Variação La Bourdonnais",
+            "es": "Variante Clásica, Variante La Bourdonnais"
+          },
+          "eco": "C53",
+          "opening": "Italian Game: Classical Variation, La Bourdonnais Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "d6", "d4", "exd4", "cxd4", "Bb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Evans Gambit",
+        "pt-BR": "Gambito Evans",
+        "es": "Gambito Evans"
+      },
+      "lines": [
+        {
+          "id": "line-2ba0708ab80b9dbd",
+          "names": {
+            "en": "Evans Gambit",
+            "pt-BR": "Gambito Evans",
+            "es": "Gambito Evans"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c7c29e9c7ee5f1ef",
+          "names": {
+            "en": "Evans Gambit, Main Line",
+            "pt-BR": "Gambito Evans, Linha Principal",
+            "es": "Gambito Evans, Línea Principal"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Main Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d3eb51442cd360d8",
+          "names": {
+            "en": "Evans Gambit, Slow Variation",
+            "pt-BR": "Gambito Evans, Variação Slow",
+            "es": "Gambito Evans, Variante Slow"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Slow Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-08524b9352754464",
+          "names": {
+            "en": "Evans Gambit, Richardson Attack",
+            "pt-BR": "Gambito Evans, Ataque Richardson",
+            "es": "Gambito Evans, Ataque Richardson"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Richardson Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "O-O", "Nf6", "d4", "O-O", "Nxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-54233fff858d37dd",
+          "names": {
+            "en": "Evans Gambit, Anderssen Defense",
+            "pt-BR": "Gambito Evans, Defesa Anderssen",
+            "es": "Gambito Evans, Defensa Anderssen"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Anderssen Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "O-O", "Nf6", "d4", "exd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c8f2fa3773cd8eea",
+          "names": {
+            "en": "Evans Gambit",
+            "pt-BR": "Gambito Evans",
+            "es": "Gambito Evans"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "O-O", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e1ed5775872dc060",
+          "names": {
+            "en": "Evans Gambit, Lasker Defense",
+            "pt-BR": "Gambito Evans, Defesa Lasker",
+            "es": "Gambito Evans, Defensa Lasker"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Lasker Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "O-O", "d6", "d4", "Bb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-727ebcf917fbb0cf",
+          "names": {
+            "en": "Evans Gambit, Sanders-Alapin Variation",
+            "pt-BR": "Gambito Evans, Variação Sanders-Alapin",
+            "es": "Gambito Evans, Variante Sanders-Alapin"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Sanders-Alapin Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "O-O", "d6", "d4", "Bd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-46b5da34ce891a45",
+          "names": {
+            "en": "Evans Gambit, Alapin-Steinitz Variation",
+            "pt-BR": "Gambito Evans, Variação Alapin-Steinitz",
+            "es": "Gambito Evans, Variante Alapin-Steinitz"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Alapin-Steinitz Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "O-O", "d6", "d4", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4ab75d3426df86b0",
+          "names": {
+            "en": "Evans Gambit, Laroche Variation",
+            "pt-BR": "Gambito Evans, Variação Laroche",
+            "es": "Gambito Evans, Variante Laroche"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Laroche Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a8b6dae7f5d80413",
+          "names": {
+            "en": "Evans Gambit, Leonhardt Countergambit",
+            "pt-BR": "Gambito Evans, Contragambito Leonhardt",
+            "es": "Gambito Evans, Contragambito Leonhardt"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Leonhardt Countergambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b07e6a0bfbb6b741",
+          "names": {
+            "en": "Evans Gambit, Bronstein Defense",
+            "pt-BR": "Gambito Evans, Defesa Bronstein",
+            "es": "Gambito Evans, Defensa Bronstein"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Bronstein Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-962059dfd461af7b",
+          "names": {
+            "en": "Evans Gambit, Sokolsky Variation",
+            "pt-BR": "Gambito Evans, Variação Sokolsky",
+            "es": "Gambito Evans, Variante Sokolsky"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Sokolsky Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "d6", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-362f79655cbf1f5c",
+          "names": {
+            "en": "Evans Gambit, Tartakower Attack",
+            "pt-BR": "Gambito Evans, Ataque Tartakower",
+            "es": "Gambito Evans, Ataque Tartakower"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Tartakower Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "d6", "Qb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e691ef6e02a0e322",
+          "names": {
+            "en": "Evans Gambit, Levenfish Variation",
+            "pt-BR": "Gambito Evans, Variação Levenfish",
+            "es": "Gambito Evans, Variante Levenfish"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Levenfish Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "d6", "Qb3", "Qd7", "dxe5", "dxe5", "O-O", "Bb6", "Ba3", "Na5", "Nxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-adfa77453ff1dd03",
+          "names": {
+            "en": "Evans Gambit, Pierce Defense",
+            "pt-BR": "Gambito Evans, Defesa Pierce",
+            "es": "Gambito Evans, Defensa Pierce"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Pierce Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "exd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a0eb6c1f51c0c83b",
+          "names": {
+            "en": "Evans Gambit, Mieses Defense",
+            "pt-BR": "Gambito Evans, Defesa Mieses",
+            "es": "Gambito Evans, Defensa Mieses"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Mieses Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "exd4", "O-O", "Nge7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-967a7524bee2f568",
+          "names": {
+            "en": "Evans Gambit, Johner Defense",
+            "pt-BR": "Gambito Evans, Defesa Johner",
+            "es": "Gambito Evans, Defensa Johner"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Johner Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "exd4", "O-O", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c517cf629baa6102",
+          "names": {
+            "en": "Evans Gambit, Dufresne Defense",
+            "pt-BR": "Gambito Evans, Defesa Dufresne",
+            "es": "Gambito Evans, Defensa Dufresne"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Dufresne Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "exd4", "O-O", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-79dab878e2f0719b",
+          "names": {
+            "en": "Evans Gambit, Waller Attack",
+            "pt-BR": "Gambito Evans, Ataque Waller",
+            "es": "Gambito Evans, Ataque Waller"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Waller Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "exd4", "O-O", "d6", "Qb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1c9375ea79018a61",
+          "names": {
+            "en": "Evans Gambit, Morphy Attack",
+            "pt-BR": "Gambito Evans, Ataque Morphy",
+            "es": "Gambito Evans, Ataque Morphy"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Morphy Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "exd4", "O-O", "d6", "cxd4", "Bb6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a54f78bc8e057ae1",
+          "names": {
+            "en": "Evans Gambit, Compromised Defense",
+            "pt-BR": "Gambito Evans, Defesa Compromised",
+            "es": "Gambito Evans, Defensa Compromised"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Compromised Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "exd4", "O-O", "dxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a15e825bed19c946",
+          "names": {
+            "en": "Evans Gambit, Compromised Defense, Main Line",
+            "pt-BR": "Gambito Evans, Defesa Compromised, Linha Principal",
+            "es": "Gambito Evans, Defensa Compromised, Línea Principal"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Compromised Defense, Main Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "exd4", "O-O", "dxc3", "Qb3", "Qf6", "e5", "Qg6", "Nxc3", "Nge7", "Ba3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a5a69dee7f91d23b",
+          "names": {
+            "en": "Evans Gambit, Compromised Defense, Potter Variation",
+            "pt-BR": "Gambito Evans, Defesa Compromised, Variação Potter",
+            "es": "Gambito Evans, Defensa Compromised, Variante Potter"
+          },
+          "eco": "C52",
+          "opening": "Italian Game: Evans Gambit, Compromised Defense, Potter Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Ba5", "d4", "exd4", "O-O", "dxc3", "Qb3", "Qf6", "e5", "Qg6", "Nxc3", "Nge7", "Rd1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fe8f9d4ecdb7c8e2",
+          "names": {
+            "en": "Evans Gambit, McDonnell Defense",
+            "pt-BR": "Gambito Evans, Defesa McDonnell",
+            "es": "Gambito Evans, Defensa McDonnell"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, McDonnell Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-52e0835f42d83702",
+          "names": {
+            "en": "Evans Gambit, McDonnell Defense, Main Line",
+            "pt-BR": "Gambito Evans, Defesa McDonnell, Linha Principal",
+            "es": "Gambito Evans, Defensa McDonnell, Línea Principal"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, McDonnell Defense, Main Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5", "d4", "exd4", "O-O", "d6", "cxd4", "Bb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ff6c2f408acd863a",
+          "names": {
+            "en": "Evans Gambit",
+            "pt-BR": "Gambito Evans",
+            "es": "Gambito Evans"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5", "d4", "exd4", "O-O", "d6", "cxd4", "Bb6", "Nc3", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-34ba2a4c2eb82b4a",
+          "names": {
+            "en": "Evans Gambit, Fraser Attack",
+            "pt-BR": "Gambito Evans, Ataque Fraser",
+            "es": "Gambito Evans, Ataque Fraser"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Fraser Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5", "d4", "exd4", "O-O", "d6", "cxd4", "Bb6", "Nc3", "Bg4", "Qa4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-80c3699e9bf1ba97",
+          "names": {
+            "en": "Evans Gambit, Fraser-Mortimer Attack",
+            "pt-BR": "Gambito Evans, Ataque Fraser-Mortimer",
+            "es": "Gambito Evans, Ataque Fraser-Mortimer"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Fraser-Mortimer Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5", "d4", "exd4", "O-O", "d6", "cxd4", "Bb6", "Nc3", "Bg4", "Qa4", "Bd7", "Qb3", "Na5", "Bxf7+", "Kf8", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-768537d94f6cd513",
+          "names": {
+            "en": "Evans Gambit, Mortimer-Evans Gambit",
+            "pt-BR": "Gambito Evans, Gambito Mortimer-Evans",
+            "es": "Gambito Evans, Gambito Mortimer-Evans"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Mortimer-Evans Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5", "d4", "exd4", "O-O", "d6", "cxd4", "Bb6", "Nc3", "Bg4", "Qa4", "Bd7", "Qb3", "Na5", "Bxf7+", "Kf8", "Qc2", "Kxf7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5c21beecc77bea31",
+          "names": {
+            "en": "Evans Gambit, Göring Attack",
+            "pt-BR": "Gambito Evans, Ataque Göring",
+            "es": "Gambito Evans, Ataque Göring"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Göring Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5", "d4", "exd4", "O-O", "d6", "cxd4", "Bb6", "Nc3", "Na5", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e7ee1ca6cd4cec26",
+          "names": {
+            "en": "Evans Gambit, Steinitz Variation",
+            "pt-BR": "Gambito Evans, Variação Steinitz",
+            "es": "Gambito Evans, Variante Steinitz"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Steinitz Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5", "d4", "exd4", "O-O", "d6", "cxd4", "Bb6", "Nc3", "Na5", "Bg5", "f6", "Be3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9c5705110f1cf783",
+          "names": {
+            "en": "Evans Gambit, Ulvestad Variation",
+            "pt-BR": "Gambito Evans, Variação Ulvestad",
+            "es": "Gambito Evans, Variante Ulvestad"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Ulvestad Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5", "d4", "exd4", "O-O", "d6", "cxd4", "Bb6", "d5", "Na5", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b5fafdcabff41d87",
+          "names": {
+            "en": "Evans Gambit, Paulsen Variation",
+            "pt-BR": "Gambito Evans, Variação Paulsen",
+            "es": "Gambito Evans, Variante Paulsen"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Paulsen Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5", "d4", "exd4", "O-O", "d6", "cxd4", "Bb6", "d5", "Na5", "Bb2", "Ne7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b8d0d7a1faf2835a",
+          "names": {
+            "en": "Evans Gambit, Harding Variation",
+            "pt-BR": "Gambito Evans, Variação Harding",
+            "es": "Gambito Evans, Variante Harding"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Harding Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bc5", "d4", "exd4", "cxd4", "Bb4+", "Bd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9ea810cf9a9f0590",
+          "names": {
+            "en": "Evans Gambit, Stone-Ware Variation",
+            "pt-BR": "Gambito Evans, Variação Stone-Ware",
+            "es": "Gambito Evans, Variante Stone-Ware"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Stone-Ware Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8077cb72ee9a4723",
+          "names": {
+            "en": "Evans Gambit, Anderssen Variation",
+            "pt-BR": "Gambito Evans, Variação Anderssen",
+            "es": "Gambito Evans, Variante Anderssen"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Anderssen Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bcb52b2ca3149f12",
+          "names": {
+            "en": "Evans Gambit, Anderssen Variation, Cordel Line",
+            "pt-BR": "Gambito Evans, Variação Anderssen, Linha Cordel",
+            "es": "Gambito Evans, Variante Anderssen, Línea Cordel"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Anderssen Variation, Cordel Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Be7", "d4", "Na5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e84f2bedc64eb609",
+          "names": {
+            "en": "Evans Gambit, Mayet Defense",
+            "pt-BR": "Gambito Evans, Defesa Mayet",
+            "es": "Gambito Evans, Defensa Mayet"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Mayet Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4", "c3", "Bf8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-683f95961095799c",
+          "names": {
+            "en": "Evans Gambit, Fontaine Countergambit",
+            "pt-BR": "Gambito Evans, Contragambito Fontaine",
+            "es": "Gambito Evans, Contragambito Fontaine"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Fontaine Countergambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9127d41994a21673",
+          "names": {
+            "en": "Evans Gambit, Hein Countergambit",
+            "pt-BR": "Gambito Evans, Contragambito Hein",
+            "es": "Gambito Evans, Contragambito Hein"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit, Hein Countergambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Scotch Gambit"
+      },
+      "lines": [
+        {
+          "id": "line-66b415e454f00595",
+          "names": {
+            "en": "Scotch Gambit, Max Lange Attack Accepted"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Max Lange Attack Accepted",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d4", "exd4", "e5", "d5", "exf6", "dxc4", "Re1+", "Be6", "fxg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0a39498e01da1481",
+          "names": {
+            "en": "Scotch Gambit, Walbrodt-Baird Gambit"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Walbrodt-Baird Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2ccdf67595236330",
+          "names": {
+            "en": "Scotch Gambit"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-afae5549b3270f1b",
+          "names": {
+            "en": "Scotch Gambit, Double Gambit Accepted"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Double Gambit Accepted",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "O-O", "Nxe4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7bb4cbe0d2afaa65",
+          "names": {
+            "en": "Scotch Gambit, Nakhmanson Gambit"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Nakhmanson Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "O-O", "Nxe4", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b94ec3c6cafefd15",
+          "names": {
+            "en": "Scotch Gambit, Anderssen Attack"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Anderssen Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "O-O", "Nxe4", "Re1", "d5", "Bxd5", "Qxd5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-aa76e94b69754612",
+          "names": {
+            "en": "Scotch Gambit, Anderssen Attack, Main Line"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Anderssen Attack, Main Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "O-O", "Nxe4", "Re1", "d5", "Bxd5", "Qxd5", "Nc3", "Qa5", "Nxe4", "Be6", "Bd2", "Qd5", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-08b84c4eb8152700",
+          "names": {
+            "en": "Scotch Gambit, Max Lange Attack"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Max Lange Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "e5", "d5", "Bb5", "Ne4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-82ef3f5625591a35",
+          "names": {
+            "en": "Scotch Gambit, Max Lange Attack"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Max Lange Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Nf6", "O-O", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-63af37f86a3c7dfa",
+          "names": {
+            "en": "Scotch Gambit, Max Lange Attack, Spielmann Defense"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Max Lange Attack, Spielmann Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Nf6", "O-O", "Bc5", "e5", "Ng4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-90cb1b81586bc461",
+          "names": {
+            "en": "Scotch Gambit, Max Lange Attack, Long Variation"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Max Lange Attack, Long Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Nf6", "O-O", "Bc5", "e5", "d5", "exf6", "dxc4", "Re1+", "Be6", "Ng5", "Qd5", "Nc3", "Qf5", "Nce4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-39b9d55bbd844a7b",
+          "names": {
+            "en": "Scotch Gambit, de Riviere Defense"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, de Riviere Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Nf6", "O-O", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3b9eb9b2e02837d3",
+          "names": {
+            "en": "Scotch Gambit, Canal Variation"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Canal Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Nf6", "O-O", "Nxe4", "Re1", "d5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f8a0e54e0960139e",
+          "names": {
+            "en": "Scotch Gambit, Janowski Defense"
+          },
+          "eco": "C56",
+          "opening": "Italian Game: Scotch Gambit, Janowski Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4", "Nf6", "O-O", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Giuoco Piano"
+      },
+      "lines": [
+        {
+          "id": "line-f2d9351ce562edc0",
+          "names": {
+            "en": "Giuoco Piano"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Giuoco Piano",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f9fd00af5c52d0d9",
+          "names": {
+            "en": "Giuoco Piano, Krause Variation"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Giuoco Piano, Krause Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Bd2", "Nxe4", "Bxb4", "Nxb4", "Bxf7+", "Kxf7", "Qb3+", "d5", "Ne5+", "Kf6", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8964df6b426a4563",
+          "names": {
+            "en": "Giuoco Piano, Cracow Variation"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Giuoco Piano, Cracow Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Kf1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c2652e6bef0a70b5",
+          "names": {
+            "en": "Giuoco Piano, Greco's Attack"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Giuoco Piano, Greco's Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-91700ee6d0ff6103",
+          "names": {
+            "en": "Giuoco Piano, Steinitz Variation"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Giuoco Piano, Steinitz Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Nc3", "Nxe4", "O-O", "Bxc3", "bxc3", "d5", "Ba3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c3e7041b4b06daac",
+          "names": {
+            "en": "Giuoco Piano, Therkatz-Herzog Variation"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Giuoco Piano, Therkatz-Herzog Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Nc3", "Nxe4", "O-O", "Bxc3", "d5", "Bf6", "Re1", "Ne7", "Rxe4", "d6", "Bg5", "Bxg5", "Nxg5", "O-O", "Nxh7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-117e17b315ab294c",
+          "names": {
+            "en": "Giuoco Piano, Aitken Variation"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Giuoco Piano, Aitken Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Nc3", "Nxe4", "O-O", "Nxc3", "bxc3", "Bxc3", "Ba3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-09451e7558e302c0",
+          "names": {
+            "en": "Giuoco Piano, Bernstein Variation"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Giuoco Piano, Bernstein Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "cxd4", "Bb4+", "Nc3", "Nxe4", "O-O", "Nxc3", "bxc3", "Bxc3", "Qb3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-43e5c5b508876563",
+          "names": {
+            "en": "Giuoco Piano, Holzhausen Attack"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Giuoco Piano, Holzhausen Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "O-O", "Bc5", "d4", "Bxd4", "Nxd4", "Nxd4", "Bg5", "d6", "f4", "Qe7", "fxe5", "dxe5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-63812fc27346ef9d",
+          "names": {
+            "en": "Giuoco Piano, Rosentreter Variation"
+          },
+          "eco": "C54",
+          "opening": "Italian Game: Giuoco Piano, Rosentreter Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "O-O", "Bc5", "d4", "Bxd4", "Nxd4", "Nxd4", "Bg5", "h6", "Bh4", "g5", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Evans Gambit Declined"
+      },
+      "lines": [
+        {
+          "id": "line-95a11948e6d60129",
+          "names": {
+            "en": "Evans Gambit Declined"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit Declined",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-542349a741677bcf",
+          "names": {
+            "en": "Evans Gambit Declined, Cordel Variation"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit Declined, Cordel Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bb6", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-47ae6d2786075bb2",
+          "names": {
+            "en": "Evans Gambit Declined"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit Declined",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bb6", "a4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dd9e6e59e1eafc70",
+          "names": {
+            "en": "Evans Gambit Declined, Showalter Variation"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit Declined, Showalter Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bb6", "a4", "a6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a049ea2959db0c92",
+          "names": {
+            "en": "Evans Gambit Declined, Lange Variation"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit Declined, Lange Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bb6", "b5", "Na5", "Nxe5", "Nh6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-64fff6aee580d706",
+          "names": {
+            "en": "Evans Gambit Declined, Pavlov Variation"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit Declined, Pavlov Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bb6", "b5", "Na5", "Nxe5", "Nh6", "d4", "d6", "Bxh6", "dxe5", "Bxg7", "Rg8", "Bxf7+", "Kxf7", "Bxe5", "Qg5", "Nd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9fbb4c8a57b950c4",
+          "names": {
+            "en": "Evans Gambit Declined, Hirschbach Variation"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit Declined, Hirschbach Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bb6", "b5", "Na5", "Nxe5", "Qg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d50918eb704cbb2b",
+          "names": {
+            "en": "Evans Gambit Declined, Vasquez Variation"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit Declined, Vasquez Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bb6", "b5", "Na5", "Nxe5", "Qg5", "Bxf7+", "Ke7", "Qh5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-35907ccafcf66a9b",
+          "names": {
+            "en": "Evans Gambit Declined, Hicken Variation"
+          },
+          "eco": "C51",
+          "opening": "Italian Game: Evans Gambit Declined, Hicken Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bb6", "b5", "Na5", "Nxe5", "Qg5", "Qf3", "Qxe5", "Qxf7+", "Kd8", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Giuoco Pianissimo"
+      },
+      "lines": [
+        {
+          "id": "line-d46bb1be5d824ce1",
+          "names": {
+            "en": "Giuoco Pianissimo"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "Nc3", "Nf6", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-811b0d2fee9bdb42",
+          "names": {
+            "en": "Giuoco Pianissimo"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "Nc3", "Nf6", "O-O", "O-O", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-514996f833de3d2c",
+          "names": {
+            "en": "Giuoco Pianissimo"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-36b5c2588b124e11",
+          "names": {
+            "en": "Giuoco Pianissimo, Italian Four Knights Variation"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Giuoco Pianissimo, Italian Four Knights Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "d3", "Nf6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-81ad368005fc695f",
+          "names": {
+            "en": "Giuoco Pianissimo, Canal Variation"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Giuoco Pianissimo, Canal Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "d3", "Nf6", "Nc3", "d6", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9bf3a00b1502e6a0",
+          "names": {
+            "en": "Giuoco Pianissimo, Lucchini Gambit"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Giuoco Pianissimo, Lucchini Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "d3", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a43c7f1897677475",
+          "names": {
+            "en": "Giuoco Pianissimo, Dubois Variation"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Giuoco Pianissimo, Dubois Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "d3", "f5", "Ng5", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d18e501abd0c0474",
+          "names": {
+            "en": "Giuoco Pianissimo"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Giuoco Pianissimo",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "O-O", "Bc5", "Nc3", "d6", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fb5e461992906d92",
+          "names": {
+            "en": "Giuoco Pianissimo, Normal"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Giuoco Pianissimo, Normal",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d3", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Hungarian Defense"
+      },
+      "lines": [
+        {
+          "id": "line-44502b1f08addaff",
+          "names": {
+            "en": "Hungarian Defense"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Hungarian Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bafe0f570bdcff75",
+          "names": {
+            "en": "Hungarian Defense, Tartakower Variation"
+          },
+          "eco": "C50",
+          "opening": "Italian Game: Hungarian Defense, Tartakower Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Be7", "d4", "exd4", "c3", "Nf6", "e5", "Ne4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-231ad10f1825d882",
+      "names": {
+        "en": "Anti-Fried Liver Defense",
+        "pt-BR": "Defesa Anti-Fried Liver",
+        "es": "Defensa Anti-Fried Liver"
+      },
+      "eco": "C50",
+      "opening": "Italian Game: Anti-Fried Liver Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "h6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-12b289e03d2dc520",
+      "names": {
+        "en": "Bird's Attack",
+        "pt-BR": "Ataque Bird's",
+        "es": "Ataque Bird's"
+      },
+      "eco": "C53",
+      "opening": "Italian Game: Bird's Attack",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-30f17d6ab8cea10d",
+      "names": {
+        "en": "Blackburne-Kostić Gambit",
+        "pt-BR": "Gambito Blackburne-Kostić",
+        "es": "Gambito Blackburne-Kostić"
+      },
+      "eco": "C50",
+      "opening": "Italian Game: Blackburne-Kostić Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-07577626f61cfe1e",
+      "names": {
+        "en": "Deutz Gambit",
+        "pt-BR": "Gambito Deutz",
+        "es": "Gambito Deutz"
+      },
+      "eco": "C50",
+      "opening": "Italian Game: Deutz Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "O-O", "Nf6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7e74b6d6d13e5cf2",
+      "names": {
+        "en": "Evans Gambit Accepted"
+      },
+      "eco": "C51",
+      "opening": "Italian Game: Evans Gambit Accepted",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4", "Bxb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6f1aae541f599327",
+      "names": {
+        "en": "Jerome Gambit",
+        "pt-BR": "Gambito Jerome",
+        "es": "Gambito Jerome"
+      },
+      "eco": "C50",
+      "opening": "Italian Game: Jerome Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "Bxf7+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-162e68c940fe8ec7",
+      "names": {
+        "en": "Italian Game",
+        "pt-BR": "Abertura Italiana",
+        "es": "Apertura Italiana"
+      },
+      "eco": "C50",
+      "opening": "Italian Game",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-87e041dfcd4e5e9e",
+      "names": {
+        "en": "Paris Defense"
+      },
+      "eco": "C50",
+      "opening": "Italian Game: Paris Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-036e930e17c75002",
+      "names": {
+        "en": "Rosentreter Gambit",
+        "pt-BR": "Gambito Rosentreter",
+        "es": "Gambito Rosentreter"
+      },
+      "eco": "C50",
+      "opening": "Italian Game: Rosentreter Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f0cab1818ce2e60a",
+      "names": {
+        "en": "Rousseau Gambit",
+        "pt-BR": "Gambito Rousseau",
+        "es": "Gambito Rousseau"
+      },
+      "eco": "C50",
+      "opening": "Italian Game: Rousseau Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-400fd4ceb3a82234",
+      "names": {
+        "en": "Scotch Invitation Declined"
+      },
+      "eco": "C56",
+      "opening": "Italian Game: Scotch Invitation Declined",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

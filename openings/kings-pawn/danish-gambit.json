@@ -1,0 +1,105 @@
+{
+  "id": "danish-gambit",
+  "names": {
+    "en": "Danish Gambit",
+    "pt-BR": "Gambito Dinamarquês",
+    "es": "Gambito Danés"
+  },
+  "order": 19,
+  "lines": [
+    {
+      "id": "line-5ad5c1f3e1ebb43a",
+      "names": {
+        "en": "Accepted",
+        "pt-BR": "Aceito",
+        "es": "Aceptado"
+      },
+      "eco": "C21",
+      "opening": "Danish Gambit Accepted",
+      "moves": ["e4", "e5", "d4", "exd4", "c3", "dxc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a7bb34b813788095",
+      "names": {
+        "en": "Accepted: Chigorin Defense",
+        "pt-BR": "Aceito: Defesa Chigorin",
+        "es": "Aceptado: Defensa Chigorin"
+      },
+      "eco": "C21",
+      "opening": "Danish Gambit Accepted: Chigorin Defense",
+      "moves": ["e4", "e5", "d4", "exd4", "c3", "dxc3", "Bc4", "cxb2", "Bxb2", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-41deac91e657dcf5",
+      "names": {
+        "en": "Accepted: Classical Defense"
+      },
+      "eco": "C21",
+      "opening": "Danish Gambit Accepted: Classical Defense",
+      "moves": ["e4", "e5", "d4", "exd4", "c3", "dxc3", "Bc4", "cxb2", "Bxb2", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ac0ad5a6a12e7589",
+      "names": {
+        "en": "Accepted: Copenhagen Defense",
+        "pt-BR": "Aceito: Defesa Copenhagen",
+        "es": "Aceptado: Defensa Copenhagen"
+      },
+      "eco": "C21",
+      "opening": "Danish Gambit Accepted: Copenhagen Defense",
+      "moves": ["e4", "e5", "d4", "exd4", "c3", "dxc3", "Bc4", "cxb2", "Bxb2", "Bb4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-96df9774671ef92c",
+      "names": {
+        "en": "Accepted: Schlechter Defense",
+        "pt-BR": "Aceito: Defesa Schlechter",
+        "es": "Aceptado: Defensa Schlechter"
+      },
+      "eco": "C21",
+      "opening": "Danish Gambit Accepted: Schlechter Defense",
+      "moves": ["e4", "e5", "d4", "exd4", "c3", "dxc3", "Bc4", "cxb2", "Bxb2", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3345f44785d82883",
+      "names": {
+        "en": "Accepted: Svenonius Defense",
+        "pt-BR": "Aceito: Defesa Svenonius",
+        "es": "Aceptado: Defensa Svenonius"
+      },
+      "eco": "C21",
+      "opening": "Danish Gambit Accepted: Svenonius Defense",
+      "moves": ["e4", "e5", "d4", "exd4", "c3", "Ne7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8d6cc5fff19e3384",
+      "names": {
+        "en": "Declined: Sörensen Defense",
+        "pt-BR": "Recusado: Defesa Sörensen",
+        "es": "Rehusado: Defensa Sörensen"
+      },
+      "eco": "C21",
+      "opening": "Danish Gambit Declined: Sörensen Defense",
+      "moves": ["e4", "e5", "d4", "exd4", "c3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f97e961b49e222df",
+      "names": {
+        "en": "Danish Gambit",
+        "pt-BR": "Gambito Dinamarquês",
+        "es": "Gambito Danés"
+      },
+      "eco": "C21",
+      "opening": "Danish Gambit",
+      "moves": ["e4", "e5", "d4", "exd4", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

@@ -4,12 +4,14 @@ A line without an `opening` is ours (extended or imported) and only has to be le
 Usage: uv run python -m catalog.validate [OPENINGS_DIR]
 """
 
+import json
 import sys
 from pathlib import Path
 
 from app.book.source import BookError, OpeningFile, read_opening_files, replay
 from catalog.loader import index_by_position, load_catalog
 
+LOCALES = ("en", "pt-BR", "es")
 DEFAULT_DIR = Path(__file__).parent.parent / "openings"
 
 
@@ -33,6 +35,27 @@ def validate(files: list[OpeningFile], index: dict) -> list[str]:
     return problems
 
 
+def name_coverage(files: list[OpeningFile]) -> dict[str, dict[str, tuple[int, int]]]:
+    """For each locale, how many families, subgroups and lines have their own name."""
+    subgroups = {
+        json.dumps(line.subgroup, sort_keys=True)
+        for opening_file in files
+        for line in opening_file.lines
+        if line.subgroup
+    }
+    subgroup_names = [json.loads(item) for item in subgroups]
+    line_names = [line.names for opening_file in files for line in opening_file.lines]
+    family_names = [opening_file.names for opening_file in files]
+    return {
+        locale: {
+            "families": (sum(locale in n for n in family_names), len(family_names)),
+            "subgroups": (sum(locale in n for n in subgroup_names), len(subgroup_names)),
+            "lines": (sum(locale in n for n in line_names), len(line_names)),
+        }
+        for locale in LOCALES
+    }
+
+
 def main(directory: Path) -> int:
     try:
         files = read_opening_files(directory)
@@ -44,6 +67,12 @@ def main(directory: Path) -> int:
         print(f"INVALID: {problem}", file=sys.stderr)
     total = sum(len(opening_file.lines) for opening_file in files)
     print(f"{len(files)} families, {total} lines checked, {len(problems)} problems")
+    for locale, kinds in name_coverage(files).items():
+        report = ", ".join(
+            f"{kind} {done}/{all_} ({done / max(all_, 1):.0%})"
+            for kind, (done, all_) in kinds.items()
+        )
+        print(f"names {locale}: {report}")
     return 1 if problems else 0
 
 

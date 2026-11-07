@@ -1,0 +1,3485 @@
+{
+  "id": "queen-s-gambit",
+  "names": {
+    "en": "Queen's Gambit",
+    "pt-BR": "Gambito da Dama",
+    "es": "Gambito de Dama"
+  },
+  "order": 1,
+  "variants": [
+    {
+      "names": {
+        "en": "Declined: Orthodox Defense",
+        "pt-BR": "Recusado: Defesa Orthodox",
+        "es": "Rehusado: Defensa Orthodox"
+      },
+      "lines": [
+        {
+          "id": "line-7bdf633ef67a4cbd",
+          "names": {
+            "en": "Declined: Orthodox Defense, Capablanca Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Capablanca",
+            "es": "Rehusado: Defensa Orthodox, Variante Capablanca"
+          },
+          "eco": "D63",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Capablanca Variation",
+          "moves": ["Nf3", "d5", "d4", "Nf6", "c4", "e6", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "b6", "cxd5", "exd5", "Bb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f18ab04d3da3c1e8",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Attack",
+            "pt-BR": "Recusado: Defesa Orthodox, Ataque Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Ataque Rubinstein"
+          },
+          "eco": "D64",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+          "moves": ["Nf3", "d5", "d4", "Nf6", "c4", "e6", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "c6", "Qc2", "Ne4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c4b5008f502fa7c7",
+          "names": {
+            "en": "Declined: Orthodox Defense, Pillsbury Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Pillsbury",
+            "es": "Rehusado: Defensa Orthodox, Variante Pillsbury"
+          },
+          "eco": "D63",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Pillsbury Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Rc1", "b6", "cxd5", "exd5", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2674e2c03159ab22",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Attack",
+            "pt-BR": "Recusado: Defesa Orthodox, Ataque Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Ataque Rubinstein"
+          },
+          "eco": "D64",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "Nf3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "c6", "a3", "a6", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-edd81c654ad95f81",
+          "names": {
+            "en": "Declined: Orthodox Defense",
+            "pt-BR": "Recusado: Defesa Orthodox",
+            "es": "Rehusado: Defensa Orthodox"
+          },
+          "eco": "D60",
+          "opening": "Queen's Gambit Declined: Orthodox Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-32a79dcb3c79ed5c",
+          "names": {
+            "en": "Declined: Orthodox Defense, Botvinnik Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Botvinnik",
+            "es": "Rehusado: Defensa Orthodox, Variante Botvinnik"
+          },
+          "eco": "D60",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Botvinnik Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9ba781a8b1b234f5",
+          "names": {
+            "en": "Declined: Orthodox Defense, Botvinnik Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Botvinnik",
+            "es": "Rehusado: Defensa Orthodox, Variante Botvinnik"
+          },
+          "eco": "D60",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Botvinnik Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Bd3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4998c4e9c741e46b",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Variation, Flohr Line",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Rubinstein, Linha Flohr",
+            "es": "Rehusado: Defensa Orthodox, Variante Rubinstein, Línea Flohr"
+          },
+          "eco": "D62",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation, Flohr Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Qc2", "c5", "cxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-76e46e018791590b",
+          "names": {
+            "en": "Declined: Orthodox Defense, Main Line",
+            "pt-BR": "Recusado: Defesa Orthodox, Linha Principal",
+            "es": "Rehusado: Defensa Orthodox, Línea Principal"
+          },
+          "eco": "D63",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Main Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-abdcd9ac89db6117",
+          "names": {
+            "en": "Declined: Orthodox Defense, Henneberger Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Henneberger",
+            "es": "Rehusado: Defensa Orthodox, Variante Henneberger"
+          },
+          "eco": "D63",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Henneberger Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0204de3ca064de38",
+          "names": {
+            "en": "Declined: Orthodox Defense, Henneberger Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Henneberger",
+            "es": "Rehusado: Defensa Orthodox, Variante Henneberger"
+          },
+          "eco": "D63",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Henneberger Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "a6", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-63b588ac89487026",
+          "names": {
+            "en": "Declined: Orthodox Defense, Henneberger Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Henneberger",
+            "es": "Rehusado: Defensa Orthodox, Variante Henneberger"
+          },
+          "eco": "D63",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Henneberger Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "a6", "c5", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d9239ea5a84d8f55",
+          "names": {
+            "en": "Declined: Orthodox Defense, Henneberger Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Henneberger",
+            "es": "Rehusado: Defensa Orthodox, Variante Henneberger"
+          },
+          "eco": "D63",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Henneberger Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "a6", "c5", "c6", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fe2cfafeccf2f585",
+          "names": {
+            "en": "Declined: Orthodox Defense, Swiss, Carlsbad Variation"
+          },
+          "eco": "D63",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Swiss, Carlsbad Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "a6", "cxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2543219e8d70e9de",
+          "names": {
+            "en": "Declined: Orthodox Defense, Main Line",
+            "pt-BR": "Recusado: Defesa Orthodox, Linha Principal",
+            "es": "Rehusado: Defensa Orthodox, Línea Principal"
+          },
+          "eco": "D63",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Main Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-27f190e033651131",
+          "names": {
+            "en": "Declined: Orthodox Defense, Classical Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Clássica",
+            "es": "Rehusado: Defensa Orthodox, Variante Clásica"
+          },
+          "eco": "D68",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Classical Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "c6", "Bd3", "dxc4", "Bxc4", "Nd5", "Bxe7", "Qxe7", "O-O", "Nxc3", "Rxc3", "e5", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ebc2af1c6c304b6d",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Attack",
+            "pt-BR": "Recusado: Defesa Orthodox, Ataque Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Ataque Rubinstein"
+          },
+          "eco": "D64",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "c6", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-af367b3153a061c3",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Attack",
+            "pt-BR": "Recusado: Defesa Orthodox, Ataque Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Ataque Rubinstein"
+          },
+          "eco": "D64",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "c6", "Qc2", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d628ab83a85cf8dc",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rauzer Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Rauzer",
+            "es": "Rehusado: Defensa Orthodox, Variante Rauzer"
+          },
+          "eco": "D60",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rauzer Variation",
+          "moves": ["d4", "d5", "Nf3", "Nf6", "c4", "e6", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Qb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3269272c0fb0d6c2",
+          "names": {
+            "en": "Declined: Orthodox Defense, Janowski Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Janowski",
+            "es": "Rehusado: Defensa Orthodox, Variante Janowski"
+          },
+          "eco": "D67",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Janowski Variation",
+          "moves": ["d4", "d5", "Nf3", "Nf6", "c4", "e6", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "c6", "Bd3", "dxc4", "Bxc4", "Nd5", "h4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6bc7896a322f26a4",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Attack",
+            "pt-BR": "Recusado: Defesa Orthodox, Ataque Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Ataque Rubinstein"
+          },
+          "eco": "D65",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+          "moves": ["d4", "d5", "Nf3", "Nf6", "c4", "e6", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "c6", "Qc2", "a6", "cxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fdbc966ace1a9659",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Attack",
+            "pt-BR": "Recusado: Defesa Orthodox, Ataque Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Ataque Rubinstein"
+          },
+          "eco": "D65",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+          "moves": ["d4", "d5", "Nf3", "Nf6", "c4", "e6", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "c6", "Qc2", "a6", "cxd5", "exd5", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-269353632dc48166",
+          "names": {
+            "en": "Declined: Orthodox Defense, Main Line",
+            "pt-BR": "Recusado: Defesa Orthodox, Linha Principal",
+            "es": "Rehusado: Defensa Orthodox, Línea Principal"
+          },
+          "eco": "D63",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Main Line",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "Nbd7", "Nf3", "O-O", "Rc1", "h6", "Bh4", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-da95b4c689be5379",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Variante Rubinstein"
+          },
+          "eco": "D61",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2fc4b2b8f37abd4a",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Variante Rubinstein"
+          },
+          "eco": "D61",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Qc2", "a6", "cxd5", "exd5", "Bd3", "Re8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f91a4469c772adbf",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Variante Rubinstein"
+          },
+          "eco": "D61",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Qc2", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f22ca9e43db2e599",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Variante Rubinstein"
+          },
+          "eco": "D61",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Qc2", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1cd978d01ce073df",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Variante Rubinstein"
+          },
+          "eco": "D61",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Qc2", "c6", "Rd1", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fd53b682ed949fae",
+          "names": {
+            "en": "Declined: Orthodox Defense, Rubinstein Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Rubinstein",
+            "es": "Rehusado: Defensa Orthodox, Variante Rubinstein"
+          },
+          "eco": "D61",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Qc2", "c6", "a3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-18625fe42902d125",
+          "names": {
+            "en": "Declined: Orthodox Defense, Bd3 Line",
+            "pt-BR": "Recusado: Defesa Orthodox, Linha Bd3",
+            "es": "Rehusado: Defensa Orthodox, Línea Bd3"
+          },
+          "eco": "D66",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Bd3 Line",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Rc1", "c6", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-602c29ad9b36af75",
+          "names": {
+            "en": "Declined: Orthodox Defense, Capablanca System",
+            "pt-BR": "Recusado: Defesa Orthodox, Sistema Capablanca",
+            "es": "Rehusado: Defensa Orthodox, Sistema Capablanca"
+          },
+          "eco": "D67",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Capablanca System",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Rc1", "c6", "Bd3", "dxc4", "Bxc4", "Nd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2a2f0528dded3749",
+          "names": {
+            "en": "Declined: Orthodox Defense, Bd3 Line",
+            "pt-BR": "Recusado: Defesa Orthodox, Linha Bd3",
+            "es": "Rehusado: Defensa Orthodox, Línea Bd3"
+          },
+          "eco": "D67",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Bd3 Line",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Rc1", "c6", "Bd3", "dxc4", "Bxc4", "Nd5", "Bxe7", "Qxe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-876ac5d2b4823f2f",
+          "names": {
+            "en": "Declined: Orthodox Defense, Alekhine Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Alekhine",
+            "es": "Rehusado: Defensa Orthodox, Variante Alekhine"
+          },
+          "eco": "D67",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Alekhine Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Rc1", "c6", "Bd3", "dxc4", "Bxc4", "Nd5", "Bxe7", "Qxe7", "Ne4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a0c89cd3058d3951",
+          "names": {
+            "en": "Declined: Orthodox Defense, Main Line",
+            "pt-BR": "Recusado: Defesa Orthodox, Linha Principal",
+            "es": "Rehusado: Defensa Orthodox, Línea Principal"
+          },
+          "eco": "D67",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Main Line",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Rc1", "c6", "Bd3", "dxc4", "Bxc4", "Nd5", "Bxe7", "Qxe7", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0b9595bf9615263f",
+          "names": {
+            "en": "Declined: Orthodox Defense, Classical Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Clássica",
+            "es": "Rehusado: Defensa Orthodox, Variante Clásica"
+          },
+          "eco": "D68",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Classical Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Rc1", "c6", "Bd3", "dxc4", "Bxc4", "Nd5", "Bxe7", "Qxe7", "O-O", "Nxc3", "Rxc3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9850c6b7daa9db57",
+          "names": {
+            "en": "Declined: Orthodox Defense, Classical Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Clássica",
+            "es": "Rehusado: Defensa Orthodox, Variante Clásica"
+          },
+          "eco": "D69",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Classical Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Rc1", "c6", "Bd3", "dxc4", "Bxc4", "Nd5", "Bxe7", "Qxe7", "O-O", "Nxc3", "Rxc3", "e5", "dxe5", "Nxe5", "Nxe5", "Qxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-726e92bc89a9bdff",
+          "names": {
+            "en": "Declined: Orthodox Defense, Bd3 Line",
+            "pt-BR": "Recusado: Defesa Orthodox, Linha Bd3",
+            "es": "Rehusado: Defensa Orthodox, Línea Bd3"
+          },
+          "eco": "D66",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Bd3 Line",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "Nbd7", "Rc1", "c6", "Bd3", "h6", "Bh4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-067187e30dab1525",
+          "names": {
+            "en": "Declined: Orthodox Defense, Fianchetto Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação do Fianqueto",
+            "es": "Rehusado: Defensa Orthodox, Variante del Fianchetto"
+          },
+          "eco": "D66",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Fianchetto Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "c6", "Nf3", "Be7", "e3", "Nbd7", "Rc1", "O-O", "Bd3", "dxc4", "Bxc4", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-972507f73d43a8d1",
+          "names": {
+            "en": "Declined: Orthodox Defense, Classical Variation",
+            "pt-BR": "Recusado: Defesa Orthodox, Variação Clássica",
+            "es": "Rehusado: Defensa Orthodox, Variante Clásica"
+          },
+          "eco": "D68",
+          "opening": "Queen's Gambit Declined: Orthodox Defense, Classical Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "Nf6", "Nc3", "Be7", "Bg5", "O-O", "e3", "Nbd7", "Rc1", "c6", "Bd3", "dxc4", "Bxc4", "Nd5", "Bxe7", "Qxe7", "O-O", "Nxc3", "Rxc3", "e5", "Qb1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Exchange Variation",
+        "pt-BR": "Recusado: Variação da Troca",
+        "es": "Rehusado: Variante del Cambio"
+      },
+      "lines": [
+        {
+          "id": "line-5bf6687568606b31",
+          "names": {
+            "en": "Declined: Exchange Variation",
+            "pt-BR": "Recusado: Variação da Troca",
+            "es": "Rehusado: Variante del Cambio"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cbe984023da94f69",
+          "names": {
+            "en": "Declined: Exchange Variation, Positional Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Positional",
+            "es": "Rehusado: Variante del Cambio, Variante Positional"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Positional Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5", "exd5", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4b7c4507c14ccde4",
+          "names": {
+            "en": "Declined: Exchange Variation, Chameleon Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Chameleon",
+            "es": "Rehusado: Variante del Cambio, Variante Chameleon"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Chameleon Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5", "exd5", "Bg5", "Be7", "e3", "O-O", "Bd3", "Nbd7", "Qc2", "Re8", "Nge2", "Nf8", "O-O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a217d7d3785a3864",
+          "names": {
+            "en": "Declined: Exchange Variation, Carlsen Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Carlsen",
+            "es": "Rehusado: Variante del Cambio, Variante Carlsen"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Carlsen Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5", "exd5", "Bg5", "Be7", "e3", "h6", "Bh4", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bc07bed1e8abe9f8",
+          "names": {
+            "en": "Declined: Exchange Variation, Positional Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Positional",
+            "es": "Rehusado: Variante del Cambio, Variante Positional"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Positional Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5", "exd5", "Bg5", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-67dac8224694e35b",
+          "names": {
+            "en": "Declined: Exchange Variation, Reshevsky Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Reshevsky",
+            "es": "Rehusado: Variante del Cambio, Variante Reshevsky"
+          },
+          "eco": "D36",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5", "exd5", "Bg5", "c6", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c2d210db68d7aac3",
+          "names": {
+            "en": "Declined: Exchange Variation, Reshevsky Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Reshevsky",
+            "es": "Rehusado: Variante del Cambio, Variante Reshevsky"
+          },
+          "eco": "D36",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5", "exd5", "Bg5", "c6", "Qc2", "Be7", "e3", "Nbd7", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1a52a5ffbbae2883",
+          "names": {
+            "en": "Declined: Exchange Variation, Reshevsky Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Reshevsky",
+            "es": "Rehusado: Variante del Cambio, Variante Reshevsky"
+          },
+          "eco": "D36",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5", "exd5", "Bg5", "c6", "Qc2", "Be7", "e3", "O-O", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fd4b992f2fdffed3",
+          "names": {
+            "en": "Declined: Exchange Variation, Reshevsky Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Reshevsky",
+            "es": "Rehusado: Variante del Cambio, Variante Reshevsky"
+          },
+          "eco": "D36",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5", "exd5", "Bg5", "c6", "Qc2", "Be7", "e3", "O-O", "Bd3", "h6", "Bh4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9274df6709361c8e",
+          "names": {
+            "en": "Declined: Exchange Variation, Positional Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Positional",
+            "es": "Rehusado: Variante del Cambio, Variante Positional"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Positional Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5", "exd5", "Bg5", "c6", "e3", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-78ad68c48e427a5c",
+          "names": {
+            "en": "Declined: Exchange Variation, Reshevsky Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Reshevsky",
+            "es": "Rehusado: Variante del Cambio, Variante Reshevsky"
+          },
+          "eco": "D36",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "cxd5", "exd5", "Bg5", "c6", "e3", "Be7", "Bd3", "Nbd7", "Nge2", "O-O", "O-O", "h6", "Bh4", "Re8", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-00af4e9f43bc4bb3",
+          "names": {
+            "en": "Declined: Exchange Variation, Sämisch Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Sämisch",
+            "es": "Rehusado: Variante del Cambio, Variante Sämisch"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Sämisch Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Nbd7", "cxd5", "exd5", "Bf4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-32a239737a400a21",
+          "names": {
+            "en": "Declined: Exchange Variation, Positional Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Positional",
+            "es": "Rehusado: Variante del Cambio, Variante Positional"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Positional Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Nbd7", "cxd5", "exd5", "Bg5", "c6", "e3", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9be23ed2402b0462",
+          "names": {
+            "en": "Declined: Exchange Variation, Reshevsky Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Reshevsky",
+            "es": "Rehusado: Variante del Cambio, Variante Reshevsky"
+          },
+          "eco": "D36",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Nbd7", "cxd5", "exd5", "Bg5", "c6", "e3", "Be7", "Bd3", "Nf8", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-49d2d004f8f34ddf",
+          "names": {
+            "en": "Declined: Exchange Variation, Reshevsky Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Reshevsky",
+            "es": "Rehusado: Variante del Cambio, Variante Reshevsky"
+          },
+          "eco": "D36",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Nbd7", "cxd5", "exd5", "Bg5", "c6", "e3", "Be7", "Bd3", "O-O", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-72f47bd1aedc2427",
+          "names": {
+            "en": "Declined: Exchange Variation, Reshevsky Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Reshevsky",
+            "es": "Rehusado: Variante del Cambio, Variante Reshevsky"
+          },
+          "eco": "D36",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Nbd7", "cxd5", "exd5", "Bg5", "c6", "e3", "Be7", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bc43aaebc82e5b17",
+          "names": {
+            "en": "Declined: Exchange Variation",
+            "pt-BR": "Recusado: Variação da Troca",
+            "es": "Rehusado: Variante del Cambio"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "e3", "b6", "Nc3", "Bd6", "cxd5", "exd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-de0dc06ce387375e",
+          "names": {
+            "en": "Declined: Exchange Variation, Reshevsky Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Reshevsky",
+            "es": "Rehusado: Variante del Cambio, Variante Reshevsky"
+          },
+          "eco": "D36",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "cxd5", "exd5", "Bg5", "c6", "e3", "Be7", "Bd3", "Nbd7", "Nge2", "O-O", "O-O", "Re8", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-64034fe01635d219",
+          "names": {
+            "en": "Declined: Exchange Variation, Reshevsky Variation",
+            "pt-BR": "Recusado: Variação da Troca, Variação Reshevsky",
+            "es": "Rehusado: Variante del Cambio, Variante Reshevsky"
+          },
+          "eco": "D36",
+          "opening": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "cxd5", "exd5", "Bg5", "c6", "e3", "Be7", "Bd3", "Nbd7", "Nge2", "O-O", "O-O", "Re8", "Qc2", "Nf8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2ece4e3a6fb2af0e",
+          "names": {
+            "en": "Declined: Exchange Variation",
+            "pt-BR": "Recusado: Variação da Troca",
+            "es": "Rehusado: Variante del Cambio"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "e3", "Be7", "cxd5", "exd5", "Bd3", "O-O", "Nf3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4a9cb39562162dac",
+          "names": {
+            "en": "Declined: Exchange Variation",
+            "pt-BR": "Recusado: Variação da Troca",
+            "es": "Rehusado: Variante del Cambio"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Exchange Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "Nf6", "Nc3", "Nc6", "cxd5", "exd5", "Bg5", "Be7", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Semi-Tarrasch Defense",
+        "pt-BR": "Recusado: Defesa Semi-Tarrasch",
+        "es": "Rehusado: Defensa Semi-Tarrasch"
+      },
+      "lines": [
+        {
+          "id": "line-4de7ffbdf314e5f3",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch",
+            "es": "Rehusado: Defensa Semi-Tarrasch"
+          },
+          "eco": "D41",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense",
+          "moves": ["c4", "c5", "Nf3", "Nf6", "Nc3", "Nc6", "g3", "d5", "d4", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d5297a34f989c621",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch",
+            "es": "Rehusado: Defensa Semi-Tarrasch"
+          },
+          "eco": "D40",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-17bbd4b288386643",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch",
+            "es": "Rehusado: Defensa Semi-Tarrasch"
+          },
+          "eco": "D41",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "c5", "cxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-387d04e6eb5a8910",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, Pillsbury Variation",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Variação Pillsbury",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Variante Pillsbury"
+          },
+          "eco": "D41",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, Pillsbury Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "c5", "cxd5", "Nxd5", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2c544a7adb4673bc",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, Main Line",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Linha Principal",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Línea Principal"
+          },
+          "eco": "D42",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, Main Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "c5", "cxd5", "Nxd5", "e3", "Nc6", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c8d9189127100ede",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, Exchange Variation",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Variação da Troca",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Variante del Cambio"
+          },
+          "eco": "D41",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, Exchange Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "c5", "cxd5", "Nxd5", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e36bf0e007bd970f",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, Exchange Variation",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Variação da Troca",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Variante del Cambio"
+          },
+          "eco": "D41",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, Exchange Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "c5", "cxd5", "Nxd5", "e4", "Nxc3", "bxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4bd1473ff027f021",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch",
+            "es": "Rehusado: Defensa Semi-Tarrasch"
+          },
+          "eco": "D41",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "c5", "cxd5", "Nxd5", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6b7cc79770d54161",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch",
+            "es": "Rehusado: Defensa Semi-Tarrasch"
+          },
+          "eco": "D41",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "c5", "cxd5", "Nxd5", "g3", "Nc6", "Bg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-56f6c2110ada6d4c",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, Endgame Variation",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Variação Endgame",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Variante Endgame"
+          },
+          "eco": "D41",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, Endgame Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "c5", "cxd5", "cxd4", "Qxd4", "exd5", "e4", "dxe4", "Qxd8+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-138d91c55bc67c4e",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, with e3"
+          },
+          "eco": "D40",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, with e3",
+          "moves": ["d4", "d5", "c4", "c5", "Nf3", "Nf6", "Nc3", "e6", "e3", "Nc6", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-928c65343f146787",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, Krause Variation",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Variação Krause",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Variante Krause"
+          },
+          "eco": "D50",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, Krause Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "c5", "Nf3", "cxd4", "Nxd4", "e5", "Ndb5", "a6", "Qa4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0136a0e751c18521",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, Pillsbury Variation",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Variação Pillsbury",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Variante Pillsbury"
+          },
+          "eco": "D40",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, Pillsbury Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Nf3", "c5", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-523857e775c72d38",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, Kmoch Variation",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Variação Kmoch",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Variante Kmoch"
+          },
+          "eco": "D41",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, Kmoch Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Nf3", "c5", "cxd5", "Nxd5", "e4", "Nxc3", "bxc3", "cxd4", "cxd4", "Bb4+", "Bd2", "Bxd2+", "Qxd2", "O-O", "Bb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1b2726938b12c65e",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, Symmetrical Variation",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Variação Symmetrical",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Variante Symmetrical"
+          },
+          "eco": "D40",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, Symmetrical Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Nf3", "c5", "e3", "Nc6", "Bd3", "Bd6", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-61deeedbfd603db9",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, Levenfish Variation",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Variação Levenfish",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Variante Levenfish"
+          },
+          "eco": "D40",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, Levenfish Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Nf3", "c5", "e3", "Nc6", "Bd3", "Bd6", "O-O", "O-O", "Qe2", "Qe7", "dxc5", "Bxc5", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a50173e7d7f67fcf",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch",
+            "es": "Rehusado: Defensa Semi-Tarrasch"
+          },
+          "eco": "D40",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Nf3", "c5", "e3", "Nc6", "a3", "cxd4", "exd4", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-74083e30167fcc80",
+          "names": {
+            "en": "Declined: Semi-Tarrasch Defense, San Sebastian Variation",
+            "pt-BR": "Recusado: Defesa Semi-Tarrasch, Variação San Sebastian",
+            "es": "Rehusado: Defensa Semi-Tarrasch, Variante San Sebastian"
+          },
+          "eco": "D41",
+          "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense, San Sebastian Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "cxd5", "Nxd5", "e4", "Nxc3", "bxc3", "c5", "Nf3", "cxd4", "cxd4", "Bb4+", "Bd2", "Qa5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Classical Defense"
+      },
+      "lines": [
+        {
+          "id": "line-be42bfcaaf8bee92",
+          "names": {
+            "en": "Accepted: Classical Defense, Main Line"
+          },
+          "eco": "D27",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Main Line",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "a6", "Nc3", "b5", "Bb3", "Bb7", "O-O", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fa3df80fd791f823",
+          "names": {
+            "en": "Accepted: Classical Defense"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Classical Defense",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b188501d42afe932",
+          "names": {
+            "en": "Accepted: Classical Defense, Normal Line"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Normal Line",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e80aeeef7764dcb7",
+          "names": {
+            "en": "Accepted: Classical Defense, Steinitz Variation, Development Variation"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Steinitz Variation, Development Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f38398a2c34fefca",
+          "names": {
+            "en": "Accepted: Classical Defense, Main Line"
+          },
+          "eco": "D27",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Main Line",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e79f8d74921e9587",
+          "names": {
+            "en": "Accepted: Classical Defense, Main Line"
+          },
+          "eco": "D27",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Main Line",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "a6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-221d7380a0432854",
+          "names": {
+            "en": "Accepted: Classical Defense, Alekhine System"
+          },
+          "eco": "D28",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Alekhine System",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "a6", "Qe2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5cd40714b498101d",
+          "names": {
+            "en": "Accepted: Classical Defense, Alekhine System"
+          },
+          "eco": "D28",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Alekhine System",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "a6", "Qe2", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e19070fd6b87be79",
+          "names": {
+            "en": "Accepted: Classical Defense, Alekhine System, Main Line"
+          },
+          "eco": "D29",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Alekhine System, Main Line",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "a6", "Qe2", "b5", "Bb3", "Bb7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-419c55b92d7f933f",
+          "names": {
+            "en": "Accepted: Classical Defense, Alekhine System, Main Line"
+          },
+          "eco": "D29",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Alekhine System, Main Line",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "a6", "Qe2", "b5", "Bb3", "Bb7", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0c73ce407223dfd1",
+          "names": {
+            "en": "Accepted: Classical Defense, Alekhine System, Smyslov Variation"
+          },
+          "eco": "D29",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Alekhine System, Smyslov Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "a6", "Qe2", "b5", "Bb3", "Bb7", "Rd1", "Nbd7", "Nc3", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f33d30c6a3cb8746",
+          "names": {
+            "en": "Accepted: Classical Defense, Rubinstein Variation"
+          },
+          "eco": "D27",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Rubinstein Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "a6", "a4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dfae152ccb68a61a",
+          "names": {
+            "en": "Accepted: Classical Defense, Steinitz Variation, Exchange Variation"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Steinitz Variation, Exchange Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "cxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-aa1c62c3119a8a5c",
+          "names": {
+            "en": "Accepted: Classical Defense, Rubinstein Variation"
+          },
+          "eco": "D27",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Rubinstein Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "e6", "e3", "Nf6", "Bxc4", "Be7", "O-O", "O-O", "Nc3", "a6", "a4", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a852d92995c975e9",
+          "names": {
+            "en": "Accepted: Classical Defense, Russian Gambit"
+          },
+          "eco": "D27",
+          "opening": "Queen's Gambit Accepted: Classical Defense, Russian Gambit",
+          "moves": ["d4", "d5", "c4", "dxc4", "e3", "Nf6", "Bxc4", "e6", "Nf3", "c5", "O-O", "a6", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Albin Countergambit",
+        "pt-BR": "Recusado: Contragambito Albin",
+        "es": "Rehusado: Contragambito Albin"
+      },
+      "lines": [
+        {
+          "id": "line-bc0383f47c6d98d1",
+          "names": {
+            "en": "Declined: Albin Countergambit",
+            "pt-BR": "Recusado: Contragambito Albin",
+            "es": "Rehusado: Contragambito Albin"
+          },
+          "eco": "D08",
+          "opening": "Queen's Gambit Declined: Albin Countergambit",
+          "moves": ["d4", "d5", "c4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-65ba083fe0b5ca30",
+          "names": {
+            "en": "Declined: Albin Countergambit, Normal Line",
+            "pt-BR": "Recusado: Contragambito Albin, Linha Normal",
+            "es": "Rehusado: Contragambito Albin, Línea Normal"
+          },
+          "eco": "D08",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Normal Line",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-be8f6eb3286295af",
+          "names": {
+            "en": "Declined: Albin Countergambit, Modern Line"
+          },
+          "eco": "D08",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Modern Line",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "Nf3", "Nc6", "Nbd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c39570863b8cd82f",
+          "names": {
+            "en": "Declined: Albin Countergambit, Krenosz Variation",
+            "pt-BR": "Recusado: Contragambito Albin, Variação Krenosz",
+            "es": "Rehusado: Contragambito Albin, Variante Krenosz"
+          },
+          "eco": "D08",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Krenosz Variation",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "Nf3", "Nc6", "Nbd2", "Bg4", "h3", "Bxf3", "Nxf3", "Bb4+", "Bd2", "Qe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5ad68896faa2ab72",
+          "names": {
+            "en": "Declined: Albin Countergambit, Balogh Variation",
+            "pt-BR": "Recusado: Contragambito Albin, Variação Balogh",
+            "es": "Rehusado: Contragambito Albin, Variante Balogh"
+          },
+          "eco": "D08",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Balogh Variation",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "Nf3", "Nc6", "Nbd2", "Qe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-30f1a76b81aecafc",
+          "names": {
+            "en": "Declined: Albin Countergambit, Janowski Variation",
+            "pt-BR": "Recusado: Contragambito Albin, Variação Janowski",
+            "es": "Rehusado: Contragambito Albin, Variante Janowski"
+          },
+          "eco": "D08",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Janowski Variation",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "Nf3", "Nc6", "Nbd2", "f6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-49b4cefe8c479314",
+          "names": {
+            "en": "Declined: Albin Countergambit, Fianchetto Variation",
+            "pt-BR": "Recusado: Contragambito Albin, Variação do Fianqueto",
+            "es": "Rehusado: Contragambito Albin, Variante del Fianchetto"
+          },
+          "eco": "D09",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "Nf3", "Nc6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e5f5b04e16212cef",
+          "names": {
+            "en": "Declined: Albin Countergambit, Fianchetto Variation, Be6 Line",
+            "pt-BR": "Recusado: Contragambito Albin, Variação do Fianqueto, Linha Be6",
+            "es": "Rehusado: Contragambito Albin, Variante del Fianchetto, Línea Be6"
+          },
+          "eco": "D09",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation, Be6 Line",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "Nf3", "Nc6", "g3", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2b4f175843892f60",
+          "names": {
+            "en": "Declined: Albin Countergambit, Fianchetto Variation, Bf5 Line",
+            "pt-BR": "Recusado: Contragambito Albin, Variação do Fianqueto, Linha Bf5",
+            "es": "Rehusado: Contragambito Albin, Variante del Fianchetto, Línea Bf5"
+          },
+          "eco": "D09",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation, Bf5 Line",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "Nf3", "Nc6", "g3", "Bf5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-876f94905f1547c4",
+          "names": {
+            "en": "Declined: Albin Countergambit, Fianchetto Variation, Bg4 Line",
+            "pt-BR": "Recusado: Contragambito Albin, Variação do Fianqueto, Linha Bg4",
+            "es": "Rehusado: Contragambito Albin, Variante del Fianchetto, Línea Bg4"
+          },
+          "eco": "D09",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation, Bg4 Line",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "Nf3", "Nc6", "g3", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-160cc26f0c2b581e",
+          "names": {
+            "en": "Declined: Albin Countergambit, Tartakower Defense",
+            "pt-BR": "Recusado: Contragambito Albin, Defesa Tartakower",
+            "es": "Rehusado: Contragambito Albin, Defensa Tartakower"
+          },
+          "eco": "D08",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Tartakower Defense",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "Nf3", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-df17f89182d7d4b2",
+          "names": {
+            "en": "Declined: Albin Countergambit, Lasker Trap",
+            "pt-BR": "Recusado: Contragambito Albin, Armadilha Lasker",
+            "es": "Rehusado: Contragambito Albin, Trampa Lasker"
+          },
+          "eco": "D08",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Lasker Trap",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "e3", "Bb4+", "Bd2", "dxe3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dba6032029ae674f",
+          "names": {
+            "en": "Declined: Albin Countergambit, Spassky Variation",
+            "pt-BR": "Recusado: Contragambito Albin, Variação Spassky",
+            "es": "Rehusado: Contragambito Albin, Variante Spassky"
+          },
+          "eco": "D08",
+          "opening": "Queen's Gambit Declined: Albin Countergambit, Spassky Variation",
+          "moves": ["d4", "d5", "c4", "e5", "dxe5", "d4", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Chigorin Defense",
+        "pt-BR": "Recusado: Defesa Chigorin",
+        "es": "Rehusado: Defensa Chigorin"
+      },
+      "lines": [
+        {
+          "id": "line-f6b183f7dc8a0a01",
+          "names": {
+            "en": "Declined: Chigorin Defense",
+            "pt-BR": "Recusado: Defesa Chigorin",
+            "es": "Rehusado: Defensa Chigorin"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense",
+          "moves": ["d4", "d5", "c4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5a3b7024ff497cd4",
+          "names": {
+            "en": "Declined: Chigorin Defense",
+            "pt-BR": "Recusado: Defesa Chigorin",
+            "es": "Rehusado: Defensa Chigorin"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense",
+          "moves": ["d4", "d5", "c4", "Nc6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fc622b3905a528be",
+          "names": {
+            "en": "Declined: Chigorin Defense",
+            "pt-BR": "Recusado: Defesa Chigorin",
+            "es": "Rehusado: Defensa Chigorin"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense",
+          "moves": ["d4", "d5", "c4", "Nc6", "Nc3", "dxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-64083c79ee76b427",
+          "names": {
+            "en": "Declined: Chigorin Defense, Janowski Variation",
+            "pt-BR": "Recusado: Defesa Chigorin, Variação Janowski",
+            "es": "Rehusado: Defensa Chigorin, Variante Janowski"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense, Janowski Variation",
+          "moves": ["d4", "d5", "c4", "Nc6", "Nc3", "dxc4", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9f0c3774e51c9f02",
+          "names": {
+            "en": "Declined: Chigorin Defense, Modern Gambit"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense, Modern Gambit",
+          "moves": ["d4", "d5", "c4", "Nc6", "Nc3", "dxc4", "Nf3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9cb554f9e53748b4",
+          "names": {
+            "en": "Declined: Chigorin Defense, Tartakower Gambit",
+            "pt-BR": "Recusado: Defesa Chigorin, Gambito Tartakower",
+            "es": "Rehusado: Defensa Chigorin, Gambito Tartakower"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense, Tartakower Gambit",
+          "moves": ["d4", "d5", "c4", "Nc6", "Nc3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-31a91c04219d4ee4",
+          "names": {
+            "en": "Declined: Chigorin Defense",
+            "pt-BR": "Recusado: Defesa Chigorin",
+            "es": "Rehusado: Defensa Chigorin"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense",
+          "moves": ["d4", "d5", "c4", "Nc6", "Nc3", "e6", "Nf3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2f6957cafa49aaea",
+          "names": {
+            "en": "Declined: Chigorin Defense",
+            "pt-BR": "Recusado: Defesa Chigorin",
+            "es": "Rehusado: Defensa Chigorin"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense",
+          "moves": ["d4", "d5", "c4", "Nc6", "Nc3", "e6", "Nf3", "Nf6", "a3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bafaf034dff31c9c",
+          "names": {
+            "en": "Declined: Chigorin Defense, Main Line",
+            "pt-BR": "Recusado: Defesa Chigorin, Linha Principal",
+            "es": "Rehusado: Defensa Chigorin, Línea Principal"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense, Main Line",
+          "moves": ["d4", "d5", "c4", "Nc6", "Nf3", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8bf92a380c606abb",
+          "names": {
+            "en": "Declined: Chigorin Defense, Main Line, Alekhine Variation",
+            "pt-BR": "Recusado: Defesa Chigorin, Linha Principal, Variação Alekhine",
+            "es": "Rehusado: Defensa Chigorin, Línea Principal, Variante Alekhine"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense, Main Line, Alekhine Variation",
+          "moves": ["d4", "d5", "c4", "Nc6", "Nf3", "Bg4", "Qa4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-62806fb7ac4fe23b",
+          "names": {
+            "en": "Declined: Chigorin Defense, Lazard Gambit",
+            "pt-BR": "Recusado: Defesa Chigorin, Gambito Lazard",
+            "es": "Rehusado: Defensa Chigorin, Gambito Lazard"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense, Lazard Gambit",
+          "moves": ["d4", "d5", "c4", "Nc6", "Nf3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0a56ef2d434ef5a9",
+          "names": {
+            "en": "Declined: Chigorin Defense, Exchange Variation",
+            "pt-BR": "Recusado: Defesa Chigorin, Variação da Troca",
+            "es": "Rehusado: Defensa Chigorin, Variante del Cambio"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense, Exchange Variation",
+          "moves": ["d4", "d5", "c4", "Nc6", "cxd5", "Qxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6af9da7efe9c67dd",
+          "names": {
+            "en": "Declined: Chigorin Defense, Exchange Variation, Costa's Line",
+            "pt-BR": "Recusado: Defesa Chigorin, Variação da Troca, Linha Costa's",
+            "es": "Rehusado: Defensa Chigorin, Variante del Cambio, Línea Costa's"
+          },
+          "eco": "D07",
+          "opening": "Queen's Gambit Declined: Chigorin Defense, Exchange Variation, Costa's Line",
+          "moves": ["d4", "d5", "c4", "Nc6", "cxd5", "Qxd5", "e3", "e5", "Nc3", "Bb4", "Bd2", "Bxc3", "Bxc3", "exd4", "Ne2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined",
+        "pt-BR": "Recusado",
+        "es": "Rehusado"
+      },
+      "lines": [
+        {
+          "id": "line-08250912e1725577",
+          "names": {
+            "en": "Declined",
+            "pt-BR": "Recusado",
+            "es": "Rehusado"
+          },
+          "eco": "D52",
+          "opening": "Queen's Gambit Declined",
+          "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "e6", "Bg5", "Nbd7", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d0d669a8fe34818d",
+          "names": {
+            "en": "Declined",
+            "pt-BR": "Recusado",
+            "es": "Rehusado"
+          },
+          "eco": "D30",
+          "opening": "Queen's Gambit Declined",
+          "moves": ["d4", "d5", "c4", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fe2b4107d31a2e59",
+          "names": {
+            "en": "Declined",
+            "pt-BR": "Recusado",
+            "es": "Rehusado"
+          },
+          "eco": "D53",
+          "opening": "Queen's Gambit Declined",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ca77432dd149674b",
+          "names": {
+            "en": "Declined",
+            "pt-BR": "Recusado",
+            "es": "Rehusado"
+          },
+          "eco": "D53",
+          "opening": "Queen's Gambit Declined",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eddbf83723df49d4",
+          "names": {
+            "en": "Declined",
+            "pt-BR": "Recusado",
+            "es": "Rehusado"
+          },
+          "eco": "D53",
+          "opening": "Queen's Gambit Declined",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "Nf3", "c6", "e3", "dxc4", "Bxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ee0ab06fab85c5e5",
+          "names": {
+            "en": "Declined",
+            "pt-BR": "Recusado",
+            "es": "Rehusado"
+          },
+          "eco": "D53",
+          "opening": "Queen's Gambit Declined",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "Nf6", "Nc3", "Nc6", "Bg5", "Be7", "e3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1d6fd61ab6da3fa1",
+          "names": {
+            "en": "Declined",
+            "pt-BR": "Recusado",
+            "es": "Rehusado"
+          },
+          "eco": "D56",
+          "opening": "Queen's Gambit Declined",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "Nf6", "Nc3", "Nc6", "Bg5", "Be7", "e3", "O-O", "Rc1", "h6", "Bh4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2b07479f70f6450d",
+          "names": {
+            "en": "Declined",
+            "pt-BR": "Recusado",
+            "es": "Rehusado"
+          },
+          "eco": "D53",
+          "opening": "Queen's Gambit Declined",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "Nf6", "Nc3", "dxc4", "Bg5", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0df5dc4fe8b9d9c4",
+          "names": {
+            "en": "Declined",
+            "pt-BR": "Recusado",
+            "es": "Rehusado"
+          },
+          "eco": "D53",
+          "opening": "Queen's Gambit Declined",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "Nf6", "Nc3", "dxc4", "Bg5", "Be7", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2a52726350fe06ec",
+          "names": {
+            "en": "Declined",
+            "pt-BR": "Recusado",
+            "es": "Rehusado"
+          },
+          "eco": "D30",
+          "opening": "Queen's Gambit Declined",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "c6", "Qc2", "dxc4", "Qxc4", "Nf6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Harrwitz Attack",
+        "pt-BR": "Recusado: Ataque Harrwitz",
+        "es": "Rehusado: Ataque Harrwitz"
+      },
+      "lines": [
+        {
+          "id": "line-5152eb194b5b0ae7",
+          "names": {
+            "en": "Declined: Harrwitz Attack, Two Knights Defense, Blockade Line",
+            "pt-BR": "Recusado: Ataque Harrwitz, Defesa dos Dois Cavalos, Linha Blockade",
+            "es": "Rehusado: Ataque Harrwitz, Defensa de los Dos Caballos, Línea Blockade"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Harrwitz Attack, Two Knights Defense, Blockade Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "Nf3", "Be7", "Bf4", "O-O", "e3", "Nbd7", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c6ce7500c6cef1fd",
+          "names": {
+            "en": "Declined: Harrwitz Attack",
+            "pt-BR": "Recusado: Ataque Harrwitz",
+            "es": "Rehusado: Ataque Harrwitz"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Harrwitz Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bf4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cec17f3e0d548806",
+          "names": {
+            "en": "Declined: Harrwitz Attack, Two Knights Defense",
+            "pt-BR": "Recusado: Ataque Harrwitz, Defesa dos Dois Cavalos",
+            "es": "Rehusado: Ataque Harrwitz, Defensa de los Dos Caballos"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Harrwitz Attack, Two Knights Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bf4", "O-O", "e3", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-422aa783bf926874",
+          "names": {
+            "en": "Declined: Harrwitz Attack, Main Line",
+            "pt-BR": "Recusado: Ataque Harrwitz, Linha Principal",
+            "es": "Rehusado: Ataque Harrwitz, Línea Principal"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Harrwitz Attack, Main Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bf4", "O-O", "e3", "c5", "dxc5", "Bxc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-94dbe519bf7e7a00",
+          "names": {
+            "en": "Declined: Harrwitz Attack",
+            "pt-BR": "Recusado: Ataque Harrwitz",
+            "es": "Rehusado: Ataque Harrwitz"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Harrwitz Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bf4", "O-O", "e3", "c5", "dxc5", "Bxc5", "Qc2", "Nc6", "Rd1", "Qa5", "a3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b81297140524bda5",
+          "names": {
+            "en": "Declined: Harrwitz Attack",
+            "pt-BR": "Recusado: Ataque Harrwitz",
+            "es": "Rehusado: Ataque Harrwitz"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Harrwitz Attack",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bf4", "O-O", "e3", "c5", "dxc5", "Bxc5", "Qc2", "Nc6", "a3", "Qa5", "O-O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-98f270eb52dc84a7",
+          "names": {
+            "en": "Declined: Harrwitz Attack, Fianchetto Defense"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Harrwitz Attack, Fianchetto Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Be7", "Nf3", "Nf6", "Bf4", "O-O", "e3", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-35f2d0a2de81970e",
+          "names": {
+            "en": "Declined: Harrwitz Attack",
+            "pt-BR": "Recusado: Ataque Harrwitz",
+            "es": "Rehusado: Ataque Harrwitz"
+          },
+          "eco": "D35",
+          "opening": "Queen's Gambit Declined: Harrwitz Attack",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bf4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d3c7d0088c71c360",
+          "names": {
+            "en": "Declined: Harrwitz Attack, Orthodox Defense",
+            "pt-BR": "Recusado: Ataque Harrwitz, Defesa Orthodox",
+            "es": "Rehusado: Ataque Harrwitz, Defensa Orthodox"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Harrwitz Attack, Orthodox Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Nf3", "Be7", "Bf4", "O-O", "e3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Normal Variation",
+        "pt-BR": "Aceito: Variação Normal",
+        "es": "Aceptado: Variante Normal"
+      },
+      "lines": [
+        {
+          "id": "line-9da31abd225614f5",
+          "names": {
+            "en": "Accepted: Normal Variation",
+            "pt-BR": "Aceito: Variação Normal",
+            "es": "Aceptado: Variante Normal"
+          },
+          "eco": "D21",
+          "opening": "Queen's Gambit Accepted: Normal Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-986bd3c5921233e8",
+          "names": {
+            "en": "Accepted: Normal Variation",
+            "pt-BR": "Aceito: Variação Normal",
+            "es": "Aceptado: Variante Normal"
+          },
+          "eco": "D25",
+          "opening": "Queen's Gambit Accepted: Normal Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ce5228ab947bba1c",
+          "names": {
+            "en": "Accepted: Normal Variation, Traditional System",
+            "pt-BR": "Aceito: Variação Normal, Sistema Traditional",
+            "es": "Aceptado: Variante Normal, Sistema Traditional"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Normal Variation, Traditional System",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8dc367e7abbc2073",
+          "names": {
+            "en": "Accepted: Normal Variation, Traditional System",
+            "pt-BR": "Aceito: Variação Normal, Sistema Traditional",
+            "es": "Aceptado: Variante Normal, Sistema Traditional"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Normal Variation, Traditional System",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "Be7", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-250087da84473de0",
+          "names": {
+            "en": "Accepted: Normal Variation, Traditional System",
+            "pt-BR": "Aceito: Variação Normal, Sistema Traditional",
+            "es": "Aceptado: Variante Normal, Sistema Traditional"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Normal Variation, Traditional System",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "Be7", "O-O", "O-O", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-22b1ba901787b407",
+          "names": {
+            "en": "Accepted: Normal Variation, Traditional System",
+            "pt-BR": "Aceito: Variação Normal, Sistema Traditional",
+            "es": "Aceptado: Variante Normal, Sistema Traditional"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Normal Variation, Traditional System",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "Be7", "O-O", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c85a103fd27add8b",
+          "names": {
+            "en": "Accepted: Normal Variation, .. a6 Sideline"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Normal Variation, .. a6 Sideline",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "a6", "Nc3", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3ebbbb816737038c",
+          "names": {
+            "en": "Accepted: Normal Variation, .. a6 Sideline"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Normal Variation, .. a6 Sideline",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "a6", "Nc3", "b5", "Bb3", "Bb7", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Lasker Defense",
+        "pt-BR": "Recusado: Defesa Lasker",
+        "es": "Rehusado: Defensa Lasker"
+      },
+      "lines": [
+        {
+          "id": "line-0b7ad5c970467b91",
+          "names": {
+            "en": "Declined: Lasker Defense",
+            "pt-BR": "Recusado: Defesa Lasker",
+            "es": "Rehusado: Defensa Lasker"
+          },
+          "eco": "D53",
+          "opening": "Queen's Gambit Declined: Lasker Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "Bg5", "Be7", "e3", "Ne4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eaddbf2b7882916c",
+          "names": {
+            "en": "Declined: Lasker Defense, Bernstein Variation",
+            "pt-BR": "Recusado: Defesa Lasker, Variação Bernstein",
+            "es": "Rehusado: Defensa Lasker, Variante Bernstein"
+          },
+          "eco": "D57",
+          "opening": "Queen's Gambit Declined: Lasker Defense, Bernstein Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "Bg5", "Be7", "e3", "h6", "Bh4", "O-O", "Nf3", "Ne4", "Bxe7", "Qxe7", "cxd5", "Nxc3", "bxc3", "exd5", "Qb3", "Qd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-56bdf1039e687706",
+          "names": {
+            "en": "Declined: Lasker Defense, Teichmann Variation",
+            "pt-BR": "Recusado: Defesa Lasker, Variação Teichmann",
+            "es": "Rehusado: Defensa Lasker, Variante Teichmann"
+          },
+          "eco": "D56",
+          "opening": "Queen's Gambit Declined: Lasker Defense, Teichmann Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "h6", "Bh4", "O-O", "e3", "Ne4", "Bxe7", "Qxe7", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e9eca35e366e3bc5",
+          "names": {
+            "en": "Declined: Lasker Defense",
+            "pt-BR": "Recusado: Defesa Lasker",
+            "es": "Rehusado: Defensa Lasker"
+          },
+          "eco": "D56",
+          "opening": "Queen's Gambit Declined: Lasker Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Be7", "Nf3", "Nf6", "Bg5", "h6", "Bh4", "O-O", "e3", "Ne4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-25d95e27853e969e",
+          "names": {
+            "en": "Declined: Lasker Defense, Main Line",
+            "pt-BR": "Recusado: Defesa Lasker, Linha Principal",
+            "es": "Rehusado: Defensa Lasker, Línea Principal"
+          },
+          "eco": "D57",
+          "opening": "Queen's Gambit Declined: Lasker Defense, Main Line",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Be7", "Nf3", "Nf6", "Bg5", "h6", "Bh4", "O-O", "e3", "Ne4", "Bxe7", "Qxe7", "cxd5", "Nxc3", "bxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5539fbe91db45b1a",
+          "names": {
+            "en": "Declined: Lasker Defense, Russian Variation"
+          },
+          "eco": "D56",
+          "opening": "Queen's Gambit Declined: Lasker Defense, Russian Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "h6", "Bh4", "Ne4", "Bxe7", "Qxe7", "Qc2", "Nf6", "Bd3", "dxc4", "Bxc4", "c5", "O-O", "Nc6", "Rfd1", "Bd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b3ab378c553df1d1",
+          "names": {
+            "en": "Declined: Lasker Defense, Bernstein Variation, Mar del Plata Gambit"
+          },
+          "eco": "D57",
+          "opening": "Queen's Gambit Declined: Lasker Defense, Bernstein Variation, Mar del Plata Gambit",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "h6", "Bh4", "Ne4", "Bxe7", "Qxe7", "cxd5", "Nxc3", "bxc3", "exd5", "Qb3", "Rd8", "c4", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-11efa26203f3a991",
+          "names": {
+            "en": "Declined: Lasker Defense",
+            "pt-BR": "Recusado: Defesa Lasker",
+            "es": "Rehusado: Defensa Lasker"
+          },
+          "eco": "D56",
+          "opening": "Queen's Gambit Declined: Lasker Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "Nf6", "Nc3", "Nc6", "Bg5", "Be7", "e3", "O-O", "Rc1", "h6", "Bh4", "Ne4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Central Variation"
+      },
+      "lines": [
+        {
+          "id": "line-9e78bca3d1ae3d20",
+          "names": {
+            "en": "Accepted: Central Variation, Modern Defense"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Central Variation, Modern Defense",
+          "moves": ["d4", "d5", "c4", "dxc4", "e4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-11e801d54d9da2f8",
+          "names": {
+            "en": "Accepted: Central Variation, Alekhine System"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Central Variation, Alekhine System",
+          "moves": ["d4", "d5", "c4", "dxc4", "e4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5e3389fa92f3adba",
+          "names": {
+            "en": "Accepted: Central Variation, Greco Variation"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Central Variation, Greco Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "e4", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e5d1538ba6e4f3c7",
+          "names": {
+            "en": "Accepted: Central Variation, Rubinstein Defense"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Central Variation, Rubinstein Defense",
+          "moves": ["d4", "d5", "c4", "dxc4", "e4", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-96b3cb52e10dfb06",
+          "names": {
+            "en": "Accepted: Central Variation, Rubinstein Defense, Yefimov Gambit"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Central Variation, Rubinstein Defense, Yefimov Gambit",
+          "moves": ["d4", "d5", "c4", "dxc4", "e4", "c5", "d5", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-71a34a4398a68e70",
+          "names": {
+            "en": "Accepted: Central Variation, McDonnell Defense"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Central Variation, McDonnell Defense",
+          "moves": ["d4", "d5", "c4", "dxc4", "e4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eddee825a2ad9a82",
+          "names": {
+            "en": "Accepted: Central Variation, McDonnell Defense, Somov Gambit"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Central Variation, McDonnell Defense, Somov Gambit",
+          "moves": ["d4", "d5", "c4", "dxc4", "e4", "e5", "Bxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Cambridge Springs Defense",
+        "pt-BR": "Recusado: Defesa Cambridge Springs",
+        "es": "Rehusado: Defensa Cambridge Springs"
+      },
+      "lines": [
+        {
+          "id": "line-ed4b5229803c47c7",
+          "names": {
+            "en": "Declined: Cambridge Springs Defense",
+            "pt-BR": "Recusado: Defesa Cambridge Springs",
+            "es": "Rehusado: Defensa Cambridge Springs"
+          },
+          "eco": "D52",
+          "opening": "Queen's Gambit Declined: Cambridge Springs Defense",
+          "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "e6", "Bg5", "Nbd7", "e3", "Qa5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-de91b110290cbe65",
+          "names": {
+            "en": "Declined: Cambridge Springs Defense, Bogoljubow Variation",
+            "pt-BR": "Recusado: Defesa Cambridge Springs, Variação Bogoljubow",
+            "es": "Rehusado: Defensa Cambridge Springs, Variante Bogoljubow"
+          },
+          "eco": "D52",
+          "opening": "Queen's Gambit Declined: Cambridge Springs Defense, Bogoljubow Variation",
+          "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "e6", "Bg5", "Nbd7", "e3", "Qa5", "Nd2", "Bb4", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c8a73da3bbb2a071",
+          "names": {
+            "en": "Declined: Cambridge Springs Defense, Rubinstein Variation",
+            "pt-BR": "Recusado: Defesa Cambridge Springs, Variação Rubinstein",
+            "es": "Rehusado: Defensa Cambridge Springs, Variante Rubinstein"
+          },
+          "eco": "D52",
+          "opening": "Queen's Gambit Declined: Cambridge Springs Defense, Rubinstein Variation",
+          "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "e6", "Bg5", "Nbd7", "e3", "Qa5", "Nd2", "dxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-453727ecc9852591",
+          "names": {
+            "en": "Declined: Cambridge Springs Defense",
+            "pt-BR": "Recusado: Defesa Cambridge Springs",
+            "es": "Rehusado: Defensa Cambridge Springs"
+          },
+          "eco": "D52",
+          "opening": "Queen's Gambit Declined: Cambridge Springs Defense",
+          "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "e6", "Bg5", "Nbd7", "e3", "Qa5", "cxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-80bdd7381d3a76bd",
+          "names": {
+            "en": "Declined: Cambridge Springs Defense, Yugoslav Variation"
+          },
+          "eco": "D52",
+          "opening": "Queen's Gambit Declined: Cambridge Springs Defense, Yugoslav Variation",
+          "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "e6", "Bg5", "Nbd7", "e3", "Qa5", "cxd5", "Nxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-406ca2267a14507e",
+          "names": {
+            "en": "Declined: Cambridge Springs Defense, Capablanca Variation",
+            "pt-BR": "Recusado: Defesa Cambridge Springs, Variação Capablanca",
+            "es": "Rehusado: Defensa Cambridge Springs, Variante Capablanca"
+          },
+          "eco": "D52",
+          "opening": "Queen's Gambit Declined: Cambridge Springs Defense, Capablanca Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Nbd7", "e3", "c6", "Nf3", "Qa5", "Bxf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b6d0579bc760d215",
+          "names": {
+            "en": "Declined: Cambridge Springs Defense, Argentine Variation",
+            "pt-BR": "Recusado: Defesa Cambridge Springs, Variação Argentine",
+            "es": "Rehusado: Defensa Cambridge Springs, Variante Argentine"
+          },
+          "eco": "D52",
+          "opening": "Queen's Gambit Declined: Cambridge Springs Defense, Argentine Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Nbd7", "e3", "c6", "Nf3", "Qa5", "Nd2", "Bb4", "Qc2", "O-O", "Bh4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Tarrasch Defense",
+        "pt-BR": "Recusado: Defesa Tarrasch",
+        "es": "Rehusado: Defensa Tarrasch"
+      },
+      "lines": [
+        {
+          "id": "line-a093aa6cd25c99db",
+          "names": {
+            "en": "Declined: Tarrasch Defense",
+            "pt-BR": "Recusado: Defesa Tarrasch",
+            "es": "Rehusado: Defensa Tarrasch"
+          },
+          "eco": "D32",
+          "opening": "Queen's Gambit Declined: Tarrasch Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "e3", "c5", "cxd5", "exd5", "Nc3", "a6", "Be2", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-229a3a5f1b3cd3ce",
+          "names": {
+            "en": "Declined: Tarrasch Defense",
+            "pt-BR": "Recusado: Defesa Tarrasch",
+            "es": "Rehusado: Defensa Tarrasch"
+          },
+          "eco": "D32",
+          "opening": "Queen's Gambit Declined: Tarrasch Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-218b61a449d816fb",
+          "names": {
+            "en": "Declined: Tarrasch Defense",
+            "pt-BR": "Recusado: Defesa Tarrasch",
+            "es": "Rehusado: Defensa Tarrasch"
+          },
+          "eco": "D32",
+          "opening": "Queen's Gambit Declined: Tarrasch Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "Bg5", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cf787091e3af786e",
+          "names": {
+            "en": "Declined: Tarrasch Defense",
+            "pt-BR": "Recusado: Defesa Tarrasch",
+            "es": "Rehusado: Defensa Tarrasch"
+          },
+          "eco": "D32",
+          "opening": "Queen's Gambit Declined: Tarrasch Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "Bg5", "Be7", "Bxe7", "Ngxe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-78568ef228e04f18",
+          "names": {
+            "en": "Declined: Tarrasch Defense, Pseudo-Tarrasch"
+          },
+          "eco": "D30",
+          "opening": "Queen's Gambit Declined: Tarrasch Defense, Pseudo-Tarrasch",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-27369891a66ac954",
+          "names": {
+            "en": "Declined: Tarrasch Defense, Pseudo-Tarrasch Bishop Attack"
+          },
+          "eco": "D30",
+          "opening": "Queen's Gambit Declined: Tarrasch Defense, Pseudo-Tarrasch Bishop Attack",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "c5", "cxd5", "exd5", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a27c2ec81e57132f",
+          "names": {
+            "en": "Declined: Tarrasch Defense, Stoltz Variation",
+            "pt-BR": "Recusado: Defesa Tarrasch, Variação Stoltz",
+            "es": "Rehusado: Defensa Tarrasch, Variante Stoltz"
+          },
+          "eco": "D34",
+          "opening": "Queen's Gambit Declined: Tarrasch Defense, Stoltz Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "c5", "cxd5", "exd5", "g3", "Nc6", "Bg2", "Nf6", "O-O", "Be7", "Nc3", "O-O", "Bg5", "Be6", "Rc1", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Baltic Defense",
+        "pt-BR": "Recusado: Defesa Baltic",
+        "es": "Rehusado: Defensa Baltic"
+      },
+      "lines": [
+        {
+          "id": "line-929ddede6836afd2",
+          "names": {
+            "en": "Declined: Baltic Defense, Pseudo-Slav"
+          },
+          "eco": "D02",
+          "opening": "Queen's Gambit Declined: Baltic Defense, Pseudo-Slav",
+          "moves": ["d4", "d5", "Nf3", "Bf5", "c4", "e6", "Nc3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dc1fd096d539dfc4",
+          "names": {
+            "en": "Declined: Baltic Defense",
+            "pt-BR": "Recusado: Defesa Baltic",
+            "es": "Rehusado: Defensa Baltic"
+          },
+          "eco": "D06",
+          "opening": "Queen's Gambit Declined: Baltic Defense",
+          "moves": ["d4", "d5", "c4", "Bf5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-00239d1230faff2f",
+          "names": {
+            "en": "Declined: Baltic Defense, Pseudo-Chigorin"
+          },
+          "eco": "D06",
+          "opening": "Queen's Gambit Declined: Baltic Defense, Pseudo-Chigorin",
+          "moves": ["d4", "d5", "c4", "Bf5", "Nc3", "e6", "Nf3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-06c0b6a36a90f2a8",
+          "names": {
+            "en": "Declined: Baltic Defense, Queen Attack Deferred"
+          },
+          "eco": "D06",
+          "opening": "Queen's Gambit Declined: Baltic Defense, Queen Attack Deferred",
+          "moves": ["d4", "d5", "c4", "Bf5", "Nc3", "e6", "Qb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3cb47c8097ff85ce",
+          "names": {
+            "en": "Declined: Baltic Defense, Queen Attack"
+          },
+          "eco": "D06",
+          "opening": "Queen's Gambit Declined: Baltic Defense, Queen Attack",
+          "moves": ["d4", "d5", "c4", "Bf5", "Qb3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7a58b3a420e397a8",
+          "names": {
+            "en": "Declined: Baltic Defense, Argentinian Gambit",
+            "pt-BR": "Recusado: Defesa Baltic, Gambito Argentinian",
+            "es": "Rehusado: Defensa Baltic, Gambito Argentinian"
+          },
+          "eco": "D06",
+          "opening": "Queen's Gambit Declined: Baltic Defense, Argentinian Gambit",
+          "moves": ["d4", "d5", "c4", "Bf5", "cxd5", "Bxb1", "Qa4+", "c6", "dxc6", "Nxc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Modern Variation",
+        "pt-BR": "Recusado: Variação Moderna",
+        "es": "Rehusado: Variante Moderna"
+      },
+      "lines": [
+        {
+          "id": "line-1f75ec8f495524bd",
+          "names": {
+            "en": "Declined: Modern Variation, Normal Line",
+            "pt-BR": "Recusado: Variação Moderna, Linha Normal",
+            "es": "Rehusado: Variante Moderna, Línea Normal"
+          },
+          "eco": "D55",
+          "opening": "Queen's Gambit Declined: Modern Variation, Normal Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9c6e8b0ff6ff2610",
+          "names": {
+            "en": "Declined: Modern Variation",
+            "pt-BR": "Recusado: Variação Moderna",
+            "es": "Rehusado: Variante Moderna"
+          },
+          "eco": "D50",
+          "opening": "Queen's Gambit Declined: Modern Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-87b5190f35733b45",
+          "names": {
+            "en": "Declined: Modern Variation, Heral Variation",
+            "pt-BR": "Recusado: Variação Moderna, Variação Heral",
+            "es": "Rehusado: Variante Moderna, Variante Heral"
+          },
+          "eco": "D53",
+          "opening": "Queen's Gambit Declined: Modern Variation, Heral Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "Bxf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-091ae6f826fc2d31",
+          "names": {
+            "en": "Declined: Modern Variation, Knight Defense"
+          },
+          "eco": "D51",
+          "opening": "Queen's Gambit Declined: Modern Variation, Knight Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9097fc806b4ca1ad",
+          "names": {
+            "en": "Declined: Modern Variation, Knight Defense"
+          },
+          "eco": "D51",
+          "opening": "Queen's Gambit Declined: Modern Variation, Knight Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Nbd7", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ca1ddfb46663f649",
+          "names": {
+            "en": "Declined: Modern Variation, Knight Defense"
+          },
+          "eco": "D51",
+          "opening": "Queen's Gambit Declined: Modern Variation, Knight Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Nbd7", "e3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Old Variation"
+      },
+      "lines": [
+        {
+          "id": "line-c986027c19683ba8",
+          "names": {
+            "en": "Accepted: Old Variation"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Old Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-102791a83c905518",
+          "names": {
+            "en": "Accepted: Old Variation, Korchnoi Gambit"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Old Variation, Korchnoi Gambit",
+          "moves": ["d4", "d5", "c4", "dxc4", "e3", "e5", "Bxc4", "exd4", "Qb3", "Qe7", "Kf1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0a78dfc0d998e6fe",
+          "names": {
+            "en": "Accepted: Old Variation, Novikov Gambit"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Old Variation, Novikov Gambit",
+          "moves": ["d4", "d5", "c4", "dxc4", "e3", "e5", "Bxc4", "exd4", "Qb3", "Qe7", "Nd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2d0b2c0d502f245e",
+          "names": {
+            "en": "Accepted: Old Variation, Christensen Gambit"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Old Variation, Christensen Gambit",
+          "moves": ["d4", "d5", "c4", "dxc4", "e3", "e5", "Bxc4", "exd4", "Qb3", "Qe7", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8b342adc2ada3fbf",
+          "names": {
+            "en": "Accepted: Old Variation, Billinger Gambit"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted: Old Variation, Billinger Gambit",
+          "moves": ["d4", "d5", "c4", "dxc4", "e3", "e5", "Bxc4", "exd4", "Qb3", "Qe7", "a3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted",
+        "pt-BR": "Aceito",
+        "es": "Aceptado"
+      },
+      "lines": [
+        {
+          "id": "line-89dac0b0326d7b36",
+          "names": {
+            "en": "Accepted",
+            "pt-BR": "Aceito",
+            "es": "Aceptado"
+          },
+          "eco": "D20",
+          "opening": "Queen's Gambit Accepted",
+          "moves": ["d4", "d5", "c4", "dxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-af1da22c57a6f8f7",
+          "names": {
+            "en": "Accepted",
+            "pt-BR": "Aceito",
+            "es": "Aceptado"
+          },
+          "eco": "D23",
+          "opening": "Queen's Gambit Accepted",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-31deec2d0f716ec9",
+          "names": {
+            "en": "Accepted",
+            "pt-BR": "Aceito",
+            "es": "Aceptado"
+          },
+          "eco": "D24",
+          "opening": "Queen's Gambit Accepted",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "Nf6", "Nc3", "dxc4", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-06b754a27866668e",
+          "names": {
+            "en": "Accepted",
+            "pt-BR": "Aceito",
+            "es": "Aceptado"
+          },
+          "eco": "D24",
+          "opening": "Queen's Gambit Accepted",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "Nf6", "Nc3", "dxc4", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Alekhine Defense",
+        "pt-BR": "Aceito: Defesa Alekhine",
+        "es": "Aceptado: Defensa Alekhine"
+      },
+      "lines": [
+        {
+          "id": "line-42ff11f08f70bac1",
+          "names": {
+            "en": "Accepted: Alekhine Defense",
+            "pt-BR": "Aceito: Defesa Alekhine",
+            "es": "Aceptado: Defensa Alekhine"
+          },
+          "eco": "D22",
+          "opening": "Queen's Gambit Accepted: Alekhine Defense",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1ec4743cd39d4c0c",
+          "names": {
+            "en": "Accepted: Alekhine Defense, Alatortsev Variation",
+            "pt-BR": "Aceito: Defesa Alekhine, Variação Alatortsev",
+            "es": "Aceptado: Defensa Alekhine, Variante Alatortsev"
+          },
+          "eco": "D22",
+          "opening": "Queen's Gambit Accepted: Alekhine Defense, Alatortsev Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "a6", "e3", "Bg4", "Bxc4", "e6", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e565a53a0817c546",
+          "names": {
+            "en": "Accepted: Alekhine Defense, Haberditz Variation",
+            "pt-BR": "Aceito: Defesa Alekhine, Variação Haberditz",
+            "es": "Aceptado: Defensa Alekhine, Variante Haberditz"
+          },
+          "eco": "D22",
+          "opening": "Queen's Gambit Accepted: Alekhine Defense, Haberditz Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "a6", "e3", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d0f6f55c200d6783",
+          "names": {
+            "en": "Accepted: Alekhine Defense, Borisenko-Furman Variation",
+            "pt-BR": "Aceito: Defesa Alekhine, Variação Borisenko-Furman",
+            "es": "Aceptado: Defensa Alekhine, Variante Borisenko-Furman"
+          },
+          "eco": "D21",
+          "opening": "Queen's Gambit Accepted: Alekhine Defense, Borisenko-Furman Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "a6", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Tartakower Defense",
+        "pt-BR": "Recusado: Defesa Tartakower",
+        "es": "Rehusado: Defensa Tartakower"
+      },
+      "lines": [
+        {
+          "id": "line-c7cb0bd1e2ad6edc",
+          "names": {
+            "en": "Declined: Tartakower Defense",
+            "pt-BR": "Recusado: Defesa Tartakower",
+            "es": "Rehusado: Defensa Tartakower"
+          },
+          "eco": "D58",
+          "opening": "Queen's Gambit Declined: Tartakower Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "h6", "Bh4", "O-O", "e3", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-37a5dc85bf04edef",
+          "names": {
+            "en": "Declined: Tartakower Defense, Makogonov Exchange Variation"
+          },
+          "eco": "D59",
+          "opening": "Queen's Gambit Declined: Tartakower Defense, Makogonov Exchange Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Be7", "Nf3", "Nf6", "Bg5", "h6", "Bh4", "O-O", "e3", "b6", "cxd5", "Nxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-17cef5a842173bb8",
+          "names": {
+            "en": "Declined: Tartakower Defense",
+            "pt-BR": "Recusado: Defesa Tartakower",
+            "es": "Rehusado: Defensa Tartakower"
+          },
+          "eco": "D59",
+          "opening": "Queen's Gambit Declined: Tartakower Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Be7", "Nf3", "Nf6", "Bg5", "h6", "Bh4", "O-O", "e3", "b6", "cxd5", "Nxd5", "Bxe7", "Qxe7", "Nxd5", "exd5", "Rc1", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9bce6fbc26f5970f",
+          "names": {
+            "en": "Declined: Tartakower Defense, Exchange Variation",
+            "pt-BR": "Recusado: Defesa Tartakower, Variação da Troca",
+            "es": "Rehusado: Defensa Tartakower, Variante del Cambio"
+          },
+          "eco": "D58",
+          "opening": "Queen's Gambit Declined: Tartakower Defense, Exchange Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Be7", "Nf3", "Nf6", "Bg5", "h6", "Bh4", "O-O", "e3", "b6", "cxd5", "exd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Mannheim Variation",
+        "pt-BR": "Aceito: Variação Mannheim",
+        "es": "Aceptado: Variante Mannheim"
+      },
+      "lines": [
+        {
+          "id": "line-f3163547cea317d5",
+          "names": {
+            "en": "Accepted: Mannheim Variation",
+            "pt-BR": "Aceito: Variação Mannheim",
+            "es": "Aceptado: Variante Mannheim"
+          },
+          "eco": "D23",
+          "opening": "Queen's Gambit Accepted: Mannheim Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "Qa4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-66058375fe0eeab9",
+          "names": {
+            "en": "Accepted: Mannheim Variation",
+            "pt-BR": "Aceito: Variação Mannheim",
+            "es": "Aceptado: Variante Mannheim"
+          },
+          "eco": "D23",
+          "opening": "Queen's Gambit Accepted: Mannheim Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "Qa4+", "c6", "Qxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e9857ba9adc4fd3f",
+          "names": {
+            "en": "Accepted: Mannheim Variation",
+            "pt-BR": "Aceito: Variação Mannheim",
+            "es": "Aceptado: Variante Mannheim"
+          },
+          "eco": "D23",
+          "opening": "Queen's Gambit Accepted: Mannheim Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "Qa4+", "c6", "Qxc4", "e6", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Austrian Defense",
+        "pt-BR": "Recusado: Defesa Austrian",
+        "es": "Rehusado: Defensa Austrian"
+      },
+      "lines": [
+        {
+          "id": "line-87848b34f76102db",
+          "names": {
+            "en": "Declined: Austrian Defense",
+            "pt-BR": "Recusado: Defesa Austrian",
+            "es": "Rehusado: Defensa Austrian"
+          },
+          "eco": "D06",
+          "opening": "Queen's Gambit Declined: Austrian Defense",
+          "moves": ["d4", "d5", "c4", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-195f59c1e86724d2",
+          "names": {
+            "en": "Declined: Austrian Defense, Gusev Countergambit",
+            "pt-BR": "Recusado: Defesa Austrian, Contragambito Gusev",
+            "es": "Rehusado: Defensa Austrian, Contragambito Gusev"
+          },
+          "eco": "D06",
+          "opening": "Queen's Gambit Declined: Austrian Defense, Gusev Countergambit",
+          "moves": ["d4", "d5", "c4", "c5", "cxd5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d8bbab7c5b5cb5c0",
+          "names": {
+            "en": "Declined: Austrian Defense, Haberditz Variation",
+            "pt-BR": "Recusado: Defesa Austrian, Variação Haberditz",
+            "es": "Rehusado: Defensa Austrian, Variante Haberditz"
+          },
+          "eco": "D06",
+          "opening": "Queen's Gambit Declined: Austrian Defense, Haberditz Variation",
+          "moves": ["d4", "d5", "c4", "c5", "cxd5", "Nf6", "e4", "Nxe4", "dxc5", "Qa5+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Capablanca Variation",
+        "pt-BR": "Recusado: Variação Capablanca",
+        "es": "Rehusado: Variante Capablanca"
+      },
+      "lines": [
+        {
+          "id": "line-5ba0721f22290b83",
+          "names": {
+            "en": "Declined: Capablanca Variation",
+            "pt-BR": "Recusado: Variação Capablanca",
+            "es": "Rehusado: Variante Capablanca"
+          },
+          "eco": "D30",
+          "opening": "Queen's Gambit Declined: Capablanca Variation",
+          "moves": ["d4", "Nf6", "Nf3", "e6", "c4", "d5", "Bg5", "c6", "Nbd2", "Nbd7", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-31d6a95adf4e3a9c",
+          "names": {
+            "en": "Declined: Capablanca Variation",
+            "pt-BR": "Recusado: Variação Capablanca",
+            "es": "Rehusado: Variante Capablanca"
+          },
+          "eco": "D30",
+          "opening": "Queen's Gambit Declined: Capablanca Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Bg5", "h6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c090b2e86d54b6fd",
+          "names": {
+            "en": "Declined: Capablanca Variation, Anti-Cambridge Springs Variation",
+            "pt-BR": "Recusado: Variação Capablanca, Variação Anti-Cambridge Springs",
+            "es": "Rehusado: Variante Capablanca, Variante Anti-Cambridge Springs"
+          },
+          "eco": "D51",
+          "opening": "Queen's Gambit Declined: Capablanca Variation, Anti-Cambridge Springs Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Nbd7", "e3", "c6", "a3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Neo-Orthodox Variation",
+        "pt-BR": "Recusado: Variação Neo-Orthodox",
+        "es": "Rehusado: Variante Neo-Orthodox"
+      },
+      "lines": [
+        {
+          "id": "line-159172a732c1647e",
+          "names": {
+            "en": "Declined: Neo-Orthodox Variation",
+            "pt-BR": "Recusado: Variação Neo-Orthodox",
+            "es": "Rehusado: Variante Neo-Orthodox"
+          },
+          "eco": "D54",
+          "opening": "Queen's Gambit Declined: Neo-Orthodox Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "d5", "Bg5", "Be7", "e3", "O-O", "Rc1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2842a9bf31971672",
+          "names": {
+            "en": "Declined: Neo-Orthodox Variation",
+            "pt-BR": "Recusado: Variação Neo-Orthodox",
+            "es": "Rehusado: Variante Neo-Orthodox"
+          },
+          "eco": "D55",
+          "opening": "Queen's Gambit Declined: Neo-Orthodox Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "h6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-00cb0ffa6438767e",
+          "names": {
+            "en": "Declined: Neo-Orthodox Variation, Main Line",
+            "pt-BR": "Recusado: Variação Neo-Orthodox, Linha Principal",
+            "es": "Rehusado: Variante Neo-Orthodox, Línea Principal"
+          },
+          "eco": "D55",
+          "opening": "Queen's Gambit Declined: Neo-Orthodox Variation, Main Line",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "h6", "Bh4", "O-O", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Pseudo-Tarrasch Variation",
+        "pt-BR": "Recusado: Variação Pseudo-Tarrasch",
+        "es": "Rehusado: Variante Pseudo-Tarrasch"
+      },
+      "lines": [
+        {
+          "id": "line-7ed0b4045a251b9c",
+          "names": {
+            "en": "Declined: Pseudo-Tarrasch Variation, Primitive Pillsbury Variation",
+            "pt-BR": "Recusado: Variação Pseudo-Tarrasch, Variação Primitive Pillsbury",
+            "es": "Rehusado: Variante Pseudo-Tarrasch, Variante Primitive Pillsbury"
+          },
+          "eco": "D50",
+          "opening": "Queen's Gambit Declined: Pseudo-Tarrasch Variation, Primitive Pillsbury Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "c5", "Nf3", "cxd4", "Qxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ebac66e7e61846c4",
+          "names": {
+            "en": "Declined: Pseudo-Tarrasch Variation",
+            "pt-BR": "Recusado: Variação Pseudo-Tarrasch",
+            "es": "Rehusado: Variante Pseudo-Tarrasch"
+          },
+          "eco": "D50",
+          "opening": "Queen's Gambit Declined: Pseudo-Tarrasch Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "c5", "cxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-938606157295ba6d",
+          "names": {
+            "en": "Declined: Pseudo-Tarrasch Variation, Canal Variation",
+            "pt-BR": "Recusado: Variação Pseudo-Tarrasch, Variação Canal",
+            "es": "Rehusado: Variante Pseudo-Tarrasch, Variante Canal"
+          },
+          "eco": "D50",
+          "opening": "Queen's Gambit Declined: Pseudo-Tarrasch Variation, Canal Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "c5", "cxd5", "Qb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Ragozin Defense",
+        "pt-BR": "Recusado: Defesa Ragozin",
+        "es": "Rehusado: Defensa Ragozin"
+      },
+      "lines": [
+        {
+          "id": "line-f6b2fe17314ce01d",
+          "names": {
+            "en": "Declined: Ragozin Defense",
+            "pt-BR": "Recusado: Defesa Ragozin",
+            "es": "Rehusado: Defensa Ragozin"
+          },
+          "eco": "D38",
+          "opening": "Queen's Gambit Declined: Ragozin Defense",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e33f5fbf8ac47c68",
+          "names": {
+            "en": "Declined: Ragozin Defense, Vienna Variation"
+          },
+          "eco": "D39",
+          "opening": "Queen's Gambit Declined: Ragozin Defense, Vienna Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Bb4", "Bg5", "dxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d22e804996fada50",
+          "names": {
+            "en": "Declined: Ragozin Defense, Alekhine Variation",
+            "pt-BR": "Recusado: Defesa Ragozin, Variação Alekhine",
+            "es": "Rehusado: Defensa Ragozin, Variante Alekhine"
+          },
+          "eco": "D38",
+          "opening": "Queen's Gambit Declined: Ragozin Defense, Alekhine Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Bb4", "Qa4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Semi-Slav"
+      },
+      "lines": [
+        {
+          "id": "line-ec2a44519ff4e8cb",
+          "names": {
+            "en": "Declined: Semi-Slav, Abrahams Variation"
+          },
+          "eco": "D31",
+          "opening": "Queen's Gambit Declined: Semi-Slav, Abrahams Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c6", "Nf3", "dxc4", "a4", "Bb4", "e3", "b5", "Bd2", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8fb414137a03521c",
+          "names": {
+            "en": "Declined: Semi-Slav, Koomen Variation"
+          },
+          "eco": "D31",
+          "opening": "Queen's Gambit Declined: Semi-Slav, Koomen Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c6", "Nf3", "dxc4", "e3", "b5", "a4", "Bb4", "Bd2", "Qe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-33263c8ef8bcc0ff",
+          "names": {
+            "en": "Declined: Semi-Slav, Junge Variation"
+          },
+          "eco": "D31",
+          "opening": "Queen's Gambit Declined: Semi-Slav, Junge Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nf3", "c6", "Nc3", "dxc4", "a4", "Bb4", "e3", "b5", "Bd2", "Qb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Classical",
+        "pt-BR": "Aceito: Clássica",
+        "es": "Aceptado: Clásica"
+      },
+      "lines": [
+        {
+          "id": "line-9244064a4ab1e623",
+          "names": {
+            "en": "Accepted: Classical, Flohr Variation",
+            "pt-BR": "Aceito: Clássica, Variação Flohr",
+            "es": "Aceptado: Clásica, Variante Flohr"
+          },
+          "eco": "D28",
+          "opening": "Queen's Gambit Accepted: Classical, Flohr Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "a6", "Qe2", "b5", "Bb3", "Nc6", "Rd1", "c4", "Bc2", "Nb4", "Nc3", "Nxc2", "Qxc2", "Bb7", "d5", "Qc7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9543aa07575950c9",
+          "names": {
+            "en": "Accepted: Classical, Furman Variation",
+            "pt-BR": "Aceito: Clássica, Variação Furman",
+            "es": "Aceptado: Clásica, Variante Furman"
+          },
+          "eco": "D26",
+          "opening": "Queen's Gambit Accepted: Classical, Furman Variation",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "Qe2", "a6", "dxc5", "Bxc5", "O-O", "Nc6", "e4", "b5", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Accepted: Gunsberg Defense",
+        "pt-BR": "Aceito: Defesa Gunsberg",
+        "es": "Aceptado: Defensa Gunsberg"
+      },
+      "lines": [
+        {
+          "id": "line-51a463e19eadb521",
+          "names": {
+            "en": "Accepted: Gunsberg Defense, Prianishenmo Gambit",
+            "pt-BR": "Aceito: Defesa Gunsberg, Gambito Prianishenmo",
+            "es": "Aceptado: Defensa Gunsberg, Gambito Prianishenmo"
+          },
+          "eco": "D24",
+          "opening": "Queen's Gambit Accepted: Gunsberg Defense, Prianishenmo Gambit",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "Nc3", "c5", "d5", "e6", "e4", "exd5", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9939ed767bd0d3c7",
+          "names": {
+            "en": "Accepted: Gunsberg Defense",
+            "pt-BR": "Aceito: Defesa Gunsberg",
+            "es": "Aceptado: Defensa Gunsberg"
+          },
+          "eco": "D21",
+          "opening": "Queen's Gambit Accepted: Gunsberg Defense",
+          "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Anti-Tartakower Variation",
+        "pt-BR": "Recusado: Variação Anti-Tartakower",
+        "es": "Rehusado: Variante Anti-Tartakower"
+      },
+      "lines": [
+        {
+          "id": "line-93da525d81906298",
+          "names": {
+            "en": "Declined: Anti-Tartakower Variation",
+            "pt-BR": "Recusado: Variação Anti-Tartakower",
+            "es": "Rehusado: Variante Anti-Tartakower"
+          },
+          "eco": "D55",
+          "opening": "Queen's Gambit Declined: Anti-Tartakower Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "e3", "h6", "Bxf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c557d60420f2315d",
+          "names": {
+            "en": "Declined: Anti-Tartakower Variation, Petrosian Variation",
+            "pt-BR": "Recusado: Variação Anti-Tartakower, Variação Petrosian",
+            "es": "Rehusado: Variante Anti-Tartakower, Variante Petrosian"
+          },
+          "eco": "D55",
+          "opening": "Queen's Gambit Declined: Anti-Tartakower Variation, Petrosian Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "h6", "Bxf6", "Bxf6", "e3", "O-O", "Rc1", "c6", "Bd3", "Nd7", "O-O", "dxc4", "Bxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Charousek Variation",
+        "pt-BR": "Recusado: Variação Charousek",
+        "es": "Rehusado: Variante Charousek"
+      },
+      "lines": [
+        {
+          "id": "line-cd15c7d92aa3b88a",
+          "names": {
+            "en": "Declined: Charousek Variation",
+            "pt-BR": "Recusado: Variação Charousek",
+            "es": "Rehusado: Variante Charousek"
+          },
+          "eco": "D31",
+          "opening": "Queen's Gambit Declined: Charousek Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a86a4f420ada825c",
+          "names": {
+            "en": "Declined: Charousek Variation, Miladinovic Gambit",
+            "pt-BR": "Recusado: Variação Charousek, Gambito Miladinovic",
+            "es": "Rehusado: Variante Charousek, Gambito Miladinovic"
+          },
+          "eco": "D31",
+          "opening": "Queen's Gambit Declined: Charousek Variation, Miladinovic Gambit",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Be7", "e4", "dxe4", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Marshall Defense",
+        "pt-BR": "Recusado: Defesa Marshall",
+        "es": "Rehusado: Defensa Marshall"
+      },
+      "lines": [
+        {
+          "id": "line-15c7edc0d595e18d",
+          "names": {
+            "en": "Declined: Marshall Defense",
+            "pt-BR": "Recusado: Defesa Marshall",
+            "es": "Rehusado: Defensa Marshall"
+          },
+          "eco": "D06",
+          "opening": "Queen's Gambit Declined: Marshall Defense",
+          "moves": ["d4", "d5", "c4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f0985df81f8bc5b5",
+          "names": {
+            "en": "Declined: Marshall Defense, Tan Gambit",
+            "pt-BR": "Recusado: Defesa Marshall, Gambito Tan",
+            "es": "Rehusado: Defensa Marshall, Gambito Tan"
+          },
+          "eco": "D06",
+          "opening": "Queen's Gambit Declined: Marshall Defense, Tan Gambit",
+          "moves": ["d4", "d5", "c4", "Nf6", "cxd5", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Three Knights Variation"
+      },
+      "lines": [
+        {
+          "id": "line-37407d27d319cead",
+          "names": {
+            "en": "Declined: Three Knights Variation"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Three Knights Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ec1c38baa2036eb6",
+          "names": {
+            "en": "Declined: Three Knights Variation"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Three Knights Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Nf3", "Be7", "e3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Traditional Variation",
+        "pt-BR": "Recusado: Variação Traditional",
+        "es": "Rehusado: Variante Traditional"
+      },
+      "lines": [
+        {
+          "id": "line-ee502046019cd286",
+          "names": {
+            "en": "Declined: Traditional Variation",
+            "pt-BR": "Recusado: Variação Traditional",
+            "es": "Rehusado: Variante Traditional"
+          },
+          "eco": "D30",
+          "opening": "Queen's Gambit Declined: Traditional Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a37e657860f304e5",
+          "names": {
+            "en": "Declined: Traditional Variation",
+            "pt-BR": "Recusado: Variação Traditional",
+            "es": "Rehusado: Variante Traditional"
+          },
+          "eco": "D30",
+          "opening": "Queen's Gambit Declined: Traditional Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Bg5", "dxc4", "Qa4+", "c6", "Qxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Declined: Vienna Variation"
+      },
+      "lines": [
+        {
+          "id": "line-cbb89ae689cb42db",
+          "names": {
+            "en": "Declined: Vienna Variation"
+          },
+          "eco": "D30",
+          "opening": "Queen's Gambit Declined: Vienna Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Bg5", "Bb4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0d7baf536fb4d2cd",
+          "names": {
+            "en": "Declined: Vienna Variation, Quiet Variation"
+          },
+          "eco": "D37",
+          "opening": "Queen's Gambit Declined: Vienna Variation, Quiet Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "dxc4", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-1590969709aec8e9",
+      "names": {
+        "en": "Accepted: Accelerated Mannheim Variation"
+      },
+      "eco": "D20",
+      "opening": "Queen's Gambit Accepted: Accelerated Mannheim Variation",
+      "moves": ["d4", "d5", "c4", "dxc4", "Qa4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-081ba374b675f8cb",
+      "names": {
+        "en": "Accepted: Bogoljubow Defense",
+        "pt-BR": "Aceito: Defesa Bogoljubow",
+        "es": "Aceptado: Defensa Bogoljubow"
+      },
+      "eco": "D24",
+      "opening": "Queen's Gambit Accepted: Bogoljubow Defense",
+      "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "Nc3", "a6", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3a835a8360cc9dc2",
+      "names": {
+        "en": "Accepted: Furman Variation",
+        "pt-BR": "Aceito: Variação Furman",
+        "es": "Aceptado: Variante Furman"
+      },
+      "eco": "D27",
+      "opening": "Queen's Gambit Accepted: Furman Variation",
+      "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O", "a6", "dxc5", "Bxc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-01275e2cff7381bf",
+      "names": {
+        "en": "Accepted: Godes Variation",
+        "pt-BR": "Aceito: Variação Godes",
+        "es": "Aceptado: Variante Godes"
+      },
+      "eco": "D21",
+      "opening": "Queen's Gambit Accepted: Godes Variation",
+      "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-785fceaec3a904d8",
+      "names": {
+        "en": "Accepted: Janowski-Larsen Variation",
+        "pt-BR": "Aceito: Variação Janowski-Larsen",
+        "es": "Aceptado: Variante Janowski-Larsen"
+      },
+      "eco": "D25",
+      "opening": "Queen's Gambit Accepted: Janowski-Larsen Variation",
+      "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-62ad0a1c3cb05194",
+      "names": {
+        "en": "Accepted: Linares Variation",
+        "pt-BR": "Aceito: Variação Linares",
+        "es": "Aceptado: Variante Linares"
+      },
+      "eco": "D20",
+      "opening": "Queen's Gambit Accepted: Linares Variation",
+      "moves": ["d4", "d5", "c4", "dxc4", "e4", "c5", "d5", "Nf6", "Nc3", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-583e7462aa08bfde",
+      "names": {
+        "en": "Accepted: Rosenthal Variation",
+        "pt-BR": "Aceito: Variação Rosenthal",
+        "es": "Aceptado: Variante Rosenthal"
+      },
+      "eco": "D21",
+      "opening": "Queen's Gambit Accepted: Rosenthal Variation",
+      "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c21bf5aea67d2e3b",
+      "names": {
+        "en": "Accepted: Saduleto Variation",
+        "pt-BR": "Aceito: Variação Saduleto",
+        "es": "Aceptado: Variante Saduleto"
+      },
+      "eco": "D20",
+      "opening": "Queen's Gambit Accepted: Saduleto Variation",
+      "moves": ["d4", "d5", "c4", "dxc4", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a6d817f1887880e9",
+      "names": {
+        "en": "Accepted: Schwartz Defense",
+        "pt-BR": "Aceito: Defesa Schwartz",
+        "es": "Aceptado: Defensa Schwartz"
+      },
+      "eco": "D20",
+      "opening": "Queen's Gambit Accepted: Schwartz Defense",
+      "moves": ["d4", "d5", "c4", "dxc4", "e4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ad3e6579975b386a",
+      "names": {
+        "en": "Accepted: Showalter Variation",
+        "pt-BR": "Aceito: Variação Showalter",
+        "es": "Aceptado: Variante Showalter"
+      },
+      "eco": "D24",
+      "opening": "Queen's Gambit Accepted: Showalter Variation",
+      "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6ab25d567ef9b31c",
+      "names": {
+        "en": "Accepted: Slav Gambit"
+      },
+      "eco": "D21",
+      "opening": "Queen's Gambit Accepted: Slav Gambit",
+      "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a723d3737fcf792f",
+      "names": {
+        "en": "Accepted: Smyslov Variation",
+        "pt-BR": "Aceito: Variação Smyslov",
+        "es": "Aceptado: Variante Smyslov"
+      },
+      "eco": "D25",
+      "opening": "Queen's Gambit Accepted: Smyslov Variation",
+      "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3c58b56cd2c7b02a",
+      "names": {
+        "en": "Accepted: Winawer Defense",
+        "pt-BR": "Aceito: Defesa Winawer",
+        "es": "Aceptado: Defensa Winawer"
+      },
+      "eco": "D25",
+      "opening": "Queen's Gambit Accepted: Winawer Defense",
+      "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "Be6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4a63ba4d6a338b8e",
+      "names": {
+        "en": "Declined: Alapin Variation",
+        "pt-BR": "Recusado: Variação Alapin",
+        "es": "Rehusado: Variante Alapin"
+      },
+      "eco": "D31",
+      "opening": "Queen's Gambit Declined: Alapin Variation",
+      "moves": ["d4", "e6", "c4", "b6", "Nc3", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a4d1833fad9752e2",
+      "names": {
+        "en": "Declined: Alekhine Variation",
+        "pt-BR": "Recusado: Variação Alekhine",
+        "es": "Rehusado: Variante Alekhine"
+      },
+      "eco": "D51",
+      "opening": "Queen's Gambit Declined: Alekhine Variation",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Nbd7", "Nf3", "c6", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ce67d1bc0ee271a3",
+      "names": {
+        "en": "Declined: Austrian Attack, Salvio Countergambit",
+        "pt-BR": "Recusado: Ataque Austrian, Contragambito Salvio",
+        "es": "Rehusado: Ataque Austrian, Contragambito Salvio"
+      },
+      "eco": "D06",
+      "opening": "Queen's Gambit Declined: Austrian Attack, Salvio Countergambit",
+      "moves": ["d4", "d5", "c4", "c5", "dxc5", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-393cb5a59dd74c22",
+      "names": {
+        "en": "Declined: Barmen Variation",
+        "pt-BR": "Recusado: Variação Barmen",
+        "es": "Rehusado: Variante Barmen"
+      },
+      "eco": "D37",
+      "opening": "Queen's Gambit Declined: Barmen Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Nbd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-20ecd8629a714ab2",
+      "names": {
+        "en": "Declined: Been-Koomen Variation",
+        "pt-BR": "Recusado: Variação Been-Koomen",
+        "es": "Rehusado: Variante Been-Koomen"
+      },
+      "eco": "D50",
+      "opening": "Queen's Gambit Declined: Been-Koomen Variation",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-61ef47f0a08aeed5",
+      "names": {
+        "en": "Declined: Janowski Variation",
+        "pt-BR": "Recusado: Variação Janowski",
+        "es": "Rehusado: Variante Janowski"
+      },
+      "eco": "D31",
+      "opening": "Queen's Gambit Declined: Janowski Variation",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a2f3864cc6b284be",
+      "names": {
+        "en": "Declined: Knight Defense, Alekhine Gambit"
+      },
+      "eco": "D37",
+      "opening": "Queen's Gambit Declined: Knight Defense, Alekhine Gambit",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Nbd7", "Bg5", "h6", "Bh4", "dxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8481890d5f1621f1",
+      "names": {
+        "en": "Declined: Manhattan Variation",
+        "pt-BR": "Recusado: Variação Manhattan",
+        "es": "Rehusado: Variante Manhattan"
+      },
+      "eco": "D51",
+      "opening": "Queen's Gambit Declined: Manhattan Variation",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Nbd7", "e3", "Bb4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4b33887cf9193730",
+      "names": {
+        "en": "Declined: Miles Variation",
+        "pt-BR": "Recusado: Variação Miles",
+        "es": "Rehusado: Variante Miles"
+      },
+      "eco": "D37",
+      "opening": "Queen's Gambit Declined: Miles Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Be7", "Bg5", "O-O", "Qc2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-476cf19e15530804",
+      "names": {
+        "en": "Declined: Normal Defense",
+        "pt-BR": "Recusado: Defesa Normal",
+        "es": "Rehusado: Defensa Normal"
+      },
+      "eco": "D35",
+      "opening": "Queen's Gambit Declined: Normal Defense",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cbdd063a18b08d0c",
+      "names": {
+        "en": "Declined: Pillsbury Attack",
+        "pt-BR": "Recusado: Ataque Pillsbury",
+        "es": "Rehusado: Ataque Pillsbury"
+      },
+      "eco": "D55",
+      "opening": "Queen's Gambit Declined: Pillsbury Attack",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "Nc3", "d5", "cxd5", "exd5", "Bg5", "Be7", "e3", "O-O", "Bd3", "Bb7", "Ne5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-77f710cab314cf32",
+      "names": {
+        "en": "Declined: Queen's Knight Variation"
+      },
+      "eco": "D31",
+      "opening": "Queen's Gambit Declined: Queen's Knight Variation",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-04d7aeb0f6a0759f",
+      "names": {
+        "en": "Declined: Rochlin Variation",
+        "pt-BR": "Recusado: Variação Rochlin",
+        "es": "Rehusado: Variante Rochlin"
+      },
+      "eco": "D51",
+      "opening": "Queen's Gambit Declined: Rochlin Variation",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Nbd7", "Nf3", "c6", "Rc1", "Qa5", "Bd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-894ba9659393de5d",
+      "names": {
+        "en": "Declined: Semmering Variation",
+        "pt-BR": "Recusado: Variação Semmering",
+        "es": "Rehusado: Variante Semmering"
+      },
+      "eco": "D30",
+      "opening": "Queen's Gambit Declined: Semmering Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "e3", "e6", "Nbd2", "Nbd7", "Bd3", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-06e64c4f7e0806e6",
+      "names": {
+        "en": "Declined: Spielmann Variation",
+        "pt-BR": "Recusado: Variação Spielmann",
+        "es": "Rehusado: Variante Spielmann"
+      },
+      "eco": "D30",
+      "opening": "Queen's Gambit Declined: Spielmann Variation",
+      "moves": ["d4", "d5", "c4", "e6", "Nf3", "Nf6", "e3", "c6", "Nbd2", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6fbd8302a71bebe8",
+      "names": {
+        "en": "Declined: Stonewall Variation"
+      },
+      "eco": "D30",
+      "opening": "Queen's Gambit Declined: Stonewall Variation",
+      "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "e3", "e6", "Nbd2", "Ne4", "Bd3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c15cfa0582aad9ee",
+      "names": {
+        "en": "Declined: Three Knights, Vienna Variation"
+      },
+      "eco": "D37",
+      "opening": "Queen's Gambit Declined: Three Knights, Vienna Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "dxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bf07055b5de98dc8",
+      "names": {
+        "en": "Declined: Uhlmann Variation",
+        "pt-BR": "Recusado: Variação Uhlmann",
+        "es": "Rehusado: Variante Uhlmann"
+      },
+      "eco": "D53",
+      "opening": "Queen's Gambit Declined: Uhlmann Variation",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "Be7", "Nf3", "Nf6", "Bg5", "h6", "Bh4", "O-O", "Rc1", "dxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-135d5b7766e3b3f0",
+      "names": {
+        "en": "Declined: Westphalian Variation",
+        "pt-BR": "Recusado: Variação Westphalian",
+        "es": "Rehusado: Variante Westphalian"
+      },
+      "eco": "D38",
+      "opening": "Queen's Gambit Declined: Westphalian Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "Nc3", "Bb4", "Bg5", "Nbd7", "e3", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3a8f2b8eb851aaf3",
+      "names": {
+        "en": "Declined: Zilbermints Gambit",
+        "pt-BR": "Recusado: Gambito Zilbermints",
+        "es": "Rehusado: Gambito Zilbermints"
+      },
+      "eco": "D06",
+      "opening": "Queen's Gambit Declined: Zilbermints Gambit",
+      "moves": ["d4", "d5", "c4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9672de7d466ad308",
+      "names": {
+        "en": "Queen's Gambit",
+        "pt-BR": "Gambito da Dama",
+        "es": "Gambito de Dama"
+      },
+      "eco": "D06",
+      "opening": "Queen's Gambit",
+      "moves": ["d4", "d5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

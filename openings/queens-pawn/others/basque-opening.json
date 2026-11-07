@@ -1,0 +1,23 @@
+{
+  "id": "basque-opening",
+  "names": {
+    "en": "Basque Opening",
+    "pt-BR": "Abertura Basque",
+    "es": "Apertura Basque"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-2e4a725cbd078aa3",
+      "names": {
+        "en": "Basque Opening",
+        "pt-BR": "Abertura Basque",
+        "es": "Apertura Basque"
+      },
+      "eco": "A45",
+      "opening": "Basque Opening",
+      "moves": ["d4", "Nf6", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

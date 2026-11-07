@@ -1,0 +1,857 @@
+{
+  "id": "dutch-defense",
+  "names": {
+    "en": "Dutch Defense",
+    "pt-BR": "Defesa Holandesa",
+    "es": "Defensa Holandesa"
+  },
+  "order": 12,
+  "variants": [
+    {
+      "names": {
+        "en": "Classical Variation",
+        "pt-BR": "Variação Clássica",
+        "es": "Variante Clásica"
+      },
+      "lines": [
+        {
+          "id": "line-f7ba24927ae83bd8",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "A90",
+          "opening": "Dutch Defense: Classical Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c0c3fea59af52b6b",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "A91",
+          "opening": "Dutch Defense: Classical Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f6fc58b2f20cf59d",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "A92",
+          "opening": "Dutch Defense: Classical Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1ca7dbdbaea07ad8",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "A96",
+          "opening": "Dutch Defense: Classical Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e9c24309fec73d07",
+          "names": {
+            "en": "Classical Variation, Huisl Variation",
+            "pt-BR": "Variação Clássica, Variação Huisl",
+            "es": "Variante Clásica, Variante Huisl"
+          },
+          "eco": "A96",
+          "opening": "Dutch Defense: Classical Variation, Huisl Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d6", "Nc3", "Ne4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-08687c9470b1d5fa",
+          "names": {
+            "en": "Classical Variation, Ilyin-Zhenevsky Variation",
+            "pt-BR": "Variação Clássica, Variação Ilyin-Zhenevsky",
+            "es": "Variante Clásica, Variante Ilyin-Zhenevsky"
+          },
+          "eco": "A97",
+          "opening": "Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d6", "Nc3", "Qe8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-60bdb8abf576ad45",
+          "names": {
+            "en": "Classical Variation, Ilyin-Zhenevsky Variation, Alatortsev-Lisitsyn Line",
+            "pt-BR": "Variação Clássica, Variação Ilyin-Zhenevsky, Linha Alatortsev-Lisitsyn",
+            "es": "Variante Clásica, Variante Ilyin-Zhenevsky, Línea Alatortsev-Lisitsyn"
+          },
+          "eco": "A98",
+          "opening": "Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Alatortsev-Lisitsyn Line",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d6", "Nc3", "Qe8", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8e4df5c573e4ccda",
+          "names": {
+            "en": "Classical Variation, Ilyin-Zhenevsky Variation, Winter Variation",
+            "pt-BR": "Variação Clássica, Variação Ilyin-Zhenevsky, Variação Winter",
+            "es": "Variante Clásica, Variante Ilyin-Zhenevsky, Variante Winter"
+          },
+          "eco": "A97",
+          "opening": "Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Winter Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d6", "Nc3", "Qe8", "Re1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-077a8419d6ca9a96",
+          "names": {
+            "en": "Classical Variation, Ilyin-Zhenevsky Variation, Modern Main Line"
+          },
+          "eco": "A99",
+          "opening": "Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Modern Main Line",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d6", "Nc3", "Qe8", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f52f909d2d6a94b8",
+          "names": {
+            "en": "Classical Variation, Buenos Aires Variation",
+            "pt-BR": "Variação Clássica, Variação Buenos Aires",
+            "es": "Variante Clásica, Variante Buenos Aires"
+          },
+          "eco": "A96",
+          "opening": "Dutch Defense: Classical Variation, Buenos Aires Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d6", "Nc3", "a5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-83253f16a828bc57",
+          "names": {
+            "en": "Classical Variation, Blackburne Attack",
+            "pt-BR": "Variação Clássica, Ataque Blackburne",
+            "es": "Variante Clásica, Ataque Blackburne"
+          },
+          "eco": "A91",
+          "opening": "Dutch Defense: Classical Variation, Blackburne Attack",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nh3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-518e09e449c99c97",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "A90",
+          "opening": "Dutch Defense: Classical Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "d5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bb22affe118b8297",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "A84",
+          "opening": "Dutch Defense: Classical Variation",
+          "moves": ["d4", "f5", "c4", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Staunton Gambit",
+        "pt-BR": "Gambito Staunton",
+        "es": "Gambito Staunton"
+      },
+      "lines": [
+        {
+          "id": "line-31786f9c539f930a",
+          "names": {
+            "en": "Staunton Gambit",
+            "pt-BR": "Gambito Staunton",
+            "es": "Gambito Staunton"
+          },
+          "eco": "A82",
+          "opening": "Dutch Defense: Staunton Gambit",
+          "moves": ["d4", "f5", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9a47eafb87bc7c45",
+          "names": {
+            "en": "Staunton Gambit",
+            "pt-BR": "Gambito Staunton",
+            "es": "Gambito Staunton"
+          },
+          "eco": "A83",
+          "opening": "Dutch Defense: Staunton Gambit",
+          "moves": ["d4", "f5", "e4", "fxe4", "Nc3", "Nf6", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c95771997f88f95c",
+          "names": {
+            "en": "Staunton Gambit, Nimzowitsch Variation",
+            "pt-BR": "Gambito Staunton, Variação Nimzowitsch",
+            "es": "Gambito Staunton, Variante Nimzowitsch"
+          },
+          "eco": "A83",
+          "opening": "Dutch Defense: Staunton Gambit, Nimzowitsch Variation",
+          "moves": ["d4", "f5", "e4", "fxe4", "Nc3", "Nf6", "Bg5", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3e63f1fbc9db8603",
+          "names": {
+            "en": "Staunton Gambit, Chigorin Variation",
+            "pt-BR": "Gambito Staunton, Variação Chigorin",
+            "es": "Gambito Staunton, Variante Chigorin"
+          },
+          "eco": "A83",
+          "opening": "Dutch Defense: Staunton Gambit, Chigorin Variation",
+          "moves": ["d4", "f5", "e4", "fxe4", "Nc3", "Nf6", "Bg5", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3f26722e5a15789a",
+          "names": {
+            "en": "Staunton Gambit, Lasker Variation",
+            "pt-BR": "Gambito Staunton, Variação Lasker",
+            "es": "Gambito Staunton, Variante Lasker"
+          },
+          "eco": "A83",
+          "opening": "Dutch Defense: Staunton Gambit, Lasker Variation",
+          "moves": ["d4", "f5", "e4", "fxe4", "Nc3", "Nf6", "Bg5", "g6", "f3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-57c3a20f5d12f5d3",
+          "names": {
+            "en": "Staunton Gambit, Alekhine Variation",
+            "pt-BR": "Gambito Staunton, Variação Alekhine",
+            "es": "Gambito Staunton, Variante Alekhine"
+          },
+          "eco": "A83",
+          "opening": "Dutch Defense: Staunton Gambit, Alekhine Variation",
+          "moves": ["d4", "f5", "e4", "fxe4", "Nc3", "Nf6", "Bg5", "g6", "h4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0b8f83ab7e6d64b9",
+          "names": {
+            "en": "Staunton Gambit, Tartakower Variation",
+            "pt-BR": "Gambito Staunton, Variação Tartakower",
+            "es": "Gambito Staunton, Variante Tartakower"
+          },
+          "eco": "A82",
+          "opening": "Dutch Defense: Staunton Gambit, Tartakower Variation",
+          "moves": ["d4", "f5", "e4", "fxe4", "Nc3", "Nf6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-68aa9f3552115397",
+          "names": {
+            "en": "Staunton Gambit, American Attack"
+          },
+          "eco": "A82",
+          "opening": "Dutch Defense: Staunton Gambit, American Attack",
+          "moves": ["d4", "f5", "e4", "fxe4", "Nd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Stonewall Variation"
+      },
+      "lines": [
+        {
+          "id": "line-4751c0455b214bfd",
+          "names": {
+            "en": "Stonewall Variation"
+          },
+          "eco": "A92",
+          "opening": "Dutch Defense: Stonewall Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-010535316bca6c6f",
+          "names": {
+            "en": "Stonewall Variation"
+          },
+          "eco": "A92",
+          "opening": "Dutch Defense: Stonewall Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1ba7b32b121896a4",
+          "names": {
+            "en": "Stonewall Variation"
+          },
+          "eco": "A95",
+          "opening": "Dutch Defense: Stonewall Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d5", "Nc3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b03fd80852c5da66",
+          "names": {
+            "en": "Stonewall Variation, Chekhover Variation"
+          },
+          "eco": "A95",
+          "opening": "Dutch Defense: Stonewall Variation, Chekhover Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d5", "Nc3", "c6", "Qc2", "Qe8", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-04619d94aeb2b559",
+          "names": {
+            "en": "Stonewall Variation, Botvinnik Variation"
+          },
+          "eco": "A93",
+          "opening": "Dutch Defense: Stonewall Variation, Botvinnik Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d5", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7990903cac1e31b8",
+          "names": {
+            "en": "Stonewall Variation"
+          },
+          "eco": "A94",
+          "opening": "Dutch Defense: Stonewall Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "d5", "b3", "c6", "Ba3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-08c9e74a776c0a68",
+          "names": {
+            "en": "Stonewall Variation, Modern Variation"
+          },
+          "eco": "A90",
+          "opening": "Dutch Defense: Stonewall Variation, Modern Variation",
+          "moves": ["d4", "f5", "c4", "e6", "Nf3", "Nf6", "g3", "c6", "Bg2", "d5", "O-O", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Leningrad Variation"
+      },
+      "lines": [
+        {
+          "id": "line-338286bd4756571b",
+          "names": {
+            "en": "Leningrad Variation"
+          },
+          "eco": "A86",
+          "opening": "Dutch Defense: Leningrad Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-679f1c368f230fba",
+          "names": {
+            "en": "Leningrad Variation"
+          },
+          "eco": "A87",
+          "opening": "Dutch Defense: Leningrad Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "g6", "Bg2", "Bg7", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-326b911b0452898e",
+          "names": {
+            "en": "Leningrad Variation, Matulovic Variation"
+          },
+          "eco": "A89",
+          "opening": "Dutch Defense: Leningrad Variation, Matulovic Variation",
+          "moves": ["d4", "f5", "g3", "Nf6", "Bg2", "g6", "Nf3", "Bg7", "O-O", "O-O", "c4", "d6", "Nc3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-27e4c356a6930ba8",
+          "names": {
+            "en": "Leningrad Variation, Warsaw Variation"
+          },
+          "eco": "A88",
+          "opening": "Dutch Defense: Leningrad Variation, Warsaw Variation",
+          "moves": ["d4", "f5", "g3", "Nf6", "Bg2", "g6", "Nf3", "Bg7", "O-O", "O-O", "c4", "d6", "Nc3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2f6af81ef469635f",
+          "names": {
+            "en": "Leningrad Variation, Carlsbad Variation"
+          },
+          "eco": "A81",
+          "opening": "Dutch Defense: Leningrad Variation, Carlsbad Variation",
+          "moves": ["d4", "f5", "g3", "g6", "Bg2", "Bg7", "Nh3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Manhattan Gambit",
+        "pt-BR": "Gambito Manhattan",
+        "es": "Gambito Manhattan"
+      },
+      "lines": [
+        {
+          "id": "line-b0754799f40de5ba",
+          "names": {
+            "en": "Manhattan Gambit, Anti-Stonewall"
+          },
+          "eco": "A80",
+          "opening": "Dutch Defense: Manhattan Gambit, Anti-Stonewall",
+          "moves": ["d4", "f5", "Qd3", "d5", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-760dfb0495a0fc89",
+          "names": {
+            "en": "Manhattan Gambit, Anti-Modern"
+          },
+          "eco": "A80",
+          "opening": "Dutch Defense: Manhattan Gambit, Anti-Modern",
+          "moves": ["d4", "f5", "Qd3", "d6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f501105a589336b3",
+          "names": {
+            "en": "Manhattan Gambit, Anti-Classical Line"
+          },
+          "eco": "A80",
+          "opening": "Dutch Defense: Manhattan Gambit, Anti-Classical Line",
+          "moves": ["d4", "f5", "Qd3", "e6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-919481ff1834812e",
+          "names": {
+            "en": "Manhattan Gambit, Anti-Leningrad"
+          },
+          "eco": "A80",
+          "opening": "Dutch Defense: Manhattan Gambit, Anti-Leningrad",
+          "moves": ["d4", "f5", "Qd3", "g6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Krejcik Gambit",
+        "pt-BR": "Gambito Krejcik",
+        "es": "Gambito Krejcik"
+      },
+      "lines": [
+        {
+          "id": "line-4250d4c3dd87c7f0",
+          "names": {
+            "en": "Krejcik Gambit",
+            "pt-BR": "Gambito Krejcik",
+            "es": "Gambito Krejcik"
+          },
+          "eco": "A80",
+          "opening": "Dutch Defense: Krejcik Gambit",
+          "moves": ["d4", "f5", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-26948e838472a7a5",
+          "names": {
+            "en": "Krejcik Gambit, Tate Gambit",
+            "pt-BR": "Gambito Krejcik, Gambito Tate",
+            "es": "Gambito Krejcik, Gambito Tate"
+          },
+          "eco": "A80",
+          "opening": "Dutch Defense: Krejcik Gambit, Tate Gambit",
+          "moves": ["d4", "f5", "g4", "fxg4", "e4", "d5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Main",
+        "pt-BR": "Principal",
+        "es": "Principal"
+      },
+      "lines": [
+        {
+          "id": "line-1ff946ecd983026c",
+          "names": {
+            "en": "Dutch Defense",
+            "pt-BR": "Defesa Holandesa",
+            "es": "Defensa Holandesa"
+          },
+          "eco": "A80",
+          "opening": "Dutch Defense",
+          "moves": ["d4", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f0600a1c85880fcb",
+          "names": {
+            "en": "Dutch Defense",
+            "pt-BR": "Defesa Holandesa",
+            "es": "Defensa Holandesa"
+          },
+          "eco": "A84",
+          "opening": "Dutch Defense",
+          "moves": ["d4", "f5", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Nimzo-Dutch Variation"
+      },
+      "lines": [
+        {
+          "id": "line-f2dc9e996ef0fe33",
+          "names": {
+            "en": "Nimzo-Dutch Variation"
+          },
+          "eco": "A90",
+          "opening": "Dutch Defense: Nimzo-Dutch Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Bb4+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ff2b1236c0008fb4",
+          "names": {
+            "en": "Nimzo-Dutch Variation, Alekhine Variation"
+          },
+          "eco": "A90",
+          "opening": "Dutch Defense: Nimzo-Dutch Variation, Alekhine Variation",
+          "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Bb4+", "Bd2", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-41676d4c65f064c9",
+      "names": {
+        "en": "Alapin Variation",
+        "pt-BR": "Variação Alapin",
+        "es": "Variante Alapin"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Alapin Variation",
+      "moves": ["d4", "f5", "Qd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-de1249a9b654f99b",
+      "names": {
+        "en": "Alekhine Variation",
+        "pt-BR": "Variação Alekhine",
+        "es": "Variante Alekhine"
+      },
+      "eco": "A92",
+      "opening": "Dutch Defense: Alekhine Variation",
+      "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7", "Nf3", "O-O", "O-O", "Ne4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9f864848b3a4e65e",
+      "names": {
+        "en": "Barcza Variation",
+        "pt-BR": "Variação Barcza",
+        "es": "Variante Barcza"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Barcza Variation",
+      "moves": ["d4", "f5", "Nf3", "Nf6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7af0e612cb53df1d",
+      "names": {
+        "en": "Bellon Gambit",
+        "pt-BR": "Gambito Bellon",
+        "es": "Gambito Bellon"
+      },
+      "eco": "A84",
+      "opening": "Dutch Defense: Bellon Gambit",
+      "moves": ["d4", "f5", "c4", "e6", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ee6d87b2c50a17da",
+      "names": {
+        "en": "Blackburne Variation",
+        "pt-BR": "Variação Blackburne",
+        "es": "Variante Blackburne"
+      },
+      "eco": "A81",
+      "opening": "Dutch Defense: Blackburne Variation",
+      "moves": ["d4", "f5", "g3", "Nf6", "Bg2", "e6", "Nh3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-352b1aa8b91b137b",
+      "names": {
+        "en": "Blackmar's Second Gambit",
+        "pt-BR": "Gambito Blackmar's Second",
+        "es": "Gambito Blackmar's Second"
+      },
+      "eco": "A82",
+      "opening": "Dutch Defense: Blackmar's Second Gambit",
+      "moves": ["d4", "f5", "e4", "fxe4", "Nc3", "Nf6", "f3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f6d5fce61e5d73c5",
+      "names": {
+        "en": "Bladel Variation",
+        "pt-BR": "Variação Bladel",
+        "es": "Variante Bladel"
+      },
+      "eco": "A84",
+      "opening": "Dutch Defense: Bladel Variation",
+      "moves": ["d4", "f5", "c4", "g6", "Nc3", "Nh6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ec6a14c03828cb51",
+      "names": {
+        "en": "Fianchetto Attack"
+      },
+      "eco": "A81",
+      "opening": "Dutch Defense: Fianchetto Attack",
+      "moves": ["d4", "f5", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-913e1049bc6ae727",
+      "names": {
+        "en": "Fianchetto Variation",
+        "pt-BR": "Variação do Fianqueto",
+        "es": "Variante del Fianchetto"
+      },
+      "eco": "A86",
+      "opening": "Dutch Defense: Fianchetto Variation",
+      "moves": ["d4", "f5", "c4", "Nf6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-25e12d3864c9e1fc",
+      "names": {
+        "en": "Hevendehl Gambit",
+        "pt-BR": "Gambito Hevendehl",
+        "es": "Gambito Hevendehl"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Hevendehl Gambit",
+      "moves": ["d4", "f5", "g4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-28a039701f75c7ce",
+      "names": {
+        "en": "Hopton Attack",
+        "pt-BR": "Ataque Hopton",
+        "es": "Ataque Hopton"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Hopton Attack",
+      "moves": ["d4", "f5", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ae020dab880fe8ab",
+      "names": {
+        "en": "Hort-Antoshin System",
+        "pt-BR": "Sistema Hort-Antoshin",
+        "es": "Sistema Hort-Antoshin"
+      },
+      "eco": "A86",
+      "opening": "Dutch Defense: Hort-Antoshin System",
+      "moves": ["d4", "f5", "c4", "Nf6", "g3", "d6", "Bg2", "c6", "Nc3", "Qc7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-290108a1513394dd",
+      "names": {
+        "en": "Janzen-Korchnoi Gambit",
+        "pt-BR": "Gambito Janzen-Korchnoi",
+        "es": "Gambito Janzen-Korchnoi"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Janzen-Korchnoi Gambit",
+      "moves": ["d4", "f5", "h3", "Nf6", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cc0512f8838fc9a5",
+      "names": {
+        "en": "Kingfisher Gambit",
+        "pt-BR": "Gambito Kingfisher",
+        "es": "Gambito Kingfisher"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Kingfisher Gambit",
+      "moves": ["d4", "f5", "Nc3", "d5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f277b756082eccfe",
+      "names": {
+        "en": "Korchnoi Attack",
+        "pt-BR": "Ataque Korchnoi",
+        "es": "Ataque Korchnoi"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Korchnoi Attack",
+      "moves": ["d4", "f5", "h3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e697788751efce7",
+      "names": {
+        "en": "Krause Variation",
+        "pt-BR": "Variação Krause",
+        "es": "Variante Krause"
+      },
+      "eco": "A84",
+      "opening": "Dutch Defense: Krause Variation",
+      "moves": ["d4", "f5", "c4", "Nf6", "Nc3", "d6", "Nf3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8e062898550eb472",
+      "names": {
+        "en": "Leningrad, Basman System"
+      },
+      "eco": "A81",
+      "opening": "Dutch Defense: Leningrad, Basman System",
+      "moves": ["d4", "f5", "g3", "c6", "Bg2", "g6", "Nf3", "Bg7", "O-O", "Nh6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-52e43577999ad758",
+      "names": {
+        "en": "Normal Variation",
+        "pt-BR": "Variação Normal",
+        "es": "Variante Normal"
+      },
+      "eco": "A84",
+      "opening": "Dutch Defense: Normal Variation",
+      "moves": ["d4", "f5", "c4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-992722863b29f89a",
+      "names": {
+        "en": "Omega-Isis Gambit",
+        "pt-BR": "Gambito Omega-Isis",
+        "es": "Gambito Omega-Isis"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Omega-Isis Gambit",
+      "moves": ["d4", "f5", "Nf3", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6cb5abc7f5ef42f8",
+      "names": {
+        "en": "Queen's Knight Variation"
+      },
+      "eco": "A85",
+      "opening": "Dutch Defense: Queen's Knight Variation",
+      "moves": ["d4", "f5", "c4", "Nf6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ba5e9b772eb00647",
+      "names": {
+        "en": "Raphael Variation",
+        "pt-BR": "Variação Raphael",
+        "es": "Variante Raphael"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Raphael Variation",
+      "moves": ["d4", "f5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-937096a828844f99",
+      "names": {
+        "en": "Rubinstein Variation",
+        "pt-BR": "Variação Rubinstein",
+        "es": "Variante Rubinstein"
+      },
+      "eco": "A84",
+      "opening": "Dutch Defense: Rubinstein Variation",
+      "moves": ["d4", "f5", "c4", "e6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c012d80caa779a86",
+      "names": {
+        "en": "Semi-Leningrad Variation"
+      },
+      "eco": "A81",
+      "opening": "Dutch Defense: Semi-Leningrad Variation",
+      "moves": ["d4", "f5", "g3", "Nf6", "Bg2", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1fc7e7b30682ecab",
+      "names": {
+        "en": "Senechaud Gambit",
+        "pt-BR": "Gambito Senechaud",
+        "es": "Gambito Senechaud"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Senechaud Gambit",
+      "moves": ["d4", "f5", "Bf4", "e6", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d9608be33e2cc722",
+      "names": {
+        "en": "Spielmann Gambit",
+        "pt-BR": "Gambito Spielmann",
+        "es": "Gambito Spielmann"
+      },
+      "eco": "A80",
+      "opening": "Dutch Defense: Spielmann Gambit",
+      "moves": ["d4", "f5", "Nc3", "Nf6", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cc88c5f8c7fa5b6c",
+      "names": {
+        "en": "Staunton Gambit Accepted"
+      },
+      "eco": "A82",
+      "opening": "Dutch Defense: Staunton Gambit Accepted",
+      "moves": ["d4", "f5", "e4", "fxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "lemming-defense",
+  "names": {
+    "en": "Lemming Defense",
+    "pt-BR": "Defesa Lemming",
+    "es": "Defensa Lemming"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-41b030d9b459fd6d",
+      "names": {
+        "en": "Lemming Defense",
+        "pt-BR": "Defesa Lemming",
+        "es": "Defensa Lemming"
+      },
+      "eco": "B00",
+      "opening": "Lemming Defense",
+      "moves": ["e4", "Na6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

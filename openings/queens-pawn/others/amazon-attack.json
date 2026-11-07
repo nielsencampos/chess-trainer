@@ -1,0 +1,35 @@
+{
+  "id": "amazon-attack",
+  "names": {
+    "en": "Amazon Attack",
+    "pt-BR": "Ataque Amazon",
+    "es": "Ataque Amazon"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-79575a08c42ad8b4",
+      "names": {
+        "en": "Siberian Attack",
+        "pt-BR": "Ataque Siberian",
+        "es": "Ataque Siberian"
+      },
+      "eco": "A45",
+      "opening": "Amazon Attack: Siberian Attack",
+      "moves": ["d4", "Nf6", "Nc3", "d5", "Qd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-891070e99dfeaf50",
+      "names": {
+        "en": "Amazon Attack",
+        "pt-BR": "Ataque Amazon",
+        "es": "Ataque Amazon"
+      },
+      "eco": "D00",
+      "opening": "Amazon Attack",
+      "moves": ["d4", "d5", "Qd3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

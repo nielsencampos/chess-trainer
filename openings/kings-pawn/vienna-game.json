@@ -1,0 +1,755 @@
+{
+  "id": "vienna-game",
+  "names": {
+    "en": "Vienna Game",
+    "pt-BR": "Abertura Vienense",
+    "es": "Apertura Vienesa"
+  },
+  "order": 12,
+  "variants": [
+    {
+      "names": {
+        "en": "2...Nc6 · Vienna Gambit",
+        "pt-BR": "2...Nc6 · Gambito Vienense",
+        "es": "2...Nc6 · Gambito Vienés"
+      },
+      "lines": [
+        {
+          "id": "line-22db01babf7ab7f5",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit",
+            "pt-BR": "2...Nc6 · Gambito Vienense",
+            "es": "2...Nc6 · Gambito Vienés"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-973d8a00acac62b9",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Quelle Gambit",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Quelle",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Quelle"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Quelle Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "Bc5", "fxe5", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-500e61dfa41d9f58",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Knight Variation"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Knight Variation",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c27cd1bde6fb3127",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Cunningham Defense",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Defesa Cunningham",
+            "es": "2...Nc6 · Gambito Vienés: Defensa Cunningham"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Cunningham Defense",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "Nf3", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-011ca7f721e401f4",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Hamppe-Muzio Gambit",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Hamppe-Muzio",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Muzio"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Hamppe-Muzio Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "gxf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-569e7ff09ee52f99",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Pierce Gambit",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Pierce",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Pierce"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Pierce Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "Nf3", "g5", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9abbdeeeeb764037",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Hamppe-Allgaier",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Hamppe-Allgaier Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-da4ee6fb5bcdca23",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit, Alapin Variation",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Hamppe-Allgaier, Variação Alapin",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier, Variante Alapin"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Hamppe-Allgaier Gambit, Alapin Variation",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1912f8ab8e44c854",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit, Thorold Variation",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Hamppe-Allgaier, Variação Thorold",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier, Variante Thorold"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Hamppe-Allgaier Gambit, Thorold Variation",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "Nf3", "g5", "h4", "g4", "Ng5", "h6", "Nxf7", "Kxf7", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-992ad906ac887336",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Steinitz",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0de9d8ace6170570",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Main Line",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Steinitz, Linha Principal",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Línea Principal"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Main Line",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "d4", "Qh4+", "Ke2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ed5a9c66770d956d",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Fraser-Minckwitz Defense",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Steinitz, Defesa Fraser-Minckwitz",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Fraser-Minckwitz"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Fraser-Minckwitz Defense",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "d4", "Qh4+", "Ke2", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d6dbdbe2a2579b61",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Zukertort Defense",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Steinitz, Defesa Zukertort",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Zukertort"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Zukertort Defense",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "d4", "Qh4+", "Ke2", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-02c04788725fd58a",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Paulsen Defense",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Steinitz, Defesa Paulsen",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Paulsen"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Paulsen Defense",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "d4", "Qh4+", "Ke2", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6bfadae502917674",
+          "names": {
+            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Sörensen Defense",
+            "pt-BR": "2...Nc6 · Gambito Vienense: Gambito Steinitz, Defesa Sörensen",
+            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Sörensen"
+          },
+          "eco": "C25",
+          "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Sörensen Defense",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "d4", "Qh4+", "Ke2", "g5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Stanley Variation",
+        "pt-BR": "Variação Stanley",
+        "es": "Variante Stanley"
+      },
+      "lines": [
+        {
+          "id": "line-6a5e328ad1e64c97",
+          "names": {
+            "en": "Stanley Variation, Meitner-Mieses Gambit",
+            "pt-BR": "Variação Stanley, Gambito Meitner-Mieses",
+            "es": "Variante Stanley, Gambito Meitner-Mieses"
+          },
+          "eco": "C25",
+          "opening": "Vienna Game: Stanley Variation, Meitner-Mieses Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "Bc4", "Bc5", "Qg4", "Qf6", "Nd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-939752974e75154d",
+          "names": {
+            "en": "Stanley Variation, Three Knights Variation"
+          },
+          "eco": "C28",
+          "opening": "Vienna Game: Stanley Variation, Three Knights Variation",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "Bc4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-18a29d13c8df60d1",
+          "names": {
+            "en": "Stanley Variation, Bronstein Gambit",
+            "pt-BR": "Variação Stanley, Gambito Bronstein",
+            "es": "Variante Stanley, Gambito Bronstein"
+          },
+          "eco": "C28",
+          "opening": "Vienna Game: Stanley Variation, Bronstein Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "Bc4", "Nf6", "f4", "Nxe4", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-435a13d2b2d0732c",
+          "names": {
+            "en": "Stanley Variation",
+            "pt-BR": "Variação Stanley",
+            "es": "Variante Stanley"
+          },
+          "eco": "C26",
+          "opening": "Vienna Game: Stanley Variation",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-efa73d1a89fa270d",
+          "names": {
+            "en": "Stanley Variation, Reversed Spanish"
+          },
+          "eco": "C26",
+          "opening": "Vienna Game: Stanley Variation, Reversed Spanish",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "Bc4", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e8a833895107aa94",
+          "names": {
+            "en": "Stanley Variation, Eifel Gambit",
+            "pt-BR": "Variação Stanley, Gambito Eifel",
+            "es": "Variante Stanley, Gambito Eifel"
+          },
+          "eco": "C26",
+          "opening": "Vienna Game: Stanley Variation, Eifel Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "Bc4", "Bc5", "Nge2", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-db4520d414cf75cf",
+          "names": {
+            "en": "Stanley Variation, Monster Declined"
+          },
+          "eco": "C27",
+          "opening": "Vienna Game: Stanley Variation, Monster Declined",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "Bc4", "Nxe4", "Qh5", "Nd6", "Bb3", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-182903d79e31a926",
+          "names": {
+            "en": "Stanley Variation, Alekhine Variation",
+            "pt-BR": "Variação Stanley, Variação Alekhine",
+            "es": "Variante Stanley, Variante Alekhine"
+          },
+          "eco": "C27",
+          "opening": "Vienna Game: Stanley Variation, Alekhine Variation",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "Bc4", "Nxe4", "Qh5", "Nd6", "Bb3", "Be7", "Nf3", "Nc6", "Nxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2b4240a4e60c3cff",
+          "names": {
+            "en": "Stanley Variation, Frankenstein-Dracula Variation"
+          },
+          "eco": "C27",
+          "opening": "Vienna Game: Stanley Variation, Frankenstein-Dracula Variation",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "Bc4", "Nxe4", "Qh5", "Nd6", "Bb3", "Nc6", "Nb5", "g6", "Qf3", "f5", "Qd5", "Qe7", "Nxc7+", "Kd8", "Nxa8", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Vienna Gambit",
+        "pt-BR": "Gambito Vienense",
+        "es": "Gambito Vienés"
+      },
+      "lines": [
+        {
+          "id": "line-fe19da2b528705ef",
+          "names": {
+            "en": "Vienna Gambit",
+            "pt-BR": "Gambito Vienense",
+            "es": "Gambito Vienés"
+          },
+          "eco": "C29",
+          "opening": "Vienna Game: Vienna Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-637cd8fa755efd86",
+          "names": {
+            "en": "Vienna Gambit, Main Line",
+            "pt-BR": "Gambito Vienense, Linha Principal",
+            "es": "Gambito Vienés, Línea Principal"
+          },
+          "eco": "C29",
+          "opening": "Vienna Game: Vienna Gambit, Main Line",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0fa0d14b7f3f55ed",
+          "names": {
+            "en": "Vienna Gambit, Steinitz Variation",
+            "pt-BR": "Gambito Vienense, Variação Steinitz",
+            "es": "Gambito Vienés, Variante Steinitz"
+          },
+          "eco": "C29",
+          "opening": "Vienna Game: Vienna Gambit, Steinitz Variation",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ba0705945b251196",
+          "names": {
+            "en": "Vienna Gambit, Breyer Variation",
+            "pt-BR": "Gambito Vienense, Variação Breyer",
+            "es": "Gambito Vienés, Variante Breyer"
+          },
+          "eco": "C29",
+          "opening": "Vienna Game: Vienna Gambit, Breyer Variation",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5", "fxe5", "Nxe4", "Nf3", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a4fa87ba3f5340ee",
+          "names": {
+            "en": "Vienna Gambit, Kaufmann Variation",
+            "pt-BR": "Gambito Vienense, Variação Kaufmann",
+            "es": "Gambito Vienés, Variante Kaufmann"
+          },
+          "eco": "C29",
+          "opening": "Vienna Game: Vienna Gambit, Kaufmann Variation",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5", "fxe5", "Nxe4", "Nf3", "Bg4", "Qe2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-79de9719d3cdeefd",
+          "names": {
+            "en": "Vienna Gambit, Paulsen Attack",
+            "pt-BR": "Gambito Vienense, Ataque Paulsen",
+            "es": "Gambito Vienés, Ataque Paulsen"
+          },
+          "eco": "C29",
+          "opening": "Vienna Game: Vienna Gambit, Paulsen Attack",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5", "fxe5", "Nxe4", "Qf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-78a217bfc1f9cf24",
+          "names": {
+            "en": "Vienna Gambit, Bardeleben Variation",
+            "pt-BR": "Gambito Vienense, Variação Bardeleben",
+            "es": "Gambito Vienés, Variante Bardeleben"
+          },
+          "eco": "C29",
+          "opening": "Vienna Game: Vienna Gambit, Bardeleben Variation",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5", "fxe5", "Nxe4", "Qf3", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bdc4e62f6afec93a",
+          "names": {
+            "en": "Vienna Gambit, Modern Variation",
+            "pt-BR": "Gambito Vienense, Variação Moderna",
+            "es": "Gambito Vienés, Variante Moderna"
+          },
+          "eco": "C29",
+          "opening": "Vienna Game: Vienna Gambit, Modern Variation",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5", "fxe5", "Nxe4", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a25d063a92ca72ec",
+          "names": {
+            "en": "Vienna Gambit, Wurzburger Trap",
+            "pt-BR": "Gambito Vienense, Armadilha Wurzburger",
+            "es": "Gambito Vienés, Trampa Wurzburger"
+          },
+          "eco": "C29",
+          "opening": "Vienna Game: Vienna Gambit, Wurzburger Trap",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5", "fxe5", "Nxe4", "d3", "Qh4+", "g3", "Nxg3", "Nf3", "Qh5", "Nxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Paulsen Variation",
+        "pt-BR": "Variação Paulsen",
+        "es": "Variante Paulsen"
+      },
+      "lines": [
+        {
+          "id": "line-81e6b810dbc0a31b",
+          "names": {
+            "en": "Paulsen Variation",
+            "pt-BR": "Variação Paulsen",
+            "es": "Variante Paulsen"
+          },
+          "eco": "C25",
+          "opening": "Vienna Game: Paulsen Variation",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-61fbdecbde115b14",
+          "names": {
+            "en": "Paulsen Variation, Mariotti Gambit",
+            "pt-BR": "Variação Paulsen, Gambito Mariotti",
+            "es": "Variante Paulsen, Gambito Mariotti"
+          },
+          "eco": "C25",
+          "opening": "Vienna Game: Paulsen Variation, Mariotti Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "g3", "Bc5", "Bg2", "h5", "Nf3", "h4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-697eaae50a8d8618",
+          "names": {
+            "en": "Paulsen Variation",
+            "pt-BR": "Variação Paulsen",
+            "es": "Variante Paulsen"
+          },
+          "eco": "C25",
+          "opening": "Vienna Game: Paulsen Variation",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "g3", "Nf6", "Bg2", "Bc5", "Nge2", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-aaba692fa9416717",
+          "names": {
+            "en": "Paulsen Variation, Pollock Gambit",
+            "pt-BR": "Variação Paulsen, Gambito Pollock",
+            "es": "Variante Paulsen, Gambito Pollock"
+          },
+          "eco": "C26",
+          "opening": "Vienna Game: Paulsen Variation, Pollock Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "g3", "Bc5", "Bg2", "Nc6", "Nge2", "d5", "exd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Mieses Variation",
+        "pt-BR": "Variação Mieses",
+        "es": "Variante Mieses"
+      },
+      "lines": [
+        {
+          "id": "line-7ab3d82a66b8a295",
+          "names": {
+            "en": "Mieses Variation",
+            "pt-BR": "Variação Mieses",
+            "es": "Variante Mieses"
+          },
+          "eco": "C26",
+          "opening": "Vienna Game: Mieses Variation",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ba928e6ada21d065",
+          "names": {
+            "en": "Mieses Variation, Erben Gambit",
+            "pt-BR": "Variação Mieses, Gambito Erben",
+            "es": "Variante Mieses, Gambito Erben"
+          },
+          "eco": "C26",
+          "opening": "Vienna Game: Mieses Variation, Erben Gambit",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "g3", "d5", "exd5", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Vienna Hybrid"
+      },
+      "lines": [
+        {
+          "id": "line-d0da6b352f72ae59",
+          "names": {
+            "en": "Vienna Hybrid, Hromádka Variation"
+          },
+          "eco": "C28",
+          "opening": "Bishop's Opening: Vienna Hybrid, Hromádka Variation",
+          "moves": ["e4", "e5", "Nc3", "Nc6", "Bc4", "Nf6", "d3", "Bb4", "Ne2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6661a1f4808306f4",
+          "names": {
+            "en": "Vienna Hybrid, Spielmann Attack"
+          },
+          "eco": "C26",
+          "opening": "Bishop's Opening: Vienna Hybrid, Spielmann Attack",
+          "moves": ["e4", "e5", "Nc3", "Nf6", "Bc4", "Bc5", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-eb75bb444c6f02bb",
+      "names": {
+        "en": "Adams' Gambit",
+        "pt-BR": "Gambito Adams'",
+        "es": "Gambito Adams'"
+      },
+      "eco": "C27",
+      "opening": "Vienna Game: Adams' Gambit",
+      "moves": ["e4", "e5", "Nc3", "Nf6", "Bc4", "Nxe4", "Qh5", "Nd6", "Bb3", "Nc6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8323ecebed441e09",
+      "names": {
+        "en": "Anderssen Defense",
+        "pt-BR": "Defesa Anderssen",
+        "es": "Defensa Anderssen"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Anderssen Defense",
+      "moves": ["e4", "e5", "Nc3", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-534d4096041d0b74",
+      "names": {
+        "en": "Declined: Falkbeer Countergambit, Charousek Gambit, Morphy Defense",
+        "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek, Defesa Morphy",
+        "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Defensa Morphy"
+      },
+      "eco": "C31",
+      "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Morphy Defense",
+      "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5", "exd5", "e4", "d3", "Bb4", "Bd2", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7eccbf486e438459",
+      "names": {
+        "en": "Falkbeer Variation",
+        "pt-BR": "Variação Falkbeer",
+        "es": "Variante Falkbeer"
+      },
+      "eco": "C26",
+      "opening": "Vienna Game: Falkbeer Variation",
+      "moves": ["e4", "e5", "Nc3", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-06f88a0f2708c02e",
+      "names": {
+        "en": "Frankenstein-Dracula Variation"
+      },
+      "eco": "C27",
+      "opening": "Vienna Game: Frankenstein-Dracula Variation",
+      "moves": ["e4", "e5", "Nc3", "Nf6", "Bc4", "Nxe4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fe178b87b2c7c377",
+      "names": {
+        "en": "Fyfe Gambit",
+        "pt-BR": "Gambito Fyfe",
+        "es": "Gambito Fyfe"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Fyfe Gambit",
+      "moves": ["e4", "e5", "Nc3", "Nc6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-380ce11103e8fd55",
+      "names": {
+        "en": "Giraffe Attack",
+        "pt-BR": "Ataque Giraffe",
+        "es": "Ataque Giraffe"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Giraffe Attack",
+      "moves": ["e4", "e5", "Nc3", "Bc5", "Qg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d8c523f34bd7dfe8",
+      "names": {
+        "en": "Hamppe-Meitner Variation",
+        "pt-BR": "Variação Hamppe-Meitner",
+        "es": "Variante Hamppe-Meitner"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Hamppe-Meitner Variation",
+      "moves": ["e4", "e5", "Nc3", "Bc5", "Na4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-daff287b0014740f",
+      "names": {
+        "en": "Hamppe-Muzio, Dubois Variation"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Hamppe-Muzio, Dubois Variation",
+      "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O", "gxf3", "Qxf3", "Ne5", "Qxf4", "Qf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-574d62f4d37920f5",
+      "names": {
+        "en": "Hamppe-Muzio Gambit",
+        "pt-BR": "Gambito Hamppe-Muzio",
+        "es": "Gambito Hamppe-Muzio"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Hamppe-Muzio Gambit",
+      "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "Nf3", "g5", "Bc4", "g4", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e11ce2bb5345b233",
+      "names": {
+        "en": "Heyde Variation",
+        "pt-BR": "Variação Heyde",
+        "es": "Variante Heyde"
+      },
+      "eco": "C29",
+      "opening": "Vienna Game: Heyde Variation",
+      "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5", "fxe5", "Nxe4", "Qf3", "f5", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bfff6d3d2b89d5c4",
+      "names": {
+        "en": "Vienna Game",
+        "pt-BR": "Abertura Vienense",
+        "es": "Apertura Vienesa"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game",
+      "moves": ["e4", "e5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b7c94ca716e56f39",
+      "names": {
+        "en": "Max Lange Defense",
+        "pt-BR": "Defesa Max Lange",
+        "es": "Defensa Max Lange"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Max Lange Defense",
+      "moves": ["e4", "e5", "Nc3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-06baa6ba1bcf0fc4",
+      "names": {
+        "en": "Mengarini Variation",
+        "pt-BR": "Variação Mengarini",
+        "es": "Variante Mengarini"
+      },
+      "eco": "C26",
+      "opening": "Vienna Game: Mengarini Variation",
+      "moves": ["e4", "e5", "Nc3", "Nf6", "a3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bcbac7e2c0f2c92a",
+      "names": {
+        "en": "Omaha Gambit",
+        "pt-BR": "Gambito Omaha",
+        "es": "Gambito Omaha"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Omaha Gambit",
+      "moves": ["e4", "e5", "Nc3", "d6", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b6c648baf8411c80",
+      "names": {
+        "en": "Philidor Countergambit",
+        "pt-BR": "Contragambito Philidor",
+        "es": "Contragambito Philidor"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Philidor Countergambit",
+      "moves": ["e4", "e5", "Nc3", "Nc6", "d4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-215c9e06cd0040f7",
+      "names": {
+        "en": "Pierce Gambit, Rushmere Attack",
+        "pt-BR": "Gambito Pierce, Ataque Rushmere",
+        "es": "Gambito Pierce, Ataque Rushmere"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Pierce Gambit, Rushmere Attack",
+      "moves": ["e4", "e5", "Nc3", "Nc6", "f4", "exf4", "Nf3", "g5", "d4", "g4", "Bc4", "gxf3", "O-O", "d5", "exd5", "Bg4", "dxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-669d16cdc93544ed",
+      "names": {
+        "en": "Zhuravlev Countergambit",
+        "pt-BR": "Contragambito Zhuravlev",
+        "es": "Contragambito Zhuravlev"
+      },
+      "eco": "C25",
+      "opening": "Vienna Game: Zhuravlev Countergambit",
+      "moves": ["e4", "e5", "Nc3", "Bb4", "Qg4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

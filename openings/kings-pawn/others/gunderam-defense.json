@@ -1,0 +1,23 @@
+{
+  "id": "gunderam-defense",
+  "names": {
+    "en": "Gunderam Defense",
+    "pt-BR": "Defesa Gunderam",
+    "es": "Defensa Gunderam"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-0f2321c9f843b9b2",
+      "names": {
+        "en": "Gunderam Defense",
+        "pt-BR": "Defesa Gunderam",
+        "es": "Defensa Gunderam"
+      },
+      "eco": "C40",
+      "opening": "Gunderam Defense",
+      "moves": ["e4", "e5", "Nf3", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

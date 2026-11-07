@@ -1,0 +1,576 @@
+{
+  "id": "four-knights-game",
+  "names": {
+    "en": "Four Knights Game",
+    "pt-BR": "Abertura dos Quatro Cavalos",
+    "es": "Apertura de los Cuatro Caballos"
+  },
+  "order": 15,
+  "variants": [
+    {
+      "names": {
+        "en": "Spanish Variation"
+      },
+      "lines": [
+        {
+          "id": "line-794f53273449f6f1",
+          "names": {
+            "en": "Spanish Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ebc5af3b9010849e",
+          "names": {
+            "en": "Spanish Variation, Double Spanish"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Double Spanish",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-715468970fb37713",
+          "names": {
+            "en": "Spanish Variation, Nimzowitsch Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Nimzowitsch Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "Bxc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-314df3127676b380",
+          "names": {
+            "en": "Spanish Variation, Double Spanish"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Double Spanish",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-349547b59fc6c02c",
+          "names": {
+            "en": "Spanish Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3", "Bxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-19f8236c9e171820",
+          "names": {
+            "en": "Spanish Variation, Svenonius Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Svenonius Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3", "Bxc3", "bxc3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-86fa6d195bb280a9",
+          "names": {
+            "en": "Spanish Variation, Janowski Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Janowski Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3", "Bxc3", "bxc3", "d6", "Re1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-70fccd0f8d07a97c",
+          "names": {
+            "en": "Spanish Variation, Alatortsev Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Alatortsev Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3", "Qe7", "Ne2", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c34e2f52df3fac24",
+          "names": {
+            "en": "Spanish Variation, Symmetrical Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-130b51f430fe1d76",
+          "names": {
+            "en": "Spanish Variation, Symmetrical Variation, Metger Unpin"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation, Metger Unpin",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3", "d6", "Bg5", "Bxc3", "bxc3", "Qe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-33b2df92edab6ed6",
+          "names": {
+            "en": "Spanish Variation, Symmetrical Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3", "d6", "Bg5", "Bxc3", "bxc3", "Qe7", "Re1", "Nd8", "d4", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d74a774476788dfa",
+          "names": {
+            "en": "Spanish Variation, Symmetrical Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3", "d6", "Bg5", "Ne7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f1102503699c7fec",
+          "names": {
+            "en": "Spanish Variation, Symmetrical Variation, Blake Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation, Blake Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3", "d6", "Bg5", "Ne7", "Nh4", "c6", "Bc4", "d5", "Bb3", "Qd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-57f8826006633c1b",
+          "names": {
+            "en": "Spanish Variation, Symmetrical Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bb4", "O-O", "O-O", "d3", "d6", "Ne2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-59fef393aae8fbb6",
+          "names": {
+            "en": "Spanish Variation, Classical Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Classical Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7ade8e1989aed423",
+          "names": {
+            "en": "Spanish Variation, Bardeleben Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Bardeleben Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Bc5", "O-O", "O-O", "Nxe5", "Nxe5", "d4", "Bd6", "f4", "Nc6", "e5", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c84e3d1f0fe057f3",
+          "names": {
+            "en": "Spanish Variation, Rubinstein Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Nd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a85416e28872add4",
+          "names": {
+            "en": "Spanish Variation, Rubinstein Variation, Marshall Gambit"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation, Marshall Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Nd4", "Ba4", "Bc5", "Nxe5", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a8598c2b292ee6dd",
+          "names": {
+            "en": "Spanish Variation, Rubinstein Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Nd4", "Be2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3a5209037f169fa3",
+          "names": {
+            "en": "Spanish Variation, Rubinstein Variation, Maróczy Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation, Maróczy Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Nd4", "Be2", "Nxf3+", "Bxf3", "Bc5", "O-O", "O-O", "d3", "d6", "Na4", "Bb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-30e02dbe8a342cd3",
+          "names": {
+            "en": "Spanish Variation, Rubinstein Variation Accepted"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation Accepted",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Nd4", "Nxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9a707d96fb93095a",
+          "names": {
+            "en": "Spanish Variation, Rubinstein Variation, Marshall Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation, Marshall Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "Nd4", "Nxe5", "Bc5", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-517c7f5002598ff7",
+          "names": {
+            "en": "Spanish Variation, Ranken Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Ranken Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "a6", "Bxc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-994809af0338992f",
+          "names": {
+            "en": "Spanish Variation, Spielmann Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Spielmann Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Bb5", "a6", "Bxc6", "dxc6", "Nxe5", "Nxe4", "Nxe4", "Qd4", "O-O", "Qxe5", "Re1", "Be6", "d4", "Qd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a2aeec8f277a032d",
+          "names": {
+            "en": "Spanish Variation, Gunsberg Counterattack"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Gunsberg Counterattack",
+          "moves": ["e4", "e5", "Nf3", "Nf6", "Nc3", "Nc6", "Bb5", "Bb4", "O-O", "O-O", "Nd5", "Nxd5", "exd5", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-59353fa7d32dcd79",
+          "names": {
+            "en": "Spanish Variation, Symmetrical Variation, Tarrasch Variation"
+          },
+          "eco": "C49",
+          "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation, Tarrasch Variation",
+          "moves": ["e4", "e5", "Nf3", "Nf6", "Nc3", "Nc6", "Bb5", "Bb4", "O-O", "O-O", "d3", "d6", "Bg5", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e6aca3b207295221",
+          "names": {
+            "en": "Spanish Variation, Rubinstein Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation",
+          "moves": ["e4", "e5", "Nf3", "Nf6", "Nc3", "Nc6", "Bb5", "Nd4", "Nxe5", "Qe7", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-523ce7a8d8b254df",
+          "names": {
+            "en": "Spanish Variation, Rubinstein Variation, Henneberger Variation"
+          },
+          "eco": "C48",
+          "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation, Henneberger Variation",
+          "moves": ["e4", "e5", "Nf3", "Nf6", "Nc3", "Nc6", "Bb5", "Nd4", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Scotch Variation"
+      },
+      "lines": [
+        {
+          "id": "line-3c15f8581a144161",
+          "names": {
+            "en": "Scotch Variation"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Scotch Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-41da8b7f227059b6",
+          "names": {
+            "en": "Scotch Variation, Krause Gambit"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Scotch Variation, Krause Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "d4", "Bb4", "Nxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-31ae056e8d1c64a1",
+          "names": {
+            "en": "Scotch Variation, Krause Gambit, Leonhardt Defense"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Scotch Variation, Krause Gambit, Leonhardt Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "d4", "Bb4", "Nxe5", "Qe7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d0aa45897e0eb7af",
+          "names": {
+            "en": "Scotch Variation, Oxford Gambit"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Scotch Variation, Oxford Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "d4", "Bb4", "d5", "Nd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-56a1c9ab02e8ed06",
+          "names": {
+            "en": "Scotch Variation, Belgrade Gambit"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Scotch Variation, Belgrade Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "d4", "exd4", "Nd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-536595b1175f3fe0",
+          "names": {
+            "en": "Scotch Variation, Belgrade Gambit, Modern Defense"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Scotch Variation, Belgrade Gambit, Modern Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "d4", "exd4", "Nd5", "Nxe4", "Qe2", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-be8df4137973aa1c",
+          "names": {
+            "en": "Scotch Variation, Schmid Defense"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Scotch Variation, Schmid Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "d4", "exd4", "Nxd4", "Nxe4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Halloween Gambit",
+        "pt-BR": "Gambito Halloween",
+        "es": "Gambito Halloween"
+      },
+      "lines": [
+        {
+          "id": "line-36f3977418cea55a",
+          "names": {
+            "en": "Halloween Gambit",
+            "pt-BR": "Gambito Halloween",
+            "es": "Gambito Halloween"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Halloween Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Nxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-53707f0526f8fa62",
+          "names": {
+            "en": "Halloween Gambit, Plasma Variation",
+            "pt-BR": "Gambito Halloween, Variação Plasma",
+            "es": "Gambito Halloween, Variante Plasma"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Halloween Gambit, Plasma Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Nxe5", "Nxe5", "d4", "Nc6", "d5", "Ne5", "f4", "Ng6", "e5", "Ng8", "d6", "cxd6", "exd6", "Qf6", "Nb5", "Rb8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c80f2eb80a0f68fe",
+          "names": {
+            "en": "Halloween Gambit, Oldtimer Variation",
+            "pt-BR": "Gambito Halloween, Variação Oldtimer",
+            "es": "Gambito Halloween, Variante Oldtimer"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Halloween Gambit, Oldtimer Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Nxe5", "Nxe5", "d4", "Ng6", "e5", "Ng8", "Bc4", "Bb4", "Qf3", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Italian Variation"
+      },
+      "lines": [
+        {
+          "id": "line-e7403599d2017f32",
+          "names": {
+            "en": "Italian Variation"
+          },
+          "eco": "C50",
+          "opening": "Four Knights Game: Italian Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "Nc3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-edd2314e76b2b800",
+          "names": {
+            "en": "Italian Variation"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Italian Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-03bb77913d876601",
+          "names": {
+            "en": "Italian Variation, Noa Gambit"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Italian Variation, Noa Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Nc3", "Nxe4", "Bxf7+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Glek System",
+        "pt-BR": "Sistema Glek",
+        "es": "Sistema Glek"
+      },
+      "lines": [
+        {
+          "id": "line-33fd29dbf51213b1",
+          "names": {
+            "en": "Glek System",
+            "pt-BR": "Sistema Glek",
+            "es": "Sistema Glek"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Glek System",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-332e625948186585",
+          "names": {
+            "en": "Glek System",
+            "pt-BR": "Sistema Glek",
+            "es": "Sistema Glek"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Glek System",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "g3", "d5", "exd5", "Nxd5", "Bg2", "Nxc3", "bxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Gunsberg Variation",
+        "pt-BR": "Variação Gunsberg",
+        "es": "Variante Gunsberg"
+      },
+      "lines": [
+        {
+          "id": "line-778be7cda36f3227",
+          "names": {
+            "en": "Gunsberg Variation",
+            "pt-BR": "Variação Gunsberg",
+            "es": "Variante Gunsberg"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Gunsberg Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "a3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5f2f8b2b405c5754",
+          "names": {
+            "en": "Gunsberg Variation, Provincial Opening",
+            "pt-BR": "Variação Gunsberg, Abertura Provincial",
+            "es": "Variante Gunsberg, Apertura Provincial"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Gunsberg Variation, Provincial Opening",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "a3", "d6", "h3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Scotch Variation Accepted"
+      },
+      "lines": [
+        {
+          "id": "line-9655cc5ee4237bd7",
+          "names": {
+            "en": "Scotch Variation Accepted"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Scotch Variation Accepted",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "d4", "exd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-337b839d83d51252",
+          "names": {
+            "en": "Scotch Variation Accepted, Main Line"
+          },
+          "eco": "C47",
+          "opening": "Four Knights Game: Scotch Variation Accepted, Main Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "d4", "exd4", "Nxd4", "Bb4", "Nxc6", "bxc6", "Bd3", "d5", "exd5", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-37f12212fd765dbe",
+      "names": {
+        "en": "Four Knights Game",
+        "pt-BR": "Abertura dos Quatro Cavalos",
+        "es": "Apertura de los Cuatro Caballos"
+      },
+      "eco": "C47",
+      "opening": "Four Knights Game",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7edb5afa6516fcf5",
+      "names": {
+        "en": "Naroditsky Variation",
+        "pt-BR": "Variação Naroditsky",
+        "es": "Variante Naroditsky"
+      },
+      "eco": "C47",
+      "opening": "Four Knights Game: Naroditsky Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6", "Nd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

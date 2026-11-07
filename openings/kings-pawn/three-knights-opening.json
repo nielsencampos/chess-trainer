@@ -1,0 +1,94 @@
+{
+  "id": "three-knights-opening",
+  "names": {
+    "en": "Three Knights Opening",
+    "pt-BR": "Abertura dos Três Cavalos",
+    "es": "Apertura de los Tres Caballos"
+  },
+  "order": 16,
+  "variants": [
+    {
+      "names": {
+        "en": "Main",
+        "pt-BR": "Principal",
+        "es": "Principal"
+      },
+      "lines": [
+        {
+          "id": "line-76e9bbce31d309d9",
+          "names": {
+            "en": "Three Knights Opening",
+            "pt-BR": "Abertura dos Três Cavalos",
+            "es": "Apertura de los Tres Caballos"
+          },
+          "eco": "C46",
+          "opening": "Three Knights Opening",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0654e1e07ad2f510",
+          "names": {
+            "en": "Three Knights Opening",
+            "pt-BR": "Abertura dos Três Cavalos",
+            "es": "Apertura de los Tres Caballos"
+          },
+          "eco": "C46",
+          "opening": "Three Knights Opening",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-4122a6f30ad21c13",
+      "names": {
+        "en": "Schlechter Variation",
+        "pt-BR": "Variação Schlechter",
+        "es": "Variante Schlechter"
+      },
+      "eco": "C46",
+      "opening": "Three Knights Opening: Schlechter Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Bb4", "Nd5", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8b41e669e227fa64",
+      "names": {
+        "en": "Steinitz Defense",
+        "pt-BR": "Defesa Steinitz",
+        "es": "Defensa Steinitz"
+      },
+      "eco": "C46",
+      "opening": "Three Knights Opening: Steinitz Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6d86136ee67ec4f5",
+      "names": {
+        "en": "Steinitz-Rosenthal Variation",
+        "pt-BR": "Variação Steinitz-Rosenthal",
+        "es": "Variante Steinitz-Rosenthal"
+      },
+      "eco": "C46",
+      "opening": "Three Knights Opening: Steinitz-Rosenthal Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "g6", "d4", "exd4", "Nd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0a74cdc679f5c2c3",
+      "names": {
+        "en": "Winawer Defense",
+        "pt-BR": "Defesa Winawer",
+        "es": "Defensa Winawer"
+      },
+      "eco": "C46",
+      "opening": "Three Knights Opening: Winawer Defense",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

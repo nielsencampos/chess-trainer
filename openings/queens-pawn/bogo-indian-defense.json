@@ -1,0 +1,246 @@
+{
+  "id": "bogo-indian-defense",
+  "names": {
+    "en": "Bogo-Indian Defense",
+    "pt-BR": "Defesa Bogo-Índia",
+    "es": "Defensa Bogoindia"
+  },
+  "order": 13,
+  "variants": [
+    {
+      "names": {
+        "en": "Retreat Variation"
+      },
+      "lines": [
+        {
+          "id": "line-4bc074be0b1f75c7",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Bd2", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f8acc5cd8d219ab4",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "O-O", "O-O", "c6", "Qc2", "Nbd7", "Bf4", "b6", "Nbd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bcbc26e6096f14cb",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "d5", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "O-O", "O-O", "c6", "Qc2", "Nbd7", "Bf4", "b6", "Nbd2", "Ba6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d49a3bb4d40a0486",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "d5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5a754ae95135b3ef",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "d5", "Nf3", "Nbd7", "O-O", "O-O", "Qc2", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f79ee0082dfa5041",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "d5", "Nf3", "Nbd7", "O-O", "O-O", "Qc2", "c6", "Rc1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5adf441f292d9afa",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "d5", "Nf3", "Nbd7", "O-O", "O-O", "Qc2", "c6", "Rd1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ae7206ecf6d363b1",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "d5", "Nf3", "Nbd7", "O-O", "O-O", "Qc2", "c6", "Rd1", "h6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9b5d18a985b8e780",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "d5", "Nf3", "Nbd7", "O-O", "O-O", "Qc2", "c6", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4dfa1570dcc2d7af",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "d5", "Nf3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1d1cecacb0b6bb50",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "d5", "Nf3", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-be6a1f6633e67055",
+          "names": {
+            "en": "Retreat Variation"
+          },
+          "eco": "E11",
+          "opening": "Bogo-Indian Defense: Retreat Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "g3", "Bb4+", "Bd2", "Be7", "Bg2", "d5", "Nf3", "O-O", "Qc2", "c6", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-40986ba02fa35bc7",
+      "names": {
+        "en": "Exchange Variation",
+        "pt-BR": "Variação da Troca",
+        "es": "Variante del Cambio"
+      },
+      "eco": "E11",
+      "opening": "Bogo-Indian Defense: Exchange Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Bd2", "Bxd2+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ce915d8c3688b97d",
+      "names": {
+        "en": "Grünfeld Variation",
+        "pt-BR": "Variação Grünfeld",
+        "es": "Variante Grünfeld"
+      },
+      "eco": "E11",
+      "opening": "Bogo-Indian Defense: Grünfeld Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Nbd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-34760d77959506ee",
+      "names": {
+        "en": "Haiti Variation",
+        "pt-BR": "Variação Haiti",
+        "es": "Variante Haiti"
+      },
+      "eco": "E11",
+      "opening": "Bogo-Indian Defense: Haiti Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Bd2", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4849edc129d5772b",
+      "names": {
+        "en": "Bogo-Indian Defense",
+        "pt-BR": "Defesa Bogo-Índia",
+        "es": "Defensa Bogoindia"
+      },
+      "eco": "E11",
+      "opening": "Bogo-Indian Defense",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cee70fa26d3e1bf8",
+      "names": {
+        "en": "Monticelli Trap",
+        "pt-BR": "Armadilha Monticelli",
+        "es": "Trampa Monticelli"
+      },
+      "eco": "E11",
+      "opening": "Bogo-Indian Defense: Monticelli Trap",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "b6", "g3", "Bb7", "Bg2", "Bb4+", "Bd2", "Bxd2+", "Qxd2", "O-O", "Nc3", "Ne4", "Qc2", "Nxc3", "Ng5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-06b11444788c44b2",
+      "names": {
+        "en": "New England Variation"
+      },
+      "eco": "E11",
+      "opening": "Bogo-Indian Defense: New England Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Nfd2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-8b197735dab96d05",
+      "names": {
+        "en": "Nimzowitsch Variation",
+        "pt-BR": "Variação Nimzowitsch",
+        "es": "Variante Nimzowitsch"
+      },
+      "eco": "E11",
+      "opening": "Bogo-Indian Defense: Nimzowitsch Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Bd2", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-32d76a892cea5cbf",
+      "names": {
+        "en": "Vitolins Variation",
+        "pt-BR": "Variação Vitolins",
+        "es": "Variante Vitolins"
+      },
+      "eco": "E11",
+      "opening": "Bogo-Indian Defense: Vitolins Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Bd2", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-756bcb139ad3440b",
+      "names": {
+        "en": "Wade-Smyslov Variation",
+        "pt-BR": "Variação Wade-Smyslov",
+        "es": "Variante Wade-Smyslov"
+      },
+      "eco": "E11",
+      "opening": "Bogo-Indian Defense: Wade-Smyslov Variation",
+      "moves": ["d4", "Nf6", "c4", "e6", "Nf3", "Bb4+", "Bd2", "a5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

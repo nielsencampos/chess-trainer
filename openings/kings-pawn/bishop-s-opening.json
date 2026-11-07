@@ -1,0 +1,532 @@
+{
+  "id": "bishop-s-opening",
+  "names": {
+    "en": "Bishop's Opening",
+    "pt-BR": "Abertura do Bispo",
+    "es": "Apertura de Alfil"
+  },
+  "order": 17,
+  "variants": [
+    {
+      "names": {
+        "en": "Lewis Countergambit",
+        "pt-BR": "Contragambito Lewis",
+        "es": "Contragambito Lewis"
+      },
+      "lines": [
+        {
+          "id": "line-fd64807adf1e8457",
+          "names": {
+            "en": "Lewis Countergambit",
+            "pt-BR": "Contragambito Lewis",
+            "es": "Contragambito Lewis"
+          },
+          "eco": "C23",
+          "opening": "Bishop's Opening: Lewis Countergambit",
+          "moves": ["e4", "e5", "Bc4", "Bc5", "c3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b73fd929a8a939a9",
+          "names": {
+            "en": "Lewis Countergambit",
+            "pt-BR": "Contragambito Lewis",
+            "es": "Contragambito Lewis"
+          },
+          "eco": "C23",
+          "opening": "Bishop's Opening: Lewis Countergambit",
+          "moves": ["e4", "e5", "Bc4", "Bc5", "c3", "d5", "Bxd5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1c379d57358fbd05",
+          "names": {
+            "en": "Lewis Countergambit, Walker Variation",
+            "pt-BR": "Contragambito Lewis, Variação Walker",
+            "es": "Contragambito Lewis, Variante Walker"
+          },
+          "eco": "C23",
+          "opening": "Bishop's Opening: Lewis Countergambit, Walker Variation",
+          "moves": ["e4", "e5", "Bc4", "Bc5", "c3", "d5", "Bxd5", "Nf6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "McDonnell Gambit",
+        "pt-BR": "Gambito McDonnell",
+        "es": "Gambito McDonnell"
+      },
+      "lines": [
+        {
+          "id": "line-0d434ad366e3a098",
+          "names": {
+            "en": "McDonnell Gambit",
+            "pt-BR": "Gambito McDonnell",
+            "es": "Gambito McDonnell"
+          },
+          "eco": "C23",
+          "opening": "Bishop's Opening: McDonnell Gambit",
+          "moves": ["e4", "e5", "Bc4", "Bc5", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5ec4c6b0fa71b434",
+          "names": {
+            "en": "McDonnell Gambit, La Bourdonnais-Denker Gambit",
+            "pt-BR": "Gambito McDonnell, Gambito La Bourdonnais-Denker",
+            "es": "Gambito McDonnell, Gambito La Bourdonnais-Denker"
+          },
+          "eco": "C23",
+          "opening": "Bishop's Opening: McDonnell Gambit, La Bourdonnais-Denker Gambit",
+          "moves": ["e4", "e5", "Bc4", "Bc5", "b4", "Bxb4", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bdf01d6842d65561",
+          "names": {
+            "en": "McDonnell Gambit, McDonnell Double Gambit"
+          },
+          "eco": "C23",
+          "opening": "Bishop's Opening: McDonnell Gambit, McDonnell Double Gambit",
+          "moves": ["e4", "e5", "Bc4", "Bc5", "b4", "Bxb4", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Urusov Gambit",
+        "pt-BR": "Gambito Urusov",
+        "es": "Gambito Urusov"
+      },
+      "lines": [
+        {
+          "id": "line-681353d135014f70",
+          "names": {
+            "en": "Urusov Gambit",
+            "pt-BR": "Gambito Urusov",
+            "es": "Gambito Urusov"
+          },
+          "eco": "C43",
+          "opening": "Bishop's Opening: Urusov Gambit",
+          "moves": ["e4", "e5", "Bc4", "Nf6", "d4", "exd4", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1b626e88a0aa4102",
+          "names": {
+            "en": "Urusov Gambit, Keidansky Gambit",
+            "pt-BR": "Gambito Urusov, Gambito Keidansky",
+            "es": "Gambito Urusov, Gambito Keidansky"
+          },
+          "eco": "C43",
+          "opening": "Bishop's Opening: Urusov Gambit, Keidansky Gambit",
+          "moves": ["e4", "e5", "Bc4", "Nf6", "d4", "exd4", "Nf3", "Nxe4", "Qxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-98a789eb3eb99b2c",
+          "names": {
+            "en": "Urusov Gambit, Panov Variation",
+            "pt-BR": "Gambito Urusov, Variação Panov",
+            "es": "Gambito Urusov, Variante Panov"
+          },
+          "eco": "C24",
+          "opening": "Bishop's Opening: Urusov Gambit, Panov Variation",
+          "moves": ["e4", "e5", "Bc4", "Nf6", "d4", "exd4", "Nf3", "d5", "exd5", "Bb4+", "c3", "Qe7+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Berlin Defense",
+        "pt-BR": "Defesa Berlim",
+        "es": "Defensa Berlín"
+      },
+      "lines": [
+        {
+          "id": "line-48589cf84ee40695",
+          "names": {
+            "en": "Berlin Defense",
+            "pt-BR": "Defesa Berlim",
+            "es": "Defensa Berlín"
+          },
+          "eco": "C24",
+          "opening": "Bishop's Opening: Berlin Defense",
+          "moves": ["e4", "e5", "Bc4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b9255d80d404d230",
+          "names": {
+            "en": "Berlin Defense, Greco Gambit",
+            "pt-BR": "Defesa Berlim, Gambito Greco",
+            "es": "Defensa Berlín, Gambito Greco"
+          },
+          "eco": "C24",
+          "opening": "Bishop's Opening: Berlin Defense, Greco Gambit",
+          "moves": ["e4", "e5", "Bc4", "Nf6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Boden-Kieseritzky Gambit",
+        "pt-BR": "Gambito Boden-Kieseritzky",
+        "es": "Gambito Boden-Kieseritzky"
+      },
+      "lines": [
+        {
+          "id": "line-d0c84830e978e899",
+          "names": {
+            "en": "Boden-Kieseritzky Gambit",
+            "pt-BR": "Gambito Boden-Kieseritzky",
+            "es": "Gambito Boden-Kieseritzky"
+          },
+          "eco": "C27",
+          "opening": "Bishop's Opening: Boden-Kieseritzky Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nf6", "Bc4", "Nxe4", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ac86b6bf998da659",
+          "names": {
+            "en": "Boden-Kieseritzky Gambit, Lichtenhein Defense",
+            "pt-BR": "Gambito Boden-Kieseritzky, Defesa Lichtenhein",
+            "es": "Gambito Boden-Kieseritzky, Defensa Lichtenhein"
+          },
+          "eco": "C27",
+          "opening": "Bishop's Opening: Boden-Kieseritzky Gambit, Lichtenhein Defense",
+          "moves": ["e4", "e5", "Nf3", "Nf6", "Bc4", "Nxe4", "Nc3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Calabrese Countergambit",
+        "pt-BR": "Contragambito Calabrese",
+        "es": "Contragambito Calabrese"
+      },
+      "lines": [
+        {
+          "id": "line-c0d6818e54d82d97",
+          "names": {
+            "en": "Calabrese Countergambit",
+            "pt-BR": "Contragambito Calabrese",
+            "es": "Contragambito Calabrese"
+          },
+          "eco": "C23",
+          "opening": "Bishop's Opening: Calabrese Countergambit",
+          "moves": ["e4", "e5", "Bc4", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-69dd5e62c82e87fc",
+          "names": {
+            "en": "Calabrese Countergambit, Jaenisch Variation",
+            "pt-BR": "Contragambito Calabrese, Variação Jaenisch",
+            "es": "Contragambito Calabrese, Variante Jaenisch"
+          },
+          "eco": "C23",
+          "opening": "Bishop's Opening: Calabrese Countergambit, Jaenisch Variation",
+          "moves": ["e4", "e5", "Bc4", "f5", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Lopez Variation",
+        "pt-BR": "Variação Lopez",
+        "es": "Variante Lopez"
+      },
+      "lines": [
+        {
+          "id": "line-2dbd77b085e326a7",
+          "names": {
+            "en": "Lopez Variation",
+            "pt-BR": "Variação Lopez",
+            "es": "Variante Lopez"
+          },
+          "eco": "C23",
+          "opening": "Bishop's Opening: Lopez Variation",
+          "moves": ["e4", "e5", "Bc4", "Bc5", "Qe2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bbf2925a6c2275b4",
+          "names": {
+            "en": "Lopez Variation, Lopez Gambit",
+            "pt-BR": "Variação Lopez, Gambito Lopez",
+            "es": "Variante Lopez, Gambito Lopez"
+          },
+          "eco": "C23",
+          "opening": "Bishop's Opening: Lopez Variation, Lopez Gambit",
+          "moves": ["e4", "e5", "Bc4", "Bc5", "Qe2", "Nf6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-510fe9b9925511a1",
+      "names": {
+        "en": "Anderssen Gambit",
+        "pt-BR": "Gambito Anderssen",
+        "es": "Gambito Anderssen"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Anderssen Gambit",
+      "moves": ["e4", "e5", "Bc4", "b5", "Bxb5", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-eacbcb94bd51d262",
+      "names": {
+        "en": "Boi Variation",
+        "pt-BR": "Variação Boi",
+        "es": "Variante Boi"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Boi Variation",
+      "moves": ["e4", "e5", "Bc4", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a9c8005e016913aa",
+      "names": {
+        "en": "Four Pawns Gambit"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Four Pawns Gambit",
+      "moves": ["e4", "e5", "Bc4", "Bc5", "b4", "Bxb4", "f4", "exf4", "Nf3", "Be7", "d4", "Bh4+", "g3", "fxg3", "O-O", "gxh2+", "Kh1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-eb91e1261568716e",
+      "names": {
+        "en": "Horwitz Gambit",
+        "pt-BR": "Gambito Horwitz",
+        "es": "Gambito Horwitz"
+      },
+      "eco": "C26",
+      "opening": "Bishop's Opening: Horwitz Gambit",
+      "moves": ["e4", "e5", "Bc4", "Nf6", "Nc3", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-059ff1b637fdea35",
+      "names": {
+        "en": "Khan Gambit",
+        "pt-BR": "Gambito Khan",
+        "es": "Gambito Khan"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Khan Gambit",
+      "moves": ["e4", "e5", "Bc4", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-818f8b1f48cd5f6f",
+      "names": {
+        "en": "Kitchener Folly"
+      },
+      "eco": "C24",
+      "opening": "Bishop's Opening: Kitchener Folly",
+      "moves": ["e4", "e5", "Bc4", "Nf6", "d3", "Be7", "Nf3", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e3b27fae1d0f65c0",
+      "names": {
+        "en": "Krejcik Gambit",
+        "pt-BR": "Gambito Krejcik",
+        "es": "Gambito Krejcik"
+      },
+      "eco": "C24",
+      "opening": "Bishop's Opening: Krejcik Gambit",
+      "moves": ["e4", "e5", "Bc4", "Nf6", "f3", "Bc5", "Ne2", "Nc6", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c9b6df04db96ba78",
+      "names": {
+        "en": "Lewis Gambit",
+        "pt-BR": "Gambito Lewis",
+        "es": "Gambito Lewis"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Lewis Gambit",
+      "moves": ["e4", "e5", "Bc4", "Bc5", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a86621320e8553b4",
+      "names": {
+        "en": "Lisitsyn Variation",
+        "pt-BR": "Variação Lisitsyn",
+        "es": "Variante Lisitsyn"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Lisitsyn Variation",
+      "moves": ["e4", "e5", "Bc4", "c6", "d4", "d5", "exd5", "cxd5", "Bb5+", "Bd7", "Bxd7+", "Nxd7", "dxe5", "Nxe5", "Ne2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f059e7820cd10d66",
+      "names": {
+        "en": "Lopez Gambit",
+        "pt-BR": "Gambito Lopez",
+        "es": "Gambito Lopez"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Lopez Gambit",
+      "moves": ["e4", "e5", "Bc4", "Bc5", "Qe2", "Nc6", "c3", "Nf6", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-603ca0e1e0555929",
+      "names": {
+        "en": "Bishop's Opening",
+        "pt-BR": "Abertura do Bispo",
+        "es": "Apertura de Alfil"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening",
+      "moves": ["e4", "e5", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2f896857d13f7b04",
+      "names": {
+        "en": "Pachman Gambit",
+        "pt-BR": "Gambito Pachman",
+        "es": "Gambito Pachman"
+      },
+      "eco": "C24",
+      "opening": "Bishop's Opening: Pachman Gambit",
+      "moves": ["e4", "e5", "Bc4", "Nf6", "Ne2", "Nxe4", "Nec3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-338a167f8788cab1",
+      "names": {
+        "en": "Paulsen Defense",
+        "pt-BR": "Defesa Paulsen",
+        "es": "Defensa Paulsen"
+      },
+      "eco": "C24",
+      "opening": "Bishop's Opening: Paulsen Defense",
+      "moves": ["e4", "e5", "Bc4", "Nf6", "d3", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f4d614d37984ade2",
+      "names": {
+        "en": "Philidor Counterattack"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Philidor Counterattack",
+      "moves": ["e4", "e5", "Bc4", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e6ed726e33631fa",
+      "names": {
+        "en": "Philidor Variation",
+        "pt-BR": "Variação Philidor",
+        "es": "Variante Philidor"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Philidor Variation",
+      "moves": ["e4", "e5", "Bc4", "Bc5", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e105470a17b1a52b",
+      "names": {
+        "en": "Ponziani Gambit",
+        "pt-BR": "Gambito Ponziani",
+        "es": "Gambito Ponziani"
+      },
+      "eco": "C24",
+      "opening": "Bishop's Opening: Ponziani Gambit",
+      "moves": ["e4", "e5", "Bc4", "Nf6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-435fef1f92dcbfdf",
+      "names": {
+        "en": "Pratt Variation",
+        "pt-BR": "Variação Pratt",
+        "es": "Variante Pratt"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Pratt Variation",
+      "moves": ["e4", "e5", "Bc4", "Bc5", "c3", "Nf6", "d4", "exd4", "e5", "d5", "exf6", "dxc4", "Qh5", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f64de7df293e7a48",
+      "names": {
+        "en": "Stein Gambit",
+        "pt-BR": "Gambito Stein",
+        "es": "Gambito Stein"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Stein Gambit",
+      "moves": ["e4", "e5", "Bc4", "Bc5", "f4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d0340c3b09cbb58d",
+      "names": {
+        "en": "Thorold Gambit",
+        "pt-BR": "Gambito Thorold",
+        "es": "Gambito Thorold"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: Thorold Gambit",
+      "moves": ["e4", "e5", "Bc4", "b5", "Bxb5", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-be32d095ff53b522",
+      "names": {
+        "en": "Vienna Hybrid"
+      },
+      "eco": "C24",
+      "opening": "Bishop's Opening: Vienna Hybrid",
+      "moves": ["e4", "e5", "Bc4", "Nf6", "d3", "Nc6", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-335b5ee8e025626b",
+      "names": {
+        "en": "Warsaw Gambit",
+        "pt-BR": "Gambito Warsaw",
+        "es": "Gambito Warsaw"
+      },
+      "eco": "C24",
+      "opening": "Bishop's Opening: Warsaw Gambit",
+      "moves": ["e4", "e5", "Bc4", "Nf6", "d4", "exd4", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fdd9157ea2326d72",
+      "names": {
+        "en": "del Rio Variation"
+      },
+      "eco": "C23",
+      "opening": "Bishop's Opening: del Rio Variation",
+      "moves": ["e4", "e5", "Bc4", "Bc5", "c3", "Qg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

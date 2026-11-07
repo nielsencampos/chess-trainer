@@ -1,0 +1,216 @@
+{
+  "id": "ponziani-opening",
+  "names": {
+    "en": "Ponziani Opening",
+    "pt-BR": "Abertura Ponziani",
+    "es": "Apertura Ponziani"
+  },
+  "order": 20,
+  "variants": [
+    {
+      "names": {
+        "en": "Jaenisch Counterattack"
+      },
+      "lines": [
+        {
+          "id": "line-a1fd5f94d32db183",
+          "names": {
+            "en": "Jaenisch Counterattack"
+          },
+          "eco": "C44",
+          "opening": "Ponziani Opening: Jaenisch Counterattack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ce89492935b5917d",
+          "names": {
+            "en": "Jaenisch Counterattack"
+          },
+          "eco": "C44",
+          "opening": "Ponziani Opening: Jaenisch Counterattack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "Nf6", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-027d76b5c8177ec2",
+          "names": {
+            "en": "Jaenisch Counterattack"
+          },
+          "eco": "C44",
+          "opening": "Ponziani Opening: Jaenisch Counterattack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "Nf6", "d3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1e340d885b74ec84",
+          "names": {
+            "en": "Jaenisch Counterattack"
+          },
+          "eco": "C44",
+          "opening": "Ponziani Opening: Jaenisch Counterattack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "Nf6", "d3", "d5", "Nbd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Ponziani Countergambit",
+        "pt-BR": "Contragambito Ponziani",
+        "es": "Contragambito Ponziani"
+      },
+      "lines": [
+        {
+          "id": "line-b8128577807f195b",
+          "names": {
+            "en": "Ponziani Countergambit",
+            "pt-BR": "Contragambito Ponziani",
+            "es": "Contragambito Ponziani"
+          },
+          "eco": "C44",
+          "opening": "Ponziani Opening: Ponziani Countergambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bfe69d3bab4f3ca4",
+          "names": {
+            "en": "Ponziani Countergambit, Schmidt Attack",
+            "pt-BR": "Contragambito Ponziani, Ataque Schmidt",
+            "es": "Contragambito Ponziani, Ataque Schmidt"
+          },
+          "eco": "C44",
+          "opening": "Ponziani Opening: Ponziani Countergambit, Schmidt Attack",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "f5", "d4", "d6", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Spanish Variation"
+      },
+      "lines": [
+        {
+          "id": "line-6d0383e66c488fae",
+          "names": {
+            "en": "Spanish Variation"
+          },
+          "eco": "C44",
+          "opening": "Ponziani Opening: Spanish Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "d5", "Bb5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b47afd0bd74a2cad",
+          "names": {
+            "en": "Spanish Variation, Harrwitz Attack, Nikitin Gambit"
+          },
+          "eco": "C44",
+          "opening": "Ponziani Opening: Spanish Variation, Harrwitz Attack, Nikitin Gambit",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "d5", "Bb5", "dxe4", "Nxe5", "Qd5", "Qa4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-c007eb2922a4c2f5",
+      "names": {
+        "en": "Caro Gambit",
+        "pt-BR": "Gambito Caro",
+        "es": "Gambito Caro"
+      },
+      "eco": "C44",
+      "opening": "Ponziani Opening: Caro Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "d5", "Qa4", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-939522d1bdd12070",
+      "names": {
+        "en": "Leonhardt Variation",
+        "pt-BR": "Variação Leonhardt",
+        "es": "Variante Leonhardt"
+      },
+      "eco": "C44",
+      "opening": "Ponziani Opening: Leonhardt Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "d5", "Qa4", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-24279123d76598bc",
+      "names": {
+        "en": "Ponziani Opening",
+        "pt-BR": "Abertura Ponziani",
+        "es": "Apertura Ponziani"
+      },
+      "eco": "C44",
+      "opening": "Ponziani Opening",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6062154784e22e87",
+      "names": {
+        "en": "Neumann Gambit",
+        "pt-BR": "Gambito Neumann",
+        "es": "Gambito Neumann"
+      },
+      "eco": "C44",
+      "opening": "Ponziani Opening: Neumann Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "Nf6", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-dcfe68645fa66710",
+      "names": {
+        "en": "Romanishin Variation",
+        "pt-BR": "Variação Romanishin",
+        "es": "Variante Romanishin"
+      },
+      "eco": "C44",
+      "opening": "Ponziani Opening: Romanishin Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-eb1cc5c4dd6a7149",
+      "names": {
+        "en": "Réti Variation",
+        "pt-BR": "Variação Réti",
+        "es": "Variante Réti"
+      },
+      "eco": "C44",
+      "opening": "Ponziani Opening: Réti Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "Nge7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4c1e83869125536c",
+      "names": {
+        "en": "Steinitz Variation",
+        "pt-BR": "Variação Steinitz",
+        "es": "Variante Steinitz"
+      },
+      "eco": "C44",
+      "opening": "Ponziani Opening: Steinitz Variation",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "d5", "Qa4", "f6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-090e8bdc9c8291f8",
+      "names": {
+        "en": "Vukovic Gambit",
+        "pt-BR": "Gambito Vukovic",
+        "es": "Gambito Vukovic"
+      },
+      "eco": "C44",
+      "opening": "Ponziani Opening: Vukovic Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "c3", "Nf6", "d4", "Nxe4", "d5", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

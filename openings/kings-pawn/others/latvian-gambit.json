@@ -1,0 +1,328 @@
+{
+  "id": "latvian-gambit",
+  "names": {
+    "en": "Latvian Gambit"
+  },
+  "order": null,
+  "variants": [
+    {
+      "names": {
+        "en": "Mayet Attack",
+        "pt-BR": "Ataque Mayet",
+        "es": "Ataque Mayet"
+      },
+      "lines": [
+        {
+          "id": "line-1a3662b1dfee8f78",
+          "names": {
+            "en": "Mayet Attack",
+            "pt-BR": "Ataque Mayet",
+            "es": "Ataque Mayet"
+          },
+          "eco": "C40",
+          "opening": "Latvian Gambit: Mayet Attack",
+          "moves": ["e4", "e5", "Nf3", "f5", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e204b539f58e8d35",
+          "names": {
+            "en": "Mayet Attack, Morgado Defense",
+            "pt-BR": "Ataque Mayet, Defesa Morgado",
+            "es": "Ataque Mayet, Defensa Morgado"
+          },
+          "eco": "C40",
+          "opening": "Latvian Gambit: Mayet Attack, Morgado Defense",
+          "moves": ["e4", "e5", "Nf3", "f5", "Bc4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5af93b8184823b56",
+          "names": {
+            "en": "Mayet Attack, Strautins Gambit",
+            "pt-BR": "Ataque Mayet, Gambito Strautins",
+            "es": "Ataque Mayet, Gambito Strautins"
+          },
+          "eco": "C40",
+          "opening": "Latvian Gambit: Mayet Attack, Strautins Gambit",
+          "moves": ["e4", "e5", "Nf3", "f5", "Bc4", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-27952f95525432a5",
+          "names": {
+            "en": "Mayet Attack, Poisoned Pawn Variation"
+          },
+          "eco": "C40",
+          "opening": "Latvian Gambit: Mayet Attack, Poisoned Pawn Variation",
+          "moves": ["e4", "e5", "Nf3", "f5", "Bc4", "fxe4", "Nxe5", "Qg5", "d4", "Qxg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f349ab336b7d25ff",
+          "names": {
+            "en": "Mayet Attack, Polerio-Svedenborg Variation",
+            "pt-BR": "Ataque Mayet, Variação Polerio-Svedenborg",
+            "es": "Ataque Mayet, Variante Polerio-Svedenborg"
+          },
+          "eco": "C40",
+          "opening": "Latvian Gambit: Mayet Attack, Polerio-Svedenborg Variation",
+          "moves": ["e4", "e5", "Nf3", "f5", "Bc4", "fxe4", "Nxe5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-5eca8915ca9e0b42",
+      "names": {
+        "en": "Accepted",
+        "pt-BR": "Aceito",
+        "es": "Aceptado"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit Accepted",
+      "moves": ["e4", "e5", "Nf3", "f5", "exf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cf8dc77db6020943",
+      "names": {
+        "en": "Accepted: Bilguer Variation",
+        "pt-BR": "Aceito: Variação Bilguer",
+        "es": "Aceptado: Variante Bilguer"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit Accepted: Bilguer Variation",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Qf6", "d4", "d6", "Nc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d40245e5a0ff5a36",
+      "names": {
+        "en": "Accepted: Bronstein Attack",
+        "pt-BR": "Aceito: Ataque Bronstein",
+        "es": "Aceptado: Ataque Bronstein"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit Accepted: Bronstein Attack",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Qf6", "d4", "d6", "Nc4", "fxe4", "Be2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7b6e08949651fc82",
+      "names": {
+        "en": "Accepted: Bronstein Gambit",
+        "pt-BR": "Aceito: Gambito Bronstein",
+        "es": "Aceptado: Gambito Bronstein"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit Accepted: Bronstein Gambit",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Qf6", "d4", "d6", "Nc4", "fxe4", "Qh5+", "g6", "Qe2"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2411447fa43736be",
+      "names": {
+        "en": "Accepted: Foltys Variation",
+        "pt-BR": "Aceito: Variação Foltys",
+        "es": "Aceptado: Variante Foltys"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit Accepted: Foltys Variation",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Qf6", "Nc4", "fxe4", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f7e0692598c9568d",
+      "names": {
+        "en": "Accepted: Foltys-Leonhardt Variation",
+        "pt-BR": "Aceito: Variação Foltys-Leonhardt",
+        "es": "Aceptado: Variante Foltys-Leonhardt"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit Accepted: Foltys-Leonhardt Variation",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Qf6", "Nc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-25321cc5b43b6e3f",
+      "names": {
+        "en": "Accepted: Leonhardt Variation",
+        "pt-BR": "Aceito: Variação Leonhardt",
+        "es": "Aceptado: Variante Leonhardt"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit Accepted: Leonhardt Variation",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Qf6", "Nc4", "fxe4", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-310410aefa8bdd53",
+      "names": {
+        "en": "Accepted: Main Line",
+        "pt-BR": "Aceito: Linha Principal",
+        "es": "Aceptado: Línea Principal"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit Accepted: Main Line",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Qf6", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-652d6ddb94a3e462",
+      "names": {
+        "en": "Accepted: Nimzowitsch Attack",
+        "pt-BR": "Aceito: Ataque Nimzowitsch",
+        "es": "Aceptado: Ataque Nimzowitsch"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit Accepted: Nimzowitsch Attack",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Qf6", "d4", "d6", "Nc4", "fxe4", "Ne3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a563b63133e3f4ee",
+      "names": {
+        "en": "Behting Variation",
+        "pt-BR": "Variação Behting",
+        "es": "Variante Behting"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit: Behting Variation",
+      "moves": ["e4", "e5", "Nf3", "f5", "Bc4", "fxe4", "Nxe5", "Qg5", "Nf7", "Qxg2", "Rf1", "d5", "Nxh8", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-245e728ba545fabd",
+      "names": {
+        "en": "Clam Gambit",
+        "pt-BR": "Gambito Clam",
+        "es": "Gambito Clam"
+      },
+      "eco": "C44",
+      "opening": "Latvian Gambit: Clam Gambit",
+      "moves": ["e4", "e5", "Nf3", "Nc6", "d3", "f5", "exf5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-4cebfec05603bf72",
+      "names": {
+        "en": "Corkscrew Countergambit",
+        "pt-BR": "Contragambito Corkscrew",
+        "es": "Contragambito Corkscrew"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit: Corkscrew Countergambit",
+      "moves": ["e4", "e5", "Nf3", "f5", "Bc4", "fxe4", "Nxe5", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c51d777fc1a29c35",
+      "names": {
+        "en": "Corkscrew Gambit",
+        "pt-BR": "Gambito Corkscrew",
+        "es": "Gambito Corkscrew"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit: Corkscrew Gambit",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Nf6", "Bc4", "fxe4", "Nf7", "Qe7", "Nxh8", "d5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b97ecb2e6d6d06bd",
+      "names": {
+        "en": "Diepstraten Countergambit",
+        "pt-BR": "Contragambito Diepstraten",
+        "es": "Contragambito Diepstraten"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit: Diepstraten Countergambit",
+      "moves": ["e4", "e5", "Nf3", "f5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-080fb90573525e2e",
+      "names": {
+        "en": "Fraser Defense",
+        "pt-BR": "Defesa Fraser",
+        "es": "Defensa Fraser"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit: Fraser Defense",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cde6d26f599dd61f",
+      "names": {
+        "en": "Greco Variation",
+        "pt-BR": "Variação Greco",
+        "es": "Variante Greco"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit: Greco Variation",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nxe5", "Qe7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-932ddb024cb445bb",
+      "names": {
+        "en": "Lobster Gambit",
+        "pt-BR": "Gambito Lobster",
+        "es": "Gambito Lobster"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit: Lobster Gambit",
+      "moves": ["e4", "e5", "Nf3", "f5", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0c57366fdbc397b3",
+      "names": {
+        "en": "Latvian Gambit"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit",
+      "moves": ["e4", "e5", "Nf3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b258c8ce019a753a",
+      "names": {
+        "en": "Mason Countergambit",
+        "pt-BR": "Contragambito Mason",
+        "es": "Contragambito Mason"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit: Mason Countergambit",
+      "moves": ["e4", "e5", "Nf3", "f5", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ee5f60dc33c1ff63",
+      "names": {
+        "en": "Mlotkowski Variation",
+        "pt-BR": "Variação Mlotkowski",
+        "es": "Variante Mlotkowski"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit: Mlotkowski Variation",
+      "moves": ["e4", "e5", "Nf3", "f5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-80bbb55f377121a4",
+      "names": {
+        "en": "Senechaud Gambit",
+        "pt-BR": "Gambito Senechaud",
+        "es": "Gambito Senechaud"
+      },
+      "eco": "C40",
+      "opening": "Latvian Gambit: Senechaud Gambit",
+      "moves": ["e4", "e5", "Nf3", "f5", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "wade-defense",
+  "names": {
+    "en": "Wade Defense",
+    "pt-BR": "Defesa Wade",
+    "es": "Defensa Wade"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-46e05616263e9e88",
+      "names": {
+        "en": "Wade Defense",
+        "pt-BR": "Defesa Wade",
+        "es": "Defensa Wade"
+      },
+      "eco": "A41",
+      "opening": "Wade Defense",
+      "moves": ["d4", "d6", "Nf3", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

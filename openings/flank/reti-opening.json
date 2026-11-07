@@ -1,0 +1,473 @@
+{
+  "id": "reti-opening",
+  "names": {
+    "en": "Réti Opening",
+    "pt-BR": "Abertura Réti",
+    "es": "Apertura Réti"
+  },
+  "order": 3,
+  "variants": [
+    {
+      "names": {
+        "en": "Anglo-Slav Variation"
+      },
+      "lines": [
+        {
+          "id": "line-4f7d0fe386a47b68",
+          "names": {
+            "en": "Anglo-Slav Variation, New York System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, New York System",
+          "moves": ["Nf3", "Nf6", "c4", "c6", "b3", "d5", "Bb2", "Bf5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2acbdf8fcb3a269d",
+          "names": {
+            "en": "Anglo-Slav Variation, New York System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, New York System",
+          "moves": ["Nf3", "Nf6", "c4", "c6", "b3", "d5", "Bb2", "Bf5", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e7aa6453cda933a2",
+          "names": {
+            "en": "Anglo-Slav Variation, New York System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, New York System",
+          "moves": ["Nf3", "Nf6", "c4", "c6", "b3", "d5", "Bb2", "Bf5", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d930ef200ad949e7",
+          "names": {
+            "en": "Anglo-Slav Variation, with g3"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, with g3",
+          "moves": ["Nf3", "Nf6", "g3", "d5", "Bg2", "c6", "O-O", "Bf5", "d3", "h6", "c4", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bb2fbfdb4cc2ea7e",
+          "names": {
+            "en": "Anglo-Slav Variation, Bled Variation"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Bled Variation",
+          "moves": ["Nf3", "d5", "b3", "Nf6", "Bb2", "g6", "c4", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b1d9a74cc640ebe9",
+          "names": {
+            "en": "Anglo-Slav Variation, Bogoljubow Variation"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Bogoljubow Variation",
+          "moves": ["Nf3", "d5", "c4", "c6", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cc23be9e6bf03972",
+          "names": {
+            "en": "Anglo-Slav Variation, Bogoljubow Variation"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Bogoljubow Variation",
+          "moves": ["Nf3", "d5", "c4", "c6", "b3", "Bf5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2ac9f5db55342d68",
+          "names": {
+            "en": "Anglo-Slav Variation, Bogoljubow Variation"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Bogoljubow Variation",
+          "moves": ["Nf3", "d5", "c4", "c6", "b3", "Bf5", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9e0b34b891546178",
+          "names": {
+            "en": "Anglo-Slav Variation, Bogoljubow Variation"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Bogoljubow Variation",
+          "moves": ["Nf3", "d5", "c4", "c6", "b3", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3b9cef77b2009992",
+          "names": {
+            "en": "Anglo-Slav Variation"
+          },
+          "eco": "A14",
+          "opening": "Réti Opening: Anglo-Slav Variation",
+          "moves": ["Nf3", "d5", "c4", "c6", "g3", "Nf6", "Bg2", "e6", "b3", "Be7", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a28e5fb782438809",
+          "names": {
+            "en": "Anglo-Slav Variation, Bogoljubow Variation, Stonewall Line"
+          },
+          "eco": "A14",
+          "opening": "Réti Opening: Anglo-Slav Variation, Bogoljubow Variation, Stonewall Line",
+          "moves": ["Nf3", "d5", "c4", "e6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "b3", "c6", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-82e0a4d6d30e219b",
+          "names": {
+            "en": "Anglo-Slav Variation, Capablanca Variation"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Capablanca Variation",
+          "moves": ["c4", "Nf6", "Nf3", "c6", "b3", "d5", "Bb2", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-23c80ce5e38ec3b2",
+          "names": {
+            "en": "Anglo-Slav Variation, Capablanca Variation"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Capablanca Variation",
+          "moves": ["c4", "Nf6", "Nf3", "c6", "b3", "d5", "Bb2", "Bg4", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b3f516e5da7533a1",
+          "names": {
+            "en": "Anglo-Slav Variation, Capablanca Variation"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Capablanca Variation",
+          "moves": ["c4", "Nf6", "Nf3", "c6", "b3", "d5", "Bb2", "Bg4", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4b178b4ff66dbb5e",
+          "names": {
+            "en": "Anglo-Slav Variation"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation",
+          "moves": ["c4", "Nf6", "g3", "c6", "Nf3", "d5", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a06e84a2cff832e3",
+          "names": {
+            "en": "Anglo-Slav Variation, London Defensive System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, London Defensive System",
+          "moves": ["c4", "Nf6", "g3", "c6", "Nf3", "d5", "b3", "Bf5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a73435b0d8a9bbee",
+          "names": {
+            "en": "Anglo-Slav Variation, London Defensive System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, London Defensive System",
+          "moves": ["c4", "Nf6", "g3", "c6", "Nf3", "d5", "b3", "Bf5", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ca1c798c01760040",
+          "names": {
+            "en": "Anglo-Slav Variation, London Defensive System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, London Defensive System",
+          "moves": ["c4", "Nf6", "g3", "c6", "Nf3", "d5", "b3", "Bf5", "Bg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-92a8a6c71d430335",
+          "names": {
+            "en": "Anglo-Slav Variation, London Defensive System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, London Defensive System",
+          "moves": ["c4", "Nf6", "g3", "c6", "Nf3", "d5", "b3", "Bf5", "Bg2", "e6", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8fe749ae29674a0c",
+          "names": {
+            "en": "Anglo-Slav Variation, Torre System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Torre System",
+          "moves": ["c4", "Nf6", "g3", "c6", "Nf3", "d5", "b3", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6cf593cfef2ceea6",
+          "names": {
+            "en": "Anglo-Slav Variation, Torre System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Torre System",
+          "moves": ["c4", "Nf6", "g3", "c6", "Nf3", "d5", "b3", "Bg4", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-123bffd675be901a",
+          "names": {
+            "en": "Anglo-Slav Variation, Torre System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Torre System",
+          "moves": ["c4", "Nf6", "g3", "c6", "Nf3", "d5", "b3", "Bg4", "Bg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f825753b757df9f0",
+          "names": {
+            "en": "Anglo-Slav Variation, Torre System"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, Torre System",
+          "moves": ["c4", "Nf6", "g3", "c6", "Nf3", "d5", "b3", "Bg4", "Bg2", "e6", "Bb2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-845e40876c8390a8",
+          "names": {
+            "en": "Anglo-Slav Variation, with dxc4"
+          },
+          "eco": "A12",
+          "opening": "Réti Opening: Anglo-Slav Variation, with dxc4",
+          "moves": ["c4", "Nf6", "g3", "c6", "Nf3", "d5", "b3", "dxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-05645bf7b73756e9",
+          "names": {
+            "en": "Anglo-Slav Variation, Gurevich System"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, Gurevich System",
+          "moves": ["c4", "c6", "Nf3", "d5", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-12e89c5200329f94",
+          "names": {
+            "en": "Anglo-Slav Variation, Gurevich System"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, Gurevich System",
+          "moves": ["c4", "c6", "Nf3", "d5", "e3", "Nf6", "Nc3", "Nbd7", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c79b4e815781c947",
+          "names": {
+            "en": "Anglo-Slav Variation, Gurevich System"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, Gurevich System",
+          "moves": ["c4", "c6", "Nf3", "d5", "e3", "Nf6", "Nc3", "Nbd7", "b3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e78c0ff6a6fbb281",
+          "names": {
+            "en": "Anglo-Slav Variation, Gurevich System"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, Gurevich System",
+          "moves": ["c4", "c6", "Nf3", "d5", "e3", "Nf6", "Nc3", "e6", "b3", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-159add28a7e2466f",
+          "names": {
+            "en": "Anglo-Slav Variation, Gurevich System"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, Gurevich System",
+          "moves": ["c4", "c6", "Nf3", "d5", "e3", "Nf6", "Qc2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0fbf1c8cef32fd9f",
+          "names": {
+            "en": "Anglo-Slav Variation, with g3"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, with g3",
+          "moves": ["c4", "c6", "Nf3", "d5", "g3", "Nf6", "Bg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-aeeb12a9df8d6f65",
+          "names": {
+            "en": "Anglo-Slav Variation, with g3"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, with g3",
+          "moves": ["c4", "c6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Bf5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f9c84ef73f84f81a",
+          "names": {
+            "en": "Anglo-Slav Variation, with g3"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, with g3",
+          "moves": ["c4", "c6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Bf5", "O-O", "e6", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2cee85587a5b1cfb",
+          "names": {
+            "en": "Anglo-Slav Variation, with g3"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, with g3",
+          "moves": ["c4", "c6", "Nf3", "d5", "g3", "Nf6", "Bg2", "dxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d736707585655ef0",
+          "names": {
+            "en": "Anglo-Slav Variation, with g3"
+          },
+          "eco": "A11",
+          "opening": "Réti Opening: Anglo-Slav Variation, with g3",
+          "moves": ["c4", "c6", "Nf3", "d5", "g3", "Nf6", "b3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Advance Variation",
+        "pt-BR": "Variação do Avanço",
+        "es": "Variante del Avance"
+      },
+      "lines": [
+        {
+          "id": "line-703f4841603c0916",
+          "names": {
+            "en": "Advance Variation",
+            "pt-BR": "Variação do Avanço",
+            "es": "Variante del Avance"
+          },
+          "eco": "A09",
+          "opening": "Réti Opening: Advance Variation",
+          "moves": ["Nf3", "d5", "c4", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-04b0e1eed7caf6bb",
+          "names": {
+            "en": "Advance Variation, Michel Gambit",
+            "pt-BR": "Variação do Avanço, Gambito Michel",
+            "es": "Variante del Avance, Gambito Michel"
+          },
+          "eco": "A09",
+          "opening": "Réti Opening: Advance Variation, Michel Gambit",
+          "moves": ["Nf3", "d5", "c4", "d4", "b4", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4fd53317b4a3dc40",
+          "names": {
+            "en": "Advance Variation, Navara Gambit",
+            "pt-BR": "Variação do Avanço, Gambito Navara",
+            "es": "Variante del Avance, Gambito Navara"
+          },
+          "eco": "A09",
+          "opening": "Réti Opening: Advance Variation, Navara Gambit",
+          "moves": ["Nf3", "d5", "c4", "d4", "b4", "g5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-79b7ad79f01c7272",
+      "names": {
+        "en": "Réti Opening",
+        "pt-BR": "Abertura Réti",
+        "es": "Apertura Réti"
+      },
+      "eco": "A09",
+      "opening": "Réti Opening",
+      "moves": ["Nf3", "d5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-618fc9dc6ce63cc0",
+      "names": {
+        "en": "Penguin Variation",
+        "pt-BR": "Variação Penguin",
+        "es": "Variante Penguin"
+      },
+      "eco": "A09",
+      "opening": "Réti Opening: Penguin Variation",
+      "moves": ["Nf3", "d5", "c4", "d4", "Rg1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-195b158ecd209d80",
+      "names": {
+        "en": "Reversed Blumenfeld Gambit"
+      },
+      "eco": "A09",
+      "opening": "Réti Opening: Reversed Blumenfeld Gambit",
+      "moves": ["Nf3", "d5", "c4", "d4", "e3", "c5", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5af93df35b00b3b1",
+      "names": {
+        "en": "Réti Accepted"
+      },
+      "eco": "A09",
+      "opening": "Réti Opening: Réti Accepted",
+      "moves": ["Nf3", "d5", "c4", "dxc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b98f8a4077abe17b",
+      "names": {
+        "en": "Réti Gambit, Keres Variation",
+        "pt-BR": "Gambito Réti, Variação Keres",
+        "es": "Gambito Réti, Variante Keres"
+      },
+      "eco": "A09",
+      "opening": "Réti Opening: Réti Gambit, Keres Variation",
+      "moves": ["Nf3", "d5", "c4", "dxc4", "e3", "Be6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d670daafc28e5cb6",
+      "names": {
+        "en": "Zilbermints Gambit",
+        "pt-BR": "Gambito Zilbermints",
+        "es": "Gambito Zilbermints"
+      },
+      "eco": "A09",
+      "opening": "Réti Opening: Zilbermints Gambit",
+      "moves": ["Nf3", "d5", "c4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

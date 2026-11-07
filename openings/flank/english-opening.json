@@ -1,0 +1,1960 @@
+{
+  "id": "english-opening",
+  "names": {
+    "en": "English Opening",
+    "pt-BR": "Abertura Inglesa",
+    "es": "Apertura Inglesa"
+  },
+  "order": 1,
+  "variants": [
+    {
+      "names": {
+        "en": "King's English Variation"
+      },
+      "lines": [
+        {
+          "id": "line-78132fac2f7820b7",
+          "names": {
+            "en": "King's English Variation"
+          },
+          "eco": "A20",
+          "opening": "English Opening: King's English Variation",
+          "moves": ["c4", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a6aadb8354165156",
+          "names": {
+            "en": "King's English Variation, Reversed Sicilian"
+          },
+          "eco": "A21",
+          "opening": "English Opening: King's English Variation, Reversed Sicilian",
+          "moves": ["c4", "e5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-29486240d37653bc",
+          "names": {
+            "en": "King's English Variation, Kramnik-Shirov Counterattack"
+          },
+          "eco": "A21",
+          "opening": "English Opening: King's English Variation, Kramnik-Shirov Counterattack",
+          "moves": ["c4", "e5", "Nc3", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8526fe60d2e86125",
+          "names": {
+            "en": "King's English Variation, Reversed Closed Sicilian"
+          },
+          "eco": "A25",
+          "opening": "English Opening: King's English Variation, Reversed Closed Sicilian",
+          "moves": ["c4", "e5", "Nc3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3877c738a3501bb4",
+          "names": {
+            "en": "King's English Variation, Three Knights System"
+          },
+          "eco": "A27",
+          "opening": "English Opening: King's English Variation, Three Knights System",
+          "moves": ["c4", "e5", "Nc3", "Nc6", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0496ff348a7d893c",
+          "names": {
+            "en": "King's English Variation, Troger Defense"
+          },
+          "eco": "A21",
+          "opening": "English Opening: King's English Variation, Troger Defense",
+          "moves": ["c4", "e5", "Nc3", "Nc6", "g3", "d6", "Bg2", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bd5a68c3a8498339",
+          "names": {
+            "en": "King's English Variation, Taimanov Variation"
+          },
+          "eco": "A25",
+          "opening": "English Opening: King's English Variation, Taimanov Variation",
+          "moves": ["c4", "e5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-41b676c0721c8de0",
+          "names": {
+            "en": "King's English Variation, Hungarian Attack"
+          },
+          "eco": "A25",
+          "opening": "English Opening: King's English Variation, Hungarian Attack",
+          "moves": ["c4", "e5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "Rb1"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f46df00f4e051381",
+          "names": {
+            "en": "King's English Variation, Closed System"
+          },
+          "eco": "A25",
+          "opening": "English Opening: King's English Variation, Closed System",
+          "moves": ["c4", "e5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b67e6e11a25d97a1",
+          "names": {
+            "en": "King's English Variation, Closed System, Full Symmetry"
+          },
+          "eco": "A26",
+          "opening": "English Opening: King's English Variation, Closed System, Full Symmetry",
+          "moves": ["c4", "e5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "d3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-851f7fe72c3012b5",
+          "names": {
+            "en": "King's English Variation, Botvinnik System"
+          },
+          "eco": "A26",
+          "opening": "English Opening: King's English Variation, Botvinnik System",
+          "moves": ["c4", "e5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "d3", "d6", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eaf58cb48fa6ca55",
+          "names": {
+            "en": "King's English Variation, Bremen-Hort Variation"
+          },
+          "eco": "A25",
+          "opening": "English Opening: King's English Variation, Bremen-Hort Variation",
+          "moves": ["c4", "e5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "e3", "d6", "Nge2", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b65af959fbf2f090",
+          "names": {
+            "en": "King's English Variation, Two Knights Variation"
+          },
+          "eco": "A22",
+          "opening": "English Opening: King's English Variation, Two Knights Variation",
+          "moves": ["c4", "e5", "Nc3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cb058b712bcda240",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation"
+          },
+          "eco": "A28",
+          "opening": "English Opening: King's English Variation, Four Knights Variation",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0fb88cc14175a6a9",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Korchnoi Line"
+          },
+          "eco": "A28",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Korchnoi Line",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "a3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a2d98bc853437517",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Flexible Line"
+          },
+          "eco": "A28",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Flexible Line",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5eabe6cc68892066",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Bradley Beach Variation"
+          },
+          "eco": "A28",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Bradley Beach Variation",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "d4", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b4a8b6519facd1d0",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation"
+          },
+          "eco": "A28",
+          "opening": "English Opening: King's English Variation, Four Knights Variation",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Bb4", "Bg5", "h6", "Bh4", "Bxc3+", "bxc3", "Ne5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-959b66c2e252a84a",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Quiet Line"
+          },
+          "eco": "A28",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Quiet Line",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fbd0566425407746",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Quiet Line"
+          },
+          "eco": "A28",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Quiet Line",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "e3", "Bb4", "Qc2", "Bxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ae3e265e017abdef",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Quiet Line"
+          },
+          "eco": "A28",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Quiet Line",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "e3", "Bb4", "Qc2", "O-O", "Nd5", "Re8", "Qf5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b1c65797aa5c860a",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-97050e7b0d4533b7",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "g3", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8d2e9ad15af54bfe",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "g3", "Bb4", "Bg2", "Bxc3", "dxc3", "d6", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-169c66bdfde77319",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "g3", "Bc5", "d3", "d6", "Bg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-be6a05a036fb0122",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "g3", "Bc5", "d3", "d6", "Bg2", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8505053fa805c881",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, a6"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, a6",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "g3", "Bc5", "d3", "d6", "Bg2", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4633027023c61921",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, h6"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, h6",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "g3", "Bc5", "d3", "d6", "Bg2", "h6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fedcbc4df7b6f1e0",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line, with Bc5"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with Bc5",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "g3", "d5", "cxd5", "Nxd5", "Bg2", "Bc5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-afae91a2dcbe4907",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line, with Nb6"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with Nb6",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "g3", "d5", "cxd5", "Nxd5", "Bg2", "Nb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bf1c31f6ea8767c0",
+          "names": {
+            "en": "King's English Variation, Bellon Gambit"
+          },
+          "eco": "A22",
+          "opening": "English Opening: King's English Variation, Bellon Gambit",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "e4", "Ng5", "b5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e0c92332a8a96b87",
+          "names": {
+            "en": "King's English Variation, Adhiban Gambit"
+          },
+          "eco": "A22",
+          "opening": "English Opening: King's English Variation, Adhiban Gambit",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "e4", "Ng5", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9c98ad389f76f5c9",
+          "names": {
+            "en": "King's English Variation, Two Knights Variation, Smyslov System"
+          },
+          "eco": "A22",
+          "opening": "English Opening: King's English Variation, Two Knights Variation, Smyslov System",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "g3", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-09d7bf8d665f4d20",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line, Delayed .. Nc6"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, Delayed .. Nc6",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "g3", "Bb4", "Bg2", "O-O", "Nf3", "Re8", "O-O", "e4", "Nd4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2b7cb8aae89e6838",
+          "names": {
+            "en": "King's English Variation, Reversed Closed Sicilian"
+          },
+          "eco": "A25",
+          "opening": "English Opening: King's English Variation, Reversed Closed Sicilian",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "g3", "Bb4", "e4", "O-O", "Nge2", "Nc6", "Bg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e0ee564b43f67f74",
+          "names": {
+            "en": "King's English Variation, Two Knights Variation, Keres Variation"
+          },
+          "eco": "A23",
+          "opening": "English Opening: King's English Variation, Two Knights Variation, Keres Variation",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "g3", "Bc5", "Bg2", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cbf95e19df2a9e9a",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, Be7"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, Be7",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "g3", "Nc6", "Bg2", "d6", "d3", "Be7", "Nf3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e5bdf90eac7cd109",
+          "names": {
+            "en": "King's English Variation, Two Knights Variation, Keres Variation"
+          },
+          "eco": "A23",
+          "opening": "English Opening: King's English Variation, Two Knights Variation, Keres Variation",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "g3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-262f379745bd4058",
+          "names": {
+            "en": "King's English Variation, Two Knights Variation, Reversed Dragon"
+          },
+          "eco": "A22",
+          "opening": "English Opening: King's English Variation, Two Knights Variation, Reversed Dragon",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "g3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bfe0d65a8ec536f2",
+          "names": {
+            "en": "King's English Variation, Two Knights Variation, Fianchetto Line"
+          },
+          "eco": "A24",
+          "opening": "English Opening: King's English Variation, Two Knights Variation, Fianchetto Line",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "g3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5f5bfdd2fc5affce",
+          "names": {
+            "en": "King's English Variation"
+          },
+          "eco": "A21",
+          "opening": "English Opening: King's English Variation",
+          "moves": ["c4", "e5", "Nc3", "d6", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-76a88c50f9ec8ab5",
+          "names": {
+            "en": "King's English Variation, Smyslov Defense"
+          },
+          "eco": "A21",
+          "opening": "English Opening: King's English Variation, Smyslov Defense",
+          "moves": ["c4", "e5", "Nc3", "d6", "Nf3", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dce0930683cdb1be",
+          "names": {
+            "en": "King's English Variation, Keres Defense"
+          },
+          "eco": "A21",
+          "opening": "English Opening: King's English Variation, Keres Defense",
+          "moves": ["c4", "e5", "Nc3", "d6", "g3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7e95289da1c4c830",
+          "names": {
+            "en": "King's English Variation, Nimzowitsch Variation"
+          },
+          "eco": "A20",
+          "opening": "English Opening: King's English Variation, Nimzowitsch Variation",
+          "moves": ["c4", "e5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8e8ecfc171bfebfd",
+          "names": {
+            "en": "King's English Variation, Nimzowitsch-Flohr Variation"
+          },
+          "eco": "A20",
+          "opening": "English Opening: King's English Variation, Nimzowitsch-Flohr Variation",
+          "moves": ["c4", "e5", "Nf3", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-452cc9e64d728c74",
+          "names": {
+            "en": "King's English Variation, Kahiko-Hula Gambit"
+          },
+          "eco": "A20",
+          "opening": "English Opening: King's English Variation, Kahiko-Hula Gambit",
+          "moves": ["c4", "e5", "e3", "Nf6", "f4", "exf4", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-86d80471f2a593f3",
+          "names": {
+            "en": "King's English Variation, Reversed Closed Sicilian"
+          },
+          "eco": "A25",
+          "opening": "English Opening: King's English Variation, Reversed Closed Sicilian",
+          "moves": ["c4", "e5", "g3", "Nf6", "Bg2", "Nc6", "Nc3", "Bb4", "Nd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8ebe6c3a314faa5c",
+          "names": {
+            "en": "King's English Variation, Reversed Closed Sicilian"
+          },
+          "eco": "A25",
+          "opening": "English Opening: King's English Variation, Reversed Closed Sicilian",
+          "moves": ["c4", "e5", "g3", "Nf6", "Bg2", "Nc6", "Nc3", "Bb4", "e4", "d6", "Nge2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8250d717caa3ae21",
+          "names": {
+            "en": "King's English Variation, Reversed Closed Sicilian"
+          },
+          "eco": "A25",
+          "opening": "English Opening: King's English Variation, Reversed Closed Sicilian",
+          "moves": ["c4", "e5", "g3", "Nf6", "Bg2", "Nc6", "Nc3", "Bb4", "e4", "d6", "Nge2", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-98810f0de2a9d22d",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
+          "moves": ["c4", "e5", "g3", "Nf6", "Bg2", "d5", "cxd5", "Nxd5", "Nf3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-712d71ca2aa5c8ec",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
+          "moves": ["c4", "e5", "g3", "Nf6", "Bg2", "d5", "cxd5", "Nxd5", "Nf3", "Nc6", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a84dd271eb080a8a",
+          "names": {
+            "en": "King's English Variation, Four Knights Variation, Fianchetto Line"
+          },
+          "eco": "A29",
+          "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
+          "moves": ["c4", "e5", "g3", "Nf6", "Bg2", "d5", "cxd5", "Nxd5", "Nf3", "Nc6", "d3", "Be7", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-dad5ce4e159118a8",
+          "names": {
+            "en": "King's English Variation, Botvinnik System, Prickly Pawn Pass System"
+          },
+          "eco": "A10",
+          "opening": "English Opening: King's English Variation, Botvinnik System, Prickly Pawn Pass System",
+          "moves": ["c4", "g6", "Nc3", "Bg7", "g3", "Nf6", "Bg2", "O-O", "e4", "d6", "Nge2", "e5", "O-O", "c6", "d3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Symmetrical Variation",
+        "pt-BR": "Variação Symmetrical",
+        "es": "Variante Symmetrical"
+      },
+      "lines": [
+        {
+          "id": "line-bade2c0a29c06598",
+          "names": {
+            "en": "Symmetrical Variation, Fianchetto Variation",
+            "pt-BR": "Variação Symmetrical, Variação do Fianqueto",
+            "es": "Variante Symmetrical, Variante del Fianchetto"
+          },
+          "eco": "A34",
+          "opening": "English Opening: Symmetrical Variation, Fianchetto Variation",
+          "moves": ["c4", "Nf6", "Nc3", "c5", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-88c3df44c95b1366",
+          "names": {
+            "en": "Symmetrical Variation, Rubinstein Variation",
+            "pt-BR": "Variação Symmetrical, Variação Rubinstein",
+            "es": "Variante Symmetrical, Variante Rubinstein"
+          },
+          "eco": "A34",
+          "opening": "English Opening: Symmetrical Variation, Rubinstein Variation",
+          "moves": ["c4", "Nf6", "Nc3", "c5", "g3", "d5", "cxd5", "Nxd5", "Bg2", "Nc7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e41fc8fa65775ab7",
+          "names": {
+            "en": "Symmetrical Variation, Full Symmetry Line",
+            "pt-BR": "Variação Symmetrical, Linha Full Symmetry",
+            "es": "Variante Symmetrical, Línea Full Symmetry"
+          },
+          "eco": "A38",
+          "opening": "English Opening: Symmetrical Variation, Full Symmetry Line",
+          "moves": ["c4", "Nf6", "Nf3", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ebe18cba4f83d2ef",
+          "names": {
+            "en": "Symmetrical Variation, Mecking Variation",
+            "pt-BR": "Variação Symmetrical, Variação Mecking",
+            "es": "Variante Symmetrical, Variante Mecking"
+          },
+          "eco": "A39",
+          "opening": "English Opening: Symmetrical Variation, Mecking Variation",
+          "moves": ["c4", "Nf6", "Nf3", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "O-O", "O-O", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b38d553300ef1b5f",
+          "names": {
+            "en": "Symmetrical Variation, Duchamp Variation",
+            "pt-BR": "Variação Symmetrical, Variação Duchamp",
+            "es": "Variante Symmetrical, Variante Duchamp"
+          },
+          "eco": "A38",
+          "opening": "English Opening: Symmetrical Variation, Duchamp Variation",
+          "moves": ["c4", "Nf6", "Nf3", "g6", "g3", "Bg7", "Bg2", "O-O", "O-O", "c5", "Nc3", "Nc6", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0d7a42fd99a5ce09",
+          "names": {
+            "en": "Symmetrical Variation, Anti-Benoni Variation",
+            "pt-BR": "Variação Symmetrical, Variação Anti-Benoni",
+            "es": "Variante Symmetrical, Variante Anti-Benoni"
+          },
+          "eco": "A31",
+          "opening": "English Opening: Symmetrical Variation, Anti-Benoni Variation",
+          "moves": ["c4", "Nf6", "d4", "c5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-41128be50085cdf6",
+          "names": {
+            "en": "Symmetrical Variation",
+            "pt-BR": "Variação Symmetrical",
+            "es": "Variante Symmetrical"
+          },
+          "eco": "A30",
+          "opening": "English Opening: Symmetrical Variation",
+          "moves": ["c4", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d8c420e03dfd0957",
+          "names": {
+            "en": "Symmetrical Variation, Normal Variation",
+            "pt-BR": "Variação Symmetrical, Variação Normal",
+            "es": "Variante Symmetrical, Variante Normal"
+          },
+          "eco": "A34",
+          "opening": "English Opening: Symmetrical Variation, Normal Variation",
+          "moves": ["c4", "c5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-bf59783298397713",
+          "names": {
+            "en": "Symmetrical Variation, Two Knights Variation"
+          },
+          "eco": "A35",
+          "opening": "English Opening: Symmetrical Variation, Two Knights Variation",
+          "moves": ["c4", "c5", "Nc3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9b2b98d9b9c070c6",
+          "names": {
+            "en": "Symmetrical Variation, Two Knights, Fianchetto Variation"
+          },
+          "eco": "A36",
+          "opening": "English Opening: Symmetrical Variation, Two Knights, Fianchetto Variation",
+          "moves": ["c4", "c5", "Nc3", "Nc6", "g3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9aad3cbbfd4b040a",
+          "names": {
+            "en": "Symmetrical Variation, Three Knights, Fianchetto Variation"
+          },
+          "eco": "A37",
+          "opening": "English Opening: Symmetrical Variation, Three Knights, Fianchetto Variation",
+          "moves": ["c4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e8bdc78879892728",
+          "names": {
+            "en": "Symmetrical Variation, Double Fianchetto"
+          },
+          "eco": "A38",
+          "opening": "English Opening: Symmetrical Variation, Double Fianchetto",
+          "moves": ["c4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "Nf3", "Nf6", "O-O", "O-O", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8f8a16d49341d283",
+          "names": {
+            "en": "Symmetrical Variation, Botvinnik System Reversed, with Nf3"
+          },
+          "eco": "A37",
+          "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
+          "moves": ["c4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "Nf3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-369d2861afa99000",
+          "names": {
+            "en": "Symmetrical Variation, Botvinnik System Reversed, with Nf3"
+          },
+          "eco": "A37",
+          "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
+          "moves": ["c4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "Nf3", "e5", "O-O", "Nge7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-148cf9f69e2eb73e",
+          "names": {
+            "en": "Symmetrical Variation, Botvinnik System Reversed, with Nf3"
+          },
+          "eco": "A37",
+          "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
+          "moves": ["c4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "Nf3", "e5", "O-O", "Nge7", "a3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cd7ee5b401f07ef1",
+          "names": {
+            "en": "Symmetrical Variation, Botvinnik System Reversed, with Nf3"
+          },
+          "eco": "A37",
+          "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
+          "moves": ["c4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "Nf3", "e5", "O-O", "Nge7", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-26cc44b55d55347a",
+          "names": {
+            "en": "Symmetrical Variation, Botvinnik System Reversed, with Nf3"
+          },
+          "eco": "A37",
+          "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
+          "moves": ["c4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "Nf3", "e5", "O-O", "Nge7", "d3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8aa2c61f95088d89",
+          "names": {
+            "en": "Symmetrical Variation, Botvinnik System Reversed, with Nf3"
+          },
+          "eco": "A37",
+          "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
+          "moves": ["c4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "Nf3", "e5", "O-O", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4ac2a64291ffef51",
+          "names": {
+            "en": "Symmetrical Variation, Botvinnik System Reversed, with e3"
+          },
+          "eco": "A36",
+          "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with e3",
+          "moves": ["c4", "c5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "e3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cfc22644298fd146",
+          "names": {
+            "en": "Symmetrical Variation, Three Knights Variation"
+          },
+          "eco": "A34",
+          "opening": "English Opening: Symmetrical Variation, Three Knights Variation",
+          "moves": ["c4", "c5", "Nc3", "Nf6", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5e04f3f7f5f17130",
+          "names": {
+            "en": "Symmetrical Variation",
+            "pt-BR": "Variação Symmetrical",
+            "es": "Variante Symmetrical"
+          },
+          "eco": "A35",
+          "opening": "English Opening: Symmetrical Variation",
+          "moves": ["c4", "c5", "Nc3", "Nf6", "Nf3", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1639e1440e53e0b1",
+          "names": {
+            "en": "Symmetrical Variation",
+            "pt-BR": "Variação Symmetrical",
+            "es": "Variante Symmetrical"
+          },
+          "eco": "A30",
+          "opening": "English Opening: Symmetrical Variation",
+          "moves": ["c4", "c5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f33ced756694d01c",
+          "names": {
+            "en": "Symmetrical Variation, Three Knights, Fianchetto Variation"
+          },
+          "eco": "A37",
+          "opening": "English Opening: Symmetrical Variation, Three Knights, Fianchetto Variation",
+          "moves": ["c4", "c5", "Nf3", "Nc6", "g3", "g6", "Bg2", "Bg7", "O-O", "d6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2ca3cc599cc8488e",
+          "names": {
+            "en": "Symmetrical Variation, Three Knights, Fianchetto Variation"
+          },
+          "eco": "A37",
+          "opening": "English Opening: Symmetrical Variation, Three Knights, Fianchetto Variation",
+          "moves": ["c4", "c5", "Nf3", "Nc6", "g3", "g6", "Bg2", "Bg7", "O-O", "e6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8691d3462b29901a",
+          "names": {
+            "en": "Symmetrical Variation, Four Knights Variation"
+          },
+          "eco": "A35",
+          "opening": "English Opening: Symmetrical Variation, Four Knights Variation",
+          "moves": ["c4", "c5", "Nf3", "Nf6", "Nc3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7ce0483a11305566",
+          "names": {
+            "en": "Symmetrical Variation",
+            "pt-BR": "Variação Symmetrical",
+            "es": "Variante Symmetrical"
+          },
+          "eco": "A34",
+          "opening": "English Opening: Symmetrical Variation",
+          "moves": ["c4", "c5", "Nf3", "Nf6", "Nc3", "Nc6", "g3", "d5", "d4", "cxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8568ea675b52b312",
+          "names": {
+            "en": "Symmetrical Variation, Four Knights Variation, Keres-Parma System"
+          },
+          "eco": "A35",
+          "opening": "English Opening: Symmetrical Variation, Four Knights Variation, Keres-Parma System",
+          "moves": ["c4", "c5", "Nf3", "Nf6", "Nc3", "Nc6", "g3", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-886616a35a161c90",
+          "names": {
+            "en": "Symmetrical Variation, Rubinstein Variation",
+            "pt-BR": "Variação Symmetrical, Variação Rubinstein",
+            "es": "Variante Symmetrical, Variante Rubinstein"
+          },
+          "eco": "A34",
+          "opening": "English Opening: Symmetrical Variation, Rubinstein Variation",
+          "moves": ["c4", "c5", "Nf3", "Nf6", "Nc3", "d5", "cxd5", "Nxd5", "g3", "Nc6", "Bg2", "Nc7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-92a14bad013418e2",
+          "names": {
+            "en": "Symmetrical Variation, Napolitano Gambit",
+            "pt-BR": "Variação Symmetrical, Gambito Napolitano",
+            "es": "Variante Symmetrical, Gambito Napolitano"
+          },
+          "eco": "A30",
+          "opening": "English Opening: Symmetrical Variation, Napolitano Gambit",
+          "moves": ["c4", "c5", "Nf3", "Nf6", "b4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eef915a1d1fdfce8",
+          "names": {
+            "en": "Symmetrical Variation, Botvinnik System",
+            "pt-BR": "Variação Symmetrical, Sistema Botvinnik",
+            "es": "Variante Symmetrical, Sistema Botvinnik"
+          },
+          "eco": "A36",
+          "opening": "English Opening: Symmetrical Variation, Botvinnik System",
+          "moves": ["c4", "c5", "e4", "Nc6", "Nc3", "g6", "g3", "Bg7", "Bg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c974a6f0f82d896a",
+          "names": {
+            "en": "Symmetrical Variation, Ultra-Symmetrical Variation",
+            "pt-BR": "Variação Symmetrical, Variação Ultra-Symmetrical",
+            "es": "Variante Symmetrical, Variante Ultra-Symmetrical"
+          },
+          "eco": "A36",
+          "opening": "English Opening: Symmetrical Variation, Ultra-Symmetrical Variation",
+          "moves": ["c4", "c5", "g3", "g6", "Bg2", "Bg7", "Nc3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-51ce82c7e45a57c5",
+          "names": {
+            "en": "Symmetrical Variation, Anti-Benoni Variation, Geller Variation",
+            "pt-BR": "Variação Symmetrical, Variação Anti-Benoni, Variação Geller",
+            "es": "Variante Symmetrical, Variante Anti-Benoni, Variante Geller"
+          },
+          "eco": "A33",
+          "opening": "English Opening: Symmetrical Variation, Anti-Benoni Variation, Geller Variation",
+          "moves": ["c4", "e6", "Nf3", "Nf6", "Nc3", "c5", "d4", "Nc6", "g3", "cxd4", "Nxd4", "Qb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e2a6b9da8c717771",
+          "names": {
+            "en": "Symmetrical Variation, Anti-Benoni Variation, Spielmann Defense",
+            "pt-BR": "Variação Symmetrical, Variação Anti-Benoni, Defesa Spielmann",
+            "es": "Variante Symmetrical, Variante Anti-Benoni, Defensa Spielmann"
+          },
+          "eco": "A33",
+          "opening": "English Opening: Symmetrical Variation, Anti-Benoni Variation, Spielmann Defense",
+          "moves": ["c4", "e6", "Nf3", "Nf6", "Nc3", "c5", "d4", "cxd4", "Nxd4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3e9cce19e430d2d7",
+          "names": {
+            "en": "Symmetrical Variation, Hedgehog Defense"
+          },
+          "eco": "A30",
+          "opening": "English Opening: Symmetrical Variation, Hedgehog Defense",
+          "moves": ["c4", "e6", "Nf3", "Nf6", "Nc3", "c5", "g3", "b6", "Bg2", "Bb7", "O-O", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f822b023ee8af3a6",
+          "names": {
+            "en": "Symmetrical Variation, Anti-Benoni Variation, Spielmann Defense",
+            "pt-BR": "Variação Symmetrical, Variação Anti-Benoni, Defesa Spielmann",
+            "es": "Variante Symmetrical, Variante Anti-Benoni, Defensa Spielmann"
+          },
+          "eco": "A32",
+          "opening": "English Opening: Symmetrical Variation, Anti-Benoni Variation, Spielmann Defense",
+          "moves": ["c4", "e6", "d4", "c5", "Nf3", "cxd4", "Nxd4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-90478549b87752fe",
+          "names": {
+            "en": "Symmetrical Variation, Anti-Benoni Variation, Kasparov-Vaganian Gambit",
+            "pt-BR": "Variação Symmetrical, Variação Anti-Benoni, Gambito Kasparov-Vaganian",
+            "es": "Variante Symmetrical, Variante Anti-Benoni, Gambito Kasparov-Vaganian"
+          },
+          "eco": "A31",
+          "opening": "English Opening: Symmetrical Variation, Anti-Benoni Variation, Kasparov-Vaganian Gambit",
+          "moves": ["d4", "Nf6", "c4", "c5", "Nf3", "cxd4", "Nxd4", "e5", "Nb5", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Anglo-Indian Defense"
+      },
+      "lines": [
+        {
+          "id": "line-dad53035a042b015",
+          "names": {
+            "en": "Anglo-Indian Defense"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense",
+          "moves": ["c4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1cf7065f7f696485",
+          "names": {
+            "en": "Anglo-Indian Defense, Queen's Knight Variation"
+          },
+          "eco": "A16",
+          "opening": "English Opening: Anglo-Indian Defense, Queen's Knight Variation",
+          "moves": ["c4", "Nf6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7ef726889647a82b",
+          "names": {
+            "en": "Anglo-Indian Defense, Anglo-Grünfeld Variation"
+          },
+          "eco": "A16",
+          "opening": "English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation",
+          "moves": ["c4", "Nf6", "Nc3", "d5", "cxd5", "Nxd5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-52b4ac8da3476160",
+          "names": {
+            "en": "Anglo-Indian Defense"
+          },
+          "eco": "A17",
+          "opening": "English Opening: Anglo-Indian Defense",
+          "moves": ["c4", "Nf6", "Nc3", "d5", "cxd5", "Nxd5", "Nf3", "c5", "e3", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b4c7d5e6080ca601",
+          "names": {
+            "en": "Anglo-Indian Defense, Anglo-Grünfeld Variation"
+          },
+          "eco": "A16",
+          "opening": "English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation",
+          "moves": ["c4", "Nf6", "Nc3", "d5", "cxd5", "Nxd5", "Nf3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-baf6c960046b920e",
+          "names": {
+            "en": "Anglo-Indian Defense, Anglo-Grünfeld Variation"
+          },
+          "eco": "A16",
+          "opening": "English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation",
+          "moves": ["c4", "Nf6", "Nc3", "d5", "cxd5", "Nxd5", "g3", "g6", "Bg2", "Nb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-be2a98816b0963af",
+          "names": {
+            "en": "Anglo-Indian Defense, Anglo-Grünfeld Variation"
+          },
+          "eco": "A16",
+          "opening": "English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation",
+          "moves": ["c4", "Nf6", "Nc3", "d5", "cxd5", "Nxd5", "g3", "g6", "Bg2", "Nxc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-be487474f54ee5a4",
+          "names": {
+            "en": "Anglo-Indian Defense, Hedgehog System"
+          },
+          "eco": "A17",
+          "opening": "English Opening: Anglo-Indian Defense, Hedgehog System",
+          "moves": ["c4", "Nf6", "Nc3", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b257d12e9a1cb816",
+          "names": {
+            "en": "Anglo-Indian Defense, Nimzo-English"
+          },
+          "eco": "A17",
+          "opening": "English Opening: Anglo-Indian Defense, Nimzo-English",
+          "moves": ["c4", "Nf6", "Nc3", "e6", "Nf3", "Bb4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e609715391c4559c",
+          "names": {
+            "en": "Anglo-Indian Defense, Anti-Anti-Grünfeld"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, Anti-Anti-Grünfeld",
+          "moves": ["c4", "Nf6", "Nc3", "g6", "Nf3", "Bg7", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e884c5bb1dfb9e78",
+          "names": {
+            "en": "Anglo-Indian Defense, King's Knight Variation"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, King's Knight Variation",
+          "moves": ["c4", "Nf6", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5990a6e5d02641ec",
+          "names": {
+            "en": "Anglo-Indian Defense, Queen's Indian Formation"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, Queen's Indian Formation",
+          "moves": ["c4", "Nf6", "Nf3", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9a036f111f48a9f6",
+          "names": {
+            "en": "Anglo-Indian Defense, Scandinavian Defense"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, Scandinavian Defense",
+          "moves": ["c4", "Nf6", "Nf3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4eca7b3df7904a80",
+          "names": {
+            "en": "Anglo-Indian Defense, Scandinavian Defense, Exchange Variation"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, Scandinavian Defense, Exchange Variation",
+          "moves": ["c4", "Nf6", "Nf3", "d5", "cxd5", "Nxd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-53d750890a5a1414",
+          "names": {
+            "en": "Anglo-Indian Defense, Old Indian Formation"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, Old Indian Formation",
+          "moves": ["c4", "Nf6", "Nf3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b6c8a17164f9c057",
+          "names": {
+            "en": "Anglo-Indian Defense, King's Indian Formation"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, King's Indian Formation",
+          "moves": ["c4", "Nf6", "Nf3", "g6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-00c8f195100c4425",
+          "names": {
+            "en": "Anglo-Indian Defense, King's Indian Formation, Double Fianchetto"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, King's Indian Formation, Double Fianchetto",
+          "moves": ["c4", "Nf6", "Nf3", "g6", "g3", "b6", "Bg2", "Bb7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-35c283514826c5ac",
+          "names": {
+            "en": "Anglo-Indian Defense, Slav Formation"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, Slav Formation",
+          "moves": ["c4", "Nf6", "Nf3", "g6", "g3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-18d37c3cd9ef8356",
+          "names": {
+            "en": "Anglo-Indian Defense, Grünfeld Formation"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, Grünfeld Formation",
+          "moves": ["c4", "Nf6", "Nf3", "g6", "g3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a077b08d9ae1af8c",
+          "names": {
+            "en": "Anglo-Indian Defense, Zvjaginsev-Krasenkow Attack"
+          },
+          "eco": "A17",
+          "opening": "English Opening: Anglo-Indian Defense, Zvjaginsev-Krasenkow Attack",
+          "moves": ["c4", "e6", "Nc3", "Nf6", "Nf3", "Bb4", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b73d6d8f390634ed",
+          "names": {
+            "en": "Anglo-Indian Defense, Queen's Indian Formation"
+          },
+          "eco": "A17",
+          "opening": "English Opening: Anglo-Indian Defense, Queen's Indian Formation",
+          "moves": ["c4", "e6", "Nc3", "Nf6", "Nf3", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b7d0c8fe2ed1528e",
+          "names": {
+            "en": "Anglo-Indian Defense, Queen's Indian Variation"
+          },
+          "eco": "A17",
+          "opening": "English Opening: Anglo-Indian Defense, Queen's Indian Variation",
+          "moves": ["c4", "e6", "Nc3", "Nf6", "Nf3", "b6", "e4", "Bb7", "Bd3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cf8e0adead1a576a",
+          "names": {
+            "en": "Anglo-Indian Defense, Flohr-Mikenas-Carls Variation, Nei Gambit"
+          },
+          "eco": "A19",
+          "opening": "English Opening: Anglo-Indian Defense, Flohr-Mikenas-Carls Variation, Nei Gambit",
+          "moves": ["c4", "e6", "Nc3", "Nf6", "e4", "c5", "e5", "Ng8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-55f06155a2f82034",
+          "names": {
+            "en": "Anglo-Indian Defense, Romanishin Variation"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, Romanishin Variation",
+          "moves": ["c4", "e6", "Nf3", "Nf6", "g3", "a6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-077754544ec8a395",
+          "names": {
+            "en": "Anglo-Indian Defense, Queen's Indian Formation"
+          },
+          "eco": "A15",
+          "opening": "English Opening: Anglo-Indian Defense, Queen's Indian Formation",
+          "moves": ["c4", "e6", "Nf3", "Nf6", "g3", "b6", "Bg2", "Bb7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Agincourt Defense",
+        "pt-BR": "Defesa Agincourt",
+        "es": "Defensa Agincourt"
+      },
+      "lines": [
+        {
+          "id": "line-b9fc287c078ef5f2",
+          "names": {
+            "en": "Agincourt Defense, Neo-Catalan Declined"
+          },
+          "eco": "A14",
+          "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
+          "moves": ["Nf3", "d5", "g3", "Nf6", "Bg2", "e6", "O-O", "Be7", "c4", "O-O", "b3", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cc1bf9a5e5c41864",
+          "names": {
+            "en": "Agincourt Defense, Neo-Catalan Declined"
+          },
+          "eco": "A14",
+          "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
+          "moves": ["Nf3", "d5", "g3", "Nf6", "Bg2", "e6", "O-O", "Be7", "c4", "O-O", "b3", "c5", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3045d62045d733ae",
+          "names": {
+            "en": "Agincourt Defense, Neo-Catalan Declined"
+          },
+          "eco": "A14",
+          "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
+          "moves": ["Nf3", "d5", "g3", "Nf6", "Bg2", "e6", "O-O", "Be7", "c4", "O-O", "b3", "c5", "e3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2822f7eafa323a3a",
+          "names": {
+            "en": "Agincourt Defense, Neo-Catalan Declined"
+          },
+          "eco": "A14",
+          "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
+          "moves": ["Nf3", "d5", "g3", "Nf6", "Bg2", "e6", "O-O", "Be7", "c4", "O-O", "b3", "c5", "e3", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-18631af6239af13e",
+          "names": {
+            "en": "Agincourt Defense",
+            "pt-BR": "Defesa Agincourt",
+            "es": "Defensa Agincourt"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense",
+          "moves": ["c4", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9e01a59b03ec8f5e",
+          "names": {
+            "en": "Agincourt Defense",
+            "pt-BR": "Defesa Agincourt",
+            "es": "Defensa Agincourt"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense",
+          "moves": ["c4", "e6", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5ebc5d70af872746",
+          "names": {
+            "en": "Agincourt Defense, Wimpy System",
+            "pt-BR": "Defesa Agincourt, Sistema Wimpy",
+            "es": "Defensa Agincourt, Sistema Wimpy"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense, Wimpy System",
+          "moves": ["c4", "e6", "Nf3", "Nf6", "b3", "d5", "Bb2", "c5", "e3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-112c3e5416c23cc5",
+          "names": {
+            "en": "Agincourt Defense, Catalan Defense, Semi-Slav Defense"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense, Catalan Defense, Semi-Slav Defense",
+          "moves": ["c4", "e6", "Nf3", "Nf6", "g3", "d5", "Bg2", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c4c45e2027944cb5",
+          "names": {
+            "en": "Agincourt Defense, Catalan Defense Accepted"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense, Catalan Defense Accepted",
+          "moves": ["c4", "e6", "Nf3", "Nf6", "g3", "d5", "Bg2", "dxc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b002c70152296d4a",
+          "names": {
+            "en": "Agincourt Defense",
+            "pt-BR": "Defesa Agincourt",
+            "es": "Defensa Agincourt"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense",
+          "moves": ["c4", "e6", "Nf3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-25547889a619742a",
+          "names": {
+            "en": "Agincourt Defense",
+            "pt-BR": "Defesa Agincourt",
+            "es": "Defensa Agincourt"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense",
+          "moves": ["c4", "e6", "Nf3", "d5", "b3", "Nf6", "Bb2", "Be7", "e3", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c5414a2702172b8c",
+          "names": {
+            "en": "Agincourt Defense",
+            "pt-BR": "Defesa Agincourt",
+            "es": "Defensa Agincourt"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense",
+          "moves": ["c4", "e6", "Nf3", "d5", "b3", "Nf6", "Bb2", "Be7", "e3", "O-O", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b4285ef7d88a2a5b",
+          "names": {
+            "en": "Agincourt Defense, Bogoljubow Defense",
+            "pt-BR": "Defesa Agincourt, Defesa Bogoljubow",
+            "es": "Defensa Agincourt, Defensa Bogoljubow"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense, Bogoljubow Defense",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Bd6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7c5752c1917ccc15",
+          "names": {
+            "en": "Agincourt Defense, Neo-Catalan Declined"
+          },
+          "eco": "A14",
+          "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Be7", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9f0d1dc853295d82",
+          "names": {
+            "en": "Agincourt Defense, Neo-Catalan Declined"
+          },
+          "eco": "A14",
+          "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-12199d033660f3d0",
+          "names": {
+            "en": "Agincourt Defense, Keres Defense",
+            "pt-BR": "Defesa Agincourt, Defesa Keres",
+            "es": "Defensa Agincourt, Defensa Keres"
+          },
+          "eco": "A14",
+          "opening": "English Opening: Agincourt Defense, Keres Defense",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Be7", "O-O", "c5", "cxd5", "Nxd5", "Nc3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9dfdb726312580d1",
+          "names": {
+            "en": "Agincourt Defense, Neo-Catalan Declined, Early b3"
+          },
+          "eco": "A14",
+          "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined, Early b3",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Be7", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f9a6666a42f811aa",
+          "names": {
+            "en": "Agincourt Defense, Neo-Catalan Declined, Early b3"
+          },
+          "eco": "A14",
+          "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined, Early b3",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Be7", "b3", "b6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-452c09b4439ce017",
+          "names": {
+            "en": "Agincourt Defense, Neo-Catalan Declined, Early b3"
+          },
+          "eco": "A14",
+          "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined, Early b3",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Be7", "b3", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1bd30a178ba2338f",
+          "names": {
+            "en": "Agincourt Defense, Tarrasch Defense",
+            "pt-BR": "Defesa Agincourt, Defesa Tarrasch",
+            "es": "Defensa Agincourt, Defensa Tarrasch"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense, Tarrasch Defense",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6", "Bg2", "c5", "b3", "Nc6", "O-O", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7360f543bfaf36e0",
+          "names": {
+            "en": "Agincourt Defense, Catalan Defense"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense, Catalan Defense",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "b6", "Bg2", "Bb7", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-efbb038e71e5c0c5",
+          "names": {
+            "en": "Agincourt Defense, Catalan Defense"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense, Catalan Defense",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2a9499974151f172",
+          "names": {
+            "en": "Agincourt Defense, Kurajica Defense",
+            "pt-BR": "Defesa Agincourt, Defesa Kurajica",
+            "es": "Defensa Agincourt, Defensa Kurajica"
+          },
+          "eco": "A13",
+          "opening": "English Opening: Agincourt Defense, Kurajica Defense",
+          "moves": ["c4", "e6", "Nf3", "d5", "g3", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Anglo-Scandinavian Defense"
+      },
+      "lines": [
+        {
+          "id": "line-da093eddc9431085",
+          "names": {
+            "en": "Anglo-Scandinavian Defense"
+          },
+          "eco": "A10",
+          "opening": "English Opening: Anglo-Scandinavian Defense",
+          "moves": ["c4", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5e514410f65bfdb8",
+          "names": {
+            "en": "Anglo-Scandinavian Defense, Schulz Gambit"
+          },
+          "eco": "A10",
+          "opening": "English Opening: Anglo-Scandinavian Defense, Schulz Gambit",
+          "moves": ["c4", "d5", "cxd5", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fe3e1362c42cf136",
+          "names": {
+            "en": "Anglo-Scandinavian Defense, Malvinas Variation"
+          },
+          "eco": "A10",
+          "opening": "English Opening: Anglo-Scandinavian Defense, Malvinas Variation",
+          "moves": ["c4", "d5", "cxd5", "Qxd5", "Nc3", "Qa5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f763116c5db5aaf8",
+          "names": {
+            "en": "Anglo-Scandinavian Defense, Löhn Gambit"
+          },
+          "eco": "A10",
+          "opening": "English Opening: Anglo-Scandinavian Defense, Löhn Gambit",
+          "moves": ["c4", "d5", "cxd5", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Mikenas-Carls Variation",
+        "pt-BR": "Variação Mikenas-Carls",
+        "es": "Variante Mikenas-Carls"
+      },
+      "lines": [
+        {
+          "id": "line-cd94c97f3fcc7820",
+          "names": {
+            "en": "Mikenas-Carls Variation",
+            "pt-BR": "Variação Mikenas-Carls",
+            "es": "Variante Mikenas-Carls"
+          },
+          "eco": "A18",
+          "opening": "English Opening: Mikenas-Carls Variation",
+          "moves": ["c4", "e6", "Nc3", "Nf6", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8e375029a88f2daf",
+          "names": {
+            "en": "Mikenas-Carls Variation",
+            "pt-BR": "Variação Mikenas-Carls",
+            "es": "Variante Mikenas-Carls"
+          },
+          "eco": "A18",
+          "opening": "English Opening: Mikenas-Carls Variation",
+          "moves": ["c4", "e6", "Nc3", "Nf6", "e4", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fbb912a6ee473ce9",
+          "names": {
+            "en": "Mikenas-Carls Variation",
+            "pt-BR": "Variação Mikenas-Carls",
+            "es": "Variante Mikenas-Carls"
+          },
+          "eco": "A18",
+          "opening": "English Opening: Mikenas-Carls Variation",
+          "moves": ["c4", "e6", "Nc3", "Nf6", "e4", "d5", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Anglo-Dutch Defense"
+      },
+      "lines": [
+        {
+          "id": "line-ca048f619f4845f2",
+          "names": {
+            "en": "Anglo-Dutch Defense"
+          },
+          "eco": "A10",
+          "opening": "English Opening: Anglo-Dutch Defense",
+          "moves": ["c4", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-df14ecc417159493",
+          "names": {
+            "en": "Anglo-Dutch Defense, Hickmann Gambit"
+          },
+          "eco": "A10",
+          "opening": "English Opening: Anglo-Dutch Defense, Hickmann Gambit",
+          "moves": ["c4", "f5", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Anglo-Dutch Variation"
+      },
+      "lines": [
+        {
+          "id": "line-836e140f5c148f7e",
+          "names": {
+            "en": "Anglo-Dutch Variation, Ferenc Gambit"
+          },
+          "eco": "A10",
+          "opening": "English Opening: Anglo-Dutch Variation, Ferenc Gambit",
+          "moves": ["c4", "f5", "Nc3", "Nf6", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e426ef63765f32bd",
+          "names": {
+            "en": "Anglo-Dutch Variation, Chabanon Gambit"
+          },
+          "eco": "A10",
+          "opening": "English Opening: Anglo-Dutch Variation, Chabanon Gambit",
+          "moves": ["c4", "f5", "Nf3", "d6", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Anglo-Grünfeld Defense",
+        "pt-BR": "Defesa Anglo-Grünfeld",
+        "es": "Defensa Anglo-Grünfeld"
+      },
+      "lines": [
+        {
+          "id": "line-a68ec866e74ee3a1",
+          "names": {
+            "en": "Anglo-Grünfeld Defense",
+            "pt-BR": "Defesa Anglo-Grünfeld",
+            "es": "Defensa Anglo-Grünfeld"
+          },
+          "eco": "A16",
+          "opening": "English Opening: Anglo-Grünfeld Defense",
+          "moves": ["c4", "Nf6", "Nc3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-35d6fa8b81bd3141",
+          "names": {
+            "en": "Anglo-Grünfeld Defense, Korchnoi Variation",
+            "pt-BR": "Defesa Anglo-Grünfeld, Variação Korchnoi",
+            "es": "Defensa Anglo-Grünfeld, Variante Korchnoi"
+          },
+          "eco": "A16",
+          "opening": "English Opening: Anglo-Grünfeld Defense, Korchnoi Variation",
+          "moves": ["c4", "Nf6", "Nc3", "d5", "cxd5", "Nxd5", "Nf3", "g6", "g3", "Bg7", "Bg2", "e5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Closed",
+        "pt-BR": "Fechada",
+        "es": "Cerrada"
+      },
+      "lines": [
+        {
+          "id": "line-5c2301019f53455c",
+          "names": {
+            "en": "Closed, Taimanov Variation",
+            "pt-BR": "Fechada, Variação Taimanov",
+            "es": "Cerrada, Variante Taimanov"
+          },
+          "eco": "A25",
+          "opening": "English Opening: Closed, Taimanov Variation",
+          "moves": ["c4", "e5", "Nc3", "Nc6", "g3", "g6", "Bg2", "Bg7", "e3", "d6", "Nge2", "Nh6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2f69a627da8a80f5",
+          "names": {
+            "en": "Closed, Taimanov Variation",
+            "pt-BR": "Fechada, Variação Taimanov",
+            "es": "Cerrada, Variante Taimanov"
+          },
+          "eco": "A25",
+          "opening": "English Opening: Closed, Taimanov Variation",
+          "moves": ["c4", "e5", "Nc3", "Nc6", "g3", "g6", "Rb1", "Nh6", "Bg2", "Bg7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "King's English"
+      },
+      "lines": [
+        {
+          "id": "line-86c89ef1f07f4806",
+          "names": {
+            "en": "King's English, Erbenheimer Gambit"
+          },
+          "eco": "A22",
+          "opening": "English Opening: King's English, Erbenheimer Gambit",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "e4", "Ng5", "Ng4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f211938502eeb963",
+          "names": {
+            "en": "King's English, Mazedonisch"
+          },
+          "eco": "A22",
+          "opening": "English Opening: King's English, Mazedonisch",
+          "moves": ["c4", "e5", "Nc3", "Nf6", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-f1340f093d82e002",
+      "names": {
+        "en": "Achilles-Omega Gambit",
+        "pt-BR": "Gambito Achilles-Omega",
+        "es": "Gambito Achilles-Omega"
+      },
+      "eco": "A10",
+      "opening": "English Opening: Achilles-Omega Gambit",
+      "moves": ["c4", "Nf6", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-50d5fa21229782a4",
+      "names": {
+        "en": "Adorjan Defense",
+        "pt-BR": "Defesa Adorjan",
+        "es": "Defensa Adorjan"
+      },
+      "eco": "A10",
+      "opening": "English Opening: Adorjan Defense",
+      "moves": ["c4", "g6", "e4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7b1e6d9f4f160a8a",
+      "names": {
+        "en": "Anglo-Lithuanian Variation",
+        "pt-BR": "Variação Anglo-Lithuanian",
+        "es": "Variante Anglo-Lithuanian"
+      },
+      "eco": "A10",
+      "opening": "English Opening: Anglo-Lithuanian Variation",
+      "moves": ["c4", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bb30ed9cd36cb5c4",
+      "names": {
+        "en": "Carls-Bremen System",
+        "pt-BR": "Sistema Carls-Bremen",
+        "es": "Sistema Carls-Bremen"
+      },
+      "eco": "A22",
+      "opening": "English Opening: Carls-Bremen System",
+      "moves": ["c4", "e5", "Nc3", "Nf6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b64ba7701c88a884",
+      "names": {
+        "en": "Caro-Kann Defensive System",
+        "pt-BR": "Sistema Caro-Kann Defensive",
+        "es": "Sistema Caro-Kann Defensive"
+      },
+      "eco": "A11",
+      "opening": "English Opening: Caro-Kann Defensive System",
+      "moves": ["c4", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ac8755c472e2ed63",
+      "names": {
+        "en": "Drill Variation",
+        "pt-BR": "Variação Drill",
+        "es": "Variante Drill"
+      },
+      "eco": "A20",
+      "opening": "English Opening: Drill Variation",
+      "moves": ["c4", "e5", "g3", "h5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-a895c8b820c25052",
+      "names": {
+        "en": "Four Knights System, Nimzowitsch Variation"
+      },
+      "eco": "A28",
+      "opening": "English Opening: Four Knights System, Nimzowitsch Variation",
+      "moves": ["c4", "e5", "Nc3", "Nf6", "Nf3", "Nc6", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e573577c97530f13",
+      "names": {
+        "en": "Great Snake Variation"
+      },
+      "eco": "A10",
+      "opening": "English Opening: Great Snake Variation",
+      "moves": ["c4", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0fb73ed83f3279b0",
+      "names": {
+        "en": "Jaenisch Gambit",
+        "pt-BR": "Gambito Jaenisch",
+        "es": "Gambito Jaenisch"
+      },
+      "eco": "A10",
+      "opening": "English Opening: Jaenisch Gambit",
+      "moves": ["c4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5b6bd1fb4b276a6c",
+      "names": {
+        "en": "English Opening",
+        "pt-BR": "Abertura Inglesa",
+        "es": "Apertura Inglesa"
+      },
+      "eco": "A10",
+      "opening": "English Opening",
+      "moves": ["c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-9699e6ed8b49e21e",
+      "names": {
+        "en": "Mikenas-Carls, Sicilian"
+      },
+      "eco": "A19",
+      "opening": "English Opening: Mikenas-Carls, Sicilian",
+      "moves": ["c4", "e6", "Nc3", "Nf6", "e4", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-aefe36435b7e32f1",
+      "names": {
+        "en": "Myers Defense",
+        "pt-BR": "Defesa Myers",
+        "es": "Defensa Myers"
+      },
+      "eco": "A10",
+      "opening": "English Opening: Myers Defense",
+      "moves": ["c4", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d1186e887504a075",
+      "names": {
+        "en": "Myers Gambit",
+        "pt-BR": "Gambito Myers",
+        "es": "Gambito Myers"
+      },
+      "eco": "A10",
+      "opening": "English Opening: Myers Gambit",
+      "moves": ["c4", "g5", "d4", "Bg7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-546e583f5ed4b30a",
+      "names": {
+        "en": "Neo-Catalan"
+      },
+      "eco": "A13",
+      "opening": "English Opening: Neo-Catalan",
+      "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-611c4e7f4eef9241",
+      "names": {
+        "en": "Neo-Catalan Declined"
+      },
+      "eco": "A13",
+      "opening": "English Opening: Neo-Catalan Declined",
+      "moves": ["c4", "e6", "Nf3", "d5", "g3", "Nf6", "Bg2", "Be7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3c4625a4014176f4",
+      "names": {
+        "en": "Porcupine Variation",
+        "pt-BR": "Variação Porcupine",
+        "es": "Variante Porcupine"
+      },
+      "eco": "A10",
+      "opening": "English Opening: Porcupine Variation",
+      "moves": ["c4", "f5", "Nc3", "Nf6", "e4", "fxe4", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e03bacdad62eb884",
+      "names": {
+        "en": "Romanishin Gambit",
+        "pt-BR": "Gambito Romanishin",
+        "es": "Gambito Romanishin"
+      },
+      "eco": "A13",
+      "opening": "English Opening: Romanishin Gambit",
+      "moves": ["c4", "Nf6", "Nf3", "e6", "g3", "a6", "Bg2", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f1fd7745635adfd6",
+      "names": {
+        "en": "Symmetrical, Hedgehog, Flexible Formation"
+      },
+      "eco": "A30",
+      "opening": "English Opening: Symmetrical, Hedgehog, Flexible Formation",
+      "moves": ["c4", "e6", "Nf3", "c5", "Nc3", "Nf6", "g3", "b6", "Bg2", "Bb7", "O-O", "Be7", "d4", "cxd4", "Qxd4", "d6", "Rd1", "a6", "b3", "Nbd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-117993fdb18f3a7a",
+      "names": {
+        "en": "The Whale"
+      },
+      "eco": "C20",
+      "opening": "English Opening: The Whale",
+      "moves": ["e4", "e5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-693ca288ac84ae5d",
+      "names": {
+        "en": "Wade Gambit",
+        "pt-BR": "Gambito Wade",
+        "es": "Gambito Wade"
+      },
+      "eco": "A10",
+      "opening": "English Opening: Wade Gambit",
+      "moves": ["c4", "f5", "g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0b8931c0a5463c6b",
+      "names": {
+        "en": "Wing Gambit"
+      },
+      "eco": "A30",
+      "opening": "English Opening: Wing Gambit",
+      "moves": ["c4", "c5", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6422d7a5f1430544",
+      "names": {
+        "en": "Zilbermints Gambit",
+        "pt-BR": "Gambito Zilbermints",
+        "es": "Gambito Zilbermints"
+      },
+      "eco": "A10",
+      "opening": "English Opening: Zilbermints Gambit",
+      "moves": ["c4", "g5", "d4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

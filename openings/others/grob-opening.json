@@ -1,0 +1,277 @@
+{
+  "id": "grob-opening",
+  "names": {
+    "en": "Grob Opening",
+    "pt-BR": "Abertura Grob",
+    "es": "Apertura Grob"
+  },
+  "order": null,
+  "variants": [
+    {
+      "names": {
+        "en": "Grob Gambit",
+        "pt-BR": "Gambito Grob",
+        "es": "Gambito Grob"
+      },
+      "lines": [
+        {
+          "id": "line-841bd623adade83e",
+          "names": {
+            "en": "Grob Gambit",
+            "pt-BR": "Gambito Grob",
+            "es": "Gambito Grob"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Grob Gambit",
+          "moves": ["g4", "d5", "Bg2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-7eabc619949cc7ff",
+          "names": {
+            "en": "Grob Gambit, Fritz Gambit",
+            "pt-BR": "Gambito Grob, Gambito Fritz",
+            "es": "Gambito Grob, Gambito Fritz"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Grob Gambit, Fritz Gambit",
+          "moves": ["g4", "d5", "Bg2", "Bxg4", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8955ec9e73eae72d",
+          "names": {
+            "en": "Grob Gambit, Fritz Gambit, Romford Countergambit",
+            "pt-BR": "Gambito Grob, Gambito Fritz, Contragambito Romford",
+            "es": "Gambito Grob, Gambito Fritz, Contragambito Romford"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Grob Gambit, Fritz Gambit, Romford Countergambit",
+          "moves": ["g4", "d5", "Bg2", "Bxg4", "c4", "d4", "Bxb7", "Nd7", "Bxa8", "Qxa8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-55820be63a814fa9",
+          "names": {
+            "en": "Grob Gambit, Richter-Grob Gambit",
+            "pt-BR": "Gambito Grob, Gambito Richter-Grob",
+            "es": "Gambito Grob, Gambito Richter-Grob"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Grob Gambit, Richter-Grob Gambit",
+          "moves": ["g4", "d5", "Bg2", "c6", "c4", "dxc4", "b3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-98fc7b7656a3dc54",
+          "names": {
+            "en": "Grob Gambit, Keres Gambit",
+            "pt-BR": "Gambito Grob, Gambito Keres",
+            "es": "Gambito Grob, Gambito Keres"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Grob Gambit, Keres Gambit",
+          "moves": ["g4", "d5", "Bg2", "e5", "d4", "exd4", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ce37b88e28dff550",
+          "names": {
+            "en": "Grob Gambit, Basman Gambit",
+            "pt-BR": "Gambito Grob, Gambito Basman",
+            "es": "Gambito Grob, Gambito Basman"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Grob Gambit, Basman Gambit",
+          "moves": ["g4", "d5", "Bg2", "h5", "gxh5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Zilbermints Gambit",
+        "pt-BR": "Gambito Zilbermints",
+        "es": "Gambito Zilbermints"
+      },
+      "lines": [
+        {
+          "id": "line-b73529759aa00b78",
+          "names": {
+            "en": "Zilbermints Gambit",
+            "pt-BR": "Gambito Zilbermints",
+            "es": "Gambito Zilbermints"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Zilbermints Gambit",
+          "moves": ["g4", "d5", "e4", "dxe4", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e53962c8c5444a0b",
+          "names": {
+            "en": "Zilbermints Gambit, Zilbermints-Hartlaub Gambit",
+            "pt-BR": "Gambito Zilbermints, Gambito Zilbermints-Hartlaub",
+            "es": "Gambito Zilbermints, Gambito Zilbermints-Hartlaub"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Zilbermints Gambit, Zilbermints-Hartlaub Gambit",
+          "moves": ["g4", "d5", "e4", "dxe4", "Nc3", "e5", "d3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5a6fce580bce8c45",
+          "names": {
+            "en": "Zilbermints Gambit, Schiller Defense",
+            "pt-BR": "Gambito Zilbermints, Defesa Schiller",
+            "es": "Gambito Zilbermints, Defensa Schiller"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Zilbermints Gambit, Schiller Defense",
+          "moves": ["g4", "d5", "e4", "dxe4", "Nc3", "h5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Double Grob"
+      },
+      "lines": [
+        {
+          "id": "line-6f9b826650dfe708",
+          "names": {
+            "en": "Double Grob"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Double Grob",
+          "moves": ["g4", "g5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b0616ad7cb928890",
+          "names": {
+            "en": "Double Grob, Coca-Cola Gambit"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Double Grob, Coca-Cola Gambit",
+          "moves": ["g4", "g5", "f4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Keene Defense",
+        "pt-BR": "Defesa Keene",
+        "es": "Defensa Keene"
+      },
+      "lines": [
+        {
+          "id": "line-f922fbcb87007529",
+          "names": {
+            "en": "Keene Defense",
+            "pt-BR": "Defesa Keene",
+            "es": "Defensa Keene"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Keene Defense",
+          "moves": ["g4", "d5", "h3", "e5", "Bg2", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-683e7fd60fcff76c",
+          "names": {
+            "en": "Keene Defense, Main Line",
+            "pt-BR": "Defesa Keene, Linha Principal",
+            "es": "Defensa Keene, Línea Principal"
+          },
+          "eco": "A00",
+          "opening": "Grob Opening: Keene Defense, Main Line",
+          "moves": ["g4", "d5", "h3", "e5", "Bg2", "c6", "d4", "e4", "c4", "Bd6", "Nc3", "Ne7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-4bd54035c147dcc0",
+      "names": {
+        "en": "Alessi Gambit",
+        "pt-BR": "Gambito Alessi",
+        "es": "Gambito Alessi"
+      },
+      "eco": "A00",
+      "opening": "Grob Opening: Alessi Gambit",
+      "moves": ["g4", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ac37705eed54568c",
+      "names": {
+        "en": "Grob Gambit Declined"
+      },
+      "eco": "A00",
+      "opening": "Grob Opening: Grob Gambit Declined",
+      "moves": ["g4", "d5", "Bg2", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c449d5d685b9c820",
+      "names": {
+        "en": "London Defense"
+      },
+      "eco": "A00",
+      "opening": "Grob Opening: London Defense",
+      "moves": ["g4", "e5", "h3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c24fd994b9eca95c",
+      "names": {
+        "en": "Grob Opening",
+        "pt-BR": "Abertura Grob",
+        "es": "Apertura Grob"
+      },
+      "eco": "A00",
+      "opening": "Grob Opening",
+      "moves": ["g4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0d717a20d8dd5ec3",
+      "names": {
+        "en": "Romford Countergambit",
+        "pt-BR": "Contragambito Romford",
+        "es": "Contragambito Romford"
+      },
+      "eco": "A00",
+      "opening": "Grob Opening: Romford Countergambit",
+      "moves": ["g4", "d5", "Bg2", "Bxg4", "c4", "d4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e67be590899a7b47",
+      "names": {
+        "en": "Spike, Hurst Attack"
+      },
+      "eco": "A00",
+      "opening": "Grob Opening: Spike, Hurst Attack",
+      "moves": ["g4", "e5", "Bg2", "d5", "c4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-004832ebcc489a7c",
+      "names": {
+        "en": "Spike Attack",
+        "pt-BR": "Ataque Spike",
+        "es": "Ataque Spike"
+      },
+      "eco": "A00",
+      "opening": "Grob Opening: Spike Attack",
+      "moves": ["g4", "d5", "Bg2", "c6", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

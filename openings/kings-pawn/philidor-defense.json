@@ -1,0 +1,583 @@
+{
+  "id": "philidor-defense",
+  "names": {
+    "en": "Philidor Defense",
+    "pt-BR": "Defesa Philidor",
+    "es": "Defensa Philidor"
+  },
+  "order": 14,
+  "variants": [
+    {
+      "names": {
+        "en": "Lion Variation"
+      },
+      "lines": [
+        {
+          "id": "line-bdec0f2daf627dc5",
+          "names": {
+            "en": "Lion Variation, Delayed Bishop Sacrifice"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Lion Variation, Delayed Bishop Sacrifice",
+          "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "Nbd7", "Nf3", "e5", "Bc4", "Be7", "dxe5", "dxe5", "Bxf7+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f8e572f32e178d8d",
+          "names": {
+            "en": "Lion Variation, Sozin Variation"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Lion Variation, Sozin Variation",
+          "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "e5", "Nf3", "Nbd7", "Bc4", "Be7", "O-O", "O-O", "Qe2", "c6", "a4", "exd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d5f20aa01681cf4c",
+          "names": {
+            "en": "Lion Variation, Shirov Gambit"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Lion Variation, Shirov Gambit",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nd7", "Nc3", "Ngf6", "g4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cfebd76470de0f2d",
+          "names": {
+            "en": "Lion Variation"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Lion Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "Nc3", "Nbd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-63c5d59022042830",
+          "names": {
+            "en": "Lion Variation, Bishop Sacrifice"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Lion Variation, Bishop Sacrifice",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "Nc3", "Nbd7", "Bc4", "Be7", "Bxf7+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-44c274b20d7e421c",
+          "names": {
+            "en": "Lion Variation, Forcing Line"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Lion Variation, Forcing Line",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "Nc3", "Nbd7", "Bc4", "Be7", "Ng5", "O-O", "Bxf7+", "Rxf7", "Ne6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3edd9429fc8bb48e",
+          "names": {
+            "en": "Lion Variation, Lion's Claw, with Bc4 and h6"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Lion Variation, Lion's Claw, with Bc4 and h6",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "Nc3", "Nbd7", "Bc4", "Be7", "O-O", "h6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fb61ecd6984537d5",
+          "names": {
+            "en": "Lion Variation, Lion's Claw, with Be2 and c6"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Lion Variation, Lion's Claw, with Be2 and c6",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "Nc3", "Nbd7", "Be2", "Be7", "O-O", "c6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Hanham Variation",
+        "pt-BR": "Variação Hanham",
+        "es": "Variante Hanham"
+      },
+      "lines": [
+        {
+          "id": "line-edda874aea4e84d2",
+          "names": {
+            "en": "Hanham Variation",
+            "pt-BR": "Variação Hanham",
+            "es": "Variante Hanham"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Hanham Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nd7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-6568f3a15597e7db",
+          "names": {
+            "en": "Hanham Variation, Sharp Variation",
+            "pt-BR": "Variação Hanham, Variação Sharp",
+            "es": "Variante Hanham, Variante Sharp"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Hanham Variation, Sharp Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nd7", "Bc4", "Nb6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-964e20f965a01bbb",
+          "names": {
+            "en": "Hanham Variation, Schlechter Variation",
+            "pt-BR": "Variação Hanham, Variação Schlechter",
+            "es": "Variante Hanham, Variante Schlechter"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Hanham Variation, Schlechter Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nd7", "Bc4", "c6", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-3768e9aa3b40f692",
+          "names": {
+            "en": "Hanham Variation, Krause Variation",
+            "pt-BR": "Variação Hanham, Variação Krause",
+            "es": "Variante Hanham, Variante Krause"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Hanham Variation, Krause Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nd7", "Bc4", "c6", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1558376eaaabb068",
+          "names": {
+            "en": "Hanham Variation, Steiner Variation",
+            "pt-BR": "Variação Hanham, Variação Steiner",
+            "es": "Variante Hanham, Variante Steiner"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Hanham Variation, Steiner Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nd7", "Bc4", "c6", "O-O", "Be7", "dxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4f6bdf28186c7b0b",
+          "names": {
+            "en": "Hanham Variation, Delmar Variation",
+            "pt-BR": "Variação Hanham, Variação Delmar",
+            "es": "Variante Hanham, Variante Delmar"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Hanham Variation, Delmar Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nd7", "Bc4", "c6", "c3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Nimzowitsch Variation",
+        "pt-BR": "Variação Nimzowitsch",
+        "es": "Variante Nimzowitsch"
+      },
+      "lines": [
+        {
+          "id": "line-a06a6078f673439b",
+          "names": {
+            "en": "Nimzowitsch Variation",
+            "pt-BR": "Variação Nimzowitsch",
+            "es": "Variante Nimzowitsch"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Nimzowitsch Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f3f217d364c3ed7a",
+          "names": {
+            "en": "Nimzowitsch Variation, Klein Variation",
+            "pt-BR": "Variação Nimzowitsch, Variação Klein",
+            "es": "Variante Nimzowitsch, Variante Klein"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Nimzowitsch Variation, Klein Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c5718ac06ee9d792",
+          "names": {
+            "en": "Nimzowitsch Variation",
+            "pt-BR": "Variação Nimzowitsch",
+            "es": "Variante Nimzowitsch"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Nimzowitsch Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "dxe5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-eefd3ee6f8a91814",
+          "names": {
+            "en": "Nimzowitsch Variation, Sokolsky Variation",
+            "pt-BR": "Variação Nimzowitsch, Variação Sokolsky",
+            "es": "Variante Nimzowitsch, Variante Sokolsky"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Nimzowitsch Variation, Sokolsky Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "dxe5", "Nxe4", "Nbd2"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9e812b7f4f36a9a3",
+          "names": {
+            "en": "Nimzowitsch Variation, Rellstab Variation",
+            "pt-BR": "Variação Nimzowitsch, Variação Rellstab",
+            "es": "Variante Nimzowitsch, Variante Rellstab"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Nimzowitsch Variation, Rellstab Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "dxe5", "Nxe4", "Qd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Main",
+        "pt-BR": "Principal",
+        "es": "Principal"
+      },
+      "lines": [
+        {
+          "id": "line-a1b559f0ccbc97bf",
+          "names": {
+            "en": "Philidor Defense",
+            "pt-BR": "Defesa Philidor",
+            "es": "Defensa Philidor"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense",
+          "moves": ["e4", "e5", "Nf3", "d6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-70127779dc2cebd6",
+          "names": {
+            "en": "Philidor Defense",
+            "pt-BR": "Defesa Philidor",
+            "es": "Defensa Philidor"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense",
+          "moves": ["e4", "e5", "Nf3", "d6", "Bc4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-26d82310e9ee0812",
+          "names": {
+            "en": "Philidor Defense",
+            "pt-BR": "Defesa Philidor",
+            "es": "Defensa Philidor"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense",
+          "moves": ["e4", "e5", "Nf3", "d6", "Bc4", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-772bd8cf9b6bb29c",
+          "names": {
+            "en": "Philidor Defense",
+            "pt-BR": "Defesa Philidor",
+            "es": "Defensa Philidor"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Philidor Countergambit",
+        "pt-BR": "Contragambito Philidor",
+        "es": "Contragambito Philidor"
+      },
+      "lines": [
+        {
+          "id": "line-e91cf9be9c5fbb7d",
+          "names": {
+            "en": "Philidor Countergambit",
+            "pt-BR": "Contragambito Philidor",
+            "es": "Contragambito Philidor"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Philidor Countergambit",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1583913dcd7a9b1a",
+          "names": {
+            "en": "Philidor Countergambit, Zukertort Variation",
+            "pt-BR": "Contragambito Philidor, Variação Zukertort",
+            "es": "Contragambito Philidor, Variante Zukertort"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Philidor Countergambit, Zukertort Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "f5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-cc355ae20d5e4f3a",
+          "names": {
+            "en": "Philidor Countergambit, del Rio Attack"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Philidor Countergambit, del Rio Attack",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "f5", "dxe5", "fxe4", "Ng5", "d5", "e6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-b1b803551edf6a31",
+          "names": {
+            "en": "Philidor Countergambit, Berger Variation",
+            "pt-BR": "Contragambito Philidor, Variação Berger",
+            "es": "Contragambito Philidor, Variante Berger"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Philidor Countergambit, Berger Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "f5", "dxe5", "fxe4", "Ng5", "d5", "e6", "Bc5", "Nc3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Exchange Variation",
+        "pt-BR": "Variação da Troca",
+        "es": "Variante del Cambio"
+      },
+      "lines": [
+        {
+          "id": "line-0999ec465330bb69",
+          "names": {
+            "en": "Exchange Variation",
+            "pt-BR": "Variação da Troca",
+            "es": "Variante del Cambio"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Exchange Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "exd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f22b7401b283b35a",
+          "names": {
+            "en": "Exchange Variation",
+            "pt-BR": "Variação da Troca",
+            "es": "Variante del Cambio"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Exchange Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "exd4", "Nxd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8b124f1bc1825898",
+          "names": {
+            "en": "Exchange Variation",
+            "pt-BR": "Variação da Troca",
+            "es": "Variante del Cambio"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Exchange Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "exd4", "Nxd4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Lopez Countergambit",
+        "pt-BR": "Contragambito Lopez",
+        "es": "Contragambito Lopez"
+      },
+      "lines": [
+        {
+          "id": "line-f883365568efc44a",
+          "names": {
+            "en": "Lopez Countergambit",
+            "pt-BR": "Contragambito Lopez",
+            "es": "Contragambito Lopez"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Lopez Countergambit",
+          "moves": ["e4", "e5", "Nf3", "d6", "Bc4", "f5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-99ab32dfcb09b6d3",
+          "names": {
+            "en": "Lopez Countergambit, Jaenisch Variation",
+            "pt-BR": "Contragambito Lopez, Variação Jaenisch",
+            "es": "Contragambito Lopez, Variante Jaenisch"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Lopez Countergambit, Jaenisch Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "f5", "Bc4", "exd4", "Ng5", "Nh6", "Nxh7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Nimzowitsch"
+      },
+      "lines": [
+        {
+          "id": "line-40dac82b1e3eb542",
+          "names": {
+            "en": "Nimzowitsch, Larobok Variation"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Nimzowitsch, Larobok Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "Nc3", "Nbd7", "Bc4", "Be7", "Ng5", "O-O", "Bxf7+"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-29956e9d800ed73a",
+          "names": {
+            "en": "Nimzowitsch, Locock Variation"
+          },
+          "eco": "C41",
+          "opening": "Philidor Defense: Nimzowitsch, Locock Variation",
+          "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nf6", "Ng5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-769e63037c0972c5",
+      "names": {
+        "en": "Albin-Blackburne Gambit",
+        "pt-BR": "Gambito Albin-Blackburne",
+        "es": "Gambito Albin-Blackburne"
+      },
+      "eco": "C41",
+      "opening": "Philidor Defense: Albin-Blackburne Gambit",
+      "moves": ["e4", "e5", "Nf3", "d6", "d4", "Bg4", "dxe5", "Nd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-18ed83f8dff28cb3",
+      "names": {
+        "en": "Berger Variation",
+        "pt-BR": "Variação Berger",
+        "es": "Variante Berger"
+      },
+      "eco": "C41",
+      "opening": "Philidor Defense: Berger Variation",
+      "moves": ["e4", "e5", "Nf3", "d6", "d4", "exd4", "Nxd4", "Nf6", "Nc3", "Be7", "Be2", "O-O", "O-O", "c5", "Nf3", "Nc6", "Bg5", "Be6", "Re1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3bff6bdfd967c612",
+      "names": {
+        "en": "Bird Gambit"
+      },
+      "eco": "C41",
+      "opening": "Philidor Defense: Bird Gambit",
+      "moves": ["e4", "e5", "Nf3", "d6", "d4", "exd4", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1d6cafd085723247",
+      "names": {
+        "en": "Boden Variation",
+        "pt-BR": "Variação Boden",
+        "es": "Variante Boden"
+      },
+      "eco": "C41",
+      "opening": "Philidor Defense: Boden Variation",
+      "moves": ["e4", "e5", "Nf3", "d6", "d4", "exd4", "Qxd4", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d6e572e01e7716f8",
+      "names": {
+        "en": "Hanham, Kmoch Variation"
+      },
+      "eco": "C41",
+      "opening": "Philidor Defense: Hanham, Kmoch Variation",
+      "moves": ["e4", "e5", "Nf3", "d6", "d4", "Nd7", "Bc4", "c6", "Ng5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7cae49383c9f0d10",
+      "names": {
+        "en": "Larsen Variation",
+        "pt-BR": "Variação Larsen",
+        "es": "Variante Larsen"
+      },
+      "eco": "C41",
+      "opening": "Philidor Defense: Larsen Variation",
+      "moves": ["e4", "e5", "Nf3", "d6", "d4", "exd4", "Nxd4", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0d3ca730a5157e71",
+      "names": {
+        "en": "Morphy Gambit",
+        "pt-BR": "Gambito Morphy",
+        "es": "Gambito Morphy"
+      },
+      "eco": "C41",
+      "opening": "Philidor Defense: Morphy Gambit",
+      "moves": ["e4", "e5", "Nf3", "d6", "d4", "exd4", "Bc4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-3df8a55ce9ae17fa",
+      "names": {
+        "en": "Paulsen Attack",
+        "pt-BR": "Ataque Paulsen",
+        "es": "Ataque Paulsen"
+      },
+      "eco": "C41",
+      "opening": "Philidor Defense: Paulsen Attack",
+      "moves": ["e4", "e5", "Nf3", "d6", "d4", "exd4", "Nxd4", "d5", "exd5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-56cee4cbb1e3571b",
+      "names": {
+        "en": "Philidor Gambit",
+        "pt-BR": "Gambito Philidor",
+        "es": "Gambito Philidor"
+      },
+      "eco": "C41",
+      "opening": "Philidor Defense: Philidor Gambit",
+      "moves": ["e4", "e5", "Nf3", "d6", "d4", "Bd7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c936933d0fc6117d",
+      "names": {
+        "en": "Steinitz Variation",
+        "pt-BR": "Variação Steinitz",
+        "es": "Variante Steinitz"
+      },
+      "eco": "C41",
+      "opening": "Philidor Defense: Steinitz Variation",
+      "moves": ["e4", "e5", "Nf3", "d6", "Bc4", "Be7", "c3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "torre-attack",
+  "names": {
+    "en": "Torre Attack",
+    "pt-BR": "Ataque Torre",
+    "es": "Ataque Torre"
+  },
+  "order": 16,
+  "variants": [
+    {
+      "names": {
+        "en": "Classical Defense"
+      },
+      "lines": [
+        {
+          "id": "line-533dddf58e3b2be7",
+          "names": {
+            "en": "Classical Defense"
+          },
+          "eco": "A46",
+          "opening": "Torre Attack: Classical Defense",
+          "moves": ["d4", "Nf6", "Nf3", "e6", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-d8bb41a8031d09e1",
+          "names": {
+            "en": "Classical Defense, Petrosian Gambit"
+          },
+          "eco": "A46",
+          "opening": "Torre Attack: Classical Defense, Petrosian Gambit",
+          "moves": ["d4", "Nf6", "Nf3", "e6", "Bg5", "c5", "e3", "b6", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f26395defa9f0695",
+          "names": {
+            "en": "Classical Defense, Nimzowitsch Variation"
+          },
+          "eco": "A46",
+          "opening": "Torre Attack: Classical Defense, Nimzowitsch Variation",
+          "moves": ["d4", "Nf6", "Nf3", "e6", "Bg5", "h6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Fianchetto Defense"
+      },
+      "lines": [
+        {
+          "id": "line-05740242e5b02e14",
+          "names": {
+            "en": "Fianchetto Defense"
+          },
+          "eco": "A48",
+          "opening": "Torre Attack: Fianchetto Defense",
+          "moves": ["d4", "Nf6", "Nf3", "g6", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-ee97aefc1d30a00a",
+          "names": {
+            "en": "Fianchetto Defense, Euwe Variation"
+          },
+          "eco": "A48",
+          "opening": "Torre Attack: Fianchetto Defense, Euwe Variation",
+          "moves": ["d4", "Nf6", "Nf3", "g6", "Bg5", "Bg7", "Nbd2", "c5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-1e0f80f0c3c3e0cc",
+      "names": {
+        "en": "Wagner Gambit",
+        "pt-BR": "Gambito Wagner",
+        "es": "Gambito Wagner"
+      },
+      "eco": "A46",
+      "opening": "Torre Attack: Wagner Gambit",
+      "moves": ["d4", "Nf6", "Nf3", "e6", "Bg5", "c5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

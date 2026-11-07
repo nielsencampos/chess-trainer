@@ -1,0 +1,23 @@
+{
+  "id": "montevideo-defense",
+  "names": {
+    "en": "Montevideo Defense",
+    "pt-BR": "Defesa Montevideo",
+    "es": "Defensa Montevideo"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-bc939cc6ec149da7",
+      "names": {
+        "en": "Montevideo Defense",
+        "pt-BR": "Defesa Montevideo",
+        "es": "Defensa Montevideo"
+      },
+      "eco": "A40",
+      "opening": "Montevideo Defense",
+      "moves": ["d4", "Nc6", "d5", "Nb8"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

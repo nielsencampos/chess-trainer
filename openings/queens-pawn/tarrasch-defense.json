@@ -1,0 +1,353 @@
+{
+  "id": "tarrasch-defense",
+  "names": {
+    "en": "Tarrasch Defense",
+    "pt-BR": "Defesa Tarrasch",
+    "es": "Defensa Tarrasch"
+  },
+  "order": 14,
+  "variants": [
+    {
+      "names": {
+        "en": "Classical Variation",
+        "pt-BR": "Variação Clássica",
+        "es": "Variante Clásica"
+      },
+      "lines": [
+        {
+          "id": "line-8318bbc88af64cb6",
+          "names": {
+            "en": "Classical Variation, Bogoljubow Variation",
+            "pt-BR": "Variação Clássica, Variação Bogoljubow",
+            "es": "Variante Clásica, Variante Bogoljubow"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation, Bogoljubow Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "c5", "Nf3", "d5", "cxd5", "exd5", "g3", "Nc6", "Bg2", "Be7", "O-O", "O-O", "Bg5", "Be6", "Rc1", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-9980cbd40a56f24b",
+          "names": {
+            "en": "Classical Variation",
+            "pt-BR": "Variação Clássica",
+            "es": "Variante Clásica"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-329aa1b32b8d0347",
+          "names": {
+            "en": "Classical Variation, Carlsbad Variation",
+            "pt-BR": "Variação Clássica, Variação Carlsbad",
+            "es": "Variante Clásica, Variante Carlsbad"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation, Carlsbad Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "Bg5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-2a5cc324126688a5",
+          "names": {
+            "en": "Classical Variation, Endgame Variation",
+            "pt-BR": "Variação Clássica, Variação Endgame",
+            "es": "Variante Clásica, Variante Endgame"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation, Endgame Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "Bg5", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-78bfbcd278a9c1e0",
+          "names": {
+            "en": "Classical Variation, Advance Variation",
+            "pt-BR": "Variação Clássica, Variação do Avanço",
+            "es": "Variante Clásica, Variante del Avance"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation, Advance Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "Bg5", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-8c2e8f2480d0f58f",
+          "names": {
+            "en": "Classical Variation, Petursson Variation",
+            "pt-BR": "Variação Clássica, Variação Petursson",
+            "es": "Variante Clásica, Variante Petursson"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation, Petursson Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "Bg5", "cxd4", "Nxd4", "Re8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0fef1303c2c512ad",
+          "names": {
+            "en": "Classical Variation, Spassky Variation",
+            "pt-BR": "Variação Clássica, Variação Spassky",
+            "es": "Variante Clásica, Variante Spassky"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation, Spassky Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "Bg5", "cxd4", "Nxd4", "h6", "Be3", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-23a7b2f900efa552",
+          "names": {
+            "en": "Classical Variation, Main Line",
+            "pt-BR": "Variação Clássica, Linha Principal",
+            "es": "Variante Clásica, Línea Principal"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation, Main Line",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "Bg5", "cxd4", "Nxd4", "h6", "Be3", "Re8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5b230be88a1ffbe3",
+          "names": {
+            "en": "Classical Variation, Chandler Variation",
+            "pt-BR": "Variação Clássica, Variação Chandler",
+            "es": "Variante Clásica, Variante Chandler"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation, Chandler Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "Bg5", "cxd4", "Nxd4", "h6", "Be3", "Re8", "Rc1", "Be6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c58909cf15d1075a",
+          "names": {
+            "en": "Classical Variation, Réti Variation",
+            "pt-BR": "Variação Clássica, Variação Réti",
+            "es": "Variante Clásica, Variante Réti"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation, Réti Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "dxc5", "Bxc5", "Na4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-e33a6ab68a698b17",
+          "names": {
+            "en": "Classical Variation, Classical Tarrasch Gambit"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Classical Variation, Classical Tarrasch Gambit",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7", "O-O", "O-O", "dxc5", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Prague Variation"
+      },
+      "lines": [
+        {
+          "id": "line-6d3df8932f1755da",
+          "names": {
+            "en": "Prague Variation"
+          },
+          "eco": "D33",
+          "opening": "Tarrasch Defense: Prague Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-1f51b390e8919aad",
+          "names": {
+            "en": "Prague Variation, Main Line"
+          },
+          "eco": "D34",
+          "opening": "Tarrasch Defense: Prague Variation, Main Line",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Be7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Swedish Variation"
+      },
+      "lines": [
+        {
+          "id": "line-561bef33586a42f2",
+          "names": {
+            "en": "Swedish Variation"
+          },
+          "eco": "D33",
+          "opening": "Tarrasch Defense: Swedish Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "c4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-c9f46af0affbe9ac",
+          "names": {
+            "en": "Swedish Variation, Central Break"
+          },
+          "eco": "D33",
+          "opening": "Tarrasch Defense: Swedish Variation, Central Break",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "c4", "e4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Symmetrical Variation",
+        "pt-BR": "Variação Symmetrical",
+        "es": "Variante Symmetrical"
+      },
+      "lines": [
+        {
+          "id": "line-c7b6a2340a5f4c8a",
+          "names": {
+            "en": "Symmetrical Variation",
+            "pt-BR": "Variação Symmetrical",
+            "es": "Variante Symmetrical"
+          },
+          "eco": "D32",
+          "opening": "Tarrasch Defense: Symmetrical Variation",
+          "moves": ["c4", "c5", "Nf3", "Nc6", "Nc3", "Nf6", "e3", "e6", "d4", "d5", "cxd5", "exd5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-81786c950e10ca27",
+          "names": {
+            "en": "Symmetrical Variation",
+            "pt-BR": "Variação Symmetrical",
+            "es": "Variante Symmetrical"
+          },
+          "eco": "D32",
+          "opening": "Tarrasch Defense: Symmetrical Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "e3", "Nf6", "Nf3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-fd3c0e7327e6daa1",
+      "names": {
+        "en": "Dubov Tarrasch"
+      },
+      "eco": "D33",
+      "opening": "Tarrasch Defense: Dubov Tarrasch",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "cxd4", "Nxd4", "Bc5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1b9353547fa7925d",
+      "names": {
+        "en": "Grünfeld Gambit",
+        "pt-BR": "Gambito Grünfeld",
+        "es": "Gambito Grünfeld"
+      },
+      "eco": "D32",
+      "opening": "Tarrasch Defense: Grünfeld Gambit",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "dxc5", "d4", "Na4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7c9e2f3bd63f5ab0",
+      "names": {
+        "en": "Tarrasch Defense",
+        "pt-BR": "Defesa Tarrasch",
+        "es": "Defensa Tarrasch"
+      },
+      "eco": "D32",
+      "opening": "Tarrasch Defense",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f12534b84fd3dede",
+      "names": {
+        "en": "Marshall Gambit",
+        "pt-BR": "Gambito Marshall",
+        "es": "Gambito Marshall"
+      },
+      "eco": "D32",
+      "opening": "Tarrasch Defense: Marshall Gambit",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e62a7e52acee2762",
+      "names": {
+        "en": "Rubinstein System",
+        "pt-BR": "Sistema Rubinstein",
+        "es": "Sistema Rubinstein"
+      },
+      "eco": "D33",
+      "opening": "Tarrasch Defense: Rubinstein System",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-59eaac8a1810e726",
+      "names": {
+        "en": "Schara Gambit",
+        "pt-BR": "Gambito Schara",
+        "es": "Gambito Schara"
+      },
+      "eco": "D32",
+      "opening": "Tarrasch Defense: Schara Gambit",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "cxd4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e5ad7645ef63d20e",
+      "names": {
+        "en": "Tarrasch Gambit",
+        "pt-BR": "Gambito Tarrasch",
+        "es": "Gambito Tarrasch"
+      },
+      "eco": "D32",
+      "opening": "Tarrasch Defense: Tarrasch Gambit",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "dxc5", "d4", "Na4", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f1ce7fdf8935ab1d",
+      "names": {
+        "en": "Two Knights Variation"
+      },
+      "eco": "D32",
+      "opening": "Tarrasch Defense: Two Knights Variation",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0f0596f6a9c0edea",
+      "names": {
+        "en": "Wagner Variation",
+        "pt-BR": "Variação Wagner",
+        "es": "Variante Wagner"
+      },
+      "eco": "D33",
+      "opening": "Tarrasch Defense: Wagner Variation",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "exd5", "Nf3", "Nc6", "g3", "Nf6", "Bg2", "Bg4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-adaafabc150471e6",
+      "names": {
+        "en": "von Hennig Gambit"
+      },
+      "eco": "D32",
+      "opening": "Tarrasch Defense: von Hennig Gambit",
+      "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5", "cxd5", "cxd4", "Qxd4", "Nc6", "Qd1", "exd5", "Qxd5", "Be6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

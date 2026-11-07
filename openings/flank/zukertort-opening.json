@@ -1,0 +1,572 @@
+{
+  "id": "zukertort-opening",
+  "names": {
+    "en": "Zukertort Opening",
+    "pt-BR": "Abertura Zukertort",
+    "es": "Apertura Zukertort"
+  },
+  "order": 2,
+  "variants": [
+    {
+      "names": {
+        "en": "Main",
+        "pt-BR": "Principal",
+        "es": "Principal"
+      },
+      "lines": [
+        {
+          "id": "line-3a11a8d66647d2db",
+          "names": {
+            "en": "Zukertort Opening",
+            "pt-BR": "Abertura Zukertort",
+            "es": "Apertura Zukertort"
+          },
+          "eco": "A04",
+          "opening": "Zukertort Opening",
+          "moves": ["Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-5613061118050c60",
+          "names": {
+            "en": "Zukertort Opening",
+            "pt-BR": "Abertura Zukertort",
+            "es": "Apertura Zukertort"
+          },
+          "eco": "A05",
+          "opening": "Zukertort Opening",
+          "moves": ["Nf3", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a74e39aaf923e886",
+          "names": {
+            "en": "Zukertort Opening",
+            "pt-BR": "Abertura Zukertort",
+            "es": "Apertura Zukertort"
+          },
+          "eco": "A05",
+          "opening": "Zukertort Opening",
+          "moves": ["Nf3", "Nf6", "Nc3", "Nc6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-35124866d1caba9a",
+          "names": {
+            "en": "Zukertort Opening",
+            "pt-BR": "Abertura Zukertort",
+            "es": "Apertura Zukertort"
+          },
+          "eco": "A06",
+          "opening": "Zukertort Opening",
+          "moves": ["Nf3", "d5"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Reversed Grünfeld"
+      },
+      "lines": [
+        {
+          "id": "line-4eda55fa97990420",
+          "names": {
+            "en": "Reversed Grünfeld"
+          },
+          "eco": "A08",
+          "opening": "Zukertort Opening: Reversed Grünfeld",
+          "moves": ["Nf3", "d5", "g3", "c5", "Bg2", "Nc6", "d4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-4a9938336b591a86",
+          "names": {
+            "en": "Reversed Grünfeld"
+          },
+          "eco": "A08",
+          "opening": "Zukertort Opening: Reversed Grünfeld",
+          "moves": ["Nf3", "d5", "g3", "c5", "Bg2", "Nc6", "d4", "Nf6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-a09548ec31323487",
+          "names": {
+            "en": "Reversed Grünfeld"
+          },
+          "eco": "A08",
+          "opening": "Zukertort Opening: Reversed Grünfeld",
+          "moves": ["Nf3", "d5", "g3", "c5", "Bg2", "Nc6", "d4", "Nf6", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-fab96664a2d5fddf",
+          "names": {
+            "en": "Reversed Grünfeld"
+          },
+          "eco": "A08",
+          "opening": "Zukertort Opening: Reversed Grünfeld",
+          "moves": ["Nf3", "d5", "g3", "c5", "Bg2", "Nc6", "d4", "e6", "O-O"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Arctic Defense",
+        "pt-BR": "Defesa Arctic",
+        "es": "Defensa Arctic"
+      },
+      "lines": [
+        {
+          "id": "line-8e9485f3ed47fbc4",
+          "names": {
+            "en": "Arctic Defense",
+            "pt-BR": "Defesa Arctic",
+            "es": "Defensa Arctic"
+          },
+          "eco": "A04",
+          "opening": "Zukertort Opening: Arctic Defense",
+          "moves": ["Nf3", "f6"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-f11fd4eb3b7a0ddd",
+          "names": {
+            "en": "Arctic Defense, Drunken Knight Variation"
+          },
+          "eco": "A04",
+          "opening": "Zukertort Opening: Arctic Defense, Drunken Knight Variation",
+          "moves": ["Nf3", "f6", "e4", "Nh6", "d4", "Nf7"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Tennison Gambit",
+        "pt-BR": "Gambito Tennison",
+        "es": "Gambito Tennison"
+      },
+      "lines": [
+        {
+          "id": "line-d92eccbe0bf56baa",
+          "names": {
+            "en": "Tennison Gambit",
+            "pt-BR": "Gambito Tennison",
+            "es": "Gambito Tennison"
+          },
+          "eco": "A06",
+          "opening": "Zukertort Opening: Tennison Gambit",
+          "moves": ["e4", "d5", "Nf3"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-64546eddf6ba20f3",
+          "names": {
+            "en": "Tennison Gambit, Brigg's Trap",
+            "pt-BR": "Gambito Tennison, Armadilha Brigg's",
+            "es": "Gambito Tennison, Trampa Brigg's"
+          },
+          "eco": "A06",
+          "opening": "Zukertort Opening: Tennison Gambit, Brigg's Trap",
+          "moves": ["e4", "d5", "Nf3", "dxe4", "Ng5", "Nf6", "Nc3", "Bf5", "Qe2", "Qd4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    },
+    {
+      "names": {
+        "en": "Wade Defense",
+        "pt-BR": "Defesa Wade",
+        "es": "Defensa Wade"
+      },
+      "lines": [
+        {
+          "id": "line-e6ebf11ef73f43c0",
+          "names": {
+            "en": "Wade Defense",
+            "pt-BR": "Defesa Wade",
+            "es": "Defensa Wade"
+          },
+          "eco": "A04",
+          "opening": "Zukertort Opening: Wade Defense",
+          "moves": ["Nf3", "d6", "e4", "Bg4"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        },
+        {
+          "id": "line-0ea66003bf14efb4",
+          "names": {
+            "en": "Wade Defense, Chigorin Plan"
+          },
+          "eco": "A41",
+          "opening": "Zukertort Opening: Wade Defense, Chigorin Plan",
+          "moves": ["d4", "d6", "Nf3", "Bg4", "c4", "Nd7", "Qb3", "Rb8"],
+          "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-f9b241d9ea2b9325",
+      "names": {
+        "en": "Ampel Variation",
+        "pt-BR": "Variação Ampel",
+        "es": "Variante Ampel"
+      },
+      "eco": "A06",
+      "opening": "Zukertort Opening: Ampel Variation",
+      "moves": ["Nf3", "d5", "Rg1"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0ae87e61842abeab",
+      "names": {
+        "en": "Basman Defense",
+        "pt-BR": "Defesa Basman",
+        "es": "Defensa Basman"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Basman Defense",
+      "moves": ["Nf3", "h6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-f8e2f6878fe713ce",
+      "names": {
+        "en": "Black Mustang Defense"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Black Mustang Defense",
+      "moves": ["Nf3", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c2c7e8b8e4081cff",
+      "names": {
+        "en": "Double Fianchetto Attack"
+      },
+      "eco": "A05",
+      "opening": "Zukertort Opening: Double Fianchetto Attack",
+      "moves": ["Nf3", "Nf6", "g3", "g6", "b3", "Bg7", "Bb2", "O-O", "Bg2", "d6", "O-O"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ab061bd6afe073e3",
+      "names": {
+        "en": "Drunken Cavalry Variation",
+        "pt-BR": "Variação Drunken Cavalry",
+        "es": "Variante Drunken Cavalry"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Drunken Cavalry Variation",
+      "moves": ["Nf3", "Na6", "e4", "Nh6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-17c3fc22b00a9f4f",
+      "names": {
+        "en": "Dutch Variation"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Dutch Variation",
+      "moves": ["Nf3", "f5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-24cb9e66c7a1efd8",
+      "names": {
+        "en": "Herrstrom Gambit",
+        "pt-BR": "Gambito Herrstrom",
+        "es": "Gambito Herrstrom"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Herrstrom Gambit",
+      "moves": ["Nf3", "g5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2a6c920379bf4b49",
+      "names": {
+        "en": "Kingside Fianchetto"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Kingside Fianchetto",
+      "moves": ["Nf3", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-cdfcf453b5ee5e1b",
+      "names": {
+        "en": "Lemberger Gambit",
+        "pt-BR": "Gambito Lemberger",
+        "es": "Gambito Lemberger"
+      },
+      "eco": "A05",
+      "opening": "Zukertort Opening: Lemberger Gambit",
+      "moves": ["Nf3", "Nf6", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b4abc84a9a2818f3",
+      "names": {
+        "en": "Lisitsyn Gambit",
+        "pt-BR": "Gambito Lisitsyn",
+        "es": "Gambito Lisitsyn"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Lisitsyn Gambit",
+      "moves": ["Nf3", "f5", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1a54ff409226be86",
+      "names": {
+        "en": "Lisitsyn Gambit Deferred"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Lisitsyn Gambit Deferred",
+      "moves": ["Nf3", "f5", "d3", "Nf6", "e4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-da79c58b662c097a",
+      "names": {
+        "en": "Myers Polish Attack"
+      },
+      "eco": "A05",
+      "opening": "Zukertort Opening: Myers Polish Attack",
+      "moves": ["Nf3", "Nf6", "a4", "g6", "b4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-18f826d0eea239da",
+      "names": {
+        "en": "Nimzo-Larsen Variation",
+        "pt-BR": "Variação Nimzo-Larsen",
+        "es": "Variante Nimzo-Larsen"
+      },
+      "eco": "A05",
+      "opening": "Zukertort Opening: Nimzo-Larsen Variation",
+      "moves": ["Nf3", "Nf6", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6aac5ebb3f003d1a",
+      "names": {
+        "en": "Old Indian Attack"
+      },
+      "eco": "A06",
+      "opening": "Zukertort Opening: Old Indian Attack",
+      "moves": ["Nf3", "d5", "d3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b855cbe98ed58a8d",
+      "names": {
+        "en": "Pachman Gambit",
+        "pt-BR": "Gambito Pachman",
+        "es": "Gambito Pachman"
+      },
+      "eco": "A06",
+      "opening": "Zukertort Opening: Pachman Gambit",
+      "moves": ["Nf3", "d5", "e3", "c5", "c4", "dxc4", "b3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-bf761eff6fc50ea9",
+      "names": {
+        "en": "Pirc Invitation"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Pirc Invitation",
+      "moves": ["Nf3", "d6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-7138f2069734fbfc",
+      "names": {
+        "en": "Polish Defense"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Polish Defense",
+      "moves": ["Nf3", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-00deab1ac96e973c",
+      "names": {
+        "en": "Queen's Gambit Invitation"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Queen's Gambit Invitation",
+      "moves": ["Nf3", "e6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-2bce4eba96880c46",
+      "names": {
+        "en": "Queenside Fianchetto Variation"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Queenside Fianchetto Variation",
+      "moves": ["Nf3", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-c92e903df6fe1b2c",
+      "names": {
+        "en": "Quiet System"
+      },
+      "eco": "A05",
+      "opening": "Zukertort Opening: Quiet System",
+      "moves": ["Nf3", "Nf6", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0cefe87f99c6dc09",
+      "names": {
+        "en": "Regina-Nu Gambit",
+        "pt-BR": "Gambito Regina-Nu",
+        "es": "Gambito Regina-Nu"
+      },
+      "eco": "A06",
+      "opening": "Zukertort Opening: Regina-Nu Gambit",
+      "moves": ["Nf3", "d5", "b3", "c5", "c4", "dxc4", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6594efd572de02c9",
+      "names": {
+        "en": "Reversed Mexican Defense"
+      },
+      "eco": "A06",
+      "opening": "Zukertort Opening: Reversed Mexican Defense",
+      "moves": ["Nf3", "d5", "Nc3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-b698e34de45d8fca",
+      "names": {
+        "en": "Ross Gambit",
+        "pt-BR": "Gambito Ross",
+        "es": "Gambito Ross"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Ross Gambit",
+      "moves": ["Nf3", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1fc476a005ca4a1c",
+      "names": {
+        "en": "Santasiere's Folly"
+      },
+      "eco": "A06",
+      "opening": "Zukertort Opening: Santasiere's Folly",
+      "moves": ["b4", "d5", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-ef6f8b3b5176a406",
+      "names": {
+        "en": "Shabalov Gambit",
+        "pt-BR": "Gambito Shabalov",
+        "es": "Gambito Shabalov"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Shabalov Gambit",
+      "moves": ["Nf3", "e6", "c4", "a6", "Nc3", "c5", "g3", "b5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-02e8e5f890740ce3",
+      "names": {
+        "en": "Sicilian Invitation"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Sicilian Invitation",
+      "moves": ["Nf3", "c5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-710df405a77382c3",
+      "names": {
+        "en": "Slav Invitation"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Slav Invitation",
+      "moves": ["Nf3", "c6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-80a5c5fa9e6c8c2b",
+      "names": {
+        "en": "Speelsmet Gambit",
+        "pt-BR": "Gambito Speelsmet",
+        "es": "Gambito Speelsmet"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Speelsmet Gambit",
+      "moves": ["Nf3", "c5", "d4", "cxd4", "e3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-5fd032acf4b333b3",
+      "names": {
+        "en": "St. George Defense",
+        "pt-BR": "Defesa St. George",
+        "es": "Defensa St. George"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: St. George Defense",
+      "moves": ["Nf3", "a6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6062cdd4ab997a81",
+      "names": {
+        "en": "The Potato"
+      },
+      "eco": "A06",
+      "opening": "Zukertort Opening: The Potato",
+      "moves": ["Nf3", "d5", "a4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-af66d47fb451bf76",
+      "names": {
+        "en": "The Walrus"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: The Walrus",
+      "moves": ["Nf3", "e5", "Nxe5", "Nc6", "Nxc6", "dxc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-6b4c059b58c8dc31",
+      "names": {
+        "en": "Vos Gambit",
+        "pt-BR": "Gambito Vos",
+        "es": "Gambito Vos"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Vos Gambit",
+      "moves": ["Nf3", "d6", "d4", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-d5fe52e67750f487",
+      "names": {
+        "en": "Ware Defense",
+        "pt-BR": "Defesa Ware",
+        "es": "Defensa Ware"
+      },
+      "eco": "A04",
+      "opening": "Zukertort Opening: Ware Defense",
+      "moves": ["Nf3", "a5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

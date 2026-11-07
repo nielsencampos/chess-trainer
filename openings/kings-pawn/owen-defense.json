@@ -1,0 +1,107 @@
+{
+  "id": "owen-defense",
+  "names": {
+    "en": "Owen Defense",
+    "pt-BR": "Defesa Owen",
+    "es": "Defensa Owen"
+  },
+  "order": 21,
+  "lines": [
+    {
+      "id": "line-e33202b3c52b75a8",
+      "names": {
+        "en": "Guatemala Defense",
+        "pt-BR": "Defesa Guatemala",
+        "es": "Defensa Guatemala"
+      },
+      "eco": "B00",
+      "opening": "Owen Defense: Guatemala Defense",
+      "moves": ["e4", "b6", "d4", "Ba6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-e7f654d1b39214ed",
+      "names": {
+        "en": "Hekili-Loa Gambit",
+        "pt-BR": "Gambito Hekili-Loa",
+        "es": "Gambito Hekili-Loa"
+      },
+      "eco": "B00",
+      "opening": "Owen Defense: Hekili-Loa Gambit",
+      "moves": ["e4", "b6", "d4", "c5", "dxc5", "Nc6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-11235500269447b8",
+      "names": {
+        "en": "Owen Defense",
+        "pt-BR": "Defesa Owen",
+        "es": "Defensa Owen"
+      },
+      "eco": "B00",
+      "opening": "Owen Defense",
+      "moves": ["e4", "b6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-00190db1de55e8dc",
+      "names": {
+        "en": "Matovinsky Gambit",
+        "pt-BR": "Gambito Matovinsky",
+        "es": "Gambito Matovinsky"
+      },
+      "eco": "B00",
+      "opening": "Owen Defense: Matovinsky Gambit",
+      "moves": ["e4", "b6", "d4", "Bb7", "Bd3", "f5", "exf5", "Bxg2", "Qh5+", "g6"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-42024d3141a9d29c",
+      "names": {
+        "en": "Naselwaus Gambit",
+        "pt-BR": "Gambito Naselwaus",
+        "es": "Gambito Naselwaus"
+      },
+      "eco": "B00",
+      "opening": "Owen Defense: Naselwaus Gambit",
+      "moves": ["e4", "b6", "d4", "Bb7", "Bg5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-1052ccc1f6fd9a14",
+      "names": {
+        "en": "Smith Gambit",
+        "pt-BR": "Gambito Smith",
+        "es": "Gambito Smith"
+      },
+      "eco": "B00",
+      "opening": "Owen Defense: Smith Gambit",
+      "moves": ["e4", "b6", "d4", "Bb7", "Nf3"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-fe2ec7f8e558d38d",
+      "names": {
+        "en": "Unicorn Variation",
+        "pt-BR": "Variação Unicorn",
+        "es": "Variante Unicorn"
+      },
+      "eco": "B00",
+      "opening": "Owen Defense: Unicorn Variation",
+      "moves": ["e4", "f6", "d4", "b6", "c4", "Bb7"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    },
+    {
+      "id": "line-0e0fb6b96f1bad5b",
+      "names": {
+        "en": "Wind Gambit",
+        "pt-BR": "Gambito Wind",
+        "es": "Gambito Wind"
+      },
+      "eco": "B00",
+      "opening": "Owen Defense: Wind Gambit",
+      "moves": ["e4", "b6", "d4", "Bb7", "f3", "e5"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}

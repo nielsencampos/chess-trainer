@@ -1,0 +1,23 @@
+{
+  "id": "dory-defense",
+  "names": {
+    "en": "Döry Defense",
+    "pt-BR": "Defesa Döry",
+    "es": "Defensa Döry"
+  },
+  "order": null,
+  "lines": [
+    {
+      "id": "line-b040bca321dcd9e1",
+      "names": {
+        "en": "Döry Defense",
+        "pt-BR": "Defesa Döry",
+        "es": "Defensa Döry"
+      },
+      "eco": "A46",
+      "opening": "Döry Defense",
+      "moves": ["d4", "Nf6", "Nf3", "Ne4"],
+      "source": "lichess-org/chess-openings@3ba6b20 (CC0-1.0)"
+    }
+  ]
+}
