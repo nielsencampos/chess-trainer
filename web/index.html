@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>chess-trainer</title>
+    <link rel="icon" href="pieces/cburnett/wN.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/board.css" />
+    <link rel="stylesheet" href="css/panel.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <strong class="brand">chess-trainer</strong>
+      <div class="topbar-controls">
+        <label class="inline-field">
+          <span data-i18n="board.pieces"></span>
+          <select id="piece-set"></select>
+        </label>
+        <button id="theme-toggle" class="button button-ghost" type="button"></button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="board-column">
+        <div class="player">
+          <span id="top-name" class="player-name"></span>
+          <span id="top-clock" class="clock" hidden></span>
+        </div>
+        <div id="board" class="board"></div>
+        <div class="player">
+          <span id="bottom-name" class="player-name"></span>
+          <span id="bottom-clock" class="clock" hidden></span>
+        </div>
+        <div id="chips" class="chips" aria-live="polite"></div>
+      </section>
+
+      <aside class="side-panel">
+        <section id="setup-card" class="card">
+          <h2 data-i18n="setup.title"></h2>
+
+          <fieldset class="field">
+            <legend data-i18n="setup.color"></legend>
+            <div class="segmented">
+              <label><input type="radio" name="color" value="white" /><span data-i18n="setup.white"></span></label>
+              <label><input type="radio" name="color" value="black" /><span data-i18n="setup.black"></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend data-i18n="setup.openings"></legend>
+            <div id="openings" class="openings"></div>
+          </fieldset>
+
+          <div class="field-row">
+            <label class="field">
+              <span class="field-label" data-i18n="setup.level"></span>
+              <select id="level"></select>
+            </label>
+            <label class="field">
+              <span class="field-label" data-i18n="setup.timeControl"></span>
+              <select id="time-control"></select>
+            </label>
+          </div>
+
+          <fieldset class="field">
+            <legend data-i18n="setup.pace"></legend>
+            <div class="segmented">
+              <label><input type="radio" name="pace" value="human" /><span data-i18n="setup.paceHuman"></span></label>
+              <label><input type="radio" name="pace" value="instant" /><span data-i18n="setup.paceInstant"></span></label>
+            </div>
+          </fieldset>
+
+          <div class="toggles">
+            <label class="toggle"><input id="opt-scoresheet" type="checkbox" /><span data-i18n="setup.scoresheet"></span></label>
+            <label class="toggle"><input id="opt-warning" type="checkbox" /><span data-i18n="setup.warning"></span></label>
+            <label class="toggle"><input id="opt-autoplay" type="checkbox" /><span data-i18n="setup.autoplay"></span></label>
+          </div>
+
+          <button id="play" class="button button-primary button-wide" type="button" data-i18n="setup.play"></button>
+          <p id="setup-hint" class="hint" hidden data-i18n="setup.selectOne"></p>
+        </section>
+
+        <section id="end-card" class="card" hidden>
+          <h2 id="end-result"></h2>
+          <p id="end-termination" class="muted"></p>
+          <dl class="end-facts">
+            <dt data-i18n="end.variation"></dt>
+            <dd id="end-variation"></dd>
+            <dt data-i18n="end.theory"></dt>
+            <dd id="end-theory"></dd>
+          </dl>
+          <h3 data-i18n="end.deviations"></h3>
+          <ul id="end-deviations" class="deviations"></ul>
+          <div class="button-row">
+            <button id="copy-pgn" class="button" type="button" data-i18n="end.copyPgn"></button>
+            <a id="lichess-link" class="button" target="_blank" rel="noopener noreferrer" data-i18n="end.lichess"></a>
+          </div>
+          <div class="button-row">
+            <button id="next-game" class="button button-primary" type="button" data-i18n="end.nextGame"></button>
+            <button id="change-setup" class="button" type="button" data-i18n="end.changeSetup"></button>
+          </div>
+          <p id="auto-next" class="hint" hidden>
+            <span id="auto-next-text"></span>
+            <button id="auto-next-cancel" class="link-button" type="button" data-i18n="end.cancel"></button>
+          </p>
+        </section>
+
+        <section id="game-card" class="card" hidden>
+          <h2 data-i18n="game.moves"></h2>
+          <p id="scoresheet-note" class="hint" hidden data-i18n="game.scoresheetNote"></p>
+          <div id="movelist" class="movelist"></div>
+          <p id="game-error" class="error" role="alert" hidden></p>
+          <button id="resign" class="button button-danger button-wide" type="button"></button>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="footer"><span id="footer-versions"></span></footer>
+  </body>
+</html>

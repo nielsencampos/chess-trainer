@@ -1,0 +1,95 @@
+/* Design tokens from brief §4.1. The theme follows the system unless data-theme overrides it. */
+:root {
+  color-scheme: light;
+  --bg: #eef1ea;
+  --surface: #ffffff;
+  --surface-2: #f6f8f3;
+  --ink: #18201b;
+  --muted: #5a6a60;
+  --line: #d3dbd0;
+  --accent: #2d6a3e;
+  --accent-soft: #dcebdd;
+  --on-accent: #ffffff;
+  --warn: #a8641c;
+  --bad: #b03c2c;
+
+  --board-light: #eeeed2;
+  --board-dark: #769656;
+  --highlight-last: rgba(246, 246, 105, 0.55);
+  --highlight-selected: rgba(246, 246, 105, 0.8);
+  --target: rgba(20, 40, 20, 0.28);
+  --check: rgba(214, 40, 30, 0.75);
+
+  --font-ui: "Familjen Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121814;
+    --surface: #1a221d;
+    --surface-2: #202a24;
+    --ink: #e6ece7;
+    --muted: #9aaa9f;
+    --line: #2f3b34;
+    --accent: #78b884;
+    --accent-soft: #233528;
+    --on-accent: #10160f;
+    --warn: #e0a35c;
+    --bad: #e9806f;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121814;
+  --surface: #1a221d;
+  --surface-2: #202a24;
+  --ink: #e6ece7;
+  --muted: #9aaa9f;
+  --line: #2f3b34;
+  --accent: #78b884;
+  --accent-soft: #233528;
+  --on-accent: #10160f;
+  --warn: #e0a35c;
+  --bad: #e9806f;
+}
+
+@font-face {
+  font-family: "Familjen Grotesk";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/familjen-grotesk-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Familjen Grotesk";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/familjen-grotesk-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Familjen Grotesk";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/familjen-grotesk-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/jetbrains-mono-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans Symbols 2";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/noto-sans-symbols-2-symbols-400-normal.woff2") format("woff2");
+}
