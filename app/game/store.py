@@ -10,10 +10,12 @@ import chess
 import duckdb
 
 from app import __version__
-from app.book.models import Book
+from app.book.models import Book, BookMoveRow, Variant, index_moves
 from app.game.imports import ImportedGame, content_hash
 from app.game.pace import TIME_CONTROLS
 from app.game.session import Deviation, GameResult, GameSession, MoveRecord, Selection
+
+GAME_LINE_PREFIX = "game:"
 
 
 class GameStore:
@@ -111,15 +113,67 @@ class GameStore:
         cursor = self._connection.cursor()
         cursor.execute(
             "SELECT game_id, started_at, user_color, time_control, level, result, termination, "
-            "eco, opening, source, white, black, moves_json FROM games WHERE status = 'finished' "
+            "eco, opening, source, white, black, moves_json, pgn FROM games "
+            "WHERE status = 'finished' "
             "ORDER BY started_at DESC, game_id DESC"
         )
         columns = [column[0] for column in cursor.description]
         games = [dict(zip(columns, row, strict=True)) for row in cursor.fetchall()]
         for game in games:
-            game["plies"] = len(json.loads(game.pop("moves_json")))
+            moves = json.loads(game.pop("moves_json"))
+            game["plies"] = len(moves)
+            game["sans"] = [move["san"] for move in moves]
+            game["chess960"] = "chess960" in game.pop("pgn").lower()
             game["started_at"] = f"{game['started_at'].isoformat()}Z"
         return games
+
+    def game_line(self, key: str) -> Variant | None:
+        """A saved game as a line of the book. `key` is game:<game id>:<plies to follow>."""
+        _, game_id, plies = key.split(":")
+        cursor = self._connection.cursor()
+        cursor.execute(
+            "SELECT eco, opening, pgn, moves_json FROM games "
+            "WHERE game_id = ? AND status = 'finished'",
+            [game_id],
+        )
+        row = cursor.fetchone()
+        if row is None or "[fen " in row[2].lower():
+            return None
+        eco, opening, _, moves_json = row
+        moves = json.loads(moves_json)[: int(plies)]
+        if not moves:
+            return None
+        board = chess.Board()
+        rows = []
+        for ply, move in enumerate(moves, 1):
+            rows.append(BookMoveRow(board.epd(), ply, move["uci"], move["san"]))
+            board.push_uci(move["uci"])
+        final_epd = board.epd()
+        book_moves, positions = index_moves(rows, final_epd)
+        return Variant(
+            variant_id=key,
+            repertoire_id="saved-games",
+            names={"en": opening or "Saved game"},
+            eco=eco,
+            opening=opening,
+            source=f"game {game_id}",
+            pgn=" ".join(move["san"] for move in moves),
+            moves=book_moves,
+            positions=positions,
+            final_epd=final_epd,
+        )
+
+    def finished_game(self, game_id: str) -> dict | None:
+        cursor = self._connection.cursor()
+        cursor.execute(
+            "SELECT pgn, white, black, result, eco, opening, source FROM games "
+            "WHERE game_id = ? AND status = 'finished'",
+            [game_id],
+        )
+        row = cursor.fetchone()
+        if row is None:
+            return None
+        return dict(zip([column[0] for column in cursor.description], row, strict=True))
 
     def finished_pgns(self, game_ids: Sequence[str]) -> dict[str, str]:
         """Oldest first, the natural order for a PGN file."""
@@ -148,9 +202,16 @@ def restore_session(
     book: Book,
     opening_names: Mapping[str, tuple[str, str]],
     rng: random.Random,
+    store: GameStore,
 ) -> GameSession | None:
     """Rebuilds a session by replaying its moves. None if none of its lines exist anymore."""
-    variants = [book.variants[key] for key in row["variant_ids"] if key in book.variants]
+    known = dict(book.variants)
+    for key in row["variant_ids"]:
+        if key.startswith(GAME_LINE_PREFIX):
+            line = store.game_line(key)
+            if line is not None:
+                known[key] = line
+    variants = [known[key] for key in row["variant_ids"] if key in known]
     if not variants:
         return None
     session = GameSession(
@@ -166,7 +227,7 @@ def restore_session(
         engine_name=row["engine_name"],
     )
     session.started_at = row["started_at"].replace(tzinfo=UTC)
-    session.variant = book.variants.get(row["current_variant_id"], variants[0])
+    session.variant = known.get(row["current_variant_id"], variants[0])
     for raw in json.loads(row["moves_json"]):
         opening = raw.pop("opening")
         record = MoveRecord(**raw, opening=tuple(opening) if opening else None)

@@ -19,16 +19,18 @@
           <img class="brand-logo" src="logo.svg" alt="Chess Trainer" width="256" height="256" />
         </div>
 
-        <nav id="sidebar-tabs" class="tabs">
-          <button id="tab-new" class="tab active" type="button" data-i18n="tabs.new"></button>
+        <nav id="sidebar-tabs" class="menu">
+          <span class="menu-title" data-i18n="menu.newGame"></span>
+          <button id="tab-new" class="tab active" type="button" data-i18n="menu.fromOpening"></button>
+          <button id="tab-from-saved" class="tab" type="button" data-i18n="menu.fromSaved"></button>
+          <span class="menu-title" data-i18n="menu.games"></span>
           <button id="tab-saved" class="tab" type="button" data-i18n="tabs.saved"></button>
+          <button id="tab-import" class="tab" type="button" data-i18n="import.title"></button>
         </nav>
 
         <div class="side-panel">
-          <section id="saved-card" class="card" hidden>
-            <h2 data-i18n="tabs.saved"></h2>
-            <details id="import-box" class="import-box">
-              <summary data-i18n="import.title"></summary>
+          <section id="import-card" class="card" hidden>
+            <h2 data-i18n="import.title"></h2>
               <textarea id="import-text" class="search import-text" rows="5" data-i18n-placeholder="import.placeholder"></textarea>
               <div class="button-row">
                 <button id="import-paste" class="button button-primary" type="button" data-i18n="import.paste"></button>
@@ -36,7 +38,10 @@
               </div>
               <p id="import-summary" class="hint" hidden></p>
               <ul id="import-errors" class="import-errors"></ul>
-            </details>
+            </section>
+
+          <section id="saved-card" class="card" hidden>
+            <h2 data-i18n="tabs.saved"></h2>
             <input id="saved-search" class="search" type="search" data-i18n-placeholder="saved.search" autocomplete="off" />
             <div class="field-row">
               <select id="saved-color" aria-label="Color">
@@ -71,15 +76,34 @@
             </div>
           </fieldset>
 
-          <fieldset class="field">
+          <fieldset id="openings-field" class="field">
             <legend data-i18n="setup.openings"></legend>
             <input id="opening-search" class="search" type="search" data-i18n-placeholder="setup.search" autocomplete="off" />
             <div class="selection-line">
               <span id="selected-total" class="hint"></span>
-              <button id="clear-selection" class="link-button" type="button" hidden data-i18n="setup.clear"></button>
+              <span class="link-row">
+                <button id="select-all" class="link-button" type="button" data-i18n="setup.selectAll"></button>
+                <button id="clear-selection" class="link-button" type="button" hidden data-i18n="setup.clear"></button>
+              </span>
             </div>
             <div id="openings" class="openings"></div>
             <p id="no-matches" class="hint" hidden data-i18n="setup.noMatches"></p>
+          </fieldset>
+
+          <fieldset id="from-saved" class="field" hidden>
+            <legend data-i18n="fromSaved.title"></legend>
+            <input id="from-saved-search" class="search" type="search" data-i18n-placeholder="saved.search" autocomplete="off" />
+            <div id="from-saved-list" class="saved-list"></div>
+            <p id="from-saved-empty" class="hint" hidden data-i18n="fromSaved.none"></p>
+            <label class="field">
+              <span class="field-label" data-i18n="fromSaved.upto"></span>
+              <select id="from-saved-ply"></select>
+            </label>
+            <div class="segmented">
+              <label><input type="radio" name="from-mode" value="line" checked /><span data-i18n="fromSaved.line"></span></label>
+              <label><input type="radio" name="from-mode" value="position" /><span data-i18n="fromSaved.position"></span></label>
+            </div>
+            <p class="hint" id="from-saved-help"></p>
           </fieldset>
 
           <div class="field-row">
@@ -177,6 +201,16 @@
           <span id="bottom-clock" class="clock" hidden></span>
         </div>
         <div id="chips" class="chips" aria-live="polite"></div>
+          <div id="review-bar" class="review-bar" hidden>
+            <button id="review-first" class="button button-ghost" type="button" aria-label="First move">⏮</button>
+            <button id="review-prev" class="button button-ghost" type="button" aria-label="Previous move">◀</button>
+            <span id="review-count" class="review-count"></span>
+            <button id="review-next" class="button button-ghost" type="button" aria-label="Next move">▶</button>
+            <button id="review-last" class="button button-ghost" type="button" aria-label="Last move">⏭</button>
+            <button id="review-flip" class="button button-ghost" type="button" data-i18n="review.flip"></button>
+            <button id="review-play" class="button button-ghost" type="button" data-i18n="review.play"></button>
+            <button id="review-close" class="button button-ghost" type="button" data-i18n="review.close"></button>
+          </div>
       </section>
 
       </main>

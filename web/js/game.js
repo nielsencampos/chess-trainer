@@ -160,6 +160,7 @@ export class GameController {
       response = await api.newGame({
         color: setup.color,
         variant_ids: setup.variant_ids,
+        from_game: setup.from_game ?? undefined,
         level: setup.level,
         pace: setup.pace,
         time_control: setup.time_control,
@@ -175,6 +176,12 @@ export class GameController {
       return;
     }
     if (generation !== this.generation) return;
+    if (setup.from_game?.mode === "position") {
+      // The board starts with the game's moves, which is the same as continuing a saved game.
+      const { game } = await api.activeGame();
+      if (generation === this.generation) this.resume(game, setup.clock);
+      return;
+    }
     this.gameId = response.state.game_id;
     const startedAt = performance.now();
     if (response.bot_move) {
@@ -198,6 +205,7 @@ export class GameController {
 
     byId("setup-card").hidden = true;
     byId("saved-card").hidden = true;
+    byId("import-card").hidden = true;
     byId("sidebar-tabs").hidden = true;
     byId("end-card").hidden = true;
     byId("game-card").hidden = false;

@@ -37,6 +37,10 @@ export const api = {
   timeControls: () => request("/time-controls"),
   activeGame: () => request("/games/active"),
   savedGames: () => request("/games"),
+  /** @param {string} gameId */
+  reviewGame: (gameId) => request(`/games/${gameId}/review`),
+  /** @param {string} variantId */
+  reviewLine: (variantId) => request(`/lines/${variantId}/review`),
   /** @param {string} pgn */
   importGames: (pgn) => request("/games/import", { pgn }),
   /** @param {string[]} gameIds */

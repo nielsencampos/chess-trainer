@@ -154,6 +154,23 @@ def test_search_typed_before_the_book_loads_still_applies(page: Page):
     expect(page.locator("#openings .opening")).not_to_have_count(122)
 
 
+def test_select_all_respects_the_search(page: Page):
+    page.goto("/")
+    expect(page.locator("#openings .opening").first).to_be_visible()
+    page.locator("#select-all").click()
+    expect(page.locator("#selected-total")).to_have_text("3865 selected")
+    expect(page.locator('[data-group="flank"] > summary .tree-check')).to_be_checked()
+    expect(page.locator("#play")).to_be_enabled()
+    page.locator("#clear-selection").click()
+    expect(page.locator("#selected-total")).to_have_text("0 selected")
+
+    page.locator("#opening-search").fill("B46")
+    family(page, "sicilian-defense").locator(".variant").first.wait_for()
+    results = page.locator(".variant").count()
+    page.locator("#select-all").click()
+    expect(page.locator("#selected-total")).to_have_text(f"{results} selected")
+
+
 def test_family_checkbox_during_a_search_only_selects_the_results(page: Page):
     page.goto("/")
     page.locator("#opening-search").fill("B46")

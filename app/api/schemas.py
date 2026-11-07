@@ -8,9 +8,16 @@ from app.game.service import BotReply
 from app.game.session import Deviation, GameSession
 
 
+class FromGameRequest(BaseModel):
+    game_id: str
+    upto_ply: int | None = Field(default=None, ge=1)
+    mode: Literal["line", "position"] = "line"
+
+
 class NewGameRequest(BaseModel):
     color: Literal["white", "black"]
-    variant_ids: list[str] = Field(min_length=1)
+    variant_ids: list[str] = Field(default_factory=list)
+    from_game: FromGameRequest | None = None
     level: str
     pace: Literal["instant", "human"]
     time_control: str

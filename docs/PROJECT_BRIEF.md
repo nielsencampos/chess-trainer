@@ -200,7 +200,11 @@ Game table:
 
 **PGN:** the Seven Tag Roster plus `ECO`, `Opening`, `TimeControl`, `Termination` and `VariantId`, with `[%clk]` on each move and deviations as comments. It can be copied or downloaded at the end of a game. The "Saved games" tab lists finished games with filters, and exports the selected ones into one PGN file, oldest first.
 
-**Importing games:** the same tab takes pasted text or a `.pgn` file with one or more games. A bad game is listed with its reason and never stops the others. Duplicates (same players, date and moves) are skipped. Side variations are dropped and comments are kept. Only PGN is accepted: never a loose FEN, and a `[FEN]` tag only for Chess960. Imported games keep the PGN's result, since the app does not know which side was the user.
+**Starting from a saved game:** pick a finished game and a move. "Train the line" makes it a one-line book, so the bot plays its moves, yours are checked and Stockfish takes over at the end. "From position" starts the board at that move against Stockfish. Chess960 games cannot be played from yet.
+
+**Review:** saved games and book lines open on a read-only board, moved with buttons, the arrow, Home and End keys, or by clicking a move. A saved game can start a new game from the move on screen. Chess960 games can be reviewed even though they cannot be played yet.
+
+**Importing games:** a menu item of its own takes pasted text or a `.pgn` file with one or more games. A bad game is listed with its reason and never stops the others. Duplicates (same players, date and moves) are skipped. Side variations are dropped and comments are kept. Only PGN is accepted: never a loose FEN, and a `[FEN]` tag only for Chess960. Imported games keep the PGN's result, since the app does not know which side was the user.
 
 Rules:
 - One connection per process, one cursor per request. Uvicorn runs with `--workers 1`.

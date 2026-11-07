@@ -1,6 +1,7 @@
 // The setup card: color, openings and variations, level, clock, pace, options.
 // The whole catalog is selectable, so families render their lines only when opened.
 
+import { api } from "./api.js";
 import { localizedName, t } from "./i18n.js";
 import { getPref, setPref } from "./prefs.js";
 
@@ -21,6 +22,7 @@ const MAX_SEARCH_RESULTS_PER_FAMILY = 200;
  * @typedef {{
  *   color: "white" | "black", variant_ids: string[], level: string, pace: "human" | "instant",
  *   time_control: string, clock: TimeControlInfo | null,
+ *   from_game?: {game_id: string, upto_ply: number, mode: string} | null,
  *   scoresheet: boolean, warning: boolean, autoplay: boolean, premoves: boolean,
  * }} GameSetup
  */
@@ -47,8 +49,10 @@ export class SetupCard {
    * @param {TimeControls} timeControls
    * @param {(color: "white" | "black") => void} onColorChange
    * @param {(setup: GameSetup) => void} onPlay
+   * @param {(variantId: string) => void} onViewLine
    */
-  constructor(repertoires, levels, defaultLevel, timeControls, onColorChange, onPlay) {
+  constructor(repertoires, levels, defaultLevel, timeControls, onColorChange, onPlay, onViewLine) {
+    this.onViewLine = onViewLine;
     this.repertoires = repertoires; // Already in the book's order.
     /** @type {{all: HTMLInputElement, count: HTMLElement, variants: VariantInfo[]}[]} */
     this.nodes = [];
@@ -100,6 +104,25 @@ export class SetupCard {
         this.renderOpenings();
       }, SEARCH_DEBOUNCE_MS);
     });
+    /** @type {"opening" | "saved"} */
+    this.mode = "opening";
+    /** @type {any[]} */
+    this.savedGames = [];
+    /** @type {string | null} */
+    this.savedGameId = null;
+    byId("select-all").addEventListener("click", () => {
+      for (const repertoire of this.repertoires) {
+        for (const variant of this.shownVariants(repertoire)) {
+          this.selected.add(variant.variant_id);
+        }
+      }
+      this.saveSelection();
+    });
+    byId("from-saved-search").addEventListener("input", () => this.renderSavedGames());
+    for (const radio of radios('input[name="from-mode"]')) {
+      radio.addEventListener("change", () => this.renderFromSavedHelp());
+    }
+    this.renderFromSavedHelp();
     byId("clear-selection").addEventListener("click", () => {
       this.selected.clear();
       this.saveSelection();
@@ -361,7 +384,15 @@ export class SetupCard {
     const eco = document.createElement("span");
     eco.className = "variant-eco";
     eco.textContent = variant.eco ?? "";
-    label.append(box, text, eco);
+    const view = document.createElement("button");
+    view.type = "button";
+    view.className = "view-button";
+    view.textContent = t("review.view");
+    view.addEventListener("click", (event) => {
+      event.preventDefault(); // It sits inside the row's label.
+      this.onViewLine(variant.variant_id);
+    });
+    label.append(box, text, eco, view);
     return label;
   }
 
@@ -372,7 +403,115 @@ export class SetupCard {
     this.updateSelectionState();
   }
 
+  /** @param {"opening" | "saved"} mode */
+  async setMode(mode) {
+    this.mode = mode;
+    byId("openings-field").hidden = mode !== "opening";
+    byId("from-saved").hidden = mode !== "saved";
+    this.updateSelectionState();
+    if (mode !== "saved") return;
+    try {
+      this.savedGames = (await api.savedGames()).games;
+    } catch (error) {
+      console.error(error);
+      this.savedGames = [];
+    }
+    if (!this.savedGames.some((game) => game.game_id === this.savedGameId)) this.savedGameId = null;
+    this.renderSavedGames();
+  }
+
+  /**
+   * @param {string} gameId
+   * @param {number} ply
+   */
+  async chooseSaved(gameId, ply) {
+    await this.setMode("saved");
+    this.savedGameId = gameId;
+    this.renderSavedGames();
+    if (ply > 0) byId("from-saved-ply").value = String(ply);
+    this.setRadio("from-mode", "position");
+    this.renderFromSavedHelp();
+  }
+
+  renderFromSavedHelp() {
+    const mode = this.radioValue("from-mode");
+    byId("from-saved-help").textContent = t(
+      mode === "position" ? "fromSaved.positionHelp" : "fromSaved.lineHelp",
+    );
+  }
+
+  renderSavedGames() {
+    const query = byId("from-saved-search").value.trim().toLowerCase();
+    const games = this.savedGames.filter(
+      (game) =>
+        !query ||
+        `${game.eco ?? ""} ${game.opening ?? ""} ${game.white ?? ""} ${game.black ?? ""}`
+          .toLowerCase()
+          .includes(query),
+    );
+    byId("from-saved-list").replaceChildren(...games.map((game) => this.savedGameRow(game)));
+    byId("from-saved-empty").hidden = this.savedGames.length > 0;
+    this.renderPlyOptions();
+    this.updateSelectionState();
+  }
+
+  /** @param {any} game */
+  savedGameRow(game) {
+    const label = document.createElement("label");
+    label.className = `saved-game${game.chess960 ? " is-disabled" : ""}`;
+    const box = document.createElement("input");
+    box.type = "radio";
+    box.name = "from-saved-game";
+    box.value = game.game_id;
+    box.disabled = game.chess960;
+    box.checked = this.savedGameId === game.game_id;
+    box.addEventListener("change", () => {
+      this.savedGameId = game.game_id;
+      this.renderPlyOptions();
+      this.updateSelectionState();
+    });
+    const text = document.createElement("span");
+    text.className = "variant-text";
+    const name = document.createElement("span");
+    const eco = game.eco ? `${game.eco} · ` : "";
+    name.textContent = `${eco}${game.opening ?? t("saved.noOpening")}`;
+    const details = document.createElement("span");
+    details.className = "variant-moves";
+    const who = game.source === "imported" ? `${game.white} - ${game.black}` : t(`setup.${game.user_color}`);
+    details.textContent = [
+      new Date(game.started_at).toLocaleDateString(),
+      who,
+      t("saved.plies", { count: game.plies }),
+      ...(game.chess960 ? [t("fromSaved.chess960")] : []),
+    ].join(" · ");
+    text.append(name, details);
+    label.append(box, text);
+    return label;
+  }
+
+  renderPlyOptions() {
+    const select = byId("from-saved-ply");
+    select.replaceChildren();
+    const game = this.savedGames.find((item) => item.game_id === this.savedGameId);
+    select.disabled = !game;
+    if (!game) return;
+    select.add(new Option(t("fromSaved.end", { plies: game.plies }), String(game.plies)));
+    game.sans.forEach((/** @type {string} */ san, /** @type {number} */ index) => {
+      const number = Math.floor(index / 2) + 1;
+      const dots = index % 2 === 0 ? "." : "...";
+      select.add(new Option(`${number}${dots} ${san}`, String(index + 1)));
+    });
+  }
+
   updateSelectionState() {
+    if (this.mode === "saved") {
+      const ready = this.savedGameId !== null;
+      byId("play").disabled = !ready;
+      byId("setup-hint").hidden = ready;
+      byId("setup-hint").textContent = t("setup.selectGame");
+      return;
+    }
+    byId("setup-hint").textContent = t("setup.selectOne");
     const total = this.selected.size;
     byId("selected-total").textContent = t("setup.selectedTotal", { count: total });
     byId("clear-selection").hidden = total === 0;
@@ -384,7 +523,15 @@ export class SetupCard {
   read() {
     return {
       color: this.color,
-      variant_ids: [...this.selected],
+      variant_ids: this.mode === "opening" ? [...this.selected] : [],
+      from_game:
+        this.mode === "saved" && this.savedGameId
+          ? {
+              game_id: this.savedGameId,
+              upto_ply: Number(byId("from-saved-ply").value),
+              mode: this.radioValue("from-mode") ?? "line",
+            }
+          : null,
       level: byId("level").value,
       pace: /** @type {"human" | "instant"} */ (this.radioValue("pace")),
       time_control: byId("time-control").value,

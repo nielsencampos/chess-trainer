@@ -394,15 +394,18 @@ def test_import_by_text_and_by_file(page: Page, tmp_path):
     name = f"File{uuid.uuid4().hex}"
     unique = f'[White "{name}"]\n[Black "Y"]\n\n1. d4 d5 *\n'
     page.goto("/")
-    page.locator("#tab-saved").click()
-    page.locator("#import-box summary").click()
+    page.locator("#tab-import").click()
+    expect(page.locator("#saved-card")).to_be_hidden()
+    expect(page.locator("#setup-card")).to_be_hidden()
 
     page.locator("#import-text").fill(good + "\n" + bad)
     page.locator("#import-paste").click()
     expect(page.locator("#import-summary")).to_contain_text("refused")
     expect(page.locator("#import-summary")).to_contain_text("1 refused")
     expect(page.locator("#import-errors li")).to_contain_text("Game 2 (Bad - X): invalid move")
+    page.locator("#tab-saved").click()
     expect(page.locator(".saved-game", has_text="Ana - Bia").first).to_contain_text("1-0")
+    page.locator("#tab-import").click()
 
     page.locator("#import-text").fill(good)
     page.locator("#import-paste").click()
@@ -412,4 +415,213 @@ def test_import_by_text_and_by_file(page: Page, tmp_path):
     path.write_text(unique, encoding="utf-8")
     page.locator("#import-file").set_input_files(str(path))
     expect(page.locator("#import-summary")).to_have_text("1 imported, 0 already saved, 0 refused.")
+    page.locator("#tab-saved").click()
     expect(page.locator(".saved-game", has_text=name)).to_have_count(1)
+
+
+LINE_PGN = """[White "Line{tag}"]
+[Black "Test"]
+[Date "2026.05.06"]
+[Result "1-0"]
+
+1. e4 c6 2. d4 d5 3. e5 1-0
+"""
+
+
+def import_line(page: Page) -> str:
+    tag = uuid.uuid4().hex
+    page.locator("#tab-import").click()
+    page.locator("#import-text").fill(LINE_PGN.format(tag=tag))
+    page.locator("#import-paste").click()
+    expect(page.locator("#import-summary")).to_contain_text("1 imported")
+    return f"Line{tag}"
+
+
+def choose_saved(page: Page, name: str, ply_label: str | None = None, position=False) -> None:
+    page.locator("#tab-from-saved").click()
+    expect(page.locator("#setup-card")).to_be_visible()
+    expect(page.locator("#openings-field")).to_be_hidden()
+    expect(page.locator("#play")).to_be_disabled()
+    page.locator("#from-saved-search").fill(name)
+    page.locator("#from-saved-list .saved-game input").first.check()
+    if ply_label:
+        page.locator("#from-saved-ply").select_option(label=ply_label)
+    if position:
+        page.locator('input[name="from-mode"][value="position"]').check()
+    page.locator('input[name="pace"][value="instant"]').check()
+    page.locator("#time-control").select_option("none")
+    page.locator("#level").select_option("warmup")
+
+
+def test_train_the_line_of_a_saved_game(page: Page):
+    page.goto("/")
+    name = import_line(page)
+    choose_saved(page, name)
+    page.locator('input[name="color"][value="black"]').check()
+    play(page)
+    wait_for_your_move(page)
+    assert moves_text(page) == ["e4"]
+    click_move(page, "c7", "c6")
+    wait_for_ply(page, 3)
+    wait_for_your_move(page)
+    assert moves_text(page) == ["e4", "c6", "d4"]
+    click_move(page, "e7", "e6")  # the game had 2...d5
+    wait_for_ply(page, 5)
+    expect(page.locator("#movelist .deviation")).to_have_text("e6")
+
+
+def test_play_from_the_position_of_a_saved_game(page: Page):
+    page.goto("/")
+    name = import_line(page)
+    choose_saved(page, name, "2... d5", position=True)
+    play(page)
+    wait_for_your_move(page)
+    assert moves_text(page) == ["e4", "c6", "d4", "d5"]
+    expect(square(page, "d5")).to_have_attribute("data-piece", "bp")
+    click_move(page, "e4", "e5")
+    wait_for_ply(page, 6)
+    page.reload()
+    wait_for_your_move(page)
+    assert moves_text(page)[:5] == ["e4", "c6", "d4", "d5", "e5"]
+
+
+def test_menu_shows_one_screen_at_a_time(page: Page):
+    page.goto("/")
+    screens = {
+        "#tab-new": "#setup-card",
+        "#tab-saved": "#saved-card",
+        "#tab-import": "#import-card",
+    }
+    for tab, card in screens.items():
+        page.locator(tab).click()
+        expect(page.locator(tab)).to_have_class(re.compile(r"\bactive\b"))
+        for other in screens.values():
+            if other == card:
+                expect(page.locator(other)).to_be_visible()
+            else:
+                expect(page.locator(other)).to_be_hidden()
+    page.locator("#tab-new").click()
+    expect(page.locator("#openings-field")).to_be_visible()
+    expect(page.locator("#from-saved")).to_be_hidden()
+
+
+def open_review(page: Page) -> str:
+    name = import_line(page)
+    page.locator("#tab-saved").click()
+    page.locator("#saved-search").fill("")
+    row = page.locator(".saved-game", has_text=name)
+    row.locator(".view-button").click()
+    page.locator("#review-bar").wait_for(state="visible")
+    return name
+
+
+def test_review_a_saved_game_with_buttons_keys_and_clicks(page: Page):
+    page.goto("/")
+    name = open_review(page)
+    count = page.locator("#review-count")
+    expect(count).to_have_text("5 / 5")
+    expect(square(page, "e5")).to_have_attribute("data-piece", "wp")
+    expect(page.locator("#bottom-name")).to_have_text(name)
+    expect(page.locator("#review-next")).to_be_disabled()
+
+    page.locator("#review-prev").click()
+    expect(count).to_have_text("4 / 5")
+    expect(square(page, "e4")).to_have_attribute("data-piece", "wp")
+    page.keyboard.press("ArrowLeft")
+    expect(count).to_have_text("3 / 5")
+    expect(square(page, "d5")).to_have_attribute("data-piece", "")
+    page.keyboard.press("Home")
+    expect(count).to_have_text("0 / 5")
+    expect(square(page, "e2")).to_have_attribute("data-piece", "wp")
+    expect(page.locator("#review-first")).to_be_disabled()
+    page.keyboard.press("ArrowRight")
+    expect(count).to_have_text("1 / 5")
+    page.keyboard.press("End")
+    expect(count).to_have_text("5 / 5")
+    page.locator("#review-first").click()
+    expect(count).to_have_text("0 / 5")
+    page.locator("#review-last").click()
+    expect(count).to_have_text("5 / 5")
+
+    page.locator('#movelist .move[data-ply="2"]').click()
+    expect(count).to_have_text("2 / 5")
+    expect(page.locator("#movelist .current")).to_have_text("c6")
+    assert page.evaluate("document.querySelectorAll('.square.selected').length") == 0
+
+    page.locator("#review-flip").click()
+    expect(page.locator(".square").first).to_have_attribute("data-square", "h1")
+    expect(page.locator("#top-name")).to_have_text(name)
+
+    page.keyboard.press("Escape")
+    expect(page.locator("#review-bar")).to_be_hidden()
+    assert moves_text(page) == []
+    expect(page.locator(".square").first).to_have_attribute("data-square", "a8")
+
+
+def test_pieces_cannot_be_moved_in_a_review(page: Page):
+    page.goto("/")
+    open_review(page)
+    click_move(page, "g1", "f3")
+    expect(square(page, "g1")).to_have_attribute("data-piece", "wn")
+    expect(page.locator("#review-count")).to_have_text("5 / 5")
+
+
+def test_play_from_here_goes_to_a_new_game_at_that_move(page: Page):
+    page.goto("/")
+    open_review(page)
+    page.locator('#movelist .move[data-ply="3"]').click()
+    expect(page.locator("#review-count")).to_have_text("3 / 5")
+    page.locator("#review-play").click()
+    expect(page.locator("#review-bar")).to_be_hidden()
+    expect(page.locator("#from-saved")).to_be_visible()
+    expect(page.locator("#from-saved-ply")).to_have_value("3")
+    expect(page.locator('input[name="from-mode"][value="position"]')).to_be_checked()
+    page.locator('input[name="pace"][value="instant"]').check()
+    page.locator("#time-control").select_option("none")
+    page.locator("#level").select_option("warmup")
+    play(page)
+    wait_for_ply(page, 4)
+    assert moves_text(page)[:3] == ["e4", "c6", "d4"]
+
+
+def test_review_a_book_line_and_start_a_game_after_it(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none")
+    page.goto("/")
+    page.locator("#opening-search").fill(ALAPIN)
+    line = page.locator(".variant", has_text="Alapin Variation").first
+    line.locator(".view-button").click()
+    expect(page.locator("#review-count")).to_have_text("3 / 3")
+    expect(page.locator("#review-play")).to_be_hidden()
+    expect(line.locator("input")).to_be_checked()  # the button does not toggle the checkbox
+    play(page)
+    expect(page.locator("#review-bar")).to_be_hidden()
+    wait_for_your_move(page)
+    assert moves_text(page) == []
+
+
+def test_chess960_game_can_be_reviewed_but_not_played(page: Page):
+    tag = uuid.uuid4().hex
+    fischer = f"""[White "Fischer{tag}"]
+[Black "Random"]
+[Variant "Chess960"]
+[SetUp "1"]
+[FEN "nrkbbrqn/pppppppp/8/8/8/8/PPPPPPPP/NRKBBRQN w KQkq - 0 1"]
+
+1. e4 e5 *
+"""
+    page.goto("/")
+    page.locator("#tab-import").click()
+    page.locator("#import-text").fill(fischer)
+    page.locator("#import-paste").click()
+    expect(page.locator("#import-summary")).to_contain_text("1 imported")
+    page.locator("#tab-saved").click()
+    page.locator(".saved-game", has_text=f"Fischer{tag}").locator(".view-button").click()
+    expect(page.locator("#review-count")).to_have_text("2 / 2")
+    expect(page.locator("#review-play")).to_be_hidden()
+    page.keyboard.press("Home")
+    expect(square(page, "a1")).to_have_attribute("data-piece", "wn")
+    expect(square(page, "g1")).to_have_attribute("data-piece", "wq")
+    page.keyboard.press("Escape")
+    page.locator("#tab-from-saved").click()
+    page.locator("#from-saved-search").fill(f"Fischer{tag}")
+    expect(page.locator("#from-saved-list input").first).to_be_disabled()
