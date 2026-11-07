@@ -215,6 +215,12 @@ class GameSession:
             self.in_theory = False
         return self._push(move, "bot", source, bot_clock_ms, think_ms)
 
+    def play_given_move(self, uci: str) -> None:
+        """A move that was already played in the game this one continues from."""
+        move = chess.Move.from_uci(uci)
+        by: Side = "user" if self.is_user_turn else "bot"
+        self._push(move, by, "book", None, None)
+
     def resign(self) -> None:
         if self.is_over:
             raise GameFinishedError(self.game_id)

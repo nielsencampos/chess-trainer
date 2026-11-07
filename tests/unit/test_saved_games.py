@@ -227,6 +227,151 @@ def test_imported_games_never_become_active(client):
     assert client.get("/api/games/active").json() == {"game": None}
 
 
+def new_from(client, game_id, color="white", **options):
+    return client.post(
+        "/api/games",
+        json={
+            "color": color,
+            "from_game": {"game_id": game_id, **options},
+            "level": "club",
+            "pace": "instant",
+            "time_control": "none",
+        },
+    )
+
+
+def imported_id(client, text=GOOD):
+    do_import(client, text)
+    return client.get("/api/games").json()["games"][0]["game_id"]
+
+
+def test_saved_list_gives_the_moves_for_choosing_a_point(client):
+    imported_id(client)
+    game = client.get("/api/games").json()["games"][0]
+    assert game["sans"] == ["e4", "c6", "d4", "d5", "e5"]
+    assert game["chess960"] is False
+
+
+def test_train_a_saved_games_line_as_black(client, engine):
+    game_id = imported_id(client)
+    body = new_from(client, game_id, color="black").json()
+    assert body["bot_move"]["san"] == "e4"
+    assert body["bot_move"]["source"] == "book"
+    active = body["state"]["game_id"]
+    body = client.post(f"/api/games/{active}/moves", json={"uci": "c7c6"}).json()
+    assert body["deviation"] is None
+    assert body["bot_move"]["san"] == "d4"
+    body = client.post(f"/api/games/{active}/moves", json={"uci": "e7e6"}).json()
+    assert body["deviation"]["expected_san"] == ["d5"]
+    assert body["bot_move"]["source"] == "engine"
+
+
+def test_line_stops_at_the_chosen_move(client, engine):
+    game_id = imported_id(client)
+    body = new_from(client, game_id, upto_ply=2).json()
+    active = body["state"]["game_id"]
+    body = client.post(f"/api/games/{active}/moves", json={"uci": "e2e4"}).json()
+    assert body["bot_move"]["san"] == "c6"
+    body = client.post(f"/api/games/{active}/moves", json={"uci": "d2d4"}).json()
+    assert body["deviation"] is None
+    assert body["bot_move"]["source"] == "engine"
+
+
+def test_from_position_starts_at_the_chosen_move(client, engine):
+    game_id = imported_id(client)
+    response = new_from(client, game_id, upto_ply=3, mode="position")
+    assert response.status_code == 201
+    game = client.get("/api/games/active").json()["game"]
+    assert [move["san"] for move in game["moves"]][:3] == ["e4", "c6", "d4"]
+    assert len(game["moves"]) == 4  # as White, the bot had to answer 2.d4
+    assert game["moves"][3]["by"] == "bot"
+    assert engine.calls == 1
+
+
+def test_from_position_with_the_user_to_move_waits(client, engine):
+    game_id = imported_id(client)
+    new_from(client, game_id, upto_ply=4, mode="position")
+    game = client.get("/api/games/active").json()["game"]
+    assert len(game["moves"]) == 4
+    assert engine.calls == 0
+
+
+def test_game_from_a_saved_game_survives_a_restart(database_path):
+    with app_on(database_path) as client:
+        game_id = imported_id(client)
+        active = new_from(client, game_id, upto_ply=4).json()["state"]["game_id"]
+        client.post(f"/api/games/{active}/moves", json={"uci": "e2e4"})
+    with app_on(database_path) as client:
+        game = client.get("/api/games/active").json()["game"]
+        assert game["state"]["game_id"] == active
+        assert game["setup"]["variant_ids"] == [f"game:{game_id}:4"]
+        body = client.post(f"/api/games/{active}/moves", json={"uci": "d2d4"}).json()
+        assert body["bot_move"]["san"] == "d5"
+
+
+@pytest.mark.parametrize(
+    "options",
+    [{"upto_ply": 99}, {"game_id": "nope"}],
+)
+def test_bad_start_points_are_refused(client, options):
+    game_id = imported_id(client)
+    payload = {"game_id": game_id, **options}
+    assert new_from(client, **{"game_id": payload.pop("game_id"), **payload}).status_code == 422
+
+
+def test_chess960_games_cannot_be_played_from_yet(client):
+    do_import(client, FISCHER)
+    game = client.get("/api/games").json()["games"][0]
+    assert game["chess960"] is True
+    assert new_from(client, game["game_id"]).status_code == 422
+
+
+def test_active_game_cannot_be_played_from(client):
+    active = start(client)["state"]["game_id"]
+    assert new_from(client, active).status_code == 422
+
+
+def test_starting_with_nothing_is_refused(client):
+    body = {"color": "white", "level": "club", "pace": "instant", "time_control": "none"}
+    assert client.post("/api/games", json=body).status_code == 422
+
+
+def test_review_of_a_saved_game_has_every_position(client):
+    game_id = imported_id(client)
+    body = client.get(f"/api/games/{game_id}/review").json()
+    assert body["start_fen"].startswith("rnbqkbnr/pppppppp")
+    assert [move["san"] for move in body["moves"]] == ["e4", "c6", "d4", "d5", "e5"]
+    assert body["moves"][0]["uci"] == "e2e4"
+    assert body["moves"][0]["fen"].startswith("rnbqkbnr/pppppppp/8/8/4P3")
+    assert (body["white"], body["black"], body["result"]) == ("Ana", "Bia", "1-0")
+    assert body["chess960"] is False
+
+
+def test_review_of_a_chess960_game_starts_from_its_position(client):
+    do_import(client, FISCHER)
+    game_id = client.get("/api/games").json()["games"][0]["game_id"]
+    body = client.get(f"/api/games/{game_id}/review").json()
+    assert body["start_fen"].startswith("nrkbbrqn")
+    assert body["chess960"] is True
+    assert len(body["moves"]) == 2
+
+
+def test_review_of_a_book_line(client):
+    repertoires = client.get("/api/repertoires").json()["repertoires"]
+    line = next(v for r in repertoires for v in r["variants"] if v["pgn"] == "1. e4 c5 2. c3")
+    body = client.get(f"/api/lines/{line['variant_id']}/review").json()
+    assert [move["san"] for move in body["moves"]] == ["e4", "c5", "c3"]
+    assert body["white"] is None
+    assert body["opening"] == "Sicilian Defense: Alapin Variation"
+
+
+def test_review_of_unknown_or_active_games_is_refused(client):
+    active = start(client)["state"]["game_id"]
+    assert client.get(f"/api/games/{active}/review").status_code == 404
+    assert client.get("/api/games/nope/review").status_code == 404
+    assert client.get("/api/lines/nope/review").status_code == 404
+
+
 def test_no_active_game_at_first(client):
     assert client.get("/api/games/active").json() == {"game": None}
 

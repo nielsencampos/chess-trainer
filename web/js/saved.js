@@ -14,16 +14,23 @@ const byId = (id) => /** @type {any} */ (document.getElementById(id));
  */
 
 export class SavedGames {
-  /** @param {(key: string) => string} timeLabel */
-  constructor(timeLabel) {
+  /**
+   * @param {(key: string) => string} timeLabel
+   * @param {import("./setup.js").SetupCard} setup
+   * @param {(gameId: string) => void} onView
+   */
+  constructor(timeLabel, setup, onView) {
     this.timeLabel = timeLabel;
+    this.setup = setup;
+    this.onView = onView;
     /** @type {SavedGame[]} */
     this.games = [];
     /** @type {Set<string>} */
     this.selected = new Set();
 
-    byId("tab-new").addEventListener("click", () => this.showTab("new"));
-    byId("tab-saved").addEventListener("click", () => this.showTab("saved"));
+    for (const tab of ["new", "from-saved", "saved", "import"]) {
+      byId(`tab-${tab}`).addEventListener("click", () => this.showTab(tab));
+    }
     for (const id of ["saved-search", "saved-color", "saved-result"]) {
       byId(id).addEventListener("input", () => this.render());
     }
@@ -45,12 +52,16 @@ export class SavedGames {
     });
   }
 
-  /** @param {"new" | "saved"} tab */
+  /** @param {string} tab */
   showTab(tab) {
-    byId("setup-card").hidden = tab !== "new";
+    byId("setup-card").hidden = tab !== "new" && tab !== "from-saved";
     byId("saved-card").hidden = tab !== "saved";
-    byId("tab-new").classList.toggle("active", tab === "new");
-    byId("tab-saved").classList.toggle("active", tab === "saved");
+    byId("import-card").hidden = tab !== "import";
+    for (const name of ["new", "from-saved", "saved", "import"]) {
+      byId(`tab-${name}`).classList.toggle("active", tab === name);
+    }
+    if (tab === "new") this.setup.setMode("opening");
+    if (tab === "from-saved") void this.setup.setMode("saved");
     if (tab === "saved") void this.load();
   }
 
@@ -176,7 +187,15 @@ export class SavedGames {
     const result = document.createElement("span");
     result.className = `saved-result saved-result-${imported ? "imported" : game.result}`;
     result.textContent = imported ? game.result : t(`saved.result.${game.result}`);
-    label.append(box, text, result);
+    const view = document.createElement("button");
+    view.type = "button";
+    view.className = "view-button";
+    view.textContent = t("review.view");
+    view.addEventListener("click", (event) => {
+      event.preventDefault(); // It sits inside the row's label.
+      this.onView(game.game_id);
+    });
+    label.append(box, text, result, view);
     return label;
   }
 

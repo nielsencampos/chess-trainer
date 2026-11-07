@@ -374,19 +374,34 @@
   font-weight: 700;
 }
 
-.tabs {
-  display: grid;
+.menu {
+  display: flex;
   flex: none;
-  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
   gap: 2px;
-  padding: 2px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 8px;
+}
+
+.menu-title {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.link-row {
+  display: flex;
+  gap: 12px;
+}
+
+.saved-game.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .tab {
-  padding: 6px 8px;
+  padding: 6px 10px;
+  text-align: left;
   background: transparent;
   border: 0;
   border-radius: 6px;
@@ -440,23 +455,7 @@
   color: var(--muted);
 }
 
-.import-box {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 8px 10px;
-  background: var(--surface-2);
-}
-
-.import-box summary {
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.import-box[open] summary {
-  margin-bottom: 8px;
-}
-
-.import-box .button-row {
+#import-card .button-row {
   margin-top: 8px;
 }
 
@@ -470,7 +469,7 @@
   margin: 0;
 }
 
-.import-box .hint {
+#import-card .hint {
   margin-top: 8px;
 }
 
@@ -490,4 +489,41 @@
 .saved-result-imported {
   color: var(--ink);
   font-family: var(--font-mono);
+}
+
+.review-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.review-count {
+  min-width: 64px;
+  text-align: center;
+  font: 700 0.85rem var(--font-mono);
+}
+
+.movelist .move[data-ply] {
+  cursor: pointer;
+}
+
+.movelist .move.current {
+  background: var(--accent-soft);
+  font-weight: 700;
+}
+
+.view-button {
+  flex: none;
+  padding: 0 6px;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.view-button:hover {
+  border-color: var(--accent);
 }
