@@ -1,0 +1,24 @@
+# Bot strength levels. Provisional until Phase 3 calibrates them.
+#
+# Stockfish 19 notes: UCI_Elo has a floor of 1320, and the Stockfish FAQ estimates
+# Skill Level 0 at about 1347, so anything weaker has to come from limiting the search.
+#
+# Each level sets `options` (UCI options) and a search `limit`: depth, nodes and/or
+# movetime in seconds. Skill Level and UCI_LimitStrength are always set explicitly,
+# because options carry over between searches of the long-lived process.
+
+[levels.warmup]
+options = { "Skill Level" = 0, "UCI_LimitStrength" = false }
+limit = { depth = 2, movetime = 0.1 }
+
+[levels.club]
+options = { "Skill Level" = 20, "UCI_LimitStrength" = true, "UCI_Elo" = 1320 }
+limit = { movetime = 0.3 }
+
+[levels.strong]
+options = { "Skill Level" = 20, "UCI_LimitStrength" = true, "UCI_Elo" = 1900 }
+limit = { movetime = 0.5 }
+
+[levels.max]
+options = { "Skill Level" = 20, "UCI_LimitStrength" = false }
+limit = { movetime = 1.0 }
