@@ -1,5 +1,5 @@
 """Board behavior from brief §4. Positions that a real game cannot reach reliably use scripted
-bot moves: the API is replaced in the browser, the frontend and chess.js stay real."""
+bot moves: the API is replaced in the browser, the frontend and its rules stay real."""
 
 import json
 import re
@@ -83,7 +83,6 @@ def fake_api(
                 "deviations": [],
                 "moves": [],
                 "pgn": "1. f3 *",
-                "lichess_url": "https://lichess.org/analysis",
             },
         )
 

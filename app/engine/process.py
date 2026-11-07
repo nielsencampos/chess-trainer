@@ -31,6 +31,10 @@ class MoveEngine(Protocol):
         self, board: chess.Board, level: Level, max_time_s: float | None = None
     ) -> chess.Move: ...
 
+    async def evaluate(
+        self, board: chess.Board, time_s: float
+    ) -> tuple[chess.engine.PovScore, chess.Move | None]: ...
+
 
 def limit_for(level: Level, max_time_s: float | None) -> chess.engine.Limit:
     """The level's limit, shortened when the bot's clock has less time than the level would use."""
@@ -83,6 +87,34 @@ class StockfishEngine:
                 return await self._search(board, level, limit)
             except (chess.engine.EngineError, OSError) as error:
                 raise EngineUnavailableError(str(error)) from error
+
+    async def evaluate(
+        self, board: chess.Board, time_s: float
+    ) -> tuple[chess.engine.PovScore, chess.Move | None]:
+        """Full strength: the levels' options apply only while the bot plays."""
+        async with self._lock:
+            try:
+                return await self._analyse(board, time_s)
+            except (chess.engine.EngineError, EngineUnavailableError) as error:
+                logger.warning("engine failed (%s), restarting", error)
+            try:
+                await self.stop()
+                await self.start()
+                return await self._analyse(board, time_s)
+            except (chess.engine.EngineError, OSError) as error:
+                raise EngineUnavailableError(str(error)) from error
+
+    async def _analyse(
+        self, board: chess.Board, time_s: float
+    ) -> tuple[chess.engine.PovScore, chess.Move | None]:
+        if self._engine is None:
+            raise EngineUnavailableError("engine is not running")
+        info = await self._engine.analyse(board, chess.engine.Limit(time=time_s))
+        score = info.get("score")
+        if score is None:
+            raise EngineUnavailableError("engine returned no score")
+        pv = info.get("pv") or [None]
+        return score, pv[0]
 
     async def _search(
         self, board: chess.Board, level: Level, limit: chess.engine.Limit

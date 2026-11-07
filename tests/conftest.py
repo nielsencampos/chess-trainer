@@ -4,6 +4,7 @@ import shutil
 from pathlib import Path
 
 import chess
+import chess.engine
 import pytest
 from fastapi.testclient import TestClient
 
@@ -12,6 +13,9 @@ from app.config import Settings
 from app.db.connection import apply_migrations, open_database
 from app.engine.levels import Level
 from app.main import create_app
+
+# Tests never read the generated evaluations, so the fake engine answers every position.
+NO_BOOK_EVALS = Path("/nonexistent/book.json")
 
 
 class FakeEngine:
@@ -39,6 +43,18 @@ class FakeEngine:
         if self.script:
             return board.parse_san(self.script.pop(0))
         return next(iter(board.legal_moves))
+
+    async def evaluate(self, board: chess.Board, time_s: float):
+        """Material from White's side, so tests can tell positions apart."""
+        self.evaluations = getattr(self, "evaluations", 0) + 1
+        values = {chess.PAWN: 100, chess.KNIGHT: 300, chess.BISHOP: 300, chess.ROOK: 500}
+        values[chess.QUEEN] = 900
+        material = sum(
+            value * (len(board.pieces(piece, chess.WHITE)) - len(board.pieces(piece, chess.BLACK)))
+            for piece, value in values.items()
+        )
+        best = next(iter(board.legal_moves), None)
+        return chess.engine.PovScore(chess.engine.Cp(material), chess.WHITE), best
 
 
 @pytest.fixture
@@ -68,7 +84,9 @@ def database_path(loaded_database, tmp_path) -> Path:
 
 @pytest.fixture
 def client(engine, database_path):
-    settings = dataclasses.replace(Settings(), database_path=database_path)
+    settings = dataclasses.replace(
+        Settings(), database_path=database_path, book_evals_file=NO_BOOK_EVALS
+    )
     app = create_app(settings, engine=engine, rng=random.Random(7))
     with TestClient(app) as test_client:
         yield test_client

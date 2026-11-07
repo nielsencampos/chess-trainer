@@ -66,6 +66,12 @@ def square(page: Page, name: str):
     return page.locator(f'.square[data-square="{name}"]')
 
 
+def choose_new_game_mode(page: Page, mode: str) -> None:
+    """How New Game starts: "opening", "saved" or "chess960"."""
+    page.locator("#tab-new").click()
+    page.locator(f'label:has(input[name="new-mode"][value="{mode}"])').click()
+
+
 def click_move(page: Page, origin: str, target: str) -> None:
     square(page, origin).click()
     square(page, target).click()

@@ -44,6 +44,7 @@ COPY --from=deps /app/.venv /app/.venv
 COPY app /app/app
 COPY catalog /app/catalog
 COPY openings /app/openings
+COPY evals /app/evals
 COPY web /app/web
 COPY LICENSE THIRD_PARTY_LICENSES.md /app/
 

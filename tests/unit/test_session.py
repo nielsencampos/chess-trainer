@@ -11,6 +11,7 @@ from app.game.session import (
     GameFinishedError,
     GameSession,
     IllegalMoveError,
+    NothingToTakeBackError,
     NotYourTurnError,
     Selection,
 )
@@ -279,7 +280,7 @@ def test_flag_drops_moves_the_browser_never_showed():
     assert game.outcome.result == "win"
 
 
-def test_pgn_and_lichess_url():
+def test_pgn():
     game = session(variant("a", VIENNA))
     game.play_user_move("e2e4")
     game.play_bot_move(chess.Move.from_uci("e7e5"), "book")
@@ -288,11 +289,64 @@ def test_pgn_and_lichess_url():
     assert '[White "You"]' in game.pgn()
     assert '[Result "0-1"]' in game.pgn()
     assert "1. e4 e5 2. Nc3" in game.pgn()
-    assert game.lichess_url() == "https://lichess.org/analysis/pgn/e4_e5_Nc3?color=white"
 
 
-def test_lichess_url_strips_check_signs_and_encodes_promotion():
+def test_take_back_undoes_the_users_move_and_the_unseen_reply():
     game = session(variant("a", VIENNA))
-    game.board = chess.Board("6k1/P7/8/8/8/8/8/K7 w - - 0 1")
-    game.play_user_move("a7a8q")
-    assert game.lichess_url().endswith("/a8%3DQ?color=white")
+    game.play_user_move("e2e4")
+    game.play_bot_move(chess.Move.from_uci("e7e5"), "book")
+    game.play_user_move("d2d4")  # a deviation from 2. Nc3
+    game.play_bot_move(chess.Move.from_uci("e5d4"), "engine")
+    assert game.deviations and not game.in_theory
+    game.take_back(3)
+    assert [record.san for record in game.moves] == ["e4", "e5"]
+    assert game.board.fen().startswith("rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w")
+    assert game.deviations == []
+    assert game.in_theory
+    assert game.theory_until_ply == 2
+    assert game.left_theory_at_move is None
+
+
+def test_take_back_also_undoes_a_mate_the_user_has_not_seen():
+    game = session(variant("a", VIENNA))
+    game.board = chess.Board()
+    for uci, by in [("f2f3", "user"), ("e7e5", "bot"), ("g2g4", "user"), ("d8h4", "bot")]:
+        if by == "user":
+            game.play_user_move(uci)
+        else:
+            game.play_bot_move(chess.Move.from_uci(uci), "engine")
+    assert game.outcome is not None and game.outcome.termination == "checkmate"
+    game.take_back(3)
+    assert game.outcome is None
+    assert game.ply == 2
+
+
+def test_take_back_refuses_what_is_already_decided():
+    game = session(variant("a", VIENNA))
+    for uci, by in [
+        ("e2e4", "user"),
+        ("e7e5", "bot"),
+        ("f1c4", "user"),
+        ("b8c6", "bot"),
+        ("d1h5", "user"),
+        ("g8f6", "bot"),
+        ("h5f7", "user"),
+    ]:
+        if by == "user":
+            game.play_user_move(uci)
+        else:
+            game.play_bot_move(chess.Move.from_uci(uci), "engine")
+    assert game.outcome is not None  # the user's own mate stays
+    with pytest.raises(GameFinishedError):
+        game.take_back(7)
+
+    game = session(variant("a", VIENNA))
+    game.play_user_move("e2e4")
+    game.play_bot_move(chess.Move.from_uci("e7e5"), "book")
+    with pytest.raises(NothingToTakeBackError):
+        game.take_back(2)  # the last shown ply is the bot's
+    with pytest.raises(NothingToTakeBackError):
+        game.take_back(0)
+    game.resign()
+    with pytest.raises(GameFinishedError):
+        game.take_back(1)

@@ -1,18 +1,28 @@
 """HTTP routes. Business rules stay in app.game; errors map to status codes here."""
 
+import json
+
+import chess
 from fastapi import APIRouter, HTTPException, Request, Response
 
 from app import __version__
 from app.api.schemas import (
     ActiveGameResponse,
+    Chess960Request,
+    Chess960Start,
+    EvaluateRequest,
+    EvaluationOut,
+    ExportLinesRequest,
     ExportRequest,
     FlagRequest,
+    GameStateOut,
     GameSummary,
     ImportRequest,
     MoveRequest,
     MoveResponse,
     NewGameRequest,
     NewGameResponse,
+    TakeBackRequest,
     UserMoveOut,
     active_game,
     bot_move_out,
@@ -30,9 +40,14 @@ from app.game.pace import (
     SCORESHEET_GROUPS,
     TIME_CONTROL_GROUPS,
 )
-from app.game.review import review_of_pgn
+from app.game.review import pgn_of_line, review_of_pgn
 from app.game.service import FromGame, GameService, InvalidSetupError, UnknownGameError
-from app.game.session import GameFinishedError, IllegalMoveError, NotYourTurnError
+from app.game.session import (
+    GameFinishedError,
+    IllegalMoveError,
+    NothingToTakeBackError,
+    NotYourTurnError,
+)
 
 router = APIRouter(prefix="/api")
 
@@ -51,6 +66,8 @@ def _http_error(error: Exception) -> HTTPException:
             return HTTPException(409, "game is already over")
         case NotYourTurnError():
             return HTTPException(409, "not your turn")
+        case NothingToTakeBackError():
+            return HTTPException(409, "nothing to take back")
         case InvalidSetupError():
             return HTTPException(422, str(error))
         case EngineUnavailableError():
@@ -63,6 +80,7 @@ GAME_ERRORS = (
     IllegalMoveError,
     GameFinishedError,
     NotYourTurnError,
+    NothingToTakeBackError,
     InvalidSetupError,
     EngineUnavailableError,
 )
@@ -164,10 +182,35 @@ async def create_game(body: NewGameRequest, request: Request) -> NewGameResponse
             )
             if body.from_game
             else None,
+            body.chess960_position,
         )
     except GAME_ERRORS as error:
         raise _http_error(error) from error
     return NewGameResponse(state=state_out(session), bot_move=bot_move_out(reply))
+
+
+@router.post("/chess960")
+async def chess960_start(body: Chess960Request, request: Request) -> Chess960Start:
+    try:
+        position, fen = _service(request).chess960_start(body.fen)
+    except GAME_ERRORS as error:
+        raise _http_error(error) from error
+    return Chess960Start(position=position, fen=fen)
+
+
+@router.post("/evaluate")
+async def evaluate(body: EvaluateRequest, request: Request) -> EvaluationOut:
+    try:
+        board = chess.Board(body.fen, chess960=body.chess960)
+    except ValueError as error:
+        raise HTTPException(422, "invalid position") from error
+    if not board.is_valid():
+        raise HTTPException(422, "invalid position")
+    try:
+        result = await request.app.state.evaluator.evaluate(board)
+    except EngineUnavailableError as error:
+        raise HTTPException(503, "engine unavailable") from error
+    return EvaluationOut(cp=result.cp, mate=result.mate, best=result.best)
 
 
 @router.get("/games")
@@ -201,6 +244,7 @@ async def review_game(game_id: str, request: Request) -> dict:
         raise HTTPException(404, "game not found")
     return {
         **review,
+        "moves": _with_theory(review["moves"], game),
         "white": game["white"],
         "black": game["black"],
         "result": game["result"],
@@ -208,6 +252,33 @@ async def review_game(game_id: str, request: Request) -> dict:
         "opening": game["opening"],
         "chess960": "chess960" in game["pgn"].lower(),
     }
+
+
+@router.post("/lines/export")
+async def export_lines(body: ExportLinesRequest, request: Request) -> Response:
+    variants = _service(request).book.variants
+    missing = sorted(set(body.variant_ids) - set(variants))
+    if missing:
+        raise HTTPException(422, f"unknown line: {missing[0]}")
+    wanted = set(body.variant_ids)
+    pgns = [pgn_of_line(variant) for key, variant in variants.items() if key in wanted]
+    return Response(
+        content="\n\n".join(pgns) + "\n",
+        media_type="application/x-chess-pgn",
+        headers={"Content-Disposition": 'attachment; filename="chess-trainer-lines.pgn"'},
+    )
+
+
+def _with_theory(moves: list[dict], game: dict) -> list[dict]:
+    """A game played here knows which moves were book and which one left it."""
+    records = json.loads(game["moves_json"]) if game.get("moves_json") else []
+    deviations = {item["ply"] for item in json.loads(game.get("deviations_json") or "[]")}
+    if game.get("source") != "app" or len(records) != len(moves):
+        return moves
+    return [
+        {**move, "book": bool(record["in_theory"]), "deviation": move["ply"] in deviations}
+        for move, record in zip(moves, records, strict=True)
+    ]
 
 
 @router.get("/lines/{variant_id}/review")
@@ -218,6 +289,7 @@ async def review_line(variant_id: str, request: Request) -> dict:
         raise HTTPException(404, "line not found")
     return {
         **review,
+        "moves": [{**move, "book": True, "deviation": False} for move in review["moves"]],
         "white": None,
         "black": None,
         "result": None,
@@ -264,6 +336,17 @@ async def resign(game_id: str, request: Request) -> GameSummary:
         return game_summary(_service(request).resign(game_id))
     except GAME_ERRORS as error:
         raise _http_error(error) from error
+
+
+@router.post("/games/{game_id}/takeback")
+async def take_back(game_id: str, body: TakeBackRequest, request: Request) -> GameStateOut:
+    try:
+        session = _service(request).take_back(
+            game_id, body.shown_plies, body.user_clock_ms, body.bot_clock_ms
+        )
+    except GAME_ERRORS as error:
+        raise _http_error(error) from error
+    return state_out(session)
 
 
 @router.post("/games/{game_id}/timeout")

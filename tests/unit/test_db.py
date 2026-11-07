@@ -62,9 +62,9 @@ def count(database, table, where="true"):
 
 def test_migrations_apply_once(tmp_path):
     database = open_database(tmp_path / "test.duckdb")
-    assert apply_migrations(database) == [1, 2, 3, 4]
+    assert apply_migrations(database) == [1, 2, 3, 4, 5]
     assert apply_migrations(database) == []
-    assert count(database, "schema_migrations") == 4
+    assert count(database, "schema_migrations") == 5
     database.close()
 
 

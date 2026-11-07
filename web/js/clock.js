@@ -9,6 +9,10 @@ const LOW_TIME_SHARE = 0.1;
  * @returns {string}
  */
 export function formatClock(ms) {
+  const tenths = Math.ceil(Math.max(0, ms) / 100);
+  if (tenths < 100) {
+    return `00:${String(Math.floor(tenths / 10)).padStart(2, "0")}.${tenths % 10}`;
+  }
   const totalSeconds = Math.ceil(Math.max(0, ms) / 1000);
   const hours = Math.floor(totalSeconds / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);

@@ -1,6 +1,7 @@
-// End-of-game card: result, variation, how far theory went, deviations, PGN, Lichess link.
+// End-of-game card, under the move list: result, variation, how far theory went, deviations, PGN.
 
 import { localizedName, t } from "./i18n.js";
+import { moveIcon } from "./icons.js";
 
 const COPY_FEEDBACK_MS = 1500;
 
@@ -75,13 +76,12 @@ export function renderEndCard(summary) {
     const played = document.createElement("span");
     played.className = "played";
     played.textContent = `${number} ${san}`;
-    item.append(played, ` — ${t("end.deviationLine", { expected: deviation.expected_san.join(", ") })}`);
+    item.append(moveIcon("deviation", t("icon.deviation")), played, ` — ${t("end.deviationLine", { expected: deviation.expected_san.join(", ") })}`);
     list.append(item);
   }
 
   const copyButton = byId("copy-pgn");
   copyButton.hidden = false;
-  byId("lichess-link").hidden = false;
   copyButton.textContent = t("end.copyPgn");
   copyButton.onclick = async () => {
     try {
@@ -94,7 +94,6 @@ export function renderEndCard(summary) {
       copyButton.textContent = t("end.copyPgn");
     }, COPY_FEEDBACK_MS);
   };
-  byId("lichess-link").href = summary.lichess_url;
 
   const downloadButton = byId("download-pgn");
   downloadButton.hidden = false;

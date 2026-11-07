@@ -53,15 +53,38 @@ export const api = {
     if (!response.ok) throw new ApiError(response.status, `${response.status} on export`);
     return response.blob();
   },
+  /** @param {string[]} variantIds */
+  exportLines: async (variantIds) => {
+    const response = await fetch("api/lines/export", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ variant_ids: variantIds }),
+    });
+    if (!response.ok) throw new ApiError(response.status, `${response.status} on export`);
+    return response.blob();
+  },
   /** @param {object} setup */
   newGame: (setup) => request("/games", setup),
+  /** @param {string} [fen]  With no FEN, the server picks a random position. */
+  chess960Start: (fen) => request("/chess960", { fen }),
   /**
    * @param {string} gameId
    * @param {object} move
    */
   move: (gameId, move) => request(`/games/${gameId}/moves`, move),
   /** @param {string} gameId */
+  /**
+   * @param {string} fen
+   * @param {boolean} chess960
+   * @returns {Promise<{cp: number | null, mate: number | null, best: string | null}>}
+   */
+  evaluate: (fen, chess960) => request("/evaluate", { fen, chess960 }),
   resign: (gameId) => request(`/games/${gameId}/resign`, {}),
+  /**
+   * @param {string} gameId
+   * @param {{shown_plies: number, user_clock_ms: number | null, bot_clock_ms: number | null}} body
+   */
+  takeBack: (gameId, body) => request(`/games/${gameId}/takeback`, body),
   /**
    * @param {string} gameId
    * @param {"user" | "bot"} side

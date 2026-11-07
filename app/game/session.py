@@ -10,7 +10,6 @@ from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from typing import Literal
-from urllib.parse import quote
 
 import chess
 import chess.pgn
@@ -20,6 +19,8 @@ from app.game.pace import TimeControl
 
 Side = Literal["user", "bot"]
 MoveSource = Literal["book", "engine"] | None
+
+CHESS960_PREFIX = "chess960:"
 
 
 class IllegalMoveError(ValueError):
@@ -32,6 +33,38 @@ class GameFinishedError(ValueError):
 
 class NotYourTurnError(ValueError):
     pass
+
+
+class NothingToTakeBackError(ValueError):
+    pass
+
+
+# Endings that come from a player, not from the position: a take-back cannot undo them.
+DECIDED_BY_PLAYER = {"resignation", "timeout", "timeout_insufficient_material", "abandoned"}
+
+
+def chess960_line(position: int) -> Variant:
+    """A line with no theory: a Chess960 game is played against the engine from the first move."""
+    return Variant(
+        variant_id=f"{CHESS960_PREFIX}{position}",
+        repertoire_id="chess960",
+        names={"en": "Chess960"},
+        eco=None,
+        opening=None,
+        source=f"Chess960 position {position}",
+        pgn="",
+        moves={},
+        positions=frozenset(),
+        final_epd=chess.Board.from_chess960_pos(position).epd(),
+    )
+
+
+def chess960_position_of(fen: str) -> int | None:
+    """The number of a Chess960 starting position, or None if the FEN is anything else."""
+    try:
+        return chess.Board(fen, chess960=True).chess960_pos()
+    except ValueError:
+        return None
 
 
 class Selection:
@@ -115,6 +148,7 @@ class GameSession:
         rng: random.Random,
         opening_names: Mapping[str, tuple[str, str]] | None = None,
         engine_name: str = "Bot",
+        chess960_position: int | None = None,
     ) -> None:
         if not selection.variants:
             raise ValueError("a game needs at least one selected variation")
@@ -126,16 +160,22 @@ class GameSession:
         self.level = level
         self.pace = pace
         self.rng = rng
-        self.opening_names = opening_names or {}
+        self.chess960_position = chess960_position
+        # Opening names and theory describe the normal starting position only.
+        self.opening_names = (opening_names or {}) if chess960_position is None else {}
         self.engine_name = engine_name
         self.ui: dict[str, bool] = {}
         self.user_clock_ms: int | None = None
         self.bot_clock_ms: int | None = None
-        self.board = chess.Board()
+        self.board = (
+            chess.Board()
+            if chess960_position is None
+            else chess.Board.from_chess960_pos(chess960_position)
+        )
         self.started_at = datetime.now(UTC)
         self.moves: list[MoveRecord] = []
         self.deviations: list[Deviation] = []
-        self.in_theory = True
+        self.in_theory = chess960_position is None
         self.theory_until_ply = 0
         self.outcome: GameResult | None = None
         self.variant = rng.choice(selection.variants)
@@ -160,7 +200,9 @@ class GameSession:
     @property
     def left_theory_at_move(self) -> int | None:
         """Full-move number of the first ply out of theory, while the game is out of it."""
-        return None if self.in_theory else (self.theory_until_ply + 2) // 2
+        if self.in_theory or self.chess960_position is not None:
+            return None
+        return (self.theory_until_ply + 2) // 2
 
     def play_user_move(
         self,
@@ -220,6 +262,35 @@ class GameSession:
         move = chess.Move.from_uci(uci)
         by: Side = "user" if self.is_user_turn else "bot"
         self._push(move, by, "book", None, None)
+
+    def take_back(self, shown_plies: int) -> None:
+        """Undoes the user's last move while the browser still has not shown the bot's reply.
+
+        `shown_plies` counts the user's move. The bot's reply, already played here, goes too, and
+        so does an end of the game that it caused. Theory and deviations go back to before.
+        """
+        if self.outcome is not None and (
+            self.outcome.termination in DECIDED_BY_PLAYER or self.ply <= shown_plies
+        ):
+            raise GameFinishedError(self.game_id)
+        if (
+            not 1 <= shown_plies <= self.ply
+            or self.ply > shown_plies + 1
+            or self.moves[shown_plies - 1].by != "user"
+        ):
+            raise NothingToTakeBackError(self.game_id)
+        while self.ply >= shown_plies:
+            self.moves.pop()
+            self.board.pop()
+        self.outcome = None
+        self.deviations = [
+            deviation for deviation in self.deviations if deviation.ply < shown_plies
+        ]
+        if self.chess960_position is None:
+            self.in_theory = self.moves[-1].in_theory if self.moves else True
+        self.theory_until_ply = max(
+            (record.ply for record in self.moves if record.in_theory), default=0
+        )
 
     def resign(self) -> None:
         if self.is_over:
@@ -308,6 +379,8 @@ class GameSession:
 
     def pgn(self) -> str:
         game = chess.pgn.Game()
+        if self.chess960_position is not None:
+            game.setup(chess.Board.from_chess960_pos(self.chess960_position))  # [FEN], [Variant]
         game.headers["Event"] = "chess-trainer"
         game.headers["Site"] = "local"
         game.headers["Date"] = self.started_at.strftime("%Y.%m.%d")
@@ -318,7 +391,8 @@ class GameSession:
             game.headers["ECO"] = eco
         if opening:
             game.headers["Opening"] = opening
-        game.headers["VariantId"] = self.variant.variant_id
+        if self.chess960_position is None:
+            game.headers["VariantId"] = self.variant.variant_id
         if self.outcome is not None:
             game.headers["Termination"] = _pgn_termination(self.outcome.termination)
         if self.time_control is not None:
@@ -335,8 +409,3 @@ class GameSession:
         output = io.StringIO()
         print(game, file=output)
         return output.getvalue().strip()
-
-    def lichess_url(self) -> str:
-        sans = "_".join(record.san.rstrip("+#") for record in self.moves)
-        color = "white" if self.user_color == chess.WHITE else "black"
-        return f"https://lichess.org/analysis/pgn/{quote(sans, safe='_-')}?color={color}"

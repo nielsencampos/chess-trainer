@@ -13,13 +13,17 @@ const byId = (id) => /** @type {any} */ (document.getElementById(id));
  *   white: string | null, black: string | null}} SavedGame
  */
 
+const TABS = ["new", "saved", "openings", "import"];
+
 export class SavedGames {
   /**
    * @param {(key: string) => string} timeLabel
    * @param {import("./setup.js").SetupCard} setup
    * @param {(gameId: string) => void} onView
+   * @param {() => void} onLeaveTab
    */
-  constructor(timeLabel, setup, onView) {
+  constructor(timeLabel, setup, onView, onLeaveTab) {
+    this.onLeaveTab = onLeaveTab;
     this.timeLabel = timeLabel;
     this.setup = setup;
     this.onView = onView;
@@ -28,7 +32,7 @@ export class SavedGames {
     /** @type {Set<string>} */
     this.selected = new Set();
 
-    for (const tab of ["new", "from-saved", "saved", "import"]) {
+    for (const tab of TABS) {
       byId(`tab-${tab}`).addEventListener("click", () => this.showTab(tab));
     }
     for (const id of ["saved-search", "saved-color", "saved-result"]) {
@@ -54,14 +58,16 @@ export class SavedGames {
 
   /** @param {string} tab */
   showTab(tab) {
-    byId("setup-card").hidden = tab !== "new" && tab !== "from-saved";
+    this.onLeaveTab();
+    byId("setup-card").hidden = tab !== "new";
+    byId("openings-card").hidden = tab !== "openings";
     byId("saved-card").hidden = tab !== "saved";
     byId("import-card").hidden = tab !== "import";
-    for (const name of ["new", "from-saved", "saved", "import"]) {
+    for (const name of TABS) {
       byId(`tab-${name}`).classList.toggle("active", tab === name);
     }
-    if (tab === "new") this.setup.setMode("opening");
-    if (tab === "from-saved") void this.setup.setMode("saved");
+    this.setup.setShown(tab === "new");
+    if (tab === "new") void this.setup.setMode(this.setup.mode);
     if (tab === "saved") void this.load();
   }
 

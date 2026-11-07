@@ -2,6 +2,7 @@
 
 from typing import Literal
 
+import chess
 from pydantic import BaseModel, Field
 
 from app.game.service import BotReply
@@ -18,10 +19,22 @@ class NewGameRequest(BaseModel):
     color: Literal["white", "black"]
     variant_ids: list[str] = Field(default_factory=list)
     from_game: FromGameRequest | None = None
+    chess960_position: int | None = Field(default=None, ge=0, le=959)
     level: str
     pace: Literal["instant", "human"]
     time_control: str
     ui: dict[str, bool] = Field(default_factory=dict)
+
+
+class Chess960Request(BaseModel):
+    """With no FEN, the server rolls the dice."""
+
+    fen: str | None = Field(default=None, max_length=100)
+
+
+class Chess960Start(BaseModel):
+    position: int
+    fen: str
 
 
 class MoveRequest(BaseModel):
@@ -37,6 +50,29 @@ class ImportRequest(BaseModel):
 
 class ExportRequest(BaseModel):
     game_ids: list[str] = Field(min_length=1)
+
+
+class ExportLinesRequest(BaseModel):
+    variant_ids: list[str] = Field(min_length=1)
+
+
+class EvaluateRequest(BaseModel):
+    """A position the app itself produced: the board on screen, never a user's FEN."""
+
+    fen: str = Field(max_length=100)
+    chess960: bool = False
+
+
+class EvaluationOut(BaseModel):
+    cp: int | None
+    mate: int | None
+    best: str | None
+
+
+class TakeBackRequest(BaseModel):
+    shown_plies: int = Field(ge=1)
+    user_clock_ms: int | None = Field(default=None, ge=0)
+    bot_clock_ms: int | None = Field(default=None, ge=0)
 
 
 class FlagRequest(BaseModel):
@@ -117,7 +153,6 @@ class GameSummary(BaseModel):
     deviations: list[DeviationOut]
     moves: list[MoveSummary]
     pgn: str
-    lichess_url: str
 
 
 class ResumeMove(BaseModel):
@@ -135,6 +170,7 @@ class ResumeSetup(BaseModel):
     pace: str
     time_control: str
     variant_ids: list[str]
+    chess960: Chess960Start | None
     ui: dict[str, bool]
 
 
@@ -154,6 +190,13 @@ class ActiveGameResponse(BaseModel):
     game: ActiveGame | None
 
 
+def _chess960_start(session: GameSession) -> Chess960Start | None:
+    position = session.chess960_position
+    if position is None:
+        return None
+    return Chess960Start(position=position, fen=chess.Board.from_chess960_pos(position).fen())
+
+
 def active_game(session: GameSession) -> ActiveGame:
     deviation_plies = {deviation.ply for deviation in session.deviations}
     return ActiveGame(
@@ -164,6 +207,7 @@ def active_game(session: GameSession) -> ActiveGame:
             pace=session.pace,
             time_control=session.time_control_key,
             variant_ids=[variant.variant_id for variant in session.selection.variants],
+            chess960=_chess960_start(session),
             ui=session.ui,
         ),
         moves=[
@@ -244,5 +288,4 @@ def game_summary(session: GameSession) -> GameSummary:
             for record in session.moves
         ],
         pgn=session.pgn(),
-        lichess_url=session.lichess_url(),
     )

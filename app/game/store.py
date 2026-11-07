@@ -13,7 +13,15 @@ from app import __version__
 from app.book.models import Book, BookMoveRow, Variant, index_moves
 from app.game.imports import ImportedGame, content_hash
 from app.game.pace import TIME_CONTROLS
-from app.game.session import Deviation, GameResult, GameSession, MoveRecord, Selection
+from app.game.session import (
+    CHESS960_PREFIX,
+    Deviation,
+    GameResult,
+    GameSession,
+    MoveRecord,
+    Selection,
+    chess960_line,
+)
 
 GAME_LINE_PREFIX = "game:"
 
@@ -166,7 +174,8 @@ class GameStore:
     def finished_game(self, game_id: str) -> dict | None:
         cursor = self._connection.cursor()
         cursor.execute(
-            "SELECT pgn, white, black, result, eco, opening, source FROM games "
+            "SELECT pgn, white, black, result, eco, opening, source, moves_json, deviations_json "
+            "FROM games "
             "WHERE game_id = ? AND status = 'finished'",
             [game_id],
         )
@@ -206,8 +215,12 @@ def restore_session(
 ) -> GameSession | None:
     """Rebuilds a session by replaying its moves. None if none of its lines exist anymore."""
     known = dict(book.variants)
+    chess960_position = None
     for key in row["variant_ids"]:
-        if key.startswith(GAME_LINE_PREFIX):
+        if key.startswith(CHESS960_PREFIX):
+            chess960_position = int(key.removeprefix(CHESS960_PREFIX))
+            known[key] = chess960_line(chess960_position)
+        elif key.startswith(GAME_LINE_PREFIX):
             line = store.game_line(key)
             if line is not None:
                 known[key] = line
@@ -225,6 +238,7 @@ def restore_session(
         rng=rng,
         opening_names=opening_names,
         engine_name=row["engine_name"],
+        chess960_position=chess960_position,
     )
     session.started_at = row["started_at"].replace(tzinfo=UTC)
     session.variant = known.get(row["current_variant_id"], variants[0])

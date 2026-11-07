@@ -1,17 +1,17 @@
-// Runs a game in the browser: local validation with chess.js for instant feedback,
+// Runs a game in the browser: local validation with rules.js for instant feedback,
 // the server decides the bot's moves and what counts as theory.
 
-import { Chess } from "./vendor/chess.js";
 import { api } from "./api.js";
 import { Clocks, formatClock } from "./clock.js";
 import { renderEndCard } from "./endcard.js";
+import { EvalBar } from "./evalbar.js";
 import { t } from "./i18n.js";
 import { renderMoveList } from "./movelist.js";
 import { premoveDestinations } from "./premove.js";
+import { Rules } from "./rules.js";
 import { sound } from "./sound.js";
 
 const RESIGN_CONFIRM_MS = 3000;
-const AUTO_NEXT_SECONDS = 5;
 
 /** @param {string} id */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
@@ -20,7 +20,12 @@ export class GameController {
   /** @param {import("./board.js").Board} board */
   constructor(board) {
     this.board = board;
-    this.chess = new Chess();
+    this.rules = new Rules();
+    /** @type {() => string | undefined} The Chess960 position the setup shows, if any. */
+    this.previewFen = () => undefined;
+    /** A finished game is still on screen, with the menu back on the left. */
+    this.ended = false;
+    this.evalBar = new EvalBar();
     this.clocks = new Clocks(
       (color) => this.onFlag(color),
       () => this.renderClocks(),
@@ -46,38 +51,29 @@ export class GameController {
     this.generation = 0;
     this.botTimer = 0;
     this.resignTimer = 0;
-    this.autoNextTimer = 0;
+    /**
+     * Between the server's answer and the moment the bot's reply is shown, the user's move can be
+     * taken back. This is what the board and clocks were before that move.
+     * @type {{clocks: {w: number | null, b: number | null}} | null}
+     */
+    this.takeBackable = null;
 
     byId("resign").addEventListener("click", () => this.onResignClick());
-    byId("next-game").addEventListener("click", () => this.startNext());
-    byId("change-setup").addEventListener("click", () => this.leaveGame());
-    byId("auto-next-cancel").addEventListener("click", () => this.cancelAutoNext());
+    byId("take-back").addEventListener("click", () => void this.onTakeBack());
     this.resetResign();
     this.renderIdle();
   }
 
   /** @param {string} square */
   legalMoves(square) {
-    return this.chess.moves({ square: /** @type {any} */ (square), verbose: true }).reduce(
-      (moves, move) => {
-        if (!moves.some((known) => known.to === move.to)) {
-          moves.push({
-            to: move.to,
-            capture: Boolean(move.captured),
-            promotion: Boolean(move.promotion),
-          });
-        }
-        return moves;
-      },
-      /** @type {import("./board.js").LegalMove[]} */ ([]),
-    );
+    return this.rules.movesFrom(square);
   }
 
   /** @param {string} square */
   premoveTargets(square) {
-    const piece = this.chess.get(/** @type {any} */ (square));
+    const piece = this.rules.pieceAt(square);
     if (!piece || piece.color !== this.userColor) return [];
-    return premoveDestinations(square, piece).map((to) => ({
+    return premoveDestinations(square, piece, this.rules.chess960).map((to) => ({
       to,
       capture: false,
       promotion: false,
@@ -110,20 +106,19 @@ export class GameController {
     const queued = this.premove;
     if (!queued) return;
     this.clearPremove();
-    const legal = this.chess
-      .moves({ square: /** @type {any} */ (queued.from), verbose: true })
-      .find((move) => move.to === queued.to);
+    const legal = this.rules.movesFrom(queued.from).find((move) => move.to === queued.to);
     if (legal) void this.onUserMove(queued.from, queued.to, legal.promotion ? "q" : undefined);
   }
 
   /**
    * The board before a game starts, seen from the selected color.
    * @param {"white" | "black"} [color]
+   * @param {string} [chess960Fen]  The Chess960 position the setup shows, if any.
    */
-  renderIdle(color = "white") {
-    this.chess = new Chess();
+  renderIdle(color = "white", chess960Fen) {
+    this.rules = new Rules(chess960Fen);
     this.board.setOrientation(color === "white" ? "w" : "b");
-    this.board.setPosition(this.chess.fen());
+    this.board.setPosition(this.rules.fen());
     this.board.setMovable(null);
     this.renderNames(null);
     this.plies = [];
@@ -140,7 +135,6 @@ export class GameController {
 
   /** @param {import("./setup.js").GameSetup} setup */
   async start(setup) {
-    this.cancelAutoNext();
     clearTimeout(this.botTimer);
     this.clocks.stop();
     this.generation += 1;
@@ -155,19 +149,21 @@ export class GameController {
     if (this.botThinking) this.board.setMovable(null, this.premoveColor());
     this.renderChips();
 
+    // The bot's clock is already running, so its delay counts from here.
+    const sentAt = performance.now();
     let response;
     try {
       response = await api.newGame({
         color: setup.color,
         variant_ids: setup.variant_ids,
         from_game: setup.from_game ?? undefined,
+        chess960_position: setup.chess960?.position,
         level: setup.level,
         pace: setup.pace,
         time_control: setup.time_control,
         ui: {
           scoresheet: setup.scoresheet,
           warning: setup.warning,
-          autoplay: setup.autoplay,
           premoves: setup.premoves,
         },
       });
@@ -183,9 +179,8 @@ export class GameController {
       return;
     }
     this.gameId = response.state.game_id;
-    const startedAt = performance.now();
     if (response.bot_move) {
-      this.scheduleBotMove(response.bot_move, response.state, startedAt, generation);
+      this.scheduleBotMove(response.bot_move, response.state, sentAt, generation);
     } else {
       this.beginUserTurn();
     }
@@ -195,9 +190,9 @@ export class GameController {
   prepare(setup) {
     this.setup = setup;
     this.userColor = setup.color === "white" ? "w" : "b";
-    this.chess = new Chess();
+    this.rules = new Rules(setup.chess960?.fen);
     this.plies = [];
-    this.inTheory = true;
+    this.inTheory = !setup.chess960;
     this.leftTheoryAtMove = null;
     this.over = false;
     this.gameId = null;
@@ -206,17 +201,23 @@ export class GameController {
     byId("setup-card").hidden = true;
     byId("saved-card").hidden = true;
     byId("import-card").hidden = true;
+    this.ended = false;
+    this.evalBar.hide();
+    this.takeBackable = null;
     byId("sidebar-tabs").hidden = true;
     byId("end-card").hidden = true;
+    byId("copy-pgn").hidden = false;
+    byId("download-pgn").hidden = false;
     byId("game-card").hidden = false;
     byId("resign").hidden = false;
     byId("game-error").hidden = true;
     byId("scoresheet-note").hidden = !setup.scoresheet;
     byId("movelist").hidden = setup.scoresheet;
     this.resetResign();
+    this.renderTakeBack();
 
     this.board.setOrientation(this.userColor);
-    this.board.setPosition(this.chess.fen());
+    this.board.setPosition(this.rules.fen());
     this.board.setMovable(null);
     this.renderNames(setup);
     this.clocks.reset(setup.clock);
@@ -237,18 +238,19 @@ export class GameController {
     this.prepare({
       color: game.setup.color,
       variant_ids: game.setup.variant_ids,
+      chess960: game.setup.chess960,
       level: game.setup.level,
       pace: game.setup.pace,
       time_control: game.setup.time_control,
       clock,
       scoresheet: ui.scoresheet ?? false,
       warning: ui.warning ?? true,
-      autoplay: ui.autoplay ?? false,
       premoves: ui.premoves ?? true,
     });
-    for (const move of game.moves) this.chess.move(move.san);
+    for (const move of game.moves) this.rules.moveSan(move.san);
     this.plies = game.moves.map((/** @type {any} */ move) => ({
       san: move.san,
+      uci: move.uci,
       outOfTheory: !move.in_theory,
       deviation: move.deviation,
     }));
@@ -290,12 +292,9 @@ export class GameController {
    */
   async onUserMove(from, to, promotion) {
     if (this.over || this.gameId === null) return;
-    let move;
-    try {
-      move = this.chess.move({ from, to, promotion });
-    } catch {
-      return; // chess.js rejects it; the board only offers legal moves, so this is defensive.
-    }
+    const before = { w: this.clocks.remainingMs("w"), b: this.clocks.remainingMs("b") };
+    const move = this.rules.move(from, to, promotion);
+    if (!move) return; // The board only offers legal moves, so this is defensive.
     const generation = this.generation;
     const botColor = this.userColor === "w" ? "b" : "w";
     const thinkMs = Math.round(performance.now() - this.turnStartedAt);
@@ -304,9 +303,9 @@ export class GameController {
     const userClockMs = this.clocks.remainingMs(this.userColor);
     const botClockMs = this.clocks.remainingMs(botColor);
     sound.playMove(move, false);
-    this.plies.push({ san: move.san, outOfTheory: !this.inTheory, deviation: false });
+    this.plies.push({ san: move.san, uci: move.uci, outOfTheory: !this.inTheory, deviation: false });
     this.showPosition([from, to]);
-    const gameEndedLocally = this.chess.isGameOver();
+    const gameEndedLocally = this.rules.isGameOver();
     this.board.setMovable(null, gameEndedLocally ? null : this.premoveColor());
     this.renderMoves();
 
@@ -318,7 +317,7 @@ export class GameController {
     let response;
     try {
       response = await api.move(this.gameId, {
-        uci: `${from}${to}${promotion ?? ""}`,
+        uci: move.uci,
         user_clock_ms: userClockMs,
         bot_clock_ms: botClockMs,
         think_ms: thinkMs,
@@ -340,6 +339,8 @@ export class GameController {
     this.renderChips();
 
     if (response.bot_move) {
+      this.takeBackable = { clocks: before };
+      this.renderTakeBack();
       this.scheduleBotMove(response.bot_move, response.state, sentAt, generation);
     } else if (response.state.game_over) {
       await this.finish(generation);
@@ -368,9 +369,16 @@ export class GameController {
    */
   applyBotMove(botMove, state, generation) {
     const botColor = this.userColor === "w" ? "b" : "w";
-    sound.playMove(this.chess.move(botMove.san), true);
+    this.takeBackable = null;
+    this.renderTakeBack();
+    sound.playMove(this.rules.moveSan(botMove.san), true);
     this.clocks.press(botColor);
-    this.plies.push({ san: botMove.san, outOfTheory: !botMove.in_theory, deviation: false });
+    this.plies.push({
+      san: botMove.san,
+      uci: botMove.uci,
+      outOfTheory: !botMove.in_theory,
+      deviation: false,
+    });
     this.inTheory = botMove.in_theory;
     this.leftTheoryAtMove ??= this.inTheory ? null : state.left_theory_at_move;
     this.showPosition([botMove.uci.slice(0, 2), botMove.uci.slice(2, 4)]);
@@ -388,13 +396,58 @@ export class GameController {
 
   /** @param {string[]} lastMove */
   showPosition(lastMove) {
-    this.board.setPosition(this.chess.fen(), { lastMove, check: this.checkSquare() });
+    this.board.setPosition(this.rules.fen(), { lastMove, check: this.checkSquare() });
   }
 
   /** @returns {string | null} */
   checkSquare() {
-    if (!this.chess.isCheck()) return null;
-    return this.chess.findPiece({ type: "k", color: this.chess.turn() })[0] ?? null;
+    return this.rules.checkSquare();
+  }
+
+  /** Only without premoves: with them, a move queued for the reply is the way to play fast. */
+  renderTakeBack() {
+    const button = byId("take-back");
+    button.hidden = this.setup?.premoves ?? true;
+    button.disabled = this.takeBackable === null;
+  }
+
+  async onTakeBack() {
+    const saved = this.takeBackable;
+    if (!saved || this.over || this.gameId === null) return;
+    this.takeBackable = null;
+    this.renderTakeBack();
+    clearTimeout(this.botTimer);
+    this.clearPremove();
+    this.generation += 1; // The scheduled reply, if it fires anyway, is ignored.
+    const generation = this.generation;
+    let state;
+    try {
+      state = await api.takeBack(this.gameId, {
+        shown_plies: this.plies.length,
+        user_clock_ms: saved.clocks[this.userColor],
+        bot_clock_ms: saved.clocks[this.userColor === "w" ? "b" : "w"],
+      });
+    } catch (error) {
+      if (generation === this.generation && !this.over) this.onServerError(error);
+      return;
+    }
+    if (generation !== this.generation || this.over) return;
+
+    this.plies.pop();
+    this.rules = new Rules(this.setup?.chess960?.fen);
+    for (const ply of this.plies) this.rules.moveSan(ply.san);
+    this.inTheory = state.in_theory;
+    this.leftTheoryAtMove = state.left_theory_at_move;
+    this.opening = state.opening ?? null;
+    // White moves first, so a ply's index says whose it was.
+    const white = this.plies.filter((_, index) => index % 2 === 0).length;
+    this.clocks.restore(saved.clocks, { w: white, b: this.plies.length - white });
+    const last = this.plies[this.plies.length - 1];
+    this.showPosition(last?.uci ? [last.uci.slice(0, 2), last.uci.slice(2, 4)] : []);
+    this.renderOpening();
+    this.renderMoves();
+    this.clocks.start(this.userColor);
+    this.beginUserTurn();
   }
 
   onResignClick() {
@@ -450,6 +503,8 @@ export class GameController {
   }
 
   markOver() {
+    this.takeBackable = null;
+    this.renderTakeBack();
     this.over = true;
     this.botThinking = false;
     clearTimeout(this.botTimer);
@@ -485,45 +540,31 @@ export class GameController {
     byId("movelist").hidden = false;
     renderMoveList(byId("movelist"), this.plies, true);
     this.renderChips();
-    if (this.setup?.autoplay) this.scheduleAutoNext();
+    this.showMenu();
+    this.evalBar.show(this.rules.fen(), this.rules.chess960, this.userColor);
   }
 
-  scheduleAutoNext() {
-    let seconds = AUTO_NEXT_SECONDS;
-    const text = byId("auto-next-text");
-    const render = () => {
-      text.textContent = t("end.autoNext", { seconds });
-    };
-    render();
-    byId("auto-next").hidden = false;
-    this.autoNextTimer = setInterval(() => {
-      seconds -= 1;
-      if (seconds <= 0) {
-        this.startNext();
-      } else {
-        render();
-      }
-    }, 1000);
+  /**
+   * After a game, the left column is the menu again and the board keeps the final position.
+   * No item is active: clicking any of them leaves the game.
+   */
+  showMenu() {
+    this.ended = true;
+    byId("sidebar-tabs").hidden = false;
+    byId("game-card").hidden = byId("game-error").hidden;
+    for (const tab of document.querySelectorAll("#sidebar-tabs .tab")) tab.classList.remove("active");
   }
 
-  cancelAutoNext() {
-    clearInterval(this.autoNextTimer);
-    byId("auto-next").hidden = true;
-  }
-
-  startNext() {
-    if (this.setup) void this.start(this.setup);
-  }
-
+  /** Leaves a finished game for another screen of the menu. */
   leaveGame() {
-    this.cancelAutoNext();
+    if (!this.ended) return;
+    this.ended = false;
     this.generation += 1;
+    this.evalBar.hide();
     byId("end-card").hidden = true;
     byId("game-card").hidden = true;
-    byId("sidebar-tabs").hidden = false;
-    byId("tab-new").click();
     const color = this.setup?.color;
-    this.renderIdle(color);
+    this.renderIdle(color, this.previewFen());
     this.clocks.reset(null);
   }
 
@@ -540,9 +581,9 @@ export class GameController {
     byId("end-variation").textContent = "—";
     byId("end-theory").textContent = "—";
     byId("end-deviations").replaceChildren();
-    byId("lichess-link").hidden = true;
     byId("copy-pgn").hidden = true;
     byId("download-pgn").hidden = true;
+    this.showMenu();
   }
 
   /** The name stays hidden in scoresheet mode until the end, like the move list. */
@@ -555,7 +596,8 @@ export class GameController {
   }
 
   renderMoves() {
-    const showMarks = this.setup?.warning ?? true;
+    // Without a book, no move is in or out of theory.
+    const showMarks = (this.setup?.warning ?? true) && !this.setup?.chess960;
     renderMoveList(byId("movelist"), this.plies, showMarks);
   }
 
@@ -608,7 +650,7 @@ export class GameController {
         chips.push([t("chip.leftTheory", { move: this.leftTheoryAtMove }), "chip-warn"]);
       }
     }
-    if (!this.over && this.chess.isCheck()) chips.push([t("chip.check"), "chip-bad"]);
+    if (!this.over && this.rules.isCheck()) chips.push([t("chip.check"), "chip-bad"]);
     if (this.premove) chips.push([t("chip.premove"), "chip-warn"]);
     byId("chips").replaceChildren(
       ...chips.map(([text, className]) => {
