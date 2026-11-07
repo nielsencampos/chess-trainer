@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="web/logo.png" alt="Chess Trainer logo: a scoresheet with a board on the Vienna Game, a pen and a table clock" width="280">
+</p>
+
 # chess-trainer
 
 Local opening trainer: drill your chess repertoire against a bot that plays your book lines, then

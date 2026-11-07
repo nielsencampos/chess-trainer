@@ -9,11 +9,12 @@ components below. Each keeps its own license and copyright.
 | chess.js | `web/js/vendor/chess.js` (source-map comment removed) | 1.4.0, <https://github.com/jhlywa/chess.js> | BSD-2-Clause (text below) | Jeff Hlywa |
 | Lichess openings catalog | `catalog/data/`, and `openings/` is seeded from it | `lichess-org/chess-openings` at the commit in `catalog/SOURCE_COMMIT` | CC0-1.0 | Public domain dedication |
 | Merida pieces | `web/pieces/merida/` | `lichess-org/lila` at `ae7b6b5` | GPL-2.0-or-later | Armando Hernandez Marroquin |
-| Cburnett pieces | `web/pieces/cburnett/` | `lichess-org/lila` at `ae7b6b5` | GPL-2.0-or-later | Colin M.L. Burnett |
+| Cburnett pieces | `web/pieces/cburnett/`, and the pieces in `web/logo.svg` and `web/logo.png` | `lichess-org/lila` at `ae7b6b5` | GPL-2.0-or-later | Colin M.L. Burnett |
 | Chessnut pieces | `web/pieces/chessnut/` | `lichess-org/lila` at `ae7b6b5`; <https://github.com/LexLuengas/chessnut-pieces> | Apache-2.0 | Alexis Luengas |
 | Fantasy pieces | `web/pieces/fantasy/` | `lichess-org/lila` at `ae7b6b5`; <https://github.com/maurimo/chess-art> | MIT | Maurizio Monge |
 | Familjen Grotesk | `web/fonts/` | Fontsource 5.3.0 | OFL-1.1 | The Familjen Grotesk Project Authors |
 | JetBrains Mono | `web/fonts/` | Fontsource 5.3.0 | OFL-1.1 | The JetBrains Mono Project Authors |
+| Caveat | `web/logo.svg` and `web/logo.png` (title and moves, converted to outlines) | Fontsource 5.3.0 | OFL-1.1 | The Caveat Project Authors |
 | Noto Sans Symbols 2 | `web/fonts/` (Unicode piece set) | Fontsource 5.3.0 | OFL-1.1 | The Noto Project Authors |
 
 License texts: [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt),

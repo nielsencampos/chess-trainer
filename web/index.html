@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>chess-trainer</title>
-    <link rel="icon" href="pieces/cburnett/wN.svg" type="image/svg+xml" />
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="logo.png" />
     <link rel="stylesheet" href="css/tokens.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/board.css" />
@@ -13,7 +14,10 @@
   </head>
   <body>
     <header class="topbar">
-      <strong class="brand">chess-trainer</strong>
+      <div class="brand">
+        <img class="brand-logo" src="logo.svg" alt="" width="56" height="56" />
+        <strong class="brand-name">chess-trainer</strong>
+      </div>
       <div class="topbar-controls">
         <label class="inline-field">
           <span data-i18n="board.pieces"></span>
@@ -80,7 +84,7 @@
           </fieldset>
 
           <div class="toggles">
-            <label class="toggle"><input id="opt-scoresheet" type="checkbox" /><span data-i18n="setup.scoresheet"></span></label>
+            <label id="scoresheet-option" class="toggle"><input id="opt-scoresheet" type="checkbox" /><span data-i18n="setup.scoresheet"></span></label>
             <label class="toggle"><input id="opt-warning" type="checkbox" /><span data-i18n="setup.warning"></span></label>
             <label class="toggle"><input id="opt-autoplay" type="checkbox" /><span data-i18n="setup.autoplay"></span></label>
           </div>
