@@ -27,7 +27,7 @@ STOCKFISH_PATH=/path/to/stockfish uv run uvicorn --factory app.main:create_app -
 ```bash
 uv run ruff check . && uv run ruff format --check .
 uv run pytest                                     # unit + API, uses a fake engine
-uv run python -m catalog.validate                 # every repertoire line against the catalog
+uv run python -m catalog.validate                 # every line in openings/ against the catalog
 scripts/extract-stockfish.sh                      # copies the binary from the image to .cache/
 STOCKFISH_PATH=.cache/stockfish uv run pytest -m engine
 scripts/smoke.sh chess-trainer:local              # health and a real engine move in the image
@@ -48,12 +48,14 @@ what was tested (brief §13.4).
 - Small commits. One phase at a time; at the end of each, report what changed, how to test it
   and what was left for later.
 
-## Repertoire rules
+## Book rules
 
-- **Never change or reuse a `VariantId`.** Statistics are keyed on it.
-- Never delete database data without a migration and a note.
-- Every repertoire move is validated by tests, never by memory. Do not invent theory moves:
-  lines come from the catalog or a source recorded in `[Source]`.
-- `[Name_en]` is the UI label. `[Opening]` is the exact catalog name and is what gets validated.
-- The Lichess catalog is not the bot's book. The bot plays only repertoire variations.
+- `openings/<family>.json` is the source of the book (format in brief §6). The app reads the book
+  only from DuckDB. `catalog/` is reference only: the bot does not play from it.
+- **Never change or reuse a line `id`**, even when extending its moves. Statistics are keyed on it.
+  Lines that disappear become inactive and are never deleted.
+- Never delete database data without a migration and a note. Schema changes are new numbered files
+  in `app/db/migrations/`.
+- Every book move is validated by tests, never by memory. Do not invent theory moves, and record
+  where a line came from in `source`.
 - Third-party assets must be compatible with GPL-3.0 and listed in `THIRD_PARTY_LICENSES.md`.

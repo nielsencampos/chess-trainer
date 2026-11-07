@@ -7,7 +7,7 @@ components below. Each keeps its own license and copyright.
 |---|---|---|---|---|
 | Stockfish | Downloaded into the image at build time (`/opt/stockfish`, with its `Copying.txt` and `AUTHORS`) | Official releases; source at <https://github.com/official-stockfish/Stockfish> | GPL-3.0 | The Stockfish developers |
 | chess.js | `web/js/vendor/chess.js` (source-map comment removed) | 1.4.0, <https://github.com/jhlywa/chess.js> | BSD-2-Clause (text below) | Jeff Hlywa |
-| Lichess openings catalog | `catalog/data/` | `lichess-org/chess-openings` at the commit in `catalog/SOURCE_COMMIT` | CC0-1.0 | Public domain dedication |
+| Lichess openings catalog | `catalog/data/`, and `openings/` is seeded from it | `lichess-org/chess-openings` at the commit in `catalog/SOURCE_COMMIT` | CC0-1.0 | Public domain dedication |
 | Merida pieces | `web/pieces/merida/` | `lichess-org/lila` at `ae7b6b5` | GPL-2.0-or-later | Armando Hernandez Marroquin |
 | Cburnett pieces | `web/pieces/cburnett/` | `lichess-org/lila` at `ae7b6b5` | GPL-2.0-or-later | Colin M.L. Burnett |
 | Chessnut pieces | `web/pieces/chessnut/` | `lichess-org/lila` at `ae7b6b5`; <https://github.com/LexLuengas/chessnut-pieces> | Apache-2.0 | Alexis Luengas |
