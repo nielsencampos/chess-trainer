@@ -4,10 +4,12 @@ export class ApiError extends Error {
   /**
    * @param {number} status
    * @param {string} message
+   * @param {string} [code] The server's `detail`, when it is a string.
    */
-  constructor(status, message) {
+  constructor(status, message, code) {
     super(message);
     this.status = status;
+    this.code = code;
   }
 }
 
@@ -25,7 +27,9 @@ async function request(path, body) {
       };
   const response = await fetch(`api${path}`, options);
   if (!response.ok) {
-    throw new ApiError(response.status, `${response.status} on ${path}`);
+    const detail = await response.json().then((data) => data?.detail, () => undefined);
+    const code = typeof detail === "string" ? detail : undefined;
+    throw new ApiError(response.status, `${response.status} on ${path}`, code);
   }
   return response.json();
 }
@@ -43,7 +47,16 @@ export const api = {
   reviewLine: (variantId) => request(`/lines/${variantId}/review`),
   /** @param {string} pgn */
   importGames: (pgn) => request("/games/import", { pgn }),
+  /**
+   * @param {"lichess" | "chesscom"} site
+   * @param {string} username
+   * @param {number} months
+   */
+  importRemote: (site, username, months) =>
+    request("/games/import/remote", { site, username, months }),
   /** @param {string[]} gameIds */
+  /** @param {string[]} gameIds */
+  deleteGames: (gameIds) => request("/games/delete", { game_ids: gameIds }),
   exportGames: async (gameIds) => {
     const response = await fetch("api/games/export", {
       method: "POST",
