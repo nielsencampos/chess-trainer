@@ -55,9 +55,14 @@ def _control(
     )
 
 
-# The presets of a DGT 3000 clock, by category. Keys: minutes per period, then i (increment),
-# d (Bronstein delay) or u (US delay) in seconds.
+# By category. Bullet is ours, and the rest are the presets of a DGT 3000 clock. Keys: minutes per
+# period, or seconds with an s, then i (increment), d (Bronstein delay) or u (US delay) in seconds.
 TIME_CONTROL_GROUPS: dict[str, dict[str, TimeControl]] = {
+    "bullet": {
+        "30s": TimeControl(base_ms=30_000),
+        "1": _control(1),
+        "2": _control(2),
+    },
     "blitz": {
         "5": _control(5),
         "10": _control(10),

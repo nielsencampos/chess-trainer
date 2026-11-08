@@ -11,6 +11,7 @@ ROOT = Path(__file__).parent.parent
 class Settings:
     openings_dir: Path = ROOT / "openings"
     catalog_dir: Path = ROOT / "catalog" / "data"
+    book_evals_file: Path = ROOT / "evals" / "book.json"
     database_path: Path = ROOT / "data" / "chess-trainer.duckdb"
     web_dir: Path = ROOT / "web"
     levels_file: Path = Path(__file__).parent / "engine" / "levels.toml"
@@ -25,6 +26,7 @@ def settings_from_env() -> Settings:
     return Settings(
         openings_dir=Path(os.environ.get("CHESS_TRAINER_OPENINGS_DIR", defaults.openings_dir)),
         catalog_dir=Path(os.environ.get("CHESS_TRAINER_CATALOG_DIR", defaults.catalog_dir)),
+        book_evals_file=Path(os.environ.get("CHESS_TRAINER_BOOK_EVALS", defaults.book_evals_file)),
         database_path=Path(os.environ.get("CHESS_TRAINER_DB", defaults.database_path)),
         web_dir=Path(os.environ.get("CHESS_TRAINER_WEB_DIR", defaults.web_dir)),
         levels_file=Path(os.environ.get("CHESS_TRAINER_LEVELS_FILE", defaults.levels_file)),

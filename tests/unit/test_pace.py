@@ -25,6 +25,12 @@ def test_classical_in_book_is_much_faster():
     assert min(delays) >= 9_000 and max(delays) <= 27_000
 
 
+def test_bullet_bot_does_not_flag_itself_by_pacing():
+    control = TIME_CONTROLS["30s"]
+    assert max(samples(control, control.base_ms, in_book=False)) < 1_000
+    assert max(samples(control, 500, in_book=False)) <= 250
+
+
 def test_blitz_is_much_faster():
     assert max(samples(BLITZ, BLITZ.base_ms, in_book=False)) < 8_000
 

@@ -206,3 +206,43 @@ def load_book(connection: duckdb.DuckDBPyConnection) -> Book:
         for key, ids in members.items()
     }
     return Book(repertoires=repertoires, variants=variants)
+
+
+def sync_book_evals(connection: duckdb.DuckDBPyConnection, path: Path) -> bool:
+    """Loads evals/book.json when it changed. Missing is fine: the bar then asks the engine."""
+    if not path.exists():
+        return False
+    content = path.read_bytes()
+    content_hash = hashlib.sha256(content).hexdigest()
+    last = connection.execute(
+        "SELECT content_hash FROM book_eval_loads ORDER BY loaded_at DESC LIMIT 1"
+    ).fetchone()
+    if last is not None and last[0] == content_hash:
+        return False
+    data = json.loads(content)
+    rows = [
+        (epd, value.get("cp"), value.get("mate"), value.get("best"), value["depth"])
+        for epd, value in data["positions"].items()
+    ]
+    connection.begin()
+    try:
+        connection.executemany("INSERT OR REPLACE INTO book_evals VALUES (?, ?, ?, ?, ?)", rows)
+        connection.execute(
+            "INSERT INTO book_eval_loads VALUES (?, ?, ?, ?)",
+            [content_hash, data.get("engine"), len(rows), datetime.now(UTC)],
+        )
+        connection.commit()
+    except Exception:
+        connection.rollback()
+        raise
+    return True
+
+
+def load_book_evals(connection: duckdb.DuckDBPyConnection) -> dict[str, tuple]:
+    """EPD -> (cp, mate, best), from White's side."""
+    return {
+        epd: (cp, mate, best)
+        for epd, cp, mate, best in connection.execute(
+            "SELECT epd, cp, mate, best FROM book_evals"
+        ).fetchall()
+    }

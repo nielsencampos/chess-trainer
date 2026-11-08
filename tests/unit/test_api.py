@@ -64,7 +64,12 @@ def test_levels(client):
 def test_time_controls_are_grouped_with_scoresheet_only_for_classical(client):
     body = client.get("/api/time-controls").json()
     groups = {group["key"]: group for group in body["groups"]}
-    assert list(groups) == ["blitz", "rapid", "classical"]
+    assert list(groups) == ["bullet", "blitz", "rapid", "classical"]
+    bullet = groups["bullet"]["items"]
+    assert [item["key"] for item in bullet] == ["30s", "1", "2"]
+    assert [item["base_ms"] for item in bullet] == [30_000, 60_000, 120_000]
+    assert all(item["increment_ms"] == item["delay_ms"] == 0 for item in bullet)
+    assert groups["bullet"]["scoresheet"] is False
     assert [item["key"] for item in groups["blitz"]["items"]] == ["5", "10", "3i2", "5u2"]
     assert [item["key"] for item in groups["rapid"]["items"]] == ["25", "25i10", "25d10", "25u5"]
     assert len(groups["classical"]["items"]) == 13
@@ -242,7 +247,7 @@ def test_full_flow_book_then_deviation_then_engine(client, ids, engine):
     assert summary["eco"] == "B12"
     assert summary["deviations"][0]["expected_san"] == ["d5"]
     assert "1. e4 c6 2. d4 e6 { Deviation: expected d5 } 3. Nc3" in summary["pgn"]
-    assert "lichess.org/analysis/pgn/e4_c6_d4_e6_Nc3" in summary["lichess_url"]
+    assert "lichess_url" not in summary
 
 
 def test_human_pace_returns_a_delay(client, ids):
@@ -280,3 +285,95 @@ def test_get_game_returns_moves_with_sources(client, ids):
     assert body["moves"] == [
         {"ply": 1, "san": "e4", "by": "bot", "source": "book", "in_theory": True}
     ]
+
+
+def test_export_lines_in_book_order(client, ids):
+    wanted = [ids[ALAPIN_PGN], ids[SHORT_PGN]]
+    response = client.post("/api/lines/export", json={"variant_ids": wanted})
+    assert response.status_code == 200
+    assert response.headers["content-type"].startswith("application/x-chess-pgn")
+    text = response.text
+    assert text.count('[Event "chess-trainer"]') == 2
+    assert "1. e4 c5 2. c3 *" in text
+    assert "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 *" in text
+    assert '[ECO "B' in text
+
+
+def test_export_lines_refuses_unknown_and_empty(client):
+    assert client.post("/api/lines/export", json={"variant_ids": []}).status_code == 422
+    assert client.post("/api/lines/export", json={"variant_ids": ["nope"]}).status_code == 422
+
+
+def test_bullet_game_records_its_time_control(client, ids):
+    state = new_game(client, ids, color="white", time_control="30s").json()["state"]
+    summary = client.post(f"/api/games/{state['game_id']}/resign").json()
+    assert '[TimeControl "30+0"]' in summary["pgn"]
+
+
+def test_take_back_restores_position_theory_and_clocks(client, ids):
+    state = new_game(client, ids, color="white", pgn=ALAPIN_PGN, time_control="5").json()["state"]
+    game_id = state["game_id"]
+    body = {"uci": "d2d4", "user_clock_ms": 290_000, "bot_clock_ms": 300_000}
+    moved = client.post(f"/api/games/{game_id}/moves", json=body).json()
+    assert moved["deviation"] is not None
+    back = client.post(
+        f"/api/games/{game_id}/takeback",
+        json={"shown_plies": 1, "user_clock_ms": 299_000, "bot_clock_ms": 300_000},
+    )
+    assert back.status_code == 200
+    assert back.json()["ply"] == 0
+    assert back.json()["in_theory"] is True
+    active = client.get("/api/games/active").json()["game"]
+    assert active["moves"] == []
+    assert active["clocks"] == {"user_ms": 299_000, "bot_ms": 300_000}
+    summary = client.post(f"/api/games/{game_id}/resign").json()
+    assert summary["deviations"] == []
+    assert summary["pgn"].split("\n\n")[-1] == "0-1"  # no moves left
+
+
+def test_take_back_refuses_a_shown_reply_and_a_finished_game(client, ids):
+    game_id = new_game(client, ids, color="white", pgn=ALAPIN_PGN).json()["state"]["game_id"]
+    client.post(f"/api/games/{game_id}/moves", json={"uci": "e2e4"})
+    url = f"/api/games/{game_id}/takeback"
+    assert client.post(url, json={"shown_plies": 2}).status_code == 409
+    assert client.post(url, json={"shown_plies": 0}).status_code == 422
+    client.post(f"/api/games/{game_id}/resign")
+    assert client.post(url, json={"shown_plies": 1}).status_code == 409
+
+
+def test_evaluate_reports_whites_side_and_finished_positions(client, engine):
+    start = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    body = client.post("/api/evaluate", json={"fen": start}).json()
+    assert body["cp"] == 0 and body["mate"] is None and body["best"]
+    up_a_knight = "rnbqkb1r/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR b KQkq - 0 1"
+    assert client.post("/api/evaluate", json={"fen": up_a_knight}).json()["cp"] == 300
+    calls = engine.evaluations
+    client.post("/api/evaluate", json={"fen": up_a_knight})
+    assert engine.evaluations == calls  # cached
+    mated = "rnb1kbnr/pppp1ppp/8/4p3/6Pq/5P2/PPPPP2P/RNBQKBNR w KQkq - 1 3"
+    assert client.post("/api/evaluate", json={"fen": mated}).json() == {
+        "cp": -10_000,
+        "mate": 0,
+        "best": None,
+    }
+
+
+def test_evaluate_refuses_an_invalid_position(client):
+    assert client.post("/api/evaluate", json={"fen": "nonsense"}).status_code == 422
+    no_kings = "8/8/8/8/8/8/8/8 w - - 0 1"
+    assert client.post("/api/evaluate", json={"fen": no_kings}).status_code == 422
+
+
+def test_reviews_mark_book_moves_and_the_deviation(client, ids):
+    game_id = new_game(client, ids, color="white", pgn=ALAPIN_PGN).json()["state"]["game_id"]
+    client.post(f"/api/games/{game_id}/moves", json={"uci": "e2e4"})
+    client.post(f"/api/games/{game_id}/moves", json={"uci": "d2d4"})  # 2. c3 is the book
+    client.post(f"/api/games/{game_id}/resign")
+    moves = client.get(f"/api/games/{game_id}/review").json()["moves"]
+    assert [(m["san"], m["book"], m["deviation"]) for m in moves[:3]] == [
+        ("e4", True, False),
+        ("c5", True, False),
+        ("d4", False, True),
+    ]
+    line = client.get(f"/api/lines/{ids[ALAPIN_PGN]}/review").json()["moves"]
+    assert all(move["book"] for move in line)

@@ -9,9 +9,10 @@ const KNIGHT_JUMPS = [[1, 2], [2, 1], [2, -1], [1, -2], [-1, -2], [-2, -1], [-2,
 /**
  * @param {string} square
  * @param {{color: "w" | "b", type: string}} piece
+ * @param {boolean} [chess960]  The king can castle from any square, to anywhere on its rank.
  * @returns {string[]}
  */
-export function premoveDestinations(square, piece) {
+export function premoveDestinations(square, piece, chess960 = false) {
   const file = FILES.indexOf(square[0]);
   const rank = Number(square[1]);
   /** @type {string[]} */
@@ -58,7 +59,11 @@ export function premoveDestinations(square, piece) {
       break;
     case "k":
       for (const [df, dr] of [...ROOK_RAYS, ...BISHOP_RAYS]) add(df, dr);
-      if (square === (piece.color === "w" ? "e1" : "e8")) {
+      if (chess960 && rank === (piece.color === "w" ? 1 : 8)) {
+        for (let df = -file; df < 8 - file; df += 1) {
+          if (Math.abs(df) > 1) add(df, 0);
+        }
+      } else if (square === (piece.color === "w" ? "e1" : "e8")) {
         add(-2, 0);
         add(2, 0);
       }

@@ -1,7 +1,11 @@
-// Move list in scoresheet style: numbered rows, white and black columns.
+// Move list in scoresheet style: numbered rows, white and black columns. The text is never
+// colored: a book move and a deviation are marked with an icon.
+
+import { t } from "./i18n.js";
+import { moveIcon } from "./icons.js";
 
 /**
- * @typedef {{san: string, outOfTheory: boolean, deviation: boolean}} PlyView
+ * @typedef {{san: string, uci?: string, outOfTheory: boolean, deviation: boolean}} PlyView
  */
 
 /**
@@ -37,14 +41,26 @@ function moveCell(ply, showTheoryMarks, number, currentPly) {
   const cell = document.createElement("div");
   cell.className = "move";
   if (!ply) return cell;
-  cell.textContent = ply.san;
+  const san = document.createElement("span");
+  san.className = "san";
+  san.textContent = ply.san;
+  cell.append(san);
   if (currentPly !== undefined) {
     cell.dataset.ply = String(number);
     cell.classList.toggle("current", number === currentPly);
   }
   if (showTheoryMarks) {
-    if (ply.deviation) cell.classList.add("deviation");
-    else if (ply.outOfTheory) cell.classList.add("out");
+    if (ply.deviation) {
+      cell.classList.add("deviation");
+      cell.prepend(moveIcon("deviation", t("icon.deviation")));
+      cell.title = t("icon.deviation");
+    } else if (ply.outOfTheory) {
+      cell.classList.add("out");
+    } else {
+      cell.classList.add("book");
+      cell.prepend(moveIcon("book", t("icon.book")));
+      cell.title = t("icon.book");
+    }
   }
   return cell;
 }

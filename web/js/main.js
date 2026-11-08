@@ -3,6 +3,7 @@
 import { api } from "./api.js";
 import { Board, PIECE_SETS } from "./board.js";
 import { GameController } from "./game.js";
+import { OpeningsScreen } from "./openings.js";
 import { initI18n, t } from "./i18n.js";
 import { initLayout } from "./layout.js";
 import { getPref, setPref } from "./prefs.js";
@@ -61,18 +62,18 @@ async function main() {
       levels,
       defaultLevel,
       timeControls,
-      (color) => game.renderIdle(color),
+      (color) => game.renderIdle(color, setup.previewFen()),
       (chosen) => {
         review.close();
         void game.start(chosen);
       },
-      (variantId) => void review.openLine(variantId),
     );
+    new OpeningsScreen(repertoires, (variantId) => void review.openLine(variantId));
     const review = new Review(
       board,
-      () => game.renderIdle(setup.color),
+      () => game.renderIdle(setup.color, setup.previewFen()),
       (gameId, ply) => {
-        byId("tab-from-saved").click();
+        byId("tab-new").click();
         void setup.chooseSaved(gameId, ply);
       },
     );
@@ -81,7 +82,12 @@ async function main() {
       (key) => setup.timeLabelFor(key),
       setup,
       (gameId) => void review.openGame(gameId),
+      () => {
+        review.close();
+        game.leaveGame();
+      },
     );
+    game.previewFen = () => setup.previewFen();
     const { game: active } = await api.activeGame();
     if (active) game.resume(active, setup.clockFor(active.setup.time_control));
     const buildTag = health.engine.build_tag ? ` (${health.engine.build_tag})` : "";

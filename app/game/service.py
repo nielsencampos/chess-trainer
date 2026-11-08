@@ -3,6 +3,7 @@
 import random
 import secrets
 import string
+import time
 from collections import OrderedDict
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
@@ -15,7 +16,16 @@ from app.engine.levels import Level
 from app.engine.process import MoveEngine
 from app.game.imports import read_pgn_text
 from app.game.pace import TIME_CONTROLS, clock_after_move, engine_budget_s, human_delay_ms
-from app.game.session import Deviation, GameResult, GameSession, MoveRecord, Selection, Side
+from app.game.session import (
+    Deviation,
+    GameResult,
+    GameSession,
+    MoveRecord,
+    Selection,
+    Side,
+    chess960_line,
+    chess960_position_of,
+)
 from app.game.store import GAME_LINE_PREFIX, GameStore, restore_session
 
 MAX_GAMES_IN_MEMORY = 32
@@ -82,15 +92,20 @@ class GameService:
         time_control: str,
         ui: Mapping[str, bool] | None = None,
         from_game: FromGame | None = None,
+        chess960_position: int | None = None,
     ) -> tuple[GameSession, BotReply | None]:
-        if from_game is None and not variant_ids:
+        if chess960_position is not None and (from_game is not None or variant_ids):
+            raise InvalidSetupError("a Chess960 game has no opening lines")
+        if chess960_position is None and from_game is None and not variant_ids:
             raise InvalidSetupError("select at least one variation")
         if level not in self.levels:
             raise InvalidSetupError(f"unknown level {level!r}")
         if time_control not in TIME_CONTROLS:
             raise InvalidSetupError(f"unknown time control {time_control!r}")
         variants = []
-        if from_game is not None:
+        if chess960_position is not None:
+            variants.append(chess960_line(chess960_position))
+        elif from_game is not None:
             variants.append(self._saved_game_line(from_game))
         else:
             for variant_id in dict.fromkeys(variant_ids):
@@ -112,6 +127,7 @@ class GameService:
             rng=self.rng,
             opening_names=self.opening_names,
             engine_name=self.engine.name,
+            chess960_position=chess960_position,
         )
         session.ui = dict(ui or {})
         if from_game is not None and from_game.from_position:
@@ -139,6 +155,13 @@ class GameService:
         if line is None:
             raise InvalidSetupError("this game cannot be played from")
         return line
+
+    def chess960_start(self, fen: str | None) -> tuple[int, str]:
+        """(number, FEN) of a starting position: the given FEN if there is one, or a random one."""
+        position = self.rng.randrange(960) if fen is None else chess960_position_of(fen)
+        if position is None:
+            raise InvalidSetupError("not a Chess960 starting position")
+        return position, chess.Board.from_chess960_pos(position).fen()
 
     @staticmethod
     def _play_given_moves(session: GameSession, line: Variant) -> None:
@@ -218,6 +241,23 @@ class GameService:
         self.store.save(session)
         return session
 
+    def take_back(
+        self,
+        game_id: str,
+        shown_plies: int,
+        user_clock_ms: int | None,
+        bot_clock_ms: int | None,
+    ) -> GameSession:
+        """The clocks come back as they were before the user's move."""
+        session = self.get(game_id)
+        session.take_back(shown_plies)
+        if user_clock_ms is not None:
+            session.user_clock_ms = user_clock_ms
+        if bot_clock_ms is not None:
+            session.bot_clock_ms = bot_clock_ms
+        self.store.save(session)
+        return session
+
     def flag(self, game_id: str, side: Side, shown_plies: int) -> GameSession:
         session = self.get(game_id)
         session.flag(side, shown_plies)
@@ -227,6 +267,7 @@ class GameService:
     async def _bot_turn(self, session: GameSession) -> BotReply | None:
         bot_clock_ms = session.bot_clock_ms
         book_move = session.next_book_move()
+        search_started = time.monotonic()
         if book_move is not None:
             move = chess.Move.from_uci(book_move.uci)
         else:
@@ -240,11 +281,15 @@ class GameService:
             if session.pace == "human"
             else 0
         )
+        # Like the clock on screen, which runs from the user's move until the bot's move is shown:
+        # the search happens inside the delay, and only a longer search adds to it.
+        search_ms = int((time.monotonic() - search_started) * 1000)
+        used_ms = max(delay_ms, search_ms)
         clock_after = None
         if session.time_control is not None and bot_clock_ms is not None:
             moves_made = sum(record.by == "bot" for record in session.moves) + 1
-            clock_after = clock_after_move(session.time_control, bot_clock_ms, delay_ms, moves_made)
-        record = session.play_bot_move(move, "book" if in_book else "engine", clock_after, delay_ms)
+            clock_after = clock_after_move(session.time_control, bot_clock_ms, used_ms, moves_made)
+        record = session.play_bot_move(move, "book" if in_book else "engine", clock_after, used_ms)
         session.bot_clock_ms = clock_after
         self.store.save(session)
         return BotReply(record, delay_ms)

@@ -2,6 +2,7 @@
 
 import { api } from "./api.js";
 import { t } from "./i18n.js";
+import { EvalBar } from "./evalbar.js";
 import { renderMoveList } from "./movelist.js";
 
 /** @param {string} id */
@@ -26,6 +27,7 @@ export class Review {
     this.gameId = null;
     this.ply = FIRST;
     this.flipped = false;
+    this.evalBar = new EvalBar();
 
     byId("review-first").addEventListener("click", () => this.goTo(FIRST));
     byId("review-prev").addEventListener("click", () => this.goTo(this.ply - 1));
@@ -97,6 +99,7 @@ export class Review {
     this.flipped = !this.flipped;
     this.board.setOrientation(this.flipped ? "b" : "w");
     this.renderNames();
+    this.goTo(this.ply);
   }
 
   /** @param {number} ply */
@@ -104,17 +107,19 @@ export class Review {
     if (!this.active) return;
     this.ply = Math.min(this.lastPly, Math.max(FIRST, ply));
     const move = this.data.moves[this.ply - 1];
-    this.board.setPosition(move ? move.fen : this.data.start_fen, {
+    const fen = move ? move.fen : this.data.start_fen;
+    this.evalBar.show(fen, this.data.chess960 === true, this.flipped ? "b" : "w");
+    this.board.setPosition(fen, {
       lastMove: move ? [move.uci.slice(0, 2), move.uci.slice(2, 4)] : [],
     });
     renderMoveList(
       byId("movelist"),
       this.data.moves.map((/** @type {any} */ item) => ({
         san: item.san,
-        outOfTheory: false,
-        deviation: false,
+        outOfTheory: item.book !== true,
+        deviation: item.deviation === true,
       })),
-      false,
+      true,
       this.ply,
     );
     byId("review-count").textContent = t("review.count", { ply: this.ply, total: this.lastPly });
@@ -141,6 +146,7 @@ export class Review {
   close() {
     if (!this.active) return;
     this.active = false;
+    this.evalBar.hide();
     this.data = null;
     byId("review-bar").hidden = true;
     this.onClose();

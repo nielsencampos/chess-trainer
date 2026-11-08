@@ -1,13 +1,10 @@
 // The setup card: color, openings and variations, level, clock, pace, options.
-// The whole catalog is selectable, so families render their lines only when opened.
 
 import { api } from "./api.js";
-import { localizedName, t } from "./i18n.js";
+import { t } from "./i18n.js";
+import { OpeningTree } from "./opening-tree.js";
 import { getPref, setPref } from "./prefs.js";
 
-const SEARCH_DEBOUNCE_MS = 150;
-const GROUPS = ["kings-pawn", "queens-pawn", "flank", "others"];
-const MAX_SEARCH_RESULTS_PER_FAMILY = 200;
 
 /**
  * @typedef {{variant_id: string, names: Record<string, string>, eco: string | null,
@@ -23,7 +20,8 @@ const MAX_SEARCH_RESULTS_PER_FAMILY = 200;
  *   color: "white" | "black", variant_ids: string[], level: string, pace: "human" | "instant",
  *   time_control: string, clock: TimeControlInfo | null,
  *   from_game?: {game_id: string, upto_ply: number, mode: string} | null,
- *   scoresheet: boolean, warning: boolean, autoplay: boolean, premoves: boolean,
+ *   chess960?: {position: number, fen: string} | null,
+ *   scoresheet: boolean, warning: boolean, premoves: boolean,
  * }} GameSetup
  */
 
@@ -33,14 +31,6 @@ const radios = (selector) => /** @type {NodeListOf<HTMLInputElement>} */ (docume
 /** @param {string} id */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
-/**
- * @param {VariantInfo} variant
- * @param {string} query  Lowercase.
- */
-function matches(variant, query) {
-  return [variant.opening, variant.eco, variant.pgn].some((text) => text?.toLowerCase().includes(query));
-}
-
 export class SetupCard {
   /**
    * @param {RepertoireInfo[]} repertoires
@@ -49,21 +39,27 @@ export class SetupCard {
    * @param {TimeControls} timeControls
    * @param {(color: "white" | "black") => void} onColorChange
    * @param {(setup: GameSetup) => void} onPlay
-   * @param {(variantId: string) => void} onViewLine
    */
-  constructor(repertoires, levels, defaultLevel, timeControls, onColorChange, onPlay, onViewLine) {
-    this.onViewLine = onViewLine;
+  constructor(repertoires, levels, defaultLevel, timeControls, onColorChange, onPlay) {
     this.repertoires = repertoires; // Already in the book's order.
-    /** @type {{all: HTMLInputElement, count: HTMLElement, variants: VariantInfo[]}[]} */
-    this.nodes = [];
-    /** @type {HTMLInputElement[]} */
-    this.boxes = [];
     this.onColorChange = onColorChange;
     const known = new Set(repertoires.flatMap((rep) => rep.variants.map((v) => v.variant_id)));
-    /** @type {Set<string>} */
-    this.selected = new Set(getPref("selected", []).filter((id) => known.has(id)));
-    // The field is usable before the book arrives, so it may already have text.
-    this.query = byId("opening-search").value.trim().toLowerCase();
+    this.tree = new OpeningTree(
+      repertoires,
+      {
+        search: byId("opening-search"),
+        container: byId("openings"),
+        total: byId("selected-total"),
+        selectAll: byId("select-all"),
+        clear: byId("clear-selection"),
+        noMatches: byId("no-matches"),
+      },
+      getPref("selected", []).filter((/** @type {string} */ id) => known.has(id)),
+      (selected) => {
+        setPref("selected", [...selected]);
+        this.updateSelectionState();
+      },
+    );
 
     const levelSelect = byId("level");
     for (const key of levels) levelSelect.add(new Option(t(`level.${key}`), key));
@@ -87,7 +83,6 @@ export class SetupCard {
     this.setRadio("pace", getPref("pace", "human"));
     byId("opt-scoresheet").checked = getPref("scoresheet", false);
     byId("opt-warning").checked = getPref("warning", true);
-    byId("opt-autoplay").checked = getPref("autoplay", false);
     byId("opt-premoves").checked = getPref("premoves", true);
 
     for (const radio of radios('input[name="color"]')) {
@@ -96,44 +91,35 @@ export class SetupCard {
         this.onColorChange(this.color);
       });
     }
-    let debounce = 0;
-    byId("opening-search").addEventListener("input", (/** @type {any} */ event) => {
-      clearTimeout(debounce);
-      debounce = setTimeout(() => {
-        this.query = event.target.value.trim().toLowerCase();
-        this.renderOpenings();
-      }, SEARCH_DEBOUNCE_MS);
-    });
     /** @type {"opening" | "saved"} */
     this.mode = "opening";
+    this.shown = true;
+    for (const radio of radios('input[name="new-mode"]')) {
+      radio.addEventListener("change", () => void this.setMode(/** @type {any} */ (radio.value)));
+    }
     /** @type {any[]} */
     this.savedGames = [];
     /** @type {string | null} */
     this.savedGameId = null;
-    byId("select-all").addEventListener("click", () => {
-      for (const repertoire of this.repertoires) {
-        for (const variant of this.shownVariants(repertoire)) {
-          this.selected.add(variant.variant_id);
-        }
-      }
-      this.saveSelection();
-    });
     byId("from-saved-search").addEventListener("input", () => this.renderSavedGames());
     for (const radio of radios('input[name="from-mode"]')) {
       radio.addEventListener("change", () => this.renderFromSavedHelp());
     }
     this.renderFromSavedHelp();
-    byId("clear-selection").addEventListener("click", () => {
-      this.selected.clear();
-      this.saveSelection();
-      this.renderOpenings();
+    /** @type {{position: number, fen: string} | null} */
+    this.chess960 = null;
+    byId("chess960-roll").addEventListener("click", () => void this.loadChess960());
+    byId("chess960-fen-form").addEventListener("submit", (/** @type {Event} */ event) => {
+      event.preventDefault();
+      const fen = byId("chess960-fen").value.trim();
+      if (fen) void this.loadChess960(fen);
     });
     byId("play").addEventListener("click", () => {
       const setup = this.read();
       this.save(setup);
       onPlay(setup);
     });
-    this.renderOpenings();
+    this.updateSelectionState();
   }
 
   /** @param {TimeControlInfo} item */
@@ -146,6 +132,7 @@ export class SetupCard {
     if (item.increment_ms > 0) extra = t("setup.tc.increment", { seconds });
     if (item.delay_kind === "bronstein") extra = t("setup.tc.delay", { seconds });
     if (item.delay_kind === "us") extra = t("setup.tc.usDelay", { seconds });
+    if (item.base_ms < 60_000) return t("setup.tc.seconds", { seconds: item.base_ms / 1000 });
     return `${t("setup.tc.minutes", { minutes })}${extra}`;
   }
 
@@ -204,211 +191,53 @@ export class SetupCard {
     return /** @type {"white" | "black"} */ (this.radioValue("color"));
   }
 
-  renderOpenings() {
-    this.nodes = [];
-    this.boxes = [];
-    const container = byId("openings");
-    const elements = [];
-    for (const group of GROUPS) {
-      const members = this.repertoires
-        .filter((repertoire) => repertoire.group === group)
-        .map((repertoire) => ({ repertoire, shown: this.shownVariants(repertoire) }))
-        .filter((item) => item.shown.length > 0);
-      if (members.length === 0) continue;
-      const main = members.filter((item) => item.repertoire.order !== null);
-      const rest = members.filter((item) => item.repertoire.order === null);
-      const children = () => {
-        const list = main.map((item) => this.openingNode(item.repertoire, item.shown));
-        if (main.length > 0 && rest.length > 0) {
-          list.push(
-            this.treeNode(
-              t("tree.others"),
-              rest.flatMap((item) => item.shown),
-              () => rest.map((item) => this.openingNode(item.repertoire, item.shown)),
-              "tree-others",
-            ),
-          );
-        } else {
-          list.push(...rest.map((item) => this.openingNode(item.repertoire, item.shown)));
-        }
-        return list;
-      };
-      const node = this.treeNode(
-        t(`tree.group.${group}`),
-        members.flatMap((item) => item.shown),
-        children,
-        "tree-group",
-        true,
-      );
-      node.dataset.group = group;
-      elements.push(node);
-    }
-    container.replaceChildren(...elements);
-    byId("no-matches").hidden = elements.length > 0;
-    this.updateSelectionState();
-  }
-
-  /** @param {RepertoireInfo} repertoire */
-  shownVariants(repertoire) {
-    const familyMatches = localizedName(repertoire.names).toLowerCase().includes(this.query);
-    return this.query && !familyMatches
-      ? repertoire.variants.filter((variant) => matches(variant, this.query))
-      : repertoire.variants;
+  /** The position the board shows while choosing, if it is not the normal one. */
+  previewFen() {
+    return this.shown && this.mode === "chess960" ? this.chess960?.fen : undefined;
   }
 
   /**
-   * @param {RepertoireInfo} repertoire
-   * @param {VariantInfo[]} shown
+   * Rolls the dice, or uses the position the user typed.
+   * @param {string} [fen]
    */
-  openingNode(repertoire, shown) {
-    const details = this.treeNode(
-      localizedName(repertoire.names),
-      shown,
-      () => this.subgroupNodes(shown),
-      "opening",
-      false,
-      true,
-    );
-    details.dataset.repertoire = repertoire.repertoire_id;
-    return details;
-  }
-
-  /** @param {VariantInfo[]} shown */
-  subgroupNodes(shown) {
-    /** @type {Map<string, VariantInfo[]>} */
-    const groups = new Map();
-    /** @type {VariantInfo[]} */
-    const loose = [];
-    for (const variant of shown) {
-      if (!variant.subgroup) {
-        loose.push(variant);
-        continue;
-      }
-      const name = localizedName(variant.subgroup);
-      groups.set(name, [...(groups.get(name) ?? []), variant]);
+  async loadChess960(fen) {
+    byId("chess960-error").hidden = true;
+    try {
+      this.chess960 = await api.chess960Start(fen);
+    } catch (error) {
+      console.error(error);
+      byId("chess960-error").hidden = false;
+      return;
     }
-    const lines = (/** @type {VariantInfo[]} */ list) => () =>
-      list.map((variant) => this.variantElement(variant));
-    const nodes = [...groups].map(([name, list]) =>
-      this.treeNode(name, list, lines(list), "tree-variant"),
-    );
-    if (groups.size === 0) return lines(loose)();
-    if (loose.length > 0) {
-      nodes.push(this.treeNode(t("tree.others"), loose, lines(loose), "tree-variant"));
-    }
-    return nodes;
+    if (!fen) byId("chess960-fen").value = "";
+    byId("chess960-number").textContent = t("chess960.position", {
+      number: /** @type {{position: number}} */ (this.chess960).position,
+    });
+    this.updateSelectionState();
+    this.onColorChange(this.color);
   }
 
   /**
-   * One collapsible level, with a checkbox for everything inside it.
-   * @param {string} label
-   * @param {VariantInfo[]} variants
-   * @param {() => HTMLElement[]} children
-   * @param {string} className
-   * @param {boolean} [startOpen]
-   * @param {boolean} [lazy]  Builds what is inside only when first opened.
+   * The setup is on screen, so the board can show what it is choosing.
+   * @param {boolean} shown
    */
-  treeNode(label, variants, children, className, startOpen = false, lazy = false) {
-    const details = document.createElement("details");
-    details.className = `tree-node ${className}`;
-    const summary = document.createElement("summary");
-    const all = document.createElement("input");
-    all.type = "checkbox";
-    all.className = className === "opening" ? "opening-check" : "tree-check";
-    all.setAttribute("aria-label", label);
-    const name = document.createElement("span");
-    name.className = "opening-name";
-    name.textContent = label;
-    const count = document.createElement("span");
-    count.className = "opening-count";
-    summary.append(all, name, count);
-
-    const list = document.createElement("div");
-    list.className = "tree-children";
-    const build = () => {
-      if (!list.hasChildNodes()) list.append(...children());
-    };
-    all.addEventListener("click", (event) => event.stopPropagation());
-    all.addEventListener("change", () => {
-      for (const variant of variants) {
-        if (all.checked) this.selected.add(variant.variant_id);
-        else this.selected.delete(variant.variant_id);
-      }
-      this.saveSelection();
-    });
-    details.addEventListener("toggle", () => {
-      if (details.open) build();
-    });
-    this.nodes.push({ all, count, variants });
-    this.refreshNode({ all, count, variants });
-    details.append(summary, list);
-    if (!lazy) build();
-    // Show results right away when a search narrowed things down.
-    if (startOpen || (this.query && variants.length <= MAX_SEARCH_RESULTS_PER_FAMILY)) {
-      build();
-      details.open = true;
-    }
-    return details;
+  setShown(shown) {
+    if (shown === this.shown) return;
+    this.shown = shown;
+    this.onColorChange(this.color);
   }
 
-  /** @param {{all: HTMLInputElement, count: HTMLElement, variants: VariantInfo[]}} node */
-  refreshNode({ all, count, variants }) {
-    const selected = variants.filter((variant) => this.selected.has(variant.variant_id)).length;
-    all.checked = selected === variants.length;
-    all.indeterminate = selected > 0 && selected < variants.length;
-    count.textContent = t("setup.selectedCount", { selected, total: variants.length });
-  }
-
-  /** @param {VariantInfo} variant */
-  variantElement(variant) {
-    const label = document.createElement("label");
-    label.className = "variant";
-    const box = document.createElement("input");
-    box.type = "checkbox";
-    box.value = variant.variant_id;
-    box.checked = this.selected.has(variant.variant_id);
-    box.addEventListener("change", () => {
-      if (box.checked) this.selected.add(variant.variant_id);
-      else this.selected.delete(variant.variant_id);
-      this.saveSelection();
-    });
-    this.boxes.push(box);
-    const text = document.createElement("span");
-    text.className = "variant-text";
-    const name = document.createElement("span");
-    name.textContent = localizedName(variant.names);
-    const moves = document.createElement("span");
-    moves.className = "variant-moves";
-    moves.textContent = variant.pgn;
-    text.append(name, moves);
-    const eco = document.createElement("span");
-    eco.className = "variant-eco";
-    eco.textContent = variant.eco ?? "";
-    const view = document.createElement("button");
-    view.type = "button";
-    view.className = "view-button";
-    view.textContent = t("review.view");
-    view.addEventListener("click", (event) => {
-      event.preventDefault(); // It sits inside the row's label.
-      this.onViewLine(variant.variant_id);
-    });
-    label.append(box, text, eco, view);
-    return label;
-  }
-
-  saveSelection() {
-    setPref("selected", [...this.selected]);
-    for (const node of this.nodes) this.refreshNode(node);
-    for (const box of this.boxes) box.checked = this.selected.has(box.value);
-    this.updateSelectionState();
-  }
-
-  /** @param {"opening" | "saved"} mode */
+  /** @param {"opening" | "saved" | "chess960"} mode */
   async setMode(mode) {
+    const changed = mode !== this.mode;
     this.mode = mode;
+    this.setRadio("new-mode", mode);
     byId("openings-field").hidden = mode !== "opening";
     byId("from-saved").hidden = mode !== "saved";
+    byId("chess960").hidden = mode !== "chess960";
     this.updateSelectionState();
+    if (changed) this.onColorChange(this.color);
+    if (mode === "chess960" && !this.chess960) await this.loadChess960();
     if (mode !== "saved") return;
     try {
       this.savedGames = (await api.savedGames()).games;
@@ -504,26 +333,24 @@ export class SetupCard {
   }
 
   updateSelectionState() {
+    let ready = this.tree.selected.size > 0;
+    let hint = "setup.selectOne";
     if (this.mode === "saved") {
-      const ready = this.savedGameId !== null;
-      byId("play").disabled = !ready;
-      byId("setup-hint").hidden = ready;
-      byId("setup-hint").textContent = t("setup.selectGame");
-      return;
+      ready = this.savedGameId !== null;
+      hint = "setup.selectGame";
+    } else if (this.mode === "chess960") {
+      ready = this.chess960 !== null;
     }
-    byId("setup-hint").textContent = t("setup.selectOne");
-    const total = this.selected.size;
-    byId("selected-total").textContent = t("setup.selectedTotal", { count: total });
-    byId("clear-selection").hidden = total === 0;
-    byId("play").disabled = total === 0;
-    byId("setup-hint").hidden = total > 0;
+    byId("play").disabled = !ready;
+    byId("setup-hint").textContent = t(hint);
+    byId("setup-hint").hidden = ready || this.mode === "chess960";
   }
 
   /** @returns {GameSetup} */
   read() {
     return {
       color: this.color,
-      variant_ids: this.mode === "opening" ? [...this.selected] : [],
+      variant_ids: this.mode === "opening" ? [...this.tree.selected] : [],
       from_game:
         this.mode === "saved" && this.savedGameId
           ? {
@@ -532,13 +359,13 @@ export class SetupCard {
               mode: this.radioValue("from-mode") ?? "line",
             }
           : null,
+      chess960: this.mode === "chess960" ? this.chess960 : null,
       level: byId("level").value,
       pace: /** @type {"human" | "instant"} */ (this.radioValue("pace")),
       time_control: byId("time-control").value,
       clock: this.selectedClock(),
       scoresheet: this.allowsScoresheet() && byId("opt-scoresheet").checked,
       warning: byId("opt-warning").checked,
-      autoplay: byId("opt-autoplay").checked,
       premoves: byId("opt-premoves").checked,
     };
   }
@@ -551,7 +378,6 @@ export class SetupCard {
     setPref("timeControl", setup.time_control);
     setPref("scoresheet", byId("opt-scoresheet").checked);
     setPref("warning", setup.warning);
-    setPref("autoplay", setup.autoplay);
     setPref("premoves", setup.premoves);
   }
 }

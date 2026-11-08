@@ -139,12 +139,12 @@ class SoundPlayer {
   }
 
   /**
-   * @param {{flags: string, captured?: string}} move  A chess.js move.
+   * @param {import("./rules.js").PlayedMove} move
    * @param {boolean} byBot
    */
   playMove(move, byBot) {
-    if (/[kq]/.test(move.flags)) this.play("castle", byBot);
-    else if (move.captured) this.play("capture", byBot);
+    if (move.castle) this.play("castle", byBot);
+    else if (move.capture) this.play("capture", byBot);
     else this.play("move", byBot);
   }
 

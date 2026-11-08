@@ -11,7 +11,7 @@ ALAPIN = "1. e4 c5 2. c3"
 
 
 def family(page: Page, name: str):
-    return page.locator(f'.opening[data-repertoire="{name}"]')
+    return page.locator(f'#openings .opening[data-repertoire="{name}"]')
 
 
 def hold_repertoires(page: Page) -> list:
@@ -62,13 +62,15 @@ def test_same_openings_for_both_colors_and_board_flips(page: Page):
 
 def test_tree_of_groups_openings_subgroups_and_lines(page: Page):
     page.goto("/")
-    groups = page.locator(".tree-group > summary .opening-name")
+    groups = page.locator("#openings .tree-group > summary .opening-name")
     expect(groups).to_have_text(
         ["King's Pawn (1.e4)", "Queen's Pawn (1.d4)", "Flank (1.c4, 1.Nf3 ...)", "Others"]
     )
-    first = page.locator('[data-group="kings-pawn"] .opening > summary .opening-name').first
+    first = page.locator(
+        '#openings [data-group="kings-pawn"] .opening > summary .opening-name'
+    ).first
     expect(first).to_have_text("Sicilian Defense")
-    others = page.locator('[data-group="kings-pawn"] > .tree-children > .tree-others')
+    others = page.locator('#openings [data-group="kings-pawn"] > .tree-children > .tree-others')
     expect(others).to_have_count(1)
 
     caro = family(page, "caro-kann-defense")
@@ -85,7 +87,7 @@ def test_tree_of_groups_openings_subgroups_and_lines(page: Page):
 
 def test_checking_a_group_selects_everything_inside(page: Page):
     page.goto("/")
-    group = page.locator('[data-group="flank"]')
+    group = page.locator('#openings [data-group="flank"]')
     group.locator("> summary .tree-check").check()
     count = group.locator("> summary .opening-count").text_content().split("/")[0]
     assert int(count) > 100
@@ -159,7 +161,7 @@ def test_select_all_respects_the_search(page: Page):
     expect(page.locator("#openings .opening").first).to_be_visible()
     page.locator("#select-all").click()
     expect(page.locator("#selected-total")).to_have_text("3865 selected")
-    expect(page.locator('[data-group="flank"] > summary .tree-check')).to_be_checked()
+    expect(page.locator('#openings [data-group="flank"] > summary .tree-check')).to_be_checked()
     expect(page.locator("#play")).to_be_enabled()
     page.locator("#clear-selection").click()
     expect(page.locator("#selected-total")).to_have_text("0 selected")
@@ -196,10 +198,18 @@ def test_game_from_the_ui_selection(page: Page):
 def test_time_controls_and_levels_are_offered(page: Page):
     page.goto("/")
     groups = page.locator("#time-control optgroup")
-    expect(groups).to_have_count(3)
-    assert [g.get_attribute("label") for g in groups.all()] == ["Blitz", "Rapid", "Classical"]
+    expect(groups).to_have_count(4)
+    assert [g.get_attribute("label") for g in groups.all()] == [
+        "Bullet",
+        "Blitz",
+        "Rapid",
+        "Classical",
+    ]
     expect(page.locator("#time-control option")).to_have_text(
         [
+            "30 s",
+            "1 min",
+            "2 min",
             "5 min",
             "10 min",
             "3 min, +2 s",
@@ -580,8 +590,8 @@ def test_logo_is_in_the_header_and_the_browser_tab(page: Page):
     expect(logo).to_have_attribute("alt", "Chess Trainer")
     expect(page).to_have_title("Chess Trainer")
     page.wait_for_function("document.querySelector('.brand-logo').naturalWidth > 0")
-    assert abs(logo.bounding_box()["width"] - 256) <= 1
-    assert abs(logo.bounding_box()["height"] - 256) <= 1
+    assert abs(logo.bounding_box()["width"] - 114) <= 1
+    assert abs(logo.bounding_box()["height"] - 114) <= 1
     assert page.locator('link[rel="icon"]').get_attribute("href") == "logo.svg"
     for path in ("logo.svg", "logo.png"):
         assert page.request.get(f"/{path}").ok
@@ -591,3 +601,37 @@ def test_footer_shows_the_engine_version(page: Page):
     page.goto("/")
     expect(page.locator("#footer-versions")).to_contain_text("Chess Trainer 0.1.0")
     expect(page.locator("#footer-versions")).to_contain_text("Stockfish")
+
+
+def test_bullet_game_starts_with_thirty_seconds(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="30s")
+    page.goto("/")
+    options = page.locator('#time-control optgroup[label="Bullet"] option')
+    expect(options).to_have_text(["30 s", "1 min", "2 min"])
+    expect(page.locator("#time-control")).to_have_value("30s")
+    page.locator("#play").click()
+    expect(page.locator("#bottom-clock")).to_contain_text("00:30")
+    expect(page.locator("#top-clock")).to_contain_text("00:30")
+
+
+def test_clock_shows_tenths_below_ten_seconds(page: Page):
+    page.goto("/")
+    shown = page.evaluate(
+        """async () => {
+            const { formatClock } = await import("/js/clock.js");
+            return [125000, 30000, 10001, 10000, 9901, 9900, 1234, 300, 1, 0, -5].map(formatClock);
+        }"""
+    )
+    assert shown == [
+        "02:05",
+        "00:30",
+        "00:11",
+        "00:10",
+        "00:10",
+        "00:09.9",
+        "00:01.3",
+        "00:00.3",
+        "00:00.1",
+        "00:00.0",
+        "00:00.0",
+    ]

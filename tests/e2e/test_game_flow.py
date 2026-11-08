@@ -2,11 +2,13 @@
 
 import re
 import uuid
+from pathlib import Path
 
 from playwright.sync_api import Page, expect
 
 from tests.e2e.conftest import (
     BASE_URL,
+    choose_new_game_mode,
     click_move,
     drag_move,
     moves_text,
@@ -55,9 +57,11 @@ def test_book_then_engine_then_resign_with_end_card(page: Page, seed_prefs):
     expect(page.locator("#end-variation")).to_contain_text("Sicilian Defense: Alapin Variation")
     expect(page.locator("#end-theory")).to_have_text("until move 2 (3 of 4 plies)")
     expect(page.locator("#end-deviations")).to_contain_text("No deviations.")
-    href = page.locator("#lichess-link").get_attribute("href")
-    assert href.startswith("https://lichess.org/analysis/pgn/e4_c5_c3_")
-    assert href.endswith("?color=white")
+    # The result sits under the moves, the menu is back, and nothing else is offered.
+    expect(page.locator(".movebar #end-card")).to_be_visible()
+    expect(page.locator("#sidebar-tabs")).to_be_visible()
+    expect(page.locator("#sidebar-tabs .tab.active")).to_have_count(0)
+    expect(page.locator("#end-card .button")).to_have_text(["Copy PGN", "Download PGN"])
 
 
 def test_deviation_is_marked_and_listed_with_the_expected_move(page: Page, seed_prefs):
@@ -126,7 +130,7 @@ def test_opening_name_follows_the_position_even_outside_the_selection(page: Page
     expect(name).to_contain_text("Sicilian Defense")
     resign(page)
     expect(name).to_contain_text("Sicilian Defense")
-    page.locator("#change-setup").click()
+    page.locator("#tab-new").click()
     expect(name).to_have_text("—")
     assert moves_text(page) == []
 
@@ -190,33 +194,6 @@ def test_human_pace_makes_the_bot_wait(page: Page, seed_prefs):
     assert moves_text(page) == ["e4"]  # a book reply takes at least 500 ms at this pace
     wait_for_ply(page, 2)
     wait_for_your_move(page)
-
-
-def test_auto_play_starts_the_next_game_and_can_be_cancelled(page: Page, seed_prefs):
-    seed_prefs([ALAPIN], color="white", timeControl="none", autoplay=True)
-    page.goto("/")
-    play(page)
-    wait_for_your_move(page)
-    click_move(page, "e2", "e4")
-    wait_for_ply(page, 2)
-    wait_for_your_move(page)
-
-    resign(page)
-    expect(page.locator("#auto-next-text")).to_contain_text("Next game in")
-    page.locator("#auto-next-cancel").click()
-    expect(page.locator("#auto-next")).to_be_hidden()
-    page.wait_for_timeout(1200)
-    expect(page.locator("#end-card")).to_be_visible()
-
-    page.locator("#next-game").click()
-    wait_for_your_move(page)
-    click_move(page, "e2", "e4")
-    wait_for_ply(page, 2)
-    wait_for_your_move(page)
-    resign(page)
-    expect(page.locator("#end-card")).to_be_hidden(timeout=8000)  # the countdown ran out
-    wait_for_your_move(page)
-    assert moves_text(page) == []
 
 
 def test_reload_continues_the_game(page: Page, seed_prefs):
@@ -330,11 +307,11 @@ def test_saved_games_tab_lists_filters_and_exports(page: Page, seed_prefs):
     page.goto("/")
     expect(page.locator("#sidebar-tabs")).to_be_visible()
     finish_quick_game(page)
-    page.locator("#next-game").click()
+    page.locator("#tab-new").click()
+    play(page)
     wait_for_your_move(page)
     expect(page.locator("#sidebar-tabs")).to_be_hidden()  # no tabs during a game
     resign(page)
-    page.locator("#change-setup").click()
 
     page.locator("#tab-saved").click()
     expect(page.locator("#setup-card")).to_be_hidden()
@@ -372,7 +349,6 @@ def test_saved_games_select_all_uses_the_filter(page: Page, seed_prefs):
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     finish_quick_game(page)
-    page.locator("#change-setup").click()
     page.locator("#tab-saved").click()
     page.locator(".saved-game").first.wait_for()
     page.locator("#saved-search").fill("Sicilian")
@@ -438,7 +414,7 @@ def import_line(page: Page) -> str:
 
 
 def choose_saved(page: Page, name: str, ply_label: str | None = None, position=False) -> None:
-    page.locator("#tab-from-saved").click()
+    choose_new_game_mode(page, "saved")
     expect(page.locator("#setup-card")).to_be_visible()
     expect(page.locator("#openings-field")).to_be_hidden()
     expect(page.locator("#play")).to_be_disabled()
@@ -491,6 +467,7 @@ def test_menu_shows_one_screen_at_a_time(page: Page):
         "#tab-new": "#setup-card",
         "#tab-saved": "#saved-card",
         "#tab-import": "#import-card",
+        "#tab-openings": "#openings-card",
     }
     for tab, card in screens.items():
         page.locator(tab).click()
@@ -587,16 +564,39 @@ def test_play_from_here_goes_to_a_new_game_at_that_move(page: Page):
 def test_review_a_book_line_and_start_a_game_after_it(page: Page, seed_prefs):
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
-    page.locator("#opening-search").fill(ALAPIN)
-    line = page.locator(".variant", has_text="Alapin Variation").first
+    page.locator("#tab-openings").click()
+    page.locator("#lines-search").fill(ALAPIN)
+    line = page.locator("#lines-tree .variant", has_text="Alapin Variation").first
     line.locator(".view-button").click()
     expect(page.locator("#review-count")).to_have_text("3 / 3")
     expect(page.locator("#review-play")).to_be_hidden()
-    expect(line.locator("input")).to_be_checked()  # the button does not toggle the checkbox
+    expect(line.locator("input")).not_to_be_checked()  # the button does not toggle the checkbox
+    page.locator("#tab-new").click()
     play(page)
     expect(page.locator("#review-bar")).to_be_hidden()
     wait_for_your_move(page)
     assert moves_text(page) == []
+
+
+def test_openings_exports_ticked_lines_apart_from_what_new_game_trains(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none")
+    page.goto("/")
+    expect(page.locator("#selected-total")).to_have_text("1 selected")
+    page.locator("#tab-openings").click()
+    expect(page.locator("#setup-card")).to_be_hidden()
+    expect(page.locator("#lines-total")).to_have_text("0 selected")
+    expect(page.locator("#lines-export")).to_be_disabled()
+    page.locator("#lines-search").fill(ALAPIN)
+    line = page.locator("#lines-tree .variant", has_text="Alapin Variation").first
+    line.locator("input").check()
+    expect(page.locator("#lines-total")).to_have_text("1 selected")
+    with page.expect_download() as download:
+        page.locator("#lines-export").click()
+    text = Path(download.value.path()).read_text()
+    assert ALAPIN in text
+    page.locator("#tab-new").click()
+    expect(page.locator("#selected-total")).to_have_text("1 selected")
+    expect(page.locator("#openings .view-button")).to_have_count(0)
 
 
 def test_chess960_game_can_be_reviewed_but_not_played(page: Page):
@@ -622,6 +622,128 @@ def test_chess960_game_can_be_reviewed_but_not_played(page: Page):
     expect(square(page, "a1")).to_have_attribute("data-piece", "wn")
     expect(square(page, "g1")).to_have_attribute("data-piece", "wq")
     page.keyboard.press("Escape")
-    page.locator("#tab-from-saved").click()
+    choose_new_game_mode(page, "saved")
     page.locator("#from-saved-search").fill(f"Fischer{tag}")
     expect(page.locator("#from-saved-list input").first).to_be_disabled()
+
+
+def test_leaving_a_finished_game_through_the_menu(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none")
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page)
+    click_move(page, "e2", "e4")
+    wait_for_ply(page, 2)
+    resign(page)
+    expect(square(page, "e4")).to_have_attribute("data-piece", "wp")  # the final position stays
+    page.locator("#tab-openings").click()
+    expect(page.locator("#end-card")).to_be_hidden()
+    expect(page.locator("#openings-card")).to_be_visible()
+    expect(square(page, "e2")).to_have_attribute("data-piece", "wp")
+    assert moves_text(page) == []
+    page.locator("#tab-new").click()
+    expect(page.locator("#setup-card")).to_be_visible()
+    play(page)
+    wait_for_your_move(page)
+
+
+def test_take_back_a_move_before_the_bot_answers(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none", pace="human", premoves=False)
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page)
+    button = page.locator("#take-back")
+    expect(button).to_be_visible()
+    expect(button).to_be_disabled()
+    click_move(page, "d2", "d4")  # a deviation; the bot takes 2 to 6 s to answer it
+    expect(button).to_be_enabled()
+    button.click()
+    wait_for_your_move(page)
+    expect(square(page, "d2")).to_have_attribute("data-piece", "wp")
+    assert moves_text(page) == []
+    expect(page.locator("#chips .chip", has_text="In theory")).to_be_visible()
+    expect(button).to_be_disabled()
+    page.wait_for_timeout(6500)  # the reply that was taken back never shows
+    assert moves_text(page) == []
+    click_move(page, "e2", "e4")
+    wait_for_ply(page, 2)
+    assert moves_text(page)[0] == "e4"
+
+
+def test_take_back_is_not_offered_with_premoves(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none", premoves=True)
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page)
+    expect(page.locator("#take-back")).to_be_hidden()
+
+
+def test_review_shows_the_eval_bar_and_book_icons(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none")
+    page.goto("/")
+    page.locator("#tab-openings").click()
+    page.locator("#lines-search").fill(ALAPIN)
+    line = page.locator("#lines-tree .variant", has_text="Alapin Variation").first
+    line.locator(".view-button").click()
+    bar = page.locator("#eval-bar")
+    expect(bar).to_be_visible()
+    expect(page.locator("#eval-label")).to_have_text(re.compile(r"^(\d+\.\d|M\d+)$"))
+    expect(page.locator("#movelist .move-icon-book")).to_have_count(3)
+    page.locator("#review-close").click()
+    expect(bar).to_be_hidden()
+
+
+def test_no_eval_bar_during_a_game_and_one_at_the_end(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none")
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page)
+    click_move(page, "e2", "e4")
+    wait_for_ply(page, 2)
+    wait_for_your_move(page)
+    click_move(page, "d2", "d4")  # leaves the book
+    wait_for_ply(page, 4)
+    expect(page.locator("#eval-bar")).to_be_hidden()
+    expect(page.locator("#movelist .move-icon-book")).to_have_count(2)
+    expect(page.locator("#movelist .move-icon-deviation")).to_have_count(1)
+    resign(page)
+    expect(page.locator("#eval-bar")).to_be_visible()
+    expect(page.locator("#eval-label")).not_to_have_text("")
+    page.locator("#tab-new").click()
+    expect(page.locator("#eval-bar")).to_be_hidden()
+
+
+def test_eval_bar_follows_fast_moves_without_a_backlog(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none")
+    # Book positions answer at once and others take a second, so count overlap, not requests.
+    state = {"open": 0, "most": 0, "sent": 0}
+
+    def opened(request):
+        if request.url.endswith("/api/evaluate"):
+            state["open"] += 1
+            state["sent"] += 1
+            state["most"] = max(state["most"], state["open"])
+
+    def closed(request):
+        if request.url.endswith("/api/evaluate"):
+            state["open"] -= 1
+
+    page.on("request", opened)
+    page.on("requestfinished", closed)
+    page.on("requestfailed", closed)
+    page.goto("/")
+    page.locator("#tab-openings").click()
+    page.locator("#lines-search").fill("Najdorf")
+    page.locator("#lines-tree .variant .view-button").first.click()
+    expect(page.locator("#eval-label")).not_to_have_text("")
+    page.wait_for_timeout(1500)
+    before = state["sent"]
+    for _ in range(10):
+        page.keyboard.press("ArrowLeft")
+        page.wait_for_timeout(50)
+    page.wait_for_timeout(3000)
+    # Never two at once, and the quick presses collapse rather than each sending one.
+    assert state["most"] == 1
+    assert state["sent"] - before < 10
+    assert state["open"] == 0
+    expect(page.locator("#review-count")).to_have_text(re.compile(r"^\d+ / \d+$"))

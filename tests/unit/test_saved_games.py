@@ -1,5 +1,6 @@
 """Games are saved on every move and continue after the app restarts."""
 
+import asyncio
 import dataclasses
 import io
 import random
@@ -16,7 +17,7 @@ from app.engine.process import EngineUnavailableError
 from app.game.pace import TIME_CONTROLS, clock_after_move
 from app.game.service import new_game_id
 from app.main import create_app
-from tests.conftest import FakeEngine
+from tests.conftest import NO_BOOK_EVALS, FakeEngine
 
 ALAPIN_PGN = "1. e4 c5 2. c3"
 
@@ -27,7 +28,7 @@ class BrokenEngine(FakeEngine):
 
 
 def app_on(path, engine=None):
-    settings = dataclasses.replace(Settings(), database_path=path)
+    settings = dataclasses.replace(Settings(), database_path=path, book_evals_file=NO_BOOK_EVALS)
     return TestClient(create_app(settings, engine=engine or FakeEngine(), rng=random.Random(3)))
 
 
@@ -423,6 +424,25 @@ def test_a_move_is_saved_before_the_bot_answers(database_path):
         assert game["moves"][3]["by"] == "bot"
 
 
+def test_chess960_game_continues_after_a_restart(database_path):
+    fen = "bbqnrkrn/pppppppp/8/8/8/8/PPPPPPPP/BBQNRKRN w KQkq - 0 1"
+    setup = {"level": "club", "pace": "instant", "time_control": "none"}
+    with app_on(database_path) as client:
+        body = {"color": "white", "chess960_position": 288, **setup}
+        game_id = client.post("/api/games", json=body).json()["state"]["game_id"]
+        played = client.post(f"/api/games/{game_id}/moves", json={"uci": "f1g1"})
+        assert played.json()["user_move"]["san"] == "O-O"
+    with app_on(database_path) as client:
+        game = client.get("/api/games/active").json()["game"]
+        assert game["setup"]["chess960"] == {"position": 288, "fen": fen}
+        assert game["state"]["game_id"] == game_id
+        assert game["moves"][0]["san"] == "O-O"
+        assert game["state"]["left_theory_at_move"] is None
+        assert client.post(f"/api/games/{game_id}/moves", json={"uci": "a2a3"}).status_code == 200
+        pgn = client.post(f"/api/games/{game_id}/resign").json()["pgn"]
+        assert f'[FEN "{fen}"]' in pgn
+
+
 def test_resume_is_idempotent(client):
     game_id = start(client, color="black")["state"]["game_id"]
     assert game_id
@@ -476,3 +496,38 @@ def test_timeout_pgn_says_time_forfeit(client):
 )
 def test_clock_after_move_matches_the_browser_rules(key, remaining, used, moves_made, expected):
     assert clock_after_move(TIME_CONTROLS[key], remaining, used, moves_made) == expected
+
+
+class SlowEngine(FakeEngine):
+    def __init__(self, seconds: float) -> None:
+        super().__init__()
+        self.seconds = seconds
+
+    async def play(self, board, level, max_time_s=None):
+        await asyncio.sleep(self.seconds)
+        return await super().play(board, level, max_time_s)
+
+
+def bullet_as_black(client, pace: str) -> dict:
+    body = {
+        "color": "black",
+        "chess960_position": 288,
+        "level": "club",
+        "pace": pace,
+        "time_control": "30s",
+    }
+    return client.post("/api/games", json=body).json()
+
+
+def test_the_search_comes_off_the_bots_clock(database_path):
+    with app_on(database_path, SlowEngine(0.2)) as client:
+        assert bullet_as_black(client, "instant")["bot_move"]["delay_ms"] == 0
+        game = client.get("/api/games/active").json()["game"]
+        assert 25_000 < game["clocks"]["bot_ms"] <= 29_800
+
+
+def test_a_search_inside_the_human_delay_costs_only_the_delay(database_path):
+    with app_on(database_path, SlowEngine(0.02)) as client:
+        delay_ms = bullet_as_black(client, "human")["bot_move"]["delay_ms"]
+        game = client.get("/api/games/active").json()["game"]
+        assert game["clocks"]["bot_ms"] == 30_000 - delay_ms

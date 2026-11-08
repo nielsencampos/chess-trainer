@@ -87,11 +87,11 @@ select {
   flex: none;
 }
 
-/* Follows the width of the bar: 256 px at the default 380 px. */
+/* Follows the width of the bar: 114 px at the default 380 px. */
 .brand-logo {
   display: block;
   flex: none;
-  width: calc(var(--sidebar-width) * 0.674);
+  width: calc(var(--sidebar-width) * 0.3);
   height: auto;
   aspect-ratio: 1;
 }
@@ -281,4 +281,15 @@ body.is-resizing {
   .bar-toggle {
     display: none;
   }
+}
+
+/* Under the move list, the result, resign and the board controls stay at the bottom. */
+.movebar > .card,
+.movebar > .sidebar-controls {
+  flex: none;
+}
+
+/* The evaluation bar hangs to the left of the board, in the board area's padding. */
+.board-holder {
+  position: relative;
 }
