@@ -715,21 +715,35 @@ def test_no_eval_bar_during_a_game_and_one_at_the_end(page: Page, seed_prefs):
 
 def test_eval_bar_follows_fast_moves_without_a_backlog(page: Page, seed_prefs):
     seed_prefs([ALAPIN], color="white", timeControl="none")
-    requests: list[str] = []
-    page.on(
-        "request", lambda r: requests.append(r.url) if r.url.endswith("/api/evaluate") else None
-    )
+    # Book positions answer at once and others take a second, so count overlap, not requests.
+    state = {"open": 0, "most": 0, "sent": 0}
+
+    def opened(request):
+        if request.url.endswith("/api/evaluate"):
+            state["open"] += 1
+            state["sent"] += 1
+            state["most"] = max(state["most"], state["open"])
+
+    def closed(request):
+        if request.url.endswith("/api/evaluate"):
+            state["open"] -= 1
+
+    page.on("request", opened)
+    page.on("requestfinished", closed)
+    page.on("requestfailed", closed)
     page.goto("/")
     page.locator("#tab-openings").click()
     page.locator("#lines-search").fill("Najdorf")
     page.locator("#lines-tree .variant .view-button").first.click()
     expect(page.locator("#eval-label")).not_to_have_text("")
     page.wait_for_timeout(1500)
-    before = len(requests)
+    before = state["sent"]
     for _ in range(10):
         page.keyboard.press("ArrowLeft")
-        page.wait_for_timeout(200)
+        page.wait_for_timeout(50)
     page.wait_for_timeout(3000)
-    # One per second at most, and the last one is the position on screen.
-    assert len(requests) - before <= 4
+    # Never two at once, and the quick presses collapse rather than each sending one.
+    assert state["most"] == 1
+    assert state["sent"] - before < 10
+    assert state["open"] == 0
     expect(page.locator("#review-count")).to_have_text(re.compile(r"^\d+ / \d+$"))
