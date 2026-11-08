@@ -4,7 +4,9 @@ import json
 import chess
 import pytest
 
+from app.book.evaluate_book import book_positions
 from app.book.sync import load_book_evals, sync_book_evals
+from app.config import Settings
 from app.db.connection import apply_migrations, open_database
 from app.engine.evaluation import Evaluator
 
@@ -40,3 +42,14 @@ def test_a_book_position_never_reaches_the_engine():
     # The same placement in Chess960 is not the book, so it goes to the engine.
     with pytest.raises(LookupError):
         asyncio.run(evaluator.evaluate(chess.Board.from_chess960_pos(518)))
+
+
+def test_every_book_position_is_evaluated_deep():
+    """A new or extended line needs `python -m app.book.evaluate_book` to be run again."""
+    stored = json.loads(Settings().book_evals_file.read_text(encoding="utf-8"))["positions"]
+    missing = [
+        epd
+        for epd in book_positions(Settings().openings_dir)
+        if stored.get(epd, {}).get("depth", 0) < 32
+    ]
+    assert not missing, f"{len(missing)} book positions lack a depth-32 evaluation: {missing[:3]}"
