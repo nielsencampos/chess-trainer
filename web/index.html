@@ -49,6 +49,29 @@
 
           <section id="import-card" class="card" hidden>
             <h2 data-i18n="import.title"></h2>
+              <form id="import-remote" class="import-remote">
+                <h3 class="import-subtitle" data-i18n="import.remote.title"></h3>
+                <div class="field-row">
+                  <select id="import-site" data-i18n-label="import.remote.site">
+                    <option value="lichess">Lichess</option>
+                    <option value="chesscom">Chess.com</option>
+                  </select>
+                  <select id="import-months" data-i18n-label="import.remote.period">
+                    <option value="1" data-i18n="import.remote.months1"></option>
+                    <option value="3" data-i18n="import.remote.months3"></option>
+                    <option value="6" data-i18n="import.remote.months6"></option>
+                    <option value="12" data-i18n="import.remote.months12"></option>
+                  </select>
+                </div>
+                <input id="import-username" class="search" type="text" required maxlength="30" pattern="[A-Za-z0-9][A-Za-z0-9_\-]*" autocomplete="off" spellcheck="false" data-i18n-placeholder="import.remote.username" data-i18n-label="import.remote.username" />
+                <div class="button-row">
+                  <button id="import-fetch" class="button button-primary" type="submit" data-i18n="import.remote.fetch"></button>
+                </div>
+                <p class="hint" data-i18n="import.remote.hint"></p>
+                <p id="import-remote-summary" class="hint import-result" hidden></p>
+                <ul id="import-remote-errors" class="import-errors"></ul>
+              </form>
+              <h3 class="import-subtitle" data-i18n="import.pasteTitle"></h3>
               <textarea id="import-text" class="search import-text" rows="5" data-i18n-placeholder="import.placeholder"></textarea>
               <div class="button-row">
                 <button id="import-paste" class="button button-primary" type="button" data-i18n="import.paste"></button>
@@ -80,7 +103,10 @@
             <div id="saved-list" class="saved-list"></div>
             <p id="saved-empty" class="hint" hidden></p>
             <p id="saved-error" class="error" role="alert" hidden></p>
-            <button id="saved-export" class="button button-primary button-wide" type="button" disabled></button>
+            <div class="button-row saved-actions">
+              <button id="saved-export" class="button button-primary" type="button" disabled></button>
+              <button id="saved-delete" class="button button-danger" type="button" disabled></button>
+            </div>
           </section>
 
         <section id="setup-card" class="card">

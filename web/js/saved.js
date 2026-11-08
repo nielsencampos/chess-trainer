@@ -1,6 +1,6 @@
 // The "Saved games" tab: finished games, filters, selection and export.
 
-import { api } from "./api.js";
+import { ApiError, api } from "./api.js";
 import { t } from "./i18n.js";
 
 /** @param {string} id */
@@ -14,6 +14,7 @@ const byId = (id) => /** @type {any} */ (document.getElementById(id));
  */
 
 const TABS = ["new", "saved", "openings", "import"];
+const DELETE_CONFIRM_MS = 3000;
 
 export class SavedGames {
   /**
@@ -24,6 +25,7 @@ export class SavedGames {
    */
   constructor(timeLabel, setup, onView, onLeaveTab) {
     this.onLeaveTab = onLeaveTab;
+    this.deleteTimer = 0;
     this.timeLabel = timeLabel;
     this.setup = setup;
     this.onView = onView;
@@ -46,8 +48,13 @@ export class SavedGames {
       this.render();
     });
     byId("saved-export").addEventListener("click", () => void this.exportSelected());
+    byId("saved-delete").addEventListener("click", () => this.onDeleteClick());
     byId("import-paste").addEventListener("click", () => {
       void this.importText(byId("import-text").value);
+    });
+    byId("import-remote").addEventListener("submit", (/** @type {Event} */ event) => {
+      event.preventDefault();
+      void this.importRemote();
     });
     byId("import-file").addEventListener("change", async (/** @type {any} */ event) => {
       const [file] = event.target.files;
@@ -88,26 +95,70 @@ export class SavedGames {
 
   /** @param {string} text */
   async importText(text) {
-    const summary = byId("import-summary");
-    const errors = byId("import-errors");
-    errors.replaceChildren();
-    summary.hidden = false;
+    this.startImport("import");
     let report;
     try {
       report = await api.importGames(text);
     } catch (error) {
       console.error(error);
-      summary.textContent = t("import.failed");
+      byId("import-summary").textContent = t("import.failed");
       return;
     }
-    const total = report.imported + report.duplicates + report.errors.length;
+    await this.showImport(report, "import");
+    if (report.errors.length === 0 && report.imported > 0) byId("import-text").value = "";
+  }
+
+  /** Fetches a player's games from Lichess or Chess.com and imports them. */
+  async importRemote() {
+    const button = byId("import-fetch");
+    const site = /** @type {"lichess" | "chesscom"} */ (byId("import-site").value);
+    const username = byId("import-username").value.trim();
+    this.startImport("import-remote");
+    byId("import-remote-summary").textContent = t("import.remote.busy");
+    button.disabled = true;
+    try {
+      const report = await api.importRemote(site, username, Number(byId("import-months").value));
+      await this.showImport(report, "import-remote");
+    } catch (error) {
+      console.error(error);
+      const code = error instanceof ApiError ? error.code : undefined;
+      byId("import-remote-summary").textContent = code
+        ? t(`import.remote.error.${code}`)
+        : t("import.failed");
+    } finally {
+      button.disabled = false;
+    }
+  }
+
+  /** @param {"import" | "import-remote"} prefix Which form's summary and error list. */
+  startImport(prefix) {
+    byId(`${prefix}-errors`).replaceChildren();
+    byId(`${prefix}-summary`).hidden = false;
+  }
+
+  /**
+   * @param {{imported: number, duplicates: number, updated?: number, errors: any[],
+   *   fetched?: number, truncated?: boolean}} report
+   * @param {"import" | "import-remote"} prefix
+   */
+  async showImport(report, prefix) {
+    const summary = byId(`${prefix}-summary`);
+    const errors = byId(`${prefix}-errors`);
+    const total =
+      report.imported + report.duplicates + (report.updated ?? 0) + report.errors.length;
     summary.textContent = total === 0
-      ? t("import.nothing")
+      ? t(report.fetched === undefined ? "import.nothing" : "import.remote.nothing")
       : t("import.summary", {
           imported: report.imported,
           duplicates: report.duplicates,
           failed: report.errors.length,
         });
+    if (report.updated) {
+      summary.textContent += ` ${t("import.updated", { updated: report.updated })}`;
+    }
+    if (report.truncated) {
+      summary.textContent += ` ${t("import.remote.truncated", { max: report.fetched ?? 0 })}`;
+    }
     errors.append(
       ...report.errors.map((/** @type {any} */ item) => {
         const line = document.createElement("li");
@@ -119,7 +170,6 @@ export class SavedGames {
         return line;
       }),
     );
-    if (report.errors.length === 0 && report.imported > 0) byId("import-text").value = "";
     await this.load();
   }
 
@@ -149,6 +199,40 @@ export class SavedGames {
     const exportButton = byId("saved-export");
     exportButton.disabled = this.selected.size === 0;
     exportButton.textContent = t("saved.export", { count: this.selected.size });
+    this.resetDelete();
+  }
+
+  /** Deleting needs a second click, like resigning; it cannot be undone. */
+  onDeleteClick() {
+    const button = byId("saved-delete");
+    if (!button.classList.contains("confirming")) {
+      button.classList.add("confirming");
+      button.textContent = t("saved.deleteConfirm", { count: this.selected.size });
+      this.deleteTimer = setTimeout(() => this.resetDelete(), DELETE_CONFIRM_MS);
+      return;
+    }
+    void this.deleteSelected();
+  }
+
+  resetDelete() {
+    clearTimeout(this.deleteTimer);
+    const button = byId("saved-delete");
+    button.classList.remove("confirming");
+    button.disabled = this.selected.size === 0;
+    button.textContent = t("saved.delete", { count: this.selected.size });
+  }
+
+  async deleteSelected() {
+    byId("saved-error").hidden = true;
+    try {
+      await api.deleteGames([...this.selected]);
+      this.selected.clear();
+    } catch (error) {
+      console.error(error);
+      byId("saved-error").textContent = t("saved.deleteError");
+      byId("saved-error").hidden = false;
+    }
+    await this.load();
   }
 
   /** @param {SavedGame} game */

@@ -22,6 +22,7 @@ from app.db.connection import apply_migrations, open_database
 from app.engine.evaluation import Evaluator
 from app.engine.levels import load_levels
 from app.engine.process import MoveEngine, StockfishEngine
+from app.game.remote import fetch_url
 from app.game.service import GameService
 from app.game.store import GameStore
 
@@ -59,6 +60,7 @@ def create_app(
     app.state.evaluator = Evaluator(engine, load_book_evals(database))
     app.state.games = GameService(book, engine, levels, GameStore(database), rng, opening_names)
     app.state.database = database
+    app.state.fetch_url = fetch_url
     app.include_router(router)
     app.mount("/", StaticFiles(directory=settings.web_dir, html=True), name="web")
     return app

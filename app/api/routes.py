@@ -1,5 +1,6 @@
 """HTTP routes. Business rules stay in app.game; errors map to status codes here."""
 
+import asyncio
 import json
 
 import chess
@@ -10,6 +11,7 @@ from app.api.schemas import (
     ActiveGameResponse,
     Chess960Request,
     Chess960Start,
+    DeleteRequest,
     EvaluateRequest,
     EvaluationOut,
     ExportLinesRequest,
@@ -22,6 +24,7 @@ from app.api.schemas import (
     MoveResponse,
     NewGameRequest,
     NewGameResponse,
+    RemoteImportRequest,
     TakeBackRequest,
     UserMoveOut,
     active_game,
@@ -40,6 +43,7 @@ from app.game.pace import (
     SCORESHEET_GROUPS,
     TIME_CONTROL_GROUPS,
 )
+from app.game.remote import RemoteError, fetch_games
 from app.game.review import pgn_of_line, review_of_pgn
 from app.game.service import FromGame, GameService, InvalidSetupError, UnknownGameError
 from app.game.session import (
@@ -221,6 +225,33 @@ async def saved_games(request: Request) -> dict:
 @router.post("/games/import")
 async def import_games(body: ImportRequest, request: Request) -> dict:
     return _service(request).import_pgn(body.pgn)
+
+
+@router.post("/games/import/remote")
+async def import_remote_games(body: RemoteImportRequest, request: Request) -> dict:
+    """A player's public games from Lichess or Chess.com, through the same import as a paste."""
+    try:
+        fetched = await asyncio.to_thread(
+            fetch_games, body.site, body.username, body.months, request.app.state.fetch_url
+        )
+    except RemoteError as error:
+        status = {"bad_username": 422, "user_not_found": 404, "rate_limited": 429}
+        raise HTTPException(status.get(error.code, 502), error.code) from error
+    report = _service(request).import_pgn(fetched.pgn) if fetched.games else _EMPTY_REPORT
+    return {**report, "fetched": fetched.games, "truncated": fetched.truncated}
+
+
+_EMPTY_REPORT = {"imported": 0, "duplicates": 0, "updated": 0, "errors": []}
+
+
+@router.post("/games/delete")
+async def delete_games(body: DeleteRequest, request: Request) -> dict:
+    """Deletes saved games. Nothing is deleted if any of them is unknown or still being played."""
+    store = _service(request).store
+    missing = sorted(set(body.game_ids) - set(store.finished_pgns(body.game_ids)))
+    if missing:
+        raise HTTPException(422, f"not a finished game: {missing[0]}")
+    return {"deleted": store.delete_finished(body.game_ids)}
 
 
 @router.post("/games/export")

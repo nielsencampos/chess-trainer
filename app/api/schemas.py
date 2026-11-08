@@ -48,7 +48,17 @@ class ImportRequest(BaseModel):
     pgn: str = Field(max_length=50_000_000)
 
 
+class RemoteImportRequest(BaseModel):
+    site: Literal["lichess", "chesscom"]
+    username: str = Field(min_length=1, max_length=30)
+    months: int = Field(ge=1, le=12)
+
+
 class ExportRequest(BaseModel):
+    game_ids: list[str] = Field(min_length=1)
+
+
+class DeleteRequest(BaseModel):
     game_ids: list[str] = Field(min_length=1)
 
 

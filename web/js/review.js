@@ -3,7 +3,8 @@
 import { api } from "./api.js";
 import { t } from "./i18n.js";
 import { EvalBar } from "./evalbar.js";
-import { renderMoveList } from "./movelist.js";
+import { formatClock } from "./clock.js";
+import { linkMoves, renderReviewList } from "./reviewlist.js";
 
 /** @param {string} id */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
@@ -26,12 +27,17 @@ export class Review {
     /** @type {string | null} */
     this.gameId = null;
     this.ply = FIRST;
+    /** @type {import("./reviewlist.js").ReviewMove | null} The move on the board. */
+    this.node = null;
+    /** @type {import("./reviewlist.js").ReviewMove[]} */
+    this.nodes = [];
     this.flipped = false;
+    this.hasClocks = false;
     this.evalBar = new EvalBar();
 
     byId("review-first").addEventListener("click", () => this.goTo(FIRST));
-    byId("review-prev").addEventListener("click", () => this.goTo(this.ply - 1));
-    byId("review-next").addEventListener("click", () => this.goTo(this.ply + 1));
+    byId("review-prev").addEventListener("click", () => this.back());
+    byId("review-next").addEventListener("click", () => this.forward());
     byId("review-last").addEventListener("click", () => this.goTo(this.lastPly));
     byId("review-flip").addEventListener("click", () => this.flip());
     byId("review-close").addEventListener("click", () => this.close());
@@ -43,8 +49,8 @@ export class Review {
     });
     byId("movelist").addEventListener("click", (/** @type {any} */ event) => {
       if (!this.active) return;
-      const ply = Number(event.target.dataset?.ply);
-      if (ply) this.goTo(ply);
+      const cell = event.target.closest?.("[data-node]");
+      if (cell) this.select(this.nodes[Number(cell.dataset.node)] ?? null);
     });
     document.addEventListener("keydown", (event) => this.onKey(event));
   }
@@ -71,11 +77,15 @@ export class Review {
     this.active = true;
     this.data = data;
     this.gameId = gameId;
+    this.nodes = linkMoves(data.moves);
     this.flipped = false;
     byId("review-bar").hidden = false;
     byId("review-play").hidden = gameId === null || data.chess960 === true;
-    byId("top-clock").hidden = true;
-    byId("bottom-clock").hidden = true;
+    this.hasClocks = data.moves.some((/** @type {any} */ move) => move.clock_ms !== undefined);
+    for (const id of ["top-clock", "bottom-clock"]) {
+      byId(id).className = "clock"; // Read-only: no side to move, no low-time color.
+      byId(id).hidden = !this.hasClocks;
+    }
     byId("scoresheet-note").hidden = true;
     byId("movelist").hidden = false;
     byId("chips").replaceChildren();
@@ -99,34 +109,72 @@ export class Review {
     this.flipped = !this.flipped;
     this.board.setOrientation(this.flipped ? "b" : "w");
     this.renderNames();
-    this.goTo(this.ply);
+    this.select(this.node);
   }
 
-  /** @param {number} ply */
+  /** @param {number} ply A move of the main line, 0 for the start. */
   goTo(ply) {
     if (!this.active) return;
-    this.ply = Math.min(this.lastPly, Math.max(FIRST, ply));
-    const move = this.data.moves[this.ply - 1];
-    const fen = move ? move.fen : this.data.start_fen;
-    this.evalBar.show(fen, this.data.chess960 === true, this.flipped ? "b" : "w");
+    const clamped = Math.min(this.lastPly, Math.max(FIRST, ply));
+    this.select(clamped === FIRST ? null : this.data.moves[clamped - 1]);
+  }
+
+  back() {
+    if (this.node) this.select(this.node.prev);
+  }
+
+  forward() {
+    const next = this.node ? this.node.next : (this.data?.moves[0] ?? null);
+    if (next) this.select(next);
+  }
+
+  /** @param {import("./reviewlist.js").ReviewMove | null} node */
+  select(node) {
+    if (!this.active) return;
+    this.node = node;
+    this.ply = node ? node.ply : FIRST;
+    const fen = node ? node.fen : this.data.start_fen;
+    this.evalBar.show(fen, this.data.chess960 === true, this.flipped ? "b" : "w", node?.eval);
     this.board.setPosition(fen, {
-      lastMove: move ? [move.uci.slice(0, 2), move.uci.slice(2, 4)] : [],
+      lastMove: node ? [node.uci.slice(0, 2), node.uci.slice(2, 4)] : [],
     });
-    renderMoveList(
-      byId("movelist"),
-      this.data.moves.map((/** @type {any} */ item) => ({
-        san: item.san,
-        outOfTheory: item.book !== true,
-        deviation: item.deviation === true,
-      })),
-      true,
-      this.ply,
-    );
+    renderReviewList(byId("movelist"), this.data.moves, node, true);
+    if (this.hasClocks) this.renderClocks(node);
+    const last = this.data.moves[this.lastPly - 1] ?? null;
     byId("review-count").textContent = t("review.count", { ply: this.ply, total: this.lastPly });
-    byId("review-first").disabled = this.ply === FIRST;
-    byId("review-prev").disabled = this.ply === FIRST;
-    byId("review-next").disabled = this.ply === this.lastPly;
-    byId("review-last").disabled = this.ply === this.lastPly;
+    byId("review-first").disabled = node === null;
+    byId("review-prev").disabled = node === null;
+    byId("review-next").disabled = node ? node.next === null : last === null;
+    byId("review-last").disabled = node === last;
+    // A game can only be continued from its own moves, not from a variation.
+    byId("review-play").disabled = node !== null && !node.main;
+  }
+
+  /**
+   * Each side's clock after its last move up to here. In a variation, the clocks are those of the
+   * main-line move it branches from; before a side's first move, its first clock.
+   * @param {import("./reviewlist.js").ReviewMove | null} node
+   */
+  renderClocks(node) {
+    let at = node;
+    while (at && !at.main) at = at.prev;
+    /** @type {Record<"w" | "b", number | undefined>} */
+    const clocks = { w: undefined, b: undefined };
+    for (const move of this.data.moves.slice(0, at ? at.ply : 0)) {
+      if (move.clock_ms !== undefined) clocks[move.ply % 2 === 1 ? "w" : "b"] = move.clock_ms;
+    }
+    for (const side of /** @type {const} */ (["w", "b"])) {
+      if (clocks[side] !== undefined) continue;
+      const first = this.data.moves.find(
+        (/** @type {any} */ move) => move.clock_ms !== undefined && (move.ply % 2 === 1) === (side === "w"),
+      );
+      clocks[side] = first?.clock_ms;
+    }
+    const top = this.flipped ? "w" : "b";
+    const bottom = this.flipped ? "b" : "w";
+    byId("top-clock").textContent = clocks[top] === undefined ? "" : formatClock(clocks[top]);
+    byId("bottom-clock").textContent =
+      clocks[bottom] === undefined ? "" : formatClock(clocks[bottom]);
   }
 
   /** @param {KeyboardEvent} event */
@@ -134,8 +182,8 @@ export class Review {
     if (!this.active) return;
     const target = /** @type {HTMLElement} */ (event.target);
     if (["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName)) return;
-    if (event.key === "ArrowLeft") this.goTo(this.ply - 1);
-    else if (event.key === "ArrowRight") this.goTo(this.ply + 1);
+    if (event.key === "ArrowLeft") this.back();
+    else if (event.key === "ArrowRight") this.forward();
     else if (event.key === "Home") this.goTo(FIRST);
     else if (event.key === "End") this.goTo(this.lastPly);
     else if (event.key === "Escape") this.close();

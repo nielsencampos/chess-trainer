@@ -225,10 +225,11 @@ class GameService:
 
     def import_pgn(self, text: str) -> dict:
         games, errors = read_pgn_text(text, self.opening_names)
-        duplicates = self.store.save_imported(games, new_game_id)
+        duplicates, updated = self.store.save_imported(games, new_game_id)
         return {
-            "imported": len(games) - duplicates,
+            "imported": len(games) - duplicates - updated,
             "duplicates": duplicates,
+            "updated": updated,
             "errors": [
                 {"index": e.index, "label": e.label, "code": e.code, "detail": e.detail}
                 for e in errors

@@ -11,7 +11,7 @@ import duckdb
 
 from app import __version__
 from app.book.models import Book, BookMoveRow, Variant, index_moves
-from app.game.imports import ImportedGame, content_hash
+from app.game.imports import ImportedGame, annotation_count_of, content_hash
 from app.game.pace import TIME_CONTROLS
 from app.game.session import (
     CHESS960_PREFIX,
@@ -73,19 +73,37 @@ class GameStore:
             ],
         )
 
-    def save_imported(self, games: Sequence[ImportedGame], new_id: Callable[[], str]) -> int:
-        """Saves the games not seen before, and returns how many were duplicates."""
+    def save_imported(
+        self, games: Sequence[ImportedGame], new_id: Callable[[], str]
+    ) -> tuple[int, int]:
+        """Saves the games not seen before. Returns (duplicates, updated).
+
+        A duplicate of an imported game replaces its PGN when it carries more analysis, such as
+        the same game downloaded from the site's analysis page after a plain export. A game played
+        here is never replaced.
+        """
         cursor = self._connection.cursor()
-        cursor.execute("SELECT content_hash FROM games WHERE content_hash IS NOT NULL")
-        known = {row[0] for row in cursor.fetchall()}
-        duplicates = 0
+        cursor.execute(
+            "SELECT content_hash, game_id, source, pgn FROM games WHERE content_hash IS NOT NULL"
+        )
+        known = {row[0]: (row[1], row[2], row[3]) for row in cursor.fetchall()}
+        duplicates = updated = 0
         cursor.begin()
         try:
             for game in games:
                 if game.content_hash in known:
-                    duplicates += 1
+                    game_id, source, pgn = known[game.content_hash]
+                    if source == "imported" and game.notes > annotation_count_of(pgn):
+                        cursor.execute(
+                            "UPDATE games SET pgn = ? WHERE game_id = ?", [game.pgn, game_id]
+                        )
+                        known[game.content_hash] = (game_id, source, game.pgn)
+                        updated += 1
+                    else:
+                        duplicates += 1
                     continue
-                known.add(game.content_hash)
+                game_id = new_id()
+                known[game.content_hash] = (game_id, "imported", game.pgn)
                 moves = [
                     {"ply": ply, "san": san, "uci": uci}
                     for ply, (san, uci) in enumerate(zip(game.sans, game.ucis, strict=True), 1)
@@ -95,7 +113,7 @@ class GameStore:
                     "(?, 'finished', ?, ?, '', ?, '', '', [], '', ?, '', false, 0, ?, '[]', "
                     "NULL, NULL, '{}', ?, ?, ?, ?, '', 'imported', ?, ?, ?)",
                     [
-                        new_id(),
+                        game_id,
                         game.played_at.replace(tzinfo=None),
                         datetime.now(UTC).replace(tzinfo=None),
                         game.time_control,
@@ -114,7 +132,7 @@ class GameStore:
         except Exception:
             cursor.rollback()
             raise
-        return duplicates
+        return duplicates, updated
 
     def finished_games(self) -> list[dict]:
         """Newest first."""
@@ -194,6 +212,16 @@ class GameStore:
             [list(game_ids)],
         )
         return dict(cursor.fetchall())
+
+    def delete_finished(self, game_ids: Sequence[str]) -> int:
+        """Deletes finished games for good. An active game is never deleted: resigning ends it."""
+        cursor = self._connection.cursor()
+        cursor.execute(
+            "DELETE FROM games WHERE status = 'finished' AND list_contains(?, game_id)",
+            [list(game_ids)],
+        )
+        row = cursor.fetchone()
+        return int(row[0]) if row else 0
 
     def active_row(self) -> dict | None:
         cursor = self._connection.cursor()

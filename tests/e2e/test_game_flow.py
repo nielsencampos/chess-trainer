@@ -747,3 +747,109 @@ def test_eval_bar_follows_fast_moves_without_a_backlog(page: Page, seed_prefs):
     assert state["sent"] - before < 10
     assert state["open"] == 0
     expect(page.locator("#review-count")).to_have_text(re.compile(r"^\d+ / \d+$"))
+
+
+def test_import_from_a_site(page: Page):
+    """The site's answer is faked here: browser tests never reach Lichess or Chess.com."""
+    asked = []
+
+    def answer(route):
+        asked.append(route.request.post_data_json)
+        if route.request.post_data_json["username"] == "nobody":
+            route.fulfill(status=404, json={"detail": "user_not_found"})
+        else:
+            report = {"imported": 3, "duplicates": 1, "errors": [], "fetched": 4, "truncated": True}
+            route.fulfill(json=report)
+
+    page.route("**/api/games/import/remote", answer)
+    page.goto("/")
+    page.locator("#tab-import").click()
+    page.locator("#import-site").select_option("chesscom")
+    page.locator("#import-months").select_option("3")
+    page.locator("#import-username").fill("nobody")
+    page.locator("#import-fetch").click()
+    expect(page.locator("#import-remote-summary")).to_have_text(
+        "No player with that name on this site."
+    )
+
+    page.locator("#import-username").fill("someone")
+    page.locator("#import-username").press("Enter")
+    expect(page.locator("#import-remote-summary")).to_have_text(
+        "3 imported, 1 already saved, 0 refused. "
+        "Only the newest 4 games of the period were fetched."
+    )
+    assert asked[-1] == {"site": "chesscom", "username": "someone", "months": 3}
+    expect(page.locator("#import-fetch")).to_be_enabled()
+
+
+ANNOTATED = """[White "{name}"]
+[Black "Bia"]
+[TimeControl "180"]
+[Result "*"]
+
+1. e4 {{[%clk 0:02:59.9][%timestamp 1][%eval 0.3]}} 1... e6 {{[%clk 0:02:57.7][%timestamp 23]}}
+2. d4 {{[%clk 0:02:58][%timestamp 19]}} 2... d5 {{[%clk 0:02:50][%timestamp 77]}}
+3. Nc3 {{[%clk 0:02:55][%timestamp 30]}} 3... Bb4 $6 {{[%clk 0:02:40][%timestamp 100]
+[%c_effect b4;square;b4;type;Inaccuracy;persistent;true] a sharp choice}}
+(3... Nf6 $1 {{the main move}} 4. Bg5) *
+"""
+
+
+def test_review_shows_what_the_pgn_says(page: Page):
+    name = f"Notes{uuid.uuid4().hex}"
+    page.goto("/")
+    page.locator("#tab-import").click()
+    page.locator("#import-text").fill(ANNOTATED.format(name=name))
+    page.locator("#import-paste").click()
+    expect(page.locator("#import-summary")).to_contain_text("1 imported")
+    page.locator("#tab-saved").click()
+    page.locator(".saved-game", has_text=name).locator(".view-button").click()
+    page.locator("#review-bar").wait_for(state="visible")
+
+    marked = page.locator('#movelist .move[data-ply="6"]')
+    expect(marked.locator(".move-icon-inaccuracy")).to_have_count(1)
+    expect(marked.locator(".spent")).to_have_text("10s")
+    expect(page.locator("#movelist .move-extras .comment").first).to_have_text("a sharp choice")
+    expect(page.locator("#bottom-clock")).to_have_text("02:55")
+    expect(page.locator("#top-clock")).to_have_text("02:40")
+
+    page.locator("#movelist .variation-move", has_text="Nf6").click()
+    expect(page.locator("#movelist .variation-move.current")).to_contain_text("Nf6")
+    expect(square(page, "f6")).to_have_attribute("data-piece", "bn")
+    expect(square(page, "b4")).to_have_attribute("data-piece", "")
+    expect(page.locator("#review-play")).to_be_disabled()
+    page.keyboard.press("ArrowRight")
+    expect(square(page, "g5")).to_have_attribute("data-piece", "wb")
+    page.keyboard.press("ArrowLeft")
+    page.keyboard.press("ArrowLeft")
+    expect(page.locator("#review-count")).to_have_text("5 / 6")
+    expect(page.locator("#review-play")).to_be_enabled()
+
+    page.keyboard.press("Home")
+    page.keyboard.press("ArrowRight")
+    expect(page.locator("#eval-bar")).to_have_attribute("data-cp", "30")
+
+
+def test_delete_saved_games_with_a_second_click(page: Page):
+    name = f"Gone{uuid.uuid4().hex}"
+    pgn = "\n".join(
+        f'[White "{name}"]\n[Black "{black}"]\n\n{moves} *\n'
+        for black, moves in (("X", "1. e4 e5"), ("Y", "1. d4 d5"))
+    )
+    page.goto("/")
+    page.locator("#tab-import").click()
+    page.locator("#import-text").fill(pgn)
+    page.locator("#import-paste").click()
+    expect(page.locator("#import-summary")).to_contain_text("2 imported")
+    page.locator("#tab-saved").click()
+    delete = page.locator("#saved-delete")
+    expect(delete).to_be_disabled()
+    page.locator(".saved-game", has_text=f"{name} - X").locator("input").check()
+    expect(delete).to_have_text("Delete (1)")
+    delete.click()
+    expect(delete).to_have_text("Click again to delete 1 for good")
+    expect(page.locator(".saved-game", has_text=name)).to_have_count(2)  # nothing gone yet
+    delete.click()
+    expect(page.locator(".saved-game", has_text=name)).to_have_count(1)
+    expect(page.locator(".saved-game", has_text=f"{name} - Y")).to_have_count(1)
+    expect(delete).to_be_disabled()

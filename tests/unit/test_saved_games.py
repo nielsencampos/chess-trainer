@@ -157,8 +157,8 @@ def do_import(client, text):
     return client.post("/api/games/import", json={"pgn": text}).json()
 
 
-def test_import_a_game_keeps_comments_and_drops_side_lines(client):
-    assert do_import(client, GOOD) == {"imported": 1, "duplicates": 0, "errors": []}
+def test_import_a_game_keeps_comments_and_side_lines(client):
+    assert do_import(client, GOOD) == {"imported": 1, "duplicates": 0, "updated": 0, "errors": []}
     game = client.get("/api/games").json()["games"][0]
     assert game["source"] == "imported"
     assert (game["white"], game["black"]) == ("Ana", "Bia")
@@ -168,7 +168,7 @@ def test_import_a_game_keeps_comments_and_drops_side_lines(client):
     assert game["opening"] == "Caro-Kann Defense: Advance Variation"
     text = client.post("/api/games/export", json={"game_ids": [game["game_id"]]}).text
     assert "a comment" in text
-    assert "g6" not in text
+    assert "( 2... g6 3. Nf3 )" in text
 
 
 def test_name_and_eco_come_from_the_same_place(client):
@@ -191,7 +191,7 @@ def test_one_bad_game_does_not_stop_the_others(client):
 
 def test_duplicates_are_skipped_in_one_text_and_across_imports(client):
     assert do_import(client, GOOD + "\n" + GOOD)["duplicates"] == 1
-    assert do_import(client, GOOD) == {"imported": 0, "duplicates": 1, "errors": []}
+    assert do_import(client, GOOD) == {"imported": 0, "duplicates": 1, "updated": 0, "errors": []}
     assert len(client.get("/api/games").json()["games"]) == 1
 
 
@@ -200,7 +200,16 @@ def test_a_game_exported_from_the_app_is_a_duplicate(client, engine):
     client.post(f"/api/games/{game_id}/moves", json={"uci": "e2e4"})
     client.post(f"/api/games/{game_id}/resign")
     exported = client.post("/api/games/export", json={"game_ids": [game_id]}).text
-    assert do_import(client, exported) == {"imported": 0, "duplicates": 1, "errors": []}
+    assert do_import(client, exported) == {
+        "imported": 0,
+        "duplicates": 1,
+        "updated": 0,
+        "errors": [],
+    }
+    # A game played here keeps its own PGN, even when the copy brings analysis.
+    annotated = exported.replace("1. e4 ", "1. e4 $2 { a note } ", 1)
+    assert do_import(client, annotated)["updated"] == 0
+    assert "a note" not in client.post("/api/games/export", json={"game_ids": [game_id]}).text
 
 
 def test_chess960_is_accepted_and_exported_with_its_position(client):
@@ -531,3 +540,67 @@ def test_a_search_inside_the_human_delay_costs_only_the_delay(database_path):
         delay_ms = bullet_as_black(client, "human")["bot_move"]["delay_ms"]
         game = client.get("/api/games/active").json()["game"]
         assert game["clocks"]["bot_ms"] == 30_000 - delay_ms
+
+
+PLAIN = """[White "Ana"]
+[Black "Bia"]
+[Date "2026.05.06"]
+[Result "1-0"]
+
+1. e4 {[%clk 0:02:59]} e6 {[%clk 0:02:58]} 2. d4 d5 1-0
+"""
+ANALYSED = """[White "Ana"]
+[Black "Bia"]
+[Date "2026.05.06"]
+[Result "1-0"]
+
+1. e4 {[%clk 0:02:59]} e6 $6 {[%clk 0:02:58] a passive move} 2. d4 d5 (2... c5) 1-0
+"""
+
+
+def saved_pgn(client):
+    [game] = client.get("/api/games").json()["games"]
+    return client.post("/api/games/export", json={"game_ids": [game["game_id"]]}).text
+
+
+def test_a_duplicate_with_more_analysis_replaces_the_saved_pgn(client):
+    assert do_import(client, PLAIN)["imported"] == 1
+    report = do_import(client, ANALYSED)
+    assert (report["imported"], report["duplicates"], report["updated"]) == (0, 0, 1)
+    assert "a passive move" in saved_pgn(client) and "( 2... c5 )" in saved_pgn(client)
+    assert len(client.get("/api/games").json()["games"]) == 1
+
+
+def test_a_duplicate_with_less_analysis_changes_nothing(client):
+    do_import(client, ANALYSED)
+    for text in (PLAIN, ANALYSED):
+        report = do_import(client, text)
+        assert (report["duplicates"], report["updated"]) == (1, 0)
+    assert "a passive move" in saved_pgn(client)
+
+
+def test_the_richer_copy_wins_inside_one_import(client):
+    report = do_import(client, PLAIN + "\n" + ANALYSED)
+    assert (report["imported"], report["updated"]) == (1, 1)
+    assert "a passive move" in saved_pgn(client)
+
+
+def test_deleting_saved_games_removes_them_for_good(client):
+    do_import(client, GOOD + "\n" + PLAIN)
+    games = client.get("/api/games").json()["games"]
+    first, second = (g["game_id"] for g in games)
+    assert client.post("/api/games/delete", json={"game_ids": [first]}).json() == {"deleted": 1}
+    assert [g["game_id"] for g in client.get("/api/games").json()["games"]] == [second]
+    assert client.get(f"/api/games/{first}/review").status_code == 404
+    # Deleted means gone: the same game can be imported again.
+    assert do_import(client, GOOD + "\n" + PLAIN)["imported"] == 1
+
+
+def test_an_active_or_unknown_game_is_never_deleted(client):
+    do_import(client, GOOD)
+    [saved] = client.get("/api/games").json()["games"]
+    active = start(client)["state"]["game_id"]
+    for ids in ([active], [saved["game_id"], active], [saved["game_id"], "nope"], []):
+        assert client.post("/api/games/delete", json={"game_ids": ids}).status_code == 422
+    assert len(client.get("/api/games").json()["games"]) == 1
+    assert client.get("/api/games/active").status_code == 200

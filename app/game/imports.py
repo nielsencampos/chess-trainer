@@ -2,12 +2,14 @@
 
 import hashlib
 import io
-from collections.abc import Mapping
+from collections.abc import Iterator, Mapping
 from dataclasses import dataclass
 from datetime import UTC, datetime
 
 import chess
 import chess.pgn
+
+from app.game.review import COMMAND
 
 MAX_GAMES = 5000
 
@@ -33,6 +35,32 @@ class ImportedGame:
     ucis: tuple[str, ...]
     pgn: str
     content_hash: str
+    notes: int = 0
+
+
+def annotation_count(game: chess.pgn.Game) -> int:
+    """How much analysis a game carries: NAGs, evaluations, text comments, side variations.
+
+    Clocks and other commands do not count, so a site's plain export scores 0 and the same game
+    downloaded with its analysis scores more.
+    """
+    count = 0
+    for node in _all_nodes(game):
+        if node is not game:
+            count += bool(node.nags) + (node.eval() is not None)
+        count += bool(COMMAND.sub(" ", node.comment).strip()) + len(node.variations[1:])
+    return count
+
+
+def annotation_count_of(pgn: str) -> int:
+    game = chess.pgn.read_game(io.StringIO(pgn))
+    return annotation_count(game) if game is not None else 0
+
+
+def _all_nodes(node: chess.pgn.GameNode) -> Iterator[chess.pgn.GameNode]:
+    yield node
+    for child in node.variations:
+        yield from _all_nodes(child)
 
 
 def content_hash(white: str, black: str, date: str, ucis: tuple[str, ...]) -> str:
@@ -86,7 +114,7 @@ def _read_one(
         headers.get("Black", "?"),
         headers.get("Date", ""),
     )
-    exporter = chess.pgn.StringExporter(variations=False)  # side variations are dropped
+    exporter = chess.pgn.StringExporter()  # side variations are kept for the review
     return ImportedGame(
         white=white,
         black=black,
@@ -99,6 +127,7 @@ def _read_one(
         ucis=tuple(ucis),
         pgn=game.accept(exporter).strip(),
         content_hash=content_hash(white, black, date, tuple(ucis)),
+        notes=annotation_count(game),
     )
 
 

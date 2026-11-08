@@ -464,6 +464,31 @@
   color: var(--muted);
 }
 
+.import-remote {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+#import-card .import-remote .button-row,
+#import-card .import-remote .hint {
+  margin-top: 0;
+}
+
+.import-subtitle {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.import-remote .import-subtitle {
+  margin: 0;
+}
+
 #import-card .button-row {
   margin-top: 8px;
 }
@@ -521,6 +546,91 @@
 .movelist .move.current {
   background: var(--accent-soft);
   font-weight: 700;
+}
+
+/* Review: time a move took, comments and side variations from the PGN. */
+.movelist .spent {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.movelist .filler {
+  color: var(--muted);
+}
+
+.movelist .filler::before {
+  content: "…";
+}
+
+.move-extras {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px 10px 6px 2.9em;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+  font: 400 0.8rem/1.45 var(--font-ui);
+}
+
+.move-extras .comment {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.variation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 4px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+.variation .comment {
+  font-family: var(--font-ui);
+  font-style: italic;
+}
+
+.variation-nested::before {
+  content: "(";
+}
+
+.variation-nested::after {
+  content: ")";
+}
+
+.variation-nested {
+  display: contents;
+}
+
+.variation-move {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 3px;
+  border-radius: 4px;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.variation-move:hover {
+  background: var(--accent-soft);
+}
+
+.variation-move.current {
+  background: var(--accent-soft);
+  font-weight: 700;
+}
+
+.variation-move .move-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.movelist .move[data-node] {
+  cursor: pointer;
 }
 
 .view-button {
@@ -599,4 +709,8 @@
 .eval-label.top {
   top: 4px;
   color: #f2f2f2;
+}
+
+.saved-actions > .button-danger {
+  flex: 0 0 auto;
 }

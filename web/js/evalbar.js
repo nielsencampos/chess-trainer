@@ -54,13 +54,19 @@ export class EvalBar {
    * @param {string} fen
    * @param {boolean} chess960
    * @param {"w" | "b"} orientation  The color at the bottom of the board.
+   * @param {{cp: number | null, mate: number | null}} [known]  The evaluation the PGN gives
+   *   for this position (Lichess's analysis): shown at once, with no engine request.
    */
-  show(fen, chess960, orientation) {
+  show(fen, chess960, orientation, known) {
     this.sequence += 1;
     const sequence = this.sequence;
     this.element.hidden = false;
     this.element.classList.toggle("flipped", orientation === "b");
     clearTimeout(this.timer);
+    if (known) {
+      this.render(known);
+      return;
+    }
     this.timer = setTimeout(() => {
       this.next = { fen, chess960, sequence };
       void this.request();
