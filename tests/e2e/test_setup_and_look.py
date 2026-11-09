@@ -423,15 +423,13 @@ def drag_handle(page: Page, handle: str, to_x: float) -> None:
     page.mouse.up()
 
 
-def test_dragging_resizes_the_bars_and_the_logo_follows(page: Page):
+def test_dragging_resizes_the_bars(page: Page):
     page.set_viewport_size({"width": 1920, "height": 1080})
     page.goto("/")
     page.locator(".square").first.wait_for()
-    logo_before = width_of(page, ".brand-logo")
 
     drag_handle(page, "#resize-left", 500)
     assert abs(width_of(page, ".sidebar") - 500) <= 1
-    assert width_of(page, ".brand-logo") > logo_before * 1.25
 
     drag_handle(page, "#resize-right", 1920 - 400)
     assert abs(width_of(page, ".movebar") - 400) <= 1
@@ -579,13 +577,13 @@ def test_logo_is_in_the_header_and_the_browser_tab(page: Page):
     page.goto("/")
     logo = page.locator(".brand-logo")
     expect(logo).to_be_visible()
-    expect(logo).to_have_attribute("alt", "Chess Trainer")
+    expect(page.locator(".brand-name")).to_have_text("Chess Trainer")
     expect(page).to_have_title("Chess Trainer")
     page.wait_for_function("document.querySelector('.brand-logo').naturalWidth > 0")
-    assert abs(logo.bounding_box()["width"] - 114) <= 1
-    assert abs(logo.bounding_box()["height"] - 114) <= 1
-    assert page.locator('link[rel="icon"]').get_attribute("href") == "logo.svg"
-    for path in ("logo.svg", "logo.png"):
+    assert abs(logo.bounding_box()["width"] - 40) <= 1
+    assert abs(logo.bounding_box()["height"] - 40) <= 1
+    assert page.locator('link[rel="icon"]').get_attribute("href") == "favicon.svg"
+    for path in ("favicon.svg", "favicon.png"):
         assert page.request.get(f"/{path}").ok
 
 

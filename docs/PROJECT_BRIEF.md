@@ -60,7 +60,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 
 ### 4.1 Visual specification
 
-Smallest supported screen: HD (1280x720). Layout: a 380 px sidebar on the left that scrolls on its own (logo, menu, the screen chosen in it, language picker and versions), the board in the middle as the largest square that fits the window, and a 280 px bar on the right with the "Show moves" checkbox (during a game), the opening name, the move list, and under it the end-of-game card, resign, piece picker, theme and sound. With "Show moves" unchecked, the opening name and the move list are hidden with their headings until the end of the game. Both bars can be resized by dragging or with the arrow keys (double-click restores the width), and hidden and shown again with a button that stays visible. The logo follows the width of the left bar, and the board grows into the free space. These choices are kept per browser. Bot name and clock above the board, user name and clock below, status chips under the board ("Your move", "In theory", "Left theory at move N", "Check").
+Smallest supported screen: HD (1280x720). Layout: a 380 px sidebar on the left that scrolls on its own (logo and name, menu, the screen chosen in it, language picker and versions), the board in the middle as the largest square that fits the window, and a 280 px bar on the right with the "Show moves" checkbox (during a game), the opening name, the move list, and under it the end-of-game card, resign, piece picker, theme and sound. With "Show moves" unchecked, the opening name and the move list are hidden with their headings until the end of the game. Both bars can be resized by dragging or with the arrow keys (double-click restores the width), and hidden and shown again with a button that stays visible. The board grows into the free space. These choices are kept per browser. Bot name and clock above the board, user name and clock below, status chips under the board ("Your move", "In theory", "Left theory at move N", "Check").
 
 Design tokens (CSS custom properties):
 
@@ -75,6 +75,7 @@ Design tokens (CSS custom properties):
 | board light / dark | `#eeeed2` / `#769656` | same |
 | last move / selected | `rgba(246,246,105,.55)` / `.8` | same |
 
+- Logo and favicon: one icon, `web/favicon.svg`, four board squares with C and T on the light diagonal and a pen and a clock on the dark one, each in the color of the opposite square.
 - Fonts (Google Fonts, vendored): Familjen Grotesk (UI), JetBrains Mono (clocks, move list, numbers).
 - Theme follows `prefers-color-scheme`, with a manual override.
 - Clock turns accent-colored on the side to move and red under 20 s or 10% of the starting time, whichever is less.
