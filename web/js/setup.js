@@ -91,8 +91,10 @@ export class SetupCard {
     /** @type {"opening" | "saved"} */
     this.mode = "opening";
     this.shown = true;
+    // Disabled until here, so a choice made while the page loads is not lost.
     for (const radio of radios('input[name="new-mode"]')) {
       radio.addEventListener("change", () => void this.setMode(/** @type {any} */ (radio.value)));
+      radio.disabled = false;
     }
     /** @type {any[]} */
     this.savedGames = [];

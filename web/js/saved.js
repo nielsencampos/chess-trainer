@@ -34,8 +34,10 @@ export class SavedGames {
     /** @type {Set<string>} */
     this.selected = new Set();
 
+    // The tabs start disabled, so a click made while the page loads is not lost.
     for (const tab of TABS) {
       byId(`tab-${tab}`).addEventListener("click", () => this.showTab(tab));
+      byId(`tab-${tab}`).disabled = false;
     }
     for (const id of ["saved-search", "saved-color", "saved-result"]) {
       byId(id).addEventListener("input", () => this.render());
