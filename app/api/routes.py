@@ -54,6 +54,8 @@ from app.game.session import (
 
 router = APIRouter(prefix="/api")
 
+DEFAULT_LOCALE = "en"
+
 
 def _service(request: Request) -> GameService:
     return request.app.state.games
@@ -132,6 +134,20 @@ async def repertoires(request: Request) -> dict:
             )
         ]
     }
+
+
+@router.get("/locales")
+async def locales(request: Request) -> dict:
+    """The languages with a UI file in web/i18n, English first, each named in its own language."""
+    found = []
+    for path in sorted(request.app.state.i18n_dir.glob("*.json")):
+        try:
+            name = json.loads(path.read_text(encoding="utf-8")).get("locale.name", path.stem)
+        except (OSError, ValueError):
+            continue  # A broken file is left out; the frontend falls back to English.
+        found.append({"code": path.stem, "name": name})
+    found.sort(key=lambda item: (item["code"] != DEFAULT_LOCALE, item["code"]))
+    return {"locales": found, "default": DEFAULT_LOCALE}
 
 
 @router.get("/engine/levels")

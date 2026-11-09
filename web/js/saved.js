@@ -1,7 +1,7 @@
 // The "Saved games" tab: finished games, filters, selection and export.
 
 import { ApiError, api } from "./api.js";
-import { t } from "./i18n.js";
+import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
 
 /** @param {string} id */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
@@ -63,6 +63,18 @@ export class SavedGames {
       event.target.value = ""; // So the same file can be chosen again.
       if (file) await this.importText(await file.text());
     });
+    onLocaleChange(() => this.render());
+  }
+
+  /**
+   * The error line under the list. It is written through `localize`, so it follows the language.
+   * @param {string} key
+   */
+  showError(key) {
+    localize(byId("saved-error"), () => {
+      byId("saved-error").textContent = t(key);
+    });
+    byId("saved-error").hidden = false;
   }
 
   /** @param {string} tab */
@@ -87,8 +99,7 @@ export class SavedGames {
     } catch (error) {
       console.error(error);
       this.games = [];
-      byId("saved-error").textContent = t("saved.loadError");
-      byId("saved-error").hidden = false;
+      this.showError("saved.loadError");
     }
     const known = new Set(this.games.map((game) => game.game_id));
     this.selected = new Set([...this.selected].filter((id) => known.has(id)));
@@ -103,7 +114,7 @@ export class SavedGames {
       report = await api.importGames(text);
     } catch (error) {
       console.error(error);
-      byId("import-summary").textContent = t("import.failed");
+      this.setSummary("import", () => t("import.failed"));
       return;
     }
     await this.showImport(report, "import");
@@ -116,7 +127,7 @@ export class SavedGames {
     const site = /** @type {"lichess" | "chesscom"} */ (byId("import-site").value);
     const username = byId("import-username").value.trim();
     this.startImport("import-remote");
-    byId("import-remote-summary").textContent = t("import.remote.busy");
+    this.setSummary("import-remote", () => t("import.remote.busy"));
     button.disabled = true;
     try {
       const report = await api.importRemote(site, username, Number(byId("import-months").value));
@@ -124,9 +135,7 @@ export class SavedGames {
     } catch (error) {
       console.error(error);
       const code = error instanceof ApiError ? error.code : undefined;
-      byId("import-remote-summary").textContent = code
-        ? t(`import.remote.error.${code}`)
-        : t("import.failed");
+      this.setSummary("import-remote", () => (code ? t(`import.remote.error.${code}`) : t("import.failed")));
     } finally {
       button.disabled = false;
     }
@@ -134,8 +143,41 @@ export class SavedGames {
 
   /** @param {"import" | "import-remote"} prefix Which form's summary and error list. */
   startImport(prefix) {
-    byId(`${prefix}-errors`).replaceChildren();
+    this.setErrors(prefix, []);
     byId(`${prefix}-summary`).hidden = false;
+  }
+
+  /**
+   * The summaries and error lists are written through `localize`, so they follow the language.
+   * @param {"import" | "import-remote"} prefix
+   * @param {() => string} text
+   */
+  setSummary(prefix, text) {
+    const summary = byId(`${prefix}-summary`);
+    localize(summary, () => {
+      summary.textContent = text();
+    });
+  }
+
+  /**
+   * @param {"import" | "import-remote"} prefix
+   * @param {any[]} items  The report's errors.
+   */
+  setErrors(prefix, items) {
+    const errors = byId(`${prefix}-errors`);
+    localize(errors, () => {
+      errors.replaceChildren(
+        ...items.map((item) => {
+          const line = document.createElement("li");
+          line.textContent = t("import.errorLine", {
+            index: item.index,
+            label: item.label,
+            reason: t(`import.error.${item.code}`),
+          });
+          return line;
+        }),
+      );
+    });
   }
 
   /**
@@ -144,34 +186,21 @@ export class SavedGames {
    * @param {"import" | "import-remote"} prefix
    */
   async showImport(report, prefix) {
-    const summary = byId(`${prefix}-summary`);
-    const errors = byId(`${prefix}-errors`);
     const total =
       report.imported + report.duplicates + (report.updated ?? 0) + report.errors.length;
-    summary.textContent = total === 0
-      ? t(report.fetched === undefined ? "import.nothing" : "import.remote.nothing")
-      : t("import.summary", {
-          imported: report.imported,
-          duplicates: report.duplicates,
-          failed: report.errors.length,
-        });
-    if (report.updated) {
-      summary.textContent += ` ${t("import.updated", { updated: report.updated })}`;
-    }
-    if (report.truncated) {
-      summary.textContent += ` ${t("import.remote.truncated", { max: report.fetched ?? 0 })}`;
-    }
-    errors.append(
-      ...report.errors.map((/** @type {any} */ item) => {
-        const line = document.createElement("li");
-        line.textContent = t("import.errorLine", {
-          index: item.index,
-          label: item.label,
-          reason: t(`import.error.${item.code}`),
-        });
-        return line;
-      }),
-    );
+    this.setSummary(prefix, () => {
+      let text = total === 0
+        ? t(report.fetched === undefined ? "import.nothing" : "import.remote.nothing")
+        : t("import.summary", {
+            imported: report.imported,
+            duplicates: report.duplicates,
+            failed: report.errors.length,
+          });
+      if (report.updated) text += ` ${t("import.updated", { updated: report.updated })}`;
+      if (report.truncated) text += ` ${t("import.remote.truncated", { max: report.fetched ?? 0 })}`;
+      return text;
+    });
+    this.setErrors(prefix, report.errors);
     await this.load();
   }
 
@@ -231,8 +260,7 @@ export class SavedGames {
       this.selected.clear();
     } catch (error) {
       console.error(error);
-      byId("saved-error").textContent = t("saved.deleteError");
-      byId("saved-error").hidden = false;
+      this.showError("saved.deleteError");
     }
     await this.load();
   }
@@ -263,12 +291,12 @@ export class SavedGames {
       imported
         ? [
             t("saved.imported"),
-            new Date(game.started_at).toLocaleDateString(undefined, { timeZone: "UTC" }),
+            new Date(game.started_at).toLocaleDateString(getLocale(), { timeZone: "UTC" }),
             `${game.white} - ${game.black}`,
             t("saved.plies", { count: game.plies }),
           ]
         : [
-            new Date(game.started_at).toLocaleString(),
+            new Date(game.started_at).toLocaleString(getLocale()),
             t(`setup.${game.user_color}`),
             game.time_control === "none" ? t("setup.noClock") : this.timeLabel(game.time_control),
             t("saved.plies", { count: game.plies }),
@@ -304,8 +332,7 @@ export class SavedGames {
       URL.revokeObjectURL(link.href);
     } catch (error) {
       console.error(error);
-      byId("saved-error").textContent = t("saved.exportError");
-      byId("saved-error").hidden = false;
+      this.showError("saved.exportError");
     }
   }
 }

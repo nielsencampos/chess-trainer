@@ -1,7 +1,7 @@
 // The Openings screen: like Saved Games, it views lines on the board and exports them as PGN.
 
 import { api } from "./api.js";
-import { t } from "./i18n.js";
+import { localize, onLocaleChange, t } from "./i18n.js";
 import { OpeningTree } from "./opening-tree.js";
 
 /** @param {string} id */
@@ -29,6 +29,10 @@ export class OpeningsScreen {
     );
     byId("lines-export").addEventListener("click", () => void this.exportSelected());
     this.renderExport();
+    onLocaleChange(() => {
+      this.tree.relocalize();
+      this.renderExport();
+    });
   }
 
   renderExport() {
@@ -49,7 +53,9 @@ export class OpeningsScreen {
       URL.revokeObjectURL(link.href);
     } catch (error) {
       console.error(error);
-      byId("lines-error").textContent = t("lines.exportError");
+      localize(byId("lines-error"), () => {
+        byId("lines-error").textContent = t("lines.exportError");
+      });
       byId("lines-error").hidden = false;
     }
   }

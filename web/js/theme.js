@@ -1,4 +1,4 @@
-import { t } from "./i18n.js";
+import { onLocaleChange, t } from "./i18n.js";
 import { getPref, setPref } from "./prefs.js";
 
 const THEMES = ["auto", "light", "dark"];
@@ -21,6 +21,7 @@ export function initTheme(button) {
     button.textContent = t(`theme.${theme}`);
   };
   render();
+  onLocaleChange(render);
   button.addEventListener("click", () => {
     theme = THEMES[(THEMES.indexOf(theme) + 1) % THEMES.length];
     setPref("theme", theme);

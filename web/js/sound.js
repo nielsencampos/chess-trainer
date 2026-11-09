@@ -1,6 +1,7 @@
 // Sounds generated in the browser with Web Audio: no files, no licenses, works offline.
 // The browser only allows audio after a user gesture, so nothing plays before the first click.
 
+import { onLocaleChange, t } from "./i18n.js";
 import { getPref, setPref } from "./prefs.js";
 
 const DEFAULT_VOLUME = 0.7;
@@ -167,16 +168,20 @@ export const sound = new SoundPlayer();
 /**
  * @param {HTMLButtonElement} button
  * @param {HTMLInputElement} slider
- * @param {(key: string) => string} t
  */
-export function initSoundControls(button, slider, t) {
+export function initSoundControls(button, slider) {
   const render = () => {
     button.textContent = t(sound.enabled ? "sound.on" : "sound.off");
     button.setAttribute("aria-pressed", String(sound.enabled));
     slider.disabled = !sound.enabled;
   };
   slider.value = String(sound.volume);
-  slider.setAttribute("aria-label", t("sound.volume"));
+  const label = () => slider.setAttribute("aria-label", t("sound.volume"));
+  label();
+  onLocaleChange(() => {
+    label();
+    render();
+  });
   button.addEventListener("click", () => {
     sound.setEnabled(!sound.enabled);
     render();

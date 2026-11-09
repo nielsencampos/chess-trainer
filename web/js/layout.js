@@ -1,6 +1,6 @@
 // The two side bars: drag or use keys to resize, a button to hide and show. Kept per browser.
 
-import { t } from "./i18n.js";
+import { onLocaleChange, t } from "./i18n.js";
 import { getPref, setPref } from "./prefs.js";
 
 const KEY_STEP_PX = 20;
@@ -92,7 +92,6 @@ export function initLayout() {
     const handle = byId(bar.handle);
     handle.setAttribute("aria-valuemin", String(bar.min));
     handle.setAttribute("aria-valuemax", String(bar.max));
-    handle.setAttribute("aria-label", t(`layout.resize.${bar.key}`));
 
     handle.addEventListener("pointerdown", (/** @type {PointerEvent} */ event) => {
       handle.setPointerCapture(event.pointerId);
@@ -123,4 +122,12 @@ export function initLayout() {
     });
     apply(bar);
   }
+  const label = () => {
+    for (const bar of BARS) {
+      byId(bar.handle).setAttribute("aria-label", t(`layout.resize.${bar.key}`));
+      apply(bar);
+    }
+  };
+  label();
+  onLocaleChange(label);
 }

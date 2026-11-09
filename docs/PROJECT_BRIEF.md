@@ -60,7 +60,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 
 ### 4.1 Visual specification
 
-Smallest supported screen: HD (1280x720). Layout: a 380 px sidebar on the left that scrolls on its own (logo, menu, the screen chosen in it, versions), the board in the middle as the largest square that fits the window, and a 280 px bar on the right with the "Show moves" checkbox (during a game), the opening name, the move list, and under it the end-of-game card, resign, piece picker, theme and sound. With "Show moves" unchecked, the opening name and the move list are hidden with their headings until the end of the game. Both bars can be resized by dragging or with the arrow keys (double-click restores the width), and hidden and shown again with a button that stays visible. The logo follows the width of the left bar, and the board grows into the free space. These choices are kept per browser. Bot name and clock above the board, user name and clock below, status chips under the board ("Your move", "In theory", "Left theory at move N", "Check").
+Smallest supported screen: HD (1280x720). Layout: a 380 px sidebar on the left that scrolls on its own (logo, menu, the screen chosen in it, language picker and versions), the board in the middle as the largest square that fits the window, and a 280 px bar on the right with the "Show moves" checkbox (during a game), the opening name, the move list, and under it the end-of-game card, resign, piece picker, theme and sound. With "Show moves" unchecked, the opening name and the move list are hidden with their headings until the end of the game. Both bars can be resized by dragging or with the arrow keys (double-click restores the width), and hidden and shown again with a button that stays visible. The logo follows the width of the left bar, and the board grows into the free space. These choices are kept per browser. Bot name and clock above the board, user name and clock below, status chips under the board ("Your move", "In theory", "Left theory at move N", "Check").
 
 Design tokens (CSS custom properties):
 
@@ -99,7 +99,7 @@ chess-trainer/
 │   ├── index.html
 │   ├── css/
 │   ├── js/                # board.js, clock.js, game.js, api.js, i18n.js, setup.js…
-│   ├── i18n/              # en.json, pt-BR.json
+│   ├── i18n/              # en.json, pt-BR.json, es.json
 │   └── pieces/            # SVG piece sets (licenses in THIRD_PARTY_LICENSES.md)
 ├── docs/                  # this brief and other docs
 ├── tests/                 # pytest + Playwright
@@ -229,9 +229,9 @@ Rules:
 - UI strings in `web/i18n/{locale}.json` with stable keys (`setup.play`, `end.deviation`…).
 - A string with a `{count}` that needs plurals has one key per plural form of the language (`saved.count.one`, `saved.count.other`, and `few`/`many` where the language has them, as `Intl.PluralRules` names them).
 - Opening and variation names come from the `names` table (loaded from `Name_<locale>` PGN tags), falling back to `en`.
-- Default locale `en`, switchable in the UI, stored in `settings`.
+- Default locale `en`, switchable with a language picker at the bottom of the left bar and kept per browser, like the other UI preferences. Switching redraws the page in place, mid-game included; a key a language lacks falls back to English. The picker lists every file in `web/i18n`, each named by its own `locale.name` key.
 - Move notation: **always English SAN**, in every language (PGN, Lichess and Chess.com standard). Possible future option: figurine notation.
-- Adding a language = one JSON file plus `Name_<locale>` tags, no code changes.
+- Adding a language = one JSON file plus `Name_<locale>` tags, no code changes. UI files exist for `en`, `pt-BR` and `es`; the translations are machine-written and await review by a native speaker.
 
 ## 9. Engine
 

@@ -61,6 +61,7 @@ def create_app(
     app.state.games = GameService(book, engine, levels, GameStore(database), rng, opening_names)
     app.state.database = database
     app.state.fetch_url = fetch_url
+    app.state.i18n_dir = settings.web_dir / "i18n"
     app.include_router(router)
     app.mount("/", StaticFiles(directory=settings.web_dir, html=True), name="web")
     return app

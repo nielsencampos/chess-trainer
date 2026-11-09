@@ -1,7 +1,7 @@
 // The setup card: color, openings and variations, level, clock, pace, options.
 
 import { api } from "./api.js";
-import { t } from "./i18n.js";
+import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
 import { OpeningTree } from "./opening-tree.js";
 import { getPref, setPref } from "./prefs.js";
 
@@ -62,18 +62,19 @@ export class SetupCard {
     );
 
     const levelSelect = byId("level");
-    for (const key of levels) levelSelect.add(new Option(t(`level.${key}`), key));
+    for (const key of levels) levelSelect.add(new Option("", key));
     levelSelect.value = getPref("level", defaultLevel);
 
     this.timeControls = timeControls;
     const timeSelect = byId("time-control");
     for (const group of timeControls.groups) {
       const optgroup = document.createElement("optgroup");
-      optgroup.label = t(`setup.group.${group.key}`);
-      for (const item of group.items) optgroup.append(new Option(this.timeLabel(item), item.key));
+      optgroup.dataset.group = group.key;
+      for (const item of group.items) optgroup.append(new Option("", item.key));
       timeSelect.append(optgroup);
     }
-    timeSelect.add(new Option(t("setup.noClock"), timeControls.no_clock));
+    timeSelect.add(new Option("", timeControls.no_clock));
+    this.renderOptions();
     timeSelect.value = getPref("timeControl", timeControls.default);
     if (timeSelect.value === "") timeSelect.value = timeControls.default; // A removed one was saved.
 
@@ -119,6 +120,31 @@ export class SetupCard {
       onPlay(setup);
     });
     this.updateSelectionState();
+    onLocaleChange(() => this.relocalize());
+  }
+
+  /** The level and clock names, which change with the language. */
+  renderOptions() {
+    for (const option of byId("level").options) option.text = t(`level.${option.value}`);
+    const timeSelect = byId("time-control");
+    for (const group of this.timeControls.groups) {
+      const optgroup = timeSelect.querySelector(`optgroup[data-group="${group.key}"]`);
+      optgroup.label = t(`setup.group.${group.key}`);
+      for (const option of optgroup.querySelectorAll("option")) option.text = this.timeLabelFor(option.value);
+    }
+    const noClock = [...timeSelect.options].find((option) => option.value === this.timeControls.no_clock);
+    if (noClock) noClock.text = t("setup.noClock");
+  }
+
+  /** Draws again, in the language just chosen, everything the setup wrote with `t()`. */
+  relocalize() {
+    this.renderOptions();
+    this.tree.relocalize();
+    this.renderFromSavedHelp();
+    this.renderChess960Number();
+    const ply = byId("from-saved-ply").value;
+    this.renderSavedGames();
+    if (ply) byId("from-saved-ply").value = ply;
   }
 
   /** @param {TimeControlInfo} item */
@@ -196,11 +222,14 @@ export class SetupCard {
       return;
     }
     if (!fen) byId("chess960-fen").value = "";
-    byId("chess960-number").textContent = t("chess960.position", {
-      number: /** @type {{position: number}} */ (this.chess960).position,
-    });
+    this.renderChess960Number();
     this.updateSelectionState();
     this.onColorChange(this.color);
+  }
+
+  renderChess960Number() {
+    if (!this.chess960) return;
+    byId("chess960-number").textContent = t("chess960.position", { number: this.chess960.position });
   }
 
   /**
@@ -294,7 +323,7 @@ export class SetupCard {
     details.className = "variant-moves";
     const who = game.source === "imported" ? `${game.white} - ${game.black}` : t(`setup.${game.user_color}`);
     details.textContent = [
-      new Date(game.started_at).toLocaleDateString(),
+      new Date(game.started_at).toLocaleDateString(getLocale()),
       who,
       t("saved.plies", { count: game.plies }),
       ...(game.chess960 ? [t("fromSaved.chess960")] : []),
@@ -328,7 +357,9 @@ export class SetupCard {
       ready = this.chess960 !== null;
     }
     byId("play").disabled = !ready;
-    byId("setup-hint").textContent = t(hint);
+    localize(byId("setup-hint"), () => {
+      byId("setup-hint").textContent = t(hint);
+    });
     byId("setup-hint").hidden = ready || this.mode === "chess960";
   }
 
