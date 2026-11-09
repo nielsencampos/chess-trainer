@@ -61,7 +61,7 @@ def test_levels(client):
     ]
 
 
-def test_time_controls_are_grouped_with_scoresheet_only_for_classical(client):
+def test_time_controls_are_grouped(client):
     body = client.get("/api/time-controls").json()
     groups = {group["key"]: group for group in body["groups"]}
     assert list(groups) == ["bullet", "blitz", "rapid", "classical"]
@@ -69,7 +69,6 @@ def test_time_controls_are_grouped_with_scoresheet_only_for_classical(client):
     assert [item["key"] for item in bullet] == ["30s", "1", "2"]
     assert [item["base_ms"] for item in bullet] == [30_000, 60_000, 120_000]
     assert all(item["increment_ms"] == item["delay_ms"] == 0 for item in bullet)
-    assert groups["bullet"]["scoresheet"] is False
     assert [item["key"] for item in groups["blitz"]["items"]] == ["5", "10", "3i2", "5u2"]
     assert [item["key"] for item in groups["rapid"]["items"]] == ["25", "25i10", "25d10", "25u5"]
     assert len(groups["classical"]["items"]) == 13
@@ -88,7 +87,7 @@ def test_time_controls_are_grouped_with_scoresheet_only_for_classical(client):
         {"after_moves": 60, "add_ms": 900_000},
     ]
     assert (three["delay_ms"], three["delay_kind"]) == (30_000, "bronstein")
-    assert [key for key, group in groups.items() if group["scoresheet"]] == ["classical"]
+    assert all(set(group) == {"key", "items"} for group in body["groups"])
     assert body["no_clock"] == "none"
     assert body["default"] == "25i10"
 

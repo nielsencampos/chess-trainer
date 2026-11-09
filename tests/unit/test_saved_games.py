@@ -387,7 +387,9 @@ def test_no_active_game_at_first(client):
 
 
 def test_active_game_comes_back_while_the_server_runs(client):
-    game_id = start(client, ui={"scoresheet": True})["state"]["game_id"]
+    # "scoresheet" is a flag of a removed mode: old games keep it, and the page ignores it.
+    ui = {"warning": False, "scoresheet": True}
+    game_id = start(client, ui=ui)["state"]["game_id"]
     client.post(
         f"/api/games/{game_id}/moves",
         json={"uci": "e2e4", "user_clock_ms": 170_000, "bot_clock_ms": 180_000},
@@ -395,7 +397,7 @@ def test_active_game_comes_back_while_the_server_runs(client):
     game = client.get("/api/games/active").json()["game"]
     assert game["state"]["game_id"] == game_id
     assert [move["san"] for move in game["moves"]] == ["e4", "c5"]
-    assert game["setup"]["ui"] == {"scoresheet": True}
+    assert game["setup"]["ui"] == ui
     assert game["setup"]["time_control"] == "3i2"
     assert game["clocks"] == {"user_ms": 170_000, "bot_ms": 182_000}
 

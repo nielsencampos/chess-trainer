@@ -24,8 +24,20 @@ export async function initI18n(requested = DEFAULT_LOCALE) {
  * @param {Record<string, string | number>} [params]
  */
 export function t(key, params = {}) {
-  const template = strings[key] ?? key;
+  const template = strings[pluralKey(key, params.count)] ?? strings[key] ?? key;
   return template.replace(/\{(\w+)\}/g, (_, name) => String(params[name] ?? `{${name}}`));
+}
+
+/**
+ * A key with a number has one entry per plural form of the locale: `saved.count.one`,
+ * `saved.count.other` (and `few`, `many`… where the language has them).
+ * @param {string} key
+ * @param {string | number | undefined} count
+ */
+function pluralKey(key, count) {
+  if (typeof count !== "number") return key;
+  const form = new Intl.PluralRules(locale).select(count);
+  return `${key}.${form}` in strings ? `${key}.${form}` : `${key}.other`;
 }
 
 /** @param {Document | Element} root */

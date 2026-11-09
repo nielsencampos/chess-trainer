@@ -243,23 +243,15 @@ def test_a_removed_saved_time_control_falls_back_to_the_default(page: Page, seed
     expect(page.locator("#time-control")).to_have_value("25i10")
 
 
-def test_scoresheet_is_offered_only_for_classical_and_no_clock(page: Page, seed_prefs):
-    seed_prefs([ALAPIN], color="white", timeControl="25i10", scoresheet=True)
+def test_an_old_scoresheet_preference_is_ignored(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none", scoresheet=True)
     page.goto("/")
-    option = page.locator("#scoresheet-option")
-    select = page.locator("#time-control")
-    expect(option).to_be_hidden()
-    for key in ("90+30i30", "120+60+30", "none"):
-        select.select_option(key)
-        expect(option).to_be_visible()
-    select.select_option("3i2")
-    expect(option).to_be_hidden()
-
+    expect(page.locator("#show-moves")).to_be_checked()
     play(page)
     wait_for_your_move(page)
-    # The saved option does not apply here. The list is empty, so check the attribute.
+    # The list is empty, so check the attribute.
     expect(page.locator("#movelist")).to_have_js_property("hidden", False)
-    expect(page.locator("#scoresheet-note")).to_be_hidden()
+    expect(page.locator("#opening-name")).to_be_visible()
 
 
 def test_clock_periods_delays_and_hours(page: Page, seed_prefs):

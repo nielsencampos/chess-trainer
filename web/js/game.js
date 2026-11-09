@@ -7,6 +7,7 @@ import { renderEndCard } from "./endcard.js";
 import { EvalBar } from "./evalbar.js";
 import { t } from "./i18n.js";
 import { renderMoveList } from "./movelist.js";
+import { getPref, setPref } from "./prefs.js";
 import { premoveDestinations } from "./premove.js";
 import { Rules } from "./rules.js";
 import { sound } from "./sound.js";
@@ -57,6 +58,16 @@ export class GameController {
      * @type {{clocks: {w: number | null, b: number | null}} | null}
      */
     this.takeBackable = null;
+
+    // "Show moves" is a bar preference: it can change at any moment, mid-game included.
+    this.showMoves = getPref("showMoves", true) !== false;
+    const showMoves = byId("show-moves");
+    showMoves.checked = this.showMoves;
+    showMoves.addEventListener("change", () => {
+      this.showMoves = showMoves.checked;
+      setPref("showMoves", this.showMoves);
+      this.applyShowMoves();
+    });
 
     byId("resign").addEventListener("click", () => this.onResignClick());
     byId("take-back").addEventListener("click", () => void this.onTakeBack());
@@ -126,8 +137,7 @@ export class GameController {
     this.over = false;
     this.setup = null;
     this.clearPremove();
-    byId("movelist").hidden = false;
-    byId("scoresheet-note").hidden = true;
+    this.applyShowMoves();
     this.renderMoves();
     this.renderOpening();
     byId("chips").replaceChildren(); // Last: clearing the premove draws them.
@@ -162,7 +172,6 @@ export class GameController {
         pace: setup.pace,
         time_control: setup.time_control,
         ui: {
-          scoresheet: setup.scoresheet,
           warning: setup.warning,
           premoves: setup.premoves,
         },
@@ -211,8 +220,7 @@ export class GameController {
     byId("game-card").hidden = false;
     byId("resign").hidden = false;
     byId("game-error").hidden = true;
-    byId("scoresheet-note").hidden = !setup.scoresheet;
-    byId("movelist").hidden = setup.scoresheet;
+    this.applyShowMoves();
     this.resetResign();
     this.renderTakeBack();
 
@@ -243,7 +251,6 @@ export class GameController {
       pace: game.setup.pace,
       time_control: game.setup.time_control,
       clock,
-      scoresheet: ui.scoresheet ?? false,
       warning: ui.warning ?? true,
       premoves: ui.premoves ?? true,
     });
@@ -514,6 +521,7 @@ export class GameController {
     this.board.setPremoveSquares([]);
     this.renderClocks();
     this.renderChips();
+    this.applyShowMoves();
   }
 
   /**
@@ -536,8 +544,6 @@ export class GameController {
     renderEndCard(summary);
     byId("end-card").hidden = false;
     byId("resign").hidden = true;
-    byId("scoresheet-note").hidden = true;
-    byId("movelist").hidden = false;
     renderMoveList(byId("movelist"), this.plies, true);
     this.renderChips();
     this.showMenu();
@@ -586,11 +592,19 @@ export class GameController {
     this.showMenu();
   }
 
-  /** The name stays hidden in scoresheet mode until the end, like the move list. */
+  /**
+   * With "Show moves" off, the move list and the opening name are hidden while a game is played.
+   * Everything shows again at the end of the game, and outside games.
+   */
+  applyShowMoves() {
+    const hidden = !this.showMoves && this.setup !== null && !this.over;
+    byId("movelist").hidden = hidden;
+    byId("opening-name").hidden = hidden;
+  }
+
   renderOpening() {
-    const hidden = Boolean(this.setup?.scoresheet) && !this.over;
     byId("opening-name").textContent =
-      this.opening && !hidden
+      this.opening
         ? t("moves.openingName", { eco: this.opening.eco, name: this.opening.name })
         : t("moves.noOpening");
   }

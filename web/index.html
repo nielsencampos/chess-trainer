@@ -23,10 +23,10 @@
         </div>
 
         <nav id="sidebar-tabs" class="menu">
-          <button id="tab-new" class="tab active" type="button" data-i18n="menu.newGame"></button>
-          <button id="tab-saved" class="tab" type="button" data-i18n="menu.saved"></button>
-          <button id="tab-openings" class="tab" type="button" data-i18n="menu.openings"></button>
-          <button id="tab-import" class="tab" type="button" data-i18n="menu.import"></button>
+          <button id="tab-new" class="tab active" type="button" disabled data-i18n="menu.newGame"></button>
+          <button id="tab-saved" class="tab" type="button" disabled data-i18n="menu.saved"></button>
+          <button id="tab-openings" class="tab" type="button" disabled data-i18n="menu.openings"></button>
+          <button id="tab-import" class="tab" type="button" disabled data-i18n="menu.import"></button>
         </nav>
 
         <div class="side-panel">
@@ -113,9 +113,9 @@
           <h2 data-i18n="setup.title"></h2>
 
           <div class="segmented">
-            <label><input type="radio" name="new-mode" value="opening" checked /><span data-i18n="setup.mode.opening"></span></label>
-            <label><input type="radio" name="new-mode" value="saved" /><span data-i18n="setup.mode.saved"></span></label>
-            <label><input type="radio" name="new-mode" value="chess960" /><span data-i18n="setup.mode.chess960"></span></label>
+            <label><input type="radio" name="new-mode" value="opening" checked disabled /><span data-i18n="setup.mode.opening"></span></label>
+            <label><input type="radio" name="new-mode" value="saved" disabled /><span data-i18n="setup.mode.saved"></span></label>
+            <label><input type="radio" name="new-mode" value="chess960" disabled /><span data-i18n="setup.mode.chess960"></span></label>
           </div>
 
           <fieldset class="field">
@@ -200,7 +200,6 @@
           </fieldset>
 
           <div class="toggles">
-            <label id="scoresheet-option" class="toggle"><input id="opt-scoresheet" type="checkbox" /><span data-i18n="setup.scoresheet"></span></label>
             <label class="toggle"><input id="opt-warning" type="checkbox" /><span data-i18n="setup.warning"></span></label>
             <label class="toggle"><input id="opt-premoves" type="checkbox" /><span data-i18n="setup.premoves"></span></label>
           </div>
@@ -253,13 +252,13 @@
       </main>
 
       <aside class="movebar">
+        <label class="toggle show-moves"><input id="show-moves" type="checkbox" /><span data-i18n="moves.show"></span></label>
         <section class="opening-box">
           <h2 data-i18n="moves.opening"></h2>
           <p id="opening-name" class="opening-title"></p>
         </section>
         <section class="moves-box">
           <h2 data-i18n="game.moves"></h2>
-          <p id="scoresheet-note" class="hint" hidden data-i18n="game.scoresheetNote"></p>
           <div id="movelist" class="movelist"></div>
         </section>
         <section id="end-card" class="card end-card" hidden>

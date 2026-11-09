@@ -135,35 +135,57 @@ def test_opening_name_follows_the_position_even_outside_the_selection(page: Page
     assert moves_text(page) == []
 
 
-def test_scoresheet_hides_the_opening_name_until_the_end(page: Page, seed_prefs):
-    seed_prefs([ALAPIN], color="white", timeControl="none", scoresheet=True)
+def test_show_moves_off_hides_the_list_and_the_name_until_the_end(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="3i2", showMoves=False)
     page.goto("/")
+    expect(page.locator("#show-moves")).not_to_be_checked()
     play(page)
     wait_for_your_move(page)
     click_move(page, "e2", "e4")
     wait_for_your_move(page)
     expect(square(page, "c5")).to_have_attribute("data-piece", "bp")
-    expect(page.locator("#opening-name")).to_have_text("—")
-    resign(page)
-    expect(page.locator("#opening-name")).to_contain_text("Sicilian Defense")
-
-
-def test_scoresheet_mode_hides_the_list_until_the_end(page: Page, seed_prefs):
-    seed_prefs([ALAPIN], color="white", timeControl="none", scoresheet=True)
-    page.goto("/")
-    play(page)
-    wait_for_your_move(page)
     expect(page.locator("#movelist")).to_be_hidden()
-    expect(page.locator("#scoresheet-note")).to_be_visible()
-
-    click_move(page, "e2", "e4")
-    wait_for_your_move(page)
-    expect(square(page, "c5")).to_have_attribute("data-piece", "bp")
-    expect(page.locator("#movelist")).to_be_hidden()
+    expect(page.locator("#opening-name")).to_be_hidden()
+    # Only the moves and the name go: the rest of the bar stays.
+    for control in ("#resign", "#piece-set", "#theme-toggle", "#sound-toggle", "#show-moves"):
+        expect(page.locator(control)).to_be_visible()
 
     resign(page)
     expect(page.locator("#movelist")).to_be_visible()
+    expect(page.locator("#opening-name")).to_contain_text("Sicilian Defense")
+    assert moves_text(page) == ["e4", "c5"]
+    expect(page.locator("#show-moves")).not_to_be_checked()
+
+
+def test_show_moves_can_be_toggled_mid_game_and_all_shows_at_the_end(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none")
+    page.goto("/")
+    toggle = page.locator("#show-moves")
+    expect(toggle).to_be_checked()  # shown by default
+    play(page)
+    wait_for_your_move(page)
+    click_move(page, "e2", "e4")
     wait_for_ply(page, 2)
+    wait_for_your_move(page)
+    expect(page.locator("#opening-name")).to_contain_text("Sicilian Defense")
+
+    toggle.uncheck()
+    expect(page.locator("#movelist")).to_be_hidden()
+    expect(page.locator("#opening-name")).to_be_hidden()
+    click_move(page, "c2", "c3")
+    wait_for_your_move(page)
+    toggle.check()
+    expect(page.locator("#movelist")).to_be_visible()
+    expect(page.locator("#opening-name")).to_be_visible()
+    wait_for_ply(page, 4)
+
+    toggle.uncheck()
+    expect(page.locator("#movelist")).to_be_hidden()
+    resign(page)
+    expect(page.locator("#movelist")).to_be_visible()
+    expect(page.locator("#opening-name")).to_contain_text("Sicilian Defense")
+    wait_for_ply(page, 4)
+    expect(toggle).not_to_be_checked()
 
 
 def test_warning_off_hides_theory_chips_and_marks(page: Page, seed_prefs):
@@ -231,15 +253,17 @@ def test_reload_continues_the_game(page: Page, seed_prefs):
     expect(page.locator("#game-card")).to_be_hidden()
 
 
-def test_scoresheet_stays_on_after_a_reload(page: Page, seed_prefs):
-    seed_prefs([ALAPIN], color="white", timeControl="none", scoresheet=True)
+def test_show_moves_off_stays_after_a_reload(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     play(page)
     wait_for_your_move(page)
+    page.locator("#show-moves").uncheck()
     page.reload()
     wait_for_your_move(page)
+    expect(page.locator("#show-moves")).not_to_be_checked()
     expect(page.locator("#movelist")).to_be_hidden()
-    expect(page.locator("#scoresheet-note")).to_be_visible()
+    expect(page.locator("#opening-name")).to_be_hidden()
 
 
 def test_download_pgn(page: Page, seed_prefs):
@@ -332,7 +356,7 @@ def test_saved_games_tab_lists_filters_and_exports(page: Page, seed_prefs):
 
     rows.nth(0).locator("input").check()
     rows.nth(1).locator("input").check()
-    expect(page.locator("#saved-export")).to_have_text("Export selected (2)")
+    expect(page.locator("#saved-export")).to_have_text("Export (2)")
     with page.expect_download() as download:
         page.locator("#saved-export").click()
     assert download.value.suggested_filename.endswith("-2-games.pgn")
@@ -355,7 +379,7 @@ def test_saved_games_select_all_uses_the_filter(page: Page, seed_prefs):
     expect(page.locator(".saved-game").first).to_contain_text("Sicilian")
     page.locator("#saved-select-all").check()
     visible = page.locator(".saved-game").count()
-    expect(page.locator("#saved-export")).to_have_text(f"Export selected ({visible})")
+    expect(page.locator("#saved-export")).to_have_text(f"Export ({visible})")
 
 
 def test_import_by_text_and_by_file(page: Page, tmp_path):
@@ -847,7 +871,7 @@ def test_delete_saved_games_with_a_second_click(page: Page):
     page.locator(".saved-game", has_text=f"{name} - X").locator("input").check()
     expect(delete).to_have_text("Delete (1)")
     delete.click()
-    expect(delete).to_have_text("Click again to delete 1 for good")
+    expect(delete).to_have_text("Delete 1 for good?")
     expect(page.locator(".saved-game", has_text=name)).to_have_count(2)  # nothing gone yet
     delete.click()
     expect(page.locator(".saved-game", has_text=name)).to_have_count(1)
