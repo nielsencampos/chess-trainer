@@ -51,7 +51,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 - The engine never searches for longer than the bot's clock allows. Bot response time "Instant" or "Human" (human-like, based on the clock).
 - "Show moves" checkbox in the right bar, on by default and kept per browser: unchecked hides the move list and the opening name during the game (to write moves on paper, or to play without hints), in every time control, and it can be toggled at any moment, mid-game included. Everything shows again at the end of the game. Out-of-theory warning (its own setup option), auto-play next game.
 - End of game: under the move list, the result, variation, how far theory went, deviations, and copy or download the PGN. The board keeps the final position and the left column shows the menu again, with no item active: any of them leaves the game, and New Game starts the next one with the last choices.
-- Green/cream board (a1 is dark), SVG piece sets with a picker (Merida, Cburnett, Chessnut, Fantasy, Unicode), light and dark theme, mobile layout, click **and** drag to move.
+- Green/cream board (a1 is dark), SVG piece sets with a picker (Merida, Cburnett, Chessnut, Fantasy, Unicode), light and dark theme, click **and** drag to move.
 - Board flips to the user's color. Coordinates on the left file and bottom rank. Highlights: last move, selected square, legal targets (dot; ring for captures), king in check.
 - Sounds generated in the browser, with no audio files: start, end, move, capture and castling (two knocks). The bot's moves sound slightly lower. An on/off button and a volume control are kept per browser. There is no low-time warning, as in a real game.
 - Promotion picker (Q/R/B/N) as an overlay on the board.
@@ -274,7 +274,7 @@ Rules:
 
 ## 12. Delivery phases
 
-1. **Foundation:** repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), the book in `openings/*.json` loaded into DuckDB, validation tests. Includes the real Stockfish with provisional levels, because §4 needs it. The book lives in DuckDB. Games live in RAM and UI preferences stay in `localStorage` until Phase 2. UI strings are English only until Phase 4. *Done when: every item in §4 works in the browser (desktop and mobile).*
+1. **Foundation:** repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), the book in `openings/*.json` loaded into DuckDB, validation tests. Includes the real Stockfish with provisional levels, because §4 needs it. The book lives in DuckDB. Games live in RAM and UI preferences stay in `localStorage` until Phase 2. UI strings are English only until Phase 4. *Done when: every item in §4 works in the browser at HD (1280x720) and larger.*
 2. **Data:** opening name on screen, recording of games, moves and deviations, settings on the server.
 3. **Engine on the server:** native Stockfish with calibrated levels.
 4. **Languages:** complete en and pt-BR, language picker.
@@ -285,5 +285,5 @@ Rules:
 1. One phase at a time. At the end of each: what changed, how to test it, what was left for later.
 2. Every book move is validated by tests, never by memory.
 3. Never change a `VariantId` or delete database data without a migration and a note.
-4. Test in a browser (desktop and mobile viewport) before calling something done, and state what was tested.
+4. Test in a browser at 1280x720 before calling something done, and state what was tested.
 5. If anything in this brief is ambiguous or conflicting, ask before inventing.
