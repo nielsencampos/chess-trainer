@@ -284,6 +284,11 @@ body.is-resizing {
 }
 
 /* Under the move list, the result, resign and the board controls stay at the bottom. */
+/* With the moves hidden, resign and the controls stay at the bottom, where they always are. */
+.moves-box[hidden] ~ #game-card {
+  margin-top: auto;
+}
+
 .movebar > .card,
 .movebar > .show-moves,
 .movebar > .sidebar-controls {

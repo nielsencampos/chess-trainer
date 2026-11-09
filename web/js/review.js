@@ -87,7 +87,6 @@ export class Review {
       byId(id).hidden = !this.hasClocks;
     }
     byId("movelist").hidden = false;
-    byId("opening-name").hidden = false;
     byId("chips").replaceChildren();
     byId("opening-name").textContent = data.opening
       ? t("moves.openingName", { eco: data.eco ?? "", name: data.opening })
