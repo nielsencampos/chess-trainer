@@ -14,14 +14,14 @@ import { getPref, setPref } from "./prefs.js";
  * @typedef {{key: string, base_ms: number, increment_ms: number,
  *   periods: {after_moves: number, add_ms: number}[],
  *   delay_ms: number, delay_kind: string | null}} TimeControlInfo
- * @typedef {{key: string, scoresheet: boolean, items: TimeControlInfo[]}} TimeControlGroup
+ * @typedef {{key: string, items: TimeControlInfo[]}} TimeControlGroup
  * @typedef {{groups: TimeControlGroup[], no_clock: string, default: string}} TimeControls
  * @typedef {{
  *   color: "white" | "black", variant_ids: string[], level: string, pace: "human" | "instant",
  *   time_control: string, clock: TimeControlInfo | null,
  *   from_game?: {game_id: string, upto_ply: number, mode: string} | null,
  *   chess960?: {position: number, fen: string} | null,
- *   scoresheet: boolean, warning: boolean, premoves: boolean,
+ *   warning: boolean, premoves: boolean,
  * }} GameSetup
  */
 
@@ -76,12 +76,9 @@ export class SetupCard {
     timeSelect.add(new Option(t("setup.noClock"), timeControls.no_clock));
     timeSelect.value = getPref("timeControl", timeControls.default);
     if (timeSelect.value === "") timeSelect.value = timeControls.default; // A removed one was saved.
-    timeSelect.addEventListener("change", () => this.updateScoresheetOption());
-    this.updateScoresheetOption();
 
     this.setRadio("color", getPref("color", "white"));
     this.setRadio("pace", getPref("pace", "human"));
-    byId("opt-scoresheet").checked = getPref("scoresheet", false);
     byId("opt-warning").checked = getPref("warning", true);
     byId("opt-premoves").checked = getPref("premoves", true);
 
@@ -140,19 +137,6 @@ export class SetupCard {
   timeLabelFor(key) {
     const item = this.clockFor(key);
     return item ? this.timeLabel(item) : key;
-  }
-
-  /** Scoresheet mode exists only where moves are written on paper. */
-  allowsScoresheet() {
-    const key = byId("time-control").value;
-    if (key === this.timeControls.no_clock) return true;
-    return this.timeControls.groups.some(
-      (group) => group.scoresheet && group.items.some((item) => item.key === key),
-    );
-  }
-
-  updateScoresheetOption() {
-    byId("scoresheet-option").hidden = !this.allowsScoresheet();
   }
 
   /** @returns {TimeControlInfo | null} */
@@ -364,7 +348,6 @@ export class SetupCard {
       pace: /** @type {"human" | "instant"} */ (this.radioValue("pace")),
       time_control: byId("time-control").value,
       clock: this.selectedClock(),
-      scoresheet: this.allowsScoresheet() && byId("opt-scoresheet").checked,
       warning: byId("opt-warning").checked,
       premoves: byId("opt-premoves").checked,
     };
@@ -376,7 +359,6 @@ export class SetupCard {
     setPref("level", setup.level);
     setPref("pace", setup.pace);
     setPref("timeControl", setup.time_control);
-    setPref("scoresheet", byId("opt-scoresheet").checked);
     setPref("warning", setup.warning);
     setPref("premoves", setup.premoves);
   }

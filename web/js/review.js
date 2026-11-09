@@ -86,8 +86,8 @@ export class Review {
       byId(id).className = "clock"; // Read-only: no side to move, no low-time color.
       byId(id).hidden = !this.hasClocks;
     }
-    byId("scoresheet-note").hidden = true;
     byId("movelist").hidden = false;
+    byId("opening-name").hidden = false;
     byId("chips").replaceChildren();
     byId("opening-name").textContent = data.opening
       ? t("moves.openingName", { eco: data.eco ?? "", name: data.opening })

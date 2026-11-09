@@ -40,7 +40,6 @@ from app.engine.process import EngineUnavailableError
 from app.game.pace import (
     DEFAULT_TIME_CONTROL,
     NO_CLOCK,
-    SCORESHEET_GROUPS,
     TIME_CONTROL_GROUPS,
 )
 from app.game.remote import RemoteError, fetch_games
@@ -146,7 +145,6 @@ async def time_controls() -> dict:
         "groups": [
             {
                 "key": group,
-                "scoresheet": group in SCORESHEET_GROUPS,
                 "items": [
                     {
                         "key": key,

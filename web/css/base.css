@@ -285,6 +285,7 @@ body.is-resizing {
 
 /* Under the move list, the result, resign and the board controls stay at the bottom. */
 .movebar > .card,
+.movebar > .show-moves,
 .movebar > .sidebar-controls {
   flex: none;
 }

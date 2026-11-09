@@ -93,8 +93,6 @@ TIME_CONTROL_GROUPS: dict[str, dict[str, TimeControl]] = {
 }
 NO_CLOCK = "none"
 DEFAULT_TIME_CONTROL = "25i10"
-# Writing moves on paper is for long games and for free play, not for on-screen training.
-SCORESHEET_GROUPS = {"classical"}
 
 TIME_CONTROLS: dict[str, TimeControl | None] = {
     NO_CLOCK: None,

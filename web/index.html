@@ -200,7 +200,6 @@
           </fieldset>
 
           <div class="toggles">
-            <label id="scoresheet-option" class="toggle"><input id="opt-scoresheet" type="checkbox" /><span data-i18n="setup.scoresheet"></span></label>
             <label class="toggle"><input id="opt-warning" type="checkbox" /><span data-i18n="setup.warning"></span></label>
             <label class="toggle"><input id="opt-premoves" type="checkbox" /><span data-i18n="setup.premoves"></span></label>
           </div>
@@ -253,13 +252,13 @@
       </main>
 
       <aside class="movebar">
+        <label class="toggle show-moves"><input id="show-moves" type="checkbox" /><span data-i18n="moves.show"></span></label>
         <section class="opening-box">
           <h2 data-i18n="moves.opening"></h2>
           <p id="opening-name" class="opening-title"></p>
         </section>
         <section class="moves-box">
           <h2 data-i18n="game.moves"></h2>
-          <p id="scoresheet-note" class="hint" hidden data-i18n="game.scoresheetNote"></p>
           <div id="movelist" class="movelist"></div>
         </section>
         <section id="end-card" class="card end-card" hidden>

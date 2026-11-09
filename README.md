@@ -34,7 +34,7 @@ set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust. `CHESS_TRAINER_PORT` c
    shown at the end of the game.
 4. When the line ends or someone leaves theory, Stockfish takes over at the selected level.
 
-Scoresheet mode hides the move list, so you can write on paper during long time controls.
+Unchecking "Show moves" hides the move list and the opening name during a game, so you can write on paper. They come back at the end.
 
 **Current state:** the book and games are in DuckDB (`data/chess-trainer.duckdb`). Bot levels are
 provisional. The UI is in English. See the [project brief](docs/PROJECT_BRIEF.md) for
