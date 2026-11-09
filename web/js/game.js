@@ -593,13 +593,16 @@ export class GameController {
   }
 
   /**
-   * With "Show moves" off, the move list and the opening name are hidden while a game is played.
+   * With "Show moves" off, the opening name and the move list, with their headings, are hidden while a game is played.
    * Everything shows again at the end of the game, and outside games.
    */
   applyShowMoves() {
-    const hidden = !this.showMoves && this.setup !== null && !this.over;
-    byId("movelist").hidden = hidden;
-    byId("opening-name").hidden = hidden;
+    const playing = this.setup !== null && !this.over;
+    byId("show-moves-option").hidden = !playing; // The checkbox matters only during a game.
+    const hidden = !this.showMoves && playing;
+    // The headings go too: an empty "Opening" and "Moves" would only take room.
+    byId("opening-box").hidden = hidden;
+    byId("moves-box").hidden = hidden;
   }
 
   renderOpening() {

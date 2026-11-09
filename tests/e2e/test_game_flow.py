@@ -144,15 +144,17 @@ def test_show_moves_off_hides_the_list_and_the_name_until_the_end(page: Page, se
     click_move(page, "e2", "e4")
     wait_for_your_move(page)
     expect(square(page, "c5")).to_have_attribute("data-piece", "bp")
-    expect(page.locator("#movelist")).to_be_hidden()
-    expect(page.locator("#opening-name")).to_be_hidden()
-    # Only the moves and the name go: the rest of the bar stays.
+    expect(page.locator("#moves-box")).to_be_hidden()
+    expect(page.locator("#opening-box")).to_be_hidden()
+    # Only the Opening and Moves sections go, headings included: the rest of the bar stays.
     for control in ("#resign", "#piece-set", "#theme-toggle", "#sound-toggle", "#show-moves"):
         expect(page.locator(control)).to_be_visible()
 
     resign(page)
     expect(page.locator("#movelist")).to_be_visible()
     expect(page.locator("#opening-name")).to_contain_text("Sicilian Defense")
+    expect(page.locator(".movebar h2", has_text="Opening")).to_be_visible()
+    expect(page.locator(".movebar h2", has_text="Moves")).to_be_visible()
     assert moves_text(page) == ["e4", "c5"]
     expect(page.locator("#show-moves")).not_to_be_checked()
 
@@ -162,16 +164,18 @@ def test_show_moves_can_be_toggled_mid_game_and_all_shows_at_the_end(page: Page,
     page.goto("/")
     toggle = page.locator("#show-moves")
     expect(toggle).to_be_checked()  # shown by default
+    expect(toggle).to_be_hidden()  # only offered during a game
     play(page)
     wait_for_your_move(page)
+    expect(toggle).to_be_visible()
     click_move(page, "e2", "e4")
     wait_for_ply(page, 2)
     wait_for_your_move(page)
     expect(page.locator("#opening-name")).to_contain_text("Sicilian Defense")
 
     toggle.uncheck()
-    expect(page.locator("#movelist")).to_be_hidden()
-    expect(page.locator("#opening-name")).to_be_hidden()
+    expect(page.locator("#moves-box")).to_be_hidden()
+    expect(page.locator("#opening-box")).to_be_hidden()
     click_move(page, "c2", "c3")
     wait_for_your_move(page)
     toggle.check()
@@ -180,12 +184,13 @@ def test_show_moves_can_be_toggled_mid_game_and_all_shows_at_the_end(page: Page,
     wait_for_ply(page, 4)
 
     toggle.uncheck()
-    expect(page.locator("#movelist")).to_be_hidden()
+    expect(page.locator("#moves-box")).to_be_hidden()
     resign(page)
     expect(page.locator("#movelist")).to_be_visible()
     expect(page.locator("#opening-name")).to_contain_text("Sicilian Defense")
     wait_for_ply(page, 4)
     expect(toggle).not_to_be_checked()
+    expect(toggle).to_be_hidden()
 
 
 def test_warning_off_hides_theory_chips_and_marks(page: Page, seed_prefs):
@@ -262,8 +267,8 @@ def test_show_moves_off_stays_after_a_reload(page: Page, seed_prefs):
     page.reload()
     wait_for_your_move(page)
     expect(page.locator("#show-moves")).not_to_be_checked()
-    expect(page.locator("#movelist")).to_be_hidden()
-    expect(page.locator("#opening-name")).to_be_hidden()
+    expect(page.locator("#moves-box")).to_be_hidden()
+    expect(page.locator("#opening-box")).to_be_hidden()
 
 
 def test_download_pgn(page: Page, seed_prefs):
