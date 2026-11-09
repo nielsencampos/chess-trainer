@@ -4,7 +4,7 @@ import { api } from "./api.js";
 import { Board, PIECE_SETS } from "./board.js";
 import { GameController } from "./game.js";
 import { OpeningsScreen } from "./openings.js";
-import { initI18n, t } from "./i18n.js";
+import { availableLocales, getLocale, initI18n, localize, onLocaleChange, setLocale, t } from "./i18n.js";
 import { initLayout } from "./layout.js";
 import { getPref, setPref } from "./prefs.js";
 import { Review } from "./review.js";
@@ -18,7 +18,10 @@ const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
 function initPiecePicker(/** @type {Board} */ board) {
   const select = byId("piece-set");
-  for (const key of PIECE_SETS) select.add(new Option(t(`board.pieceSet.${key}`), key));
+  for (const key of PIECE_SETS) select.add(new Option("", key));
+  localize(select, () => {
+    for (const option of select.options) option.text = t(`board.pieceSet.${option.value}`);
+  });
   select.value = board.pieceSet;
   select.addEventListener("change", () => {
     setPref("pieceSet", select.value);
@@ -26,11 +29,27 @@ function initPiecePicker(/** @type {Board} */ board) {
   });
 }
 
+/** Lists the languages that have a UI file; each is named in its own language. */
+async function initLocalePicker() {
+  const select = byId("locale-picker");
+  const locales = await availableLocales().catch(() => []);
+  if (!locales.some((item) => item.code === getLocale())) {
+    locales.unshift({ code: getLocale(), name: t("locale.name") });
+  }
+  for (const { code, name } of locales) select.add(new Option(name, code));
+  select.value = getLocale();
+  select.addEventListener("change", () => {
+    setPref("locale", select.value);
+    void setLocale(select.value);
+  });
+}
+
 async function main() {
   await initI18n(getPref("locale", "en"));
+  void initLocalePicker();
   initTheme(byId("theme-toggle"));
   initLayout();
-  initSoundControls(byId("sound-toggle"), byId("sound-volume"), t);
+  initSoundControls(byId("sound-toggle"), byId("sound-volume"));
 
   const savedSet = getPref("pieceSet", "cburnett");
   const pieceSet = PIECE_SETS.includes(savedSet) ? savedSet : "cburnett";
@@ -49,6 +68,10 @@ async function main() {
   );
   game = new GameController(board);
   initPiecePicker(board);
+  /** @type {Review | null} */
+  let review = null;
+  // The board's surroundings belong to the review while one is open, else to the game.
+  onLocaleChange(() => (review?.active ? review.relocalize() : game.relocalize()));
 
   try {
     const [{ repertoires }, { levels, default: defaultLevel }, timeControls, health] = await Promise.all([
@@ -64,12 +87,12 @@ async function main() {
       timeControls,
       (color) => game.renderIdle(color, setup.previewFen()),
       (chosen) => {
-        review.close();
+        review?.close();
         void game.start(chosen);
       },
     );
-    new OpeningsScreen(repertoires, (variantId) => void review.openLine(variantId));
-    const review = new Review(
+    new OpeningsScreen(repertoires, (variantId) => void review?.openLine(variantId));
+    review = new Review(
       board,
       () => game.renderIdle(setup.color, setup.previewFen()),
       (gameId, ply) => {
@@ -81,9 +104,9 @@ async function main() {
     new SavedGames(
       (key) => setup.timeLabelFor(key),
       setup,
-      (gameId) => void review.openGame(gameId),
+      (gameId) => void review?.openGame(gameId),
       () => {
-        review.close();
+        review?.close();
         game.leaveGame();
       },
     );
@@ -95,7 +118,9 @@ async function main() {
       `Chess Trainer ${health.app_version} · ${health.engine.name}${buildTag}`;
   } catch (error) {
     console.error(error);
-    byId("setup-hint").textContent = t("setup.loadError");
+    localize(byId("setup-hint"), () => {
+      byId("setup-hint").textContent = t("setup.loadError");
+    });
     byId("setup-hint").hidden = false;
     byId("play").disabled = true;
   }

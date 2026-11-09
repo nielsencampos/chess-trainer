@@ -43,6 +43,8 @@ export class OpeningTree {
     this.nodes = [];
     /** @type {HTMLInputElement[]} */
     this.boxes = [];
+    /** @type {Set<string> | null} While drawing again, the levels that were open. */
+    this.reopen = null;
     // The field is usable before the book arrives, so it may already have text.
     this.query = els.search.value.trim().toLowerCase();
 
@@ -82,6 +84,17 @@ export class OpeningTree {
     this.onChange(this.selected);
   }
 
+  /** Draws the tree again in the language just chosen, keeping what was open. */
+  relocalize() {
+    const open = this.els.container.querySelectorAll("details[open]");
+    this.reopen = new Set([...open].map((details) => /** @type {HTMLElement} */ (details).dataset.key ?? ""));
+    try {
+      this.render();
+    } finally {
+      this.reopen = null;
+    }
+  }
+
   render() {
     this.nodes = [];
     this.boxes = [];
@@ -100,6 +113,7 @@ export class OpeningTree {
         if (main.length > 0 && rest.length > 0) {
           list.push(
             this.treeNode(
+              `others:${group}`,
               t("tree.others"),
               rest.flatMap((item) => item.shown),
               () => rest.map((item) => this.openingNode(item.repertoire, item.shown)),
@@ -112,6 +126,7 @@ export class OpeningTree {
         return list;
       };
       const node = this.treeNode(
+        `group:${group}`,
         t(`tree.group.${group}`),
         members.flatMap((item) => item.shown),
         children,
@@ -140,9 +155,10 @@ export class OpeningTree {
    */
   openingNode(repertoire, shown) {
     const details = this.treeNode(
+      `rep:${repertoire.repertoire_id}`,
       localizedName(repertoire.names),
       shown,
-      () => this.subgroupNodes(shown),
+      () => this.subgroupNodes(repertoire.repertoire_id, shown),
       "opening",
       false,
       true,
@@ -151,8 +167,11 @@ export class OpeningTree {
     return details;
   }
 
-  /** @param {VariantInfo[]} shown */
-  subgroupNodes(shown) {
+  /**
+   * @param {string} repertoireId
+   * @param {VariantInfo[]} shown
+   */
+  subgroupNodes(repertoireId, shown) {
     /** @type {Map<string, VariantInfo[]>} */
     const groups = new Map();
     /** @type {VariantInfo[]} */
@@ -168,17 +187,18 @@ export class OpeningTree {
     const lines = (/** @type {VariantInfo[]} */ list) => () =>
       list.map((variant) => this.variantElement(variant));
     const nodes = [...groups].map(([name, list]) =>
-      this.treeNode(name, list, lines(list), "tree-variant"),
+      this.treeNode(`sub:${repertoireId}:${list[0].subgroup?.en ?? name}`, name, list, lines(list), "tree-variant"),
     );
     if (groups.size === 0) return lines(loose)();
     if (loose.length > 0) {
-      nodes.push(this.treeNode(t("tree.others"), loose, lines(loose), "tree-variant"));
+      nodes.push(this.treeNode(`sub:${repertoireId}:`, t("tree.others"), loose, lines(loose), "tree-variant"));
     }
     return nodes;
   }
 
   /**
    * One collapsible level, with a checkbox for everything inside it.
+   * @param {string} key  Stays the same in every language, to keep the level open when redrawn.
    * @param {string} label
    * @param {VariantInfo[]} variants
    * @param {() => HTMLElement[]} children
@@ -186,8 +206,9 @@ export class OpeningTree {
    * @param {boolean} [startOpen]
    * @param {boolean} [lazy]  Builds what is inside only when first opened.
    */
-  treeNode(label, variants, children, className, startOpen = false, lazy = false) {
+  treeNode(key, label, variants, children, className, startOpen = false, lazy = false) {
     const details = document.createElement("details");
+    details.dataset.key = key;
     details.className = `tree-node ${className}`;
     const summary = document.createElement("summary");
     const all = document.createElement("input");
@@ -222,7 +243,10 @@ export class OpeningTree {
     details.append(summary, list);
     if (!lazy) build();
     // Show results right away when a search narrowed things down.
-    if (startOpen || (this.query && variants.length <= MAX_SEARCH_RESULTS_PER_FAMILY)) {
+    const open = this.reopen
+      ? this.reopen.has(key)
+      : startOpen || (this.query && variants.length <= MAX_SEARCH_RESULTS_PER_FAMILY);
+    if (open) {
       build();
       details.open = true;
     }

@@ -88,13 +88,24 @@ export class Review {
     }
     byId("movelist").hidden = false;
     byId("chips").replaceChildren();
-    byId("opening-name").textContent = data.opening
-      ? t("moves.openingName", { eco: data.eco ?? "", name: data.opening })
-      : t("moves.noOpening");
+    this.renderOpening();
     this.board.setMovable(null);
     this.board.setOrientation("w");
     this.renderNames();
     this.goTo(this.lastPly);
+  }
+
+  renderOpening() {
+    byId("opening-name").textContent = this.data.opening
+      ? t("moves.openingName", { eco: this.data.eco ?? "", name: this.data.opening })
+      : t("moves.noOpening");
+  }
+
+  /** Draws again, in the language just chosen, the review around the board. */
+  relocalize() {
+    this.renderOpening();
+    this.renderNames();
+    this.select(this.node);
   }
 
   renderNames() {

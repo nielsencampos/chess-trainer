@@ -58,6 +58,10 @@ export class GameController {
      * @type {{clocks: {w: number | null, b: number | null}} | null}
      */
     this.takeBackable = null;
+    /** @type {any} The final summary while the end-of-game card shows it. */
+    this.summary = null;
+    /** The server failed and the end-of-game card says so. */
+    this.failed = false;
 
     // "Show moves" is a bar preference: it can change at any moment, mid-game included.
     this.showMoves = getPref("showMoves", true) !== false;
@@ -136,6 +140,8 @@ export class GameController {
     this.opening = null;
     this.over = false;
     this.setup = null;
+    this.summary = null;
+    this.failed = false;
     this.clearPremove();
     this.applyShowMoves();
     this.renderMoves();
@@ -198,6 +204,8 @@ export class GameController {
   /** @param {import("./setup.js").GameSetup} setup */
   prepare(setup) {
     this.setup = setup;
+    this.summary = null;
+    this.failed = false;
     this.userColor = setup.color === "white" ? "w" : "b";
     this.rules = new Rules(setup.chess960?.fen);
     this.plies = [];
@@ -541,6 +549,7 @@ export class GameController {
     this.renderOpening();
 
     sound.play("end");
+    this.summary = summary;
     renderEndCard(summary);
     byId("end-card").hidden = false;
     byId("resign").hidden = true;
@@ -578,11 +587,11 @@ export class GameController {
   onServerError(error) {
     console.error(error);
     this.markOver();
-    byId("game-error").textContent = t("game.serverError");
+    this.failed = true;
+    this.renderFailure();
     byId("game-error").hidden = false;
     byId("resign").hidden = true;
     byId("end-card").hidden = false;
-    byId("end-result").textContent = t("chip.gameOver");
     byId("end-termination").textContent = "";
     byId("end-variation").textContent = "—";
     byId("end-theory").textContent = "—";
@@ -590,6 +599,27 @@ export class GameController {
     byId("copy-pgn").hidden = true;
     byId("download-pgn").hidden = true;
     this.showMenu();
+  }
+
+  renderFailure() {
+    byId("game-error").textContent = t("game.serverError");
+    byId("end-result").textContent = t("chip.gameOver");
+  }
+
+  /** Draws again, in the language just chosen, what the game shows around the board. */
+  relocalize() {
+    this.renderNames(this.setup);
+    this.renderOpening();
+    if (this.summary) {
+      renderMoveList(byId("movelist"), this.plies, true);
+      renderEndCard(this.summary);
+    } else {
+      this.renderMoves();
+    }
+    if (this.failed) this.renderFailure();
+    if (this.setup !== null) this.renderChips();
+    const resign = byId("resign");
+    resign.textContent = t(resign.classList.contains("confirming") ? "game.resignConfirm" : "game.resign");
   }
 
   /**
