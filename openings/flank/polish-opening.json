@@ -9,13 +9,17 @@
   "variants": [
     {
       "names": {
-        "en": "King's Indian Variation"
+        "en": "King's Indian Variation",
+        "pt-BR": "Variação Índia do Rei",
+        "es": "Variante India de Rey"
       },
       "lines": [
         {
           "id": "line-9f90d5082208a048",
           "names": {
-            "en": "King's Indian Variation"
+            "en": "King's Indian Variation",
+            "pt-BR": "Variação Índia do Rei",
+            "es": "Variante India de Rey"
           },
           "eco": "A00",
           "opening": "Polish Opening: King's Indian Variation",
@@ -25,7 +29,9 @@
         {
           "id": "line-20c25cab61ab4784",
           "names": {
-            "en": "King's Indian Variation, Sokolsky Attack"
+            "en": "King's Indian Variation, Sokolsky Attack",
+            "pt-BR": "Variação Índia do Rei, Ataque Sokolsky",
+            "es": "Variante India de Rey, Ataque Sokolsky"
           },
           "eco": "A00",
           "opening": "Polish Opening: King's Indian Variation, Sokolsky Attack",
@@ -35,7 +41,9 @@
         {
           "id": "line-c948ba740e9b94a1",
           "names": {
-            "en": "King's Indian Variation, Schiffler Attack"
+            "en": "King's Indian Variation, Schiffler Attack",
+            "pt-BR": "Variação Índia do Rei, Ataque Schiffler",
+            "es": "Variante India de Rey, Ataque Schiffler"
           },
           "eco": "A00",
           "opening": "Polish Opening: King's Indian Variation, Schiffler Attack",
@@ -79,13 +87,17 @@
     },
     {
       "names": {
-        "en": "with d5"
+        "en": "with d5",
+        "pt-BR": "com d5",
+        "es": "con d5"
       },
       "lines": [
         {
           "id": "line-ce9df8798a83fc47",
           "names": {
-            "en": "with d5"
+            "en": "with d5",
+            "pt-BR": "com d5",
+            "es": "con d5"
           },
           "eco": "A00",
           "opening": "Polish Opening, with d5",
@@ -95,7 +107,9 @@
         {
           "id": "line-3375d19245b21557",
           "names": {
-            "en": "with d5"
+            "en": "with d5",
+            "pt-BR": "com d5",
+            "es": "con d5"
           },
           "eco": "A00",
           "opening": "Polish Opening, with d5",
@@ -133,7 +147,9 @@
     {
       "id": "line-c63b0559d1d5d3a8",
       "names": {
-        "en": "Bugayev Advance Variation"
+        "en": "Bugayev Advance Variation",
+        "pt-BR": "Variação do Avanço Bugayev",
+        "es": "Variante del Avance Bugayev"
       },
       "eco": "A00",
       "opening": "Polish Opening: Bugayev Advance Variation",
@@ -155,7 +171,9 @@
     {
       "id": "line-46bd6523bf744082",
       "names": {
-        "en": "Czech Defense"
+        "en": "Czech Defense",
+        "pt-BR": "Defesa Tcheca",
+        "es": "Defensa Checa"
       },
       "eco": "A00",
       "opening": "Polish Opening: Czech Defense",
@@ -177,7 +195,9 @@
     {
       "id": "line-e9ff10772323f2e3",
       "names": {
-        "en": "German Defense"
+        "en": "German Defense",
+        "pt-BR": "Defesa Alemã",
+        "es": "Defensa Alemana"
       },
       "eco": "A00",
       "opening": "Polish Opening: German Defense",
@@ -235,7 +255,9 @@
     {
       "id": "line-14cefc9ca05df7a1",
       "names": {
-        "en": "Queen's Indian Variation"
+        "en": "Queen's Indian Variation",
+        "pt-BR": "Variação Índia da Dama",
+        "es": "Variante India de Dama"
       },
       "eco": "A00",
       "opening": "Polish Opening: Queen's Indian Variation",
@@ -246,8 +268,8 @@
       "id": "line-4a7ae6e159bcbee2",
       "names": {
         "en": "Queenside Defense",
-        "pt-BR": "Defesa Queenside",
-        "es": "Defensa Queenside"
+        "pt-BR": "Defesa na Ala da Dama",
+        "es": "Defensa en el Flanco de Dama"
       },
       "eco": "A00",
       "opening": "Polish Opening: Queenside Defense",
@@ -294,8 +316,8 @@
       "id": "line-0c812ad9cebbb0a0",
       "names": {
         "en": "Symmetrical Variation",
-        "pt-BR": "Variação Symmetrical",
-        "es": "Variante Symmetrical"
+        "pt-BR": "Variação Simétrica",
+        "es": "Variante Simétrica"
       },
       "eco": "A00",
       "opening": "Polish Opening: Symmetrical Variation",
