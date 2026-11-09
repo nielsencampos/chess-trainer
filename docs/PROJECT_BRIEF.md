@@ -227,6 +227,7 @@ Rules:
 ## 8. Internationalization
 
 - UI strings in `web/i18n/{locale}.json` with stable keys (`setup.play`, `end.deviation`…).
+- A string with a `{count}` that needs plurals has one key per plural form of the language (`saved.count.one`, `saved.count.other`, and `few`/`many` where the language has them, as `Intl.PluralRules` names them).
 - Opening and variation names come from the `names` table (loaded from `Name_<locale>` PGN tags), falling back to `en`.
 - Default locale `en`, switchable in the UI, stored in `settings`.
 - Move notation: **always English SAN**, in every language (PGN, Lichess and Chess.com standard). Possible future option: figurine notation.
