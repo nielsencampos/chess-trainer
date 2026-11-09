@@ -711,6 +711,15 @@
   color: #f2f2f2;
 }
 
+/* Export and Delete share one row, the confirm text included. */
+.saved-actions {
+  flex-wrap: nowrap;
+}
+
+.saved-actions > .button {
+  white-space: nowrap;
+}
+
 .saved-actions > .button-danger {
   flex: 0 0 auto;
 }

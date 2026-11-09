@@ -356,7 +356,7 @@ def test_saved_games_tab_lists_filters_and_exports(page: Page, seed_prefs):
 
     rows.nth(0).locator("input").check()
     rows.nth(1).locator("input").check()
-    expect(page.locator("#saved-export")).to_have_text("Export selected (2)")
+    expect(page.locator("#saved-export")).to_have_text("Export (2)")
     with page.expect_download() as download:
         page.locator("#saved-export").click()
     assert download.value.suggested_filename.endswith("-2-games.pgn")
@@ -379,7 +379,7 @@ def test_saved_games_select_all_uses_the_filter(page: Page, seed_prefs):
     expect(page.locator(".saved-game").first).to_contain_text("Sicilian")
     page.locator("#saved-select-all").check()
     visible = page.locator(".saved-game").count()
-    expect(page.locator("#saved-export")).to_have_text(f"Export selected ({visible})")
+    expect(page.locator("#saved-export")).to_have_text(f"Export ({visible})")
 
 
 def test_import_by_text_and_by_file(page: Page, tmp_path):
@@ -871,7 +871,7 @@ def test_delete_saved_games_with_a_second_click(page: Page):
     page.locator(".saved-game", has_text=f"{name} - X").locator("input").check()
     expect(delete).to_have_text("Delete (1)")
     delete.click()
-    expect(delete).to_have_text("Click again to delete 1 for good")
+    expect(delete).to_have_text("Delete 1 for good?")
     expect(page.locator(".saved-game", has_text=name)).to_have_count(2)  # nothing gone yet
     delete.click()
     expect(page.locator(".saved-game", has_text=name)).to_have_count(1)
