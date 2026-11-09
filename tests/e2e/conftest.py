@@ -100,8 +100,8 @@ def wait_for_ply(page: Page, ply: int) -> None:
     )
 
 
-def wait_for_your_move(page: Page) -> None:
-    page.locator("#chips .chip", has_text="Your move").wait_for()
+def wait_for_your_move(page: Page, text: str = "Your move") -> None:
+    page.locator("#chips .chip", has_text=text).wait_for()
 
 
 def moves_text(page: Page) -> list[str]:

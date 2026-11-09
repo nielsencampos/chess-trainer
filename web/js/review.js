@@ -5,6 +5,7 @@ import { t } from "./i18n.js";
 import { EvalBar } from "./evalbar.js";
 import { formatClock } from "./clock.js";
 import { linkMoves, renderReviewList } from "./reviewlist.js";
+import { openingName } from "./opening-names.js";
 
 /** @param {string} id */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
@@ -97,7 +98,7 @@ export class Review {
 
   renderOpening() {
     byId("opening-name").textContent = this.data.opening
-      ? t("moves.openingName", { eco: this.data.eco ?? "", name: this.data.opening })
+      ? t("moves.openingName", { eco: this.data.eco ?? "", name: openingName(this.data.opening) })
       : t("moves.noOpening");
   }
 

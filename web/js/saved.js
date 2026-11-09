@@ -2,6 +2,7 @@
 
 import { ApiError, api } from "./api.js";
 import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
+import { openingName, openingSearchText } from "./opening-names.js";
 
 /** @param {string} id */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
@@ -212,7 +213,7 @@ export class SavedGames {
       (game) =>
         (!color || game.user_color === color) &&
         (!result || game.result === result) &&
-        (!query || `${game.eco ?? ""} ${game.opening ?? ""}`.toLowerCase().includes(query)),
+        (!query || openingSearchText(game).includes(query)),
     );
   }
 
@@ -283,7 +284,7 @@ export class SavedGames {
     text.className = "variant-text";
     const name = document.createElement("span");
     const eco = game.eco ? `${game.eco} · ` : "";
-    name.textContent = `${eco}${game.opening ?? t("saved.noOpening")}`;
+    name.textContent = `${eco}${game.opening ? openingName(game.opening) : t("saved.noOpening")}`;
     const details = document.createElement("span");
     details.className = "variant-moves";
     const imported = game.source === "imported";

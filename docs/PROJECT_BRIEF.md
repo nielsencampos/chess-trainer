@@ -230,9 +230,10 @@ Rules:
 - UI strings in `web/i18n/{locale}.json` with stable keys (`setup.play`, `end.deviation`…).
 - A string with a `{count}` that needs plurals has one key per plural form of the language (`saved.count.one`, `saved.count.other`, and `few`/`many` where the language has them, as `Intl.PluralRules` names them).
 - Opening and variation names come from the `names` table (loaded from `Name_<locale>` PGN tags), falling back to `en`.
+- The name of a position (the Lichess catalog's, in English: during a game, on the end-of-game card, in reviews and saved games) is shown in the chosen language. Every catalog name is the `opening` of a book line and reads as its family's name, a separator and the line's name, so the browser rebuilds it from their translations. An untranslated line keeps its English name after the translated family; a name that does not split that way stays in English. PGN `Opening` tags stay in English.
 - Default locale `en`, switchable with a language picker at the bottom of the left bar and kept per browser, like the other UI preferences. Switching redraws the page in place, mid-game included; a key a language lacks falls back to English. The picker lists every file in `web/i18n`, each named by its own `locale.name` key.
 - Move notation: **always English SAN**, in every language (PGN, Lichess and Chess.com standard). Possible future option: figurine notation.
-- Adding a language = one JSON file plus `Name_<locale>` tags, no code changes. UI files exist for `en`, `pt-BR` and `es`; the translations are machine-written and await review by a native speaker.
+- Adding a language = one JSON file plus `Name_<locale>` tags, no code changes. UI files exist for `en`, `pt-BR` and `es`; the pt-BR and es files were reviewed on 2026-11-09.
 
 ## 9. Engine
 

@@ -57,8 +57,38 @@ def test_switching_mid_game_keeps_the_game(page: Page, seed_prefs):
     expect(page.locator("#bottom-name")).to_have_text("Tú")
     expect(page.locator("#game-card")).to_be_visible()
     expect(page.locator("#movelist .move").first).to_have_text("e4")
+    expect(page.locator("#opening-name")).to_have_text("B20 · Defensa Siciliana")
     # The game goes on: the clock was not reset, and the next move is accepted.
     expect(page.locator("#bottom-clock")).not_to_have_text("10:00")
     click_move(page, "d2", "d4")
     wait_for_ply(page, 4)
     expect(page.locator("#chips .chip").first).to_have_text("Tu turno")
+
+
+def test_opening_names_follow_the_language(page: Page, seed_prefs):
+    seed_prefs([ALAPIN], color="white", timeControl="none", locale="pt-BR")
+    page.goto("/")
+    play(page)
+    wait_for_your_move(page, "Sua vez")
+    click_move(page, "e2", "e4")
+    wait_for_ply(page, 2)
+    wait_for_your_move(page, "Sua vez")
+    click_move(page, "c2", "c3")
+    expect(page.locator("#opening-name")).to_have_text("B22 · Defesa Siciliana: Variação Alapin")
+
+    page.locator("#resign").click()
+    page.locator("#resign").click()
+    expect(page.locator("#end-variation")).to_have_text("B22 · Defesa Siciliana: Variação Alapin")
+    page.locator("#locale-picker").select_option("en")
+    expect(page.locator("#end-variation")).to_have_text("B22 · Sicilian Defense: Alapin Variation")
+    expect(page.locator("#opening-name")).to_have_text("B22 · Sicilian Defense: Alapin Variation")
+
+    # Saved games show it in the chosen language, and a search finds it in either.
+    page.locator("#locale-picker").select_option("es")
+    page.locator("#tab-saved").click()
+    row = page.locator("#saved-list .saved-game").first
+    expect(row).to_contain_text("Defensa Siciliana: Variante Alapin")
+    page.locator("#saved-search").fill("variante alapin")
+    expect(row).to_contain_text("Defensa Siciliana: Variante Alapin")
+    page.locator("#saved-search").fill("alapin variation")
+    expect(row).to_contain_text("Defensa Siciliana: Variante Alapin")

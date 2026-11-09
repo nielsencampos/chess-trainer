@@ -22,7 +22,9 @@ const MAX_SEARCH_RESULTS_PER_FAMILY = 200;
  * @param {string} query  Lowercase.
  */
 function matches(variant, query) {
-  return [variant.opening, variant.eco, variant.pgn].some((text) => text?.toLowerCase().includes(query));
+  return [localizedName(variant.names), variant.opening, variant.eco, variant.pgn].some((text) =>
+    text?.toLowerCase().includes(query),
+  );
 }
 
 export class OpeningTree {
