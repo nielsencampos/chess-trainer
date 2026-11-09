@@ -4,6 +4,7 @@
 import { api } from "./api.js";
 import { Clocks, formatClock } from "./clock.js";
 import { renderEndCard } from "./endcard.js";
+import { openingName } from "./opening-names.js";
 import { EvalBar } from "./evalbar.js";
 import { t } from "./i18n.js";
 import { renderMoveList } from "./movelist.js";
@@ -638,7 +639,7 @@ export class GameController {
   renderOpening() {
     byId("opening-name").textContent =
       this.opening
-        ? t("moves.openingName", { eco: this.opening.eco, name: this.opening.name })
+        ? t("moves.openingName", { eco: this.opening.eco, name: openingName(this.opening.name) })
         : t("moves.noOpening");
   }
 

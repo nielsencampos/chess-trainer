@@ -2,6 +2,7 @@
 
 import { api } from "./api.js";
 import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
+import { openingName, openingSearchText } from "./opening-names.js";
 import { OpeningTree } from "./opening-tree.js";
 import { getPref, setPref } from "./prefs.js";
 
@@ -289,9 +290,7 @@ export class SetupCard {
     const games = this.savedGames.filter(
       (game) =>
         !query ||
-        `${game.eco ?? ""} ${game.opening ?? ""} ${game.white ?? ""} ${game.black ?? ""}`
-          .toLowerCase()
-          .includes(query),
+        `${openingSearchText(game)} ${game.white ?? ""} ${game.black ?? ""}`.toLowerCase().includes(query),
     );
     byId("from-saved-list").replaceChildren(...games.map((game) => this.savedGameRow(game)));
     byId("from-saved-empty").hidden = this.savedGames.length > 0;
@@ -318,7 +317,7 @@ export class SetupCard {
     text.className = "variant-text";
     const name = document.createElement("span");
     const eco = game.eco ? `${game.eco} · ` : "";
-    name.textContent = `${eco}${game.opening ?? t("saved.noOpening")}`;
+    name.textContent = `${eco}${game.opening ? openingName(game.opening) : t("saved.noOpening")}`;
     const details = document.createElement("span");
     details.className = "variant-moves";
     const who = game.source === "imported" ? `${game.white} - ${game.black}` : t(`setup.${game.user_color}`);

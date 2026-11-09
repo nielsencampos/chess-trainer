@@ -9,13 +9,17 @@
   "variants": [
     {
       "names": {
-        "en": "Classical Defense"
+        "en": "Classical Defense",
+        "pt-BR": "Defesa Clássica",
+        "es": "Defensa Clásica"
       },
       "lines": [
         {
           "id": "line-533dddf58e3b2be7",
           "names": {
-            "en": "Classical Defense"
+            "en": "Classical Defense",
+            "pt-BR": "Defesa Clássica",
+            "es": "Defensa Clásica"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense",
@@ -25,7 +29,9 @@
         {
           "id": "line-d8bb41a8031d09e1",
           "names": {
-            "en": "Classical Defense, Petrosian Gambit"
+            "en": "Classical Defense, Petrosian Gambit",
+            "pt-BR": "Defesa Clássica, Gambito Petrosian",
+            "es": "Defensa Clásica, Gambito Petrosian"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense, Petrosian Gambit",
@@ -35,7 +41,9 @@
         {
           "id": "line-f26395defa9f0695",
           "names": {
-            "en": "Classical Defense, Nimzowitsch Variation"
+            "en": "Classical Defense, Nimzowitsch Variation",
+            "pt-BR": "Defesa Clássica, Variação Nimzowitsch",
+            "es": "Defensa Clásica, Variante Nimzowitsch"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense, Nimzowitsch Variation",
@@ -46,13 +54,17 @@
     },
     {
       "names": {
-        "en": "Fianchetto Defense"
+        "en": "Fianchetto Defense",
+        "pt-BR": "Defesa do Fianqueto",
+        "es": "Defensa del Fianchetto"
       },
       "lines": [
         {
           "id": "line-05740242e5b02e14",
           "names": {
-            "en": "Fianchetto Defense"
+            "en": "Fianchetto Defense",
+            "pt-BR": "Defesa do Fianqueto",
+            "es": "Defensa del Fianchetto"
           },
           "eco": "A48",
           "opening": "Torre Attack: Fianchetto Defense",
@@ -62,7 +74,9 @@
         {
           "id": "line-ee97aefc1d30a00a",
           "names": {
-            "en": "Fianchetto Defense, Euwe Variation"
+            "en": "Fianchetto Defense, Euwe Variation",
+            "pt-BR": "Defesa do Fianqueto, Variação Euwe",
+            "es": "Defensa del Fianchetto, Variante Euwe"
           },
           "eco": "A48",
           "opening": "Torre Attack: Fianchetto Defense, Euwe Variation",

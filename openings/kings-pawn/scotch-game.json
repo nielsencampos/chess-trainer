@@ -9,13 +9,17 @@
   "variants": [
     {
       "names": {
-        "en": "Scotch Gambit"
+        "en": "Scotch Gambit",
+        "pt-BR": "Gambito Escocês",
+        "es": "Gambito Escocés"
       },
       "lines": [
         {
           "id": "line-bafec7408139b32c",
           "names": {
-            "en": "Scotch Gambit, Dubois Réti Defense"
+            "en": "Scotch Gambit, Dubois Réti Defense",
+            "pt-BR": "Gambito Escocês, Defesa Dubois Réti",
+            "es": "Gambito Escocés, Defensa Dubois Réti"
           },
           "eco": "C44",
           "opening": "Scotch Game: Scotch Gambit, Dubois Réti Defense",
@@ -25,7 +29,9 @@
         {
           "id": "line-34dde3f446c2ee26",
           "names": {
-            "en": "Scotch Gambit, Kingside Variation"
+            "en": "Scotch Gambit, Kingside Variation",
+            "pt-BR": "Gambito Escocês, Variação na Ala do Rei",
+            "es": "Gambito Escocés, Variante en el Flanco de Rey"
           },
           "eco": "C44",
           "opening": "Scotch Game: Scotch Gambit, Kingside Variation",
@@ -35,7 +41,9 @@
         {
           "id": "line-b8512e52c159e4dd",
           "names": {
-            "en": "Scotch Gambit"
+            "en": "Scotch Gambit",
+            "pt-BR": "Gambito Escocês",
+            "es": "Gambito Escocés"
           },
           "eco": "C44",
           "opening": "Scotch Game: Scotch Gambit",
@@ -45,7 +53,9 @@
         {
           "id": "line-21d4a7843ef68ee4",
           "names": {
-            "en": "Scotch Gambit, London Defense"
+            "en": "Scotch Gambit, London Defense",
+            "pt-BR": "Gambito Escocês, Defesa London",
+            "es": "Gambito Escocés, Defensa Londres"
           },
           "eco": "C44",
           "opening": "Scotch Game: Scotch Gambit, London Defense",
@@ -55,7 +65,9 @@
         {
           "id": "line-3d4b72d19babf54a",
           "names": {
-            "en": "Scotch Gambit, Sarratt Variation"
+            "en": "Scotch Gambit, Sarratt Variation",
+            "pt-BR": "Gambito Escocês, Variação Sarratt",
+            "es": "Gambito Escocés, Variante Sarratt"
           },
           "eco": "C44",
           "opening": "Scotch Game: Scotch Gambit, Sarratt Variation",
@@ -65,7 +77,9 @@
         {
           "id": "line-73b3737b9f88bbf2",
           "names": {
-            "en": "Scotch Gambit, Cochrane-Anderssen Variation"
+            "en": "Scotch Gambit, Cochrane-Anderssen Variation",
+            "pt-BR": "Gambito Escocês, Variação Cochrane-Anderssen",
+            "es": "Gambito Escocés, Variante Cochrane-Anderssen"
           },
           "eco": "C44",
           "opening": "Scotch Game: Scotch Gambit, Cochrane-Anderssen Variation",
@@ -75,7 +89,9 @@
         {
           "id": "line-d8665e20a46136e6",
           "names": {
-            "en": "Scotch Gambit, Advance Variation"
+            "en": "Scotch Gambit, Advance Variation",
+            "pt-BR": "Gambito Escocês, Variação do Avanço",
+            "es": "Gambito Escocés, Variante del Avance"
           },
           "eco": "C44",
           "opening": "Scotch Game: Scotch Gambit, Advance Variation",
@@ -85,7 +101,9 @@
         {
           "id": "line-edad1784e9597d3d",
           "names": {
-            "en": "Scotch Gambit, Göring Gambit Declined"
+            "en": "Scotch Gambit, Göring Gambit Declined",
+            "pt-BR": "Gambito Escocês, Gambito Göring Recusado",
+            "es": "Gambito Escocés, Gambito Göring Rehusado"
           },
           "eco": "C44",
           "opening": "Scotch Game: Scotch Gambit, Göring Gambit Declined",
@@ -173,7 +191,9 @@
         {
           "id": "line-61f3844e0d7d59a7",
           "names": {
-            "en": "Göring Gambit, Double Pawn Sacrifice"
+            "en": "Göring Gambit, Double Pawn Sacrifice",
+            "pt-BR": "Gambito Göring, Sacrifício Duplo de Peão",
+            "es": "Gambito Göring, Doble Sacrificio de Peón"
           },
           "eco": "C44",
           "opening": "Scotch Game: Göring Gambit, Double Pawn Sacrifice",
@@ -559,7 +579,9 @@
     {
       "id": "line-5d20df9f30ff5a8a",
       "names": {
-        "en": "Paulsen, Gunsberg Defense"
+        "en": "Paulsen, Gunsberg Defense",
+        "pt-BR": "Paulsen, Defesa Gunsberg",
+        "es": "Paulsen, Defensa Gunsberg"
       },
       "eco": "C45",
       "opening": "Scotch Game: Paulsen, Gunsberg Defense",
@@ -653,7 +675,9 @@
     {
       "id": "line-1c5a62e1499d16b6",
       "names": {
-        "en": "Sea-Cadet Mate"
+        "en": "Sea-Cadet Mate",
+        "pt-BR": "Mate do Cadete Naval",
+        "es": "Mate del Cadete Naval"
       },
       "eco": "C44",
       "opening": "Scotch Game: Sea-Cadet Mate",

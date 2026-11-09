@@ -3,6 +3,7 @@
 import { api } from "./api.js";
 import { Board, PIECE_SETS } from "./board.js";
 import { GameController } from "./game.js";
+import { indexOpenings } from "./opening-names.js";
 import { OpeningsScreen } from "./openings.js";
 import { availableLocales, getLocale, initI18n, localize, onLocaleChange, setLocale, t } from "./i18n.js";
 import { initLayout } from "./layout.js";
@@ -80,6 +81,7 @@ async function main() {
       api.timeControls(),
       api.health(),
     ]);
+    indexOpenings(repertoires);
     const setup = new SetupCard(
       repertoires,
       levels,

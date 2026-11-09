@@ -9,13 +9,17 @@
   "variants": [
     {
       "names": {
-        "en": "Anti-Philidor"
+        "en": "Anti-Philidor",
+        "pt-BR": "Anti-Philidor",
+        "es": "Anti-Philidor"
       },
       "lines": [
         {
           "id": "line-021d1ed00574d266",
           "names": {
-            "en": "Anti-Philidor"
+            "en": "Anti-Philidor",
+            "pt-BR": "Anti-Philidor",
+            "es": "Anti-Philidor"
           },
           "eco": "B07",
           "opening": "Lion Defense: Anti-Philidor",
@@ -25,7 +29,9 @@
         {
           "id": "line-30d3c56c496adac8",
           "names": {
-            "en": "Anti-Philidor, Lion's Cave"
+            "en": "Anti-Philidor, Lion's Cave",
+            "pt-BR": "Anti-Philidor, Caverna do Leão",
+            "es": "Anti-Philidor, Cueva del León"
           },
           "eco": "B07",
           "opening": "Lion Defense: Anti-Philidor, Lion's Cave",
@@ -35,7 +41,9 @@
         {
           "id": "line-e4aef2d4b50537a6",
           "names": {
-            "en": "Anti-Philidor, Lion's Cave, Lion Claw Gambit"
+            "en": "Anti-Philidor, Lion's Cave, Lion Claw Gambit",
+            "pt-BR": "Anti-Philidor, Caverna do Leão, Gambito Garra do Leão",
+            "es": "Anti-Philidor, Cueva del León, Gambito Garra del León"
           },
           "eco": "B07",
           "opening": "Lion Defense: Anti-Philidor, Lion's Cave, Lion Claw Gambit",
@@ -50,8 +58,8 @@
       "id": "line-35863d7b26b517cb",
       "names": {
         "en": "Bayonet Attack",
-        "pt-BR": "Ataque Bayonet",
-        "es": "Ataque Bayonet"
+        "pt-BR": "Ataque Baioneta",
+        "es": "Ataque Bayoneta"
       },
       "eco": "B07",
       "opening": "Lion Defense: Bayonet Attack",
@@ -61,7 +69,9 @@
     {
       "id": "line-bd4ea88641b40878",
       "names": {
-        "en": "Lion's Jaw"
+        "en": "Lion's Jaw",
+        "pt-BR": "Mandíbula do Leão",
+        "es": "Mandíbula del León"
       },
       "eco": "B00",
       "opening": "Lion Defense: Lion's Jaw",
@@ -71,7 +81,9 @@
     {
       "id": "line-f30b52b4f0a7d18d",
       "names": {
-        "en": "Lion Defense"
+        "en": "Lion Defense",
+        "pt-BR": "Defesa do Leão",
+        "es": "Defensa del León"
       },
       "eco": "B07",
       "opening": "Lion Defense",
