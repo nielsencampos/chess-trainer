@@ -5,6 +5,7 @@ from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
+from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from app import __version__
@@ -78,6 +79,7 @@ def create_app(
         database.close()
 
     app = FastAPI(title="chess-trainer", version=__version__, lifespan=lifespan)
+    app.add_middleware(TrustedHostMiddleware, allowed_hosts=list(settings.allowed_hosts))
     app.state.evaluator = Evaluator(engine, load_book_evals(database))
     app.state.games = GameService(
         book, engine, levels, GameStore(database), rng, opening_names, deviation_max_loss_cp

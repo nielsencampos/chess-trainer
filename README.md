@@ -25,7 +25,9 @@ docker compose up --build
 Open <http://127.0.0.1:8000>.
 
 The app is published on loopback only, because it has no login. To reach it from another device,
-set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust. `CHESS_TRAINER_PORT` changes the port.
+set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust, and list the names you will open it by in
+`CHESS_TRAINER_ALLOWED_HOSTS` (such as `192.168.0.10,chess.lan`): the app answers only to
+`localhost` and `127.0.0.1` otherwise. `CHESS_TRAINER_PORT` changes the port.
 
 **Desktop app (preview):** the same app in its own window, without Docker, for Windows, macOS and
 Linux. To download and install it, see [HOW_TO_INSTALL.md](HOW_TO_INSTALL.md); how it is built is

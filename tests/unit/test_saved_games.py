@@ -50,7 +50,10 @@ def app_on(path, engine=None):
         TestClient: The client; start it with `with`.
     """
     settings = dataclasses.replace(Settings(), database_path=path, book_evals_file=NO_BOOK_EVALS)
-    return TestClient(create_app(settings, engine=engine or FakeEngine(), rng=random.Random(3)))
+    return TestClient(
+        create_app(settings, engine=engine or FakeEngine(), rng=random.Random(3)),
+        base_url="http://127.0.0.1",
+    )
 
 
 def alapin_id(client):

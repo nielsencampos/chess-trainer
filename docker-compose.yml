@@ -9,6 +9,9 @@ services:
       # Published on loopback only. The app has no login: set CHESS_TRAINER_BIND to expose it
       # to your network only if you trust that network.
       - "${CHESS_TRAINER_BIND:-127.0.0.1}:${CHESS_TRAINER_PORT:-8000}:8000"
+    environment:
+      # Names the app answers to besides localhost and 127.0.0.1, comma-separated.
+      CHESS_TRAINER_ALLOWED_HOSTS: ${CHESS_TRAINER_ALLOWED_HOSTS:-}
     volumes:
       # The DuckDB file lives here. The container writes as UID 1000.
       - ./data:/app/data

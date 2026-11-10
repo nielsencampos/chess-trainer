@@ -148,7 +148,7 @@ def client(engine, database_path):
         Settings(), database_path=database_path, book_evals_file=NO_BOOK_EVALS
     )
     app = create_app(settings, engine=engine, rng=random.Random(7))
-    with TestClient(app) as test_client:
+    with TestClient(app, base_url="http://127.0.0.1") as test_client:
         yield test_client
 
 

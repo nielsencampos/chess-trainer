@@ -22,6 +22,9 @@ class Settings:
         stockfish_version_file (Path): The `VERSION` file written by the image build.
         stockfish_threads (int): Stockfish's `Threads` option.
         stockfish_hash_mb (int): Stockfish's `Hash` option, in MB.
+        allowed_hosts (tuple[str, ...]): The names the app answers to (the `Host` header). Any
+            other is refused, so a site whose domain points at 127.0.0.1 (DNS rebinding) cannot
+            reach the app from the browser.
     """
 
     openings_dir: Path = ROOT / "openings"
@@ -34,6 +37,7 @@ class Settings:
     stockfish_version_file: Path = Path("/opt/stockfish/VERSION")
     stockfish_threads: int = 2
     stockfish_hash_mb: int = 128
+    allowed_hosts: tuple[str, ...] = ("localhost", "127.0.0.1")
 
 
 def settings_from_env() -> Settings:
@@ -56,4 +60,12 @@ def settings_from_env() -> Settings:
         ),
         stockfish_threads=int(os.environ.get("STOCKFISH_THREADS", defaults.stockfish_threads)),
         stockfish_hash_mb=int(os.environ.get("STOCKFISH_HASH_MB", defaults.stockfish_hash_mb)),
+        allowed_hosts=(
+            *defaults.allowed_hosts,
+            *(
+                name.strip()
+                for name in os.environ.get("CHESS_TRAINER_ALLOWED_HOSTS", "").split(",")
+                if name.strip()
+            ),
+        ),
     )

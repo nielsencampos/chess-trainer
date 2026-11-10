@@ -2,6 +2,8 @@
 
 import pytest
 
+from app.config import settings_from_env
+
 SHORT_PGN = "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3"
 ALAPIN_PGN = "1. e4 c5 2. c3"
 
@@ -55,6 +57,31 @@ def test_health_reports_engine(client):
     body = client.get("/api/health").json()
     assert body["status"] == "ok"
     assert body["engine"] == {"name": "Fake Engine 1", "build_tag": "fake"}
+
+
+def test_refuses_an_unknown_host(client):
+    """A request for another name is refused, so DNS rebinding cannot reach the app.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
+    assert client.get("/api/games", headers={"Host": "evil.example"}).status_code == 400
+    assert client.get("/api/games", headers={"Host": "localhost:8000"}).status_code == 200
+
+
+def test_allowed_hosts_come_from_the_environment(monkeypatch):
+    """`CHESS_TRAINER_ALLOWED_HOSTS` adds names to the loopback ones.
+
+    Args:
+        monkeypatch (pytest.MonkeyPatch): Sets the variable.
+    """
+    monkeypatch.setenv("CHESS_TRAINER_ALLOWED_HOSTS", " chess.lan, 192.168.0.10 ,")
+    assert settings_from_env().allowed_hosts == (
+        "localhost",
+        "127.0.0.1",
+        "chess.lan",
+        "192.168.0.10",
+    )
 
 
 def test_serves_frontend_index(client):
