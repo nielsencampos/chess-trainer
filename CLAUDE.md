@@ -32,6 +32,8 @@ scripts/extract-stockfish.sh                      # copies the binary from the i
 STOCKFISH_PATH=.cache/stockfish uv run pytest -m engine
 scripts/smoke.sh chess-trainer:local              # health and a real engine move in the image
 E2E_BASE_URL=http://127.0.0.1:8000 uv run pytest -m e2e   # Playwright, desktop
+uv run python scripts/help_media.py                       # Help pictures, after a visible UI change
+uv run python scripts/help_docs.py                        # docs/HELP*.md, after a Help text change
 ```
 
 Before calling UI work done, test it in a browser at 1280x720 and state what was tested. HD is

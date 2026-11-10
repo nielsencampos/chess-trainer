@@ -29,6 +29,9 @@ set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust. `CHESS_TRAINER_PORT` c
 
 ## How it works
 
+The full guide, with pictures, is in [docs/HELP.md](docs/HELP.md), the same as the Help screen in
+the app. A summary:
+
 1. Pick your color and the lines to drill, from all 3,865 lines of the book. Search by name, ECO
    or moves. Each selected line has the same chance of being drawn.
 2. The bot plays the drawn line. If you play a move from another selected line, it follows you.
@@ -46,7 +49,13 @@ Beyond openings:
   or start a new game from any of their moves (not yet from a Chess960 game).
 - **Import:** paste PGN, upload a file, or fetch a player's public games from Lichess or Chess.com.
   The review shows the PGN's evaluations, classifications, clocks, comments and side lines.
-- **Evaluation bar:** Stockfish's evaluation while reviewing, and at the end of a game.
+- **Evaluation bar:** Stockfish's evaluation while reviewing, and at the end of a game. It is a
+  quick check, not a full analysis: for that, export the PGN to Lichess or Chess.com.
+- **Scoresheet:** a printable A4 scoresheet, modeled on an official one, to write your moves by hand
+  during long games. It is not an official scoresheet: it is for training only.
+- **Help:** how to use every screen, in the app's menu.
+
+Chess Trainer is for training. Never use it, or any engine, during a game against another person.
 
 **Current state:** the book and games are in DuckDB (`data/chess-trainer.duckdb`). Bot levels are
 provisional. The UI is in English, Brazilian Portuguese and Spanish. See the
@@ -92,6 +101,16 @@ uv sync
 uv run pytest
 ```
 
+The pictures in Help are screenshots of the app in each language. After a visible UI change, make
+them again against a running app (it plays and resigns games):
+
+```bash
+uv run python scripts/help_media.py --base-url http://127.0.0.1:8000
+```
+
+`docs/HELP*.md` are written from the Help screen's strings. After changing them, run
+`uv run python scripts/help_docs.py`; a test fails while the files are out of date.
+
 ## License
 
 [GPL-3.0](LICENSE). Third-party components are listed in
@@ -117,6 +136,8 @@ docker compose up --build
 
 Depois abra <http://127.0.0.1:8000>.
 
+**Guia completo**, com imagens: [docs/HELP.pt-BR.md](docs/HELP.pt-BR.md), o mesmo da tela de Ajuda do app.
+
 **Como funciona:** escolha a cor e as linhas, entre as 3.865 do livro, com busca por nome,
 ECO ou lances. Cada linha selecionada tem a mesma chance de ser sorteada, e o bot joga a linha sorteada. Um lance fora das linhas selecionadas é um
 desvio: ele é registrado com os lances esperados e aparece no fim da partida. Quando a linha acaba, ou
@@ -126,7 +147,10 @@ lista de lances e o nome da abertura durante a partida, para você anotar no pap
 **Além das aberturas:** relógios de bullet e os de blitz, rápido e clássico de um relógio DGT 3000;
 Chess960; todas as partidas salvas, com filtros, exportação em PGN, revisão lance a lance e novo jogo
 a partir de qualquer lance (ainda não de uma partida Chess960); importação de PGN colado, de arquivo ou das partidas públicas de um
-jogador no Lichess ou no Chess.com; e barra de avaliação do Stockfish na revisão e no fim da partida.
+jogador no Lichess ou no Chess.com; barra de avaliação do Stockfish na revisão e no fim da partida (uma checagem rápida: para uma
+análise completa, exporte o PGN para o Lichess ou o Chess.com); planilha de anotação A4 para imprimir,
+não oficial, só para treino; e uma Ajuda no menu. O Chess Trainer é para treinar: nunca o use, nem
+qualquer engine, durante uma partida contra outra pessoa.
 
 **Estado atual:** o livro e as partidas ficam no DuckDB, e uma partida não terminada continua quando você reabre a página. Os
 níveis do bot são provisórios. A interface está em inglês, português e espanhol.
