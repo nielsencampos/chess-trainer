@@ -4,9 +4,11 @@
 
 # chess-trainer
 
-Local opening trainer: drill your chess repertoire against a bot that plays your book lines, then
-Stockfish when theory ends. Python, plain JavaScript and Stockfish, all in one Docker image. It
-runs on your own machine (amd64 or arm64), with no accounts and no internet needed to play.
+Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that
+follows the book and flags where you left theory, and review your games from PGN, Lichess or
+Chess.com with an evaluation bar. Chess960 included. English, Portuguese and Spanish, all in one
+Docker image. It runs on your own machine (amd64 or arm64), with no accounts and no internet needed
+to play.
 
 *[Versão em português abaixo.](#português-brasil)*
 
@@ -35,6 +37,16 @@ set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust. `CHESS_TRAINER_PORT` c
 4. When the line ends or someone leaves theory, Stockfish takes over at the selected level.
 
 Unchecking "Show moves" hides the move list and the opening name, headings included, during a game, so you can write on paper. They come back at the end.
+
+Beyond openings:
+
+- **Clocks:** bullet, and the blitz, rapid and classical presets of a DGT 3000 clock, or no clock.
+- **Chess960:** roll one of the 960 starting positions, or paste its FEN, and play Stockfish.
+- **Saved games:** every game is saved. Filter them, export them as PGN, review them move by move,
+  or start a new game from any of their moves (not yet from a Chess960 game).
+- **Import:** paste PGN, upload a file, or fetch a player's public games from Lichess or Chess.com.
+  The review shows the PGN's evaluations, classifications, clocks, comments and side lines.
+- **Evaluation bar:** Stockfish's evaluation while reviewing, and at the end of a game.
 
 **Current state:** the book and games are in DuckDB (`data/chess-trainer.duckdb`). Bot levels are
 provisional. The UI is in English, Brazilian Portuguese and Spanish. See the
@@ -89,9 +101,11 @@ uv run pytest
 
 ## Português (Brasil)
 
-Treinador local de aberturas: pratique seu repertório contra um bot que joga as suas linhas e, quando
-a teoria acaba, passa para o Stockfish. Roda na sua máquina (amd64 ou arm64), sem conta e sem precisar
-de internet para jogar.
+Treinador local de xadrez: jogue contra o Stockfish com os relógios de verdade, pratique suas
+aberturas contra um bot que segue o livro e mostra onde você saiu da teoria, e revise suas partidas
+de PGN, Lichess ou Chess.com com barra de avaliação. Tem Chess960. Em inglês, português e espanhol,
+tudo numa imagem Docker. Roda na sua máquina (amd64 ou arm64), sem conta e sem precisar de internet
+para jogar.
 
 **Para rodar**, com Docker e Compose instalados:
 
@@ -108,6 +122,11 @@ ECO ou lances. Cada linha selecionada tem a mesma chance de ser sorteada, e o bo
 desvio: ele é registrado com os lances esperados e aparece no fim da partida. Quando a linha acaba, ou
 alguém sai da teoria, o Stockfish assume no nível escolhido. Desmarcar "Mostrar lances" esconde a
 lista de lances e o nome da abertura durante a partida, para você anotar no papel.
+
+**Além das aberturas:** relógios de bullet e os de blitz, rápido e clássico de um relógio DGT 3000;
+Chess960; todas as partidas salvas, com filtros, exportação em PGN, revisão lance a lance e novo jogo
+a partir de qualquer lance (ainda não de uma partida Chess960); importação de PGN colado, de arquivo ou das partidas públicas de um
+jogador no Lichess ou no Chess.com; e barra de avaliação do Stockfish na revisão e no fim da partida.
 
 **Estado atual:** o livro e as partidas ficam no DuckDB, e uma partida não terminada continua quando você reabre a página. Os
 níveis do bot são provisórios. A interface está em inglês, português e espanhol.

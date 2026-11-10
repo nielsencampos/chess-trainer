@@ -4,20 +4,20 @@
 > **For contributors and AI agents:** read this file before changing anything. If something here is unclear or contradicts the code, ask before inventing.
 
 **Repository:** `chess-trainer` (public, GPL-3.0)
-**Description:** Local opening trainer: drill your chess repertoire against a bot that plays your book lines, then Stockfish when theory ends. Python + DuckDB + plain JS, all in one Docker image.
-**Topics:** `chess` `chess-openings` `opening-trainer` `stockfish` `python-chess` `fastapi` `duckdb` `docker`
+**Description:** Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that follows the book and flags where you left theory, and review your games from PGN, Lichess or Chess.com with an evaluation bar. Chess960 included. English, Portuguese and Spanish, all in one Docker image, no accounts.
+**Topics:** `chess` `chess-trainer` `chess-openings` `opening-trainer` `chess960` `pgn` `stockfish` `python-chess` `fastapi` `duckdb` `docker`
 
 ---
 
 ## 1. Context
 
-chess-trainer is an **open-source opening trainer** you run on your own machine. You pick a color and the openings/variations you want to drill; a bot plays the book lines at random, and when theory ends (or someone leaves it) Stockfish takes over. Every game is saved, and it shows at the end where you left theory.
+chess-trainer is an **open-source chess trainer** you run on your own machine. It started as an opening trainer, which is still its core: you pick a color and the openings/variations you want to drill; a bot plays the book lines at random, and when theory ends (or someone leaves it) Stockfish takes over. Every game is saved, and it shows at the end where you left theory. Around that it has grown into a place to train in general: games against Stockfish with real clock presets, Chess960, starting from any saved game, and a review board for your own games, imported from PGN, Lichess or Chess.com, with an evaluation bar.
 
 It started as a personal single-file HTML prototype. This project rebuilds it from scratch as a modular application: Python backend, plain JavaScript frontend, Stockfish and DuckDB, all in one Docker image. The prototype is **not** part of the repository; §4 and §4.1 are the full specification of the expected behavior and look.
 
 **Scope:** a **local, single-user** app. Everyone clones it and runs `docker compose up` on their own machine. No central server, no accounts, no login. By default the app listens on `127.0.0.1` only.
 
-**Target user:** club and online players (roughly 800–1800) who want to drill their repertoire with long time controls, optionally hiding the moves on screen to write them on a paper scoresheet.
+**Target user:** club and online players (roughly 800–1800) who want to drill their repertoire and review their games, with long time controls, optionally hiding the moves on screen to write them on a paper scoresheet.
 
 ## 2. Goals
 
