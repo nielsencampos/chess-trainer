@@ -51,6 +51,9 @@ def settings_from_env() -> Settings:
         web_dir=Path(os.environ.get("CHESS_TRAINER_WEB_DIR", defaults.web_dir)),
         levels_file=Path(os.environ.get("CHESS_TRAINER_LEVELS_FILE", defaults.levels_file)),
         stockfish_path=os.environ.get("STOCKFISH_PATH", defaults.stockfish_path),
+        stockfish_version_file=Path(
+            os.environ.get("STOCKFISH_VERSION_FILE", defaults.stockfish_version_file)
+        ),
         stockfish_threads=int(os.environ.get("STOCKFISH_THREADS", defaults.stockfish_threads)),
         stockfish_hash_mb=int(os.environ.get("STOCKFISH_HASH_MB", defaults.stockfish_hash_mb)),
     )

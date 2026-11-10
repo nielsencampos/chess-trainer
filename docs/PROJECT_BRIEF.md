@@ -17,6 +17,8 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 
 **Scope:** a **local, single-user** app. Everyone clones it and runs `docker compose up` on their own machine. No central server, no accounts, no login. By default the app listens on `127.0.0.1` only.
 
+**Desktop app (decided 2026-11-10, proof of concept):** besides Docker, the same app ships as an installable desktop program, so a player who does not know Docker can use it. `desktop/launcher.py` starts the same server on `127.0.0.1` and shows it in a native window (pywebview), packaged per system by PyInstaller with its own Stockfish. Docker stays the reference way to run it. The desktop app keeps its database in the user's data folder (`platformdirs`), not next to the program.
+
 **Target user:** club and online players (roughly 800–1800) who want to drill their repertoire and review their games, with long time controls, optionally hiding the moves on screen to write them on a paper scoresheet.
 
 ## 2. Goals
@@ -38,6 +40,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 | Frontend | Plain HTML + CSS + JS, ES modules, **no build step, no Node** | Types via JSDoc. chessops and the Merida pieces are vendored, no CDN |
 | Python packaging | uv (`pyproject.toml` + `uv.lock`) | |
 | Container | Multi-stage Dockerfile + `docker-compose.yml` | Slim final image, non-root user, healthcheck |
+| Desktop | PyInstaller (one folder) + pywebview + platformdirs | `desktop/`, dependency group `desktop`. Linux uses pywebview's Qt backend (wheels, no system packages). Fixed port 47800, because UI preferences live in `localStorage`, which belongs to an origin |
 | Tests | pytest (backend), Playwright (browser flows) | |
 | CI | GitHub Actions: ruff, tests, repertoire validation, image build | |
 
@@ -110,7 +113,7 @@ chess-trainer/
 │   └── pieces/            # Merida SVG pieces (license in THIRD_PARTY_LICENSES.md)
 ├── docs/                  # this brief, HELP*.md (generated) and other docs
 ├── tests/                 # pytest + Playwright
-├── .claude/               # project skills, none yet (§10)
+├── .claude/               # project skills: ponytail, ponytail-audit, ponytail-review (§10)
 ├── CLAUDE.md
 ├── Dockerfile
 ├── docker-compose.yml
@@ -264,7 +267,12 @@ Rules:
 ## 10. Claude Code: CLAUDE.md and project skills
 
 - `CLAUDE.md` — overview, how to run, how to test, conventions (code and identifiers in English; user-facing text through i18n), never change a line id (`VariantId`), link to this brief.
-- Skills in `.claude/skills/`, none yet:
+- Skills in `.claude/skills/`, from `DietrichGebert/ponytail` at `96608e0` (MIT, in `THIRD_PARTY_LICENSES.md`), copied as they are; to update, copy the newer files and change the commit here:
+  - **ponytail** — the smallest change that fully solves the task; levels `lite`, `full`, `ultra`.
+  - **ponytail-review** — reviews a change (a diff, a branch, a PR): correct, safe, tested, lean.
+  - **ponytail-audit** — audits the whole repository and ranks what to fix. It changes nothing.
+- **Review before 1.0.0** (decided 2026-11-10): the release of 1.0.0 is preceded by a complete review of the project, which starts by running `/ponytail-audit` on the whole repository, reading every part (the first audit, on 2026-11-10, read only the backend's riskiest paths), and `/ponytail-review` on each PR that fixes its findings. Already known from the first audit: the server accepts any `Host` header, so a site that points its domain at 127.0.0.1 (DNS rebinding) could read and delete saved games; allow only `localhost` and `127.0.0.1`, with a setting for those who expose the app on their network. The review also covers the desktop app on the three systems.
+- Skills planned, none written yet:
   - **add-opening** — takes a PGN or Lichess study, writes it in the format of §6, validates, runs tests and opens a PR.
   - **review-catalog** — checks a new catalog commit against `openings/`: what changed and what to accept.
   - **release** — bumps version, changelog, tag and Docker image.
@@ -280,7 +288,7 @@ Rules:
 - English SAN notation always.
 - **License: GPL-3.0.** Compatible with Stockfish and the Merida pieces. `THIRD_PARTY_LICENSES.md` lists Stockfish, chessops, @badrap/result, the openings catalog, the fonts and the Merida pieces. Lichess's Maestro (CC BY-NC-SA) and Alpha (non-commercial) sets are excluded because of their non-commercial terms.
 - Stockfish: always the latest official release, resolved at build time (§9), with an override for a specific version.
-- Stockfish runs only in the container. No Stockfish WASM in the browser; the app does not run without the backend.
+- Stockfish runs only on the server side: in the container, or bundled with the desktop app. No Stockfish WASM in the browser; the app does not run without the backend.
 - Openings catalog: import all of `lichess-org/chess-openings` as reference; `openings/` starts with all of its lines.
 
 **Future sources for user lines** (reviewed case by case)
@@ -294,9 +302,11 @@ Rules:
 
 1. **Foundation** (done): repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), the book in `openings/*.json` loaded into DuckDB, validation tests, the real Stockfish with provisional levels. *Done when: every item in §4 works in the browser at HD (1280x720) and larger.*
 2. **Data** (done): opening name on screen, recording of games, moves and deviations. UI preferences stay per browser.
-3. **Engine on the server:** native Stockfish (done) with calibrated levels (not yet: the levels in `app/engine/levels.toml` are provisional).
+3. **Engine on the server** (done): native Stockfish. The levels in `app/engine/levels.toml` stay uncalibrated (see 1.0.0 below).
 4. **Languages** (done): en, pt-BR and es, language picker.
-5. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
+5. **Desktop app** (proof of concept on Linux done): builds for Windows and macOS in CI, published on the Release, simple install instructions in the three languages; signing later.
+6. **1.0.0** (scope decided 2026-11-10): recorded sounds, provided by the author, in place of the generated ones; then the complete review of §10. Not planned, and kept as they are: starting a new game from a saved Chess960 game, measuring the bot levels, and a chess player's review of the pt-BR and es opening names.
+7. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
 
 ## 13. Working rules
 
