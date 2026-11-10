@@ -5,6 +5,7 @@ import { Board } from "./board.js";
 import { GameController } from "./game.js";
 import { indexOpenings } from "./opening-names.js";
 import { OpeningsScreen } from "./openings.js";
+import { initPages, localizeHelpImages } from "./pages.js";
 import { availableLocales, getLocale, initI18n, localize, onLocaleChange, setLocale, t } from "./i18n.js";
 import { initLayout } from "./layout.js";
 import { setLevelRatings } from "./levels.js";
@@ -46,7 +47,9 @@ async function initLocalePicker() {
  * @returns {Promise<void>}
  */
 async function main() {
+  initPages();
   await initI18n(getPref("locale", "en"));
+  localizeHelpImages();
   initTooltips();
   void initLocalePicker();
   initTheme(byId("theme-toggle"));

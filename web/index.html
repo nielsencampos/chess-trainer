@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/board.css" />
     <link rel="stylesheet" href="css/panel.css" />
+    <link rel="stylesheet" href="css/pages.css" />
     <script type="importmap">
       { "imports": { "@badrap/result": "./js/vendor/badrap-result.js" } }
     </script>
@@ -28,6 +29,8 @@
           <button id="tab-saved" class="tab" type="button" disabled data-i18n="menu.saved"></button>
           <button id="tab-openings" class="tab" type="button" disabled data-i18n="menu.openings"></button>
           <button id="tab-import" class="tab" type="button" disabled data-i18n="menu.import"></button>
+          <button id="tab-scoresheet" class="tab" type="button" disabled data-i18n="menu.scoresheet"></button>
+          <button id="tab-help" class="tab" type="button" disabled data-i18n="menu.help"></button>
         </nav>
 
         <div class="side-panel">
@@ -252,6 +255,174 @@
         </div>
         <div id="chips" class="chips" aria-live="polite"></div>
       </section>
+
+        <section id="help-page" class="page-view" hidden>
+          <article class="help-page">
+            <h2 data-i18n="help.title"></h2>
+            <p data-i18n="help.intro"></p>
+            <div class="notice notice-bad">
+              <strong data-i18n="help.fairPlay.title"></strong>
+              <p data-i18n="help.fairPlay.text"></p>
+            </div>
+            <div class="notice">
+              <strong data-i18n="help.eval.title"></strong>
+              <p data-i18n="help.eval.text"></p>
+            </div>
+            <details class="help-section" open>
+              <summary data-i18n="help.start.title"></summary>
+              <ul>
+                <li data-i18n="help.start.opening"></li>
+                <li data-i18n="help.start.saved"></li>
+                <li data-i18n="help.start.chess960"></li>
+                <li data-i18n="help.start.level"></li>
+                <li data-i18n="help.start.time"></li>
+                <li data-i18n="help.start.options"></li>
+              </ul>
+              <figure class="help-figure">
+                <img data-help-img="setup" alt="" width="960" height="540" loading="lazy" />
+                <figcaption data-i18n="help.fig.setup"></figcaption>
+              </figure>
+            </details>
+            <details class="help-section" open>
+              <summary data-i18n="help.play.title"></summary>
+              <ul>
+                <li data-i18n="help.play.moves"></li>
+                <li data-i18n="help.play.chips"></li>
+                <li data-i18n="help.play.showMoves"></li>
+                <li data-i18n="help.play.premoves"></li>
+                <li data-i18n="help.play.resign"></li>
+              </ul>
+              <figure class="help-figure">
+                <img data-help-img="play" alt="" width="900" height="720" loading="lazy" />
+                <figcaption data-i18n="help.fig.play"></figcaption>
+              </figure>
+            </details>
+            <details class="help-section" open>
+              <summary data-i18n="help.end.title"></summary>
+              <ul>
+                <li data-i18n="help.end.card"></li>
+                <li data-i18n="help.end.pgn"></li>
+              </ul>
+              <figure class="help-figure">
+                <img data-help-img="end" alt="" width="900" height="720" loading="lazy" />
+                <figcaption data-i18n="help.fig.end"></figcaption>
+              </figure>
+            </details>
+            <details class="help-section" open>
+              <summary data-i18n="help.paper.title"></summary>
+              <ul>
+                <li data-i18n="help.paper.print"></li>
+                <li data-i18n="help.paper.setup"></li>
+                <li data-i18n="help.paper.write"></li>
+                <li data-i18n="help.paper.compare"></li>
+              </ul>
+              <figure class="help-figure">
+                <img data-help-img="paper" alt="" width="900" height="720" loading="lazy" />
+                <figcaption data-i18n="help.fig.paper"></figcaption>
+              </figure>
+            </details>
+            <details class="help-section" open>
+              <summary data-i18n="help.review.title"></summary>
+              <ul>
+                <li data-i18n="help.review.list"></li>
+                <li data-i18n="help.review.play"></li>
+                <li data-i18n="help.review.export"></li>
+              </ul>
+              <figure class="help-figure">
+                <img data-help-img="review" alt="" width="900" height="720" loading="lazy" />
+                <figcaption data-i18n="help.fig.review"></figcaption>
+              </figure>
+            </details>
+            <details class="help-section" open>
+              <summary data-i18n="help.openings.title"></summary>
+              <ul>
+                <li data-i18n="help.openings.browse"></li>
+              </ul>
+            </details>
+            <details class="help-section" open>
+              <summary data-i18n="help.import.title"></summary>
+              <ul>
+                <li data-i18n="help.import.sources"></li>
+              </ul>
+            </details>
+            <details class="help-section" open>
+              <summary data-i18n="help.analyse.title"></summary>
+              <ul>
+                <li data-i18n="help.analyse.export"></li>
+                <li data-i18n="help.analyse.paste"></li>
+              </ul>
+            </details>
+          </article>
+        </section>
+
+        <section id="sheet-page" class="page-view" hidden>
+          <div class="sheet-toolbar">
+            <p class="notice" data-i18n="sheet.notOfficial"></p>
+            <p class="hint" data-i18n="sheet.tip"></p>
+            <div class="sheet-actions">
+              <button id="sheet-print" class="button button-primary" type="button" data-i18n="sheet.print"></button>
+              <span class="hint" data-i18n="sheet.printHint"></span>
+            </div>
+          </div>
+          <div id="sheet-frame" class="sheet-frame">
+            <div class="sheet">
+            <header class="sheet-head">
+              <img class="sheet-logo" src="logo.svg" alt="Chess Trainer" width="64" height="64" />
+              <div class="sheet-heading">
+                <h1 data-i18n="sheet.heading"></h1>
+                <p class="sheet-disclaimer" data-i18n="sheet.disclaimer"></p>
+              </div>
+              <span class="sheet-brand">Chess Trainer</span>
+            </header>
+
+            <div class="sheet-fields">
+              <div class="sheet-row cols-event">
+                <div class="cell"><span data-i18n="sheet.event"></span></div>
+                <div class="cell"><span data-i18n="sheet.site"></span></div>
+                <div class="cell"><span data-i18n="sheet.date"></span></div>
+              </div>
+              <div class="sheet-row cols-round">
+                <div class="cell"><span data-i18n="sheet.round"></span></div>
+                <div class="cell"><span data-i18n="sheet.board"></span></div>
+                <div class="cell"><span data-i18n="sheet.timeControl"></span></div>
+                <div class="cell"><span data-i18n="sheet.opening"></span></div>
+              </div>
+            </div>
+
+            <div class="sheet-fields">
+              <div class="sheet-row cols-player">
+                <div class="cell"><span data-i18n="sheet.whiteName"></span></div>
+                <div class="cell"><span data-i18n="sheet.rating"></span></div>
+                <div class="cell"><span data-i18n="sheet.playerId"></span></div>
+                <div class="cell"><span data-i18n="sheet.club"></span></div>
+              </div>
+              <div class="sheet-row cols-player">
+                <div class="cell"><span data-i18n="sheet.blackName"></span></div>
+                <div class="cell"><span data-i18n="sheet.rating"></span></div>
+                <div class="cell"><span data-i18n="sheet.playerId"></span></div>
+                <div class="cell"><span data-i18n="sheet.club"></span></div>
+              </div>
+            </div>
+
+            <div id="sheet-moves" class="sheet-moves"></div>
+
+            <div class="sheet-result">
+              <strong data-i18n="sheet.result"></strong>
+              <span class="box"></span><span>1-0</span>
+              <span class="box"></span><span>½-½</span>
+              <span class="box"></span><span>0-1</span>
+            </div>
+
+            <div class="sheet-signatures">
+              <span data-i18n="sheet.signWhite"></span>
+              <span data-i18n="sheet.signBlack"></span>
+              <span data-i18n="sheet.signArbiter"></span>
+            </div>
+
+            <footer class="sheet-foot" data-i18n="sheet.disclaimer"></footer>
+            </div>
+          </div>
+        </section>
 
       </main>
 

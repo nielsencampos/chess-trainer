@@ -1,9 +1,11 @@
-// The "Saved games" and "Import games" screens, and the menu that switches between screens:
+// The "Saved games" and "Import games" screens, and the menu that switches between screens
+// (Help and Scoresheet show in the board area, see pages.js):
 // finished games, filters, selection, export, deletion and imports.
 
 import { ApiError, api } from "./api.js";
 import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
 import { openingName, openingSearchText } from "./opening-names.js";
+import { showPage } from "./pages.js";
 
 /**
  * Finds an element by id.
@@ -19,7 +21,9 @@ const byId = (id) => /** @type {any} */ (document.getElementById(id));
  *   white: string | null, black: string | null}} SavedGame
  */
 
-const TABS = ["new", "saved", "openings", "import"];
+const TABS = ["new", "saved", "openings", "import", "scoresheet", "help"];
+/** The tabs whose screen is a page in the board area, and that page. */
+const PAGES = /** @type {Record<string, string>} */ ({ help: "help", scoresheet: "sheet" });
 const DELETE_CONFIRM_MS = 3000;
 
 /** The Saved games list and the imports, and the menu tabs that show one screen at a time. */
@@ -88,7 +92,7 @@ export class SavedGames {
 
   /**
    * Shows one screen of the menu and marks its tab.
-   * @param {string} tab  `new`, `saved`, `openings` or `import`.
+   * @param {string} tab  `new`, `saved`, `openings`, `import`, `scoresheet` or `help`.
    * @returns {void}
    */
   showTab(tab) {
@@ -97,6 +101,7 @@ export class SavedGames {
     byId("openings-card").hidden = tab !== "openings";
     byId("saved-card").hidden = tab !== "saved";
     byId("import-card").hidden = tab !== "import";
+    showPage(PAGES[tab] ?? null);
     for (const name of TABS) {
       byId(`tab-${name}`).classList.toggle("active", tab === name);
     }
