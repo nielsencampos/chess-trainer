@@ -17,6 +17,8 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 
 **Scope:** a **local, single-user** app. Everyone clones it and runs `docker compose up` on their own machine. No central server, no accounts, no login. By default the app listens on `127.0.0.1` only.
 
+**Desktop app (decided 2026-11-10, proof of concept):** besides Docker, the same app ships as an installable desktop program, so a player who does not know Docker can use it. `desktop/launcher.py` starts the same server on `127.0.0.1` and shows it in a native window (pywebview), packaged per system by PyInstaller with its own Stockfish. Docker stays the reference way to run it. The desktop app keeps its database in the user's data folder (`platformdirs`), not next to the program.
+
 **Target user:** club and online players (roughly 800–1800) who want to drill their repertoire and review their games, with long time controls, optionally hiding the moves on screen to write them on a paper scoresheet.
 
 ## 2. Goals
@@ -38,6 +40,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 | Frontend | Plain HTML + CSS + JS, ES modules, **no build step, no Node** | Types via JSDoc. chessops and the Merida pieces are vendored, no CDN |
 | Python packaging | uv (`pyproject.toml` + `uv.lock`) | |
 | Container | Multi-stage Dockerfile + `docker-compose.yml` | Slim final image, non-root user, healthcheck |
+| Desktop | PyInstaller (one folder) + pywebview + platformdirs | `desktop/`, dependency group `desktop`. Linux uses pywebview's Qt backend (wheels, no system packages). Fixed port 47800, because UI preferences live in `localStorage`, which belongs to an origin |
 | Tests | pytest (backend), Playwright (browser flows) | |
 | CI | GitHub Actions: ruff, tests, repertoire validation, image build | |
 
@@ -280,7 +283,7 @@ Rules:
 - English SAN notation always.
 - **License: GPL-3.0.** Compatible with Stockfish and the Merida pieces. `THIRD_PARTY_LICENSES.md` lists Stockfish, chessops, @badrap/result, the openings catalog, the fonts and the Merida pieces. Lichess's Maestro (CC BY-NC-SA) and Alpha (non-commercial) sets are excluded because of their non-commercial terms.
 - Stockfish: always the latest official release, resolved at build time (§9), with an override for a specific version.
-- Stockfish runs only in the container. No Stockfish WASM in the browser; the app does not run without the backend.
+- Stockfish runs only on the server side: in the container, or bundled with the desktop app. No Stockfish WASM in the browser; the app does not run without the backend.
 - Openings catalog: import all of `lichess-org/chess-openings` as reference; `openings/` starts with all of its lines.
 
 **Future sources for user lines** (reviewed case by case)
@@ -296,7 +299,8 @@ Rules:
 2. **Data** (done): opening name on screen, recording of games, moves and deviations. UI preferences stay per browser.
 3. **Engine on the server:** native Stockfish (done) with calibrated levels (not yet: the levels in `app/engine/levels.toml` are provisional).
 4. **Languages** (done): en, pt-BR and es, language picker.
-5. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
+5. **Desktop app** (proof of concept on Linux done): builds for Windows and macOS in CI, published on the Release, simple install instructions in the three languages; signing later.
+6. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
 
 ## 13. Working rules
 
