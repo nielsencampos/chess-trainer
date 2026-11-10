@@ -1,4 +1,4 @@
-"""Fetch a player's public games from Lichess or Chess.com as PGN text.
+"""Fetch a player's public games from Chess.com or Lichess as PGN text.
 
 The text goes through the same import as a pasted PGN, so nothing here validates games.
 This is the only part of the app that goes to the internet, and only when the user asks.

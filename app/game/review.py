@@ -1,7 +1,7 @@
 """Turns a PGN into the positions of a read-only review. Works for Chess960 too.
 
 Each move carries what the PGN says about it, when it says it: the classification of the site
-that analysed it (Lichess or Chess.com NAGs and Chess.com's `[%c_effect]`), its evaluation
+that analysed it (Chess.com or Lichess NAGs and Chess.com's `[%c_effect]`), its evaluation
 (`[%eval]`), the clock after it (`[%clk]`), the time it took, the comment without the commands, and
 the side variations that branch off it. Nothing here is computed by an engine.
 """

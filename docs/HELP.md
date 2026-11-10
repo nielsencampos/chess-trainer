@@ -8,18 +8,18 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 
 > **Never use it to cheat**
 >
-> Do not use Chess Trainer, or any engine, during a game against another person, online or over the board. That is cheating, and Lichess, Chess.com and FIDE ban it. Train before and after your games, never during them.
+> Do not use Chess Trainer, or any engine, during a game against another person, online or over the board. That is cheating, and Chess.com, Lichess and FIDE ban it. Train before and after your games, never during them.
 
 > **The evaluation here is basic**
 >
-> The evaluation bar and the move icons (best move, mistake, blunder…) come from a quick Stockfish check and are only a hint. For a real analysis, export the PGN and analyse it on Lichess, Chess.com or another analysis tool.
+> The evaluation bar and the move icons (best move, mistake, blunder…) come from a quick Stockfish check and are only a hint. For a real analysis, export the PGN and analyse it on Chess.com, Lichess or another analysis tool.
 
 ## Start a game
 
 - Opening: pick your color and tick the openings and variations to drill. Each ticked variation has the same chance of being drawn. Playing a move from a variation you did not tick counts as leaving theory.
 - Saved game: train the line of a game you played or imported, so its moves are checked, or play on from any of its positions.
 - Chess960: roll a starting position or paste the FEN of one of the 960. To castle, click the king and then a square between it and the rook, or the rook itself.
-- Bot level: the rating beside each level is nominal, on Stockfish's own scale, and has not been measured. It is not a Lichess or Chess.com rating.
+- Bot level: the rating beside each level is nominal, on Stockfish's own scale, and has not been measured. It is not a Chess.com or Lichess rating.
 - Time control: the presets of a real tournament clock, from bullet to classical, or no clock. The bot's response time is Human, which spends its clock like a person, or Instant.
 - Options: warn when you leave theory, allow premoves, and let the bot deviate from its line on purpose, from a chosen move, so you also train against surprises.
 
@@ -48,16 +48,52 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 
 *At the end: result, variation, theory and deviations.*
 
-## Train like an official game
+## How to train
 
-- Open Scoresheet in the menu and print it, or save it as a PDF.
-- Choose a long time control, such as rapid or classical, and untick Show moves.
-- Write every move, yours and the bot's, right after it is played, as over the board. Fill in the header, the result and the signatures, to get used to a real tournament.
-- At the end, compare your sheet with the move list and the PGN, and look for the moves you wrote wrong.
+### Losing is part of it
+
+Losing is part of learning. What matters is studying each game and learning from your own mistakes. To really improve, raise the bot's level little by little, and only raise it again once you feel comfortable with the moves it plays.
+
+### Each time control has a job
+
+In long games, think calmly about every move and build the habit of calculating two, three or more moves ahead. Use rapid, blitz and bullet to drill the patterns you have already taken in.
+
+### Start with your opponent's moves
+
+Before each move, first look at what your opponent threatens: checks, captures and attacks. Then look for your own plan.
+
+### Train as in a tournament
+
+The best way to learn is with a physical board and clock. It does not matter if the clock drifts from the app's.
+
+Before the game, open Scoresheet in the menu and print it, or save it as a PDF, and fill in the header. Choose a long time control, such as rapid or classical, and untick Show moves.
+
+On your move:
+
+1. Move the piece on the board.
+1. Press the clock with the same hand that moved the piece.
+1. Play the same move in the app.
+1. Write the move on the scoresheet.
+
+On the bot's move:
+
+1. Play its move on the board.
+1. Press the clock on its side.
+1. Write the move on the scoresheet.
+
+Only then start thinking about yours.
+
+Remember: a piece you touch is a piece you move. For an even better experience, film yourself playing and watch it later to see how you behave at the board. Take your time: with practice it becomes natural.
+
+At the end, fill in the result and the signatures, compare your sheet with the move list and the PGN, and look for the moves you wrote wrong.
 
 ![Show moves unticked: the move list hides, so you write on the scoresheet.](../web/help/en/paper.webp)
 
 *Show moves unticked: the move list hides, so you write on the scoresheet.*
+
+### Analyse before you look at the evaluation
+
+When a game ends, review it on your own first and look for where it turned. Only then check it against the evaluation. The bar shows on the final position, so ignore it until you are done.
 
 ## Saved games and review
 
@@ -80,4 +116,4 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 ## Analyse elsewhere
 
 - Get the PGN from the end-of-game card or from Saved games.
-- On Lichess or Chess.com, open the analysis board and paste or import the PGN, for a full analysis by a stronger setup.
+- On Chess.com or Lichess, open the analysis board and paste or import the PGN, for a full analysis by a stronger setup.

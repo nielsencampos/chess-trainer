@@ -362,7 +362,7 @@ async def import_games(body: ImportRequest, request: Request) -> dict:
 
 @router.post("/games/import/remote")
 async def import_remote_games(body: RemoteImportRequest, request: Request) -> dict:
-    """`POST /api/games/import/remote`: a player's public games from Lichess or Chess.com.
+    """`POST /api/games/import/remote`: a player's public games from Chess.com or Lichess.
 
     They go through the same import as a paste.
 

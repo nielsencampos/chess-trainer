@@ -8,18 +8,18 @@ O Chess Trainer é para treinar: pratique suas aberturas contra um bot que joga 
 
 > **Nunca use para trapacear**
 >
-> Não use o Chess Trainer, nem qualquer engine, durante uma partida contra outra pessoa, online ou no tabuleiro. Isso é trapaça, e o Lichess, o Chess.com e a FIDE proíbem. Treine antes e depois das partidas, nunca durante.
+> Não use o Chess Trainer, nem qualquer engine, durante uma partida contra outra pessoa, online ou no tabuleiro. Isso é trapaça, e o Chess.com, o Lichess e a FIDE proíbem. Treine antes e depois das partidas, nunca durante.
 
 > **A avaliação aqui é simples**
 >
-> A barra de avaliação e os ícones dos lances (melhor lance, erro, capivarada…) vêm de uma checagem rápida do Stockfish e são só uma dica. Para uma análise de verdade, exporte o PGN e analise no Lichess, no Chess.com ou em outra ferramenta de análise.
+> A barra de avaliação e os ícones dos lances (melhor lance, erro, capivarada…) vêm de uma checagem rápida do Stockfish e são só uma dica. Para uma análise de verdade, exporte o PGN e analise no Chess.com, no Lichess ou em outra ferramenta de análise.
 
 ## Começar uma partida
 
 - Abertura: escolha sua cor e marque as aberturas e variantes para treinar. Cada variante marcada tem a mesma chance de ser sorteada. Jogar um lance de uma variante que você não marcou conta como sair da teoria.
 - Partida salva: treine a linha de uma partida que você jogou ou importou, com seus lances conferidos, ou continue jogando a partir de qualquer posição dela.
 - Chess960: sorteie uma posição inicial ou cole o FEN de uma das 960. Para rocar, clique no rei e depois numa casa entre ele e a torre, ou na própria torre.
-- Nível do bot: o rating ao lado de cada nível é nominal, na escala do próprio Stockfish, e não foi medido. Não é um rating do Lichess nem do Chess.com.
+- Nível do bot: o rating ao lado de cada nível é nominal, na escala do próprio Stockfish, e não foi medido. Não é um rating do Chess.com nem do Lichess.
 - Ritmo: os ritmos de um relógio de torneio de verdade, do bullet ao clássico, ou sem relógio. O tempo de resposta do bot é Humano, que gasta o relógio como uma pessoa, ou Instantâneo.
 - Opções: avisar ao sair da teoria, permitir pré-lances e deixar o bot desviar da linha de propósito, a partir de um lance escolhido, para você treinar também contra surpresas.
 
@@ -48,16 +48,52 @@ O Chess Trainer é para treinar: pratique suas aberturas contra um bot que joga 
 
 *No fim: resultado, variante, teoria e desvios.*
 
-## Treine como numa partida oficial
+## Como treinar
 
-- Abra Planilha no menu e imprima, ou salve em PDF.
-- Escolha um ritmo longo, como rápido ou clássico, e desmarque Mostrar lances.
-- Anote cada lance, seu e do bot, logo depois de jogado, como no tabuleiro. Preencha o cabeçalho, o resultado e as assinaturas, para se acostumar com um torneio de verdade.
-- No fim, compare sua planilha com a lista de lances e o PGN, e procure os lances que você anotou errado.
+### Perder faz parte
+
+Perder faz parte do aprendizado. O importante é estudar cada partida e aprender com os próprios erros. Para evoluir de verdade, aumente o nível do bot aos poucos e só suba de novo quando se sentir confortável com os lances que ele propõe.
+
+### Cada ritmo tem uma função
+
+Nas partidas longas, pense com calma em cada lance e desenvolva o hábito de calcular duas, três ou mais jogadas à frente. Use as rápidas, as blitz e as bullet para treinar os padrões que você já internalizou.
+
+### Comece pelos lances do adversário
+
+Antes de cada lance, olhe primeiro o que o adversário ameaça: xeques, capturas e ataques. Depois procure o seu plano.
+
+### Treine como no torneio
+
+O ideal para aprender é jogar com tabuleiro e relógio físicos. Não tem problema se o relógio ficar dessincronizado do app.
+
+Antes da partida, abra Planilha no menu e imprima, ou salve em PDF, e preencha o cabeçalho. Escolha um ritmo longo, como rápido ou clássico, e desmarque Mostrar lances.
+
+No seu lance:
+
+1. Mova a peça no tabuleiro.
+1. Aperte o relógio com a mesma mão que moveu a peça.
+1. Jogue o mesmo lance no app.
+1. Anote o lance na planilha.
+
+No lance do bot:
+
+1. Reproduza o lance no tabuleiro.
+1. Aperte o relógio do lado dele.
+1. Anote o lance na planilha.
+
+Só então comece a pensar no seu.
+
+Lembre-se: peça tocada é peça jogada. Para uma experiência ainda melhor, grave-se jogando e assista depois para entender como você se comporta diante do tabuleiro. Faça tudo com calma: com o tempo, isso fica natural.
+
+No fim, preencha o resultado e as assinaturas, compare sua planilha com a lista de lances e o PGN, e procure os lances que você anotou errado.
 
 ![Mostrar lances desmarcado: a lista some e você anota na planilha.](../web/help/pt-BR/paper.webp)
 
 *Mostrar lances desmarcado: a lista some e você anota na planilha.*
+
+### Analise antes de ver a avaliação
+
+Ao terminar uma partida, revise-a sozinho primeiro e procure onde ela virou. Só depois confira com a avaliação. A barra aparece na posição final, então ignore-a até terminar.
 
 ## Partidas salvas e revisão
 
@@ -80,4 +116,4 @@ O Chess Trainer é para treinar: pratique suas aberturas contra um bot que joga 
 ## Analise em outro lugar
 
 - Pegue o PGN no quadro de fim de partida ou em Partidas salvas.
-- No Lichess ou no Chess.com, abra o tabuleiro de análise e cole ou importe o PGN, para uma análise completa e mais forte.
+- No Chess.com ou no Lichess, abra o tabuleiro de análise e cole ou importe o PGN, para uma análise completa e mais forte.

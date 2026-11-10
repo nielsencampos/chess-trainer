@@ -8,18 +8,18 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 
 > **Nunca lo uses para hacer trampa**
 >
-> No uses Chess Trainer, ni ningún motor, durante una partida contra otra persona, en línea o sobre el tablero. Eso es trampa, y Lichess, Chess.com y la FIDE lo prohíben. Entrena antes y después de tus partidas, nunca durante.
+> No uses Chess Trainer, ni ningún motor, durante una partida contra otra persona, en línea o sobre el tablero. Eso es trampa, y Chess.com, Lichess y la FIDE lo prohíben. Entrena antes y después de tus partidas, nunca durante.
 
 > **La evaluación aquí es básica**
 >
-> La barra de evaluación y los iconos de las jugadas (mejor jugada, error, error grave…) salen de una revisión rápida de Stockfish y son solo una pista. Para un análisis de verdad, exporta el PGN y analízalo en Lichess, Chess.com u otra herramienta de análisis.
+> La barra de evaluación y los iconos de las jugadas (mejor jugada, error, error grave…) salen de una revisión rápida de Stockfish y son solo una pista. Para un análisis de verdad, exporta el PGN y analízalo en Chess.com, Lichess u otra herramienta de análisis.
 
 ## Empezar una partida
 
 - Apertura: elige tu color y marca las aperturas y variantes que quieres practicar. Cada variante marcada tiene la misma probabilidad de salir. Jugar una jugada de una variante que no marcaste cuenta como salir de la teoría.
 - Partida guardada: entrena la línea de una partida que jugaste o importaste, con tus jugadas comprobadas, o sigue jugando desde cualquiera de sus posiciones.
 - Chess960: sortea una posición inicial o pega el FEN de una de las 960. Para enrocar, haz clic en el rey y luego en una casilla entre él y la torre, o en la propia torre.
-- Nivel del bot: el Elo junto a cada nivel es nominal, en la escala propia de Stockfish, y no se ha medido. No es un Elo de Lichess ni de Chess.com.
+- Nivel del bot: el Elo junto a cada nivel es nominal, en la escala propia de Stockfish, y no se ha medido. No es un Elo de Chess.com ni de Lichess.
 - Ritmo de juego: los ritmos de un reloj de torneo real, del bullet al clásico, o sin reloj. El tiempo de respuesta del bot es Humano, que gasta su reloj como una persona, o Instantáneo.
 - Opciones: avisar al salir de la teoría, permitir premovimientos y dejar que el bot se desvíe de su línea a propósito, desde una jugada elegida, para entrenar también contra sorpresas.
 
@@ -48,16 +48,52 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 
 *Al final: resultado, variante, teoría y desviaciones.*
 
-## Entrena como en una partida oficial
+## Cómo entrenar
 
-- Abre Planilla en el menú e imprímela, o guárdala en PDF.
-- Elige un ritmo largo, como rápidas o clásicas, y desmarca Mostrar jugadas.
-- Anota cada jugada, tuya y del bot, justo después de jugarse, como en el tablero. Rellena el encabezado, el resultado y las firmas, para acostumbrarte a un torneo de verdad.
-- Al final, compara tu planilla con la lista de jugadas y el PGN, y busca las jugadas que anotaste mal.
+### Perder es parte del camino
+
+Perder es parte del aprendizaje. Lo importante es estudiar cada partida y aprender de tus propios errores. Para mejorar de verdad, sube el nivel del bot poco a poco y solo vuelve a subirlo cuando te sientas cómodo con las jugadas que propone.
+
+### Cada ritmo tiene su función
+
+En las partidas largas, piensa con calma cada jugada y desarrolla el hábito de calcular dos, tres o más jugadas por delante. Usa las rápidas, las blitz y las bullet para entrenar los patrones que ya has interiorizado.
+
+### Empieza por las jugadas del rival
+
+Antes de cada jugada, mira primero lo que amenaza el rival: jaques, capturas y ataques. Después busca tu propio plan.
+
+### Entrena como en un torneo
+
+Lo ideal para aprender es jugar con tablero y reloj físicos. No pasa nada si el reloj se desincroniza del de la app.
+
+Antes de la partida, abre Planilla en el menú e imprímela, o guárdala en PDF, y rellena el encabezado. Elige un ritmo largo, como rápidas o clásicas, y desmarca Mostrar jugadas.
+
+En tu jugada:
+
+1. Mueve la pieza en el tablero.
+1. Pulsa el reloj con la misma mano que movió la pieza.
+1. Juega la misma jugada en la app.
+1. Anota la jugada en la planilla.
+
+En la jugada del bot:
+
+1. Reproduce su jugada en el tablero.
+1. Pulsa el reloj de su lado.
+1. Anota la jugada en la planilla.
+
+Solo entonces empieza a pensar en la tuya.
+
+Recuerda: pieza tocada, pieza jugada. Para una experiencia aún mejor, grábate jugando y mírate después para entender cómo te comportas frente al tablero. Hazlo todo con calma: con el tiempo, sale solo.
+
+Al final, rellena el resultado y las firmas, compara tu planilla con la lista de jugadas y el PGN, y busca las jugadas que anotaste mal.
 
 ![Mostrar jugadas desmarcado: la lista se oculta y anotas en la planilla.](../web/help/es/paper.webp)
 
 *Mostrar jugadas desmarcado: la lista se oculta y anotas en la planilla.*
+
+### Analiza antes de mirar la evaluación
+
+Al terminar una partida, revísala tú solo primero y busca dónde cambió. Solo después compárala con la evaluación. La barra aparece en la posición final, así que ignórala hasta terminar.
 
 ## Partidas guardadas y revisión
 
@@ -80,4 +116,4 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 ## Analiza en otro sitio
 
 - Toma el PGN del cuadro de fin de partida o de Partidas guardadas.
-- En Lichess o Chess.com, abre el tablero de análisis y pega o importa el PGN, para un análisis completo y más fuerte.
+- En Chess.com o Lichess, abre el tablero de análisis y pega o importa el PGN, para un análisis completo y más fuerte.
