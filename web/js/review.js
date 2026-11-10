@@ -5,6 +5,7 @@ import { t } from "./i18n.js";
 import { EvalBar } from "./evalbar.js";
 import { formatClock } from "./clock.js";
 import { linkMoves, renderReviewList } from "./reviewlist.js";
+import { levelLabel } from "./levels.js";
 import { openingName } from "./opening-names.js";
 
 /**
@@ -131,10 +132,20 @@ export class Review {
     this.select(this.node);
   }
 
-  /** Writes the players' names on the side of their color. */
+  /**
+   * Writes the players' names on the side of their color. A game played here shows "You" and the
+   * bot as during the game, in the chosen language; an imported one, the names in its PGN.
+   */
   renderNames() {
-    const white = this.data.white ?? t("setup.white");
-    const black = this.data.black ?? t("setup.black");
+    let white = this.data.white ?? t("setup.white");
+    let black = this.data.black ?? t("setup.black");
+    if (this.data.source === "app" && this.data.user_color) {
+      const you = t("player.you");
+      const bot = this.data.level
+        ? t("player.bot", { level: levelLabel(this.data.level) })
+        : t("player.botIdle");
+      [white, black] = this.data.user_color === "white" ? [you, bot] : [bot, you];
+    }
     byId("bottom-name").textContent = this.flipped ? black : white;
     byId("top-name").textContent = this.flipped ? white : black;
   }

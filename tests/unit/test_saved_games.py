@@ -568,6 +568,22 @@ def test_review_of_a_saved_game_has_every_position(client):
     assert body["moves"][0]["fen"].startswith("rnbqkbnr/pppppppp/8/8/4P3")
     assert (body["white"], body["black"], body["result"]) == ("Ana", "Bia", "1-0")
     assert body["chess960"] is False
+    assert body["source"] == "imported"
+
+
+def test_review_of_a_played_game_says_who_was_the_user(client):
+    """A played game tells the review the user's color and the bot's level.
+
+    The browser then names the players in the chosen language instead of the PGN's English.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
+    game_id = finish(client, color="black")
+    body = client.get(f"/api/games/{game_id}/review").json()
+    assert (body["source"], body["user_color"]) == ("app", "black")
+    assert body["level"]
+    assert body["black"] == "You"
 
 
 def test_review_of_a_chess960_game_starts_from_its_position(client):

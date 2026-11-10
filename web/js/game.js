@@ -5,6 +5,7 @@ import { api } from "./api.js";
 import { Clocks, formatClock } from "./clock.js";
 import { renderEndCard } from "./endcard.js";
 import { openingName } from "./opening-names.js";
+import { showPage } from "./pages.js";
 import { EvalBar } from "./evalbar.js";
 import { t } from "./i18n.js";
 import { levelLabel } from "./levels.js";
@@ -255,6 +256,7 @@ export class GameController {
     byId("setup-card").hidden = true;
     byId("saved-card").hidden = true;
     byId("import-card").hidden = true;
+    showPage(null);
     this.ended = false;
     this.evalBar.hide();
     this.takeBackable = null;

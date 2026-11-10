@@ -240,12 +240,13 @@ class GameStore:
             game_id (str): The game's id.
 
         Returns:
-            dict | None: Its PGN, players, result, opening, source, moves and deviations, or None.
+            dict | None: Its PGN, players, result, opening, source, user color, level, moves
+                and deviations, or None.
         """
         cursor = self._connection.cursor()
         cursor.execute(
-            "SELECT pgn, white, black, result, eco, opening, source, moves_json, deviations_json, "
-            "bot_deviation_json "
+            "SELECT pgn, white, black, result, eco, opening, source, user_color, level, "
+            "moves_json, deviations_json, bot_deviation_json "
             "FROM games "
             "WHERE game_id = ? AND status = 'finished'",
             [game_id],
