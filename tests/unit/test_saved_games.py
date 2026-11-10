@@ -537,6 +537,19 @@ def test_chess960_games_cannot_be_played_from_yet(client):
     assert new_from(client, game["game_id"]).status_code == 422
 
 
+def test_a_standard_game_that_mentions_chess960_is_not_chess960(client):
+    """Only the Variant tag makes a game Chess960, not the word in an event or a comment.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
+    text = GOOD.replace('[White "Ana"]', '[Event "Chess960 club night"]\n[White "Ana"]')
+    game_id = imported_id(client, text.replace("1. e4", "1. e4 { as in chess960 }"))
+    assert client.get("/api/games").json()["games"][0]["chess960"] is False
+    assert client.get(f"/api/games/{game_id}/review").json()["chess960"] is False
+    assert new_from(client, game_id).status_code == 201
+
+
 def test_active_game_cannot_be_played_from(client):
     """Active game cannot be played from.
 
