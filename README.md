@@ -10,7 +10,7 @@ Chess.com with an evaluation bar. Chess960 included. English, Portuguese and Spa
 Docker image. It runs on your own machine (amd64 or arm64), with no accounts and no internet needed
 to play.
 
-*[Versão em português abaixo.](#português-brasil)*
+*[Versão em português abaixo.](#português-brasil) · [Versión en español abajo.](#español)*
 
 ## Run
 
@@ -55,7 +55,7 @@ Beyond openings:
   during long games. It is not an official scoresheet: it is for training only.
 - **Help:** how to use every screen, in the app's menu.
 
-Chess Trainer is for training. Never use it, or any engine, during a game against another person.
+chess-trainer is for training. Never use it, or any engine, during a game against another person.
 
 **Current state:** the book and games are in DuckDB (`data/chess-trainer.duckdb`). Bot levels are
 provisional. The UI is in English, Brazilian Portuguese and Spanish. See the
@@ -149,10 +149,52 @@ Chess960; todas as partidas salvas, com filtros, exportação em PGN, revisão l
 a partir de qualquer lance (ainda não de uma partida Chess960); importação de PGN colado, de arquivo ou das partidas públicas de um
 jogador no Lichess ou no Chess.com; barra de avaliação do Stockfish na revisão e no fim da partida (uma checagem rápida: para uma
 análise completa, exporte o PGN para o Lichess ou o Chess.com); planilha de anotação A4 para imprimir,
-não oficial, só para treino; e uma Ajuda no menu. O Chess Trainer é para treinar: nunca o use, nem
+não oficial, só para treino; e uma Ajuda no menu. O chess-trainer é para treinar: nunca o use, nem
 qualquer engine, durante uma partida contra outra pessoa.
 
 **Estado atual:** o livro e as partidas ficam no DuckDB, e uma partida não terminada continua quando você reabre a página. Os
 níveis do bot são provisórios. A interface está em inglês, português e espanhol.
 
 **Para atualizar o Stockfish:** rode `docker compose build --pull` e depois `docker compose up -d`.
+
+## Español
+
+Entrenador local de ajedrez: juega contra Stockfish con los relojes de verdad, practica tus aperturas
+contra un bot que sigue el libro y muestra dónde saliste de la teoría, y revisa tus partidas de PGN,
+Lichess o Chess.com con barra de evaluación. Incluye Chess960. En inglés, portugués y español, todo
+en una imagen Docker. Funciona en tu máquina (amd64 o arm64), sin cuenta y sin necesitar internet
+para jugar.
+
+**Para ejecutarlo**, con Docker y Compose instalados:
+
+```bash
+git clone https://github.com/nielsencampos/chess-trainer.git
+cd chess-trainer
+docker compose up --build
+```
+
+Después abre <http://127.0.0.1:8000>.
+
+**Guía completa**, con imágenes: [docs/HELP.es.md](docs/HELP.es.md), la misma que la pantalla de Ayuda de la app.
+
+**Cómo funciona:** elige el color y las líneas, entre las 3.865 del libro, con búsqueda por nombre,
+ECO o jugadas. Cada línea seleccionada tiene la misma probabilidad de salir, y el bot juega la línea
+sorteada. Una jugada fuera de las líneas seleccionadas es una desviación: se registra con las jugadas
+esperadas y aparece al final de la partida. Cuando la línea se acaba, o alguien sale de la teoría,
+Stockfish toma el relevo en el nivel elegido. Desmarcar "Mostrar jugadas" oculta la lista de jugadas y
+el nombre de la apertura durante la partida, para que anotes en papel.
+
+**Además de las aperturas:** relojes de bullet y los de blitz, rápidas y clásicas de un reloj DGT 3000;
+Chess960; todas las partidas guardadas, con filtros, exportación en PGN, revisión jugada a jugada y
+nueva partida desde cualquier jugada (aún no desde una partida Chess960); importación de PGN pegado,
+de archivo o de las partidas públicas de un jugador en Lichess o Chess.com; barra de evaluación de
+Stockfish en la revisión y al final de la partida (una revisión rápida: para un análisis completo,
+exporta el PGN a Lichess o Chess.com); planilla de anotación A4 para imprimir, no oficial, solo para
+entrenar; y una Ayuda en el menú. chess-trainer es para entrenar: nunca lo uses, ni ningún motor,
+durante una partida contra otra persona.
+
+**Estado actual:** el libro y las partidas están en DuckDB, y una partida sin terminar continúa cuando
+vuelves a abrir la página. Los niveles del bot son provisionales. La interfaz está en inglés, portugués
+y español.
+
+**Para actualizar Stockfish:** ejecuta `docker compose build --pull` y después `docker compose up -d`.
