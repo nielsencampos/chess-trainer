@@ -33,7 +33,7 @@ O Chess Trainer é para treinar: pratique suas aberturas contra um bot que joga 
 - As etiquetas embaixo do tabuleiro mostram de quem é a vez, se você ainda está na teoria e onde você ou o bot saíram dela.
 - Mostrar lances, na barra da direita, esconde o nome da abertura e a lista de lances até o fim da partida: jogue sem dicas ou anote os lances no papel.
 - Com pré-lances ligados, você pode deixar um lance na fila enquanto o bot pensa. Com pré-lances desligados, Voltar lance desfaz seu último lance enquanto a resposta do bot ainda não apareceu.
-- Abandonar pede um segundo clique, para um clique sem querer não encerrar a partida.
+- Abandonar pede um segundo clique, para que um clique sem querer não encerre a partida.
 
 ![Clique ou arraste uma peça; o bot responde pelo livro.](../web/help/pt-BR/play.webp)
 
@@ -56,7 +56,7 @@ Perder faz parte do aprendizado. O importante é estudar cada partida e aprender
 
 ### Cada ritmo tem uma função
 
-Nas partidas longas, pense com calma em cada lance e desenvolva o hábito de calcular duas, três ou mais jogadas à frente. Use as rápidas, as blitz e as bullet para treinar os padrões que você já internalizou.
+Nas partidas longas, pense com calma em cada lance e desenvolva o hábito de calcular dois, três ou mais lances à frente. Use as rápidas, as blitz e as bullet para treinar os padrões que você já internalizou.
 
 ### Comece pelos lances do adversário
 
@@ -87,9 +87,9 @@ Lembre-se: peça tocada é peça jogada. Para uma experiência ainda melhor, gra
 
 No fim, preencha o resultado e as assinaturas, compare sua planilha com a lista de lances e o PGN, e procure os lances que você anotou errado.
 
-![Mostrar lances desmarcado: a lista some e você anota na planilha.](../web/help/pt-BR/paper.webp)
+![Com a opção Mostrar lances desmarcada, a lista some e você anota na planilha.](../web/help/pt-BR/paper.webp)
 
-*Mostrar lances desmarcado: a lista some e você anota na planilha.*
+*Com a opção Mostrar lances desmarcada, a lista some e você anota na planilha.*
 
 ### Analise antes de ver a avaliação
 

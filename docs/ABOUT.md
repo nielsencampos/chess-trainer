@@ -18,17 +18,17 @@ It does not replace courses, learning platforms or instructors. It is only a hel
 
 ## Who paved my way
 
-In order of time, the people, books and platforms that brought me here.
+In chronological order, the people, books and platforms that brought me here.
 
-1. **Henrique Mecking (Mequinho)**: Brazilian grandmaster, once third in the world. I have learned chess from the book Mequinho: o xadrez de um grande mestre since 1991. [en.wikipedia.org/wiki/Henrique_Mecking](https://en.wikipedia.org/wiki/Henrique_Mecking)
-1. **Chessmaster**: The best-selling series of chess video games, today Ubisoft's. I started playing on it from 2001, on the SNES and on the PC. [en.wikipedia.org/wiki/Chessmaster](https://en.wikipedia.org/wiki/Chessmaster)
-1. **Antonio Radić (agadmator)**: Croatian YouTuber whose channel goes through famous games; in 2021 he was the first chess creator to pass a million subscribers. On his channel I started watching chess and getting to know the great masters, and from 2014 I started playing online. [youtube.com/@agadmator](https://www.youtube.com/@agadmator)
+1. **Henrique Mecking (Mequinho)**: Brazilian grandmaster, once third in the world. I have been learning chess from the book Mequinho: o xadrez de um grande mestre since 1991. [en.wikipedia.org/wiki/Henrique_Mecking](https://en.wikipedia.org/wiki/Henrique_Mecking)
+1. **Chessmaster**: The best-selling series of chess video games, today Ubisoft's. I started playing it in 2001, on the SNES and the PC. [en.wikipedia.org/wiki/Chessmaster](https://en.wikipedia.org/wiki/Chessmaster)
+1. **Antonio Radić (agadmator)**: Croatian YouTuber whose channel goes through famous games; in 2021 he was the first chess creator to pass a million subscribers. On his channel I started watching chess and getting to know the great masters, and in 2014 I started playing online. [youtube.com/@agadmator](https://www.youtube.com/@agadmator)
 1. **Lichess**: A free and open-source chess site, with no ads, run by a non-profit. Where I started playing, because of agadmator. [lichess.org](https://lichess.org/)
 1. **Levy Rozman (GothamChess)**: American International Master, author and creator, known as "the Internet's chess teacher". I have followed him since 2020. He helped me understand strategy in more depth, get to know the people of the chess world and move to Chess.com for good. His course is on Chessly, and his book is How to Win at Chess. [youtube.com/@GothamChess](https://www.youtube.com/@GothamChess) · [chessly.com](https://chessly.com/)
 1. **Chess.com**: The largest chess site in the world. Where I moved because of Levy, and where I kept learning more about chess. [chess.com](https://www.chess.com/) · [youtube.com/@chess](https://www.youtube.com/@chess) · [youtube.com/@chesscomPT](https://www.youtube.com/@chesscomPT) · [youtube.com/@ChesscomES](https://www.youtube.com/@ChesscomES)
-1. **Evandro Barbosa**: Brazilian grandmaster and creator, with whom I have learned to plan since 2023, also through his course platform, Chessflix. [youtube.com/@GMEvandroBarbosa](https://www.youtube.com/@GMEvandroBarbosa) · [chessflix.com.br](https://chessflix.com.br/)
+1. **Evandro Barbosa**: Brazilian grandmaster and creator, with whom I have been learning to plan since 2023, also through his course platform, Chessflix. [youtube.com/@GMEvandroBarbosa](https://www.youtube.com/@GMEvandroBarbosa) · [chessflix.com.br](https://chessflix.com.br/)
 1. **Hikaru Nakamura**: American grandmaster, five-time U.S. champion, 2022 Fischer Random world champion, one of the best players in the world and one of its biggest streamers. I found him through Levy around 2024, and learned a lot from him about memorization. His style reminds me of Tal's, the Magician from Riga. [youtube.com/@GMHikaru](https://www.youtube.com/@GMHikaru)
-1. **Krikor Mekhitarian**: Brazilian grandmaster and creator, Brazilian champion in 2012 and 2015, who played five Chess Olympiads for Brazil. With him I have learned tactical blows since around 2024, also through his courses on openings and more. With WIM Flor, he hosts Chess.com's broadcasts in Portuguese on YouTube. [youtube.com/@GMKrikor](https://www.youtube.com/@GMKrikor) · [gmkrikor.com.br](https://gmkrikor.com.br/)
+1. **Krikor Mekhitarian**: Brazilian grandmaster and creator, Brazilian champion in 2012 and 2015, who played five Chess Olympiads for Brazil. From him I have been learning tactics since around 2024, also through his courses on openings and more. With WIM Flor, he hosts Chess.com's broadcasts in Portuguese on YouTube. [youtube.com/@GMKrikor](https://www.youtube.com/@GMKrikor) · [gmkrikor.com.br](https://gmkrikor.com.br/)
 
 ## Other legends and references
 

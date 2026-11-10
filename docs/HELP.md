@@ -87,9 +87,9 @@ Remember: a piece you touch is a piece you move. For an even better experience, 
 
 At the end, fill in the result and the signatures, compare your sheet with the move list and the PGN, and look for the moves you wrote wrong.
 
-![Show moves unticked: the move list hides, so you write on the scoresheet.](../web/help/en/paper.webp)
+![With Show moves unticked, the move list hides, and you write on the scoresheet.](../web/help/en/paper.webp)
 
-*Show moves unticked: the move list hides, so you write on the scoresheet.*
+*With Show moves unticked, the move list hides, and you write on the scoresheet.*
 
 ### Analyze before you look at the evaluation
 
@@ -111,9 +111,9 @@ When a game ends, review it on your own first and look for where it turned. Only
 
 ## Import games
 
-- Bring your games from Chess.com or Lichess by username and period, or paste or upload a PGN. They go to Saved games, ready to review or to train.
+- Bring your games from Chess.com or Lichess by username and period, or paste or upload a PGN. They go to Saved Games, ready to review or to train.
 
 ## Analyze elsewhere
 
-- Get the PGN from the end-of-game card or from Saved games.
-- On Chess.com or Lichess, open the analysis board and paste or import the PGN, for a full analysis by a stronger setup.
+- Get the PGN from the end-of-game card or from Saved Games.
+- On Chess.com or Lichess, open the analysis board and paste or import the PGN, for a full, deeper analysis.

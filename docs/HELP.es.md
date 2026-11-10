@@ -87,9 +87,9 @@ Recuerda: pieza tocada, pieza jugada. Para una experiencia aún mejor, grábate 
 
 Al final, rellena el resultado y las firmas, compara tu planilla con la lista de jugadas y el PGN, y busca las jugadas que anotaste mal.
 
-![Mostrar jugadas desmarcado: la lista se oculta y anotas en la planilla.](../web/help/es/paper.webp)
+![Con la opción Mostrar jugadas desmarcada, la lista se oculta y anotas en la planilla.](../web/help/es/paper.webp)
 
-*Mostrar jugadas desmarcado: la lista se oculta y anotas en la planilla.*
+*Con la opción Mostrar jugadas desmarcada, la lista se oculta y anotas en la planilla.*
 
 ### Analiza antes de mirar la evaluación
 
@@ -111,7 +111,7 @@ Al terminar una partida, revísala tú solo primero y busca dónde cambió. Solo
 
 ## Importar partidas
 
-- Trae tus partidas de Chess.com o Lichess por usuario y periodo, o pega o sube un PGN. Van a Partidas guardadas, listas para revisar o entrenar.
+- Trae tus partidas de Chess.com o Lichess por usuario y período, o pega o sube un PGN. Van a Partidas guardadas, listas para revisar o entrenar.
 
 ## Analiza en otro sitio
 
