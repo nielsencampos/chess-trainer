@@ -13,11 +13,41 @@ components below. Each keeps its own license and copyright.
 | Familjen Grotesk | `web/fonts/` | Fontsource 5.3.0 | OFL-1.1 | The Familjen Grotesk Project Authors |
 | JetBrains Mono | `web/fonts/` | Fontsource 5.3.0 | OFL-1.1 | The JetBrains Mono Project Authors |
 
+### Desktop app
+
+The desktop packages (`desktop/`, built by PyInstaller) also ship Python, the app's Python
+dependencies from `pyproject.toml`, the Stockfish build for that system (with its `Copying.txt` and
+`AUTHORS` in `stockfish/`), and the components below. The versions are the ones in `uv.lock`.
+
+| Component | Where | Version / source | License | Copyright |
+|---|---|---|---|---|
+| Python | All packages | CPython 3.13, <https://www.python.org/> | PSF-2.0 | Python Software Foundation |
+| pywebview | All packages: the native window | 6.2.1, <https://github.com/r0x0r/pywebview> | BSD-3-Clause | Roman Sirokov |
+| WebView2 SDK DLLs | Windows package, shipped inside pywebview | <https://www.nuget.org/packages/Microsoft.Web.WebView2> | BSD-3-Clause | Microsoft Corporation |
+| bottle, proxy_tools | All packages, used by pywebview | 0.13.4 and 0.1.0 | MIT | Marcel Hellkamp (bottle); Jonathan Tushman (proxy_tools) |
+| platformdirs | All packages: finds the user's data folder | 4.14.5, <https://github.com/tox-dev/platformdirs> | MIT | The platformdirs developers |
+| PyInstaller bootloader | All packages: the executable that starts the app | 6.22.3, <https://pyinstaller.org/> | GPL-2.0-or-later with the PyInstaller bootloader exception | The PyInstaller Development Team |
+| Qt 6 (Qt Base, Qt WebEngine and the modules they need) | Linux package | PyQt6-Qt6 6.12.0 and PyQt6-WebEngine-Qt6 6.140.0 wheels, <https://www.qt.io/> | LGPL-3.0 (Qt WebEngine embeds Chromium, under BSD-3-Clause and the licenses listed in its `about:credits`) | The Qt Company Ltd. and other contributors |
+| PyQt6, PyQt6-WebEngine, PyQt6-sip | Linux package: Python bindings for Qt | 6.12.0, 6.140.0 and 13.13.0, <https://riverbankcomputing.com/software/pyqt/> | GPL-3.0-only (PyQt6-sip: BSD-2-Clause) | Riverbank Computing Limited |
+| QtPy | Linux package, used by pywebview | 2.4.3, <https://github.com/spyder-ide/qtpy> | MIT | QtPy contributors |
+| pythonnet, clr-loader | Windows package: pywebview's bridge to WebView2 | 3.2.1 and 0.3.1, <https://github.com/pythonnet/pythonnet> | MIT | The Contributors of the Python.NET Project |
+| PyObjC | macOS package: pywebview's bridge to WKWebView | 13.0, <https://github.com/ronaldoussoren/pyobjc> | MIT | Ronald Oussoren and contributors |
+
+The window's browser engine is the system's on Windows (Microsoft Edge WebView2) and macOS
+(WKWebView): they are part of the operating system and not shipped. On Linux it is Qt WebEngine,
+shipped in the package. PyQt6 is GPL-3.0, the same license as chess-trainer, so the Linux package
+as a whole is distributed under GPL-3.0; its source is this repository.
+
 License texts: [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt),
 [GPL-3.0](LICENSE), [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0),
 [OFL-1.1](https://openfontlicense.org/open-font-license-official-text/),
 [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode),
-[MIT](https://opensource.org/license/mit).
+[MIT](https://opensource.org/license/mit),
+[BSD-3-Clause](https://opensource.org/license/bsd-3-clause),
+[BSD-2-Clause](https://opensource.org/license/bsd-2-clause),
+[LGPL-3.0](https://www.gnu.org/licenses/lgpl-3.0.txt),
+[PSF-2.0](https://docs.python.org/3/license.html),
+[PyInstaller's license and bootloader exception](https://github.com/pyinstaller/pyinstaller/blob/develop/COPYING.txt).
 
 Lichess's Maestro and Alpha piece sets are deliberately not included: their terms forbid
 commercial use, which GPL-3.0 does not allow a project to restrict.
