@@ -314,6 +314,29 @@ class GameStore:
         return dict(zip([column[0] for column in cursor.description], row, strict=True))
 
 
+def removed_line(variant_id: str) -> Variant:
+    """A line that is no longer in the book, kept by its id: no theory, the engine plays on.
+
+    Args:
+        variant_id (str): The line's id, as the game saved it.
+
+    Returns:
+        Variant: A line with no moves from the standard starting position.
+    """
+    return Variant(
+        variant_id=variant_id,
+        repertoire_id="",
+        names={"en": variant_id},
+        eco=None,
+        opening=None,
+        source="no longer in the book",
+        pgn="",
+        moves={},
+        positions=frozenset(),
+        final_epd=chess.Board().epd(),
+    )
+
+
 def restore_session(
     row: Mapping,
     book: Book,
@@ -331,7 +354,7 @@ def restore_session(
         store (GameStore): The store, for lines made from saved games.
 
     Returns:
-        GameSession | None: The session, or None if none of its lines exist anymore.
+        GameSession | None: The session, or None if it has no line at all.
     """
     known = dict(book.variants)
     chess960_position = None
@@ -344,6 +367,10 @@ def restore_session(
             if line is not None:
                 known[key] = line
     variants = [known[key] for key in row["variant_ids"] if key in known]
+    if not variants and row["variant_ids"]:
+        # Its lines left the book (or its saved game was deleted): the game goes on, without
+        # theory, as the brief wants an unfinished game always continued.
+        variants = [removed_line(row["variant_ids"][0])]
     if not variants:
         return None
     session = GameSession(

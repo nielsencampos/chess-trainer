@@ -337,7 +337,7 @@ class GameService:
         """The unfinished game, from memory or rebuilt from the database.
 
         Returns:
-            GameSession | None: The game, or None if there is none or its lines no longer exist.
+            GameSession | None: The game, or None if there is none.
         """
         row = self.store.active_row()
         if row is None:

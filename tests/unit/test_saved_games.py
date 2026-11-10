@@ -8,6 +8,7 @@ import re
 from datetime import UTC, datetime
 
 import chess.pgn
+import duckdb
 import pytest
 from fastapi.testclient import TestClient
 
@@ -507,6 +508,26 @@ def test_game_from_a_saved_game_survives_a_restart(database_path):
         assert game["setup"]["variant_ids"] == [f"game:{game_id}:4"]
         body = client.post(f"/api/games/{active}/moves", json={"uci": "d2d4"}).json()
         assert body["bot_move"]["san"] == "d5"
+
+
+def test_a_game_whose_line_is_gone_goes_on_after_a_restart(database_path):
+    """A game whose line no longer exists is continued, without theory, not left stuck.
+
+    Args:
+        database_path (Path): This test's copy of the database.
+    """
+    with app_on(database_path) as client:
+        game_id = imported_id(client)
+        active = new_from(client, game_id, upto_ply=4).json()["state"]["game_id"]
+        client.post(f"/api/games/{active}/moves", json={"uci": "e2e4"})
+    with duckdb.connect(str(database_path)) as connection:
+        connection.execute("DELETE FROM games WHERE game_id = ?", [game_id])
+    with app_on(database_path) as client:
+        game = client.get("/api/games/active").json()["game"]
+        assert game["state"]["game_id"] == active
+        assert game["setup"]["variant_ids"] == [f"game:{game_id}:4"]
+        body = client.post(f"/api/games/{active}/moves", json={"uci": "d2d4"}).json()
+        assert body["bot_move"]["source"] == "engine"
 
 
 @pytest.mark.parametrize(
