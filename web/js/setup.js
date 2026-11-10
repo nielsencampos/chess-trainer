@@ -338,7 +338,7 @@ export class SetupCard {
     const game = this.savedGames.find((item) => item.game_id === this.savedGameId);
     select.disabled = !game;
     if (!game) return;
-    select.add(new Option(t("fromSaved.end", { plies: game.plies }), String(game.plies)));
+    select.add(new Option(t("fromSaved.end", { count: game.plies }), String(game.plies)));
     game.sans.forEach((/** @type {string} */ san, /** @type {number} */ index) => {
       const number = Math.floor(index / 2) + 1;
       const dots = index % 2 === 0 ? "." : "...";
