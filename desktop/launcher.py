@@ -1,6 +1,6 @@
 """Desktop launcher: runs the app's server on loopback and shows it in a native window.
 
-Proof of concept (Linux first). Run from source with `uv run --group desktop python -m
+Built for Linux, Windows and macOS. Run from source with `uv run --group desktop python -m
 desktop.launcher`, or build it with `uv run --group desktop pyinstaller desktop/chess-trainer.spec`.
 The data lives in the user's data folder, never next to the executable.
 """

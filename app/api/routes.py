@@ -464,7 +464,7 @@ async def review_game(game_id: str, request: Request) -> dict:
         "result": game["result"],
         "eco": game["eco"],
         "opening": game["opening"],
-        "chess960": "chess960" in game["pgn"].lower(),
+        "chess960": game["chess960"],
         "source": game["source"],
         "user_color": game["user_color"],
         "level": game["level"],

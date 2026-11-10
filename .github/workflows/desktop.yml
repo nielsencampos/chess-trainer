@@ -47,6 +47,19 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v10.3.3
+      - name: The tag matches the app's version
+        if: env.VERSION != 'dev'
+        # v1.0.0 and v1.0.0-rc1 both need __version__ and pyproject.toml at 1.0.0, or the package
+        # would be named after the tag while the app, its games and PGN say another version.
+        run: |
+          app=$(sed -n 's/^__version__ = "\(.*\)"$/\1/p' app/__init__.py)
+          project=$(sed -n 's/^version = "\(.*\)"$/\1/p' pyproject.toml)
+          tag=${VERSION#v}
+          tag=${tag%%-*}
+          if [[ "$app" != "$tag" || "$project" != "$tag" ]]; then
+            echo "Tag $VERSION, app/__init__.py $app, pyproject.toml $project: they must match" >&2
+            exit 1
+          fi
       - name: Stockfish for this system
         run: uv run --no-project python docker/fetch_stockfish.py desktop
       - name: Build

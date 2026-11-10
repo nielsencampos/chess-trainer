@@ -31,6 +31,11 @@ GAME_LINE_PREFIX = "game:"
 GAME_COLUMNS = 29
 
 
+# A Chess960 game's PGN has this tag; the same names python-chess's `is_chess960()` accepts. Read
+# in SQL (RE2), so the Saved games list need not load every PGN.
+CHESS960_TAG = r'(?im)^\[Variant\s+"(?:chess ?960|fischer ?random|fischerandom)"\]'
+
+
 class GameStore:
     """Reads and writes the `games` table, one cursor per call."""
 
@@ -176,9 +181,11 @@ class GameStore:
         cursor = self._connection.cursor()
         cursor.execute(
             "SELECT game_id, started_at, user_color, time_control, level, result, termination, "
-            "eco, opening, source, white, black, moves_json, pgn FROM games "
+            "eco, opening, source, white, black, moves_json, "
+            "regexp_matches(pgn, ?) AS chess960 FROM games "
             "WHERE status = 'finished' "
-            "ORDER BY started_at DESC, game_id DESC"
+            "ORDER BY started_at DESC, game_id DESC",
+            [CHESS960_TAG],
         )
         columns = [column[0] for column in cursor.description]
         games = [dict(zip(columns, row, strict=True)) for row in cursor.fetchall()]
@@ -186,7 +193,6 @@ class GameStore:
             moves = json.loads(game.pop("moves_json"))
             game["plies"] = len(moves)
             game["sans"] = [move["san"] for move in moves]
-            game["chess960"] = "chess960" in game.pop("pgn").lower()
             game["started_at"] = f"{game['started_at'].isoformat()}Z"
         return games
 
@@ -240,16 +246,17 @@ class GameStore:
             game_id (str): The game's id.
 
         Returns:
-            dict | None: Its PGN, players, result, opening, source, user color, level, moves
-                and deviations, or None.
+            dict | None: Its PGN, players, result, opening, source, user color, level, moves,
+                deviations and whether it is Chess960, or None.
         """
         cursor = self._connection.cursor()
         cursor.execute(
             "SELECT pgn, white, black, result, eco, opening, source, user_color, level, "
-            "moves_json, deviations_json, bot_deviation_json "
+            "moves_json, deviations_json, bot_deviation_json, "
+            "regexp_matches(pgn, ?) AS chess960 "
             "FROM games "
             "WHERE game_id = ? AND status = 'finished'",
-            [game_id],
+            [CHESS960_TAG, game_id],
         )
         row = cursor.fetchone()
         if row is None:
@@ -307,6 +314,29 @@ class GameStore:
         return dict(zip([column[0] for column in cursor.description], row, strict=True))
 
 
+def removed_line(variant_id: str) -> Variant:
+    """A line that is no longer in the book, kept by its id: no theory, the engine plays on.
+
+    Args:
+        variant_id (str): The line's id, as the game saved it.
+
+    Returns:
+        Variant: A line with no moves from the standard starting position.
+    """
+    return Variant(
+        variant_id=variant_id,
+        repertoire_id="",
+        names={"en": variant_id},
+        eco=None,
+        opening=None,
+        source="no longer in the book",
+        pgn="",
+        moves={},
+        positions=frozenset(),
+        final_epd=chess.Board().epd(),
+    )
+
+
 def restore_session(
     row: Mapping,
     book: Book,
@@ -324,7 +354,7 @@ def restore_session(
         store (GameStore): The store, for lines made from saved games.
 
     Returns:
-        GameSession | None: The session, or None if none of its lines exist anymore.
+        GameSession | None: The session, or None if it has no line at all.
     """
     known = dict(book.variants)
     chess960_position = None
@@ -337,6 +367,10 @@ def restore_session(
             if line is not None:
                 known[key] = line
     variants = [known[key] for key in row["variant_ids"] if key in known]
+    if not variants and row["variant_ids"]:
+        # Its lines left the book (or its saved game was deleted): the game goes on, without
+        # theory, as the brief wants an unfinished game always continued.
+        variants = [removed_line(row["variant_ids"][0])]
     if not variants:
         return None
     session = GameSession(

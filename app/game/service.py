@@ -1,5 +1,6 @@
 """Coordinates sessions with the book, the engine and the store."""
 
+import json
 import random
 import secrets
 import string
@@ -275,15 +276,15 @@ class GameService:
             InvalidSetupError: The game is unknown, unfinished or Chess960, or the ply is out of
                 range.
         """
-        rows = self.store.finished_games()
-        game = next((item for item in rows if item["game_id"] == from_game.game_id), None)
+        game = self.store.finished_game(from_game.game_id)
         if game is None:
             raise InvalidSetupError("not a finished game")
         if game["chess960"]:
             raise InvalidSetupError("playing from a Chess960 game is not supported yet")
-        plies = from_game.upto_ply or game["plies"]
-        if not 1 <= plies <= game["plies"]:
-            raise InvalidSetupError(f"the game has {game['plies']} plies, not {plies}")
+        total = len(json.loads(game["moves_json"]))
+        plies = from_game.upto_ply or total
+        if not 1 <= plies <= total:
+            raise InvalidSetupError(f"the game has {total} plies, not {plies}")
         line = self.store.game_line(f"{GAME_LINE_PREFIX}{from_game.game_id}:{plies}")
         if line is None:
             raise InvalidSetupError("this game cannot be played from")
@@ -336,7 +337,7 @@ class GameService:
         """The unfinished game, from memory or rebuilt from the database.
 
         Returns:
-            GameSession | None: The game, or None if there is none or its lines no longer exist.
+            GameSession | None: The game, or None if there is none.
         """
         row = self.store.active_row()
         if row is None:

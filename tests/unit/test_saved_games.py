@@ -8,6 +8,7 @@ import re
 from datetime import UTC, datetime
 
 import chess.pgn
+import duckdb
 import pytest
 from fastapi.testclient import TestClient
 
@@ -50,7 +51,10 @@ def app_on(path, engine=None):
         TestClient: The client; start it with `with`.
     """
     settings = dataclasses.replace(Settings(), database_path=path, book_evals_file=NO_BOOK_EVALS)
-    return TestClient(create_app(settings, engine=engine or FakeEngine(), rng=random.Random(3)))
+    return TestClient(
+        create_app(settings, engine=engine or FakeEngine(), rng=random.Random(3)),
+        base_url="http://127.0.0.1",
+    )
 
 
 def alapin_id(client):
@@ -506,6 +510,26 @@ def test_game_from_a_saved_game_survives_a_restart(database_path):
         assert body["bot_move"]["san"] == "d5"
 
 
+def test_a_game_whose_line_is_gone_goes_on_after_a_restart(database_path):
+    """A game whose line no longer exists is continued, without theory, not left stuck.
+
+    Args:
+        database_path (Path): This test's copy of the database.
+    """
+    with app_on(database_path) as client:
+        game_id = imported_id(client)
+        active = new_from(client, game_id, upto_ply=4).json()["state"]["game_id"]
+        client.post(f"/api/games/{active}/moves", json={"uci": "e2e4"})
+    with duckdb.connect(str(database_path)) as connection:
+        connection.execute("DELETE FROM games WHERE game_id = ?", [game_id])
+    with app_on(database_path) as client:
+        game = client.get("/api/games/active").json()["game"]
+        assert game["state"]["game_id"] == active
+        assert game["setup"]["variant_ids"] == [f"game:{game_id}:4"]
+        body = client.post(f"/api/games/{active}/moves", json={"uci": "d2d4"}).json()
+        assert body["bot_move"]["source"] == "engine"
+
+
 @pytest.mark.parametrize(
     "options",
     [{"upto_ply": 99}, {"game_id": "nope"}],
@@ -532,6 +556,19 @@ def test_chess960_games_cannot_be_played_from_yet(client):
     game = client.get("/api/games").json()["games"][0]
     assert game["chess960"] is True
     assert new_from(client, game["game_id"]).status_code == 422
+
+
+def test_a_standard_game_that_mentions_chess960_is_not_chess960(client):
+    """Only the Variant tag makes a game Chess960, not the word in an event or a comment.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
+    text = GOOD.replace('[White "Ana"]', '[Event "Chess960 club night"]\n[White "Ana"]')
+    game_id = imported_id(client, text.replace("1. e4", "1. e4 { as in chess960 }"))
+    assert client.get("/api/games").json()["games"][0]["chess960"] is False
+    assert client.get(f"/api/games/{game_id}/review").json()["chess960"] is False
+    assert new_from(client, game_id).status_code == 201
 
 
 def test_active_game_cannot_be_played_from(client):
