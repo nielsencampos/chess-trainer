@@ -113,7 +113,7 @@ chess-trainer/
 │   └── pieces/            # Merida SVG pieces (license in THIRD_PARTY_LICENSES.md)
 ├── docs/                  # this brief, HELP*.md (generated) and other docs
 ├── tests/                 # pytest + Playwright
-├── .claude/               # project skills, none yet (§10)
+├── .claude/               # project skills: ponytail, ponytail-audit, ponytail-review (§10)
 ├── CLAUDE.md
 ├── Dockerfile
 ├── docker-compose.yml
@@ -268,7 +268,12 @@ Rules:
 ## 10. Claude Code: CLAUDE.md and project skills
 
 - `CLAUDE.md` — overview, how to run, how to test, conventions (code and identifiers in English; user-facing text through i18n), never change a line id (`VariantId`), link to this brief.
-- Skills in `.claude/skills/`, none yet:
+- Skills in `.claude/skills/`, from `DietrichGebert/ponytail` at `96608e0` (MIT, in `THIRD_PARTY_LICENSES.md`), copied as they are; to update, copy the newer files and change the commit here:
+  - **ponytail** — the smallest change that fully solves the task; levels `lite`, `full`, `ultra`.
+  - **ponytail-review** — reviews a change (a diff, a branch, a PR): correct, safe, tested, lean.
+  - **ponytail-audit** — audits the whole repository and ranks what to fix. It changes nothing.
+- **Review before 1.0.0** (decided 2026-11-10): the release of 1.0.0 is preceded by a complete review of the project, which starts by running `/ponytail-audit` on the whole repository, reading every part (the first audit, on 2026-11-10, read only the backend's riskiest paths), and `/ponytail-review` on each PR that fixes its findings. Already known from the first audit: the server accepts any `Host` header, so a site that points its domain at 127.0.0.1 (DNS rebinding) could read and delete saved games; allow only `localhost` and `127.0.0.1`, with a setting for those who expose the app on their network. The review also covers the desktop app on the three systems.
+- Skills planned, none written yet:
   - **add-opening** — takes a PGN or Lichess study, writes it in the format of §6, validates, runs tests and opens a PR.
   - **review-catalog** — checks a new catalog commit against `openings/`: what changed and what to accept.
   - **release** — bumps version, changelog, tag and Docker image.
@@ -298,10 +303,11 @@ Rules:
 
 1. **Foundation** (done): repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), the book in `openings/*.json` loaded into DuckDB, validation tests, the real Stockfish with provisional levels. *Done when: every item in §4 works in the browser at HD (1280x720) and larger.*
 2. **Data** (done): opening name on screen, recording of games, moves and deviations. UI preferences stay per browser.
-3. **Engine on the server:** native Stockfish (done) with calibrated levels (not yet: the levels in `app/engine/levels.toml` are provisional).
+3. **Engine on the server** (done): native Stockfish. The levels in `app/engine/levels.toml` stay uncalibrated (see 1.0.0 below).
 4. **Languages** (done): en, pt-BR and es, language picker.
 5. **Desktop app** (proof of concept on Linux done; CI builds for Linux, Windows and macOS, the draft Release on a tag and `HOW_TO_INSTALL*.md` in the three languages written): signing later.
-6. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
+6. **1.0.0** (scope decided 2026-11-10): recorded sounds, provided by the author, in place of the generated ones; then the complete review of §10. Not planned, and kept as they are: starting a new game from a saved Chess960 game, measuring the bot levels, and a chess player's review of the pt-BR and es opening names.
+7. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
 
 ## 13. Working rules
 
