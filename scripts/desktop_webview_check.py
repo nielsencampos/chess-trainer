@@ -5,9 +5,10 @@ Usage: uv run --group desktop python scripts/desktop_webview_check.py [OUT_DIR]
 Runs the app from source, as desktop/launcher.py does, on a temporary database, and drives the real
 page: it exports the lines of one opening as PGN and presses the Scoresheet's print button. Only
 the two modal dialogs are replaced, since CI cannot click them: the save panel by a fixed path
-(OUT_DIR/lines.pgn) and the print panel by a print to PDF (OUT_DIR/scoresheet.pdf). Everything else
-is pywebview's own path: the `<a download>` click becomes a WKDownload, and `window.print()` goes
-through pywebview's script message to a print operation of the web view. macOS only.
+(OUT_DIR/lines.pgn) and the print panel by a print to PDF on A4 (OUT_DIR/scoresheet.pdf), with the
+app's own page setup (desktop/cocoa_window.py). Everything else is the real path: the
+`<a download>` click becomes a WKDownload, and `window.print()` goes through pywebview's script
+message to a print operation of the web view. macOS only.
 """
 
 import json
@@ -83,7 +84,7 @@ def main(out_dir: Path) -> int:
     from webview.platforms.cocoa import BrowserView
 
     sys.path.insert(0, str(ROOT))
-    from desktop import launcher
+    from desktop import cocoa_window, launcher
 
     out_dir.mkdir(parents=True, exist_ok=True)
     pgn, pdf = out_dir / "lines.pgn", out_dir / "scoresheet.pdf"
@@ -106,42 +107,29 @@ def main(out_dir: Path) -> int:
             result["download_error"] = str(error)
 
     def print_to_pdf(web_view: object) -> None:
-        """Prints like pywebview, but to a PDF instead of through the print panel.
+        """The app's print (desktop/cocoa_window.py), to a PDF instead of through the panel.
 
         Args:
             web_view (object): The WKWebView.
         """
         result["print_called"] = True
-        info = AppKit.NSPrintInfo.sharedPrintInfo().copy()
-        # A4, as the Scoresheet's hint asks; the runner's default paper is US Letter, which
-        # is shorter, and WebKit's print operation follows the paper, not CSS `@page size`.
+        info = cocoa_window.print_info()
+        # A4, as the Scoresheet's hint asks; the runner's default paper is US Letter.
         info.setPaperSize_(Foundation.NSMakeSize(595.28, 841.89))
-        # The page setup of pywebview's print_webview: fit the width, and margins at the
-        # printable area, not AppKit's default inch.
-        info.setHorizontalPagination_(AppKit.NSFitPagination)
-        info.setHorizontallyCentered_(False)
-        info.setVerticallyCentered_(False)
-        bounds, paper = info.imageablePageBounds(), info.paperSize()
-        if Foundation.NSWidth(bounds) > paper.width:
-            bounds.origin.x, bounds.size.width = 0, paper.width
-        if Foundation.NSHeight(bounds) > paper.height:
-            bounds.origin.y, bounds.size.height = 0, paper.height
-        info.setBottomMargin_(Foundation.NSMinY(bounds))
-        info.setTopMargin_(paper.height - Foundation.NSMinY(bounds) - Foundation.NSHeight(bounds))
-        info.setLeftMargin_(Foundation.NSMinX(bounds))
-        info.setRightMargin_(paper.width - Foundation.NSMinX(bounds) - Foundation.NSWidth(bounds))
-        result["margins_pt"] = [
-            round(m)
-            for m in (info.topMargin(), info.rightMargin(), info.bottomMargin(), info.leftMargin())
-        ]
         info.setJobDisposition_(AppKit.NSPrintSaveJob)
         info.dictionary()[AppKit.NSPrintJobSavingURL] = Foundation.NSURL.fileURLWithPath_(str(pdf))
-        operation = web_view.printOperationWithPrintInfo_(info)
+        result["margins_pt"] = [
+            round(margin, 1)
+            for margin in (
+                info.topMargin(),
+                info.rightMargin(),
+                info.bottomMargin(),
+                info.leftMargin(),
+            )
+        ]
+        operation = cocoa_window.print_operation(web_view, info)
         operation.setShowsPrintPanel_(False)
         operation.setShowsProgressPanel_(False)
-        # A WKWebView print operation lays out nothing in a view without a frame.
-        size = info.paperSize()
-        operation.view().setFrame_(Foundation.NSMakeRect(0, 0, size.width, size.height))
         operation.runOperationModalForWindow_delegate_didRunSelector_contextInfo_(
             web_view.window(), None, None, None
         )

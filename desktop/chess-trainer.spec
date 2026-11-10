@@ -38,7 +38,10 @@ a = Analysis(
     binaries=[(str(STOCKFISH), "stockfish")],
     datas=datas,
     # uvicorn picks its loop and protocol modules by name at run time.
-    hiddenimports=["desktop.qt_window", *collect_submodules("uvicorn")],
+    hiddenimports=[
+        {"linux": "desktop.qt_window", "darwin": "desktop.cocoa_window"}.get(sys.platform, "json"),
+        *collect_submodules("uvicorn"),
+    ],
     excludes=["tkinter", "pytest", "playwright", "PIL"],
 )
 

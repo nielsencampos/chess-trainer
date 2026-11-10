@@ -120,6 +120,10 @@ def main() -> None:
     window = webview.create_window(
         "Chess Trainer", f"http://{HOST}:{port}/", width=1280, height=800, min_size=(1280, 720)
     )
+    if sys.platform == "darwin":
+        from desktop.cocoa_window import install
+
+        install()  # print with the Scoresheet's own margins (desktop/cocoa_window.py)
     hooks = None
     if linux:
         from desktop.qt_window import connect_hooks
@@ -132,7 +136,9 @@ def main() -> None:
         gui="qt" if linux else None,
         private_mode=False,  # keep localStorage (UI preferences) between launches
         storage_path=str(data_dir / "webview"),
-        icon=str(BUNDLE / "desktop" / "icon.png"),
+        # Linux only: Windows takes the icon from the .exe, and its form throws on a PNG icon
+        # (System.Drawing.Icon reads .ico only); macOS takes it from the .app.
+        icon=str(BUNDLE / "desktop" / "icon.png") if linux else None,
     )
     if server is not None:
         server.should_exit = True  # the lifespan stops Stockfish and closes the database

@@ -378,7 +378,8 @@
 
   .sheet {
     width: auto;
-    height: 277mm;
+    /* A4 is 277 mm high inside 10 mm margins; 1 mm less leaves room for rounding. */
+    height: 276mm;
     padding: 0;
     box-shadow: none;
     transform: none;

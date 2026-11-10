@@ -54,7 +54,10 @@ Nothing is signed with a paid certificate, so SmartScreen and Gatekeeper warn on
 - `CHESS_TRAINER_PORT`, `CHESS_TRAINER_DB` and `STOCKFISH_PATH` override the defaults.
 - On Linux, `qt_window.py` saves downloads and prints, which pywebview's Qt backend does not do
   with Qt 6. On Windows (WebView2) and macOS (WKWebView) pywebview handles both: a download asks
-  where to save, and `window.print()` opens the system print dialog. WebKit reads a blob download
+  where to save, and `window.print()` opens the system print dialog. On macOS `cocoa_window.py`
+  replaces pywebview's page setup: WKWebView ignores CSS `@page` margins, and the printer's
+  printable area left the A4 Scoresheet too little room, so it prints with the sheet's 10 mm.
+- On Windows the window gets no `icon`: the `.exe` has it, and pywebview's form throws on a PNG. WebKit reads a blob download
   after the click, so `web/js/download.js` revokes the blob's URL a minute later, not at once.
 - On Windows, Stockfish starts with `CREATE_NO_WINDOW` (`app/engine/process.py`), or the windowed
   app would open a console for it.

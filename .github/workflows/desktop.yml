@@ -79,6 +79,13 @@ jobs:
           path: build/webview-check/
           retention-days: 14
           if-no-files-found: ignore
+      - name: Windows crash report
+        if: runner.os == 'Windows' && failure()
+        shell: pwsh
+        run: |
+          Get-WinEvent -LogName Application -MaxEvents 30 |
+            Where-Object { $_.ProviderName -in '.NET Runtime', 'Application Error' } |
+            Format-List TimeCreated, ProviderName, Message
       - name: Ad hoc signing and smoke check (macOS)
         if: runner.os == 'macOS'
         run: |
