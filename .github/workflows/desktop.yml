@@ -1,0 +1,139 @@
+name: Desktop
+
+# Builds the desktop app on Linux, Windows and macOS (Apple Silicon and Intel) and checks that
+# each build starts. On a version tag (v1.2.3, or v1.2.3-rc1 for a prerelease) it uploads the
+# packages to a draft GitHub Release, which is published by hand.
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+    paths:
+      - desktop/**
+      - docker/fetch_stockfish.py
+      - scripts/desktop_*.py
+      - app/engine/**
+      - pyproject.toml
+      - uv.lock
+      - .github/workflows/desktop.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # The oldest supported LTS, so the build runs on any glibc from 2.35 up.
+          - name: linux-x86_64
+            runner: ubuntu-22.04
+          - name: windows-x64
+            runner: windows-latest
+          - name: macos-arm64
+            runner: macos-latest
+          - name: macos-intel
+            runner: macos-15-intel
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.runner }}
+    defaults:
+      run:
+        shell: bash
+    env:
+      GITHUB_TOKEN: ${{ github.token }}  # for the GitHub API in fetch_stockfish.py
+      VERSION: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || 'dev' }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.3.3
+      - name: Stockfish for this system
+        run: uv run --no-project python docker/fetch_stockfish.py desktop
+      - name: Build
+        run: |
+          uv sync --frozen --group desktop
+          uv run --frozen --group desktop pyinstaller --noconfirm \
+            --distpath build/dist --workpath build/work desktop/chess-trainer.spec
+
+      - name: Linux libraries for the window (Qt WebEngine) and a virtual screen
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends xvfb libegl1 libgl1 libnss3 \
+            libasound2 libxkbcommon-x11-0 libxcb-cursor0 libxcb-icccm4 libxcb-image0 \
+            libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-shape0 libxcb-xinerama0 \
+            libxcb-xkb1 libxcomposite1 libxdamage1 libxrandr2 libxtst6
+      - name: Smoke check (Linux)
+        if: runner.os == 'Linux'
+        run: xvfb-run -a uv run --no-project python scripts/desktop_smoke.py build/dist/chess-trainer/chess-trainer
+      - name: Smoke check (Windows)
+        if: runner.os == 'Windows'
+        run: uv run --no-project python scripts/desktop_smoke.py build/dist/chess-trainer/chess-trainer.exe
+      - name: PGN download and Scoresheet print in WKWebView (macOS)
+        if: runner.os == 'macOS'
+        run: uv run --frozen --group desktop python scripts/desktop_webview_check.py build/webview-check
+      - uses: actions/upload-artifact@v7.0.2
+        if: runner.os == 'macOS' && always()
+        with:
+          name: webview-check-${{ matrix.name }}
+          path: build/webview-check/
+          retention-days: 14
+          if-no-files-found: ignore
+      - name: Ad hoc signing and smoke check (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          codesign --force --deep --sign - "build/dist/Chess Trainer.app"
+          codesign --verify --deep --strict "build/dist/Chess Trainer.app"
+          uv run --no-project python scripts/desktop_smoke.py "build/dist/Chess Trainer.app/Contents/MacOS/chess-trainer"
+
+      - name: Package
+        run: |
+          mkdir -p build/out
+          base="chess-trainer-$VERSION-${{ matrix.name }}"
+          case "$RUNNER_OS" in
+            Linux)
+              cp desktop/linux/install.sh build/dist/chess-trainer/
+              tar -C build/dist -czf "build/out/$base.tar.gz" chess-trainer
+              ;;
+            Windows)
+              (cd build/dist && uv run --no-project python -m zipfile -c "../out/$base.zip" chess-trainer)
+              ;;
+            macOS)
+              # ditto keeps the bundle's symlinks and signature, which a plain zip may not.
+              ditto -c -k --keepParent "build/dist/Chess Trainer.app" "build/out/$base.zip"
+              ;;
+          esac
+          ls -l build/out
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: ${{ matrix.name }}
+          path: build/out/*
+          retention-days: 14
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8.0.2
+        with:
+          path: build/out
+          merge-multiple: true
+      - name: Upload to the draft Release
+        run: |
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            prerelease=""
+            case "$TAG" in *-*) prerelease="--prerelease" ;; esac
+            url="https://github.com/$GITHUB_REPOSITORY/blob/$TAG"
+            notes="How to install: [English]($url/HOW_TO_INSTALL.md), [Português]($url/HOW_TO_INSTALL.pt-BR.md), [Español]($url/HOW_TO_INSTALL.es.md)."
+            gh release create "$TAG" --draft $prerelease --verify-tag \
+              --title "Chess Trainer $TAG" --notes "$notes"
+          fi
+          gh release upload "$TAG" build/out/* --clobber

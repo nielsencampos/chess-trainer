@@ -1,7 +1,8 @@
-# PyInstaller build of the desktop app (proof of concept, Linux first).
-#   scripts/extract-stockfish.sh    # Stockfish into .cache/ (see desktop/README.md)
+# PyInstaller build of the desktop app, for Linux, Windows and macOS.
+#   python3 docker/fetch_stockfish.py desktop   # this system's Stockfish into .cache/
 #   uv run --group desktop pyinstaller --noconfirm desktop/chess-trainer.spec
-# The result is a folder, dist/chess-trainer/, with the executable inside.
+# The result is a folder, dist/chess-trainer/, with the executable inside; on macOS also
+# dist/Chess Trainer.app.
 # One folder, not one file: a single file unpacks ~150 MB to a temp folder on every launch.
 import re
 import sys
@@ -10,9 +11,10 @@ from pathlib import Path
 from PyInstaller.utils.hooks import collect_submodules
 
 ROOT = Path(SPECPATH).parent
+VERSION = re.search(r'__version__ = "(.+)"', (ROOT / "app" / "__init__.py").read_text()).group(1)
 STOCKFISH = ROOT / ".cache" / ("stockfish.exe" if sys.platform == "win32" else "stockfish")
 if not STOCKFISH.exists():
-    sys.exit(f"missing {STOCKFISH}: copy the Stockfish binary there first")
+    sys.exit(f"missing {STOCKFISH}: run python3 docker/fetch_stockfish.py desktop first")
 
 # The app finds its files next to app/ (app/config.py), so they keep their repo paths.
 datas = [
@@ -24,7 +26,8 @@ datas = [
     (str(ROOT / "app" / "db" / "migrations"), "app/db/migrations"),
     (str(ROOT / "LICENSE"), "."),
     (str(ROOT / "THIRD_PARTY_LICENSES.md"), "."),
-    (str(ROOT / ".cache" / "VERSION"), "stockfish"),
+    # Stockfish's build tag and its license and authors, as fetch_stockfish.py leaves them.
+    *[(str(ROOT / ".cache" / name), "stockfish") for name in ("VERSION", "Copying.txt", "AUTHORS")],
     (str(ROOT / "desktop" / "icon.png"), "desktop"),
 ]
 
@@ -71,4 +74,6 @@ if sys.platform == "darwin":
         name="Chess Trainer.app",
         icon=str(ROOT / "desktop" / "icon-macos.png"),  # with the margin of macOS's icon grid
         bundle_identifier="io.github.nielsencampos.chess-trainer",
+        version=VERSION,
+        info_plist={"CFBundleDisplayName": "Chess Trainer", "NSHighResolutionCapable": True},
     )
