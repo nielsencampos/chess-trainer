@@ -158,7 +158,7 @@ a partir de qualquer lance (ainda não de uma partida Chess960); importação de
 jogador no Chess.com ou no Lichess; barra de avaliação do Stockfish na revisão e no fim da partida (uma checagem rápida: para uma
 análise completa, exporte o PGN para o Chess.com ou o Lichess); planilha de anotação A4 para imprimir,
 não oficial, só para treino; e uma Ajuda no menu. O Chess Trainer é para treinar: nunca o use, nem
-qualquer engine, durante uma partida contra outra pessoa.
+qualquer motor de xadrez, durante uma partida contra outra pessoa.
 
 **Estado atual:** o livro e as partidas ficam no DuckDB, e uma partida não terminada continua quando você reabre a página. Os
 níveis do bot são provisórios. A interface está em inglês, português e espanhol.

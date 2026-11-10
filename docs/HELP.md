@@ -12,7 +12,7 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 
 > **The evaluation here is basic**
 >
-> The evaluation bar and the move icons (best move, mistake, blunder…) come from a quick Stockfish check and are only a hint. For a real analysis, export the PGN and analyse it on Chess.com, Lichess or another analysis tool.
+> The evaluation bar and the move icons (best move, mistake, blunder…) come from a quick Stockfish check and are only a hint. For a real analysis, export the PGN and analyze it on Chess.com, Lichess or another analysis tool.
 
 ## Start a game
 
@@ -91,7 +91,7 @@ At the end, fill in the result and the signatures, compare your sheet with the m
 
 *Show moves unticked: the move list hides, so you write on the scoresheet.*
 
-### Analyse before you look at the evaluation
+### Analyze before you look at the evaluation
 
 When a game ends, review it on your own first and look for where it turned. Only then check it against the evaluation. The bar shows on the final position, so ignore it until you are done.
 
@@ -113,7 +113,7 @@ When a game ends, review it on your own first and look for where it turned. Only
 
 - Bring your games from Chess.com or Lichess by username and period, or paste or upload a PGN. They go to Saved games, ready to review or to train.
 
-## Analyse elsewhere
+## Analyze elsewhere
 
 - Get the PGN from the end-of-game card or from Saved games.
 - On Chess.com or Lichess, open the analysis board and paste or import the PGN, for a full analysis by a stronger setup.
