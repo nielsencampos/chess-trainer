@@ -46,6 +46,30 @@ def configure(data_dir: Path) -> None:
     os.environ.setdefault("STOCKFISH_VERSION_FILE", str(stockfish.parent / "VERSION"))
 
 
+def unblock_bundle() -> int:
+    """Removes the "downloaded from the internet" mark from the app's own files (Windows).
+
+    A browser marks a downloaded zip with a `Zone.Identifier` stream, and Explorer copies the
+    mark to every file it extracts. .NET Framework then refuses to load the marked
+    `Python.Runtime.dll`, and pywebview's window cannot start. This runs before pywebview
+    loads .NET. It does nothing outside a frozen Windows build, and skips files it cannot change.
+
+    Returns:
+        int: How many files had the mark.
+    """
+    if sys.platform != "win32" or not getattr(sys, "frozen", False):
+        return 0
+    unblocked = 0
+    for folder, _, files in os.walk(BUNDLE):
+        for name in files:
+            try:
+                os.remove(os.path.join(folder, name) + ":Zone.Identifier")
+                unblocked += 1
+            except OSError:
+                pass  # no mark, or a read-only install
+    return unblocked
+
+
 def running_here(port: int) -> bool:
     """Tells whether chess-trainer already answers on the port.
 
@@ -107,6 +131,8 @@ def main() -> None:
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
+    if unblocked := unblock_bundle():
+        logging.info("removed the downloaded-file mark from %d files", unblocked)
     port = int(os.environ.get("CHESS_TRAINER_PORT", DEFAULT_PORT))
     server = thread = None
     # shortcut: a second launch opens another window on the first one's server, and that
