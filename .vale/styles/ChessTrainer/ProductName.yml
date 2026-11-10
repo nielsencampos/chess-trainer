@@ -1,0 +1,12 @@
+# The product is "Chess Trainer" in prose. chess-trainer stays in code, paths, URLs and file names.
+extends: existence
+message: "Write the product name as 'Chess Trainer', not '%s'."
+level: error
+ignorecase: false
+nonword: true
+tokens:
+  - '(?<![\w/.@-])chess-trainer(?![\w/.@…-])'
+  - '\bChess[ -]trainer\b'
+  - '\bchess Trainer\b'
+  - '\bChessTrainer\b'
+  - '\bChess-Trainer\b'
