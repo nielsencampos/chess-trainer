@@ -20,7 +20,7 @@ const BARS = [
     handle: "resize-left",
     toggle: "toggle-left",
     min: 350,
-    max: 640,
+    max: 700,
     initial: 380,
   },
   {
@@ -30,7 +30,7 @@ const BARS = [
     handle: "resize-right",
     toggle: "toggle-right",
     min: 350,
-    max: 520,
+    max: 700,
     initial: 350,
   },
 ];
