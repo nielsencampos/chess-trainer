@@ -12,7 +12,7 @@ Abre la [página de Releases](https://github.com/nielsencampos/chess-trainer/rel
 
 | Tu computadora | Archivo |
 |---|---|
-| Windows 10 u 11 | `chess-trainer-…-windows-x64.zip` |
+| Windows 10 u 11 | `chess-trainer-…-windows-x64-setup.exe` |
 | Mac con chip Apple (M1, M2, M3…) | `chess-trainer-…-macos-arm64.zip` |
 | Mac con procesador Intel | `chess-trainer-…-macos-intel.zip` |
 | Linux (Ubuntu 22.04 o más nuevo, o similar) | `chess-trainer-…-linux-x86_64.tar.gz` |
@@ -26,20 +26,21 @@ La descarga pesa entre 100 y 300 MB, porque incluye el motor de ajedrez Stockfis
 
 ### Windows
 
-1. En la carpeta Descargas, haz clic derecho en el archivo zip → **Extraer todo…** → **Extraer**.
-   No abras el programa desde dentro del zip.
-2. Mueve la carpeta `chess-trainer` extraída a donde guardas tus programas, como la carpeta
-   Documentos.
-3. Abre la carpeta y haz doble clic en **chess-trainer.exe**.
-4. La primera vez, Windows puede mostrar **"Windows protegió su PC"** (SmartScreen). El aviso
-   aparece porque el programa es nuevo y no tiene un certificado pago, no porque tenga algún
-   problema. Haz clic en **Más información** y luego en **Ejecutar de todas formas**. Windows
-   recuerda tu elección.
-5. Para abrirlo más fácil la próxima vez: clic derecho en **chess-trainer.exe** → **Mostrar más
-   opciones** → **Enviar a** → **Escritorio (crear acceso directo)**.
+1. Haz doble clic en **chess-trainer-…-windows-x64-setup.exe** en la carpeta Descargas.
+2. Windows puede mostrar **"Windows protegió su PC"** (SmartScreen). El aviso aparece porque el
+   programa es nuevo y no tiene un certificado pago, no porque tenga algún problema. Haz clic en
+   **Más información** y luego en **Ejecutar de todas formas**.
+3. Sigue el instalador. No pide contraseña de administrador y añade **Chess Trainer** al menú Inicio
+   (y al escritorio, si marcas esa opción).
+4. Abre **Chess Trainer** desde el menú Inicio.
 
 Si la ventana queda en blanco, instala el **Microsoft Edge WebView2 Runtime**, gratuito, desde el
 sitio de Microsoft (Windows 11 y Windows 10 actualizado ya lo traen).
+
+**Sin instalar:** el archivo `chess-trainer-…-windows-x64.zip` tiene el mismo programa. Haz clic
+derecho en él → **Extraer todo…** y abre **chess-trainer.exe** en la carpeta extraída. Si aparece
+*Failed to execute script 'launcher'*, borra la carpeta extraída, haz clic derecho en el zip →
+**Propiedades** → marca **Desbloquear** → **Aceptar**, y extráelo otra vez.
 
 ### macOS
 
@@ -98,7 +99,8 @@ partidas.
 
 ### Haz una copia de seguridad
 
-1. Cierra Chess Trainer.
+1. Cierra Chess Trainer. Mientras está abierto, los cambios recientes siguen en un archivo aparte,
+   `chess-trainer.duckdb.wal`, y una copia solo de la base no los tendría.
 2. Copia toda la carpeta `chess-trainer` de la tabla a un pendrive, una carpeta en la nube u otro
    disco.
 
@@ -108,15 +110,15 @@ computadora. Una base de la versión Docker (`data/chess-trainer.duckdb`) se pue
 
 ## Actualiza
 
-Descarga la versión nueva e instálala igual, en lugar de la anterior (Windows: reemplaza la carpeta;
-macOS: reemplaza la app en Aplicaciones; Linux: ejecuta `./install.sh` desde la carpeta nueva). Tus
+Descarga la versión nueva e instálala igual, en lugar de la anterior (Windows: ejecuta el instalador
+nuevo; macOS: reemplaza la app en Aplicaciones; Linux: ejecuta `./install.sh` desde la carpeta nueva). Tus
 partidas siguen donde están.
 
 ## Desinstala
 
 1. Quita el programa:
-   - **Windows:** borra la carpeta `chess-trainer` y el acceso directo del escritorio, si creaste
-     uno.
+   - **Windows:** **Configuración** → **Aplicaciones** → **Aplicaciones instaladas** → **Chess
+     Trainer** → **Desinstalar**. Si usaste el zip, borra su carpeta.
    - **macOS:** arrastra **Chess Trainer** de Aplicaciones a la Papelera.
    - **Linux:** ejecuta `~/.local/opt/chess-trainer/install.sh --uninstall`.
 2. Solo si también quieres borrar tus partidas y líneas: borra la carpeta de datos de la tabla. No

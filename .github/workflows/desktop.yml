@@ -117,6 +117,38 @@ jobs:
               ;;
           esac
           ls -l build/out
+      - name: Zip as downloaded by a browser (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          # A browser marks a download (Zone.Identifier, ZoneId=3), and Explorer passes the mark
+          # to every extracted file; .NET then refused to load pythonnet (v0.1.0-rc1).
+          $zip = Get-ChildItem build/out/*.zip | Select-Object -First 1
+          Expand-Archive $zip.FullName build/downloaded
+          Get-ChildItem -Recurse -File build/downloaded | ForEach-Object {
+            Set-Content -LiteralPath $_.FullName -Stream Zone.Identifier -Value "[ZoneTransfer]`r`nZoneId=3"
+          }
+          uv run --no-project python scripts/desktop_smoke.py build/downloaded/chess-trainer/chess-trainer.exe
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Installer, installed and uninstalled (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $version = if ($env:VERSION -eq 'dev') { '0.0.0' } else { $env:VERSION.TrimStart('v') }
+          & "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe" /Q "/DAppVersion=$version" `
+            "/DSourceDir=$PWD\build\dist\chess-trainer" "/DOutputDir=$PWD\build\out" `
+            "/DOutputName=chess-trainer-$env:VERSION-${{ matrix.name }}-setup" desktop\windows\chess-trainer.iss
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          $setup = Get-ChildItem build/out/*-setup.exe
+          Start-Process $setup.FullName -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART' -Wait
+          $app = "$env:LOCALAPPDATA\Programs\Chess Trainer"
+          uv run --no-project python scripts/desktop_smoke.py "$app\chess-trainer.exe"
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          Start-Process "$app\unins000.exe" -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES' -Wait
+          Start-Sleep 5  # the uninstaller finishes in a copy of itself
+          if (Test-Path "$app\chess-trainer.exe") { throw "the uninstaller left the program" }
+          if (-not (Test-Path "$env:LOCALAPPDATA\chess-trainer\chess-trainer.duckdb")) { throw "the data is gone" }
+          Get-ChildItem build/out
       - uses: actions/upload-artifact@v7.0.2
         with:
           name: ${{ matrix.name }}

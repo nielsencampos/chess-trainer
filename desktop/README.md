@@ -39,7 +39,14 @@ to a draft GitHub Release, published by hand:
 
 - `chess-trainer-<tag>-linux-x86_64.tar.gz`: the folder plus `install.sh`, which copies it to
   `~/.local/opt/chess-trainer` and writes the `.desktop` entry (`--uninstall` removes both).
-- `chess-trainer-<tag>-windows-x64.zip`: the folder with `chess-trainer.exe`.
+- `chess-trainer-<tag>-windows-x64-setup.exe`: a per-user installer (Inno Setup,
+  `windows/chess-trainer.iss`) into `%LOCALAPPDATA%\Programs\Chess Trainer`, with a Start menu
+  entry and an uninstaller that leaves the data alone. CI installs it, runs the smoke check on
+  the installed app, and uninstalls it.
+- `chess-trainer-<tag>-windows-x64.zip`: the folder with `chess-trainer.exe`. A browser marks a
+  download, and Explorer passes the mark to each extracted file, so .NET refused to load
+  pythonnet (v0.1.0-rc1). `launcher.py` removes the mark from its own files before pywebview
+  starts, and CI runs the smoke check on a marked copy.
 - `chess-trainer-<tag>-macos-arm64.zip` and `-macos-intel.zip`: `Chess Trainer.app`, signed ad hoc
   (not notarized). Stockfish's macOS build is universal; Python and the bundle are per architecture.
 

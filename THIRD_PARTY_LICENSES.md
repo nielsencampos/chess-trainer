@@ -31,6 +31,7 @@ dependencies from `pyproject.toml`, the Stockfish build for that system (with it
 | Qt 6 (Qt Base, Qt WebEngine and the modules they need) | Linux package | PyQt6-Qt6 6.12.0 and PyQt6-WebEngine-Qt6 6.140.0 wheels, <https://www.qt.io/> | LGPL-3.0 (Qt WebEngine embeds Chromium, under BSD-3-Clause and the licenses listed in its `about:credits`) | The Qt Company Ltd. and other contributors |
 | PyQt6, PyQt6-WebEngine, PyQt6-sip | Linux package: Python bindings for Qt | 6.12.0, 6.140.0 and 13.13.0, <https://riverbankcomputing.com/software/pyqt/> | GPL-3.0-only (PyQt6-sip: BSD-2-Clause) | Riverbank Computing Limited |
 | QtPy | Linux package, used by pywebview | 2.4.3, <https://github.com/spyder-ide/qtpy> | MIT | QtPy contributors |
+| Inno Setup | Windows installer (`…-setup.exe`): the setup and uninstall program around the app | 6.7, <https://jrsoftware.org/isinfo.php> | Inno Setup License (permissive, <https://jrsoftware.org/files/is/license.txt>) | Jordan Russell and Martijn Laan |
 | pythonnet, clr-loader | Windows package: pywebview's bridge to WebView2 | 3.2.1 and 0.3.1, <https://github.com/pythonnet/pythonnet> | MIT | The Contributors of the Python.NET Project |
 | PyObjC | macOS package: pywebview's bridge to WKWebView | 13.0, <https://github.com/ronaldoussoren/pyobjc> | MIT | Ronald Oussoren and contributors |
 
