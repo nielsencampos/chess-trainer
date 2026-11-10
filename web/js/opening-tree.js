@@ -18,8 +18,10 @@ const MAX_SEARCH_RESULTS_PER_FAMILY = 200;
  */
 
 /**
- * @param {VariantInfo} variant
- * @param {string} query  Lowercase.
+ * Whether a line matches a search, by name, catalog name, ECO or moves.
+ * @param {VariantInfo} variant  The line.
+ * @param {string} query  The search, lowercase.
+ * @returns {boolean} True if it matches.
  */
 function matches(variant, query) {
   return [localizedName(variant.names), variant.opening, variant.eco, variant.pgn].some((text) =>
@@ -27,12 +29,14 @@ function matches(variant, query) {
   );
 }
 
+/** The book's tree with a search and checkboxes, shared by New Game and Openings. */
 export class OpeningTree {
   /**
+   * Builds the tree and wires the search, Select all and Clear.
    * @param {RepertoireInfo[]} repertoires  Already in the book's order.
-   * @param {TreeElements} els
-   * @param {string[]} selected
-   * @param {(selected: Set<string>) => void} onChange
+   * @param {TreeElements} els  The search field, the tree's container and its controls.
+   * @param {string[]} selected  The line ids ticked at the start.
+   * @param {(selected: Set<string>) => void} onChange  Called after every change of the ticks.
    * @param {(variantId: string) => void} [onView]  Gives each line a button to view it.
    */
   constructor(repertoires, els, selected, onChange, onView) {
@@ -74,11 +78,13 @@ export class OpeningTree {
     this.render();
   }
 
+  /** Writes how many lines are ticked, and shows Clear when there are any. */
   renderTotal() {
     this.els.total.textContent = t("setup.selectedTotal", { count: this.selected.size });
     this.els.clear.hidden = this.selected.size === 0;
   }
 
+  /** Updates every checkbox and count after the ticks changed, and reports it. */
   changed() {
     for (const node of this.nodes) this.refreshNode(node);
     for (const box of this.boxes) box.checked = this.selected.has(box.value);
@@ -97,6 +103,7 @@ export class OpeningTree {
     }
   }
 
+  /** Draws the groups that have lines matching the search. */
   render() {
     this.nodes = [];
     this.boxes = [];
@@ -110,6 +117,10 @@ export class OpeningTree {
       if (members.length === 0) continue;
       const main = members.filter((item) => item.repertoire.order !== null);
       const rest = members.filter((item) => item.repertoire.order === null);
+      /**
+       * Builds a group's families, the less common ones under "Others".
+       * @returns {HTMLElement[]} The levels.
+       */
       const children = () => {
         const list = main.map((item) => this.openingNode(item.repertoire, item.shown));
         if (main.length > 0 && rest.length > 0) {
@@ -143,7 +154,11 @@ export class OpeningTree {
     this.renderTotal();
   }
 
-  /** @param {RepertoireInfo} repertoire */
+  /**
+   * A family's lines that match the search; all of them when its own name matches.
+   * @param {RepertoireInfo} repertoire  The family.
+   * @returns {VariantInfo[]} The lines.
+   */
   shownVariants(repertoire) {
     const familyMatches = localizedName(repertoire.names).toLowerCase().includes(this.query);
     return this.query && !familyMatches
@@ -152,8 +167,10 @@ export class OpeningTree {
   }
 
   /**
-   * @param {RepertoireInfo} repertoire
-   * @param {VariantInfo[]} shown
+   * A family's level, whose subgroups are built when first opened.
+   * @param {RepertoireInfo} repertoire  The family.
+   * @param {VariantInfo[]} shown  Its lines that match the search.
+   * @returns {HTMLDetailsElement} The level.
    */
   openingNode(repertoire, shown) {
     const details = this.treeNode(
@@ -170,8 +187,10 @@ export class OpeningTree {
   }
 
   /**
-   * @param {string} repertoireId
-   * @param {VariantInfo[]} shown
+   * A family's subgroups, then its loose lines under "Others"; only lines if it has no subgroups.
+   * @param {string} repertoireId  The family id.
+   * @param {VariantInfo[]} shown  Its lines that match the search.
+   * @returns {HTMLElement[]} The levels or lines.
    */
   subgroupNodes(repertoireId, shown) {
     /** @type {Map<string, VariantInfo[]>} */
@@ -186,6 +205,7 @@ export class OpeningTree {
       const name = localizedName(variant.subgroup);
       groups.set(name, [...(groups.get(name) ?? []), variant]);
     }
+    /** Builds the rows of some lines later, when their level opens. */
     const lines = (/** @type {VariantInfo[]} */ list) => () =>
       list.map((variant) => this.variantElement(variant));
     const nodes = [...groups].map(([name, list]) =>
@@ -201,12 +221,13 @@ export class OpeningTree {
   /**
    * One collapsible level, with a checkbox for everything inside it.
    * @param {string} key  Stays the same in every language, to keep the level open when redrawn.
-   * @param {string} label
-   * @param {VariantInfo[]} variants
-   * @param {() => HTMLElement[]} children
-   * @param {string} className
-   * @param {boolean} [startOpen]
+   * @param {string} label  The level's name.
+   * @param {VariantInfo[]} variants  Every line inside it.
+   * @param {() => HTMLElement[]} children  Builds what is inside.
+   * @param {string} className  The level's kind, such as `tree-group` or `opening`.
+   * @param {boolean} [startOpen]  Opens it at once.
    * @param {boolean} [lazy]  Builds what is inside only when first opened.
+   * @returns {HTMLDetailsElement} The level.
    */
   treeNode(key, label, variants, children, className, startOpen = false, lazy = false) {
     const details = document.createElement("details");
@@ -226,6 +247,7 @@ export class OpeningTree {
 
     const list = document.createElement("div");
     list.className = "tree-children";
+    /** Builds the level's content once. */
     const build = () => {
       if (!list.hasChildNodes()) list.append(...children());
     };
@@ -255,7 +277,11 @@ export class OpeningTree {
     return details;
   }
 
-  /** @param {{all: HTMLInputElement, count: HTMLElement, variants: VariantInfo[]}} node */
+  /**
+   * Updates a level's checkbox and its ticked count.
+   * @param {{all: HTMLInputElement, count: HTMLElement, variants: VariantInfo[]}} node  The level.
+   * @returns {void}
+   */
   refreshNode({ all, count, variants }) {
     const selected = variants.filter((variant) => this.selected.has(variant.variant_id)).length;
     all.checked = selected === variants.length;
@@ -263,7 +289,11 @@ export class OpeningTree {
     count.textContent = t("setup.selectedCount", { selected, total: variants.length });
   }
 
-  /** @param {VariantInfo} variant */
+  /**
+   * One line: checkbox, name, moves, ECO and, in Openings, View.
+   * @param {VariantInfo} variant  The line.
+   * @returns {HTMLLabelElement} The row.
+   */
   variantElement(variant) {
     const label = document.createElement("label");
     label.className = "variant";

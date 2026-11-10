@@ -15,10 +15,17 @@ import { initSoundControls } from "./sound.js";
 import { initTheme } from "./theme.js";
 import { initTooltips } from "./tooltips.js";
 
-/** @param {string} id */
+/**
+ * Finds an element by id.
+ * @param {string} id  The element's id.
+ * @returns {any} The element.
+ */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
-/** Lists the languages that have a UI file; each is named in its own language. */
+/**
+ * Lists the languages that have a UI file, each named in its own language, and switches on change.
+ * @returns {Promise<void>}
+ */
 async function initLocalePicker() {
   const select = byId("locale-picker");
   const locales = await availableLocales().catch(() => []);
@@ -33,6 +40,10 @@ async function initLocalePicker() {
   });
 }
 
+/**
+ * Starts the page: language, preferences, board, screens, and the unfinished game if any.
+ * @returns {Promise<void>}
+ */
 async function main() {
   await initI18n(getPref("locale", "en"));
   initTooltips();

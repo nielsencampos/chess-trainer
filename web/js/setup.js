@@ -1,4 +1,5 @@
-// The setup card: color, openings and variations, level, clock, pace, options.
+// The New Game card: how the game starts (opening lines, a saved game or Chess960), color,
+// level, clock, pace and options.
 
 import { api } from "./api.js";
 import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
@@ -26,20 +27,30 @@ import { getPref, setPref } from "./prefs.js";
  * }} GameSetup
  */
 
-/** @param {string} selector */
+/**
+ * Finds radio buttons.
+ * @param {string} selector  A CSS selector.
+ * @returns {NodeListOf<HTMLInputElement>} The inputs.
+ */
 const radios = (selector) => /** @type {NodeListOf<HTMLInputElement>} */ (document.querySelectorAll(selector));
 
-/** @param {string} id */
+/**
+ * Finds an element by id.
+ * @param {string} id  The element's id.
+ * @returns {any} The element.
+ */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
+/** The New Game card. Its choices are kept per browser and read into a GameSetup on Play. */
 export class SetupCard {
   /**
-   * @param {RepertoireInfo[]} repertoires
-   * @param {string[]} levels
-   * @param {string} defaultLevel
-   * @param {TimeControls} timeControls
-   * @param {(color: "white" | "black") => void} onColorChange
-   * @param {(setup: GameSetup) => void} onPlay
+   * Builds the card from the book, levels and clocks, restoring the stored choices.
+   * @param {RepertoireInfo[]} repertoires  The book, in its order.
+   * @param {string[]} levels  The level keys, weakest first.
+   * @param {string} defaultLevel  The level used when none is stored.
+   * @param {TimeControls} timeControls  The clock presets.
+   * @param {(color: "white" | "black") => void} onColorChange  Redraws the idle board.
+   * @param {(setup: GameSetup) => void} onPlay  Starts the game.
    */
   constructor(repertoires, levels, defaultLevel, timeControls, onColorChange, onPlay) {
     this.repertoires = repertoires; // Already in the book's order.
@@ -90,7 +101,7 @@ export class SetupCard {
         this.onColorChange(this.color);
       });
     }
-    /** @type {"opening" | "saved"} */
+    /** @type {"opening" | "saved" | "chess960"} */
     this.mode = "opening";
     this.shown = true;
     // Disabled until here, so a choice made while the page loads is not lost.
@@ -124,7 +135,7 @@ export class SetupCard {
     onLocaleChange(() => this.relocalize());
   }
 
-  /** The level and clock names, which change with the language. */
+  /** Writes the level and clock names, which change with the language. */
   renderOptions() {
     for (const option of byId("level").options) option.text = t(`level.${option.value}`);
     const timeSelect = byId("time-control");
@@ -148,7 +159,11 @@ export class SetupCard {
     if (ply) byId("from-saved-ply").value = ply;
   }
 
-  /** @param {TimeControlInfo} item */
+  /**
+   * A time control's label, such as `90 + 30 min, +30 s` or `30 s`.
+   * @param {TimeControlInfo} item  The time control.
+   * @returns {string} The label in the current language.
+   */
   timeLabel(item) {
     const minutes = [item.base_ms, ...item.periods.map((period) => period.add_ms)]
       .map((ms) => ms / 60_000)
@@ -162,20 +177,28 @@ export class SetupCard {
     return `${t("setup.tc.minutes", { minutes })}${extra}`;
   }
 
-  /** @param {string} key */
+  /**
+   * The label of a time control key.
+   * @param {string} key  The key, such as `25i10`.
+   * @returns {string} The label, or the key if it is unknown.
+   */
   timeLabelFor(key) {
     const item = this.clockFor(key);
     return item ? this.timeLabel(item) : key;
   }
 
-  /** @returns {TimeControlInfo | null} */
+  /**
+   * The time control chosen in the card.
+   * @returns {TimeControlInfo | null} It, or null for no clock.
+   */
   selectedClock() {
     return this.clockFor(byId("time-control").value);
   }
 
   /**
-   * @param {string} key
-   * @returns {TimeControlInfo | null}
+   * A time control by key.
+   * @param {string} key  The key.
+   * @returns {TimeControlInfo | null} It, or null for no clock or an unknown key.
    */
   clockFor(key) {
     return (
@@ -185,33 +208,46 @@ export class SetupCard {
   }
 
   /**
-   * @param {string} name
-   * @param {string} value
+   * Checks the radio button with a value.
+   * @param {string} name  The radio group.
+   * @param {string} value  The value to check.
+   * @returns {void}
    */
   setRadio(name, value) {
     for (const radio of radios(`input[name="${name}"]`)) radio.checked = radio.value === value;
   }
 
-  /** @param {string} name */
+  /**
+   * The value of a radio group.
+   * @param {string} name  The radio group.
+   * @returns {string | undefined} The checked value, if any.
+   */
   radioValue(name) {
     return /** @type {HTMLInputElement | null} */ (
       document.querySelector(`input[name="${name}"]:checked`)
     )?.value;
   }
 
-  /** @returns {"white" | "black"} */
+  /**
+   * The color chosen.
+   * @returns {"white" | "black"} The color.
+   */
   get color() {
     return /** @type {"white" | "black"} */ (this.radioValue("color"));
   }
 
-  /** The position the board shows while choosing, if it is not the normal one. */
+  /**
+   * The position the board shows while choosing, if it is not the normal one.
+   * @returns {string | undefined} The Chess960 FEN, while that mode is on screen.
+   */
   previewFen() {
     return this.shown && this.mode === "chess960" ? this.chess960?.fen : undefined;
   }
 
   /**
    * Rolls the dice, or uses the position the user typed.
-   * @param {string} [fen]
+   * @param {string} [fen]  A typed starting position; none rolls the dice.
+   * @returns {Promise<void>}
    */
   async loadChess960(fen) {
     byId("chess960-error").hidden = true;
@@ -228,6 +264,7 @@ export class SetupCard {
     this.onColorChange(this.color);
   }
 
+  /** Writes the Chess960 position's number. */
   renderChess960Number() {
     if (!this.chess960) return;
     byId("chess960-number").textContent = t("chess960.position", { number: this.chess960.position });
@@ -235,7 +272,8 @@ export class SetupCard {
 
   /**
    * The setup is on screen, so the board can show what it is choosing.
-   * @param {boolean} shown
+   * @param {boolean} shown  Whether the card is on screen.
+   * @returns {void}
    */
   setShown(shown) {
     if (shown === this.shown) return;
@@ -243,7 +281,11 @@ export class SetupCard {
     this.onColorChange(this.color);
   }
 
-  /** @param {"opening" | "saved" | "chess960"} mode */
+  /**
+   * Chooses how the game starts, and loads what that mode needs.
+   * @param {"opening" | "saved" | "chess960"} mode  Opening lines, a saved game or Chess960.
+   * @returns {Promise<void>}
+   */
   async setMode(mode) {
     const changed = mode !== this.mode;
     this.mode = mode;
@@ -266,8 +308,10 @@ export class SetupCard {
   }
 
   /**
-   * @param {string} gameId
-   * @param {number} ply
+   * Picks a saved game and a move, to play from that position.
+   * @param {string} gameId  The game's id.
+   * @param {number} ply  The move; 0 keeps the end of the game.
+   * @returns {Promise<void>}
    */
   async chooseSaved(gameId, ply) {
     await this.setMode("saved");
@@ -278,6 +322,7 @@ export class SetupCard {
     this.renderFromSavedHelp();
   }
 
+  /** Explains the chosen way to start from a saved game. */
   renderFromSavedHelp() {
     const mode = this.radioValue("from-mode");
     byId("from-saved-help").textContent = t(
@@ -285,6 +330,7 @@ export class SetupCard {
     );
   }
 
+  /** Lists the saved games that match the search. */
   renderSavedGames() {
     const query = byId("from-saved-search").value.trim().toLowerCase();
     const games = this.savedGames.filter(
@@ -298,7 +344,11 @@ export class SetupCard {
     this.updateSelectionState();
   }
 
-  /** @param {any} game */
+  /**
+   * One saved game to choose; Chess960 games cannot be chosen yet.
+   * @param {any} game  The game, as the API lists it.
+   * @returns {HTMLLabelElement} The row.
+   */
   savedGameRow(game) {
     const label = document.createElement("label");
     label.className = `saved-game${game.chess960 ? " is-disabled" : ""}`;
@@ -332,6 +382,7 @@ export class SetupCard {
     return label;
   }
 
+  /** Lists the chosen game's moves to start from, the end first. */
   renderPlyOptions() {
     const select = byId("from-saved-ply");
     select.replaceChildren();
@@ -346,6 +397,7 @@ export class SetupCard {
     });
   }
 
+  /** Enables Play once the mode has what it needs, and says what is missing. */
   updateSelectionState() {
     let ready = this.tree.selected.size > 0;
     let hint = "setup.selectOne";
@@ -362,7 +414,10 @@ export class SetupCard {
     byId("setup-hint").hidden = ready || this.mode === "chess960";
   }
 
-  /** @returns {GameSetup} */
+  /**
+   * Reads the card into a setup.
+   * @returns {GameSetup} The setup.
+   */
   read() {
     return {
       color: this.color,
@@ -385,7 +440,11 @@ export class SetupCard {
     };
   }
 
-  /** @param {GameSetup} setup */
+  /**
+   * Stores the choices for the next visit.
+   * @param {GameSetup} setup  The setup.
+   * @returns {void}
+   */
   save(setup) {
     setPref("color", setup.color);
     setPref("level", setup.level);

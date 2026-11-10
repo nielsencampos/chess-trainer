@@ -2,24 +2,31 @@
 
 import { api } from "./api.js";
 
-/** @param {string} id */
+/**
+ * Finds an element by id.
+ * @param {string} id  The element's id.
+ * @returns {any} The element.
+ */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
 const DEBOUNCE_MS = 120;
 
 /**
  * White's chance to win, 0 to 1, from centipawns: the curve Lichess publishes.
- * @param {number} cp
+ * @param {number} cp  Centipawns from White's side.
+ * @returns {number} The share of the bar that is White's.
  */
 function whiteShare(cp) {
   return 1 / (1 + Math.exp(-0.00368208 * cp));
 }
 
 /**
- * @param {{cp: number | null, mate: number | null}} score
- * @returns {{share: number, label: string, whiteAhead: boolean}}
+ * How the bar shows an evaluation.
+ * @param {{cp: number | null, mate: number | null}} score  From White's side.
+ * @returns {{share: number, label: string, whiteAhead: boolean}} White's share of the bar, the
+ *   number or mate to write, and which side is ahead.
  */
-export function describe(score) {
+function describe(score) {
   if (score.mate !== null) {
     // Mate 0 is a finished game; the server then gives the winner's side in cp.
     const whiteAhead = score.mate === 0 ? (score.cp ?? 0) > 0 : score.mate > 0;
@@ -38,7 +45,9 @@ export function describe(score) {
   };
 }
 
+/** The evaluation bar: asks the server for the position on screen, one request at a time. */
 export class EvalBar {
+  /** Finds the bar's element; it starts hidden. */
   constructor() {
     this.element = byId("eval-bar");
     this.sequence = 0;
@@ -51,11 +60,13 @@ export class EvalBar {
   }
 
   /**
-   * @param {string} fen
-   * @param {boolean} chess960
+   * Shows the bar for a position, after a short pause so fast moves do not each ask the engine.
+   * @param {string} fen  The position.
+   * @param {boolean} chess960  Whether it is a Chess960 game.
    * @param {"w" | "b"} orientation  The color at the bottom of the board.
    * @param {{cp: number | null, mate: number | null}} [known]  The evaluation the PGN gives
    *   for this position (Lichess's analysis): shown at once, with no engine request.
+   * @returns {void}
    */
   show(fen, chess960, orientation, known) {
     this.sequence += 1;
@@ -73,6 +84,10 @@ export class EvalBar {
     }, DEBOUNCE_MS);
   }
 
+  /**
+   * Asks the server for the latest position waiting, unless a request is already out.
+   * @returns {Promise<void>}
+   */
   async request() {
     if (this.inFlight || this.next === null) return;
     const { fen, chess960, sequence } = this.next;
@@ -90,7 +105,11 @@ export class EvalBar {
     void this.request(); // The position on screen now, if it changed meanwhile.
   }
 
-  /** @param {{cp: number | null, mate: number | null}} score */
+  /**
+   * Draws an evaluation.
+   * @param {{cp: number | null, mate: number | null}} score  From White's side.
+   * @returns {void}
+   */
   render(score) {
     const { share, label, whiteAhead } = describe(score);
     byId("eval-fill").style.height = `${(share * 100).toFixed(1)}%`;
@@ -106,6 +125,7 @@ export class EvalBar {
     text.style.color = whiteAhead ? "#3a3a3a" : "#f2f2f2";
   }
 
+  /** Hides the bar and drops any pending request. */
   hide() {
     this.sequence += 1;
     this.next = null;

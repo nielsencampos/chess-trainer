@@ -35,12 +35,18 @@ const BARS = [
   },
 ];
 
-/** @param {string} id */
+/**
+ * Finds an element by id.
+ * @param {string} id  The element's id.
+ * @returns {any} The element.
+ */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
 /**
- * @param {SideBar} bar
- * @param {unknown} width
+ * Keeps a stored width inside the bar's limits.
+ * @param {SideBar} bar  The bar.
+ * @param {unknown} width  The stored width, possibly missing or not a number.
+ * @returns {number} A width in pixels between the bar's min and max, or its initial width.
  */
 function clamp(bar, width) {
   const number = Number(width);
@@ -48,6 +54,10 @@ function clamp(bar, width) {
   return Math.round(Math.min(bar.max, Math.max(bar.min, number)));
 }
 
+/**
+ * Restores both bars' width and visibility, and wires their handles and buttons.
+ * @returns {void}
+ */
 export function initLayout() {
   const shell = /** @type {HTMLElement} */ (document.querySelector(".app-shell"));
   /** @type {Record<string, {width: number, hidden: boolean}>} */
@@ -59,7 +69,10 @@ export function initLayout() {
     };
   }
 
-  /** @param {SideBar} bar */
+  /**
+   * Shows a bar at its width, or hides it, and labels its button.
+   * @param {SideBar} bar  The bar.
+   */
   function apply(bar) {
     const { width, hidden } = state[bar.key];
     shell.style.setProperty(bar.variable, hidden ? "0px" : `${width}px`);
@@ -76,8 +89,9 @@ export function initLayout() {
   }
 
   /**
-   * @param {SideBar} bar
-   * @param {number} width
+   * Resizes a bar, leaving room for the board and the other bar, and stores the width.
+   * @param {SideBar} bar  The bar.
+   * @param {number} width  The wanted width in pixels.
    */
   function resize(bar, width) {
     const other = BARS.find((item) => item !== bar);
@@ -102,6 +116,7 @@ export function initLayout() {
       if (!handle.hasPointerCapture(event.pointerId)) return;
       resize(bar, bar.key === "left" ? event.clientX : window.innerWidth - event.clientX);
     });
+    /** Ends a drag. */
     const stop = () => document.body.classList.remove("is-resizing");
     handle.addEventListener("pointerup", stop);
     handle.addEventListener("pointercancel", stop);
@@ -122,6 +137,7 @@ export function initLayout() {
     });
     apply(bar);
   }
+  /** Labels the handles and buttons in the current language. */
   const label = () => {
     for (const bar of BARS) {
       byId(bar.handle).setAttribute("aria-label", t(`layout.resize.${bar.key}`));

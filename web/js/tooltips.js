@@ -2,7 +2,10 @@
 // the others copy their accessible name (aria-label, else their text), and follow it when the
 // text changes, in any language and for buttons added later.
 
-/** @param {HTMLButtonElement} button */
+/**
+ * Copies a button's accessible name into its tooltip, unless i18n.js gives it one.
+ * @param {HTMLButtonElement} button  The button.
+ */
 function syncTitle(button) {
   if (button.hasAttribute("data-i18n-title")) return;
   const text = (button.getAttribute("aria-label") || button.textContent || "").trim();
@@ -10,10 +13,12 @@ function syncTitle(button) {
   if (!text && button.hasAttribute("title")) button.removeAttribute("title");
 }
 
+/** Updates the tooltip of every button on the page. */
 function syncAll() {
   for (const button of document.querySelectorAll("button")) syncTitle(button);
 }
 
+/** Gives every button a tooltip, now and whenever the page changes. */
 export function initTooltips() {
   let queued = false;
   const observer = new MutationObserver(() => {

@@ -12,7 +12,10 @@ import { getLocale } from "./i18n.js";
 /** @type {Map<string, NameParts>} English catalog name -> the names it is made of. */
 const parts = new Map();
 
-/** @param {import("./setup.js").RepertoireInfo[]} repertoires */
+/**
+ * Learns, from the book, which family and line names each catalog name is made of.
+ * @param {import("./setup.js").RepertoireInfo[]} repertoires  The book, as the server sends it.
+ */
 export function indexOpenings(repertoires) {
   for (const repertoire of repertoires) {
     for (const variant of repertoire.variants) {
@@ -28,6 +31,7 @@ export function indexOpenings(repertoires) {
 /**
  * The catalog name in the chosen language, or as it is when it cannot be translated.
  * @param {string} name  An English catalog name, as the server sends it.
+ * @returns {string} The name to show.
  */
 export function openingName(name) {
   const locale = getLocale();
@@ -48,8 +52,8 @@ export function openingName(name) {
 
 /**
  * What a search over saved games looks in: the ECO and the opening in English and as shown.
- * @param {{eco?: string | null, opening?: string | null}} game
- * @returns {string}  Lowercase.
+ * @param {{eco?: string | null, opening?: string | null}} game  A saved game.
+ * @returns {string} The text, lowercase.
  */
 export function openingSearchText(game) {
   const opening = game.opening ?? "";

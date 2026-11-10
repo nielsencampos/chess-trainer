@@ -24,9 +24,9 @@ const REPETITIONS_TO_END = 3;
 
 /**
  * The squares strictly between two squares of the same rank.
- * @param {number} a
- * @param {number} b
- * @returns {number[]}
+ * @param {number} a  A square, as chessops numbers them.
+ * @param {number} b  Another square.
+ * @returns {number[]} The squares, in order.
  */
 function squaresBetween(a, b) {
   const squares = [];
@@ -34,8 +34,12 @@ function squaresBetween(a, b) {
   return squares;
 }
 
+/** The position of one game in the browser: legal moves, check, game over and repetitions. */
 export class Rules {
-  /** @param {string} [chess960Fen]  The starting position of a Chess960 game. */
+  /**
+   * Starts from the standard position, or from a Chess960 one.
+   * @param {string} [chess960Fen]  The starting position of a Chess960 game.
+   */
   constructor(chess960Fen) {
     this.chess960 = chess960Fen !== undefined;
     this.position = this.chess960
@@ -46,14 +50,18 @@ export class Rules {
     this.countPosition();
   }
 
-  /** @returns {string} */
+  /**
+   * The position as FEN.
+   * @returns {string} The FEN.
+   */
   fen() {
     return makeFen(this.position.toSetup());
   }
 
   /**
-   * @param {string} square
-   * @returns {{color: "w" | "b", type: string} | null}
+   * The piece on a square.
+   * @param {string} square  The square, such as `e4`.
+   * @returns {{color: "w" | "b", type: string} | null} The piece, or null if empty.
    */
   pieceAt(square) {
     const piece = this.position.board.get(/** @type {number} */ (parseSquare(square)));
@@ -64,8 +72,8 @@ export class Rules {
   /**
    * Legal destinations of the piece on a square. Castling is the king's two-square move, or in
    * Chess960 the rook and any square between it and the king that is not a normal king move.
-   * @param {string} square
-   * @returns {TargetMove[]}
+   * @param {string} square  The piece's square.
+   * @returns {TargetMove[]} The destinations, marked as captures or promotions.
    */
   movesFrom(square) {
     const from = /** @type {number} */ (parseSquare(square));
@@ -93,10 +101,11 @@ export class Rules {
 
   /**
    * Plays a move if it is legal.
-   * @param {string} from
-   * @param {string} to
-   * @param {string} [promotion]
-   * @returns {PlayedMove | null}  `uci` is what the server expects, whichever square was clicked.
+   * @param {string} from  The piece's square.
+   * @param {string} to  The square clicked.
+   * @param {string} [promotion]  The piece to promote to: `q`, `r`, `b` or `n`.
+   * @returns {PlayedMove | null}  `uci` is what the server expects, whichever square was clicked;
+   *   null if the move is illegal.
    */
   move(from, to, promotion) {
     const move = {
@@ -116,8 +125,9 @@ export class Rules {
 
   /**
    * Plays a move the server sent. A move it cannot parse means the two sides disagree.
-   * @param {string} san
-   * @returns {PlayedMove}
+   * @param {string} san  The move in SAN.
+   * @returns {PlayedMove} The move played.
+   * @throws {Error} The move is illegal here.
    */
   moveSan(san) {
     const move = parseSan(this.position, san);
@@ -127,9 +137,9 @@ export class Rules {
 
   /**
    * The rook a click on `to` castles with, if it is a castling target.
-   * @param {number} from
-   * @param {number} to
-   * @returns {number | undefined}
+   * @param {number} from  The king's square.
+   * @param {number} to  The square clicked.
+   * @returns {number | undefined} The rook's square, or undefined if it is not castling.
    */
   chess960CastlingRook(from, to) {
     const dests = this.position.dests(from);
@@ -140,12 +150,18 @@ export class Rules {
     );
   }
 
-  /** @returns {boolean} */
+  /**
+   * Whether the side to move is in check.
+   * @returns {boolean} True in check.
+   */
   isCheck() {
     return this.position.isCheck();
   }
 
-  /** @returns {string | null} */
+  /**
+   * The square of the king in check.
+   * @returns {string | null} The square, or null when there is no check.
+   */
   checkSquare() {
     if (!this.isCheck()) return null;
     const king = this.position.board.kingOf(this.position.turn);
@@ -153,8 +169,9 @@ export class Rules {
   }
 
   /**
-   * Includes the draws the server applies by itself: threefold repetition and fifty moves.
-   * @returns {boolean}
+   * Whether the game is over, including the draws the server applies by itself: threefold
+   * repetition and fifty moves.
+   * @returns {boolean} True if it is over.
    */
   isGameOver() {
     return (
@@ -165,9 +182,10 @@ export class Rules {
   }
 
   /**
+   * Plays a legal move and counts the new position for repetitions.
    * @param {any} move  A legal move, with castling as king takes rook.
-   * @param {any} promotion
-   * @returns {PlayedMove}
+   * @param {any} promotion  The chessops role to promote to, if any.
+   * @returns {PlayedMove} The move, with the UCI the server expects.
    */
   play(move, promotion) {
     const { position } = this;
@@ -188,11 +206,15 @@ export class Rules {
     return { san, uci, capture, castle };
   }
 
-  /** Piece placement, turn, castling rights and en passant, as the rule compares positions. */
+  /**
+   * Piece placement, turn, castling rights and en passant, as the rule compares positions.
+   * @returns {string} The first four fields of the FEN.
+   */
   repetitionKey() {
     return this.fen().split(" ").slice(0, 4).join(" ");
   }
 
+  /** Counts the current position once more, for threefold repetition. */
   countPosition() {
     const key = this.repetitionKey();
     this.seen.set(key, (this.seen.get(key) ?? 0) + 1);

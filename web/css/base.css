@@ -170,14 +170,6 @@ body.is-resizing {
   accent-color: var(--accent);
 }
 
-.inline-field {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
 /* The language picker sits beside the logo, with no visible label. */
 .locale-picker {
   min-width: 0;
