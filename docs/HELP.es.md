@@ -4,7 +4,7 @@
 
 [English](HELP.md) · [Português (Brasil)](HELP.pt-BR.md)
 
-Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega tus líneas, sigue jugando contra Stockfish cuando la teoría se acaba y revisa tus partidas. Todo funciona y se queda en tu ordenador.
+Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega tus líneas, sigue jugando contra Stockfish cuando la teoría se acaba y revisa tus partidas. Todo funciona y se queda en tu computadora.
 
 > **Nunca lo uses para hacer trampa**
 >

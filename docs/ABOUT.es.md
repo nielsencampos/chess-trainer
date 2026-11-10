@@ -12,7 +12,7 @@ Soy Nielsen Campos: ingeniero de datos y backend, músico semiprofesional (casi 
 
 Chess Trainer es un lugar sencillo de estudio para quienes aprenden ajedrez por su cuenta. Empezó como una sola página para entrenar mis propias aperturas y se convirtió en un lugar para entrenar en general, para aprender sin un instructor de verdad e incluso sin jugar en persona.
 
-Las ventajas: tus estudios se quedan en tu propio ordenador, no en línea, así que tu preparación sigue siendo privada, como hacen hoy los grandes maestros. Nada sale de él, salvo si importas tus partidas de un sitio. Y no cuesta nada: solo hay que usarlo.
+Las ventajas: tus estudios se quedan en tu propia computadora, no en línea, así que tu preparación sigue siendo privada, como hacen hoy los grandes maestros. Nada sale de ella, salvo si importas tus partidas de un sitio. Y no cuesta nada: solo hay que usarlo.
 
 No sustituye a los cursos, las plataformas de enseñanza ni los instructores. Es solo una ayuda para jugadores aficionados, principiantes y semiprofesionales.
 
