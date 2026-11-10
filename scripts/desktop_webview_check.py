@@ -114,6 +114,9 @@ def main(out_dir: Path) -> int:
         result["print_called"] = True
         info = AppKit.NSPrintInfo.sharedPrintInfo().copy()
         info.setJobDisposition_(AppKit.NSPrintSaveJob)
+        # A4, as the Scoresheet's hint asks; the runner's default paper is US Letter, which
+        # is shorter, and WebKit's print operation follows the paper, not CSS `@page size`.
+        info.setPaperSize_(Foundation.NSMakeSize(595.28, 841.89))
         info.dictionary()[AppKit.NSPrintJobSavingURL] = Foundation.NSURL.fileURLWithPath_(str(pdf))
         operation = web_view.printOperationWithPrintInfo_(info)
         operation.setShowsPrintPanel_(False)
@@ -208,8 +211,8 @@ def main(out_dir: Path) -> int:
             return " ".join(unicodedata.normalize("NFC", value).split()).casefold()
 
         result["pdf_heading_found"] = any(flat(heading) in flat(text) for heading in headings)
-        if not result["pdf_pages"] or not result["pdf_heading_found"]:
-            failures.append("the PDF has no page, or no Scoresheet heading")
+        if result["pdf_pages"] != 1 or not result["pdf_heading_found"]:
+            failures.append("the Scoresheet is not one A4 page with its heading")
     else:
         failures.append("no Scoresheet PDF was written")
 
