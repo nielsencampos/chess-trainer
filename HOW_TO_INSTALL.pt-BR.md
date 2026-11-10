@@ -13,9 +13,12 @@ Abra a [página de Releases](https://github.com/nielsencampos/chess-trainer/rele
 | Seu computador | Arquivo |
 |---|---|
 | Windows 10 ou 11 | `chess-trainer-…-windows-x64-setup.exe` |
-| Mac com chip Apple (M1, M2, M3…) | `chess-trainer-…-macos-arm64.zip` |
-| Mac com processador Intel | `chess-trainer-…-macos-intel.zip` |
+| Mac com chip Apple (M1, M2, M3…), macOS 11 Big Sur ou mais novo | `chess-trainer-…-macos-arm64.zip` |
+| Mac com processador Intel, macOS 11 Big Sur ou mais novo | `chess-trainer-…-macos-intel.zip` |
 | Linux (Ubuntu 22.04 ou mais novo, ou parecido) | `chess-trainer-…-linux-x86_64.tar.gz` |
+
+**Do que você precisa:** qualquer computador deste século. Se ele tem saída HDMI e não usa monitor
+de tubo, roda. Para ser exato: um dos sistemas acima, de 64 bits, e uma tela de pelo menos 1280x720.
 
 Não sabe qual é o seu Mac? Abra o menu Apple → **Sobre Este Mac**. "Chip: Apple M…" é chip Apple;
 "Processador: Intel" é Intel.
