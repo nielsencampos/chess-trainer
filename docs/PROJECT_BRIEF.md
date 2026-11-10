@@ -302,10 +302,11 @@ Rules:
 
 1. **Foundation** (done): repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), the book in `openings/*.json` loaded into DuckDB, validation tests, the real Stockfish with provisional levels. *Done when: every item in §4 works in the browser at HD (1280x720) and larger.*
 2. **Data** (done): opening name on screen, recording of games, moves and deviations. UI preferences stay per browser.
-3. **Engine on the server:** native Stockfish (done) with calibrated levels (not yet: the levels in `app/engine/levels.toml` are provisional).
+3. **Engine on the server** (done): native Stockfish. The levels in `app/engine/levels.toml` stay uncalibrated (see 1.0.0 below).
 4. **Languages** (done): en, pt-BR and es, language picker.
 5. **Desktop app** (proof of concept on Linux done): builds for Windows and macOS in CI, published on the Release, simple install instructions in the three languages; signing later.
-6. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
+6. **1.0.0** (scope decided 2026-11-10): recorded sounds, provided by the author, in place of the generated ones; then the complete review of §10. Not planned, and kept as they are: starting a new game from a saved Chess960 game, measuring the bot levels, and a chess player's review of the pt-BR and es opening names.
+7. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
 
 ## 13. Working rules
 
