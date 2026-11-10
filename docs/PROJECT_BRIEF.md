@@ -5,7 +5,7 @@
 
 **Repository:** `chess-trainer` (public, GPL-3.0)
 **Description:** Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that follows the book and flags where you left theory, and review your games from PGN, Lichess or Chess.com with an evaluation bar. Chess960 included. English, Portuguese and Spanish, all in one Docker image, no accounts.
-**Topics:** `chess` `chess-trainer` `chess-openings` `opening-trainer` `chess960` `pgn` `stockfish` `python-chess` `fastapi` `duckdb` `docker`
+**Topics:** `chess` `chess-trainer` `chess-openings` `chess960` `pgn` `stockfish` `python-chess` `fastapi` `duckdb` `docker`
 
 ---
 
