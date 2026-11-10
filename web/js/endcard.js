@@ -83,7 +83,7 @@ export function renderEndCard(summary) {
 
   const list = byId("end-deviations");
   list.replaceChildren();
-  if (summary.deviations.length === 0) {
+  if (summary.deviations.length === 0 && !summary.state.bot_deviation) {
     const item = document.createElement("li");
     item.className = "muted";
     item.textContent = t("end.noDeviations");
@@ -96,6 +96,16 @@ export function renderEndCard(summary) {
     played.className = "played";
     played.textContent = `${number} ${san}`;
     item.append(moveIcon("deviation", t("icon.deviation")), played, ` — ${t("end.deviationLine", { expected: deviation.expected_san.join(", ") })}`);
+    list.append(item);
+  }
+  const bot = summary.state.bot_deviation;
+  if (bot) {
+    const { number, san } = numbered(bot.ply, bot.played_san);
+    const item = document.createElement("li");
+    const played = document.createElement("span");
+    played.className = "played";
+    played.textContent = `${number} ${san}`;
+    item.append(moveIcon("deviation", t("icon.botDeviation")), played, ` — ${t("end.botDeviationLine", { expected: bot.expected_san.join(", ") })}`);
     list.append(item);
   }
 

@@ -15,6 +15,7 @@ from app.game.imports import ImportedGame, annotation_count_of, content_hash
 from app.game.pace import TIME_CONTROLS
 from app.game.session import (
     CHESS960_PREFIX,
+    BotDeviationSetup,
     Deviation,
     GameResult,
     GameSession,
@@ -24,6 +25,10 @@ from app.game.session import (
 )
 
 GAME_LINE_PREFIX = "game:"
+
+
+# Columns of `games`, in table order, after every migration.
+GAME_COLUMNS = 29
 
 
 class GameStore:
@@ -46,8 +51,7 @@ class GameStore:
         eco, opening = session.opening or (session.variant.eco, session.variant.opening)
         white, black = session.players()
         self._connection.cursor().execute(
-            "INSERT OR REPLACE INTO games VALUES "
-            "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            f"INSERT OR REPLACE INTO games VALUES ({', '.join('?' * GAME_COLUMNS)})",
             [
                 session.game_id,
                 "finished" if session.is_over else "active",
@@ -81,6 +85,16 @@ class GameStore:
                     black,
                     session.started_at.strftime("%Y.%m.%d"),
                     tuple(record.uci for record in session.moves),
+                ),
+                json.dumps(
+                    {
+                        "setup": asdict(session.bot_deviation_setup)
+                        if session.bot_deviation_setup
+                        else None,
+                        "deviation": asdict(session.bot_deviation)
+                        if session.bot_deviation
+                        else None,
+                    }
                 ),
             ],
         )
@@ -130,7 +144,7 @@ class GameStore:
                 cursor.execute(
                     "INSERT INTO games VALUES "
                     "(?, 'finished', ?, ?, '', ?, '', '', [], '', ?, '', false, 0, ?, '[]', "
-                    "NULL, NULL, '{}', ?, ?, ?, ?, '', 'imported', ?, ?, ?)",
+                    "NULL, NULL, '{}', ?, ?, ?, ?, '', 'imported', ?, ?, ?, NULL)",
                     [
                         game_id,
                         game.played_at.replace(tzinfo=None),
@@ -230,7 +244,8 @@ class GameStore:
         """
         cursor = self._connection.cursor()
         cursor.execute(
-            "SELECT pgn, white, black, result, eco, opening, source, moves_json, deviations_json "
+            "SELECT pgn, white, black, result, eco, opening, source, moves_json, deviations_json, "
+            "bot_deviation_json "
             "FROM games "
             "WHERE game_id = ? AND status = 'finished'",
             [game_id],
@@ -352,6 +367,14 @@ def restore_session(
     session.user_clock_ms = row["user_clock_ms"]
     session.bot_clock_ms = row["bot_clock_ms"]
     session.ui = json.loads(row["ui_json"])
+    bot_deviation = json.loads(row.get("bot_deviation_json") or "{}")
+    if bot_deviation.get("setup"):
+        session.bot_deviation_setup = BotDeviationSetup(**bot_deviation["setup"])
+    if bot_deviation.get("deviation"):
+        item = bot_deviation["deviation"]
+        session.bot_deviation = Deviation(
+            item["ply"], item["played_san"], tuple(item["expected_san"])
+        )
     if row["result"]:
         session.outcome = GameResult(row["result"], row["termination"])
     return session

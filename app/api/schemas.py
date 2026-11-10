@@ -23,6 +23,18 @@ class FromGameRequest(BaseModel):
     mode: Literal["line", "position"] = "line"
 
 
+class BotDeviationRequest(BaseModel):
+    """When the bot may leave its line on purpose (brief §6, bot deviation).
+
+    Attributes:
+        from_move (Literal[3, 4, 5, 6, 7]): The first full-move number the bot rolls the die on.
+        chance (Literal[20, 30, 40, 50, 60, 70]): The chance of deviating on each roll, in percent.
+    """
+
+    from_move: Literal[3, 4, 5, 6, 7] = 3
+    chance: Literal[20, 30, 40, 50, 60, 70] = 30
+
+
 class NewGameRequest(BaseModel):
     """Body of `POST /api/games`.
 
@@ -35,6 +47,7 @@ class NewGameRequest(BaseModel):
         pace (Literal["instant", "human"]): The bot's response time.
         time_control (str): The time control's key, or `none`.
         ui (dict[str, bool]): UI flags saved with the game.
+        bot_deviation (BotDeviationRequest | None): When the bot may deviate; None for never.
     """
 
     color: Literal["white", "black"]
@@ -45,6 +58,7 @@ class NewGameRequest(BaseModel):
     pace: Literal["instant", "human"]
     time_control: str
     ui: dict[str, bool] = Field(default_factory=dict)
+    bot_deviation: BotDeviationRequest | None = None
 
 
 class Chess960Request(BaseModel):
@@ -225,6 +239,22 @@ class BotMoveOut(BaseModel):
     in_theory: bool
 
 
+class DeviationOut(BaseModel):
+    """A user deviation.
+
+    Attributes:
+        ply (int): The move's ply.
+        move_number (int): Its full-move number.
+        played_san (str): The move played.
+        expected_san (list[str]): The theory moves.
+    """
+
+    ply: int
+    move_number: int
+    played_san: str
+    expected_san: list[str]
+
+
 class GameStateOut(BaseModel):
     """The state of a game after a request.
 
@@ -237,6 +267,7 @@ class GameStateOut(BaseModel):
         theory_until_ply (int): The last ply in theory.
         left_theory_at_move (int | None): The move it left theory at, if it did.
         game_over (bool): Whether the game has ended.
+        bot_deviation (DeviationOut | None): The bot's deviation, once it deviated.
     """
 
     opening: OpeningOut | None = None
@@ -247,6 +278,7 @@ class GameStateOut(BaseModel):
     theory_until_ply: int
     left_theory_at_move: int | None
     game_over: bool
+    bot_deviation: DeviationOut | None = None
 
 
 class NewGameResponse(BaseModel):
@@ -277,22 +309,6 @@ class UserMoveOut(BaseModel):
     san: str
     ply: int
     in_theory: bool
-
-
-class DeviationOut(BaseModel):
-    """A user deviation.
-
-    Attributes:
-        ply (int): The move's ply.
-        move_number (int): Its full-move number.
-        played_san (str): The move played.
-        expected_san (list[str]): The theory moves.
-    """
-
-    ply: int
-    move_number: int
-    played_san: str
-    expected_san: list[str]
 
 
 class MoveResponse(BaseModel):
@@ -520,6 +536,7 @@ def state_out(session: GameSession) -> GameStateOut:
         theory_until_ply=session.theory_until_ply,
         left_theory_at_move=session.left_theory_at_move,
         game_over=session.is_over,
+        bot_deviation=deviation_out(session.bot_deviation) if session.bot_deviation else None,
     )
 
 

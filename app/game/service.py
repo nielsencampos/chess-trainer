@@ -8,6 +8,7 @@ from collections import OrderedDict
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from datetime import UTC, datetime
+from typing import Literal
 
 import chess
 
@@ -17,6 +18,7 @@ from app.engine.process import MoveEngine
 from app.game.imports import read_pgn_text
 from app.game.pace import TIME_CONTROLS, clock_after_move, engine_budget_s, human_delay_ms
 from app.game.session import (
+    BotDeviationSetup,
     Deviation,
     GameResult,
     GameSession,
@@ -29,6 +31,8 @@ from app.game.session import (
 from app.game.store import GAME_LINE_PREFIX, GameStore, restore_session
 
 MAX_GAMES_IN_MEMORY = 32
+# How long each of the two searches that check an engine deviation may take, at most.
+DEVIATION_SEARCH_S = 0.2
 GAME_ID_ALPHABET = string.ascii_lowercase + string.digits
 
 
@@ -97,6 +101,7 @@ class GameService:
         levels (dict[str, Level]): The strength levels by key.
         store (GameStore): Where games are saved.
         rng (random.Random): The random source.
+        deviation_max_loss_cp (int): How much worse than the best move an engine deviation may be.
     """
 
     def __init__(
@@ -107,6 +112,7 @@ class GameService:
         store: GameStore,
         rng: random.Random | None = None,
         opening_names: Mapping[str, tuple[str, str]] | None = None,
+        deviation_max_loss_cp: int = 100,
     ) -> None:
         """Creates the service.
 
@@ -117,8 +123,17 @@ class GameService:
             store (GameStore): Where games are saved.
             rng (random.Random | None): The random source; a new one when None.
             opening_names (Mapping[str, tuple[str, str]] | None): EPD -> (ECO, name).
+            deviation_max_loss_cp (int): How much worse than the best move, in centipawns, an
+                engine deviation may be.
         """
         self.opening_names = opening_names or {}
+        self.deviation_max_loss_cp = deviation_max_loss_cp
+        # Every active line's moves by position: the sidelines a bot deviation draws from.
+        self._book_moves: dict[str, dict[str, str]] = {}
+        for variant in book.variants.values():
+            for epd, moves in variant.moves.items():
+                for move in moves:
+                    self._book_moves.setdefault(epd, {})[move.uci] = move.san
         self.book = book
         self.engine = engine
         self.levels = levels
@@ -146,6 +161,7 @@ class GameService:
         ui: Mapping[str, bool] | None = None,
         from_game: FromGame | None = None,
         chess960_position: int | None = None,
+        bot_deviation: BotDeviationSetup | None = None,
     ) -> tuple[GameSession, BotReply | None]:
         """Starts a new game, abandoning an active one, and plays the bot's first move if it starts.
 
@@ -158,6 +174,7 @@ class GameService:
             ui (Mapping[str, bool] | None): UI flags to save with the game.
             from_game (FromGame | None): The saved game to start from, if any.
             chess960_position (int | None): The Chess960 starting position, if any.
+            bot_deviation (BotDeviationSetup | None): When the bot may deviate; None for never.
 
         Returns:
             tuple[GameSession, BotReply | None]: The game, and the bot's move if it plays first.
@@ -201,6 +218,7 @@ class GameService:
             chess960_position=chess960_position,
         )
         session.ui = dict(ui or {})
+        session.bot_deviation_setup = bot_deviation if chess960_position is None else None
         if from_game is not None and from_game.from_position:
             self._play_given_moves(session, variants[0])
         if control is not None:
@@ -211,6 +229,38 @@ class GameService:
 
         reply = None if session.is_user_turn else await self._bot_turn(session)
         return session, reply
+
+    async def _deviation_move(
+        self, session: GameSession, budget_s: float | None
+    ) -> tuple[chess.Move, Literal["book", "engine"]] | None:
+        """Chooses the bot's deviation: a sideline of the book, else a sound engine move.
+
+        Args:
+            session (GameSession): The game, with the bot to move in theory.
+            budget_s (float | None): The most the bot's clock allows a search, or None.
+
+        Returns:
+            tuple[chess.Move, Literal["book", "engine"]] | None: The move and where it came
+                from, or None when no move qualifies.
+        """
+        board = session.board
+        sidelines = session.deviation_candidates(list(self._book_moves.get(board.epd(), {})))
+        if sidelines:
+            return chess.Move.from_uci(self.rng.choice(sidelines)), "book"
+        allowed = session.deviation_candidates([move.uci() for move in board.legal_moves])
+        if not allowed:
+            return None
+        search_s = DEVIATION_SEARCH_S if budget_s is None else min(DEVIATION_SEARCH_S, budget_s / 2)
+        best, _ = await self.engine.evaluate(board, search_s)
+        score, move = await self.engine.evaluate(
+            board, search_s, [chess.Move.from_uci(uci) for uci in allowed]
+        )
+        if move is None or move.uci() not in allowed:
+            return None
+        loss = best.pov(board.turn).score(mate_score=100_000) - score.pov(board.turn).score(
+            mate_score=100_000
+        )
+        return (move, "engine") if loss <= self.deviation_max_loss_cp else None
 
     def _saved_game_line(self, from_game: FromGame) -> Variant:
         """A finished game's first plies as a one-line book.
@@ -466,14 +516,22 @@ class GameService:
         bot_clock_ms = session.bot_clock_ms
         book_move = session.next_book_move()
         search_started = time.monotonic()
-        if book_move is not None:
-            move = chess.Move.from_uci(book_move.uci)
-        else:
-            budget = engine_budget_s(session.time_control, bot_clock_ms)
-            move = await self.engine.play(session.board, self.levels[session.level], budget)
+        budget = engine_budget_s(session.time_control, bot_clock_ms)
+        deviation = None
+        if book_move is not None and session.rolls_for_deviation() and session.roll_deviation():
+            deviation = await self._deviation_move(session, budget)
             if session.is_over:  # the user's clock ran out during the search
                 return None
-        in_book = book_move is not None
+        if deviation is not None:
+            move, source = deviation
+        elif book_move is not None:
+            move, source = chess.Move.from_uci(book_move.uci), "book"
+        else:
+            move = await self.engine.play(session.board, self.levels[session.level], budget)
+            source = "engine"
+            if session.is_over:  # the user's clock ran out during the search
+                return None
+        in_book = source == "book"
         delay_ms = (
             human_delay_ms(session.time_control, bot_clock_ms, in_book, self.rng)
             if session.pace == "human"
@@ -487,7 +545,10 @@ class GameService:
         if session.time_control is not None and bot_clock_ms is not None:
             moves_made = sum(record.by == "bot" for record in session.moves) + 1
             clock_after = clock_after_move(session.time_control, bot_clock_ms, used_ms, moves_made)
-        record = session.play_bot_move(move, "book" if in_book else "engine", clock_after, used_ms)
+        if deviation is not None and book_move is not None:
+            record = session.play_bot_deviation(move, source, book_move.san, clock_after, used_ms)
+        else:
+            record = session.play_bot_move(move, source, clock_after, used_ms)
         session.bot_clock_ms = clock_after
         self.store.save(session)
         return BotReply(record, delay_ms)

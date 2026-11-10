@@ -5,7 +5,8 @@ import { t } from "./i18n.js";
 import { moveIcon } from "./icons.js";
 
 /**
- * @typedef {{san: string, uci?: string, outOfTheory: boolean, deviation: boolean}} PlyView
+ * @typedef {{san: string, uci?: string, outOfTheory: boolean, deviation: boolean,
+ *   botDeviation?: boolean}} PlyView
  */
 
 /**
@@ -54,10 +55,11 @@ function moveCell(ply, showTheoryMarks, number, currentPly) {
     cell.classList.toggle("current", number === currentPly);
   }
   if (showTheoryMarks) {
-    if (ply.deviation) {
+    if (ply.deviation || ply.botDeviation) {
+      const title = t(ply.deviation ? "icon.deviation" : "icon.botDeviation");
       cell.classList.add("deviation");
-      cell.prepend(moveIcon("deviation", t("icon.deviation")));
-      cell.title = t("icon.deviation");
+      cell.prepend(moveIcon("deviation", title));
+      cell.title = title;
     } else if (ply.outOfTheory) {
       cell.classList.add("out");
     } else {

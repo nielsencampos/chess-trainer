@@ -35,3 +35,9 @@ limit = { movetime = 0.8 }
 elo = "3500+"
 options = { "Skill Level" = 20, "UCI_LimitStrength" = false }
 limit = { movetime = 1.0 }
+
+# Bot deviation (brief §6): when the book has no sideline, the engine's best move outside the
+# selected lines is played only if it is not worse than the position's best move by more than
+# this, in centipawns, both searched briefly at full strength.
+[bot_deviation]
+max_loss_cp = 100

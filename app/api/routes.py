@@ -46,6 +46,7 @@ from app.game.remote import RemoteError, fetch_games
 from app.game.review import pgn_of_line, review_of_pgn
 from app.game.service import FromGame, GameService, InvalidSetupError, UnknownGameError
 from app.game.session import (
+    BotDeviationSetup,
     GameFinishedError,
     IllegalMoveError,
     NothingToTakeBackError,
@@ -275,6 +276,9 @@ async def create_game(body: NewGameRequest, request: Request) -> NewGameResponse
             if body.from_game
             else None,
             body.chess960_position,
+            BotDeviationSetup(body.bot_deviation.from_move, body.bot_deviation.chance)
+            if body.bot_deviation
+            else None,
         )
     except GAME_ERRORS as error:
         raise _http_error(error) from error
@@ -496,17 +500,25 @@ def _with_theory(moves: list[dict], game: dict) -> list[dict]:
 
     Args:
         moves (list[dict]): The review's main-line moves.
-        game (dict): The saved game, with its moves and deviations.
+        game (dict): The saved game, with its moves and both sides' deviations.
 
     Returns:
-        list[dict]: The moves, with `book` and `deviation` for a game played here.
+        list[dict]: The moves, with `book`, `deviation` and `bot_deviation` for a game played
+            here.
     """
     records = json.loads(game["moves_json"]) if game.get("moves_json") else []
     deviations = {item["ply"] for item in json.loads(game.get("deviations_json") or "[]")}
+    bot = (json.loads(game.get("bot_deviation_json") or "{}") or {}).get("deviation")
+    bot_ply = bot["ply"] if bot else None
     if game.get("source") != "app" or len(records) != len(moves):
         return moves
     return [
-        {**move, "book": bool(record["in_theory"]), "deviation": move["ply"] in deviations}
+        {
+            **move,
+            "book": bool(record["in_theory"]),
+            "deviation": move["ply"] in deviations,
+            "bot_deviation": move["ply"] == bot_ply,
+        }
         for move, record in zip(moves, records, strict=True)
     ]
 

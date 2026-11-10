@@ -25,6 +25,7 @@ import { getPref, setPref } from "./prefs.js";
  *   from_game?: {game_id: string, upto_ply: number, mode: string} | null,
  *   chess960?: {position: number, fen: string} | null,
  *   warning: boolean, premoves: boolean,
+ *   deviate?: {from_move: number, chance: number} | null,
  * }} GameSetup
  */
 
@@ -41,6 +42,10 @@ const radios = (selector) => /** @type {NodeListOf<HTMLInputElement>} */ (docume
  * @returns {any} The element.
  */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
+
+/** The moves the bot may start deviating from, and its chances per move (brief §6). */
+const DEVIATE_FROM = [3, 4, 5, 6, 7];
+const DEVIATE_CHANCE = [20, 30, 40, 50, 60, 70];
 
 /** The New Game card. Its choices are kept per browser and read into a GameSetup on Play. */
 export class SetupCard {
@@ -95,6 +100,17 @@ export class SetupCard {
     this.setRadio("pace", getPref("pace", "human"));
     byId("opt-warning").checked = getPref("warning", true);
     byId("opt-premoves").checked = getPref("premoves", true);
+    const fromSelect = byId("deviate-from");
+    for (const move of DEVIATE_FROM) fromSelect.add(new Option(String(move), String(move)));
+    const chanceSelect = byId("deviate-chance");
+    for (const chance of DEVIATE_CHANCE) chanceSelect.add(new Option(`${chance}%`, String(chance)));
+    byId("opt-deviate").checked = getPref("deviate", false);
+    fromSelect.value = String(getPref("deviateFrom", 3));
+    if (fromSelect.value === "") fromSelect.value = "3";
+    chanceSelect.value = String(getPref("deviateChance", 30));
+    if (chanceSelect.value === "") chanceSelect.value = "30";
+    byId("opt-deviate").addEventListener("change", () => this.renderDeviate());
+    this.renderDeviate();
 
     for (const radio of radios('input[name="color"]')) {
       radio.addEventListener("change", () => {
@@ -294,6 +310,7 @@ export class SetupCard {
     byId("openings-field").hidden = mode !== "opening";
     byId("from-saved").hidden = mode !== "saved";
     byId("chess960").hidden = mode !== "chess960";
+    this.renderDeviate();
     this.updateSelectionState();
     if (changed) this.onColorChange(this.color);
     if (mode === "chess960" && !this.chess960) await this.loadChess960();
@@ -438,7 +455,19 @@ export class SetupCard {
       clock: this.selectedClock(),
       warning: byId("opt-warning").checked,
       premoves: byId("opt-premoves").checked,
+      // Chess960 has no book, so there is no line to leave.
+      deviate:
+        byId("opt-deviate").checked && this.mode !== "chess960"
+          ? { from_move: Number(byId("deviate-from").value), chance: Number(byId("deviate-chance").value) }
+          : null,
     };
+  }
+
+  /** Shows the bot deviation option, and its two choices while it is on; not for Chess960. */
+  renderDeviate() {
+    const available = this.mode !== "chess960";
+    byId("deviate-toggle").hidden = !available;
+    byId("deviate-options").hidden = !available || !byId("opt-deviate").checked;
   }
 
   /**
@@ -453,5 +482,8 @@ export class SetupCard {
     setPref("timeControl", setup.time_control);
     setPref("warning", setup.warning);
     setPref("premoves", setup.premoves);
+    setPref("deviate", byId("opt-deviate").checked);
+    setPref("deviateFrom", Number(byId("deviate-from").value));
+    setPref("deviateChance", Number(byId("deviate-chance").value));
   }
 }

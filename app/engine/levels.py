@@ -58,3 +58,22 @@ def load_levels(path: Path) -> dict[str, Level]:
         )
         for key in LEVEL_ORDER
     }
+
+
+def load_deviation_max_loss(path: Path) -> int:
+    """Reads how much worse than the best move a bot deviation from the engine may be.
+
+    Args:
+        path (Path): The levels file, with a `[bot_deviation]` table.
+
+    Returns:
+        int: The most a deviation may lose, in centipawns.
+
+    Raises:
+        ValueError: The file has no non-negative integer `bot_deviation.max_loss_cp`.
+    """
+    with path.open("rb") as handle:
+        value = tomllib.load(handle).get("bot_deviation", {}).get("max_loss_cp")
+    if not isinstance(value, int) or isinstance(value, bool) or value < 0:
+        raise ValueError(f"{path}: bot_deviation.max_loss_cp must be a non-negative integer")
+    return value

@@ -44,6 +44,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 ## 4. Required behavior
 
 - The bot picks at random among the next book moves. When theory ends or someone leaves it, the engine takes over at the selected strength.
+- "Bot may deviate", a setup option, off by default: the bot can leave its line on purpose, so the user trains against an opponent who leaves theory (§6, bot deviation).
 - Color selection (White/Black), selected openings and **selected variations** (a collapsible multi-select per opening). Each selected variation has the same chance of being drawn.
 - Theory = selected variations only. Playing a move from an unselected variation counts as a deviation.
 - User deviations are recorded with the expected move(s) and shown at the end of the game.
@@ -179,6 +180,12 @@ A newer catalog does not enter by itself: comparing it with `openings/` and acce
 - If the user plays a move from another selected variation, the bot redraws among the selected variations containing that position.
 - When the drawn variation ends, the engine takes over, even if another selected variation continues.
 - Theory is the union of the selected variations. A user move outside it, when that union has a move for the position, is a deviation. Once out of theory a game does not return to it, except through a take-back.
+
+**Bot deviation** (decided 2026-11-10): the bot can leave its line on purpose.
+- Setup: a "Bot may deviate" checkbox, off by default. Checked, it shows two choices: *from move* 3, 4, 5, 6 or 7 (default 3) and *chance per move* 20, 30, 40, 50, 60 or 70% (default 30%). All three are kept per browser, like the other setup choices. It does nothing for Chess960 or "From position", which have no book.
+- The die: on each bot move from the chosen move number on (3. as White, 3... as Black), while the game is in theory and the drawn line still has a move for the bot, the bot rolls the chosen chance. On a hit it deviates instead of playing the book move. At most one bot deviation per game; after it the game is out of theory and the engine plays at the selected level, as when a line ends. A take-back that undoes the deviation undoes it completely, and the die rolls again.
+- The move: first, a move that some active line of the whole book plays in that position and that no selected line plays there, drawn with equal chance (a known sideline). If the book has none, the engine's best move among the moves no selected line plays there, accepted only if it is not worse than the position's best move by more than `bot_deviation.max_loss_cp` in `app/engine/levels.toml` (100 cp). Both are short searches at full strength (0.2 s each at most, within the bot's clock). A move that transposes into a selected line is never a deviation. If no move qualifies, the bot plays its book move and the die rolls again on its next move.
+- A bot deviation is never a user deviation: it does not count against the user. It shows as a "Bot deviated at move N" chip, the same move icon as the user's deviation, a line on the end-of-game card in the same form as the user's deviation, and a PGN comment `Bot deviation: line expected <SAN>`. It is saved with the move in `moves_json`, so a resumed game keeps it.
 
 **Evaluation bar:** while moving through a saved game or a book line, and on the final position of a game just played, a bar to the left of the board shows Stockfish's evaluation at full strength (1 s per position, kept in memory, never saved), from White's side, with the number or the mate in moves. A position whose PGN move carries `[%eval]` (Lichess's analysis) shows that value at once instead. It never shows during a game. The browser sends the position on screen; this is the only FEN the server takes outside a PGN, and it never comes from the user.
 

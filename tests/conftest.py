@@ -65,16 +65,17 @@ class FakeEngine:
             return board.parse_san(self.script.pop(0))
         return next(iter(board.legal_moves))
 
-    async def evaluate(self, board: chess.Board, time_s: float):
+    async def evaluate(self, board: chess.Board, time_s: float, root_moves=None):
         """Material from White's side, so tests can tell positions apart.
 
         Args:
             board (chess.Board): The position.
             time_s (float): Ignored.
+            root_moves (Sequence[chess.Move] | None): The moves to choose from, if given.
 
         Returns:
             tuple[chess.engine.PovScore, chess.Move | None]: The material and the first legal
-                move.
+                move, or the first of `root_moves`.
         """
         self.evaluations = getattr(self, "evaluations", 0) + 1
         values = {chess.PAWN: 100, chess.KNIGHT: 300, chess.BISHOP: 300, chess.ROOK: 500}
@@ -83,7 +84,7 @@ class FakeEngine:
             value * (len(board.pieces(piece, chess.WHITE)) - len(board.pieces(piece, chess.BLACK)))
             for piece, value in values.items()
         )
-        best = next(iter(board.legal_moves), None)
+        best = next(iter(root_moves or board.legal_moves), None)
         return chess.engine.PovScore(chess.engine.Cp(material), chess.WHITE), best
 
 

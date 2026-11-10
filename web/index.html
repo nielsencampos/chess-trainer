@@ -203,6 +203,17 @@
           <div class="toggles">
             <label class="toggle"><input id="opt-warning" type="checkbox" /><span data-i18n="setup.warning"></span></label>
             <label class="toggle"><input id="opt-premoves" type="checkbox" /><span data-i18n="setup.premoves"></span></label>
+            <label class="toggle" id="deviate-toggle"><input id="opt-deviate" type="checkbox" /><span data-i18n="setup.deviate"></span></label>
+          </div>
+          <div class="field-row" id="deviate-options" hidden>
+            <label class="field">
+              <span class="field-label" data-i18n="setup.deviateFrom"></span>
+              <select id="deviate-from"></select>
+            </label>
+            <label class="field">
+              <span class="field-label" data-i18n="setup.deviateChance"></span>
+              <select id="deviate-chance"></select>
+            </label>
           </div>
 
           <button id="play" class="button button-primary button-wide" type="button" disabled data-i18n="setup.play"></button>

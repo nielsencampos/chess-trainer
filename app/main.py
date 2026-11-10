@@ -20,7 +20,7 @@ from app.book.sync import (
 from app.config import Settings, settings_from_env
 from app.db.connection import apply_migrations, open_database
 from app.engine.evaluation import Evaluator
-from app.engine.levels import load_levels
+from app.engine.levels import load_deviation_max_loss, load_levels
 from app.engine.process import MoveEngine, StockfishEngine
 from app.game.remote import fetch_url
 from app.game.service import GameService
@@ -54,6 +54,7 @@ def create_app(
     book = load_book(database)
     opening_names = load_opening_names(database)
     levels = load_levels(settings.levels_file)
+    deviation_max_loss_cp = load_deviation_max_loss(settings.levels_file)
     engine = engine or StockfishEngine(
         settings.stockfish_path,
         settings.stockfish_threads,
@@ -78,7 +79,9 @@ def create_app(
 
     app = FastAPI(title="chess-trainer", version=__version__, lifespan=lifespan)
     app.state.evaluator = Evaluator(engine, load_book_evals(database))
-    app.state.games = GameService(book, engine, levels, GameStore(database), rng, opening_names)
+    app.state.games = GameService(
+        book, engine, levels, GameStore(database), rng, opening_names, deviation_max_loss_cp
+    )
     app.state.database = database
     app.state.levels = levels
     app.state.fetch_url = fetch_url
