@@ -755,21 +755,6 @@ def test_board_grows_with_the_window_and_stays_in_view(page: Page):
     assert sizes[-1] > sizes[0] * 1.5
 
 
-def test_layout_switches_at_1100_px(page: Page):
-    """The three columns stack into one below 1100 px wide.
-
-    Args:
-        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
-    """
-    page.goto("/")
-    page.locator(".square").first.wait_for()
-    columns = "getComputedStyle(document.querySelector('.app-shell')).gridTemplateColumns"
-    page.set_viewport_size({"width": 1100, "height": 800})
-    assert len(page.evaluate(columns).split()) == 3
-    page.set_viewport_size({"width": 1099, "height": 800})
-    assert len(page.evaluate(columns).split()) == 1
-
-
 def test_fonts_are_the_vendored_ones(page: Page):
     """Fonts are the vendored ones.
 

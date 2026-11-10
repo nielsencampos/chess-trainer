@@ -255,40 +255,6 @@ body.is-resizing {
   text-align: center;
 }
 
-@media (max-width: 1099px) {
-  .app-shell {
-    grid-template-columns: minmax(0, 1fr);
-    height: auto;
-  }
-
-  .board-area,
-  .sidebar,
-  .movebar {
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  .sidebar {
-    order: 2;
-    border-right: 0;
-  }
-
-  .movebar {
-    order: 3;
-    border-left: 0;
-  }
-
-  .board-column {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .resizer,
-  .bar-toggle {
-    display: none;
-  }
-}
-
 /* Under the move list, the result, resign and the board controls stay at the bottom. */
 /* With the moves hidden, resign and the controls stay at the bottom, where they always are. */
 .moves-box[hidden] ~ #game-card {
