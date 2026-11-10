@@ -113,10 +113,28 @@ def main(out_dir: Path) -> int:
         """
         result["print_called"] = True
         info = AppKit.NSPrintInfo.sharedPrintInfo().copy()
-        info.setJobDisposition_(AppKit.NSPrintSaveJob)
         # A4, as the Scoresheet's hint asks; the runner's default paper is US Letter, which
         # is shorter, and WebKit's print operation follows the paper, not CSS `@page size`.
         info.setPaperSize_(Foundation.NSMakeSize(595.28, 841.89))
+        # The page setup of pywebview's print_webview: fit the width, and margins at the
+        # printable area, not AppKit's default inch.
+        info.setHorizontalPagination_(AppKit.NSFitPagination)
+        info.setHorizontallyCentered_(False)
+        info.setVerticallyCentered_(False)
+        bounds, paper = info.imageablePageBounds(), info.paperSize()
+        if Foundation.NSWidth(bounds) > paper.width:
+            bounds.origin.x, bounds.size.width = 0, paper.width
+        if Foundation.NSHeight(bounds) > paper.height:
+            bounds.origin.y, bounds.size.height = 0, paper.height
+        info.setBottomMargin_(Foundation.NSMinY(bounds))
+        info.setTopMargin_(paper.height - Foundation.NSMinY(bounds) - Foundation.NSHeight(bounds))
+        info.setLeftMargin_(Foundation.NSMinX(bounds))
+        info.setRightMargin_(paper.width - Foundation.NSMinX(bounds) - Foundation.NSWidth(bounds))
+        result["margins_pt"] = [
+            round(m)
+            for m in (info.topMargin(), info.rightMargin(), info.bottomMargin(), info.leftMargin())
+        ]
+        info.setJobDisposition_(AppKit.NSPrintSaveJob)
         info.dictionary()[AppKit.NSPrintJobSavingURL] = Foundation.NSURL.fileURLWithPath_(str(pdf))
         operation = web_view.printOperationWithPrintInfo_(info)
         operation.setShowsPrintPanel_(False)

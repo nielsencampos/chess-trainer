@@ -62,10 +62,12 @@ def running_here(port: int) -> bool:
         with urllib.request.urlopen(f"http://{HOST}:{port}/api/health", timeout=2) as response:
             json.loads(response.read())["engine"]
             return True
-    except urllib.error.URLError as error:
-        if isinstance(error.reason, ConnectionRefusedError):
-            return False
+    except urllib.error.HTTPError as error:
         raise LaunchError(f"port {port} is used by another program") from error
+    except (urllib.error.URLError, TimeoutError, ConnectionError):
+        # Nothing answers. Windows may time out on a closed loopback port instead of refusing.
+        # If a program holds the port without answering, the server fails to bind it instead.
+        return False
     except (OSError, ValueError, KeyError, TypeError) as error:
         raise LaunchError(f"port {port} is used by another program") from error
 
@@ -138,4 +140,9 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        # A windowed build has no console: the log is where a failed launch can be read.
+        logging.exception("the app could not start")
+        raise
