@@ -42,7 +42,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 | Container | Multi-stage Dockerfile + `docker-compose.yml` | Slim final image, non-root user, healthcheck |
 | Desktop | PyInstaller (one folder) + pywebview + platformdirs | `desktop/`, dependency group `desktop`. Linux uses pywebview's Qt backend (wheels, no system packages). Fixed port 47800, because UI preferences live in `localStorage`, which belongs to an origin |
 | Tests | pytest (backend), Playwright (browser flows) | |
-| CI | GitHub Actions: ruff, tests, repertoire validation, image build | |
+| CI | GitHub Actions: ruff, tests, repertoire validation, image build; desktop builds on Linux, Windows and macOS (arm64 and Intel), uploaded to a draft Release on a `v*` tag | `ci.yml`, `desktop.yml` |
 
 ## 4. Required behavior
 
@@ -257,6 +257,7 @@ Rules:
 ## 9. Engine
 
 - **Always the latest Stockfish.** The Dockerfile resolves the newest official release (GitHub `official-stockfish/Stockfish`, `releases/latest`) at build time and downloads the right binary for the architecture (amd64, arm64). Since `sf_19` the official binaries are *universal*: they detect the CPU at run time, so there is no flavor to pick.
+- The desktop build takes the official release for its own system with `docker/fetch_stockfish.py desktop` (Linux x86-64 or arm64, Windows x86-64, and the universal macOS binary), with the same digest check and `VERSION` file.
 - A build arg `STOCKFISH_VERSION` defaults to `latest` and can be set to a specific tag to reproduce an old build or work around a bad release. Only `sf_19` or newer is accepted (older releases have no universal binary and no Linux arm64 build); anything older fails the build with a clear message.
 - The resolved version is recorded: `/api/health` and a `VERSION` file in the image are the authority, shown in the UI footer, and stored per game (`games.engine_name`). The image label holds the version that was requested, because a `LABEL` is fixed before the download runs; it names a real version only when a tag is passed explicitly (as CI does).
 - Updating = rebuilding the image (`docker compose build --pull`). A scheduled CI job (weekly) rebuilds and runs the tests against the newest release, so a breaking Stockfish change is caught early.
@@ -304,7 +305,7 @@ Rules:
 2. **Data** (done): opening name on screen, recording of games, moves and deviations. UI preferences stay per browser.
 3. **Engine on the server** (done): native Stockfish. The levels in `app/engine/levels.toml` stay uncalibrated (see 1.0.0 below).
 4. **Languages** (done): en, pt-BR and es, language picker.
-5. **Desktop app** (proof of concept on Linux done): builds for Windows and macOS in CI, published on the Release, simple install instructions in the three languages; signing later.
+5. **Desktop app** (proof of concept on Linux done; CI builds for Linux, Windows and macOS, the draft Release on a tag and `HOW_TO_INSTALL*.md` in the three languages written): signing later.
 6. **1.0.0** (scope decided 2026-11-10): recorded sounds, provided by the author, in place of the generated ones; then the complete review of §10. Not planned, and kept as they are: starting a new game from a saved Chess960 game, measuring the bot levels, and a chess player's review of the pt-BR and es opening names.
 7. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
 

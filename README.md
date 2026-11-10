@@ -27,8 +27,9 @@ Open <http://127.0.0.1:8000>.
 The app is published on loopback only, because it has no login. To reach it from another device,
 set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust. `CHESS_TRAINER_PORT` changes the port.
 
-**Desktop app (preview):** the same app in its own window, without Docker, is being built in
-[desktop/](desktop/README.md). There are no downloads yet; Docker stays the way to run it.
+**Desktop app (preview):** the same app in its own window, without Docker, for Windows, macOS and
+Linux. To download and install it, see [HOW_TO_INSTALL.md](HOW_TO_INSTALL.md); how it is built is
+in [desktop/](desktop/README.md). Docker stays the reference way to run it.
 
 ## How it works
 
@@ -139,8 +140,9 @@ docker compose up --build
 
 Depois abra <http://127.0.0.1:8000>.
 
-**App desktop (prévia):** o mesmo app numa janela própria, sem Docker, está sendo feito em
-[desktop/](desktop/README.md). Ainda não há downloads; por enquanto, rode com Docker.
+**App desktop (prévia):** o mesmo app numa janela própria, sem Docker, para Windows, macOS e
+Linux. Para baixar e instalar, veja [HOW_TO_INSTALL.pt-BR.md](HOW_TO_INSTALL.pt-BR.md); como ele é
+feito está em [desktop/](desktop/README.md). O Docker continua sendo o jeito de referência.
 
 **Guia completo**, com imagens: [docs/HELP.pt-BR.md](docs/HELP.pt-BR.md), o mesmo da tela de Ajuda do app. Quem fez e por quê: [docs/ABOUT.pt-BR.md](docs/ABOUT.pt-BR.md).
 
@@ -181,8 +183,9 @@ docker compose up --build
 
 Después abre <http://127.0.0.1:8000>.
 
-**App de escritorio (vista previa):** la misma app en su propia ventana, sin Docker, se está
-haciendo en [desktop/](desktop/README.md). Aún no hay descargas; por ahora, ejecútala con Docker.
+**App de escritorio (vista previa):** la misma app en su propia ventana, sin Docker, para Windows,
+macOS y Linux. Para descargarla e instalarla, mira [HOW_TO_INSTALL.es.md](HOW_TO_INSTALL.es.md);
+cómo se hace está en [desktop/](desktop/README.md). Docker sigue siendo la forma de referencia.
 
 **Guía completa**, con imágenes: [docs/HELP.es.md](docs/HELP.es.md), la misma que la pantalla de Ayuda de la app. Quién lo hizo y por qué: [docs/ABOUT.es.md](docs/ABOUT.es.md).
 

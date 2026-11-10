@@ -2,6 +2,8 @@
 
 import asyncio
 import logging
+import subprocess
+import sys
 from collections.abc import Sequence
 from pathlib import Path
 from typing import Protocol
@@ -116,7 +118,9 @@ class StockfishEngine:
 
     async def start(self) -> None:
         """Starts Stockfish, configures it and reads its name and build tag."""
-        _, self._engine = await chess.engine.popen_uci(self._path)
+        # A windowed program (the desktop app on Windows) would open a console for Stockfish.
+        flags = {"creationflags": subprocess.CREATE_NO_WINDOW} if sys.platform == "win32" else {}
+        _, self._engine = await chess.engine.popen_uci(self._path, **flags)
         await self._engine.configure({"Threads": self._threads, "Hash": self._hash_mb})
         self.name = self._engine.id.get("name", "unknown")
         if self._version_file.exists():

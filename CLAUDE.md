@@ -29,6 +29,8 @@ uv run ruff check . && uv run ruff format --check .
 uv run pytest                                     # unit + API, uses a fake engine
 uv run python -m catalog.validate                 # lines against the catalog, names coverage
 scripts/extract-stockfish.sh                      # copies the binary from the image to .cache/
+python3 docker/fetch_stockfish.py desktop         # or: this system's official binary into .cache/
+uv run python scripts/desktop_smoke.py build/dist/chess-trainer/chess-trainer   # after a desktop build
 STOCKFISH_PATH=.cache/stockfish uv run pytest -m engine
 scripts/smoke.sh chess-trainer:local              # health and a real engine move in the image
 E2E_BASE_URL=http://127.0.0.1:8000 uv run pytest -m e2e   # Playwright, desktop

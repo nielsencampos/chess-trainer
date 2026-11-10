@@ -46,6 +46,30 @@ def configure(data_dir: Path) -> None:
     os.environ.setdefault("STOCKFISH_VERSION_FILE", str(stockfish.parent / "VERSION"))
 
 
+def unblock_bundle() -> int:
+    """Removes the "downloaded from the internet" mark from the app's own files (Windows).
+
+    A browser marks a downloaded zip with a `Zone.Identifier` stream, and Explorer copies the
+    mark to every file it extracts. .NET Framework then refuses to load the marked
+    `Python.Runtime.dll`, and pywebview's window cannot start. This runs before pywebview
+    loads .NET. It does nothing outside a frozen Windows build, and skips files it cannot change.
+
+    Returns:
+        int: How many files had the mark.
+    """
+    if sys.platform != "win32" or not getattr(sys, "frozen", False):
+        return 0
+    unblocked = 0
+    for folder, _, files in os.walk(BUNDLE):
+        for name in files:
+            try:
+                os.remove(os.path.join(folder, name) + ":Zone.Identifier")
+                unblocked += 1
+            except OSError:
+                pass  # no mark, or a read-only install
+    return unblocked
+
+
 def running_here(port: int) -> bool:
     """Tells whether chess-trainer already answers on the port.
 
@@ -62,10 +86,12 @@ def running_here(port: int) -> bool:
         with urllib.request.urlopen(f"http://{HOST}:{port}/api/health", timeout=2) as response:
             json.loads(response.read())["engine"]
             return True
-    except urllib.error.URLError as error:
-        if isinstance(error.reason, ConnectionRefusedError):
-            return False
+    except urllib.error.HTTPError as error:
         raise LaunchError(f"port {port} is used by another program") from error
+    except (urllib.error.URLError, TimeoutError, ConnectionError):
+        # Nothing answers. Windows may time out on a closed loopback port instead of refusing.
+        # If a program holds the port without answering, the server fails to bind it instead.
+        return False
     except (OSError, ValueError, KeyError, TypeError) as error:
         raise LaunchError(f"port {port} is used by another program") from error
 
@@ -105,6 +131,8 @@ def main() -> None:
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
+    if unblocked := unblock_bundle():
+        logging.info("removed the downloaded-file mark from %d files", unblocked)
     port = int(os.environ.get("CHESS_TRAINER_PORT", DEFAULT_PORT))
     server = thread = None
     # shortcut: a second launch opens another window on the first one's server, and that
@@ -118,6 +146,10 @@ def main() -> None:
     window = webview.create_window(
         "Chess Trainer", f"http://{HOST}:{port}/", width=1280, height=800, min_size=(1280, 720)
     )
+    if sys.platform == "darwin":
+        from desktop.cocoa_window import install
+
+        install()  # print with the Scoresheet's own margins (desktop/cocoa_window.py)
     hooks = None
     if linux:
         from desktop.qt_window import connect_hooks
@@ -130,7 +162,9 @@ def main() -> None:
         gui="qt" if linux else None,
         private_mode=False,  # keep localStorage (UI preferences) between launches
         storage_path=str(data_dir / "webview"),
-        icon=str(BUNDLE / "desktop" / "icon.png"),
+        # Linux only: Windows takes the icon from the .exe, and its form throws on a PNG icon
+        # (System.Drawing.Icon reads .ico only); macOS takes it from the .app.
+        icon=str(BUNDLE / "desktop" / "icon.png") if linux else None,
     )
     if server is not None:
         server.should_exit = True  # the lifespan stops Stockfish and closes the database
@@ -138,4 +172,9 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        # A windowed build has no console: the log is where a failed launch can be read.
+        logging.exception("the app could not start")
+        raise

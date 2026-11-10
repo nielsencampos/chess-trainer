@@ -1,40 +1,51 @@
-# PyInstaller build of the desktop app (proof of concept, Linux first).
-#   scripts/extract-stockfish.sh    # Stockfish into .cache/ (see desktop/README.md)
+# PyInstaller build of the desktop app, for Linux, Windows and macOS.
+#   python3 docker/fetch_stockfish.py desktop   # this system's Stockfish into .cache/
 #   uv run --group desktop pyinstaller --noconfirm desktop/chess-trainer.spec
-# The result is a folder, dist/chess-trainer/, with the executable inside.
+# The result is a folder, dist/chess-trainer/, with the executable inside; on macOS also
+# dist/Chess Trainer.app.
 # One folder, not one file: a single file unpacks ~150 MB to a temp folder on every launch.
 import re
+import shutil
 import sys
 from pathlib import Path
 
 from PyInstaller.utils.hooks import collect_submodules
 
 ROOT = Path(SPECPATH).parent
+VERSION = re.search(r'__version__ = "(.+)"', (ROOT / "app" / "__init__.py").read_text()).group(1)
 STOCKFISH = ROOT / ".cache" / ("stockfish.exe" if sys.platform == "win32" else "stockfish")
 if not STOCKFISH.exists():
-    sys.exit(f"missing {STOCKFISH}: copy the Stockfish binary there first")
+    sys.exit(f"missing {STOCKFISH}: run python3 docker/fetch_stockfish.py desktop first")
 
 # The app finds its files next to app/ (app/config.py), so they keep their repo paths.
 datas = [
     (str(ROOT / "web"), "web"),
     (str(ROOT / "openings"), "openings"),
     (str(ROOT / "catalog" / "data"), "catalog/data"),
+    (str(ROOT / "catalog" / "SOURCE_COMMIT"), "catalog"),
     (str(ROOT / "evals"), "evals"),
     (str(ROOT / "app" / "engine" / "levels.toml"), "app/engine"),
     (str(ROOT / "app" / "db" / "migrations"), "app/db/migrations"),
     (str(ROOT / "LICENSE"), "."),
     (str(ROOT / "THIRD_PARTY_LICENSES.md"), "."),
-    (str(ROOT / ".cache" / "VERSION"), "stockfish"),
+    # Stockfish's build tag and its license and authors, as fetch_stockfish.py leaves them.
+    *[(str(ROOT / ".cache" / name), "stockfish") for name in ("VERSION", "Copying.txt", "AUTHORS")],
     (str(ROOT / "desktop" / "icon.png"), "desktop"),
 ]
 
 a = Analysis(
     [str(ROOT / "desktop" / "launcher.py")],
     pathex=[str(ROOT)],
-    binaries=[(str(STOCKFISH), "stockfish")],
+    # Not on macOS: PyInstaller thins and re-signs every Mach-O it collects, even as data, and
+    # its copy of the universal Stockfish lost the embedded network (5.5 MB of ~100 MB) and
+    # died with a bus error. It is copied in after the build instead (end of this file).
+    binaries=[] if sys.platform == "darwin" else [(str(STOCKFISH), "stockfish")],
     datas=datas,
     # uvicorn picks its loop and protocol modules by name at run time.
-    hiddenimports=["desktop.qt_window", *collect_submodules("uvicorn")],
+    hiddenimports=[
+        {"linux": "desktop.qt_window", "darwin": "desktop.cocoa_window"}.get(sys.platform, "json"),
+        *collect_submodules("uvicorn"),
+    ],
     excludes=["tkinter", "pytest", "playwright", "PIL"],
 )
 
@@ -71,4 +82,14 @@ if sys.platform == "darwin":
         name="Chess Trainer.app",
         icon=str(ROOT / "desktop" / "icon-macos.png"),  # with the margin of macOS's icon grid
         bundle_identifier="io.github.nielsencampos.chess-trainer",
+        version=VERSION,
+        info_plist={"CFBundleDisplayName": "Chess Trainer", "NSHighResolutionCapable": True},
     )
+
+    # Stockfish, byte for byte, next to its VERSION and license (see Analysis above). The CI
+    # signs the whole bundle ad hoc afterwards, which signs it without thinning it.
+    for folder in (
+        Path(DISTPATH) / "chess-trainer" / "_internal" / "stockfish",
+        Path(DISTPATH) / "Chess Trainer.app" / "Contents" / "Frameworks" / "stockfish",
+    ):
+        shutil.copy2(STOCKFISH, folder / "stockfish")
