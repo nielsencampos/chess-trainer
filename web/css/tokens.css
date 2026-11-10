@@ -1,15 +1,17 @@
 /* Design tokens from brief §4.1. The theme follows the system unless data-theme overrides it. */
 :root {
   color-scheme: light;
-  --bg: #eef1ea;
-  --surface: #ffffff;
-  --surface-2: #f6f8f3;
-  --ink: #18201b;
-  --muted: #5a6a60;
-  --line: #d3dbd0;
-  --accent: #2d6a3e;
-  --accent-soft: #dcebdd;
-  --on-accent: #ffffff;
+  --bg: #ecebe8;
+  --surface: #fbfaf9;
+  --surface-2: #f3f2ef;
+  --ink: #1f1a17;
+  --muted: #5f5a55;
+  --line: #d6d3ce;
+  --accent: #5e7d45;
+  --accent-soft: #e2dfda;
+  --fill: #5e7d45;
+  --on-fill: #fbfaf9;
+  --fill-line: #5e7d45;
   --warn: #a8641c;
   --bad: #b03c2c;
 
@@ -29,15 +31,17 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --bg: #121814;
-    --surface: #1a221d;
-    --surface-2: #202a24;
-    --ink: #e6ece7;
-    --muted: #9aaa9f;
-    --line: #2f3b34;
-    --accent: #78b884;
-    --accent-soft: #233528;
-    --on-accent: #10160f;
+    --bg: #1f1a17;
+    --surface: #2a2420;
+    --surface-2: #332c27;
+    --ink: #eeeed2;
+    --muted: #b3ae98;
+    --line: #463d35;
+    --accent: #8fae6b;
+    --accent-soft: #3a4130;
+    --fill: #8fae6b;
+    --on-fill: #1f1a17;
+    --fill-line: #8fae6b;
     --warn: #e0a35c;
     --bad: #e9806f;
   }
@@ -45,15 +49,17 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #121814;
-  --surface: #1a221d;
-  --surface-2: #202a24;
-  --ink: #e6ece7;
-  --muted: #9aaa9f;
-  --line: #2f3b34;
-  --accent: #78b884;
-  --accent-soft: #233528;
-  --on-accent: #10160f;
+  --bg: #1f1a17;
+  --surface: #2a2420;
+  --surface-2: #332c27;
+  --ink: #eeeed2;
+  --muted: #b3ae98;
+  --line: #463d35;
+  --accent: #8fae6b;
+  --accent-soft: #3a4130;
+  --fill: #8fae6b;
+  --on-fill: #1f1a17;
+  --fill-line: #8fae6b;
   --warn: #e0a35c;
   --bad: #e9806f;
 }
@@ -87,10 +93,4 @@
   font-weight: 700;
   font-display: swap;
   src: url("../fonts/jetbrains-mono-latin-700-normal.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Noto Sans Symbols 2";
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/noto-sans-symbols-2-symbols-400-normal.woff2") format("woff2");
 }

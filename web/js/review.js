@@ -152,7 +152,10 @@ export class Review {
     renderReviewList(byId("movelist"), this.data.moves, node, true);
     if (this.hasClocks) this.renderClocks(node);
     const last = this.data.moves[this.lastPly - 1] ?? null;
-    byId("review-count").textContent = t("review.count", { ply: this.ply, total: this.lastPly });
+    // The position shown, for tests: there is no visible counter.
+    const bar = byId("review-bar");
+    bar.dataset.ply = String(this.ply);
+    bar.dataset.total = String(this.lastPly);
     byId("review-first").disabled = node === null;
     byId("review-prev").disabled = node === null;
     byId("review-next").disabled = node ? node.next === null : last === null;

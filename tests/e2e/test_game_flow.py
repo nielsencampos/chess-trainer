@@ -147,7 +147,7 @@ def test_show_moves_off_hides_the_list_and_the_name_until_the_end(page: Page, se
     expect(page.locator("#moves-box")).to_be_hidden()
     expect(page.locator("#opening-box")).to_be_hidden()
     # Only the Opening and Moves sections go, headings included: the rest of the bar stays.
-    for control in ("#resign", "#piece-set", "#theme-toggle", "#sound-toggle", "#show-moves"):
+    for control in ("#resign", "#theme-toggle", "#sound-toggle", "#show-moves"):
         expect(page.locator(control)).to_be_visible()
 
     resign(page)
@@ -521,36 +521,41 @@ def open_review(page: Page) -> str:
     return name
 
 
+def expect_ply(page: Page, ply: int, total: int) -> None:
+    bar = page.locator("#review-bar")
+    expect(bar).to_have_attribute("data-ply", str(ply))
+    expect(bar).to_have_attribute("data-total", str(total))
+
+
 def test_review_a_saved_game_with_buttons_keys_and_clicks(page: Page):
     page.goto("/")
     name = open_review(page)
-    count = page.locator("#review-count")
-    expect(count).to_have_text("5 / 5")
+    expect_ply(page, 5, 5)
     expect(square(page, "e5")).to_have_attribute("data-piece", "wp")
     expect(page.locator("#bottom-name")).to_have_text(name)
     expect(page.locator("#review-next")).to_be_disabled()
 
     page.locator("#review-prev").click()
-    expect(count).to_have_text("4 / 5")
+    expect_ply(page, 4, 5)
     expect(square(page, "e4")).to_have_attribute("data-piece", "wp")
     page.keyboard.press("ArrowLeft")
-    expect(count).to_have_text("3 / 5")
+    expect_ply(page, 3, 5)
     expect(square(page, "d5")).to_have_attribute("data-piece", "")
     page.keyboard.press("Home")
-    expect(count).to_have_text("0 / 5")
+    expect_ply(page, 0, 5)
     expect(square(page, "e2")).to_have_attribute("data-piece", "wp")
     expect(page.locator("#review-first")).to_be_disabled()
     page.keyboard.press("ArrowRight")
-    expect(count).to_have_text("1 / 5")
+    expect_ply(page, 1, 5)
     page.keyboard.press("End")
-    expect(count).to_have_text("5 / 5")
+    expect_ply(page, 5, 5)
     page.locator("#review-first").click()
-    expect(count).to_have_text("0 / 5")
+    expect_ply(page, 0, 5)
     page.locator("#review-last").click()
-    expect(count).to_have_text("5 / 5")
+    expect_ply(page, 5, 5)
 
     page.locator('#movelist .move[data-ply="2"]').click()
-    expect(count).to_have_text("2 / 5")
+    expect_ply(page, 2, 5)
     expect(page.locator("#movelist .current")).to_have_text("c6")
     assert page.evaluate("document.querySelectorAll('.square.selected').length") == 0
 
@@ -569,14 +574,14 @@ def test_pieces_cannot_be_moved_in_a_review(page: Page):
     open_review(page)
     click_move(page, "g1", "f3")
     expect(square(page, "g1")).to_have_attribute("data-piece", "wn")
-    expect(page.locator("#review-count")).to_have_text("5 / 5")
+    expect_ply(page, 5, 5)
 
 
 def test_play_from_here_goes_to_a_new_game_at_that_move(page: Page):
     page.goto("/")
     open_review(page)
     page.locator('#movelist .move[data-ply="3"]').click()
-    expect(page.locator("#review-count")).to_have_text("3 / 5")
+    expect_ply(page, 3, 5)
     page.locator("#review-play").click()
     expect(page.locator("#review-bar")).to_be_hidden()
     expect(page.locator("#from-saved")).to_be_visible()
@@ -597,7 +602,7 @@ def test_review_a_book_line_and_start_a_game_after_it(page: Page, seed_prefs):
     page.locator("#lines-search").fill(ALAPIN)
     line = page.locator("#lines-tree .variant", has_text="Alapin Variation").first
     line.locator(".view-button").click()
-    expect(page.locator("#review-count")).to_have_text("3 / 3")
+    expect_ply(page, 3, 3)
     expect(page.locator("#review-play")).to_be_hidden()
     expect(line.locator("input")).not_to_be_checked()  # the button does not toggle the checkbox
     page.locator("#tab-new").click()
@@ -645,7 +650,7 @@ def test_chess960_game_can_be_reviewed_but_not_played(page: Page):
     expect(page.locator("#import-summary")).to_contain_text("1 imported")
     page.locator("#tab-saved").click()
     page.locator(".saved-game", has_text=f"Fischer{tag}").locator(".view-button").click()
-    expect(page.locator("#review-count")).to_have_text("2 / 2")
+    expect_ply(page, 2, 2)
     expect(page.locator("#review-play")).to_be_hidden()
     page.keyboard.press("Home")
     expect(square(page, "a1")).to_have_attribute("data-piece", "wn")
@@ -775,7 +780,7 @@ def test_eval_bar_follows_fast_moves_without_a_backlog(page: Page, seed_prefs):
     assert state["most"] == 1
     assert state["sent"] - before < 10
     assert state["open"] == 0
-    expect(page.locator("#review-count")).to_have_text(re.compile(r"^\d+ / \d+$"))
+    expect(page.locator("#review-bar")).to_have_attribute("data-ply", re.compile(r"^\d+$"))
 
 
 def test_import_from_a_site(page: Page):
@@ -851,7 +856,7 @@ def test_review_shows_what_the_pgn_says(page: Page):
     expect(square(page, "g5")).to_have_attribute("data-piece", "wb")
     page.keyboard.press("ArrowLeft")
     page.keyboard.press("ArrowLeft")
-    expect(page.locator("#review-count")).to_have_text("5 / 6")
+    expect_ply(page, 5, 6)
     expect(page.locator("#review-play")).to_be_enabled()
 
     page.keyboard.press("Home")

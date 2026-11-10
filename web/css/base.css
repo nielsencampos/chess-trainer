@@ -61,7 +61,7 @@ select {
 .app-shell {
   position: relative;
   --sidebar-width: 380px;
-  --movebar-width: 280px;
+  --movebar-width: 350px;
   display: grid;
   grid-template-columns: var(--sidebar-width) minmax(0, 1fr) var(--movebar-width);
   height: 100dvh;
@@ -83,18 +83,21 @@ select {
 
 .brand {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   flex: none;
 }
 
-/* Follows the width of the bar: 114 px at the default 380 px. */
+/* A quarter of the width of the bar: 95 px at the default 380 px. */
 .brand-logo {
   display: block;
   flex: none;
-  width: calc(var(--sidebar-width) * 0.3);
+  width: calc(var(--sidebar-width) * 0.25);
   height: auto;
   aspect-ratio: 1;
 }
+
 
 .resizer {
   position: absolute;
@@ -175,8 +178,10 @@ body.is-resizing {
   font-size: 0.85rem;
 }
 
-/* The language sits above the versions, in the left bar's free space. */
-.locale-field {
+/* The language picker sits beside the logo, with no visible label. */
+.locale-picker {
+  min-width: 0;
+  max-width: 100%;
   font-family: var(--font-ui);
 }
 

@@ -6,9 +6,7 @@ import { t } from "./i18n.js";
 const FILES = "abcdefgh";
 const DRAG_THRESHOLD_PX = 4;
 const PROMOTION_PIECES = ["q", "r", "b", "n"];
-const UNICODE_GLYPHS = { k: "♚", q: "♛", r: "♜", b: "♝", n: "♞", p: "♟" };
 
-export const PIECE_SETS = ["merida", "cburnett", "chessnut", "fantasy", "unicode"];
 
 /**
  * @typedef {{to: string, capture: boolean, promotion: boolean}} LegalMove
@@ -47,12 +45,10 @@ export class Board {
   /**
    * @param {HTMLElement} root
    * @param {BoardCallbacks} callbacks
-   * @param {string} pieceSet
    */
-  constructor(root, callbacks, pieceSet = "cburnett") {
+  constructor(root, callbacks) {
     this.root = root;
     this.callbacks = callbacks;
-    this.pieceSet = pieceSet;
     this.orientation = "w";
     this.fen = "";
     /** @type {"w" | "b" | null} */
@@ -95,12 +91,6 @@ export class Board {
     if (color === this.orientation) return;
     this.orientation = color;
     this.buildSquares();
-    this.render();
-  }
-
-  /** @param {string} pieceSet */
-  setPieceSet(pieceSet) {
-    this.pieceSet = pieceSet;
     this.render();
   }
 
@@ -204,17 +194,11 @@ export class Board {
    * @returns {HTMLElement}
    */
   pieceElement(color, type) {
-    if (this.pieceSet === "unicode") {
-      const glyph = document.createElement("span");
-      glyph.className = `piece piece-glyph ${color === "w" ? "white" : "black"}`;
-      glyph.textContent = `${UNICODE_GLYPHS[type]}︎`;
-      return glyph;
-    }
     const image = document.createElement("img");
     image.className = "piece";
     image.alt = `${color}${type}`;
     image.draggable = false;
-    image.src = `pieces/${this.pieceSet}/${color}${type.toUpperCase()}.svg`;
+    image.src = `pieces/merida/${color}${type.toUpperCase()}.svg`;
     return image;
   }
 

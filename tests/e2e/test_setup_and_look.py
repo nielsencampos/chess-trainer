@@ -353,8 +353,8 @@ def background(page: Page) -> str:
     return page.evaluate("getComputedStyle(document.body).backgroundColor")
 
 
-LIGHT_BG = "rgb(238, 241, 234)"
-DARK_BG = "rgb(18, 24, 20)"
+LIGHT_BG = "rgb(236, 235, 232)"
+DARK_BG = "rgb(31, 26, 23)"
 
 
 def test_theme_follows_the_system_and_can_be_overridden(page: Page):
@@ -423,15 +423,13 @@ def drag_handle(page: Page, handle: str, to_x: float) -> None:
     page.mouse.up()
 
 
-def test_dragging_resizes_the_bars_and_the_logo_follows(page: Page):
+def test_dragging_resizes_the_bars(page: Page):
     page.set_viewport_size({"width": 1920, "height": 1080})
     page.goto("/")
     page.locator(".square").first.wait_for()
-    logo_before = width_of(page, ".brand-logo")
 
     drag_handle(page, "#resize-left", 500)
     assert abs(width_of(page, ".sidebar") - 500) <= 1
-    assert width_of(page, ".brand-logo") > logo_before * 1.25
 
     drag_handle(page, "#resize-right", 1920 - 400)
     assert abs(width_of(page, ".movebar") - 400) <= 1
@@ -449,7 +447,9 @@ def test_bar_widths_have_limits_and_keep_room_for_the_board(page: Page):
     page.goto("/")
     page.locator(".square").first.wait_for()
     drag_handle(page, "#resize-left", 50)
-    assert abs(width_of(page, ".sidebar") - 280) <= 1
+    assert abs(width_of(page, ".sidebar") - 350) <= 1
+    drag_handle(page, "#resize-right", 1280 - 50)
+    assert abs(width_of(page, ".movebar") - 350) <= 1
     drag_handle(page, "#resize-left", 1200)
     board = page.locator("#board").bounding_box()
     assert board["width"] >= 320
@@ -582,8 +582,8 @@ def test_logo_is_in_the_header_and_the_browser_tab(page: Page):
     expect(logo).to_have_attribute("alt", "Chess Trainer")
     expect(page).to_have_title("Chess Trainer")
     page.wait_for_function("document.querySelector('.brand-logo').naturalWidth > 0")
-    assert abs(logo.bounding_box()["width"] - 114) <= 1
-    assert abs(logo.bounding_box()["height"] - 114) <= 1
+    assert abs(logo.bounding_box()["width"] - 95) <= 1
+    assert abs(logo.bounding_box()["height"] - 95) <= 1
     assert page.locator('link[rel="icon"]').get_attribute("href") == "logo.svg"
     for path in ("logo.svg", "logo.png"):
         assert page.request.get(f"/{path}").ok

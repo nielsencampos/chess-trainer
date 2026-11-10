@@ -109,26 +109,6 @@
   visibility: hidden;
 }
 
-.piece-glyph {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Noto Sans Symbols 2", "Segoe UI Symbol", serif;
-  font-size: calc(var(--square-size, 60px) * 0.82);
-  line-height: 1;
-}
-
-.piece-glyph.white {
-  color: #fff;
-  -webkit-text-stroke: 0.06em #1b1b1b;
-  paint-order: stroke fill;
-}
-
-.piece-glyph.black {
-  color: #1b1b1b;
-  -webkit-text-stroke: 0.5px #1b1b1b;
-}
-
 .board.can-move .square.movable {
   cursor: grab;
 }
@@ -211,9 +191,9 @@
 }
 
 .clock.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--on-accent);
+  background: var(--fill);
+  border-color: var(--fill-line);
+  color: var(--on-fill);
 }
 
 .clock.low {

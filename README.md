@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="web/logo.png" alt="Chess Trainer logo: a scoresheet with a board on the Vienna Game, a pen and a table clock" width="280">
+  <img src="web/logo.svg" alt="Chess Trainer logo: four board squares with C, T, a pen and a clock" width="160">
 </p>
 
 # chess-trainer

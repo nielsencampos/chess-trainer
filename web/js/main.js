@@ -1,7 +1,7 @@
 // Wires the page together.
 
 import { api } from "./api.js";
-import { Board, PIECE_SETS } from "./board.js";
+import { Board } from "./board.js";
 import { GameController } from "./game.js";
 import { indexOpenings } from "./opening-names.js";
 import { OpeningsScreen } from "./openings.js";
@@ -13,22 +13,10 @@ import { SavedGames } from "./saved.js";
 import { SetupCard } from "./setup.js";
 import { initSoundControls } from "./sound.js";
 import { initTheme } from "./theme.js";
+import { initTooltips } from "./tooltips.js";
 
 /** @param {string} id */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
-
-function initPiecePicker(/** @type {Board} */ board) {
-  const select = byId("piece-set");
-  for (const key of PIECE_SETS) select.add(new Option("", key));
-  localize(select, () => {
-    for (const option of select.options) option.text = t(`board.pieceSet.${option.value}`);
-  });
-  select.value = board.pieceSet;
-  select.addEventListener("change", () => {
-    setPref("pieceSet", select.value);
-    board.setPieceSet(select.value);
-  });
-}
 
 /** Lists the languages that have a UI file; each is named in its own language. */
 async function initLocalePicker() {
@@ -47,13 +35,12 @@ async function initLocalePicker() {
 
 async function main() {
   await initI18n(getPref("locale", "en"));
+  initTooltips();
   void initLocalePicker();
   initTheme(byId("theme-toggle"));
   initLayout();
   initSoundControls(byId("sound-toggle"), byId("sound-volume"));
 
-  const savedSet = getPref("pieceSet", "cburnett");
-  const pieceSet = PIECE_SETS.includes(savedSet) ? savedSet : "cburnett";
   /** @type {GameController} */
   let game;
   const board = new Board(
@@ -65,10 +52,8 @@ async function main() {
       onPremove: (from, to) => game.setPremove(from, to),
       onPremoveCancel: () => game.clearPremove(),
     },
-    pieceSet,
   );
   game = new GameController(board);
-  initPiecePicker(board);
   /** @type {Review | null} */
   let review = null;
   // The board's surroundings belong to the review while one is open, else to the game.

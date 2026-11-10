@@ -35,7 +35,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 | Rules / PGN | python-chess | Parses PGN with variations, validates moves, renders SVG for reports |
 | Engine | Stockfish (official binary, **latest release**) | Driven through `chess.engine` (async) |
 | Database | DuckDB (local file in `./data`) | Book and translations, games, settings |
-| Frontend | Plain HTML + CSS + JS, ES modules, **no build step, no Node** | Types via JSDoc. chessops and piece sets are vendored, no CDN |
+| Frontend | Plain HTML + CSS + JS, ES modules, **no build step, no Node** | Types via JSDoc. chessops and the Merida pieces are vendored, no CDN |
 | Python packaging | uv (`pyproject.toml` + `uv.lock`) | |
 | Container | Multi-stage Dockerfile + `docker-compose.yml` | Slim final image, non-root user, healthcheck |
 | Tests | pytest (backend), Playwright (browser flows) | |
@@ -51,7 +51,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 - The engine never searches for longer than the bot's clock allows. Bot response time "Instant" or "Human" (human-like, based on the clock).
 - "Show moves" checkbox in the right bar, shown only while a game is played, on by default and kept per browser: unchecked hides the opening name and the move list, headings included, during the game (to write moves on paper, or to play without hints), in every time control, and it can be toggled at any moment, mid-game included. Everything shows again at the end of the game. Out-of-theory warning (its own setup option), auto-play next game.
 - End of game: under the move list, the result, variation, how far theory went, deviations, and copy or download the PGN. The board keeps the final position and the left column shows the menu again, with no item active: any of them leaves the game, and New Game starts the next one with the last choices.
-- Green/cream board (a1 is dark), SVG piece sets with a picker (Merida, Cburnett, Chessnut, Fantasy, Unicode), light and dark theme, click **and** drag to move.
+- Green/cream board (a1 is dark), Merida SVG pieces (the only set), light and dark theme, click **and** drag to move.
 - Board flips to the user's color. Coordinates on the left file and bottom rank. Highlights: last move, selected square, legal targets (dot; ring for captures), king in check.
 - Sounds generated in the browser, with no audio files: start, end, move, capture and castling (two knocks). The bot's moves sound slightly lower. An on/off button and a volume control are kept per browser. There is no low-time warning, as in a real game.
 - Promotion picker (Q/R/B/N) as an overlay on the board.
@@ -60,24 +60,26 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 
 ### 4.1 Visual specification
 
-Smallest supported screen: HD (1280x720). Layout: a 380 px sidebar on the left that scrolls on its own (logo, menu, the screen chosen in it, language picker and versions), the board in the middle as the largest square that fits the window, and a 280 px bar on the right with the "Show moves" checkbox (during a game), the opening name, the move list, and under it the end-of-game card, resign, piece picker, theme and sound. With "Show moves" unchecked, the opening name and the move list are hidden with their headings until the end of the game. Both bars can be resized by dragging or with the arrow keys (double-click restores the width), and hidden and shown again with a button that stays visible. The logo follows the width of the left bar, and the board grows into the free space. These choices are kept per browser. Bot name and clock above the board, user name and clock below, status chips under the board ("Your move", "In theory", "Left theory at move N", "Check").
+Smallest supported screen: HD (1280x720). Layout: a 380 px sidebar on the left that scrolls on its own (logo with the language picker beside it, menu, the screen chosen in it, and versions), the board in the middle as the largest square that fits the window, and a 350 px bar on the right with the "Show moves" checkbox (during a game), the opening name, the move list, and under it the end-of-game card, resign, piece picker, theme and sound. With "Show moves" unchecked, the opening name and the move list are hidden with their headings until the end of the game. Both bars can be resized, between 350 and 700 px while leaving room for the board, by dragging or with the arrow keys (double-click restores the width), and hidden and shown again with a button that stays visible. The logo is a quarter of the width of the left bar, and the board grows into the free space. These choices are kept per browser. Bot name and clock above the board, user name and clock below, status chips under the board ("Your move", "In theory", "Left theory at move N", "Check").
 
-Design tokens (CSS custom properties):
+Design tokens (CSS custom properties), taken from the logo: the dark theme uses the Merida ink `#1f1a17` with cream text and green fills, and the light theme is its opposite, near-neutral warm grays with ink text; both keep the board green for buttons and other accents:
 
 | Token | Light | Dark |
 |---|---|---|
-| `--bg` | `#eef1ea` | `#121814` |
-| `--surface` / `--surface-2` | `#ffffff` / `#f6f8f3` | `#1a221d` / `#202a24` |
-| `--ink` / `--muted` | `#18201b` / `#5a6a60` | `#e6ece7` / `#9aaa9f` |
-| `--line` | `#d3dbd0` | `#2f3b34` |
-| `--accent` / `--accent-soft` | `#2d6a3e` / `#dcebdd` | `#78b884` / `#233528` |
+| `--bg` | `#ecebe8` | `#1f1a17` |
+| `--surface` / `--surface-2` | `#fbfaf9` / `#f3f2ef` | `#2a2420` / `#332c27` |
+| `--ink` / `--muted` | `#1f1a17` / `#5f5a55` | `#eeeed2` / `#b3ae98` |
+| `--line` | `#d6d3ce` | `#463d35` |
+| `--accent` / `--accent-soft` | `#5e7d45` / `#e2dfda` | `#8fae6b` / `#3a4130` |
+| `--fill` / `--on-fill` / `--fill-line` (active tab, primary button, selected option, running clock) | `#5e7d45` / `#fbfaf9` / `#5e7d45` | `#8fae6b` / `#1f1a17` / `#8fae6b` |
 | `--warn` / `--bad` | `#a8641c` / `#b03c2c` | `#e0a35c` / `#e9806f` |
 | board light / dark | `#eeeed2` / `#769656` | same |
 | last move / selected | `rgba(246,246,105,.55)` / `.8` | same |
 
+- Logo and favicon: one icon, `web/logo.svg` (and `web/logo.png` for the touch icon), four board squares with C and T on the light diagonal and a pen and a clock on the dark one. It is drawn by hand in the Merida style, on its 50-unit grid and filling the square like a piece: C and T as black pieces (ink `#1f1a17`, white detail lines) on a small stepped base, a fountain pen and a stopwatch as white pieces with a soft shade. It shows as the favicon, and at a quarter of the width of the left bar, at its top.
 - Fonts (Google Fonts, vendored): Familjen Grotesk (UI), JetBrains Mono (clocks, move list, numbers).
 - Theme follows `prefers-color-scheme`, with a manual override.
-- Clock turns accent-colored on the side to move and red under 20 s or 10% of the starting time, whichever is less.
+- Clock takes the fill colors on the side to move and red under 20 s or 10% of the starting time, whichever is less.
 - Move list in scoresheet style: numbered rows, white and black columns, out-of-theory moves in `--warn`, the user's deviation in bold `--bad`.
 
 ## 5. Architecture
@@ -100,7 +102,7 @@ chess-trainer/
 │   ├── css/
 │   ├── js/                # board.js, clock.js, game.js, api.js, i18n.js, setup.js…
 │   ├── i18n/              # en.json, pt-BR.json, es.json
-│   └── pieces/            # SVG piece sets (licenses in THIRD_PARTY_LICENSES.md)
+│   └── pieces/            # Merida SVG pieces (license in THIRD_PARTY_LICENSES.md)
 ├── docs/                  # this brief and other docs
 ├── tests/                 # pytest + Playwright
 ├── .claude/               # project skills (§10)
@@ -115,7 +117,7 @@ chess-trainer/
 **Responsibilities**
 - **Browser:** board, move input, clock, screens. Validates moves locally with chessops for instant feedback.
 - **Server:** source of truth for the repertoire, variation draw, bot moves (book or Stockfish), game recording.
-- Everything ships in the container: FastAPI serves `web/`, so JS, CSS and piece sets come from the image. Nothing loads from a CDN; the app works without internet, except for importing games from a site (§7), which the user starts.
+- Everything ships in the container: FastAPI serves `web/`, so JS, CSS and pieces come from the image. Nothing loads from a CDN; the app works without internet, except for importing games from a site (§7), which the user starts.
 
 ## 6. The book: our JSON files in git, DuckDB as the working store
 
@@ -215,11 +217,11 @@ Game table:
 
 **Chess960:** one of the ways to start in New Game. Instead of choosing openings, a die picks one of the 960 starting positions and the board shows it; the user can roll again or paste the FEN of a starting position. This is the only place a FEN is typed, and it accepts nothing but those 960 positions. There is no book, so Stockfish plays from the first move and no move is marked as in or out of theory. To castle, click the king and then a square between it and the rook, or the rook itself; the rook is needed because a castling may have no free square between them, or only squares that are normal king moves. The game is saved with `[FEN]` and `[Variant "Chess960"]`.
 
-**Review:** saved games and book lines open on a read-only board, moved with buttons, the arrow, Home and End keys, or by clicking a move. The review shows what the PGN says, and computes nothing: the site's classification as the move icon (Chess.com's `[%c_effect]` type, else the NAG: `$3` brilliant, `$1` great, `$6` inaccuracy, `$2` mistake, `$9` miss as Chess.com uses it, `$4` blunder), position symbols (`$15` ⩱ and the like), the clocks above and below the board (`[%clk]`), the time each move took (Chess.com's `[%timestamp]`, else from the clocks and a simple increment), comments without their `[%...]` commands, and the side variations as rows under the move they branch from. A variation move can be clicked and stepped through; a new game starts only from a main-line move. A saved game can start a new game from the move on screen. Chess960 games can be reviewed, but a new game cannot start from them yet.
+**Review:** saved games and book lines open on a read-only board, moved with buttons at the top of the right bar, above the opening name, the arrow, Home and End keys, or by clicking a move. The review shows what the PGN says, and computes nothing: the site's classification as the move icon (Chess.com's `[%c_effect]` type, else the NAG: `$3` brilliant, `$1` great, `$6` inaccuracy, `$2` mistake, `$9` miss as Chess.com uses it, `$4` blunder), position symbols (`$15` ⩱ and the like), the clocks above and below the board (`[%clk]`), the time each move took (Chess.com's `[%timestamp]`, else from the clocks and a simple increment), comments without their `[%...]` commands, and the side variations as rows under the move they branch from. A variation move can be clicked and stepped through; a new game starts only from a main-line move. A saved game can start a new game from the move on screen. Chess960 games can be reviewed, but a new game cannot start from them yet.
 
 **Importing games:** a menu item of its own takes pasted text or a `.pgn` file with one or more games. A bad game is listed with its reason and never stops the others. Duplicates (same players, date and moves) are skipped, except that a duplicate of an imported game replaces the saved PGN when it carries more analysis (NAGs, evaluations, text comments, variations; clocks do not count), such as a game first fetched from a site and then downloaded from its analysis page. A game played here is never replaced. Side variations and comments are kept for the review; only the main line is ever played from. Only PGN is accepted: never a loose FEN, and a `[FEN]` tag only for Chess960. Imported games keep the PGN's result, since the app does not know which side was the user.
 
-**Importing from a site:** the same menu item fetches a player's public games from Lichess or Chess.com by username, for this month or the last 3, 6 or 12 months, and passes them through the same import. It is the only feature that needs internet, and the request is made only when the user asks. Only standard and Chess960 games are asked for; at most the newest 1000 games of the period are kept, and the summary says when the period had more. Lichess games come with clocks, its server analysis when the game had one (`[%eval]`, inaccuracy/mistake/blunder comments and the better line as a variation) and the opening. Chess.com's public API has clocks but no per-move evaluations. Nothing is sent to the sites but the username and the period; no token is used, and exporting to the sites is not planned.
+**Importing from a site:** the same menu item fetches a player's public games from Chess.com or Lichess by username, for this month or the last 3, 6 or 12 months, and passes them through the same import. It is the only feature that needs internet, and the request is made only when the user asks. Only standard and Chess960 games are asked for; at most the newest 1000 games of the period are kept, and the summary says when the period had more. Lichess games come with clocks, its server analysis when the game had one (`[%eval]`, inaccuracy/mistake/blunder comments and the better line as a variation) and the opening. Chess.com's public API has clocks but no per-move evaluations. Nothing is sent to the sites but the username and the period; no token is used, and exporting to the sites is not planned.
 
 Rules:
 - One connection per process, one cursor per request. Uvicorn runs with `--workers 1`.
@@ -262,7 +264,7 @@ Rules:
 - No statistics: the goal is training.
 - Built from scratch; the HTML prototype is not in the repository.
 - English SAN notation always.
-- **License: GPL-3.0.** Compatible with Stockfish and the chosen piece sets. `THIRD_PARTY_LICENSES.md` lists Stockfish, chessops, the openings catalog, the fonts and each piece set. Lichess's Maestro (CC BY-NC-SA) and Alpha (non-commercial) sets are excluded because of their non-commercial terms.
+- **License: GPL-3.0.** Compatible with Stockfish and the Merida pieces. `THIRD_PARTY_LICENSES.md` lists Stockfish, chessops, the openings catalog, the fonts and each piece set. Lichess's Maestro (CC BY-NC-SA) and Alpha (non-commercial) sets are excluded because of their non-commercial terms.
 - Stockfish: always the latest official release, resolved at build time (§9), with an override for a specific version.
 - Stockfish runs only in the container. No Stockfish WASM in the browser; the app does not run without the backend.
 - Openings catalog: import all of `lichess-org/chess-openings` as reference; `openings/` starts with all of its lines.
