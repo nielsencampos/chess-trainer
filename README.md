@@ -2,7 +2,7 @@
   <img src="web/logo.svg" alt="Chess Trainer logo: four board squares with C, T, a pen and a clock" width="160">
 </p>
 
-# chess-trainer
+# Chess Trainer
 
 Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that
 follows the book and flags where you left theory, and review your games from PGN, Lichess or
@@ -55,7 +55,7 @@ Beyond openings:
   during long games. It is not an official scoresheet: it is for training only.
 - **Help:** how to use every screen, in the app's menu.
 
-chess-trainer is for training. Never use it, or any engine, during a game against another person.
+Chess Trainer is for training. Never use it, or any engine, during a game against another person.
 
 **Current state:** the book and games are in DuckDB (`data/chess-trainer.duckdb`). Bot levels are
 provisional. The UI is in English, Brazilian Portuguese and Spanish. See the
@@ -149,7 +149,7 @@ Chess960; todas as partidas salvas, com filtros, exportação em PGN, revisão l
 a partir de qualquer lance (ainda não de uma partida Chess960); importação de PGN colado, de arquivo ou das partidas públicas de um
 jogador no Lichess ou no Chess.com; barra de avaliação do Stockfish na revisão e no fim da partida (uma checagem rápida: para uma
 análise completa, exporte o PGN para o Lichess ou o Chess.com); planilha de anotação A4 para imprimir,
-não oficial, só para treino; e uma Ajuda no menu. O chess-trainer é para treinar: nunca o use, nem
+não oficial, só para treino; e uma Ajuda no menu. O Chess Trainer é para treinar: nunca o use, nem
 qualquer engine, durante uma partida contra outra pessoa.
 
 **Estado atual:** o livro e as partidas ficam no DuckDB, e uma partida não terminada continua quando você reabre a página. Os
@@ -190,7 +190,7 @@ nueva partida desde cualquier jugada (aún no desde una partida Chess960); impor
 de archivo o de las partidas públicas de un jugador en Lichess o Chess.com; barra de evaluación de
 Stockfish en la revisión y al final de la partida (una revisión rápida: para un análisis completo,
 exporta el PGN a Lichess o Chess.com); planilla de anotación A4 para imprimir, no oficial, solo para
-entrenar; y una Ayuda en el menú. chess-trainer es para entrenar: nunca lo uses, ni ningún motor,
+entrenar; y una Ayuda en el menú. Chess Trainer es para entrenar: nunca lo uses, ni ningún motor,
 durante una partida contra otra persona.
 
 **Estado actual:** el libro y las partidas están en DuckDB, y una partida sin terminar continúa cuando
