@@ -114,9 +114,9 @@ def test_migrations_apply_once(tmp_path):
         tmp_path (Path): A temporary folder for this test.
     """
     database = open_database(tmp_path / "test.duckdb")
-    assert apply_migrations(database) == [1, 2, 3, 4, 5]
+    assert apply_migrations(database) == [1, 2, 3, 4, 5, 6]
     assert apply_migrations(database) == []
-    assert count(database, "schema_migrations") == 5
+    assert count(database, "schema_migrations") == 6
     database.close()
 
 

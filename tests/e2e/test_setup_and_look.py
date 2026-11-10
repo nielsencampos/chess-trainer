@@ -325,7 +325,30 @@ def test_time_controls_and_levels_are_offered(page: Page):
             "No clock",
         ]
     )
-    expect(page.locator("#level option")).to_have_text(["Warm-up", "Club", "Strong", "Max"])
+    expect(page.locator("#level option")).to_have_text(
+        ["Warm-up (800-)", "Club (1320)", "Strong (1900)", "Master (2600)", "Max (3500+)"]
+    )
+
+
+def test_bot_deviation_option_shows_its_choices(page: Page):
+    """The bot deviation option shows its two choices while on, and is hidden for Chess960.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
+    page.goto("/")
+    expect(page.locator("#deviate-options")).to_be_hidden()
+    page.locator("#opt-deviate").check()
+    expect(page.locator("#deviate-options")).to_be_visible()
+    expect(page.locator("#deviate-from option")).to_have_text(["3", "4", "5", "6", "7"])
+    expect(page.locator("#deviate-chance option")).to_have_text(
+        ["20%", "30%", "40%", "50%", "60%", "70%"]
+    )
+    expect(page.locator("#deviate-from")).to_have_value("3")
+    expect(page.locator("#deviate-chance")).to_have_value("30")
+    page.locator('input[name="new-mode"][value="chess960"]').check(force=True)
+    expect(page.locator("#deviate-toggle")).to_be_hidden()
+    expect(page.locator("#deviate-options")).to_be_hidden()
 
 
 def test_a_removed_saved_time_control_falls_back_to_the_default(page: Page, seed_prefs):

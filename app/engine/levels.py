@@ -6,7 +6,7 @@ from pathlib import Path
 
 import chess.engine
 
-LEVEL_ORDER = ("warmup", "club", "strong", "max")
+LEVEL_ORDER = ("warmup", "club", "strong", "master", "max")
 
 
 @dataclass(frozen=True)
@@ -15,11 +15,13 @@ class Level:
 
     Attributes:
         key (str): The level's key, one of `LEVEL_ORDER`.
+        elo (str): The nominal rating shown beside the level's name, such as `1320` or `3500+`.
         options (dict[str, int | bool]): UCI options set while the bot plays, such as `Skill Level`.
         limit (chess.engine.Limit): How long or deep the bot searches.
     """
 
     key: str
+    elo: str
     options: dict[str, int | bool]
     limit: chess.engine.Limit
 
@@ -34,16 +36,21 @@ def load_levels(path: Path) -> dict[str, Level]:
         dict[str, Level]: The levels by key, in `LEVEL_ORDER`.
 
     Raises:
-        ValueError: The file does not define exactly the levels in `LEVEL_ORDER`.
+        ValueError: The file does not define exactly the levels in `LEVEL_ORDER`, or a level has
+            no `elo`.
     """
     with path.open("rb") as handle:
         raw = tomllib.load(handle)["levels"]
     if set(raw) != set(LEVEL_ORDER):
         raise ValueError(f"{path}: levels must be exactly {LEVEL_ORDER}, got {sorted(raw)}")
+    for key in LEVEL_ORDER:
+        if not isinstance(raw[key].get("elo"), str) or not raw[key]["elo"]:
+            raise ValueError(f"{path}: level {key} needs an `elo` string")
     limit_keys = {"depth": "depth", "nodes": "nodes", "movetime": "time"}
     return {
         key: Level(
             key=key,
+            elo=raw[key]["elo"],
             options=raw[key]["options"],
             limit=chess.engine.Limit(
                 **{limit_keys[name]: value for name, value in raw[key]["limit"].items()}
@@ -51,3 +58,22 @@ def load_levels(path: Path) -> dict[str, Level]:
         )
         for key in LEVEL_ORDER
     }
+
+
+def load_deviation_max_loss(path: Path) -> int:
+    """Reads how much worse than the best move a bot deviation from the engine may be.
+
+    Args:
+        path (Path): The levels file, with a `[bot_deviation]` table.
+
+    Returns:
+        int: The most a deviation may lose, in centipawns.
+
+    Raises:
+        ValueError: The file has no non-negative integer `bot_deviation.max_loss_cp`.
+    """
+    with path.open("rb") as handle:
+        value = tomllib.load(handle).get("bot_deviation", {}).get("max_loss_cp")
+    if not isinstance(value, int) or isinstance(value, bool) or value < 0:
+        raise ValueError(f"{path}: bot_deviation.max_loss_cp must be a non-negative integer")
+    return value

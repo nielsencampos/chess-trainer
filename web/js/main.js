@@ -7,6 +7,7 @@ import { indexOpenings } from "./opening-names.js";
 import { OpeningsScreen } from "./openings.js";
 import { availableLocales, getLocale, initI18n, localize, onLocaleChange, setLocale, t } from "./i18n.js";
 import { initLayout } from "./layout.js";
+import { setLevelRatings } from "./levels.js";
 import { getPref, setPref } from "./prefs.js";
 import { Review } from "./review.js";
 import { SavedGames } from "./saved.js";
@@ -71,13 +72,14 @@ async function main() {
   onLocaleChange(() => (review?.active ? review.relocalize() : game.relocalize()));
 
   try {
-    const [{ repertoires }, { levels, default: defaultLevel }, timeControls, health] = await Promise.all([
+    const [{ repertoires }, { levels, elo, default: defaultLevel }, timeControls, health] = await Promise.all([
       api.repertoires(),
       api.levels(),
       api.timeControls(),
       api.health(),
     ]);
     indexOpenings(repertoires);
+    setLevelRatings(elo);
     const setup = new SetupCard(
       repertoires,
       levels,

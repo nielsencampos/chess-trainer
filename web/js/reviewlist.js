@@ -11,7 +11,7 @@ import { moveIcon } from "./icons.js";
  *   ply: number, san: string, uci: string, fen: string,
  *   kind?: import("./icons.js").MoveIconKind, symbol?: string, comment?: string,
  *   eval?: {cp: number | null, mate: number | null}, clock_ms?: number, spent_ms?: number,
- *   variations?: ReviewMove[][], book?: boolean, deviation?: boolean,
+ *   variations?: ReviewMove[][], book?: boolean, deviation?: boolean, bot_deviation?: boolean,
  *   id: number, main: boolean, prev: ReviewMove | null, next: ReviewMove | null,
  * }} ReviewMove
  */
@@ -152,12 +152,14 @@ function mainCell(move, current, showTheoryMarks) {
   cell.dataset.ply = String(move.ply);
   cell.classList.toggle("current", move === current);
   if (showTheoryMarks) {
-    cell.classList.add(move.deviation ? "deviation" : move.book ? "book" : "out");
+    cell.classList.add(move.deviation || move.bot_deviation ? "deviation" : move.book ? "book" : "out");
   }
   const icon = markOf(move, showTheoryMarks);
   if (icon) {
-    cell.append(moveIcon(icon, t(`icon.${icon}`)));
-    cell.title = t(`icon.${icon}`);
+    // The bot's deviation shares the user's icon, with its own name.
+    const title = !move.kind && move.bot_deviation ? t("icon.botDeviation") : t(`icon.${icon}`);
+    cell.append(moveIcon(icon, title));
+    cell.title = title;
   }
   cell.append(sanOf(move));
   if (move.spent_ms !== undefined) {
@@ -179,7 +181,7 @@ function mainCell(move, current, showTheoryMarks) {
 function markOf(move, showTheoryMarks) {
   if (move.kind) return move.kind;
   if (!showTheoryMarks) return null;
-  if (move.deviation) return "deviation";
+  if (move.deviation || move.bot_deviation) return "deviation";
   return move.book ? "book" : null;
 }
 

@@ -170,13 +170,26 @@ class MoveRecord:
 
 
 @dataclass(frozen=True, slots=True)
+class BotDeviationSetup:
+    """When the bot may leave its line on purpose (brief §6, bot deviation).
+
+    Attributes:
+        from_move (int): The first full-move number the bot rolls the die on.
+        chance (int): The chance of deviating on each roll, in percent.
+    """
+
+    from_move: int
+    chance: int
+
+
+@dataclass(frozen=True, slots=True)
 class Deviation:
-    """A user move that left theory where the selected lines had a move.
+    """A move that left theory where the selected lines had a move: the user's or the bot's.
 
     Attributes:
         ply (int): The move's ply.
         played_san (str): The move played.
-        expected_san (tuple[str, ...]): The theory moves.
+        expected_san (tuple[str, ...]): The theory moves; for the bot, its line's move.
     """
 
     ply: int
@@ -257,6 +270,8 @@ class GameSession:
         started_at (datetime): When the game started, UTC.
         moves (list[MoveRecord]): The moves played.
         deviations (list[Deviation]): The user's deviations.
+        bot_deviation_setup (BotDeviationSetup | None): When the bot may deviate, or None.
+        bot_deviation (Deviation | None): The bot's deviation, once it deviated.
         in_theory (bool): Whether the game is still in theory.
         theory_until_ply (int): The last ply in theory.
         outcome (GameResult | None): How the game ended, or None while it runs.
@@ -320,6 +335,8 @@ class GameSession:
         self.started_at = datetime.now(UTC)
         self.moves: list[MoveRecord] = []
         self.deviations: list[Deviation] = []
+        self.bot_deviation_setup: BotDeviationSetup | None = None
+        self.bot_deviation: Deviation | None = None
         self.in_theory = chess960_position is None
         self.theory_until_ply = 0
         self.outcome: GameResult | None = None
@@ -431,6 +448,77 @@ class GameSession:
         moves = self.variant.moves.get(epd)
         return self.rng.choice(moves) if moves else None
 
+    def rolls_for_deviation(self) -> bool:
+        """Whether the bot rolls the die now: it is on, unused, in theory and from its move on.
+
+        Call it only when the bot has a book move to play.
+
+        Returns:
+            bool: True if the bot rolls.
+        """
+        setup = self.bot_deviation_setup
+        return (
+            setup is not None
+            and self.bot_deviation is None
+            and self.in_theory
+            and self.chess960_position is None
+            and not self.is_user_turn
+            and self.board.fullmove_number >= setup.from_move
+        )
+
+    def roll_deviation(self) -> bool:
+        """Rolls the die for a bot deviation.
+
+        Returns:
+            bool: True on a hit, with the setup's chance.
+        """
+        setup = self.bot_deviation_setup
+        return setup is not None and self.rng.randrange(100) < setup.chance
+
+    def deviation_candidates(self, moves: Sequence[str]) -> list[str]:
+        """The moves that would leave the selected lines from the current position.
+
+        A move that transposes into a selected line stays in theory, so it is left out.
+
+        Args:
+            moves (Sequence[str]): Moves in UCI, legal in the current position.
+
+        Returns:
+            list[str]: The moves no selected line plays here and that reach none of their
+                positions, in the given order.
+        """
+        selected = self.selection.moves_at(self.board.epd())
+        return [uci for uci in moves if uci not in selected and not self._reaches_selection(uci)]
+
+    def play_bot_deviation(
+        self,
+        move: chess.Move,
+        source: Literal["book", "engine"],
+        expected_san: str,
+        bot_clock_ms: int | None = None,
+        think_ms: int | None = None,
+    ) -> MoveRecord:
+        """Plays the bot's deviation: the game leaves theory and the deviation is recorded.
+
+        Args:
+            move (chess.Move): The move, outside the selected lines.
+            source (Literal["book", "engine"]): Where it came from.
+            expected_san (str): The move the bot's line had.
+            bot_clock_ms (int | None): The bot's clock after the move.
+            think_ms (int | None): How long the move took, delay included.
+
+        Returns:
+            MoveRecord: The move.
+
+        Raises:
+            GameFinishedError: The game is over.
+        """
+        if self.is_over:
+            raise GameFinishedError(self.game_id)
+        self.bot_deviation = Deviation(self.ply + 1, self.board.san(move), (expected_san,))
+        self.in_theory = False
+        return self._push(move, "bot", source, bot_clock_ms, think_ms)
+
     def play_bot_move(
         self,
         move: chess.Move,
@@ -498,6 +586,8 @@ class GameSession:
         self.deviations = [
             deviation for deviation in self.deviations if deviation.ply < shown_plies
         ]
+        if self.bot_deviation is not None and self.bot_deviation.ply >= shown_plies:
+            self.bot_deviation = None
         if self.chess960_position is None:
             self.in_theory = self.moves[-1].in_theory if self.moves else True
         self.theory_until_ply = max(
@@ -548,8 +638,19 @@ class GameSession:
         """
         if move.uci() in self.selection.moves_at(self.board.epd()):
             return True
+        return self._reaches_selection(move.uci())
+
+    def _reaches_selection(self, uci: str) -> bool:
+        """Whether a move reaches a position of a selected line.
+
+        Args:
+            uci (str): The move in UCI, not yet played.
+
+        Returns:
+            bool: True if a selected line passes through the position after it.
+        """
         after = self.board.copy(stack=False)
-        after.push(move)
+        after.push_uci(uci)
         return self.selection.has_position(after.epd())
 
     def _push(
@@ -635,7 +736,7 @@ class GameSession:
         return "1-0" if user_won == (self.user_color == chess.WHITE) else "0-1"
 
     def pgn(self) -> str:
-        """The game as PGN: tags, `[%clk]` on each move and deviations as comments.
+        """The game as PGN: tags, `[%clk]` on each move and both sides' deviations as comments.
 
         Returns:
             str: The PGN.
@@ -666,6 +767,9 @@ class GameSession:
             deviation = deviations.get(record.ply)
             if deviation is not None:
                 node.comment = f"Deviation: expected {', '.join(deviation.expected_san)}"
+            bot = self.bot_deviation
+            if bot is not None and bot.ply == record.ply:
+                node.comment = f"Bot deviation: line expected {', '.join(bot.expected_san)}"
             if record.clock_ms_after is not None:
                 node.set_clock(record.clock_ms_after / 1000)
         output = io.StringIO()

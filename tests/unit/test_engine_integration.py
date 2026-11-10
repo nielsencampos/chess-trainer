@@ -109,6 +109,28 @@ def test_evaluation_is_full_strength_and_from_whites_side(stockfish_path):
     asyncio.run(run())
 
 
+def test_evaluation_can_search_only_some_moves(stockfish_path):
+    """With root moves, the evaluation's best move is one of them (used by bot deviations).
+
+    Args:
+        stockfish_path (str): The real Stockfish binary, from `STOCKFISH_PATH`.
+    """
+
+    async def run() -> None:
+        """Runs the test's steps against a real Stockfish process."""
+        engine = StockfishEngine(stockfish_path, 1, 16, Path("/nonexistent"))
+        await engine.start()
+        try:
+            board = chess.Board()
+            allowed = [chess.Move.from_uci("a2a3"), chess.Move.from_uci("h2h3")]
+            _, best = await engine.evaluate(board, 0.2, allowed)
+            assert best in allowed
+        finally:
+            await engine.stop()
+
+    asyncio.run(run())
+
+
 def test_engine_restarts_after_a_crash(stockfish_path):
     """Engine restarts after a crash.
 

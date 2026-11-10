@@ -91,17 +91,20 @@ def test_repertoires_are_all_catalog_families(client):
 
 
 def test_levels(client):
-    """The levels endpoint lists the four levels, weakest first.
+    """The levels endpoint lists the five levels, weakest first, with their nominal ratings.
 
     Args:
         client (TestClient): The API on a fresh copy of the database, with the fake engine.
     """
-    assert client.get("/api/engine/levels").json()["levels"] == [
-        "warmup",
-        "club",
-        "strong",
-        "max",
-    ]
+    body = client.get("/api/engine/levels").json()
+    assert body["levels"] == ["warmup", "club", "strong", "master", "max"]
+    assert body["elo"] == {
+        "warmup": "800-",
+        "club": "1320",
+        "strong": "1900",
+        "master": "2600",
+        "max": "3500+",
+    }
 
 
 def test_time_controls_are_grouped(client):

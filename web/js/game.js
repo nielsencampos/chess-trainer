@@ -7,6 +7,7 @@ import { renderEndCard } from "./endcard.js";
 import { openingName } from "./opening-names.js";
 import { EvalBar } from "./evalbar.js";
 import { t } from "./i18n.js";
+import { levelLabel } from "./levels.js";
 import { renderMoveList } from "./movelist.js";
 import { getPref, setPref } from "./prefs.js";
 import { premoveDestinations } from "./premove.js";
@@ -50,6 +51,8 @@ export class GameController {
     this.plies = [];
     this.inTheory = true;
     this.leftTheoryAtMove = null;
+    /** @type {{ply: number, move_number: number, played_san: string, expected_san: string[]} | null} The bot's deviation. */
+    this.botDeviation = null;
     /** @type {{from: string, to: string} | null} */
     this.premove = null;
     /** @type {{eco: string, name: string} | null} */
@@ -209,6 +212,7 @@ export class GameController {
           warning: setup.warning,
           premoves: setup.premoves,
         },
+        bot_deviation: setup.deviate ?? undefined,
       });
     } catch (error) {
       if (generation === this.generation) this.onServerError(error);
@@ -243,6 +247,7 @@ export class GameController {
     this.plies = [];
     this.inTheory = !setup.chess960;
     this.leftTheoryAtMove = null;
+    this.botDeviation = null;
     this.over = false;
     this.gameId = null;
     this.clearPremove();
@@ -305,6 +310,7 @@ export class GameController {
     this.gameId = game.state.game_id;
     this.inTheory = game.state.in_theory;
     this.leftTheoryAtMove = game.state.left_theory_at_move;
+    this.botDeviation = game.state.bot_deviation ?? null;
     this.opening = game.state.opening;
 
     const botColor = this.userColor === "w" ? "b" : "w";
@@ -440,6 +446,7 @@ export class GameController {
     });
     this.inTheory = botMove.in_theory;
     this.leftTheoryAtMove ??= this.inTheory ? null : state.left_theory_at_move;
+    this.botDeviation = state.bot_deviation ?? null;
     this.showPosition([botMove.uci.slice(0, 2), botMove.uci.slice(2, 4)]);
     this.opening = botMove.opening ?? this.opening;
     this.renderOpening();
@@ -511,6 +518,7 @@ export class GameController {
     for (const ply of this.plies) this.rules.moveSan(ply.san);
     this.inTheory = state.in_theory;
     this.leftTheoryAtMove = state.left_theory_at_move;
+    this.botDeviation = state.bot_deviation ?? null;
     this.opening = state.opening ?? null;
     // White moves first, so a ply's index says whose it was.
     const white = this.plies.filter((_, index) => index % 2 === 0).length;
@@ -603,6 +611,15 @@ export class GameController {
   }
 
   /**
+   * The plies for the move list, with the bot's deviation marked.
+   * @returns {import("./movelist.js").PlyView[]} The plies.
+   */
+  markedPlies() {
+    const ply = this.botDeviation?.ply;
+    return this.plies.map((view, index) => (index + 1 === ply ? { ...view, botDeviation: true } : view));
+  }
+
+  /**
    * Shows the end-of-game card, the final move list and the evaluation bar.
    * @param {any} summary  The API's GameSummary.
    * @param {number} generation  The game the answer belongs to; an older one is ignored.
@@ -617,6 +634,7 @@ export class GameController {
     }));
     this.inTheory = summary.state.in_theory;
     this.leftTheoryAtMove = summary.state.left_theory_at_move;
+    this.botDeviation = summary.state.bot_deviation ?? null;
     this.opening = summary.state.opening ?? this.opening;
     this.renderOpening();
 
@@ -625,7 +643,7 @@ export class GameController {
     renderEndCard(summary);
     byId("end-card").hidden = false;
     byId("resign").hidden = true;
-    renderMoveList(byId("movelist"), this.plies, true);
+    renderMoveList(byId("movelist"), this.markedPlies(), true);
     this.renderChips();
     this.showMenu();
     this.evalBar.show(this.rules.fen(), this.rules.chess960, this.userColor);
@@ -688,7 +706,7 @@ export class GameController {
     this.renderNames(this.setup);
     this.renderOpening();
     if (this.summary) {
-      renderMoveList(byId("movelist"), this.plies, true);
+      renderMoveList(byId("movelist"), this.markedPlies(), true);
       renderEndCard(this.summary);
     } else {
       this.renderMoves();
@@ -724,7 +742,7 @@ export class GameController {
   renderMoves() {
     // Without a book, no move is in or out of theory.
     const showMarks = (this.setup?.warning ?? true) && !this.setup?.chess960;
-    renderMoveList(byId("movelist"), this.plies, showMarks);
+    renderMoveList(byId("movelist"), this.markedPlies(), showMarks);
   }
 
   /**
@@ -734,7 +752,7 @@ export class GameController {
    */
   renderNames(setup) {
     byId("top-name").textContent = setup
-      ? t("player.bot", { level: t(`level.${setup.level}`) })
+      ? t("player.bot", { level: levelLabel(setup.level) })
       : t("player.botIdle");
     byId("bottom-name").textContent = t("player.you");
   }
@@ -780,6 +798,8 @@ export class GameController {
     if (warning || this.over) {
       if (this.inTheory) {
         chips.push([t("chip.inTheory"), "chip-accent"]);
+      } else if (this.botDeviation) {
+        chips.push([t("chip.botDeviated", { move: this.botDeviation.move_number }), "chip-warn"]);
       } else if (this.leftTheoryAtMove !== null) {
         chips.push([t("chip.leftTheory", { move: this.leftTheoryAtMove }), "chip-warn"]);
       }

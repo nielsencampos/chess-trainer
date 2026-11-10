@@ -69,7 +69,7 @@ def test_switching_mid_game_keeps_the_game(page: Page, seed_prefs):
     expect(page.locator("#chips .chip").first).to_have_text("Tu turno")
     expect(page.locator("#chips")).to_contain_text("En teoría")
     expect(page.locator("#resign")).to_have_text("Abandonar")
-    expect(page.locator("#top-name")).to_have_text("Bot · Calentamiento")
+    expect(page.locator("#top-name")).to_have_text("Bot · Calentamiento (800-)")
     expect(page.locator("#bottom-name")).to_have_text("Tú")
     expect(page.locator("#game-card")).to_be_visible()
     expect(page.locator("#movelist .move").first).to_have_text("e4")

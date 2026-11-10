@@ -2,6 +2,7 @@
 
 import asyncio
 import logging
+from collections.abc import Sequence
 from pathlib import Path
 from typing import Protocol
 
@@ -52,13 +53,17 @@ class MoveEngine(Protocol):
         ...
 
     async def evaluate(
-        self, board: chess.Board, time_s: float
+        self,
+        board: chess.Board,
+        time_s: float,
+        root_moves: Sequence[chess.Move] | None = None,
     ) -> tuple[chess.engine.PovScore, chess.Move | None]:
         """Evaluates a position at full strength.
 
         Args:
             board (chess.Board): The position.
             time_s (float): How long to search, in seconds.
+            root_moves (Sequence[chess.Move] | None): Only these moves are searched, if given.
 
         Returns:
             tuple[chess.engine.PovScore, chess.Move | None]: The score and the best move, if any.
@@ -157,13 +162,17 @@ class StockfishEngine:
                 raise EngineUnavailableError(str(error)) from error
 
     async def evaluate(
-        self, board: chess.Board, time_s: float
+        self,
+        board: chess.Board,
+        time_s: float,
+        root_moves: Sequence[chess.Move] | None = None,
     ) -> tuple[chess.engine.PovScore, chess.Move | None]:
         """Evaluates a position at full strength: level options apply only while the bot plays.
 
         Args:
             board (chess.Board): The position.
             time_s (float): How long to search, in seconds.
+            root_moves (Sequence[chess.Move] | None): Only these moves are searched, if given.
 
         Returns:
             tuple[chess.engine.PovScore, chess.Move | None]: The score and the best move, if any.
@@ -173,24 +182,28 @@ class StockfishEngine:
         """
         async with self._lock:
             try:
-                return await self._analyse(board, time_s)
+                return await self._analyse(board, time_s, root_moves)
             except (chess.engine.EngineError, EngineUnavailableError) as error:
                 logger.warning("engine failed (%s), restarting", error)
             try:
                 await self.stop()
                 await self.start()
-                return await self._analyse(board, time_s)
+                return await self._analyse(board, time_s, root_moves)
             except (chess.engine.EngineError, OSError) as error:
                 raise EngineUnavailableError(str(error)) from error
 
     async def _analyse(
-        self, board: chess.Board, time_s: float
+        self,
+        board: chess.Board,
+        time_s: float,
+        root_moves: Sequence[chess.Move] | None = None,
     ) -> tuple[chess.engine.PovScore, chess.Move | None]:
         """Runs one analysis, without the lock or the restart.
 
         Args:
             board (chess.Board): The position.
             time_s (float): How long to search, in seconds.
+            root_moves (Sequence[chess.Move] | None): Only these moves are searched, if given.
 
         Returns:
             tuple[chess.engine.PovScore, chess.Move | None]: The score and the first move of the PV.
@@ -200,7 +213,9 @@ class StockfishEngine:
         """
         if self._engine is None:
             raise EngineUnavailableError("engine is not running")
-        info = await self._engine.analyse(board, chess.engine.Limit(time=time_s))
+        info = await self._engine.analyse(
+            board, chess.engine.Limit(time=time_s), root_moves=root_moves
+        )
         score = info.get("score")
         if score is None:
             raise EngineUnavailableError("engine returned no score")
