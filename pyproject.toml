@@ -20,6 +20,7 @@ desktop = [
     "pywebview[qt]>=6 ; sys_platform == 'linux'",
 ]
 dev = [
+    "codespell>=2.4.3",
     "httpx>=0.27",
     "pillow>=13.0.0",
     "pytest>=8",
@@ -49,3 +50,9 @@ select = ["E", "F", "I", "UP", "B", "SIM", "RUF", "D"]
 # Every module, class and function has a docstring with Args, Returns and Raises (Google style).
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+# Spelling of code, comments and docstrings (scripts/check_text.py checks the prose).
+[tool.codespell]
+skip = "./.venv,./.cache,./build,./data,./catalog/data,./openings,./evals,./web/js/vendor,./web/fonts,./web/pieces,./web/help,*.lock,*.svg,*.webp,*.png,*.pt-BR.*,*.es.*,README.md,./docs,./web/i18n"
+# PyInstaller's `datas`, a name, and Spanish and Portuguese words the tests quote.
+ignore-words-list = "datas,flor,variante,oficial"
