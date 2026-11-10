@@ -27,7 +27,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 2. Split it into modules: Python backend, ES-module JavaScript frontend, book in JSON files loaded into DuckDB.
 3. Run with `docker compose up` from a single image containing Python, Stockfish and the frontend.
 4. Store the book and games in a local DuckDB file (no browser storage for data).
-5. UI and opening names in **English and Brazilian Portuguese (pt-BR)**, structured so new languages (Spanish is next) need no code changes.
+5. UI and opening names in **English, Brazilian Portuguese (pt-BR) and Spanish (es)**, structured so new languages need no code changes.
 
 ## 3. Stack (decided)
 
@@ -119,7 +119,7 @@ chess-trainer/
 ├── docker-compose.yml
 ├── LICENSE                # GPL-3.0
 ├── THIRD_PARTY_LICENSES.md
-└── README.md              # English, with a pt-BR section
+└── README.md              # English, with pt-BR and es sections
 ```
 
 **Responsibilities**
@@ -224,7 +224,7 @@ Migrations are tracked in `schema_migrations`. UI preferences are not in the dat
 
 **Decision (2026-11-07):** this is a training tool, so it keeps no statistics. Games are saved to continue them and to export them.
 
-**Resuming:** opening the page always continues an unfinished game, after a reload, a closed tab, a restarted container or a powered-off computer. Clocks stop while the app is closed and continue from the values of the last saved move. Resigning is how a game is given up. A premove is not saved.
+**Resuming:** opening the page always continues an unfinished game, after a reload, a closed tab, a restarted container or a powered-off computer. Clocks stop while the app is closed and continue from the values of the last saved move. Resigning is how a game is given up. A premove is not saved. A game whose lines left the book, or whose saved game was deleted, goes on without theory.
 
 **PGN:** the Seven Tag Roster plus `ECO`, `Opening`, `TimeControl`, `Termination` and `VariantId`, with `[%clk]` on each move and deviations as comments. It can be copied or downloaded at the end of a game. The "Saved games" tab lists finished games with filters, and exports the selected ones into one PGN file, oldest first. It also deletes the selected ones for good, after a second click as for Resign; an active game cannot be deleted, only resigned.
 
@@ -272,7 +272,7 @@ Rules:
   - **ponytail** — the smallest change that fully solves the task; levels `lite`, `full`, `ultra`.
   - **ponytail-review** — reviews a change (a diff, a branch, a PR): correct, safe, tested, lean.
   - **ponytail-audit** — audits the whole repository and ranks what to fix. It changes nothing.
-- **Review before 1.0.0** (decided 2026-11-10): the release of 1.0.0 is preceded by a complete review of the project, which starts by running `/ponytail-audit` on the whole repository, reading every part (the first audit, on 2026-11-10, read only the backend's riskiest paths), and `/ponytail-review` on each PR that fixes its findings. Already known from the first audit: the server accepts any `Host` header, so a site that points its domain at 127.0.0.1 (DNS rebinding) could read and delete saved games; allow only `localhost` and `127.0.0.1`, with a setting for those who expose the app on their network. The review also covers the desktop app on the three systems.
+- **Review before 1.0.0** (decided 2026-11-10): the release of 1.0.0 is preceded by a complete review of the project, which starts by running `/ponytail-audit` on the whole repository, reading every part (the first audit, on 2026-11-10, read only the backend's riskiest paths), and `/ponytail-review` on each PR that fixes its findings. An audit of the whole repository ran on 2026-11-10; it read the frontend logic, `catalog/`, the e2e tests and the desktop's native code only in part. Its findings are fixed: the server answers only to `localhost` and `127.0.0.1` (against DNS rebinding), and `CHESS_TRAINER_ALLOWED_HOSTS` adds names for those who expose the app on their network; a desktop release fails when its tag does not match the app's version. The review also covers the desktop app on the three systems.
 - Skills planned, none written yet:
   - **add-opening** — takes a PGN or Lichess study, writes it in the format of §6, validates, runs tests and opens a PR.
   - **review-catalog** — checks a new catalog commit against `openings/`: what changed and what to accept.
