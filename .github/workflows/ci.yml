@@ -25,6 +25,31 @@ jobs:
         run: uv run pytest
       - name: Opening files validation
         run: uv run python -m catalog.validate
+      - name: Spelling of code, comments and docstrings
+        run: uv run codespell
+
+  text:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.3.3
+      - run: uv sync --frozen
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: actions/cache@v6.1.0
+        with:
+          path: |
+            .cache/LanguageTool-*
+            .cache/bin/vale
+          key: text-tools-${{ hashFiles('scripts/languagetool.sh', 'scripts/vale.sh') }}
+      - name: Grammar and spelling of the docs and UI strings (LanguageTool)
+        run: |
+          scripts/languagetool.sh --background
+          uv run python scripts/check_text.py
+      - name: Style of the docs and UI strings (Vale)
+        run: scripts/vale.sh
 
   image:
     strategy:
