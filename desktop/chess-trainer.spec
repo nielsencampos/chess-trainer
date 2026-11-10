@@ -35,8 +35,10 @@ datas = [
 a = Analysis(
     [str(ROOT / "desktop" / "launcher.py")],
     pathex=[str(ROOT)],
-    binaries=[(str(STOCKFISH), "stockfish")],
-    datas=datas,
+    # On macOS PyInstaller strips and re-signs the binaries it collects; that copy of the
+    # universal Stockfish died with SIGBUS on Intel. As data it is copied byte for byte.
+    binaries=[] if sys.platform == "darwin" else [(str(STOCKFISH), "stockfish")],
+    datas=datas + ([(str(STOCKFISH), "stockfish")] if sys.platform == "darwin" else []),
     # uvicorn picks its loop and protocol modules by name at run time.
     hiddenimports=[
         {"linux": "desktop.qt_window", "darwin": "desktop.cocoa_window"}.get(sys.platform, "json"),

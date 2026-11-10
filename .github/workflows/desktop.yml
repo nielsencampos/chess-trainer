@@ -93,6 +93,12 @@ jobs:
           codesign --verify --deep --strict "build/dist/Chess Trainer.app"
           uv run --no-project python scripts/desktop_smoke.py "build/dist/Chess Trainer.app/Contents/MacOS/chess-trainer"
 
+      - name: macOS Stockfish report
+        if: runner.os == 'macOS' && failure()
+        run: |
+          sf="$(find "build/dist/Chess Trainer.app" -name stockfish -type f | head -1)"
+          ls -l "$sf"; file "$sf"; codesign -dv "$sf" 2>&1 || true
+          echo quit | "$sf" || echo "exit code $?"
       - name: Package
         run: |
           mkdir -p build/out
