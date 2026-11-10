@@ -246,7 +246,7 @@ Rules:
 - A build arg `STOCKFISH_VERSION` defaults to `latest` and can be set to a specific tag to reproduce an old build or work around a bad release. Only `sf_19` or newer is accepted (older releases have no universal binary and no Linux arm64 build); anything older fails the build with a clear message.
 - The resolved version is recorded: `/api/health` and a `VERSION` file in the image are the authority, shown in the UI footer, and stored per game (`games.engine_name`). The image label holds the version that was requested, because a `LABEL` is fixed before the download runs; it names a real version only when a tag is passed explicitly (as CI does).
 - Updating = rebuilding the image (`docker compose build --pull`). A scheduled CI job (weekly) rebuilds and runs the tests against the newest release, so a breaking Stockfish change is caught early.
-- Four levels (Warm-up, Club, Strong, Max) mapped to `Skill Level` + depth/movetime, configurable in a file. Evaluate `UCI_LimitStrength`/`UCI_Elo` for a ~1200 level; note `UCI_Elo` has a floor (around 1320 in recent versions).
+- Five levels mapped to `Skill Level`, `UCI_LimitStrength`/`UCI_Elo` and depth/movetime, configurable in `app/engine/levels.toml`. Each shows a nominal rating beside its name: Warm-up (800-), Club (1320), Strong (1900), Master (2600), Max (3500+). The ratings are on Stockfish's `UCI_Elo` scale, chosen on 2026-11-10 and not measured; they are not Lichess or Chess.com ratings. `UCI_Elo` has a floor of 1320, so Warm-up limits the search instead.
 - One long-lived Stockfish process behind a queue: one search at a time.
 - The "Human" response time is decided by the backend, based on the clock.
 

@@ -195,13 +195,21 @@ async def locales(request: Request) -> dict:
 
 
 @router.get("/engine/levels")
-async def levels() -> dict:
-    """`GET /api/engine/levels`: the bot's levels, weakest first.
+async def levels(request: Request) -> dict:
+    """`GET /api/engine/levels`: the bot's levels, weakest first, with their nominal ratings.
+
+    Args:
+        request (Request): The request, for the levels loaded at start.
 
     Returns:
-        dict: `levels` and the `default` level.
+        dict: `levels`, the `elo` shown beside each level's name, and the `default` level.
     """
-    return {"levels": list(LEVEL_ORDER), "default": "club"}
+    loaded = request.app.state.levels
+    return {
+        "levels": list(LEVEL_ORDER),
+        "elo": {key: loaded[key].elo for key in LEVEL_ORDER},
+        "default": "club",
+    }
 
 
 @router.get("/time-controls")

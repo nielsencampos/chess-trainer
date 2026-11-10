@@ -80,6 +80,7 @@ def create_app(
     app.state.evaluator = Evaluator(engine, load_book_evals(database))
     app.state.games = GameService(book, engine, levels, GameStore(database), rng, opening_names)
     app.state.database = database
+    app.state.levels = levels
     app.state.fetch_url = fetch_url
     app.state.i18n_dir = settings.web_dir / "i18n"
     app.include_router(router)

@@ -5,6 +5,7 @@ import { api } from "./api.js";
 import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
 import { openingName, openingSearchText } from "./opening-names.js";
 import { OpeningTree } from "./opening-tree.js";
+import { levelLabel } from "./levels.js";
 import { getPref, setPref } from "./prefs.js";
 
 
@@ -137,7 +138,7 @@ export class SetupCard {
 
   /** Writes the level and clock names, which change with the language. */
   renderOptions() {
-    for (const option of byId("level").options) option.text = t(`level.${option.value}`);
+    for (const option of byId("level").options) option.text = levelLabel(option.value);
     const timeSelect = byId("time-control");
     for (const group of this.timeControls.groups) {
       const optgroup = timeSelect.querySelector(`optgroup[data-group="${group.key}"]`);

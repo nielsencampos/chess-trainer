@@ -325,7 +325,9 @@ def test_time_controls_and_levels_are_offered(page: Page):
             "No clock",
         ]
     )
-    expect(page.locator("#level option")).to_have_text(["Warm-up", "Club", "Strong", "Max"])
+    expect(page.locator("#level option")).to_have_text(
+        ["Warm-up (800-)", "Club (1320)", "Strong (1900)", "Master (2600)", "Max (3500+)"]
+    )
 
 
 def test_a_removed_saved_time_control_falls_back_to_the_default(page: Page, seed_prefs):

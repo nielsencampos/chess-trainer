@@ -80,10 +80,10 @@ def test_engine_budget_follows_the_clock():
 
 def test_limit_uses_the_shorter_of_level_and_budget():
     """Limit uses the shorter of level and budget."""
-    level = Level("x", {}, chess.engine.Limit(time=1.0))
+    level = Level("x", "1500", {}, chess.engine.Limit(time=1.0))
     assert limit_for(level, None).time == 1.0
     assert limit_for(level, 0.2).time == 0.2
     assert limit_for(level, 5.0).time == 1.0
-    deep = Level("y", {}, chess.engine.Limit(depth=2))
+    deep = Level("y", "1500", {}, chess.engine.Limit(depth=2))
     assert limit_for(deep, 0.2).time == 0.2
     assert limit_for(deep, 0.2).depth == 2

@@ -7,6 +7,7 @@ import { renderEndCard } from "./endcard.js";
 import { openingName } from "./opening-names.js";
 import { EvalBar } from "./evalbar.js";
 import { t } from "./i18n.js";
+import { levelLabel } from "./levels.js";
 import { renderMoveList } from "./movelist.js";
 import { getPref, setPref } from "./prefs.js";
 import { premoveDestinations } from "./premove.js";
@@ -734,7 +735,7 @@ export class GameController {
    */
   renderNames(setup) {
     byId("top-name").textContent = setup
-      ? t("player.bot", { level: t(`level.${setup.level}`) })
+      ? t("player.bot", { level: levelLabel(setup.level) })
       : t("player.botIdle");
     byId("bottom-name").textContent = t("player.you");
   }

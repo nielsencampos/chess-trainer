@@ -3,22 +3,35 @@
 # Stockfish 19 notes: UCI_Elo has a floor of 1320, and the Stockfish FAQ estimates
 # Skill Level 0 at about 1347, so anything weaker has to come from limiting the search.
 #
-# Each level sets `options` (UCI options) and a search `limit`: depth, nodes and/or
-# movetime in seconds. Skill Level and UCI_LimitStrength are always set explicitly,
-# because options carry over between searches of the long-lived process.
+# Each level sets `elo` (the rating shown beside its name), `options` (UCI options) and a
+# search `limit`: depth, nodes and/or movetime in seconds. Skill Level and UCI_LimitStrength
+# are always set explicitly, because options carry over between searches of the long-lived
+# process.
+#
+# `elo` is nominal, on Stockfish's scale, and has not been measured: it is not a Lichess or
+# Chess.com rating. Warm-up's and Max's are rough bounds chosen by the user.
 
 [levels.warmup]
+elo = "800-"
 options = { "Skill Level" = 0, "UCI_LimitStrength" = false }
 limit = { depth = 2, movetime = 0.1 }
 
 [levels.club]
+elo = "1320"
 options = { "Skill Level" = 20, "UCI_LimitStrength" = true, "UCI_Elo" = 1320 }
 limit = { movetime = 0.3 }
 
 [levels.strong]
+elo = "1900"
 options = { "Skill Level" = 20, "UCI_LimitStrength" = true, "UCI_Elo" = 1900 }
 limit = { movetime = 0.5 }
 
+[levels.master]
+elo = "2600"
+options = { "Skill Level" = 20, "UCI_LimitStrength" = true, "UCI_Elo" = 2600 }
+limit = { movetime = 0.8 }
+
 [levels.max]
+elo = "3500+"
 options = { "Skill Level" = 20, "UCI_LimitStrength" = false }
 limit = { movetime = 1.0 }
