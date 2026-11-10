@@ -67,8 +67,8 @@ es = []
 
 [ignore]
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.
-# Fragments joined by the app (", +{seconds} s", "expected {expected}") and labels quoted in a
-# sentence ("Mostrar lances" unticked) read as errors on their own.
+# Fragments joined by the app (", +{seconds} s", "expected {expected}") and labels named in a
+# sentence read as errors on their own.
 en = [
     { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
     { text = "expected", rule = "UPPERCASE_SENTENCE_START" },
@@ -82,7 +82,6 @@ pt-BR = [
     { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
     { text = "esperado", rule = "UPPERCASE_SENTENCE_START" },
     { text = "Nf3 .", rule = "SPACE_BEFORE_PUNCTUATION2" },
-    { text = "lances desmarcado", rule = "GENERAL_NUMBER_AGREEMENT_ERRORS" },
     { text = ", Voltar", rule = "UPPERCASE_AFTER_COMMA" },  # the "Voltar lance" button
     { text = "chip Apple", rule = "GENERAL_GENDER_AGREEMENT_ERRORS" },
     { text = "processador Intel", rule = "GENERAL_GENDER_AGREEMENT_ERRORS" },
@@ -93,7 +92,6 @@ pt-BR = [
 es = [
     { text = "se", rule = "UPPERCASE_SENTENCE_START" },
     { text = "s", rule = "SINGLE_CHARACTER" },
-    { text = "desmarcado", rule = "AGREEMENT_POSTPONED_ADJ" },
     { text = "partidas", rule = "AGREEMENT_POSTPONED_ADJ" },
     { text = "una primero", rule = "AGREEMENT_DET_ADJ" },  # "importa una primero": una partida
     { text = "Maestro", rule = "ES_QUESTION_MARK" },
