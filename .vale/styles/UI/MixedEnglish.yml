@@ -1,0 +1,42 @@
+# The pt-BR and es UI is in its own language. Chess words players use as they are (blitz,
+# bullet, rating, streamer), names, PGN and SAN are fine; these English words are not.
+extends: existence
+message: "'%s' is English; use the word of this language."
+level: error
+ignorecase: true
+tokens:
+  - the
+  - and
+  - with
+  - your
+  - you
+  - game
+  - games
+  - move
+  - moves
+  - board
+  - engine
+  - backend
+  - frontend
+  - launcher
+  - issue
+  - click
+  - default
+  - settings
+  - setup
+  - download
+  - upload
+  - browser
+  - feedback
+  - bug
+  - deviation
+  - opening
+  - player
+  - level
+  - theme
+  - sound
+  - clock
+  - delay
+  - increment
+  - premove
+  - premoves

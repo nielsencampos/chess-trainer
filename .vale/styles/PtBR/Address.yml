@@ -1,0 +1,15 @@
+# pt-BR speaks to the reader as "você", never "tu" or "o senhor".
+extends: existence
+message: "Use 'você' as the form of address, not '%s'."
+level: error
+ignorecase: true
+tokens:
+  - tu
+  - teu
+  - teus
+  - tua
+  - tuas
+  - contigo
+  - o senhor
+  - a senhora
+  - vós

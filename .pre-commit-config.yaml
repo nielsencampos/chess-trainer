@@ -1,0 +1,10 @@
+# Checks run on each commit: `uvx pre-commit install` once. CI runs the same checks.
+repos:
+  - repo: local
+    hooks:
+      - id: codespell
+        name: codespell (code, comments and docstrings)
+        entry: uv run codespell
+        language: system
+        pass_filenames: false  # the skip list in pyproject.toml applies to the whole tree
+        types: [text]

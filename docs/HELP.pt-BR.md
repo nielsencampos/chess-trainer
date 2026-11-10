@@ -8,7 +8,7 @@ O Chess Trainer é para treinar: pratique suas aberturas contra um bot que joga 
 
 > **Nunca use para trapacear**
 >
-> Não use o Chess Trainer, nem qualquer engine, durante uma partida contra outra pessoa, online ou no tabuleiro. Isso é trapaça, e o Chess.com, o Lichess e a FIDE proíbem. Treine antes e depois das partidas, nunca durante.
+> Não use o Chess Trainer, nem qualquer motor de xadrez, durante uma partida contra outra pessoa, online ou no tabuleiro. Isso é trapaça, e o Chess.com, o Lichess e a FIDE proíbem. Treine antes e depois das partidas, nunca durante.
 
 > **A avaliação aqui é simples**
 >

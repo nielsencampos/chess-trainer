@@ -1,0 +1,27 @@
+# es speaks to the reader as "tú", never "usted": no usted pronouns or imperatives.
+extends: existence
+message: "Use 'tú' as the form of address, not '%s'."
+level: error
+ignorecase: true
+tokens:
+  - usted
+  - ustedes
+  - elija
+  - haga
+  - pulse
+  - seleccione
+  - escriba
+  - introduzca
+  - utilice
+  - descargue
+  - instale
+  - ejecute
+  - cierre
+  - marque
+  - desmarque
+  - guarde
+  - juegue
+  - mueva
+  - vuelva
+  - consulte
+  - espere

@@ -1,0 +1,102 @@
+# What scripts/check_text.py allows. Words of the book's opening names (openings/) and SAN moves
+# are always allowed. Add here only what LanguageTool gets wrong, never a real error.
+
+[allow]
+# Product, tool and proper names, chess terms and abbreviations, in every language.
+all = [
+    # The product, its tools and the systems it runs on.
+    "Chess", "Trainer", "Stockfish", "DuckDB", "FastAPI", "Uvicorn", "PyInstaller", "pywebview", "codespell",
+    "platformdirs", "chessops", "JSDoc", "pytest", "uv", "Familjen", "Grotesk", "SmartScreen",
+    "WebView2", "Safari", "Compose", "README", "HOW_TO_INSTALL", "Releases", "Assets", "Runtime",
+    "arm64", "amd64", "zip", "Merida", "Lichess", "Chessmaster", "SNES", "CBX",
+    # Chess terms and abbreviations.
+    "PGN", "FEN", "SAN", "EPD", "UCI", "NAG", "NAGs", "FIDE", "ICCF", "WIM", "DGT", "Elo",
+    "Chess960", "Ajedrez960", "bullet", "Bullet", "blitz", "Blitz", "premove", "premoves",
+    "Premove",
+    # People, channels and works on the About page (proper names are never translated).
+    "agadmator", "Anatoly", "Botez", "BotezLive", "Chessflix", "Chessly", "Danya", "Evandro",
+    "Fernández", "GothamChess", "Henrique", "Hikaru", "Josh", "Judit", "Krikor", "Leitão",
+    "Levy", "Mamedyarov", "Mekhitarian", "Mequinho", "Mikhail", "Nakamura", "Niemann",
+    "Polgár", "Radić", "Rozman", "Shakhriyar", "Supi", "Vasyl", "Waitzkin", "Garry", "Bobby",
+    "Random", "How",
+    # The language links at the top of each document.
+    "English", "Português", "português", "Español", "español", "Brasil",
+]
+en = [
+    "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
+    "es", "pt", "cp", "arg", "pgn", "uci", "san", "epd", "db-migration", "Versão", "Versión", "abajo", "abaixo",
+    # A quote of Mecking's nickname, kept in Portuguese.
+    "xadrez", "grande", "mestre",
+]
+pt-BR = [
+    "streamer", "streamers", "azerbaijano", "pt", "En",
+    "Failed", "launcher",  # quoting an English error message
+    "backend",  # the author's own words on the About page
+    "issue",  # GitHub's word, linked
+]
+es = [
+    "streamer", "streamers", "premovimiento", "premovimientos", "Premovimiento",
+    "semiprofesional", "semiprofesionales", "desincroniza", "min", "US", "Em",
+    "xadrez", "um", "mestre",
+    "launcher",  # quoting an English error message
+    "backend",  # the author's own words on the About page
+    "issue",  # GitHub's word, linked
+]
+
+[disabled]
+# LanguageTool rule ids that do not fit this project, for every language or one of them.
+all = []
+en = [
+    "ENGLISH_WORD_REPEAT_BEGINNING_RULE",  # i18n strings are separate texts
+    "PRP_COMMA", "MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE", "COMMA_COMPOUND_SENTENCE_2",
+    "BY_DEFAULT_COMMA", "NO_COMMA_BEFORE_SO", "THE_SUPERLATIVE",  # optional commas and style
+    "ID_CASING",  # `id` is the field's name
+    "EN_COMPOUNDS_AUTO_PLAY", "RECOMMENDED_COMPOUNDS",
+]
+pt-BR = [
+    "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+    # Chess players say "rating", and "app" and "script" are the usual words.
+    "PT_BARBARISMS_REPLACE_APP", "PT_BARBARISMS_REPLACE_RATING", "PT_BARBARISMS_REPLACE_SCRIPT",
+    # Style suggestions, not errors.
+    "PT_WORDINESS_REPLACE_AINDA_ESTÁ", "PT_WORDINESS_REPLACE_AINDA_ESTÃO",
+    "PT_WORDINESS_REPLACE_POR_CAUSA_DO", "PT_WORDINESS_REPLACE_A_NÃO_SER_QUE", "DEPOIS_DE_APÓS",
+    "VERB_COMMA_CONJUNCTION",
+    "NUMBER_ABREVIATION",  # "Nº" on the scoresheet
+]
+es = []
+
+[ignore]
+# One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.
+# Fragments joined by the app (", +{seconds} s", "expected {expected}") and labels quoted in a
+# sentence ("Mostrar lances" unticked) read as errors on their own.
+en = [
+    { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
+    { text = "expected", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
+    # Lowercase names in the brief's lists.
+    { text = "ponytail-audit", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "release", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "applications", rule = "POSSESSIVE_APOSTROPHE" },  # "the applications menu"
+]
+pt-BR = [
+    { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
+    { text = "esperado", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "Nf3 .", rule = "SPACE_BEFORE_PUNCTUATION2" },
+    { text = "lances desmarcado", rule = "GENERAL_NUMBER_AGREEMENT_ERRORS" },
+    { text = ", Voltar", rule = "UPPERCASE_AFTER_COMMA" },  # the "Voltar lance" button
+    { text = "chip Apple", rule = "GENERAL_GENDER_AGREEMENT_ERRORS" },
+    { text = "processador Intel", rule = "GENERAL_GENDER_AGREEMENT_ERRORS" },
+    { text = "Este", rule = "AO90_CARDINAL_POINTS_CASING" },  # macOS's "Sobre Este Mac"
+    { text = "to", rule = "DIACRITICS" },  # quoting the English error "Failed to execute"
+    { text = "onde", rule = "CONFUSÃO_AONDE_ONDE" },  # "Para onde vim", the author's own words
+]
+es = [
+    { text = "se", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "s", rule = "SINGLE_CHARACTER" },
+    { text = "desmarcado", rule = "AGREEMENT_POSTPONED_ADJ" },
+    { text = "partidas", rule = "AGREEMENT_POSTPONED_ADJ" },
+    { text = "una primero", rule = "AGREEMENT_DET_ADJ" },  # "importa una primero": una partida
+    { text = "Maestro", rule = "ES_QUESTION_MARK" },
+    { rule = "PHRASE_REPETITION", text = "[chess.com](https://www.chess.com/) · [youtube.com/@chess](https://www.youtube.com/@chess) ·" },  # "Oh no, my queen!" is quoted in English
+]
+
