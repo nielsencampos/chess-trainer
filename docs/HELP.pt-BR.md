@@ -8,18 +8,18 @@ O Chess Trainer é para treinar: pratique suas aberturas contra um bot que joga 
 
 > **Nunca use para trapacear**
 >
-> Não use o Chess Trainer, nem qualquer engine, durante uma partida contra outra pessoa, online ou no tabuleiro. Isso é trapaça, e o Lichess, o Chess.com e a FIDE proíbem. Treine antes e depois das partidas, nunca durante.
+> Não use o Chess Trainer, nem qualquer engine, durante uma partida contra outra pessoa, online ou no tabuleiro. Isso é trapaça, e o Chess.com, o Lichess e a FIDE proíbem. Treine antes e depois das partidas, nunca durante.
 
 > **A avaliação aqui é simples**
 >
-> A barra de avaliação e os ícones dos lances (melhor lance, erro, capivarada…) vêm de uma checagem rápida do Stockfish e são só uma dica. Para uma análise de verdade, exporte o PGN e analise no Lichess, no Chess.com ou em outra ferramenta de análise.
+> A barra de avaliação e os ícones dos lances (melhor lance, erro, capivarada…) vêm de uma checagem rápida do Stockfish e são só uma dica. Para uma análise de verdade, exporte o PGN e analise no Chess.com, no Lichess ou em outra ferramenta de análise.
 
 ## Começar uma partida
 
 - Abertura: escolha sua cor e marque as aberturas e variantes para treinar. Cada variante marcada tem a mesma chance de ser sorteada. Jogar um lance de uma variante que você não marcou conta como sair da teoria.
 - Partida salva: treine a linha de uma partida que você jogou ou importou, com seus lances conferidos, ou continue jogando a partir de qualquer posição dela.
 - Chess960: sorteie uma posição inicial ou cole o FEN de uma das 960. Para rocar, clique no rei e depois numa casa entre ele e a torre, ou na própria torre.
-- Nível do bot: o rating ao lado de cada nível é nominal, na escala do próprio Stockfish, e não foi medido. Não é um rating do Lichess nem do Chess.com.
+- Nível do bot: o rating ao lado de cada nível é nominal, na escala do próprio Stockfish, e não foi medido. Não é um rating do Chess.com nem do Lichess.
 - Ritmo: os ritmos de um relógio de torneio de verdade, do bullet ao clássico, ou sem relógio. O tempo de resposta do bot é Humano, que gasta o relógio como uma pessoa, ou Instantâneo.
 - Opções: avisar ao sair da teoria, permitir pré-lances e deixar o bot desviar da linha de propósito, a partir de um lance escolhido, para você treinar também contra surpresas.
 
@@ -80,4 +80,4 @@ O Chess Trainer é para treinar: pratique suas aberturas contra um bot que joga 
 ## Analise em outro lugar
 
 - Pegue o PGN no quadro de fim de partida ou em Partidas salvas.
-- No Lichess ou no Chess.com, abra o tabuleiro de análise e cole ou importe o PGN, para uma análise completa e mais forte.
+- No Chess.com ou no Lichess, abra o tabuleiro de análise e cole ou importe o PGN, para uma análise completa e mais forte.

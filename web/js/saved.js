@@ -148,7 +148,7 @@ export class SavedGames {
   }
 
   /**
-   * Fetches a player's games from Lichess or Chess.com and imports them.
+   * Fetches a player's games from Chess.com or Lichess and imports them.
    * @returns {Promise<void>}
    */
   async importRemote() {

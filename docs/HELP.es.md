@@ -8,18 +8,18 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 
 > **Nunca lo uses para hacer trampa**
 >
-> No uses Chess Trainer, ni ningún motor, durante una partida contra otra persona, en línea o sobre el tablero. Eso es trampa, y Lichess, Chess.com y la FIDE lo prohíben. Entrena antes y después de tus partidas, nunca durante.
+> No uses Chess Trainer, ni ningún motor, durante una partida contra otra persona, en línea o sobre el tablero. Eso es trampa, y Chess.com, Lichess y la FIDE lo prohíben. Entrena antes y después de tus partidas, nunca durante.
 
 > **La evaluación aquí es básica**
 >
-> La barra de evaluación y los iconos de las jugadas (mejor jugada, error, error grave…) salen de una revisión rápida de Stockfish y son solo una pista. Para un análisis de verdad, exporta el PGN y analízalo en Lichess, Chess.com u otra herramienta de análisis.
+> La barra de evaluación y los iconos de las jugadas (mejor jugada, error, error grave…) salen de una revisión rápida de Stockfish y son solo una pista. Para un análisis de verdad, exporta el PGN y analízalo en Chess.com, Lichess u otra herramienta de análisis.
 
 ## Empezar una partida
 
 - Apertura: elige tu color y marca las aperturas y variantes que quieres practicar. Cada variante marcada tiene la misma probabilidad de salir. Jugar una jugada de una variante que no marcaste cuenta como salir de la teoría.
 - Partida guardada: entrena la línea de una partida que jugaste o importaste, con tus jugadas comprobadas, o sigue jugando desde cualquiera de sus posiciones.
 - Chess960: sortea una posición inicial o pega el FEN de una de las 960. Para enrocar, haz clic en el rey y luego en una casilla entre él y la torre, o en la propia torre.
-- Nivel del bot: el Elo junto a cada nivel es nominal, en la escala propia de Stockfish, y no se ha medido. No es un Elo de Lichess ni de Chess.com.
+- Nivel del bot: el Elo junto a cada nivel es nominal, en la escala propia de Stockfish, y no se ha medido. No es un Elo de Chess.com ni de Lichess.
 - Ritmo de juego: los ritmos de un reloj de torneo real, del bullet al clásico, o sin reloj. El tiempo de respuesta del bot es Humano, que gasta su reloj como una persona, o Instantáneo.
 - Opciones: avisar al salir de la teoría, permitir premovimientos y dejar que el bot se desvíe de su línea a propósito, desde una jugada elegida, para entrenar también contra sorpresas.
 
@@ -80,4 +80,4 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 ## Analiza en otro sitio
 
 - Toma el PGN del cuadro de fin de partida o de Partidas guardadas.
-- En Lichess o Chess.com, abre el tablero de análisis y pega o importa el PGN, para un análisis completo y más fuerte.
+- En Chess.com o Lichess, abre el tablero de análisis y pega o importa el PGN, para un análisis completo y más fuerte.

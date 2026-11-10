@@ -1023,7 +1023,7 @@ def test_eval_bar_follows_fast_moves_without_a_backlog(page: Page, seed_prefs):
 def test_import_from_a_site(page: Page):
     """Import from a site.
 
-    The site's answer is faked here: browser tests never reach Lichess or Chess.com.
+    The site's answer is faked here: browser tests never reach Chess.com or Lichess.
 
     Args:
         page (Page): A fresh page at 1280x720; an uncaught page error fails the test.

@@ -4,14 +4,14 @@
 > **For contributors and AI agents:** read this file before changing anything. If something here is unclear or contradicts the code, ask before inventing.
 
 **Repository:** `chess-trainer` (public, GPL-3.0)
-**Description:** Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that follows the book and flags where you left theory, and review your games from PGN, Lichess or Chess.com with an evaluation bar. Chess960 included. English, Portuguese and Spanish, all in one Docker image, no accounts.
+**Description:** Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that follows the book and flags where you left theory, and review your games from PGN, Chess.com or Lichess with an evaluation bar. Chess960 included. English, Portuguese and Spanish, all in one Docker image, no accounts.
 **Topics:** `chess` `chess-trainer` `chess-openings` `chess960` `pgn` `stockfish` `python-chess` `fastapi` `duckdb` `docker`
 
 ---
 
 ## 1. Context
 
-chess-trainer is an **open-source chess trainer** you run on your own machine. It started as an opening trainer, which is still its core: you pick a color and the openings/variations you want to drill; a bot plays the book lines at random, and when theory ends (or someone leaves it) Stockfish takes over. Every game is saved, and it shows at the end where you left theory. Around that it has grown into a place to train in general: games against Stockfish with real clock presets, Chess960, starting from any saved game, and a review board for your own games, imported from PGN, Lichess or Chess.com, with an evaluation bar.
+chess-trainer is an **open-source chess trainer** you run on your own machine. It started as an opening trainer, which is still its core: you pick a color and the openings/variations you want to drill; a bot plays the book lines at random, and when theory ends (or someone leaves it) Stockfish takes over. Every game is saved, and it shows at the end where you left theory. Around that it has grown into a place to train in general: games against Stockfish with real clock presets, Chess960, starting from any saved game, and a review board for your own games, imported from PGN, Chess.com or Lichess, with an evaluation bar.
 
 It started as a personal single-file HTML prototype. This project rebuilds it from scratch as a modular application: Python backend, plain JavaScript frontend, Stockfish and DuckDB, all in one Docker image. The prototype is **not** part of the repository; §4 and §4.1 are the full specification of the expected behavior and look.
 
@@ -59,7 +59,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 - Premove: while the bot thinks, one move can be queued. It plays as soon as the bot replies if it is legal, and is dropped otherwise. It promotes to a queen. Clicking elsewhere or right-clicking cancels it, and an option in the setup turns it off.
 - Resign needs a second click to confirm (no browser dialogs).
 - Help and Scoresheet, menu items, show as pages in the board area in place of the board; the left bar keeps only the menu. Scoresheet: a printable A4 scoresheet modeled on an official one (event, site, date, round, board, time control, opening, both players with rating, FIDE or national ID and club, 120 numbered moves in four columns, result, and the signatures of both players and the arbiter). It carries the logo and says, on screen and on paper, that it is not official and is for training only. It is in the chosen language, shows scaled to the area on screen, and prints alone on one page, or saves as PDF, from the browser's print dialog.
-- Help: how to use each screen, in collapsible sections, with pictures and short animations of the real app in the chosen language (`web/help/<locale>/*.webp`, made by `scripts/help_media.py` from a running app: run it again after a visible UI change). The same guide is in the repository as `docs/HELP.md`, `docs/HELP.pt-BR.md` and `docs/HELP.es.md`, written from the Help page's strings by `scripts/help_docs.py`; a test fails while they are out of date. It opens with two notices: never use the app, or any engine, during a game against another person; and the evaluation here is a quick hint, so a real analysis belongs on Lichess, Chess.com or another tool, from the exported PGN.
+- Help: how to use each screen, in collapsible sections, with pictures and short animations of the real app in the chosen language (`web/help/<locale>/*.webp`, made by `scripts/help_media.py` from a running app: run it again after a visible UI change). The same guide is in the repository as `docs/HELP.md`, `docs/HELP.pt-BR.md` and `docs/HELP.es.md`, written from the Help page's strings by `scripts/help_docs.py`; a test fails while they are out of date. It opens with two notices: never use the app, or any engine, during a game against another person; and the evaluation here is a quick hint, so a real analysis belongs on Chess.com, Lichess or another tool, from the exported PGN.
 
 ### 4.1 Visual specification
 
@@ -247,7 +247,7 @@ Rules:
 - Opening and variation names come from the `names` table (loaded from the `names` of each `openings/` file, §6), falling back to `en`.
 - The name of a position (the Lichess catalog's, in English: during a game, on the end-of-game card, in reviews and saved games) is shown in the chosen language. Every catalog name is the `opening` of a book line and reads as its family's name, a separator and the line's name, so the browser rebuilds it from their translations. An untranslated line keeps its English name after the translated family; a name that does not split that way stays in English. PGN `Opening` tags stay in English.
 - Default locale `en`, switchable with a language picker beside the logo, at the top of the left bar, and kept per browser, like the other UI preferences. Switching redraws the page in place, mid-game included; a key a language lacks falls back to English. The picker lists every file in `web/i18n`, each named by its own `locale.name` key.
-- Move notation: **always English SAN**, in every language (PGN, Lichess and Chess.com standard). Possible future option: figurine notation.
+- Move notation: **always English SAN**, in every language (PGN, Chess.com and Lichess standard). Possible future option: figurine notation.
 - Adding a language = one UI file in `web/i18n` plus that locale in the `names` of the `openings/` files, no code changes. UI files exist for `en`, `pt-BR` and `es`; the pt-BR and es files were reviewed on 2026-11-09.
 
 ## 9. Engine
@@ -256,7 +256,7 @@ Rules:
 - A build arg `STOCKFISH_VERSION` defaults to `latest` and can be set to a specific tag to reproduce an old build or work around a bad release. Only `sf_19` or newer is accepted (older releases have no universal binary and no Linux arm64 build); anything older fails the build with a clear message.
 - The resolved version is recorded: `/api/health` and a `VERSION` file in the image are the authority, shown in the UI footer, and stored per game (`games.engine_name`). The image label holds the version that was requested, because a `LABEL` is fixed before the download runs; it names a real version only when a tag is passed explicitly (as CI does).
 - Updating = rebuilding the image (`docker compose build --pull`). A scheduled CI job (weekly) rebuilds and runs the tests against the newest release, so a breaking Stockfish change is caught early.
-- Five levels mapped to `Skill Level`, `UCI_LimitStrength`/`UCI_Elo` and depth/movetime, configurable in `app/engine/levels.toml`. Each shows a nominal rating beside its name: Warm-up (800-), Club (1320), Strong (1900), Master (2600), Max (3500+). The ratings are on Stockfish's `UCI_Elo` scale, chosen on 2026-11-10 and not measured; they are not Lichess or Chess.com ratings. `UCI_Elo` has a floor of 1320, so Warm-up limits the search instead.
+- Five levels mapped to `Skill Level`, `UCI_LimitStrength`/`UCI_Elo` and depth/movetime, configurable in `app/engine/levels.toml`. Each shows a nominal rating beside its name: Warm-up (800-), Club (1320), Strong (1900), Master (2600), Max (3500+). The ratings are on Stockfish's `UCI_Elo` scale, chosen on 2026-11-10 and not measured; they are not Chess.com or Lichess ratings. `UCI_Elo` has a floor of 1320, so Warm-up limits the search instead.
 - One long-lived Stockfish process behind a queue: one search at a time.
 - The "Human" response time is decided by the backend, based on the clock.
 

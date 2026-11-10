@@ -1,4 +1,4 @@
-"""Importing a player's games from Lichess and Chess.com, with the network replaced by a fake."""
+"""Importing a player's games from Chess.com and Lichess, with the network replaced by a fake."""
 
 import json
 from datetime import UTC, datetime

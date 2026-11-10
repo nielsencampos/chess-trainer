@@ -8,18 +8,18 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 
 > **Never use it to cheat**
 >
-> Do not use Chess Trainer, or any engine, during a game against another person, online or over the board. That is cheating, and Lichess, Chess.com and FIDE ban it. Train before and after your games, never during them.
+> Do not use Chess Trainer, or any engine, during a game against another person, online or over the board. That is cheating, and Chess.com, Lichess and FIDE ban it. Train before and after your games, never during them.
 
 > **The evaluation here is basic**
 >
-> The evaluation bar and the move icons (best move, mistake, blunder…) come from a quick Stockfish check and are only a hint. For a real analysis, export the PGN and analyse it on Lichess, Chess.com or another analysis tool.
+> The evaluation bar and the move icons (best move, mistake, blunder…) come from a quick Stockfish check and are only a hint. For a real analysis, export the PGN and analyse it on Chess.com, Lichess or another analysis tool.
 
 ## Start a game
 
 - Opening: pick your color and tick the openings and variations to drill. Each ticked variation has the same chance of being drawn. Playing a move from a variation you did not tick counts as leaving theory.
 - Saved game: train the line of a game you played or imported, so its moves are checked, or play on from any of its positions.
 - Chess960: roll a starting position or paste the FEN of one of the 960. To castle, click the king and then a square between it and the rook, or the rook itself.
-- Bot level: the rating beside each level is nominal, on Stockfish's own scale, and has not been measured. It is not a Lichess or Chess.com rating.
+- Bot level: the rating beside each level is nominal, on Stockfish's own scale, and has not been measured. It is not a Chess.com or Lichess rating.
 - Time control: the presets of a real tournament clock, from bullet to classical, or no clock. The bot's response time is Human, which spends its clock like a person, or Instant.
 - Options: warn when you leave theory, allow premoves, and let the bot deviate from its line on purpose, from a chosen move, so you also train against surprises.
 
@@ -80,4 +80,4 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 ## Analyse elsewhere
 
 - Get the PGN from the end-of-game card or from Saved games.
-- On Lichess or Chess.com, open the analysis board and paste or import the PGN, for a full analysis by a stronger setup.
+- On Chess.com or Lichess, open the analysis board and paste or import the PGN, for a full analysis by a stronger setup.
