@@ -52,7 +52,7 @@ the smallest supported screen, and mobile is out of scope.
 
 - `openings/<group>/[others/]<family>.json` is the source of the book (format in brief §6). The app reads the book
   only from DuckDB. `catalog/` is reference only: the bot does not play from it.
-- **Never change or reuse a line `id`**, even when extending its moves. Statistics are keyed on it.
+- **Never change or reuse a line `id`**, even when extending its moves. Saved games and their PGN (`VariantId`) refer to it.
   Lines that disappear become inactive and are never deleted.
 - Never delete database data without a migration and a note. Schema changes are new numbered files
   in `app/db/migrations/`.

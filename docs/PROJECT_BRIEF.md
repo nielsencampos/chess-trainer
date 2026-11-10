@@ -34,7 +34,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 | Backend | Python 3.12+, FastAPI, Uvicorn | **Single worker** (DuckDB allows one writing process per file) |
 | Rules / PGN | python-chess | Parses PGN with variations, validates moves, renders SVG for reports |
 | Engine | Stockfish (official binary, **latest release**) | Driven through `chess.engine` (async) |
-| Database | DuckDB (local file in `./data`) | Book and translations, games, settings |
+| Database | DuckDB (local file in `./data`) | Book and translations, book evaluations, games |
 | Frontend | Plain HTML + CSS + JS, ES modules, **no build step, no Node** | Types via JSDoc. chessops and the Merida pieces are vendored, no CDN |
 | Python packaging | uv (`pyproject.toml` + `uv.lock`) | |
 | Container | Multi-stage Dockerfile + `docker-compose.yml` | Slim final image, non-root user, healthcheck |
@@ -60,7 +60,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 
 ### 4.1 Visual specification
 
-Smallest supported screen: HD (1280x720). Layout: a 380 px sidebar on the left that scrolls on its own (logo with the language picker beside it, menu, the screen chosen in it, and versions), the board in the middle as the largest square that fits the window, and a 350 px bar on the right with the "Show moves" checkbox (during a game), the opening name, the move list, and under it the end-of-game card, resign, piece picker, theme and sound. With "Show moves" unchecked, the opening name and the move list are hidden with their headings until the end of the game. Both bars can be resized, between 350 and 700 px while leaving room for the board, by dragging or with the arrow keys (double-click restores the width), and hidden and shown again with a button that stays visible. The logo is a quarter of the width of the left bar, and the board grows into the free space. These choices are kept per browser. Bot name and clock above the board, user name and clock below, status chips under the board ("Your move", "In theory", "Left theory at move N", "Check").
+Smallest supported screen: HD (1280x720). Layout: a 380 px sidebar on the left that scrolls on its own (logo with the language picker beside it, menu, the screen chosen in it, and versions), the board in the middle as the largest square that fits the window, and a 350 px bar on the right with the "Show moves" checkbox (during a game), the opening name, the move list, and under it the end-of-game card, resign, theme and sound. With "Show moves" unchecked, the opening name and the move list are hidden with their headings until the end of the game. Both bars can be resized, between 350 and 700 px while leaving room for the board, by dragging or with the arrow keys (double-click restores the width), and hidden and shown again with a button that stays visible. The logo is a quarter of the width of the left bar, and the board grows into the free space. These choices are kept per browser. Bot name and clock above the board, user name and clock below, status chips under the board ("Your move", "In theory", "Left theory at move N", "Check").
 
 Design tokens (CSS custom properties), taken from the logo: the dark theme uses the Merida ink `#1f1a17` with cream text and green fills, and the light theme is its opposite, near-neutral warm grays with ink text; both keep the board green for buttons and other accents:
 
@@ -88,13 +88,13 @@ Design tokens (CSS custom properties), taken from the logo: the dark theme uses 
 chess-trainer/
 ├── app/
 │   ├── main.py            # FastAPI: mounts the API and serves web/
-│   ├── api/               # routes: repertoire, games, engine, stats, settings
+│   ├── api/               # routes: repertoires, games, import, lines, engine, health
 │   ├── book/              # opening files → DuckDB sync, book read from the database
 │   ├── game/              # variation draw, theory tracking, bot pace, final report
 │   ├── engine/            # Stockfish process, strength levels
-│   ├── db/                # DuckDB connection, versioned SQL migrations
-│   └── i18n/              # backend strings (if any)
+│   └── db/                # DuckDB connection, versioned SQL migrations
 ├── openings/              # the book: one JSON per opening family (§6)
+├── evals/                 # book.json: Stockfish's evaluation of every book position (§6)
 ├── catalog/               # pinned Lichess catalog, reference only: seed and validation (§6)
 ├── data/                  # chess-trainer.duckdb, bind-mounted, not versioned (§7)
 ├── web/
@@ -105,7 +105,7 @@ chess-trainer/
 │   └── pieces/            # Merida SVG pieces (license in THIRD_PARTY_LICENSES.md)
 ├── docs/                  # this brief and other docs
 ├── tests/                 # pytest + Playwright
-├── .claude/               # project skills (§10)
+├── .claude/               # project skills, none yet (§10)
 ├── CLAUDE.md
 ├── Dockerfile
 ├── docker-compose.yml
@@ -156,7 +156,7 @@ File format:
 ```
 
 - `id` (family) must match the file name. `names.en` is required and is the fallback; other locales are optional.
-- `id` (line) is stored and **never changes**, even if the moves are extended, because statistics are keyed on it. A line that disappears becomes `active = false` and is never deleted.
+- `id` (line) is stored and **never changes**, even if the moves are extended, because saved games and their PGN (`VariantId`) refer to it. A line that disappears becomes `active = false` and is never deleted.
 - `eco` and `opening` are optional. `opening` is the exact catalog name of the line's final position and is validated against the catalog. A line we extended or imported drops it, or it fails validation.
 - `order` places a family within its group, from a curated list of well-known openings, not from measured popularity. `null` puts it under "Others".
 - `variants` are subgroups. `lines` directly in the family are its loose lines, shown under "Others".
@@ -196,14 +196,17 @@ Local file `data/chess-trainer.duckdb`, bind-mounted (`./data`) so it is visible
 
 Repertoire tables:
 - `catalog_loads` — content_hash, source_commit, loaded_at
-- `repertoires` — repertoire_id (catalog family), source (`catalog`/`user`), file_path, file_hash, loaded_at
-- `variants` — variant_id, repertoire_id, eco, opening (catalog name), pgn, moves_san (list), final_epd, source, active
+- `repertoires` — repertoire_id (family), source (`repo` for `openings/`, `user`), file_path, file_hash, loaded_at, group_key, sort_order
+- `variants` — variant_id (the line id), repertoire_id, eco, opening (catalog name), pgn, moves_san (list), final_epd, source, active, subgroup_json
 - `names` — entity_type (`repertoire`/`variant`/`catalog`), entity_id, locale, name. Translations live here.
 - `book_moves` — repertoire_id, variant_id, epd_before, ply, uci, san. The book tree, flattened for fast lookup.
-- `openings_catalog` — eco, name (en), pgn, uci, epd (final position), source_commit
+- `openings_catalog` — eco, name (en), pgn, epd (final position), source_commit
+- `book_evals` — epd, cp, mate, best, depth, loaded from `evals/book.json`; `book_eval_loads` — content_hash, engine, positions, loaded_at
 
 Game table:
-- `games` — one row per game, rewritten on every move: game_id (UTC timestamp to the microsecond plus a random part, such as `20261107131159012345-agjrbaghrbag-rkajgrjabgaa`), status (`active`/`finished`), started_at, ended_at, user_color, time_control, level, pace, variant_ids, current_variant_id, result, termination, in_theory, theory_until_ply, moves_json, deviations_json, user_clock_ms, bot_clock_ms, ui_json, pgn, eco, opening, app_version, engine_name.
+- `games` — one row per game, rewritten on every move: game_id (UTC timestamp to the microsecond plus a random part, such as `20261107131159012345-agjrbaghrbag-rkajgrjabgaa`), status (`active`/`finished`), started_at, ended_at, user_color, time_control, level, pace, variant_ids, current_variant_id, result, termination, in_theory, theory_until_ply, moves_json, deviations_json, user_clock_ms, bot_clock_ms, ui_json, pgn, eco, opening, app_version, engine_name, source (`app` or imported), white, black, content_hash (to find duplicates).
+
+Migrations are tracked in `schema_migrations`. UI preferences are not in the database: they are kept per browser (`localStorage`).
 
 **Decision (2026-11-07):** this is a training tool, so it keeps no statistics. Games are saved to continue them and to export them.
 
@@ -231,17 +234,17 @@ Rules:
 
 - UI strings in `web/i18n/{locale}.json` with stable keys (`setup.play`, `end.deviation`…).
 - A string with a `{count}` that needs plurals has one key per plural form of the language (`saved.count.one`, `saved.count.other`, and `few`/`many` where the language has them, as `Intl.PluralRules` names them).
-- Opening and variation names come from the `names` table (loaded from `Name_<locale>` PGN tags), falling back to `en`.
+- Opening and variation names come from the `names` table (loaded from the `names` of each `openings/` file, §6), falling back to `en`.
 - The name of a position (the Lichess catalog's, in English: during a game, on the end-of-game card, in reviews and saved games) is shown in the chosen language. Every catalog name is the `opening` of a book line and reads as its family's name, a separator and the line's name, so the browser rebuilds it from their translations. An untranslated line keeps its English name after the translated family; a name that does not split that way stays in English. PGN `Opening` tags stay in English.
-- Default locale `en`, switchable with a language picker at the bottom of the left bar and kept per browser, like the other UI preferences. Switching redraws the page in place, mid-game included; a key a language lacks falls back to English. The picker lists every file in `web/i18n`, each named by its own `locale.name` key.
+- Default locale `en`, switchable with a language picker beside the logo, at the top of the left bar, and kept per browser, like the other UI preferences. Switching redraws the page in place, mid-game included; a key a language lacks falls back to English. The picker lists every file in `web/i18n`, each named by its own `locale.name` key.
 - Move notation: **always English SAN**, in every language (PGN, Lichess and Chess.com standard). Possible future option: figurine notation.
-- Adding a language = one JSON file plus `Name_<locale>` tags, no code changes. UI files exist for `en`, `pt-BR` and `es`; the pt-BR and es files were reviewed on 2026-11-09.
+- Adding a language = one UI file in `web/i18n` plus that locale in the `names` of the `openings/` files, no code changes. UI files exist for `en`, `pt-BR` and `es`; the pt-BR and es files were reviewed on 2026-11-09.
 
 ## 9. Engine
 
 - **Always the latest Stockfish.** The Dockerfile resolves the newest official release (GitHub `official-stockfish/Stockfish`, `releases/latest`) at build time and downloads the right binary for the architecture (amd64, arm64). Since `sf_19` the official binaries are *universal*: they detect the CPU at run time, so there is no flavor to pick.
 - A build arg `STOCKFISH_VERSION` defaults to `latest` and can be set to a specific tag to reproduce an old build or work around a bad release. Only `sf_19` or newer is accepted (older releases have no universal binary and no Linux arm64 build); anything older fails the build with a clear message.
-- The resolved version is recorded: `/api/health` and a `VERSION` file in the image are the authority, shown in the UI footer, and stored per game (`games.engine_version`), so stats can be compared across engine versions. The image label holds the version that was requested, because a `LABEL` is fixed before the download runs; it names a real version only when a tag is passed explicitly (as CI does).
+- The resolved version is recorded: `/api/health` and a `VERSION` file in the image are the authority, shown in the UI footer, and stored per game (`games.engine_name`). The image label holds the version that was requested, because a `LABEL` is fixed before the download runs; it names a real version only when a tag is passed explicitly (as CI does).
 - Updating = rebuilding the image (`docker compose build --pull`). A scheduled CI job (weekly) rebuilds and runs the tests against the newest release, so a breaking Stockfish change is caught early.
 - Four levels (Warm-up, Club, Strong, Max) mapped to `Skill Level` + depth/movetime, configurable in a file. Evaluate `UCI_LimitStrength`/`UCI_Elo` for a ~1200 level; note `UCI_Elo` has a floor (around 1320 in recent versions).
 - One long-lived Stockfish process behind a queue: one search at a time.
@@ -249,7 +252,7 @@ Rules:
 
 ## 10. Claude Code: CLAUDE.md and project skills
 
-- `CLAUDE.md` — overview, how to run, how to test, conventions (code and identifiers in English; user-facing text through i18n), never break a `VariantId`, link to this brief.
+- `CLAUDE.md` — overview, how to run, how to test, conventions (code and identifiers in English; user-facing text through i18n), never change a line id (`VariantId`), link to this brief.
 - Skills in `.claude/skills/`, none yet:
   - **add-opening** — takes a PGN or Lichess study, writes it in the format of §6, validates, runs tests and opens a PR.
   - **review-catalog** — checks a new catalog commit against `openings/`: what changed and what to accept.
@@ -264,7 +267,7 @@ Rules:
 - No statistics: the goal is training.
 - Built from scratch; the HTML prototype is not in the repository.
 - English SAN notation always.
-- **License: GPL-3.0.** Compatible with Stockfish and the Merida pieces. `THIRD_PARTY_LICENSES.md` lists Stockfish, chessops, the openings catalog, the fonts and each piece set. Lichess's Maestro (CC BY-NC-SA) and Alpha (non-commercial) sets are excluded because of their non-commercial terms.
+- **License: GPL-3.0.** Compatible with Stockfish and the Merida pieces. `THIRD_PARTY_LICENSES.md` lists Stockfish, chessops, @badrap/result, the openings catalog, the fonts and the Merida pieces. Lichess's Maestro (CC BY-NC-SA) and Alpha (non-commercial) sets are excluded because of their non-commercial terms.
 - Stockfish: always the latest official release, resolved at build time (§9), with an override for a specific version.
 - Stockfish runs only in the container. No Stockfish WASM in the browser; the app does not run without the backend.
 - Openings catalog: import all of `lichess-org/chess-openings` as reference; `openings/` starts with all of its lines.
@@ -278,16 +281,16 @@ Rules:
 
 ## 12. Delivery phases
 
-1. **Foundation:** repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), the book in `openings/*.json` loaded into DuckDB, validation tests. Includes the real Stockfish with provisional levels, because §4 needs it. The book lives in DuckDB. Games live in RAM and UI preferences stay in `localStorage` until Phase 2. UI strings are English only until Phase 4. *Done when: every item in §4 works in the browser at HD (1280x720) and larger.*
-2. **Data:** opening name on screen, recording of games, moves and deviations, settings on the server.
-3. **Engine on the server:** native Stockfish with calibrated levels.
-4. **Languages:** complete en and pt-BR, language picker.
-6. **Backlog:** opening-only drill mode, take-back, sounds, PDF report with diagrams.
+1. **Foundation** (done): repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), the book in `openings/*.json` loaded into DuckDB, validation tests, the real Stockfish with provisional levels. *Done when: every item in §4 works in the browser at HD (1280x720) and larger.*
+2. **Data** (done): opening name on screen, recording of games, moves and deviations. UI preferences stay per browser.
+3. **Engine on the server:** native Stockfish (done) with calibrated levels (not yet: the levels in `app/engine/levels.toml` are provisional).
+4. **Languages** (done): en, pt-BR and es, language picker.
+5. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
 
 ## 13. Working rules
 
 1. One phase at a time. At the end of each: what changed, how to test it, what was left for later.
 2. Every book move is validated by tests, never by memory.
-3. Never change a `VariantId` or delete database data without a migration and a note.
+3. Never change or reuse a line id (`VariantId`), and never delete database data without a migration and a note.
 4. Test in a browser at 1280x720 before calling something done, and state what was tested.
 5. If anything in this brief is ambiguous or conflicting, ask before inventing.
