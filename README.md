@@ -27,6 +27,9 @@ Open <http://127.0.0.1:8000>.
 The app is published on loopback only, because it has no login. To reach it from another device,
 set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust. `CHESS_TRAINER_PORT` changes the port.
 
+**Desktop app (preview):** the same app in its own window, without Docker, is being built in
+[desktop/](desktop/README.md). There are no downloads yet; Docker stays the way to run it.
+
 ## How it works
 
 The full guide, with pictures, is in [docs/HELP.md](docs/HELP.md), the same as the Help screen in
@@ -136,6 +139,9 @@ docker compose up --build
 
 Depois abra <http://127.0.0.1:8000>.
 
+**App desktop (prévia):** o mesmo app numa janela própria, sem Docker, está sendo feito em
+[desktop/](desktop/README.md). Ainda não há downloads; por enquanto, rode com Docker.
+
 **Guia completo**, com imagens: [docs/HELP.pt-BR.md](docs/HELP.pt-BR.md), o mesmo da tela de Ajuda do app. Quem fez e por quê: [docs/ABOUT.pt-BR.md](docs/ABOUT.pt-BR.md).
 
 **Como funciona:** escolha a cor e as linhas, entre as 3.865 do livro, com busca por nome,
@@ -174,6 +180,9 @@ docker compose up --build
 ```
 
 Después abre <http://127.0.0.1:8000>.
+
+**App de escritorio (vista previa):** la misma app en su propia ventana, sin Docker, se está
+haciendo en [desktop/](desktop/README.md). Aún no hay descargas; por ahora, ejecútala con Docker.
 
 **Guía completa**, con imágenes: [docs/HELP.es.md](docs/HELP.es.md), la misma que la pantalla de Ayuda de la app. Quién lo hizo y por qué: [docs/ABOUT.es.md](docs/ABOUT.es.md).
 
