@@ -1,14 +1,14 @@
 # Desktop app (proof of concept)
 
 The same app as the Docker image, in a native window: `launcher.py` starts the server on
-`127.0.0.1:47800` and opens it with [pywebview](https://pywebview.flowrl.com/). Only Linux has
-been built and tested so far.
+`127.0.0.1:47800` and opens it with [pywebview](https://pywebview.flowrl.com/): Qt WebEngine on
+Linux, WebView2 on Windows and WKWebView on macOS. Players install it as described in
+[HOW_TO_INSTALL.md](../HOW_TO_INSTALL.md).
 
 ## Run from source
 
 ```bash
-scripts/extract-stockfish.sh       # Stockfish into .cache/ (needs the Docker image)
-docker run --rm --entrypoint cat chess-trainer:local /opt/stockfish/VERSION > .cache/VERSION
+python3 docker/fetch_stockfish.py desktop   # this system's Stockfish, VERSION and license into .cache/
 uv sync --group desktop
 uv run --group desktop python -m desktop.launcher
 ```
@@ -20,8 +20,31 @@ uv run --group desktop pyinstaller --noconfirm --distpath build/dist --workpath 
 build/dist/chess-trainer/chess-trainer
 ```
 
-The result is a folder of about 625 MB, most of it Qt WebEngine (the window's browser engine),
-Stockfish and DuckDB.
+The result is a folder of about 625 MB on Linux, most of it Qt WebEngine (the window's browser
+engine), Stockfish and DuckDB. On macOS PyInstaller also makes `build/dist/Chess Trainer.app`.
+
+On macOS, where nobody here can try it by hand, CI also runs `scripts/desktop_webview_check.py`:
+from source, it exports a PGN and prints the Scoresheet in the real WKWebView window, with only the
+save and print panels replaced (by a fixed path and a print to PDF), and checks the files. The PGN
+and PDF are kept as the job's `webview-check-*` artifact.
+
+`scripts/desktop_smoke.py EXECUTABLE` starts a build, checks `/api/health` (with the bundled
+Stockfish) and that the window stays up, and closes it.
+
+## CI and releases
+
+`.github/workflows/desktop.yml` builds and smoke-checks on Ubuntu 22.04 (the oldest glibc we
+support), Windows, macOS on Apple Silicon and macOS on Intel. On a `v*` tag it uploads the packages
+to a draft GitHub Release, published by hand:
+
+- `chess-trainer-<tag>-linux-x86_64.tar.gz`: the folder plus `install.sh`, which copies it to
+  `~/.local/opt/chess-trainer` and writes the `.desktop` entry (`--uninstall` removes both).
+- `chess-trainer-<tag>-windows-x64.zip`: the folder with `chess-trainer.exe`.
+- `chess-trainer-<tag>-macos-arm64.zip` and `-macos-intel.zip`: `Chess Trainer.app`, signed ad hoc
+  (not notarized). Stockfish's macOS build is universal; Python and the bundle are per architecture.
+
+Nothing is signed with a paid certificate, so SmartScreen and Gatekeeper warn on the first launch
+(HOW_TO_INSTALL.md explains how to get past them).
 
 ## Where things are
 
@@ -30,7 +53,11 @@ Stockfish and DuckDB.
   on Windows).
 - `CHESS_TRAINER_PORT`, `CHESS_TRAINER_DB` and `STOCKFISH_PATH` override the defaults.
 - On Linux, `qt_window.py` saves downloads and prints, which pywebview's Qt backend does not do
-  with Qt 6.
+  with Qt 6. On Windows (WebView2) and macOS (WKWebView) pywebview handles both: a download asks
+  where to save, and `window.print()` opens the system print dialog. WebKit reads a blob download
+  after the click, so `web/js/download.js` revokes the blob's URL a minute later, not at once.
+- On Windows, Stockfish starts with `CREATE_NO_WINDOW` (`app/engine/process.py`), or the windowed
+  app would open a console for it.
 
 ## Name and icon
 
@@ -47,7 +74,7 @@ magick /tmp/icon-824.png -background none -gravity center -extent 1024x1024 -str
 - Windows: PyInstaller turns `icon.png` into the `.exe` icon (Pillow is needed at build time).
 - macOS: the spec builds `Chess Trainer.app` with `icon-macos.png` as `.icns`.
 - Linux: GNOME and other Wayland desktops take the icon from a `.desktop` entry, not from the
-  window. For a local build, `~/.local/share/applications/chess-trainer.desktop`:
+  window. `linux/install.sh` writes it; by hand, for a local build, `~/.local/share/applications/chess-trainer.desktop`:
 
   ```ini
   [Desktop Entry]
@@ -61,8 +88,6 @@ magick /tmp/icon-824.png -background none -gravity center -extent 1024x1024 -str
 
 ## Not done yet
 
-- Builds for Windows and macOS, in CI, published on the Release, and install instructions for
-  players.
-- The bundled Qt, PyQt6 and pywebview licenses in `THIRD_PARTY_LICENSES.md`, before anything is
-  distributed.
+- Signing with paid certificates (Windows Authenticode, Apple notarization), and an installer.
+- A Linux arm64 build.
 - A second launch opens a second window on the first one's server instead of focusing the first.
