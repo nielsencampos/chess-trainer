@@ -3,6 +3,7 @@
 // finished games, filters, selection, export, deletion and imports.
 
 import { ApiError, api } from "./api.js";
+import { saveFile } from "./download.js";
 import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
 import { openingName, openingSearchText } from "./opening-names.js";
 import { showPage } from "./pages.js";
@@ -381,11 +382,7 @@ export class SavedGames {
       const blob = await api.exportGames([...this.selected]);
       const date = new Date().toISOString().slice(0, 10);
       const count = this.selected.size;
-      const link = document.createElement("a");
-      link.href = URL.createObjectURL(blob);
-      link.download = count === 1 ? `chess-trainer-${date}.pgn` : `chess-trainer-${date}-${count}-games.pgn`;
-      link.click();
-      URL.revokeObjectURL(link.href);
+      saveFile(blob, count === 1 ? `chess-trainer-${date}.pgn` : `chess-trainer-${date}-${count}-games.pgn`);
     } catch (error) {
       console.error(error);
       this.showError("saved.exportError");

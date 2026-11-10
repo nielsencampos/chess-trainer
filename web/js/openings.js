@@ -1,6 +1,7 @@
 // The Openings screen: like Saved Games, it views lines on the board and exports them as PGN.
 
 import { api } from "./api.js";
+import { saveFile } from "./download.js";
 import { localize, onLocaleChange, t } from "./i18n.js";
 import { OpeningTree } from "./opening-tree.js";
 
@@ -57,11 +58,7 @@ export class OpeningsScreen {
     try {
       const blob = await api.exportLines([...this.tree.selected]);
       const date = new Date().toISOString().slice(0, 10);
-      const link = document.createElement("a");
-      link.href = URL.createObjectURL(blob);
-      link.download = `chess-trainer-lines-${date}.pgn`;
-      link.click();
-      URL.revokeObjectURL(link.href);
+      saveFile(blob, `chess-trainer-lines-${date}.pgn`);
     } catch (error) {
       console.error(error);
       localize(byId("lines-error"), () => {

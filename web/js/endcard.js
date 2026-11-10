@@ -1,5 +1,6 @@
 // End-of-game card, under the move list: result, variation, how far theory went, deviations, PGN.
 
+import { saveFile } from "./download.js";
 import { localizedName, t } from "./i18n.js";
 import { moveIcon } from "./icons.js";
 import { openingName } from "./opening-names.js";
@@ -42,11 +43,7 @@ async function copyText(text) {
  */
 function downloadPgn(pgn) {
   const date = new Date().toISOString().slice(0, 10);
-  const link = document.createElement("a");
-  link.href = URL.createObjectURL(new Blob([pgn], { type: "application/x-chess-pgn" }));
-  link.download = `chess-trainer-${date}.pgn`;
-  link.click();
-  URL.revokeObjectURL(link.href);
+  saveFile(new Blob([pgn], { type: "application/x-chess-pgn" }), `chess-trainer-${date}.pgn`);
 }
 
 /**
