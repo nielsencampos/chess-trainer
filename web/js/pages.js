@@ -1,11 +1,11 @@
-// The Help and Scoresheet pages, shown in the board area in place of the board.
+// The Help, About and Scoresheet pages, shown in the board area in place of the board.
 // The scoresheet is an unofficial A4 sheet, for training only, printed from the browser.
 
 import { getLocale, localize, t } from "./i18n.js";
 
 const COLUMNS = 4;
 const ROWS = 30;
-const PAGES = ["help", "sheet"];
+const PAGES = ["help", "about", "sheet"];
 
 /**
  * Finds an element by id.
@@ -30,6 +30,27 @@ export function localizeHelpImages() {
     localize(image, () => {
       image.src = `help/${encodeURIComponent(getLocale())}/${name}.webp`;
       image.alt = t(`help.fig.${name}`);
+    });
+  }
+}
+
+/**
+ * Points each Wikipedia link of the About page at the article in the chosen language, falling
+ * back to English and then to the other languages that have one, and keeps it following the
+ * language. The link shows the article's address without the scheme.
+ * @returns {void}
+ */
+export function localizeWikiLinks() {
+  for (const link of document.querySelectorAll("a[data-wiki-en], a[data-wiki-pt], a[data-wiki-es]")) {
+    const anchor = /** @type {HTMLAnchorElement} */ (link);
+    /** @type {Record<string, string | undefined>} */
+    const titles = { en: anchor.dataset.wikiEn, pt: anchor.dataset.wikiPt, es: anchor.dataset.wikiEs };
+    localize(anchor, () => {
+      const wanted = getLocale().split("-")[0].toLowerCase();
+      const lang = [wanted, "en", "pt", "es"].find((code) => titles[code]) ?? "en";
+      const path = `${lang}.wikipedia.org/wiki/${(titles[lang] ?? "").replaceAll(" ", "_")}`;
+      anchor.href = `https://${encodeURI(path)}`;
+      anchor.textContent = path;
     });
   }
 }
@@ -86,7 +107,7 @@ export function initPages() {
 
 /**
  * Shows a page in the board area in place of the board, or the board again.
- * @param {string | null} page  `help`, `sheet`, or null for the board.
+ * @param {string | null} page  `help`, `about`, `sheet`, or null for the board.
  * @returns {void}
  */
 export function showPage(page) {

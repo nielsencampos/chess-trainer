@@ -31,6 +31,7 @@
           <button id="tab-import" class="tab" type="button" disabled data-i18n="menu.import"></button>
           <button id="tab-scoresheet" class="tab" type="button" disabled data-i18n="menu.scoresheet"></button>
           <button id="tab-help" class="tab" type="button" disabled data-i18n="menu.help"></button>
+          <button id="tab-about" class="tab" type="button" disabled data-i18n="menu.about"></button>
         </nav>
 
         <div class="side-panel">
@@ -309,17 +310,38 @@
               </figure>
             </details>
             <details class="help-section" open>
-              <summary data-i18n="help.paper.title"></summary>
-              <ul>
-                <li data-i18n="help.paper.print"></li>
-                <li data-i18n="help.paper.setup"></li>
-                <li data-i18n="help.paper.write"></li>
-                <li data-i18n="help.paper.compare"></li>
-              </ul>
+              <summary data-i18n="help.train.title"></summary>
+              <h3 data-i18n="help.train.lose.title"></h3>
+              <p data-i18n="help.train.lose.text"></p>
+              <h3 data-i18n="help.train.pace.title"></h3>
+              <p data-i18n="help.train.pace.text"></p>
+              <h3 data-i18n="help.train.threats.title"></h3>
+              <p data-i18n="help.train.threats.text"></p>
+              <h3 data-i18n="help.train.board.title"></h3>
+              <p data-i18n="help.train.board.intro"></p>
+              <p data-i18n="help.train.board.before"></p>
+              <p data-i18n="help.train.board.yourMove"></p>
+              <ol>
+                <li data-i18n="help.train.board.move"></li>
+                <li data-i18n="help.train.board.press"></li>
+                <li data-i18n="help.train.board.play"></li>
+                <li data-i18n="help.train.board.write"></li>
+              </ol>
+              <p data-i18n="help.train.board.botMove"></p>
+              <ol>
+                <li data-i18n="help.train.board.botPlay"></li>
+                <li data-i18n="help.train.board.botPress"></li>
+                <li data-i18n="help.train.board.botWrite"></li>
+              </ol>
+              <p data-i18n="help.train.board.botThen"></p>
+              <p data-i18n="help.train.board.touch"></p>
+              <p data-i18n="help.train.board.compare"></p>
               <figure class="help-figure">
                 <img data-help-img="paper" alt="" width="900" height="720" loading="lazy" />
                 <figcaption data-i18n="help.fig.paper"></figcaption>
               </figure>
+              <h3 data-i18n="help.train.analyse.title"></h3>
+              <p data-i18n="help.train.analyse.text"></p>
             </details>
             <details class="help-section" open>
               <summary data-i18n="help.review.title"></summary>
@@ -352,6 +374,226 @@
                 <li data-i18n="help.analyse.paste"></li>
               </ul>
             </details>
+          </article>
+        </section>
+
+        <!-- Proper names and links are the same in every language, so they are not i18n keys. -->
+        <section id="about-page" class="page-view" hidden>
+          <article class="help-page about-page">
+            <h2 data-i18n="about.title"></h2>
+            <h3 data-i18n="about.me.title"></h3>
+            <p data-i18n="about.me.text"></p>
+            <h3 data-i18n="about.project.title"></h3>
+            <p data-i18n="about.project.text"></p>
+            <p data-i18n="about.project.private"></p>
+            <p data-i18n="about.project.help"></p>
+            <h3 data-i18n="about.path.title"></h3>
+            <p data-i18n="about.path.intro"></p>
+            <ol class="about-path">
+              <li>
+                <h4>Henrique Mecking (Mequinho)</h4>
+                <p data-i18n="about.mecking"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Henrique_Mecking" data-wiki-en="Henrique Mecking" data-wiki-pt="Henrique Mecking" data-wiki-es="Henrique Mecking" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Henrique_Mecking</a>
+                </p>
+              </li>
+              <li>
+                <h4>Chessmaster</h4>
+                <p data-i18n="about.chessmaster"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Chessmaster" data-wiki-en="Chessmaster" data-wiki-pt="Chessmaster" data-wiki-es="Chessmaster" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Chessmaster</a>
+                </p>
+              </li>
+              <li>
+                <h4>Antonio Radić (agadmator)</h4>
+                <p data-i18n="about.agadmator"></p>
+                <p class="about-links">
+                  <a href="https://www.youtube.com/@agadmator" target="_blank" rel="noopener noreferrer">youtube.com/@agadmator</a>
+                </p>
+              </li>
+              <li>
+                <h4>Lichess</h4>
+                <p data-i18n="about.lichess"></p>
+                <p class="about-links">
+                  <a href="https://lichess.org/" target="_blank" rel="noopener noreferrer">lichess.org</a>
+                </p>
+              </li>
+              <li>
+                <h4>Levy Rozman (GothamChess)</h4>
+                <p data-i18n="about.levy"></p>
+                <p class="about-links">
+                  <a href="https://www.youtube.com/@GothamChess" target="_blank" rel="noopener noreferrer">youtube.com/@GothamChess</a>
+                  <a href="https://chessly.com/" target="_blank" rel="noopener noreferrer">chessly.com</a>
+                </p>
+              </li>
+              <li>
+                <h4>Chess.com</h4>
+                <p data-i18n="about.chesscom"></p>
+                <p class="about-links">
+                  <a href="https://www.chess.com/" target="_blank" rel="noopener noreferrer">chess.com</a>
+                  <a href="https://www.youtube.com/@chess" target="_blank" rel="noopener noreferrer">youtube.com/@chess</a>
+                  <a href="https://www.youtube.com/@chesscomPT" target="_blank" rel="noopener noreferrer">youtube.com/@chesscomPT</a>
+                  <a href="https://www.youtube.com/@ChesscomES" target="_blank" rel="noopener noreferrer">youtube.com/@ChesscomES</a>
+                </p>
+              </li>
+              <li>
+                <h4>Evandro Barbosa</h4>
+                <p data-i18n="about.evandro"></p>
+                <p class="about-links">
+                  <a href="https://www.youtube.com/@GMEvandroBarbosa" target="_blank" rel="noopener noreferrer">youtube.com/@GMEvandroBarbosa</a>
+                  <a href="https://chessflix.com.br/" target="_blank" rel="noopener noreferrer">chessflix.com.br</a>
+                </p>
+              </li>
+              <li>
+                <h4>Hikaru Nakamura</h4>
+                <p data-i18n="about.hikaru"></p>
+                <p class="about-links">
+                  <a href="https://www.youtube.com/@GMHikaru" target="_blank" rel="noopener noreferrer">youtube.com/@GMHikaru</a>
+                </p>
+              </li>
+              <li>
+                <h4>Krikor Mekhitarian</h4>
+                <p data-i18n="about.krikor"></p>
+                <p class="about-links">
+                  <a href="https://www.youtube.com/@GMKrikor" target="_blank" rel="noopener noreferrer">youtube.com/@GMKrikor</a>
+                  <a href="https://gmkrikor.com.br/" target="_blank" rel="noopener noreferrer">gmkrikor.com.br</a>
+                </p>
+              </li>
+            </ol>
+            <h3 data-i18n="about.legends.title"></h3>
+            <ul class="about-legends">
+              <li>
+                <h4>Alexandra &amp; Andrea Botez</h4>
+                <p data-i18n="about.legend.botez"></p>
+                <p class="about-links">
+                  <a href="https://en.wikipedia.org/wiki/Alexandra_Botez" data-wiki-en="Alexandra Botez" data-wiki-pt="Alexandra Botez" data-wiki-es="Alexandra Botez" target="_blank" rel="noopener noreferrer">en.wikipedia.org/wiki/Alexandra_Botez</a>
+                  <a href="https://www.youtube.com/@BotezLive" target="_blank" rel="noopener noreferrer">youtube.com/@BotezLive</a>
+                </p>
+              </li>
+              <li>
+                <h4>Anatoly Karpov</h4>
+                <p data-i18n="about.legend.karpov"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Anatoly_Karpov" data-wiki-en="Anatoly Karpov" data-wiki-pt="Anatoly Karpov" data-wiki-es="Anatoli Kárpov" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Anatoly_Karpov</a>
+                </p>
+              </li>
+              <li>
+                <h4>Daniel Naroditsky (Danya)</h4>
+                <p data-i18n="about.legend.naroditsky"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Daniel_Naroditsky" data-wiki-en="Daniel Naroditsky" data-wiki-pt="Daniel Naroditsky" data-wiki-es="Daniel Naroditsky" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Daniel_Naroditsky</a>
+                  <a href="https://www.youtube.com/@DanielNaroditskyGM" target="_blank" rel="noopener noreferrer">youtube.com/@DanielNaroditskyGM</a>
+                </p>
+              </li>
+              <li>
+                <h4>Eric Rosen</h4>
+                <p data-i18n="about.legend.rosen"></p>
+                <p class="about-links">
+                  <a href="https://en.wikipedia.org/wiki/Eric_Rosen_(chess_player)" data-wiki-en="Eric Rosen (chess player)" target="_blank" rel="noopener noreferrer">en.wikipedia.org/wiki/Eric_Rosen_(chess_player)</a>
+                  <a href="https://www.youtube.com/@EricRosen" target="_blank" rel="noopener noreferrer">youtube.com/@EricRosen</a>
+                </p>
+              </li>
+              <li>
+                <h4>Garry Kasparov</h4>
+                <p data-i18n="about.legend.kasparov"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Garry_Kasparov" data-wiki-en="Garry Kasparov" data-wiki-pt="Garry Kasparov" data-wiki-es="Garri Kaspárov" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Garry_Kasparov</a>
+                </p>
+              </li>
+              <li>
+                <h4>Hans Niemann</h4>
+                <p data-i18n="about.legend.niemann"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Hans_Niemann" data-wiki-en="Hans Niemann" data-wiki-pt="Hans Niemann" data-wiki-es="Hans Niemann" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Hans_Niemann</a>
+                </p>
+              </li>
+              <li>
+                <h4>Josh Waitzkin</h4>
+                <p data-i18n="about.legend.waitzkin"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Josh_Waitzkin" data-wiki-en="Joshua Waitzkin" data-wiki-pt="Josh Waitzkin" data-wiki-es="Joshua Waitzkin" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Josh_Waitzkin</a>
+                </p>
+              </li>
+              <li>
+                <h4>Judit Polgár</h4>
+                <p data-i18n="about.legend.polgar"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Judit_Polg%C3%A1r" data-wiki-en="Judit Polgár" data-wiki-pt="Judit Polgár" data-wiki-es="Judit Polgár" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Judit_Polgár</a>
+                </p>
+              </li>
+              <li>
+                <h4>Luis Paulo Supi</h4>
+                <p data-i18n="about.legend.supi"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Luis_Paulo_Supi" data-wiki-en="Luis Paulo Supi" data-wiki-pt="Luis Paulo Supi" data-wiki-es="Luis Paulo Supi" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Luis_Paulo_Supi</a>
+                  <a href="https://www.youtube.com/@GMLuisPauloSupi" target="_blank" rel="noopener noreferrer">youtube.com/@GMLuisPauloSupi</a>
+                </p>
+              </li>
+              <li>
+                <h4>Magnus Carlsen</h4>
+                <p data-i18n="about.legend.carlsen"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Magnus_Carlsen" data-wiki-en="Magnus Carlsen" data-wiki-pt="Magnus Carlsen" data-wiki-es="Magnus Carlsen" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Magnus_Carlsen</a>
+                </p>
+              </li>
+              <li>
+                <h4>Maria Florencia Fernández (Flor)</h4>
+                <p data-i18n="about.legend.fernandez"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Maria_Florencia_Fernandez" data-wiki-pt="Maria Florencia Fernandez" data-wiki-es="María Florencia Fernández" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Maria_Florencia_Fernandez</a>
+                </p>
+              </li>
+              <li>
+                <h4>Mikhail Tal</h4>
+                <p data-i18n="about.legend.tal"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Mikhail_Tal" data-wiki-en="Mikhail Tal" data-wiki-pt="Mikhail Tal" data-wiki-es="Mijaíl Tal" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Mikhail_Tal</a>
+                </p>
+              </li>
+              <li>
+                <h4>Rafael Leitão</h4>
+                <p data-i18n="about.legend.leitao"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Rafael_Leit%C3%A3o" data-wiki-en="Rafael Leitão" data-wiki-pt="Rafael Leitão" data-wiki-es="Rafael Leitão" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Rafael_Leitão</a>
+                  <a href="https://www.youtube.com/@gmrafaelleitao" target="_blank" rel="noopener noreferrer">youtube.com/@gmrafaelleitao</a>
+                </p>
+              </li>
+              <li>
+                <h4>Robert Fischer (Bobby)</h4>
+                <p data-i18n="about.legend.fischer"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Bobby_Fischer" data-wiki-en="Bobby Fischer" data-wiki-pt="Bobby Fischer" data-wiki-es="Bobby Fischer" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Bobby_Fischer</a>
+                </p>
+              </li>
+              <li>
+                <h4>Roberto Molina</h4>
+                <p data-i18n="about.legend.molina"></p>
+                <p class="about-links">
+                  <a href="https://en.wikipedia.org/wiki/Roberto_Junio_Brito_Molina" data-wiki-en="Roberto Junio Brito Molina" data-wiki-pt="Roberto Molina (enxadrista)" target="_blank" rel="noopener noreferrer">en.wikipedia.org/wiki/Roberto_Junio_Brito_Molina</a>
+                </p>
+              </li>
+              <li>
+                <h4>Shakhriyar Mamedyarov</h4>
+                <p data-i18n="about.legend.mamedyarov"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Shakhriyar_Mamedyarov" data-wiki-en="Shakhriyar Mamedyarov" data-wiki-pt="Shakhriyar Mamedyarov" data-wiki-es="Shakhriyar Mamedyarov" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Shakhriyar_Mamedyarov</a>
+                </p>
+              </li>
+              <li>
+                <h4>Vasyl Ivanchuk</h4>
+                <p data-i18n="about.legend.ivanchuk"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Vasyl_Ivanchuk" data-wiki-en="Vasyl Ivanchuk" data-wiki-pt="Vasyl Ivanchuk" data-wiki-es="Vasili Ivanchuk" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Vasyl_Ivanchuk</a>
+                </p>
+              </li>
+              <li>
+                <h4>Viswanathan Anand</h4>
+                <p data-i18n="about.legend.anand"></p>
+                <p class="about-links">
+                  <a href="https://pt.wikipedia.org/wiki/Viswanathan_Anand" data-wiki-en="Viswanathan Anand" data-wiki-pt="Viswanathan Anand" data-wiki-es="Viswanathan Anand" target="_blank" rel="noopener noreferrer">pt.wikipedia.org/wiki/Viswanathan_Anand</a>
+                </p>
+              </li>
+            </ul>
           </article>
         </section>
 

@@ -48,16 +48,52 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 
 *Al final: resultado, variante, teoría y desviaciones.*
 
-## Entrena como en una partida oficial
+## Cómo entrenar
 
-- Abre Planilla en el menú e imprímela, o guárdala en PDF.
-- Elige un ritmo largo, como rápidas o clásicas, y desmarca Mostrar jugadas.
-- Anota cada jugada, tuya y del bot, justo después de jugarse, como en el tablero. Rellena el encabezado, el resultado y las firmas, para acostumbrarte a un torneo de verdad.
-- Al final, compara tu planilla con la lista de jugadas y el PGN, y busca las jugadas que anotaste mal.
+### Perder es parte del camino
+
+Perder es parte del aprendizaje. Lo importante es estudiar cada partida y aprender de tus propios errores. Para mejorar de verdad, sube el nivel del bot poco a poco y solo vuelve a subirlo cuando te sientas cómodo con las jugadas que propone.
+
+### Cada ritmo tiene su función
+
+En las partidas largas, piensa con calma cada jugada y desarrolla el hábito de calcular dos, tres o más jugadas por delante. Usa las rápidas, las blitz y las bullet para entrenar los patrones que ya has interiorizado.
+
+### Empieza por las jugadas del rival
+
+Antes de cada jugada, mira primero lo que amenaza el rival: jaques, capturas y ataques. Después busca tu propio plan.
+
+### Entrena como en un torneo
+
+Lo ideal para aprender es jugar con tablero y reloj físicos. No pasa nada si el reloj se desincroniza del de la app.
+
+Antes de la partida, abre Planilla en el menú e imprímela, o guárdala en PDF, y rellena el encabezado. Elige un ritmo largo, como rápidas o clásicas, y desmarca Mostrar jugadas.
+
+En tu jugada:
+
+1. Mueve la pieza en el tablero.
+1. Pulsa el reloj con la misma mano que movió la pieza.
+1. Juega la misma jugada en la app.
+1. Anota la jugada en la planilla.
+
+En la jugada del bot:
+
+1. Reproduce su jugada en el tablero.
+1. Pulsa el reloj de su lado.
+1. Anota la jugada en la planilla.
+
+Solo entonces empieza a pensar en la tuya.
+
+Recuerda: pieza tocada, pieza jugada. Para una experiencia aún mejor, grábate jugando y mírate después para entender cómo te comportas frente al tablero. Hazlo todo con calma: con el tiempo, sale solo.
+
+Al final, rellena el resultado y las firmas, compara tu planilla con la lista de jugadas y el PGN, y busca las jugadas que anotaste mal.
 
 ![Mostrar jugadas desmarcado: la lista se oculta y anotas en la planilla.](../web/help/es/paper.webp)
 
 *Mostrar jugadas desmarcado: la lista se oculta y anotas en la planilla.*
+
+### Analiza antes de mirar la evaluación
+
+Al terminar una partida, revísala tú solo primero y busca dónde cambió. Solo después compárala con la evaluación. La barra aparece en la posición final, así que ignórala hasta terminar.
 
 ## Partidas guardadas y revisión
 

@@ -48,16 +48,52 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 
 *At the end: result, variation, theory and deviations.*
 
-## Train like an official game
+## How to train
 
-- Open Scoresheet in the menu and print it, or save it as a PDF.
-- Choose a long time control, such as rapid or classical, and untick Show moves.
-- Write every move, yours and the bot's, right after it is played, as over the board. Fill in the header, the result and the signatures, to get used to a real tournament.
-- At the end, compare your sheet with the move list and the PGN, and look for the moves you wrote wrong.
+### Losing is part of it
+
+Losing is part of learning. What matters is studying each game and learning from your own mistakes. To really improve, raise the bot's level little by little, and only raise it again once you feel comfortable with the moves it plays.
+
+### Each time control has a job
+
+In long games, think calmly about every move and build the habit of calculating two, three or more moves ahead. Use rapid, blitz and bullet to drill the patterns you have already taken in.
+
+### Start with your opponent's moves
+
+Before each move, first look at what your opponent threatens: checks, captures and attacks. Then look for your own plan.
+
+### Train as in a tournament
+
+The best way to learn is with a physical board and clock. It does not matter if the clock drifts from the app's.
+
+Before the game, open Scoresheet in the menu and print it, or save it as a PDF, and fill in the header. Choose a long time control, such as rapid or classical, and untick Show moves.
+
+On your move:
+
+1. Move the piece on the board.
+1. Press the clock with the same hand that moved the piece.
+1. Play the same move in the app.
+1. Write the move on the scoresheet.
+
+On the bot's move:
+
+1. Play its move on the board.
+1. Press the clock on its side.
+1. Write the move on the scoresheet.
+
+Only then start thinking about yours.
+
+Remember: a piece you touch is a piece you move. For an even better experience, film yourself playing and watch it later to see how you behave at the board. Take your time: with practice it becomes natural.
+
+At the end, fill in the result and the signatures, compare your sheet with the move list and the PGN, and look for the moves you wrote wrong.
 
 ![Show moves unticked: the move list hides, so you write on the scoresheet.](../web/help/en/paper.webp)
 
 *Show moves unticked: the move list hides, so you write on the scoresheet.*
+
+### Analyse before you look at the evaluation
+
+When a game ends, review it on your own first and look for where it turned. Only then check it against the evaluation. The bar shows on the final position, so ignore it until you are done.
 
 ## Saved games and review
 

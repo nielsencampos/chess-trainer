@@ -62,12 +62,61 @@
   cursor: pointer;
 }
 
-.help-section ul {
+.help-section ul,
+.help-section ol {
   display: flex;
   flex-direction: column;
   gap: 6px;
   margin: 8px 0 0;
   padding-left: 20px;
+}
+
+.help-section h3 {
+  margin: 14px 0 0;
+  font-size: 1rem;
+}
+
+.help-section p {
+  margin: 6px 0 0;
+}
+
+/* About: the same card as Help, with a timeline of the people and sites behind the app. */
+.about-page h3 {
+  margin: 8px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  font-size: 1.05rem;
+}
+
+.about-page p {
+  margin: 0;
+}
+
+.about-path,
+.about-legends {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.about-path h4,
+.about-legends h4 {
+  margin: 0 0 2px;
+  font-size: 0.95rem;
+}
+
+.about-page .about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.about-links a {
+  color: var(--accent);
 }
 
 .help-figure {
@@ -307,6 +356,7 @@
   .bar-toggle,
   .board-column,
   #help-page,
+  #about-page,
   .sheet-toolbar {
     display: none !important;
   }

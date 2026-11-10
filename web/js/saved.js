@@ -21,9 +21,9 @@ const byId = (id) => /** @type {any} */ (document.getElementById(id));
  *   white: string | null, black: string | null}} SavedGame
  */
 
-const TABS = ["new", "saved", "openings", "import", "scoresheet", "help"];
+const TABS = ["new", "saved", "openings", "import", "scoresheet", "help", "about"];
 /** The tabs whose screen is a page in the board area, and that page. */
-const PAGES = /** @type {Record<string, string>} */ ({ help: "help", scoresheet: "sheet" });
+const PAGES = /** @type {Record<string, string>} */ ({ help: "help", about: "about", scoresheet: "sheet" });
 const DELETE_CONFIRM_MS = 3000;
 
 /** The Saved games list and the imports, and the menu tabs that show one screen at a time. */
@@ -92,7 +92,7 @@ export class SavedGames {
 
   /**
    * Shows one screen of the menu and marks its tab.
-   * @param {string} tab  `new`, `saved`, `openings`, `import`, `scoresheet` or `help`.
+   * @param {string} tab  `new`, `saved`, `openings`, `import`, `scoresheet`, `help` or `about`.
    * @returns {void}
    */
   showTab(tab) {

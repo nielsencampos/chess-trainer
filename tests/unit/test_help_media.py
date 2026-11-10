@@ -41,6 +41,19 @@ def test_help_docs_are_up_to_date(locale: str):
     )
 
 
+@pytest.mark.parametrize("locale", help_docs.LOCALES)
+def test_about_docs_are_up_to_date(locale: str):
+    """docs/ABOUT*.md match the About page's strings, as scripts/help_docs.py writes them.
+
+    Args:
+        locale (str): A language of the About page.
+    """
+    path = help_docs.doc_path(locale, "ABOUT")
+    assert path.read_text(encoding="utf-8") == help_docs.render_about(locale), (
+        f"{path.name} is out of date: run scripts/help_docs.py"
+    )
+
+
 def test_help_docs_cover_every_language():
     """There is a guide for every UI language."""
     assert sorted(help_docs.LOCALES) == LOCALES

@@ -48,16 +48,52 @@ O Chess Trainer é para treinar: pratique suas aberturas contra um bot que joga 
 
 *No fim: resultado, variante, teoria e desvios.*
 
-## Treine como numa partida oficial
+## Como treinar
 
-- Abra Planilha no menu e imprima, ou salve em PDF.
-- Escolha um ritmo longo, como rápido ou clássico, e desmarque Mostrar lances.
-- Anote cada lance, seu e do bot, logo depois de jogado, como no tabuleiro. Preencha o cabeçalho, o resultado e as assinaturas, para se acostumar com um torneio de verdade.
-- No fim, compare sua planilha com a lista de lances e o PGN, e procure os lances que você anotou errado.
+### Perder faz parte
+
+Perder faz parte do aprendizado. O importante é estudar cada partida e aprender com os próprios erros. Para evoluir de verdade, aumente o nível do bot aos poucos e só suba de novo quando se sentir confortável com os lances que ele propõe.
+
+### Cada ritmo tem uma função
+
+Nas partidas longas, pense com calma em cada lance e desenvolva o hábito de calcular duas, três ou mais jogadas à frente. Use as rápidas, as blitz e as bullet para treinar os padrões que você já internalizou.
+
+### Comece pelos lances do adversário
+
+Antes de cada lance, olhe primeiro o que o adversário ameaça: xeques, capturas e ataques. Depois procure o seu plano.
+
+### Treine como no torneio
+
+O ideal para aprender é jogar com tabuleiro e relógio físicos. Não tem problema se o relógio ficar dessincronizado do app.
+
+Antes da partida, abra Planilha no menu e imprima, ou salve em PDF, e preencha o cabeçalho. Escolha um ritmo longo, como rápido ou clássico, e desmarque Mostrar lances.
+
+No seu lance:
+
+1. Mova a peça no tabuleiro.
+1. Aperte o relógio com a mesma mão que moveu a peça.
+1. Jogue o mesmo lance no app.
+1. Anote o lance na planilha.
+
+No lance do bot:
+
+1. Reproduza o lance no tabuleiro.
+1. Aperte o relógio do lado dele.
+1. Anote o lance na planilha.
+
+Só então comece a pensar no seu.
+
+Lembre-se: peça tocada é peça jogada. Para uma experiência ainda melhor, grave-se jogando e assista depois para entender como você se comporta diante do tabuleiro. Faça tudo com calma: com o tempo, isso fica natural.
+
+No fim, preencha o resultado e as assinaturas, compare sua planilha com a lista de lances e o PGN, e procure os lances que você anotou errado.
 
 ![Mostrar lances desmarcado: a lista some e você anota na planilha.](../web/help/pt-BR/paper.webp)
 
 *Mostrar lances desmarcado: a lista some e você anota na planilha.*
+
+### Analise antes de ver a avaliação
+
+Ao terminar uma partida, revise-a sozinho primeiro e procure onde ela virou. Só depois confira com a avaliação. A barra aparece na posição final, então ignore-a até terminar.
 
 ## Partidas salvas e revisão
 

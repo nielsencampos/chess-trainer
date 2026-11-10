@@ -30,7 +30,7 @@ set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust. `CHESS_TRAINER_PORT` c
 ## How it works
 
 The full guide, with pictures, is in [docs/HELP.md](docs/HELP.md), the same as the Help screen in
-the app. A summary:
+the app, and who made it and why is in [docs/ABOUT.md](docs/ABOUT.md). A summary:
 
 1. Pick your color and the lines to drill, from all 3,865 lines of the book. Search by name, ECO
    or moves. Each selected line has the same chance of being drawn.
@@ -108,7 +108,7 @@ them again against a running app (it plays and resigns games):
 uv run python scripts/help_media.py --base-url http://127.0.0.1:8000
 ```
 
-`docs/HELP*.md` are written from the Help screen's strings. After changing them, run
+`docs/HELP*.md` and `docs/ABOUT*.md` are written from the Help and About screens' strings. After changing them, run
 `uv run python scripts/help_docs.py`; a test fails while the files are out of date.
 
 ## License
@@ -136,7 +136,7 @@ docker compose up --build
 
 Depois abra <http://127.0.0.1:8000>.
 
-**Guia completo**, com imagens: [docs/HELP.pt-BR.md](docs/HELP.pt-BR.md), o mesmo da tela de Ajuda do app.
+**Guia completo**, com imagens: [docs/HELP.pt-BR.md](docs/HELP.pt-BR.md), o mesmo da tela de Ajuda do app. Quem fez e por quê: [docs/ABOUT.pt-BR.md](docs/ABOUT.pt-BR.md).
 
 **Como funciona:** escolha a cor e as linhas, entre as 3.865 do livro, com busca por nome,
 ECO ou lances. Cada linha selecionada tem a mesma chance de ser sorteada, e o bot joga a linha sorteada. Um lance fora das linhas selecionadas é um
@@ -175,7 +175,7 @@ docker compose up --build
 
 Después abre <http://127.0.0.1:8000>.
 
-**Guía completa**, con imágenes: [docs/HELP.es.md](docs/HELP.es.md), la misma que la pantalla de Ayuda de la app.
+**Guía completa**, con imágenes: [docs/HELP.es.md](docs/HELP.es.md), la misma que la pantalla de Ayuda de la app. Quién lo hizo y por qué: [docs/ABOUT.es.md](docs/ABOUT.es.md).
 
 **Cómo funciona:** elige el color y las líneas, entre las 3.865 del libro, con búsqueda por nombre,
 ECO o jugadas. Cada línea seleccionada tiene la misma probabilidad de salir, y el bot juega la línea
