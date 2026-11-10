@@ -149,4 +149,4 @@ jobs:
             gh release create "$TAG" --draft $prerelease --verify-tag \
               --title "Chess Trainer $TAG" --notes "$notes"
           fi
-          gh release upload "$TAG" build/out/* --clobber
+          gh release upload "$TAG" build/out/chess-trainer-* --clobber  # not the webview-check files
