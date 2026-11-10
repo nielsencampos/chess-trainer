@@ -19,6 +19,7 @@ import re
 import sys
 import tarfile
 import tempfile
+import time
 import urllib.error
 import urllib.request
 import zipfile
@@ -127,6 +128,34 @@ def _extract(archive: Path, wanted: dict[str, str], out_dir: Path) -> None:
             (out_dir / target).write_bytes(source.read())
 
 
+def _fetch(url: str, path: Path, attempts: int = 4) -> "hashlib._Hash":
+    """Downloads a file, retrying a server error or a dropped connection a few times.
+
+    Args:
+        url (str): The file's URL.
+        path (Path): Where to write it.
+        attempts (int): How many times to try.
+
+    Returns:
+        hashlib._Hash: The SHA-256 of what was written.
+    """
+    for attempt in range(1, attempts + 1):
+        digest = hashlib.sha256()
+        try:
+            with urllib.request.urlopen(url, timeout=300) as response, path.open("wb") as out:
+                while chunk := response.read(1024 * 1024):
+                    digest.update(chunk)
+                    out.write(chunk)
+            return digest
+        except (urllib.error.URLError, OSError) as error:
+            client_error = isinstance(error, urllib.error.HTTPError) and error.code < 500
+            if client_error or attempt == attempts:
+                raise
+            print(f"download failed ({error}), retrying ({attempt}/{attempts - 1})")
+            time.sleep(5 * attempt)
+    raise AssertionError("unreachable")
+
+
 def download(tag: str, target: str, out_dir: Path) -> None:
     """Downloads the universal binary of a release, verifies its digest and extracts it.
 
@@ -154,16 +183,9 @@ def download(tag: str, target: str, out_dir: Path) -> None:
         fail(f"release {tag} publishes no digest for {asset_name}")
 
     out_dir.mkdir(parents=True, exist_ok=True)
-    digest = hashlib.sha256()
     with tempfile.TemporaryDirectory() as temp_dir:
         archive = Path(temp_dir) / asset_name
-        with (
-            urllib.request.urlopen(asset["browser_download_url"], timeout=300) as response,
-            archive.open("wb") as out,
-        ):
-            while chunk := response.read(1024 * 1024):
-                digest.update(chunk)
-                out.write(chunk)
+        digest = _fetch(asset["browser_download_url"], archive)
         if expected != f"sha256:{digest.hexdigest()}":
             fail(f"checksum mismatch for {asset_name}: expected {expected}")
         wanted = {f"stockfish/{binary_name}{exe}": f"stockfish{exe}"} | {

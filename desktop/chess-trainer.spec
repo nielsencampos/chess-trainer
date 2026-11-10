@@ -21,6 +21,7 @@ datas = [
     (str(ROOT / "web"), "web"),
     (str(ROOT / "openings"), "openings"),
     (str(ROOT / "catalog" / "data"), "catalog/data"),
+    (str(ROOT / "catalog" / "SOURCE_COMMIT"), "catalog"),
     (str(ROOT / "evals"), "evals"),
     (str(ROOT / "app" / "engine" / "levels.toml"), "app/engine"),
     (str(ROOT / "app" / "db" / "migrations"), "app/db/migrations"),
