@@ -55,8 +55,8 @@ Nothing is signed with a paid certificate, so SmartScreen and Gatekeeper warn on
 - On Linux, `qt_window.py` saves downloads and prints, which pywebview's Qt backend does not do
   with Qt 6. On Windows (WebView2) and macOS (WKWebView) pywebview handles both: a download asks
   where to save, and `window.print()` opens the system print dialog. On macOS `cocoa_window.py`
-  replaces pywebview's page setup: WKWebView ignores CSS `@page` margins, and the printer's
-  printable area left the A4 Scoresheet too little room, so it prints with the sheet's 10 mm.
+  replaces pywebview's page setup: WebKit lays a printed page out at 125% and shrinks it, so
+  CSS millimetres print 6.7% too large and the A4 Scoresheet took two pages; it prints at 93.75%.
 - On Windows the window gets no `icon`: the `.exe` has it, and pywebview's form throws on a PNG. WebKit reads a blob download
   after the click, so `web/js/download.js` revokes the blob's URL a minute later, not at once.
 - On Windows, Stockfish starts with `CREATE_NO_WINDOW` (`app/engine/process.py`), or the windowed

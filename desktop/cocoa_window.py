@@ -1,21 +1,22 @@
 """Printing for pywebview's macOS window (WKWebView).
 
-WKWebView ignores the page's CSS `@page` margins and pywebview prints with the printer's
-printable area instead, which can leave the A4 Scoresheet a millimetre short of room and push
-its signatures to a second page. This print uses the Scoresheet's own 10 mm margins, as
-Chromium does on Linux and Windows, and keeps the system print panel.
+WebKit lays a printed page out at 125% of the paper's width and shrinks it to fit, so CSS
+millimetres print 6.7% too large: a CSS pixel prints as 1 pt / 1.25 = 0.8 pt, not 0.75 pt. The
+A4 Scoresheet (web/css/pages.css) came out about 294 mm high and spilled onto a second page.
+This print scales by the inverse, so a millimetre prints as one, and keeps the system print
+panel. The margins are the page's own (`@page`), which WebKit applies itself.
 """
 
 import AppKit
 import Foundation
 from webview.platforms.cocoa import BrowserView
 
-# The Scoresheet's `@page { margin: 10mm }` (web/css/pages.css), in points.
-MARGIN_PT = 10 / 25.4 * 72
+# A CSS px is 0.75 pt; WebKit prints it as 0.8 pt (measured on the CI runners' PDFs).
+TRUE_SIZE = 0.75 * 1.25
 
 
 def print_info() -> AppKit.NSPrintInfo:
-    """Builds the page setup: the user's paper, the page's width fitted, 10 mm margins.
+    """Builds the page setup: the user's paper, the page's width fitted, true size.
 
     Returns:
         AppKit.NSPrintInfo: A copy of the shared print info, set up for the page.
@@ -24,13 +25,7 @@ def print_info() -> AppKit.NSPrintInfo:
     info.setHorizontalPagination_(AppKit.NSFitPagination)
     info.setHorizontallyCentered_(False)
     info.setVerticallyCentered_(False)
-    for set_margin in (
-        info.setTopMargin_,
-        info.setBottomMargin_,
-        info.setLeftMargin_,
-        info.setRightMargin_,
-    ):
-        set_margin(MARGIN_PT)
+    info.setScalingFactor_(TRUE_SIZE)
     return info
 
 

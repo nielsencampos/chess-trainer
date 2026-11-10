@@ -118,15 +118,7 @@ def main(out_dir: Path) -> int:
         info.setPaperSize_(Foundation.NSMakeSize(595.28, 841.89))
         info.setJobDisposition_(AppKit.NSPrintSaveJob)
         info.dictionary()[AppKit.NSPrintJobSavingURL] = Foundation.NSURL.fileURLWithPath_(str(pdf))
-        result["margins_pt"] = [
-            round(margin, 1)
-            for margin in (
-                info.topMargin(),
-                info.rightMargin(),
-                info.bottomMargin(),
-                info.leftMargin(),
-            )
-        ]
+        result["scaling"] = info.scalingFactor()
         operation = cocoa_window.print_operation(web_view, info)
         operation.setShowsPrintPanel_(False)
         operation.setShowsProgressPanel_(False)

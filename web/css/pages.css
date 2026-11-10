@@ -270,12 +270,9 @@
   table-layout: fixed;
 }
 
-/* border-box: WebKit (Safari, the macOS app) otherwise adds the borders to each row's height,
-   about 10 mm over the 31 rows, and the signatures no longer fit on the page. */
 .sheet-moves th,
 .sheet-moves td {
-  box-sizing: border-box;
-  height: 5.7mm;
+  height: 5.8mm;
   padding: 0 1mm;
   border: 1px solid #555;
 }
