@@ -1,7 +1,7 @@
 [project]
 name = "chess-trainer"
 version = "0.1.0"
-description = "Local opening trainer: drill your repertoire against a bot that plays your book lines, then Stockfish when theory ends."
+description = "Local chess trainer: play Stockfish, drill your openings and review your games, all in one Docker image."
 readme = "README.md"
 license = "GPL-3.0-only"
 requires-python = ">=3.12"
@@ -37,4 +37,8 @@ line-length = 100
 target-version = "py312"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF", "D"]
+
+# Every module, class and function has a docstring with Args, Returns and Raises (Google style).
+[tool.ruff.lint.pydocstyle]
+convention = "google"

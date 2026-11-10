@@ -29,30 +29,42 @@ LICHESS = """[White "Ana"]
 
 
 def moves_of(pgn):
+    """The review moves of a PGN, which must be readable.
+
+    Args:
+        pgn (str): One PGN game.
+
+    Returns:
+        list[dict]: The moves.
+    """
     review = review_of_pgn(pgn)
     assert review is not None
     return review["moves"]
 
 
 def test_chesscom_classifications_come_from_the_effect_then_the_nag():
+    """Chess.com classifications come from the effect then the NAG."""
     moves = moves_of(CHESSCOM)
     kinds = [m.get("kind") for m in moves]
     assert kinds == [None, None, "mistake", "miss", "great", "brilliant"]
 
 
 def test_chesscom_times_come_from_the_timestamp_and_clocks_from_clk():
+    """Chess.com times come from the timestamp and clocks from `[%clk]`."""
     first, second = moves_of(CHESSCOM)[:2]
     assert (first["clock_ms"], first["spent_ms"]) == (179_900, 100)
     assert (second["clock_ms"], second["spent_ms"]) == (177_700, 2_300)
 
 
 def test_comments_lose_their_commands_and_keep_their_text():
+    """Comments lose their commands and keep their text."""
     moves = moves_of(CHESSCOM)
     assert "comment" not in moves[0]
     assert moves[4]["comment"] == "keeps the pin"
 
 
 def test_variations_branch_off_the_move_they_replace_and_nest():
+    """Variations branch off the move they replace and nest."""
     moves = moves_of(CHESSCOM)
     [side] = moves[4]["variations"]
     assert [(m["ply"], m["san"]) for m in side] == [(5, "Bf4"), (6, "e5")]
@@ -64,6 +76,7 @@ def test_variations_branch_off_the_move_they_replace_and_nest():
 
 
 def test_lichess_evaluations_are_from_whites_side_with_mates():
+    """Lichess evaluations are from White's side with mates."""
     moves = moves_of(LICHESS)
     assert moves[0]["eval"] == {"cp": 18, "mate": None}
     assert moves[2]["eval"] == {"cp": -34, "mate": None}
@@ -74,6 +87,7 @@ def test_lichess_evaluations_are_from_whites_side_with_mates():
 
 
 def test_time_spent_comes_from_two_clocks_and_the_increment():
+    """Time spent comes from two clocks and the increment."""
     moves = moves_of(LICHESS)
     assert moves[0]["spent_ms"] == 3_000  # 5:00 + 3 s increment - 5:00
     assert moves[2]["spent_ms"] == 8_000  # 5:00 + 3 - 4:55
@@ -81,5 +95,6 @@ def test_time_spent_comes_from_two_clocks_and_the_increment():
 
 
 def test_a_game_without_annotations_has_only_the_moves():
+    """A game without annotations has only the moves."""
     moves = moves_of("1. e4 e5 *")
     assert set(moves[0]) == {"ply", "san", "uci", "fen"}

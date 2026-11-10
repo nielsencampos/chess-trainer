@@ -1,4 +1,7 @@
-"""Runs the real binary: STOCKFISH_PATH=... uv run pytest -m engine"""
+"""The real Stockfish binary.
+
+Run with: STOCKFISH_PATH=... uv run pytest -m engine
+"""
 
 import asyncio
 import os
@@ -16,6 +19,11 @@ pytestmark = pytest.mark.engine
 
 @pytest.fixture
 def stockfish_path():
+    """The real Stockfish binary; the test is skipped without one.
+
+    Returns:
+        str: The value of `STOCKFISH_PATH`.
+    """
     path = os.environ.get("STOCKFISH_PATH")
     if not path:
         pytest.skip("STOCKFISH_PATH is not set")
@@ -23,7 +31,14 @@ def stockfish_path():
 
 
 def test_all_levels_return_legal_moves_and_options_do_not_leak(stockfish_path):
+    """All levels return legal moves and options do not leak.
+
+    Args:
+        stockfish_path (str): The real Stockfish binary, from `STOCKFISH_PATH`.
+    """
+
     async def run() -> None:
+        """Runs the test's steps against a real Stockfish process."""
         levels = load_levels(Settings().levels_file)
         engine = StockfishEngine(stockfish_path, 1, 16, Path("/nonexistent"))
         await engine.start()
@@ -41,7 +56,14 @@ def test_all_levels_return_legal_moves_and_options_do_not_leak(stockfish_path):
 
 
 def test_all_levels_play_chess960_and_can_castle(stockfish_path):
+    """All levels play Chess960 and can castle.
+
+    Args:
+        stockfish_path (str): The real Stockfish binary, from `STOCKFISH_PATH`.
+    """
+
     async def run() -> None:
+        """Runs the test's steps against a real Stockfish process."""
         levels = load_levels(Settings().levels_file)
         engine = StockfishEngine(stockfish_path, 1, 16, Path("/nonexistent"))
         await engine.start()
@@ -62,7 +84,14 @@ def test_all_levels_play_chess960_and_can_castle(stockfish_path):
 
 
 def test_evaluation_is_full_strength_and_from_whites_side(stockfish_path):
+    """Evaluation is full strength and from White's side.
+
+    Args:
+        stockfish_path (str): The real Stockfish binary, from `STOCKFISH_PATH`.
+    """
+
     async def run() -> None:
+        """Runs the test's steps against a real Stockfish process."""
         levels = load_levels(Settings().levels_file)
         engine = StockfishEngine(stockfish_path, 1, 16, Path("/nonexistent"))
         await engine.start()
@@ -81,7 +110,14 @@ def test_evaluation_is_full_strength_and_from_whites_side(stockfish_path):
 
 
 def test_engine_restarts_after_a_crash(stockfish_path):
+    """Engine restarts after a crash.
+
+    Args:
+        stockfish_path (str): The real Stockfish binary, from `STOCKFISH_PATH`.
+    """
+
     async def run() -> None:
+        """Runs the test's steps against a real Stockfish process."""
         levels = load_levels(Settings().levels_file)
         engine = StockfishEngine(stockfish_path, 1, 16, Path("/nonexistent"))
         await engine.start()
@@ -97,7 +133,14 @@ def test_engine_restarts_after_a_crash(stockfish_path):
 
 
 def test_concurrent_searches_are_serialized(stockfish_path):
+    """Concurrent searches are serialized.
+
+    Args:
+        stockfish_path (str): The real Stockfish binary, from `STOCKFISH_PATH`.
+    """
+
     async def run() -> None:
+        """Runs the test's steps against a real Stockfish process."""
         levels = load_levels(Settings().levels_file)
         engine = StockfishEngine(stockfish_path, 1, 16, Path("/nonexistent"))
         await engine.start()

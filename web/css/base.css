@@ -170,14 +170,6 @@ body.is-resizing {
   accent-color: var(--accent);
 }
 
-.inline-field {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
 /* The language picker sits beside the logo, with no visible label. */
 .locale-picker {
   min-width: 0;
@@ -261,40 +253,6 @@ body.is-resizing {
   color: var(--muted);
   font: 400 0.75rem var(--font-mono);
   text-align: center;
-}
-
-@media (max-width: 1099px) {
-  .app-shell {
-    grid-template-columns: minmax(0, 1fr);
-    height: auto;
-  }
-
-  .board-area,
-  .sidebar,
-  .movebar {
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  .sidebar {
-    order: 2;
-    border-right: 0;
-  }
-
-  .movebar {
-    order: 3;
-    border-left: 0;
-  }
-
-  .board-column {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .resizer,
-  .bar-toggle {
-    display: none;
-  }
 }
 
 /* Under the move list, the result, resign and the board controls stay at the bottom. */

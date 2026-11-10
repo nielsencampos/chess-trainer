@@ -15,7 +15,13 @@ CACHE_SIZE = 4096
 
 @dataclass(frozen=True)
 class Evaluation:
-    """Centipawns or moves to mate, from White's side. Mate 0 means the side to move is mated."""
+    """Centipawns or moves to mate, from White's side. Mate 0 means the side to move is mated.
+
+    Attributes:
+        cp (int | None): Centipawns, or None when there is a mate.
+        mate (int | None): Moves to mate, negative when Black mates, or None.
+        best (str | None): The best move in UCI, or None when the game is over.
+    """
 
     cp: int | None
     mate: int | None
@@ -23,15 +29,36 @@ class Evaluation:
 
 
 class Evaluator:
+    """Evaluates positions for the bar: from the book's evaluations, else live, cached in memory.
+
+    Attributes:
+        engine (MoveEngine): The engine for positions outside the book.
+        book (Mapping[str, tuple[int | None, int | None, str | None]]): EPD -> (cp, mate, best).
+    """
+
     def __init__(
         self, engine: MoveEngine, book: Mapping[str, tuple[int | None, int | None, str | None]]
     ) -> None:
-        """`book`: EPD -> (cp, mate, best) of the book's positions, evaluated deep in advance."""
+        """Creates an evaluator.
+
+        Args:
+            engine (MoveEngine): The engine for positions outside the book.
+            book (Mapping[str, tuple[int | None, int | None, str | None]]): EPD -> (cp, mate, best)
+                of the book's positions, evaluated deep in advance.
+        """
         self.engine = engine
         self.book = book
         self._cache: OrderedDict[tuple[str, bool], Evaluation] = OrderedDict()
 
     async def evaluate(self, board: chess.Board) -> Evaluation:
+        """Evaluates a position, from the cache when it was asked before.
+
+        Args:
+            board (chess.Board): The position.
+
+        Returns:
+            Evaluation: The evaluation, from White's side.
+        """
         key = (board.fen(), board.chess960)
         cached = self._cache.get(key)
         if cached is not None:
@@ -44,6 +71,14 @@ class Evaluator:
         return result
 
     async def _evaluate(self, board: chess.Board) -> Evaluation:
+        """Evaluates a position without the cache: game over, book, then engine.
+
+        Args:
+            board (chess.Board): The position.
+
+        Returns:
+            Evaluation: The evaluation, from White's side.
+        """
         # Finished positions need no engine, and some engines answer them oddly.
         if board.is_checkmate():
             winner_is_white = board.turn == chess.BLACK

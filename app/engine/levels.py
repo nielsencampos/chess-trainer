@@ -11,12 +11,31 @@ LEVEL_ORDER = ("warmup", "club", "strong", "max")
 
 @dataclass(frozen=True)
 class Level:
+    """One bot strength level.
+
+    Attributes:
+        key (str): The level's key, one of `LEVEL_ORDER`.
+        options (dict[str, int | bool]): UCI options set while the bot plays, such as `Skill Level`.
+        limit (chess.engine.Limit): How long or deep the bot searches.
+    """
+
     key: str
     options: dict[str, int | bool]
     limit: chess.engine.Limit
 
 
 def load_levels(path: Path) -> dict[str, Level]:
+    """Reads the strength levels from a TOML file.
+
+    Args:
+        path (Path): The levels file, with a `[levels.<key>]` table per level.
+
+    Returns:
+        dict[str, Level]: The levels by key, in `LEVEL_ORDER`.
+
+    Raises:
+        ValueError: The file does not define exactly the levels in `LEVEL_ORDER`.
+    """
     with path.open("rb") as handle:
         raw = tomllib.load(handle)["levels"]
     if set(raw) != set(LEVEL_ORDER):

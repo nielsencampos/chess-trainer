@@ -13,6 +13,11 @@ FILES = [f"{letter}.tsv" for letter in "abcde"]
 
 
 def fetch(commit: str) -> None:
+    """Downloads the catalog's TSV files at a commit into `catalog/data/` and records the commit.
+
+    Args:
+        commit (str): The `lichess-org/chess-openings` commit.
+    """
     data_dir = CATALOG_DIR / "data"
     data_dir.mkdir(exist_ok=True)
     for name in FILES:

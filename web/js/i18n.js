@@ -17,7 +17,12 @@ const listeners = new Set();
 /** @type {Map<Element, () => void>} */
 const bound = new Map();
 
-/** @param {string} name */
+/**
+ * Downloads one language's UI strings.
+ * @param {string} name  The language code.
+ * @returns {Promise<Record<string, string>>} Key -> string.
+ * @throws {Error} The file cannot be loaded.
+ */
 async function fetchStrings(name) {
   const response = await fetch(`i18n/${encodeURIComponent(name)}.json`);
   if (!response.ok) throw new Error(`cannot load strings for ${name}`);
@@ -26,7 +31,7 @@ async function fetchStrings(name) {
 
 /**
  * Loads a language, falling back to English when its file is missing.
- * @param {string} requested
+ * @param {string} requested  The language code.
  * @returns {Promise<boolean>} False when a newer switch started meanwhile.
  */
 async function load(requested) {
@@ -49,7 +54,11 @@ async function load(requested) {
   return true;
 }
 
-/** @param {string} requested */
+/**
+ * Loads the first language and translates the page.
+ * @param {string} [requested]  The language code; English by default.
+ * @returns {Promise<void>}
+ */
 export async function initI18n(requested = DEFAULT_LOCALE) {
   await load(requested);
   applyI18n(document);
@@ -57,7 +66,8 @@ export async function initI18n(requested = DEFAULT_LOCALE) {
 
 /**
  * Switches the language and draws again everything on screen.
- * @param {string} requested
+ * @param {string} requested  The language code.
+ * @returns {Promise<void>}
  */
 export async function setLocale(requested) {
   if (!(await load(requested))) return;
@@ -69,13 +79,18 @@ export async function setLocale(requested) {
   for (const listener of listeners) listener();
 }
 
+/**
+ * The language in use.
+ * @returns {string} Its code, such as `pt-BR`.
+ */
 export function getLocale() {
   return locale;
 }
 
 /**
  * Called after every language switch, to draw again what a module rendered with `t()`.
- * @param {() => void} listener
+ * @param {() => void} listener  Draws the module's text again.
+ * @returns {void}
  */
 export function onLocaleChange(listener) {
   listeners.add(listener);
@@ -84,8 +99,9 @@ export function onLocaleChange(listener) {
 /**
  * Renders an element now and again after every language switch, while it is in the page.
  * An element bound here must always be written through here, or a switch brings back old text.
- * @param {Element} element
- * @param {() => void} render
+ * @param {Element} element  The element.
+ * @param {() => void} render  Writes its text.
+ * @returns {void}
  */
 export function localize(element, render) {
   bound.set(element, render);
@@ -94,7 +110,7 @@ export function localize(element, render) {
 
 /**
  * The languages that have a file in web/i18n, each named in its own language.
- * @returns {Promise<{code: string, name: string}[]>}
+ * @returns {Promise<{code: string, name: string}[]>} The languages, English first.
  */
 export async function availableLocales() {
   const response = await fetch("api/locales");
@@ -103,8 +119,11 @@ export async function availableLocales() {
 }
 
 /**
- * @param {string} key
- * @param {Record<string, string | number>} [params]
+ * A UI string in the current language, with its `{placeholders}` filled.
+ * With a numeric `count`, the key's plural form for that number is used.
+ * @param {string} key  The string's key, such as `setup.play`.
+ * @param {Record<string, string | number>} [params]  Values for the placeholders.
+ * @returns {string} The string, or the key itself if no language has it.
  */
 export function t(key, params = {}) {
   const template = strings[pluralKey(key, params.count)] ?? strings[key] ?? key;
@@ -112,10 +131,12 @@ export function t(key, params = {}) {
 }
 
 /**
+ * The key of a string's plural form for a number.
  * A key with a number has one entry per plural form of the locale: `saved.count.one`,
  * `saved.count.other` (and `few`, `many`… where the language has them).
- * @param {string} key
- * @param {string | number | undefined} count
+ * @param {string} key  The base key.
+ * @param {string | number | undefined} count  The number, if any.
+ * @returns {string} The plural key, `.other` if the form is missing, or the key without a number.
  */
 function pluralKey(key, count) {
   if (typeof count !== "number") return key;
@@ -123,8 +144,12 @@ function pluralKey(key, count) {
   return `${key}.${form}` in strings ? `${key}.${form}` : `${key}.other`;
 }
 
-/** @param {Document | Element} root */
-export function applyI18n(root) {
+/**
+ * Translates the `data-i18n*` attributes of an element and everything inside it.
+ * @param {Document | Element} root  Where to translate.
+ * @returns {void}
+ */
+function applyI18n(root) {
   for (const element of root.querySelectorAll("[data-i18n]")) {
     element.textContent = t(element.getAttribute("data-i18n") ?? "");
   }
@@ -144,7 +169,8 @@ export function applyI18n(root) {
 
 /**
  * Picks a name from the `names` table shape, falling back to English.
- * @param {Record<string, string>} names
+ * @param {Record<string, string>} names  Locale -> name.
+ * @returns {string} The name, or an empty string.
  */
 export function localizedName(names) {
   return names[locale] ?? names[DEFAULT_LOCALE] ?? "";

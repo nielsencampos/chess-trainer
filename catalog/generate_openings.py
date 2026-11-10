@@ -26,20 +26,54 @@ LICENSE = "CC0-1.0"
 
 
 def family_of(name: str) -> str:
+    """The family part of a catalog name, before the colon.
+
+    Args:
+        name (str): A catalog name, such as `Caro-Kann Defense: Advance Variation`.
+
+    Returns:
+        str: The family, such as `Caro-Kann Defense`.
+    """
     return name.split(":", 1)[0].strip()
 
 
 def slugify(text: str) -> str:
+    """A lowercase ASCII id made of letters, digits and hyphens.
+
+    Args:
+        text (str): Any text.
+
+    Returns:
+        str: The slug, such as `caro-kann-defense`.
+    """
     ascii_text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
     return re.sub(r"[^a-z0-9]+", "-", ascii_text.lower()).strip("-")
 
 
 def line_id_of(pgn: str) -> str:
-    """Only for seeding. The id is then stored and stays fixed, even if the line is extended."""
+    """A line id, for seeding only: the id is then stored and stays fixed, even if extended.
+
+    Args:
+        pgn (str): The line's catalog PGN.
+
+    Returns:
+        str: `line-` and 16 hex digits of its SHA-256.
+    """
     return f"line-{hashlib.sha256(pgn.encode()).hexdigest()[:16]}"
 
 
 def _moves(pgn: str) -> list[str]:
+    """The SAN moves of a catalog PGN.
+
+    Args:
+        pgn (str): The PGN movetext.
+
+    Returns:
+        list[str]: The moves.
+
+    Raises:
+        ValueError: The PGN is invalid.
+    """
     game = chess.pgn.read_game(io.StringIO(pgn))
     if game is None or game.errors:
         raise ValueError(f"invalid catalog PGN: {pgn!r}")
@@ -52,7 +86,14 @@ def _moves(pgn: str) -> list[str]:
 
 
 def render(document: dict) -> str:
-    """Indented JSON with each move list on one line, so diffs stay readable."""
+    """Indented JSON with each move list on one line, so diffs stay readable.
+
+    Args:
+        document (dict): An opening file's content.
+
+    Returns:
+        str: The JSON text.
+    """
     text = json.dumps(document, ensure_ascii=False, indent=2)
     return re.sub(
         r'"moves": \[\s*(.*?)\s*\]',
@@ -63,6 +104,18 @@ def render(document: dict) -> str:
 
 
 def build_documents(entries: list[CatalogEntry], commit: str) -> dict[str, dict]:
+    """Groups the catalog's entries into one opening file per family.
+
+    Args:
+        entries (list[CatalogEntry]): The catalog.
+        commit (str): The catalog commit, for `source`.
+
+    Returns:
+        dict[str, dict]: Family id -> file content.
+
+    Raises:
+        ValueError: Two families share an id.
+    """
     families: dict[str, list[CatalogEntry]] = defaultdict(list)
     for entry in entries:
         families[family_of(entry.name)].append(entry)
@@ -96,6 +149,14 @@ def build_documents(entries: list[CatalogEntry], commit: str) -> dict[str, dict]
 
 
 def main(force: bool) -> int:
+    """Writes the seed files, refusing to overwrite existing ones without `force`.
+
+    Args:
+        force (bool): Overwrite existing files.
+
+    Returns:
+        int: The exit code.
+    """
     OPENINGS_DIR.mkdir(exist_ok=True)
     if not force and any(OPENINGS_DIR.glob("*.json")):
         print(f"{OPENINGS_DIR} already has files: use --force to overwrite them", file=sys.stderr)

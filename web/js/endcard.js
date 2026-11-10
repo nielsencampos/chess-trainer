@@ -6,10 +6,19 @@ import { openingName } from "./opening-names.js";
 
 const COPY_FEEDBACK_MS = 1500;
 
-/** @param {string} id */
+/**
+ * Finds an element by id.
+ * @param {string} id  The element's id.
+ * @returns {any} The element.
+ */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
-/** @param {string} text */
+/**
+ * Copies text to the clipboard, also on plain http where the Clipboard API is missing.
+ * @param {string} text  The text.
+ * @returns {Promise<void>}
+ * @throws {Error} The browser refused to copy.
+ */
 async function copyText(text) {
   if (navigator.clipboard && window.isSecureContext) {
     await navigator.clipboard.writeText(text);
@@ -27,7 +36,10 @@ async function copyText(text) {
   if (!ok) throw new Error("copy failed");
 }
 
-/** @param {string} pgn */
+/**
+ * Downloads a PGN as a dated file.
+ * @param {string} pgn  The PGN text.
+ */
 function downloadPgn(pgn) {
   const date = new Date().toISOString().slice(0, 10);
   const link = document.createElement("a");
@@ -38,15 +50,21 @@ function downloadPgn(pgn) {
 }
 
 /**
- * @param {number} ply
- * @param {string} san
+ * A move's number as a scoresheet writes it.
+ * @param {number} ply  The move's ply.
+ * @param {string} san  The move.
+ * @returns {{number: string, san: string}} `12.` for White, `12...` for Black, and the move.
  */
 function numbered(ply, san) {
   const number = Math.ceil(ply / 2);
   return { number: ply % 2 === 1 ? `${number}.` : `${number}...`, san };
 }
 
-/** @param {any} summary  The API's GameSummary. */
+/**
+ * Fills the end-of-game card: result, variation, theory, deviations and the PGN buttons.
+ * @param {any} summary  The API's GameSummary.
+ * @returns {void}
+ */
 export function renderEndCard(summary) {
   byId("end-result").textContent = t(`end.${summary.result}`);
   byId("end-termination").textContent = t(`end.termination.${summary.termination}`);

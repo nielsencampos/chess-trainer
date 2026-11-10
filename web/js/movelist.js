@@ -9,10 +9,12 @@ import { moveIcon } from "./icons.js";
  */
 
 /**
- * @param {HTMLElement} container
- * @param {PlyView[]} plies
+ * Draws the move list.
+ * @param {HTMLElement} container  The list's element.
+ * @param {PlyView[]} plies  The moves, in order.
  * @param {boolean} showTheoryMarks  False hides marks while the out-of-theory warning is off.
- * @param {number} [currentPly]  In a review, the move being shown.
+ * @param {number} [currentPly]  In a review, the move being shown; scrolls to it.
+ * @returns {void}
  */
 export function renderMoveList(container, plies, showTheoryMarks, currentPly) {
   const fragment = document.createDocumentFragment();
@@ -32,10 +34,12 @@ export function renderMoveList(container, plies, showTheoryMarks, currentPly) {
 }
 
 /**
- * @param {PlyView | undefined} ply
- * @param {boolean} showTheoryMarks
- * @param {number} number
- * @param {number} [currentPly]
+ * Draws one move of the list.
+ * @param {PlyView | undefined} ply  The move, or undefined for an empty cell.
+ * @param {boolean} showTheoryMarks  Whether to mark book moves and deviations.
+ * @param {number} number  The move's ply.
+ * @param {number} [currentPly]  In a review, the move being shown.
+ * @returns {HTMLDivElement} The cell.
  */
 function moveCell(ply, showTheoryMarks, number, currentPly) {
   const cell = document.createElement("div");

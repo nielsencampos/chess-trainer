@@ -7,16 +7,23 @@ import { formatClock } from "./clock.js";
 import { linkMoves, renderReviewList } from "./reviewlist.js";
 import { openingName } from "./opening-names.js";
 
-/** @param {string} id */
+/**
+ * Finds an element by id.
+ * @param {string} id  The element's id.
+ * @returns {any} The element.
+ */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
 const FIRST = 0;
 
+/** The read-only review of a saved game or a book line, on the main board. */
 export class Review {
   /**
-   * @param {import("./board.js").Board} board
-   * @param {() => void} onClose
-   * @param {(gameId: string, ply: number) => void} onPlayFromHere
+   * Wires the review's buttons, the move list clicks and the keys.
+   * @param {import("./board.js").Board} board  The board it shows positions on.
+   * @param {() => void} onClose  Gives the board back when the review closes.
+   * @param {(gameId: string, ply: number) => void} onPlayFromHere  Starts a new game from a saved
+   *   game's move.
    */
   constructor(board, onClose, onPlayFromHere) {
     this.board = board;
@@ -56,23 +63,37 @@ export class Review {
     document.addEventListener("keydown", (event) => this.onKey(event));
   }
 
+  /**
+   * The number of main-line moves.
+   * @returns {number} The last ply, 0 with no review open.
+   */
   get lastPly() {
     return this.data ? this.data.moves.length : FIRST;
   }
 
-  /** @param {string} gameId */
+  /**
+   * Opens a saved game, at its last move.
+   * @param {string} gameId  The game's id.
+   * @returns {Promise<void>}
+   */
   async openGame(gameId) {
     this.show(await api.reviewGame(gameId), gameId);
   }
 
-  /** @param {string} variantId */
+  /**
+   * Opens a book line, at its last move.
+   * @param {string} variantId  The line id.
+   * @returns {Promise<void>}
+   */
   async openLine(variantId) {
     this.show(await api.reviewLine(variantId), null);
   }
 
   /**
-   * @param {any} data
-   * @param {string | null} gameId
+   * Shows a review: the bar, names, clocks if the PGN has them, and the last position.
+   * @param {any} data  The API's review.
+   * @param {string | null} gameId  The saved game's id, or null for a book line.
+   * @returns {void}
    */
   show(data, gameId) {
     this.active = true;
@@ -96,6 +117,7 @@ export class Review {
     this.goTo(this.lastPly);
   }
 
+  /** Writes the opening name of the game or line. */
   renderOpening() {
     byId("opening-name").textContent = this.data.opening
       ? t("moves.openingName", { eco: this.data.eco ?? "", name: openingName(this.data.opening) })
@@ -109,6 +131,7 @@ export class Review {
     this.select(this.node);
   }
 
+  /** Writes the players' names on the side of their color. */
   renderNames() {
     const white = this.data.white ?? t("setup.white");
     const black = this.data.black ?? t("setup.black");
@@ -116,6 +139,7 @@ export class Review {
     byId("top-name").textContent = this.flipped ? white : black;
   }
 
+  /** Turns the board around. */
   flip() {
     this.flipped = !this.flipped;
     this.board.setOrientation(this.flipped ? "b" : "w");
@@ -123,23 +147,33 @@ export class Review {
     this.select(this.node);
   }
 
-  /** @param {number} ply A move of the main line, 0 for the start. */
+  /**
+   * Shows a move of the main line.
+   * @param {number} ply  A move of the main line, 0 for the start; clamped to the game.
+   * @returns {void}
+   */
   goTo(ply) {
     if (!this.active) return;
     const clamped = Math.min(this.lastPly, Math.max(FIRST, ply));
     this.select(clamped === FIRST ? null : this.data.moves[clamped - 1]);
   }
 
+  /** Shows the move before, in the line being followed. */
   back() {
     if (this.node) this.select(this.node.prev);
   }
 
+  /** Shows the move after, in the line being followed. */
   forward() {
     const next = this.node ? this.node.next : (this.data?.moves[0] ?? null);
     if (next) this.select(next);
   }
 
-  /** @param {import("./reviewlist.js").ReviewMove | null} node */
+  /**
+   * Shows the position after a move, and updates the list, clocks, bar and buttons.
+   * @param {import("./reviewlist.js").ReviewMove | null} node  The move, or null for the start.
+   * @returns {void}
+   */
   select(node) {
     if (!this.active) return;
     this.node = node;
@@ -167,7 +201,8 @@ export class Review {
   /**
    * Each side's clock after its last move up to here. In a variation, the clocks are those of the
    * main-line move it branches from; before a side's first move, its first clock.
-   * @param {import("./reviewlist.js").ReviewMove | null} node
+   * @param {import("./reviewlist.js").ReviewMove | null} node  The move on the board.
+   * @returns {void}
    */
   renderClocks(node) {
     let at = node;
@@ -191,7 +226,11 @@ export class Review {
       clocks[bottom] === undefined ? "" : formatClock(clocks[bottom]);
   }
 
-  /** @param {KeyboardEvent} event */
+  /**
+   * Arrows, Home and End move through the review; Escape closes it.
+   * @param {KeyboardEvent} event  The key pressed, ignored in form fields.
+   * @returns {void}
+   */
   onKey(event) {
     if (!this.active) return;
     const target = /** @type {HTMLElement} */ (event.target);
@@ -205,6 +244,7 @@ export class Review {
     event.preventDefault();
   }
 
+  /** Closes the review and gives the board back. */
   close() {
     if (!this.active) return;
     this.active = false;

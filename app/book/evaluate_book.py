@@ -31,7 +31,16 @@ _engine: chess.engine.SimpleEngine | None = None
 
 
 def book_positions(openings: Path) -> dict[str, int]:
-    """EPD -> the earliest ply it appears at, so the opening moves are evaluated first."""
+    """Lists the book's positions with the earliest ply each appears at.
+
+    Sorting by ply evaluates the opening moves first.
+
+    Args:
+        openings (Path): The `openings/` folder.
+
+    Returns:
+        dict[str, int]: EPD -> earliest ply, the starting position at 0.
+    """
     plies: dict[str, int] = {chess.Board().epd(): 0}
     for opening_file in read_opening_files(openings):
         for line in opening_file.lines:
@@ -45,13 +54,30 @@ def book_positions(openings: Path) -> dict[str, int]:
 
 
 def read_evals(path: Path) -> dict:
+    """Reads an evaluations file, or an empty one if it does not exist.
+
+    Args:
+        path (Path): The evaluations file.
+
+    Returns:
+        dict: Its `engine` and `positions`.
+    """
     if not path.exists():
         return {"engine": None, "positions": {}}
     return json.loads(path.read_text(encoding="utf-8"))
 
 
 def write_evals(path: Path, engine_name: str, positions: dict[str, dict]) -> None:
-    """One position per line, sorted, so a new run shows as a readable diff."""
+    """Writes the evaluations, one position per line and sorted, so a new run is a readable diff.
+
+    The file is written to a temporary name first and then replaced, so a stop never leaves
+    half a file.
+
+    Args:
+        path (Path): The evaluations file.
+        engine_name (str): The engine's name, as it reports it.
+        positions (dict[str, dict]): EPD -> {cp or mate, depth, best}.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
     header = {
         "engine": engine_name,
@@ -70,6 +96,12 @@ def write_evals(path: Path, engine_name: str, positions: dict[str, dict]) -> Non
 
 
 def _start_worker(engine_path: str, hash_mb: int) -> None:
+    """Starts a pool worker's Stockfish, at a low priority and with one thread.
+
+    Args:
+        engine_path (str): The Stockfish binary.
+        hash_mb (int): The `Hash` option, in MB.
+    """
     global _engine
     os.nice(10)
     signal.signal(signal.SIGINT, signal.SIG_IGN)  # the main process decides when to stop
@@ -78,6 +110,15 @@ def _start_worker(engine_path: str, hash_mb: int) -> None:
 
 
 def _evaluate(epd: str, depth: int) -> tuple[str, dict]:
+    """Evaluates one position in a worker.
+
+    Args:
+        epd (str): The position.
+        depth (int): The search depth.
+
+    Returns:
+        tuple[str, dict]: The EPD and its entry: cp or mate from White's side, depth, best move.
+    """
     assert _engine is not None
     board = chess.Board.from_epd(epd)[0]
     if board.is_game_over():
@@ -99,6 +140,11 @@ def _evaluate(epd: str, depth: int) -> tuple[str, dict]:
 
 
 def main() -> int:
+    """Runs the evaluation from the command line, saving every few positions.
+
+    Returns:
+        int: The exit code: 0 when done, 130 when stopped with Ctrl+C.
+    """
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--engine", default=".cache/stockfish")
     parser.add_argument("--depth", type=int, default=32)

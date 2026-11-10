@@ -5,8 +5,9 @@ const LOW_TIME_MS = 20_000;
 const LOW_TIME_SHARE = 0.1;
 
 /**
- * @param {number} ms
- * @returns {string}
+ * Formats a clock: tenths below 10 s, hours when there are any.
+ * @param {number} ms  Milliseconds left.
+ * @returns {string} Such as `00:09.4`, `04:59` or `1:30:00`.
  */
 export function formatClock(ms) {
   const tenths = Math.ceil(Math.max(0, ms) / 100);
@@ -22,10 +23,12 @@ export function formatClock(ms) {
     : `${String(minutes).padStart(2, "0")}:${seconds}`;
 }
 
+/** The two game clocks, with increment, Bronstein and US delay, and later periods. */
 export class Clocks {
   /**
-   * @param {(color: "w" | "b") => void} onFlag
-   * @param {() => void} onTick
+   * Creates stopped clocks with no time control.
+   * @param {(color: "w" | "b") => void} onFlag  Called when a clock reaches zero.
+   * @param {() => void} onTick  Called whenever the clocks should be drawn again.
    */
   constructor(onFlag, onTick) {
     this.onFlag = onFlag;
@@ -49,9 +52,12 @@ export class Clocks {
   }
 
   /**
+   * Sets both clocks for a new game, or turns them off.
    * @param {{base_ms: number, increment_ms: number,
    *   periods: {after_moves: number, add_ms: number}[],
-   *   delay_ms: number, delay_kind: string | null} | null} timeControl
+   *   delay_ms: number, delay_kind: string | null} | null} timeControl  The time control, or null
+   *   for no clock.
+   * @returns {void}
    */
   reset(timeControl) {
     this.stop();
@@ -69,8 +75,9 @@ export class Clocks {
 
   /**
    * Puts the clocks back where a saved game left them.
-   * @param {{w: number | null, b: number | null}} remaining
-   * @param {{w: number, b: number}} movesMade
+   * @param {{w: number | null, b: number | null}} remaining  Each side's clock, if saved.
+   * @param {{w: number, b: number}} movesMade  Each side's moves, for the periods.
+   * @returns {void}
    */
   restore(remaining, movesMade) {
     if (!this.enabled) return;
@@ -79,7 +86,11 @@ export class Clocks {
     this.onTick();
   }
 
-  /** @param {"w" | "b"} color */
+  /**
+   * Starts a side's clock.
+   * @param {"w" | "b"} color  The side to move.
+   * @returns {void}
+   */
   start(color) {
     if (!this.enabled) return;
     this.settle();
@@ -92,6 +103,7 @@ export class Clocks {
     this.onTick();
   }
 
+  /** Stops the running clock, counting its time so far. */
   stop() {
     this.settle();
     this.active = null;
@@ -101,7 +113,8 @@ export class Clocks {
   /**
    * A player finished a move: stop their time, then add the increment, any Bronstein refund
    * and the time of a new period.
-   * @param {"w" | "b"} color
+   * @param {"w" | "b"} color  The side that moved.
+   * @returns {void}
    */
   press(color) {
     if (!this.enabled) return;
@@ -119,8 +132,9 @@ export class Clocks {
   }
 
   /**
-   * @param {"w" | "b"} color
-   * @returns {number | null}
+   * A side's time left, up to now.
+   * @param {"w" | "b"} color  The side.
+   * @returns {number | null} Milliseconds, or null without a clock.
    */
   remainingMs(color) {
     if (!this.enabled) return null;
@@ -128,6 +142,7 @@ export class Clocks {
     return Math.round(this.remaining[color]);
   }
 
+  /** Charges the running clock for the time since the last tick, after any US delay. */
   settle() {
     if (this.active === null) return;
     const now = performance.now();
@@ -139,6 +154,7 @@ export class Clocks {
     this.lastTick = now;
   }
 
+  /** Updates the running clock and flags it at zero. */
   tick() {
     const color = this.active;
     if (color === null) return;

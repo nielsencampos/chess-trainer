@@ -8,6 +8,11 @@ ALAPIN = "1. e4 c5 2. c3"
 
 
 def test_picker_lists_each_language_in_its_own_name(page: Page):
+    """Picker lists each language in its own name.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     options = page.locator("#locale-picker option")
     expect(options).to_have_text(["English", "Español", "Português (Brasil)"])
@@ -15,6 +20,11 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
 
 
 def test_switching_language_is_kept_after_a_reload(page: Page):
+    """Switching language is kept after a reload.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     expect(page.locator("#openings .opening")).to_have_count(122)
     bird = page.locator('#openings .opening[data-repertoire="bird-opening"] .opening-name').first
@@ -41,6 +51,12 @@ def test_switching_language_is_kept_after_a_reload(page: Page):
 
 
 def test_switching_mid_game_keeps_the_game(page: Page, seed_prefs):
+    """Switching mid game keeps the game.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="10")
     page.goto("/")
     play(page)
@@ -66,6 +82,12 @@ def test_switching_mid_game_keeps_the_game(page: Page, seed_prefs):
 
 
 def test_opening_names_follow_the_language(page: Page, seed_prefs):
+    """Opening names follow the language.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none", locale="pt-BR")
     page.goto("/")
     play(page)

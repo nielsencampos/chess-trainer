@@ -25,10 +25,21 @@ KEEP_DOCS = ("Copying.txt", "AUTHORS")
 
 
 def fail(message: str) -> None:
+    """Stops the build with a message.
+
+    Args:
+        message (str): What went wrong.
+    """
     sys.exit(f"fetch_stockfish: {message}")
 
 
 def resolve(version: str, out_file: Path) -> None:
+    """Writes the release tag to build: the newest release for `latest`, else the tag given.
+
+    Args:
+        version (str): `latest` or a tag such as `sf_19`.
+        out_file (Path): Where to write the tag.
+    """
     if version == "latest":
         # The redirect, not the API: no rate limit, and it never points at a prerelease.
         with urllib.request.urlopen(
@@ -44,6 +55,14 @@ def resolve(version: str, out_file: Path) -> None:
 
 
 def _release(tag: str) -> dict:
+    """Reads a release from the GitHub API, with a token if the build has one.
+
+    Args:
+        tag (str): The release tag.
+
+    Returns:
+        dict: The release, with its assets.
+    """
     headers = {"Accept": "application/vnd.github+json", "User-Agent": "chess-trainer-build"}
     if TOKEN_FILE.exists():
         headers["Authorization"] = f"Bearer {TOKEN_FILE.read_text(encoding='utf-8').strip()}"
@@ -65,6 +84,15 @@ def _release(tag: str) -> dict:
 
 
 def download(tag: str, arch: str, out_dir: Path) -> None:
+    """Downloads the universal binary of a release, verifies its digest and extracts it.
+
+    Also keeps the license files and writes a `VERSION` file with the tag.
+
+    Args:
+        tag (str): The release tag.
+        arch (str): `amd64` or `arm64`.
+        out_dir (Path): Where to install it.
+    """
     if arch not in ARCH_TO_ASSET:
         fail(f"unsupported architecture {arch!r}; supported: {sorted(ARCH_TO_ASSET)}")
     binary_name = f"stockfish-{ARCH_TO_ASSET[arch]}-universal"

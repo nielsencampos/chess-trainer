@@ -15,11 +15,19 @@ import { sound } from "./sound.js";
 
 const RESIGN_CONFIRM_MS = 3000;
 
-/** @param {string} id */
+/**
+ * Finds an element by id.
+ * @param {string} id  The element's id.
+ * @returns {any} The element.
+ */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
+/** Runs a game in the browser: moves, clocks, premove, take-back, the bars and the end card. */
 export class GameController {
-  /** @param {import("./board.js").Board} board */
+  /**
+   * Creates the controller with no game, and wires Show moves, Resign and Take back.
+   * @param {import("./board.js").Board} board  The board it plays on.
+   */
   constructor(board) {
     this.board = board;
     this.rules = new Rules();
@@ -80,12 +88,20 @@ export class GameController {
     this.renderIdle();
   }
 
-  /** @param {string} square */
+  /**
+   * The legal moves of a piece, for the board.
+   * @param {string} square  The piece's square.
+   * @returns {import("./rules.js").TargetMove[]} Its destinations.
+   */
   legalMoves(square) {
     return this.rules.movesFrom(square);
   }
 
-  /** @param {string} square */
+  /**
+   * Where one of the user's pieces could be premoved, by its shape alone.
+   * @param {string} square  The piece's square.
+   * @returns {import("./board.js").LegalMove[]} Its destinations; none for the bot's pieces.
+   */
   premoveTargets(square) {
     const piece = this.rules.pieceAt(square);
     if (!piece || piece.color !== this.userColor) return [];
@@ -97,8 +113,10 @@ export class GameController {
   }
 
   /**
-   * @param {string} from
-   * @param {string} to
+   * Queues a premove.
+   * @param {string} from  The piece's square.
+   * @param {string} to  The target square.
+   * @returns {void}
    */
   setPremove(from, to) {
     this.premove = { from, to };
@@ -106,13 +124,17 @@ export class GameController {
     this.renderChips();
   }
 
+  /** Drops the queued premove, if any. */
   clearPremove() {
     this.premove = null;
     this.board.setPremoveSquares([]);
     this.renderChips();
   }
 
-  /** The user's color while the bot is thinking, if premoves are on. */
+  /**
+   * The user's color while the bot is thinking, if premoves are on.
+   * @returns {"w" | "b" | null} The color, or null with premoves off.
+   */
   premoveColor() {
     return this.setup?.premoves ? this.userColor : null;
   }
@@ -128,8 +150,9 @@ export class GameController {
 
   /**
    * The board before a game starts, seen from the selected color.
-   * @param {"white" | "black"} [color]
+   * @param {"white" | "black"} [color]  The color at the bottom.
    * @param {string} [chess960Fen]  The Chess960 position the setup shows, if any.
+   * @returns {void}
    */
   renderIdle(color = "white", chess960Fen) {
     this.rules = new Rules(chess960Fen);
@@ -150,7 +173,11 @@ export class GameController {
     byId("chips").replaceChildren(); // Last: clearing the premove draws them.
   }
 
-  /** @param {import("./setup.js").GameSetup} setup */
+  /**
+   * Starts a new game on the server, and shows the bot's first move if it opens.
+   * @param {import("./setup.js").GameSetup} setup  The game's setup.
+   * @returns {Promise<void>}
+   */
   async start(setup) {
     clearTimeout(this.botTimer);
     this.clocks.stop();
@@ -202,7 +229,11 @@ export class GameController {
     }
   }
 
-  /** @param {import("./setup.js").GameSetup} setup */
+  /**
+   * Resets the board, clocks, bars and lists for a game, before any move.
+   * @param {import("./setup.js").GameSetup} setup  The game's setup.
+   * @returns {void}
+   */
   prepare(setup) {
     this.setup = setup;
     this.summary = null;
@@ -245,8 +276,9 @@ export class GameController {
 
   /**
    * Continues a saved game, as it was at its last saved move.
-   * @param {any} game
-   * @param {import("./setup.js").TimeControlInfo | null} clock
+   * @param {any} game  The API's ActiveGame.
+   * @param {import("./setup.js").TimeControlInfo | null} clock  Its time control, or null.
+   * @returns {void}
    */
   resume(game, clock) {
     this.generation += 1;
@@ -276,6 +308,11 @@ export class GameController {
     this.opening = game.state.opening;
 
     const botColor = this.userColor === "w" ? "b" : "w";
+    /**
+     * Counts the saved moves of one side.
+     * @param {string} by  `user` or `bot`.
+     * @returns {number} The count.
+     */
     const countBy = (/** @type {string} */ by) =>
       game.moves.filter((/** @type {any} */ move) => move.by === by).length;
     this.clocks.restore(
@@ -294,6 +331,7 @@ export class GameController {
     this.beginUserTurn();
   }
 
+  /** Lets the user move and starts timing the move. */
   beginUserTurn() {
     this.botThinking = false;
     this.turnStartedAt = performance.now();
@@ -302,9 +340,11 @@ export class GameController {
   }
 
   /**
-   * @param {string} from
-   * @param {string} to
-   * @param {string} [promotion]
+   * Plays the user's move at once, sends it, and schedules the bot's reply.
+   * @param {string} from  The piece's square.
+   * @param {string} to  The target square.
+   * @param {string} [promotion]  The piece to promote to.
+   * @returns {Promise<void>}
    */
   async onUserMove(from, to, promotion) {
     if (this.over || this.gameId === null) return;
@@ -365,10 +405,11 @@ export class GameController {
 
   /**
    * Shows the bot's move once its "thinking" time has passed.
-   * @param {any} botMove
-   * @param {any} state
-   * @param {number} sinceMs
-   * @param {number} generation
+   * @param {any} botMove  The API's BotMoveOut.
+   * @param {any} state  The game's state after it.
+   * @param {number} sinceMs  When its clock started, from `performance.now()`.
+   * @param {number} generation  The game the answer belongs to; an older one is ignored.
+   * @returns {void}
    */
   scheduleBotMove(botMove, state, sinceMs, generation) {
     const wait = Math.max(0, botMove.delay_ms - (performance.now() - sinceMs));
@@ -379,9 +420,11 @@ export class GameController {
   }
 
   /**
-   * @param {any} botMove
-   * @param {any} state
-   * @param {number} generation
+   * Plays the bot's move on the board, then ends the game or gives the user the turn.
+   * @param {any} botMove  The API's BotMoveOut.
+   * @param {any} state  The game's state after it.
+   * @param {number} generation  The game the answer belongs to; an older one is ignored.
+   * @returns {void}
    */
   applyBotMove(botMove, state, generation) {
     const botColor = this.userColor === "w" ? "b" : "w";
@@ -410,23 +453,37 @@ export class GameController {
     this.playPremove();
   }
 
-  /** @param {string[]} lastMove */
+  /**
+   * Shows the current position, with its last move and check.
+   * @param {string[]} lastMove  The last move's squares, or none.
+   * @returns {void}
+   */
   showPosition(lastMove) {
     this.board.setPosition(this.rules.fen(), { lastMove, check: this.checkSquare() });
   }
 
-  /** @returns {string | null} */
+  /**
+   * The square of the king in check.
+   * @returns {string | null} The square, or null.
+   */
   checkSquare() {
     return this.rules.checkSquare();
   }
 
-  /** Only without premoves: with them, a move queued for the reply is the way to play fast. */
+  /**
+   * Shows Take back only without premoves (with them, a move queued for the reply is the way
+   * to play fast), enabled while the bot's reply is not shown yet.
+   */
   renderTakeBack() {
     const button = byId("take-back");
     button.hidden = this.setup?.premoves ?? true;
     button.disabled = this.takeBackable === null;
   }
 
+  /**
+   * Takes back the user's last move and the bot's unseen reply, with the clocks before it.
+   * @returns {Promise<void>}
+   */
   async onTakeBack() {
     const saved = this.takeBackable;
     if (!saved || this.over || this.gameId === null) return;
@@ -466,6 +523,7 @@ export class GameController {
     this.beginUserTurn();
   }
 
+  /** Resign needs a second click within 3 s to confirm. */
   onResignClick() {
     const button = byId("resign");
     if (!button.classList.contains("confirming")) {
@@ -478,6 +536,7 @@ export class GameController {
     void this.endWith((gameId) => api.resign(gameId));
   }
 
+  /** Puts the Resign button back to its first state. */
   resetResign() {
     clearTimeout(this.resignTimer);
     const button = byId("resign");
@@ -485,7 +544,11 @@ export class GameController {
     button.textContent = t("game.resign");
   }
 
-  /** @param {"w" | "b"} color */
+  /**
+   * A clock in the browser ran out: the server ends the game.
+   * @param {"w" | "b"} color  Whose clock ran out.
+   * @returns {void}
+   */
   onFlag(color) {
     const side = color === this.userColor ? "user" : "bot";
     const shownPlies = this.plies.length;
@@ -494,7 +557,8 @@ export class GameController {
 
   /**
    * Ends the game with a request whose answer is the final summary.
-   * @param {(gameId: string) => Promise<any>} request
+   * @param {(gameId: string) => Promise<any>} request  The request, such as resign.
+   * @returns {Promise<void>}
    */
   async endWith(request) {
     if (this.over || this.gameId === null) return;
@@ -507,7 +571,11 @@ export class GameController {
     }
   }
 
-  /** @param {number} generation */
+  /**
+   * Shows the end of a game that ended on the board.
+   * @param {number} generation  The game the answer belongs to; an older one is ignored.
+   * @returns {Promise<void>}
+   */
   async finish(generation) {
     if (this.gameId === null) return;
     this.markOver();
@@ -518,6 +586,7 @@ export class GameController {
     }
   }
 
+  /** Stops everything that runs during a game: clocks, bot, premove and input. */
   markOver() {
     this.takeBackable = null;
     this.renderTakeBack();
@@ -534,8 +603,10 @@ export class GameController {
   }
 
   /**
-   * @param {any} summary
-   * @param {number} generation
+   * Shows the end-of-game card, the final move list and the evaluation bar.
+   * @param {any} summary  The API's GameSummary.
+   * @param {number} generation  The game the answer belongs to; an older one is ignored.
+   * @returns {void}
    */
   showEnd(summary, generation) {
     if (generation !== this.generation) return;
@@ -584,7 +655,11 @@ export class GameController {
     this.clocks.reset(null);
   }
 
-  /** @param {unknown} error */
+  /**
+   * Ends the game on screen when the server fails, and says so on the end card.
+   * @param {unknown} error  The error, logged to the console.
+   * @returns {void}
+   */
   onServerError(error) {
     console.error(error);
     this.markOver();
@@ -602,6 +677,7 @@ export class GameController {
     this.showMenu();
   }
 
+  /** Writes the server-error texts in the current language. */
   renderFailure() {
     byId("game-error").textContent = t("game.serverError");
     byId("end-result").textContent = t("chip.gameOver");
@@ -624,8 +700,8 @@ export class GameController {
   }
 
   /**
-   * With "Show moves" off, the opening name and the move list, with their headings, are hidden while a game is played.
-   * Everything shows again at the end of the game, and outside games.
+   * With "Show moves" off, the opening name and the move list, with their headings, are hidden
+   * while a game is played. Everything shows again at the end of the game, and outside games.
    */
   applyShowMoves() {
     const playing = this.setup !== null && !this.over;
@@ -636,6 +712,7 @@ export class GameController {
     byId("moves-box").hidden = hidden;
   }
 
+  /** Writes the opening name, or that there is none yet. */
   renderOpening() {
     byId("opening-name").textContent =
       this.opening
@@ -643,13 +720,18 @@ export class GameController {
         : t("moves.noOpening");
   }
 
+  /** Draws the move list, with theory marks unless the warning is off or there is no book. */
   renderMoves() {
     // Without a book, no move is in or out of theory.
     const showMarks = (this.setup?.warning ?? true) && !this.setup?.chess960;
     renderMoveList(byId("movelist"), this.plies, showMarks);
   }
 
-  /** @param {import("./setup.js").GameSetup | null} setup */
+  /**
+   * Writes the players' names above and below the board.
+   * @param {import("./setup.js").GameSetup | null} setup  The game's setup, or null before a game.
+   * @returns {void}
+   */
   renderNames(setup) {
     byId("top-name").textContent = setup
       ? t("player.bot", { level: t(`level.${setup.level}`) })
@@ -657,6 +739,7 @@ export class GameController {
     byId("bottom-name").textContent = t("player.you");
   }
 
+  /** Draws both clocks, or hides them without a clock. */
   renderClocks() {
     const top = byId("top-clock");
     const bottom = byId("bottom-clock");
@@ -669,8 +752,10 @@ export class GameController {
   }
 
   /**
-   * @param {HTMLElement} element
-   * @param {"w" | "b"} color
+   * Draws one clock: the time, and whether it runs or is low.
+   * @param {HTMLElement} element  The clock's element.
+   * @param {"w" | "b"} color  Whose clock.
+   * @returns {void}
    */
   renderClock(element, color) {
     const remaining = this.clocks.remaining[color];
@@ -679,6 +764,7 @@ export class GameController {
     element.classList.toggle("low", remaining < this.clocks.lowTime);
   }
 
+  /** Draws the status chips under the board: turn, theory, check and premove. */
   renderChips() {
     /** @type {[string, string][]} */
     const chips = [];

@@ -4,13 +4,19 @@ import { api } from "./api.js";
 import { localize, onLocaleChange, t } from "./i18n.js";
 import { OpeningTree } from "./opening-tree.js";
 
-/** @param {string} id */
+/**
+ * Finds an element by id.
+ * @param {string} id  The element's id.
+ * @returns {any} The element.
+ */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
+/** The Openings screen: searches the book's lines, views one, exports the ticked ones. */
 export class OpeningsScreen {
   /**
-   * @param {import("./setup.js").RepertoireInfo[]} repertoires
-   * @param {(variantId: string) => void} onView
+   * Builds the screen's tree of lines.
+   * @param {import("./setup.js").RepertoireInfo[]} repertoires  The book.
+   * @param {(variantId: string) => void} onView  Opens a line on the board.
    */
   constructor(repertoires, onView) {
     this.tree = new OpeningTree(
@@ -35,12 +41,17 @@ export class OpeningsScreen {
     });
   }
 
+  /** Labels and enables the export button with the number of ticked lines. */
   renderExport() {
     const count = this.tree.selected.size;
     byId("lines-export").disabled = count === 0;
     byId("lines-export").textContent = t("lines.export", { count });
   }
 
+  /**
+   * Downloads the ticked lines as one PGN file, or shows an error.
+   * @returns {Promise<void>}
+   */
   async exportSelected() {
     byId("lines-error").hidden = true;
     try {

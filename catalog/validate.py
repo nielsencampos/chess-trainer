@@ -16,7 +16,17 @@ DEFAULT_DIR = Path(__file__).parent.parent / "openings"
 
 
 def validate(files: list[OpeningFile], index: dict) -> list[str]:
-    """Returns one message per line that disagrees with the catalog."""
+    """Checks each line's `eco` and `opening` against the catalog, by final position.
+
+    Every line is also replayed, so an illegal move raises.
+
+    Args:
+        files (list[OpeningFile]): The opening files.
+        index (dict): The catalog by position (`index_by_position`).
+
+    Returns:
+        list[str]: One message per line that disagrees with the catalog.
+    """
     problems: list[str] = []
     for opening_file in files:
         for line in opening_file.lines:
@@ -36,7 +46,14 @@ def validate(files: list[OpeningFile], index: dict) -> list[str]:
 
 
 def name_coverage(files: list[OpeningFile]) -> dict[str, dict[str, tuple[int, int]]]:
-    """For each locale, how many families, subgroups and lines have their own name."""
+    """For each locale, how many families, subgroups and lines have their own name.
+
+    Args:
+        files (list[OpeningFile]): The opening files.
+
+    Returns:
+        dict[str, dict[str, tuple[int, int]]]: Locale -> kind -> (named, total).
+    """
     subgroups = {
         json.dumps(line.subgroup, sort_keys=True)
         for opening_file in files
@@ -57,6 +74,14 @@ def name_coverage(files: list[OpeningFile]) -> dict[str, dict[str, tuple[int, in
 
 
 def main(directory: Path) -> int:
+    """Validates the book and prints the problems and the name coverage.
+
+    Args:
+        directory (Path): The `openings/` folder.
+
+    Returns:
+        int: The exit code: 0 if every line agrees with the catalog.
+    """
     try:
         files = read_opening_files(directory)
         problems = validate(files, index_by_position(load_catalog()))

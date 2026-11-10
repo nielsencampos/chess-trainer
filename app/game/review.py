@@ -48,6 +48,15 @@ SIMPLE_TIME_CONTROL = re.compile(r"(\d+)(?:\+(\d+))?")
 
 
 def review_of_pgn(pgn: str) -> dict | None:
+    """Turns a PGN game into the moves of a review.
+
+    Args:
+        pgn (str): One PGN game.
+
+    Returns:
+        dict | None: `start_fen` and `moves` (each with ply, SAN, UCI, FEN, its annotations and
+            variations), or None if the PGN cannot be read.
+    """
     game = chess.pgn.read_game(io.StringIO(pgn))
     if game is None or game.errors:
         return None
@@ -57,7 +66,16 @@ def review_of_pgn(pgn: str) -> dict | None:
 
 
 def _line(parent: chess.pgn.GameNode, board: chess.Board, clocks: "_Clocks | None") -> list[dict]:
-    """The line that continues from `parent`, with the variations that branch off each move."""
+    """The line that continues from `parent`, with the variations that branch off each move.
+
+    Args:
+        parent (chess.pgn.GameNode): The node the line starts after.
+        board (chess.Board): The position at `parent`; it is played forward.
+        clocks (_Clocks | None): The clocks of the main line, or None inside a variation.
+
+    Returns:
+        list[dict]: The moves of the line.
+    """
     moves = []
     node = parent
     while node.variations:
@@ -76,7 +94,15 @@ def _line(parent: chess.pgn.GameNode, board: chess.Board, clocks: "_Clocks | Non
 
 
 def _line_from(first: chess.pgn.ChildNode, board: chess.Board) -> list[dict]:
-    """A side variation: its first move, then the line that continues from it."""
+    """A side variation: its first move, then the line that continues from it.
+
+    Args:
+        first (chess.pgn.ChildNode): The variation's first move.
+        board (chess.Board): The position before it; it is played forward.
+
+    Returns:
+        list[dict]: The moves of the variation.
+    """
     ply = board.ply() + 1
     san = board.san(first.move)
     board.push(first.move)
@@ -86,6 +112,15 @@ def _line_from(first: chess.pgn.ChildNode, board: chess.Board) -> list[dict]:
 
 
 def _annotations(node: chess.pgn.ChildNode, clocks: "_Clocks | None") -> dict:
+    """What the PGN says about a move: kind, symbols, evaluation, comment and clocks.
+
+    Args:
+        node (chess.pgn.ChildNode): The move.
+        clocks (_Clocks | None): The main line's clocks, or None inside a variation.
+
+    Returns:
+        dict: Only the keys the PGN gives.
+    """
     out: dict = {}
     kind = _kind(node)
     if kind:
@@ -106,6 +141,14 @@ def _annotations(node: chess.pgn.ChildNode, clocks: "_Clocks | None") -> dict:
 
 
 def _kind(node: chess.pgn.ChildNode) -> str | None:
+    """The site's classification of a move: Chess.com's `[%c_effect]` type, else the NAG.
+
+    Args:
+        node (chess.pgn.ChildNode): The move.
+
+    Returns:
+        str | None: An icon kind such as `blunder`, or None.
+    """
     for name in EFFECT_TYPE.findall(node.comment):
         if name.lower() in EFFECT_KINDS:
             return EFFECT_KINDS[name.lower()]
@@ -121,15 +164,32 @@ class _Clocks:
     The time comes from Chess.com's `[%timestamp]` (tenths of a second) when present; otherwise
     from the two clocks of the same side and the increment, which only a simple `base+increment`
     time control gives.
+
+    Attributes:
+        increment_ms (int | None): The increment, or None if the time control is not simple.
+        last_ms (dict[chess.Color, int | None]): Each side's last clock.
     """
 
     def __init__(self, time_control: str) -> None:
+        """Creates the clocks for a game.
+
+        Args:
+            time_control (str): The PGN `TimeControl` tag, such as `600+5`.
+        """
         match = SIMPLE_TIME_CONTROL.fullmatch(time_control.strip())
         self.increment_ms = int(match.group(2) or 0) * 1000 if match else None
         base_ms = int(match.group(1)) * 1000 if match else None
         self.last_ms: dict[chess.Color, int | None] = {chess.WHITE: base_ms, chess.BLACK: base_ms}
 
     def after(self, node: chess.pgn.ChildNode) -> dict:
+        """The clock after a move and the time it took, as far as the PGN tells.
+
+        Args:
+            node (chess.pgn.ChildNode): The move, in main-line order.
+
+        Returns:
+            dict: `clock_ms` and `spent_ms`, each only when known.
+        """
         out: dict = {}
         side = not node.turn()  # the side that just moved
         seconds = node.clock()
@@ -148,7 +208,17 @@ class _Clocks:
 
 
 def pgn_of_line(variant: Variant) -> str:
-    """A book line as a PGN game, ready to export."""
+    """A book line as a PGN game, ready to export.
+
+    Args:
+        variant (Variant): The line.
+
+    Returns:
+        str: The PGN, with `ECO` and `Opening` when the line has them.
+
+    Raises:
+        ValueError: The line's moves are not valid PGN.
+    """
     game = chess.pgn.read_game(io.StringIO(f"{variant.pgn} *"))
     if game is None or game.errors:
         raise ValueError(f"line {variant.variant_id} has an invalid PGN")

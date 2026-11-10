@@ -1,10 +1,15 @@
-// The "Saved games" tab: finished games, filters, selection and export.
+// The "Saved games" and "Import games" screens, and the menu that switches between screens:
+// finished games, filters, selection, export, deletion and imports.
 
 import { ApiError, api } from "./api.js";
 import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
 import { openingName, openingSearchText } from "./opening-names.js";
 
-/** @param {string} id */
+/**
+ * Finds an element by id.
+ * @param {string} id  The element's id.
+ * @returns {any} The element.
+ */
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
 /**
@@ -17,12 +22,14 @@ const byId = (id) => /** @type {any} */ (document.getElementById(id));
 const TABS = ["new", "saved", "openings", "import"];
 const DELETE_CONFIRM_MS = 3000;
 
+/** The Saved games list and the imports, and the menu tabs that show one screen at a time. */
 export class SavedGames {
   /**
-   * @param {(key: string) => string} timeLabel
-   * @param {import("./setup.js").SetupCard} setup
-   * @param {(gameId: string) => void} onView
-   * @param {() => void} onLeaveTab
+   * Wires the menu tabs, the list's filters and buttons, and the import forms.
+   * @param {(key: string) => string} timeLabel  The label of a time control key.
+   * @param {import("./setup.js").SetupCard} setup  The New Game card, shown by its tab.
+   * @param {(gameId: string) => void} onView  Opens a saved game's review.
+   * @param {() => void} onLeaveTab  Leaves a review or a finished game when a tab is clicked.
    */
   constructor(timeLabel, setup, onView, onLeaveTab) {
     this.onLeaveTab = onLeaveTab;
@@ -69,7 +76,8 @@ export class SavedGames {
 
   /**
    * The error line under the list. It is written through `localize`, so it follows the language.
-   * @param {string} key
+   * @param {string} key  The message's i18n key.
+   * @returns {void}
    */
   showError(key) {
     localize(byId("saved-error"), () => {
@@ -78,7 +86,11 @@ export class SavedGames {
     byId("saved-error").hidden = false;
   }
 
-  /** @param {string} tab */
+  /**
+   * Shows one screen of the menu and marks its tab.
+   * @param {string} tab  `new`, `saved`, `openings` or `import`.
+   * @returns {void}
+   */
   showTab(tab) {
     this.onLeaveTab();
     byId("setup-card").hidden = tab !== "new";
@@ -93,6 +105,10 @@ export class SavedGames {
     if (tab === "saved") void this.load();
   }
 
+  /**
+   * Reloads the saved games, keeping the selection of those that still exist.
+   * @returns {Promise<void>}
+   */
   async load() {
     byId("saved-error").hidden = true;
     try {
@@ -107,7 +123,11 @@ export class SavedGames {
     this.render();
   }
 
-  /** @param {string} text */
+  /**
+   * Imports pasted or uploaded PGN, and clears the box when every game went in.
+   * @param {string} text  The PGN.
+   * @returns {Promise<void>}
+   */
   async importText(text) {
     this.startImport("import");
     let report;
@@ -122,7 +142,10 @@ export class SavedGames {
     if (report.errors.length === 0 && report.imported > 0) byId("import-text").value = "";
   }
 
-  /** Fetches a player's games from Lichess or Chess.com and imports them. */
+  /**
+   * Fetches a player's games from Lichess or Chess.com and imports them.
+   * @returns {Promise<void>}
+   */
   async importRemote() {
     const button = byId("import-fetch");
     const site = /** @type {"lichess" | "chesscom"} */ (byId("import-site").value);
@@ -142,16 +165,21 @@ export class SavedGames {
     }
   }
 
-  /** @param {"import" | "import-remote"} prefix Which form's summary and error list. */
+  /**
+   * Clears a form's errors and shows its summary line.
+   * @param {"import" | "import-remote"} prefix  Which form: the paste and file one, or the site one.
+   * @returns {void}
+   */
   startImport(prefix) {
     this.setErrors(prefix, []);
     byId(`${prefix}-summary`).hidden = false;
   }
 
   /**
-   * The summaries and error lists are written through `localize`, so they follow the language.
-   * @param {"import" | "import-remote"} prefix
-   * @param {() => string} text
+   * Writes a form's summary, through `localize` so it follows the language.
+   * @param {"import" | "import-remote"} prefix  Which form: the paste and file one, or the site one.
+   * @param {() => string} text  Builds the summary in the current language.
+   * @returns {void}
    */
   setSummary(prefix, text) {
     const summary = byId(`${prefix}-summary`);
@@ -161,8 +189,10 @@ export class SavedGames {
   }
 
   /**
-   * @param {"import" | "import-remote"} prefix
+   * Lists the refused games of an import, through `localize` so it follows the language.
+   * @param {"import" | "import-remote"} prefix  Which form: the paste and file one, or the site one.
    * @param {any[]} items  The report's errors.
+   * @returns {void}
    */
   setErrors(prefix, items) {
     const errors = byId(`${prefix}-errors`);
@@ -182,9 +212,11 @@ export class SavedGames {
   }
 
   /**
+   * Shows an import's report, then reloads the list.
    * @param {{imported: number, duplicates: number, updated?: number, errors: any[],
-   *   fetched?: number, truncated?: boolean}} report
-   * @param {"import" | "import-remote"} prefix
+   *   fetched?: number, truncated?: boolean}} report  The API's import report.
+   * @param {"import" | "import-remote"} prefix  Which form: the paste and file one, or the site one.
+   * @returns {Promise<void>}
    */
   async showImport(report, prefix) {
     const total =
@@ -205,6 +237,10 @@ export class SavedGames {
     await this.load();
   }
 
+  /**
+   * The games that pass the search, color and result filters.
+   * @returns {SavedGame[]} The games, newest first.
+   */
   visibleGames() {
     const query = byId("saved-search").value.trim().toLowerCase();
     const color = byId("saved-color").value;
@@ -217,6 +253,7 @@ export class SavedGames {
     );
   }
 
+  /** Draws the list, the select-all box, the count and the buttons. */
   render() {
     const visible = this.visibleGames();
     byId("saved-list").replaceChildren(...visible.map((game) => this.row(game)));
@@ -234,7 +271,7 @@ export class SavedGames {
     this.resetDelete();
   }
 
-  /** Deleting needs a second click, like resigning; it cannot be undone. */
+  /** Deleting needs a second click within 3 s, like resigning; it cannot be undone. */
   onDeleteClick() {
     const button = byId("saved-delete");
     if (!button.classList.contains("confirming")) {
@@ -246,6 +283,7 @@ export class SavedGames {
     void this.deleteSelected();
   }
 
+  /** Puts the Delete button back to its first state, with the selection's count. */
   resetDelete() {
     clearTimeout(this.deleteTimer);
     const button = byId("saved-delete");
@@ -254,6 +292,10 @@ export class SavedGames {
     button.textContent = t("saved.delete", { count: this.selected.size });
   }
 
+  /**
+   * Deletes the selected games for good, then reloads the list.
+   * @returns {Promise<void>}
+   */
   async deleteSelected() {
     byId("saved-error").hidden = true;
     try {
@@ -266,7 +308,11 @@ export class SavedGames {
     await this.load();
   }
 
-  /** @param {SavedGame} game */
+  /**
+   * One row of the list: checkbox, opening, details, result and View.
+   * @param {SavedGame} game  The game.
+   * @returns {HTMLLabelElement} The row.
+   */
   row(game) {
     const label = document.createElement("label");
     label.className = "saved-game";
@@ -320,6 +366,10 @@ export class SavedGames {
     return label;
   }
 
+  /**
+   * Downloads the selected games as one PGN file, oldest first.
+   * @returns {Promise<void>}
+   */
   async exportSelected() {
     byId("saved-error").hidden = true;
     try {

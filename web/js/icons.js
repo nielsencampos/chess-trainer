@@ -33,12 +33,11 @@ const ICONS = /** @type {Record<MoveIconKind, {color: string, text?: string, pat
   blunder: { color: "#c2382b", text: "??" },
 });
 
-export const MOVE_ICON_KINDS = /** @type {MoveIconKind[]} */ (Object.keys(ICONS));
-
 /**
- * @param {MoveIconKind} kind
+ * Draws a move icon.
+ * @param {MoveIconKind} kind  The icon, such as `book` or `blunder`.
  * @param {string} label  What a screen reader says, already translated.
- * @returns {SVGSVGElement}
+ * @returns {SVGSVGElement} The icon.
  */
 export function moveIcon(kind, label) {
   const icon = ICONS[kind];

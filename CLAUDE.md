@@ -44,7 +44,9 @@ the smallest supported screen, and mobile is out of scope.
 - Chess notation is always English SAN, in every language.
 - No build step and no Node. No CDN: everything the app loads ships in the image.
 - Uvicorn runs with a single worker. Do not change this (DuckDB allows one writing process).
-- Python: ruff for lint and format, type hints on public functions. JS: ES modules, JSDoc types.
+- Python: ruff for lint and format, type hints on public functions, and a Google-style docstring
+  (description, Args, Returns, Raises) on every module, class and function, checked by ruff.
+- JS: ES modules, and JSDoc (description, `@param`, `@returns`) on every function, method and class.
 - Small commits. One phase at a time; at the end of each, report what changed, how to test it
   and what was left for later.
 
@@ -52,7 +54,7 @@ the smallest supported screen, and mobile is out of scope.
 
 - `openings/<group>/[others/]<family>.json` is the source of the book (format in brief §6). The app reads the book
   only from DuckDB. `catalog/` is reference only: the bot does not play from it.
-- **Never change or reuse a line `id`**, even when extending its moves. Statistics are keyed on it.
+- **Never change or reuse a line `id`**, even when extending its moves. Saved games and their PGN (`VariantId`) refer to it.
   Lines that disappear become inactive and are never deleted.
 - Never delete database data without a migration and a note. Schema changes are new numbered files
   in `app/db/migrations/`.

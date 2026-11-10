@@ -7,10 +7,11 @@ const BISHOP_RAYS = [[1, 1], [1, -1], [-1, 1], [-1, -1]];
 const KNIGHT_JUMPS = [[1, 2], [2, 1], [2, -1], [1, -2], [-1, -2], [-2, -1], [-2, 1], [-1, 2]];
 
 /**
- * @param {string} square
- * @param {{color: "w" | "b", type: string}} piece
+ * The squares a piece could premove to, by its shape alone.
+ * @param {string} square  The piece's square, such as `e2`.
+ * @param {{color: "w" | "b", type: string}} piece  The piece.
  * @param {boolean} [chess960]  The king can castle from any square, to anywhere on its rank.
- * @returns {string[]}
+ * @returns {string[]} The target squares.
  */
 export function premoveDestinations(square, piece, chess960 = false) {
   const file = FILES.indexOf(square[0]);
@@ -18,8 +19,9 @@ export function premoveDestinations(square, piece, chess960 = false) {
   /** @type {string[]} */
   const targets = [];
   /**
-   * @param {number} df
-   * @param {number} dr
+   * Adds the square at an offset, if it is on the board.
+   * @param {number} df  Files to the right.
+   * @param {number} dr  Ranks up.
    */
   const add = (df, dr) => {
     const nextFile = file + df;
@@ -28,7 +30,10 @@ export function premoveDestinations(square, piece, chess960 = false) {
       targets.push(`${FILES[nextFile]}${nextRank}`);
     }
   };
-  /** @param {number[][]} rays */
+  /**
+   * Adds every square along some rays, ignoring blockers.
+   * @param {number[][]} rays  The [file, rank] directions.
+   */
   const slide = (rays) => {
     for (const [df, dr] of rays) {
       for (let step = 1; step < 8; step += 1) add(df * step, dr * step);

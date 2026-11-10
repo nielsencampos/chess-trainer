@@ -1,3 +1,5 @@
+"""The book's evaluations: loaded from `evals/book.json` and answered without the engine."""
+
 import asyncio
 import json
 
@@ -14,10 +16,21 @@ START = chess.Board().epd()
 
 
 def write(path, positions):
+    """Writes an evaluations file.
+
+    Args:
+        path (Path): The file.
+        positions (dict): EPD -> evaluation.
+    """
     path.write_text(json.dumps({"engine": "Test", "positions": positions}))
 
 
 def test_sync_loads_the_file_once_and_replaces_rows(tmp_path):
+    """Sync loads the file once and replaces rows.
+
+    Args:
+        tmp_path (Path): A temporary folder for this test.
+    """
     connection = open_database(tmp_path / "db.duckdb")
     apply_migrations(connection)
     evals = tmp_path / "book.json"
@@ -31,11 +44,23 @@ def test_sync_loads_the_file_once_and_replaces_rows(tmp_path):
 
 
 class NoEngine:
+    """An engine that fails if it is ever asked, to prove the book answered."""
+
     async def evaluate(self, board, time_s):
+        """Fails.
+
+        Args:
+            board (chess.Board): The position.
+            time_s (float): The search time.
+
+        Raises:
+            LookupError: Always.
+        """
         raise LookupError("asked the engine")
 
 
 def test_a_book_position_never_reaches_the_engine():
+    """A book position never reaches the engine."""
     evaluator = Evaluator(NoEngine(), {START: (25, None, "e2e4")})
     result = asyncio.run(evaluator.evaluate(chess.Board()))
     assert (result.cp, result.mate, result.best) == (25, None, "e2e4")
@@ -45,7 +70,10 @@ def test_a_book_position_never_reaches_the_engine():
 
 
 def test_every_book_position_is_evaluated_deep():
-    """A new or extended line needs `python -m app.book.evaluate_book` to be run again."""
+    """Every book position is evaluated deep.
+
+    A new or extended line needs `python -m app.book.evaluate_book` to be run again.
+    """
     stored = json.loads(Settings().book_evals_file.read_text(encoding="utf-8"))["positions"]
     missing = [
         epd

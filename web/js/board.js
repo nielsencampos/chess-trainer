@@ -21,8 +21,8 @@ const PROMOTION_PIECES = ["q", "r", "b", "n"];
 
 /**
  * Parses the piece placement field of a FEN.
- * @param {string} fen
- * @returns {Map<string, {color: "w" | "b", type: string}>}
+ * @param {string} fen  The FEN.
+ * @returns {Map<string, {color: "w" | "b", type: string}>} Square -> piece.
  */
 function parsePlacement(fen) {
   const pieces = new Map();
@@ -41,10 +41,12 @@ function parsePlacement(fen) {
   return pieces;
 }
 
+/** The chessboard: draws a position and turns clicks and drags into moves or premoves. */
 export class Board {
   /**
-   * @param {HTMLElement} root
-   * @param {BoardCallbacks} callbacks
+   * Builds the squares and listens to the pointer.
+   * @param {HTMLElement} root  The board's element.
+   * @param {BoardCallbacks} callbacks  Where legal moves come from and where moves go.
    */
   constructor(root, callbacks) {
     this.root = root;
@@ -86,7 +88,11 @@ export class Board {
     new ResizeObserver(() => this.updateSquareSize()).observe(root);
   }
 
-  /** @param {"w" | "b"} color */
+  /**
+   * Puts a color at the bottom.
+   * @param {"w" | "b"} color  The color.
+   * @returns {void}
+   */
   setOrientation(color) {
     if (color === this.orientation) return;
     this.orientation = color;
@@ -95,8 +101,11 @@ export class Board {
   }
 
   /**
-   * @param {string} fen
-   * @param {{lastMove?: string[], check?: string | null}} [marks]
+   * Shows a position, with its last move and check marked.
+   * @param {string} fen  The position.
+   * @param {{lastMove?: string[], check?: string | null}} [marks]  The last move's squares and
+   *   the checked king's square.
+   * @returns {void}
    */
   setPosition(fen, { lastMove = [], check = null } = {}) {
     this.fen = fen;
@@ -107,8 +116,10 @@ export class Board {
   }
 
   /**
+   * Chooses whose pieces can be moved, or premoved, now.
    * @param {"w" | "b" | null} color  Whose pieces can be moved; null locks the board.
    * @param {"w" | "b" | null} [premoveColor]  Whose pieces can queue a premove meanwhile.
+   * @returns {void}
    */
   setMovable(color, premoveColor = null) {
     this.movableColor = color;
@@ -121,17 +132,25 @@ export class Board {
     this.render();
   }
 
-  /** The color the user can act with now, for a move or a premove. */
+  /**
+   * The color the user can act with now, for a move or a premove.
+   * @returns {"w" | "b" | null} The color, or null when the board is locked.
+   */
   get activeColor() {
     return this.movableColor ?? this.premoveColor;
   }
 
-  /** @param {string[]} squares  The queued premove's from and to, or nothing. */
+  /**
+   * Marks the queued premove.
+   * @param {string[]} squares  The queued premove's from and to, or nothing.
+   * @returns {void}
+   */
   setPremoveSquares(squares) {
     this.premoveSquares = squares;
     this.render();
   }
 
+  /** Creates the 64 squares in the current orientation, with coordinates on the edge. */
   buildSquares() {
     this.root.querySelectorAll(".square").forEach((element) => element.remove());
     this.squares.clear();
@@ -155,8 +174,10 @@ export class Board {
   }
 
   /**
-   * @param {string} text
-   * @param {string} className
+   * A coordinate label.
+   * @param {string} text  The file letter or rank number.
+   * @param {string} className  `coord-file` or `coord-rank`.
+   * @returns {HTMLSpanElement} The label.
    */
   coordinate(text, className) {
     const element = document.createElement("span");
@@ -165,10 +186,12 @@ export class Board {
     return element;
   }
 
+  /** Keeps the `--square-size` CSS variable in step with the board's width. */
   updateSquareSize() {
     this.root.style.setProperty("--square-size", `${this.root.clientWidth / 8}px`);
   }
 
+  /** Draws the pieces and every highlight. */
   render() {
     const pieces = parsePlacement(this.fen || "8/8/8/8/8/8/8/8 w - - 0 1");
     const targetsByTo = new Map(this.targets.map((target) => [target.to, target]));
@@ -189,9 +212,10 @@ export class Board {
   }
 
   /**
-   * @param {"w" | "b"} color
-   * @param {string} type
-   * @returns {HTMLElement}
+   * A Merida piece image.
+   * @param {"w" | "b"} color  The piece's color.
+   * @param {string} type  `p`, `n`, `b`, `r`, `q` or `k`.
+   * @returns {HTMLElement} The image.
    */
   pieceElement(color, type) {
     const image = document.createElement("img");
@@ -203,8 +227,9 @@ export class Board {
   }
 
   /**
-   * @param {PointerEvent} event
-   * @returns {string | null}
+   * The square under the pointer.
+   * @param {PointerEvent} event  The pointer event.
+   * @returns {string | null} The square, or null outside the board.
    */
   squareAt(event) {
     const box = this.root.getBoundingClientRect();
@@ -216,12 +241,20 @@ export class Board {
       : `${FILES[7 - column]}${row + 1}`;
   }
 
-  /** @param {string} square */
+  /**
+   * Whether a square holds a piece the user can act with now.
+   * @param {string} square  The square.
+   * @returns {boolean} True if so.
+   */
   isMovablePiece(square) {
     return this.activeColor !== null && parsePlacement(this.fen).get(square)?.color === this.activeColor;
   }
 
-  /** @param {PointerEvent} event */
+  /**
+   * Selects a piece, or finishes a move on a target, and starts a possible drag.
+   * @param {PointerEvent} event  The pointer event.
+   * @returns {void}
+   */
   onPointerDown(event) {
     if (event.button !== 0 || this.activeColor === null || this.promotion) return;
     const square = this.squareAt(event);
@@ -244,7 +277,11 @@ export class Board {
     event.preventDefault();
   }
 
-  /** @param {PointerEvent} event */
+  /**
+   * Starts dragging once the pointer has moved far enough, then follows it.
+   * @param {PointerEvent} event  The pointer event.
+   * @returns {void}
+   */
   onPointerMove(event) {
     if (!this.press) return;
     if (!this.press.moved) {
@@ -256,7 +293,11 @@ export class Board {
     this.moveGhost(event);
   }
 
-  /** @param {PointerEvent} event */
+  /**
+   * Drops a dragged piece, or unselects a piece clicked twice.
+   * @param {PointerEvent} event  The pointer event.
+   * @returns {void}
+   */
   onPointerUp(event) {
     if (!this.press) return;
     const { square, moved, wasSelected } = this.press;
@@ -276,12 +317,17 @@ export class Board {
     }
   }
 
+  /** Abandons a press or drag, as when the browser cancels the pointer. */
   cancelPress() {
     if (this.press?.moved) this.stopDrag(this.press.square);
     this.press = null;
   }
 
-  /** @param {string} square */
+  /**
+   * Lifts a piece: a copy follows the pointer and the original fades.
+   * @param {string} square  The piece's square.
+   * @returns {void}
+   */
   startDrag(square) {
     const piece = this.squares.get(square)?.querySelector(".piece");
     if (!piece) return;
@@ -296,21 +342,33 @@ export class Board {
     piece.classList.add("is-dragged");
   }
 
-  /** @param {PointerEvent} event */
+  /**
+   * Moves the dragged copy to the pointer.
+   * @param {PointerEvent} event  The pointer event.
+   * @returns {void}
+   */
   moveGhost(event) {
     if (!this.ghost) return;
     this.ghost.style.left = `${event.clientX}px`;
     this.ghost.style.top = `${event.clientY}px`;
   }
 
-  /** @param {string} square */
+  /**
+   * Puts a dragged piece back.
+   * @param {string} square  The piece's square.
+   * @returns {void}
+   */
   stopDrag(square) {
     this.ghost?.remove();
     this.ghost = null;
     this.squares.get(square)?.querySelector(".piece")?.classList.remove("is-dragged");
   }
 
-  /** @param {string} square */
+  /**
+   * Selects a piece and shows where it can go, for a move or a premove.
+   * @param {string} square  The piece's square.
+   * @returns {void}
+   */
   select(square) {
     this.selected = square;
     this.targets = this.movableColor !== null
@@ -319,14 +377,17 @@ export class Board {
     this.render();
   }
 
+  /** Unselects the piece and its targets, without drawing. */
   clearSelection() {
     this.selected = null;
     this.targets = [];
   }
 
   /**
-   * @param {string} from
-   * @param {string} to
+   * Sends a move or a premove, or opens the promotion picker first.
+   * @param {string} from  The piece's square.
+   * @param {string} to  The target square.
+   * @returns {void}
    */
   finishMove(from, to) {
     if (this.movableColor === null) {
@@ -344,8 +405,10 @@ export class Board {
   }
 
   /**
-   * @param {string} from
-   * @param {string} to
+   * Shows the promotion picker over the target file.
+   * @param {string} from  The pawn's square.
+   * @param {string} to  The promotion square.
+   * @returns {void}
    */
   openPromotion(from, to) {
     const color = parsePlacement(this.fen).get(from)?.color ?? "w";
@@ -385,6 +448,7 @@ export class Board {
     picker.querySelector("button")?.focus();
   }
 
+  /** Removes the promotion picker, if open. */
   closePromotion() {
     this.promotion?.remove();
     this.promotion = null;

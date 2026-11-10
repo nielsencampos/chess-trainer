@@ -8,15 +8,21 @@ const DEFAULT_VOLUME = 0.7;
 const BOT_PITCH = 0.85;
 const END_DELAY_S = 0.18;
 
-/** @param {number} amount */
+/**
+ * A random factor around 1, so repeated sounds are not identical.
+ * @param {number} amount  The most it can differ from 1, such as 0.04.
+ * @returns {number} The factor.
+ */
 const jitter = (amount) => 1 + (Math.random() * 2 - 1) * amount;
 
 /**
  * One knock of wood: a short bright click over a body that falls quickly in pitch.
- * @param {BaseAudioContext} context
- * @param {AudioNode} output
- * @param {number} time
- * @param {{pitch: number, level: number, decay?: number}} knock
+ * @param {BaseAudioContext} context  The audio context.
+ * @param {AudioNode} output  Where the sound goes.
+ * @param {number} time  When it starts, in the context's seconds.
+ * @param {{pitch: number, level: number, decay?: number}} knock  Its pitch in Hz, its level,
+ *   and how long it rings, in seconds.
+ * @returns {void}
  */
 function knock(context, output, time, { pitch, level, decay = 0.08 }) {
   const frequency = pitch * jitter(0.04);
@@ -63,11 +69,12 @@ function knock(context, output, time, { pitch, level, decay = 0.08 }) {
 
 /**
  * Schedules a sound. Separate from the player so it can be rendered without speakers.
- * @param {BaseAudioContext} context
- * @param {AudioNode} output
- * @param {"move" | "capture" | "castle" | "start" | "end"} type
- * @param {number} time
- * @param {boolean} [byBot]
+ * @param {BaseAudioContext} context  The audio context.
+ * @param {AudioNode} output  Where the sound goes.
+ * @param {"move" | "capture" | "castle" | "start" | "end"} type  The event.
+ * @param {number} time  When it starts, in the context's seconds.
+ * @param {boolean} [byBot]  A bot move sounds slightly lower.
+ * @returns {void}
  */
 export function scheduleSound(context, output, type, time, byBot = false) {
   const shift = byBot ? BOT_PITCH : 1;
@@ -96,7 +103,9 @@ export function scheduleSound(context, output, type, time, byBot = false) {
   }
 }
 
+/** Plays the app's sounds, once the browser allows audio, at the stored volume. */
 class SoundPlayer {
+  /** Restores the stored on/off and volume, and waits for the first click or key to unlock audio. */
   constructor() {
     this.enabled = getPref("soundOn", true) === true;
     const volume = Number(getPref("soundVolume", DEFAULT_VOLUME));
@@ -106,6 +115,7 @@ class SoundPlayer {
     /** @type {GainNode | null} */
     this.master = null;
     this.unlocked = false;
+    /** Allows audio after the first user gesture, then stops listening. */
     const unlock = () => {
       this.unlocked = true;
       this.ready();
@@ -116,6 +126,10 @@ class SoundPlayer {
     document.addEventListener("keydown", unlock, true);
   }
 
+  /**
+   * Creates or resumes the audio context.
+   * @returns {boolean} False if the browser has no Web Audio.
+   */
   ready() {
     if (!this.context) {
       const Context = window.AudioContext ?? /** @type {any} */ (window).webkitAudioContext;
@@ -130,8 +144,10 @@ class SoundPlayer {
   }
 
   /**
-   * @param {"move" | "capture" | "castle" | "start" | "end"} type
-   * @param {boolean} [byBot]
+   * Plays a sound if sound is on and audio is unlocked, and tells test hooks about it.
+   * @param {"move" | "capture" | "castle" | "start" | "end"} type  The event.
+   * @param {boolean} [byBot]  A bot move sounds slightly lower.
+   * @returns {void}
    */
   play(type, byBot = false) {
     if (!this.enabled || !this.unlocked || !this.ready()) return;
@@ -140,8 +156,10 @@ class SoundPlayer {
   }
 
   /**
-   * @param {import("./rules.js").PlayedMove} move
-   * @param {boolean} byBot
+   * Plays the sound of a move: castling, capture or a plain move.
+   * @param {import("./rules.js").PlayedMove} move  The move played.
+   * @param {boolean} byBot  Whether the bot played it.
+   * @returns {void}
    */
   playMove(move, byBot) {
     if (move.castle) this.play("castle", byBot);
@@ -149,13 +167,21 @@ class SoundPlayer {
     else this.play("move", byBot);
   }
 
-  /** @param {boolean} enabled */
+  /**
+   * Turns sound on or off and stores the choice.
+   * @param {boolean} enabled  Whether sound is on.
+   * @returns {void}
+   */
   setEnabled(enabled) {
     this.enabled = enabled;
     setPref("soundOn", enabled);
   }
 
-  /** @param {number} volume */
+  /**
+   * Sets and stores the volume.
+   * @param {number} volume  From 0 to 1.
+   * @returns {void}
+   */
   setVolume(volume) {
     this.volume = volume;
     setPref("soundVolume", volume);
@@ -163,19 +189,24 @@ class SoundPlayer {
   }
 }
 
+/** The app's one sound player. */
 export const sound = new SoundPlayer();
 
 /**
- * @param {HTMLButtonElement} button
- * @param {HTMLInputElement} slider
+ * Wires the sound button and the volume slider.
+ * @param {HTMLButtonElement} button  Turns sound on and off.
+ * @param {HTMLInputElement} slider  The volume, 0 to 1.
+ * @returns {void}
  */
 export function initSoundControls(button, slider) {
+  /** Labels the button and enables the slider as sound is on or off. */
   const render = () => {
     button.textContent = t(sound.enabled ? "sound.on" : "sound.off");
     button.setAttribute("aria-pressed", String(sound.enabled));
     slider.disabled = !sound.enabled;
   };
   slider.value = String(sound.volume);
+  /** Labels the slider in the current language. */
   const label = () => slider.setAttribute("aria-label", t("sound.volume"));
   label();
   onLocaleChange(() => {

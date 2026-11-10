@@ -19,7 +19,14 @@ REPO_SOURCE = "repo"
 def _insert_many(
     connection: duckdb.DuckDBPyConnection, statement: str, width: int, rows: list[tuple]
 ) -> None:
-    """`statement` ends in VALUES. Multi-row inserts: executemany is far slower in DuckDB."""
+    """Inserts rows in multi-row statements: executemany is far slower in DuckDB.
+
+    Args:
+        connection (duckdb.DuckDBPyConnection): The database.
+        statement (str): The statement up to and including `VALUES`.
+        width (int): The number of values per row.
+        rows (list[tuple]): The rows.
+    """
     row_sql = "(" + ",".join("?" * width) + ")"
     for start in range(0, len(rows), BATCH_ROWS):
         batch = rows[start : start + BATCH_ROWS]
@@ -28,10 +35,20 @@ def _insert_many(
 
 
 def sync_openings(connection: duckdb.DuckDBPyConnection, directory: Path) -> list[str]:
-    """Reloads only the files that changed. Returns their family ids.
+    """Loads the opening files into the database, reloading only the files that changed.
 
-    Rows are never deleted from `variants`: a line that disappears becomes inactive, because
-    statistics are keyed on its id. Families from other sources (`user`) are never touched.
+    Rows are never deleted from `variants`: a line that disappears becomes inactive, because saved
+    games and their PGN refer to its id. Families from other sources (`user`) are never touched.
+
+    Args:
+        connection (duckdb.DuckDBPyConnection): The database.
+        directory (Path): The `openings/` folder.
+
+    Returns:
+        list[str]: The ids of the families reloaded.
+
+    Raises:
+        BookError: A file is invalid or a move is illegal; nothing is changed.
     """
     files = read_opening_files(directory)
     known = dict(
@@ -109,6 +126,17 @@ def sync_openings(connection: duckdb.DuckDBPyConnection, directory: Path) -> lis
 
 
 def catalog_hash(data_dir: Path) -> str:
+    """Hashes the catalog's TSV files, names and contents.
+
+    Args:
+        data_dir (Path): The catalog's data folder.
+
+    Returns:
+        str: The SHA-256 hex digest.
+
+    Raises:
+        BookError: The folder has no TSV files.
+    """
     digest = hashlib.sha256()
     paths = sorted(data_dir.glob("*.tsv"))
     if not paths:
@@ -120,7 +148,15 @@ def catalog_hash(data_dir: Path) -> str:
 
 
 def sync_catalog(connection: duckdb.DuckDBPyConnection, data_dir: Path) -> bool:
-    """Loads the reference catalog when it changed. The bot does not play from this table."""
+    """Loads the reference catalog when it changed. The bot does not play from this table.
+
+    Args:
+        connection (duckdb.DuckDBPyConnection): The database.
+        data_dir (Path): The catalog's data folder.
+
+    Returns:
+        bool: True if the catalog was loaded, False if it was already up to date.
+    """
     content_hash = catalog_hash(data_dir)
     last = connection.execute(
         "SELECT content_hash FROM catalog_loads ORDER BY loaded_at DESC LIMIT 1"
@@ -146,12 +182,28 @@ def sync_catalog(connection: duckdb.DuckDBPyConnection, data_dir: Path) -> bool:
 
 
 def load_opening_names(connection: duckdb.DuckDBPyConnection) -> dict[str, tuple[str, str]]:
-    """Position -> (ECO, name), to name any position like Lichess does (brief §6)."""
+    """Reads the catalog's names, to name any position like Lichess does (brief §6).
+
+    Args:
+        connection (duckdb.DuckDBPyConnection): The database.
+
+    Returns:
+        dict[str, tuple[str, str]]: Position (EPD) -> (ECO, name).
+    """
     rows = connection.execute("SELECT epd, eco, name FROM openings_catalog").fetchall()
     return {epd: (eco, name) for epd, eco, name in rows}
 
 
 def _names(connection: duckdb.DuckDBPyConnection, entity_type: str) -> dict[str, dict[str, str]]:
+    """Reads the translated names of one kind of entity.
+
+    Args:
+        connection (duckdb.DuckDBPyConnection): The database.
+        entity_type (str): `repertoire` or `variant`.
+
+    Returns:
+        dict[str, dict[str, str]]: Entity id -> locale -> name.
+    """
     names: dict[str, dict[str, str]] = defaultdict(dict)
     for entity_id, locale, name in connection.execute(
         "SELECT entity_id, locale, name FROM names WHERE entity_type = ?", [entity_type]
@@ -161,7 +213,17 @@ def _names(connection: duckdb.DuckDBPyConnection, entity_type: str) -> dict[str,
 
 
 def load_book(connection: duckdb.DuckDBPyConnection) -> Book:
-    """The app reads the book only from the database (brief §6)."""
+    """Reads the active book from the database, the only place the app reads it from (brief §6).
+
+    Args:
+        connection (duckdb.DuckDBPyConnection): The database.
+
+    Returns:
+        Book: The families and their active lines.
+
+    Raises:
+        BookError: The book has no active line.
+    """
     moves: dict[str, list[BookMoveRow]] = defaultdict(list)
     for variant_id, epd_before, ply, uci, san in connection.execute(
         "SELECT variant_id, epd_before, ply, uci, san FROM book_moves ORDER BY variant_id, ply"
@@ -209,7 +271,15 @@ def load_book(connection: duckdb.DuckDBPyConnection) -> Book:
 
 
 def sync_book_evals(connection: duckdb.DuckDBPyConnection, path: Path) -> bool:
-    """Loads evals/book.json when it changed. Missing is fine: the bar then asks the engine."""
+    """Loads `evals/book.json` when it changed. Missing is fine: the bar then asks the engine.
+
+    Args:
+        connection (duckdb.DuckDBPyConnection): The database.
+        path (Path): The evaluations file.
+
+    Returns:
+        bool: True if the file was loaded, False if it is missing or already loaded.
+    """
     if not path.exists():
         return False
     content = path.read_bytes()
@@ -239,7 +309,14 @@ def sync_book_evals(connection: duckdb.DuckDBPyConnection, path: Path) -> bool:
 
 
 def load_book_evals(connection: duckdb.DuckDBPyConnection) -> dict[str, tuple]:
-    """EPD -> (cp, mate, best), from White's side."""
+    """Reads the book's evaluations.
+
+    Args:
+        connection (duckdb.DuckDBPyConnection): The database.
+
+    Returns:
+        dict[str, tuple]: EPD -> (cp, mate, best), from White's side.
+    """
     return {
         epd: (cp, mate, best)
         for epd, cp, mate, best in connection.execute(

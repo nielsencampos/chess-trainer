@@ -30,21 +30,51 @@ TIMEOUT_S = 120
 
 
 class RemoteError(Exception):
-    """A fetch that failed, with a code the UI translates."""
+    """A fetch that failed, with a code the UI translates.
+
+    Attributes:
+        code (str): `bad_username`, `user_not_found`, `rate_limited`, `unreachable` or
+            `bad_response`.
+    """
 
     def __init__(self, code: str) -> None:
+        """Creates the error.
+
+        Args:
+            code (str): The reason's code.
+        """
         super().__init__(code)
         self.code = code
 
 
 @dataclass(frozen=True)
 class Fetched:
+    """The games fetched from a site.
+
+    Attributes:
+        pgn (str): The games as PGN text, oldest first.
+        games (int): How many games it holds.
+        truncated (bool): Whether the period had more than `MAX_GAMES` games.
+    """
+
     pgn: str
     games: int
     truncated: bool
 
 
 def fetch_url(url: str, accept: str) -> bytes:
+    """Fetches a URL from the internet.
+
+    Args:
+        url (str): The URL.
+        accept (str): The `Accept` header.
+
+    Returns:
+        bytes: The response body.
+
+    Raises:
+        RemoteError: `user_not_found` on 404, `rate_limited` on 429, `unreachable` otherwise.
+    """
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": accept})
     try:
         with urllib.request.urlopen(request, timeout=TIMEOUT_S) as response:
@@ -60,7 +90,15 @@ def fetch_url(url: str, accept: str) -> bytes:
 
 
 def first_month(months: int, now: datetime) -> datetime:
-    """Midnight UTC of the first day of the oldest month in the period (this month counts)."""
+    """Midnight UTC of the first day of the oldest month in the period (this month counts).
+
+    Args:
+        months (int): The period, in months.
+        now (datetime): The current time.
+
+    Returns:
+        datetime: The start of the period.
+    """
     index = now.year * 12 + now.month - 1 - (months - 1)
     return datetime(index // 12, index % 12 + 1, 1, tzinfo=UTC)
 
@@ -68,6 +106,21 @@ def first_month(months: int, now: datetime) -> datetime:
 def fetch_games(
     site: Site, username: str, months: int, fetch: FetchUrl, now: datetime | None = None
 ) -> Fetched:
+    """Fetches a player's public games of the last months, standard and Chess960.
+
+    Args:
+        site (Site): `lichess` or `chesscom`.
+        username (str): The player's username.
+        months (int): The period, in months, this month included.
+        fetch (FetchUrl): How to fetch a URL; tests pass a fake.
+        now (datetime | None): The current time; now when None.
+
+    Returns:
+        Fetched: The newest games of the period, at most `MAX_GAMES`.
+
+    Raises:
+        RemoteError: The username is malformed, or a fetch failed.
+    """
     if not USERNAME.fullmatch(username):
         raise RemoteError("bad_username")
     since = first_month(months, now or datetime.now(UTC))
@@ -76,11 +129,17 @@ def fetch_games(
     return _chesscom(username, since, fetch)
 
 
-def _count(pgn: str) -> int:
-    return len(re.findall(r"^\[Event ", pgn, flags=re.MULTILINE))
-
-
 def _lichess(username: str, since: datetime, fetch: FetchUrl) -> Fetched:
+    """Fetches a player's games from the Lichess API, with clocks, analysis and opening.
+
+    Args:
+        username (str): The player's username.
+        since (datetime): The start of the period.
+        fetch (FetchUrl): How to fetch a URL.
+
+    Returns:
+        Fetched: The games.
+    """
     query = urllib.parse.urlencode(
         {
             "since": int(since.timestamp() * 1000),
@@ -100,6 +159,16 @@ def _lichess(username: str, since: datetime, fetch: FetchUrl) -> Fetched:
 
 
 def _chesscom(username: str, since: datetime, fetch: FetchUrl) -> Fetched:
+    """Fetches a player's games from the Chess.com public API, one monthly archive at a time.
+
+    Args:
+        username (str): The player's username.
+        since (datetime): The start of the period.
+        fetch (FetchUrl): How to fetch a URL.
+
+    Returns:
+        Fetched: The newest games, oldest first.
+    """
     base = f"https://api.chess.com/pub/player/{username.lower()}/games"
     archives = _json(fetch(f"{base}/archives", "application/json")).get("archives", [])
     oldest = f"{since.year:04d}/{since.month:02d}"
@@ -123,6 +192,17 @@ def _chesscom(username: str, since: datetime, fetch: FetchUrl) -> Fetched:
 
 
 def _json(body: bytes) -> dict:
+    """Parses a JSON object from a response.
+
+    Args:
+        body (bytes): The response body.
+
+    Returns:
+        dict: The object.
+
+    Raises:
+        RemoteError: `bad_response` if the body is not a JSON object.
+    """
     try:
         data = json.loads(body)
     except ValueError as error:
