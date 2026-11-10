@@ -252,26 +252,14 @@ def test_board_colors_a1_is_dark(page: Page):
     assert square(page, "h1").evaluate(color) == "rgb(238, 238, 210)"
 
 
-def test_all_piece_sets_load(page: Page):
+def test_pieces_are_merida(page: Page):
     page.goto("/")
-    select = page.locator("#piece-set")
-    expect(select.locator("option")).to_have_text(
-        ["Merida", "Cburnett", "Chessnut", "Fantasy", "Unicode"]
+    expect(page.locator("#piece-set")).to_have_count(0)
+    expect(square(page, "e1").locator("img")).to_have_attribute("src", "pieces/merida/wK.svg")
+    page.wait_for_function(
+        "[...document.querySelectorAll('.square img')]"
+        ".every((image) => image.complete && image.naturalWidth > 0)"
     )
-    for key in ("merida", "cburnett", "chessnut", "fantasy"):
-        select.select_option(key)
-        expect(square(page, "e1").locator("img")).to_have_attribute("src", f"pieces/{key}/wK.svg")
-        page.wait_for_function(
-            "[...document.querySelectorAll('.square img')]"
-            ".every((image) => image.complete && image.naturalWidth > 0)"
-        )
-    select.select_option("unicode")
-    expect(square(page, "e1").locator(".piece-glyph")).to_contain_text("♚")
-    loaded = page.evaluate("""document.fonts.load('40px "Noto Sans Symbols 2"', '♚')""")
-    assert page.evaluate("(count) => count", len(loaded)) > 0
-
-    page.reload()
-    expect(page.locator("#piece-set")).to_have_value("unicode")
 
 
 PREMOVE_LINE = [("a7a6", "a6"), ("b7b6", "b6"), ("c7c6", "c6"), ("d7d6", "d6")]

@@ -134,6 +134,12 @@ export function applyI18n(root) {
   for (const element of root.querySelectorAll("[data-i18n-label]")) {
     element.setAttribute("aria-label", t(element.getAttribute("data-i18n-label") ?? ""));
   }
+  // Icon-only buttons: the text is both the accessible name and the tooltip.
+  for (const element of root.querySelectorAll("[data-i18n-title]")) {
+    const text = t(element.getAttribute("data-i18n-title") ?? "");
+    element.setAttribute("aria-label", text);
+    element.setAttribute("title", text);
+  }
 }
 
 /**

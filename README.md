@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="web/favicon.svg" alt="Chess Trainer logo: four board squares with C, T, a pen and a clock" width="160">
+  <img src="web/logo.svg" alt="Chess Trainer logo: four board squares with C, T, a pen and a clock" width="160">
 </p>
 
 # chess-trainer

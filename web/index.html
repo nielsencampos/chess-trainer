@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chess Trainer</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="logo.png" />
     <link rel="stylesheet" href="css/tokens.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/board.css" />
@@ -19,8 +19,8 @@
     <div class="app-shell">
       <aside class="sidebar">
         <div class="brand">
-          <img class="brand-logo" src="favicon.svg" alt="" width="40" height="40" />
-          <span class="brand-name">Chess Trainer</span>
+          <img class="brand-logo" src="logo.svg" alt="Chess Trainer" width="95" height="95" />
+          <select id="locale-picker" class="locale-picker" data-i18n-label="locale.label"></select>
         </div>
 
         <nav id="sidebar-tabs" class="menu">
@@ -54,8 +54,8 @@
                 <h3 class="import-subtitle" data-i18n="import.remote.title"></h3>
                 <div class="field-row">
                   <select id="import-site" data-i18n-label="import.remote.site">
-                    <option value="lichess">Lichess</option>
                     <option value="chesscom">Chess.com</option>
+                    <option value="lichess">Lichess</option>
                   </select>
                   <select id="import-months" data-i18n-label="import.remote.period">
                     <option value="1" data-i18n="import.remote.months1"></option>
@@ -213,10 +213,6 @@
         </div>
 
         <footer class="footer">
-          <label class="inline-field locale-field">
-            <span data-i18n="locale.label"></span>
-            <select id="locale-picker"></select>
-          </label>
           <span id="footer-versions"></span>
         </footer>
       </aside>
@@ -244,21 +240,20 @@
           <span id="bottom-clock" class="clock" hidden></span>
         </div>
         <div id="chips" class="chips" aria-live="polite"></div>
-          <div id="review-bar" class="review-bar" hidden>
-            <button id="review-first" class="button button-ghost" type="button" aria-label="First move">⏮</button>
-            <button id="review-prev" class="button button-ghost" type="button" aria-label="Previous move">◀</button>
-            <span id="review-count" class="review-count"></span>
-            <button id="review-next" class="button button-ghost" type="button" aria-label="Next move">▶</button>
-            <button id="review-last" class="button button-ghost" type="button" aria-label="Last move">⏭</button>
-            <button id="review-flip" class="button button-ghost" type="button" data-i18n="review.flip"></button>
-            <button id="review-play" class="button button-ghost" type="button" data-i18n="review.play"></button>
-            <button id="review-close" class="button button-ghost" type="button" data-i18n="review.close"></button>
-          </div>
       </section>
 
       </main>
 
       <aside class="movebar">
+        <div id="review-bar" class="review-bar" hidden>
+          <button id="review-first" class="button button-ghost" type="button" data-i18n-title="review.first">⏮</button>
+          <button id="review-prev" class="button button-ghost" type="button" data-i18n-title="review.prev">◀</button>
+          <button id="review-next" class="button button-ghost" type="button" data-i18n-title="review.next">▶</button>
+          <button id="review-last" class="button button-ghost" type="button" data-i18n-title="review.last">⏭</button>
+          <button id="review-flip" class="button button-ghost" type="button" data-i18n-title="review.flip">⇅</button>
+          <button id="review-play" class="button button-ghost" type="button" data-i18n="review.play"></button>
+          <button id="review-close" class="button button-ghost" type="button" data-i18n-title="review.close">✕</button>
+        </div>
         <label id="show-moves-option" class="toggle show-moves" hidden><input id="show-moves" type="checkbox" /><span data-i18n="moves.show"></span></label>
         <section id="opening-box" class="opening-box">
           <h2 data-i18n="moves.opening"></h2>
@@ -292,14 +287,7 @@
           </div>
         </section>
         <div class="sidebar-controls">
-          <label class="inline-field">
-            <span data-i18n="board.pieces"></span>
-            <select id="piece-set"></select>
-          </label>
           <button id="theme-toggle" class="button button-ghost" type="button"></button>
-        </div>
-
-        <div class="sidebar-controls">
           <button id="sound-toggle" class="button button-ghost" type="button"></button>
           <input id="sound-volume" class="volume" type="range" min="0" max="1" step="0.05" />
         </div>

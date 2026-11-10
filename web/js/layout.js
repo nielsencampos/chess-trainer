@@ -19,7 +19,7 @@ const BARS = [
     bar: ".sidebar",
     handle: "resize-left",
     toggle: "toggle-left",
-    min: 280,
+    min: 350,
     max: 640,
     initial: 380,
   },
@@ -29,9 +29,9 @@ const BARS = [
     bar: ".movebar",
     handle: "resize-right",
     toggle: "toggle-right",
-    min: 180,
+    min: 350,
     max: 520,
-    initial: 280,
+    initial: 350,
   },
 ];
 
