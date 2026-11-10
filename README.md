@@ -37,8 +37,8 @@ set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust. `CHESS_TRAINER_PORT` c
 Unchecking "Show moves" hides the move list and the opening name, headings included, during a game, so you can write on paper. They come back at the end.
 
 **Current state:** the book and games are in DuckDB (`data/chess-trainer.duckdb`). Bot levels are
-provisional. The UI is in English. See the [project brief](docs/PROJECT_BRIEF.md) for
-what comes next.
+provisional. The UI is in English, Brazilian Portuguese and Spanish. See the
+[project brief](docs/PROJECT_BRIEF.md) for what comes next.
 
 ## The book
 
@@ -106,10 +106,10 @@ Depois abra <http://127.0.0.1:8000>.
 **Como funciona:** escolha a cor e as linhas, entre as 3.865 do livro, com busca por nome,
 ECO ou lances. Cada linha selecionada tem a mesma chance de ser sorteada, e o bot joga a linha sorteada. Um lance fora das linhas selecionadas é um
 desvio: ele é registrado com os lances esperados e aparece no fim da partida. Quando a linha acaba, ou
-alguém sai da teoria, o Stockfish assume no nível escolhido. O modo súmula esconde a lista de lances
-para você anotar no papel.
+alguém sai da teoria, o Stockfish assume no nível escolhido. Desmarcar "Mostrar lances" esconde a
+lista de lances e o nome da abertura durante a partida, para você anotar no papel.
 
 **Estado atual:** o livro e as partidas ficam no DuckDB, e uma partida não terminada continua quando você reabre a página. Os
-níveis do bot são provisórios e a interface está em inglês; o pt-BR chega na Fase 4.
+níveis do bot são provisórios. A interface está em inglês, português e espanhol.
 
 **Para atualizar o Stockfish:** rode `docker compose build --pull` e depois `docker compose up -d`.
