@@ -27,10 +27,22 @@ GAME_LINE_PREFIX = "game:"
 
 
 class GameStore:
+    """Reads and writes the `games` table, one cursor per call."""
+
     def __init__(self, connection: duckdb.DuckDBPyConnection) -> None:
+        """Creates the store.
+
+        Args:
+            connection (duckdb.DuckDBPyConnection): The database.
+        """
         self._connection = connection
 
     def save(self, session: GameSession) -> None:
+        """Writes a game's whole row, replacing the previous one: called after every move.
+
+        Args:
+            session (GameSession): The game.
+        """
         eco, opening = session.opening or (session.variant.eco, session.variant.opening)
         white, black = session.players()
         self._connection.cursor().execute(
@@ -76,11 +88,18 @@ class GameStore:
     def save_imported(
         self, games: Sequence[ImportedGame], new_id: Callable[[], str]
     ) -> tuple[int, int]:
-        """Saves the games not seen before. Returns (duplicates, updated).
+        """Saves the imported games not seen before.
 
         A duplicate of an imported game replaces its PGN when it carries more analysis, such as
         the same game downloaded from the site's analysis page after a plain export. A game played
         here is never replaced.
+
+        Args:
+            games (Sequence[ImportedGame]): The games read from PGN.
+            new_id (Callable[[], str]): Makes a new game id.
+
+        Returns:
+            tuple[int, int]: (duplicates skipped, duplicates updated).
         """
         cursor = self._connection.cursor()
         cursor.execute(
@@ -135,7 +154,11 @@ class GameStore:
         return duplicates, updated
 
     def finished_games(self) -> list[dict]:
-        """Newest first."""
+        """The finished games for the Saved games list, newest first.
+
+        Returns:
+            list[dict]: One summary per game, with `plies`, `sans` and `chess960` added.
+        """
         cursor = self._connection.cursor()
         cursor.execute(
             "SELECT game_id, started_at, user_color, time_control, level, result, termination, "
@@ -154,7 +177,14 @@ class GameStore:
         return games
 
     def game_line(self, key: str) -> Variant | None:
-        """A saved game as a line of the book. `key` is game:<game id>:<plies to follow>."""
+        """A saved game as a line of the book.
+
+        Args:
+            key (str): `game:<game id>:<plies to follow>`.
+
+        Returns:
+            Variant | None: The line, or None if the game is unknown, has a `[FEN]` or no moves.
+        """
         _, game_id, plies = key.split(":")
         cursor = self._connection.cursor()
         cursor.execute(
@@ -190,6 +220,14 @@ class GameStore:
         )
 
     def finished_game(self, game_id: str) -> dict | None:
+        """One finished game, for its review.
+
+        Args:
+            game_id (str): The game's id.
+
+        Returns:
+            dict | None: Its PGN, players, result, opening, source, moves and deviations, or None.
+        """
         cursor = self._connection.cursor()
         cursor.execute(
             "SELECT pgn, white, black, result, eco, opening, source, moves_json, deviations_json "
@@ -203,7 +241,14 @@ class GameStore:
         return dict(zip([column[0] for column in cursor.description], row, strict=True))
 
     def finished_pgns(self, game_ids: Sequence[str]) -> dict[str, str]:
-        """Oldest first, the natural order for a PGN file."""
+        """The PGNs of finished games, oldest first, the natural order for a PGN file.
+
+        Args:
+            game_ids (Sequence[str]): The games wanted.
+
+        Returns:
+            dict[str, str]: Game id -> PGN, for those that exist and are finished.
+        """
         cursor = self._connection.cursor()
         cursor.execute(
             "SELECT game_id, pgn FROM games "
@@ -214,7 +259,14 @@ class GameStore:
         return dict(cursor.fetchall())
 
     def delete_finished(self, game_ids: Sequence[str]) -> int:
-        """Deletes finished games for good. An active game is never deleted: resigning ends it."""
+        """Deletes finished games for good. An active game is never deleted: resigning ends it.
+
+        Args:
+            game_ids (Sequence[str]): The games to delete.
+
+        Returns:
+            int: How many rows were deleted.
+        """
         cursor = self._connection.cursor()
         cursor.execute(
             "DELETE FROM games WHERE status = 'finished' AND list_contains(?, game_id)",
@@ -224,6 +276,11 @@ class GameStore:
         return int(row[0]) if row else 0
 
     def active_row(self) -> dict | None:
+        """The row of the unfinished game, if any.
+
+        Returns:
+            dict | None: The row by column name, or None.
+        """
         cursor = self._connection.cursor()
         cursor.execute(
             "SELECT * FROM games WHERE status = 'active' ORDER BY started_at DESC LIMIT 1"
@@ -241,7 +298,18 @@ def restore_session(
     rng: random.Random,
     store: GameStore,
 ) -> GameSession | None:
-    """Rebuilds a session by replaying its moves. None if none of its lines exist anymore."""
+    """Rebuilds a session by replaying its saved moves.
+
+    Args:
+        row (Mapping): The game's row.
+        book (Book): The book, for its lines.
+        opening_names (Mapping[str, tuple[str, str]]): EPD -> (ECO, name).
+        rng (random.Random): The random source.
+        store (GameStore): The store, for lines made from saved games.
+
+    Returns:
+        GameSession | None: The session, or None if none of its lines exist anymore.
+    """
     known = dict(book.variants)
     chess960_position = None
     for key in row["variant_ids"]:

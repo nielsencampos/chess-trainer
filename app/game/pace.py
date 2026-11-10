@@ -18,7 +18,12 @@ MIN_ENGINE_TIME_S = 0.01
 
 @dataclass(frozen=True)
 class Period:
-    """Time added to a player's clock when they complete this many moves."""
+    """Time added to a player's clock when they complete this many moves.
+
+    Attributes:
+        after_moves (int): The move count that adds the time, such as 40.
+        add_ms (int): The time added, in milliseconds.
+    """
 
     after_moves: int
     add_ms: int
@@ -26,6 +31,17 @@ class Period:
 
 @dataclass(frozen=True)
 class TimeControl:
+    """A clock setting: base time, then increment, delay or later periods.
+
+    Attributes:
+        base_ms (int): The starting time, in milliseconds.
+        increment_ms (int): Time added after each move, in milliseconds.
+        periods (tuple[Period, ...]): Time added on completing moves 40 and 60.
+        delay_ms (int): The delay per move, in milliseconds.
+        delay_kind (str | None): `bronstein` (time used is given back, up to the delay), `us` (the
+            clock waits for the delay before running), or None.
+    """
+
     base_ms: int
     increment_ms: int = 0
     periods: tuple[Period, ...] = ()
@@ -35,13 +51,28 @@ class TimeControl:
 
     @property
     def per_move_ms(self) -> int:
+        """Time a move gets back on average: the increment plus the delay.
+
+        Returns:
+            int: Milliseconds.
+        """
         return self.increment_ms + self.delay_ms
 
 
 def _control(
     *minutes: int, increment_s: int = 0, delay_s: int = 0, delay_kind: str | None = None
 ) -> TimeControl:
-    """Minutes of the first period, then of later ones, added on moves 40 and 60."""
+    """Builds a time control from minutes per period, added on moves 40 and 60.
+
+    Args:
+        *minutes (int): Minutes of the first period, then of the later ones.
+        increment_s (int): Increment per move, in seconds.
+        delay_s (int): Delay per move, in seconds.
+        delay_kind (str | None): `bronstein`, `us`, or None without a delay.
+
+    Returns:
+        TimeControl: The time control.
+    """
     after_moves = (40, 60)
     return TimeControl(
         base_ms=minutes[0] * 60_000,
@@ -101,7 +132,17 @@ TIME_CONTROLS: dict[str, TimeControl | None] = {
 
 
 def clock_after_move(control: TimeControl, remaining_ms: int, used_ms: int, moves_made: int) -> int:
-    """A player's clock after a move, by the same rules as the clock in the browser."""
+    """A player's clock after a move, by the same rules as the clock in the browser.
+
+    Args:
+        control (TimeControl): The time control.
+        remaining_ms (int): The clock before the move.
+        used_ms (int): How long the move took.
+        moves_made (int): The player's moves, this one included, for the periods.
+
+    Returns:
+        int: The clock after the move, in milliseconds.
+    """
     charged = max(0, used_ms - control.delay_ms) if control.delay_kind == "us" else used_ms
     after = max(0, remaining_ms - charged) + control.increment_ms
     if control.delay_kind == "bronstein":
@@ -113,7 +154,15 @@ def clock_after_move(control: TimeControl, remaining_ms: int, used_ms: int, move
 
 
 def engine_budget_s(time_control: TimeControl | None, remaining_ms: int | None) -> float | None:
-    """The most one search may take on the bot's clock. None means no limit."""
+    """The most one search may take on the bot's clock.
+
+    Args:
+        time_control (TimeControl | None): The game's time control, or None without a clock.
+        remaining_ms (int | None): The bot's clock.
+
+    Returns:
+        float | None: Seconds, or None for no limit.
+    """
     if time_control is None or remaining_ms is None:
         return None
     budget_ms = remaining_ms / ENGINE_MOVES_LEFT + time_control.per_move_ms * INCREMENT_SHARE
@@ -123,10 +172,19 @@ def engine_budget_s(time_control: TimeControl | None, remaining_ms: int | None) 
 def human_delay_ms(
     time_control: TimeControl | None, remaining_ms: int | None, in_book: bool, rng: random.Random
 ) -> int:
-    """How long the bot appears to think. In book it answers much faster.
+    """How long the bot appears to think with the Human pace. In book it answers much faster.
 
     At 90 + 30 min with 30 s this gives about 110-180 s out of book and 9-27 s in book at the start.
     Never more than half of the remaining time, so the bot does not flag itself by pacing.
+
+    Args:
+        time_control (TimeControl | None): The game's time control, or None without a clock.
+        remaining_ms (int | None): The bot's clock.
+        in_book (bool): Whether the bot's move comes from the book.
+        rng (random.Random): The random source.
+
+    Returns:
+        int: The delay, in milliseconds.
     """
     if time_control is None or remaining_ms is None:
         low, high = NO_CLOCK_BOOK_RANGE_MS if in_book else NO_CLOCK_RANGE_MS

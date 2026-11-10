@@ -11,14 +11,35 @@ ALAPIN = "1. e4 c5 2. c3"
 
 
 def family(page: Page, name: str):
+    """An opening family in the setup tree.
+
+    Args:
+        page (Page): The page.
+        name (str): The family id.
+
+    Returns:
+        Locator: The family's element.
+    """
     return page.locator(f'#openings .opening[data-repertoire="{name}"]')
 
 
 def hold_repertoires(page: Page) -> list:
-    """Keeps the book request waiting, to test the page before the book has arrived."""
+    """Keeps the book request waiting, to test the page before the book has arrived.
+
+    Args:
+        page (Page): The page.
+
+    Returns:
+        list: The held requests, to fulfill later.
+    """
     held: list = []
 
     def hold(route) -> None:
+        """Holds a book request.
+
+        Args:
+            route (Route): The intercepted request.
+        """
         held.append(route)
 
     page.route("**/api/repertoires", hold)
@@ -26,6 +47,15 @@ def hold_repertoires(page: Page) -> list:
 
 
 def wait_until_held(page: Page, held: list) -> None:
+    """Waits until the book request is held.
+
+    Args:
+        page (Page): The page.
+        held (list): The list from `hold_repertoires`.
+
+    Raises:
+        AssertionError: The book was not requested within 5 s.
+    """
     for _ in range(100):
         if held:
             return
@@ -34,6 +64,11 @@ def wait_until_held(page: Page, held: list) -> None:
 
 
 def test_all_catalog_families_are_listed_and_nothing_starts_selected(page: Page):
+    """All catalog families are listed and nothing starts selected.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     expect(page.locator("#openings .opening")).to_have_count(122)
     expect(page.locator("#selected-total")).to_have_text("0 selected")
@@ -42,6 +77,12 @@ def test_all_catalog_families_are_listed_and_nothing_starts_selected(page: Page)
 
 
 def test_play_stays_disabled_until_the_book_has_loaded(page: Page, seed_prefs):
+    """Play stays disabled until the book has loaded.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     held = hold_repertoires(page)
     page.goto("/")
@@ -53,6 +94,11 @@ def test_play_stays_disabled_until_the_book_has_loaded(page: Page, seed_prefs):
 
 
 def test_same_openings_for_both_colors_and_board_flips(page: Page):
+    """Same openings for both colors and board flips.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     expect(page.locator("#openings .opening")).to_have_count(122)
     page.locator('input[name="color"][value="black"]').check()
@@ -61,6 +107,11 @@ def test_same_openings_for_both_colors_and_board_flips(page: Page):
 
 
 def test_tree_of_groups_openings_subgroups_and_lines(page: Page):
+    """Tree of groups openings subgroups and lines.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     groups = page.locator("#openings .tree-group > summary .opening-name")
     expect(groups).to_have_text(
@@ -86,6 +137,11 @@ def test_tree_of_groups_openings_subgroups_and_lines(page: Page):
 
 
 def test_checking_a_group_selects_everything_inside(page: Page):
+    """Checking a group selects everything inside.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     group = page.locator('#openings [data-group="flank"]')
     group.locator("> summary .tree-check").check()
@@ -99,6 +155,11 @@ def test_checking_a_group_selects_everything_inside(page: Page):
 
 
 def test_family_checkbox_selection_persists(page: Page):
+    """Family checkbox selection persists.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     caro = family(page, "caro-kann-defense")
     caro.locator(".opening-check").check()
@@ -122,6 +183,11 @@ def test_family_checkbox_selection_persists(page: Page):
 
 
 def test_search_by_name_eco_and_moves(page: Page):
+    """Search by name ECO and moves.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     search = page.locator("#opening-search")
 
@@ -146,6 +212,11 @@ def test_search_by_name_eco_and_moves(page: Page):
 
 
 def test_search_typed_before_the_book_loads_still_applies(page: Page):
+    """Search typed before the book loads still applies.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     held = hold_repertoires(page)
     page.goto("/")
     page.locator("#opening-search").fill("taimanov")
@@ -157,6 +228,11 @@ def test_search_typed_before_the_book_loads_still_applies(page: Page):
 
 
 def test_select_all_respects_the_search(page: Page):
+    """Select all respects the search.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     expect(page.locator("#openings .opening").first).to_be_visible()
     page.locator("#select-all").click()
@@ -174,6 +250,11 @@ def test_select_all_respects_the_search(page: Page):
 
 
 def test_family_checkbox_during_a_search_only_selects_the_results(page: Page):
+    """Family checkbox during a search only selects the results.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator("#opening-search").fill("B46")
     sicilian = family(page, "sicilian-defense")
@@ -184,6 +265,11 @@ def test_family_checkbox_during_a_search_only_selects_the_results(page: Page):
 
 
 def test_game_from_the_ui_selection(page: Page):
+    """Game from the UI selection.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator("#opening-search").fill(ALAPIN)
     line = page.locator(".variant", has_text="Alapin Variation").first
@@ -196,6 +282,11 @@ def test_game_from_the_ui_selection(page: Page):
 
 
 def test_time_controls_and_levels_are_offered(page: Page):
+    """Time controls and levels are offered.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     groups = page.locator("#time-control optgroup")
     expect(groups).to_have_count(4)
@@ -238,12 +329,24 @@ def test_time_controls_and_levels_are_offered(page: Page):
 
 
 def test_a_removed_saved_time_control_falls_back_to_the_default(page: Page, seed_prefs):
+    """A removed saved time control falls back to the default.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], timeControl="45+30")
     page.goto("/")
     expect(page.locator("#time-control")).to_have_value("25i10")
 
 
 def test_an_old_scoresheet_preference_is_ignored(page: Page, seed_prefs):
+    """An old scoresheet preference is ignored.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none", scoresheet=True)
     page.goto("/")
     expect(page.locator("#show-moves")).to_be_checked()
@@ -255,6 +358,12 @@ def test_an_old_scoresheet_preference_is_ignored(page: Page, seed_prefs):
 
 
 def test_clock_periods_delays_and_hours(page: Page, seed_prefs):
+    """Clock periods delays and hours.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="90+30i30")
     page.goto("/")
     play(page)
@@ -310,6 +419,12 @@ def test_clock_periods_delays_and_hours(page: Page, seed_prefs):
 
 
 def test_clock_runs_adds_increment_turns_red_and_flags(page: Page, seed_prefs):
+    """Clock runs adds increment turns red and flags.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="3i2")
     page.clock.install()
     page.goto("/")
@@ -341,6 +456,12 @@ def test_clock_runs_adds_increment_turns_red_and_flags(page: Page, seed_prefs):
 
 
 def test_no_clock_hides_the_clocks(page: Page, seed_prefs):
+    """No clock hides the clocks.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     play(page)
@@ -350,6 +471,14 @@ def test_no_clock_hides_the_clocks(page: Page, seed_prefs):
 
 
 def background(page: Page) -> str:
+    """The page's background color.
+
+    Args:
+        page (Page): The page.
+
+    Returns:
+        str: The computed color, such as `rgb(31, 26, 23)`.
+    """
     return page.evaluate("getComputedStyle(document.body).backgroundColor")
 
 
@@ -358,6 +487,11 @@ DARK_BG = "rgb(31, 26, 23)"
 
 
 def test_theme_follows_the_system_and_can_be_overridden(page: Page):
+    """Theme follows the system and can be overridden.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.emulate_media(color_scheme="dark")
     page.goto("/")
     expect(page.locator("#theme-toggle")).to_have_text("Theme: auto")
@@ -381,6 +515,11 @@ def test_theme_follows_the_system_and_can_be_overridden(page: Page):
 
 
 def test_sidebar_on_the_left_and_the_board_filling_the_rest(page: Page):
+    """Sidebar on the left and the board filling the rest.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator(".square").first.wait_for()
     board = page.locator("#board").bounding_box()
@@ -400,6 +539,11 @@ def test_sidebar_on_the_left_and_the_board_filling_the_rest(page: Page):
 
 
 def test_move_bar_on_the_right(page: Page):
+    """Move bar on the right.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator(".square").first.wait_for()
     board = page.locator("#board").bounding_box()
@@ -412,10 +556,26 @@ def test_move_bar_on_the_right(page: Page):
 
 
 def width_of(page: Page, selector: str) -> float:
+    """The width of an element.
+
+    Args:
+        page (Page): The page.
+        selector (str): The element's selector.
+
+    Returns:
+        float: Its width in pixels.
+    """
     return page.locator(selector).bounding_box()["width"]
 
 
 def drag_handle(page: Page, handle: str, to_x: float) -> None:
+    """Drags a bar's resize handle to a horizontal position.
+
+    Args:
+        page (Page): The page.
+        handle (str): The handle's selector.
+        to_x (float): Where to drop it.
+    """
     box = page.locator(handle).bounding_box()
     page.mouse.move(box["x"] + box["width"] / 2, 300)
     page.mouse.down()
@@ -424,6 +584,11 @@ def drag_handle(page: Page, handle: str, to_x: float) -> None:
 
 
 def test_dragging_resizes_the_bars(page: Page):
+    """Dragging resizes the bars.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.set_viewport_size({"width": 1920, "height": 1080})
     page.goto("/")
     page.locator(".square").first.wait_for()
@@ -444,6 +609,11 @@ def test_dragging_resizes_the_bars(page: Page):
 
 
 def test_bar_widths_have_limits_and_keep_room_for_the_board(page: Page):
+    """Bar widths have limits and keep room for the board.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator(".square").first.wait_for()
     drag_handle(page, "#resize-left", 50)
@@ -457,6 +627,11 @@ def test_bar_widths_have_limits_and_keep_room_for_the_board(page: Page):
 
 
 def test_arrow_keys_resize_a_bar(page: Page):
+    """Arrow keys resize a bar.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator(".square").first.wait_for()
     page.locator("#resize-left").focus()
@@ -468,6 +643,11 @@ def test_arrow_keys_resize_a_bar(page: Page):
 
 
 def test_bars_hide_and_show_and_the_board_uses_the_space(page: Page):
+    """Bars hide and show and the board uses the space.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.set_viewport_size({"width": 1920, "height": 700})
     page.goto("/")
     page.locator(".square").first.wait_for()
@@ -500,6 +680,13 @@ def test_bars_hide_and_show_and_the_board_uses_the_space(page: Page):
     ("toggle", "gone"), [("#toggle-left", ".sidebar"), ("#toggle-right", ".movebar")]
 )
 def test_hiding_one_bar_keeps_the_rest_in_place(page: Page, toggle, gone):
+    """Hiding one bar keeps the rest in place.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        toggle (str): The selector of the bar's hide button.
+        gone (str): The selector of the bar it hides.
+    """
     page.set_viewport_size({"width": 1920, "height": 1080})
     page.goto("/")
     page.locator(".square").first.wait_for()
@@ -529,6 +716,12 @@ def test_hiding_one_bar_keeps_the_rest_in_place(page: Page, toggle, gone):
 
 
 def test_a_game_can_be_played_with_the_bars_hidden(page: Page, seed_prefs):
+    """A game can be played with the bars hidden.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     page.goto("/")
     page.locator("#play").click()
@@ -543,6 +736,11 @@ def test_a_game_can_be_played_with_the_bars_hidden(page: Page, seed_prefs):
 
 
 def test_board_grows_with_the_window_and_stays_in_view(page: Page):
+    """Board grows with the window and stays in view.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator(".square").first.wait_for()
     sizes = []
@@ -558,6 +756,11 @@ def test_board_grows_with_the_window_and_stays_in_view(page: Page):
 
 
 def test_layout_switches_at_1100_px(page: Page):
+    """The three columns stack into one below 1100 px wide.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator(".square").first.wait_for()
     columns = "getComputedStyle(document.querySelector('.app-shell')).gridTemplateColumns"
@@ -568,6 +771,11 @@ def test_layout_switches_at_1100_px(page: Page):
 
 
 def test_fonts_are_the_vendored_ones(page: Page):
+    """Fonts are the vendored ones.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator(".square").first.wait_for()
     page.evaluate("document.fonts.ready")
@@ -576,6 +784,11 @@ def test_fonts_are_the_vendored_ones(page: Page):
 
 
 def test_logo_is_in_the_header_and_the_browser_tab(page: Page):
+    """The logo is at the top of the left bar and is the favicon.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     logo = page.locator(".brand-logo")
     expect(logo).to_be_visible()
@@ -590,12 +803,23 @@ def test_logo_is_in_the_header_and_the_browser_tab(page: Page):
 
 
 def test_footer_shows_the_engine_version(page: Page):
+    """Footer shows the engine version.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     expect(page.locator("#footer-versions")).to_contain_text("Chess Trainer 0.1.0")
     expect(page.locator("#footer-versions")).to_contain_text("Stockfish")
 
 
 def test_bullet_game_starts_with_thirty_seconds(page: Page, seed_prefs):
+    """Bullet game starts with thirty seconds.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="30s")
     page.goto("/")
     options = page.locator('#time-control optgroup[label="Bullet"] option')
@@ -607,6 +831,11 @@ def test_bullet_game_starts_with_thirty_seconds(page: Page, seed_prefs):
 
 
 def test_clock_shows_tenths_below_ten_seconds(page: Page):
+    """Clock shows tenths below ten seconds.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     shown = page.evaluate(
         """async () => {

@@ -37,4 +37,8 @@ line-length = 100
 target-version = "py312"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF", "D"]
+
+# Every module, class and function has a docstring with Args, Returns and Raises (Google style).
+[tool.ruff.lint.pydocstyle]
+convention = "google"

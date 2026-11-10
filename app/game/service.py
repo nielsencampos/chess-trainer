@@ -33,22 +33,42 @@ GAME_ID_ALPHABET = string.ascii_lowercase + string.digits
 
 
 def new_game_id(now: datetime | None = None) -> str:
-    """UTC timestamp to the microsecond, then a random part. Sorts by start time."""
+    """A new game id: UTC timestamp to the microsecond, then a random part. Sorts by start time.
+
+    Args:
+        now (datetime | None): The start time; now when None.
+
+    Returns:
+        str: An id such as `20261107131159012345-agjrbaghrbag-rkajgrjabgaa`.
+    """
     stamp = (now or datetime.now(UTC)).strftime("%Y%m%d%H%M%S%f")
     random_part = "".join(secrets.choice(GAME_ID_ALPHABET) for _ in range(24))
     return f"{stamp}-{random_part[:12]}-{random_part[12:]}"
 
 
 class UnknownGameError(KeyError):
+    """No game with this id is in memory."""
+
     pass
 
 
 class InvalidSetupError(ValueError):
+    """The new game's setup is invalid, such as an unknown level or no lines."""
+
     pass
 
 
 @dataclass(frozen=True, slots=True)
 class FromGame:
+    """A new game that starts from a saved one.
+
+    Attributes:
+        game_id (str): The saved game's id.
+        upto_ply (int | None): How many of its plies to use; all when None.
+        from_position (bool): True to play from that position against Stockfish, False to train
+            its moves as a one-line book.
+    """
+
     game_id: str
     upto_ply: int | None = None
     from_position: bool = False
@@ -56,11 +76,29 @@ class FromGame:
 
 @dataclass(frozen=True, slots=True)
 class BotReply:
+    """The bot's move and how long the browser waits before showing it.
+
+    Attributes:
+        record (MoveRecord): The move.
+        delay_ms (int): The Human pace delay, 0 with Instant.
+    """
+
     record: MoveRecord
     delay_ms: int
 
 
 class GameService:
+    """Starts, plays, resumes and saves games, one at a time, with the book, engine and store.
+
+    Attributes:
+        opening_names (Mapping[str, tuple[str, str]]): EPD -> (ECO, catalog name).
+        book (Book): The book.
+        engine (MoveEngine): The engine.
+        levels (dict[str, Level]): The strength levels by key.
+        store (GameStore): Where games are saved.
+        rng (random.Random): The random source.
+    """
+
     def __init__(
         self,
         book: Book,
@@ -70,6 +108,16 @@ class GameService:
         rng: random.Random | None = None,
         opening_names: Mapping[str, tuple[str, str]] | None = None,
     ) -> None:
+        """Creates the service.
+
+        Args:
+            book (Book): The book.
+            engine (MoveEngine): The engine.
+            levels (dict[str, Level]): The strength levels by key.
+            store (GameStore): Where games are saved.
+            rng (random.Random | None): The random source; a new one when None.
+            opening_names (Mapping[str, tuple[str, str]] | None): EPD -> (ECO, name).
+        """
         self.opening_names = opening_names or {}
         self.book = book
         self.engine = engine
@@ -79,6 +127,11 @@ class GameService:
         self._games: OrderedDict[str, GameSession] = OrderedDict()
 
     def _remember(self, session: GameSession) -> None:
+        """Keeps a session in memory, dropping the oldest beyond `MAX_GAMES_IN_MEMORY`.
+
+        Args:
+            session (GameSession): The session.
+        """
         self._games[session.game_id] = session
         while len(self._games) > MAX_GAMES_IN_MEMORY:
             self._games.popitem(last=False)
@@ -94,6 +147,24 @@ class GameService:
         from_game: FromGame | None = None,
         chess960_position: int | None = None,
     ) -> tuple[GameSession, BotReply | None]:
+        """Starts a new game, abandoning an active one, and plays the bot's first move if it starts.
+
+        Args:
+            color (str): The user's color, `white` or `black`.
+            variant_ids (Sequence[str]): The selected lines; empty for Chess960 or a saved game.
+            level (str): The bot's level key.
+            pace (str): `instant` or `human`.
+            time_control (str): The time control's key, or `none`.
+            ui (Mapping[str, bool] | None): UI flags to save with the game.
+            from_game (FromGame | None): The saved game to start from, if any.
+            chess960_position (int | None): The Chess960 starting position, if any.
+
+        Returns:
+            tuple[GameSession, BotReply | None]: The game, and the bot's move if it plays first.
+
+        Raises:
+            InvalidSetupError: The setup is invalid.
+        """
         if chess960_position is not None and (from_game is not None or variant_ids):
             raise InvalidSetupError("a Chess960 game has no opening lines")
         if chess960_position is None and from_game is None and not variant_ids:
@@ -142,6 +213,18 @@ class GameService:
         return session, reply
 
     def _saved_game_line(self, from_game: FromGame) -> Variant:
+        """A finished game's first plies as a one-line book.
+
+        Args:
+            from_game (FromGame): The saved game and how many plies to use.
+
+        Returns:
+            Variant: The line.
+
+        Raises:
+            InvalidSetupError: The game is unknown, unfinished or Chess960, or the ply is out of
+                range.
+        """
         rows = self.store.finished_games()
         game = next((item for item in rows if item["game_id"] == from_game.game_id), None)
         if game is None:
@@ -157,7 +240,17 @@ class GameService:
         return line
 
     def chess960_start(self, fen: str | None) -> tuple[int, str]:
-        """(number, FEN) of a starting position: the given FEN if there is one, or a random one."""
+        """(number, FEN) of a starting position: the given FEN if there is one, or a random one.
+
+        Args:
+            fen (str | None): A typed FEN, or None to roll one.
+
+        Returns:
+            tuple[int, str]: The position number and its FEN.
+
+        Raises:
+            InvalidSetupError: The FEN is not a Chess960 starting position.
+        """
         position = self.rng.randrange(960) if fen is None else chess960_position_of(fen)
         if position is None:
             raise InvalidSetupError("not a Chess960 starting position")
@@ -165,6 +258,15 @@ class GameService:
 
     @staticmethod
     def _play_given_moves(session: GameSession, line: Variant) -> None:
+        """Plays a line's moves on a new game, to start from the position they reach.
+
+        Args:
+            session (GameSession): The new game.
+            line (Variant): The line.
+
+        Raises:
+            InvalidSetupError: The position is already the end of the game.
+        """
         board = chess.Board()
         for _ in range(len(line.pgn.split())):
             uci = line.moves[board.epd()][0].uci
@@ -174,13 +276,18 @@ class GameService:
             raise InvalidSetupError("the game is already over at this move")
 
     def _abandon_active(self) -> None:
-        """Only one game runs at a time. The app itself never starts a game over another."""
+        """Ends the active game as abandoned, if any: only one game runs at a time."""
         session = self.active_session()
         if session is not None:
             session.outcome = GameResult("loss", "abandoned")
             self.store.save(session)
 
     def active_session(self) -> GameSession | None:
+        """The unfinished game, from memory or rebuilt from the database.
+
+        Returns:
+            GameSession | None: The game, or None if there is none or its lines no longer exist.
+        """
         row = self.store.active_row()
         if row is None:
             return None
@@ -193,13 +300,28 @@ class GameService:
         return session
 
     async def resume_active(self) -> GameSession | None:
-        """The unfinished game, after playing the bot's reply if the app closed before it."""
+        """The unfinished game, after playing the bot's reply if the app closed before it.
+
+        Returns:
+            GameSession | None: The game, or None if there is none.
+        """
         session = self.active_session()
         if session is not None and not session.is_user_turn:
             await self._bot_turn(session)
         return session
 
     def get(self, game_id: str) -> GameSession:
+        """A game in memory.
+
+        Args:
+            game_id (str): The game's id.
+
+        Returns:
+            GameSession: The game.
+
+        Raises:
+            UnknownGameError: The game is not in memory.
+        """
         try:
             return self._games[game_id]
         except KeyError as error:
@@ -213,6 +335,23 @@ class GameService:
         bot_clock_ms: int | None,
         think_ms: int | None,
     ) -> tuple[GameSession, MoveRecord, Deviation | None, BotReply | None]:
+        """Plays the user's move, saves it, then plays and saves the bot's reply.
+
+        Args:
+            game_id (str): The game's id.
+            uci (str): The move in UCI.
+            user_clock_ms (int | None): The user's clock after the move, from the browser.
+            bot_clock_ms (int | None): The bot's clock, from the browser.
+            think_ms (int | None): How long the user's move took.
+
+        Returns:
+            tuple[GameSession, MoveRecord, Deviation | None, BotReply | None]: The game, the user's
+                move, its deviation if it was one, and the bot's reply unless the game ended.
+
+        Raises:
+            UnknownGameError: The game is not in memory.
+            IllegalMoveError: The move is illegal.
+        """
         session = self.get(game_id)
         record, deviation = session.play_user_move(uci, user_clock_ms, think_ms)
         if user_clock_ms is not None:
@@ -224,6 +363,15 @@ class GameService:
         return session, record, deviation, reply
 
     def import_pgn(self, text: str) -> dict:
+        """Imports the games of a PGN text, skipping or updating duplicates.
+
+        Args:
+            text (str): One or more PGN games.
+
+        Returns:
+            dict: Counts of `imported`, `duplicates` and `updated`, and the refused games in
+                `errors`.
+        """
         games, errors = read_pgn_text(text, self.opening_names)
         duplicates, updated = self.store.save_imported(games, new_game_id)
         return {
@@ -237,6 +385,18 @@ class GameService:
         }
 
     def resign(self, game_id: str) -> GameSession:
+        """Resigns a game and saves it.
+
+        Args:
+            game_id (str): The game's id.
+
+        Returns:
+            GameSession: The game.
+
+        Raises:
+            UnknownGameError: The game is not in memory.
+            GameFinishedError: The game is already over.
+        """
         session = self.get(game_id)
         session.resign()
         self.store.save(session)
@@ -249,7 +409,22 @@ class GameService:
         user_clock_ms: int | None,
         bot_clock_ms: int | None,
     ) -> GameSession:
-        """The clocks come back as they were before the user's move."""
+        """Takes back the user's last move; the clocks come back as they were before it.
+
+        Args:
+            game_id (str): The game's id.
+            shown_plies (int): The plies the browser shows, the user's move included.
+            user_clock_ms (int | None): The user's clock before the move.
+            bot_clock_ms (int | None): The bot's clock before the move.
+
+        Returns:
+            GameSession: The game.
+
+        Raises:
+            UnknownGameError: The game is not in memory.
+            GameFinishedError: The game's end cannot be undone.
+            NothingToTakeBackError: There is no move to take back.
+        """
         session = self.get(game_id)
         session.take_back(shown_plies)
         if user_clock_ms is not None:
@@ -260,12 +435,34 @@ class GameService:
         return session
 
     def flag(self, game_id: str, side: Side, shown_plies: int) -> GameSession:
+        """Ends a game on time and saves it.
+
+        Args:
+            game_id (str): The game's id.
+            side (Side): Whose clock ran out.
+            shown_plies (int): The plies the browser shows.
+
+        Returns:
+            GameSession: The game.
+
+        Raises:
+            UnknownGameError: The game is not in memory.
+            GameFinishedError: The game is already over.
+        """
         session = self.get(game_id)
         session.flag(side, shown_plies)
         self.store.save(session)
         return session
 
     async def _bot_turn(self, session: GameSession) -> BotReply | None:
+        """Plays the bot's move, from the book or the engine, and charges its clock.
+
+        Args:
+            session (GameSession): The game, with the bot to move.
+
+        Returns:
+            BotReply | None: The move, or None if the game ended during the search.
+        """
         bot_clock_ms = session.bot_clock_ms
         book_move = session.next_book_move()
         search_started = time.monotonic()

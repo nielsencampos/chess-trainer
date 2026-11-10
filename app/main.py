@@ -32,6 +32,18 @@ def create_app(
     engine: MoveEngine | None = None,
     rng: random.Random | None = None,
 ) -> FastAPI:
+    """Builds the app: opens the database, loads the book and wires the services.
+
+    Fails loudly, so the app does not start, on a bad database, opening file or levels file.
+
+    Args:
+        settings (Settings | None): Where the files are; read from the environment when None.
+        engine (MoveEngine | None): The engine; a real Stockfish process when None.
+        rng (random.Random | None): The random source for the draws; tests pass a seeded one.
+
+    Returns:
+        FastAPI: The app, with the API under `/api` and `web/` served at `/`.
+    """
     settings = settings or settings_from_env()
     # Fails loudly on a bad database or opening file: the app must not start with one.
     database = open_database(settings.database_path)
@@ -51,6 +63,14 @@ def create_app(
 
     @asynccontextmanager
     async def lifespan(app: FastAPI) -> AsyncIterator[None]:
+        """Starts the engine with the app, then stops it and closes the database.
+
+        Args:
+            app (FastAPI): The app being run.
+
+        Yields:
+            None: Control while the app runs.
+        """
         await engine.start()
         yield
         await engine.stop()

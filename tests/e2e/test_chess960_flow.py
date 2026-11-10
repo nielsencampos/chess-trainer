@@ -12,21 +12,45 @@ SWAP_FEN = "bbqnrkrn/pppppppp/8/8/8/8/PPPPPPPP/BBQNRKRN w KQkq - 0 1"
 
 
 def open_chess960(page: Page) -> None:
+    """Opens the Chess960 setup and waits for its first position.
+
+    Args:
+        page (Page): The page.
+    """
     page.goto("/")
     choose_new_game_mode(page, "chess960")
     expect(page.locator("#chess960-number")).to_have_text(re.compile(r"Position \d+"))
 
 
 def back_rank(page: Page) -> list[str | None]:
+    """White's back rank, a1 to h1.
+
+    Args:
+        page (Page): The page.
+
+    Returns:
+        list[str | None]: Each square's piece, such as `wR`, or None.
+    """
     return [square(page, f"{file}1").get_attribute("data-piece") for file in "abcdefgh"]
 
 
 def use_fen(page: Page, fen: str) -> None:
+    """Types a starting FEN into the Chess960 setup and submits it.
+
+    Args:
+        page (Page): The page.
+        fen (str): The FEN.
+    """
     page.locator("#chess960-fen").fill(fen)
     page.locator("#chess960-fen-form button").click()
 
 
 def test_the_die_shows_the_position_on_the_board(page: Page):
+    """The die shows the position on the board.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     open_chess960(page)
     rolls = set()
     for _ in range(5):
@@ -45,6 +69,11 @@ def test_the_die_shows_the_position_on_the_board(page: Page):
 
 
 def test_a_fen_shows_its_position_and_anything_else_is_refused(page: Page):
+    """A FEN shows its position and anything else is refused.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     open_chess960(page)
     use_fen(page, SWAP_FEN)
     expect(page.locator("#chess960-number")).to_have_text("Position 288")
@@ -56,6 +85,12 @@ def test_a_fen_shows_its_position_and_anything_else_is_refused(page: Page):
 
 
 def test_black_sees_the_position_and_the_bot_opens(page: Page, seed_prefs):
+    """Black sees the position and the bot opens.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([], color="black", timeControl="none")
     open_chess960(page)
     use_fen(page, SWAP_FEN)
@@ -66,6 +101,12 @@ def test_black_sees_the_position_and_the_bot_opens(page: Page, seed_prefs):
 
 
 def test_a_game_castles_and_survives_a_reload(page: Page, seed_prefs):
+    """A game castles and survives a reload.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([], color="white", timeControl="none")
     open_chess960(page)
     use_fen(page, SWAP_FEN)
@@ -87,6 +128,12 @@ def test_a_game_castles_and_survives_a_reload(page: Page, seed_prefs):
 
 
 def test_clicking_a_square_between_castles_and_sends_king_takes_rook(page: Page, seed_prefs):
+    """Clicking a square between castles and sends king takes rook.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([], color="white", timeControl="none")
     sent = fake_api(page, [("a7a6", "a6"), ("b7b6", "b6"), ("c7c6", "c6"), ("d7d6", "d6")])
     open_chess960(page)

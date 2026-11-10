@@ -23,6 +23,11 @@ CARO_SHORT = "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3"
 
 
 def resign(page: Page) -> None:
+    """Resigns with the two clicks and waits for the end-of-game card.
+
+    Args:
+        page (Page): The page.
+    """
     button = page.locator("#resign")
     button.click()
     expect(button).to_have_text("Click again to resign")
@@ -32,6 +37,12 @@ def resign(page: Page) -> None:
 
 
 def test_book_then_engine_then_resign_with_end_card(page: Page, seed_prefs):
+    """Book then engine then resign with end card.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     play(page)
@@ -65,6 +76,12 @@ def test_book_then_engine_then_resign_with_end_card(page: Page, seed_prefs):
 
 
 def test_deviation_is_marked_and_listed_with_the_expected_move(page: Page, seed_prefs):
+    """Deviation is marked and listed with the expected move.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([CARO_SHORT], color="black", timeControl="none")
     page.goto("/")
     play(page)
@@ -88,6 +105,12 @@ def test_deviation_is_marked_and_listed_with_the_expected_move(page: Page, seed_
 
 
 def test_unselected_variation_counts_as_a_deviation(page: Page, seed_prefs):
+    """Unselected variation counts as a deviation.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c5 2. Nf3 Nc6 3. Bb5"], color="white", timeControl="none")
     page.goto("/")
     play(page)
@@ -101,6 +124,12 @@ def test_unselected_variation_counts_as_a_deviation(page: Page, seed_prefs):
 
 
 def test_selected_variation_switch_is_not_a_deviation(page: Page, seed_prefs):
+    """Selected variation switch is not a deviation.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c5 2. Nf3 Nc6 3. Bb5", ALAPIN], color="white", timeControl="none")
     page.goto("/")
     play(page)
@@ -114,6 +143,12 @@ def test_selected_variation_switch_is_not_a_deviation(page: Page, seed_prefs):
 
 
 def test_opening_name_follows_the_position_even_outside_the_selection(page: Page, seed_prefs):
+    """Opening name follows the position even outside the selection.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     play(page)
@@ -136,6 +171,12 @@ def test_opening_name_follows_the_position_even_outside_the_selection(page: Page
 
 
 def test_show_moves_off_hides_the_list_and_the_name_until_the_end(page: Page, seed_prefs):
+    """Show moves off hides the list and the name until the end.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="3i2", showMoves=False)
     page.goto("/")
     expect(page.locator("#show-moves")).not_to_be_checked()
@@ -160,6 +201,12 @@ def test_show_moves_off_hides_the_list_and_the_name_until_the_end(page: Page, se
 
 
 def test_show_moves_can_be_toggled_mid_game_and_all_shows_at_the_end(page: Page, seed_prefs):
+    """Show moves can be toggled mid game and all shows at the end.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     toggle = page.locator("#show-moves")
@@ -194,6 +241,12 @@ def test_show_moves_can_be_toggled_mid_game_and_all_shows_at_the_end(page: Page,
 
 
 def test_warning_off_hides_theory_chips_and_marks(page: Page, seed_prefs):
+    """Warning off hides theory chips and marks.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([CARO_SHORT], color="black", timeControl="none", warning=False)
     page.goto("/")
     play(page)
@@ -212,6 +265,12 @@ def test_warning_off_hides_theory_chips_and_marks(page: Page, seed_prefs):
 
 
 def test_human_pace_makes_the_bot_wait(page: Page, seed_prefs):
+    """Human pace makes the bot wait.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none", pace="human")
     page.goto("/")
     play(page)
@@ -224,6 +283,12 @@ def test_human_pace_makes_the_bot_wait(page: Page, seed_prefs):
 
 
 def test_reload_continues_the_game(page: Page, seed_prefs):
+    """Reload continues the game.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([CARO_SHORT], color="black", timeControl="3i2")
     page.goto("/")
     play(page)
@@ -259,6 +324,12 @@ def test_reload_continues_the_game(page: Page, seed_prefs):
 
 
 def test_show_moves_off_stays_after_a_reload(page: Page, seed_prefs):
+    """Show moves off stays after a reload.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     play(page)
@@ -272,6 +343,12 @@ def test_show_moves_off_stays_after_a_reload(page: Page, seed_prefs):
 
 
 def test_download_pgn(page: Page, seed_prefs):
+    """The end-of-game card downloads the game's PGN.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="3i2")
     page.goto("/")
     play(page)
@@ -291,6 +368,13 @@ def test_download_pgn(page: Page, seed_prefs):
 
 
 def test_copy_pgn(page: Page, context, seed_prefs):
+    """The end-of-game card copies the game's PGN to the clipboard.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        context (BrowserContext): The page's browser context.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     context.grant_permissions(["clipboard-read", "clipboard-write"], origin=BASE_URL)
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
@@ -310,6 +394,12 @@ def test_copy_pgn(page: Page, context, seed_prefs):
 
 
 def test_nothing_loads_from_outside_the_app(page: Page, seed_prefs):
+    """Nothing loads from outside the app.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     requests: list[str] = []
     page.on("request", lambda request: requests.append(request.url))
     seed_prefs([ALAPIN], color="white", timeControl="none")
@@ -323,6 +413,11 @@ def test_nothing_loads_from_outside_the_app(page: Page, seed_prefs):
 
 
 def finish_quick_game(page: Page) -> None:
+    """Starts a game, plays 1. e4, waits for the reply and resigns.
+
+    Args:
+        page (Page): The page.
+    """
     play(page)
     wait_for_your_move(page)
     click_move(page, "e2", "e4")
@@ -332,6 +427,12 @@ def finish_quick_game(page: Page) -> None:
 
 
 def test_saved_games_tab_lists_filters_and_exports(page: Page, seed_prefs):
+    """Saved games tab lists filters and exports.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     expect(page.locator("#sidebar-tabs")).to_be_visible()
@@ -375,6 +476,12 @@ def test_saved_games_tab_lists_filters_and_exports(page: Page, seed_prefs):
 
 
 def test_saved_games_select_all_uses_the_filter(page: Page, seed_prefs):
+    """Saved games select all uses the filter.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     finish_quick_game(page)
@@ -388,6 +495,12 @@ def test_saved_games_select_all_uses_the_filter(page: Page, seed_prefs):
 
 
 def test_import_by_text_and_by_file(page: Page, tmp_path):
+    """Import by text and by file.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        tmp_path (Path): A temporary folder for this test.
+    """
     good = """[White "Ana"]
 [Black "Bia"]
 [Date "2026.03.04"]
@@ -434,6 +547,14 @@ LINE_PGN = """[White "Line{tag}"]
 
 
 def import_line(page: Page) -> str:
+    """Imports a short game whose players carry a unique tag, so the test can find it.
+
+    Args:
+        page (Page): The page.
+
+    Returns:
+        str: The White player's name, to search for it.
+    """
     tag = uuid.uuid4().hex
     page.locator("#tab-import").click()
     page.locator("#import-text").fill(LINE_PGN.format(tag=tag))
@@ -443,6 +564,14 @@ def import_line(page: Page) -> str:
 
 
 def choose_saved(page: Page, name: str, ply_label: str | None = None, position=False) -> None:
+    """Sets up New Game from a saved game: picks it, the move and the mode.
+
+    Args:
+        page (Page): The page.
+        name (str): Text that finds the game.
+        ply_label (str | None): The label of the move to start from; the end when None.
+        position (bool): Start from the position instead of training the line.
+    """
     choose_new_game_mode(page, "saved")
     expect(page.locator("#setup-card")).to_be_visible()
     expect(page.locator("#openings-field")).to_be_hidden()
@@ -459,6 +588,11 @@ def choose_saved(page: Page, name: str, ply_label: str | None = None, position=F
 
 
 def test_train_the_line_of_a_saved_game(page: Page):
+    """Train the line of a saved game.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     name = import_line(page)
     choose_saved(page, name)
@@ -476,6 +610,11 @@ def test_train_the_line_of_a_saved_game(page: Page):
 
 
 def test_play_from_the_position_of_a_saved_game(page: Page):
+    """Play from the position of a saved game.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     name = import_line(page)
     choose_saved(page, name, "2... d5", position=True)
@@ -491,6 +630,11 @@ def test_play_from_the_position_of_a_saved_game(page: Page):
 
 
 def test_menu_shows_one_screen_at_a_time(page: Page):
+    """Menu shows one screen at a time.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     screens = {
         "#tab-new": "#setup-card",
@@ -512,6 +656,14 @@ def test_menu_shows_one_screen_at_a_time(page: Page):
 
 
 def open_review(page: Page) -> str:
+    """Imports a game and opens its review from Saved games.
+
+    Args:
+        page (Page): The page.
+
+    Returns:
+        str: The White player's name of the game.
+    """
     name = import_line(page)
     page.locator("#tab-saved").click()
     page.locator("#saved-search").fill("")
@@ -522,12 +674,24 @@ def open_review(page: Page) -> str:
 
 
 def expect_ply(page: Page, ply: int, total: int) -> None:
+    """Checks the review's position counter.
+
+    Args:
+        page (Page): The page.
+        ply (int): The ply on screen.
+        total (int): The plies in the game.
+    """
     bar = page.locator("#review-bar")
     expect(bar).to_have_attribute("data-ply", str(ply))
     expect(bar).to_have_attribute("data-total", str(total))
 
 
 def test_review_a_saved_game_with_buttons_keys_and_clicks(page: Page):
+    """Review a saved game with buttons keys and clicks.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     name = open_review(page)
     expect_ply(page, 5, 5)
@@ -570,6 +734,11 @@ def test_review_a_saved_game_with_buttons_keys_and_clicks(page: Page):
 
 
 def test_pieces_cannot_be_moved_in_a_review(page: Page):
+    """Pieces cannot be moved in a review.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     open_review(page)
     click_move(page, "g1", "f3")
@@ -578,6 +747,11 @@ def test_pieces_cannot_be_moved_in_a_review(page: Page):
 
 
 def test_play_from_here_goes_to_a_new_game_at_that_move(page: Page):
+    """Play from here goes to a new game at that move.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     open_review(page)
     page.locator('#movelist .move[data-ply="3"]').click()
@@ -596,6 +770,12 @@ def test_play_from_here_goes_to_a_new_game_at_that_move(page: Page):
 
 
 def test_review_a_book_line_and_start_a_game_after_it(page: Page, seed_prefs):
+    """Review a book line and start a game after it.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     page.locator("#tab-openings").click()
@@ -613,6 +793,12 @@ def test_review_a_book_line_and_start_a_game_after_it(page: Page, seed_prefs):
 
 
 def test_openings_exports_ticked_lines_apart_from_what_new_game_trains(page: Page, seed_prefs):
+    """Openings exports ticked lines apart from what new game trains.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     expect(page.locator("#selected-total")).to_have_text("1 selected")
@@ -634,6 +820,11 @@ def test_openings_exports_ticked_lines_apart_from_what_new_game_trains(page: Pag
 
 
 def test_chess960_game_can_be_reviewed_but_not_played(page: Page):
+    """Chess960 game can be reviewed but not played.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     tag = uuid.uuid4().hex
     fischer = f"""[White "Fischer{tag}"]
 [Black "Random"]
@@ -662,6 +853,12 @@ def test_chess960_game_can_be_reviewed_but_not_played(page: Page):
 
 
 def test_leaving_a_finished_game_through_the_menu(page: Page, seed_prefs):
+    """Leaving a finished game through the menu.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     play(page)
@@ -682,6 +879,12 @@ def test_leaving_a_finished_game_through_the_menu(page: Page, seed_prefs):
 
 
 def test_take_back_a_move_before_the_bot_answers(page: Page, seed_prefs):
+    """Take back a move before the bot answers.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none", pace="human", premoves=False)
     page.goto("/")
     play(page)
@@ -705,6 +908,12 @@ def test_take_back_a_move_before_the_bot_answers(page: Page, seed_prefs):
 
 
 def test_take_back_is_not_offered_with_premoves(page: Page, seed_prefs):
+    """Take back is not offered with premoves.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none", premoves=True)
     page.goto("/")
     play(page)
@@ -713,6 +922,12 @@ def test_take_back_is_not_offered_with_premoves(page: Page, seed_prefs):
 
 
 def test_review_shows_the_eval_bar_and_book_icons(page: Page, seed_prefs):
+    """Review shows the evaluation bar and book icons.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     page.locator("#tab-openings").click()
@@ -728,6 +943,12 @@ def test_review_shows_the_eval_bar_and_book_icons(page: Page, seed_prefs):
 
 
 def test_no_eval_bar_during_a_game_and_one_at_the_end(page: Page, seed_prefs):
+    """No evaluation bar during a game and one at the end.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     page.goto("/")
     play(page)
@@ -748,17 +969,33 @@ def test_no_eval_bar_during_a_game_and_one_at_the_end(page: Page, seed_prefs):
 
 
 def test_eval_bar_follows_fast_moves_without_a_backlog(page: Page, seed_prefs):
+    """Evaluation bar follows fast moves without a backlog.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs([ALAPIN], color="white", timeControl="none")
     # Book positions answer at once and others take a second, so count overlap, not requests.
     state = {"open": 0, "most": 0, "sent": 0}
 
     def opened(request):
+        """Counts an evaluation request when it starts.
+
+        Args:
+            request (Request): A request the page made.
+        """
         if request.url.endswith("/api/evaluate"):
             state["open"] += 1
             state["sent"] += 1
             state["most"] = max(state["most"], state["open"])
 
     def closed(request):
+        """Counts an evaluation request when it ends.
+
+        Args:
+            request (Request): A request the page made.
+        """
         if request.url.endswith("/api/evaluate"):
             state["open"] -= 1
 
@@ -784,10 +1021,21 @@ def test_eval_bar_follows_fast_moves_without_a_backlog(page: Page, seed_prefs):
 
 
 def test_import_from_a_site(page: Page):
-    """The site's answer is faked here: browser tests never reach Lichess or Chess.com."""
+    """Import from a site.
+
+    The site's answer is faked here: browser tests never reach Lichess or Chess.com.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     asked = []
 
     def answer(route):
+        """Answers the remote import: 404 for `nobody`, else a fixed report.
+
+        Args:
+            route (Route): The intercepted request.
+        """
         asked.append(route.request.post_data_json)
         if route.request.post_data_json["username"] == "nobody":
             route.fulfill(status=404, json={"detail": "user_not_found"})
@@ -830,6 +1078,11 @@ ANNOTATED = """[White "{name}"]
 
 
 def test_review_shows_what_the_pgn_says(page: Page):
+    """Review shows what the PGN says.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     name = f"Notes{uuid.uuid4().hex}"
     page.goto("/")
     page.locator("#tab-import").click()
@@ -865,6 +1118,11 @@ def test_review_shows_what_the_pgn_says(page: Page):
 
 
 def test_delete_saved_games_with_a_second_click(page: Page):
+    """Delete saved games with a second click.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     name = f"Gone{uuid.uuid4().hex}"
     pgn = "\n".join(
         f'[White "{name}"]\n[Black "{black}"]\n\n{moves} *\n'

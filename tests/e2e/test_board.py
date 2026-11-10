@@ -1,5 +1,8 @@
-"""Board behavior from brief §4. Positions that a real game cannot reach reliably use scripted
-bot moves: the API is replaced in the browser, the frontend and its rules stay real."""
+"""Board behavior from brief §4.
+
+Positions that a real game cannot reach reliably use scripted bot moves: the API is replaced in
+the browser, the frontend and its rules stay real.
+"""
 
 import json
 import re
@@ -15,12 +18,30 @@ def fake_api(
     first_bot_move: bool = False,
     delay_ms: int = 0,
 ) -> list:
-    """Bot replies come from a script. Returns the list of request bodies the app sent."""
+    """Replaces the game API in the browser: bot replies come from a script.
+
+    Args:
+        page (Page): The page.
+        bot_moves (list[tuple[str, str]]): The bot's (UCI, SAN) replies, in order.
+        first_bot_move (bool): Whether the bot plays the first scripted move at the start.
+        delay_ms (int): The delay of each bot reply.
+
+    Returns:
+        list: The request bodies of the moves the app sent, filled as the test runs.
+    """
     script = list(bot_moves)
     sent: list[dict] = []
     ply = {"value": 0}
 
     def state(game_over: bool = False) -> dict:
+        """A game state for a fake response.
+
+        Args:
+            game_over (bool): Whether the game has ended.
+
+        Returns:
+            dict: The state.
+        """
         return {
             "game_id": "fake",
             "fen": "",
@@ -32,6 +53,11 @@ def fake_api(
         }
 
     def bot_move() -> dict | None:
+        """The next scripted bot move.
+
+        Returns:
+            dict | None: The move, or None when the script is empty.
+        """
         if not script:
             return None
         uci, san = script.pop(0)
@@ -46,13 +72,30 @@ def fake_api(
         }
 
     def fulfill(route, body: dict, status: int = 200) -> None:
+        """Answers a request with JSON.
+
+        Args:
+            route (Route): The intercepted request.
+            body (dict): The response body.
+            status (int): The HTTP status.
+        """
         route.fulfill(status=status, content_type="application/json", body=json.dumps(body))
 
     def new_game(route) -> None:
+        """Answers `POST /api/games`.
+
+        Args:
+            route (Route): The intercepted request.
+        """
         move = bot_move() if first_bot_move else None
         fulfill(route, {"state": state(), "bot_move": move}, 201)
 
     def move(route) -> None:
+        """Answers a user move with the next scripted reply, recording the request body.
+
+        Args:
+            route (Route): The intercepted request.
+        """
         body = route.request.post_data_json
         sent.append(body)
         ply["value"] += 1
@@ -69,6 +112,11 @@ def fake_api(
         )
 
     def summary(route) -> None:
+        """Answers `GET /api/games/fake` with a finished game.
+
+        Args:
+            route (Route): The intercepted request.
+        """
         fulfill(
             route,
             {
@@ -102,12 +150,23 @@ PROMOTION_LINE = [
 
 
 def reach_promotion(page: Page) -> None:
+    """Walks the a-pawn to b7, one move from promotion.
+
+    Args:
+        page (Page): The page.
+    """
     for origin, target in [("a2", "a4"), ("a4", "b5"), ("b5", "a6"), ("a6", "b7")]:
         click_move(page, origin, target)
         wait_for_your_move(page)
 
 
 def test_promotion_picker_is_an_overlay_with_four_pieces(page: Page, seed_prefs):
+    """Promotion picker is an overlay with four pieces.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     sent = fake_api(page, PROMOTION_LINE)
     page.goto("/")
@@ -137,6 +196,12 @@ def test_promotion_picker_is_an_overlay_with_four_pieces(page: Page, seed_prefs)
 
 
 def test_check_highlight_and_checkmate_ends_the_game(page: Page, seed_prefs):
+    """Check highlight and checkmate ends the game.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3"], color="black", timeControl="none")
     sent = fake_api(page, [("f2f3", "f3"), ("g2g4", "g4")], first_bot_move=True)
     page.goto("/")
@@ -152,6 +217,12 @@ def test_check_highlight_and_checkmate_ends_the_game(page: Page, seed_prefs):
 
 
 def test_check_chip_on_the_users_king(page: Page, seed_prefs):
+    """Check chip on the user's king.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     fake_api(page, [("e7e6", "e6"), ("f8b4", "Bb4+")])
     page.goto("/")
@@ -166,10 +237,26 @@ def test_check_chip_on_the_users_king(page: Page, seed_prefs):
 
 
 def has_class(page: Page, name: str, css_class: str) -> bool:
+    """Whether a square has a CSS class.
+
+    Args:
+        page (Page): The page.
+        name (str): The square.
+        css_class (str): The class.
+
+    Returns:
+        bool: True if it has it.
+    """
     return css_class in (square(page, name).get_attribute("class") or "").split()
 
 
 def test_highlights_selected_targets_captures_and_last_move(page: Page, seed_prefs):
+    """Highlights selected targets captures and last move.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     fake_api(page, [("d7d5", "d5"), ("g8f6", "Nf6")])
     page.goto("/")
@@ -200,6 +287,12 @@ def test_highlights_selected_targets_captures_and_last_move(page: Page, seed_pre
 
 
 def test_illegal_targets_do_not_move(page: Page, seed_prefs):
+    """Illegal targets do not move.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     page.goto("/")
     play(page)
@@ -210,6 +303,12 @@ def test_illegal_targets_do_not_move(page: Page, seed_prefs):
 
 
 def test_drag_dropped_outside_keeps_the_piece(page: Page, seed_prefs):
+    """Drag dropped outside keeps the piece.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     page.goto("/")
     play(page)
@@ -228,6 +327,12 @@ def test_drag_dropped_outside_keeps_the_piece(page: Page, seed_prefs):
 
 
 def test_board_flips_to_the_users_color_with_coordinates(page: Page, seed_prefs):
+    """Board flips to the user's color with coordinates.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3"], color="white", timeControl="none")
     page.goto("/")
     first = page.locator(".square").first
@@ -246,6 +351,11 @@ def test_board_flips_to_the_users_color_with_coordinates(page: Page, seed_prefs)
 
 
 def test_board_colors_a1_is_dark(page: Page):
+    """The board is green and cream, and a1 is dark.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     color = "(element) => getComputedStyle(element).backgroundColor"
     assert square(page, "a1").evaluate(color) == "rgb(118, 150, 86)"
@@ -253,6 +363,11 @@ def test_board_colors_a1_is_dark(page: Page):
 
 
 def test_pieces_are_merida(page: Page):
+    """The pieces are the Merida set.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     expect(page.locator("#piece-set")).to_have_count(0)
     expect(square(page, "e1").locator("img")).to_have_attribute("src", "pieces/merida/wK.svg")
@@ -266,6 +381,17 @@ PREMOVE_LINE = [("a7a6", "a6"), ("b7b6", "b6"), ("c7c6", "c6"), ("d7d6", "d6")]
 
 
 def start_with_premoves(page: Page, seed_prefs, line, **options) -> list:
+    """Starts a scripted game as White whose bot replies wait 700 ms, time to premove.
+
+    Args:
+        page (Page): The page.
+        seed_prefs (Callable[..., None]): Stores setup preferences.
+        line (list[tuple[str, str]]): The bot's scripted replies.
+        **options (object): Other preferences, such as `premoves`.
+
+    Returns:
+        list: The request bodies of the moves the app sent.
+    """
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none", **options)
     sent = fake_api(page, line, delay_ms=700)
     page.goto("/")
@@ -275,6 +401,16 @@ def start_with_premoves(page: Page, seed_prefs, line, **options) -> list:
 
 
 def wait_for_sent(page: Page, sent: list, count: int) -> None:
+    """Waits until the app has sent a number of moves.
+
+    Args:
+        page (Page): The page.
+        sent (list): The request bodies recorded by `fake_api`.
+        count (int): How many to wait for.
+
+    Raises:
+        AssertionError: They were not sent within 5 s.
+    """
     for _ in range(100):
         if len(sent) >= count:
             return
@@ -283,6 +419,12 @@ def wait_for_sent(page: Page, sent: list, count: int) -> None:
 
 
 def test_premove_plays_as_soon_as_the_bot_replies(page: Page, seed_prefs):
+    """Premove plays as soon as the bot replies.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     sent = start_with_premoves(page, seed_prefs, PREMOVE_LINE)
     click_move(page, "e2", "e4")
     click_move(page, "d2", "d4")
@@ -297,6 +439,12 @@ def test_premove_plays_as_soon_as_the_bot_replies(page: Page, seed_prefs):
 
 
 def test_illegal_premove_is_dropped_and_it_stays_the_users_turn(page: Page, seed_prefs):
+    """Illegal premove is dropped and it stays the user's turn.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     sent = start_with_premoves(page, seed_prefs, PREMOVE_LINE)
     click_move(page, "e2", "e4")
     click_move(page, "e4", "d5")  # a capture that needs a black piece on d5, which never comes
@@ -309,6 +457,12 @@ def test_illegal_premove_is_dropped_and_it_stays_the_users_turn(page: Page, seed
 
 
 def test_right_click_cancels_a_premove(page: Page, seed_prefs):
+    """Right click cancels a premove.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     sent = start_with_premoves(page, seed_prefs, PREMOVE_LINE)
     click_move(page, "e2", "e4")
     click_move(page, "d2", "d4")
@@ -321,6 +475,12 @@ def test_right_click_cancels_a_premove(page: Page, seed_prefs):
 
 
 def test_clicking_elsewhere_cancels_a_premove(page: Page, seed_prefs):
+    """Clicking elsewhere cancels a premove.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     sent = start_with_premoves(page, seed_prefs, PREMOVE_LINE)
     click_move(page, "e2", "e4")
     click_move(page, "d2", "d4")
@@ -332,6 +492,12 @@ def test_clicking_elsewhere_cancels_a_premove(page: Page, seed_prefs):
 
 
 def test_premove_can_be_turned_off(page: Page, seed_prefs):
+    """Premove can be turned off.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     sent = start_with_premoves(page, seed_prefs, PREMOVE_LINE, premoves=False)
     click_move(page, "e2", "e4")
     click_move(page, "d2", "d4")
@@ -342,6 +508,12 @@ def test_premove_can_be_turned_off(page: Page, seed_prefs):
 
 
 def test_premove_before_the_bots_first_move(page: Page, seed_prefs):
+    """Premove before the bot's first move.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     seed_prefs(["1. e4 c5 2. c3"], color="black", timeControl="none")
     sent = fake_api(page, [("e2e4", "e4"), ("d2d4", "d4")], first_bot_move=True, delay_ms=1500)
     page.goto("/")
@@ -353,6 +525,12 @@ def test_premove_before_the_bots_first_move(page: Page, seed_prefs):
 
 
 def test_premove_promotes_to_a_queen(page: Page, seed_prefs):
+    """Premove promotes to a queen.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     sent = start_with_premoves(page, seed_prefs, PROMOTION_LINE)
     for origin, target in [("a2", "a4"), ("a4", "b5"), ("b5", "a6")]:
         click_move(page, origin, target)
@@ -366,6 +544,11 @@ def test_premove_promotes_to_a_queen(page: Page, seed_prefs):
 
 
 def test_premove_destinations_by_shape(page: Page):
+    """Premove destinations by shape.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator(".square").first.wait_for()
     result = page.evaluate(
@@ -396,6 +579,14 @@ document.addEventListener("chess-trainer:sound", (event) => window.sounds.push(e
 
 
 def sounds(page: Page) -> list[str]:
+    """The sounds the page has played, recorded by a test hook.
+
+    Args:
+        page (Page): The page.
+
+    Returns:
+        list[str]: Each sound's type, with `-bot` for the bot's moves.
+    """
     return [
         f"{item['type']}{'-bot' if item['byBot'] else ''}"
         for item in page.evaluate("window.sounds")
@@ -403,6 +594,12 @@ def sounds(page: Page) -> list[str]:
 
 
 def test_each_event_plays_its_sound(page: Page, seed_prefs):
+    """Each event plays its sound.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     page.add_init_script(RECORD_SOUNDS)
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     fake_api(
@@ -445,6 +642,12 @@ def test_each_event_plays_its_sound(page: Page, seed_prefs):
 
 
 def test_bot_capture_and_castling_sound_like_the_bots(page: Page, seed_prefs):
+    """Bot capture and castling sound like the bot's.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     page.add_init_script(RECORD_SOUNDS)
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     fake_api(page, [("d7d5", "d5"), ("d5e4", "dxe4"), ("a7a6", "a6")])
@@ -459,6 +662,12 @@ def test_bot_capture_and_castling_sound_like_the_bots(page: Page, seed_prefs):
 
 
 def test_game_end_plays_a_sound_and_a_reload_stays_silent(page: Page, seed_prefs):
+    """Game end plays a sound and a reload stays silent.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     page.add_init_script(RECORD_SOUNDS)
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     page.goto("/")
@@ -477,6 +686,12 @@ def test_game_end_plays_a_sound_and_a_reload_stays_silent(page: Page, seed_prefs
 
 
 def test_sound_can_be_turned_off_and_the_choice_is_kept(page: Page, seed_prefs):
+    """Sound can be turned off and the choice is kept.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        seed_prefs (Callable[..., None]): Stores setup preferences before the page loads.
+    """
     page.add_init_script(RECORD_SOUNDS)
     seed_prefs(["1. e4 c5 2. c3"], color="white", timeControl="none")
     fake_api(page, [("d7d5", "d5"), ("a7a6", "a6")])
@@ -496,6 +711,11 @@ def test_sound_can_be_turned_off_and_the_choice_is_kept(page: Page, seed_prefs):
 
 
 def test_volume_is_kept(page: Page):
+    """Volume is kept.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     slider = page.locator("#sound-volume")
     expect(slider).to_have_value("0.7")
@@ -505,6 +725,11 @@ def test_volume_is_kept(page: Page):
 
 
 def test_generated_sounds_are_audible_and_different(page: Page):
+    """Generated sounds are audible and different.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     page.goto("/")
     page.locator(".square").first.wait_for()
     result = page.evaluate(

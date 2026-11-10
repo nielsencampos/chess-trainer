@@ -44,7 +44,9 @@ the smallest supported screen, and mobile is out of scope.
 - Chess notation is always English SAN, in every language.
 - No build step and no Node. No CDN: everything the app loads ships in the image.
 - Uvicorn runs with a single worker. Do not change this (DuckDB allows one writing process).
-- Python: ruff for lint and format, type hints on public functions. JS: ES modules, JSDoc types.
+- Python: ruff for lint and format, type hints on public functions, and a Google-style docstring
+  (description, Args, Returns, Raises) on every module, class and function, checked by ruff.
+- JS: ES modules, and JSDoc (description, `@param`, `@returns`) on every function, method and class.
 - Small commits. One phase at a time; at the end of each, report what changed, how to test it
   and what was left for later.
 

@@ -1,5 +1,8 @@
-"""web/js/rules.js against python-chess, the rules the server uses. A disagreement would show as a
-move the board offers and the server refuses, or the other way around."""
+"""web/js/rules.js against python-chess, the rules the server uses.
+
+A disagreement would show as a move the board offers and the server refuses, or the other way
+around.
+"""
 
 import random
 
@@ -10,7 +13,16 @@ RULES_URL = "/js/rules.js"
 
 
 def run_rules(page: Page, script: str, argument: object) -> object:
-    """Runs a function body in the browser, with `Rules` and `arg` in scope."""
+    """Runs a function body in the browser, with `Rules` and `arg` in scope.
+
+    Args:
+        page (Page): The page.
+        script (str): The body of an async function that returns a value.
+        argument (object): The value of `arg`.
+
+    Returns:
+        object: What the script returns.
+    """
     page.goto("/")
     return page.evaluate(
         f"""async (arg) => {{
@@ -22,6 +34,15 @@ def run_rules(page: Page, script: str, argument: object) -> object:
 
 
 def snapshot(board: chess.Board) -> dict:
+    """What the browser's rules should say about a position, by python-chess.
+
+    Args:
+        board (chess.Board): The position.
+
+    Returns:
+        dict: The FEN without counters, the legal moves, the checked king's square and whether the
+            game is over.
+    """
     moves: dict[str, dict] = {}
     for move in board.legal_moves:
         target = chess.square_name(move.to_square)
@@ -39,7 +60,15 @@ def snapshot(board: chess.Board) -> dict:
 
 
 def random_game(rng: random.Random, plies: int = 120) -> tuple[list[dict], list[dict]]:
-    """Moves of a random game, favoring castling, and the expected state before each one."""
+    """Moves of a random game, favoring castling, and the expected state before each one.
+
+    Args:
+        rng (random.Random): The random source.
+        plies (int): The most plies to play.
+
+    Returns:
+        tuple[list[dict], list[dict]]: The moves, and the snapshot before each move.
+    """
     board = chess.Board()
     moves, states = [], []
     while len(moves) < plies:
@@ -99,6 +128,11 @@ REPLAY = """
 
 
 def test_rules_agree_with_python_chess(page: Page):
+    """Rules agree with python-chess.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     rng = random.Random(960)
     castles = captures = promotions = 0
     for game in range(12):
@@ -126,6 +160,11 @@ def test_rules_agree_with_python_chess(page: Page):
 
 
 def test_castling_is_the_kings_two_square_move(page: Page):
+    """Castling is the king's two-square move.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     result = run_rules(
         page,
         """
@@ -143,6 +182,11 @@ def test_castling_is_the_kings_two_square_move(page: Page):
 
 
 def test_en_passant_is_a_capture(page: Page):
+    """En passant is a capture.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     result = run_rules(
         page,
         """
@@ -158,6 +202,11 @@ def test_en_passant_is_a_capture(page: Page):
 
 
 def test_illegal_moves_are_refused_and_leave_the_position_alone(page: Page):
+    """Illegal moves are refused and leave the position alone.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     result = run_rules(
         page,
         """
@@ -171,6 +220,11 @@ def test_illegal_moves_are_refused_and_leave_the_position_alone(page: Page):
 
 
 def test_threefold_repetition_ends_the_game_like_on_the_server(page: Page):
+    """Threefold repetition ends the game like on the server.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     shuffle = ["Nf3", "Nf6", "Ng1", "Ng8"]
     board = chess.Board()
     for san in shuffle * 2:
@@ -190,6 +244,17 @@ def test_threefold_repetition_ends_the_game_like_on_the_server(page: Page):
 
 
 def castling_in_chess960(page: Page, fen: str, king: str, target: str) -> dict:
+    """Asks the browser's rules for a king's targets and plays a castling move.
+
+    Args:
+        page (Page): The page.
+        fen (str): A Chess960 position.
+        king (str): The king's square.
+        target (str): The square clicked.
+
+    Returns:
+        dict: The king's `targets`, whether it was `played`, and the `fen` after.
+    """
     return run_rules(
         page,
         """
@@ -202,6 +267,11 @@ def castling_in_chess960(page: Page, fen: str, king: str, target: str) -> dict:
 
 
 def test_chess960_castles_on_a_square_between_or_on_the_rook(page: Page):
+    """Chess960 castles on a square between or on the rook.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     fen = "4k3/8/8/8/8/8/8/1K5R w K - 0 1"
     between = castling_in_chess960(page, fen, "b1", "e1")
     # c1 is also a normal king move, so it stays one, and a1 and the second rank are normal too.
@@ -215,6 +285,11 @@ def test_chess960_castles_on_a_square_between_or_on_the_rook(page: Page):
 
 
 def test_chess960_castling_with_nothing_between_uses_the_rook(page: Page):
+    """Chess960 castling with nothing between uses the rook.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     # The king is already on its castled square, so only the rook can say "castle".
     result = castling_in_chess960(page, "4k3/8/8/8/8/8/8/6KR w K - 0 1", "g1", "h1")
     assert result["played"] == {"san": "O-O", "uci": "g1h1", "capture": False, "castle": True}
@@ -222,6 +297,11 @@ def test_chess960_castling_with_nothing_between_uses_the_rook(page: Page):
 
 
 def test_chess960_rules_agree_with_python_chess_on_a_random_game(page: Page):
+    """Chess960 rules agree with python-chess on a random game.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
     rng = random.Random(96)
     for _ in range(6):
         position = rng.randrange(960)

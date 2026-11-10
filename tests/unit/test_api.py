@@ -1,3 +1,5 @@
+"""The HTTP API with the fake engine: setup, moves, clocks, theory, take-back and exports."""
+
 import pytest
 
 SHORT_PGN = "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3"
@@ -6,11 +8,32 @@ ALAPIN_PGN = "1. e4 c5 2. c3"
 
 @pytest.fixture
 def ids(client):
+    """Line id by PGN, from the API.
+
+    Args:
+        client (TestClient): The API client.
+
+    Returns:
+        dict[str, str]: PGN -> line id.
+    """
     repertoires = client.get("/api/repertoires").json()["repertoires"]
     return {v["pgn"]: v["variant_id"] for r in repertoires for v in r["variants"]}
 
 
 def new_game(client, ids, color="black", pgn=SHORT_PGN, pace="instant", time_control="none"):
+    """Starts a game through the API.
+
+    Args:
+        client (TestClient): The API client.
+        ids (dict[str, str]): Line id by PGN.
+        color (str): The user's color.
+        pgn (str): The line to select.
+        pace (str): The bot's pace.
+        time_control (str): The time control's key.
+
+    Returns:
+        Response: The API's response.
+    """
     return client.post(
         "/api/games",
         json={
@@ -24,18 +47,33 @@ def new_game(client, ids, color="black", pgn=SHORT_PGN, pace="instant", time_con
 
 
 def test_health_reports_engine(client):
+    """The health endpoint reports the engine.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     body = client.get("/api/health").json()
     assert body["status"] == "ok"
     assert body["engine"] == {"name": "Fake Engine 1", "build_tag": "fake"}
 
 
 def test_serves_frontend_index(client):
+    """The frontend's index page is served at `/`.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     response = client.get("/")
     assert response.status_code == 200
     assert "text/html" in response.headers["content-type"]
 
 
 def test_repertoires_are_all_catalog_families(client):
+    """Repertoires are all catalog families.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     repertoires = client.get("/api/repertoires").json()["repertoires"]
     assert len(repertoires) == 122
     assert sum(len(r["variants"]) for r in repertoires) == 3865
@@ -53,6 +91,11 @@ def test_repertoires_are_all_catalog_families(client):
 
 
 def test_levels(client):
+    """The levels endpoint lists the four levels, weakest first.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     assert client.get("/api/engine/levels").json()["levels"] == [
         "warmup",
         "club",
@@ -62,6 +105,11 @@ def test_levels(client):
 
 
 def test_time_controls_are_grouped(client):
+    """Time controls are grouped.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     body = client.get("/api/time-controls").json()
     groups = {group["key"]: group for group in body["groups"]}
     assert list(groups) == ["bullet", "blitz", "rapid", "classical"]
@@ -93,6 +141,12 @@ def test_time_controls_are_grouped(client):
 
 
 def test_every_time_control_starts_a_game(client, ids):
+    """Every time control starts a game.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     body = client.get("/api/time-controls").json()
     keys = [item["key"] for group in body["groups"] for item in group["items"]] + ["none"]
     for key in keys:
@@ -100,6 +154,13 @@ def test_every_time_control_starts_a_game(client, ids):
 
 
 def test_engine_search_is_limited_by_the_bots_clock(client, ids, engine):
+    """Engine search is limited by the bot's clock.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+        engine (FakeEngine): The fake engine the client uses.
+    """
     game_id = new_game(client, ids, color="white", pgn=ALAPIN_PGN, time_control="5")
     game_id = game_id.json()["state"]["game_id"]
     client.post(f"/api/games/{game_id}/moves", json={"uci": "e2e4", "bot_clock_ms": 30_000})
@@ -109,6 +170,13 @@ def test_engine_search_is_limited_by_the_bots_clock(client, ids, engine):
 
 
 def test_no_clock_does_not_limit_the_engine(client, ids, engine):
+    """No clock does not limit the engine.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+        engine (FakeEngine): The fake engine the client uses.
+    """
     game_id = new_game(client, ids, color="white", pgn=ALAPIN_PGN).json()["state"]["game_id"]
     client.post(f"/api/games/{game_id}/moves", json={"uci": "e2e4"})
     client.post(f"/api/games/{game_id}/moves", json={"uci": "c2c3"})
@@ -117,6 +185,12 @@ def test_no_clock_does_not_limit_the_engine(client, ids, engine):
 
 
 def test_classical_pgn_records_the_bonus(client, ids):
+    """Classical PGN records the bonus.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     game_id = new_game(client, ids, time_control="90+30i30").json()["state"]["game_id"]
     summary = client.post(f"/api/games/{game_id}/resign").json()
     assert '[TimeControl "40/5400+30:1800+30"]' in summary["pgn"]
@@ -133,12 +207,27 @@ def test_classical_pgn_records_the_bonus(client, ids):
     ],
 )
 def test_pgn_time_control_tags(client, ids, key, expected):
+    """PGN time control tags.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+        key (str): A time control key.
+        expected (str): Its PGN `TimeControl` tag.
+    """
     game_id = new_game(client, ids, time_control=key).json()["state"]["game_id"]
     summary = client.post(f"/api/games/{game_id}/resign").json()
     assert f'[TimeControl "{expected}"]' in summary["pgn"]
 
 
 def test_opening_name_comes_with_each_move_and_carries_forward(client, ids, engine):
+    """Opening name comes with each move and carries forward.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+        engine (FakeEngine): The fake engine the client uses.
+    """
     game = new_game(client, ids, color="white", pgn=ALAPIN_PGN).json()
     assert game["state"]["opening"] is None
     game_id = game["state"]["game_id"]
@@ -159,6 +248,12 @@ def test_opening_name_comes_with_each_move_and_carries_forward(client, ids, engi
 
 
 def test_new_game_as_black_gets_bot_first_move(client, ids):
+    """New game as black gets bot first move.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     response = new_game(client, ids)
     assert response.status_code == 201
     body = response.json()
@@ -168,12 +263,24 @@ def test_new_game_as_black_gets_bot_first_move(client, ids):
 
 
 def test_new_game_as_white_waits_for_the_user(client, ids):
+    """New game as white waits for the user.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     body = new_game(client, ids, color="white", pgn=ALAPIN_PGN).json()
     assert body["bot_move"] is None
     assert body["state"]["ply"] == 0
 
 
 def test_same_line_plays_with_either_color(client, ids):
+    """Same line plays with either color.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     assert new_game(client, ids, color="white", pgn=SHORT_PGN).status_code == 201
     assert new_game(client, ids, color="black", pgn=SHORT_PGN).status_code == 201
 
@@ -191,6 +298,13 @@ def test_same_line_plays_with_either_color(client, ids):
     ],
 )
 def test_invalid_setup_is_rejected(client, ids, overrides):
+    """Invalid setup is rejected.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+        overrides (dict): Fields that make the setup invalid.
+    """
     payload = {
         "color": "black",
         "variant_ids": [ids[SHORT_PGN]],
@@ -202,6 +316,12 @@ def test_invalid_setup_is_rejected(client, ids, overrides):
 
 
 def test_every_line_selected_starts_a_game(client, ids):
+    """Every line selected starts a game.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     response = client.post(
         "/api/games",
         json={
@@ -220,6 +340,13 @@ def test_every_line_selected_starts_a_game(client, ids):
 
 
 def test_full_flow_book_then_deviation_then_engine(client, ids, engine):
+    """Full flow book then deviation then engine.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+        engine (FakeEngine): The fake engine the client uses.
+    """
     game_id = new_game(client, ids).json()["state"]["game_id"]
 
     body = client.post(f"/api/games/{game_id}/moves", json={"uci": "c7c6"}).json()
@@ -250,15 +377,33 @@ def test_full_flow_book_then_deviation_then_engine(client, ids, engine):
 
 
 def test_human_pace_returns_a_delay(client, ids):
+    """Human pace returns a delay.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     bot_move = new_game(client, ids, pace="human", time_control="90+30i30").json()["bot_move"]
     assert 9_000 <= bot_move["delay_ms"] <= 27_000
 
 
 def test_instant_pace_has_no_delay(client, ids):
+    """Instant pace has no delay.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     assert new_game(client, ids).json()["bot_move"]["delay_ms"] == 0
 
 
 def test_illegal_move_unknown_game_and_finished_game(client, ids):
+    """Illegal move unknown game and finished game.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     game_id = new_game(client, ids).json()["state"]["game_id"]
     assert client.post(f"/api/games/{game_id}/moves", json={"uci": "e7e4"}).status_code == 422
     assert client.post("/api/games/nope/moves", json={"uci": "e7e5"}).status_code == 404
@@ -269,6 +414,12 @@ def test_illegal_move_unknown_game_and_finished_game(client, ids):
 
 
 def test_timeout_endpoint(client, ids):
+    """The timeout endpoint ends the game as a loss on time.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     game_id = new_game(client, ids, time_control="3i2").json()["state"]["game_id"]
     body = client.post(
         f"/api/games/{game_id}/timeout", json={"side": "user", "shown_plies": 1}
@@ -278,6 +429,12 @@ def test_timeout_endpoint(client, ids):
 
 
 def test_get_game_returns_moves_with_sources(client, ids):
+    """Get game returns moves with sources.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     game_id = new_game(client, ids).json()["state"]["game_id"]
     body = client.get(f"/api/games/{game_id}").json()
     assert body["result"] is None
@@ -287,6 +444,12 @@ def test_get_game_returns_moves_with_sources(client, ids):
 
 
 def test_export_lines_in_book_order(client, ids):
+    """Export lines in book order.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     wanted = [ids[ALAPIN_PGN], ids[SHORT_PGN]]
     response = client.post("/api/lines/export", json={"variant_ids": wanted})
     assert response.status_code == 200
@@ -299,17 +462,34 @@ def test_export_lines_in_book_order(client, ids):
 
 
 def test_export_lines_refuses_unknown_and_empty(client):
+    """Export lines refuses unknown and empty.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     assert client.post("/api/lines/export", json={"variant_ids": []}).status_code == 422
     assert client.post("/api/lines/export", json={"variant_ids": ["nope"]}).status_code == 422
 
 
 def test_bullet_game_records_its_time_control(client, ids):
+    """Bullet game records its time control.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     state = new_game(client, ids, color="white", time_control="30s").json()["state"]
     summary = client.post(f"/api/games/{state['game_id']}/resign").json()
     assert '[TimeControl "30+0"]' in summary["pgn"]
 
 
 def test_take_back_restores_position_theory_and_clocks(client, ids):
+    """Take back restores position theory and clocks.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     state = new_game(client, ids, color="white", pgn=ALAPIN_PGN, time_control="5").json()["state"]
     game_id = state["game_id"]
     body = {"uci": "d2d4", "user_clock_ms": 290_000, "bot_clock_ms": 300_000}
@@ -331,6 +511,12 @@ def test_take_back_restores_position_theory_and_clocks(client, ids):
 
 
 def test_take_back_refuses_a_shown_reply_and_a_finished_game(client, ids):
+    """Take back refuses a shown reply and a finished game.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     game_id = new_game(client, ids, color="white", pgn=ALAPIN_PGN).json()["state"]["game_id"]
     client.post(f"/api/games/{game_id}/moves", json={"uci": "e2e4"})
     url = f"/api/games/{game_id}/takeback"
@@ -341,6 +527,12 @@ def test_take_back_refuses_a_shown_reply_and_a_finished_game(client, ids):
 
 
 def test_evaluate_reports_whites_side_and_finished_positions(client, engine):
+    """Evaluate reports White's side and finished positions.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        engine (FakeEngine): The fake engine the client uses.
+    """
     start = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
     body = client.post("/api/evaluate", json={"fen": start}).json()
     assert body["cp"] == 0 and body["mate"] is None and body["best"]
@@ -358,12 +550,23 @@ def test_evaluate_reports_whites_side_and_finished_positions(client, engine):
 
 
 def test_evaluate_refuses_an_invalid_position(client):
+    """Evaluate refuses an invalid position.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     assert client.post("/api/evaluate", json={"fen": "nonsense"}).status_code == 422
     no_kings = "8/8/8/8/8/8/8/8 w - - 0 1"
     assert client.post("/api/evaluate", json={"fen": no_kings}).status_code == 422
 
 
 def test_reviews_mark_book_moves_and_the_deviation(client, ids):
+    """Reviews mark book moves and the deviation.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
     game_id = new_game(client, ids, color="white", pgn=ALAPIN_PGN).json()["state"]["game_id"]
     client.post(f"/api/games/{game_id}/moves", json={"uci": "e2e4"})
     client.post(f"/api/games/{game_id}/moves", json={"uci": "d2d4"})  # 2. c3 is the book

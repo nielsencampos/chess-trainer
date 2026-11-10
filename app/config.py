@@ -9,6 +9,21 @@ ROOT = Path(__file__).parent.parent
 
 @dataclass(frozen=True)
 class Settings:
+    """Where the app finds its files and how it starts Stockfish.
+
+    Attributes:
+        openings_dir (Path): The book source, `openings/`.
+        catalog_dir (Path): The pinned Lichess catalog files.
+        book_evals_file (Path): The book evaluations, `evals/book.json`.
+        database_path (Path): The DuckDB file.
+        web_dir (Path): The frontend served at `/`.
+        levels_file (Path): The bot strength levels (TOML).
+        stockfish_path (str): The Stockfish binary, a path or a name on `PATH`.
+        stockfish_version_file (Path): The `VERSION` file written by the image build.
+        stockfish_threads (int): Stockfish's `Threads` option.
+        stockfish_hash_mb (int): Stockfish's `Hash` option, in MB.
+    """
+
     openings_dir: Path = ROOT / "openings"
     catalog_dir: Path = ROOT / "catalog" / "data"
     book_evals_file: Path = ROOT / "evals" / "book.json"
@@ -22,6 +37,11 @@ class Settings:
 
 
 def settings_from_env() -> Settings:
+    """Reads the settings from `CHESS_TRAINER_*` and `STOCKFISH_*` variables.
+
+    Returns:
+        Settings: The settings, with the defaults for every variable that is not set.
+    """
     defaults = Settings()
     return Settings(
         openings_dir=Path(os.environ.get("CHESS_TRAINER_OPENINGS_DIR", defaults.openings_dir)),

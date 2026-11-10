@@ -1,3 +1,5 @@
+"""The game session: the draw of lines, theory, deviations, endings and take-backs."""
+
 import io
 import random
 from collections import Counter
@@ -18,10 +20,24 @@ from app.game.session import (
 
 
 def walk_game(game):
-    """Flattens a game with side variations, to test positions that have several book moves."""
+    """Flattens a game with side variations, to test positions that have several book moves.
+
+    Args:
+        game (chess.pgn.Game): The game.
+
+    Returns:
+        list[BookMoveRow]: One row per move of every variation.
+    """
     rows = []
 
     def visit(node, board, ply):
+        """Adds the rows of every move under a node.
+
+        Args:
+            node (chess.pgn.GameNode): The node.
+            board (chess.Board): The position at the node.
+            ply (int): The node's ply.
+        """
         for child in node.variations:
             rows.append(BookMoveRow(board.epd(), ply + 1, child.move.uci(), board.san(child.move)))
             next_board = board.copy(stack=False)
@@ -33,6 +49,15 @@ def walk_game(game):
 
 
 def variant(variant_id, pgn):
+    """A test line from PGN, side variations included.
+
+    Args:
+        variant_id (str): The line id.
+        pgn (str): The movetext.
+
+    Returns:
+        Variant: The line.
+    """
     game = chess.pgn.read_game(io.StringIO(pgn + " *"))
     final_epd = game.end().board().epd()
     moves, positions = index_moves(walk_game(game), final_epd)
@@ -51,13 +76,30 @@ def variant(variant_id, pgn):
 
 
 def session(*variants, color=chess.WHITE, seed=1):
+    """A game without a clock over some lines.
+
+    Args:
+        *variants (Variant): The selected lines.
+        color (chess.Color): The user's color.
+        seed (int): The random seed.
+
+    Returns:
+        GameSession: The game.
+    """
     return GameSession(
         "g", Selection(variants), color, "none", None, "club", "instant", random.Random(seed)
     )
 
 
 def bot_plays(game):
-    """Plays the bot's book move and returns its SAN, or None if the engine must take over."""
+    """Plays the bot's book move and returns its SAN, or None if the engine must take over.
+
+    Args:
+        game (GameSession): The game.
+
+    Returns:
+        str | None: The SAN.
+    """
     book_move = game.next_book_move()
     if book_move is None:
         return None
@@ -71,6 +113,7 @@ VIENNA = "1. e4 e5 2. Nc3"
 
 
 def test_bot_follows_the_drawn_variation():
+    """Bot follows the drawn variation."""
     game = session(variant("a", ROSSOLIMO), variant("b", VIENNA))
     game.play_user_move("e2e4")
     expected = "c5" if game.variant.variant_id == "a" else "e5"
@@ -78,12 +121,14 @@ def test_bot_follows_the_drawn_variation():
 
 
 def test_each_selected_variation_has_the_same_chance():
+    """Each selected variation has the same chance."""
     selected = [variant("a", VIENNA), variant("b", ROSSOLIMO), variant("c", ALAPIN)]
     draws = Counter(session(*selected, seed=seed).variant.variant_id for seed in range(3000))
     assert all(900 < count < 1100 for count in draws.values()), draws
 
 
 def test_rav_branches_are_random():
+    """The bot picks at random among a line's side variations (RAV)."""
     line = variant("a", "1. e4 c5 (1... e5) (1... c6)")
     played = set()
     for seed in range(50):
@@ -94,6 +139,7 @@ def test_rav_branches_are_random():
 
 
 def test_playing_another_selected_variation_is_not_a_deviation_and_redraws():
+    """Playing another selected variation is not a deviation and redraws."""
     rossolimo, alapin = variant("a", ROSSOLIMO), variant("b", ALAPIN)
     for seed in range(20):
         game = session(rossolimo, alapin, seed=seed)
@@ -107,6 +153,7 @@ def test_playing_another_selected_variation_is_not_a_deviation_and_redraws():
 
 
 def test_move_from_unselected_variation_is_a_deviation_with_expected_moves():
+    """Move from unselected variation is a deviation with expected moves."""
     game = session(variant("a", ROSSOLIMO))
     game.play_user_move("e2e4")
     bot_plays(game)
@@ -121,6 +168,7 @@ def test_move_from_unselected_variation_is_a_deviation_with_expected_moves():
 
 
 def test_expected_lists_all_selected_moves():
+    """Expected lists all selected moves."""
     game = session(variant("a", ROSSOLIMO), variant("b", ALAPIN))
     game.play_user_move("e2e4")
     bot_plays(game)
@@ -129,6 +177,7 @@ def test_expected_lists_all_selected_moves():
 
 
 def test_end_of_theory_is_not_a_deviation():
+    """End of theory is not a deviation."""
     game = session(variant("a", "1. e4 c5"))
     game.play_user_move("e2e4")
     bot_plays(game)
@@ -140,6 +189,7 @@ def test_end_of_theory_is_not_a_deviation():
 
 
 def test_after_deviation_bot_uses_engine_and_game_never_returns_to_theory():
+    """After deviation bot uses engine and game never returns to theory."""
     game = session(variant("a", "1. e4 c5 2. Nf3 d6"))
     game.play_user_move("d2d4")
     assert game.next_book_move() is None
@@ -148,6 +198,7 @@ def test_after_deviation_bot_uses_engine_and_game_never_returns_to_theory():
 
 
 def test_engine_takes_over_when_drawn_variation_ends_even_if_another_continues():
+    """Engine takes over when drawn variation ends even if another continues."""
     short, long = variant("a", "1. e4 c5"), variant("b", "1. e4 c5 2. Nf3 Nc6 3. Bb5")
     game = session(short, long)
     game.variant = long
@@ -166,6 +217,7 @@ def test_engine_takes_over_when_drawn_variation_ends_even_if_another_continues()
 
 
 def test_engine_move_outside_theory_leaves_theory_without_deviation():
+    """Engine move outside theory leaves theory without deviation."""
     game = session(variant("a", "1. e4"))
     game.play_user_move("e2e4")
     assert game.next_book_move() is None
@@ -176,6 +228,7 @@ def test_engine_move_outside_theory_leaves_theory_without_deviation():
 
 
 def test_engine_move_inside_selected_theory_stays_in_theory():
+    """Engine move inside selected theory stays in theory."""
     short, long = variant("a", "1. e4"), variant("b", "1. e4 c5 2. Nf3")
     game = session(short, long)
     game.variant = short
@@ -187,12 +240,14 @@ def test_engine_move_inside_selected_theory_stays_in_theory():
 
 
 def test_user_move_outside_book_at_move_one_leaves_theory():
+    """User move outside book at move one leaves theory."""
     game = session(variant("a", "1. d4 d5 2. c4 e6 3. Nc3"))
     game.play_user_move("c2c4")
     assert not game.in_theory
 
 
 def test_transposed_position_counts_when_reached_by_book_moves():
+    """Transposed position counts when reached by book moves."""
     line = variant("a", "1. e4 c6 2. d4 d5 3. Nd2 (3. Nc3 dxe4 4. Nxe4) 3... dxe4 4. Nxe4 Bf5")
     game = session(line, color=chess.BLACK)
     for bot, user in [("e2e4", "c7c6"), ("d2d4", "d7d5"), ("b1c3", "d5e4")]:
@@ -205,6 +260,7 @@ def test_transposed_position_counts_when_reached_by_book_moves():
 
 
 def test_illegal_move_and_wrong_turn_are_rejected():
+    """Illegal move and wrong turn are rejected."""
     game = session(variant("a", VIENNA))
     with pytest.raises(IllegalMoveError):
         game.play_user_move("e2e5")
@@ -216,6 +272,7 @@ def test_illegal_move_and_wrong_turn_are_rejected():
 
 
 def test_promotion_uses_uci_suffix():
+    """Promotion uses UCI suffix."""
     game = session(variant("a", VIENNA))
     game.board = chess.Board("8/P6k/8/8/8/8/8/K7 w - - 0 1")
     record, _ = game.play_user_move("a7a8n")
@@ -224,6 +281,7 @@ def test_promotion_uses_uci_suffix():
 
 
 def test_checkmate_and_result_for_user():
+    """Checkmate and result for user."""
     game = session(variant("a", VIENNA), color=chess.BLACK)
     for bot, user in [("f2f3", "e7e5"), ("g2g4", "d8h4")]:
         game.play_bot_move(chess.Move.from_uci(bot), "engine")
@@ -236,6 +294,7 @@ def test_checkmate_and_result_for_user():
 
 
 def test_threefold_repetition_is_an_automatic_draw():
+    """Threefold repetition is an automatic draw."""
     game = session(variant("a", VIENNA))
     for _ in range(2):
         for user, bot in [("g1f3", "g8f6"), ("f3g1", "f6g8")]:
@@ -246,6 +305,7 @@ def test_threefold_repetition_is_an_automatic_draw():
 
 
 def test_resign_is_a_loss():
+    """Resign is a loss."""
     game = session(variant("a", VIENNA))
     game.resign()
     assert game.outcome.result == "loss"
@@ -254,6 +314,7 @@ def test_resign_is_a_loss():
 
 
 def test_flag_loss_win_and_insufficient_material():
+    """Flag loss win and insufficient material."""
     game = session(variant("a", VIENNA))
     game.flag("user", 0)
     assert (game.outcome.result, game.outcome.termination) == ("loss", "timeout")
@@ -272,6 +333,7 @@ def test_flag_loss_win_and_insufficient_material():
 
 
 def test_flag_drops_moves_the_browser_never_showed():
+    """Flag drops moves the browser never showed."""
     game = session(variant("a", VIENNA))
     game.play_user_move("e2e4")
     game.play_bot_move(chess.Move.from_uci("e7e5"), "book")
@@ -281,6 +343,7 @@ def test_flag_drops_moves_the_browser_never_showed():
 
 
 def test_pgn():
+    """A resigned game's PGN has the players, the result and the moves."""
     game = session(variant("a", VIENNA))
     game.play_user_move("e2e4")
     game.play_bot_move(chess.Move.from_uci("e7e5"), "book")
@@ -292,6 +355,7 @@ def test_pgn():
 
 
 def test_take_back_undoes_the_users_move_and_the_unseen_reply():
+    """Take back undoes the user's move and the unseen reply."""
     game = session(variant("a", VIENNA))
     game.play_user_move("e2e4")
     game.play_bot_move(chess.Move.from_uci("e7e5"), "book")
@@ -308,6 +372,7 @@ def test_take_back_undoes_the_users_move_and_the_unseen_reply():
 
 
 def test_take_back_also_undoes_a_mate_the_user_has_not_seen():
+    """Take back also undoes a mate the user has not seen."""
     game = session(variant("a", VIENNA))
     game.board = chess.Board()
     for uci, by in [("f2f3", "user"), ("e7e5", "bot"), ("g2g4", "user"), ("d8h4", "bot")]:
@@ -322,6 +387,7 @@ def test_take_back_also_undoes_a_mate_the_user_has_not_seen():
 
 
 def test_take_back_refuses_what_is_already_decided():
+    """Take back refuses what is already decided."""
     game = session(variant("a", VIENNA))
     for uci, by in [
         ("e2e4", "user"),

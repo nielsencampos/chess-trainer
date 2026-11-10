@@ -14,6 +14,18 @@ GROUPS = ("kings-pawn", "queens-pawn", "flank", "others")
 
 @dataclass(frozen=True)
 class OpeningLine:
+    """A line as written in an opening file.
+
+    Attributes:
+        line_id (str): The line id, which never changes.
+        names (dict[str, str]): The line's name by locale.
+        eco (str | None): The ECO code, if given.
+        opening (str | None): The catalog name of the final position, if given.
+        source (str): Where the line came from.
+        moves (tuple[str, ...]): The moves in SAN.
+        subgroup (dict[str, str] | None): The subgroup's name by locale, or None for a loose line.
+    """
+
     line_id: str
     names: dict[str, str]
     eco: str | None
@@ -25,6 +37,18 @@ class OpeningLine:
 
 @dataclass(frozen=True)
 class OpeningFile:
+    """One opening file: a family and its lines.
+
+    Attributes:
+        family_id (str): The family id, equal to the file name.
+        names (dict[str, str]): The family's name by locale.
+        lines (tuple[OpeningLine, ...]): Its lines, subgroups first, then the loose ones.
+        file_name (str): The path relative to `openings/`.
+        file_hash (str): SHA-256 of the file, to reload only what changed.
+        group (str): The group folder, such as `kings-pawn`.
+        order (int | None): The family's place in its group, or None for "Others".
+    """
+
     family_id: str
     names: dict[str, str]
     lines: tuple[OpeningLine, ...]
@@ -36,18 +60,51 @@ class OpeningFile:
 
 @dataclass(frozen=True)
 class ReplayedLine:
+    """A line played on a board.
+
+    Attributes:
+        rows (list[BookMoveRow]): One row per move.
+        final_epd (str): The position after the last move.
+        pgn (str): The moves as PGN movetext, with normalized SAN.
+    """
+
     rows: list[BookMoveRow]
     final_epd: str
     pgn: str
 
 
 def _names(value: object, where: str) -> dict[str, str]:
+    """Checks a `names` object.
+
+    Args:
+        value (object): The raw `names` value.
+        where (str): Where it is, for the error message.
+
+    Returns:
+        dict[str, str]: The names by locale.
+
+    Raises:
+        BookError: It is not an object with a non-empty `en`.
+    """
     if not isinstance(value, dict) or not value.get("en"):
         raise BookError(f"{where}: names must include a non-empty 'en'")
     return value
 
 
 def _parse_line(raw: object, where: str, subgroup: dict[str, str] | None = None) -> OpeningLine:
+    """Checks and reads one line object.
+
+    Args:
+        raw (object): The raw line.
+        where (str): Where it is, for error messages.
+        subgroup (dict[str, str] | None): The names of its subgroup, if it is in one.
+
+    Returns:
+        OpeningLine: The line.
+
+    Raises:
+        BookError: The id, moves or source is missing or malformed.
+    """
     if not isinstance(raw, dict):
         raise BookError(f"{where}: a line must be an object")
     line_id = raw.get("id")
@@ -72,7 +129,18 @@ def _parse_line(raw: object, where: str, subgroup: dict[str, str] | None = None)
 
 
 def _parse_lines(raw: dict, where: str) -> tuple[OpeningLine, ...]:
-    """Lines in their variants first, then the loose ones ("Others")."""
+    """Reads a family's lines: those in its variants first, then the loose ones ("Others").
+
+    Args:
+        raw (dict): The family object.
+        where (str): The file name, for error messages.
+
+    Returns:
+        tuple[OpeningLine, ...]: The lines.
+
+    Raises:
+        BookError: The family has no lines, or a variant or line is malformed.
+    """
     variants = raw.get("variants", [])
     loose = raw.get("lines", [])
     if not isinstance(variants, list) or not isinstance(loose, list) or not (variants or loose):
@@ -88,7 +156,19 @@ def _parse_lines(raw: dict, where: str) -> tuple[OpeningLine, ...]:
 
 
 def read_opening_files(directory: Path) -> list[OpeningFile]:
-    """Checks structure and uniqueness across all files. Legality is checked by `replay`."""
+    """Reads every opening file, checking structure and uniqueness across all of them.
+
+    Legality of the moves is checked by `replay`.
+
+    Args:
+        directory (Path): The `openings/` folder.
+
+    Returns:
+        list[OpeningFile]: The files, sorted by path.
+
+    Raises:
+        BookError: There are no files, a file is malformed, or two lines share an id or moves.
+    """
     paths = sorted(directory.rglob("*.json"))
     if not paths:
         raise BookError(f"no opening files in {directory}")
@@ -143,7 +223,17 @@ def read_opening_files(directory: Path) -> list[OpeningFile]:
 
 
 def replay(line: OpeningLine) -> ReplayedLine:
-    """Plays the moves from the start. An illegal move raises BookError."""
+    """Plays a line's moves from the starting position.
+
+    Args:
+        line (OpeningLine): The line.
+
+    Returns:
+        ReplayedLine: Its rows, final position and PGN.
+
+    Raises:
+        BookError: A move is illegal.
+    """
     board = chess.Board()
     rows: list[BookMoveRow] = []
     parts: list[str] = []

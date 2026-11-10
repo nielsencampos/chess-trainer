@@ -15,6 +15,17 @@ class DatabaseError(RuntimeError):
 
 
 def open_database(path: Path) -> duckdb.DuckDBPyConnection:
+    """Opens the DuckDB file, creating its folder if needed.
+
+    Args:
+        path (Path): The database file.
+
+    Returns:
+        duckdb.DuckDBPyConnection: The one connection of this process.
+
+    Raises:
+        DatabaseError: The file cannot be opened, such as when another process holds it.
+    """
     try:
         path.parent.mkdir(parents=True, exist_ok=True)
         return duckdb.connect(str(path))
@@ -28,7 +39,18 @@ def open_database(path: Path) -> duckdb.DuckDBPyConnection:
 def apply_migrations(
     connection: duckdb.DuckDBPyConnection, directory: Path = MIGRATIONS_DIR
 ) -> list[int]:
-    """Applies pending migrations, each in its own transaction. Returns the versions applied."""
+    """Applies pending migrations, each in its own transaction.
+
+    Args:
+        connection (duckdb.DuckDBPyConnection): The database.
+        directory (Path): The folder of numbered `NNN_name.sql` files.
+
+    Returns:
+        list[int]: The versions applied by this call, in order.
+
+    Raises:
+        DatabaseError: A file name is not numbered, or a migration fails (it is rolled back).
+    """
     connection.execute(
         "CREATE TABLE IF NOT EXISTS schema_migrations "
         "(version INTEGER PRIMARY KEY, name VARCHAR NOT NULL, applied_at TIMESTAMPTZ NOT NULL)"

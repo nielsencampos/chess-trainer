@@ -1,3 +1,5 @@
+"""Chess960 through the API: the dice, typed FENs, castling, saving and review."""
+
 import io
 
 import chess
@@ -8,6 +10,16 @@ SWAP_POSITION = 288
 
 
 def new_game(client, color="white", position=SWAP_POSITION):
+    """Starts a Chess960 game through the API.
+
+    Args:
+        client (TestClient): The API client.
+        color (str): The user's color.
+        position (int): The starting position.
+
+    Returns:
+        Response: The API's response.
+    """
     return client.post(
         "/api/games",
         json={
@@ -21,18 +33,33 @@ def new_game(client, color="white", position=SWAP_POSITION):
 
 
 def test_the_dice_returns_a_starting_position(client):
+    """The dice returns a starting position.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     body = client.post("/api/chess960", json={}).json()
     board = chess.Board(body["fen"], chess960=True)
     assert board.chess960_pos() == body["position"]
 
 
 def test_a_starting_fen_is_accepted_in_both_castling_notations(client):
+    """A starting FEN is accepted in both castling notations.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     for fen in (SWAP_FEN, SWAP_FEN.replace("KQkq", "GEge")):
         body = client.post("/api/chess960", json={"fen": fen}).json()
         assert body == {"position": SWAP_POSITION, "fen": SWAP_FEN}
 
 
 def test_any_other_fen_is_refused(client):
+    """Any other FEN is refused.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     for fen in (
         "nonsense",
         "",
@@ -44,10 +71,20 @@ def test_any_other_fen_is_refused(client):
 
 
 def test_a_position_outside_the_960_is_refused(client):
+    """A position outside the 960 is refused.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     assert new_game(client, position=960).status_code == 422
 
 
 def test_a_chess960_game_has_no_opening_lines(client):
+    """A Chess960 game has no opening lines.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     response = client.post(
         "/api/games",
         json={
@@ -63,6 +100,11 @@ def test_a_chess960_game_has_no_opening_lines(client):
 
 
 def test_the_game_starts_out_of_theory_from_the_position(client):
+    """The game starts out of theory from the position.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     state = new_game(client).json()["state"]
     assert state["fen"] == SWAP_FEN
     assert state["in_theory"] is False
@@ -70,11 +112,21 @@ def test_the_game_starts_out_of_theory_from_the_position(client):
 
 
 def test_the_engine_opens_when_the_user_is_black(client):
+    """The engine opens when the user is black.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     body = new_game(client, color="black").json()
     assert body["bot_move"]["source"] == "engine"
 
 
 def test_castling_is_king_takes_rook_and_is_saved_in_the_pgn(client):
+    """Castling is king takes rook and is saved in the PGN.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     game_id = new_game(client).json()["state"]["game_id"]
     body = client.post(f"/api/games/{game_id}/moves", json={"uci": "f1g1"}).json()
     assert body["user_move"]["san"] == "O-O"
@@ -94,6 +146,11 @@ def test_castling_is_king_takes_rook_and_is_saved_in_the_pgn(client):
 
 
 def test_a_finished_game_is_listed_as_chess960_and_can_be_reviewed(client):
+    """A finished game is listed as Chess960 and can be reviewed.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     game_id = new_game(client).json()["state"]["game_id"]
     client.post(f"/api/games/{game_id}/moves", json={"uci": "f1g1"})
     client.post(f"/api/games/{game_id}/resign")
@@ -106,6 +163,11 @@ def test_a_finished_game_is_listed_as_chess960_and_can_be_reviewed(client):
 
 
 def test_the_active_game_reports_its_position(client):
+    """The active game reports its position.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
     game_id = new_game(client).json()["state"]["game_id"]
     client.post(f"/api/games/{game_id}/moves", json={"uci": "f1g1"})
     active = client.get("/api/games/active").json()["game"]

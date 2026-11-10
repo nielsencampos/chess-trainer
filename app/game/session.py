@@ -24,18 +24,26 @@ CHESS960_PREFIX = "chess960:"
 
 
 class IllegalMoveError(ValueError):
+    """The move is malformed or not legal in the position."""
+
     pass
 
 
 class GameFinishedError(ValueError):
+    """The game is over, so it takes no more moves, resignations or take-backs."""
+
     pass
 
 
 class NotYourTurnError(ValueError):
+    """The user tried to move while it is the bot's turn."""
+
     pass
 
 
 class NothingToTakeBackError(ValueError):
+    """There is no user move to take back, or the bot's reply was already shown."""
+
     pass
 
 
@@ -44,7 +52,14 @@ DECIDED_BY_PLAYER = {"resignation", "timeout", "timeout_insufficient_material", 
 
 
 def chess960_line(position: int) -> Variant:
-    """A line with no theory: a Chess960 game is played against the engine from the first move."""
+    """A line with no theory: a Chess960 game is played against the engine from the first move.
+
+    Args:
+        position (int): The Chess960 starting position, 0 to 959.
+
+    Returns:
+        Variant: A line with no moves, whose id is `chess960:<position>`.
+    """
     return Variant(
         variant_id=f"{CHESS960_PREFIX}{position}",
         repertoire_id="chess960",
@@ -60,7 +75,14 @@ def chess960_line(position: int) -> Variant:
 
 
 def chess960_position_of(fen: str) -> int | None:
-    """The number of a Chess960 starting position, or None if the FEN is anything else."""
+    """The number of a Chess960 starting position, or None if the FEN is anything else.
+
+    Args:
+        fen (str): The FEN typed by the user.
+
+    Returns:
+        int | None: The position number, 0 to 959, or None.
+    """
     try:
         return chess.Board(fen, chess960=True).chess960_pos()
     except ValueError:
@@ -68,25 +90,73 @@ def chess960_position_of(fen: str) -> int | None:
 
 
 class Selection:
-    """The selected variations: their union is the theory for this game."""
+    """The selected variations: their union is the theory for this game.
+
+    Attributes:
+        variants (list[Variant]): The selected lines.
+    """
 
     def __init__(self, variants: Sequence[Variant]) -> None:
+        """Creates the selection.
+
+        Args:
+            variants (Sequence[Variant]): The selected lines.
+        """
         self.variants = list(variants)
 
     def moves_at(self, epd: str) -> dict[str, str]:
+        """The theory moves from a position, over every selected line.
+
+        Args:
+            epd (str): The position.
+
+        Returns:
+            dict[str, str]: UCI -> SAN.
+        """
         return {
             move.uci: move.san for variant in self.variants for move in variant.moves.get(epd, ())
         }
 
     def containing(self, epd: str) -> list[Variant]:
+        """The selected lines that pass through a position.
+
+        Args:
+            epd (str): The position.
+
+        Returns:
+            list[Variant]: The lines, in selection order.
+        """
         return [variant for variant in self.variants if epd in variant.positions]
 
     def has_position(self, epd: str) -> bool:
+        """Whether any selected line passes through a position.
+
+        Args:
+            epd (str): The position.
+
+        Returns:
+            bool: True if one does.
+        """
         return any(epd in variant.positions for variant in self.variants)
 
 
 @dataclass(frozen=True, slots=True)
 class MoveRecord:
+    """One move of the game, as saved.
+
+    Attributes:
+        ply (int): The move's ply, from 1.
+        san (str): The move in SAN.
+        uci (str): The move in UCI.
+        fen_before (str): The position before the move.
+        by (Side): Who played it, `user` or `bot`.
+        source (MoveSource): `book` or `engine` for a bot move, None for a user move.
+        in_theory (bool): Whether the game was still in theory after it.
+        clock_ms_after (int | None): The mover's clock after it, or None without a clock.
+        think_ms (int | None): How long the move took, if known.
+        opening (tuple[str, str] | None): (ECO, name) of the last named position reached.
+    """
+
     ply: int
     san: str
     uci: str
@@ -101,6 +171,14 @@ class MoveRecord:
 
 @dataclass(frozen=True, slots=True)
 class Deviation:
+    """A user move that left theory where the selected lines had a move.
+
+    Attributes:
+        ply (int): The move's ply.
+        played_san (str): The move played.
+        expected_san (tuple[str, ...]): The theory moves.
+    """
+
     ply: int
     played_san: str
     expected_san: tuple[str, ...]
@@ -108,18 +186,40 @@ class Deviation:
 
 @dataclass(frozen=True, slots=True)
 class GameResult:
+    """How a game ended, from the user's side.
+
+    Attributes:
+        result (Literal["win", "draw", "loss"]): The result for the user.
+        termination (str): Why it ended, such as `checkmate` or `resignation`.
+    """
+
     result: Literal["win", "draw", "loss"]
     termination: str
 
 
 def _pgn_termination(termination: str) -> str:
+    """The PGN `Termination` tag for an ending.
+
+    Args:
+        termination (str): The ending, such as `timeout`.
+
+    Returns:
+        str: `Time forfeit`, `Abandoned` or `Normal`.
+    """
     if termination.startswith("timeout"):
         return "Time forfeit"
     return "Abandoned" if termination == "abandoned" else "Normal"
 
 
 def _pgn_time_control(control: TimeControl) -> str:
-    """Standard PGN for periods and increment. Delay has no standard form: d or us, in seconds."""
+    """Standard PGN for periods and increment. Delay has no standard form: d or us, in seconds.
+
+    Args:
+        control (TimeControl): The time control.
+
+    Returns:
+        str: The `TimeControl` tag, such as `40/7200+30:1800+30`.
+    """
     suffix = f"+{control.increment_ms // 1000}"
     if control.delay_kind is not None:
         marker = "us" if control.delay_kind == "us" else "d"
@@ -136,6 +236,33 @@ def _pgn_time_control(control: TimeControl) -> str:
 
 
 class GameSession:
+    """One game in play: board, clocks, the line the bot follows, theory and deviations.
+
+    Attributes:
+        game_id (str): The game's id.
+        selection (Selection): The selected lines.
+        user_color (chess.Color): The user's color.
+        time_control_key (str): The time control's key, such as `25i10`.
+        time_control (TimeControl | None): The time control, or None without a clock.
+        level (str): The bot's level key.
+        pace (str): `instant` or `human`.
+        rng (random.Random): The random source for the draw of lines and moves.
+        chess960_position (int | None): The Chess960 starting position, or None.
+        opening_names (Mapping[str, tuple[str, str]]): EPD -> (ECO, name); empty for Chess960.
+        engine_name (str): The engine's name, for the PGN.
+        ui (dict[str, bool]): UI flags saved with the game.
+        user_clock_ms (int | None): The user's clock.
+        bot_clock_ms (int | None): The bot's clock.
+        board (chess.Board): The current position.
+        started_at (datetime): When the game started, UTC.
+        moves (list[MoveRecord]): The moves played.
+        deviations (list[Deviation]): The user's deviations.
+        in_theory (bool): Whether the game is still in theory.
+        theory_until_ply (int): The last ply in theory.
+        outcome (GameResult | None): How the game ended, or None while it runs.
+        variant (Variant): The line the bot follows, drawn from the selection.
+    """
+
     def __init__(
         self,
         game_id: str,
@@ -150,6 +277,24 @@ class GameSession:
         engine_name: str = "Bot",
         chess960_position: int | None = None,
     ) -> None:
+        """Starts a game and draws the line the bot follows.
+
+        Args:
+            game_id (str): The game's id.
+            selection (Selection): The selected lines; at least one.
+            user_color (chess.Color): The user's color.
+            time_control_key (str): The time control's key.
+            time_control (TimeControl | None): The time control, or None without a clock.
+            level (str): The bot's level key.
+            pace (str): `instant` or `human`.
+            rng (random.Random): The random source.
+            opening_names (Mapping[str, tuple[str, str]] | None): EPD -> (ECO, name).
+            engine_name (str): The engine's name, for the PGN.
+            chess960_position (int | None): The Chess960 starting position, or None for chess.
+
+        Raises:
+            ValueError: The selection is empty.
+        """
         if not selection.variants:
             raise ValueError("a game needs at least one selected variation")
         self.game_id = game_id
@@ -182,24 +327,47 @@ class GameSession:
 
     @property
     def ply(self) -> int:
+        """The number of plies played.
+
+        Returns:
+            int: The ply count.
+        """
         return len(self.moves)
 
     @property
     def opening(self) -> tuple[str, str] | None:
-        """(ECO, name) of the last named position reached in this game."""
+        """(ECO, name) of the last named position reached in this game.
+
+        Returns:
+            tuple[str, str] | None: The opening, or None before any named position.
+        """
         return self.moves[-1].opening if self.moves else None
 
     @property
     def is_over(self) -> bool:
+        """Whether the game has ended.
+
+        Returns:
+            bool: True once there is an outcome.
+        """
         return self.outcome is not None
 
     @property
     def is_user_turn(self) -> bool:
+        """Whether the user is to move.
+
+        Returns:
+            bool: True on the user's turn.
+        """
         return self.board.turn == self.user_color
 
     @property
     def left_theory_at_move(self) -> int | None:
-        """Full-move number of the first ply out of theory, while the game is out of it."""
+        """Full-move number of the first ply out of theory, while the game is out of it.
+
+        Returns:
+            int | None: The move number, or None in theory and in Chess960.
+        """
         if self.in_theory or self.chess960_position is not None:
             return None
         return (self.theory_until_ply + 2) // 2
@@ -210,6 +378,21 @@ class GameSession:
         user_clock_ms: int | None = None,
         think_ms: int | None = None,
     ) -> tuple[MoveRecord, Deviation | None]:
+        """Plays the user's move, recording a deviation if it leaves theory where theory had a move.
+
+        Args:
+            uci (str): The move in UCI.
+            user_clock_ms (int | None): The user's clock after the move.
+            think_ms (int | None): How long the move took.
+
+        Returns:
+            tuple[MoveRecord, Deviation | None]: The move and its deviation, if it was one.
+
+        Raises:
+            GameFinishedError: The game is over.
+            NotYourTurnError: It is the bot's turn.
+            IllegalMoveError: The move is malformed or illegal.
+        """
         if self.is_over:
             raise GameFinishedError(self.game_id)
         if not self.is_user_turn:
@@ -235,7 +418,11 @@ class GameSession:
         return record, deviation
 
     def next_book_move(self) -> BookMove | None:
-        """Pick the bot's book move, or None when the engine has to take over."""
+        """Picks the bot's book move, redrawing the line if the user went into another one.
+
+        Returns:
+            BookMove | None: The move, or None when the engine has to take over.
+        """
         if not self.in_theory:
             return None
         epd = self.board.epd()
@@ -251,6 +438,20 @@ class GameSession:
         bot_clock_ms: int | None = None,
         think_ms: int | None = None,
     ) -> MoveRecord:
+        """Plays the bot's move.
+
+        Args:
+            move (chess.Move): The move.
+            source (Literal["book", "engine"]): Where it came from.
+            bot_clock_ms (int | None): The bot's clock after the move.
+            think_ms (int | None): How long the move took, delay included.
+
+        Returns:
+            MoveRecord: The move.
+
+        Raises:
+            GameFinishedError: The game is over.
+        """
         if self.is_over:
             raise GameFinishedError(self.game_id)
         if self.in_theory and not self._stays_in_theory(move):
@@ -258,7 +459,11 @@ class GameSession:
         return self._push(move, "bot", source, bot_clock_ms, think_ms)
 
     def play_given_move(self, uci: str) -> None:
-        """A move that was already played in the game this one continues from."""
+        """Plays a move that was already played in the game this one continues from.
+
+        Args:
+            uci (str): The move in UCI.
+        """
         move = chess.Move.from_uci(uci)
         by: Side = "user" if self.is_user_turn else "bot"
         self._push(move, by, "book", None, None)
@@ -268,6 +473,13 @@ class GameSession:
 
         `shown_plies` counts the user's move. The bot's reply, already played here, goes too, and
         so does an end of the game that it caused. Theory and deviations go back to before.
+
+        Args:
+            shown_plies (int): The plies the browser shows, the user's move included.
+
+        Raises:
+            GameFinishedError: A player ended the game, or the browser already shows its end.
+            NothingToTakeBackError: The last shown move is not the user's, or more was shown.
         """
         if self.outcome is not None and (
             self.outcome.termination in DECIDED_BY_PLAYER or self.ply <= shown_plies
@@ -293,12 +505,27 @@ class GameSession:
         )
 
     def resign(self) -> None:
+        """Ends the game as a loss by resignation.
+
+        Raises:
+            GameFinishedError: The game is already over.
+        """
         if self.is_over:
             raise GameFinishedError(self.game_id)
         self.outcome = GameResult("loss", "resignation")
 
     def flag(self, side: Side, shown_plies: int) -> None:
-        """A clock ran out. Drops moves the browser never showed: its clock is the authority."""
+        """A clock ran out. Drops moves the browser never showed: its clock is the authority.
+
+        The game is a draw if the other side cannot mate.
+
+        Args:
+            side (Side): Whose clock ran out.
+            shown_plies (int): The plies the browser shows.
+
+        Raises:
+            GameFinishedError: The game is already over.
+        """
         if self.is_over:
             raise GameFinishedError(self.game_id)
         while self.ply > shown_plies:
@@ -311,6 +538,14 @@ class GameSession:
             self.outcome = GameResult("loss" if side == "user" else "win", "timeout")
 
     def _stays_in_theory(self, move: chess.Move) -> bool:
+        """Whether a move is a theory move, or reaches a position of a selected line.
+
+        Args:
+            move (chess.Move): The move, not yet played.
+
+        Returns:
+            bool: True if the game stays in theory.
+        """
         if move.uci() in self.selection.moves_at(self.board.epd()):
             return True
         after = self.board.copy(stack=False)
@@ -325,6 +560,18 @@ class GameSession:
         clock_ms_after: int | None,
         think_ms: int | None,
     ) -> MoveRecord:
+        """Plays a move on the board, records it and checks for the end of the game.
+
+        Args:
+            move (chess.Move): The move.
+            by (Side): Who played it.
+            source (MoveSource): `book`, `engine` or None.
+            clock_ms_after (int | None): The mover's clock after it.
+            think_ms (int | None): How long it took.
+
+        Returns:
+            MoveRecord: The record.
+        """
         ply = self.ply + 1
         san = self.board.san(move)
         fen_before = self.board.fen()
@@ -348,6 +595,7 @@ class GameSession:
         return record
 
     def _check_game_over(self) -> None:
+        """Sets the outcome if the position ends the game: repetition, fifty moves, mate..."""
         # Not outcome(claim_draw=True): that also ends the game one move before the repetition.
         if self.board.is_repetition(3):
             self.outcome = GameResult("draw", "threefold_repetition")
@@ -365,11 +613,20 @@ class GameSession:
         self.outcome = GameResult(result, outcome.termination.name.lower())
 
     def players(self) -> tuple[str, str]:
-        """(White, Black), as written in the PGN."""
+        """(White, Black), as written in the PGN.
+
+        Returns:
+            tuple[str, str]: "You" and the bot's name with its level.
+        """
         bot = f"{self.engine_name} ({self.level})"
         return ("You", bot) if self.user_color == chess.WHITE else (bot, "You")
 
     def result_tag(self) -> str:
+        """The PGN `Result` tag.
+
+        Returns:
+            str: `1-0`, `0-1`, `1/2-1/2`, or `*` while the game runs.
+        """
         if self.outcome is None:
             return "*"
         if self.outcome.result == "draw":
@@ -378,6 +635,11 @@ class GameSession:
         return "1-0" if user_won == (self.user_color == chess.WHITE) else "0-1"
 
     def pgn(self) -> str:
+        """The game as PGN: tags, `[%clk]` on each move and deviations as comments.
+
+        Returns:
+            str: The PGN.
+        """
         game = chess.pgn.Game()
         if self.chess960_position is not None:
             game.setup(chess.Board.from_chess960_pos(self.chess960_position))  # [FEN], [Variant]
