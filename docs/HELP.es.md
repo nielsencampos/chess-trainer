@@ -66,6 +66,8 @@ Antes de cada jugada, mira primero lo que amenaza el rival: jaques, capturas y a
 
 Lo ideal para aprender es jugar con tablero y reloj físicos. No pasa nada si el reloj se desincroniza del de la app.
 
+¿Por qué entrenar con tablero, reloj y planilla? Porque te obliga a memorizar, a no jugar sin pensar y a calcular, y entrena la visualización, quizá hasta que empieces a jugar mentalmente, sin necesidad de ver un tablero físico o virtual.
+
 Antes de la partida, abre Planilla en el menú e imprímela, o guárdala en PDF, y rellena el encabezado. Elige un ritmo largo, como rápidas o clásicas, y desmarca Mostrar jugadas.
 
 En tu jugada:

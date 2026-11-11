@@ -66,6 +66,8 @@ Antes de cada lance, olhe primeiro o que o adversário ameaça: xeques, capturas
 
 O ideal para aprender é jogar com tabuleiro e relógio físicos. Não tem problema se o relógio ficar dessincronizado do app.
 
+Por que treinar com tabuleiro, relógio e planilha? Porque isso obriga você a memorizar, a não jogar sem pensar e a calcular, e treina a visualização, talvez até você começar a jogar mentalmente, sem precisar ver um tabuleiro físico ou virtual.
+
 Antes da partida, abra Planilha no menu e imprima, ou salve em PDF, e preencha o cabeçalho. Escolha um ritmo longo, como rápido ou clássico, e desmarque Mostrar lances.
 
 No seu lance:

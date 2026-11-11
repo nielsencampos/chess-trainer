@@ -66,6 +66,8 @@ Before each move, first look at what your opponent threatens: checks, captures a
 
 The best way to learn is with a physical board and clock. It does not matter if the clock drifts from the app's.
 
+Why train with a board, a clock and a scoresheet? Because they make you memorize, keep you from playing without thinking, and build your calculation and visualization, perhaps until you start playing in your head, with no physical or virtual board in front of you.
+
 Before the game, open Scoresheet in the menu and print it, or save it as a PDF, and fill in the header. Choose a long time control, such as rapid or classical, and untick Show moves.
 
 On your move:

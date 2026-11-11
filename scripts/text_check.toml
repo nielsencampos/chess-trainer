@@ -19,6 +19,8 @@ all = [
     "Levy", "Mamedyarov", "Mekhitarian", "Mequinho", "Mikhail", "Nakamura", "Niemann",
     "Polgár", "Radić", "Rozman", "Shakhriyar", "Supi", "Vasyl", "Waitzkin", "Garry", "Bobby",
     "Random", "How",
+    # The Thanks section of the About page.
+    "Niklas", "Fiekas", "Hernandez", "Marroquin", "Badrap",
     # The language links at the top of each document.
     "English", "Português", "português", "Español", "español", "Brasil",
 ]
@@ -33,6 +35,7 @@ pt-BR = [
     "Failed", "launcher",  # quoting an English error message
     "backend",  # the author's own words on the About page
     "issue",  # GitHub's word, linked
+    "python", "chess", "result",  # the names python-chess and @badrap/result
 ]
 es = [
     "streamer", "streamers", "premovimiento", "premovimientos", "Premovimiento",
@@ -41,6 +44,7 @@ es = [
     "launcher",  # quoting an English error message
     "backend",  # the author's own words on the About page
     "issue",  # GitHub's word, linked
+    "result",  # the name @badrap/result
 ]
 
 [disabled]
@@ -95,6 +99,7 @@ es = [
     { text = "partidas", rule = "AGREEMENT_POSTPONED_ADJ" },
     { text = "una primero", rule = "AGREEMENT_DET_ADJ" },  # "importa una primero": una partida
     { text = "Maestro", rule = "ES_QUESTION_MARK" },
+    { text = "Hernandez", rule = "ES_SIMPLE_REPLACE_SIMPLE_HERNANDEZ" },  # his name, as he signs it
     { rule = "PHRASE_REPETITION", text = "[chess.com](https://www.chess.com/) · [youtube.com/@chess](https://www.youtube.com/@chess) ·" },  # "Oh no, my queen!" is quoted in English
 ]
 

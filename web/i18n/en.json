@@ -275,6 +275,7 @@
   "help.train.threats.text": "Before each move, first look at what your opponent threatens: checks, captures and attacks. Then look for your own plan.",
   "help.train.board.title": "Train as in a tournament",
   "help.train.board.intro": "The best way to learn is with a physical board and clock. It does not matter if the clock drifts from the app's.",
+  "help.train.board.why": "Why train with a board, a clock and a scoresheet? Because they make you memorize, keep you from playing without thinking, and build your calculation and visualization, perhaps until you start playing in your head, with no physical or virtual board in front of you.",
   "help.train.board.before": "Before the game, open Scoresheet in the menu and print it, or save it as a PDF, and fill in the header. Choose a long time control, such as rapid or classical, and untick Show moves.",
   "help.train.board.yourMove": "On your move:",
   "help.train.board.move": "Move the piece on the board.",
@@ -343,5 +344,12 @@
   "about.legend.polgar": "Hungarian grandmaster, considered the strongest woman player in history.",
   "about.legend.rosen": "American International Master and streamer, known for his traps, the Stafford Gambit and his calm \"Oh no, my queen!\".",
   "about.legend.supi": "Brazilian grandmaster since 2018 and three-time Brazilian champion.",
-  "about.legend.tal": "World champion in 1960, the Magician from Riga, famous for his sacrifices and attacks."
+  "about.legend.tal": "World champion in 1960, the Magician from Riga, famous for his sacrifices and attacks.",
+  "about.thanks.title": "Thanks",
+  "about.thanks.intro": "To the people whose open work this app is built on.",
+  "about.thanks.niklas": "Author of python-chess, which handles the rules, the PGN and Stockfish on the server, and of chessops, which checks every move on the board, and the main contributor to Lichess's openings catalog, where every line of the book comes from. A core Lichess developer, whose work runs through this app from end to end.",
+  "about.thanks.stockfish": "The open-source engine that plays as the bot and evaluates the positions.",
+  "about.thanks.lichess": "Its open code brought the Merida pieces here, and its openings catalog names every position.",
+  "about.thanks.merida": "Drew the Merida pieces, the only set on this board.",
+  "about.thanks.badrap": "Authors of @badrap/result, a small library that chessops uses."
 }
