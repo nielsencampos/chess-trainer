@@ -50,3 +50,13 @@ Em ordem cronológica, as pessoas, os livros e as plataformas que me trouxeram a
 - **Shakhriyar Mamedyarov**: Grande mestre azerbaijano e o jogador de maior rating do seu país, cujo melhor rating, 2820, está entre os mais altos da história. [pt.wikipedia.org/wiki/Shakhriyar_Mamedyarov](https://pt.wikipedia.org/wiki/Shakhriyar_Mamedyarov)
 - **Vasyl Ivanchuk**: Grande mestre ucraniano desde 1988, três vezes número dois do mundo, conhecido pela criatividade e por jogar quase qualquer abertura. [pt.wikipedia.org/wiki/Vasyl_Ivanchuk](https://pt.wikipedia.org/wiki/Vasyl_Ivanchuk)
 - **Viswanathan Anand**: Indiano, primeiro grande mestre do seu país e campeão mundial de 2007 a 2013. [pt.wikipedia.org/wiki/Viswanathan_Anand](https://pt.wikipedia.org/wiki/Viswanathan_Anand)
+
+## Agradecimentos
+
+A quem fez o trabalho aberto sobre o qual este app foi construído.
+
+- **Niklas Fiekas**: Autor do python-chess, que cuida das regras, do PGN e do Stockfish no servidor, e do chessops, que confere cada lance no tabuleiro, e o maior colaborador do catálogo de aberturas do Lichess, de onde vem cada linha do livro. Um dos principais desenvolvedores do Lichess, cujo trabalho está neste app de ponta a ponta. [github.com/niklasf](https://github.com/niklasf)
+- **Stockfish**: O motor de código aberto que joga como o bot e avalia as posições. [github.com/official-stockfish/Stockfish](https://github.com/official-stockfish/Stockfish)
+- **Lichess**: Seu código aberto trouxe as peças Merida para cá, e seu catálogo de aberturas dá nome a cada posição. [github.com/lichess-org](https://github.com/lichess-org)
+- **Armando Hernandez Marroquin**: Desenhou as peças Merida, o único conjunto deste tabuleiro.
+- **Badrap**: Autores do @badrap/result, uma pequena biblioteca que o chessops usa. [github.com/badrap/result](https://github.com/badrap/result)

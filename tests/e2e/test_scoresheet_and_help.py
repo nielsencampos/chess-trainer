@@ -74,6 +74,8 @@ def test_about_is_a_page_after_help_in_the_chosen_language(page: Page):
     page.locator("#locale-picker").select_option("pt-BR")
     expect(page.locator("#about-page .about-path > li")).to_have_count(9)
     expect(page.locator("#about-page .about-legends > li")).to_have_count(18)
+    expect(page.locator("#about-page .about-thanks > li")).to_have_count(5)
+    expect(page.locator("#about-page a[href='https://github.com/niklasf']")).to_be_visible()
     links = page.locator("#about-page a")
     for index in range(links.count()):
         expect(links.nth(index)).to_have_attribute("target", "_blank")

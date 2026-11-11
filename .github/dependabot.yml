@@ -1,0 +1,22 @@
+# Weekly update PRs for the Python dependencies (uv), the workflow actions and the base image.
+# Stockfish is not here: the image always resolves its latest release at build time.
+version: 2
+updates:
+  - package-ecosystem: uv
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      python:
+        patterns: ["*"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly

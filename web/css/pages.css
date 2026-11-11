@@ -93,7 +93,8 @@
 }
 
 .about-path,
-.about-legends {
+.about-legends,
+.about-thanks {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -102,7 +103,8 @@
 }
 
 .about-path h4,
-.about-legends h4 {
+.about-legends h4,
+.about-thanks h4 {
   margin: 0 0 2px;
   font-size: 0.95rem;
 }

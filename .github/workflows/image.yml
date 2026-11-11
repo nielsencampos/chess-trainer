@@ -1,0 +1,52 @@
+name: Image
+
+# On a version tag (v1.2.3) builds the image for amd64 and arm64 and publishes it to the GitHub
+# Container Registry as ghcr.io/<owner>/chess-trainer:<version> and :latest. A prerelease tag
+# (v1.2.3-rc1) gets only its own version, never :latest.
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      packages: write
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Resolve the Stockfish release
+        run: |
+          python3 docker/fetch_stockfish.py resolve latest /tmp/stockfish-tag
+          echo "STOCKFISH_VERSION=$(cat /tmp/stockfish-tag)" >> "$GITHUB_ENV"
+      - uses: docker/setup-qemu-action@v4.4.0
+      - uses: docker/setup-buildx-action@v4.4.1
+      - uses: docker/login-action@v4.8.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+      - id: meta
+        uses: docker/metadata-action@v6.2.0
+        with:
+          images: ghcr.io/${{ github.repository }}
+          tags: |
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+          flavor: latest=auto
+      - uses: docker/build-push-action@v7.4.0
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          pull: true
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          build-args: STOCKFISH_VERSION=${{ env.STOCKFISH_VERSION }}
+          secrets: github_token=${{ github.token }}

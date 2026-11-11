@@ -276,6 +276,7 @@
   "help.train.threats.text": "Antes de cada jugada, mira primero lo que amenaza el rival: jaques, capturas y ataques. Después busca tu propio plan.",
   "help.train.board.title": "Entrena como en un torneo",
   "help.train.board.intro": "Lo ideal para aprender es jugar con tablero y reloj físicos. No pasa nada si el reloj se desincroniza del de la app.",
+  "help.train.board.why": "¿Por qué entrenar con tablero, reloj y planilla? Porque te obliga a memorizar, a no jugar sin pensar y a calcular, y entrena la visualización, quizá hasta que empieces a jugar mentalmente, sin necesidad de ver un tablero físico o virtual.",
   "help.train.board.before": "Antes de la partida, abre Planilla en el menú e imprímela, o guárdala en PDF, y rellena el encabezado. Elige un ritmo largo, como rápidas o clásicas, y desmarca Mostrar jugadas.",
   "help.train.board.yourMove": "En tu jugada:",
   "help.train.board.move": "Mueve la pieza en el tablero.",
@@ -344,5 +345,12 @@
   "about.legend.polgar": "Gran maestra húngara, considerada la jugadora más fuerte de la historia.",
   "about.legend.rosen": "Maestro internacional y streamer estadounidense, conocido por sus trampas, el Gambito Stafford y su tranquilo \"Oh no, my queen!\".",
   "about.legend.supi": "Gran maestro brasileño desde 2018 y tres veces campeón de Brasil.",
-  "about.legend.tal": "Campeón del mundo en 1960, el Mago de Riga, famoso por sus sacrificios y ataques."
+  "about.legend.tal": "Campeón del mundo en 1960, el Mago de Riga, famoso por sus sacrificios y ataques.",
+  "about.thanks.title": "Agradecimientos",
+  "about.thanks.intro": "A quienes hicieron el trabajo abierto sobre el que se construyó esta app.",
+  "about.thanks.niklas": "Autor de python-chess, que se encarga de las reglas, del PGN y de Stockfish en el servidor, y de chessops, que comprueba cada jugada en el tablero, y el mayor colaborador del catálogo de aperturas de Lichess, de donde sale cada línea del libro. Uno de los principales desarrolladores de Lichess, cuyo trabajo recorre esta app de punta a punta.",
+  "about.thanks.stockfish": "El motor de código abierto que juega como el bot y evalúa las posiciones.",
+  "about.thanks.lichess": "Su código abierto trajo aquí las piezas Merida, y su catálogo de aperturas da nombre a cada posición.",
+  "about.thanks.merida": "Dibujó las piezas Merida, el único juego de este tablero.",
+  "about.thanks.badrap": "Autores de @badrap/result, una pequeña biblioteca que usa chessops."
 }
