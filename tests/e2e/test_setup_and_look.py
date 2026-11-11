@@ -817,7 +817,7 @@ def test_footer_shows_the_engine_version(page: Page):
         page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
     """
     page.goto("/")
-    expect(page.locator("#footer-versions")).to_contain_text("Chess Trainer 0.1.0")
+    expect(page.locator("#footer-versions")).to_contain_text("Chess Trainer 0.5.0")
     expect(page.locator("#footer-versions")).to_contain_text("Stockfish")
 
 
