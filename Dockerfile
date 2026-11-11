@@ -30,7 +30,7 @@ RUN uv sync --frozen --no-dev --no-install-project --no-cache
 FROM ${PYTHON_IMAGE}
 ARG STOCKFISH_VERSION
 LABEL org.opencontainers.image.title="chess-trainer" \
-      org.opencontainers.image.description="Local opening trainer with Stockfish" \
+      org.opencontainers.image.description="Local chess trainer: play Stockfish, drill your openings and review your games" \
       org.opencontainers.image.source="https://github.com/nielsencampos/chess-trainer" \
       org.opencontainers.image.licenses="GPL-3.0-only" \
       io.github.nielsencampos.chess-trainer.stockfish-requested="${STOCKFISH_VERSION}"

@@ -10,6 +10,17 @@ Lichess with an evaluation bar. Chess960 included. English, Portuguese and Spani
 Docker image. It runs on your own machine (amd64 or arm64), with no accounts and no internet needed
 to play.
 
+[![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
+[![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
+[![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-green.svg)](https://fastapi.tiangolo.com/)
+[![DuckDB](https://img.shields.io/badge/DuckDB-1.1+-yellow.svg)](https://duckdb.org/)
+[![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
+[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
+
 *[Versão em português abaixo.](#português-brasil) · [Versión en español abajo.](#español)*
 
 ## Run
@@ -23,6 +34,14 @@ docker compose up --build
 ```
 
 Open <http://127.0.0.1:8000>.
+
+Or, without cloning, run the published image (amd64 or arm64); your games stay in `./data`:
+
+```bash
+mkdir -p data
+docker run -d --init --name chess-trainer -p 127.0.0.1:8000:8000 \
+  -v "$PWD/data:/app/data" ghcr.io/nielsencampos/chess-trainer:latest
+```
 
 The app is published on loopback only, because it has no login. To reach it from another device,
 set `CHESS_TRAINER_BIND=0.0.0.0`, on a network you trust, and list the names you will open it by in
@@ -142,6 +161,14 @@ docker compose up --build
 
 Depois abra <http://127.0.0.1:8000>.
 
+Ou, sem clonar, rode a imagem publicada (amd64 ou arm64); suas partidas ficam em `./data`:
+
+```bash
+mkdir -p data
+docker run -d --init --name chess-trainer -p 127.0.0.1:8000:8000 \
+  -v "$PWD/data:/app/data" ghcr.io/nielsencampos/chess-trainer:latest
+```
+
 **App desktop (prévia):** o mesmo app numa janela própria, sem Docker, para Windows, macOS e
 Linux. Para baixar e instalar, veja [HOW_TO_INSTALL.pt-BR.md](HOW_TO_INSTALL.pt-BR.md); como ele é
 feito está em [desktop/](desktop/README.md). O Docker continua sendo o jeito de referência.
@@ -184,6 +211,14 @@ docker compose up --build
 ```
 
 Después abre <http://127.0.0.1:8000>.
+
+O, sin clonar, ejecuta la imagen publicada (amd64 o arm64); tus partidas quedan en `./data`:
+
+```bash
+mkdir -p data
+docker run -d --init --name chess-trainer -p 127.0.0.1:8000:8000 \
+  -v "$PWD/data:/app/data" ghcr.io/nielsencampos/chess-trainer:latest
+```
 
 **App de escritorio (vista previa):** la misma app en su propia ventana, sin Docker, para Windows,
 macOS y Linux. Para descargarla e instalarla, mira [HOW_TO_INSTALL.es.md](HOW_TO_INSTALL.es.md);
