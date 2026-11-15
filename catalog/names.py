@@ -67,6 +67,9 @@ SEPARATORS = (", ", ": ", " - ", " \u2013 ")  # The last is an en dash.
 NOT_IN_TITLES = re.compile(r"[#<>\[\]|{}]")
 DISAMBIGUATION = re.compile(r"\s*\([^()]*\)$")
 PLACEHOLDER = "{name}"
+# The same proper name with its words joined by hyphens, for compounds ("{name-}-Angriff" →
+# "Max-Lange-Angriff").
+HYPHENATED = "{name-}"
 # A cache entry: the English article, its Wikidata item, its articles by site and its labels.
 CacheEntry = dict | None
 
@@ -365,7 +368,9 @@ class Rules:
         self.exact: dict[str, str] = {}
         self.templates: list[tuple[re.Pattern[str], str]] = []
         for term in terms.values():
-            if PLACEHOLDER in term.term and PLACEHOLDER in term.translation:
+            if PLACEHOLDER in term.term and (
+                PLACEHOLDER in term.translation or HYPHENATED in term.translation
+            ):
                 before, _, after = term.term.partition(PLACEHOLDER)
                 pattern = re.escape(before) + r"(?P<name>.+?)" + re.escape(after)
                 self.templates.append((re.compile(pattern, re.IGNORECASE), term.translation))
@@ -411,7 +416,10 @@ class Rules:
             match = pattern.fullmatch(text)
             if match and self._is_proper(match["name"]):
                 self.kept.append(match["name"])
-                return translation.replace(PLACEHOLDER, match["name"])
+                hyphenated = "-".join(match["name"].split())
+                return translation.replace(HYPHENATED, hyphenated).replace(
+                    PLACEHOLDER, match["name"]
+                )
         return None
 
     def translate(self, english: str) -> str | None:

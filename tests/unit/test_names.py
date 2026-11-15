@@ -458,6 +458,22 @@ def test_rules_translate_segment_by_segment(tmp_path, english, expected):
     assert Rules(load_glossary(path)).translate(english) == expected
 
 
+def test_a_hyphenated_template_joins_the_proper_name(tmp_path):
+    """`{name-}` keeps the proper name with its words joined by hyphens, for compounds.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    path = tmp_path / "de.toml"
+    path.write_text(
+        '[[terms]]\nterm = "{name} Attack"\ntranslation = "{name-}-Angriff"\nmachine = true\n',
+        encoding="utf-8",
+    )
+    rules = Rules(load_glossary(path))
+    assert rules.translate("Max Lange Attack") == "Max-Lange-Angriff"
+    assert rules.translate("Panov Attack") == "Panov-Angriff"
+
+
 def test_translate_words_are_never_kept_as_proper_names(tmp_path):
     """A word of the glossary's `translate` list sends the name to machine translation.
 
