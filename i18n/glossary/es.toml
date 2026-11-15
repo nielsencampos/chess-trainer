@@ -400,3 +400,75 @@ source = "https://es.wikipedia.org/wiki/Ajedrez_aleatorio_de_Fischer"
 term = "chess prodigy"
 translation = "prodigio del ajedrez"
 source = "https://es.wikipedia.org/wiki/Prodigio_del_ajedrez"
+
+[[terms]]
+term = "{name} Variation"
+translation = "Variante {name}"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Variante"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Defense"
+translation = "Defensa {name}"
+source = "https://es.wikipedia.org/wiki/Defensa_siciliana"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "Gambito {name}"
+source = "https://es.wikipedia.org/wiki/Gambito"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "Contragambito {name}"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Attack"
+translation = "Ataque {name}"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Ataque"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "Contraataque {name}"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Contraataque"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Opening"
+translation = "Apertura {name}"
+source = "https://es.wikipedia.org/wiki/Apertura_(ajedrez)"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} System"
+translation = "Sistema {name}"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Line"
+translation = "Línea {name}"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Línea"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Formation"
+translation = "Formación {name}"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Trap"
+translation = "Trampa {name}"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Celada"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "Main Line"
+translation = "Línea Principal"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Línea_principal"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."

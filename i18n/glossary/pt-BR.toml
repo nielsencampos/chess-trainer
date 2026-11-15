@@ -407,3 +407,75 @@ translation = "enxadrista prodígio"
 source = "https://pt.wikipedia.org/wiki/Enxadrista_prodígio"
 note = "Decided in #29."
 avoid = ["prodígio do xadrez"]
+
+[[terms]]
+term = "{name} Variation"
+translation = "Variante {name}"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Variante"
+note = "\"Variante\", as in the UI, not \"Variação\" (decided in #29). For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Defense"
+translation = "Defesa {name}"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Defesa"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "Gambito {name}"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Gambito"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "Contragambito {name}"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Attack"
+translation = "Ataque {name}"
+source = "https://pt.wikipedia.org/wiki/Ataque_Grob"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "Contra-ataque {name}"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Opening"
+translation = "Abertura {name}"
+source = "https://pt.wikipedia.org/wiki/Abertura_(xadrez)"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} System"
+translation = "Sistema {name}"
+source = "https://pt.wikipedia.org/wiki/Sistema_London"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Line"
+translation = "Linha {name}"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Variante"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Formation"
+translation = "Formação {name}"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Trap"
+translation = "Armadilha {name}"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "Main Line"
+translation = "Linha Principal"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
