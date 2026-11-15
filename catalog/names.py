@@ -47,6 +47,7 @@ from catalog.translations import (
     Term,
     load_glossary,
     load_name_sources,
+    load_translate_words,
 )
 
 OPENINGS_DIR = ROOT / "openings"
@@ -330,14 +331,36 @@ def wiki_name(entry: CacheEntry, locale: Locale, family: str | None = None) -> F
     return found if found and found.name.strip() else None
 
 
+def titled_for(entry: CacheEntry, english: str) -> bool:
+    """Whether an English Wikipedia article is titled for a name, give or take its spelling.
+
+    "Defence" and "Defense", dashes and hyphens, a possessive "'s" and case do not count.
+
+    Args:
+        entry (CacheEntry): The lookup's entry.
+        english (str): The book's English name.
+
+    Returns:
+        bool: True when the article's English title is that name.
+    """
+
+    def fold(text: str) -> str:
+        text = re.sub(r"[\u2010-\u2015-]", " ", text.casefold()).replace("'s ", " ")
+        return " ".join(text.replace("defence", "defense").split())
+
+    return entry is not None and fold(entry["sitelinks"].get("enwiki", "")) == fold(english)
+
+
 class Rules:
     """Builds a name from the glossary, segment by segment."""
 
-    def __init__(self, terms: dict[str, Term]) -> None:
+    def __init__(self, terms: dict[str, Term], translate: frozenset[str] = frozenset()) -> None:
         """Prepares the glossary's terms and templates.
 
         Args:
             terms (dict[str, Term]): The locale's glossary.
+            translate (frozenset[str]): Case-folded English words the language translates, never
+                kept as proper names.
         """
         self.exact: dict[str, str] = {}
         self.templates: list[tuple[re.Pattern[str], str]] = []
@@ -350,7 +373,7 @@ class Rules:
                 self.exact[term.term.casefold()] = term.translation
         # The longest fixed text first: "{name} Countergambit" before "{name} Gambit".
         self.templates.sort(key=lambda item: -len(item[0].pattern))
-        self.words = {term for term in self.exact if " " not in term}
+        self.words = {term for term in self.exact if " " not in term} | translate
         self.kept: list[str] = []
 
     def _is_proper(self, text: str) -> bool:
@@ -623,7 +646,11 @@ def fill_names(
     documents = {path: json.loads(path.read_text(encoding="utf-8")) for path in paths}
     before = {path: render(document) for path, document in documents.items()}
     glossary = glossary_dir / f"{code}.toml"
-    rules = Rules(load_glossary(glossary) if glossary.exists() else {})
+    rules = (
+        Rules(load_glossary(glossary), load_translate_words(glossary))
+        if glossary.exists()
+        else Rules({})
+    )
     names_path = names_dir / f"{code}.toml"
     old = load_name_sources(names_path) if names_path.exists() else {}
     machine_path = machine_dir / f"{code}.toml"
@@ -635,6 +662,9 @@ def fill_names(
         item.family: cache.get(item.query) for item in items if item.key[0] == "families"
     }
     family_names = {document["id"]: document["names"] for document in documents.values()}
+    # An article that several families, or a subgroup or line and a family, redirect to is a
+    # broader one ("Borg Defense" -> "King's Pawn Game"): it names only what it is titled for.
+    family_articles = Counter(entry["item"] for entry in family_items.values() if entry)
     report = Report()
     sources: dict[NameKey, NameSource] = {}
     todo: dict[NameKey, str] = {}
@@ -645,8 +675,13 @@ def fill_names(
         found = None
         lookup = cache.get(item.query)
         if item.key[0] == "families":
-            found = wiki_name(lookup, locale)
-        elif lookup and (family_items[item.family] or {}).get("item") != lookup["item"]:
+            if lookup and (family_articles[lookup["item"]] < 2 or titled_for(lookup, item.english)):
+                found = wiki_name(lookup, locale)
+        elif (
+            lookup
+            and (family_items[item.family] or {}).get("item") != lookup["item"]
+            and (lookup["item"] not in family_articles or titled_for(lookup, item.english))
+        ):
             found = wiki_name(lookup, locale, family_names[item.family].get(code))
         rule = rules.translate(item.english)
         kept = rules.kept

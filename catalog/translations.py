@@ -2,7 +2,9 @@
 
 `i18n/glossary/{locale}.toml` lists the chess terms the UI uses, translated, with the
 Wikipedia or Wikidata page each came from, or `machine = true` when none was found, and the words
-the UI must not use for that term (`avoid`).
+the UI must not use for that term (`avoid`), plus an optional top-level `translate` list: words
+of the English opening names that the language translates, so a glossary rule never keeps them as
+proper names.
 `i18n/names/{locale}.toml` records, for each localized family, subgroup and line name in
 `openings/`, where it came from: a Wikipedia or Wikidata page (`source`), the glossary, segment
 by segment (`rule = true`), or machine translation (`machine = true`). The names themselves stay
@@ -166,7 +168,10 @@ def load_glossary(path: Path) -> dict[str, Term]:
             `avoid` list, or repeats a term.
     """
     with path.open("rb") as handle:
-        rows = tomllib.load(handle).get("terms", [])
+        document = tomllib.load(handle)
+    if unknown := set(document) - {"terms", "translate"}:
+        raise TranslationError(f"{path.name}: unknown tables or keys {sorted(unknown)}")
+    rows = document.get("terms", [])
     terms: dict[str, Term] = {}
     for n, row in enumerate(rows, 1):
         where = f"{path.name}: terms #{n}"
@@ -187,6 +192,34 @@ def load_glossary(path: Path) -> dict[str, Term]:
     return terms
 
 
+def load_translate_words(path: Path) -> frozenset[str]:
+    """Reads a glossary's `translate` list: English words its language translates in names.
+
+    They are words of the English opening names that are not proper names in that language
+    ("Exchange", "Vienna"), so a `{name}` rule does not keep them.
+
+    Args:
+        path (Path): An `i18n/glossary/{locale}.toml` file.
+
+    Returns:
+        frozenset[str]: The words, case-folded; empty when the file has no list.
+
+    Raises:
+        TranslationError: The list is not made of non-empty single words, or repeats one.
+    """
+    with path.open("rb") as handle:
+        words = tomllib.load(handle).get("translate", [])
+    where = f"{path.name}: translate"
+    if not isinstance(words, list) or not all(
+        isinstance(word, str) and word.strip() and not re.search(r"[\s,]", word) for word in words
+    ):
+        raise TranslationError(f"{where} must be a list of single words")
+    folded = [word.casefold() for word in words]
+    if len(set(folded)) != len(folded):
+        raise TranslationError(f"{where} repeats a word")
+    return frozenset(folded)
+
+
 def glossary_problems(directory: Path = GLOSSARY_DIR) -> list[str]:
     """Checks every glossary, and that each has the same terms as the English one.
 
@@ -201,6 +234,7 @@ def glossary_problems(directory: Path = GLOSSARY_DIR) -> list[str]:
     for path in sorted(directory.glob("*.toml")):
         try:
             glossaries[path.stem] = load_glossary(path)
+            load_translate_words(path)
         except TranslationError as error:
             problems.append(str(error))
     if not glossaries:

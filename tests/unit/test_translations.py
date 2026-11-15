@@ -178,6 +178,17 @@ def test_a_bad_glossary_row_fails(tmp_path, row):
         load_glossary(write(tmp_path / "pt-BR.toml", glossary([row])))
 
 
+def test_an_unknown_top_level_key_fails(tmp_path):
+    """A glossary has only `terms` and `translate`.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    row = 'term = "check"\ntranslation = "xeque"\nmachine = true'
+    with pytest.raises(TranslationError):
+        load_glossary(write(tmp_path / "pt-BR.toml", "translat = []\n" + glossary([row])))
+
+
 def test_a_repeated_term_fails(tmp_path):
     """A term appears once per glossary.
 

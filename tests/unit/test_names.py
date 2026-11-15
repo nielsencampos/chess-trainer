@@ -11,10 +11,12 @@ import pytest
 from app.book.source import read_opening_files
 from app.locales import Locale
 from catalog import names as names_module
-from catalog.names import OfflineError, Rules, WikipediaCache, fill_names, main
+from catalog.names import OfflineError, Rules, WikipediaCache, fill_names, main, titled_for
 from catalog.translations import (
+    TranslationError,
     load_glossary,
     load_name_sources,
+    load_translate_words,
     localized_names,
     name_source_problems,
 )
@@ -219,6 +221,63 @@ def test_wikipedia_then_glossary_then_machine(repo):
     assert report.proper == {"Bayonet": 1, "Hillbilly": 1}
 
 
+def test_a_broader_article_names_only_its_own_opening(repo):
+    """An article several families redirect to names only the family it is titled for.
+
+    Args:
+        repo (Path): The test folder.
+    """
+    for family_id, english in (("king-s-pawn-game", "King's Pawn Game"), ("borg", "Borg Defense")):
+        path = repo / "openings" / f"{family_id}.json"
+        document = {"id": family_id, "names": {"en": english}, "order": 2, "variants": []}
+        document["lines"] = [
+            {
+                "id": f"line-{len(family_id):016x}",
+                "names": {"en": english},
+                "moves": ["e4", "g5"],
+                "source": "test",
+            }
+        ]
+        path.write_text(json.dumps(document), encoding="utf-8")
+    kings_pawn = {
+        "item": "Q9",
+        "sitelinks": {"enwiki": "King's Pawn Game", "ptwiki": "Abertura do peão do rei"},
+        "labels": {},
+    }
+    lookups = {
+        **LOOKUPS,
+        "King's Pawn Game": kings_pawn,
+        "Borg Defense": kings_pawn,
+        # A subgroup that redirects to another family's article.
+        "Caro-Kann Defense, Advance Variation": kings_pawn,
+    }
+    run(repo, FakeRemote(lookups))
+    sources = load_name_sources(repo / "names" / "pt-BR.toml")
+    assert sources[("families", ("king-s-pawn-game",))].origin == "source"
+    assert ("families", ("borg",)) not in sources  # Left for machine translation.
+    assert sources[("subgroups", ("caro-kann-defense", "Advance Variation"))].origin == "rule"
+
+
+@pytest.mark.parametrize(
+    ("title", "english", "expected"),
+    [
+        ("Caro\u2013Kann Defence", "Caro-Kann Defense", True),
+        ("Alekhine's Defence", "Alekhine Defense", True),
+        ("King's Pawn Game", "Borg Defense", False),
+    ],
+)
+def test_an_article_is_titled_for_a_name_give_or_take_its_spelling(title, english, expected):
+    """Spelling, dashes, a possessive and case do not make another article.
+
+    Args:
+        title (str): The English article's title.
+        english (str): The book's name.
+        expected (bool): Whether it is titled for it.
+    """
+    entry = {"item": "Q1", "sitelinks": {"enwiki": title}, "labels": {}}
+    assert titled_for(entry, english) is expected
+
+
 def test_untranslatable_names_wait_for_machine_translation(repo):
     """A name the glossary does not cover is listed, and enters the book once filled in.
 
@@ -364,6 +423,38 @@ def test_rules_translate_segment_by_segment(tmp_path, english, expected):
     path = tmp_path / "pt-BR.toml"
     path.write_text(GLOSSARY, encoding="utf-8")
     assert Rules(load_glossary(path)).translate(english) == expected
+
+
+def test_translate_words_are_never_kept_as_proper_names(tmp_path):
+    """A word of the glossary's `translate` list sends the name to machine translation.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    path = tmp_path / "pt-BR.toml"
+    path.write_text('translate = ["Exchange", "King\'s"]\n' + GLOSSARY, encoding="utf-8")
+    rules = Rules(load_glossary(path), load_translate_words(path))
+    assert rules.translate("Panov Attack") == "Ataque Panov"
+    assert rules.translate("Exchange Attack") is None
+    assert rules.translate("King's Attack") is None
+    assert rules.translate("Panov-Exchange Attack") is None
+
+
+@pytest.mark.parametrize(
+    "words",
+    ['"Exchange"', '["Two Knights"]', '[""]', '["Exchange", "exchange"]', '["A,B"]'],
+)
+def test_a_bad_translate_list_fails(tmp_path, words):
+    """`translate` is a list of distinct single words.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+        words (str): The list, as TOML.
+    """
+    path = tmp_path / "pt-BR.toml"
+    path.write_text(f"translate = {words}\n" + GLOSSARY, encoding="utf-8")
+    with pytest.raises(TranslationError):
+        load_translate_words(path)
 
 
 class _Answer(io.BytesIO):
