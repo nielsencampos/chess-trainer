@@ -69,3 +69,11 @@ scripts = ["latin"]
 languagetool = "de-DE"
 vale = ["ChessTrainer", "De", "GlossaryDe", "UI"]
 reviewed = false
+
+# French: machine-made, unreviewed, addressing the reader as "vous".
+[locales.fr]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "fr"
+vale = ["ChessTrainer", "Fr", "GlossaryFr", "UI"]
+reviewed = false

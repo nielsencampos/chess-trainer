@@ -2,7 +2,7 @@
 
 # Acerca do Chess Trainer
 
-[English (US)](ABOUT.md) · [English (UK)](ABOUT.en-GB.md) · [Português (Brasil)](ABOUT.pt-BR.md) · [Español (Latinoamérica)](ABOUT.es.md) · [Español (España)](ABOUT.es-ES.md) · [Deutsch](ABOUT.de.md)
+[English (US)](ABOUT.md) · [English (UK)](ABOUT.en-GB.md) · [Português (Brasil)](ABOUT.pt-BR.md) · [Español (Latinoamérica)](ABOUT.es.md) · [Español (España)](ABOUT.es-ES.md) · [Deutsch](ABOUT.de.md) · [Français](ABOUT.fr.md)
 
 ## Quem o fez
 

@@ -334,7 +334,7 @@ def render_about(locale: str) -> str:
             continue
         for entry in entries:
             if not entry.get("done"):
-                lines.append(_entry(entry))
+                lines.append(_entry(entry, locale))
                 entry["done"] = True
         if kind == "title":
             lines += [f"# {strings[str(value)]}", "", _other_languages(locale, "ABOUT"), ""]
@@ -342,22 +342,26 @@ def render_about(locale: str) -> str:
             lines += ["", f"## {strings[str(value)]}", ""]
         elif kind == "para":
             lines += ["", strings[str(value)], ""]
-    lines += [_entry(entry) for entry in entries if not entry.get("done")]
+    lines += [_entry(entry, locale) for entry in entries if not entry.get("done")]
     return _tidy(lines)
 
 
-def _entry(entry: dict) -> str:
+def _entry(entry: dict, locale: str) -> str:
     """One entry of an About list, as a Markdown list item.
+
+    French puts a no-break space before the colon.
 
     Args:
         entry (dict): Its `list` (`ol` or `ul`), `name`, `text` and `links`.
+        locale (str): The language of the page.
 
     Returns:
         str: The list item.
     """
     marker = "1." if entry["list"] == "ol" else "-"
     links = f" {' · '.join(entry['links'])}" if entry["links"] else ""
-    return f"{marker} **{entry['name']}**: {entry['text']}{links}"
+    colon = "\u00a0:" if locale.split("-")[0] == "fr" else ":"
+    return f"{marker} **{entry['name']}**{colon} {entry['text']}{links}"
 
 
 def main() -> None:

@@ -22,7 +22,7 @@ all = [
     # The Thanks section of the About page.
     "Niklas", "Fiekas", "Hernandez", "Marroquin", "Badrap",
     # The language links at the top of each document.
-    "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch",
+    "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch", "Français",
 ]
 en = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
@@ -46,6 +46,13 @@ de = [
     "Streamer", "Youtuber", "Creator", "Campos", "ECO", "Partieformular", "FIDE-ID", "Elo-Zahl",
     "FIDE-Meisterin", "FIDE-Weltmeister", "Merida-Figuren", "python-chess", "no", "Barbosa",
     "Backend",  # the author's own words on the About page
+    "python", "chess", "result",  # the names python-chess and @badrap/result
+    "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+]
+fr = [
+    "streamer", "streamers", "Campos", "FFE", "précoup", "précoups", "Précoup", "ECO", "Flor",
+    "I'm", "Not", "memoriam", "Barbosa", "Florencia", "Molina",
+    "backend",  # the author's own words on the About page
     "python", "chess", "result",  # the names python-chess and @badrap/result
     "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
 ]
@@ -111,6 +118,12 @@ pt-PT = [
 es = []
 es-ES = []
 de = []
+fr = [
+    # Style suggestions, not errors.
+    "NOMBRES_EN_LETTRES_2", "REP_PENDANT", "PLACE_ADJ", "PAS_DE_VIRGULE",
+    "POINT", "POINTS_2",  # labels, not sentences
+    "D_N_E_OU_E",  # "Sorti de la théorie", a label
+]
 
 [ignore]
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.
@@ -174,4 +187,11 @@ de = [
     { text = "Internationale", rule = "DE_CASE" },  # the title Internationale Meisterin der Frauen
     { text = "Das", rule = "DE_CASE" },  # the film "Das Königsspiel"
     { text = "Roberto Molina", rule = "DE_MULTITOKEN_SPELLING_TWO" },  # his name, in a link
+]
+fr = [
+    { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
+    { text = "attendu", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "données", rule = "AGREEMENT_POSTPONED_ADJ" },  # "ingénieur données et backend", the author's words
+    { text = "hongroise", rule = "AGREEMENT_POSTPONED_ADJ" },  # "Grand maître hongroise": the title stays masculine
+    { text = "queen!", rule = "FRENCH_WHITESPACE" },  # "Oh no, my queen!" is quoted in English
 ]
