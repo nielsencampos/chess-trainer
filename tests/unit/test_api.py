@@ -507,6 +507,26 @@ def test_export_lines_in_book_order(client, ids):
     assert '[ECO "B' in text
 
 
+def test_exported_lines_keep_the_english_opening_name(client, ids):
+    """The PGN `Opening` tag is the catalog's English name; localized names are display only.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        ids (dict[str, str]): Line id by PGN, from the API.
+    """
+    repertoires = client.get("/api/repertoires").json()["repertoires"]
+    line = next(
+        variant
+        for repertoire in repertoires
+        for variant in repertoire["variants"]
+        if variant["variant_id"] == ids[SHORT_PGN]
+    )
+    assert line["names"]["pt-BR"] != line["names"]["en"]
+    text = client.post("/api/lines/export", json={"variant_ids": [ids[SHORT_PGN]]}).text
+    assert f'[Opening "{line["opening"]}"]' in text
+    assert line["names"]["pt-BR"] not in text
+
+
 def test_export_lines_refuses_unknown_and_empty(client):
     """Export lines refuses unknown and empty.
 
