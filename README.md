@@ -23,6 +23,9 @@ to play.
 
 *[Versão em português abaixo.](#português-brasil) · [Versión en español abajo.](#español)*
 
+Translations other than English, Portuguese and Spanish are machine-made and unreviewed.
+Corrections are welcome. Open a [Translation fix issue](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml).
+
 ## Run
 
 You need Docker with Compose.
@@ -151,6 +154,9 @@ de PGN, Chess.com ou Lichess com barra de avaliação. Tem Chess960. Em inglês,
 tudo numa imagem Docker. Roda na sua máquina (amd64 ou arm64), sem conta e sem precisar de internet
 para jogar.
 
+As traduções para outros idiomas além do inglês, do português e do espanhol são automáticas e não
+foram revisadas. Para sugerir uma correção, abra uma [issue de correção de tradução](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml).
+
 **Para rodar**, com Docker e Compose instalados:
 
 ```bash
@@ -201,6 +207,9 @@ contra un bot que sigue el libro y muestra dónde saliste de la teoría, y revis
 Chess.com o Lichess con barra de evaluación. Incluye Chess960. En inglés, portugués y español, todo
 en una imagen Docker. Funciona en tu máquina (amd64 o arm64), sin cuenta y sin necesitar internet
 para jugar.
+
+Las traducciones a idiomas distintos del inglés, el portugués y el español son automáticas y no se
+han revisado. Para sugerir una corrección, abre un [issue de corrección de traducción](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml).
 
 **Para ejecutarlo**, con Docker y Compose instalados:
 
