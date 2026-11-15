@@ -8,7 +8,8 @@
     "es-ES": "Ataque Torre",
     "pt-PT": "Ataque Torre",
     "de": "Torre-Angriff",
-    "fr": "Attaque Torre"
+    "fr": "Attaque Torre",
+    "it": "Attacco Torre"
   },
   "order": 16,
   "variants": [
@@ -21,7 +22,8 @@
         "es-ES": "Defensa Clásica",
         "pt-PT": "Defesa Clássica",
         "de": "Klassische Verteidigung",
-        "fr": "Défense classique"
+        "fr": "Défense classique",
+        "it": "Difesa classica"
       },
       "lines": [
         {
@@ -34,7 +36,8 @@
             "es-ES": "Defensa Clásica",
             "pt-PT": "Defesa Clássica",
             "de": "Klassische Verteidigung",
-            "fr": "Défense classique"
+            "fr": "Défense classique",
+            "it": "Difesa classica"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense",
@@ -51,7 +54,8 @@
             "es-ES": "Defensa Clásica, Gambito Petrosian",
             "pt-PT": "Defesa Clássica, Gambito Petrosian",
             "de": "Klassische Verteidigung, Petrosjan-Gambit",
-            "fr": "Défense classique, Gambit Petrossian"
+            "fr": "Défense classique, Gambit Petrossian",
+            "it": "Difesa classica, Gambetto Petrosyan"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense, Petrosian Gambit",
@@ -68,7 +72,8 @@
             "es-ES": "Defensa Clásica, Variante Nimzowitsch",
             "pt-PT": "Defesa Clássica, Variante Nimzowitsch",
             "de": "Klassische Verteidigung, Nimzowitsch-Variante",
-            "fr": "Défense classique, Variante Nimzowitsch"
+            "fr": "Défense classique, Variante Nimzowitsch",
+            "it": "Difesa classica, Variante Nimzowitsch"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense, Nimzowitsch Variation",
@@ -86,7 +91,8 @@
         "es-ES": "Defensa del Fianchetto",
         "pt-PT": "Defesa do Fianqueto",
         "de": "Fianchetto-Verteidigung",
-        "fr": "Défense en fianchetto"
+        "fr": "Défense en fianchetto",
+        "it": "Difesa in fianchetto"
       },
       "lines": [
         {
@@ -99,7 +105,8 @@
             "es-ES": "Defensa del Fianchetto",
             "pt-PT": "Defesa do Fianqueto",
             "de": "Fianchetto-Verteidigung",
-            "fr": "Défense en fianchetto"
+            "fr": "Défense en fianchetto",
+            "it": "Difesa in fianchetto"
           },
           "eco": "A48",
           "opening": "Torre Attack: Fianchetto Defense",
@@ -116,7 +123,8 @@
             "es-ES": "Defensa del Fianchetto, Variante Euwe",
             "pt-PT": "Defesa do Fianqueto, Variante Euwe",
             "de": "Fianchetto-Verteidigung, Euwe-Variante",
-            "fr": "Défense en fianchetto, Variante Euwe"
+            "fr": "Défense en fianchetto, Variante Euwe",
+            "it": "Difesa in fianchetto, Variante Euwe"
           },
           "eco": "A48",
           "opening": "Torre Attack: Fianchetto Defense, Euwe Variation",
@@ -137,7 +145,8 @@
         "es-ES": "Gambito Wagner",
         "pt-PT": "Gambito Wagner",
         "de": "Wagner-Gambit",
-        "fr": "Gambit Wagner"
+        "fr": "Gambit Wagner",
+        "it": "Gambetto Wagner"
       },
       "eco": "A46",
       "opening": "Torre Attack: Wagner Gambit",

@@ -1,0 +1,16 @@
+# it speaks to the reader as "tu", never "Lei" or "voi": no formal pronouns or imperatives.
+extends: existence
+message: "Use 'tu' as the form of address, not '%s'."
+level: error
+ignorecase: false
+tokens:
+  - Lei
+  - Suo
+  - Sua
+  - Suoi
+  - Sue
+  - scelga
+  - clicchi
+  - selezioni
+  - usi
+  - inserisca

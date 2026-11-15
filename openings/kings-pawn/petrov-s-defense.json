@@ -8,7 +8,8 @@
     "es-ES": "Defensa Petrov",
     "pt-PT": "Defesa Petroff",
     "de": "Russische Verteidigung",
-    "fr": "Défense russe"
+    "fr": "Défense russe",
+    "it": "Difesa russa"
   },
   "order": 10,
   "variants": [
@@ -21,7 +22,8 @@
         "es-ES": "Ataque Clásico",
         "pt-PT": "Ataque Clássico",
         "de": "Klassischer Angriff",
-        "fr": "Attaque classique"
+        "fr": "Attaque classique",
+        "it": "Attacco classico"
       },
       "lines": [
         {
@@ -34,7 +36,8 @@
             "es-ES": "Ataque Clásico",
             "pt-PT": "Ataque Clássico",
             "de": "Klassischer Angriff",
-            "fr": "Attaque classique"
+            "fr": "Attaque classique",
+            "it": "Attacco classico"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack",
@@ -51,7 +54,8 @@
             "es-ES": "Ataque Clásico, Variante Cerrada",
             "pt-PT": "Ataque Clássico, Variante Fechada",
             "de": "Klassischer Angriff, Geschlossene Variante",
-            "fr": "Attaque classique, Variante fermée"
+            "fr": "Attaque classique, Variante fermée",
+            "it": "Attacco classico, Variante chiusa"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Closed Variation",
@@ -68,7 +72,8 @@
             "es-ES": "Ataque Clásico, Variante Marshall",
             "pt-PT": "Ataque Clássico, Variante Marshall",
             "de": "Klassischer Angriff, Marshall-Variante",
-            "fr": "Attaque classique, Variante Marshall"
+            "fr": "Attaque classique, Variante Marshall",
+            "it": "Attacco classico, Variante Marshall"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Marshall Variation",
@@ -85,7 +90,8 @@
             "es-ES": "Ataque Clásico, Variante Tarrasch",
             "pt-PT": "Ataque Clássico, Variante Tarrasch",
             "de": "Klassischer Angriff, Tarrasch-Variante",
-            "fr": "Attaque classique, Variante Tarrasch"
+            "fr": "Attaque classique, Variante Tarrasch",
+            "it": "Attacco classico, Variante Tarrasch"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Tarrasch Variation",
@@ -102,7 +108,8 @@
             "es-ES": "Ataque Clásico, Trampa Marshall",
             "pt-PT": "Ataque Clássico, Armadilha Marshall",
             "de": "Klassischer Angriff, Marshall-Falle",
-            "fr": "Attaque classique, Piège Marshall"
+            "fr": "Attaque classique, Piège Marshall",
+            "it": "Attacco classico, Trappola Marshall"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Marshall Trap",
@@ -119,7 +126,8 @@
             "es-ES": "Ataque Clásico, Variante Staunton",
             "pt-PT": "Ataque Clássico, Variante Staunton",
             "de": "Klassischer Angriff, Staunton-Variante",
-            "fr": "Attaque classique, Variante Staunton"
+            "fr": "Attaque classique, Variante Staunton",
+            "it": "Attacco classico, Variante Staunton"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Staunton Variation",
@@ -136,7 +144,8 @@
             "es-ES": "Ataque Clásico, Variante Marshall, Gambito Chino",
             "pt-PT": "Ataque Clássico, Variante Marshall, Gambito Chinês",
             "de": "Klassischer Angriff, Marshall-Variante, Chinesisches Gambit",
-            "fr": "Attaque classique, Variante Marshall, Gambit chinois"
+            "fr": "Attaque classique, Variante Marshall, Gambit chinois",
+            "it": "Attacco classico, Variante Marshall, Gambetto cinese"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Marshall Variation, Chinese Gambit",
@@ -153,7 +162,8 @@
             "es-ES": "Ataque Clásico, Variante Chigorin",
             "pt-PT": "Ataque Clássico, Variante Chigorin",
             "de": "Klassischer Angriff, Tschigorin-Variante",
-            "fr": "Attaque classique, Variante Tchigorine"
+            "fr": "Attaque classique, Variante Tchigorine",
+            "it": "Attacco classico, Variante Čigorin"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Chigorin Variation",
@@ -170,7 +180,8 @@
             "es-ES": "Ataque Clásico, Variante Berger",
             "pt-PT": "Ataque Clássico, Variante Berger",
             "de": "Klassischer Angriff, Berger-Variante",
-            "fr": "Attaque classique, Variante Berger"
+            "fr": "Attaque classique, Variante Berger",
+            "it": "Attacco classico, Variante Berger"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Berger Variation",
@@ -187,7 +198,8 @@
             "es-ES": "Ataque Clásico, Variante Maróczy",
             "pt-PT": "Ataque Clássico, Variante Maróczy",
             "de": "Klassischer Angriff, Maróczy-Variante",
-            "fr": "Attaque classique, Variante Maróczy"
+            "fr": "Attaque classique, Variante Maróczy",
+            "it": "Attacco classico, Variante Maróczy"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Maróczy Variation",
@@ -204,7 +216,8 @@
             "es-ES": "Ataque Clásico, Variante Mason",
             "pt-PT": "Ataque Clássico, Variante Mason",
             "de": "Klassischer Angriff, Mason-Variante",
-            "fr": "Attaque classique, Variante Mason"
+            "fr": "Attaque classique, Variante Mason",
+            "it": "Attacco classico, Variante Mason"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Mason Variation",
@@ -221,7 +234,8 @@
             "es-ES": "Ataque Clásico, Variante Mason-Showalter",
             "pt-PT": "Ataque Clássico, Variante Mason-Showalter",
             "de": "Klassischer Angriff, Mason-Showalter-Variante",
-            "fr": "Attaque classique, Variante Mason-Showalter"
+            "fr": "Attaque classique, Variante Mason-Showalter",
+            "it": "Attacco classico, Variante Mason-Showalter"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Mason-Showalter Variation",
@@ -238,7 +252,8 @@
             "es-ES": "Ataque Clásico, Variante Krause",
             "pt-PT": "Ataque Clássico, Variante Krause",
             "de": "Klassischer Angriff, Krause-Variante",
-            "fr": "Attaque classique, Variante Krause"
+            "fr": "Attaque classique, Variante Krause",
+            "it": "Attacco classico, Variante Krause"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Krause Variation",
@@ -255,7 +270,8 @@
             "es-ES": "Ataque Clásico, Variante Jaenisch",
             "pt-PT": "Ataque Clássico, Variante Jaenisch",
             "de": "Klassischer Angriff, Jaenisch-Variante",
-            "fr": "Attaque classique, Variante Jaenisch"
+            "fr": "Attaque classique, Variante Jaenisch",
+            "it": "Attacco classico, Variante Jaenisch"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Jaenisch Variation",
@@ -272,7 +288,8 @@
             "es-ES": "Ataque Clásico, Variante Chigorin, Línea Principal",
             "pt-PT": "Ataque Clássico, Variante Chigorin, Linha Principal",
             "de": "Klassischer Angriff, Tschigorin-Variante, Hauptvariante",
-            "fr": "Attaque classique, Variante Tchigorine, Ligne principale"
+            "fr": "Attaque classique, Variante Tchigorine, Ligne principale",
+            "it": "Attacco classico, Variante Čigorin, Linea principale"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Chigorin Variation, Main Line",
@@ -289,7 +306,8 @@
             "es-ES": "Ataque Clásico, Variante Chigorin, Ataque Browne",
             "pt-PT": "Ataque Clássico, Variante Chigorin, Ataque Browne",
             "de": "Klassischer Angriff, Tschigorin-Variante, Browne-Angriff",
-            "fr": "Attaque classique, Variante Tchigorine, Attaque Browne"
+            "fr": "Attaque classique, Variante Tchigorine, Attaque Browne",
+            "it": "Attacco classico, Variante Čigorin, Attacco Browne"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Chigorin Variation, Browne Attack",
@@ -307,7 +325,8 @@
         "es-ES": "Ataque Moderno",
         "pt-PT": "Ataque Moderno",
         "de": "Moderner Angriff",
-        "fr": "Attaque moderne"
+        "fr": "Attaque moderne",
+        "it": "Attacco moderno"
       },
       "lines": [
         {
@@ -320,7 +339,8 @@
             "es-ES": "Ataque Moderno",
             "pt-PT": "Ataque Moderno",
             "de": "Moderner Angriff",
-            "fr": "Attaque moderne"
+            "fr": "Attaque moderne",
+            "it": "Attacco moderno"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack",
@@ -337,7 +357,8 @@
             "es-ES": "Ataque Moderno, Variante del Centro",
             "pt-PT": "Ataque Moderno, Variante do Centro",
             "de": "Moderner Angriff, Zentrumsvariante",
-            "fr": "Attaque moderne, Variante du centre"
+            "fr": "Attaque moderne, Variante du centre",
+            "it": "Attacco moderno, Variante del centro"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Center Variation",
@@ -354,7 +375,8 @@
             "es-ES": "Ataque Moderno, Variante Murrey",
             "pt-PT": "Ataque Moderno, Variante Murrey",
             "de": "Moderner Angriff, Murrey-Variante",
-            "fr": "Attaque moderne, Variante Murrey"
+            "fr": "Attaque moderne, Variante Murrey",
+            "it": "Attacco moderno, Variante Murrey"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Murrey Variation",
@@ -371,7 +393,8 @@
             "es-ES": "Ataque Moderno, Variante Trifunovic",
             "pt-PT": "Ataque Moderno, Variante Trifunovic",
             "de": "Moderner Angriff, Trifunović-Variante",
-            "fr": "Attaque moderne, Variante Trifunović"
+            "fr": "Attaque moderne, Variante Trifunović",
+            "it": "Attacco moderno, Variante Trifunović"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Trifunovic Variation",
@@ -388,7 +411,8 @@
             "es-ES": "Ataque Moderno, Variante Simétrica",
             "pt-PT": "Ataque Moderno, Variante Simétrica",
             "de": "Moderner Angriff, Symmetrische Variante",
-            "fr": "Attaque moderne, Variante symétrique"
+            "fr": "Attaque moderne, Variante symétrique",
+            "it": "Attacco moderno, Variante simmetrica"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Symmetrical Variation",
@@ -405,7 +429,8 @@
             "es-ES": "Ataque Moderno",
             "pt-PT": "Ataque Moderno",
             "de": "Moderner Angriff",
-            "fr": "Attaque moderne"
+            "fr": "Attaque moderne",
+            "it": "Attacco moderno"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack",
@@ -422,7 +447,8 @@
             "es-ES": "Ataque Moderno, Gambito Tal",
             "pt-PT": "Ataque Moderno, Gambito Tal",
             "de": "Moderner Angriff, Tal-Gambit",
-            "fr": "Attaque moderne, Gambit Tal"
+            "fr": "Attaque moderne, Gambit Tal",
+            "it": "Attacco moderno, Gambetto Tal"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Tal Gambit",
@@ -439,7 +465,8 @@
             "es-ES": "Ataque Moderno, Variante Steinitz",
             "pt-PT": "Ataque Moderno, Variante Steinitz",
             "de": "Moderner Angriff, Steinitz-Variante",
-            "fr": "Attaque moderne, Variante Steinitz"
+            "fr": "Attaque moderne, Variante Steinitz",
+            "it": "Attacco moderno, Variante Steinitz"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Steinitz Variation",
@@ -456,7 +483,8 @@
             "es-ES": "Ataque Moderno, Variante Bardeleben",
             "pt-PT": "Ataque Moderno, Variante Bardeleben",
             "de": "Moderner Angriff, Bardeleben-Variante",
-            "fr": "Attaque moderne, Variante Bardeleben"
+            "fr": "Attaque moderne, Variante Bardeleben",
+            "it": "Attacco moderno, Variante Bardeleben"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Bardeleben Variation",
@@ -473,7 +501,8 @@
             "es-ES": "Ataque Moderno, Ataque al Centro",
             "pt-PT": "Ataque Moderno, Ataque ao Centro",
             "de": "Moderner Angriff, Zentrumsangriff",
-            "fr": "Attaque moderne, Attaque au centre"
+            "fr": "Attaque moderne, Attaque au centre",
+            "it": "Attacco moderno, Attacco al centro"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Center Attack",
@@ -491,7 +520,8 @@
         "es-ES": "Principal",
         "pt-PT": "Principal",
         "de": "Hauptvariante",
-        "fr": "Ligne principale"
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
@@ -504,7 +534,8 @@
             "es-ES": "Defensa Petrov",
             "pt-PT": "Defesa Petroff",
             "de": "Russische Verteidigung",
-            "fr": "Défense russe"
+            "fr": "Défense russe",
+            "it": "Difesa russa"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -521,7 +552,8 @@
             "es-ES": "Defensa Petrov",
             "pt-PT": "Defesa Petroff",
             "de": "Russische Verteidigung",
-            "fr": "Défense russe"
+            "fr": "Défense russe",
+            "it": "Difesa russa"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -538,7 +570,8 @@
             "es-ES": "Defensa Petrov",
             "pt-PT": "Defesa Petroff",
             "de": "Russische Verteidigung",
-            "fr": "Défense russe"
+            "fr": "Défense russe",
+            "it": "Difesa russa"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -555,7 +588,8 @@
             "es-ES": "Defensa Petrov",
             "pt-PT": "Defesa Petroff",
             "de": "Russische Verteidigung",
-            "fr": "Défense russe"
+            "fr": "Défense russe",
+            "it": "Difesa russa"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -572,7 +606,8 @@
             "es-ES": "Defensa Petrov",
             "pt-PT": "Defesa Petroff",
             "de": "Russische Verteidigung",
-            "fr": "Défense russe"
+            "fr": "Défense russe",
+            "it": "Difesa russa"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -590,7 +625,8 @@
         "es-ES": "Gambito Cochrane",
         "pt-PT": "Gambito Cochrane",
         "de": "Cochrane-Gambit",
-        "fr": "Gambit Cochrane"
+        "fr": "Gambit Cochrane",
+        "it": "Gambetto Cochrane"
       },
       "lines": [
         {
@@ -603,7 +639,8 @@
             "es-ES": "Gambito Cochrane",
             "pt-PT": "Gambito Cochrane",
             "de": "Cochrane-Gambit",
-            "fr": "Gambit Cochrane"
+            "fr": "Gambit Cochrane",
+            "it": "Gambetto Cochrane"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Cochrane Gambit",
@@ -620,7 +657,8 @@
             "es-ES": "Gambito Cochrane, Línea del Jaque de Alfil",
             "pt-PT": "Gambito Cochrane, Linha do Xeque de Bispo",
             "de": "Cochrane-Gambit, Läuferschach-Abspiel",
-            "fr": "Gambit Cochrane, Ligne de l'échec du fou"
+            "fr": "Gambit Cochrane, Ligne de l'échec du fou",
+            "it": "Gambetto Cochrane, Linea dello scacco d'alfiere"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Cochrane Gambit, Bishop Check Line",
@@ -637,7 +675,8 @@
             "es-ES": "Gambito Cochrane, Variante del Centro",
             "pt-PT": "Gambito Cochrane, Variante do Centro",
             "de": "Cochrane-Gambit, Zentrumsvariante",
-            "fr": "Gambit Cochrane, Variante du centre"
+            "fr": "Gambit Cochrane, Variante du centre",
+            "it": "Gambetto Cochrane, Variante del centro"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Cochrane Gambit, Center Variation",
@@ -655,7 +694,8 @@
         "es-ES": "Gambito Stafford Aceptado",
         "pt-PT": "Gambito Stafford Aceito",
         "de": "Angenommenes Stafford-Gambit",
-        "fr": "Gambit Stafford accepté"
+        "fr": "Gambit Stafford accepté",
+        "it": "Gambetto Stafford accettato"
       },
       "lines": [
         {
@@ -668,7 +708,8 @@
             "es-ES": "Gambito Stafford Aceptado",
             "pt-PT": "Gambito Stafford Aceito",
             "de": "Angenommenes Stafford-Gambit",
-            "fr": "Gambit Stafford accepté"
+            "fr": "Gambit Stafford accepté",
+            "it": "Gambetto Stafford accettato"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Stafford Gambit Accepted",
@@ -685,7 +726,8 @@
             "es-ES": "Gambito Stafford Aceptado",
             "pt-PT": "Gambito Stafford Aceito",
             "de": "Angenommenes Stafford-Gambit",
-            "fr": "Gambit Stafford accepté"
+            "fr": "Gambit Stafford accepté",
+            "it": "Gambetto Stafford accettato"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Stafford Gambit Accepted",
@@ -702,7 +744,8 @@
             "es-ES": "Gambito Stafford Aceptado",
             "pt-PT": "Gambito Stafford Aceito",
             "de": "Angenommenes Stafford-Gambit",
-            "fr": "Gambit Stafford accepté"
+            "fr": "Gambit Stafford accepté",
+            "it": "Gambetto Stafford accettato"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Stafford Gambit Accepted",
@@ -720,7 +763,8 @@
         "es-ES": "Variante Damiano",
         "pt-PT": "Variante Damiano",
         "de": "Damiano-Variante",
-        "fr": "Variante Damiano"
+        "fr": "Variante Damiano",
+        "it": "Variante Damiano"
       },
       "lines": [
         {
@@ -733,7 +777,8 @@
             "es-ES": "Variante Damiano",
             "pt-PT": "Variante Damiano",
             "de": "Damiano-Variante",
-            "fr": "Variante Damiano"
+            "fr": "Variante Damiano",
+            "it": "Variante Damiano"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Damiano Variation",
@@ -750,7 +795,8 @@
             "es-ES": "Variante Damiano, Gambito Kholmov",
             "pt-PT": "Variante Damiano, Gambito Kholmov",
             "de": "Damiano-Variante, Cholmow-Gambit",
-            "fr": "Variante Damiano, Gambit Kholmov"
+            "fr": "Variante Damiano, Gambit Kholmov",
+            "it": "Variante Damiano, Gambetto Cholmov"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Damiano Variation, Kholmov Gambit",
@@ -771,7 +817,8 @@
         "es-ES": "Ataque Cozio",
         "pt-PT": "Ataque Cozio",
         "de": "Cozio-Angriff",
-        "fr": "Attaque Cozio"
+        "fr": "Attaque Cozio",
+        "it": "Attacco Cozio"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Cozio Attack",
@@ -788,7 +835,8 @@
         "es-ES": "Ataque Francés",
         "pt-PT": "Ataque Francês",
         "de": "Französischer Angriff",
-        "fr": "Attaque française"
+        "fr": "Attaque française",
+        "it": "Attacco francese"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: French Attack",
@@ -805,7 +853,8 @@
         "es-ES": "Variante Italiana",
         "pt-PT": "Variante Italiana",
         "de": "Italienische Variante",
-        "fr": "Variante italienne"
+        "fr": "Variante italienne",
+        "it": "Variante italiana"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Italian Variation",
@@ -822,7 +871,8 @@
         "es-ES": "Variante Karklins-Martinovsky",
         "pt-PT": "Variante Karklins-Martinovsky",
         "de": "Karklins-Martinovsky-Variante",
-        "fr": "Variante Karklins-Martinovsky"
+        "fr": "Variante Karklins-Martinovsky",
+        "it": "Variante Karklins-Martinovsky"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Karklins-Martinovsky Variation",
@@ -839,7 +889,8 @@
         "es-ES": "Ataque Kaufmann",
         "pt-PT": "Ataque Kaufmann",
         "de": "Kaufmann-Angriff",
-        "fr": "Attaque Kaufmann"
+        "fr": "Attaque Kaufmann",
+        "it": "Attacco Kaufmann"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Kaufmann Attack",
@@ -856,7 +907,8 @@
         "es-ES": "Ataque del Milenio",
         "pt-PT": "Ataque do Milénio",
         "de": "Millennium-Angriff",
-        "fr": "Attaque du millénaire"
+        "fr": "Attaque du millénaire",
+        "it": "Attacco del millennio"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Millennium Attack",
@@ -873,7 +925,8 @@
         "es-ES": "Gambito Moody",
         "pt-PT": "Gambito Moody",
         "de": "Moody-Gambit",
-        "fr": "Gambit Moody"
+        "fr": "Gambit Moody",
+        "it": "Gambetto Moody"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Moody Gambit",
@@ -890,7 +943,8 @@
         "es-ES": "Ataque Nimzowitsch",
         "pt-PT": "Ataque Nimzowitsch",
         "de": "Nimzowitsch-Angriff",
-        "fr": "Attaque Nimzowitsch"
+        "fr": "Attaque Nimzowitsch",
+        "it": "Attacco Nimzowitsch"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Nimzowitsch Attack",
@@ -907,7 +961,8 @@
         "es-ES": "Ataque Paulsen",
         "pt-PT": "Ataque Paulsen",
         "de": "Paulsen-Angriff",
-        "fr": "Attaque Paulsen"
+        "fr": "Attaque Paulsen",
+        "it": "Attacco Paulsen"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Paulsen Attack",
@@ -924,7 +979,8 @@
         "es-ES": "Gambito Stafford",
         "pt-PT": "Gambito Stafford",
         "de": "Stafford-Gambit",
-        "fr": "Gambit Stafford"
+        "fr": "Gambit Stafford",
+        "it": "Gambetto Stafford"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Stafford Gambit",
@@ -941,7 +997,8 @@
         "es-ES": "Apertura de los Tres Caballos",
         "pt-PT": "Abertura dos Três Cavalos",
         "de": "Dreispringerspiel",
-        "fr": "Partie des trois cavaliers"
+        "fr": "Partie des trois cavaliers",
+        "it": "Partita dei tre cavalli"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Three Knights Game",

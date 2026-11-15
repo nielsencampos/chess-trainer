@@ -77,3 +77,11 @@ scripts = ["latin"]
 languagetool = "fr"
 vale = ["ChessTrainer", "Fr", "GlossaryFr", "UI"]
 reviewed = false
+
+# Italian: machine-made, unreviewed, addressing the reader as "tu".
+[locales.it]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "it"
+vale = ["ChessTrainer", "It", "GlossaryIt", "UI"]
+reviewed = false

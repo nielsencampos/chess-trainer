@@ -8,7 +8,8 @@
     "es-ES": "Apertura de Peón de Rey",
     "pt-PT": "Abertura do Peão do Rei",
     "de": "Königsbauernspiel",
-    "fr": "Ouverture du pion roi"
+    "fr": "Ouverture du pion roi",
+    "it": "Apertura di re"
   },
   "order": 23,
   "variants": [
@@ -21,7 +22,8 @@
         "es-ES": "Apertura Tayler",
         "pt-PT": "Abertura Tayler",
         "de": "Tayler-Eröffnung",
-        "fr": "Ouverture Tayler"
+        "fr": "Ouverture Tayler",
+        "it": "Apertura Tayler"
       },
       "lines": [
         {
@@ -34,7 +36,8 @@
             "es-ES": "Apertura Tayler",
             "pt-PT": "Abertura Tayler",
             "de": "Tayler-Eröffnung",
-            "fr": "Ouverture Tayler"
+            "fr": "Ouverture Tayler",
+            "it": "Apertura Tayler"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening",
@@ -51,7 +54,8 @@
             "es-ES": "Apertura Tayler, Hanham Invertida",
             "pt-PT": "Abertura Tayler, Hanham Invertida",
             "de": "Tayler-Eröffnung, Umgekehrte Hanham-Variante",
-            "fr": "Ouverture Tayler, Hanham inversée"
+            "fr": "Ouverture Tayler, Hanham inversée",
+            "it": "Apertura Tayler, Hanham invertita"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening, Inverted Hanham",
@@ -68,7 +72,8 @@
             "es-ES": "Apertura Tayler",
             "pt-PT": "Abertura Tayler",
             "de": "Tayler-Eröffnung",
-            "fr": "Ouverture Tayler"
+            "fr": "Ouverture Tayler",
+            "it": "Apertura Tayler"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening",
@@ -85,7 +90,8 @@
             "es-ES": "Apertura Tayler, Gambito Basman",
             "pt-PT": "Abertura Tayler, Gambito Basman",
             "de": "Tayler-Eröffnung, Basman-Gambit",
-            "fr": "Ouverture Tayler, Gambit Basman"
+            "fr": "Ouverture Tayler, Gambit Basman",
+            "it": "Apertura Tayler, Gambetto Basman"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening, Basman Gambit",
@@ -103,7 +109,8 @@
         "es-ES": "Defensa Damiano",
         "pt-PT": "Defesa Damiano",
         "de": "Damiano-Verteidigung",
-        "fr": "Défense Damiano"
+        "fr": "Défense Damiano",
+        "it": "Difesa Damiano"
       },
       "lines": [
         {
@@ -116,7 +123,8 @@
             "es-ES": "Defensa Damiano",
             "pt-PT": "Defesa Damiano",
             "de": "Damiano-Verteidigung",
-            "fr": "Défense Damiano"
+            "fr": "Défense Damiano",
+            "it": "Difesa Damiano"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Damiano Defense",
@@ -133,7 +141,8 @@
             "es-ES": "Defensa Damiano, Gambito Damiano, Gambito Chigorin",
             "pt-PT": "Defesa Damiano, Gambito Damiano, Gambito Chigorin",
             "de": "Damiano-Verteidigung, Damiano-Gambit, Tschigorin-Gambit",
-            "fr": "Défense Damiano, Gambit Damiano, Gambit Tchigorine"
+            "fr": "Défense Damiano, Gambit Damiano, Gambit Tchigorine",
+            "it": "Difesa Damiano, Gambetto Damiano, Gambetto Čigorin"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Damiano Defense, Damiano Gambit, Chigorin Gambit",
@@ -150,7 +159,8 @@
             "es-ES": "Defensa Damiano, Gambito Damiano",
             "pt-PT": "Defesa Damiano, Gambito Damiano",
             "de": "Damiano-Verteidigung, Damiano-Gambit",
-            "fr": "Défense Damiano, Gambit Damiano"
+            "fr": "Défense Damiano, Gambit Damiano",
+            "it": "Difesa Damiano, Gambetto Damiano"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Damiano Defense, Damiano Gambit",
@@ -168,7 +178,8 @@
         "es-ES": "Ataque MacLeod",
         "pt-PT": "Ataque MacLeod",
         "de": "MacLeod-Angriff",
-        "fr": "Attaque MacLeod"
+        "fr": "Attaque MacLeod",
+        "it": "Attacco MacLeod"
       },
       "lines": [
         {
@@ -181,7 +192,8 @@
             "es-ES": "Ataque MacLeod",
             "pt-PT": "Ataque MacLeod",
             "de": "MacLeod-Angriff",
-            "fr": "Attaque MacLeod"
+            "fr": "Attaque MacLeod",
+            "it": "Attacco MacLeod"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: MacLeod Attack",
@@ -198,7 +210,8 @@
             "es-ES": "Ataque MacLeod, Gambito Norwalde",
             "pt-PT": "Ataque MacLeod, Gambito Norwalde",
             "de": "MacLeod-Angriff, Norwalde-Gambit",
-            "fr": "Attaque MacLeod, Gambit Norwalde"
+            "fr": "Attaque MacLeod, Gambit Norwalde",
+            "it": "Attacco MacLeod, Gambetto Norwalde"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: MacLeod Attack, Norwalde Gambit",
@@ -215,7 +228,8 @@
             "es-ES": "Ataque MacLeod, Gambito Lasa",
             "pt-PT": "Ataque MacLeod, Gambito Lasa",
             "de": "MacLeod-Angriff, Lasa-Gambit",
-            "fr": "Attaque MacLeod, Gambit Lasa"
+            "fr": "Attaque MacLeod, Gambit Lasa",
+            "it": "Attacco MacLeod, Gambetto Lasa"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: MacLeod Attack, Lasa Gambit",
@@ -233,7 +247,8 @@
         "es-ES": "Ataque de la Dama Errante",
         "pt-PT": "Ataque da Dama Errante",
         "de": "Angriff der irrenden Dame",
-        "fr": "Attaque de la dame vagabonde"
+        "fr": "Attaque de la dame vagabonde",
+        "it": "Attacco della donna errante"
       },
       "lines": [
         {
@@ -246,7 +261,8 @@
             "es-ES": "Ataque de la Dama Errante",
             "pt-PT": "Ataque da Dama Errante",
             "de": "Angriff der irrenden Dame",
-            "fr": "Attaque de la dame vagabonde"
+            "fr": "Attaque de la dame vagabonde",
+            "it": "Attacco della donna errante"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Wayward Queen Attack",
@@ -263,7 +279,8 @@
             "es-ES": "Ataque de la Dama Errante, Gambito Mellon",
             "pt-PT": "Ataque da Dama Errante, Gambito Mellon",
             "de": "Angriff der irrenden Dame, Mellon-Gambit",
-            "fr": "Attaque de la dame vagabonde, Gambit Mellon"
+            "fr": "Attaque de la dame vagabonde, Gambit Mellon",
+            "it": "Attacco della donna errante, Gambetto Mellon"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Wayward Queen Attack, Mellon Gambit",
@@ -280,7 +297,8 @@
             "es-ES": "Ataque de la Dama Errante, Contragambito Infantil",
             "pt-PT": "Ataque da Dama Errante, Contragambito Infantil",
             "de": "Angriff der irrenden Dame, Kinder-Gegengambit",
-            "fr": "Attaque de la dame vagabonde, Contre-gambit des enfants"
+            "fr": "Attaque de la dame vagabonde, Contre-gambit des enfants",
+            "it": "Attacco della donna errante, Controgambetto dei bambini"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Wayward Queen Attack, Kiddie Countergambit",
@@ -298,7 +316,8 @@
         "es-ES": "Gambito Busch-Gass",
         "pt-PT": "Gambito Busch-Gass",
         "de": "Busch-Gass-Gambit",
-        "fr": "Gambit Busch-Gass"
+        "fr": "Gambit Busch-Gass",
+        "it": "Gambetto Busch-Gass"
       },
       "lines": [
         {
@@ -311,7 +330,8 @@
             "es-ES": "Gambito Busch-Gass",
             "pt-PT": "Gambito Busch-Gass",
             "de": "Busch-Gass-Gambit",
-            "fr": "Gambit Busch-Gass"
+            "fr": "Gambit Busch-Gass",
+            "it": "Gambetto Busch-Gass"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Busch-Gass Gambit",
@@ -328,7 +348,8 @@
             "es-ES": "Gambito Busch-Gass, Gambito Chiodini",
             "pt-PT": "Gambito Busch-Gass, Gambito Chiodini",
             "de": "Busch-Gass-Gambit, Chiodini-Gambit",
-            "fr": "Gambit Busch-Gass, Gambit Chiodini"
+            "fr": "Gambit Busch-Gass, Gambit Chiodini",
+            "it": "Gambetto Busch-Gass, Gambetto Chiodini"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Busch-Gass Gambit, Chiodini Gambit",
@@ -346,7 +367,8 @@
         "es-ES": "Variante de la Almeja",
         "pt-PT": "Variante do Marisco",
         "de": "Muschel-Variante",
-        "fr": "Variante de la palourde"
+        "fr": "Variante de la palourde",
+        "it": "Variante della vongola"
       },
       "lines": [
         {
@@ -359,7 +381,8 @@
             "es-ES": "Variante de la Almeja, Gambito Radisch",
             "pt-PT": "Variante do Marisco, Gambito Radisch",
             "de": "Muschel-Variante, Radisch-Gambit",
-            "fr": "Variante de la palourde, Gambit Radisch"
+            "fr": "Variante de la palourde, Gambit Radisch",
+            "it": "Variante della vongola, Gambetto Radisch"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Clam Variation, Radisch Gambit",
@@ -376,7 +399,8 @@
             "es-ES": "Variante de la Almeja, Gambito de Rey Invertido",
             "pt-PT": "Variante do Marisco, Gambito do Rei Invertido",
             "de": "Muschel-Variante, Königsgambit im Anzug",
-            "fr": "Variante de la palourde, Gambit du roi inversé"
+            "fr": "Variante de la palourde, Gambit du roi inversé",
+            "it": "Variante della vongola, Gambetto di re invertito"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Clam Variation, King's Gambit Reversed",
@@ -394,7 +418,8 @@
         "es-ES": "Apertura Cabeza de Rey",
         "pt-PT": "Abertura Cabeça do Rei",
         "de": "Königskopf-Eröffnung",
-        "fr": "Ouverture de la tête du roi"
+        "fr": "Ouverture de la tête du roi",
+        "it": "Apertura della testa del re"
       },
       "lines": [
         {
@@ -407,7 +432,8 @@
             "es-ES": "Apertura Cabeza de Rey",
             "pt-PT": "Abertura Cabeça do Rei",
             "de": "Königskopf-Eröffnung",
-            "fr": "Ouverture de la tête du roi"
+            "fr": "Ouverture de la tête du roi",
+            "it": "Apertura della testa del re"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: King's Head Opening",
@@ -424,7 +450,8 @@
             "es-ES": "Apertura Cabeza de Rey",
             "pt-PT": "Abertura Cabeça do Rei",
             "de": "Königskopf-Eröffnung",
-            "fr": "Ouverture de la tête du roi"
+            "fr": "Ouverture de la tête du roi",
+            "it": "Apertura della testa del re"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: King's Head Opening",
@@ -442,7 +469,8 @@
         "es-ES": "Principal",
         "pt-PT": "Principal",
         "de": "Hauptvariante",
-        "fr": "Ligne principale"
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
@@ -455,7 +483,8 @@
             "es-ES": "Apertura de Peón de Rey",
             "pt-PT": "Abertura do Peão do Rei",
             "de": "Königsbauernspiel",
-            "fr": "Ouverture du pion roi"
+            "fr": "Ouverture du pion roi",
+            "it": "Apertura di re"
           },
           "eco": "B00",
           "opening": "King's Pawn Game",
@@ -472,7 +501,8 @@
             "es-ES": "Apertura de Peón de Rey",
             "pt-PT": "Abertura do Peão do Rei",
             "de": "Königsbauernspiel",
-            "fr": "Ouverture du pion roi"
+            "fr": "Ouverture du pion roi",
+            "it": "Apertura di re"
           },
           "eco": "C20",
           "opening": "King's Pawn Game",
@@ -493,7 +523,8 @@
         "es-ES": "Apertura Alapin",
         "pt-PT": "Abertura Alapin",
         "de": "Alapin-Eröffnung",
-        "fr": "Ouverture Alapin"
+        "fr": "Ouverture Alapin",
+        "it": "Apertura Alapin"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Alapin Opening",
@@ -510,7 +541,8 @@
         "es-ES": "Gambito Bávaro",
         "pt-PT": "Gambito Bávaro",
         "de": "Bayerisches Gambit",
-        "fr": "Gambit bavarois"
+        "fr": "Gambit bavarois",
+        "it": "Gambetto bavarese"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Bavarian Gambit",
@@ -527,7 +559,8 @@
         "es-ES": "Gambito Beyer",
         "pt-PT": "Gambito Beyer",
         "de": "Beyer-Gambit",
-        "fr": "Gambit Beyer"
+        "fr": "Gambit Beyer",
+        "it": "Gambetto Beyer"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Beyer Gambit",
@@ -544,7 +577,8 @@
         "es-ES": "Apertura Dresde",
         "pt-PT": "Abertura Dresden",
         "de": "Dresdner Eröffnung",
-        "fr": "Ouverture de Dresde"
+        "fr": "Ouverture de Dresde",
+        "it": "Apertura di Dresda"
       },
       "eco": "C44",
       "opening": "King's Pawn Game: Dresden Opening",
@@ -561,7 +595,8 @@
         "es-ES": "Defensa Gunderam, Gambito Gunderam",
         "pt-PT": "Defesa Gunderam, Gambito Gunderam",
         "de": "Gunderam-Verteidigung, Gunderam-Gambit",
-        "fr": "Défense Gunderam, Gambit Gunderam"
+        "fr": "Défense Gunderam, Gambit Gunderam",
+        "it": "Difesa Gunderam, Gambetto Gunderam"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: Gunderam Defense, Gunderam Gambit",
@@ -578,7 +613,8 @@
         "es-ES": "Gambito Gunderam",
         "pt-PT": "Gambito Gunderam",
         "de": "Gunderam-Gambit",
-        "fr": "Gambit Gunderam"
+        "fr": "Gambit Gunderam",
+        "it": "Gambetto Gunderam"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: Gunderam Gambit",
@@ -595,7 +631,8 @@
         "es-ES": "Apertura de Peón de Rey",
         "pt-PT": "Abertura do Peão do Rei",
         "de": "Königsbauern-Eröffnung",
-        "fr": "Ouverture du pion roi"
+        "fr": "Ouverture du pion roi",
+        "it": "Apertura del pedone di re"
       },
       "eco": "C20",
       "opening": "King's Pawn Opening",
@@ -612,7 +649,8 @@
         "es-ES": "Apertura de Peón de Rey: Speers",
         "pt-PT": "Abertura do Peão do Rei: Speers",
         "de": "Königsbauern-Eröffnung: Speers",
-        "fr": "Ouverture du pion roi: Speers"
+        "fr": "Ouverture du pion roi: Speers",
+        "it": "Apertura del pedone di re: Speers"
       },
       "eco": "C20",
       "opening": "King's Pawn Opening: Speers",
@@ -629,7 +667,8 @@
         "es-ES": "Apertura de Peón de Rey: Gambito Van Hooydoon",
         "pt-PT": "Abertura do Peão do Rei: Gambito Van Hooydoon",
         "de": "Königsbauern-Eröffnung: Van-Hooydoon-Gambit",
-        "fr": "Ouverture du pion roi: Gambit Van Hooydoon"
+        "fr": "Ouverture du pion roi: Gambit Van Hooydoon",
+        "it": "Apertura del pedone di re: Gambetto Van Hooydoon"
       },
       "eco": "C20",
       "opening": "King's Pawn Opening: Van Hooydoon Gambit",
@@ -646,7 +685,8 @@
         "es-ES": "Gambito La Bourdonnais",
         "pt-PT": "Gambito La Bourdonnais",
         "de": "La-Bourdonnais-Gambit",
-        "fr": "Gambit La Bourdonnais"
+        "fr": "Gambit La Bourdonnais",
+        "it": "Gambetto La Bourdonnais"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: La Bourdonnais Gambit",
@@ -663,7 +703,8 @@
         "es-ES": "Variante Leonardis",
         "pt-PT": "Variante Leonardis",
         "de": "Leonardis-Variante",
-        "fr": "Variante Leonardis"
+        "fr": "Variante Leonardis",
+        "it": "Variante Leonardis"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Leonardis Variation",
@@ -680,7 +721,8 @@
         "es-ES": "Defensa Maróczy",
         "pt-PT": "Defesa Maróczy",
         "de": "Maróczy-Verteidigung",
-        "fr": "Défense Maróczy"
+        "fr": "Défense Maróczy",
+        "it": "Difesa Maróczy"
       },
       "eco": "B07",
       "opening": "King's Pawn Game: Maróczy Defense",
@@ -697,7 +739,8 @@
         "es-ES": "Defensa McConnell",
         "pt-PT": "Defesa McConnell",
         "de": "McConnell-Verteidigung",
-        "fr": "Défense McConnell"
+        "fr": "Défense McConnell",
+        "it": "Difesa McConnell"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: McConnell Defense",
@@ -714,7 +757,8 @@
         "es-ES": "Apertura Mengarini",
         "pt-PT": "Abertura Mengarini",
         "de": "Mengarini-Eröffnung",
-        "fr": "Ouverture Mengarini"
+        "fr": "Ouverture Mengarini",
+        "it": "Apertura Mengarini"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Mengarini's Opening",
@@ -731,7 +775,8 @@
         "es-ES": "Ataque Napoleón",
         "pt-PT": "Ataque Napoleão",
         "de": "Napoleon-Angriff",
-        "fr": "Attaque Napoléon"
+        "fr": "Attaque Napoléon",
+        "it": "Attacco Napoleone"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Napoleon Attack",
@@ -748,7 +793,8 @@
         "es-ES": "Gambito del Ala Pachman",
         "pt-PT": "Gambito da Ala Pachman",
         "de": "Pachman-Flügelgambit",
-        "fr": "Gambit de l'aile Pachman"
+        "fr": "Gambit de l'aile Pachman",
+        "it": "Gambetto dell'ala Pachman"
       },
       "eco": "C44",
       "opening": "King's Pawn Game: Pachman Wing Gambit",
@@ -765,7 +811,8 @@
         "es-ES": "Gambito Philidor",
         "pt-PT": "Gambito Philidor",
         "de": "Philidor-Gambit",
-        "fr": "Gambit Philidor"
+        "fr": "Gambit Philidor",
+        "it": "Gambetto Philidor"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Philidor Gambit",
@@ -782,7 +829,8 @@
         "es-ES": "Gambito Schulze-Müller",
         "pt-PT": "Gambito Schulze-Müller",
         "de": "Schulze-Müller-Gambit",
-        "fr": "Gambit Schulze-Müller"
+        "fr": "Gambit Schulze-Müller",
+        "it": "Gambetto Schulze-Müller"
       },
       "eco": "C44",
       "opening": "King's Pawn Game: Schulze-Müller Gambit",
@@ -799,7 +847,8 @@
         "es-ES": "Apertura Tortuga",
         "pt-PT": "Abertura Tartaruga",
         "de": "Schildkröten-Eröffnung",
-        "fr": "Ouverture de la tortue"
+        "fr": "Ouverture de la tortue",
+        "it": "Apertura della tartaruga"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Tortoise Opening",
@@ -816,7 +865,8 @@
         "es-ES": "Gambito Weber",
         "pt-PT": "Gambito Weber",
         "de": "Weber-Gambit",
-        "fr": "Gambit Weber"
+        "fr": "Gambit Weber",
+        "it": "Gambetto Weber"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Weber Gambit",

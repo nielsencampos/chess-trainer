@@ -8,7 +8,8 @@
     "es-ES": "Ataque Grob",
     "pt-PT": "Ataque Grob",
     "de": "Grobs Angriff",
-    "fr": "Début Grob"
+    "fr": "Début Grob",
+    "it": "Attacco Grob"
   },
   "order": null,
   "variants": [
@@ -21,7 +22,8 @@
         "es-ES": "Gambito Grob",
         "pt-PT": "Gambito Grob",
         "de": "Grob-Gambit",
-        "fr": "Gambit Grob"
+        "fr": "Gambit Grob",
+        "it": "Gambetto Grob"
       },
       "lines": [
         {
@@ -34,7 +36,8 @@
             "es-ES": "Gambito Grob",
             "pt-PT": "Gambito Grob",
             "de": "Grob-Gambit",
-            "fr": "Gambit Grob"
+            "fr": "Gambit Grob",
+            "it": "Gambetto Grob"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit",
@@ -51,7 +54,8 @@
             "es-ES": "Gambito Grob, Gambito Fritz",
             "pt-PT": "Gambito Grob, Gambito Fritz",
             "de": "Grob-Gambit, Fritz-Gambit",
-            "fr": "Gambit Grob, Gambit Fritz"
+            "fr": "Gambit Grob, Gambit Fritz",
+            "it": "Gambetto Grob, Gambetto Fritz"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Fritz Gambit",
@@ -68,7 +72,8 @@
             "es-ES": "Gambito Grob, Gambito Fritz, Contragambito Romford",
             "pt-PT": "Gambito Grob, Gambito Fritz, Contragambito Romford",
             "de": "Grob-Gambit, Fritz-Gambit, Romford-Gegengambit",
-            "fr": "Gambit Grob, Gambit Fritz, Contre-gambit Romford"
+            "fr": "Gambit Grob, Gambit Fritz, Contre-gambit Romford",
+            "it": "Gambetto Grob, Gambetto Fritz, Controgambetto Romford"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Fritz Gambit, Romford Countergambit",
@@ -85,7 +90,8 @@
             "es-ES": "Gambito Grob, Gambito Richter-Grob",
             "pt-PT": "Gambito Grob, Gambito Richter-Grob",
             "de": "Grob-Gambit, Richter-Grob-Gambit",
-            "fr": "Gambit Grob, Gambit Richter-Grob"
+            "fr": "Gambit Grob, Gambit Richter-Grob",
+            "it": "Gambetto Grob, Gambetto Richter-Grob"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Richter-Grob Gambit",
@@ -102,7 +108,8 @@
             "es-ES": "Gambito Grob, Gambito Keres",
             "pt-PT": "Gambito Grob, Gambito Keres",
             "de": "Grob-Gambit, Keres-Gambit",
-            "fr": "Gambit Grob, Gambit Keres"
+            "fr": "Gambit Grob, Gambit Keres",
+            "it": "Gambetto Grob, Gambetto Keres"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Keres Gambit",
@@ -119,7 +126,8 @@
             "es-ES": "Gambito Grob, Gambito Basman",
             "pt-PT": "Gambito Grob, Gambito Basman",
             "de": "Grob-Gambit, Basman-Gambit",
-            "fr": "Gambit Grob, Gambit Basman"
+            "fr": "Gambit Grob, Gambit Basman",
+            "it": "Gambetto Grob, Gambetto Basman"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Basman Gambit",
@@ -137,7 +145,8 @@
         "es-ES": "Gambito Zilbermints",
         "pt-PT": "Gambito Zilbermints",
         "de": "Zilbermints-Gambit",
-        "fr": "Gambit Zilbermints"
+        "fr": "Gambit Zilbermints",
+        "it": "Gambetto Zilbermints"
       },
       "lines": [
         {
@@ -150,7 +159,8 @@
             "es-ES": "Gambito Zilbermints",
             "pt-PT": "Gambito Zilbermints",
             "de": "Zilbermints-Gambit",
-            "fr": "Gambit Zilbermints"
+            "fr": "Gambit Zilbermints",
+            "it": "Gambetto Zilbermints"
           },
           "eco": "A00",
           "opening": "Grob Opening: Zilbermints Gambit",
@@ -167,7 +177,8 @@
             "es-ES": "Gambito Zilbermints, Gambito Zilbermints-Hartlaub",
             "pt-PT": "Gambito Zilbermints, Gambito Zilbermints-Hartlaub",
             "de": "Zilbermints-Gambit, Zilbermints-Hartlaub-Gambit",
-            "fr": "Gambit Zilbermints, Gambit Zilbermints-Hartlaub"
+            "fr": "Gambit Zilbermints, Gambit Zilbermints-Hartlaub",
+            "it": "Gambetto Zilbermints, Gambetto Zilbermints-Hartlaub"
           },
           "eco": "A00",
           "opening": "Grob Opening: Zilbermints Gambit, Zilbermints-Hartlaub Gambit",
@@ -184,7 +195,8 @@
             "es-ES": "Gambito Zilbermints, Defensa Schiller",
             "pt-PT": "Gambito Zilbermints, Defesa Schiller",
             "de": "Zilbermints-Gambit, Schiller-Verteidigung",
-            "fr": "Gambit Zilbermints, Défense Schiller"
+            "fr": "Gambit Zilbermints, Défense Schiller",
+            "it": "Gambetto Zilbermints, Difesa Schiller"
           },
           "eco": "A00",
           "opening": "Grob Opening: Zilbermints Gambit, Schiller Defense",
@@ -202,7 +214,8 @@
         "es-ES": "Doble Grob",
         "pt-PT": "Grob Duplo",
         "de": "Doppel-Grob",
-        "fr": "Double Grob"
+        "fr": "Double Grob",
+        "it": "Doppio Grob"
       },
       "lines": [
         {
@@ -215,7 +228,8 @@
             "es-ES": "Doble Grob",
             "pt-PT": "Grob Duplo",
             "de": "Doppel-Grob",
-            "fr": "Double Grob"
+            "fr": "Double Grob",
+            "it": "Doppio Grob"
           },
           "eco": "A00",
           "opening": "Grob Opening: Double Grob",
@@ -232,7 +246,8 @@
             "es-ES": "Doble Grob, Gambito Coca-Cola",
             "pt-PT": "Grob Duplo, Gambito Coca-Cola",
             "de": "Doppel-Grob, Coca-Cola-Gambit",
-            "fr": "Double Grob, Gambit Coca-Cola"
+            "fr": "Double Grob, Gambit Coca-Cola",
+            "it": "Doppio Grob, Gambetto Coca-Cola"
           },
           "eco": "A00",
           "opening": "Grob Opening: Double Grob, Coca-Cola Gambit",
@@ -250,7 +265,8 @@
         "es-ES": "Defensa Keene",
         "pt-PT": "Defesa Keene",
         "de": "Keene-Verteidigung",
-        "fr": "Défense Keene"
+        "fr": "Défense Keene",
+        "it": "Difesa Keene"
       },
       "lines": [
         {
@@ -263,7 +279,8 @@
             "es-ES": "Defensa Keene",
             "pt-PT": "Defesa Keene",
             "de": "Keene-Verteidigung",
-            "fr": "Défense Keene"
+            "fr": "Défense Keene",
+            "it": "Difesa Keene"
           },
           "eco": "A00",
           "opening": "Grob Opening: Keene Defense",
@@ -280,7 +297,8 @@
             "es-ES": "Defensa Keene, Línea Principal",
             "pt-PT": "Defesa Keene, Linha Principal",
             "de": "Keene-Verteidigung, Hauptvariante",
-            "fr": "Défense Keene, Ligne principale"
+            "fr": "Défense Keene, Ligne principale",
+            "it": "Difesa Keene, Linea principale"
           },
           "eco": "A00",
           "opening": "Grob Opening: Keene Defense, Main Line",
@@ -301,7 +319,8 @@
         "es-ES": "Gambito Alessi",
         "pt-PT": "Gambito Alessi",
         "de": "Alessi-Gambit",
-        "fr": "Gambit Alessi"
+        "fr": "Gambit Alessi",
+        "it": "Gambetto Alessi"
       },
       "eco": "A00",
       "opening": "Grob Opening: Alessi Gambit",
@@ -318,7 +337,8 @@
         "es-ES": "Gambito Grob Rehusado",
         "pt-PT": "Gambito Grob Recusado",
         "de": "Abgelehntes Grob-Gambit",
-        "fr": "Gambit Grob refusé"
+        "fr": "Gambit Grob refusé",
+        "it": "Gambetto Grob rifiutato"
       },
       "eco": "A00",
       "opening": "Grob Opening: Grob Gambit Declined",
@@ -335,7 +355,8 @@
         "es-ES": "Defensa Londres",
         "pt-PT": "Defesa Londres",
         "de": "Londoner Verteidigung",
-        "fr": "Défense de Londres"
+        "fr": "Défense de Londres",
+        "it": "Difesa di Londra"
       },
       "eco": "A00",
       "opening": "Grob Opening: London Defense",
@@ -352,7 +373,8 @@
         "es-ES": "Apertura Grob",
         "pt-PT": "Abertura Grob",
         "de": "Grob-Eröffnung",
-        "fr": "Ouverture Grob"
+        "fr": "Ouverture Grob",
+        "it": "Apertura Grob"
       },
       "eco": "A00",
       "opening": "Grob Opening",
@@ -369,7 +391,8 @@
         "es-ES": "Contragambito Romford",
         "pt-PT": "Contragambito Romford",
         "de": "Romford-Gegengambit",
-        "fr": "Contre-gambit Romford"
+        "fr": "Contre-gambit Romford",
+        "it": "Controgambetto Romford"
       },
       "eco": "A00",
       "opening": "Grob Opening: Romford Countergambit",
@@ -386,7 +409,8 @@
         "es-ES": "Púa, Ataque Hurst",
         "pt-PT": "Espigão, Ataque Hurst",
         "de": "Stachel, Hurst-Angriff",
-        "fr": "Pointe, Attaque Hurst"
+        "fr": "Pointe, Attaque Hurst",
+        "it": "Punta, Attacco Hurst"
       },
       "eco": "A00",
       "opening": "Grob Opening: Spike, Hurst Attack",
@@ -403,7 +427,8 @@
         "es-ES": "Ataque Púa",
         "pt-PT": "Ataque Espigão",
         "de": "Stachelangriff",
-        "fr": "Attaque de la pointe"
+        "fr": "Attaque de la pointe",
+        "it": "Attacco della punta"
       },
       "eco": "A00",
       "opening": "Grob Opening: Spike Attack",

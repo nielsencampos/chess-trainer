@@ -53,6 +53,6 @@ convention = "google"
 
 # Spelling of code, comments and docstrings (scripts/check_text.py checks the prose).
 [tool.codespell]
-skip = "./.venv,./.cache,./build,./data,./catalog/data,./openings,./evals,./web/js/vendor,./web/fonts,./web/pieces,./web/help,*.lock,*.svg,*.webp,*.png,*.pt-BR.*,*.es.*,README.md,./docs,./web/i18n,./i18n/glossary/pt-BR.toml,./i18n/glossary/pt-PT.toml,./i18n/glossary/de.toml,./i18n/glossary/fr.toml,./i18n/glossary/es.toml,./i18n/glossary/es-ES.toml,./i18n/names,./i18n/wikipedia.json"
+skip = "./.venv,./.cache,./build,./data,./catalog/data,./openings,./evals,./web/js/vendor,./web/fonts,./web/pieces,./web/help,*.lock,*.svg,*.webp,*.png,*.pt-BR.*,*.es.*,README.md,./docs,./web/i18n,./i18n/glossary/pt-BR.toml,./i18n/glossary/pt-PT.toml,./i18n/glossary/de.toml,./i18n/glossary/fr.toml,./i18n/glossary/it.toml,./i18n/glossary/es.toml,./i18n/glossary/es-ES.toml,./i18n/names,./i18n/wikipedia.json"
 # PyInstaller's `datas`, a name, and Spanish and Portuguese words the tests quote.
 ignore-words-list = "datas,flor,variante,oficial"

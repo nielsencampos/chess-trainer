@@ -23,6 +23,7 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
             "Español (Latinoamérica)",
             "Español (España)",
             "Français",
+            "Italiano",
             "Português (Brasil)",
             "Português (Portugal)",
         ]
