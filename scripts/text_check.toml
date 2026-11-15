@@ -11,7 +11,7 @@ all = [
     "arm64", "amd64", "zip", "Merida", "Lichess", "Chessmaster", "SNES", "CBX",
     # Chess terms and abbreviations.
     "PGN", "FEN", "SAN", "EPD", "UCI", "NAG", "NAGs", "FIDE", "ICCF", "WIM", "DGT", "Elo",
-    "Chess960", "Ajedrez960", "bullet", "Bullet", "blitz", "Blitz", "premove", "premoves",
+    "Chess960", "bullet", "Bullet", "blitz", "Blitz", "premove", "premoves",
     "Premove",
     # People, channels and works on the About page (proper names are never translated).
     "agadmator", "Anatoly", "Botez", "BotezLive", "Chessflix", "Chessly", "Danya", "Evandro",
@@ -81,6 +81,9 @@ en = [
     { text = "ponytail-audit", rule = "UPPERCASE_SENTENCE_START" },
     { text = "release", rule = "UPPERCASE_SENTENCE_START" },
     { text = "applications", rule = "POSSESSIVE_APOSTROPHE" },  # "the applications menu"
+    # Spanish words the brief quotes.
+    { text = "computadora", rule = "MORFOLOGIK_RULE_EN_US" },
+    { text = "tú", rule = "MORFOLOGIK_RULE_EN_US" },
 ]
 pt-BR = [
     { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
