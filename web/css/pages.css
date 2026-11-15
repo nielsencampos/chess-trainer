@@ -17,12 +17,12 @@
   margin: 0;
   padding: 10px 12px;
   background: var(--surface-2);
-  border-left: 3px solid var(--warn);
+  border-inline-start: 3px solid var(--warn);
   border-radius: 6px;
 }
 
 .notice-bad {
-  border-left-color: var(--bad);
+  border-inline-start-color: var(--bad);
 }
 
 .notice strong {
@@ -68,7 +68,7 @@
   flex-direction: column;
   gap: 6px;
   margin: 8px 0 0;
-  padding-left: 20px;
+  padding-inline-start: 20px;
 }
 
 .help-section h3 {
@@ -99,7 +99,7 @@
   flex-direction: column;
   gap: 12px;
   margin: 0;
-  padding-left: 20px;
+  padding-inline-start: 20px;
 }
 
 .about-path h4,
@@ -183,6 +183,7 @@
   font-size: 8pt;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
   transform: scale(var(--sheet-scale));
+  /* Physical: transform-origin has no logical keyword. Revisit with right-to-left (#37). */
   transform-origin: top left;
 }
 
@@ -256,7 +257,7 @@
 }
 
 .cell + .cell {
-  border-left: 1px solid #000;
+  border-inline-start: 1px solid #000;
 }
 
 .sheet-moves {
@@ -309,14 +310,14 @@
 }
 
 .sheet-result strong {
-  margin-right: 2mm;
+  margin-inline-end: 2mm;
   text-transform: uppercase;
 }
 
 .sheet-result .box {
   width: 5mm;
   height: 5mm;
-  margin-left: 6mm;
+  margin-inline-start: 6mm;
   border: 1px solid #000;
 }
 

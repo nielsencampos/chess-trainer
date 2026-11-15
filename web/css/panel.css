@@ -154,9 +154,9 @@
 .tree-children {
   display: flex;
   flex-direction: column;
-  margin-left: 12px;
-  padding-left: 6px;
-  border-left: 1px solid var(--line);
+  margin-inline-start: 12px;
+  padding-inline-start: 6px;
+  border-inline-start: 1px solid var(--line);
 }
 
 .tree-node summary input {
@@ -165,7 +165,7 @@
 }
 
 .opening-count {
-  margin-left: auto;
+  margin-inline-start: auto;
   color: var(--muted);
   font: 400 0.75rem var(--font-mono);
 }
@@ -198,7 +198,7 @@
 }
 
 .variant-eco {
-  margin-left: auto;
+  margin-inline-start: auto;
   color: var(--muted);
   font: 400 0.75rem var(--font-mono);
 }
@@ -319,7 +319,7 @@
   padding: 0 8px;
   background: var(--surface-2);
   color: var(--muted);
-  text-align: right;
+  text-align: end;
 }
 
 .movelist .move {
@@ -401,7 +401,7 @@
 
 .tab {
   padding: 8px 12px;
-  text-align: left;
+  text-align: start;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -448,7 +448,7 @@
 
 .saved-result {
   flex: none;
-  margin-left: auto;
+  margin-inline-start: auto;
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -545,7 +545,7 @@
 
 /* Review: time a move took, comments and side variations from the PGN. */
 .movelist .spent {
-  margin-left: auto;
+  margin-inline-start: auto;
   color: var(--muted);
   font-size: 0.72rem;
 }
@@ -563,7 +563,8 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 4px 10px 6px 2.9em;
+  padding-block: 4px 6px;
+  padding-inline: 2.9em 10px;
   background: var(--surface-2);
   border-bottom: 1px solid var(--line);
   font: 400 0.8rem/1.45 var(--font-ui);
@@ -659,51 +660,6 @@
 .dice {
   width: 18px;
   height: 18px;
-}
-
-.eval-bar {
-  position: absolute;
-  top: var(--coord-gutter);
-  bottom: var(--coord-gutter);
-  left: -30px;
-  width: 22px;
-  overflow: hidden;
-  background: #3a3a3a;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-}
-
-.eval-fill {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50%;
-  background: #f2f2f2;
-  transition: height 0.25s ease;
-}
-
-.eval-bar.flipped .eval-fill {
-  top: 0;
-  bottom: auto;
-}
-
-.eval-label {
-  position: absolute;
-  left: 0;
-  right: 0;
-  font: 700 0.62rem/1 var(--font-mono);
-  text-align: center;
-}
-
-.eval-label.bottom {
-  bottom: 4px;
-  color: #3a3a3a;
-}
-
-.eval-label.top {
-  top: 4px;
-  color: #f2f2f2;
 }
 
 /* Export and Delete share one row, the confirm text included. */

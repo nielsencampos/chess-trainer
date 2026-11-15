@@ -78,7 +78,7 @@ select {
   padding: 16px;
   overflow-y: auto;
   background: var(--surface-2);
-  border-right: 1px solid var(--line);
+  border-inline-end: 1px solid var(--line);
 }
 
 .brand {
@@ -116,11 +116,11 @@ select {
 }
 
 .resizer-left {
-  left: calc(var(--sidebar-width) - 4px);
+  inset-inline-start: calc(var(--sidebar-width) - 4px);
 }
 
 .resizer-right {
-  right: calc(var(--movebar-width) - 4px);
+  inset-inline-end: calc(var(--movebar-width) - 4px);
 }
 
 body.is-resizing {
@@ -149,11 +149,11 @@ body.is-resizing {
 }
 
 .bar-toggle-left {
-  left: 8px;
+  inset-inline-start: 8px;
 }
 
 .bar-toggle-right {
-  right: 8px;
+  inset-inline-end: 8px;
 }
 
 .sidebar-controls {
@@ -222,7 +222,7 @@ body.is-resizing {
   min-height: 0;
   padding: 16px;
   background: var(--surface-2);
-  border-left: 1px solid var(--line);
+  border-inline-start: 1px solid var(--line);
 }
 
 .opening-box {
@@ -269,7 +269,6 @@ body.is-resizing {
   flex: none;
 }
 
-/* The evaluation bar hangs to the left of the board, in the board area's padding. */
 /* A wooden frame: a soft grain, a lit top edge, and the board set slightly into it. */
 .board-holder {
   position: relative;
