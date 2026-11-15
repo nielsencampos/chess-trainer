@@ -96,11 +96,11 @@ def test_opening_names_follow_the_language(page: Page, seed_prefs):
     wait_for_ply(page, 2)
     wait_for_your_move(page, "Sua vez")
     click_move(page, "c2", "c3")
-    expect(page.locator("#opening-name")).to_have_text("B22 · Defesa Siciliana: Variação Alapin")
+    expect(page.locator("#opening-name")).to_have_text("B22 · Defesa Siciliana: Variante Alapin")
 
     page.locator("#resign").click()
     page.locator("#resign").click()
-    expect(page.locator("#end-variation")).to_have_text("B22 · Defesa Siciliana: Variação Alapin")
+    expect(page.locator("#end-variation")).to_have_text("B22 · Defesa Siciliana: Variante Alapin")
     page.locator("#locale-picker").select_option("en")
     expect(page.locator("#end-variation")).to_have_text("B22 · Sicilian Defense: Alapin Variation")
     expect(page.locator("#opening-name")).to_have_text("B22 · Sicilian Defense: Alapin Variation")

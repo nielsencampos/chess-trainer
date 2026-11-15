@@ -16,19 +16,19 @@
 direction = "ltr"
 scripts = ["latin"]
 languagetool = "en-US"
-vale = ["ChessTrainer"]
+vale = ["ChessTrainer", "GlossaryEn"]
 reviewed = true
 
 [locales.pt-BR]
 direction = "ltr"
 scripts = ["latin"]
 languagetool = "pt-BR"
-vale = ["ChessTrainer", "PtBR", "UI"]
+vale = ["ChessTrainer", "PtBR", "GlossaryPtBR", "UI"]
 reviewed = true
 
 [locales.es]
 direction = "ltr"
 scripts = ["latin"]
 languagetool = "es"
-vale = ["ChessTrainer", "Es", "UI"]
+vale = ["ChessTrainer", "Es", "GlossaryEs", "UI"]
 reviewed = true

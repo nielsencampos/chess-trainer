@@ -138,6 +138,7 @@ def test_a_glossary_row_has_a_source_or_is_machine_translated(tmp_path):
             [
                 f'term = "check"\ntranslation = "xeque"\nsource = "{WIKI}"',
                 'term = "gambit"\ntranslation = "gambito"\nmachine = true\nnote = "why"',
+                'term = "game"\ntranslation = "partida"\nmachine = true\navoid = ["jogo"]',
             ]
         ),
     )
@@ -146,6 +147,8 @@ def test_a_glossary_row_has_a_source_or_is_machine_translated(tmp_path):
     assert terms["check"].source == WIKI
     assert terms["gambit"].origin == "machine"
     assert terms["gambit"].note == "why"
+    assert terms["gambit"].avoid == ()
+    assert terms["game"].avoid == ("jogo",)
 
 
 @pytest.mark.parametrize(
@@ -158,6 +161,10 @@ def test_a_glossary_row_has_a_source_or_is_machine_translated(tmp_path):
         'term = "check"\ntranslation = "xeque"\nrule = true',  # rules are for names only
         'term = "check"\nmachine = true',  # no translation
         'term = "check"\ntranslation = "xeque"\nmachine = true\nsorce = "typo"',
+        'term = "game"\ntranslation = "partida"\nmachine = true\navoid = "jogo"',  # not a list
+        'term = "game"\ntranslation = "partida"\nmachine = true\navoid = [""]',
+        'term = "game"\ntranslation = "partida"\nmachine = true\navoid = ["jogo", "Jogo"]',
+        'term = "game"\ntranslation = "partida"\nmachine = true\navoid = ["Partida"]',
     ],
 )
 def test_a_bad_glossary_row_fails(tmp_path, row):

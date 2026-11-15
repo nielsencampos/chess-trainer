@@ -188,7 +188,7 @@ alguém sai da teoria, o Stockfish assume no nível escolhido. Desmarcar "Mostra
 lista de lances e o nome da abertura durante a partida, para você anotar no papel.
 
 **Além das aberturas:** relógios de bullet e os de blitz, rápido e clássico de um relógio DGT 3000;
-Chess960; todas as partidas salvas, com filtros, exportação em PGN, revisão lance a lance e novo jogo
+Chess960; todas as partidas salvas, com filtros, exportação em PGN, revisão lance a lance e nova partida
 a partir de qualquer lance (ainda não de uma partida Chess960); importação de PGN colado, de arquivo ou das partidas públicas de um
 jogador no Chess.com ou no Lichess; barra de avaliação do Stockfish na revisão e no fim da partida (uma checagem rápida: para uma
 análise completa, exporte o PGN para o Chess.com ou o Lichess); planilha de anotação A4 para imprimir,

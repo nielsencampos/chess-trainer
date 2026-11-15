@@ -8,7 +8,7 @@
    Wikipedia gives the name, or else its Wikidata label. The page is recorded as `source`.
 2. The glossary (`i18n/glossary/{locale}.toml`), segment by segment: the name is split at its
    commas and each segment must be a glossary term, or match a term with a `{name}` placeholder
-   ("{name} Variation" → "Variação {name}"), where `{name}` is a proper name kept as it is.
+   ("{name} Variation" → "Variante {name}"), where `{name}` is a proper name kept as it is.
    Recorded as `rule = true`.
 3. Machine translation: what is left is listed in `i18n/machine/{locale}.toml` with an empty
    `name`. Once someone fills it in, the next run moves it into `openings/` with `machine = true`.
@@ -27,6 +27,7 @@ import re
 import sys
 import time
 import tomllib
+import urllib.error
 import urllib.parse
 import urllib.request
 from collections import Counter
@@ -55,6 +56,11 @@ WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php"
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 USER_AGENT = "chess-trainer-catalog/1.0 (opening names; python-urllib)"
 BATCH = 50
+# Titles looked up between two saves of the cache, so a stopped run keeps what it found.
+CHUNK = 500
+# HTTP statuses that mean "slow down" or "try later", and how often to try again.
+RETRY_STATUSES = {429, 503}
+RETRIES = 6
 SEPARATORS = (", ", ": ", " - ", " \u2013 ")  # The last is an en dash.
 # Characters a Wikipedia title cannot have.
 NOT_IN_TITLES = re.compile(r"[#<>\[\]|{}]")
@@ -86,13 +92,16 @@ class OfflineError(RuntimeError):
 class WikidataRemote:
     """The real lookup: the English Wikipedia for the item, Wikidata for its articles and labels."""
 
-    def __init__(self, pause: float = 0.5) -> None:
+    def __init__(self, pause: float = 0.5, backoff: float = 30.0) -> None:
         """Creates the lookup.
 
         Args:
             pause (float): Seconds between requests, to be gentle with the API.
+            backoff (float): Seconds to wait after a "too many requests" answer that does not
+                say how long, doubled on each try.
         """
         self.pause = pause
+        self.backoff = backoff
 
     def _get(self, url: str, params: dict[str, str]) -> dict:
         """Calls a MediaWiki API.
@@ -103,11 +112,25 @@ class WikidataRemote:
 
         Returns:
             dict: The JSON answer.
+
+        Raises:
+            urllib.error.HTTPError: The API refused, or still asked to slow down after every
+                retry.
         """
         query = urllib.parse.urlencode({**params, "format": "json", "formatversion": "2"})
         request = urllib.request.Request(f"{url}?{query}", headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(request, timeout=30) as response:
-            answer = json.load(response)
+        for attempt in range(RETRIES + 1):
+            try:
+                with urllib.request.urlopen(request, timeout=30) as response:
+                    answer = json.load(response)
+                break
+            except urllib.error.HTTPError as error:
+                if error.code not in RETRY_STATUSES or attempt == RETRIES:
+                    raise
+                after = error.headers.get("Retry-After", "") if error.headers else ""
+                wait = float(after) if after.isdigit() else self.backoff * 2**attempt
+                print(f"{error.code} from {url}; waiting {wait:.0f} s", file=sys.stderr)
+                time.sleep(wait)
         time.sleep(self.pause)
         return answer
 
@@ -232,9 +255,12 @@ class WikipediaCache:
             raise OfflineError(
                 f"{len(missing)} lookups are not in {self.path.name}, e.g. {missing[0]!r}"
             )
-        fetched = self.remote.fetch(missing)
-        self.entries.update({title: fetched.get(title) for title in missing})
-        self.changed = True
+        for start in range(0, len(missing), CHUNK):
+            chunk = missing[start : start + CHUNK]
+            fetched = self.remote.fetch(chunk)
+            self.entries.update({title: fetched.get(title) for title in chunk})
+            self.changed = True
+            self.save()
 
     def get(self, title: str) -> CacheEntry:
         """A title's entry.
