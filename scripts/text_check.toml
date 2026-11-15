@@ -84,6 +84,7 @@ en = [
     # Spanish words the brief quotes.
     { text = "computadora", rule = "MORFOLOGIK_RULE_EN_US" },
     { text = "tú", rule = "MORFOLOGIK_RULE_EN_US" },
+    { text = "Variação", rule = "MORFOLOGIK_RULE_EN_US" },  # the brief's history of the names
 ]
 pt-BR = [
     { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
