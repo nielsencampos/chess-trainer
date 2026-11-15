@@ -12,7 +12,7 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 
 > **La evaluación aquí es básica**
 >
-> La barra de evaluación y los iconos de las jugadas (mejor jugada, error, error grave…) salen de una revisión rápida de Stockfish y son solo una pista. Para un análisis de verdad, exporta el PGN y analízalo en Chess.com, Lichess u otra herramienta de análisis.
+> La barra de evaluación y los iconos de las jugadas (mejor jugada, error, error garrafal…) salen de una revisión rápida de Stockfish y son solo una pista. Para un análisis de verdad, exporta el PGN y analízalo en Chess.com, Lichess u otra herramienta de análisis.
 
 ## Empezar una partida
 
@@ -21,7 +21,7 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 - Chess960: sortea una posición inicial o pega el FEN de una de las 960. Para enrocar, haz clic en el rey y luego en una casilla entre él y la torre, o en la propia torre.
 - Nivel del bot: el Elo junto a cada nivel es nominal, en la escala propia de Stockfish, y no se ha medido. No es un Elo de Chess.com ni de Lichess.
 - Ritmo de juego: los ritmos de un reloj de torneo real, del bullet al clásico, o sin reloj. El tiempo de respuesta del bot es Humano, que gasta su reloj como una persona, o Instantáneo.
-- Opciones: avisar al salir de la teoría, permitir premovimientos y dejar que el bot se desvíe de su línea a propósito, desde una jugada elegida, para entrenar también contra sorpresas.
+- Opciones: avisar al salir de la teoría, permitir jugadas anticipadas y dejar que el bot se desvíe de su línea a propósito, desde una jugada elegida, para entrenar también contra sorpresas.
 
 ![Nueva partida: color, líneas, nivel y reloj.](../web/help/es/setup.webp)
 
@@ -32,7 +32,7 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 - Haz clic o arrastra las piezas. El bot juega las jugadas de libro de la línea sorteada y, cuando la teoría se acaba, o alguien sale de ella, Stockfish toma el relevo en el nivel elegido.
 - Las etiquetas bajo el tablero indican a quién le toca, si sigues en la teoría y dónde tú o el bot salieron de ella.
 - Mostrar jugadas, en la barra derecha, oculta el nombre de la apertura y la lista de jugadas hasta el final de la partida: juega sin pistas o anota las jugadas en papel.
-- Con los premovimientos activados, puedes dejar una jugada en cola mientras el bot piensa. Con ellos desactivados, Deshacer jugada deshace tu última jugada mientras la respuesta del bot aún no se ve.
+- Con las jugadas anticipadas activadas, puedes dejar una jugada en cola mientras el bot piensa. Con ellas desactivadas, Deshacer jugada deshace tu última jugada mientras la respuesta del bot aún no se ve.
 - Abandonar pide un segundo clic, para que un clic sin querer no termine la partida.
 
 ![Haz clic o arrastra una pieza; el bot responde con el libro.](../web/help/es/play.webp)
