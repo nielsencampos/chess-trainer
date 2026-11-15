@@ -16,7 +16,13 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
     page.goto("/")
     options = page.locator("#locale-picker option")
     expect(options).to_have_text(
-        ["English (US)", "English (UK)", "Español (Latinoamérica)", "Português (Brasil)"]
+        [
+            "English (US)",
+            "English (UK)",
+            "Español (Latinoamérica)",
+            "Español (España)",
+            "Português (Brasil)",
+        ]
     )
     expect(page.locator("#locale-picker")).to_have_value("en")
 

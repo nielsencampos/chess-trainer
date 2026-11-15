@@ -1,4 +1,4 @@
-# es speaks to the reader as "tú", never "usted": no usted pronouns or imperatives.
+# es and es-ES speak to the reader as "tú", never "usted": no usted pronouns or imperatives.
 extends: existence
 message: "Use 'tú' as the form of address, not '%s'."
 level: error

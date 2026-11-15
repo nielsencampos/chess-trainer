@@ -41,3 +41,13 @@ scripts = ["latin"]
 languagetool = "es"
 vale = ["ChessTrainer", "Es", "GlossaryEs", "UI"]
 reviewed = true
+
+# Spanish (Spain): machine-made, unreviewed. Its own translation, not a copy of es, which stays
+# Latin American Spanish.
+[locales.es-ES]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "es-ES"
+vale = ["ChessTrainer", "Es", "GlossaryEsES", "UI"]
+wikipedia = "es"
+reviewed = false

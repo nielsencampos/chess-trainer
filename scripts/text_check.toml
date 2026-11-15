@@ -22,7 +22,7 @@ all = [
     # The Thanks section of the About page.
     "Niklas", "Fiekas", "Hernandez", "Marroquin", "Badrap",
     # The language links at the top of each document.
-    "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica",
+    "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España",
 ]
 en = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
@@ -49,6 +49,12 @@ es = [
     "launcher",  # quoting an English error message
     "backend",  # the author's own words on the About page
     "issue",  # GitHub's word, linked
+    "result",  # the name @badrap/result
+]
+es-ES = [
+    "streamer", "streamers", "semiprofesional", "semiprofesionales", "desacompasa", "min", "US",
+    "xadrez", "um", "mestre",
+    "backend",  # the author's own words on the About page
     "result",  # the name @badrap/result
 ]
 
@@ -80,6 +86,7 @@ pt-BR = [
     "NUMBER_ABREVIATION",  # "Nº" on the scoresheet
 ]
 es = []
+es-ES = []
 
 [ignore]
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.
@@ -118,4 +125,11 @@ es = [
     { text = "Hernandez", rule = "ES_SIMPLE_REPLACE_SIMPLE_HERNANDEZ" },  # his name, as he signs it
     { rule = "PHRASE_REPETITION", text = "[chess.com](https://www.chess.com/) · [youtube.com/@chess](https://www.youtube.com/@chess) ·" },  # "Oh no, my queen!" is quoted in English
 ]
-
+es-ES = [
+    { text = "se", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "s", rule = "SINGLE_CHARACTER" },
+    { text = "partidas", rule = "AGREEMENT_POSTPONED_ADJ" },  # "Marca partidas para exportarlas"
+    { text = "Maestro", rule = "ES_QUESTION_MARK" },
+    { text = "Hernandez", rule = "ES_SIMPLE_REPLACE_SIMPLE_HERNANDEZ" },  # his name, as he signs it
+    { rule = "PHRASE_REPETITION", text = "[chess.com](https://www.chess.com/) · [youtube.com/@chess](https://www.youtube.com/@chess) ·" },  # "Oh no, my queen!" is quoted in English
+]
