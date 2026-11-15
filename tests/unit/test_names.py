@@ -258,6 +258,38 @@ def test_a_broader_article_names_only_its_own_opening(repo):
     assert sources[("subgroups", ("caro-kann-defense", "Advance Variation"))].origin == "rule"
 
 
+def test_a_reviewed_locale_of_the_same_wikipedia_is_followed(repo):
+    """An unreviewed locale follows the reviewed one of its Wikipedia: its choices and casing.
+
+    Args:
+        repo (Path): The test folder.
+    """
+    family = json.loads(json.dumps(FAMILY))
+    family["names"]["pt-BR"] = "Defesa Caro-Kann"
+    family["variants"][0]["names"]["pt-BR"] = "Ataque Panov"  # Not Wikipedia's name.
+    write_family(repo, family)
+    (repo / "glossary" / "pt-PT.toml").write_text(GLOSSARY, encoding="utf-8")
+    caro_kann = {**CARO_KANN, "sitelinks": {**CARO_KANN["sitelinks"], "ptwiki": "Defesa caro-kann"}}
+    portugal = Locale("pt-PT", "ltr", ("latin",), None, (), False, "pt")
+    registry = {"en": locale(True), "pt-BR": locale(True), "pt-PT": portugal}
+    fill_names(
+        portugal,
+        WikipediaCache(
+            repo / "wikipedia.json", FakeRemote({**LOOKUPS, "Caro-Kann Defense": caro_kann})
+        ),
+        openings_dir=repo / "openings",
+        glossary_dir=repo / "glossary",
+        names_dir=repo / "names",
+        machine_dir=repo / "machine",
+        registry=registry,
+    )
+    sources = load_name_sources(repo / "names" / "pt-PT.toml")
+    family_name = sources[("families", ("caro-kann-defense",))]
+    assert (family_name.name, family_name.origin) == ("Defesa Caro-Kann", "source")
+    panov = sources[("subgroups", ("caro-kann-defense", "Panov Attack"))]
+    assert (panov.name, panov.origin) == ("Ataque Panov", "rule")
+
+
 @pytest.mark.parametrize(
     ("title", "english", "expected"),
     [
@@ -410,6 +442,7 @@ def test_english_is_refused(repo):
         ("Advance Attack", None),  # "Advance" is a glossary word, not a proper name.
         ("quick Attack", None),  # Not capitalized.
         ("Panov Attack, Main Line", None),  # One segment is not covered: none is.
+        ("Accepted: Panov Attack", None),  # A label before a colon is not a proper name.
     ],
 )
 def test_rules_translate_segment_by_segment(tmp_path, english, expected):

@@ -377,7 +377,10 @@ class Rules:
         self.kept: list[str] = []
 
     def _is_proper(self, text: str) -> bool:
-        """Whether a text reads as a proper name: capitalized words, none of them a term.
+        """Whether a text reads as a proper name: capitalized words, none of them a term or a label.
+
+        A word ending in a colon is a label of the name ("Accepted: Bogoljubow Defense"), never
+        part of a proper name.
 
         Args:
             text (str): The text `{name}` matched.
@@ -387,7 +390,9 @@ class Rules:
         """
         words = [word for word in re.split(r"[\s-]+", text) if word]
         return bool(words) and all(
-            (word[0].isupper() or word[0].isdigit()) and word.casefold() not in self.words
+            (word[0].isupper() or word[0].isdigit())
+            and word.casefold() not in self.words
+            and not word.endswith(":")
             for word in words
         )
 
@@ -619,8 +624,12 @@ def fill_names(
     names_dir: Path = NAMES_DIR,
     machine_dir: Path = MACHINE_DIR,
     overwrite: bool = False,
+    registry: dict[str, Locale] | None = None,
 ) -> Report:
     """Fills a locale's opening names and records where each came from.
+
+    A reviewed locale of the same Wikipedia (es for es-ES, pt-BR for pt-PT) is followed where
+    its author kept another name than Wikipedia's, and gives Wikipedia's names its casing.
 
     Args:
         locale (Locale): The locale; not `en`, which is the source of every name.
@@ -631,6 +640,8 @@ def fill_names(
         names_dir (Path): The `i18n/names` folder.
         machine_dir (Path): The `i18n/machine` folder.
         overwrite (bool): Replace sourced names and those of a reviewed locale too.
+        registry (dict[str, Locale] | None): The locales, for the reviewed ones of the same
+            Wikipedia; None reads `i18n/locales.toml`.
 
     Returns:
         Report: What was done.
@@ -642,6 +653,13 @@ def fill_names(
     if locale.code == DEFAULT_LOCALE:
         raise ValueError(f"{DEFAULT_LOCALE} is the source of every name; there is nothing to fill")
     code = locale.code
+    siblings = [
+        other.code
+        for other in (load_locales() if registry is None else registry).values()
+        if other.reviewed
+        and other.code not in (code, DEFAULT_LOCALE)
+        and other.wikipedia == locale.wikipedia
+    ]
     paths = sorted(openings_dir.rglob("*.json"))
     documents = {path: json.loads(path.read_text(encoding="utf-8")) for path in paths}
     before = {path: render(document) for path, document in documents.items()}
@@ -683,10 +701,14 @@ def fill_names(
             and (lookup["item"] not in family_articles or titled_for(lookup, item.english))
         ):
             found = wiki_name(lookup, locale, family_names[item.family].get(code))
+        reviewed = [item.names[other] for other in siblings if item.names.get(other)]
+        if found and any(name.casefold() != found.name.casefold() for name in reviewed):
+            found = None  # The author of that locale chose another name than Wikipedia's.
         rule = rules.translate(item.english)
         kept = rules.kept
-        # Wikipedia's words in the book's title case: the current name, or else the rule's.
-        for cased in (current, rule):
+        # Wikipedia's words in the book's title case: the current name, the rule's, or the
+        # reviewed one of the same Wikipedia.
+        for cased in (current, rule, *reviewed):
             if found and cased and found.name.casefold() == cased.casefold():
                 found = Found(cased, found.url)
                 break

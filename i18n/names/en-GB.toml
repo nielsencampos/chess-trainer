@@ -3231,7 +3231,7 @@ machine = true
 
 [lines.line-a7bb34b813788095]
 name = "Accepted: Chigorin Defence"
-rule = true
+machine = true
 
 [lines.line-41deac91e657dcf5]
 name = "Accepted: Classical Defence"
@@ -3239,19 +3239,19 @@ machine = true
 
 [lines.line-ac0ad5a6a12e7589]
 name = "Accepted: Copenhagen Defence"
-rule = true
+machine = true
 
 [lines.line-96df9774671ef92c]
 name = "Accepted: Schlechter Defence"
-rule = true
+machine = true
 
 [lines.line-3345f44785d82883]
 name = "Accepted: Svenonius Defence"
-rule = true
+machine = true
 
 [lines.line-8d6cc5fff19e3384]
 name = "Declined: Sörensen Defence"
-rule = true
+machine = true
 
 [lines.line-f97e961b49e222df]
 name = "Danish Gambit"
@@ -5175,43 +5175,43 @@ machine = true
 
 [subgroups.king-s-gambit."Accepted: Bishop's Gambit"]
 name = "Accepted: Bishop's Gambit"
-rule = true
+machine = true
 
 [lines.line-3ffed3f713bc01b6]
 name = "Accepted: Bishop's Gambit"
-rule = true
+machine = true
 
 [lines.line-fd10d898c1c6d774]
 name = "Accepted: Bishop's Gambit, Maurian Defence"
-rule = true
+machine = true
 
 [lines.line-e37e78ab4a4fde14]
 name = "Accepted: Bishop's Gambit, Steinitz Defence"
-rule = true
+machine = true
 
 [lines.line-06be9c968f509bd4]
 name = "Accepted: Bishop's Gambit, Cozio Defence"
-rule = true
+machine = true
 
 [lines.line-0f6e33412551d9f4]
 name = "Accepted: Bishop's Gambit, Bogoljubow Variation"
-rule = true
+machine = true
 
 [lines.line-ddef86c22b7eb9a7]
 name = "Accepted: Bishop's Gambit, Paulsen Attack"
-rule = true
+machine = true
 
 [lines.line-6cab1e4dbcf1e530]
 name = "Accepted: Bishop's Gambit, Bogoljubow Defence"
-rule = true
+machine = true
 
 [lines.line-c1ad620a8545aa22]
 name = "Accepted: Bishop's Gambit, Greco Variation"
-rule = true
+machine = true
 
 [lines.line-0a2e9b3b5f7ce7b8]
 name = "Accepted: Bishop's Gambit, Boden Variation"
-rule = true
+machine = true
 
 [lines.line-2351636c26df0ead]
 name = "Accepted: Bishop's Gambit, Classical Defence"
@@ -5219,39 +5219,39 @@ machine = true
 
 [lines.line-54cbc29cea8da2ea]
 name = "Accepted: Bishop's Gambit, First Jaenisch Variation"
-rule = true
+machine = true
 
 [lines.line-2bbd2c14469ce8cb]
 name = "Accepted: Bishop's Gambit, Bryan Countergambit"
-rule = true
+machine = true
 
 [lines.line-db2a04e6d3a3bb62]
 name = "Accepted: Bishop's Gambit, Chigorin's Attack"
-rule = true
+machine = true
 
 [lines.line-754b1fd232378ce2]
 name = "Accepted: Bishop's Gambit, Cozio Variation"
-rule = true
+machine = true
 
 [lines.line-69cc038fc7cfd6b2]
 name = "Accepted: Bishop's Gambit, Lopez Variation"
-rule = true
+machine = true
 
 [lines.line-f2db64e42417debf]
 name = "Accepted: Bishop's Gambit, McDonnell Attack"
-rule = true
+machine = true
 
 [lines.line-9472eeb6ce62877c]
 name = "Accepted: Bishop's Gambit, Grimm Attack"
-rule = true
+machine = true
 
 [lines.line-31a6ae1f72b43b0d]
 name = "Accepted: Bishop's Gambit, McDonnell Attack"
-rule = true
+machine = true
 
 [lines.line-8492991c3c1c2b7b]
 name = "Accepted: Bishop's Gambit, Fraser Variation"
-rule = true
+machine = true
 
 [lines.line-43e0718c3d5d9a01]
 name = "Accepted: Bishop's Gambit, Classical Defence, Cozio Attack"
@@ -5259,91 +5259,91 @@ machine = true
 
 [lines.line-90a0ff4d64b57570]
 name = "Accepted: Bishop's Gambit, Kieseritzky Gambit"
-rule = true
+machine = true
 
 [lines.line-2cf9489430d978e1]
 name = "Accepted: Bishop's Gambit, Lopez Defence"
-rule = true
+machine = true
 
 [lines.line-a26457fd7f936c9f]
 name = "Accepted: Bishop's Gambit, Bledow Variation"
-rule = true
+machine = true
 
 [lines.line-ce8e3fc7811ed869]
 name = "Accepted: Bishop's Gambit, Bledow Countergambit"
-rule = true
+machine = true
 
 [lines.line-5411b3ef2e824a0e]
 name = "Accepted: Bishop's Gambit, Boren-Svenonius Variation"
-rule = true
+machine = true
 
 [lines.line-43dfde610e28fcc6]
 name = "Accepted: Bishop's Gambit, Anderssen Variation"
-rule = true
+machine = true
 
 [lines.line-98d55c85685cd32c]
 name = "Accepted: Bishop's Gambit, Gianutio Gambit"
-rule = true
+machine = true
 
 [lines.line-12d12a9a0246ef46]
 name = "Accepted: Bishop's Gambit, Anderssen Defence"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Declined: Falkbeer Countergambit"]
 name = "Declined: Falkbeer Countergambit"
-rule = true
+machine = true
 
 [lines.line-3b5bfe9e97e8e21e]
 name = "Declined: Falkbeer Countergambit"
-rule = true
+machine = true
 
 [lines.line-b3fd43210c98c370]
 name = "Declined: Falkbeer Countergambit, Milner-Barry Variation"
-rule = true
+machine = true
 
 [lines.line-4e920c1cfe4889ae]
 name = "Declined: Falkbeer Countergambit, Blackburne Attack"
-rule = true
+machine = true
 
 [lines.line-c85626cd10bee626]
 name = "Declined: Falkbeer Countergambit, Hinrichsen Gambit"
-rule = true
+machine = true
 
 [lines.line-ad710a7248cad8b8]
 name = "Declined: Falkbeer Countergambit, Miles Gambit"
-rule = true
+machine = true
 
 [lines.line-d02c45512ab07931]
 name = "Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit"
-rule = true
+machine = true
 
 [lines.line-9c9bc9f5d4699a3f]
 name = "Declined: Falkbeer Countergambit, Pickler Gambit"
-rule = true
+machine = true
 
 [lines.line-1074c85e467cf336]
 name = "Declined: Falkbeer Countergambit, Staunton Line"
-rule = true
+machine = true
 
 [lines.line-f8725f69746636ac]
 name = "Declined: Falkbeer Countergambit, Anderssen Attack"
-rule = true
+machine = true
 
 [lines.line-b9124b2fbab8e323]
 name = "Declined: Falkbeer Countergambit, Rubinstein Variation"
-rule = true
+machine = true
 
 [lines.line-808ef4b37e7259ea]
 name = "Declined: Falkbeer Countergambit, Charousek Gambit"
-rule = true
+machine = true
 
 [lines.line-89e200d10bf3520e]
 name = "Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation"
-rule = true
+machine = true
 
 [lines.line-729f10bfd3746687]
 name = "Declined: Falkbeer Countergambit, Charousek Gambit, Old Line"
-rule = true
+machine = true
 
 [lines.line-2404b5530331fa85]
 name = "Declined: Falkbeer Countergambit, Charousek Gambit Accepted"
@@ -5351,23 +5351,23 @@ machine = true
 
 [lines.line-9938f72465f6e6d8]
 name = "Declined: Falkbeer Countergambit, Alapin Variation"
-rule = true
+machine = true
 
 [lines.line-0d20a7c431025fb9]
 name = "Declined: Falkbeer Countergambit, Charousek Gambit, Main Line"
-rule = true
+machine = true
 
 [lines.line-99f435d5f22709ec]
 name = "Declined: Falkbeer Countergambit, Tarrasch Variation"
-rule = true
+machine = true
 
 [lines.line-d3d34b50c11ae700]
 name = "Declined: Falkbeer Countergambit, Charousek Gambit"
-rule = true
+machine = true
 
 [lines.line-37f6fb8d9f76afa6]
 name = "Declined: Falkbeer Countergambit, Charousek Variation"
-rule = true
+machine = true
 
 [lines.line-db19a2fef9a070cd]
 name = "Declined: Falkbeer Countergambit, Modern Transfer"
@@ -5375,35 +5375,35 @@ machine = true
 
 [subgroups.king-s-gambit."Accepted: Kieseritzky Gambit"]
 name = "Accepted: Kieseritzky Gambit"
-rule = true
+machine = true
 
 [lines.line-c52fdd58adff0302]
 name = "Accepted: Kieseritzky Gambit"
-rule = true
+machine = true
 
 [lines.line-e0e6d07e78914feb]
 name = "Accepted: Kieseritzky Gambit, Paulsen Defence"
-rule = true
+machine = true
 
 [lines.line-ad94edba2ca50ead]
 name = "Accepted: Kieseritzky Gambit, Neumann Defence"
-rule = true
+machine = true
 
 [lines.line-4c7362057e9369eb]
 name = "Accepted: Kieseritzky Gambit, Berlin Defence"
-rule = true
+machine = true
 
 [lines.line-5783e13b7942dd03]
 name = "Accepted: Kieseritzky Gambit, Anderssen Defence"
-rule = true
+machine = true
 
 [lines.line-08fff2c2cbc0ae15]
 name = "Accepted: Kieseritzky Gambit, Rice Gambit"
-rule = true
+machine = true
 
 [lines.line-8b76c226bf0b5eea]
 name = "Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit"
-rule = true
+machine = true
 
 [lines.line-4cf02c466ab36224]
 name = "Accepted: Kieseritzky Gambit, Paulsen Defence Deferred"
@@ -5415,27 +5415,27 @@ machine = true
 
 [lines.line-b78f64d159a9693c]
 name = "Accepted: Kieseritzky Gambit, Berlin Defence, Rubinstein Variation"
-rule = true
+machine = true
 
 [lines.line-ab2928122f2e94c9]
 name = "Accepted: Kieseritzky Gambit, Rosenthal Defence"
-rule = true
+machine = true
 
 [lines.line-d307ca7bb6e6fcb4]
 name = "Accepted: Kieseritzky Gambit, Brentano Defence"
-rule = true
+machine = true
 
 [lines.line-6c61f7509976c8e6]
 name = "Accepted: Kieseritzky Gambit, Brentano Defence"
-rule = true
+machine = true
 
 [lines.line-207e0d566f37c894]
 name = "Accepted: Kieseritzky Gambit, Brentano Defence, Caro Variation"
-rule = true
+machine = true
 
 [lines.line-a86d6561f0f5e985]
 name = "Accepted: Kieseritzky Gambit, Kolisch Defence"
-rule = true
+machine = true
 
 [lines.line-78681137d16652b7]
 name = "Accepted: Kieseritzky Gambit, Long Whip"
@@ -5443,35 +5443,35 @@ machine = true
 
 [lines.line-9ca99941cbb0bf96]
 name = "Accepted: Kieseritzky Gambit, Cotter Gambit"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Salvio Gambit"]
 name = "Accepted: Salvio Gambit"
-rule = true
+machine = true
 
 [lines.line-e2ae5640b0f6ec35]
 name = "Accepted: Salvio Gambit"
-rule = true
+machine = true
 
 [lines.line-10e362154fdc07b7]
 name = "Accepted: Salvio Gambit, Viennese Variation"
-rule = true
+machine = true
 
 [lines.line-5fbf1d347c09a8df]
 name = "Accepted: Salvio Gambit, Santa Maria Defence"
-rule = true
+machine = true
 
 [lines.line-d6873a87ddce5c08]
 name = "Accepted: Salvio Gambit, Silberschmidt Defence"
-rule = true
+machine = true
 
 [lines.line-1179e625acb9c9a4]
 name = "Accepted: Salvio Gambit, Anderssen Counterattack"
-rule = true
+machine = true
 
 [lines.line-c6ac106bb4a6122a]
 name = "Accepted: Salvio Gambit, Cochrane Gambit"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Declined: Classical Variation"]
 name = "Declined: Classical Variation"
@@ -5503,27 +5503,27 @@ machine = true
 
 [subgroups.king-s-gambit."Declined: Panteldakis Countergambit"]
 name = "Declined: Panteldakis Countergambit"
-rule = true
+machine = true
 
 [lines.line-7484088714f3cf73]
 name = "Declined: Panteldakis Countergambit"
-rule = true
+machine = true
 
 [lines.line-375f13ae4f0630f9]
 name = "Declined: Panteldakis Countergambit, Schiller's Defence"
-rule = true
+machine = true
 
 [lines.line-e26f4f72ed2d9d4f]
 name = "Declined: Panteldakis Countergambit, Greco Variation"
-rule = true
+machine = true
 
 [lines.line-73ac5360a1052517]
 name = "Declined: Panteldakis Countergambit, Symmetrical Variation"
-rule = true
+machine = true
 
 [lines.line-0ff57737d5e06dc1]
 name = "Declined: Panteldakis Countergambit, Shirazi Line"
-rule = true
+machine = true
 
 [lines.line-fbc8d2af1b344c52]
 name = "Declined: Panteldakis Countergambit, Pawn Sacrifice Line"
@@ -5555,35 +5555,35 @@ machine = true
 
 [subgroups.king-s-gambit."Accepted: Double Muzio Gambit"]
 name = "Accepted: Double Muzio Gambit"
-rule = true
+machine = true
 
 [lines.line-b609016a64d49e86]
 name = "Accepted: Double Muzio Gambit, Young Gambit"
-rule = true
+machine = true
 
 [lines.line-4f53e09fe633af92]
 name = "Accepted: Double Muzio Gambit, Bello Gambit"
-rule = true
+machine = true
 
 [lines.line-6175cbcf81fd32c4]
 name = "Accepted: Double Muzio Gambit, Baldwin Gambit"
-rule = true
+machine = true
 
 [lines.line-57946b401ea401a6]
 name = "Accepted: Double Muzio Gambit"
-rule = true
+machine = true
 
 [lines.line-55d63d4497468aec]
 name = "Accepted: Double Muzio Gambit, Paulsen Defence"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Muzio Gambit"]
 name = "Accepted: Muzio Gambit"
-rule = true
+machine = true
 
 [lines.line-27851c768680be3c]
 name = "Accepted: Muzio Gambit, Wild Muzio Gambit"
-rule = true
+machine = true
 
 [lines.line-70c41c832d1372d6]
 name = "Accepted: Muzio Gambit, Kling and Horwitz Counterattack"
@@ -5591,35 +5591,35 @@ machine = true
 
 [lines.line-a93c46064a1052f0]
 name = "Accepted: Muzio Gambit, Brentano Defence"
-rule = true
+machine = true
 
 [lines.line-2d8b1b398de3c5d7]
 name = "Accepted: Muzio Gambit, Holloway Defence"
-rule = true
+machine = true
 
 [lines.line-4d9794be424356d1]
 name = "Accepted: Muzio Gambit, Sarratt Defence"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Cunningham Defense"]
 name = "Accepted: Cunningham Defence"
-rule = true
+machine = true
 
 [lines.line-31146d4cd7c2e63d]
 name = "Accepted: Cunningham Defence"
-rule = true
+machine = true
 
 [lines.line-afface7344c9ea68]
 name = "Accepted: Cunningham Defence, Bertin Gambit"
-rule = true
+machine = true
 
 [lines.line-00fc98d784aa3620]
 name = "Accepted: Cunningham Defence, Bertin Gambit"
-rule = true
+machine = true
 
 [lines.line-6f23d08e3593d4a4]
 name = "Accepted: Cunningham Defence, McCormick Defence"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Kieseritzky"]
 name = "Accepted: Kieseritzky"
@@ -5643,43 +5643,43 @@ machine = true
 
 [subgroups.king-s-gambit."Accepted: King's Knight's Gambit"]
 name = "Accepted: King's Knight's Gambit"
-rule = true
+machine = true
 
 [lines.line-4dbbdf500c414bc2]
 name = "Accepted: King's Knight's Gambit"
-rule = true
+machine = true
 
 [lines.line-1f95f18363d45d48]
 name = "Accepted: King's Knight's Gambit"
-rule = true
+machine = true
 
 [lines.line-ddc176b743ceb444]
 name = "Accepted: King's Knight's Gambit"
-rule = true
+machine = true
 
 [lines.line-7ad55c6302361a10]
 name = "Accepted: King's Knight's Gambit"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Rosentreter Gambit"]
 name = "Accepted: Rosentreter Gambit"
-rule = true
+machine = true
 
 [lines.line-92e151aaabcc258e]
 name = "Accepted: Rosentreter Gambit"
-rule = true
+machine = true
 
 [lines.line-e95e46f81ba8fdb1]
 name = "Accepted: Rosentreter Gambit, Testa Variation"
-rule = true
+machine = true
 
 [lines.line-c4f566782c0e0e6f]
 name = "Accepted: Rosentreter Gambit, Sörensen Gambit"
-rule = true
+machine = true
 
 [lines.line-9c326b1389d561f5]
 name = "Accepted: Rosentreter Gambit, Bird Gambit"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Declined: Classical"]
 name = "Declined: Classical"
@@ -5703,139 +5703,139 @@ machine = true
 
 [subgroups.king-s-gambit."Accepted: Allgaier Gambit"]
 name = "Accepted: Allgaier Gambit"
-rule = true
+machine = true
 
 [lines.line-a7cbb33d43b57f26]
 name = "Accepted: Allgaier Gambit"
-rule = true
+machine = true
 
 [lines.line-a6194587cf0cd31d]
 name = "Accepted: Allgaier Gambit, Urusov Attack"
-rule = true
+machine = true
 
 [lines.line-225476a72cf67af8]
 name = "Accepted: Allgaier Gambit, Thorold Attack"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Fischer Defense"]
 name = "Accepted: Fischer Defence"
-rule = true
+machine = true
 
 [lines.line-b10d9b2a3c4112fb]
 name = "Accepted: Fischer Defence"
-rule = true
+machine = true
 
 [lines.line-85e0184a4d777b6e]
 name = "Accepted: Fischer Defence, Schulder Gambit"
-rule = true
+machine = true
 
 [lines.line-b4d1690a9c13c5bb]
 name = "Accepted: Fischer Defence, Spanish Variation"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Declined: Norwalde Variation"]
 name = "Declined: Norwalde Variation"
-rule = true
+machine = true
 
 [lines.line-160bd392119f0b95]
 name = "Declined: Norwalde Variation"
-rule = true
+machine = true
 
 [lines.line-b7ff0fc18783bcb6]
 name = "Declined: Norwalde Variation, Bücker Gambit"
-rule = true
+machine = true
 
 [lines.line-79b92a94a36659ff]
 name = "Declined: Norwalde Variation, Schubert Variation"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Abbazia Defense"]
 name = "Accepted: Abbazia Defence"
-rule = true
+machine = true
 
 [lines.line-ff974bb17c67c6a8]
 name = "Accepted: Abbazia Defence"
-rule = true
+machine = true
 
 [lines.line-a30dbd5372a01a6c]
 name = "Accepted: Abbazia Defence, Main Line"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Ghulam-Kassim Gambit"]
 name = "Accepted: Ghulam-Kassim Gambit"
-rule = true
+machine = true
 
 [lines.line-951cadab9fe4d20d]
 name = "Accepted: Ghulam-Kassim Gambit"
-rule = true
+machine = true
 
 [lines.line-ed05f1df2e3d69df]
 name = "Accepted: Ghulam-Kassim Gambit"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Greco Gambit"]
 name = "Accepted: Greco Gambit"
-rule = true
+machine = true
 
 [lines.line-c4b75511b4257bba]
 name = "Accepted: Greco Gambit"
-rule = true
+machine = true
 
 [lines.line-53a344eedd163856]
 name = "Accepted: Greco Gambit"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Lolli Gambit"]
 name = "Accepted: Lolli Gambit"
-rule = true
+machine = true
 
 [lines.line-434ab212a4faf769]
 name = "Accepted: Lolli Gambit"
-rule = true
+machine = true
 
 [lines.line-72057bd83a0ae019]
 name = "Accepted: Lolli Gambit, Young Variation"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Modern Defense"]
 name = "Accepted: Modern Defence"
-rule = true
+machine = true
 
 [lines.line-1029dacf59c77f9a]
 name = "Accepted: Modern Defence"
-rule = true
+machine = true
 
 [lines.line-26938f1d1a5190c1]
 name = "Accepted: Modern Defence"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Philidor Gambit"]
 name = "Accepted: Philidor Gambit"
-rule = true
+machine = true
 
 [lines.line-7fa1e88efc8eb9b7]
 name = "Accepted: Philidor Gambit"
-rule = true
+machine = true
 
 [lines.line-8e96ed47e43d1d3f]
 name = "Accepted: Philidor Gambit, Schultz Variation"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Schallopp Defense"]
 name = "Accepted: Schallopp Defence"
-rule = true
+machine = true
 
 [lines.line-ddfb7ac477e694ef]
 name = "Accepted: Schallopp Defence"
-rule = true
+machine = true
 
 [lines.line-850949212337190f]
 name = "Accepted: Schallopp Defence, Tashkent Attack"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Accepted: Schurig Gambit"]
 name = "Accepted: Schurig Gambit"
-rule = true
+machine = true
 
 [lines.line-4a87cf625897a6b7]
 name = "Accepted: Schurig Gambit, with Bb5"
@@ -5847,27 +5847,27 @@ machine = true
 
 [subgroups.king-s-gambit."Accepted: Tartakower Gambit"]
 name = "Accepted: Tartakower Gambit"
-rule = true
+machine = true
 
 [lines.line-abf1c4949b60c3b0]
 name = "Accepted: Tartakower Gambit"
-rule = true
+machine = true
 
 [lines.line-c6d02e370fab0dfe]
 name = "Accepted: Tartakower Gambit, Weiss Defence"
-rule = true
+machine = true
 
 [subgroups.king-s-gambit."Declined: Keene's Defense"]
 name = "Declined: Keene's Defence"
-rule = true
+machine = true
 
 [lines.line-ac3062c740f6e1af]
 name = "Declined: Keene's Defence"
-rule = true
+machine = true
 
 [lines.line-3a7dda6b6100f9f4]
 name = "Declined: Keene's Defence"
-rule = true
+machine = true
 
 [lines.line-70a4e6cd956de5e7]
 name = "Accepted"
@@ -5875,79 +5875,79 @@ machine = true
 
 [lines.line-dfa29e62beda877d]
 name = "Accepted: Australian Gambit"
-rule = true
+machine = true
 
 [lines.line-42d912bf483fed8d]
 name = "Accepted: Basman Gambit"
-rule = true
+machine = true
 
 [lines.line-24ec3968334ba5f3]
 name = "Accepted: Becker Defence"
-rule = true
+machine = true
 
 [lines.line-9fb6c3a669b22194]
 name = "Accepted: Blachly Gambit"
-rule = true
+machine = true
 
 [lines.line-9d6cc173e6be5347]
 name = "Accepted: Bonsch-Osmolovsky Variation"
-rule = true
+machine = true
 
 [lines.line-0666ae6a008b705a]
 name = "Accepted: Breyer Gambit"
-rule = true
+machine = true
 
 [lines.line-f2f2ced478234a28]
 name = "Accepted: Carrera Gambit"
-rule = true
+machine = true
 
 [lines.line-6f9947fd337cd972]
 name = "Accepted: Dodo Variation"
-rule = true
+machine = true
 
 [lines.line-f30f2d91ce4bbb7b]
 name = "Accepted: Eisenberg Variation"
-rule = true
+machine = true
 
 [lines.line-b6784a025b9a014c]
 name = "Accepted: Gaga Gambit"
-rule = true
+machine = true
 
 [lines.line-f9aceb975d9a1772]
 name = "Accepted: Gianutio Countergambit"
-rule = true
+machine = true
 
 [lines.line-62363189236bef00]
 name = "Accepted: Hanstein Gambit"
-rule = true
+machine = true
 
 [lines.line-46db0d865c670520]
 name = "Accepted: Kotov Gambit"
-rule = true
+machine = true
 
 [lines.line-28c297e229773edf]
 name = "Accepted: Lopez-Gianutio Countergambit, Hein Variation"
-rule = true
+machine = true
 
 [lines.line-3ff757d0aa326210]
 name = "Accepted: MacLeod Defence"
-rule = true
+machine = true
 
 [lines.line-f4883a2856a5fc69]
 name = "Accepted: Mason-Keres Gambit"
-rule = true
+machine = true
 
 [lines.line-dd0b37687bd44323]
 name = "Accepted: Mayet Gambit"
-rule = true
+machine = true
 
 [lines.line-cd1aed5de5f63711]
 name = "Accepted: McDonnell Gambit"
-rule = true
+machine = true
 
 [lines.line-dd826856d594d651]
 name = "Accepted: Middleton Countergambit"
-rule = true
+machine = true
 
 [lines.line-6dbaffe8395e65ef]
 name = "Accepted: Muzio Gambit Accepted, From's Defence"
@@ -5955,31 +5955,31 @@ machine = true
 
 [lines.line-7126b18a4238f0b5]
 name = "Accepted: Orsini Gambit"
-rule = true
+machine = true
 
 [lines.line-98e19a02c8e0192d]
 name = "Accepted: Paris Gambit"
-rule = true
+machine = true
 
 [lines.line-bccd23114ef4aa36]
 name = "Accepted: Quaade Gambit"
-rule = true
+machine = true
 
 [lines.line-7321e7555bf30a57]
 name = "Accepted: Silberschmidt Gambit"
-rule = true
+machine = true
 
 [lines.line-9f5680e761d7b87c]
 name = "Accepted: Stamma Gambit"
-rule = true
+machine = true
 
 [lines.line-430292cbb00b9e4c]
 name = "Accepted: Sörensen Gambit"
-rule = true
+machine = true
 
 [lines.line-2890113c4d4a2557]
 name = "Accepted: Traditional Variation"
-rule = true
+machine = true
 
 [lines.line-8951e226d8769735]
 name = "Accepted: Tumbleweed"
@@ -5987,11 +5987,11 @@ machine = true
 
 [lines.line-7d3d4d84995edd40]
 name = "Accepted: Villemson Gambit"
-rule = true
+machine = true
 
 [lines.line-cec85da220bc6728]
 name = "Accepted: Wagenbach Defence"
-rule = true
+machine = true
 
 [lines.line-ac25dc07eba47cc9]
 name = "Declined: Falkbeer Countergambit Accepted"
@@ -5999,43 +5999,43 @@ machine = true
 
 [lines.line-dd02bbc0f0e6b41d]
 name = "Declined: Hobbs-Zilbermints Gambit"
-rule = true
+machine = true
 
 [lines.line-7a2ab0cec9810a38]
 name = "Declined: Keene Defence"
-rule = true
+machine = true
 
 [lines.line-dbd755a8130bf4b3]
 name = "Declined: Mafia Defence"
-rule = true
+machine = true
 
 [lines.line-78dea44237ddfc28]
 name = "Declined: Miles Defence"
-rule = true
+machine = true
 
 [lines.line-099f1cc14bc524f5]
 name = "Declined: Petrov's Defence"
-rule = true
+machine = true
 
 [lines.line-e47b2cf8da1ac7ac]
 name = "Declined: Queen's Knight Defence"
-rule = true
+machine = true
 
 [lines.line-d4619b978d0bb352]
 name = "Declined: Senechaud Countergambit"
-rule = true
+machine = true
 
 [lines.line-b142c9c3f8b0cf71]
 name = "Declined: Soller-Zilbermints Gambit"
-rule = true
+machine = true
 
 [lines.line-766ab7067ef52250]
 name = "Declined: Zilbermints Double Countergambit"
-rule = true
+machine = true
 
 [lines.line-7cbf82f969af2245]
 name = "Declined: Zilbermints Double Gambit"
-rule = true
+machine = true
 
 [lines.line-91beed2c21d74ad8]
 name = "King's Gambit"
@@ -6747,35 +6747,35 @@ machine = true
 
 [lines.line-cf8dc77db6020943]
 name = "Accepted: Bilguer Variation"
-rule = true
+machine = true
 
 [lines.line-d40245e5a0ff5a36]
 name = "Accepted: Bronstein Attack"
-rule = true
+machine = true
 
 [lines.line-7b6e08949651fc82]
 name = "Accepted: Bronstein Gambit"
-rule = true
+machine = true
 
 [lines.line-2411447fa43736be]
 name = "Accepted: Foltys Variation"
-rule = true
+machine = true
 
 [lines.line-f7e0692598c9568d]
 name = "Accepted: Foltys-Leonhardt Variation"
-rule = true
+machine = true
 
 [lines.line-25321cc5b43b6e3f]
 name = "Accepted: Leonhardt Variation"
-rule = true
+machine = true
 
 [lines.line-310410aefa8bdd53]
 name = "Accepted: Main Line"
-rule = true
+machine = true
 
 [lines.line-652d6ddb94a3e462]
 name = "Accepted: Nimzowitsch Attack"
-rule = true
+machine = true
 
 [lines.line-a563b63133e3f4ee]
 name = "Behting Variation"
@@ -11207,7 +11207,7 @@ rule = true
 
 [lines.line-534d4096041d0b74]
 name = "Declined: Falkbeer Countergambit, Charousek Gambit, Morphy Defence"
-rule = true
+machine = true
 
 [lines.line-7eccbf486e438459]
 name = "Falkbeer Variation"
@@ -11743,19 +11743,19 @@ machine = true
 
 [lines.line-0e83d6dab0bec3c3]
 name = "Accepted: Central Storming Variation"
-rule = true
+machine = true
 
 [lines.line-5e5308e11b8707bd]
 name = "Accepted: Dlugy Variation"
-rule = true
+machine = true
 
 [lines.line-e3c1accb5421b66b]
 name = "Accepted: Fianchetto Variation"
-rule = true
+machine = true
 
 [lines.line-a6fca7e2645c241e]
 name = "Accepted: Fully Accepted Variation"
-rule = true
+machine = true
 
 [lines.line-13d5380b806881c3]
 name = "Accepted: King Walk Variation"
@@ -11763,7 +11763,7 @@ machine = true
 
 [lines.line-4a8382fbde41ec9d]
 name = "Accepted: Modern Variation"
-rule = true
+machine = true
 
 [lines.line-ed14618f6ac16a0c]
 name = "Accepted: Pawn Return Variation"
@@ -11771,15 +11771,15 @@ machine = true
 
 [lines.line-e584a4eea17210ab]
 name = "Declined: Bishop Attack"
-rule = true
+machine = true
 
 [lines.line-db8a8e23749b0e1a]
 name = "Declined: Hjørring Countergambit"
-rule = true
+machine = true
 
 [lines.line-39c22456f41927d4]
 name = "Declined: Main Line"
-rule = true
+machine = true
 
 [lines.line-af4e594a302b8d0a]
 name = "Declined: Pseudo-Sämisch"
@@ -11787,11 +11787,11 @@ machine = true
 
 [lines.line-c67c2a71c8894d54]
 name = "Declined: Quiet Line"
-rule = true
+machine = true
 
 [lines.line-274709f87775e28f]
 name = "Declined: Sosonko Variation"
-rule = true
+machine = true
 
 [lines.line-8dbef8056cb79876]
 name = "Fianchetto Variation"
@@ -14215,35 +14215,35 @@ rule = true
 
 [subgroups.blackmar-diemer-gambit."Accepted: Bogoljubow Defense"]
 name = "Accepted: Bogoljubow Defence"
-rule = true
+machine = true
 
 [lines.line-25dbd870cd72efcd]
 name = "Accepted: Bogoljubow Defence"
-rule = true
+machine = true
 
 [lines.line-e5e90012e9ec97b6]
 name = "Accepted: Bogoljubow Defence, Nimzowitsch Attack"
-rule = true
+machine = true
 
 [lines.line-b9dc454273e7d1cc]
 name = "Accepted: Bogoljubow Defence, Kloss Attack"
-rule = true
+machine = true
 
 [lines.line-9b7c74427b12105e]
 name = "Accepted: Bogoljubow Defence, Studier Attack"
-rule = true
+machine = true
 
 [lines.line-bb04b0a9aea38a81]
 name = "Accepted: Bogoljubow Defence, Mad Dog Attack"
-rule = true
+machine = true
 
 [subgroups.blackmar-diemer-gambit."Accepted: Teichmann Defense"]
 name = "Accepted: Teichmann Defence"
-rule = true
+machine = true
 
 [lines.line-177b17e1055e66f5]
 name = "Accepted: Teichmann Defence"
-rule = true
+machine = true
 
 [lines.line-012f14bd9a45cb1e]
 name = "Accepted: Teichmann Defence, Classical Variation"
@@ -14251,51 +14251,51 @@ machine = true
 
 [lines.line-094b09947f699584]
 name = "Accepted: Teichmann Defence, Ciesielski Variation"
-rule = true
+machine = true
 
 [lines.line-ef0dbd0cbc97aa74]
 name = "Accepted: Teichmann Defence, Seidel-Hall Attack"
-rule = true
+machine = true
 
 [subgroups.blackmar-diemer-gambit."Accepted: Euwe Defense"]
 name = "Accepted: Euwe Defence"
-rule = true
+machine = true
 
 [lines.line-d38645a90173e390]
 name = "Accepted: Euwe Defence"
-rule = true
+machine = true
 
 [lines.line-13be4e2dc183b054]
 name = "Accepted: Euwe Defence, Duthilleul Gambit"
-rule = true
+machine = true
 
 [lines.line-426e2866c2332728]
 name = "Accepted: Euwe Defence, Zilbermints Gambit"
-rule = true
+machine = true
 
 [subgroups.blackmar-diemer-gambit."Accepted: Gunderam Defense"]
 name = "Accepted: Gunderam Defence"
-rule = true
+machine = true
 
 [lines.line-41e5c21190c665fe]
 name = "Accepted: Gunderam Defence"
-rule = true
+machine = true
 
 [lines.line-5444129a4662697c]
 name = "Accepted: Gunderam Defence, Stader Variation"
-rule = true
+machine = true
 
 [subgroups.blackmar-diemer-gambit."Declined: Weinsbach Defense"]
 name = "Declined: Weinsbach Defence"
-rule = true
+machine = true
 
 [lines.line-dba498d8b117e37c]
 name = "Declined: Weinsbach Defence"
-rule = true
+machine = true
 
 [lines.line-2e342892060c3af0]
 name = "Declined: Weinsbach Defence, Pfrang Gambit"
-rule = true
+machine = true
 
 [subgroups.blackmar-diemer-gambit."Main"]
 name = "Main"
@@ -14339,31 +14339,31 @@ machine = true
 
 [lines.line-1a4c6a317e17be19]
 name = "Accepted: Holwell Defence"
-rule = true
+machine = true
 
 [lines.line-617c81dbc6147b36]
 name = "Accepted: Kaulich Defence"
-rule = true
+machine = true
 
 [lines.line-e56c6cf464b65c5e]
 name = "Accepted: Pietrowsky Defence"
-rule = true
+machine = true
 
 [lines.line-de821769f74219a9]
 name = "Accepted: Ritter Defence"
-rule = true
+machine = true
 
 [lines.line-90166fa97a63a457]
 name = "Accepted: Ryder Gambit"
-rule = true
+machine = true
 
 [lines.line-d497e2b2b5ffe51e]
 name = "Accepted: Schlutter Defence"
-rule = true
+machine = true
 
 [lines.line-8cc30eb14472887d]
 name = "Accepted: Ziegler Defence"
-rule = true
+machine = true
 
 [lines.line-96fb7d9e56be01cb]
 name = "Blackmar Gambit"
@@ -14371,31 +14371,31 @@ rule = true
 
 [lines.line-bbf8594a7d7f74b8]
 name = "Declined: Brombacher Countergambit"
-rule = true
+machine = true
 
 [lines.line-af3da1deee6adfca]
 name = "Declined: Elbert Countergambit"
-rule = true
+machine = true
 
 [lines.line-40d0cc80860661c8]
 name = "Declined: Gedult Defence"
-rule = true
+machine = true
 
 [lines.line-a31c4786b18d3ff9]
 name = "Declined: Lamb Defence"
-rule = true
+machine = true
 
 [lines.line-8bb4ca65a7c2a891]
 name = "Declined: Langeheinicke Defence"
-rule = true
+machine = true
 
 [lines.line-11fe35c71bc104d3]
 name = "Declined: O'Kelly Defence"
-rule = true
+machine = true
 
 [lines.line-5b02eeabb1ed0035]
 name = "Declined: Vienna Defence"
-rule = true
+machine = true
 
 [lines.line-042f717ff9f77bfe]
 name = "Diemer-Rosenberg Attack"
@@ -14483,7 +14483,7 @@ machine = true
 
 [lines.line-686f984162e90aff]
 name = "Declined: Diemer Counterattack"
-rule = true
+machine = true
 
 [lines.line-ca1477972110e34b]
 name = "Declined: Reversed Alekhine"
@@ -14919,59 +14919,59 @@ rule = true
 
 [subgroups.queen-s-gambit."Declined: Orthodox Defense"]
 name = "Declined: Orthodox Defence"
-rule = true
+machine = true
 
 [lines.line-7bdf633ef67a4cbd]
 name = "Declined: Orthodox Defence, Capablanca Variation"
-rule = true
+machine = true
 
 [lines.line-f18ab04d3da3c1e8]
 name = "Declined: Orthodox Defence, Rubinstein Attack"
-rule = true
+machine = true
 
 [lines.line-c4b5008f502fa7c7]
 name = "Declined: Orthodox Defence, Pillsbury Variation"
-rule = true
+machine = true
 
 [lines.line-2674e2c03159ab22]
 name = "Declined: Orthodox Defence, Rubinstein Attack"
-rule = true
+machine = true
 
 [lines.line-edd81c654ad95f81]
 name = "Declined: Orthodox Defence"
-rule = true
+machine = true
 
 [lines.line-32a79dcb3c79ed5c]
 name = "Declined: Orthodox Defence, Botvinnik Variation"
-rule = true
+machine = true
 
 [lines.line-9ba781a8b1b234f5]
 name = "Declined: Orthodox Defence, Botvinnik Variation"
-rule = true
+machine = true
 
 [lines.line-4998c4e9c741e46b]
 name = "Declined: Orthodox Defence, Rubinstein Variation, Flohr Line"
-rule = true
+machine = true
 
 [lines.line-76e46e018791590b]
 name = "Declined: Orthodox Defence, Main Line"
-rule = true
+machine = true
 
 [lines.line-abdcd9ac89db6117]
 name = "Declined: Orthodox Defence, Henneberger Variation"
-rule = true
+machine = true
 
 [lines.line-0204de3ca064de38]
 name = "Declined: Orthodox Defence, Henneberger Variation"
-rule = true
+machine = true
 
 [lines.line-63b588ac89487026]
 name = "Declined: Orthodox Defence, Henneberger Variation"
-rule = true
+machine = true
 
 [lines.line-d9239ea5a84d8f55]
 name = "Declined: Orthodox Defence, Henneberger Variation"
-rule = true
+machine = true
 
 [lines.line-fe2cfafeccf2f585]
 name = "Declined: Orthodox Defence, Swiss, Carlsbad Variation"
@@ -14979,7 +14979,7 @@ machine = true
 
 [lines.line-2543219e8d70e9de]
 name = "Declined: Orthodox Defence, Main Line"
-rule = true
+machine = true
 
 [lines.line-27f190e033651131]
 name = "Declined: Orthodox Defence, Classical Variation"
@@ -14987,75 +14987,75 @@ machine = true
 
 [lines.line-ebc2af1c6c304b6d]
 name = "Declined: Orthodox Defence, Rubinstein Attack"
-rule = true
+machine = true
 
 [lines.line-af367b3153a061c3]
 name = "Declined: Orthodox Defence, Rubinstein Attack"
-rule = true
+machine = true
 
 [lines.line-d628ab83a85cf8dc]
 name = "Declined: Orthodox Defence, Rauzer Variation"
-rule = true
+machine = true
 
 [lines.line-3269272c0fb0d6c2]
 name = "Declined: Orthodox Defence, Janowski Variation"
-rule = true
+machine = true
 
 [lines.line-6bc7896a322f26a4]
 name = "Declined: Orthodox Defence, Rubinstein Attack"
-rule = true
+machine = true
 
 [lines.line-fdbc966ace1a9659]
 name = "Declined: Orthodox Defence, Rubinstein Attack"
-rule = true
+machine = true
 
 [lines.line-269353632dc48166]
 name = "Declined: Orthodox Defence, Main Line"
-rule = true
+machine = true
 
 [lines.line-da95b4c689be5379]
 name = "Declined: Orthodox Defence, Rubinstein Variation"
-rule = true
+machine = true
 
 [lines.line-2fc4b2b8f37abd4a]
 name = "Declined: Orthodox Defence, Rubinstein Variation"
-rule = true
+machine = true
 
 [lines.line-f91a4469c772adbf]
 name = "Declined: Orthodox Defence, Rubinstein Variation"
-rule = true
+machine = true
 
 [lines.line-f22ca9e43db2e599]
 name = "Declined: Orthodox Defence, Rubinstein Variation"
-rule = true
+machine = true
 
 [lines.line-1cd978d01ce073df]
 name = "Declined: Orthodox Defence, Rubinstein Variation"
-rule = true
+machine = true
 
 [lines.line-fd53b682ed949fae]
 name = "Declined: Orthodox Defence, Rubinstein Variation"
-rule = true
+machine = true
 
 [lines.line-18625fe42902d125]
 name = "Declined: Orthodox Defence, Bd3 Line"
-rule = true
+machine = true
 
 [lines.line-602c29ad9b36af75]
 name = "Declined: Orthodox Defence, Capablanca System"
-rule = true
+machine = true
 
 [lines.line-2a2f0528dded3749]
 name = "Declined: Orthodox Defence, Bd3 Line"
-rule = true
+machine = true
 
 [lines.line-876ac5d2b4823f2f]
 name = "Declined: Orthodox Defence, Alekhine Variation"
-rule = true
+machine = true
 
 [lines.line-a0c89cd3058d3951]
 name = "Declined: Orthodox Defence, Main Line"
-rule = true
+machine = true
 
 [lines.line-0b9595bf9615263f]
 name = "Declined: Orthodox Defence, Classical Variation"
@@ -15067,11 +15067,11 @@ machine = true
 
 [lines.line-726e92bc89a9bdff]
 name = "Declined: Orthodox Defence, Bd3 Line"
-rule = true
+machine = true
 
 [lines.line-067187e30dab1525]
 name = "Declined: Orthodox Defence, Fianchetto Variation"
-rule = true
+machine = true
 
 [lines.line-972507f73d43a8d1]
 name = "Declined: Orthodox Defence, Classical Variation"
@@ -15079,135 +15079,135 @@ machine = true
 
 [subgroups.queen-s-gambit."Declined: Exchange Variation"]
 name = "Declined: Exchange Variation"
-rule = true
+machine = true
 
 [lines.line-5bf6687568606b31]
 name = "Declined: Exchange Variation"
-rule = true
+machine = true
 
 [lines.line-cbe984023da94f69]
 name = "Declined: Exchange Variation, Positional Variation"
-rule = true
+machine = true
 
 [lines.line-4b7c4507c14ccde4]
 name = "Declined: Exchange Variation, Chameleon Variation"
-rule = true
+machine = true
 
 [lines.line-a217d7d3785a3864]
 name = "Declined: Exchange Variation, Carlsen Variation"
-rule = true
+machine = true
 
 [lines.line-bc07bed1e8abe9f8]
 name = "Declined: Exchange Variation, Positional Variation"
-rule = true
+machine = true
 
 [lines.line-67dac8224694e35b]
 name = "Declined: Exchange Variation, Reshevsky Variation"
-rule = true
+machine = true
 
 [lines.line-c2d210db68d7aac3]
 name = "Declined: Exchange Variation, Reshevsky Variation"
-rule = true
+machine = true
 
 [lines.line-1a52a5ffbbae2883]
 name = "Declined: Exchange Variation, Reshevsky Variation"
-rule = true
+machine = true
 
 [lines.line-fd4b992f2fdffed3]
 name = "Declined: Exchange Variation, Reshevsky Variation"
-rule = true
+machine = true
 
 [lines.line-9274df6709361c8e]
 name = "Declined: Exchange Variation, Positional Variation"
-rule = true
+machine = true
 
 [lines.line-78ad68c48e427a5c]
 name = "Declined: Exchange Variation, Reshevsky Variation"
-rule = true
+machine = true
 
 [lines.line-00af4e9f43bc4bb3]
 name = "Declined: Exchange Variation, Sämisch Variation"
-rule = true
+machine = true
 
 [lines.line-32a239737a400a21]
 name = "Declined: Exchange Variation, Positional Variation"
-rule = true
+machine = true
 
 [lines.line-9be23ed2402b0462]
 name = "Declined: Exchange Variation, Reshevsky Variation"
-rule = true
+machine = true
 
 [lines.line-49d2d004f8f34ddf]
 name = "Declined: Exchange Variation, Reshevsky Variation"
-rule = true
+machine = true
 
 [lines.line-72f47bd1aedc2427]
 name = "Declined: Exchange Variation, Reshevsky Variation"
-rule = true
+machine = true
 
 [lines.line-bc43aaebc82e5b17]
 name = "Declined: Exchange Variation"
-rule = true
+machine = true
 
 [lines.line-de0dc06ce387375e]
 name = "Declined: Exchange Variation, Reshevsky Variation"
-rule = true
+machine = true
 
 [lines.line-64034fe01635d219]
 name = "Declined: Exchange Variation, Reshevsky Variation"
-rule = true
+machine = true
 
 [lines.line-2ece4e3a6fb2af0e]
 name = "Declined: Exchange Variation"
-rule = true
+machine = true
 
 [lines.line-4a9cb39562162dac]
 name = "Declined: Exchange Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Semi-Tarrasch Defense"]
 name = "Declined: Semi-Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-4de7ffbdf314e5f3]
 name = "Declined: Semi-Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-d5297a34f989c621]
 name = "Declined: Semi-Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-17bbd4b288386643]
 name = "Declined: Semi-Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-387d04e6eb5a8910]
 name = "Declined: Semi-Tarrasch Defence, Pillsbury Variation"
-rule = true
+machine = true
 
 [lines.line-2c544a7adb4673bc]
 name = "Declined: Semi-Tarrasch Defence, Main Line"
-rule = true
+machine = true
 
 [lines.line-c8d9189127100ede]
 name = "Declined: Semi-Tarrasch Defence, Exchange Variation"
-rule = true
+machine = true
 
 [lines.line-e36bf0e007bd970f]
 name = "Declined: Semi-Tarrasch Defence, Exchange Variation"
-rule = true
+machine = true
 
 [lines.line-4bd1473ff027f021]
 name = "Declined: Semi-Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-6b7cc79770d54161]
 name = "Declined: Semi-Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-56f6c2110ada6d4c]
 name = "Declined: Semi-Tarrasch Defence, Endgame Variation"
-rule = true
+machine = true
 
 [lines.line-138d91c55bc67c4e]
 name = "Declined: Semi-Tarrasch Defence, with e3"
@@ -15215,31 +15215,31 @@ machine = true
 
 [lines.line-928c65343f146787]
 name = "Declined: Semi-Tarrasch Defence, Krause Variation"
-rule = true
+machine = true
 
 [lines.line-0136a0e751c18521]
 name = "Declined: Semi-Tarrasch Defence, Pillsbury Variation"
-rule = true
+machine = true
 
 [lines.line-523857e775c72d38]
 name = "Declined: Semi-Tarrasch Defence, Kmoch Variation"
-rule = true
+machine = true
 
 [lines.line-1b2726938b12c65e]
 name = "Declined: Semi-Tarrasch Defence, Symmetrical Variation"
-rule = true
+machine = true
 
 [lines.line-61deeedbfd603db9]
 name = "Declined: Semi-Tarrasch Defence, Levenfish Variation"
-rule = true
+machine = true
 
 [lines.line-a50173e7d7f67fcf]
 name = "Declined: Semi-Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-74083e30167fcc80]
 name = "Declined: Semi-Tarrasch Defence, San Sebastian Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Accepted: Classical Defense"]
 name = "Accepted: Classical Defence"
@@ -15307,115 +15307,115 @@ machine = true
 
 [subgroups.queen-s-gambit."Declined: Albin Countergambit"]
 name = "Declined: Albin Countergambit"
-rule = true
+machine = true
 
 [lines.line-bc0383f47c6d98d1]
 name = "Declined: Albin Countergambit"
-rule = true
+machine = true
 
 [lines.line-65ba083fe0b5ca30]
 name = "Declined: Albin Countergambit, Normal Line"
-rule = true
+machine = true
 
 [lines.line-be8f6eb3286295af]
 name = "Declined: Albin Countergambit, Modern Line"
-rule = true
+machine = true
 
 [lines.line-c39570863b8cd82f]
 name = "Declined: Albin Countergambit, Krenosz Variation"
-rule = true
+machine = true
 
 [lines.line-5ad68896faa2ab72]
 name = "Declined: Albin Countergambit, Balogh Variation"
-rule = true
+machine = true
 
 [lines.line-30f1a76b81aecafc]
 name = "Declined: Albin Countergambit, Janowski Variation"
-rule = true
+machine = true
 
 [lines.line-49b4cefe8c479314]
 name = "Declined: Albin Countergambit, Fianchetto Variation"
-rule = true
+machine = true
 
 [lines.line-e5f5b04e16212cef]
 name = "Declined: Albin Countergambit, Fianchetto Variation, Be6 Line"
-rule = true
+machine = true
 
 [lines.line-2b4f175843892f60]
 name = "Declined: Albin Countergambit, Fianchetto Variation, Bf5 Line"
-rule = true
+machine = true
 
 [lines.line-876f94905f1547c4]
 name = "Declined: Albin Countergambit, Fianchetto Variation, Bg4 Line"
-rule = true
+machine = true
 
 [lines.line-160cc26f0c2b581e]
 name = "Declined: Albin Countergambit, Tartakower Defence"
-rule = true
+machine = true
 
 [lines.line-df17f89182d7d4b2]
 name = "Declined: Albin Countergambit, Lasker Trap"
-rule = true
+machine = true
 
 [lines.line-dba6032029ae674f]
 name = "Declined: Albin Countergambit, Spassky Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Chigorin Defense"]
 name = "Declined: Chigorin Defence"
-rule = true
+machine = true
 
 [lines.line-f6b183f7dc8a0a01]
 name = "Declined: Chigorin Defence"
-rule = true
+machine = true
 
 [lines.line-5a3b7024ff497cd4]
 name = "Declined: Chigorin Defence"
-rule = true
+machine = true
 
 [lines.line-fc622b3905a528be]
 name = "Declined: Chigorin Defence"
-rule = true
+machine = true
 
 [lines.line-64083c79ee76b427]
 name = "Declined: Chigorin Defence, Janowski Variation"
-rule = true
+machine = true
 
 [lines.line-9f0c3774e51c9f02]
 name = "Declined: Chigorin Defence, Modern Gambit"
-rule = true
+machine = true
 
 [lines.line-9cb554f9e53748b4]
 name = "Declined: Chigorin Defence, Tartakower Gambit"
-rule = true
+machine = true
 
 [lines.line-31a91c04219d4ee4]
 name = "Declined: Chigorin Defence"
-rule = true
+machine = true
 
 [lines.line-2f6957cafa49aaea]
 name = "Declined: Chigorin Defence"
-rule = true
+machine = true
 
 [lines.line-bafaf034dff31c9c]
 name = "Declined: Chigorin Defence, Main Line"
-rule = true
+machine = true
 
 [lines.line-8bf92a380c606abb]
 name = "Declined: Chigorin Defence, Main Line, Alekhine Variation"
-rule = true
+machine = true
 
 [lines.line-62806fb7ac4fe23b]
 name = "Declined: Chigorin Defence, Lazard Gambit"
-rule = true
+machine = true
 
 [lines.line-0a56ef2d434ef5a9]
 name = "Declined: Chigorin Defence, Exchange Variation"
-rule = true
+machine = true
 
 [lines.line-6af9da7efe9c67dd]
 name = "Declined: Chigorin Defence, Exchange Variation, Costa's Line"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined"]
 name = "Declined"
@@ -15463,71 +15463,71 @@ machine = true
 
 [subgroups.queen-s-gambit."Declined: Harrwitz Attack"]
 name = "Declined: Harrwitz Attack"
-rule = true
+machine = true
 
 [lines.line-5152eb194b5b0ae7]
 name = "Declined: Harrwitz Attack, Two Knights Defence, Blockade Line"
-rule = true
+machine = true
 
 [lines.line-c6ce7500c6cef1fd]
 name = "Declined: Harrwitz Attack"
-rule = true
+machine = true
 
 [lines.line-cec17f3e0d548806]
 name = "Declined: Harrwitz Attack, Two Knights Defence"
-rule = true
+machine = true
 
 [lines.line-422aa783bf926874]
 name = "Declined: Harrwitz Attack, Main Line"
-rule = true
+machine = true
 
 [lines.line-94dbe519bf7e7a00]
 name = "Declined: Harrwitz Attack"
-rule = true
+machine = true
 
 [lines.line-b81297140524bda5]
 name = "Declined: Harrwitz Attack"
-rule = true
+machine = true
 
 [lines.line-98f270eb52dc84a7]
 name = "Declined: Harrwitz Attack, Fianchetto Defence"
-rule = true
+machine = true
 
 [lines.line-35f2d0a2de81970e]
 name = "Declined: Harrwitz Attack"
-rule = true
+machine = true
 
 [lines.line-d3c7d0088c71c360]
 name = "Declined: Harrwitz Attack, Orthodox Defence"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Accepted: Normal Variation"]
 name = "Accepted: Normal Variation"
-rule = true
+machine = true
 
 [lines.line-9da31abd225614f5]
 name = "Accepted: Normal Variation"
-rule = true
+machine = true
 
 [lines.line-986bd3c5921233e8]
 name = "Accepted: Normal Variation"
-rule = true
+machine = true
 
 [lines.line-ce5228ab947bba1c]
 name = "Accepted: Normal Variation, Traditional System"
-rule = true
+machine = true
 
 [lines.line-8dc367e7abbc2073]
 name = "Accepted: Normal Variation, Traditional System"
-rule = true
+machine = true
 
 [lines.line-250087da84473de0]
 name = "Accepted: Normal Variation, Traditional System"
-rule = true
+machine = true
 
 [lines.line-22b1ba901787b407]
 name = "Accepted: Normal Variation, Traditional System"
-rule = true
+machine = true
 
 [lines.line-c85a103fd27add8b]
 name = "Accepted: Normal Variation, .. a6 Sideline"
@@ -15539,31 +15539,31 @@ machine = true
 
 [subgroups.queen-s-gambit."Declined: Lasker Defense"]
 name = "Declined: Lasker Defence"
-rule = true
+machine = true
 
 [lines.line-0b7ad5c970467b91]
 name = "Declined: Lasker Defence"
-rule = true
+machine = true
 
 [lines.line-eaddbf2b7882916c]
 name = "Declined: Lasker Defence, Bernstein Variation"
-rule = true
+machine = true
 
 [lines.line-56bdf1039e687706]
 name = "Declined: Lasker Defence, Teichmann Variation"
-rule = true
+machine = true
 
 [lines.line-e9eca35e366e3bc5]
 name = "Declined: Lasker Defence"
-rule = true
+machine = true
 
 [lines.line-25d95e27853e969e]
 name = "Declined: Lasker Defence, Main Line"
-rule = true
+machine = true
 
 [lines.line-5539fbe91db45b1a]
 name = "Declined: Lasker Defence, Russian Variation"
-rule = true
+machine = true
 
 [lines.line-b3ab378c553df1d1]
 name = "Declined: Lasker Defence, Bernstein Variation, Mar del Plata Gambit"
@@ -15571,91 +15571,91 @@ machine = true
 
 [lines.line-11efa26203f3a991]
 name = "Declined: Lasker Defence"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Accepted: Central Variation"]
 name = "Accepted: Central Variation"
-rule = true
+machine = true
 
 [lines.line-9e78bca3d1ae3d20]
 name = "Accepted: Central Variation, Modern Defence"
-rule = true
+machine = true
 
 [lines.line-11e801d54d9da2f8]
 name = "Accepted: Central Variation, Alekhine System"
-rule = true
+machine = true
 
 [lines.line-5e3389fa92f3adba]
 name = "Accepted: Central Variation, Greco Variation"
-rule = true
+machine = true
 
 [lines.line-e5d1538ba6e4f3c7]
 name = "Accepted: Central Variation, Rubinstein Defence"
-rule = true
+machine = true
 
 [lines.line-96b3cb52e10dfb06]
 name = "Accepted: Central Variation, Rubinstein Defence, Yefimov Gambit"
-rule = true
+machine = true
 
 [lines.line-71a34a4398a68e70]
 name = "Accepted: Central Variation, McDonnell Defence"
-rule = true
+machine = true
 
 [lines.line-eddee825a2ad9a82]
 name = "Accepted: Central Variation, McDonnell Defence, Somov Gambit"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Cambridge Springs Defense"]
 name = "Declined: Cambridge Springs Defence"
-rule = true
+machine = true
 
 [lines.line-ed4b5229803c47c7]
 name = "Declined: Cambridge Springs Defence"
-rule = true
+machine = true
 
 [lines.line-de91b110290cbe65]
 name = "Declined: Cambridge Springs Defence, Bogoljubow Variation"
-rule = true
+machine = true
 
 [lines.line-c8a73da3bbb2a071]
 name = "Declined: Cambridge Springs Defence, Rubinstein Variation"
-rule = true
+machine = true
 
 [lines.line-453727ecc9852591]
 name = "Declined: Cambridge Springs Defence"
-rule = true
+machine = true
 
 [lines.line-80bdd7381d3a76bd]
 name = "Declined: Cambridge Springs Defence, Yugoslav Variation"
-rule = true
+machine = true
 
 [lines.line-406ca2267a14507e]
 name = "Declined: Cambridge Springs Defence, Capablanca Variation"
-rule = true
+machine = true
 
 [lines.line-b6d0579bc760d215]
 name = "Declined: Cambridge Springs Defence, Argentine Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Tarrasch Defense"]
 name = "Declined: Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-a093aa6cd25c99db]
 name = "Declined: Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-229a3a5f1b3cd3ce]
 name = "Declined: Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-218b61a449d816fb]
 name = "Declined: Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-cf787091e3af786e]
 name = "Declined: Tarrasch Defence"
-rule = true
+machine = true
 
 [lines.line-78568ef228e04f18]
 name = "Declined: Tarrasch Defence, Pseudo-Tarrasch"
@@ -15663,15 +15663,15 @@ machine = true
 
 [lines.line-27369891a66ac954]
 name = "Declined: Tarrasch Defence, Pseudo-Tarrasch Bishop Attack"
-rule = true
+machine = true
 
 [lines.line-a27c2ec81e57132f]
 name = "Declined: Tarrasch Defence, Stoltz Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Baltic Defense"]
 name = "Declined: Baltic Defence"
-rule = true
+machine = true
 
 [lines.line-929ddede6836afd2]
 name = "Declined: Baltic Defence, Pseudo-Slav"
@@ -15679,7 +15679,7 @@ machine = true
 
 [lines.line-dc1fd096d539dfc4]
 name = "Declined: Baltic Defence"
-rule = true
+machine = true
 
 [lines.line-00239d1230faff2f]
 name = "Declined: Baltic Defence, Pseudo-Chigorin"
@@ -15695,59 +15695,59 @@ machine = true
 
 [lines.line-7a58b3a420e397a8]
 name = "Declined: Baltic Defence, Argentinian Gambit"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Modern Variation"]
 name = "Declined: Modern Variation"
-rule = true
+machine = true
 
 [lines.line-1f75ec8f495524bd]
 name = "Declined: Modern Variation, Normal Line"
-rule = true
+machine = true
 
 [lines.line-9c6e8b0ff6ff2610]
 name = "Declined: Modern Variation"
-rule = true
+machine = true
 
 [lines.line-87b5190f35733b45]
 name = "Declined: Modern Variation, Heral Variation"
-rule = true
+machine = true
 
 [lines.line-091ae6f826fc2d31]
 name = "Declined: Modern Variation, Knight Defence"
-rule = true
+machine = true
 
 [lines.line-9097fc806b4ca1ad]
 name = "Declined: Modern Variation, Knight Defence"
-rule = true
+machine = true
 
 [lines.line-ca1ddfb46663f649]
 name = "Declined: Modern Variation, Knight Defence"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Accepted: Old Variation"]
 name = "Accepted: Old Variation"
-rule = true
+machine = true
 
 [lines.line-c986027c19683ba8]
 name = "Accepted: Old Variation"
-rule = true
+machine = true
 
 [lines.line-102791a83c905518]
 name = "Accepted: Old Variation, Korchnoi Gambit"
-rule = true
+machine = true
 
 [lines.line-0a78dfc0d998e6fe]
 name = "Accepted: Old Variation, Novikov Gambit"
-rule = true
+machine = true
 
 [lines.line-2d0b2c0d502f245e]
 name = "Accepted: Old Variation, Christensen Gambit"
-rule = true
+machine = true
 
 [lines.line-8b342adc2ada3fbf]
 name = "Accepted: Old Variation, Billinger Gambit"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Accepted"]
 name = "Accepted"
@@ -15771,139 +15771,139 @@ machine = true
 
 [subgroups.queen-s-gambit."Accepted: Alekhine Defense"]
 name = "Accepted: Alekhine Defence"
-rule = true
+machine = true
 
 [lines.line-42ff11f08f70bac1]
 name = "Accepted: Alekhine Defence"
-rule = true
+machine = true
 
 [lines.line-1ec4743cd39d4c0c]
 name = "Accepted: Alekhine Defence, Alatortsev Variation"
-rule = true
+machine = true
 
 [lines.line-e565a53a0817c546]
 name = "Accepted: Alekhine Defence, Haberditz Variation"
-rule = true
+machine = true
 
 [lines.line-d0f6f55c200d6783]
 name = "Accepted: Alekhine Defence, Borisenko-Furman Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Tartakower Defense"]
 name = "Declined: Tartakower Defence"
-rule = true
+machine = true
 
 [lines.line-c7cb0bd1e2ad6edc]
 name = "Declined: Tartakower Defence"
-rule = true
+machine = true
 
 [lines.line-37a5dc85bf04edef]
 name = "Declined: Tartakower Defence, Makogonov Exchange Variation"
-rule = true
+machine = true
 
 [lines.line-17cef5a842173bb8]
 name = "Declined: Tartakower Defence"
-rule = true
+machine = true
 
 [lines.line-9bce6fbc26f5970f]
 name = "Declined: Tartakower Defence, Exchange Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Accepted: Mannheim Variation"]
 name = "Accepted: Mannheim Variation"
-rule = true
+machine = true
 
 [lines.line-f3163547cea317d5]
 name = "Accepted: Mannheim Variation"
-rule = true
+machine = true
 
 [lines.line-66058375fe0eeab9]
 name = "Accepted: Mannheim Variation"
-rule = true
+machine = true
 
 [lines.line-e9857ba9adc4fd3f]
 name = "Accepted: Mannheim Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Austrian Defense"]
 name = "Declined: Austrian Defence"
-rule = true
+machine = true
 
 [lines.line-87848b34f76102db]
 name = "Declined: Austrian Defence"
-rule = true
+machine = true
 
 [lines.line-195f59c1e86724d2]
 name = "Declined: Austrian Defence, Gusev Countergambit"
-rule = true
+machine = true
 
 [lines.line-d8bbab7c5b5cb5c0]
 name = "Declined: Austrian Defence, Haberditz Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Capablanca Variation"]
 name = "Declined: Capablanca Variation"
-rule = true
+machine = true
 
 [lines.line-5ba0721f22290b83]
 name = "Declined: Capablanca Variation"
-rule = true
+machine = true
 
 [lines.line-31d6a95adf4e3a9c]
 name = "Declined: Capablanca Variation"
-rule = true
+machine = true
 
 [lines.line-c090b2e86d54b6fd]
 name = "Declined: Capablanca Variation, Anti-Cambridge Springs Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Neo-Orthodox Variation"]
 name = "Declined: Neo-Orthodox Variation"
-rule = true
+machine = true
 
 [lines.line-159172a732c1647e]
 name = "Declined: Neo-Orthodox Variation"
-rule = true
+machine = true
 
 [lines.line-2842a9bf31971672]
 name = "Declined: Neo-Orthodox Variation"
-rule = true
+machine = true
 
 [lines.line-00cb0ffa6438767e]
 name = "Declined: Neo-Orthodox Variation, Main Line"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Pseudo-Tarrasch Variation"]
 name = "Declined: Pseudo-Tarrasch Variation"
-rule = true
+machine = true
 
 [lines.line-7ed0b4045a251b9c]
 name = "Declined: Pseudo-Tarrasch Variation, Primitive Pillsbury Variation"
-rule = true
+machine = true
 
 [lines.line-ebac66e7e61846c4]
 name = "Declined: Pseudo-Tarrasch Variation"
-rule = true
+machine = true
 
 [lines.line-938606157295ba6d]
 name = "Declined: Pseudo-Tarrasch Variation, Canal Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Ragozin Defense"]
 name = "Declined: Ragozin Defence"
-rule = true
+machine = true
 
 [lines.line-f6b2fe17314ce01d]
 name = "Declined: Ragozin Defence"
-rule = true
+machine = true
 
 [lines.line-e33f5fbf8ac47c68]
 name = "Declined: Ragozin Defence, Vienna Variation"
-rule = true
+machine = true
 
 [lines.line-d22e804996fada50]
 name = "Declined: Ragozin Defence, Alekhine Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Semi-Slav"]
 name = "Declined: Semi-Slav"
@@ -15935,203 +15935,203 @@ machine = true
 
 [subgroups.queen-s-gambit."Accepted: Gunsberg Defense"]
 name = "Accepted: Gunsberg Defence"
-rule = true
+machine = true
 
 [lines.line-51a463e19eadb521]
 name = "Accepted: Gunsberg Defence, Prianishenmo Gambit"
-rule = true
+machine = true
 
 [lines.line-9939ed767bd0d3c7]
 name = "Accepted: Gunsberg Defence"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Anti-Tartakower Variation"]
 name = "Declined: Anti-Tartakower Variation"
-rule = true
+machine = true
 
 [lines.line-93da525d81906298]
 name = "Declined: Anti-Tartakower Variation"
-rule = true
+machine = true
 
 [lines.line-c557d60420f2315d]
 name = "Declined: Anti-Tartakower Variation, Petrosian Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Charousek Variation"]
 name = "Declined: Charousek Variation"
-rule = true
+machine = true
 
 [lines.line-cd15c7d92aa3b88a]
 name = "Declined: Charousek Variation"
-rule = true
+machine = true
 
 [lines.line-a86a4f420ada825c]
 name = "Declined: Charousek Variation, Miladinovic Gambit"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Marshall Defense"]
 name = "Declined: Marshall Defence"
-rule = true
+machine = true
 
 [lines.line-15c7edc0d595e18d]
 name = "Declined: Marshall Defence"
-rule = true
+machine = true
 
 [lines.line-f0985df81f8bc5b5]
 name = "Declined: Marshall Defence, Tan Gambit"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Three Knights Variation"]
 name = "Declined: Three Knights Variation"
-rule = true
+machine = true
 
 [lines.line-37407d27d319cead]
 name = "Declined: Three Knights Variation"
-rule = true
+machine = true
 
 [lines.line-ec1c38baa2036eb6]
 name = "Declined: Three Knights Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Traditional Variation"]
 name = "Declined: Traditional Variation"
-rule = true
+machine = true
 
 [lines.line-ee502046019cd286]
 name = "Declined: Traditional Variation"
-rule = true
+machine = true
 
 [lines.line-a37e657860f304e5]
 name = "Declined: Traditional Variation"
-rule = true
+machine = true
 
 [subgroups.queen-s-gambit."Declined: Vienna Variation"]
 name = "Declined: Vienna Variation"
-rule = true
+machine = true
 
 [lines.line-cbb89ae689cb42db]
 name = "Declined: Vienna Variation"
-rule = true
+machine = true
 
 [lines.line-0d7baf536fb4d2cd]
 name = "Declined: Vienna Variation, Quiet Variation"
-rule = true
+machine = true
 
 [lines.line-1590969709aec8e9]
 name = "Accepted: Accelerated Mannheim Variation"
-rule = true
+machine = true
 
 [lines.line-081ba374b675f8cb]
 name = "Accepted: Bogoljubow Defence"
-rule = true
+machine = true
 
 [lines.line-3a835a8360cc9dc2]
 name = "Accepted: Furman Variation"
-rule = true
+machine = true
 
 [lines.line-01275e2cff7381bf]
 name = "Accepted: Godes Variation"
-rule = true
+machine = true
 
 [lines.line-785fceaec3a904d8]
 name = "Accepted: Janowski-Larsen Variation"
-rule = true
+machine = true
 
 [lines.line-62ad0a1c3cb05194]
 name = "Accepted: Linares Variation"
-rule = true
+machine = true
 
 [lines.line-583e7462aa08bfde]
 name = "Accepted: Rosenthal Variation"
-rule = true
+machine = true
 
 [lines.line-c21bf5aea67d2e3b]
 name = "Accepted: Saduleto Variation"
-rule = true
+machine = true
 
 [lines.line-a6d817f1887880e9]
 name = "Accepted: Schwartz Defence"
-rule = true
+machine = true
 
 [lines.line-ad3e6579975b386a]
 name = "Accepted: Showalter Variation"
-rule = true
+machine = true
 
 [lines.line-6ab25d567ef9b31c]
 name = "Accepted: Slav Gambit"
-rule = true
+machine = true
 
 [lines.line-a723d3737fcf792f]
 name = "Accepted: Smyslov Variation"
-rule = true
+machine = true
 
 [lines.line-3c58b56cd2c7b02a]
 name = "Accepted: Winawer Defence"
-rule = true
+machine = true
 
 [lines.line-4a63ba4d6a338b8e]
 name = "Declined: Alapin Variation"
-rule = true
+machine = true
 
 [lines.line-a4d1833fad9752e2]
 name = "Declined: Alekhine Variation"
-rule = true
+machine = true
 
 [lines.line-ce67d1bc0ee271a3]
 name = "Declined: Austrian Attack, Salvio Countergambit"
-rule = true
+machine = true
 
 [lines.line-393cb5a59dd74c22]
 name = "Declined: Barmen Variation"
-rule = true
+machine = true
 
 [lines.line-20ecd8629a714ab2]
 name = "Declined: Been-Koomen Variation"
-rule = true
+machine = true
 
 [lines.line-61ef47f0a08aeed5]
 name = "Declined: Janowski Variation"
-rule = true
+machine = true
 
 [lines.line-a2f3864cc6b284be]
 name = "Declined: Knight Defence, Alekhine Gambit"
-rule = true
+machine = true
 
 [lines.line-8481890d5f1621f1]
 name = "Declined: Manhattan Variation"
-rule = true
+machine = true
 
 [lines.line-4b33887cf9193730]
 name = "Declined: Miles Variation"
-rule = true
+machine = true
 
 [lines.line-476cf19e15530804]
 name = "Declined: Normal Defence"
-rule = true
+machine = true
 
 [lines.line-cbdd063a18b08d0c]
 name = "Declined: Pillsbury Attack"
-rule = true
+machine = true
 
 [lines.line-77f710cab314cf32]
 name = "Declined: Queen's Knight Variation"
-rule = true
+machine = true
 
 [lines.line-04d7aeb0f6a0759f]
 name = "Declined: Rochlin Variation"
-rule = true
+machine = true
 
 [lines.line-894ba9659393de5d]
 name = "Declined: Semmering Variation"
-rule = true
+machine = true
 
 [lines.line-06e64c4f7e0806e6]
 name = "Declined: Spielmann Variation"
-rule = true
+machine = true
 
 [lines.line-6fbd8302a71bebe8]
 name = "Declined: Stonewall Variation"
-rule = true
+machine = true
 
 [lines.line-c15cfa0582aad9ee]
 name = "Declined: Three Knights, Vienna Variation"
@@ -16139,15 +16139,15 @@ machine = true
 
 [lines.line-bf07055b5de98dc8]
 name = "Declined: Uhlmann Variation"
-rule = true
+machine = true
 
 [lines.line-135d5b7766e3b3f0]
 name = "Declined: Westphalian Variation"
-rule = true
+machine = true
 
 [lines.line-3a8f2b8eb851aaf3]
 name = "Declined: Zilbermints Gambit"
-rule = true
+machine = true
 
 [lines.line-9672de7d466ad308]
 name = "Queen's Gambit"
