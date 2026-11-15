@@ -472,6 +472,14 @@ def test_a_wikidata_label_starts_with_a_capital():
     found = wiki_name(entry, locale())
     assert found is not None
     assert found.name == "Gambito irlandês"
+    titled = {
+        "item": "Q8",
+        "sitelinks": {"ptwiki": "Defesa Siciliana, variante Dragão"},
+        "labels": {},
+    }
+    found = wiki_name(titled, locale(), "Defesa Siciliana")
+    assert found is not None
+    assert found.name == "Variante Dragão"  # What follows the family's name, with a capital.
 
 
 def test_a_hyphenated_template_joins_the_proper_name(tmp_path):
