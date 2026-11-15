@@ -1,0 +1,409 @@
+# Chess glossary: Brazilian Portuguese (brief §8). One row per chess term the UI, Help, About and
+# HOW_TO_INSTALL use, each from the Portuguese Wikipedia (`source`) or, when no page names it,
+# `machine = true` with a `note`. `avoid` lists the words the UI must not use for the term.
+# Every glossary has the terms of en.toml. Checked against Wikipedia on 2026-11-15 (#29).
+
+[[terms]]
+term = "chess"
+translation = "xadrez"
+source = "https://pt.wikipedia.org/wiki/Xadrez"
+
+[[terms]]
+term = "piece"
+translation = "peça"
+source = "https://pt.wikipedia.org/wiki/Peças_de_xadrez"
+
+[[terms]]
+term = "king"
+translation = "rei"
+source = "https://pt.wikipedia.org/wiki/Rei_(xadrez)"
+
+[[terms]]
+term = "queen"
+translation = "dama"
+source = "https://pt.wikipedia.org/wiki/Dama_(xadrez)"
+avoid = ["rainha"]
+
+[[terms]]
+term = "rook"
+translation = "torre"
+source = "https://pt.wikipedia.org/wiki/Torre_(xadrez)"
+
+[[terms]]
+term = "pawn"
+translation = "peão"
+source = "https://pt.wikipedia.org/wiki/Peão_(xadrez)"
+
+[[terms]]
+term = "board"
+translation = "tabuleiro"
+source = "https://pt.wikipedia.org/wiki/Tabuleiro_(xadrez)"
+
+[[terms]]
+term = "square"
+translation = "casa"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Casa"
+
+[[terms]]
+term = "White"
+translation = "Brancas"
+source = "https://pt.wikipedia.org/wiki/Leis_do_xadrez"
+
+[[terms]]
+term = "Black"
+translation = "Pretas"
+source = "https://pt.wikipedia.org/wiki/Leis_do_xadrez"
+note = "The author's reviewed choice; the Wikipedia article uses \"pretas\" too."
+avoid = ["Negras"]
+
+[[terms]]
+term = "game"
+translation = "partida"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Abandono"
+avoid = ["jogo", "jogos"]
+
+[[terms]]
+term = "move"
+translation = "lance"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Lance"
+note = "The author's choice (reviewed), not \"jogada\" or \"movimento\"."
+avoid = ["jogada", "jogadas", "movimento", "movimentos"]
+
+[[terms]]
+term = "ply"
+translation = "meio-lance"
+machine = true
+note = "No Portuguese article; Wikidata's label is \"lance\", which is the move here. The author keeps \"meio-lance\" (decided in #29)."
+avoid = ["meia-jogada"]
+
+[[terms]]
+term = "premove"
+translation = "pré-lance"
+machine = true
+note = "No Wikipedia page names it; the author's reviewed choice."
+
+[[terms]]
+term = "take back"
+translation = "voltar lance"
+machine = true
+note = "No Wikipedia page names it; the author's reviewed choice."
+
+[[terms]]
+term = "castling"
+translation = "roque"
+source = "https://pt.wikipedia.org/wiki/Roque_(xadrez)"
+
+[[terms]]
+term = "check"
+translation = "xeque"
+source = "https://pt.wikipedia.org/wiki/Xeque_(xadrez)"
+
+[[terms]]
+term = "checkmate"
+translation = "xeque-mate"
+source = "https://pt.wikipedia.org/wiki/Xeque-mate"
+
+[[terms]]
+term = "stalemate"
+translation = "afogamento"
+source = "https://pt.wikipedia.org/wiki/Afogamento_(xadrez)"
+
+[[terms]]
+term = "draw"
+translation = "empate"
+source = "https://pt.wikipedia.org/wiki/Empate_(xadrez)"
+
+[[terms]]
+term = "resign"
+translation = "abandonar"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Abandono"
+avoid = ["desistir"]
+
+[[terms]]
+term = "insufficient material"
+translation = "material insuficiente"
+source = "https://pt.wikipedia.org/wiki/Empate_(xadrez)"
+
+[[terms]]
+term = "threefold repetition"
+translation = "repetição tripla"
+source = "https://pt.wikipedia.org/wiki/Empate_(xadrez)"
+note = "Wikipedia's word order (decided in #29)."
+avoid = ["tripla repetição"]
+
+[[terms]]
+term = "fivefold repetition"
+translation = "repetição quíntupla"
+machine = true
+note = "No Wikipedia page; follows \"repetição tripla\" (decided in #29)."
+avoid = ["quíntupla repetição"]
+
+[[terms]]
+term = "fifty-move rule"
+translation = "regra dos cinquenta lances"
+source = "https://pt.wikipedia.org/wiki/Regra_dos_50_movimentos"
+note = "Wikipedia says \"movimentos\"; \"lance\" is the author's term for move (decided in #29)."
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "regra dos setenta e cinco lances"
+source = "https://pt.wikipedia.org/wiki/Regra_dos_50_movimentos"
+note = "Wikipedia says \"movimentos\"; \"lance\" is the author's term for move (decided in #29)."
+
+[[terms]]
+term = "opening"
+translation = "abertura"
+source = "https://pt.wikipedia.org/wiki/Abertura_(xadrez)"
+
+[[terms]]
+term = "variation"
+translation = "variante"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Variante"
+avoid = ["variação", "variações"]
+
+[[terms]]
+term = "line"
+translation = "linha"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Variante"
+
+[[terms]]
+term = "theory"
+translation = "teoria"
+source = "https://pt.wikipedia.org/wiki/Teoria_do_xadrez"
+
+[[terms]]
+term = "book move"
+translation = "lance de livro"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Livro"
+
+[[terms]]
+term = "deviation"
+translation = "desvio"
+machine = true
+note = "No Wikipedia page names it; the author's reviewed choice."
+
+[[terms]]
+term = "chess engine"
+translation = "motor de xadrez"
+source = "https://pt.wikipedia.org/wiki/Motor_de_xadrez"
+note = "The author's choice (reviewed), not \"engine\"."
+avoid = ["engine"]
+
+[[terms]]
+term = "computer"
+translation = "computador"
+source = "https://pt.wikipedia.org/wiki/Computador"
+
+[[terms]]
+term = "evaluation"
+translation = "avaliação"
+source = "https://pt.wikipedia.org/wiki/Função_de_avaliação"
+
+[[terms]]
+term = "analysis"
+translation = "análise"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Análise"
+
+[[terms]]
+term = "brilliant move"
+translation = "lance brilhante"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Brilhantismo"
+
+[[terms]]
+term = "best move"
+translation = "melhor lance"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. The author's reviewed choice."
+
+[[terms]]
+term = "great move"
+translation = "ótimo lance"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. The author's reviewed choice."
+
+[[terms]]
+term = "inaccuracy"
+translation = "imprecisão"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. The author's reviewed choice."
+
+[[terms]]
+term = "mistake"
+translation = "erro"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. The author's reviewed choice."
+
+[[terms]]
+term = "miss"
+translation = "chance perdida"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. The author's reviewed choice."
+
+[[terms]]
+term = "blunder"
+translation = "capivarada"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Capivara"
+
+[[terms]]
+term = "time control"
+translation = "ritmo"
+machine = true
+note = "Wikipedia only links \"controle do tempo\", with no article; the author keeps \"ritmo\" (decided in #29)."
+avoid = ["controle de tempo", "controle do tempo"]
+
+[[terms]]
+term = "chess clock"
+translation = "relógio"
+source = "https://pt.wikipedia.org/wiki/Relógio_de_xadrez"
+
+[[terms]]
+term = "increment"
+translation = "incremento"
+source = "https://pt.wikipedia.org/wiki/Relógio_de_xadrez"
+
+[[terms]]
+term = "delay"
+translation = "atraso"
+source = "https://pt.wikipedia.org/wiki/Relógio_de_xadrez"
+
+[[terms]]
+term = "bullet"
+translation = "bullet"
+source = "https://pt.wikipedia.org/wiki/Xadrez_rápido"
+
+[[terms]]
+term = "blitz"
+translation = "blitz"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Relâmpago"
+
+[[terms]]
+term = "rapid"
+translation = "rápidas"
+source = "https://pt.wikipedia.org/wiki/Xadrez_rápido"
+note = "Plural, as a group of time controls in New Game."
+
+[[terms]]
+term = "classical"
+translation = "clássicas"
+machine = true
+note = "No Wikipedia page; plural, as a group of time controls in New Game."
+
+[[terms]]
+term = "scoresheet"
+translation = "planilha"
+source = "https://pt.wikipedia.org/wiki/Leis_do_xadrez"
+
+[[terms]]
+term = "arbiter"
+translation = "árbitro"
+source = "https://pt.wikipedia.org/wiki/Árbitro_de_xadrez"
+
+[[terms]]
+term = "rating"
+translation = "rating"
+source = "https://pt.wikipedia.org/wiki/Rating_Elo"
+
+[[terms]]
+term = "grandmaster"
+translation = "grande mestre"
+source = "https://pt.wikipedia.org/wiki/Grande_Mestre_de_Xadrez"
+
+[[terms]]
+term = "International Master"
+translation = "mestre internacional"
+source = "https://pt.wikipedia.org/wiki/Mestre_Internacional_de_Xadrez"
+
+[[terms]]
+term = "Woman International Master"
+translation = "Mestre Internacional Feminino"
+source = "https://pt.wikipedia.org/wiki/Grande_Mestre_de_Xadrez"
+note = "Decided in #29."
+avoid = ["Mestre Internacional Feminina"]
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "Mestra FIDE"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Mestra_FIDE_(WFM)"
+note = "Decided in #29."
+avoid = ["Mestre FIDE Feminina"]
+
+[[terms]]
+term = "Chess960"
+translation = "Chess960"
+source = "https://pt.wikipedia.org/wiki/Xadrez_de_Fischer"
+note = "Wikipedia's other name; it is the mode's name in the app (decided in #29)."
+avoid = ["Xadrez960"]
+
+[[terms]]
+term = "correspondence chess"
+translation = "xadrez por correspondência"
+source = "https://pt.wikipedia.org/wiki/Xadrez_epistolar"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "Olimpíada de Xadrez"
+source = "https://pt.wikipedia.org/wiki/Olimpíada_de_Xadrez"
+
+[[terms]]
+term = "touch-move rule"
+translation = "peça tocada"
+source = "https://pt.wikipedia.org/wiki/Regra_da_Peça_Tocada"
+
+[[terms]]
+term = "capture"
+translation = "captura"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Capturar"
+
+[[terms]]
+term = "tactics"
+translation = "tática"
+source = "https://pt.wikipedia.org/wiki/Tática_(xadrez)"
+
+[[terms]]
+term = "strategy"
+translation = "estratégia"
+source = "https://pt.wikipedia.org/wiki/Estratégia_(xadrez)"
+
+[[terms]]
+term = "sacrifice"
+translation = "sacrifício"
+source = "https://pt.wikipedia.org/wiki/Sacrifício_(xadrez)"
+
+[[terms]]
+term = "trap"
+translation = "armadilha"
+machine = true
+note = "No Wikipedia page names it; the author's reviewed choice."
+
+[[terms]]
+term = "gambit"
+translation = "gambito"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Gambito"
+
+[[terms]]
+term = "King's Pawn"
+translation = "Peão do Rei"
+source = "https://pt.wikipedia.org/wiki/Abertura_do_peão_do_rei"
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "Peão da Dama"
+source = "https://pt.wikipedia.org/wiki/Abertura_do_Peão_da_Dama"
+
+[[terms]]
+term = "flank"
+translation = "flanco"
+machine = true
+note = "No Wikipedia page names it; the author's reviewed choice."
+
+[[terms]]
+term = "starting position"
+translation = "posição inicial"
+source = "https://pt.wikipedia.org/wiki/Xadrez_de_Fischer"
+
+[[terms]]
+term = "chess prodigy"
+translation = "enxadrista prodígio"
+source = "https://pt.wikipedia.org/wiki/Enxadrista_prodígio"
+note = "Decided in #29."
+avoid = ["prodígio do xadrez"]
