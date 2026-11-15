@@ -266,13 +266,20 @@ Rules:
 
 A test fails when a `web/i18n` file has no entry, or an entry has no file. The app does not start with a bad registry.
 
-**Glossary** (`i18n/glossary/{locale}.toml`): one `[[terms]]` row per chess term the UI uses (check, checkmate, castling, piece names, opening, variation, gambit, defense, accepted, declined and so on), with `term` (the English term), `translation`, and either `source` (the Wikipedia or Wikidata page it came from) or `machine = true` when no page has it, plus an optional `note` for a choice that was made. Every glossary has the same terms as `en.toml`. The UI strings and the rule-built opening names of a language use its glossary terms.
+**Glossary** (`i18n/glossary/{locale}.toml`): one `[[terms]]` row per chess term the UI uses (check, checkmate, castling, piece names, opening, variation, gambit, defense, accepted, declined and so on), with `term` (the English term), `translation`, and either `source` (the Wikipedia or Wikidata page it came from) or `machine = true` when no page has it, plus an optional `note` for a choice that was made and an optional `avoid`, the words the UI must not use for that term (an older translation, a synonym). Every glossary has the same terms as `en.toml`. The UI strings and the rule-built opening names of a language use its glossary terms.
 
 ```toml
 [[terms]]
 term = "check"
 translation = "xeque"
 source = "https://pt.wikipedia.org/wiki/Xeque"
+
+[[terms]]
+term = "move"
+translation = "lance"
+source = "https://pt.wikipedia.org/wiki/Glossário_de_enxadrismo#Lance"
+note = "The author's choice (reviewed), not \"jogada\" or \"movimento\"."
+avoid = ["jogada", "jogadas", "movimento", "movimentos"]
 ```
 
 **Sources of opening names** (`i18n/names/{locale}.toml`): the names stay in the `names` of the `openings/` files (§6); this file records where each one of that locale came from. Families are keyed by id, subgroups by family id and English name, lines by line id. Each entry has the `name` it was recorded for and exactly one origin: `source` (a Wikipedia or Wikidata page), `rule = true` (built from the glossary, segment by segment, §6) or `machine = true`, plus an optional `note`. A test fails when a locale with this file has a name without an entry, an entry whose name changed, or an entry for something the book does not have. `catalog/validate.py` reports, per locale, how many names are sourced, rule-built, machine-translated or not recorded yet.

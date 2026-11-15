@@ -1,7 +1,8 @@
 """Where translations come from: the chess glossaries and the sources of opening names.
 
 `i18n/glossary/{locale}.toml` lists the chess terms the UI uses, translated, with the
-Wikipedia or Wikidata page each came from, or `machine = true` when none was found.
+Wikipedia or Wikidata page each came from, or `machine = true` when none was found, and the words
+the UI must not use for that term (`avoid`).
 `i18n/names/{locale}.toml` records, for each localized family, subgroup and line name in
 `openings/`, where it came from: a Wikipedia or Wikidata page (`source`), the glossary, segment
 by segment (`rule = true`), or machine translation (`machine = true`). The names themselves stay
@@ -25,7 +26,7 @@ SOURCE_URL = re.compile(
     r"^https://(?:[a-z0-9-]+\.(?:m\.)?wikipedia\.org/wiki/|www\.wikidata\.org/wiki/)\S+$"
 )
 ORIGINS = ("source", "rule", "machine")
-GLOSSARY_FIELDS = {"term", "translation", "source", "machine", "note"}
+GLOSSARY_FIELDS = {"term", "translation", "source", "machine", "note", "avoid"}
 NAME_FIELDS = {"name", "source", "rule", "machine", "note"}
 KINDS = ("families", "subgroups", "lines")
 # A localized name: its kind and its key (family id, family id and English subgroup name, or
@@ -47,6 +48,8 @@ class Term:
         origin (str): `source` or `machine`.
         source (str | None): The Wikipedia or Wikidata URL, for `source`.
         note (str | None): Why a choice was made, if one was.
+        avoid (tuple[str, ...]): Words the UI must not use for this term, such as an older
+            translation or a synonym.
     """
 
     term: str
@@ -54,6 +57,7 @@ class Term:
     origin: str
     source: str | None = None
     note: str | None = None
+    avoid: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -121,6 +125,33 @@ def _text(entry: dict, field: str, where: str) -> str:
     return value
 
 
+def _avoid(entry: dict, where: str) -> tuple[str, ...]:
+    """Reads a term's optional `avoid` list.
+
+    Args:
+        entry (dict): The raw entry.
+        where (str): The file and entry, for the error message.
+
+    Returns:
+        tuple[str, ...]: The words to avoid; empty when the field is left out.
+
+    Raises:
+        TranslationError: The field is not a list of non-empty texts, repeats a word, or lists the
+            translation itself.
+    """
+    words = entry.get("avoid", [])
+    if not isinstance(words, list) or not all(
+        isinstance(word, str) and word.strip() for word in words
+    ):
+        raise TranslationError(f"{where}: avoid must be a list of non-empty texts")
+    folded = [word.casefold() for word in words]
+    if len(set(folded)) != len(folded):
+        raise TranslationError(f"{where}: avoid repeats a word")
+    if str(entry.get("translation", "")).casefold() in folded:
+        raise TranslationError(f"{where}: avoid lists the translation itself")
+    return tuple(words)
+
+
 def load_glossary(path: Path) -> dict[str, Term]:
     """Reads a glossary: a `[[terms]]` table per chess term.
 
@@ -131,8 +162,8 @@ def load_glossary(path: Path) -> dict[str, Term]:
         dict[str, Term]: The rows by English term, in the file's order.
 
     Raises:
-        TranslationError: A row has an unknown or missing field, no origin or a bad one, or
-            repeats a term.
+        TranslationError: A row has an unknown or missing field, no origin or a bad one, a bad
+            `avoid` list, or repeats a term.
     """
     with path.open("rb") as handle:
         rows = tomllib.load(handle).get("terms", [])
@@ -145,7 +176,14 @@ def load_glossary(path: Path) -> dict[str, Term]:
         if term in terms:
             raise TranslationError(f"{where}: {term!r} is already in the glossary")
         origin, source = _origin(row, f"{where} ({term})", ("source", "machine"))
-        terms[term] = Term(term, _text(row, "translation", where), origin, source, row.get("note"))
+        terms[term] = Term(
+            term,
+            _text(row, "translation", where),
+            origin,
+            source,
+            row.get("note"),
+            _avoid(row, f"{where} ({term})"),
+        )
     return terms
 
 
