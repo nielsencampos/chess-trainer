@@ -47,6 +47,9 @@ tested.
 
 ## Translations
 
+Translations other than English, Portuguese and Spanish are machine-made and unreviewed.
+Corrections are welcome. Open a [Translation fix issue](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml).
+
 What differs per language is data, described in
 [docs/PROJECT_BRIEF.md](docs/PROJECT_BRIEF.md) §8:
 
@@ -60,6 +63,9 @@ What differs per language is data, described in
 
 Look up a chess term or an opening name in that language's Wikipedia first, and translate by
 machine only what it does not have. The fallback is always English (US).
+
+In a translation pull request, reference the correction issue with `Fixes #n` and update the
+glossary or opening-name source record that the changed translation relies on, as applicable.
 
 ## Pull requests
 
