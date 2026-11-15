@@ -47,7 +47,8 @@ tested.
 
 ## Translations
 
-Translations other than English, Portuguese and Spanish are machine-made and unreviewed.
+Only US English, Brazilian Portuguese and Latin American Spanish are reviewed. Every other
+language, English (UK) included, is machine-made and unreviewed.
 Corrections are welcome. Open a [Translation fix issue](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml).
 
 What differs per language is data, described in

@@ -2,7 +2,7 @@
 
 # How to use Chess Trainer
 
-[Português (Brasil)](HELP.pt-BR.md) · [Español](HELP.es.md)
+[English (UK)](HELP.en-GB.md) · [Português (Brasil)](HELP.pt-BR.md) · [Español (Latinoamérica)](HELP.es.md)
 
 Chess Trainer is for practice: drill your openings against a bot that plays your lines, keep playing against Stockfish when theory ends, and review your games. Everything runs and stays on your computer.
 

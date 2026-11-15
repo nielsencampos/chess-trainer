@@ -23,7 +23,8 @@ to play.
 
 *[Versão em português abaixo.](#português-brasil) · [Versión en español abajo.](#español)*
 
-Translations other than English, Portuguese and Spanish are machine-made and unreviewed.
+Only US English, Brazilian Portuguese and Latin American Spanish are reviewed. Every other
+language, English (UK) included, is machine-made and unreviewed.
 Corrections are welcome. Open a [Translation fix issue](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml).
 
 ## Run
@@ -154,8 +155,8 @@ de PGN, Chess.com ou Lichess com barra de avaliação. Tem Chess960. Em inglês,
 tudo numa imagem Docker. Roda na sua máquina (amd64 ou arm64), sem conta e sem precisar de internet
 para jogar.
 
-As traduções para outros idiomas além do inglês, do português e do espanhol são automáticas e não
-foram revisadas. Para sugerir uma correção, abra uma [issue de correção de tradução](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml).
+Só o inglês dos EUA, o português do Brasil e o espanhol da América Latina são revisados. Os outros
+idiomas, inglês do Reino Unido incluído, são traduções automáticas e não foram revisados. Para sugerir uma correção, abra uma [issue de correção de tradução](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml).
 
 **Para rodar**, com Docker e Compose instalados:
 
@@ -208,8 +209,8 @@ Chess.com o Lichess con barra de evaluación. Incluye Chess960. En inglés, port
 en una imagen Docker. Funciona en tu máquina (amd64 o arm64), sin cuenta y sin necesitar internet
 para jugar.
 
-Las traducciones a idiomas distintos del inglés, el portugués y el español son automáticas y no se
-han revisado. Para sugerir una corrección, abre un [issue de corrección de traducción](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml).
+Solo el inglés de EE. UU., el portugués de Brasil y el español de Latinoamérica están revisados. Los
+demás idiomas, inglés del Reino Unido incluido, son traducciones automáticas y no se han revisado. Para sugerir una corrección, abre un [issue de corrección de traducción](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml).
 
 **Para ejecutarlo**, con Docker y Compose instalados:
 

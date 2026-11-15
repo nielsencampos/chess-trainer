@@ -1,0 +1,16 @@
+{
+  "locale.name": "English (UK)",
+  "saved.anyColor": "Any colour",
+  "saved.colorFilter": "Colour",
+  "setup.color": "Your colour",
+  "help.eval.text": "The evaluation bar and the move icons (best move, mistake, blunder…) come from a quick Stockfish check and are only a hint. For a real analysis, export the PGN and analyse it on Chess.com, Lichess or another analysis tool.",
+  "help.start.opening": "Opening: pick your colour and tick the openings and variations to drill. Each ticked variation has the same chance of being drawn. Playing a move from a variation you did not tick counts as leaving theory.",
+  "help.train.board.why": "Why train with a board, a clock and a scoresheet? Because they make you memorise, keep you from playing without thinking, and build your calculation and visualisation, perhaps until you start playing in your head, with no physical or virtual board in front of you.",
+  "help.train.analyse.title": "Analyse before you look at the evaluation",
+  "help.analyse.title": "Analyse elsewhere",
+  "help.fig.setup": "New Game: colour, lines, level and clock.",
+  "about.hikaru": "American grandmaster, five-time US champion, 2022 Fischer Random world champion, one of the best players in the world and one of its biggest streamers. I found him through Levy around 2024, and learnt a lot from him about memorisation. His style reminds me of Tal's, the Magician from Riga.",
+  "about.legend.waitzkin": "American chess prodigy, twice US junior champion, whose childhood inspired the film Searching for Bobby Fischer. He later became a martial arts world champion and wrote The Art of Learning.",
+  "about.thanks.niklas": "Author of python-chess, which handles the rules, the PGN and Stockfish on the server, and of chessops, which checks every move on the board, and the main contributor to Lichess's openings catalogue, where every line of the book comes from. A core Lichess developer, whose work runs through this app from end to end.",
+  "about.thanks.lichess": "Its open code brought the Merida pieces here, and its openings catalogue names every position."
+}

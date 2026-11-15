@@ -19,6 +19,15 @@ languagetool = "en-US"
 vale = ["ChessTrainer", "GlossaryEn"]
 reviewed = true
 
+# English (UK): machine-made, unreviewed. Its UI file holds only what differs from en.
+[locales.en-GB]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "en-GB"
+vale = ["ChessTrainer", "GlossaryEnGB"]
+wikipedia = "en"
+reviewed = false
+
 [locales.pt-BR]
 direction = "ltr"
 scripts = ["latin"]

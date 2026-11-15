@@ -22,11 +22,16 @@ all = [
     # The Thanks section of the About page.
     "Niklas", "Fiekas", "Hernandez", "Marroquin", "Badrap",
     # The language links at the top of each document.
-    "English", "Português", "português", "Español", "español", "Brasil",
+    "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica",
 ]
 en = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
     "es", "pt", "cp", "arg", "pgn", "uci", "san", "epd", "db-migration", "Versão", "Versión", "abajo", "abaixo",
+    # A quote of Mecking's nickname, kept in Portuguese.
+    "xadrez", "grande", "mestre",
+]
+en-GB = [
+    "untick", "unticked", "Untick",
     # A quote of Mecking's nickname, kept in Portuguese.
     "xadrez", "grande", "mestre",
 ]
@@ -56,6 +61,13 @@ en = [
     "BY_DEFAULT_COMMA", "NO_COMMA_BEFORE_SO", "THE_SUPERLATIVE",  # optional commas and style
     "ID_CASING",  # `id` is the field's name
     "EN_COMPOUNDS_AUTO_PLAY", "RECOMMENDED_COMPOUNDS",
+]
+en-GB = [
+    "ENGLISH_WORD_REPEAT_BEGINNING_RULE",  # i18n strings are separate texts
+    "PRP_COMMA", "MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE", "COMMA_COMPOUND_SENTENCE_2",
+    "BY_DEFAULT_COMMA", "NO_COMMA_BEFORE_SO", "THE_SUPERLATIVE",  # optional commas and style
+    "EN_COMPOUNDS_AUTO_PLAY", "RECOMMENDED_COMPOUNDS",
+    "OXFORD_SPELLING_Z_NOT_S",  # British "-ise" spelling, not Oxford "-ize", on purpose
 ]
 pt-BR = [
     "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
