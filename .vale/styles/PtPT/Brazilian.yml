@@ -1,0 +1,26 @@
+# pt-PT uses the words of Portugal: "ficheiro", "ecrã", "utilizador", "transferir", "guardar",
+# "eliminar", "registo", "folha de anotação"; these are Brazilian.
+extends: existence
+message: "'%s' is Brazilian Portuguese; use the word of Portugal."
+level: error
+ignorecase: true
+tokens:
+  - arquivo
+  - arquivos
+  - tela
+  - telas
+  - usuário
+  - usuários
+  - baixar
+  - baixe
+  - salvar
+  - salva
+  - salvas
+  - excluir
+  - exclua
+  - registro
+  - contato
+  - planilha
+  - capivarada
+  - time
+  - controle

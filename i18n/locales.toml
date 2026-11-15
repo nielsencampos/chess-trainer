@@ -51,3 +51,13 @@ languagetool = "es-ES"
 vale = ["ChessTrainer", "Es", "GlossaryEsES", "UI"]
 wikipedia = "es"
 reviewed = false
+
+# Portuguese (Portugal): machine-made, unreviewed. Its own translation, not a copy of pt-BR,
+# addressing the reader impersonally or in the formal third person.
+[locales.pt-PT]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "pt-PT"
+vale = ["ChessTrainer", "PtPT", "GlossaryPtPT", "UI"]
+wikipedia = "pt"
+reviewed = false

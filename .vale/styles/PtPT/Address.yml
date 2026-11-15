@@ -1,0 +1,18 @@
+# pt-PT addresses the reader impersonally or in the formal third person ("Escolha a sua cor"),
+# never as "tu" or "você".
+extends: existence
+message: "Address the reader impersonally or in the third person, not with '%s'."
+level: error
+ignorecase: true
+tokens:
+  - tu
+  - teu
+  - teus
+  - tua
+  - tuas
+  - contigo
+  - você
+  - vocês
+  - vós
+  - o senhor
+  - a senhora

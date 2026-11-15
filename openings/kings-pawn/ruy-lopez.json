@@ -5,7 +5,8 @@
     "pt-BR": "Abertura Ruy López",
     "es": "Apertura Española",
     "en-GB": "Ruy Lopez",
-    "es-ES": "Apertura Española"
+    "es-ES": "Apertura Española",
+    "pt-PT": "Abertura Ruy López"
   },
   "order": 4,
   "variants": [
@@ -15,7 +16,8 @@
         "pt-BR": "Fechada",
         "es": "Cerrada",
         "en-GB": "Closed",
-        "es-ES": "Cerrada"
+        "es-ES": "Cerrada",
+        "pt-PT": "Fechada"
       },
       "lines": [
         {
@@ -25,7 +27,8 @@
             "pt-BR": "Fechada",
             "es": "Cerrada",
             "en-GB": "Closed",
-            "es-ES": "Cerrada"
+            "es-ES": "Cerrada",
+            "pt-PT": "Fechada"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed",
@@ -39,7 +42,8 @@
             "pt-BR": "Fechada, Troca Adiada",
             "es": "Cerrada, Cambio Retrasado",
             "en-GB": "Closed, Delayed Exchange",
-            "es-ES": "Cerrada, Cambio Retrasado"
+            "es-ES": "Cerrada, Cambio Retrasado",
+            "pt-PT": "Fechada, Troca Adiada"
           },
           "eco": "C85",
           "opening": "Ruy Lopez: Closed, Delayed Exchange",
@@ -53,7 +57,8 @@
             "pt-BR": "Fechada, Ataque Morphy",
             "es": "Cerrada, Ataque Morphy",
             "en-GB": "Closed, Morphy Attack",
-            "es-ES": "Cerrada, Ataque Morphy"
+            "es-ES": "Cerrada, Ataque Morphy",
+            "pt-PT": "Fechada, Ataque Morphy"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Morphy Attack",
@@ -67,7 +72,8 @@
             "pt-BR": "Fechada, Ataque Worrall",
             "es": "Cerrada, Ataque Worrall",
             "en-GB": "Closed, Worrall Attack",
-            "es-ES": "Cerrada, Ataque Worrall"
+            "es-ES": "Cerrada, Ataque Worrall",
+            "pt-PT": "Fechada, Ataque Worrall"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack",
@@ -81,7 +87,8 @@
             "pt-BR": "Fechada, Ataque Worrall, Linha do Roque",
             "es": "Cerrada, Ataque Worrall, Línea del Enroque",
             "en-GB": "Closed, Worrall Attack, Castling Line",
-            "es-ES": "Cerrada, Ataque Worrall, Línea del Enroque"
+            "es-ES": "Cerrada, Ataque Worrall, Línea del Enroque",
+            "pt-PT": "Fechada, Ataque Worrall, Linha do Roque"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack, Castling Line",
@@ -95,7 +102,8 @@
             "pt-BR": "Fechada, Ataque Worrall, Linha do Roque Adiado",
             "es": "Cerrada, Ataque Worrall, Línea del Enroque Retrasado",
             "en-GB": "Closed, Worrall Attack, Delayed Castling Line",
-            "es-ES": "Cerrada, Ataque Worrall, Línea del Enroque Retrasado"
+            "es-ES": "Cerrada, Ataque Worrall, Línea del Enroque Retrasado",
+            "pt-PT": "Fechada, Ataque Worrall, Linha do Roque Adiado"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack, Delayed Castling Line",
@@ -109,7 +117,8 @@
             "pt-BR": "Fechada",
             "es": "Cerrada",
             "en-GB": "Closed",
-            "es-ES": "Cerrada"
+            "es-ES": "Cerrada",
+            "pt-PT": "Fechada"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed",
@@ -123,7 +132,8 @@
             "pt-BR": "Fechada, Contra-ataque Trajkovic",
             "es": "Cerrada, Contraataque Trajkovic",
             "en-GB": "Closed, Trajkovic Counterattack",
-            "es-ES": "Cerrada, Contraataque Trajkovic"
+            "es-ES": "Cerrada, Contraataque Trajkovic",
+            "pt-PT": "Fechada, Contra-ataque Trajkovic"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Trajkovic Counterattack",
@@ -137,7 +147,8 @@
             "pt-BR": "Fechada",
             "es": "Cerrada",
             "en-GB": "Closed",
-            "es-ES": "Cerrada"
+            "es-ES": "Cerrada",
+            "pt-PT": "Fechada"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed",
@@ -151,7 +162,8 @@
             "pt-BR": "Fechada, Anti-Marshall",
             "es": "Cerrada, Anti-Marshall",
             "en-GB": "Closed, Anti-Marshall",
-            "es-ES": "Cerrada, Anti-Marshall"
+            "es-ES": "Cerrada, Anti-Marshall",
+            "pt-PT": "Fechada, Anti-Marshall"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Anti-Marshall",
@@ -165,7 +177,8 @@
             "pt-BR": "Fechada, Variante Pilnik",
             "es": "Cerrada, Variante Pilnik",
             "en-GB": "Closed, Pilnik Variation",
-            "es-ES": "Cerrada, Variante Pilnik"
+            "es-ES": "Cerrada, Variante Pilnik",
+            "pt-PT": "Fechada, Variante Pilnik"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed, Pilnik Variation",
@@ -179,7 +192,8 @@
             "pt-BR": "Fechada, Gambito Alekhine",
             "es": "Cerrada, Gambito Alekhine",
             "en-GB": "Closed, Alekhine Gambit",
-            "es-ES": "Cerrada, Gambito Alekhine"
+            "es-ES": "Cerrada, Gambito Alekhine",
+            "pt-PT": "Fechada, Gambito Alekhine"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Alekhine Gambit",
@@ -193,7 +207,8 @@
             "pt-BR": "Fechada, Variante Balla",
             "es": "Cerrada, Variante Balla",
             "en-GB": "Closed, Balla Variation",
-            "es-ES": "Cerrada, Variante Balla"
+            "es-ES": "Cerrada, Variante Balla",
+            "pt-PT": "Fechada, Variante Balla"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Balla Variation",
@@ -207,7 +222,8 @@
             "pt-BR": "Fechada, Variante Leonhardt",
             "es": "Cerrada, Variante Leonhardt",
             "en-GB": "Closed, Leonhardt Variation",
-            "es-ES": "Cerrada, Variante Leonhardt"
+            "es-ES": "Cerrada, Variante Leonhardt",
+            "pt-PT": "Fechada, Variante Leonhardt"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Leonhardt Variation",
@@ -221,7 +237,8 @@
             "pt-BR": "Fechada",
             "es": "Cerrada",
             "en-GB": "Closed",
-            "es-ES": "Cerrada"
+            "es-ES": "Cerrada",
+            "pt-PT": "Fechada"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed",
@@ -235,7 +252,8 @@
             "pt-BR": "Fechada, Variante Lutikov",
             "es": "Cerrada, Variante Lutikov",
             "en-GB": "Closed, Lutikov Variation",
-            "es-ES": "Cerrada, Variante Lutikov"
+            "es-ES": "Cerrada, Variante Lutikov",
+            "pt-PT": "Fechada, Variante Lutikov"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed, Lutikov Variation",
@@ -249,7 +267,8 @@
             "pt-BR": "Fechada, Variante Suetin",
             "es": "Cerrada, Variante Suetin",
             "en-GB": "Closed, Suetin Variation",
-            "es-ES": "Cerrada, Variante Suetin"
+            "es-ES": "Cerrada, Variante Suetin",
+            "pt-PT": "Fechada, Variante Suetin"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed, Suetin Variation",
@@ -263,7 +282,8 @@
             "pt-BR": "Fechada, Variante Yates",
             "es": "Cerrada, Variante Yates",
             "en-GB": "Closed, Yates Variation",
-            "es-ES": "Cerrada, Variante Yates"
+            "es-ES": "Cerrada, Variante Yates",
+            "pt-PT": "Fechada, Variante Yates"
           },
           "eco": "C91",
           "opening": "Ruy Lopez: Closed, Yates Variation",
@@ -277,7 +297,8 @@
             "pt-BR": "Fechada, Variante Bogoljubow",
             "es": "Cerrada, Variante Bogoljubow",
             "en-GB": "Closed, Bogoljubow Variation",
-            "es-ES": "Cerrada, Variante Bogoljubow"
+            "es-ES": "Cerrada, Variante Bogoljubow",
+            "pt-PT": "Fechada, Variante Bogoljubow"
           },
           "eco": "C91",
           "opening": "Ruy Lopez: Closed, Bogoljubow Variation",
@@ -291,7 +312,8 @@
             "pt-BR": "Fechada, Variante Yates, Ataque Short",
             "es": "Cerrada, Variante Yates, Ataque Short",
             "en-GB": "Closed, Yates Variation, Short Attack",
-            "es-ES": "Cerrada, Variante Yates, Ataque Short"
+            "es-ES": "Cerrada, Variante Yates, Ataque Short",
+            "pt-PT": "Fechada, Variante Yates, Ataque Short"
           },
           "eco": "C91",
           "opening": "Ruy Lopez: Closed, Yates Variation, Short Attack",
@@ -305,7 +327,8 @@
             "pt-BR": "Fechada",
             "es": "Cerrada",
             "en-GB": "Closed",
-            "es-ES": "Cerrada"
+            "es-ES": "Cerrada",
+            "pt-PT": "Fechada"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed",
@@ -319,7 +342,8 @@
             "pt-BR": "Fechada, Sistema Flohr",
             "es": "Cerrada, Sistema Flohr",
             "en-GB": "Closed, Flohr System",
-            "es-ES": "Cerrada, Sistema Flohr"
+            "es-ES": "Cerrada, Sistema Flohr",
+            "pt-PT": "Fechada, Sistema Flohr"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Flohr System",
@@ -333,7 +357,8 @@
             "pt-BR": "Fechada, Híbrido Smyslov-Breyer-Zaitsev",
             "es": "Cerrada, Híbrido Smyslov-Breyer-Zaitsev",
             "en-GB": "Closed, Smyslov-Breyer-Zaitsev Hybrid",
-            "es-ES": "Cerrada, Híbrido Smyslov-Breyer-Zaitsev"
+            "es-ES": "Cerrada, Híbrido Smyslov-Breyer-Zaitsev",
+            "pt-PT": "Fechada, Híbrido Smyslov-Breyer-Zaitsev"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Smyslov-Breyer-Zaitsev Hybrid",
@@ -347,7 +372,8 @@
             "pt-BR": "Fechada, Variante Kholmov",
             "es": "Cerrada, Variante Kholmov",
             "en-GB": "Closed, Kholmov Variation",
-            "es-ES": "Cerrada, Variante Kholmov"
+            "es-ES": "Cerrada, Variante Kholmov",
+            "pt-PT": "Fechada, Variante Kholmov"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Kholmov Variation",
@@ -361,7 +387,8 @@
             "pt-BR": "Fechada, Defesa Chigorin",
             "es": "Cerrada, Defensa Chigorin",
             "en-GB": "Closed, Chigorin Defence",
-            "es-ES": "Cerrada, Defensa Chigorin"
+            "es-ES": "Cerrada, Defensa Chigorin",
+            "pt-PT": "Fechada, Defesa Chigorin"
           },
           "eco": "C97",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -375,7 +402,8 @@
             "pt-BR": "Fechada, Defesa Chigorin",
             "es": "Cerrada, Defensa Chigorin",
             "en-GB": "Closed, Chigorin Defence",
-            "es-ES": "Cerrada, Defensa Chigorin"
+            "es-ES": "Cerrada, Defensa Chigorin",
+            "pt-PT": "Fechada, Defesa Chigorin"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -389,7 +417,8 @@
             "pt-BR": "Fechada, Defesa Chigorin",
             "es": "Cerrada, Defensa Chigorin",
             "en-GB": "Closed, Chigorin Defence",
-            "es-ES": "Cerrada, Defensa Chigorin"
+            "es-ES": "Cerrada, Defensa Chigorin",
+            "pt-PT": "Fechada, Defesa Chigorin"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -403,7 +432,8 @@
             "pt-BR": "Fechada, Variante Borisenko",
             "es": "Cerrada, Variante Borisenko",
             "en-GB": "Closed, Borisenko Variation",
-            "es-ES": "Cerrada, Variante Borisenko"
+            "es-ES": "Cerrada, Variante Borisenko",
+            "pt-PT": "Fechada, Variante Borisenko"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Borisenko Variation",
@@ -417,7 +447,8 @@
             "pt-BR": "Fechada, Defesa Keres",
             "es": "Cerrada, Defensa Keres",
             "en-GB": "Closed, Keres Defence",
-            "es-ES": "Cerrada, Defensa Keres"
+            "es-ES": "Cerrada, Defensa Keres",
+            "pt-PT": "Fechada, Defesa Keres"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Keres Defense",
@@ -431,7 +462,8 @@
             "pt-BR": "Fechada, Defesa Chigorin",
             "es": "Cerrada, Defensa Chigorin",
             "en-GB": "Closed, Chigorin Defence",
-            "es-ES": "Cerrada, Defensa Chigorin"
+            "es-ES": "Cerrada, Defensa Chigorin",
+            "pt-PT": "Fechada, Defesa Chigorin"
           },
           "eco": "C97",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -445,7 +477,8 @@
             "pt-BR": "Fechada, Chigorin, Sistema Iugoslavo",
             "es": "Cerrada, Chigorin, Sistema Yugoslavo",
             "en-GB": "Closed, Chigorin, Yugoslav System",
-            "es-ES": "Cerrada, Chigorin, Sistema Yugoslavo"
+            "es-ES": "Cerrada, Chigorin, Sistema Yugoslavo",
+            "pt-PT": "Fechada, Chigorin, Sistema Jugoslavo"
           },
           "eco": "C97",
           "opening": "Ruy Lopez: Closed, Chigorin, Yugoslav System",
@@ -459,7 +492,8 @@
             "pt-BR": "Fechada, Defesa Chigorin",
             "es": "Cerrada, Defensa Chigorin",
             "en-GB": "Closed, Chigorin Defence",
-            "es-ES": "Cerrada, Defensa Chigorin"
+            "es-ES": "Cerrada, Defensa Chigorin",
+            "pt-PT": "Fechada, Defesa Chigorin"
           },
           "eco": "C98",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -473,7 +507,8 @@
             "pt-BR": "Fechada, Defesa Chigorin",
             "es": "Cerrada, Defensa Chigorin",
             "en-GB": "Closed, Chigorin Defence",
-            "es-ES": "Cerrada, Defensa Chigorin"
+            "es-ES": "Cerrada, Defensa Chigorin",
+            "pt-PT": "Fechada, Defesa Chigorin"
           },
           "eco": "C98",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -487,7 +522,8 @@
             "pt-BR": "Fechada, Defesa Chigorin, Sistema Panov",
             "es": "Cerrada, Defensa Chigorin, Sistema Panov",
             "en-GB": "Closed, Chigorin Defence, Panov System",
-            "es-ES": "Cerrada, Defensa Chigorin, Sistema Panov"
+            "es-ES": "Cerrada, Defensa Chigorin, Sistema Panov",
+            "pt-PT": "Fechada, Defesa Chigorin, Sistema Panov"
           },
           "eco": "C99",
           "opening": "Ruy Lopez: Closed, Chigorin Defense, Panov System",
@@ -501,7 +537,8 @@
             "pt-BR": "Fechada, Defesa Rossolimo",
             "es": "Cerrada, Defensa Rossolimo",
             "en-GB": "Closed, Rossolimo Defence",
-            "es-ES": "Cerrada, Defensa Rossolimo"
+            "es-ES": "Cerrada, Defensa Rossolimo",
+            "pt-PT": "Fechada, Defesa Rossolimo"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Rossolimo Defense",
@@ -515,7 +552,8 @@
             "pt-BR": "Fechada, Defesa Chigorin, Gambito Gajewski",
             "es": "Cerrada, Defensa Chigorin, Gambito Gajewski",
             "en-GB": "Closed, Chigorin Defence, Gajewski Gambit",
-            "es-ES": "Cerrada, Defensa Chigorin, Gambito Gajewski"
+            "es-ES": "Cerrada, Defensa Chigorin, Gambito Gajewski",
+            "pt-PT": "Fechada, Defesa Chigorin, Gambito Gajewski"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Chigorin Defense, Gajewski Gambit",
@@ -529,7 +567,8 @@
             "pt-BR": "Fechada, Defesa Breyer",
             "es": "Cerrada, Defensa Breyer",
             "en-GB": "Closed, Breyer Defence",
-            "es-ES": "Cerrada, Defensa Breyer"
+            "es-ES": "Cerrada, Defensa Breyer",
+            "pt-PT": "Fechada, Defesa Breyer"
           },
           "eco": "C94",
           "opening": "Ruy Lopez: Closed, Breyer Defense",
@@ -543,7 +582,8 @@
             "pt-BR": "Fechada, Defesa Breyer, Variante Tranquila",
             "es": "Cerrada, Defensa Breyer, Variante Tranquila",
             "en-GB": "Closed, Breyer Defence, Quiet Variation",
-            "es-ES": "Cerrada, Defensa Breyer, Variante Tranquila"
+            "es-ES": "Cerrada, Defensa Breyer, Variante Tranquila",
+            "pt-PT": "Fechada, Defesa Breyer, Variante Tranquila"
           },
           "eco": "C94",
           "opening": "Ruy Lopez: Closed, Breyer Defense, Quiet Variation",
@@ -557,7 +597,8 @@
             "pt-BR": "Fechada, Breyer",
             "es": "Cerrada, Breyer",
             "en-GB": "Closed, Breyer",
-            "es-ES": "Cerrada, Breyer"
+            "es-ES": "Cerrada, Breyer",
+            "pt-PT": "Fechada, Breyer"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer",
@@ -571,7 +612,8 @@
             "pt-BR": "Fechada, Defesa Breyer, Híbrido Zaitsev",
             "es": "Cerrada, Defensa Breyer, Híbrido Zaitsev",
             "en-GB": "Closed, Breyer Defence, Zaitsev Hybrid",
-            "es-ES": "Cerrada, Defensa Breyer, Híbrido Zaitsev"
+            "es-ES": "Cerrada, Defensa Breyer, Híbrido Zaitsev",
+            "pt-PT": "Fechada, Defesa Breyer, Híbrido Zaitsev"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer Defense, Zaitsev Hybrid",
@@ -585,7 +627,8 @@
             "pt-BR": "Fechada, Defesa Breyer",
             "es": "Cerrada, Defensa Breyer",
             "en-GB": "Closed, Breyer Defence",
-            "es-ES": "Cerrada, Defensa Breyer"
+            "es-ES": "Cerrada, Defensa Breyer",
+            "pt-PT": "Fechada, Defesa Breyer"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer Defense",
@@ -599,7 +642,8 @@
             "pt-BR": "Fechada, Defesa Breyer",
             "es": "Cerrada, Defensa Breyer",
             "en-GB": "Closed, Breyer Defence",
-            "es-ES": "Cerrada, Defensa Breyer"
+            "es-ES": "Cerrada, Defensa Breyer",
+            "pt-PT": "Fechada, Defesa Breyer"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer Defense",
@@ -613,7 +657,8 @@
             "pt-BR": "Fechada, Variante Karpov",
             "es": "Cerrada, Variante Karpov",
             "en-GB": "Closed, Karpov Variation",
-            "es-ES": "Cerrada, Variante Karpov"
+            "es-ES": "Cerrada, Variante Karpov",
+            "pt-PT": "Fechada, Variante Karpov"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Karpov Variation",
@@ -627,7 +672,8 @@
             "pt-BR": "Fechada, Sistema Zaitsev",
             "es": "Cerrada, Sistema Zaitsev",
             "en-GB": "Closed, Zaitsev System",
-            "es-ES": "Cerrada, Sistema Zaitsev"
+            "es-ES": "Cerrada, Sistema Zaitsev",
+            "pt-PT": "Fechada, Sistema Zaitsev"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Zaitsev System",
@@ -641,7 +687,8 @@
             "pt-BR": "Fechada, Defesa Smyslov",
             "es": "Cerrada, Defensa Smyslov",
             "en-GB": "Closed, Smyslov Defence",
-            "es-ES": "Cerrada, Defensa Smyslov"
+            "es-ES": "Cerrada, Defensa Smyslov",
+            "pt-PT": "Fechada, Defesa Smyslov"
           },
           "eco": "C93",
           "opening": "Ruy Lopez: Closed, Smyslov Defense",
@@ -655,7 +702,8 @@
             "pt-BR": "Fechada, Ataque Rosen",
             "es": "Cerrada, Ataque Rosen",
             "en-GB": "Closed, Rosen Attack",
-            "es-ES": "Cerrada, Ataque Rosen"
+            "es-ES": "Cerrada, Ataque Rosen",
+            "pt-PT": "Fechada, Ataque Rosen"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Rosen Attack",
@@ -669,7 +717,8 @@
             "pt-BR": "Fechada, Variante Averbakh",
             "es": "Cerrada, Variante Averbakh",
             "en-GB": "Closed, Averbakh Variation",
-            "es-ES": "Cerrada, Variante Averbakh"
+            "es-ES": "Cerrada, Variante Averbakh",
+            "pt-PT": "Fechada, Variante Averbakh"
           },
           "eco": "C87",
           "opening": "Ruy Lopez: Closed, Averbakh Variation",
@@ -683,7 +732,8 @@
             "pt-BR": "Fechada, Variante Martinez",
             "es": "Cerrada, Variante Martinez",
             "en-GB": "Closed, Martinez Variation",
-            "es-ES": "Cerrada, Variante Martinez"
+            "es-ES": "Cerrada, Variante Martinez",
+            "pt-PT": "Fechada, Variante Martinez"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Martinez Variation",
@@ -697,7 +747,8 @@
             "pt-BR": "Fechada, Ataque ao Centro",
             "es": "Cerrada, Ataque al Centro",
             "en-GB": "Closed, Centre Attack",
-            "es-ES": "Cerrada, Ataque al Centro"
+            "es-ES": "Cerrada, Ataque al Centro",
+            "pt-PT": "Fechada, Ataque ao Centro"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Center Attack",
@@ -711,7 +762,8 @@
             "pt-BR": "Fechada, Gambito Basca",
             "es": "Cerrada, Gambito Vasca",
             "en-GB": "Closed, Basque Gambit",
-            "es-ES": "Cerrada, Gambito Vasca"
+            "es-ES": "Cerrada, Gambito Vasca",
+            "pt-PT": "Fechada, Gambito Basca"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Basque Gambit",
@@ -725,7 +777,8 @@
             "pt-BR": "Fechada, Ataque ao Centro, Gambito Basca",
             "es": "Cerrada, Ataque al Centro, Gambito Vasca",
             "en-GB": "Closed, Centre Attack, Basque Gambit",
-            "es-ES": "Cerrada, Ataque al Centro, Gambito Vasca"
+            "es-ES": "Cerrada, Ataque al Centro, Gambito Vasca",
+            "pt-PT": "Fechada, Ataque ao Centro, Gambito Basca"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Center Attack, Basque Gambit",
@@ -739,7 +792,8 @@
             "pt-BR": "Fechada, Ataque Worrall, Linha do Roque",
             "es": "Cerrada, Ataque Worrall, Línea del Enroque",
             "en-GB": "Closed, Worrall Attack, Castling Line",
-            "es-ES": "Cerrada, Ataque Worrall, Línea del Enroque"
+            "es-ES": "Cerrada, Ataque Worrall, Línea del Enroque",
+            "pt-PT": "Fechada, Ataque Worrall, Linha do Roque"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack, Castling Line",
@@ -753,7 +807,8 @@
             "pt-BR": "Fechada, Variante Kecskemet",
             "es": "Cerrada, Variante Kecskemet",
             "en-GB": "Closed, Kecskemet Variation",
-            "es-ES": "Cerrada, Variante Kecskemet"
+            "es-ES": "Cerrada, Variante Kecskemet",
+            "pt-PT": "Fechada, Variante Kecskemet"
           },
           "eco": "C72",
           "opening": "Ruy Lopez: Closed, Kecskemet Variation",
@@ -768,7 +823,8 @@
         "pt-BR": "Defesa Morphy",
         "es": "Defensa Morphy",
         "en-GB": "Morphy Defence",
-        "es-ES": "Defensa Morphy"
+        "es-ES": "Defensa Morphy",
+        "pt-PT": "Defesa Morphy"
       },
       "lines": [
         {
@@ -778,7 +834,8 @@
             "pt-BR": "Defesa Morphy",
             "es": "Defensa Morphy",
             "en-GB": "Morphy Defence",
-            "es-ES": "Defensa Morphy"
+            "es-ES": "Defensa Morphy",
+            "pt-PT": "Defesa Morphy"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense",
@@ -792,7 +849,8 @@
             "pt-BR": "Defesa Morphy, Defesa Alapin Adiada",
             "es": "Defensa Morphy, Defensa Alapin Diferida",
             "en-GB": "Morphy Defence, Alapin's Defence Deferred",
-            "es-ES": "Defensa Morphy, Defensa Alapin Diferida"
+            "es-ES": "Defensa Morphy, Defensa Alapin Diferida",
+            "pt-PT": "Defesa Morphy, Defesa Alapin Adiada"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Alapin's Defense Deferred",
@@ -806,7 +864,8 @@
             "pt-BR": "Defesa Morphy, Defesa Clássica Adiada",
             "es": "Defensa Morphy, Defensa Clásica Diferida",
             "en-GB": "Morphy Defence, Classical Defence Deferred",
-            "es-ES": "Defensa Morphy, Defensa Clásica Diferida"
+            "es-ES": "Defensa Morphy, Defensa Clásica Diferida",
+            "pt-PT": "Defesa Morphy, Defesa Clássica Adiada"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
@@ -820,7 +879,8 @@
             "pt-BR": "Defesa Morphy, Variante Bayreuth",
             "es": "Defensa Morphy, Variante Bayreuth",
             "en-GB": "Morphy Defence, Bayreuth Variation",
-            "es-ES": "Defensa Morphy, Variante Bayreuth"
+            "es-ES": "Defensa Morphy, Variante Bayreuth",
+            "pt-PT": "Defesa Morphy, Variante Bayreuth"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Bayreuth Variation",
@@ -834,7 +894,8 @@
             "pt-BR": "Defesa Morphy, Variante Tarrasch",
             "es": "Defensa Morphy, Variante Tarrasch",
             "en-GB": "Morphy Defence, Tarrasch Variation",
-            "es-ES": "Defensa Morphy, Variante Tarrasch"
+            "es-ES": "Defensa Morphy, Variante Tarrasch",
+            "pt-PT": "Defesa Morphy, Variante Tarrasch"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Tarrasch Variation",
@@ -848,7 +909,8 @@
             "pt-BR": "Defesa Morphy",
             "es": "Defensa Morphy",
             "en-GB": "Morphy Defence",
-            "es-ES": "Defensa Morphy"
+            "es-ES": "Defensa Morphy",
+            "pt-PT": "Defesa Morphy"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense",
@@ -862,7 +924,8 @@
             "pt-BR": "Defesa Morphy, Variante Møller",
             "es": "Defensa Morphy, Variante Møller",
             "en-GB": "Morphy Defence, Møller Variation",
-            "es-ES": "Defensa Morphy, Variante Møller"
+            "es-ES": "Defensa Morphy, Variante Møller",
+            "pt-PT": "Defesa Morphy, Variante Møller"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Møller Variation",
@@ -876,7 +939,8 @@
             "pt-BR": "Defesa Morphy, Variante Tartakower",
             "es": "Defensa Morphy, Variante Tartakower",
             "en-GB": "Morphy Defence, Tartakower Variation",
-            "es-ES": "Defensa Morphy, Variante Tartakower"
+            "es-ES": "Defensa Morphy, Variante Tartakower",
+            "pt-PT": "Defesa Morphy, Variante Tartakower"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Morphy Defense, Tartakower Variation",
@@ -890,7 +954,8 @@
             "pt-BR": "Defesa Morphy, Variante Arkhangelsk",
             "es": "Defensa Morphy, Variante Arcángel",
             "en-GB": "Morphy Defence, Arkhangelsk Variation",
-            "es-ES": "Defensa Morphy, Variante Arcángel"
+            "es-ES": "Defensa Morphy, Variante Arcángel",
+            "pt-PT": "Defesa Morphy, Variante Arkhangelsk"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Arkhangelsk Variation",
@@ -904,7 +969,8 @@
             "pt-BR": "Defesa Morphy, Variante Neo-Arkhangelsk",
             "es": "Defensa Morphy, Variante Neo-Arcángel",
             "en-GB": "Morphy Defence, Neo-Arkhangelsk Variation",
-            "es-ES": "Defensa Morphy, Variante Neo-Arcángel"
+            "es-ES": "Defensa Morphy, Variante Neo-Arcángel",
+            "pt-PT": "Defesa Morphy, Variante Neo-Arkhangelsk"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Neo-Arkhangelsk Variation",
@@ -918,7 +984,8 @@
             "pt-BR": "Defesa Morphy, Ataque de Ala",
             "es": "Defensa Morphy, Ataque de Ala",
             "en-GB": "Morphy Defence, Wing Attack",
-            "es-ES": "Defensa Morphy, Ataque de Ala"
+            "es-ES": "Defensa Morphy, Ataque de Ala",
+            "pt-PT": "Defesa Morphy, Ataque de Ala"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Wing Attack",
@@ -932,7 +999,8 @@
             "pt-BR": "Defesa Morphy",
             "es": "Defensa Morphy",
             "en-GB": "Morphy Defence",
-            "es-ES": "Defensa Morphy"
+            "es-ES": "Defensa Morphy",
+            "pt-PT": "Defesa Morphy"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense",
@@ -946,7 +1014,8 @@
             "pt-BR": "Defesa Morphy, Steinitz Adiada",
             "es": "Defensa Morphy, Steinitz Diferida",
             "en-GB": "Morphy Defence, Steinitz Deferred",
-            "es-ES": "Defensa Morphy, Steinitz Diferida"
+            "es-ES": "Defensa Morphy, Steinitz Diferida",
+            "pt-PT": "Defesa Morphy, Steinitz Adiada"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Morphy Defense, Steinitz Deferred",
@@ -960,7 +1029,8 @@
             "pt-BR": "Defesa Morphy, Steinitz Adiada",
             "es": "Defensa Morphy, Steinitz Diferida",
             "en-GB": "Morphy Defence, Steinitz Deferred",
-            "es-ES": "Defensa Morphy, Steinitz Diferida"
+            "es-ES": "Defensa Morphy, Steinitz Diferida",
+            "pt-PT": "Defesa Morphy, Steinitz Adiada"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Morphy Defense, Steinitz Deferred",
@@ -974,7 +1044,8 @@
             "pt-BR": "Defesa Morphy, Ataque Wormald",
             "es": "Defensa Morphy, Ataque Wormald",
             "en-GB": "Morphy Defence, Wormald Attack",
-            "es-ES": "Defensa Morphy, Ataque Wormald"
+            "es-ES": "Defensa Morphy, Ataque Wormald",
+            "pt-PT": "Defesa Morphy, Ataque Wormald"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Wormald Attack",
@@ -988,7 +1059,8 @@
             "pt-BR": "Defesa Morphy, Gambito Jaffe",
             "es": "Defensa Morphy, Gambito Jaffe",
             "en-GB": "Morphy Defence, Jaffe Gambit",
-            "es-ES": "Defensa Morphy, Gambito Jaffe"
+            "es-ES": "Defensa Morphy, Gambito Jaffe",
+            "pt-PT": "Defesa Morphy, Gambito Jaffe"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Jaffe Gambit",
@@ -1002,7 +1074,8 @@
             "pt-BR": "Defesa Morphy, Variante Anderssen",
             "es": "Defensa Morphy, Variante Anderssen",
             "en-GB": "Morphy Defence, Anderssen Variation",
-            "es-ES": "Defensa Morphy, Variante Anderssen"
+            "es-ES": "Defensa Morphy, Variante Anderssen",
+            "pt-PT": "Defesa Morphy, Variante Anderssen"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Anderssen Variation",
@@ -1016,7 +1089,8 @@
             "pt-BR": "Defesa Morphy, Variante Duras",
             "es": "Defensa Morphy, Variante Duras",
             "en-GB": "Morphy Defence, Duras Variation",
-            "es-ES": "Defensa Morphy, Variante Duras"
+            "es-ES": "Defensa Morphy, Variante Duras",
+            "pt-PT": "Defesa Morphy, Variante Duras"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Duras Variation",
@@ -1030,7 +1104,8 @@
             "pt-BR": "Defesa Morphy, Variante Mackenzie",
             "es": "Defensa Morphy, Variante Mackenzie",
             "en-GB": "Morphy Defence, Mackenzie Variation",
-            "es-ES": "Defensa Morphy, Variante Mackenzie"
+            "es-ES": "Defensa Morphy, Variante Mackenzie",
+            "pt-PT": "Defesa Morphy, Variante Mackenzie"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Mackenzie Variation",
@@ -1044,7 +1119,8 @@
             "pt-BR": "Defesa Morphy, Defesa Cozio",
             "es": "Defensa Morphy, Defensa Cozio",
             "en-GB": "Morphy Defence, Cozio Defence",
-            "es-ES": "Defensa Morphy, Defensa Cozio"
+            "es-ES": "Defensa Morphy, Defensa Cozio",
+            "pt-PT": "Defesa Morphy, Defesa Cozio"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Cozio Defense",
@@ -1058,7 +1134,8 @@
             "pt-BR": "Defesa Morphy, Variante Caro",
             "es": "Defensa Morphy, Variante Caro",
             "en-GB": "Morphy Defence, Caro Variation",
-            "es-ES": "Defensa Morphy, Variante Caro"
+            "es-ES": "Defensa Morphy, Variante Caro",
+            "pt-PT": "Defesa Morphy, Variante Caro"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Caro Variation",
@@ -1072,7 +1149,8 @@
             "pt-BR": "Defesa Morphy, Variante Graz",
             "es": "Defensa Morphy, Variante Graz",
             "en-GB": "Morphy Defence, Graz Variation",
-            "es-ES": "Defensa Morphy, Variante Graz"
+            "es-ES": "Defensa Morphy, Variante Graz",
+            "pt-PT": "Defesa Morphy, Variante Graz"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Graz Variation",
@@ -1086,7 +1164,8 @@
             "pt-BR": "Defesa Morphy, Variante Norueguesa",
             "es": "Defensa Morphy, Variante Noruega",
             "en-GB": "Morphy Defence, Norwegian Variation",
-            "es-ES": "Defensa Morphy, Variante Noruega"
+            "es-ES": "Defensa Morphy, Variante Noruega",
+            "pt-PT": "Defesa Morphy, Variante Norueguesa"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Norwegian Variation",
@@ -1100,7 +1179,8 @@
             "pt-BR": "Defesa Morphy, Variante Norueguesa, Gambito Rouxinol",
             "es": "Defensa Morphy, Variante Noruega, Gambito Ruiseñor",
             "en-GB": "Morphy Defence, Norwegian Variation, Nightingale Gambit",
-            "es-ES": "Defensa Morphy, Variante Noruega, Gambito Ruiseñor"
+            "es-ES": "Defensa Morphy, Variante Noruega, Gambito Ruiseñor",
+            "pt-PT": "Defesa Morphy, Variante Norueguesa, Gambito Rouxinol"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Norwegian Variation, Nightingale Gambit",
@@ -1114,7 +1194,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna",
             "es": "Defensa Morphy, Defensa Steinitz Moderna",
             "en-GB": "Morphy Defence, Modern Steinitz Defence",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1128,7 +1209,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna",
             "es": "Defensa Morphy, Defensa Steinitz Moderna",
             "en-GB": "Morphy Defence, Modern Steinitz Defence",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna"
           },
           "eco": "C73",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1142,7 +1224,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna",
             "es": "Defensa Morphy, Defensa Steinitz Moderna",
             "en-GB": "Morphy Defence, Modern Steinitz Defence",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna"
           },
           "eco": "C73",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1156,7 +1239,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna",
             "es": "Defensa Morphy, Defensa Steinitz Moderna",
             "en-GB": "Morphy Defence, Modern Steinitz Defence",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1170,7 +1254,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna",
             "es": "Defensa Morphy, Defensa Steinitz Moderna",
             "en-GB": "Morphy Defence, Modern Steinitz Defence",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna"
           },
           "eco": "C72",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1184,7 +1269,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna",
             "es": "Defensa Morphy, Defensa Steinitz Moderna",
             "en-GB": "Morphy Defence, Modern Steinitz Defence",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna"
           },
           "eco": "C74",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1198,7 +1284,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna",
             "es": "Defensa Morphy, Defensa Steinitz Moderna",
             "en-GB": "Morphy Defence, Modern Steinitz Defence",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna"
           },
           "eco": "C75",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1212,7 +1299,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna",
             "es": "Defensa Morphy, Defensa Steinitz Moderna",
             "en-GB": "Morphy Defence, Modern Steinitz Defence",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna"
           },
           "eco": "C75",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1226,7 +1314,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna, Variante Siesta",
             "es": "Defensa Morphy, Defensa Steinitz Moderna, Variante Siesta",
             "en-GB": "Morphy Defence, Modern Steinitz Defence, Siesta Variation",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna, Variante Siesta"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna, Variante Siesta",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna, Variante Siesta"
           },
           "eco": "C74",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Siesta Variation",
@@ -1240,7 +1329,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna",
             "es": "Defensa Morphy, Defensa Steinitz Moderna",
             "en-GB": "Morphy Defence, Modern Steinitz Defence",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna"
           },
           "eco": "C74",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1254,7 +1344,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna",
             "es": "Defensa Morphy, Defensa Steinitz Moderna",
             "en-GB": "Morphy Defence, Modern Steinitz Defence",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1268,7 +1359,8 @@
             "pt-BR": "Defesa Morphy, Defesa Schliemann Adiada",
             "es": "Defensa Morphy, Defensa Schliemann Diferida",
             "en-GB": "Morphy Defence, Schliemann Defence Deferred",
-            "es-ES": "Defensa Morphy, Defensa Schliemann Diferida"
+            "es-ES": "Defensa Morphy, Defensa Schliemann Diferida",
+            "pt-PT": "Defesa Morphy, Defesa Schliemann Adiada"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
@@ -1282,7 +1374,8 @@
             "pt-BR": "Defesa Morphy, Defesa Schliemann Adiada, Gambito Jaenisch Adiado",
             "es": "Defensa Morphy, Defensa Schliemann Diferida, Gambito Jaenisch Diferido",
             "en-GB": "Morphy Defence, Schliemann Defence Deferred, Jaenisch Gambit Deferred",
-            "es-ES": "Defensa Morphy, Defensa Schliemann Diferida, Gambito Jaenisch Diferido"
+            "es-ES": "Defensa Morphy, Defensa Schliemann Diferida, Gambito Jaenisch Diferido",
+            "pt-PT": "Defesa Morphy, Defesa Schliemann Adiada, Gambito Jaenisch Adiado"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
@@ -1296,7 +1389,8 @@
             "pt-BR": "Defesa Morphy, Defesa do Fianqueto Adiada",
             "es": "Defensa Morphy, Defensa del Fianchetto Diferida",
             "en-GB": "Morphy Defence, Fianchetto Defence Deferred",
-            "es-ES": "Defensa Morphy, Defensa del Fianchetto Diferida"
+            "es-ES": "Defensa Morphy, Defensa del Fianchetto Diferida",
+            "pt-PT": "Defesa Morphy, Defesa do Fianqueto Adiada"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Fianchetto Defense Deferred",
@@ -1310,7 +1404,8 @@
             "pt-BR": "Defesa Morphy, Defesa Steinitz Moderna, Variante do Fianqueto",
             "es": "Defensa Morphy, Defensa Steinitz Moderna, Variante del Fianchetto",
             "en-GB": "Morphy Defence, Modern Steinitz Defence, Fianchetto Variation",
-            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna, Variante del Fianchetto"
+            "es-ES": "Defensa Morphy, Defensa Steinitz Moderna, Variante del Fianchetto",
+            "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna, Variante do Fianqueto"
           },
           "eco": "C76",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Fianchetto Variation",
@@ -1325,7 +1420,8 @@
         "pt-BR": "Aberta",
         "es": "Abierta",
         "en-GB": "Open",
-        "es-ES": "Abierta"
+        "es-ES": "Abierta",
+        "pt-PT": "Aberta"
       },
       "lines": [
         {
@@ -1335,7 +1431,8 @@
             "pt-BR": "Aberta",
             "es": "Abierta",
             "en-GB": "Open",
-            "es-ES": "Abierta"
+            "es-ES": "Abierta",
+            "pt-PT": "Aberta"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -1349,7 +1446,8 @@
             "pt-BR": "Aberta, Variante Knorre",
             "es": "Abierta, Variante Knorre",
             "en-GB": "Open, Knorre Variation",
-            "es-ES": "Abierta, Variante Knorre"
+            "es-ES": "Abierta, Variante Knorre",
+            "pt-PT": "Aberta, Variante Knorre"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Knorre Variation",
@@ -1363,7 +1461,8 @@
             "pt-BR": "Aberta, Gambito Skipworth",
             "es": "Abierta, Gambito Skipworth",
             "en-GB": "Open, Skipworth Gambit",
-            "es-ES": "Abierta, Gambito Skipworth"
+            "es-ES": "Abierta, Gambito Skipworth",
+            "pt-PT": "Aberta, Gambito Skipworth"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Skipworth Gambit",
@@ -1377,7 +1476,8 @@
             "pt-BR": "Aberta",
             "es": "Abierta",
             "en-GB": "Open",
-            "es-ES": "Abierta"
+            "es-ES": "Abierta",
+            "pt-PT": "Aberta"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -1391,7 +1491,8 @@
             "pt-BR": "Aberta, Defesa Clássica, Linha Principal",
             "es": "Abierta, Defensa Clásica, Línea Principal",
             "en-GB": "Open, Classical Defence, Main Line",
-            "es-ES": "Abierta, Defensa Clásica, Línea Principal"
+            "es-ES": "Abierta, Defensa Clásica, Línea Principal",
+            "pt-PT": "Aberta, Defesa Clássica, Linha Principal"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
@@ -1405,7 +1506,8 @@
             "pt-BR": "Aberta",
             "es": "Abierta",
             "en-GB": "Open",
-            "es-ES": "Abierta"
+            "es-ES": "Abierta",
+            "pt-PT": "Aberta"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -1419,7 +1521,8 @@
             "pt-BR": "Aberta, Defesa Schlechter",
             "es": "Abierta, Defensa Schlechter",
             "en-GB": "Open, Schlechter Defence",
-            "es-ES": "Abierta, Defensa Schlechter"
+            "es-ES": "Abierta, Defensa Schlechter",
+            "pt-PT": "Aberta, Defesa Schlechter"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Schlechter Defense",
@@ -1433,7 +1536,8 @@
             "pt-BR": "Aberta, Variante Berger",
             "es": "Abierta, Variante Berger",
             "en-GB": "Open, Berger Variation",
-            "es-ES": "Abierta, Variante Berger"
+            "es-ES": "Abierta, Variante Berger",
+            "pt-PT": "Aberta, Variante Berger"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Berger Variation",
@@ -1447,7 +1551,8 @@
             "pt-BR": "Aberta, Gambito Harksen",
             "es": "Abierta, Gambito Harksen",
             "en-GB": "Open, Harksen Gambit",
-            "es-ES": "Abierta, Gambito Harksen"
+            "es-ES": "Abierta, Gambito Harksen",
+            "pt-PT": "Aberta, Gambito Harksen"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Harksen Gambit",
@@ -1461,7 +1566,8 @@
             "pt-BR": "Aberta",
             "es": "Abierta",
             "en-GB": "Open",
-            "es-ES": "Abierta"
+            "es-ES": "Abierta",
+            "pt-PT": "Aberta"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -1475,7 +1581,8 @@
             "pt-BR": "Aberta, Linha Principal",
             "es": "Abierta, Línea Principal",
             "en-GB": "Open, Main Line",
-            "es-ES": "Abierta, Línea Principal"
+            "es-ES": "Abierta, Línea Principal",
+            "pt-PT": "Aberta, Linha Principal"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Main Line",
@@ -1489,7 +1596,8 @@
             "pt-BR": "Aberta, Variante Bernstein",
             "es": "Abierta, Variante Bernstein",
             "en-GB": "Open, Bernstein Variation",
-            "es-ES": "Abierta, Variante Bernstein"
+            "es-ES": "Abierta, Variante Bernstein",
+            "pt-PT": "Aberta, Variante Bernstein"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Bernstein Variation",
@@ -1503,7 +1611,8 @@
             "pt-BR": "Aberta, Variante Bernstein, Linha Luther",
             "es": "Abierta, Variante Bernstein, Línea Luther",
             "en-GB": "Open, Bernstein Variation, Luther Line",
-            "es-ES": "Abierta, Variante Bernstein, Línea Luther"
+            "es-ES": "Abierta, Variante Bernstein, Línea Luther",
+            "pt-PT": "Aberta, Variante Bernstein, Linha Luther"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Bernstein Variation, Luther Line",
@@ -1517,7 +1626,8 @@
             "pt-BR": "Aberta, Defesa Clássica",
             "es": "Abierta, Defensa Clásica",
             "en-GB": "Open, Classical Defence",
-            "es-ES": "Abierta, Defensa Clásica"
+            "es-ES": "Abierta, Defensa Clásica",
+            "pt-PT": "Aberta, Defesa Clássica"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Classical Defense",
@@ -1531,7 +1641,8 @@
             "pt-BR": "Aberta, Gambito Karpov",
             "es": "Abierta, Gambito Karpov",
             "en-GB": "Open, Karpov Gambit",
-            "es-ES": "Abierta, Gambito Karpov"
+            "es-ES": "Abierta, Gambito Karpov",
+            "pt-PT": "Aberta, Gambito Karpov"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Karpov Gambit",
@@ -1545,7 +1656,8 @@
             "pt-BR": "Aberta, Ataque Howell",
             "es": "Abierta, Ataque Howell",
             "en-GB": "Open, Howell Attack",
-            "es-ES": "Abierta, Ataque Howell"
+            "es-ES": "Abierta, Ataque Howell",
+            "pt-PT": "Aberta, Ataque Howell"
           },
           "eco": "C81",
           "opening": "Ruy Lopez: Open, Howell Attack",
@@ -1559,7 +1671,8 @@
             "pt-BR": "Aberta, Ataque Howell, Variante Ekstrom",
             "es": "Abierta, Ataque Howell, Variante Ekstrom",
             "en-GB": "Open, Howell Attack, Ekstrom Variation",
-            "es-ES": "Abierta, Ataque Howell, Variante Ekstrom"
+            "es-ES": "Abierta, Ataque Howell, Variante Ekstrom",
+            "pt-PT": "Aberta, Ataque Howell, Variante Ekstrom"
           },
           "eco": "C81",
           "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
@@ -1573,7 +1686,8 @@
             "pt-BR": "Aberta, Ataque Howell",
             "es": "Abierta, Ataque Howell",
             "en-GB": "Open, Howell Attack",
-            "es-ES": "Abierta, Ataque Howell"
+            "es-ES": "Abierta, Ataque Howell",
+            "pt-PT": "Aberta, Ataque Howell"
           },
           "eco": "C81",
           "opening": "Ruy Lopez: Open, Howell Attack",
@@ -1587,7 +1701,8 @@
             "pt-BR": "Aberta",
             "es": "Abierta",
             "en-GB": "Open",
-            "es-ES": "Abierta"
+            "es-ES": "Abierta",
+            "pt-PT": "Aberta"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open",
@@ -1601,7 +1716,8 @@
             "pt-BR": "Aberta, Variante Italiana",
             "es": "Abierta, Variante Italiana",
             "en-GB": "Open, Italian Variation",
-            "es-ES": "Abierta, Variante Italiana"
+            "es-ES": "Abierta, Variante Italiana",
+            "pt-PT": "Aberta, Variante Italiana"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Italian Variation",
@@ -1615,7 +1731,8 @@
             "pt-BR": "Aberta, Variante St. Petersburg",
             "es": "Abierta, Variante St. Petersburg",
             "en-GB": "Open, St. Petersburg Variation",
-            "es-ES": "Abierta, Variante St. Petersburg"
+            "es-ES": "Abierta, Variante St. Petersburg",
+            "pt-PT": "Aberta, Variante St. Petersburg"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, St. Petersburg Variation",
@@ -1629,7 +1746,8 @@
             "pt-BR": "Aberta, Variante Dilworth",
             "es": "Abierta, Variante Dilworth",
             "en-GB": "Open, Dilworth Variation",
-            "es-ES": "Abierta, Variante Dilworth"
+            "es-ES": "Abierta, Variante Dilworth",
+            "pt-PT": "Aberta, Variante Dilworth"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Dilworth Variation",
@@ -1643,7 +1761,8 @@
             "pt-BR": "Aberta, Ataque Motzko",
             "es": "Abierta, Ataque Motzko",
             "en-GB": "Open, Motzko Attack",
-            "es-ES": "Abierta, Ataque Motzko"
+            "es-ES": "Abierta, Ataque Motzko",
+            "pt-PT": "Aberta, Ataque Motzko"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Motzko Attack",
@@ -1657,7 +1776,8 @@
             "pt-BR": "Aberta, Ataque Motzko, Variante Nenarokov",
             "es": "Abierta, Ataque Motzko, Variante Nenarokov",
             "en-GB": "Open, Motzko Attack, Nenarokov Variation",
-            "es-ES": "Abierta, Ataque Motzko, Variante Nenarokov"
+            "es-ES": "Abierta, Ataque Motzko, Variante Nenarokov",
+            "pt-PT": "Aberta, Ataque Motzko, Variante Nenarokov"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Motzko Attack, Nenarokov Variation",
@@ -1671,7 +1791,8 @@
             "pt-BR": "Aberta, Defesa Clássica",
             "es": "Abierta, Defensa Clásica",
             "en-GB": "Open, Classical Defence",
-            "es-ES": "Abierta, Defensa Clásica"
+            "es-ES": "Abierta, Defensa Clásica",
+            "pt-PT": "Aberta, Defesa Clássica"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Classical Defense",
@@ -1685,7 +1806,8 @@
             "pt-BR": "Aberta, Variante Malkin",
             "es": "Abierta, Variante Malkin",
             "en-GB": "Open, Malkin Variation",
-            "es-ES": "Abierta, Variante Malkin"
+            "es-ES": "Abierta, Variante Malkin",
+            "pt-PT": "Aberta, Variante Malkin"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Malkin Variation",
@@ -1699,7 +1821,8 @@
             "pt-BR": "Aberta, Variante Breslau",
             "es": "Abierta, Variante Breslau",
             "en-GB": "Open, Breslau Variation",
-            "es-ES": "Abierta, Variante Breslau"
+            "es-ES": "Abierta, Variante Breslau",
+            "pt-PT": "Aberta, Variante Breslau"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Breslau Variation",
@@ -1713,7 +1836,8 @@
             "pt-BR": "Aberta, Armadilha Tarrasch",
             "es": "Abierta, Trampa Tarrasch",
             "en-GB": "Open, Tarrasch Trap",
-            "es-ES": "Abierta, Trampa Tarrasch"
+            "es-ES": "Abierta, Trampa Tarrasch",
+            "pt-PT": "Aberta, Armadilha Tarrasch"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Tarrasch Trap",
@@ -1727,7 +1851,8 @@
             "pt-BR": "Aberta, Variante Berlinense",
             "es": "Abierta, Variante Berlinesa",
             "en-GB": "Open, Berlin Variation",
-            "es-ES": "Abierta, Variante Berlinesa"
+            "es-ES": "Abierta, Variante Berlinesa",
+            "pt-PT": "Aberta, Variante Berlinense"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Berlin Variation",
@@ -1741,7 +1866,8 @@
             "pt-BR": "Aberta, Variante Zukertort",
             "es": "Abierta, Variante Zukertort",
             "en-GB": "Open, Zukertort Variation",
-            "es-ES": "Abierta, Variante Zukertort"
+            "es-ES": "Abierta, Variante Zukertort",
+            "pt-PT": "Aberta, Variante Zukertort"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Zukertort Variation",
@@ -1755,7 +1881,8 @@
             "pt-BR": "Aberta, Ataque Friess",
             "es": "Abierta, Ataque Friess",
             "en-GB": "Open, Friess Attack",
-            "es-ES": "Abierta, Ataque Friess"
+            "es-ES": "Abierta, Ataque Friess",
+            "pt-PT": "Aberta, Ataque Friess"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Friess Attack",
@@ -1769,7 +1896,8 @@
             "pt-BR": "Aberta, Variante Richter",
             "es": "Abierta, Variante Richter",
             "en-GB": "Open, Richter Variation",
-            "es-ES": "Abierta, Variante Richter"
+            "es-ES": "Abierta, Variante Richter",
+            "pt-PT": "Aberta, Variante Richter"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Richter Variation",
@@ -1783,7 +1911,8 @@
             "pt-BR": "Aberta, Variante Riga",
             "es": "Abierta, Variante Riga",
             "en-GB": "Open, Riga Variation",
-            "es-ES": "Abierta, Variante Riga"
+            "es-ES": "Abierta, Variante Riga",
+            "pt-PT": "Aberta, Variante Riga"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Riga Variation",
@@ -1798,7 +1927,8 @@
         "pt-BR": "Defesa Berlinense",
         "es": "Defensa Berlín",
         "en-GB": "Berlin Defence",
-        "es-ES": "Defensa Berlín"
+        "es-ES": "Defensa Berlín",
+        "pt-PT": "Defesa Berlinense"
       },
       "lines": [
         {
@@ -1808,7 +1938,8 @@
             "pt-BR": "Defesa Berlinense",
             "es": "Defensa Berlín",
             "en-GB": "Berlin Defence",
-            "es-ES": "Defensa Berlín"
+            "es-ES": "Defensa Berlín",
+            "pt-PT": "Defesa Berlinense"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense",
@@ -1822,7 +1953,8 @@
             "pt-BR": "Defesa Berlinense",
             "es": "Defensa Berlín",
             "en-GB": "Berlin Defence",
-            "es-ES": "Defensa Berlín"
+            "es-ES": "Defensa Berlín",
+            "pt-PT": "Defesa Berlinense"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense",
@@ -1836,7 +1968,8 @@
             "pt-BR": "Defesa Berlinense, Variante Beverwijk",
             "es": "Defensa Berlín, Variante Beverwijk",
             "en-GB": "Berlin Defence, Beverwijk Variation",
-            "es-ES": "Defensa Berlín, Variante Beverwijk"
+            "es-ES": "Defensa Berlín, Variante Beverwijk",
+            "pt-PT": "Defesa Berlinense, Variante Beverwijk"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Beverwijk Variation",
@@ -1850,7 +1983,8 @@
             "pt-BR": "Defesa Berlinense, Variante Vara de Pescar",
             "es": "Defensa Berlín, Variante Caña de Pescar",
             "en-GB": "Berlin Defence, Fishing Pole Variation",
-            "es-ES": "Defensa Berlín, Variante Caña de Pescar"
+            "es-ES": "Defensa Berlín, Variante Caña de Pescar",
+            "pt-PT": "Defesa Berlinense, Variante Vara de Pescar"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Fishing Pole Variation",
@@ -1864,7 +1998,8 @@
             "pt-BR": "Defesa Berlinense, Gambito Rio Aceito",
             "es": "Defensa Berlín, Gambito Rio Aceptado",
             "en-GB": "Berlin Defence, Rio Gambit Accepted",
-            "es-ES": "Defensa Berlín, Gambito Rio Aceptado"
+            "es-ES": "Defensa Berlín, Gambito Rio Aceptado",
+            "pt-PT": "Defesa Berlinense, Gambito Rio Aceito"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rio Gambit Accepted",
@@ -1878,7 +2013,8 @@
             "pt-BR": "Defesa Berlinense, Variante Rio de Janeiro",
             "es": "Defensa Berlín, Variante Río de Janeiro",
             "en-GB": "Berlin Defence, Rio de Janeiro Variation",
-            "es-ES": "Defensa Berlín, Variante Río de Janeiro"
+            "es-ES": "Defensa Berlín, Variante Río de Janeiro",
+            "pt-PT": "Defesa Berlinense, Variante Rio de Janeiro"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
@@ -1892,7 +2028,8 @@
             "pt-BR": "Defesa Berlinense, Variante Rio de Janeiro",
             "es": "Defensa Berlín, Variante Río de Janeiro",
             "en-GB": "Berlin Defence, Rio de Janeiro Variation",
-            "es-ES": "Defensa Berlín, Variante Río de Janeiro"
+            "es-ES": "Defensa Berlín, Variante Río de Janeiro",
+            "pt-PT": "Defesa Berlinense, Variante Rio de Janeiro"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
@@ -1906,7 +2043,8 @@
             "pt-BR": "Defesa Berlinense, Ataque Winawer",
             "es": "Defensa Berlín, Ataque Winawer",
             "en-GB": "Berlin Defence, Winawer Attack",
-            "es-ES": "Defensa Berlín, Ataque Winawer"
+            "es-ES": "Defensa Berlín, Ataque Winawer",
+            "pt-PT": "Defesa Berlinense, Ataque Winawer"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Winawer Attack",
@@ -1920,7 +2058,8 @@
             "pt-BR": "Defesa Berlinense, Variante Pillsbury",
             "es": "Defensa Berlín, Variante Pillsbury",
             "en-GB": "Berlin Defence, Pillsbury Variation",
-            "es-ES": "Defensa Berlín, Variante Pillsbury"
+            "es-ES": "Defensa Berlín, Variante Pillsbury",
+            "pt-PT": "Defesa Berlinense, Variante Pillsbury"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Pillsbury Variation",
@@ -1934,7 +2073,8 @@
             "pt-BR": "Defesa Berlinense, Variante Zukertort",
             "es": "Defensa Berlín, Variante Zukertort",
             "en-GB": "Berlin Defence, Zukertort Variation",
-            "es-ES": "Defensa Berlín, Variante Zukertort"
+            "es-ES": "Defensa Berlín, Variante Zukertort",
+            "pt-PT": "Defesa Berlinense, Variante Zukertort"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Zukertort Variation",
@@ -1948,7 +2088,8 @@
             "pt-BR": "Defesa Berlinense, Variante Cordel",
             "es": "Defensa Berlín, Variante Cordel",
             "en-GB": "Berlin Defence, Cordel Variation",
-            "es-ES": "Defensa Berlín, Variante Cordel"
+            "es-ES": "Defensa Berlín, Variante Cordel",
+            "pt-PT": "Defesa Berlinense, Variante Cordel"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Cordel Variation",
@@ -1962,7 +2103,8 @@
             "pt-BR": "Defesa Berlinense, Variante Trifunovic",
             "es": "Defensa Berlín, Variante Trifunovic",
             "en-GB": "Berlin Defence, Trifunovic Variation",
-            "es-ES": "Defensa Berlín, Variante Trifunovic"
+            "es-ES": "Defensa Berlín, Variante Trifunovic",
+            "pt-PT": "Defesa Berlinense, Variante Trifunovic"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Trifunovic Variation",
@@ -1976,7 +2118,8 @@
             "pt-BR": "Defesa Berlinense, Variante Minckwitz",
             "es": "Defensa Berlín, Variante Minckwitz",
             "en-GB": "Berlin Defence, Minckwitz Variation",
-            "es-ES": "Defensa Berlín, Variante Minckwitz"
+            "es-ES": "Defensa Berlín, Variante Minckwitz",
+            "pt-PT": "Defesa Berlinense, Variante Minckwitz"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Minckwitz Variation",
@@ -1990,7 +2133,8 @@
             "pt-BR": "Defesa Berlinense, Variante l'Hermet",
             "es": "Defensa Berlín, Variante l'Hermet",
             "en-GB": "Berlin Defence, l'Hermet Variation",
-            "es-ES": "Defensa Berlín, Variante l'Hermet"
+            "es-ES": "Defensa Berlín, Variante l'Hermet",
+            "pt-PT": "Defesa Berlinense, Variante l'Hermet"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation",
@@ -2004,7 +2148,8 @@
             "pt-BR": "Defesa Berlinense, Variante l'Hermet, Linha Westerinen",
             "es": "Defensa Berlín, Variante l'Hermet, Línea Westerinen",
             "en-GB": "Berlin Defence, l'Hermet Variation, Westerinen Line",
-            "es-ES": "Defensa Berlín, Variante l'Hermet, Línea Westerinen"
+            "es-ES": "Defensa Berlín, Variante l'Hermet, Línea Westerinen",
+            "pt-PT": "Defesa Berlinense, Variante l'Hermet, Linha Westerinen"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation, Westerinen Line",
@@ -2018,7 +2163,8 @@
             "pt-BR": "Defesa Berlinense, Variante l'Hermet, Defesa Muralha de Berlim",
             "es": "Defensa Berlín, Variante l'Hermet, Defensa Muro de Berlín",
             "en-GB": "Berlin Defence, l'Hermet Variation, Berlin Wall Defence",
-            "es-ES": "Defensa Berlín, Variante l'Hermet, Defensa Muro de Berlín"
+            "es-ES": "Defensa Berlín, Variante l'Hermet, Defensa Muro de Berlín",
+            "pt-PT": "Defesa Berlinense, Variante l'Hermet, Defesa Muralha de Berlim"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense",
@@ -2032,7 +2178,8 @@
             "pt-BR": "Defesa Berlinense, Muralha de Berlim",
             "es": "Defensa Berlín, Muro de Berlín",
             "en-GB": "Berlin Defence, Berlin Wall",
-            "es-ES": "Defensa Berlín, Muro de Berlín"
+            "es-ES": "Defensa Berlín, Muro de Berlín",
+            "pt-PT": "Defesa Berlinense, Muralha de Berlim"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Berlin Wall",
@@ -2046,7 +2193,8 @@
             "pt-BR": "Defesa Berlinense, Variante Rosenthal",
             "es": "Defensa Berlín, Variante Rosenthal",
             "en-GB": "Berlin Defence, Rosenthal Variation",
-            "es-ES": "Defensa Berlín, Variante Rosenthal"
+            "es-ES": "Defensa Berlín, Variante Rosenthal",
+            "pt-PT": "Defesa Berlinense, Variante Rosenthal"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rosenthal Variation",
@@ -2060,7 +2208,8 @@
             "pt-BR": "Defesa Berlinense, Defesa Steinitz Melhorada",
             "es": "Defensa Berlín, Defensa Steinitz Mejorada",
             "en-GB": "Berlin Defence, Improved Steinitz Defence",
-            "es-ES": "Defensa Berlín, Defensa Steinitz Mejorada"
+            "es-ES": "Defensa Berlín, Defensa Steinitz Mejorada",
+            "pt-PT": "Defesa Berlinense, Defesa Steinitz Melhorada"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Improved Steinitz Defense",
@@ -2074,7 +2223,8 @@
             "pt-BR": "Defesa Berlinense, Variante Ouriço",
             "es": "Defensa Berlín, Variante Erizo",
             "en-GB": "Berlin Defence, Hedgehog Variation",
-            "es-ES": "Defensa Berlín, Variante Erizo"
+            "es-ES": "Defensa Berlín, Variante Erizo",
+            "pt-PT": "Defesa Berlinense, Variante Ouriço"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Hedgehog Variation",
@@ -2088,7 +2238,8 @@
             "pt-BR": "Defesa Berlinense, Variante Bernstein Fechada",
             "es": "Defensa Berlín, Variante Bernstein Cerrada",
             "en-GB": "Berlin Defence, Closed Bernstein Variation",
-            "es-ES": "Defensa Berlín, Variante Bernstein Cerrada"
+            "es-ES": "Defensa Berlín, Variante Bernstein Cerrada",
+            "pt-PT": "Defesa Berlinense, Variante Bernstein Fechada"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Closed Bernstein Variation",
@@ -2102,7 +2253,8 @@
             "pt-BR": "Defesa Berlinense, Variante Showalter Fechada",
             "es": "Defensa Berlín, Variante Showalter Cerrada",
             "en-GB": "Berlin Defence, Closed Showalter Variation",
-            "es-ES": "Defensa Berlín, Variante Showalter Cerrada"
+            "es-ES": "Defensa Berlín, Variante Showalter Cerrada",
+            "pt-PT": "Defesa Berlinense, Variante Showalter Fechada"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Closed Showalter Variation",
@@ -2116,7 +2268,8 @@
             "pt-BR": "Defesa Berlinense, Variante Wolf Fechada",
             "es": "Defensa Berlín, Variante Wolf Cerrada",
             "en-GB": "Berlin Defence, Closed Wolf Variation",
-            "es-ES": "Defensa Berlín, Variante Wolf Cerrada"
+            "es-ES": "Defensa Berlín, Variante Wolf Cerrada",
+            "pt-PT": "Defesa Berlinense, Variante Wolf Fechada"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Closed Wolf Variation",
@@ -2130,7 +2283,8 @@
             "pt-BR": "Defesa Berlinense, Variante Anti-Berlinense",
             "es": "Defensa Berlín, Variante Anti-Berlinesa",
             "en-GB": "Berlin Defence, Anti-Berlin Variation",
-            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa"
+            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa",
+            "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation",
@@ -2144,7 +2298,8 @@
             "pt-BR": "Defesa Berlinense, Variante Anti-Berlinense, Variante Kaufmann",
             "es": "Defensa Berlín, Variante Anti-Berlinesa, Variante Kaufmann",
             "en-GB": "Berlin Defence, Anti-Berlin Variation, Kaufmann Variation",
-            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa, Variante Kaufmann"
+            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa, Variante Kaufmann",
+            "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense, Variante Kaufmann"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Kaufmann Variation",
@@ -2158,7 +2313,8 @@
             "pt-BR": "Defesa Berlinense, Variante Anti-Berlinense, Variante Mortimer",
             "es": "Defensa Berlín, Variante Anti-Berlinesa, Variante Mortimer",
             "en-GB": "Berlin Defence, Anti-Berlin Variation, Mortimer Variation",
-            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa, Variante Mortimer"
+            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa, Variante Mortimer",
+            "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense, Variante Mortimer"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Variation",
@@ -2172,7 +2328,8 @@
             "pt-BR": "Defesa Berlinense, Variante Anti-Berlinense, Armadilha Mortimer",
             "es": "Defensa Berlín, Variante Anti-Berlinesa, Trampa Mortimer",
             "en-GB": "Berlin Defence, Anti-Berlin Variation, Mortimer Trap",
-            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa, Trampa Mortimer"
+            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa, Trampa Mortimer",
+            "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense, Armadilha Mortimer"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Trap",
@@ -2186,7 +2343,8 @@
             "pt-BR": "Defesa Berlinense, Variante Anti-Berlinense, Variante Anderssen",
             "es": "Defensa Berlín, Variante Anti-Berlinesa, Variante Anderssen",
             "en-GB": "Berlin Defence, Anti-Berlin Variation, Anderssen Variation",
-            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa, Variante Anderssen"
+            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa, Variante Anderssen",
+            "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense, Variante Anderssen"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Anderssen Variation",
@@ -2200,7 +2358,8 @@
             "pt-BR": "Defesa Berlinense, Variante Anti-Berlinense, Variante Duras",
             "es": "Defensa Berlín, Variante Anti-Berlinesa, Variante Duras",
             "en-GB": "Berlin Defence, Anti-Berlin Variation, Duras Variation",
-            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa, Variante Duras"
+            "es-ES": "Defensa Berlín, Variante Anti-Berlinesa, Variante Duras",
+            "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense, Variante Duras"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Duras Variation",
@@ -2214,7 +2373,8 @@
             "pt-BR": "Defesa Berlinense, Ataque Nyholm",
             "es": "Defensa Berlín, Ataque Nyholm",
             "en-GB": "Berlin Defence, Nyholm Attack",
-            "es-ES": "Defensa Berlín, Ataque Nyholm"
+            "es-ES": "Defensa Berlín, Ataque Nyholm",
+            "pt-PT": "Defesa Berlinense, Ataque Nyholm"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Nyholm Attack",
@@ -2228,7 +2388,8 @@
             "pt-BR": "Defesa Berlinense, Armadilha Tarrasch",
             "es": "Defensa Berlín, Trampa Tarrasch",
             "en-GB": "Berlin Defence, Tarrasch Trap",
-            "es-ES": "Defensa Berlín, Trampa Tarrasch"
+            "es-ES": "Defensa Berlín, Trampa Tarrasch",
+            "pt-PT": "Defesa Berlinense, Armadilha Tarrasch"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Tarrasch Trap",
@@ -2243,7 +2404,8 @@
         "pt-BR": "Variante da Troca",
         "es": "Variante del Cambio",
         "en-GB": "Exchange Variation",
-        "es-ES": "Variante del Cambio"
+        "es-ES": "Variante del Cambio",
+        "pt-PT": "Variante da Troca"
       },
       "lines": [
         {
@@ -2253,7 +2415,8 @@
             "pt-BR": "Variante da Troca",
             "es": "Variante del Cambio",
             "en-GB": "Exchange Variation",
-            "es-ES": "Variante del Cambio"
+            "es-ES": "Variante del Cambio",
+            "pt-PT": "Variante da Troca"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation",
@@ -2267,7 +2430,8 @@
             "pt-BR": "Variante da Troca, Variante Lutikov",
             "es": "Variante del Cambio, Variante Lutikov",
             "en-GB": "Exchange Variation, Lutikov Variation",
-            "es-ES": "Variante del Cambio, Variante Lutikov"
+            "es-ES": "Variante del Cambio, Variante Lutikov",
+            "pt-PT": "Variante da Troca, Variante Lutikov"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
@@ -2281,7 +2445,8 @@
             "pt-BR": "Variante da Troca, Variante Keres",
             "es": "Variante del Cambio, Variante Keres",
             "en-GB": "Exchange Variation, Keres Variation",
-            "es-ES": "Variante del Cambio, Variante Keres"
+            "es-ES": "Variante del Cambio, Variante Keres",
+            "pt-PT": "Variante da Troca, Variante Keres"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
@@ -2295,7 +2460,8 @@
             "pt-BR": "Variante da Troca, Variante Romanovsky",
             "es": "Variante del Cambio, Variante Romanovsky",
             "en-GB": "Exchange Variation, Romanovsky Variation",
-            "es-ES": "Variante del Cambio, Variante Romanovsky"
+            "es-ES": "Variante del Cambio, Variante Romanovsky",
+            "pt-PT": "Variante da Troca, Variante Romanovsky"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
@@ -2309,7 +2475,8 @@
             "pt-BR": "Variante da Troca, Variante Normal",
             "es": "Variante del Cambio, Variante Normal",
             "en-GB": "Exchange Variation, Normal Variation",
-            "es-ES": "Variante del Cambio, Variante Normal"
+            "es-ES": "Variante del Cambio, Variante Normal",
+            "pt-PT": "Variante da Troca, Variante Normal"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
@@ -2323,7 +2490,8 @@
             "pt-BR": "Variante da Troca, Variante do Bispo do Rei",
             "es": "Variante del Cambio, Variante del Alfil de Rey",
             "en-GB": "Exchange Variation, King's Bishop Variation",
-            "es-ES": "Variante del Cambio, Variante del Alfil de Rey"
+            "es-ES": "Variante del Cambio, Variante del Alfil de Rey",
+            "pt-PT": "Variante da Troca, Variante do Bispo do Rei"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
@@ -2337,7 +2505,8 @@
             "pt-BR": "Variante da Troca, Gambito Alapin",
             "es": "Variante del Cambio, Gambito Alapin",
             "en-GB": "Exchange Variation, Alapin Gambit",
-            "es-ES": "Variante del Cambio, Gambito Alapin"
+            "es-ES": "Variante del Cambio, Gambito Alapin",
+            "pt-PT": "Variante da Troca, Gambito Alapin"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
@@ -2351,7 +2520,8 @@
             "pt-BR": "Variante da Troca, Variante Bronstein",
             "es": "Variante del Cambio, Variante Bronstein",
             "en-GB": "Exchange Variation, Bronstein Variation",
-            "es-ES": "Variante del Cambio, Variante Bronstein"
+            "es-ES": "Variante del Cambio, Variante Bronstein",
+            "pt-PT": "Variante da Troca, Variante Bronstein"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
@@ -2365,7 +2535,8 @@
             "pt-BR": "Variante da Troca, Variante Gligoric",
             "es": "Variante del Cambio, Variante Gligoric",
             "en-GB": "Exchange Variation, Gligoric Variation",
-            "es-ES": "Variante del Cambio, Variante Gligoric"
+            "es-ES": "Variante del Cambio, Variante Gligoric",
+            "pt-PT": "Variante da Troca, Variante Gligoric"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
@@ -2379,7 +2550,8 @@
             "pt-BR": "Variante da Troca, Variante Alekhine",
             "es": "Variante del Cambio, Variante Alekhine",
             "en-GB": "Exchange Variation, Alekhine Variation",
-            "es-ES": "Variante del Cambio, Variante Alekhine"
+            "es-ES": "Variante del Cambio, Variante Alekhine",
+            "pt-PT": "Variante da Troca, Variante Alekhine"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Alekhine Variation",
@@ -2394,7 +2566,8 @@
         "pt-BR": "Ataque Marshall",
         "es": "Ataque Marshall",
         "en-GB": "Marshall Attack",
-        "es-ES": "Ataque Marshall"
+        "es-ES": "Ataque Marshall",
+        "pt-PT": "Ataque Marshall"
       },
       "lines": [
         {
@@ -2404,7 +2577,8 @@
             "pt-BR": "Ataque Marshall",
             "es": "Ataque Marshall",
             "en-GB": "Marshall Attack",
-            "es-ES": "Ataque Marshall"
+            "es-ES": "Ataque Marshall",
+            "pt-PT": "Ataque Marshall"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack",
@@ -2418,7 +2592,8 @@
             "pt-BR": "Ataque Marshall, Ataque Original Marshall",
             "es": "Ataque Marshall, Ataque Original Marshall",
             "en-GB": "Marshall Attack, Original Marshall Attack",
-            "es-ES": "Ataque Marshall, Ataque Original Marshall"
+            "es-ES": "Ataque Marshall, Ataque Original Marshall",
+            "pt-PT": "Ataque Marshall, Ataque Original Marshall"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Original Marshall Attack",
@@ -2432,7 +2607,8 @@
             "pt-BR": "Ataque Marshall, Variante Moderna",
             "es": "Ataque Marshall, Variante Moderna",
             "en-GB": "Marshall Attack, Modern Variation",
-            "es-ES": "Ataque Marshall, Variante Moderna"
+            "es-ES": "Ataque Marshall, Variante Moderna",
+            "pt-PT": "Ataque Marshall, Variante Moderna"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Modern Variation",
@@ -2446,7 +2622,8 @@
             "pt-BR": "Ataque Marshall, Variante Re3",
             "es": "Ataque Marshall, Variante Re3",
             "en-GB": "Marshall Attack, Re3 Variation",
-            "es-ES": "Ataque Marshall, Variante Re3"
+            "es-ES": "Ataque Marshall, Variante Re3",
+            "pt-PT": "Ataque Marshall, Variante Re3"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Re3 Variation",
@@ -2460,7 +2637,8 @@
             "pt-BR": "Ataque Marshall, Linha Principal",
             "es": "Ataque Marshall, Línea Principal",
             "en-GB": "Marshall Attack, Main Line",
-            "es-ES": "Ataque Marshall, Línea Principal"
+            "es-ES": "Ataque Marshall, Línea Principal",
+            "pt-PT": "Ataque Marshall, Linha Principal"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Main Line",
@@ -2474,7 +2652,8 @@
             "pt-BR": "Ataque Marshall, Linha Principal Moderna",
             "es": "Ataque Marshall, Línea Principal Moderna",
             "en-GB": "Marshall Attack, Modern Main Line",
-            "es-ES": "Ataque Marshall, Línea Principal Moderna"
+            "es-ES": "Ataque Marshall, Línea Principal Moderna",
+            "pt-PT": "Ataque Marshall, Linha Principal Moderna"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Modern Main Line",
@@ -2488,7 +2667,8 @@
             "pt-BR": "Ataque Marshall, Linha Principal, Variante Spassky",
             "es": "Ataque Marshall, Línea Principal, Variante Spassky",
             "en-GB": "Marshall Attack, Main Line, Spassky Variation",
-            "es-ES": "Ataque Marshall, Línea Principal, Variante Spassky"
+            "es-ES": "Ataque Marshall, Línea Principal, Variante Spassky",
+            "pt-PT": "Ataque Marshall, Linha Principal, Variante Spassky"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Main Line, Spassky Variation",
@@ -2502,7 +2682,8 @@
             "pt-BR": "Ataque Marshall",
             "es": "Ataque Marshall",
             "en-GB": "Marshall Attack",
-            "es-ES": "Ataque Marshall"
+            "es-ES": "Ataque Marshall",
+            "pt-PT": "Ataque Marshall"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack",
@@ -2516,7 +2697,8 @@
             "pt-BR": "Ataque Marshall, Variante Steiner",
             "es": "Ataque Marshall, Variante Steiner",
             "en-GB": "Marshall Attack, Steiner Variation",
-            "es-ES": "Ataque Marshall, Variante Steiner"
+            "es-ES": "Ataque Marshall, Variante Steiner",
+            "pt-PT": "Ataque Marshall, Variante Steiner"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Steiner Variation",
@@ -2531,7 +2713,8 @@
         "pt-BR": "Defesa Schliemann",
         "es": "Defensa Schliemann",
         "en-GB": "Schliemann Defence",
-        "es-ES": "Defensa Schliemann"
+        "es-ES": "Defensa Schliemann",
+        "pt-PT": "Defesa Schliemann"
       },
       "lines": [
         {
@@ -2541,7 +2724,8 @@
             "pt-BR": "Defesa Schliemann",
             "es": "Defensa Schliemann",
             "en-GB": "Schliemann Defence",
-            "es-ES": "Defensa Schliemann"
+            "es-ES": "Defensa Schliemann",
+            "pt-PT": "Defesa Schliemann"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense",
@@ -2555,7 +2739,8 @@
             "pt-BR": "Defesa Schliemann, Variante da Troca",
             "es": "Defensa Schliemann, Variante del Cambio",
             "en-GB": "Schliemann Defence, Exchange Variation",
-            "es-ES": "Defensa Schliemann, Variante del Cambio"
+            "es-ES": "Defensa Schliemann, Variante del Cambio",
+            "pt-PT": "Defesa Schliemann, Variante da Troca"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Exchange Variation",
@@ -2569,7 +2754,8 @@
             "pt-BR": "Defesa Schliemann, Variante Dyckhoff",
             "es": "Defensa Schliemann, Variante Dyckhoff",
             "en-GB": "Schliemann Defence, Dyckhoff Variation",
-            "es-ES": "Defensa Schliemann, Variante Dyckhoff"
+            "es-ES": "Defensa Schliemann, Variante Dyckhoff",
+            "pt-PT": "Defesa Schliemann, Variante Dyckhoff"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
@@ -2583,7 +2769,8 @@
             "pt-BR": "Defesa Schliemann, Defesa Kostić",
             "es": "Defensa Schliemann, Defensa Kostić",
             "en-GB": "Schliemann Defence, Kostić Defence",
-            "es-ES": "Defensa Schliemann, Defensa Kostić"
+            "es-ES": "Defensa Schliemann, Defensa Kostić",
+            "pt-PT": "Defesa Schliemann, Defesa Kostić"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Kostić Defense",
@@ -2597,7 +2784,8 @@
             "pt-BR": "Defesa Schliemann, Variante Tartakower",
             "es": "Defensa Schliemann, Variante Tartakower",
             "en-GB": "Schliemann Defence, Tartakower Variation",
-            "es-ES": "Defensa Schliemann, Variante Tartakower"
+            "es-ES": "Defensa Schliemann, Variante Tartakower",
+            "pt-PT": "Defesa Schliemann, Variante Tartakower"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
@@ -2611,7 +2799,8 @@
             "pt-BR": "Defesa Schliemann, Variante Möhring",
             "es": "Defensa Schliemann, Variante Möhring",
             "en-GB": "Schliemann Defence, Möhring Variation",
-            "es-ES": "Defensa Schliemann, Variante Möhring"
+            "es-ES": "Defensa Schliemann, Variante Möhring",
+            "pt-PT": "Defesa Schliemann, Variante Möhring"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
@@ -2625,7 +2814,8 @@
             "pt-BR": "Defesa Schliemann, Variante Clássica",
             "es": "Defensa Schliemann, Variante Clásica",
             "en-GB": "Schliemann Defence, Classical Variation",
-            "es-ES": "Defensa Schliemann, Variante Clásica"
+            "es-ES": "Defensa Schliemann, Variante Clásica",
+            "pt-PT": "Defesa Schliemann, Variante Clássica"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
@@ -2639,7 +2829,8 @@
             "pt-BR": "Defesa Schliemann, Ataque Schönemann",
             "es": "Defensa Schliemann, Ataque Schönemann",
             "en-GB": "Schliemann Defence, Schönemann Attack",
-            "es-ES": "Defensa Schliemann, Ataque Schönemann"
+            "es-ES": "Defensa Schliemann, Ataque Schönemann",
+            "pt-PT": "Defesa Schliemann, Ataque Schönemann"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
@@ -2653,7 +2844,8 @@
             "pt-BR": "Defesa Schliemann, Gambito Jaenisch Aceito",
             "es": "Defensa Schliemann, Gambito Jaenisch Aceptado",
             "en-GB": "Schliemann Defence, Jaenisch Gambit Accepted",
-            "es-ES": "Defensa Schliemann, Gambito Jaenisch Aceptado"
+            "es-ES": "Defensa Schliemann, Gambito Jaenisch Aceptado",
+            "pt-PT": "Defesa Schliemann, Gambito Jaenisch Aceito"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
@@ -2668,7 +2860,8 @@
         "pt-BR": "Variante Clássica",
         "es": "Variante Clásica",
         "en-GB": "Classical Variation",
-        "es-ES": "Variante Clásica"
+        "es-ES": "Variante Clásica",
+        "pt-PT": "Variante Clássica"
       },
       "lines": [
         {
@@ -2678,7 +2871,8 @@
             "pt-BR": "Variante Clássica",
             "es": "Variante Clásica",
             "en-GB": "Classical Variation",
-            "es-ES": "Variante Clásica"
+            "es-ES": "Variante Clásica",
+            "pt-PT": "Variante Clássica"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation",
@@ -2692,7 +2886,8 @@
             "pt-BR": "Variante Clássica, Gambito da Ala Espanhol",
             "es": "Variante Clásica, Gambito del Ala Español",
             "en-GB": "Classical Variation, Spanish Wing Gambit",
-            "es-ES": "Variante Clásica, Gambito del Ala Español"
+            "es-ES": "Variante Clásica, Gambito del Ala Español",
+            "pt-PT": "Variante Clássica, Gambito da Ala Espanhol"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
@@ -2706,7 +2901,8 @@
             "pt-BR": "Variante Clássica, Variante Central",
             "es": "Variante Clásica, Variante Central",
             "en-GB": "Classical Variation, Central Variation",
-            "es-ES": "Variante Clásica, Variante Central"
+            "es-ES": "Variante Clásica, Variante Central",
+            "pt-PT": "Variante Clássica, Variante Central"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Central Variation",
@@ -2720,7 +2916,8 @@
             "pt-BR": "Variante Clássica, Variante Charousek",
             "es": "Variante Clásica, Variante Charousek",
             "en-GB": "Classical Variation, Charousek Variation",
-            "es-ES": "Variante Clásica, Variante Charousek"
+            "es-ES": "Variante Clásica, Variante Charousek",
+            "pt-PT": "Variante Clássica, Variante Charousek"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Charousek Variation",
@@ -2734,7 +2931,8 @@
             "pt-BR": "Variante Clássica, Gambito Konikowski",
             "es": "Variante Clásica, Gambito Konikowski",
             "en-GB": "Classical Variation, Konikowski Gambit",
-            "es-ES": "Variante Clásica, Gambito Konikowski"
+            "es-ES": "Variante Clásica, Gambito Konikowski",
+            "pt-PT": "Variante Clássica, Gambito Konikowski"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Konikowski Gambit",
@@ -2748,7 +2946,8 @@
             "pt-BR": "Variante Clássica, Gambito Cordel",
             "es": "Variante Clásica, Gambito Cordel",
             "en-GB": "Classical Variation, Cordel Gambit",
-            "es-ES": "Variante Clásica, Gambito Cordel"
+            "es-ES": "Variante Clásica, Gambito Cordel",
+            "pt-PT": "Variante Clássica, Gambito Cordel"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
@@ -2762,7 +2961,8 @@
             "pt-BR": "Variante Clássica, Gambito Zukertort",
             "es": "Variante Clásica, Gambito Zukertort",
             "en-GB": "Classical Variation, Zukertort Gambit",
-            "es-ES": "Variante Clásica, Gambito Zukertort"
+            "es-ES": "Variante Clásica, Gambito Zukertort",
+            "pt-PT": "Variante Clássica, Gambito Zukertort"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Classical Variation, Zukertort Gambit",
@@ -2776,7 +2976,8 @@
             "pt-BR": "Variante Clássica, Linha Principal Moderna",
             "es": "Variante Clásica, Línea Principal Moderna",
             "en-GB": "Classical Variation, Modern Main Line",
-            "es-ES": "Variante Clásica, Línea Principal Moderna"
+            "es-ES": "Variante Clásica, Línea Principal Moderna",
+            "pt-PT": "Variante Clássica, Linha Principal Moderna"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Modern Main Line",
@@ -2791,7 +2992,8 @@
         "pt-BR": "Defesa Steinitz",
         "es": "Defensa Steinitz",
         "en-GB": "Steinitz Defence",
-        "es-ES": "Defensa Steinitz"
+        "es-ES": "Defensa Steinitz",
+        "pt-PT": "Defesa Steinitz"
       },
       "lines": [
         {
@@ -2801,7 +3003,8 @@
             "pt-BR": "Defesa Steinitz",
             "es": "Defensa Steinitz",
             "en-GB": "Steinitz Defence",
-            "es-ES": "Defensa Steinitz"
+            "es-ES": "Defensa Steinitz",
+            "pt-PT": "Defesa Steinitz"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense",
@@ -2815,7 +3018,8 @@
             "pt-BR": "Defesa Steinitz",
             "es": "Defensa Steinitz",
             "en-GB": "Steinitz Defence",
-            "es-ES": "Defensa Steinitz"
+            "es-ES": "Defensa Steinitz",
+            "pt-PT": "Defesa Steinitz"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense",
@@ -2829,7 +3033,8 @@
             "pt-BR": "Defesa Steinitz, Ataque Nimzowitsch",
             "es": "Defensa Steinitz, Ataque Nimzowitsch",
             "en-GB": "Steinitz Defence, Nimzowitsch Attack",
-            "es-ES": "Defensa Steinitz, Ataque Nimzowitsch"
+            "es-ES": "Defensa Steinitz, Ataque Nimzowitsch",
+            "pt-PT": "Defesa Steinitz, Ataque Nimzowitsch"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
@@ -2843,7 +3048,8 @@
             "pt-BR": "Defesa Steinitz, Variante Semi-Duras",
             "es": "Defensa Steinitz, Variante Semi-Duras",
             "en-GB": "Steinitz Defence, Semi-Duras Variation",
-            "es-ES": "Defensa Steinitz, Variante Semi-Duras"
+            "es-ES": "Defensa Steinitz, Variante Semi-Duras",
+            "pt-PT": "Defesa Steinitz, Variante Semi-Duras"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
@@ -2857,7 +3063,8 @@
             "pt-BR": "Defesa Steinitz, Gambito do Centro",
             "es": "Defensa Steinitz, Gambito del Centro",
             "en-GB": "Steinitz Defence, Centre Gambit",
-            "es-ES": "Defensa Steinitz, Gambito del Centro"
+            "es-ES": "Defensa Steinitz, Gambito del Centro",
+            "pt-PT": "Defesa Steinitz, Gambito do Centro"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
@@ -2872,7 +3079,8 @@
         "pt-BR": "Defesa Clássica",
         "es": "Defensa Clásica",
         "en-GB": "Classical Defence",
-        "es-ES": "Defensa Clásica"
+        "es-ES": "Defensa Clásica",
+        "pt-PT": "Defesa Clássica"
       },
       "lines": [
         {
@@ -2882,7 +3090,8 @@
             "pt-BR": "Defesa Clássica, Variante Zaitsev",
             "es": "Defensa Clásica, Variante Zaitsev",
             "en-GB": "Classical Defence, Zaitsev Variation",
-            "es-ES": "Defensa Clásica, Variante Zaitsev"
+            "es-ES": "Defensa Clásica, Variante Zaitsev",
+            "pt-PT": "Defesa Clássica, Variante Zaitsev"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
@@ -2896,7 +3105,8 @@
             "pt-BR": "Defesa Clássica, Variante Boden",
             "es": "Defensa Clásica, Variante Boden",
             "en-GB": "Classical Defence, Boden Variation",
-            "es-ES": "Defensa Clásica, Variante Boden"
+            "es-ES": "Defensa Clásica, Variante Boden",
+            "pt-PT": "Defesa Clássica, Variante Boden"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Defense, Boden Variation",
@@ -2910,7 +3120,8 @@
             "pt-BR": "Defesa Clássica, Variante Benelux",
             "es": "Defensa Clásica, Variante Benelux",
             "en-GB": "Classical Defence, Benelux Variation",
-            "es-ES": "Defensa Clásica, Variante Benelux"
+            "es-ES": "Defensa Clásica, Variante Benelux",
+            "pt-PT": "Defesa Clássica, Variante Benelux"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Defense, Benelux Variation",
@@ -2925,7 +3136,8 @@
         "pt-BR": "Defesa Cozio",
         "es": "Defensa Cozio",
         "en-GB": "Cozio Defence",
-        "es-ES": "Defensa Cozio"
+        "es-ES": "Defensa Cozio",
+        "pt-PT": "Defesa Cozio"
       },
       "lines": [
         {
@@ -2935,7 +3147,8 @@
             "pt-BR": "Defesa Cozio",
             "es": "Defensa Cozio",
             "en-GB": "Cozio Defence",
-            "es-ES": "Defensa Cozio"
+            "es-ES": "Defensa Cozio",
+            "pt-PT": "Defesa Cozio"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Cozio Defense",
@@ -2949,7 +3162,8 @@
             "pt-BR": "Defesa Cozio, Variante Paulsen",
             "es": "Defensa Cozio, Variante Paulsen",
             "en-GB": "Cozio Defence, Paulsen Variation",
-            "es-ES": "Defensa Cozio, Variante Paulsen"
+            "es-ES": "Defensa Cozio, Variante Paulsen",
+            "pt-PT": "Defesa Cozio, Variante Paulsen"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
@@ -2963,7 +3177,8 @@
             "pt-BR": "Defesa Cozio, Gambito Tartakower",
             "es": "Defensa Cozio, Gambito Tartakower",
             "en-GB": "Cozio Defence, Tartakower Gambit",
-            "es-ES": "Defensa Cozio, Gambito Tartakower"
+            "es-ES": "Defensa Cozio, Gambito Tartakower",
+            "pt-PT": "Defesa Cozio, Gambito Tartakower"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
@@ -2978,7 +3193,8 @@
         "pt-BR": "Contragambito Espanhol",
         "es": "Contragambito Español",
         "en-GB": "Spanish Countergambit",
-        "es-ES": "Contragambito Español"
+        "es-ES": "Contragambito Español",
+        "pt-PT": "Contragambito Espanhol"
       },
       "lines": [
         {
@@ -2988,7 +3204,8 @@
             "pt-BR": "Contragambito Espanhol",
             "es": "Contragambito Español",
             "en-GB": "Spanish Countergambit",
-            "es-ES": "Contragambito Español"
+            "es-ES": "Contragambito Español",
+            "pt-PT": "Contragambito Espanhol"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Spanish Countergambit",
@@ -3002,7 +3219,8 @@
             "pt-BR": "Contragambito Espanhol, Gambito Harding",
             "es": "Contragambito Español, Gambito Harding",
             "en-GB": "Spanish Countergambit, Harding Gambit",
-            "es-ES": "Contragambito Español, Gambito Harding"
+            "es-ES": "Contragambito Español, Gambito Harding",
+            "pt-PT": "Contragambito Espanhol, Gambito Harding"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
@@ -3016,7 +3234,8 @@
             "pt-BR": "Contragambito Espanhol, Contragambito Harding, Gambito Fricke",
             "es": "Contragambito Español, Contragambito Harding, Gambito Fricke",
             "en-GB": "Spanish Countergambit, Harding Countergambit, Fricke Gambit",
-            "es-ES": "Contragambito Español, Contragambito Harding, Gambito Fricke"
+            "es-ES": "Contragambito Español, Contragambito Harding, Gambito Fricke",
+            "pt-PT": "Contragambito Espanhol, Contragambito Harding, Gambito Fricke"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
@@ -3031,7 +3250,8 @@
         "pt-BR": "Defesa Alapin",
         "es": "Defensa Alapin",
         "en-GB": "Alapin Defence",
-        "es-ES": "Defensa Alapin"
+        "es-ES": "Defensa Alapin",
+        "pt-PT": "Defesa Alapin"
       },
       "lines": [
         {
@@ -3041,7 +3261,8 @@
             "pt-BR": "Defesa Alapin",
             "es": "Defensa Alapin",
             "en-GB": "Alapin Defence",
-            "es-ES": "Defensa Alapin"
+            "es-ES": "Defensa Alapin",
+            "pt-PT": "Defesa Alapin"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Alapin Defense",
@@ -3055,7 +3276,8 @@
             "pt-BR": "Defesa Alapin, Gambito Alapin",
             "es": "Defensa Alapin, Gambito Alapin",
             "en-GB": "Alapin Defence, Alapin Gambit",
-            "es-ES": "Defensa Alapin, Gambito Alapin"
+            "es-ES": "Defensa Alapin, Gambito Alapin",
+            "pt-PT": "Defesa Alapin, Gambito Alapin"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
@@ -3070,7 +3292,8 @@
         "pt-BR": "Variante Bird",
         "es": "Variante Bird",
         "en-GB": "Bird Variation",
-        "es-ES": "Variante Bird"
+        "es-ES": "Variante Bird",
+        "pt-PT": "Variante Bird"
       },
       "lines": [
         {
@@ -3080,7 +3303,8 @@
             "pt-BR": "Variante Bird",
             "es": "Variante Bird",
             "en-GB": "Bird Variation",
-            "es-ES": "Variante Bird"
+            "es-ES": "Variante Bird",
+            "pt-PT": "Variante Bird"
           },
           "eco": "C61",
           "opening": "Ruy Lopez: Bird Variation",
@@ -3094,7 +3318,8 @@
             "pt-BR": "Variante Bird, Variante Paulsen",
             "es": "Variante Bird, Variante Paulsen",
             "en-GB": "Bird Variation, Paulsen Variation",
-            "es-ES": "Variante Bird, Variante Paulsen"
+            "es-ES": "Variante Bird, Variante Paulsen",
+            "pt-PT": "Variante Bird, Variante Paulsen"
           },
           "eco": "C61",
           "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
@@ -3109,7 +3334,8 @@
         "pt-BR": "Defesa do Fianqueto",
         "es": "Defensa del Fianchetto",
         "en-GB": "Fianchetto Defence",
-        "es-ES": "Defensa del Fianchetto"
+        "es-ES": "Defensa del Fianchetto",
+        "pt-PT": "Defesa do Fianqueto"
       },
       "lines": [
         {
@@ -3119,7 +3345,8 @@
             "pt-BR": "Defesa do Fianqueto",
             "es": "Defensa del Fianchetto",
             "en-GB": "Fianchetto Defence",
-            "es-ES": "Defensa del Fianchetto"
+            "es-ES": "Defensa del Fianchetto",
+            "pt-PT": "Defesa do Fianqueto"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Fianchetto Defense",
@@ -3133,7 +3360,8 @@
             "pt-BR": "Defesa do Fianqueto, Gambito Kevitz",
             "es": "Defensa del Fianchetto, Gambito Kevitz",
             "en-GB": "Fianchetto Defence, Kevitz Gambit",
-            "es-ES": "Defensa del Fianchetto, Gambito Kevitz"
+            "es-ES": "Defensa del Fianchetto, Gambito Kevitz",
+            "pt-PT": "Defesa do Fianqueto, Gambito Kevitz"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
@@ -3148,7 +3376,8 @@
         "pt-BR": "Armadilha da Arca de Noé",
         "es": "Trampa del Arca de Noé",
         "en-GB": "Noah's Ark Trap",
-        "es-ES": "Trampa del Arca de Noé"
+        "es-ES": "Trampa del Arca de Noé",
+        "pt-PT": "Armadilha da Arca de Noé"
       },
       "lines": [
         {
@@ -3158,7 +3387,8 @@
             "pt-BR": "Armadilha da Arca de Noé",
             "es": "Trampa del Arca de Noé",
             "en-GB": "Noah's Ark Trap",
-            "es-ES": "Trampa del Arca de Noé"
+            "es-ES": "Trampa del Arca de Noé",
+            "pt-PT": "Armadilha da Arca de Noé"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Noah's Ark Trap",
@@ -3172,7 +3402,8 @@
             "pt-BR": "Armadilha da Arca de Noé",
             "es": "Trampa del Arca de Noé",
             "en-GB": "Noah's Ark Trap",
-            "es-ES": "Trampa del Arca de Noé"
+            "es-ES": "Trampa del Arca de Noé",
+            "pt-PT": "Armadilha da Arca de Noé"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Noah's Ark Trap",
@@ -3187,7 +3418,8 @@
         "pt-BR": "Defesa Berlinense Aberta",
         "es": "Defensa Berlinesa Abierta",
         "en-GB": "Open Berlin Defence",
-        "es-ES": "Defensa Berlinesa Abierta"
+        "es-ES": "Defensa Berlinesa Abierta",
+        "pt-PT": "Defesa Berlinense Aberta"
       },
       "lines": [
         {
@@ -3197,7 +3429,8 @@
             "pt-BR": "Defesa Berlinense Aberta, Variante Showalter",
             "es": "Defensa Berlinesa Abierta, Variante Showalter",
             "en-GB": "Open Berlin Defence, Showalter Variation",
-            "es-ES": "Defensa Berlinesa Abierta, Variante Showalter"
+            "es-ES": "Defensa Berlinesa Abierta, Variante Showalter",
+            "pt-PT": "Defesa Berlinense Aberta, Variante Showalter"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Open Berlin Defense, Showalter Variation",
@@ -3211,7 +3444,8 @@
             "pt-BR": "Defesa Berlinense Aberta, Variante l'Hermet",
             "es": "Defensa Berlinesa Abierta, Variante l'Hermet",
             "en-GB": "Open Berlin Defence, l'Hermet Variation",
-            "es-ES": "Defensa Berlinesa Abierta, Variante l'Hermet"
+            "es-ES": "Defensa Berlinesa Abierta, Variante l'Hermet",
+            "pt-PT": "Defesa Berlinense Aberta, Variante l'Hermet"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Open Berlin Defense, l'Hermet Variation",
@@ -3226,7 +3460,8 @@
         "pt-BR": "Defesa Steinitz Adiada",
         "es": "Defensa Steinitz Diferida",
         "en-GB": "Steinitz Defence Deferred",
-        "es-ES": "Defensa Steinitz Diferida"
+        "es-ES": "Defensa Steinitz Diferida",
+        "pt-PT": "Defesa Steinitz Adiada"
       },
       "lines": [
         {
@@ -3236,7 +3471,8 @@
             "pt-BR": "Defesa Steinitz Adiada, Variante Lipnitsky",
             "es": "Defensa Steinitz Diferida, Variante Lipnitsky",
             "en-GB": "Steinitz Defence Deferred, Lipnitsky Variation",
-            "es-ES": "Defensa Steinitz Diferida, Variante Lipnitsky"
+            "es-ES": "Defensa Steinitz Diferida, Variante Lipnitsky",
+            "pt-PT": "Defesa Steinitz Adiada, Variante Lipnitsky"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Steinitz Defense Deferred, Lipnitsky Variation",
@@ -3250,7 +3486,8 @@
             "pt-BR": "Defesa Steinitz Adiada, Variante Boleslavsky",
             "es": "Defensa Steinitz Diferida, Variante Boleslavsky",
             "en-GB": "Steinitz Defence Deferred, Boleslavsky Variation",
-            "es-ES": "Defensa Steinitz Diferida, Variante Boleslavsky"
+            "es-ES": "Defensa Steinitz Diferida, Variante Boleslavsky",
+            "pt-PT": "Defesa Steinitz Adiada, Variante Boleslavsky"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Steinitz Defense Deferred, Boleslavsky Variation",
@@ -3268,7 +3505,8 @@
         "pt-BR": "Defesa Bird Adiada",
         "es": "Defensa Bird Diferida",
         "en-GB": "Bird's Defence Deferred",
-        "es-ES": "Defensa Bird Diferida"
+        "es-ES": "Defensa Bird Diferida",
+        "pt-PT": "Defesa Bird Adiada"
       },
       "eco": "C70",
       "opening": "Ruy Lopez: Bird's Defense Deferred",
@@ -3282,7 +3520,8 @@
         "pt-BR": "Gambito Brentano",
         "es": "Gambito Brentano",
         "en-GB": "Brentano Gambit",
-        "es-ES": "Gambito Brentano"
+        "es-ES": "Gambito Brentano",
+        "pt-PT": "Gambito Brentano"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Brentano Gambit",
@@ -3296,7 +3535,8 @@
         "pt-BR": "Variante Brix",
         "es": "Variante Brix",
         "en-GB": "Brix Variation",
-        "es-ES": "Variante Brix"
+        "es-ES": "Variante Brix",
+        "pt-PT": "Variante Brix"
       },
       "eco": "C78",
       "opening": "Ruy Lopez: Brix Variation",
@@ -3310,7 +3550,8 @@
         "pt-BR": "Variante Búlgara",
         "es": "Variante Búlgara",
         "en-GB": "Bulgarian Variation",
-        "es-ES": "Variante Búlgara"
+        "es-ES": "Variante Búlgara",
+        "pt-PT": "Variante Búlgara"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Bulgarian Variation",
@@ -3324,7 +3565,8 @@
         "pt-BR": "Contragambito Central",
         "es": "Contragambito Central",
         "en-GB": "Central Countergambit",
-        "es-ES": "Contragambito Central"
+        "es-ES": "Contragambito Central",
+        "pt-PT": "Contragambito Central"
       },
       "eco": "C78",
       "opening": "Ruy Lopez: Central Countergambit",
@@ -3338,7 +3580,8 @@
         "pt-BR": "Defesa Berlinense Fechada, Variante Chigorin",
         "es": "Defensa Berlinesa Cerrada, Variante Chigorin",
         "en-GB": "Closed Berlin Defence, Chigorin Variation",
-        "es-ES": "Defensa Berlinesa Cerrada, Variante Chigorin"
+        "es-ES": "Defensa Berlinesa Cerrada, Variante Chigorin",
+        "pt-PT": "Defesa Berlinense Fechada, Variante Chigorin"
       },
       "eco": "C66",
       "opening": "Ruy Lopez: Closed Berlin Defense, Chigorin Variation",
@@ -3352,7 +3595,8 @@
         "pt-BR": "Troca, Variante Alekhine",
         "es": "Cambio, Variante Alekhine",
         "en-GB": "Exchange, Alekhine Variation",
-        "es-ES": "Cambio, Variante Alekhine"
+        "es-ES": "Cambio, Variante Alekhine",
+        "pt-PT": "Troca, Variante Alekhine"
       },
       "eco": "C68",
       "opening": "Ruy Lopez: Exchange, Alekhine Variation",
@@ -3366,7 +3610,8 @@
         "pt-BR": "Ataque Halloween",
         "es": "Ataque Halloween",
         "en-GB": "Halloween Attack",
-        "es-ES": "Ataque Halloween"
+        "es-ES": "Ataque Halloween",
+        "pt-PT": "Ataque Halloween"
       },
       "eco": "C65",
       "opening": "Ruy Lopez: Halloween Attack",
@@ -3380,7 +3625,8 @@
         "pt-BR": "Variante Lucena",
         "es": "Variante Lucena",
         "en-GB": "Lucena Variation",
-        "es-ES": "Variante Lucena"
+        "es-ES": "Variante Lucena",
+        "pt-PT": "Variante Lucena"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Lucena Variation",
@@ -3394,7 +3640,8 @@
         "pt-BR": "Ruy López",
         "es": "Ruy López",
         "en-GB": "Ruy Lopez",
-        "es-ES": "Ruy López"
+        "es-ES": "Ruy López",
+        "pt-PT": "Ruy López"
       },
       "eco": "C60",
       "opening": "Ruy Lopez",
@@ -3408,7 +3655,8 @@
         "pt-BR": "Variante Nürnberg",
         "es": "Variante Nürnberg",
         "en-GB": "Nürnberg Variation",
-        "es-ES": "Variante Nürnberg"
+        "es-ES": "Variante Nürnberg",
+        "pt-PT": "Variante Nürnberg"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Nürnberg Variation",
@@ -3422,7 +3670,8 @@
         "pt-BR": "Defesa Pollock",
         "es": "Defensa Pollock",
         "en-GB": "Pollock Defence",
-        "es-ES": "Defensa Pollock"
+        "es-ES": "Defensa Pollock",
+        "pt-PT": "Defesa Pollock"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Pollock Defense",
@@ -3436,7 +3685,8 @@
         "pt-BR": "Variante Rabinovich",
         "es": "Variante Rabinovich",
         "en-GB": "Rabinovich Variation",
-        "es-ES": "Variante Rabinovich"
+        "es-ES": "Variante Rabinovich",
+        "pt-PT": "Variante Rabinovich"
       },
       "eco": "C78",
       "opening": "Ruy Lopez: Rabinovich Variation",
@@ -3450,7 +3700,8 @@
         "pt-BR": "Variante da Retirada",
         "es": "Variante de la Retirada",
         "en-GB": "Retreat Variation",
-        "es-ES": "Variante de la Retirada"
+        "es-ES": "Variante de la Retirada",
+        "pt-PT": "Variante da Retirada"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Retreat Variation",
@@ -3464,7 +3715,8 @@
         "pt-BR": "Gambito Rotary-Albany",
         "es": "Gambito Rotary-Albany",
         "en-GB": "Rotary-Albany Gambit",
-        "es-ES": "Gambito Rotary-Albany"
+        "es-ES": "Gambito Rotary-Albany",
+        "pt-PT": "Gambito Rotary-Albany"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Rotary-Albany Gambit",
@@ -3478,7 +3730,8 @@
         "pt-BR": "Variante Vinogradov",
         "es": "Variante Vinogradov",
         "en-GB": "Vinogradov Variation",
-        "es-ES": "Variante Vinogradov"
+        "es-ES": "Variante Vinogradov",
+        "pt-PT": "Variante Vinogradov"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Vinogradov Variation",
@@ -3492,7 +3745,8 @@
         "pt-BR": "Ataque Wormald, Variante Grünfeld",
         "es": "Ataque Wormald, Variante Grünfeld",
         "en-GB": "Wormald Attack, Grünfeld Variation",
-        "es-ES": "Ataque Wormald, Variante Grünfeld"
+        "es-ES": "Ataque Wormald, Variante Grünfeld",
+        "pt-PT": "Ataque Wormald, Variante Grünfeld"
       },
       "eco": "C77",
       "opening": "Ruy Lopez: Wormald Attack, Grünfeld Variation",

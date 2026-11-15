@@ -22,6 +22,7 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
             "Español (Latinoamérica)",
             "Español (España)",
             "Português (Brasil)",
+            "Português (Portugal)",
         ]
     )
     expect(page.locator("#locale-picker")).to_have_value("en")

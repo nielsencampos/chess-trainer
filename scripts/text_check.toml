@@ -22,7 +22,7 @@ all = [
     # The Thanks section of the About page.
     "Niklas", "Fiekas", "Hernandez", "Marroquin", "Badrap",
     # The language links at the top of each document.
-    "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España",
+    "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal",
 ]
 en = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
@@ -41,6 +41,12 @@ pt-BR = [
     "backend",  # the author's own words on the About page
     "issue",  # GitHub's word, linked
     "python", "chess", "result",  # the names python-chess and @badrap/result
+]
+pt-PT = [
+    "streamer", "streamers", "azeri", "FPX", "pt", "min", "US", "Hans",
+    "backend",  # the author's own words on the About page
+    "python", "chess", "result",  # the names python-chess and @badrap/result
+    "Searching", "for",  # the film's original title
 ]
 es = [
     "streamer", "streamers", "premovimiento", "premovimientos", "Premovimiento",
@@ -85,6 +91,16 @@ pt-BR = [
     "VERB_COMMA_CONJUNCTION",
     "NUMBER_ABREVIATION",  # "Nº" on the scoresheet
 ]
+pt-PT = [
+    "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+    "PT_BARBARISMS_REPLACE_APP", "PT_BARBARISMS_REPLACE_RATING", "PT_BARBARISMS_REPLACE_SCRIPT",
+    # "Bot", "site", "online" and "internet" are the usual words in Portugal, set in plain type.
+    "BARBARISMS_PT_PT_V3", "PT_BARBARISMS_REPLACE_SITE",
+    # Style suggestions, not errors.
+    "PT_WORDINESS_REPLACE_AINDA_ESTÁ", "PT_WORDINESS_REPLACE_AINDA_ESTÃO",
+    "PT_WORDINESS_REPLACE_POR_CAUSA_DO", "PT_WORDINESS_REPLACE_A_NÃO_SER_QUE", "DEPOIS_DE_APÓS",
+    "VERB_COMMA_CONJUNCTION",
+]
 es = []
 es-ES = []
 
@@ -115,6 +131,14 @@ pt-BR = [
     { text = "Este", rule = "AO90_CARDINAL_POINTS_CASING" },  # macOS's "Sobre Este Mac"
     { text = "to", rule = "DIACRITICS" },  # quoting the English error "Failed to execute"
     { text = "onde", rule = "CONFUSÃO_AONDE_ONDE" },  # "Para onde vim", the author's own words
+    { text = "Português", rule = "GENTILICOS_LINGUAS" },  # the language links: Português (Brasil) · Português (Portugal)
+]
+pt-PT = [
+    { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
+    { text = "esperado", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "Nf3 .", rule = "SPACE_BEFORE_PUNCTUATION2" },
+    { text = ", Anular", rule = "UPPERCASE_AFTER_COMMA" },  # the "Anular lance" button
+    { text = "Português", rule = "GENTILICOS_LINGUAS" },  # the language links: Português (Brasil) · Português (Portugal)
 ]
 es = [
     { text = "se", rule = "UPPERCASE_SENTENCE_START" },
