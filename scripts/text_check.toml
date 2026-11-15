@@ -22,7 +22,7 @@ all = [
     # The Thanks section of the About page.
     "Niklas", "Fiekas", "Hernandez", "Marroquin", "Badrap",
     # The language links at the top of each document.
-    "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal",
+    "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch",
 ]
 en = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
@@ -41,6 +41,13 @@ pt-BR = [
     "backend",  # the author's own words on the About page
     "issue",  # GitHub's word, linked
     "python", "chess", "result",  # the names python-chess and @badrap/result
+]
+de = [
+    "Streamer", "Youtuber", "Creator", "Campos", "ECO", "Partieformular", "FIDE-ID", "Elo-Zahl",
+    "FIDE-Meisterin", "FIDE-Weltmeister", "Merida-Figuren", "python-chess", "no", "Barbosa",
+    "Backend",  # the author's own words on the About page
+    "python", "chess", "result",  # the names python-chess and @badrap/result
+    "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
 ]
 pt-PT = [
     "streamer", "streamers", "azeri", "FPX", "pt", "min", "US", "Hans",
@@ -103,6 +110,7 @@ pt-PT = [
 ]
 es = []
 es-ES = []
+de = []
 
 [ignore]
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.
@@ -156,4 +164,14 @@ es-ES = [
     { text = "Maestro", rule = "ES_QUESTION_MARK" },
     { text = "Hernandez", rule = "ES_SIMPLE_REPLACE_SIMPLE_HERNANDEZ" },  # his name, as he signs it
     { rule = "PHRASE_REPETITION", text = "[chess.com](https://www.chess.com/) · [youtube.com/@chess](https://www.youtube.com/@chess) ·" },  # "Oh no, my queen!" is quoted in English
+]
+de = [
+    { text = "Nf3", rule = "DE_SENTENCE_WHITESPACE" },
+    { text = "erwartet", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "Theorie", rule = "SENT_START_SIN_PLU" },  # "Theorie verlassen in Zug {move}", a chip
+    { text = "Sofort", rule = "DE_CASE" },  # the "Sofort" option, named in a sentence
+    { text = "Internationaler", rule = "DE_CASE" },  # the title Internationaler Meister
+    { text = "Internationale", rule = "DE_CASE" },  # the title Internationale Meisterin der Frauen
+    { text = "Das", rule = "DE_CASE" },  # the film "Das Königsspiel"
+    { text = "Roberto Molina", rule = "DE_MULTITOKEN_SPELLING_TWO" },  # his name, in a link
 ]

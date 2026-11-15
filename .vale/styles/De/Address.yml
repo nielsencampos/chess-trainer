@@ -1,0 +1,14 @@
+# de speaks to the reader as "du", never "Sie": no capitalized Sie, Ihnen or Ihr forms.
+extends: existence
+message: "Use 'du' as the form of address, not '%s'."
+level: error
+ignorecase: false
+tokens:
+  - Sie
+  - Ihnen
+  - Ihr
+  - Ihre
+  - Ihren
+  - Ihrem
+  - Ihrer
+  - Ihres

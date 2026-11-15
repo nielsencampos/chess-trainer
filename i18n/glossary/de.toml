@@ -1,0 +1,531 @@
+# Chess glossary: German (brief §8). Machine-made and unreviewed: the terms of en.toml, each
+# from the German Wikipedia (`source`) or, when no page names it, `machine = true` with a `note`.
+# `avoid` lists the words the UI must not use for the term. The name templates use `{name-}`,
+# the proper name with its words joined by hyphens ("Max-Lange-Angriff"). Every glossary has the
+# terms of en.toml (#32).
+
+# English words of the opening names this language translates: a glossary rule never
+# keeps them as proper names, so names with one go to machine translation (brief §8).
+translate = [
+    "Accelerated", "Adorjan", "Advance", "Aged", "Alatortsev", "Alekhine", "Alien", "Amazon",
+    "American", "Amsterdam", "Anderssen's", "Antoshin", "Apocalypse", "Arctic", "Argentine",
+    "Argentinian", "Ark", "Arkhangelsk", "Armenian", "Attack", "Australian", "Austrian", "Averbakh",
+    "Baltic", "Banker", "Basque", "Bastrikov", "Battery", "Bavarian", "Bayonet", "Beginner's",
+    "Belgrade", "Belyavsky", "Berlin", "Big", "Bird's", "Bishop", "Bishop's", "Blackmar's",
+    "Blockade", "Bobotsov", "Boleslavsky", "Botvinnik", "Bouncing", "Brick", "Brigg's", "Brussels",
+    "Budapest", "Bugayev", "Bulgarian", "Carlsbad", "Catalan", "Cavalry", "Center", "Central",
+    "Chameleon", "Chebanenko", "Cheese", "Chekhover", "Chelyabinsk", "Chigorin", "Chinese",
+    "Chistyakov", "Clam", "Clamp", "Closed", "Cobra", "Cologne", "Compromised", "Copenhagen",
+    "Corkscrew", "Cormorant", "Counterthrust", "Crab", "Crawly", "Creepy", "Crocodile", "Czech",
+    "Danish", "Declined", "Defensive", "Deferred", "Delayed", "Development", "Dinic", "Doll",
+    "Double", "Dracula", "Dragon", "Drazic", "Dresden", "Drill", "Drunken", "Duck", "Dutch", "Duz",
+    "Dynamic", "East", "Edge", "Edinburgh", "Ekstrom", "Elbow", "Elephant", "Endgame", "England",
+    "English", "Exchange", "Farago", "Fianchetto", "Fingerslip", "Finnish", "First", "Fishing",
+    "Flexible", "Florentine", "Fluid", "Forcing", "Forgacs", "Forgotten", "Four", "Fox", "French",
+    "Fried", "From's", "Full", "Fully", "Geller's", "Gent", "German", "Gibbon", "Giraffe",
+    "Gligoric", "Global", "Gossip", "Goteborg", "Great", "Grigoriev", "Halasz", "Hammer", "Hawk",
+    "Hay", "Head", "Hedgehog", "Herrstrom", "Hillbilly", "Hippopotamus", "Horsefly", "Hungarian",
+    "Icelandic", "Improved", "Indian", "Inner", "Intermezzo", "Irish", "Italian", "Ivanchuk",
+    "Ivanov", "Kaidanov", "Kalashnikov", "Kangaroo", "Karpov", "Kasparov", "Katalimov", "Kazakh",
+    "Kholmov", "Khotimirsky", "Kiddie", "King's", "Kingfisher", "Kingside", "Knight", "Knight's",
+    "Knights", "Kondratiyev", "Korchnoi", "Kotov", "Kramnik's", "Kupreichik", "Latvian", "Lemming",
+    "Leningrad", "Lesser", "Levenfish", "Levitsky", "Lion", "Lipnitsky", "Lisbon", "Lisitsyn",
+    "Lithuanian", "Liver", "Lizard", "Ljubojevic", "Lobster", "London", "Long", "Lusophobe",
+    "Lutikov", "Mad", "Main", "Makogonov", "Malaniuk", "Maric", "Martian", "Matanovic", "Meadow",
+    "Mediterranean", "Mengarini's", "Mexican", "Millennium", "Modern", "Mongoose", "Morozevich",
+    "Moscow", "Mosquito", "Napoleon", "Nemeth", "Neo", "Netherlands", "New", "Nightingale",
+    "Noah's", "Normal", "Norwegian", "Novosibirsk", "Nyezhmetdinov", "Old", "Open", "Opocensky",
+    "Original", "Orthodox", "Outflank", "Paleface", "Panov", "Paris", "Patrick's", "Pawns",
+    "Penguin", "Perseus", "Petrosian", "Petrov", "Petrov's", "Pin", "Podebrady", "Pole", "Polish",
+    "Polovodin", "Polugaevsky", "Ponomariov", "Porcupine", "Portuguese", "Positional", "Prague",
+    "Primitive", "Provincial", "Przepiorka", "Psakhis", "Pseudo", "Pterodactyl", "Push", "Pyrenees",
+    "Queen's", "Queenside", "Quiet", "Rabinovich", "Ragozin", "Rare", "Rashkovsky", "Rat", "Rauzer",
+    "Retreat", "Reversed", "Riumin", "Romanian", "Romanishin", "Romanovsky", "Rooks", "Russian",
+    "Saragossa", "Scandinavian", "Schwarz's", "Scotch", "Second", "Semi", "Seville", "Shabalov",
+    "Sharp", "Sherbakov", "Shirov", "Short", "Shuffle", "Shumov", "Shy", "Siberian", "Sicilian",
+    "Simagin's", "Simul", "Six", "Slav", "Slow", "Small", "Smyslov", "Snail", "Snake", "Sodium",
+    "Sokolov", "Sokolov's", "Sokolsky", "Sozin", "Spanish", "Spassky", "Spike", "Stahlberg",
+    "Standard", "Stockholm", "Sveshnikov", "Swap", "Swedish", "Swiss", "Symmetric", "Symmetrical",
+    "Symmetry", "Szabo", "Taimanov", "Tashkent", "Tchigorin", "Three", "Timman's", "Toilet",
+    "Tolush", "Tortoise", "Totsky", "Tour", "Traditional", "Transpositional", "Trifunovic", "Two",
+    "Ukrainian", "Ultra", "Ulysses", "Unicorn", "Urusov", "Vaganian", "Valencia", "Valencian",
+    "Velimirovic", "Venezolana", "Venice", "Veresov", "Vienna", "Viennese", "Vinogradov",
+    "Voronezh", "Vukovic", "Vulture", "Warsaw", "Wasp", "West", "Wild", "Wind", "Wing", "Woodchuck",
+    "Wuss", "Yepishin", "Yepishin's", "Yerevan", "Yugoslav", "Yusupov", "Zaitsev", "Zhuravlev",
+    "Zurich",
+]
+
+[[terms]]
+term = "chess"
+translation = "Schach"
+source = "https://de.wikipedia.org/wiki/Schach"
+
+[[terms]]
+term = "piece"
+translation = "Figur"
+source = "https://de.wikipedia.org/wiki/Schachfigur"
+
+[[terms]]
+term = "king"
+translation = "König"
+source = "https://de.wikipedia.org/wiki/König_(Schach)"
+
+[[terms]]
+term = "queen"
+translation = "Dame"
+source = "https://de.wikipedia.org/wiki/Dame_(Schach)"
+avoid = ["Königin"]
+
+[[terms]]
+term = "rook"
+translation = "Turm"
+source = "https://de.wikipedia.org/wiki/Turm_(Schach)"
+
+[[terms]]
+term = "pawn"
+translation = "Bauer"
+source = "https://de.wikipedia.org/wiki/Bauer_(Schach)"
+
+[[terms]]
+term = "board"
+translation = "Brett"
+source = "https://de.wikipedia.org/wiki/Schachbrett"
+
+[[terms]]
+term = "square"
+translation = "Feld"
+source = "https://de.wikipedia.org/wiki/Schachbrett"
+note = "The article calls the 64 squares \"Felder\"."
+
+[[terms]]
+term = "White"
+translation = "Weiß"
+source = "https://de.wikipedia.org/wiki/Schach"
+note = "The article calls the players Weiß and Schwarz."
+
+[[terms]]
+term = "Black"
+translation = "Schwarz"
+source = "https://de.wikipedia.org/wiki/Schach"
+note = "The article calls the players Weiß and Schwarz."
+
+[[terms]]
+term = "game"
+translation = "Partie"
+source = "https://de.wikipedia.org/wiki/Schach"
+note = "A game of chess is a \"Partie\"; \"Spiel\" is chess itself. No avoid list: \"spiel\" is also the imperative of \"spielen\"."
+
+[[terms]]
+term = "move"
+translation = "Zug"
+source = "https://de.wikipedia.org/wiki/Spielzug"
+avoid = ["Bewegung"]
+
+[[terms]]
+term = "ply"
+translation = "Halbzug"
+source = "https://de.wikipedia.org/wiki/Halbzug"
+
+[[terms]]
+term = "premove"
+translation = "Vorauszug"
+machine = true
+note = "No Wikipedia page names it. The word of the German Lichess."
+avoid = ["Premove"]
+
+[[terms]]
+term = "take back"
+translation = "Zug zurücknehmen"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "castling"
+translation = "Rochade"
+source = "https://de.wikipedia.org/wiki/Rochade"
+
+[[terms]]
+term = "check"
+translation = "Schach"
+source = "https://de.wikipedia.org/wiki/Schachgebot"
+
+[[terms]]
+term = "checkmate"
+translation = "Schachmatt"
+source = "https://de.wikipedia.org/wiki/Schachmatt"
+
+[[terms]]
+term = "stalemate"
+translation = "Patt"
+source = "https://de.wikipedia.org/wiki/Patt"
+
+[[terms]]
+term = "draw"
+translation = "Remis"
+source = "https://de.wikipedia.org/wiki/Remis"
+
+[[terms]]
+term = "resign"
+translation = "aufgeben"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "insufficient material"
+translation = "ungenügendes Material"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "dreifache Stellungswiederholung"
+source = "https://de.wikipedia.org/wiki/Stellungswiederholung"
+
+[[terms]]
+term = "fivefold repetition"
+translation = "fünffache Stellungswiederholung"
+machine = true
+note = "Follows \"dreifache Stellungswiederholung\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "50-Züge-Regel"
+source = "https://de.wikipedia.org/wiki/50-Züge-Regel"
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "75-Züge-Regel"
+machine = true
+note = "Follows \"50-Züge-Regel\"."
+
+[[terms]]
+term = "opening"
+translation = "Eröffnung"
+source = "https://de.wikipedia.org/wiki/Eröffnung_(Schach)"
+
+[[terms]]
+term = "variation"
+translation = "Variante"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "line"
+translation = "Abspiel"
+machine = true
+note = "No Wikipedia page names it. Not \"Linie\", which is a file of the board in German."
+avoid = ["Linie", "Linien"]
+
+[[terms]]
+term = "theory"
+translation = "Theorie"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "book move"
+translation = "Buchzug"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "deviation"
+translation = "Abweichung"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "Schachprogramm"
+source = "https://de.wikipedia.org/wiki/Schachprogramm"
+note = "The article says \"Schach-Engine\" too; the UI says \"Schachprogramm\"."
+avoid = ["Engine"]
+
+[[terms]]
+term = "computer"
+translation = "Computer"
+source = "https://de.wikipedia.org/wiki/Computer"
+
+[[terms]]
+term = "evaluation"
+translation = "Bewertung"
+source = "https://de.wikipedia.org/wiki/Bewertungsfunktion"
+
+[[terms]]
+term = "analysis"
+translation = "Analyse"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "brillanter Zug"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "bester Zug"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "starker Zug"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "Ungenauigkeit"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "Fehler"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "verpasste Chance"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "Patzer"
+source = "https://de.wikipedia.org/wiki/Patzer_(Schach)"
+
+[[terms]]
+term = "time control"
+translation = "Bedenkzeit"
+source = "https://de.wikipedia.org/wiki/Bedenkzeit"
+
+[[terms]]
+term = "chess clock"
+translation = "Schachuhr"
+source = "https://de.wikipedia.org/wiki/Schachuhr"
+
+[[terms]]
+term = "increment"
+translation = "Inkrement"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "delay"
+translation = "Verzögerung"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "bullet"
+translation = "Bullet"
+source = "https://de.wikipedia.org/wiki/Bullet-Schach"
+
+[[terms]]
+term = "blitz"
+translation = "Blitz"
+source = "https://de.wikipedia.org/wiki/Blitzschach"
+
+[[terms]]
+term = "rapid"
+translation = "Schnellschach"
+source = "https://de.wikipedia.org/wiki/Schnellschach"
+
+[[terms]]
+term = "classical"
+translation = "Klassisch"
+machine = true
+note = "No Wikipedia page; a group of time controls in New Game."
+
+[[terms]]
+term = "scoresheet"
+translation = "Partieformular"
+source = "https://de.wikipedia.org/wiki/Partieformular"
+
+[[terms]]
+term = "arbiter"
+translation = "Schiedsrichter"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "rating"
+translation = "Elo-Zahl"
+source = "https://de.wikipedia.org/wiki/Elo-Zahl"
+
+[[terms]]
+term = "grandmaster"
+translation = "Großmeister"
+source = "https://de.wikipedia.org/wiki/Großmeister_(Schach)"
+
+[[terms]]
+term = "International Master"
+translation = "Internationaler Meister"
+source = "https://de.wikipedia.org/wiki/Internationaler_Meister"
+
+[[terms]]
+term = "Woman International Master"
+translation = "Internationale Meisterin der Frauen"
+source = "https://de.wikipedia.org/wiki/Internationaler_Meister"
+note = "The article covers the women's title too."
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "FIDE-Meisterin der Frauen"
+source = "https://de.wikipedia.org/wiki/FIDE-Meister"
+note = "The article covers the women's title too."
+
+[[terms]]
+term = "Chess960"
+translation = "Chess960"
+source = "https://de.wikipedia.org/wiki/Schach960"
+note = "Wikipedia's title is \"Schach960\"; Chess960 is the mode's name in the app."
+avoid = ["Schach960"]
+
+[[terms]]
+term = "correspondence chess"
+translation = "Fernschach"
+source = "https://de.wikipedia.org/wiki/Fernschach"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "Schacholympiade"
+source = "https://de.wikipedia.org/wiki/Schacholympiade"
+
+[[terms]]
+term = "touch-move rule"
+translation = "berührt – geführt"
+source = "https://de.wikipedia.org/wiki/Berührt-geführt-Regel"
+
+[[terms]]
+term = "capture"
+translation = "schlagen"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "tactics"
+translation = "Taktik"
+source = "https://de.wikipedia.org/wiki/Taktik_(Schach)"
+
+[[terms]]
+term = "strategy"
+translation = "Strategie"
+source = "https://de.wikipedia.org/wiki/Strategie_(Schach)"
+
+[[terms]]
+term = "sacrifice"
+translation = "Opfer"
+source = "https://de.wikipedia.org/wiki/Opfer_(Schach)"
+
+[[terms]]
+term = "trap"
+translation = "Falle"
+source = "https://de.wikipedia.org/wiki/Eröffnungsfalle"
+
+[[terms]]
+term = "gambit"
+translation = "Gambit"
+source = "https://de.wikipedia.org/wiki/Gambit"
+
+[[terms]]
+term = "King's Pawn"
+translation = "Königsbauer"
+source = "https://de.wikipedia.org/wiki/Bauer_(Schach)"
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "Damenbauer"
+source = "https://de.wikipedia.org/wiki/Bauer_(Schach)"
+
+[[terms]]
+term = "flank"
+translation = "Flügel"
+source = "https://de.wikipedia.org/wiki/Flügel_(Schach)"
+
+[[terms]]
+term = "starting position"
+translation = "Ausgangsstellung"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "Wunderkind"
+source = "https://de.wikipedia.org/wiki/Wunderkind"
+
+[[terms]]
+term = "{name} Variation"
+translation = "{name-}-Variante"
+source = "https://de.wikipedia.org/wiki/Najdorf-Variante"
+note = "For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "{name} Defense"
+translation = "{name-}-Verteidigung"
+source = "https://de.wikipedia.org/wiki/Aljechin-Verteidigung"
+note = "For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "{name-}-Gambit"
+source = "https://de.wikipedia.org/wiki/Evans-Gambit"
+note = "For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "{name-}-Gegengambit"
+source = "https://de.wikipedia.org/wiki/Falkbeer-Gegengambit"
+note = "For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "{name} Attack"
+translation = "{name-}-Angriff"
+source = "https://de.wikipedia.org/wiki/Max-Lange-Angriff"
+note = "For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "{name-}-Gegenangriff"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "{name} Opening"
+translation = "{name-}-Eröffnung"
+source = "https://de.wikipedia.org/wiki/Bird-Eröffnung"
+note = "For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "{name} System"
+translation = "{name-}-System"
+source = "https://de.wikipedia.org/wiki/Colle-System"
+note = "For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "{name} Line"
+translation = "{name-}-Abspiel"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "{name} Formation"
+translation = "{name-}-Aufbau"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "{name} Trap"
+translation = "{name-}-Falle"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name-} is the proper name, its words joined by hyphens."
+
+[[terms]]
+term = "Main Line"
+translation = "Hauptvariante"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8)."

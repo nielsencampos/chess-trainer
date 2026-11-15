@@ -2,7 +2,7 @@
 
 # Cómo se usa Chess Trainer
 
-[English (US)](HELP.md) · [English (UK)](HELP.en-GB.md) · [Português (Brasil)](HELP.pt-BR.md) · [Español (Latinoamérica)](HELP.es.md) · [Português (Portugal)](HELP.pt-PT.md)
+[English (US)](HELP.md) · [English (UK)](HELP.en-GB.md) · [Português (Brasil)](HELP.pt-BR.md) · [Español (Latinoamérica)](HELP.es.md) · [Português (Portugal)](HELP.pt-PT.md) · [Deutsch](HELP.de.md)
 
 Chess Trainer sirve para entrenar: practica tus aperturas contra un bot que juega tus líneas, continúa contra Stockfish cuando se acaba la teoría y repasa tus partidas. Todo funciona y se guarda en tu ordenador.
 

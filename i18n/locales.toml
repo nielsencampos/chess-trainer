@@ -61,3 +61,11 @@ languagetool = "pt-PT"
 vale = ["ChessTrainer", "PtPT", "GlossaryPtPT", "UI"]
 wikipedia = "pt"
 reviewed = false
+
+# German: machine-made, unreviewed, addressing the reader as "du".
+[locales.de]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "de-DE"
+vale = ["ChessTrainer", "De", "GlossaryDe", "UI"]
+reviewed = false
