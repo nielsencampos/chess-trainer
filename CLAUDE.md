@@ -30,7 +30,8 @@ uv run pytest                                     # unit + API, uses a fake engi
 uv run python -m catalog.validate                 # lines against the catalog, names coverage
 uv run codespell                                  # spelling of code, comments and docstrings
 scripts/languagetool.sh --background && uv run python scripts/check_text.py   # prose, needs Java 17+
-scripts/vale.sh                                   # style: product name, form of address, no English in the UI
+scripts/vale.sh                                   # style: product name, form of address, glossary terms, no English in the UI
+uv run python scripts/vale_glossary.py            # Vale styles from i18n/glossary, after a glossary change
 scripts/extract-stockfish.sh                      # copies the binary from the image to .cache/
 python3 docker/fetch_stockfish.py desktop         # or: this system's official binary into .cache/
 uv run python scripts/desktop_smoke.py build/dist/chess-trainer/chess-trainer   # after a desktop build

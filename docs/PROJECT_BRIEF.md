@@ -266,7 +266,7 @@ Rules:
 
 A test fails when a `web/i18n` file has no entry, or an entry has no file. The app does not start with a bad registry.
 
-**Glossary** (`i18n/glossary/{locale}.toml`): one `[[terms]]` row per chess term the UI uses (check, checkmate, castling, piece names, opening, variation, gambit, defense, accepted, declined and so on), with `term` (the English term), `translation`, and either `source` (the Wikipedia or Wikidata page it came from) or `machine = true` when no page has it, plus an optional `note` for a choice that was made and an optional `avoid`, the words the UI must not use for that term (an older translation, a synonym). Every glossary has the same terms as `en.toml`. The UI strings and the rule-built opening names of a language use its glossary terms.
+**Glossary** (`i18n/glossary/{locale}.toml`): one `[[terms]]` row per chess term the UI uses (check, checkmate, castling, piece names, opening, variation, gambit, defense, accepted, declined and so on), with `term` (the English term), `translation`, and either `source` (the Wikipedia or Wikidata page it came from) or `machine = true` when no page has it, plus an optional `note` for a choice that was made and an optional `avoid`, the words the UI must not use for that term (an older translation, a synonym). Every glossary has the same terms as `en.toml`. The UI strings and the rule-built opening names of a language use its glossary terms. `scripts/vale_glossary.py` turns each glossary's `avoid` words into a Vale style, `Glossary{Name}` (`GlossaryPtBR`), which the locale's `vale` styles and its docs section in `.vale.ini` list, so `scripts/vale.sh` fails when an avoided word comes back; a test fails while the styles are out of date.
 
 ```toml
 [[terms]]
