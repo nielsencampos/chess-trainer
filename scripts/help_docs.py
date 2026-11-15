@@ -9,14 +9,19 @@ strings; a test fails while the files are out of date.
 """
 
 import json
+import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+from app.locales import load_locales  # noqa: E402  (after the path to the repository)
+
 WEB = ROOT / "web"
 DOCS = ROOT / "docs"
-LOCALES = ["en", "pt-BR", "es"]  # English first: it is docs/HELP.md.
+# Every UI language, in the registry's order; English first: it is docs/HELP.md.
+LOCALES = [code for code in load_locales() if (WEB / "i18n" / f"{code}.json").is_file()]
 
 
 class _HelpOutline(HTMLParser):
@@ -289,7 +294,8 @@ def _link(link: dict[str, str], locale: str) -> str:
         str: The Markdown link.
     """
     wanted = locale.split("-")[0].lower()
-    lang = next((code for code in (wanted, "en", "pt", "es") if link.get(f"data-wiki-{code}")), "")
+    titles = [key.removeprefix("data-wiki-") for key in link if key.startswith("data-wiki-")]
+    lang = next((code for code in (wanted, "en", *titles) if link.get(f"data-wiki-{code}")), "")
     if not lang:
         return f"[{link['label']}]({link['href']})"
     path = f"{lang}.wikipedia.org/wiki/{link[f'data-wiki-{lang}'].replace(' ', '_')}"

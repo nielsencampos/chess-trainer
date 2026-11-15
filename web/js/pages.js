@@ -37,17 +37,21 @@ export function localizeHelpImages() {
 /**
  * Points each Wikipedia link of the About page at the article in the chosen language, falling
  * back to English and then to the other languages that have one, and keeps it following the
- * language. The link shows the article's address without the scheme.
+ * language. Each link has a `data-wiki-<lang>` title per Wikipedia that has the article, English
+ * always. The link shows the article's address without the scheme.
  * @returns {void}
  */
 export function localizeWikiLinks() {
-  for (const link of document.querySelectorAll("a[data-wiki-en], a[data-wiki-pt], a[data-wiki-es]")) {
+  for (const link of document.querySelectorAll("a[data-wiki-en]")) {
     const anchor = /** @type {HTMLAnchorElement} */ (link);
-    /** @type {Record<string, string | undefined>} */
-    const titles = { en: anchor.dataset.wikiEn, pt: anchor.dataset.wikiPt, es: anchor.dataset.wikiEs };
+    /** @type {Record<string, string>} */
+    const titles = {};
+    for (const [key, title] of Object.entries(anchor.dataset)) {
+      if (key.startsWith("wiki") && title) titles[key.slice(4).toLowerCase()] = title;
+    }
     localize(anchor, () => {
       const wanted = getLocale().split("-")[0].toLowerCase();
-      const lang = [wanted, "en", "pt", "es"].find((code) => titles[code]) ?? "en";
+      const lang = [wanted, "en", ...Object.keys(titles)].find((code) => titles[code]) ?? "en";
       const path = `${lang}.wikipedia.org/wiki/${(titles[lang] ?? "").replaceAll(" ", "_")}`;
       anchor.href = `https://${encodeURI(path)}`;
       anchor.textContent = path;
