@@ -18,14 +18,28 @@ const MAX_SEARCH_RESULTS_PER_FAMILY = 200;
  */
 
 /**
- * Whether a line matches a search, by name, catalog name, ECO or moves.
+ * Whether a name matches a search, as shown or in English.
+ * @param {Record<string, string> | null | undefined} names  The name by locale.
+ * @param {string} query  The search, lowercase.
+ * @returns {boolean} True if it matches.
+ */
+function nameMatches(names, query) {
+  return Boolean(names) && [localizedName(names), names.en].some((text) =>
+    text?.toLowerCase().includes(query),
+  );
+}
+
+/**
+ * Whether a line matches a search, by its or its subgroup's name, catalog name, ECO or moves.
  * @param {VariantInfo} variant  The line.
  * @param {string} query  The search, lowercase.
  * @returns {boolean} True if it matches.
  */
 function matches(variant, query) {
-  return [localizedName(variant.names), variant.opening, variant.eco, variant.pgn].some((text) =>
-    text?.toLowerCase().includes(query),
+  return (
+    nameMatches(variant.names, query) ||
+    nameMatches(variant.subgroup, query) ||
+    [variant.opening, variant.eco, variant.pgn].some((text) => text?.toLowerCase().includes(query))
   );
 }
 
@@ -160,7 +174,7 @@ export class OpeningTree {
    * @returns {VariantInfo[]} The lines.
    */
   shownVariants(repertoire) {
-    const familyMatches = localizedName(repertoire.names).toLowerCase().includes(this.query);
+    const familyMatches = nameMatches(repertoire.names, this.query);
     return this.query && !familyMatches
       ? repertoire.variants.filter((variant) => matches(variant, this.query))
       : repertoire.variants;

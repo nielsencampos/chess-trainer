@@ -8,6 +8,8 @@
 #   languagetool  its LanguageTool language code (scripts/check_text.py); left out, its texts
 #                 are skipped.
 #   vale          the Vale styles for its UI strings (scripts/vale.sh); left out, they are skipped.
+#   wikipedia     the language code of its Wikipedia, for the opening names (catalog/names.py);
+#                 left out, the code's first part in lowercase (pt-BR → pt).
 #   reviewed      true when the author reviews it; false for machine-translated languages.
 
 [locales.en]

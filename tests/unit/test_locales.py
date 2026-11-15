@@ -41,6 +41,24 @@ def test_optional_tools_can_be_left_out(tmp_path):
     assert locale.vale == ()
 
 
+def test_the_wikipedia_language_defaults_to_the_code_s_first_part(tmp_path):
+    """Without `wikipedia`, pt-BR uses pt.wikipedia.org; with it, the given code.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    path = tmp_path / "locales.toml"
+    pt_br = GOOD.replace("locales.en", "locales.pt-BR")
+    zh = GOOD.replace("locales.en", "locales.zh-Hans").replace(
+        "reviewed = true", 'reviewed = false\nwikipedia = "zh"'
+    )
+    path.write_text(GOOD + pt_br + zh, encoding="utf-8")
+    locales = load_locales(path)
+    assert locales["en"].wikipedia == "en"
+    assert locales["pt-BR"].wikipedia == "pt"
+    assert locales["zh-Hans"].wikipedia == "zh"
+
+
 @pytest.mark.parametrize(
     "change",
     [
@@ -50,6 +68,7 @@ def test_optional_tools_can_be_left_out(tmp_path):
         ("reviewed = true", 'reviewed = "yes"'),
         ("reviewed = true", 'reviewed = true\nfallback = "pt-BR"'),
         ("reviewed = true", 'reviewed = true\nvale = "UI"'),
+        ("reviewed = true", 'reviewed = true\nwikipedia = "PT BR"'),
         ("[locales.en]", "[locales.de]"),
     ],
 )

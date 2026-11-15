@@ -261,6 +261,7 @@ Rules:
 - `scripts`: the scripts its text needs, for the fonts: `latin`, `latin-ext`, `cyrillic`, `devanagari`, `cjk`, `arabic`, `hebrew`.
 - `languagetool`: its LanguageTool code for `scripts/check_text.py`. Left out, the language is skipped, not failed.
 - `vale`: the Vale styles for its UI strings in `scripts/vale.sh`, such as `["ChessTrainer", "PtBR", "UI"]`. Left out, the language is skipped.
+- `wikipedia`: the language code of its Wikipedia, for the opening names (`pt` for pt.wikipedia.org). Left out, the code's first part in lowercase (`pt-BR` → `pt`).
 - `reviewed`: true when the author reviews it (`en`, `pt-BR`, `es`); false for a machine-translated language.
 
 A test fails when a `web/i18n` file has no entry, or an entry has no file. The app does not start with a bad registry.
@@ -289,6 +290,15 @@ rule = true
 name = "Variação do Avanço, Variação Curta"
 machine = true
 ```
+
+**Filling a locale's names** (`uv run python -m catalog.names <locale>`, `catalog/names.py`). Every wave of languages runs the same tool. For each family, subgroup and line, in that order:
+1. *Wikipedia or Wikidata.* The English name is looked up on the English Wikipedia ("Caro-Kann Defense"; "Caro-Kann Defense, Advance Variation" for a subgroup or line), following redirects; a redirect to a section or to the family's own article, and a disambiguation page, count as no article. The item's article in the locale's Wikipedia gives the name, without a "(…)" ending, or else its Wikidata label; a subgroup or line drops the family's localized name before it. A name that matches the book's or the rule's ignoring case keeps their title case. The page is recorded as `source`.
+2. *The glossary*, segment by segment: the name is split at its commas, and every segment must be a glossary term or match a term with a `{name}` placeholder (`term = "{name} Variation"`, `translation = "Variação {name}"`), where `{name}` is a proper name kept as it is: capitalized words, none of them a glossary term. Recorded as `rule = true`. The run lists the texts it kept as proper names, to catch English words the glossary lacks ("Symmetrical").
+3. *Machine translation.* What is left goes to `i18n/machine/{locale}.toml`, one entry per name with its `en` and an empty `name`. Once filled in, the next run moves each into `openings/` with `machine = true` and removes it from the file.
+
+A name with a `source`, and any name of a reviewed locale, is never replaced without `--overwrite`: the run only records an origin that gives exactly that name (Wikipedia ignoring case, or the glossary), and lists the names where Wikipedia differs (`DIFFERS`), for the author to decide. `en` is refused: it is the source of every name. Lookups are cached for every language at once in `i18n/wikipedia.json`, versioned, so a rerun needs no internet and gives the same result; `--offline` fails instead of looking up what the cache lacks.
+
+Search in New Game and Openings matches a family, subgroup or line by its name as shown and by its English name. PGN `Opening` tags stay in English; the localized names are display only.
 
 ## 9. Engine
 

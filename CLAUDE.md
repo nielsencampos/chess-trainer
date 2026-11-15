@@ -67,6 +67,8 @@ the smallest supported screen, and mobile is out of scope.
   Lines that disappear become inactive and are never deleted.
 - Never delete database data without a migration and a note. Schema changes are new numbered files
   in `app/db/migrations/`.
+- Localized opening names come from `uv run python -m catalog.names <locale>` (brief §8): Wikipedia
+  first, then the glossary, then machine translation, each recorded in `i18n/names/{locale}.toml`.
 - Every book move is validated by tests, never by memory. Do not invent theory moves, and record
   where a line came from in `source`.
 - Third-party assets must be compatible with GPL-3.0 and listed in `THIRD_PARTY_LICENSES.md`.

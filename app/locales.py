@@ -1,9 +1,11 @@
 """The locale registry, `i18n/locales.toml` (brief §8): what differs per UI language.
 
-Direction, scripts, LanguageTool code, Vale styles and whether the author reviews it are
-parameters here, so adding a language is data, not code. The fallback is always `en`.
+Direction, scripts, LanguageTool code, Vale styles, Wikipedia language and whether the
+author reviews it are parameters here, so adding a language is data, not code. The fallback
+is always `en`.
 """
 
+import re
 import tomllib
 from dataclasses import dataclass
 from pathlib import Path
@@ -12,7 +14,7 @@ DEFAULT_LOCALE = "en"
 REGISTRY_FILE = Path(__file__).parent.parent / "i18n" / "locales.toml"
 DIRECTIONS = ("ltr", "rtl")
 SCRIPTS = ("latin", "latin-ext", "cyrillic", "devanagari", "cjk", "arabic", "hebrew")
-FIELDS = {"direction", "scripts", "languagetool", "vale", "reviewed"}
+FIELDS = {"direction", "scripts", "languagetool", "vale", "wikipedia", "reviewed"}
 
 
 @dataclass(frozen=True)
@@ -26,6 +28,8 @@ class Locale:
         languagetool (str | None): Its LanguageTool code; None skips its texts.
         vale (tuple[str, ...]): The Vale styles for its UI strings; empty skips them.
         reviewed (bool): True when the author reviews it.
+        wikipedia (str): Its Wikipedia's language code, for the opening names (`pt` for
+            pt.wikipedia.org); by default the code's first part, lowercase.
     """
 
     code: str
@@ -34,6 +38,7 @@ class Locale:
     languagetool: str | None
     vale: tuple[str, ...]
     reviewed: bool
+    wikipedia: str
 
 
 def load_locales(path: Path = REGISTRY_FILE) -> dict[str, Locale]:
@@ -67,6 +72,9 @@ def load_locales(path: Path = REGISTRY_FILE) -> dict[str, Locale]:
         vale = entry.get("vale", [])
         if not isinstance(vale, list) or not all(isinstance(s, str) and s for s in vale):
             raise ValueError(f"{where}: vale must be a list of style names, or left out")
+        wikipedia = entry.get("wikipedia", code.split("-")[0].lower())
+        if not isinstance(wikipedia, str) or not re.fullmatch(r"[a-z][a-z0-9-]*", wikipedia):
+            raise ValueError(f"{where}: wikipedia must be a Wikipedia language code, or left out")
         if not isinstance(entry.get("reviewed"), bool):
             raise ValueError(f"{where}: reviewed must be true or false")
         locales[code] = Locale(
@@ -76,6 +84,7 @@ def load_locales(path: Path = REGISTRY_FILE) -> dict[str, Locale]:
             languagetool=languagetool,
             vale=tuple(vale),
             reviewed=entry["reviewed"],
+            wikipedia=wikipedia,
         )
     if DEFAULT_LOCALE not in locales:
         raise ValueError(f"{path}: the fallback locale {DEFAULT_LOCALE!r} is missing")
