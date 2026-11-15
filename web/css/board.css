@@ -1,3 +1,6 @@
+/* The board is a fixed left-to-right object that never mirrors, so this file keeps physical
+   properties on purpose. Every other stylesheet uses logical ones (#31, tests/unit/test_logical_css.py). */
+
 .board {
   position: relative;
   display: grid;
@@ -274,4 +277,51 @@
 .chip-bad {
   border-color: var(--bad);
   color: var(--bad);
+}
+
+/* The evaluation bar hangs to the left of the board, in the board area's padding. It belongs
+   to the board, which never mirrors, so it stays physical like the rest of this file. */
+.eval-bar {
+  position: absolute;
+  top: var(--coord-gutter);
+  bottom: var(--coord-gutter);
+  left: -30px;
+  width: 22px;
+  overflow: hidden;
+  background: #3a3a3a;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.eval-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  background: #f2f2f2;
+  transition: height 0.25s ease;
+}
+
+.eval-bar.flipped .eval-fill {
+  top: 0;
+  bottom: auto;
+}
+
+.eval-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font: 700 0.62rem/1 var(--font-mono);
+  text-align: center;
+}
+
+.eval-label.bottom {
+  bottom: 4px;
+  color: #3a3a3a;
+}
+
+.eval-label.top {
+  top: 4px;
+  color: #f2f2f2;
 }
