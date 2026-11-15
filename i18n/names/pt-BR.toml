@@ -132,8 +132,9 @@ name = "Gambito Elefante"
 source = "https://pt.wikipedia.org/wiki/Gambito_elefante"
 
 [families.fried-fox-defense]
-name = "Defesa Fried Fox"
-rule = true
+name = "Defesa Raposa Frita"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.goldsmith-defense]
 name = "Defesa Goldsmith"
@@ -163,8 +164,9 @@ name = "Gambito Letão"
 source = "https://www.wikidata.org/wiki/Q501691"
 
 [families.lemming-defense]
-name = "Defesa Lemming"
-rule = true
+name = "Defesa Lemingue"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.lion-defense]
 name = "Defesa do Leão"
@@ -176,9 +178,9 @@ name = "Abertura Portuguesa"
 source = "https://pt.wikipedia.org/wiki/Abertura_portuguesa"
 
 [families.pterodactyl-defense]
-name = "Defesa Pterodactyl"
-rule = true
-note = "Wikipedia's article is the wider Modern Defense; the author kept this name (decided in #29)."
+name = "Defesa Pterodáctilo"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.rat-defense]
 name = "Defesa do Rato"
@@ -243,8 +245,9 @@ name = "Abertura Amar"
 source = "https://pt.wikipedia.org/wiki/Abertura_Amar"
 
 [families.amsterdam-attack]
-name = "Ataque Amsterdam"
-rule = true
+name = "Ataque Amsterdã"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.anderssen-s-opening]
 name = "Abertura Anderssen"
@@ -259,8 +262,9 @@ name = "Abertura Clemenz"
 rule = true
 
 [families.creepy-crawly-formation]
-name = "Formação Creepy Crawly"
-rule = true
+name = "Formação Rastejante"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.formation]
 name = "Formação"
@@ -292,8 +296,9 @@ name = "Abertura Durkin"
 source = "https://pt.wikipedia.org/wiki/Abertura_Durkin"
 
 [families.valencia-opening]
-name = "Abertura Valencia"
-rule = true
+name = "Abertura Valência"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.van-geet-opening]
 name = "Abertura Dunst"
@@ -355,8 +360,9 @@ name = "Defesa Nimzoíndia"
 source = "https://pt.wikipedia.org/wiki/Defesa_Nimzoíndia"
 
 [families.amazon-attack]
-name = "Ataque Amazon"
-rule = true
+name = "Ataque Amazona"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.australian-defense]
 name = "Defesa Australiana"
@@ -364,8 +370,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [families.basque-opening]
-name = "Abertura Basque"
-rule = true
+name = "Abertura Basca"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.blackmar-diemer-gambit]
 name = "Gambito Blackmar-Diemer"
@@ -402,8 +409,9 @@ name = "Defesa Horwitz"
 rule = true
 
 [families.kangaroo-defense]
-name = "Defesa Kangaroo"
-rule = true
+name = "Defesa Canguru"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.marienbad-system]
 name = "Sistema Marienbad"
@@ -431,8 +439,9 @@ name = "Defesa Índia Antiga"
 source = "https://pt.wikipedia.org/wiki/Defesa_Índia_Antiga"
 
 [families.paleface-attack]
-name = "Ataque Paleface"
-rule = true
+name = "Ataque Cara-Pálida"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.polish-defense]
 name = "Defesa Polonesa"
@@ -467,8 +476,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [families.vulture-defense]
-name = "Defesa Vulture"
-rule = true
+name = "Defesa Abutre"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [families.wade-defense]
 name = "Defesa Wade"
@@ -595,8 +605,9 @@ name = "Gambito Hobbs-Zilbermints"
 rule = true
 
 [lines.line-6a27cc38b80055c2]
-name = "Defesa Horsefly"
-rule = true
+name = "Defesa Mutuca"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-1bc4f726eb3cde79]
 name = "Gambito Lasker"
@@ -918,9 +929,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-dad5ce4e159118a8]
-name = "Variante Inglesa do Rei, Sistema Botvinnik, Sistema Prickly Pawn Pass"
+name = "Variante Inglesa do Rei, Sistema Botvinnik, Sistema do Peão Espinhoso"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.english-opening."Symmetrical Variation"]
 name = "Variante Simétrica"
@@ -938,9 +949,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-e41fc8fa65775ab7]
-name = "Variante Simétrica, Linha Full Symmetry"
+name = "Variante Simétrica, Linha da Simetria Total"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-ebe18cba4f83d2ef]
 name = "Variante Simétrica, Variante Mecking"
@@ -1482,8 +1493,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-ac8755c472e2ed63]
-name = "Variante Drill"
-rule = true
+name = "Variante da Broca"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-a895c8b820c25052]
 name = "Sistema dos Quatro Cavalos, Variante Nimzowitsch"
@@ -1528,8 +1540,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-3c4625a4014176f4]
-name = "Variante Porcupine"
-rule = true
+name = "Variante Porco-Espinho"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-e03bacdad62eb884]
 name = "Gambito Romanishin"
@@ -1803,8 +1816,9 @@ name = "Gambito Ringelbach"
 rule = true
 
 [lines.line-8e0a26543095b72f]
-name = "Variante Spike"
-rule = true
+name = "Variante do Espigão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-b1a33d28da15d497]
 name = "Variante Simétrica"
@@ -1949,16 +1963,19 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [subgroups.polish-opening."Outflank Variation"]
-name = "Variante Outflank"
-rule = true
+name = "Variante do Envolvimento"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-a6ccceb48c1d010d]
-name = "Variante Outflank"
-rule = true
+name = "Variante do Envolvimento"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-c755a608d8a5c6c9]
-name = "Variante Outflank, Gambito Schuehler"
-rule = true
+name = "Variante do Envolvimento, Gambito Schuehler"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.polish-opening."with d5"]
 name = "com d5"
@@ -1976,8 +1993,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-fbe79d9a308fc270]
-name = "Defesa Baltic"
-rule = true
+name = "Defesa Báltica"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-cf6ebe733760bd04]
 name = "Gambito Birmingham"
@@ -2035,8 +2053,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-43b40553e98de274]
-name = "Linha Rooks Swap"
-rule = true
+name = "Linha da Troca de Torres"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-910f1a5eeebca8a9]
 name = "Variante Schiffler-Sokolsky"
@@ -2263,8 +2282,9 @@ name = "Abertura Réti"
 rule = true
 
 [lines.line-618fc9dc6ce63cc0]
-name = "Variante Penguin"
-rule = true
+name = "Variante Pinguim"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-195b158ecd209d80]
 name = "Gambito Blumenfeld Invertido"
@@ -2331,17 +2351,19 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [subgroups.zukertort-opening."Arctic Defense"]
-name = "Defesa Arctic"
-rule = true
+name = "Defesa Ártica"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-8e9485f3ed47fbc4]
-name = "Defesa Arctic"
-rule = true
+name = "Defesa Ártica"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-f11fd4eb3b7a0ddd]
-name = "Defesa Arctic, Variante do Cavalo Bêbado"
+name = "Defesa Ártica, Variante do Cavalo Bêbado"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.zukertort-opening."Tennison Gambit"]
 name = "Gambito Tennison"
@@ -2388,8 +2410,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-ab061bd6afe073e3]
-name = "Variante Drunken Cavalry"
-rule = true
+name = "Variante da Cavalaria Bêbada"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-17c3fc22b00a9f4f]
 name = "Variante Holandesa"
@@ -2635,8 +2658,9 @@ name = "Variante Hunt"
 rule = true
 
 [lines.line-44b6d6cbd57e8530]
-name = "Variante Hunt, Gambito Lasker Simul"
-rule = true
+name = "Variante Hunt, Gambito da Simultânea de Lasker"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-eb98198520aa2290]
 name = "Variante Hunt, Gambito Mikenas"
@@ -3010,8 +3034,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-335b5ee8e025626b]
-name = "Gambito Warsaw"
-rule = true
+name = "Gambito Varsóvia"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-fdd9157ea2326d72]
 name = "Variante del Rio"
@@ -3400,16 +3425,19 @@ name = "Defesa De Bruycker"
 rule = true
 
 [subgroups.caro-kann-defense."Hillbilly Attack"]
-name = "Ataque Hillbilly"
-rule = true
+name = "Ataque Caipira"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-233ba5fe7c79aa16]
-name = "Ataque Hillbilly"
-rule = true
+name = "Ataque Caipira"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-192d91c6d13e05a8]
-name = "Ataque Hillbilly, Gambito Schaeffer"
-rule = true
+name = "Ataque Caipira, Gambito Schaeffer"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.caro-kann-defense."Maróczy Variation"]
 name = "Variante Maróczy"
@@ -3424,16 +3452,19 @@ name = "Variante Maróczy, Gambito Maróczy"
 rule = true
 
 [subgroups.caro-kann-defense."Spike Variation"]
-name = "Variante Spike"
-rule = true
+name = "Variante do Espigão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-25e565f7c8259f55]
-name = "Variante Spike"
-rule = true
+name = "Variante do Espigão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-861c472d16525a29]
-name = "Variante Spike, Gambito Scorpion-Grob"
-rule = true
+name = "Variante do Espigão, Gambito Scorpion-Grob"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.caro-kann-defense."Tartakower Variation"]
 name = "Variante Tartakower"
@@ -3457,12 +3488,14 @@ name = "Gambito Alekhine"
 rule = true
 
 [lines.line-ed53f6d9f3a7375d]
-name = "Gambito Alien"
-rule = true
+name = "Gambito Alienígena"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-a8e33cbedd50e922]
-name = "Ataque Apocalypse"
-rule = true
+name = "Ataque Apocalipse"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-d14ffa6e9718fe2e]
 name = "Variante Bronstein-Larsen"
@@ -3477,8 +3510,9 @@ name = "Gambito Dinic"
 rule = true
 
 [lines.line-36106e4201f29f4b]
-name = "Variante Edinburgh"
-rule = true
+name = "Variante Edimburgo"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-97fb2a73e4d27f20]
 name = "Oferta de Final"
@@ -3486,8 +3520,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-b91e8ea10d55a909]
-name = "Variante Endgame"
-rule = true
+name = "Variante do Final"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-26802bc86cbabad7]
 name = "Ataque Euwe"
@@ -3571,8 +3606,9 @@ name = "Gambito Toikkanen"
 rule = true
 
 [lines.line-ea2d257f6262866a]
-name = "Gambito Ulysses"
-rule = true
+name = "Gambito Ulisses"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-466b60f7a86a2740]
 name = "Gambito von Hennig"
@@ -3604,8 +3640,9 @@ name = "Gambito Halasz-McDonnell"
 rule = true
 
 [lines.line-34bd6018392c6ab4]
-name = "Gambito Halasz-McDonnell, Variante Crocodile"
-rule = true
+name = "Gambito Halasz-McDonnell, Variante Crocodilo"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.center-game."Lanc-Arnold Gambit"]
 name = "Gambito Lanc-Arnold"
@@ -3996,22 +4033,24 @@ name = "Variante Winawer"
 rule = true
 
 [lines.line-dea131a890fe1f9d]
-name = "Variante Winawer, Variante Fingerslip"
-rule = true
+name = "Variante Winawer, Variante do Escorregão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-49012a88d9b86090]
-name = "Variante Winawer, Variante Fingerslip, Linha Schwarz"
+name = "Variante Winawer, Variante do Escorregão, Linha Schwarz"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-ff8bb6aa46691a80]
-name = "Variante Winawer, Variante Fingerslip, Linha Principal"
-rule = true
+name = "Variante Winawer, Variante do Escorregão, Linha Principal"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-bafd0d6a171b9924]
-name = "Variante Winawer, Variante Fingerslip, Gambito Duplo Kunin"
+name = "Variante Winawer, Variante do Escorregão, Gambito Duplo Kunin"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-d63344a48c486141]
 name = "Variante Winawer, Variante Kondratiyev"
@@ -4097,12 +4136,14 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-41cc5e445e47d5f6]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-f8a4ceddcc451e01]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-dd02e0a50c06feff]
 name = "Variante Winawer, Variante do Avanço"
@@ -4115,8 +4156,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-4fdce38b2c18f606]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-cedfd814115283fd]
 name = "Variante Winawer, Variante do Avanço, com Bd3"
@@ -4124,24 +4166,28 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-af4626b4284b9b87]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-5e723a32f322f367]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-4a1038c17f73df24]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-5421b3fc7410e80d]
 name = "Variante Winawer, Variante Eingorn"
 rule = true
 
 [lines.line-8a3e2650ceb7212d]
-name = "Variante Winawer, Variante Warsaw"
-rule = true
+name = "Variante Winawer, Variante Varsóvia"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-b4a874a2775499e1]
 name = "Variante Winawer, Variante do Peão Envenenado"
@@ -4174,28 +4220,34 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-cdd30bfbaeb30501]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-48070ed15f0f95f4]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-958086833c8766e4]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-dd647a46ff4a9671]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-3b0978fc7ef1f6d0]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-09c5140d6399e585]
-name = "Variante Winawer, Variante Positional"
-rule = true
+name = "Variante Winawer, Variante Posicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-c801f2f44399167d]
 name = "Variante Winawer, Variante do Avanço, com h4"
@@ -4960,8 +5012,9 @@ name = "Gambito Marshall"
 rule = true
 
 [lines.line-a2e44ff004cacf88]
-name = "Defesa Mediterranean"
-rule = true
+name = "Defesa Mediterrânea"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-b07c40db19e53a02]
 name = "Gambito Morphy"
@@ -4984,8 +5037,9 @@ name = "Variante Pelikan"
 rule = true
 
 [lines.line-2fca517bdd364836]
-name = "Gambito Perseus"
-rule = true
+name = "Gambito Perseu"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-569c3aa622b7786e]
 name = "Cavalo da Dama"
@@ -5164,9 +5218,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-28118d0b26549d3e]
-name = "Defesa dos Dois Cavalos, Ataque Fried Liver"
+name = "Defesa dos Dois Cavalos, Ataque Fígado Frito"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-c7421bf756d9926a]
 name = "Defesa dos Dois Cavalos, Ataque Fegatello, Variante Leonhardt"
@@ -5501,8 +5555,9 @@ name = "Gambito Evans, Linha Principal"
 rule = true
 
 [lines.line-d3eb51442cd360d8]
-name = "Gambito Evans, Variante Slow"
-rule = true
+name = "Gambito Evans, Variante Lenta"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-08524b9352754464]
 name = "Gambito Evans, Ataque Richardson"
@@ -5905,8 +5960,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-231ad10f1825d882]
-name = "Defesa Anti-Fried Liver"
-rule = true
+name = "Defesa Anti-Fígado Frito"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-12b289e03d2dc520]
 name = "Ataque Bird"
@@ -6009,9 +6065,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-54cbc29cea8da2ea]
-name = "Aceito: Gambito do Bispo, Variante First Jaenisch"
+name = "Aceito: Gambito do Bispo, Primeira Variante Jaenisch"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-2bbd2c14469ce8cb]
 name = "Aceito: Gambito do Bispo, Contragambito Bryan"
@@ -6464,9 +6520,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-27851c768680be3c]
-name = "Aceito: Gambito Muzio, Gambito Wild Muzio"
+name = "Aceito: Gambito Muzio, Gambito Muzio Selvagem"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-70c41c832d1372d6]
 name = "Aceito: Gambito Muzio, Contra-ataque Kling e Horwitz"
@@ -6864,9 +6920,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-6f9947fd337cd972]
-name = "Aceito: Variante Dodo"
+name = "Aceito: Variante Dodô"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-f30f2d91ce4bbb7b]
 name = "Aceito: Variante Eisenberg"
@@ -6964,9 +7020,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-8951e226d8769735]
-name = "Aceito: Tumbleweed"
+name = "Aceito: Bola de Feno"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-7d3d4d84995edd40]
 name = "Aceito: Gambito Villemson"
@@ -7107,9 +7163,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-93c1d3beb7e7fb82]
-name = "Ataque da Dama Errante, Contragambito Kiddie"
+name = "Ataque da Dama Errante, Contragambito Infantil"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.king-s-pawn-game."Busch-Gass Gambit"]
 name = "Gambito Busch-Gass"
@@ -7124,17 +7180,19 @@ name = "Gambito Busch-Gass, Gambito Chiodini"
 rule = true
 
 [subgroups.king-s-pawn-game."Clam Variation"]
-name = "Variante Clam"
-rule = true
+name = "Variante do Marisco"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-73142aa4d76a65ae]
-name = "Variante Clam, Gambito Radisch"
-rule = true
+name = "Variante do Marisco, Gambito Radisch"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-fb446cf5b4ad7148]
-name = "Variante Clam, Gambito do Rei Invertido"
+name = "Variante do Marisco, Gambito do Rei Invertido"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.king-s-pawn-game."King's Head Opening"]
 name = "Abertura Cabeça do Rei"
@@ -7228,8 +7286,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-f02f659b09ef56f9]
-name = "Ataque Napoleon"
-rule = true
+name = "Ataque Napoleão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-e8c53ff2fb38d04c]
 name = "Gambito da Ala Pachman"
@@ -7245,8 +7304,9 @@ name = "Gambito Schulze-Müller"
 rule = true
 
 [lines.line-fc7edba99dae32f7]
-name = "Abertura Tortoise"
-rule = true
+name = "Abertura Tartaruga"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-e5d822f59dd9ad1f]
 name = "Gambito Weber"
@@ -7337,16 +7397,19 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [subgroups.modern-defense."Lizard Defense"]
-name = "Defesa Lizard"
-rule = true
+name = "Defesa Lagarto"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-3df3b5d4d6ee51e3]
-name = "Defesa Lizard, Gambito Pirc-Diemer"
-rule = true
+name = "Defesa Lagarto, Gambito Pirc-Diemer"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-0c6ad766579551bb]
-name = "Defesa Lizard, Gambito Mittenberger"
-rule = true
+name = "Defesa Lagarto, Gambito Mittenberger"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.modern-defense."Mongredien Defense"]
 name = "Defesa Mongredien"
@@ -7465,8 +7528,9 @@ name = "Gambito Westermann"
 rule = true
 
 [lines.line-383cb114a0722442]
-name = "Gambito Wind"
-rule = true
+name = "Gambito Vento"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.nimzowitsch-defense."Scandinavian Variation"]
 name = "Variante Escandinava"
@@ -7580,8 +7644,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-6beca9f6c4a7245b]
-name = "Variante Kennedy, Gambito Hammer"
-rule = true
+name = "Variante Kennedy, Gambito Martelo"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.nimzowitsch-defense."El Columpio Defense"]
 name = "Defesa El Columpio"
@@ -7592,8 +7657,9 @@ name = "Defesa El Columpio"
 rule = true
 
 [lines.line-632b4e7ccca219b1]
-name = "Defesa El Columpio, Variante Pin"
-rule = true
+name = "Defesa El Columpio, Variante da Cravada"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-b4877f70f63e1a58]
 name = "Defesa El Columpio, Gambito El Columpio"
@@ -7675,8 +7741,9 @@ name = "Variante Williams"
 rule = true
 
 [lines.line-abf811c31f22648f]
-name = "Variante Woodchuck"
-rule = true
+name = "Variante Marmota"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-8a53d8b6dc0a8041]
 name = "Defesa Barnes"
@@ -7747,12 +7814,14 @@ name = "Contragambito Paulsen"
 rule = true
 
 [lines.line-53ab54a9265a5238]
-name = "Variante Wasp"
-rule = true
+name = "Variante Vespa"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-4d13752bd010c668]
-name = "Defesa Fried Fox"
-rule = true
+name = "Defesa Raposa Frita"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-cf94f5f6d623e13d]
 name = "Defesa Goldsmith"
@@ -7870,16 +7939,19 @@ name = "Variante Behting"
 rule = true
 
 [lines.line-245e728ba545fabd]
-name = "Gambito Clam"
-rule = true
+name = "Gambito do Marisco"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-4cebfec05603bf72]
-name = "Contragambito Corkscrew"
-rule = true
+name = "Contragambito Saca-Rolhas"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-c51d777fc1a29c35]
-name = "Gambito Corkscrew"
-rule = true
+name = "Gambito Saca-Rolhas"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-b97ecb2e6d6d06bd]
 name = "Contragambito Diepstraten"
@@ -7894,8 +7966,9 @@ name = "Variante Greco"
 rule = true
 
 [lines.line-932ddb024cb445bb]
-name = "Gambito Lobster"
-rule = true
+name = "Gambito Lagosta"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-0c57366fdbc397b3]
 name = "Gambito Letão"
@@ -8215,8 +8288,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-f3c85bb62cdc6b6c]
-name = "Ataque Spike"
-rule = true
+name = "Ataque Espigão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-94d6501d0d44fed6]
 name = "Defesa Santo George"
@@ -8269,12 +8343,14 @@ name = "Gambito Smith"
 rule = true
 
 [lines.line-fe2ec7f8e558d38d]
-name = "Variante Unicorn"
-rule = true
+name = "Variante Unicórnio"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-0e0fb6b96f1bad5b]
-name = "Gambito Wind"
-rule = true
+name = "Gambito Vento"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.petrov-s-defense."Classical Attack"]
 name = "Ataque Clássico"
@@ -8519,8 +8595,9 @@ name = "Ataque Kaufmann"
 rule = true
 
 [lines.line-27221e7052dbe787]
-name = "Ataque Millennium"
-rule = true
+name = "Ataque do Milênio"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-d3f3618daf0eecaf]
 name = "Gambito Moody"
@@ -9250,14 +9327,14 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-c60fcd41c679e997]
-name = "Fechada, Gambito Basque"
+name = "Fechada, Gambito Basca"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-16cec16153b874c5]
-name = "Fechada, Ataque ao Centro, Gambito Basque"
+name = "Fechada, Ataque ao Centro, Gambito Basca"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-6b4e5467d061a063]
 name = "Fechada, Ataque Worrall, Linha do Roque"
@@ -9372,9 +9449,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-8db66a6d927298fc]
-name = "Defesa Morphy, Variante Norueguesa, Gambito Nightingale"
+name = "Defesa Morphy, Variante Norueguesa, Gambito Rouxinol"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-2b5ab2b835ea3afb]
 name = "Defesa Morphy, Defesa Steinitz Moderna"
@@ -10223,9 +10300,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-55bd392363cf2703]
-name = "Gambito Português, Variante Wuss"
+name = "Gambito Português, Variante Medrosa"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-90d31e2e991a4479]
 name = "Gambito Português, Variante Clássica"
@@ -10503,9 +10580,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-c9e510ecf4ce88fe]
-name = "Variante Clássica, Variante Millennium"
+name = "Variante Clássica, Variante do Milênio"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-0eb1f0bbfb41c70c]
 name = "Variante Clássica, Variante Intermezzo"
@@ -10656,8 +10733,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-70895c295d4456df]
-name = "Gambito Napoleon"
-rule = true
+name = "Gambito Napoleão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-5d20df9f30ff5a8a]
 name = "Paulsen, Defesa Gunsberg"
@@ -10711,14 +10789,14 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29). Wikipedia's article is titled with the family, Siciliana Dragão; the author kept this name (decided in #29)."
 
 [lines.line-a2d2bd6e84b40c48]
-name = "Variante do Dragão, Variante Clássica, Ataque Stockholm"
+name = "Variante do Dragão, Variante Clássica, Ataque Estocolmo"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-ea35680127e5c547]
-name = "Variante do Dragão, Variante Clássica, Variante Amsterdam"
+name = "Variante do Dragão, Variante Clássica, Variante Amsterdã"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-bdae87f94f1d2075]
 name = "Variante do Dragão, Variante Clássica, Variante Grigoriev"
@@ -10776,9 +10854,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-7ee44243e1811158]
-name = "Variante do Dragão, Variante Clássica, Variante Battery"
+name = "Variante do Dragão, Variante Clássica, Variante da Bateria"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-01ddbbce3caab227]
 name = "Variante do Dragão"
@@ -11027,8 +11105,9 @@ name = "Variante Najdorf, Variante Browne"
 rule = true
 
 [lines.line-599420acb45ca5d9]
-name = "Variante Najdorf, Variante Goteborg"
-rule = true
+name = "Variante Najdorf, Variante Gotemburgo"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-7829ef1fdd0922ba]
 name = "Variante Najdorf, Defesa Neoclássica"
@@ -11058,8 +11137,9 @@ name = "Variante Najdorf, Ataque Petronić"
 rule = true
 
 [lines.line-d7b61add6e13ccc3]
-name = "Variante Najdorf, Variante Amsterdam"
-rule = true
+name = "Variante Najdorf, Variante Amsterdã"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-47984bebab26ee8c]
 name = "Variante Najdorf, Variante Zagreb"
@@ -11089,9 +11169,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-9e255a75dd6527c0]
-name = "Fechada, Variante Chameleon"
+name = "Fechada, Variante Camaleão"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-9f4d0893686a8d1f]
 name = "Fechada, Ataque Portland"
@@ -11139,9 +11219,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-e7be4141b17439cd]
-name = "Fechada, Defesa Botvinnik, Variante Edge"
+name = "Fechada, Defesa Botvinnik, Variante da Borda"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-d69420098548cb03]
 name = "Fechada, Variante Smyslov"
@@ -11226,8 +11306,9 @@ name = "Variante O'Kelly, Sistema Aronin"
 rule = true
 
 [lines.line-596febbdaf537581]
-name = "Variante O'Kelly, Sistema Yerevan"
-rule = true
+name = "Variante O'Kelly, Sistema Erevan"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-8ebda5333158d912]
 name = "Variante O'Kelly, Sistema Kieseritzky"
@@ -11239,25 +11320,29 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-e72ddecdb3dfc528]
-name = "Variante O'Kelly, Sistema Venice"
-rule = true
+name = "Variante O'Kelly, Sistema Veneza"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-36b5fe1f77c40d4a]
-name = "Variante O'Kelly, Sistema Venice, Linha Barcza"
-rule = true
+name = "Variante O'Kelly, Sistema Veneza, Linha Barcza"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-3704f955a73c0153]
-name = "Variante O'Kelly, Sistema Venice, Linha Ljubojevic"
-rule = true
+name = "Variante O'Kelly, Sistema Veneza, Linha Ljubojevic"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-e8df5cc886168ca7]
-name = "Variante O'Kelly, Sistema Venice, Linha do Gambito"
+name = "Variante O'Kelly, Sistema Veneza, Linha do Gambito"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-8d32bc9e93583906]
-name = "Variante O'Kelly, Sistema Venice, Linha Steiner"
-rule = true
+name = "Variante O'Kelly, Sistema Veneza, Linha Steiner"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-8fe2ab5ef00a6a6c]
 name = "Variante O'Kelly, Bind de Maróczy"
@@ -11742,8 +11827,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-94d7091dac39b3af]
-name = "Variante Alapin, Defesa Barmen, Variante Endgame"
-rule = true
+name = "Variante Alapin, Defesa Barmen, Variante do Final"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-e6295f346bd8fc63]
 name = "Variante Alapin, Defesa Barmen"
@@ -11976,8 +12062,9 @@ name = "Ataque McDonnell"
 rule = true
 
 [lines.line-ce82ebcae9c72160]
-name = "Ataque McDonnell, Variante Toilet"
-rule = true
+name = "Ataque McDonnell, Variante do Banheiro"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-c9b2812274e15d07]
 name = "Ataque McDonnell, Gambito Tal"
@@ -12220,9 +12307,9 @@ name = "Ataque Sozin, Linha Principal, Variante Sherbakov"
 rule = true
 
 [lines.line-6557f8adcc2cc802]
-name = "Ataque Sozin, Variante Flank"
+name = "Ataque Sozin, Variante do Flanco"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-ff516a95da0864f9]
 name = "Ataque Sozin"
@@ -12377,20 +12464,24 @@ name = "Variante Boleslavsky"
 rule = true
 
 [subgroups.sicilian-defense."Pin Variation"]
-name = "Variante Pin"
-rule = true
+name = "Variante da Cravada"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-f943ecf67d84b0eb]
-name = "Variante Pin"
-rule = true
+name = "Variante da Cravada"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-7af368f2c16db5f2]
-name = "Variante Pin, Variante Jaffe"
-rule = true
+name = "Variante da Cravada, Variante Jaffe"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-5796980602d0f89a]
-name = "Variante Pin, Variante Koch"
-rule = true
+name = "Variante da Cravada, Variante Koch"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.sicilian-defense."Chekhover Variation"]
 name = "Variante Chekhover"
@@ -12527,8 +12618,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-f196fa9884e9b60f]
-name = "Ataque Amazon"
-rule = true
+name = "Ataque Amazona"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-069b47c773301045]
 name = "Formação do Grande Torniquete"
@@ -12540,12 +12632,14 @@ name = "Ataque Bowdler"
 rule = true
 
 [lines.line-6bb90d630b2684a3]
-name = "Variante Brick"
-rule = true
+name = "Variante do Tijolo"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-f95e8ceeef1c3312]
-name = "Gambito Brussels"
-rule = true
+name = "Gambito Bruxelas"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-6e5e390785f32305]
 name = "Variante Bücker"
@@ -12668,8 +12762,9 @@ name = "Variante Mengarini"
 rule = true
 
 [lines.line-27d522539ce81052]
-name = "Variante Mongoose"
-rule = true
+name = "Variante Mangusto"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-101f12f900ac0fbf]
 name = "Variante Nimzo-Americana"
@@ -13003,8 +13098,9 @@ name = "Gambito Fyfe"
 rule = true
 
 [lines.line-380ce11103e8fd55]
-name = "Ataque Giraffe"
-rule = true
+name = "Ataque Girafa"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-d8c523f34bd7dfe8]
 name = "Variante Hamppe-Meitner"
@@ -13062,13 +13158,14 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-a2810f02d198fddb]
-name = "Gambito Parisiense, Gambito Gent"
+name = "Gambito Parisiense, Gambito Gante"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-56915a71bde2d4d5]
-name = "Ataque Amsterdam"
-rule = true
+name = "Ataque Amsterdã"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-7ecfaf619cdb0064]
 name = "Abertura Anderssen"
@@ -13130,8 +13227,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-2088b4e9dab1c545]
-name = "Ataque Shy"
-rule = true
+name = "Ataque Tímido"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-a77eb62c9da8df0d]
 name = "Abertura Global"
@@ -13231,13 +13329,14 @@ name = "Contragambito Romford"
 rule = true
 
 [lines.line-e67be590899a7b47]
-name = "Spike, Ataque Hurst"
+name = "Espigão, Ataque Hurst"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-004832ebcc489a7c]
-name = "Ataque Spike"
-rule = true
+name = "Ataque Espigão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.kadas-opening."Kádas Gambit"]
 name = "Gambito Kádas"
@@ -13285,8 +13384,9 @@ name = "Abertura Mieses"
 rule = true
 
 [lines.line-e8974f85af2c8645]
-name = "Ataque Myers Spike"
-rule = true
+name = "Ataque Espigão Myers"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-e35e90a02aa776e3]
 name = "Rato Invertido"
@@ -13294,8 +13394,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-3c999177dc62fd03]
-name = "Variante Venezolana"
-rule = true
+name = "Variante Venezuelana"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-f53bd4e5f639c15b]
 name = "Abertura Saragoça"
@@ -13320,8 +13421,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-783de1bb56ea2806]
-name = "Abertura Valencia"
-rule = true
+name = "Abertura Valência"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.van-geet-opening."Grünfeld Defense"]
 name = "Defesa Grünfeld"
@@ -13422,8 +13524,9 @@ name = "Ataque Myers"
 rule = true
 
 [lines.line-c3325e8211dae5c4]
-name = "Ataque Napoleon"
-rule = true
+name = "Ataque Napoleão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-91cb9b96834e7844]
 name = "Variante Novosibirsk"
@@ -13461,8 +13564,9 @@ name = "Gambito Tübingen"
 rule = true
 
 [lines.line-367e1aa20ba3f920]
-name = "Variante Venezolana"
-rule = true
+name = "Variante Venezuelana"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-6df866851f90c8e7]
 name = "Gambito Warsteiner"
@@ -13494,8 +13598,9 @@ name = "Abertura Van't Kruijs"
 rule = true
 
 [lines.line-fcda042cbca224ec]
-name = "Gambito Cologne"
-rule = true
+name = "Gambito Colônia"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-7413827ae10e348d]
 name = "Variante Caranguejo"
@@ -13507,12 +13612,14 @@ name = "Abertura Ware"
 rule = true
 
 [lines.line-0f86558896eb9487]
-name = "Armadilha Meadow Hay"
-rule = true
+name = "Armadilha do Feno do Prado"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-70ad1e004de77fff]
-name = "Variante Symmetric"
-rule = true
+name = "Variante Simétrica"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-9a91fbf7cc245066]
 name = "Gambito Ware"
@@ -13682,9 +13789,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-df308666199801ba]
-name = "Variante Clássica, Linha Full"
+name = "Variante Clássica, Linha Completa"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-59f8da1ab36c802b]
 name = "Variante Clássica"
@@ -13712,9 +13819,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-aeccfc26ef396d0f]
-name = "Variante Clássica, Variante New York"
+name = "Variante Clássica, Variante Nova York"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.benoni-defense."King's Pawn Line"]
 name = "Linha do Peão do Rei"
@@ -13916,9 +14023,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-e5797272de80a0cf]
-name = "Variante Moderna, Variante Snake"
+name = "Variante Moderna, Variante Cobra"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-eccd0fc418d0c773]
 name = "Gambito Benoni, Defesa Schlenker"
@@ -13934,8 +14041,9 @@ name = "Gambito Benoni-Staunton"
 rule = true
 
 [lines.line-cd3554b4c900edcf]
-name = "Gambito Cormorant"
-rule = true
+name = "Gambito Cormorão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-b8a4aa4bdb58ed28]
 name = "Defesa Benoni Tcheca"
@@ -13953,8 +14061,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-15ef36eb80bac40e]
-name = "Variante Hawk"
-rule = true
+name = "Variante Falcão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-555d46955fa44c51]
 name = "Sistema Hromádka"
@@ -13985,8 +14094,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-aca45fdd105d7fc5]
-name = "Variante Snail"
-rule = true
+name = "Variante Caracol"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-6ea1d454440a19e4]
 name = "Variante Taimanov"
@@ -14093,8 +14203,9 @@ name = "Armadilha Monticelli"
 rule = true
 
 [lines.line-06b11444788c44b2]
-name = "Variante New England"
-rule = true
+name = "Variante Nova Inglaterra"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-8b197735dab96d05]
 name = "Variante Nimzowitsch"
@@ -14461,9 +14572,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-27e4c356a6930ba8]
-name = "Variante Leningrado, Variante Warsaw"
+name = "Variante Leningrado, Variante Varsóvia"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-2f6af81ef469635f]
 name = "Variante Leningrado, Variante Carlsbad"
@@ -14592,8 +14703,9 @@ name = "Gambito Janzen-Korchnoi"
 rule = true
 
 [lines.line-cc0512f8838fc9a5]
-name = "Gambito Kingfisher"
-rule = true
+name = "Gambito Martim-Pescador"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-f277b756082eccfe]
 name = "Ataque Korchnoi"
@@ -14898,8 +15010,9 @@ name = "Variante Botvinnik"
 rule = true
 
 [lines.line-8cd10e0d7f4a03d7]
-name = "Variante Counterthrust"
-rule = true
+name = "Variante do Contragolpe"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-8c13400a8c4ac9e2]
 name = "Defesa Flohr"
@@ -14910,8 +15023,9 @@ name = "Variante Flohr"
 rule = true
 
 [lines.line-f7aae2090b1c40d7]
-name = "Gambito Gibbon"
-rule = true
+name = "Gambito Gibão"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-ab5ccb020263850e]
 name = "Variante Lundin"
@@ -14938,8 +15052,9 @@ name = "Defesa Smyslov"
 rule = true
 
 [lines.line-b5007e71070068e4]
-name = "Variante Stockholm"
-rule = true
+name = "Variante Estocolmo"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-b26286c2f09fbd2a]
 name = "Gambito Zaitsev"
@@ -15162,9 +15277,9 @@ name = "Variante Normal"
 rule = true
 
 [lines.line-45e7bbef96bc7130]
-name = "Ataque Paleface, Gambito Blackmar-Diemer Adiado"
+name = "Ataque Cara-Pálida, Gambito Blackmar-Diemer Adiado"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-1d47bba5c8ec66b5]
 name = "Variante do Avanço de Peão"
@@ -15186,8 +15301,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-6a8face6bf8f9d8d]
-name = "Gambito Pyrenees"
-rule = true
+name = "Gambito Pirineus"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-831ce64c81c0fcf6]
 name = "Defesa Chigorin Invertida"
@@ -15281,9 +15397,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-9652a0605767d512]
-name = "Variante do Fianqueto, Variante Panno, Linha Blockade"
+name = "Variante do Fianqueto, Variante Panno, Linha do Bloqueio"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-76c59b7c7b864f2f]
 name = "Variante do Fianqueto, Variante Panno, Linha Korchnoi"
@@ -15366,9 +15482,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-2cf43e2f31b3a34f]
-name = "Variante Ortodoxa, Defesa Positional"
+name = "Variante Ortodoxa, Defesa Posicional"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-6359dfab17f88d02]
 name = "Variante Ortodoxa"
@@ -15376,9 +15492,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-041c7c1782d0927a]
-name = "Variante Ortodoxa, Defesa Positional, Linha Fechada"
+name = "Variante Ortodoxa, Defesa Posicional, Linha Fechada"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-0a70edba985ddbcb]
 name = "Variante Ortodoxa"
@@ -15406,9 +15522,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-6031957f1d6b03e8]
-name = "Variante Ortodoxa, Defesa Positional, Linha Principal"
+name = "Variante Ortodoxa, Defesa Posicional, Linha Principal"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-cc103480ed14c106]
 name = "Variante Ortodoxa, Defesa Aronin-Taimanov"
@@ -15775,8 +15891,9 @@ name = "Sistema Karpov"
 rule = true
 
 [lines.line-0e6e93af78a07931]
-name = "Variante Kazakh"
-rule = true
+name = "Variante Cazaque"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-34ba9d82911df236]
 name = "Variante Kramer"
@@ -15878,19 +15995,19 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-d23618cb7fa83480]
-name = "Variante Clássica, Variante Zurich"
+name = "Variante Clássica, Variante Zurique"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-a9a224d03d96db03]
-name = "Variante Clássica, Variante Zurich"
+name = "Variante Clássica, Variante Zurique"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-5910f0f1e8860065]
-name = "Variante Clássica, Variante Zurich"
+name = "Variante Clássica, Variante Zurique"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-08ae159a2222df2a]
 name = "Variante Clássica, Variante Milner-Barry"
@@ -15898,9 +16015,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-c61480252a47fe61]
-name = "Variante Clássica, Variante Zurich"
+name = "Variante Clássica, Variante Zurique"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-dd50ea52f96eb3f1]
 name = "Variante Clássica, Gambito Vitolins-Adorjan"
@@ -16373,8 +16490,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-891070e99dfeaf50]
-name = "Ataque Amazon"
-rule = true
+name = "Ataque Amazona"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-2b85bbd58ed498c0]
 name = "Defesa Australiana"
@@ -16382,8 +16500,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-2e4a725cbd078aa3]
-name = "Abertura Basque"
-rule = true
+name = "Abertura Basca"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.blackmar-diemer-gambit."Lemberger Countergambit"]
 name = "Contragambito Lemberger"
@@ -16410,8 +16529,9 @@ name = "Contragambito Lemberger, Ataque Sneiders"
 rule = true
 
 [lines.line-2cd2a1230d596eba]
-name = "Contragambito Lemberger, Variante Endgame"
-rule = true
+name = "Contragambito Lemberger, Variante do Final"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.blackmar-diemer-gambit."Accepted: Bogoljubow Defense"]
 name = "Aceito: Defesa Bogoljubow"
@@ -16439,9 +16559,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-bb04b0a9aea38a81]
-name = "Aceito: Defesa Bogoljubow, Ataque Mad Dog"
+name = "Aceito: Defesa Bogoljubow, Ataque do Cão Raivoso"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.blackmar-diemer-gambit."Accepted: Teichmann Defense"]
 name = "Aceito: Defesa Teichmann"
@@ -16646,8 +16766,9 @@ name = "Ataque Fritz"
 rule = true
 
 [lines.line-0bc77a8801a7902e]
-name = "Variante Netherlands"
-rule = true
+name = "Variante dos Países Baixos"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-14c43fa9e20cb0f5]
 name = "Gambito Rasa-Studier"
@@ -16790,8 +16911,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-cbf6bb2886c6b5d5]
-name = "Variante Stockholm"
-rule = true
+name = "Variante Estocolmo"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-1ac906c0e64d48dc]
 name = "Gambito Zilbermints"
@@ -16806,12 +16928,14 @@ name = "Gambito Zilbermints"
 rule = true
 
 [lines.line-60df26bddc688259]
-name = "Defesa Kangaroo"
-rule = true
+name = "Defesa Canguru"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-a0160ab8acc1addf]
-name = "Defesa Keres, Variante Transpositional"
-rule = true
+name = "Defesa Keres, Variante Transposicional"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-4bee7093b0b4b12a]
 name = "Sistema Marienbad"
@@ -16827,8 +16951,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-0f91f887bac9d69f]
-name = "Gambito Horsefly"
-rule = true
+name = "Gambito Mutuca"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-ecca67853951985c]
 name = "Variante Cannstatter"
@@ -17080,8 +17205,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-d04268154a52292e]
-name = "Ataque Paleface"
-rule = true
+name = "Ataque Cara-Pálida"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-cdbedae953594726]
 name = "Defesa Polonesa"
@@ -17216,8 +17342,9 @@ name = "Gambito Kudischewitsch"
 rule = true
 
 [lines.line-637a84301dff3511]
-name = "Defesa Vulture"
-rule = true
+name = "Defesa Abutre"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-46e05616263e9e88]
 name = "Defesa Wade"
@@ -17442,14 +17569,14 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-cbe984023da94f69]
-name = "Recusado: Variante da Troca, Variante Positional"
+name = "Recusado: Variante da Troca, Variante Posicional"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-4b7c4507c14ccde4]
-name = "Recusado: Variante da Troca, Variante Chameleon"
+name = "Recusado: Variante da Troca, Variante Camaleão"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-a217d7d3785a3864]
 name = "Recusado: Variante da Troca, Variante Carlsen"
@@ -17457,9 +17584,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-bc07bed1e8abe9f8]
-name = "Recusado: Variante da Troca, Variante Positional"
+name = "Recusado: Variante da Troca, Variante Posicional"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-67dac8224694e35b]
 name = "Recusado: Variante da Troca, Variante Reshevsky"
@@ -17482,9 +17609,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-9274df6709361c8e]
-name = "Recusado: Variante da Troca, Variante Positional"
+name = "Recusado: Variante da Troca, Variante Posicional"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-78ad68c48e427a5c]
 name = "Recusado: Variante da Troca, Variante Reshevsky"
@@ -17497,9 +17624,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-32a239737a400a21]
-name = "Recusado: Variante da Troca, Variante Positional"
+name = "Recusado: Variante da Troca, Variante Posicional"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-9be23ed2402b0462]
 name = "Recusado: Variante da Troca, Variante Reshevsky"
@@ -17592,9 +17719,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-56f6c2110ada6d4c]
-name = "Recusado: Defesa Semi-Tarrasch, Variante Endgame"
+name = "Recusado: Defesa Semi-Tarrasch, Variante do Final"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-138d91c55bc67c4e]
 name = "Recusado: Defesa Semi-Tarrasch, com e3"
@@ -17917,9 +18044,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-5152eb194b5b0ae7]
-name = "Recusado: Ataque Harrwitz, Defesa dos Dois Cavalos, Linha Blockade"
+name = "Recusado: Ataque Harrwitz, Defesa dos Dois Cavalos, Linha do Bloqueio"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-c6ce7500c6cef1fd]
 name = "Recusado: Ataque Harrwitz"
@@ -18172,39 +18299,39 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [subgroups.queen-s-gambit."Declined: Baltic Defense"]
-name = "Recusado: Defesa Baltic"
+name = "Recusado: Defesa Báltica"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-929ddede6836afd2]
-name = "Recusado: Defesa Baltic, Pseudo-Eslava"
+name = "Recusado: Defesa Báltica, Pseudo-Eslava"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-dc1fd096d539dfc4]
-name = "Recusado: Defesa Baltic"
+name = "Recusado: Defesa Báltica"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-00239d1230faff2f]
-name = "Recusado: Defesa Baltic, Pseudo-Chigorin"
+name = "Recusado: Defesa Báltica, Pseudo-Chigorin"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-06c0b6a36a90f2a8]
-name = "Recusado: Defesa Baltic, Ataque da Dama Adiado"
+name = "Recusado: Defesa Báltica, Ataque da Dama Adiado"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-3cb47c8097ff85ce]
-name = "Recusado: Defesa Baltic, Ataque da Dama"
+name = "Recusado: Defesa Báltica, Ataque da Dama"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-7a58b3a420e397a8]
-name = "Recusado: Defesa Baltic, Gambito Argentino"
+name = "Recusado: Defesa Báltica, Gambito Argentino"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.queen-s-gambit."Declined: Modern Variation"]
 name = "Recusado: Variante Moderna"
@@ -18887,19 +19014,19 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-9e743d1c52dcea30]
-name = "Variante do Fianqueto, Variante Check"
+name = "Variante do Fianqueto, Variante do Xeque"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-7802b1bb9c5d59a2]
-name = "Variante do Fianqueto, Variante Check, Linha Intermezzo"
+name = "Variante do Fianqueto, Variante do Xeque, Linha Intermezzo"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-cbbd3339f19026af]
-name = "Variante do Fianqueto, Variante Check, Linha Moderna"
+name = "Variante do Fianqueto, Variante do Xeque, Linha Moderna"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-b0970eaab6eee3b5]
 name = "Variante do Fianqueto, Linha Tradicional"
@@ -19176,8 +19303,9 @@ name = "Ataque Torre"
 rule = true
 
 [lines.line-df2bf45c8f0119a9]
-name = "Ataque Torre, Variante Gossip"
-rule = true
+name = "Ataque Torre, Variante Fofoca"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-0f7b5c5df5d4f572]
 name = "Ataque Torre"
@@ -19564,8 +19692,9 @@ name = "Contragambito Zilbermints"
 rule = true
 
 [lines.line-69102b6caf9dbf2f]
-name = "Gambito Zurich"
-rule = true
+name = "Gambito Zurique"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.semi-slav-defense."Meran Variation"]
 name = "Variante Meran"
@@ -19791,8 +19920,9 @@ name = "Gambito Marshall, Variante Tolush"
 rule = true
 
 [lines.line-1040a3c177bb70a3]
-name = "Gambito Marshall, Variante Forgotten"
-rule = true
+name = "Gambito Marshall, Variante Esquecida"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.semi-slav-defense."Main Line"]
 name = "Linha Principal"
@@ -20040,9 +20170,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-8f49552067a8e827]
-name = "Variante Tranquila, Variante Amsterdam"
+name = "Variante Tranquila, Variante Amsterdã"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-b7a7609c4bb211fe]
 name = "Variante Tranquila, Variante Landau"
@@ -20216,9 +20346,9 @@ machine = true
 note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
 
 [lines.line-2a5cc324126688a5]
-name = "Variante Clássica, Variante Endgame"
+name = "Variante Clássica, Variante do Final"
 machine = true
-note = "Rule-built on 2026-11-09 by an earlier pass (gender agreement, idioms), not reviewed (#29)."
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-78bfbcd278a9c1e0]
 name = "Variante Clássica, Variante do Avanço"
@@ -20383,20 +20513,24 @@ name = "Gambito Wagner"
 rule = true
 
 [subgroups.trompowsky-attack."Edge Variation"]
-name = "Variante Edge"
-rule = true
+name = "Variante da Borda"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-c1b93889804052d9]
-name = "Variante Edge"
-rule = true
+name = "Variante da Borda"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-cb1369e35de3e82e]
-name = "Variante Edge, Gambito Hergert"
-rule = true
+name = "Variante da Borda, Gambito Hergert"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [lines.line-b8999d52044383d5]
-name = "Variante Edge, Gambito Hergert"
-rule = true
+name = "Variante da Borda, Gambito Hergert"
+machine = true
+note = "Translated in #29: English words the 2026-11-09 pass had left, not reviewed."
 
 [subgroups.trompowsky-attack."Classical Defense"]
 name = "Defesa Clássica"
