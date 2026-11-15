@@ -11,7 +11,15 @@ import pytest
 from app.book.source import read_opening_files
 from app.locales import Locale
 from catalog import names as names_module
-from catalog.names import OfflineError, Rules, WikipediaCache, fill_names, main, titled_for
+from catalog.names import (
+    OfflineError,
+    Rules,
+    WikipediaCache,
+    fill_names,
+    main,
+    titled_for,
+    wiki_name,
+)
 from catalog.translations import (
     TranslationError,
     load_glossary,
@@ -456,6 +464,14 @@ def test_rules_translate_segment_by_segment(tmp_path, english, expected):
     path = tmp_path / "pt-BR.toml"
     path.write_text(GLOSSARY, encoding="utf-8")
     assert Rules(load_glossary(path)).translate(english) == expected
+
+
+def test_a_wikidata_label_starts_with_a_capital():
+    """A label in lower case ("gambit irlandais") becomes a name with a capital."""
+    entry = {"item": "Q7", "sitelinks": {}, "labels": {"pt": "gambito irlandês"}}
+    found = wiki_name(entry, locale())
+    assert found is not None
+    assert found.name == "Gambito irlandês"
 
 
 def test_a_hyphenated_template_joins_the_proper_name(tmp_path):

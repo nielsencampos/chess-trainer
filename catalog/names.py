@@ -323,6 +323,8 @@ def wiki_name(entry: CacheEntry, locale: Locale, family: str | None = None) -> F
     else:
         for language in dict.fromkeys((locale.code.lower(), locale.wikipedia)):
             if label := entry["labels"].get(language):
+                # Labels are often in lower case ("gambit irlandais"); a name starts with a capital.
+                label = label[:1].upper() + label[1:]
                 found = Found(label, f"https://www.wikidata.org/wiki/{entry['item']}")
                 break
     if found and family:
