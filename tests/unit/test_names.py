@@ -1,12 +1,16 @@
 """catalog.names: filling a locale's opening names, with a fake Wikipedia lookup (brief §8)."""
 
+import email.message
+import io
 import json
+import urllib.error
 from pathlib import Path
 
 import pytest
 
 from app.book.source import read_opening_files
 from app.locales import Locale
+from catalog import names as names_module
 from catalog.names import OfflineError, Rules, WikipediaCache, fill_names, main
 from catalog.translations import (
     load_glossary,
@@ -360,3 +364,131 @@ def test_rules_translate_segment_by_segment(tmp_path, english, expected):
     path = tmp_path / "pt-BR.toml"
     path.write_text(GLOSSARY, encoding="utf-8")
     assert Rules(load_glossary(path)).translate(english) == expected
+
+
+class _Answer(io.BytesIO):
+    """A response body that works as a context manager, like urlopen's."""
+
+    def __enter__(self) -> "_Answer":
+        """Opens the answer.
+
+        Returns:
+            _Answer: Itself.
+        """
+        return self
+
+    def __exit__(self, *args: object) -> None:
+        """Closes the answer.
+
+        Args:
+            *args (object): The exception, if any.
+        """
+
+
+def _too_many(after: str | None) -> urllib.error.HTTPError:
+    """A "429 Too Many Requests" answer.
+
+    Args:
+        after (str | None): Its Retry-After header, if any.
+
+    Returns:
+        urllib.error.HTTPError: The error urlopen raises.
+    """
+    headers = email.message.Message()
+    if after is not None:
+        headers["Retry-After"] = after
+    return urllib.error.HTTPError("https://x", 429, "Too Many Requests", headers, None)
+
+
+def test_the_remote_waits_and_retries_when_asked_to_slow_down(monkeypatch):
+    """A 429 waits for its Retry-After, or for the doubling backoff, then tries again.
+
+    Args:
+        monkeypatch (pytest.MonkeyPatch): Replaces urlopen and sleep.
+    """
+    answers = [_too_many("7"), _too_many(None), _Answer(b'{"ok": true}')]
+    waits: list[float] = []
+
+    def urlopen(request: object, timeout: float) -> _Answer:
+        """Answers in turn.
+
+        Args:
+            request (object): The request.
+            timeout (float): The timeout.
+
+        Returns:
+            _Answer: The next answer.
+
+        Raises:
+            urllib.error.HTTPError: When the next answer is an error.
+        """
+        answer = answers.pop(0)
+        if isinstance(answer, Exception):
+            raise answer
+        return answer
+
+    monkeypatch.setattr(names_module.urllib.request, "urlopen", urlopen)
+    monkeypatch.setattr(names_module.time, "sleep", waits.append)
+    remote = names_module.WikidataRemote(pause=0, backoff=10)
+    assert remote._get("https://x", {}) == {"ok": True}
+    assert waits == [7.0, 20.0, 0]  # Retry-After, then the backoff of the second try
+
+
+def test_the_remote_gives_up_after_its_retries(monkeypatch):
+    """A refusal that never ends is raised after the last try.
+
+    Args:
+        monkeypatch (pytest.MonkeyPatch): Replaces urlopen and sleep.
+    """
+
+    def urlopen(request: object, timeout: float) -> None:
+        """Always refuses.
+
+        Args:
+            request (object): The request.
+            timeout (float): The timeout.
+
+        Raises:
+            urllib.error.HTTPError: Always.
+        """
+        raise _too_many("1")
+
+    monkeypatch.setattr(names_module.urllib.request, "urlopen", urlopen)
+    monkeypatch.setattr(names_module.time, "sleep", lambda seconds: None)
+    with pytest.raises(urllib.error.HTTPError):
+        names_module.WikidataRemote(pause=0)._get("https://x", {})
+
+
+def test_the_cache_is_saved_after_each_chunk(tmp_path, monkeypatch):
+    """A run stopped midway keeps the chunks it already looked up.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+        monkeypatch (pytest.MonkeyPatch): Makes the chunks small.
+    """
+    monkeypatch.setattr(names_module, "CHUNK", 2)
+
+    class Failing(FakeRemote):
+        """Fails on the second chunk."""
+
+        def fetch(self, titles: list[str]) -> dict:
+            """Looks titles up, or fails once two were asked for.
+
+            Args:
+                titles (list[str]): English titles.
+
+            Returns:
+                dict: The entry of each, or None.
+
+            Raises:
+                RuntimeError: On the second chunk.
+            """
+            if self.asked:
+                raise RuntimeError("stopped")
+            return super().fetch(titles)
+
+    path = tmp_path / "wikipedia.json"
+    cache = names_module.WikipediaCache(path, Failing(LOOKUPS))
+    with pytest.raises(RuntimeError):
+        cache.prefetch(["a", "b", "c"])
+    assert json.loads(path.read_text(encoding="utf-8")) == {"a": None, "b": None}
