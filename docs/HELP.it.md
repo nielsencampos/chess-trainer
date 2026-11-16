@@ -32,6 +32,7 @@ Chess Trainer serve ad allenarsi: esercita le tue aperture contro un bot che gio
 - Fai clic sui pezzi o trascinali. Il bot gioca le mosse di teoria della linea sorteggiata e, quando la teoria finisce o qualcuno ne esce, subentra Stockfish al livello scelto.
 - Le etichette sotto la scacchiera indicano a chi tocca, se sei ancora in teoria e dove tu o il bot ne siete usciti.
 - «Mostra le mosse», nel pannello destro, nasconde il nome dell'apertura e l'elenco delle mosse fino alla fine della partita: gioca senza indizi o annota le mosse su carta.
+- «Notazione», sotto la lingua, mostra le mosse con i simboli dei pezzi, con le lettere inglesi (Nf3, quelle dei file PGN e dei siti di scacchi) o con le lettere italiane (Cf3). Il pulsante accanto a «Mosse» cambia notazione, anche a metà partita, e passando il mouse su una mossa, o raggiungendola con Tab, la vedi nelle altre due. Il PGN usa sempre le lettere inglesi.
 - Con le premosse attive, puoi preparare una mossa mentre il bot pensa. Senza, «Ritira mossa» annulla la tua ultima mossa finché la risposta del bot non è ancora visibile.
 - Abbandona chiede un secondo clic, così un clic per sbaglio non chiude la partita.
 

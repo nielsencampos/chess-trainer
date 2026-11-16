@@ -32,6 +32,7 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 - Click or drag the pieces. The bot plays the book moves of the drawn line, and when theory ends, or someone leaves it, Stockfish takes over at the chosen level.
 - The chips under the board say whose move it is, whether you are still in theory, and where you or the bot left it.
 - Show moves, in the right bar, hides the opening name and the move list until the end of the game: play without hints, or write the moves on paper.
+- Notation, under the language, shows moves as piece symbols (figurines), in English letters (Nf3, the letters of PGN files and chess sites) or in your language's letters. The button beside Moves switches between them, mid-game too, and hovering a move, or reaching it with Tab, shows it in the other two. PGN files always use English letters.
 - With premoves on, you can queue one move while the bot thinks. With premoves off, Take back undoes your last move while the bot's reply is not shown yet.
 - Resign asks for a second click, so a stray click does not end the game.
 

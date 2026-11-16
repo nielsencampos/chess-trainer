@@ -32,6 +32,7 @@ Chess Trainer sirve para entrenar: practica tus aperturas contra un bot que jueg
 - Haz clic en las piezas o arrástralas. El bot juega las jugadas de libro de la línea sorteada y, cuando se acaba la teoría o alguien se sale de ella, Stockfish toma el relevo al nivel elegido.
 - Las etiquetas de debajo del tablero indican a quién le toca, si sigues dentro de la teoría y dónde os habéis salido de ella, tú o el bot.
 - Mostrar jugadas, en el panel derecho, oculta el nombre de la apertura y la lista de jugadas hasta que termina la partida: juega sin pistas o apunta las jugadas en papel.
+- Notación, debajo del idioma, muestra las jugadas con símbolos de las piezas, con letras en inglés (Nf3, las letras de los archivos PGN y de los sitios de ajedrez) o con letras en español (Cf3). El botón junto a Jugadas cambia la notación, incluso en mitad de la partida, y al pasar el ratón sobre una jugada, o al llegar a ella con Tab, la ves en las otras dos. El PGN siempre usa letras en inglés.
 - Con las jugadas anticipadas activadas, puedes dejar una jugada preparada mientras el bot piensa. Con ellas desactivadas, Deshacer jugada anula tu última jugada mientras aún no se ve la respuesta del bot.
 - Abandonar pide un segundo clic, para que un clic sin querer no acabe con la partida.
 

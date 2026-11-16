@@ -32,6 +32,7 @@ O Chess Trainer é para treinar: pratique suas aberturas contra um bot que joga 
 - Clique ou arraste as peças. O bot joga os lances de livro da linha sorteada e, quando a teoria acaba, ou alguém sai dela, o Stockfish assume no nível escolhido.
 - As etiquetas embaixo do tabuleiro mostram de quem é a vez, se você ainda está na teoria e onde você ou o bot saíram dela.
 - Mostrar lances, na barra da direita, esconde o nome da abertura e a lista de lances até o fim da partida: jogue sem dicas ou anote os lances no papel.
+- Notação, abaixo do idioma, mostra os lances com símbolos das peças, com letras em inglês (Nf3, as letras dos arquivos PGN e dos sites de xadrez) ou com letras em português (Cf3). O botão ao lado de Lances troca a notação, até no meio da partida, e passar o mouse num lance, ou chegar nele com Tab, mostra o lance nas outras duas. O PGN sempre usa letras em inglês.
 - Com pré-lances ligados, você pode deixar um lance na fila enquanto o bot pensa. Com pré-lances desligados, Voltar lance desfaz seu último lance enquanto a resposta do bot ainda não apareceu.
 - Abandonar pede um segundo clique, para que um clique sem querer não encerre a partida.
 
