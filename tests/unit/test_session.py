@@ -227,16 +227,40 @@ def test_engine_move_outside_theory_leaves_theory_without_deviation():
     assert game.theory_until_ply == 1
 
 
-def test_engine_move_inside_selected_theory_stays_in_theory():
-    """Engine move inside selected theory stays in theory."""
-    short, long = variant("a", "1. e4"), variant("b", "1. e4 c5 2. Nf3")
+def test_an_engine_move_is_never_theory_even_one_another_line_plays():
+    """Once the drawn line ended, an engine move that another selected line has is not theory."""
+    short, long = variant("a", "1. e4"), variant("b", "1. e4 c5 2. Nf3 Nc6 3. Bb5")
     game = session(short, long)
     game.variant = short
     game.play_user_move("e2e4")
     assert game.next_book_move() is None
     game.play_bot_move(chess.Move.from_uci("c7c5"), "engine")
-    assert game.in_theory
+    assert not game.in_theory
+    assert game.theory_until_ply == 1
+    assert game.left_theory_at_move == 1
+    game.play_user_move("g1f3")
+    assert game.next_book_move() is None  # the bot does not go back to the book
+
+
+def test_the_users_move_after_the_drawn_line_ends_leaves_theory_without_a_deviation():
+    """At the end of the drawn line theory ends, even where another selected line goes on."""
+    short, long = variant("a", "1. e4 c5"), variant("b", "1. e4 c5 2. Nf3 Nc6 3. Bb5")
+    game = session(short, long)
+    game.variant = short
+    game.play_user_move("e2e4")
+    bot_plays(game)
+    _, deviation = game.play_user_move("b1c3")  # neither line's move, but the drawn one ended
+    assert deviation is None
+    assert not game.in_theory
     assert game.theory_until_ply == 2
+
+    game = session(short, long)
+    game.variant = short
+    game.play_user_move("e2e4")
+    bot_plays(game)
+    game.play_user_move("g1f3")  # the other line's move: theory still ended
+    assert not game.in_theory
+    assert game.next_book_move() is None
 
 
 def test_user_move_outside_book_at_move_one_leaves_theory():

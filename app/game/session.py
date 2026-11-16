@@ -398,6 +398,9 @@ class GameSession:
     ) -> tuple[MoveRecord, Deviation | None]:
         """Plays the user's move, recording a deviation if it leaves theory where theory had a move.
 
+        At the end of the drawn line theory ends, even if another selected line goes on: the
+        move is out of theory, and not a deviation.
+
         Args:
             uci (str): The move in UCI.
             user_clock_ms (int | None): The user's clock after the move.
@@ -423,7 +426,9 @@ class GameSession:
             raise IllegalMoveError(uci)
 
         deviation = None
-        if self.in_theory:
+        if self.in_theory and self._drawn_line_ended():
+            self.in_theory = False
+        elif self.in_theory:
             expected = self.selection.moves_at(self.board.epd())
             if not self._stays_in_theory(move):
                 self.in_theory = False
@@ -547,7 +552,8 @@ class GameSession:
         """
         if self.is_over:
             raise GameFinishedError(self.game_id)
-        if self.in_theory and not self._stays_in_theory(move):
+        # The engine plays once the drawn line ended: never theory, even a move another line has.
+        if self.in_theory and (source == "engine" or not self._stays_in_theory(move)):
             self.in_theory = False
         return self._push(move, "bot", source, bot_clock_ms, think_ms)
 
@@ -635,6 +641,15 @@ class GameSession:
         self.theory_until_ply = max(
             (record.ply for record in self.moves if record.in_theory), default=0
         )
+
+    def _drawn_line_ended(self) -> bool:
+        """Whether the game is at the end of the drawn line, where theory ends.
+
+        Returns:
+            bool: True when the drawn line reaches this position and has no move from it.
+        """
+        epd = self.board.epd()
+        return epd in self.variant.positions and not self.variant.moves.get(epd)
 
     def _stays_in_theory(self, move: chess.Move) -> bool:
         """Whether a move is a theory move, or reaches a position of a selected line.
