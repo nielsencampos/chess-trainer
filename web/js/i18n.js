@@ -43,6 +43,8 @@ async function fetchStrings(name) {
  */
 async function load(requested) {
   const ticket = ++loading;
+  // The list of languages, for the direction, loads while the strings do.
+  const listed = availableLocales().catch(() => []);
   if (Object.keys(fallback).length === 0) fallback = await fetchStrings(DEFAULT_LOCALE);
   let chosen = requested;
   let mine = fallback;
@@ -54,7 +56,7 @@ async function load(requested) {
       chosen = DEFAULT_LOCALE;
     }
   }
-  const direction = await localeDirection(chosen);
+  const direction = directionOf(await listed, chosen);
   if (ticket !== loading) return false;
   own = mine;
   strings = { ...fallback, ...own };
@@ -66,11 +68,11 @@ async function load(requested) {
 
 /**
  * A language's text direction, from the locale registry through `/api/locales` (brief §8).
+ * @param {{code: string, dir: string}[]} locales  The languages; empty when the list failed.
  * @param {string} code  The language code.
- * @returns {Promise<string>} `rtl` or `ltr`; `ltr` when the list cannot be loaded.
+ * @returns {string} `rtl` or `ltr`; `ltr` when the language is not listed.
  */
-async function localeDirection(code) {
-  const locales = await availableLocales().catch(() => []);
+function directionOf(locales, code) {
   return locales.find((item) => item.code === code)?.dir === "rtl" ? "rtl" : "ltr";
 }
 
