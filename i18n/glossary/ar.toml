@@ -1,0 +1,523 @@
+# Chess glossary: Arabic (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
+# from the Arabic Wikipedia or Wikidata (`source`) or, when no page names it, `machine = true` with a
+# `note`. `avoid` lists the words the UI must not use for the term. The UI gives instructions in
+# the masculine singular imperative, as software in Arabic does ("اختر"). The Arabic Wikipedia
+# writes proper names in Arabic letters ("دفاع كارو-كان", "تغيير ناجدورف"), so no rule keeps an
+# English proper name (`keep_names = false`). Digits stay Western (0-9), as on the board (#37).
+
+# Proper names are written in Arabic letters: a glossary rule never keeps an English one (brief §8).
+keep_names = false
+
+[[terms]]
+term = "chess"
+translation = "شطرنج"
+source = "https://ar.wikipedia.org/wiki/شطرنج"
+
+[[terms]]
+term = "piece"
+translation = "قطعة"
+source = "https://ar.wikipedia.org/wiki/قطع_شطرنج"
+
+[[terms]]
+term = "king"
+translation = "ملك"
+source = "https://ar.wikipedia.org/wiki/ملك_(شطرنج)"
+
+[[terms]]
+term = "queen"
+translation = "وزير"
+source = "https://ar.wikipedia.org/wiki/وزير_(شطرنج)"
+note = "The article's title. Some opening names say \"الملكة\" (\"مناورة الملكة\"), as the Arabic Wikipedia titles them; the piece is \"وزير\"."
+
+[[terms]]
+term = "rook"
+translation = "رخ"
+source = "https://ar.wikipedia.org/wiki/رخ_(شطرنج)"
+avoid = ["طابية"]
+
+[[terms]]
+term = "pawn"
+translation = "بيدق"
+source = "https://ar.wikipedia.org/wiki/بيدق_(شطرنج)"
+avoid = ["جندي"]
+
+[[terms]]
+term = "board"
+translation = "رقعة"
+source = "https://ar.wikipedia.org/wiki/رقعة_شطرنج"
+
+[[terms]]
+term = "square"
+translation = "مربع"
+source = "https://ar.wikipedia.org/wiki/رقعة_شطرنج"
+
+[[terms]]
+term = "White"
+translation = "الأبيض"
+source = "https://ar.wikipedia.org/wiki/أبيض_وأسود_(شطرنج)"
+
+[[terms]]
+term = "Black"
+translation = "الأسود"
+source = "https://ar.wikipedia.org/wiki/أبيض_وأسود_(شطرنج)"
+
+[[terms]]
+term = "game"
+translation = "مباراة"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "move"
+translation = "نقلة"
+source = "https://ar.wikipedia.org/wiki/قاعدة_الخمسين_نقلة"
+note = "As the article's title writes it."
+
+[[terms]]
+term = "ply"
+translation = "نصف نقلة"
+machine = true
+note = "No Wikipedia page names it. Half a move: one side's move."
+
+[[terms]]
+term = "premove"
+translation = "نقلة مسبقة"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "take back"
+translation = "التراجع عن النقلة"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "castling"
+translation = "تبييت"
+source = "https://ar.wikipedia.org/wiki/تبييت"
+
+[[terms]]
+term = "check"
+translation = "كش"
+source = "https://ar.wikipedia.org/wiki/كش_(شطرنج)"
+
+[[terms]]
+term = "checkmate"
+translation = "كش مات"
+source = "https://ar.wikipedia.org/wiki/كش_مات"
+
+[[terms]]
+term = "stalemate"
+translation = "ردب"
+source = "https://ar.wikipedia.org/wiki/ردب_(شطرنج)"
+note = "The article's title."
+
+[[terms]]
+term = "draw"
+translation = "تعادل"
+source = "https://ar.wikipedia.org/wiki/تعادل_(شطرنج)"
+
+[[terms]]
+term = "resign"
+translation = "الاستسلام"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "insufficient material"
+translation = "عدم كفاية القطع"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "تكرار الوضعية ثلاثًا"
+source = "https://ar.wikipedia.org/wiki/تكرار_الوضعية_ثلاثا"
+note = "The article's title, with the tanwin written."
+
+[[terms]]
+term = "fivefold repetition"
+translation = "تكرار الوضعية خمسًا"
+machine = true
+note = "No Wikipedia page names it. The form of \"تكرار الوضعية ثلاثًا\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "قاعدة الخمسين نقلة"
+source = "https://ar.wikipedia.org/wiki/قاعدة_الخمسين_نقلة"
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "قاعدة الخمس والسبعين نقلة"
+machine = true
+note = "No Wikipedia page names it. The form of \"قاعدة الخمسين نقلة\"."
+
+[[terms]]
+term = "opening"
+translation = "افتتاحية"
+source = "https://ar.wikipedia.org/wiki/افتتاحية_(شطرنج)"
+
+[[terms]]
+term = "variation"
+translation = "تغيير"
+source = "https://ar.wikipedia.org/wiki/دفاع_صقلي_تغيير_ناجدورف"
+note = "As the article's title writes it (\"تغيير ناجدورف\")."
+
+[[terms]]
+term = "line"
+translation = "خط"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "theory"
+translation = "نظرية"
+source = "https://ar.wikipedia.org/wiki/نظرية_الشطرنج"
+
+[[terms]]
+term = "book move"
+translation = "نقلة نظرية"
+machine = true
+note = "No Wikipedia page names it. A move of the theory (\"نظرية\")."
+
+[[terms]]
+term = "deviation"
+translation = "انحراف"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "محرك شطرنج"
+source = "https://ar.wikipedia.org/wiki/محرك_شطرنج"
+
+[[terms]]
+term = "computer"
+translation = "حاسوب"
+source = "https://ar.wikipedia.org/wiki/حاسوب"
+
+[[terms]]
+term = "evaluation"
+translation = "تقييم"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "analysis"
+translation = "تحليل"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "نقلة رائعة"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "أفضل نقلة"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "نقلة ممتازة"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "عدم دقة"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "خطأ"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "فرصة ضائعة"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "خطأ فادح"
+machine = true
+note = "The Arabic Wikipedia's article is \"خطأ (شطرنج)\"; \"خطأ\" is the mistake here, so the blunder is the grave one."
+
+[[terms]]
+term = "time control"
+translation = "التحكم بالوقت"
+source = "https://ar.wikipedia.org/wiki/التحكم_بالوقت"
+
+[[terms]]
+term = "chess clock"
+translation = "ساعة الشطرنج"
+source = "https://ar.wikipedia.org/wiki/ساعة_الشطرنج"
+
+[[terms]]
+term = "increment"
+translation = "زيادة"
+machine = true
+note = "No Wikipedia page names it. The time added after each move."
+
+[[terms]]
+term = "delay"
+translation = "تأخير"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "bullet"
+translation = "رصاص"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "blitz"
+translation = "خاطف"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "rapid"
+translation = "سريع"
+source = "https://ar.wikipedia.org/wiki/شطرنج_سريع"
+
+[[terms]]
+term = "classical"
+translation = "كلاسيكي"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "scoresheet"
+translation = "ورقة التسجيل"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "arbiter"
+translation = "حكم"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "rating"
+translation = "تصنيف"
+source = "https://ar.wikipedia.org/wiki/نظام_التصنيف_في_الشطرنج"
+
+[[terms]]
+term = "grandmaster"
+translation = "أستاذ كبير"
+source = "https://ar.wikipedia.org/wiki/أستاذ_كبير_(شطرنج)"
+
+[[terms]]
+term = "International Master"
+translation = "أستاذ دولي"
+source = "https://www.wikidata.org/wiki/Q752119"
+
+[[terms]]
+term = "Woman International Master"
+translation = "أستاذة دولية"
+machine = true
+note = "Wikidata's label (\"أستاذة دولية كبيرة\") reads as a grandmaster title: the feminine of \"أستاذ دولي\"."
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "أستاذة فيدي"
+machine = true
+note = "No Wikipedia page names it. FIDE written in Arabic letters."
+
+[[terms]]
+term = "Chess960"
+translation = "شطرنج 960"
+source = "https://ar.wikipedia.org/wiki/شطرنج_960"
+
+[[terms]]
+term = "correspondence chess"
+translation = "شطرنج عن بعد"
+source = "https://ar.wikipedia.org/wiki/شطرنج_عن_بعد"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "أولمبياد الشطرنج"
+source = "https://ar.wikipedia.org/wiki/أولمبياد_الشطرنج"
+
+[[terms]]
+term = "touch-move rule"
+translation = "قاعدة اللمس والتحريك"
+source = "https://ar.wikipedia.org/wiki/قاعدة_اللمس_والتحريك"
+
+[[terms]]
+term = "capture"
+translation = "أخذ"
+source = "https://ar.wikipedia.org/wiki/أخذ_بالتجاوز"
+note = "As in the article's title (\"أخذ بالتجاوز\", en passant)."
+
+[[terms]]
+term = "tactics"
+translation = "تكتيك"
+source = "https://ar.wikipedia.org/wiki/تكتيك_الشطرنج"
+
+[[terms]]
+term = "strategy"
+translation = "إستراتيجية"
+source = "https://ar.wikipedia.org/wiki/إستراتيجية_الشطرنج"
+
+[[terms]]
+term = "sacrifice"
+translation = "تضحية"
+source = "https://ar.wikipedia.org/wiki/تضحية_(شطرنج)"
+
+[[terms]]
+term = "trap"
+translation = "فخ"
+source = "https://ar.wikipedia.org/wiki/قائمة_فخاخ_الشطرنج"
+
+[[terms]]
+term = "gambit"
+translation = "غامبت"
+source = "https://ar.wikipedia.org/wiki/غامبت"
+
+[[terms]]
+term = "King's Pawn"
+translation = "بيدق الملك"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "بيدق الوزير"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "flank"
+translation = "جناح"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "starting position"
+translation = "الوضعية الابتدائية"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "نابغة شطرنج"
+source = "https://ar.wikipedia.org/wiki/نابغة_شطرنج"
+
+[[terms]]
+term = "{name} Variation"
+translation = "تغيير {name}"
+source = "https://ar.wikipedia.org/wiki/دفاع_صقلي_تغيير_ناجدورف"
+note = "The article's \"تغيير ناجدورف\". For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Defense"
+translation = "دفاع {name}"
+source = "https://ar.wikipedia.org/wiki/دفاع_كارو-كان"
+note = "The article's \"دفاع كارو-كان\". For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "غامبت {name}"
+machine = true
+note = "No Wikipedia page names it. The form of \"غامبت\". For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "غامبت {name} المضاد"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Attack"
+translation = "هجوم {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "هجوم {name} المضاد"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Opening"
+translation = "افتتاحية {name}"
+source = "https://ar.wikipedia.org/wiki/افتتاحية_(شطرنج)"
+note = "For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} System"
+translation = "نظام {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Line"
+translation = "خط {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Formation"
+translation = "تشكيلة {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Trap"
+translation = "فخ {name}"
+source = "https://ar.wikipedia.org/wiki/قائمة_فخاخ_الشطرنج"
+note = "For opening names, segment by segment (brief §8); {name} is the proper name written in Arabic letters (\"ناجدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "Main Line"
+translation = "الخط الرئيسي"
+machine = true
+note = "No Wikipedia page names it."
+
+[[pieces]]
+piece = "K"
+letter = "م"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"ملك\". The Arabic Wikipedia's notation article (\"تدوين جبري (شطرنج)\") lists other letters (ف for the queen, فل and حص for the bishop and knight) but writes ف for the bishop and ح for the knight in its own examples; the table agrees with those and with the glossary's piece names."
+
+[[pieces]]
+piece = "Q"
+letter = "و"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"وزير\". The Arabic Wikipedia's notation article (\"تدوين جبري (شطرنج)\") lists other letters (ف for the queen, فل and حص for the bishop and knight) but writes ف for the bishop and ح for the knight in its own examples; the table agrees with those and with the glossary's piece names."
+
+[[pieces]]
+piece = "R"
+letter = "ر"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"رخ\". The Arabic Wikipedia's notation article (\"تدوين جبري (شطرنج)\") lists other letters (ف for the queen, فل and حص for the bishop and knight) but writes ف for the bishop and ح for the knight in its own examples; the table agrees with those and with the glossary's piece names."
+
+[[pieces]]
+piece = "B"
+letter = "ف"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"فيل\". The Arabic Wikipedia's notation article (\"تدوين جبري (شطرنج)\") lists other letters (ف for the queen, فل and حص for the bishop and knight) but writes ف for the bishop and ح for the knight in its own examples; the table agrees with those and with the glossary's piece names."
+
+[[pieces]]
+piece = "N"
+letter = "ح"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"حصان\". The Arabic Wikipedia's notation article (\"تدوين جبري (شطرنج)\") lists other letters (ف for the queen, فل and حص for the bishop and knight) but writes ف for the bishop and ح for the knight in its own examples; the table agrees with those and with the glossary's piece names."
+
+[[pieces]]
+piece = "P"
+letter = "ب"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"بيدق\". The Arabic Wikipedia's notation article (\"تدوين جبري (شطرنج)\") lists other letters (ف for the queen, فل and حص for the bishop and knight) but writes ف for the bishop and ح for the knight in its own examples; the table agrees with those and with the glossary's piece names. SAN never writes a pawn letter."

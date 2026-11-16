@@ -1,0 +1,530 @@
+# Chess glossary: Hebrew (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
+# from the Hebrew Wikipedia or Wikidata (`source`) or, when no page names it, `machine = true` with
+# a `note`. `avoid` lists the words the UI must not use for the term. The UI gives instructions in
+# the infinitive ("לבחור"), which has no gender. The Hebrew Wikipedia writes proper names in Hebrew
+# letters ("הגנת קארו-קאן"), so no rule keeps an English proper name (`keep_names = false`). Moves
+# keep the English piece letters, as he.wikipedia's notation article writes them (#37).
+
+# Proper names are written in Hebrew letters: a glossary rule never keeps an English one (brief §8).
+keep_names = false
+
+[[terms]]
+term = "chess"
+translation = "שחמט"
+source = "https://he.wikipedia.org/wiki/שחמט"
+
+[[terms]]
+term = "piece"
+translation = "כלי"
+source = "https://he.wikipedia.org/wiki/סימון_אלגברי_(שחמט)"
+note = "As the notation article names the pieces (\"כל סוג כלי\")."
+
+[[terms]]
+term = "king"
+translation = "מלך"
+source = "https://he.wikipedia.org/wiki/מלך_(שחמט)"
+
+[[terms]]
+term = "queen"
+translation = "מלכה"
+source = "https://he.wikipedia.org/wiki/מלכה_(שחמט)"
+
+[[terms]]
+term = "rook"
+translation = "צריח"
+source = "https://he.wikipedia.org/wiki/צריח_(שחמט)"
+
+[[terms]]
+term = "pawn"
+translation = "רגלי"
+source = "https://he.wikipedia.org/wiki/רגלי"
+
+[[terms]]
+term = "board"
+translation = "לוח"
+source = "https://he.wikipedia.org/wiki/לוח_שחמט"
+
+[[terms]]
+term = "square"
+translation = "משבצת"
+source = "https://he.wikipedia.org/wiki/סימון_אלגברי_(שחמט)"
+note = "As the notation article names a square."
+
+[[terms]]
+term = "White"
+translation = "לבן"
+source = "https://he.wikipedia.org/wiki/סימון_אלגברי_(שחמט)"
+note = "The notation article's \"השחקן הלבן\"."
+
+[[terms]]
+term = "Black"
+translation = "שחור"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "game"
+translation = "משחק"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "move"
+translation = "מסע"
+source = "https://he.wikipedia.org/wiki/תיקו_(שחמט)"
+note = "As the article's \"חוק חמישים המסעים\" writes it; the notation article also says \"מהלך\"."
+
+[[terms]]
+term = "ply"
+translation = "חצי מסע"
+machine = true
+note = "No Wikipedia page names it. Half a move: one side's move."
+
+[[terms]]
+term = "premove"
+translation = "מסע מוקדם"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "take back"
+translation = "ביטול מסע"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "castling"
+translation = "הצרחה"
+source = "https://he.wikipedia.org/wiki/הצרחה"
+
+[[terms]]
+term = "check"
+translation = "שח"
+source = "https://he.wikipedia.org/wiki/שח"
+
+[[terms]]
+term = "checkmate"
+translation = "מט"
+source = "https://he.wikipedia.org/wiki/מט"
+
+[[terms]]
+term = "stalemate"
+translation = "פט"
+source = "https://he.wikipedia.org/wiki/פט"
+
+[[terms]]
+term = "draw"
+translation = "תיקו"
+source = "https://he.wikipedia.org/wiki/תיקו_(שחמט)"
+
+[[terms]]
+term = "resign"
+translation = "כניעה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "insufficient material"
+translation = "חומר לא מספיק"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "חזרה משולשת"
+machine = true
+note = "The Hebrew Wikipedia's section is \"חוק שלושה מסעים חוזרים\" (in \"תיקו (שחמט)\"); the UI's shorter form."
+
+[[terms]]
+term = "fivefold repetition"
+translation = "חזרה מחומשת"
+machine = true
+note = "No Wikipedia page names it. The form of \"חזרה משולשת\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "חוק חמישים המסעים"
+source = "https://he.wikipedia.org/wiki/תיקו_(שחמט)"
+note = "The article's section title."
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "חוק שבעים וחמישה המסעים"
+machine = true
+note = "No Wikipedia page names it. The form of \"חוק חמישים המסעים\"."
+
+[[terms]]
+term = "opening"
+translation = "פתיחה"
+source = "https://he.wikipedia.org/wiki/פתיחה_(שחמט)"
+
+[[terms]]
+term = "variation"
+translation = "וריאנט"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "line"
+translation = "קו"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "theory"
+translation = "תאוריה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "book move"
+translation = "מסע ספר"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "deviation"
+translation = "סטייה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "מנוע שחמט"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "computer"
+translation = "מחשב"
+source = "https://he.wikipedia.org/wiki/מחשב"
+
+[[terms]]
+term = "evaluation"
+translation = "הערכה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "analysis"
+translation = "ניתוח"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "מסע מבריק"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "המסע הטוב ביותר"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "מסע מצוין"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "אי-דיוק"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "טעות"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "החמצה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "טעות גסה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "time control"
+translation = "בקרת זמן"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess clock"
+translation = "שעון שחמט"
+source = "https://he.wikipedia.org/wiki/שעון_שחמט"
+
+[[terms]]
+term = "increment"
+translation = "תוספת זמן"
+machine = true
+note = "No Wikipedia page names it. The time added after each move."
+
+[[terms]]
+term = "delay"
+translation = "השהיה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "bullet"
+translation = "בולט"
+machine = true
+note = "No Wikipedia page names it. Transliterated, as Hebrew chess sites write it."
+
+[[terms]]
+term = "blitz"
+translation = "בזק"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "rapid"
+translation = "מהיר"
+source = "https://he.wikipedia.org/wiki/שחמט_מהיר"
+
+[[terms]]
+term = "classical"
+translation = "קלאסי"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "scoresheet"
+translation = "טופס רישום"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "arbiter"
+translation = "שופט"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "rating"
+translation = "דירוג"
+source = "https://he.wikipedia.org/wiki/מערכת_הדירוג_בשחמט"
+
+[[terms]]
+term = "grandmaster"
+translation = "רב-אמן"
+source = "https://he.wikipedia.org/wiki/רב-אמן"
+
+[[terms]]
+term = "International Master"
+translation = "אמן בין-לאומי"
+source = "https://www.wikidata.org/wiki/Q752119"
+
+[[terms]]
+term = "Woman International Master"
+translation = "אמנית בין-לאומית"
+source = "https://www.wikidata.org/wiki/Q3314851"
+note = "Wikidata's label without \"לנשים\": the feminine says it already."
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "אמנית פיד\"ה"
+machine = true
+note = "No Wikipedia page names it. FIDE as the Hebrew Wikipedia writes it (\"פיד\\\"ה\")."
+
+[[terms]]
+term = "Chess960"
+translation = "שחמט 960"
+source = "https://he.wikipedia.org/wiki/שחמט_960"
+
+[[terms]]
+term = "correspondence chess"
+translation = "שחמט בהתכתבות"
+source = "https://he.wikipedia.org/wiki/שחמט_בהתכתבות"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "אולימפיאדת השחמט"
+source = "https://he.wikipedia.org/wiki/אולימפיאדת_השחמט"
+
+[[terms]]
+term = "touch-move rule"
+translation = "נגעת-נסעת"
+source = "https://he.wikipedia.org/wiki/נגעת-נסעת"
+
+[[terms]]
+term = "capture"
+translation = "הכאה"
+source = "https://he.wikipedia.org/wiki/הכאה_דרך_הילוכו"
+note = "As in the article's title (\"הכאה דרך הילוכו\", en passant)."
+
+[[terms]]
+term = "tactics"
+translation = "טקטיקה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "strategy"
+translation = "אסטרטגיה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "sacrifice"
+translation = "הקרבה"
+source = "https://he.wikipedia.org/wiki/הקרבה_(שחמט)"
+
+[[terms]]
+term = "trap"
+translation = "מלכודת"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "gambit"
+translation = "גמביט"
+source = "https://he.wikipedia.org/wiki/גמביט_(שחמט)"
+
+[[terms]]
+term = "King's Pawn"
+translation = "רגלי המלך"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "רגלי המלכה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "flank"
+translation = "אגף"
+source = "https://he.wikipedia.org/wiki/פתיחת_איגוף"
+note = "The article's \"איגוף\" is flanking; \"אגף\" is the flank itself."
+
+[[terms]]
+term = "starting position"
+translation = "עמדת הפתיחה"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "ילד פלא"
+source = "https://he.wikipedia.org/wiki/ילד_פלא_בשחמט"
+
+[[terms]]
+term = "{name} Variation"
+translation = "וריאנט {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Defense"
+translation = "הגנת {name}"
+source = "https://he.wikipedia.org/wiki/הגנת_קארו-קאן"
+note = "The article's \"הגנת קארו-קאן\". For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "גמביט {name}"
+source = "https://he.wikipedia.org/wiki/גמביט_המלך"
+note = "The article's \"גמביט המלך\". For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "גמביט-נגד {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Attack"
+translation = "התקפת {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "התקפת-נגד {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Opening"
+translation = "פתיחת {name}"
+source = "https://he.wikipedia.org/wiki/פתיחת_איגוף"
+note = "The article's \"פתיחת איגוף\". For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} System"
+translation = "שיטת {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Line"
+translation = "קו {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Formation"
+translation = "מערך {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Trap"
+translation = "מלכודת {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "Main Line"
+translation = "הקו הראשי"
+machine = true
+note = "No Wikipedia page names it."
+
+[[pieces]]
+piece = "K"
+letter = "K"
+source = "https://he.wikipedia.org/wiki/סימון_אלגברי_(שחמט)"
+note = "The Hebrew Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
+
+[[pieces]]
+piece = "Q"
+letter = "Q"
+source = "https://he.wikipedia.org/wiki/סימון_אלגברי_(שחמט)"
+note = "The Hebrew Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
+
+[[pieces]]
+piece = "R"
+letter = "R"
+source = "https://he.wikipedia.org/wiki/סימון_אלגברי_(שחמט)"
+note = "The Hebrew Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
+
+[[pieces]]
+piece = "B"
+letter = "B"
+source = "https://he.wikipedia.org/wiki/סימון_אלגברי_(שחמט)"
+note = "The Hebrew Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
+
+[[pieces]]
+piece = "N"
+letter = "N"
+source = "https://he.wikipedia.org/wiki/סימון_אלגברי_(שחמט)"
+note = "The Hebrew Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
+
+[[pieces]]
+piece = "P"
+letter = "P"
+source = "https://he.wikipedia.org/wiki/סימון_אלגברי_(שחמט)"
+note = "The Hebrew Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."

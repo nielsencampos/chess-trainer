@@ -1,0 +1,8 @@
+# he gives instructions in the infinitive ("לבחור"), which has no gender: no pronoun of address
+# ("אתה", "אתם", "אתן"). "את" is left out: it is also the object marker.
+extends: existence
+message: "Use the infinitive, without gender, not '%s'."
+level: error
+nonword: true
+tokens:
+  - '(?:^|(?<=[\s"(]))(?:אתה|אתם|אתן)(?=[\s,.!?;:")]|$)'
