@@ -38,7 +38,7 @@ GLOSSARY_FIELDS = {"term", "translation", "source", "machine", "note", "avoid"}
 PIECE_FIELDS = {"piece", "letter", "source", "machine", "note"}
 # The English SAN letters, in the order the web app's `notation.pieces` key lists them.
 PIECES = ("K", "Q", "R", "B", "N", "P")
-NAME_FIELDS = {"name", "source", "rule", "machine", "note"}
+NAME_FIELDS = {"name", "source", "rule", "machine", "note", "rejected"}
 KINDS = ("families", "subgroups", "lines")
 # A localized name: its kind and its key (family id, family id and English subgroup name, or
 # line id).
@@ -80,12 +80,16 @@ class NameSource:
         origin (str): `source`, `rule` or `machine`.
         source (str | None): The Wikipedia or Wikidata URL, for `source`.
         note (str | None): Why a choice was made, if one was.
+        rejected (str | None): A Wikipedia or Wikidata page that names the item wrongly (a
+            vandalized label, an unrelated article), added by hand with a `note`: the run takes
+            no name from it.
     """
 
     name: str
     origin: str
     source: str | None = None
     note: str | None = None
+    rejected: str | None = None
 
 
 def _origin(entry: dict, where: str, allowed: tuple[str, ...]) -> tuple[str, str | None]:
@@ -381,7 +385,14 @@ def load_name_sources(path: Path) -> dict[NameKey, NameSource]:
         if unknown := set(entry) - NAME_FIELDS:
             raise TranslationError(f"{where}: unknown fields {sorted(unknown)}")
         origin, source = _origin(entry, where, ORIGINS)
-        sources[key] = NameSource(_text(entry, "name", where), origin, source, entry.get("note"))
+        rejected = entry.get("rejected")
+        if rejected is not None and not (
+            isinstance(rejected, str) and rejected.startswith("https://")
+        ):
+            raise TranslationError(f"{where}: rejected must be a page's URL")
+        sources[key] = NameSource(
+            _text(entry, "name", where), origin, source, entry.get("note"), rejected
+        )
     return sources
 
 
