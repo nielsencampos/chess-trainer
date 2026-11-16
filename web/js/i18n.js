@@ -11,6 +11,8 @@ const RENAMED = /** @type {Record<string, string>} */ ({ en: "en-US", es: "es-41
 let fallback = {};
 /** @type {Record<string, string>} */
 let strings = {};
+/** @type {Record<string, string>} The current language's own strings, without the fallback. */
+let own = {};
 let locale = DEFAULT_LOCALE;
 // Bumped on every switch, so a slow file that arrives after a newer choice is ignored.
 let loading = 0;
@@ -41,16 +43,17 @@ async function load(requested) {
   const ticket = ++loading;
   if (Object.keys(fallback).length === 0) fallback = await fetchStrings(DEFAULT_LOCALE);
   let chosen = requested;
-  let own = fallback;
+  let mine = fallback;
   if (requested !== DEFAULT_LOCALE) {
     try {
-      own = await fetchStrings(requested);
+      mine = await fetchStrings(requested);
     } catch (error) {
       console.error(error);
       chosen = DEFAULT_LOCALE;
     }
   }
   if (ticket !== loading) return false;
+  own = mine;
   strings = { ...fallback, ...own };
   locale = chosen;
   document.documentElement.lang = locale;
@@ -193,7 +196,12 @@ function pluralKey(key, count) {
  */
 function applyI18n(root) {
   for (const element of root.querySelectorAll("[data-i18n]")) {
-    element.textContent = t(element.getAttribute("data-i18n") ?? "");
+    const key = element.getAttribute("data-i18n") ?? "";
+    element.textContent = t(key);
+    // English shown in another language keeps English rules: with lang="tr", uppercase would
+    // turn its "i" into "İ". A variant of English (en-GB) holds only what differs, on purpose.
+    if (key in own || !(key in fallback) || locale.startsWith("en-")) element.removeAttribute("lang");
+    else element.setAttribute("lang", DEFAULT_LOCALE);
   }
   for (const element of root.querySelectorAll("[data-i18n-placeholder]")) {
     element.setAttribute("placeholder", t(element.getAttribute("data-i18n-placeholder") ?? ""));
