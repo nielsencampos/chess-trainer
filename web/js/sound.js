@@ -87,7 +87,10 @@ class SoundPlayer {
     // Decoding needs no gesture in an offline context, so the files are ready for the first move.
     if (typeof OfflineAudioContext !== "undefined") this.load(new OfflineAudioContext(1, 1, 44100));
     this.unlocked = false;
-    /** Allows audio after the first user gesture, then stops listening. */
+    /**
+     * Allows audio after the first user gesture, then stops listening.
+     * @returns {void}
+     */
     const unlock = () => {
       this.unlocked = true;
       this.ready();
@@ -197,14 +200,20 @@ export const sound = new SoundPlayer();
  * @returns {void}
  */
 export function initSoundControls(button, slider) {
-  /** Labels the button and enables the slider as sound is on or off. */
+  /**
+   * Labels the button and enables the slider as sound is on or off.
+   * @returns {void}
+   */
   const render = () => {
     button.textContent = t(sound.enabled ? "sound.on" : "sound.off");
     button.setAttribute("aria-pressed", String(sound.enabled));
     slider.disabled = !sound.enabled;
   };
   slider.value = String(sound.volume);
-  /** Labels the slider in the current language. */
+  /**
+   * Labels the slider in the current language.
+   * @returns {void}
+   */
   const label = () => slider.setAttribute("aria-label", t("sound.volume"));
   label();
   onLocaleChange(() => {

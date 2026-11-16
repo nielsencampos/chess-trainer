@@ -547,6 +547,21 @@ class GameService:
         if session.is_over or session.is_user_turn:  # another request already played it
             return None
         ply = session.ply
+        # A take-back and a new move during the search bring the ply back: compare the last move.
+        last = session.moves[-1] if session.moves else None
+
+        def changed() -> bool:
+            """Says whether a flag, resign or take-back came during the search.
+
+            Returns:
+                bool: True if the game ended or is no longer the one the search started from.
+            """
+            return (
+                session.is_over
+                or session.ply != ply
+                or (session.moves[-1] if session.moves else None) is not last
+            )
+
         bot_clock_ms = session.bot_clock_ms
         book_move = session.next_book_move()
         search_started = time.monotonic()
@@ -554,7 +569,7 @@ class GameService:
         deviation = None
         if book_move is not None and session.rolls_for_deviation() and session.roll_deviation():
             deviation = await self._deviation_move(session, budget)
-            if session.is_over or session.ply != ply:  # a flag or take-back during the search
+            if changed():
                 return None
         if deviation is not None:
             move, source = deviation
@@ -563,7 +578,7 @@ class GameService:
         else:
             move = await self.engine.play(session.board, self.levels[session.level], budget)
             source = "engine"
-            if session.is_over or session.ply != ply:  # a flag or take-back during the search
+            if changed():
                 return None
         in_book = source == "book"
         delay_ms = (

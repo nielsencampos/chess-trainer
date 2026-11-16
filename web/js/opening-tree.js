@@ -291,7 +291,10 @@ export class OpeningTree {
 
     const list = document.createElement("div");
     list.className = "tree-children";
-    /** Builds the level's content once. */
+    /**
+     * Builds the level's content once.
+     * @returns {void}
+     */
     const build = () => {
       if (!list.hasChildNodes()) list.append(...children());
     };

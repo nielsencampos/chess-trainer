@@ -129,7 +129,10 @@ export function initLayout() {
       if (!handle.hasPointerCapture(event.pointerId)) return;
       resize(bar, onLeft(bar) ? event.clientX : window.innerWidth - event.clientX);
     });
-    /** Ends a drag. */
+    /**
+     * Ends a drag.
+     * @returns {void}
+     */
     const stop = () => document.body.classList.remove("is-resizing");
     handle.addEventListener("pointerup", stop);
     handle.addEventListener("pointercancel", stop);
@@ -150,7 +153,10 @@ export function initLayout() {
     });
     apply(bar);
   }
-  /** Labels the handles and buttons in the current language. */
+  /**
+   * Labels the handles and buttons in the current language.
+   * @returns {void}
+   */
   const label = () => {
     for (const bar of BARS) {
       byId(bar.handle).setAttribute("aria-label", t(`layout.resize.${bar.key}`));

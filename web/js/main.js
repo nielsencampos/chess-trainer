@@ -153,8 +153,14 @@ async function main() {
       },
     );
     game.previewFen = () => setup.previewFen();
+    // The screen is usable while the active game loads: a game started meanwhile wins, and a
+    // review opened meanwhile gives the board back to the game being resumed.
+    const generation = game.generation;
     const { game: active } = await api.activeGame();
-    if (active) game.resume(active, setup.clockFor(active.setup.time_control));
+    if (active && game.generation === generation) {
+      review?.close();
+      game.resume(active, setup.clockFor(active.setup.time_control));
+    }
     const buildTag = health.engine.build_tag ? ` (${health.engine.build_tag})` : "";
     byId("footer-versions").textContent =
       `Chess Trainer ${health.app_version} · ${health.engine.name}${buildTag}`;

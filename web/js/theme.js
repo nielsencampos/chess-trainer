@@ -26,7 +26,10 @@ function apply(theme) {
 export function initTheme(button) {
   let theme = getPref("theme", "auto");
   if (!THEMES.includes(theme)) theme = "auto";
-  /** Applies the theme and labels the button in the current language. */
+  /**
+   * Applies the theme and labels the button in the current language.
+   * @returns {void}
+   */
   const render = () => {
     apply(theme);
     button.textContent = t(`theme.${theme}`);

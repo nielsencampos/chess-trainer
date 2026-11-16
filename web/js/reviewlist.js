@@ -53,18 +53,18 @@ export function linkMoves(moves) {
  * @returns {string} Such as `4.2s`, `35s` or `2:05`, in the language's number format (`4,2 s`).
  */
 function formatSpent(ms) {
-  if (ms < 60_000) {
-    const digits = ms < 10_000 ? 1 : 0;
-    return new Intl.NumberFormat(getFormatLocale(), {
-      style: "unit",
-      unit: "second",
-      unitDisplay: "narrow",
-      minimumFractionDigits: digits,
-      maximumFractionDigits: digits,
-    }).format(digits ? ms / 1000 : Math.round(ms / 1000));
-  }
+  // Rounded first, so 9.96 s reads 10 s (not 10.0 s) and 59.6 s reads 1:00 (not 60 s).
+  const tenths = Math.round(ms / 100);
   const seconds = Math.round(ms / 1000);
-  return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+  if (seconds >= 60) return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+  const digits = tenths < 100 ? 1 : 0;
+  return new Intl.NumberFormat(getFormatLocale(), {
+    style: "unit",
+    unit: "second",
+    unitDisplay: "narrow",
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits,
+  }).format(digits ? tenths / 10 : seconds);
 }
 
 /**
