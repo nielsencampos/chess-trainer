@@ -1,5 +1,6 @@
-# Weekly update PRs for the Python dependencies (uv), the workflow actions and the base image.
-# Stockfish is not here: the image always resolves its latest release at build time.
+# Weekly update PRs for the Python dependencies (uv) and the workflow actions. The base image is not
+# here: it is named through an `ARG`, which Dependabot does not follow (`docker compose build --pull`
+# updates it). Stockfish is not here either: the image resolves its latest release at build time.
 version: 2
 updates:
   - package-ecosystem: uv
@@ -16,7 +17,3 @@ updates:
     groups:
       actions:
         patterns: ["*"]
-  - package-ecosystem: docker
-    directory: /
-    schedule:
-      interval: weekly
