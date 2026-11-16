@@ -104,6 +104,8 @@ uv sync
 uv run pytest
 ```
 
+{{readme.develop.session}}
+
 {{readme.develop.pictures}}
 
 ```bash

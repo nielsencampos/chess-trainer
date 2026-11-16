@@ -1,6 +1,6 @@
 {
   "readme.logo": "Chess Trainer 로고: C, T, 펜, 시계가 그려진 체스판의 네 칸",
-  "readme.intro": "내 컴퓨터에서 도는 체스 트레이너: 실제 시계 설정으로 Stockfish와 대국하고, 오프닝 북을 따르며 이론에서 벗어난 곳을 알려 주는 봇을 상대로 오프닝을 연습하고, PGN, Chess.com, Lichess의 대국을 평가 막대와 함께 복기하세요. Chess960도 포함. {count}개 언어로, 모두 하나의 Docker 이미지에 들어 있습니다. 내 컴퓨터(amd64 또는 arm64)에서 돌아가며, 대국에 계정도 인터넷도 필요 없습니다.",
+  "readme.intro": "내 컴퓨터에서 도는 체스 트레이너: 실제 시계 설정으로 Stockfish와 대국하고, 오프닝 북을 따르며 이론에서 벗어난 곳을 알려 주는 봇을 상대로 오프닝을 연습하고, PGN, Chess.com, Lichess의 대국을 평가 막대와 함께 복기하세요. Chess960도 포함. 여러 언어를 지원하며, 하나의 Docker 이미지나 Linux, Windows, macOS용 데스크톱 앱으로 쓸 수 있습니다. 내 컴퓨터(amd64 또는 arm64)에서 돌아가며, 대국에 계정도 인터넷도 필요 없습니다.",
   "readme.reviewed": "검토된 언어는 미국 영어, 브라질 포르투갈어, 중남미 스페인어뿐입니다. 영국 영어를 포함한 다른 모든 언어는 기계 번역이며 검토되지 않았습니다. 수정 제안을 환영합니다: [Translation fix issue]({fix})를 열어 주세요.",
   "readme.run.title": "실행",
   "readme.run.needs": "Compose가 포함된 Docker가 필요합니다.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "실행 중인 버전은 페이지 하단과 `/api/health`에 표시됩니다. 빌드에서 GitHub 요청 한도가 보고되면 한 시간 기다리세요. 토큰 없이는 시간당 API 요청 60회가 한도입니다.",
   "readme.develop.title": "개발",
   "readme.develop.needs": "[uv](https://docs.astral.sh/uv/)가 필요합니다. 테스트 명령과 규칙은 [CLAUDE.md](CLAUDE.md)에, 기여 방법은 [CONTRIBUTING.md](CONTRIBUTING.md)에 영어로 있습니다.",
+  "readme.develop.session": "AI 코딩 도우미와 작업할 때는 [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md)의 프롬프트로 세션을 시작하세요.",
   "readme.develop.pictures": "도움말의 그림은 언어별 앱 스크린숏입니다. UI가 눈에 띄게 바뀌면 실행 중인 앱을 대상으로 다시 만드세요(앱이 대국을 두고 기권합니다):",
   "readme.develop.docs": "`docs/HELP*.md`와 `docs/ABOUT*.md`는 도움말과 정보 화면의 문자열에서, `README*.md`와 `HOW_TO_INSTALL*.md`는 `i18n/docs/`에서 만들어집니다. 바꾼 뒤에는 `uv run python scripts/help_docs.py`와 `uv run python scripts/readme_docs.py`를 실행하세요. 파일이 오래되면 테스트가 실패합니다.",
   "readme.license.title": "라이선스",

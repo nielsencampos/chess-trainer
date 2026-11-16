@@ -10,7 +10,7 @@
 
 > यह अनुवाद मशीन से किया गया है और इसकी समीक्षा नहीं हुई है। सुधारों का स्वागत है: [सुधार सुझाएँ](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=hi)
 
-आपके कंप्यूटर पर चलने वाला शतरंज ट्रेनर: असली घड़ी सेटिंग के साथ Stockfish से खेलें, ऐसे बॉट के ख़िलाफ़ अपने उद्घाटन का अभ्यास करें जो किताब का पालन करता है और बताता है कि आप सिद्धांत से कहाँ हटे, और PGN, Chess.com या Lichess से आए अपने खेलों की मूल्यांकन बार के साथ समीक्षा करें। Chess960 भी शामिल है। 27 भाषाओं में, सब एक Docker इमेज में। यह आपकी अपनी मशीन (amd64 या arm64) पर चलता है, खेलने के लिए न खाता चाहिए न इंटरनेट।
+आपके कंप्यूटर पर चलने वाला शतरंज ट्रेनर: असली घड़ी सेटिंग के साथ Stockfish से खेलें, ऐसे बॉट के ख़िलाफ़ अपने उद्घाटन का अभ्यास करें जो किताब का पालन करता है और बताता है कि आप सिद्धांत से कहाँ हटे, और PGN, Chess.com या Lichess से आए अपने खेलों की मूल्यांकन बार के साथ समीक्षा करें। Chess960 भी शामिल है। कई भाषाओं में, एक Docker इमेज या Linux, Windows और macOS के लिए डेस्कटॉप ऐप के रूप में। यह आपकी अपनी मशीन (amd64 या arm64) पर चलता है, खेलने के लिए न खाता चाहिए न इंटरनेट।
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ STOCKFISH_VERSION=sf_19 docker compose build
 uv sync
 uv run pytest
 ```
+
+किसी AI कोडिंग सहायक के साथ काम करने के लिए, सत्र [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) के प्रॉम्प्ट से शुरू करें।
 
 सहायता के चित्र हर भाषा में ऐप के स्क्रीनशॉट हैं। इंटरफ़ेस में दिखने वाले बदलाव के बाद, चलते हुए ऐप पर उन्हें फिर से बनाएँ (वह खेल खेलता है और हार मान लेता है):
 

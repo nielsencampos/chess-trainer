@@ -10,7 +10,7 @@
 
 > Cette traduction a été faite automatiquement et n'a pas été relue. Les corrections sont les bienvenues : [proposer une correction](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=fr)
 
-Entraîneur d'échecs local : jouez contre Stockfish avec de vraies cadences de pendule, travaillez vos ouvertures contre un bot qui suit le livre et signale où vous êtes sorti de la théorie, et revoyez vos parties depuis un PGN, Chess.com ou Lichess avec une barre d'évaluation. Chess960 compris. En 27 langues, le tout dans une image Docker. Il fonctionne sur votre propre machine (amd64 ou arm64), sans compte et sans internet pour jouer.
+Entraîneur d'échecs local : jouez contre Stockfish avec de vraies cadences de pendule, travaillez vos ouvertures contre un bot qui suit le livre et signale où vous êtes sorti de la théorie, et revoyez vos parties depuis un PGN, Chess.com ou Lichess avec une barre d'évaluation. Chess960 compris. Multilingue, en une image Docker ou en application de bureau pour Linux, Windows et macOS. Il fonctionne sur votre propre machine (amd64 ou arm64), sans compte et sans internet pour jouer.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ Nécessite [uv](https://docs.astral.sh/uv/). Les commandes de test et les conven
 uv sync
 uv run pytest
 ```
+
+Pour travailler avec un assistant de programmation par IA, commencez la session avec le prompt de [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).
 
 Les images de l'Aide sont des captures d'écran de l'application dans chaque langue. Après un changement visible de l'interface, refaites-les avec l'application lancée (elle joue des parties et abandonne) :
 

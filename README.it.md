@@ -10,7 +10,7 @@
 
 > Questa traduzione è stata fatta automaticamente e non è stata rivista. Le correzioni sono benvenute: [suggerisci una correzione](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=it)
 
-Allenatore di scacchi locale: gioca contro Stockfish con cadenze reali dell'orologio, allena le tue aperture contro un bot che segue il libro e segnala dove sei uscito dalla teoria, e rivedi le tue partite da PGN, Chess.com o Lichess con una barra di valutazione. Chess960 incluso. In 27 lingue, tutto in un'immagine Docker. Funziona sul tuo computer (amd64 o arm64), senza account e senza internet per giocare.
+Allenatore di scacchi locale: gioca contro Stockfish con cadenze reali dell'orologio, allena le tue aperture contro un bot che segue il libro e segnala dove sei uscito dalla teoria, e rivedi le tue partite da PGN, Chess.com o Lichess con una barra di valutazione. Chess960 incluso. Multilingue, come un'immagine Docker o un'app desktop per Linux, Windows e macOS. Funziona sul tuo computer (amd64 o arm64), senza account e senza internet per giocare.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ Serve [uv](https://docs.astral.sh/uv/). I comandi di test e le convenzioni sono 
 uv sync
 uv run pytest
 ```
+
+Per lavorare con un assistente di programmazione basato sull'IA, inizia la sessione con il prompt di [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).
 
 Le immagini della Guida sono schermate dell'app in ogni lingua. Dopo una modifica visibile dell'interfaccia, rifalle con l'app in esecuzione (gioca partite e abbandona):
 

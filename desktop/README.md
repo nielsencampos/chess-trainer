@@ -1,4 +1,4 @@
-# Desktop app (proof of concept)
+# Desktop app
 
 The same app as the Docker image, in a native window: `launcher.py` starts the server on
 `127.0.0.1:47800` and opens it with [pywebview](https://pywebview.flowrl.com/): Qt WebEngine on
@@ -98,6 +98,6 @@ magick /tmp/icon-824.png -background none -gravity center -extent 1024x1024 -str
 
 ## Not done yet
 
-- Signing with paid certificates (Windows Authenticode, Apple notarization), and an installer.
+- Signing with paid certificates (Windows Authenticode, Apple notarization).
 - A Linux arm64 build.
 - A second launch opens a second window on the first one's server instead of focusing the first.

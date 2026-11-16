@@ -1,6 +1,6 @@
 {
   "readme.logo": "Logo Chess Trainer: bốn ô bàn cờ với chữ C, T, một cây bút và một chiếc đồng hồ",
-  "readme.intro": "Phần mềm luyện cờ chạy trên máy: chơi với Stockfish bằng các thiết lập đồng hồ thật, luyện khai cuộc với một bot đi theo sách và đánh dấu chỗ bạn rời lý thuyết, và xem lại các ván cờ từ PGN, Chess.com hoặc Lichess với thanh đánh giá. Có cả Chess960. Bằng {count} ngôn ngữ, tất cả trong một image Docker. Chạy trên máy của bạn (amd64 hoặc arm64), không cần tài khoản và không cần internet để chơi.",
+  "readme.intro": "Phần mềm luyện cờ chạy trên máy: chơi với Stockfish bằng các thiết lập đồng hồ thật, luyện khai cuộc với một bot đi theo sách và đánh dấu chỗ bạn rời lý thuyết, và xem lại các ván cờ từ PGN, Chess.com hoặc Lichess với thanh đánh giá. Có cả Chess960. Đa ngôn ngữ, dưới dạng một image Docker hoặc ứng dụng máy tính cho Linux, Windows và macOS. Chạy trên máy của bạn (amd64 hoặc arm64), không cần tài khoản và không cần internet để chơi.",
   "readme.reviewed": "Chỉ tiếng Anh Mỹ, tiếng Bồ Đào Nha Brazil và tiếng Tây Ban Nha Mỹ Latinh đã được duyệt lại. Mọi ngôn ngữ khác, kể cả tiếng Anh Anh, đều do máy dịch và chưa được duyệt lại. Rất hoan nghênh các góp ý sửa lỗi: hãy mở một [issue Translation fix]({fix}).",
   "readme.run.title": "Chạy",
   "readme.run.needs": "Bạn cần Docker cùng Compose.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "Phiên bản đang chạy nằm ở chân trang và tại `/api/health`. Nếu build báo giới hạn tốc độ của GitHub, hãy đợi một giờ: không có token thì giới hạn là 60 yêu cầu API mỗi giờ.",
   "readme.develop.title": "Phát triển",
   "readme.develop.needs": "Cần [uv](https://docs.astral.sh/uv/). Các lệnh kiểm thử và quy ước nằm trong [CLAUDE.md](CLAUDE.md), còn cách đóng góp nằm trong [CONTRIBUTING.md](CONTRIBUTING.md), bằng tiếng Anh.",
+  "readme.develop.session": "Để làm việc với trợ lý lập trình AI, hãy bắt đầu phiên bằng lời nhắc trong [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).",
   "readme.develop.pictures": "Hình trong Trợ giúp là ảnh chụp màn hình ứng dụng bằng từng ngôn ngữ. Sau một thay đổi giao diện nhìn thấy được, hãy tạo lại chúng với ứng dụng đang chạy (nó sẽ chơi và xin thua các ván):",
   "readme.develop.docs": "`docs/HELP*.md` và `docs/ABOUT*.md` được viết từ văn bản của màn hình Trợ giúp và Giới thiệu, còn `README*.md` và `HOW_TO_INSTALL*.md` từ `i18n/docs/`. Sau khi thay đổi, hãy chạy `uv run python scripts/help_docs.py` và `uv run python scripts/readme_docs.py`; một bài kiểm thử sẽ thất bại khi các tệp chưa được cập nhật.",
   "readme.license.title": "Giấy phép",

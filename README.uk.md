@@ -10,7 +10,7 @@
 
 > Цей переклад зроблено машиною, і його не перевірено. Виправлення вітаються: [запропонувати виправлення](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=uk)
 
-Локальний шаховий тренажер: грайте зі Stockfish зі справжніми налаштуваннями годинника, відпрацьовуйте дебюти проти бота, який іде за книгою і позначає, де ви вийшли з теорії, і розбирайте свої партії з PGN, Chess.com або Lichess зі шкалою оцінки. Chess960 теж є. 27 мовами, усе в одному образі Docker. Працює на вашому комп'ютері (amd64 або arm64), без облікового запису й без інтернету для гри.
+Локальний шаховий тренажер: грайте зі Stockfish зі справжніми налаштуваннями годинника, відпрацьовуйте дебюти проти бота, який іде за книгою і позначає, де ви вийшли з теорії, і розбирайте свої партії з PGN, Chess.com або Lichess зі шкалою оцінки. Chess960 теж є. Багатомовний, у вигляді одного образу Docker або настільного застосунку для Linux, Windows і macOS. Працює на вашому комп'ютері (amd64 або arm64), без облікового запису й без інтернету для гри.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ STOCKFISH_VERSION=sf_19 docker compose build
 uv sync
 uv run pytest
 ```
+
+Для роботи з ШІ-помічником із програмування почніть сеанс із запиту з [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).
 
 Картинки в довідці — знімки екрана застосунку кожною мовою. Після помітної зміни інтерфейсу зробіть їх знову на запущеному застосунку (він грає партії й здається):
 

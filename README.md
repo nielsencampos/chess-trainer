@@ -10,7 +10,7 @@
 
 > Corrections are welcome: [suggest a correction](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=en-US)
 
-Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that follows the book and flags where you left theory, and review your games from PGN, Chess.com or Lichess with an evaluation bar. Chess960 included. In 27 languages, all in one Docker image. It runs on your own machine (amd64 or arm64), with no accounts and no internet needed to play.
+Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that follows the book and flags where you left theory, and review your games from PGN, Chess.com or Lichess with an evaluation bar. Chess960 included. Multilingual, as one Docker image or a desktop app for Linux, Windows and macOS. It runs on your own machine (amd64 or arm64), with no accounts and no internet needed to play.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ Needs [uv](https://docs.astral.sh/uv/). Test commands and conventions are in [CL
 uv sync
 uv run pytest
 ```
+
+To work with an AI coding assistant, start the session with the prompt in [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).
 
 The pictures in Help are screenshots of the app in each language. After a visible UI change, make them again against a running app (it plays and resigns games):
 

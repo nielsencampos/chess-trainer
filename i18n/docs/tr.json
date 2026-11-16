@@ -1,6 +1,6 @@
 {
   "readme.logo": "Chess Trainer logosu: C, T, bir kalem ve bir saat bulunan dört tahta karesi",
-  "readme.intro": "Yerel satranç antrenörü: gerçek saat ayarlarıyla Stockfish'e karşı oynayın, açılışlarınızı kitabı izleyen ve teoriden nerede çıktığınızı gösteren bir bota karşı çalışın, PGN, Chess.com veya Lichess'ten gelen oyunlarınızı değerlendirme çubuğuyla inceleyin. Chess960 dahil. {count} dilde, hepsi tek bir Docker imajında. Kendi makinenizde (amd64 veya arm64) çalışır; oynamak için hesap ve internet gerekmez.",
+  "readme.intro": "Yerel satranç antrenörü: gerçek saat ayarlarıyla Stockfish'e karşı oynayın, açılışlarınızı kitabı izleyen ve teoriden nerede çıktığınızı gösteren bir bota karşı çalışın, PGN, Chess.com veya Lichess'ten gelen oyunlarınızı değerlendirme çubuğuyla inceleyin. Chess960 dahil. Çok dilli; tek bir Docker imajı ya da Linux, Windows ve macOS için bir masaüstü uygulaması olarak. Kendi makinenizde (amd64 veya arm64) çalışır; oynamak için hesap ve internet gerekmez.",
   "readme.reviewed": "Yalnızca ABD İngilizcesi, Brezilya Portekizcesi ve Latin Amerika İspanyolcası gözden geçirilmiştir. İngiliz İngilizcesi dahil diğer tüm diller makine çevirisidir ve gözden geçirilmemiştir. Düzeltmeler memnuniyetle karşılanır: bir [Translation fix issue]({fix}) açın.",
   "readme.run.title": "Çalıştırma",
   "readme.run.needs": "Compose ile birlikte Docker gerekir.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "Çalışan sürüm sayfanın alt bilgisinde ve `/api/health` adresindedir. Derleme bir GitHub istek sınırı bildirirse bir saat bekleyin: token olmadan sınır saatte 60 API isteğidir.",
   "readme.develop.title": "Geliştirme",
   "readme.develop.needs": "[uv](https://docs.astral.sh/uv/) gerekir. Test komutları ve kurallar [CLAUDE.md](CLAUDE.md) dosyasında, nasıl katkıda bulunulacağı [CONTRIBUTING.md](CONTRIBUTING.md) dosyasında, İngilizce olarak yer alır.",
+  "readme.develop.session": "Bir yapay zekâ kodlama asistanıyla çalışırken oturuma [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) içindeki istemle başlayın.",
   "readme.develop.pictures": "Yardım'daki resimler, uygulamanın her dildeki ekran görüntüleridir. Görünür bir arayüz değişikliğinden sonra onları çalışan bir uygulamaya karşı yeniden oluşturun (uygulama oyunlar oynar ve terk eder):",
   "readme.develop.docs": "`docs/HELP*.md` ve `docs/ABOUT*.md`, Yardım ve Hakkında ekranlarının metinlerinden; `README*.md` ve `HOW_TO_INSTALL*.md` ise `i18n/docs/` içinden yazılır. Değiştirdikten sonra `uv run python scripts/help_docs.py` ve `uv run python scripts/readme_docs.py` çalıştırın; dosyalar güncel olmadığı sürece bir test başarısız olur.",
   "readme.license.title": "Lisans",

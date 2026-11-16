@@ -1,6 +1,6 @@
 {
   "readme.logo": "Logo do Chess Trainer: quatro casas de tabuleiro com C, T, uma caneta e um relógio",
-  "readme.intro": "Treinador local de xadrez: jogue contra o Stockfish com os relógios de verdade, pratique suas aberturas contra um bot que segue o livro e mostra onde você saiu da teoria, e revise suas partidas de PGN, Chess.com ou Lichess com barra de avaliação. Tem Chess960. Em {count} idiomas, tudo numa imagem Docker. Roda na sua máquina (amd64 ou arm64), sem conta e sem precisar de internet para jogar.",
+  "readme.intro": "Treinador local de xadrez: jogue contra o Stockfish com os relógios de verdade, pratique suas aberturas contra um bot que segue o livro e mostra onde você saiu da teoria, e revise suas partidas de PGN, Chess.com ou Lichess com barra de avaliação. Tem Chess960. Multilíngue, como uma imagem Docker ou um app de desktop para Linux, Windows e macOS. Roda na sua máquina (amd64 ou arm64), sem conta e sem precisar de internet para jogar.",
   "readme.reviewed": "Só o inglês dos EUA, o português do Brasil e o espanhol da América Latina são revisados. Os outros idiomas, inglês do Reino Unido incluído, são traduções automáticas e não foram revisados. Para sugerir uma correção, abra uma [issue de correção de tradução]({fix}).",
   "readme.run.title": "Para rodar",
   "readme.run.needs": "Você precisa do Docker com o Compose.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "A versão em uso aparece no rodapé da página e em `/api/health`. Se a geração da imagem acusar o limite de requisições do GitHub, espere uma hora: o limite é de 60 requisições à API por hora sem token.",
   "readme.develop.title": "Para desenvolver",
   "readme.develop.needs": "Precisa do [uv](https://docs.astral.sh/uv/). Os comandos de teste e as convenções estão no [CLAUDE.md](CLAUDE.md), e como contribuir no [CONTRIBUTING.md](CONTRIBUTING.md), em inglês.",
+  "readme.develop.session": "Para trabalhar com um assistente de programação com IA, comece a sessão com o prompt de [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).",
   "readme.develop.pictures": "As imagens da Ajuda são capturas de tela do app em cada idioma. Depois de uma mudança visível na interface, gere-as de novo com o app rodando (ele joga e abandona partidas):",
   "readme.develop.docs": "`docs/HELP*.md` e `docs/ABOUT*.md` são gerados dos textos das telas de Ajuda e Sobre, e `README*.md` e `HOW_TO_INSTALL*.md` de `i18n/docs/`. Depois de mudá-los, rode `uv run python scripts/help_docs.py` e `uv run python scripts/readme_docs.py`; um teste falha enquanto os arquivos estiverem desatualizados.",
   "readme.license.title": "Licença",

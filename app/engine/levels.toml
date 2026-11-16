@@ -1,4 +1,4 @@
-# Bot strength levels. Provisional until Phase 3 calibrates them.
+# Bot strength levels. Provisional: not measured, and measuring them is not planned (brief §12).
 #
 # Stockfish 19 notes: UCI_Elo has a floor of 1320, and the Stockfish FAQ estimates
 # Skill Level 0 at about 1347, so anything weaker has to come from limiting the search.

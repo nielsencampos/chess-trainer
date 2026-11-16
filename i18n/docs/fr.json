@@ -1,6 +1,6 @@
 {
   "readme.logo": "Logo de Chess Trainer : quatre cases d'échiquier avec C, T, un stylo et une pendule",
-  "readme.intro": "Entraîneur d'échecs local : jouez contre Stockfish avec de vraies cadences de pendule, travaillez vos ouvertures contre un bot qui suit le livre et signale où vous êtes sorti de la théorie, et revoyez vos parties depuis un PGN, Chess.com ou Lichess avec une barre d'évaluation. Chess960 compris. En {count} langues, le tout dans une image Docker. Il fonctionne sur votre propre machine (amd64 ou arm64), sans compte et sans internet pour jouer.",
+  "readme.intro": "Entraîneur d'échecs local : jouez contre Stockfish avec de vraies cadences de pendule, travaillez vos ouvertures contre un bot qui suit le livre et signale où vous êtes sorti de la théorie, et revoyez vos parties depuis un PGN, Chess.com ou Lichess avec une barre d'évaluation. Chess960 compris. Multilingue, en une image Docker ou en application de bureau pour Linux, Windows et macOS. Il fonctionne sur votre propre machine (amd64 ou arm64), sans compte et sans internet pour jouer.",
   "readme.reviewed": "Seuls l'anglais des États-Unis, le portugais du Brésil et l'espagnol d'Amérique latine sont relus. Toutes les autres langues, anglais britannique compris, sont traduites automatiquement et non relues. Les corrections sont les bienvenues : ouvrez une [issue Translation fix]({fix}).",
   "readme.run.title": "Lancer",
   "readme.run.needs": "Il vous faut Docker avec Compose.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "La version utilisée figure en bas de page et sur `/api/health`. Si le build signale une limite de débit de GitHub, attendez une heure : la limite est de 60 requêtes d'API par heure sans jeton.",
   "readme.develop.title": "Développer",
   "readme.develop.needs": "Nécessite [uv](https://docs.astral.sh/uv/). Les commandes de test et les conventions sont dans [CLAUDE.md](CLAUDE.md), et la façon de contribuer dans [CONTRIBUTING.md](CONTRIBUTING.md), en anglais.",
+  "readme.develop.session": "Pour travailler avec un assistant de programmation par IA, commencez la session avec le prompt de [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).",
   "readme.develop.pictures": "Les images de l'Aide sont des captures d'écran de l'application dans chaque langue. Après un changement visible de l'interface, refaites-les avec l'application lancée (elle joue des parties et abandonne) :",
   "readme.develop.docs": "`docs/HELP*.md` et `docs/ABOUT*.md` sont écrits à partir des textes des écrans Aide et À propos, et `README*.md` et `HOW_TO_INSTALL*.md` à partir de `i18n/docs/`. Après une modification, lancez `uv run python scripts/help_docs.py` et `uv run python scripts/readme_docs.py` ; un test échoue tant que les fichiers ne sont pas à jour.",
   "readme.license.title": "Licence",

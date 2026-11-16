@@ -1,6 +1,6 @@
 {
   "readme.logo": "Logo Chess Trainer: empat petak papan dengan C, T, sebuah pena, dan sebuah jam",
-  "readme.intro": "Pelatih catur lokal: bermain melawan Stockfish dengan pengaturan jam sungguhan, latih pembukaan Anda melawan bot yang mengikuti buku dan menandai di mana Anda keluar dari teori, serta tinjau permainan Anda dari PGN, Chess.com, atau Lichess dengan bilah evaluasi. Termasuk Chess960. Dalam {count} bahasa, semuanya dalam satu image Docker. Berjalan di mesin Anda sendiri (amd64 atau arm64), tanpa akun dan tanpa internet untuk bermain.",
+  "readme.intro": "Pelatih catur lokal: bermain melawan Stockfish dengan pengaturan jam sungguhan, latih pembukaan Anda melawan bot yang mengikuti buku dan menandai di mana Anda keluar dari teori, serta tinjau permainan Anda dari PGN, Chess.com, atau Lichess dengan bilah evaluasi. Termasuk Chess960. Multibahasa, sebagai satu image Docker atau aplikasi desktop untuk Linux, Windows, dan macOS. Berjalan di mesin Anda sendiri (amd64 atau arm64), tanpa akun dan tanpa internet untuk bermain.",
   "readme.reviewed": "Hanya bahasa Inggris AS, Portugis Brasil, dan Spanyol Amerika Latin yang sudah ditinjau. Semua bahasa lain, termasuk Inggris Britania, diterjemahkan oleh mesin dan belum ditinjau. Koreksi sangat diterima: buka [issue Translation fix]({fix}).",
   "readme.run.title": "Menjalankan",
   "readme.run.needs": "Anda memerlukan Docker dengan Compose.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "Versi yang berjalan ada di footer halaman dan di `/api/health`. Jika build melaporkan batas laju GitHub, tunggu satu jam: batasnya 60 permintaan API per jam tanpa token.",
   "readme.develop.title": "Pengembangan",
   "readme.develop.needs": "Memerlukan [uv](https://docs.astral.sh/uv/). Perintah pengujian dan konvensi ada di [CLAUDE.md](CLAUDE.md), dan cara berkontribusi di [CONTRIBUTING.md](CONTRIBUTING.md), dalam bahasa Inggris.",
+  "readme.develop.session": "Untuk bekerja dengan asisten pemrograman AI, mulai sesi dengan prompt di [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).",
   "readme.develop.pictures": "Gambar di Bantuan adalah tangkapan layar aplikasi dalam setiap bahasa. Setelah perubahan antarmuka yang terlihat, buat ulang gambar itu terhadap aplikasi yang sedang berjalan (aplikasi akan memainkan dan menyerahkan permainan):",
   "readme.develop.docs": "`docs/HELP*.md` dan `docs/ABOUT*.md` ditulis dari teks layar Bantuan dan Tentang, sedangkan `README*.md` dan `HOW_TO_INSTALL*.md` dari `i18n/docs/`. Setelah mengubahnya, jalankan `uv run python scripts/help_docs.py` dan `uv run python scripts/readme_docs.py`; sebuah tes gagal selama berkas belum diperbarui.",
   "readme.license.title": "Lisensi",

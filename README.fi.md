@@ -10,7 +10,7 @@
 
 > Tämä käännös on konekäännös, eikä sitä ole tarkistettu. Korjaukset ovat tervetulleita: [ehdota korjausta](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=fi)
 
-Paikallinen shakkivalmentaja: pelaa Stockfishia vastaan oikeilla kelloasetuksilla, harjoittele avauksiasi bottia vastaan, joka seuraa kirjaa ja näyttää, missä poistuit teoriasta, ja käy pelisi läpi PGN:stä, Chess.comista tai Lichessistä arviopalkin kanssa. Chess960 mukana. 27 kielellä, kaikki yhdessä Docker-imagessa. Se toimii omalla koneellasi (amd64 tai arm64) ilman tiliä ja ilman internetiä pelaamiseen.
+Paikallinen shakkivalmentaja: pelaa Stockfishia vastaan oikeilla kelloasetuksilla, harjoittele avauksiasi bottia vastaan, joka seuraa kirjaa ja näyttää, missä poistuit teoriasta, ja käy pelisi läpi PGN:stä, Chess.comista tai Lichessistä arviopalkin kanssa. Chess960 mukana. Monikielinen, yhtenä Docker-imagena tai työpöytäsovelluksena Linuxille, Windowsille ja macOS:lle. Se toimii omalla koneellasi (amd64 tai arm64) ilman tiliä ja ilman internetiä pelaamiseen.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ Tarvitsee [uv](https://docs.astral.sh/uv/):n. Testikomennot ja käytännöt ovat
 uv sync
 uv run pytest
 ```
+
+Jos työskentelet tekoälyavustajan kanssa, aloita istunto tiedoston [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) kehotteella.
 
 Ohjeen kuvat ovat kuvakaappauksia sovelluksesta kullakin kielellä. Näkyvän käyttöliittymämuutoksen jälkeen ota ne uudelleen käynnissä olevaa sovellusta vasten (se pelaa pelejä ja luovuttaa ne):
 

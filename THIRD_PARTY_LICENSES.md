@@ -19,6 +19,9 @@ project, and they are under GPL-3.0-only like the rest of it.
 | Noto Sans Arabic | `web/fonts/` (the `arabic` subset, weights 400, 600 and 700) | Fontsource 5.3.0 | OFL-1.1 | The Noto Project Authors |
 | Noto Sans Hebrew | `web/fonts/` (the `hebrew` subset, weights 400, 600 and 700) | Fontsource 5.3.0 | OFL-1.1 | The Noto Project Authors |
 | JetBrains Mono | `web/fonts/` (the `latin`, `latin-ext`, `vietnamese` and `cyrillic` subsets, weights 400 and 700) | Fontsource 5.3.0 | OFL-1.1 | The JetBrains Mono Project Authors |
+| Python and the base image | The Docker image | `python:3.13-slim-trixie` (Debian), <https://hub.docker.com/_/python> | PSF-2.0 (Python); Debian packages under their own licenses | Python Software Foundation; the Debian project |
+| python-chess, FastAPI, Uvicorn, DuckDB and their dependencies (Starlette, Pydantic, AnyIO and others) | The Docker image and the desktop packages | The versions in `uv.lock` | GPL-3.0-or-later (python-chess); the others MIT, BSD-3-Clause or Apache-2.0, as each package's metadata says | Niklas Fiekas (python-chess); each package's authors |
+| Opening names from Wikipedia and Wikidata | The localized names in `openings/`, recorded in `i18n/names/` and `i18n/wikipedia.json` | Article titles of each language's Wikipedia, and Wikidata labels | Wikidata: CC0-1.0; a title is a name, not a text | Wikidata and Wikipedia contributors |
 | ponytail skills | `.claude/skills/ponytail*/` (Claude Code skills for development, not shipped in the image) | `DietrichGebert/ponytail` at `96608e0` | MIT (text below) | DietrichGebert |
 
 ### Desktop app
@@ -36,7 +39,8 @@ dependencies from `pyproject.toml`, the Stockfish build for that system (with it
 | platformdirs | All packages: finds the user's data folder | 4.14.5, <https://github.com/tox-dev/platformdirs> | MIT | The platformdirs developers |
 | PyInstaller bootloader | All packages: the executable that starts the app | 6.22.3, <https://pyinstaller.org/> | GPL-2.0-or-later with the PyInstaller bootloader exception | The PyInstaller Development Team |
 | Qt 6 (Qt Base, Qt WebEngine and the modules they need) | Linux package | PyQt6-Qt6 6.12.0 and PyQt6-WebEngine-Qt6 6.140.0 wheels, <https://www.qt.io/> | LGPL-3.0 (Qt WebEngine embeds Chromium, under BSD-3-Clause and the licenses listed in its `about:credits`) | The Qt Company Ltd. and other contributors |
-| PyQt6, PyQt6-WebEngine, PyQt6-sip | Linux package: Python bindings for Qt | 6.12.0, 6.140.0 and 13.13.0, <https://riverbankcomputing.com/software/pyqt/> | GPL-3.0-only (PyQt6-sip: BSD-2-Clause) | Riverbank Computing Limited |
+| PyQt6, PyQt6-WebEngine, PyQt6-sip | Linux package: Python bindings for Qt | 6.12.1, 6.140.1 and 13.13.1, <https://riverbankcomputing.com/software/pyqt/> | GPL-3.0-only (PyQt6-sip: BSD-2-Clause) | Riverbank Computing Limited |
+| pyinstaller-hooks-contrib | All packages: PyInstaller's runtime hooks for the bundled libraries | 2026.10, <https://github.com/pyinstaller/pyinstaller-hooks-contrib> | GPL-2.0-or-later or Apache-2.0 (runtime hooks: Apache-2.0) | PyInstaller Development Team |
 | QtPy | Linux package, used by pywebview | 2.4.3, <https://github.com/spyder-ide/qtpy> | MIT | QtPy contributors |
 | Inno Setup | Windows installer (`…-setup.exe`): the setup and uninstall program around the app | 6.7, <https://jrsoftware.org/isinfo.php> | Inno Setup License (permissive, <https://jrsoftware.org/files/is/license.txt>) | Jordan Russell and Martijn Laan |
 | pythonnet, clr-loader | Windows package: pywebview's bridge to WebView2 | 3.2.1 and 0.3.1, <https://github.com/pythonnet/pythonnet> | MIT | The Contributors of the Python.NET Project |

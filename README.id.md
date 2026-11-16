@@ -10,7 +10,7 @@
 
 > Terjemahan ini dibuat oleh mesin dan belum ditinjau. Koreksi sangat diterima: [usulkan koreksi](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=id)
 
-Pelatih catur lokal: bermain melawan Stockfish dengan pengaturan jam sungguhan, latih pembukaan Anda melawan bot yang mengikuti buku dan menandai di mana Anda keluar dari teori, serta tinjau permainan Anda dari PGN, Chess.com, atau Lichess dengan bilah evaluasi. Termasuk Chess960. Dalam 27 bahasa, semuanya dalam satu image Docker. Berjalan di mesin Anda sendiri (amd64 atau arm64), tanpa akun dan tanpa internet untuk bermain.
+Pelatih catur lokal: bermain melawan Stockfish dengan pengaturan jam sungguhan, latih pembukaan Anda melawan bot yang mengikuti buku dan menandai di mana Anda keluar dari teori, serta tinjau permainan Anda dari PGN, Chess.com, atau Lichess dengan bilah evaluasi. Termasuk Chess960. Multibahasa, sebagai satu image Docker atau aplikasi desktop untuk Linux, Windows, dan macOS. Berjalan di mesin Anda sendiri (amd64 atau arm64), tanpa akun dan tanpa internet untuk bermain.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ Memerlukan [uv](https://docs.astral.sh/uv/). Perintah pengujian dan konvensi ada
 uv sync
 uv run pytest
 ```
+
+Untuk bekerja dengan asisten pemrograman AI, mulai sesi dengan prompt di [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).
 
 Gambar di Bantuan adalah tangkapan layar aplikasi dalam setiap bahasa. Setelah perubahan antarmuka yang terlihat, buat ulang gambar itu terhadap aplikasi yang sedang berjalan (aplikasi akan memainkan dan menyerahkan permainan):
 

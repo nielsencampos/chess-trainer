@@ -10,7 +10,7 @@
 
 > この翻訳は機械翻訳で、まだ確認されていません。修正を歓迎します： [修正を提案する](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=ja)
 
-ローカルで動くチェストレーナー：本物の時計設定で Stockfish と対局し、定跡書に従って定跡から外れた場所を示すボットを相手にオープニングを練習し、PGN、Chess.com、Lichess の対局を評価バー付きで振り返れます。Chess960 にも対応。27 の言語に対応し、すべてが 1 つの Docker イメージに入っています。自分のマシン（amd64 または arm64）で動き、対局にアカウントもインターネットも要りません。
+ローカルで動くチェストレーナー：本物の時計設定で Stockfish と対局し、定跡書に従って定跡から外れた場所を示すボットを相手にオープニングを練習し、PGN、Chess.com、Lichess の対局を評価バー付きで振り返れます。Chess960 にも対応。多言語に対応し、1 つの Docker イメージとしても、Linux、Windows、macOS 用のデスクトップアプリとしても使えます。自分のマシン（amd64 または arm64）で動き、対局にアカウントもインターネットも要りません。
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ STOCKFISH_VERSION=sf_19 docker compose build
 uv sync
 uv run pytest
 ```
+
+AI コーディングアシスタントと作業するときは、[docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) のプロンプトでセッションを始めてください。
 
 ヘルプの画像は各言語のアプリのスクリーンショットです。UI に目に見える変更をしたら、起動中のアプリに対して作り直してください（アプリが対局して投了します）：
 

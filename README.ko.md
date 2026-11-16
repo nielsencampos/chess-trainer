@@ -10,7 +10,7 @@
 
 > 이 번역은 기계 번역이며 아직 검토되지 않았습니다. 수정 제안을 환영합니다: [수정 제안하기](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=ko)
 
-내 컴퓨터에서 도는 체스 트레이너: 실제 시계 설정으로 Stockfish와 대국하고, 오프닝 북을 따르며 이론에서 벗어난 곳을 알려 주는 봇을 상대로 오프닝을 연습하고, PGN, Chess.com, Lichess의 대국을 평가 막대와 함께 복기하세요. Chess960도 포함. 27개 언어로, 모두 하나의 Docker 이미지에 들어 있습니다. 내 컴퓨터(amd64 또는 arm64)에서 돌아가며, 대국에 계정도 인터넷도 필요 없습니다.
+내 컴퓨터에서 도는 체스 트레이너: 실제 시계 설정으로 Stockfish와 대국하고, 오프닝 북을 따르며 이론에서 벗어난 곳을 알려 주는 봇을 상대로 오프닝을 연습하고, PGN, Chess.com, Lichess의 대국을 평가 막대와 함께 복기하세요. Chess960도 포함. 여러 언어를 지원하며, 하나의 Docker 이미지나 Linux, Windows, macOS용 데스크톱 앱으로 쓸 수 있습니다. 내 컴퓨터(amd64 또는 arm64)에서 돌아가며, 대국에 계정도 인터넷도 필요 없습니다.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ STOCKFISH_VERSION=sf_19 docker compose build
 uv sync
 uv run pytest
 ```
+
+AI 코딩 도우미와 작업할 때는 [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md)의 프롬프트로 세션을 시작하세요.
 
 도움말의 그림은 언어별 앱 스크린숏입니다. UI가 눈에 띄게 바뀌면 실행 중인 앱을 대상으로 다시 만드세요(앱이 대국을 두고 기권합니다):
 
