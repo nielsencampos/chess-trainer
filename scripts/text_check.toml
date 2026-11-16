@@ -24,7 +24,7 @@ all = [
     "Niklas", "Fiekas", "Hernandez", "Marroquin", "Badrap",
     # The language links at the top of each document.
     "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch", "Français", "Italiano",
-    "Türkçe", "Polski", "Nederlands", "Bahasa", "Indonesia", "Tiếng", "Việt",
+    "Türkçe", "Polski", "Nederlands", "Bahasa", "Indonesia", "Tiếng", "Việt", "Svenska", "Dansk", "Norsk", "bokmål", "Suomi",
 ]
 en-US = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
@@ -83,6 +83,29 @@ nl = [
     "schaakmaker", "Merida-stukken", "python-chess", "I", "I'm", "Not", "my",
     "backend-engineer",  # the author's own words on the About page
     "python", "chess", "result",  # the names python-chess and @badrap/result
+    "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+]
+sv = [
+    "patt", "Onoggrannhet", "pjässymboler", "50-dragsregeln", "75-dragsregeln", "FIDE-id",
+    "FIDE-mästare", "FIDE-världsmästare", "PGN-filer", "Merida-pjäserna", "Staffordgambiten",
+    "streamare", "youtuber", "auto", "Home", "End", "Sf3", "1", "coms",
+    "Ubisofts", "Campos", "Florencia", "Molina", "Barbosa", "Armando", "Vasyl", "python-chess",
+    "How", "to", "Win", "at", "Searching", "Championship", "Oh", "no", "my",
+    "queen",  # English titles
+    "backendingenjör",  # the author's own words on the About page
+    "python", "chess", "result", "badrap",  # the names python-chess and @badrap/result
+    "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+]
+da = [
+    "bot", "Bot", "botten", "Botten", "bottens", "Bottens", "briksymboler", "femfoldig",
+    "træksreglen", "50-træksreglen", "75-træksreglen", "FIDE-id", "FIDE-mester", "FIDE-verdensmester",
+    "PGN-filer", "Merida-brikkerne", "Stafford-gambitten", "Stockfishs", "youtuber", "ECO", "Home",
+    "Nf", "Sf", "c", "d", "coms", "Ubisofts", "Campos", "Florencia", "Molina",
+    "Barbosa", "Armando", "US", "python-chess",
+    "How", "to", "Win", "at", "Searching", "Championship", "Oh", "no", "my",
+    "queen",  # English titles
+    "backendingeniør",  # the author's own words on the About page
+    "python", "chess", "result", "badrap",  # the names python-chess and @badrap/result
     "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
 ]
 pt-PT = [
@@ -158,6 +181,8 @@ pl = [
     "ZDANIA_ZLOZONE",  # UI labels named in a sentence ("Odznacz Pokaż posunięcia") read as verbs
 ]
 nl = []
+sv = []
+da = []
 
 [ignore]
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.
@@ -251,4 +276,13 @@ nl = [
     { text = "pat", rule = "PAT" },  # stalemate
     { text = "um", rule = "NL_SIMPLE_REPLACE_UM" },  # a quote of Mecking's book
     { text = "Oh", rule = "NL_SIMPLE_REPLACE_OH" },  # "Oh no, my queen!" is quoted in English
+]
+sv = [
+    { text = "väntat", rule = "UPPERCASE_SENTENCE_START" },  # "expected {expected}", a fragment
+    { text = "kommer", rule = "UPPERCASE_SENTENCE_START" },  # after "…)", not a sentence start
+    # "Vasyl" (Ivanchuk), flagged together with the Wikipedia link before it.
+    { text = "[sv.wikipedia.org/wiki/Şähriyar_Mämmädyarov](https://sv.wikipedia.org/wiki/%C5%9E%C3%A4hriyar_M%C3%A4mm%C3%A4dyarov)\n- **Vasyl", rule = "HUNSPELL_RULE" },
+]
+da = [
+    { text = "forventet", rule = "UPPERCASE_SENTENCE_START" },  # "expected {expected}", a fragment
 ]
