@@ -6,6 +6,8 @@
 export const DEFAULT_LOCALE = "en-US";
 /** Codes used before the region was part of them, as a browser may still have them saved. */
 const RENAMED = /** @type {Record<string, string>} */ ({ en: "en-US", es: "es-419" });
+/** The Translation fix issue form, which takes the language as a prefilled field. */
+const FIX_URL = "https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml";
 
 /** @type {Record<string, string>} English, the fallback for any key a language lacks. */
 let fallback = {};
@@ -16,7 +18,7 @@ let own = {};
 let locale = DEFAULT_LOCALE;
 // Bumped on every switch, so a slow file that arrives after a newer choice is ignored.
 let loading = 0;
-/** @type {Promise<{code: string, name: string, dir: string}[]> | null} The registry's list, once. */
+/** @type {Promise<{code: string, name: string, dir: string, reviewed: boolean}[]> | null} The registry's list, once. */
 let localeList = null;
 
 /** @type {Set<() => void>} */
@@ -56,13 +58,20 @@ async function load(requested) {
       chosen = DEFAULT_LOCALE;
     }
   }
-  const direction = directionOf(await listed, chosen);
+  const locales = await listed;
+  const direction = directionOf(locales, chosen);
   if (ticket !== loading) return false;
   own = mine;
   strings = { ...fallback, ...own };
   locale = chosen;
   document.documentElement.lang = locale;
   document.documentElement.dir = direction;
+  // Help and About invite corrections, and say when the language is machine-made and unreviewed.
+  const unreviewed = locales.find((item) => item.code === chosen)?.reviewed === false;
+  document.documentElement.toggleAttribute("data-unreviewed", unreviewed);
+  for (const link of document.querySelectorAll("a[data-fix-link]")) {
+    /** @type {HTMLAnchorElement} */ (link).href = `${FIX_URL}&language=${encodeURIComponent(chosen)}`;
+  }
   return true;
 }
 
@@ -151,7 +160,8 @@ export function localize(element, render) {
 /**
  * The languages that have a file in web/i18n, each named in its own language with its text
  * direction. Asked once; a failed request is asked again next time.
- * @returns {Promise<{code: string, name: string, dir: string}[]>} The languages, English first.
+ * @returns {Promise<{code: string, name: string, dir: string, reviewed: boolean}[]>} The languages,
+ *   English first.
  */
 export async function availableLocales() {
   localeList ??= fetch("api/locales").then(async (response) => {

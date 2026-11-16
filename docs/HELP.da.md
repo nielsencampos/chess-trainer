@@ -4,6 +4,8 @@
 
 [English (US)](HELP.md) · [English (UK)](HELP.en-GB.md) · [Português (Brasil)](HELP.pt-BR.md) · [Español (Latinoamérica)](HELP.es-419.md) · [Español (España)](HELP.es-ES.md) · [Português (Portugal)](HELP.pt-PT.md) · [Deutsch](HELP.de.md) · [Français](HELP.fr.md) · [Italiano](HELP.it.md) · [Türkçe](HELP.tr.md) · [Polski](HELP.pl.md) · [Nederlands](HELP.nl.md) · [Bahasa Indonesia](HELP.id.md) · [Tiếng Việt](HELP.vi.md) · [Svenska](HELP.sv.md) · [Norsk bokmål](HELP.nb.md) · [Suomi](HELP.fi.md) · [Русский](HELP.ru.md) · [Українська](HELP.uk.md) · [हिन्दी](HELP.hi.md) · [中文（简体）](HELP.zh-CN.md) · [日本語](HELP.ja.md) · [한국어](HELP.ko.md) · [العربية](HELP.ar.md) · [فارسی](HELP.fa.md) · [עברית](HELP.he.md)
 
+> Denne oversættelse er maskinoversat og er ikke blevet gennemgået. Rettelser er velkomne: [foreslå en rettelse](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=da)
+
 Chess Trainer er til træning: øv dine åbninger mod en bot, der spiller dine varianter, spil videre mod Stockfish, når teorien slutter, og gennemgå dine partier. Alt kører og bliver på din computer.
 
 > **Brug det aldrig til snyd**

@@ -1,0 +1,7 @@
+{
+  "readme.how.pick": "Pick your colour and the lines to drill, from all 3,865 lines of the book. Search by name, ECO or moves. Each selected line has the same chance of being drawn.",
+  "readme.book.text": "The bot's book is in `openings/`, one JSON file per opening family, loaded into DuckDB on start (a few seconds the first time). It starts with all 3,865 lines of the [Lichess openings catalogue](https://github.com/lichess-org/chess-openings). Any line plays with either colour. The catalogue lists named positions, not recommended replies, so lines are often short and the engine plays on from there. They can be extended by pull request, recording the source. The format is in [the brief, §6](docs/PROJECT_BRIEF.md).",
+  "readme.beyond.sheet": "**Scoresheet:** a printable A4 scoresheet, modelled on an official one, to write your moves by hand during long games. It is not an official scoresheet: it is for training only.",
+  "readme.license.title": "Licence",
+  "install.uninstall.mac": "**macOS:** drag **Chess Trainer** from Applications to the Bin."
+}

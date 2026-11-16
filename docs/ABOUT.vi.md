@@ -4,6 +4,8 @@
 
 [English (US)](ABOUT.md) · [English (UK)](ABOUT.en-GB.md) · [Português (Brasil)](ABOUT.pt-BR.md) · [Español (Latinoamérica)](ABOUT.es-419.md) · [Español (España)](ABOUT.es-ES.md) · [Português (Portugal)](ABOUT.pt-PT.md) · [Deutsch](ABOUT.de.md) · [Français](ABOUT.fr.md) · [Italiano](ABOUT.it.md) · [Türkçe](ABOUT.tr.md) · [Polski](ABOUT.pl.md) · [Nederlands](ABOUT.nl.md) · [Bahasa Indonesia](ABOUT.id.md) · [Svenska](ABOUT.sv.md) · [Dansk](ABOUT.da.md) · [Norsk bokmål](ABOUT.nb.md) · [Suomi](ABOUT.fi.md) · [Русский](ABOUT.ru.md) · [Українська](ABOUT.uk.md) · [हिन्दी](ABOUT.hi.md) · [中文（简体）](ABOUT.zh-CN.md) · [日本語](ABOUT.ja.md) · [한국어](ABOUT.ko.md) · [العربية](ABOUT.ar.md) · [فارسی](ABOUT.fa.md) · [עברית](ABOUT.he.md)
 
+> Bản dịch này được tạo bằng máy và chưa được duyệt lại. Rất hoan nghênh các góp ý sửa lỗi: [đề xuất sửa](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=vi)
+
 ## Ai đã làm ra nó
 
 Tôi là Nielsen Campos: kỹ sư dữ liệu và backend, nhạc công bán chuyên (gần như nghiệp dư) và người chơi cờ vua nghiệp dư (và tôi nghĩ chỉ đến thế thôi, hoặc có lẽ không, ai biết được 😂).

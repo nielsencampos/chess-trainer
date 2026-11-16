@@ -4,6 +4,8 @@
 
 [English (US)](ABOUT.md) · [English (UK)](ABOUT.en-GB.md) · [Português (Brasil)](ABOUT.pt-BR.md) · [Español (Latinoamérica)](ABOUT.es-419.md) · [Español (España)](ABOUT.es-ES.md) · [Português (Portugal)](ABOUT.pt-PT.md) · [Deutsch](ABOUT.de.md) · [Français](ABOUT.fr.md) · [Italiano](ABOUT.it.md) · [Türkçe](ABOUT.tr.md) · [Polski](ABOUT.pl.md) · [Nederlands](ABOUT.nl.md) · [Bahasa Indonesia](ABOUT.id.md) · [Tiếng Việt](ABOUT.vi.md) · [Svenska](ABOUT.sv.md) · [Dansk](ABOUT.da.md) · [Norsk bokmål](ABOUT.nb.md) · [Suomi](ABOUT.fi.md) · [Українська](ABOUT.uk.md) · [हिन्दी](ABOUT.hi.md) · [中文（简体）](ABOUT.zh-CN.md) · [日本語](ABOUT.ja.md) · [한국어](ABOUT.ko.md) · [العربية](ABOUT.ar.md) · [فارسی](ABOUT.fa.md) · [עברית](ABOUT.he.md)
 
+> Этот перевод сделан машиной и не проверен. Исправления приветствуются: [предложить исправление](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=ru)
+
 ## Кто его сделал
 
 Я Нильсен Кампос: инженер данных и бэкенда, полупрофессиональный музыкант (почти любитель) и шахматист-любитель (и, думаю, на этом всё, а может, и нет, кто знает 😂).

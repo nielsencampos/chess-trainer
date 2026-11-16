@@ -21,6 +21,13 @@
   border-radius: 6px;
 }
 
+/* Every language invites corrections; one the author does not review also says it is
+   machine-made (`/api/locales`, brief §8). */
+:root:not([data-unreviewed]) .if-unreviewed,
+:root[data-unreviewed] .if-reviewed {
+  display: none;
+}
+
 .notice-bad {
   border-inline-start-color: var(--bad);
 }

@@ -4,6 +4,8 @@
 
 [English (US)](ABOUT.md) · [English (UK)](ABOUT.en-GB.md) · [Português (Brasil)](ABOUT.pt-BR.md) · [Español (Latinoamérica)](ABOUT.es-419.md) · [Español (España)](ABOUT.es-ES.md) · [Português (Portugal)](ABOUT.pt-PT.md) · [Deutsch](ABOUT.de.md) · [Français](ABOUT.fr.md) · [Italiano](ABOUT.it.md) · [Türkçe](ABOUT.tr.md) · [Polski](ABOUT.pl.md) · [Nederlands](ABOUT.nl.md) · [Bahasa Indonesia](ABOUT.id.md) · [Tiếng Việt](ABOUT.vi.md) · [Svenska](ABOUT.sv.md) · [Dansk](ABOUT.da.md) · [Norsk bokmål](ABOUT.nb.md) · [Suomi](ABOUT.fi.md) · [Русский](ABOUT.ru.md) · [Українська](ABOUT.uk.md) · [हिन्दी](ABOUT.hi.md) · [中文（简体）](ABOUT.zh-CN.md) · [日本語](ABOUT.ja.md) · [한국어](ABOUT.ko.md) · [العربية](ABOUT.ar.md) · [עברית](ABOUT.he.md)
 
+> این ترجمه ماشینی است و هنوز بازبینی نشده است. از اصلاحات استقبال می‌کنیم: [پیشنهاد اصلاح](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=fa)
+
 ## سازنده
 
 من نیلسن کامپوس هستم: مهندس داده و بک‌اند، موسیقی‌دان نیمه‌حرفه‌ای (تقریباً آماتور) و شطرنج‌باز آماتور (و فکر می‌کنم همین‌جا تمام می‌شود، یا شاید نه، چه کسی می‌داند 😂).

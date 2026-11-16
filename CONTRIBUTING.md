@@ -34,7 +34,9 @@ tested.
 ## Rules
 
 - Code, identifiers, comments, commits and docs are in English. User-facing text goes through
-  `web/i18n/{locale}.json`, in English, Brazilian Portuguese and Spanish.
+  `web/i18n/{locale}.json`, and the README and install guide through `i18n/docs/{locale}.json`, in
+  every language of `i18n/locales.toml`. Never edit `README*.md`, `HOW_TO_INSTALL*.md`,
+  `docs/HELP*.md` or `docs/ABOUT*.md` by hand: they are generated.
 - PGN, imports, stored moves and `openings/*.json` are always English SAN. What the screen shows
   follows the player's notation choice (figurines, English letters or local letters).
 - No build step, no Node and no CDN: everything the app loads ships in the image.
@@ -62,12 +64,24 @@ What differs per language is data, described in
 - `i18n/names/{locale}.toml`: where each localized opening name in `openings/` came from: a
   Wikipedia or Wikidata page, the glossary (`rule = true`) or machine translation
   (`machine = true`).
+- `i18n/docs/{locale}.json`: the README and install guide of that language, written into
+  `README.{locale}.md` and `HOW_TO_INSTALL.{locale}.md` by `uv run python scripts/readme_docs.py`.
+
+Every language invites corrections, in its own words, on the Help and About screens and at the top
+of its docs, with a link to the Translation fix form for that language. A machine-made language
+also says it is unreviewed.
 
 Look up a chess term or an opening name in that language's Wikipedia first, and translate by
 machine only what it does not have. The fallback is always English (US).
 
 In a translation pull request, reference the correction issue with `Fixes #n` and update the
 glossary or opening-name source record that the changed translation relies on, as applicable.
+
+## Working with an AI assistant
+
+[docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) is a prompt to paste at the start of a session with
+an AI coding assistant. It first asks which language to talk in, so you can work in yours, while
+code, commits and docs stay in English.
 
 ## Pull requests
 

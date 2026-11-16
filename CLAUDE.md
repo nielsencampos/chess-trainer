@@ -40,6 +40,7 @@ scripts/smoke.sh chess-trainer:local              # health and a real engine mov
 E2E_BASE_URL=http://127.0.0.1:8000 uv run pytest -m e2e   # Playwright, desktop
 uv run python scripts/help_media.py                       # Help pictures, after a visible UI change
 uv run python scripts/help_docs.py                        # docs/HELP*.md, after a Help text change
+uv run python scripts/readme_docs.py                      # README*.md, HOW_TO_INSTALL*.md, after an i18n/docs change
 ```
 
 Before calling UI work done, test it in a browser at 1280x720 and state what was tested. HD is
@@ -48,7 +49,8 @@ the smallest supported screen, and mobile is out of scope.
 ## Conventions
 
 - Code, identifiers, comments, commits and docs are in English.
-- User-facing text goes through i18n: `web/i18n/{locale}.json` keys, never hard-coded strings.
+- User-facing text goes through i18n: `web/i18n/{locale}.json` keys, never hard-coded strings. The
+  README and the install guide are generated from `i18n/docs/` in every language; edit those, not the `.md`.
   Per-locale settings live in `i18n/locales.toml`, chess terms in `i18n/glossary/`, and where each
   localized opening name came from in `i18n/names/` (brief §8). The fallback is always `en-US`.
 - PGN, imports, stored moves and `openings/*.json` are always English SAN, in every language. The

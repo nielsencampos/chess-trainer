@@ -4,6 +4,8 @@
 
 [English (US)](ABOUT.md) · [English (UK)](ABOUT.en-GB.md) · [Português (Brasil)](ABOUT.pt-BR.md) · [Español (Latinoamérica)](ABOUT.es-419.md) · [Español (España)](ABOUT.es-ES.md) · [Português (Portugal)](ABOUT.pt-PT.md) · [Deutsch](ABOUT.de.md) · [Français](ABOUT.fr.md) · [Italiano](ABOUT.it.md) · [Türkçe](ABOUT.tr.md) · [Polski](ABOUT.pl.md) · [Nederlands](ABOUT.nl.md) · [Bahasa Indonesia](ABOUT.id.md) · [Tiếng Việt](ABOUT.vi.md) · [Svenska](ABOUT.sv.md) · [Dansk](ABOUT.da.md) · [Norsk bokmål](ABOUT.nb.md) · [Suomi](ABOUT.fi.md) · [Русский](ABOUT.ru.md) · [हिन्दी](ABOUT.hi.md) · [中文（简体）](ABOUT.zh-CN.md) · [日本語](ABOUT.ja.md) · [한국어](ABOUT.ko.md) · [العربية](ABOUT.ar.md) · [فارسی](ABOUT.fa.md) · [עברית](ABOUT.he.md)
 
+> Цей переклад зроблено машиною, і його не перевірено. Виправлення вітаються: [запропонувати виправлення](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=uk)
+
 ## Хто його створив
 
 Я Нільсен Кампус: інженер даних і бекенду, напівпрофесійний музикант (майже аматор) і шахіст-аматор (і, думаю, на цьому все, а може, й ні, хто знає 😂).

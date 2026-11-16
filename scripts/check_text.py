@@ -31,8 +31,6 @@ CONFIG = ROOT / "scripts" / "text_check.toml"
 VALE_CONFIG = ROOT / ".vale.ini"
 LOCALES = load_locales()
 LT_LANG = {code: locale.languagetool for code, locale in LOCALES.items() if locale.languagetool}
-# Headings that start another language inside an English README.
-README_SECTIONS = {"## Português (Brasil)": "pt-BR", "## Español": "es-419"}
 SAN = re.compile(r"^(?:O-O(?:-O)?|[KQRBN]?[a-h]?[1-8]?x?[a-h][1-8](?:=[QRBN])?)[+#]?[!?]*$")
 # Markdown that is not prose, by what it stands for in a sentence: a code block (a paragraph
 # break), a word (inline code, URLs, a link whose text is a URL, snake_case and file names), a
@@ -134,23 +132,16 @@ def locale_of(path: Path) -> str:
 
 
 def markdown_texts(path: Path) -> list[Text]:
-    """Reads a Markdown file as one text per language section.
+    """Reads a Markdown file as one text, in the language its name gives.
 
     Args:
         path: The file.
 
     Returns:
-        Its texts: one, or one per language section of a README.
+        Its text, in a list like `i18n_texts`.
     """
     rel = str(path.relative_to(ROOT))
-    lang, start, chunk, texts = locale_of(path), 1, [], []
-    for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(keepends=True), 1):
-        if line.strip() in README_SECTIONS and path.name.startswith("README"):
-            texts.append(Text(rel, lang, split_markup("".join(chunk)), start))
-            lang, start, chunk = README_SECTIONS[line.strip()], n, []
-        chunk.append(line)
-    texts.append(Text(rel, lang, split_markup("".join(chunk)), start))
-    return texts
+    return [Text(rel, locale_of(path), split_markup(path.read_text(encoding="utf-8")))]
 
 
 def i18n_texts(path: Path) -> list[Text]:
@@ -257,8 +248,7 @@ def export(folder: Path) -> None:
 
     The UI strings go to `ui.{locale}.md`, one line each, after their key in backticks and with
     their placeholders as code, for every language with Vale styles in the locale registry;
-    the others are skipped. The pt-BR and es sections of the README go to `README.{locale}.md`,
-    on the same line numbers as in the README. `vale.ini` is `.vale.ini` plus a section per
+    the others are skipped. `vale.ini` is `.vale.ini` plus a section per
     exported UI file with that language's styles.
 
     Args:
@@ -282,11 +272,6 @@ def export(folder: Path) -> None:
             for key, value in strings.items()
         ]
         (folder / f"ui.{path.stem}.md").write_text("".join(lines), encoding="utf-8")
-    for text in markdown_texts(ROOT / "README.md"):
-        if text.lang != DEFAULT_LOCALE:
-            body = "".join(c for _, c, _ in text.parts)
-            padded = "\n" * (text.first_line - 1) + body
-            (folder / f"README.{text.lang}.md").write_text(padded, encoding="utf-8")
     (folder / "vale.ini").write_text(config, encoding="utf-8")
 
 
