@@ -3,6 +3,7 @@
 
 import { t } from "./i18n.js";
 import { moveIcon } from "./icons.js";
+import { sanElement } from "./notation.js";
 
 /**
  * @typedef {{san: string, uci?: string, outOfTheory: boolean, deviation: boolean,
@@ -48,8 +49,11 @@ function moveCell(ply, showTheoryMarks, number, currentPly) {
   if (!ply) return cell;
   const san = document.createElement("span");
   san.className = "san";
-  san.textContent = ply.san;
+  san.append(sanElement(ply.san));
   cell.append(san);
+  // Keyboard focus shows the move in the other notations, as hover does.
+  cell.tabIndex = 0;
+  cell.dataset.tip = "";
   if (currentPly !== undefined) {
     cell.dataset.ply = String(number);
     cell.classList.toggle("current", number === currentPly);
@@ -59,13 +63,11 @@ function moveCell(ply, showTheoryMarks, number, currentPly) {
       const title = t(ply.deviation ? "icon.deviation" : "icon.botDeviation");
       cell.classList.add("deviation");
       cell.prepend(moveIcon("deviation", title));
-      cell.title = title;
     } else if (ply.outOfTheory) {
       cell.classList.add("out");
     } else {
       cell.classList.add("book");
       cell.prepend(moveIcon("book", t("icon.book")));
-      cell.title = t("icon.book");
     }
   }
   return cell;

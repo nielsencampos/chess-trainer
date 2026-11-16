@@ -338,6 +338,11 @@
   gap: 5px;
 }
 
+.move-icon-box {
+  display: inline-flex;
+  flex: none;
+}
+
 .move-icon {
   flex: none;
   width: 15px;
@@ -673,4 +678,74 @@
 
 .saved-actions > .button-danger {
   flex: 0 0 auto;
+}
+
+/* Move notation (#53). A move is isolated from the text around it, in any direction. */
+.notation {
+  unicode-bidi: isolate;
+  white-space: nowrap;
+}
+
+/* Castling in the UI font: the mono font's letter O reads as a zero. */
+.notation .castle {
+  font-family: var(--font-ui);
+  letter-spacing: 0.04em;
+}
+
+/* A figurine is the white Merida piece at text size, for both sides and in both themes. Its text
+   is the English letter, transparent, so copying the move gives readable SAN. */
+.figurine {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  margin-inline: -0.06em 0.02em;
+  overflow: hidden;
+  background: center / 118% no-repeat;
+  color: transparent;
+  line-height: 1.25em;
+  text-align: center;
+  vertical-align: -0.3em;
+}
+
+.figurine-K { background-image: url("../pieces/merida/wK.svg"); }
+.figurine-Q { background-image: url("../pieces/merida/wQ.svg"); }
+.figurine-R { background-image: url("../pieces/merida/wR.svg"); }
+.figurine-B { background-image: url("../pieces/merida/wB.svg"); }
+.figurine-N { background-image: url("../pieces/merida/wN.svg"); }
+
+.notation-tip {
+  position: fixed;
+  z-index: 50;
+  padding: 3px 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.18);
+  color: var(--ink);
+  font: 400 0.9rem/1.5 var(--font-mono);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.moves-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* The quick switch: a sample move in the notation in use. */
+.notation-switch {
+  min-height: 26px;
+  padding: 1px 8px;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  font: 400 0.85rem/1.4 var(--font-mono);
+  cursor: pointer;
+}
+
+.notation-switch:hover {
+  background: var(--surface-2);
 }

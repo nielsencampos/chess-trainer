@@ -74,6 +74,15 @@ export async function initI18n(requested = DEFAULT_LOCALE) {
  */
 export async function setLocale(requested) {
   if (!(await load(requested))) return;
+  refresh();
+}
+
+/**
+ * Draws again everything on screen in the current language, as after a switch. The move
+ * notation (notation.js) uses it too.
+ * @returns {void}
+ */
+export function refresh() {
   applyI18n(document);
   for (const [element, render] of bound) {
     if (element.isConnected) render();
@@ -131,6 +140,36 @@ export async function availableLocales() {
 export function t(key, params = {}) {
   const template = strings[pluralKey(key, params.count)] ?? strings[key] ?? key;
   return template.replace(/\{(\w+)\}/g, (_, name) => String(params[name] ?? `{${name}}`));
+}
+
+/**
+ * A UI string with some placeholders filled by page elements, such as moves drawn in the chosen
+ * notation, which plain text cannot hold.
+ * @param {string} key  The string's key.
+ * @param {Record<string, string | number | Node>} params  Values for the placeholders.
+ * @returns {DocumentFragment} The string, as text and those elements.
+ */
+export function tNodes(key, params) {
+  /** @type {Node[]} */
+  const nodes = [];
+  /** @type {Record<string, string | number>} */
+  const texts = {};
+  for (const [name, value] of Object.entries(params)) {
+    if (value instanceof Node) {
+      texts[name] = `\u0001${nodes.length}\u0001`;
+      nodes.push(value);
+    } else {
+      texts[name] = value;
+    }
+  }
+  const fragment = document.createDocumentFragment();
+  t(key, texts)
+    .split("\u0001")
+    .forEach((part, index) => {
+      if (index % 2 === 1) fragment.append(nodes[Number(part)]);
+      else if (part) fragment.append(part);
+    });
+  return fragment;
 }
 
 /**
