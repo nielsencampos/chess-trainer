@@ -298,7 +298,9 @@ class Found:
     url: str
 
 
-def wiki_name(entry: CacheEntry, locale: Locale, family: str | None = None) -> Found | None:
+def wiki_name(
+    entry: CacheEntry, locale: Locale, family: str | None = None, english: tuple[str, ...] = ()
+) -> Found | None:
     """The name an entry gives in a locale: its article's title, or else its Wikidata label.
 
     A title's "(disambiguation)" ending is dropped. For a subgroup or line, a title that starts
@@ -309,6 +311,8 @@ def wiki_name(entry: CacheEntry, locale: Locale, family: str | None = None) -> F
         entry (CacheEntry): The lookup's entry.
         locale (Locale): The locale.
         family (str | None): The family's name in the locale, for a subgroup or line.
+        english (tuple[str, ...]): The book's English names for it; a label that copies one
+            gives no name.
 
     Returns:
         Found | None: The name and its page, or None when the item has neither.
@@ -322,7 +326,8 @@ def wiki_name(entry: CacheEntry, locale: Locale, family: str | None = None) -> F
         found = Found(DISAMBIGUATION.sub("", title), url)
     else:
         for language in dict.fromkeys((locale.code.lower(), locale.wikipedia)):
-            if label := entry["labels"].get(language):
+            label = entry["labels"].get(language)
+            if label and not english_copy(entry, label, locale, english):
                 found = Found(label, f"https://www.wikidata.org/wiki/{entry['item']}")
                 break
     if found and family:
@@ -338,6 +343,42 @@ def wiki_name(entry: CacheEntry, locale: Locale, family: str | None = None) -> F
     return Found(found.name[:1].upper() + found.name[1:], found.url)
 
 
+def english_copy(entry: CacheEntry, label: str, locale: Locale, book: tuple[str, ...] = ()) -> bool:
+    """Whether another language's Wikidata label is only the English name copied over.
+
+    Such a label ("Torre Attack" as the Dutch label) is no translation, so it gives no name. An
+    English locale's labels are English on purpose.
+
+    Args:
+        entry (CacheEntry): The lookup's entry.
+        label (str): The label in the locale's language.
+        locale (Locale): The locale.
+        book (tuple[str, ...]): The book's English names for the item.
+
+    Returns:
+        bool: True when the label is one of the item's English labels, its English title or one
+            of the book's names.
+    """
+    if entry is None or locale.wikipedia == "en":
+        return False
+    english = [entry["labels"].get(code, "") for code in ("en", "en-gb", "en-us")]
+    english += [entry["sitelinks"].get("enwiki", ""), *book]
+    return _fold(label) in {_fold(name) for name in english if name}
+
+
+def _fold(text: str) -> str:
+    """A name without the differences that do not count: case, dashes, "'s", Defence/Defense.
+
+    Args:
+        text (str): A name.
+
+    Returns:
+        str: The folded name.
+    """
+    text = re.sub(r"[\u2010-\u2015-]", " ", text.casefold()).replace("'s ", " ")
+    return " ".join(text.replace("defence", "defense").split())
+
+
 def titled_for(entry: CacheEntry, english: str) -> bool:
     """Whether an English Wikipedia article is titled for a name, give or take its spelling.
 
@@ -350,12 +391,7 @@ def titled_for(entry: CacheEntry, english: str) -> bool:
     Returns:
         bool: True when the article's English title is that name.
     """
-
-    def fold(text: str) -> str:
-        text = re.sub(r"[\u2010-\u2015-]", " ", text.casefold()).replace("'s ", " ")
-        return " ".join(text.replace("defence", "defense").split())
-
-    return entry is not None and fold(entry["sitelinks"].get("enwiki", "")) == fold(english)
+    return entry is not None and _fold(entry["sitelinks"].get("enwiki", "")) == _fold(english)
 
 
 class Rules:
@@ -706,13 +742,18 @@ def fill_names(
         lookup = cache.get(item.query)
         if item.key[0] == "families":
             if lookup and (family_articles[lookup["item"]] < 2 or titled_for(lookup, item.english)):
-                found = wiki_name(lookup, locale)
+                found = wiki_name(lookup, locale, english=(item.english, item.query))
         elif (
             lookup
             and (family_items[item.family] or {}).get("item") != lookup["item"]
             and (lookup["item"] not in family_articles or titled_for(lookup, item.english))
         ):
-            found = wiki_name(lookup, locale, family_names[item.family].get(code))
+            found = wiki_name(
+                lookup,
+                locale,
+                family_names[item.family].get(code),
+                english=(item.english, item.query),
+            )
         reviewed = [item.names[other] for other in siblings if item.names.get(other)]
         if found and any(name.casefold() != found.name.casefold() for name in reviewed):
             found = None  # The author of that locale chose another name than Wikipedia's.
