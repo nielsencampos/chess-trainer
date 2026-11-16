@@ -27,6 +27,8 @@ PLURALS = {
     "zh-CN": {"other"},
     "ja": {"other"},
     "ko": {"other"},
+    "ar": {"zero", "one", "two", "few", "many", "other"},
+    "he": {"one", "two", "other"},
 }
 
 
