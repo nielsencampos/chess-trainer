@@ -13,6 +13,15 @@ on:
       - docker/fetch_stockfish.py
       - scripts/desktop_*.py
       - app/engine/**
+      # What the spec bundles or reads: a move or rename there breaks the package.
+      - app/__init__.py
+      - app/config.py
+      - app/db/**
+      - i18n/locales.toml
+      - catalog/**
+      - evals/**
+      - LICENSE
+      - THIRD_PARTY_LICENSES.md
       - pyproject.toml
       - uv.lock
       - .github/workflows/desktop.yml
@@ -49,17 +58,7 @@ jobs:
       - uses: astral-sh/setup-uv@v10.3.3
       - name: The tag matches the app's version
         if: env.VERSION != 'dev'
-        # v1.0.0 and v1.0.0-rc1 both need __version__ and pyproject.toml at 1.0.0, or the package
-        # would be named after the tag while the app, its games and PGN say another version.
-        run: |
-          app=$(sed -n 's/^__version__ = "\(.*\)"$/\1/p' app/__init__.py)
-          project=$(sed -n 's/^version = "\(.*\)"$/\1/p' pyproject.toml)
-          tag=${VERSION#v}
-          tag=${tag%%-*}
-          if [[ "$app" != "$tag" || "$project" != "$tag" ]]; then
-            echo "Tag $VERSION, app/__init__.py $app, pyproject.toml $project: they must match" >&2
-            exit 1
-          fi
+        run: scripts/tag_matches_version.sh "$VERSION"
       - name: Stockfish for this system
         run: uv run --no-project python docker/fetch_stockfish.py desktop
       - name: Build
@@ -194,4 +193,6 @@ jobs:
             gh release create "$TAG" --draft $prerelease --verify-tag \
               --title "Chess Trainer $TAG" --notes "$notes"
           fi
-          gh release upload "$TAG" build/out/chess-trainer-* --clobber  # not the webview-check files
+          # Checksums, so a download of these unsigned packages can be checked.
+          (cd build/out && sha256sum chess-trainer-* > SHA256SUMS)
+          gh release upload "$TAG" build/out/chess-trainer-* build/out/SHA256SUMS --clobber  # not the webview-check files

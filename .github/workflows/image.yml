@@ -2,7 +2,7 @@ name: Image
 
 # On a version tag (v1.2.3) builds the image for amd64 and arm64 and publishes it to the GitHub
 # Container Registry as ghcr.io/<owner>/chess-trainer:<version> and :latest. A prerelease tag
-# (v1.2.3-rc1) gets only its own version, never :latest.
+# (v1.2.3-rc1) gets only its own version, never :latest. Run by hand, it must be run from a tag.
 on:
   push:
     tags: ["v*"]
@@ -13,6 +13,7 @@ permissions:
 
 jobs:
   publish:
+    if: startsWith(github.ref, 'refs/tags/v')  # from a branch, no version tag would be made
     runs-on: ubuntu-24.04
     permissions:
       contents: read
@@ -21,6 +22,8 @@ jobs:
       GITHUB_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v7
+      - name: The tag matches the app's version
+        run: scripts/tag_matches_version.sh "$GITHUB_REF_NAME"
       - name: Resolve the Stockfish release
         run: |
           python3 docker/fetch_stockfish.py resolve latest /tmp/stockfish-tag
