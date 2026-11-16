@@ -737,7 +737,7 @@ def test_a_wikipedia_variant_gives_the_title_in_that_variant(repo):
     entry.prefetch(["Ruy Lopez"])
     entry.prefetch_variants("zh", "zh-cn")
     found = names_module.wiki_name(entry.get("Ruy Lopez"), chinese)
-    assert found == names_module.Found("西班牙开局", "https://zh.wikipedia.org/zh-cn/西班牙开局")
+    assert found == names_module.Found("西班牙开局", "https://zh.wikipedia.org/zh-cn/西班牙開局")
     offline = names_module.WikipediaCache(repo / "c.json", None)
     offline.prefetch_variants("zh", "zh-cn")  # Cached: nothing to look up.
 

@@ -400,11 +400,12 @@ def wiki_name(
     found = None
     variant = locale.wikipedia_variant
     if title := entry["sitelinks"].get(site):
-        # A Wikipedia with variants shows the title in the locale's one, at its own path.
-        title = entry.get("variants", {}).get(variant, title) if variant else title
+        # A Wikipedia with variants shows the title in the locale's one, at the variant's path;
+        # the link keeps the stored title, which a variant's spelling does not always find.
         path = f"{variant or 'wiki'}/{title.replace(' ', '_')}"
         url = f"https://{locale.wikipedia}.wikipedia.org/{path}"
-        found = Found(DISAMBIGUATION.sub("", title), url)
+        shown = entry.get("variants", {}).get(variant, title) if variant else title
+        found = Found(DISAMBIGUATION.sub("", shown), url)
     else:
         # With variants, the label of the bare language may be written in another one.
         languages = (
