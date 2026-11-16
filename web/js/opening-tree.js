@@ -3,6 +3,7 @@
 // so families render their lines only when opened.
 
 import { DEFAULT_LOCALE, localizedName, t } from "./i18n.js";
+import { lineElement, localLine } from "./notation.js";
 
 const SEARCH_DEBOUNCE_MS = 150;
 const GROUPS = ["kings-pawn", "queens-pawn", "flank", "others"];
@@ -39,8 +40,22 @@ function matches(variant, query) {
   return (
     nameMatches(variant.names, query) ||
     nameMatches(variant.subgroup, query) ||
-    [variant.opening, variant.eco, variant.pgn].some((text) => text?.toLowerCase().includes(query))
+    [variant.opening, variant.eco].some((text) => text?.toLowerCase().includes(query)) ||
+    // Moves match in English or in the UI language's letters, with or without a space after
+    // the move number ("3.Bb5" finds "3. Bb5").
+    [variant.pgn, localLine(variant.pgn)].some((text) =>
+      compactMoves(text.toLowerCase()).includes(compactMoves(query)),
+    )
   );
+}
+
+/**
+ * Moves text without the space after each move number, so a search can be written either way.
+ * @param {string} text  Moves such as `1. e4 e5 2. Nf3`.
+ * @returns {string} `1.e4 e5 2.Nf3`.
+ */
+function compactMoves(text) {
+  return text.replace(/(\d)\.\s+/g, "$1.");
 }
 
 /** The book's tree with a search and checkboxes, shared by New Game and Openings. */
@@ -327,7 +342,7 @@ export class OpeningTree {
     name.textContent = localizedName(variant.names);
     const moves = document.createElement("span");
     moves.className = "variant-moves";
-    moves.textContent = variant.pgn;
+    moves.append(lineElement(variant.pgn));
     text.append(name, moves);
     const eco = document.createElement("span");
     eco.className = "variant-eco";

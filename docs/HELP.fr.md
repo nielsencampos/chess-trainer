@@ -32,6 +32,7 @@ Chess Trainer sert à s'entraîner : travaillez vos ouvertures contre un bot qui
 - Cliquez sur les pièces ou faites-les glisser. Le bot joue les coups de théorie de la ligne tirée au sort et, quand la théorie s'arrête ou que quelqu'un en sort, Stockfish prend le relais au niveau choisi.
 - Les étiquettes sous l'échiquier indiquent qui a le trait, si vous êtes encore dans la théorie et où vous ou le bot en êtes sortis.
 - « Afficher les coups », dans le panneau de droite, masque le nom de l'ouverture et la liste des coups jusqu'à la fin de la partie : jouez sans indice ou notez les coups sur papier.
+- « Notation », sous la langue, affiche les coups avec des figurines, en lettres anglaises (Nf3, celles des fichiers PGN et des sites d'échecs) ou en lettres françaises (Cf3). Le bouton à côté de « Coups » change de notation, même en pleine partie, et survoler un coup avec la souris, ou l'atteindre avec Tab, l'affiche dans les deux autres. Le PGN utilise toujours les lettres anglaises.
 - Avec les précoups activés, vous pouvez préparer un coup pendant que le bot réfléchit. Sans eux, « Reprendre le coup » annule votre dernier coup tant que la réponse du bot n'est pas encore visible.
 - Abandonner demande un second clic, pour qu'un clic involontaire ne termine pas la partie.
 

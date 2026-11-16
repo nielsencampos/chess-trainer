@@ -4,6 +4,7 @@
 
 import { t } from "./i18n.js";
 import { moveIcon } from "./icons.js";
+import { sanElement } from "./notation.js";
 
 /**
  * A move of the review as the server sends it, linked by `linkMoves`.
@@ -159,8 +160,9 @@ function mainCell(move, current, showTheoryMarks) {
     // The bot's deviation shares the user's icon, with its own name.
     const title = !move.kind && move.bot_deviation ? t("icon.botDeviation") : t(`icon.${icon}`);
     cell.append(moveIcon(icon, title));
-    cell.title = title;
   }
+  cell.tabIndex = 0;
+  cell.dataset.tip = "";
   cell.append(sanOf(move));
   if (move.spent_ms !== undefined) {
     const spent = document.createElement("span");
@@ -193,7 +195,8 @@ function markOf(move, showTheoryMarks) {
 function sanOf(move) {
   const san = document.createElement("span");
   san.className = "san";
-  san.textContent = move.symbol ? `${move.san} ${move.symbol}` : move.san;
+  san.append(sanElement(move.san));
+  if (move.symbol) san.append(` ${move.symbol}`);
   return san;
 }
 
@@ -250,8 +253,9 @@ function appendLine(parent, line, current) {
     token.classList.toggle("current", move === current);
     if (move.kind) {
       token.append(moveIcon(move.kind, t(`icon.${move.kind}`)));
-      token.title = t(`icon.${move.kind}`);
     }
+    token.tabIndex = 0;
+    token.dataset.tip = "";
     token.append(sanOf(move));
     parent.append(token);
     if (move.comment) parent.append(comment(move.comment));

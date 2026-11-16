@@ -472,3 +472,37 @@ term = "Main Line"
 translation = "Línea Principal"
 source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Línea_principal"
 note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+# Piece letters for the "local letters" notation (#53): one row per piece, by its English
+# SAN letter. Only the letter of the piece changes on screen; PGN and stored moves stay English.
+
+[[pieces]]
+piece = "K"
+letter = "R"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "Q"
+letter = "D"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "R"
+letter = "T"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "B"
+letter = "A"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "N"
+letter = "C"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "P"
+letter = "P"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "SAN never writes it: a pawn move is only its square."

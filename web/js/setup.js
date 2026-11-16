@@ -6,6 +6,7 @@ import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
 import { openingName, openingSearchText } from "./opening-names.js";
 import { OpeningTree } from "./opening-tree.js";
 import { levelLabel } from "./levels.js";
+import { sanText } from "./notation.js";
 import { getPref, setPref } from "./prefs.js";
 
 
@@ -411,7 +412,7 @@ export class SetupCard {
     game.sans.forEach((/** @type {string} */ san, /** @type {number} */ index) => {
       const number = Math.floor(index / 2) + 1;
       const dots = index % 2 === 0 ? "." : "...";
-      select.add(new Option(`${number}${dots} ${san}`, String(index + 1)));
+      select.add(new Option(`${number}${dots} ${sanText(san)}`, String(index + 1)));
     });
   }
 

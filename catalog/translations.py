@@ -4,7 +4,8 @@
 Wikipedia or Wikidata page each came from, or `machine = true` when none was found, and the words
 the UI must not use for that term (`avoid`), plus an optional top-level `translate` list: words
 of the English opening names that the language translates, so a glossary rule never keeps them as
-proper names.
+proper names, and a `[[pieces]]` table: the letter of each piece in that language, for the
+"local letters" move notation (#53).
 `i18n/names/{locale}.toml` records, for each localized family, subgroup and line name in
 `openings/`, where it came from: a Wikipedia or Wikidata page (`source`), the glossary, segment
 by segment (`rule = true`), or machine translation (`machine = true`). The names themselves stay
@@ -29,6 +30,9 @@ SOURCE_URL = re.compile(
 )
 ORIGINS = ("source", "rule", "machine")
 GLOSSARY_FIELDS = {"term", "translation", "source", "machine", "note", "avoid"}
+PIECE_FIELDS = {"piece", "letter", "source", "machine", "note"}
+# The English SAN letters, in the order the web app's `notation.pieces` key lists them.
+PIECES = ("K", "Q", "R", "B", "N", "P")
 NAME_FIELDS = {"name", "source", "rule", "machine", "note"}
 KINDS = ("families", "subgroups", "lines")
 # A localized name: its kind and its key (family id, family id and English subgroup name, or
@@ -169,7 +173,7 @@ def load_glossary(path: Path) -> dict[str, Term]:
     """
     with path.open("rb") as handle:
         document = tomllib.load(handle)
-    if unknown := set(document) - {"terms", "translate"}:
+    if unknown := set(document) - {"terms", "translate", "pieces"}:
         raise TranslationError(f"{path.name}: unknown tables or keys {sorted(unknown)}")
     rows = document.get("terms", [])
     terms: dict[str, Term] = {}
@@ -220,6 +224,44 @@ def load_translate_words(path: Path) -> frozenset[str]:
     return frozenset(folded)
 
 
+def load_piece_letters(path: Path) -> dict[str, str]:
+    """Reads a glossary's `[[pieces]]` table: the letter of each piece in its language.
+
+    Args:
+        path (Path): An `i18n/glossary/{locale}.toml` file.
+
+    Returns:
+        dict[str, str]: English SAN letter (K, Q, R, B, N, P) -> the language's letter, in that
+            order; empty when the file has no table, so the language shows English letters.
+
+    Raises:
+        TranslationError: A row has an unknown or missing field, no origin or a bad one, a
+            letter with a space, a piece that is not one of K, Q, R, B, N, P, or the table does
+            not have each piece once.
+    """
+    with path.open("rb") as handle:
+        rows = tomllib.load(handle).get("pieces", [])
+    letters: dict[str, str] = {}
+    for n, row in enumerate(rows, 1):
+        where = f"{path.name}: pieces #{n}"
+        if unknown := set(row) - PIECE_FIELDS:
+            raise TranslationError(f"{where}: unknown fields {sorted(unknown)}")
+        piece = _text(row, "piece", where)
+        if piece not in PIECES:
+            raise TranslationError(f"{where}: {piece!r} is not one of {', '.join(PIECES)}")
+        if piece in letters:
+            raise TranslationError(f"{where}: {piece!r} is already in the table")
+        letter = _text(row, "letter", where)
+        if re.search(r"\s", letter):
+            raise TranslationError(f"{where}: the letter {letter!r} has a space")
+        _origin(row, f"{where} ({piece})", ("source", "machine"))
+        letters[piece] = letter
+    if letters and set(letters) != set(PIECES):
+        missing = [piece for piece in PIECES if piece not in letters]
+        raise TranslationError(f"{path.name}: pieces lacks {missing}")
+    return {piece: letters[piece] for piece in PIECES if piece in letters}
+
+
 def glossary_problems(directory: Path = GLOSSARY_DIR) -> list[str]:
     """Checks every glossary, and that each has the same terms as the English one.
 
@@ -235,6 +277,7 @@ def glossary_problems(directory: Path = GLOSSARY_DIR) -> list[str]:
         try:
             glossaries[path.stem] = load_glossary(path)
             load_translate_words(path)
+            load_piece_letters(path)
         except TranslationError as error:
             problems.append(str(error))
     if not glossaries:

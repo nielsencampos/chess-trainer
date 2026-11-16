@@ -36,8 +36,8 @@ const ICONS = /** @type {Record<MoveIconKind, {color: string, text?: string, pat
 /**
  * Draws a move icon.
  * @param {MoveIconKind} kind  The icon, such as `book` or `blunder`.
- * @param {string} label  What a screen reader says, already translated.
- * @returns {SVGSVGElement} The icon.
+ * @param {string} label  What a screen reader says and the tooltip shows, already translated.
+ * @returns {HTMLSpanElement} The icon, in a box that carries its tooltip.
  */
 export function moveIcon(kind, label) {
   const icon = ICONS[kind];
@@ -74,5 +74,11 @@ export function moveIcon(kind, label) {
     text.textContent = icon.text ?? "";
     svg.append(text);
   }
-  return svg;
+  // The icon's own tooltip, on a box around it: the move beside it shows its notations (#53).
+  // An SVG <title> would join the move's text when it is copied.
+  const box = document.createElement("span");
+  box.className = "move-icon-box";
+  box.title = label;
+  box.append(svg);
+  return box;
 }

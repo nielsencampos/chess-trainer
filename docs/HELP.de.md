@@ -32,6 +32,7 @@ Chess Trainer ist zum Üben da: Trainiere deine Eröffnungen gegen einen Bot, de
 - Klicke die Figuren an oder ziehe sie. Der Bot spielt die Buchzüge des ausgelosten Abspiels, und wenn die Theorie endet oder jemand sie verlässt, übernimmt Stockfish auf der gewählten Stärke.
 - Die Hinweise unter dem Brett zeigen, wer am Zug ist, ob du noch in der Theorie bist und wo du oder der Bot sie verlassen habt.
 - „Züge anzeigen“ in der rechten Leiste blendet den Namen der Eröffnung und die Zugliste bis zum Ende der Partie aus: Spiel ohne Hinweise oder schreib die Züge auf Papier mit.
+- „Notation“ unter der Sprache zeigt die Züge mit Figurinen, mit englischen Buchstaben (Nf3, wie in PGN-Dateien und auf Schachseiten) oder mit deutschen Buchstaben (Sf3). Der Knopf neben „Züge“ wechselt die Notation, auch mitten in der Partie, und wenn du mit der Maus auf einen Zug zeigst oder ihn mit Tab erreichst, siehst du ihn in den anderen beiden. PGN verwendet immer englische Buchstaben.
 - Mit Vorauszügen kannst du einen Zug vormerken, während der Bot nachdenkt. Ohne sie nimmt „Zug zurücknehmen“ deinen letzten Zug zurück, solange die Antwort des Bots noch nicht zu sehen ist.
 - Aufgeben verlangt einen zweiten Klick, damit ein versehentlicher Klick die Partie nicht beendet.
 

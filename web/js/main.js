@@ -17,6 +17,7 @@ import {
   t,
 } from "./i18n.js";
 import { initLayout } from "./layout.js";
+import { getNotation, initNotation, nextNotation, NOTATIONS, notationName, sanElement, setNotation } from "./notation.js";
 import { setLevelRatings } from "./levels.js";
 import { getPref, setPref } from "./prefs.js";
 import { Review } from "./review.js";
@@ -52,6 +53,29 @@ async function initLocalePicker() {
 }
 
 /**
+ * Wires the notation picker below the language picker and the quick switch in the move list's
+ * header: both change the same preference, and every move on screen is drawn again.
+ * @returns {void}
+ */
+function initNotationControls() {
+  const select = byId("notation-picker");
+  for (const name of NOTATIONS) select.add(new Option("", name));
+  select.addEventListener("change", () => setNotation(select.value));
+  const button = byId("notation-switch");
+  button.addEventListener("click", () => setNotation(nextNotation()));
+  localize(select, () => {
+    for (const option of select.options) option.text = notationName(option.value);
+    select.value = getNotation();
+    // A sample move in the notation in use; the name says which one and what comes next.
+    button.replaceChildren(sanElement("Nf3"));
+    button.setAttribute(
+      "aria-label",
+      t("notation.switch", { current: notationName(getNotation()), next: notationName(nextNotation()) }),
+    );
+  });
+}
+
+/**
  * Starts the page: language, preferences, board, screens, and the unfinished game if any.
  * @returns {Promise<void>}
  */
@@ -65,6 +89,8 @@ async function main() {
   localizeWikiLinks();
   initTooltips();
   void initLocalePicker();
+  initNotation();
+  initNotationControls();
   initTheme(byId("theme-toggle"));
   initLayout();
   initSoundControls(byId("sound-toggle"), byId("sound-volume"));

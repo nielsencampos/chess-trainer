@@ -1,8 +1,9 @@
 // End-of-game card, under the move list: result, variation, how far theory went, deviations, PGN.
 
 import { saveFile } from "./download.js";
-import { localizedName, t } from "./i18n.js";
+import { localizedName, t, tNodes } from "./i18n.js";
 import { moveIcon } from "./icons.js";
+import { sanElement } from "./notation.js";
 import { openingName } from "./opening-names.js";
 
 const COPY_FEEDBACK_MS = 1500;
@@ -47,14 +48,38 @@ function downloadPgn(pgn) {
 }
 
 /**
- * A move's number as a scoresheet writes it.
+ * A move with its number as a scoresheet writes it, in the chosen notation.
  * @param {number} ply  The move's ply.
- * @param {string} san  The move.
- * @returns {{number: string, san: string}} `12.` for White, `12...` for Black, and the move.
+ * @param {string} san  The move, in English SAN.
+ * @returns {HTMLSpanElement} `12. Nf3` for White, `12... Nf6` for Black.
  */
 function numbered(ply, san) {
   const number = Math.ceil(ply / 2);
-  return { number: ply % 2 === 1 ? `${number}.` : `${number}...`, san };
+  const played = document.createElement("span");
+  played.className = "played";
+  played.tabIndex = 0;
+  played.dataset.tip = "";
+  played.append(ply % 2 === 1 ? `${number}. ` : `${number}... `, sanElement(san));
+  return played;
+}
+
+/**
+ * Moves the line expected, in the chosen notation, separated by commas.
+ * @param {string[]} sans  The moves, in English SAN.
+ * @returns {DocumentFragment} The moves.
+ */
+function expectedMoves(sans) {
+  const fragment = document.createDocumentFragment();
+  sans.forEach((san, index) => {
+    if (index > 0) fragment.append(", ");
+    const move = document.createElement("span");
+    move.className = "expected";
+    move.tabIndex = 0;
+    move.dataset.tip = "";
+    move.append(sanElement(san));
+    fragment.append(move);
+  });
+  return fragment;
 }
 
 /**
@@ -87,22 +112,24 @@ export function renderEndCard(summary) {
     list.append(item);
   }
   for (const deviation of summary.deviations) {
-    const { number, san } = numbered(deviation.ply, deviation.played_san);
     const item = document.createElement("li");
-    const played = document.createElement("span");
-    played.className = "played";
-    played.textContent = `${number} ${san}`;
-    item.append(moveIcon("deviation", t("icon.deviation")), played, ` — ${t("end.deviationLine", { expected: deviation.expected_san.join(", ") })}`);
+    item.append(
+      moveIcon("deviation", t("icon.deviation")),
+      numbered(deviation.ply, deviation.played_san),
+      " — ",
+      tNodes("end.deviationLine", { expected: expectedMoves(deviation.expected_san) }),
+    );
     list.append(item);
   }
   const bot = summary.state.bot_deviation;
   if (bot) {
-    const { number, san } = numbered(bot.ply, bot.played_san);
     const item = document.createElement("li");
-    const played = document.createElement("span");
-    played.className = "played";
-    played.textContent = `${number} ${san}`;
-    item.append(moveIcon("deviation", t("icon.botDeviation")), played, ` — ${t("end.botDeviationLine", { expected: bot.expected_san.join(", ") })}`);
+    item.append(
+      moveIcon("deviation", t("icon.botDeviation")),
+      numbered(bot.ply, bot.played_san),
+      " — ",
+      tNodes("end.botDeviationLine", { expected: expectedMoves(bot.expected_san) }),
+    );
     list.append(item);
   }
 

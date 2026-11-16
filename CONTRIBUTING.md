@@ -35,7 +35,8 @@ tested.
 
 - Code, identifiers, comments, commits and docs are in English. User-facing text goes through
   `web/i18n/{locale}.json`, in English, Brazilian Portuguese and Spanish.
-- Chess notation is always English SAN.
+- PGN, imports, stored moves and `openings/*.json` are always English SAN. What the screen shows
+  follows the player's notation choice (figurines, English letters or local letters).
 - No build step, no Node and no CDN: everything the app loads ships in the image.
 - Never change or reuse a line `id` in `openings/`. Every book move is validated by tests, and a new
   line records where it came from in `source`.

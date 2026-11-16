@@ -170,6 +170,29 @@ body.is-resizing {
   accent-color: var(--accent);
 }
 
+/* Beside the logo: the language picker, and the notation picker right below it (#53). */
+.brand-pickers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.notation-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.notation-picker select {
+  min-width: 0;
+  max-width: 100%;
+  font-family: var(--font-ui);
+}
+
 /* The language picker sits beside the logo, with no visible label. */
 .locale-picker {
   min-width: 0;

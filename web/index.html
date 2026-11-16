@@ -21,7 +21,13 @@
       <aside class="sidebar">
         <div class="brand">
           <img class="brand-logo" src="logo.svg" alt="Chess Trainer" width="95" height="95" />
-          <select id="locale-picker" class="locale-picker" data-i18n-label="locale.label"></select>
+          <div class="brand-pickers">
+            <select id="locale-picker" class="locale-picker" data-i18n-label="locale.label"></select>
+            <label class="notation-picker">
+              <span data-i18n="notation.label"></span>
+              <select id="notation-picker"></select>
+            </label>
+          </div>
         </div>
 
         <nav id="sidebar-tabs" class="menu">
@@ -290,6 +296,7 @@
                 <li data-i18n="help.play.moves"></li>
                 <li data-i18n="help.play.chips"></li>
                 <li data-i18n="help.play.showMoves"></li>
+                <li data-i18n="help.play.notation"></li>
                 <li data-i18n="help.play.premoves"></li>
                 <li data-i18n="help.play.resign"></li>
               </ul>
@@ -721,7 +728,10 @@
           <p id="opening-name" class="opening-title"></p>
         </section>
         <section id="moves-box" class="moves-box">
-          <h2 data-i18n="game.moves"></h2>
+          <div class="moves-head">
+            <h2 data-i18n="game.moves"></h2>
+            <button id="notation-switch" class="notation-switch" type="button"></button>
+          </div>
           <div id="movelist" class="movelist"></div>
         </section>
         <section id="end-card" class="card end-card" hidden>
