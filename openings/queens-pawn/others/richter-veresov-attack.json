@@ -9,7 +9,12 @@
     "pt-PT": "Ataque Richter-Veresov",
     "de": "Weressow-Eröffnung",
     "fr": "Attaque Richter-Veressov",
-    "it": "Partita Lewitzkij-Veresov"
+    "it": "Partita Lewitzkij-Veresov",
+    "tr": "Richter-Veresov Saldırısı",
+    "nl": "Richter-Veresovvariant",
+    "pl": "Atak Richter-Veresov",
+    "id": "Serangan Richter-Veresov",
+    "vi": "Tấn công Richter-Veresov"
   },
   "order": null,
   "variants": [
@@ -23,7 +28,12 @@
         "pt-PT": "Principal",
         "de": "Hauptvariante",
         "fr": "Ligne principale",
-        "it": "Linea principale"
+        "it": "Linea principale",
+        "tr": "Ana",
+        "nl": "Hoofdvariant",
+        "id": "Utama",
+        "vi": "Chính",
+        "pl": "Główny"
       },
       "lines": [
         {
@@ -37,7 +47,12 @@
             "pt-PT": "Ataque Richter-Veresov",
             "de": "Richter-Weressow-Angriff",
             "fr": "Attaque Richter-Veressov",
-            "it": "Attacco Richter-Veresov"
+            "it": "Attacco Richter-Veresov",
+            "tr": "Richter-Veresov Akını",
+            "pl": "Atak Richter-Veresov",
+            "nl": "Richter-Veresovaanval",
+            "id": "Serangan Richter-Veresov",
+            "vi": "Tấn công Richter-Veresov"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack",
@@ -55,7 +70,12 @@
             "pt-PT": "Ataque Richter-Veresov",
             "de": "Richter-Weressow-Angriff",
             "fr": "Attaque Richter-Veressov",
-            "it": "Attacco Richter-Veresov"
+            "it": "Attacco Richter-Veresov",
+            "tr": "Richter-Veresov Akını",
+            "pl": "Atak Richter-Veresov",
+            "nl": "Richter-Veresovaanval",
+            "id": "Serangan Richter-Veresov",
+            "vi": "Tấn công Richter-Veresov"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack",
@@ -74,7 +94,12 @@
         "pt-PT": "Sistema dos Dois Cavalos",
         "de": "Zweispringersystem",
         "fr": "Système des deux cavaliers",
-        "it": "Sistema dei due cavalli"
+        "it": "Sistema dei due cavalli",
+        "tr": "İki At Sistemi",
+        "nl": "Tweepaardensysteem",
+        "id": "Sistem Dua Kuda",
+        "vi": "Hệ thống hai Mã",
+        "pl": "System dwóch skoczków"
       },
       "lines": [
         {
@@ -88,7 +113,12 @@
             "pt-PT": "Sistema dos Dois Cavalos",
             "de": "Zweispringersystem",
             "fr": "Système des deux cavaliers",
-            "it": "Sistema dei due cavalli"
+            "it": "Sistema dei due cavalli",
+            "tr": "İki At Sistemi",
+            "nl": "Tweepaardensysteem",
+            "id": "Sistem Dua Kuda",
+            "vi": "Hệ thống hai Mã",
+            "pl": "System dwóch skoczków"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack: Two Knights System",
@@ -106,7 +136,12 @@
             "pt-PT": "Sistema dos Dois Cavalos, Defesa Grünfeld",
             "de": "Zweispringersystem, Grünfeld-Verteidigung",
             "fr": "Système des deux cavaliers, Défense Grünfeld",
-            "it": "Sistema dei due cavalli, Difesa Grünfeld"
+            "it": "Sistema dei due cavalli, Difesa Grünfeld",
+            "tr": "İki At Sistemi, Grünfeld Savunması",
+            "nl": "Tweepaardensysteem, Grünfeldverdediging",
+            "id": "Sistem Dua Kuda, Pertahanan Grünfeld",
+            "vi": "Hệ thống hai Mã, Phòng thủ Grünfeld",
+            "pl": "System dwóch skoczków, Obrona Grünfeld"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack: Two Knights System, Grünfeld Defense",
@@ -128,7 +163,12 @@
         "pt-PT": "Defesa Boyce",
         "de": "Boyce-Verteidigung",
         "fr": "Défense Boyce",
-        "it": "Difesa Boyce"
+        "it": "Difesa Boyce",
+        "tr": "Boyce Savunması",
+        "pl": "Obrona Boyce",
+        "nl": "Boyceverdediging",
+        "id": "Pertahanan Boyce",
+        "vi": "Phòng thủ Boyce"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Boyce Defense",
@@ -146,7 +186,12 @@
         "pt-PT": "Gambito Malich",
         "de": "Malich-Gambit",
         "fr": "Gambit Malich",
-        "it": "Gambetto Malich"
+        "it": "Gambetto Malich",
+        "tr": "Malich Gambiti",
+        "pl": "Gambit Malich",
+        "nl": "Malichgambiet",
+        "id": "Gambit Malich",
+        "vi": "Gambit Malich"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Malich Gambit",
@@ -164,7 +209,12 @@
         "pt-PT": "Variante Richter",
         "de": "Richter-Variante",
         "fr": "Variante Richter",
-        "it": "Variante Richter"
+        "it": "Variante Richter",
+        "tr": "Richter Varyantı",
+        "pl": "Wariant Richter",
+        "nl": "Richtervariant",
+        "id": "Variasi Richter",
+        "vi": "Phương án Richter"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Richter Variation",
@@ -182,7 +232,12 @@
         "pt-PT": "Variante Veresov",
         "de": "Weressow-Variante",
         "fr": "Variante Veressov",
-        "it": "Variante Veresov"
+        "it": "Variante Veresov",
+        "tr": "Veresov Varyantı",
+        "pl": "Wariant Veresov",
+        "nl": "Veresovvariant",
+        "id": "Variasi Veresov",
+        "vi": "Phương án Veresov"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Veresov Variation",

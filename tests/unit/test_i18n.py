@@ -15,6 +15,10 @@ from app.locales import load_locales
 I18N_DIR = Path(__file__).parent.parent.parent / "web" / "i18n"
 PLURAL_FORMS = ("zero", "one", "two", "few", "many", "other")
 PLACEHOLDER = re.compile(r"\{(\w+)\}")
+# The cardinal plural forms (CLDR's, as the browser's Intl.PluralRules names them) of the languages
+# whose forms for the counts the app shows are not `one` and `other`. French, Spanish, Italian and
+# Portuguese also have `many`, but only for millions, which no count here reaches.
+PLURALS = {"pl": {"one", "few", "many", "other"}, "id": {"other"}, "vi": {"other"}}
 
 
 def load(code: str) -> dict[str, str]:
@@ -45,7 +49,7 @@ def base_key(key: str) -> str:
         str: The key without its plural form.
     """
     head, _, form = key.rpartition(".")
-    return head if form in PLURAL_FORMS and key not in ENGLISH else key
+    return head if form in PLURAL_FORMS else key
 
 
 def english_for(key: str) -> list[str]:
@@ -57,7 +61,7 @@ def english_for(key: str) -> list[str]:
     Returns:
         list[str]: The English strings.
     """
-    if key in ENGLISH:
+    if key in ENGLISH and base_key(key) == key:
         return [ENGLISH[key]]
     base = base_key(key)
     return [ENGLISH[name] for name in ENGLISH if base_key(name) == base]
@@ -80,6 +84,21 @@ def test_every_english_string_is_translated(code):
         key for key in ENGLISH if key not in strings and f"{base_key(key)}.other" not in strings
     ]
     assert missing == []
+
+
+@pytest.mark.parametrize("code", TRANSLATIONS)
+def test_plural_keys_have_the_language_s_forms(code):
+    """A string with plural forms has every form of its language, and only those.
+
+    Args:
+        code (str): A UI language code.
+    """
+    forms = PLURALS.get(code, {"one", "other"})
+    strings = load(code)
+    bases = {base_key(key) for key in strings if base_key(key) != key}
+    for base in bases:
+        have = {key.rpartition(".")[2] for key in strings if base_key(key) == base and key != base}
+        assert have == forms, f"{code} {base}: {sorted(have)}, expected {sorted(forms)}"
 
 
 @pytest.mark.parametrize("code", ENGLISH_VARIANTS)

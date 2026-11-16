@@ -9,7 +9,12 @@
     "pt-PT": "Ataque Grob",
     "de": "Grobs Angriff",
     "fr": "Début Grob",
-    "it": "Attacco Grob"
+    "it": "Attacco Grob",
+    "tr": "Grob Saldırısı",
+    "pl": "Otwarcie Grob",
+    "nl": "Grobopening",
+    "id": "Pembukaan Grob",
+    "vi": "Khai cuộc Grob"
   },
   "order": null,
   "variants": [
@@ -23,7 +28,12 @@
         "pt-PT": "Gambito Grob",
         "de": "Grob-Gambit",
         "fr": "Gambit Grob",
-        "it": "Gambetto Grob"
+        "it": "Gambetto Grob",
+        "tr": "Grob Gambiti",
+        "pl": "Gambit Grob",
+        "nl": "Grobgambiet",
+        "id": "Gambit Grob",
+        "vi": "Gambit Grob"
       },
       "lines": [
         {
@@ -37,7 +47,12 @@
             "pt-PT": "Gambito Grob",
             "de": "Grob-Gambit",
             "fr": "Gambit Grob",
-            "it": "Gambetto Grob"
+            "it": "Gambetto Grob",
+            "tr": "Grob Gambiti",
+            "pl": "Gambit Grob",
+            "nl": "Grobgambiet",
+            "id": "Gambit Grob",
+            "vi": "Gambit Grob"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit",
@@ -55,7 +70,12 @@
             "pt-PT": "Gambito Grob, Gambito Fritz",
             "de": "Grob-Gambit, Fritz-Gambit",
             "fr": "Gambit Grob, Gambit Fritz",
-            "it": "Gambetto Grob, Gambetto Fritz"
+            "it": "Gambetto Grob, Gambetto Fritz",
+            "tr": "Grob Gambiti, Fritz Gambiti",
+            "pl": "Gambit Grob, Gambit Fritz",
+            "nl": "Grobgambiet, Fritzgambiet",
+            "id": "Gambit Grob, Gambit Fritz",
+            "vi": "Gambit Grob, Gambit Fritz"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Fritz Gambit",
@@ -73,7 +93,12 @@
             "pt-PT": "Gambito Grob, Gambito Fritz, Contragambito Romford",
             "de": "Grob-Gambit, Fritz-Gambit, Romford-Gegengambit",
             "fr": "Gambit Grob, Gambit Fritz, Contre-gambit Romford",
-            "it": "Gambetto Grob, Gambetto Fritz, Controgambetto Romford"
+            "it": "Gambetto Grob, Gambetto Fritz, Controgambetto Romford",
+            "tr": "Grob Gambiti, Fritz Gambiti, Romford Karşı Gambiti",
+            "pl": "Gambit Grob, Gambit Fritz, Kontrgambit Romford",
+            "nl": "Grobgambiet, Fritzgambiet, Romfordtegengambiet",
+            "id": "Gambit Grob, Gambit Fritz, Gambit Balasan Romford",
+            "vi": "Gambit Grob, Gambit Fritz, Phản gambit Romford"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Fritz Gambit, Romford Countergambit",
@@ -91,7 +116,12 @@
             "pt-PT": "Gambito Grob, Gambito Richter-Grob",
             "de": "Grob-Gambit, Richter-Grob-Gambit",
             "fr": "Gambit Grob, Gambit Richter-Grob",
-            "it": "Gambetto Grob, Gambetto Richter-Grob"
+            "it": "Gambetto Grob, Gambetto Richter-Grob",
+            "tr": "Grob Gambiti, Richter-Grob Gambiti",
+            "pl": "Gambit Grob, Gambit Richter-Grob",
+            "nl": "Grobgambiet, Richter-Grobgambiet",
+            "id": "Gambit Grob, Gambit Richter-Grob",
+            "vi": "Gambit Grob, Gambit Richter-Grob"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Richter-Grob Gambit",
@@ -109,7 +139,12 @@
             "pt-PT": "Gambito Grob, Gambito Keres",
             "de": "Grob-Gambit, Keres-Gambit",
             "fr": "Gambit Grob, Gambit Keres",
-            "it": "Gambetto Grob, Gambetto Keres"
+            "it": "Gambetto Grob, Gambetto Keres",
+            "tr": "Grob Gambiti, Keres Gambiti",
+            "pl": "Gambit Grob, Gambit Keres",
+            "nl": "Grobgambiet, Keresgambiet",
+            "id": "Gambit Grob, Gambit Keres",
+            "vi": "Gambit Grob, Gambit Keres"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Keres Gambit",
@@ -127,7 +162,12 @@
             "pt-PT": "Gambito Grob, Gambito Basman",
             "de": "Grob-Gambit, Basman-Gambit",
             "fr": "Gambit Grob, Gambit Basman",
-            "it": "Gambetto Grob, Gambetto Basman"
+            "it": "Gambetto Grob, Gambetto Basman",
+            "tr": "Grob Gambiti, Basman Gambiti",
+            "pl": "Gambit Grob, Gambit Basman",
+            "nl": "Grobgambiet, Basmangambiet",
+            "id": "Gambit Grob, Gambit Basman",
+            "vi": "Gambit Grob, Gambit Basman"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Basman Gambit",
@@ -146,7 +186,12 @@
         "pt-PT": "Gambito Zilbermints",
         "de": "Zilbermints-Gambit",
         "fr": "Gambit Zilbermints",
-        "it": "Gambetto Zilbermints"
+        "it": "Gambetto Zilbermints",
+        "tr": "Zilbermints Gambiti",
+        "pl": "Gambit Zilbermints",
+        "nl": "Zilbermintsgambiet",
+        "id": "Gambit Zilbermints",
+        "vi": "Gambit Zilbermints"
       },
       "lines": [
         {
@@ -160,7 +205,12 @@
             "pt-PT": "Gambito Zilbermints",
             "de": "Zilbermints-Gambit",
             "fr": "Gambit Zilbermints",
-            "it": "Gambetto Zilbermints"
+            "it": "Gambetto Zilbermints",
+            "tr": "Zilbermints Gambiti",
+            "pl": "Gambit Zilbermints",
+            "nl": "Zilbermintsgambiet",
+            "id": "Gambit Zilbermints",
+            "vi": "Gambit Zilbermints"
           },
           "eco": "A00",
           "opening": "Grob Opening: Zilbermints Gambit",
@@ -178,7 +228,12 @@
             "pt-PT": "Gambito Zilbermints, Gambito Zilbermints-Hartlaub",
             "de": "Zilbermints-Gambit, Zilbermints-Hartlaub-Gambit",
             "fr": "Gambit Zilbermints, Gambit Zilbermints-Hartlaub",
-            "it": "Gambetto Zilbermints, Gambetto Zilbermints-Hartlaub"
+            "it": "Gambetto Zilbermints, Gambetto Zilbermints-Hartlaub",
+            "tr": "Zilbermints Gambiti, Zilbermints-Hartlaub Gambiti",
+            "pl": "Gambit Zilbermints, Gambit Zilbermints-Hartlaub",
+            "nl": "Zilbermintsgambiet, Zilbermints-Hartlaubgambiet",
+            "id": "Gambit Zilbermints, Gambit Zilbermints-Hartlaub",
+            "vi": "Gambit Zilbermints, Gambit Zilbermints-Hartlaub"
           },
           "eco": "A00",
           "opening": "Grob Opening: Zilbermints Gambit, Zilbermints-Hartlaub Gambit",
@@ -196,7 +251,12 @@
             "pt-PT": "Gambito Zilbermints, Defesa Schiller",
             "de": "Zilbermints-Gambit, Schiller-Verteidigung",
             "fr": "Gambit Zilbermints, Défense Schiller",
-            "it": "Gambetto Zilbermints, Difesa Schiller"
+            "it": "Gambetto Zilbermints, Difesa Schiller",
+            "tr": "Zilbermints Gambiti, Schiller Savunması",
+            "pl": "Gambit Zilbermints, Obrona Schiller",
+            "nl": "Zilbermintsgambiet, Schillerverdediging",
+            "id": "Gambit Zilbermints, Pertahanan Schiller",
+            "vi": "Gambit Zilbermints, Phòng thủ Schiller"
           },
           "eco": "A00",
           "opening": "Grob Opening: Zilbermints Gambit, Schiller Defense",
@@ -215,7 +275,12 @@
         "pt-PT": "Grob Duplo",
         "de": "Doppel-Grob",
         "fr": "Double Grob",
-        "it": "Doppio Grob"
+        "it": "Doppio Grob",
+        "tr": "Çifte Grob",
+        "nl": "Dubbele Grob",
+        "id": "Grob Ganda",
+        "vi": "Grob kép",
+        "pl": "Podwójny Grob"
       },
       "lines": [
         {
@@ -229,7 +294,12 @@
             "pt-PT": "Grob Duplo",
             "de": "Doppel-Grob",
             "fr": "Double Grob",
-            "it": "Doppio Grob"
+            "it": "Doppio Grob",
+            "tr": "Çifte Grob",
+            "nl": "Dubbele Grob",
+            "id": "Grob Ganda",
+            "vi": "Grob kép",
+            "pl": "Podwójny Grob"
           },
           "eco": "A00",
           "opening": "Grob Opening: Double Grob",
@@ -247,7 +317,12 @@
             "pt-PT": "Grob Duplo, Gambito Coca-Cola",
             "de": "Doppel-Grob, Coca-Cola-Gambit",
             "fr": "Double Grob, Gambit Coca-Cola",
-            "it": "Doppio Grob, Gambetto Coca-Cola"
+            "it": "Doppio Grob, Gambetto Coca-Cola",
+            "tr": "Çifte Grob, Coca-Cola Gambiti",
+            "nl": "Dubbele Grob, Coca-Colagambiet",
+            "id": "Grob Ganda, Gambit Coca-Cola",
+            "vi": "Grob kép, Gambit Coca-Cola",
+            "pl": "Podwójny Grob, Gambit Coca-Cola"
           },
           "eco": "A00",
           "opening": "Grob Opening: Double Grob, Coca-Cola Gambit",
@@ -266,7 +341,12 @@
         "pt-PT": "Defesa Keene",
         "de": "Keene-Verteidigung",
         "fr": "Défense Keene",
-        "it": "Difesa Keene"
+        "it": "Difesa Keene",
+        "tr": "Keene Savunması",
+        "pl": "Obrona Keene",
+        "nl": "Keeneverdediging",
+        "id": "Pertahanan Keene",
+        "vi": "Phòng thủ Keene"
       },
       "lines": [
         {
@@ -280,7 +360,12 @@
             "pt-PT": "Defesa Keene",
             "de": "Keene-Verteidigung",
             "fr": "Défense Keene",
-            "it": "Difesa Keene"
+            "it": "Difesa Keene",
+            "tr": "Keene Savunması",
+            "pl": "Obrona Keene",
+            "nl": "Keeneverdediging",
+            "id": "Pertahanan Keene",
+            "vi": "Phòng thủ Keene"
           },
           "eco": "A00",
           "opening": "Grob Opening: Keene Defense",
@@ -298,7 +383,12 @@
             "pt-PT": "Defesa Keene, Linha Principal",
             "de": "Keene-Verteidigung, Hauptvariante",
             "fr": "Défense Keene, Ligne principale",
-            "it": "Difesa Keene, Linea principale"
+            "it": "Difesa Keene, Linea principale",
+            "tr": "Keene Savunması, Ana Hat",
+            "pl": "Obrona Keene, Wariant główny",
+            "nl": "Keeneverdediging, Hoofdvariant",
+            "id": "Pertahanan Keene, Lini Utama",
+            "vi": "Phòng thủ Keene, Phương án chính"
           },
           "eco": "A00",
           "opening": "Grob Opening: Keene Defense, Main Line",
@@ -320,7 +410,12 @@
         "pt-PT": "Gambito Alessi",
         "de": "Alessi-Gambit",
         "fr": "Gambit Alessi",
-        "it": "Gambetto Alessi"
+        "it": "Gambetto Alessi",
+        "tr": "Alessi Gambiti",
+        "pl": "Gambit Alessi",
+        "nl": "Alessigambiet",
+        "id": "Gambit Alessi",
+        "vi": "Gambit Alessi"
       },
       "eco": "A00",
       "opening": "Grob Opening: Alessi Gambit",
@@ -338,7 +433,12 @@
         "pt-PT": "Gambito Grob Recusado",
         "de": "Abgelehntes Grob-Gambit",
         "fr": "Gambit Grob refusé",
-        "it": "Gambetto Grob rifiutato"
+        "it": "Gambetto Grob rifiutato",
+        "tr": "Reddedilmiş Grob Gambiti",
+        "nl": "Grobgambiet geweigerd",
+        "id": "Gambit Grob Ditolak",
+        "vi": "Gambit Grob từ chối",
+        "pl": "Gambit Grob odrzucony"
       },
       "eco": "A00",
       "opening": "Grob Opening: Grob Gambit Declined",
@@ -356,7 +456,12 @@
         "pt-PT": "Defesa Londres",
         "de": "Londoner Verteidigung",
         "fr": "Défense de Londres",
-        "it": "Difesa di Londra"
+        "it": "Difesa di Londra",
+        "tr": "Londra Savunması",
+        "nl": "Londenverdediging",
+        "id": "Pertahanan London",
+        "vi": "Phòng thủ London",
+        "pl": "Obrona londyńska"
       },
       "eco": "A00",
       "opening": "Grob Opening: London Defense",
@@ -374,7 +479,12 @@
         "pt-PT": "Abertura Grob",
         "de": "Grob-Eröffnung",
         "fr": "Ouverture Grob",
-        "it": "Apertura Grob"
+        "it": "Apertura Grob",
+        "tr": "Grob Açılışı",
+        "pl": "Otwarcie Grob",
+        "nl": "Grobopening",
+        "id": "Pembukaan Grob",
+        "vi": "Khai cuộc Grob"
       },
       "eco": "A00",
       "opening": "Grob Opening",
@@ -392,7 +502,12 @@
         "pt-PT": "Contragambito Romford",
         "de": "Romford-Gegengambit",
         "fr": "Contre-gambit Romford",
-        "it": "Controgambetto Romford"
+        "it": "Controgambetto Romford",
+        "tr": "Romford Karşı Gambiti",
+        "pl": "Kontrgambit Romford",
+        "nl": "Romfordtegengambiet",
+        "id": "Gambit Balasan Romford",
+        "vi": "Phản gambit Romford"
       },
       "eco": "A00",
       "opening": "Grob Opening: Romford Countergambit",
@@ -410,7 +525,12 @@
         "pt-PT": "Espigão, Ataque Hurst",
         "de": "Stachel, Hurst-Angriff",
         "fr": "Pointe, Attaque Hurst",
-        "it": "Punta, Attacco Hurst"
+        "it": "Punta, Attacco Hurst",
+        "tr": "Çivi, Hurst Akını",
+        "nl": "Spijker, Hurstaanval",
+        "id": "Paku, Serangan Hurst",
+        "vi": "Đinh, Tấn công Hurst",
+        "pl": "Kolec, Atak Hurst"
       },
       "eco": "A00",
       "opening": "Grob Opening: Spike, Hurst Attack",
@@ -428,7 +548,12 @@
         "pt-PT": "Ataque Espigão",
         "de": "Stachelangriff",
         "fr": "Attaque de la pointe",
-        "it": "Attacco della punta"
+        "it": "Attacco della punta",
+        "tr": "Çivi Akını",
+        "nl": "Spijkeraanval",
+        "id": "Serangan Paku",
+        "vi": "Tấn công đinh",
+        "pl": "Atak kolca"
       },
       "eco": "A00",
       "opening": "Grob Opening: Spike Attack",

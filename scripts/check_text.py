@@ -170,7 +170,8 @@ def i18n_texts(path: Path) -> list[Text]:
         if key == "locale.name":
             continue
         keys.append((offset, key))
-        count = "1" if key.endswith(".one") else "2"
+        # A number that takes this plural form (Polish: 1 one, 2 few, 5 many).
+        count = {"one": "1", "few": "2", "many": "5"}.get(key.rpartition(".")[2], "2")
         parts += [*split_markup(value, {"{count}": count}), (False, I18N_SEP, "")]
         offset += len(value) + len(I18N_SEP)
     return [Text(str(path.relative_to(ROOT)), path.stem, parts, keys=keys)]

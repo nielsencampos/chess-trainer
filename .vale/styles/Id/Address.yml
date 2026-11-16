@@ -1,0 +1,9 @@
+# id speaks to the reader as "Anda", never the familiar kamu, kau or engkau.
+extends: existence
+message: "Use 'Anda' as the form of address, not '%s'."
+level: error
+ignorecase: true
+tokens:
+  - kamu
+  - kau
+  - engkau

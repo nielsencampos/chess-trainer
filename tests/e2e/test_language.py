@@ -23,12 +23,40 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
             "Español (Latinoamérica)",
             "Español (España)",
             "Français",
+            "Bahasa Indonesia",
             "Italiano",
+            "Nederlands",
+            "Polski",
             "Português (Brasil)",
             "Português (Portugal)",
+            "Türkçe",
+            "Tiếng Việt",
         ]
     )
     expect(page.locator("#locale-picker")).to_have_value("en-US")
+
+
+def test_a_latin_extended_language_loads_its_font_subset(page: Page):
+    """Turkish text uses the vendored latin-ext faces, not a system font mid-word.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
+    page.goto("/")
+    page.locator("#locale-picker").select_option("tr")
+    expect(page.locator("html")).to_have_attribute("lang", "tr")
+    expect(page.locator("#tab-scoresheet")).to_have_text(
+        "Hamle K\u00e2\u011f\u0131d\u0131"
+    )  # Turkish dotless i
+    loaded = page.evaluate(
+        """async () => {
+          await document.fonts.ready;
+          return [...document.fonts]
+            .filter((face) => face.status === "loaded" && face.unicodeRange.startsWith("U+100-2BA"))
+            .map((face) => face.family);
+        }"""
+    )
+    assert "Familjen Grotesk" in loaded
 
 
 def test_switching_language_is_kept_after_a_reload(page: Page):

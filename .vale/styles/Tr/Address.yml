@@ -1,0 +1,12 @@
+# tr speaks to the reader as "siz", never "sen": no sen, seni, sana, senin or sende forms.
+extends: existence
+message: "Use 'siz' as the form of address, not '%s'."
+level: error
+ignorecase: true
+tokens:
+  - sen
+  - seni
+  - sana
+  - senin
+  - sende
+  - senden

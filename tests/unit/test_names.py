@@ -482,6 +482,20 @@ def test_a_wikidata_label_starts_with_a_capital():
     assert found.name == "Variante Dragão"  # What follows the family's name, with a capital.
 
 
+def test_a_label_copied_from_english_gives_no_name():
+    """Another language's label that is only the English name is no translation."""
+    entry = {
+        "item": "Q9",
+        "sitelinks": {"enwiki": "Torre Attack"},
+        "labels": {"en": "Torre Attack", "pt": "Torre Attack"},
+    }
+    assert wiki_name(entry, locale()) is None
+    copied = {"item": "Q10", "sitelinks": {}, "labels": {"en": "x", "pt": "Three Knights Opening"}}
+    assert wiki_name(copied, locale(), english=("Three Knights Opening",)) is None
+    own = {"item": "Q11", "sitelinks": {}, "labels": {"en": "Torre Attack", "pt": "Ataque Torre"}}
+    assert wiki_name(own, locale()).name == "Ataque Torre"
+
+
 def test_a_hyphenated_template_joins_the_proper_name(tmp_path):
     """`{name-}` keeps the proper name with its words joined by hyphens, for compounds.
 
