@@ -89,6 +89,19 @@ class Remote(Protocol):
         """
         ...
 
+    def variants(self, wikipedia: str, titles: list[str], variant: str) -> dict[str, str]:
+        """Looks up how a Wikipedia shows titles in one of its variants.
+
+        Args:
+            wikipedia (str): The Wikipedia's language code, such as "zh".
+            titles (list[str]): Article titles of that Wikipedia.
+            variant (str): The variant, such as "zh-cn".
+
+        Returns:
+            dict[str, str]: Each title as that variant shows it.
+        """
+        ...
+
 
 class OfflineError(RuntimeError):
     """A lookup is not in the cache and the run is offline."""
@@ -226,6 +239,37 @@ class WikidataRemote:
                 }
         return entries
 
+    def variants(self, wikipedia: str, titles: list[str], variant: str) -> dict[str, str]:
+        """Looks up how a Wikipedia shows titles in one of its variants, `BATCH` at a time.
+
+        Args:
+            wikipedia (str): The Wikipedia's language code, such as "zh".
+            titles (list[str]): Article titles of that Wikipedia.
+            variant (str): The variant, such as "zh-cn".
+
+        Returns:
+            dict[str, str]: Each title as that variant shows it; the title itself when the
+            Wikipedia gives no variant of it.
+        """
+        shown: dict[str, str] = {}
+        for start in range(0, len(titles), BATCH):
+            batch = titles[start : start + BATCH]
+            query = self._get(
+                f"https://{wikipedia}.wikipedia.org/w/api.php",
+                {
+                    "action": "query",
+                    "prop": "info",
+                    "inprop": "varianttitles",
+                    "titles": "|".join(batch),
+                },
+            ).get("query", {})
+            normalized = {item["from"]: item["to"] for item in query.get("normalized", [])}
+            pages = {page["title"]: page for page in query.get("pages", []) if "title" in page}
+            for title in batch:
+                page = pages.get(normalized.get(title, title), {})
+                shown[title] = page.get("varianttitles", {}).get(variant) or title
+        return shown
+
 
 class WikipediaCache:
     """The lookups, kept in the repository so a rerun needs no internet."""
@@ -266,6 +310,38 @@ class WikipediaCache:
             self.entries.update({title: fetched.get(title) for title in chunk})
             self.changed = True
             self.save()
+
+    def prefetch_variants(self, wikipedia: str, variant: str) -> None:
+        """Looks up, for every entry with an article in a Wikipedia, its title in a variant.
+
+        The title is kept in the entry's `variants`, by variant.
+
+        Args:
+            wikipedia (str): The Wikipedia's language code, such as "zh".
+            variant (str): The variant, such as "zh-cn".
+
+        Raises:
+            OfflineError: Some are missing and there is no remote.
+        """
+        site = wikipedia.replace("-", "_") + "wiki"
+        missing = [
+            entry
+            for entry in self.entries.values()
+            if entry and site in entry["sitelinks"] and variant not in entry.get("variants", {})
+        ]
+        if not missing:
+            return
+        if self.remote is None:
+            raise OfflineError(
+                f"{len(missing)} {variant} titles are not in {self.path.name}, "
+                f"e.g. {missing[0]['sitelinks'][site]!r}"
+            )
+        titles = sorted({entry["sitelinks"][site] for entry in missing})
+        shown = self.remote.variants(wikipedia, titles, variant)
+        for entry in missing:
+            entry.setdefault("variants", {})[variant] = shown[entry["sitelinks"][site]]
+        self.changed = True
+        self.save()
 
     def get(self, title: str) -> CacheEntry:
         """A title's entry.
@@ -322,11 +398,19 @@ def wiki_name(
         return None
     site = locale.wikipedia.replace("-", "_") + "wiki"
     found = None
+    variant = locale.wikipedia_variant
     if title := entry["sitelinks"].get(site):
-        url = f"https://{locale.wikipedia}.wikipedia.org/wiki/{title.replace(' ', '_')}"
+        # A Wikipedia with variants shows the title in the locale's one, at its own path.
+        title = entry.get("variants", {}).get(variant, title) if variant else title
+        path = f"{variant or 'wiki'}/{title.replace(' ', '_')}"
+        url = f"https://{locale.wikipedia}.wikipedia.org/{path}"
         found = Found(DISAMBIGUATION.sub("", title), url)
     else:
-        for language in dict.fromkeys((locale.code.lower(), locale.wikipedia)):
+        # With variants, the label of the bare language may be written in another one.
+        languages = (
+            (locale.code.lower(), variant) if variant else (locale.code.lower(), locale.wikipedia)
+        )
+        for language in dict.fromkeys(languages):
             label = entry["labels"].get(language)
             if label and not english_copy(entry, label, locale, english):
                 found = Found(label, f"https://www.wikidata.org/wiki/{entry['item']}")
@@ -734,6 +818,8 @@ def fill_names(
 
     items = _items(documents)
     cache.prefetch(item.query for item in items)
+    if locale.wikipedia_variant:
+        cache.prefetch_variants(locale.wikipedia, locale.wikipedia_variant)
     family_items = {
         item.family: cache.get(item.query) for item in items if item.key[0] == "families"
     }

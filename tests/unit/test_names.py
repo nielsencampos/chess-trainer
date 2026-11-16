@@ -103,6 +103,10 @@ LOOKUPS = {
 }
 
 
+# How the Chinese Wikipedia shows titles in Simplified Chinese (zh-cn).
+VARIANTS = {"西班牙開局": "西班牙开局"}
+
+
 class FakeRemote:
     """A Wikipedia lookup from a dictionary, counting the titles asked for."""
 
@@ -126,6 +130,20 @@ class FakeRemote:
         """
         self.asked += titles
         return {title: self.entries.get(title) for title in titles}
+
+    def variants(self, wikipedia: str, titles: list[str], variant: str) -> dict[str, str]:
+        """Shows titles in a variant from the `VARIANTS` table.
+
+        Args:
+            wikipedia (str): The Wikipedia's language code.
+            titles (list[str]): Its article titles.
+            variant (str): The variant.
+
+        Returns:
+            dict[str, str]: Each title in the variant, or as it is.
+        """
+        self.asked += titles
+        return {title: VARIANTS.get(title, title) for title in titles}
 
 
 def locale(reviewed: bool = False) -> Locale:
@@ -704,3 +722,28 @@ def test_the_cache_is_saved_after_each_chunk(tmp_path, monkeypatch):
     with pytest.raises(RuntimeError):
         cache.prefetch(["a", "b", "c"])
     assert json.loads(path.read_text(encoding="utf-8")) == {"a": None, "b": None}
+
+
+def test_a_wikipedia_variant_gives_the_title_in_that_variant(repo):
+    """zh-CN takes the zh.wikipedia title as its zh-cn variant shows it, and links that variant."""
+    ruy = {
+        "title": "Ruy Lopez",
+        "item": "Q1",
+        "sitelinks": {"enwiki": "Ruy Lopez", "zhwiki": "西班牙開局"},
+        "labels": {"zh": "西班牙開局"},
+    }
+    chinese = Locale("zh-CN", "ltr", ("cjk",), None, (), False, "zh", "zh-cn")
+    entry = names_module.WikipediaCache(repo / "c.json", FakeRemote({"Ruy Lopez": ruy}))
+    entry.prefetch(["Ruy Lopez"])
+    entry.prefetch_variants("zh", "zh-cn")
+    found = names_module.wiki_name(entry.get("Ruy Lopez"), chinese)
+    assert found == names_module.Found("西班牙开局", "https://zh.wikipedia.org/zh-cn/西班牙开局")
+    offline = names_module.WikipediaCache(repo / "c.json", None)
+    offline.prefetch_variants("zh", "zh-cn")  # Cached: nothing to look up.
+
+
+def test_a_variant_locale_skips_the_bare_language_label():
+    """Without an article, the label of plain "zh" may be Traditional: zh-CN does not take it."""
+    entry = {"title": "X", "item": "Q2", "sitelinks": {}, "labels": {"zh": "馬"}}
+    chinese = Locale("zh-CN", "ltr", ("cjk",), None, (), False, "zh", "zh-cn")
+    assert names_module.wiki_name(entry, chinese) is None
