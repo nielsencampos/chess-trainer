@@ -11,9 +11,10 @@ from app.locales import DEFAULT_LOCALE, load_locales
 
 WEB = Path(__file__).parent.parent.parent / "web"
 I18N_DIR = WEB / "i18n"
-FAMILIES = ("familjen-grotesk", "jetbrains-mono")
+# The UI font of a script: Familjen Grotesk has no Cyrillic, so Commissioner draws it (brief §4.1).
+UI_FONT = {"cyrillic": "commissioner"}
 FACE = re.compile(
-    r'url\("\.\./fonts/(familjen-grotesk|jetbrains-mono)-([a-z-]+)-(\d+)-normal\.woff2"\)'
+    r'url\("\.\./fonts/(familjen-grotesk|commissioner|jetbrains-mono)-([a-z-]+)-(\d+)-normal\.woff2"\)'
     r".*?unicode-range: ([^;]+);",
     re.S,
 )
@@ -113,12 +114,24 @@ def font_faces() -> dict[tuple[str, str], list[tuple[int, int]]]:
     return faces
 
 
+def ui_font(script: str) -> str:
+    """The file name of the UI font that draws a script.
+
+    Args:
+        script (str): A registry script, such as "latin" or "cyrillic".
+
+    Returns:
+        str: "familjen-grotesk", or the font that stands in for it in that script.
+    """
+    return UI_FONT.get(script, "familjen-grotesk")
+
+
 def test_every_script_of_a_locale_has_its_fonts():
-    """Each script a locale lists has a face of both fonts, with its file and a unicode-range."""
+    """Each script a locale lists has a UI and a mono face, with its file and a unicode-range."""
     faces = font_faces()
     for code, locale in load_locales().items():
         for script in locale.scripts:
-            for family in FAMILIES:
+            for family in (ui_font(script), "jetbrains-mono"):
                 assert (family, script) in faces, f"{code}: no {family} face for {script}"
 
 
@@ -133,7 +146,7 @@ def test_the_fonts_of_a_locale_s_scripts_cover_its_text(code):
     spans = [
         span
         for script in load_locales()[code].scripts
-        for span in faces["familjen-grotesk", script]
+        for span in faces[ui_font(script), script]
     ]
     text = "".join(json.loads((I18N_DIR / f"{code}.json").read_text(encoding="utf-8")).values())
     # Letters and marks only: symbols such as an emoji come from the system's emoji font.
