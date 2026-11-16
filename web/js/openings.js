@@ -42,7 +42,10 @@ export class OpeningsScreen {
     });
   }
 
-  /** Labels and enables the export button with the number of ticked lines. */
+  /**
+   * Labels and enables the export button with the number of ticked lines.
+   * @returns {void}
+   */
   renderExport() {
     const count = this.tree.selected.size;
     byId("lines-export").disabled = count === 0;

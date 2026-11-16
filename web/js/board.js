@@ -150,7 +150,10 @@ export class Board {
     this.render();
   }
 
-  /** Creates the 64 squares in the current orientation, with coordinates on all four sides. */
+  /**
+   * Creates the 64 squares in the current orientation, with coordinates on all four sides.
+   * @returns {void}
+   */
   buildSquares() {
     this.root.querySelectorAll(".square").forEach((element) => element.remove());
     this.squares.clear();
@@ -189,12 +192,18 @@ export class Board {
     return element;
   }
 
-  /** Keeps the `--square-size` CSS variable in step with the board's width. */
+  /**
+   * Keeps the `--square-size` CSS variable in step with the board's width.
+   * @returns {void}
+   */
   updateSquareSize() {
     this.root.style.setProperty("--square-size", `${this.root.clientWidth / 8}px`);
   }
 
-  /** Draws the pieces and every highlight. */
+  /**
+   * Draws the pieces and every highlight.
+   * @returns {void}
+   */
   render() {
     const pieces = parsePlacement(this.fen || "8/8/8/8/8/8/8/8 w - - 0 1");
     const targetsByTo = new Map(this.targets.map((target) => [target.to, target]));
@@ -320,7 +329,10 @@ export class Board {
     }
   }
 
-  /** Abandons a press or drag, as when the browser cancels the pointer. */
+  /**
+   * Abandons a press or drag, as when the browser cancels the pointer.
+   * @returns {void}
+   */
   cancelPress() {
     if (this.press?.moved) this.stopDrag(this.press.square);
     this.press = null;
@@ -380,7 +392,10 @@ export class Board {
     this.render();
   }
 
-  /** Unselects the piece and its targets, without drawing. */
+  /**
+   * Unselects the piece and its targets, without drawing.
+   * @returns {void}
+   */
   clearSelection() {
     this.selected = null;
     this.targets = [];
@@ -451,7 +466,10 @@ export class Board {
     picker.querySelector("button")?.focus();
   }
 
-  /** Removes the promotion picker, if open. */
+  /**
+   * Removes the promotion picker, if open.
+   * @returns {void}
+   */
   closePromotion() {
     this.promotion?.remove();
     this.promotion = null;

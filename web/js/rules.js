@@ -214,7 +214,10 @@ export class Rules {
     return this.fen().split(" ").slice(0, 4).join(" ");
   }
 
-  /** Counts the current position once more, for threefold repetition. */
+  /**
+   * Counts the current position once more, for threefold repetition.
+   * @returns {void}
+   */
   countPosition() {
     const key = this.repetitionKey();
     this.seen.set(key, (this.seen.get(key) ?? 0) + 1);

@@ -30,6 +30,7 @@ export function getPref(name, fallback) {
  * Stores a preference; does nothing if storage fails.
  * @param {string} name  The preference's name.
  * @param {unknown} value  The value, stored as JSON.
+ * @returns {void}
  */
 export function setPref(name, value) {
   try {

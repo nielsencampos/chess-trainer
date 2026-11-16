@@ -68,7 +68,10 @@ export function moveSound(san) {
 
 /** Plays the app's sounds, once the browser allows audio, at the stored volume. */
 class SoundPlayer {
-  /** Restores the stored on/off and volume, and waits for the first click or key to unlock audio. */
+  /**
+   * Restores the stored on/off and volume, and waits for the first click or key to unlock audio.
+   * @returns {void}
+   */
   constructor() {
     this.enabled = getPref("soundOn", true) === true;
     const volume = Number(getPref("soundVolume", DEFAULT_VOLUME));
@@ -135,6 +138,10 @@ class SoundPlayer {
     if (!this.enabled || !this.unlocked || !this.ready()) return;
     const context = /** @type {AudioContext} */ (this.context);
     const at = context.currentTime + (type === "end" ? END_DELAY_S : delay);
+    /**
+     * Schedules the sound, once its file is decoded.
+     * @returns {void}
+     */
     const start = () => {
       const buffer = this.buffers.get(type);
       if (buffer) scheduleSound(context, /** @type {GainNode} */ (this.master), buffer, at, byBot);

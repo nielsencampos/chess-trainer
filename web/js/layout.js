@@ -83,6 +83,7 @@ export function initLayout() {
   /**
    * Shows a bar at its width, or hides it, and labels its button.
    * @param {SideBar} bar  The bar.
+   * @returns {void}
    */
   function apply(bar) {
     const { width, hidden } = state[bar.key];
@@ -103,6 +104,7 @@ export function initLayout() {
    * Resizes a bar, leaving room for the board and the other bar, and stores the width.
    * @param {SideBar} bar  The bar.
    * @param {number} width  The wanted width in pixels.
+   * @returns {void}
    */
   function resize(bar, width) {
     const other = BARS.find((item) => item !== bar);

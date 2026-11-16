@@ -31,6 +31,7 @@ export function linkMoves(moves) {
    * @param {ReviewMove[]} line  The line's moves.
    * @param {ReviewMove | null} before  The move before the line's first one.
    * @param {boolean} main  Whether it is the main line.
+   * @returns {void}
    */
   const link = (line, before, main) => {
     line.forEach((move, index) => {
