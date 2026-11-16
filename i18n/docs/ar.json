@@ -1,6 +1,6 @@
 {
   "readme.logo": "شعار Chess Trainer: أربعة مربعات من رقعة الشطرنج عليها C وT وقلم وساعة",
-  "readme.intro": "مدرّب شطرنج محلي: العب ضد Stockfish بإعدادات ساعة حقيقية، وتدرّب على افتتاحياتك ضد روبوت يتبع الكتاب ويشير إلى حيث خرجت عن النظرية، وراجع مبارياتك من PGN أو Chess.com أو Lichess مع شريط التقييم. يتضمن Chess960. بـ{count} لغة، وكل ذلك في صورة Docker واحدة. يعمل على جهازك (amd64 أو arm64)، بلا حساب وبلا حاجة إلى الإنترنت للعب.",
+  "readme.intro": "مدرّب شطرنج محلي: العب ضد Stockfish بإعدادات ساعة حقيقية، وتدرّب على افتتاحياتك ضد روبوت يتبع الكتاب ويشير إلى حيث خرجت عن النظرية، وراجع مبارياتك من PGN أو Chess.com أو Lichess مع شريط التقييم. يتضمن Chess960. متعدد اللغات، في صورة Docker واحدة أو تطبيق سطح مكتب لأنظمة Linux وWindows وmacOS. يعمل على جهازك (amd64 أو arm64)، بلا حساب وبلا حاجة إلى الإنترنت للعب.",
   "readme.reviewed": "لم تُراجَع إلا الإنجليزية الأمريكية والبرتغالية البرازيلية والإسبانية الأمريكية اللاتينية. كل اللغات الأخرى، ومنها الإنجليزية البريطانية، مترجمة آليًا ولم تُراجَع. نرحب بالتصحيحات: افتح [Translation fix issue]({fix}).",
   "readme.run.title": "التشغيل",
   "readme.run.needs": "تحتاج إلى Docker مع Compose.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "الإصدار العامل يظهر في تذييل الصفحة وعلى `/api/health`. إذا أبلغ البناء عن حد معدل GitHub، فانتظر ساعة: الحد 60 طلب API في الساعة بلا رمز.",
   "readme.develop.title": "التطوير",
   "readme.develop.needs": "يحتاج إلى [uv](https://docs.astral.sh/uv/). أوامر الاختبار والأعراف في [CLAUDE.md](CLAUDE.md)، وطريقة المساهمة في [CONTRIBUTING.md](CONTRIBUTING.md)، بالإنجليزية.",
+  "readme.develop.session": "للعمل مع مساعد برمجة بالذكاء الاصطناعي، ابدأ الجلسة بالنص الموجود في [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).",
   "readme.develop.pictures": "صور المساعدة لقطات شاشة للتطبيق بكل لغة. بعد تغيير ظاهر في الواجهة، أعد إنشاءها على تطبيق قيد التشغيل (يلعب مباريات ويستسلم فيها):",
   "readme.develop.docs": "تُكتب `docs/HELP*.md` و`docs/ABOUT*.md` من نصوص شاشتي المساعدة وحول، و`README*.md` و`HOW_TO_INSTALL*.md` من `i18n/docs/`. بعد تغييرها، شغّل `uv run python scripts/help_docs.py` و`uv run python scripts/readme_docs.py`؛ يفشل اختبار ما دامت الملفات قديمة.",
   "readme.license.title": "الترخيص",

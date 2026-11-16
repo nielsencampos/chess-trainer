@@ -1,6 +1,6 @@
 {
   "readme.logo": "Chess Trainer logo: four board squares with C, T, a pen and a clock",
-  "readme.intro": "Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that follows the book and flags where you left theory, and review your games from PGN, Chess.com or Lichess with an evaluation bar. Chess960 included. In {count} languages, all in one Docker image. It runs on your own machine (amd64 or arm64), with no accounts and no internet needed to play.",
+  "readme.intro": "Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that follows the book and flags where you left theory, and review your games from PGN, Chess.com or Lichess with an evaluation bar. Chess960 included. Multilingual, as one Docker image or a desktop app for Linux, Windows and macOS. It runs on your own machine (amd64 or arm64), with no accounts and no internet needed to play.",
   "readme.reviewed": "Only US English, Brazilian Portuguese and Latin American Spanish are reviewed. Every other language, English (UK) included, is machine-made and unreviewed. Corrections are welcome. Open a [Translation fix issue]({fix}).",
   "readme.run.title": "Run",
   "readme.run.needs": "You need Docker with Compose.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "The running version is in the page footer and at `/api/health`. If the build reports a GitHub rate limit, wait an hour: the limit is 60 API requests per hour without a token.",
   "readme.develop.title": "Develop",
   "readme.develop.needs": "Needs [uv](https://docs.astral.sh/uv/). Test commands and conventions are in [CLAUDE.md](CLAUDE.md), and how to contribute in [CONTRIBUTING.md](CONTRIBUTING.md).",
+  "readme.develop.session": "To work with an AI coding assistant, start the session with the prompt in [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).",
   "readme.develop.pictures": "The pictures in Help are screenshots of the app in each language. After a visible UI change, make them again against a running app (it plays and resigns games):",
   "readme.develop.docs": "`docs/HELP*.md` and `docs/ABOUT*.md` are written from the Help and About screens' strings, and `README*.md` and `HOW_TO_INSTALL*.md` from `i18n/docs/`. After changing them, run `uv run python scripts/help_docs.py` and `uv run python scripts/readme_docs.py`; a test fails while the files are out of date.",
   "readme.license.title": "License",

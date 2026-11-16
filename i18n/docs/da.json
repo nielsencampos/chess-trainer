@@ -1,6 +1,6 @@
 {
   "readme.logo": "Chess Trainers logo: fire felter på et skakbræt med C, T, en pen og et ur",
-  "readme.intro": "Lokal skaktræner: spil mod Stockfish med rigtige urindstillinger, træn dine åbninger mod en bot, der følger bogen og viser, hvor du forlod teorien, og gennemgå dine partier fra PGN, Chess.com eller Lichess med en vurderingsbjælke. Chess960 er med. På {count} sprog, det hele i ét Docker-image. Det kører på din egen maskine (amd64 eller arm64), uden konto og uden internet for at spille.",
+  "readme.intro": "Lokal skaktræner: spil mod Stockfish med rigtige urindstillinger, træn dine åbninger mod en bot, der følger bogen og viser, hvor du forlod teorien, og gennemgå dine partier fra PGN, Chess.com eller Lichess med en vurderingsbjælke. Chess960 er med. På mange sprog, som ét Docker-image eller en skrivebordsapp til Linux, Windows og macOS. Det kører på din egen maskine (amd64 eller arm64), uden konto og uden internet for at spille.",
   "readme.reviewed": "Kun amerikansk engelsk, brasiliansk portugisisk og latinamerikansk spansk er gennemgået. Alle andre sprog, britisk engelsk medregnet, er maskinoversat og ikke gennemgået. Rettelser er velkomne: opret et [Translation fix-issue]({fix}).",
   "readme.run.title": "Kør",
   "readme.run.needs": "Du skal bruge Docker med Compose.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "Den kørende version står i sidens fodnote og på `/api/health`. Hvis bygget melder om en hastighedsgrænse hos GitHub, så vent en time: grænsen er 60 API-kald i timen uden token.",
   "readme.develop.title": "Udvikling",
   "readme.develop.needs": "Kræver [uv](https://docs.astral.sh/uv/). Testkommandoer og konventioner står i [CLAUDE.md](CLAUDE.md), og hvordan du bidrager, i [CONTRIBUTING.md](CONTRIBUTING.md), på engelsk.",
+  "readme.develop.session": "Arbejder du med en AI-kodeassistent, så start sessionen med prompten i [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).",
   "readme.develop.pictures": "Billederne i Hjælp er skærmbilleder af appen på hvert sprog. Efter en synlig ændring i brugerfladen skal du lave dem igen mod en kørende app (den spiller partier og opgiver dem):",
   "readme.develop.docs": "`docs/HELP*.md` og `docs/ABOUT*.md` skrives ud fra teksterne på skærmene Hjælp og Om, og `README*.md` og `HOW_TO_INSTALL*.md` ud fra `i18n/docs/`. Kør `uv run python scripts/help_docs.py` og `uv run python scripts/readme_docs.py` efter en ændring; en test fejler, så længe filerne er forældede.",
   "readme.license.title": "Licens",

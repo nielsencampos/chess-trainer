@@ -10,7 +10,7 @@
 
 > Denne oversættelse er maskinoversat og er ikke blevet gennemgået. Rettelser er velkomne: [foreslå en rettelse](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=da)
 
-Lokal skaktræner: spil mod Stockfish med rigtige urindstillinger, træn dine åbninger mod en bot, der følger bogen og viser, hvor du forlod teorien, og gennemgå dine partier fra PGN, Chess.com eller Lichess med en vurderingsbjælke. Chess960 er med. På 27 sprog, det hele i ét Docker-image. Det kører på din egen maskine (amd64 eller arm64), uden konto og uden internet for at spille.
+Lokal skaktræner: spil mod Stockfish med rigtige urindstillinger, træn dine åbninger mod en bot, der følger bogen og viser, hvor du forlod teorien, og gennemgå dine partier fra PGN, Chess.com eller Lichess med en vurderingsbjælke. Chess960 er med. På mange sprog, som ét Docker-image eller en skrivebordsapp til Linux, Windows og macOS. Det kører på din egen maskine (amd64 eller arm64), uden konto og uden internet for at spille.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ Kræver [uv](https://docs.astral.sh/uv/). Testkommandoer og konventioner står i
 uv sync
 uv run pytest
 ```
+
+Arbejder du med en AI-kodeassistent, så start sessionen med prompten i [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).
 
 Billederne i Hjælp er skærmbilleder af appen på hvert sprog. Efter en synlig ændring i brugerfladen skal du lave dem igen mod en kørende app (den spiller partier og opgiver dem):
 

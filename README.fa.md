@@ -10,7 +10,7 @@
 
 > این ترجمه ماشینی است و هنوز بازبینی نشده است. از اصلاحات استقبال می‌کنیم: [پیشنهاد اصلاح](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=fa)
 
-مربی شطرنج محلی: با تنظیمات واقعی ساعت با Stockfish بازی کنید، گشایش‌هایتان را در برابر رباتی تمرین کنید که از کتاب پیروی می‌کند و نشان می‌دهد کجا از نظریه خارج شدید، و بازی‌هایتان را از PGN، Chess.com یا Lichess با نوار ارزیابی مرور کنید. Chess960 هم دارد. به 27 زبان، همه در یک ایمیج Docker. روی رایانه خودتان (amd64 یا arm64) اجرا می‌شود، بدون حساب کاربری و بدون نیاز به اینترنت برای بازی.
+مربی شطرنج محلی: با تنظیمات واقعی ساعت با Stockfish بازی کنید، گشایش‌هایتان را در برابر رباتی تمرین کنید که از کتاب پیروی می‌کند و نشان می‌دهد کجا از نظریه خارج شدید، و بازی‌هایتان را از PGN، Chess.com یا Lichess با نوار ارزیابی مرور کنید. Chess960 هم دارد. چندزبانه، به‌صورت یک ایمیج Docker یا یک برنامه دسکتاپ برای Linux،‏ Windows و macOS. روی رایانه خودتان (amd64 یا arm64) اجرا می‌شود، بدون حساب کاربری و بدون نیاز به اینترنت برای بازی.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ STOCKFISH_VERSION=sf_19 docker compose build
 uv sync
 uv run pytest
 ```
+
+برای کار با یک دستیار برنامه‌نویسی هوش مصنوعی، جلسه را با متن [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) شروع کنید.
 
 تصویرهای راهنما، نماگرفت‌های برنامه به هر زبان‌اند. پس از تغییری دیدنی در رابط کاربری، آن‌ها را روی برنامه در حال اجرا دوباره بسازید (برنامه بازی می‌کند و تسلیم می‌شود):
 

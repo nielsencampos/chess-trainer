@@ -10,7 +10,7 @@
 
 > Bu çeviri makine tarafından yapıldı ve gözden geçirilmedi. Düzeltmeler memnuniyetle karşılanır: [düzeltme önerin](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=tr)
 
-Yerel satranç antrenörü: gerçek saat ayarlarıyla Stockfish'e karşı oynayın, açılışlarınızı kitabı izleyen ve teoriden nerede çıktığınızı gösteren bir bota karşı çalışın, PGN, Chess.com veya Lichess'ten gelen oyunlarınızı değerlendirme çubuğuyla inceleyin. Chess960 dahil. 27 dilde, hepsi tek bir Docker imajında. Kendi makinenizde (amd64 veya arm64) çalışır; oynamak için hesap ve internet gerekmez.
+Yerel satranç antrenörü: gerçek saat ayarlarıyla Stockfish'e karşı oynayın, açılışlarınızı kitabı izleyen ve teoriden nerede çıktığınızı gösteren bir bota karşı çalışın, PGN, Chess.com veya Lichess'ten gelen oyunlarınızı değerlendirme çubuğuyla inceleyin. Chess960 dahil. Çok dilli; tek bir Docker imajı ya da Linux, Windows ve macOS için bir masaüstü uygulaması olarak. Kendi makinenizde (amd64 veya arm64) çalışır; oynamak için hesap ve internet gerekmez.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ STOCKFISH_VERSION=sf_19 docker compose build
 uv sync
 uv run pytest
 ```
+
+Bir yapay zekâ kodlama asistanıyla çalışırken oturuma [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) içindeki istemle başlayın.
 
 Yardım'daki resimler, uygulamanın her dildeki ekran görüntüleridir. Görünür bir arayüz değişikliğinden sonra onları çalışan bir uygulamaya karşı yeniden oluşturun (uygulama oyunlar oynar ve terk eder):
 

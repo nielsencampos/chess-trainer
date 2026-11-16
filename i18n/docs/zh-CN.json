@@ -1,6 +1,6 @@
 {
   "readme.logo": "Chess Trainer 标志：四个棋盘格，上面有 C、T、一支笔和一个钟",
-  "readme.intro": "本地国际象棋训练器：用真实的棋钟设置与 Stockfish 对弈，对着一个按开局库走棋、并标出你在哪里离开理论的机器人练习开局，还能借助评估条复盘来自 PGN、Chess.com 或 Lichess 的对局。包含 Chess960。支持 {count} 种语言，全部装在一个 Docker 镜像里。它在你自己的电脑上运行（amd64 或 arm64），无需账号，下棋也无需联网。",
+  "readme.intro": "本地国际象棋训练器：用真实的棋钟设置与 Stockfish 对弈，对着一个按开局库走棋、并标出你在哪里离开理论的机器人练习开局，还能借助评估条复盘来自 PGN、Chess.com 或 Lichess 的对局。包含 Chess960。支持多种语言，可作为一个 Docker 镜像使用，也可作为 Linux、Windows 和 macOS 的桌面应用使用。它在你自己的电脑上运行（amd64 或 arm64），无需账号，下棋也无需联网。",
   "readme.reviewed": "只有美式英语、巴西葡萄牙语和拉丁美洲西班牙语经过审校。其他所有语言（包括英式英语）都是机器翻译，未经审校。欢迎指正：请提交 [Translation fix issue]({fix})。",
   "readme.run.title": "运行",
   "readme.run.needs": "你需要带 Compose 的 Docker。",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "正在运行的版本显示在页面底部和 `/api/health`。如果构建时报告 GitHub 频率限制，请等一小时：没有令牌时，限制为每小时 60 次 API 请求。",
   "readme.develop.title": "开发",
   "readme.develop.needs": "需要 [uv](https://docs.astral.sh/uv/)。测试命令和约定见 [CLAUDE.md](CLAUDE.md)，如何贡献见 [CONTRIBUTING.md](CONTRIBUTING.md)，均为英文。",
+  "readme.develop.session": "如果与 AI 编程助手协作，请用 [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) 中的提示开始会话。",
   "readme.develop.pictures": "帮助中的图片是应用在各语言下的截图。界面有可见变化后，请对着正在运行的应用重新生成（它会下棋并认输）：",
   "readme.develop.docs": "`docs/HELP*.md` 和 `docs/ABOUT*.md` 由帮助和关于页面的文本生成，`README*.md` 和 `HOW_TO_INSTALL*.md` 由 `i18n/docs/` 生成。修改后请运行 `uv run python scripts/help_docs.py` 和 `uv run python scripts/readme_docs.py`；文件过期时会有测试失败。",
   "readme.license.title": "许可证",

@@ -1,6 +1,6 @@
 {
   "readme.logo": "Logo Chess Trainer: cztery pola szachownicy z literami C i T, piórem i zegarem",
-  "readme.intro": "Lokalny trener szachowy: graj ze Stockfishem z prawdziwymi ustawieniami zegara, ćwicz otwarcia z botem, który trzyma się książki i pokazuje, gdzie wyszedłeś z teorii, i przeglądaj swoje partie z PGN, Chess.com lub Lichess z paskiem oceny. Chess960 w zestawie. W {count} językach i w jednym obrazie Dockera. Działa na twoim komputerze (amd64 lub arm64), bez konta i bez internetu do gry.",
+  "readme.intro": "Lokalny trener szachowy: graj ze Stockfishem z prawdziwymi ustawieniami zegara, ćwicz otwarcia z botem, który trzyma się książki i pokazuje, gdzie wyszedłeś z teorii, i przeglądaj swoje partie z PGN, Chess.com lub Lichess z paskiem oceny. Chess960 w zestawie. Wielojęzyczny, jako jeden obraz Dockera albo aplikacja desktopowa dla Linuksa, Windowsa i macOS. Działa na twoim komputerze (amd64 lub arm64), bez konta i bez internetu do gry.",
   "readme.reviewed": "Sprawdzone są tylko angielski (USA), portugalski (Brazylia) i hiszpański (Ameryka Łacińska). Wszystkie inne języki, w tym angielski brytyjski, są tłumaczone maszynowo i niesprawdzone. Poprawki są mile widziane: otwórz [zgłoszenie Translation fix]({fix}).",
   "readme.run.title": "Uruchomienie",
   "readme.run.needs": "Potrzebujesz Dockera z Compose.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "Uruchomiona wersja jest w stopce strony i pod `/api/health`. Jeśli build zgłosi limit zapytań GitHuba, odczekaj godzinę: bez tokenu limit to 60 zapytań API na godzinę.",
   "readme.develop.title": "Rozwój",
   "readme.develop.needs": "Wymaga [uv](https://docs.astral.sh/uv/). Polecenia testów i konwencje są w [CLAUDE.md](CLAUDE.md), a jak współtworzyć, w [CONTRIBUTING.md](CONTRIBUTING.md), po angielsku.",
+  "readme.develop.session": "Pracując z asystentem programowania AI, zacznij sesję od promptu z [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).",
   "readme.develop.pictures": "Obrazki w Pomocy to zrzuty ekranu aplikacji w każdym języku. Po widocznej zmianie interfejsu zrób je ponownie z uruchomioną aplikacją (gra partie i je poddaje):",
   "readme.develop.docs": "`docs/HELP*.md` i `docs/ABOUT*.md` są tworzone z tekstów ekranów Pomoc i O programie, a `README*.md` i `HOW_TO_INSTALL*.md` z `i18n/docs/`. Po ich zmianie uruchom `uv run python scripts/help_docs.py` i `uv run python scripts/readme_docs.py`; test nie przechodzi, dopóki pliki są nieaktualne.",
   "readme.license.title": "Licencja",

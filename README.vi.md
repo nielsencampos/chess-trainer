@@ -10,7 +10,7 @@
 
 > Bản dịch này được tạo bằng máy và chưa được duyệt lại. Rất hoan nghênh các góp ý sửa lỗi: [đề xuất sửa](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=vi)
 
-Phần mềm luyện cờ chạy trên máy: chơi với Stockfish bằng các thiết lập đồng hồ thật, luyện khai cuộc với một bot đi theo sách và đánh dấu chỗ bạn rời lý thuyết, và xem lại các ván cờ từ PGN, Chess.com hoặc Lichess với thanh đánh giá. Có cả Chess960. Bằng 27 ngôn ngữ, tất cả trong một image Docker. Chạy trên máy của bạn (amd64 hoặc arm64), không cần tài khoản và không cần internet để chơi.
+Phần mềm luyện cờ chạy trên máy: chơi với Stockfish bằng các thiết lập đồng hồ thật, luyện khai cuộc với một bot đi theo sách và đánh dấu chỗ bạn rời lý thuyết, và xem lại các ván cờ từ PGN, Chess.com hoặc Lichess với thanh đánh giá. Có cả Chess960. Đa ngôn ngữ, dưới dạng một image Docker hoặc ứng dụng máy tính cho Linux, Windows và macOS. Chạy trên máy của bạn (amd64 hoặc arm64), không cần tài khoản và không cần internet để chơi.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ Cần [uv](https://docs.astral.sh/uv/). Các lệnh kiểm thử và quy ước 
 uv sync
 uv run pytest
 ```
+
+Để làm việc với trợ lý lập trình AI, hãy bắt đầu phiên bằng lời nhắc trong [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).
 
 Hình trong Trợ giúp là ảnh chụp màn hình ứng dụng bằng từng ngôn ngữ. Sau một thay đổi giao diện nhìn thấy được, hãy tạo lại chúng với ứng dụng đang chạy (nó sẽ chơi và xin thua các ván):
 

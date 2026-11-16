@@ -1,6 +1,6 @@
 {
   "readme.logo": "Logo van Chess Trainer: vier velden van een schaakbord met C, T, een pen en een klok",
-  "readme.intro": "Lokale schaaktrainer: speel tegen Stockfish met echte klokinstellingen, oefen je openingen tegen een bot die het boek volgt en aangeeft waar je de theorie verliet, en bekijk je partijen uit PGN, Chess.com of Lichess terug met een evaluatiebalk. Inclusief Chess960. In {count} talen, alles in één Docker-image. Het draait op je eigen machine (amd64 of arm64), zonder account en zonder internet om te spelen.",
+  "readme.intro": "Lokale schaaktrainer: speel tegen Stockfish met echte klokinstellingen, oefen je openingen tegen een bot die het boek volgt en aangeeft waar je de theorie verliet, en bekijk je partijen uit PGN, Chess.com of Lichess terug met een evaluatiebalk. Inclusief Chess960. Meertalig, als één Docker-image of als programma voor de desktop onder Linux, Windows en macOS. Het draait op je eigen machine (amd64 of arm64), zonder account en zonder internet om te spelen.",
   "readme.reviewed": "Alleen Amerikaans-Engels, Braziliaans-Portugees en Latijns-Amerikaans Spaans zijn nagekeken. Alle andere talen, Brits-Engels inbegrepen, zijn machinaal vertaald en niet nagekeken. Verbeteringen zijn welkom: open een [Translation fix-issue]({fix}).",
   "readme.run.title": "Starten",
   "readme.run.needs": "Je hebt Docker met Compose nodig.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "De draaiende versie staat in de voettekst van de pagina en op `/api/health`. Meldt de build een GitHub-limiet, wacht dan een uur: zonder token is de limiet 60 API-verzoeken per uur.",
   "readme.develop.title": "Ontwikkelen",
   "readme.develop.needs": "Vereist [uv](https://docs.astral.sh/uv/). Testcommando's en conventies staan in [CLAUDE.md](CLAUDE.md), en hoe je bijdraagt in [CONTRIBUTING.md](CONTRIBUTING.md), in het Engels.",
+  "readme.develop.session": "Werk je met een AI-programmeerassistent, begin de sessie dan met de prompt in [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).",
   "readme.develop.pictures": "De afbeeldingen in Hulp zijn schermafbeeldingen van de app in elke taal. Maak ze na een zichtbare wijziging in de interface opnieuw tegen een draaiende app (die speelt partijen en geeft ze op):",
   "readme.develop.docs": "`docs/HELP*.md` en `docs/ABOUT*.md` worden geschreven uit de teksten van de schermen Hulp en Over, en `README*.md` en `HOW_TO_INSTALL*.md` uit `i18n/docs/`. Voer na een wijziging `uv run python scripts/help_docs.py` en `uv run python scripts/readme_docs.py` uit; een test faalt zolang de bestanden verouderd zijn.",
   "readme.license.title": "Licentie",

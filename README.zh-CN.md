@@ -10,7 +10,7 @@
 
 > 此翻译由机器生成，尚未经过审校。欢迎指正： [提交更正](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=zh-CN)
 
-本地国际象棋训练器：用真实的棋钟设置与 Stockfish 对弈，对着一个按开局库走棋、并标出你在哪里离开理论的机器人练习开局，还能借助评估条复盘来自 PGN、Chess.com 或 Lichess 的对局。包含 Chess960。支持 27 种语言，全部装在一个 Docker 镜像里。它在你自己的电脑上运行（amd64 或 arm64），无需账号，下棋也无需联网。
+本地国际象棋训练器：用真实的棋钟设置与 Stockfish 对弈，对着一个按开局库走棋、并标出你在哪里离开理论的机器人练习开局，还能借助评估条复盘来自 PGN、Chess.com 或 Lichess 的对局。包含 Chess960。支持多种语言，可作为一个 Docker 镜像使用，也可作为 Linux、Windows 和 macOS 的桌面应用使用。它在你自己的电脑上运行（amd64 或 arm64），无需账号，下棋也无需联网。
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ STOCKFISH_VERSION=sf_19 docker compose build
 uv sync
 uv run pytest
 ```
+
+如果与 AI 编程助手协作，请用 [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) 中的提示开始会话。
 
 帮助中的图片是应用在各语言下的截图。界面有可见变化后，请对着正在运行的应用重新生成（它会下棋并认输）：
 

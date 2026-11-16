@@ -10,7 +10,7 @@
 
 > Denne oversettelsen er maskinoversatt og har ikke blitt gjennomgått. Rettelser er velkomne: [foreslå en rettelse](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=nb)
 
-Lokal sjakktrener: spill mot Stockfish med ekte klokkeinnstillinger, øv på åpningene dine mot en bot som følger boken og viser hvor du forlot teorien, og gå gjennom partiene dine fra PGN, Chess.com eller Lichess med en vurderingsstolpe. Chess960 er med. På 27 språk, alt i ett Docker-image. Den kjører på din egen maskin (amd64 eller arm64), uten konto og uten internett for å spille.
+Lokal sjakktrener: spill mot Stockfish med ekte klokkeinnstillinger, øv på åpningene dine mot en bot som følger boken og viser hvor du forlot teorien, og gå gjennom partiene dine fra PGN, Chess.com eller Lichess med en vurderingsstolpe. Chess960 er med. På mange språk, som ett Docker-image eller en skrivebordsapp for Linux, Windows og macOS. Den kjører på din egen maskin (amd64 eller arm64), uten konto og uten internett for å spille.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ Krever [uv](https://docs.astral.sh/uv/). Testkommandoer og konvensjoner står i 
 uv sync
 uv run pytest
 ```
+
+Jobber du med en KI-kodeassistent, start økten med ledeteksten i [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).
 
 Bildene i Hjelp er skjermbilder av appen på hvert språk. Etter en synlig endring i grensesnittet, lag dem på nytt mot en app som kjører (den spiller partier og gir dem opp):
 

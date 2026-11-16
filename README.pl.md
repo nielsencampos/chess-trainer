@@ -10,7 +10,7 @@
 
 > To tłumaczenie zostało wykonane maszynowo i nie zostało sprawdzone. Poprawki są mile widziane: [zaproponuj poprawkę](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=pl)
 
-Lokalny trener szachowy: graj ze Stockfishem z prawdziwymi ustawieniami zegara, ćwicz otwarcia z botem, który trzyma się książki i pokazuje, gdzie wyszedłeś z teorii, i przeglądaj swoje partie z PGN, Chess.com lub Lichess z paskiem oceny. Chess960 w zestawie. W 27 językach i w jednym obrazie Dockera. Działa na twoim komputerze (amd64 lub arm64), bez konta i bez internetu do gry.
+Lokalny trener szachowy: graj ze Stockfishem z prawdziwymi ustawieniami zegara, ćwicz otwarcia z botem, który trzyma się książki i pokazuje, gdzie wyszedłeś z teorii, i przeglądaj swoje partie z PGN, Chess.com lub Lichess z paskiem oceny. Chess960 w zestawie. Wielojęzyczny, jako jeden obraz Dockera albo aplikacja desktopowa dla Linuksa, Windowsa i macOS. Działa na twoim komputerze (amd64 lub arm64), bez konta i bez internetu do gry.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ Wymaga [uv](https://docs.astral.sh/uv/). Polecenia testów i konwencje są w [CL
 uv sync
 uv run pytest
 ```
+
+Pracując z asystentem programowania AI, zacznij sesję od promptu z [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).
 
 Obrazki w Pomocy to zrzuty ekranu aplikacji w każdym języku. Po widocznej zmianie interfejsu zrób je ponownie z uruchomioną aplikacją (gra partie i je poddaje):
 

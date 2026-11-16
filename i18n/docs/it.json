@@ -1,6 +1,6 @@
 {
   "readme.logo": "Logo di Chess Trainer: quattro case della scacchiera con C, T, una penna e un orologio",
-  "readme.intro": "Allenatore di scacchi locale: gioca contro Stockfish con cadenze reali dell'orologio, allena le tue aperture contro un bot che segue il libro e segnala dove sei uscito dalla teoria, e rivedi le tue partite da PGN, Chess.com o Lichess con una barra di valutazione. Chess960 incluso. In {count} lingue, tutto in un'immagine Docker. Funziona sul tuo computer (amd64 o arm64), senza account e senza internet per giocare.",
+  "readme.intro": "Allenatore di scacchi locale: gioca contro Stockfish con cadenze reali dell'orologio, allena le tue aperture contro un bot che segue il libro e segnala dove sei uscito dalla teoria, e rivedi le tue partite da PGN, Chess.com o Lichess con una barra di valutazione. Chess960 incluso. Multilingue, come un'immagine Docker o un'app desktop per Linux, Windows e macOS. Funziona sul tuo computer (amd64 o arm64), senza account e senza internet per giocare.",
   "readme.reviewed": "Solo l'inglese degli Stati Uniti, il portoghese del Brasile e lo spagnolo dell'America Latina sono revisionati. Tutte le altre lingue, inglese britannico compreso, sono tradotte automaticamente e non revisionate. Le correzioni sono benvenute: apri una [issue Translation fix]({fix}).",
   "readme.run.title": "Avvio",
   "readme.run.needs": "Ti serve Docker con Compose.",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "La versione in uso è nel piè di pagina e su `/api/health`. Se il build segnala un limite di richieste di GitHub, aspetta un'ora: il limite è di 60 richieste API all'ora senza token.",
   "readme.develop.title": "Sviluppare",
   "readme.develop.needs": "Serve [uv](https://docs.astral.sh/uv/). I comandi di test e le convenzioni sono in [CLAUDE.md](CLAUDE.md), e come contribuire in [CONTRIBUTING.md](CONTRIBUTING.md), in inglese.",
+  "readme.develop.session": "Per lavorare con un assistente di programmazione basato sull'IA, inizia la sessione con il prompt di [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).",
   "readme.develop.pictures": "Le immagini della Guida sono schermate dell'app in ogni lingua. Dopo una modifica visibile dell'interfaccia, rifalle con l'app in esecuzione (gioca partite e abbandona):",
   "readme.develop.docs": "`docs/HELP*.md` e `docs/ABOUT*.md` sono scritti dai testi delle schermate Guida e Informazioni, e `README*.md` e `HOW_TO_INSTALL*.md` da `i18n/docs/`. Dopo averli cambiati, esegui `uv run python scripts/help_docs.py` e `uv run python scripts/readme_docs.py`; un test fallisce finché i file non sono aggiornati.",
   "readme.license.title": "Licenza",

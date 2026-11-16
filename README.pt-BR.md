@@ -10,7 +10,7 @@
 
 > Correções são bem-vindas: [sugira uma correção](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=pt-BR)
 
-Treinador local de xadrez: jogue contra o Stockfish com os relógios de verdade, pratique suas aberturas contra um bot que segue o livro e mostra onde você saiu da teoria, e revise suas partidas de PGN, Chess.com ou Lichess com barra de avaliação. Tem Chess960. Em 27 idiomas, tudo numa imagem Docker. Roda na sua máquina (amd64 ou arm64), sem conta e sem precisar de internet para jogar.
+Treinador local de xadrez: jogue contra o Stockfish com os relógios de verdade, pratique suas aberturas contra um bot que segue o livro e mostra onde você saiu da teoria, e revise suas partidas de PGN, Chess.com ou Lichess com barra de avaliação. Tem Chess960. Multilíngue, como uma imagem Docker ou um app de desktop para Linux, Windows e macOS. Roda na sua máquina (amd64 ou arm64), sem conta e sem precisar de internet para jogar.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -105,6 +105,8 @@ Precisa do [uv](https://docs.astral.sh/uv/). Os comandos de teste e as convenç�
 uv sync
 uv run pytest
 ```
+
+Para trabalhar com um assistente de programação com IA, comece a sessão com o prompt de [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md).
 
 As imagens da Ajuda são capturas de tela do app em cada idioma. Depois de uma mudança visível na interface, gere-as de novo com o app rodando (ele joga e abandona partidas):
 

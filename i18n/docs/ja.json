@@ -1,6 +1,6 @@
 {
   "readme.logo": "Chess Trainer のロゴ：C と T、ペン、時計が描かれた盤の 4 マス",
-  "readme.intro": "ローカルで動くチェストレーナー：本物の時計設定で Stockfish と対局し、定跡書に従って定跡から外れた場所を示すボットを相手にオープニングを練習し、PGN、Chess.com、Lichess の対局を評価バー付きで振り返れます。Chess960 にも対応。{count} の言語に対応し、すべてが 1 つの Docker イメージに入っています。自分のマシン（amd64 または arm64）で動き、対局にアカウントもインターネットも要りません。",
+  "readme.intro": "ローカルで動くチェストレーナー：本物の時計設定で Stockfish と対局し、定跡書に従って定跡から外れた場所を示すボットを相手にオープニングを練習し、PGN、Chess.com、Lichess の対局を評価バー付きで振り返れます。Chess960 にも対応。多言語に対応し、1 つの Docker イメージとしても、Linux、Windows、macOS 用のデスクトップアプリとしても使えます。自分のマシン（amd64 または arm64）で動き、対局にアカウントもインターネットも要りません。",
   "readme.reviewed": "確認済みなのは米国英語、ブラジル・ポルトガル語、中南米スペイン語だけです。英国英語を含むほかの言語はすべて機械翻訳で、確認されていません。修正を歓迎します：[Translation fix issue]({fix}) を作成してください。",
   "readme.run.title": "起動",
   "readme.run.needs": "Compose 付きの Docker が必要です。",
@@ -34,6 +34,7 @@
   "readme.stockfish.version": "動作中のバージョンはページのフッターと `/api/health` に表示されます。ビルドで GitHub のレート制限が報告されたら 1 時間待ってください。トークンなしの上限は 1 時間あたり 60 回の API リクエストです。",
   "readme.develop.title": "開発",
   "readme.develop.needs": "[uv](https://docs.astral.sh/uv/) が必要です。テストのコマンドと規約は [CLAUDE.md](CLAUDE.md)、貢献の方法は [CONTRIBUTING.md](CONTRIBUTING.md) にあります（英語）。",
+  "readme.develop.session": "AI コーディングアシスタントと作業するときは、[docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) のプロンプトでセッションを始めてください。",
   "readme.develop.pictures": "ヘルプの画像は各言語のアプリのスクリーンショットです。UI に目に見える変更をしたら、起動中のアプリに対して作り直してください（アプリが対局して投了します）：",
   "readme.develop.docs": "`docs/HELP*.md` と `docs/ABOUT*.md` はヘルプ画面と概要画面の文字列から、`README*.md` と `HOW_TO_INSTALL*.md` は `i18n/docs/` から書き出されます。変更したら `uv run python scripts/help_docs.py` と `uv run python scripts/readme_docs.py` を実行してください。ファイルが古いままだとテストが失敗します。",
   "readme.license.title": "ライセンス",
