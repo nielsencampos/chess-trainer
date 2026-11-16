@@ -11,10 +11,13 @@ from app.locales import DEFAULT_LOCALE, load_locales
 
 WEB = Path(__file__).parent.parent.parent / "web"
 I18N_DIR = WEB / "i18n"
-# The UI font of a script: Familjen Grotesk has no Cyrillic, so Commissioner draws it (brief §4.1).
-UI_FONT = {"cyrillic": "commissioner"}
+# The UI font of a script: Familjen Grotesk has no Cyrillic, so Commissioner draws it, and no
+# Devanagari, so Noto Sans Devanagari draws it (brief §4.1).
+UI_FONT = {"cyrillic": "commissioner", "devanagari": "noto-sans-devanagari"}
+# The mono font of a script: JetBrains Mono has no Devanagari either.
+MONO_FONT = {"devanagari": "noto-sans-devanagari"}
 FACE = re.compile(
-    r'url\("\.\./fonts/(familjen-grotesk|commissioner|jetbrains-mono)-([a-z-]+)-(\d+)-normal\.woff2"\)'
+    r'url\("\.\./fonts/(familjen-grotesk|commissioner|noto-sans-devanagari|jetbrains-mono)-([a-z-]+)-(\d+)-normal\.woff2"\)'
     r".*?unicode-range: ([^;]+);",
     re.S,
 )
@@ -126,12 +129,24 @@ def ui_font(script: str) -> str:
     return UI_FONT.get(script, "familjen-grotesk")
 
 
+def mono_font(script: str) -> str:
+    """The file name of the mono font that draws a script.
+
+    Args:
+        script (str): A registry script, such as "latin" or "devanagari".
+
+    Returns:
+        str: "jetbrains-mono", or the font that stands in for it in that script.
+    """
+    return MONO_FONT.get(script, "jetbrains-mono")
+
+
 def test_every_script_of_a_locale_has_its_fonts():
     """Each script a locale lists has a UI and a mono face, with its file and a unicode-range."""
     faces = font_faces()
     for code, locale in load_locales().items():
         for script in locale.scripts:
-            for family in (ui_font(script), "jetbrains-mono"):
+            for family in (ui_font(script), mono_font(script)):
                 assert (family, script) in faces, f"{code}: no {family} face for {script}"
 
 
