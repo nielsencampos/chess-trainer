@@ -851,7 +851,9 @@ export class GameController {
       } else if (this.botDeviation) {
         chips.push([t("chip.botDeviated", { move: this.botDeviation.move_number }), "chip-warn"]);
       } else if (this.leftTheoryAtMove !== null) {
-        chips.push([t("chip.leftTheory", { move: this.leftTheoryAtMove }), "chip-warn"]);
+        // A deviation left theory; without one, the drawn line simply ended (brief §6).
+        const key = this.plies.some((ply) => ply.deviation) ? "chip.leftTheory" : "chip.lineEnded";
+        chips.push([t(key, { move: this.leftTheoryAtMove }), "chip-warn"]);
       }
     }
     if (!this.over && this.rules.isCheck()) chips.push([t("chip.check"), "chip-bad"]);

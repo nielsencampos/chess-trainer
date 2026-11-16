@@ -19,7 +19,7 @@ Chess Trainer ist zum Üben da: Trainiere deine Eröffnungen gegen einen Bot, de
 ## Eine Partie beginnen
 
 - Eröffnung: Wähle deine Farbe und markiere die Eröffnungen und Varianten, die du üben willst. Jede markierte Variante kommt mit derselben Wahrscheinlichkeit dran. Ein Zug aus einer Variante, die du nicht markiert hast, zählt als Verlassen der Theorie.
-- Gespeicherte Partie: Trainiere das Abspiel einer Partie, die du gespielt oder importiert hast, wobei deine Züge geprüft werden, oder spiel ab einer ihrer Stellungen weiter.
+- Gespeichert: Trainiere das Abspiel einer Partie, die du gespielt oder importiert hast, wobei deine Züge geprüft werden, oder spiel ab einer ihrer Stellungen weiter.
 - Chess960: Lose eine Ausgangsstellung aus oder füge die FEN einer der 960 ein. Zum Rochieren klickst du den König und dann ein Feld zwischen ihm und dem Turm an, oder den Turm selbst.
 - Stärke des Bots: Die Elo-Zahl neben jeder Stufe ist nominell, auf der eigenen Skala von Stockfish, und nicht gemessen. Das ist keine Elo-Zahl von Chess.com oder Lichess.
 - Bedenkzeit: die Bedenkzeiten einer echten Turnieruhr, von Bullet bis klassisch, oder ohne Uhr. Die Antwortzeit des Bots ist Menschlich, er verbraucht seine Zeit wie ein Mensch, oder Sofort.

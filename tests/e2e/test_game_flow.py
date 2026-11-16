@@ -59,7 +59,7 @@ def test_book_then_engine_then_resign_with_end_card(page: Page, seed_prefs):
     drag_move(page, "c2", "c3")
     wait_for_ply(page, 4)  # the Alapin line ends at 2.c3, so this reply came from Stockfish
     wait_for_your_move(page)
-    expect(page.locator("#chips")).to_contain_text("Left theory at move 2")
+    expect(page.locator("#chips")).to_contain_text("Line ended at move 2")  # no deviation
     expect(page.locator("#movelist .move").nth(3)).to_have_class(re.compile(r"\bout\b"))
     expect(page.locator("#movelist .deviation")).to_have_count(0)
 
