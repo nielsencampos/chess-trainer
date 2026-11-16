@@ -135,3 +135,9 @@ def test_bold_and_italics_open_and_close(path):
                     key,
                     prose[max(0, run.start() - 15) : run.end() + 15],
                 )
+
+
+def test_every_language_has_its_strings():
+    """Every UI language has its doc strings: no doc falls back to English as a whole."""
+    have = {path.stem for path in readme_docs.SOURCE.glob("*.json")}
+    assert have == set(readme_docs.LOCALES), sorted(set(readme_docs.LOCALES) ^ have)
