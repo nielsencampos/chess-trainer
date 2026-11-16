@@ -16,11 +16,29 @@ def test_the_glossary_styles_are_up_to_date():
     assert set(vale_glossary.STYLES.glob("Glossary*/Avoid.yml")) == set(files)
 
 
-def test_each_locale_uses_its_glossary_style():
-    """A locale with Vale styles lists its glossary's style for the UI and for its docs."""
+def vale_ini() -> configparser.ConfigParser:
+    """The project's `.vale.ini`.
+
+    Returns:
+        configparser.ConfigParser: Its sections; Vale's global settings are under `global`.
+    """
     ini = configparser.ConfigParser(interpolation=None, strict=False)
     # The keys before the first section are Vale's global settings.
     ini.read_string("[global]\n" + (vale_glossary.ROOT / ".vale.ini").read_text(encoding="utf-8"))
+    return ini
+
+
+def test_every_locale_has_a_docs_section():
+    """Each language's docs have their own section, so they are not checked as English."""
+    ini = vale_ini()
+    for code in load_locales():
+        section = "*.md" if code == "en-US" else f"*.{code}.md"
+        assert section in ini, f".vale.ini has no [{section}]"
+
+
+def test_each_locale_uses_its_glossary_style():
+    """A locale with Vale styles lists its glossary's style for the UI and for its docs."""
+    ini = vale_ini()
     for locale in load_locales().values():
         if not locale.vale or not (GLOSSARY_DIR / f"{locale.code}.toml").exists():
             continue

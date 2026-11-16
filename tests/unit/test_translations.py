@@ -110,7 +110,7 @@ def book(tmp_path):
 
 
 def test_the_glossaries_follow_the_format_and_have_the_english_terms():
-    """Every glossary in i18n/glossary is valid and has the same terms as en."""
+    """Every glossary in i18n/glossary is valid and has the same terms as en-US."""
     assert glossary_problems() == []
 
 
@@ -123,10 +123,15 @@ def test_the_name_sources_match_the_book():
         assert name_source_problems(names, load_name_sources(path), path.stem) == []
 
 
-def test_only_registry_locales_have_a_glossary():
-    """A glossary is for a language of the registry."""
-    locales = load_locales()
-    assert all(path.stem in locales for path in GLOSSARY_DIR.glob("*.toml"))
+def test_every_registry_locale_has_a_glossary_and_no_other():
+    """Each language of the registry has a glossary, and each glossary is for one of them."""
+    assert {path.stem for path in GLOSSARY_DIR.glob("*.toml")} == set(load_locales())
+
+
+def test_every_locale_but_the_fallback_records_its_name_sources():
+    """Each language but en-US, the source of every name, has its name-source file."""
+    expected = set(load_locales()) - {DEFAULT_LOCALE}
+    assert {path.stem for path in NAMES_DIR.glob("*.toml")} == expected
 
 
 def test_a_glossary_row_has_a_source_or_is_machine_translated(tmp_path):
