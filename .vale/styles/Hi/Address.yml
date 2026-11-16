@@ -1,0 +1,7 @@
+# hi speaks to the reader as "आप", never "तुम" or "तू".
+extends: existence
+message: "Use 'आप' as the form of address, not '%s'."
+level: error
+nonword: true
+tokens:
+  - '(?:^|(?<=[\s"“(]))(?:तुम|तुम्हें|तुम्हारा|तुम्हारी|तुम्हारे|तू|तुझे|तेरा|तेरी|तेरे)(?=[\s,.!?;:"”)।]|$)'

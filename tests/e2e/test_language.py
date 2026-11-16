@@ -26,6 +26,7 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
             "Español (España)",
             "Suomi",
             "Français",
+            "हिन्दी",
             "Bahasa Indonesia",
             "Italiano",
             "Norsk bokmål",
@@ -90,6 +91,28 @@ def test_a_cyrillic_language_loads_its_font_subsets(page: Page, locale: str, sco
     )
     assert "Commissioner" in loaded
     assert "JetBrains Mono" in loaded
+
+
+def test_hindi_loads_its_devanagari_font(page: Page):
+    """Hindi text uses Noto Sans Devanagari, in the UI and in the mono font stack.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
+    page.goto("/")
+    page.locator("#locale-picker").select_option("hi")
+    expect(page.locator("html")).to_have_attribute("lang", "hi")
+    expect(page.locator("#tab-scoresheet")).to_have_text("स्कोरशीट")
+    loaded = page.evaluate(
+        """async () => {
+          await document.fonts.load('16px "JetBrains Mono", "Noto Sans Devanagari"', "\\u0915");
+          await document.fonts.ready;
+          return [...document.fonts]
+            .filter((face) => face.status === "loaded" && face.unicodeRange.startsWith("U+900-97F"))
+            .map((face) => face.family);
+        }"""
+    )
+    assert "Noto Sans Devanagari" in loaded
 
 
 def test_switching_language_is_kept_after_a_reload(page: Page):

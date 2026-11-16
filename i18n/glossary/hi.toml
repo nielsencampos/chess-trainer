@@ -1,0 +1,534 @@
+# Chess glossary: Hindi (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
+# from the Hindi Wikipedia or Wikidata (`source`) or, when no page names it, `machine = true` with a
+# `note`. `avoid` lists the words the UI must not use for the term. The reader is addressed as
+# "आप". The Hindi Wikipedia writes opening names as the English ones in Devanagari ("सिसिलियन
+# डिफ़ेंस", "इटालियन गेम"), except "उद्घाटन" (Opening) and "भिन्नता" (Variation), and writes
+# proper names in Devanagari ("नायडॉर्फ़"), so no rule keeps an English proper name
+# (`keep_names = false`). Digits stay Western (0-9). Every glossary has the terms of en-US.toml (#35).
+
+# Proper names are written in Devanagari: a glossary rule never keeps an English one (brief §8).
+keep_names = false
+
+[[terms]]
+term = "chess"
+translation = "शतरंज"
+source = "https://hi.wikipedia.org/wiki/शतरंज"
+
+[[terms]]
+term = "piece"
+translation = "मोहरा"
+source = "https://hi.wikipedia.org/wiki/मोहरा_(शतरंज)"
+
+[[terms]]
+term = "king"
+translation = "राजा"
+source = "https://hi.wikipedia.org/wiki/राजा_(शतरंज)"
+avoid = ["बादशाह"]
+
+[[terms]]
+term = "queen"
+translation = "वज़ीर"
+source = "https://hi.wikipedia.org/wiki/वज़ीर_(शतरंज)"
+note = "The article's title; it notes \"रानी\" as the colloquial name."
+avoid = ["रानी"]
+
+[[terms]]
+term = "rook"
+translation = "हाथी"
+source = "https://hi.wikipedia.org/wiki/हाथी_(शतरंज)"
+avoid = ["किश्ती"]
+
+[[terms]]
+term = "pawn"
+translation = "प्यादा"
+source = "https://hi.wikipedia.org/wiki/प्यादा"
+avoid = ["सिपाही"]
+
+[[terms]]
+term = "board"
+translation = "बिसात"
+source = "https://hi.wikipedia.org/wiki/शतरंज_की_बिसात"
+
+[[terms]]
+term = "square"
+translation = "वर्ग"
+source = "https://hi.wikipedia.org/wiki/शतरंज_की_बिसात"
+avoid = ["खाना", "खाने"]
+
+[[terms]]
+term = "White"
+translation = "सफ़ेद"
+source = "https://hi.wikipedia.org/wiki/शतरंज"
+note = "The players are \"सफ़ेद\" and \"काला\", written with the nukta."
+avoid = ["सफेद"]
+
+[[terms]]
+term = "Black"
+translation = "काला"
+source = "https://hi.wikipedia.org/wiki/शतरंज"
+
+[[terms]]
+term = "game"
+translation = "खेल"
+source = "https://hi.wikipedia.org/wiki/शतरंज"
+
+[[terms]]
+term = "move"
+translation = "चाल"
+source = "https://hi.wikipedia.org/wiki/शतरंज"
+
+[[terms]]
+term = "ply"
+translation = "अर्धचाल"
+machine = true
+note = "No Wikipedia page names it: a half-move, one side's move."
+
+[[terms]]
+term = "premove"
+translation = "प्रीमूव"
+machine = true
+note = "No Wikipedia page names it; transliterated, as online chess sites write it."
+
+[[terms]]
+term = "take back"
+translation = "चाल वापस लेना"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "castling"
+translation = "क़िलाबंदी"
+source = "https://hi.wikipedia.org/wiki/क़िलाबंदी_(शतरंज)"
+
+[[terms]]
+term = "check"
+translation = "शह"
+source = "https://hi.wikipedia.org/wiki/शह"
+
+[[terms]]
+term = "checkmate"
+translation = "शहमात"
+source = "https://hi.wikipedia.org/wiki/शहमात"
+note = "Written as one word, as the article's title."
+avoid = ["शाह मात"]
+
+[[terms]]
+term = "stalemate"
+translation = "जिच"
+source = "https://hi.wikipedia.org/wiki/जिच_(स्टैलमेट)"
+
+[[terms]]
+term = "draw"
+translation = "ड्रॉ"
+source = "https://hi.wikipedia.org/wiki/ड्रॉ"
+
+[[terms]]
+term = "resign"
+translation = "हार मानना"
+source = "https://hi.wikipedia.org/wiki/शतरंज_के_नियम"
+
+[[terms]]
+term = "insufficient material"
+translation = "अपर्याप्त सामग्री"
+source = "https://hi.wikipedia.org/wiki/शतरंज_के_नियम"
+
+[[terms]]
+term = "threefold repetition"
+translation = "तिहरा दुहराव"
+source = "https://hi.wikipedia.org/wiki/तिहरा_दुहराव_(शतरंज)"
+
+[[terms]]
+term = "fivefold repetition"
+translation = "पाँच बार दुहराव"
+machine = true
+note = "No Wikipedia page names it; the form of \"तिहरा दुहराव\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "पचास चालों का नियम"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "पचहत्तर चालों का नियम"
+machine = true
+note = "No Wikipedia page names it; the form of \"पचास चालों का नियम\"."
+
+[[terms]]
+term = "opening"
+translation = "उद्घाटन"
+source = "https://hi.wikipedia.org/wiki/शतरंज_का_उद्घाटन"
+avoid = ["ओपनिंग"]
+
+[[terms]]
+term = "variation"
+translation = "भिन्नता"
+source = "https://hi.wikipedia.org/wiki/शतरंज_उद्घाटनों_का_विश्वकोश"
+note = "The article's caption: \"सिसिलियन डिफ़ेंस की नायडॉर्फ़ भिन्नता\"."
+avoid = ["वेरिएशन"]
+
+[[terms]]
+term = "line"
+translation = "लाइन"
+machine = true
+note = "No Wikipedia page names it: a line of the book, transliterated."
+
+[[terms]]
+term = "theory"
+translation = "सिद्धांत"
+source = "https://hi.wikipedia.org/wiki/शतरंज_का_उद्घाटन"
+
+[[terms]]
+term = "book move"
+translation = "पुस्तकीय चाल"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "deviation"
+translation = "विचलन"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "शतरंज इंजन"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "computer"
+translation = "कंप्यूटर"
+source = "https://hi.wikipedia.org/wiki/संगणक"
+note = "The everyday spelling, one of Wikidata's aliases, rather than the title \"संगणक\"."
+
+[[terms]]
+term = "evaluation"
+translation = "मूल्यांकन"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "analysis"
+translation = "विश्लेषण"
+source = "https://hi.wikipedia.org/wiki/विश्लेषण"
+
+[[terms]]
+term = "brilliant move"
+translation = "शानदार चाल"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "सर्वश्रेष्ठ चाल"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "बढ़िया चाल"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "अशुद्धि"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "ग़लती"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "चूक"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "भारी भूल"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "time control"
+translation = "समय नियंत्रण"
+source = "https://hi.wikipedia.org/wiki/समय_नियंत्रण"
+
+[[terms]]
+term = "chess clock"
+translation = "शतरंज घड़ी"
+source = "https://hi.wikipedia.org/wiki/शतरंज_के_नियम"
+
+[[terms]]
+term = "increment"
+translation = "इंक्रीमेंट"
+machine = true
+note = "No Wikipedia page names it; transliterated, as Indian chess sites write it."
+
+[[terms]]
+term = "delay"
+translation = "डिले"
+machine = true
+note = "No Wikipedia page names it; transliterated, as \"इंक्रीमेंट\"."
+
+[[terms]]
+term = "bullet"
+translation = "बुलेट"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "blitz"
+translation = "ब्लिट्ज़"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "rapid"
+translation = "रैपिड"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "classical"
+translation = "क्लासिकल"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "scoresheet"
+translation = "स्कोरशीट"
+source = "https://hi.wikipedia.org/wiki/शतरंज_के_नियम"
+
+[[terms]]
+term = "arbiter"
+translation = "निर्णायक"
+source = "https://hi.wikipedia.org/wiki/शतरंज_के_नियम"
+
+[[terms]]
+term = "rating"
+translation = "रेटिंग"
+source = "https://hi.wikipedia.org/wiki/ईलो_रेटिंग"
+
+[[terms]]
+term = "grandmaster"
+translation = "ग्रांडमास्टर"
+source = "https://hi.wikipedia.org/wiki/ग्रांडमास्टर"
+
+[[terms]]
+term = "International Master"
+translation = "अंतर्राष्ट्रीय मास्टर"
+source = "https://www.wikidata.org/wiki/Q752119"
+
+[[terms]]
+term = "Woman International Master"
+translation = "महिला अंतर्राष्ट्रीय मास्टर"
+source = "https://www.wikidata.org/wiki/Q3314851"
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "महिला फिडे मास्टर"
+machine = true
+note = "No Wikipedia page names it; the form of \"महिला अंतर्राष्ट्रीय मास्टर\", with FIDE as \"फिडे\"."
+
+[[terms]]
+term = "Chess960"
+translation = "Chess960"
+machine = true
+note = "No Wikipedia page names it; Chess960 is the mode's name in the app."
+
+[[terms]]
+term = "correspondence chess"
+translation = "पत्राचार शतरंज"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "शतरंज ओलंपियाड"
+source = "https://www.wikidata.org/wiki/Q428303"
+
+[[terms]]
+term = "touch-move rule"
+translation = "स्पर्श-चाल नियम"
+source = "https://www.wikidata.org/wiki/Q18901030"
+
+[[terms]]
+term = "capture"
+translation = "काटना"
+source = "https://hi.wikipedia.org/wiki/राजा_(शतरंज)"
+note = "The verb the article uses (\"काटा जा सकता है\"); a capture is \"मोहरा काटना\"."
+
+[[terms]]
+term = "tactics"
+translation = "युक्ति"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "strategy"
+translation = "रणनीति"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "sacrifice"
+translation = "बलिदान"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "trap"
+translation = "जाल"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "gambit"
+translation = "गैम्बिट"
+source = "https://hi.wikipedia.org/wiki/गैम्बिट"
+
+[[terms]]
+term = "King's Pawn"
+translation = "किंग्स पॉन"
+machine = true
+note = "No Wikipedia page names it; transliterated, as the Wikipedia names \"किंग्स गैम्बिट\"."
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "क्वीन्स पॉन"
+machine = true
+note = "No Wikipedia page names it; transliterated, as the Wikipedia names \"क्वीन्स गैम्बिट\"."
+
+[[terms]]
+term = "flank"
+translation = "फ्लैंक"
+source = "https://hi.wikipedia.org/wiki/शतरंज_उद्घाटनों_का_विश्वकोश"
+note = "The article's \"फ्लैंक उद्घाटन\"."
+
+[[terms]]
+term = "starting position"
+translation = "प्रारंभिक स्थिति"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "शतरंज की बाल प्रतिभा"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "{name} Variation"
+translation = "{name} भिन्नता"
+source = "https://hi.wikipedia.org/wiki/शतरंज_उद्घाटनों_का_विश्वकोश"
+note = "The article's \"नायडॉर्फ़ भिन्नता\". For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Defense"
+translation = "{name} डिफ़ेंस"
+source = "https://hi.wikipedia.org/wiki/शतरंज_उद्घाटनों_का_विश्वकोश"
+note = "The article's \"सिसिलियन डिफ़ेंस\", \"फ्रेंच डिफ़ेंस\", with the nukta. For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "{name} गैम्बिट"
+source = "https://hi.wikipedia.org/wiki/शतरंज_उद्घाटनों_का_विश्वकोश"
+note = "The article's \"किंग्स गैम्बिट\". For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "{name} काउंटरगैम्बिट"
+machine = true
+note = "No Wikipedia page names it; the form of \"गैम्बिट\". For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Attack"
+translation = "{name} अटैक"
+machine = true
+note = "No Wikipedia page names it; transliterated, as the Wikipedia's opening names are. For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "{name} काउंटरअटैक"
+machine = true
+note = "No Wikipedia page names it; the form of \"अटैक\". For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Opening"
+translation = "{name} उद्घाटन"
+source = "https://hi.wikipedia.org/wiki/शतरंज_उद्घाटनों_का_विश्वकोश"
+note = "The article's \"इंग्लिश उद्घाटन\", \"बर्ड उद्घाटन\". For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} System"
+translation = "{name} सिस्टम"
+machine = true
+note = "No Wikipedia page names it; transliterated, as the Wikipedia's opening names are. For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Line"
+translation = "{name} लाइन"
+machine = true
+note = "No Wikipedia page names it; transliterated. For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Formation"
+translation = "{name} फ़ॉर्मेशन"
+machine = true
+note = "No Wikipedia page names it; transliterated. For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Trap"
+translation = "{name} ट्रैप"
+machine = true
+note = "No Wikipedia page names it; transliterated, as the Wikipedia's opening names are. For opening names, segment by segment (brief §8); {name} is the proper name written in Devanagari (\"नायडॉर्फ़\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "Main Line"
+translation = "मेन लाइन"
+machine = true
+note = "No Wikipedia page names it; transliterated, as the Wikipedia's opening names are. For opening names, segment by segment (brief §8)."
+
+[[pieces]]
+piece = "K"
+letter = "R"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"राजा\" (rājā), romanized. The Hindi Wikipedia has no notation article."
+
+[[pieces]]
+piece = "Q"
+letter = "V"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"वज़ीर\" (vazīr), romanized. The Hindi Wikipedia has no notation article."
+
+[[pieces]]
+piece = "R"
+letter = "H"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"हाथी\" (hāthī), romanized. The Hindi Wikipedia has no notation article."
+
+[[pieces]]
+piece = "B"
+letter = "O"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"ऊँट\" (ūṁṭ), romanized. The Hindi Wikipedia has no notation article."
+
+[[pieces]]
+piece = "N"
+letter = "G"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"घोड़ा\" (ghoṛā), romanized. The Hindi Wikipedia has no notation article."
+
+[[pieces]]
+piece = "P"
+letter = "P"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's initial of \"प्यादा\" (pyādā), in parentheses there: SAN never writes a pawn letter. The Hindi Wikipedia has no notation article."
