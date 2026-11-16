@@ -51,7 +51,9 @@ the smallest supported screen, and mobile is out of scope.
 - User-facing text goes through i18n: `web/i18n/{locale}.json` keys, never hard-coded strings.
   Per-locale settings live in `i18n/locales.toml`, chess terms in `i18n/glossary/`, and where each
   localized opening name came from in `i18n/names/` (brief §8). The fallback is always `en-US`.
-- Chess notation is always English SAN, in every language.
+- PGN, imports, stored moves and `openings/*.json` are always English SAN, in every language. The
+  screen follows the player's notation (figurines, English letters or the UI language's letters,
+  `web/js/notation.js`, brief §8); piece letters per locale live in the glossaries.
 - No build step and no Node. No CDN: everything the app loads ships in the image.
 - Uvicorn runs with a single worker. Do not change this (DuckDB allows one writing process).
 - Python: ruff for lint and format, type hints on public functions, and a Google-style docstring
