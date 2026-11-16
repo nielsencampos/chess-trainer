@@ -398,6 +398,9 @@ class GameSession:
     ) -> tuple[MoveRecord, Deviation | None]:
         """Plays the user's move, recording a deviation if it leaves theory where theory had a move.
 
+        At the end of the drawn line theory ends, even if another selected line goes on: the
+        move is out of theory, and not a deviation.
+
         Args:
             uci (str): The move in UCI.
             user_clock_ms (int | None): The user's clock after the move.
@@ -423,7 +426,9 @@ class GameSession:
             raise IllegalMoveError(uci)
 
         deviation = None
-        if self.in_theory:
+        if self.in_theory and self._drawn_line_ended():
+            self.in_theory = False
+        elif self.in_theory:
             expected = self.selection.moves_at(self.board.epd())
             if not self._stays_in_theory(move):
                 self.in_theory = False
@@ -445,7 +450,11 @@ class GameSession:
             return None
         epd = self.board.epd()
         if epd not in self.variant.positions:
-            self.variant = self.rng.choice(self.selection.containing(epd))
+            containing = self.selection.containing(epd)
+            if not containing:  # a restored game whose lines changed: theory ended here
+                self.in_theory = False
+                return None
+            self.variant = self.rng.choice(containing)
         moves = self.variant.moves.get(epd)
         return self.rng.choice(moves) if moves else None
 
@@ -543,7 +552,8 @@ class GameSession:
         """
         if self.is_over:
             raise GameFinishedError(self.game_id)
-        if self.in_theory and not self._stays_in_theory(move):
+        # The engine plays once the drawn line ended: never theory, even a move another line has.
+        if self.in_theory and (source == "engine" or not self._stays_in_theory(move)):
             self.in_theory = False
         return self._push(move, "bot", source, bot_clock_ms, think_ms)
 
@@ -584,16 +594,7 @@ class GameSession:
             self.moves.pop()
             self.board.pop()
         self.outcome = None
-        self.deviations = [
-            deviation for deviation in self.deviations if deviation.ply < shown_plies
-        ]
-        if self.bot_deviation is not None and self.bot_deviation.ply >= shown_plies:
-            self.bot_deviation = None
-        if self.chess960_position is None:
-            self.in_theory = self.moves[-1].in_theory if self.moves else True
-        self.theory_until_ply = max(
-            (record.ply for record in self.moves if record.in_theory), default=0
-        )
+        self._forget_dropped_moves()
 
     def resign(self) -> None:
         """Ends the game as a loss by resignation.
@@ -619,14 +620,36 @@ class GameSession:
         """
         if self.is_over:
             raise GameFinishedError(self.game_id)
-        while self.ply > shown_plies:
-            self.moves.pop()
-            self.board.pop()
+        if self.ply > shown_plies:
+            while self.ply > shown_plies:
+                self.moves.pop()
+                self.board.pop()
+            self._forget_dropped_moves()
         loser_color = self.user_color if side == "user" else not self.user_color
         if self.board.has_insufficient_material(not loser_color):
             self.outcome = GameResult("draw", "timeout_insufficient_material")
         else:
             self.outcome = GameResult("loss" if side == "user" else "win", "timeout")
+
+    def _forget_dropped_moves(self) -> None:
+        """Brings theory and deviations back to the last move kept, after moves were dropped."""
+        self.deviations = [deviation for deviation in self.deviations if deviation.ply <= self.ply]
+        if self.bot_deviation is not None and self.bot_deviation.ply > self.ply:
+            self.bot_deviation = None
+        if self.chess960_position is None:
+            self.in_theory = self.moves[-1].in_theory if self.moves else True
+        self.theory_until_ply = max(
+            (record.ply for record in self.moves if record.in_theory), default=0
+        )
+
+    def _drawn_line_ended(self) -> bool:
+        """Whether the game is at the end of the drawn line, where theory ends.
+
+        Returns:
+            bool: True when the drawn line reaches this position and has no move from it.
+        """
+        epd = self.board.epd()
+        return epd in self.variant.positions and not self.variant.moves.get(epd)
 
     def _stays_in_theory(self, move: chess.Move) -> bool:
         """Whether a move is a theory move, or reaches a position of a selected line.

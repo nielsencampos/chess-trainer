@@ -16,7 +16,8 @@ trap cleanup EXIT
 
 docker run -d --name "$name" -p "127.0.0.1:${port}:8000" "$image" >/dev/null
 
-for _ in $(seq 1 30); do
+# The first start loads the book into a new database: about 30 s on the arm64 CI runner.
+for _ in $(seq 1 120); do
   curl -fsS "$base/api/health" >/dev/null 2>&1 && break
   sleep 1
 done

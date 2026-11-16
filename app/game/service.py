@@ -1,5 +1,6 @@
 """Coordinates sessions with the book, the engine and the store."""
 
+import asyncio
 import json
 import random
 import secrets
@@ -141,6 +142,8 @@ class GameService:
         self.store = store
         self.rng = rng or random.Random()
         self._games: OrderedDict[str, GameSession] = OrderedDict()
+        # One bot turn at a time: a reload or a second tab resumes the game while a search runs.
+        self._bot_lock = asyncio.Lock()
 
     def _remember(self, session: GameSession) -> None:
         """Keeps a session in memory, dropping the oldest beyond `MAX_GAMES_IN_MEMORY`.
@@ -203,7 +206,6 @@ class GameService:
                     raise InvalidSetupError(f"unknown variation {variant_id!r}")
                 variants.append(variant)
 
-        self._abandon_active()
         control = TIME_CONTROLS[time_control]
         session = GameSession(
             game_id=new_game_id(),
@@ -222,6 +224,7 @@ class GameService:
         session.bot_deviation_setup = bot_deviation if chess960_position is None else None
         if from_game is not None and from_game.from_position:
             self._play_given_moves(session, variants[0])
+        self._abandon_active()  # Only now: a refused setup leaves the active game alone.
         if control is not None:
             session.user_clock_ms = control.base_ms
             session.bot_clock_ms = control.base_ms
@@ -319,10 +322,10 @@ class GameService:
             InvalidSetupError: The position is already the end of the game.
         """
         board = chess.Board()
-        for _ in range(len(line.pgn.split())):
-            uci = line.moves[board.epd()][0].uci
+        # The move list, not the position index: a position that repeats has more than one move.
+        for san in line.pgn.split():
+            uci = board.push_san(san).uci()
             session.play_given_move(uci)
-            board.push_uci(uci)
         if session.is_over:
             raise InvalidSetupError("the game is already over at this move")
 
@@ -362,7 +365,7 @@ class GameService:
         return session
 
     def get(self, game_id: str) -> GameSession:
-        """A game in memory.
+        """A game in memory, or the active game rebuilt from the database after a restart.
 
         Args:
             game_id (str): The game's id.
@@ -371,12 +374,14 @@ class GameService:
             GameSession: The game.
 
         Raises:
-            UnknownGameError: The game is not in memory.
+            UnknownGameError: The game is neither in memory nor the active game.
         """
-        try:
-            return self._games[game_id]
-        except KeyError as error:
-            raise UnknownGameError(game_id) from error
+        session = self._games.get(game_id)
+        if session is None:
+            session = self.active_session()
+            if session is None or session.game_id != game_id:
+                raise UnknownGameError(game_id)
+        return session
 
     async def user_move(
         self,
@@ -401,6 +406,8 @@ class GameService:
 
         Raises:
             UnknownGameError: The game is not in memory.
+            NotYourTurnError: It is the bot's turn.
+            GameFinishedError: The game is already over.
             IllegalMoveError: The move is illegal.
         """
         session = self.get(game_id)
@@ -512,8 +519,25 @@ class GameService:
             session (GameSession): The game, with the bot to move.
 
         Returns:
-            BotReply | None: The move, or None if the game ended during the search.
+            BotReply | None: The move, or None if it was not the bot's turn, or the game ended or
+                changed during the search.
         """
+        async with self._bot_lock:
+            return await self._bot_turn_locked(session)
+
+    async def _bot_turn_locked(self, session: GameSession) -> BotReply | None:
+        """Plays the bot's move; `_bot_turn` holds the lock.
+
+        Args:
+            session (GameSession): The game.
+
+        Returns:
+            BotReply | None: The move, or None if it was not the bot's turn, or the game ended or
+                changed during the search.
+        """
+        if session.is_over or session.is_user_turn:  # another request already played it
+            return None
+        ply = session.ply
         bot_clock_ms = session.bot_clock_ms
         book_move = session.next_book_move()
         search_started = time.monotonic()
@@ -521,7 +545,7 @@ class GameService:
         deviation = None
         if book_move is not None and session.rolls_for_deviation() and session.roll_deviation():
             deviation = await self._deviation_move(session, budget)
-            if session.is_over:  # the user's clock ran out during the search
+            if session.is_over or session.ply != ply:  # a flag or take-back during the search
                 return None
         if deviation is not None:
             move, source = deviation
@@ -530,7 +554,7 @@ class GameService:
         else:
             move = await self.engine.play(session.board, self.levels[session.level], budget)
             source = "engine"
-            if session.is_over:  # the user's clock ran out during the search
+            if session.is_over or session.ply != ply:  # a flag or take-back during the search
                 return None
         in_book = source == "book"
         delay_ms = (

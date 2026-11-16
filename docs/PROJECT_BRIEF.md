@@ -190,8 +190,8 @@ A newer catalog does not enter by itself: comparing it with `openings/` and acce
 - A book is a set of positions (EPD) with their moves, so transpositions are recognized.
 - At game start one selected variation is drawn with equal chance, and the bot follows it.
 - If the user plays a move from another selected variation, the bot redraws among the selected variations containing that position.
-- When the drawn variation ends, the engine takes over, even if another selected variation continues.
-- Theory is the union of the selected variations. A user move outside it, when that union has a move for the position, is a deviation. Once out of theory a game does not return to it, except through a take-back.
+- When the drawn variation ends, theory ends and the engine takes over, even if another selected variation continues (decided 2026-11-16, #59): the next move is out of theory and is not a deviation, and an engine move never counts as theory, even one that a selected variation plays, so the bot does not go back to the book.
+- Until then, theory is the union of the selected variations. A user move outside it, when that union has a move for the position, is a deviation. Once out of theory a game does not return to it, except through a take-back.
 
 **Bot deviation** (decided 2026-11-10): the bot can leave its line on purpose.
 - Setup: a "Bot may deviate" checkbox, off by default. Checked, it shows two choices: *from move* 3, 4, 5, 6 or 7 (default 3) and *chance per move* 20, 30, 40, 50, 60 or 70% (default 30%). All three are kept per browser, like the other setup choices. It does nothing for Chess960 or "From position", which have no book.
