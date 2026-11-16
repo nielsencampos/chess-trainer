@@ -130,10 +130,11 @@ export function getLocale() {
 /**
  * The language in use, for formatting dates and numbers: always with Western digits (0-9), which
  * the move numbers, clocks and board coordinates use too, also in Arabic and Persian (#37).
- * @returns {string} Its code with the Latin numbering system, such as `ar-u-nu-latn`.
+ * @returns {string} Its code with the Gregorian calendar and Western digits, such as
+ *   `fa-u-ca-gregory-nu-latn` (Persian would use its own calendar otherwise).
  */
 export function getFormatLocale() {
-  return `${locale}-u-nu-latn`;
+  return `${locale}-u-ca-gregory-nu-latn`;
 }
 
 /**
