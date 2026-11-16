@@ -7,7 +7,7 @@ all = [
     # The product, its tools and the systems it runs on.
     "Chess", "Trainer", "Stockfish", "DuckDB", "FastAPI", "Uvicorn", "PyInstaller", "pywebview", "codespell", "glibc",
     "platformdirs", "chessops", "JSDoc", "pytest", "uv", "Familjen", "Grotesk", "SmartScreen",
-    "WebView2", "Safari", "Compose", "README", "HOW_TO_INSTALL", "Releases", "Assets", "Runtime",
+    "WebView2", "Safari", "Compose", "Fontsource", "README", "HOW_TO_INSTALL", "Releases", "Assets", "Runtime",
     "arm64", "amd64", "zip", "Merida", "Lichess", "Chessmaster", "SNES", "CBX",
     # Chess terms and abbreviations.
     "PGN", "FEN", "SAN", "EPD", "UCI", "NAG", "NAGs", "FIDE", "ICCF", "WIM", "DGT", "Elo",
@@ -24,6 +24,7 @@ all = [
     "Niklas", "Fiekas", "Hernandez", "Marroquin", "Badrap",
     # The language links at the top of each document.
     "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch", "Français", "Italiano",
+    "Türkçe", "Polski", "Nederlands", "Bahasa", "Indonesia", "Tiếng", "Việt",
 ]
 en-US = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
@@ -64,6 +65,23 @@ it = [
     "Luis", "Paulo", "Florencia", "Rafael", "Molina", "Barbosa",
     "How", "to", "Win", "at", "I'm", "Not", "Speed", "Championship", "my", "queen",  # English titles
     "backend",  # the author's own words on the About page
+    "python", "chess", "result",  # the names python-chess and @badrap/result
+    "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+]
+pl = [
+    "półruch", "półruchy", "półruchów", "półruchu",  # ply, a chess term
+    "Stockfisha", "Stockfishowi", "bulleta", "agadmatorowi", "Krikorem", "Spasskiego", "Stafforda",
+    "SNES-ie", "Barbosa", "Florencia", "Armando", "python-chess", "Championship", "Oh",
+    "backendu",  # the author's own words on the About page
+    "python", "chess", "result",  # the names python-chess and @badrap/result
+    "Searching", "for",  # the film's original title
+    "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+]
+nl = [
+    "zettenlijst", "evaluatiebalk", "schaakengine", "stuksymbolen", "figurines", "Figurines",
+    "vijftigzettenregel", "vijfenzeventigzettenregel", "schaakcomputerspellen", "schaakkanalen",
+    "schaakmaker", "Merida-stukken", "python-chess", "I", "I'm", "Not", "my",
+    "backend-engineer",  # the author's own words on the About page
     "python", "chess", "result",  # the names python-chess and @badrap/result
     "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
 ]
@@ -136,6 +154,10 @@ fr = [
     "D_N_E_OU_E",  # "Sorti de la théorie", a label
 ]
 it = []
+pl = [
+    "ZDANIA_ZLOZONE",  # UI labels named in a sentence ("Odznacz Pokaż posunięcia") read as verbs
+]
+nl = []
 
 [ignore]
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.
@@ -215,4 +237,18 @@ fr = [
 it = [
     { text = "attesa", rule = "UPPERCASE_SENTENCE_START" },
     { text = "@badrap", rule = "MORFOLOGIK_RULE_IT_IT" },  # the name @badrap/result
+]
+pl = [
+    { text = "oczekiwano", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
+    { text = " albo", rule = "BRAK_PRZECINKA_ANI" },  # "albo wklej lub wgraj": one "albo", no comma
+    { text = "partii", rule = "SKLADNIA_LICZEBNIKA" },  # the `other` form, for fractions (1,5 partii)
+    { text = "@badrap", rule = "MORFOLOGIK_RULE_PL_PL" },  # the name @badrap/result
+]
+nl = [
+    { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
+    { text = "verwacht", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "pat", rule = "PAT" },  # stalemate
+    { text = "um", rule = "NL_SIMPLE_REPLACE_UM" },  # a quote of Mecking's book
+    { text = "Oh", rule = "NL_SIMPLE_REPLACE_OH" },  # "Oh no, my queen!" is quoted in English
 ]
