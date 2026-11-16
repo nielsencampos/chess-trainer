@@ -342,6 +342,25 @@ def test_flag_drops_moves_the_browser_never_showed():
     assert game.outcome.result == "win"
 
 
+def test_flag_forgets_the_theory_of_a_dropped_move():
+    """A move the flag drops no longer counts as the one that left theory."""
+    game = session(variant("a", VIENNA))
+    game.play_user_move("e2e4")
+    game.play_bot_move(chess.Move.from_uci("c7c5"), "engine")
+    assert game.in_theory is False
+    game.flag("bot", 1)
+    assert game.in_theory is True
+    assert game.theory_until_ply == 1
+
+
+def test_a_restored_game_whose_lines_changed_leaves_theory_on_the_bots_turn():
+    """A restored game in theory at a position no selected line has goes on with the engine."""
+    game = session(variant("a", VIENNA))
+    game.board.push_uci("d2d4")  # as a restore rebuilds it, with the bot to move
+    assert game.next_book_move() is None
+    assert game.in_theory is False
+
+
 def test_pgn():
     """A resigned game's PGN has the players, the result and the moves."""
     game = session(variant("a", VIENNA))

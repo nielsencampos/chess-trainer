@@ -445,7 +445,11 @@ class GameSession:
             return None
         epd = self.board.epd()
         if epd not in self.variant.positions:
-            self.variant = self.rng.choice(self.selection.containing(epd))
+            containing = self.selection.containing(epd)
+            if not containing:  # a restored game whose lines changed: theory ended here
+                self.in_theory = False
+                return None
+            self.variant = self.rng.choice(containing)
         moves = self.variant.moves.get(epd)
         return self.rng.choice(moves) if moves else None
 
@@ -584,16 +588,7 @@ class GameSession:
             self.moves.pop()
             self.board.pop()
         self.outcome = None
-        self.deviations = [
-            deviation for deviation in self.deviations if deviation.ply < shown_plies
-        ]
-        if self.bot_deviation is not None and self.bot_deviation.ply >= shown_plies:
-            self.bot_deviation = None
-        if self.chess960_position is None:
-            self.in_theory = self.moves[-1].in_theory if self.moves else True
-        self.theory_until_ply = max(
-            (record.ply for record in self.moves if record.in_theory), default=0
-        )
+        self._forget_dropped_moves()
 
     def resign(self) -> None:
         """Ends the game as a loss by resignation.
@@ -619,14 +614,27 @@ class GameSession:
         """
         if self.is_over:
             raise GameFinishedError(self.game_id)
-        while self.ply > shown_plies:
-            self.moves.pop()
-            self.board.pop()
+        if self.ply > shown_plies:
+            while self.ply > shown_plies:
+                self.moves.pop()
+                self.board.pop()
+            self._forget_dropped_moves()
         loser_color = self.user_color if side == "user" else not self.user_color
         if self.board.has_insufficient_material(not loser_color):
             self.outcome = GameResult("draw", "timeout_insufficient_material")
         else:
             self.outcome = GameResult("loss" if side == "user" else "win", "timeout")
+
+    def _forget_dropped_moves(self) -> None:
+        """Brings theory and deviations back to the last move kept, after moves were dropped."""
+        self.deviations = [deviation for deviation in self.deviations if deviation.ply <= self.ply]
+        if self.bot_deviation is not None and self.bot_deviation.ply > self.ply:
+            self.bot_deviation = None
+        if self.chess960_position is None:
+            self.in_theory = self.moves[-1].in_theory if self.moves else True
+        self.theory_until_ply = max(
+            (record.ply for record in self.moves if record.in_theory), default=0
+        )
 
     def _stays_in_theory(self, move: chess.Move) -> bool:
         """Whether a move is a theory move, or reaches a position of a selected line.
