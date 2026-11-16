@@ -265,6 +265,7 @@
   "help.fairPlay.text": "Nie używaj Chess Trainer ani żadnego silnika szachowego w trakcie partii z inną osobą, online czy przy szachownicy. To oszustwo, a Chess.com, Lichess i FIDE go zakazują. Trenuj przed partiami i po nich, nigdy w ich trakcie.",
   "help.eval.title": "Ocena jest tu podstawowa",
   "help.eval.text": "Pasek oceny pochodzi z szybkiego sprawdzenia przez Stockfish i jest tylko wskazówką. Ikony posunięć (najlepsze posunięcie, błąd, poważny błąd…) to klasyfikacja serwisu, z którego pochodzi partia, odczytana z jej PGN: aplikacja sama ich nie oblicza. Do prawdziwej analizy wyeksportuj PGN i przeanalizuj go na Chess.com, Lichess albo w innym narzędziu do analizy.",
+  "desktop.launchError": "Nie udało się uruchomić Chess Trainer. Być może inny program używa portu {port} albo nie udało się otworzyć bazy danych. Szczegóły są w dzienniku: {log}",
   "help.start.title": "Zacznij partię",
   "help.start.opening": "Otwarcie: wybierz kolor i zaznacz otwarcia i warianty do trenowania. Każdy zaznaczony wariant ma taką samą szansę na wylosowanie. Zagranie posunięcia z wariantu, którego nie zaznaczyłeś, liczy się jako wyjście z teorii.",
   "help.start.saved": "Zapisana partia: trenuj linię partii, którą rozegrałeś albo zaimportowałeś, aby sprawdzać jej posunięcia, albo graj dalej od dowolnej z jej pozycji.",

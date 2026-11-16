@@ -32,7 +32,9 @@ def health() -> dict | None:
         dict | None: The answer, or None if nothing answers yet.
     """
     try:
-        with urllib.request.urlopen(URL, timeout=5) as response:
+        # No proxy for loopback, as in desktop/launcher.py.
+        opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+        with opener.open(URL, timeout=5) as response:
             return json.load(response)
     except (urllib.error.URLError, OSError, ValueError):
         return None

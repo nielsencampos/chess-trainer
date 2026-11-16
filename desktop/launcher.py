@@ -5,6 +5,7 @@ desktop.launcher`, or build it with `uv run --group desktop pyinstaller desktop/
 The data lives in the user's data folder, never next to the executable.
 """
 
+import html
 import json
 import logging
 import os
@@ -23,6 +24,8 @@ HOST = "127.0.0.1"
 # A fixed port, because the UI preferences are kept in localStorage, which belongs to an origin.
 DEFAULT_PORT = 47800
 BUNDLE = Path(getattr(sys, "_MEIPASS", Path(__file__).parent.parent))
+# Loopback never goes through a proxy: a system proxy could answer for 127.0.0.1 instead.
+LOOPBACK = urllib.request.build_opener(urllib.request.ProxyHandler({}))
 
 
 class LaunchError(RuntimeError):
@@ -83,7 +86,7 @@ def running_here(port: int) -> bool:
         LaunchError: Another program answers on the port.
     """
     try:
-        with urllib.request.urlopen(f"http://{HOST}:{port}/api/health", timeout=2) as response:
+        with LOOPBACK.open(f"http://{HOST}:{port}/api/health", timeout=2) as response:
             json.loads(response.read())["engine"]
             return True
     except urllib.error.HTTPError as error:
@@ -122,6 +125,48 @@ def start_server(port: int) -> tuple[uvicorn.Server, threading.Thread]:
     return server, thread
 
 
+def launch_error_page(port: int, log: Path) -> str:
+    """The page a failed launch shows, in the system's language when the app has it.
+
+    The window's own `navigator.languages` picks the text, as no page of the app has run yet to
+    choose one: an exact code first, then the same language, then English (US).
+
+    Args:
+        port (int): The port the app wanted.
+        log (Path): The log file with the details.
+
+    Returns:
+        str: The HTML.
+    """
+    texts = {}
+    for path in sorted((BUNDLE / "web" / "i18n").glob("*.json")):
+        text = json.loads(path.read_text(encoding="utf-8")).get("desktop.launchError")
+        if text:
+            texts[path.stem] = text.replace("{port}", str(port)).replace("{log}", str(log))
+    from app.locales import load_locales  # the registry ships with the app
+
+    rtl = [code for code, locale in load_locales().items() if locale.direction == "rtl"]
+    data = json.dumps(texts, ensure_ascii=False).replace("</", "<\\/")
+    fallback = html.escape(texts.get("en-US", f"Chess Trainer could not start. See {log}"))
+    return f"""<!doctype html><meta charset="utf-8">
+<body style="font: 15px system-ui, sans-serif; margin: 24px; overflow-wrap: anywhere">
+<p id="text">{fallback}</p>
+<script>
+const texts = {data};
+const codes = Object.keys(texts);
+for (const wanted of navigator.languages) {{
+  const code = codes.find((c) => c.toLowerCase() === wanted.toLowerCase())
+    ?? codes.find((c) => c.split("-")[0] === wanted.split("-")[0].toLowerCase());
+  if (code) {{
+    document.getElementById("text").textContent = texts[code];
+    document.documentElement.lang = code;
+    document.documentElement.dir = {json.dumps(rtl)}.includes(code) ? "rtl" : "ltr";
+    break;
+  }}
+}}
+</script>"""
+
+
 def main() -> None:
     """Opens the window, starting the server first unless this app already runs."""
     data_dir = Path(platformdirs.user_data_dir(APP_NAME, appauthor=False))
@@ -135,12 +180,21 @@ def main() -> None:
         logging.info("removed the downloaded-file mark from %d files", unblocked)
     port = int(os.environ.get("CHESS_TRAINER_PORT", DEFAULT_PORT))
     server = thread = None
+    linux = sys.platform == "linux"
     # shortcut: a second launch opens another window on the first one's server, and that
     # window stops working when the first one closes. Focus the first window instead later.
-    if not running_here(port):
-        server, thread = start_server(port)
+    try:
+        if not running_here(port):
+            server, thread = start_server(port)
+    except LaunchError:
+        # A windowed build has no console: say so in a window, and log the details.
+        logging.exception("the app could not start")
+        log = data_dir / f"{APP_NAME}.log"
+        page = launch_error_page(port, log)
+        webview.create_window("Chess Trainer", html=page, width=640, height=260)
+        webview.start(gui="qt" if linux else None)
+        sys.exit(1)
 
-    linux = sys.platform == "linux"
     # On Linux our own Qt handlers save downloads and print (desktop/qt_window.py).
     webview.settings["ALLOW_DOWNLOADS"] = not linux
     window = webview.create_window(

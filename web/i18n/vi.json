@@ -256,6 +256,7 @@
   "help.fairPlay.text": "Đừng dùng Chess Trainer, hay bất kỳ chương trình cờ vua nào, trong một ván cờ với người khác, trực tuyến hay trên bàn cờ. Đó là gian lận, và Chess.com, Lichess và FIDE đều cấm điều đó. Hãy luyện tập trước và sau các ván cờ, không bao giờ trong lúc chơi.",
   "help.eval.title": "Đánh giá ở đây chỉ là cơ bản",
   "help.eval.text": "Thanh đánh giá đến từ một lần kiểm tra nhanh của Stockfish và chỉ là gợi ý. Các biểu tượng nước đi (nước đi tốt nhất, sai lầm, sai lầm nghiêm trọng…) là cách phân loại của trang web mà ván cờ đến từ đó, đọc từ PGN của nó: ứng dụng không tự tính biểu tượng nào. Để phân tích thật sự, hãy xuất PGN và phân tích trên Chess.com, Lichess hoặc một công cụ phân tích khác.",
+  "desktop.launchError": "Không thể khởi động Chess Trainer. Có thể một chương trình khác đang dùng cổng {port}, hoặc không mở được cơ sở dữ liệu. Chi tiết có trong nhật ký: {log}",
   "help.start.title": "Bắt đầu một ván cờ",
   "help.start.opening": "Khai cuộc: chọn màu quân và đánh dấu các khai cuộc và biến muốn luyện. Mỗi biến được đánh dấu có cùng khả năng được chọn. Đi một nước thuộc biến bạn không đánh dấu được tính là ra khỏi lý thuyết.",
   "help.start.saved": "Ván cờ đã lưu: luyện diễn biến của một ván bạn đã chơi hoặc đã nhập, để các nước đi được kiểm tra, hoặc chơi tiếp từ bất kỳ thế cờ nào của nó.",

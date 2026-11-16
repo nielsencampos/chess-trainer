@@ -259,6 +259,7 @@
   "help.fairPlay.text": "Brug ikke Chess Trainer, eller noget skakprogram, under et parti mod en anden person, online eller ved brættet. Det er snyd, og Chess.com, Lichess og FIDE forbyder det. Træn før og efter dine partier, aldrig under dem.",
   "help.eval.title": "Vurderingen her er enkel",
   "help.eval.text": "Vurderingsbjælken kommer fra et hurtigt tjek med Stockfish og er kun et fingerpeg. Træk-ikonerne (bedste træk, fejl, brøler…) er klassificeringen fra det site, partiet kommer fra, læst fra dets PGN: appen beregner ingen af dem. For en rigtig analyse eksporterer du PGN og analyserer den på Chess.com, Lichess eller et andet analyseværktøj.",
+  "desktop.launchError": "Chess Trainer kunne ikke starte. Et andet program bruger måske port {port}, eller databasen kunne ikke åbnes. Detaljerne står i loggen: {log}",
   "help.start.title": "Start et parti",
   "help.start.opening": "Åbning: vælg din farve, og sæt flueben ved de åbninger og varianter, du vil øve. Hver valgt variant har samme chance for at blive trukket. Et træk fra en variant, du ikke valgte, tæller som at forlade teorien.",
   "help.start.saved": "Gemt parti: træn varianten fra et parti, du har spillet eller importeret, så dens træk kontrolleres, eller spil videre fra en hvilken som helst af dens stillinger.",

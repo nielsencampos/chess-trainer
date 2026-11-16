@@ -256,6 +256,7 @@
   "help.fairPlay.text": "Jangan memakai Chess Trainer, atau mesin catur apa pun, selama permainan melawan orang lain, daring maupun di papan. Itu curang, dan Chess.com, Lichess, serta FIDE melarangnya. Berlatihlah sebelum dan sesudah permainan Anda, jangan pernah selama permainan.",
   "help.eval.title": "Evaluasi di sini sederhana",
   "help.eval.text": "Bilah evaluasi berasal dari pemeriksaan cepat Stockfish dan hanya petunjuk. Ikon langkah (langkah terbaik, kesalahan, blunder…) adalah klasifikasi dari situs asal partai, dibaca dari PGN-nya: aplikasi tidak menghitung satu pun. Untuk analisis sungguhan, ekspor PGN dan analisis di Chess.com, Lichess atau alat analisis lain.",
+  "desktop.launchError": "Chess Trainer tidak dapat dimulai. Mungkin program lain memakai port {port}, atau basis data tidak dapat dibuka. Rinciannya ada di log: {log}",
   "help.start.title": "Mulai permainan",
   "help.start.opening": "Pembukaan: pilih warna Anda dan centang pembukaan dan variasi yang ingin dilatih. Setiap variasi yang dicentang memiliki peluang yang sama untuk terpilih. Memainkan langkah dari variasi yang tidak Anda centang dihitung sebagai keluar dari teori.",
   "help.start.saved": "Permainan tersimpan: latih lini dari permainan yang Anda mainkan atau impor, sehingga langkah-langkahnya diperiksa, atau terus bermain dari posisi mana pun di dalamnya.",
