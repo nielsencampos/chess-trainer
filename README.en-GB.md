@@ -53,7 +53,7 @@ The app is published on loopback only, because it has no login. To reach it from
 
 The full guide, with pictures, is in [docs/HELP.en-GB.md](docs/HELP.en-GB.md), the same as the Help screen in the app, and who made it and why is in [docs/ABOUT.en-GB.md](docs/ABOUT.en-GB.md). A summary:
 
-1. Pick your color and the lines to drill, from all 3,865 lines of the book. Search by name, ECO or moves. Each selected line has the same chance of being drawn.
+1. Pick your colour and the lines to drill, from all 3,865 lines of the book. Search by name, ECO or moves. Each selected line has the same chance of being drawn.
 2. The bot plays the drawn line. If you play a move from another selected line, it follows you.
 3. A move outside the selected lines is a deviation: it is recorded with the expected moves and shown at the end of the game.
 4. When the line ends or someone leaves theory, Stockfish takes over at the selected level.
@@ -67,7 +67,7 @@ Beyond openings:
 - **Saved games:** every game is saved. Filter them, export them as PGN, review them move by move, or start a new game from any of their moves (not yet from a Chess960 game).
 - **Import:** paste PGN, upload a file, or fetch a player's public games from Chess.com or Lichess. The review shows the PGN's evaluations, classifications, clocks, comments and side lines.
 - **Evaluation bar:** Stockfish's evaluation while reviewing, and at the end of a game. It is a quick check, not a full analysis: for that, export the PGN to Chess.com or Lichess.
-- **Scoresheet:** a printable A4 scoresheet, modeled on an official one, to write your moves by hand during long games. It is not an official scoresheet: it is for training only.
+- **Scoresheet:** a printable A4 scoresheet, modelled on an official one, to write your moves by hand during long games. It is not an official scoresheet: it is for training only.
 - **Help:** how to use every screen, in the app's menu.
 
 Chess Trainer is for training. Never use it, or any engine, during a game against another person.
@@ -76,7 +76,7 @@ Chess Trainer is for training. Never use it, or any engine, during a game agains
 
 ## The book
 
-The bot's book is in `openings/`, one JSON file per opening family, loaded into DuckDB on start (a few seconds the first time). It starts with all 3,865 lines of the [Lichess openings catalog](https://github.com/lichess-org/chess-openings). Any line plays with either color. The catalog lists named positions, not recommended replies, so lines are often short and the engine plays on from there. They can be extended by pull request, recording the source. The format is in [the brief, §6](docs/PROJECT_BRIEF.md).
+The bot's book is in `openings/`, one JSON file per opening family, loaded into DuckDB on start (a few seconds the first time). It starts with all 3,865 lines of the [Lichess openings catalog](https://github.com/lichess-org/chess-openings). Any line plays with either colour. The catalog lists named positions, not recommended replies, so lines are often short and the engine plays on from there. They can be extended by pull request, recording the source. The format is in [the brief, §6](docs/PROJECT_BRIEF.md).
 
 The database lives in `./data`, which the container writes as UID 1000. To back it up, stop the app and copy the file. Every move is saved there, so an unfinished game continues when you open the page again, even after a restart. Clocks stop while the app is closed.
 
@@ -114,6 +114,6 @@ uv run python scripts/help_media.py --base-url http://127.0.0.1:8000
 
 `docs/HELP*.md` and `docs/ABOUT*.md` are written from the Help and About screens' strings, and `README*.md` and `HOW_TO_INSTALL*.md` from `i18n/docs/`. After changing them, run `uv run python scripts/help_docs.py` and `uv run python scripts/readme_docs.py`; a test fails while the files are out of date.
 
-## License
+## Licence
 
 [GPL-3.0](LICENSE). Third-party components are listed in [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).

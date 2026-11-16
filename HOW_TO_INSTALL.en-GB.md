@@ -95,7 +95,7 @@ Download the new version and install it the same way, replacing the old program 
 
 1. Remove the program:
    - **Windows:** **Settings** → **Apps** → **Installed apps** → **Chess Trainer** → **Uninstall**. If you used the zip instead, delete its folder.
-   - **macOS:** drag **Chess Trainer** from Applications to the Trash.
+   - **macOS:** drag **Chess Trainer** from Applications to the Bin.
    - **Linux:** run `~/.local/opt/chess-trainer/install.sh --uninstall`.
 2. Only if you also want to erase your games and lines: delete the data folder listed above. This cannot be undone, so make a backup first if you may want them later.
 

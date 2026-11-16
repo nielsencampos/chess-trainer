@@ -74,7 +74,7 @@ O Chess Trainer é para treinar: nunca o use, nem qualquer motor de xadrez, dura
 
 ## O livro
 
-O livro do bot fica em `openings/`, um arquivo JSON por família de aberturas, carregado no DuckDB ao iniciar (alguns segundos na primeira vez). Ele começa com as 3.865 linhas do [catálogo de aberturas do Lichess](https://github.com/lichess-org/chess-openings). Qualquer linha pode ser jogada com qualquer cor. O catálogo lista posições com nome, não respostas recomendadas, então as linhas costumam ser curtas e o motor continua a partir dali. Elas podem ser estendidas por pull request, registrando a fonte. O formato está [no brief, §6](docs/PROJECT_BRIEF.md).
+O livro do bot fica em `openings/`, um arquivo JSON por família de aberturas, carregado no DuckDB ao iniciar (alguns segundos na primeira vez). Ele começa com as 3.865 linhas do [catálogo de aberturas do Lichess](https://github.com/lichess-org/chess-openings). Qualquer linha serve para as duas cores. O catálogo lista posições com nome, não respostas recomendadas, então as linhas costumam ser curtas e o motor continua a partir dali. Elas podem ser estendidas por pull request, registrando a fonte. O formato está [no brief, §6](docs/PROJECT_BRIEF.md).
 
 O banco fica em `./data`, que o contêiner grava como UID 1000. Para fazer backup, pare o app e copie o arquivo. Todo lance é salvo ali, então uma partida não terminada continua quando você reabre a página, mesmo depois de reiniciar. Os relógios param enquanto o app está fechado.
 
