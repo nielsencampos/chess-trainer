@@ -8,7 +8,7 @@ from app.locales import DEFAULT_LOCALE, load_locales
 
 I18N_DIR = Path(__file__).parent.parent.parent / "web" / "i18n"
 GOOD = """
-[locales.en]
+[locales.en-US]
 direction = "ltr"
 scripts = ["latin"]
 reviewed = true
@@ -36,7 +36,7 @@ def test_optional_tools_can_be_left_out(tmp_path):
     """
     path = tmp_path / "locales.toml"
     path.write_text(GOOD, encoding="utf-8")
-    locale = load_locales(path)["en"]
+    locale = load_locales(path)["en-US"]
     assert locale.languagetool is None
     assert locale.vale == ()
 
@@ -48,13 +48,13 @@ def test_the_wikipedia_language_defaults_to_the_code_s_first_part(tmp_path):
         tmp_path (Path): A temporary folder.
     """
     path = tmp_path / "locales.toml"
-    pt_br = GOOD.replace("locales.en", "locales.pt-BR")
-    zh = GOOD.replace("locales.en", "locales.zh-Hans").replace(
+    pt_br = GOOD.replace("locales.en-US", "locales.pt-BR")
+    zh = GOOD.replace("locales.en-US", "locales.zh-Hans").replace(
         "reviewed = true", 'reviewed = false\nwikipedia = "zh"'
     )
     path.write_text(GOOD + pt_br + zh, encoding="utf-8")
     locales = load_locales(path)
-    assert locales["en"].wikipedia == "en"
+    assert locales["en-US"].wikipedia == "en"
     assert locales["pt-BR"].wikipedia == "pt"
     assert locales["zh-Hans"].wikipedia == "zh"
 
@@ -69,7 +69,7 @@ def test_the_wikipedia_language_defaults_to_the_code_s_first_part(tmp_path):
         ("reviewed = true", 'reviewed = true\nfallback = "pt-BR"'),
         ("reviewed = true", 'reviewed = true\nvale = "UI"'),
         ("reviewed = true", 'reviewed = true\nwikipedia = "PT BR"'),
-        ("[locales.en]", "[locales.de]"),
+        ("[locales.en-US]", "[locales.de]"),
     ],
 )
 def test_bad_values_fail_loudly(tmp_path, change):

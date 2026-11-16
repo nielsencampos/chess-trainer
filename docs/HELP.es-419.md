@@ -23,7 +23,7 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 - Ritmo de juego: los ritmos de un reloj de torneo real, del bullet al clásico, o sin reloj. El tiempo de respuesta del bot es Humano, que gasta su reloj como una persona, o Instantáneo.
 - Opciones: avisar al salir de la teoría, permitir jugadas anticipadas y dejar que el bot se desvíe de su línea a propósito, desde una jugada elegida, para entrenar también contra sorpresas.
 
-![Nueva partida: color, líneas, nivel y reloj.](../web/help/es/setup.webp)
+![Nueva partida: color, líneas, nivel y reloj.](../web/help/es-419/setup.webp)
 
 *Nueva partida: color, líneas, nivel y reloj.*
 
@@ -35,7 +35,7 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 - Con las jugadas anticipadas activadas, puedes dejar una jugada en cola mientras el bot piensa. Con ellas desactivadas, Deshacer jugada deshace tu última jugada mientras la respuesta del bot aún no se ve.
 - Abandonar pide un segundo clic, para que un clic sin querer no termine la partida.
 
-![Haz clic o arrastra una pieza; el bot responde con el libro.](../web/help/es/play.webp)
+![Haz clic o arrastra una pieza; el bot responde con el libro.](../web/help/es-419/play.webp)
 
 *Haz clic o arrastra una pieza; el bot responde con el libro.*
 
@@ -44,7 +44,7 @@ Chess Trainer es para entrenar: practica tus aperturas contra un bot que juega t
 - El cuadro bajo la lista de jugadas muestra el resultado, la variante, hasta dónde llegó la teoría y cada desviación con la jugada esperada.
 - Copia o descarga el PGN. Nueva partida empieza la siguiente con las mismas opciones.
 
-![Al final: resultado, variante, teoría y desviaciones.](../web/help/es/end.webp)
+![Al final: resultado, variante, teoría y desviaciones.](../web/help/es-419/end.webp)
 
 *Al final: resultado, variante, teoría y desviaciones.*
 
@@ -89,7 +89,7 @@ Recuerda: pieza tocada, pieza jugada. Para una experiencia aún mejor, grábate 
 
 Al final, rellena el resultado y las firmas, compara tu planilla con la lista de jugadas y el PGN, y busca las jugadas que anotaste mal.
 
-![Con la opción Mostrar jugadas desmarcada, la lista se oculta y anotas en la planilla.](../web/help/es/paper.webp)
+![Con la opción Mostrar jugadas desmarcada, la lista se oculta y anotas en la planilla.](../web/help/es-419/paper.webp)
 
 *Con la opción Mostrar jugadas desmarcada, la lista se oculta y anotas en la planilla.*
 
@@ -103,7 +103,7 @@ Al terminar una partida, revísala tú solo primero y busca dónde cambió. Solo
 - Jugar desde aquí empieza una nueva partida desde la posición del tablero.
 - Marca partidas para exportarlas en PGN o para borrarlas.
 
-![Revisando una partida guardada, con la barra de evaluación.](../web/help/es/review.webp)
+![Revisando una partida guardada, con la barra de evaluación.](../web/help/es-419/review.webp)
 
 *Revisando una partida guardada, con la barra de evaluación.*
 

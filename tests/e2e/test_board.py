@@ -132,7 +132,7 @@ def fake_api(
                 "result": "win",
                 "termination": "checkmate",
                 "variant_id": "fake",
-                "variant_names": {"en": "Fake line"},
+                "variant_names": {"en-US": "Fake line"},
                 "eco": "A00",
                 "opening": "Fake",
                 "total_plies": ply["value"],

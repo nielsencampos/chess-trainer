@@ -1,7 +1,7 @@
 // The Help, About and Scoresheet pages, shown in the board area in place of the board.
 // The scoresheet is an unofficial A4 sheet, for training only, printed from the browser.
 
-import { getLocale, localize, t } from "./i18n.js";
+import { DEFAULT_LOCALE, getLocale, localize, t } from "./i18n.js";
 
 const COLUMNS = 4;
 const ROWS = 30;
@@ -24,7 +24,7 @@ export function localizeHelpImages() {
   for (const image of document.querySelectorAll("img[data-help-img]")) {
     const name = image.getAttribute("data-help-img");
     image.addEventListener("error", () => {
-      const english = `help/en/${name}.webp`;
+      const english = `help/${DEFAULT_LOCALE}/${name}.webp`;
       if (!image.src.endsWith(english)) image.src = english;
     });
     localize(image, () => {

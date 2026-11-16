@@ -31,26 +31,26 @@ from catalog.translations import (
 
 FAMILY = {
     "id": "caro-kann-defense",
-    "names": {"en": "Caro-Kann Defense"},
+    "names": {"en-US": "Caro-Kann Defense"},
     "order": 1,
     "variants": [
         {
-            "names": {"en": "Panov Attack"},
+            "names": {"en-US": "Panov Attack"},
             "lines": [
                 {
                     "id": "line-0000000000000001",
-                    "names": {"en": "Panov Attack"},
+                    "names": {"en-US": "Panov Attack"},
                     "moves": ["e4", "c6", "d4", "d5", "exd5", "cxd5", "c4"],
                     "source": "test",
                 }
             ],
         },
         {
-            "names": {"en": "Advance Variation"},
+            "names": {"en-US": "Advance Variation"},
             "lines": [
                 {
                     "id": "line-0000000000000002",
-                    "names": {"en": "Advance Variation, Bayonet Attack"},
+                    "names": {"en-US": "Advance Variation, Bayonet Attack"},
                     "moves": ["e4", "c6", "d4", "d5", "e5", "Bf5", "g4"],
                     "source": "test",
                 }
@@ -60,7 +60,7 @@ FAMILY = {
     "lines": [
         {
             "id": "line-0000000000000003",
-            "names": {"en": "Hillbilly Attack"},
+            "names": {"en-US": "Hillbilly Attack"},
             "moves": ["e4", "c6", "Bc4"],
             "source": "test",
         }
@@ -237,11 +237,11 @@ def test_a_broader_article_names_only_its_own_opening(repo):
     """
     for family_id, english in (("king-s-pawn-game", "King's Pawn Game"), ("borg", "Borg Defense")):
         path = repo / "openings" / f"{family_id}.json"
-        document = {"id": family_id, "names": {"en": english}, "order": 2, "variants": []}
+        document = {"id": family_id, "names": {"en-US": english}, "order": 2, "variants": []}
         document["lines"] = [
             {
                 "id": f"line-{len(family_id):016x}",
-                "names": {"en": english},
+                "names": {"en-US": english},
                 "moves": ["e4", "g5"],
                 "source": "test",
             }
@@ -279,7 +279,7 @@ def test_a_reviewed_locale_of_the_same_wikipedia_is_followed(repo):
     (repo / "glossary" / "pt-PT.toml").write_text(GLOSSARY, encoding="utf-8")
     caro_kann = {**CARO_KANN, "sitelinks": {**CARO_KANN["sitelinks"], "ptwiki": "Defesa caro-kann"}}
     portugal = Locale("pt-PT", "ltr", ("latin",), None, (), False, "pt")
-    registry = {"en": locale(True), "pt-BR": locale(True), "pt-PT": portugal}
+    registry = {"en-US": locale(True), "pt-BR": locale(True), "pt-PT": portugal}
     fill_names(
         portugal,
         WikipediaCache(
@@ -434,10 +434,10 @@ def test_english_is_refused(repo):
     Args:
         repo (Path): The test folder.
     """
-    english = Locale("en", "ltr", ("latin",), None, (), True, "en")
+    english = Locale("en-US", "ltr", ("latin",), None, (), True, "en")
     with pytest.raises(ValueError):
         fill_names(english, WikipediaCache(repo / "wikipedia.json", None))
-    assert main(["en", "--offline"]) == 1
+    assert main(["en-US", "--offline"]) == 1
 
 
 @pytest.mark.parametrize(

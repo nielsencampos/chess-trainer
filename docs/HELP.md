@@ -2,7 +2,7 @@
 
 # How to use Chess Trainer
 
-[English (UK)](HELP.en-GB.md) · [Português (Brasil)](HELP.pt-BR.md) · [Español (Latinoamérica)](HELP.es.md) · [Español (España)](HELP.es-ES.md) · [Português (Portugal)](HELP.pt-PT.md) · [Deutsch](HELP.de.md) · [Français](HELP.fr.md) · [Italiano](HELP.it.md)
+[English (UK)](HELP.en-GB.md) · [Português (Brasil)](HELP.pt-BR.md) · [Español (Latinoamérica)](HELP.es-419.md) · [Español (España)](HELP.es-ES.md) · [Português (Portugal)](HELP.pt-PT.md) · [Deutsch](HELP.de.md) · [Français](HELP.fr.md) · [Italiano](HELP.it.md)
 
 Chess Trainer is for practice: drill your openings against a bot that plays your lines, keep playing against Stockfish when theory ends, and review your games. Everything runs and stays on your computer.
 
@@ -23,7 +23,7 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 - Time control: the presets of a real tournament clock, from bullet to classical, or no clock. The bot's response time is Human, which spends its clock like a person, or Instant.
 - Options: warn when you leave theory, allow premoves, and let the bot deviate from its line on purpose, from a chosen move, so you also train against surprises.
 
-![New Game: color, lines, level and clock.](../web/help/en/setup.webp)
+![New Game: color, lines, level and clock.](../web/help/en-US/setup.webp)
 
 *New Game: color, lines, level and clock.*
 
@@ -35,7 +35,7 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 - With premoves on, you can queue one move while the bot thinks. With premoves off, Take back undoes your last move while the bot's reply is not shown yet.
 - Resign asks for a second click, so a stray click does not end the game.
 
-![Click or drag a piece; the bot answers from the book.](../web/help/en/play.webp)
+![Click or drag a piece; the bot answers from the book.](../web/help/en-US/play.webp)
 
 *Click or drag a piece; the bot answers from the book.*
 
@@ -44,7 +44,7 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 - The card under the move list shows the result, the variation, how far theory went, and each deviation with the expected move.
 - Copy or download the PGN. New Game starts the next one with the same choices.
 
-![At the end: result, variation, theory and deviations.](../web/help/en/end.webp)
+![At the end: result, variation, theory and deviations.](../web/help/en-US/end.webp)
 
 *At the end: result, variation, theory and deviations.*
 
@@ -89,7 +89,7 @@ Remember: a piece you touch is a piece you move. For an even better experience, 
 
 At the end, fill in the result and the signatures, compare your sheet with the move list and the PGN, and look for the moves you wrote wrong.
 
-![With Show moves unticked, the move list hides, and you write on the scoresheet.](../web/help/en/paper.webp)
+![With Show moves unticked, the move list hides, and you write on the scoresheet.](../web/help/en-US/paper.webp)
 
 *With Show moves unticked, the move list hides, and you write on the scoresheet.*
 
@@ -103,7 +103,7 @@ When a game ends, review it on your own first and look for where it turned. Only
 - Play from here starts a new game from the position on the board.
 - Tick games to export them as PGN or to delete them.
 
-![Reviewing a saved game, with the evaluation bar.](../web/help/en/review.webp)
+![Reviewing a saved game, with the evaluation bar.](../web/help/en-US/review.webp)
 
 *Reviewing a saved game, with the evaluation bar.*
 

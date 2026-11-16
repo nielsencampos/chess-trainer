@@ -2,7 +2,10 @@
 // The language can change at any moment, mid-game included: everything on screen is drawn again
 // without reloading the page.
 
-const DEFAULT_LOCALE = "en";
+/** The fallback language, English (US). */
+export const DEFAULT_LOCALE = "en-US";
+/** Codes used before the region was part of them, as a browser may still have them saved. */
+const RENAMED = /** @type {Record<string, string>} */ ({ en: "en-US", es: "es-419" });
 
 /** @type {Record<string, string>} English, the fallback for any key a language lacks. */
 let fallback = {};
@@ -60,7 +63,7 @@ async function load(requested) {
  * @returns {Promise<void>}
  */
 export async function initI18n(requested = DEFAULT_LOCALE) {
-  await load(requested);
+  await load(RENAMED[requested] ?? requested);
   applyI18n(document);
 }
 

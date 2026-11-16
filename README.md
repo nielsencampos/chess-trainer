@@ -231,10 +231,10 @@ docker run -d --init --name chess-trainer -p 127.0.0.1:8000:8000 \
 ```
 
 **App de escritorio (vista previa):** la misma app en su propia ventana, sin Docker, para Windows,
-macOS y Linux. Para descargarla e instalarla, mira [HOW_TO_INSTALL.es.md](HOW_TO_INSTALL.es.md);
+macOS y Linux. Para descargarla e instalarla, mira [HOW_TO_INSTALL.es-419.md](HOW_TO_INSTALL.es-419.md);
 cómo se hace está en [desktop/](desktop/README.md). Docker sigue siendo la forma de referencia.
 
-**Guía completa**, con imágenes: [docs/HELP.es.md](docs/HELP.es.md), la misma que la pantalla de Ayuda de la app. Quién lo hizo y por qué: [docs/ABOUT.es.md](docs/ABOUT.es.md).
+**Guía completa**, con imágenes: [docs/HELP.es-419.md](docs/HELP.es-419.md), la misma que la pantalla de Ayuda de la app. Quién lo hizo y por qué: [docs/ABOUT.es-419.md](docs/ABOUT.es-419.md).
 
 **Cómo funciona:** elige el color y las líneas, entre las 3.865 del libro, con búsqueda por nombre,
 ECO o jugadas. Cada línea seleccionada tiene la misma probabilidad de salir, y el bot juega la línea

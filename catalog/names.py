@@ -520,12 +520,12 @@ def _items(documents: dict[Path, dict]) -> list[Item]:
     families: list[Item] = []
     others: list[Item] = []
     for document in documents.values():
-        family_id, family_en = document["id"], document["names"]["en"]
+        family_id, family_en = document["id"], document["names"][DEFAULT_LOCALE]
         families.append(
             Item(("families", (family_id,)), family_en, family_en, family_id, document["names"])
         )
         for variant in document.get("variants", []):
-            english = variant["names"]["en"]
+            english = variant["names"][DEFAULT_LOCALE]
             others.append(
                 Item(
                     ("subgroups", (family_id, english)),
@@ -551,7 +551,7 @@ def _line_item(line: dict, family_id: str, family_en: str) -> Item:
     Returns:
         Item: The name.
     """
-    english = line["names"]["en"]
+    english = line["names"][DEFAULT_LOCALE]
     return Item(
         ("lines", (line["id"],)), english, f"{family_en}, {english}", family_id, line["names"]
     )

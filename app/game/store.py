@@ -23,6 +23,7 @@ from app.game.session import (
     Selection,
     chess960_line,
 )
+from app.locales import DEFAULT_LOCALE
 
 GAME_LINE_PREFIX = "game:"
 
@@ -229,7 +230,7 @@ class GameStore:
         return Variant(
             variant_id=key,
             repertoire_id="saved-games",
-            names={"en": opening or "Saved game"},
+            names={DEFAULT_LOCALE: opening or "Saved game"},
             eco=eco,
             opening=opening,
             source=f"game {game_id}",
@@ -326,7 +327,7 @@ def removed_line(variant_id: str) -> Variant:
     return Variant(
         variant_id=variant_id,
         repertoire_id="",
-        names={"en": variant_id},
+        names={DEFAULT_LOCALE: variant_id},
         eco=None,
         opening=None,
         source="no longer in the book",

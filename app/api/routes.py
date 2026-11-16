@@ -164,7 +164,7 @@ async def repertoires(request: Request) -> dict:
                     GROUPS.index(item.group),
                     item.order is None,
                     item.order or 0,
-                    item.names.get("en", ""),
+                    item.names.get(DEFAULT_LOCALE, ""),
                 ),
             )
         ]

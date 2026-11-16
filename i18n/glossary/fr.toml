@@ -1,8 +1,8 @@
-# Chess glossary: French (brief §8). Machine-made and unreviewed: the terms of en.toml, each
+# Chess glossary: French (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
 # from the French Wikipedia (`source`) or, when no page names it, `machine = true` with a `note`.
 # `avoid` lists the words the UI must not use for the term. Each segment of an opening name is in
 # French sentence case and starts with a capital, as in the book's other languages ("Défense
-# sicilienne, Variante Najdorf"). Every glossary has the terms of en.toml (#32).
+# sicilienne, Variante Najdorf"). Every glossary has the terms of en-US.toml (#32).
 
 # English words of the opening names this language translates: a glossary rule never
 # keeps them as proper names, so names with one go to machine translation (brief §8).

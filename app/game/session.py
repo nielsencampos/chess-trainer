@@ -16,6 +16,7 @@ import chess.pgn
 
 from app.book.models import BookMove, Variant
 from app.game.pace import TimeControl
+from app.locales import DEFAULT_LOCALE
 
 Side = Literal["user", "bot"]
 MoveSource = Literal["book", "engine"] | None
@@ -63,7 +64,7 @@ def chess960_line(position: int) -> Variant:
     return Variant(
         variant_id=f"{CHESS960_PREFIX}{position}",
         repertoire_id="chess960",
-        names={"en": "Chess960"},
+        names={DEFAULT_LOCALE: "Chess960"},
         eco=None,
         opening=None,
         source=f"Chess960 position {position}",

@@ -267,7 +267,7 @@ def localized_names(files: list[OpeningFile], locale: str) -> dict[NameKey, str]
             names[("families", (opening_file.family_id,))] = opening_file.names[locale]
         for line in opening_file.lines:
             if line.subgroup and locale in line.subgroup:
-                key = (opening_file.family_id, line.subgroup["en"])
+                key = (opening_file.family_id, line.subgroup[DEFAULT_LOCALE])
                 names[("subgroups", key)] = line.subgroup[locale]
             if locale in line.names:
                 names[("lines", (line.line_id,))] = line.names[locale]

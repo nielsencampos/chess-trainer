@@ -64,7 +64,7 @@ def variant(variant_id, pgn):
     return Variant(
         variant_id=variant_id,
         repertoire_id="r",
-        names={"en": variant_id},
+        names={"en-US": variant_id},
         eco=None,
         opening=None,
         source="test",

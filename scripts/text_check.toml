@@ -24,7 +24,7 @@ all = [
     # The language links at the top of each document.
     "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch", "Français", "Italiano",
 ]
-en = [
+en-US = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
     "es", "pt", "cp", "arg", "pgn", "uci", "san", "epd", "db-migration", "Versão", "Versión", "abajo", "abaixo",
     # A quote of Mecking's nickname, kept in Portuguese.
@@ -71,7 +71,7 @@ pt-PT = [
     "python", "chess", "result",  # the names python-chess and @badrap/result
     "Searching", "for",  # the film's original title
 ]
-es = [
+es-419 = [
     "streamer", "streamers", "premovimiento", "premovimientos", "Premovimiento",
     "semiprofesional", "semiprofesionales", "desincroniza", "min", "US", "Em",
     "xadrez", "um", "mestre",
@@ -90,7 +90,7 @@ es-ES = [
 [disabled]
 # LanguageTool rule ids that do not fit this project, for every language or one of them.
 all = []
-en = [
+en-US = [
     "ENGLISH_WORD_REPEAT_BEGINNING_RULE",  # i18n strings are separate texts
     "PRP_COMMA", "MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE", "COMMA_COMPOUND_SENTENCE_2",
     "BY_DEFAULT_COMMA", "NO_COMMA_BEFORE_SO", "THE_SUPERLATIVE",  # optional commas and style
@@ -124,7 +124,7 @@ pt-PT = [
     "PT_WORDINESS_REPLACE_POR_CAUSA_DO", "PT_WORDINESS_REPLACE_A_NÃO_SER_QUE", "DEPOIS_DE_APÓS",
     "VERB_COMMA_CONJUNCTION",
 ]
-es = []
+es-419 = []
 es-ES = []
 de = []
 fr = [
@@ -139,7 +139,7 @@ it = []
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.
 # Fragments joined by the app (", +{seconds} s", "expected {expected}") and labels named in a
 # sentence read as errors on their own.
-en = [
+en-US = [
     { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
     { text = "expected", rule = "UPPERCASE_SENTENCE_START" },
     { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
@@ -173,7 +173,7 @@ pt-PT = [
     { text = "Português", rule = "GENTILICOS_LINGUAS" },  # the language links: Português (Brasil) · Português (Portugal)
     { text = "Italiano", rule = "GENTILICOS_LINGUAS" },  # the language links
 ]
-es = [
+es-419 = [
     { text = "se", rule = "UPPERCASE_SENTENCE_START" },
     { text = "s", rule = "SINGLE_CHARACTER" },
     { text = "partidas", rule = "AGREEMENT_POSTPONED_ADJ" },

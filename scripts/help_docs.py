@@ -16,7 +16,7 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-from app.locales import load_locales  # noqa: E402  (after the path to the repository)
+from app.locales import DEFAULT_LOCALE, load_locales  # noqa: E402  (after the path to the repository)
 
 WEB = ROOT / "web"
 DOCS = ROOT / "docs"
@@ -112,7 +112,7 @@ def doc_path(locale: str, page: str = "HELP") -> Path:
     Returns:
         Path: `docs/<page>.md` for English, `docs/<page>.<locale>.md` for the others.
     """
-    return DOCS / (f"{page}.md" if locale == "en" else f"{page}.{locale}.md")
+    return DOCS / (f"{page}.md" if locale == DEFAULT_LOCALE else f"{page}.{locale}.md")
 
 
 def _strings(locale: str) -> dict[str, str]:
@@ -124,7 +124,7 @@ def _strings(locale: str) -> dict[str, str]:
     Returns:
         dict[str, str]: Key -> text.
     """
-    english = json.loads((WEB / "i18n" / "en.json").read_text(encoding="utf-8"))
+    english = json.loads((WEB / "i18n" / f"{DEFAULT_LOCALE}.json").read_text(encoding="utf-8"))
     own = json.loads((WEB / "i18n" / f"{locale}.json").read_text(encoding="utf-8"))
     return {**english, **own}
 
@@ -195,7 +195,7 @@ def render(locale: str) -> str:
         elif kind == "figure":
             picture = WEB / "help" / locale / f"{key}.webp"
             if not picture.is_file():
-                picture = WEB / "help" / "en" / f"{key}.webp"
+                picture = WEB / "help" / DEFAULT_LOCALE / f"{key}.webp"
             caption = strings[f"help.fig.{key}"]
             relative = picture.relative_to(ROOT).as_posix()
             lines += ["", f"![{caption}](../{relative})", "", f"*{caption}*", ""]

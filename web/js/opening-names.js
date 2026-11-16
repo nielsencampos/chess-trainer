@@ -3,7 +3,7 @@
 // name, a separator and the line's name ("Sicilian Defense" + ": " + "Najdorf Variation", or
 // "Queen's Gambit" + " " + "Declined: Orthodox Defense"), so it is translated from their names.
 
-import { getLocale } from "./i18n.js";
+import { DEFAULT_LOCALE, getLocale } from "./i18n.js";
 
 /**
  * @typedef {{family: Record<string, string>, line: Record<string, string>}} NameParts
@@ -36,18 +36,20 @@ export function indexOpenings(repertoires) {
 export function openingName(name) {
   const locale = getLocale();
   const entry = parts.get(name);
-  if (!entry || locale === "en") return name;
+  if (!entry || locale === DEFAULT_LOCALE) return name;
   const { family, line } = entry;
-  if (name === line.en) return line[locale] ?? (name === family.en ? family[locale] : undefined) ?? name;
-  if (name === family.en) return family[locale] ?? name;
-  const fits = name.startsWith(family.en) && name.endsWith(line.en) &&
-    family.en.length + line.en.length < name.length;
+  const familyEn = family[DEFAULT_LOCALE];
+  const lineEn = line[DEFAULT_LOCALE];
+  if (name === lineEn) return line[locale] ?? (name === familyEn ? family[locale] : undefined) ?? name;
+  if (name === familyEn) return family[locale] ?? name;
+  const fits = name.startsWith(familyEn) && name.endsWith(lineEn) &&
+    familyEn.length + lineEn.length < name.length;
   if (!fits || !family[locale]) return name;
-  const separator = name.slice(family.en.length, name.length - line.en.length);
+  const separator = name.slice(familyEn.length, name.length - lineEn.length);
   if (line[locale]) return `${family[locale]}${separator}${line[locale]}`;
   // An untranslated line keeps its English name under the translated family, as in the tree,
   // unless the line's words are part of the family's ("Queen's Gambit Declined").
-  return separator === ": " || separator === ", " ? `${family[locale]}${separator}${line.en}` : name;
+  return separator === ": " || separator === ", " ? `${family[locale]}${separator}${lineEn}` : name;
 }
 
 /**
