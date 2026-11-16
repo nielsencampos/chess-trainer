@@ -16,6 +16,8 @@ project, and they are under GPL-3.0-only like the rest of it.
 | Familjen Grotesk | `web/fonts/` (the `latin`, `latin-ext` and `vietnamese` subsets, weights 400, 600 and 700) | Fontsource 5.3.0 | OFL-1.1 | The Familjen Grotesk Project Authors |
 | Commissioner | `web/fonts/` (the `cyrillic` subset, weights 400, 600 and 700) | Fontsource 5.3.0 | OFL-1.1 | The Commissioner Project Authors |
 | Noto Sans Devanagari | `web/fonts/` (the `devanagari` subset, weights 400, 600 and 700) | Fontsource 5.3.0 | OFL-1.1 | The Noto Project Authors |
+| Noto Sans Arabic | `web/fonts/` (the `arabic` subset, weights 400, 600 and 700) | Fontsource 5.3.0 | OFL-1.1 | The Noto Project Authors |
+| Noto Sans Hebrew | `web/fonts/` (the `hebrew` subset, weights 400, 600 and 700) | Fontsource 5.3.0 | OFL-1.1 | The Noto Project Authors |
 | JetBrains Mono | `web/fonts/` (the `latin`, `latin-ext`, `vietnamese` and `cyrillic` subsets, weights 400 and 700) | Fontsource 5.3.0 | OFL-1.1 | The JetBrains Mono Project Authors |
 | ponytail skills | `.claude/skills/ponytail*/` (Claude Code skills for development, not shipped in the image) | `DietrichGebert/ponytail` at `96608e0` | MIT (text below) | DietrichGebert |
 
