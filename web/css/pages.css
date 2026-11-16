@@ -21,6 +21,11 @@
   border-radius: 6px;
 }
 
+/* Only a language the author does not review says so (`/api/locales`, brief §8). */
+:root:not([data-unreviewed]) .unreviewed {
+  display: none;
+}
+
 .notice-bad {
   border-inline-start-color: var(--bad);
 }

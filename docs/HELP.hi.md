@@ -4,6 +4,8 @@
 
 [English (US)](HELP.md) · [English (UK)](HELP.en-GB.md) · [Português (Brasil)](HELP.pt-BR.md) · [Español (Latinoamérica)](HELP.es-419.md) · [Español (España)](HELP.es-ES.md) · [Português (Portugal)](HELP.pt-PT.md) · [Deutsch](HELP.de.md) · [Français](HELP.fr.md) · [Italiano](HELP.it.md) · [Türkçe](HELP.tr.md) · [Polski](HELP.pl.md) · [Nederlands](HELP.nl.md) · [Bahasa Indonesia](HELP.id.md) · [Tiếng Việt](HELP.vi.md) · [Svenska](HELP.sv.md) · [Dansk](HELP.da.md) · [Norsk bokmål](HELP.nb.md) · [Suomi](HELP.fi.md) · [Русский](HELP.ru.md) · [Українська](HELP.uk.md) · [中文（简体）](HELP.zh-CN.md) · [日本語](HELP.ja.md) · [한국어](HELP.ko.md) · [العربية](HELP.ar.md) · [فارسی](HELP.fa.md) · [עברית](HELP.he.md)
 
+> यह अनुवाद मशीन से किया गया है और इसकी समीक्षा नहीं हुई है। सुधारों का स्वागत है: [सुधार सुझाएँ](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=hi)
+
 Chess Trainer अभ्यास के लिए है: ऐसे बॉट के ख़िलाफ़ अपने उद्घाटनों का अभ्यास करें जो आपकी लाइनें खेलता है, सिद्धांत ख़त्म होने पर Stockfish के ख़िलाफ़ खेलते रहें, और अपने खेलों की समीक्षा करें। सब कुछ आपके कंप्यूटर पर चलता है और वहीं रहता है।
 
 > **इसका इस्तेमाल कभी धोखाधड़ी के लिए न करें**

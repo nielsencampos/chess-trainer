@@ -4,6 +4,8 @@
 
 [English (US)](HELP.md) · [English (UK)](HELP.en-GB.md) · [Português (Brasil)](HELP.pt-BR.md) · [Español (Latinoamérica)](HELP.es-419.md) · [Español (España)](HELP.es-ES.md) · [Português (Portugal)](HELP.pt-PT.md) · [Deutsch](HELP.de.md) · [Français](HELP.fr.md) · [Italiano](HELP.it.md) · [Türkçe](HELP.tr.md) · [Polski](HELP.pl.md) · [Nederlands](HELP.nl.md) · [Bahasa Indonesia](HELP.id.md) · [Tiếng Việt](HELP.vi.md) · [Svenska](HELP.sv.md) · [Dansk](HELP.da.md) · [Norsk bokmål](HELP.nb.md) · [Suomi](HELP.fi.md) · [Русский](HELP.ru.md) · [Українська](HELP.uk.md) · [हिन्दी](HELP.hi.md) · [中文（简体）](HELP.zh-CN.md) · [日本語](HELP.ja.md) · [العربية](HELP.ar.md) · [فارسی](HELP.fa.md) · [עברית](HELP.he.md)
 
+> 이 번역은 기계 번역이며 아직 검토되지 않았습니다. 수정 제안을 환영합니다: [수정 제안하기](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=ko)
+
 Chess Trainer는 연습용입니다. 내 라인을 두는 봇을 상대로 오프닝을 반복 연습하고, 이론이 끝나면 Stockfish를 상대로 계속 두고, 대국을 복기합니다. 모든 것이 내 컴퓨터에서 실행되고 내 컴퓨터에만 남습니다.
 
 > **부정행위에는 절대 쓰지 마세요**

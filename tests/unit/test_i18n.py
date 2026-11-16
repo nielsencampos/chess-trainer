@@ -174,3 +174,4 @@ def test_locales_endpoint_lists_the_files_english_first(client):
     assert body["default"] == "en-US"
     registry = load_locales()
     assert all(item["dir"] == registry[item["code"]].direction for item in body["locales"])
+    assert all(item["reviewed"] == registry[item["code"]].reviewed for item in body["locales"])

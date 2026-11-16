@@ -22,6 +22,8 @@ WEB = ROOT / "web"
 DOCS = ROOT / "docs"
 # Every UI language, in the registry's order; English first: it is docs/HELP.md.
 LOCALES = [code for code in load_locales() if (WEB / "i18n" / f"{code}.json").is_file()]
+# The Translation fix issue form; `language` is a field it can take prefilled.
+FIX_URL = "https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml"
 
 
 class _HelpOutline(HTMLParser):
@@ -145,6 +147,22 @@ def _other_languages(locale: str, page: str) -> str:
     )
 
 
+def unreviewed_notice(locale: str) -> list[str]:
+    """The notice of a machine-made, unreviewed language, as the Help and About pages show it.
+
+    Args:
+        locale (str): The language.
+
+    Returns:
+        list[str]: A quoted line and a blank one, or nothing when the author reviews it.
+    """
+    if load_locales()[locale].reviewed:
+        return []
+    strings = _strings(locale)
+    link = f"[{strings['notice.unreviewed.link']}]({FIX_URL}&language={locale})"
+    return [f"> {strings['notice.unreviewed']} {link}", ""]
+
+
 def _tidy(lines: list[str]) -> str:
     """Joins Markdown lines, with at most one blank line in a row and one final newline.
 
@@ -177,7 +195,7 @@ def render(locale: str) -> str:
     ]
     for kind, key in outline():
         if kind == "title":
-            lines += [f"# {strings[key]}", "", others, ""]
+            lines += [f"# {strings[key]}", "", others, "", *unreviewed_notice(locale)]
         elif kind == "para":
             lines += ["", strings[key], ""]
         elif kind == "notice-title":
@@ -340,7 +358,8 @@ def render_about(locale: str) -> str:
                 lines.append(_entry(entry, locale))
                 entry["done"] = True
         if kind == "title":
-            lines += [f"# {strings[str(value)]}", "", _other_languages(locale, "ABOUT"), ""]
+            others = _other_languages(locale, "ABOUT")
+            lines += [f"# {strings[str(value)]}", "", others, "", *unreviewed_notice(locale)]
         elif kind == "section":
             lines += ["", f"## {strings[str(value)]}", ""]
         elif kind == "para":

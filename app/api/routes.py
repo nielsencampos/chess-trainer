@@ -175,14 +175,14 @@ async def repertoires(request: Request) -> dict:
 async def locales(request: Request) -> dict:
     """`GET /api/locales`: the languages with a UI file in web/i18n, English first.
 
-    Each is named in its own language, with its text direction from the locale registry
-    (`ltr` when the registry has no entry for it).
+    Each is named in its own language, with its text direction and whether the author reviews
+    it, from the locale registry (`ltr` and unreviewed when the registry has no entry for it).
 
     Args:
         request (Request): The HTTP request, for the app's state.
 
     Returns:
-        dict: `locales` (code, name and `dir`) and the `default` code.
+        dict: `locales` (code, name, `dir` and `reviewed`) and the `default` code.
     """
     found = []
     for path in sorted(request.app.state.i18n_dir.glob("*.json")):
@@ -192,7 +192,8 @@ async def locales(request: Request) -> dict:
             continue  # A broken file is left out; the frontend falls back to English.
         entry = request.app.state.locales.get(path.stem)
         direction = entry.direction if entry else "ltr"
-        found.append({"code": path.stem, "name": name, "dir": direction})
+        reviewed = entry.reviewed if entry else False
+        found.append({"code": path.stem, "name": name, "dir": direction, "reviewed": reviewed})
     found.sort(key=lambda item: (item["code"] != DEFAULT_LOCALE, item["code"]))
     return {"locales": found, "default": DEFAULT_LOCALE}
 

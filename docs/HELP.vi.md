@@ -4,6 +4,8 @@
 
 [English (US)](HELP.md) · [English (UK)](HELP.en-GB.md) · [Português (Brasil)](HELP.pt-BR.md) · [Español (Latinoamérica)](HELP.es-419.md) · [Español (España)](HELP.es-ES.md) · [Português (Portugal)](HELP.pt-PT.md) · [Deutsch](HELP.de.md) · [Français](HELP.fr.md) · [Italiano](HELP.it.md) · [Türkçe](HELP.tr.md) · [Polski](HELP.pl.md) · [Nederlands](HELP.nl.md) · [Bahasa Indonesia](HELP.id.md) · [Svenska](HELP.sv.md) · [Dansk](HELP.da.md) · [Norsk bokmål](HELP.nb.md) · [Suomi](HELP.fi.md) · [Русский](HELP.ru.md) · [Українська](HELP.uk.md) · [हिन्दी](HELP.hi.md) · [中文（简体）](HELP.zh-CN.md) · [日本語](HELP.ja.md) · [한국어](HELP.ko.md) · [العربية](HELP.ar.md) · [فارسی](HELP.fa.md) · [עברית](HELP.he.md)
 
+> Bản dịch này được tạo bằng máy và chưa được duyệt lại. Rất hoan nghênh các góp ý sửa lỗi: [đề xuất sửa](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=vi)
+
 Chess Trainer dùng để luyện tập: luyện khai cuộc của bạn với một bot chơi theo các diễn biến của bạn, chơi tiếp với Stockfish khi hết lý thuyết, và xem lại các ván cờ của bạn. Mọi thứ chạy và ở lại trên máy tính của bạn.
 
 > **Đừng bao giờ dùng nó để gian lận**

@@ -4,6 +4,8 @@
 
 [English (US)](ABOUT.md) · [English (UK)](ABOUT.en-GB.md) · [Português (Brasil)](ABOUT.pt-BR.md) · [Español (Latinoamérica)](ABOUT.es-419.md) · [Español (España)](ABOUT.es-ES.md) · [Português (Portugal)](ABOUT.pt-PT.md) · [Deutsch](ABOUT.de.md) · [Italiano](ABOUT.it.md) · [Türkçe](ABOUT.tr.md) · [Polski](ABOUT.pl.md) · [Nederlands](ABOUT.nl.md) · [Bahasa Indonesia](ABOUT.id.md) · [Tiếng Việt](ABOUT.vi.md) · [Svenska](ABOUT.sv.md) · [Dansk](ABOUT.da.md) · [Norsk bokmål](ABOUT.nb.md) · [Suomi](ABOUT.fi.md) · [Русский](ABOUT.ru.md) · [Українська](ABOUT.uk.md) · [हिन्दी](ABOUT.hi.md) · [中文（简体）](ABOUT.zh-CN.md) · [日本語](ABOUT.ja.md) · [한국어](ABOUT.ko.md) · [العربية](ABOUT.ar.md) · [فارسی](ABOUT.fa.md) · [עברית](ABOUT.he.md)
 
+> Cette traduction a été faite automatiquement et n'a pas été relue. Les corrections sont les bienvenues : [proposer une correction](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=fr)
+
 ## Qui l'a fait
 
 Je suis Nielsen Campos : ingénieur données et backend, musicien semi-professionnel (presque amateur) et joueur d'échecs amateur (et je crois que je n'irai pas plus loin, ou peut-être que si, qui sait 😂).

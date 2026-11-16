@@ -4,6 +4,8 @@
 
 [English (US)](HELP.md) · [English (UK)](HELP.en-GB.md) · [Português (Brasil)](HELP.pt-BR.md) · [Español (Latinoamérica)](HELP.es-419.md) · [Español (España)](HELP.es-ES.md) · [Português (Portugal)](HELP.pt-PT.md) · [Deutsch](HELP.de.md) · [Italiano](HELP.it.md) · [Türkçe](HELP.tr.md) · [Polski](HELP.pl.md) · [Nederlands](HELP.nl.md) · [Bahasa Indonesia](HELP.id.md) · [Tiếng Việt](HELP.vi.md) · [Svenska](HELP.sv.md) · [Dansk](HELP.da.md) · [Norsk bokmål](HELP.nb.md) · [Suomi](HELP.fi.md) · [Русский](HELP.ru.md) · [Українська](HELP.uk.md) · [हिन्दी](HELP.hi.md) · [中文（简体）](HELP.zh-CN.md) · [日本語](HELP.ja.md) · [한국어](HELP.ko.md) · [العربية](HELP.ar.md) · [فارسی](HELP.fa.md) · [עברית](HELP.he.md)
 
+> Cette traduction a été faite automatiquement et n'a pas été relue. Les corrections sont les bienvenues : [proposer une correction](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=fr)
+
 Chess Trainer sert à s'entraîner : travaillez vos ouvertures contre un bot qui joue vos lignes, continuez contre Stockfish quand la théorie s'arrête et revoyez vos parties. Tout fonctionne et reste sur votre ordinateur.
 
 > **Ne l'utilisez jamais pour tricher**
