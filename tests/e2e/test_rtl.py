@@ -135,3 +135,27 @@ def test_a_right_to_left_language_loads_its_font(
         start,
     )
     assert font in loaded
+
+
+def test_review_playback_controls_stay_left_to_right_in_arabic(page: Page):
+    """First, previous, next and last read left to right in Arabic, like a media player's.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
+    page.goto("/")
+    page.locator("#locale-picker").select_option("ar")
+    expect(page.locator("html")).to_have_attribute("dir", "rtl")
+    page.locator("#tab-openings").click()
+    page.locator("#lines-search").fill("1. e4 c5 2. c3")
+    page.locator("#lines-tree .variant .view-button").first.click()
+    bar = page.locator("#review-bar")
+    expect(bar).to_have_attribute("data-ply", "3")
+    order = ["review-first", "review-prev", "review-next", "review-last"]
+    xs = [page.locator(f"#{name}").bounding_box()["x"] for name in order]
+    assert xs == sorted(xs), f"not left to right: {dict(zip(order, xs, strict=True))}"
+    # Close and flip mirror with the page: close sits at the far left of the bar.
+    close = page.locator("#review-close").bounding_box()["x"]
+    assert close < xs[0]
+    page.locator("#review-prev").click()
+    expect(bar).to_have_attribute("data-ply", "2")

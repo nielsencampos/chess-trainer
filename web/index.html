@@ -716,10 +716,15 @@
 
       <aside class="movebar">
         <div id="review-bar" class="review-bar" hidden>
-          <button id="review-first" class="button button-ghost" type="button" data-i18n-title="review.first">⏮</button>
-          <button id="review-prev" class="button button-ghost" type="button" data-i18n-title="review.prev">◀</button>
-          <button id="review-next" class="button button-ghost" type="button" data-i18n-title="review.next">▶</button>
-          <button id="review-last" class="button button-ghost" type="button" data-i18n-title="review.last">⏭</button>
+          <!-- Playback controls stay left to right in every language, like a media player's and
+               the arrow keys: first, previous, next, last. Not a mirroring bug: do not remove
+               dir="ltr" (brief §8, #37). Flip, play and close mirror with the rest. -->
+          <div class="review-nav" dir="ltr">
+            <button id="review-first" class="button button-ghost" type="button" data-i18n-title="review.first">⏮</button>
+            <button id="review-prev" class="button button-ghost" type="button" data-i18n-title="review.prev">◀</button>
+            <button id="review-next" class="button button-ghost" type="button" data-i18n-title="review.next">▶</button>
+            <button id="review-last" class="button button-ghost" type="button" data-i18n-title="review.last">⏭</button>
+          </div>
           <button id="review-flip" class="button button-ghost" type="button" data-i18n-title="review.flip">⇅</button>
           <button id="review-play" class="button button-ghost" type="button" data-i18n="review.play"></button>
           <button id="review-close" class="button button-ghost" type="button" data-i18n-title="review.close">✕</button>

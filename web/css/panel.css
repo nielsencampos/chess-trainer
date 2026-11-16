@@ -539,6 +539,12 @@
   gap: 4px;
 }
 
+/* First, previous, next, last: always left to right (#37). */
+.review-nav {
+  display: flex;
+  gap: 4px;
+}
+
 .movelist .move[data-ply] {
   cursor: pointer;
 }
