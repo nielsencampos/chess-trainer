@@ -190,7 +190,7 @@ jobs:
             prerelease=""
             case "$TAG" in *-*) prerelease="--prerelease" ;; esac
             url="https://github.com/$GITHUB_REPOSITORY/blob/$TAG"
-            notes="How to install: [English]($url/HOW_TO_INSTALL.md), [Português]($url/HOW_TO_INSTALL.pt-BR.md), [Español]($url/HOW_TO_INSTALL.es-419.md)."
+            notes="How to install: [HOW_TO_INSTALL.md]($url/HOW_TO_INSTALL.md), which links to the guide in every language of the app."
             gh release create "$TAG" --draft $prerelease --verify-tag \
               --title "Chess Trainer $TAG" --notes "$notes"
           fi
