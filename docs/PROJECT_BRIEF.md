@@ -265,7 +265,7 @@ Rules:
 - `languagetool`: its LanguageTool code for `scripts/check_text.py`. Left out, the language is skipped, not failed.
 - `vale`: the Vale styles for its UI strings in `scripts/vale.sh`, such as `["ChessTrainer", "PtBR", "UI"]`. Left out, the language is skipped.
 - `wikipedia`: the language code of its Wikipedia, for the opening names (`pt` for pt.wikipedia.org). Left out, the code's first part in lowercase (`pt-BR` → `pt`, `es-419` → `es`).
-- `wikipedia_variant`: the variant its Wikipedia shows titles in, for a Wikipedia that writes the language in more than one way: `zh-cn` for `zh-CN`, since zh.wikipedia's titles mix Traditional and Simplified Chinese. `catalog.names` then asks that Wikipedia for each article's title in the variant (cached with the lookups), links the article at the variant's path (`zh.wikipedia.org/zh-cn/…`) and takes no label of the bare language, which may be in another variant. Left out, titles are taken as they are.
+- `wikipedia_variant`: the variant its Wikipedia shows titles in, for a Wikipedia that writes its language in more than one way: `zh-cn` for `zh-CN`, since the Chinese Wikipedia's titles mix Traditional and Simplified Chinese. `catalog.names` then asks that Wikipedia for each article's title in the variant (cached with the lookups), links the article at the variant's path (`zh.wikipedia.org/zh-cn/…`) and takes no label of the bare language, which may be in another variant. Left out, titles are taken as they are.
 - `reviewed`: true when the author reviews it (`en-US`, `pt-BR`, `es-419`); false for a machine-translated language.
 
 A test fails when a `web/i18n` file has no entry, or an entry has no file. The app does not start with a bad registry.

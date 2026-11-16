@@ -298,7 +298,10 @@ def _link(link: dict[str, str], locale: str) -> str:
     lang = next((code for code in (wanted, "en", *titles) if link.get(f"data-wiki-{code}")), "")
     if not lang:
         return f"[{link['label']}]({link['href']})"
-    path = f"{lang}.wikipedia.org/wiki/{link[f'data-wiki-{lang}'].replace(' ', '_')}"
+    # A Wikipedia with variants (zh) shows the article in the locale's one, as web/js/pages.js.
+    entry = load_locales().get(locale)
+    variant = entry.wikipedia_variant if entry and lang == wanted else None
+    path = f"{lang}.wikipedia.org/{variant or 'wiki'}/{link[f'data-wiki-{lang}'].replace(' ', '_')}"
     return f"[{path}](https://{quote(path, safe='/()_,')})"
 
 
