@@ -3,7 +3,7 @@
 # The fallback is always `en-US` (English, US) and is not a field.
 #
 #   direction     "ltr" or "rtl": the page's `dir` for that language.
-#   scripts       the scripts its text needs, for the fonts: latin, latin-ext, cyrillic,
+#   scripts       the scripts its text needs, for the fonts: latin, latin-ext, vietnamese, cyrillic,
 #                 devanagari, cjk, arabic, hebrew.
 #   languagetool  its LanguageTool language code (scripts/check_text.py); left out, its texts
 #                 are skipped.

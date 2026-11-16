@@ -84,7 +84,7 @@ Design tokens (CSS custom properties), taken from the logo: the dark theme uses 
 | last move / selected | `rgba(246,246,105,.55)` / `.8` | same |
 
 - Logo and favicon: one icon, `web/logo.svg` (and `web/logo.png` for the touch icon), four board squares with C and T on the light diagonal and a pen and a clock on the dark one. It is drawn by hand in the Merida style, on its 50-unit grid and filling the square like a piece: C and T as black pieces (ink `#1f1a17`, white detail lines) on a small stepped base, a fountain pen and a stopwatch as white pieces with a soft shade. It shows as the favicon, and at a quarter of the width of the left bar, at its top.
-- Fonts (Google Fonts, vendored): Familjen Grotesk (UI), JetBrains Mono (clocks, move list, numbers).
+- Fonts (Google Fonts through Fontsource, vendored): Familjen Grotesk (UI), JetBrains Mono (clocks, move list, numbers), in the `latin`, `latin-ext` and `vietnamese` subsets. Each `@font-face` has its subset's `unicode-range`, so a page loads a subset only when its text needs it; the registry's `scripts` (§8) name the subsets a language needs, and a test checks that their ranges cover every letter of its UI file.
 - Theme follows `prefers-color-scheme`, with a manual override.
 - Clock takes the fill colors on the side to move and red under 20 s or 10% of the starting time, whichever is less.
 - Move list in scoresheet style: numbered rows, white and black columns, out-of-theory moves in `--warn`, the user's deviation in bold `--bad`. The header holds the notation quick switch, a sample move in the notation in use (§8).
@@ -261,7 +261,7 @@ Rules:
 
 **Locale registry** (`i18n/locales.toml`, outside `web/`, so it is not served, but it ships with the app). One table per locale, `[locales.<code>]`, with what differs per language as parameters:
 - `direction`: `ltr` or `rtl`. `/api/locales` returns it as each locale's `dir`.
-- `scripts`: the scripts its text needs, for the fonts: `latin`, `latin-ext`, `cyrillic`, `devanagari`, `cjk`, `arabic`, `hebrew`.
+- `scripts`: the scripts its text needs, for the fonts: `latin`, `latin-ext`, `vietnamese`, `cyrillic`, `devanagari`, `cjk`, `arabic`, `hebrew`.
 - `languagetool`: its LanguageTool code for `scripts/check_text.py`. Left out, the language is skipped, not failed.
 - `vale`: the Vale styles for its UI strings in `scripts/vale.sh`, such as `["ChessTrainer", "PtBR", "UI"]`. Left out, the language is skipped.
 - `wikipedia`: the language code of its Wikipedia, for the opening names (`pt` for pt.wikipedia.org). Left out, the code's first part in lowercase (`pt-BR` → `pt`, `es-419` → `es`).

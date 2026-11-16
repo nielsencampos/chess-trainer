@@ -13,7 +13,7 @@ from pathlib import Path
 DEFAULT_LOCALE = "en-US"
 REGISTRY_FILE = Path(__file__).parent.parent / "i18n" / "locales.toml"
 DIRECTIONS = ("ltr", "rtl")
-SCRIPTS = ("latin", "latin-ext", "cyrillic", "devanagari", "cjk", "arabic", "hebrew")
+SCRIPTS = ("latin", "latin-ext", "vietnamese", "cyrillic", "devanagari", "cjk", "arabic", "hebrew")
 FIELDS = {"direction", "scripts", "languagetool", "vale", "wikipedia", "reviewed"}
 
 
