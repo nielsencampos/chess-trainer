@@ -25,9 +25,11 @@ uv run ruff check . && uv run ruff format --check .
 uv run pytest
 uv run python -m catalog.validate
 uv run codespell
+scripts/languagetool.sh --background && uv run python scripts/check_text.py   # needs Java 17+
+scripts/vale.sh
 ```
 
-[CLAUDE.md](CLAUDE.md) lists the engine, image, browser and text checks. A change to the UI is
+CI runs these too. [CLAUDE.md](CLAUDE.md) lists the engine, image and browser checks. A change to the UI is
 tested in a browser at 1280x720, the smallest supported screen; say in the pull request what you
 tested.
 

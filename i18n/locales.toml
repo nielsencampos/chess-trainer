@@ -10,6 +10,8 @@
 #   vale          the Vale styles for its UI strings (scripts/vale.sh); left out, they are skipped.
 #   wikipedia     the language code of its Wikipedia, for the opening names (catalog/names.py);
 #                 left out, the code's first part in lowercase (pt-BR → pt, es-419 → es).
+#   wikipedia_variant  the variant that Wikipedia shows titles in, for one that writes the language
+#                 in more than one way (zh-cn for zh-CN); left out, titles are taken as they are.
 #   reviewed      true when the author reviews it; false for machine-translated languages.
 
 [locales.en-US]

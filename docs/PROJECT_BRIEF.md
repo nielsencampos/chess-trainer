@@ -4,7 +4,7 @@
 > **For contributors and AI agents:** read this file before changing anything. If something here is unclear or contradicts the code, ask before inventing.
 
 **Repository:** `chess-trainer` (public, GPL-3.0)
-**Description:** Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that follows the book and flags where you left theory, and review your games from PGN, Chess.com or Lichess with an evaluation bar. Chess960 included. English, Portuguese and Spanish, all in one Docker image, no accounts.
+**Description:** Opening trainer you run on your own computer: a bot plays your repertoire, Stockfish takes over when theory ends, and every game is saved to review. Real clocks, Chess960, PGN, Chess.com and Lichess import. Multilingual. Docker or desktop app, no accounts.
 **Topics:** `chess` `chess-trainer` `chess-openings` `chess960` `pgn` `stockfish` `python-chess` `fastapi` `duckdb` `docker` `claude`
 
 ---
@@ -27,7 +27,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 2. Split it into modules: Python backend, ES-module JavaScript frontend, book in JSON files loaded into DuckDB.
 3. Run with `docker compose up` from a single image containing Python, Stockfish and the frontend.
 4. Store the book and games in a local DuckDB file (no browser storage for data).
-5. UI and opening names in **English, Brazilian Portuguese (pt-BR) and Spanish (es)**, structured so new languages need no code changes.
+5. UI, opening names and docs in many languages (§8; 27 in 0.7.0), structured so a new language is data, not code.
 
 ## 3. Stack (decided)
 
@@ -42,7 +42,7 @@ It started as a personal single-file HTML prototype. This project rebuilds it fr
 | Container | Multi-stage Dockerfile + `docker-compose.yml` | Slim final image, non-root user, healthcheck |
 | Desktop | PyInstaller (one folder) + pywebview + platformdirs | `desktop/`, dependency group `desktop`. Linux uses pywebview's Qt backend (wheels, no system packages). Fixed port 47800, because UI preferences live in `localStorage`, which belongs to an origin |
 | Tests | pytest (backend), Playwright (browser flows) | |
-| CI | GitHub Actions: ruff, tests, repertoire validation, text checks (codespell on code, LanguageTool and Vale on the docs and UI strings, all run locally), image build; desktop builds on Linux, Windows and macOS (arm64 and Intel), uploaded to a draft Release on a `v*` tag; the image published to `ghcr.io/nielsencampos/chess-trainer` (amd64 and arm64) on the same tag; Dependabot weekly for uv, actions and the base image | `ci.yml`, `desktop.yml`, `image.yml`, `dependabot.yml` |
+| CI | GitHub Actions: ruff, tests, repertoire validation, text checks (codespell on code, LanguageTool and Vale on the docs and UI strings, which also run locally), image build; desktop builds on Linux, Windows and macOS (arm64 and Intel), uploaded to a draft Release on a `v*` tag; the image published to `ghcr.io/nielsencampos/chess-trainer` (amd64 and arm64) on the same tag; a weekly rebuild against the newest Stockfish; Dependabot weekly for uv and actions (the base image is named through an `ARG`, which Dependabot does not follow: `docker compose build --pull` updates it) | `ci.yml`, `desktop.yml`, `image.yml`, `weekly.yml`, `dependabot.yml` |
 
 ## 4. Required behavior
 
@@ -84,7 +84,7 @@ Design tokens (CSS custom properties), taken from the logo: the dark theme uses 
 | last move / selected | `rgba(246,246,105,.55)` / `.8` | same |
 
 - Logo and favicon: one icon, `web/logo.svg` (and `web/logo.png` for the touch icon), four board squares with C and T on the light diagonal and a pen and a clock on the dark one. It is drawn by hand in the Merida style, on its 50-unit grid and filling the square like a piece: C and T as black pieces (ink `#1f1a17`, white detail lines) on a small stepped base, a fountain pen and a stopwatch as white pieces with a soft shade. It shows as the favicon, and at a quarter of the width of the left bar, at its top.
-- Fonts (Google Fonts through Fontsource, vendored): Familjen Grotesk (UI), JetBrains Mono (clocks, move list, numbers), in the `latin`, `latin-ext` and `vietnamese` subsets, and JetBrains Mono also in `cyrillic`. Familjen Grotesk has no Cyrillic, so Commissioner (`cyrillic` subset, 400/600/700), next in the UI font stack, draws it (#34): its x-height and width are the closest to Familjen Grotesk, and Latin letters in a Cyrillic line still come from Familjen Grotesk. Neither font has Devanagari, so Noto Sans Devanagari (`devanagari` subset, 400/600/700) follows them in both the UI and the mono stacks (#35); Hindi keeps Western digits, which, like the Latin letters of a Hindi line, come from Familjen Grotesk and JetBrains Mono. Noto Sans Arabic (`arabic` subset, which has the Persian letters too) and Noto Sans Hebrew (`hebrew` subset), 400/600/700, follow it in both stacks for Arabic, Persian and Hebrew (#37), which keep Western digits as well. Each `@font-face` has its subset's `unicode-range`, so a page loads a subset only when its text needs it; the registry's `scripts` (§8) name the subsets a language needs, and a test checks that their ranges cover every letter of its UI file. A script Familjen Grotesk lacks gets a vendored font of its own under the SIL Open Font License in the same way, never a system font, so it looks the same on Linux, Windows and macOS; only a script whose fonts are too large to ship (CJK, tens of MB) uses a system-font chain. Chinese (`zh-CN`), Japanese (`ja`) and Korean (`ko`) do (#36): `tokens.css` gives each `:lang()` a `--font-cjk` chain, the macOS, Windows and Linux fonts in that order (PingFang SC, Microsoft YaHei, Noto Sans CJK SC; Hiragino Sans, Yu Gothic UI, Meiryo, Noto Sans CJK JP; Apple SD Gothic Neo, Malgun Gothic, Noto Sans CJK KR), after the vendored fonts in both stacks, so Latin letters and digits in a CJK line still come from Familjen Grotesk and JetBrains Mono. Han characters are drawn differently in each language, so the chain follows the page's `lang`, which `i18n.js` sets.
+- Fonts (Google Fonts through Fontsource, vendored): Familjen Grotesk (UI), JetBrains Mono (clocks, move list, numbers), in the `latin`, `latin-ext` and `vietnamese` subsets, and JetBrains Mono also in `cyrillic`. Familjen Grotesk has no Cyrillic, so Commissioner (`cyrillic` subset, 400/600/700), next in the UI font stack, draws it (#34): its x-height and width are the closest to Familjen Grotesk, and Latin letters in a Cyrillic line still come from Familjen Grotesk. Neither font has Devanagari, so Noto Sans Devanagari (`devanagari` subset, 400/600/700) follows them in both the UI and the mono stacks (#35); Hindi keeps Western digits, which, like the Latin letters of a Hindi line, come from Familjen Grotesk and JetBrains Mono. Noto Sans Arabic (`arabic` subset, which has the Persian letters too) and Noto Sans Hebrew (`hebrew` subset), 400/600/700, follow it in both stacks for Arabic, Persian and Hebrew (#37), which keep Western digits as well. Each `@font-face` has its subset's `unicode-range`, so a page loads a subset only when its text needs it; the registry's `scripts` (§8) name the subsets a language needs, and a test checks that their ranges cover every letter of its UI file. A script Familjen Grotesk lacks gets a vendored font of its own under the SIL Open Font License in the same way, never a system font, so it looks the same on Linux, Windows and macOS; only a script whose fonts are too large to ship (CJK, tens of MB) uses a system-font chain. Chinese (`zh-CN`), Japanese (`ja`) and Korean (`ko`) do (#36): `tokens.css` gives each `:lang()` a `--font-cjk` chain, the macOS, Windows and Linux fonts in that order (among others, PingFang SC, Microsoft YaHei, Noto Sans CJK SC; Hiragino Sans, Yu Gothic UI, Meiryo, Noto Sans CJK JP; Apple SD Gothic Neo, Malgun Gothic, Noto Sans CJK KR; the full chains are in `tokens.css`), after the vendored fonts in both stacks, so Latin letters and digits in a CJK line still come from Familjen Grotesk and JetBrains Mono. Han characters are drawn differently in each language, so the chain follows the page's `lang`, which `i18n.js` sets.
 - Theme follows `prefers-color-scheme`, with a manual override.
 - Clock takes the fill colors on the side to move and red under 20 s or 10% of the starting time, whichever is less.
 - Move list in scoresheet style: numbered rows, white and black columns, out-of-theory moves in `--warn`, the user's deviation in bold `--bad`. The header holds the notation quick switch, a sample move in the notation in use (§8).
@@ -95,25 +95,32 @@ Design tokens (CSS custom properties), taken from the logo: the dark theme uses 
 chess-trainer/
 ├── app/
 │   ├── main.py            # FastAPI: mounts the API and serves web/
-│   ├── api/               # routes: repertoires, games, import, lines, engine, health
+│   ├── api/               # routes.py: every /api route (repertoires, games, import, lines, locales, evaluate, health…)
 │   ├── book/              # opening files → DuckDB sync, book read from the database
-│   ├── game/              # variation draw, theory tracking, bot pace, final report
+│   ├── game/              # variation draw, theory tracking, bot pace, final report, imports, review, store
 │   ├── engine/            # Stockfish process, strength levels
-│   └── db/                # DuckDB connection, versioned SQL migrations
+│   ├── db/                # DuckDB connection, versioned SQL migrations
+│   └── locales.py         # the locale registry (§8)
 ├── openings/              # the book: one JSON per opening family (§6)
 ├── evals/                 # book.json: Stockfish's evaluation of every book position (§6)
 ├── catalog/               # pinned Lichess catalog, reference only: seed and validation (§6)
 ├── i18n/                  # locale registry, glossaries, sources of opening names, doc strings (§8), not served
 ├── data/                  # chess-trainer.duckdb, bind-mounted, not versioned (§7)
+├── desktop/               # launcher, PyInstaller spec, installers and icons (§1)
+├── docker/                # fetch_stockfish.py, for the image and the desktop build (§9)
+├── scripts/               # text checks, smoke tests, Help pictures and generated docs
 ├── web/
 │   ├── index.html
 │   ├── css/
 │   ├── js/                # board.js, clock.js, game.js, api.js, i18n.js, setup.js…
 │   ├── i18n/              # en-US.json, pt-BR.json, es-419.json and the other languages
 │   ├── help/              # Help pictures per locale, from scripts/help_media.py
+│   ├── fonts/             # vendored fonts (§4.1)
+│   ├── sounds/            # the author's recorded sounds (§4)
 │   └── pieces/            # Merida SVG pieces (license in THIRD_PARTY_LICENSES.md)
-├── docs/                  # this brief, HELP*.md and ABOUT*.md (generated) and other docs
+├── docs/                  # this brief, HELP*.md and ABOUT*.md (generated), SESSION_PROMPT.md (a prompt for AI assistants)
 ├── tests/                 # pytest + Playwright
+├── .github/               # CI workflows, Dependabot, issue templates
 ├── .claude/               # project skills: ponytail, ponytail-audit, ponytail-review (§10)
 ├── CLAUDE.md
 ├── Dockerfile
@@ -170,7 +177,7 @@ File format:
 - `eco` and `opening` are optional. `opening` is the exact catalog name of the line's final position and is validated against the catalog. A line we extended or imported drops it, or it fails validation.
 - `order` places a family within its group, from a curated list of well-known openings, not from measured popularity. `null` puts it under "Others".
 - `variants` are subgroups. `lines` directly in the family are its loose lines, shown under "Others".
-- Names in `pt-BR` and `es` were generated by rules and a glossary and have not been reviewed by a chess player. A name that could not be translated safely is left out and falls back to `en`. `catalog/validate.py` reports the coverage per locale.
+- Names in `pt-BR` and `es-419` were generated by rules and a glossary and have not been reviewed by a chess player. A name that could not be translated safely is left out and falls back to `en-US`. `catalog/validate.py` reports the coverage per locale.
 - Family names were checked on 2026-11-09 against the pt and es Wikipedia articles and their Wikidata labels, ignoring case (we keep title case): where an article exists its name is used, with three choices made by the user (Abertura Ruy López/Apertura Española, Sistema London, Abertura Viena). Families without an article were translated by rule, so every family now has both names. Wikipedia has almost no articles for subgroups and lines. On the same day every subgroup and line name still missing in pt-BR or es was filled by rule, segment by segment ("Classical Variation" → "Variação Clássica"/"Variante Clásica", proper names kept), and English words the first pass had left ("Variação Symmetrical") were translated, so every name now exists in all three languages. These rule names are unreviewed.
 - On 2026-11-15 (#29) `catalog.names` recorded where every pt-BR and es name came from (`i18n/names/`): Wikipedia where it gives the same name, the glossary's name rules, and `machine = true` for the names of the 2026-11-09 pass that neither reproduces (about two thirds), with a note saying so. English words that pass had left in about 200 names per language (Positional, Penguin, Fried Liver, Warsaw…) were translated, places in the form that language's Wikipedia uses. Where Wikipedia names a family for the same opening differently, the author took its name (Abertura Larsen, Abertura Sokolsky, Defesa Petroff, Defesa Berlinense…) and kept the name in the book where the article is broader; each kept one has a note. In Brazilian Portuguese, variation is "Variante" in the names too, as in the UI and the glossary.
 - In #32 the locale codes `en` and `es` became `en-US` and `es-419`, in the `names` of every `openings/` file too; no name changed.
@@ -223,7 +230,7 @@ Repertoire tables:
 - `book_evals` — epd, cp, mate, best, depth, loaded from `evals/book.json`; `book_eval_loads` — content_hash, engine, positions, loaded_at
 
 Game table:
-- `games` — one row per game, rewritten on every move: game_id (UTC timestamp to the microsecond plus a random part, such as `20261107131159012345-agjrbaghrbag-rkajgrjabgaa`), status (`active`/`finished`), started_at, ended_at, user_color, time_control, level, pace, variant_ids, current_variant_id, result, termination, in_theory, theory_until_ply, moves_json, deviations_json, user_clock_ms, bot_clock_ms, ui_json, pgn, eco, opening, app_version, engine_name, source (`app` or imported), white, black, content_hash (to find duplicates).
+- `games` — one row per game, rewritten on every move: game_id (UTC timestamp to the microsecond plus a random part, such as `20261107131159012345-agjrbaghrbag-rkajgrjabgaa`), status (`active`/`finished`), started_at, ended_at, user_color, time_control, level, pace, variant_ids, current_variant_id, result, termination, in_theory, theory_until_ply, moves_json, deviations_json, bot_deviation_json (migration 006), user_clock_ms, bot_clock_ms, ui_json, pgn, eco, opening, app_version, engine_name, source (`app` or imported), white, black, content_hash (to find duplicates).
 
 Migrations are tracked in `schema_migrations`. UI preferences are not in the database: they are kept per browser (`localStorage`).
 
@@ -233,7 +240,7 @@ Migrations are tracked in `schema_migrations`. UI preferences are not in the dat
 
 **PGN:** the Seven Tag Roster plus `ECO`, `Opening`, `TimeControl`, `Termination` and `VariantId`, with `[%clk]` on each move and deviations as comments. It can be copied or downloaded at the end of a game. The "Saved games" tab lists finished games with filters, and exports the selected ones into one PGN file, oldest first. It also deletes the selected ones for good, after a second click as for Resign; an active game cannot be deleted, only resigned.
 
-**Menu:** four buttons in the sidebar, hidden during a game: New Game, Saved Games, Openings and Import Game(s). New Game chooses how the game starts: Opening, Saved game or Chess960. Choosing the lines to train is part of New Game. Openings works like Saved Games: it searches the book's lines, opens one on the board to go through its moves, and exports the ticked ones as PGN. Nothing is played there, and what is ticked there has nothing to do with training.
+**Menu:** seven buttons in the sidebar, hidden during a game: New Game, Saved Games, Openings and Import Game(s), then the pages Scoresheet, Help and About (§4). New Game chooses how the game starts: Opening, Saved game or Chess960. Choosing the lines to train is part of New Game. Openings works like Saved Games: it searches the book's lines, opens one on the board to go through its moves, and exports the ticked ones as PGN. Nothing is played there, and what is ticked there has nothing to do with training.
 
 **Starting from a saved game:** pick a finished game and a move. "Train the line" makes it a one-line book, so the bot plays its moves, yours are checked and Stockfish takes over at the end. "From position" starts the board at that move against Stockfish. Chess960 games cannot be played from yet.
 
@@ -312,7 +319,7 @@ machine = true
 2. *The glossary*, segment by segment: the name is split at its commas, and every segment must be a glossary term or match a term with a `{name}` placeholder (`term = "{name} Variation"`, `translation = "Variante {name}"`), where `{name}` is a proper name kept as it is (`{name-}` keeps it with its words joined by hyphens, for compounds: `translation = "{name-}-Angriff"` gives "Max-Lange-Angriff"): capitalized words, none of them a glossary term, in the glossary's `translate` list or a label ending in a colon ("Accepted:"). Recorded as `rule = true`. The run lists the texts it kept as proper names, to catch English words the glossary lacks ("Symmetrical").
 3. *Machine translation.* What is left goes to `i18n/machine/{locale}.toml`, one entry per name with its `en` and an empty `name`. Once filled in, the next run moves each into `openings/` with `machine = true` and removes it from the file.
 
-A name with a `source`, and any name of a reviewed locale, is never replaced without `--overwrite`: the run only records an origin that gives exactly that name (Wikipedia ignoring case, or the glossary), and lists the names where Wikipedia differs (`DIFFERS`), for the author to decide. `en` is refused: it is the source of every name. Lookups are cached for every language at once in `i18n/wikipedia.json`, versioned, so a rerun needs no internet and gives the same result; `--offline` fails instead of looking up what the cache lacks.
+A name with a `source`, and any name of a reviewed locale, is never replaced without `--overwrite`: the run only records an origin that gives exactly that name (Wikipedia ignoring case, or the glossary), and lists the names where Wikipedia differs (`DIFFERS`), for the author to decide. `en-US` is refused: it is the source of every name. Lookups are cached for every language at once in `i18n/wikipedia.json`, versioned, so a rerun needs no internet and gives the same result; `--offline` fails instead of looking up what the cache lacks.
 
 Search in New Game and Openings matches a family, subgroup or line by its name as shown and by its English name. PGN `Opening` tags stay in English; the localized names are display only.
 
@@ -366,9 +373,9 @@ Search in New Game and Openings matches a family, subgroup or line by its name a
 1. **Foundation** (done): repo layout, Docker, FastAPI serving the frontend (built from §4/§4.1), the book in `openings/*.json` loaded into DuckDB, validation tests, the real Stockfish with provisional levels. *Done when: every item in §4 works in the browser at HD (1280x720) and larger.*
 2. **Data** (done): opening name on screen, recording of games, moves and deviations. UI preferences stay per browser.
 3. **Engine on the server** (done): native Stockfish. The levels in `app/engine/levels.toml` stay uncalibrated (see 1.0.0 below).
-4. **Languages** (done): en, pt-BR and es, language picker.
+4. **Languages** (done): en, pt-BR and es with a language picker; then 0.7.0 (epic #26): 27 languages, right-to-left layout, move notation per language, and the README and install guide in every language.
 5. **Desktop app** (proof of concept on Linux done; CI builds for Linux, Windows and macOS, the draft Release on a tag and `HOW_TO_INSTALL*.md` written, in every UI language since #58): signing later.
-6. **1.0.0** (scope decided 2026-11-10): recorded sounds, provided by the author, in place of the generated ones (done 2026-11-15); then the complete review of §10. Not planned, and kept as they are: starting a new game from a saved Chess960 game, measuring the bot levels, and a chess player's review of the pt-BR and es opening names.
+6. **1.0.0** (scope decided 2026-11-10): recorded sounds, provided by the author, in place of the generated ones (done 2026-11-15); then the complete review of §10. Not planned, and kept as they are: starting a new game from a saved Chess960 game, measuring the bot levels, and a chess player's review of the pt-BR and es-419 opening names.
 7. **Backlog:** opening-only drill mode, PDF report with diagrams. Take-back and sounds are built.
 
 ## 13. Working rules

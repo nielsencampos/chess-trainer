@@ -43,6 +43,8 @@ Testing:
 - Lint: uv run ruff check . && uv run ruff format --check .
 - Unit and API: uv run pytest
 - Book: uv run python -m catalog.validate
+- Spelling and text: uv run codespell; scripts/languagetool.sh --background && uv run python
+  scripts/check_text.py (needs Java 17+); scripts/vale.sh
 - Engine: scripts/extract-stockfish.sh, then STOCKFISH_PATH=.cache/stockfish uv run pytest -m engine
 - Image: scripts/smoke.sh chess-trainer:local
 - Browser: while the project is in development the app's data is disposable, so rebuild and

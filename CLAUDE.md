@@ -6,7 +6,8 @@ Stockfish takes over when theory ends. Python backend, plain-JS frontend, one Do
 **Read [docs/PROJECT_BRIEF.md](docs/PROJECT_BRIEF.md) before changing anything.** It is the
 spec: behavior (§4), visual design (§4.1), architecture (§5), repertoire rules (§6), database
 (§7), i18n (§8), engine (§9), phases (§12) and working rules (§13). If something is unclear or
-contradicts the code, ask instead of inventing.
+contradicts the code, ask instead of inventing. [docs/SESSION_PROMPT.md](docs/SESSION_PROMPT.md) is the
+prompt a contributor pastes at the start of a session with an AI assistant.
 
 ## Run
 
@@ -50,7 +51,8 @@ the smallest supported screen, and mobile is out of scope.
 
 - Code, identifiers, comments, commits and docs are in English.
 - User-facing text goes through i18n: `web/i18n/{locale}.json` keys, never hard-coded strings. The
-  README and the install guide are generated from `i18n/docs/` in every language; edit those, not the `.md`.
+  README and the install guide are generated from `i18n/docs/` in every language, and `docs/HELP*.md` and
+  `docs/ABOUT*.md` from the Help and About strings; edit those, not the `.md`.
   Per-locale settings live in `i18n/locales.toml`, chess terms in `i18n/glossary/`, and where each
   localized opening name came from in `i18n/names/` (brief §8). The fallback is always `en-US`.
 - PGN, imports, stored moves and `openings/*.json` are always English SAN, in every language. The
