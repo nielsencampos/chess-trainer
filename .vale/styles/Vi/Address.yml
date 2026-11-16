@@ -1,0 +1,9 @@
+# vi speaks to the reader as "bạn", never "quý vị", "ngài" or "mày".
+extends: existence
+message: "Use 'bạn' as the form of address, not '%s'."
+level: error
+ignorecase: true
+tokens:
+  - quý vị
+  - ngài
+  - mày

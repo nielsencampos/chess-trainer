@@ -1,0 +1,13 @@
+# pl speaks to the reader as "ty", never with the formal Pan, Pani or Państwo.
+extends: existence
+message: "Use 'ty' as the form of address, not '%s'."
+level: error
+ignorecase: false
+tokens:
+  - Pan
+  - Pana
+  - Panu
+  - Pani
+  - Państwo
+  - Państwa
+  - Państwu

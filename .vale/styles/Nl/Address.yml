@@ -1,0 +1,8 @@
+# nl speaks to the reader as "je" or "jij", never the formal "u" or "uw".
+extends: existence
+message: "Use 'je' as the form of address, not '%s'."
+level: error
+ignorecase: true
+tokens:
+  - u
+  - uw

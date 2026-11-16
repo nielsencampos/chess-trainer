@@ -1,0 +1,553 @@
+# Chess glossary: Vietnamese (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
+# from the Vietnamese Wikipedia (`source`) or, when no page names it, `machine = true` with a
+# `note`. `avoid` lists the words the UI must not use for the term. Each segment of an opening name
+# starts with a capital, the noun before the name ("Phòng thủ Sicilia"). The reader is addressed as
+# "bạn". Surnames stay as the book spells them ("Chigorin", "Najdorf") unless Wikipedia names the
+# opening. Every glossary has the terms of en-US.toml (#33).
+
+# English words of the opening names this language translates: a glossary rule never
+# keeps them as proper names, so names with one go to machine translation (brief §8).
+translate = [
+    "Accelerated", "Advance", "Aged", "Alien", "Amazon", "American", "Amsterdam", "Anderssen's",
+    "Apocalypse", "Arctic", "Argentine", "Argentinian", "Ark", "Arkhangelsk", "Armenian", "Attack",
+    "Australian", "Austrian", "Baltic", "Banker", "Basque", "Battery", "Bavarian", "Bayonet",
+    "Beginner's", "Belgrade", "Berlin", "Big", "Bird's", "Bishop", "Bishop's", "Blackmar's",
+    "Blockade", "Bouncing", "Brick", "Brigg's", "Brussels", "Budapest", "Bulgarian", "Carlsbad",
+    "Catalan", "Cavalry", "Center", "Central", "Chameleon", "Cheese", "Chelyabinsk", "Chinese",
+    "Clam", "Clamp", "Closed", "Cobra", "Cologne", "Compromised", "Copenhagen", "Corkscrew",
+    "Cormorant", "Counterthrust", "Crab", "Crawly", "Creepy", "Crocodile", "Czech", "Danish",
+    "Declined", "Defensive", "Deferred", "Delayed", "Development", "Doll", "Double", "Dracula",
+    "Dragon", "Dresden", "Drill", "Drunken", "Duck", "Dutch", "Dynamic", "East", "Edge",
+    "Edinburgh", "Elbow", "Elephant", "Endgame", "England", "English", "Exchange", "Fianchetto",
+    "Fingerslip", "Finnish", "First", "Fishing", "Flexible", "Florentine", "Fluid", "Forcing",
+    "Forgotten", "Four", "Fox", "French", "Fried", "From's", "Full", "Fully", "Geller's", "Gent",
+    "German", "Gibbon", "Giraffe", "Global", "Gossip", "Goteborg", "Great", "Hammer", "Hawk", "Hay",
+    "Head", "Hedgehog", "Hillbilly", "Hippopotamus", "Horsefly", "Hungarian", "Icelandic",
+    "Improved", "Indian", "Inner", "Intermezzo", "Irish", "Italian", "Kangaroo", "Kazakh", "Kiddie",
+    "King's", "Kingfisher", "Kingside", "Knight", "Knight's", "Knights", "Kramnik's", "Latvian",
+    "Lemming", "Leningrad", "Lesser", "Lion", "Lisbon", "Lithuanian", "Liver", "Lizard", "Lobster",
+    "London", "Long", "Lusophobe", "Mad", "Main", "Martian", "Meadow", "Mediterranean",
+    "Mengarini's", "Mexican", "Millennium", "Modern", "Mongoose", "Moscow", "Mosquito", "Napoleon",
+    "Neo", "Netherlands", "New", "Nightingale", "Noah's", "Normal", "Norwegian", "Novosibirsk",
+    "Old", "Open", "Original", "Orthodox", "Outflank", "Paleface", "Paris", "Patrick's", "Pawns",
+    "Penguin", "Perseus", "Petrov's", "Pin", "Podebrady", "Pole", "Polish", "Porcupine",
+    "Portuguese", "Positional", "Prague", "Primitive", "Provincial", "Pseudo", "Pterodactyl",
+    "Push", "Pyrenees", "Queen's", "Queenside", "Quiet", "Rare", "Rat", "Retreat", "Reversed",
+    "Romanian", "Rooks", "Russian", "Saragossa", "Scandinavian", "Schwarz's", "Scotch", "Second",
+    "Semi", "Seville", "Sharp", "Short", "Shuffle", "Shy", "Siberian", "Sicilian", "Simagin's",
+    "Simul", "Six", "Slav", "Slow", "Small", "Snail", "Snake", "Sodium", "Sokolov's", "Spanish",
+    "Spike", "Standard", "Stockholm", "Swap", "Swedish", "Swiss", "Symmetric", "Symmetrical",
+    "Symmetry", "Tashkent", "Three", "Timman's", "Toilet", "Tortoise", "Tour", "Traditional",
+    "Transpositional", "Two", "Ukrainian", "Ultra", "Ulysses", "Unicorn", "Valencia", "Valencian",
+    "Venezolana", "Venice", "Vienna", "Viennese", "Voronezh", "Vulture", "Warsaw", "Wasp", "West",
+    "Wild", "Wind", "Wing", "Woodchuck", "Wuss", "Yepishin's", "Yerevan", "Yugoslav", "Zurich",
+]
+
+[[terms]]
+term = "chess"
+translation = "cờ vua"
+source = "https://vi.wikipedia.org/wiki/Cờ_vua"
+
+[[terms]]
+term = "piece"
+translation = "quân cờ"
+source = "https://vi.wikipedia.org/wiki/Cờ_vua"
+
+[[terms]]
+term = "king"
+translation = "Vua"
+source = "https://vi.wikipedia.org/wiki/Vua_(cờ_vua)"
+
+[[terms]]
+term = "queen"
+translation = "Hậu"
+source = "https://vi.wikipedia.org/wiki/Hậu_(cờ_vua)"
+
+[[terms]]
+term = "rook"
+translation = "Xe"
+source = "https://vi.wikipedia.org/wiki/Xe_(cờ_vua)"
+
+[[terms]]
+term = "pawn"
+translation = "Tốt"
+source = "https://vi.wikipedia.org/wiki/Tốt_(cờ_vua)"
+
+[[terms]]
+term = "board"
+translation = "bàn cờ"
+source = "https://vi.wikipedia.org/wiki/Cờ_vua"
+
+[[terms]]
+term = "square"
+translation = "ô"
+source = "https://vi.wikipedia.org/wiki/Cờ_vua"
+
+[[terms]]
+term = "White"
+translation = "Trắng"
+source = "https://vi.wikipedia.org/wiki/Cờ_vua"
+note = "The players are \"Trắng\" and \"Đen\"."
+
+[[terms]]
+term = "Black"
+translation = "Đen"
+source = "https://vi.wikipedia.org/wiki/Cờ_vua"
+note = "The players are \"Trắng\" and \"Đen\"."
+
+[[terms]]
+term = "game"
+translation = "ván cờ"
+source = "https://vi.wikipedia.org/wiki/Cờ_vua"
+
+[[terms]]
+term = "move"
+translation = "nước đi"
+source = "https://vi.wikipedia.org/wiki/Cờ_vua"
+
+[[terms]]
+term = "ply"
+translation = "nửa nước"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "premove"
+translation = "đi trước"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "take back"
+translation = "đi lại"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "castling"
+translation = "nhập thành"
+source = "https://vi.wikipedia.org/wiki/Nhập_thành"
+
+[[terms]]
+term = "check"
+translation = "chiếu"
+source = "https://vi.wikipedia.org/wiki/Chiếu_(cờ_vua)"
+
+[[terms]]
+term = "checkmate"
+translation = "chiếu hết"
+source = "https://vi.wikipedia.org/wiki/Chiếu_hết_(cờ_vua)"
+
+[[terms]]
+term = "stalemate"
+translation = "hết nước đi"
+source = "https://vi.wikipedia.org/wiki/Hết_nước_đi_(cờ_vua)"
+
+[[terms]]
+term = "draw"
+translation = "hòa"
+source = "https://vi.wikipedia.org/wiki/Hòa_(cờ_vua)"
+
+[[terms]]
+term = "resign"
+translation = "đầu hàng"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "insufficient material"
+translation = "không đủ quân"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "lặp lại ba lần"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "fivefold repetition"
+translation = "lặp lại năm lần"
+machine = true
+note = "No Wikipedia page names it. Follows \"lặp lại ba lần\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "luật 50 nước"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "luật 75 nước"
+machine = true
+note = "No Wikipedia page names it. Follows \"luật 50 nước\"."
+
+[[terms]]
+term = "opening"
+translation = "khai cuộc"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "variation"
+translation = "biến"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "line"
+translation = "diễn biến"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "theory"
+translation = "lý thuyết"
+source = "https://vi.wikipedia.org/wiki/Lý_thuyết_cờ_vua"
+
+[[terms]]
+term = "book move"
+translation = "nước lý thuyết"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "deviation"
+translation = "chệch hướng"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "chương trình cờ vua"
+machine = true
+note = "No Wikipedia page names it."
+avoid = ["engine"]
+
+[[terms]]
+term = "computer"
+translation = "máy tính"
+source = "https://vi.wikipedia.org/wiki/Máy_tính"
+
+[[terms]]
+term = "evaluation"
+translation = "đánh giá"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "analysis"
+translation = "phân tích"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "nước đi xuất sắc"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "nước đi tốt nhất"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "nước đi rất hay"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "thiếu chính xác"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "sai lầm"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "bỏ lỡ"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "sai lầm nghiêm trọng"
+source = "https://vi.wikipedia.org/wiki/Sai_lầm_nghiêm_trọng_(cờ_vua)"
+
+[[terms]]
+term = "time control"
+translation = "thời gian thi đấu"
+source = "https://vi.wikipedia.org/wiki/Thời_gian_thi_đấu"
+
+[[terms]]
+term = "chess clock"
+translation = "đồng hồ cờ vua"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "increment"
+translation = "thời gian cộng thêm"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "delay"
+translation = "thời gian trễ"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "bullet"
+translation = "bullet"
+source = "https://vi.wikipedia.org/wiki/Cờ_nhanh"
+note = "The article covers bullet too."
+
+[[terms]]
+term = "blitz"
+translation = "cờ chớp"
+source = "https://vi.wikipedia.org/wiki/Cờ_nhanh"
+
+[[terms]]
+term = "rapid"
+translation = "cờ nhanh"
+source = "https://vi.wikipedia.org/wiki/Cờ_nhanh"
+
+[[terms]]
+term = "classical"
+translation = "cờ tiêu chuẩn"
+machine = true
+note = "No Wikipedia page; a group of time controls in New Game."
+
+[[terms]]
+term = "scoresheet"
+translation = "biên bản ván cờ"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "arbiter"
+translation = "trọng tài"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "rating"
+translation = "hệ số Elo"
+source = "https://vi.wikipedia.org/wiki/Hệ_thống_đánh_giá_Elo"
+
+[[terms]]
+term = "grandmaster"
+translation = "Đại kiện tướng"
+source = "https://vi.wikipedia.org/wiki/Đại_kiện_tướng_(cờ_vua)"
+
+[[terms]]
+term = "International Master"
+translation = "Kiện tướng Quốc tế"
+source = "https://vi.wikipedia.org/wiki/Danh_hiệu_FIDE"
+
+[[terms]]
+term = "Woman International Master"
+translation = "Kiện tướng Quốc tế nữ"
+source = "https://vi.wikipedia.org/wiki/Danh_hiệu_FIDE"
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "Kiện tướng FIDE nữ"
+source = "https://vi.wikipedia.org/wiki/Danh_hiệu_FIDE"
+
+[[terms]]
+term = "Chess960"
+translation = "Chess960"
+source = "https://vi.wikipedia.org/wiki/Chess960"
+
+[[terms]]
+term = "correspondence chess"
+translation = "cờ thư tín"
+source = "https://vi.wikipedia.org/wiki/Cờ_thư_tín"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "Olympiad Cờ vua"
+source = "https://vi.wikipedia.org/wiki/Olympiad_Cờ_vua"
+
+[[terms]]
+term = "touch-move rule"
+translation = "luật chạm quân"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "capture"
+translation = "ăn quân"
+source = "https://vi.wikipedia.org/wiki/Thuật_ngữ_cờ_vua"
+
+[[terms]]
+term = "tactics"
+translation = "chiến thuật"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "strategy"
+translation = "chiến lược"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "sacrifice"
+translation = "thí quân"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "trap"
+translation = "bẫy"
+source = "https://vi.wikipedia.org/wiki/Danh_sách_bẫy_trong_cờ_vua"
+
+[[terms]]
+term = "gambit"
+translation = "gambit"
+source = "https://vi.wikipedia.org/wiki/Gambit"
+
+[[terms]]
+term = "King's Pawn"
+translation = "Tốt Vua"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "Tốt Hậu"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "flank"
+translation = "cánh"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "starting position"
+translation = "thế cờ ban đầu"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "thần đồng cờ vua"
+source = "https://vi.wikipedia.org/wiki/Thần_đồng_cờ_vua"
+
+[[terms]]
+term = "{name} Variation"
+translation = "Phương án {name}"
+source = "https://vi.wikipedia.org/wiki/Phòng_thủ_Sicilia,_Phương_án_con_rồng"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Defense"
+translation = "Phòng thủ {name}"
+source = "https://vi.wikipedia.org/wiki/Phòng_thủ_Caro-Kann"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "Gambit {name}"
+source = "https://vi.wikipedia.org/wiki/Gambit_Hậu"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "Phản gambit {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Attack"
+translation = "Tấn công {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "Phản công {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Opening"
+translation = "Khai cuộc {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} System"
+translation = "Hệ thống {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Line"
+translation = "Diễn biến {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Formation"
+translation = "Thế trận {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Trap"
+translation = "Bẫy {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "Main Line"
+translation = "Phương án chính"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8);"
+
+[[pieces]]
+piece = "K"
+letter = "V"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "Q"
+letter = "H"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "R"
+letter = "X"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "B"
+letter = "T"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "N"
+letter = "M"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "P"
+letter = "Tốt"
+machine = true
+note = "The table gives no letter for the pawn (tốt); SAN never writes it: a pawn move is only its square."

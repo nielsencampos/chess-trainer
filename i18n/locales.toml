@@ -85,3 +85,42 @@ scripts = ["latin"]
 languagetool = "it"
 vale = ["ChessTrainer", "It", "GlossaryIt", "UI"]
 reviewed = false
+
+# Turkish: machine-made, unreviewed, addressing the reader as "siz". LanguageTool has no Turkish.
+[locales.tr]
+direction = "ltr"
+scripts = ["latin", "latin-ext"]
+vale = ["ChessTrainer", "Tr", "GlossaryTr", "UI"]
+reviewed = false
+
+# Polish: machine-made, unreviewed, addressing the reader as "ty".
+[locales.pl]
+direction = "ltr"
+scripts = ["latin", "latin-ext"]
+languagetool = "pl-PL"
+vale = ["ChessTrainer", "Pl", "GlossaryPl", "UI"]
+reviewed = false
+
+# Dutch: machine-made, unreviewed, addressing the reader as "je".
+[locales.nl]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "nl"
+vale = ["ChessTrainer", "Nl", "GlossaryNl", "UI"]
+reviewed = false
+
+# Indonesian: machine-made, unreviewed, addressing the reader as "Anda". LanguageTool has no
+# Indonesian.
+[locales.id]
+direction = "ltr"
+scripts = ["latin"]
+vale = ["ChessTrainer", "Id", "GlossaryId", "UI"]
+reviewed = false
+
+# Vietnamese: machine-made, unreviewed, addressing the reader as "bạn". LanguageTool has no
+# Vietnamese.
+[locales.vi]
+direction = "ltr"
+scripts = ["latin", "latin-ext", "vietnamese"]
+vale = ["ChessTrainer", "Vi", "GlossaryVi", "UI"]
+reviewed = false

@@ -1,0 +1,550 @@
+# Chess glossary: Turkish (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
+# from the Turkish Wikipedia (`source`) or, when no page names it, `machine = true` with a `note`.
+# `avoid` lists the words the UI must not use for the term. Each segment of an opening name keeps
+# the book's title case, the noun after the name with its Turkish suffix ("Caro-Kann Savunması").
+# The reader is addressed as "siz". Surnames stay as the book spells them ("Chigorin", "Najdorf")
+# unless Wikipedia names the opening. Every glossary has the terms of en-US.toml (#33).
+
+# English words of the opening names this language translates: a glossary rule never
+# keeps them as proper names, so names with one go to machine translation (brief §8).
+translate = [
+    "Accelerated", "Advance", "Aged", "Alien", "Amazon", "American", "Amsterdam", "Anderssen's",
+    "Apocalypse", "Arctic", "Argentine", "Argentinian", "Ark", "Arkhangelsk", "Armenian", "Attack",
+    "Australian", "Austrian", "Baltic", "Banker", "Basque", "Battery", "Bavarian", "Bayonet",
+    "Beginner's", "Belgrade", "Berlin", "Big", "Bird's", "Bishop", "Bishop's", "Blackmar's",
+    "Blockade", "Bouncing", "Brick", "Brigg's", "Brussels", "Budapest", "Bulgarian", "Carlsbad",
+    "Catalan", "Cavalry", "Center", "Central", "Chameleon", "Cheese", "Chelyabinsk", "Chinese",
+    "Clam", "Clamp", "Closed", "Cobra", "Cologne", "Compromised", "Copenhagen", "Corkscrew",
+    "Cormorant", "Counterthrust", "Crab", "Crawly", "Creepy", "Crocodile", "Czech", "Danish",
+    "Declined", "Defensive", "Deferred", "Delayed", "Development", "Doll", "Double", "Dracula",
+    "Dragon", "Dresden", "Drill", "Drunken", "Duck", "Dutch", "Dynamic", "East", "Edge",
+    "Edinburgh", "Elbow", "Elephant", "Endgame", "England", "English", "Exchange", "Fianchetto",
+    "Fingerslip", "Finnish", "First", "Fishing", "Flexible", "Florentine", "Fluid", "Forcing",
+    "Forgotten", "Four", "Fox", "French", "Fried", "From's", "Full", "Fully", "Geller's", "Gent",
+    "German", "Gibbon", "Giraffe", "Global", "Gossip", "Goteborg", "Great", "Hammer", "Hawk", "Hay",
+    "Head", "Hedgehog", "Hillbilly", "Hippopotamus", "Horsefly", "Hungarian", "Icelandic",
+    "Improved", "Indian", "Inner", "Intermezzo", "Irish", "Italian", "Kangaroo", "Kazakh", "Kiddie",
+    "King's", "Kingfisher", "Kingside", "Knight", "Knight's", "Knights", "Kramnik's", "Latvian",
+    "Lemming", "Leningrad", "Lesser", "Lion", "Lisbon", "Lithuanian", "Liver", "Lizard", "Lobster",
+    "London", "Long", "Lusophobe", "Mad", "Main", "Martian", "Meadow", "Mediterranean",
+    "Mengarini's", "Mexican", "Millennium", "Modern", "Mongoose", "Moscow", "Mosquito", "Napoleon",
+    "Neo", "Netherlands", "New", "Nightingale", "Noah's", "Normal", "Norwegian", "Novosibirsk",
+    "Old", "Open", "Original", "Orthodox", "Outflank", "Paleface", "Paris", "Patrick's", "Pawns",
+    "Penguin", "Perseus", "Petrov's", "Pin", "Podebrady", "Pole", "Polish", "Porcupine",
+    "Portuguese", "Positional", "Prague", "Primitive", "Provincial", "Pseudo", "Pterodactyl",
+    "Push", "Pyrenees", "Queen's", "Queenside", "Quiet", "Rare", "Rat", "Retreat", "Reversed",
+    "Romanian", "Rooks", "Russian", "Saragossa", "Scandinavian", "Schwarz's", "Scotch", "Second",
+    "Semi", "Seville", "Sharp", "Short", "Shuffle", "Shy", "Siberian", "Sicilian", "Simagin's",
+    "Simul", "Six", "Slav", "Slow", "Small", "Snail", "Snake", "Sodium", "Sokolov's", "Spanish",
+    "Spike", "Standard", "Stockholm", "Swap", "Swedish", "Swiss", "Symmetric", "Symmetrical",
+    "Symmetry", "Tashkent", "Three", "Timman's", "Toilet", "Tortoise", "Tour", "Traditional",
+    "Transpositional", "Two", "Ukrainian", "Ultra", "Ulysses", "Unicorn", "Valencia", "Valencian",
+    "Venezolana", "Venice", "Vienna", "Viennese", "Voronezh", "Vulture", "Warsaw", "Wasp", "West",
+    "Wild", "Wind", "Wing", "Woodchuck", "Wuss", "Yepishin's", "Yerevan", "Yugoslav", "Zurich",
+]
+
+[[terms]]
+term = "chess"
+translation = "satranç"
+source = "https://tr.wikipedia.org/wiki/Satranç"
+
+[[terms]]
+term = "piece"
+translation = "taş"
+source = "https://tr.wikipedia.org/wiki/Satranç_taşı"
+
+[[terms]]
+term = "king"
+translation = "şah"
+source = "https://tr.wikipedia.org/wiki/Şah_(satranç)"
+
+[[terms]]
+term = "queen"
+translation = "vezir"
+source = "https://tr.wikipedia.org/wiki/Vezir_(satranç)"
+avoid = ["kraliçe"]
+
+[[terms]]
+term = "rook"
+translation = "kale"
+source = "https://tr.wikipedia.org/wiki/Kale_(satranç)"
+
+[[terms]]
+term = "pawn"
+translation = "piyon"
+source = "https://tr.wikipedia.org/wiki/Piyon"
+
+[[terms]]
+term = "board"
+translation = "satranç tahtası"
+source = "https://tr.wikipedia.org/wiki/Satranç_tahtası"
+
+[[terms]]
+term = "square"
+translation = "kare"
+source = "https://tr.wikipedia.org/wiki/Satranç_tahtası"
+
+[[terms]]
+term = "White"
+translation = "Beyaz"
+source = "https://tr.wikipedia.org/wiki/Satranç"
+note = "The players are \"Beyaz\" and \"Siyah\"."
+
+[[terms]]
+term = "Black"
+translation = "Siyah"
+source = "https://tr.wikipedia.org/wiki/Satranç"
+note = "The players are \"Beyaz\" and \"Siyah\"."
+
+[[terms]]
+term = "game"
+translation = "oyun"
+machine = true
+note = "No Wikipedia page names it. \"Oyun\" for one game, as Turkish chess sites use it."
+
+[[terms]]
+term = "move"
+translation = "hamle"
+source = "https://tr.wikipedia.org/wiki/Satranç_kuralları"
+avoid = ["hareket"]
+
+[[terms]]
+term = "ply"
+translation = "yarım hamle"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "premove"
+translation = "ön hamle"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "take back"
+translation = "hamleyi geri al"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "castling"
+translation = "rok"
+source = "https://tr.wikipedia.org/wiki/Rok"
+
+[[terms]]
+term = "check"
+translation = "şah"
+source = "https://tr.wikipedia.org/wiki/Şah_çekmek"
+note = "The article is \"Şah çekmek\", to give check; the check itself is \"şah\"."
+
+[[terms]]
+term = "checkmate"
+translation = "mat"
+source = "https://tr.wikipedia.org/wiki/Mat"
+
+[[terms]]
+term = "stalemate"
+translation = "pat"
+source = "https://tr.wikipedia.org/wiki/Pat"
+
+[[terms]]
+term = "draw"
+translation = "beraberlik"
+source = "https://tr.wikipedia.org/wiki/Beraberlik_(satranç)"
+
+[[terms]]
+term = "resign"
+translation = "terk etmek"
+machine = true
+note = "No Wikipedia page names it. The word of the Turkish Lichess."
+
+[[terms]]
+term = "insufficient material"
+translation = "yetersiz materyal"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "üç konum tekrarı"
+source = "https://tr.wikipedia.org/wiki/Üç_konum_tekrarı"
+
+[[terms]]
+term = "fivefold repetition"
+translation = "beş konum tekrarı"
+machine = true
+note = "No Wikipedia page names it. Follows \"üç konum tekrarı\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "elli hamle kuralı"
+source = "https://tr.wikipedia.org/wiki/Elli_hamle_kuralı"
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "yetmiş beş hamle kuralı"
+machine = true
+note = "No Wikipedia page names it. Follows \"elli hamle kuralı\"."
+
+[[terms]]
+term = "opening"
+translation = "açılış"
+source = "https://tr.wikipedia.org/wiki/Satranç_açılışı"
+
+[[terms]]
+term = "variation"
+translation = "varyant"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "line"
+translation = "hat"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "theory"
+translation = "teori"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "book move"
+translation = "teori hamlesi"
+machine = true
+note = "No Wikipedia page names it. \"Kitap hamlesi\" is a calque."
+avoid = ["kitap hamlesi"]
+
+[[terms]]
+term = "deviation"
+translation = "sapma"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "satranç motoru"
+source = "https://tr.wikipedia.org/wiki/Satranç_motoru"
+
+[[terms]]
+term = "computer"
+translation = "bilgisayar"
+source = "https://tr.wikipedia.org/wiki/Bilgisayar"
+
+[[terms]]
+term = "evaluation"
+translation = "değerlendirme"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "analysis"
+translation = "analiz"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "parlak hamle"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "en iyi hamle"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "harika hamle"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "yanlışlık"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "hata"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "kaçırılan fırsat"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "büyük hata"
+machine = true
+note = "No Wikipedia page names it. The word of the Turkish Lichess."
+
+[[terms]]
+term = "time control"
+translation = "zaman kontrolü"
+source = "https://tr.wikipedia.org/wiki/Zaman_kontrolü"
+
+[[terms]]
+term = "chess clock"
+translation = "satranç saati"
+source = "https://tr.wikipedia.org/wiki/Satranç_saati"
+
+[[terms]]
+term = "increment"
+translation = "artış"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "delay"
+translation = "gecikme"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "bullet"
+translation = "bullet"
+source = "https://tr.wikipedia.org/wiki/Hızlı_satranç"
+note = "The article covers bullet too."
+
+[[terms]]
+term = "blitz"
+translation = "blitz"
+source = "https://tr.wikipedia.org/wiki/Hızlı_satranç"
+
+[[terms]]
+term = "rapid"
+translation = "rapid"
+source = "https://tr.wikipedia.org/wiki/Hızlı_satranç"
+
+[[terms]]
+term = "classical"
+translation = "klasik"
+machine = true
+note = "No Wikipedia page; a group of time controls in New Game."
+
+[[terms]]
+term = "scoresheet"
+translation = "hamle kâğıdı"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "arbiter"
+translation = "hakem"
+source = "https://tr.wikipedia.org/wiki/Hakem_(satranç)"
+
+[[terms]]
+term = "rating"
+translation = "Elo puanı"
+source = "https://tr.wikipedia.org/wiki/Elo_sıralama_sistemi"
+
+[[terms]]
+term = "grandmaster"
+translation = "büyükusta"
+source = "https://tr.wikipedia.org/wiki/Büyükusta_(satranç)"
+
+[[terms]]
+term = "International Master"
+translation = "Uluslararası Usta"
+source = "https://tr.wikipedia.org/wiki/FIDE_ünvanları"
+
+[[terms]]
+term = "Woman International Master"
+translation = "Kadın Uluslararası Usta"
+source = "https://tr.wikipedia.org/wiki/FIDE_ünvanları"
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "Kadın FIDE Ustası"
+source = "https://tr.wikipedia.org/wiki/FIDE_ünvanları"
+
+[[terms]]
+term = "Chess960"
+translation = "Chess960"
+source = "https://tr.wikipedia.org/wiki/Satranç960"
+note = "Wikipedia's title is \"Satranç960\"; Chess960 is the mode's name in the app."
+
+[[terms]]
+term = "correspondence chess"
+translation = "yazışmalı satranç"
+source = "https://tr.wikipedia.org/wiki/Yazışmalı_satranç"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "Satranç Olimpiyatı"
+source = "https://tr.wikipedia.org/wiki/Satranç_Olimpiyatı"
+
+[[terms]]
+term = "touch-move rule"
+translation = "dokunulan taşı oynama kuralı"
+source = "https://tr.wikipedia.org/wiki/Dokunulan_taşı_oynama_kuralı"
+
+[[terms]]
+term = "capture"
+translation = "alma"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "tactics"
+translation = "taktik"
+source = "https://tr.wikipedia.org/wiki/Satranç_taktiği"
+
+[[terms]]
+term = "strategy"
+translation = "strateji"
+source = "https://tr.wikipedia.org/wiki/Satranç_stratejisi"
+
+[[terms]]
+term = "sacrifice"
+translation = "feda"
+source = "https://tr.wikipedia.org/wiki/Feda_(satranç)"
+
+[[terms]]
+term = "trap"
+translation = "tuzak"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "gambit"
+translation = "gambit"
+source = "https://tr.wikipedia.org/wiki/Gambit"
+
+[[terms]]
+term = "King's Pawn"
+translation = "şah piyonu"
+source = "https://tr.wikipedia.org/wiki/Şah_Piyonu_Oyunu"
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "vezir piyonu"
+source = "https://tr.wikipedia.org/wiki/Vezir_Piyonu_Oyunu"
+
+[[terms]]
+term = "flank"
+translation = "kanat"
+source = "https://tr.wikipedia.org/wiki/Kanat_açılışı"
+
+[[terms]]
+term = "starting position"
+translation = "başlangıç konumu"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "satranç dâhisi"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "{name} Variation"
+translation = "{name} Varyantı"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Defense"
+translation = "{name} Savunması"
+source = "https://tr.wikipedia.org/wiki/Caro-Kann_Savunması"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "{name} Gambiti"
+source = "https://tr.wikipedia.org/wiki/Evans_Gambiti"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "{name} Karşı Gambiti"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Attack"
+translation = "{name} Akını"
+source = "https://tr.wikipedia.org/wiki/Max_Lange_Akını"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "{name} Karşı Akını"
+machine = true
+note = "No Wikipedia page names it. Follows \"{name} Akını\". For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Opening"
+translation = "{name} Açılışı"
+source = "https://tr.wikipedia.org/wiki/Bird_Açılışı"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} System"
+translation = "{name} Sistemi"
+source = "https://tr.wikipedia.org/wiki/Londra_Sistemi"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Line"
+translation = "{name} Hattı"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Formation"
+translation = "{name} Formasyonu"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Trap"
+translation = "{name} Tuzağı"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "Main Line"
+translation = "Ana Hat"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8);"
+
+[[pieces]]
+piece = "K"
+letter = "Ş"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "Q"
+letter = "V"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "R"
+letter = "K"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "B"
+letter = "F"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "N"
+letter = "A"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+
+[[pieces]]
+piece = "P"
+letter = "P"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "SAN never writes it: a pawn move is only its square."
