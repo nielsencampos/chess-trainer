@@ -168,3 +168,10 @@ scripts = ["latin", "cyrillic"]
 languagetool = "uk-UA"
 vale = ["ChessTrainer", "Uk", "GlossaryUk", "UI"]
 reviewed = false
+
+[locales.hi]
+direction = "ltr"
+# Latin for the names the UI keeps (Stockfish, PGN, Chess960). LanguageTool has no Hindi.
+scripts = ["latin", "devanagari"]
+vale = ["ChessTrainer", "Hi", "GlossaryHi", "UI"]
+reviewed = false
