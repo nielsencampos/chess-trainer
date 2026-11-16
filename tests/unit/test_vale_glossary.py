@@ -50,3 +50,19 @@ def test_style_names():
     """The style is named from the locale code."""
     assert vale_glossary.style_name("pt-BR") == "GlossaryPtBR"
     assert vale_glossary.style_name("es-419") == "GlossaryEs419"
+
+
+def test_a_cjk_word_is_flagged_without_word_edges(tmp_path):
+    """A CJK word has no spaces around it, so its rule looks for it anywhere, as a nonword.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    path = tmp_path / "zh-CN.toml"
+    path.write_text(
+        '[[terms]]\nterm = "x"\ntranslation = "后"\nmachine = true\navoid = ["皇后"]\n',
+        encoding="utf-8",
+    )
+    text = vale_glossary.rule(path)
+    assert "nonword: true" in text
+    assert "'皇后': '后'" in text
