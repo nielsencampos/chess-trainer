@@ -10,7 +10,7 @@
 
 > 이 번역은 기계 번역이며 아직 검토되지 않았습니다. 수정 제안을 환영합니다: [수정 제안하기](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=ko)
 
-내 컴퓨터에서 도는 체스 트레이너: 실제 시계 설정으로 Stockfish와 대국하고, 오프닝 북을 따르며 이론에서 벗어난 곳을 알려 주는 봇을 상대로 오프닝을 연습하고, PGN, Chess.com, Lichess의 대국을 평가 막대와 함께 복기하세요. Chess960도 포함. 여러 언어를 지원하며, 하나의 Docker 이미지나 Linux, Windows, macOS용 데스크톱 앱으로 쓸 수 있습니다. 내 컴퓨터(amd64 또는 arm64)에서 돌아가며, 대국에 계정도 인터넷도 필요 없습니다.
+내 컴퓨터에서 도는 오프닝 트레이너: 봇이 내 레퍼토리대로 두고, 이론이 끝나면 Stockfish가 이어받으며, 모든 대국은 복기할 수 있게 저장됩니다. 실제 대국 시계, Chess960, PGN·Chess.com·Lichess 가져오기. 여러 언어 지원. Docker 또는 데스크톱 앱, 계정 없이. Linux, Windows, macOS(amd64 또는 arm64)에서 돌아가며, 대국에 인터넷이 필요 없습니다.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

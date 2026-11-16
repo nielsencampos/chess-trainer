@@ -1,7 +1,7 @@
 [project]
 name = "chess-trainer"
 version = "0.6.0"
-description = "Opening trainer you run on your own computer: drill your repertoire against a bot, play Stockfish and review your games."
+description = "Opening trainer you run on your own computer: a bot plays your repertoire, Stockfish takes over when theory ends, and every game is saved to review. Real clocks, Chess960, PGN, Chess.com and Lichess import. Multilingual. Docker or desktop app, no accounts."
 readme = "README.md"
 license = "GPL-3.0-only"
 requires-python = ">=3.12"

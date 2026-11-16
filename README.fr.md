@@ -10,7 +10,7 @@
 
 > Cette traduction a été faite automatiquement et n'a pas été relue. Les corrections sont les bienvenues : [proposer une correction](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=fr)
 
-Entraîneur d'échecs local : jouez contre Stockfish avec de vraies cadences de pendule, travaillez vos ouvertures contre un bot qui suit le livre et signale où vous êtes sorti de la théorie, et revoyez vos parties depuis un PGN, Chess.com ou Lichess avec une barre d'évaluation. Chess960 compris. Multilingue, en une image Docker ou en application de bureau pour Linux, Windows et macOS. Il fonctionne sur votre propre machine (amd64 ou arm64), sans compte et sans internet pour jouer.
+Entraîneur d'ouvertures qui tourne sur votre propre ordinateur : un bot joue votre répertoire, Stockfish prend le relais quand la théorie s'arrête, et chaque partie est enregistrée pour être revue. Vraies pendules, Chess960, import depuis PGN, Chess.com et Lichess. Multilingue. Docker ou application de bureau, sans compte. Il fonctionne sous Linux, Windows et macOS (amd64 ou arm64), sans internet pour jouer.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

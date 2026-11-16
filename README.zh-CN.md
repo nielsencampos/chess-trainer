@@ -10,7 +10,7 @@
 
 > 此翻译由机器生成，尚未经过审校。欢迎指正： [提交更正](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=zh-CN)
 
-本地国际象棋训练器：用真实的棋钟设置与 Stockfish 对弈，对着一个按开局库走棋、并标出你在哪里离开理论的机器人练习开局，还能借助评估条复盘来自 PGN、Chess.com 或 Lichess 的对局。包含 Chess960。支持多种语言，可作为一个 Docker 镜像使用，也可作为 Linux、Windows 和 macOS 的桌面应用使用。它在你自己的电脑上运行（amd64 或 arm64），无需账号，下棋也无需联网。
+在你自己的电脑上使用的开局训练器：机器人按你的开局库走棋，理论走完后由 Stockfish 接手，每盘对局都会保存以便复盘。真实棋钟、Chess960，可从 PGN、Chess.com 和 Lichess 导入。支持多种语言。Docker 或桌面应用，无需账号。可在 Linux、Windows 和 macOS（amd64 或 arm64）上运行，下棋无需联网。
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

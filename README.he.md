@@ -10,7 +10,7 @@
 
 > תרגום זה נעשה במכונה ועדיין לא נבדק. נשמח לתיקונים: [להציע תיקון](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=he)
 
-מאמן שחמט מקומי: לשחק מול Stockfish עם הגדרות שעון אמיתיות, לתרגל פתיחות מול בוט שהולך לפי הספר ומסמן היכן יצאת מהתאוריה, ולסקור משחקים מ-PGN,‏ Chess.com או Lichess עם סרגל הערכה. כולל Chess960. רב-לשוני, כתמונת Docker אחת או כאפליקציית שולחן עבודה ל-Linux,‏ Windows ו-macOS. רץ על המחשב שלך (amd64 או arm64), בלי חשבון ובלי צורך באינטרנט כדי לשחק.
+מאמן פתיחות שרץ על המחשב שלך: בוט משחק את הרפרטואר שלך, Stockfish ממשיך כשהתאוריה נגמרת, וכל משחק נשמר לסקירה. שעונים אמיתיים, Chess960, ייבוא מ-PGN,‏ Chess.com ו-Lichess. רב-לשוני. Docker או אפליקציית שולחן עבודה, בלי חשבון. עובד על Linux,‏ Windows ו-macOS (amd64 או arm64), בלי צורך באינטרנט כדי לשחק.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

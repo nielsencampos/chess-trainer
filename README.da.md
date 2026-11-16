@@ -10,7 +10,7 @@
 
 > Denne oversættelse er maskinoversat og er ikke blevet gennemgået. Rettelser er velkomne: [foreslå en rettelse](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=da)
 
-Lokal skaktræner: spil mod Stockfish med rigtige urindstillinger, træn dine åbninger mod en bot, der følger bogen og viser, hvor du forlod teorien, og gennemgå dine partier fra PGN, Chess.com eller Lichess med en vurderingsbjælke. Chess960 er med. På mange sprog, som ét Docker-image eller en skrivebordsapp til Linux, Windows og macOS. Det kører på din egen maskine (amd64 eller arm64), uden konto og uden internet for at spille.
+Åbningstræner, du kører på din egen computer: en bot spiller dit repertoire, Stockfish tager over, når teorien slutter, og hvert parti gemmes til gennemgang. Rigtige ure, Chess960, import fra PGN, Chess.com og Lichess. På mange sprog. Docker eller skrivebordsapp, uden konto. Det kører på Linux, Windows og macOS (amd64 eller arm64), uden internet for at spille.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

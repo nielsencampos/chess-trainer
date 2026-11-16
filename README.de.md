@@ -10,7 +10,7 @@
 
 > Diese Übersetzung wurde maschinell erstellt und nicht geprüft. Korrekturen sind willkommen: [Korrektur vorschlagen](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=de)
 
-Lokaler Schachtrainer: Spiel gegen Stockfish mit echten Uhr-Voreinstellungen, übe deine Eröffnungen gegen einen Bot, der dem Buch folgt und zeigt, wo du die Theorie verlassen hast, und schau dir deine Partien aus PGN, Chess.com oder Lichess mit Bewertungsbalken an. Chess960 inklusive. Mehrsprachig, als ein Docker-Image oder als Desktop-App für Linux, Windows und macOS. Es läuft auf deinem eigenen Rechner (amd64 oder arm64), ohne Konto und ohne Internet zum Spielen.
+Eröffnungstrainer, den du auf deinem eigenen Rechner laufen lässt: Ein Bot spielt dein Repertoire, Stockfish übernimmt, wenn die Theorie endet, und jede Partie wird zum Nachspielen gespeichert. Echte Uhren, Chess960, Import aus PGN, Chess.com und Lichess. Mehrsprachig. Docker oder Desktop-App, ohne Konto. Es läuft unter Linux, Windows und macOS (amd64 oder arm64), ohne Internet zum Spielen.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

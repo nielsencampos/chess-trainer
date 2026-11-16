@@ -10,7 +10,7 @@
 
 > هذه الترجمة آلية ولم تُراجَع بعد. نرحب بالتصحيحات: [اقترح تصحيحًا](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=ar)
 
-مدرّب شطرنج محلي: العب ضد Stockfish بإعدادات ساعة حقيقية، وتدرّب على افتتاحياتك ضد روبوت يتبع الكتاب ويشير إلى حيث خرجت عن النظرية، وراجع مبارياتك من PGN أو Chess.com أو Lichess مع شريط التقييم. يتضمن Chess960. متعدد اللغات، في صورة Docker واحدة أو تطبيق سطح مكتب لأنظمة Linux وWindows وmacOS. يعمل على جهازك (amd64 أو arm64)، بلا حساب وبلا حاجة إلى الإنترنت للعب.
+مدرّب افتتاحيات يعمل على جهازك: يلعب روبوت مخزونك من الافتتاحيات، ويتولى Stockfish اللعب حين تنتهي النظرية، وتُحفظ كل مباراة لمراجعتها. ساعات حقيقية، وChess960، واستيراد من PGN وChess.com وLichess. متعدد اللغات. Docker أو تطبيق سطح مكتب، بلا حساب. يعمل على Linux وWindows وmacOS (amd64 أو arm64)، بلا حاجة إلى الإنترنت للعب.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

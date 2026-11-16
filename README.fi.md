@@ -10,7 +10,7 @@
 
 > Tämä käännös on konekäännös, eikä sitä ole tarkistettu. Korjaukset ovat tervetulleita: [ehdota korjausta](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=fi)
 
-Paikallinen shakkivalmentaja: pelaa Stockfishia vastaan oikeilla kelloasetuksilla, harjoittele avauksiasi bottia vastaan, joka seuraa kirjaa ja näyttää, missä poistuit teoriasta, ja käy pelisi läpi PGN:stä, Chess.comista tai Lichessistä arviopalkin kanssa. Chess960 mukana. Monikielinen, yhtenä Docker-imagena tai työpöytäsovelluksena Linuxille, Windowsille ja macOS:lle. Se toimii omalla koneellasi (amd64 tai arm64) ilman tiliä ja ilman internetiä pelaamiseen.
+Avausvalmentaja, jota käytät omalla koneellasi: botti pelaa repertuaariasi, Stockfish jatkaa, kun teoria loppuu, ja jokainen peli tallennetaan läpikäyntiä varten. Oikeat kellot, Chess960, tuonti PGN:stä, Chess.comista ja Lichessistä. Monikielinen. Docker tai työpöytäsovellus, ilman tiliä. Toimii Linuxissa, Windowsissa ja macOS:ssä (amd64 tai arm64) ilman internetiä pelaamiseen.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

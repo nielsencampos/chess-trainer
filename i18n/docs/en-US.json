@@ -1,6 +1,6 @@
 {
   "readme.logo": "Chess Trainer logo: four board squares with C, T, a pen and a clock",
-  "readme.intro": "Local chess trainer: play Stockfish with real clock presets, drill your openings against a bot that follows the book and flags where you left theory, and review your games from PGN, Chess.com or Lichess with an evaluation bar. Chess960 included. Multilingual, as one Docker image or a desktop app for Linux, Windows and macOS. It runs on your own machine (amd64 or arm64), with no accounts and no internet needed to play.",
+  "readme.intro": "Opening trainer you run on your own computer: a bot plays your repertoire, Stockfish takes over when theory ends, and every game is saved to review. Real clocks, Chess960, PGN, Chess.com and Lichess import. Multilingual. Docker or desktop app, no accounts. It runs on Linux, Windows and macOS (amd64 or arm64), with no internet needed to play.",
   "readme.reviewed": "Only US English, Brazilian Portuguese and Latin American Spanish are reviewed. Every other language, English (UK) included, is machine-made and unreviewed. Corrections are welcome. Open a [Translation fix issue]({fix}).",
   "readme.run.title": "Run",
   "readme.run.needs": "You need Docker with Compose.",

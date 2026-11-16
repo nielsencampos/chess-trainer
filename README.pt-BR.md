@@ -10,7 +10,7 @@
 
 > Correções são bem-vindas: [sugira uma correção](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=pt-BR)
 
-Treinador local de xadrez: jogue contra o Stockfish com os relógios de verdade, pratique suas aberturas contra um bot que segue o livro e mostra onde você saiu da teoria, e revise suas partidas de PGN, Chess.com ou Lichess com barra de avaliação. Tem Chess960. Multilíngue, como uma imagem Docker ou um app de desktop para Linux, Windows e macOS. Roda na sua máquina (amd64 ou arm64), sem conta e sem precisar de internet para jogar.
+Treinador de aberturas que roda no seu próprio computador: um bot joga seu repertório, o Stockfish assume quando a teoria acaba e cada partida fica salva para revisar. Relógios de verdade, Chess960, importação de PGN, Chess.com e Lichess. Multilíngue. Docker ou app de desktop, sem conta. Funciona no Linux, no Windows e no macOS (amd64 ou arm64), sem precisar de internet para jogar.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

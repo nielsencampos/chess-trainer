@@ -10,7 +10,7 @@
 
 > Denne oversettelsen er maskinoversatt og har ikke blitt gjennomgått. Rettelser er velkomne: [foreslå en rettelse](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=nb)
 
-Lokal sjakktrener: spill mot Stockfish med ekte klokkeinnstillinger, øv på åpningene dine mot en bot som følger boken og viser hvor du forlot teorien, og gå gjennom partiene dine fra PGN, Chess.com eller Lichess med en vurderingsstolpe. Chess960 er med. På mange språk, som ett Docker-image eller en skrivebordsapp for Linux, Windows og macOS. Den kjører på din egen maskin (amd64 eller arm64), uten konto og uten internett for å spille.
+Åpningstrener du kjører på din egen maskin: en bot spiller repertoaret ditt, Stockfish tar over når teorien slutter, og hvert parti lagres for gjennomgang. Ekte klokker, Chess960, import fra PGN, Chess.com og Lichess. På mange språk. Docker eller skrivebordsapp, uten konto. Den kjører på Linux, Windows og macOS (amd64 eller arm64), uten internett for å spille.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

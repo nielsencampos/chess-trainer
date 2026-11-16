@@ -1,6 +1,6 @@
 {
   "readme.logo": "Logo Chess Trainer: bốn ô bàn cờ với chữ C, T, một cây bút và một chiếc đồng hồ",
-  "readme.intro": "Phần mềm luyện cờ chạy trên máy: chơi với Stockfish bằng các thiết lập đồng hồ thật, luyện khai cuộc với một bot đi theo sách và đánh dấu chỗ bạn rời lý thuyết, và xem lại các ván cờ từ PGN, Chess.com hoặc Lichess với thanh đánh giá. Có cả Chess960. Đa ngôn ngữ, dưới dạng một image Docker hoặc ứng dụng máy tính cho Linux, Windows và macOS. Chạy trên máy của bạn (amd64 hoặc arm64), không cần tài khoản và không cần internet để chơi.",
+  "readme.intro": "Phần mềm luyện khai cuộc chạy trên máy tính của bạn: một bot chơi theo bộ khai cuộc của bạn, Stockfish tiếp quản khi hết lý thuyết, và mọi ván cờ đều được lưu để xem lại. Đồng hồ thật, Chess960, nhập từ PGN, Chess.com và Lichess. Đa ngôn ngữ. Docker hoặc ứng dụng máy tính, không cần tài khoản. Hoạt động trên Linux, Windows và macOS (amd64 hoặc arm64), không cần internet để chơi.",
   "readme.reviewed": "Chỉ tiếng Anh Mỹ, tiếng Bồ Đào Nha Brazil và tiếng Tây Ban Nha Mỹ Latinh đã được duyệt lại. Mọi ngôn ngữ khác, kể cả tiếng Anh Anh, đều do máy dịch và chưa được duyệt lại. Rất hoan nghênh các góp ý sửa lỗi: hãy mở một [issue Translation fix]({fix}).",
   "readme.run.title": "Chạy",
   "readme.run.needs": "Bạn cần Docker cùng Compose.",

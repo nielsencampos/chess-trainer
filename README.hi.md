@@ -10,7 +10,7 @@
 
 > यह अनुवाद मशीन से किया गया है और इसकी समीक्षा नहीं हुई है। सुधारों का स्वागत है: [सुधार सुझाएँ](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=hi)
 
-आपके कंप्यूटर पर चलने वाला शतरंज ट्रेनर: असली घड़ी सेटिंग के साथ Stockfish से खेलें, ऐसे बॉट के ख़िलाफ़ अपने उद्घाटन का अभ्यास करें जो किताब का पालन करता है और बताता है कि आप सिद्धांत से कहाँ हटे, और PGN, Chess.com या Lichess से आए अपने खेलों की मूल्यांकन बार के साथ समीक्षा करें। Chess960 भी शामिल है। कई भाषाओं में, एक Docker इमेज या Linux, Windows और macOS के लिए डेस्कटॉप ऐप के रूप में। यह आपकी अपनी मशीन (amd64 या arm64) पर चलता है, खेलने के लिए न खाता चाहिए न इंटरनेट।
+आपके अपने कंप्यूटर पर चलने वाला उद्घाटन ट्रेनर: एक बॉट आपका रिपर्टॉयर खेलता है, सिद्धांत ख़त्म होने पर Stockfish कमान संभालता है, और हर खेल समीक्षा के लिए सहेजा जाता है। असली घड़ियाँ, Chess960, PGN, Chess.com और Lichess से आयात। कई भाषाओं में। Docker या डेस्कटॉप ऐप, बिना खाते के। यह Linux, Windows और macOS (amd64 या arm64) पर चलता है, खेलने के लिए इंटरनेट की ज़रूरत नहीं।
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

@@ -136,7 +136,9 @@ def test_no_key_that_english_does_not_have(code):
 
 @pytest.mark.parametrize("code", OTHERS)
 def test_placeholders_match_english(code):
-    """Placeholders match English.
+    """Placeholders match English: none added, none dropped.
+
+    Only the `zero`, `one` and `two` plural forms may leave the number out ("one game").
 
     Args:
         code (str): A UI language code.
@@ -144,7 +146,10 @@ def test_placeholders_match_english(code):
     for key, text in load(code).items():
         allowed = {name for english in english_for(key) for name in PLACEHOLDER.findall(english)}
         used = set(PLACEHOLDER.findall(text))
-        assert used <= allowed, f"{code} {key}: {used - allowed}"
+        if key.rpartition(".")[2] in {"zero", "one", "two"}:
+            assert used <= allowed, f"{code} {key}: {used - allowed}"
+        else:
+            assert used == allowed, f"{code} {key}: {sorted(used)}, English {sorted(allowed)}"
 
 
 @pytest.mark.parametrize("code", ["en-US", *OTHERS])

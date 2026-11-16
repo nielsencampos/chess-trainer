@@ -1,6 +1,6 @@
 {
   "readme.logo": "Logo Chess Trainer: empat petak papan dengan C, T, sebuah pena, dan sebuah jam",
-  "readme.intro": "Pelatih catur lokal: bermain melawan Stockfish dengan pengaturan jam sungguhan, latih pembukaan Anda melawan bot yang mengikuti buku dan menandai di mana Anda keluar dari teori, serta tinjau permainan Anda dari PGN, Chess.com, atau Lichess dengan bilah evaluasi. Termasuk Chess960. Multibahasa, sebagai satu image Docker atau aplikasi desktop untuk Linux, Windows, dan macOS. Berjalan di mesin Anda sendiri (amd64 atau arm64), tanpa akun dan tanpa internet untuk bermain.",
+  "readme.intro": "Pelatih pembukaan yang Anda jalankan di komputer sendiri: bot memainkan repertoar Anda, Stockfish mengambil alih saat teori berakhir, dan setiap permainan disimpan untuk ditinjau. Jam sungguhan, Chess960, impor dari PGN, Chess.com, dan Lichess. Multibahasa. Docker atau aplikasi desktop, tanpa akun. Berjalan di Linux, Windows, dan macOS (amd64 atau arm64), tanpa internet untuk bermain.",
   "readme.reviewed": "Hanya bahasa Inggris AS, Portugis Brasil, dan Spanyol Amerika Latin yang sudah ditinjau. Semua bahasa lain, termasuk Inggris Britania, diterjemahkan oleh mesin dan belum ditinjau. Koreksi sangat diterima: buka [issue Translation fix]({fix}).",
   "readme.run.title": "Menjalankan",
   "readme.run.needs": "Anda memerlukan Docker dengan Compose.",

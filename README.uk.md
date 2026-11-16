@@ -10,7 +10,7 @@
 
 > Цей переклад зроблено машиною, і його не перевірено. Виправлення вітаються: [запропонувати виправлення](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=uk)
 
-Локальний шаховий тренажер: грайте зі Stockfish зі справжніми налаштуваннями годинника, відпрацьовуйте дебюти проти бота, який іде за книгою і позначає, де ви вийшли з теорії, і розбирайте свої партії з PGN, Chess.com або Lichess зі шкалою оцінки. Chess960 теж є. Багатомовний, у вигляді одного образу Docker або настільного застосунку для Linux, Windows і macOS. Працює на вашому комп'ютері (amd64 або arm64), без облікового запису й без інтернету для гри.
+Тренажер дебютів на вашому власному комп'ютері: бот грає ваш репертуар, Stockfish вступає в гру, коли закінчується теорія, і кожна партія зберігається для розбору. Справжні годинники, Chess960, імпорт з PGN, Chess.com і Lichess. Багатомовний. Docker або настільний застосунок, без облікового запису. Працює на Linux, Windows і macOS (amd64 або arm64), без інтернету для гри.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

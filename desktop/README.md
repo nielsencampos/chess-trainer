@@ -49,6 +49,7 @@ to a draft GitHub Release, published by hand:
   starts, and CI runs the smoke check on a marked copy.
 - `chess-trainer-<tag>-macos-arm64.zip` and `-macos-intel.zip`: `Chess Trainer.app`, signed ad hoc
   (not notarized). Stockfish's macOS build is universal; Python and the bundle are per architecture.
+- `SHA256SUMS`: the SHA-256 checksum of each package above, to check a download.
 
 Nothing is signed with a paid certificate, so SmartScreen and Gatekeeper warn on the first launch
 (HOW_TO_INSTALL.md explains how to get past them).

@@ -10,7 +10,7 @@
 
 > Terjemahan ini dibuat oleh mesin dan belum ditinjau. Koreksi sangat diterima: [usulkan koreksi](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=id)
 
-Pelatih catur lokal: bermain melawan Stockfish dengan pengaturan jam sungguhan, latih pembukaan Anda melawan bot yang mengikuti buku dan menandai di mana Anda keluar dari teori, serta tinjau permainan Anda dari PGN, Chess.com, atau Lichess dengan bilah evaluasi. Termasuk Chess960. Multibahasa, sebagai satu image Docker atau aplikasi desktop untuk Linux, Windows, dan macOS. Berjalan di mesin Anda sendiri (amd64 atau arm64), tanpa akun dan tanpa internet untuk bermain.
+Pelatih pembukaan yang Anda jalankan di komputer sendiri: bot memainkan repertoar Anda, Stockfish mengambil alih saat teori berakhir, dan setiap permainan disimpan untuk ditinjau. Jam sungguhan, Chess960, impor dari PGN, Chess.com, dan Lichess. Multibahasa. Docker atau aplikasi desktop, tanpa akun. Berjalan di Linux, Windows, dan macOS (amd64 atau arm64), tanpa internet untuk bermain.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

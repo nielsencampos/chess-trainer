@@ -1,6 +1,6 @@
 {
   "readme.logo": "Chess Trainers logotyp: fyra rutor på ett schackbräde med C, T, en penna och en klocka",
-  "readme.intro": "Lokal schacktränare: spela mot Stockfish med riktiga klockinställningar, träna dina öppningar mot en bot som följer boken och visar var du lämnade teorin, och gå igenom dina partier från PGN, Chess.com eller Lichess med en bedömningsstapel. Chess960 ingår. På många språk, som en Docker-avbildning eller ett skrivbordsprogram för Linux, Windows och macOS. Den körs på din egen dator (amd64 eller arm64), utan konto och utan internet för att spela.",
+  "readme.intro": "Öppningstränare som du kör på din egen dator: en bot spelar din repertoar, Stockfish tar över där teorin slutar, och varje parti sparas för genomgång. Riktiga klockor, Chess960, import från PGN, Chess.com och Lichess. På många språk. Docker eller skrivbordsprogram, utan konto. Den körs på Linux, Windows och macOS (amd64 eller arm64), utan internet för att spela.",
   "readme.reviewed": "Bara amerikansk engelska, brasiliansk portugisiska och latinamerikansk spanska är granskade. Alla andra språk, brittisk engelska inräknad, är maskinöversatta och ogranskade. Rättelser är välkomna: öppna ett [Translation fix-ärende]({fix}).",
   "readme.run.title": "Kör",
   "readme.run.needs": "Du behöver Docker med Compose.",

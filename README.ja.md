@@ -10,7 +10,7 @@
 
 > この翻訳は機械翻訳で、まだ確認されていません。修正を歓迎します： [修正を提案する](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=ja)
 
-ローカルで動くチェストレーナー：本物の時計設定で Stockfish と対局し、定跡書に従って定跡から外れた場所を示すボットを相手にオープニングを練習し、PGN、Chess.com、Lichess の対局を評価バー付きで振り返れます。Chess960 にも対応。多言語に対応し、1 つの Docker イメージとしても、Linux、Windows、macOS 用のデスクトップアプリとしても使えます。自分のマシン（amd64 または arm64）で動き、対局にアカウントもインターネットも要りません。
+自分のマシンで動くオープニングトレーナー：ボットがレパートリーどおりに指し、定跡が終わると Stockfish が引き継ぎ、すべての対局は振り返り用に保存されます。本物の対局時計、Chess960、PGN・Chess.com・Lichess からのインポート。多言語対応。Docker またはデスクトップアプリで、アカウント不要。Linux、Windows、macOS（amd64 または arm64）で動き、対局にインターネットは要りません。
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
