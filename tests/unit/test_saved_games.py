@@ -543,6 +543,35 @@ def test_a_move_after_a_restart_needs_no_reload(database_path):
         assert response.status_code == 200
 
 
+def test_a_text_with_more_games_than_are_read_says_so(client, monkeypatch):
+    """A paste past the limit imports the first games and reports that the rest was left out.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+        monkeypatch (pytest.MonkeyPatch): Lowers the limit to one game.
+    """
+    from app.game import imports
+
+    monkeypatch.setattr(imports, "MAX_GAMES", 1)
+    report = do_import(client, GOOD + "\n" + FISCHER)
+    assert report["imported"] == 1
+    assert report["truncated"] is True
+    assert report["max"] == 1
+
+
+def test_a_very_long_game_imports(client):
+    """A game of a thousand plies imports instead of failing the whole text.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
+    moves = " ".join(f"{n * 2 + 1}. Nf3 Nf6 {n * 2 + 2}. Ng1 Ng8" for n in range(260))
+    text = f'[White "Long"]\n[Black "Game"]\n[Result "*"]\n\n{moves} *\n'
+    report = do_import(client, text)
+    assert report["imported"] == 1, report
+    assert "truncated" not in report
+
+
 REPEATED = """[White "Ana"]
 [Black "Bia"]
 [Result "*"]

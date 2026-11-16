@@ -83,6 +83,7 @@
   "import.remote.nothing": "Aucune partie sur cette période.",
   "import.remote.busy": "Recherche des parties…",
   "import.remote.truncated": "Seules les {max} parties les plus récentes de la période ont été importées.",
+  "import.truncated": "Seules les {max} premières parties du texte ont été lues.",
   "import.remote.error.bad_username": "Ce nom d'utilisateur n'est pas valide.",
   "import.remote.error.user_not_found": "Aucun joueur de ce nom sur ce site.",
   "import.remote.error.rate_limited": "Le site demande de ralentir. Réessayez dans une minute.",

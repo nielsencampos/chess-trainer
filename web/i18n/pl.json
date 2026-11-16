@@ -85,6 +85,7 @@
   "import.remote.nothing": "Brak partii w tym okresie.",
   "import.remote.busy": "Pobieranie partii…",
   "import.remote.truncated": "Pobrano tylko {max} najnowszych partii z tego okresu.",
+  "import.truncated": "Odczytano tylko pierwsze {max} partii z tekstu.",
   "import.remote.error.bad_username": "To nie jest prawidłowa nazwa użytkownika.",
   "import.remote.error.user_not_found": "W tym serwisie nie ma gracza o tej nazwie.",
   "import.remote.error.rate_limited": "Serwis poprosił o zwolnienie tempa. Spróbuj ponownie za minutę.",

@@ -82,6 +82,7 @@
   "import.remote.nothing": "이 기간에는 대국이 없습니다.",
   "import.remote.busy": "대국을 가져오는 중…",
   "import.remote.truncated": "이 기간의 최신 대국 {max}판만 가져왔습니다.",
+  "import.truncated": "텍스트의 처음 {max}개 대국만 읽었습니다.",
   "import.remote.error.bad_username": "올바른 사용자 이름이 아닙니다.",
   "import.remote.error.user_not_found": "이 사이트에 그 이름의 플레이어가 없습니다.",
   "import.remote.error.rate_limited": "사이트가 속도를 줄여 달라고 요청했습니다. 1분 뒤에 다시 시도하세요.",

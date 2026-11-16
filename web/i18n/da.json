@@ -83,6 +83,7 @@
   "import.remote.nothing": "Ingen partier i denne periode.",
   "import.remote.busy": "Henter partier…",
   "import.remote.truncated": "Kun periodens {max} nyeste partier blev hentet.",
+  "import.truncated": "Kun de første {max} partier i teksten blev læst.",
   "import.remote.error.bad_username": "Det er ikke et gyldigt brugernavn.",
   "import.remote.error.user_not_found": "Ingen spiller med det navn på dette websted.",
   "import.remote.error.rate_limited": "Webstedet bad om et roligere tempo. Prøv igen om et minut.",

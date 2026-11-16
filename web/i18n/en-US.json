@@ -83,6 +83,7 @@
   "import.remote.nothing": "No games in this period.",
   "import.remote.busy": "Fetching games…",
   "import.remote.truncated": "Only the newest {max} games of the period were fetched.",
+  "import.truncated": "Only the first {max} games of the text were read.",
   "import.remote.error.bad_username": "That is not a valid username.",
   "import.remote.error.user_not_found": "No player with that name on this site.",
   "import.remote.error.rate_limited": "The site asked to slow down. Try again in a minute.",

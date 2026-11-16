@@ -83,6 +83,7 @@
   "import.remote.nothing": "Nessuna partita in questo periodo.",
   "import.remote.busy": "Ricerca delle partite…",
   "import.remote.truncated": "Sono state importate solo le {max} partite più recenti del periodo.",
+  "import.truncated": "Sono state lette solo le prime {max} partite del testo.",
   "import.remote.error.bad_username": "Questo nome utente non è valido.",
   "import.remote.error.user_not_found": "Su questo sito non c'è nessun giocatore con questo nome.",
   "import.remote.error.rate_limited": "Il sito chiede di rallentare. Riprova tra un minuto.",

@@ -82,6 +82,7 @@
   "import.remote.nothing": "この期間の対局はありません。",
   "import.remote.busy": "対局を取得しています…",
   "import.remote.truncated": "この期間の最新 {max} 局だけを取得しました。",
+  "import.truncated": "テキストの最初の {max} 局だけを読み込みました。",
   "import.remote.error.bad_username": "有効なユーザー名ではありません。",
   "import.remote.error.user_not_found": "このサイトにその名前のプレイヤーはいません。",
   "import.remote.error.rate_limited": "サイトから速度を落とすよう求められました。1分後にもう一度お試しください。",

@@ -83,6 +83,7 @@
   "import.remote.nothing": "За цей період партій немає.",
   "import.remote.busy": "Завантаження партій…",
   "import.remote.truncated": "Завантажено лише останні партії періоду: {max}.",
+  "import.truncated": "Прочитано лише перші {max} партій із тексту.",
   "import.remote.error.bad_username": "Це недійсне ім'я користувача.",
   "import.remote.error.user_not_found": "На цьому сайті немає гравця з таким ім'ям.",
   "import.remote.error.rate_limited": "Сайт просить не поспішати. Спробуйте за хвилину.",

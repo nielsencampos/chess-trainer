@@ -5,6 +5,7 @@ import json
 import random
 import secrets
 import string
+import threading
 import time
 from collections import OrderedDict
 from collections.abc import Mapping, Sequence
@@ -17,6 +18,7 @@ import chess
 from app.book.models import Book, Variant
 from app.engine.levels import Level
 from app.engine.process import MoveEngine
+from app.game import imports
 from app.game.imports import read_pgn_text
 from app.game.pace import TIME_CONTROLS, clock_after_move, engine_budget_s, human_delay_ms
 from app.game.session import (
@@ -144,6 +146,8 @@ class GameService:
         self._games: OrderedDict[str, GameSession] = OrderedDict()
         # One bot turn at a time: a reload or a second tab resumes the game while a search runs.
         self._bot_lock = asyncio.Lock()
+        # Imports run in a worker thread; two at once could both miss the other's duplicates.
+        self._import_lock = threading.Lock()
 
     def _remember(self, session: GameSession) -> None:
         """Keeps a session in memory, dropping the oldest beyond `MAX_GAMES_IN_MEMORY`.
@@ -428,12 +432,13 @@ class GameService:
             text (str): One or more PGN games.
 
         Returns:
-            dict: Counts of `imported`, `duplicates` and `updated`, and the refused games in
-                `errors`.
+            dict: Counts of `imported`, `duplicates` and `updated`, the refused games in
+                `errors`; `truncated` and `max` only when the text had more games than are read.
         """
-        games, errors = read_pgn_text(text, self.opening_names)
-        duplicates, updated = self.store.save_imported(games, new_game_id)
-        return {
+        games, errors, truncated = read_pgn_text(text, self.opening_names)
+        with self._import_lock:
+            duplicates, updated = self.store.save_imported(games, new_game_id)
+        report = {
             "imported": len(games) - duplicates - updated,
             "duplicates": duplicates,
             "updated": updated,
@@ -442,6 +447,9 @@ class GameService:
                 for e in errors
             ],
         }
+        if truncated:
+            report |= {"truncated": True, "max": imports.MAX_GAMES}
+        return report
 
     def resign(self, game_id: str) -> GameSession:
         """Resigns a game and saves it.

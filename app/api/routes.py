@@ -360,7 +360,8 @@ async def import_games(body: ImportRequest, request: Request) -> dict:
     Returns:
         dict: The import report: counts and refused games.
     """
-    return _service(request).import_pgn(body.pgn)
+    # Parsing thousands of games takes seconds: off the event loop, so a game's moves still go.
+    return await asyncio.to_thread(_service(request).import_pgn, body.pgn)
 
 
 @router.post("/games/import/remote")
@@ -386,11 +387,8 @@ async def import_remote_games(body: RemoteImportRequest, request: Request) -> di
     except RemoteError as error:
         status = {"bad_username": 422, "user_not_found": 404, "rate_limited": 429}
         raise HTTPException(status.get(error.code, 502), error.code) from error
-    report = _service(request).import_pgn(fetched.pgn) if fetched.games else _EMPTY_REPORT
+    report = await asyncio.to_thread(_service(request).import_pgn, fetched.pgn)
     return {**report, "fetched": fetched.games, "truncated": fetched.truncated}
-
-
-_EMPTY_REPORT = {"imported": 0, "duplicates": 0, "updated": 0, "errors": []}
 
 
 @router.post("/games/delete")

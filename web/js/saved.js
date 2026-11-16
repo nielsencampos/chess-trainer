@@ -220,7 +220,7 @@ export class SavedGames {
   /**
    * Shows an import's report, then reloads the list.
    * @param {{imported: number, duplicates: number, updated?: number, errors: any[],
-   *   fetched?: number, truncated?: boolean}} report  The API's import report.
+   *   fetched?: number, truncated?: boolean, max?: number}} report  The API's import report.
    * @param {"import" | "import-remote"} prefix  Which form: the paste and file one, or the site one.
    * @returns {Promise<void>}
    */
@@ -236,7 +236,11 @@ export class SavedGames {
             failed: report.errors.length,
           });
       if (report.updated) text += ` ${t("import.updated", { updated: report.updated })}`;
-      if (report.truncated) text += ` ${t("import.remote.truncated", { max: report.fetched ?? 0 })}`;
+      if (report.truncated) {
+        text += report.fetched === undefined
+          ? ` ${t("import.truncated", { max: report.max ?? 0 })}`
+          : ` ${t("import.remote.truncated", { max: report.fetched })}`;
+      }
       return text;
     });
     this.setErrors(prefix, report.errors);
