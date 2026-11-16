@@ -5,6 +5,7 @@
 /**
  * Copies a button's accessible name into its tooltip, unless i18n.js gives it one.
  * @param {HTMLButtonElement} button  The button.
+ * @returns {void}
  */
 function syncTitle(button) {
   if (button.hasAttribute("data-i18n-title")) return;
@@ -13,12 +14,18 @@ function syncTitle(button) {
   if (!text && button.hasAttribute("title")) button.removeAttribute("title");
 }
 
-/** Updates the tooltip of every button on the page. */
+/**
+ * Updates the tooltip of every button on the page.
+ * @returns {void}
+ */
 function syncAll() {
   for (const button of document.querySelectorAll("button")) syncTitle(button);
 }
 
-/** Gives every button a tooltip, now and whenever the page changes. */
+/**
+ * Gives every button a tooltip, now and whenever the page changes.
+ * @returns {void}
+ */
 export function initTooltips() {
   let queued = false;
   const observer = new MutationObserver(() => {

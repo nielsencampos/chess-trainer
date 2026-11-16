@@ -8,6 +8,7 @@ const THEMES = ["auto", "light", "dark"];
 /**
  * Sets the theme on the page.
  * @param {string} theme  `auto` (follow the system), `light` or `dark`.
+ * @returns {void}
  */
 function apply(theme) {
   if (theme === "auto") {
@@ -20,6 +21,7 @@ function apply(theme) {
 /**
  * Wires the theme button, restoring the stored choice.
  * @param {HTMLButtonElement} button  The button that cycles the theme and shows the current one.
+ * @returns {void}
  */
 export function initTheme(button) {
   let theme = getPref("theme", "auto");

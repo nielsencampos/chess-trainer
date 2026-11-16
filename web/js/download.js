@@ -7,6 +7,7 @@
  * reads a blob download after the click returns, and fails on a URL already revoked.
  * @param {Blob} blob  The file's content.
  * @param {string} name  The file name to suggest.
+ * @returns {void}
  */
 export function saveFile(blob, name) {
   const link = document.createElement("a");

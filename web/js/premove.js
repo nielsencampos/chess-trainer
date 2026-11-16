@@ -22,6 +22,7 @@ export function premoveDestinations(square, piece, chess960 = false) {
    * Adds the square at an offset, if it is on the board.
    * @param {number} df  Files to the right.
    * @param {number} dr  Ranks up.
+   * @returns {void}
    */
   const add = (df, dr) => {
     const nextFile = file + df;
@@ -33,6 +34,7 @@ export function premoveDestinations(square, piece, chess960 = false) {
   /**
    * Adds every square along some rays, ignoring blockers.
    * @param {number[][]} rays  The [file, rank] directions.
+   * @returns {void}
    */
   const slide = (rays) => {
     for (const [df, dr] of rays) {

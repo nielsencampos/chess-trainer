@@ -47,7 +47,10 @@ function describe(score) {
 
 /** The evaluation bar: asks the server for the position on screen, one request at a time. */
 export class EvalBar {
-  /** Finds the bar's element; it starts hidden. */
+  /**
+   * Finds the bar's element; it starts hidden.
+   * @returns {void}
+   */
   constructor() {
     this.element = byId("eval-bar");
     this.sequence = 0;
@@ -125,7 +128,10 @@ export class EvalBar {
     text.style.color = whiteAhead ? "#3a3a3a" : "#f2f2f2";
   }
 
-  /** Hides the bar and drops any pending request. */
+  /**
+   * Hides the bar and drops any pending request.
+   * @returns {void}
+   */
   hide() {
     this.sequence += 1;
     this.next = null;

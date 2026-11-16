@@ -41,6 +41,7 @@ async function copyText(text) {
 /**
  * Downloads a PGN as a dated file.
  * @param {string} pgn  The PGN text.
+ * @returns {void}
  */
 function downloadPgn(pgn) {
   const date = new Date().toISOString().slice(0, 10);

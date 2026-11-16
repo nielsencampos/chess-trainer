@@ -101,19 +101,24 @@ export class OpeningTree {
     });
     els.clear.addEventListener("click", () => {
       this.selected.clear();
-      this.changed();
-      this.render();
+      this.changed(); // Refreshes every box; the tree stays open as it was.
     });
     this.render();
   }
 
-  /** Writes how many lines are ticked, and shows Clear when there are any. */
+  /**
+   * Writes how many lines are ticked, and shows Clear when there are any.
+   * @returns {void}
+   */
   renderTotal() {
     this.els.total.textContent = t("setup.selectedTotal", { count: this.selected.size });
     this.els.clear.hidden = this.selected.size === 0;
   }
 
-  /** Updates every checkbox and count after the ticks changed, and reports it. */
+  /**
+   * Updates every checkbox and count after the ticks changed, and reports it.
+   * @returns {void}
+   */
   changed() {
     for (const node of this.nodes) this.refreshNode(node);
     for (const box of this.boxes) box.checked = this.selected.has(box.value);
@@ -121,7 +126,10 @@ export class OpeningTree {
     this.onChange(this.selected);
   }
 
-  /** Draws the tree again in the language just chosen, keeping what was open. */
+  /**
+   * Draws the tree again in the language just chosen, keeping what was open.
+   * @returns {void}
+   */
   relocalize() {
     const open = this.els.container.querySelectorAll("details[open]");
     this.reopen = new Set([...open].map((details) => /** @type {HTMLElement} */ (details).dataset.key ?? ""));
@@ -132,7 +140,10 @@ export class OpeningTree {
     }
   }
 
-  /** Draws the groups that have lines matching the search. */
+  /**
+   * Draws the groups that have lines matching the search.
+   * @returns {void}
+   */
   render() {
     this.nodes = [];
     this.boxes = [];
@@ -234,8 +245,12 @@ export class OpeningTree {
       const name = localizedName(variant.subgroup);
       groups.set(name, [...(groups.get(name) ?? []), variant]);
     }
-    /** Builds the rows of some lines later, when their level opens. */
-    const lines = (/** @type {VariantInfo[]} */ list) => () =>
+    /**
+     * Builds the rows of some lines later, when their level opens.
+     * @param {VariantInfo[]} list  The lines.
+     * @returns {() => HTMLElement[]} Builds their rows.
+     */
+    const lines = (list) => () =>
       list.map((variant) => this.variantElement(variant));
     const nodes = [...groups].map(([name, list]) =>
       this.treeNode(`sub:${repertoireId}:${list[0].subgroup?.[DEFAULT_LOCALE] ?? name}`, name, list, lines(list), "tree-variant"),

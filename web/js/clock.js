@@ -103,7 +103,10 @@ export class Clocks {
     this.onTick();
   }
 
-  /** Stops the running clock, counting its time so far. */
+  /**
+   * Stops the running clock, counting its time so far.
+   * @returns {void}
+   */
   stop() {
     this.settle();
     this.active = null;
@@ -142,7 +145,10 @@ export class Clocks {
     return Math.round(this.remaining[color]);
   }
 
-  /** Charges the running clock for the time since the last tick, after any US delay. */
+  /**
+   * Charges the running clock for the time since the last tick, after any US delay.
+   * @returns {void}
+   */
   settle() {
     if (this.active === null) return;
     const now = performance.now();
@@ -154,7 +160,10 @@ export class Clocks {
     this.lastTick = now;
   }
 
-  /** Updates the running clock and flags it at zero. */
+  /**
+   * Updates the running clock and flags it at zero.
+   * @returns {void}
+   */
   tick() {
     const color = this.active;
     if (color === null) return;
