@@ -1,25 +1,43 @@
 {
   "id": "bishop-s-opening",
   "names": {
-    "en": "Bishop's Opening",
+    "en-US": "Bishop's Opening",
     "pt-BR": "Abertura do Bispo",
-    "es": "Apertura de Alfil"
+    "es-419": "Apertura de Alfil",
+    "en-GB": "Bishop's Opening",
+    "es-ES": "Apertura de Alfil",
+    "pt-PT": "Abertura do Bispo",
+    "de": "Läuferspiel",
+    "fr": "Début du fou",
+    "it": "Partita di alfiere"
   },
   "order": 17,
   "variants": [
     {
       "names": {
-        "en": "Lewis Countergambit",
+        "en-US": "Lewis Countergambit",
         "pt-BR": "Contragambito Lewis",
-        "es": "Contragambito Lewis"
+        "es-419": "Contragambito Lewis",
+        "en-GB": "Lewis Countergambit",
+        "es-ES": "Contragambito Lewis",
+        "pt-PT": "Contragambito Lewis",
+        "de": "Lewis-Gegengambit",
+        "fr": "Contre-gambit Lewis",
+        "it": "Controgambetto Lewis"
       },
       "lines": [
         {
           "id": "line-fd64807adf1e8457",
           "names": {
-            "en": "Lewis Countergambit",
+            "en-US": "Lewis Countergambit",
             "pt-BR": "Contragambito Lewis",
-            "es": "Contragambito Lewis"
+            "es-419": "Contragambito Lewis",
+            "en-GB": "Lewis Countergambit",
+            "es-ES": "Contragambito Lewis",
+            "pt-PT": "Contragambito Lewis",
+            "de": "Lewis-Gegengambit",
+            "fr": "Contre-gambit Lewis",
+            "it": "Controgambetto Lewis"
           },
           "eco": "C23",
           "opening": "Bishop's Opening: Lewis Countergambit",
@@ -29,9 +47,15 @@
         {
           "id": "line-b73fd929a8a939a9",
           "names": {
-            "en": "Lewis Countergambit",
+            "en-US": "Lewis Countergambit",
             "pt-BR": "Contragambito Lewis",
-            "es": "Contragambito Lewis"
+            "es-419": "Contragambito Lewis",
+            "en-GB": "Lewis Countergambit",
+            "es-ES": "Contragambito Lewis",
+            "pt-PT": "Contragambito Lewis",
+            "de": "Lewis-Gegengambit",
+            "fr": "Contre-gambit Lewis",
+            "it": "Controgambetto Lewis"
           },
           "eco": "C23",
           "opening": "Bishop's Opening: Lewis Countergambit",
@@ -41,9 +65,15 @@
         {
           "id": "line-1c379d57358fbd05",
           "names": {
-            "en": "Lewis Countergambit, Walker Variation",
+            "en-US": "Lewis Countergambit, Walker Variation",
             "pt-BR": "Contragambito Lewis, Variante Walker",
-            "es": "Contragambito Lewis, Variante Walker"
+            "es-419": "Contragambito Lewis, Variante Walker",
+            "en-GB": "Lewis Countergambit, Walker Variation",
+            "es-ES": "Contragambito Lewis, Variante Walker",
+            "pt-PT": "Contragambito Lewis, Variante Walker",
+            "de": "Lewis-Gegengambit, Walker-Variante",
+            "fr": "Contre-gambit Lewis, Variante Walker",
+            "it": "Controgambetto Lewis, Variante Walker"
           },
           "eco": "C23",
           "opening": "Bishop's Opening: Lewis Countergambit, Walker Variation",
@@ -54,17 +84,29 @@
     },
     {
       "names": {
-        "en": "McDonnell Gambit",
+        "en-US": "McDonnell Gambit",
         "pt-BR": "Gambito McDonnell",
-        "es": "Gambito McDonnell"
+        "es-419": "Gambito McDonnell",
+        "en-GB": "McDonnell Gambit",
+        "es-ES": "Gambito McDonnell",
+        "pt-PT": "Gambito McDonnell",
+        "de": "McDonnell-Gambit",
+        "fr": "Gambit McDonnell",
+        "it": "Gambetto McDonnell"
       },
       "lines": [
         {
           "id": "line-0d434ad366e3a098",
           "names": {
-            "en": "McDonnell Gambit",
+            "en-US": "McDonnell Gambit",
             "pt-BR": "Gambito McDonnell",
-            "es": "Gambito McDonnell"
+            "es-419": "Gambito McDonnell",
+            "en-GB": "McDonnell Gambit",
+            "es-ES": "Gambito McDonnell",
+            "pt-PT": "Gambito McDonnell",
+            "de": "McDonnell-Gambit",
+            "fr": "Gambit McDonnell",
+            "it": "Gambetto McDonnell"
           },
           "eco": "C23",
           "opening": "Bishop's Opening: McDonnell Gambit",
@@ -74,9 +116,15 @@
         {
           "id": "line-5ec4c6b0fa71b434",
           "names": {
-            "en": "McDonnell Gambit, La Bourdonnais-Denker Gambit",
+            "en-US": "McDonnell Gambit, La Bourdonnais-Denker Gambit",
             "pt-BR": "Gambito McDonnell, Gambito La Bourdonnais-Denker",
-            "es": "Gambito McDonnell, Gambito La Bourdonnais-Denker"
+            "es-419": "Gambito McDonnell, Gambito La Bourdonnais-Denker",
+            "en-GB": "McDonnell Gambit, La Bourdonnais-Denker Gambit",
+            "es-ES": "Gambito McDonnell, Gambito La Bourdonnais-Denker",
+            "pt-PT": "Gambito McDonnell, Gambito La Bourdonnais-Denker",
+            "de": "McDonnell-Gambit, La-Bourdonnais-Denker-Gambit",
+            "fr": "Gambit McDonnell, Gambit La Bourdonnais-Denker",
+            "it": "Gambetto McDonnell, Gambetto La Bourdonnais-Denker"
           },
           "eco": "C23",
           "opening": "Bishop's Opening: McDonnell Gambit, La Bourdonnais-Denker Gambit",
@@ -86,9 +134,15 @@
         {
           "id": "line-bdf01d6842d65561",
           "names": {
-            "en": "McDonnell Gambit, McDonnell Double Gambit",
+            "en-US": "McDonnell Gambit, McDonnell Double Gambit",
             "pt-BR": "Gambito McDonnell, Gambito Duplo McDonnell",
-            "es": "Gambito McDonnell, Doble Gambito McDonnell"
+            "es-419": "Gambito McDonnell, Doble Gambito McDonnell",
+            "en-GB": "McDonnell Gambit, McDonnell Double Gambit",
+            "es-ES": "Gambito McDonnell, Doble Gambito McDonnell",
+            "pt-PT": "Gambito McDonnell, Gambito Duplo McDonnell",
+            "de": "McDonnell-Gambit, McDonnell-Doppelgambit",
+            "fr": "Gambit McDonnell, Double gambit McDonnell",
+            "it": "Gambetto McDonnell, Doppio gambetto McDonnell"
           },
           "eco": "C23",
           "opening": "Bishop's Opening: McDonnell Gambit, McDonnell Double Gambit",
@@ -99,17 +153,29 @@
     },
     {
       "names": {
-        "en": "Urusov Gambit",
+        "en-US": "Urusov Gambit",
         "pt-BR": "Gambito Urusov",
-        "es": "Gambito Urusov"
+        "es-419": "Gambito Urusov",
+        "en-GB": "Urusov Gambit",
+        "es-ES": "Gambito Urusov",
+        "pt-PT": "Gambito Urusov",
+        "de": "Urussow-Gambit",
+        "fr": "Gambit Ourousov",
+        "it": "Gambetto Urusov"
       },
       "lines": [
         {
           "id": "line-681353d135014f70",
           "names": {
-            "en": "Urusov Gambit",
+            "en-US": "Urusov Gambit",
             "pt-BR": "Gambito Urusov",
-            "es": "Gambito Urusov"
+            "es-419": "Gambito Urusov",
+            "en-GB": "Urusov Gambit",
+            "es-ES": "Gambito Urusov",
+            "pt-PT": "Gambito Urusov",
+            "de": "Urussow-Gambit",
+            "fr": "Gambit Ourousov",
+            "it": "Gambetto Urusov"
           },
           "eco": "C43",
           "opening": "Bishop's Opening: Urusov Gambit",
@@ -119,9 +185,15 @@
         {
           "id": "line-1b626e88a0aa4102",
           "names": {
-            "en": "Urusov Gambit, Keidansky Gambit",
+            "en-US": "Urusov Gambit, Keidansky Gambit",
             "pt-BR": "Gambito Urusov, Gambito Keidansky",
-            "es": "Gambito Urusov, Gambito Keidansky"
+            "es-419": "Gambito Urusov, Gambito Keidansky",
+            "en-GB": "Urusov Gambit, Keidansky Gambit",
+            "es-ES": "Gambito Urusov, Gambito Keidansky",
+            "pt-PT": "Gambito Urusov, Gambito Keidansky",
+            "de": "Urussow-Gambit, Keidansky-Gambit",
+            "fr": "Gambit Ourousov, Gambit Keidansky",
+            "it": "Gambetto Urusov, Gambetto Keidansky"
           },
           "eco": "C43",
           "opening": "Bishop's Opening: Urusov Gambit, Keidansky Gambit",
@@ -131,9 +203,15 @@
         {
           "id": "line-98a789eb3eb99b2c",
           "names": {
-            "en": "Urusov Gambit, Panov Variation",
+            "en-US": "Urusov Gambit, Panov Variation",
             "pt-BR": "Gambito Urusov, Variante Panov",
-            "es": "Gambito Urusov, Variante Panov"
+            "es-419": "Gambito Urusov, Variante Panov",
+            "en-GB": "Urusov Gambit, Panov Variation",
+            "es-ES": "Gambito Urusov, Variante Panov",
+            "pt-PT": "Gambito Urusov, Variante Panov",
+            "de": "Urussow-Gambit, Panow-Variante",
+            "fr": "Gambit Ourousov, Variante Panov",
+            "it": "Gambetto Urusov, Variante Panov"
           },
           "eco": "C24",
           "opening": "Bishop's Opening: Urusov Gambit, Panov Variation",
@@ -144,17 +222,29 @@
     },
     {
       "names": {
-        "en": "Berlin Defense",
+        "en-US": "Berlin Defense",
         "pt-BR": "Defesa Berlim",
-        "es": "Defensa Berlín"
+        "es-419": "Defensa Berlín",
+        "en-GB": "Berlin Defence",
+        "es-ES": "Defensa Berlín",
+        "pt-PT": "Defesa Berlim",
+        "de": "Berliner Verteidigung",
+        "fr": "Défense berlinoise",
+        "it": "Difesa berlinese"
       },
       "lines": [
         {
           "id": "line-48589cf84ee40695",
           "names": {
-            "en": "Berlin Defense",
+            "en-US": "Berlin Defense",
             "pt-BR": "Defesa Berlim",
-            "es": "Defensa Berlín"
+            "es-419": "Defensa Berlín",
+            "en-GB": "Berlin Defence",
+            "es-ES": "Defensa Berlín",
+            "pt-PT": "Defesa Berlim",
+            "de": "Berliner Verteidigung",
+            "fr": "Défense berlinoise",
+            "it": "Difesa berlinese"
           },
           "eco": "C24",
           "opening": "Bishop's Opening: Berlin Defense",
@@ -164,9 +254,15 @@
         {
           "id": "line-b9255d80d404d230",
           "names": {
-            "en": "Berlin Defense, Greco Gambit",
+            "en-US": "Berlin Defense, Greco Gambit",
             "pt-BR": "Defesa Berlim, Gambito Greco",
-            "es": "Defensa Berlín, Gambito Greco"
+            "es-419": "Defensa Berlín, Gambito Greco",
+            "en-GB": "Berlin Defence, Greco Gambit",
+            "es-ES": "Defensa Berlín, Gambito Greco",
+            "pt-PT": "Defesa Berlim, Gambito Greco",
+            "de": "Berliner Verteidigung, Greco-Gambit",
+            "fr": "Défense berlinoise, Gambit Greco",
+            "it": "Difesa berlinese, Gambetto Greco"
           },
           "eco": "C24",
           "opening": "Bishop's Opening: Berlin Defense, Greco Gambit",
@@ -177,17 +273,29 @@
     },
     {
       "names": {
-        "en": "Boden-Kieseritzky Gambit",
+        "en-US": "Boden-Kieseritzky Gambit",
         "pt-BR": "Gambito Boden-Kieseritzky",
-        "es": "Gambito Boden-Kieseritzky"
+        "es-419": "Gambito Boden-Kieseritzky",
+        "en-GB": "Boden-Kieseritzky Gambit",
+        "es-ES": "Gambito Boden-Kieseritzky",
+        "pt-PT": "Gambito Boden-Kieseritzky",
+        "de": "Boden-Kieseritzky-Gambit",
+        "fr": "Gambit Boden-Kieseritzky",
+        "it": "Gambetto Boden-Kieseritzky"
       },
       "lines": [
         {
           "id": "line-d0c84830e978e899",
           "names": {
-            "en": "Boden-Kieseritzky Gambit",
+            "en-US": "Boden-Kieseritzky Gambit",
             "pt-BR": "Gambito Boden-Kieseritzky",
-            "es": "Gambito Boden-Kieseritzky"
+            "es-419": "Gambito Boden-Kieseritzky",
+            "en-GB": "Boden-Kieseritzky Gambit",
+            "es-ES": "Gambito Boden-Kieseritzky",
+            "pt-PT": "Gambito Boden-Kieseritzky",
+            "de": "Boden-Kieseritzky-Gambit",
+            "fr": "Gambit Boden-Kieseritzky",
+            "it": "Gambetto Boden-Kieseritzky"
           },
           "eco": "C27",
           "opening": "Bishop's Opening: Boden-Kieseritzky Gambit",
@@ -197,9 +305,15 @@
         {
           "id": "line-ac86b6bf998da659",
           "names": {
-            "en": "Boden-Kieseritzky Gambit, Lichtenhein Defense",
+            "en-US": "Boden-Kieseritzky Gambit, Lichtenhein Defense",
             "pt-BR": "Gambito Boden-Kieseritzky, Defesa Lichtenhein",
-            "es": "Gambito Boden-Kieseritzky, Defensa Lichtenhein"
+            "es-419": "Gambito Boden-Kieseritzky, Defensa Lichtenhein",
+            "en-GB": "Boden-Kieseritzky Gambit, Lichtenhein Defence",
+            "es-ES": "Gambito Boden-Kieseritzky, Defensa Lichtenhein",
+            "pt-PT": "Gambito Boden-Kieseritzky, Defesa Lichtenhein",
+            "de": "Boden-Kieseritzky-Gambit, Lichtenhein-Verteidigung",
+            "fr": "Gambit Boden-Kieseritzky, Défense Lichtenhein",
+            "it": "Gambetto Boden-Kieseritzky, Difesa Lichtenhein"
           },
           "eco": "C27",
           "opening": "Bishop's Opening: Boden-Kieseritzky Gambit, Lichtenhein Defense",
@@ -210,17 +324,29 @@
     },
     {
       "names": {
-        "en": "Calabrese Countergambit",
+        "en-US": "Calabrese Countergambit",
         "pt-BR": "Contragambito Calabrese",
-        "es": "Contragambito Calabrese"
+        "es-419": "Contragambito Calabrese",
+        "en-GB": "Calabrese Countergambit",
+        "es-ES": "Contragambito Calabrese",
+        "pt-PT": "Contragambito Calabrese",
+        "de": "Calabrese-Gegengambit",
+        "fr": "Contre-gambit Calabrese",
+        "it": "Controgambetto Calabrese"
       },
       "lines": [
         {
           "id": "line-c0d6818e54d82d97",
           "names": {
-            "en": "Calabrese Countergambit",
+            "en-US": "Calabrese Countergambit",
             "pt-BR": "Contragambito Calabrese",
-            "es": "Contragambito Calabrese"
+            "es-419": "Contragambito Calabrese",
+            "en-GB": "Calabrese Countergambit",
+            "es-ES": "Contragambito Calabrese",
+            "pt-PT": "Contragambito Calabrese",
+            "de": "Calabrese-Gegengambit",
+            "fr": "Contre-gambit Calabrese",
+            "it": "Controgambetto Calabrese"
           },
           "eco": "C23",
           "opening": "Bishop's Opening: Calabrese Countergambit",
@@ -230,9 +356,15 @@
         {
           "id": "line-69dd5e62c82e87fc",
           "names": {
-            "en": "Calabrese Countergambit, Jaenisch Variation",
+            "en-US": "Calabrese Countergambit, Jaenisch Variation",
             "pt-BR": "Contragambito Calabrese, Variante Jaenisch",
-            "es": "Contragambito Calabrese, Variante Jaenisch"
+            "es-419": "Contragambito Calabrese, Variante Jaenisch",
+            "en-GB": "Calabrese Countergambit, Jaenisch Variation",
+            "es-ES": "Contragambito Calabrese, Variante Jaenisch",
+            "pt-PT": "Contragambito Calabrese, Variante Jaenisch",
+            "de": "Calabrese-Gegengambit, Jaenisch-Variante",
+            "fr": "Contre-gambit Calabrese, Variante Jaenisch",
+            "it": "Controgambetto Calabrese, Variante Jaenisch"
           },
           "eco": "C23",
           "opening": "Bishop's Opening: Calabrese Countergambit, Jaenisch Variation",
@@ -243,17 +375,29 @@
     },
     {
       "names": {
-        "en": "Lopez Variation",
+        "en-US": "Lopez Variation",
         "pt-BR": "Variante Lopez",
-        "es": "Variante Lopez"
+        "es-419": "Variante Lopez",
+        "en-GB": "Lopez Variation",
+        "es-ES": "Variante Lopez",
+        "pt-PT": "Variante Lopez",
+        "de": "Lopez-Variante",
+        "fr": "Variante Lopez",
+        "it": "Variante Lopez"
       },
       "lines": [
         {
           "id": "line-2dbd77b085e326a7",
           "names": {
-            "en": "Lopez Variation",
+            "en-US": "Lopez Variation",
             "pt-BR": "Variante Lopez",
-            "es": "Variante Lopez"
+            "es-419": "Variante Lopez",
+            "en-GB": "Lopez Variation",
+            "es-ES": "Variante Lopez",
+            "pt-PT": "Variante Lopez",
+            "de": "Lopez-Variante",
+            "fr": "Variante Lopez",
+            "it": "Variante Lopez"
           },
           "eco": "C23",
           "opening": "Bishop's Opening: Lopez Variation",
@@ -263,9 +407,15 @@
         {
           "id": "line-bbf2925a6c2275b4",
           "names": {
-            "en": "Lopez Variation, Lopez Gambit",
+            "en-US": "Lopez Variation, Lopez Gambit",
             "pt-BR": "Variante Lopez, Gambito Lopez",
-            "es": "Variante Lopez, Gambito Lopez"
+            "es-419": "Variante Lopez, Gambito Lopez",
+            "en-GB": "Lopez Variation, Lopez Gambit",
+            "es-ES": "Variante Lopez, Gambito Lopez",
+            "pt-PT": "Variante Lopez, Gambito Lopez",
+            "de": "Lopez-Variante, Lopez-Gambit",
+            "fr": "Variante Lopez, Gambit Lopez",
+            "it": "Variante Lopez, Gambetto Lopez"
           },
           "eco": "C23",
           "opening": "Bishop's Opening: Lopez Variation, Lopez Gambit",
@@ -279,9 +429,15 @@
     {
       "id": "line-510fe9b9925511a1",
       "names": {
-        "en": "Anderssen Gambit",
+        "en-US": "Anderssen Gambit",
         "pt-BR": "Gambito Anderssen",
-        "es": "Gambito Anderssen"
+        "es-419": "Gambito Anderssen",
+        "en-GB": "Anderssen Gambit",
+        "es-ES": "Gambito Anderssen",
+        "pt-PT": "Gambito Anderssen",
+        "de": "Anderssen-Gambit",
+        "fr": "Gambit Anderssen",
+        "it": "Gambetto Anderssen"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Anderssen Gambit",
@@ -291,9 +447,15 @@
     {
       "id": "line-eacbcb94bd51d262",
       "names": {
-        "en": "Boi Variation",
+        "en-US": "Boi Variation",
         "pt-BR": "Variante Boi",
-        "es": "Variante Boi"
+        "es-419": "Variante Boi",
+        "en-GB": "Boi Variation",
+        "es-ES": "Variante Boi",
+        "pt-PT": "Variante Boi",
+        "de": "Boi-Variante",
+        "fr": "Variante Boi",
+        "it": "Variante Boi"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Boi Variation",
@@ -303,9 +465,15 @@
     {
       "id": "line-a9c8005e016913aa",
       "names": {
-        "en": "Four Pawns Gambit",
+        "en-US": "Four Pawns Gambit",
         "pt-BR": "Gambito dos Quatro Peões",
-        "es": "Gambito de los Cuatro Peones"
+        "es-419": "Gambito de los Cuatro Peones",
+        "en-GB": "Four Pawns Gambit",
+        "es-ES": "Gambito de los Cuatro Peones",
+        "pt-PT": "Gambito dos Quatro Peões",
+        "de": "Vierbauerngambit",
+        "fr": "Gambit des quatre pions",
+        "it": "Gambetto dei quattro pedoni"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Four Pawns Gambit",
@@ -315,9 +483,15 @@
     {
       "id": "line-eb91e1261568716e",
       "names": {
-        "en": "Horwitz Gambit",
+        "en-US": "Horwitz Gambit",
         "pt-BR": "Gambito Horwitz",
-        "es": "Gambito Horwitz"
+        "es-419": "Gambito Horwitz",
+        "en-GB": "Horwitz Gambit",
+        "es-ES": "Gambito Horwitz",
+        "pt-PT": "Gambito Horwitz",
+        "de": "Horwitz-Gambit",
+        "fr": "Gambit Horwitz",
+        "it": "Gambetto Horwitz"
       },
       "eco": "C26",
       "opening": "Bishop's Opening: Horwitz Gambit",
@@ -327,9 +501,15 @@
     {
       "id": "line-059ff1b637fdea35",
       "names": {
-        "en": "Khan Gambit",
+        "en-US": "Khan Gambit",
         "pt-BR": "Gambito Khan",
-        "es": "Gambito Khan"
+        "es-419": "Gambito Khan",
+        "en-GB": "Khan Gambit",
+        "es-ES": "Gambito Khan",
+        "pt-PT": "Gambito Khan",
+        "de": "Khan-Gambit",
+        "fr": "Gambit Khan",
+        "it": "Gambetto Khan"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Khan Gambit",
@@ -339,9 +519,15 @@
     {
       "id": "line-818f8b1f48cd5f6f",
       "names": {
-        "en": "Kitchener Folly",
+        "en-US": "Kitchener Folly",
         "pt-BR": "Loucura de Kitchener",
-        "es": "Locura de Kitchener"
+        "es-419": "Locura de Kitchener",
+        "en-GB": "Kitchener Folly",
+        "es-ES": "Locura de Kitchener",
+        "pt-PT": "Loucura de Kitchener",
+        "de": "Kitchener-Torheit",
+        "fr": "Folie Kitchener",
+        "it": "Follia Kitchener"
       },
       "eco": "C24",
       "opening": "Bishop's Opening: Kitchener Folly",
@@ -351,9 +537,15 @@
     {
       "id": "line-e3b27fae1d0f65c0",
       "names": {
-        "en": "Krejcik Gambit",
+        "en-US": "Krejcik Gambit",
         "pt-BR": "Gambito Krejcik",
-        "es": "Gambito Krejcik"
+        "es-419": "Gambito Krejcik",
+        "en-GB": "Krejcik Gambit",
+        "es-ES": "Gambito Krejcik",
+        "pt-PT": "Gambito Krejcik",
+        "de": "Krejcik-Gambit",
+        "fr": "Gambit Krejcik",
+        "it": "Gambetto Krejcik"
       },
       "eco": "C24",
       "opening": "Bishop's Opening: Krejcik Gambit",
@@ -363,9 +555,15 @@
     {
       "id": "line-c9b6df04db96ba78",
       "names": {
-        "en": "Lewis Gambit",
+        "en-US": "Lewis Gambit",
         "pt-BR": "Gambito Lewis",
-        "es": "Gambito Lewis"
+        "es-419": "Gambito Lewis",
+        "en-GB": "Lewis Gambit",
+        "es-ES": "Gambito Lewis",
+        "pt-PT": "Gambito Lewis",
+        "de": "Lewis-Gambit",
+        "fr": "Gambit Lewis",
+        "it": "Gambetto Lewis"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Lewis Gambit",
@@ -375,9 +573,15 @@
     {
       "id": "line-a86621320e8553b4",
       "names": {
-        "en": "Lisitsyn Variation",
+        "en-US": "Lisitsyn Variation",
         "pt-BR": "Variante Lisitsyn",
-        "es": "Variante Lisitsyn"
+        "es-419": "Variante Lisitsyn",
+        "en-GB": "Lisitsyn Variation",
+        "es-ES": "Variante Lisitsyn",
+        "pt-PT": "Variante Lisitsyn",
+        "de": "Lissizyn-Variante",
+        "fr": "Variante Lissitsyne",
+        "it": "Variante Lisicyn"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Lisitsyn Variation",
@@ -387,9 +591,15 @@
     {
       "id": "line-f059e7820cd10d66",
       "names": {
-        "en": "Lopez Gambit",
+        "en-US": "Lopez Gambit",
         "pt-BR": "Gambito Lopez",
-        "es": "Gambito Lopez"
+        "es-419": "Gambito Lopez",
+        "en-GB": "Lopez Gambit",
+        "es-ES": "Gambito Lopez",
+        "pt-PT": "Gambito Lopez",
+        "de": "Lopez-Gambit",
+        "fr": "Gambit Lopez",
+        "it": "Gambetto Lopez"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Lopez Gambit",
@@ -399,9 +609,15 @@
     {
       "id": "line-603ca0e1e0555929",
       "names": {
-        "en": "Bishop's Opening",
+        "en-US": "Bishop's Opening",
         "pt-BR": "Abertura do Bispo",
-        "es": "Apertura de Alfil"
+        "es-419": "Apertura de Alfil",
+        "en-GB": "Bishop's Opening",
+        "es-ES": "Apertura de Alfil",
+        "pt-PT": "Abertura do Bispo",
+        "de": "Läuferspiel",
+        "fr": "Début du fou",
+        "it": "Partita di alfiere"
       },
       "eco": "C23",
       "opening": "Bishop's Opening",
@@ -411,9 +627,15 @@
     {
       "id": "line-2f896857d13f7b04",
       "names": {
-        "en": "Pachman Gambit",
+        "en-US": "Pachman Gambit",
         "pt-BR": "Gambito Pachman",
-        "es": "Gambito Pachman"
+        "es-419": "Gambito Pachman",
+        "en-GB": "Pachman Gambit",
+        "es-ES": "Gambito Pachman",
+        "pt-PT": "Gambito Pachman",
+        "de": "Pachman-Gambit",
+        "fr": "Gambit Pachman",
+        "it": "Gambetto Pachman"
       },
       "eco": "C24",
       "opening": "Bishop's Opening: Pachman Gambit",
@@ -423,9 +645,15 @@
     {
       "id": "line-338a167f8788cab1",
       "names": {
-        "en": "Paulsen Defense",
+        "en-US": "Paulsen Defense",
         "pt-BR": "Defesa Paulsen",
-        "es": "Defensa Paulsen"
+        "es-419": "Defensa Paulsen",
+        "en-GB": "Paulsen Defence",
+        "es-ES": "Defensa Paulsen",
+        "pt-PT": "Defesa Paulsen",
+        "de": "Paulsen-Verteidigung",
+        "fr": "Défense Paulsen",
+        "it": "Difesa Paulsen"
       },
       "eco": "C24",
       "opening": "Bishop's Opening: Paulsen Defense",
@@ -435,9 +663,15 @@
     {
       "id": "line-f4d614d37984ade2",
       "names": {
-        "en": "Philidor Counterattack",
+        "en-US": "Philidor Counterattack",
         "pt-BR": "Contra-ataque Philidor",
-        "es": "Contraataque Philidor"
+        "es-419": "Contraataque Philidor",
+        "en-GB": "Philidor Counterattack",
+        "es-ES": "Contraataque Philidor",
+        "pt-PT": "Contra-ataque Philidor",
+        "de": "Philidor-Gegenangriff",
+        "fr": "Contre-attaque Philidor",
+        "it": "Contrattacco Philidor"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Philidor Counterattack",
@@ -447,9 +681,15 @@
     {
       "id": "line-0e6ed726e33631fa",
       "names": {
-        "en": "Philidor Variation",
+        "en-US": "Philidor Variation",
         "pt-BR": "Variante Philidor",
-        "es": "Variante Philidor"
+        "es-419": "Variante Philidor",
+        "en-GB": "Philidor Variation",
+        "es-ES": "Variante Philidor",
+        "pt-PT": "Variante Philidor",
+        "de": "Philidor-Variante",
+        "fr": "Variante Philidor",
+        "it": "Variante Philidor"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Philidor Variation",
@@ -459,9 +699,15 @@
     {
       "id": "line-e105470a17b1a52b",
       "names": {
-        "en": "Ponziani Gambit",
+        "en-US": "Ponziani Gambit",
         "pt-BR": "Gambito Ponziani",
-        "es": "Gambito Ponziani"
+        "es-419": "Gambito Ponziani",
+        "en-GB": "Ponziani Gambit",
+        "es-ES": "Gambito Ponziani",
+        "pt-PT": "Gambito Ponziani",
+        "de": "Ponziani-Gambit",
+        "fr": "Gambit Ponziani",
+        "it": "Gambetto Ponziani"
       },
       "eco": "C24",
       "opening": "Bishop's Opening: Ponziani Gambit",
@@ -471,9 +717,15 @@
     {
       "id": "line-435fef1f92dcbfdf",
       "names": {
-        "en": "Pratt Variation",
+        "en-US": "Pratt Variation",
         "pt-BR": "Variante Pratt",
-        "es": "Variante Pratt"
+        "es-419": "Variante Pratt",
+        "en-GB": "Pratt Variation",
+        "es-ES": "Variante Pratt",
+        "pt-PT": "Variante Pratt",
+        "de": "Pratt-Variante",
+        "fr": "Variante Pratt",
+        "it": "Variante Pratt"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Pratt Variation",
@@ -483,9 +735,15 @@
     {
       "id": "line-f64de7df293e7a48",
       "names": {
-        "en": "Stein Gambit",
+        "en-US": "Stein Gambit",
         "pt-BR": "Gambito Stein",
-        "es": "Gambito Stein"
+        "es-419": "Gambito Stein",
+        "en-GB": "Stein Gambit",
+        "es-ES": "Gambito Stein",
+        "pt-PT": "Gambito Stein",
+        "de": "Stein-Gambit",
+        "fr": "Gambit Stein",
+        "it": "Gambetto Stein"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Stein Gambit",
@@ -495,9 +753,15 @@
     {
       "id": "line-d0340c3b09cbb58d",
       "names": {
-        "en": "Thorold Gambit",
+        "en-US": "Thorold Gambit",
         "pt-BR": "Gambito Thorold",
-        "es": "Gambito Thorold"
+        "es-419": "Gambito Thorold",
+        "en-GB": "Thorold Gambit",
+        "es-ES": "Gambito Thorold",
+        "pt-PT": "Gambito Thorold",
+        "de": "Thorold-Gambit",
+        "fr": "Gambit Thorold",
+        "it": "Gambetto Thorold"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: Thorold Gambit",
@@ -507,9 +771,15 @@
     {
       "id": "line-be32d095ff53b522",
       "names": {
-        "en": "Vienna Hybrid",
+        "en-US": "Vienna Hybrid",
         "pt-BR": "Híbrido Vienense",
-        "es": "Híbrido Vienés"
+        "es-419": "Híbrido Vienés",
+        "en-GB": "Vienna Hybrid",
+        "es-ES": "Híbrido Vienés",
+        "pt-PT": "Híbrido Vienense",
+        "de": "Wiener Hybrid",
+        "fr": "Hybride viennois",
+        "it": "Ibrido viennese"
       },
       "eco": "C24",
       "opening": "Bishop's Opening: Vienna Hybrid",
@@ -519,9 +789,15 @@
     {
       "id": "line-335b5ee8e025626b",
       "names": {
-        "en": "Warsaw Gambit",
+        "en-US": "Warsaw Gambit",
         "pt-BR": "Gambito Varsóvia",
-        "es": "Gambito Varsovia"
+        "es-419": "Gambito Varsovia",
+        "en-GB": "Warsaw Gambit",
+        "es-ES": "Gambito Varsovia",
+        "pt-PT": "Gambito Varsóvia",
+        "de": "Warschauer Gambit",
+        "fr": "Gambit de Varsovie",
+        "it": "Gambetto di Varsavia"
       },
       "eco": "C24",
       "opening": "Bishop's Opening: Warsaw Gambit",
@@ -531,9 +807,15 @@
     {
       "id": "line-fdd9157ea2326d72",
       "names": {
-        "en": "del Rio Variation",
+        "en-US": "del Rio Variation",
         "pt-BR": "Variante del Rio",
-        "es": "Variante del Rio"
+        "es-419": "Variante del Rio",
+        "en-GB": "del Rio Variation",
+        "es-ES": "Variante del Rio",
+        "pt-PT": "Variante del Rio",
+        "de": "Del-Rio-Variante",
+        "fr": "Variante del Rio",
+        "it": "Variante del Rio"
       },
       "eco": "C23",
       "opening": "Bishop's Opening: del Rio Variation",

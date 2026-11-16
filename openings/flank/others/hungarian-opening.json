@@ -1,18 +1,30 @@
 {
   "id": "hungarian-opening",
   "names": {
-    "en": "Hungarian Opening",
+    "en-US": "Hungarian Opening",
     "pt-BR": "Abertura Benko",
-    "es": "Apertura Benko"
+    "es-419": "Apertura Benko",
+    "en-GB": "King's Fianchetto Opening",
+    "es-ES": "Apertura Benko",
+    "pt-PT": "Abertura Benko",
+    "de": "Königsfianchetto",
+    "fr": "Ouverture du fianchetto-roi",
+    "it": "Apertura Benkő"
   },
   "order": null,
   "lines": [
     {
       "id": "line-7a865e76dbc7da1b",
       "names": {
-        "en": "Asten Gambit",
+        "en-US": "Asten Gambit",
         "pt-BR": "Gambito Asten",
-        "es": "Gambito Asten"
+        "es-419": "Gambito Asten",
+        "en-GB": "Asten Gambit",
+        "es-ES": "Gambito Asten",
+        "pt-PT": "Gambito Asten",
+        "de": "Asten-Gambit",
+        "fr": "Gambit Asten",
+        "it": "Gambetto Asten"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Asten Gambit",
@@ -22,9 +34,15 @@
     {
       "id": "line-ca6936caa90d6680",
       "names": {
-        "en": "Burk Gambit",
+        "en-US": "Burk Gambit",
         "pt-BR": "Gambito Burk",
-        "es": "Gambito Burk"
+        "es-419": "Gambito Burk",
+        "en-GB": "Burk Gambit",
+        "es-ES": "Gambito Burk",
+        "pt-PT": "Gambito Burk",
+        "de": "Burk-Gambit",
+        "fr": "Gambit Burk",
+        "it": "Gambetto Burk"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Burk Gambit",
@@ -34,9 +52,15 @@
     {
       "id": "line-72741dd4abef6d05",
       "names": {
-        "en": "Bücker Gambit",
+        "en-US": "Bücker Gambit",
         "pt-BR": "Gambito Bücker",
-        "es": "Gambito Bücker"
+        "es-419": "Gambito Bücker",
+        "en-GB": "Bücker Gambit",
+        "es-ES": "Gambito Bücker",
+        "pt-PT": "Gambito Bücker",
+        "de": "Bücker-Gambit",
+        "fr": "Gambit Bücker",
+        "it": "Gambetto Bücker"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Bücker Gambit",
@@ -46,9 +70,15 @@
     {
       "id": "line-33a9fd96d5819da1",
       "names": {
-        "en": "Catalan Formation",
+        "en-US": "Catalan Formation",
         "pt-BR": "Formação Catalã",
-        "es": "Formación Catalana"
+        "es-419": "Formación Catalana",
+        "en-GB": "Catalan Formation",
+        "es-ES": "Formación Catalana",
+        "pt-PT": "Formação Catalã",
+        "de": "Katalanischer Aufbau",
+        "fr": "Formation catalane",
+        "it": "Formazione catalana"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Catalan Formation",
@@ -58,9 +88,15 @@
     {
       "id": "line-47b77d3b4552903d",
       "names": {
-        "en": "Dutch Defense",
+        "en-US": "Dutch Defense",
         "pt-BR": "Defesa Holandesa",
-        "es": "Defensa Holandesa"
+        "es-419": "Defensa Holandesa",
+        "en-GB": "Dutch Defence",
+        "es-ES": "Defensa Holandesa",
+        "pt-PT": "Defesa Holandesa",
+        "de": "Holländische Verteidigung",
+        "fr": "Défense hollandaise",
+        "it": "Difesa olandese"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Dutch Defense",
@@ -70,9 +106,15 @@
     {
       "id": "line-fd8fa6aaf7e99272",
       "names": {
-        "en": "Indian Defense",
+        "en-US": "Indian Defense",
         "pt-BR": "Defesa Índia",
-        "es": "Defensa India"
+        "es-419": "Defensa India",
+        "en-GB": "Indian Defence",
+        "es-ES": "Defensa India",
+        "pt-PT": "Defesa Índia",
+        "de": "Indische Verteidigung",
+        "fr": "Défense indienne",
+        "it": "Difesa indiana"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Indian Defense",
@@ -82,9 +124,15 @@
     {
       "id": "line-0bcd655c888764d2",
       "names": {
-        "en": "Hungarian Opening",
+        "en-US": "Hungarian Opening",
         "pt-BR": "Abertura Benko",
-        "es": "Apertura Benko"
+        "es-419": "Apertura Benko",
+        "en-GB": "Hungarian Opening",
+        "es-ES": "Apertura Benko",
+        "pt-PT": "Abertura Benko",
+        "de": "Ungarische Eröffnung",
+        "fr": "Ouverture hongroise",
+        "it": "Apertura ungherese"
       },
       "eco": "A00",
       "opening": "Hungarian Opening",
@@ -94,9 +142,15 @@
     {
       "id": "line-93b99b94683eb482",
       "names": {
-        "en": "Myers Defense",
+        "en-US": "Myers Defense",
         "pt-BR": "Defesa Myers",
-        "es": "Defensa Myers"
+        "es-419": "Defensa Myers",
+        "en-GB": "Myers Defence",
+        "es-ES": "Defensa Myers",
+        "pt-PT": "Defesa Myers",
+        "de": "Myers-Verteidigung",
+        "fr": "Défense Myers",
+        "it": "Difesa Myers"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Myers Defense",
@@ -106,9 +160,15 @@
     {
       "id": "line-d9cb48f51cd04953",
       "names": {
-        "en": "Pachman Gambit",
+        "en-US": "Pachman Gambit",
         "pt-BR": "Gambito Pachman",
-        "es": "Gambito Pachman"
+        "es-419": "Gambito Pachman",
+        "en-GB": "Pachman Gambit",
+        "es-ES": "Gambito Pachman",
+        "pt-PT": "Gambito Pachman",
+        "de": "Pachman-Gambit",
+        "fr": "Gambit Pachman",
+        "it": "Gambetto Pachman"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Pachman Gambit",
@@ -118,9 +178,15 @@
     {
       "id": "line-e9c38443db111fa1",
       "names": {
-        "en": "Paris Gambit",
+        "en-US": "Paris Gambit",
         "pt-BR": "Gambito Parisiense",
-        "es": "Gambito Parisino"
+        "es-419": "Gambito Parisino",
+        "en-GB": "Paris Gambit",
+        "es-ES": "Gambito Parisino",
+        "pt-PT": "Gambito Parisiense",
+        "de": "Pariser Gambit",
+        "fr": "Gambit parisien",
+        "it": "Gambetto parigino"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Paris Gambit",
@@ -130,9 +196,15 @@
     {
       "id": "line-53d1f413ff766366",
       "names": {
-        "en": "Reversed Alekhine",
+        "en-US": "Reversed Alekhine",
         "pt-BR": "Alekhine Invertida",
-        "es": "Alekhine Invertida"
+        "es-419": "Alekhine Invertida",
+        "en-GB": "Reversed Alekhine",
+        "es-ES": "Alekhine Invertida",
+        "pt-PT": "Alekhine Invertida",
+        "de": "Aljechin im Anzug",
+        "fr": "Alekhine inversée",
+        "it": "Alechin invertita"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Reversed Alekhine",
@@ -142,9 +214,15 @@
     {
       "id": "line-371ab0a612383555",
       "names": {
-        "en": "Reversed Brooklyn Defense, Brooklyn Benko Gambit",
+        "en-US": "Reversed Brooklyn Defense, Brooklyn Benko Gambit",
         "pt-BR": "Defesa Brooklyn Invertida, Gambito Benko Brooklyn",
-        "es": "Defensa Brooklyn Invertida, Gambito Benko Brooklyn"
+        "es-419": "Defensa Brooklyn Invertida, Gambito Benko Brooklyn",
+        "en-GB": "Reversed Brooklyn Defence, Brooklyn Benko Gambit",
+        "es-ES": "Defensa Brooklyn Invertida, Gambito Benko Brooklyn",
+        "pt-PT": "Defesa Brooklyn Invertida, Gambito Benko Brooklyn",
+        "de": "Brooklyn-Verteidigung im Anzug, Brooklyn-Benko-Gambit",
+        "fr": "Défense Brooklyn inversée, Gambit Brooklyn Benko",
+        "it": "Difesa Brooklyn invertita, Gambetto Brooklyn Benko"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Reversed Brooklyn Defense, Brooklyn Benko Gambit",
@@ -154,9 +232,15 @@
     {
       "id": "line-88367f7e35db00e3",
       "names": {
-        "en": "Reversed Modern Defense",
+        "en-US": "Reversed Modern Defense",
         "pt-BR": "Defesa Moderna Invertida",
-        "es": "Defensa Moderna Invertida"
+        "es-419": "Defensa Moderna Invertida",
+        "en-GB": "Reversed Modern Defence",
+        "es-ES": "Defensa Moderna Invertida",
+        "pt-PT": "Defesa Moderna Invertida",
+        "de": "Moderne Verteidigung im Anzug",
+        "fr": "Défense moderne inversée",
+        "it": "Difesa moderna invertita"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Reversed Modern Defense",
@@ -166,9 +250,15 @@
     {
       "id": "line-e2e0b11cbdc62390",
       "names": {
-        "en": "Reversed Norwegian Defense",
+        "en-US": "Reversed Norwegian Defense",
         "pt-BR": "Defesa Norueguesa Invertida",
-        "es": "Defensa Noruega Invertida"
+        "es-419": "Defensa Noruega Invertida",
+        "en-GB": "Reversed Norwegian Defence",
+        "es-ES": "Defensa Noruega Invertida",
+        "pt-PT": "Defesa Norueguesa Invertida",
+        "de": "Norwegische Verteidigung im Anzug",
+        "fr": "Défense norvégienne inversée",
+        "it": "Difesa norvegese invertita"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Reversed Norwegian Defense",
@@ -178,9 +268,15 @@
     {
       "id": "line-ef19a47eceb03955",
       "names": {
-        "en": "Sicilian Invitation",
+        "en-US": "Sicilian Invitation",
         "pt-BR": "Convite à Siciliana",
-        "es": "Invitación a la Siciliana"
+        "es-419": "Invitación a la Siciliana",
+        "en-GB": "Sicilian Invitation",
+        "es-ES": "Invitación a la Siciliana",
+        "pt-PT": "Convite à Siciliana",
+        "de": "Sizilianische Einladung",
+        "fr": "Invitation sicilienne",
+        "it": "Invito siciliano"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Sicilian Invitation",
@@ -190,9 +286,15 @@
     {
       "id": "line-4cb02fb27bb189b9",
       "names": {
-        "en": "Slav Formation",
+        "en-US": "Slav Formation",
         "pt-BR": "Formação Eslava",
-        "es": "Formación Eslava"
+        "es-419": "Formación Eslava",
+        "en-GB": "Slav Formation",
+        "es-ES": "Formación Eslava",
+        "pt-PT": "Formação Eslava",
+        "de": "Slawischer Aufbau",
+        "fr": "Formation slave",
+        "it": "Formazione slava"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Slav Formation",
@@ -202,9 +304,15 @@
     {
       "id": "line-0d38b0e01f032718",
       "names": {
-        "en": "Symmetrical Variation",
+        "en-US": "Symmetrical Variation",
         "pt-BR": "Variante Simétrica",
-        "es": "Variante Simétrica"
+        "es-419": "Variante Simétrica",
+        "en-GB": "Symmetrical Variation",
+        "es-ES": "Variante Simétrica",
+        "pt-PT": "Variante Simétrica",
+        "de": "Symmetrische Variante",
+        "fr": "Variante symétrique",
+        "it": "Variante simmetrica"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Symmetrical Variation",
@@ -214,9 +322,15 @@
     {
       "id": "line-350e7d109026ef3b",
       "names": {
-        "en": "Van Kuijk Gambit",
+        "en-US": "Van Kuijk Gambit",
         "pt-BR": "Gambito Van Kuijk",
-        "es": "Gambito Van Kuijk"
+        "es-419": "Gambito Van Kuijk",
+        "en-GB": "Van Kuijk Gambit",
+        "es-ES": "Gambito Van Kuijk",
+        "pt-PT": "Gambito Van Kuijk",
+        "de": "Van-Kuijk-Gambit",
+        "fr": "Gambit Van Kuijk",
+        "it": "Gambetto Van Kuijk"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Van Kuijk Gambit",
@@ -226,9 +340,15 @@
     {
       "id": "line-9bba78983453ea4d",
       "names": {
-        "en": "Wiedenhagen-Beta Gambit",
+        "en-US": "Wiedenhagen-Beta Gambit",
         "pt-BR": "Gambito Wiedenhagen-Beta",
-        "es": "Gambito Wiedenhagen-Beta"
+        "es-419": "Gambito Wiedenhagen-Beta",
+        "en-GB": "Wiedenhagen-Beta Gambit",
+        "es-ES": "Gambito Wiedenhagen-Beta",
+        "pt-PT": "Gambito Wiedenhagen-Beta",
+        "de": "Wiedenhagen-Beta-Gambit",
+        "fr": "Gambit Wiedenhagen-Beta",
+        "it": "Gambetto Wiedenhagen-Beta"
       },
       "eco": "A07",
       "opening": "Hungarian Opening: Wiedenhagen-Beta Gambit",
@@ -238,9 +358,15 @@
     {
       "id": "line-369b9561f6e3a319",
       "names": {
-        "en": "Winterberg Gambit",
+        "en-US": "Winterberg Gambit",
         "pt-BR": "Gambito Winterberg",
-        "es": "Gambito Winterberg"
+        "es-419": "Gambito Winterberg",
+        "en-GB": "Winterberg Gambit",
+        "es-ES": "Gambito Winterberg",
+        "pt-PT": "Gambito Winterberg",
+        "de": "Winterberg-Gambit",
+        "fr": "Gambit Winterberg",
+        "it": "Gambetto Winterberg"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Winterberg Gambit",

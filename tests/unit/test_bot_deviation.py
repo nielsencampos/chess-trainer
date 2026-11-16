@@ -54,7 +54,7 @@ def line(variant_id: str, sans: str) -> Variant:
     return Variant(
         variant_id,
         "test",
-        {"en": variant_id},
+        {"en-US": variant_id},
         None,
         None,
         "test",

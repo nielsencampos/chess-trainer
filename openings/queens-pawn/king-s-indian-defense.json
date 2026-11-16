@@ -1,25 +1,43 @@
 {
   "id": "king-s-indian-defense",
   "names": {
-    "en": "King's Indian Defense",
+    "en-US": "King's Indian Defense",
     "pt-BR": "Defesa Índia do Rei",
-    "es": "Defensa India de Rey"
+    "es-419": "Defensa India de Rey",
+    "en-GB": "King's Indian Defence",
+    "es-ES": "Defensa India de Rey",
+    "pt-PT": "Defesa Índia do Rei",
+    "de": "Königsindische Verteidigung",
+    "fr": "Défense est-indienne",
+    "it": "Difesa est-indiana"
   },
   "order": 4,
   "variants": [
     {
       "names": {
-        "en": "Fianchetto Variation",
+        "en-US": "Fianchetto Variation",
         "pt-BR": "Variante do Fianqueto",
-        "es": "Variante del Fianchetto"
+        "es-419": "Variante del Fianchetto",
+        "en-GB": "Fianchetto Variation",
+        "es-ES": "Variante del Fianchetto",
+        "pt-PT": "Variante do Fianqueto",
+        "de": "Fianchetto-Variante",
+        "fr": "Variante du fianchetto",
+        "it": "Variante del fianchetto"
       },
       "lines": [
         {
           "id": "line-539f3c2e87cf916f",
           "names": {
-            "en": "Fianchetto Variation, Delayed Fianchetto",
+            "en-US": "Fianchetto Variation, Delayed Fianchetto",
             "pt-BR": "Variante do Fianqueto, Fianqueto Adiado",
-            "es": "Variante del Fianchetto, Fianchetto Retrasado"
+            "es-419": "Variante del Fianchetto, Fianchetto Retrasado",
+            "en-GB": "Fianchetto Variation, Delayed Fianchetto",
+            "es-ES": "Variante del Fianchetto, Fianchetto Retrasado",
+            "pt-PT": "Variante do Fianqueto, Fianqueto Adiado",
+            "de": "Fianchetto-Variante, Verzögertes Fianchetto",
+            "fr": "Variante du fianchetto, Fianchetto retardé",
+            "it": "Variante del fianchetto, Fianchetto ritardato"
           },
           "eco": "E62",
           "opening": "King's Indian Defense: Fianchetto Variation, Delayed Fianchetto",
@@ -29,9 +47,15 @@
         {
           "id": "line-6f96485de1fbf09c",
           "names": {
-            "en": "Fianchetto Variation, Long Variation",
+            "en-US": "Fianchetto Variation, Long Variation",
             "pt-BR": "Variante do Fianqueto, Variante Longa",
-            "es": "Variante del Fianchetto, Variante Larga"
+            "es-419": "Variante del Fianchetto, Variante Larga",
+            "en-GB": "Fianchetto Variation, Long Variation",
+            "es-ES": "Variante del Fianchetto, Variante Larga",
+            "pt-PT": "Variante do Fianqueto, Variante Longa",
+            "de": "Fianchetto-Variante, Lange Variante",
+            "fr": "Variante du fianchetto, Variante longue",
+            "it": "Variante del fianchetto, Variante lunga"
           },
           "eco": "E68",
           "opening": "King's Indian Defense: Fianchetto Variation, Long Variation",
@@ -41,9 +65,15 @@
         {
           "id": "line-8bf581592d22448a",
           "names": {
-            "en": "Fianchetto Variation, Simagin Variation",
+            "en-US": "Fianchetto Variation, Simagin Variation",
             "pt-BR": "Variante do Fianqueto, Variante Simagin",
-            "es": "Variante del Fianchetto, Variante Simagin"
+            "es-419": "Variante del Fianchetto, Variante Simagin",
+            "en-GB": "Fianchetto Variation, Simagin Variation",
+            "es-ES": "Variante del Fianchetto, Variante Simagin",
+            "pt-PT": "Variante do Fianqueto, Variante Simagin",
+            "de": "Fianchetto-Variante, Simagin-Variante",
+            "fr": "Variante du fianchetto, Variante Simagin",
+            "it": "Variante del fianchetto, Variante Simagin"
           },
           "eco": "E62",
           "opening": "King's Indian Defense: Fianchetto Variation, Simagin Variation",
@@ -53,9 +83,15 @@
         {
           "id": "line-de029d4ccbe717e5",
           "names": {
-            "en": "Fianchetto Variation, Larsen Defense",
+            "en-US": "Fianchetto Variation, Larsen Defense",
             "pt-BR": "Variante do Fianqueto, Defesa Larsen",
-            "es": "Variante del Fianchetto, Defensa Larsen"
+            "es-419": "Variante del Fianchetto, Defensa Larsen",
+            "en-GB": "Fianchetto Variation, Larsen Defence",
+            "es-ES": "Variante del Fianchetto, Defensa Larsen",
+            "pt-PT": "Variante do Fianqueto, Defesa Larsen",
+            "de": "Fianchetto-Variante, Larsen-Verteidigung",
+            "fr": "Variante du fianchetto, Défense Larsen",
+            "it": "Variante del fianchetto, Difesa Larsen"
           },
           "eco": "E62",
           "opening": "King's Indian Defense: Fianchetto Variation, Larsen Defense",
@@ -65,9 +101,15 @@
         {
           "id": "line-81b4eadf6407b3e4",
           "names": {
-            "en": "Fianchetto Variation, Benjamin Defense",
+            "en-US": "Fianchetto Variation, Benjamin Defense",
             "pt-BR": "Variante do Fianqueto, Defesa Benjamin",
-            "es": "Variante del Fianchetto, Defensa Benjamin"
+            "es-419": "Variante del Fianchetto, Defensa Benjamin",
+            "en-GB": "Fianchetto Variation, Benjamin Defence",
+            "es-ES": "Variante del Fianchetto, Defensa Benjamin",
+            "pt-PT": "Variante do Fianqueto, Defesa Benjamin",
+            "de": "Fianchetto-Variante, Benjamin-Verteidigung",
+            "fr": "Variante du fianchetto, Défense Benjamin",
+            "it": "Variante del fianchetto, Difesa Benjamin"
           },
           "eco": "E61",
           "opening": "King's Indian Defense: Fianchetto Variation, Benjamin Defense",
@@ -77,9 +119,15 @@
         {
           "id": "line-9f0026b22bd63d5a",
           "names": {
-            "en": "Fianchetto Variation",
+            "en-US": "Fianchetto Variation",
             "pt-BR": "Variante do Fianqueto",
-            "es": "Variante del Fianchetto"
+            "es-419": "Variante del Fianchetto",
+            "en-GB": "Fianchetto Variation",
+            "es-ES": "Variante del Fianchetto",
+            "pt-PT": "Variante do Fianqueto",
+            "de": "Fianchetto-Variante",
+            "fr": "Variante du fianchetto",
+            "it": "Variante del fianchetto"
           },
           "eco": "E60",
           "opening": "King's Indian Defense: Fianchetto Variation",
@@ -89,9 +137,15 @@
         {
           "id": "line-63e6c763868c359c",
           "names": {
-            "en": "Fianchetto Variation, Classical Fianchetto",
+            "en-US": "Fianchetto Variation, Classical Fianchetto",
             "pt-BR": "Variante do Fianqueto, Fianqueto Clássico",
-            "es": "Variante del Fianchetto, Fianchetto Clásico"
+            "es-419": "Variante del Fianchetto, Fianchetto Clásico",
+            "en-GB": "Fianchetto Variation, Classical Fianchetto",
+            "es-ES": "Variante del Fianchetto, Fianchetto Clásico",
+            "pt-PT": "Variante do Fianqueto, Fianqueto Clássico",
+            "de": "Fianchetto-Variante, Klassisches Fianchetto",
+            "fr": "Variante du fianchetto, Fianchetto classique",
+            "it": "Variante del fianchetto, Fianchetto classico"
           },
           "eco": "E67",
           "opening": "King's Indian Defense: Fianchetto Variation, Classical Fianchetto",
@@ -101,9 +155,15 @@
         {
           "id": "line-66ddb7b661cfa4cd",
           "names": {
-            "en": "Fianchetto Variation, Classical Variation",
+            "en-US": "Fianchetto Variation, Classical Variation",
             "pt-BR": "Variante do Fianqueto, Variante Clássica",
-            "es": "Variante del Fianchetto, Variante Clásica"
+            "es-419": "Variante del Fianchetto, Variante Clásica",
+            "en-GB": "Fianchetto Variation, Classical Variation",
+            "es-ES": "Variante del Fianchetto, Variante Clásica",
+            "pt-PT": "Variante do Fianqueto, Variante Clássica",
+            "de": "Fianchetto-Variante, Klassische Variante",
+            "fr": "Variante du fianchetto, Variante classique",
+            "it": "Variante del fianchetto, Variante classica"
           },
           "eco": "E68",
           "opening": "King's Indian Defense: Fianchetto Variation, Classical Variation",
@@ -113,9 +173,15 @@
         {
           "id": "line-903e354652344600",
           "names": {
-            "en": "Fianchetto Variation, Classical Main Line",
+            "en-US": "Fianchetto Variation, Classical Main Line",
             "pt-BR": "Variante do Fianqueto, Linha Principal Clássica",
-            "es": "Variante del Fianchetto, Línea Principal Clásica"
+            "es-419": "Variante del Fianchetto, Línea Principal Clásica",
+            "en-GB": "Fianchetto Variation, Classical Main Line",
+            "es-ES": "Variante del Fianchetto, Línea Principal Clásica",
+            "pt-PT": "Variante do Fianqueto, Linha Principal Clássica",
+            "de": "Fianchetto-Variante, Klassische Hauptvariante",
+            "fr": "Variante du fianchetto, Ligne principale classique",
+            "it": "Variante del fianchetto, Linea principale classica"
           },
           "eco": "E69",
           "opening": "King's Indian Defense: Fianchetto Variation, Classical Main Line",
@@ -125,9 +191,15 @@
         {
           "id": "line-148819dfec9c1d40",
           "names": {
-            "en": "Fianchetto Variation, Panno Variation",
+            "en-US": "Fianchetto Variation, Panno Variation",
             "pt-BR": "Variante do Fianqueto, Variante Panno",
-            "es": "Variante del Fianchetto, Variante Panno"
+            "es-419": "Variante del Fianchetto, Variante Panno",
+            "en-GB": "Fianchetto Variation, Panno Variation",
+            "es-ES": "Variante del Fianchetto, Variante Panno",
+            "pt-PT": "Variante do Fianqueto, Variante Panno",
+            "de": "Fianchetto-Variante, Panno-Variante",
+            "fr": "Variante du fianchetto, Variante Panno",
+            "it": "Variante del fianchetto, Variante Panno"
           },
           "eco": "E63",
           "opening": "King's Indian Defense: Fianchetto Variation, Panno Variation",
@@ -137,9 +209,15 @@
         {
           "id": "line-ae94eb40a5a79ab7",
           "names": {
-            "en": "Fianchetto Variation, Panno Variation, Donner Line",
+            "en-US": "Fianchetto Variation, Panno Variation, Donner Line",
             "pt-BR": "Variante do Fianqueto, Variante Panno, Linha Donner",
-            "es": "Variante del Fianchetto, Variante Panno, Línea Donner"
+            "es-419": "Variante del Fianchetto, Variante Panno, Línea Donner",
+            "en-GB": "Fianchetto Variation, Panno Variation, Donner Line",
+            "es-ES": "Variante del Fianchetto, Variante Panno, Línea Donner",
+            "pt-PT": "Variante do Fianqueto, Variante Panno, Linha Donner",
+            "de": "Fianchetto-Variante, Panno-Variante, Donner-Abspiel",
+            "fr": "Variante du fianchetto, Variante Panno, Ligne Donner",
+            "it": "Variante del fianchetto, Variante Panno, Linea Donner"
           },
           "eco": "E63",
           "opening": "King's Indian Defense: Fianchetto Variation, Panno Variation, Donner Line",
@@ -149,9 +227,15 @@
         {
           "id": "line-9652a0605767d512",
           "names": {
-            "en": "Fianchetto Variation, Panno Variation, Blockade Line",
+            "en-US": "Fianchetto Variation, Panno Variation, Blockade Line",
             "pt-BR": "Variante do Fianqueto, Variante Panno, Linha do Bloqueio",
-            "es": "Variante del Fianchetto, Variante Panno, Línea del Bloqueo"
+            "es-419": "Variante del Fianchetto, Variante Panno, Línea del Bloqueo",
+            "en-GB": "Fianchetto Variation, Panno Variation, Blockade Line",
+            "es-ES": "Variante del Fianchetto, Variante Panno, Línea del Bloqueo",
+            "pt-PT": "Variante do Fianqueto, Variante Panno, Linha do Bloqueio",
+            "de": "Fianchetto-Variante, Panno-Variante, Blockade-Abspiel",
+            "fr": "Variante du fianchetto, Variante Panno, Ligne du blocus",
+            "it": "Variante del fianchetto, Variante Panno, Linea del blocco"
           },
           "eco": "E63",
           "opening": "King's Indian Defense: Fianchetto Variation, Panno Variation, Blockade Line",
@@ -161,9 +245,15 @@
         {
           "id": "line-76c59b7c7b864f2f",
           "names": {
-            "en": "Fianchetto Variation, Panno Variation, Korchnoi Line",
+            "en-US": "Fianchetto Variation, Panno Variation, Korchnoi Line",
             "pt-BR": "Variante do Fianqueto, Variante Panno, Linha Korchnoi",
-            "es": "Variante del Fianchetto, Variante Panno, Línea Korchnoi"
+            "es-419": "Variante del Fianchetto, Variante Panno, Línea Korchnoi",
+            "en-GB": "Fianchetto Variation, Panno Variation, Korchnoi Line",
+            "es-ES": "Variante del Fianchetto, Variante Panno, Línea Korchnoi",
+            "pt-PT": "Variante do Fianqueto, Variante Panno, Linha Korchnoi",
+            "de": "Fianchetto-Variante, Panno-Variante, Kortschnoi-Abspiel",
+            "fr": "Variante du fianchetto, Variante Panno, Ligne Kortchnoï",
+            "it": "Variante del fianchetto, Variante Panno, Linea Korčnoj"
           },
           "eco": "E63",
           "opening": "King's Indian Defense: Fianchetto Variation, Panno Variation, Korchnoi Line",
@@ -173,9 +263,15 @@
         {
           "id": "line-057ae0495666487f",
           "names": {
-            "en": "Fianchetto Variation, Uhlmann-Szabo System",
+            "en-US": "Fianchetto Variation, Uhlmann-Szabo System",
             "pt-BR": "Variante do Fianqueto, Sistema Uhlmann-Szabo",
-            "es": "Variante del Fianchetto, Sistema Uhlmann-Szabo"
+            "es-419": "Variante del Fianchetto, Sistema Uhlmann-Szabo",
+            "en-GB": "Fianchetto Variation, Uhlmann-Szabo System",
+            "es-ES": "Variante del Fianchetto, Sistema Uhlmann-Szabo",
+            "pt-PT": "Variante do Fianqueto, Sistema Uhlmann-Szabo",
+            "de": "Fianchetto-Variante, Uhlmann-Szabó-System",
+            "fr": "Variante du fianchetto, Système Uhlmann-Szabó",
+            "it": "Variante del fianchetto, Sistema Uhlmann-Szabó"
           },
           "eco": "E62",
           "opening": "King's Indian Defense: Fianchetto Variation, Uhlmann-Szabo System",
@@ -185,9 +281,15 @@
         {
           "id": "line-1614526e139a2410",
           "names": {
-            "en": "Fianchetto Variation, Yugoslav Variation",
+            "en-US": "Fianchetto Variation, Yugoslav Variation",
             "pt-BR": "Variante do Fianqueto, Variante Iugoslava",
-            "es": "Variante del Fianchetto, Variante Yugoslava"
+            "es-419": "Variante del Fianchetto, Variante Yugoslava",
+            "en-GB": "Fianchetto Variation, Yugoslav Variation",
+            "es-ES": "Variante del Fianchetto, Variante Yugoslava",
+            "pt-PT": "Variante do Fianqueto, Variante Jugoslava",
+            "de": "Fianchetto-Variante, Jugoslawische Variante",
+            "fr": "Variante du fianchetto, Variante yougoslave",
+            "it": "Variante del fianchetto, Variante iugoslava"
           },
           "eco": "E65",
           "opening": "King's Indian Defense: Fianchetto Variation, Yugoslav Variation",
@@ -197,9 +299,15 @@
         {
           "id": "line-7797b5b88e02baf2",
           "names": {
-            "en": "Fianchetto Variation, Yugoslav Variation, Advance Line",
+            "en-US": "Fianchetto Variation, Yugoslav Variation, Advance Line",
             "pt-BR": "Variante do Fianqueto, Variante Iugoslava, Linha do Avanço",
-            "es": "Variante del Fianchetto, Variante Yugoslava, Línea del Avance"
+            "es-419": "Variante del Fianchetto, Variante Yugoslava, Línea del Avance",
+            "en-GB": "Fianchetto Variation, Yugoslav Variation, Advance Line",
+            "es-ES": "Variante del Fianchetto, Variante Yugoslava, Línea del Avance",
+            "pt-PT": "Variante do Fianqueto, Variante Jugoslava, Linha do Avanço",
+            "de": "Fianchetto-Variante, Jugoslawische Variante, Vorstoßabspiel",
+            "fr": "Variante du fianchetto, Variante yougoslave, Ligne d'avance",
+            "it": "Variante del fianchetto, Variante iugoslava, Linea di spinta"
           },
           "eco": "E66",
           "opening": "King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Advance Line",
@@ -209,9 +317,15 @@
         {
           "id": "line-c4e25b97de7f85fe",
           "names": {
-            "en": "Fianchetto Variation, Yugoslav Variation, Exchange Line",
+            "en-US": "Fianchetto Variation, Yugoslav Variation, Exchange Line",
             "pt-BR": "Variante do Fianqueto, Variante Iugoslava, Linha da Troca",
-            "es": "Variante del Fianchetto, Variante Yugoslava, Línea del Cambio"
+            "es-419": "Variante del Fianchetto, Variante Yugoslava, Línea del Cambio",
+            "en-GB": "Fianchetto Variation, Yugoslav Variation, Exchange Line",
+            "es-ES": "Variante del Fianchetto, Variante Yugoslava, Línea del Cambio",
+            "pt-PT": "Variante do Fianqueto, Variante Jugoslava, Linha da Troca",
+            "de": "Fianchetto-Variante, Jugoslawische Variante, Abtauschabspiel",
+            "fr": "Variante du fianchetto, Variante yougoslave, Ligne d'échange",
+            "it": "Variante del fianchetto, Variante iugoslava, Linea di cambio"
           },
           "eco": "E65",
           "opening": "King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Exchange Line",
@@ -221,9 +335,15 @@
         {
           "id": "line-c5fa785b67d7d3d7",
           "names": {
-            "en": "Fianchetto Variation, Kavalek Defense",
+            "en-US": "Fianchetto Variation, Kavalek Defense",
             "pt-BR": "Variante do Fianqueto, Defesa Kavalek",
-            "es": "Variante del Fianchetto, Defensa Kavalek"
+            "es-419": "Variante del Fianchetto, Defensa Kavalek",
+            "en-GB": "Fianchetto Variation, Kavalek Defence",
+            "es-ES": "Variante del Fianchetto, Defensa Kavalek",
+            "pt-PT": "Variante do Fianqueto, Defesa Kavalek",
+            "de": "Fianchetto-Variante, Kavalek-Verteidigung",
+            "fr": "Variante du fianchetto, Défense Kavalek",
+            "it": "Variante del fianchetto, Difesa Kavalek"
           },
           "eco": "E62",
           "opening": "King's Indian Defense: Fianchetto Variation, Kavalek Defense",
@@ -233,9 +353,15 @@
         {
           "id": "line-63e49a8efaa5fa5c",
           "names": {
-            "en": "Fianchetto Variation, Pterodactyl Variation",
+            "en-US": "Fianchetto Variation, Pterodactyl Variation",
             "pt-BR": "Variante do Fianqueto, Variante Pterodáctilo",
-            "es": "Variante del Fianchetto, Variante Pterodáctilo"
+            "es-419": "Variante del Fianchetto, Variante Pterodáctilo",
+            "en-GB": "Fianchetto Variation, Pterodactyl Variation",
+            "es-ES": "Variante del Fianchetto, Variante Pterodáctilo",
+            "pt-PT": "Variante do Fianqueto, Variante Pterodáctilo",
+            "de": "Fianchetto-Variante, Pterodaktylus-Variante",
+            "fr": "Variante du fianchetto, Variante du ptérodactyle",
+            "it": "Variante del fianchetto, Variante dello pterodattilo"
           },
           "eco": "E64",
           "opening": "King's Indian Defense: Fianchetto Variation, Pterodactyl Variation",
@@ -245,9 +371,15 @@
         {
           "id": "line-a0e5335dd793cb5e",
           "names": {
-            "en": "Fianchetto Variation, Hungarian Variation",
+            "en-US": "Fianchetto Variation, Hungarian Variation",
             "pt-BR": "Variante do Fianqueto, Variante Húngara",
-            "es": "Variante del Fianchetto, Variante Húngara"
+            "es-419": "Variante del Fianchetto, Variante Húngara",
+            "en-GB": "Fianchetto Variation, Hungarian Variation",
+            "es-ES": "Variante del Fianchetto, Variante Húngara",
+            "pt-PT": "Variante do Fianqueto, Variante Húngara",
+            "de": "Fianchetto-Variante, Ungarische Variante",
+            "fr": "Variante du fianchetto, Variante hongroise",
+            "it": "Variante del fianchetto, Variante ungherese"
           },
           "eco": "E64",
           "opening": "King's Indian Defense: Fianchetto Variation, Hungarian Variation",
@@ -257,9 +389,15 @@
         {
           "id": "line-7e1e45c8bbff2cf7",
           "names": {
-            "en": "Fianchetto Variation, Double Fianchetto Attack",
+            "en-US": "Fianchetto Variation, Double Fianchetto Attack",
             "pt-BR": "Variante do Fianqueto, Ataque do Fianqueto Duplo",
-            "es": "Variante del Fianchetto, Ataque del Doble Fianchetto"
+            "es-419": "Variante del Fianchetto, Ataque del Doble Fianchetto",
+            "en-GB": "Fianchetto Variation, Double Fianchetto Attack",
+            "es-ES": "Variante del Fianchetto, Ataque del Doble Fianchetto",
+            "pt-PT": "Variante do Fianqueto, Ataque do Fianqueto Duplo",
+            "de": "Fianchetto-Variante, Doppelfianchetto-Angriff",
+            "fr": "Variante du fianchetto, Attaque du double fianchetto",
+            "it": "Variante del fianchetto, Attacco del doppio fianchetto"
           },
           "eco": "E64",
           "opening": "King's Indian Defense: Fianchetto Variation, Double Fianchetto Attack",
@@ -269,9 +407,15 @@
         {
           "id": "line-fcd44a9616b18ee6",
           "names": {
-            "en": "Fianchetto Variation, Yugoslav System",
+            "en-US": "Fianchetto Variation, Yugoslav System",
             "pt-BR": "Variante do Fianqueto, Sistema Iugoslavo",
-            "es": "Variante del Fianchetto, Sistema Yugoslavo"
+            "es-419": "Variante del Fianchetto, Sistema Yugoslavo",
+            "en-GB": "Fianchetto Variation, Yugoslav System",
+            "es-ES": "Variante del Fianchetto, Sistema Yugoslavo",
+            "pt-PT": "Variante do Fianqueto, Sistema Jugoslavo",
+            "de": "Fianchetto-Variante, Jugoslawisches System",
+            "fr": "Variante du fianchetto, Système yougoslave",
+            "it": "Variante del fianchetto, Sistema iugoslavo"
           },
           "eco": "E64",
           "opening": "King's Indian Defense: Fianchetto Variation, Yugoslav System",
@@ -281,9 +425,15 @@
         {
           "id": "line-1dac52321fdd60d5",
           "names": {
-            "en": "Fianchetto Variation, Immediate Fianchetto",
+            "en-US": "Fianchetto Variation, Immediate Fianchetto",
             "pt-BR": "Variante do Fianqueto, Fianqueto Imediato",
-            "es": "Variante del Fianchetto, Fianchetto Inmediato"
+            "es-419": "Variante del Fianchetto, Fianchetto Inmediato",
+            "en-GB": "Fianchetto Variation, Immediate Fianchetto",
+            "es-ES": "Variante del Fianchetto, Fianchetto Inmediato",
+            "pt-PT": "Variante do Fianqueto, Fianqueto Imediato",
+            "de": "Fianchetto-Variante, Sofortiges Fianchetto",
+            "fr": "Variante du fianchetto, Fianchetto immédiat",
+            "it": "Variante del fianchetto, Fianchetto immediato"
           },
           "eco": "E60",
           "opening": "King's Indian Defense: Fianchetto Variation, Immediate Fianchetto",
@@ -293,9 +443,15 @@
         {
           "id": "line-b96a766d24da8415",
           "names": {
-            "en": "Fianchetto Variation, Debrecen Defense",
+            "en-US": "Fianchetto Variation, Debrecen Defense",
             "pt-BR": "Variante do Fianqueto, Defesa Debrecen",
-            "es": "Variante del Fianchetto, Defensa Debrecen"
+            "es-419": "Variante del Fianchetto, Defensa Debrecen",
+            "en-GB": "Fianchetto Variation, Debrecen Defence",
+            "es-ES": "Variante del Fianchetto, Defensa Debrecen",
+            "pt-PT": "Variante do Fianqueto, Defesa Debrecen",
+            "de": "Fianchetto-Variante, Debrecen-Verteidigung",
+            "fr": "Variante du fianchetto, Défense Debrecen",
+            "it": "Variante del fianchetto, Difesa Debrecen"
           },
           "eco": "E67",
           "opening": "King's Indian Defense: Fianchetto Variation, Debrecen Defense",
@@ -305,9 +461,15 @@
         {
           "id": "line-f592435e49ee4440",
           "names": {
-            "en": "Fianchetto Variation, Carlsbad Variation",
+            "en-US": "Fianchetto Variation, Carlsbad Variation",
             "pt-BR": "Variante do Fianqueto, Variante Carlsbad",
-            "es": "Variante del Fianchetto, Variante Carlsbad"
+            "es-419": "Variante del Fianchetto, Variante Carlsbad",
+            "en-GB": "Fianchetto Variation, Carlsbad Variation",
+            "es-ES": "Variante del Fianchetto, Variante Carlsbad",
+            "pt-PT": "Variante do Fianqueto, Variante Carlsbad",
+            "de": "Fianchetto-Variante, Karlsbad-Variante",
+            "fr": "Variante du fianchetto, Variante Carlsbad",
+            "it": "Variante del fianchetto, Variante Carlsbad"
           },
           "eco": "E62",
           "opening": "King's Indian Defense: Fianchetto Variation, Carlsbad Variation",
@@ -317,9 +479,15 @@
         {
           "id": "line-6de8677b0d64d241",
           "names": {
-            "en": "Fianchetto Variation, Lesser Simagin (Spassky)",
+            "en-US": "Fianchetto Variation, Lesser Simagin (Spassky)",
             "pt-BR": "Variante do Fianqueto, Simagin Menor (Spassky)",
-            "es": "Variante del Fianchetto, Simagin Menor (Spassky)"
+            "es-419": "Variante del Fianchetto, Simagin Menor (Spassky)",
+            "en-GB": "Fianchetto Variation, Lesser Simagin (Spassky)",
+            "es-ES": "Variante del Fianchetto, Simagin Menor (Spassky)",
+            "pt-PT": "Variante do Fianqueto, Simagin Menor (Spassky)",
+            "de": "Fianchetto-Variante, Kleine Simagin-Variante (Spasski)",
+            "fr": "Variante du fianchetto, Petite variante Simagin (Spassky)",
+            "it": "Variante del fianchetto, Piccola variante Simagin (Spasskij)"
           },
           "eco": "E62",
           "opening": "King's Indian Defense: Fianchetto Variation, Lesser Simagin (Spassky)",
@@ -329,9 +497,15 @@
         {
           "id": "line-302b9fa3259d22a1",
           "names": {
-            "en": "Fianchetto Variation, Yugoslav Variation, Rare Line",
+            "en-US": "Fianchetto Variation, Yugoslav Variation, Rare Line",
             "pt-BR": "Variante do Fianqueto, Variante Iugoslava, Linha Rara",
-            "es": "Variante del Fianchetto, Variante Yugoslava, Línea Rara"
+            "es-419": "Variante del Fianchetto, Variante Yugoslava, Línea Rara",
+            "en-GB": "Fianchetto Variation, Yugoslav Variation, Rare Line",
+            "es-ES": "Variante del Fianchetto, Variante Yugoslava, Línea Rara",
+            "pt-PT": "Variante do Fianqueto, Variante Jugoslava, Linha Rara",
+            "de": "Fianchetto-Variante, Jugoslawische Variante, Seltenes Abspiel",
+            "fr": "Variante du fianchetto, Variante yougoslave, Ligne rare",
+            "it": "Variante del fianchetto, Variante iugoslava, Linea rara"
           },
           "eco": "E64",
           "opening": "King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Rare Line",
@@ -342,17 +516,29 @@
     },
     {
       "names": {
-        "en": "Orthodox Variation",
+        "en-US": "Orthodox Variation",
         "pt-BR": "Variante Ortodoxa",
-        "es": "Variante Ortodoxa"
+        "es-419": "Variante Ortodoxa",
+        "en-GB": "Orthodox Variation",
+        "es-ES": "Variante Ortodoxa",
+        "pt-PT": "Variante Ortodoxa",
+        "de": "Orthodoxe Variante",
+        "fr": "Variante orthodoxe",
+        "it": "Variante ortodossa"
       },
       "lines": [
         {
           "id": "line-2cf43e2f31b3a34f",
           "names": {
-            "en": "Orthodox Variation, Positional Defense",
+            "en-US": "Orthodox Variation, Positional Defense",
             "pt-BR": "Variante Ortodoxa, Defesa Posicional",
-            "es": "Variante Ortodoxa, Defensa Posicional"
+            "es-419": "Variante Ortodoxa, Defensa Posicional",
+            "en-GB": "Orthodox Variation, Positional Defence",
+            "es-ES": "Variante Ortodoxa, Defensa Posicional",
+            "pt-PT": "Variante Ortodoxa, Defesa Posicional",
+            "de": "Orthodoxe Variante, Positionelle Verteidigung",
+            "fr": "Variante orthodoxe, Défense positionnelle",
+            "it": "Variante ortodossa, Difesa posizionale"
           },
           "eco": "E94",
           "opening": "King's Indian Defense: Orthodox Variation, Positional Defense",
@@ -362,9 +548,15 @@
         {
           "id": "line-6359dfab17f88d02",
           "names": {
-            "en": "Orthodox Variation",
+            "en-US": "Orthodox Variation",
             "pt-BR": "Variante Ortodoxa",
-            "es": "Variante Ortodoxa"
+            "es-419": "Variante Ortodoxa",
+            "en-GB": "Orthodox Variation",
+            "es-ES": "Variante Ortodoxa",
+            "pt-PT": "Variante Ortodoxa",
+            "de": "Orthodoxe Variante",
+            "fr": "Variante orthodoxe",
+            "it": "Variante ortodossa"
           },
           "eco": "E91",
           "opening": "King's Indian Defense: Orthodox Variation",
@@ -374,9 +566,15 @@
         {
           "id": "line-041c7c1782d0927a",
           "names": {
-            "en": "Orthodox Variation, Positional Defense, Closed Line",
+            "en-US": "Orthodox Variation, Positional Defense, Closed Line",
             "pt-BR": "Variante Ortodoxa, Defesa Posicional, Linha Fechada",
-            "es": "Variante Ortodoxa, Defensa Posicional, Línea Cerrada"
+            "es-419": "Variante Ortodoxa, Defensa Posicional, Línea Cerrada",
+            "en-GB": "Orthodox Variation, Positional Defence, Closed Line",
+            "es-ES": "Variante Ortodoxa, Defensa Posicional, Línea Cerrada",
+            "pt-PT": "Variante Ortodoxa, Defesa Posicional, Linha Fechada",
+            "de": "Orthodoxe Variante, Positionelle Verteidigung, Geschlossenes Abspiel",
+            "fr": "Variante orthodoxe, Défense positionnelle, Ligne fermée",
+            "it": "Variante ortodossa, Difesa posizionale, Linea chiusa"
           },
           "eco": "E94",
           "opening": "King's Indian Defense: Orthodox Variation, Positional Defense, Closed Line",
@@ -386,9 +584,15 @@
         {
           "id": "line-0a70edba985ddbcb",
           "names": {
-            "en": "Orthodox Variation",
+            "en-US": "Orthodox Variation",
             "pt-BR": "Variante Ortodoxa",
-            "es": "Variante Ortodoxa"
+            "es-419": "Variante Ortodoxa",
+            "en-GB": "Orthodox Variation",
+            "es-ES": "Variante Ortodoxa",
+            "pt-PT": "Variante Ortodoxa",
+            "de": "Orthodoxe Variante",
+            "fr": "Variante orthodoxe",
+            "it": "Variante ortodossa"
           },
           "eco": "E92",
           "opening": "King's Indian Defense: Orthodox Variation",
@@ -398,9 +602,15 @@
         {
           "id": "line-6a38758786dc26dd",
           "names": {
-            "en": "Orthodox Variation, Gligoric-Taimanov System",
+            "en-US": "Orthodox Variation, Gligoric-Taimanov System",
             "pt-BR": "Variante Ortodoxa, Sistema Gligoric-Taimanov",
-            "es": "Variante Ortodoxa, Sistema Gligoric-Taimanov"
+            "es-419": "Variante Ortodoxa, Sistema Gligoric-Taimanov",
+            "en-GB": "Orthodox Variation, Gligoric-Taimanov System",
+            "es-ES": "Variante Ortodoxa, Sistema Gligoric-Taimanov",
+            "pt-PT": "Variante Ortodoxa, Sistema Gligoric-Taimanov",
+            "de": "Orthodoxe Variante, Gligorić-Taimanow-System",
+            "fr": "Variante orthodoxe, Système Gligorić-Taïmanov",
+            "it": "Variante ortodossa, Sistema Gligorić-Tajmanov"
           },
           "eco": "E92",
           "opening": "King's Indian Defense: Orthodox Variation, Gligoric-Taimanov System",
@@ -410,9 +620,15 @@
         {
           "id": "line-4d47eb00ea319c80",
           "names": {
-            "en": "Orthodox Variation",
+            "en-US": "Orthodox Variation",
             "pt-BR": "Variante Ortodoxa",
-            "es": "Variante Ortodoxa"
+            "es-419": "Variante Ortodoxa",
+            "en-GB": "Orthodox Variation",
+            "es-ES": "Variante Ortodoxa",
+            "pt-PT": "Variante Ortodoxa",
+            "de": "Orthodoxe Variante",
+            "fr": "Variante orthodoxe",
+            "it": "Variante ortodossa"
           },
           "eco": "E94",
           "opening": "King's Indian Defense: Orthodox Variation",
@@ -422,9 +638,15 @@
         {
           "id": "line-c8353758db4416a5",
           "names": {
-            "en": "Orthodox Variation, Glek Defense",
+            "en-US": "Orthodox Variation, Glek Defense",
             "pt-BR": "Variante Ortodoxa, Defesa Glek",
-            "es": "Variante Ortodoxa, Defensa Glek"
+            "es-419": "Variante Ortodoxa, Defensa Glek",
+            "en-GB": "Orthodox Variation, Glek Defence",
+            "es-ES": "Variante Ortodoxa, Defensa Glek",
+            "pt-PT": "Variante Ortodoxa, Defesa Glek",
+            "de": "Orthodoxe Variante, Glek-Verteidigung",
+            "fr": "Variante orthodoxe, Défense Glek",
+            "it": "Variante ortodossa, Difesa Glek"
           },
           "eco": "E94",
           "opening": "King's Indian Defense: Orthodox Variation, Glek Defense",
@@ -434,9 +656,15 @@
         {
           "id": "line-d6d384b895159411",
           "names": {
-            "en": "Orthodox Variation",
+            "en-US": "Orthodox Variation",
             "pt-BR": "Variante Ortodoxa",
-            "es": "Variante Ortodoxa"
+            "es-419": "Variante Ortodoxa",
+            "en-GB": "Orthodox Variation",
+            "es-ES": "Variante Ortodoxa",
+            "pt-PT": "Variante Ortodoxa",
+            "de": "Orthodoxe Variante",
+            "fr": "Variante orthodoxe",
+            "it": "Variante ortodossa"
           },
           "eco": "E95",
           "opening": "King's Indian Defense: Orthodox Variation",
@@ -446,9 +674,15 @@
         {
           "id": "line-6031957f1d6b03e8",
           "names": {
-            "en": "Orthodox Variation, Positional Defense, Main Line",
+            "en-US": "Orthodox Variation, Positional Defense, Main Line",
             "pt-BR": "Variante Ortodoxa, Defesa Posicional, Linha Principal",
-            "es": "Variante Ortodoxa, Defensa Posicional, Línea Principal"
+            "es-419": "Variante Ortodoxa, Defensa Posicional, Línea Principal",
+            "en-GB": "Orthodox Variation, Positional Defence, Main Line",
+            "es-ES": "Variante Ortodoxa, Defensa Posicional, Línea Principal",
+            "pt-PT": "Variante Ortodoxa, Defesa Posicional, Linha Principal",
+            "de": "Orthodoxe Variante, Positionelle Verteidigung, Hauptvariante",
+            "fr": "Variante orthodoxe, Défense positionnelle, Ligne principale",
+            "it": "Variante ortodossa, Difesa posizionale, Linea principale"
           },
           "eco": "E96",
           "opening": "King's Indian Defense: Orthodox Variation, Positional Defense, Main Line",
@@ -458,9 +692,15 @@
         {
           "id": "line-cc103480ed14c106",
           "names": {
-            "en": "Orthodox Variation, Aronin-Taimanov Defense",
+            "en-US": "Orthodox Variation, Aronin-Taimanov Defense",
             "pt-BR": "Variante Ortodoxa, Defesa Aronin-Taimanov",
-            "es": "Variante Ortodoxa, Defensa Aronin-Taimanov"
+            "es-419": "Variante Ortodoxa, Defensa Aronin-Taimanov",
+            "en-GB": "Orthodox Variation, Aronin-Taimanov Defence",
+            "es-ES": "Variante Ortodoxa, Defensa Aronin-Taimanov",
+            "pt-PT": "Variante Ortodoxa, Defesa Aronin-Taimanov",
+            "de": "Orthodoxe Variante, Aronin-Taimanow-Verteidigung",
+            "fr": "Variante orthodoxe, Défense Aronin-Taïmanov",
+            "it": "Variante ortodossa, Difesa Aronin-Tajmanov"
           },
           "eco": "E97",
           "opening": "King's Indian Defense: Orthodox Variation, Aronin-Taimanov Defense",
@@ -470,9 +710,15 @@
         {
           "id": "line-fc2913b99e9a7db4",
           "names": {
-            "en": "Orthodox Variation, Korchnoi Attack",
+            "en-US": "Orthodox Variation, Korchnoi Attack",
             "pt-BR": "Variante Ortodoxa, Ataque Korchnoi",
-            "es": "Variante Ortodoxa, Ataque Korchnoi"
+            "es-419": "Variante Ortodoxa, Ataque Korchnoi",
+            "en-GB": "Orthodox Variation, Korchnoi Attack",
+            "es-ES": "Variante Ortodoxa, Ataque Korchnoi",
+            "pt-PT": "Variante Ortodoxa, Ataque Korchnoi",
+            "de": "Orthodoxe Variante, Kortschnoi-Angriff",
+            "fr": "Variante orthodoxe, Attaque Kortchnoï",
+            "it": "Variante ortodossa, Attacco Korčnoj"
           },
           "eco": "E97",
           "opening": "King's Indian Defense: Orthodox Variation, Korchnoi Attack",
@@ -482,9 +728,15 @@
         {
           "id": "line-559fcf7ee6e4b475",
           "names": {
-            "en": "Orthodox Variation, Modern System",
+            "en-US": "Orthodox Variation, Modern System",
             "pt-BR": "Variante Ortodoxa, Sistema Moderno",
-            "es": "Variante Ortodoxa, Sistema Moderno"
+            "es-419": "Variante Ortodoxa, Sistema Moderno",
+            "en-GB": "Orthodox Variation, Modern System",
+            "es-ES": "Variante Ortodoxa, Sistema Moderno",
+            "pt-PT": "Variante Ortodoxa, Sistema Moderno",
+            "de": "Orthodoxe Variante, Modernes System",
+            "fr": "Variante orthodoxe, Système moderne",
+            "it": "Variante ortodossa, Sistema moderno"
           },
           "eco": "E97",
           "opening": "King's Indian Defense: Orthodox Variation, Modern System",
@@ -494,9 +746,15 @@
         {
           "id": "line-0d05c9c41c731455",
           "names": {
-            "en": "Orthodox Variation, Classical System",
+            "en-US": "Orthodox Variation, Classical System",
             "pt-BR": "Variante Ortodoxa, Sistema Clássico",
-            "es": "Variante Ortodoxa, Sistema Clásico"
+            "es-419": "Variante Ortodoxa, Sistema Clásico",
+            "en-GB": "Orthodox Variation, Classical System",
+            "es-ES": "Variante Ortodoxa, Sistema Clásico",
+            "pt-PT": "Variante Ortodoxa, Sistema Clássico",
+            "de": "Orthodoxe Variante, Klassisches System",
+            "fr": "Variante orthodoxe, Système classique",
+            "it": "Variante ortodossa, Sistema classico"
           },
           "eco": "E98",
           "opening": "King's Indian Defense: Orthodox Variation, Classical System",
@@ -506,9 +764,15 @@
         {
           "id": "line-dd05b25a381e2f65",
           "names": {
-            "en": "Orthodox Variation, Classical System, Neo-Classical Line",
+            "en-US": "Orthodox Variation, Classical System, Neo-Classical Line",
             "pt-BR": "Variante Ortodoxa, Sistema Clássico, Linha Neoclássica",
-            "es": "Variante Ortodoxa, Sistema Clásico, Línea Neoclásica"
+            "es-419": "Variante Ortodoxa, Sistema Clásico, Línea Neoclásica",
+            "en-GB": "Orthodox Variation, Classical System, Neo-Classical Line",
+            "es-ES": "Variante Ortodoxa, Sistema Clásico, Línea Neoclásica",
+            "pt-PT": "Variante Ortodoxa, Sistema Clássico, Linha Neoclássica",
+            "de": "Orthodoxe Variante, Klassisches System, Neoklassisches Abspiel",
+            "fr": "Variante orthodoxe, Système classique, Ligne néoclassique",
+            "it": "Variante ortodossa, Sistema classico, Linea neoclassica"
           },
           "eco": "E98",
           "opening": "King's Indian Defense: Orthodox Variation, Classical System, Neo-Classical Line",
@@ -518,9 +782,15 @@
         {
           "id": "line-a93c9bbf8d6f7cb4",
           "names": {
-            "en": "Orthodox Variation, Classical System, Kozul Gambit",
+            "en-US": "Orthodox Variation, Classical System, Kozul Gambit",
             "pt-BR": "Variante Ortodoxa, Sistema Clássico, Gambito Kozul",
-            "es": "Variante Ortodoxa, Sistema Clásico, Gambito Kozul"
+            "es-419": "Variante Ortodoxa, Sistema Clásico, Gambito Kozul",
+            "en-GB": "Orthodox Variation, Classical System, Kozul Gambit",
+            "es-ES": "Variante Ortodoxa, Sistema Clásico, Gambito Kozul",
+            "pt-PT": "Variante Ortodoxa, Sistema Clássico, Gambito Kozul",
+            "de": "Orthodoxe Variante, Klassisches System, Kozul-Gambit",
+            "fr": "Variante orthodoxe, Système classique, Gambit Kozul",
+            "it": "Variante ortodossa, Sistema classico, Gambetto Kozul"
           },
           "eco": "E98",
           "opening": "King's Indian Defense: Orthodox Variation, Classical System, Kozul Gambit",
@@ -530,9 +800,15 @@
         {
           "id": "line-57b29f9d2d5d2610",
           "names": {
-            "en": "Orthodox Variation, Classical System, Traditional Line",
+            "en-US": "Orthodox Variation, Classical System, Traditional Line",
             "pt-BR": "Variante Ortodoxa, Sistema Clássico, Linha Tradicional",
-            "es": "Variante Ortodoxa, Sistema Clásico, Línea Tradicional"
+            "es-419": "Variante Ortodoxa, Sistema Clásico, Línea Tradicional",
+            "en-GB": "Orthodox Variation, Classical System, Traditional Line",
+            "es-ES": "Variante Ortodoxa, Sistema Clásico, Línea Tradicional",
+            "pt-PT": "Variante Ortodoxa, Sistema Clássico, Linha Tradicional",
+            "de": "Orthodoxe Variante, Klassisches System, Traditionelles Abspiel",
+            "fr": "Variante orthodoxe, Système classique, Ligne traditionnelle",
+            "it": "Variante ortodossa, Sistema classico, Linea tradizionale"
           },
           "eco": "E99",
           "opening": "King's Indian Defense: Orthodox Variation, Classical System, Traditional Line",
@@ -542,9 +818,15 @@
         {
           "id": "line-9b4da7e0780eaa5c",
           "names": {
-            "en": "Orthodox Variation, Classical System, Benko Attack",
+            "en-US": "Orthodox Variation, Classical System, Benko Attack",
             "pt-BR": "Variante Ortodoxa, Sistema Clássico, Ataque Benko",
-            "es": "Variante Ortodoxa, Sistema Clásico, Ataque Benko"
+            "es-419": "Variante Ortodoxa, Sistema Clásico, Ataque Benko",
+            "en-GB": "Orthodox Variation, Classical System, Benko Attack",
+            "es-ES": "Variante Ortodoxa, Sistema Clásico, Ataque Benko",
+            "pt-PT": "Variante Ortodoxa, Sistema Clássico, Ataque Benko",
+            "de": "Orthodoxe Variante, Klassisches System, Benko-Angriff",
+            "fr": "Variante orthodoxe, Système classique, Attaque Benko",
+            "it": "Variante ortodossa, Sistema classico, Attacco Benko"
           },
           "eco": "E99",
           "opening": "King's Indian Defense: Orthodox Variation, Classical System, Benko Attack",
@@ -554,9 +836,15 @@
         {
           "id": "line-d512f3aa18bb3326",
           "names": {
-            "en": "Orthodox Variation, Bayonet Attack",
+            "en-US": "Orthodox Variation, Bayonet Attack",
             "pt-BR": "Variante Ortodoxa, Ataque Baioneta",
-            "es": "Variante Ortodoxa, Ataque Bayoneta"
+            "es-419": "Variante Ortodoxa, Ataque Bayoneta",
+            "en-GB": "Orthodox Variation, Bayonet Attack",
+            "es-ES": "Variante Ortodoxa, Ataque Bayoneta",
+            "pt-PT": "Variante Ortodoxa, Ataque Baioneta",
+            "de": "Orthodoxe Variante, Bajonettangriff",
+            "fr": "Variante orthodoxe, Attaque à la baïonnette",
+            "it": "Variante ortodossa, Attacco alla baionetta"
           },
           "eco": "E97",
           "opening": "King's Indian Defense: Orthodox Variation, Bayonet Attack",
@@ -566,9 +854,15 @@
         {
           "id": "line-97ec78c490859a98",
           "names": {
-            "en": "Orthodox Variation, Bayonet Attack, Yepishin's Line",
+            "en-US": "Orthodox Variation, Bayonet Attack, Yepishin's Line",
             "pt-BR": "Variante Ortodoxa, Ataque Baioneta, Linha Yepishin",
-            "es": "Variante Ortodoxa, Ataque Bayoneta, Línea Yepishin"
+            "es-419": "Variante Ortodoxa, Ataque Bayoneta, Línea Yepishin",
+            "en-GB": "Orthodox Variation, Bayonet Attack, Yepishin's Line",
+            "es-ES": "Variante Ortodoxa, Ataque Bayoneta, Línea Yepishin",
+            "pt-PT": "Variante Ortodoxa, Ataque Baioneta, Linha Yepishin",
+            "de": "Orthodoxe Variante, Bajonettangriff, Jepischin-Abspiel",
+            "fr": "Variante orthodoxe, Attaque à la baïonnette, Ligne Iepichine",
+            "it": "Variante ortodossa, Attacco alla baionetta, Linea Epišin"
           },
           "eco": "E97",
           "opening": "King's Indian Defense: Orthodox Variation, Bayonet Attack, Yepishin's Line",
@@ -578,9 +872,15 @@
         {
           "id": "line-0ce364a6a6d49135",
           "names": {
-            "en": "Orthodox Variation, Bayonet Attack, Sokolov's Line",
+            "en-US": "Orthodox Variation, Bayonet Attack, Sokolov's Line",
             "pt-BR": "Variante Ortodoxa, Ataque Baioneta, Linha Sokolov",
-            "es": "Variante Ortodoxa, Ataque Bayoneta, Línea Sokolov"
+            "es-419": "Variante Ortodoxa, Ataque Bayoneta, Línea Sokolov",
+            "en-GB": "Orthodox Variation, Bayonet Attack, Sokolov's Line",
+            "es-ES": "Variante Ortodoxa, Ataque Bayoneta, Línea Sokolov",
+            "pt-PT": "Variante Ortodoxa, Ataque Baioneta, Linha Sokolov",
+            "de": "Orthodoxe Variante, Bajonettangriff, Sokolow-Abspiel",
+            "fr": "Variante orthodoxe, Attaque à la baïonnette, Ligne Sokolov",
+            "it": "Variante ortodossa, Attacco alla baionetta, Linea Sokolov"
           },
           "eco": "E97",
           "opening": "King's Indian Defense: Orthodox Variation, Bayonet Attack, Sokolov's Line",
@@ -590,9 +890,15 @@
         {
           "id": "line-9e1c649be9f5a971",
           "names": {
-            "en": "Orthodox Variation, Ukrainian Defense",
+            "en-US": "Orthodox Variation, Ukrainian Defense",
             "pt-BR": "Variante Ortodoxa, Defesa Ucraniana",
-            "es": "Variante Ortodoxa, Defensa Ucraniana"
+            "es-419": "Variante Ortodoxa, Defensa Ucraniana",
+            "en-GB": "Orthodox Variation, Ukrainian Defence",
+            "es-ES": "Variante Ortodoxa, Defensa Ucraniana",
+            "pt-PT": "Variante Ortodoxa, Defesa Ucraniana",
+            "de": "Orthodoxe Variante, Ukrainische Verteidigung",
+            "fr": "Variante orthodoxe, Défense ukrainienne",
+            "it": "Variante ortodossa, Difesa ucraina"
           },
           "eco": "E94",
           "opening": "King's Indian Defense: Orthodox Variation, Ukrainian Defense",
@@ -602,9 +908,15 @@
         {
           "id": "line-b3f153c48b709091",
           "names": {
-            "en": "Orthodox Variation, Donner Defense",
+            "en-US": "Orthodox Variation, Donner Defense",
             "pt-BR": "Variante Ortodoxa, Defesa Donner",
-            "es": "Variante Ortodoxa, Defensa Donner"
+            "es-419": "Variante Ortodoxa, Defensa Donner",
+            "en-GB": "Orthodox Variation, Donner Defence",
+            "es-ES": "Variante Ortodoxa, Defensa Donner",
+            "pt-PT": "Variante Ortodoxa, Defesa Donner",
+            "de": "Orthodoxe Variante, Donner-Verteidigung",
+            "fr": "Variante orthodoxe, Défense Donner",
+            "it": "Variante ortodossa, Difesa Donner"
           },
           "eco": "E94",
           "opening": "King's Indian Defense: Orthodox Variation, Donner Defense",
@@ -615,17 +927,29 @@
     },
     {
       "names": {
-        "en": "Sämisch Variation",
+        "en-US": "Sämisch Variation",
         "pt-BR": "Variante Sämisch",
-        "es": "Variante Sämisch"
+        "es-419": "Variante Sämisch",
+        "en-GB": "Sämisch Variation",
+        "es-ES": "Variante Sämisch",
+        "pt-PT": "Variante Sämisch",
+        "de": "Sämisch-Variante",
+        "fr": "Variante Sämisch",
+        "it": "Variante Sämisch"
       },
       "lines": [
         {
           "id": "line-58b963e376da0a00",
           "names": {
-            "en": "Sämisch Variation",
+            "en-US": "Sämisch Variation",
             "pt-BR": "Variante Sämisch",
-            "es": "Variante Sämisch"
+            "es-419": "Variante Sämisch",
+            "en-GB": "Sämisch Variation",
+            "es-ES": "Variante Sämisch",
+            "pt-PT": "Variante Sämisch",
+            "de": "Sämisch-Variante",
+            "fr": "Variante Sämisch",
+            "it": "Variante Sämisch"
           },
           "eco": "E80",
           "opening": "King's Indian Defense: Sämisch Variation",
@@ -635,9 +959,15 @@
         {
           "id": "line-793d645c1cd61e7e",
           "names": {
-            "en": "Sämisch Variation, Normal Defense",
+            "en-US": "Sämisch Variation, Normal Defense",
             "pt-BR": "Variante Sämisch, Defesa Normal",
-            "es": "Variante Sämisch, Defensa Normal"
+            "es-419": "Variante Sämisch, Defensa Normal",
+            "en-GB": "Sämisch Variation, Normal Defence",
+            "es-ES": "Variante Sämisch, Defensa Normal",
+            "pt-PT": "Variante Sämisch, Defesa Normal",
+            "de": "Sämisch-Variante, Normale Verteidigung",
+            "fr": "Variante Sämisch, Défense normale",
+            "it": "Variante Sämisch, Difesa normale"
           },
           "eco": "E81",
           "opening": "King's Indian Defense: Sämisch Variation, Normal Defense",
@@ -647,9 +977,15 @@
         {
           "id": "line-0cb62c719b0ae77a",
           "names": {
-            "en": "Sämisch Variation, Yates Defense",
+            "en-US": "Sämisch Variation, Yates Defense",
             "pt-BR": "Variante Sämisch, Defesa Yates",
-            "es": "Variante Sämisch, Defensa Yates"
+            "es-419": "Variante Sämisch, Defensa Yates",
+            "en-GB": "Sämisch Variation, Yates Defence",
+            "es-ES": "Variante Sämisch, Defensa Yates",
+            "pt-PT": "Variante Sämisch, Defesa Yates",
+            "de": "Sämisch-Variante, Yates-Verteidigung",
+            "fr": "Variante Sämisch, Défense Yates",
+            "it": "Variante Sämisch, Difesa Yates"
           },
           "eco": "E83",
           "opening": "King's Indian Defense: Sämisch Variation, Yates Defense",
@@ -659,9 +995,15 @@
         {
           "id": "line-f6a1fed699b2ed56",
           "names": {
-            "en": "Sämisch Variation, Ruban Variation",
+            "en-US": "Sämisch Variation, Ruban Variation",
             "pt-BR": "Variante Sämisch, Variante Ruban",
-            "es": "Variante Sämisch, Variante Ruban"
+            "es-419": "Variante Sämisch, Variante Ruban",
+            "en-GB": "Sämisch Variation, Ruban Variation",
+            "es-ES": "Variante Sämisch, Variante Ruban",
+            "pt-PT": "Variante Sämisch, Variante Ruban",
+            "de": "Sämisch-Variante, Ruban-Variante",
+            "fr": "Variante Sämisch, Variante Ruban",
+            "it": "Variante Sämisch, Variante Ruban"
           },
           "eco": "E83",
           "opening": "King's Indian Defense: Sämisch Variation, Ruban Variation",
@@ -671,9 +1013,15 @@
         {
           "id": "line-0b6517f673f9ee05",
           "names": {
-            "en": "Sämisch Variation, Panno Formation",
+            "en-US": "Sämisch Variation, Panno Formation",
             "pt-BR": "Variante Sämisch, Formação Panno",
-            "es": "Variante Sämisch, Formación Panno"
+            "es-419": "Variante Sämisch, Formación Panno",
+            "en-GB": "Sämisch Variation, Panno Formation",
+            "es-ES": "Variante Sämisch, Formación Panno",
+            "pt-PT": "Variante Sämisch, Formação Panno",
+            "de": "Sämisch-Variante, Panno-Aufbau",
+            "fr": "Variante Sämisch, Formation Panno",
+            "it": "Variante Sämisch, Formazione Panno"
           },
           "eco": "E83",
           "opening": "King's Indian Defense: Sämisch Variation, Panno Formation",
@@ -683,9 +1031,15 @@
         {
           "id": "line-1f8638dd8a84e7d8",
           "names": {
-            "en": "Sämisch Variation, Panno Main Line",
+            "en-US": "Sämisch Variation, Panno Main Line",
             "pt-BR": "Variante Sämisch, Linha Principal Panno",
-            "es": "Variante Sämisch, Línea Principal Panno"
+            "es-419": "Variante Sämisch, Línea Principal Panno",
+            "en-GB": "Sämisch Variation, Panno Main Line",
+            "es-ES": "Variante Sämisch, Línea Principal Panno",
+            "pt-PT": "Variante Sämisch, Linha Principal Panno",
+            "de": "Sämisch-Variante, Panno-Hauptvariante",
+            "fr": "Variante Sämisch, Ligne principale Panno",
+            "it": "Variante Sämisch, Linea principale Panno"
           },
           "eco": "E84",
           "opening": "King's Indian Defense: Sämisch Variation, Panno Main Line",
@@ -695,9 +1049,15 @@
         {
           "id": "line-3de27fa7c1eb48e3",
           "names": {
-            "en": "Sämisch Variation, Double Fianchetto",
+            "en-US": "Sämisch Variation, Double Fianchetto",
             "pt-BR": "Variante Sämisch, Fianqueto Duplo",
-            "es": "Variante Sämisch, Doble Fianchetto"
+            "es-419": "Variante Sämisch, Doble Fianchetto",
+            "en-GB": "Sämisch Variation, Double Fianchetto",
+            "es-ES": "Variante Sämisch, Doble Fianchetto",
+            "pt-PT": "Variante Sämisch, Fianqueto Duplo",
+            "de": "Sämisch-Variante, Doppelfianchetto",
+            "fr": "Variante Sämisch, Double fianchetto",
+            "it": "Variante Sämisch, Doppio fianchetto"
           },
           "eco": "E82",
           "opening": "King's Indian Defense: Sämisch Variation, Double Fianchetto",
@@ -707,9 +1067,15 @@
         {
           "id": "line-c4f2038e2992e796",
           "names": {
-            "en": "Sämisch Variation, Sämisch Gambit",
+            "en-US": "Sämisch Variation, Sämisch Gambit",
             "pt-BR": "Variante Sämisch, Gambito Sämisch",
-            "es": "Variante Sämisch, Gambito Sämisch"
+            "es-419": "Variante Sämisch, Gambito Sämisch",
+            "en-GB": "Sämisch Variation, Sämisch Gambit",
+            "es-ES": "Variante Sämisch, Gambito Sämisch",
+            "pt-PT": "Variante Sämisch, Gambito Sämisch",
+            "de": "Sämisch-Variante, Sämisch-Gambit",
+            "fr": "Variante Sämisch, Gambit Sämisch",
+            "it": "Variante Sämisch, Gambetto Sämisch"
           },
           "eco": "E81",
           "opening": "King's Indian Defense: Sämisch Variation, Sämisch Gambit",
@@ -719,9 +1085,15 @@
         {
           "id": "line-aa8f019dd19589f8",
           "names": {
-            "en": "Sämisch Variation, Sämisch Gambit Accepted",
+            "en-US": "Sämisch Variation, Sämisch Gambit Accepted",
             "pt-BR": "Variante Sämisch, Gambito Sämisch Aceito",
-            "es": "Variante Sämisch, Gambito Sämisch Aceptado"
+            "es-419": "Variante Sämisch, Gambito Sämisch Aceptado",
+            "en-GB": "Sämisch Variation, Sämisch Gambit Accepted",
+            "es-ES": "Variante Sämisch, Gambito Sämisch Aceptado",
+            "pt-PT": "Variante Sämisch, Gambito Sämisch Aceito",
+            "de": "Sämisch-Variante, Angenommenes Sämisch-Gambit",
+            "fr": "Variante Sämisch, Gambit Sämisch accepté",
+            "it": "Variante Sämisch, Gambetto Sämisch accettato"
           },
           "eco": "E81",
           "opening": "King's Indian Defense: Sämisch Variation, Sämisch Gambit Accepted",
@@ -731,9 +1103,15 @@
         {
           "id": "line-807ffc7369c5daa3",
           "names": {
-            "en": "Sämisch Variation, Byrne Defense",
+            "en-US": "Sämisch Variation, Byrne Defense",
             "pt-BR": "Variante Sämisch, Defesa Byrne",
-            "es": "Variante Sämisch, Defensa Byrne"
+            "es-419": "Variante Sämisch, Defensa Byrne",
+            "en-GB": "Sämisch Variation, Byrne Defence",
+            "es-ES": "Variante Sämisch, Defensa Byrne",
+            "pt-PT": "Variante Sämisch, Defesa Byrne",
+            "de": "Sämisch-Variante, Byrne-Verteidigung",
+            "fr": "Variante Sämisch, Défense Byrne",
+            "it": "Variante Sämisch, Difesa Byrne"
           },
           "eco": "E81",
           "opening": "King's Indian Defense: Sämisch Variation, Byrne Defense",
@@ -743,9 +1121,15 @@
         {
           "id": "line-4785b27b4a716f7c",
           "names": {
-            "en": "Sämisch Variation, Orthodox Variation",
+            "en-US": "Sämisch Variation, Orthodox Variation",
             "pt-BR": "Variante Sämisch, Variante Ortodoxa",
-            "es": "Variante Sämisch, Variante Ortodoxa"
+            "es-419": "Variante Sämisch, Variante Ortodoxa",
+            "en-GB": "Sämisch Variation, Orthodox Variation",
+            "es-ES": "Variante Sämisch, Variante Ortodoxa",
+            "pt-PT": "Variante Sämisch, Variante Ortodoxa",
+            "de": "Sämisch-Variante, Orthodoxe Variante",
+            "fr": "Variante Sämisch, Variante orthodoxe",
+            "it": "Variante Sämisch, Variante ortodossa"
           },
           "eco": "E85",
           "opening": "King's Indian Defense: Sämisch Variation, Orthodox Variation",
@@ -755,9 +1139,15 @@
         {
           "id": "line-34424e76b1294373",
           "names": {
-            "en": "Sämisch Variation",
+            "en-US": "Sämisch Variation",
             "pt-BR": "Variante Sämisch",
-            "es": "Variante Sämisch"
+            "es-419": "Variante Sämisch",
+            "en-GB": "Sämisch Variation",
+            "es-ES": "Variante Sämisch",
+            "pt-PT": "Variante Sämisch",
+            "de": "Sämisch-Variante",
+            "fr": "Variante Sämisch",
+            "it": "Variante Sämisch"
           },
           "eco": "E86",
           "opening": "King's Indian Defense: Sämisch Variation",
@@ -767,9 +1157,15 @@
         {
           "id": "line-e073387c1f73488d",
           "names": {
-            "en": "Sämisch Variation, Closed Variation, Main Line",
+            "en-US": "Sämisch Variation, Closed Variation, Main Line",
             "pt-BR": "Variante Sämisch, Variante Fechada, Linha Principal",
-            "es": "Variante Sämisch, Variante Cerrada, Línea Principal"
+            "es-419": "Variante Sämisch, Variante Cerrada, Línea Principal",
+            "en-GB": "Sämisch Variation, Closed Variation, Main Line",
+            "es-ES": "Variante Sämisch, Variante Cerrada, Línea Principal",
+            "pt-PT": "Variante Sämisch, Variante Fechada, Linha Principal",
+            "de": "Sämisch-Variante, Geschlossene Variante, Hauptvariante",
+            "fr": "Variante Sämisch, Variante fermée, Ligne principale",
+            "it": "Variante Sämisch, Variante chiusa, Linea principale"
           },
           "eco": "E89",
           "opening": "King's Indian Defense: Sämisch Variation, Closed Variation, Main Line",
@@ -779,9 +1175,15 @@
         {
           "id": "line-41a8e95f6e9f9c6c",
           "names": {
-            "en": "Sämisch Variation, Closed Variation",
+            "en-US": "Sämisch Variation, Closed Variation",
             "pt-BR": "Variante Sämisch, Variante Fechada",
-            "es": "Variante Sämisch, Variante Cerrada"
+            "es-419": "Variante Sämisch, Variante Cerrada",
+            "en-GB": "Sämisch Variation, Closed Variation",
+            "es-ES": "Variante Sämisch, Variante Cerrada",
+            "pt-PT": "Variante Sämisch, Variante Fechada",
+            "de": "Sämisch-Variante, Geschlossene Variante",
+            "fr": "Variante Sämisch, Variante fermée",
+            "it": "Variante Sämisch, Variante chiusa"
           },
           "eco": "E87",
           "opening": "King's Indian Defense: Sämisch Variation, Closed Variation",
@@ -791,9 +1193,15 @@
         {
           "id": "line-59ab8174a775aabc",
           "names": {
-            "en": "Sämisch Variation, Bronstein Defense",
+            "en-US": "Sämisch Variation, Bronstein Defense",
             "pt-BR": "Variante Sämisch, Defesa Bronstein",
-            "es": "Variante Sämisch, Defensa Bronstein"
+            "es-419": "Variante Sämisch, Defensa Bronstein",
+            "en-GB": "Sämisch Variation, Bronstein Defence",
+            "es-ES": "Variante Sämisch, Defensa Bronstein",
+            "pt-PT": "Variante Sämisch, Defesa Bronstein",
+            "de": "Sämisch-Variante, Bronstein-Verteidigung",
+            "fr": "Variante Sämisch, Défense Bronstein",
+            "it": "Variante Sämisch, Difesa Bronstein"
           },
           "eco": "E87",
           "opening": "King's Indian Defense: Sämisch Variation, Bronstein Defense",
@@ -803,9 +1211,15 @@
         {
           "id": "line-cfb2c7c99e427417",
           "names": {
-            "en": "Sämisch Variation, Orthodox Variation, Bronstein Variation",
+            "en-US": "Sämisch Variation, Orthodox Variation, Bronstein Variation",
             "pt-BR": "Variante Sämisch, Variante Ortodoxa, Variante Bronstein",
-            "es": "Variante Sämisch, Variante Ortodoxa, Variante Bronstein"
+            "es-419": "Variante Sämisch, Variante Ortodoxa, Variante Bronstein",
+            "en-GB": "Sämisch Variation, Orthodox Variation, Bronstein Variation",
+            "es-ES": "Variante Sämisch, Variante Ortodoxa, Variante Bronstein",
+            "pt-PT": "Variante Sämisch, Variante Ortodoxa, Variante Bronstein",
+            "de": "Sämisch-Variante, Orthodoxe Variante, Bronstein-Variante",
+            "fr": "Variante Sämisch, Variante orthodoxe, Variante Bronstein",
+            "it": "Variante Sämisch, Variante ortodossa, Variante Bronstein"
           },
           "eco": "E87",
           "opening": "King's Indian Defense: Sämisch Variation, Orthodox Variation, Bronstein Variation",
@@ -815,9 +1229,15 @@
         {
           "id": "line-bf9288ca147b97c6",
           "names": {
-            "en": "Sämisch Variation, Closed Variation",
+            "en-US": "Sämisch Variation, Closed Variation",
             "pt-BR": "Variante Sämisch, Variante Fechada",
-            "es": "Variante Sämisch, Variante Cerrada"
+            "es-419": "Variante Sämisch, Variante Cerrada",
+            "en-GB": "Sämisch Variation, Closed Variation",
+            "es-ES": "Variante Sämisch, Variante Cerrada",
+            "pt-PT": "Variante Sämisch, Variante Fechada",
+            "de": "Sämisch-Variante, Geschlossene Variante",
+            "fr": "Variante Sämisch, Variante fermée",
+            "it": "Variante Sämisch, Variante chiusa"
           },
           "eco": "E88",
           "opening": "King's Indian Defense: Sämisch Variation, Closed Variation",
@@ -827,9 +1247,15 @@
         {
           "id": "line-c9cc28e158283294",
           "names": {
-            "en": "Sämisch Variation, Bobotsov-Korchnoi-Petrosian Variation",
+            "en-US": "Sämisch Variation, Bobotsov-Korchnoi-Petrosian Variation",
             "pt-BR": "Variante Sämisch, Variante Bobotsov-Korchnoi-Petrosian",
-            "es": "Variante Sämisch, Variante Bobotsov-Korchnoi-Petrosian"
+            "es-419": "Variante Sämisch, Variante Bobotsov-Korchnoi-Petrosian",
+            "en-GB": "Sämisch Variation, Bobotsov-Korchnoi-Petrosian Variation",
+            "es-ES": "Variante Sämisch, Variante Bobotsov-Korchnoi-Petrosian",
+            "pt-PT": "Variante Sämisch, Variante Bobotsov-Korchnoi-Petrosian",
+            "de": "Sämisch-Variante, Bobozow-Kortschnoi-Petrosjan-Variante",
+            "fr": "Variante Sämisch, Variante Bobotsov-Kortchnoï-Petrossian",
+            "it": "Variante Sämisch, Variante Bobotsov-Korčnoj-Petrosyan"
           },
           "eco": "E81",
           "opening": "King's Indian Defense: Sämisch Variation, Bobotsov-Korchnoi-Petrosian Variation",
@@ -840,17 +1266,29 @@
     },
     {
       "names": {
-        "en": "Averbakh Variation",
+        "en-US": "Averbakh Variation",
         "pt-BR": "Variante Averbakh",
-        "es": "Variante Averbakh"
+        "es-419": "Variante Averbakh",
+        "en-GB": "Averbakh Variation",
+        "es-ES": "Variante Averbakh",
+        "pt-PT": "Variante Averbakh",
+        "de": "Awerbach-Variante",
+        "fr": "Variante Averbakh",
+        "it": "Variante Averbach"
       },
       "lines": [
         {
           "id": "line-26e61b3aca72714f",
           "names": {
-            "en": "Averbakh Variation",
+            "en-US": "Averbakh Variation",
             "pt-BR": "Variante Averbakh",
-            "es": "Variante Averbakh"
+            "es-419": "Variante Averbakh",
+            "en-GB": "Averbakh Variation",
+            "es-ES": "Variante Averbakh",
+            "pt-PT": "Variante Averbakh",
+            "de": "Awerbach-Variante",
+            "fr": "Variante Averbakh",
+            "it": "Variante Averbach"
           },
           "eco": "E73",
           "opening": "King's Indian Defense: Averbakh Variation",
@@ -860,9 +1298,15 @@
         {
           "id": "line-375a84ab7d6ea14e",
           "names": {
-            "en": "Averbakh Variation, Modern Defense",
+            "en-US": "Averbakh Variation, Modern Defense",
             "pt-BR": "Variante Averbakh, Defesa Moderna",
-            "es": "Variante Averbakh, Defensa Moderna"
+            "es-419": "Variante Averbakh, Defensa Moderna",
+            "en-GB": "Averbakh Variation, Modern Defence",
+            "es-ES": "Variante Averbakh, Defensa Moderna",
+            "pt-PT": "Variante Averbakh, Defesa Moderna",
+            "de": "Awerbach-Variante, Moderne Verteidigung",
+            "fr": "Variante Averbakh, Défense moderne",
+            "it": "Variante Averbach, Difesa moderna"
           },
           "eco": "E73",
           "opening": "King's Indian Defense: Averbakh Variation, Modern Defense",
@@ -872,9 +1316,15 @@
         {
           "id": "line-ebef65399d56e271",
           "names": {
-            "en": "Averbakh Variation, Modern Defense, Burgess Line",
+            "en-US": "Averbakh Variation, Modern Defense, Burgess Line",
             "pt-BR": "Variante Averbakh, Defesa Moderna, Linha Burgess",
-            "es": "Variante Averbakh, Defensa Moderna, Línea Burgess"
+            "es-419": "Variante Averbakh, Defensa Moderna, Línea Burgess",
+            "en-GB": "Averbakh Variation, Modern Defence, Burgess Line",
+            "es-ES": "Variante Averbakh, Defensa Moderna, Línea Burgess",
+            "pt-PT": "Variante Averbakh, Defesa Moderna, Linha Burgess",
+            "de": "Awerbach-Variante, Moderne Verteidigung, Burgess-Abspiel",
+            "fr": "Variante Averbakh, Défense moderne, Ligne Burgess",
+            "it": "Variante Averbach, Difesa moderna, Linea Burgess"
           },
           "eco": "E73",
           "opening": "King's Indian Defense: Averbakh Variation, Modern Defense, Burgess Line",
@@ -884,9 +1334,15 @@
         {
           "id": "line-e42f87501c63c439",
           "names": {
-            "en": "Averbakh Variation, Geller Defense",
+            "en-US": "Averbakh Variation, Geller Defense",
             "pt-BR": "Variante Averbakh, Defesa Geller",
-            "es": "Variante Averbakh, Defensa Geller"
+            "es-419": "Variante Averbakh, Defensa Geller",
+            "en-GB": "Averbakh Variation, Geller Defence",
+            "es-ES": "Variante Averbakh, Defensa Geller",
+            "pt-PT": "Variante Averbakh, Defesa Geller",
+            "de": "Awerbach-Variante, Geller-Verteidigung",
+            "fr": "Variante Averbakh, Défense Geller",
+            "it": "Variante Averbach, Difesa Geller"
           },
           "eco": "E73",
           "opening": "King's Indian Defense: Averbakh Variation, Geller Defense",
@@ -896,9 +1352,15 @@
         {
           "id": "line-22740041b046fe88",
           "names": {
-            "en": "Averbakh Variation, Nc6 Defense",
+            "en-US": "Averbakh Variation, Nc6 Defense",
             "pt-BR": "Variante Averbakh, Defesa Nc6",
-            "es": "Variante Averbakh, Defensa Nc6"
+            "es-419": "Variante Averbakh, Defensa Nc6",
+            "en-GB": "Averbakh Variation, Nc6 Defence",
+            "es-ES": "Variante Averbakh, Defensa Nc6",
+            "pt-PT": "Variante Averbakh, Defesa Nc6",
+            "de": "Awerbach-Variante, Nc6-Verteidigung",
+            "fr": "Variante Averbakh, Défense Nc6",
+            "it": "Variante Averbach, Difesa Nc6"
           },
           "eco": "E73",
           "opening": "King's Indian Defense: Averbakh Variation, Nc6 Defense",
@@ -908,9 +1370,15 @@
         {
           "id": "line-96da69472ad1147c",
           "names": {
-            "en": "Averbakh Variation, Spanish Defense",
+            "en-US": "Averbakh Variation, Spanish Defense",
             "pt-BR": "Variante Averbakh, Defesa Espanhola",
-            "es": "Variante Averbakh, Defensa Española"
+            "es-419": "Variante Averbakh, Defensa Española",
+            "en-GB": "Averbakh Variation, Spanish Defence",
+            "es-ES": "Variante Averbakh, Defensa Española",
+            "pt-PT": "Variante Averbakh, Defesa Espanhola",
+            "de": "Awerbach-Variante, Spanische Verteidigung",
+            "fr": "Variante Averbakh, Défense espagnole",
+            "it": "Variante Averbach, Difesa spagnola"
           },
           "eco": "E73",
           "opening": "King's Indian Defense: Averbakh Variation, Spanish Defense",
@@ -920,9 +1388,15 @@
         {
           "id": "line-0600dc1bc7349bd1",
           "names": {
-            "en": "Averbakh Variation, Benoni Defense",
+            "en-US": "Averbakh Variation, Benoni Defense",
             "pt-BR": "Variante Averbakh, Defesa Benoni",
-            "es": "Variante Averbakh, Defensa Benoni"
+            "es-419": "Variante Averbakh, Defensa Benoni",
+            "en-GB": "Averbakh Variation, Benoni Defence",
+            "es-ES": "Variante Averbakh, Defensa Benoni",
+            "pt-PT": "Variante Averbakh, Defesa Benoni",
+            "de": "Awerbach-Variante, Benoni-Verteidigung",
+            "fr": "Variante Averbakh, Défense Benoni",
+            "it": "Variante Averbach, Difesa Benoni"
           },
           "eco": "E74",
           "opening": "King's Indian Defense: Averbakh Variation, Benoni Defense",
@@ -932,9 +1406,15 @@
         {
           "id": "line-1c1f60a90c985389",
           "names": {
-            "en": "Averbakh Variation, Benoni Defense, Advance Variation",
+            "en-US": "Averbakh Variation, Benoni Defense, Advance Variation",
             "pt-BR": "Variante Averbakh, Defesa Benoni, Variante do Avanço",
-            "es": "Variante Averbakh, Defensa Benoni, Variante del Avance"
+            "es-419": "Variante Averbakh, Defensa Benoni, Variante del Avance",
+            "en-GB": "Averbakh Variation, Benoni Defence, Advance Variation",
+            "es-ES": "Variante Averbakh, Defensa Benoni, Variante del Avance",
+            "pt-PT": "Variante Averbakh, Defesa Benoni, Variante do Avanço",
+            "de": "Awerbach-Variante, Benoni-Verteidigung, Vorstoßvariante",
+            "fr": "Variante Averbakh, Défense Benoni, Variante d'avance",
+            "it": "Variante Averbach, Difesa Benoni, Variante di spinta"
           },
           "eco": "E74",
           "opening": "King's Indian Defense: Averbakh Variation, Benoni Defense, Advance Variation",
@@ -944,9 +1424,15 @@
         {
           "id": "line-969651376e7edaab",
           "names": {
-            "en": "Averbakh Variation, Main Line",
+            "en-US": "Averbakh Variation, Main Line",
             "pt-BR": "Variante Averbakh, Linha Principal",
-            "es": "Variante Averbakh, Línea Principal"
+            "es-419": "Variante Averbakh, Línea Principal",
+            "en-GB": "Averbakh Variation, Main Line",
+            "es-ES": "Variante Averbakh, Línea Principal",
+            "pt-PT": "Variante Averbakh, Linha Principal",
+            "de": "Awerbach-Variante, Hauptvariante",
+            "fr": "Variante Averbakh, Ligne principale",
+            "it": "Variante Averbach, Linea principale"
           },
           "eco": "E75",
           "opening": "King's Indian Defense: Averbakh Variation, Main Line",
@@ -956,9 +1442,15 @@
         {
           "id": "line-4d097df7a42bf23d",
           "names": {
-            "en": "Averbakh Variation, Benoni Defense, Exchange Variation",
+            "en-US": "Averbakh Variation, Benoni Defense, Exchange Variation",
             "pt-BR": "Variante Averbakh, Defesa Benoni, Variante da Troca",
-            "es": "Variante Averbakh, Defensa Benoni, Variante del Cambio"
+            "es-419": "Variante Averbakh, Defensa Benoni, Variante del Cambio",
+            "en-GB": "Averbakh Variation, Benoni Defence, Exchange Variation",
+            "es-ES": "Variante Averbakh, Defensa Benoni, Variante del Cambio",
+            "pt-PT": "Variante Averbakh, Defesa Benoni, Variante da Troca",
+            "de": "Awerbach-Variante, Benoni-Verteidigung, Abtauschvariante",
+            "fr": "Variante Averbakh, Défense Benoni, Variante d'échange",
+            "it": "Variante Averbach, Difesa Benoni, Variante di cambio"
           },
           "eco": "E74",
           "opening": "King's Indian Defense: Averbakh Variation, Benoni Defense, Exchange Variation",
@@ -968,9 +1460,15 @@
         {
           "id": "line-e5f1dcb847fc563d",
           "names": {
-            "en": "Averbakh Variation, Flexible Defense",
+            "en-US": "Averbakh Variation, Flexible Defense",
             "pt-BR": "Variante Averbakh, Defesa Flexível",
-            "es": "Variante Averbakh, Defensa Flexible"
+            "es-419": "Variante Averbakh, Defensa Flexible",
+            "en-GB": "Averbakh Variation, Flexible Defence",
+            "es-ES": "Variante Averbakh, Defensa Flexible",
+            "pt-PT": "Variante Averbakh, Defesa Flexível",
+            "de": "Awerbach-Variante, Flexible Verteidigung",
+            "fr": "Variante Averbakh, Défense flexible",
+            "it": "Variante Averbach, Difesa flessibile"
           },
           "eco": "E73",
           "opening": "King's Indian Defense: Averbakh Variation, Flexible Defense",
@@ -981,17 +1479,29 @@
     },
     {
       "names": {
-        "en": "Four Pawns Attack",
+        "en-US": "Four Pawns Attack",
         "pt-BR": "Ataque dos Quatro Peões",
-        "es": "Ataque de los Cuatro Peones"
+        "es-419": "Ataque de los Cuatro Peones",
+        "en-GB": "Four Pawns Attack",
+        "es-ES": "Ataque de los Cuatro Peones",
+        "pt-PT": "Ataque dos Quatro Peões",
+        "de": "Vierbauernangriff",
+        "fr": "Attaque des quatre pions",
+        "it": "Attacco dei quattro pedoni"
       },
       "lines": [
         {
           "id": "line-9460aee886b1a990",
           "names": {
-            "en": "Four Pawns Attack",
+            "en-US": "Four Pawns Attack",
             "pt-BR": "Ataque dos Quatro Peões",
-            "es": "Ataque de los Cuatro Peones"
+            "es-419": "Ataque de los Cuatro Peones",
+            "en-GB": "Four Pawns Attack",
+            "es-ES": "Ataque de los Cuatro Peones",
+            "pt-PT": "Ataque dos Quatro Peões",
+            "de": "Vierbauernangriff",
+            "fr": "Attaque des quatre pions",
+            "it": "Attacco dei quattro pedoni"
           },
           "eco": "E77",
           "opening": "King's Indian Defense: Four Pawns Attack",
@@ -1001,9 +1511,15 @@
         {
           "id": "line-84b0abe40d643e66",
           "names": {
-            "en": "Four Pawns Attack",
+            "en-US": "Four Pawns Attack",
             "pt-BR": "Ataque dos Quatro Peões",
-            "es": "Ataque de los Cuatro Peones"
+            "es-419": "Ataque de los Cuatro Peones",
+            "en-GB": "Four Pawns Attack",
+            "es-ES": "Ataque de los Cuatro Peones",
+            "pt-PT": "Ataque dos Quatro Peões",
+            "de": "Vierbauernangriff",
+            "fr": "Attaque des quatre pions",
+            "it": "Attacco dei quattro pedoni"
           },
           "eco": "E76",
           "opening": "King's Indian Defense: Four Pawns Attack",
@@ -1013,9 +1529,15 @@
         {
           "id": "line-1f23e97af0fb8362",
           "names": {
-            "en": "Four Pawns Attack, Modern Defense",
+            "en-US": "Four Pawns Attack, Modern Defense",
             "pt-BR": "Ataque dos Quatro Peões, Defesa Moderna",
-            "es": "Ataque de los Cuatro Peones, Defensa Moderna"
+            "es-419": "Ataque de los Cuatro Peones, Defensa Moderna",
+            "en-GB": "Four Pawns Attack, Modern Defence",
+            "es-ES": "Ataque de los Cuatro Peones, Defensa Moderna",
+            "pt-PT": "Ataque dos Quatro Peões, Defesa Moderna",
+            "de": "Vierbauernangriff, Moderne Verteidigung",
+            "fr": "Attaque des quatre pions, Défense moderne",
+            "it": "Attacco dei quattro pedoni, Difesa moderna"
           },
           "eco": "E76",
           "opening": "King's Indian Defense: Four Pawns Attack, Modern Defense",
@@ -1025,9 +1547,15 @@
         {
           "id": "line-8497458bed871e82",
           "names": {
-            "en": "Four Pawns Attack, Fluid Attack",
+            "en-US": "Four Pawns Attack, Fluid Attack",
             "pt-BR": "Ataque dos Quatro Peões, Ataque Fluido",
-            "es": "Ataque de los Cuatro Peones, Ataque Fluido"
+            "es-419": "Ataque de los Cuatro Peones, Ataque Fluido",
+            "en-GB": "Four Pawns Attack, Fluid Attack",
+            "es-ES": "Ataque de los Cuatro Peones, Ataque Fluido",
+            "pt-PT": "Ataque dos Quatro Peões, Ataque Fluido",
+            "de": "Vierbauernangriff, Fließender Angriff",
+            "fr": "Attaque des quatre pions, Attaque fluide",
+            "it": "Attacco dei quattro pedoni, Attacco fluido"
           },
           "eco": "E78",
           "opening": "King's Indian Defense: Four Pawns Attack, Fluid Attack",
@@ -1037,9 +1565,15 @@
         {
           "id": "line-b84531b112542d41",
           "names": {
-            "en": "Four Pawns Attack, Exchange Variation",
+            "en-US": "Four Pawns Attack, Exchange Variation",
             "pt-BR": "Ataque dos Quatro Peões, Variante da Troca",
-            "es": "Ataque de los Cuatro Peones, Variante del Cambio"
+            "es-419": "Ataque de los Cuatro Peones, Variante del Cambio",
+            "en-GB": "Four Pawns Attack, Exchange Variation",
+            "es-ES": "Ataque de los Cuatro Peones, Variante del Cambio",
+            "pt-PT": "Ataque dos Quatro Peões, Variante da Troca",
+            "de": "Vierbauernangriff, Abtauschvariante",
+            "fr": "Attaque des quatre pions, Variante d'échange",
+            "it": "Attacco dei quattro pedoni, Variante di cambio"
           },
           "eco": "E79",
           "opening": "King's Indian Defense: Four Pawns Attack, Exchange Variation",
@@ -1049,9 +1583,15 @@
         {
           "id": "line-1d5e4a640df88ea3",
           "names": {
-            "en": "Four Pawns Attack, Dynamic Attack",
+            "en-US": "Four Pawns Attack, Dynamic Attack",
             "pt-BR": "Ataque dos Quatro Peões, Ataque Dinâmico",
-            "es": "Ataque de los Cuatro Peones, Ataque Dinámico"
+            "es-419": "Ataque de los Cuatro Peones, Ataque Dinámico",
+            "en-GB": "Four Pawns Attack, Dynamic Attack",
+            "es-ES": "Ataque de los Cuatro Peones, Ataque Dinámico",
+            "pt-PT": "Ataque dos Quatro Peões, Ataque Dinâmico",
+            "de": "Vierbauernangriff, Dynamischer Angriff",
+            "fr": "Attaque des quatre pions, Attaque dynamique",
+            "it": "Attacco dei quattro pedoni, Attacco dinamico"
           },
           "eco": "E76",
           "opening": "King's Indian Defense: Four Pawns Attack, Dynamic Attack",
@@ -1061,9 +1601,15 @@
         {
           "id": "line-798496f4815b65e3",
           "names": {
-            "en": "Four Pawns Attack, Normal Attack",
+            "en-US": "Four Pawns Attack, Normal Attack",
             "pt-BR": "Ataque dos Quatro Peões, Ataque Normal",
-            "es": "Ataque de los Cuatro Peones, Ataque Normal"
+            "es-419": "Ataque de los Cuatro Peones, Ataque Normal",
+            "en-GB": "Four Pawns Attack, Normal Attack",
+            "es-ES": "Ataque de los Cuatro Peones, Ataque Normal",
+            "pt-PT": "Ataque dos Quatro Peões, Ataque Normal",
+            "de": "Vierbauernangriff, Normaler Angriff",
+            "fr": "Attaque des quatre pions, Attaque normale",
+            "it": "Attacco dei quattro pedoni, Attacco normale"
           },
           "eco": "E77",
           "opening": "King's Indian Defense: Four Pawns Attack, Normal Attack",
@@ -1073,9 +1619,15 @@
         {
           "id": "line-0b926e41d78676d6",
           "names": {
-            "en": "Four Pawns Attack, Florentine Gambit",
+            "en-US": "Four Pawns Attack, Florentine Gambit",
             "pt-BR": "Ataque dos Quatro Peões, Gambito Florentino",
-            "es": "Ataque de los Cuatro Peones, Gambito Florentino"
+            "es-419": "Ataque de los Cuatro Peones, Gambito Florentino",
+            "en-GB": "Four Pawns Attack, Florentine Gambit",
+            "es-ES": "Ataque de los Cuatro Peones, Gambito Florentino",
+            "pt-PT": "Ataque dos Quatro Peões, Gambito Florentino",
+            "de": "Vierbauernangriff, Florentiner Gambit",
+            "fr": "Attaque des quatre pions, Gambit florentin",
+            "it": "Attacco dei quattro pedoni, Gambetto fiorentino"
           },
           "eco": "E77",
           "opening": "King's Indian Defense: Four Pawns Attack, Florentine Gambit",
@@ -1086,17 +1638,29 @@
     },
     {
       "names": {
-        "en": "Normal Variation",
+        "en-US": "Normal Variation",
         "pt-BR": "Variante Normal",
-        "es": "Variante Normal"
+        "es-419": "Variante Normal",
+        "en-GB": "Normal Variation",
+        "es-ES": "Variante Normal",
+        "pt-PT": "Variante Normal",
+        "de": "Normalvariante",
+        "fr": "Variante normale",
+        "it": "Variante normale"
       },
       "lines": [
         {
           "id": "line-fb4141765a71fdbf",
           "names": {
-            "en": "Normal Variation, King's Knight Variation",
+            "en-US": "Normal Variation, King's Knight Variation",
             "pt-BR": "Variante Normal, Variante do Cavalo do Rei",
-            "es": "Variante Normal, Variante del Caballo de Rey"
+            "es-419": "Variante Normal, Variante del Caballo de Rey",
+            "en-GB": "Normal Variation, King's Knight Variation",
+            "es-ES": "Variante Normal, Variante del Caballo de Rey",
+            "pt-PT": "Variante Normal, Variante do Cavalo do Rei",
+            "de": "Normalvariante, Königsspringer-Variante",
+            "fr": "Variante normale, Variante du cavalier-roi",
+            "it": "Variante normale, Variante del cavallo di re"
           },
           "eco": "E60",
           "opening": "King's Indian Defense: Normal Variation, King's Knight Variation",
@@ -1106,9 +1670,15 @@
         {
           "id": "line-3d0abdde2034c429",
           "names": {
-            "en": "Normal Variation",
+            "en-US": "Normal Variation",
             "pt-BR": "Variante Normal",
-            "es": "Variante Normal"
+            "es-419": "Variante Normal",
+            "en-GB": "Normal Variation",
+            "es-ES": "Variante Normal",
+            "pt-PT": "Variante Normal",
+            "de": "Normalvariante",
+            "fr": "Variante normale",
+            "it": "Variante normale"
           },
           "eco": "E70",
           "opening": "King's Indian Defense: Normal Variation",
@@ -1118,9 +1688,15 @@
         {
           "id": "line-a1b1b6c49586fa68",
           "names": {
-            "en": "Normal Variation",
+            "en-US": "Normal Variation",
             "pt-BR": "Variante Normal",
-            "es": "Variante Normal"
+            "es-419": "Variante Normal",
+            "en-GB": "Normal Variation",
+            "es-ES": "Variante Normal",
+            "pt-PT": "Variante Normal",
+            "de": "Normalvariante",
+            "fr": "Variante normale",
+            "it": "Variante normale"
           },
           "eco": "E70",
           "opening": "King's Indian Defense: Normal Variation",
@@ -1130,9 +1706,15 @@
         {
           "id": "line-a3262b1e56247037",
           "names": {
-            "en": "Normal Variation, Standard Development",
+            "en-US": "Normal Variation, Standard Development",
             "pt-BR": "Variante Normal, Desenvolvimento Padrão",
-            "es": "Variante Normal, Desarrollo Estándar"
+            "es-419": "Variante Normal, Desarrollo Estándar",
+            "en-GB": "Normal Variation, Standard Development",
+            "es-ES": "Variante Normal, Desarrollo Estándar",
+            "pt-PT": "Variante Normal, Desenvolvimento Padrão",
+            "de": "Normalvariante, Standardentwicklung",
+            "fr": "Variante normale, Développement standard",
+            "it": "Variante normale, Sviluppo standard"
           },
           "eco": "E73",
           "opening": "King's Indian Defense: Normal Variation, Standard Development",
@@ -1142,9 +1724,15 @@
         {
           "id": "line-6bc5b3a342c04aad",
           "names": {
-            "en": "Normal Variation, Rare Defenses",
+            "en-US": "Normal Variation, Rare Defenses",
             "pt-BR": "Variante Normal, Defesas Raras",
-            "es": "Variante Normal, Defensas Raras"
+            "es-419": "Variante Normal, Defensas Raras",
+            "en-GB": "Normal Variation, Rare Defences",
+            "es-ES": "Variante Normal, Defensas Raras",
+            "pt-PT": "Variante Normal, Defesas Raras",
+            "de": "Normalvariante, Seltene Verteidigungen",
+            "fr": "Variante normale, Défenses rares",
+            "it": "Variante normale, Difese rare"
           },
           "eco": "E90",
           "opening": "King's Indian Defense: Normal Variation, Rare Defenses",
@@ -1154,9 +1742,15 @@
         {
           "id": "line-6331ce5609f4834e",
           "names": {
-            "en": "Normal Variation, Deferred Fianchetto",
+            "en-US": "Normal Variation, Deferred Fianchetto",
             "pt-BR": "Variante Normal, Fianqueto Adiado",
-            "es": "Variante Normal, Fianchetto Diferido"
+            "es-419": "Variante Normal, Fianchetto Diferido",
+            "en-GB": "Normal Variation, Deferred Fianchetto",
+            "es-ES": "Variante Normal, Fianchetto Diferido",
+            "pt-PT": "Variante Normal, Fianqueto Adiado",
+            "de": "Normalvariante, Aufgeschobenes Fianchetto",
+            "fr": "Variante normale, Fianchetto différé",
+            "it": "Variante normale, Fianchetto differito"
           },
           "eco": "E72",
           "opening": "King's Indian Defense: Normal Variation, Deferred Fianchetto",
@@ -1167,17 +1761,29 @@
     },
     {
       "names": {
-        "en": "Semi-Classical Variation",
+        "en-US": "Semi-Classical Variation",
         "pt-BR": "Variante Semiclássica",
-        "es": "Variante Semiclásica"
+        "es-419": "Variante Semiclásica",
+        "en-GB": "Semi-Classical Variation",
+        "es-ES": "Variante Semiclásica",
+        "pt-PT": "Variante Semiclássica",
+        "de": "Halbklassische Variante",
+        "fr": "Variante semi-classique",
+        "it": "Variante semiclassica"
       },
       "lines": [
         {
           "id": "line-587cb41d591cd94c",
           "names": {
-            "en": "Semi-Classical Variation, Hollywood Variation",
+            "en-US": "Semi-Classical Variation, Hollywood Variation",
             "pt-BR": "Variante Semiclássica, Variante Hollywood",
-            "es": "Variante Semiclásica, Variante Hollywood"
+            "es-419": "Variante Semiclásica, Variante Hollywood",
+            "en-GB": "Semi-Classical Variation, Hollywood Variation",
+            "es-ES": "Variante Semiclásica, Variante Hollywood",
+            "pt-PT": "Variante Semiclássica, Variante Hollywood",
+            "de": "Halbklassische Variante, Hollywood-Variante",
+            "fr": "Variante semi-classique, Variante Hollywood",
+            "it": "Variante semiclassica, Variante Hollywood"
           },
           "eco": "E60",
           "opening": "King's Indian Defense: Semi-Classical Variation, Hollywood Variation",
@@ -1187,9 +1793,15 @@
         {
           "id": "line-0deace66a6661683",
           "names": {
-            "en": "Semi-Classical Variation",
+            "en-US": "Semi-Classical Variation",
             "pt-BR": "Variante Semiclássica",
-            "es": "Variante Semiclásica"
+            "es-419": "Variante Semiclásica",
+            "en-GB": "Semi-Classical Variation",
+            "es-ES": "Variante Semiclásica",
+            "pt-PT": "Variante Semiclássica",
+            "de": "Halbklassische Variante",
+            "fr": "Variante semi-classique",
+            "it": "Variante semiclassica"
           },
           "eco": "E61",
           "opening": "King's Indian Defense: Semi-Classical Variation",
@@ -1199,9 +1811,15 @@
         {
           "id": "line-a3e8840370ed3cfd",
           "names": {
-            "en": "Semi-Classical Variation, Queenside Storm Line",
+            "en-US": "Semi-Classical Variation, Queenside Storm Line",
             "pt-BR": "Variante Semiclássica, Linha do Assalto na Ala da Dama",
-            "es": "Variante Semiclásica, Línea del Asalto en el Flanco de Dama"
+            "es-419": "Variante Semiclásica, Línea del Asalto en el Flanco de Dama",
+            "en-GB": "Semi-Classical Variation, Queenside Storm Line",
+            "es-ES": "Variante Semiclásica, Línea del Asalto en el Flanco de Dama",
+            "pt-PT": "Variante Semiclássica, Linha do Assalto na Ala da Dama",
+            "de": "Halbklassische Variante, Damenflügelsturm-Abspiel",
+            "fr": "Variante semi-classique, Ligne de l'assaut à l'aile dame",
+            "it": "Variante semiclassica, Linea dell'assalto sull'ala di donna"
           },
           "eco": "E61",
           "opening": "King's Indian Defense: Semi-Classical Variation, Queenside Storm Line",
@@ -1211,9 +1829,15 @@
         {
           "id": "line-14f793ebc9ba46a9",
           "names": {
-            "en": "Semi-Classical Variation, Exchange Variation",
+            "en-US": "Semi-Classical Variation, Exchange Variation",
             "pt-BR": "Variante Semiclássica, Variante da Troca",
-            "es": "Variante Semiclásica, Variante del Cambio"
+            "es-419": "Variante Semiclásica, Variante del Cambio",
+            "en-GB": "Semi-Classical Variation, Exchange Variation",
+            "es-ES": "Variante Semiclásica, Variante del Cambio",
+            "pt-PT": "Variante Semiclássica, Variante da Troca",
+            "de": "Halbklassische Variante, Abtauschvariante",
+            "fr": "Variante semi-classique, Variante d'échange",
+            "it": "Variante semiclassica, Variante di cambio"
           },
           "eco": "E61",
           "opening": "King's Indian Defense: Semi-Classical Variation, Exchange Variation",
@@ -1223,9 +1847,15 @@
         {
           "id": "line-57656d33279ded8b",
           "names": {
-            "en": "Semi-Classical Variation, Benoni Variation",
+            "en-US": "Semi-Classical Variation, Benoni Variation",
             "pt-BR": "Variante Semiclássica, Variante Benoni",
-            "es": "Variante Semiclásica, Variante Benoni"
+            "es-419": "Variante Semiclásica, Variante Benoni",
+            "en-GB": "Semi-Classical Variation, Benoni Variation",
+            "es-ES": "Variante Semiclásica, Variante Benoni",
+            "pt-PT": "Variante Semiclássica, Variante Benoni",
+            "de": "Halbklassische Variante, Benoni-Variante",
+            "fr": "Variante semi-classique, Variante Benoni",
+            "it": "Variante semiclassica, Variante Benoni"
           },
           "eco": "E60",
           "opening": "King's Indian Defense: Semi-Classical Variation, Benoni Variation",
@@ -1236,17 +1866,29 @@
     },
     {
       "names": {
-        "en": "Petrosian Variation",
+        "en-US": "Petrosian Variation",
         "pt-BR": "Variante Petrosian",
-        "es": "Variante Petrosian"
+        "es-419": "Variante Petrosian",
+        "en-GB": "Petrosian Variation",
+        "es-ES": "Variante Petrosian",
+        "pt-PT": "Variante Petrosian",
+        "de": "Petrosjan-Variante",
+        "fr": "Variante Petrossian",
+        "it": "Variante Petrosyan"
       },
       "lines": [
         {
           "id": "line-b3ff3d7c1549c54d",
           "names": {
-            "en": "Petrosian Variation",
+            "en-US": "Petrosian Variation",
             "pt-BR": "Variante Petrosian",
-            "es": "Variante Petrosian"
+            "es-419": "Variante Petrosian",
+            "en-GB": "Petrosian Variation",
+            "es-ES": "Variante Petrosian",
+            "pt-PT": "Variante Petrosian",
+            "de": "Petrosjan-Variante",
+            "fr": "Variante Petrossian",
+            "it": "Variante Petrosyan"
           },
           "eco": "E92",
           "opening": "King's Indian Defense: Petrosian Variation",
@@ -1256,9 +1898,15 @@
         {
           "id": "line-a71030ca4d16fe5f",
           "names": {
-            "en": "Petrosian Variation, Normal Defense",
+            "en-US": "Petrosian Variation, Normal Defense",
             "pt-BR": "Variante Petrosian, Defesa Normal",
-            "es": "Variante Petrosian, Defensa Normal"
+            "es-419": "Variante Petrosian, Defensa Normal",
+            "en-GB": "Petrosian Variation, Normal Defence",
+            "es-ES": "Variante Petrosian, Defensa Normal",
+            "pt-PT": "Variante Petrosian, Defesa Normal",
+            "de": "Petrosjan-Variante, Normale Verteidigung",
+            "fr": "Variante Petrossian, Défense normale",
+            "it": "Variante Petrosyan, Difesa normale"
           },
           "eco": "E93",
           "opening": "King's Indian Defense: Petrosian Variation, Normal Defense",
@@ -1268,9 +1916,15 @@
         {
           "id": "line-ec1d9e0dbfe9fbc4",
           "names": {
-            "en": "Petrosian Variation, Keres Defense",
+            "en-US": "Petrosian Variation, Keres Defense",
             "pt-BR": "Variante Petrosian, Defesa Keres",
-            "es": "Variante Petrosian, Defensa Keres"
+            "es-419": "Variante Petrosian, Defensa Keres",
+            "en-GB": "Petrosian Variation, Keres Defence",
+            "es-ES": "Variante Petrosian, Defensa Keres",
+            "pt-PT": "Variante Petrosian, Defesa Keres",
+            "de": "Petrosjan-Variante, Keres-Verteidigung",
+            "fr": "Variante Petrossian, Défense Keres",
+            "it": "Variante Petrosyan, Difesa Keres"
           },
           "eco": "E93",
           "opening": "King's Indian Defense: Petrosian Variation, Keres Defense",
@@ -1280,9 +1934,15 @@
         {
           "id": "line-c5a66fc10c3c7acc",
           "names": {
-            "en": "Petrosian Variation, Stein Defense",
+            "en-US": "Petrosian Variation, Stein Defense",
             "pt-BR": "Variante Petrosian, Defesa Stein",
-            "es": "Variante Petrosian, Defensa Stein"
+            "es-419": "Variante Petrosian, Defensa Stein",
+            "en-GB": "Petrosian Variation, Stein Defence",
+            "es-ES": "Variante Petrosian, Defensa Stein",
+            "pt-PT": "Variante Petrosian, Defesa Stein",
+            "de": "Petrosjan-Variante, Stein-Verteidigung",
+            "fr": "Variante Petrossian, Défense Stein",
+            "it": "Variante Petrosyan, Difesa Stein"
           },
           "eco": "E92",
           "opening": "King's Indian Defense: Petrosian Variation, Stein Defense",
@@ -1293,17 +1953,29 @@
     },
     {
       "names": {
-        "en": "Steiner Attack",
+        "en-US": "Steiner Attack",
         "pt-BR": "Ataque Steiner",
-        "es": "Ataque Steiner"
+        "es-419": "Ataque Steiner",
+        "en-GB": "Steiner Attack",
+        "es-ES": "Ataque Steiner",
+        "pt-PT": "Ataque Steiner",
+        "de": "Steiner-Angriff",
+        "fr": "Attaque Steiner",
+        "it": "Attacco Steiner"
       },
       "lines": [
         {
           "id": "line-1501b9835e7ab0a8",
           "names": {
-            "en": "Steiner Attack",
+            "en-US": "Steiner Attack",
             "pt-BR": "Ataque Steiner",
-            "es": "Ataque Steiner"
+            "es-419": "Ataque Steiner",
+            "en-GB": "Steiner Attack",
+            "es-ES": "Ataque Steiner",
+            "pt-PT": "Ataque Steiner",
+            "de": "Steiner-Angriff",
+            "fr": "Attaque Steiner",
+            "it": "Attacco Steiner"
           },
           "eco": "E81",
           "opening": "King's Indian Defense: Steiner Attack",
@@ -1313,9 +1985,15 @@
         {
           "id": "line-e6d3810ed6f690f4",
           "names": {
-            "en": "Steiner Attack",
+            "en-US": "Steiner Attack",
             "pt-BR": "Ataque Steiner",
-            "es": "Ataque Steiner"
+            "es-419": "Ataque Steiner",
+            "en-GB": "Steiner Attack",
+            "es-ES": "Ataque Steiner",
+            "pt-PT": "Ataque Steiner",
+            "de": "Steiner-Angriff",
+            "fr": "Attaque Steiner",
+            "it": "Attacco Steiner"
           },
           "eco": "E81",
           "opening": "King's Indian Defense: Steiner Attack",
@@ -1325,9 +2003,15 @@
         {
           "id": "line-1851710b6df34772",
           "names": {
-            "en": "Steiner Attack",
+            "en-US": "Steiner Attack",
             "pt-BR": "Ataque Steiner",
-            "es": "Ataque Steiner"
+            "es-419": "Ataque Steiner",
+            "en-GB": "Steiner Attack",
+            "es-ES": "Ataque Steiner",
+            "pt-PT": "Ataque Steiner",
+            "de": "Steiner-Angriff",
+            "fr": "Attaque Steiner",
+            "it": "Attacco Steiner"
           },
           "eco": "E81",
           "opening": "King's Indian Defense: Steiner Attack",
@@ -1337,9 +2021,15 @@
         {
           "id": "line-dee59abe123488ab",
           "names": {
-            "en": "Steiner Attack",
+            "en-US": "Steiner Attack",
             "pt-BR": "Ataque Steiner",
-            "es": "Ataque Steiner"
+            "es-419": "Ataque Steiner",
+            "en-GB": "Steiner Attack",
+            "es-ES": "Ataque Steiner",
+            "pt-PT": "Ataque Steiner",
+            "de": "Steiner-Angriff",
+            "fr": "Attaque Steiner",
+            "it": "Attacco Steiner"
           },
           "eco": "E81",
           "opening": "King's Indian Defense: Steiner Attack",
@@ -1353,9 +2043,15 @@
     {
       "id": "line-34ff53d419a74acc",
       "names": {
-        "en": "Accelerated Averbakh Variation",
+        "en-US": "Accelerated Averbakh Variation",
         "pt-BR": "Variante Averbakh Acelerada",
-        "es": "Variante Averbakh Acelerada"
+        "es-419": "Variante Averbakh Acelerada",
+        "en-GB": "Accelerated Averbakh Variation",
+        "es-ES": "Variante Averbakh Acelerada",
+        "pt-PT": "Variante Averbakh Acelerada",
+        "de": "Beschleunigte Awerbach-Variante",
+        "fr": "Variante Averbakh accélérée",
+        "it": "Variante Averbach accelerata"
       },
       "eco": "E70",
       "opening": "King's Indian Defense: Accelerated Averbakh Variation",
@@ -1365,9 +2061,15 @@
     {
       "id": "line-40351740532c73cb",
       "names": {
-        "en": "Exchange Variation",
+        "en-US": "Exchange Variation",
         "pt-BR": "Variante da Troca",
-        "es": "Variante del Cambio"
+        "es-419": "Variante del Cambio",
+        "en-GB": "Exchange Variation",
+        "es-ES": "Variante del Cambio",
+        "pt-PT": "Variante da Troca",
+        "de": "Abtauschvariante",
+        "fr": "Variante d'échange",
+        "it": "Variante di cambio"
       },
       "eco": "E92",
       "opening": "King's Indian Defense: Exchange Variation",
@@ -1377,9 +2079,15 @@
     {
       "id": "line-cc4be9e29eb754c1",
       "names": {
-        "en": "Karpov System",
+        "en-US": "Karpov System",
         "pt-BR": "Sistema Karpov",
-        "es": "Sistema Karpov"
+        "es-419": "Sistema Karpov",
+        "en-GB": "Karpov System",
+        "es-ES": "Sistema Karpov",
+        "pt-PT": "Sistema Karpov",
+        "de": "Karpow-System",
+        "fr": "Système Karpov",
+        "it": "Sistema Karpov"
       },
       "eco": "E71",
       "opening": "King's Indian Defense: Karpov System",
@@ -1389,9 +2097,15 @@
     {
       "id": "line-0e6e93af78a07931",
       "names": {
-        "en": "Kazakh Variation",
+        "en-US": "Kazakh Variation",
         "pt-BR": "Variante Cazaque",
-        "es": "Variante Kazaja"
+        "es-419": "Variante Kazaja",
+        "en-GB": "Kazakh Variation",
+        "es-ES": "Variante Kazaja",
+        "pt-PT": "Variante Cazaque",
+        "de": "Kasachische Variante",
+        "fr": "Variante kazakhe",
+        "it": "Variante kazaka"
       },
       "eco": "E91",
       "opening": "King's Indian Defense: Kazakh Variation",
@@ -1401,9 +2115,15 @@
     {
       "id": "line-34ba9d82911df236",
       "names": {
-        "en": "Kramer Variation",
+        "en-US": "Kramer Variation",
         "pt-BR": "Variante Kramer",
-        "es": "Variante Kramer"
+        "es-419": "Variante Kramer",
+        "en-GB": "Kramer Variation",
+        "es-ES": "Variante Kramer",
+        "pt-PT": "Variante Kramer",
+        "de": "Kramer-Variante",
+        "fr": "Variante Kramer",
+        "it": "Variante Kramer"
       },
       "eco": "E70",
       "opening": "King's Indian Defense: Kramer Variation",
@@ -1413,9 +2133,15 @@
     {
       "id": "line-d92b3ef5ea088636",
       "names": {
-        "en": "Larsen Variation",
+        "en-US": "Larsen Variation",
         "pt-BR": "Variante Larsen",
-        "es": "Variante Larsen"
+        "es-419": "Variante Larsen",
+        "en-GB": "Larsen Variation",
+        "es-ES": "Variante Larsen",
+        "pt-PT": "Variante Larsen",
+        "de": "Larsen-Variante",
+        "fr": "Variante Larsen",
+        "it": "Variante Larsen"
       },
       "eco": "E90",
       "opening": "King's Indian Defense: Larsen Variation",
@@ -1425,9 +2151,15 @@
     {
       "id": "line-1b9868adac1a61ce",
       "names": {
-        "en": "King's Indian Defense",
+        "en-US": "King's Indian Defense",
         "pt-BR": "Defesa Índia do Rei",
-        "es": "Defensa India de Rey"
+        "es-419": "Defensa India de Rey",
+        "en-GB": "King's Indian Defence",
+        "es-ES": "Defensa India de Rey",
+        "pt-PT": "Defesa Índia do Rei",
+        "de": "Königsindische Verteidigung",
+        "fr": "Défense est-indienne",
+        "it": "Difesa est-indiana"
       },
       "eco": "E61",
       "opening": "King's Indian Defense",
@@ -1437,9 +2169,15 @@
     {
       "id": "line-d5e619582db6d90c",
       "names": {
-        "en": "Makogonov Variation",
+        "en-US": "Makogonov Variation",
         "pt-BR": "Variante Makogonov",
-        "es": "Variante Makogonov"
+        "es-419": "Variante Makogonov",
+        "en-GB": "Makogonov Variation",
+        "es-ES": "Variante Makogonov",
+        "pt-PT": "Variante Makogonov",
+        "de": "Makogonow-Variante",
+        "fr": "Variante Makogonov",
+        "it": "Variante Makogonov"
       },
       "eco": "E71",
       "opening": "King's Indian Defense: Makogonov Variation",
@@ -1449,9 +2187,15 @@
     {
       "id": "line-66c8168d69184b0e",
       "names": {
-        "en": "Pomar System",
+        "en-US": "Pomar System",
         "pt-BR": "Sistema Pomar",
-        "es": "Sistema Pomar"
+        "es-419": "Sistema Pomar",
+        "en-GB": "Pomar System",
+        "es-ES": "Sistema Pomar",
+        "pt-PT": "Sistema Pomar",
+        "de": "Pomar-System",
+        "fr": "Système Pomar",
+        "it": "Sistema Pomar"
       },
       "eco": "E72",
       "opening": "King's Indian Defense: Pomar System",
@@ -1461,9 +2205,15 @@
     {
       "id": "line-5fbd947e7533bcf4",
       "names": {
-        "en": "Santasiere Variation",
+        "en-US": "Santasiere Variation",
         "pt-BR": "Variante Santasiere",
-        "es": "Variante Santasiere"
+        "es-419": "Variante Santasiere",
+        "en-GB": "Santasiere Variation",
+        "es-ES": "Variante Santasiere",
+        "pt-PT": "Variante Santasiere",
+        "de": "Santasiere-Variante",
+        "fr": "Variante Santasiere",
+        "it": "Variante Santasiere"
       },
       "eco": "E60",
       "opening": "King's Indian Defense: Santasiere Variation",
@@ -1473,9 +2223,15 @@
     {
       "id": "line-650e68205bef3b4a",
       "names": {
-        "en": "Semi-Averbakh System",
+        "en-US": "Semi-Averbakh System",
         "pt-BR": "Sistema Semi-Averbakh",
-        "es": "Sistema Semi-Averbakh"
+        "es-419": "Sistema Semi-Averbakh",
+        "en-GB": "Semi-Averbakh System",
+        "es-ES": "Sistema Semi-Averbakh",
+        "pt-PT": "Sistema Semi-Averbakh",
+        "de": "Halb-Awerbach-System",
+        "fr": "Système semi-Averbakh",
+        "it": "Sistema semi-Averbach"
       },
       "eco": "E73",
       "opening": "King's Indian Defense: Semi-Averbakh System",
@@ -1485,9 +2241,15 @@
     {
       "id": "line-78e127651be48542",
       "names": {
-        "en": "Six Pawns Attack",
+        "en-US": "Six Pawns Attack",
         "pt-BR": "Ataque dos Seis Peões",
-        "es": "Ataque de los Seis Peones"
+        "es-419": "Ataque de los Seis Peones",
+        "en-GB": "Six Pawns Attack",
+        "es-ES": "Ataque de los Seis Peones",
+        "pt-PT": "Ataque dos Seis Peões",
+        "de": "Sechsbauernangriff",
+        "fr": "Attaque des six pions",
+        "it": "Attacco dei sei pedoni"
       },
       "eco": "E77",
       "opening": "King's Indian Defense: Six Pawns Attack",
@@ -1497,9 +2259,15 @@
     {
       "id": "line-a228746ba345fa3d",
       "names": {
-        "en": "Smyslov Variation",
+        "en-US": "Smyslov Variation",
         "pt-BR": "Variante Smyslov",
-        "es": "Variante Smyslov"
+        "es-419": "Variante Smyslov",
+        "en-GB": "Smyslov Variation",
+        "es-ES": "Variante Smyslov",
+        "pt-PT": "Variante Smyslov",
+        "de": "Smyslow-Variante",
+        "fr": "Variante Smyslov",
+        "it": "Variante Smyslov"
       },
       "eco": "E61",
       "opening": "King's Indian Defense: Smyslov Variation",
@@ -1509,9 +2277,15 @@
     {
       "id": "line-1fdd2b288371d46e",
       "names": {
-        "en": "Zinnowitz Variation",
+        "en-US": "Zinnowitz Variation",
         "pt-BR": "Variante Zinnowitz",
-        "es": "Variante Zinnowitz"
+        "es-419": "Variante Zinnowitz",
+        "en-GB": "Zinnowitz Variation",
+        "es-ES": "Variante Zinnowitz",
+        "pt-PT": "Variante Zinnowitz",
+        "de": "Zinnowitz-Variante",
+        "fr": "Variante Zinnowitz",
+        "it": "Variante Zinnowitz"
       },
       "eco": "E90",
       "opening": "King's Indian Defense: Zinnowitz Variation",

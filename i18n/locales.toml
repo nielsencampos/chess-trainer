@@ -1,6 +1,6 @@
 # The locale registry (brief §8): what differs per UI language, as parameters. Every
 # web/i18n/{locale}.json has one table here, and every table has its file (tests/unit/test_locales.py).
-# The fallback is always `en` (English, US) and is not a field.
+# The fallback is always `en-US` (English, US) and is not a field.
 #
 #   direction     "ltr" or "rtl": the page's `dir` for that language.
 #   scripts       the scripts its text needs, for the fonts: latin, latin-ext, cyrillic,
@@ -9,15 +9,24 @@
 #                 are skipped.
 #   vale          the Vale styles for its UI strings (scripts/vale.sh); left out, they are skipped.
 #   wikipedia     the language code of its Wikipedia, for the opening names (catalog/names.py);
-#                 left out, the code's first part in lowercase (pt-BR → pt).
+#                 left out, the code's first part in lowercase (pt-BR → pt, es-419 → es).
 #   reviewed      true when the author reviews it; false for machine-translated languages.
 
-[locales.en]
+[locales.en-US]
 direction = "ltr"
 scripts = ["latin"]
 languagetool = "en-US"
-vale = ["ChessTrainer", "GlossaryEn"]
+vale = ["ChessTrainer", "GlossaryEnUS"]
 reviewed = true
+
+# English (UK): machine-made, unreviewed. Its UI file holds only what differs from en-US.
+[locales.en-GB]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "en-GB"
+vale = ["ChessTrainer", "GlossaryEnGB"]
+wikipedia = "en"
+reviewed = false
 
 [locales.pt-BR]
 direction = "ltr"
@@ -26,9 +35,53 @@ languagetool = "pt-BR"
 vale = ["ChessTrainer", "PtBR", "GlossaryPtBR", "UI"]
 reviewed = true
 
-[locales.es]
+[locales.es-419]
 direction = "ltr"
 scripts = ["latin"]
 languagetool = "es"
-vale = ["ChessTrainer", "Es", "GlossaryEs", "UI"]
+vale = ["ChessTrainer", "Es", "GlossaryEs419", "UI"]
 reviewed = true
+
+# Spanish (Spain): machine-made, unreviewed. Its own translation, not a copy of es-419, which stays
+# Latin American Spanish.
+[locales.es-ES]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "es-ES"
+vale = ["ChessTrainer", "Es", "GlossaryEsES", "UI"]
+wikipedia = "es"
+reviewed = false
+
+# Portuguese (Portugal): machine-made, unreviewed. Its own translation, not a copy of pt-BR,
+# addressing the reader impersonally or in the formal third person.
+[locales.pt-PT]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "pt-PT"
+vale = ["ChessTrainer", "PtPT", "GlossaryPtPT", "UI"]
+wikipedia = "pt"
+reviewed = false
+
+# German: machine-made, unreviewed, addressing the reader as "du".
+[locales.de]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "de-DE"
+vale = ["ChessTrainer", "De", "GlossaryDe", "UI"]
+reviewed = false
+
+# French: machine-made, unreviewed, addressing the reader as "vous".
+[locales.fr]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "fr"
+vale = ["ChessTrainer", "Fr", "GlossaryFr", "UI"]
+reviewed = false
+
+# Italian: machine-made, unreviewed, addressing the reader as "tu".
+[locales.it]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "it"
+vale = ["ChessTrainer", "It", "GlossaryIt", "UI"]
+reviewed = false

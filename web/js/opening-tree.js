@@ -2,7 +2,7 @@
 // it to choose what to train, and Openings to view and export lines. The whole catalog is listed,
 // so families render their lines only when opened.
 
-import { localizedName, t } from "./i18n.js";
+import { DEFAULT_LOCALE, localizedName, t } from "./i18n.js";
 
 const SEARCH_DEBOUNCE_MS = 150;
 const GROUPS = ["kings-pawn", "queens-pawn", "flank", "others"];
@@ -24,7 +24,7 @@ const MAX_SEARCH_RESULTS_PER_FAMILY = 200;
  * @returns {boolean} True if it matches.
  */
 function nameMatches(names, query) {
-  return Boolean(names) && [localizedName(names), names.en].some((text) =>
+  return Boolean(names) && [localizedName(names), names[DEFAULT_LOCALE]].some((text) =>
     text?.toLowerCase().includes(query),
   );
 }
@@ -223,7 +223,7 @@ export class OpeningTree {
     const lines = (/** @type {VariantInfo[]} */ list) => () =>
       list.map((variant) => this.variantElement(variant));
     const nodes = [...groups].map(([name, list]) =>
-      this.treeNode(`sub:${repertoireId}:${list[0].subgroup?.en ?? name}`, name, list, lines(list), "tree-variant"),
+      this.treeNode(`sub:${repertoireId}:${list[0].subgroup?.[DEFAULT_LOCALE] ?? name}`, name, list, lines(list), "tree-variant"),
     );
     if (groups.size === 0) return lines(loose)();
     if (loose.length > 0) {

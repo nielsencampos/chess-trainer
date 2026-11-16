@@ -1,25 +1,43 @@
 {
   "id": "vienna-game",
   "names": {
-    "en": "Vienna Game",
+    "en-US": "Vienna Game",
     "pt-BR": "Abertura Viena",
-    "es": "Apertura Vienesa"
+    "es-419": "Apertura Vienesa",
+    "en-GB": "Vienna Game",
+    "es-ES": "Apertura Vienesa",
+    "pt-PT": "Abertura Viena",
+    "de": "Wiener Partie",
+    "fr": "Partie viennoise",
+    "it": "Partita viennese"
   },
   "order": 12,
   "variants": [
     {
       "names": {
-        "en": "2...Nc6 · Vienna Gambit",
+        "en-US": "2...Nc6 · Vienna Gambit",
         "pt-BR": "2...Nc6 · Gambito Viena",
-        "es": "2...Nc6 · Gambito Vienés"
+        "es-419": "2...Nc6 · Gambito Vienés",
+        "en-GB": "2...Nc6 · Vienna Gambit",
+        "es-ES": "2...Nc6 · Gambito Vienés",
+        "pt-PT": "2...Nc6 · Gambito Viena",
+        "de": "2...Nc6 · Wiener Gambit",
+        "fr": "2...Nc6 · Gambit viennois",
+        "it": "2...Nc6 · Gambetto viennese"
       },
       "lines": [
         {
           "id": "line-22db01babf7ab7f5",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit",
+            "en-US": "2...Nc6 · Vienna Gambit",
             "pt-BR": "2...Nc6 · Gambito Viena",
-            "es": "2...Nc6 · Gambito Vienés"
+            "es-419": "2...Nc6 · Gambito Vienés",
+            "en-GB": "2...Nc6 · Vienna Gambit",
+            "es-ES": "2...Nc6 · Gambito Vienés",
+            "pt-PT": "2...Nc6 · Gambito Viena",
+            "de": "2...Nc6 · Wiener Gambit",
+            "fr": "2...Nc6 · Gambit viennois",
+            "it": "2...Nc6 · Gambetto viennese"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense",
@@ -29,9 +47,15 @@
         {
           "id": "line-973d8a00acac62b9",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Quelle Gambit",
+            "en-US": "2...Nc6 · Vienna Gambit: Quelle Gambit",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Quelle",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Quelle"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Quelle",
+            "en-GB": "2...Nc6 · Vienna Gambit: Quelle Gambit",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Quelle",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Quelle",
+            "de": "2...Nc6 · Wiener Gambit: Quelle-Gambit",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Quelle",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Quelle"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Quelle Gambit",
@@ -41,9 +65,15 @@
         {
           "id": "line-500e61dfa41d9f58",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Knight Variation",
+            "en-US": "2...Nc6 · Vienna Gambit: Knight Variation",
             "pt-BR": "2...Nc6 · Gambito Viena: Variante do Cavalo",
-            "es": "2...Nc6 · Gambito Vienés: Variante del Caballo"
+            "es-419": "2...Nc6 · Gambito Vienés: Variante del Caballo",
+            "en-GB": "2...Nc6 · Vienna Gambit: Knight Variation",
+            "es-ES": "2...Nc6 · Gambito Vienés: Variante del Caballo",
+            "pt-PT": "2...Nc6 · Gambito Viena: Variante do Cavalo",
+            "de": "2...Nc6 · Wiener Gambit: Springervariante",
+            "fr": "2...Nc6 · Gambit viennois: Variante du cavalier",
+            "it": "2...Nc6 · Gambetto viennese: Variante del cavallo"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Knight Variation",
@@ -53,9 +83,15 @@
         {
           "id": "line-c27cd1bde6fb3127",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Cunningham Defense",
+            "en-US": "2...Nc6 · Vienna Gambit: Cunningham Defense",
             "pt-BR": "2...Nc6 · Gambito Viena: Defesa Cunningham",
-            "es": "2...Nc6 · Gambito Vienés: Defensa Cunningham"
+            "es-419": "2...Nc6 · Gambito Vienés: Defensa Cunningham",
+            "en-GB": "2...Nc6 · Vienna Gambit: Cunningham Defence",
+            "es-ES": "2...Nc6 · Gambito Vienés: Defensa Cunningham",
+            "pt-PT": "2...Nc6 · Gambito Viena: Defesa Cunningham",
+            "de": "2...Nc6 · Wiener Gambit: Cunningham-Verteidigung",
+            "fr": "2...Nc6 · Gambit viennois: Défense Cunningham",
+            "it": "2...Nc6 · Gambetto viennese: Difesa Cunningham"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Cunningham Defense",
@@ -65,9 +101,15 @@
         {
           "id": "line-011ca7f721e401f4",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Hamppe-Muzio Gambit",
+            "en-US": "2...Nc6 · Vienna Gambit: Hamppe-Muzio Gambit",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Hamppe-Muzio",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Muzio"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Muzio",
+            "en-GB": "2...Nc6 · Vienna Gambit: Hamppe-Muzio Gambit",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Muzio",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Hamppe-Muzio",
+            "de": "2...Nc6 · Wiener Gambit: Hamppe-Muzio-Gambit",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Hamppe-Muzio",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Hamppe-Muzio"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Hamppe-Muzio Gambit",
@@ -77,9 +119,15 @@
         {
           "id": "line-569e7ff09ee52f99",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Pierce Gambit",
+            "en-US": "2...Nc6 · Vienna Gambit: Pierce Gambit",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Pierce",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Pierce"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Pierce",
+            "en-GB": "2...Nc6 · Vienna Gambit: Pierce Gambit",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Pierce",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Pierce",
+            "de": "2...Nc6 · Wiener Gambit: Pierce-Gambit",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Pierce",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Pierce"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Pierce Gambit",
@@ -89,9 +137,15 @@
         {
           "id": "line-9abbdeeeeb764037",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit",
+            "en-US": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Hamppe-Allgaier",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier",
+            "en-GB": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Hamppe-Allgaier",
+            "de": "2...Nc6 · Wiener Gambit: Hamppe-Allgaier-Gambit",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Hamppe-Allgaier",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Hamppe-Allgaier"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Hamppe-Allgaier Gambit",
@@ -101,9 +155,15 @@
         {
           "id": "line-da4ee6fb5bcdca23",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit, Alapin Variation",
+            "en-US": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit, Alapin Variation",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Hamppe-Allgaier, Variante Alapin",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier, Variante Alapin"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier, Variante Alapin",
+            "en-GB": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit, Alapin Variation",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier, Variante Alapin",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Hamppe-Allgaier, Variante Alapin",
+            "de": "2...Nc6 · Wiener Gambit: Hamppe-Allgaier-Gambit, Alapin-Variante",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Hamppe-Allgaier, Variante Alapin",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Hamppe-Allgaier, Variante Alapin"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Hamppe-Allgaier Gambit, Alapin Variation",
@@ -113,9 +173,15 @@
         {
           "id": "line-1912f8ab8e44c854",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit, Thorold Variation",
+            "en-US": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit, Thorold Variation",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Hamppe-Allgaier, Variante Thorold",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier, Variante Thorold"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier, Variante Thorold",
+            "en-GB": "2...Nc6 · Vienna Gambit: Hamppe-Allgaier Gambit, Thorold Variation",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Hamppe-Allgaier, Variante Thorold",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Hamppe-Allgaier, Variante Thorold",
+            "de": "2...Nc6 · Wiener Gambit: Hamppe-Allgaier-Gambit, Thorold-Variante",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Hamppe-Allgaier, Variante Thorold",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Hamppe-Allgaier, Variante Thorold"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Hamppe-Allgaier Gambit, Thorold Variation",
@@ -125,9 +191,15 @@
         {
           "id": "line-992ad906ac887336",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit",
+            "en-US": "2...Nc6 · Vienna Gambit: Steinitz Gambit",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Steinitz",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Steinitz",
+            "en-GB": "2...Nc6 · Vienna Gambit: Steinitz Gambit",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Steinitz",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Steinitz",
+            "de": "2...Nc6 · Wiener Gambit: Steinitz-Gambit",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Steinitz",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Steinitz"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit",
@@ -137,9 +209,15 @@
         {
           "id": "line-0de9d8ace6170570",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Main Line",
+            "en-US": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Main Line",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Steinitz, Linha Principal",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Línea Principal"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Línea Principal",
+            "en-GB": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Main Line",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Línea Principal",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Steinitz, Linha Principal",
+            "de": "2...Nc6 · Wiener Gambit: Steinitz-Gambit, Hauptvariante",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Steinitz, Ligne principale",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Steinitz, Linea principale"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Main Line",
@@ -149,9 +227,15 @@
         {
           "id": "line-ed5a9c66770d956d",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Fraser-Minckwitz Defense",
+            "en-US": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Fraser-Minckwitz Defense",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Steinitz, Defesa Fraser-Minckwitz",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Fraser-Minckwitz"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Fraser-Minckwitz",
+            "en-GB": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Fraser-Minckwitz Defence",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Fraser-Minckwitz",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Steinitz, Defesa Fraser-Minckwitz",
+            "de": "2...Nc6 · Wiener Gambit: Steinitz-Gambit, Fraser-Minckwitz-Verteidigung",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Steinitz, Défense Fraser-Minckwitz",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Steinitz, Difesa Fraser-Minckwitz"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Fraser-Minckwitz Defense",
@@ -161,9 +245,15 @@
         {
           "id": "line-d6dbdbe2a2579b61",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Zukertort Defense",
+            "en-US": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Zukertort Defense",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Steinitz, Defesa Zukertort",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Zukertort"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Zukertort",
+            "en-GB": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Zukertort Defence",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Zukertort",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Steinitz, Defesa Zukertort",
+            "de": "2...Nc6 · Wiener Gambit: Steinitz-Gambit, Zukertort-Verteidigung",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Steinitz, Défense Zukertort",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Steinitz, Difesa Zukertort"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Zukertort Defense",
@@ -173,9 +263,15 @@
         {
           "id": "line-02c04788725fd58a",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Paulsen Defense",
+            "en-US": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Paulsen Defense",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Steinitz, Defesa Paulsen",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Paulsen"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Paulsen",
+            "en-GB": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Paulsen Defence",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Paulsen",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Steinitz, Defesa Paulsen",
+            "de": "2...Nc6 · Wiener Gambit: Steinitz-Gambit, Paulsen-Verteidigung",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Steinitz, Défense Paulsen",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Steinitz, Difesa Paulsen"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Paulsen Defense",
@@ -185,9 +281,15 @@
         {
           "id": "line-6bfadae502917674",
           "names": {
-            "en": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Sörensen Defense",
+            "en-US": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Sörensen Defense",
             "pt-BR": "2...Nc6 · Gambito Viena: Gambito Steinitz, Defesa Sörensen",
-            "es": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Sörensen"
+            "es-419": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Sörensen",
+            "en-GB": "2...Nc6 · Vienna Gambit: Steinitz Gambit, Sörensen Defence",
+            "es-ES": "2...Nc6 · Gambito Vienés: Gambito Steinitz, Defensa Sörensen",
+            "pt-PT": "2...Nc6 · Gambito Viena: Gambito Steinitz, Defesa Sörensen",
+            "de": "2...Nc6 · Wiener Gambit: Steinitz-Gambit, Sörensen-Verteidigung",
+            "fr": "2...Nc6 · Gambit viennois: Gambit Steinitz, Défense Sörensen",
+            "it": "2...Nc6 · Gambetto viennese: Gambetto Steinitz, Difesa Sörensen"
           },
           "eco": "C25",
           "opening": "Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Sörensen Defense",
@@ -198,17 +300,29 @@
     },
     {
       "names": {
-        "en": "Stanley Variation",
+        "en-US": "Stanley Variation",
         "pt-BR": "Variante Stanley",
-        "es": "Variante Stanley"
+        "es-419": "Variante Stanley",
+        "en-GB": "Stanley Variation",
+        "es-ES": "Variante Stanley",
+        "pt-PT": "Variante Stanley",
+        "de": "Stanley-Variante",
+        "fr": "Variante Stanley",
+        "it": "Variante Stanley"
       },
       "lines": [
         {
           "id": "line-6a5e328ad1e64c97",
           "names": {
-            "en": "Stanley Variation, Meitner-Mieses Gambit",
+            "en-US": "Stanley Variation, Meitner-Mieses Gambit",
             "pt-BR": "Variante Stanley, Gambito Meitner-Mieses",
-            "es": "Variante Stanley, Gambito Meitner-Mieses"
+            "es-419": "Variante Stanley, Gambito Meitner-Mieses",
+            "en-GB": "Stanley Variation, Meitner-Mieses Gambit",
+            "es-ES": "Variante Stanley, Gambito Meitner-Mieses",
+            "pt-PT": "Variante Stanley, Gambito Meitner-Mieses",
+            "de": "Stanley-Variante, Meitner-Mieses-Gambit",
+            "fr": "Variante Stanley, Gambit Meitner-Mieses",
+            "it": "Variante Stanley, Gambetto Meitner-Mieses"
           },
           "eco": "C25",
           "opening": "Vienna Game: Stanley Variation, Meitner-Mieses Gambit",
@@ -218,9 +332,15 @@
         {
           "id": "line-939752974e75154d",
           "names": {
-            "en": "Stanley Variation, Three Knights Variation",
+            "en-US": "Stanley Variation, Three Knights Variation",
             "pt-BR": "Variante Stanley, Variante dos Três Cavalos",
-            "es": "Variante Stanley, Variante de los Tres Caballos"
+            "es-419": "Variante Stanley, Variante de los Tres Caballos",
+            "en-GB": "Stanley Variation, Three Knights Variation",
+            "es-ES": "Variante Stanley, Variante de los Tres Caballos",
+            "pt-PT": "Variante Stanley, Variante dos Três Cavalos",
+            "de": "Stanley-Variante, Dreispringervariante",
+            "fr": "Variante Stanley, Variante des trois cavaliers",
+            "it": "Variante Stanley, Variante dei tre cavalli"
           },
           "eco": "C28",
           "opening": "Vienna Game: Stanley Variation, Three Knights Variation",
@@ -230,9 +350,15 @@
         {
           "id": "line-18a29d13c8df60d1",
           "names": {
-            "en": "Stanley Variation, Bronstein Gambit",
+            "en-US": "Stanley Variation, Bronstein Gambit",
             "pt-BR": "Variante Stanley, Gambito Bronstein",
-            "es": "Variante Stanley, Gambito Bronstein"
+            "es-419": "Variante Stanley, Gambito Bronstein",
+            "en-GB": "Stanley Variation, Bronstein Gambit",
+            "es-ES": "Variante Stanley, Gambito Bronstein",
+            "pt-PT": "Variante Stanley, Gambito Bronstein",
+            "de": "Stanley-Variante, Bronstein-Gambit",
+            "fr": "Variante Stanley, Gambit Bronstein",
+            "it": "Variante Stanley, Gambetto Bronstein"
           },
           "eco": "C28",
           "opening": "Vienna Game: Stanley Variation, Bronstein Gambit",
@@ -242,9 +368,15 @@
         {
           "id": "line-435a13d2b2d0732c",
           "names": {
-            "en": "Stanley Variation",
+            "en-US": "Stanley Variation",
             "pt-BR": "Variante Stanley",
-            "es": "Variante Stanley"
+            "es-419": "Variante Stanley",
+            "en-GB": "Stanley Variation",
+            "es-ES": "Variante Stanley",
+            "pt-PT": "Variante Stanley",
+            "de": "Stanley-Variante",
+            "fr": "Variante Stanley",
+            "it": "Variante Stanley"
           },
           "eco": "C26",
           "opening": "Vienna Game: Stanley Variation",
@@ -254,9 +386,15 @@
         {
           "id": "line-efa73d1a89fa270d",
           "names": {
-            "en": "Stanley Variation, Reversed Spanish",
+            "en-US": "Stanley Variation, Reversed Spanish",
             "pt-BR": "Variante Stanley, Espanhola Invertida",
-            "es": "Variante Stanley, Española Invertida"
+            "es-419": "Variante Stanley, Española Invertida",
+            "en-GB": "Stanley Variation, Reversed Spanish",
+            "es-ES": "Variante Stanley, Española Invertida",
+            "pt-PT": "Variante Stanley, Espanhola Invertida",
+            "de": "Stanley-Variante, Spanisch im Anzug",
+            "fr": "Variante Stanley, Espagnole inversée",
+            "it": "Variante Stanley, Spagnola invertita"
           },
           "eco": "C26",
           "opening": "Vienna Game: Stanley Variation, Reversed Spanish",
@@ -266,9 +404,15 @@
         {
           "id": "line-e8a833895107aa94",
           "names": {
-            "en": "Stanley Variation, Eifel Gambit",
+            "en-US": "Stanley Variation, Eifel Gambit",
             "pt-BR": "Variante Stanley, Gambito Eifel",
-            "es": "Variante Stanley, Gambito Eifel"
+            "es-419": "Variante Stanley, Gambito Eifel",
+            "en-GB": "Stanley Variation, Eifel Gambit",
+            "es-ES": "Variante Stanley, Gambito Eifel",
+            "pt-PT": "Variante Stanley, Gambito Eifel",
+            "de": "Stanley-Variante, Eifel-Gambit",
+            "fr": "Variante Stanley, Gambit Eifel",
+            "it": "Variante Stanley, Gambetto Eifel"
           },
           "eco": "C26",
           "opening": "Vienna Game: Stanley Variation, Eifel Gambit",
@@ -278,9 +422,15 @@
         {
           "id": "line-db4520d414cf75cf",
           "names": {
-            "en": "Stanley Variation, Monster Declined",
+            "en-US": "Stanley Variation, Monster Declined",
             "pt-BR": "Variante Stanley, Monstro Recusado",
-            "es": "Variante Stanley, Monstruo Rehusado"
+            "es-419": "Variante Stanley, Monstruo Rehusado",
+            "en-GB": "Stanley Variation, Monster Declined",
+            "es-ES": "Variante Stanley, Monstruo Rehusado",
+            "pt-PT": "Variante Stanley, Monstro Recusado",
+            "de": "Stanley-Variante, Abgelehntes Monster",
+            "fr": "Variante Stanley, Monstre refusé",
+            "it": "Variante Stanley, Mostro rifiutato"
           },
           "eco": "C27",
           "opening": "Vienna Game: Stanley Variation, Monster Declined",
@@ -290,9 +440,15 @@
         {
           "id": "line-182903d79e31a926",
           "names": {
-            "en": "Stanley Variation, Alekhine Variation",
+            "en-US": "Stanley Variation, Alekhine Variation",
             "pt-BR": "Variante Stanley, Variante Alekhine",
-            "es": "Variante Stanley, Variante Alekhine"
+            "es-419": "Variante Stanley, Variante Alekhine",
+            "en-GB": "Stanley Variation, Alekhine Variation",
+            "es-ES": "Variante Stanley, Variante Alekhine",
+            "pt-PT": "Variante Stanley, Variante Alekhine",
+            "de": "Stanley-Variante, Aljechin-Variante",
+            "fr": "Variante Stanley, Variante Alekhine",
+            "it": "Variante Stanley, Variante Alechin"
           },
           "eco": "C27",
           "opening": "Vienna Game: Stanley Variation, Alekhine Variation",
@@ -302,9 +458,15 @@
         {
           "id": "line-2b4240a4e60c3cff",
           "names": {
-            "en": "Stanley Variation, Frankenstein-Dracula Variation",
+            "en-US": "Stanley Variation, Frankenstein-Dracula Variation",
             "pt-BR": "Variante Stanley, Variante Frankenstein-Drácula",
-            "es": "Variante Stanley, Variante Frankenstein-Drácula"
+            "es-419": "Variante Stanley, Variante Frankenstein-Drácula",
+            "en-GB": "Stanley Variation, Frankenstein-Dracula Variation",
+            "es-ES": "Variante Stanley, Variante Frankenstein-Drácula",
+            "pt-PT": "Variante Stanley, Variante Frankenstein-Drácula",
+            "de": "Stanley-Variante, Frankenstein-Dracula-Variante",
+            "fr": "Variante Stanley, Variante Frankenstein-Dracula",
+            "it": "Variante Stanley, Variante Frankenstein-Dracula"
           },
           "eco": "C27",
           "opening": "Vienna Game: Stanley Variation, Frankenstein-Dracula Variation",
@@ -315,17 +477,29 @@
     },
     {
       "names": {
-        "en": "Vienna Gambit",
+        "en-US": "Vienna Gambit",
         "pt-BR": "Gambito Viena",
-        "es": "Gambito Vienés"
+        "es-419": "Gambito Vienés",
+        "en-GB": "Vienna Gambit",
+        "es-ES": "Gambito Vienés",
+        "pt-PT": "Gambito Viena",
+        "de": "Wiener Gambit",
+        "fr": "Gambit viennois",
+        "it": "Gambetto viennese"
       },
       "lines": [
         {
           "id": "line-fe19da2b528705ef",
           "names": {
-            "en": "Vienna Gambit",
+            "en-US": "Vienna Gambit",
             "pt-BR": "Gambito Viena",
-            "es": "Gambito Vienés"
+            "es-419": "Gambito Vienés",
+            "en-GB": "Vienna Gambit",
+            "es-ES": "Gambito Vienés",
+            "pt-PT": "Gambito Viena",
+            "de": "Wiener Gambit",
+            "fr": "Gambit viennois",
+            "it": "Gambetto viennese"
           },
           "eco": "C29",
           "opening": "Vienna Game: Vienna Gambit",
@@ -335,9 +509,15 @@
         {
           "id": "line-637cd8fa755efd86",
           "names": {
-            "en": "Vienna Gambit, Main Line",
+            "en-US": "Vienna Gambit, Main Line",
             "pt-BR": "Gambito Viena, Linha Principal",
-            "es": "Gambito Vienés, Línea Principal"
+            "es-419": "Gambito Vienés, Línea Principal",
+            "en-GB": "Vienna Gambit, Main Line",
+            "es-ES": "Gambito Vienés, Línea Principal",
+            "pt-PT": "Gambito Viena, Linha Principal",
+            "de": "Wiener Gambit, Hauptvariante",
+            "fr": "Gambit viennois, Ligne principale",
+            "it": "Gambetto viennese, Linea principale"
           },
           "eco": "C29",
           "opening": "Vienna Game: Vienna Gambit, Main Line",
@@ -347,9 +527,15 @@
         {
           "id": "line-0fa0d14b7f3f55ed",
           "names": {
-            "en": "Vienna Gambit, Steinitz Variation",
+            "en-US": "Vienna Gambit, Steinitz Variation",
             "pt-BR": "Gambito Viena, Variante Steinitz",
-            "es": "Gambito Vienés, Variante Steinitz"
+            "es-419": "Gambito Vienés, Variante Steinitz",
+            "en-GB": "Vienna Gambit, Steinitz Variation",
+            "es-ES": "Gambito Vienés, Variante Steinitz",
+            "pt-PT": "Gambito Viena, Variante Steinitz",
+            "de": "Wiener Gambit, Steinitz-Variante",
+            "fr": "Gambit viennois, Variante Steinitz",
+            "it": "Gambetto viennese, Variante Steinitz"
           },
           "eco": "C29",
           "opening": "Vienna Game: Vienna Gambit, Steinitz Variation",
@@ -359,9 +545,15 @@
         {
           "id": "line-ba0705945b251196",
           "names": {
-            "en": "Vienna Gambit, Breyer Variation",
+            "en-US": "Vienna Gambit, Breyer Variation",
             "pt-BR": "Gambito Viena, Variante Breyer",
-            "es": "Gambito Vienés, Variante Breyer"
+            "es-419": "Gambito Vienés, Variante Breyer",
+            "en-GB": "Vienna Gambit, Breyer Variation",
+            "es-ES": "Gambito Vienés, Variante Breyer",
+            "pt-PT": "Gambito Viena, Variante Breyer",
+            "de": "Wiener Gambit, Breyer-Variante",
+            "fr": "Gambit viennois, Variante Breyer",
+            "it": "Gambetto viennese, Variante Breyer"
           },
           "eco": "C29",
           "opening": "Vienna Game: Vienna Gambit, Breyer Variation",
@@ -371,9 +563,15 @@
         {
           "id": "line-a4fa87ba3f5340ee",
           "names": {
-            "en": "Vienna Gambit, Kaufmann Variation",
+            "en-US": "Vienna Gambit, Kaufmann Variation",
             "pt-BR": "Gambito Viena, Variante Kaufmann",
-            "es": "Gambito Vienés, Variante Kaufmann"
+            "es-419": "Gambito Vienés, Variante Kaufmann",
+            "en-GB": "Vienna Gambit, Kaufmann Variation",
+            "es-ES": "Gambito Vienés, Variante Kaufmann",
+            "pt-PT": "Gambito Viena, Variante Kaufmann",
+            "de": "Wiener Gambit, Kaufmann-Variante",
+            "fr": "Gambit viennois, Variante Kaufmann",
+            "it": "Gambetto viennese, Variante Kaufmann"
           },
           "eco": "C29",
           "opening": "Vienna Game: Vienna Gambit, Kaufmann Variation",
@@ -383,9 +581,15 @@
         {
           "id": "line-79de9719d3cdeefd",
           "names": {
-            "en": "Vienna Gambit, Paulsen Attack",
+            "en-US": "Vienna Gambit, Paulsen Attack",
             "pt-BR": "Gambito Viena, Ataque Paulsen",
-            "es": "Gambito Vienés, Ataque Paulsen"
+            "es-419": "Gambito Vienés, Ataque Paulsen",
+            "en-GB": "Vienna Gambit, Paulsen Attack",
+            "es-ES": "Gambito Vienés, Ataque Paulsen",
+            "pt-PT": "Gambito Viena, Ataque Paulsen",
+            "de": "Wiener Gambit, Paulsen-Angriff",
+            "fr": "Gambit viennois, Attaque Paulsen",
+            "it": "Gambetto viennese, Attacco Paulsen"
           },
           "eco": "C29",
           "opening": "Vienna Game: Vienna Gambit, Paulsen Attack",
@@ -395,9 +599,15 @@
         {
           "id": "line-78a217bfc1f9cf24",
           "names": {
-            "en": "Vienna Gambit, Bardeleben Variation",
+            "en-US": "Vienna Gambit, Bardeleben Variation",
             "pt-BR": "Gambito Viena, Variante Bardeleben",
-            "es": "Gambito Vienés, Variante Bardeleben"
+            "es-419": "Gambito Vienés, Variante Bardeleben",
+            "en-GB": "Vienna Gambit, Bardeleben Variation",
+            "es-ES": "Gambito Vienés, Variante Bardeleben",
+            "pt-PT": "Gambito Viena, Variante Bardeleben",
+            "de": "Wiener Gambit, Bardeleben-Variante",
+            "fr": "Gambit viennois, Variante Bardeleben",
+            "it": "Gambetto viennese, Variante Bardeleben"
           },
           "eco": "C29",
           "opening": "Vienna Game: Vienna Gambit, Bardeleben Variation",
@@ -407,9 +617,15 @@
         {
           "id": "line-bdc4e62f6afec93a",
           "names": {
-            "en": "Vienna Gambit, Modern Variation",
+            "en-US": "Vienna Gambit, Modern Variation",
             "pt-BR": "Gambito Viena, Variante Moderna",
-            "es": "Gambito Vienés, Variante Moderna"
+            "es-419": "Gambito Vienés, Variante Moderna",
+            "en-GB": "Vienna Gambit, Modern Variation",
+            "es-ES": "Gambito Vienés, Variante Moderna",
+            "pt-PT": "Gambito Viena, Variante Moderna",
+            "de": "Wiener Gambit, Moderne Variante",
+            "fr": "Gambit viennois, Variante moderne",
+            "it": "Gambetto viennese, Variante moderna"
           },
           "eco": "C29",
           "opening": "Vienna Game: Vienna Gambit, Modern Variation",
@@ -419,9 +635,15 @@
         {
           "id": "line-a25d063a92ca72ec",
           "names": {
-            "en": "Vienna Gambit, Wurzburger Trap",
+            "en-US": "Vienna Gambit, Wurzburger Trap",
             "pt-BR": "Gambito Viena, Armadilha Wurzburger",
-            "es": "Gambito Vienés, Trampa Wurzburger"
+            "es-419": "Gambito Vienés, Trampa Wurzburger",
+            "en-GB": "Vienna Gambit, Wurzburger Trap",
+            "es-ES": "Gambito Vienés, Trampa Wurzburger",
+            "pt-PT": "Gambito Viena, Armadilha Wurzburger",
+            "de": "Wiener Gambit, Wurzburger-Falle",
+            "fr": "Gambit viennois, Piège Wurzburger",
+            "it": "Gambetto viennese, Trappola Wurzburger"
           },
           "eco": "C29",
           "opening": "Vienna Game: Vienna Gambit, Wurzburger Trap",
@@ -432,17 +654,29 @@
     },
     {
       "names": {
-        "en": "Paulsen Variation",
+        "en-US": "Paulsen Variation",
         "pt-BR": "Variante Paulsen",
-        "es": "Variante Paulsen"
+        "es-419": "Variante Paulsen",
+        "en-GB": "Paulsen Variation",
+        "es-ES": "Variante Paulsen",
+        "pt-PT": "Variante Paulsen",
+        "de": "Paulsen-Variante",
+        "fr": "Variante Paulsen",
+        "it": "Variante Paulsen"
       },
       "lines": [
         {
           "id": "line-81e6b810dbc0a31b",
           "names": {
-            "en": "Paulsen Variation",
+            "en-US": "Paulsen Variation",
             "pt-BR": "Variante Paulsen",
-            "es": "Variante Paulsen"
+            "es-419": "Variante Paulsen",
+            "en-GB": "Paulsen Variation",
+            "es-ES": "Variante Paulsen",
+            "pt-PT": "Variante Paulsen",
+            "de": "Paulsen-Variante",
+            "fr": "Variante Paulsen",
+            "it": "Variante Paulsen"
           },
           "eco": "C25",
           "opening": "Vienna Game: Paulsen Variation",
@@ -452,9 +686,15 @@
         {
           "id": "line-61fbdecbde115b14",
           "names": {
-            "en": "Paulsen Variation, Mariotti Gambit",
+            "en-US": "Paulsen Variation, Mariotti Gambit",
             "pt-BR": "Variante Paulsen, Gambito Mariotti",
-            "es": "Variante Paulsen, Gambito Mariotti"
+            "es-419": "Variante Paulsen, Gambito Mariotti",
+            "en-GB": "Paulsen Variation, Mariotti Gambit",
+            "es-ES": "Variante Paulsen, Gambito Mariotti",
+            "pt-PT": "Variante Paulsen, Gambito Mariotti",
+            "de": "Paulsen-Variante, Mariotti-Gambit",
+            "fr": "Variante Paulsen, Gambit Mariotti",
+            "it": "Variante Paulsen, Gambetto Mariotti"
           },
           "eco": "C25",
           "opening": "Vienna Game: Paulsen Variation, Mariotti Gambit",
@@ -464,9 +704,15 @@
         {
           "id": "line-697eaae50a8d8618",
           "names": {
-            "en": "Paulsen Variation",
+            "en-US": "Paulsen Variation",
             "pt-BR": "Variante Paulsen",
-            "es": "Variante Paulsen"
+            "es-419": "Variante Paulsen",
+            "en-GB": "Paulsen Variation",
+            "es-ES": "Variante Paulsen",
+            "pt-PT": "Variante Paulsen",
+            "de": "Paulsen-Variante",
+            "fr": "Variante Paulsen",
+            "it": "Variante Paulsen"
           },
           "eco": "C25",
           "opening": "Vienna Game: Paulsen Variation",
@@ -476,9 +722,15 @@
         {
           "id": "line-aaba692fa9416717",
           "names": {
-            "en": "Paulsen Variation, Pollock Gambit",
+            "en-US": "Paulsen Variation, Pollock Gambit",
             "pt-BR": "Variante Paulsen, Gambito Pollock",
-            "es": "Variante Paulsen, Gambito Pollock"
+            "es-419": "Variante Paulsen, Gambito Pollock",
+            "en-GB": "Paulsen Variation, Pollock Gambit",
+            "es-ES": "Variante Paulsen, Gambito Pollock",
+            "pt-PT": "Variante Paulsen, Gambito Pollock",
+            "de": "Paulsen-Variante, Pollock-Gambit",
+            "fr": "Variante Paulsen, Gambit Pollock",
+            "it": "Variante Paulsen, Gambetto Pollock"
           },
           "eco": "C26",
           "opening": "Vienna Game: Paulsen Variation, Pollock Gambit",
@@ -489,17 +741,29 @@
     },
     {
       "names": {
-        "en": "Mieses Variation",
+        "en-US": "Mieses Variation",
         "pt-BR": "Variante Mieses",
-        "es": "Variante Mieses"
+        "es-419": "Variante Mieses",
+        "en-GB": "Mieses Variation",
+        "es-ES": "Variante Mieses",
+        "pt-PT": "Variante Mieses",
+        "de": "Mieses-Variante",
+        "fr": "Variante Mieses",
+        "it": "Variante Mieses"
       },
       "lines": [
         {
           "id": "line-7ab3d82a66b8a295",
           "names": {
-            "en": "Mieses Variation",
+            "en-US": "Mieses Variation",
             "pt-BR": "Variante Mieses",
-            "es": "Variante Mieses"
+            "es-419": "Variante Mieses",
+            "en-GB": "Mieses Variation",
+            "es-ES": "Variante Mieses",
+            "pt-PT": "Variante Mieses",
+            "de": "Mieses-Variante",
+            "fr": "Variante Mieses",
+            "it": "Variante Mieses"
           },
           "eco": "C26",
           "opening": "Vienna Game: Mieses Variation",
@@ -509,9 +773,15 @@
         {
           "id": "line-ba928e6ada21d065",
           "names": {
-            "en": "Mieses Variation, Erben Gambit",
+            "en-US": "Mieses Variation, Erben Gambit",
             "pt-BR": "Variante Mieses, Gambito Erben",
-            "es": "Variante Mieses, Gambito Erben"
+            "es-419": "Variante Mieses, Gambito Erben",
+            "en-GB": "Mieses Variation, Erben Gambit",
+            "es-ES": "Variante Mieses, Gambito Erben",
+            "pt-PT": "Variante Mieses, Gambito Erben",
+            "de": "Mieses-Variante, Erben-Gambit",
+            "fr": "Variante Mieses, Gambit Erben",
+            "it": "Variante Mieses, Gambetto Erben"
           },
           "eco": "C26",
           "opening": "Vienna Game: Mieses Variation, Erben Gambit",
@@ -522,17 +792,29 @@
     },
     {
       "names": {
-        "en": "Vienna Hybrid",
+        "en-US": "Vienna Hybrid",
         "pt-BR": "Híbrido Vienense",
-        "es": "Híbrido Vienés"
+        "es-419": "Híbrido Vienés",
+        "en-GB": "Vienna Hybrid",
+        "es-ES": "Híbrido Vienés",
+        "pt-PT": "Híbrido Vienense",
+        "de": "Wiener Hybrid",
+        "fr": "Hybride viennois",
+        "it": "Ibrido viennese"
       },
       "lines": [
         {
           "id": "line-d0da6b352f72ae59",
           "names": {
-            "en": "Vienna Hybrid, Hromádka Variation",
+            "en-US": "Vienna Hybrid, Hromádka Variation",
             "pt-BR": "Híbrido Vienense, Variante Hromádka",
-            "es": "Híbrido Vienés, Variante Hromádka"
+            "es-419": "Híbrido Vienés, Variante Hromádka",
+            "en-GB": "Vienna Hybrid, Hromádka Variation",
+            "es-ES": "Híbrido Vienés, Variante Hromádka",
+            "pt-PT": "Híbrido Vienense, Variante Hromádka",
+            "de": "Wiener Hybrid, Hromádka-Variante",
+            "fr": "Hybride viennois, Variante Hromádka",
+            "it": "Ibrido viennese, Variante Hromádka"
           },
           "eco": "C28",
           "opening": "Bishop's Opening: Vienna Hybrid, Hromádka Variation",
@@ -542,9 +824,15 @@
         {
           "id": "line-6661a1f4808306f4",
           "names": {
-            "en": "Vienna Hybrid, Spielmann Attack",
+            "en-US": "Vienna Hybrid, Spielmann Attack",
             "pt-BR": "Híbrido Vienense, Ataque Spielmann",
-            "es": "Híbrido Vienés, Ataque Spielmann"
+            "es-419": "Híbrido Vienés, Ataque Spielmann",
+            "en-GB": "Vienna Hybrid, Spielmann Attack",
+            "es-ES": "Híbrido Vienés, Ataque Spielmann",
+            "pt-PT": "Híbrido Vienense, Ataque Spielmann",
+            "de": "Wiener Hybrid, Spielmann-Angriff",
+            "fr": "Hybride viennois, Attaque Spielmann",
+            "it": "Ibrido viennese, Attacco Spielmann"
           },
           "eco": "C26",
           "opening": "Bishop's Opening: Vienna Hybrid, Spielmann Attack",
@@ -558,9 +846,15 @@
     {
       "id": "line-eb75bb444c6f02bb",
       "names": {
-        "en": "Adams' Gambit",
+        "en-US": "Adams' Gambit",
         "pt-BR": "Gambito Adams'",
-        "es": "Gambito Adams'"
+        "es-419": "Gambito Adams'",
+        "en-GB": "Adams' Gambit",
+        "es-ES": "Gambito Adams'",
+        "pt-PT": "Gambito Adams'",
+        "de": "Adams'-Gambit",
+        "fr": "Gambit Adams'",
+        "it": "Gambetto Adams'"
       },
       "eco": "C27",
       "opening": "Vienna Game: Adams' Gambit",
@@ -570,9 +864,15 @@
     {
       "id": "line-8323ecebed441e09",
       "names": {
-        "en": "Anderssen Defense",
+        "en-US": "Anderssen Defense",
         "pt-BR": "Defesa Anderssen",
-        "es": "Defensa Anderssen"
+        "es-419": "Defensa Anderssen",
+        "en-GB": "Anderssen Defence",
+        "es-ES": "Defensa Anderssen",
+        "pt-PT": "Defesa Anderssen",
+        "de": "Anderssen-Verteidigung",
+        "fr": "Défense Anderssen",
+        "it": "Difesa Anderssen"
       },
       "eco": "C25",
       "opening": "Vienna Game: Anderssen Defense",
@@ -582,9 +882,15 @@
     {
       "id": "line-534d4096041d0b74",
       "names": {
-        "en": "Declined: Falkbeer Countergambit, Charousek Gambit, Morphy Defense",
+        "en-US": "Declined: Falkbeer Countergambit, Charousek Gambit, Morphy Defense",
         "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek, Defesa Morphy",
-        "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Defensa Morphy"
+        "es-419": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Defensa Morphy",
+        "en-GB": "Declined: Falkbeer Countergambit, Charousek Gambit, Morphy Defence",
+        "es-ES": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Defensa Morphy",
+        "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek, Defesa Morphy",
+        "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit, Morphy-Verteidigung",
+        "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek, Défense Morphy",
+        "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek, Difesa Morphy"
       },
       "eco": "C31",
       "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Morphy Defense",
@@ -594,9 +900,15 @@
     {
       "id": "line-7eccbf486e438459",
       "names": {
-        "en": "Falkbeer Variation",
+        "en-US": "Falkbeer Variation",
         "pt-BR": "Variante Falkbeer",
-        "es": "Variante Falkbeer"
+        "es-419": "Variante Falkbeer",
+        "en-GB": "Falkbeer Variation",
+        "es-ES": "Variante Falkbeer",
+        "pt-PT": "Variante Falkbeer",
+        "de": "Falkbeer-Variante",
+        "fr": "Variante Falkbeer",
+        "it": "Variante Falkbeer"
       },
       "eco": "C26",
       "opening": "Vienna Game: Falkbeer Variation",
@@ -606,9 +918,15 @@
     {
       "id": "line-06f88a0f2708c02e",
       "names": {
-        "en": "Frankenstein-Dracula Variation",
+        "en-US": "Frankenstein-Dracula Variation",
         "pt-BR": "Variante Frankenstein-Drácula",
-        "es": "Variante Frankenstein-Drácula"
+        "es-419": "Variante Frankenstein-Drácula",
+        "en-GB": "Frankenstein–Dracula Variation",
+        "es-ES": "Variante Frankenstein-Drácula",
+        "pt-PT": "Variante Frankenstein-Drácula",
+        "de": "Frankenstein-Dracula-Variante",
+        "fr": "Variante Frankenstein-Dracula",
+        "it": "Variante Frankenstein-Dracula"
       },
       "eco": "C27",
       "opening": "Vienna Game: Frankenstein-Dracula Variation",
@@ -618,9 +936,15 @@
     {
       "id": "line-fe178b87b2c7c377",
       "names": {
-        "en": "Fyfe Gambit",
+        "en-US": "Fyfe Gambit",
         "pt-BR": "Gambito Fyfe",
-        "es": "Gambito Fyfe"
+        "es-419": "Gambito Fyfe",
+        "en-GB": "Fyfe Gambit",
+        "es-ES": "Gambito Fyfe",
+        "pt-PT": "Gambito Fyfe",
+        "de": "Fyfe-Gambit",
+        "fr": "Gambit Fyfe",
+        "it": "Gambetto Fyfe"
       },
       "eco": "C25",
       "opening": "Vienna Game: Fyfe Gambit",
@@ -630,9 +954,15 @@
     {
       "id": "line-380ce11103e8fd55",
       "names": {
-        "en": "Giraffe Attack",
+        "en-US": "Giraffe Attack",
         "pt-BR": "Ataque Girafa",
-        "es": "Ataque Jirafa"
+        "es-419": "Ataque Jirafa",
+        "en-GB": "Giraffe Attack",
+        "es-ES": "Ataque Jirafa",
+        "pt-PT": "Ataque Girafa",
+        "de": "Giraffen-Angriff",
+        "fr": "Attaque de la girafe",
+        "it": "Attacco della giraffa"
       },
       "eco": "C25",
       "opening": "Vienna Game: Giraffe Attack",
@@ -642,9 +972,15 @@
     {
       "id": "line-d8c523f34bd7dfe8",
       "names": {
-        "en": "Hamppe-Meitner Variation",
+        "en-US": "Hamppe-Meitner Variation",
         "pt-BR": "Variante Hamppe-Meitner",
-        "es": "Variante Hamppe-Meitner"
+        "es-419": "Variante Hamppe-Meitner",
+        "en-GB": "Hamppe-Meitner Variation",
+        "es-ES": "Variante Hamppe-Meitner",
+        "pt-PT": "Variante Hamppe-Meitner",
+        "de": "Hamppe-Meitner-Variante",
+        "fr": "Variante Hamppe-Meitner",
+        "it": "Variante Hamppe-Meitner"
       },
       "eco": "C25",
       "opening": "Vienna Game: Hamppe-Meitner Variation",
@@ -654,9 +990,15 @@
     {
       "id": "line-daff287b0014740f",
       "names": {
-        "en": "Hamppe-Muzio, Dubois Variation",
+        "en-US": "Hamppe-Muzio, Dubois Variation",
         "pt-BR": "Hamppe-Muzio, Variante Dubois",
-        "es": "Hamppe-Muzio, Variante Dubois"
+        "es-419": "Hamppe-Muzio, Variante Dubois",
+        "en-GB": "Hamppe-Muzio, Dubois Variation",
+        "es-ES": "Hamppe-Muzio, Variante Dubois",
+        "pt-PT": "Hamppe-Muzio, Variante Dubois",
+        "de": "Hamppe-Muzio, Dubois-Variante",
+        "fr": "Hamppe-Muzio, Variante Dubois",
+        "it": "Hamppe-Muzio, Variante Dubois"
       },
       "eco": "C25",
       "opening": "Vienna Game: Hamppe-Muzio, Dubois Variation",
@@ -666,9 +1008,15 @@
     {
       "id": "line-574d62f4d37920f5",
       "names": {
-        "en": "Hamppe-Muzio Gambit",
+        "en-US": "Hamppe-Muzio Gambit",
         "pt-BR": "Gambito Hamppe-Muzio",
-        "es": "Gambito Hamppe-Muzio"
+        "es-419": "Gambito Hamppe-Muzio",
+        "en-GB": "Hamppe-Muzio Gambit",
+        "es-ES": "Gambito Hamppe-Muzio",
+        "pt-PT": "Gambito Hamppe-Muzio",
+        "de": "Hamppe-Muzio-Gambit",
+        "fr": "Gambit Hamppe-Muzio",
+        "it": "Gambetto Hamppe-Muzio"
       },
       "eco": "C25",
       "opening": "Vienna Game: Hamppe-Muzio Gambit",
@@ -678,9 +1026,15 @@
     {
       "id": "line-e11ce2bb5345b233",
       "names": {
-        "en": "Heyde Variation",
+        "en-US": "Heyde Variation",
         "pt-BR": "Variante Heyde",
-        "es": "Variante Heyde"
+        "es-419": "Variante Heyde",
+        "en-GB": "Heyde Variation",
+        "es-ES": "Variante Heyde",
+        "pt-PT": "Variante Heyde",
+        "de": "Heyde-Variante",
+        "fr": "Variante Heyde",
+        "it": "Variante Heyde"
       },
       "eco": "C29",
       "opening": "Vienna Game: Heyde Variation",
@@ -690,9 +1044,15 @@
     {
       "id": "line-bfff6d3d2b89d5c4",
       "names": {
-        "en": "Vienna Game",
+        "en-US": "Vienna Game",
         "pt-BR": "Abertura Viena",
-        "es": "Apertura Vienesa"
+        "es-419": "Apertura Vienesa",
+        "en-GB": "Vienna Game",
+        "es-ES": "Apertura Vienesa",
+        "pt-PT": "Abertura Viena",
+        "de": "Wiener Partie",
+        "fr": "Partie viennoise",
+        "it": "Partita viennese"
       },
       "eco": "C25",
       "opening": "Vienna Game",
@@ -702,9 +1062,15 @@
     {
       "id": "line-b7c94ca716e56f39",
       "names": {
-        "en": "Max Lange Defense",
+        "en-US": "Max Lange Defense",
         "pt-BR": "Defesa Max Lange",
-        "es": "Defensa Max Lange"
+        "es-419": "Defensa Max Lange",
+        "en-GB": "Max Lange Defence",
+        "es-ES": "Defensa Max Lange",
+        "pt-PT": "Defesa Max Lange",
+        "de": "Max-Lange-Verteidigung",
+        "fr": "Défense Max Lange",
+        "it": "Difesa Max Lange"
       },
       "eco": "C25",
       "opening": "Vienna Game: Max Lange Defense",
@@ -714,9 +1080,15 @@
     {
       "id": "line-06baa6ba1bcf0fc4",
       "names": {
-        "en": "Mengarini Variation",
+        "en-US": "Mengarini Variation",
         "pt-BR": "Variante Mengarini",
-        "es": "Variante Mengarini"
+        "es-419": "Variante Mengarini",
+        "en-GB": "Mengarini Variation",
+        "es-ES": "Variante Mengarini",
+        "pt-PT": "Variante Mengarini",
+        "de": "Mengarini-Variante",
+        "fr": "Variante Mengarini",
+        "it": "Variante Mengarini"
       },
       "eco": "C26",
       "opening": "Vienna Game: Mengarini Variation",
@@ -726,9 +1098,15 @@
     {
       "id": "line-bcbac7e2c0f2c92a",
       "names": {
-        "en": "Omaha Gambit",
+        "en-US": "Omaha Gambit",
         "pt-BR": "Gambito Omaha",
-        "es": "Gambito Omaha"
+        "es-419": "Gambito Omaha",
+        "en-GB": "Omaha Gambit",
+        "es-ES": "Gambito Omaha",
+        "pt-PT": "Gambito Omaha",
+        "de": "Omaha-Gambit",
+        "fr": "Gambit Omaha",
+        "it": "Gambetto Omaha"
       },
       "eco": "C25",
       "opening": "Vienna Game: Omaha Gambit",
@@ -738,9 +1116,15 @@
     {
       "id": "line-b6c648baf8411c80",
       "names": {
-        "en": "Philidor Countergambit",
+        "en-US": "Philidor Countergambit",
         "pt-BR": "Contragambito Philidor",
-        "es": "Contragambito Philidor"
+        "es-419": "Contragambito Philidor",
+        "en-GB": "Philidor Countergambit",
+        "es-ES": "Contragambito Philidor",
+        "pt-PT": "Contragambito Philidor",
+        "de": "Philidor-Gegengambit",
+        "fr": "Contre-gambit Philidor",
+        "it": "Controgambetto Philidor"
       },
       "eco": "C25",
       "opening": "Vienna Game: Philidor Countergambit",
@@ -750,9 +1134,15 @@
     {
       "id": "line-215c9e06cd0040f7",
       "names": {
-        "en": "Pierce Gambit, Rushmere Attack",
+        "en-US": "Pierce Gambit, Rushmere Attack",
         "pt-BR": "Gambito Pierce, Ataque Rushmere",
-        "es": "Gambito Pierce, Ataque Rushmere"
+        "es-419": "Gambito Pierce, Ataque Rushmere",
+        "en-GB": "Pierce Gambit, Rushmere Attack",
+        "es-ES": "Gambito Pierce, Ataque Rushmere",
+        "pt-PT": "Gambito Pierce, Ataque Rushmere",
+        "de": "Pierce-Gambit, Rushmere-Angriff",
+        "fr": "Gambit Pierce, Attaque Rushmere",
+        "it": "Gambetto Pierce, Attacco Rushmere"
       },
       "eco": "C25",
       "opening": "Vienna Game: Pierce Gambit, Rushmere Attack",
@@ -762,9 +1152,15 @@
     {
       "id": "line-669d16cdc93544ed",
       "names": {
-        "en": "Zhuravlev Countergambit",
+        "en-US": "Zhuravlev Countergambit",
         "pt-BR": "Contragambito Zhuravlev",
-        "es": "Contragambito Zhuravlev"
+        "es-419": "Contragambito Zhuravlev",
+        "en-GB": "Zhuravlev Countergambit",
+        "es-ES": "Contragambito Zhuravlev",
+        "pt-PT": "Contragambito Zhuravlev",
+        "de": "Schurawljow-Gegengambit",
+        "fr": "Contre-gambit Jouravlev",
+        "it": "Controgambetto Žuravlëv"
       },
       "eco": "C25",
       "opening": "Vienna Game: Zhuravlev Countergambit",

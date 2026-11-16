@@ -1,0 +1,506 @@
+# Chess glossary: Spanish (Spain) (brief §8). Machine-made and unreviewed: the terms of en-US.toml
+# in the Spanish of Spain, each from the Spanish Wikipedia (`source`) or, when no page names it,
+# `machine = true` with a `note`. `avoid` lists the words the UI must not use for the term.
+# Every glossary has the terms of en-US.toml (#32).
+
+# English words of the opening names this language translates: a glossary rule never
+# keeps them as proper names, so names with one go to machine translation (brief §8).
+translate = [
+    "Accelerated", "Advance", "Aged", "Alien", "Amazon", "American", "Amsterdam", "Anderssen's",
+    "Apocalypse", "Arctic", "Ark", "Arkhangelsk", "Armenian", "Attack", "Australian", "Austrian",
+    "Baltic", "Banker", "Basque", "Bavarian", "Bayonet", "Beginner's", "Belgrade", "Berlin", "Big",
+    "Bird's", "Bishop", "Bishop's", "Blackmar's", "Blockade", "Bouncing", "Brick", "Brigg's",
+    "Brussels", "Bulgarian", "Catalan", "Cavalry", "Center", "Cheese", "Chinese", "Clam", "Clamp",
+    "Closed", "Cologne", "Compromised", "Corkscrew", "Cormorant", "Counterthrust", "Crab", "Crawly",
+    "Creepy", "Crocodile", "Czech", "Danish", "Declined", "Defensive", "Deferred", "Delayed",
+    "Doll", "Double", "Dracula", "Dragon", "Dresden", "Drill", "Drunken", "Duck", "Dutch",
+    "Dynamic", "East", "Edge", "Edinburgh", "Elbow", "Elephant", "Endgame", "England", "English",
+    "Exchange", "Fianchetto", "Fingerslip", "Finnish", "Fishing", "Florentine", "Fluid", "Forcing",
+    "Forgotten", "Four", "Fox", "French", "Fried", "From's", "Full", "Geller's", "Gent", "German",
+    "Gibbon", "Giraffe", "Gossip", "Goteborg", "Great", "Hammer", "Hawk", "Hay", "Head", "Hedgehog",
+    "Hillbilly", "Hippopotamus", "Horsefly", "Hungarian", "Icelandic", "Improved", "Indian",
+    "Inner", "Irish", "Italian", "Kangaroo", "Kazakh", "King's", "Kingfisher", "Kingside", "Knight",
+    "Knight's", "Knights", "Kramnik's", "Latvian", "Leningrad", "Lesser", "Lion", "Lithuanian",
+    "Liver", "Lizard", "Lobster", "London", "Long", "Lusophobe", "Main", "Martian", "Meadow",
+    "Mediterranean", "Mengarini's", "Mexican", "Millennium", "Modern", "Mongoose", "Moscow",
+    "Napoleon", "Neo", "Netherlands", "New", "Nightingale", "Noah's", "Norwegian", "Old", "Open",
+    "Orthodox", "Outflank", "Paleface", "Paris", "Patrick's", "Pawns", "Penguin", "Perseus",
+    "Petrov's", "Pin", "Pole", "Polish", "Porcupine", "Portuguese", "Positional", "Prague",
+    "Pseudo", "Pterodactyl", "Pyrenees", "Queen's", "Queenside", "Quiet", "Rare", "Rat", "Retreat",
+    "Reversed", "Romanian", "Rooks", "Russian", "Saragossa", "Scandinavian", "Schwarz's", "Scotch",
+    "Second", "Semi", "Sharp", "Short", "Shy", "Siberian", "Sicilian", "Simagin's", "Simul", "Six",
+    "Slav", "Slow", "Small", "Snail", "Snake", "Sodium", "Sokolov's", "Spanish", "Spike",
+    "Standard", "Stockholm", "Swap", "Swedish", "Swiss", "Symmetric", "Symmetrical", "Symmetry",
+    "Three", "Timman's", "Toilet", "Tortoise", "Tour", "Traditional", "Transpositional", "Two",
+    "Ukrainian", "Ultra", "Ulysses", "Unicorn", "Valencian", "Venice", "Vienna", "Vulture",
+    "Warsaw", "Wasp", "West", "Wind", "Wing", "Woodchuck", "Wuss", "Yepishin's", "Yerevan",
+    "Yugoslav", "Zurich",
+]
+
+[[terms]]
+term = "chess"
+translation = "ajedrez"
+source = "https://es.wikipedia.org/wiki/Ajedrez"
+
+[[terms]]
+term = "piece"
+translation = "pieza"
+source = "https://es.wikipedia.org/wiki/Piezas_de_ajedrez"
+
+[[terms]]
+term = "king"
+translation = "rey"
+source = "https://es.wikipedia.org/wiki/Rey_(ajedrez)"
+
+[[terms]]
+term = "queen"
+translation = "dama"
+source = "https://es.wikipedia.org/wiki/Dama_(ajedrez)"
+avoid = ["reina"]
+
+[[terms]]
+term = "rook"
+translation = "torre"
+source = "https://es.wikipedia.org/wiki/Torre_(ajedrez)"
+
+[[terms]]
+term = "pawn"
+translation = "peón"
+source = "https://es.wikipedia.org/wiki/Peón_(ajedrez)"
+
+[[terms]]
+term = "board"
+translation = "tablero"
+source = "https://es.wikipedia.org/wiki/Tablero_de_damas_y_ajedrez"
+
+[[terms]]
+term = "square"
+translation = "casilla"
+source = "https://es.wikipedia.org/wiki/Tablero_de_damas_y_ajedrez"
+
+[[terms]]
+term = "White"
+translation = "Blancas"
+source = "https://es.wikipedia.org/wiki/Blanco_y_negro_en_ajedrez"
+
+[[terms]]
+term = "Black"
+translation = "Negras"
+source = "https://es.wikipedia.org/wiki/Blanco_y_negro_en_ajedrez"
+
+[[terms]]
+term = "game"
+translation = "partida"
+source = "https://es.wikipedia.org/wiki/Leyes_del_ajedrez"
+
+[[terms]]
+term = "move"
+translation = "jugada"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Jugada_candidata"
+note = "The glossary's headword is \"movimiento\", but Spanish Wikipedia uses both; es keeps \"jugada\"."
+avoid = ["movimiento", "movimientos"]
+
+[[terms]]
+term = "ply"
+translation = "media jugada"
+source = "https://es.wikipedia.org/wiki/Turno_(teoría_de_juegos)"
+note = "Wikipedia calls a ply \"jugada\" and a move \"movimiento\"; with \"jugada\" for move, es keeps \"media jugada\"."
+
+[[terms]]
+term = "premove"
+translation = "jugada anticipada"
+source = "https://es.wikipedia.org/wiki/Ajedrez_en_línea#Movimientos_anticipados"
+note = "Wikipedia says \"movimiento anticipado\"; follows \"jugada\" for move (see that term)."
+avoid = ["premovimiento", "premovimientos"]
+
+[[terms]]
+term = "take back"
+translation = "deshacer jugada"
+machine = true
+note = "No Wikipedia page names it; the choice of es, used in Spain too."
+
+[[terms]]
+term = "castling"
+translation = "enroque"
+source = "https://es.wikipedia.org/wiki/Enroque"
+
+[[terms]]
+term = "check"
+translation = "jaque"
+source = "https://es.wikipedia.org/wiki/Jaque"
+
+[[terms]]
+term = "checkmate"
+translation = "jaque mate"
+source = "https://es.wikipedia.org/wiki/Jaque_mate"
+
+[[terms]]
+term = "stalemate"
+translation = "ahogado"
+source = "https://es.wikipedia.org/wiki/Rey_ahogado"
+
+[[terms]]
+term = "draw"
+translation = "tablas"
+source = "https://es.wikipedia.org/wiki/Tablas_(ajedrez)"
+
+[[terms]]
+term = "resign"
+translation = "abandonar"
+source = "https://es.wikipedia.org/wiki/Leyes_del_ajedrez"
+avoid = ["rendirse"]
+
+[[terms]]
+term = "insufficient material"
+translation = "material insuficiente"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Material_insuficiente"
+
+[[terms]]
+term = "threefold repetition"
+translation = "triple repetición"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Triple_repetición"
+
+[[terms]]
+term = "fivefold repetition"
+translation = "quíntuple repetición"
+machine = true
+note = "No Wikipedia page; follows \"triple repetición\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "regla de las cincuenta jugadas"
+source = "https://es.wikipedia.org/wiki/Regla_de_los_cincuenta_movimientos"
+note = "Wikipedia says \"movimientos\"; follows \"jugada\" for move (see that term)."
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "regla de las setenta y cinco jugadas"
+source = "https://es.wikipedia.org/wiki/Tablas_(ajedrez)"
+note = "Wikipedia says \"movimientos\"; follows \"jugada\" for move (see that term)."
+
+[[terms]]
+term = "opening"
+translation = "apertura"
+source = "https://es.wikipedia.org/wiki/Apertura_(ajedrez)"
+
+[[terms]]
+term = "variation"
+translation = "variante"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Variante"
+avoid = ["variación", "variaciones"]
+
+[[terms]]
+term = "line"
+translation = "línea"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Línea"
+
+[[terms]]
+term = "theory"
+translation = "teoría"
+source = "https://www.wikidata.org/wiki/Q1919685"
+
+[[terms]]
+term = "book move"
+translation = "jugada de libro"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Movimiento_de_libro"
+note = "Wikipedia says \"movimiento de libro\"; follows \"jugada\" for move (see that term)."
+
+[[terms]]
+term = "deviation"
+translation = "desviación"
+machine = true
+note = "No Wikipedia page names it (\"desvío\" is a tactic there, another meaning); the choice of es, used in Spain too."
+
+[[terms]]
+term = "chess engine"
+translation = "motor de ajedrez"
+source = "https://es.wikipedia.org/wiki/Motor_de_ajedrez"
+avoid = ["engine"]
+
+[[terms]]
+term = "computer"
+translation = "ordenador"
+source = "https://es.wikipedia.org/wiki/Computadora"
+note = "The article gives \"ordenador\" as another name, the one Spain uses. Latin American \"computadora\" is for es."
+avoid = ["computadora", "computador"]
+
+[[terms]]
+term = "evaluation"
+translation = "evaluación"
+source = "https://es.wikipedia.org/wiki/Función_de_evaluación"
+
+[[terms]]
+term = "analysis"
+translation = "análisis"
+machine = true
+note = "No Wikipedia page names it; the choice of es, used in Spain too."
+
+[[terms]]
+term = "brilliant move"
+translation = "jugada brillante"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. Follows es."
+
+[[terms]]
+term = "best move"
+translation = "mejor jugada"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. Follows es."
+
+[[terms]]
+term = "great move"
+translation = "gran jugada"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. Follows es."
+
+[[terms]]
+term = "inaccuracy"
+translation = "imprecisión"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. Follows es."
+
+[[terms]]
+term = "mistake"
+translation = "error"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. Follows es."
+
+[[terms]]
+term = "miss"
+translation = "oportunidad perdida"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. Follows es."
+
+[[terms]]
+term = "blunder"
+translation = "error garrafal"
+source = "https://es.wikipedia.org/wiki/Error_garrafal_(ajedrez)"
+avoid = ["error grave"]
+
+[[terms]]
+term = "time control"
+translation = "ritmo de juego"
+source = "https://es.wikipedia.org/wiki/Ritmo_de_juego_en_ajedrez"
+
+[[terms]]
+term = "chess clock"
+translation = "reloj"
+source = "https://es.wikipedia.org/wiki/Reloj_de_ajedrez"
+
+[[terms]]
+term = "increment"
+translation = "incremento"
+source = "https://es.wikipedia.org/wiki/Ritmo_de_juego_en_ajedrez"
+
+[[terms]]
+term = "delay"
+translation = "retraso"
+source = "https://es.wikipedia.org/wiki/Leyes_del_ajedrez"
+avoid = ["retardo"]
+
+[[terms]]
+term = "bullet"
+translation = "bullet"
+source = "https://es.wikipedia.org/wiki/Ajedrez_rápido"
+
+[[terms]]
+term = "blitz"
+translation = "blitz"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Blitz"
+
+[[terms]]
+term = "rapid"
+translation = "rápidas"
+source = "https://es.wikipedia.org/wiki/Ajedrez_rápido"
+note = "Plural, as a group of time controls in New Game."
+
+[[terms]]
+term = "classical"
+translation = "clásicas"
+machine = true
+note = "No Wikipedia page; plural, as a group of time controls in New Game."
+
+[[terms]]
+term = "scoresheet"
+translation = "planilla"
+source = "https://es.wikipedia.org/wiki/Leyes_del_ajedrez"
+
+[[terms]]
+term = "arbiter"
+translation = "árbitro"
+source = "https://www.wikidata.org/wiki/Q2229544"
+
+[[terms]]
+term = "rating"
+translation = "Elo"
+source = "https://es.wikipedia.org/wiki/Sistema_de_puntuación_Elo"
+
+[[terms]]
+term = "grandmaster"
+translation = "gran maestro"
+source = "https://es.wikipedia.org/wiki/Gran_maestro_internacional"
+
+[[terms]]
+term = "International Master"
+translation = "maestro internacional"
+source = "https://es.wikipedia.org/wiki/Maestro_internacional"
+
+[[terms]]
+term = "Woman International Master"
+translation = "Maestra Internacional Femenina"
+source = "https://es.wikipedia.org/wiki/Maestro_internacional"
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "Maestra FIDE Femenina"
+source = "https://es.wikipedia.org/wiki/Maestra_FIDE_femenina"
+
+[[terms]]
+term = "Chess960"
+translation = "Chess960"
+source = "https://es.wikipedia.org/wiki/Ajedrez_aleatorio_de_Fischer"
+note = "Wikipedia's other name; it is the mode's name in the app."
+avoid = ["Ajedrez960"]
+
+[[terms]]
+term = "correspondence chess"
+translation = "ajedrez por correspondencia"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Ajedrez_postal_o_por_correspondencia"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "Olimpiadas de Ajedrez"
+source = "https://es.wikipedia.org/wiki/Olimpiadas_de_ajedrez"
+
+[[terms]]
+term = "touch-move rule"
+translation = "pieza tocada"
+source = "https://es.wikipedia.org/wiki/Regla_de_la_pieza_tocada,_pieza_movida"
+
+[[terms]]
+term = "capture"
+translation = "captura"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Captura"
+
+[[terms]]
+term = "tactics"
+translation = "táctica"
+source = "https://es.wikipedia.org/wiki/Táctica_(ajedrez)"
+
+[[terms]]
+term = "strategy"
+translation = "estrategia"
+source = "https://es.wikipedia.org/wiki/Estrategia_(ajedrez)"
+
+[[terms]]
+term = "sacrifice"
+translation = "sacrificio"
+source = "https://es.wikipedia.org/wiki/Sacrificio_(ajedrez)"
+
+[[terms]]
+term = "trap"
+translation = "trampa"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Celada"
+note = "Wikipedia's \"celada\" is defined as \"trampa\"; es keeps \"trampa\"."
+
+[[terms]]
+term = "gambit"
+translation = "gambito"
+source = "https://es.wikipedia.org/wiki/Gambito"
+
+[[terms]]
+term = "King's Pawn"
+translation = "Peón de rey"
+source = "https://es.wikipedia.org/wiki/Apertura_de_peón_de_rey"
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "Peón de dama"
+source = "https://es.wikipedia.org/wiki/Apertura_de_peón_de_dama"
+
+[[terms]]
+term = "flank"
+translation = "flanco"
+source = "https://es.wikipedia.org/wiki/Apertura_de_flanco"
+
+[[terms]]
+term = "starting position"
+translation = "posición inicial"
+source = "https://es.wikipedia.org/wiki/Ajedrez_aleatorio_de_Fischer"
+
+[[terms]]
+term = "chess prodigy"
+translation = "prodigio del ajedrez"
+source = "https://es.wikipedia.org/wiki/Prodigio_del_ajedrez"
+
+[[terms]]
+term = "{name} Variation"
+translation = "Variante {name}"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Variante"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Defense"
+translation = "Defensa {name}"
+source = "https://es.wikipedia.org/wiki/Defensa_siciliana"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "Gambito {name}"
+source = "https://es.wikipedia.org/wiki/Gambito"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "Contragambito {name}"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Attack"
+translation = "Ataque {name}"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Ataque"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "Contraataque {name}"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Contraataque"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Opening"
+translation = "Apertura {name}"
+source = "https://es.wikipedia.org/wiki/Apertura_(ajedrez)"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} System"
+translation = "Sistema {name}"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Line"
+translation = "Línea {name}"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Línea"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Formation"
+translation = "Formación {name}"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Trap"
+translation = "Trampa {name}"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Celada"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "Main Line"
+translation = "Línea Principal"
+source = "https://es.wikipedia.org/wiki/Anexo:Glosario_de_ajedrez#Línea_principal"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."

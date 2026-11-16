@@ -1,18 +1,30 @@
 {
   "id": "owen-defense",
   "names": {
-    "en": "Owen Defense",
+    "en-US": "Owen Defense",
     "pt-BR": "Defesa Owen",
-    "es": "Defensa Owen"
+    "es-419": "Defensa Owen",
+    "en-GB": "Owen's Defence",
+    "es-ES": "Defensa Owen",
+    "pt-PT": "Defesa Owen",
+    "de": "Owen-Verteidigung",
+    "fr": "Défense Owen",
+    "it": "Difesa Owen"
   },
   "order": 21,
   "lines": [
     {
       "id": "line-e33202b3c52b75a8",
       "names": {
-        "en": "Guatemala Defense",
+        "en-US": "Guatemala Defense",
         "pt-BR": "Defesa Guatemala",
-        "es": "Defensa Guatemala"
+        "es-419": "Defensa Guatemala",
+        "en-GB": "Guatemala Defence",
+        "es-ES": "Defensa Guatemala",
+        "pt-PT": "Defesa Guatemala",
+        "de": "Guatemala-Verteidigung",
+        "fr": "Défense Guatemala",
+        "it": "Difesa Guatemala"
       },
       "eco": "B00",
       "opening": "Owen Defense: Guatemala Defense",
@@ -22,9 +34,15 @@
     {
       "id": "line-e7f654d1b39214ed",
       "names": {
-        "en": "Hekili-Loa Gambit",
+        "en-US": "Hekili-Loa Gambit",
         "pt-BR": "Gambito Hekili-Loa",
-        "es": "Gambito Hekili-Loa"
+        "es-419": "Gambito Hekili-Loa",
+        "en-GB": "Hekili-Loa Gambit",
+        "es-ES": "Gambito Hekili-Loa",
+        "pt-PT": "Gambito Hekili-Loa",
+        "de": "Hekili-Loa-Gambit",
+        "fr": "Gambit Hekili-Loa",
+        "it": "Gambetto Hekili-Loa"
       },
       "eco": "B00",
       "opening": "Owen Defense: Hekili-Loa Gambit",
@@ -34,9 +52,15 @@
     {
       "id": "line-11235500269447b8",
       "names": {
-        "en": "Owen Defense",
+        "en-US": "Owen Defense",
         "pt-BR": "Defesa Owen",
-        "es": "Defensa Owen"
+        "es-419": "Defensa Owen",
+        "en-GB": "Owen Defence",
+        "es-ES": "Defensa Owen",
+        "pt-PT": "Defesa Owen",
+        "de": "Owen-Verteidigung",
+        "fr": "Défense Owen",
+        "it": "Difesa Owen"
       },
       "eco": "B00",
       "opening": "Owen Defense",
@@ -46,9 +70,15 @@
     {
       "id": "line-00190db1de55e8dc",
       "names": {
-        "en": "Matovinsky Gambit",
+        "en-US": "Matovinsky Gambit",
         "pt-BR": "Gambito Matovinsky",
-        "es": "Gambito Matovinsky"
+        "es-419": "Gambito Matovinsky",
+        "en-GB": "Matovinsky Gambit",
+        "es-ES": "Gambito Matovinsky",
+        "pt-PT": "Gambito Matovinsky",
+        "de": "Matovinsky-Gambit",
+        "fr": "Gambit Matovinsky",
+        "it": "Gambetto Matovinsky"
       },
       "eco": "B00",
       "opening": "Owen Defense: Matovinsky Gambit",
@@ -58,9 +88,15 @@
     {
       "id": "line-42024d3141a9d29c",
       "names": {
-        "en": "Naselwaus Gambit",
+        "en-US": "Naselwaus Gambit",
         "pt-BR": "Gambito Naselwaus",
-        "es": "Gambito Naselwaus"
+        "es-419": "Gambito Naselwaus",
+        "en-GB": "Naselwaus Gambit",
+        "es-ES": "Gambito Naselwaus",
+        "pt-PT": "Gambito Naselwaus",
+        "de": "Naselwaus-Gambit",
+        "fr": "Gambit Naselwaus",
+        "it": "Gambetto Naselwaus"
       },
       "eco": "B00",
       "opening": "Owen Defense: Naselwaus Gambit",
@@ -70,9 +106,15 @@
     {
       "id": "line-1052ccc1f6fd9a14",
       "names": {
-        "en": "Smith Gambit",
+        "en-US": "Smith Gambit",
         "pt-BR": "Gambito Smith",
-        "es": "Gambito Smith"
+        "es-419": "Gambito Smith",
+        "en-GB": "Smith Gambit",
+        "es-ES": "Gambito Smith",
+        "pt-PT": "Gambito Smith",
+        "de": "Smith-Gambit",
+        "fr": "Gambit Smith",
+        "it": "Gambetto Smith"
       },
       "eco": "B00",
       "opening": "Owen Defense: Smith Gambit",
@@ -82,9 +124,15 @@
     {
       "id": "line-fe2ec7f8e558d38d",
       "names": {
-        "en": "Unicorn Variation",
+        "en-US": "Unicorn Variation",
         "pt-BR": "Variante Unicórnio",
-        "es": "Variante Unicornio"
+        "es-419": "Variante Unicornio",
+        "en-GB": "Unicorn Variation",
+        "es-ES": "Variante Unicornio",
+        "pt-PT": "Variante Unicórnio",
+        "de": "Einhorn-Variante",
+        "fr": "Variante de la licorne",
+        "it": "Variante dell'unicorno"
       },
       "eco": "B00",
       "opening": "Owen Defense: Unicorn Variation",
@@ -94,9 +142,15 @@
     {
       "id": "line-0e0fb6b96f1bad5b",
       "names": {
-        "en": "Wind Gambit",
+        "en-US": "Wind Gambit",
         "pt-BR": "Gambito Vento",
-        "es": "Gambito Viento"
+        "es-419": "Gambito Viento",
+        "en-GB": "Wind Gambit",
+        "es-ES": "Gambito Viento",
+        "pt-PT": "Gambito Vento",
+        "de": "Wind-Gambit",
+        "fr": "Gambit du vent",
+        "it": "Gambetto del vento"
       },
       "eco": "B00",
       "opening": "Owen Defense: Wind Gambit",

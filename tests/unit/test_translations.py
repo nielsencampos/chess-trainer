@@ -24,15 +24,15 @@ BOOK = read_opening_files(Path(__file__).parent.parent.parent / "openings")
 WIKI = "https://pt.wikipedia.org/wiki/Xeque"
 FAMILY = {
     "id": "caro-kann-defense",
-    "names": {"en": "Caro-Kann Defense", "pt-BR": "Defesa Caro-Kann"},
+    "names": {"en-US": "Caro-Kann Defense", "pt-BR": "Defesa Caro-Kann"},
     "order": 1,
     "variants": [
         {
-            "names": {"en": "Advance Variation", "pt-BR": "Variação do Avanço"},
+            "names": {"en-US": "Advance Variation", "pt-BR": "Variação do Avanço"},
             "lines": [
                 {
                     "id": "line-0000000000000001",
-                    "names": {"en": "Advance Variation", "pt-BR": "Variação do Avanço"},
+                    "names": {"en-US": "Advance Variation", "pt-BR": "Variação do Avanço"},
                     "moves": ["e4", "c6", "d4", "d5", "e5"],
                     "source": "test",
                 }
@@ -42,7 +42,7 @@ FAMILY = {
     "lines": [
         {
             "id": "line-0000000000000002",
-            "names": {"en": "Hillbilly Attack"},
+            "names": {"en-US": "Hillbilly Attack"},
             "moves": ["e4", "c6", "Bc4"],
             "source": "test",
         }
@@ -178,6 +178,17 @@ def test_a_bad_glossary_row_fails(tmp_path, row):
         load_glossary(write(tmp_path / "pt-BR.toml", glossary([row])))
 
 
+def test_an_unknown_top_level_key_fails(tmp_path):
+    """A glossary has only `terms` and `translate`.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    row = 'term = "check"\ntranslation = "xeque"\nmachine = true'
+    with pytest.raises(TranslationError):
+        load_glossary(write(tmp_path / "pt-BR.toml", "translat = []\n" + glossary([row])))
+
+
 def test_a_repeated_term_fails(tmp_path):
     """A term appears once per glossary.
 
@@ -196,7 +207,7 @@ def test_every_glossary_has_the_english_terms(tmp_path):
         tmp_path (Path): A temporary folder.
     """
     en = 'term = "{0}"\ntranslation = "{0}"\nsource = "https://en.wikipedia.org/wiki/{0}"'
-    write(tmp_path / "en.toml", glossary([en.format("check"), en.format("draw")]))
+    write(tmp_path / "en-US.toml", glossary([en.format("check"), en.format("draw")]))
     pt = 'term = "{0}"\ntranslation = "x"\nmachine = true'
     write(tmp_path / "pt-BR.toml", glossary([pt.format("check"), pt.format("resign")]))
     problems = glossary_problems(tmp_path)
@@ -211,7 +222,10 @@ def test_a_glossary_needs_the_english_one(tmp_path):
     Args:
         tmp_path (Path): A temporary folder.
     """
-    write(tmp_path / "es.toml", glossary(['term = "check"\ntranslation = "jaque"\nmachine = true']))
+    write(
+        tmp_path / "es-419.toml",
+        glossary(['term = "check"\ntranslation = "jaque"\nmachine = true']),
+    )
     assert glossary_problems(tmp_path)
 
 

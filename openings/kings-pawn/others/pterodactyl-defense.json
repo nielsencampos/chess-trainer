@@ -1,25 +1,43 @@
 {
   "id": "pterodactyl-defense",
   "names": {
-    "en": "Pterodactyl Defense",
+    "en-US": "Pterodactyl Defense",
     "pt-BR": "Defesa Pterodáctilo",
-    "es": "Defensa Pterodáctilo"
+    "es-419": "Defensa Pterodáctilo",
+    "en-GB": "Pterodactyl Defence",
+    "es-ES": "Defensa Pterodáctilo",
+    "pt-PT": "Defesa Pterodáctilo",
+    "de": "Pterodaktylus-Verteidigung",
+    "fr": "Défense du ptérodactyle",
+    "it": "Difesa dello pterodattilo"
   },
   "order": null,
   "variants": [
     {
       "names": {
-        "en": "Sicilian",
+        "en-US": "Sicilian",
         "pt-BR": "Siciliana",
-        "es": "Siciliana"
+        "es-419": "Siciliana",
+        "en-GB": "Sicilian",
+        "es-ES": "Siciliana",
+        "pt-PT": "Siciliana",
+        "de": "Sizilianisch",
+        "fr": "Sicilienne",
+        "it": "Siciliana"
       },
       "lines": [
         {
           "id": "line-bab653646cf37ad9",
           "names": {
-            "en": "Sicilian, Unpin",
+            "en-US": "Sicilian, Unpin",
             "pt-BR": "Siciliana, Despregadura",
-            "es": "Siciliana, Desclavada"
+            "es-419": "Siciliana, Desclavada",
+            "en-GB": "Sicilian, Unpin",
+            "es-ES": "Siciliana, Desclavada",
+            "pt-PT": "Siciliana, Despregadura",
+            "de": "Sizilianisch, Unpin",
+            "fr": "Sicilienne, Unpin",
+            "it": "Siciliana, Unpin"
           },
           "eco": "B27",
           "opening": "Pterodactyl Defense: Sicilian, Unpin",
@@ -29,9 +47,15 @@
         {
           "id": "line-e6687d87c14132bb",
           "names": {
-            "en": "Sicilian, Anhanguera",
+            "en-US": "Sicilian, Anhanguera",
             "pt-BR": "Siciliana, Anhanguera",
-            "es": "Siciliana, Anhanguera"
+            "es-419": "Siciliana, Anhanguera",
+            "en-GB": "Sicilian, Anhanguera",
+            "es-ES": "Siciliana, Anhanguera",
+            "pt-PT": "Siciliana, Anhanguera",
+            "de": "Sizilianisch, Anhanguera",
+            "fr": "Sicilienne, Anhanguera",
+            "it": "Siciliana, Anhanguera"
           },
           "eco": "B27",
           "opening": "Pterodactyl Defense: Sicilian, Anhanguera",
@@ -41,9 +65,15 @@
         {
           "id": "line-e895ab04cd12b13d",
           "names": {
-            "en": "Sicilian, Benoni Gambit",
+            "en-US": "Sicilian, Benoni Gambit",
             "pt-BR": "Siciliana, Gambito Benoni",
-            "es": "Siciliana, Gambito Benoni"
+            "es-419": "Siciliana, Gambito Benoni",
+            "en-GB": "Sicilian, Benoni Gambit",
+            "es-ES": "Siciliana, Gambito Benoni",
+            "pt-PT": "Siciliana, Gambito Benoni",
+            "de": "Sizilianisch, Benoni-Gambit",
+            "fr": "Sicilienne, Gambit Benoni",
+            "it": "Siciliana, Gambetto Benoni"
           },
           "eco": "B27",
           "opening": "Pterodactyl Defense: Sicilian, Benoni Gambit",
@@ -53,9 +83,15 @@
         {
           "id": "line-f4ac6af9d858df38",
           "names": {
-            "en": "Sicilian, Rhamphorhynchus",
+            "en-US": "Sicilian, Rhamphorhynchus",
             "pt-BR": "Siciliana, Rhamphorhynchus",
-            "es": "Siciliana, Rhamphorhynchus"
+            "es-419": "Siciliana, Rhamphorhynchus",
+            "en-GB": "Sicilian, Rhamphorhynchus",
+            "es-ES": "Siciliana, Rhamphorhynchus",
+            "pt-PT": "Siciliana, Rhamphorhynchus",
+            "de": "Sizilianisch, Rhamphorhynchus",
+            "fr": "Sicilienne, Rhamphorhynchus",
+            "it": "Siciliana, Rhamphorhynchus"
           },
           "eco": "B27",
           "opening": "Pterodactyl Defense: Sicilian, Rhamphorhynchus",
@@ -65,9 +101,15 @@
         {
           "id": "line-9f1b08de57208644",
           "names": {
-            "en": "Sicilian, Pteranodon",
+            "en-US": "Sicilian, Pteranodon",
             "pt-BR": "Siciliana, Pteranodonte",
-            "es": "Siciliana, Pteranodonte"
+            "es-419": "Siciliana, Pteranodonte",
+            "en-GB": "Sicilian, Pteranodon",
+            "es-ES": "Siciliana, Pteranodonte",
+            "pt-PT": "Siciliana, Pteranodonte",
+            "de": "Sizilianisch, Pteranodon",
+            "fr": "Sicilienne, Pteranodon",
+            "it": "Siciliana, Pteranodon"
           },
           "eco": "B27",
           "opening": "Pterodactyl Defense: Sicilian, Pteranodon",
@@ -77,9 +119,15 @@
         {
           "id": "line-686b443bb90bf276",
           "names": {
-            "en": "Sicilian, Siroccopteryx",
+            "en-US": "Sicilian, Siroccopteryx",
             "pt-BR": "Siciliana, Siroccopteryx",
-            "es": "Siciliana, Siroccopteryx"
+            "es-419": "Siciliana, Siroccopteryx",
+            "en-GB": "Sicilian, Siroccopteryx",
+            "es-ES": "Siciliana, Siroccopteryx",
+            "pt-PT": "Siciliana, Siroccopteryx",
+            "de": "Sizilianisch, Siroccopteryx",
+            "fr": "Sicilienne, Siroccopteryx",
+            "it": "Siciliana, Siroccopteryx"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Sicilian, Siroccopteryx",
@@ -89,9 +137,15 @@
         {
           "id": "line-9e40f64cdcccd7e0",
           "names": {
-            "en": "Sicilian, Quetzalcoatlus",
+            "en-US": "Sicilian, Quetzalcoatlus",
             "pt-BR": "Siciliana, Quetzalcoatlus",
-            "es": "Siciliana, Quetzalcoatlus"
+            "es-419": "Siciliana, Quetzalcoatlus",
+            "en-GB": "Sicilian, Quetzalcoatlus",
+            "es-ES": "Siciliana, Quetzalcoatlus",
+            "pt-PT": "Siciliana, Quetzalcoatlus",
+            "de": "Sizilianisch, Quetzalcoatlus",
+            "fr": "Sicilienne, Quetzalcoatlus",
+            "it": "Siciliana, Quetzalcoatlus"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Sicilian, Quetzalcoatlus",
@@ -102,17 +156,29 @@
     },
     {
       "names": {
-        "en": "Central",
+        "en-US": "Central",
         "pt-BR": "Central",
-        "es": "Central"
+        "es-419": "Central",
+        "en-GB": "Central",
+        "es-ES": "Central",
+        "pt-PT": "Central",
+        "de": "Zentral",
+        "fr": "Centrale",
+        "it": "Centrale"
       },
       "lines": [
         {
           "id": "line-728b0c9ef8c94d83",
           "names": {
-            "en": "Central, Benoni Beefeater Pterodactyl",
+            "en-US": "Central, Benoni Beefeater Pterodactyl",
             "pt-BR": "Central, Pterodáctilo Beefeater Benoni",
-            "es": "Central, Pterodáctilo Beefeater Benoni"
+            "es-419": "Central, Pterodáctilo Beefeater Benoni",
+            "en-GB": "Central, Benoni Beefeater Pterodactyl",
+            "es-ES": "Central, Pterodáctilo Beefeater Benoni",
+            "pt-PT": "Central, Pterodáctilo Beefeater Benoni",
+            "de": "Zentral, Benoni-Beefeater-Pterodaktylus",
+            "fr": "Centrale, Ptérodactyle Benoni Beefeater",
+            "it": "Centrale, Pterodattilo Benoni Beefeater"
           },
           "eco": "A40",
           "opening": "Pterodactyl Defense: Central, Benoni Beefeater Pterodactyl",
@@ -122,9 +188,15 @@
         {
           "id": "line-d6a10ad9dded3d3e",
           "names": {
-            "en": "Central, Benoni Pterodactyl",
+            "en-US": "Central, Benoni Pterodactyl",
             "pt-BR": "Central, Pterodáctilo Benoni",
-            "es": "Central, Pterodáctilo Benoni"
+            "es-419": "Central, Pterodáctilo Benoni",
+            "en-GB": "Central, Benoni Pterodactyl",
+            "es-ES": "Central, Pterodáctilo Benoni",
+            "pt-PT": "Central, Pterodáctilo Benoni",
+            "de": "Zentral, Benoni-Pterodaktylus",
+            "fr": "Centrale, Ptérodactyle Benoni",
+            "it": "Centrale, Pterodattilo Benoni"
           },
           "eco": "A40",
           "opening": "Pterodactyl Defense: Central, Benoni Pterodactyl",
@@ -134,9 +206,15 @@
         {
           "id": "line-bc26beb9752cc518",
           "names": {
-            "en": "Central, Bogolubovia",
+            "en-US": "Central, Bogolubovia",
             "pt-BR": "Central, Bogolubovia",
-            "es": "Central, Bogolubovia"
+            "es-419": "Central, Bogolubovia",
+            "en-GB": "Central, Bogolubovia",
+            "es-ES": "Central, Bogolubovia",
+            "pt-PT": "Central, Bogolubovia",
+            "de": "Zentral, Bogolubovia",
+            "fr": "Centrale, Bogolubovia",
+            "it": "Centrale, Bogolubovia"
           },
           "eco": "A42",
           "opening": "Pterodactyl Defense: Central, Bogolubovia",
@@ -146,9 +224,15 @@
         {
           "id": "line-fcc0bb240cd0fed0",
           "names": {
-            "en": "Central, Anhanguera",
+            "en-US": "Central, Anhanguera",
             "pt-BR": "Central, Anhanguera",
-            "es": "Central, Anhanguera"
+            "es-419": "Central, Anhanguera",
+            "en-GB": "Central, Anhanguera",
+            "es-ES": "Central, Anhanguera",
+            "pt-PT": "Central, Anhanguera",
+            "de": "Zentral, Anhanguera",
+            "fr": "Centrale, Anhanguera",
+            "it": "Centrale, Anhanguera"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Central, Anhanguera",
@@ -158,9 +242,15 @@
         {
           "id": "line-29307d1f0f7ec97c",
           "names": {
-            "en": "Central, Quetzalcoatlus Gambit",
+            "en-US": "Central, Quetzalcoatlus Gambit",
             "pt-BR": "Central, Gambito Quetzalcoatlus",
-            "es": "Central, Gambito Quetzalcoatlus"
+            "es-419": "Central, Gambito Quetzalcoatlus",
+            "en-GB": "Central, Quetzalcoatlus Gambit",
+            "es-ES": "Central, Gambito Quetzalcoatlus",
+            "pt-PT": "Central, Gambito Quetzalcoatlus",
+            "de": "Zentral, Quetzalcoatlus-Gambit",
+            "fr": "Centrale, Gambit Quetzalcoatlus",
+            "it": "Centrale, Gambetto Quetzalcoatlus"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Central, Quetzalcoatlus Gambit",
@@ -170,9 +260,15 @@
         {
           "id": "line-b5b3241c87377f24",
           "names": {
-            "en": "Central, Benoni Quetzalcoatlus",
+            "en-US": "Central, Benoni Quetzalcoatlus",
             "pt-BR": "Central, Quetzalcoatlus Benoni",
-            "es": "Central, Quetzalcoatlus Benoni"
+            "es-419": "Central, Quetzalcoatlus Benoni",
+            "en-GB": "Central, Benoni Quetzalcoatlus",
+            "es-ES": "Central, Quetzalcoatlus Benoni",
+            "pt-PT": "Central, Quetzalcoatlus Benoni",
+            "de": "Zentral, Benoni-Quetzalcoatlus",
+            "fr": "Centrale, Quetzalcoatlus Benoni",
+            "it": "Centrale, Quetzalcoatlus Benoni"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Central, Benoni Quetzalcoatlus",
@@ -183,17 +279,29 @@
     },
     {
       "names": {
-        "en": "Eastern",
+        "en-US": "Eastern",
         "pt-BR": "Oriental",
-        "es": "Oriental"
+        "es-419": "Oriental",
+        "en-GB": "Eastern",
+        "es-ES": "Oriental",
+        "pt-PT": "Oriental",
+        "de": "Eastern",
+        "fr": "Eastern",
+        "it": "Eastern"
       },
       "lines": [
         {
           "id": "line-677aed25f19b34cb",
           "names": {
-            "en": "Eastern, Benoni Pterodactyl",
+            "en-US": "Eastern, Benoni Pterodactyl",
             "pt-BR": "Oriental, Pterodáctilo Benoni",
-            "es": "Oriental, Pterodáctilo Benoni"
+            "es-419": "Oriental, Pterodáctilo Benoni",
+            "en-GB": "Eastern, Benoni Pterodactyl",
+            "es-ES": "Oriental, Pterodáctilo Benoni",
+            "pt-PT": "Oriental, Pterodáctilo Benoni",
+            "de": "Eastern, Benoni-Pterodaktylus",
+            "fr": "Eastern, Ptérodactyle Benoni",
+            "it": "Eastern, Pterodattilo Benoni"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Eastern, Benoni Pterodactyl",
@@ -203,9 +311,15 @@
         {
           "id": "line-481eeb55b207d350",
           "names": {
-            "en": "Eastern, Benoni",
+            "en-US": "Eastern, Benoni",
             "pt-BR": "Oriental, Benoni",
-            "es": "Oriental, Benoni"
+            "es-419": "Oriental, Benoni",
+            "en-GB": "Eastern, Benoni",
+            "es-ES": "Oriental, Benoni",
+            "pt-PT": "Oriental, Benoni",
+            "de": "Eastern, Benoni",
+            "fr": "Eastern, Benoni",
+            "it": "Eastern, Benoni"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Eastern, Benoni",
@@ -215,9 +329,15 @@
         {
           "id": "line-b6d68415193566ae",
           "names": {
-            "en": "Eastern, Anhanguera",
+            "en-US": "Eastern, Anhanguera",
             "pt-BR": "Oriental, Anhanguera",
-            "es": "Oriental, Anhanguera"
+            "es-419": "Oriental, Anhanguera",
+            "en-GB": "Eastern, Anhanguera",
+            "es-ES": "Oriental, Anhanguera",
+            "pt-PT": "Oriental, Anhanguera",
+            "de": "Eastern, Anhanguera",
+            "fr": "Eastern, Anhanguera",
+            "it": "Eastern, Anhanguera"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Eastern, Anhanguera",
@@ -227,9 +347,15 @@
         {
           "id": "line-83f139489f94ac86",
           "names": {
-            "en": "Eastern, Benoni Pteranodon",
+            "en-US": "Eastern, Benoni Pteranodon",
             "pt-BR": "Oriental, Pteranodonte Benoni",
-            "es": "Oriental, Pteranodonte Benoni"
+            "es-419": "Oriental, Pteranodonte Benoni",
+            "en-GB": "Eastern, Benoni Pteranodon",
+            "es-ES": "Oriental, Pteranodonte Benoni",
+            "pt-PT": "Oriental, Pteranodonte Benoni",
+            "de": "Eastern, Benoni-Pteranodon",
+            "fr": "Eastern, Ptéranodon Benoni",
+            "it": "Eastern, Pteranodonte Benoni"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Eastern, Benoni Pteranodon",
@@ -239,9 +365,15 @@
         {
           "id": "line-6678f1b0d437e5a7",
           "names": {
-            "en": "Eastern, Pteranodon",
+            "en-US": "Eastern, Pteranodon",
             "pt-BR": "Oriental, Pteranodonte",
-            "es": "Oriental, Pteranodonte"
+            "es-419": "Oriental, Pteranodonte",
+            "en-GB": "Eastern, Pteranodon",
+            "es-ES": "Oriental, Pteranodonte",
+            "pt-PT": "Oriental, Pteranodonte",
+            "de": "Eastern, Pteranodon",
+            "fr": "Eastern, Pteranodon",
+            "it": "Eastern, Pteranodon"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Eastern, Pteranodon",
@@ -251,9 +383,15 @@
         {
           "id": "line-c027114ffdfa6b1e",
           "names": {
-            "en": "Eastern, Rhamphorhynchus",
+            "en-US": "Eastern, Rhamphorhynchus",
             "pt-BR": "Oriental, Rhamphorhynchus",
-            "es": "Oriental, Rhamphorhynchus"
+            "es-419": "Oriental, Rhamphorhynchus",
+            "en-GB": "Eastern, Rhamphorhynchus",
+            "es-ES": "Oriental, Rhamphorhynchus",
+            "pt-PT": "Oriental, Rhamphorhynchus",
+            "de": "Eastern, Rhamphorhynchus",
+            "fr": "Eastern, Rhamphorhynchus",
+            "it": "Eastern, Rhamphorhynchus"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Eastern, Rhamphorhynchus",
@@ -264,17 +402,29 @@
     },
     {
       "names": {
-        "en": "Fianchetto",
+        "en-US": "Fianchetto",
         "pt-BR": "Fianqueto",
-        "es": "Fianchetto"
+        "es-419": "Fianchetto",
+        "en-GB": "Fianchetto",
+        "es-ES": "Fianchetto",
+        "pt-PT": "Fianqueto",
+        "de": "Fianchetto",
+        "fr": "Fianchetto",
+        "it": "Fianchetto"
       },
       "lines": [
         {
           "id": "line-1bdaa726d329bc0e",
           "names": {
-            "en": "Fianchetto, Queen Pterodactyl",
+            "en-US": "Fianchetto, Queen Pterodactyl",
             "pt-BR": "Fianqueto, Pterodáctilo da Dama",
-            "es": "Fianchetto, Pterodáctilo de Dama"
+            "es-419": "Fianchetto, Pterodáctilo de Dama",
+            "en-GB": "Fianchetto, Queen Pterodactyl",
+            "es-ES": "Fianchetto, Pterodáctilo de Dama",
+            "pt-PT": "Fianqueto, Pterodáctilo da Dama",
+            "de": "Fianchetto, Damen-Pterodaktylus",
+            "fr": "Fianchetto, Ptérodactyle de la dame",
+            "it": "Fianchetto, Pterodattilo di donna"
           },
           "eco": "A40",
           "opening": "Pterodactyl Defense: Fianchetto, Queen Pterodactyl",
@@ -284,9 +434,15 @@
         {
           "id": "line-dc8bd3fab6173d1c",
           "names": {
-            "en": "Fianchetto, Queen Pteranodon",
+            "en-US": "Fianchetto, Queen Pteranodon",
             "pt-BR": "Fianqueto, Pteranodonte da Dama",
-            "es": "Fianchetto, Pteranodonte de Dama"
+            "es-419": "Fianchetto, Pteranodonte de Dama",
+            "en-GB": "Fianchetto, Queen Pteranodon",
+            "es-ES": "Fianchetto, Pteranodonte de Dama",
+            "pt-PT": "Fianqueto, Pteranodonte da Dama",
+            "de": "Fianchetto, Damen-Pteranodon",
+            "fr": "Fianchetto, Ptéranodon de la dame",
+            "it": "Fianchetto, Pteranodonte di donna"
           },
           "eco": "A40",
           "opening": "Pterodactyl Defense: Fianchetto, Queen Pteranodon",
@@ -296,9 +452,15 @@
         {
           "id": "line-79ef02457540f2d5",
           "names": {
-            "en": "Fianchetto, Queen Benoni Pterodactyl",
+            "en-US": "Fianchetto, Queen Benoni Pterodactyl",
             "pt-BR": "Fianqueto, Pterodáctilo Benoni da Dama",
-            "es": "Fianchetto, Pterodáctilo Benoni de Dama"
+            "es-419": "Fianchetto, Pterodáctilo Benoni de Dama",
+            "en-GB": "Fianchetto, Queen Benoni Pterodactyl",
+            "es-ES": "Fianchetto, Pterodáctilo Benoni de Dama",
+            "pt-PT": "Fianqueto, Pterodáctilo Benoni da Dama",
+            "de": "Fianchetto, Damen-Benoni-Pterodaktylus",
+            "fr": "Fianchetto, Ptérodactyle Benoni de la dame",
+            "it": "Fianchetto, Pterodattilo Benoni di donna"
           },
           "eco": "A40",
           "opening": "Pterodactyl Defense: Fianchetto, Queen Benoni Pterodactyl",
@@ -308,9 +470,15 @@
         {
           "id": "line-7bb3738f2b4552bb",
           "names": {
-            "en": "Fianchetto, King Pterodactyl",
+            "en-US": "Fianchetto, King Pterodactyl",
             "pt-BR": "Fianqueto, Pterodáctilo do Rei",
-            "es": "Fianchetto, Pterodáctilo de Rey"
+            "es-419": "Fianchetto, Pterodáctilo de Rey",
+            "en-GB": "Fianchetto, King Pterodactyl",
+            "es-ES": "Fianchetto, Pterodáctilo de Rey",
+            "pt-PT": "Fianqueto, Pterodáctilo do Rei",
+            "de": "Fianchetto, Königs-Pterodaktylus",
+            "fr": "Fianchetto, Ptérodactyle du roi",
+            "it": "Fianchetto, Pterodattilo di re"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Fianchetto, King Pterodactyl",
@@ -320,9 +488,15 @@
         {
           "id": "line-04486c98f2cafc3a",
           "names": {
-            "en": "Fianchetto, Rhamphorhynchus",
+            "en-US": "Fianchetto, Rhamphorhynchus",
             "pt-BR": "Fianqueto, Rhamphorhynchus",
-            "es": "Fianchetto, Rhamphorhynchus"
+            "es-419": "Fianchetto, Rhamphorhynchus",
+            "en-GB": "Fianchetto, Rhamphorhynchus",
+            "es-ES": "Fianchetto, Rhamphorhynchus",
+            "pt-PT": "Fianqueto, Rhamphorhynchus",
+            "de": "Fianchetto, Rhamphorhynchus",
+            "fr": "Fianchetto, Rhamphorhynchus",
+            "it": "Fianchetto, Rhamphorhynchus"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Fianchetto, Rhamphorhynchus",
@@ -333,17 +507,29 @@
     },
     {
       "names": {
-        "en": "Western",
+        "en-US": "Western",
         "pt-BR": "Ocidental",
-        "es": "Occidental"
+        "es-419": "Occidental",
+        "en-GB": "Western",
+        "es-ES": "Occidental",
+        "pt-PT": "Ocidental",
+        "de": "Western",
+        "fr": "Western",
+        "it": "Western"
       },
       "lines": [
         {
           "id": "line-e1512443c173127b",
           "names": {
-            "en": "Western, Pterodactyl",
+            "en-US": "Western, Pterodactyl",
             "pt-BR": "Ocidental, Pterodáctilo",
-            "es": "Occidental, Pterodáctilo"
+            "es-419": "Occidental, Pterodáctilo",
+            "en-GB": "Western, Pterodactyl",
+            "es-ES": "Occidental, Pterodáctilo",
+            "pt-PT": "Ocidental, Pterodáctilo",
+            "de": "Western, Pterodaktylus",
+            "fr": "Western, Ptérodactyle",
+            "it": "Western, Pterodattilo"
           },
           "eco": "B27",
           "opening": "Pterodactyl Defense: Western, Pterodactyl",
@@ -353,9 +539,15 @@
         {
           "id": "line-313c13dae292290f",
           "names": {
-            "en": "Western, Rhamphorhynchus",
+            "en-US": "Western, Rhamphorhynchus",
             "pt-BR": "Ocidental, Rhamphorhynchus",
-            "es": "Occidental, Rhamphorhynchus"
+            "es-419": "Occidental, Rhamphorhynchus",
+            "en-GB": "Western, Rhamphorhynchus",
+            "es-ES": "Occidental, Rhamphorhynchus",
+            "pt-PT": "Ocidental, Rhamphorhynchus",
+            "de": "Western, Rhamphorhynchus",
+            "fr": "Western, Rhamphorhynchus",
+            "it": "Western, Rhamphorhynchus"
           },
           "eco": "B27",
           "opening": "Pterodactyl Defense: Western, Rhamphorhynchus",
@@ -365,9 +557,15 @@
         {
           "id": "line-aa513b2be56c8eb4",
           "names": {
-            "en": "Western, Siroccopteryx",
+            "en-US": "Western, Siroccopteryx",
             "pt-BR": "Ocidental, Siroccopteryx",
-            "es": "Occidental, Siroccopteryx"
+            "es-419": "Occidental, Siroccopteryx",
+            "en-GB": "Western, Siroccopteryx",
+            "es-ES": "Occidental, Siroccopteryx",
+            "pt-PT": "Ocidental, Siroccopteryx",
+            "de": "Western, Siroccopteryx",
+            "fr": "Western, Siroccopteryx",
+            "it": "Western, Siroccopteryx"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Western, Siroccopteryx",
@@ -377,9 +575,15 @@
         {
           "id": "line-4148c2bba7f4bf21",
           "names": {
-            "en": "Western, Anhanguera",
+            "en-US": "Western, Anhanguera",
             "pt-BR": "Ocidental, Anhanguera",
-            "es": "Occidental, Anhanguera"
+            "es-419": "Occidental, Anhanguera",
+            "en-GB": "Western, Anhanguera",
+            "es-ES": "Occidental, Anhanguera",
+            "pt-PT": "Ocidental, Anhanguera",
+            "de": "Western, Anhanguera",
+            "fr": "Western, Anhanguera",
+            "it": "Western, Anhanguera"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Western, Anhanguera",
@@ -390,17 +594,29 @@
     },
     {
       "names": {
-        "en": "Austrian",
+        "en-US": "Austrian",
         "pt-BR": "Austríaca",
-        "es": "Austriaca"
+        "es-419": "Austriaca",
+        "en-GB": "Austrian",
+        "es-ES": "Austriaca",
+        "pt-PT": "Austríaca",
+        "de": "Österreichisch",
+        "fr": "Autrichienne",
+        "it": "Austriaca"
       },
       "lines": [
         {
           "id": "line-6808d5f49b89693c",
           "names": {
-            "en": "Austrian, Grand Prix Pterodactyl",
+            "en-US": "Austrian, Grand Prix Pterodactyl",
             "pt-BR": "Austríaca, Pterodáctilo Grand Prix",
-            "es": "Austriaca, Pterodáctilo Grand Prix"
+            "es-419": "Austriaca, Pterodáctilo Grand Prix",
+            "en-GB": "Austrian, Grand Prix Pterodactyl",
+            "es-ES": "Austriaca, Pterodáctilo Grand Prix",
+            "pt-PT": "Austríaca, Pterodáctilo Grand Prix",
+            "de": "Österreichisch, Grand-Prix-Pterodaktylus",
+            "fr": "Autrichienne, Ptérodactyle Grand Prix",
+            "it": "Austriaca, Pterodattilo Grand Prix"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Austrian, Grand Prix Pterodactyl",
@@ -410,9 +626,15 @@
         {
           "id": "line-7e64056839cf0932",
           "names": {
-            "en": "Austrian, Austriadactylus Western",
+            "en-US": "Austrian, Austriadactylus Western",
             "pt-BR": "Austríaca, Austriadactylus Ocidental",
-            "es": "Austriaca, Austriadactylus Occidental"
+            "es-419": "Austriaca, Austriadactylus Occidental",
+            "en-GB": "Austrian, Austriadactylus Western",
+            "es-ES": "Austriaca, Austriadactylus Occidental",
+            "pt-PT": "Austríaca, Austriadactylus Ocidental",
+            "de": "Österreichisch, Westlicher Austriadactylus",
+            "fr": "Autrichienne, Austriadactylus occidental",
+            "it": "Austriaca, Austriadactylus occidentale"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Austrian, Austriadactylus Western",
@@ -422,9 +644,15 @@
         {
           "id": "line-53da5836b2091293",
           "names": {
-            "en": "Austrian, Pteranodon",
+            "en-US": "Austrian, Pteranodon",
             "pt-BR": "Austríaca, Pteranodonte",
-            "es": "Austriaca, Pteranodonte"
+            "es-419": "Austriaca, Pteranodonte",
+            "en-GB": "Austrian, Pteranodon",
+            "es-ES": "Austriaca, Pteranodonte",
+            "pt-PT": "Austríaca, Pteranodonte",
+            "de": "Österreichisch, Pteranodon",
+            "fr": "Autrichienne, Pteranodon",
+            "it": "Austriaca, Pteranodon"
           },
           "eco": "B06",
           "opening": "Pterodactyl Defense: Austrian, Pteranodon",
@@ -438,9 +666,15 @@
     {
       "id": "line-52031ed28dcdddc0",
       "names": {
-        "en": "Pterodactyl Defense",
+        "en-US": "Pterodactyl Defense",
         "pt-BR": "Defesa Pterodáctilo",
-        "es": "Defensa Pterodáctilo"
+        "es-419": "Defensa Pterodáctilo",
+        "en-GB": "Pterodactyl Defence",
+        "es-ES": "Defensa Pterodáctilo",
+        "pt-PT": "Defesa Pterodáctilo",
+        "de": "Pterodaktylus-Verteidigung",
+        "fr": "Défense du ptérodactyle",
+        "it": "Difesa dello pterodattilo"
       },
       "eco": "A42",
       "opening": "Pterodactyl Defense",
@@ -450,9 +684,15 @@
     {
       "id": "line-5c2ae7d0586f55af",
       "names": {
-        "en": "Queen Pterodactyl, Quiet Line",
+        "en-US": "Queen Pterodactyl, Quiet Line",
         "pt-BR": "Pterodáctilo da Dama, Linha Tranquila",
-        "es": "Pterodáctilo de Dama, Línea Tranquila"
+        "es-419": "Pterodáctilo de Dama, Línea Tranquila",
+        "en-GB": "Queen Pterodactyl, Quiet Line",
+        "es-ES": "Pterodáctilo de Dama, Línea Tranquila",
+        "pt-PT": "Pterodáctilo da Dama, Linha Tranquila",
+        "de": "Damen-Pterodaktylus, Ruhiges Abspiel",
+        "fr": "Ptérodactyle de la dame, Ligne tranquille",
+        "it": "Pterodattilo di donna, Linea tranquilla"
       },
       "eco": "A40",
       "opening": "Pterodactyl Defense: Queen Pterodactyl, Quiet Line",

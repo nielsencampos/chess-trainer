@@ -1,25 +1,43 @@
 {
   "id": "benoni-defense",
   "names": {
-    "en": "Benoni Defense",
+    "en-US": "Benoni Defense",
     "pt-BR": "Defesa Benoni",
-    "es": "Defensa Benoni"
+    "es-419": "Defensa Benoni",
+    "en-GB": "Benoni Defense",
+    "es-ES": "Defensa Benoni",
+    "pt-PT": "Defesa Benoni",
+    "de": "Benoni-Verteidigung",
+    "fr": "Défense Benoni",
+    "it": "Difesa Benoni"
   },
   "order": 10,
   "variants": [
     {
       "names": {
-        "en": "Classical Variation",
+        "en-US": "Classical Variation",
         "pt-BR": "Variante Clássica",
-        "es": "Variante Clásica"
+        "es-419": "Variante Clásica",
+        "en-GB": "Classical Variation",
+        "es-ES": "Variante Clásica",
+        "pt-PT": "Variante Clássica",
+        "de": "Klassische Variante",
+        "fr": "Variante classique",
+        "it": "Variante classica"
       },
       "lines": [
         {
           "id": "line-b0a550cd2e0516e7",
           "names": {
-            "en": "Classical Variation",
+            "en-US": "Classical Variation",
             "pt-BR": "Variante Clássica",
-            "es": "Variante Clásica"
+            "es-419": "Variante Clásica",
+            "en-GB": "Classical Variation",
+            "es-ES": "Variante Clásica",
+            "pt-PT": "Variante Clássica",
+            "de": "Klassische Variante",
+            "fr": "Variante classique",
+            "it": "Variante classica"
           },
           "eco": "A72",
           "opening": "Benoni Defense: Classical Variation",
@@ -29,9 +47,15 @@
         {
           "id": "line-4a80bc582ca7cd19",
           "names": {
-            "en": "Classical Variation, Main Line",
+            "en-US": "Classical Variation, Main Line",
             "pt-BR": "Variante Clássica, Linha Principal",
-            "es": "Variante Clásica, Línea Principal"
+            "es-419": "Variante Clásica, Línea Principal",
+            "en-GB": "Classical Variation, Main Line",
+            "es-ES": "Variante Clásica, Línea Principal",
+            "pt-PT": "Variante Clássica, Linha Principal",
+            "de": "Klassische Variante, Hauptvariante",
+            "fr": "Variante classique, Ligne principale",
+            "it": "Variante classica, Linea principale"
           },
           "eco": "A73",
           "opening": "Benoni Defense: Classical Variation, Main Line",
@@ -41,9 +65,15 @@
         {
           "id": "line-a52ceb34b05d8abd",
           "names": {
-            "en": "Classical Variation, Czerniak Defense",
+            "en-US": "Classical Variation, Czerniak Defense",
             "pt-BR": "Variante Clássica, Defesa Czerniak",
-            "es": "Variante Clásica, Defensa Czerniak"
+            "es-419": "Variante Clásica, Defensa Czerniak",
+            "en-GB": "Classical Variation, Czerniak Defence",
+            "es-ES": "Variante Clásica, Defensa Czerniak",
+            "pt-PT": "Variante Clássica, Defesa Czerniak",
+            "de": "Klassische Variante, Czerniak-Verteidigung",
+            "fr": "Variante classique, Défense Czerniak",
+            "it": "Variante classica, Difesa Czerniak"
           },
           "eco": "A76",
           "opening": "Benoni Defense: Classical Variation, Czerniak Defense",
@@ -53,9 +83,15 @@
         {
           "id": "line-5440ab80c3584bbc",
           "names": {
-            "en": "Classical Variation, Czerniak Defense, Tal Line",
+            "en-US": "Classical Variation, Czerniak Defense, Tal Line",
             "pt-BR": "Variante Clássica, Defesa Czerniak, Linha Tal",
-            "es": "Variante Clásica, Defensa Czerniak, Línea Tal"
+            "es-419": "Variante Clásica, Defensa Czerniak, Línea Tal",
+            "en-GB": "Classical Variation, Czerniak Defence, Tal Line",
+            "es-ES": "Variante Clásica, Defensa Czerniak, Línea Tal",
+            "pt-PT": "Variante Clássica, Defesa Czerniak, Linha Tal",
+            "de": "Klassische Variante, Czerniak-Verteidigung, Tal-Abspiel",
+            "fr": "Variante classique, Défense Czerniak, Ligne Tal",
+            "it": "Variante classica, Difesa Czerniak, Linea Tal"
           },
           "eco": "A77",
           "opening": "Benoni Defense: Classical Variation, Czerniak Defense, Tal Line",
@@ -65,9 +101,15 @@
         {
           "id": "line-c0871283a41270ea",
           "names": {
-            "en": "Classical Variation, Czerniak Defense",
+            "en-US": "Classical Variation, Czerniak Defense",
             "pt-BR": "Variante Clássica, Defesa Czerniak",
-            "es": "Variante Clásica, Defensa Czerniak"
+            "es-419": "Variante Clásica, Defensa Czerniak",
+            "en-GB": "Classical Variation, Czerniak Defence",
+            "es-ES": "Variante Clásica, Defensa Czerniak",
+            "pt-PT": "Variante Clássica, Defesa Czerniak",
+            "de": "Klassische Variante, Czerniak-Verteidigung",
+            "fr": "Variante classique, Défense Czerniak",
+            "it": "Variante classica, Difesa Czerniak"
           },
           "eco": "A79",
           "opening": "Benoni Defense: Classical Variation, Czerniak Defense",
@@ -77,9 +119,15 @@
         {
           "id": "line-ae52e2149c5cb0a0",
           "names": {
-            "en": "Classical Variation, Czerniak Defense, Tal Line",
+            "en-US": "Classical Variation, Czerniak Defense, Tal Line",
             "pt-BR": "Variante Clássica, Defesa Czerniak, Linha Tal",
-            "es": "Variante Clásica, Defensa Czerniak, Línea Tal"
+            "es-419": "Variante Clásica, Defensa Czerniak, Línea Tal",
+            "en-GB": "Classical Variation, Czerniak Defence, Tal Line",
+            "es-ES": "Variante Clásica, Defensa Czerniak, Línea Tal",
+            "pt-PT": "Variante Clássica, Defesa Czerniak, Linha Tal",
+            "de": "Klassische Variante, Czerniak-Verteidigung, Tal-Abspiel",
+            "fr": "Variante classique, Défense Czerniak, Ligne Tal",
+            "it": "Variante classica, Difesa Czerniak, Linea Tal"
           },
           "eco": "A77",
           "opening": "Benoni Defense: Classical Variation, Czerniak Defense, Tal Line",
@@ -89,9 +137,15 @@
         {
           "id": "line-df308666199801ba",
           "names": {
-            "en": "Classical Variation, Full Line",
+            "en-US": "Classical Variation, Full Line",
             "pt-BR": "Variante Clássica, Linha Completa",
-            "es": "Variante Clásica, Línea Completa"
+            "es-419": "Variante Clásica, Línea Completa",
+            "en-GB": "Classical Variation, Full Line",
+            "es-ES": "Variante Clásica, Línea Completa",
+            "pt-PT": "Variante Clássica, Linha Completa",
+            "de": "Klassische Variante, Vollständiges Abspiel",
+            "fr": "Variante classique, Ligne complète",
+            "it": "Variante classica, Linea completa"
           },
           "eco": "A74",
           "opening": "Benoni Defense: Classical Variation, Full Line",
@@ -101,9 +155,15 @@
         {
           "id": "line-59f8da1ab36c802b",
           "names": {
-            "en": "Classical Variation",
+            "en-US": "Classical Variation",
             "pt-BR": "Variante Clássica",
-            "es": "Variante Clásica"
+            "es-419": "Variante Clásica",
+            "en-GB": "Classical Variation",
+            "es-ES": "Variante Clásica",
+            "pt-PT": "Variante Clássica",
+            "de": "Klassische Variante",
+            "fr": "Variante classique",
+            "it": "Variante classica"
           },
           "eco": "A70",
           "opening": "Benoni Defense: Classical Variation",
@@ -113,9 +173,15 @@
         {
           "id": "line-5e9ec616195764c9",
           "names": {
-            "en": "Classical Variation, Traditional Variation",
+            "en-US": "Classical Variation, Traditional Variation",
             "pt-BR": "Variante Clássica, Variante Tradicional",
-            "es": "Variante Clásica, Variante Tradicional"
+            "es-419": "Variante Clásica, Variante Tradicional",
+            "en-GB": "Classical Variation, Traditional Variation",
+            "es-ES": "Variante Clásica, Variante Tradicional",
+            "pt-PT": "Variante Clássica, Variante Tradicional",
+            "de": "Klassische Variante, Traditionelle Variante",
+            "fr": "Variante classique, Variante traditionnelle",
+            "it": "Variante classica, Variante tradizionale"
           },
           "eco": "A70",
           "opening": "Benoni Defense: Classical Variation, Traditional Variation",
@@ -125,9 +191,15 @@
         {
           "id": "line-90801643bddd9902",
           "names": {
-            "en": "Classical Variation, Czerniak Defense",
+            "en-US": "Classical Variation, Czerniak Defense",
             "pt-BR": "Variante Clássica, Defesa Czerniak",
-            "es": "Variante Clásica, Defensa Czerniak"
+            "es-419": "Variante Clásica, Defensa Czerniak",
+            "en-GB": "Classical Variation, Czerniak Defence",
+            "es-ES": "Variante Clásica, Defensa Czerniak",
+            "pt-PT": "Variante Clássica, Defesa Czerniak",
+            "de": "Klassische Variante, Czerniak-Verteidigung",
+            "fr": "Variante classique, Défense Czerniak",
+            "it": "Variante classica, Difesa Czerniak"
           },
           "eco": "A78",
           "opening": "Benoni Defense: Classical Variation, Czerniak Defense",
@@ -137,9 +209,15 @@
         {
           "id": "line-5971344271d23cd3",
           "names": {
-            "en": "Classical Variation, Argentine Counterattack",
+            "en-US": "Classical Variation, Argentine Counterattack",
             "pt-BR": "Variante Clássica, Contra-ataque Argentino",
-            "es": "Variante Clásica, Contraataque Argentino"
+            "es-419": "Variante Clásica, Contraataque Argentino",
+            "en-GB": "Classical Variation, Argentine Counterattack",
+            "es-ES": "Variante Clásica, Contraataque Argentino",
+            "pt-PT": "Variante Clássica, Contra-ataque Argentino",
+            "de": "Klassische Variante, Argentinischer Gegenangriff",
+            "fr": "Variante classique, Contre-attaque argentine",
+            "it": "Variante classica, Contrattacco argentino"
           },
           "eco": "A75",
           "opening": "Benoni Defense: Classical Variation, Argentine Counterattack",
@@ -149,9 +227,15 @@
         {
           "id": "line-b0f25301a6f52173",
           "names": {
-            "en": "Classical Variation, Averbakh-Grivas Attack",
+            "en-US": "Classical Variation, Averbakh-Grivas Attack",
             "pt-BR": "Variante Clássica, Ataque Averbakh-Grivas",
-            "es": "Variante Clásica, Ataque Averbakh-Grivas"
+            "es-419": "Variante Clásica, Ataque Averbakh-Grivas",
+            "en-GB": "Classical Variation, Averbakh-Grivas Attack",
+            "es-ES": "Variante Clásica, Ataque Averbakh-Grivas",
+            "pt-PT": "Variante Clássica, Ataque Averbakh-Grivas",
+            "de": "Klassische Variante, Awerbach-Grivas-Angriff",
+            "fr": "Variante classique, Attaque Averbakh-Grivas",
+            "it": "Variante classica, Attacco Averbach-Grivas"
           },
           "eco": "A71",
           "opening": "Benoni Defense: Classical Variation, Averbakh-Grivas Attack",
@@ -161,9 +245,15 @@
         {
           "id": "line-aeccfc26ef396d0f",
           "names": {
-            "en": "Classical Variation, New York Variation",
+            "en-US": "Classical Variation, New York Variation",
             "pt-BR": "Variante Clássica, Variante Nova York",
-            "es": "Variante Clásica, Variante Nueva York"
+            "es-419": "Variante Clásica, Variante Nueva York",
+            "en-GB": "Classical Variation, New York Variation",
+            "es-ES": "Variante Clásica, Variante Nueva York",
+            "pt-PT": "Variante Clássica, Variante Nova Iorque",
+            "de": "Klassische Variante, New-York-Variante",
+            "fr": "Variante classique, Variante de New York",
+            "it": "Variante classica, Variante di New York"
           },
           "eco": "A70",
           "opening": "Benoni Defense: Classical Variation, New York Variation",
@@ -174,17 +264,29 @@
     },
     {
       "names": {
-        "en": "King's Pawn Line",
+        "en-US": "King's Pawn Line",
         "pt-BR": "Linha do Peão do Rei",
-        "es": "Línea de Peón de Rey"
+        "es-419": "Línea de Peón de Rey",
+        "en-GB": "King's Pawn Line",
+        "es-ES": "Línea de Peón de Rey",
+        "pt-PT": "Linha do Peão do Rei",
+        "de": "Königsbauern-Abspiel",
+        "fr": "Ligne du pion roi",
+        "it": "Linea del pedone di re"
       },
       "lines": [
         {
           "id": "line-cdaec880d79bfd9c",
           "names": {
-            "en": "King's Pawn Line",
+            "en-US": "King's Pawn Line",
             "pt-BR": "Linha do Peão do Rei",
-            "es": "Línea de Peón de Rey"
+            "es-419": "Línea de Peón de Rey",
+            "en-GB": "King's Pawn Line",
+            "es-ES": "Línea de Peón de Rey",
+            "pt-PT": "Linha do Peão do Rei",
+            "de": "Königsbauern-Abspiel",
+            "fr": "Ligne du pion roi",
+            "it": "Linea del pedone di re"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line",
@@ -194,9 +296,15 @@
         {
           "id": "line-594bca84ed2243c1",
           "names": {
-            "en": "King's Pawn Line",
+            "en-US": "King's Pawn Line",
             "pt-BR": "Linha do Peão do Rei",
-            "es": "Línea de Peón de Rey"
+            "es-419": "Línea de Peón de Rey",
+            "en-GB": "King's Pawn Line",
+            "es-ES": "Línea de Peón de Rey",
+            "pt-PT": "Linha do Peão do Rei",
+            "de": "Königsbauern-Abspiel",
+            "fr": "Ligne du pion roi",
+            "it": "Linea del pedone di re"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line",
@@ -206,9 +314,15 @@
         {
           "id": "line-32a9de08faf1740d",
           "names": {
-            "en": "King's Pawn Line, with Be3",
+            "en-US": "King's Pawn Line, with Be3",
             "pt-BR": "Linha do Peão do Rei, com Be3",
-            "es": "Línea de Peón de Rey, con Be3"
+            "es-419": "Línea de Peón de Rey, con Be3",
+            "en-GB": "King's Pawn Line, with Be3",
+            "es-ES": "Línea de Peón de Rey, con Be3",
+            "pt-PT": "Linha do Peão do Rei, com Be3",
+            "de": "Königsbauern-Abspiel, mit Be3",
+            "fr": "Ligne du pion roi, avec Be3",
+            "it": "Linea del pedone di re, con Be3"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Be3",
@@ -218,9 +332,15 @@
         {
           "id": "line-d34361853335d793",
           "names": {
-            "en": "King's Pawn Line, with Bg5",
+            "en-US": "King's Pawn Line, with Bg5",
             "pt-BR": "Linha do Peão do Rei, com Bg5",
-            "es": "Línea de Peón de Rey, con Bg5"
+            "es-419": "Línea de Peón de Rey, con Bg5",
+            "en-GB": "King's Pawn Line, with Bg5",
+            "es-ES": "Línea de Peón de Rey, con Bg5",
+            "pt-PT": "Linha do Peão do Rei, com Bg5",
+            "de": "Königsbauern-Abspiel, mit Bg5",
+            "fr": "Ligne du pion roi, avec Bg5",
+            "it": "Linea del pedone di re, con Bg5"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Bg5",
@@ -230,9 +350,15 @@
         {
           "id": "line-04786668b3088c5d",
           "names": {
-            "en": "King's Pawn Line, with Nge2",
+            "en-US": "King's Pawn Line, with Nge2",
             "pt-BR": "Linha do Peão do Rei, com Nge2",
-            "es": "Línea de Peón de Rey, con Nge2"
+            "es-419": "Línea de Peón de Rey, con Nge2",
+            "en-GB": "King's Pawn Line, with Nge2",
+            "es-ES": "Línea de Peón de Rey, con Nge2",
+            "pt-PT": "Linha do Peão do Rei, com Nge2",
+            "de": "Königsbauern-Abspiel, mit Nge2",
+            "fr": "Ligne du pion roi, avec Nge2",
+            "it": "Linea del pedone di re, con Nge2"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Nge2",
@@ -242,9 +368,15 @@
         {
           "id": "line-669365bbb72df0e4",
           "names": {
-            "en": "King's Pawn Line, with Bg5",
+            "en-US": "King's Pawn Line, with Bg5",
             "pt-BR": "Linha do Peão do Rei, com Bg5",
-            "es": "Línea de Peón de Rey, con Bg5"
+            "es-419": "Línea de Peón de Rey, con Bg5",
+            "en-GB": "King's Pawn Line, with Bg5",
+            "es-ES": "Línea de Peón de Rey, con Bg5",
+            "pt-PT": "Linha do Peão do Rei, com Bg5",
+            "de": "Königsbauern-Abspiel, mit Bg5",
+            "fr": "Ligne du pion roi, avec Bg5",
+            "it": "Linea del pedone di re, con Bg5"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Bg5",
@@ -254,9 +386,15 @@
         {
           "id": "line-7e591af15c9e1f08",
           "names": {
-            "en": "King's Pawn Line, with Bg5",
+            "en-US": "King's Pawn Line, with Bg5",
             "pt-BR": "Linha do Peão do Rei, com Bg5",
-            "es": "Línea de Peón de Rey, con Bg5"
+            "es-419": "Línea de Peón de Rey, con Bg5",
+            "en-GB": "King's Pawn Line, with Bg5",
+            "es-ES": "Línea de Peón de Rey, con Bg5",
+            "pt-PT": "Linha do Peão do Rei, com Bg5",
+            "de": "Königsbauern-Abspiel, mit Bg5",
+            "fr": "Ligne du pion roi, avec Bg5",
+            "it": "Linea del pedone di re, con Bg5"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Bg5",
@@ -266,9 +404,15 @@
         {
           "id": "line-82ab07b7cdffc3fc",
           "names": {
-            "en": "King's Pawn Line, with Nge2",
+            "en-US": "King's Pawn Line, with Nge2",
             "pt-BR": "Linha do Peão do Rei, com Nge2",
-            "es": "Línea de Peón de Rey, con Nge2"
+            "es-419": "Línea de Peón de Rey, con Nge2",
+            "en-GB": "King's Pawn Line, with Nge2",
+            "es-ES": "Línea de Peón de Rey, con Nge2",
+            "pt-PT": "Linha do Peão do Rei, com Nge2",
+            "de": "Königsbauern-Abspiel, mit Nge2",
+            "fr": "Ligne du pion roi, avec Nge2",
+            "it": "Linea del pedone di re, con Nge2"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Nge2",
@@ -278,9 +422,15 @@
         {
           "id": "line-aa452af28eac3ec5",
           "names": {
-            "en": "King's Pawn Line",
+            "en-US": "King's Pawn Line",
             "pt-BR": "Linha do Peão do Rei",
-            "es": "Línea de Peón de Rey"
+            "es-419": "Línea de Peón de Rey",
+            "en-GB": "King's Pawn Line",
+            "es-ES": "Línea de Peón de Rey",
+            "pt-PT": "Linha do Peão do Rei",
+            "de": "Königsbauern-Abspiel",
+            "fr": "Ligne du pion roi",
+            "it": "Linea del pedone di re"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line",
@@ -291,17 +441,29 @@
     },
     {
       "names": {
-        "en": "Four Pawns Attack",
+        "en-US": "Four Pawns Attack",
         "pt-BR": "Ataque dos Quatro Peões",
-        "es": "Ataque de los Cuatro Peones"
+        "es-419": "Ataque de los Cuatro Peones",
+        "en-GB": "Four Pawns Attack",
+        "es-ES": "Ataque de los Cuatro Peones",
+        "pt-PT": "Ataque dos Quatro Peões",
+        "de": "Vierbauernangriff",
+        "fr": "Attaque des quatre pions",
+        "it": "Attacco dei quattro pedoni"
       },
       "lines": [
         {
           "id": "line-f93611c5eed9f707",
           "names": {
-            "en": "Four Pawns Attack",
+            "en-US": "Four Pawns Attack",
             "pt-BR": "Ataque dos Quatro Peões",
-            "es": "Ataque de los Cuatro Peones"
+            "es-419": "Ataque de los Cuatro Peones",
+            "en-GB": "Four Pawns Attack",
+            "es-ES": "Ataque de los Cuatro Peones",
+            "pt-PT": "Ataque dos Quatro Peões",
+            "de": "Vierbauernangriff",
+            "fr": "Attaque des quatre pions",
+            "it": "Attacco dei quattro pedoni"
           },
           "eco": "A68",
           "opening": "Benoni Defense: Four Pawns Attack",
@@ -311,9 +473,15 @@
         {
           "id": "line-374862a5dea6284b",
           "names": {
-            "en": "Four Pawns Attack",
+            "en-US": "Four Pawns Attack",
             "pt-BR": "Ataque dos Quatro Peões",
-            "es": "Ataque de los Cuatro Peones"
+            "es-419": "Ataque de los Cuatro Peones",
+            "en-GB": "Four Pawns Attack",
+            "es-ES": "Ataque de los Cuatro Peones",
+            "pt-PT": "Ataque dos Quatro Peões",
+            "de": "Vierbauernangriff",
+            "fr": "Attaque des quatre pions",
+            "it": "Attacco dei quattro pedoni"
           },
           "eco": "A68",
           "opening": "Benoni Defense: Four Pawns Attack",
@@ -323,9 +491,15 @@
         {
           "id": "line-af57e844627f6f2c",
           "names": {
-            "en": "Four Pawns Attack, Main Line",
+            "en-US": "Four Pawns Attack, Main Line",
             "pt-BR": "Ataque dos Quatro Peões, Linha Principal",
-            "es": "Ataque de los Cuatro Peones, Línea Principal"
+            "es-419": "Ataque de los Cuatro Peones, Línea Principal",
+            "en-GB": "Four Pawns Attack, Main Line",
+            "es-ES": "Ataque de los Cuatro Peones, Línea Principal",
+            "pt-PT": "Ataque dos Quatro Peões, Linha Principal",
+            "de": "Vierbauernangriff, Hauptvariante",
+            "fr": "Attaque des quatre pions, Ligne principale",
+            "it": "Attacco dei quattro pedoni, Linea principale"
           },
           "eco": "A69",
           "opening": "Benoni Defense: Four Pawns Attack, Main Line",
@@ -335,9 +509,15 @@
         {
           "id": "line-e78085d7c48fa642",
           "names": {
-            "en": "Four Pawns Attack, Main Line",
+            "en-US": "Four Pawns Attack, Main Line",
             "pt-BR": "Ataque dos Quatro Peões, Linha Principal",
-            "es": "Ataque de los Cuatro Peones, Línea Principal"
+            "es-419": "Ataque de los Cuatro Peones, Línea Principal",
+            "en-GB": "Four Pawns Attack, Main Line",
+            "es-ES": "Ataque de los Cuatro Peones, Línea Principal",
+            "pt-PT": "Ataque dos Quatro Peões, Linha Principal",
+            "de": "Vierbauernangriff, Hauptvariante",
+            "fr": "Attaque des quatre pions, Ligne principale",
+            "it": "Attacco dei quattro pedoni, Linea principale"
           },
           "eco": "A69",
           "opening": "Benoni Defense: Four Pawns Attack, Main Line",
@@ -347,9 +527,15 @@
         {
           "id": "line-dcb199201f7e89d9",
           "names": {
-            "en": "Four Pawns Attack, Main Line",
+            "en-US": "Four Pawns Attack, Main Line",
             "pt-BR": "Ataque dos Quatro Peões, Linha Principal",
-            "es": "Ataque de los Cuatro Peones, Línea Principal"
+            "es-419": "Ataque de los Cuatro Peones, Línea Principal",
+            "en-GB": "Four Pawns Attack, Main Line",
+            "es-ES": "Ataque de los Cuatro Peones, Línea Principal",
+            "pt-PT": "Ataque dos Quatro Peões, Linha Principal",
+            "de": "Vierbauernangriff, Hauptvariante",
+            "fr": "Attaque des quatre pions, Ligne principale",
+            "it": "Attacco dei quattro pedoni, Linea principale"
           },
           "eco": "A69",
           "opening": "Benoni Defense: Four Pawns Attack, Main Line",
@@ -359,9 +545,15 @@
         {
           "id": "line-7c7ac4bb7e12081b",
           "names": {
-            "en": "Four Pawns Attack, Main Line",
+            "en-US": "Four Pawns Attack, Main Line",
             "pt-BR": "Ataque dos Quatro Peões, Linha Principal",
-            "es": "Ataque de los Cuatro Peones, Línea Principal"
+            "es-419": "Ataque de los Cuatro Peones, Línea Principal",
+            "en-GB": "Four Pawns Attack, Main Line",
+            "es-ES": "Ataque de los Cuatro Peones, Línea Principal",
+            "pt-PT": "Ataque dos Quatro Peões, Linha Principal",
+            "de": "Vierbauernangriff, Hauptvariante",
+            "fr": "Attaque des quatre pions, Ligne principale",
+            "it": "Attacco dei quattro pedoni, Linea principale"
           },
           "eco": "A69",
           "opening": "Benoni Defense: Four Pawns Attack, Main Line",
@@ -372,17 +564,29 @@
     },
     {
       "names": {
-        "en": "Old Benoni",
+        "en-US": "Old Benoni",
         "pt-BR": "Benoni Antiga",
-        "es": "Benoni Antigua"
+        "es-419": "Benoni Antigua",
+        "en-GB": "Old Benoni",
+        "es-ES": "Benoni Antigua",
+        "pt-PT": "Benoni Antiga",
+        "de": "Altes Benoni",
+        "fr": "Vieille Benoni",
+        "it": "Vecchia Benoni"
       },
       "lines": [
         {
           "id": "line-f8f8d80dda095965",
           "names": {
-            "en": "Old Benoni",
+            "en-US": "Old Benoni",
             "pt-BR": "Benoni Antiga",
-            "es": "Benoni Antigua"
+            "es-419": "Benoni Antigua",
+            "en-GB": "Old Benoni",
+            "es-ES": "Benoni Antigua",
+            "pt-PT": "Benoni Antiga",
+            "de": "Altes Benoni",
+            "fr": "Vieille Benoni",
+            "it": "Vecchia Benoni"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Old Benoni",
@@ -392,9 +596,15 @@
         {
           "id": "line-46f3ff8b5492ce8c",
           "names": {
-            "en": "Old Benoni",
+            "en-US": "Old Benoni",
             "pt-BR": "Benoni Antiga",
-            "es": "Benoni Antigua"
+            "es-419": "Benoni Antigua",
+            "en-GB": "Old Benoni",
+            "es-ES": "Benoni Antigua",
+            "pt-PT": "Benoni Antiga",
+            "de": "Altes Benoni",
+            "fr": "Vieille Benoni",
+            "it": "Vecchia Benoni"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Old Benoni",
@@ -404,9 +614,15 @@
         {
           "id": "line-0ae7290be72c434e",
           "names": {
-            "en": "Old Benoni",
+            "en-US": "Old Benoni",
             "pt-BR": "Benoni Antiga",
-            "es": "Benoni Antigua"
+            "es-419": "Benoni Antigua",
+            "en-GB": "Old Benoni",
+            "es-ES": "Benoni Antigua",
+            "pt-PT": "Benoni Antiga",
+            "de": "Altes Benoni",
+            "fr": "Vieille Benoni",
+            "it": "Vecchia Benoni"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Old Benoni",
@@ -416,9 +632,15 @@
         {
           "id": "line-648dd5f64ee3eae6",
           "names": {
-            "en": "Old Benoni, Schmid Variation",
+            "en-US": "Old Benoni, Schmid Variation",
             "pt-BR": "Benoni Antiga, Variante Schmid",
-            "es": "Benoni Antigua, Variante Schmid"
+            "es-419": "Benoni Antigua, Variante Schmid",
+            "en-GB": "Old Benoni, Schmid Variation",
+            "es-ES": "Benoni Antigua, Variante Schmid",
+            "pt-PT": "Benoni Antiga, Variante Schmid",
+            "de": "Altes Benoni, Schmid-Variante",
+            "fr": "Vieille Benoni, Variante Schmid",
+            "it": "Vecchia Benoni, Variante Schmid"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Old Benoni, Schmid Variation",
@@ -428,9 +650,15 @@
         {
           "id": "line-154ccce6838d8408",
           "names": {
-            "en": "Old Benoni",
+            "en-US": "Old Benoni",
             "pt-BR": "Benoni Antiga",
-            "es": "Benoni Antigua"
+            "es-419": "Benoni Antigua",
+            "en-GB": "Old Benoni",
+            "es-ES": "Benoni Antigua",
+            "pt-PT": "Benoni Antiga",
+            "de": "Altes Benoni",
+            "fr": "Vieille Benoni",
+            "it": "Vecchia Benoni"
           },
           "eco": "A44",
           "opening": "Benoni Defense: Old Benoni",
@@ -440,9 +668,15 @@
         {
           "id": "line-8429c259d9b57920",
           "names": {
-            "en": "Old Benoni, Mujannah Formation",
+            "en-US": "Old Benoni, Mujannah Formation",
             "pt-BR": "Benoni Antiga, Formação Mujannah",
-            "es": "Benoni Antigua, Formación Mujannah"
+            "es-419": "Benoni Antigua, Formación Mujannah",
+            "en-GB": "Old Benoni, Mujannah Formation",
+            "es-ES": "Benoni Antigua, Formación Mujannah",
+            "pt-PT": "Benoni Antiga, Formação Mujannah",
+            "de": "Altes Benoni, Mujannah-Aufbau",
+            "fr": "Vieille Benoni, Formation Mujannah",
+            "it": "Vecchia Benoni, Formazione Mujannah"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Old Benoni, Mujannah Formation",
@@ -453,17 +687,29 @@
     },
     {
       "names": {
-        "en": "Fianchetto Variation",
+        "en-US": "Fianchetto Variation",
         "pt-BR": "Variante do Fianqueto",
-        "es": "Variante del Fianchetto"
+        "es-419": "Variante del Fianchetto",
+        "en-GB": "Fianchetto Variation",
+        "es-ES": "Variante del Fianchetto",
+        "pt-PT": "Variante do Fianqueto",
+        "de": "Fianchetto-Variante",
+        "fr": "Variante du fianchetto",
+        "it": "Variante del fianchetto"
       },
       "lines": [
         {
           "id": "line-963bc752dc1920b3",
           "names": {
-            "en": "Fianchetto Variation",
+            "en-US": "Fianchetto Variation",
             "pt-BR": "Variante do Fianqueto",
-            "es": "Variante del Fianchetto"
+            "es-419": "Variante del Fianchetto",
+            "en-GB": "Fianchetto Variation",
+            "es-ES": "Variante del Fianchetto",
+            "pt-PT": "Variante do Fianqueto",
+            "de": "Fianchetto-Variante",
+            "fr": "Variante du fianchetto",
+            "it": "Variante del fianchetto"
           },
           "eco": "A61",
           "opening": "Benoni Defense: Fianchetto Variation",
@@ -473,9 +719,15 @@
         {
           "id": "line-5c60f3a871188822",
           "names": {
-            "en": "Fianchetto Variation",
+            "en-US": "Fianchetto Variation",
             "pt-BR": "Variante do Fianqueto",
-            "es": "Variante del Fianchetto"
+            "es-419": "Variante del Fianchetto",
+            "en-GB": "Fianchetto Variation",
+            "es-ES": "Variante del Fianchetto",
+            "pt-PT": "Variante do Fianqueto",
+            "de": "Fianchetto-Variante",
+            "fr": "Variante du fianchetto",
+            "it": "Variante del fianchetto"
           },
           "eco": "A62",
           "opening": "Benoni Defense: Fianchetto Variation",
@@ -485,9 +737,15 @@
         {
           "id": "line-32a71043871a20e4",
           "names": {
-            "en": "Fianchetto Variation, Hastings Defense",
+            "en-US": "Fianchetto Variation, Hastings Defense",
             "pt-BR": "Variante do Fianqueto, Defesa Hastings",
-            "es": "Variante del Fianchetto, Defensa Hastings"
+            "es-419": "Variante del Fianchetto, Defensa Hastings",
+            "en-GB": "Fianchetto Variation, Hastings Defence",
+            "es-ES": "Variante del Fianchetto, Defensa Hastings",
+            "pt-PT": "Variante do Fianqueto, Defesa Hastings",
+            "de": "Fianchetto-Variante, Hastings-Verteidigung",
+            "fr": "Variante du fianchetto, Défense Hastings",
+            "it": "Variante del fianchetto, Difesa Hastings"
           },
           "eco": "A63",
           "opening": "Benoni Defense: Fianchetto Variation, Hastings Defense",
@@ -497,9 +755,15 @@
         {
           "id": "line-3edb917af9718856",
           "names": {
-            "en": "Fianchetto Variation, Hastings Defense, Main Line",
+            "en-US": "Fianchetto Variation, Hastings Defense, Main Line",
             "pt-BR": "Variante do Fianqueto, Defesa Hastings, Linha Principal",
-            "es": "Variante del Fianchetto, Defensa Hastings, Línea Principal"
+            "es-419": "Variante del Fianchetto, Defensa Hastings, Línea Principal",
+            "en-GB": "Fianchetto Variation, Hastings Defence, Main Line",
+            "es-ES": "Variante del Fianchetto, Defensa Hastings, Línea Principal",
+            "pt-PT": "Variante do Fianqueto, Defesa Hastings, Linha Principal",
+            "de": "Fianchetto-Variante, Hastings-Verteidigung, Hauptvariante",
+            "fr": "Variante du fianchetto, Défense Hastings, Ligne principale",
+            "it": "Variante del fianchetto, Difesa Hastings, Linea principale"
           },
           "eco": "A64",
           "opening": "Benoni Defense: Fianchetto Variation, Hastings Defense, Main Line",
@@ -510,17 +774,29 @@
     },
     {
       "names": {
-        "en": "Zilbermints-Benoni Gambit",
+        "en-US": "Zilbermints-Benoni Gambit",
         "pt-BR": "Gambito Zilbermints-Benoni",
-        "es": "Gambito Zilbermints-Benoni"
+        "es-419": "Gambito Zilbermints-Benoni",
+        "en-GB": "Zilbermints-Benoni Gambit",
+        "es-ES": "Gambito Zilbermints-Benoni",
+        "pt-PT": "Gambito Zilbermints-Benoni",
+        "de": "Zilbermints-Benoni-Gambit",
+        "fr": "Gambit Zilbermints-Benoni",
+        "it": "Gambetto Zilbermints-Benoni"
       },
       "lines": [
         {
           "id": "line-9cfd343ce7f34b8e",
           "names": {
-            "en": "Zilbermints-Benoni Gambit",
+            "en-US": "Zilbermints-Benoni Gambit",
             "pt-BR": "Gambito Zilbermints-Benoni",
-            "es": "Gambito Zilbermints-Benoni"
+            "es-419": "Gambito Zilbermints-Benoni",
+            "en-GB": "Zilbermints-Benoni Gambit",
+            "es-ES": "Gambito Zilbermints-Benoni",
+            "pt-PT": "Gambito Zilbermints-Benoni",
+            "de": "Zilbermints-Benoni-Gambit",
+            "fr": "Gambit Zilbermints-Benoni",
+            "it": "Gambetto Zilbermints-Benoni"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Zilbermints-Benoni Gambit",
@@ -530,9 +806,15 @@
         {
           "id": "line-87f60142feba7ec4",
           "names": {
-            "en": "Zilbermints-Benoni Gambit, Tamarkin Countergambit",
+            "en-US": "Zilbermints-Benoni Gambit, Tamarkin Countergambit",
             "pt-BR": "Gambito Zilbermints-Benoni, Contragambito Tamarkin",
-            "es": "Gambito Zilbermints-Benoni, Contragambito Tamarkin"
+            "es-419": "Gambito Zilbermints-Benoni, Contragambito Tamarkin",
+            "en-GB": "Zilbermints-Benoni Gambit, Tamarkin Countergambit",
+            "es-ES": "Gambito Zilbermints-Benoni, Contragambito Tamarkin",
+            "pt-PT": "Gambito Zilbermints-Benoni, Contragambito Tamarkin",
+            "de": "Zilbermints-Benoni-Gambit, Tamarkin-Gegengambit",
+            "fr": "Gambit Zilbermints-Benoni, Contre-gambit Tamarkin",
+            "it": "Gambetto Zilbermints-Benoni, Controgambetto Tamarkin"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Zilbermints-Benoni Gambit, Tamarkin Countergambit",
@@ -542,9 +824,15 @@
         {
           "id": "line-5cdd6e54a7c75d53",
           "names": {
-            "en": "Zilbermints-Benoni Gambit",
+            "en-US": "Zilbermints-Benoni Gambit",
             "pt-BR": "Gambito Zilbermints-Benoni",
-            "es": "Gambito Zilbermints-Benoni"
+            "es-419": "Gambito Zilbermints-Benoni",
+            "en-GB": "Zilbermints-Benoni Gambit",
+            "es-ES": "Gambito Zilbermints-Benoni",
+            "pt-PT": "Gambito Zilbermints-Benoni",
+            "de": "Zilbermints-Benoni-Gambit",
+            "fr": "Gambit Zilbermints-Benoni",
+            "it": "Gambetto Zilbermints-Benoni"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Zilbermints-Benoni Gambit",
@@ -555,17 +843,29 @@
     },
     {
       "names": {
-        "en": "Benoni-Indian Defense",
+        "en-US": "Benoni-Indian Defense",
         "pt-BR": "Defesa Benoni-Índia",
-        "es": "Defensa Benoni-India"
+        "es-419": "Defensa Benoni-India",
+        "en-GB": "Benoni-Indian Defence",
+        "es-ES": "Defensa Benoni-India",
+        "pt-PT": "Defesa Benoni-Índia",
+        "de": "Benoni-Indische Verteidigung",
+        "fr": "Défense Benoni-indienne",
+        "it": "Difesa Benoni-indiana"
       },
       "lines": [
         {
           "id": "line-85a8e49c736d9eca",
           "names": {
-            "en": "Benoni-Indian Defense",
+            "en-US": "Benoni-Indian Defense",
             "pt-BR": "Defesa Benoni-Índia",
-            "es": "Defensa Benoni-India"
+            "es-419": "Defensa Benoni-India",
+            "en-GB": "Benoni-Indian Defence",
+            "es-ES": "Defensa Benoni-India",
+            "pt-PT": "Defesa Benoni-Índia",
+            "de": "Benoni-Indische Verteidigung",
+            "fr": "Défense Benoni-indienne",
+            "it": "Difesa Benoni-indiana"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Benoni-Indian Defense",
@@ -575,9 +875,15 @@
         {
           "id": "line-376ee525ebbd2ac6",
           "names": {
-            "en": "Benoni-Indian Defense, Kingside Move Order",
+            "en-US": "Benoni-Indian Defense, Kingside Move Order",
             "pt-BR": "Defesa Benoni-Índia, Ordem de Lances pela Ala do Rei",
-            "es": "Defensa Benoni-India, Orden de Jugadas por el Flanco de Rey"
+            "es-419": "Defensa Benoni-India, Orden de Jugadas por el Flanco de Rey",
+            "en-GB": "Benoni-Indian Defence, Kingside Move Order",
+            "es-ES": "Defensa Benoni-India, Orden de Jugadas por el Flanco de Rey",
+            "pt-PT": "Defesa Benoni-Índia, Ordem de Lances pela Ala do Rei",
+            "de": "Benoni-Indische Verteidigung, Zugfolge am Königsflügel",
+            "fr": "Défense Benoni-indienne, Ordre de coups à l'aile roi",
+            "it": "Difesa Benoni-indiana, Ordine di mosse sull'ala di re"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Benoni-Indian Defense, Kingside Move Order",
@@ -588,17 +894,29 @@
     },
     {
       "names": {
-        "en": "Main",
+        "en-US": "Main",
         "pt-BR": "Principal",
-        "es": "Principal"
+        "es-419": "Principal",
+        "en-GB": "Main",
+        "es-ES": "Principal",
+        "pt-PT": "Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-4e5beea0ecf11b39",
           "names": {
-            "en": "Benoni Defense",
+            "en-US": "Benoni Defense",
             "pt-BR": "Defesa Benoni",
-            "es": "Defensa Benoni"
+            "es-419": "Defensa Benoni",
+            "en-GB": "Benoni Defence",
+            "es-ES": "Defensa Benoni",
+            "pt-PT": "Defesa Benoni",
+            "de": "Benoni-Verteidigung",
+            "fr": "Défense Benoni",
+            "it": "Difesa Benoni"
           },
           "eco": "A56",
           "opening": "Benoni Defense",
@@ -608,9 +926,15 @@
         {
           "id": "line-9dd9613c97689b8b",
           "names": {
-            "en": "Benoni Defense",
+            "en-US": "Benoni Defense",
             "pt-BR": "Defesa Benoni",
-            "es": "Defensa Benoni"
+            "es-419": "Defensa Benoni",
+            "en-GB": "Benoni Defence",
+            "es-ES": "Defensa Benoni",
+            "pt-PT": "Defesa Benoni",
+            "de": "Benoni-Verteidigung",
+            "fr": "Défense Benoni",
+            "it": "Difesa Benoni"
           },
           "eco": "A61",
           "opening": "Benoni Defense",
@@ -621,17 +945,29 @@
     },
     {
       "names": {
-        "en": "Modern Variation",
+        "en-US": "Modern Variation",
         "pt-BR": "Variante Moderna",
-        "es": "Variante Moderna"
+        "es-419": "Variante Moderna",
+        "en-GB": "Modern Variation",
+        "es-ES": "Variante Moderna",
+        "pt-PT": "Variante Moderna",
+        "de": "Moderne Variante",
+        "fr": "Variante moderne",
+        "it": "Variante moderna"
       },
       "lines": [
         {
           "id": "line-92eba592cf87c649",
           "names": {
-            "en": "Modern Variation",
+            "en-US": "Modern Variation",
             "pt-BR": "Variante Moderna",
-            "es": "Variante Moderna"
+            "es-419": "Variante Moderna",
+            "en-GB": "Modern Variation",
+            "es-ES": "Variante Moderna",
+            "pt-PT": "Variante Moderna",
+            "de": "Moderne Variante",
+            "fr": "Variante moderne",
+            "it": "Variante moderna"
           },
           "eco": "A60",
           "opening": "Benoni Defense: Modern Variation",
@@ -641,9 +977,15 @@
         {
           "id": "line-e5797272de80a0cf",
           "names": {
-            "en": "Modern Variation, Snake Variation",
+            "en-US": "Modern Variation, Snake Variation",
             "pt-BR": "Variante Moderna, Variante Cobra",
-            "es": "Variante Moderna, Variante Serpiente"
+            "es-419": "Variante Moderna, Variante Serpiente",
+            "en-GB": "Modern Variation, Snake Variation",
+            "es-ES": "Variante Moderna, Variante Serpiente",
+            "pt-PT": "Variante Moderna, Variante Cobra",
+            "de": "Moderne Variante, Schlangenvariante",
+            "fr": "Variante moderne, Variante du serpent",
+            "it": "Variante moderna, Variante del serpente"
           },
           "eco": "A60",
           "opening": "Benoni Defense: Modern Variation, Snake Variation",
@@ -657,9 +999,15 @@
     {
       "id": "line-eccd0fc418d0c773",
       "names": {
-        "en": "Benoni Gambit, Schlenker Defense",
+        "en-US": "Benoni Gambit, Schlenker Defense",
         "pt-BR": "Gambito Benoni, Defesa Schlenker",
-        "es": "Gambito Benoni, Defensa Schlenker"
+        "es-419": "Gambito Benoni, Defensa Schlenker",
+        "en-GB": "Benoni Gambit, Schlenker Defence",
+        "es-ES": "Gambito Benoni, Defensa Schlenker",
+        "pt-PT": "Gambito Benoni, Defesa Schlenker",
+        "de": "Benoni-Gambit, Schlenker-Verteidigung",
+        "fr": "Gambit Benoni, Défense Schlenker",
+        "it": "Gambetto Benoni, Difesa Schlenker"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Benoni Gambit, Schlenker Defense",
@@ -669,9 +1017,15 @@
     {
       "id": "line-41746249becdfc14",
       "names": {
-        "en": "Benoni Gambit Accepted",
+        "en-US": "Benoni Gambit Accepted",
         "pt-BR": "Gambito Benoni Aceito",
-        "es": "Gambito Benoni Aceptado"
+        "es-419": "Gambito Benoni Aceptado",
+        "en-GB": "Benoni Gambit Accepted",
+        "es-ES": "Gambito Benoni Aceptado",
+        "pt-PT": "Gambito Benoni Aceito",
+        "de": "Angenommenes Benoni-Gambit",
+        "fr": "Gambit Benoni accepté",
+        "it": "Gambetto Benoni accettato"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Benoni Gambit Accepted",
@@ -681,9 +1035,15 @@
     {
       "id": "line-c456ab81f06f0d11",
       "names": {
-        "en": "Benoni-Staunton Gambit",
+        "en-US": "Benoni-Staunton Gambit",
         "pt-BR": "Gambito Benoni-Staunton",
-        "es": "Gambito Benoni-Staunton"
+        "es-419": "Gambito Benoni-Staunton",
+        "en-GB": "Benoni-Staunton Gambit",
+        "es-ES": "Gambito Benoni-Staunton",
+        "pt-PT": "Gambito Benoni-Staunton",
+        "de": "Benoni-Staunton-Gambit",
+        "fr": "Gambit Benoni-Staunton",
+        "it": "Gambetto Benoni-Staunton"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Benoni-Staunton Gambit",
@@ -693,9 +1053,15 @@
     {
       "id": "line-cd3554b4c900edcf",
       "names": {
-        "en": "Cormorant Gambit",
+        "en-US": "Cormorant Gambit",
         "pt-BR": "Gambito Cormorão",
-        "es": "Gambito Cormorán"
+        "es-419": "Gambito Cormorán",
+        "en-GB": "Cormorant Gambit",
+        "es-ES": "Gambito Cormorán",
+        "pt-PT": "Gambito Cormorão",
+        "de": "Kormoran-Gambit",
+        "fr": "Gambit du cormoran",
+        "it": "Gambetto del cormorano"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Cormorant Gambit",
@@ -705,9 +1071,15 @@
     {
       "id": "line-b8a4aa4bdb58ed28",
       "names": {
-        "en": "Czech Benoni Defense",
+        "en-US": "Czech Benoni Defense",
         "pt-BR": "Defesa Benoni Tcheca",
-        "es": "Defensa Benoni Checa"
+        "es-419": "Defensa Benoni Checa",
+        "en-GB": "Czech Benoni Defence",
+        "es-ES": "Defensa Benoni Checa",
+        "pt-PT": "Defesa Benoni Checa",
+        "de": "Tschechische Benoni-Verteidigung",
+        "fr": "Défense Benoni tchèque",
+        "it": "Difesa Benoni ceca"
       },
       "eco": "A56",
       "opening": "Benoni Defense: Czech Benoni Defense",
@@ -717,9 +1089,15 @@
     {
       "id": "line-d4e9defb5f4e508c",
       "names": {
-        "en": "Franco-Sicilian Hybrid",
+        "en-US": "Franco-Sicilian Hybrid",
         "pt-BR": "Híbrido Franco-Siciliano",
-        "es": "Híbrido Franco-Siciliano"
+        "es-419": "Híbrido Franco-Siciliano",
+        "en-GB": "Franco-Sicilian Hybrid",
+        "es-ES": "Híbrido Franco-Siciliano",
+        "pt-PT": "Híbrido Franco-Siciliano",
+        "de": "Französisch-Sizilianischer Hybrid",
+        "fr": "Hybride franco-sicilien",
+        "it": "Ibrido franco-siciliano"
       },
       "eco": "A40",
       "opening": "Benoni Defense: Franco-Sicilian Hybrid",
@@ -729,9 +1107,15 @@
     {
       "id": "line-4aef92df2fb194ad",
       "names": {
-        "en": "French Benoni",
+        "en-US": "French Benoni",
         "pt-BR": "Benoni Francesa",
-        "es": "Benoni Francesa"
+        "es-419": "Benoni Francesa",
+        "en-GB": "French Benoni",
+        "es-ES": "Benoni Francesa",
+        "pt-PT": "Benoni Francesa",
+        "de": "Französisches Benoni",
+        "fr": "Benoni française",
+        "it": "Benoni francese"
       },
       "eco": "A43",
       "opening": "Benoni Defense: French Benoni",
@@ -741,9 +1125,15 @@
     {
       "id": "line-15ef36eb80bac40e",
       "names": {
-        "en": "Hawk Variation",
+        "en-US": "Hawk Variation",
         "pt-BR": "Variante Falcão",
-        "es": "Variante Halcón"
+        "es-419": "Variante Halcón",
+        "en-GB": "Hawk Variation",
+        "es-ES": "Variante Halcón",
+        "pt-PT": "Variante Falcão",
+        "de": "Falken-Variante",
+        "fr": "Variante du faucon",
+        "it": "Variante del falco"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Hawk Variation",
@@ -753,9 +1143,15 @@
     {
       "id": "line-555d46955fa44c51",
       "names": {
-        "en": "Hromádka System",
+        "en-US": "Hromádka System",
         "pt-BR": "Sistema Hromádka",
-        "es": "Sistema Hromádka"
+        "es-419": "Sistema Hromádka",
+        "en-GB": "Hromádka System",
+        "es-ES": "Sistema Hromádka",
+        "pt-PT": "Sistema Hromádka",
+        "de": "Hromádka-System",
+        "fr": "Système Hromádka",
+        "it": "Sistema Hromádka"
       },
       "eco": "A56",
       "opening": "Benoni Defense: Hromádka System",
@@ -765,9 +1161,15 @@
     {
       "id": "line-20829ca04beac5d3",
       "names": {
-        "en": "King's Indian System",
+        "en-US": "King's Indian System",
         "pt-BR": "Sistema Índio do Rei",
-        "es": "Sistema Indio de Rey"
+        "es-419": "Sistema Indio de Rey",
+        "en-GB": "King's Indian System",
+        "es-ES": "Sistema Indio de Rey",
+        "pt-PT": "Sistema Índio do Rei",
+        "de": "Königsindisches System",
+        "fr": "Système est-indien",
+        "it": "Sistema est-indiano"
       },
       "eco": "A56",
       "opening": "Benoni Defense: King's Indian System",
@@ -777,9 +1179,15 @@
     {
       "id": "line-a3d5af5a1b922d6e",
       "names": {
-        "en": "Knight's Tour Variation",
+        "en-US": "Knight's Tour Variation",
         "pt-BR": "Variante do Passeio do Cavalo",
-        "es": "Variante del Recorrido del Caballo"
+        "es-419": "Variante del Recorrido del Caballo",
+        "en-GB": "Knight's Tour Variation",
+        "es-ES": "Variante del Recorrido del Caballo",
+        "pt-PT": "Variante do Passeio do Cavalo",
+        "de": "Rösselsprung-Variante",
+        "fr": "Variante de la course du cavalier",
+        "it": "Variante del giro del cavallo"
       },
       "eco": "A61",
       "opening": "Benoni Defense: Knight's Tour Variation",
@@ -789,9 +1197,15 @@
     {
       "id": "line-c3d8925bac1c62db",
       "names": {
-        "en": "Mikenas Variation",
+        "en-US": "Mikenas Variation",
         "pt-BR": "Variante Mikenas",
-        "es": "Variante Mikenas"
+        "es-419": "Variante Mikenas",
+        "en-GB": "Mikenas Variation",
+        "es-ES": "Variante Mikenas",
+        "pt-PT": "Variante Mikenas",
+        "de": "Mikenas-Variante",
+        "fr": "Variante Mikenas",
+        "it": "Variante Mikenas"
       },
       "eco": "A66",
       "opening": "Benoni Defense: Mikenas Variation",
@@ -801,9 +1215,15 @@
     {
       "id": "line-14d27f8085acd92d",
       "names": {
-        "en": "Pawn Storm Variation",
+        "en-US": "Pawn Storm Variation",
         "pt-BR": "Variante da Avalanche de Peões",
-        "es": "Variante de la Avalancha de Peones"
+        "es-419": "Variante de la Avalancha de Peones",
+        "en-GB": "Pawn Storm Variation",
+        "es-ES": "Variante de la Avalancha de Peones",
+        "pt-PT": "Variante da Avalanche de Peões",
+        "de": "Bauernsturm-Variante",
+        "fr": "Variante de l'assaut de pions",
+        "it": "Variante dell'assalto di pedoni"
       },
       "eco": "A66",
       "opening": "Benoni Defense: Pawn Storm Variation",
@@ -813,9 +1233,15 @@
     {
       "id": "line-20879b8dccfa3c38",
       "names": {
-        "en": "Semi-Benoni",
+        "en-US": "Semi-Benoni",
         "pt-BR": "Semi-Benoni",
-        "es": "Semi-Benoni"
+        "es-419": "Semi-Benoni",
+        "en-GB": "Semi-Benoni",
+        "es-ES": "Semi-Benoni",
+        "pt-PT": "Semi-Benoni",
+        "de": "Halb-Benoni",
+        "fr": "Semi-Benoni",
+        "it": "Semi-Benoni"
       },
       "eco": "A44",
       "opening": "Benoni Defense: Semi-Benoni",
@@ -825,9 +1251,15 @@
     {
       "id": "line-aca45fdd105d7fc5",
       "names": {
-        "en": "Snail Variation",
+        "en-US": "Snail Variation",
         "pt-BR": "Variante Caracol",
-        "es": "Variante Caracol"
+        "es-419": "Variante Caracol",
+        "en-GB": "Snail Variation",
+        "es-ES": "Variante Caracol",
+        "pt-PT": "Variante Caracol",
+        "de": "Schneckenvariante",
+        "fr": "Variante de l'escargot",
+        "it": "Variante della lumaca"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Snail Variation",
@@ -837,9 +1269,15 @@
     {
       "id": "line-6ea1d454440a19e4",
       "names": {
-        "en": "Taimanov Variation",
+        "en-US": "Taimanov Variation",
         "pt-BR": "Variante Taimanov",
-        "es": "Variante Taimanov"
+        "es-419": "Variante Taimanov",
+        "en-GB": "Taimanov Variation",
+        "es-ES": "Variante Taimanov",
+        "pt-PT": "Variante Taimanov",
+        "de": "Taimanow-Variante",
+        "fr": "Variante Taïmanov",
+        "it": "Variante Tajmanov"
       },
       "eco": "A67",
       "opening": "Benoni Defense: Taimanov Variation",
@@ -849,9 +1287,15 @@
     {
       "id": "line-3900732f6d4a0bb2",
       "names": {
-        "en": "Uhlmann Variation",
+        "en-US": "Uhlmann Variation",
         "pt-BR": "Variante Uhlmann",
-        "es": "Variante Uhlmann"
+        "es-419": "Variante Uhlmann",
+        "en-GB": "Uhlmann Variation",
+        "es-ES": "Variante Uhlmann",
+        "pt-PT": "Variante Uhlmann",
+        "de": "Uhlmann-Variante",
+        "fr": "Variante Uhlmann",
+        "it": "Variante Uhlmann"
       },
       "eco": "A61",
       "opening": "Benoni Defense: Uhlmann Variation",
@@ -861,9 +1305,15 @@
     {
       "id": "line-aa865ba266952fbf",
       "names": {
-        "en": "Weenink Variation",
+        "en-US": "Weenink Variation",
         "pt-BR": "Variante Weenink",
-        "es": "Variante Weenink"
+        "es-419": "Variante Weenink",
+        "en-GB": "Weenink Variation",
+        "es-ES": "Variante Weenink",
+        "pt-PT": "Variante Weenink",
+        "de": "Weenink-Variante",
+        "fr": "Variante Weenink",
+        "it": "Variante Weenink"
       },
       "eco": "A56",
       "opening": "Benoni Defense: Weenink Variation",
@@ -873,9 +1323,15 @@
     {
       "id": "line-efe13049ccba2896",
       "names": {
-        "en": "Woozle",
+        "en-US": "Woozle",
         "pt-BR": "Woozle",
-        "es": "Woozle"
+        "es-419": "Woozle",
+        "en-GB": "Woozle",
+        "es-ES": "Woozle",
+        "pt-PT": "Woozle",
+        "de": "Woozle",
+        "fr": "Woozle",
+        "it": "Woozle"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Woozle",

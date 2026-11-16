@@ -1,25 +1,43 @@
 {
   "id": "philidor-defense",
   "names": {
-    "en": "Philidor Defense",
+    "en-US": "Philidor Defense",
     "pt-BR": "Defesa Philidor",
-    "es": "Defensa Philidor"
+    "es-419": "Defensa Philidor",
+    "en-GB": "Philidor Defence",
+    "es-ES": "Defensa Philidor",
+    "pt-PT": "Defesa Philidor",
+    "de": "Philidor-Verteidigung",
+    "fr": "Défense Philidor",
+    "it": "Difesa Philidor"
   },
   "order": 14,
   "variants": [
     {
       "names": {
-        "en": "Lion Variation",
+        "en-US": "Lion Variation",
         "pt-BR": "Variante do Leão",
-        "es": "Variante del León"
+        "es-419": "Variante del León",
+        "en-GB": "Lion Variation",
+        "es-ES": "Variante del León",
+        "pt-PT": "Variante do Leão",
+        "de": "Löwenvariante",
+        "fr": "Variante du lion",
+        "it": "Variante del leone"
       },
       "lines": [
         {
           "id": "line-bdec0f2daf627dc5",
           "names": {
-            "en": "Lion Variation, Delayed Bishop Sacrifice",
+            "en-US": "Lion Variation, Delayed Bishop Sacrifice",
             "pt-BR": "Variante do Leão, Sacrifício do Bispo Adiado",
-            "es": "Variante del León, Sacrificio del Alfil Retrasado"
+            "es-419": "Variante del León, Sacrificio del Alfil Retrasado",
+            "en-GB": "Lion Variation, Delayed Bishop Sacrifice",
+            "es-ES": "Variante del León, Sacrificio del Alfil Retrasado",
+            "pt-PT": "Variante do Leão, Sacrifício do Bispo Adiado",
+            "de": "Löwenvariante, Verzögertes Läuferopfer",
+            "fr": "Variante du lion, Sacrifice du fou retardé",
+            "it": "Variante del leone, Sacrificio d'alfiere ritardato"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Lion Variation, Delayed Bishop Sacrifice",
@@ -29,9 +47,15 @@
         {
           "id": "line-f8e572f32e178d8d",
           "names": {
-            "en": "Lion Variation, Sozin Variation",
+            "en-US": "Lion Variation, Sozin Variation",
             "pt-BR": "Variante do Leão, Variante Sozin",
-            "es": "Variante del León, Variante Sozin"
+            "es-419": "Variante del León, Variante Sozin",
+            "en-GB": "Lion Variation, Sozin Variation",
+            "es-ES": "Variante del León, Variante Sozin",
+            "pt-PT": "Variante do Leão, Variante Sozin",
+            "de": "Löwenvariante, Sosin-Variante",
+            "fr": "Variante du lion, Variante Sozine",
+            "it": "Variante del leone, Variante Sozin"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Lion Variation, Sozin Variation",
@@ -41,9 +65,15 @@
         {
           "id": "line-d5f20aa01681cf4c",
           "names": {
-            "en": "Lion Variation, Shirov Gambit",
+            "en-US": "Lion Variation, Shirov Gambit",
             "pt-BR": "Variante do Leão, Gambito Shirov",
-            "es": "Variante del León, Gambito Shirov"
+            "es-419": "Variante del León, Gambito Shirov",
+            "en-GB": "Lion Variation, Shirov Gambit",
+            "es-ES": "Variante del León, Gambito Shirov",
+            "pt-PT": "Variante do Leão, Gambito Shirov",
+            "de": "Löwenvariante, Schirow-Gambit",
+            "fr": "Variante du lion, Gambit Chirov",
+            "it": "Variante del leone, Gambetto Širov"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Lion Variation, Shirov Gambit",
@@ -53,9 +83,15 @@
         {
           "id": "line-cfebd76470de0f2d",
           "names": {
-            "en": "Lion Variation",
+            "en-US": "Lion Variation",
             "pt-BR": "Variante do Leão",
-            "es": "Variante del León"
+            "es-419": "Variante del León",
+            "en-GB": "Lion Variation",
+            "es-ES": "Variante del León",
+            "pt-PT": "Variante do Leão",
+            "de": "Löwenvariante",
+            "fr": "Variante du lion",
+            "it": "Variante del leone"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Lion Variation",
@@ -65,9 +101,15 @@
         {
           "id": "line-63c5d59022042830",
           "names": {
-            "en": "Lion Variation, Bishop Sacrifice",
+            "en-US": "Lion Variation, Bishop Sacrifice",
             "pt-BR": "Variante do Leão, Sacrifício do Bispo",
-            "es": "Variante del León, Sacrificio del Alfil"
+            "es-419": "Variante del León, Sacrificio del Alfil",
+            "en-GB": "Lion Variation, Bishop Sacrifice",
+            "es-ES": "Variante del León, Sacrificio del Alfil",
+            "pt-PT": "Variante do Leão, Sacrifício do Bispo",
+            "de": "Löwenvariante, Läuferopfer",
+            "fr": "Variante du lion, Sacrifice du fou",
+            "it": "Variante del leone, Sacrificio d'alfiere"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Lion Variation, Bishop Sacrifice",
@@ -77,9 +119,15 @@
         {
           "id": "line-44c274b20d7e421c",
           "names": {
-            "en": "Lion Variation, Forcing Line",
+            "en-US": "Lion Variation, Forcing Line",
             "pt-BR": "Variante do Leão, Linha Forçada",
-            "es": "Variante del León, Línea Forzada"
+            "es-419": "Variante del León, Línea Forzada",
+            "en-GB": "Lion Variation, Forcing Line",
+            "es-ES": "Variante del León, Línea Forzada",
+            "pt-PT": "Variante do Leão, Linha Forçada",
+            "de": "Löwenvariante, Forcierendes Abspiel",
+            "fr": "Variante du lion, Ligne forcée",
+            "it": "Variante del leone, Linea forzante"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Lion Variation, Forcing Line",
@@ -89,9 +137,15 @@
         {
           "id": "line-3edd9429fc8bb48e",
           "names": {
-            "en": "Lion Variation, Lion's Claw, with Bc4 and h6",
+            "en-US": "Lion Variation, Lion's Claw, with Bc4 and h6",
             "pt-BR": "Variante do Leão, Garra do Leão, com Bc4 e h6",
-            "es": "Variante del León, Garra del León, con Bc4 y h6"
+            "es-419": "Variante del León, Garra del León, con Bc4 y h6",
+            "en-GB": "Lion Variation, Lion's Claw, with Bc4 and h6",
+            "es-ES": "Variante del León, Garra del León, con Bc4 y h6",
+            "pt-PT": "Variante do Leão, Garra do Leão, com Bc4 e h6",
+            "de": "Löwenvariante, Löwenkralle, mit Bc4 and h6",
+            "fr": "Variante du lion, Griffe du lion, avec Bc4 et h6",
+            "it": "Variante del leone, Artiglio del leone, con Bc4 e h6"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Lion Variation, Lion's Claw, with Bc4 and h6",
@@ -101,9 +155,15 @@
         {
           "id": "line-fb61ecd6984537d5",
           "names": {
-            "en": "Lion Variation, Lion's Claw, with Be2 and c6",
+            "en-US": "Lion Variation, Lion's Claw, with Be2 and c6",
             "pt-BR": "Variante do Leão, Garra do Leão, com Be2 e c6",
-            "es": "Variante del León, Garra del León, con Be2 y c6"
+            "es-419": "Variante del León, Garra del León, con Be2 y c6",
+            "en-GB": "Lion Variation, Lion's Claw, with Be2 and c6",
+            "es-ES": "Variante del León, Garra del León, con Be2 y c6",
+            "pt-PT": "Variante do Leão, Garra do Leão, com Be2 e c6",
+            "de": "Löwenvariante, Löwenkralle, mit Be2 and c6",
+            "fr": "Variante du lion, Griffe du lion, avec Be2 et c6",
+            "it": "Variante del leone, Artiglio del leone, con Be2 e c6"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Lion Variation, Lion's Claw, with Be2 and c6",
@@ -114,17 +174,29 @@
     },
     {
       "names": {
-        "en": "Hanham Variation",
+        "en-US": "Hanham Variation",
         "pt-BR": "Variante Hanham",
-        "es": "Variante Hanham"
+        "es-419": "Variante Hanham",
+        "en-GB": "Hanham Variation",
+        "es-ES": "Variante Hanham",
+        "pt-PT": "Variante Hanham",
+        "de": "Hanham-Variante",
+        "fr": "Variante Hanham",
+        "it": "Variante Hanham"
       },
       "lines": [
         {
           "id": "line-edda874aea4e84d2",
           "names": {
-            "en": "Hanham Variation",
+            "en-US": "Hanham Variation",
             "pt-BR": "Variante Hanham",
-            "es": "Variante Hanham"
+            "es-419": "Variante Hanham",
+            "en-GB": "Hanham Variation",
+            "es-ES": "Variante Hanham",
+            "pt-PT": "Variante Hanham",
+            "de": "Hanham-Variante",
+            "fr": "Variante Hanham",
+            "it": "Variante Hanham"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Hanham Variation",
@@ -134,9 +206,15 @@
         {
           "id": "line-6568f3a15597e7db",
           "names": {
-            "en": "Hanham Variation, Sharp Variation",
+            "en-US": "Hanham Variation, Sharp Variation",
             "pt-BR": "Variante Hanham, Variante Aguda",
-            "es": "Variante Hanham, Variante Aguda"
+            "es-419": "Variante Hanham, Variante Aguda",
+            "en-GB": "Hanham Variation, Sharp Variation",
+            "es-ES": "Variante Hanham, Variante Aguda",
+            "pt-PT": "Variante Hanham, Variante Aguda",
+            "de": "Hanham-Variante, Scharfe Variante",
+            "fr": "Variante Hanham, Variante tranchante",
+            "it": "Variante Hanham, Variante tagliente"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Hanham Variation, Sharp Variation",
@@ -146,9 +224,15 @@
         {
           "id": "line-964e20f965a01bbb",
           "names": {
-            "en": "Hanham Variation, Schlechter Variation",
+            "en-US": "Hanham Variation, Schlechter Variation",
             "pt-BR": "Variante Hanham, Variante Schlechter",
-            "es": "Variante Hanham, Variante Schlechter"
+            "es-419": "Variante Hanham, Variante Schlechter",
+            "en-GB": "Hanham Variation, Schlechter Variation",
+            "es-ES": "Variante Hanham, Variante Schlechter",
+            "pt-PT": "Variante Hanham, Variante Schlechter",
+            "de": "Hanham-Variante, Schlechter-Variante",
+            "fr": "Variante Hanham, Variante Schlechter",
+            "it": "Variante Hanham, Variante Schlechter"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Hanham Variation, Schlechter Variation",
@@ -158,9 +242,15 @@
         {
           "id": "line-3768e9aa3b40f692",
           "names": {
-            "en": "Hanham Variation, Krause Variation",
+            "en-US": "Hanham Variation, Krause Variation",
             "pt-BR": "Variante Hanham, Variante Krause",
-            "es": "Variante Hanham, Variante Krause"
+            "es-419": "Variante Hanham, Variante Krause",
+            "en-GB": "Hanham Variation, Krause Variation",
+            "es-ES": "Variante Hanham, Variante Krause",
+            "pt-PT": "Variante Hanham, Variante Krause",
+            "de": "Hanham-Variante, Krause-Variante",
+            "fr": "Variante Hanham, Variante Krause",
+            "it": "Variante Hanham, Variante Krause"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Hanham Variation, Krause Variation",
@@ -170,9 +260,15 @@
         {
           "id": "line-1558376eaaabb068",
           "names": {
-            "en": "Hanham Variation, Steiner Variation",
+            "en-US": "Hanham Variation, Steiner Variation",
             "pt-BR": "Variante Hanham, Variante Steiner",
-            "es": "Variante Hanham, Variante Steiner"
+            "es-419": "Variante Hanham, Variante Steiner",
+            "en-GB": "Hanham Variation, Steiner Variation",
+            "es-ES": "Variante Hanham, Variante Steiner",
+            "pt-PT": "Variante Hanham, Variante Steiner",
+            "de": "Hanham-Variante, Steiner-Variante",
+            "fr": "Variante Hanham, Variante Steiner",
+            "it": "Variante Hanham, Variante Steiner"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Hanham Variation, Steiner Variation",
@@ -182,9 +278,15 @@
         {
           "id": "line-4f6bdf28186c7b0b",
           "names": {
-            "en": "Hanham Variation, Delmar Variation",
+            "en-US": "Hanham Variation, Delmar Variation",
             "pt-BR": "Variante Hanham, Variante Delmar",
-            "es": "Variante Hanham, Variante Delmar"
+            "es-419": "Variante Hanham, Variante Delmar",
+            "en-GB": "Hanham Variation, Delmar Variation",
+            "es-ES": "Variante Hanham, Variante Delmar",
+            "pt-PT": "Variante Hanham, Variante Delmar",
+            "de": "Hanham-Variante, Delmar-Variante",
+            "fr": "Variante Hanham, Variante Delmar",
+            "it": "Variante Hanham, Variante Delmar"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Hanham Variation, Delmar Variation",
@@ -195,17 +297,29 @@
     },
     {
       "names": {
-        "en": "Nimzowitsch Variation",
+        "en-US": "Nimzowitsch Variation",
         "pt-BR": "Variante Nimzowitsch",
-        "es": "Variante Nimzowitsch"
+        "es-419": "Variante Nimzowitsch",
+        "en-GB": "Nimzowitsch Variation",
+        "es-ES": "Variante Nimzowitsch",
+        "pt-PT": "Variante Nimzowitsch",
+        "de": "Nimzowitsch-Variante",
+        "fr": "Variante Nimzowitsch",
+        "it": "Variante Nimzowitsch"
       },
       "lines": [
         {
           "id": "line-a06a6078f673439b",
           "names": {
-            "en": "Nimzowitsch Variation",
+            "en-US": "Nimzowitsch Variation",
             "pt-BR": "Variante Nimzowitsch",
-            "es": "Variante Nimzowitsch"
+            "es-419": "Variante Nimzowitsch",
+            "en-GB": "Nimzowitsch Variation",
+            "es-ES": "Variante Nimzowitsch",
+            "pt-PT": "Variante Nimzowitsch",
+            "de": "Nimzowitsch-Variante",
+            "fr": "Variante Nimzowitsch",
+            "it": "Variante Nimzowitsch"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Nimzowitsch Variation",
@@ -215,9 +329,15 @@
         {
           "id": "line-f3f217d364c3ed7a",
           "names": {
-            "en": "Nimzowitsch Variation, Klein Variation",
+            "en-US": "Nimzowitsch Variation, Klein Variation",
             "pt-BR": "Variante Nimzowitsch, Variante Klein",
-            "es": "Variante Nimzowitsch, Variante Klein"
+            "es-419": "Variante Nimzowitsch, Variante Klein",
+            "en-GB": "Nimzowitsch Variation, Klein Variation",
+            "es-ES": "Variante Nimzowitsch, Variante Klein",
+            "pt-PT": "Variante Nimzowitsch, Variante Klein",
+            "de": "Nimzowitsch-Variante, Klein-Variante",
+            "fr": "Variante Nimzowitsch, Variante Klein",
+            "it": "Variante Nimzowitsch, Variante Klein"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Nimzowitsch Variation, Klein Variation",
@@ -227,9 +347,15 @@
         {
           "id": "line-c5718ac06ee9d792",
           "names": {
-            "en": "Nimzowitsch Variation",
+            "en-US": "Nimzowitsch Variation",
             "pt-BR": "Variante Nimzowitsch",
-            "es": "Variante Nimzowitsch"
+            "es-419": "Variante Nimzowitsch",
+            "en-GB": "Nimzowitsch Variation",
+            "es-ES": "Variante Nimzowitsch",
+            "pt-PT": "Variante Nimzowitsch",
+            "de": "Nimzowitsch-Variante",
+            "fr": "Variante Nimzowitsch",
+            "it": "Variante Nimzowitsch"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Nimzowitsch Variation",
@@ -239,9 +365,15 @@
         {
           "id": "line-eefd3ee6f8a91814",
           "names": {
-            "en": "Nimzowitsch Variation, Sokolsky Variation",
+            "en-US": "Nimzowitsch Variation, Sokolsky Variation",
             "pt-BR": "Variante Nimzowitsch, Variante Sokolsky",
-            "es": "Variante Nimzowitsch, Variante Sokolsky"
+            "es-419": "Variante Nimzowitsch, Variante Sokolsky",
+            "en-GB": "Nimzowitsch Variation, Sokolsky Variation",
+            "es-ES": "Variante Nimzowitsch, Variante Sokolsky",
+            "pt-PT": "Variante Nimzowitsch, Variante Sokolsky",
+            "de": "Nimzowitsch-Variante, Sokolski-Variante",
+            "fr": "Variante Nimzowitsch, Variante Sokolski",
+            "it": "Variante Nimzowitsch, Variante Sokol'skij"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Nimzowitsch Variation, Sokolsky Variation",
@@ -251,9 +383,15 @@
         {
           "id": "line-9e812b7f4f36a9a3",
           "names": {
-            "en": "Nimzowitsch Variation, Rellstab Variation",
+            "en-US": "Nimzowitsch Variation, Rellstab Variation",
             "pt-BR": "Variante Nimzowitsch, Variante Rellstab",
-            "es": "Variante Nimzowitsch, Variante Rellstab"
+            "es-419": "Variante Nimzowitsch, Variante Rellstab",
+            "en-GB": "Nimzowitsch Variation, Rellstab Variation",
+            "es-ES": "Variante Nimzowitsch, Variante Rellstab",
+            "pt-PT": "Variante Nimzowitsch, Variante Rellstab",
+            "de": "Nimzowitsch-Variante, Rellstab-Variante",
+            "fr": "Variante Nimzowitsch, Variante Rellstab",
+            "it": "Variante Nimzowitsch, Variante Rellstab"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Nimzowitsch Variation, Rellstab Variation",
@@ -264,17 +402,29 @@
     },
     {
       "names": {
-        "en": "Main",
+        "en-US": "Main",
         "pt-BR": "Principal",
-        "es": "Principal"
+        "es-419": "Principal",
+        "en-GB": "Main",
+        "es-ES": "Principal",
+        "pt-PT": "Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-a1b559f0ccbc97bf",
           "names": {
-            "en": "Philidor Defense",
+            "en-US": "Philidor Defense",
             "pt-BR": "Defesa Philidor",
-            "es": "Defensa Philidor"
+            "es-419": "Defensa Philidor",
+            "en-GB": "Philidor Defence",
+            "es-ES": "Defensa Philidor",
+            "pt-PT": "Defesa Philidor",
+            "de": "Philidor-Verteidigung",
+            "fr": "Défense Philidor",
+            "it": "Difesa Philidor"
           },
           "eco": "C41",
           "opening": "Philidor Defense",
@@ -284,9 +434,15 @@
         {
           "id": "line-70127779dc2cebd6",
           "names": {
-            "en": "Philidor Defense",
+            "en-US": "Philidor Defense",
             "pt-BR": "Defesa Philidor",
-            "es": "Defensa Philidor"
+            "es-419": "Defensa Philidor",
+            "en-GB": "Philidor Defence",
+            "es-ES": "Defensa Philidor",
+            "pt-PT": "Defesa Philidor",
+            "de": "Philidor-Verteidigung",
+            "fr": "Défense Philidor",
+            "it": "Difesa Philidor"
           },
           "eco": "C41",
           "opening": "Philidor Defense",
@@ -296,9 +452,15 @@
         {
           "id": "line-26d82310e9ee0812",
           "names": {
-            "en": "Philidor Defense",
+            "en-US": "Philidor Defense",
             "pt-BR": "Defesa Philidor",
-            "es": "Defensa Philidor"
+            "es-419": "Defensa Philidor",
+            "en-GB": "Philidor Defence",
+            "es-ES": "Defensa Philidor",
+            "pt-PT": "Defesa Philidor",
+            "de": "Philidor-Verteidigung",
+            "fr": "Défense Philidor",
+            "it": "Difesa Philidor"
           },
           "eco": "C41",
           "opening": "Philidor Defense",
@@ -308,9 +470,15 @@
         {
           "id": "line-772bd8cf9b6bb29c",
           "names": {
-            "en": "Philidor Defense",
+            "en-US": "Philidor Defense",
             "pt-BR": "Defesa Philidor",
-            "es": "Defensa Philidor"
+            "es-419": "Defensa Philidor",
+            "en-GB": "Philidor Defence",
+            "es-ES": "Defensa Philidor",
+            "pt-PT": "Defesa Philidor",
+            "de": "Philidor-Verteidigung",
+            "fr": "Défense Philidor",
+            "it": "Difesa Philidor"
           },
           "eco": "C41",
           "opening": "Philidor Defense",
@@ -321,17 +489,29 @@
     },
     {
       "names": {
-        "en": "Philidor Countergambit",
+        "en-US": "Philidor Countergambit",
         "pt-BR": "Contragambito Philidor",
-        "es": "Contragambito Philidor"
+        "es-419": "Contragambito Philidor",
+        "en-GB": "Philidor Countergambit",
+        "es-ES": "Contragambito Philidor",
+        "pt-PT": "Contragambito Philidor",
+        "de": "Philidor-Gegengambit",
+        "fr": "Contre-gambit Philidor",
+        "it": "Controgambetto Philidor"
       },
       "lines": [
         {
           "id": "line-e91cf9be9c5fbb7d",
           "names": {
-            "en": "Philidor Countergambit",
+            "en-US": "Philidor Countergambit",
             "pt-BR": "Contragambito Philidor",
-            "es": "Contragambito Philidor"
+            "es-419": "Contragambito Philidor",
+            "en-GB": "Philidor Countergambit",
+            "es-ES": "Contragambito Philidor",
+            "pt-PT": "Contragambito Philidor",
+            "de": "Philidor-Gegengambit",
+            "fr": "Contre-gambit Philidor",
+            "it": "Controgambetto Philidor"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Philidor Countergambit",
@@ -341,9 +521,15 @@
         {
           "id": "line-1583913dcd7a9b1a",
           "names": {
-            "en": "Philidor Countergambit, Zukertort Variation",
+            "en-US": "Philidor Countergambit, Zukertort Variation",
             "pt-BR": "Contragambito Philidor, Variante Zukertort",
-            "es": "Contragambito Philidor, Variante Zukertort"
+            "es-419": "Contragambito Philidor, Variante Zukertort",
+            "en-GB": "Philidor Countergambit, Zukertort Variation",
+            "es-ES": "Contragambito Philidor, Variante Zukertort",
+            "pt-PT": "Contragambito Philidor, Variante Zukertort",
+            "de": "Philidor-Gegengambit, Zukertort-Variante",
+            "fr": "Contre-gambit Philidor, Variante Zukertort",
+            "it": "Controgambetto Philidor, Variante Zukertort"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Philidor Countergambit, Zukertort Variation",
@@ -353,9 +539,15 @@
         {
           "id": "line-cc355ae20d5e4f3a",
           "names": {
-            "en": "Philidor Countergambit, del Rio Attack",
+            "en-US": "Philidor Countergambit, del Rio Attack",
             "pt-BR": "Contragambito Philidor, Ataque del Rio",
-            "es": "Contragambito Philidor, Ataque del Rio"
+            "es-419": "Contragambito Philidor, Ataque del Rio",
+            "en-GB": "Philidor Countergambit, del Rio Attack",
+            "es-ES": "Contragambito Philidor, Ataque del Rio",
+            "pt-PT": "Contragambito Philidor, Ataque del Rio",
+            "de": "Philidor-Gegengambit, Del-Rio-Angriff",
+            "fr": "Contre-gambit Philidor, Attaque del Rio",
+            "it": "Controgambetto Philidor, Attacco del Rio"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Philidor Countergambit, del Rio Attack",
@@ -365,9 +557,15 @@
         {
           "id": "line-b1b803551edf6a31",
           "names": {
-            "en": "Philidor Countergambit, Berger Variation",
+            "en-US": "Philidor Countergambit, Berger Variation",
             "pt-BR": "Contragambito Philidor, Variante Berger",
-            "es": "Contragambito Philidor, Variante Berger"
+            "es-419": "Contragambito Philidor, Variante Berger",
+            "en-GB": "Philidor Countergambit, Berger Variation",
+            "es-ES": "Contragambito Philidor, Variante Berger",
+            "pt-PT": "Contragambito Philidor, Variante Berger",
+            "de": "Philidor-Gegengambit, Berger-Variante",
+            "fr": "Contre-gambit Philidor, Variante Berger",
+            "it": "Controgambetto Philidor, Variante Berger"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Philidor Countergambit, Berger Variation",
@@ -378,17 +576,29 @@
     },
     {
       "names": {
-        "en": "Exchange Variation",
+        "en-US": "Exchange Variation",
         "pt-BR": "Variante da Troca",
-        "es": "Variante del Cambio"
+        "es-419": "Variante del Cambio",
+        "en-GB": "Exchange Variation",
+        "es-ES": "Variante del Cambio",
+        "pt-PT": "Variante da Troca",
+        "de": "Abtauschvariante",
+        "fr": "Variante d'échange",
+        "it": "Variante di cambio"
       },
       "lines": [
         {
           "id": "line-0999ec465330bb69",
           "names": {
-            "en": "Exchange Variation",
+            "en-US": "Exchange Variation",
             "pt-BR": "Variante da Troca",
-            "es": "Variante del Cambio"
+            "es-419": "Variante del Cambio",
+            "en-GB": "Exchange Variation",
+            "es-ES": "Variante del Cambio",
+            "pt-PT": "Variante da Troca",
+            "de": "Abtauschvariante",
+            "fr": "Variante d'échange",
+            "it": "Variante di cambio"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Exchange Variation",
@@ -398,9 +608,15 @@
         {
           "id": "line-f22b7401b283b35a",
           "names": {
-            "en": "Exchange Variation",
+            "en-US": "Exchange Variation",
             "pt-BR": "Variante da Troca",
-            "es": "Variante del Cambio"
+            "es-419": "Variante del Cambio",
+            "en-GB": "Exchange Variation",
+            "es-ES": "Variante del Cambio",
+            "pt-PT": "Variante da Troca",
+            "de": "Abtauschvariante",
+            "fr": "Variante d'échange",
+            "it": "Variante di cambio"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Exchange Variation",
@@ -410,9 +626,15 @@
         {
           "id": "line-8b124f1bc1825898",
           "names": {
-            "en": "Exchange Variation",
+            "en-US": "Exchange Variation",
             "pt-BR": "Variante da Troca",
-            "es": "Variante del Cambio"
+            "es-419": "Variante del Cambio",
+            "en-GB": "Exchange Variation",
+            "es-ES": "Variante del Cambio",
+            "pt-PT": "Variante da Troca",
+            "de": "Abtauschvariante",
+            "fr": "Variante d'échange",
+            "it": "Variante di cambio"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Exchange Variation",
@@ -423,17 +645,29 @@
     },
     {
       "names": {
-        "en": "Lopez Countergambit",
+        "en-US": "Lopez Countergambit",
         "pt-BR": "Contragambito Lopez",
-        "es": "Contragambito Lopez"
+        "es-419": "Contragambito Lopez",
+        "en-GB": "Lopez Countergambit",
+        "es-ES": "Contragambito Lopez",
+        "pt-PT": "Contragambito Lopez",
+        "de": "Lopez-Gegengambit",
+        "fr": "Contre-gambit Lopez",
+        "it": "Controgambetto Lopez"
       },
       "lines": [
         {
           "id": "line-f883365568efc44a",
           "names": {
-            "en": "Lopez Countergambit",
+            "en-US": "Lopez Countergambit",
             "pt-BR": "Contragambito Lopez",
-            "es": "Contragambito Lopez"
+            "es-419": "Contragambito Lopez",
+            "en-GB": "Lopez Countergambit",
+            "es-ES": "Contragambito Lopez",
+            "pt-PT": "Contragambito Lopez",
+            "de": "Lopez-Gegengambit",
+            "fr": "Contre-gambit Lopez",
+            "it": "Controgambetto Lopez"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Lopez Countergambit",
@@ -443,9 +677,15 @@
         {
           "id": "line-99ab32dfcb09b6d3",
           "names": {
-            "en": "Lopez Countergambit, Jaenisch Variation",
+            "en-US": "Lopez Countergambit, Jaenisch Variation",
             "pt-BR": "Contragambito Lopez, Variante Jaenisch",
-            "es": "Contragambito Lopez, Variante Jaenisch"
+            "es-419": "Contragambito Lopez, Variante Jaenisch",
+            "en-GB": "Lopez Countergambit, Jaenisch Variation",
+            "es-ES": "Contragambito Lopez, Variante Jaenisch",
+            "pt-PT": "Contragambito Lopez, Variante Jaenisch",
+            "de": "Lopez-Gegengambit, Jaenisch-Variante",
+            "fr": "Contre-gambit Lopez, Variante Jaenisch",
+            "it": "Controgambetto Lopez, Variante Jaenisch"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Lopez Countergambit, Jaenisch Variation",
@@ -456,17 +696,29 @@
     },
     {
       "names": {
-        "en": "Nimzowitsch",
+        "en-US": "Nimzowitsch",
         "pt-BR": "Nimzowitsch",
-        "es": "Nimzowitsch"
+        "es-419": "Nimzowitsch",
+        "en-GB": "Nimzowitsch",
+        "es-ES": "Nimzowitsch",
+        "pt-PT": "Nimzowitsch",
+        "de": "Nimzowitsch",
+        "fr": "Nimzowitsch",
+        "it": "Nimzowitsch"
       },
       "lines": [
         {
           "id": "line-40dac82b1e3eb542",
           "names": {
-            "en": "Nimzowitsch, Larobok Variation",
+            "en-US": "Nimzowitsch, Larobok Variation",
             "pt-BR": "Nimzowitsch, Variante Larobok",
-            "es": "Nimzowitsch, Variante Larobok"
+            "es-419": "Nimzowitsch, Variante Larobok",
+            "en-GB": "Nimzowitsch, Larobok Variation",
+            "es-ES": "Nimzowitsch, Variante Larobok",
+            "pt-PT": "Nimzowitsch, Variante Larobok",
+            "de": "Nimzowitsch, Larobok-Variante",
+            "fr": "Nimzowitsch, Variante Larobok",
+            "it": "Nimzowitsch, Variante Larobok"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Nimzowitsch, Larobok Variation",
@@ -476,9 +728,15 @@
         {
           "id": "line-29956e9d800ed73a",
           "names": {
-            "en": "Nimzowitsch, Locock Variation",
+            "en-US": "Nimzowitsch, Locock Variation",
             "pt-BR": "Nimzowitsch, Variante Locock",
-            "es": "Nimzowitsch, Variante Locock"
+            "es-419": "Nimzowitsch, Variante Locock",
+            "en-GB": "Nimzowitsch, Locock Variation",
+            "es-ES": "Nimzowitsch, Variante Locock",
+            "pt-PT": "Nimzowitsch, Variante Locock",
+            "de": "Nimzowitsch, Locock-Variante",
+            "fr": "Nimzowitsch, Variante Locock",
+            "it": "Nimzowitsch, Variante Locock"
           },
           "eco": "C41",
           "opening": "Philidor Defense: Nimzowitsch, Locock Variation",
@@ -492,9 +750,15 @@
     {
       "id": "line-769e63037c0972c5",
       "names": {
-        "en": "Albin-Blackburne Gambit",
+        "en-US": "Albin-Blackburne Gambit",
         "pt-BR": "Gambito Albin-Blackburne",
-        "es": "Gambito Albin-Blackburne"
+        "es-419": "Gambito Albin-Blackburne",
+        "en-GB": "Albin-Blackburne Gambit",
+        "es-ES": "Gambito Albin-Blackburne",
+        "pt-PT": "Gambito Albin-Blackburne",
+        "de": "Albin-Blackburne-Gambit",
+        "fr": "Gambit Albin-Blackburne",
+        "it": "Gambetto Albin-Blackburne"
       },
       "eco": "C41",
       "opening": "Philidor Defense: Albin-Blackburne Gambit",
@@ -504,9 +768,15 @@
     {
       "id": "line-18ed83f8dff28cb3",
       "names": {
-        "en": "Berger Variation",
+        "en-US": "Berger Variation",
         "pt-BR": "Variante Berger",
-        "es": "Variante Berger"
+        "es-419": "Variante Berger",
+        "en-GB": "Berger Variation",
+        "es-ES": "Variante Berger",
+        "pt-PT": "Variante Berger",
+        "de": "Berger-Variante",
+        "fr": "Variante Berger",
+        "it": "Variante Berger"
       },
       "eco": "C41",
       "opening": "Philidor Defense: Berger Variation",
@@ -516,9 +786,15 @@
     {
       "id": "line-3bff6bdfd967c612",
       "names": {
-        "en": "Bird Gambit",
+        "en-US": "Bird Gambit",
         "pt-BR": "Gambito Bird",
-        "es": "Gambito Bird"
+        "es-419": "Gambito Bird",
+        "en-GB": "Bird Gambit",
+        "es-ES": "Gambito Bird",
+        "pt-PT": "Gambito Bird",
+        "de": "Bird-Gambit",
+        "fr": "Gambit Bird",
+        "it": "Gambetto Bird"
       },
       "eco": "C41",
       "opening": "Philidor Defense: Bird Gambit",
@@ -528,9 +804,15 @@
     {
       "id": "line-1d6cafd085723247",
       "names": {
-        "en": "Boden Variation",
+        "en-US": "Boden Variation",
         "pt-BR": "Variante Boden",
-        "es": "Variante Boden"
+        "es-419": "Variante Boden",
+        "en-GB": "Boden Variation",
+        "es-ES": "Variante Boden",
+        "pt-PT": "Variante Boden",
+        "de": "Boden-Variante",
+        "fr": "Variante Boden",
+        "it": "Variante Boden"
       },
       "eco": "C41",
       "opening": "Philidor Defense: Boden Variation",
@@ -540,9 +822,15 @@
     {
       "id": "line-d6e572e01e7716f8",
       "names": {
-        "en": "Hanham, Kmoch Variation",
+        "en-US": "Hanham, Kmoch Variation",
         "pt-BR": "Hanham, Variante Kmoch",
-        "es": "Hanham, Variante Kmoch"
+        "es-419": "Hanham, Variante Kmoch",
+        "en-GB": "Hanham, Kmoch Variation",
+        "es-ES": "Hanham, Variante Kmoch",
+        "pt-PT": "Hanham, Variante Kmoch",
+        "de": "Hanham, Kmoch-Variante",
+        "fr": "Hanham, Variante Kmoch",
+        "it": "Hanham, Variante Kmoch"
       },
       "eco": "C41",
       "opening": "Philidor Defense: Hanham, Kmoch Variation",
@@ -552,9 +840,15 @@
     {
       "id": "line-7cae49383c9f0d10",
       "names": {
-        "en": "Larsen Variation",
+        "en-US": "Larsen Variation",
         "pt-BR": "Variante Larsen",
-        "es": "Variante Larsen"
+        "es-419": "Variante Larsen",
+        "en-GB": "Larsen Variation",
+        "es-ES": "Variante Larsen",
+        "pt-PT": "Variante Larsen",
+        "de": "Larsen-Variante",
+        "fr": "Variante Larsen",
+        "it": "Variante Larsen"
       },
       "eco": "C41",
       "opening": "Philidor Defense: Larsen Variation",
@@ -564,9 +858,15 @@
     {
       "id": "line-0d3ca730a5157e71",
       "names": {
-        "en": "Morphy Gambit",
+        "en-US": "Morphy Gambit",
         "pt-BR": "Gambito Morphy",
-        "es": "Gambito Morphy"
+        "es-419": "Gambito Morphy",
+        "en-GB": "Morphy Gambit",
+        "es-ES": "Gambito Morphy",
+        "pt-PT": "Gambito Morphy",
+        "de": "Morphy-Gambit",
+        "fr": "Gambit Morphy",
+        "it": "Gambetto Morphy"
       },
       "eco": "C41",
       "opening": "Philidor Defense: Morphy Gambit",
@@ -576,9 +876,15 @@
     {
       "id": "line-3df8a55ce9ae17fa",
       "names": {
-        "en": "Paulsen Attack",
+        "en-US": "Paulsen Attack",
         "pt-BR": "Ataque Paulsen",
-        "es": "Ataque Paulsen"
+        "es-419": "Ataque Paulsen",
+        "en-GB": "Paulsen Attack",
+        "es-ES": "Ataque Paulsen",
+        "pt-PT": "Ataque Paulsen",
+        "de": "Paulsen-Angriff",
+        "fr": "Attaque Paulsen",
+        "it": "Attacco Paulsen"
       },
       "eco": "C41",
       "opening": "Philidor Defense: Paulsen Attack",
@@ -588,9 +894,15 @@
     {
       "id": "line-56cee4cbb1e3571b",
       "names": {
-        "en": "Philidor Gambit",
+        "en-US": "Philidor Gambit",
         "pt-BR": "Gambito Philidor",
-        "es": "Gambito Philidor"
+        "es-419": "Gambito Philidor",
+        "en-GB": "Philidor Gambit",
+        "es-ES": "Gambito Philidor",
+        "pt-PT": "Gambito Philidor",
+        "de": "Philidor-Gambit",
+        "fr": "Gambit Philidor",
+        "it": "Gambetto Philidor"
       },
       "eco": "C41",
       "opening": "Philidor Defense: Philidor Gambit",
@@ -600,9 +912,15 @@
     {
       "id": "line-c936933d0fc6117d",
       "names": {
-        "en": "Steinitz Variation",
+        "en-US": "Steinitz Variation",
         "pt-BR": "Variante Steinitz",
-        "es": "Variante Steinitz"
+        "es-419": "Variante Steinitz",
+        "en-GB": "Steinitz Variation",
+        "es-ES": "Variante Steinitz",
+        "pt-PT": "Variante Steinitz",
+        "de": "Steinitz-Variante",
+        "fr": "Variante Steinitz",
+        "it": "Variante Steinitz"
       },
       "eco": "C41",
       "opening": "Philidor Defense: Steinitz Variation",

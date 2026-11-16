@@ -23,7 +23,7 @@ def test_help_replaces_the_board_with_the_notices_first(page: Page):
     pictures = page.locator("#help-page img[data-help-img]")
     expect(pictures).to_have_count(5)
     for index in range(5):
-        expect(pictures.nth(index)).to_have_attribute("src", re.compile(r"^help/en/\w+\.webp$"))
+        expect(pictures.nth(index)).to_have_attribute("src", re.compile(r"^help/en-US/\w+\.webp$"))
         pictures.nth(index).scroll_into_view_if_needed()
         expect(pictures.nth(index)).to_have_js_property("complete", True)
         assert pictures.nth(index).evaluate("(image) => image.naturalWidth") > 0
@@ -64,7 +64,7 @@ def test_about_is_a_page_after_help_in_the_chosen_language(page: Page):
     expect(page.locator("#about-page h2")).to_have_text("Sobre o Chess Trainer")
     tal = page.locator("#about-page a[data-wiki-pt='Mikhail Tal']")
     expect(tal).to_have_attribute("href", "https://pt.wikipedia.org/wiki/Mikhail_Tal")
-    page.locator("#locale-picker").select_option("es")
+    page.locator("#locale-picker").select_option("es-419")
     expect(tal).to_have_attribute("href", "https://es.wikipedia.org/wiki/Mija%C3%ADl_Tal")
     expect(tal).to_have_text("es.wikipedia.org/wiki/Mijaíl_Tal")
     rosen = page.locator("#about-page a[data-wiki-en^='Eric Rosen']")

@@ -1,0 +1,447 @@
+# Chess glossary: English (US) (brief §8). One row per chess term the UI, Help, About and
+# HOW_TO_INSTALL use, each from the English Wikipedia (`source`) or, when no page names it,
+# `machine = true` with a `note`. `avoid` lists the words the UI must not use for the term.
+# Every glossary has the terms of en-US.toml. Checked against Wikipedia on 2026-11-15 (#29).
+
+[[terms]]
+term = "chess"
+translation = "chess"
+source = "https://en.wikipedia.org/wiki/Chess"
+
+[[terms]]
+term = "piece"
+translation = "piece"
+source = "https://en.wikipedia.org/wiki/Chess_piece"
+
+[[terms]]
+term = "king"
+translation = "king"
+source = "https://en.wikipedia.org/wiki/King_(chess)"
+
+[[terms]]
+term = "queen"
+translation = "queen"
+source = "https://en.wikipedia.org/wiki/Queen_(chess)"
+
+[[terms]]
+term = "rook"
+translation = "rook"
+source = "https://en.wikipedia.org/wiki/Rook_(chess)"
+
+[[terms]]
+term = "pawn"
+translation = "pawn"
+source = "https://en.wikipedia.org/wiki/Pawn_(chess)"
+
+[[terms]]
+term = "board"
+translation = "board"
+source = "https://en.wikipedia.org/wiki/Chessboard"
+
+[[terms]]
+term = "square"
+translation = "square"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#square"
+
+[[terms]]
+term = "White"
+translation = "White"
+source = "https://en.wikipedia.org/wiki/White_and_Black_in_chess"
+
+[[terms]]
+term = "Black"
+translation = "Black"
+source = "https://en.wikipedia.org/wiki/White_and_Black_in_chess"
+
+[[terms]]
+term = "game"
+translation = "game"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#game"
+
+[[terms]]
+term = "move"
+translation = "move"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#move"
+
+[[terms]]
+term = "ply"
+translation = "ply"
+source = "https://en.wikipedia.org/wiki/Ply_(game_theory)"
+
+[[terms]]
+term = "premove"
+translation = "premove"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#premove"
+
+[[terms]]
+term = "take back"
+translation = "take back"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#takeback"
+
+[[terms]]
+term = "castling"
+translation = "castling"
+source = "https://en.wikipedia.org/wiki/Castling"
+
+[[terms]]
+term = "check"
+translation = "check"
+source = "https://en.wikipedia.org/wiki/Check_(chess)"
+
+[[terms]]
+term = "checkmate"
+translation = "checkmate"
+source = "https://en.wikipedia.org/wiki/Checkmate"
+
+[[terms]]
+term = "stalemate"
+translation = "stalemate"
+source = "https://en.wikipedia.org/wiki/Stalemate"
+
+[[terms]]
+term = "draw"
+translation = "draw"
+source = "https://en.wikipedia.org/wiki/Draw_(chess)"
+
+[[terms]]
+term = "resign"
+translation = "resign"
+source = "https://en.wikipedia.org/wiki/Rules_of_chess#Resigning"
+
+[[terms]]
+term = "insufficient material"
+translation = "insufficient material"
+source = "https://en.wikipedia.org/wiki/Draw_(chess)"
+
+[[terms]]
+term = "threefold repetition"
+translation = "threefold repetition"
+source = "https://en.wikipedia.org/wiki/Threefold_repetition"
+
+[[terms]]
+term = "fivefold repetition"
+translation = "fivefold repetition"
+source = "https://en.wikipedia.org/wiki/Threefold_repetition#Fivefold_repetition"
+
+[[terms]]
+term = "fifty-move rule"
+translation = "fifty-move rule"
+source = "https://en.wikipedia.org/wiki/Fifty-move_rule"
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "seventy-five-move rule"
+source = "https://en.wikipedia.org/wiki/Fifty-move_rule#Seventy-five-move_rule"
+
+[[terms]]
+term = "opening"
+translation = "opening"
+source = "https://en.wikipedia.org/wiki/Chess_opening"
+
+[[terms]]
+term = "variation"
+translation = "variation"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#variation"
+
+[[terms]]
+term = "line"
+translation = "line"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#line"
+
+[[terms]]
+term = "theory"
+translation = "theory"
+source = "https://en.wikipedia.org/wiki/Chess_theory"
+
+[[terms]]
+term = "book move"
+translation = "book move"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#book_move"
+
+[[terms]]
+term = "deviation"
+translation = "deviation"
+machine = true
+note = "No Wikipedia page names it; the author's reviewed choice."
+
+[[terms]]
+term = "chess engine"
+translation = "chess engine"
+source = "https://en.wikipedia.org/wiki/Chess_engine"
+
+[[terms]]
+term = "computer"
+translation = "computer"
+source = "https://en.wikipedia.org/wiki/Computer"
+
+[[terms]]
+term = "evaluation"
+translation = "evaluation"
+source = "https://en.wikipedia.org/wiki/Evaluation_function"
+
+[[terms]]
+term = "analysis"
+translation = "analysis"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#analysis"
+note = "US English: \"analyze\", not \"analyse\"."
+avoid = ["analyse", "analysed", "analysing"]
+
+[[terms]]
+term = "brilliant move"
+translation = "brilliant move"
+source = "https://en.wikipedia.org/wiki/Chess_annotation_symbols"
+
+[[terms]]
+term = "best move"
+translation = "best move"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. The author's reviewed choice."
+
+[[terms]]
+term = "great move"
+translation = "great move"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. The author's reviewed choice."
+
+[[terms]]
+term = "inaccuracy"
+translation = "inaccuracy"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#inaccuracy"
+
+[[terms]]
+term = "mistake"
+translation = "mistake"
+source = "https://en.wikipedia.org/wiki/Chess_annotation_symbols"
+
+[[terms]]
+term = "miss"
+translation = "miss"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it. The author's reviewed choice."
+
+[[terms]]
+term = "blunder"
+translation = "blunder"
+source = "https://en.wikipedia.org/wiki/Blunder_(chess)"
+
+[[terms]]
+term = "time control"
+translation = "time control"
+source = "https://en.wikipedia.org/wiki/Time_control"
+
+[[terms]]
+term = "chess clock"
+translation = "chess clock"
+source = "https://en.wikipedia.org/wiki/Chess_clock"
+
+[[terms]]
+term = "increment"
+translation = "increment"
+source = "https://en.wikipedia.org/wiki/Time_control"
+
+[[terms]]
+term = "delay"
+translation = "delay"
+source = "https://en.wikipedia.org/wiki/Time_control"
+
+[[terms]]
+term = "bullet"
+translation = "bullet"
+source = "https://en.wikipedia.org/wiki/Fast_chess#Bullet"
+
+[[terms]]
+term = "blitz"
+translation = "blitz"
+source = "https://en.wikipedia.org/wiki/Fast_chess#Blitz"
+
+[[terms]]
+term = "rapid"
+translation = "rapid"
+source = "https://en.wikipedia.org/wiki/Fast_chess"
+
+[[terms]]
+term = "classical"
+translation = "classical"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#classical"
+
+[[terms]]
+term = "scoresheet"
+translation = "scoresheet"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#scoresheet"
+
+[[terms]]
+term = "arbiter"
+translation = "arbiter"
+source = "https://en.wikipedia.org/wiki/Arbiter_(chess)"
+
+[[terms]]
+term = "rating"
+translation = "rating"
+source = "https://en.wikipedia.org/wiki/Chess_rating_system"
+
+[[terms]]
+term = "grandmaster"
+translation = "grandmaster"
+source = "https://en.wikipedia.org/wiki/Grandmaster_(chess)"
+
+[[terms]]
+term = "International Master"
+translation = "International Master"
+source = "https://en.wikipedia.org/wiki/FIDE_titles#International_Master"
+
+[[terms]]
+term = "Woman International Master"
+translation = "Woman International Master"
+source = "https://en.wikipedia.org/wiki/FIDE_titles#Woman_International_Master_(WIM)"
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "Woman FIDE Master"
+source = "https://en.wikipedia.org/wiki/FIDE_titles#Woman_FIDE_Master_(WFM)"
+
+[[terms]]
+term = "Chess960"
+translation = "Chess960"
+source = "https://en.wikipedia.org/wiki/Chess960"
+
+[[terms]]
+term = "correspondence chess"
+translation = "correspondence chess"
+source = "https://en.wikipedia.org/wiki/Correspondence_chess"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "Chess Olympiad"
+source = "https://en.wikipedia.org/wiki/Chess_Olympiad"
+
+[[terms]]
+term = "touch-move rule"
+translation = "touch-move rule"
+source = "https://en.wikipedia.org/wiki/Touch-move_rule"
+
+[[terms]]
+term = "capture"
+translation = "capture"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#capture"
+
+[[terms]]
+term = "tactics"
+translation = "tactics"
+source = "https://en.wikipedia.org/wiki/Chess_tactic"
+
+[[terms]]
+term = "strategy"
+translation = "strategy"
+source = "https://en.wikipedia.org/wiki/Chess_strategy"
+
+[[terms]]
+term = "sacrifice"
+translation = "sacrifice"
+source = "https://en.wikipedia.org/wiki/Sacrifice_(chess)"
+
+[[terms]]
+term = "trap"
+translation = "trap"
+source = "https://en.wikipedia.org/wiki/List_of_chess_traps"
+
+[[terms]]
+term = "gambit"
+translation = "gambit"
+source = "https://en.wikipedia.org/wiki/Gambit"
+
+[[terms]]
+term = "King's Pawn"
+translation = "King's Pawn"
+source = "https://en.wikipedia.org/wiki/King's_Pawn_Game"
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "Queen's Pawn"
+source = "https://en.wikipedia.org/wiki/Queen's_Pawn_Game"
+
+[[terms]]
+term = "flank"
+translation = "flank"
+source = "https://en.wikipedia.org/wiki/Flank_opening"
+
+[[terms]]
+term = "starting position"
+translation = "starting position"
+source = "https://en.wikipedia.org/wiki/Chess960"
+
+[[terms]]
+term = "chess prodigy"
+translation = "chess prodigy"
+source = "https://en.wikipedia.org/wiki/Chess_prodigy"
+
+[[terms]]
+term = "{name} Variation"
+translation = "{name} Variation"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#variation"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Defense"
+translation = "{name} Defense"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#defense"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "{name} Gambit"
+source = "https://en.wikipedia.org/wiki/Gambit"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "{name} Countergambit"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#countergambit"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Attack"
+translation = "{name} Attack"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#attack"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "{name} Counterattack"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#counterattack"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Opening"
+translation = "{name} Opening"
+source = "https://en.wikipedia.org/wiki/Chess_opening"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} System"
+translation = "{name} System"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#system"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Line"
+translation = "{name} Line"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#line"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Formation"
+translation = "{name} Formation"
+machine = true
+note = "No Wikipedia page names it; the form the book's names use. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Trap"
+translation = "{name} Trap"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#trap"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "Main Line"
+translation = "Main Line"
+source = "https://en.wikipedia.org/wiki/Glossary_of_chess#main_line"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."

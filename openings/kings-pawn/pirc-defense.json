@@ -1,25 +1,43 @@
 {
   "id": "pirc-defense",
   "names": {
-    "en": "Pirc Defense",
+    "en-US": "Pirc Defense",
     "pt-BR": "Defesa Pirc",
-    "es": "Defensa Pirc"
+    "es-419": "Defensa Pirc",
+    "en-GB": "Pirc Defence",
+    "es-ES": "Defensa Pirc",
+    "pt-PT": "Defesa Pirc",
+    "de": "Pirc-Ufimzew-Verteidigung",
+    "fr": "Défense Pirc",
+    "it": "Difesa Pirc"
   },
   "order": 7,
   "variants": [
     {
       "names": {
-        "en": "Austrian Attack",
+        "en-US": "Austrian Attack",
         "pt-BR": "Ataque Austríaco",
-        "es": "Ataque Austriaco"
+        "es-419": "Ataque Austriaco",
+        "en-GB": "Austrian Attack",
+        "es-ES": "Ataque Austriaco",
+        "pt-PT": "Ataque Austríaco",
+        "de": "Österreichischer Angriff",
+        "fr": "Attaque autrichienne",
+        "it": "Attacco austriaco"
       },
       "lines": [
         {
           "id": "line-cb18b5007e370107",
           "names": {
-            "en": "Austrian Attack",
+            "en-US": "Austrian Attack",
             "pt-BR": "Ataque Austríaco",
-            "es": "Ataque Austriaco"
+            "es-419": "Ataque Austriaco",
+            "en-GB": "Austrian Attack",
+            "es-ES": "Ataque Austriaco",
+            "pt-PT": "Ataque Austríaco",
+            "de": "Österreichischer Angriff",
+            "fr": "Attaque autrichienne",
+            "it": "Attacco austriaco"
           },
           "eco": "B09",
           "opening": "Pirc Defense: Austrian Attack",
@@ -29,9 +47,15 @@
         {
           "id": "line-bf0f28623a6440cd",
           "names": {
-            "en": "Austrian Attack, Ljubojevic Variation",
+            "en-US": "Austrian Attack, Ljubojevic Variation",
             "pt-BR": "Ataque Austríaco, Variante Ljubojevic",
-            "es": "Ataque Austriaco, Variante Ljubojevic"
+            "es-419": "Ataque Austriaco, Variante Ljubojevic",
+            "en-GB": "Austrian Attack, Ljubojevic Variation",
+            "es-ES": "Ataque Austriaco, Variante Ljubojevic",
+            "pt-PT": "Ataque Austríaco, Variante Ljubojevic",
+            "de": "Österreichischer Angriff, Ljubojević-Variante",
+            "fr": "Attaque autrichienne, Variante Ljubojević",
+            "it": "Attacco austriaco, Variante Ljubojević"
           },
           "eco": "B09",
           "opening": "Pirc Defense: Austrian Attack, Ljubojevic Variation",
@@ -41,9 +65,15 @@
         {
           "id": "line-919d394df56f2247",
           "names": {
-            "en": "Austrian Attack",
+            "en-US": "Austrian Attack",
             "pt-BR": "Ataque Austríaco",
-            "es": "Ataque Austriaco"
+            "es-419": "Ataque Austriaco",
+            "en-GB": "Austrian Attack",
+            "es-ES": "Ataque Austriaco",
+            "pt-PT": "Ataque Austríaco",
+            "de": "Österreichischer Angriff",
+            "fr": "Attaque autrichienne",
+            "it": "Attacco austriaco"
           },
           "eco": "B09",
           "opening": "Pirc Defense: Austrian Attack",
@@ -53,9 +83,15 @@
         {
           "id": "line-0cfac09db715d948",
           "names": {
-            "en": "Austrian Attack, Weiss Variation",
+            "en-US": "Austrian Attack, Weiss Variation",
             "pt-BR": "Ataque Austríaco, Variante Weiss",
-            "es": "Ataque Austriaco, Variante Weiss"
+            "es-419": "Ataque Austriaco, Variante Weiss",
+            "en-GB": "Austrian Attack, Weiss Variation",
+            "es-ES": "Ataque Austriaco, Variante Weiss",
+            "pt-PT": "Ataque Austríaco, Variante Weiss",
+            "de": "Österreichischer Angriff, Weiss-Variante",
+            "fr": "Attaque autrichienne, Variante Weiss",
+            "it": "Attacco austriaco, Variante Weiss"
           },
           "eco": "B09",
           "opening": "Pirc Defense: Austrian Attack, Weiss Variation",
@@ -65,9 +101,15 @@
         {
           "id": "line-b38060b8047dfe3f",
           "names": {
-            "en": "Austrian Attack, Kurajica Variation",
+            "en-US": "Austrian Attack, Kurajica Variation",
             "pt-BR": "Ataque Austríaco, Variante Kurajica",
-            "es": "Ataque Austriaco, Variante Kurajica"
+            "es-419": "Ataque Austriaco, Variante Kurajica",
+            "en-GB": "Austrian Attack, Kurajica Variation",
+            "es-ES": "Ataque Austriaco, Variante Kurajica",
+            "pt-PT": "Ataque Austríaco, Variante Kurajica",
+            "de": "Österreichischer Angriff, Kurajica-Variante",
+            "fr": "Attaque autrichienne, Variante Kurajica",
+            "it": "Attacco austriaco, Variante Kurajica"
           },
           "eco": "B09",
           "opening": "Pirc Defense: Austrian Attack, Kurajica Variation",
@@ -77,9 +119,15 @@
         {
           "id": "line-780a656b84b0f98b",
           "names": {
-            "en": "Austrian Attack, Unzicker Attack",
+            "en-US": "Austrian Attack, Unzicker Attack",
             "pt-BR": "Ataque Austríaco, Ataque Unzicker",
-            "es": "Ataque Austriaco, Ataque Unzicker"
+            "es-419": "Ataque Austriaco, Ataque Unzicker",
+            "en-GB": "Austrian Attack, Unzicker Attack",
+            "es-ES": "Ataque Austriaco, Ataque Unzicker",
+            "pt-PT": "Ataque Austríaco, Ataque Unzicker",
+            "de": "Österreichischer Angriff, Unzicker-Angriff",
+            "fr": "Attaque autrichienne, Attaque Unzicker",
+            "it": "Attacco austriaco, Attacco Unzicker"
           },
           "eco": "B09",
           "opening": "Pirc Defense: Austrian Attack, Unzicker Attack",
@@ -89,9 +137,15 @@
         {
           "id": "line-9522ce74cf3e5df0",
           "names": {
-            "en": "Austrian Attack, Unzicker Attack, Bronstein Variation",
+            "en-US": "Austrian Attack, Unzicker Attack, Bronstein Variation",
             "pt-BR": "Ataque Austríaco, Ataque Unzicker, Variante Bronstein",
-            "es": "Ataque Austriaco, Ataque Unzicker, Variante Bronstein"
+            "es-419": "Ataque Austriaco, Ataque Unzicker, Variante Bronstein",
+            "en-GB": "Austrian Attack, Unzicker Attack, Bronstein Variation",
+            "es-ES": "Ataque Austriaco, Ataque Unzicker, Variante Bronstein",
+            "pt-PT": "Ataque Austríaco, Ataque Unzicker, Variante Bronstein",
+            "de": "Österreichischer Angriff, Unzicker-Angriff, Bronstein-Variante",
+            "fr": "Attaque autrichienne, Attaque Unzicker, Variante Bronstein",
+            "it": "Attacco austriaco, Attacco Unzicker, Variante Bronstein"
           },
           "eco": "B09",
           "opening": "Pirc Defense: Austrian Attack, Unzicker Attack, Bronstein Variation",
@@ -101,9 +155,15 @@
         {
           "id": "line-cf3597f9150b2692",
           "names": {
-            "en": "Austrian Attack, Dragon Formation",
+            "en-US": "Austrian Attack, Dragon Formation",
             "pt-BR": "Ataque Austríaco, Formação Dragão",
-            "es": "Ataque Austriaco, Formación Dragón"
+            "es-419": "Ataque Austriaco, Formación Dragón",
+            "en-GB": "Austrian Attack, Dragon Formation",
+            "es-ES": "Ataque Austriaco, Formación Dragón",
+            "pt-PT": "Ataque Austríaco, Formação Dragão",
+            "de": "Österreichischer Angriff, Drachenaufbau",
+            "fr": "Attaque autrichienne, Formation du dragon",
+            "it": "Attacco austriaco, Formazione del dragone"
           },
           "eco": "B09",
           "opening": "Pirc Defense: Austrian Attack, Dragon Formation",
@@ -114,17 +174,29 @@
     },
     {
       "names": {
-        "en": "Classical Variation",
+        "en-US": "Classical Variation",
         "pt-BR": "Variante Clássica",
-        "es": "Variante Clásica"
+        "es-419": "Variante Clásica",
+        "en-GB": "Classical Variation",
+        "es-ES": "Variante Clásica",
+        "pt-PT": "Variante Clássica",
+        "de": "Klassische Variante",
+        "fr": "Variante classique",
+        "it": "Variante classica"
       },
       "lines": [
         {
           "id": "line-e54c5270640f6e36",
           "names": {
-            "en": "Classical Variation",
+            "en-US": "Classical Variation",
             "pt-BR": "Variante Clássica",
-            "es": "Variante Clásica"
+            "es-419": "Variante Clásica",
+            "en-GB": "Classical Variation",
+            "es-ES": "Variante Clásica",
+            "pt-PT": "Variante Clássica",
+            "de": "Klassische Variante",
+            "fr": "Variante classique",
+            "it": "Variante classica"
           },
           "eco": "B08",
           "opening": "Pirc Defense: Classical Variation",
@@ -134,9 +206,15 @@
         {
           "id": "line-e01bb27ed0eed91d",
           "names": {
-            "en": "Classical Variation",
+            "en-US": "Classical Variation",
             "pt-BR": "Variante Clássica",
-            "es": "Variante Clásica"
+            "es-419": "Variante Clásica",
+            "en-GB": "Classical Variation",
+            "es-ES": "Variante Clásica",
+            "pt-PT": "Variante Clássica",
+            "de": "Klassische Variante",
+            "fr": "Variante classique",
+            "it": "Variante classica"
           },
           "eco": "B08",
           "opening": "Pirc Defense: Classical Variation",
@@ -146,9 +224,15 @@
         {
           "id": "line-adcce33674a25e1a",
           "names": {
-            "en": "Classical Variation, Quiet System",
+            "en-US": "Classical Variation, Quiet System",
             "pt-BR": "Variante Clássica, Sistema Tranquilo",
-            "es": "Variante Clásica, Sistema Tranquilo"
+            "es-419": "Variante Clásica, Sistema Tranquilo",
+            "en-GB": "Classical Variation, Quiet System",
+            "es-ES": "Variante Clásica, Sistema Tranquilo",
+            "pt-PT": "Variante Clássica, Sistema Tranquilo",
+            "de": "Klassische Variante, Ruhiges System",
+            "fr": "Variante classique, Système tranquille",
+            "it": "Variante classica, Sistema tranquillo"
           },
           "eco": "B08",
           "opening": "Pirc Defense: Classical Variation, Quiet System",
@@ -158,9 +242,15 @@
         {
           "id": "line-4ca8e2c2f4f632bf",
           "names": {
-            "en": "Classical Variation, Quiet System, Parma Defense",
+            "en-US": "Classical Variation, Quiet System, Parma Defense",
             "pt-BR": "Variante Clássica, Sistema Tranquilo, Defesa Parma",
-            "es": "Variante Clásica, Sistema Tranquilo, Defensa Parma"
+            "es-419": "Variante Clásica, Sistema Tranquilo, Defensa Parma",
+            "en-GB": "Classical Variation, Quiet System, Parma Defence",
+            "es-ES": "Variante Clásica, Sistema Tranquilo, Defensa Parma",
+            "pt-PT": "Variante Clássica, Sistema Tranquilo, Defesa Parma",
+            "de": "Klassische Variante, Ruhiges System, Parma-Verteidigung",
+            "fr": "Variante classique, Système tranquille, Défense Parma",
+            "it": "Variante classica, Sistema tranquillo, Difesa Parma"
           },
           "eco": "B08",
           "opening": "Pirc Defense: Classical Variation, Quiet System, Parma Defense",
@@ -170,9 +260,15 @@
         {
           "id": "line-70012a04d3c5011b",
           "names": {
-            "en": "Classical Variation, Quiet System, Chigorin Line",
+            "en-US": "Classical Variation, Quiet System, Chigorin Line",
             "pt-BR": "Variante Clássica, Sistema Tranquilo, Linha Chigorin",
-            "es": "Variante Clásica, Sistema Tranquilo, Línea Chigorin"
+            "es-419": "Variante Clásica, Sistema Tranquilo, Línea Chigorin",
+            "en-GB": "Classical Variation, Quiet System, Chigorin Line",
+            "es-ES": "Variante Clásica, Sistema Tranquilo, Línea Chigorin",
+            "pt-PT": "Variante Clássica, Sistema Tranquilo, Linha Chigorin",
+            "de": "Klassische Variante, Ruhiges System, Tschigorin-Abspiel",
+            "fr": "Variante classique, Système tranquille, Ligne Tchigorine",
+            "it": "Variante classica, Sistema tranquillo, Linea Čigorin"
           },
           "eco": "B08",
           "opening": "Pirc Defense: Classical Variation, Quiet System, Chigorin Line",
@@ -182,9 +278,15 @@
         {
           "id": "line-8915f4355dfa0c45",
           "names": {
-            "en": "Classical Variation, Quiet System, Czech Defense",
+            "en-US": "Classical Variation, Quiet System, Czech Defense",
             "pt-BR": "Variante Clássica, Sistema Tranquilo, Defesa Tcheca",
-            "es": "Variante Clásica, Sistema Tranquilo, Defensa Checa"
+            "es-419": "Variante Clásica, Sistema Tranquilo, Defensa Checa",
+            "en-GB": "Classical Variation, Quiet System, Czech Defence",
+            "es-ES": "Variante Clásica, Sistema Tranquilo, Defensa Checa",
+            "pt-PT": "Variante Clássica, Sistema Tranquilo, Defesa Checa",
+            "de": "Klassische Variante, Ruhiges System, Tschechische Verteidigung",
+            "fr": "Variante classique, Système tranquille, Défense tchèque",
+            "it": "Variante classica, Sistema tranquillo, Difesa ceca"
           },
           "eco": "B08",
           "opening": "Pirc Defense: Classical Variation, Quiet System, Czech Defense",
@@ -194,9 +296,15 @@
         {
           "id": "line-0ec9057fbd023aec",
           "names": {
-            "en": "Classical Variation, Schlechter Variation",
+            "en-US": "Classical Variation, Schlechter Variation",
             "pt-BR": "Variante Clássica, Variante Schlechter",
-            "es": "Variante Clásica, Variante Schlechter"
+            "es-419": "Variante Clásica, Variante Schlechter",
+            "en-GB": "Classical Variation, Schlechter Variation",
+            "es-ES": "Variante Clásica, Variante Schlechter",
+            "pt-PT": "Variante Clássica, Variante Schlechter",
+            "de": "Klassische Variante, Schlechter-Variante",
+            "fr": "Variante classique, Variante Schlechter",
+            "it": "Variante classica, Variante Schlechter"
           },
           "eco": "B08",
           "opening": "Pirc Defense: Classical Variation, Schlechter Variation",
@@ -207,17 +315,29 @@
     },
     {
       "names": {
-        "en": "Main",
+        "en-US": "Main",
         "pt-BR": "Principal",
-        "es": "Principal"
+        "es-419": "Principal",
+        "en-GB": "Main",
+        "es-ES": "Principal",
+        "pt-PT": "Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-f53b8487e0e5a644",
           "names": {
-            "en": "Pirc Defense",
+            "en-US": "Pirc Defense",
             "pt-BR": "Defesa Pirc",
-            "es": "Defensa Pirc"
+            "es-419": "Defensa Pirc",
+            "en-GB": "Pirc Defence",
+            "es-ES": "Defensa Pirc",
+            "pt-PT": "Defesa Pirc",
+            "de": "Pirc-Verteidigung",
+            "fr": "Défense Pirc",
+            "it": "Difesa Pirc"
           },
           "eco": "B00",
           "opening": "Pirc Defense",
@@ -227,9 +347,15 @@
         {
           "id": "line-dd86bc70bceca16c",
           "names": {
-            "en": "Pirc Defense",
+            "en-US": "Pirc Defense",
             "pt-BR": "Defesa Pirc",
-            "es": "Defensa Pirc"
+            "es-419": "Defensa Pirc",
+            "en-GB": "Pirc Defence",
+            "es-ES": "Defensa Pirc",
+            "pt-PT": "Defesa Pirc",
+            "de": "Pirc-Verteidigung",
+            "fr": "Défense Pirc",
+            "it": "Difesa Pirc"
           },
           "eco": "B00",
           "opening": "Pirc Defense",
@@ -239,9 +365,15 @@
         {
           "id": "line-71d0f2b9cd317fec",
           "names": {
-            "en": "Pirc Defense",
+            "en-US": "Pirc Defense",
             "pt-BR": "Defesa Pirc",
-            "es": "Defensa Pirc"
+            "es-419": "Defensa Pirc",
+            "en-GB": "Pirc Defence",
+            "es-ES": "Defensa Pirc",
+            "pt-PT": "Defesa Pirc",
+            "de": "Pirc-Verteidigung",
+            "fr": "Défense Pirc",
+            "it": "Difesa Pirc"
           },
           "eco": "B00",
           "opening": "Pirc Defense",
@@ -251,9 +383,15 @@
         {
           "id": "line-2ab11f0d582113f6",
           "names": {
-            "en": "Pirc Defense",
+            "en-US": "Pirc Defense",
             "pt-BR": "Defesa Pirc",
-            "es": "Defensa Pirc"
+            "es-419": "Defensa Pirc",
+            "en-GB": "Pirc Defence",
+            "es-ES": "Defensa Pirc",
+            "pt-PT": "Defesa Pirc",
+            "de": "Pirc-Verteidigung",
+            "fr": "Défense Pirc",
+            "it": "Difesa Pirc"
           },
           "eco": "B07",
           "opening": "Pirc Defense",
@@ -264,17 +402,29 @@
     },
     {
       "names": {
-        "en": "150 Attack",
+        "en-US": "150 Attack",
         "pt-BR": "Ataque 150",
-        "es": "Ataque 150"
+        "es-419": "Ataque 150",
+        "en-GB": "150 Attack",
+        "es-ES": "Ataque 150",
+        "pt-PT": "Ataque 150",
+        "de": "150-Angriff",
+        "fr": "Attaque 150",
+        "it": "Attacco 150"
       },
       "lines": [
         {
           "id": "line-f57d0e3ab773fe89",
           "names": {
-            "en": "150 Attack",
+            "en-US": "150 Attack",
             "pt-BR": "Ataque 150",
-            "es": "Ataque 150"
+            "es-419": "Ataque 150",
+            "en-GB": "150 Attack",
+            "es-ES": "Ataque 150",
+            "pt-PT": "Ataque 150",
+            "de": "150-Angriff",
+            "fr": "Attaque 150",
+            "it": "Attacco 150"
           },
           "eco": "B07",
           "opening": "Pirc Defense: 150 Attack",
@@ -284,9 +434,15 @@
         {
           "id": "line-4797fa38943ebf39",
           "names": {
-            "en": "150 Attack, Inner Doll Defense",
+            "en-US": "150 Attack, Inner Doll Defense",
             "pt-BR": "Ataque 150, Defesa Boneca Russa",
-            "es": "Ataque 150, Defensa Muñeca Rusa"
+            "es-419": "Ataque 150, Defensa Muñeca Rusa",
+            "en-GB": "150 Attack, Inner Doll Defence",
+            "es-ES": "Ataque 150, Defensa Muñeca Rusa",
+            "pt-PT": "Ataque 150, Defesa Boneca Russa",
+            "de": "150-Angriff, Matrjoschka-Verteidigung",
+            "fr": "Attaque 150, Défense de la poupée russe",
+            "it": "Attacco 150, Difesa della matrioska"
           },
           "eco": "B07",
           "opening": "Pirc Defense: 150 Attack, Inner Doll Defense",
@@ -296,9 +452,15 @@
         {
           "id": "line-a1a32e972bdf842e",
           "names": {
-            "en": "150 Attack, Sveshnikov-Jansa Attack",
+            "en-US": "150 Attack, Sveshnikov-Jansa Attack",
             "pt-BR": "Ataque 150, Ataque Sveshnikov-Jansa",
-            "es": "Ataque 150, Ataque Sveshnikov-Jansa"
+            "es-419": "Ataque 150, Ataque Sveshnikov-Jansa",
+            "en-GB": "150 Attack, Sveshnikov-Jansa Attack",
+            "es-ES": "Ataque 150, Ataque Sveshnikov-Jansa",
+            "pt-PT": "Ataque 150, Ataque Sveshnikov-Jansa",
+            "de": "150-Angriff, Sweschnikow-Jansa-Angriff",
+            "fr": "Attaque 150, Attaque Svechnikov-Jansa",
+            "it": "Attacco 150, Attacco Svešnikov-Jansa"
           },
           "eco": "B07",
           "opening": "Pirc Defense: 150 Attack, Sveshnikov-Jansa Attack",
@@ -312,9 +474,15 @@
     {
       "id": "line-e3c0c1d0db0f0f1f",
       "names": {
-        "en": "Bayonet Attack",
+        "en-US": "Bayonet Attack",
         "pt-BR": "Ataque Baioneta",
-        "es": "Ataque Bayoneta"
+        "es-419": "Ataque Bayoneta",
+        "en-GB": "Bayonet Attack",
+        "es-ES": "Ataque Bayoneta",
+        "pt-PT": "Ataque Baioneta",
+        "de": "Bajonettangriff",
+        "fr": "Attaque à la baïonnette",
+        "it": "Attacco alla baionetta"
       },
       "eco": "B07",
       "opening": "Pirc Defense: Bayonet Attack",
@@ -324,9 +492,15 @@
     {
       "id": "line-26dc62e21cd590ac",
       "names": {
-        "en": "Byrne Variation",
+        "en-US": "Byrne Variation",
         "pt-BR": "Variante Byrne",
-        "es": "Variante Byrne"
+        "es-419": "Variante Byrne",
+        "en-GB": "Byrne Variation",
+        "es-ES": "Variante Byrne",
+        "pt-PT": "Variante Byrne",
+        "de": "Byrne-Variante",
+        "fr": "Variante Byrne",
+        "it": "Variante Byrne"
       },
       "eco": "B07",
       "opening": "Pirc Defense: Byrne Variation",
@@ -336,9 +510,15 @@
     {
       "id": "line-a54e76bb35ea3562",
       "names": {
-        "en": "Chinese Variation",
+        "en-US": "Chinese Variation",
         "pt-BR": "Variante Chinesa",
-        "es": "Variante China"
+        "es-419": "Variante China",
+        "en-GB": "Chinese Variation",
+        "es-ES": "Variante China",
+        "pt-PT": "Variante Chinesa",
+        "de": "Chinesische Variante",
+        "fr": "Variante chinoise",
+        "it": "Variante cinese"
       },
       "eco": "B07",
       "opening": "Pirc Defense: Chinese Variation",
@@ -348,9 +528,15 @@
     {
       "id": "line-8b70cfdcff1bf298",
       "names": {
-        "en": "Kholmov System",
+        "en-US": "Kholmov System",
         "pt-BR": "Sistema Kholmov",
-        "es": "Sistema Kholmov"
+        "es-419": "Sistema Kholmov",
+        "en-GB": "Kholmov System",
+        "es-ES": "Sistema Kholmov",
+        "pt-PT": "Sistema Kholmov",
+        "de": "Cholmow-System",
+        "fr": "Système Kholmov",
+        "it": "Sistema Cholmov"
       },
       "eco": "B07",
       "opening": "Pirc Defense: Kholmov System",
@@ -360,9 +546,15 @@
     {
       "id": "line-7128a0c9bc205b35",
       "names": {
-        "en": "Roscher Gambit",
+        "en-US": "Roscher Gambit",
         "pt-BR": "Gambito Roscher",
-        "es": "Gambito Roscher"
+        "es-419": "Gambito Roscher",
+        "en-GB": "Roscher Gambit",
+        "es-ES": "Gambito Roscher",
+        "pt-PT": "Gambito Roscher",
+        "de": "Roscher-Gambit",
+        "fr": "Gambit Roscher",
+        "it": "Gambetto Roscher"
       },
       "eco": "B00",
       "opening": "Pirc Defense: Roscher Gambit",
@@ -372,9 +564,15 @@
     {
       "id": "line-92f614dfbafd468a",
       "names": {
-        "en": "Sveshnikov System",
+        "en-US": "Sveshnikov System",
         "pt-BR": "Sistema Sveshnikov",
-        "es": "Sistema Sveshnikov"
+        "es-419": "Sistema Sveshnikov",
+        "en-GB": "Sveshnikov System",
+        "es-ES": "Sistema Sveshnikov",
+        "pt-PT": "Sistema Sveshnikov",
+        "de": "Sweschnikow-System",
+        "fr": "Système Svechnikov",
+        "it": "Sistema Svešnikov"
       },
       "eco": "B07",
       "opening": "Pirc Defense: Sveshnikov System",

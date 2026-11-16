@@ -50,7 +50,7 @@ the smallest supported screen, and mobile is out of scope.
 - Code, identifiers, comments, commits and docs are in English.
 - User-facing text goes through i18n: `web/i18n/{locale}.json` keys, never hard-coded strings.
   Per-locale settings live in `i18n/locales.toml`, chess terms in `i18n/glossary/`, and where each
-  localized opening name came from in `i18n/names/` (brief §8). The fallback is always `en`.
+  localized opening name came from in `i18n/names/` (brief §8). The fallback is always `en-US`.
 - Chess notation is always English SAN, in every language.
 - No build step and no Node. No CDN: everything the app loads ships in the image.
 - Uvicorn runs with a single worker. Do not change this (DuckDB allows one writing process).

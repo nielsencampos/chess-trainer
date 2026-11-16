@@ -11,36 +11,46 @@ import pytest
 from app.book.source import read_opening_files
 from app.locales import Locale
 from catalog import names as names_module
-from catalog.names import OfflineError, Rules, WikipediaCache, fill_names, main
+from catalog.names import (
+    OfflineError,
+    Rules,
+    WikipediaCache,
+    fill_names,
+    main,
+    titled_for,
+    wiki_name,
+)
 from catalog.translations import (
+    TranslationError,
     load_glossary,
     load_name_sources,
+    load_translate_words,
     localized_names,
     name_source_problems,
 )
 
 FAMILY = {
     "id": "caro-kann-defense",
-    "names": {"en": "Caro-Kann Defense"},
+    "names": {"en-US": "Caro-Kann Defense"},
     "order": 1,
     "variants": [
         {
-            "names": {"en": "Panov Attack"},
+            "names": {"en-US": "Panov Attack"},
             "lines": [
                 {
                     "id": "line-0000000000000001",
-                    "names": {"en": "Panov Attack"},
+                    "names": {"en-US": "Panov Attack"},
                     "moves": ["e4", "c6", "d4", "d5", "exd5", "cxd5", "c4"],
                     "source": "test",
                 }
             ],
         },
         {
-            "names": {"en": "Advance Variation"},
+            "names": {"en-US": "Advance Variation"},
             "lines": [
                 {
                     "id": "line-0000000000000002",
-                    "names": {"en": "Advance Variation, Bayonet Attack"},
+                    "names": {"en-US": "Advance Variation, Bayonet Attack"},
                     "moves": ["e4", "c6", "d4", "d5", "e5", "Bf5", "g4"],
                     "source": "test",
                 }
@@ -50,7 +60,7 @@ FAMILY = {
     "lines": [
         {
             "id": "line-0000000000000003",
-            "names": {"en": "Hillbilly Attack"},
+            "names": {"en-US": "Hillbilly Attack"},
             "moves": ["e4", "c6", "Bc4"],
             "source": "test",
         }
@@ -219,6 +229,95 @@ def test_wikipedia_then_glossary_then_machine(repo):
     assert report.proper == {"Bayonet": 1, "Hillbilly": 1}
 
 
+def test_a_broader_article_names_only_its_own_opening(repo):
+    """An article several families redirect to names only the family it is titled for.
+
+    Args:
+        repo (Path): The test folder.
+    """
+    for family_id, english in (("king-s-pawn-game", "King's Pawn Game"), ("borg", "Borg Defense")):
+        path = repo / "openings" / f"{family_id}.json"
+        document = {"id": family_id, "names": {"en-US": english}, "order": 2, "variants": []}
+        document["lines"] = [
+            {
+                "id": f"line-{len(family_id):016x}",
+                "names": {"en-US": english},
+                "moves": ["e4", "g5"],
+                "source": "test",
+            }
+        ]
+        path.write_text(json.dumps(document), encoding="utf-8")
+    kings_pawn = {
+        "item": "Q9",
+        "sitelinks": {"enwiki": "King's Pawn Game", "ptwiki": "Abertura do peão do rei"},
+        "labels": {},
+    }
+    lookups = {
+        **LOOKUPS,
+        "King's Pawn Game": kings_pawn,
+        "Borg Defense": kings_pawn,
+        # A subgroup that redirects to another family's article.
+        "Caro-Kann Defense, Advance Variation": kings_pawn,
+    }
+    run(repo, FakeRemote(lookups))
+    sources = load_name_sources(repo / "names" / "pt-BR.toml")
+    assert sources[("families", ("king-s-pawn-game",))].origin == "source"
+    assert ("families", ("borg",)) not in sources  # Left for machine translation.
+    assert sources[("subgroups", ("caro-kann-defense", "Advance Variation"))].origin == "rule"
+
+
+def test_a_reviewed_locale_of_the_same_wikipedia_is_followed(repo):
+    """An unreviewed locale follows the reviewed one of its Wikipedia: its choices and casing.
+
+    Args:
+        repo (Path): The test folder.
+    """
+    family = json.loads(json.dumps(FAMILY))
+    family["names"]["pt-BR"] = "Defesa Caro-Kann"
+    family["variants"][0]["names"]["pt-BR"] = "Ataque Panov"  # Not Wikipedia's name.
+    write_family(repo, family)
+    (repo / "glossary" / "pt-PT.toml").write_text(GLOSSARY, encoding="utf-8")
+    caro_kann = {**CARO_KANN, "sitelinks": {**CARO_KANN["sitelinks"], "ptwiki": "Defesa caro-kann"}}
+    portugal = Locale("pt-PT", "ltr", ("latin",), None, (), False, "pt")
+    registry = {"en-US": locale(True), "pt-BR": locale(True), "pt-PT": portugal}
+    fill_names(
+        portugal,
+        WikipediaCache(
+            repo / "wikipedia.json", FakeRemote({**LOOKUPS, "Caro-Kann Defense": caro_kann})
+        ),
+        openings_dir=repo / "openings",
+        glossary_dir=repo / "glossary",
+        names_dir=repo / "names",
+        machine_dir=repo / "machine",
+        registry=registry,
+    )
+    sources = load_name_sources(repo / "names" / "pt-PT.toml")
+    family_name = sources[("families", ("caro-kann-defense",))]
+    assert (family_name.name, family_name.origin) == ("Defesa Caro-Kann", "source")
+    panov = sources[("subgroups", ("caro-kann-defense", "Panov Attack"))]
+    assert (panov.name, panov.origin) == ("Ataque Panov", "rule")
+
+
+@pytest.mark.parametrize(
+    ("title", "english", "expected"),
+    [
+        ("Caro\u2013Kann Defence", "Caro-Kann Defense", True),
+        ("Alekhine's Defence", "Alekhine Defense", True),
+        ("King's Pawn Game", "Borg Defense", False),
+    ],
+)
+def test_an_article_is_titled_for_a_name_give_or_take_its_spelling(title, english, expected):
+    """Spelling, dashes, a possessive and case do not make another article.
+
+    Args:
+        title (str): The English article's title.
+        english (str): The book's name.
+        expected (bool): Whether it is titled for it.
+    """
+    entry = {"item": "Q1", "sitelinks": {"enwiki": title}, "labels": {}}
+    assert titled_for(entry, english) is expected
+
+
 def test_untranslatable_names_wait_for_machine_translation(repo):
     """A name the glossary does not cover is listed, and enters the book once filled in.
 
@@ -335,10 +434,10 @@ def test_english_is_refused(repo):
     Args:
         repo (Path): The test folder.
     """
-    english = Locale("en", "ltr", ("latin",), None, (), True, "en")
+    english = Locale("en-US", "ltr", ("latin",), None, (), True, "en")
     with pytest.raises(ValueError):
         fill_names(english, WikipediaCache(repo / "wikipedia.json", None))
-    assert main(["en", "--offline"]) == 1
+    assert main(["en-US", "--offline"]) == 1
 
 
 @pytest.mark.parametrize(
@@ -351,6 +450,7 @@ def test_english_is_refused(repo):
         ("Advance Attack", None),  # "Advance" is a glossary word, not a proper name.
         ("quick Attack", None),  # Not capitalized.
         ("Panov Attack, Main Line", None),  # One segment is not covered: none is.
+        ("Accepted: Panov Attack", None),  # A label before a colon is not a proper name.
     ],
 )
 def test_rules_translate_segment_by_segment(tmp_path, english, expected):
@@ -364,6 +464,70 @@ def test_rules_translate_segment_by_segment(tmp_path, english, expected):
     path = tmp_path / "pt-BR.toml"
     path.write_text(GLOSSARY, encoding="utf-8")
     assert Rules(load_glossary(path)).translate(english) == expected
+
+
+def test_a_wikidata_label_starts_with_a_capital():
+    """A label in lower case ("gambit irlandais") becomes a name with a capital."""
+    entry = {"item": "Q7", "sitelinks": {}, "labels": {"pt": "gambito irlandês"}}
+    found = wiki_name(entry, locale())
+    assert found is not None
+    assert found.name == "Gambito irlandês"
+    titled = {
+        "item": "Q8",
+        "sitelinks": {"ptwiki": "Defesa Siciliana, variante Dragão"},
+        "labels": {},
+    }
+    found = wiki_name(titled, locale(), "Defesa Siciliana")
+    assert found is not None
+    assert found.name == "Variante Dragão"  # What follows the family's name, with a capital.
+
+
+def test_a_hyphenated_template_joins_the_proper_name(tmp_path):
+    """`{name-}` keeps the proper name with its words joined by hyphens, for compounds.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    path = tmp_path / "de.toml"
+    path.write_text(
+        '[[terms]]\nterm = "{name} Attack"\ntranslation = "{name-}-Angriff"\nmachine = true\n',
+        encoding="utf-8",
+    )
+    rules = Rules(load_glossary(path))
+    assert rules.translate("Max Lange Attack") == "Max-Lange-Angriff"
+    assert rules.translate("Panov Attack") == "Panov-Angriff"
+
+
+def test_translate_words_are_never_kept_as_proper_names(tmp_path):
+    """A word of the glossary's `translate` list sends the name to machine translation.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    path = tmp_path / "pt-BR.toml"
+    path.write_text('translate = ["Exchange", "King\'s"]\n' + GLOSSARY, encoding="utf-8")
+    rules = Rules(load_glossary(path), load_translate_words(path))
+    assert rules.translate("Panov Attack") == "Ataque Panov"
+    assert rules.translate("Exchange Attack") is None
+    assert rules.translate("King's Attack") is None
+    assert rules.translate("Panov-Exchange Attack") is None
+
+
+@pytest.mark.parametrize(
+    "words",
+    ['"Exchange"', '["Two Knights"]', '[""]', '["Exchange", "exchange"]', '["A,B"]'],
+)
+def test_a_bad_translate_list_fails(tmp_path, words):
+    """`translate` is a list of distinct single words.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+        words (str): The list, as TOML.
+    """
+    path = tmp_path / "pt-BR.toml"
+    path.write_text(f"translate = {words}\n" + GLOSSARY, encoding="utf-8")
+    with pytest.raises(TranslationError):
+        load_translate_words(path)
 
 
 class _Answer(io.BytesIO):

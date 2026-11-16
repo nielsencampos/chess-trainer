@@ -1,18 +1,30 @@
 {
   "id": "st-george-defense",
   "names": {
-    "en": "St. George Defense",
+    "en-US": "St. George Defense",
     "pt-BR": "Defesa Santo George",
-    "es": "Defensa St. George"
+    "es-419": "Defensa St. George",
+    "en-GB": "St. George Defence",
+    "es-ES": "Defensa St. George",
+    "pt-PT": "Defesa Santo George",
+    "de": "Baker-Verteidigung",
+    "fr": "Défense Saint-Georges",
+    "it": "Difesa San Giorgio"
   },
   "order": null,
   "lines": [
     {
       "id": "line-94d6501d0d44fed6",
       "names": {
-        "en": "St. George Defense",
+        "en-US": "St. George Defense",
         "pt-BR": "Defesa Santo George",
-        "es": "Defensa St. George"
+        "es-419": "Defensa St. George",
+        "en-GB": "St. George Defence",
+        "es-ES": "Defensa St. George",
+        "pt-PT": "Defesa St. George",
+        "de": "St.-George-Verteidigung",
+        "fr": "Défense St. George",
+        "it": "Difesa St. George"
       },
       "eco": "B00",
       "opening": "St. George Defense",
@@ -22,9 +34,15 @@
     {
       "id": "line-4ea65d840d9b2248",
       "names": {
-        "en": "Polish Variation",
+        "en-US": "Polish Variation",
         "pt-BR": "Variante Polonesa",
-        "es": "Variante Polaca"
+        "es-419": "Variante Polaca",
+        "en-GB": "Polish Variation",
+        "es-ES": "Variante Polaca",
+        "pt-PT": "Variante Polaca",
+        "de": "Polnische Variante",
+        "fr": "Variante polonaise",
+        "it": "Variante polacca"
       },
       "eco": "B00",
       "opening": "St. George Defense: Polish Variation",
@@ -34,9 +52,15 @@
     {
       "id": "line-7bcfa8ab4d802d3b",
       "names": {
-        "en": "San Jorge Variation",
+        "en-US": "San Jorge Variation",
         "pt-BR": "Variante San Jorge",
-        "es": "Variante San Jorge"
+        "es-419": "Variante San Jorge",
+        "en-GB": "San Jorge Variation",
+        "es-ES": "Variante San Jorge",
+        "pt-PT": "Variante San Jorge",
+        "de": "San-Jorge-Variante",
+        "fr": "Variante San Jorge",
+        "it": "Variante San Jorge"
       },
       "eco": "B00",
       "opening": "St. George Defense: San Jorge Variation",
@@ -46,9 +70,15 @@
     {
       "id": "line-301b417ca89f2161",
       "names": {
-        "en": "Zilbermints Gambit",
+        "en-US": "Zilbermints Gambit",
         "pt-BR": "Gambito Zilbermints",
-        "es": "Gambito Zilbermints"
+        "es-419": "Gambito Zilbermints",
+        "en-GB": "Zilbermints Gambit",
+        "es-ES": "Gambito Zilbermints",
+        "pt-PT": "Gambito Zilbermints",
+        "de": "Zilbermints-Gambit",
+        "fr": "Gambit Zilbermints",
+        "it": "Gambetto Zilbermints"
       },
       "eco": "B00",
       "opening": "St. George Defense: Zilbermints Gambit",

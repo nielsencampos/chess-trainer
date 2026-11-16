@@ -1,25 +1,43 @@
 {
   "id": "london-system",
   "names": {
-    "en": "London System",
+    "en-US": "London System",
     "pt-BR": "Sistema London",
-    "es": "Sistema Londres"
+    "es-419": "Sistema Londres",
+    "en-GB": "London System",
+    "es-ES": "Sistema Londres",
+    "pt-PT": "Sistema London",
+    "de": "Londoner System",
+    "fr": "Système de Londres",
+    "it": "Sistema di Londra"
   },
   "order": 9,
   "variants": [
     {
       "names": {
-        "en": "Main",
+        "en-US": "Main",
         "pt-BR": "Principal",
-        "es": "Principal"
+        "es-419": "Principal",
+        "en-GB": "Main",
+        "es-ES": "Principal",
+        "pt-PT": "Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-241685a82b326794",
           "names": {
-            "en": "London System",
+            "en-US": "London System",
             "pt-BR": "Sistema London",
-            "es": "Sistema Londres"
+            "es-419": "Sistema Londres",
+            "en-GB": "London System",
+            "es-ES": "Sistema Londres",
+            "pt-PT": "Sistema Londres",
+            "de": "Londoner System",
+            "fr": "Système de Londres",
+            "it": "Sistema di Londra"
           },
           "eco": "A48",
           "opening": "London System",
@@ -29,9 +47,15 @@
         {
           "id": "line-b5cb57184ceadcbe",
           "names": {
-            "en": "London System",
+            "en-US": "London System",
             "pt-BR": "Sistema London",
-            "es": "Sistema Londres"
+            "es-419": "Sistema Londres",
+            "en-GB": "London System",
+            "es-ES": "Sistema Londres",
+            "pt-PT": "Sistema Londres",
+            "de": "Londoner System",
+            "fr": "Système de Londres",
+            "it": "Sistema di Londra"
           },
           "eco": "A48",
           "opening": "London System",
@@ -41,9 +65,15 @@
         {
           "id": "line-70e6ab2ae0ecc4f8",
           "names": {
-            "en": "London System",
+            "en-US": "London System",
             "pt-BR": "Sistema London",
-            "es": "Sistema Londres"
+            "es-419": "Sistema Londres",
+            "en-GB": "London System",
+            "es-ES": "Sistema Londres",
+            "pt-PT": "Sistema Londres",
+            "de": "Londoner System",
+            "fr": "Système de Londres",
+            "it": "Sistema di Londra"
           },
           "eco": "A48",
           "opening": "London System",
@@ -54,17 +84,29 @@
     },
     {
       "names": {
-        "en": "with Be2",
+        "en-US": "with Be2",
         "pt-BR": "com Be2",
-        "es": "con Be2"
+        "es-419": "con Be2",
+        "en-GB": "with Be2",
+        "es-ES": "con Be2",
+        "pt-PT": "com Be2",
+        "de": "mit Be2",
+        "fr": "avec Be2",
+        "it": "con Be2"
       },
       "lines": [
         {
           "id": "line-49d6de391043b3e8",
           "names": {
-            "en": "with Be2",
+            "en-US": "with Be2",
             "pt-BR": "com Be2",
-            "es": "con Be2"
+            "es-419": "con Be2",
+            "en-GB": "with Be2",
+            "es-ES": "con Be2",
+            "pt-PT": "com Be2",
+            "de": "mit Be2",
+            "fr": "avec Be2",
+            "it": "con Be2"
           },
           "eco": "A48",
           "opening": "London System, with Be2",
@@ -74,9 +116,15 @@
         {
           "id": "line-9c1cd6cd3cf87ee8",
           "names": {
-            "en": "with Be2",
+            "en-US": "with Be2",
             "pt-BR": "com Be2",
-            "es": "con Be2"
+            "es-419": "con Be2",
+            "en-GB": "with Be2",
+            "es-ES": "con Be2",
+            "pt-PT": "com Be2",
+            "de": "mit Be2",
+            "fr": "avec Be2",
+            "it": "con Be2"
           },
           "eco": "A48",
           "opening": "London System, with Be2",
@@ -86,9 +134,15 @@
         {
           "id": "line-280e13d8c5103906",
           "names": {
-            "en": "with Be2",
+            "en-US": "with Be2",
             "pt-BR": "com Be2",
-            "es": "con Be2"
+            "es-419": "con Be2",
+            "en-GB": "with Be2",
+            "es-ES": "con Be2",
+            "pt-PT": "com Be2",
+            "de": "mit Be2",
+            "fr": "avec Be2",
+            "it": "con Be2"
           },
           "eco": "A48",
           "opening": "London System, with Be2",
@@ -102,9 +156,15 @@
     {
       "id": "line-553dc0e3086e8f4f",
       "names": {
-        "en": "Poisoned Pawn Variation",
+        "en-US": "Poisoned Pawn Variation",
         "pt-BR": "Variante do Peão Envenenado",
-        "es": "Variante del Peón Envenenado"
+        "es-419": "Variante del Peón Envenenado",
+        "en-GB": "Poisoned Pawn Variation",
+        "es-ES": "Variante del Peón Envenenado",
+        "pt-PT": "Variante do Peão Envenenado",
+        "de": "Variante des vergifteten Bauern",
+        "fr": "Variante du pion empoisonné",
+        "it": "Variante del pedone avvelenato"
       },
       "eco": "D02",
       "opening": "London System: Poisoned Pawn Variation",
@@ -114,9 +174,15 @@
     {
       "id": "line-b9fe5406cb061330",
       "names": {
-        "en": "with Bd3",
+        "en-US": "with Bd3",
         "pt-BR": "com Bd3",
-        "es": "con Bd3"
+        "es-419": "con Bd3",
+        "en-GB": "with Bd3",
+        "es-ES": "con Bd3",
+        "pt-PT": "com Bd3",
+        "de": "mit Bd3",
+        "fr": "avec Bd3",
+        "it": "con Bd3"
       },
       "eco": "A48",
       "opening": "London System, with Bd3",

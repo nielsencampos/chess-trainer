@@ -19,6 +19,7 @@ from pathlib import Path
 
 import chess.pgn
 
+from app.locales import DEFAULT_LOCALE
 from catalog.loader import CatalogEntry, load_catalog, source_commit
 
 OPENINGS_DIR = Path(__file__).parent.parent / "openings"
@@ -128,12 +129,12 @@ def build_documents(entries: list[CatalogEntry], commit: str) -> dict[str, dict]
             raise ValueError(f"two families share the id {family_id!r}")
         documents[family_id] = {
             "id": family_id,
-            "names": {"en": family},
+            "names": {DEFAULT_LOCALE: family},
             "lines": [
                 {
                     "id": line_id_of(entry.pgn),
                     "names": {
-                        "en": entry.name.split(":", 1)[1].strip()
+                        DEFAULT_LOCALE: entry.name.split(":", 1)[1].strip()
                         if ":" in entry.name
                         else entry.name
                     },

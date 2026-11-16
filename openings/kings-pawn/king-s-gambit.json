@@ -1,25 +1,43 @@
 {
   "id": "king-s-gambit",
   "names": {
-    "en": "King's Gambit",
+    "en-US": "King's Gambit",
     "pt-BR": "Gambito do Rei",
-    "es": "Gambito de Rey"
+    "es-419": "Gambito de Rey",
+    "en-GB": "King's Gambit",
+    "es-ES": "Gambito de Rey",
+    "pt-PT": "Gambito do Rei",
+    "de": "Königsgambit",
+    "fr": "Gambit du roi",
+    "it": "Gambetto di re"
   },
   "order": 13,
   "variants": [
     {
       "names": {
-        "en": "Accepted: Bishop's Gambit",
+        "en-US": "Accepted: Bishop's Gambit",
         "pt-BR": "Aceito: Gambito do Bispo",
-        "es": "Aceptado: Gambito de Alfil"
+        "es-419": "Aceptado: Gambito de Alfil",
+        "en-GB": "Accepted: Bishop's Gambit",
+        "es-ES": "Aceptado: Gambito de Alfil",
+        "pt-PT": "Aceito: Gambito do Bispo",
+        "de": "Angenommen: Läufergambit",
+        "fr": "Accepté: Gambit du fou",
+        "it": "Accettato: Gambetto dell'alfiere"
       },
       "lines": [
         {
           "id": "line-3ffed3f713bc01b6",
           "names": {
-            "en": "Accepted: Bishop's Gambit",
+            "en-US": "Accepted: Bishop's Gambit",
             "pt-BR": "Aceito: Gambito do Bispo",
-            "es": "Aceptado: Gambito de Alfil"
+            "es-419": "Aceptado: Gambito de Alfil",
+            "en-GB": "Accepted: Bishop's Gambit",
+            "es-ES": "Aceptado: Gambito de Alfil",
+            "pt-PT": "Aceito: Gambito do Bispo",
+            "de": "Angenommen: Läufergambit",
+            "fr": "Accepté: Gambit du fou",
+            "it": "Accettato: Gambetto dell'alfiere"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit",
@@ -29,9 +47,15 @@
         {
           "id": "line-fd10d898c1c6d774",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Maurian Defense",
+            "en-US": "Accepted: Bishop's Gambit, Maurian Defense",
             "pt-BR": "Aceito: Gambito do Bispo, Defesa Maurian",
-            "es": "Aceptado: Gambito de Alfil, Defensa Maurian"
+            "es-419": "Aceptado: Gambito de Alfil, Defensa Maurian",
+            "en-GB": "Accepted: Bishop's Gambit, Maurian Defence",
+            "es-ES": "Aceptado: Gambito de Alfil, Defensa Maurian",
+            "pt-PT": "Aceito: Gambito do Bispo, Defesa Maurian",
+            "de": "Angenommen: Läufergambit, Maurian-Verteidigung",
+            "fr": "Accepté: Gambit du fou, Défense Maurian",
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Maurian"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Maurian Defense",
@@ -41,9 +65,15 @@
         {
           "id": "line-e37e78ab4a4fde14",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Steinitz Defense",
+            "en-US": "Accepted: Bishop's Gambit, Steinitz Defense",
             "pt-BR": "Aceito: Gambito do Bispo, Defesa Steinitz",
-            "es": "Aceptado: Gambito de Alfil, Defensa Steinitz"
+            "es-419": "Aceptado: Gambito de Alfil, Defensa Steinitz",
+            "en-GB": "Accepted: Bishop's Gambit, Steinitz Defence",
+            "es-ES": "Aceptado: Gambito de Alfil, Defensa Steinitz",
+            "pt-PT": "Aceito: Gambito do Bispo, Defesa Steinitz",
+            "de": "Angenommen: Läufergambit, Steinitz-Verteidigung",
+            "fr": "Accepté: Gambit du fou, Défense Steinitz",
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Steinitz"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Steinitz Defense",
@@ -53,9 +83,15 @@
         {
           "id": "line-06be9c968f509bd4",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Cozio Defense",
+            "en-US": "Accepted: Bishop's Gambit, Cozio Defense",
             "pt-BR": "Aceito: Gambito do Bispo, Defesa Cozio",
-            "es": "Aceptado: Gambito de Alfil, Defensa Cozio"
+            "es-419": "Aceptado: Gambito de Alfil, Defensa Cozio",
+            "en-GB": "Accepted: Bishop's Gambit, Cozio Defence",
+            "es-ES": "Aceptado: Gambito de Alfil, Defensa Cozio",
+            "pt-PT": "Aceito: Gambito do Bispo, Defesa Cozio",
+            "de": "Angenommen: Läufergambit, Cozio-Verteidigung",
+            "fr": "Accepté: Gambit du fou, Défense Cozio",
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Cozio"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Cozio Defense",
@@ -65,9 +101,15 @@
         {
           "id": "line-0f6e33412551d9f4",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Bogoljubow Variation",
+            "en-US": "Accepted: Bishop's Gambit, Bogoljubow Variation",
             "pt-BR": "Aceito: Gambito do Bispo, Variante Bogoljubow",
-            "es": "Aceptado: Gambito de Alfil, Variante Bogoljubow"
+            "es-419": "Aceptado: Gambito de Alfil, Variante Bogoljubow",
+            "en-GB": "Accepted: Bishop's Gambit, Bogoljubow Variation",
+            "es-ES": "Aceptado: Gambito de Alfil, Variante Bogoljubow",
+            "pt-PT": "Aceito: Gambito do Bispo, Variante Bogoljubow",
+            "de": "Angenommen: Läufergambit, Bogoljubow-Variante",
+            "fr": "Accepté: Gambit du fou, Variante Bogoljubow",
+            "it": "Accettato: Gambetto dell'alfiere, Variante Bogoljubow"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bogoljubow Variation",
@@ -77,9 +119,15 @@
         {
           "id": "line-ddef86c22b7eb9a7",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Paulsen Attack",
+            "en-US": "Accepted: Bishop's Gambit, Paulsen Attack",
             "pt-BR": "Aceito: Gambito do Bispo, Ataque Paulsen",
-            "es": "Aceptado: Gambito de Alfil, Ataque Paulsen"
+            "es-419": "Aceptado: Gambito de Alfil, Ataque Paulsen",
+            "en-GB": "Accepted: Bishop's Gambit, Paulsen Attack",
+            "es-ES": "Aceptado: Gambito de Alfil, Ataque Paulsen",
+            "pt-PT": "Aceito: Gambito do Bispo, Ataque Paulsen",
+            "de": "Angenommen: Läufergambit, Paulsen-Angriff",
+            "fr": "Accepté: Gambit du fou, Attaque Paulsen",
+            "it": "Accettato: Gambetto dell'alfiere, Attacco Paulsen"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Paulsen Attack",
@@ -89,9 +137,15 @@
         {
           "id": "line-6cab1e4dbcf1e530",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Bogoljubow Defense",
+            "en-US": "Accepted: Bishop's Gambit, Bogoljubow Defense",
             "pt-BR": "Aceito: Gambito do Bispo, Defesa Bogoljubow",
-            "es": "Aceptado: Gambito de Alfil, Defensa Bogoljubow"
+            "es-419": "Aceptado: Gambito de Alfil, Defensa Bogoljubow",
+            "en-GB": "Accepted: Bishop's Gambit, Bogoljubow Defence",
+            "es-ES": "Aceptado: Gambito de Alfil, Defensa Bogoljubow",
+            "pt-PT": "Aceito: Gambito do Bispo, Defesa Bogoljubow",
+            "de": "Angenommen: Läufergambit, Bogoljubow-Verteidigung",
+            "fr": "Accepté: Gambit du fou, Défense Bogoljubow",
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Bogoljubow"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bogoljubow Defense",
@@ -101,9 +155,15 @@
         {
           "id": "line-c1ad620a8545aa22",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Greco Variation",
+            "en-US": "Accepted: Bishop's Gambit, Greco Variation",
             "pt-BR": "Aceito: Gambito do Bispo, Variante Greco",
-            "es": "Aceptado: Gambito de Alfil, Variante Greco"
+            "es-419": "Aceptado: Gambito de Alfil, Variante Greco",
+            "en-GB": "Accepted: Bishop's Gambit, Greco Variation",
+            "es-ES": "Aceptado: Gambito de Alfil, Variante Greco",
+            "pt-PT": "Aceito: Gambito do Bispo, Variante Greco",
+            "de": "Angenommen: Läufergambit, Greco-Variante",
+            "fr": "Accepté: Gambit du fou, Variante Greco",
+            "it": "Accettato: Gambetto dell'alfiere, Variante Greco"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Greco Variation",
@@ -113,9 +173,15 @@
         {
           "id": "line-0a2e9b3b5f7ce7b8",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Boden Variation",
+            "en-US": "Accepted: Bishop's Gambit, Boden Variation",
             "pt-BR": "Aceito: Gambito do Bispo, Variante Boden",
-            "es": "Aceptado: Gambito de Alfil, Variante Boden"
+            "es-419": "Aceptado: Gambito de Alfil, Variante Boden",
+            "en-GB": "Accepted: Bishop's Gambit, Boden Variation",
+            "es-ES": "Aceptado: Gambito de Alfil, Variante Boden",
+            "pt-PT": "Aceito: Gambito do Bispo, Variante Boden",
+            "de": "Angenommen: Läufergambit, Boden-Variante",
+            "fr": "Accepté: Gambit du fou, Variante Boden",
+            "it": "Accettato: Gambetto dell'alfiere, Variante Boden"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Boden Variation",
@@ -125,9 +191,15 @@
         {
           "id": "line-2351636c26df0ead",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Classical Defense",
+            "en-US": "Accepted: Bishop's Gambit, Classical Defense",
             "pt-BR": "Aceito: Gambito do Bispo, Defesa Clássica",
-            "es": "Aceptado: Gambito de Alfil, Defensa Clásica"
+            "es-419": "Aceptado: Gambito de Alfil, Defensa Clásica",
+            "en-GB": "Accepted: Bishop's Gambit, Classical Defence",
+            "es-ES": "Aceptado: Gambito de Alfil, Defensa Clásica",
+            "pt-PT": "Aceito: Gambito do Bispo, Defesa Clássica",
+            "de": "Angenommen: Läufergambit, Klassische Verteidigung",
+            "fr": "Accepté: Gambit du fou, Défense classique",
+            "it": "Accettato: Gambetto dell'alfiere, Difesa classica"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Classical Defense",
@@ -137,9 +209,15 @@
         {
           "id": "line-54cbc29cea8da2ea",
           "names": {
-            "en": "Accepted: Bishop's Gambit, First Jaenisch Variation",
+            "en-US": "Accepted: Bishop's Gambit, First Jaenisch Variation",
             "pt-BR": "Aceito: Gambito do Bispo, Primeira Variante Jaenisch",
-            "es": "Aceptado: Gambito de Alfil, Primera Variante Jaenisch"
+            "es-419": "Aceptado: Gambito de Alfil, Primera Variante Jaenisch",
+            "en-GB": "Accepted: Bishop's Gambit, First Jaenisch Variation",
+            "es-ES": "Aceptado: Gambito de Alfil, Primera Variante Jaenisch",
+            "pt-PT": "Aceito: Gambito do Bispo, Primeira Variante Jaenisch",
+            "de": "Angenommen: Läufergambit, Erste Jaenisch-Variante",
+            "fr": "Accepté: Gambit du fou, Première variante Jaenisch",
+            "it": "Accettato: Gambetto dell'alfiere, Prima variante Jaenisch"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, First Jaenisch Variation",
@@ -149,9 +227,15 @@
         {
           "id": "line-2bbd2c14469ce8cb",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Bryan Countergambit",
+            "en-US": "Accepted: Bishop's Gambit, Bryan Countergambit",
             "pt-BR": "Aceito: Gambito do Bispo, Contragambito Bryan",
-            "es": "Aceptado: Gambito de Alfil, Contragambito Bryan"
+            "es-419": "Aceptado: Gambito de Alfil, Contragambito Bryan",
+            "en-GB": "Accepted: Bishop's Gambit, Bryan Countergambit",
+            "es-ES": "Aceptado: Gambito de Alfil, Contragambito Bryan",
+            "pt-PT": "Aceito: Gambito do Bispo, Contragambito Bryan",
+            "de": "Angenommen: Läufergambit, Bryan-Gegengambit",
+            "fr": "Accepté: Gambit du fou, Contre-gambit Bryan",
+            "it": "Accettato: Gambetto dell'alfiere, Controgambetto Bryan"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bryan Countergambit",
@@ -161,9 +245,15 @@
         {
           "id": "line-db2a04e6d3a3bb62",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Chigorin's Attack",
+            "en-US": "Accepted: Bishop's Gambit, Chigorin's Attack",
             "pt-BR": "Aceito: Gambito do Bispo, Ataque Chigorin",
-            "es": "Aceptado: Gambito de Alfil, Ataque Chigorin"
+            "es-419": "Aceptado: Gambito de Alfil, Ataque Chigorin",
+            "en-GB": "Accepted: Bishop's Gambit, Chigorin's Attack",
+            "es-ES": "Aceptado: Gambito de Alfil, Ataque Chigorin",
+            "pt-PT": "Aceito: Gambito do Bispo, Ataque Chigorin",
+            "de": "Angenommen: Läufergambit, Chigorin's-Angriff",
+            "fr": "Accepté: Gambit du fou, Attaque Chigorin's",
+            "it": "Accettato: Gambetto dell'alfiere, Attacco Chigorin's"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Chigorin's Attack",
@@ -173,9 +263,15 @@
         {
           "id": "line-754b1fd232378ce2",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Cozio Variation",
+            "en-US": "Accepted: Bishop's Gambit, Cozio Variation",
             "pt-BR": "Aceito: Gambito do Bispo, Variante Cozio",
-            "es": "Aceptado: Gambito de Alfil, Variante Cozio"
+            "es-419": "Aceptado: Gambito de Alfil, Variante Cozio",
+            "en-GB": "Accepted: Bishop's Gambit, Cozio Variation",
+            "es-ES": "Aceptado: Gambito de Alfil, Variante Cozio",
+            "pt-PT": "Aceito: Gambito do Bispo, Variante Cozio",
+            "de": "Angenommen: Läufergambit, Cozio-Variante",
+            "fr": "Accepté: Gambit du fou, Variante Cozio",
+            "it": "Accettato: Gambetto dell'alfiere, Variante Cozio"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Cozio Variation",
@@ -185,9 +281,15 @@
         {
           "id": "line-69cc038fc7cfd6b2",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Lopez Variation",
+            "en-US": "Accepted: Bishop's Gambit, Lopez Variation",
             "pt-BR": "Aceito: Gambito do Bispo, Variante Lopez",
-            "es": "Aceptado: Gambito de Alfil, Variante Lopez"
+            "es-419": "Aceptado: Gambito de Alfil, Variante Lopez",
+            "en-GB": "Accepted: Bishop's Gambit, Lopez Variation",
+            "es-ES": "Aceptado: Gambito de Alfil, Variante Lopez",
+            "pt-PT": "Aceito: Gambito do Bispo, Variante Lopez",
+            "de": "Angenommen: Läufergambit, Lopez-Variante",
+            "fr": "Accepté: Gambit du fou, Variante Lopez",
+            "it": "Accettato: Gambetto dell'alfiere, Variante Lopez"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Lopez Variation",
@@ -197,9 +299,15 @@
         {
           "id": "line-f2db64e42417debf",
           "names": {
-            "en": "Accepted: Bishop's Gambit, McDonnell Attack",
+            "en-US": "Accepted: Bishop's Gambit, McDonnell Attack",
             "pt-BR": "Aceito: Gambito do Bispo, Ataque McDonnell",
-            "es": "Aceptado: Gambito de Alfil, Ataque McDonnell"
+            "es-419": "Aceptado: Gambito de Alfil, Ataque McDonnell",
+            "en-GB": "Accepted: Bishop's Gambit, McDonnell Attack",
+            "es-ES": "Aceptado: Gambito de Alfil, Ataque McDonnell",
+            "pt-PT": "Aceito: Gambito do Bispo, Ataque McDonnell",
+            "de": "Angenommen: Läufergambit, McDonnell-Angriff",
+            "fr": "Accepté: Gambit du fou, Attaque McDonnell",
+            "it": "Accettato: Gambetto dell'alfiere, Attacco McDonnell"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, McDonnell Attack",
@@ -209,9 +317,15 @@
         {
           "id": "line-9472eeb6ce62877c",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Grimm Attack",
+            "en-US": "Accepted: Bishop's Gambit, Grimm Attack",
             "pt-BR": "Aceito: Gambito do Bispo, Ataque Grimm",
-            "es": "Aceptado: Gambito de Alfil, Ataque Grimm"
+            "es-419": "Aceptado: Gambito de Alfil, Ataque Grimm",
+            "en-GB": "Accepted: Bishop's Gambit, Grimm Attack",
+            "es-ES": "Aceptado: Gambito de Alfil, Ataque Grimm",
+            "pt-PT": "Aceito: Gambito do Bispo, Ataque Grimm",
+            "de": "Angenommen: Läufergambit, Grimm-Angriff",
+            "fr": "Accepté: Gambit du fou, Attaque Grimm",
+            "it": "Accettato: Gambetto dell'alfiere, Attacco Grimm"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Grimm Attack",
@@ -221,9 +335,15 @@
         {
           "id": "line-31a6ae1f72b43b0d",
           "names": {
-            "en": "Accepted: Bishop's Gambit, McDonnell Attack",
+            "en-US": "Accepted: Bishop's Gambit, McDonnell Attack",
             "pt-BR": "Aceito: Gambito do Bispo, Ataque McDonnell",
-            "es": "Aceptado: Gambito de Alfil, Ataque McDonnell"
+            "es-419": "Aceptado: Gambito de Alfil, Ataque McDonnell",
+            "en-GB": "Accepted: Bishop's Gambit, McDonnell Attack",
+            "es-ES": "Aceptado: Gambito de Alfil, Ataque McDonnell",
+            "pt-PT": "Aceito: Gambito do Bispo, Ataque McDonnell",
+            "de": "Angenommen: Läufergambit, McDonnell-Angriff",
+            "fr": "Accepté: Gambit du fou, Attaque McDonnell",
+            "it": "Accettato: Gambetto dell'alfiere, Attacco McDonnell"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, McDonnell Attack",
@@ -233,9 +353,15 @@
         {
           "id": "line-8492991c3c1c2b7b",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Fraser Variation",
+            "en-US": "Accepted: Bishop's Gambit, Fraser Variation",
             "pt-BR": "Aceito: Gambito do Bispo, Variante Fraser",
-            "es": "Aceptado: Gambito de Alfil, Variante Fraser"
+            "es-419": "Aceptado: Gambito de Alfil, Variante Fraser",
+            "en-GB": "Accepted: Bishop's Gambit, Fraser Variation",
+            "es-ES": "Aceptado: Gambito de Alfil, Variante Fraser",
+            "pt-PT": "Aceito: Gambito do Bispo, Variante Fraser",
+            "de": "Angenommen: Läufergambit, Fraser-Variante",
+            "fr": "Accepté: Gambit du fou, Variante Fraser",
+            "it": "Accettato: Gambetto dell'alfiere, Variante Fraser"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Fraser Variation",
@@ -245,9 +371,15 @@
         {
           "id": "line-43e0718c3d5d9a01",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Classical Defense, Cozio Attack",
+            "en-US": "Accepted: Bishop's Gambit, Classical Defense, Cozio Attack",
             "pt-BR": "Aceito: Gambito do Bispo, Defesa Clássica, Ataque Cozio",
-            "es": "Aceptado: Gambito de Alfil, Defensa Clásica, Ataque Cozio"
+            "es-419": "Aceptado: Gambito de Alfil, Defensa Clásica, Ataque Cozio",
+            "en-GB": "Accepted: Bishop's Gambit, Classical Defence, Cozio Attack",
+            "es-ES": "Aceptado: Gambito de Alfil, Defensa Clásica, Ataque Cozio",
+            "pt-PT": "Aceito: Gambito do Bispo, Defesa Clássica, Ataque Cozio",
+            "de": "Angenommen: Läufergambit, Klassische Verteidigung, Cozio-Angriff",
+            "fr": "Accepté: Gambit du fou, Défense classique, Attaque Cozio",
+            "it": "Accettato: Gambetto dell'alfiere, Difesa classica, Attacco Cozio"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Classical Defense, Cozio Attack",
@@ -257,9 +389,15 @@
         {
           "id": "line-90a0ff4d64b57570",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Kieseritzky Gambit",
+            "en-US": "Accepted: Bishop's Gambit, Kieseritzky Gambit",
             "pt-BR": "Aceito: Gambito do Bispo, Gambito Kieseritzky",
-            "es": "Aceptado: Gambito de Alfil, Gambito Kieseritzky"
+            "es-419": "Aceptado: Gambito de Alfil, Gambito Kieseritzky",
+            "en-GB": "Accepted: Bishop's Gambit, Kieseritzky Gambit",
+            "es-ES": "Aceptado: Gambito de Alfil, Gambito Kieseritzky",
+            "pt-PT": "Aceito: Gambito do Bispo, Gambito Kieseritzky",
+            "de": "Angenommen: Läufergambit, Kieseritzky-Gambit",
+            "fr": "Accepté: Gambit du fou, Gambit Kieseritzky",
+            "it": "Accettato: Gambetto dell'alfiere, Gambetto Kieseritzky"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Kieseritzky Gambit",
@@ -269,9 +407,15 @@
         {
           "id": "line-2cf9489430d978e1",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Lopez Defense",
+            "en-US": "Accepted: Bishop's Gambit, Lopez Defense",
             "pt-BR": "Aceito: Gambito do Bispo, Defesa Lopez",
-            "es": "Aceptado: Gambito de Alfil, Defensa Lopez"
+            "es-419": "Aceptado: Gambito de Alfil, Defensa Lopez",
+            "en-GB": "Accepted: Bishop's Gambit, Lopez Defence",
+            "es-ES": "Aceptado: Gambito de Alfil, Defensa Lopez",
+            "pt-PT": "Aceito: Gambito do Bispo, Defesa Lopez",
+            "de": "Angenommen: Läufergambit, Lopez-Verteidigung",
+            "fr": "Accepté: Gambit du fou, Défense Lopez",
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Lopez"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Lopez Defense",
@@ -281,9 +425,15 @@
         {
           "id": "line-a26457fd7f936c9f",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Bledow Variation",
+            "en-US": "Accepted: Bishop's Gambit, Bledow Variation",
             "pt-BR": "Aceito: Gambito do Bispo, Variante Bledow",
-            "es": "Aceptado: Gambito de Alfil, Variante Bledow"
+            "es-419": "Aceptado: Gambito de Alfil, Variante Bledow",
+            "en-GB": "Accepted: Bishop's Gambit, Bledow Variation",
+            "es-ES": "Aceptado: Gambito de Alfil, Variante Bledow",
+            "pt-PT": "Aceito: Gambito do Bispo, Variante Bledow",
+            "de": "Angenommen: Läufergambit, Bledow-Variante",
+            "fr": "Accepté: Gambit du fou, Variante Bledow",
+            "it": "Accettato: Gambetto dell'alfiere, Variante Bledow"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bledow Variation",
@@ -293,9 +443,15 @@
         {
           "id": "line-ce8e3fc7811ed869",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Bledow Countergambit",
+            "en-US": "Accepted: Bishop's Gambit, Bledow Countergambit",
             "pt-BR": "Aceito: Gambito do Bispo, Contragambito Bledow",
-            "es": "Aceptado: Gambito de Alfil, Contragambito Bledow"
+            "es-419": "Aceptado: Gambito de Alfil, Contragambito Bledow",
+            "en-GB": "Accepted: Bishop's Gambit, Bledow Countergambit",
+            "es-ES": "Aceptado: Gambito de Alfil, Contragambito Bledow",
+            "pt-PT": "Aceito: Gambito do Bispo, Contragambito Bledow",
+            "de": "Angenommen: Läufergambit, Bledow-Gegengambit",
+            "fr": "Accepté: Gambit du fou, Contre-gambit Bledow",
+            "it": "Accettato: Gambetto dell'alfiere, Controgambetto Bledow"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bledow Countergambit",
@@ -305,9 +461,15 @@
         {
           "id": "line-5411b3ef2e824a0e",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Boren-Svenonius Variation",
+            "en-US": "Accepted: Bishop's Gambit, Boren-Svenonius Variation",
             "pt-BR": "Aceito: Gambito do Bispo, Variante Boren-Svenonius",
-            "es": "Aceptado: Gambito de Alfil, Variante Boren-Svenonius"
+            "es-419": "Aceptado: Gambito de Alfil, Variante Boren-Svenonius",
+            "en-GB": "Accepted: Bishop's Gambit, Boren-Svenonius Variation",
+            "es-ES": "Aceptado: Gambito de Alfil, Variante Boren-Svenonius",
+            "pt-PT": "Aceito: Gambito do Bispo, Variante Boren-Svenonius",
+            "de": "Angenommen: Läufergambit, Boren-Svenonius-Variante",
+            "fr": "Accepté: Gambit du fou, Variante Boren-Svenonius",
+            "it": "Accettato: Gambetto dell'alfiere, Variante Boren-Svenonius"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Boren-Svenonius Variation",
@@ -317,9 +479,15 @@
         {
           "id": "line-43dfde610e28fcc6",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Anderssen Variation",
+            "en-US": "Accepted: Bishop's Gambit, Anderssen Variation",
             "pt-BR": "Aceito: Gambito do Bispo, Variante Anderssen",
-            "es": "Aceptado: Gambito de Alfil, Variante Anderssen"
+            "es-419": "Aceptado: Gambito de Alfil, Variante Anderssen",
+            "en-GB": "Accepted: Bishop's Gambit, Anderssen Variation",
+            "es-ES": "Aceptado: Gambito de Alfil, Variante Anderssen",
+            "pt-PT": "Aceito: Gambito do Bispo, Variante Anderssen",
+            "de": "Angenommen: Läufergambit, Anderssen-Variante",
+            "fr": "Accepté: Gambit du fou, Variante Anderssen",
+            "it": "Accettato: Gambetto dell'alfiere, Variante Anderssen"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Anderssen Variation",
@@ -329,9 +497,15 @@
         {
           "id": "line-98d55c85685cd32c",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Gianutio Gambit",
+            "en-US": "Accepted: Bishop's Gambit, Gianutio Gambit",
             "pt-BR": "Aceito: Gambito do Bispo, Gambito Gianutio",
-            "es": "Aceptado: Gambito de Alfil, Gambito Gianutio"
+            "es-419": "Aceptado: Gambito de Alfil, Gambito Gianutio",
+            "en-GB": "Accepted: Bishop's Gambit, Gianutio Gambit",
+            "es-ES": "Aceptado: Gambito de Alfil, Gambito Gianutio",
+            "pt-PT": "Aceito: Gambito do Bispo, Gambito Gianutio",
+            "de": "Angenommen: Läufergambit, Gianutio-Gambit",
+            "fr": "Accepté: Gambit du fou, Gambit Gianutio",
+            "it": "Accettato: Gambetto dell'alfiere, Gambetto Gianutio"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Gianutio Gambit",
@@ -341,9 +515,15 @@
         {
           "id": "line-12d12a9a0246ef46",
           "names": {
-            "en": "Accepted: Bishop's Gambit, Anderssen Defense",
+            "en-US": "Accepted: Bishop's Gambit, Anderssen Defense",
             "pt-BR": "Aceito: Gambito do Bispo, Defesa Anderssen",
-            "es": "Aceptado: Gambito de Alfil, Defensa Anderssen"
+            "es-419": "Aceptado: Gambito de Alfil, Defensa Anderssen",
+            "en-GB": "Accepted: Bishop's Gambit, Anderssen Defence",
+            "es-ES": "Aceptado: Gambito de Alfil, Defensa Anderssen",
+            "pt-PT": "Aceito: Gambito do Bispo, Defesa Anderssen",
+            "de": "Angenommen: Läufergambit, Anderssen-Verteidigung",
+            "fr": "Accepté: Gambit du fou, Défense Anderssen",
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Anderssen"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Anderssen Defense",
@@ -354,17 +534,29 @@
     },
     {
       "names": {
-        "en": "Declined: Falkbeer Countergambit",
+        "en-US": "Declined: Falkbeer Countergambit",
         "pt-BR": "Recusado: Contragambito Falkbeer",
-        "es": "Rehusado: Contragambito Falkbeer"
+        "es-419": "Rehusado: Contragambito Falkbeer",
+        "en-GB": "Declined: Falkbeer Countergambit",
+        "es-ES": "Rehusado: Contragambito Falkbeer",
+        "pt-PT": "Recusado: Contragambito Falkbeer",
+        "de": "Abgelehnt: Falkbeer-Gegengambit",
+        "fr": "Refusé: Contre-gambit Falkbeer",
+        "it": "Rifiutato: Controgambetto Falkbeer"
       },
       "lines": [
         {
           "id": "line-3b5bfe9e97e8e21e",
           "names": {
-            "en": "Declined: Falkbeer Countergambit",
+            "en-US": "Declined: Falkbeer Countergambit",
             "pt-BR": "Recusado: Contragambito Falkbeer",
-            "es": "Rehusado: Contragambito Falkbeer"
+            "es-419": "Rehusado: Contragambito Falkbeer",
+            "en-GB": "Declined: Falkbeer Countergambit",
+            "es-ES": "Rehusado: Contragambito Falkbeer",
+            "pt-PT": "Recusado: Contragambito Falkbeer",
+            "de": "Abgelehnt: Falkbeer-Gegengambit",
+            "fr": "Refusé: Contre-gambit Falkbeer",
+            "it": "Rifiutato: Controgambetto Falkbeer"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit",
@@ -374,9 +566,15 @@
         {
           "id": "line-b3fd43210c98c370",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Milner-Barry Variation",
+            "en-US": "Declined: Falkbeer Countergambit, Milner-Barry Variation",
             "pt-BR": "Recusado: Contragambito Falkbeer, Variante Milner-Barry",
-            "es": "Rehusado: Contragambito Falkbeer, Variante Milner-Barry"
+            "es-419": "Rehusado: Contragambito Falkbeer, Variante Milner-Barry",
+            "en-GB": "Declined: Falkbeer Countergambit, Milner-Barry Variation",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Variante Milner-Barry",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Variante Milner-Barry",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Milner-Barry-Variante",
+            "fr": "Refusé: Contre-gambit Falkbeer, Variante Milner-Barry",
+            "it": "Rifiutato: Controgambetto Falkbeer, Variante Milner-Barry"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Milner-Barry Variation",
@@ -386,9 +584,15 @@
         {
           "id": "line-4e920c1cfe4889ae",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Blackburne Attack",
+            "en-US": "Declined: Falkbeer Countergambit, Blackburne Attack",
             "pt-BR": "Recusado: Contragambito Falkbeer, Ataque Blackburne",
-            "es": "Rehusado: Contragambito Falkbeer, Ataque Blackburne"
+            "es-419": "Rehusado: Contragambito Falkbeer, Ataque Blackburne",
+            "en-GB": "Declined: Falkbeer Countergambit, Blackburne Attack",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Ataque Blackburne",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Ataque Blackburne",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Blackburne-Angriff",
+            "fr": "Refusé: Contre-gambit Falkbeer, Attaque Blackburne",
+            "it": "Rifiutato: Controgambetto Falkbeer, Attacco Blackburne"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Blackburne Attack",
@@ -398,9 +602,15 @@
         {
           "id": "line-c85626cd10bee626",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Hinrichsen Gambit",
+            "en-US": "Declined: Falkbeer Countergambit, Hinrichsen Gambit",
             "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Hinrichsen",
-            "es": "Rehusado: Contragambito Falkbeer, Gambito Hinrichsen"
+            "es-419": "Rehusado: Contragambito Falkbeer, Gambito Hinrichsen",
+            "en-GB": "Declined: Falkbeer Countergambit, Hinrichsen Gambit",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Gambito Hinrichsen",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Hinrichsen",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Hinrichsen-Gambit",
+            "fr": "Refusé: Contre-gambit Falkbeer, Gambit Hinrichsen",
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Hinrichsen"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Hinrichsen Gambit",
@@ -410,9 +620,15 @@
         {
           "id": "line-ad710a7248cad8b8",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Miles Gambit",
+            "en-US": "Declined: Falkbeer Countergambit, Miles Gambit",
             "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Miles",
-            "es": "Rehusado: Contragambito Falkbeer, Gambito Miles"
+            "es-419": "Rehusado: Contragambito Falkbeer, Gambito Miles",
+            "en-GB": "Declined: Falkbeer Countergambit, Miles Gambit",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Gambito Miles",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Miles",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Miles-Gambit",
+            "fr": "Refusé: Contre-gambit Falkbeer, Gambit Miles",
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Miles"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Miles Gambit",
@@ -422,9 +638,15 @@
         {
           "id": "line-d02c45512ab07931",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit",
+            "en-US": "Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit",
             "pt-BR": "Recusado: Contragambito Falkbeer, Contragambito Nimzowitsch-Marshall",
-            "es": "Rehusado: Contragambito Falkbeer, Contragambito Nimzowitsch-Marshall"
+            "es-419": "Rehusado: Contragambito Falkbeer, Contragambito Nimzowitsch-Marshall",
+            "en-GB": "Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Contragambito Nimzowitsch-Marshall",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Contragambito Nimzowitsch-Marshall",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Nimzowitsch-Marshall-Gegengambit",
+            "fr": "Refusé: Contre-gambit Falkbeer, Contre-gambit Nimzowitsch-Marshall",
+            "it": "Rifiutato: Controgambetto Falkbeer, Controgambetto Nimzowitsch-Marshall"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit",
@@ -434,9 +656,15 @@
         {
           "id": "line-9c9bc9f5d4699a3f",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Pickler Gambit",
+            "en-US": "Declined: Falkbeer Countergambit, Pickler Gambit",
             "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Pickler",
-            "es": "Rehusado: Contragambito Falkbeer, Gambito Pickler"
+            "es-419": "Rehusado: Contragambito Falkbeer, Gambito Pickler",
+            "en-GB": "Declined: Falkbeer Countergambit, Pickler Gambit",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Gambito Pickler",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Pickler",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Pickler-Gambit",
+            "fr": "Refusé: Contre-gambit Falkbeer, Gambit Pickler",
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Pickler"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Pickler Gambit",
@@ -446,9 +674,15 @@
         {
           "id": "line-1074c85e467cf336",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Staunton Line",
+            "en-US": "Declined: Falkbeer Countergambit, Staunton Line",
             "pt-BR": "Recusado: Contragambito Falkbeer, Linha Staunton",
-            "es": "Rehusado: Contragambito Falkbeer, Línea Staunton"
+            "es-419": "Rehusado: Contragambito Falkbeer, Línea Staunton",
+            "en-GB": "Declined: Falkbeer Countergambit, Staunton Line",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Línea Staunton",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Linha Staunton",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Staunton-Abspiel",
+            "fr": "Refusé: Contre-gambit Falkbeer, Ligne Staunton",
+            "it": "Rifiutato: Controgambetto Falkbeer, Linea Staunton"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Staunton Line",
@@ -458,9 +692,15 @@
         {
           "id": "line-f8725f69746636ac",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Anderssen Attack",
+            "en-US": "Declined: Falkbeer Countergambit, Anderssen Attack",
             "pt-BR": "Recusado: Contragambito Falkbeer, Ataque Anderssen",
-            "es": "Rehusado: Contragambito Falkbeer, Ataque Anderssen"
+            "es-419": "Rehusado: Contragambito Falkbeer, Ataque Anderssen",
+            "en-GB": "Declined: Falkbeer Countergambit, Anderssen Attack",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Ataque Anderssen",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Ataque Anderssen",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Anderssen-Angriff",
+            "fr": "Refusé: Contre-gambit Falkbeer, Attaque Anderssen",
+            "it": "Rifiutato: Controgambetto Falkbeer, Attacco Anderssen"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Anderssen Attack",
@@ -470,9 +710,15 @@
         {
           "id": "line-b9124b2fbab8e323",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Rubinstein Variation",
+            "en-US": "Declined: Falkbeer Countergambit, Rubinstein Variation",
             "pt-BR": "Recusado: Contragambito Falkbeer, Variante Rubinstein",
-            "es": "Rehusado: Contragambito Falkbeer, Variante Rubinstein"
+            "es-419": "Rehusado: Contragambito Falkbeer, Variante Rubinstein",
+            "en-GB": "Declined: Falkbeer Countergambit, Rubinstein Variation",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Variante Rubinstein",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Variante Rubinstein",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Rubinstein-Variante",
+            "fr": "Refusé: Contre-gambit Falkbeer, Variante Rubinstein",
+            "it": "Rifiutato: Controgambetto Falkbeer, Variante Rubinstein"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Rubinstein Variation",
@@ -482,9 +728,15 @@
         {
           "id": "line-808ef4b37e7259ea",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Charousek Gambit",
+            "en-US": "Declined: Falkbeer Countergambit, Charousek Gambit",
             "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek",
-            "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek"
+            "es-419": "Rehusado: Contragambito Falkbeer, Gambito Charousek",
+            "en-GB": "Declined: Falkbeer Countergambit, Charousek Gambit",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Gambito Charousek",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit",
+            "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek",
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
@@ -494,9 +746,15 @@
         {
           "id": "line-89e200d10bf3520e",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation",
+            "en-US": "Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation",
             "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek, Variante Keres",
-            "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Variante Keres"
+            "es-419": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Variante Keres",
+            "en-GB": "Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Variante Keres",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek, Variante Keres",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit, Keres-Variante",
+            "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek, Variante Keres",
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek, Variante Keres"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation",
@@ -506,9 +764,15 @@
         {
           "id": "line-729f10bfd3746687",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Charousek Gambit, Old Line",
+            "en-US": "Declined: Falkbeer Countergambit, Charousek Gambit, Old Line",
             "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek, Linha Antiga",
-            "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Línea Antigua"
+            "es-419": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Línea Antigua",
+            "en-GB": "Declined: Falkbeer Countergambit, Charousek Gambit, Old Line",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Línea Antigua",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek, Linha Antiga",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit, Altes Abspiel",
+            "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek, Ancienne ligne",
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek, Vecchia linea"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Old Line",
@@ -518,9 +782,15 @@
         {
           "id": "line-2404b5530331fa85",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Charousek Gambit Accepted",
+            "en-US": "Declined: Falkbeer Countergambit, Charousek Gambit Accepted",
             "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek Aceito",
-            "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek Aceptado"
+            "es-419": "Rehusado: Contragambito Falkbeer, Gambito Charousek Aceptado",
+            "en-GB": "Declined: Falkbeer Countergambit, Charousek Gambit Accepted",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Gambito Charousek Aceptado",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek Aceito",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Angenommenes Charousek-Gambit",
+            "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek accepté",
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek accettato"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit Accepted",
@@ -530,9 +800,15 @@
         {
           "id": "line-9938f72465f6e6d8",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Alapin Variation",
+            "en-US": "Declined: Falkbeer Countergambit, Alapin Variation",
             "pt-BR": "Recusado: Contragambito Falkbeer, Variante Alapin",
-            "es": "Rehusado: Contragambito Falkbeer, Variante Alapin"
+            "es-419": "Rehusado: Contragambito Falkbeer, Variante Alapin",
+            "en-GB": "Declined: Falkbeer Countergambit, Alapin Variation",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Variante Alapin",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Variante Alapin",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Alapin-Variante",
+            "fr": "Refusé: Contre-gambit Falkbeer, Variante Alapin",
+            "it": "Rifiutato: Controgambetto Falkbeer, Variante Alapin"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Alapin Variation",
@@ -542,9 +818,15 @@
         {
           "id": "line-0d20a7c431025fb9",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Charousek Gambit, Main Line",
+            "en-US": "Declined: Falkbeer Countergambit, Charousek Gambit, Main Line",
             "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek, Linha Principal",
-            "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Línea Principal"
+            "es-419": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Línea Principal",
+            "en-GB": "Declined: Falkbeer Countergambit, Charousek Gambit, Main Line",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Gambito Charousek, Línea Principal",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek, Linha Principal",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit, Hauptvariante",
+            "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek, Ligne principale",
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek, Linea principale"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Main Line",
@@ -554,9 +836,15 @@
         {
           "id": "line-99f435d5f22709ec",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Tarrasch Variation",
+            "en-US": "Declined: Falkbeer Countergambit, Tarrasch Variation",
             "pt-BR": "Recusado: Contragambito Falkbeer, Variante Tarrasch",
-            "es": "Rehusado: Contragambito Falkbeer, Variante Tarrasch"
+            "es-419": "Rehusado: Contragambito Falkbeer, Variante Tarrasch",
+            "en-GB": "Declined: Falkbeer Countergambit, Tarrasch Variation",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Variante Tarrasch",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Variante Tarrasch",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Tarrasch-Variante",
+            "fr": "Refusé: Contre-gambit Falkbeer, Variante Tarrasch",
+            "it": "Rifiutato: Controgambetto Falkbeer, Variante Tarrasch"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Tarrasch Variation",
@@ -566,9 +854,15 @@
         {
           "id": "line-d3d34b50c11ae700",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Charousek Gambit",
+            "en-US": "Declined: Falkbeer Countergambit, Charousek Gambit",
             "pt-BR": "Recusado: Contragambito Falkbeer, Gambito Charousek",
-            "es": "Rehusado: Contragambito Falkbeer, Gambito Charousek"
+            "es-419": "Rehusado: Contragambito Falkbeer, Gambito Charousek",
+            "en-GB": "Declined: Falkbeer Countergambit, Charousek Gambit",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Gambito Charousek",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit",
+            "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek",
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
@@ -578,9 +872,15 @@
         {
           "id": "line-37f6fb8d9f76afa6",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Charousek Variation",
+            "en-US": "Declined: Falkbeer Countergambit, Charousek Variation",
             "pt-BR": "Recusado: Contragambito Falkbeer, Variante Charousek",
-            "es": "Rehusado: Contragambito Falkbeer, Variante Charousek"
+            "es-419": "Rehusado: Contragambito Falkbeer, Variante Charousek",
+            "en-GB": "Declined: Falkbeer Countergambit, Charousek Variation",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Variante Charousek",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Variante Charousek",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Variante",
+            "fr": "Refusé: Contre-gambit Falkbeer, Variante Charousek",
+            "it": "Rifiutato: Controgambetto Falkbeer, Variante Charousek"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Variation",
@@ -590,9 +890,15 @@
         {
           "id": "line-db19a2fef9a070cd",
           "names": {
-            "en": "Declined: Falkbeer Countergambit, Modern Transfer",
+            "en-US": "Declined: Falkbeer Countergambit, Modern Transfer",
             "pt-BR": "Recusado: Contragambito Falkbeer, Transferência Moderna",
-            "es": "Rehusado: Contragambito Falkbeer, Transferencia Moderna"
+            "es-419": "Rehusado: Contragambito Falkbeer, Transferencia Moderna",
+            "en-GB": "Declined: Falkbeer Countergambit, Modern Transfer",
+            "es-ES": "Rehusado: Contragambito Falkbeer, Transferencia Moderna",
+            "pt-PT": "Recusado: Contragambito Falkbeer, Transferência Moderna",
+            "de": "Abgelehnt: Falkbeer-Gegengambit, Moderner Übergang",
+            "fr": "Refusé: Contre-gambit Falkbeer, Transfert moderne",
+            "it": "Rifiutato: Controgambetto Falkbeer, Passaggio moderno"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Modern Transfer",
@@ -603,17 +909,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Kieseritzky Gambit",
+        "en-US": "Accepted: Kieseritzky Gambit",
         "pt-BR": "Aceito: Gambito Kieseritzky",
-        "es": "Aceptado: Gambito Kieseritzky"
+        "es-419": "Aceptado: Gambito Kieseritzky",
+        "en-GB": "Accepted: Kieseritzky Gambit",
+        "es-ES": "Aceptado: Gambito Kieseritzky",
+        "pt-PT": "Aceito: Gambito Kieseritzky",
+        "de": "Angenommen: Kieseritzky-Gambit",
+        "fr": "Accepté: Gambit Kieseritzky",
+        "it": "Accettato: Gambetto Kieseritzky"
       },
       "lines": [
         {
           "id": "line-c52fdd58adff0302",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit",
+            "en-US": "Accepted: Kieseritzky Gambit",
             "pt-BR": "Aceito: Gambito Kieseritzky",
-            "es": "Aceptado: Gambito Kieseritzky"
+            "es-419": "Aceptado: Gambito Kieseritzky",
+            "en-GB": "Accepted: Kieseritzky Gambit",
+            "es-ES": "Aceptado: Gambito Kieseritzky",
+            "pt-PT": "Aceito: Gambito Kieseritzky",
+            "de": "Angenommen: Kieseritzky-Gambit",
+            "fr": "Accepté: Gambit Kieseritzky",
+            "it": "Accettato: Gambetto Kieseritzky"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit",
@@ -623,9 +941,15 @@
         {
           "id": "line-e0e6d07e78914feb",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Paulsen Defense",
+            "en-US": "Accepted: Kieseritzky Gambit, Paulsen Defense",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Paulsen",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Paulsen"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Paulsen",
+            "en-GB": "Accepted: Kieseritzky Gambit, Paulsen Defence",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Paulsen",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Paulsen",
+            "de": "Angenommen: Kieseritzky-Gambit, Paulsen-Verteidigung",
+            "fr": "Accepté: Gambit Kieseritzky, Défense Paulsen",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Paulsen"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense",
@@ -635,9 +959,15 @@
         {
           "id": "line-ad94edba2ca50ead",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Neumann Defense",
+            "en-US": "Accepted: Kieseritzky Gambit, Neumann Defense",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Neumann",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Neumann"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Neumann",
+            "en-GB": "Accepted: Kieseritzky Gambit, Neumann Defence",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Neumann",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Neumann",
+            "de": "Angenommen: Kieseritzky-Gambit, Neumann-Verteidigung",
+            "fr": "Accepté: Gambit Kieseritzky, Défense Neumann",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Neumann"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Neumann Defense",
@@ -647,9 +977,15 @@
         {
           "id": "line-4c7362057e9369eb",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Berlin Defense",
+            "en-US": "Accepted: Kieseritzky Gambit, Berlin Defense",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Berlim",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Berlín"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Berlín",
+            "en-GB": "Accepted: Kieseritzky Gambit, Berlin Defence",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Berlín",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Berlim",
+            "de": "Angenommen: Kieseritzky-Gambit, Berliner Verteidigung",
+            "fr": "Accepté: Gambit Kieseritzky, Défense berlinoise",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa berlinese"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense",
@@ -659,9 +995,15 @@
         {
           "id": "line-5783e13b7942dd03",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Anderssen Defense",
+            "en-US": "Accepted: Kieseritzky Gambit, Anderssen Defense",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Anderssen",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Anderssen"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Anderssen",
+            "en-GB": "Accepted: Kieseritzky Gambit, Anderssen Defence",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Anderssen",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Anderssen",
+            "de": "Angenommen: Kieseritzky-Gambit, Anderssen-Verteidigung",
+            "fr": "Accepté: Gambit Kieseritzky, Défense Anderssen",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Anderssen"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Anderssen Defense",
@@ -671,9 +1013,15 @@
         {
           "id": "line-08fff2c2cbc0ae15",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Rice Gambit",
+            "en-US": "Accepted: Kieseritzky Gambit, Rice Gambit",
             "pt-BR": "Aceito: Gambito Kieseritzky, Gambito Rice",
-            "es": "Aceptado: Gambito Kieseritzky, Gambito Rice"
+            "es-419": "Aceptado: Gambito Kieseritzky, Gambito Rice",
+            "en-GB": "Accepted: Kieseritzky Gambit, Rice Gambit",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Gambito Rice",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Gambito Rice",
+            "de": "Angenommen: Kieseritzky-Gambit, Rice-Gambit",
+            "fr": "Accepté: Gambit Kieseritzky, Gambit Rice",
+            "it": "Accettato: Gambetto Kieseritzky, Gambetto Rice"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Rice Gambit",
@@ -683,9 +1031,15 @@
         {
           "id": "line-8b76c226bf0b5eea",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit",
+            "en-US": "Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit",
             "pt-BR": "Aceito: Gambito Kieseritzky, Gambito Anderssen-Cordel",
-            "es": "Aceptado: Gambito Kieseritzky, Gambito Anderssen-Cordel"
+            "es-419": "Aceptado: Gambito Kieseritzky, Gambito Anderssen-Cordel",
+            "en-GB": "Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Gambito Anderssen-Cordel",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Gambito Anderssen-Cordel",
+            "de": "Angenommen: Kieseritzky-Gambit, Anderssen-Cordel-Gambit",
+            "fr": "Accepté: Gambit Kieseritzky, Gambit Anderssen-Cordel",
+            "it": "Accettato: Gambetto Kieseritzky, Gambetto Anderssen-Cordel"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit",
@@ -695,9 +1049,15 @@
         {
           "id": "line-4cf02c466ab36224",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Paulsen Defense Deferred",
+            "en-US": "Accepted: Kieseritzky Gambit, Paulsen Defense Deferred",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Paulsen Adiada",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Paulsen Diferida"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Paulsen Diferida",
+            "en-GB": "Accepted: Kieseritzky Gambit, Paulsen Defence Deferred",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Paulsen Diferida",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Paulsen Adiada",
+            "de": "Angenommen: Kieseritzky-Gambit, Aufgeschobene Paulsen-Verteidigung",
+            "fr": "Accepté: Gambit Kieseritzky, Défense Paulsen différée",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Paulsen differita"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense Deferred",
@@ -707,9 +1067,15 @@
         {
           "id": "line-bb72646d7c3bc3d7",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Berlin Defense, de Riviere Variation",
+            "en-US": "Accepted: Kieseritzky Gambit, Berlin Defense, de Riviere Variation",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Berlim, Variante de Riviere",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Berlín, Variante de Riviere"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Berlín, Variante de Riviere",
+            "en-GB": "Accepted: Kieseritzky Gambit, Berlin Defence, de Riviere Variation",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Berlín, Variante de Riviere",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Berlim, Variante de Riviere",
+            "de": "Angenommen: Kieseritzky-Gambit, Berliner Verteidigung, De-Riviere-Variante",
+            "fr": "Accepté: Gambit Kieseritzky, Défense berlinoise, Variante de Rivière",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa berlinese, Variante de Rivière"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, de Riviere Variation",
@@ -719,9 +1085,15 @@
         {
           "id": "line-b78f64d159a9693c",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Berlin Defense, Rubinstein Variation",
+            "en-US": "Accepted: Kieseritzky Gambit, Berlin Defense, Rubinstein Variation",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Berlim, Variante Rubinstein",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Berlín, Variante Rubinstein"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Berlín, Variante Rubinstein",
+            "en-GB": "Accepted: Kieseritzky Gambit, Berlin Defence, Rubinstein Variation",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Berlín, Variante Rubinstein",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Berlim, Variante Rubinstein",
+            "de": "Angenommen: Kieseritzky-Gambit, Berliner Verteidigung, Rubinstein-Variante",
+            "fr": "Accepté: Gambit Kieseritzky, Défense berlinoise, Variante Rubinstein",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa berlinese, Variante Rubinstein"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, Rubinstein Variation",
@@ -731,9 +1103,15 @@
         {
           "id": "line-ab2928122f2e94c9",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Rosenthal Defense",
+            "en-US": "Accepted: Kieseritzky Gambit, Rosenthal Defense",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Rosenthal",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Rosenthal"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Rosenthal",
+            "en-GB": "Accepted: Kieseritzky Gambit, Rosenthal Defence",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Rosenthal",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Rosenthal",
+            "de": "Angenommen: Kieseritzky-Gambit, Rosenthal-Verteidigung",
+            "fr": "Accepté: Gambit Kieseritzky, Défense Rosenthal",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Rosenthal"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Rosenthal Defense",
@@ -743,9 +1121,15 @@
         {
           "id": "line-d307ca7bb6e6fcb4",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Brentano Defense",
+            "en-US": "Accepted: Kieseritzky Gambit, Brentano Defense",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Brentano",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Brentano"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Brentano",
+            "en-GB": "Accepted: Kieseritzky Gambit, Brentano Defence",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Brentano",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Brentano",
+            "de": "Angenommen: Kieseritzky-Gambit, Brentano-Verteidigung",
+            "fr": "Accepté: Gambit Kieseritzky, Défense Brentano",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Brentano"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense",
@@ -755,9 +1139,15 @@
         {
           "id": "line-6c61f7509976c8e6",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Brentano Defense",
+            "en-US": "Accepted: Kieseritzky Gambit, Brentano Defense",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Brentano",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Brentano"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Brentano",
+            "en-GB": "Accepted: Kieseritzky Gambit, Brentano Defence",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Brentano",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Brentano",
+            "de": "Angenommen: Kieseritzky-Gambit, Brentano-Verteidigung",
+            "fr": "Accepté: Gambit Kieseritzky, Défense Brentano",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Brentano"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense",
@@ -767,9 +1157,15 @@
         {
           "id": "line-207e0d566f37c894",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Brentano Defense, Caro Variation",
+            "en-US": "Accepted: Kieseritzky Gambit, Brentano Defense, Caro Variation",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Brentano, Variante Caro",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Brentano, Variante Caro"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Brentano, Variante Caro",
+            "en-GB": "Accepted: Kieseritzky Gambit, Brentano Defence, Caro Variation",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Brentano, Variante Caro",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Brentano, Variante Caro",
+            "de": "Angenommen: Kieseritzky-Gambit, Brentano-Verteidigung, Caro-Variante",
+            "fr": "Accepté: Gambit Kieseritzky, Défense Brentano, Variante Caro",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Brentano, Variante Caro"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense, Caro Variation",
@@ -779,9 +1175,15 @@
         {
           "id": "line-a86d6561f0f5e985",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Kolisch Defense",
+            "en-US": "Accepted: Kieseritzky Gambit, Kolisch Defense",
             "pt-BR": "Aceito: Gambito Kieseritzky, Defesa Kolisch",
-            "es": "Aceptado: Gambito Kieseritzky, Defensa Kolisch"
+            "es-419": "Aceptado: Gambito Kieseritzky, Defensa Kolisch",
+            "en-GB": "Accepted: Kieseritzky Gambit, Kolisch Defence",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Defensa Kolisch",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Kolisch",
+            "de": "Angenommen: Kieseritzky-Gambit, Kolisch-Verteidigung",
+            "fr": "Accepté: Gambit Kieseritzky, Défense Kolisch",
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Kolisch"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Kolisch Defense",
@@ -791,9 +1193,15 @@
         {
           "id": "line-78681137d16652b7",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Long Whip",
+            "en-US": "Accepted: Kieseritzky Gambit, Long Whip",
             "pt-BR": "Aceito: Gambito Kieseritzky, Chicote Longo",
-            "es": "Aceptado: Gambito Kieseritzky, Látigo Largo"
+            "es-419": "Aceptado: Gambito Kieseritzky, Látigo Largo",
+            "en-GB": "Accepted: Kieseritzky Gambit, Long Whip",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Látigo Largo",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Chicote Longo",
+            "de": "Angenommen: Kieseritzky-Gambit, Lange Peitsche",
+            "fr": "Accepté: Gambit Kieseritzky, Long fouet",
+            "it": "Accettato: Gambetto Kieseritzky, Frusta lunga"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Long Whip",
@@ -803,9 +1211,15 @@
         {
           "id": "line-9ca99941cbb0bf96",
           "names": {
-            "en": "Accepted: Kieseritzky Gambit, Cotter Gambit",
+            "en-US": "Accepted: Kieseritzky Gambit, Cotter Gambit",
             "pt-BR": "Aceito: Gambito Kieseritzky, Gambito Cotter",
-            "es": "Aceptado: Gambito Kieseritzky, Gambito Cotter"
+            "es-419": "Aceptado: Gambito Kieseritzky, Gambito Cotter",
+            "en-GB": "Accepted: Kieseritzky Gambit, Cotter Gambit",
+            "es-ES": "Aceptado: Gambito Kieseritzky, Gambito Cotter",
+            "pt-PT": "Aceito: Gambito Kieseritzky, Gambito Cotter",
+            "de": "Angenommen: Kieseritzky-Gambit, Cotter-Gambit",
+            "fr": "Accepté: Gambit Kieseritzky, Gambit Cotter",
+            "it": "Accettato: Gambetto Kieseritzky, Gambetto Cotter"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Cotter Gambit",
@@ -816,17 +1230,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Salvio Gambit",
+        "en-US": "Accepted: Salvio Gambit",
         "pt-BR": "Aceito: Gambito Salvio",
-        "es": "Aceptado: Gambito Salvio"
+        "es-419": "Aceptado: Gambito Salvio",
+        "en-GB": "Accepted: Salvio Gambit",
+        "es-ES": "Aceptado: Gambito Salvio",
+        "pt-PT": "Aceito: Gambito Salvio",
+        "de": "Angenommen: Salvio-Gambit",
+        "fr": "Accepté: Gambit Salvio",
+        "it": "Accettato: Gambetto Salvio"
       },
       "lines": [
         {
           "id": "line-e2ae5640b0f6ec35",
           "names": {
-            "en": "Accepted: Salvio Gambit",
+            "en-US": "Accepted: Salvio Gambit",
             "pt-BR": "Aceito: Gambito Salvio",
-            "es": "Aceptado: Gambito Salvio"
+            "es-419": "Aceptado: Gambito Salvio",
+            "en-GB": "Accepted: Salvio Gambit",
+            "es-ES": "Aceptado: Gambito Salvio",
+            "pt-PT": "Aceito: Gambito Salvio",
+            "de": "Angenommen: Salvio-Gambit",
+            "fr": "Accepté: Gambit Salvio",
+            "it": "Accettato: Gambetto Salvio"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit",
@@ -836,9 +1262,15 @@
         {
           "id": "line-10e362154fdc07b7",
           "names": {
-            "en": "Accepted: Salvio Gambit, Viennese Variation",
+            "en-US": "Accepted: Salvio Gambit, Viennese Variation",
             "pt-BR": "Aceito: Gambito Salvio, Variante Viennese",
-            "es": "Aceptado: Gambito Salvio, Variante Viennese"
+            "es-419": "Aceptado: Gambito Salvio, Variante Viennese",
+            "en-GB": "Accepted: Salvio Gambit, Viennese Variation",
+            "es-ES": "Aceptado: Gambito Salvio, Variante Viennese",
+            "pt-PT": "Aceito: Gambito Salvio, Variante Vienense",
+            "de": "Angenommen: Salvio-Gambit, Wiener Variante",
+            "fr": "Accepté: Gambit Salvio, Variante viennoise",
+            "it": "Accettato: Gambetto Salvio, Variante viennese"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Viennese Variation",
@@ -848,9 +1280,15 @@
         {
           "id": "line-5fbf1d347c09a8df",
           "names": {
-            "en": "Accepted: Salvio Gambit, Santa Maria Defense",
+            "en-US": "Accepted: Salvio Gambit, Santa Maria Defense",
             "pt-BR": "Aceito: Gambito Salvio, Defesa Santa Maria",
-            "es": "Aceptado: Gambito Salvio, Defensa Santa Maria"
+            "es-419": "Aceptado: Gambito Salvio, Defensa Santa Maria",
+            "en-GB": "Accepted: Salvio Gambit, Santa Maria Defence",
+            "es-ES": "Aceptado: Gambito Salvio, Defensa Santa Maria",
+            "pt-PT": "Aceito: Gambito Salvio, Defesa Santa Maria",
+            "de": "Angenommen: Salvio-Gambit, Santa-Maria-Verteidigung",
+            "fr": "Accepté: Gambit Salvio, Défense Santa Maria",
+            "it": "Accettato: Gambetto Salvio, Difesa Santa Maria"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Santa Maria Defense",
@@ -860,9 +1298,15 @@
         {
           "id": "line-d6873a87ddce5c08",
           "names": {
-            "en": "Accepted: Salvio Gambit, Silberschmidt Defense",
+            "en-US": "Accepted: Salvio Gambit, Silberschmidt Defense",
             "pt-BR": "Aceito: Gambito Salvio, Defesa Silberschmidt",
-            "es": "Aceptado: Gambito Salvio, Defensa Silberschmidt"
+            "es-419": "Aceptado: Gambito Salvio, Defensa Silberschmidt",
+            "en-GB": "Accepted: Salvio Gambit, Silberschmidt Defence",
+            "es-ES": "Aceptado: Gambito Salvio, Defensa Silberschmidt",
+            "pt-PT": "Aceito: Gambito Salvio, Defesa Silberschmidt",
+            "de": "Angenommen: Salvio-Gambit, Silberschmidt-Verteidigung",
+            "fr": "Accepté: Gambit Salvio, Défense Silberschmidt",
+            "it": "Accettato: Gambetto Salvio, Difesa Silberschmidt"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Silberschmidt Defense",
@@ -872,9 +1316,15 @@
         {
           "id": "line-1179e625acb9c9a4",
           "names": {
-            "en": "Accepted: Salvio Gambit, Anderssen Counterattack",
+            "en-US": "Accepted: Salvio Gambit, Anderssen Counterattack",
             "pt-BR": "Aceito: Gambito Salvio, Contra-ataque Anderssen",
-            "es": "Aceptado: Gambito Salvio, Contraataque Anderssen"
+            "es-419": "Aceptado: Gambito Salvio, Contraataque Anderssen",
+            "en-GB": "Accepted: Salvio Gambit, Anderssen Counterattack",
+            "es-ES": "Aceptado: Gambito Salvio, Contraataque Anderssen",
+            "pt-PT": "Aceito: Gambito Salvio, Contra-ataque Anderssen",
+            "de": "Angenommen: Salvio-Gambit, Anderssen-Gegenangriff",
+            "fr": "Accepté: Gambit Salvio, Contre-attaque Anderssen",
+            "it": "Accettato: Gambetto Salvio, Contrattacco Anderssen"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Anderssen Counterattack",
@@ -884,9 +1334,15 @@
         {
           "id": "line-c6ac106bb4a6122a",
           "names": {
-            "en": "Accepted: Salvio Gambit, Cochrane Gambit",
+            "en-US": "Accepted: Salvio Gambit, Cochrane Gambit",
             "pt-BR": "Aceito: Gambito Salvio, Gambito Cochrane",
-            "es": "Aceptado: Gambito Salvio, Gambito Cochrane"
+            "es-419": "Aceptado: Gambito Salvio, Gambito Cochrane",
+            "en-GB": "Accepted: Salvio Gambit, Cochrane Gambit",
+            "es-ES": "Aceptado: Gambito Salvio, Gambito Cochrane",
+            "pt-PT": "Aceito: Gambito Salvio, Gambito Cochrane",
+            "de": "Angenommen: Salvio-Gambit, Cochrane-Gambit",
+            "fr": "Accepté: Gambit Salvio, Gambit Cochrane",
+            "it": "Accettato: Gambetto Salvio, Gambetto Cochrane"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Cochrane Gambit",
@@ -897,17 +1353,29 @@
     },
     {
       "names": {
-        "en": "Declined: Classical Variation",
+        "en-US": "Declined: Classical Variation",
         "pt-BR": "Recusado: Variante Clássica",
-        "es": "Rehusado: Variante Clásica"
+        "es-419": "Rehusado: Variante Clásica",
+        "en-GB": "Declined: Classical Variation",
+        "es-ES": "Rehusado: Variante Clásica",
+        "pt-PT": "Recusado: Variante Clássica",
+        "de": "Abgelehnt: Klassische Variante",
+        "fr": "Refusé: Variante classique",
+        "it": "Rifiutato: Variante classica"
       },
       "lines": [
         {
           "id": "line-934318f046fa9fd4",
           "names": {
-            "en": "Declined: Classical Variation",
+            "en-US": "Declined: Classical Variation",
             "pt-BR": "Recusado: Variante Clássica",
-            "es": "Rehusado: Variante Clásica"
+            "es-419": "Rehusado: Variante Clásica",
+            "en-GB": "Declined: Classical Variation",
+            "es-ES": "Rehusado: Variante Clásica",
+            "pt-PT": "Recusado: Variante Clássica",
+            "de": "Abgelehnt: Klassische Variante",
+            "fr": "Refusé: Variante classique",
+            "it": "Rifiutato: Variante classica"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation",
@@ -917,9 +1385,15 @@
         {
           "id": "line-e2d87e737c075aa4",
           "names": {
-            "en": "Declined: Classical Variation, Rotlewi Countergambit",
+            "en-US": "Declined: Classical Variation, Rotlewi Countergambit",
             "pt-BR": "Recusado: Variante Clássica, Contragambito Rotlewi",
-            "es": "Rehusado: Variante Clásica, Contragambito Rotlewi"
+            "es-419": "Rehusado: Variante Clásica, Contragambito Rotlewi",
+            "en-GB": "Declined: Classical Variation, Rotlewi Countergambit",
+            "es-ES": "Rehusado: Variante Clásica, Contragambito Rotlewi",
+            "pt-PT": "Recusado: Variante Clássica, Contragambito Rotlewi",
+            "de": "Abgelehnt: Klassische Variante, Rotlewi-Gegengambit",
+            "fr": "Refusé: Variante classique, Contre-gambit Rotlewi",
+            "it": "Rifiutato: Variante classica, Controgambetto Rotlewi"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Rotlewi Countergambit",
@@ -929,9 +1403,15 @@
         {
           "id": "line-a62025900f322d9f",
           "names": {
-            "en": "Declined: Classical Variation",
+            "en-US": "Declined: Classical Variation",
             "pt-BR": "Recusado: Variante Clássica",
-            "es": "Rehusado: Variante Clásica"
+            "es-419": "Rehusado: Variante Clásica",
+            "en-GB": "Declined: Classical Variation",
+            "es-ES": "Rehusado: Variante Clásica",
+            "pt-PT": "Recusado: Variante Clássica",
+            "de": "Abgelehnt: Klassische Variante",
+            "fr": "Refusé: Variante classique",
+            "it": "Rifiutato: Variante classica"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation",
@@ -941,9 +1421,15 @@
         {
           "id": "line-e64cf7a91cfb02bb",
           "names": {
-            "en": "Declined: Classical Variation, Euwe Attack",
+            "en-US": "Declined: Classical Variation, Euwe Attack",
             "pt-BR": "Recusado: Variante Clássica, Ataque Euwe",
-            "es": "Rehusado: Variante Clásica, Ataque Euwe"
+            "es-419": "Rehusado: Variante Clásica, Ataque Euwe",
+            "en-GB": "Declined: Classical Variation, Euwe Attack",
+            "es-ES": "Rehusado: Variante Clásica, Ataque Euwe",
+            "pt-PT": "Recusado: Variante Clássica, Ataque Euwe",
+            "de": "Abgelehnt: Klassische Variante, Euwe-Angriff",
+            "fr": "Refusé: Variante classique, Attaque Euwe",
+            "it": "Rifiutato: Variante classica, Attacco Euwe"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Euwe Attack",
@@ -953,9 +1439,15 @@
         {
           "id": "line-34b872698f0ed40b",
           "names": {
-            "en": "Declined: Classical Variation, Rubinstein Countergambit",
+            "en-US": "Declined: Classical Variation, Rubinstein Countergambit",
             "pt-BR": "Recusado: Variante Clássica, Contragambito Rubinstein",
-            "es": "Rehusado: Variante Clásica, Contragambito Rubinstein"
+            "es-419": "Rehusado: Variante Clásica, Contragambito Rubinstein",
+            "en-GB": "Declined: Classical Variation, Rubinstein Countergambit",
+            "es-ES": "Rehusado: Variante Clásica, Contragambito Rubinstein",
+            "pt-PT": "Recusado: Variante Clássica, Contragambito Rubinstein",
+            "de": "Abgelehnt: Klassische Variante, Rubinstein-Gegengambit",
+            "fr": "Refusé: Variante classique, Contre-gambit Rubinstein",
+            "it": "Rifiutato: Variante classica, Controgambetto Rubinstein"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Rubinstein Countergambit",
@@ -965,9 +1457,15 @@
         {
           "id": "line-0f9a42689e8781bb",
           "names": {
-            "en": "Declined: Classical Variation, Walthoffen Attack",
+            "en-US": "Declined: Classical Variation, Walthoffen Attack",
             "pt-BR": "Recusado: Variante Clássica, Ataque Walthoffen",
-            "es": "Rehusado: Variante Clásica, Ataque Walthoffen"
+            "es-419": "Rehusado: Variante Clásica, Ataque Walthoffen",
+            "en-GB": "Declined: Classical Variation, Walthoffen Attack",
+            "es-ES": "Rehusado: Variante Clásica, Ataque Walthoffen",
+            "pt-PT": "Recusado: Variante Clássica, Ataque Walthoffen",
+            "de": "Abgelehnt: Klassische Variante, Walthoffen-Angriff",
+            "fr": "Refusé: Variante classique, Attaque Walthoffen",
+            "it": "Rifiutato: Variante classica, Attacco Walthoffen"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Walthoffen Attack",
@@ -978,17 +1476,29 @@
     },
     {
       "names": {
-        "en": "Declined: Panteldakis Countergambit",
+        "en-US": "Declined: Panteldakis Countergambit",
         "pt-BR": "Recusado: Contragambito Panteldakis",
-        "es": "Rehusado: Contragambito Panteldakis"
+        "es-419": "Rehusado: Contragambito Panteldakis",
+        "en-GB": "Declined: Panteldakis Countergambit",
+        "es-ES": "Rehusado: Contragambito Panteldakis",
+        "pt-PT": "Recusado: Contragambito Panteldakis",
+        "de": "Abgelehnt: Panteldakis-Gegengambit",
+        "fr": "Refusé: Contre-gambit Panteldakis",
+        "it": "Rifiutato: Controgambetto Panteldakis"
       },
       "lines": [
         {
           "id": "line-7484088714f3cf73",
           "names": {
-            "en": "Declined: Panteldakis Countergambit",
+            "en-US": "Declined: Panteldakis Countergambit",
             "pt-BR": "Recusado: Contragambito Panteldakis",
-            "es": "Rehusado: Contragambito Panteldakis"
+            "es-419": "Rehusado: Contragambito Panteldakis",
+            "en-GB": "Declined: Panteldakis Countergambit",
+            "es-ES": "Rehusado: Contragambito Panteldakis",
+            "pt-PT": "Recusado: Contragambito Panteldakis",
+            "de": "Abgelehnt: Panteldakis-Gegengambit",
+            "fr": "Refusé: Contre-gambit Panteldakis",
+            "it": "Rifiutato: Controgambetto Panteldakis"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit",
@@ -998,9 +1508,15 @@
         {
           "id": "line-375f13ae4f0630f9",
           "names": {
-            "en": "Declined: Panteldakis Countergambit, Schiller's Defense",
+            "en-US": "Declined: Panteldakis Countergambit, Schiller's Defense",
             "pt-BR": "Recusado: Contragambito Panteldakis, Defesa Schiller",
-            "es": "Rehusado: Contragambito Panteldakis, Defensa Schiller"
+            "es-419": "Rehusado: Contragambito Panteldakis, Defensa Schiller",
+            "en-GB": "Declined: Panteldakis Countergambit, Schiller's Defence",
+            "es-ES": "Rehusado: Contragambito Panteldakis, Defensa Schiller",
+            "pt-PT": "Recusado: Contragambito Panteldakis, Defesa Schiller",
+            "de": "Abgelehnt: Panteldakis-Gegengambit, Schiller's-Verteidigung",
+            "fr": "Refusé: Contre-gambit Panteldakis, Défense Schiller's",
+            "it": "Rifiutato: Controgambetto Panteldakis, Difesa Schiller's"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Schiller's Defense",
@@ -1010,9 +1526,15 @@
         {
           "id": "line-e26f4f72ed2d9d4f",
           "names": {
-            "en": "Declined: Panteldakis Countergambit, Greco Variation",
+            "en-US": "Declined: Panteldakis Countergambit, Greco Variation",
             "pt-BR": "Recusado: Contragambito Panteldakis, Variante Greco",
-            "es": "Rehusado: Contragambito Panteldakis, Variante Greco"
+            "es-419": "Rehusado: Contragambito Panteldakis, Variante Greco",
+            "en-GB": "Declined: Panteldakis Countergambit, Greco Variation",
+            "es-ES": "Rehusado: Contragambito Panteldakis, Variante Greco",
+            "pt-PT": "Recusado: Contragambito Panteldakis, Variante Greco",
+            "de": "Abgelehnt: Panteldakis-Gegengambit, Greco-Variante",
+            "fr": "Refusé: Contre-gambit Panteldakis, Variante Greco",
+            "it": "Rifiutato: Controgambetto Panteldakis, Variante Greco"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Greco Variation",
@@ -1022,9 +1544,15 @@
         {
           "id": "line-73ac5360a1052517",
           "names": {
-            "en": "Declined: Panteldakis Countergambit, Symmetrical Variation",
+            "en-US": "Declined: Panteldakis Countergambit, Symmetrical Variation",
             "pt-BR": "Recusado: Contragambito Panteldakis, Variante Simétrica",
-            "es": "Rehusado: Contragambito Panteldakis, Variante Simétrica"
+            "es-419": "Rehusado: Contragambito Panteldakis, Variante Simétrica",
+            "en-GB": "Declined: Panteldakis Countergambit, Symmetrical Variation",
+            "es-ES": "Rehusado: Contragambito Panteldakis, Variante Simétrica",
+            "pt-PT": "Recusado: Contragambito Panteldakis, Variante Simétrica",
+            "de": "Abgelehnt: Panteldakis-Gegengambit, Symmetrische Variante",
+            "fr": "Refusé: Contre-gambit Panteldakis, Variante symétrique",
+            "it": "Rifiutato: Controgambetto Panteldakis, Variante simmetrica"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Symmetrical Variation",
@@ -1034,9 +1562,15 @@
         {
           "id": "line-0ff57737d5e06dc1",
           "names": {
-            "en": "Declined: Panteldakis Countergambit, Shirazi Line",
+            "en-US": "Declined: Panteldakis Countergambit, Shirazi Line",
             "pt-BR": "Recusado: Contragambito Panteldakis, Linha Shirazi",
-            "es": "Rehusado: Contragambito Panteldakis, Línea Shirazi"
+            "es-419": "Rehusado: Contragambito Panteldakis, Línea Shirazi",
+            "en-GB": "Declined: Panteldakis Countergambit, Shirazi Line",
+            "es-ES": "Rehusado: Contragambito Panteldakis, Línea Shirazi",
+            "pt-PT": "Recusado: Contragambito Panteldakis, Linha Shirazi",
+            "de": "Abgelehnt: Panteldakis-Gegengambit, Shirazi-Abspiel",
+            "fr": "Refusé: Contre-gambit Panteldakis, Ligne Shirazi",
+            "it": "Rifiutato: Controgambetto Panteldakis, Linea Shirazi"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Shirazi Line",
@@ -1046,9 +1580,15 @@
         {
           "id": "line-fbc8d2af1b344c52",
           "names": {
-            "en": "Declined: Panteldakis Countergambit, Pawn Sacrifice Line",
+            "en-US": "Declined: Panteldakis Countergambit, Pawn Sacrifice Line",
             "pt-BR": "Recusado: Contragambito Panteldakis, Linha do Sacrifício de Peão",
-            "es": "Rehusado: Contragambito Panteldakis, Línea del Sacrificio de Peón"
+            "es-419": "Rehusado: Contragambito Panteldakis, Línea del Sacrificio de Peón",
+            "en-GB": "Declined: Panteldakis Countergambit, Pawn Sacrifice Line",
+            "es-ES": "Rehusado: Contragambito Panteldakis, Línea del Sacrificio de Peón",
+            "pt-PT": "Recusado: Contragambito Panteldakis, Linha do Sacrifício de Peão",
+            "de": "Abgelehnt: Panteldakis-Gegengambit, Bauernopfer-Abspiel",
+            "fr": "Refusé: Contre-gambit Panteldakis, Ligne du sacrifice de pion",
+            "it": "Rifiutato: Controgambetto Panteldakis, Linea del sacrificio di pedone"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Pawn Sacrifice Line",
@@ -1059,17 +1599,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Allgaier",
+        "en-US": "Accepted: Allgaier",
         "pt-BR": "Aceito: Allgaier",
-        "es": "Aceptado: Allgaier"
+        "es-419": "Aceptado: Allgaier",
+        "en-GB": "Accepted: Allgaier",
+        "es-ES": "Aceptado: Allgaier",
+        "pt-PT": "Aceito: Allgaier",
+        "de": "Angenommen: Allgaier",
+        "fr": "Accepté: Allgaier",
+        "it": "Accettato: Allgaier"
       },
       "lines": [
         {
           "id": "line-55fd71201511c403",
           "names": {
-            "en": "Accepted: Allgaier, Schlechter Defense",
+            "en-US": "Accepted: Allgaier, Schlechter Defense",
             "pt-BR": "Aceito: Allgaier, Defesa Schlechter",
-            "es": "Aceptado: Allgaier, Defensa Schlechter"
+            "es-419": "Aceptado: Allgaier, Defensa Schlechter",
+            "en-GB": "Accepted: Allgaier, Schlechter Defence",
+            "es-ES": "Aceptado: Allgaier, Defensa Schlechter",
+            "pt-PT": "Aceito: Allgaier, Defesa Schlechter",
+            "de": "Angenommen: Allgaier, Schlechter-Verteidigung",
+            "fr": "Accepté: Allgaier, Défense Schlechter",
+            "it": "Accettato: Allgaier, Difesa Schlechter"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Schlechter Defense",
@@ -1079,9 +1631,15 @@
         {
           "id": "line-5d5674ff56cd6ff0",
           "names": {
-            "en": "Accepted: Allgaier, Urusov Attack",
+            "en-US": "Accepted: Allgaier, Urusov Attack",
             "pt-BR": "Aceito: Allgaier, Ataque Urusov",
-            "es": "Aceptado: Allgaier, Ataque Urusov"
+            "es-419": "Aceptado: Allgaier, Ataque Urusov",
+            "en-GB": "Accepted: Allgaier, Urusov Attack",
+            "es-ES": "Aceptado: Allgaier, Ataque Urusov",
+            "pt-PT": "Aceito: Allgaier, Ataque Urusov",
+            "de": "Angenommen: Allgaier, Urussow-Angriff",
+            "fr": "Accepté: Allgaier, Attaque Ourousov",
+            "it": "Accettato: Allgaier, Attacco Urusov"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Urusov Attack",
@@ -1091,9 +1649,15 @@
         {
           "id": "line-01f6b5f458655f3b",
           "names": {
-            "en": "Accepted: Allgaier, Blackburne Gambit",
+            "en-US": "Accepted: Allgaier, Blackburne Gambit",
             "pt-BR": "Aceito: Allgaier, Gambito Blackburne",
-            "es": "Aceptado: Allgaier, Gambito Blackburne"
+            "es-419": "Aceptado: Allgaier, Gambito Blackburne",
+            "en-GB": "Accepted: Allgaier, Blackburne Gambit",
+            "es-ES": "Aceptado: Allgaier, Gambito Blackburne",
+            "pt-PT": "Aceito: Allgaier, Gambito Blackburne",
+            "de": "Angenommen: Allgaier, Blackburne-Gambit",
+            "fr": "Accepté: Allgaier, Gambit Blackburne",
+            "it": "Accettato: Allgaier, Gambetto Blackburne"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Blackburne Gambit",
@@ -1103,9 +1667,15 @@
         {
           "id": "line-495f7b50195d2bff",
           "names": {
-            "en": "Accepted: Allgaier, Horny Defense",
+            "en-US": "Accepted: Allgaier, Horny Defense",
             "pt-BR": "Aceito: Allgaier, Defesa Horny",
-            "es": "Aceptado: Allgaier, Defensa Horny"
+            "es-419": "Aceptado: Allgaier, Defensa Horny",
+            "en-GB": "Accepted: Allgaier, Horny Defence",
+            "es-ES": "Aceptado: Allgaier, Defensa Horny",
+            "pt-PT": "Aceito: Allgaier, Defesa Horny",
+            "de": "Angenommen: Allgaier, Horny-Verteidigung",
+            "fr": "Accepté: Allgaier, Défense Horny",
+            "it": "Accettato: Allgaier, Difesa Horny"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Horny Defense",
@@ -1115,9 +1685,15 @@
         {
           "id": "line-3c20fe22b99ef29e",
           "names": {
-            "en": "Accepted: Allgaier, Cook Variation",
+            "en-US": "Accepted: Allgaier, Cook Variation",
             "pt-BR": "Aceito: Allgaier, Variante Cook",
-            "es": "Aceptado: Allgaier, Variante Cook"
+            "es-419": "Aceptado: Allgaier, Variante Cook",
+            "en-GB": "Accepted: Allgaier, Cook Variation",
+            "es-ES": "Aceptado: Allgaier, Variante Cook",
+            "pt-PT": "Aceito: Allgaier, Variante Cook",
+            "de": "Angenommen: Allgaier, Cook-Variante",
+            "fr": "Accepté: Allgaier, Variante Cook",
+            "it": "Accettato: Allgaier, Variante Cook"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Cook Variation",
@@ -1128,17 +1704,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Double Muzio Gambit",
+        "en-US": "Accepted: Double Muzio Gambit",
         "pt-BR": "Aceito: Gambito Muzio Duplo",
-        "es": "Aceptado: Doble Gambito Muzio"
+        "es-419": "Aceptado: Doble Gambito Muzio",
+        "en-GB": "Accepted: Double Muzio Gambit",
+        "es-ES": "Aceptado: Doble Gambito Muzio",
+        "pt-PT": "Aceito: Gambito Muzio Duplo",
+        "de": "Angenommen: Doppeltes Muzio-Gambit",
+        "fr": "Accepté: Double gambit Muzio",
+        "it": "Accettato: Doppio gambetto Muzio"
       },
       "lines": [
         {
           "id": "line-b609016a64d49e86",
           "names": {
-            "en": "Accepted: Double Muzio Gambit, Young Gambit",
+            "en-US": "Accepted: Double Muzio Gambit, Young Gambit",
             "pt-BR": "Aceito: Gambito Muzio Duplo, Gambito Young",
-            "es": "Aceptado: Doble Gambito Muzio, Gambito Young"
+            "es-419": "Aceptado: Doble Gambito Muzio, Gambito Young",
+            "en-GB": "Accepted: Double Muzio Gambit, Young Gambit",
+            "es-ES": "Aceptado: Doble Gambito Muzio, Gambito Young",
+            "pt-PT": "Aceito: Gambito Muzio Duplo, Gambito Young",
+            "de": "Angenommen: Doppeltes Muzio-Gambit, Young-Gambit",
+            "fr": "Accepté: Double gambit Muzio, Gambit Young",
+            "it": "Accettato: Doppio gambetto Muzio, Gambetto Young"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Young Gambit",
@@ -1148,9 +1736,15 @@
         {
           "id": "line-4f53e09fe633af92",
           "names": {
-            "en": "Accepted: Double Muzio Gambit, Bello Gambit",
+            "en-US": "Accepted: Double Muzio Gambit, Bello Gambit",
             "pt-BR": "Aceito: Gambito Muzio Duplo, Gambito Bello",
-            "es": "Aceptado: Doble Gambito Muzio, Gambito Bello"
+            "es-419": "Aceptado: Doble Gambito Muzio, Gambito Bello",
+            "en-GB": "Accepted: Double Muzio Gambit, Bello Gambit",
+            "es-ES": "Aceptado: Doble Gambito Muzio, Gambito Bello",
+            "pt-PT": "Aceito: Gambito Muzio Duplo, Gambito Bello",
+            "de": "Angenommen: Doppeltes Muzio-Gambit, Bello-Gambit",
+            "fr": "Accepté: Double gambit Muzio, Gambit Bello",
+            "it": "Accettato: Doppio gambetto Muzio, Gambetto Bello"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Bello Gambit",
@@ -1160,9 +1754,15 @@
         {
           "id": "line-6175cbcf81fd32c4",
           "names": {
-            "en": "Accepted: Double Muzio Gambit, Baldwin Gambit",
+            "en-US": "Accepted: Double Muzio Gambit, Baldwin Gambit",
             "pt-BR": "Aceito: Gambito Muzio Duplo, Gambito Baldwin",
-            "es": "Aceptado: Doble Gambito Muzio, Gambito Baldwin"
+            "es-419": "Aceptado: Doble Gambito Muzio, Gambito Baldwin",
+            "en-GB": "Accepted: Double Muzio Gambit, Baldwin Gambit",
+            "es-ES": "Aceptado: Doble Gambito Muzio, Gambito Baldwin",
+            "pt-PT": "Aceito: Gambito Muzio Duplo, Gambito Baldwin",
+            "de": "Angenommen: Doppeltes Muzio-Gambit, Baldwin-Gambit",
+            "fr": "Accepté: Double gambit Muzio, Gambit Baldwin",
+            "it": "Accettato: Doppio gambetto Muzio, Gambetto Baldwin"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Baldwin Gambit",
@@ -1172,9 +1772,15 @@
         {
           "id": "line-57946b401ea401a6",
           "names": {
-            "en": "Accepted: Double Muzio Gambit",
+            "en-US": "Accepted: Double Muzio Gambit",
             "pt-BR": "Aceito: Gambito Muzio Duplo",
-            "es": "Aceptado: Doble Gambito Muzio"
+            "es-419": "Aceptado: Doble Gambito Muzio",
+            "en-GB": "Accepted: Double Muzio Gambit",
+            "es-ES": "Aceptado: Doble Gambito Muzio",
+            "pt-PT": "Aceito: Gambito Muzio Duplo",
+            "de": "Angenommen: Doppeltes Muzio-Gambit",
+            "fr": "Accepté: Double gambit Muzio",
+            "it": "Accettato: Doppio gambetto Muzio"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit",
@@ -1184,9 +1790,15 @@
         {
           "id": "line-55d63d4497468aec",
           "names": {
-            "en": "Accepted: Double Muzio Gambit, Paulsen Defense",
+            "en-US": "Accepted: Double Muzio Gambit, Paulsen Defense",
             "pt-BR": "Aceito: Gambito Muzio Duplo, Defesa Paulsen",
-            "es": "Aceptado: Doble Gambito Muzio, Defensa Paulsen"
+            "es-419": "Aceptado: Doble Gambito Muzio, Defensa Paulsen",
+            "en-GB": "Accepted: Double Muzio Gambit, Paulsen Defence",
+            "es-ES": "Aceptado: Doble Gambito Muzio, Defensa Paulsen",
+            "pt-PT": "Aceito: Gambito Muzio Duplo, Defesa Paulsen",
+            "de": "Angenommen: Doppeltes Muzio-Gambit, Paulsen-Verteidigung",
+            "fr": "Accepté: Double gambit Muzio, Défense Paulsen",
+            "it": "Accettato: Doppio gambetto Muzio, Difesa Paulsen"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Paulsen Defense",
@@ -1197,17 +1809,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Muzio Gambit",
+        "en-US": "Accepted: Muzio Gambit",
         "pt-BR": "Aceito: Gambito Muzio",
-        "es": "Aceptado: Gambito Muzio"
+        "es-419": "Aceptado: Gambito Muzio",
+        "en-GB": "Accepted: Muzio Gambit",
+        "es-ES": "Aceptado: Gambito Muzio",
+        "pt-PT": "Aceito: Gambito Muzio",
+        "de": "Angenommen: Muzio-Gambit",
+        "fr": "Accepté: Gambit Muzio",
+        "it": "Accettato: Gambetto Muzio"
       },
       "lines": [
         {
           "id": "line-27851c768680be3c",
           "names": {
-            "en": "Accepted: Muzio Gambit, Wild Muzio Gambit",
+            "en-US": "Accepted: Muzio Gambit, Wild Muzio Gambit",
             "pt-BR": "Aceito: Gambito Muzio, Gambito Muzio Selvagem",
-            "es": "Aceptado: Gambito Muzio, Gambito Muzio Salvaje"
+            "es-419": "Aceptado: Gambito Muzio, Gambito Muzio Salvaje",
+            "en-GB": "Accepted: Muzio Gambit, Wild Muzio Gambit",
+            "es-ES": "Aceptado: Gambito Muzio, Gambito Muzio Salvaje",
+            "pt-PT": "Aceito: Gambito Muzio, Gambito Muzio Selvagem",
+            "de": "Angenommen: Muzio-Gambit, Wildes Muzio-Gambit",
+            "fr": "Accepté: Gambit Muzio, Gambit Muzio sauvage",
+            "it": "Accettato: Gambetto Muzio, Gambetto Muzio selvaggio"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Wild Muzio Gambit",
@@ -1217,9 +1841,15 @@
         {
           "id": "line-70c41c832d1372d6",
           "names": {
-            "en": "Accepted: Muzio Gambit, Kling and Horwitz Counterattack",
+            "en-US": "Accepted: Muzio Gambit, Kling and Horwitz Counterattack",
             "pt-BR": "Aceito: Gambito Muzio, Contra-ataque Kling e Horwitz",
-            "es": "Aceptado: Gambito Muzio, Contraataque Kling y Horwitz"
+            "es-419": "Aceptado: Gambito Muzio, Contraataque Kling y Horwitz",
+            "en-GB": "Accepted: Muzio Gambit, Kling and Horwitz Counterattack",
+            "es-ES": "Aceptado: Gambito Muzio, Contraataque Kling y Horwitz",
+            "pt-PT": "Aceito: Gambito Muzio, Contra-ataque Kling e Horwitz",
+            "de": "Angenommen: Muzio-Gambit, Kling-und-Horwitz-Gegenangriff",
+            "fr": "Accepté: Gambit Muzio, Contre-attaque Kling et Horwitz",
+            "it": "Accettato: Gambetto Muzio, Contrattacco Kling e Horwitz"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Kling and Horwitz Counterattack",
@@ -1229,9 +1859,15 @@
         {
           "id": "line-a93c46064a1052f0",
           "names": {
-            "en": "Accepted: Muzio Gambit, Brentano Defense",
+            "en-US": "Accepted: Muzio Gambit, Brentano Defense",
             "pt-BR": "Aceito: Gambito Muzio, Defesa Brentano",
-            "es": "Aceptado: Gambito Muzio, Defensa Brentano"
+            "es-419": "Aceptado: Gambito Muzio, Defensa Brentano",
+            "en-GB": "Accepted: Muzio Gambit, Brentano Defence",
+            "es-ES": "Aceptado: Gambito Muzio, Defensa Brentano",
+            "pt-PT": "Aceito: Gambito Muzio, Defesa Brentano",
+            "de": "Angenommen: Muzio-Gambit, Brentano-Verteidigung",
+            "fr": "Accepté: Gambit Muzio, Défense Brentano",
+            "it": "Accettato: Gambetto Muzio, Difesa Brentano"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Brentano Defense",
@@ -1241,9 +1877,15 @@
         {
           "id": "line-2d8b1b398de3c5d7",
           "names": {
-            "en": "Accepted: Muzio Gambit, Holloway Defense",
+            "en-US": "Accepted: Muzio Gambit, Holloway Defense",
             "pt-BR": "Aceito: Gambito Muzio, Defesa Holloway",
-            "es": "Aceptado: Gambito Muzio, Defensa Holloway"
+            "es-419": "Aceptado: Gambito Muzio, Defensa Holloway",
+            "en-GB": "Accepted: Muzio Gambit, Holloway Defence",
+            "es-ES": "Aceptado: Gambito Muzio, Defensa Holloway",
+            "pt-PT": "Aceito: Gambito Muzio, Defesa Holloway",
+            "de": "Angenommen: Muzio-Gambit, Holloway-Verteidigung",
+            "fr": "Accepté: Gambit Muzio, Défense Holloway",
+            "it": "Accettato: Gambetto Muzio, Difesa Holloway"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Holloway Defense",
@@ -1253,9 +1895,15 @@
         {
           "id": "line-4d9794be424356d1",
           "names": {
-            "en": "Accepted: Muzio Gambit, Sarratt Defense",
+            "en-US": "Accepted: Muzio Gambit, Sarratt Defense",
             "pt-BR": "Aceito: Gambito Muzio, Defesa Sarratt",
-            "es": "Aceptado: Gambito Muzio, Defensa Sarratt"
+            "es-419": "Aceptado: Gambito Muzio, Defensa Sarratt",
+            "en-GB": "Accepted: Muzio Gambit, Sarratt Defence",
+            "es-ES": "Aceptado: Gambito Muzio, Defensa Sarratt",
+            "pt-PT": "Aceito: Gambito Muzio, Defesa Sarratt",
+            "de": "Angenommen: Muzio-Gambit, Sarratt-Verteidigung",
+            "fr": "Accepté: Gambit Muzio, Défense Sarratt",
+            "it": "Accettato: Gambetto Muzio, Difesa Sarratt"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Sarratt Defense",
@@ -1266,17 +1914,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Cunningham Defense",
+        "en-US": "Accepted: Cunningham Defense",
         "pt-BR": "Aceito: Defesa Cunningham",
-        "es": "Aceptado: Defensa Cunningham"
+        "es-419": "Aceptado: Defensa Cunningham",
+        "en-GB": "Accepted: Cunningham Defence",
+        "es-ES": "Aceptado: Defensa Cunningham",
+        "pt-PT": "Aceito: Defesa Cunningham",
+        "de": "Angenommen: Cunningham-Verteidigung",
+        "fr": "Accepté: Défense Cunningham",
+        "it": "Accettato: Difesa Cunningham"
       },
       "lines": [
         {
           "id": "line-31146d4cd7c2e63d",
           "names": {
-            "en": "Accepted: Cunningham Defense",
+            "en-US": "Accepted: Cunningham Defense",
             "pt-BR": "Aceito: Defesa Cunningham",
-            "es": "Aceptado: Defensa Cunningham"
+            "es-419": "Aceptado: Defensa Cunningham",
+            "en-GB": "Accepted: Cunningham Defence",
+            "es-ES": "Aceptado: Defensa Cunningham",
+            "pt-PT": "Aceito: Defesa Cunningham",
+            "de": "Angenommen: Cunningham-Verteidigung",
+            "fr": "Accepté: Défense Cunningham",
+            "it": "Accettato: Difesa Cunningham"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense",
@@ -1286,9 +1946,15 @@
         {
           "id": "line-afface7344c9ea68",
           "names": {
-            "en": "Accepted: Cunningham Defense, Bertin Gambit",
+            "en-US": "Accepted: Cunningham Defense, Bertin Gambit",
             "pt-BR": "Aceito: Defesa Cunningham, Gambito Bertin",
-            "es": "Aceptado: Defensa Cunningham, Gambito Bertin"
+            "es-419": "Aceptado: Defensa Cunningham, Gambito Bertin",
+            "en-GB": "Accepted: Cunningham Defence, Bertin Gambit",
+            "es-ES": "Aceptado: Defensa Cunningham, Gambito Bertin",
+            "pt-PT": "Aceito: Defesa Cunningham, Gambito Bertin",
+            "de": "Angenommen: Cunningham-Verteidigung, Bertin-Gambit",
+            "fr": "Accepté: Défense Cunningham, Gambit Bertin",
+            "it": "Accettato: Difesa Cunningham, Gambetto Bertin"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense, Bertin Gambit",
@@ -1298,9 +1964,15 @@
         {
           "id": "line-00fc98d784aa3620",
           "names": {
-            "en": "Accepted: Cunningham Defense, Bertin Gambit",
+            "en-US": "Accepted: Cunningham Defense, Bertin Gambit",
             "pt-BR": "Aceito: Defesa Cunningham, Gambito Bertin",
-            "es": "Aceptado: Defensa Cunningham, Gambito Bertin"
+            "es-419": "Aceptado: Defensa Cunningham, Gambito Bertin",
+            "en-GB": "Accepted: Cunningham Defence, Bertin Gambit",
+            "es-ES": "Aceptado: Defensa Cunningham, Gambito Bertin",
+            "pt-PT": "Aceito: Defesa Cunningham, Gambito Bertin",
+            "de": "Angenommen: Cunningham-Verteidigung, Bertin-Gambit",
+            "fr": "Accepté: Défense Cunningham, Gambit Bertin",
+            "it": "Accettato: Difesa Cunningham, Gambetto Bertin"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense, Bertin Gambit",
@@ -1310,9 +1982,15 @@
         {
           "id": "line-6f23d08e3593d4a4",
           "names": {
-            "en": "Accepted: Cunningham Defense, McCormick Defense",
+            "en-US": "Accepted: Cunningham Defense, McCormick Defense",
             "pt-BR": "Aceito: Defesa Cunningham, Defesa McCormick",
-            "es": "Aceptado: Defensa Cunningham, Defensa McCormick"
+            "es-419": "Aceptado: Defensa Cunningham, Defensa McCormick",
+            "en-GB": "Accepted: Cunningham Defence, McCormick Defence",
+            "es-ES": "Aceptado: Defensa Cunningham, Defensa McCormick",
+            "pt-PT": "Aceito: Defesa Cunningham, Defesa McCormick",
+            "de": "Angenommen: Cunningham-Verteidigung, McCormick-Verteidigung",
+            "fr": "Accepté: Défense Cunningham, Défense McCormick",
+            "it": "Accettato: Difesa Cunningham, Difesa McCormick"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense, McCormick Defense",
@@ -1323,17 +2001,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Kieseritzky",
+        "en-US": "Accepted: Kieseritzky",
         "pt-BR": "Aceito: Kieseritzky",
-        "es": "Aceptado: Kieseritzky"
+        "es-419": "Aceptado: Kieseritzky",
+        "en-GB": "Accepted: Kieseritzky",
+        "es-ES": "Aceptado: Kieseritzky",
+        "pt-PT": "Aceito: Kieseritzky",
+        "de": "Angenommen: Kieseritzky",
+        "fr": "Accepté: Kieseritzky",
+        "it": "Accettato: Kieseritzky"
       },
       "lines": [
         {
           "id": "line-3a5fd7862e207673",
           "names": {
-            "en": "Accepted: Kieseritzky, Polerio Defense",
+            "en-US": "Accepted: Kieseritzky, Polerio Defense",
             "pt-BR": "Aceito: Kieseritzky, Defesa Polerio",
-            "es": "Aceptado: Kieseritzky, Defensa Polerio"
+            "es-419": "Aceptado: Kieseritzky, Defensa Polerio",
+            "en-GB": "Accepted: Kieseritzky, Polerio Defence",
+            "es-ES": "Aceptado: Kieseritzky, Defensa Polerio",
+            "pt-PT": "Aceito: Kieseritzky, Defesa Polerio",
+            "de": "Angenommen: Kieseritzky, Polerio-Verteidigung",
+            "fr": "Accepté: Kieseritzky, Défense Polerio",
+            "it": "Accettato: Kieseritzky, Difesa Polerio"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Polerio Defense",
@@ -1343,9 +2033,15 @@
         {
           "id": "line-351acca904349460",
           "names": {
-            "en": "Accepted: Kieseritzky, Rice Gambit",
+            "en-US": "Accepted: Kieseritzky, Rice Gambit",
             "pt-BR": "Aceito: Kieseritzky, Gambito Rice",
-            "es": "Aceptado: Kieseritzky, Gambito Rice"
+            "es-419": "Aceptado: Kieseritzky, Gambito Rice",
+            "en-GB": "Accepted: Kieseritzky, Rice Gambit",
+            "es-ES": "Aceptado: Kieseritzky, Gambito Rice",
+            "pt-PT": "Aceito: Kieseritzky, Gambito Rice",
+            "de": "Angenommen: Kieseritzky, Rice-Gambit",
+            "fr": "Accepté: Kieseritzky, Gambit Rice",
+            "it": "Accettato: Kieseritzky, Gambetto Rice"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Rice Gambit",
@@ -1355,9 +2051,15 @@
         {
           "id": "line-9812dc6f6b47df45",
           "names": {
-            "en": "Accepted: Kieseritzky, Salvio Defense, Cozio Variation",
+            "en-US": "Accepted: Kieseritzky, Salvio Defense, Cozio Variation",
             "pt-BR": "Aceito: Kieseritzky, Defesa Salvio, Variante Cozio",
-            "es": "Aceptado: Kieseritzky, Defensa Salvio, Variante Cozio"
+            "es-419": "Aceptado: Kieseritzky, Defensa Salvio, Variante Cozio",
+            "en-GB": "Accepted: Kieseritzky, Salvio Defence, Cozio Variation",
+            "es-ES": "Aceptado: Kieseritzky, Defensa Salvio, Variante Cozio",
+            "pt-PT": "Aceito: Kieseritzky, Defesa Salvio, Variante Cozio",
+            "de": "Angenommen: Kieseritzky, Salvio-Verteidigung, Cozio-Variante",
+            "fr": "Accepté: Kieseritzky, Défense Salvio, Variante Cozio",
+            "it": "Accettato: Kieseritzky, Difesa Salvio, Variante Cozio"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Salvio Defense, Cozio Variation",
@@ -1367,9 +2069,15 @@
         {
           "id": "line-fb53275abf1b8373",
           "names": {
-            "en": "Accepted: Kieseritzky, Long Whip Defense, Jaenisch Variation",
+            "en-US": "Accepted: Kieseritzky, Long Whip Defense, Jaenisch Variation",
             "pt-BR": "Aceito: Kieseritzky, Defesa do Chicote Longo, Variante Jaenisch",
-            "es": "Aceptado: Kieseritzky, Defensa del Látigo Largo, Variante Jaenisch"
+            "es-419": "Aceptado: Kieseritzky, Defensa del Látigo Largo, Variante Jaenisch",
+            "en-GB": "Accepted: Kieseritzky, Long Whip Defence, Jaenisch Variation",
+            "es-ES": "Aceptado: Kieseritzky, Defensa del Látigo Largo, Variante Jaenisch",
+            "pt-PT": "Aceito: Kieseritzky, Defesa do Chicote Longo, Variante Jaenisch",
+            "de": "Angenommen: Kieseritzky, Lange-Peitsche-Verteidigung, Jaenisch-Variante",
+            "fr": "Accepté: Kieseritzky, Défense du long fouet, Variante Jaenisch",
+            "it": "Accettato: Kieseritzky, Difesa della frusta lunga, Variante Jaenisch"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Long Whip Defense, Jaenisch Variation",
@@ -1380,17 +2088,29 @@
     },
     {
       "names": {
-        "en": "Accepted: King's Knight's Gambit",
+        "en-US": "Accepted: King's Knight's Gambit",
         "pt-BR": "Aceito: Gambito do Cavalo do Rei",
-        "es": "Aceptado: Gambito del Caballo de Rey"
+        "es-419": "Aceptado: Gambito del Caballo de Rey",
+        "en-GB": "Accepted: King's Knight's Gambit",
+        "es-ES": "Aceptado: Gambito del Caballo de Rey",
+        "pt-PT": "Aceito: Gambito do Cavalo do Rei",
+        "de": "Angenommen: Königsspringergambit",
+        "fr": "Accepté: Gambit du cavalier-roi",
+        "it": "Accettato: Gambetto del cavallo di re"
       },
       "lines": [
         {
           "id": "line-4dbbdf500c414bc2",
           "names": {
-            "en": "Accepted: King's Knight's Gambit",
+            "en-US": "Accepted: King's Knight's Gambit",
             "pt-BR": "Aceito: Gambito do Cavalo do Rei",
-            "es": "Aceptado: Gambito del Caballo de Rey"
+            "es-419": "Aceptado: Gambito del Caballo de Rey",
+            "en-GB": "Accepted: King's Knight's Gambit",
+            "es-ES": "Aceptado: Gambito del Caballo de Rey",
+            "pt-PT": "Aceito: Gambito do Cavalo do Rei",
+            "de": "Angenommen: Königsspringergambit",
+            "fr": "Accepté: Gambit du cavalier-roi",
+            "it": "Accettato: Gambetto del cavallo di re"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -1400,9 +2120,15 @@
         {
           "id": "line-1f95f18363d45d48",
           "names": {
-            "en": "Accepted: King's Knight's Gambit",
+            "en-US": "Accepted: King's Knight's Gambit",
             "pt-BR": "Aceito: Gambito do Cavalo do Rei",
-            "es": "Aceptado: Gambito del Caballo de Rey"
+            "es-419": "Aceptado: Gambito del Caballo de Rey",
+            "en-GB": "Accepted: King's Knight's Gambit",
+            "es-ES": "Aceptado: Gambito del Caballo de Rey",
+            "pt-PT": "Aceito: Gambito do Cavalo do Rei",
+            "de": "Angenommen: Königsspringergambit",
+            "fr": "Accepté: Gambit du cavalier-roi",
+            "it": "Accettato: Gambetto del cavallo di re"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -1412,9 +2138,15 @@
         {
           "id": "line-ddc176b743ceb444",
           "names": {
-            "en": "Accepted: King's Knight's Gambit",
+            "en-US": "Accepted: King's Knight's Gambit",
             "pt-BR": "Aceito: Gambito do Cavalo do Rei",
-            "es": "Aceptado: Gambito del Caballo de Rey"
+            "es-419": "Aceptado: Gambito del Caballo de Rey",
+            "en-GB": "Accepted: King's Knight's Gambit",
+            "es-ES": "Aceptado: Gambito del Caballo de Rey",
+            "pt-PT": "Aceito: Gambito do Cavalo do Rei",
+            "de": "Angenommen: Königsspringergambit",
+            "fr": "Accepté: Gambit du cavalier-roi",
+            "it": "Accettato: Gambetto del cavallo di re"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -1424,9 +2156,15 @@
         {
           "id": "line-7ad55c6302361a10",
           "names": {
-            "en": "Accepted: King's Knight's Gambit",
+            "en-US": "Accepted: King's Knight's Gambit",
             "pt-BR": "Aceito: Gambito do Cavalo do Rei",
-            "es": "Aceptado: Gambito del Caballo de Rey"
+            "es-419": "Aceptado: Gambito del Caballo de Rey",
+            "en-GB": "Accepted: King's Knight's Gambit",
+            "es-ES": "Aceptado: Gambito del Caballo de Rey",
+            "pt-PT": "Aceito: Gambito do Cavalo do Rei",
+            "de": "Angenommen: Königsspringergambit",
+            "fr": "Accepté: Gambit du cavalier-roi",
+            "it": "Accettato: Gambetto del cavallo di re"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -1437,17 +2175,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Rosentreter Gambit",
+        "en-US": "Accepted: Rosentreter Gambit",
         "pt-BR": "Aceito: Gambito Rosentreter",
-        "es": "Aceptado: Gambito Rosentreter"
+        "es-419": "Aceptado: Gambito Rosentreter",
+        "en-GB": "Accepted: Rosentreter Gambit",
+        "es-ES": "Aceptado: Gambito Rosentreter",
+        "pt-PT": "Aceito: Gambito Rosentreter",
+        "de": "Angenommen: Rosentreter-Gambit",
+        "fr": "Accepté: Gambit Rosentreter",
+        "it": "Accettato: Gambetto Rosentreter"
       },
       "lines": [
         {
           "id": "line-92e151aaabcc258e",
           "names": {
-            "en": "Accepted: Rosentreter Gambit",
+            "en-US": "Accepted: Rosentreter Gambit",
             "pt-BR": "Aceito: Gambito Rosentreter",
-            "es": "Aceptado: Gambito Rosentreter"
+            "es-419": "Aceptado: Gambito Rosentreter",
+            "en-GB": "Accepted: Rosentreter Gambit",
+            "es-ES": "Aceptado: Gambito Rosentreter",
+            "pt-PT": "Aceito: Gambito Rosentreter",
+            "de": "Angenommen: Rosentreter-Gambit",
+            "fr": "Accepté: Gambit Rosentreter",
+            "it": "Accettato: Gambetto Rosentreter"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit",
@@ -1457,9 +2207,15 @@
         {
           "id": "line-e95e46f81ba8fdb1",
           "names": {
-            "en": "Accepted: Rosentreter Gambit, Testa Variation",
+            "en-US": "Accepted: Rosentreter Gambit, Testa Variation",
             "pt-BR": "Aceito: Gambito Rosentreter, Variante Testa",
-            "es": "Aceptado: Gambito Rosentreter, Variante Testa"
+            "es-419": "Aceptado: Gambito Rosentreter, Variante Testa",
+            "en-GB": "Accepted: Rosentreter Gambit, Testa Variation",
+            "es-ES": "Aceptado: Gambito Rosentreter, Variante Testa",
+            "pt-PT": "Aceito: Gambito Rosentreter, Variante Testa",
+            "de": "Angenommen: Rosentreter-Gambit, Testa-Variante",
+            "fr": "Accepté: Gambit Rosentreter, Variante Testa",
+            "it": "Accettato: Gambetto Rosentreter, Variante Testa"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit, Testa Variation",
@@ -1469,9 +2225,15 @@
         {
           "id": "line-c4f566782c0e0e6f",
           "names": {
-            "en": "Accepted: Rosentreter Gambit, Sörensen Gambit",
+            "en-US": "Accepted: Rosentreter Gambit, Sörensen Gambit",
             "pt-BR": "Aceito: Gambito Rosentreter, Gambito Sörensen",
-            "es": "Aceptado: Gambito Rosentreter, Gambito Sörensen"
+            "es-419": "Aceptado: Gambito Rosentreter, Gambito Sörensen",
+            "en-GB": "Accepted: Rosentreter Gambit, Sörensen Gambit",
+            "es-ES": "Aceptado: Gambito Rosentreter, Gambito Sörensen",
+            "pt-PT": "Aceito: Gambito Rosentreter, Gambito Sörensen",
+            "de": "Angenommen: Rosentreter-Gambit, Sörensen-Gambit",
+            "fr": "Accepté: Gambit Rosentreter, Gambit Sörensen",
+            "it": "Accettato: Gambetto Rosentreter, Gambetto Sörensen"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit, Sörensen Gambit",
@@ -1481,9 +2243,15 @@
         {
           "id": "line-9c326b1389d561f5",
           "names": {
-            "en": "Accepted: Rosentreter Gambit, Bird Gambit",
+            "en-US": "Accepted: Rosentreter Gambit, Bird Gambit",
             "pt-BR": "Aceito: Gambito Rosentreter, Gambito Bird",
-            "es": "Aceptado: Gambito Rosentreter, Gambito Bird"
+            "es-419": "Aceptado: Gambito Rosentreter, Gambito Bird",
+            "en-GB": "Accepted: Rosentreter Gambit, Bird Gambit",
+            "es-ES": "Aceptado: Gambito Rosentreter, Gambito Bird",
+            "pt-PT": "Aceito: Gambito Rosentreter, Gambito Bird",
+            "de": "Angenommen: Rosentreter-Gambit, Bird-Gambit",
+            "fr": "Accepté: Gambit Rosentreter, Gambit Bird",
+            "it": "Accettato: Gambetto Rosentreter, Gambetto Bird"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit, Bird Gambit",
@@ -1494,17 +2262,29 @@
     },
     {
       "names": {
-        "en": "Declined: Classical",
+        "en-US": "Declined: Classical",
         "pt-BR": "Recusado: Clássica",
-        "es": "Rehusado: Clásica"
+        "es-419": "Rehusado: Clásica",
+        "en-GB": "Declined: Classical",
+        "es-ES": "Rehusado: Clásica",
+        "pt-PT": "Recusado: Clássica",
+        "de": "Abgelehnt: Klassisch",
+        "fr": "Refusé: Classique",
+        "it": "Rifiutato: Classica"
       },
       "lines": [
         {
           "id": "line-b44f545f2e4fd670",
           "names": {
-            "en": "Declined: Classical, Hanham Variation",
+            "en-US": "Declined: Classical, Hanham Variation",
             "pt-BR": "Recusado: Clássica, Variante Hanham",
-            "es": "Rehusado: Clásica, Variante Hanham"
+            "es-419": "Rehusado: Clásica, Variante Hanham",
+            "en-GB": "Declined: Classical, Hanham Variation",
+            "es-ES": "Rehusado: Clásica, Variante Hanham",
+            "pt-PT": "Recusado: Clássica, Variante Hanham",
+            "de": "Abgelehnt: Klassisch, Hanham-Variante",
+            "fr": "Refusé: Classique, Variante Hanham",
+            "it": "Rifiutato: Classica, Variante Hanham"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Hanham Variation",
@@ -1514,9 +2294,15 @@
         {
           "id": "line-61ad0595bb8a78ff",
           "names": {
-            "en": "Declined: Classical, Réti Variation",
+            "en-US": "Declined: Classical, Réti Variation",
             "pt-BR": "Recusado: Clássica, Variante Réti",
-            "es": "Rehusado: Clásica, Variante Réti"
+            "es-419": "Rehusado: Clásica, Variante Réti",
+            "en-GB": "Declined: Classical, Réti Variation",
+            "es-ES": "Rehusado: Clásica, Variante Réti",
+            "pt-PT": "Recusado: Clássica, Variante Réti",
+            "de": "Abgelehnt: Klassisch, Réti-Variante",
+            "fr": "Refusé: Classique, Variante Réti",
+            "it": "Rifiutato: Classica, Variante Réti"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Réti Variation",
@@ -1526,9 +2312,15 @@
         {
           "id": "line-91bc8e4a9ddb73c9",
           "names": {
-            "en": "Declined: Classical, Soldatenkov Variation",
+            "en-US": "Declined: Classical, Soldatenkov Variation",
             "pt-BR": "Recusado: Clássica, Variante Soldatenkov",
-            "es": "Rehusado: Clásica, Variante Soldatenkov"
+            "es-419": "Rehusado: Clásica, Variante Soldatenkov",
+            "en-GB": "Declined: Classical, Soldatenkov Variation",
+            "es-ES": "Rehusado: Clásica, Variante Soldatenkov",
+            "pt-PT": "Recusado: Clássica, Variante Soldatenkov",
+            "de": "Abgelehnt: Klassisch, Soldatenkov-Variante",
+            "fr": "Refusé: Classique, Variante Soldatenkov",
+            "it": "Rifiutato: Classica, Variante Soldatenkov"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Soldatenkov Variation",
@@ -1538,9 +2330,15 @@
         {
           "id": "line-dd968ca05a078000",
           "names": {
-            "en": "Declined: Classical, Svenonius Variation",
+            "en-US": "Declined: Classical, Svenonius Variation",
             "pt-BR": "Recusado: Clássica, Variante Svenonius",
-            "es": "Rehusado: Clásica, Variante Svenonius"
+            "es-419": "Rehusado: Clásica, Variante Svenonius",
+            "en-GB": "Declined: Classical, Svenonius Variation",
+            "es-ES": "Rehusado: Clásica, Variante Svenonius",
+            "pt-PT": "Recusado: Clássica, Variante Svenonius",
+            "de": "Abgelehnt: Klassisch, Svenonius-Variante",
+            "fr": "Refusé: Classique, Variante Svenonius",
+            "it": "Rifiutato: Classica, Variante Svenonius"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Svenonius Variation",
@@ -1551,17 +2349,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Allgaier Gambit",
+        "en-US": "Accepted: Allgaier Gambit",
         "pt-BR": "Aceito: Gambito Allgaier",
-        "es": "Aceptado: Gambito Allgaier"
+        "es-419": "Aceptado: Gambito Allgaier",
+        "en-GB": "Accepted: Allgaier Gambit",
+        "es-ES": "Aceptado: Gambito Allgaier",
+        "pt-PT": "Aceito: Gambito Allgaier",
+        "de": "Angenommen: Allgaier-Gambit",
+        "fr": "Accepté: Gambit Allgaier",
+        "it": "Accettato: Gambetto Allgaier"
       },
       "lines": [
         {
           "id": "line-a7cbb33d43b57f26",
           "names": {
-            "en": "Accepted: Allgaier Gambit",
+            "en-US": "Accepted: Allgaier Gambit",
             "pt-BR": "Aceito: Gambito Allgaier",
-            "es": "Aceptado: Gambito Allgaier"
+            "es-419": "Aceptado: Gambito Allgaier",
+            "en-GB": "Accepted: Allgaier Gambit",
+            "es-ES": "Aceptado: Gambito Allgaier",
+            "pt-PT": "Aceito: Gambito Allgaier",
+            "de": "Angenommen: Allgaier-Gambit",
+            "fr": "Accepté: Gambit Allgaier",
+            "it": "Accettato: Gambetto Allgaier"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier Gambit",
@@ -1571,9 +2381,15 @@
         {
           "id": "line-a6194587cf0cd31d",
           "names": {
-            "en": "Accepted: Allgaier Gambit, Urusov Attack",
+            "en-US": "Accepted: Allgaier Gambit, Urusov Attack",
             "pt-BR": "Aceito: Gambito Allgaier, Ataque Urusov",
-            "es": "Aceptado: Gambito Allgaier, Ataque Urusov"
+            "es-419": "Aceptado: Gambito Allgaier, Ataque Urusov",
+            "en-GB": "Accepted: Allgaier Gambit, Urusov Attack",
+            "es-ES": "Aceptado: Gambito Allgaier, Ataque Urusov",
+            "pt-PT": "Aceito: Gambito Allgaier, Ataque Urusov",
+            "de": "Angenommen: Allgaier-Gambit, Urussow-Angriff",
+            "fr": "Accepté: Gambit Allgaier, Attaque Ourousov",
+            "it": "Accettato: Gambetto Allgaier, Attacco Urusov"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier Gambit, Urusov Attack",
@@ -1583,9 +2399,15 @@
         {
           "id": "line-225476a72cf67af8",
           "names": {
-            "en": "Accepted: Allgaier Gambit, Thorold Attack",
+            "en-US": "Accepted: Allgaier Gambit, Thorold Attack",
             "pt-BR": "Aceito: Gambito Allgaier, Ataque Thorold",
-            "es": "Aceptado: Gambito Allgaier, Ataque Thorold"
+            "es-419": "Aceptado: Gambito Allgaier, Ataque Thorold",
+            "en-GB": "Accepted: Allgaier Gambit, Thorold Attack",
+            "es-ES": "Aceptado: Gambito Allgaier, Ataque Thorold",
+            "pt-PT": "Aceito: Gambito Allgaier, Ataque Thorold",
+            "de": "Angenommen: Allgaier-Gambit, Thorold-Angriff",
+            "fr": "Accepté: Gambit Allgaier, Attaque Thorold",
+            "it": "Accettato: Gambetto Allgaier, Attacco Thorold"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier Gambit, Thorold Attack",
@@ -1596,17 +2418,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Fischer Defense",
+        "en-US": "Accepted: Fischer Defense",
         "pt-BR": "Aceito: Defesa Fischer",
-        "es": "Aceptado: Defensa Fischer"
+        "es-419": "Aceptado: Defensa Fischer",
+        "en-GB": "Accepted: Fischer Defence",
+        "es-ES": "Aceptado: Defensa Fischer",
+        "pt-PT": "Aceito: Defesa Fischer",
+        "de": "Angenommen: Fischer-Verteidigung",
+        "fr": "Accepté: Défense Fischer",
+        "it": "Accettato: Difesa Fischer"
       },
       "lines": [
         {
           "id": "line-b10d9b2a3c4112fb",
           "names": {
-            "en": "Accepted: Fischer Defense",
+            "en-US": "Accepted: Fischer Defense",
             "pt-BR": "Aceito: Defesa Fischer",
-            "es": "Aceptado: Defensa Fischer"
+            "es-419": "Aceptado: Defensa Fischer",
+            "en-GB": "Accepted: Fischer Defence",
+            "es-ES": "Aceptado: Defensa Fischer",
+            "pt-PT": "Aceito: Defesa Fischer",
+            "de": "Angenommen: Fischer-Verteidigung",
+            "fr": "Accepté: Défense Fischer",
+            "it": "Accettato: Difesa Fischer"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Fischer Defense",
@@ -1616,9 +2450,15 @@
         {
           "id": "line-85e0184a4d777b6e",
           "names": {
-            "en": "Accepted: Fischer Defense, Schulder Gambit",
+            "en-US": "Accepted: Fischer Defense, Schulder Gambit",
             "pt-BR": "Aceito: Defesa Fischer, Gambito Schulder",
-            "es": "Aceptado: Defensa Fischer, Gambito Schulder"
+            "es-419": "Aceptado: Defensa Fischer, Gambito Schulder",
+            "en-GB": "Accepted: Fischer Defence, Schulder Gambit",
+            "es-ES": "Aceptado: Defensa Fischer, Gambito Schulder",
+            "pt-PT": "Aceito: Defesa Fischer, Gambito Schulder",
+            "de": "Angenommen: Fischer-Verteidigung, Schulder-Gambit",
+            "fr": "Accepté: Défense Fischer, Gambit Schulder",
+            "it": "Accettato: Difesa Fischer, Gambetto Schulder"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Fischer Defense, Schulder Gambit",
@@ -1628,9 +2468,15 @@
         {
           "id": "line-b4d1690a9c13c5bb",
           "names": {
-            "en": "Accepted: Fischer Defense, Spanish Variation",
+            "en-US": "Accepted: Fischer Defense, Spanish Variation",
             "pt-BR": "Aceito: Defesa Fischer, Variante Espanhola",
-            "es": "Aceptado: Defensa Fischer, Variante Española"
+            "es-419": "Aceptado: Defensa Fischer, Variante Española",
+            "en-GB": "Accepted: Fischer Defence, Spanish Variation",
+            "es-ES": "Aceptado: Defensa Fischer, Variante Española",
+            "pt-PT": "Aceito: Defesa Fischer, Variante Espanhola",
+            "de": "Angenommen: Fischer-Verteidigung, Spanische Variante",
+            "fr": "Accepté: Défense Fischer, Variante espagnole",
+            "it": "Accettato: Difesa Fischer, Variante spagnola"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Fischer Defense, Spanish Variation",
@@ -1641,17 +2487,29 @@
     },
     {
       "names": {
-        "en": "Declined: Norwalde Variation",
+        "en-US": "Declined: Norwalde Variation",
         "pt-BR": "Recusado: Variante Norwalde",
-        "es": "Rehusado: Variante Norwalde"
+        "es-419": "Rehusado: Variante Norwalde",
+        "en-GB": "Declined: Norwalde Variation",
+        "es-ES": "Rehusado: Variante Norwalde",
+        "pt-PT": "Recusado: Variante Norwalde",
+        "de": "Abgelehnt: Norwalde-Variante",
+        "fr": "Refusé: Variante Norwalde",
+        "it": "Rifiutato: Variante Norwalde"
       },
       "lines": [
         {
           "id": "line-160bd392119f0b95",
           "names": {
-            "en": "Declined: Norwalde Variation",
+            "en-US": "Declined: Norwalde Variation",
             "pt-BR": "Recusado: Variante Norwalde",
-            "es": "Rehusado: Variante Norwalde"
+            "es-419": "Rehusado: Variante Norwalde",
+            "en-GB": "Declined: Norwalde Variation",
+            "es-ES": "Rehusado: Variante Norwalde",
+            "pt-PT": "Recusado: Variante Norwalde",
+            "de": "Abgelehnt: Norwalde-Variante",
+            "fr": "Refusé: Variante Norwalde",
+            "it": "Rifiutato: Variante Norwalde"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Norwalde Variation",
@@ -1661,9 +2519,15 @@
         {
           "id": "line-b7ff0fc18783bcb6",
           "names": {
-            "en": "Declined: Norwalde Variation, Bücker Gambit",
+            "en-US": "Declined: Norwalde Variation, Bücker Gambit",
             "pt-BR": "Recusado: Variante Norwalde, Gambito Bücker",
-            "es": "Rehusado: Variante Norwalde, Gambito Bücker"
+            "es-419": "Rehusado: Variante Norwalde, Gambito Bücker",
+            "en-GB": "Declined: Norwalde Variation, Bücker Gambit",
+            "es-ES": "Rehusado: Variante Norwalde, Gambito Bücker",
+            "pt-PT": "Recusado: Variante Norwalde, Gambito Bücker",
+            "de": "Abgelehnt: Norwalde-Variante, Bücker-Gambit",
+            "fr": "Refusé: Variante Norwalde, Gambit Bücker",
+            "it": "Rifiutato: Variante Norwalde, Gambetto Bücker"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Norwalde Variation, Bücker Gambit",
@@ -1673,9 +2537,15 @@
         {
           "id": "line-79b92a94a36659ff",
           "names": {
-            "en": "Declined: Norwalde Variation, Schubert Variation",
+            "en-US": "Declined: Norwalde Variation, Schubert Variation",
             "pt-BR": "Recusado: Variante Norwalde, Variante Schubert",
-            "es": "Rehusado: Variante Norwalde, Variante Schubert"
+            "es-419": "Rehusado: Variante Norwalde, Variante Schubert",
+            "en-GB": "Declined: Norwalde Variation, Schubert Variation",
+            "es-ES": "Rehusado: Variante Norwalde, Variante Schubert",
+            "pt-PT": "Recusado: Variante Norwalde, Variante Schubert",
+            "de": "Abgelehnt: Norwalde-Variante, Schubert-Variante",
+            "fr": "Refusé: Variante Norwalde, Variante Schubert",
+            "it": "Rifiutato: Variante Norwalde, Variante Schubert"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Norwalde Variation, Schubert Variation",
@@ -1686,17 +2556,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Abbazia Defense",
+        "en-US": "Accepted: Abbazia Defense",
         "pt-BR": "Aceito: Defesa Abbazia",
-        "es": "Aceptado: Defensa Abbazia"
+        "es-419": "Aceptado: Defensa Abbazia",
+        "en-GB": "Accepted: Abbazia Defence",
+        "es-ES": "Aceptado: Defensa Abbazia",
+        "pt-PT": "Aceito: Defesa Abbazia",
+        "de": "Angenommen: Abbazia-Verteidigung",
+        "fr": "Accepté: Défense Abbazia",
+        "it": "Accettato: Difesa Abbazia"
       },
       "lines": [
         {
           "id": "line-ff974bb17c67c6a8",
           "names": {
-            "en": "Accepted: Abbazia Defense",
+            "en-US": "Accepted: Abbazia Defense",
             "pt-BR": "Aceito: Defesa Abbazia",
-            "es": "Aceptado: Defensa Abbazia"
+            "es-419": "Aceptado: Defensa Abbazia",
+            "en-GB": "Accepted: Abbazia Defence",
+            "es-ES": "Aceptado: Defensa Abbazia",
+            "pt-PT": "Aceito: Defesa Abbazia",
+            "de": "Angenommen: Abbazia-Verteidigung",
+            "fr": "Accepté: Défense Abbazia",
+            "it": "Accettato: Difesa Abbazia"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Abbazia Defense",
@@ -1706,9 +2588,15 @@
         {
           "id": "line-a30dbd5372a01a6c",
           "names": {
-            "en": "Accepted: Abbazia Defense, Main Line",
+            "en-US": "Accepted: Abbazia Defense, Main Line",
             "pt-BR": "Aceito: Defesa Abbazia, Linha Principal",
-            "es": "Aceptado: Defensa Abbazia, Línea Principal"
+            "es-419": "Aceptado: Defensa Abbazia, Línea Principal",
+            "en-GB": "Accepted: Abbazia Defence, Main Line",
+            "es-ES": "Aceptado: Defensa Abbazia, Línea Principal",
+            "pt-PT": "Aceito: Defesa Abbazia, Linha Principal",
+            "de": "Angenommen: Abbazia-Verteidigung, Hauptvariante",
+            "fr": "Accepté: Défense Abbazia, Ligne principale",
+            "it": "Accettato: Difesa Abbazia, Linea principale"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Abbazia Defense, Main Line",
@@ -1719,17 +2607,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Ghulam-Kassim Gambit",
+        "en-US": "Accepted: Ghulam-Kassim Gambit",
         "pt-BR": "Aceito: Gambito Ghulam-Kassim",
-        "es": "Aceptado: Gambito Ghulam-Kassim"
+        "es-419": "Aceptado: Gambito Ghulam-Kassim",
+        "en-GB": "Accepted: Ghulam-Kassim Gambit",
+        "es-ES": "Aceptado: Gambito Ghulam-Kassim",
+        "pt-PT": "Aceito: Gambito Ghulam-Kassim",
+        "de": "Angenommen: Ghulam-Kassim-Gambit",
+        "fr": "Accepté: Gambit Ghulam-Kassim",
+        "it": "Accettato: Gambetto Ghulam-Kassim"
       },
       "lines": [
         {
           "id": "line-951cadab9fe4d20d",
           "names": {
-            "en": "Accepted: Ghulam-Kassim Gambit",
+            "en-US": "Accepted: Ghulam-Kassim Gambit",
             "pt-BR": "Aceito: Gambito Ghulam-Kassim",
-            "es": "Aceptado: Gambito Ghulam-Kassim"
+            "es-419": "Aceptado: Gambito Ghulam-Kassim",
+            "en-GB": "Accepted: Ghulam-Kassim Gambit",
+            "es-ES": "Aceptado: Gambito Ghulam-Kassim",
+            "pt-PT": "Aceito: Gambito Ghulam-Kassim",
+            "de": "Angenommen: Ghulam-Kassim-Gambit",
+            "fr": "Accepté: Gambit Ghulam-Kassim",
+            "it": "Accettato: Gambetto Ghulam-Kassim"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Ghulam-Kassim Gambit",
@@ -1739,9 +2639,15 @@
         {
           "id": "line-ed05f1df2e3d69df",
           "names": {
-            "en": "Accepted: Ghulam-Kassim Gambit",
+            "en-US": "Accepted: Ghulam-Kassim Gambit",
             "pt-BR": "Aceito: Gambito Ghulam-Kassim",
-            "es": "Aceptado: Gambito Ghulam-Kassim"
+            "es-419": "Aceptado: Gambito Ghulam-Kassim",
+            "en-GB": "Accepted: Ghulam-Kassim Gambit",
+            "es-ES": "Aceptado: Gambito Ghulam-Kassim",
+            "pt-PT": "Aceito: Gambito Ghulam-Kassim",
+            "de": "Angenommen: Ghulam-Kassim-Gambit",
+            "fr": "Accepté: Gambit Ghulam-Kassim",
+            "it": "Accettato: Gambetto Ghulam-Kassim"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Ghulam-Kassim Gambit",
@@ -1752,17 +2658,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Greco Gambit",
+        "en-US": "Accepted: Greco Gambit",
         "pt-BR": "Aceito: Gambito Greco",
-        "es": "Aceptado: Gambito Greco"
+        "es-419": "Aceptado: Gambito Greco",
+        "en-GB": "Accepted: Greco Gambit",
+        "es-ES": "Aceptado: Gambito Greco",
+        "pt-PT": "Aceito: Gambito Greco",
+        "de": "Angenommen: Greco-Gambit",
+        "fr": "Accepté: Gambit Greco",
+        "it": "Accettato: Gambetto Greco"
       },
       "lines": [
         {
           "id": "line-c4b75511b4257bba",
           "names": {
-            "en": "Accepted: Greco Gambit",
+            "en-US": "Accepted: Greco Gambit",
             "pt-BR": "Aceito: Gambito Greco",
-            "es": "Aceptado: Gambito Greco"
+            "es-419": "Aceptado: Gambito Greco",
+            "en-GB": "Accepted: Greco Gambit",
+            "es-ES": "Aceptado: Gambito Greco",
+            "pt-PT": "Aceito: Gambito Greco",
+            "de": "Angenommen: Greco-Gambit",
+            "fr": "Accepté: Gambit Greco",
+            "it": "Accettato: Gambetto Greco"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Greco Gambit",
@@ -1772,9 +2690,15 @@
         {
           "id": "line-53a344eedd163856",
           "names": {
-            "en": "Accepted: Greco Gambit",
+            "en-US": "Accepted: Greco Gambit",
             "pt-BR": "Aceito: Gambito Greco",
-            "es": "Aceptado: Gambito Greco"
+            "es-419": "Aceptado: Gambito Greco",
+            "en-GB": "Accepted: Greco Gambit",
+            "es-ES": "Aceptado: Gambito Greco",
+            "pt-PT": "Aceito: Gambito Greco",
+            "de": "Angenommen: Greco-Gambit",
+            "fr": "Accepté: Gambit Greco",
+            "it": "Accettato: Gambetto Greco"
           },
           "eco": "C38",
           "opening": "King's Gambit Accepted: Greco Gambit",
@@ -1785,17 +2709,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Lolli Gambit",
+        "en-US": "Accepted: Lolli Gambit",
         "pt-BR": "Aceito: Gambito Lolli",
-        "es": "Aceptado: Gambito Lolli"
+        "es-419": "Aceptado: Gambito Lolli",
+        "en-GB": "Accepted: Lolli Gambit",
+        "es-ES": "Aceptado: Gambito Lolli",
+        "pt-PT": "Aceito: Gambito Lolli",
+        "de": "Angenommen: Lolli-Gambit",
+        "fr": "Accepté: Gambit Lolli",
+        "it": "Accettato: Gambetto Lolli"
       },
       "lines": [
         {
           "id": "line-434ab212a4faf769",
           "names": {
-            "en": "Accepted: Lolli Gambit",
+            "en-US": "Accepted: Lolli Gambit",
             "pt-BR": "Aceito: Gambito Lolli",
-            "es": "Aceptado: Gambito Lolli"
+            "es-419": "Aceptado: Gambito Lolli",
+            "en-GB": "Accepted: Lolli Gambit",
+            "es-ES": "Aceptado: Gambito Lolli",
+            "pt-PT": "Aceito: Gambito Lolli",
+            "de": "Angenommen: Lolli-Gambit",
+            "fr": "Accepté: Gambit Lolli",
+            "it": "Accettato: Gambetto Lolli"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Lolli Gambit",
@@ -1805,9 +2741,15 @@
         {
           "id": "line-72057bd83a0ae019",
           "names": {
-            "en": "Accepted: Lolli Gambit, Young Variation",
+            "en-US": "Accepted: Lolli Gambit, Young Variation",
             "pt-BR": "Aceito: Gambito Lolli, Variante Young",
-            "es": "Aceptado: Gambito Lolli, Variante Young"
+            "es-419": "Aceptado: Gambito Lolli, Variante Young",
+            "en-GB": "Accepted: Lolli Gambit, Young Variation",
+            "es-ES": "Aceptado: Gambito Lolli, Variante Young",
+            "pt-PT": "Aceito: Gambito Lolli, Variante Young",
+            "de": "Angenommen: Lolli-Gambit, Young-Variante",
+            "fr": "Accepté: Gambit Lolli, Variante Young",
+            "it": "Accettato: Gambetto Lolli, Variante Young"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Lolli Gambit, Young Variation",
@@ -1818,17 +2760,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Modern Defense",
+        "en-US": "Accepted: Modern Defense",
         "pt-BR": "Aceito: Defesa Moderna",
-        "es": "Aceptado: Defensa Moderna"
+        "es-419": "Aceptado: Defensa Moderna",
+        "en-GB": "Accepted: Modern Defence",
+        "es-ES": "Aceptado: Defensa Moderna",
+        "pt-PT": "Aceito: Defesa Moderna",
+        "de": "Angenommen: Moderne Verteidigung",
+        "fr": "Accepté: Défense moderne",
+        "it": "Accettato: Difesa moderna"
       },
       "lines": [
         {
           "id": "line-1029dacf59c77f9a",
           "names": {
-            "en": "Accepted: Modern Defense",
+            "en-US": "Accepted: Modern Defense",
             "pt-BR": "Aceito: Defesa Moderna",
-            "es": "Aceptado: Defensa Moderna"
+            "es-419": "Aceptado: Defensa Moderna",
+            "en-GB": "Accepted: Modern Defence",
+            "es-ES": "Aceptado: Defensa Moderna",
+            "pt-PT": "Aceito: Defesa Moderna",
+            "de": "Angenommen: Moderne Verteidigung",
+            "fr": "Accepté: Défense moderne",
+            "it": "Accettato: Difesa moderna"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Modern Defense",
@@ -1838,9 +2792,15 @@
         {
           "id": "line-26938f1d1a5190c1",
           "names": {
-            "en": "Accepted: Modern Defense",
+            "en-US": "Accepted: Modern Defense",
             "pt-BR": "Aceito: Defesa Moderna",
-            "es": "Aceptado: Defensa Moderna"
+            "es-419": "Aceptado: Defensa Moderna",
+            "en-GB": "Accepted: Modern Defence",
+            "es-ES": "Aceptado: Defensa Moderna",
+            "pt-PT": "Aceito: Defesa Moderna",
+            "de": "Angenommen: Moderne Verteidigung",
+            "fr": "Accepté: Défense moderne",
+            "it": "Accettato: Difesa moderna"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Modern Defense",
@@ -1851,17 +2811,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Philidor Gambit",
+        "en-US": "Accepted: Philidor Gambit",
         "pt-BR": "Aceito: Gambito Philidor",
-        "es": "Aceptado: Gambito Philidor"
+        "es-419": "Aceptado: Gambito Philidor",
+        "en-GB": "Accepted: Philidor Gambit",
+        "es-ES": "Aceptado: Gambito Philidor",
+        "pt-PT": "Aceito: Gambito Philidor",
+        "de": "Angenommen: Philidor-Gambit",
+        "fr": "Accepté: Gambit Philidor",
+        "it": "Accettato: Gambetto Philidor"
       },
       "lines": [
         {
           "id": "line-7fa1e88efc8eb9b7",
           "names": {
-            "en": "Accepted: Philidor Gambit",
+            "en-US": "Accepted: Philidor Gambit",
             "pt-BR": "Aceito: Gambito Philidor",
-            "es": "Aceptado: Gambito Philidor"
+            "es-419": "Aceptado: Gambito Philidor",
+            "en-GB": "Accepted: Philidor Gambit",
+            "es-ES": "Aceptado: Gambito Philidor",
+            "pt-PT": "Aceito: Gambito Philidor",
+            "de": "Angenommen: Philidor-Gambit",
+            "fr": "Accepté: Gambit Philidor",
+            "it": "Accettato: Gambetto Philidor"
           },
           "eco": "C38",
           "opening": "King's Gambit Accepted: Philidor Gambit",
@@ -1871,9 +2843,15 @@
         {
           "id": "line-8e96ed47e43d1d3f",
           "names": {
-            "en": "Accepted: Philidor Gambit, Schultz Variation",
+            "en-US": "Accepted: Philidor Gambit, Schultz Variation",
             "pt-BR": "Aceito: Gambito Philidor, Variante Schultz",
-            "es": "Aceptado: Gambito Philidor, Variante Schultz"
+            "es-419": "Aceptado: Gambito Philidor, Variante Schultz",
+            "en-GB": "Accepted: Philidor Gambit, Schultz Variation",
+            "es-ES": "Aceptado: Gambito Philidor, Variante Schultz",
+            "pt-PT": "Aceito: Gambito Philidor, Variante Schultz",
+            "de": "Angenommen: Philidor-Gambit, Schultz-Variante",
+            "fr": "Accepté: Gambit Philidor, Variante Schultz",
+            "it": "Accettato: Gambetto Philidor, Variante Schultz"
           },
           "eco": "C38",
           "opening": "King's Gambit Accepted: Philidor Gambit, Schultz Variation",
@@ -1884,17 +2862,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Schallopp Defense",
+        "en-US": "Accepted: Schallopp Defense",
         "pt-BR": "Aceito: Defesa Schallopp",
-        "es": "Aceptado: Defensa Schallopp"
+        "es-419": "Aceptado: Defensa Schallopp",
+        "en-GB": "Accepted: Schallopp Defence",
+        "es-ES": "Aceptado: Defensa Schallopp",
+        "pt-PT": "Aceito: Defesa Schallopp",
+        "de": "Angenommen: Schallopp-Verteidigung",
+        "fr": "Accepté: Défense Schallopp",
+        "it": "Accettato: Difesa Schallopp"
       },
       "lines": [
         {
           "id": "line-ddfb7ac477e694ef",
           "names": {
-            "en": "Accepted: Schallopp Defense",
+            "en-US": "Accepted: Schallopp Defense",
             "pt-BR": "Aceito: Defesa Schallopp",
-            "es": "Aceptado: Defensa Schallopp"
+            "es-419": "Aceptado: Defensa Schallopp",
+            "en-GB": "Accepted: Schallopp Defence",
+            "es-ES": "Aceptado: Defensa Schallopp",
+            "pt-PT": "Aceito: Defesa Schallopp",
+            "de": "Angenommen: Schallopp-Verteidigung",
+            "fr": "Accepté: Défense Schallopp",
+            "it": "Accettato: Difesa Schallopp"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Schallopp Defense",
@@ -1904,9 +2894,15 @@
         {
           "id": "line-850949212337190f",
           "names": {
-            "en": "Accepted: Schallopp Defense, Tashkent Attack",
+            "en-US": "Accepted: Schallopp Defense, Tashkent Attack",
             "pt-BR": "Aceito: Defesa Schallopp, Ataque Tashkent",
-            "es": "Aceptado: Defensa Schallopp, Ataque Tashkent"
+            "es-419": "Aceptado: Defensa Schallopp, Ataque Tashkent",
+            "en-GB": "Accepted: Schallopp Defence, Tashkent Attack",
+            "es-ES": "Aceptado: Defensa Schallopp, Ataque Tashkent",
+            "pt-PT": "Aceito: Defesa Schallopp, Ataque Tashkent",
+            "de": "Angenommen: Schallopp-Verteidigung, Taschkenter Angriff",
+            "fr": "Accepté: Défense Schallopp, Attaque de Tachkent",
+            "it": "Accettato: Difesa Schallopp, Attacco di Taškent"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Schallopp Defense, Tashkent Attack",
@@ -1917,17 +2913,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Schurig Gambit",
+        "en-US": "Accepted: Schurig Gambit",
         "pt-BR": "Aceito: Gambito Schurig",
-        "es": "Aceptado: Gambito Schurig"
+        "es-419": "Aceptado: Gambito Schurig",
+        "en-GB": "Accepted: Schurig Gambit",
+        "es-ES": "Aceptado: Gambito Schurig",
+        "pt-PT": "Aceito: Gambito Schurig",
+        "de": "Angenommen: Schurig-Gambit",
+        "fr": "Accepté: Gambit Schurig",
+        "it": "Accettato: Gambetto Schurig"
       },
       "lines": [
         {
           "id": "line-4a87cf625897a6b7",
           "names": {
-            "en": "Accepted: Schurig Gambit, with Bb5",
+            "en-US": "Accepted: Schurig Gambit, with Bb5",
             "pt-BR": "Aceito: Gambito Schurig, com Bb5",
-            "es": "Aceptado: Gambito Schurig, con Bb5"
+            "es-419": "Aceptado: Gambito Schurig, con Bb5",
+            "en-GB": "Accepted: Schurig Gambit, with Bb5",
+            "es-ES": "Aceptado: Gambito Schurig, con Bb5",
+            "pt-PT": "Aceito: Gambito Schurig, com Bb5",
+            "de": "Angenommen: Schurig-Gambit, mit Bb5",
+            "fr": "Accepté: Gambit Schurig, avec Bb5",
+            "it": "Accettato: Gambetto Schurig, con Bb5"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Schurig Gambit, with Bb5",
@@ -1937,9 +2945,15 @@
         {
           "id": "line-285969404459edb4",
           "names": {
-            "en": "Accepted: Schurig Gambit, with Bd3",
+            "en-US": "Accepted: Schurig Gambit, with Bd3",
             "pt-BR": "Aceito: Gambito Schurig, com Bd3",
-            "es": "Aceptado: Gambito Schurig, con Bd3"
+            "es-419": "Aceptado: Gambito Schurig, con Bd3",
+            "en-GB": "Accepted: Schurig Gambit, with Bd3",
+            "es-ES": "Aceptado: Gambito Schurig, con Bd3",
+            "pt-PT": "Aceito: Gambito Schurig, com Bd3",
+            "de": "Angenommen: Schurig-Gambit, mit Bd3",
+            "fr": "Accepté: Gambit Schurig, avec Bd3",
+            "it": "Accettato: Gambetto Schurig, con Bd3"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Schurig Gambit, with Bd3",
@@ -1950,17 +2964,29 @@
     },
     {
       "names": {
-        "en": "Accepted: Tartakower Gambit",
+        "en-US": "Accepted: Tartakower Gambit",
         "pt-BR": "Aceito: Gambito Tartakower",
-        "es": "Aceptado: Gambito Tartakower"
+        "es-419": "Aceptado: Gambito Tartakower",
+        "en-GB": "Accepted: Tartakower Gambit",
+        "es-ES": "Aceptado: Gambito Tartakower",
+        "pt-PT": "Aceito: Gambito Tartakower",
+        "de": "Angenommen: Tartakower-Gambit",
+        "fr": "Accepté: Gambit Tartakower",
+        "it": "Accettato: Gambetto Tartakower"
       },
       "lines": [
         {
           "id": "line-abf1c4949b60c3b0",
           "names": {
-            "en": "Accepted: Tartakower Gambit",
+            "en-US": "Accepted: Tartakower Gambit",
             "pt-BR": "Aceito: Gambito Tartakower",
-            "es": "Aceptado: Gambito Tartakower"
+            "es-419": "Aceptado: Gambito Tartakower",
+            "en-GB": "Accepted: Tartakower Gambit",
+            "es-ES": "Aceptado: Gambito Tartakower",
+            "pt-PT": "Aceito: Gambito Tartakower",
+            "de": "Angenommen: Tartakower-Gambit",
+            "fr": "Accepté: Gambit Tartakower",
+            "it": "Accettato: Gambetto Tartakower"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Tartakower Gambit",
@@ -1970,9 +2996,15 @@
         {
           "id": "line-c6d02e370fab0dfe",
           "names": {
-            "en": "Accepted: Tartakower Gambit, Weiss Defense",
+            "en-US": "Accepted: Tartakower Gambit, Weiss Defense",
             "pt-BR": "Aceito: Gambito Tartakower, Defesa Weiss",
-            "es": "Aceptado: Gambito Tartakower, Defensa Weiss"
+            "es-419": "Aceptado: Gambito Tartakower, Defensa Weiss",
+            "en-GB": "Accepted: Tartakower Gambit, Weiss Defence",
+            "es-ES": "Aceptado: Gambito Tartakower, Defensa Weiss",
+            "pt-PT": "Aceito: Gambito Tartakower, Defesa Weiss",
+            "de": "Angenommen: Tartakower-Gambit, Weiss-Verteidigung",
+            "fr": "Accepté: Gambit Tartakower, Défense Weiss",
+            "it": "Accettato: Gambetto Tartakower, Difesa Weiss"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Tartakower Gambit, Weiss Defense",
@@ -1983,17 +3015,29 @@
     },
     {
       "names": {
-        "en": "Declined: Keene's Defense",
+        "en-US": "Declined: Keene's Defense",
         "pt-BR": "Recusado: Defesa Keene",
-        "es": "Rehusado: Defensa Keene"
+        "es-419": "Rehusado: Defensa Keene",
+        "en-GB": "Declined: Keene's Defence",
+        "es-ES": "Rehusado: Defensa Keene",
+        "pt-PT": "Recusado: Defesa Keene",
+        "de": "Abgelehnt: Keene's-Verteidigung",
+        "fr": "Refusé: Défense Keene's",
+        "it": "Rifiutato: Difesa Keene's"
       },
       "lines": [
         {
           "id": "line-ac3062c740f6e1af",
           "names": {
-            "en": "Declined: Keene's Defense",
+            "en-US": "Declined: Keene's Defense",
             "pt-BR": "Recusado: Defesa Keene",
-            "es": "Rehusado: Defensa Keene"
+            "es-419": "Rehusado: Defensa Keene",
+            "en-GB": "Declined: Keene's Defence",
+            "es-ES": "Rehusado: Defensa Keene",
+            "pt-PT": "Recusado: Defesa Keene",
+            "de": "Abgelehnt: Keene's-Verteidigung",
+            "fr": "Refusé: Défense Keene's",
+            "it": "Rifiutato: Difesa Keene's"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Keene's Defense",
@@ -2003,9 +3047,15 @@
         {
           "id": "line-3a7dda6b6100f9f4",
           "names": {
-            "en": "Declined: Keene's Defense",
+            "en-US": "Declined: Keene's Defense",
             "pt-BR": "Recusado: Defesa Keene",
-            "es": "Rehusado: Defensa Keene"
+            "es-419": "Rehusado: Defensa Keene",
+            "en-GB": "Declined: Keene's Defence",
+            "es-ES": "Rehusado: Defensa Keene",
+            "pt-PT": "Recusado: Defesa Keene",
+            "de": "Abgelehnt: Keene's-Verteidigung",
+            "fr": "Refusé: Défense Keene's",
+            "it": "Rifiutato: Difesa Keene's"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Keene's Defense",
@@ -2019,9 +3069,15 @@
     {
       "id": "line-70a4e6cd956de5e7",
       "names": {
-        "en": "Accepted",
+        "en-US": "Accepted",
         "pt-BR": "Aceito",
-        "es": "Aceptado"
+        "es-419": "Aceptado",
+        "en-GB": "Accepted",
+        "es-ES": "Aceptado",
+        "pt-PT": "Aceito",
+        "de": "Angenommen",
+        "fr": "Accepté",
+        "it": "Accettato"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted",
@@ -2031,9 +3087,15 @@
     {
       "id": "line-dfa29e62beda877d",
       "names": {
-        "en": "Accepted: Australian Gambit",
+        "en-US": "Accepted: Australian Gambit",
         "pt-BR": "Aceito: Gambito Australiano",
-        "es": "Aceptado: Gambito Australiano"
+        "es-419": "Aceptado: Gambito Australiano",
+        "en-GB": "Accepted: Australian Gambit",
+        "es-ES": "Aceptado: Gambito Australiano",
+        "pt-PT": "Aceito: Gambito Australiano",
+        "de": "Angenommen: Australisches Gambit",
+        "fr": "Accepté: Gambit australien",
+        "it": "Accettato: Gambetto australiano"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Australian Gambit",
@@ -2043,9 +3105,15 @@
     {
       "id": "line-42d912bf483fed8d",
       "names": {
-        "en": "Accepted: Basman Gambit",
+        "en-US": "Accepted: Basman Gambit",
         "pt-BR": "Aceito: Gambito Basman",
-        "es": "Aceptado: Gambito Basman"
+        "es-419": "Aceptado: Gambito Basman",
+        "en-GB": "Accepted: Basman Gambit",
+        "es-ES": "Aceptado: Gambito Basman",
+        "pt-PT": "Aceito: Gambito Basman",
+        "de": "Angenommen: Basman-Gambit",
+        "fr": "Accepté: Gambit Basman",
+        "it": "Accettato: Gambetto Basman"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Basman Gambit",
@@ -2055,9 +3123,15 @@
     {
       "id": "line-24ec3968334ba5f3",
       "names": {
-        "en": "Accepted: Becker Defense",
+        "en-US": "Accepted: Becker Defense",
         "pt-BR": "Aceito: Defesa Becker",
-        "es": "Aceptado: Defensa Becker"
+        "es-419": "Aceptado: Defensa Becker",
+        "en-GB": "Accepted: Becker Defence",
+        "es-ES": "Aceptado: Defensa Becker",
+        "pt-PT": "Aceito: Defesa Becker",
+        "de": "Angenommen: Becker-Verteidigung",
+        "fr": "Accepté: Défense Becker",
+        "it": "Accettato: Difesa Becker"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Becker Defense",
@@ -2067,9 +3141,15 @@
     {
       "id": "line-9fb6c3a669b22194",
       "names": {
-        "en": "Accepted: Blachly Gambit",
+        "en-US": "Accepted: Blachly Gambit",
         "pt-BR": "Aceito: Gambito Blachly",
-        "es": "Aceptado: Gambito Blachly"
+        "es-419": "Aceptado: Gambito Blachly",
+        "en-GB": "Accepted: Blachly Gambit",
+        "es-ES": "Aceptado: Gambito Blachly",
+        "pt-PT": "Aceito: Gambito Blachly",
+        "de": "Angenommen: Blachly-Gambit",
+        "fr": "Accepté: Gambit Blachly",
+        "it": "Accettato: Gambetto Blachly"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Blachly Gambit",
@@ -2079,9 +3159,15 @@
     {
       "id": "line-9d6cc173e6be5347",
       "names": {
-        "en": "Accepted: Bonsch-Osmolovsky Variation",
+        "en-US": "Accepted: Bonsch-Osmolovsky Variation",
         "pt-BR": "Aceito: Variante Bonsch-Osmolovsky",
-        "es": "Aceptado: Variante Bonsch-Osmolovsky"
+        "es-419": "Aceptado: Variante Bonsch-Osmolovsky",
+        "en-GB": "Accepted: Bonsch-Osmolovsky Variation",
+        "es-ES": "Aceptado: Variante Bonsch-Osmolovsky",
+        "pt-PT": "Aceito: Variante Bonsch-Osmolovsky",
+        "de": "Angenommen: Bonsch-Osmolovsky-Variante",
+        "fr": "Accepté: Variante Bonsch-Osmolovsky",
+        "it": "Accettato: Variante Bonsch-Osmolovsky"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Bonsch-Osmolovsky Variation",
@@ -2091,9 +3177,15 @@
     {
       "id": "line-0666ae6a008b705a",
       "names": {
-        "en": "Accepted: Breyer Gambit",
+        "en-US": "Accepted: Breyer Gambit",
         "pt-BR": "Aceito: Gambito Breyer",
-        "es": "Aceptado: Gambito Breyer"
+        "es-419": "Aceptado: Gambito Breyer",
+        "en-GB": "Accepted: Breyer Gambit",
+        "es-ES": "Aceptado: Gambito Breyer",
+        "pt-PT": "Aceito: Gambito Breyer",
+        "de": "Angenommen: Breyer-Gambit",
+        "fr": "Accepté: Gambit Breyer",
+        "it": "Accettato: Gambetto Breyer"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Breyer Gambit",
@@ -2103,9 +3195,15 @@
     {
       "id": "line-f2f2ced478234a28",
       "names": {
-        "en": "Accepted: Carrera Gambit",
+        "en-US": "Accepted: Carrera Gambit",
         "pt-BR": "Aceito: Gambito Carrera",
-        "es": "Aceptado: Gambito Carrera"
+        "es-419": "Aceptado: Gambito Carrera",
+        "en-GB": "Accepted: Carrera Gambit",
+        "es-ES": "Aceptado: Gambito Carrera",
+        "pt-PT": "Aceito: Gambito Carrera",
+        "de": "Angenommen: Carrera-Gambit",
+        "fr": "Accepté: Gambit Carrera",
+        "it": "Accettato: Gambetto Carrera"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Carrera Gambit",
@@ -2115,9 +3213,15 @@
     {
       "id": "line-6f9947fd337cd972",
       "names": {
-        "en": "Accepted: Dodo Variation",
+        "en-US": "Accepted: Dodo Variation",
         "pt-BR": "Aceito: Variante Dodô",
-        "es": "Aceptado: Variante Dodo"
+        "es-419": "Aceptado: Variante Dodo",
+        "en-GB": "Accepted: Dodo Variation",
+        "es-ES": "Aceptado: Variante Dodo",
+        "pt-PT": "Aceito: Variante Dodó",
+        "de": "Angenommen: Dodo-Variante",
+        "fr": "Accepté: Variante Dodo",
+        "it": "Accettato: Variante Dodo"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Dodo Variation",
@@ -2127,9 +3231,15 @@
     {
       "id": "line-f30f2d91ce4bbb7b",
       "names": {
-        "en": "Accepted: Eisenberg Variation",
+        "en-US": "Accepted: Eisenberg Variation",
         "pt-BR": "Aceito: Variante Eisenberg",
-        "es": "Aceptado: Variante Eisenberg"
+        "es-419": "Aceptado: Variante Eisenberg",
+        "en-GB": "Accepted: Eisenberg Variation",
+        "es-ES": "Aceptado: Variante Eisenberg",
+        "pt-PT": "Aceito: Variante Eisenberg",
+        "de": "Angenommen: Eisenberg-Variante",
+        "fr": "Accepté: Variante Eisenberg",
+        "it": "Accettato: Variante Eisenberg"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Eisenberg Variation",
@@ -2139,9 +3249,15 @@
     {
       "id": "line-b6784a025b9a014c",
       "names": {
-        "en": "Accepted: Gaga Gambit",
+        "en-US": "Accepted: Gaga Gambit",
         "pt-BR": "Aceito: Gambito Gaga",
-        "es": "Aceptado: Gambito Gaga"
+        "es-419": "Aceptado: Gambito Gaga",
+        "en-GB": "Accepted: Gaga Gambit",
+        "es-ES": "Aceptado: Gambito Gaga",
+        "pt-PT": "Aceito: Gambito Gaga",
+        "de": "Angenommen: Gaga-Gambit",
+        "fr": "Accepté: Gambit Gaga",
+        "it": "Accettato: Gambetto Gaga"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Gaga Gambit",
@@ -2151,9 +3267,15 @@
     {
       "id": "line-f9aceb975d9a1772",
       "names": {
-        "en": "Accepted: Gianutio Countergambit",
+        "en-US": "Accepted: Gianutio Countergambit",
         "pt-BR": "Aceito: Contragambito Gianutio",
-        "es": "Aceptado: Contragambito Gianutio"
+        "es-419": "Aceptado: Contragambito Gianutio",
+        "en-GB": "Accepted: Gianutio Countergambit",
+        "es-ES": "Aceptado: Contragambito Gianutio",
+        "pt-PT": "Aceito: Contragambito Gianutio",
+        "de": "Angenommen: Gianutio-Gegengambit",
+        "fr": "Accepté: Contre-gambit Gianutio",
+        "it": "Accettato: Controgambetto Gianutio"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Gianutio Countergambit",
@@ -2163,9 +3285,15 @@
     {
       "id": "line-62363189236bef00",
       "names": {
-        "en": "Accepted: Hanstein Gambit",
+        "en-US": "Accepted: Hanstein Gambit",
         "pt-BR": "Aceito: Gambito Hanstein",
-        "es": "Aceptado: Gambito Hanstein"
+        "es-419": "Aceptado: Gambito Hanstein",
+        "en-GB": "Accepted: Hanstein Gambit",
+        "es-ES": "Aceptado: Gambito Hanstein",
+        "pt-PT": "Aceito: Gambito Hanstein",
+        "de": "Angenommen: Hanstein-Gambit",
+        "fr": "Accepté: Gambit Hanstein",
+        "it": "Accettato: Gambetto Hanstein"
       },
       "eco": "C38",
       "opening": "King's Gambit Accepted: Hanstein Gambit",
@@ -2175,9 +3303,15 @@
     {
       "id": "line-46db0d865c670520",
       "names": {
-        "en": "Accepted: Kotov Gambit",
+        "en-US": "Accepted: Kotov Gambit",
         "pt-BR": "Aceito: Gambito Kotov",
-        "es": "Aceptado: Gambito Kotov"
+        "es-419": "Aceptado: Gambito Kotov",
+        "en-GB": "Accepted: Kotov Gambit",
+        "es-ES": "Aceptado: Gambito Kotov",
+        "pt-PT": "Aceito: Gambito Kotov",
+        "de": "Angenommen: Kotow-Gambit",
+        "fr": "Accepté: Gambit Kotov",
+        "it": "Accettato: Gambetto Kotov"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Kotov Gambit",
@@ -2187,9 +3321,15 @@
     {
       "id": "line-28c297e229773edf",
       "names": {
-        "en": "Accepted: Lopez-Gianutio Countergambit, Hein Variation",
+        "en-US": "Accepted: Lopez-Gianutio Countergambit, Hein Variation",
         "pt-BR": "Aceito: Contragambito Lopez-Gianutio, Variante Hein",
-        "es": "Aceptado: Contragambito Lopez-Gianutio, Variante Hein"
+        "es-419": "Aceptado: Contragambito Lopez-Gianutio, Variante Hein",
+        "en-GB": "Accepted: Lopez-Gianutio Countergambit, Hein Variation",
+        "es-ES": "Aceptado: Contragambito Lopez-Gianutio, Variante Hein",
+        "pt-PT": "Aceito: Contragambito Lopez-Gianutio, Variante Hein",
+        "de": "Angenommen: Lopez-Gianutio-Gegengambit, Hein-Variante",
+        "fr": "Accepté: Contre-gambit Lopez-Gianutio, Variante Hein",
+        "it": "Accettato: Controgambetto Lopez-Gianutio, Variante Hein"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Lopez-Gianutio Countergambit, Hein Variation",
@@ -2199,9 +3339,15 @@
     {
       "id": "line-3ff757d0aa326210",
       "names": {
-        "en": "Accepted: MacLeod Defense",
+        "en-US": "Accepted: MacLeod Defense",
         "pt-BR": "Aceito: Defesa MacLeod",
-        "es": "Aceptado: Defensa MacLeod"
+        "es-419": "Aceptado: Defensa MacLeod",
+        "en-GB": "Accepted: MacLeod Defence",
+        "es-ES": "Aceptado: Defensa MacLeod",
+        "pt-PT": "Aceito: Defesa MacLeod",
+        "de": "Angenommen: MacLeod-Verteidigung",
+        "fr": "Accepté: Défense MacLeod",
+        "it": "Accettato: Difesa MacLeod"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: MacLeod Defense",
@@ -2211,9 +3357,15 @@
     {
       "id": "line-f4883a2856a5fc69",
       "names": {
-        "en": "Accepted: Mason-Keres Gambit",
+        "en-US": "Accepted: Mason-Keres Gambit",
         "pt-BR": "Aceito: Gambito Mason-Keres",
-        "es": "Aceptado: Gambito Mason-Keres"
+        "es-419": "Aceptado: Gambito Mason-Keres",
+        "en-GB": "Accepted: Mason-Keres Gambit",
+        "es-ES": "Aceptado: Gambito Mason-Keres",
+        "pt-PT": "Aceito: Gambito Mason-Keres",
+        "de": "Angenommen: Mason-Keres-Gambit",
+        "fr": "Accepté: Gambit Mason-Keres",
+        "it": "Accettato: Gambetto Mason-Keres"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Mason-Keres Gambit",
@@ -2223,9 +3375,15 @@
     {
       "id": "line-dd0b37687bd44323",
       "names": {
-        "en": "Accepted: Mayet Gambit",
+        "en-US": "Accepted: Mayet Gambit",
         "pt-BR": "Aceito: Gambito Mayet",
-        "es": "Aceptado: Gambito Mayet"
+        "es-419": "Aceptado: Gambito Mayet",
+        "en-GB": "Accepted: Mayet Gambit",
+        "es-ES": "Aceptado: Gambito Mayet",
+        "pt-PT": "Aceito: Gambito Mayet",
+        "de": "Angenommen: Mayet-Gambit",
+        "fr": "Accepté: Gambit Mayet",
+        "it": "Accettato: Gambetto Mayet"
       },
       "eco": "C38",
       "opening": "King's Gambit Accepted: Mayet Gambit",
@@ -2235,9 +3393,15 @@
     {
       "id": "line-cd1aed5de5f63711",
       "names": {
-        "en": "Accepted: McDonnell Gambit",
+        "en-US": "Accepted: McDonnell Gambit",
         "pt-BR": "Aceito: Gambito McDonnell",
-        "es": "Aceptado: Gambito McDonnell"
+        "es-419": "Aceptado: Gambito McDonnell",
+        "en-GB": "Accepted: McDonnell Gambit",
+        "es-ES": "Aceptado: Gambito McDonnell",
+        "pt-PT": "Aceito: Gambito McDonnell",
+        "de": "Angenommen: McDonnell-Gambit",
+        "fr": "Accepté: Gambit McDonnell",
+        "it": "Accettato: Gambetto McDonnell"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: McDonnell Gambit",
@@ -2247,9 +3411,15 @@
     {
       "id": "line-dd826856d594d651",
       "names": {
-        "en": "Accepted: Middleton Countergambit",
+        "en-US": "Accepted: Middleton Countergambit",
         "pt-BR": "Aceito: Contragambito Middleton",
-        "es": "Aceptado: Contragambito Middleton"
+        "es-419": "Aceptado: Contragambito Middleton",
+        "en-GB": "Accepted: Middleton Countergambit",
+        "es-ES": "Aceptado: Contragambito Middleton",
+        "pt-PT": "Aceito: Contragambito Middleton",
+        "de": "Angenommen: Middleton-Gegengambit",
+        "fr": "Accepté: Contre-gambit Middleton",
+        "it": "Accettato: Controgambetto Middleton"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Middleton Countergambit",
@@ -2259,9 +3429,15 @@
     {
       "id": "line-6dbaffe8395e65ef",
       "names": {
-        "en": "Accepted: Muzio Gambit Accepted, From's Defense",
+        "en-US": "Accepted: Muzio Gambit Accepted, From's Defense",
         "pt-BR": "Aceito: Gambito Muzio Aceito, Defesa From",
-        "es": "Aceptado: Gambito Muzio Aceptado, Defensa From"
+        "es-419": "Aceptado: Gambito Muzio Aceptado, Defensa From",
+        "en-GB": "Accepted: Muzio Gambit Accepted, From's Defence",
+        "es-ES": "Aceptado: Gambito Muzio Aceptado, Defensa From",
+        "pt-PT": "Aceito: Gambito Muzio Aceito, Defesa From",
+        "de": "Angenommen: Angenommenes Muzio-Gambit, From-Verteidigung",
+        "fr": "Accepté: Gambit Muzio accepté, Défense From",
+        "it": "Accettato: Gambetto Muzio accettato, Difesa From"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Muzio Gambit Accepted, From's Defense",
@@ -2271,9 +3447,15 @@
     {
       "id": "line-7126b18a4238f0b5",
       "names": {
-        "en": "Accepted: Orsini Gambit",
+        "en-US": "Accepted: Orsini Gambit",
         "pt-BR": "Aceito: Gambito Orsini",
-        "es": "Aceptado: Gambito Orsini"
+        "es-419": "Aceptado: Gambito Orsini",
+        "en-GB": "Accepted: Orsini Gambit",
+        "es-ES": "Aceptado: Gambito Orsini",
+        "pt-PT": "Aceito: Gambito Orsini",
+        "de": "Angenommen: Orsini-Gambit",
+        "fr": "Accepté: Gambit Orsini",
+        "it": "Accettato: Gambetto Orsini"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Orsini Gambit",
@@ -2283,9 +3465,15 @@
     {
       "id": "line-98e19a02c8e0192d",
       "names": {
-        "en": "Accepted: Paris Gambit",
+        "en-US": "Accepted: Paris Gambit",
         "pt-BR": "Aceito: Gambito Parisiense",
-        "es": "Aceptado: Gambito Parisino"
+        "es-419": "Aceptado: Gambito Parisino",
+        "en-GB": "Accepted: Paris Gambit",
+        "es-ES": "Aceptado: Gambito Parisino",
+        "pt-PT": "Aceito: Gambito Parisiense",
+        "de": "Angenommen: Pariser Gambit",
+        "fr": "Accepté: Gambit parisien",
+        "it": "Accettato: Gambetto parigino"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Paris Gambit",
@@ -2295,9 +3483,15 @@
     {
       "id": "line-bccd23114ef4aa36",
       "names": {
-        "en": "Accepted: Quaade Gambit",
+        "en-US": "Accepted: Quaade Gambit",
         "pt-BR": "Aceito: Gambito Quaade",
-        "es": "Aceptado: Gambito Quaade"
+        "es-419": "Aceptado: Gambito Quaade",
+        "en-GB": "Accepted: Quaade Gambit",
+        "es-ES": "Aceptado: Gambito Quaade",
+        "pt-PT": "Aceito: Gambito Quaade",
+        "de": "Angenommen: Quaade-Gambit",
+        "fr": "Accepté: Gambit Quaade",
+        "it": "Accettato: Gambetto Quaade"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Quaade Gambit",
@@ -2307,9 +3501,15 @@
     {
       "id": "line-7321e7555bf30a57",
       "names": {
-        "en": "Accepted: Silberschmidt Gambit",
+        "en-US": "Accepted: Silberschmidt Gambit",
         "pt-BR": "Aceito: Gambito Silberschmidt",
-        "es": "Aceptado: Gambito Silberschmidt"
+        "es-419": "Aceptado: Gambito Silberschmidt",
+        "en-GB": "Accepted: Silberschmidt Gambit",
+        "es-ES": "Aceptado: Gambito Silberschmidt",
+        "pt-PT": "Aceito: Gambito Silberschmidt",
+        "de": "Angenommen: Silberschmidt-Gambit",
+        "fr": "Accepté: Gambit Silberschmidt",
+        "it": "Accettato: Gambetto Silberschmidt"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Silberschmidt Gambit",
@@ -2319,9 +3519,15 @@
     {
       "id": "line-9f5680e761d7b87c",
       "names": {
-        "en": "Accepted: Stamma Gambit",
+        "en-US": "Accepted: Stamma Gambit",
         "pt-BR": "Aceito: Gambito Stamma",
-        "es": "Aceptado: Gambito Stamma"
+        "es-419": "Aceptado: Gambito Stamma",
+        "en-GB": "Accepted: Stamma Gambit",
+        "es-ES": "Aceptado: Gambito Stamma",
+        "pt-PT": "Aceito: Gambito Stamma",
+        "de": "Angenommen: Stamma-Gambit",
+        "fr": "Accepté: Gambit Stamma",
+        "it": "Accettato: Gambetto Stamma"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Stamma Gambit",
@@ -2331,9 +3537,15 @@
     {
       "id": "line-430292cbb00b9e4c",
       "names": {
-        "en": "Accepted: Sörensen Gambit",
+        "en-US": "Accepted: Sörensen Gambit",
         "pt-BR": "Aceito: Gambito Sörensen",
-        "es": "Aceptado: Gambito Sörensen"
+        "es-419": "Aceptado: Gambito Sörensen",
+        "en-GB": "Accepted: Sörensen Gambit",
+        "es-ES": "Aceptado: Gambito Sörensen",
+        "pt-PT": "Aceito: Gambito Sörensen",
+        "de": "Angenommen: Sörensen-Gambit",
+        "fr": "Accepté: Gambit Sörensen",
+        "it": "Accettato: Gambetto Sörensen"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Sörensen Gambit",
@@ -2343,9 +3555,15 @@
     {
       "id": "line-2890113c4d4a2557",
       "names": {
-        "en": "Accepted: Traditional Variation",
+        "en-US": "Accepted: Traditional Variation",
         "pt-BR": "Aceito: Variante Tradicional",
-        "es": "Aceptado: Variante Tradicional"
+        "es-419": "Aceptado: Variante Tradicional",
+        "en-GB": "Accepted: Traditional Variation",
+        "es-ES": "Aceptado: Variante Tradicional",
+        "pt-PT": "Aceito: Variante Tradicional",
+        "de": "Angenommen: Traditionelle Variante",
+        "fr": "Accepté: Variante traditionnelle",
+        "it": "Accettato: Variante tradizionale"
       },
       "eco": "C38",
       "opening": "King's Gambit Accepted: Traditional Variation",
@@ -2355,9 +3573,15 @@
     {
       "id": "line-8951e226d8769735",
       "names": {
-        "en": "Accepted: Tumbleweed",
+        "en-US": "Accepted: Tumbleweed",
         "pt-BR": "Aceito: Bola de Feno",
-        "es": "Aceptado: Planta Rodadora"
+        "es-419": "Aceptado: Planta Rodadora",
+        "en-GB": "Accepted: Tumbleweed",
+        "es-ES": "Aceptado: Planta Rodadora",
+        "pt-PT": "Aceito: Bola de Feno",
+        "de": "Angenommen: Tumbleweed",
+        "fr": "Accepté: Tumbleweed",
+        "it": "Accettato: Tumbleweed"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Tumbleweed",
@@ -2367,9 +3591,15 @@
     {
       "id": "line-7d3d4d84995edd40",
       "names": {
-        "en": "Accepted: Villemson Gambit",
+        "en-US": "Accepted: Villemson Gambit",
         "pt-BR": "Aceito: Gambito Villemson",
-        "es": "Aceptado: Gambito Villemson"
+        "es-419": "Aceptado: Gambito Villemson",
+        "en-GB": "Accepted: Villemson Gambit",
+        "es-ES": "Aceptado: Gambito Villemson",
+        "pt-PT": "Aceito: Gambito Villemson",
+        "de": "Angenommen: Villemson-Gambit",
+        "fr": "Accepté: Gambit Villemson",
+        "it": "Accettato: Gambetto Villemson"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Villemson Gambit",
@@ -2379,9 +3609,15 @@
     {
       "id": "line-cec85da220bc6728",
       "names": {
-        "en": "Accepted: Wagenbach Defense",
+        "en-US": "Accepted: Wagenbach Defense",
         "pt-BR": "Aceito: Defesa Wagenbach",
-        "es": "Aceptado: Defensa Wagenbach"
+        "es-419": "Aceptado: Defensa Wagenbach",
+        "en-GB": "Accepted: Wagenbach Defence",
+        "es-ES": "Aceptado: Defensa Wagenbach",
+        "pt-PT": "Aceito: Defesa Wagenbach",
+        "de": "Angenommen: Wagenbach-Verteidigung",
+        "fr": "Accepté: Défense Wagenbach",
+        "it": "Accettato: Difesa Wagenbach"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Wagenbach Defense",
@@ -2391,9 +3627,15 @@
     {
       "id": "line-ac25dc07eba47cc9",
       "names": {
-        "en": "Declined: Falkbeer Countergambit Accepted",
+        "en-US": "Declined: Falkbeer Countergambit Accepted",
         "pt-BR": "Recusado: Contragambito Falkbeer Aceito",
-        "es": "Rehusado: Contragambito Falkbeer Aceptado"
+        "es-419": "Rehusado: Contragambito Falkbeer Aceptado",
+        "en-GB": "Declined: Falkbeer Countergambit Accepted",
+        "es-ES": "Rehusado: Contragambito Falkbeer Aceptado",
+        "pt-PT": "Recusado: Contragambito Falkbeer Aceito",
+        "de": "Abgelehnt: Angenommenes Falkbeer-Gegengambit",
+        "fr": "Refusé: Contre-gambit Falkbeer accepté",
+        "it": "Rifiutato: Controgambetto Falkbeer accettato"
       },
       "eco": "C31",
       "opening": "King's Gambit Declined: Falkbeer Countergambit Accepted",
@@ -2403,9 +3645,15 @@
     {
       "id": "line-dd02bbc0f0e6b41d",
       "names": {
-        "en": "Declined: Hobbs-Zilbermints Gambit",
+        "en-US": "Declined: Hobbs-Zilbermints Gambit",
         "pt-BR": "Recusado: Gambito Hobbs-Zilbermints",
-        "es": "Rehusado: Gambito Hobbs-Zilbermints"
+        "es-419": "Rehusado: Gambito Hobbs-Zilbermints",
+        "en-GB": "Declined: Hobbs-Zilbermints Gambit",
+        "es-ES": "Rehusado: Gambito Hobbs-Zilbermints",
+        "pt-PT": "Recusado: Gambito Hobbs-Zilbermints",
+        "de": "Abgelehnt: Hobbs-Zilbermints-Gambit",
+        "fr": "Refusé: Gambit Hobbs-Zilbermints",
+        "it": "Rifiutato: Gambetto Hobbs-Zilbermints"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Hobbs-Zilbermints Gambit",
@@ -2415,9 +3663,15 @@
     {
       "id": "line-7a2ab0cec9810a38",
       "names": {
-        "en": "Declined: Keene Defense",
+        "en-US": "Declined: Keene Defense",
         "pt-BR": "Recusado: Defesa Keene",
-        "es": "Rehusado: Defensa Keene"
+        "es-419": "Rehusado: Defensa Keene",
+        "en-GB": "Declined: Keene Defence",
+        "es-ES": "Rehusado: Defensa Keene",
+        "pt-PT": "Recusado: Defesa Keene",
+        "de": "Abgelehnt: Keene-Verteidigung",
+        "fr": "Refusé: Défense Keene",
+        "it": "Rifiutato: Difesa Keene"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Keene Defense",
@@ -2427,9 +3681,15 @@
     {
       "id": "line-dbd755a8130bf4b3",
       "names": {
-        "en": "Declined: Mafia Defense",
+        "en-US": "Declined: Mafia Defense",
         "pt-BR": "Recusado: Defesa Mafia",
-        "es": "Rehusado: Defensa Mafia"
+        "es-419": "Rehusado: Defensa Mafia",
+        "en-GB": "Declined: Mafia Defence",
+        "es-ES": "Rehusado: Defensa Mafia",
+        "pt-PT": "Recusado: Defesa Máfia",
+        "de": "Abgelehnt: Mafia-Verteidigung",
+        "fr": "Refusé: Défense Mafia",
+        "it": "Rifiutato: Difesa Mafia"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Mafia Defense",
@@ -2439,9 +3699,15 @@
     {
       "id": "line-78dea44237ddfc28",
       "names": {
-        "en": "Declined: Miles Defense",
+        "en-US": "Declined: Miles Defense",
         "pt-BR": "Recusado: Defesa Miles",
-        "es": "Rehusado: Defensa Miles"
+        "es-419": "Rehusado: Defensa Miles",
+        "en-GB": "Declined: Miles Defence",
+        "es-ES": "Rehusado: Defensa Miles",
+        "pt-PT": "Recusado: Defesa Miles",
+        "de": "Abgelehnt: Miles-Verteidigung",
+        "fr": "Refusé: Défense Miles",
+        "it": "Rifiutato: Difesa Miles"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Miles Defense",
@@ -2451,9 +3717,15 @@
     {
       "id": "line-099f1cc14bc524f5",
       "names": {
-        "en": "Declined: Petrov's Defense",
+        "en-US": "Declined: Petrov's Defense",
         "pt-BR": "Recusado: Defesa Petroff",
-        "es": "Rehusado: Defensa Petrov"
+        "es-419": "Rehusado: Defensa Petrov",
+        "en-GB": "Declined: Petrov's Defence",
+        "es-ES": "Rehusado: Defensa Petrov",
+        "pt-PT": "Recusado: Defesa Petroff",
+        "de": "Abgelehnt: Russische Verteidigung",
+        "fr": "Refusé: Défense russe",
+        "it": "Rifiutato: Difesa russa"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Petrov's Defense",
@@ -2463,9 +3735,15 @@
     {
       "id": "line-e47b2cf8da1ac7ac",
       "names": {
-        "en": "Declined: Queen's Knight Defense",
+        "en-US": "Declined: Queen's Knight Defense",
         "pt-BR": "Recusado: Defesa do Cavalo da Dama",
-        "es": "Rehusado: Defensa del Caballo de Dama"
+        "es-419": "Rehusado: Defensa del Caballo de Dama",
+        "en-GB": "Declined: Queen's Knight Defence",
+        "es-ES": "Rehusado: Defensa del Caballo de Dama",
+        "pt-PT": "Recusado: Defesa do Cavalo da Dama",
+        "de": "Abgelehnt: Damenspringer-Verteidigung",
+        "fr": "Refusé: Défense du cavalier-dame",
+        "it": "Rifiutato: Difesa del cavallo di donna"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Queen's Knight Defense",
@@ -2475,9 +3753,15 @@
     {
       "id": "line-d4619b978d0bb352",
       "names": {
-        "en": "Declined: Senechaud Countergambit",
+        "en-US": "Declined: Senechaud Countergambit",
         "pt-BR": "Recusado: Contragambito Senechaud",
-        "es": "Rehusado: Contragambito Senechaud"
+        "es-419": "Rehusado: Contragambito Senechaud",
+        "en-GB": "Declined: Senechaud Countergambit",
+        "es-ES": "Rehusado: Contragambito Senechaud",
+        "pt-PT": "Recusado: Contragambito Senechaud",
+        "de": "Abgelehnt: Senechaud-Gegengambit",
+        "fr": "Refusé: Contre-gambit Senechaud",
+        "it": "Rifiutato: Controgambetto Senechaud"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Senechaud Countergambit",
@@ -2487,9 +3771,15 @@
     {
       "id": "line-b142c9c3f8b0cf71",
       "names": {
-        "en": "Declined: Soller-Zilbermints Gambit",
+        "en-US": "Declined: Soller-Zilbermints Gambit",
         "pt-BR": "Recusado: Gambito Soller-Zilbermints",
-        "es": "Rehusado: Gambito Soller-Zilbermints"
+        "es-419": "Rehusado: Gambito Soller-Zilbermints",
+        "en-GB": "Declined: Soller-Zilbermints Gambit",
+        "es-ES": "Rehusado: Gambito Soller-Zilbermints",
+        "pt-PT": "Recusado: Gambito Soller-Zilbermints",
+        "de": "Abgelehnt: Soller-Zilbermints-Gambit",
+        "fr": "Refusé: Gambit Soller-Zilbermints",
+        "it": "Rifiutato: Gambetto Soller-Zilbermints"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Soller-Zilbermints Gambit",
@@ -2499,9 +3789,15 @@
     {
       "id": "line-766ab7067ef52250",
       "names": {
-        "en": "Declined: Zilbermints Double Countergambit",
+        "en-US": "Declined: Zilbermints Double Countergambit",
         "pt-BR": "Recusado: Contragambito Duplo Zilbermints",
-        "es": "Rehusado: Doble Contragambito Zilbermints"
+        "es-419": "Rehusado: Doble Contragambito Zilbermints",
+        "en-GB": "Declined: Zilbermints Double Countergambit",
+        "es-ES": "Rehusado: Doble Contragambito Zilbermints",
+        "pt-PT": "Recusado: Contragambito Duplo Zilbermints",
+        "de": "Abgelehnt: Zilbermints-Doppelgegengambit",
+        "fr": "Refusé: Double contre-gambit Zilbermints",
+        "it": "Rifiutato: Doppio controgambetto Zilbermints"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Zilbermints Double Countergambit",
@@ -2511,9 +3807,15 @@
     {
       "id": "line-7cbf82f969af2245",
       "names": {
-        "en": "Declined: Zilbermints Double Gambit",
+        "en-US": "Declined: Zilbermints Double Gambit",
         "pt-BR": "Recusado: Gambito Duplo Zilbermints",
-        "es": "Rehusado: Doble Gambito Zilbermints"
+        "es-419": "Rehusado: Doble Gambito Zilbermints",
+        "en-GB": "Declined: Zilbermints Double Gambit",
+        "es-ES": "Rehusado: Doble Gambito Zilbermints",
+        "pt-PT": "Recusado: Gambito Duplo Zilbermints",
+        "de": "Abgelehnt: Zilbermints-Doppelgambit",
+        "fr": "Refusé: Double gambit Zilbermints",
+        "it": "Rifiutato: Doppio gambetto Zilbermints"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Zilbermints Double Gambit",
@@ -2523,9 +3825,15 @@
     {
       "id": "line-91beed2c21d74ad8",
       "names": {
-        "en": "King's Gambit",
+        "en-US": "King's Gambit",
         "pt-BR": "Gambito do Rei",
-        "es": "Gambito de Rey"
+        "es-419": "Gambito de Rey",
+        "en-GB": "King's Gambit",
+        "es-ES": "Gambito de Rey",
+        "pt-PT": "Gambito do Rei",
+        "de": "Königsgambit",
+        "fr": "Gambit du roi",
+        "it": "Gambetto di re"
       },
       "eco": "C30",
       "opening": "King's Gambit",

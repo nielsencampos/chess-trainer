@@ -1,25 +1,43 @@
 {
   "id": "modern-defense",
   "names": {
-    "en": "Modern Defense",
+    "en-US": "Modern Defense",
     "pt-BR": "Defesa Moderna",
-    "es": "Defensa Moderna"
+    "es-419": "Defensa Moderna",
+    "en-GB": "Modern Defense",
+    "es-ES": "Defensa Moderna",
+    "pt-PT": "Defesa Moderna",
+    "de": "Moderne Verteidigung",
+    "fr": "Défense moderne",
+    "it": "Difesa Robatsch"
   },
   "order": 8,
   "variants": [
     {
       "names": {
-        "en": "Semi-Averbakh Variation",
+        "en-US": "Semi-Averbakh Variation",
         "pt-BR": "Variante Semi-Averbakh",
-        "es": "Variante Semi-Averbakh"
+        "es-419": "Variante Semi-Averbakh",
+        "en-GB": "Semi-Averbakh Variation",
+        "es-ES": "Variante Semi-Averbakh",
+        "pt-PT": "Variante Semi-Averbakh",
+        "de": "Halb-Awerbach-Variante",
+        "fr": "Variante semi-Averbakh",
+        "it": "Variante semi-Averbach"
       },
       "lines": [
         {
           "id": "line-d709a9d9e6279499",
           "names": {
-            "en": "Semi-Averbakh Variation, Pterodactyl Variation",
+            "en-US": "Semi-Averbakh Variation, Pterodactyl Variation",
             "pt-BR": "Variante Semi-Averbakh, Variante Pterodáctilo",
-            "es": "Variante Semi-Averbakh, Variante Pterodáctilo"
+            "es-419": "Variante Semi-Averbakh, Variante Pterodáctilo",
+            "en-GB": "Semi-Averbakh Variation, Pterodactyl Variation",
+            "es-ES": "Variante Semi-Averbakh, Variante Pterodáctilo",
+            "pt-PT": "Variante Semi-Averbakh, Variante Pterodáctilo",
+            "de": "Halb-Awerbach-Variante, Pterodaktylus-Variante",
+            "fr": "Variante semi-Averbakh, Variante du ptérodactyle",
+            "it": "Variante semi-Averbach, Variante dello pterodattilo"
           },
           "eco": "A04",
           "opening": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation",
@@ -29,9 +47,15 @@
         {
           "id": "line-58281a5873313c6a",
           "names": {
-            "en": "Semi-Averbakh Variation, Polish Variation",
+            "en-US": "Semi-Averbakh Variation, Polish Variation",
             "pt-BR": "Variante Semi-Averbakh, Variante Polonesa",
-            "es": "Variante Semi-Averbakh, Variante Polaca"
+            "es-419": "Variante Semi-Averbakh, Variante Polaca",
+            "en-GB": "Semi-Averbakh Variation, Polish Variation",
+            "es-ES": "Variante Semi-Averbakh, Variante Polaca",
+            "pt-PT": "Variante Semi-Averbakh, Variante Polaca",
+            "de": "Halb-Awerbach-Variante, Polnische Variante",
+            "fr": "Variante semi-Averbakh, Variante polonaise",
+            "it": "Variante semi-Averbach, Variante polacca"
           },
           "eco": "A04",
           "opening": "Modern Defense: Semi-Averbakh Variation, Polish Variation",
@@ -41,9 +65,15 @@
         {
           "id": "line-8ca6fe1ad759235f",
           "names": {
-            "en": "Semi-Averbakh Variation, Pterodactyl Variation Accepted",
+            "en-US": "Semi-Averbakh Variation, Pterodactyl Variation Accepted",
             "pt-BR": "Variante Semi-Averbakh, Variante Pterodáctilo Aceita",
-            "es": "Variante Semi-Averbakh, Variante Pterodáctilo Aceptada"
+            "es-419": "Variante Semi-Averbakh, Variante Pterodáctilo Aceptada",
+            "en-GB": "Semi-Averbakh Variation, Pterodactyl Variation Accepted",
+            "es-ES": "Variante Semi-Averbakh, Variante Pterodáctilo Aceptada",
+            "pt-PT": "Variante Semi-Averbakh, Variante Pterodáctilo Aceita",
+            "de": "Halb-Awerbach-Variante, Angenommene Pterodaktylus-Variante",
+            "fr": "Variante semi-Averbakh, Variante du ptérodactyle acceptée",
+            "it": "Variante semi-Averbach, Variante dello pterodattilo accettata"
           },
           "eco": "A04",
           "opening": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation Accepted",
@@ -53,9 +83,15 @@
         {
           "id": "line-d94313b355cbc402",
           "names": {
-            "en": "Semi-Averbakh Variation, Pterodactyl Variation Declined",
+            "en-US": "Semi-Averbakh Variation, Pterodactyl Variation Declined",
             "pt-BR": "Variante Semi-Averbakh, Variante Pterodáctilo Recusada",
-            "es": "Variante Semi-Averbakh, Variante Pterodáctilo Rehusada"
+            "es-419": "Variante Semi-Averbakh, Variante Pterodáctilo Rehusada",
+            "en-GB": "Semi-Averbakh Variation, Pterodactyl Variation Declined",
+            "es-ES": "Variante Semi-Averbakh, Variante Pterodáctilo Rehusada",
+            "pt-PT": "Variante Semi-Averbakh, Variante Pterodáctilo Recusada",
+            "de": "Halb-Awerbach-Variante, Abgelehnte Pterodaktylus-Variante",
+            "fr": "Variante semi-Averbakh, Variante du ptérodactyle refusée",
+            "it": "Variante semi-Averbach, Variante dello pterodattilo rifiutata"
           },
           "eco": "B06",
           "opening": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation Declined",
@@ -66,17 +102,29 @@
     },
     {
       "names": {
-        "en": "Bishop Attack",
+        "en-US": "Bishop Attack",
         "pt-BR": "Ataque do Bispo",
-        "es": "Ataque del Alfil"
+        "es-419": "Ataque del Alfil",
+        "en-GB": "Bishop Attack",
+        "es-ES": "Ataque del Alfil",
+        "pt-PT": "Ataque do Bispo",
+        "de": "Läuferangriff",
+        "fr": "Attaque du fou",
+        "it": "Attacco dell'alfiere"
       },
       "lines": [
         {
           "id": "line-525cc5ab97f2b3a3",
           "names": {
-            "en": "Bishop Attack, Monkey's Bum",
+            "en-US": "Bishop Attack, Monkey's Bum",
             "pt-BR": "Ataque do Bispo, Bumbum do Macaco",
-            "es": "Ataque del Alfil, Trasero del Mono"
+            "es-419": "Ataque del Alfil, Trasero del Mono",
+            "en-GB": "Bishop Attack, Monkey's Bum",
+            "es-ES": "Ataque del Alfil, Trasero del Mono",
+            "pt-PT": "Ataque do Bispo, Rabo do Macaco",
+            "de": "Läuferangriff, Affenhintern",
+            "fr": "Attaque du fou, Derrière du singe",
+            "it": "Attacco dell'alfiere, Sedere della scimmia"
           },
           "eco": "B06",
           "opening": "Modern Defense: Bishop Attack, Monkey's Bum",
@@ -86,9 +134,15 @@
         {
           "id": "line-4627b6b5528efb0f",
           "names": {
-            "en": "Bishop Attack",
+            "en-US": "Bishop Attack",
             "pt-BR": "Ataque do Bispo",
-            "es": "Ataque del Alfil"
+            "es-419": "Ataque del Alfil",
+            "en-GB": "Bishop Attack",
+            "es-ES": "Ataque del Alfil",
+            "pt-PT": "Ataque do Bispo",
+            "de": "Läuferangriff",
+            "fr": "Attaque du fou",
+            "it": "Attacco dell'alfiere"
           },
           "eco": "B06",
           "opening": "Modern Defense: Bishop Attack",
@@ -98,9 +152,15 @@
         {
           "id": "line-970885159b20b25d",
           "names": {
-            "en": "Bishop Attack, Bücker Gambit",
+            "en-US": "Bishop Attack, Bücker Gambit",
             "pt-BR": "Ataque do Bispo, Gambito Bücker",
-            "es": "Ataque del Alfil, Gambito Bücker"
+            "es-419": "Ataque del Alfil, Gambito Bücker",
+            "en-GB": "Bishop Attack, Bücker Gambit",
+            "es-ES": "Ataque del Alfil, Gambito Bücker",
+            "pt-PT": "Ataque do Bispo, Gambito Bücker",
+            "de": "Läuferangriff, Bücker-Gambit",
+            "fr": "Attaque du fou, Gambit Bücker",
+            "it": "Attacco dell'alfiere, Gambetto Bücker"
           },
           "eco": "B06",
           "opening": "Modern Defense: Bishop Attack, Bücker Gambit",
@@ -111,17 +171,29 @@
     },
     {
       "names": {
-        "en": "Main",
+        "en-US": "Main",
         "pt-BR": "Principal",
-        "es": "Principal"
+        "es-419": "Principal",
+        "en-GB": "Main",
+        "es-ES": "Principal",
+        "pt-PT": "Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-f9d82c038034321d",
           "names": {
-            "en": "Modern Defense",
+            "en-US": "Modern Defense",
             "pt-BR": "Defesa Moderna",
-            "es": "Defensa Moderna"
+            "es-419": "Defensa Moderna",
+            "en-GB": "Modern Defence",
+            "es-ES": "Defensa Moderna",
+            "pt-PT": "Defesa Moderna",
+            "de": "Moderne Verteidigung",
+            "fr": "Défense moderne",
+            "it": "Difesa moderna"
           },
           "eco": "A41",
           "opening": "Modern Defense",
@@ -131,9 +203,15 @@
         {
           "id": "line-06c5c76beedfcfd6",
           "names": {
-            "en": "Modern Defense",
+            "en-US": "Modern Defense",
             "pt-BR": "Defesa Moderna",
-            "es": "Defensa Moderna"
+            "es-419": "Defensa Moderna",
+            "en-GB": "Modern Defence",
+            "es-ES": "Defensa Moderna",
+            "pt-PT": "Defesa Moderna",
+            "de": "Moderne Verteidigung",
+            "fr": "Défense moderne",
+            "it": "Difesa moderna"
           },
           "eco": "B06",
           "opening": "Modern Defense",
@@ -143,9 +221,15 @@
         {
           "id": "line-bfb6fcca4084996b",
           "names": {
-            "en": "Modern Defense",
+            "en-US": "Modern Defense",
             "pt-BR": "Defesa Moderna",
-            "es": "Defensa Moderna"
+            "es-419": "Defensa Moderna",
+            "en-GB": "Modern Defence",
+            "es-ES": "Defensa Moderna",
+            "pt-PT": "Defesa Moderna",
+            "de": "Moderne Verteidigung",
+            "fr": "Défense moderne",
+            "it": "Difesa moderna"
           },
           "eco": "B06",
           "opening": "Modern Defense",
@@ -156,17 +240,29 @@
     },
     {
       "names": {
-        "en": "Two Knights Variation",
+        "en-US": "Two Knights Variation",
         "pt-BR": "Variante dos Dois Cavalos",
-        "es": "Variante de los Dos Caballos"
+        "es-419": "Variante de los Dos Caballos",
+        "en-GB": "Two Knights Variation",
+        "es-ES": "Variante de los Dos Caballos",
+        "pt-PT": "Variante dos Dois Cavalos",
+        "de": "Zweispringervariante",
+        "fr": "Variante des deux cavaliers",
+        "it": "Variante dei due cavalli"
       },
       "lines": [
         {
           "id": "line-14971c0bc7eb32fd",
           "names": {
-            "en": "Two Knights Variation, Suttles Variation",
+            "en-US": "Two Knights Variation, Suttles Variation",
             "pt-BR": "Variante dos Dois Cavalos, Variante Suttles",
-            "es": "Variante de los Dos Caballos, Variante Suttles"
+            "es-419": "Variante de los Dos Caballos, Variante Suttles",
+            "en-GB": "Two Knights Variation, Suttles Variation",
+            "es-ES": "Variante de los Dos Caballos, Variante Suttles",
+            "pt-PT": "Variante dos Dois Cavalos, Variante Suttles",
+            "de": "Zweispringervariante, Suttles-Variante",
+            "fr": "Variante des deux cavaliers, Variante Suttles",
+            "it": "Variante dei due cavalli, Variante Suttles"
           },
           "eco": "B06",
           "opening": "Modern Defense: Two Knights Variation, Suttles Variation",
@@ -176,9 +272,15 @@
         {
           "id": "line-c2b3afdf5f5e0e2c",
           "names": {
-            "en": "Two Knights Variation",
+            "en-US": "Two Knights Variation",
             "pt-BR": "Variante dos Dois Cavalos",
-            "es": "Variante de los Dos Caballos"
+            "es-419": "Variante de los Dos Caballos",
+            "en-GB": "Two Knights Variation",
+            "es-ES": "Variante de los Dos Caballos",
+            "pt-PT": "Variante dos Dois Cavalos",
+            "de": "Zweispringervariante",
+            "fr": "Variante des deux cavaliers",
+            "it": "Variante dei due cavalli"
           },
           "eco": "B06",
           "opening": "Modern Defense: Two Knights Variation",
@@ -188,9 +290,15 @@
         {
           "id": "line-0a93b64f2a2c094a",
           "names": {
-            "en": "Two Knights Variation, Suttles Variation, Tal Gambit",
+            "en-US": "Two Knights Variation, Suttles Variation, Tal Gambit",
             "pt-BR": "Variante dos Dois Cavalos, Variante Suttles, Gambito Tal",
-            "es": "Variante de los Dos Caballos, Variante Suttles, Gambito Tal"
+            "es-419": "Variante de los Dos Caballos, Variante Suttles, Gambito Tal",
+            "en-GB": "Two Knights Variation, Suttles Variation, Tal Gambit",
+            "es-ES": "Variante de los Dos Caballos, Variante Suttles, Gambito Tal",
+            "pt-PT": "Variante dos Dois Cavalos, Variante Suttles, Gambito Tal",
+            "de": "Zweispringervariante, Suttles-Variante, Tal-Gambit",
+            "fr": "Variante des deux cavaliers, Variante Suttles, Gambit Tal",
+            "it": "Variante dei due cavalli, Variante Suttles, Gambetto Tal"
           },
           "eco": "B06",
           "opening": "Modern Defense: Two Knights Variation, Suttles Variation, Tal Gambit",
@@ -201,17 +309,29 @@
     },
     {
       "names": {
-        "en": "Lizard Defense",
+        "en-US": "Lizard Defense",
         "pt-BR": "Defesa Lagarto",
-        "es": "Defensa Lagarto"
+        "es-419": "Defensa Lagarto",
+        "en-GB": "Lizard Defence",
+        "es-ES": "Defensa Lagarto",
+        "pt-PT": "Defesa Lagarto",
+        "de": "Eidechsen-Verteidigung",
+        "fr": "Défense du lézard",
+        "it": "Difesa della lucertola"
       },
       "lines": [
         {
           "id": "line-3df3b5d4d6ee51e3",
           "names": {
-            "en": "Lizard Defense, Pirc-Diemer Gambit",
+            "en-US": "Lizard Defense, Pirc-Diemer Gambit",
             "pt-BR": "Defesa Lagarto, Gambito Pirc-Diemer",
-            "es": "Defensa Lagarto, Gambito Pirc-Diemer"
+            "es-419": "Defensa Lagarto, Gambito Pirc-Diemer",
+            "en-GB": "Lizard Defence, Pirc-Diemer Gambit",
+            "es-ES": "Defensa Lagarto, Gambito Pirc-Diemer",
+            "pt-PT": "Defesa Lagarto, Gambito Pirc-Diemer",
+            "de": "Eidechsen-Verteidigung, Pirc-Diemer-Gambit",
+            "fr": "Défense du lézard, Gambit Pirc-Diemer",
+            "it": "Difesa della lucertola, Gambetto Pirc-Diemer"
           },
           "eco": "A40",
           "opening": "Modern Defense: Lizard Defense, Pirc-Diemer Gambit",
@@ -221,9 +341,15 @@
         {
           "id": "line-0c6ad766579551bb",
           "names": {
-            "en": "Lizard Defense, Mittenberger Gambit",
+            "en-US": "Lizard Defense, Mittenberger Gambit",
             "pt-BR": "Defesa Lagarto, Gambito Mittenberger",
-            "es": "Defensa Lagarto, Gambito Mittenberger"
+            "es-419": "Defensa Lagarto, Gambito Mittenberger",
+            "en-GB": "Lizard Defence, Mittenberger Gambit",
+            "es-ES": "Defensa Lagarto, Gambito Mittenberger",
+            "pt-PT": "Defesa Lagarto, Gambito Mittenberger",
+            "de": "Eidechsen-Verteidigung, Mittenberger-Gambit",
+            "fr": "Défense du lézard, Gambit Mittenberger",
+            "it": "Difesa della lucertola, Gambetto Mittenberger"
           },
           "eco": "B06",
           "opening": "Modern Defense: Lizard Defense, Mittenberger Gambit",
@@ -234,17 +360,29 @@
     },
     {
       "names": {
-        "en": "Mongredien Defense",
+        "en-US": "Mongredien Defense",
         "pt-BR": "Defesa Mongredien",
-        "es": "Defensa Mongredien"
+        "es-419": "Defensa Mongredien",
+        "en-GB": "Mongredien Defence",
+        "es-ES": "Defensa Mongredien",
+        "pt-PT": "Defesa Mongredien",
+        "de": "Mongredien-Verteidigung",
+        "fr": "Défense Mongredien",
+        "it": "Difesa Mongredien"
       },
       "lines": [
         {
           "id": "line-877caa687aceeb8a",
           "names": {
-            "en": "Mongredien Defense, with Nc3",
+            "en-US": "Mongredien Defense, with Nc3",
             "pt-BR": "Defesa Mongredien, com Nc3",
-            "es": "Defensa Mongredien, con Nc3"
+            "es-419": "Defensa Mongredien, con Nc3",
+            "en-GB": "Mongredien Defence, with Nc3",
+            "es-ES": "Defensa Mongredien, con Nc3",
+            "pt-PT": "Defesa Mongredien, com Nc3",
+            "de": "Mongredien-Verteidigung, mit Nc3",
+            "fr": "Défense Mongredien, avec Nc3",
+            "it": "Difesa Mongredien, con Nc3"
           },
           "eco": "B06",
           "opening": "Modern Defense: Mongredien Defense, with Nc3",
@@ -254,9 +392,15 @@
         {
           "id": "line-bb7ee9d1add9db92",
           "names": {
-            "en": "Mongredien Defense, with Nf3",
+            "en-US": "Mongredien Defense, with Nf3",
             "pt-BR": "Defesa Mongredien, com Nf3",
-            "es": "Defensa Mongredien, con Nf3"
+            "es-419": "Defensa Mongredien, con Nf3",
+            "en-GB": "Mongredien Defence, with Nf3",
+            "es-ES": "Defensa Mongredien, con Nf3",
+            "pt-PT": "Defesa Mongredien, com Nf3",
+            "de": "Mongredien-Verteidigung, mit Nf3",
+            "fr": "Défense Mongredien, avec Nf3",
+            "it": "Difesa Mongredien, con Nf3"
           },
           "eco": "B06",
           "opening": "Modern Defense: Mongredien Defense, with Nf3",
@@ -267,17 +411,29 @@
     },
     {
       "names": {
-        "en": "Norwegian Defense",
+        "en-US": "Norwegian Defense",
         "pt-BR": "Defesa Norueguesa",
-        "es": "Defensa Noruega"
+        "es-419": "Defensa Noruega",
+        "en-GB": "Norwegian Defence",
+        "es-ES": "Defensa Noruega",
+        "pt-PT": "Defesa Norueguesa",
+        "de": "Norwegische Verteidigung",
+        "fr": "Défense norvégienne",
+        "it": "Difesa norvegese"
       },
       "lines": [
         {
           "id": "line-4752cf903dcfa03d",
           "names": {
-            "en": "Norwegian Defense",
+            "en-US": "Norwegian Defense",
             "pt-BR": "Defesa Norueguesa",
-            "es": "Defensa Noruega"
+            "es-419": "Defensa Noruega",
+            "en-GB": "Norwegian Defence",
+            "es-ES": "Defensa Noruega",
+            "pt-PT": "Defesa Norueguesa",
+            "de": "Norwegische Verteidigung",
+            "fr": "Défense norvégienne",
+            "it": "Difesa norvegese"
           },
           "eco": "B06",
           "opening": "Modern Defense: Norwegian Defense",
@@ -287,9 +443,15 @@
         {
           "id": "line-ed677036788fcd89",
           "names": {
-            "en": "Norwegian Defense, Norwegian Gambit",
+            "en-US": "Norwegian Defense, Norwegian Gambit",
             "pt-BR": "Defesa Norueguesa, Gambito Norueguês",
-            "es": "Defensa Noruega, Gambito Noruego"
+            "es-419": "Defensa Noruega, Gambito Noruego",
+            "en-GB": "Norwegian Defence, Norwegian Gambit",
+            "es-ES": "Defensa Noruega, Gambito Noruego",
+            "pt-PT": "Defesa Norueguesa, Gambito Norueguês",
+            "de": "Norwegische Verteidigung, Norwegisches Gambit",
+            "fr": "Défense norvégienne, Gambit norvégien",
+            "it": "Difesa norvegese, Gambetto norvegese"
           },
           "eco": "B06",
           "opening": "Modern Defense: Norwegian Defense, Norwegian Gambit",
@@ -303,9 +465,15 @@
     {
       "id": "line-2599a1c908c6c00d",
       "names": {
-        "en": "Anti-Modern",
+        "en-US": "Anti-Modern",
         "pt-BR": "Anti-Moderna",
-        "es": "Anti-Moderna"
+        "es-419": "Anti-Moderna",
+        "en-GB": "Anti-Modern",
+        "es-ES": "Anti-Moderna",
+        "pt-PT": "Anti-Moderna",
+        "de": "Anti-Modern",
+        "fr": "Anti-moderne",
+        "it": "Anti-moderna"
       },
       "eco": "B06",
       "opening": "Modern Defense: Anti-Modern",
@@ -315,9 +483,15 @@
     {
       "id": "line-dfa22e1998430d8a",
       "names": {
-        "en": "Averbakh System",
+        "en-US": "Averbakh System",
         "pt-BR": "Sistema Averbakh",
-        "es": "Sistema Averbakh"
+        "es-419": "Sistema Averbakh",
+        "en-GB": "Averbakh System",
+        "es-ES": "Sistema Averbakh",
+        "pt-PT": "Sistema Averbakh",
+        "de": "Awerbach-System",
+        "fr": "Système Averbakh",
+        "it": "Sistema Averbach"
       },
       "eco": "A42",
       "opening": "Modern Defense: Averbakh System",
@@ -327,9 +501,15 @@
     {
       "id": "line-1b4fba5f342cd0f7",
       "names": {
-        "en": "Averbakh Variation, Pseudo-Sämisch",
+        "en-US": "Averbakh Variation, Pseudo-Sämisch",
         "pt-BR": "Variante Averbakh, Pseudo-Sämisch",
-        "es": "Variante Averbakh, Pseudo-Sämisch"
+        "es-419": "Variante Averbakh, Pseudo-Sämisch",
+        "en-GB": "Averbakh Variation, Pseudo-Sämisch",
+        "es-ES": "Variante Averbakh, Pseudo-Sämisch",
+        "pt-PT": "Variante Averbakh, Pseudo-Sämisch",
+        "de": "Awerbach-Variante, Pseudo-Sämisch",
+        "fr": "Variante Averbakh, Pseudo-Sämisch",
+        "it": "Variante Averbach, Pseudo-Sämisch"
       },
       "eco": "A42",
       "opening": "Modern Defense: Averbakh Variation, Pseudo-Sämisch",
@@ -339,9 +519,15 @@
     {
       "id": "line-0b226a51b942c597",
       "names": {
-        "en": "Beefeater Variation",
+        "en-US": "Beefeater Variation",
         "pt-BR": "Variante Beefeater",
-        "es": "Variante Beefeater"
+        "es-419": "Variante Beefeater",
+        "en-GB": "Beefeater Variation",
+        "es-ES": "Variante Beefeater",
+        "pt-PT": "Variante Beefeater",
+        "de": "Beefeater-Variante",
+        "fr": "Variante Beefeater",
+        "it": "Variante Beefeater"
       },
       "eco": "A40",
       "opening": "Modern Defense: Beefeater Variation",
@@ -351,9 +537,15 @@
     {
       "id": "line-59306417c558666c",
       "names": {
-        "en": "Dunworthy Variation",
+        "en-US": "Dunworthy Variation",
         "pt-BR": "Variante Dunworthy",
-        "es": "Variante Dunworthy"
+        "es-419": "Variante Dunworthy",
+        "en-GB": "Dunworthy Variation",
+        "es-ES": "Variante Dunworthy",
+        "pt-PT": "Variante Dunworthy",
+        "de": "Dunworthy-Variante",
+        "fr": "Variante Dunworthy",
+        "it": "Variante Dunworthy"
       },
       "eco": "B06",
       "opening": "Modern Defense: Dunworthy Variation",
@@ -363,9 +555,15 @@
     {
       "id": "line-b1b421c4827728dd",
       "names": {
-        "en": "Fianchetto Gambit",
+        "en-US": "Fianchetto Gambit",
         "pt-BR": "Gambito do Fianqueto",
-        "es": "Gambito del Fianchetto"
+        "es-419": "Gambito del Fianchetto",
+        "en-GB": "Fianchetto Gambit",
+        "es-ES": "Gambito del Fianchetto",
+        "pt-PT": "Gambito do Fianqueto",
+        "de": "Fianchetto-Gambit",
+        "fr": "Gambit du fianchetto",
+        "it": "Gambetto del fianchetto"
       },
       "eco": "B06",
       "opening": "Modern Defense: Fianchetto Gambit",
@@ -375,9 +573,15 @@
     {
       "id": "line-69c15b89cb46553d",
       "names": {
-        "en": "Geller's System",
+        "en-US": "Geller's System",
         "pt-BR": "Sistema Geller",
-        "es": "Sistema Geller"
+        "es-419": "Sistema Geller",
+        "en-GB": "Geller's System",
+        "es-ES": "Sistema Geller",
+        "pt-PT": "Sistema Geller",
+        "de": "Geller-System",
+        "fr": "Système Geller",
+        "it": "Sistema Geller"
       },
       "eco": "B07",
       "opening": "Modern Defense: Geller's System",
@@ -387,9 +591,15 @@
     {
       "id": "line-50dcac8b2035da0b",
       "names": {
-        "en": "Gurgenidze Defense",
+        "en-US": "Gurgenidze Defense",
         "pt-BR": "Defesa Gurgenidze",
-        "es": "Defensa Gurgenidze"
+        "es-419": "Defensa Gurgenidze",
+        "en-GB": "Gurgenidze Defence",
+        "es-ES": "Defensa Gurgenidze",
+        "pt-PT": "Defesa Gurgenidze",
+        "de": "Gurgenidze-Verteidigung",
+        "fr": "Défense Gurgenidze",
+        "it": "Difesa Gurgenidze"
       },
       "eco": "B06",
       "opening": "Modern Defense: Gurgenidze Defense",
@@ -399,9 +609,15 @@
     {
       "id": "line-82c265312669fbdb",
       "names": {
-        "en": "Kotov Variation",
+        "en-US": "Kotov Variation",
         "pt-BR": "Variante Kotov",
-        "es": "Variante Kotov"
+        "es-419": "Variante Kotov",
+        "en-GB": "Kotov Variation",
+        "es-ES": "Variante Kotov",
+        "pt-PT": "Variante Kotov",
+        "de": "Kotow-Variante",
+        "fr": "Variante Kotov",
+        "it": "Variante Kotov"
       },
       "eco": "A42",
       "opening": "Modern Defense: Kotov Variation",
@@ -411,9 +627,15 @@
     {
       "id": "line-0c5bbe2e06a38109",
       "names": {
-        "en": "Masur Gambit",
+        "en-US": "Masur Gambit",
         "pt-BR": "Gambito Masur",
-        "es": "Gambito Masur"
+        "es-419": "Gambito Masur",
+        "en-GB": "Masur Gambit",
+        "es-ES": "Gambito Masur",
+        "pt-PT": "Gambito Masur",
+        "de": "Masur-Gambit",
+        "fr": "Gambit Masur",
+        "it": "Gambetto Masur"
       },
       "eco": "B06",
       "opening": "Modern Defense: Masur Gambit",
@@ -423,9 +645,15 @@
     {
       "id": "line-4d455cfc0f266943",
       "names": {
-        "en": "Modern Pterodactyl",
+        "en-US": "Modern Pterodactyl",
         "pt-BR": "Pterodáctilo Moderno",
-        "es": "Pterodáctilo Moderno"
+        "es-419": "Pterodáctilo Moderno",
+        "en-GB": "Modern Pterodactyl",
+        "es-ES": "Pterodáctilo Moderno",
+        "pt-PT": "Pterodáctilo Moderno",
+        "de": "Moderner Pterodaktylus",
+        "fr": "Ptérodactyle moderne",
+        "it": "Pterodattilo moderno"
       },
       "eco": "B06",
       "opening": "Modern Defense: Modern Pterodactyl",
@@ -435,9 +663,15 @@
     {
       "id": "line-5e1bcebd322fae6b",
       "names": {
-        "en": "Neo-Modern Defense",
+        "en-US": "Neo-Modern Defense",
         "pt-BR": "Defesa Neomoderna",
-        "es": "Defensa Neomoderna"
+        "es-419": "Defensa Neomoderna",
+        "en-GB": "Neo-Modern Defence",
+        "es-ES": "Defensa Neomoderna",
+        "pt-PT": "Defesa Neomoderna",
+        "de": "Neomoderne Verteidigung",
+        "fr": "Défense néo-moderne",
+        "it": "Difesa neomoderna"
       },
       "eco": "A41",
       "opening": "Modern Defense: Neo-Modern Defense",
@@ -447,9 +681,15 @@
     {
       "id": "line-f65d56e306004785",
       "names": {
-        "en": "Pseudo-Austrian Attack",
+        "en-US": "Pseudo-Austrian Attack",
         "pt-BR": "Ataque Pseudo-Austríaco",
-        "es": "Ataque Pseudoaustriaco"
+        "es-419": "Ataque Pseudoaustriaco",
+        "en-GB": "Pseudo-Austrian Attack",
+        "es-ES": "Ataque Pseudoaustriaco",
+        "pt-PT": "Ataque Pseudo-Austríaco",
+        "de": "Pseudo-Österreichischer Angriff",
+        "fr": "Attaque pseudo-autrichienne",
+        "it": "Attacco pseudo-austriaco"
       },
       "eco": "B06",
       "opening": "Modern Defense: Pseudo-Austrian Attack",
@@ -459,9 +699,15 @@
     {
       "id": "line-8da4586c713d4f30",
       "names": {
-        "en": "Pterodactyl Variation",
+        "en-US": "Pterodactyl Variation",
         "pt-BR": "Variante Pterodáctilo",
-        "es": "Variante Pterodáctilo"
+        "es-419": "Variante Pterodáctilo",
+        "en-GB": "Pterodactyl Variation",
+        "es-ES": "Variante Pterodáctilo",
+        "pt-PT": "Variante Pterodáctilo",
+        "de": "Pterodaktylus-Variante",
+        "fr": "Variante du ptérodactyle",
+        "it": "Variante dello pterodattilo"
       },
       "eco": "B27",
       "opening": "Modern Defense: Pterodactyl Variation",
@@ -471,9 +717,15 @@
     {
       "id": "line-7756956a2e74c1f3",
       "names": {
-        "en": "Randspringer Variation",
+        "en-US": "Randspringer Variation",
         "pt-BR": "Variante Randspringer",
-        "es": "Variante Randspringer"
+        "es-419": "Variante Randspringer",
+        "en-GB": "Randspringer Variation",
+        "es-ES": "Variante Randspringer",
+        "pt-PT": "Variante Randspringer",
+        "de": "Randspringer-Variante",
+        "fr": "Variante Randspringer",
+        "it": "Variante Randspringer"
       },
       "eco": "A42",
       "opening": "Modern Defense: Randspringer Variation",
@@ -483,9 +735,15 @@
     {
       "id": "line-e6fc1152613686a4",
       "names": {
-        "en": "Standard Defense",
+        "en-US": "Standard Defense",
         "pt-BR": "Defesa Padrão",
-        "es": "Defensa Estándar"
+        "es-419": "Defensa Estándar",
+        "en-GB": "Standard Defence",
+        "es-ES": "Defensa Estándar",
+        "pt-PT": "Defesa Padrão",
+        "de": "Standardverteidigung",
+        "fr": "Défense standard",
+        "it": "Difesa standard"
       },
       "eco": "B06",
       "opening": "Modern Defense: Standard Defense",
@@ -495,9 +753,15 @@
     {
       "id": "line-254cd05e91781434",
       "names": {
-        "en": "Standard Line",
+        "en-US": "Standard Line",
         "pt-BR": "Linha Padrão",
-        "es": "Línea Estándar"
+        "es-419": "Línea Estándar",
+        "en-GB": "Standard Line",
+        "es-ES": "Línea Estándar",
+        "pt-PT": "Linha Padrão",
+        "de": "Standardabspiel",
+        "fr": "Ligne standard",
+        "it": "Linea standard"
       },
       "eco": "B06",
       "opening": "Modern Defense: Standard Line",
@@ -507,9 +771,15 @@
     {
       "id": "line-72da94f131d5ef55",
       "names": {
-        "en": "Three Pawns Attack",
+        "en-US": "Three Pawns Attack",
         "pt-BR": "Ataque dos Três Peões",
-        "es": "Ataque de los Tres Peones"
+        "es-419": "Ataque de los Tres Peones",
+        "en-GB": "Three Pawns Attack",
+        "es-ES": "Ataque de los Tres Peones",
+        "pt-PT": "Ataque dos Três Peões",
+        "de": "Dreibauernangriff",
+        "fr": "Attaque des trois pions",
+        "it": "Attacco dei tre pedoni"
       },
       "eco": "B06",
       "opening": "Modern Defense: Three Pawns Attack",
@@ -519,9 +789,15 @@
     {
       "id": "line-4eacedf11b8ac3a0",
       "names": {
-        "en": "Westermann Gambit",
+        "en-US": "Westermann Gambit",
         "pt-BR": "Gambito Westermann",
-        "es": "Gambito Westermann"
+        "es-419": "Gambito Westermann",
+        "en-GB": "Westermann Gambit",
+        "es-ES": "Gambito Westermann",
+        "pt-PT": "Gambito Westermann",
+        "de": "Westermann-Gambit",
+        "fr": "Gambit Westermann",
+        "it": "Gambetto Westermann"
       },
       "eco": "B06",
       "opening": "Modern Defense: Westermann Gambit",
@@ -531,9 +807,15 @@
     {
       "id": "line-383cb114a0722442",
       "names": {
-        "en": "Wind Gambit",
+        "en-US": "Wind Gambit",
         "pt-BR": "Gambito Vento",
-        "es": "Gambito Viento"
+        "es-419": "Gambito Viento",
+        "en-GB": "Wind Gambit",
+        "es-ES": "Gambito Viento",
+        "pt-PT": "Gambito Vento",
+        "de": "Wind-Gambit",
+        "fr": "Gambit du vent",
+        "it": "Gambetto del vento"
       },
       "eco": "B06",
       "opening": "Modern Defense: Wind Gambit",

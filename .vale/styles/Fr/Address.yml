@@ -1,0 +1,13 @@
+# fr speaks to the reader as "vous", never "tu": no tu pronouns or possessives.
+extends: existence
+message: "Use 'vous' as the form of address, not '%s'."
+level: error
+ignorecase: true
+tokens:
+  - tu
+  - toi
+  - ton
+  - ta
+  - tes
+  - te
+  - t'

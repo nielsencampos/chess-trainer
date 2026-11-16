@@ -1,18 +1,30 @@
 {
   "id": "danish-gambit",
   "names": {
-    "en": "Danish Gambit",
+    "en-US": "Danish Gambit",
     "pt-BR": "Gambito Dinamarquês",
-    "es": "Gambito Danés"
+    "es-419": "Gambito Danés",
+    "en-GB": "Danish Gambit",
+    "es-ES": "Gambito Danés",
+    "pt-PT": "Gambito Dinamarquês",
+    "de": "Nordisches Gambit",
+    "fr": "Gambit danois",
+    "it": "Gambetto del centro"
   },
   "order": 19,
   "lines": [
     {
       "id": "line-5ad5c1f3e1ebb43a",
       "names": {
-        "en": "Accepted",
+        "en-US": "Accepted",
         "pt-BR": "Aceito",
-        "es": "Aceptado"
+        "es-419": "Aceptado",
+        "en-GB": "Accepted",
+        "es-ES": "Aceptado",
+        "pt-PT": "Aceito",
+        "de": "Angenommen",
+        "fr": "Accepté",
+        "it": "Accettato"
       },
       "eco": "C21",
       "opening": "Danish Gambit Accepted",
@@ -22,9 +34,15 @@
     {
       "id": "line-a7bb34b813788095",
       "names": {
-        "en": "Accepted: Chigorin Defense",
+        "en-US": "Accepted: Chigorin Defense",
         "pt-BR": "Aceito: Defesa Chigorin",
-        "es": "Aceptado: Defensa Chigorin"
+        "es-419": "Aceptado: Defensa Chigorin",
+        "en-GB": "Accepted: Chigorin Defence",
+        "es-ES": "Aceptado: Defensa Chigorin",
+        "pt-PT": "Aceito: Defesa Chigorin",
+        "de": "Angenommen: Tschigorin-Verteidigung",
+        "fr": "Accepté: Défense Tchigorine",
+        "it": "Accettato: Difesa Čigorin"
       },
       "eco": "C21",
       "opening": "Danish Gambit Accepted: Chigorin Defense",
@@ -34,9 +52,15 @@
     {
       "id": "line-41deac91e657dcf5",
       "names": {
-        "en": "Accepted: Classical Defense",
+        "en-US": "Accepted: Classical Defense",
         "pt-BR": "Aceito: Defesa Clássica",
-        "es": "Aceptado: Defensa Clásica"
+        "es-419": "Aceptado: Defensa Clásica",
+        "en-GB": "Accepted: Classical Defence",
+        "es-ES": "Aceptado: Defensa Clásica",
+        "pt-PT": "Aceito: Defesa Clássica",
+        "de": "Angenommen: Klassische Verteidigung",
+        "fr": "Accepté: Défense classique",
+        "it": "Accettato: Difesa classica"
       },
       "eco": "C21",
       "opening": "Danish Gambit Accepted: Classical Defense",
@@ -46,9 +70,15 @@
     {
       "id": "line-ac0ad5a6a12e7589",
       "names": {
-        "en": "Accepted: Copenhagen Defense",
+        "en-US": "Accepted: Copenhagen Defense",
         "pt-BR": "Aceito: Defesa Copenhagen",
-        "es": "Aceptado: Defensa Copenhagen"
+        "es-419": "Aceptado: Defensa Copenhagen",
+        "en-GB": "Accepted: Copenhagen Defence",
+        "es-ES": "Aceptado: Defensa Copenhagen",
+        "pt-PT": "Aceito: Defesa Copenhaga",
+        "de": "Angenommen: Kopenhagener Verteidigung",
+        "fr": "Accepté: Défense de Copenhague",
+        "it": "Accettato: Difesa di Copenaghen"
       },
       "eco": "C21",
       "opening": "Danish Gambit Accepted: Copenhagen Defense",
@@ -58,9 +88,15 @@
     {
       "id": "line-96df9774671ef92c",
       "names": {
-        "en": "Accepted: Schlechter Defense",
+        "en-US": "Accepted: Schlechter Defense",
         "pt-BR": "Aceito: Defesa Schlechter",
-        "es": "Aceptado: Defensa Schlechter"
+        "es-419": "Aceptado: Defensa Schlechter",
+        "en-GB": "Accepted: Schlechter Defence",
+        "es-ES": "Aceptado: Defensa Schlechter",
+        "pt-PT": "Aceito: Defesa Schlechter",
+        "de": "Angenommen: Schlechter-Verteidigung",
+        "fr": "Accepté: Défense Schlechter",
+        "it": "Accettato: Difesa Schlechter"
       },
       "eco": "C21",
       "opening": "Danish Gambit Accepted: Schlechter Defense",
@@ -70,9 +106,15 @@
     {
       "id": "line-3345f44785d82883",
       "names": {
-        "en": "Accepted: Svenonius Defense",
+        "en-US": "Accepted: Svenonius Defense",
         "pt-BR": "Aceito: Defesa Svenonius",
-        "es": "Aceptado: Defensa Svenonius"
+        "es-419": "Aceptado: Defensa Svenonius",
+        "en-GB": "Accepted: Svenonius Defence",
+        "es-ES": "Aceptado: Defensa Svenonius",
+        "pt-PT": "Aceito: Defesa Svenonius",
+        "de": "Angenommen: Svenonius-Verteidigung",
+        "fr": "Accepté: Défense Svenonius",
+        "it": "Accettato: Difesa Svenonius"
       },
       "eco": "C21",
       "opening": "Danish Gambit Accepted: Svenonius Defense",
@@ -82,9 +124,15 @@
     {
       "id": "line-8d6cc5fff19e3384",
       "names": {
-        "en": "Declined: Sörensen Defense",
+        "en-US": "Declined: Sörensen Defense",
         "pt-BR": "Recusado: Defesa Sörensen",
-        "es": "Rehusado: Defensa Sörensen"
+        "es-419": "Rehusado: Defensa Sörensen",
+        "en-GB": "Declined: Sörensen Defence",
+        "es-ES": "Rehusado: Defensa Sörensen",
+        "pt-PT": "Recusado: Defesa Sörensen",
+        "de": "Abgelehnt: Sörensen-Verteidigung",
+        "fr": "Refusé: Défense Sörensen",
+        "it": "Rifiutato: Difesa Sörensen"
       },
       "eco": "C21",
       "opening": "Danish Gambit Declined: Sörensen Defense",
@@ -94,9 +142,15 @@
     {
       "id": "line-f97e961b49e222df",
       "names": {
-        "en": "Danish Gambit",
+        "en-US": "Danish Gambit",
         "pt-BR": "Gambito Dinamarquês",
-        "es": "Gambito Danés"
+        "es-419": "Gambito Danés",
+        "en-GB": "Danish Gambit",
+        "es-ES": "Gambito Danés",
+        "pt-PT": "Gambito Dinamarquês",
+        "de": "Nordisches Gambit",
+        "fr": "Gambit danois",
+        "it": "Gambetto danese"
       },
       "eco": "C21",
       "opening": "Danish Gambit",

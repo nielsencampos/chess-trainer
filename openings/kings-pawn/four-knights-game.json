@@ -1,25 +1,43 @@
 {
   "id": "four-knights-game",
   "names": {
-    "en": "Four Knights Game",
+    "en-US": "Four Knights Game",
     "pt-BR": "Abertura dos Quatro Cavalos",
-    "es": "Apertura de los Cuatro Caballos"
+    "es-419": "Apertura de los Cuatro Caballos",
+    "en-GB": "Four Knights Game",
+    "es-ES": "Apertura de los Cuatro Caballos",
+    "pt-PT": "Abertura dos Quatro Cavalos",
+    "de": "Vierspringerspiel",
+    "fr": "Partie des quatre cavaliers",
+    "it": "Partita dei quattro cavalli"
   },
   "order": 15,
   "variants": [
     {
       "names": {
-        "en": "Spanish Variation",
+        "en-US": "Spanish Variation",
         "pt-BR": "Variante Espanhola",
-        "es": "Variante Española"
+        "es-419": "Variante Española",
+        "en-GB": "Spanish Variation",
+        "es-ES": "Variante Española",
+        "pt-PT": "Variante Espanhola",
+        "de": "Spanische Variante",
+        "fr": "Variante espagnole",
+        "it": "Variante spagnola"
       },
       "lines": [
         {
           "id": "line-794f53273449f6f1",
           "names": {
-            "en": "Spanish Variation",
+            "en-US": "Spanish Variation",
             "pt-BR": "Variante Espanhola",
-            "es": "Variante Española"
+            "es-419": "Variante Española",
+            "en-GB": "Spanish Variation",
+            "es-ES": "Variante Española",
+            "pt-PT": "Variante Espanhola",
+            "de": "Spanische Variante",
+            "fr": "Variante espagnole",
+            "it": "Variante spagnola"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation",
@@ -29,9 +47,15 @@
         {
           "id": "line-ebc5af3b9010849e",
           "names": {
-            "en": "Spanish Variation, Double Spanish",
+            "en-US": "Spanish Variation, Double Spanish",
             "pt-BR": "Variante Espanhola, Espanhola Dupla",
-            "es": "Variante Española, Doble Española"
+            "es-419": "Variante Española, Doble Española",
+            "en-GB": "Spanish Variation, Double Spanish",
+            "es-ES": "Variante Española, Doble Española",
+            "pt-PT": "Variante Espanhola, Espanhola Dupla",
+            "de": "Spanische Variante, Doppelspanisch",
+            "fr": "Variante espagnole, Double espagnole",
+            "it": "Variante spagnola, Doppia spagnola"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Double Spanish",
@@ -41,9 +65,15 @@
         {
           "id": "line-715468970fb37713",
           "names": {
-            "en": "Spanish Variation, Nimzowitsch Variation",
+            "en-US": "Spanish Variation, Nimzowitsch Variation",
             "pt-BR": "Variante Espanhola, Variante Nimzowitsch",
-            "es": "Variante Española, Variante Nimzowitsch"
+            "es-419": "Variante Española, Variante Nimzowitsch",
+            "en-GB": "Spanish Variation, Nimzowitsch Variation",
+            "es-ES": "Variante Española, Variante Nimzowitsch",
+            "pt-PT": "Variante Espanhola, Variante Nimzowitsch",
+            "de": "Spanische Variante, Nimzowitsch-Variante",
+            "fr": "Variante espagnole, Variante Nimzowitsch",
+            "it": "Variante spagnola, Variante Nimzowitsch"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Nimzowitsch Variation",
@@ -53,9 +83,15 @@
         {
           "id": "line-314df3127676b380",
           "names": {
-            "en": "Spanish Variation, Double Spanish",
+            "en-US": "Spanish Variation, Double Spanish",
             "pt-BR": "Variante Espanhola, Espanhola Dupla",
-            "es": "Variante Española, Doble Española"
+            "es-419": "Variante Española, Doble Española",
+            "en-GB": "Spanish Variation, Double Spanish",
+            "es-ES": "Variante Española, Doble Española",
+            "pt-PT": "Variante Espanhola, Espanhola Dupla",
+            "de": "Spanische Variante, Doppelspanisch",
+            "fr": "Variante espagnole, Double espagnole",
+            "it": "Variante spagnola, Doppia spagnola"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Double Spanish",
@@ -65,9 +101,15 @@
         {
           "id": "line-349547b59fc6c02c",
           "names": {
-            "en": "Spanish Variation",
+            "en-US": "Spanish Variation",
             "pt-BR": "Variante Espanhola",
-            "es": "Variante Española"
+            "es-419": "Variante Española",
+            "en-GB": "Spanish Variation",
+            "es-ES": "Variante Española",
+            "pt-PT": "Variante Espanhola",
+            "de": "Spanische Variante",
+            "fr": "Variante espagnole",
+            "it": "Variante spagnola"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation",
@@ -77,9 +119,15 @@
         {
           "id": "line-19f8236c9e171820",
           "names": {
-            "en": "Spanish Variation, Svenonius Variation",
+            "en-US": "Spanish Variation, Svenonius Variation",
             "pt-BR": "Variante Espanhola, Variante Svenonius",
-            "es": "Variante Española, Variante Svenonius"
+            "es-419": "Variante Española, Variante Svenonius",
+            "en-GB": "Spanish Variation, Svenonius Variation",
+            "es-ES": "Variante Española, Variante Svenonius",
+            "pt-PT": "Variante Espanhola, Variante Svenonius",
+            "de": "Spanische Variante, Svenonius-Variante",
+            "fr": "Variante espagnole, Variante Svenonius",
+            "it": "Variante spagnola, Variante Svenonius"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Svenonius Variation",
@@ -89,9 +137,15 @@
         {
           "id": "line-86fa6d195bb280a9",
           "names": {
-            "en": "Spanish Variation, Janowski Variation",
+            "en-US": "Spanish Variation, Janowski Variation",
             "pt-BR": "Variante Espanhola, Variante Janowski",
-            "es": "Variante Española, Variante Janowski"
+            "es-419": "Variante Española, Variante Janowski",
+            "en-GB": "Spanish Variation, Janowski Variation",
+            "es-ES": "Variante Española, Variante Janowski",
+            "pt-PT": "Variante Espanhola, Variante Janowski",
+            "de": "Spanische Variante, Janowski-Variante",
+            "fr": "Variante espagnole, Variante Janowski",
+            "it": "Variante spagnola, Variante Janowski"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Janowski Variation",
@@ -101,9 +155,15 @@
         {
           "id": "line-70fccd0f8d07a97c",
           "names": {
-            "en": "Spanish Variation, Alatortsev Variation",
+            "en-US": "Spanish Variation, Alatortsev Variation",
             "pt-BR": "Variante Espanhola, Variante Alatortsev",
-            "es": "Variante Española, Variante Alatortsev"
+            "es-419": "Variante Española, Variante Alatortsev",
+            "en-GB": "Spanish Variation, Alatortsev Variation",
+            "es-ES": "Variante Española, Variante Alatortsev",
+            "pt-PT": "Variante Espanhola, Variante Alatortsev",
+            "de": "Spanische Variante, Alatorzew-Variante",
+            "fr": "Variante espagnole, Variante Alatortsev",
+            "it": "Variante spagnola, Variante Alatortsev"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Alatortsev Variation",
@@ -113,9 +173,15 @@
         {
           "id": "line-c34e2f52df3fac24",
           "names": {
-            "en": "Spanish Variation, Symmetrical Variation",
+            "en-US": "Spanish Variation, Symmetrical Variation",
             "pt-BR": "Variante Espanhola, Variante Simétrica",
-            "es": "Variante Española, Variante Simétrica"
+            "es-419": "Variante Española, Variante Simétrica",
+            "en-GB": "Spanish Variation, Symmetrical Variation",
+            "es-ES": "Variante Española, Variante Simétrica",
+            "pt-PT": "Variante Espanhola, Variante Simétrica",
+            "de": "Spanische Variante, Symmetrische Variante",
+            "fr": "Variante espagnole, Variante symétrique",
+            "it": "Variante spagnola, Variante simmetrica"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation",
@@ -125,9 +191,15 @@
         {
           "id": "line-130b51f430fe1d76",
           "names": {
-            "en": "Spanish Variation, Symmetrical Variation, Metger Unpin",
+            "en-US": "Spanish Variation, Symmetrical Variation, Metger Unpin",
             "pt-BR": "Variante Espanhola, Variante Simétrica, Despregadura Metger",
-            "es": "Variante Española, Variante Simétrica, Desclavada Metger"
+            "es-419": "Variante Española, Variante Simétrica, Desclavada Metger",
+            "en-GB": "Spanish Variation, Symmetrical Variation, Metger Unpin",
+            "es-ES": "Variante Española, Variante Simétrica, Desclavada Metger",
+            "pt-PT": "Variante Espanhola, Variante Simétrica, Despregadura Metger",
+            "de": "Spanische Variante, Symmetrische Variante, Metger-Entfesselung",
+            "fr": "Variante espagnole, Variante symétrique, Déclouage Metger",
+            "it": "Variante spagnola, Variante simmetrica, Sinchiodatura Metger"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation, Metger Unpin",
@@ -137,9 +209,15 @@
         {
           "id": "line-33b2df92edab6ed6",
           "names": {
-            "en": "Spanish Variation, Symmetrical Variation",
+            "en-US": "Spanish Variation, Symmetrical Variation",
             "pt-BR": "Variante Espanhola, Variante Simétrica",
-            "es": "Variante Española, Variante Simétrica"
+            "es-419": "Variante Española, Variante Simétrica",
+            "en-GB": "Spanish Variation, Symmetrical Variation",
+            "es-ES": "Variante Española, Variante Simétrica",
+            "pt-PT": "Variante Espanhola, Variante Simétrica",
+            "de": "Spanische Variante, Symmetrische Variante",
+            "fr": "Variante espagnole, Variante symétrique",
+            "it": "Variante spagnola, Variante simmetrica"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation",
@@ -149,9 +227,15 @@
         {
           "id": "line-d74a774476788dfa",
           "names": {
-            "en": "Spanish Variation, Symmetrical Variation",
+            "en-US": "Spanish Variation, Symmetrical Variation",
             "pt-BR": "Variante Espanhola, Variante Simétrica",
-            "es": "Variante Española, Variante Simétrica"
+            "es-419": "Variante Española, Variante Simétrica",
+            "en-GB": "Spanish Variation, Symmetrical Variation",
+            "es-ES": "Variante Española, Variante Simétrica",
+            "pt-PT": "Variante Espanhola, Variante Simétrica",
+            "de": "Spanische Variante, Symmetrische Variante",
+            "fr": "Variante espagnole, Variante symétrique",
+            "it": "Variante spagnola, Variante simmetrica"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation",
@@ -161,9 +245,15 @@
         {
           "id": "line-f1102503699c7fec",
           "names": {
-            "en": "Spanish Variation, Symmetrical Variation, Blake Variation",
+            "en-US": "Spanish Variation, Symmetrical Variation, Blake Variation",
             "pt-BR": "Variante Espanhola, Variante Simétrica, Variante Blake",
-            "es": "Variante Española, Variante Simétrica, Variante Blake"
+            "es-419": "Variante Española, Variante Simétrica, Variante Blake",
+            "en-GB": "Spanish Variation, Symmetrical Variation, Blake Variation",
+            "es-ES": "Variante Española, Variante Simétrica, Variante Blake",
+            "pt-PT": "Variante Espanhola, Variante Simétrica, Variante Blake",
+            "de": "Spanische Variante, Symmetrische Variante, Blake-Variante",
+            "fr": "Variante espagnole, Variante symétrique, Variante Blake",
+            "it": "Variante spagnola, Variante simmetrica, Variante Blake"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation, Blake Variation",
@@ -173,9 +263,15 @@
         {
           "id": "line-57f8826006633c1b",
           "names": {
-            "en": "Spanish Variation, Symmetrical Variation",
+            "en-US": "Spanish Variation, Symmetrical Variation",
             "pt-BR": "Variante Espanhola, Variante Simétrica",
-            "es": "Variante Española, Variante Simétrica"
+            "es-419": "Variante Española, Variante Simétrica",
+            "en-GB": "Spanish Variation, Symmetrical Variation",
+            "es-ES": "Variante Española, Variante Simétrica",
+            "pt-PT": "Variante Espanhola, Variante Simétrica",
+            "de": "Spanische Variante, Symmetrische Variante",
+            "fr": "Variante espagnole, Variante symétrique",
+            "it": "Variante spagnola, Variante simmetrica"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation",
@@ -185,9 +281,15 @@
         {
           "id": "line-59fef393aae8fbb6",
           "names": {
-            "en": "Spanish Variation, Classical Variation",
+            "en-US": "Spanish Variation, Classical Variation",
             "pt-BR": "Variante Espanhola, Variante Clássica",
-            "es": "Variante Española, Variante Clásica"
+            "es-419": "Variante Española, Variante Clásica",
+            "en-GB": "Spanish Variation, Classical Variation",
+            "es-ES": "Variante Española, Variante Clásica",
+            "pt-PT": "Variante Espanhola, Variante Clássica",
+            "de": "Spanische Variante, Klassische Variante",
+            "fr": "Variante espagnole, Variante classique",
+            "it": "Variante spagnola, Variante classica"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Classical Variation",
@@ -197,9 +299,15 @@
         {
           "id": "line-7ade8e1989aed423",
           "names": {
-            "en": "Spanish Variation, Bardeleben Variation",
+            "en-US": "Spanish Variation, Bardeleben Variation",
             "pt-BR": "Variante Espanhola, Variante Bardeleben",
-            "es": "Variante Española, Variante Bardeleben"
+            "es-419": "Variante Española, Variante Bardeleben",
+            "en-GB": "Spanish Variation, Bardeleben Variation",
+            "es-ES": "Variante Española, Variante Bardeleben",
+            "pt-PT": "Variante Espanhola, Variante Bardeleben",
+            "de": "Spanische Variante, Bardeleben-Variante",
+            "fr": "Variante espagnole, Variante Bardeleben",
+            "it": "Variante spagnola, Variante Bardeleben"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Bardeleben Variation",
@@ -209,9 +317,15 @@
         {
           "id": "line-c84e3d1f0fe057f3",
           "names": {
-            "en": "Spanish Variation, Rubinstein Variation",
+            "en-US": "Spanish Variation, Rubinstein Variation",
             "pt-BR": "Variante Espanhola, Variante Rubinstein",
-            "es": "Variante Española, Variante Rubinstein"
+            "es-419": "Variante Española, Variante Rubinstein",
+            "en-GB": "Spanish Variation, Rubinstein Variation",
+            "es-ES": "Variante Española, Variante Rubinstein",
+            "pt-PT": "Variante Espanhola, Variante Rubinstein",
+            "de": "Spanische Variante, Rubinstein-Variante",
+            "fr": "Variante espagnole, Variante Rubinstein",
+            "it": "Variante spagnola, Variante Rubinstein"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation",
@@ -221,9 +335,15 @@
         {
           "id": "line-a85416e28872add4",
           "names": {
-            "en": "Spanish Variation, Rubinstein Variation, Marshall Gambit",
+            "en-US": "Spanish Variation, Rubinstein Variation, Marshall Gambit",
             "pt-BR": "Variante Espanhola, Variante Rubinstein, Gambito Marshall",
-            "es": "Variante Española, Variante Rubinstein, Gambito Marshall"
+            "es-419": "Variante Española, Variante Rubinstein, Gambito Marshall",
+            "en-GB": "Spanish Variation, Rubinstein Variation, Marshall Gambit",
+            "es-ES": "Variante Española, Variante Rubinstein, Gambito Marshall",
+            "pt-PT": "Variante Espanhola, Variante Rubinstein, Gambito Marshall",
+            "de": "Spanische Variante, Rubinstein-Variante, Marshall-Gambit",
+            "fr": "Variante espagnole, Variante Rubinstein, Gambit Marshall",
+            "it": "Variante spagnola, Variante Rubinstein, Gambetto Marshall"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation, Marshall Gambit",
@@ -233,9 +353,15 @@
         {
           "id": "line-a8598c2b292ee6dd",
           "names": {
-            "en": "Spanish Variation, Rubinstein Variation",
+            "en-US": "Spanish Variation, Rubinstein Variation",
             "pt-BR": "Variante Espanhola, Variante Rubinstein",
-            "es": "Variante Española, Variante Rubinstein"
+            "es-419": "Variante Española, Variante Rubinstein",
+            "en-GB": "Spanish Variation, Rubinstein Variation",
+            "es-ES": "Variante Española, Variante Rubinstein",
+            "pt-PT": "Variante Espanhola, Variante Rubinstein",
+            "de": "Spanische Variante, Rubinstein-Variante",
+            "fr": "Variante espagnole, Variante Rubinstein",
+            "it": "Variante spagnola, Variante Rubinstein"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation",
@@ -245,9 +371,15 @@
         {
           "id": "line-3a5209037f169fa3",
           "names": {
-            "en": "Spanish Variation, Rubinstein Variation, Maróczy Variation",
+            "en-US": "Spanish Variation, Rubinstein Variation, Maróczy Variation",
             "pt-BR": "Variante Espanhola, Variante Rubinstein, Variante Maróczy",
-            "es": "Variante Española, Variante Rubinstein, Variante Maróczy"
+            "es-419": "Variante Española, Variante Rubinstein, Variante Maróczy",
+            "en-GB": "Spanish Variation, Rubinstein Variation, Maróczy Variation",
+            "es-ES": "Variante Española, Variante Rubinstein, Variante Maróczy",
+            "pt-PT": "Variante Espanhola, Variante Rubinstein, Variante Maróczy",
+            "de": "Spanische Variante, Rubinstein-Variante, Maróczy-Variante",
+            "fr": "Variante espagnole, Variante Rubinstein, Variante Maróczy",
+            "it": "Variante spagnola, Variante Rubinstein, Variante Maróczy"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation, Maróczy Variation",
@@ -257,9 +389,15 @@
         {
           "id": "line-30e02dbe8a342cd3",
           "names": {
-            "en": "Spanish Variation, Rubinstein Variation Accepted",
+            "en-US": "Spanish Variation, Rubinstein Variation Accepted",
             "pt-BR": "Variante Espanhola, Variante Rubinstein Aceita",
-            "es": "Variante Española, Variante Rubinstein Aceptada"
+            "es-419": "Variante Española, Variante Rubinstein Aceptada",
+            "en-GB": "Spanish Variation, Rubinstein Variation Accepted",
+            "es-ES": "Variante Española, Variante Rubinstein Aceptada",
+            "pt-PT": "Variante Espanhola, Variante Rubinstein Aceita",
+            "de": "Spanische Variante, Angenommene Rubinstein-Variante",
+            "fr": "Variante espagnole, Variante Rubinstein acceptée",
+            "it": "Variante spagnola, Variante Rubinstein accettata"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation Accepted",
@@ -269,9 +407,15 @@
         {
           "id": "line-9a707d96fb93095a",
           "names": {
-            "en": "Spanish Variation, Rubinstein Variation, Marshall Variation",
+            "en-US": "Spanish Variation, Rubinstein Variation, Marshall Variation",
             "pt-BR": "Variante Espanhola, Variante Rubinstein, Variante Marshall",
-            "es": "Variante Española, Variante Rubinstein, Variante Marshall"
+            "es-419": "Variante Española, Variante Rubinstein, Variante Marshall",
+            "en-GB": "Spanish Variation, Rubinstein Variation, Marshall Variation",
+            "es-ES": "Variante Española, Variante Rubinstein, Variante Marshall",
+            "pt-PT": "Variante Espanhola, Variante Rubinstein, Variante Marshall",
+            "de": "Spanische Variante, Rubinstein-Variante, Marshall-Variante",
+            "fr": "Variante espagnole, Variante Rubinstein, Variante Marshall",
+            "it": "Variante spagnola, Variante Rubinstein, Variante Marshall"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation, Marshall Variation",
@@ -281,9 +425,15 @@
         {
           "id": "line-517c7f5002598ff7",
           "names": {
-            "en": "Spanish Variation, Ranken Variation",
+            "en-US": "Spanish Variation, Ranken Variation",
             "pt-BR": "Variante Espanhola, Variante Ranken",
-            "es": "Variante Española, Variante Ranken"
+            "es-419": "Variante Española, Variante Ranken",
+            "en-GB": "Spanish Variation, Ranken Variation",
+            "es-ES": "Variante Española, Variante Ranken",
+            "pt-PT": "Variante Espanhola, Variante Ranken",
+            "de": "Spanische Variante, Ranken-Variante",
+            "fr": "Variante espagnole, Variante Ranken",
+            "it": "Variante spagnola, Variante Ranken"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Ranken Variation",
@@ -293,9 +443,15 @@
         {
           "id": "line-994809af0338992f",
           "names": {
-            "en": "Spanish Variation, Spielmann Variation",
+            "en-US": "Spanish Variation, Spielmann Variation",
             "pt-BR": "Variante Espanhola, Variante Spielmann",
-            "es": "Variante Española, Variante Spielmann"
+            "es-419": "Variante Española, Variante Spielmann",
+            "en-GB": "Spanish Variation, Spielmann Variation",
+            "es-ES": "Variante Española, Variante Spielmann",
+            "pt-PT": "Variante Espanhola, Variante Spielmann",
+            "de": "Spanische Variante, Spielmann-Variante",
+            "fr": "Variante espagnole, Variante Spielmann",
+            "it": "Variante spagnola, Variante Spielmann"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Spielmann Variation",
@@ -305,9 +461,15 @@
         {
           "id": "line-a2aeec8f277a032d",
           "names": {
-            "en": "Spanish Variation, Gunsberg Counterattack",
+            "en-US": "Spanish Variation, Gunsberg Counterattack",
             "pt-BR": "Variante Espanhola, Contra-ataque Gunsberg",
-            "es": "Variante Española, Contraataque Gunsberg"
+            "es-419": "Variante Española, Contraataque Gunsberg",
+            "en-GB": "Spanish Variation, Gunsberg Counterattack",
+            "es-ES": "Variante Española, Contraataque Gunsberg",
+            "pt-PT": "Variante Espanhola, Contra-ataque Gunsberg",
+            "de": "Spanische Variante, Gunsberg-Gegenangriff",
+            "fr": "Variante espagnole, Contre-attaque Gunsberg",
+            "it": "Variante spagnola, Contrattacco Gunsberg"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Gunsberg Counterattack",
@@ -317,9 +479,15 @@
         {
           "id": "line-59353fa7d32dcd79",
           "names": {
-            "en": "Spanish Variation, Symmetrical Variation, Tarrasch Variation",
+            "en-US": "Spanish Variation, Symmetrical Variation, Tarrasch Variation",
             "pt-BR": "Variante Espanhola, Variante Simétrica, Variante Tarrasch",
-            "es": "Variante Española, Variante Simétrica, Variante Tarrasch"
+            "es-419": "Variante Española, Variante Simétrica, Variante Tarrasch",
+            "en-GB": "Spanish Variation, Symmetrical Variation, Tarrasch Variation",
+            "es-ES": "Variante Española, Variante Simétrica, Variante Tarrasch",
+            "pt-PT": "Variante Espanhola, Variante Simétrica, Variante Tarrasch",
+            "de": "Spanische Variante, Symmetrische Variante, Tarrasch-Variante",
+            "fr": "Variante espagnole, Variante symétrique, Variante Tarrasch",
+            "it": "Variante spagnola, Variante simmetrica, Variante Tarrasch"
           },
           "eco": "C49",
           "opening": "Four Knights Game: Spanish Variation, Symmetrical Variation, Tarrasch Variation",
@@ -329,9 +497,15 @@
         {
           "id": "line-e6aca3b207295221",
           "names": {
-            "en": "Spanish Variation, Rubinstein Variation",
+            "en-US": "Spanish Variation, Rubinstein Variation",
             "pt-BR": "Variante Espanhola, Variante Rubinstein",
-            "es": "Variante Española, Variante Rubinstein"
+            "es-419": "Variante Española, Variante Rubinstein",
+            "en-GB": "Spanish Variation, Rubinstein Variation",
+            "es-ES": "Variante Española, Variante Rubinstein",
+            "pt-PT": "Variante Espanhola, Variante Rubinstein",
+            "de": "Spanische Variante, Rubinstein-Variante",
+            "fr": "Variante espagnole, Variante Rubinstein",
+            "it": "Variante spagnola, Variante Rubinstein"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation",
@@ -341,9 +515,15 @@
         {
           "id": "line-523ce7a8d8b254df",
           "names": {
-            "en": "Spanish Variation, Rubinstein Variation, Henneberger Variation",
+            "en-US": "Spanish Variation, Rubinstein Variation, Henneberger Variation",
             "pt-BR": "Variante Espanhola, Variante Rubinstein, Variante Henneberger",
-            "es": "Variante Española, Variante Rubinstein, Variante Henneberger"
+            "es-419": "Variante Española, Variante Rubinstein, Variante Henneberger",
+            "en-GB": "Spanish Variation, Rubinstein Variation, Henneberger Variation",
+            "es-ES": "Variante Española, Variante Rubinstein, Variante Henneberger",
+            "pt-PT": "Variante Espanhola, Variante Rubinstein, Variante Henneberger",
+            "de": "Spanische Variante, Rubinstein-Variante, Henneberger-Variante",
+            "fr": "Variante espagnole, Variante Rubinstein, Variante Henneberger",
+            "it": "Variante spagnola, Variante Rubinstein, Variante Henneberger"
           },
           "eco": "C48",
           "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation, Henneberger Variation",
@@ -354,17 +534,29 @@
     },
     {
       "names": {
-        "en": "Scotch Variation",
+        "en-US": "Scotch Variation",
         "pt-BR": "Variante Escocesa",
-        "es": "Variante Escocesa"
+        "es-419": "Variante Escocesa",
+        "en-GB": "Scotch Variation",
+        "es-ES": "Variante Escocesa",
+        "pt-PT": "Variante Escocesa",
+        "de": "Schottische Variante",
+        "fr": "Variante écossaise",
+        "it": "Variante scozzese"
       },
       "lines": [
         {
           "id": "line-3c15f8581a144161",
           "names": {
-            "en": "Scotch Variation",
+            "en-US": "Scotch Variation",
             "pt-BR": "Variante Escocesa",
-            "es": "Variante Escocesa"
+            "es-419": "Variante Escocesa",
+            "en-GB": "Scotch Variation",
+            "es-ES": "Variante Escocesa",
+            "pt-PT": "Variante Escocesa",
+            "de": "Schottische Variante",
+            "fr": "Variante écossaise",
+            "it": "Variante scozzese"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Scotch Variation",
@@ -374,9 +566,15 @@
         {
           "id": "line-41da8b7f227059b6",
           "names": {
-            "en": "Scotch Variation, Krause Gambit",
+            "en-US": "Scotch Variation, Krause Gambit",
             "pt-BR": "Variante Escocesa, Gambito Krause",
-            "es": "Variante Escocesa, Gambito Krause"
+            "es-419": "Variante Escocesa, Gambito Krause",
+            "en-GB": "Scotch Variation, Krause Gambit",
+            "es-ES": "Variante Escocesa, Gambito Krause",
+            "pt-PT": "Variante Escocesa, Gambito Krause",
+            "de": "Schottische Variante, Krause-Gambit",
+            "fr": "Variante écossaise, Gambit Krause",
+            "it": "Variante scozzese, Gambetto Krause"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Scotch Variation, Krause Gambit",
@@ -386,9 +584,15 @@
         {
           "id": "line-31ae056e8d1c64a1",
           "names": {
-            "en": "Scotch Variation, Krause Gambit, Leonhardt Defense",
+            "en-US": "Scotch Variation, Krause Gambit, Leonhardt Defense",
             "pt-BR": "Variante Escocesa, Gambito Krause, Defesa Leonhardt",
-            "es": "Variante Escocesa, Gambito Krause, Defensa Leonhardt"
+            "es-419": "Variante Escocesa, Gambito Krause, Defensa Leonhardt",
+            "en-GB": "Scotch Variation, Krause Gambit, Leonhardt Defence",
+            "es-ES": "Variante Escocesa, Gambito Krause, Defensa Leonhardt",
+            "pt-PT": "Variante Escocesa, Gambito Krause, Defesa Leonhardt",
+            "de": "Schottische Variante, Krause-Gambit, Leonhardt-Verteidigung",
+            "fr": "Variante écossaise, Gambit Krause, Défense Leonhardt",
+            "it": "Variante scozzese, Gambetto Krause, Difesa Leonhardt"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Scotch Variation, Krause Gambit, Leonhardt Defense",
@@ -398,9 +602,15 @@
         {
           "id": "line-d0aa45897e0eb7af",
           "names": {
-            "en": "Scotch Variation, Oxford Gambit",
+            "en-US": "Scotch Variation, Oxford Gambit",
             "pt-BR": "Variante Escocesa, Gambito Oxford",
-            "es": "Variante Escocesa, Gambito Oxford"
+            "es-419": "Variante Escocesa, Gambito Oxford",
+            "en-GB": "Scotch Variation, Oxford Gambit",
+            "es-ES": "Variante Escocesa, Gambito Oxford",
+            "pt-PT": "Variante Escocesa, Gambito Oxford",
+            "de": "Schottische Variante, Oxford-Gambit",
+            "fr": "Variante écossaise, Gambit Oxford",
+            "it": "Variante scozzese, Gambetto Oxford"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Scotch Variation, Oxford Gambit",
@@ -410,9 +620,15 @@
         {
           "id": "line-56a1c9ab02e8ed06",
           "names": {
-            "en": "Scotch Variation, Belgrade Gambit",
+            "en-US": "Scotch Variation, Belgrade Gambit",
             "pt-BR": "Variante Escocesa, Gambito de Belgrado",
-            "es": "Variante Escocesa, Gambito de Belgrado"
+            "es-419": "Variante Escocesa, Gambito de Belgrado",
+            "en-GB": "Scotch Variation, Belgrade Gambit",
+            "es-ES": "Variante Escocesa, Gambito de Belgrado",
+            "pt-PT": "Variante Escocesa, Gambito de Belgrado",
+            "de": "Schottische Variante, Belgrader Gambit",
+            "fr": "Variante écossaise, Gambit de Belgrade",
+            "it": "Variante scozzese, Gambetto di Belgrado"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Scotch Variation, Belgrade Gambit",
@@ -422,9 +638,15 @@
         {
           "id": "line-536595b1175f3fe0",
           "names": {
-            "en": "Scotch Variation, Belgrade Gambit, Modern Defense",
+            "en-US": "Scotch Variation, Belgrade Gambit, Modern Defense",
             "pt-BR": "Variante Escocesa, Gambito de Belgrado, Defesa Moderna",
-            "es": "Variante Escocesa, Gambito de Belgrado, Defensa Moderna"
+            "es-419": "Variante Escocesa, Gambito de Belgrado, Defensa Moderna",
+            "en-GB": "Scotch Variation, Belgrade Gambit, Modern Defence",
+            "es-ES": "Variante Escocesa, Gambito de Belgrado, Defensa Moderna",
+            "pt-PT": "Variante Escocesa, Gambito de Belgrado, Defesa Moderna",
+            "de": "Schottische Variante, Belgrader Gambit, Moderne Verteidigung",
+            "fr": "Variante écossaise, Gambit de Belgrade, Défense moderne",
+            "it": "Variante scozzese, Gambetto di Belgrado, Difesa moderna"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Scotch Variation, Belgrade Gambit, Modern Defense",
@@ -434,9 +656,15 @@
         {
           "id": "line-be8df4137973aa1c",
           "names": {
-            "en": "Scotch Variation, Schmid Defense",
+            "en-US": "Scotch Variation, Schmid Defense",
             "pt-BR": "Variante Escocesa, Defesa Schmid",
-            "es": "Variante Escocesa, Defensa Schmid"
+            "es-419": "Variante Escocesa, Defensa Schmid",
+            "en-GB": "Scotch Variation, Schmid Defence",
+            "es-ES": "Variante Escocesa, Defensa Schmid",
+            "pt-PT": "Variante Escocesa, Defesa Schmid",
+            "de": "Schottische Variante, Schmid-Verteidigung",
+            "fr": "Variante écossaise, Défense Schmid",
+            "it": "Variante scozzese, Difesa Schmid"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Scotch Variation, Schmid Defense",
@@ -447,17 +675,29 @@
     },
     {
       "names": {
-        "en": "Halloween Gambit",
+        "en-US": "Halloween Gambit",
         "pt-BR": "Gambito Halloween",
-        "es": "Gambito Halloween"
+        "es-419": "Gambito Halloween",
+        "en-GB": "Halloween Gambit",
+        "es-ES": "Gambito Halloween",
+        "pt-PT": "Gambito Halloween",
+        "de": "Halloween-Gambit",
+        "fr": "Gambit Halloween",
+        "it": "Gambetto Halloween"
       },
       "lines": [
         {
           "id": "line-36f3977418cea55a",
           "names": {
-            "en": "Halloween Gambit",
+            "en-US": "Halloween Gambit",
             "pt-BR": "Gambito Halloween",
-            "es": "Gambito Halloween"
+            "es-419": "Gambito Halloween",
+            "en-GB": "Halloween Gambit",
+            "es-ES": "Gambito Halloween",
+            "pt-PT": "Gambito Halloween",
+            "de": "Halloween-Gambit",
+            "fr": "Gambit Halloween",
+            "it": "Gambetto Halloween"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Halloween Gambit",
@@ -467,9 +707,15 @@
         {
           "id": "line-53707f0526f8fa62",
           "names": {
-            "en": "Halloween Gambit, Plasma Variation",
+            "en-US": "Halloween Gambit, Plasma Variation",
             "pt-BR": "Gambito Halloween, Variante Plasma",
-            "es": "Gambito Halloween, Variante Plasma"
+            "es-419": "Gambito Halloween, Variante Plasma",
+            "en-GB": "Halloween Gambit, Plasma Variation",
+            "es-ES": "Gambito Halloween, Variante Plasma",
+            "pt-PT": "Gambito Halloween, Variante Plasma",
+            "de": "Halloween-Gambit, Plasma-Variante",
+            "fr": "Gambit Halloween, Variante Plasma",
+            "it": "Gambetto Halloween, Variante Plasma"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Halloween Gambit, Plasma Variation",
@@ -479,9 +725,15 @@
         {
           "id": "line-c80f2eb80a0f68fe",
           "names": {
-            "en": "Halloween Gambit, Oldtimer Variation",
+            "en-US": "Halloween Gambit, Oldtimer Variation",
             "pt-BR": "Gambito Halloween, Variante Oldtimer",
-            "es": "Gambito Halloween, Variante Oldtimer"
+            "es-419": "Gambito Halloween, Variante Oldtimer",
+            "en-GB": "Halloween Gambit, Oldtimer Variation",
+            "es-ES": "Gambito Halloween, Variante Oldtimer",
+            "pt-PT": "Gambito Halloween, Variante Oldtimer",
+            "de": "Halloween-Gambit, Oldtimer-Variante",
+            "fr": "Gambit Halloween, Variante Oldtimer",
+            "it": "Gambetto Halloween, Variante Oldtimer"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Halloween Gambit, Oldtimer Variation",
@@ -492,17 +744,29 @@
     },
     {
       "names": {
-        "en": "Italian Variation",
+        "en-US": "Italian Variation",
         "pt-BR": "Variante Italiana",
-        "es": "Variante Italiana"
+        "es-419": "Variante Italiana",
+        "en-GB": "Italian Variation",
+        "es-ES": "Variante Italiana",
+        "pt-PT": "Variante Italiana",
+        "de": "Italienische Variante",
+        "fr": "Variante italienne",
+        "it": "Variante italiana"
       },
       "lines": [
         {
           "id": "line-e7403599d2017f32",
           "names": {
-            "en": "Italian Variation",
+            "en-US": "Italian Variation",
             "pt-BR": "Variante Italiana",
-            "es": "Variante Italiana"
+            "es-419": "Variante Italiana",
+            "en-GB": "Italian Variation",
+            "es-ES": "Variante Italiana",
+            "pt-PT": "Variante Italiana",
+            "de": "Italienische Variante",
+            "fr": "Variante italienne",
+            "it": "Variante italiana"
           },
           "eco": "C50",
           "opening": "Four Knights Game: Italian Variation",
@@ -512,9 +776,15 @@
         {
           "id": "line-edd2314e76b2b800",
           "names": {
-            "en": "Italian Variation",
+            "en-US": "Italian Variation",
             "pt-BR": "Variante Italiana",
-            "es": "Variante Italiana"
+            "es-419": "Variante Italiana",
+            "en-GB": "Italian Variation",
+            "es-ES": "Variante Italiana",
+            "pt-PT": "Variante Italiana",
+            "de": "Italienische Variante",
+            "fr": "Variante italienne",
+            "it": "Variante italiana"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Italian Variation",
@@ -524,9 +794,15 @@
         {
           "id": "line-03bb77913d876601",
           "names": {
-            "en": "Italian Variation, Noa Gambit",
+            "en-US": "Italian Variation, Noa Gambit",
             "pt-BR": "Variante Italiana, Gambito Noa",
-            "es": "Variante Italiana, Gambito Noa"
+            "es-419": "Variante Italiana, Gambito Noa",
+            "en-GB": "Italian Variation, Noa Gambit",
+            "es-ES": "Variante Italiana, Gambito Noa",
+            "pt-PT": "Variante Italiana, Gambito Noa",
+            "de": "Italienische Variante, Noa-Gambit",
+            "fr": "Variante italienne, Gambit Noa",
+            "it": "Variante italiana, Gambetto Noa"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Italian Variation, Noa Gambit",
@@ -537,17 +813,29 @@
     },
     {
       "names": {
-        "en": "Glek System",
+        "en-US": "Glek System",
         "pt-BR": "Sistema Glek",
-        "es": "Sistema Glek"
+        "es-419": "Sistema Glek",
+        "en-GB": "Glek System",
+        "es-ES": "Sistema Glek",
+        "pt-PT": "Sistema Glek",
+        "de": "Glek-System",
+        "fr": "Système Glek",
+        "it": "Sistema Glek"
       },
       "lines": [
         {
           "id": "line-33fd29dbf51213b1",
           "names": {
-            "en": "Glek System",
+            "en-US": "Glek System",
             "pt-BR": "Sistema Glek",
-            "es": "Sistema Glek"
+            "es-419": "Sistema Glek",
+            "en-GB": "Glek System",
+            "es-ES": "Sistema Glek",
+            "pt-PT": "Sistema Glek",
+            "de": "Glek-System",
+            "fr": "Système Glek",
+            "it": "Sistema Glek"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Glek System",
@@ -557,9 +845,15 @@
         {
           "id": "line-332e625948186585",
           "names": {
-            "en": "Glek System",
+            "en-US": "Glek System",
             "pt-BR": "Sistema Glek",
-            "es": "Sistema Glek"
+            "es-419": "Sistema Glek",
+            "en-GB": "Glek System",
+            "es-ES": "Sistema Glek",
+            "pt-PT": "Sistema Glek",
+            "de": "Glek-System",
+            "fr": "Système Glek",
+            "it": "Sistema Glek"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Glek System",
@@ -570,17 +864,29 @@
     },
     {
       "names": {
-        "en": "Gunsberg Variation",
+        "en-US": "Gunsberg Variation",
         "pt-BR": "Variante Gunsberg",
-        "es": "Variante Gunsberg"
+        "es-419": "Variante Gunsberg",
+        "en-GB": "Gunsberg Variation",
+        "es-ES": "Variante Gunsberg",
+        "pt-PT": "Variante Gunsberg",
+        "de": "Gunsberg-Variante",
+        "fr": "Variante Gunsberg",
+        "it": "Variante Gunsberg"
       },
       "lines": [
         {
           "id": "line-778be7cda36f3227",
           "names": {
-            "en": "Gunsberg Variation",
+            "en-US": "Gunsberg Variation",
             "pt-BR": "Variante Gunsberg",
-            "es": "Variante Gunsberg"
+            "es-419": "Variante Gunsberg",
+            "en-GB": "Gunsberg Variation",
+            "es-ES": "Variante Gunsberg",
+            "pt-PT": "Variante Gunsberg",
+            "de": "Gunsberg-Variante",
+            "fr": "Variante Gunsberg",
+            "it": "Variante Gunsberg"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Gunsberg Variation",
@@ -590,9 +896,15 @@
         {
           "id": "line-5f2f8b2b405c5754",
           "names": {
-            "en": "Gunsberg Variation, Provincial Opening",
+            "en-US": "Gunsberg Variation, Provincial Opening",
             "pt-BR": "Variante Gunsberg, Abertura Provincial",
-            "es": "Variante Gunsberg, Apertura Provincial"
+            "es-419": "Variante Gunsberg, Apertura Provincial",
+            "en-GB": "Gunsberg Variation, Provincial Opening",
+            "es-ES": "Variante Gunsberg, Apertura Provincial",
+            "pt-PT": "Variante Gunsberg, Abertura Provincial",
+            "de": "Gunsberg-Variante, Provinzielle Eröffnung",
+            "fr": "Variante Gunsberg, Ouverture provinciale",
+            "it": "Variante Gunsberg, Apertura provinciale"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Gunsberg Variation, Provincial Opening",
@@ -603,17 +915,29 @@
     },
     {
       "names": {
-        "en": "Scotch Variation Accepted",
+        "en-US": "Scotch Variation Accepted",
         "pt-BR": "Variante Escocesa Aceita",
-        "es": "Variante Escocesa Aceptada"
+        "es-419": "Variante Escocesa Aceptada",
+        "en-GB": "Scotch Variation Accepted",
+        "es-ES": "Variante Escocesa Aceptada",
+        "pt-PT": "Variante Escocesa Aceita",
+        "de": "Angenommene Schottische Variante",
+        "fr": "Variante écossaise acceptée",
+        "it": "Variante scozzese accettata"
       },
       "lines": [
         {
           "id": "line-9655cc5ee4237bd7",
           "names": {
-            "en": "Scotch Variation Accepted",
+            "en-US": "Scotch Variation Accepted",
             "pt-BR": "Variante Escocesa Aceita",
-            "es": "Variante Escocesa Aceptada"
+            "es-419": "Variante Escocesa Aceptada",
+            "en-GB": "Scotch Variation Accepted",
+            "es-ES": "Variante Escocesa Aceptada",
+            "pt-PT": "Variante Escocesa Aceita",
+            "de": "Angenommene Schottische Variante",
+            "fr": "Variante écossaise acceptée",
+            "it": "Variante scozzese accettata"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Scotch Variation Accepted",
@@ -623,9 +947,15 @@
         {
           "id": "line-337b839d83d51252",
           "names": {
-            "en": "Scotch Variation Accepted, Main Line",
+            "en-US": "Scotch Variation Accepted, Main Line",
             "pt-BR": "Variante Escocesa Aceita, Linha Principal",
-            "es": "Variante Escocesa Aceptada, Línea Principal"
+            "es-419": "Variante Escocesa Aceptada, Línea Principal",
+            "en-GB": "Scotch Variation Accepted, Main Line",
+            "es-ES": "Variante Escocesa Aceptada, Línea Principal",
+            "pt-PT": "Variante Escocesa Aceita, Linha Principal",
+            "de": "Angenommene Schottische Variante, Hauptvariante",
+            "fr": "Variante écossaise acceptée, Ligne principale",
+            "it": "Variante scozzese accettata, Linea principale"
           },
           "eco": "C47",
           "opening": "Four Knights Game: Scotch Variation Accepted, Main Line",
@@ -639,9 +969,15 @@
     {
       "id": "line-37f12212fd765dbe",
       "names": {
-        "en": "Four Knights Game",
+        "en-US": "Four Knights Game",
         "pt-BR": "Abertura dos Quatro Cavalos",
-        "es": "Apertura de los Cuatro Caballos"
+        "es-419": "Apertura de los Cuatro Caballos",
+        "en-GB": "Four Knights Game",
+        "es-ES": "Apertura de los Cuatro Caballos",
+        "pt-PT": "Abertura dos Quatro Cavalos",
+        "de": "Vierspringerspiel",
+        "fr": "Partie des quatre cavaliers",
+        "it": "Partita dei quattro cavalli"
       },
       "eco": "C47",
       "opening": "Four Knights Game",
@@ -651,9 +987,15 @@
     {
       "id": "line-7edb5afa6516fcf5",
       "names": {
-        "en": "Naroditsky Variation",
+        "en-US": "Naroditsky Variation",
         "pt-BR": "Variante Naroditsky",
-        "es": "Variante Naroditsky"
+        "es-419": "Variante Naroditsky",
+        "en-GB": "Naroditsky Variation",
+        "es-ES": "Variante Naroditsky",
+        "pt-PT": "Variante Naroditsky",
+        "de": "Naroditsky-Variante",
+        "fr": "Variante Naroditsky",
+        "it": "Variante Naroditsky"
       },
       "eco": "C47",
       "opening": "Four Knights Game: Naroditsky Variation",

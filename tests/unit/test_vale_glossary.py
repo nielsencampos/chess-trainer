@@ -26,7 +26,7 @@ def test_each_locale_uses_its_glossary_style():
             continue
         style = vale_glossary.style_name(locale.code)
         assert style in locale.vale, locale.code
-        section = "*.md" if locale.code == "en" else f"*.{locale.code}.md"
+        section = "*.md" if locale.code == "en-US" else f"*.{locale.code}.md"
         assert style in ini[section]["BasedOnStyles"], section
 
 
@@ -49,4 +49,4 @@ def test_a_word_with_regex_characters_is_escaped(tmp_path):
 def test_style_names():
     """The style is named from the locale code."""
     assert vale_glossary.style_name("pt-BR") == "GlossaryPtBR"
-    assert vale_glossary.style_name("es") == "GlossaryEs"
+    assert vale_glossary.style_name("es-419") == "GlossaryEs419"

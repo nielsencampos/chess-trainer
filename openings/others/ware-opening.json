@@ -1,18 +1,30 @@
 {
   "id": "ware-opening",
   "names": {
-    "en": "Ware Opening",
+    "en-US": "Ware Opening",
     "pt-BR": "Abertura Ware",
-    "es": "Apertura Ware"
+    "es-419": "Apertura Ware",
+    "en-GB": "Ware Opening",
+    "es-ES": "Apertura Ware",
+    "pt-PT": "Abertura Ware",
+    "de": "Ware-Eröffnung",
+    "fr": "Ouverture Ware",
+    "it": "Apertura Ware"
   },
   "order": null,
   "lines": [
     {
       "id": "line-fcda042cbca224ec",
       "names": {
-        "en": "Cologne Gambit",
+        "en-US": "Cologne Gambit",
         "pt-BR": "Gambito Colônia",
-        "es": "Gambito Colonia"
+        "es-419": "Gambito Colonia",
+        "en-GB": "Cologne Gambit",
+        "es-ES": "Gambito Colonia",
+        "pt-PT": "Gambito Colónia",
+        "de": "Kölner Gambit",
+        "fr": "Gambit de Cologne",
+        "it": "Gambetto di Colonia"
       },
       "eco": "A00",
       "opening": "Ware Opening: Cologne Gambit",
@@ -22,9 +34,15 @@
     {
       "id": "line-7413827ae10e348d",
       "names": {
-        "en": "Crab Variation",
+        "en-US": "Crab Variation",
         "pt-BR": "Variante Caranguejo",
-        "es": "Variante Cangrejo"
+        "es-419": "Variante Cangrejo",
+        "en-GB": "Crab Variation",
+        "es-ES": "Variante Cangrejo",
+        "pt-PT": "Variante Caranguejo",
+        "de": "Krabben-Variante",
+        "fr": "Variante du crabe",
+        "it": "Variante del granchio"
       },
       "eco": "A00",
       "opening": "Ware Opening: Crab Variation",
@@ -34,9 +52,15 @@
     {
       "id": "line-512317a73f74e5c5",
       "names": {
-        "en": "Ware Opening",
+        "en-US": "Ware Opening",
         "pt-BR": "Abertura Ware",
-        "es": "Apertura Ware"
+        "es-419": "Apertura Ware",
+        "en-GB": "Ware Opening",
+        "es-ES": "Apertura Ware",
+        "pt-PT": "Abertura Ware",
+        "de": "Ware-Eröffnung",
+        "fr": "Ouverture Ware",
+        "it": "Apertura Ware"
       },
       "eco": "A00",
       "opening": "Ware Opening",
@@ -46,9 +70,15 @@
     {
       "id": "line-0f86558896eb9487",
       "names": {
-        "en": "Meadow Hay Trap",
+        "en-US": "Meadow Hay Trap",
         "pt-BR": "Armadilha do Feno do Prado",
-        "es": "Trampa del Heno del Prado"
+        "es-419": "Trampa del Heno del Prado",
+        "en-GB": "Meadow Hay Trap",
+        "es-ES": "Trampa del Heno del Prado",
+        "pt-PT": "Armadilha do Feno do Prado",
+        "de": "Wiesenheu-Falle",
+        "fr": "Piège du foin de prairie",
+        "it": "Trappola del fieno di prato"
       },
       "eco": "A00",
       "opening": "Ware Opening: Meadow Hay Trap",
@@ -58,9 +88,15 @@
     {
       "id": "line-70ad1e004de77fff",
       "names": {
-        "en": "Symmetric Variation",
+        "en-US": "Symmetric Variation",
         "pt-BR": "Variante Simétrica",
-        "es": "Variante Simétrica"
+        "es-419": "Variante Simétrica",
+        "en-GB": "Symmetric Variation",
+        "es-ES": "Variante Simétrica",
+        "pt-PT": "Variante Simétrica",
+        "de": "Symmetrische Variante",
+        "fr": "Variante symétrique",
+        "it": "Variante simmetrica"
       },
       "eco": "A00",
       "opening": "Ware Opening: Symmetric Variation",
@@ -70,9 +106,15 @@
     {
       "id": "line-9a91fbf7cc245066",
       "names": {
-        "en": "Ware Gambit",
+        "en-US": "Ware Gambit",
         "pt-BR": "Gambito Ware",
-        "es": "Gambito Ware"
+        "es-419": "Gambito Ware",
+        "en-GB": "Ware Gambit",
+        "es-ES": "Gambito Ware",
+        "pt-PT": "Gambito Ware",
+        "de": "Ware-Gambit",
+        "fr": "Gambit Ware",
+        "it": "Gambetto Ware"
       },
       "eco": "A00",
       "opening": "Ware Opening: Ware Gambit",
@@ -82,9 +124,15 @@
     {
       "id": "line-dbb03a33831e0d8a",
       "names": {
-        "en": "Wing Gambit",
+        "en-US": "Wing Gambit",
         "pt-BR": "Gambito da Ala",
-        "es": "Gambito del Ala"
+        "es-419": "Gambito del Ala",
+        "en-GB": "Wing Gambit",
+        "es-ES": "Gambito del Ala",
+        "pt-PT": "Gambito da Ala",
+        "de": "Flügelgambit",
+        "fr": "Gambit de l'aile",
+        "it": "Gambetto d'ala"
       },
       "eco": "A00",
       "opening": "Ware Opening: Wing Gambit",

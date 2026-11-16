@@ -15,8 +15,20 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
     """
     page.goto("/")
     options = page.locator("#locale-picker option")
-    expect(options).to_have_text(["English", "Español", "Português (Brasil)"])
-    expect(page.locator("#locale-picker")).to_have_value("en")
+    expect(options).to_have_text(
+        [
+            "English (US)",
+            "Deutsch",
+            "English (UK)",
+            "Español (Latinoamérica)",
+            "Español (España)",
+            "Français",
+            "Italiano",
+            "Português (Brasil)",
+            "Português (Portugal)",
+        ]
+    )
+    expect(page.locator("#locale-picker")).to_have_value("en-US")
 
 
 def test_switching_language_is_kept_after_a_reload(page: Page):
@@ -44,7 +56,7 @@ def test_switching_language_is_kept_after_a_reload(page: Page):
     expect(page.locator("#play")).to_have_text("Jogar")
     expect(bird).to_have_text("Abertura Bird")
 
-    page.locator("#locale-picker").select_option("en")
+    page.locator("#locale-picker").select_option("en-US")
     expect(page.locator("#play")).to_have_text("Play")
     page.reload()
     expect(page.locator("#play")).to_have_text("Play")
@@ -65,7 +77,7 @@ def test_switching_mid_game_keeps_the_game(page: Page, seed_prefs):
     wait_for_ply(page, 2)
     wait_for_your_move(page)
 
-    page.locator("#locale-picker").select_option("es")
+    page.locator("#locale-picker").select_option("es-419")
     expect(page.locator("#chips .chip").first).to_have_text("Tu turno")
     expect(page.locator("#chips")).to_contain_text("En teoría")
     expect(page.locator("#resign")).to_have_text("Abandonar")
@@ -101,12 +113,12 @@ def test_opening_names_follow_the_language(page: Page, seed_prefs):
     page.locator("#resign").click()
     page.locator("#resign").click()
     expect(page.locator("#end-variation")).to_have_text("B22 · Defesa Siciliana: Variante Alapin")
-    page.locator("#locale-picker").select_option("en")
+    page.locator("#locale-picker").select_option("en-US")
     expect(page.locator("#end-variation")).to_have_text("B22 · Sicilian Defense: Alapin Variation")
     expect(page.locator("#opening-name")).to_have_text("B22 · Sicilian Defense: Alapin Variation")
 
     # Saved games show it in the chosen language, and a search finds it in either.
-    page.locator("#locale-picker").select_option("es")
+    page.locator("#locale-picker").select_option("es-419")
     page.locator("#tab-saved").click()
     row = page.locator("#saved-list .saved-game").first
     expect(row).to_contain_text("Defensa Siciliana: Variante Alapin")
@@ -114,3 +126,22 @@ def test_opening_names_follow_the_language(page: Page, seed_prefs):
     expect(row).to_contain_text("Defensa Siciliana: Variante Alapin")
     page.locator("#saved-search").fill("alapin variation")
     expect(row).to_contain_text("Defensa Siciliana: Variante Alapin")
+
+
+def test_a_code_saved_before_the_rename_is_replaced(page: Page):
+    """A browser that saved `es` (Latin American Spanish) gets es-419, and the preference with it.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
+    page.add_init_script(
+        "if (!sessionStorage.getItem('seeded')) {"
+        " sessionStorage.setItem('seeded', '1');"
+        " localStorage.setItem('chess-trainer.prefs', JSON.stringify({ locale: 'es' }));"
+        "}"
+    )
+    page.goto("/")
+    expect(page.locator("#locale-picker")).to_have_value("es-419")
+    expect(page.locator("#tab-help")).to_have_text("Ayuda")
+    saved = page.evaluate("JSON.parse(localStorage.getItem('chess-trainer.prefs')).locale")
+    assert saved == "es-419"

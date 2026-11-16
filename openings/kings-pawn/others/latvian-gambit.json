@@ -1,25 +1,43 @@
 {
   "id": "latvian-gambit",
   "names": {
-    "en": "Latvian Gambit",
+    "en-US": "Latvian Gambit",
     "pt-BR": "Gambito Letão",
-    "es": "Gambito Letón"
+    "es-419": "Gambito Letón",
+    "en-GB": "Latvian Gambit",
+    "es-ES": "Gambito Letón",
+    "pt-PT": "Gambito Letão",
+    "de": "Lettisches Gambit",
+    "fr": "Gambit letton",
+    "it": "Gambetto lettone"
   },
   "order": null,
   "variants": [
     {
       "names": {
-        "en": "Mayet Attack",
+        "en-US": "Mayet Attack",
         "pt-BR": "Ataque Mayet",
-        "es": "Ataque Mayet"
+        "es-419": "Ataque Mayet",
+        "en-GB": "Mayet Attack",
+        "es-ES": "Ataque Mayet",
+        "pt-PT": "Ataque Mayet",
+        "de": "Mayet-Angriff",
+        "fr": "Attaque Mayet",
+        "it": "Attacco Mayet"
       },
       "lines": [
         {
           "id": "line-1a3662b1dfee8f78",
           "names": {
-            "en": "Mayet Attack",
+            "en-US": "Mayet Attack",
             "pt-BR": "Ataque Mayet",
-            "es": "Ataque Mayet"
+            "es-419": "Ataque Mayet",
+            "en-GB": "Mayet Attack",
+            "es-ES": "Ataque Mayet",
+            "pt-PT": "Ataque Mayet",
+            "de": "Mayet-Angriff",
+            "fr": "Attaque Mayet",
+            "it": "Attacco Mayet"
           },
           "eco": "C40",
           "opening": "Latvian Gambit: Mayet Attack",
@@ -29,9 +47,15 @@
         {
           "id": "line-e204b539f58e8d35",
           "names": {
-            "en": "Mayet Attack, Morgado Defense",
+            "en-US": "Mayet Attack, Morgado Defense",
             "pt-BR": "Ataque Mayet, Defesa Morgado",
-            "es": "Ataque Mayet, Defensa Morgado"
+            "es-419": "Ataque Mayet, Defensa Morgado",
+            "en-GB": "Mayet Attack, Morgado Defence",
+            "es-ES": "Ataque Mayet, Defensa Morgado",
+            "pt-PT": "Ataque Mayet, Defesa Morgado",
+            "de": "Mayet-Angriff, Morgado-Verteidigung",
+            "fr": "Attaque Mayet, Défense Morgado",
+            "it": "Attacco Mayet, Difesa Morgado"
           },
           "eco": "C40",
           "opening": "Latvian Gambit: Mayet Attack, Morgado Defense",
@@ -41,9 +65,15 @@
         {
           "id": "line-5af93b8184823b56",
           "names": {
-            "en": "Mayet Attack, Strautins Gambit",
+            "en-US": "Mayet Attack, Strautins Gambit",
             "pt-BR": "Ataque Mayet, Gambito Strautins",
-            "es": "Ataque Mayet, Gambito Strautins"
+            "es-419": "Ataque Mayet, Gambito Strautins",
+            "en-GB": "Mayet Attack, Strautins Gambit",
+            "es-ES": "Ataque Mayet, Gambito Strautins",
+            "pt-PT": "Ataque Mayet, Gambito Strautins",
+            "de": "Mayet-Angriff, Strautins-Gambit",
+            "fr": "Attaque Mayet, Gambit Strautins",
+            "it": "Attacco Mayet, Gambetto Strautins"
           },
           "eco": "C40",
           "opening": "Latvian Gambit: Mayet Attack, Strautins Gambit",
@@ -53,9 +83,15 @@
         {
           "id": "line-27952f95525432a5",
           "names": {
-            "en": "Mayet Attack, Poisoned Pawn Variation",
+            "en-US": "Mayet Attack, Poisoned Pawn Variation",
             "pt-BR": "Ataque Mayet, Variante do Peão Envenenado",
-            "es": "Ataque Mayet, Variante del Peón Envenenado"
+            "es-419": "Ataque Mayet, Variante del Peón Envenenado",
+            "en-GB": "Mayet Attack, Poisoned Pawn Variation",
+            "es-ES": "Ataque Mayet, Variante del Peón Envenenado",
+            "pt-PT": "Ataque Mayet, Variante do Peão Envenenado",
+            "de": "Mayet-Angriff, Variante des vergifteten Bauern",
+            "fr": "Attaque Mayet, Variante du pion empoisonné",
+            "it": "Attacco Mayet, Variante del pedone avvelenato"
           },
           "eco": "C40",
           "opening": "Latvian Gambit: Mayet Attack, Poisoned Pawn Variation",
@@ -65,9 +101,15 @@
         {
           "id": "line-f349ab336b7d25ff",
           "names": {
-            "en": "Mayet Attack, Polerio-Svedenborg Variation",
+            "en-US": "Mayet Attack, Polerio-Svedenborg Variation",
             "pt-BR": "Ataque Mayet, Variante Polerio-Svedenborg",
-            "es": "Ataque Mayet, Variante Polerio-Svedenborg"
+            "es-419": "Ataque Mayet, Variante Polerio-Svedenborg",
+            "en-GB": "Mayet Attack, Polerio-Svedenborg Variation",
+            "es-ES": "Ataque Mayet, Variante Polerio-Svedenborg",
+            "pt-PT": "Ataque Mayet, Variante Polerio-Svedenborg",
+            "de": "Mayet-Angriff, Polerio-Svedenborg-Variante",
+            "fr": "Attaque Mayet, Variante Polerio-Svedenborg",
+            "it": "Attacco Mayet, Variante Polerio-Svedenborg"
           },
           "eco": "C40",
           "opening": "Latvian Gambit: Mayet Attack, Polerio-Svedenborg Variation",
@@ -81,9 +123,15 @@
     {
       "id": "line-5eca8915ca9e0b42",
       "names": {
-        "en": "Accepted",
+        "en-US": "Accepted",
         "pt-BR": "Aceito",
-        "es": "Aceptado"
+        "es-419": "Aceptado",
+        "en-GB": "Accepted",
+        "es-ES": "Aceptado",
+        "pt-PT": "Aceito",
+        "de": "Angenommen",
+        "fr": "Accepté",
+        "it": "Accettato"
       },
       "eco": "C40",
       "opening": "Latvian Gambit Accepted",
@@ -93,9 +141,15 @@
     {
       "id": "line-cf8dc77db6020943",
       "names": {
-        "en": "Accepted: Bilguer Variation",
+        "en-US": "Accepted: Bilguer Variation",
         "pt-BR": "Aceito: Variante Bilguer",
-        "es": "Aceptado: Variante Bilguer"
+        "es-419": "Aceptado: Variante Bilguer",
+        "en-GB": "Accepted: Bilguer Variation",
+        "es-ES": "Aceptado: Variante Bilguer",
+        "pt-PT": "Aceito: Variante Bilguer",
+        "de": "Angenommen: Bilguer-Variante",
+        "fr": "Accepté: Variante Bilguer",
+        "it": "Accettato: Variante Bilguer"
       },
       "eco": "C40",
       "opening": "Latvian Gambit Accepted: Bilguer Variation",
@@ -105,9 +159,15 @@
     {
       "id": "line-d40245e5a0ff5a36",
       "names": {
-        "en": "Accepted: Bronstein Attack",
+        "en-US": "Accepted: Bronstein Attack",
         "pt-BR": "Aceito: Ataque Bronstein",
-        "es": "Aceptado: Ataque Bronstein"
+        "es-419": "Aceptado: Ataque Bronstein",
+        "en-GB": "Accepted: Bronstein Attack",
+        "es-ES": "Aceptado: Ataque Bronstein",
+        "pt-PT": "Aceito: Ataque Bronstein",
+        "de": "Angenommen: Bronstein-Angriff",
+        "fr": "Accepté: Attaque Bronstein",
+        "it": "Accettato: Attacco Bronstein"
       },
       "eco": "C40",
       "opening": "Latvian Gambit Accepted: Bronstein Attack",
@@ -117,9 +177,15 @@
     {
       "id": "line-7b6e08949651fc82",
       "names": {
-        "en": "Accepted: Bronstein Gambit",
+        "en-US": "Accepted: Bronstein Gambit",
         "pt-BR": "Aceito: Gambito Bronstein",
-        "es": "Aceptado: Gambito Bronstein"
+        "es-419": "Aceptado: Gambito Bronstein",
+        "en-GB": "Accepted: Bronstein Gambit",
+        "es-ES": "Aceptado: Gambito Bronstein",
+        "pt-PT": "Aceito: Gambito Bronstein",
+        "de": "Angenommen: Bronstein-Gambit",
+        "fr": "Accepté: Gambit Bronstein",
+        "it": "Accettato: Gambetto Bronstein"
       },
       "eco": "C40",
       "opening": "Latvian Gambit Accepted: Bronstein Gambit",
@@ -129,9 +195,15 @@
     {
       "id": "line-2411447fa43736be",
       "names": {
-        "en": "Accepted: Foltys Variation",
+        "en-US": "Accepted: Foltys Variation",
         "pt-BR": "Aceito: Variante Foltys",
-        "es": "Aceptado: Variante Foltys"
+        "es-419": "Aceptado: Variante Foltys",
+        "en-GB": "Accepted: Foltys Variation",
+        "es-ES": "Aceptado: Variante Foltys",
+        "pt-PT": "Aceito: Variante Foltys",
+        "de": "Angenommen: Foltys-Variante",
+        "fr": "Accepté: Variante Foltys",
+        "it": "Accettato: Variante Foltys"
       },
       "eco": "C40",
       "opening": "Latvian Gambit Accepted: Foltys Variation",
@@ -141,9 +213,15 @@
     {
       "id": "line-f7e0692598c9568d",
       "names": {
-        "en": "Accepted: Foltys-Leonhardt Variation",
+        "en-US": "Accepted: Foltys-Leonhardt Variation",
         "pt-BR": "Aceito: Variante Foltys-Leonhardt",
-        "es": "Aceptado: Variante Foltys-Leonhardt"
+        "es-419": "Aceptado: Variante Foltys-Leonhardt",
+        "en-GB": "Accepted: Foltys-Leonhardt Variation",
+        "es-ES": "Aceptado: Variante Foltys-Leonhardt",
+        "pt-PT": "Aceito: Variante Foltys-Leonhardt",
+        "de": "Angenommen: Foltys-Leonhardt-Variante",
+        "fr": "Accepté: Variante Foltys-Leonhardt",
+        "it": "Accettato: Variante Foltys-Leonhardt"
       },
       "eco": "C40",
       "opening": "Latvian Gambit Accepted: Foltys-Leonhardt Variation",
@@ -153,9 +231,15 @@
     {
       "id": "line-25321cc5b43b6e3f",
       "names": {
-        "en": "Accepted: Leonhardt Variation",
+        "en-US": "Accepted: Leonhardt Variation",
         "pt-BR": "Aceito: Variante Leonhardt",
-        "es": "Aceptado: Variante Leonhardt"
+        "es-419": "Aceptado: Variante Leonhardt",
+        "en-GB": "Accepted: Leonhardt Variation",
+        "es-ES": "Aceptado: Variante Leonhardt",
+        "pt-PT": "Aceito: Variante Leonhardt",
+        "de": "Angenommen: Leonhardt-Variante",
+        "fr": "Accepté: Variante Leonhardt",
+        "it": "Accettato: Variante Leonhardt"
       },
       "eco": "C40",
       "opening": "Latvian Gambit Accepted: Leonhardt Variation",
@@ -165,9 +249,15 @@
     {
       "id": "line-310410aefa8bdd53",
       "names": {
-        "en": "Accepted: Main Line",
+        "en-US": "Accepted: Main Line",
         "pt-BR": "Aceito: Linha Principal",
-        "es": "Aceptado: Línea Principal"
+        "es-419": "Aceptado: Línea Principal",
+        "en-GB": "Accepted: Main Line",
+        "es-ES": "Aceptado: Línea Principal",
+        "pt-PT": "Aceito: Linha Principal",
+        "de": "Angenommen: Hauptvariante",
+        "fr": "Accepté: Ligne principale",
+        "it": "Accettato: Linea principale"
       },
       "eco": "C40",
       "opening": "Latvian Gambit Accepted: Main Line",
@@ -177,9 +267,15 @@
     {
       "id": "line-652d6ddb94a3e462",
       "names": {
-        "en": "Accepted: Nimzowitsch Attack",
+        "en-US": "Accepted: Nimzowitsch Attack",
         "pt-BR": "Aceito: Ataque Nimzowitsch",
-        "es": "Aceptado: Ataque Nimzowitsch"
+        "es-419": "Aceptado: Ataque Nimzowitsch",
+        "en-GB": "Accepted: Nimzowitsch Attack",
+        "es-ES": "Aceptado: Ataque Nimzowitsch",
+        "pt-PT": "Aceito: Ataque Nimzowitsch",
+        "de": "Angenommen: Nimzowitsch-Angriff",
+        "fr": "Accepté: Attaque Nimzowitsch",
+        "it": "Accettato: Attacco Nimzowitsch"
       },
       "eco": "C40",
       "opening": "Latvian Gambit Accepted: Nimzowitsch Attack",
@@ -189,9 +285,15 @@
     {
       "id": "line-a563b63133e3f4ee",
       "names": {
-        "en": "Behting Variation",
+        "en-US": "Behting Variation",
         "pt-BR": "Variante Behting",
-        "es": "Variante Behting"
+        "es-419": "Variante Behting",
+        "en-GB": "Behting Variation",
+        "es-ES": "Variante Behting",
+        "pt-PT": "Variante Behting",
+        "de": "Behting-Variante",
+        "fr": "Variante Behting",
+        "it": "Variante Behting"
       },
       "eco": "C40",
       "opening": "Latvian Gambit: Behting Variation",
@@ -201,9 +303,15 @@
     {
       "id": "line-245e728ba545fabd",
       "names": {
-        "en": "Clam Gambit",
+        "en-US": "Clam Gambit",
         "pt-BR": "Gambito do Marisco",
-        "es": "Gambito de la Almeja"
+        "es-419": "Gambito de la Almeja",
+        "en-GB": "Clam Gambit",
+        "es-ES": "Gambito de la Almeja",
+        "pt-PT": "Gambito do Marisco",
+        "de": "Muschel-Gambit",
+        "fr": "Gambit de la palourde",
+        "it": "Gambetto della vongola"
       },
       "eco": "C44",
       "opening": "Latvian Gambit: Clam Gambit",
@@ -213,9 +321,15 @@
     {
       "id": "line-4cebfec05603bf72",
       "names": {
-        "en": "Corkscrew Countergambit",
+        "en-US": "Corkscrew Countergambit",
         "pt-BR": "Contragambito Saca-Rolhas",
-        "es": "Contragambito Sacacorchos"
+        "es-419": "Contragambito Sacacorchos",
+        "en-GB": "Corkscrew Countergambit",
+        "es-ES": "Contragambito Sacacorchos",
+        "pt-PT": "Contragambito Saca-Rolhas",
+        "de": "Korkenzieher-Gegengambit",
+        "fr": "Contre-gambit du tire-bouchon",
+        "it": "Controgambetto del cavatappi"
       },
       "eco": "C40",
       "opening": "Latvian Gambit: Corkscrew Countergambit",
@@ -225,9 +339,15 @@
     {
       "id": "line-c51d777fc1a29c35",
       "names": {
-        "en": "Corkscrew Gambit",
+        "en-US": "Corkscrew Gambit",
         "pt-BR": "Gambito Saca-Rolhas",
-        "es": "Gambito Sacacorchos"
+        "es-419": "Gambito Sacacorchos",
+        "en-GB": "Corkscrew Gambit",
+        "es-ES": "Gambito Sacacorchos",
+        "pt-PT": "Gambito Saca-Rolhas",
+        "de": "Korkenzieher-Gambit",
+        "fr": "Gambit du tire-bouchon",
+        "it": "Gambetto del cavatappi"
       },
       "eco": "C40",
       "opening": "Latvian Gambit: Corkscrew Gambit",
@@ -237,9 +357,15 @@
     {
       "id": "line-b97ecb2e6d6d06bd",
       "names": {
-        "en": "Diepstraten Countergambit",
+        "en-US": "Diepstraten Countergambit",
         "pt-BR": "Contragambito Diepstraten",
-        "es": "Contragambito Diepstraten"
+        "es-419": "Contragambito Diepstraten",
+        "en-GB": "Diepstraten Countergambit",
+        "es-ES": "Contragambito Diepstraten",
+        "pt-PT": "Contragambito Diepstraten",
+        "de": "Diepstraten-Gegengambit",
+        "fr": "Contre-gambit Diepstraten",
+        "it": "Controgambetto Diepstraten"
       },
       "eco": "C40",
       "opening": "Latvian Gambit: Diepstraten Countergambit",
@@ -249,9 +375,15 @@
     {
       "id": "line-080fb90573525e2e",
       "names": {
-        "en": "Fraser Defense",
+        "en-US": "Fraser Defense",
         "pt-BR": "Defesa Fraser",
-        "es": "Defensa Fraser"
+        "es-419": "Defensa Fraser",
+        "en-GB": "Fraser Defence",
+        "es-ES": "Defensa Fraser",
+        "pt-PT": "Defesa Fraser",
+        "de": "Fraser-Verteidigung",
+        "fr": "Défense Fraser",
+        "it": "Difesa Fraser"
       },
       "eco": "C40",
       "opening": "Latvian Gambit: Fraser Defense",
@@ -261,9 +393,15 @@
     {
       "id": "line-cde6d26f599dd61f",
       "names": {
-        "en": "Greco Variation",
+        "en-US": "Greco Variation",
         "pt-BR": "Variante Greco",
-        "es": "Variante Greco"
+        "es-419": "Variante Greco",
+        "en-GB": "Greco Variation",
+        "es-ES": "Variante Greco",
+        "pt-PT": "Variante Greco",
+        "de": "Greco-Variante",
+        "fr": "Variante Greco",
+        "it": "Variante Greco"
       },
       "eco": "C40",
       "opening": "Latvian Gambit: Greco Variation",
@@ -273,9 +411,15 @@
     {
       "id": "line-932ddb024cb445bb",
       "names": {
-        "en": "Lobster Gambit",
+        "en-US": "Lobster Gambit",
         "pt-BR": "Gambito Lagosta",
-        "es": "Gambito Langosta"
+        "es-419": "Gambito Langosta",
+        "en-GB": "Lobster Gambit",
+        "es-ES": "Gambito Langosta",
+        "pt-PT": "Gambito Lagosta",
+        "de": "Hummer-Gambit",
+        "fr": "Gambit du homard",
+        "it": "Gambetto dell'aragosta"
       },
       "eco": "C40",
       "opening": "Latvian Gambit: Lobster Gambit",
@@ -285,9 +429,15 @@
     {
       "id": "line-0c57366fdbc397b3",
       "names": {
-        "en": "Latvian Gambit",
+        "en-US": "Latvian Gambit",
         "pt-BR": "Gambito Letão",
-        "es": "Gambito Letón"
+        "es-419": "Gambito Letón",
+        "en-GB": "Latvian Gambit",
+        "es-ES": "Gambito Letón",
+        "pt-PT": "Gambito Letão",
+        "de": "Lettisches Gambit",
+        "fr": "Gambit letton",
+        "it": "Gambetto lettone"
       },
       "eco": "C40",
       "opening": "Latvian Gambit",
@@ -297,9 +447,15 @@
     {
       "id": "line-b258c8ce019a753a",
       "names": {
-        "en": "Mason Countergambit",
+        "en-US": "Mason Countergambit",
         "pt-BR": "Contragambito Mason",
-        "es": "Contragambito Mason"
+        "es-419": "Contragambito Mason",
+        "en-GB": "Mason Countergambit",
+        "es-ES": "Contragambito Mason",
+        "pt-PT": "Contragambito Mason",
+        "de": "Mason-Gegengambit",
+        "fr": "Contre-gambit Mason",
+        "it": "Controgambetto Mason"
       },
       "eco": "C40",
       "opening": "Latvian Gambit: Mason Countergambit",
@@ -309,9 +465,15 @@
     {
       "id": "line-ee5f60dc33c1ff63",
       "names": {
-        "en": "Mlotkowski Variation",
+        "en-US": "Mlotkowski Variation",
         "pt-BR": "Variante Mlotkowski",
-        "es": "Variante Mlotkowski"
+        "es-419": "Variante Mlotkowski",
+        "en-GB": "Mlotkowski Variation",
+        "es-ES": "Variante Mlotkowski",
+        "pt-PT": "Variante Mlotkowski",
+        "de": "Mlotkowski-Variante",
+        "fr": "Variante Mlotkowski",
+        "it": "Variante Mlotkowski"
       },
       "eco": "C40",
       "opening": "Latvian Gambit: Mlotkowski Variation",
@@ -321,9 +483,15 @@
     {
       "id": "line-80bbb55f377121a4",
       "names": {
-        "en": "Senechaud Gambit",
+        "en-US": "Senechaud Gambit",
         "pt-BR": "Gambito Senechaud",
-        "es": "Gambito Senechaud"
+        "es-419": "Gambito Senechaud",
+        "en-GB": "Senechaud Gambit",
+        "es-ES": "Gambito Senechaud",
+        "pt-PT": "Gambito Senechaud",
+        "de": "Senechaud-Gambit",
+        "fr": "Gambit Senechaud",
+        "it": "Gambetto Senechaud"
       },
       "eco": "C40",
       "opening": "Latvian Gambit: Senechaud Gambit",

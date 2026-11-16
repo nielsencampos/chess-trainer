@@ -1,4 +1,8 @@
-"""UI string files (brief §8): every language has the English keys, and nothing it cannot use."""
+"""UI string files (brief §8): every language has the English keys, and nothing it cannot use.
+
+A variant of English (`en-GB`) is the exception: it holds only the strings that differ from `en`,
+and the rest falls back to `en`.
+"""
 
 import json
 import re
@@ -25,8 +29,10 @@ def load(code: str) -> dict[str, str]:
     return json.loads((I18N_DIR / f"{code}.json").read_text(encoding="utf-8"))
 
 
-ENGLISH = load("en")
-OTHERS = sorted(path.stem for path in I18N_DIR.glob("*.json") if path.stem != "en")
+ENGLISH = load("en-US")
+OTHERS = sorted(path.stem for path in I18N_DIR.glob("*.json") if path.stem != "en-US")
+ENGLISH_VARIANTS = [code for code in OTHERS if code.split("-")[0] == "en"]
+TRANSLATIONS = [code for code in OTHERS if code not in ENGLISH_VARIANTS]
 
 
 def base_key(key: str) -> str:
@@ -59,10 +65,10 @@ def english_for(key: str) -> list[str]:
 
 def test_there_are_other_languages():
     """There are other languages."""
-    assert {"pt-BR", "es"} <= set(OTHERS)
+    assert {"pt-BR", "es-419"} <= set(OTHERS)
 
 
-@pytest.mark.parametrize("code", OTHERS)
+@pytest.mark.parametrize("code", TRANSLATIONS)
 def test_every_english_string_is_translated(code):
     """Every English string is translated.
 
@@ -74,6 +80,17 @@ def test_every_english_string_is_translated(code):
         key for key in ENGLISH if key not in strings and f"{base_key(key)}.other" not in strings
     ]
     assert missing == []
+
+
+@pytest.mark.parametrize("code", ENGLISH_VARIANTS)
+def test_a_variant_of_english_holds_only_what_differs(code):
+    """A variant of English repeats no string of `en`: the rest falls back to it.
+
+    Args:
+        code (str): A variant of English, such as `en-GB`.
+    """
+    same = [key for key, text in load(code).items() if ENGLISH.get(key) == text]
+    assert same == []
 
 
 @pytest.mark.parametrize("code", OTHERS)
@@ -100,7 +117,7 @@ def test_placeholders_match_english(code):
         assert used <= allowed, f"{code} {key}: {used - allowed}"
 
 
-@pytest.mark.parametrize("code", ["en", *OTHERS])
+@pytest.mark.parametrize("code", ["en-US", *OTHERS])
 def test_each_language_names_itself(code):
     """Each language names itself.
 
@@ -118,11 +135,12 @@ def test_locales_endpoint_lists_the_files_english_first(client):
     """
     body = client.get("/api/locales").json()
     codes = [item["code"] for item in body["locales"]]
-    assert codes[0] == "en"
-    assert set(codes) == {"en", *OTHERS}
+    assert codes[0] == "en-US"
+    assert set(codes) == {"en-US", *OTHERS}
     names = {item["code"]: item["name"] for item in body["locales"]}
     assert names["pt-BR"] == "Português (Brasil)"
-    assert names["es"] == "Español"
-    assert body["default"] == "en"
+    assert names["es-419"] == "Español (Latinoamérica)"
+    assert names["en-US"] == "English (US)"
+    assert body["default"] == "en-US"
     registry = load_locales()
     assert all(item["dir"] == registry[item["code"]].direction for item in body["locales"])

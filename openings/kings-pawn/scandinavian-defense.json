@@ -1,25 +1,43 @@
 {
   "id": "scandinavian-defense",
   "names": {
-    "en": "Scandinavian Defense",
+    "en-US": "Scandinavian Defense",
     "pt-BR": "Defesa Escandinava",
-    "es": "Defensa Escandinava"
+    "es-419": "Defensa Escandinava",
+    "en-GB": "Scandinavian Defense",
+    "es-ES": "Defensa Escandinava",
+    "pt-PT": "Defesa Escandinava",
+    "de": "Skandinavische Verteidigung",
+    "fr": "Défense scandinave",
+    "it": "Difesa scandinava"
   },
   "order": 6,
   "variants": [
     {
       "names": {
-        "en": "Portuguese Gambit",
+        "en-US": "Portuguese Gambit",
         "pt-BR": "Gambito Português",
-        "es": "Gambito Portugués"
+        "es-419": "Gambito Portugués",
+        "en-GB": "Portuguese Gambit",
+        "es-ES": "Gambito Portugués",
+        "pt-PT": "Gambito Português",
+        "de": "Portugiesisches Gambit",
+        "fr": "Gambit portugais",
+        "it": "Gambetto portoghese"
       },
       "lines": [
         {
           "id": "line-83b40fc4779bf6b0",
           "names": {
-            "en": "Portuguese Gambit",
+            "en-US": "Portuguese Gambit",
             "pt-BR": "Gambito Português",
-            "es": "Gambito Portugués"
+            "es-419": "Gambito Portugués",
+            "en-GB": "Portuguese Gambit",
+            "es-ES": "Gambito Portugués",
+            "pt-PT": "Gambito Português",
+            "de": "Portugiesisches Gambit",
+            "fr": "Gambit portugais",
+            "it": "Gambetto portoghese"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Portuguese Gambit",
@@ -29,9 +47,15 @@
         {
           "id": "line-c7034cc0da6e1bde",
           "names": {
-            "en": "Portuguese Gambit, Lusophobe Variation",
+            "en-US": "Portuguese Gambit, Lusophobe Variation",
             "pt-BR": "Gambito Português, Variante Lusófoba",
-            "es": "Gambito Portugués, Variante Lusófoba"
+            "es-419": "Gambito Portugués, Variante Lusófoba",
+            "en-GB": "Portuguese Gambit, Lusophobe Variation",
+            "es-ES": "Gambito Portugués, Variante Lusófoba",
+            "pt-PT": "Gambito Português, Variante Lusófoba",
+            "de": "Portugiesisches Gambit, Lusophobe Variante",
+            "fr": "Gambit portugais, Variante lusophobe",
+            "it": "Gambetto portoghese, Variante lusofoba"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Portuguese Gambit, Lusophobe Variation",
@@ -41,9 +65,15 @@
         {
           "id": "line-788d5c397aa6b48c",
           "names": {
-            "en": "Portuguese Gambit, Elbow Variation",
+            "en-US": "Portuguese Gambit, Elbow Variation",
             "pt-BR": "Gambito Português, Variante do Cotovelo",
-            "es": "Gambito Portugués, Variante del Codo"
+            "es-419": "Gambito Portugués, Variante del Codo",
+            "en-GB": "Portuguese Gambit, Elbow Variation",
+            "es-ES": "Gambito Portugués, Variante del Codo",
+            "pt-PT": "Gambito Português, Variante do Cotovelo",
+            "de": "Portugiesisches Gambit, Ellbogen-Variante",
+            "fr": "Gambit portugais, Variante du coude",
+            "it": "Gambetto portoghese, Variante del gomito"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Portuguese Gambit, Elbow Variation",
@@ -53,9 +83,15 @@
         {
           "id": "line-55bd392363cf2703",
           "names": {
-            "en": "Portuguese Gambit, Wuss Variation",
+            "en-US": "Portuguese Gambit, Wuss Variation",
             "pt-BR": "Gambito Português, Variante Medrosa",
-            "es": "Gambito Portugués, Variante Miedosa"
+            "es-419": "Gambito Portugués, Variante Miedosa",
+            "en-GB": "Portuguese Gambit, Wuss Variation",
+            "es-ES": "Gambito Portugués, Variante Miedosa",
+            "pt-PT": "Gambito Português, Variante Medrosa",
+            "de": "Portugiesisches Gambit, Angsthasen-Variante",
+            "fr": "Gambit portugais, Variante du froussard",
+            "it": "Gambetto portoghese, Variante del fifone"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Portuguese Gambit, Wuss Variation",
@@ -65,9 +101,15 @@
         {
           "id": "line-90d31e2e991a4479",
           "names": {
-            "en": "Portuguese Gambit, Classical Variation",
+            "en-US": "Portuguese Gambit, Classical Variation",
             "pt-BR": "Gambito Português, Variante Clássica",
-            "es": "Gambito Portugués, Variante Clásica"
+            "es-419": "Gambito Portugués, Variante Clásica",
+            "en-GB": "Portuguese Gambit, Classical Variation",
+            "es-ES": "Gambito Portugués, Variante Clásica",
+            "pt-PT": "Gambito Português, Variante Clássica",
+            "de": "Portugiesisches Gambit, Klassische Variante",
+            "fr": "Gambit portugais, Variante classique",
+            "it": "Gambetto portoghese, Variante classica"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Portuguese Gambit, Classical Variation",
@@ -77,9 +119,15 @@
         {
           "id": "line-c0e968eb33d83e45",
           "names": {
-            "en": "Portuguese Gambit, Melbourne Shuffle Variation",
+            "en-US": "Portuguese Gambit, Melbourne Shuffle Variation",
             "pt-BR": "Gambito Português, Variante Melbourne Shuffle",
-            "es": "Gambito Portugués, Variante Melbourne Shuffle"
+            "es-419": "Gambito Portugués, Variante Melbourne Shuffle",
+            "en-GB": "Portuguese Gambit, Melbourne Shuffle Variation",
+            "es-ES": "Gambito Portugués, Variante Melbourne Shuffle",
+            "pt-PT": "Gambito Português, Variante Melbourne Shuffle",
+            "de": "Portugiesisches Gambit, Melbourne-Shuffle-Variante",
+            "fr": "Gambit portugais, Variante du Melbourne shuffle",
+            "it": "Gambetto portoghese, Variante del Melbourne shuffle"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Portuguese Gambit, Melbourne Shuffle Variation",
@@ -89,9 +137,15 @@
         {
           "id": "line-932e71a89943759d",
           "names": {
-            "en": "Portuguese Gambit, Jadoul Variation",
+            "en-US": "Portuguese Gambit, Jadoul Variation",
             "pt-BR": "Gambito Português, Variante Jadoul",
-            "es": "Gambito Portugués, Variante Jadoul"
+            "es-419": "Gambito Portugués, Variante Jadoul",
+            "en-GB": "Portuguese Gambit, Jadoul Variation",
+            "es-ES": "Gambito Portugués, Variante Jadoul",
+            "pt-PT": "Gambito Português, Variante Jadoul",
+            "de": "Portugiesisches Gambit, Jadoul-Variante",
+            "fr": "Gambit portugais, Variante Jadoul",
+            "it": "Gambetto portoghese, Variante Jadoul"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Portuguese Gambit, Jadoul Variation",
@@ -101,9 +155,15 @@
         {
           "id": "line-caa7ccd8a3592205",
           "names": {
-            "en": "Portuguese Gambit, Banker Variation",
+            "en-US": "Portuguese Gambit, Banker Variation",
             "pt-BR": "Gambito Português, Variante Banqueiro",
-            "es": "Gambito Portugués, Variante Banquero"
+            "es-419": "Gambito Portugués, Variante Banquero",
+            "en-GB": "Portuguese Gambit, Banker Variation",
+            "es-ES": "Gambito Portugués, Variante Banquero",
+            "pt-PT": "Gambito Português, Variante Banqueiro",
+            "de": "Portugiesisches Gambit, Bankier-Variante",
+            "fr": "Gambit portugais, Variante du banquier",
+            "it": "Gambetto portoghese, Variante del banchiere"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Portuguese Gambit, Banker Variation",
@@ -113,9 +173,15 @@
         {
           "id": "line-22b91bf4cbad2fd4",
           "names": {
-            "en": "Portuguese Gambit, Correspondence Refutation",
+            "en-US": "Portuguese Gambit, Correspondence Refutation",
             "pt-BR": "Gambito Português, Refutação por Correspondência",
-            "es": "Gambito Portugués, Refutación por Correspondencia"
+            "es-419": "Gambito Portugués, Refutación por Correspondencia",
+            "en-GB": "Portuguese Gambit, Correspondence Refutation",
+            "es-ES": "Gambito Portugués, Refutación por Correspondencia",
+            "pt-PT": "Gambito Português, Refutação por Correspondência",
+            "de": "Portugiesisches Gambit, Fernschach-Widerlegung",
+            "fr": "Gambit portugais, Réfutation par correspondance",
+            "it": "Gambetto portoghese, Confutazione per corrispondenza"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Portuguese Gambit, Correspondence Refutation",
@@ -126,17 +192,29 @@
     },
     {
       "names": {
-        "en": "Anderssen Counterattack",
+        "en-US": "Anderssen Counterattack",
         "pt-BR": "Contra-ataque Anderssen",
-        "es": "Contraataque Anderssen"
+        "es-419": "Contraataque Anderssen",
+        "en-GB": "Anderssen Counterattack",
+        "es-ES": "Contraataque Anderssen",
+        "pt-PT": "Contra-ataque Anderssen",
+        "de": "Anderssen-Gegenangriff",
+        "fr": "Contre-attaque Anderssen",
+        "it": "Contrattacco Anderssen"
       },
       "lines": [
         {
           "id": "line-c6bcfbc8d7cd17f3",
           "names": {
-            "en": "Anderssen Counterattack",
+            "en-US": "Anderssen Counterattack",
             "pt-BR": "Contra-ataque Anderssen",
-            "es": "Contraataque Anderssen"
+            "es-419": "Contraataque Anderssen",
+            "en-GB": "Anderssen Counterattack",
+            "es-ES": "Contraataque Anderssen",
+            "pt-PT": "Contra-ataque Anderssen",
+            "de": "Anderssen-Gegenangriff",
+            "fr": "Contre-attaque Anderssen",
+            "it": "Contrattacco Anderssen"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Anderssen Counterattack",
@@ -146,9 +224,15 @@
         {
           "id": "line-3a3d5340a3072538",
           "names": {
-            "en": "Anderssen Counterattack, Goteborg System",
+            "en-US": "Anderssen Counterattack, Goteborg System",
             "pt-BR": "Contra-ataque Anderssen, Sistema Gotemburgo",
-            "es": "Contraataque Anderssen, Sistema Gotemburgo"
+            "es-419": "Contraataque Anderssen, Sistema Gotemburgo",
+            "en-GB": "Anderssen Counterattack, Goteborg System",
+            "es-ES": "Contraataque Anderssen, Sistema Gotemburgo",
+            "pt-PT": "Contra-ataque Anderssen, Sistema Gotemburgo",
+            "de": "Anderssen-Gegenangriff, Göteborger System",
+            "fr": "Contre-attaque Anderssen, Système de Göteborg",
+            "it": "Contrattacco Anderssen, Sistema di Göteborg"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Anderssen Counterattack, Goteborg System",
@@ -158,9 +242,15 @@
         {
           "id": "line-666dea699e264d4e",
           "names": {
-            "en": "Anderssen Counterattack, Collijn Variation",
+            "en-US": "Anderssen Counterattack, Collijn Variation",
             "pt-BR": "Contra-ataque Anderssen, Variante Collijn",
-            "es": "Contraataque Anderssen, Variante Collijn"
+            "es-419": "Contraataque Anderssen, Variante Collijn",
+            "en-GB": "Anderssen Counterattack, Collijn Variation",
+            "es-ES": "Contraataque Anderssen, Variante Collijn",
+            "pt-PT": "Contra-ataque Anderssen, Variante Collijn",
+            "de": "Anderssen-Gegenangriff, Collijn-Variante",
+            "fr": "Contre-attaque Anderssen, Variante Collijn",
+            "it": "Contrattacco Anderssen, Variante Collijn"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Anderssen Counterattack, Collijn Variation",
@@ -170,9 +260,15 @@
         {
           "id": "line-049eec27caa72bd0",
           "names": {
-            "en": "Anderssen Counterattack, Orthodox Attack",
+            "en-US": "Anderssen Counterattack, Orthodox Attack",
             "pt-BR": "Contra-ataque Anderssen, Ataque Ortodoxo",
-            "es": "Contraataque Anderssen, Ataque Ortodoxo"
+            "es-419": "Contraataque Anderssen, Ataque Ortodoxo",
+            "en-GB": "Anderssen Counterattack, Orthodox Attack",
+            "es-ES": "Contraataque Anderssen, Ataque Ortodoxo",
+            "pt-PT": "Contra-ataque Anderssen, Ataque Ortodoxo",
+            "de": "Anderssen-Gegenangriff, Orthodoxer Angriff",
+            "fr": "Contre-attaque Anderssen, Attaque orthodoxe",
+            "it": "Contrattacco Anderssen, Attacco ortodosso"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Anderssen Counterattack, Orthodox Attack",
@@ -183,17 +279,29 @@
     },
     {
       "names": {
-        "en": "Modern Variation",
+        "en-US": "Modern Variation",
         "pt-BR": "Variante Moderna",
-        "es": "Variante Moderna"
+        "es-419": "Variante Moderna",
+        "en-GB": "Modern Variation",
+        "es-ES": "Variante Moderna",
+        "pt-PT": "Variante Moderna",
+        "de": "Moderne Variante",
+        "fr": "Variante moderne",
+        "it": "Variante moderna"
       },
       "lines": [
         {
           "id": "line-65d269bed05dce60",
           "names": {
-            "en": "Modern Variation",
+            "en-US": "Modern Variation",
             "pt-BR": "Variante Moderna",
-            "es": "Variante Moderna"
+            "es-419": "Variante Moderna",
+            "en-GB": "Modern Variation",
+            "es-ES": "Variante Moderna",
+            "pt-PT": "Variante Moderna",
+            "de": "Moderne Variante",
+            "fr": "Variante moderne",
+            "it": "Variante moderna"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Modern Variation",
@@ -203,9 +311,15 @@
         {
           "id": "line-60cffc02d9b903e4",
           "names": {
-            "en": "Modern Variation",
+            "en-US": "Modern Variation",
             "pt-BR": "Variante Moderna",
-            "es": "Variante Moderna"
+            "es-419": "Variante Moderna",
+            "en-GB": "Modern Variation",
+            "es-ES": "Variante Moderna",
+            "pt-PT": "Variante Moderna",
+            "de": "Moderne Variante",
+            "fr": "Variante moderne",
+            "it": "Variante moderna"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Modern Variation",
@@ -215,9 +329,15 @@
         {
           "id": "line-660c23ad54e69cd5",
           "names": {
-            "en": "Modern Variation, Gipslis Variation",
+            "en-US": "Modern Variation, Gipslis Variation",
             "pt-BR": "Variante Moderna, Variante Gipslis",
-            "es": "Variante Moderna, Variante Gipslis"
+            "es-419": "Variante Moderna, Variante Gipslis",
+            "en-GB": "Modern Variation, Gipslis Variation",
+            "es-ES": "Variante Moderna, Variante Gipslis",
+            "pt-PT": "Variante Moderna, Variante Gipslis",
+            "de": "Moderne Variante, Gipslis-Variante",
+            "fr": "Variante moderne, Variante Gipslis",
+            "it": "Variante moderna, Variante Gipslis"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Modern Variation, Gipslis Variation",
@@ -227,9 +347,15 @@
         {
           "id": "line-4dc03a0c1cd112e0",
           "names": {
-            "en": "Modern Variation, Wing Gambit",
+            "en-US": "Modern Variation, Wing Gambit",
             "pt-BR": "Variante Moderna, Gambito da Ala",
-            "es": "Variante Moderna, Gambito del Ala"
+            "es-419": "Variante Moderna, Gambito del Ala",
+            "en-GB": "Modern Variation, Wing Gambit",
+            "es-ES": "Variante Moderna, Gambito del Ala",
+            "pt-PT": "Variante Moderna, Gambito da Ala",
+            "de": "Moderne Variante, Flügelgambit",
+            "fr": "Variante moderne, Gambit de l'aile",
+            "it": "Variante moderna, Gambetto d'ala"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Modern Variation, Wing Gambit",
@@ -240,17 +366,29 @@
     },
     {
       "names": {
-        "en": "Main Line",
+        "en-US": "Main Line",
         "pt-BR": "Linha Principal",
-        "es": "Línea Principal"
+        "es-419": "Línea Principal",
+        "en-GB": "Main Line",
+        "es-ES": "Línea Principal",
+        "pt-PT": "Linha Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-666dac385286d92d",
           "names": {
-            "en": "Main Line",
+            "en-US": "Main Line",
             "pt-BR": "Linha Principal",
-            "es": "Línea Principal"
+            "es-419": "Línea Principal",
+            "en-GB": "Main Line",
+            "es-ES": "Línea Principal",
+            "pt-PT": "Linha Principal",
+            "de": "Hauptvariante",
+            "fr": "Ligne principale",
+            "it": "Linea principale"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Main Line",
@@ -260,9 +398,15 @@
         {
           "id": "line-68cb7c773349a988",
           "names": {
-            "en": "Main Line, Leonhardt Gambit",
+            "en-US": "Main Line, Leonhardt Gambit",
             "pt-BR": "Linha Principal, Gambito Leonhardt",
-            "es": "Línea Principal, Gambito Leonhardt"
+            "es-419": "Línea Principal, Gambito Leonhardt",
+            "en-GB": "Main Line, Leonhardt Gambit",
+            "es-ES": "Línea Principal, Gambito Leonhardt",
+            "pt-PT": "Linha Principal, Gambito Leonhardt",
+            "de": "Hauptvariante, Leonhardt-Gambit",
+            "fr": "Ligne principale, Gambit Leonhardt",
+            "it": "Linea principale, Gambetto Leonhardt"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Main Line, Leonhardt Gambit",
@@ -272,9 +416,15 @@
         {
           "id": "line-9cd77d43691135c6",
           "names": {
-            "en": "Main Line, Mieses Variation",
+            "en-US": "Main Line, Mieses Variation",
             "pt-BR": "Linha Principal, Variante Mieses",
-            "es": "Línea Principal, Variante Mieses"
+            "es-419": "Línea Principal, Variante Mieses",
+            "en-GB": "Main Line, Mieses Variation",
+            "es-ES": "Línea Principal, Variante Mieses",
+            "pt-PT": "Linha Principal, Variante Mieses",
+            "de": "Hauptvariante, Mieses-Variante",
+            "fr": "Ligne principale, Variante Mieses",
+            "it": "Linea principale, Variante Mieses"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Main Line, Mieses Variation",
@@ -285,17 +435,29 @@
     },
     {
       "names": {
-        "en": "Valencian Variation",
+        "en-US": "Valencian Variation",
         "pt-BR": "Variante Valenciana",
-        "es": "Variante Valenciana"
+        "es-419": "Variante Valenciana",
+        "en-GB": "Valencian Variation",
+        "es-ES": "Variante Valenciana",
+        "pt-PT": "Variante Valenciana",
+        "de": "Valencianische Variante",
+        "fr": "Variante valencienne",
+        "it": "Variante valenciana"
       },
       "lines": [
         {
           "id": "line-dbf2319afebb5dd8",
           "names": {
-            "en": "Valencian Variation",
+            "en-US": "Valencian Variation",
             "pt-BR": "Variante Valenciana",
-            "es": "Variante Valenciana"
+            "es-419": "Variante Valenciana",
+            "en-GB": "Valencian Variation",
+            "es-ES": "Variante Valenciana",
+            "pt-PT": "Variante Valenciana",
+            "de": "Valencianische Variante",
+            "fr": "Variante valencienne",
+            "it": "Variante valenciana"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Valencian Variation",
@@ -305,9 +467,15 @@
         {
           "id": "line-dd8b030d3e2211d0",
           "names": {
-            "en": "Valencian Variation, Main Line",
+            "en-US": "Valencian Variation, Main Line",
             "pt-BR": "Variante Valenciana, Linha Principal",
-            "es": "Variante Valenciana, Línea Principal"
+            "es-419": "Variante Valenciana, Línea Principal",
+            "en-GB": "Valencian Variation, Main Line",
+            "es-ES": "Variante Valenciana, Línea Principal",
+            "pt-PT": "Variante Valenciana, Linha Principal",
+            "de": "Valencianische Variante, Hauptvariante",
+            "fr": "Variante valencienne, Ligne principale",
+            "it": "Variante valenciana, Linea principale"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Valencian Variation, Main Line",
@@ -317,9 +485,15 @@
         {
           "id": "line-afe8587d114aa15a",
           "names": {
-            "en": "Valencian Variation, Ilundain Variation",
+            "en-US": "Valencian Variation, Ilundain Variation",
             "pt-BR": "Variante Valenciana, Variante Ilundain",
-            "es": "Variante Valenciana, Variante Ilundain"
+            "es-419": "Variante Valenciana, Variante Ilundain",
+            "en-GB": "Valencian Variation, Ilundain Variation",
+            "es-ES": "Variante Valenciana, Variante Ilundain",
+            "pt-PT": "Variante Valenciana, Variante Ilundain",
+            "de": "Valencianische Variante, Ilundain-Variante",
+            "fr": "Variante valencienne, Variante Ilundain",
+            "it": "Variante valenciana, Variante Ilundain"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Valencian Variation, Ilundain Variation",
@@ -330,17 +504,29 @@
     },
     {
       "names": {
-        "en": "Main",
+        "en-US": "Main",
         "pt-BR": "Principal",
-        "es": "Principal"
+        "es-419": "Principal",
+        "en-GB": "Main",
+        "es-ES": "Principal",
+        "pt-PT": "Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-5411720c9eab1c3b",
           "names": {
-            "en": "Scandinavian Defense",
+            "en-US": "Scandinavian Defense",
             "pt-BR": "Defesa Escandinava",
-            "es": "Defensa Escandinava"
+            "es-419": "Defensa Escandinava",
+            "en-GB": "Scandinavian Defence",
+            "es-ES": "Defensa Escandinava",
+            "pt-PT": "Defesa Escandinava",
+            "de": "Skandinavische Verteidigung",
+            "fr": "Défense scandinave",
+            "it": "Difesa scandinava"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense",
@@ -350,9 +536,15 @@
         {
           "id": "line-55fda045cdba304a",
           "names": {
-            "en": "Scandinavian Defense",
+            "en-US": "Scandinavian Defense",
             "pt-BR": "Defesa Escandinava",
-            "es": "Defensa Escandinava"
+            "es-419": "Defensa Escandinava",
+            "en-GB": "Scandinavian Defence",
+            "es-ES": "Defensa Escandinava",
+            "pt-PT": "Defesa Escandinava",
+            "de": "Skandinavische Verteidigung",
+            "fr": "Défense scandinave",
+            "it": "Difesa scandinava"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense",
@@ -363,17 +555,29 @@
     },
     {
       "names": {
-        "en": "Richter Variation",
+        "en-US": "Richter Variation",
         "pt-BR": "Variante Richter",
-        "es": "Variante Richter"
+        "es-419": "Variante Richter",
+        "en-GB": "Richter Variation",
+        "es-ES": "Variante Richter",
+        "pt-PT": "Variante Richter",
+        "de": "Richter-Variante",
+        "fr": "Variante Richter",
+        "it": "Variante Richter"
       },
       "lines": [
         {
           "id": "line-e1b3251e1df10db3",
           "names": {
-            "en": "Richter Variation",
+            "en-US": "Richter Variation",
             "pt-BR": "Variante Richter",
-            "es": "Variante Richter"
+            "es-419": "Variante Richter",
+            "en-GB": "Richter Variation",
+            "es-ES": "Variante Richter",
+            "pt-PT": "Variante Richter",
+            "de": "Richter-Variante",
+            "fr": "Variante Richter",
+            "it": "Variante Richter"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Richter Variation",
@@ -383,9 +587,15 @@
         {
           "id": "line-023006c51719c71c",
           "names": {
-            "en": "Richter Variation",
+            "en-US": "Richter Variation",
             "pt-BR": "Variante Richter",
-            "es": "Variante Richter"
+            "es-419": "Variante Richter",
+            "en-GB": "Richter Variation",
+            "es-ES": "Variante Richter",
+            "pt-PT": "Variante Richter",
+            "de": "Richter-Variante",
+            "fr": "Variante Richter",
+            "it": "Variante Richter"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Richter Variation",
@@ -396,17 +606,29 @@
     },
     {
       "names": {
-        "en": "Schiller-Pytel Variation",
+        "en-US": "Schiller-Pytel Variation",
         "pt-BR": "Variante Schiller-Pytel",
-        "es": "Variante Schiller-Pytel"
+        "es-419": "Variante Schiller-Pytel",
+        "en-GB": "Schiller-Pytel Variation",
+        "es-ES": "Variante Schiller-Pytel",
+        "pt-PT": "Variante Schiller-Pytel",
+        "de": "Schiller-Pytel-Variante",
+        "fr": "Variante Schiller-Pytel",
+        "it": "Variante Schiller-Pytel"
       },
       "lines": [
         {
           "id": "line-e4fa983e35fb35fa",
           "names": {
-            "en": "Schiller-Pytel Variation, Modern Variation",
+            "en-US": "Schiller-Pytel Variation, Modern Variation",
             "pt-BR": "Variante Schiller-Pytel, Variante Moderna",
-            "es": "Variante Schiller-Pytel, Variante Moderna"
+            "es-419": "Variante Schiller-Pytel, Variante Moderna",
+            "en-GB": "Schiller-Pytel Variation, Modern Variation",
+            "es-ES": "Variante Schiller-Pytel, Variante Moderna",
+            "pt-PT": "Variante Schiller-Pytel, Variante Moderna",
+            "de": "Schiller-Pytel-Variante, Moderne Variante",
+            "fr": "Variante Schiller-Pytel, Variante moderne",
+            "it": "Variante Schiller-Pytel, Variante moderna"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Schiller-Pytel Variation, Modern Variation",
@@ -416,9 +638,15 @@
         {
           "id": "line-84a862b4bd287f0c",
           "names": {
-            "en": "Schiller-Pytel Variation",
+            "en-US": "Schiller-Pytel Variation",
             "pt-BR": "Variante Schiller-Pytel",
-            "es": "Variante Schiller-Pytel"
+            "es-419": "Variante Schiller-Pytel",
+            "en-GB": "Schiller-Pytel Variation",
+            "es-ES": "Variante Schiller-Pytel",
+            "pt-PT": "Variante Schiller-Pytel",
+            "de": "Schiller-Pytel-Variante",
+            "fr": "Variante Schiller-Pytel",
+            "it": "Variante Schiller-Pytel"
           },
           "eco": "B01",
           "opening": "Scandinavian Defense: Schiller-Pytel Variation",
@@ -432,9 +660,15 @@
     {
       "id": "line-dbdd1ade8aa90dc3",
       "names": {
-        "en": "Blackburne Gambit",
+        "en-US": "Blackburne Gambit",
         "pt-BR": "Gambito Blackburne",
-        "es": "Gambito Blackburne"
+        "es-419": "Gambito Blackburne",
+        "en-GB": "Blackburne Gambit",
+        "es-ES": "Gambito Blackburne",
+        "pt-PT": "Gambito Blackburne",
+        "de": "Blackburne-Gambit",
+        "fr": "Gambit Blackburne",
+        "it": "Gambetto Blackburne"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Blackburne Gambit",
@@ -444,9 +678,15 @@
     {
       "id": "line-bddf4bd17e468dbf",
       "names": {
-        "en": "Blackburne-Kloosterboer Gambit",
+        "en-US": "Blackburne-Kloosterboer Gambit",
         "pt-BR": "Gambito Blackburne-Kloosterboer",
-        "es": "Gambito Blackburne-Kloosterboer"
+        "es-419": "Gambito Blackburne-Kloosterboer",
+        "en-GB": "Blackburne-Kloosterboer Gambit",
+        "es-ES": "Gambito Blackburne-Kloosterboer",
+        "pt-PT": "Gambito Blackburne-Kloosterboer",
+        "de": "Blackburne-Kloosterboer-Gambit",
+        "fr": "Gambit Blackburne-Kloosterboer",
+        "it": "Gambetto Blackburne-Kloosterboer"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Blackburne-Kloosterboer Gambit",
@@ -456,9 +696,15 @@
     {
       "id": "line-802fc6ad5b4aef59",
       "names": {
-        "en": "Boehnke Gambit",
+        "en-US": "Boehnke Gambit",
         "pt-BR": "Gambito Boehnke",
-        "es": "Gambito Boehnke"
+        "es-419": "Gambito Boehnke",
+        "en-GB": "Boehnke Gambit",
+        "es-ES": "Gambito Boehnke",
+        "pt-PT": "Gambito Boehnke",
+        "de": "Boehnke-Gambit",
+        "fr": "Gambit Boehnke",
+        "it": "Gambetto Boehnke"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Boehnke Gambit",
@@ -468,9 +714,15 @@
     {
       "id": "line-6a8fb9be7339e24d",
       "names": {
-        "en": "Bronstein Variation",
+        "en-US": "Bronstein Variation",
         "pt-BR": "Variante Bronstein",
-        "es": "Variante Bronstein"
+        "es-419": "Variante Bronstein",
+        "en-GB": "Bronstein Variation",
+        "es-ES": "Variante Bronstein",
+        "pt-PT": "Variante Bronstein",
+        "de": "Bronstein-Variante",
+        "fr": "Variante Bronstein",
+        "it": "Variante Bronstein"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Bronstein Variation",
@@ -480,9 +732,15 @@
     {
       "id": "line-344466e1da232232",
       "names": {
-        "en": "Classical Variation",
+        "en-US": "Classical Variation",
         "pt-BR": "Variante Clássica",
-        "es": "Variante Clásica"
+        "es-419": "Variante Clásica",
+        "en-GB": "Classical Variation",
+        "es-ES": "Variante Clásica",
+        "pt-PT": "Variante Clássica",
+        "de": "Klassische Variante",
+        "fr": "Variante classique",
+        "it": "Variante classica"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Classical Variation",
@@ -492,9 +750,15 @@
     {
       "id": "line-e3e6330493a8b892",
       "names": {
-        "en": "Grünfeld Variation",
+        "en-US": "Grünfeld Variation",
         "pt-BR": "Variante Grünfeld",
-        "es": "Variante Grünfeld"
+        "es-419": "Variante Grünfeld",
+        "en-GB": "Grünfeld Variation",
+        "es-ES": "Variante Grünfeld",
+        "pt-PT": "Variante Grünfeld",
+        "de": "Grünfeld-Variante",
+        "fr": "Variante Grünfeld",
+        "it": "Variante Grünfeld"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Grünfeld Variation",
@@ -504,9 +768,15 @@
     {
       "id": "line-21386ca399459fb1",
       "names": {
-        "en": "Gubinsky-Melts Defense",
+        "en-US": "Gubinsky-Melts Defense",
         "pt-BR": "Defesa Gubinsky-Melts",
-        "es": "Defensa Gubinsky-Melts"
+        "es-419": "Defensa Gubinsky-Melts",
+        "en-GB": "Gubinsky-Melts Defence",
+        "es-ES": "Defensa Gubinsky-Melts",
+        "pt-PT": "Defesa Gubinsky-Melts",
+        "de": "Gubinsky-Melts-Verteidigung",
+        "fr": "Défense Gubinsky-Melts",
+        "it": "Difesa Gubinsky-Melts"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Gubinsky-Melts Defense",
@@ -516,9 +786,15 @@
     {
       "id": "line-99354987835b7253",
       "names": {
-        "en": "Icelandic-Palme Gambit",
+        "en-US": "Icelandic-Palme Gambit",
         "pt-BR": "Gambito Islandês-Palme",
-        "es": "Gambito Islandés-Palme"
+        "es-419": "Gambito Islandés-Palme",
+        "en-GB": "Icelandic-Palme Gambit",
+        "es-ES": "Gambito Islandés-Palme",
+        "pt-PT": "Gambito Islandês-Palme",
+        "de": "Isländisch-Palme-Gambit",
+        "fr": "Gambit islandais-Palme",
+        "it": "Gambetto islandese-Palme"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Icelandic-Palme Gambit",
@@ -528,9 +804,15 @@
     {
       "id": "line-9a93adad449185ba",
       "names": {
-        "en": "Kiel Variation",
+        "en-US": "Kiel Variation",
         "pt-BR": "Variante Kiel",
-        "es": "Variante Kiel"
+        "es-419": "Variante Kiel",
+        "en-GB": "Kiel Variation",
+        "es-ES": "Variante Kiel",
+        "pt-PT": "Variante Kiel",
+        "de": "Kiel-Variante",
+        "fr": "Variante Kiel",
+        "it": "Variante Kiel"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Kiel Variation",
@@ -540,9 +822,15 @@
     {
       "id": "line-76d7aa419048bc4d",
       "names": {
-        "en": "Kloosterboer Gambit",
+        "en-US": "Kloosterboer Gambit",
         "pt-BR": "Gambito Kloosterboer",
-        "es": "Gambito Kloosterboer"
+        "es-419": "Gambito Kloosterboer",
+        "en-GB": "Kloosterboer Gambit",
+        "es-ES": "Gambito Kloosterboer",
+        "pt-PT": "Gambito Kloosterboer",
+        "de": "Kloosterboer-Gambit",
+        "fr": "Gambit Kloosterboer",
+        "it": "Gambetto Kloosterboer"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Kloosterboer Gambit",
@@ -552,9 +840,15 @@
     {
       "id": "line-3028d08238975972",
       "names": {
-        "en": "Kádas Gambit",
+        "en-US": "Kádas Gambit",
         "pt-BR": "Gambito Kádas",
-        "es": "Gambito Kádas"
+        "es-419": "Gambito Kádas",
+        "en-GB": "Kádas Gambit",
+        "es-ES": "Gambito Kádas",
+        "pt-PT": "Gambito Kádas",
+        "de": "Kádas-Gambit",
+        "fr": "Gambit Kádas",
+        "it": "Gambetto Kádas"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Kádas Gambit",
@@ -564,9 +858,15 @@
     {
       "id": "line-4ccf498c99401546",
       "names": {
-        "en": "Lasker Variation",
+        "en-US": "Lasker Variation",
         "pt-BR": "Variante Lasker",
-        "es": "Variante Lasker"
+        "es-419": "Variante Lasker",
+        "en-GB": "Lasker Variation",
+        "es-ES": "Variante Lasker",
+        "pt-PT": "Variante Lasker",
+        "de": "Lasker-Variante",
+        "fr": "Variante Lasker",
+        "it": "Variante Lasker"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Lasker Variation",
@@ -576,9 +876,15 @@
     {
       "id": "line-f3b8cf53009e83d1",
       "names": {
-        "en": "Marshall Variation",
+        "en-US": "Marshall Variation",
         "pt-BR": "Variante Marshall",
-        "es": "Variante Marshall"
+        "es-419": "Variante Marshall",
+        "en-GB": "Marshall Variation",
+        "es-ES": "Variante Marshall",
+        "pt-PT": "Variante Marshall",
+        "de": "Marshall-Variante",
+        "fr": "Variante Marshall",
+        "it": "Variante Marshall"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Marshall Variation",
@@ -588,9 +894,15 @@
     {
       "id": "line-646d3fec78796b6c",
       "names": {
-        "en": "Mieses-Kotrč Variation",
+        "en-US": "Mieses-Kotrč Variation",
         "pt-BR": "Variante Mieses-Kotrč",
-        "es": "Variante Mieses-Kotrč"
+        "es-419": "Variante Mieses-Kotrč",
+        "en-GB": "Mieses-Kotrč Variation",
+        "es-ES": "Variante Mieses-Kotrč",
+        "pt-PT": "Variante Mieses-Kotrč",
+        "de": "Mieses-Kotrč-Variante",
+        "fr": "Variante Mieses-Kotrč",
+        "it": "Variante Mieses-Kotrč"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Mieses-Kotrč Variation",
@@ -600,9 +912,15 @@
     {
       "id": "line-d5a7d1a96c7b7783",
       "names": {
-        "en": "Panov Transfer",
+        "en-US": "Panov Transfer",
         "pt-BR": "Transferência Panov",
-        "es": "Transferencia Panov"
+        "es-419": "Transferencia Panov",
+        "en-GB": "Panov Transfer",
+        "es-ES": "Transferencia Panov",
+        "pt-PT": "Transferência Panov",
+        "de": "Panow-Übergang",
+        "fr": "Transfert Panov",
+        "it": "Passaggio Panov"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Panov Transfer",
@@ -612,9 +930,15 @@
     {
       "id": "line-f470e93475b1bb2a",
       "names": {
-        "en": "Zilbermints Gambit",
+        "en-US": "Zilbermints Gambit",
         "pt-BR": "Gambito Zilbermints",
-        "es": "Gambito Zilbermints"
+        "es-419": "Gambito Zilbermints",
+        "en-GB": "Zilbermints Gambit",
+        "es-ES": "Gambito Zilbermints",
+        "pt-PT": "Gambito Zilbermints",
+        "de": "Zilbermints-Gambit",
+        "fr": "Gambit Zilbermints",
+        "it": "Gambetto Zilbermints"
       },
       "eco": "B01",
       "opening": "Scandinavian Defense: Zilbermints Gambit",

@@ -25,14 +25,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-from app.locales import load_locales  # noqa: E402  (after the path to the repository)
+from app.locales import DEFAULT_LOCALE, load_locales  # noqa: E402  (after the path to the repository)
 
 CONFIG = ROOT / "scripts" / "text_check.toml"
 VALE_CONFIG = ROOT / ".vale.ini"
 LOCALES = load_locales()
 LT_LANG = {code: locale.languagetool for code, locale in LOCALES.items() if locale.languagetool}
 # Headings that start another language inside an English README.
-README_SECTIONS = {"## Português (Brasil)": "pt-BR", "## Español": "es"}
+README_SECTIONS = {"## Português (Brasil)": "pt-BR", "## Español": "es-419"}
 SAN = re.compile(r"^(?:O-O(?:-O)?|[KQRBN]?[a-h]?[1-8]?x?[a-h][1-8](?:=[QRBN])?)[+#]?[!?]*$")
 # Markdown that is not prose, by what it stands for in a sentence: a code block (a paragraph
 # break), a word (inline code, URLs, a link whose text is a URL, snake_case and file names), a
@@ -129,8 +129,8 @@ def locale_of(path: Path) -> str:
     Returns:
         The locale code; English when the name has none.
     """
-    suffix = path.name.split(".")[-2] if path.name.count(".") > 1 else "en"
-    return suffix if suffix in LOCALES else "en"
+    suffix = path.name.split(".")[-2] if path.name.count(".") > 1 else DEFAULT_LOCALE
+    return suffix if suffix in LOCALES else DEFAULT_LOCALE
 
 
 def markdown_texts(path: Path) -> list[Text]:
@@ -282,7 +282,7 @@ def export(folder: Path) -> None:
         ]
         (folder / f"ui.{path.stem}.md").write_text("".join(lines), encoding="utf-8")
     for text in markdown_texts(ROOT / "README.md"):
-        if text.lang != "en":
+        if text.lang != DEFAULT_LOCALE:
             body = "".join(c for _, c, _ in text.parts)
             padded = "\n" * (text.first_line - 1) + body
             (folder / f"README.{text.lang}.md").write_text(padded, encoding="utf-8")

@@ -1,6 +1,6 @@
 # How to install Chess Trainer
 
-*[Em português](HOW_TO_INSTALL.pt-BR.md) · [En español](HOW_TO_INSTALL.es.md)*
+*[Em português](HOW_TO_INSTALL.pt-BR.md) · [En español](HOW_TO_INSTALL.es-419.md)*
 
 Chess Trainer is a free program that runs on your own computer. It needs no account and no
 internet to play. These steps take about five minutes.

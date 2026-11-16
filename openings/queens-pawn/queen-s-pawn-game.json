@@ -1,25 +1,43 @@
 {
   "id": "queen-s-pawn-game",
   "names": {
-    "en": "Queen's Pawn Game",
+    "en-US": "Queen's Pawn Game",
     "pt-BR": "Abertura do Peão da Dama",
-    "es": "Apertura de Peón de Dama"
+    "es-419": "Apertura de Peón de Dama",
+    "en-GB": "Queen's Pawn Game",
+    "es-ES": "Apertura de Peón de Dama",
+    "pt-PT": "Abertura do Peão da Dama",
+    "de": "Damenbauernspiel",
+    "fr": "Ouverture du pion dame",
+    "it": "Partita di donna"
   },
   "order": 19,
   "variants": [
     {
       "names": {
-        "en": "Torre Attack",
+        "en-US": "Torre Attack",
         "pt-BR": "Ataque Torre",
-        "es": "Ataque Torre"
+        "es-419": "Ataque Torre",
+        "en-GB": "Torre Attack",
+        "es-ES": "Ataque Torre",
+        "pt-PT": "Ataque Torre",
+        "de": "Torre-Angriff",
+        "fr": "Attaque Torre",
+        "it": "Attacco Torre"
       },
       "lines": [
         {
           "id": "line-0ef1d002dce5f4ac",
           "names": {
-            "en": "Torre Attack, Breyer Variation",
+            "en-US": "Torre Attack, Breyer Variation",
             "pt-BR": "Ataque Torre, Variante Breyer",
-            "es": "Ataque Torre, Variante Breyer"
+            "es-419": "Ataque Torre, Variante Breyer",
+            "en-GB": "Torre Attack, Breyer Variation",
+            "es-ES": "Ataque Torre, Variante Breyer",
+            "pt-PT": "Ataque Torre, Variante Breyer",
+            "de": "Torre-Angriff, Breyer-Variante",
+            "fr": "Attaque Torre, Variante Breyer",
+            "it": "Attacco Torre, Variante Breyer"
           },
           "eco": "A46",
           "opening": "Queen's Pawn Game: Torre Attack, Breyer Variation",
@@ -29,9 +47,15 @@
         {
           "id": "line-18ae500077e9afc3",
           "names": {
-            "en": "Torre Attack, Grünfeld Variation, Main Line",
+            "en-US": "Torre Attack, Grünfeld Variation, Main Line",
             "pt-BR": "Ataque Torre, Variante Grünfeld, Linha Principal",
-            "es": "Ataque Torre, Variante Grünfeld, Línea Principal"
+            "es-419": "Ataque Torre, Variante Grünfeld, Línea Principal",
+            "en-GB": "Torre Attack, Grünfeld Variation, Main Line",
+            "es-ES": "Ataque Torre, Variante Grünfeld, Línea Principal",
+            "pt-PT": "Ataque Torre, Variante Grünfeld, Linha Principal",
+            "de": "Torre-Angriff, Grünfeld-Variante, Hauptvariante",
+            "fr": "Attaque Torre, Variante Grünfeld, Ligne principale",
+            "it": "Attacco Torre, Variante Grünfeld, Linea principale"
           },
           "eco": "A48",
           "opening": "Queen's Pawn Game: Torre Attack, Grünfeld Variation, Main Line",
@@ -41,9 +65,15 @@
         {
           "id": "line-20807b9bae9b9038",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -53,9 +83,15 @@
         {
           "id": "line-df2bf45c8f0119a9",
           "names": {
-            "en": "Torre Attack, Gossip Variation",
+            "en-US": "Torre Attack, Gossip Variation",
             "pt-BR": "Ataque Torre, Variante Fofoca",
-            "es": "Ataque Torre, Variante Chisme"
+            "es-419": "Ataque Torre, Variante Chisme",
+            "en-GB": "Torre Attack, Gossip Variation",
+            "es-ES": "Ataque Torre, Variante Chisme",
+            "pt-PT": "Ataque Torre, Variante Mexerico",
+            "de": "Torre-Angriff, Klatsch-Variante",
+            "fr": "Attaque Torre, Variante du commérage",
+            "it": "Attacco Torre, Variante del pettegolezzo"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack, Gossip Variation",
@@ -65,9 +101,15 @@
         {
           "id": "line-0f7b5c5df5d4f572",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -77,9 +119,15 @@
         {
           "id": "line-2502b7cdfb661b45",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -89,9 +137,15 @@
         {
           "id": "line-eb211b6618db9b9a",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -101,9 +155,15 @@
         {
           "id": "line-11aa9320ed148799",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -113,9 +173,15 @@
         {
           "id": "line-32518b614cfb63b8",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -125,9 +191,15 @@
         {
           "id": "line-d0297e467723f73a",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -137,9 +209,15 @@
         {
           "id": "line-e7e480c323a992e9",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -149,9 +227,15 @@
         {
           "id": "line-483b17385f8aec47",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -161,9 +245,15 @@
         {
           "id": "line-0cf449ac6ccb28a5",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -173,9 +263,15 @@
         {
           "id": "line-9b6b2ae3b4fc6613",
           "names": {
-            "en": "Torre Attack",
+            "en-US": "Torre Attack",
             "pt-BR": "Ataque Torre",
-            "es": "Ataque Torre"
+            "es-419": "Ataque Torre",
+            "en-GB": "Torre Attack",
+            "es-ES": "Ataque Torre",
+            "pt-PT": "Ataque Torre",
+            "de": "Torre-Angriff",
+            "fr": "Attaque Torre",
+            "it": "Attacco Torre"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack",
@@ -185,9 +281,15 @@
         {
           "id": "line-9f3441a8ef8d2570",
           "names": {
-            "en": "Torre Attack, Grünfeld Variation",
+            "en-US": "Torre Attack, Grünfeld Variation",
             "pt-BR": "Ataque Torre, Variante Grünfeld",
-            "es": "Ataque Torre, Variante Grünfeld"
+            "es-419": "Ataque Torre, Variante Grünfeld",
+            "en-GB": "Torre Attack, Grünfeld Variation",
+            "es-ES": "Ataque Torre, Variante Grünfeld",
+            "pt-PT": "Ataque Torre, Variante Grünfeld",
+            "de": "Torre-Angriff, Grünfeld-Variante",
+            "fr": "Attaque Torre, Variante Grünfeld",
+            "it": "Attacco Torre, Variante Grünfeld"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack, Grünfeld Variation",
@@ -197,9 +299,15 @@
         {
           "id": "line-612c7bbdf72fa7ce",
           "names": {
-            "en": "Torre Attack, Grünfeld Variation",
+            "en-US": "Torre Attack, Grünfeld Variation",
             "pt-BR": "Ataque Torre, Variante Grünfeld",
-            "es": "Ataque Torre, Variante Grünfeld"
+            "es-419": "Ataque Torre, Variante Grünfeld",
+            "en-GB": "Torre Attack, Grünfeld Variation",
+            "es-ES": "Ataque Torre, Variante Grünfeld",
+            "pt-PT": "Ataque Torre, Variante Grünfeld",
+            "de": "Torre-Angriff, Grünfeld-Variante",
+            "fr": "Attaque Torre, Variante Grünfeld",
+            "it": "Attacco Torre, Variante Grünfeld"
           },
           "eco": "D03",
           "opening": "Queen's Pawn Game: Torre Attack, Grünfeld Variation",
@@ -210,17 +318,29 @@
     },
     {
       "names": {
-        "en": "Colle System",
+        "en-US": "Colle System",
         "pt-BR": "Sistema Colle",
-        "es": "Sistema Colle"
+        "es-419": "Sistema Colle",
+        "en-GB": "Colle System",
+        "es-ES": "Sistema Colle",
+        "pt-PT": "Sistema Colle",
+        "de": "Colle-System",
+        "fr": "Système Colle",
+        "it": "Sistema Colle"
       },
       "lines": [
         {
           "id": "line-6da73b1de6b914be",
           "names": {
-            "en": "Colle System",
+            "en-US": "Colle System",
             "pt-BR": "Sistema Colle",
-            "es": "Sistema Colle"
+            "es-419": "Sistema Colle",
+            "en-GB": "Colle System",
+            "es-ES": "Sistema Colle",
+            "pt-PT": "Sistema Colle",
+            "de": "Colle-System",
+            "fr": "Système Colle",
+            "it": "Sistema Colle"
           },
           "eco": "D05",
           "opening": "Queen's Pawn Game: Colle System",
@@ -230,9 +350,15 @@
         {
           "id": "line-f667e420b45a2799",
           "names": {
-            "en": "Colle System, Traditional Colle",
+            "en-US": "Colle System, Traditional Colle",
             "pt-BR": "Sistema Colle, Colle Tradicional",
-            "es": "Sistema Colle, Colle Tradicional"
+            "es-419": "Sistema Colle, Colle Tradicional",
+            "en-GB": "Colle System, Traditional Colle",
+            "es-ES": "Sistema Colle, Colle Tradicional",
+            "pt-PT": "Sistema Colle, Colle Tradicional",
+            "de": "Colle-System, Traditionelles Colle",
+            "fr": "Système Colle, Colle traditionnel",
+            "it": "Sistema Colle, Colle tradizionale"
           },
           "eco": "D05",
           "opening": "Queen's Pawn Game: Colle System, Traditional Colle",
@@ -242,9 +368,15 @@
         {
           "id": "line-9a3ca625324a0c3a",
           "names": {
-            "en": "Colle System",
+            "en-US": "Colle System",
             "pt-BR": "Sistema Colle",
-            "es": "Sistema Colle"
+            "es-419": "Sistema Colle",
+            "en-GB": "Colle System",
+            "es-ES": "Sistema Colle",
+            "pt-PT": "Sistema Colle",
+            "de": "Colle-System",
+            "fr": "Système Colle",
+            "it": "Sistema Colle"
           },
           "eco": "D04",
           "opening": "Queen's Pawn Game: Colle System",
@@ -254,9 +386,15 @@
         {
           "id": "line-90371a5d0c330c44",
           "names": {
-            "en": "Colle System, Anti-Colle",
+            "en-US": "Colle System, Anti-Colle",
             "pt-BR": "Sistema Colle, Anti-Colle",
-            "es": "Sistema Colle, Anti-Colle"
+            "es-419": "Sistema Colle, Anti-Colle",
+            "en-GB": "Colle System, Anti-Colle",
+            "es-ES": "Sistema Colle, Anti-Colle",
+            "pt-PT": "Sistema Colle, Anti-Colle",
+            "de": "Colle-System, Anti-Colle",
+            "fr": "Système Colle, Anti-Colle",
+            "it": "Sistema Colle, Anti-Colle"
           },
           "eco": "D04",
           "opening": "Queen's Pawn Game: Colle System, Anti-Colle",
@@ -266,9 +404,15 @@
         {
           "id": "line-ac47c9c8f73c9c58",
           "names": {
-            "en": "Colle System",
+            "en-US": "Colle System",
             "pt-BR": "Sistema Colle",
-            "es": "Sistema Colle"
+            "es-419": "Sistema Colle",
+            "en-GB": "Colle System",
+            "es-ES": "Sistema Colle",
+            "pt-PT": "Sistema Colle",
+            "de": "Colle-System",
+            "fr": "Système Colle",
+            "it": "Sistema Colle"
           },
           "eco": "D05",
           "opening": "Queen's Pawn Game: Colle System",
@@ -278,9 +422,15 @@
         {
           "id": "line-dcb71ec7b730c257",
           "names": {
-            "en": "Colle System",
+            "en-US": "Colle System",
             "pt-BR": "Sistema Colle",
-            "es": "Sistema Colle"
+            "es-419": "Sistema Colle",
+            "en-GB": "Colle System",
+            "es-ES": "Sistema Colle",
+            "pt-PT": "Sistema Colle",
+            "de": "Colle-System",
+            "fr": "Système Colle",
+            "it": "Sistema Colle"
           },
           "eco": "D05",
           "opening": "Queen's Pawn Game: Colle System",
@@ -290,9 +440,15 @@
         {
           "id": "line-0355b514b66a868c",
           "names": {
-            "en": "Colle System",
+            "en-US": "Colle System",
             "pt-BR": "Sistema Colle",
-            "es": "Sistema Colle"
+            "es-419": "Sistema Colle",
+            "en-GB": "Colle System",
+            "es-ES": "Sistema Colle",
+            "pt-PT": "Sistema Colle",
+            "de": "Colle-System",
+            "fr": "Système Colle",
+            "it": "Sistema Colle"
           },
           "eco": "D05",
           "opening": "Queen's Pawn Game: Colle System",
@@ -302,9 +458,15 @@
         {
           "id": "line-d8766e13180f1523",
           "names": {
-            "en": "Colle System",
+            "en-US": "Colle System",
             "pt-BR": "Sistema Colle",
-            "es": "Sistema Colle"
+            "es-419": "Sistema Colle",
+            "en-GB": "Colle System",
+            "es-ES": "Sistema Colle",
+            "pt-PT": "Sistema Colle",
+            "de": "Colle-System",
+            "fr": "Système Colle",
+            "it": "Sistema Colle"
           },
           "eco": "D05",
           "opening": "Queen's Pawn Game: Colle System",
@@ -314,9 +476,15 @@
         {
           "id": "line-97e9d14f246c6964",
           "names": {
-            "en": "Colle System",
+            "en-US": "Colle System",
             "pt-BR": "Sistema Colle",
-            "es": "Sistema Colle"
+            "es-419": "Sistema Colle",
+            "en-GB": "Colle System",
+            "es-ES": "Sistema Colle",
+            "pt-PT": "Sistema Colle",
+            "de": "Colle-System",
+            "fr": "Système Colle",
+            "it": "Sistema Colle"
           },
           "eco": "D05",
           "opening": "Queen's Pawn Game: Colle System",
@@ -326,9 +494,15 @@
         {
           "id": "line-030e8ec3f157e61f",
           "names": {
-            "en": "Colle System",
+            "en-US": "Colle System",
             "pt-BR": "Sistema Colle",
-            "es": "Sistema Colle"
+            "es-419": "Sistema Colle",
+            "en-GB": "Colle System",
+            "es-ES": "Sistema Colle",
+            "pt-PT": "Sistema Colle",
+            "de": "Colle-System",
+            "fr": "Système Colle",
+            "it": "Sistema Colle"
           },
           "eco": "D05",
           "opening": "Queen's Pawn Game: Colle System",
@@ -338,9 +512,15 @@
         {
           "id": "line-4e6e0d9823c081f6",
           "names": {
-            "en": "Colle System, Grünfeld Formation",
+            "en-US": "Colle System, Grünfeld Formation",
             "pt-BR": "Sistema Colle, Formação Grünfeld",
-            "es": "Sistema Colle, Formación Grünfeld"
+            "es-419": "Sistema Colle, Formación Grünfeld",
+            "en-GB": "Colle System, Grünfeld Formation",
+            "es-ES": "Sistema Colle, Formación Grünfeld",
+            "pt-PT": "Sistema Colle, Formação Grünfeld",
+            "de": "Colle-System, Grünfeld-Aufbau",
+            "fr": "Système Colle, Formation Grünfeld",
+            "it": "Sistema Colle, Formazione Grünfeld"
           },
           "eco": "D04",
           "opening": "Queen's Pawn Game: Colle System, Grünfeld Formation",
@@ -351,17 +531,29 @@
     },
     {
       "names": {
-        "en": "Chigorin Variation",
+        "en-US": "Chigorin Variation",
         "pt-BR": "Variante Chigorin",
-        "es": "Variante Chigorin"
+        "es-419": "Variante Chigorin",
+        "en-GB": "Chigorin Variation",
+        "es-ES": "Variante Chigorin",
+        "pt-PT": "Variante Chigorin",
+        "de": "Tschigorin-Variante",
+        "fr": "Variante Tchigorine",
+        "it": "Variante Čigorin"
       },
       "lines": [
         {
           "id": "line-f390d1b3824a01f1",
           "names": {
-            "en": "Chigorin Variation",
+            "en-US": "Chigorin Variation",
             "pt-BR": "Variante Chigorin",
-            "es": "Variante Chigorin"
+            "es-419": "Variante Chigorin",
+            "en-GB": "Chigorin Variation",
+            "es-ES": "Variante Chigorin",
+            "pt-PT": "Variante Chigorin",
+            "de": "Tschigorin-Variante",
+            "fr": "Variante Tchigorine",
+            "it": "Variante Čigorin"
           },
           "eco": "A45",
           "opening": "Queen's Pawn Game: Chigorin Variation",
@@ -371,9 +563,15 @@
         {
           "id": "line-0e3d8f55ed611da3",
           "names": {
-            "en": "Chigorin Variation",
+            "en-US": "Chigorin Variation",
             "pt-BR": "Variante Chigorin",
-            "es": "Variante Chigorin"
+            "es-419": "Variante Chigorin",
+            "en-GB": "Chigorin Variation",
+            "es-ES": "Variante Chigorin",
+            "pt-PT": "Variante Chigorin",
+            "de": "Tschigorin-Variante",
+            "fr": "Variante Tchigorine",
+            "it": "Variante Čigorin"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Chigorin Variation",
@@ -383,9 +581,15 @@
         {
           "id": "line-f7f036e5a887f94c",
           "names": {
-            "en": "Chigorin Variation, Alburt Defense",
+            "en-US": "Chigorin Variation, Alburt Defense",
             "pt-BR": "Variante Chigorin, Defesa Alburt",
-            "es": "Variante Chigorin, Defensa Alburt"
+            "es-419": "Variante Chigorin, Defensa Alburt",
+            "en-GB": "Chigorin Variation, Alburt Defence",
+            "es-ES": "Variante Chigorin, Defensa Alburt",
+            "pt-PT": "Variante Chigorin, Defesa Alburt",
+            "de": "Tschigorin-Variante, Alburt-Verteidigung",
+            "fr": "Variante Tchigorine, Défense Alburt",
+            "it": "Variante Čigorin, Difesa Alburt"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Chigorin Variation, Alburt Defense",
@@ -395,9 +599,15 @@
         {
           "id": "line-299a4786def548b8",
           "names": {
-            "en": "Chigorin Variation, Anti-Veresov",
+            "en-US": "Chigorin Variation, Anti-Veresov",
             "pt-BR": "Variante Chigorin, Anti-Veresov",
-            "es": "Variante Chigorin, Anti-Veresov"
+            "es-419": "Variante Chigorin, Anti-Veresov",
+            "en-GB": "Chigorin Variation, Anti-Veresov",
+            "es-ES": "Variante Chigorin, Anti-Veresov",
+            "pt-PT": "Variante Chigorin, Anti-Veresov",
+            "de": "Tschigorin-Variante, Anti-Weressow",
+            "fr": "Variante Tchigorine, Anti-Veressov",
+            "it": "Variante Čigorin, Anti-Veresov"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Chigorin Variation, Anti-Veresov",
@@ -407,9 +617,15 @@
         {
           "id": "line-91766d04dbc23957",
           "names": {
-            "en": "Chigorin Variation, Irish Gambit",
+            "en-US": "Chigorin Variation, Irish Gambit",
             "pt-BR": "Variante Chigorin, Gambito Irlandês",
-            "es": "Variante Chigorin, Gambito Irlandés"
+            "es-419": "Variante Chigorin, Gambito Irlandés",
+            "en-GB": "Chigorin Variation, Irish Gambit",
+            "es-ES": "Variante Chigorin, Gambito Irlandés",
+            "pt-PT": "Variante Chigorin, Gambito Irlandês",
+            "de": "Tschigorin-Variante, Irisches Gambit",
+            "fr": "Variante Tchigorine, Gambit irlandais",
+            "it": "Variante Čigorin, Gambetto irlandese"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Chigorin Variation, Irish Gambit",
@@ -419,9 +635,15 @@
         {
           "id": "line-d93a825b652faa59",
           "names": {
-            "en": "Chigorin Variation, Shaviliuk Gambit",
+            "en-US": "Chigorin Variation, Shaviliuk Gambit",
             "pt-BR": "Variante Chigorin, Gambito Shaviliuk",
-            "es": "Variante Chigorin, Gambito Shaviliuk"
+            "es-419": "Variante Chigorin, Gambito Shaviliuk",
+            "en-GB": "Chigorin Variation, Shaviliuk Gambit",
+            "es-ES": "Variante Chigorin, Gambito Shaviliuk",
+            "pt-PT": "Variante Chigorin, Gambito Shaviliuk",
+            "de": "Tschigorin-Variante, Shaviliuk-Gambit",
+            "fr": "Variante Tchigorine, Gambit Shaviliuk",
+            "it": "Variante Čigorin, Gambetto Shaviliuk"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Chigorin Variation, Shaviliuk Gambit",
@@ -431,9 +653,15 @@
         {
           "id": "line-51b4466f95baa540",
           "names": {
-            "en": "Chigorin Variation",
+            "en-US": "Chigorin Variation",
             "pt-BR": "Variante Chigorin",
-            "es": "Variante Chigorin"
+            "es-419": "Variante Chigorin",
+            "en-GB": "Chigorin Variation",
+            "es-ES": "Variante Chigorin",
+            "pt-PT": "Variante Chigorin",
+            "de": "Tschigorin-Variante",
+            "fr": "Variante Tchigorine",
+            "it": "Variante Čigorin"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Chigorin Variation",
@@ -443,9 +671,15 @@
         {
           "id": "line-26b3b357a02798d5",
           "names": {
-            "en": "Chigorin Variation, Shropshire Defense",
+            "en-US": "Chigorin Variation, Shropshire Defense",
             "pt-BR": "Variante Chigorin, Defesa Shropshire",
-            "es": "Variante Chigorin, Defensa Shropshire"
+            "es-419": "Variante Chigorin, Defensa Shropshire",
+            "en-GB": "Chigorin Variation, Shropshire Defence",
+            "es-ES": "Variante Chigorin, Defensa Shropshire",
+            "pt-PT": "Variante Chigorin, Defesa Shropshire",
+            "de": "Tschigorin-Variante, Shropshire-Verteidigung",
+            "fr": "Variante Tchigorine, Défense Shropshire",
+            "it": "Variante Čigorin, Difesa Shropshire"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Chigorin Variation, Shropshire Defense",
@@ -455,9 +689,15 @@
         {
           "id": "line-65d36e02a60b0069",
           "names": {
-            "en": "Chigorin Variation",
+            "en-US": "Chigorin Variation",
             "pt-BR": "Variante Chigorin",
-            "es": "Variante Chigorin"
+            "es-419": "Variante Chigorin",
+            "en-GB": "Chigorin Variation",
+            "es-ES": "Variante Chigorin",
+            "pt-PT": "Variante Chigorin",
+            "de": "Tschigorin-Variante",
+            "fr": "Variante Tchigorine",
+            "it": "Variante Čigorin"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: Chigorin Variation",
@@ -467,9 +707,15 @@
         {
           "id": "line-808323d7cf8d22a6",
           "names": {
-            "en": "Chigorin Variation, Fianchetto Defense",
+            "en-US": "Chigorin Variation, Fianchetto Defense",
             "pt-BR": "Variante Chigorin, Defesa do Fianqueto",
-            "es": "Variante Chigorin, Defensa del Fianchetto"
+            "es-419": "Variante Chigorin, Defensa del Fianchetto",
+            "en-GB": "Chigorin Variation, Fianchetto Defence",
+            "es-ES": "Variante Chigorin, Defensa del Fianchetto",
+            "pt-PT": "Variante Chigorin, Defesa do Fianqueto",
+            "de": "Tschigorin-Variante, Fianchetto-Verteidigung",
+            "fr": "Variante Tchigorine, Défense en fianchetto",
+            "it": "Variante Čigorin, Difesa in fianchetto"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Chigorin Variation, Fianchetto Defense",
@@ -480,17 +726,29 @@
     },
     {
       "names": {
-        "en": "London System",
+        "en-US": "London System",
         "pt-BR": "Sistema London",
-        "es": "Sistema Londres"
+        "es-419": "Sistema Londres",
+        "en-GB": "London System",
+        "es-ES": "Sistema Londres",
+        "pt-PT": "Sistema London",
+        "de": "Londoner System",
+        "fr": "Système de Londres",
+        "it": "Sistema di Londra"
       },
       "lines": [
         {
           "id": "line-fd7fa61f664c5d60",
           "names": {
-            "en": "London System",
+            "en-US": "London System",
             "pt-BR": "Sistema London",
-            "es": "Sistema Londres"
+            "es-419": "Sistema Londres",
+            "en-GB": "London System",
+            "es-ES": "Sistema Londres",
+            "pt-PT": "Sistema London",
+            "de": "Londoner System",
+            "fr": "Système de Londres",
+            "it": "Sistema di Londra"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: London System",
@@ -500,9 +758,15 @@
         {
           "id": "line-63d9827573db7446",
           "names": {
-            "en": "London System",
+            "en-US": "London System",
             "pt-BR": "Sistema London",
-            "es": "Sistema Londres"
+            "es-419": "Sistema Londres",
+            "en-GB": "London System",
+            "es-ES": "Sistema Londres",
+            "pt-PT": "Sistema London",
+            "de": "Londoner System",
+            "fr": "Système de Londres",
+            "it": "Sistema di Londra"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: London System",
@@ -512,9 +776,15 @@
         {
           "id": "line-fb0efc0acbb310d0",
           "names": {
-            "en": "London System",
+            "en-US": "London System",
             "pt-BR": "Sistema London",
-            "es": "Sistema Londres"
+            "es-419": "Sistema Londres",
+            "en-GB": "London System",
+            "es-ES": "Sistema Londres",
+            "pt-PT": "Sistema London",
+            "de": "Londoner System",
+            "fr": "Système de Londres",
+            "it": "Sistema di Londra"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: London System",
@@ -524,9 +794,15 @@
         {
           "id": "line-56efdb975ffe43ef",
           "names": {
-            "en": "London System",
+            "en-US": "London System",
             "pt-BR": "Sistema London",
-            "es": "Sistema Londres"
+            "es-419": "Sistema Londres",
+            "en-GB": "London System",
+            "es-ES": "Sistema Londres",
+            "pt-PT": "Sistema London",
+            "de": "Londoner System",
+            "fr": "Système de Londres",
+            "it": "Sistema di Londra"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: London System",
@@ -536,9 +812,15 @@
         {
           "id": "line-b62399040b1170c8",
           "names": {
-            "en": "London System, with e6",
+            "en-US": "London System, with e6",
             "pt-BR": "Sistema London, com e6",
-            "es": "Sistema Londres, con e6"
+            "es-419": "Sistema Londres, con e6",
+            "en-GB": "London System, with e6",
+            "es-ES": "Sistema Londres, con e6",
+            "pt-PT": "Sistema Londres, com e6",
+            "de": "Londoner System, mit e6",
+            "fr": "Système de Londres, avec e6",
+            "it": "Sistema di Londra, con e6"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: London System, with e6",
@@ -548,9 +830,15 @@
         {
           "id": "line-2126ab298bfe28c7",
           "names": {
-            "en": "London System, with e6",
+            "en-US": "London System, with e6",
             "pt-BR": "Sistema London, com e6",
-            "es": "Sistema Londres, con e6"
+            "es-419": "Sistema Londres, con e6",
+            "en-GB": "London System, with e6",
+            "es-ES": "Sistema Londres, con e6",
+            "pt-PT": "Sistema Londres, com e6",
+            "de": "Londoner System, mit e6",
+            "fr": "Système de Londres, avec e6",
+            "it": "Sistema di Londra, con e6"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: London System, with e6",
@@ -560,9 +848,15 @@
         {
           "id": "line-7cbfc5fa250c3d55",
           "names": {
-            "en": "London System, Pterodactyl Variation",
+            "en-US": "London System, Pterodactyl Variation",
             "pt-BR": "Sistema London, Variante Pterodáctilo",
-            "es": "Sistema Londres, Variante Pterodáctilo"
+            "es-419": "Sistema Londres, Variante Pterodáctilo",
+            "en-GB": "London System, Pterodactyl Variation",
+            "es-ES": "Sistema Londres, Variante Pterodáctilo",
+            "pt-PT": "Sistema Londres, Variante Pterodáctilo",
+            "de": "Londoner System, Pterodaktylus-Variante",
+            "fr": "Système de Londres, Variante du ptérodactyle",
+            "it": "Sistema di Londra, Variante dello pterodattilo"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: London System, Pterodactyl Variation",
@@ -573,17 +867,29 @@
     },
     {
       "names": {
-        "en": "Accelerated London System",
+        "en-US": "Accelerated London System",
         "pt-BR": "Sistema London Acelerado",
-        "es": "Sistema Londres Acelerado"
+        "es-419": "Sistema Londres Acelerado",
+        "en-GB": "Accelerated London System",
+        "es-ES": "Sistema Londres Acelerado",
+        "pt-PT": "Sistema Londres Acelerado",
+        "de": "Beschleunigtes Londoner System",
+        "fr": "Système de Londres accéléré",
+        "it": "Sistema di Londra accelerato"
       },
       "lines": [
         {
           "id": "line-3ca195745cbdd957",
           "names": {
-            "en": "Accelerated London System",
+            "en-US": "Accelerated London System",
             "pt-BR": "Sistema London Acelerado",
-            "es": "Sistema Londres Acelerado"
+            "es-419": "Sistema Londres Acelerado",
+            "en-GB": "Accelerated London System",
+            "es-ES": "Sistema Londres Acelerado",
+            "pt-PT": "Sistema Londres Acelerado",
+            "de": "Beschleunigtes Londoner System",
+            "fr": "Système de Londres accéléré",
+            "it": "Sistema di Londra accelerato"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Accelerated London System",
@@ -593,9 +899,15 @@
         {
           "id": "line-47f7210b0f743e30",
           "names": {
-            "en": "Accelerated London System, Steinitz Countergambit",
+            "en-US": "Accelerated London System, Steinitz Countergambit",
             "pt-BR": "Sistema London Acelerado, Contragambito Steinitz",
-            "es": "Sistema Londres Acelerado, Contragambito Steinitz"
+            "es-419": "Sistema Londres Acelerado, Contragambito Steinitz",
+            "en-GB": "Accelerated London System, Steinitz Countergambit",
+            "es-ES": "Sistema Londres Acelerado, Contragambito Steinitz",
+            "pt-PT": "Sistema Londres Acelerado, Contragambito Steinitz",
+            "de": "Beschleunigtes Londoner System, Steinitz-Gegengambit",
+            "fr": "Système de Londres accéléré, Contre-gambit Steinitz",
+            "it": "Sistema di Londra accelerato, Controgambetto Steinitz"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit",
@@ -605,9 +917,15 @@
         {
           "id": "line-fd560c01ffca4544",
           "names": {
-            "en": "Accelerated London System, Steinitz Countergambit Accepted",
+            "en-US": "Accelerated London System, Steinitz Countergambit Accepted",
             "pt-BR": "Sistema London Acelerado, Contragambito Steinitz Aceito",
-            "es": "Sistema Londres Acelerado, Contragambito Steinitz Aceptado"
+            "es-419": "Sistema Londres Acelerado, Contragambito Steinitz Aceptado",
+            "en-GB": "Accelerated London System, Steinitz Countergambit Accepted",
+            "es-ES": "Sistema Londres Acelerado, Contragambito Steinitz Aceptado",
+            "pt-PT": "Sistema Londres Acelerado, Contragambito Steinitz Aceito",
+            "de": "Beschleunigtes Londoner System, Angenommenes Steinitz-Gegengambit",
+            "fr": "Système de Londres accéléré, Contre-gambit Steinitz accepté",
+            "it": "Sistema di Londra accelerato, Controgambetto Steinitz accettato"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit Accepted",
@@ -617,9 +935,15 @@
         {
           "id": "line-3dc5a41548508da4",
           "names": {
-            "en": "Accelerated London System, Steinitz Countergambit, Morris Countergambit",
+            "en-US": "Accelerated London System, Steinitz Countergambit, Morris Countergambit",
             "pt-BR": "Sistema London Acelerado, Contragambito Steinitz, Contragambito Morris",
-            "es": "Sistema Londres Acelerado, Contragambito Steinitz, Contragambito Morris"
+            "es-419": "Sistema Londres Acelerado, Contragambito Steinitz, Contragambito Morris",
+            "en-GB": "Accelerated London System, Steinitz Countergambit, Morris Countergambit",
+            "es-ES": "Sistema Londres Acelerado, Contragambito Steinitz, Contragambito Morris",
+            "pt-PT": "Sistema Londres Acelerado, Contragambito Steinitz, Contragambito Morris",
+            "de": "Beschleunigtes Londoner System, Steinitz-Gegengambit, Morris-Gegengambit",
+            "fr": "Système de Londres accéléré, Contre-gambit Steinitz, Contre-gambit Morris",
+            "it": "Sistema di Londra accelerato, Controgambetto Steinitz, Controgambetto Morris"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit, Morris Countergambit",
@@ -629,9 +953,15 @@
         {
           "id": "line-2d090871a5693fc8",
           "names": {
-            "en": "Accelerated London System, Steinitz Countergambit, Morris Countergambit Accepted",
+            "en-US": "Accelerated London System, Steinitz Countergambit, Morris Countergambit Accepted",
             "pt-BR": "Sistema London Acelerado, Contragambito Steinitz, Contragambito Morris Aceito",
-            "es": "Sistema Londres Acelerado, Contragambito Steinitz, Contragambito Morris Aceptado"
+            "es-419": "Sistema Londres Acelerado, Contragambito Steinitz, Contragambito Morris Aceptado",
+            "en-GB": "Accelerated London System, Steinitz Countergambit, Morris Countergambit Accepted",
+            "es-ES": "Sistema Londres Acelerado, Contragambito Steinitz, Contragambito Morris Aceptado",
+            "pt-PT": "Sistema Londres Acelerado, Contragambito Steinitz, Contragambito Morris Aceito",
+            "de": "Beschleunigtes Londoner System, Steinitz-Gegengambit, Angenommenes Morris-Gegengambit",
+            "fr": "Système de Londres accéléré, Contre-gambit Steinitz, Contre-gambit Morris accepté",
+            "it": "Sistema di Londra accelerato, Controgambetto Steinitz, Controgambetto Morris accettato"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit, Morris Countergambit Accepted",
@@ -642,17 +972,29 @@
     },
     {
       "names": {
-        "en": "Main",
+        "en-US": "Main",
         "pt-BR": "Principal",
-        "es": "Principal"
+        "es-419": "Principal",
+        "en-GB": "Main",
+        "es-ES": "Principal",
+        "pt-PT": "Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-1195e12519b16c17",
           "names": {
-            "en": "Queen's Pawn Game",
+            "en-US": "Queen's Pawn Game",
             "pt-BR": "Abertura do Peão da Dama",
-            "es": "Apertura de Peón de Dama"
+            "es-419": "Apertura de Peón de Dama",
+            "en-GB": "Queen's Pawn Game",
+            "es-ES": "Apertura de Peón de Dama",
+            "pt-PT": "Abertura do Peão da Dama",
+            "de": "Damenbauernspiel",
+            "fr": "Ouverture du pion dame",
+            "it": "Partita di donna"
           },
           "eco": "A40",
           "opening": "Queen's Pawn Game",
@@ -662,9 +1004,15 @@
         {
           "id": "line-e2c3c86e2fcae82f",
           "names": {
-            "en": "Queen's Pawn Game",
+            "en-US": "Queen's Pawn Game",
             "pt-BR": "Abertura do Peão da Dama",
-            "es": "Apertura de Peón de Dama"
+            "es-419": "Apertura de Peón de Dama",
+            "en-GB": "Queen's Pawn Game",
+            "es-ES": "Apertura de Peón de Dama",
+            "pt-PT": "Abertura do Peão da Dama",
+            "de": "Damenbauernspiel",
+            "fr": "Ouverture du pion dame",
+            "it": "Partita di donna"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game",
@@ -674,9 +1022,15 @@
         {
           "id": "line-43e28e84113c63d3",
           "names": {
-            "en": "Queen's Pawn Game",
+            "en-US": "Queen's Pawn Game",
             "pt-BR": "Abertura do Peão da Dama",
-            "es": "Apertura de Peón de Dama"
+            "es-419": "Apertura de Peón de Dama",
+            "en-GB": "Queen's Pawn Game",
+            "es-ES": "Apertura de Peón de Dama",
+            "pt-PT": "Abertura do Peão da Dama",
+            "de": "Damenbauernspiel",
+            "fr": "Ouverture du pion dame",
+            "it": "Partita di donna"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game",
@@ -686,9 +1040,15 @@
         {
           "id": "line-de9551f8b9c5589d",
           "names": {
-            "en": "Queen's Pawn Game",
+            "en-US": "Queen's Pawn Game",
             "pt-BR": "Abertura do Peão da Dama",
-            "es": "Apertura de Peón de Dama"
+            "es-419": "Apertura de Peón de Dama",
+            "en-GB": "Queen's Pawn Game",
+            "es-ES": "Apertura de Peón de Dama",
+            "pt-PT": "Abertura do Peão da Dama",
+            "de": "Damenbauernspiel",
+            "fr": "Ouverture du pion dame",
+            "it": "Partita di donna"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game",
@@ -698,9 +1058,15 @@
         {
           "id": "line-26f8a92b2c16dd2b",
           "names": {
-            "en": "Queen's Pawn Game",
+            "en-US": "Queen's Pawn Game",
             "pt-BR": "Abertura do Peão da Dama",
-            "es": "Apertura de Peón de Dama"
+            "es-419": "Apertura de Peón de Dama",
+            "en-GB": "Queen's Pawn Game",
+            "es-ES": "Apertura de Peón de Dama",
+            "pt-PT": "Abertura do Peão da Dama",
+            "de": "Damenbauernspiel",
+            "fr": "Ouverture du pion dame",
+            "it": "Partita di donna"
           },
           "eco": "A41",
           "opening": "Queen's Pawn Game",
@@ -711,17 +1077,29 @@
     },
     {
       "names": {
-        "en": "Barry Attack",
+        "en-US": "Barry Attack",
         "pt-BR": "Ataque Barry",
-        "es": "Ataque Barry"
+        "es-419": "Ataque Barry",
+        "en-GB": "Barry Attack",
+        "es-ES": "Ataque Barry",
+        "pt-PT": "Ataque Barry",
+        "de": "Barry-Angriff",
+        "fr": "Attaque Barry",
+        "it": "Attacco Barry"
       },
       "lines": [
         {
           "id": "line-65742a17c88a4cf1",
           "names": {
-            "en": "Barry Attack",
+            "en-US": "Barry Attack",
             "pt-BR": "Ataque Barry",
-            "es": "Ataque Barry"
+            "es-419": "Ataque Barry",
+            "en-GB": "Barry Attack",
+            "es-ES": "Ataque Barry",
+            "pt-PT": "Ataque Barry",
+            "de": "Barry-Angriff",
+            "fr": "Attaque Barry",
+            "it": "Attacco Barry"
           },
           "eco": "A48",
           "opening": "Queen's Pawn Game: Barry Attack",
@@ -731,9 +1109,15 @@
         {
           "id": "line-dc7ac9a90e91c1f4",
           "names": {
-            "en": "Barry Attack",
+            "en-US": "Barry Attack",
             "pt-BR": "Ataque Barry",
-            "es": "Ataque Barry"
+            "es-419": "Ataque Barry",
+            "en-GB": "Barry Attack",
+            "es-ES": "Ataque Barry",
+            "pt-PT": "Ataque Barry",
+            "de": "Barry-Angriff",
+            "fr": "Attaque Barry",
+            "it": "Attacco Barry"
           },
           "eco": "A48",
           "opening": "Queen's Pawn Game: Barry Attack",
@@ -743,9 +1127,15 @@
         {
           "id": "line-5ca7f0de317aa008",
           "names": {
-            "en": "Barry Attack, Tarzan Attack",
+            "en-US": "Barry Attack, Tarzan Attack",
             "pt-BR": "Ataque Barry, Ataque Tarzan",
-            "es": "Ataque Barry, Ataque Tarzan"
+            "es-419": "Ataque Barry, Ataque Tarzan",
+            "en-GB": "Barry Attack, Tarzan Attack",
+            "es-ES": "Ataque Barry, Ataque Tarzan",
+            "pt-PT": "Ataque Barry, Ataque Tarzan",
+            "de": "Barry-Angriff, Tarzan-Angriff",
+            "fr": "Attaque Barry, Attaque Tarzan",
+            "it": "Attacco Barry, Attacco Tarzan"
           },
           "eco": "A48",
           "opening": "Queen's Pawn Game: Barry Attack, Tarzan Attack",
@@ -755,9 +1145,15 @@
         {
           "id": "line-a799e0920b0f8cb8",
           "names": {
-            "en": "Barry Attack, Grünfeld Variation",
+            "en-US": "Barry Attack, Grünfeld Variation",
             "pt-BR": "Ataque Barry, Variante Grünfeld",
-            "es": "Ataque Barry, Variante Grünfeld"
+            "es-419": "Ataque Barry, Variante Grünfeld",
+            "en-GB": "Barry Attack, Grünfeld Variation",
+            "es-ES": "Ataque Barry, Variante Grünfeld",
+            "pt-PT": "Ataque Barry, Variante Grünfeld",
+            "de": "Barry-Angriff, Grünfeld-Variante",
+            "fr": "Attaque Barry, Variante Grünfeld",
+            "it": "Attacco Barry, Variante Grünfeld"
           },
           "eco": "A48",
           "opening": "Queen's Pawn Game: Barry Attack, Grünfeld Variation",
@@ -768,17 +1164,29 @@
     },
     {
       "names": {
-        "en": "Symmetrical Variation",
+        "en-US": "Symmetrical Variation",
         "pt-BR": "Variante Simétrica",
-        "es": "Variante Simétrica"
+        "es-419": "Variante Simétrica",
+        "en-GB": "Symmetrical Variation",
+        "es-ES": "Variante Simétrica",
+        "pt-PT": "Variante Simétrica",
+        "de": "Symmetrische Variante",
+        "fr": "Variante symétrique",
+        "it": "Variante simmetrica"
       },
       "lines": [
         {
           "id": "line-dee2695a1f198a6d",
           "names": {
-            "en": "Symmetrical Variation, Pseudo-Catalan",
+            "en-US": "Symmetrical Variation, Pseudo-Catalan",
             "pt-BR": "Variante Simétrica, Pseudo-Catalã",
-            "es": "Variante Simétrica, Pseudocatalana"
+            "es-419": "Variante Simétrica, Pseudocatalana",
+            "en-GB": "Symmetrical Variation, Pseudo-Catalan",
+            "es-ES": "Variante Simétrica, Pseudocatalana",
+            "pt-PT": "Variante Simétrica, Pseudo-Catalã",
+            "de": "Symmetrische Variante, Pseudo-Katalanisch",
+            "fr": "Variante symétrique, Pseudo-catalane",
+            "it": "Variante simmetrica, Pseudo-catalana"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: Symmetrical Variation, Pseudo-Catalan",
@@ -788,9 +1196,15 @@
         {
           "id": "line-8517ff8a17cde537",
           "names": {
-            "en": "Symmetrical Variation",
+            "en-US": "Symmetrical Variation",
             "pt-BR": "Variante Simétrica",
-            "es": "Variante Simétrica"
+            "es-419": "Variante Simétrica",
+            "en-GB": "Symmetrical Variation",
+            "es-ES": "Variante Simétrica",
+            "pt-PT": "Variante Simétrica",
+            "de": "Symmetrische Variante",
+            "fr": "Variante symétrique",
+            "it": "Variante simmetrica"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: Symmetrical Variation",
@@ -800,9 +1214,15 @@
         {
           "id": "line-80af3b9772ca2290",
           "names": {
-            "en": "Symmetrical Variation, Pseudo-Catalan",
+            "en-US": "Symmetrical Variation, Pseudo-Catalan",
             "pt-BR": "Variante Simétrica, Pseudo-Catalã",
-            "es": "Variante Simétrica, Pseudocatalana"
+            "es-419": "Variante Simétrica, Pseudocatalana",
+            "en-GB": "Symmetrical Variation, Pseudo-Catalan",
+            "es-ES": "Variante Simétrica, Pseudocatalana",
+            "pt-PT": "Variante Simétrica, Pseudo-Catalã",
+            "de": "Symmetrische Variante, Pseudo-Katalanisch",
+            "fr": "Variante symétrique, Pseudo-catalane",
+            "it": "Variante simmetrica, Pseudo-catalana"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: Symmetrical Variation, Pseudo-Catalan",
@@ -812,9 +1232,15 @@
         {
           "id": "line-05542894c8abc699",
           "names": {
-            "en": "Symmetrical Variation, Pseudo-Catalan",
+            "en-US": "Symmetrical Variation, Pseudo-Catalan",
             "pt-BR": "Variante Simétrica, Pseudo-Catalã",
-            "es": "Variante Simétrica, Pseudocatalana"
+            "es-419": "Variante Simétrica, Pseudocatalana",
+            "en-GB": "Symmetrical Variation, Pseudo-Catalan",
+            "es-ES": "Variante Simétrica, Pseudocatalana",
+            "pt-PT": "Variante Simétrica, Pseudo-Catalã",
+            "de": "Symmetrische Variante, Pseudo-Katalanisch",
+            "fr": "Variante symétrique, Pseudo-catalane",
+            "it": "Variante simmetrica, Pseudo-catalana"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: Symmetrical Variation, Pseudo-Catalan",
@@ -825,17 +1251,29 @@
     },
     {
       "names": {
-        "en": "Levitsky Attack",
+        "en-US": "Levitsky Attack",
         "pt-BR": "Ataque Levitsky",
-        "es": "Ataque Levitsky"
+        "es-419": "Ataque Levitsky",
+        "en-GB": "Levitsky Attack",
+        "es-ES": "Ataque Levitsky",
+        "pt-PT": "Ataque Levitsky",
+        "de": "Lewitski-Angriff",
+        "fr": "Attaque Levitski",
+        "it": "Attacco Levickij"
       },
       "lines": [
         {
           "id": "line-57d7ef2579863b66",
           "names": {
-            "en": "Levitsky Attack",
+            "en-US": "Levitsky Attack",
             "pt-BR": "Ataque Levitsky",
-            "es": "Ataque Levitsky"
+            "es-419": "Ataque Levitsky",
+            "en-GB": "Levitsky Attack",
+            "es-ES": "Ataque Levitsky",
+            "pt-PT": "Ataque Levitsky",
+            "de": "Lewitski-Angriff",
+            "fr": "Attaque Levitski",
+            "it": "Attacco Levickij"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Levitsky Attack",
@@ -845,9 +1283,15 @@
         {
           "id": "line-87673c5023fe8c85",
           "names": {
-            "en": "Levitsky Attack, Welling Variation",
+            "en-US": "Levitsky Attack, Welling Variation",
             "pt-BR": "Ataque Levitsky, Variante Welling",
-            "es": "Ataque Levitsky, Variante Welling"
+            "es-419": "Ataque Levitsky, Variante Welling",
+            "en-GB": "Levitsky Attack, Welling Variation",
+            "es-ES": "Ataque Levitsky, Variante Welling",
+            "pt-PT": "Ataque Levitsky, Variante Welling",
+            "de": "Lewitski-Angriff, Welling-Variante",
+            "fr": "Attaque Levitski, Variante Welling",
+            "it": "Attacco Levickij, Variante Welling"
           },
           "eco": "D00",
           "opening": "Queen's Pawn Game: Levitsky Attack, Welling Variation",
@@ -857,9 +1301,15 @@
         {
           "id": "line-69bb26d2c7ab3b61",
           "names": {
-            "en": "Levitsky Attack, Euwe Variation, Modern Line",
+            "en-US": "Levitsky Attack, Euwe Variation, Modern Line",
             "pt-BR": "Ataque Levitsky, Variante Euwe, Linha Moderna",
-            "es": "Ataque Levitsky, Variante Euwe, Línea Moderna"
+            "es-419": "Ataque Levitsky, Variante Euwe, Línea Moderna",
+            "en-GB": "Levitsky Attack, Euwe Variation, Modern Line",
+            "es-ES": "Ataque Levitsky, Variante Euwe, Línea Moderna",
+            "pt-PT": "Ataque Levitsky, Variante Euwe, Linha Moderna",
+            "de": "Lewitski-Angriff, Euwe-Variante, Modernes Abspiel",
+            "fr": "Attaque Levitski, Variante Euwe, Ligne moderne",
+            "it": "Attacco Levickij, Variante Euwe, Linea moderna"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: Levitsky Attack, Euwe Variation, Modern Line",
@@ -870,17 +1320,29 @@
     },
     {
       "names": {
-        "en": "Veresov Attack",
+        "en-US": "Veresov Attack",
         "pt-BR": "Ataque Veresov",
-        "es": "Ataque Veresov"
+        "es-419": "Ataque Veresov",
+        "en-GB": "Veresov Attack",
+        "es-ES": "Ataque Veresov",
+        "pt-PT": "Ataque Veresov",
+        "de": "Weressow-Angriff",
+        "fr": "Attaque Veressov",
+        "it": "Attacco Veresov"
       },
       "lines": [
         {
           "id": "line-7952ceb25dff7d3c",
           "names": {
-            "en": "Veresov Attack, Classical Defense",
+            "en-US": "Veresov Attack, Classical Defense",
             "pt-BR": "Ataque Veresov, Defesa Clássica",
-            "es": "Ataque Veresov, Defensa Clásica"
+            "es-419": "Ataque Veresov, Defensa Clásica",
+            "en-GB": "Veresov Attack, Classical Defence",
+            "es-ES": "Ataque Veresov, Defensa Clásica",
+            "pt-PT": "Ataque Veresov, Defesa Clássica",
+            "de": "Weressow-Angriff, Klassische Verteidigung",
+            "fr": "Attaque Veressov, Défense classique",
+            "it": "Attacco Veresov, Difesa classica"
           },
           "eco": "A46",
           "opening": "Queen's Pawn Game: Veresov Attack, Classical Defense",
@@ -890,9 +1352,15 @@
         {
           "id": "line-7a8faf4b65cb4abe",
           "names": {
-            "en": "Veresov Attack, Dutch System",
+            "en-US": "Veresov Attack, Dutch System",
             "pt-BR": "Ataque Veresov, Sistema Holandês",
-            "es": "Ataque Veresov, Sistema Holandés"
+            "es-419": "Ataque Veresov, Sistema Holandés",
+            "en-GB": "Veresov Attack, Dutch System",
+            "es-ES": "Ataque Veresov, Sistema Holandés",
+            "pt-PT": "Ataque Veresov, Sistema Holandês",
+            "de": "Weressow-Angriff, Holländisches System",
+            "fr": "Attaque Veressov, Système hollandais",
+            "it": "Attacco Veresov, Sistema olandese"
           },
           "eco": "A80",
           "opening": "Queen's Pawn Game: Veresov Attack, Dutch System",
@@ -903,17 +1371,29 @@
     },
     {
       "names": {
-        "en": "Zukertort Variation",
+        "en-US": "Zukertort Variation",
         "pt-BR": "Variante Zukertort",
-        "es": "Variante Zukertort"
+        "es-419": "Variante Zukertort",
+        "en-GB": "Zukertort Variation",
+        "es-ES": "Variante Zukertort",
+        "pt-PT": "Variante Zukertort",
+        "de": "Zukertort-Variante",
+        "fr": "Variante Zukertort",
+        "it": "Variante Zukertort"
       },
       "lines": [
         {
           "id": "line-b8dd37798c33c854",
           "names": {
-            "en": "Zukertort Variation",
+            "en-US": "Zukertort Variation",
             "pt-BR": "Variante Zukertort",
-            "es": "Variante Zukertort"
+            "es-419": "Variante Zukertort",
+            "en-GB": "Zukertort Variation",
+            "es-ES": "Variante Zukertort",
+            "pt-PT": "Variante Zukertort",
+            "de": "Zukertort-Variante",
+            "fr": "Variante Zukertort",
+            "it": "Variante Zukertort"
           },
           "eco": "D02",
           "opening": "Queen's Pawn Game: Zukertort Variation",
@@ -923,9 +1403,15 @@
         {
           "id": "line-dd7eb000e41f083c",
           "names": {
-            "en": "Zukertort Variation",
+            "en-US": "Zukertort Variation",
             "pt-BR": "Variante Zukertort",
-            "es": "Variante Zukertort"
+            "es-419": "Variante Zukertort",
+            "en-GB": "Zukertort Variation",
+            "es-ES": "Variante Zukertort",
+            "pt-PT": "Variante Zukertort",
+            "de": "Zukertort-Variante",
+            "fr": "Variante Zukertort",
+            "it": "Variante Zukertort"
           },
           "eco": "D05",
           "opening": "Queen's Pawn Game: Zukertort Variation",
@@ -939,9 +1425,15 @@
     {
       "id": "line-bae5b7fb265c2fe0",
       "names": {
-        "en": "Anglo-Slav Opening",
+        "en-US": "Anglo-Slav Opening",
         "pt-BR": "Abertura Anglo-Eslava",
-        "es": "Apertura Anglo-Eslava"
+        "es-419": "Apertura Anglo-Eslava",
+        "en-GB": "Anglo-Slav Opening",
+        "es-ES": "Apertura Anglo-Eslava",
+        "pt-PT": "Abertura Anglo-Eslava",
+        "de": "Englisch-Slawische Eröffnung",
+        "fr": "Ouverture anglo-slave",
+        "it": "Apertura anglo-slava"
       },
       "eco": "A40",
       "opening": "Queen's Pawn Game: Anglo-Slav Opening",
@@ -951,9 +1443,15 @@
     {
       "id": "line-71a9d3305ffbc915",
       "names": {
-        "en": "Anti-Torre",
+        "en-US": "Anti-Torre",
         "pt-BR": "Anti-Torre",
-        "es": "Anti-Torre"
+        "es-419": "Anti-Torre",
+        "en-GB": "Anti-Torre",
+        "es-ES": "Anti-Torre",
+        "pt-PT": "Anti-Torre",
+        "de": "Anti-Torre",
+        "fr": "Anti-Torre",
+        "it": "Anti-Torre"
       },
       "eco": "D02",
       "opening": "Queen's Pawn Game: Anti-Torre",
@@ -963,9 +1461,15 @@
     {
       "id": "line-117789ff0353b869",
       "names": {
-        "en": "Chandler Gambit",
+        "en-US": "Chandler Gambit",
         "pt-BR": "Gambito Chandler",
-        "es": "Gambito Chandler"
+        "es-419": "Gambito Chandler",
+        "en-GB": "Chandler Gambit",
+        "es-ES": "Gambito Chandler",
+        "pt-PT": "Gambito Chandler",
+        "de": "Chandler-Gambit",
+        "fr": "Gambit Chandler",
+        "it": "Gambetto Chandler"
       },
       "eco": "D02",
       "opening": "Queen's Pawn Game: Chandler Gambit",
@@ -975,9 +1479,15 @@
     {
       "id": "line-15cd31189558865d",
       "names": {
-        "en": "Hübsch Gambit",
+        "en-US": "Hübsch Gambit",
         "pt-BR": "Gambito Hübsch",
-        "es": "Gambito Hübsch"
+        "es-419": "Gambito Hübsch",
+        "en-GB": "Hübsch Gambit",
+        "es-ES": "Gambito Hübsch",
+        "pt-PT": "Gambito Hübsch",
+        "de": "Hübsch-Gambit",
+        "fr": "Gambit Hübsch",
+        "it": "Gambetto Hübsch"
       },
       "eco": "D00",
       "opening": "Queen's Pawn Game: Hübsch Gambit",
@@ -987,9 +1497,15 @@
     {
       "id": "line-a55ef5fe3275c274",
       "names": {
-        "en": "Krause Variation",
+        "en-US": "Krause Variation",
         "pt-BR": "Variante Krause",
-        "es": "Variante Krause"
+        "es-419": "Variante Krause",
+        "en-GB": "Krause Variation",
+        "es-ES": "Variante Krause",
+        "pt-PT": "Variante Krause",
+        "de": "Krause-Variante",
+        "fr": "Variante Krause",
+        "it": "Variante Krause"
       },
       "eco": "D02",
       "opening": "Queen's Pawn Game: Krause Variation",
@@ -999,9 +1515,15 @@
     {
       "id": "line-fac115e5e4abcf45",
       "names": {
-        "en": "Liedmann Gambit",
+        "en-US": "Liedmann Gambit",
         "pt-BR": "Gambito Liedmann",
-        "es": "Gambito Liedmann"
+        "es-419": "Gambito Liedmann",
+        "en-GB": "Liedmann Gambit",
+        "es-ES": "Gambito Liedmann",
+        "pt-PT": "Gambito Liedmann",
+        "de": "Liedmann-Gambit",
+        "fr": "Gambit Liedmann",
+        "it": "Gambetto Liedmann"
       },
       "eco": "A43",
       "opening": "Queen's Pawn Game: Liedmann Gambit",
@@ -1011,9 +1533,15 @@
     {
       "id": "line-6df3e42081de79eb",
       "names": {
-        "en": "Mason Attack",
+        "en-US": "Mason Attack",
         "pt-BR": "Ataque Mason",
-        "es": "Ataque Mason"
+        "es-419": "Ataque Mason",
+        "en-GB": "Mason Attack",
+        "es-ES": "Ataque Mason",
+        "pt-PT": "Ataque Mason",
+        "de": "Mason-Angriff",
+        "fr": "Attaque Mason",
+        "it": "Attacco Mason"
       },
       "eco": "D00",
       "opening": "Queen's Pawn Game: Mason Attack",
@@ -1023,9 +1551,15 @@
     {
       "id": "line-105af3f5a2a0b07f",
       "names": {
-        "en": "Mengarini Attack",
+        "en-US": "Mengarini Attack",
         "pt-BR": "Ataque Mengarini",
-        "es": "Ataque Mengarini"
+        "es-419": "Ataque Mengarini",
+        "en-GB": "Mengarini Attack",
+        "es-ES": "Ataque Mengarini",
+        "pt-PT": "Ataque Mengarini",
+        "de": "Mengarini-Angriff",
+        "fr": "Attaque Mengarini",
+        "it": "Attacco Mengarini"
       },
       "eco": "E60",
       "opening": "Queen's Pawn, Mengarini Attack",
@@ -1035,9 +1569,15 @@
     {
       "id": "line-c5293efd1fdfdece",
       "names": {
-        "en": "Modern Defense",
+        "en-US": "Modern Defense",
         "pt-BR": "Defesa Moderna",
-        "es": "Defensa Moderna"
+        "es-419": "Defensa Moderna",
+        "en-GB": "Modern Defence",
+        "es-ES": "Defensa Moderna",
+        "pt-PT": "Defesa Moderna",
+        "de": "Moderne Verteidigung",
+        "fr": "Défense moderne",
+        "it": "Difesa moderna"
       },
       "eco": "A40",
       "opening": "Queen's Pawn Game: Modern Defense",
@@ -1047,9 +1587,15 @@
     {
       "id": "line-d465f79e851018a2",
       "names": {
-        "en": "Rossolimo Variation",
+        "en-US": "Rossolimo Variation",
         "pt-BR": "Variante Rossolimo",
-        "es": "Variante Rossolimo"
+        "es-419": "Variante Rossolimo",
+        "en-GB": "Rossolimo Variation",
+        "es-ES": "Variante Rossolimo",
+        "pt-PT": "Variante Rossolimo",
+        "de": "Rossolimo-Variante",
+        "fr": "Variante Rossolimo",
+        "it": "Variante Rossolimo"
       },
       "eco": "A41",
       "opening": "Queen's Pawn Game: Rossolimo Variation",
@@ -1059,9 +1605,15 @@
     {
       "id": "line-a5a7a878ff063b92",
       "names": {
-        "en": "Stonewall Attack",
+        "en-US": "Stonewall Attack",
         "pt-BR": "Ataque Stonewall",
-        "es": "Ataque Stonewall"
+        "es-419": "Ataque Stonewall",
+        "en-GB": "Stonewall Attack",
+        "es-ES": "Ataque Stonewall",
+        "pt-PT": "Ataque Stonewall",
+        "de": "Stonewall-Angriff",
+        "fr": "Attaque Stonewall",
+        "it": "Attacco Stonewall"
       },
       "eco": "D00",
       "opening": "Queen's Pawn Game: Stonewall Attack",
@@ -1071,9 +1623,15 @@
     {
       "id": "line-6f325e42b939297f",
       "names": {
-        "en": "Veresov, Richter Attack",
+        "en-US": "Veresov, Richter Attack",
         "pt-BR": "Veresov, Ataque Richter",
-        "es": "Veresov, Ataque Richter"
+        "es-419": "Veresov, Ataque Richter",
+        "en-GB": "Veresov, Richter Attack",
+        "es-ES": "Veresov, Ataque Richter",
+        "pt-PT": "Veresov, Ataque Richter",
+        "de": "Weressow, Richter-Angriff",
+        "fr": "Veressov, Attaque Richter",
+        "it": "Veresov, Attacco Richter"
       },
       "eco": "A45",
       "opening": "Queen's Pawn Game: Veresov, Richter Attack",
@@ -1083,9 +1641,15 @@
     {
       "id": "line-d8a69b8e3ba28533",
       "names": {
-        "en": "Zilbermints Countergambit",
+        "en-US": "Zilbermints Countergambit",
         "pt-BR": "Contragambito Zilbermints",
-        "es": "Contragambito Zilbermints"
+        "es-419": "Contragambito Zilbermints",
+        "en-GB": "Zilbermints Countergambit",
+        "es-ES": "Contragambito Zilbermints",
+        "pt-PT": "Contragambito Zilbermints",
+        "de": "Zilbermints-Gegengambit",
+        "fr": "Contre-gambit Zilbermints",
+        "it": "Controgambetto Zilbermints"
       },
       "eco": "D02",
       "opening": "Queen's Pawn Game: Zilbermints Countergambit",
@@ -1095,9 +1659,15 @@
     {
       "id": "line-69102b6caf9dbf2f",
       "names": {
-        "en": "Zurich Gambit",
+        "en-US": "Zurich Gambit",
         "pt-BR": "Gambito Zurique",
-        "es": "Gambito Zúrich"
+        "es-419": "Gambito Zúrich",
+        "en-GB": "Zurich Gambit",
+        "es-ES": "Gambito Zúrich",
+        "pt-PT": "Gambito Zurique",
+        "de": "Zürcher Gambit",
+        "fr": "Gambit Zurich",
+        "it": "Gambetto Zurich"
       },
       "eco": "D00",
       "opening": "Queen's Pawn Game: Zurich Gambit",

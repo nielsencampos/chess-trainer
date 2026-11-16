@@ -1,25 +1,43 @@
 {
   "id": "old-indian-defense",
   "names": {
-    "en": "Old Indian Defense",
+    "en-US": "Old Indian Defense",
     "pt-BR": "Defesa Índia Antiga",
-    "es": "Defensa India Antigua"
+    "es-419": "Defensa India Antigua",
+    "en-GB": "Old Indian Defense",
+    "es-ES": "Defensa India Antigua",
+    "pt-PT": "Defesa Índia Antiga",
+    "de": "Altindische Verteidigung",
+    "fr": "Défense vieille-indienne",
+    "it": "Difesa vecchia indiana"
   },
   "order": null,
   "variants": [
     {
       "names": {
-        "en": "Janowski Variation",
+        "en-US": "Janowski Variation",
         "pt-BR": "Variante Janowski",
-        "es": "Variante Janowski"
+        "es-419": "Variante Janowski",
+        "en-GB": "Janowski Variation",
+        "es-ES": "Variante Janowski",
+        "pt-PT": "Variante Janowski",
+        "de": "Janowski-Variante",
+        "fr": "Variante Janowski",
+        "it": "Variante Janowski"
       },
       "lines": [
         {
           "id": "line-11b519cd5e75ac70",
           "names": {
-            "en": "Janowski Variation",
+            "en-US": "Janowski Variation",
             "pt-BR": "Variante Janowski",
-            "es": "Variante Janowski"
+            "es-419": "Variante Janowski",
+            "en-GB": "Janowski Variation",
+            "es-ES": "Variante Janowski",
+            "pt-PT": "Variante Janowski",
+            "de": "Janowski-Variante",
+            "fr": "Variante Janowski",
+            "it": "Variante Janowski"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Janowski Variation",
@@ -29,9 +47,15 @@
         {
           "id": "line-c39aa7617e0d1d36",
           "names": {
-            "en": "Janowski Variation, Grinberg Gambit",
+            "en-US": "Janowski Variation, Grinberg Gambit",
             "pt-BR": "Variante Janowski, Gambito Grinberg",
-            "es": "Variante Janowski, Gambito Grinberg"
+            "es-419": "Variante Janowski, Gambito Grinberg",
+            "en-GB": "Janowski Variation, Grinberg Gambit",
+            "es-ES": "Variante Janowski, Gambito Grinberg",
+            "pt-PT": "Variante Janowski, Gambito Grinberg",
+            "de": "Janowski-Variante, Grinberg-Gambit",
+            "fr": "Variante Janowski, Gambit Grinberg",
+            "it": "Variante Janowski, Gambetto Grinberg"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Janowski Variation, Grinberg Gambit",
@@ -41,9 +65,15 @@
         {
           "id": "line-51386bba27905a15",
           "names": {
-            "en": "Janowski Variation, Main Line",
+            "en-US": "Janowski Variation, Main Line",
             "pt-BR": "Variante Janowski, Linha Principal",
-            "es": "Variante Janowski, Línea Principal"
+            "es-419": "Variante Janowski, Línea Principal",
+            "en-GB": "Janowski Variation, Main Line",
+            "es-ES": "Variante Janowski, Línea Principal",
+            "pt-PT": "Variante Janowski, Linha Principal",
+            "de": "Janowski-Variante, Hauptvariante",
+            "fr": "Variante Janowski, Ligne principale",
+            "it": "Variante Janowski, Linea principale"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Janowski Variation, Main Line",
@@ -53,9 +83,15 @@
         {
           "id": "line-a484a4af8176a47b",
           "names": {
-            "en": "Janowski Variation, Fianchetto Variation",
+            "en-US": "Janowski Variation, Fianchetto Variation",
             "pt-BR": "Variante Janowski, Variante do Fianqueto",
-            "es": "Variante Janowski, Variante del Fianchetto"
+            "es-419": "Variante Janowski, Variante del Fianchetto",
+            "en-GB": "Janowski Variation, Fianchetto Variation",
+            "es-ES": "Variante Janowski, Variante del Fianchetto",
+            "pt-PT": "Variante Janowski, Variante do Fianqueto",
+            "de": "Janowski-Variante, Fianchetto-Variante",
+            "fr": "Variante Janowski, Variante du fianchetto",
+            "it": "Variante Janowski, Variante del fianchetto"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Janowski Variation, Fianchetto Variation",
@@ -66,17 +102,29 @@
     },
     {
       "names": {
-        "en": "Czech Variation",
+        "en-US": "Czech Variation",
         "pt-BR": "Variante Tcheca",
-        "es": "Variante Checa"
+        "es-419": "Variante Checa",
+        "en-GB": "Czech Variation",
+        "es-ES": "Variante Checa",
+        "pt-PT": "Variante Checa",
+        "de": "Tschechische Variante",
+        "fr": "Variante tchèque",
+        "it": "Variante ceca"
       },
       "lines": [
         {
           "id": "line-f668f29c582d96ba",
           "names": {
-            "en": "Czech Variation, with Nc3",
+            "en-US": "Czech Variation, with Nc3",
             "pt-BR": "Variante Tcheca, com Nc3",
-            "es": "Variante Checa, con Nc3"
+            "es-419": "Variante Checa, con Nc3",
+            "en-GB": "Czech Variation, with Nc3",
+            "es-ES": "Variante Checa, con Nc3",
+            "pt-PT": "Variante Checa, com Nc3",
+            "de": "Tschechische Variante, mit Nc3",
+            "fr": "Variante tchèque, avec Nc3",
+            "it": "Variante ceca, con Nc3"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Czech Variation, with Nc3",
@@ -86,9 +134,15 @@
         {
           "id": "line-92e81b42a811ee58",
           "names": {
-            "en": "Czech Variation, with Nf3",
+            "en-US": "Czech Variation, with Nf3",
             "pt-BR": "Variante Tcheca, com Nf3",
-            "es": "Variante Checa, con Nf3"
+            "es-419": "Variante Checa, con Nf3",
+            "en-GB": "Czech Variation, with Nf3",
+            "es-ES": "Variante Checa, con Nf3",
+            "pt-PT": "Variante Checa, com Nf3",
+            "de": "Tschechische Variante, mit Nf3",
+            "fr": "Variante tchèque, avec Nf3",
+            "it": "Variante ceca, con Nf3"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Czech Variation, with Nf3",
@@ -99,17 +153,29 @@
     },
     {
       "names": {
-        "en": "Main",
+        "en-US": "Main",
         "pt-BR": "Principal",
-        "es": "Principal"
+        "es-419": "Principal",
+        "en-GB": "Main",
+        "es-ES": "Principal",
+        "pt-PT": "Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-b9b0e82e59476271",
           "names": {
-            "en": "Old Indian Defense",
+            "en-US": "Old Indian Defense",
             "pt-BR": "Defesa Índia Antiga",
-            "es": "Defensa India Antigua"
+            "es-419": "Defensa India Antigua",
+            "en-GB": "Old Indian Defence",
+            "es-ES": "Defensa India Antigua",
+            "pt-PT": "Defesa Índia Antiga",
+            "de": "Altindische Verteidigung",
+            "fr": "Défense vieille-indienne",
+            "it": "Difesa vecchia indiana"
           },
           "eco": "A53",
           "opening": "Old Indian Defense",
@@ -119,9 +185,15 @@
         {
           "id": "line-ffe8276cfcd7f893",
           "names": {
-            "en": "Old Indian Defense",
+            "en-US": "Old Indian Defense",
             "pt-BR": "Defesa Índia Antiga",
-            "es": "Defensa India Antigua"
+            "es-419": "Defensa India Antigua",
+            "en-GB": "Old Indian Defence",
+            "es-ES": "Defensa India Antigua",
+            "pt-PT": "Defesa Índia Antiga",
+            "de": "Altindische Verteidigung",
+            "fr": "Défense vieille-indienne",
+            "it": "Difesa vecchia indiana"
           },
           "eco": "A41",
           "opening": "Old Indian Defense",
@@ -135,9 +207,15 @@
     {
       "id": "line-4a2210605b6f1b4d",
       "names": {
-        "en": "Aged Gibbon Gambit",
+        "en-US": "Aged Gibbon Gambit",
         "pt-BR": "Gambito do Gibão Velho",
-        "es": "Gambito del Gibón Viejo"
+        "es-419": "Gambito del Gibón Viejo",
+        "en-GB": "Aged Gibbon Gambit",
+        "es-ES": "Gambito del Gibón Viejo",
+        "pt-PT": "Gambito do Gibão Velho",
+        "de": "Gambit des alten Gibbons",
+        "fr": "Gambit du vieux gibbon",
+        "it": "Gambetto del vecchio gibbone"
       },
       "eco": "A53",
       "opening": "Old Indian Defense: Aged Gibbon Gambit",
@@ -147,9 +225,15 @@
     {
       "id": "line-3a3a4b6e5d2e017b",
       "names": {
-        "en": "Duz-Khotimirsky Variation",
+        "en-US": "Duz-Khotimirsky Variation",
         "pt-BR": "Variante Duz-Khotimirsky",
-        "es": "Variante Duz-Khotimirsky"
+        "es-419": "Variante Duz-Khotimirsky",
+        "en-GB": "Duz-Khotimirsky Variation",
+        "es-ES": "Variante Duz-Khotimirsky",
+        "pt-PT": "Variante Duz-Khotimirsky",
+        "de": "Dus-Chotimirski-Variante",
+        "fr": "Variante Douz-Khotimirski",
+        "it": "Variante Duz-Chotimirskij"
       },
       "eco": "A54",
       "opening": "Old Indian Defense: Duz-Khotimirsky Variation",
@@ -159,9 +243,15 @@
     {
       "id": "line-44d5e5054bb3f3f8",
       "names": {
-        "en": "Normal Variation",
+        "en-US": "Normal Variation",
         "pt-BR": "Variante Normal",
-        "es": "Variante Normal"
+        "es-419": "Variante Normal",
+        "en-GB": "Normal Variation",
+        "es-ES": "Variante Normal",
+        "pt-PT": "Variante Normal",
+        "de": "Normalvariante",
+        "fr": "Variante normale",
+        "it": "Variante normale"
       },
       "eco": "A55",
       "opening": "Old Indian Defense: Normal Variation",
@@ -171,9 +261,15 @@
     {
       "id": "line-8878e103dce5cb53",
       "names": {
-        "en": "Tartakower-Indian",
+        "en-US": "Tartakower-Indian",
         "pt-BR": "Índia Tartakower",
-        "es": "India Tartakower"
+        "es-419": "India Tartakower",
+        "en-GB": "Tartakower-Indian",
+        "es-ES": "India Tartakower",
+        "pt-PT": "Índia Tartakower",
+        "de": "Tartakower-Indisch",
+        "fr": "Tartakower-indienne",
+        "it": "Tartakower-indiana"
       },
       "eco": "A54",
       "opening": "Old Indian Defense: Tartakower-Indian",
@@ -183,9 +279,15 @@
     {
       "id": "line-8ba7c0a5d5e83d80",
       "names": {
-        "en": "Two Knights Variation",
+        "en-US": "Two Knights Variation",
         "pt-BR": "Variante dos Dois Cavalos",
-        "es": "Variante de los Dos Caballos"
+        "es-419": "Variante de los Dos Caballos",
+        "en-GB": "Two Knights Variation",
+        "es-ES": "Variante de los Dos Caballos",
+        "pt-PT": "Variante dos Dois Cavalos",
+        "de": "Zweispringervariante",
+        "fr": "Variante des deux cavaliers",
+        "it": "Variante dei due cavalli"
       },
       "eco": "A54",
       "opening": "Old Indian Defense: Two Knights Variation",
@@ -195,9 +297,15 @@
     {
       "id": "line-e9def9eb0208bee7",
       "names": {
-        "en": "Ukrainian Variation",
+        "en-US": "Ukrainian Variation",
         "pt-BR": "Variante Ucraniana",
-        "es": "Variante Ucraniana"
+        "es-419": "Variante Ucraniana",
+        "en-GB": "Ukrainian Variation",
+        "es-ES": "Variante Ucraniana",
+        "pt-PT": "Variante Ucraniana",
+        "de": "Ukrainische Variante",
+        "fr": "Variante ukrainienne",
+        "it": "Variante ucraina"
       },
       "eco": "A54",
       "opening": "Old Indian Defense: Ukrainian Variation",

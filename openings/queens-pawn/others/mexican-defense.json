@@ -1,18 +1,30 @@
 {
   "id": "mexican-defense",
   "names": {
-    "en": "Mexican Defense",
+    "en-US": "Mexican Defense",
     "pt-BR": "Defesa Mexicana",
-    "es": "Defensa Mexicana"
+    "es-419": "Defensa Mexicana",
+    "en-GB": "Black Knights' Tango",
+    "es-ES": "Defensa Mexicana",
+    "pt-PT": "Defesa Mexicana",
+    "de": "Mexikanische Verteidigung",
+    "fr": "Défense mexicaine",
+    "it": "Difesa Kevitz-Trajkovic"
   },
   "order": null,
   "lines": [
     {
       "id": "line-b02be85cb2fa4476",
       "names": {
-        "en": "Mexican Defense",
+        "en-US": "Mexican Defense",
         "pt-BR": "Defesa Mexicana",
-        "es": "Defensa Mexicana"
+        "es-419": "Defensa Mexicana",
+        "en-GB": "Mexican Defence",
+        "es-ES": "Defensa Mexicana",
+        "pt-PT": "Defesa Mexicana",
+        "de": "Mexikanische Verteidigung",
+        "fr": "Défense mexicaine",
+        "it": "Difesa messicana"
       },
       "eco": "A50",
       "opening": "Mexican Defense",
@@ -22,9 +34,15 @@
     {
       "id": "line-0f91f887bac9d69f",
       "names": {
-        "en": "Horsefly Gambit",
+        "en-US": "Horsefly Gambit",
         "pt-BR": "Gambito Mutuca",
-        "es": "Gambito Tábano"
+        "es-419": "Gambito Tábano",
+        "en-GB": "Horsefly Gambit",
+        "es-ES": "Gambito Tábano",
+        "pt-PT": "Gambito Moscardo",
+        "de": "Pferdebremsen-Gambit",
+        "fr": "Gambit du taon",
+        "it": "Gambetto del tafano"
       },
       "eco": "A50",
       "opening": "Mexican Defense: Horsefly Gambit",

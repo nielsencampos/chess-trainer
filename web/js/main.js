@@ -6,7 +6,16 @@ import { GameController } from "./game.js";
 import { indexOpenings } from "./opening-names.js";
 import { OpeningsScreen } from "./openings.js";
 import { initPages, localizeHelpImages, localizeWikiLinks } from "./pages.js";
-import { availableLocales, getLocale, initI18n, localize, onLocaleChange, setLocale, t } from "./i18n.js";
+import {
+  availableLocales,
+  DEFAULT_LOCALE,
+  getLocale,
+  initI18n,
+  localize,
+  onLocaleChange,
+  setLocale,
+  t,
+} from "./i18n.js";
 import { initLayout } from "./layout.js";
 import { setLevelRatings } from "./levels.js";
 import { getPref, setPref } from "./prefs.js";
@@ -48,7 +57,10 @@ async function initLocalePicker() {
  */
 async function main() {
   initPages();
-  await initI18n(getPref("locale", "en"));
+  const saved = getPref("locale", DEFAULT_LOCALE);
+  await initI18n(saved);
+  // A code saved before the rename (en, es), or one with no file any more, is replaced.
+  if (saved !== getLocale()) setPref("locale", getLocale());
   localizeHelpImages();
   localizeWikiLinks();
   initTooltips();

@@ -1,25 +1,43 @@
 {
   "id": "italian-game",
   "names": {
-    "en": "Italian Game",
+    "en-US": "Italian Game",
     "pt-BR": "Abertura Italiana",
-    "es": "Apertura Italiana"
+    "es-419": "Apertura Italiana",
+    "en-GB": "Italian Game",
+    "es-ES": "Apertura Italiana",
+    "pt-PT": "Abertura Italiana",
+    "de": "Italienische Partie",
+    "fr": "Partie italienne",
+    "it": "Partita italiana"
   },
   "order": 5,
   "variants": [
     {
       "names": {
-        "en": "Two Knights Defense",
+        "en-US": "Two Knights Defense",
         "pt-BR": "Defesa dos Dois Cavalos",
-        "es": "Defensa de los Dos Caballos"
+        "es-419": "Defensa de los Dos Caballos",
+        "en-GB": "Two Knights Defence",
+        "es-ES": "Defensa de los Dos Caballos",
+        "pt-PT": "Defesa dos Dois Cavalos",
+        "de": "Zweispringerspiel im Nachzug",
+        "fr": "Défense des deux cavaliers",
+        "it": "Difesa dei due cavalli"
       },
       "lines": [
         {
           "id": "line-7b05cf9446eafdc9",
           "names": {
-            "en": "Two Knights Defense",
+            "en-US": "Two Knights Defense",
             "pt-BR": "Defesa dos Dois Cavalos",
-            "es": "Defensa de los Dos Caballos"
+            "es-419": "Defensa de los Dos Caballos",
+            "en-GB": "Two Knights Defence",
+            "es-ES": "Defensa de los Dos Caballos",
+            "pt-PT": "Defesa dos Dois Cavalos",
+            "de": "Zweispringerspiel im Nachzug",
+            "fr": "Défense des deux cavaliers",
+            "it": "Difesa dei due cavalli"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense",
@@ -29,9 +47,15 @@
         {
           "id": "line-a7939989bbbb22d2",
           "names": {
-            "en": "Two Knights Defense",
+            "en-US": "Two Knights Defense",
             "pt-BR": "Defesa dos Dois Cavalos",
-            "es": "Defensa de los Dos Caballos"
+            "es-419": "Defensa de los Dos Caballos",
+            "en-GB": "Two Knights Defence",
+            "es-ES": "Defensa de los Dos Caballos",
+            "pt-PT": "Defesa dos Dois Cavalos",
+            "de": "Zweispringerspiel im Nachzug",
+            "fr": "Défense des deux cavaliers",
+            "it": "Difesa dei due cavalli"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense",
@@ -41,9 +65,15 @@
         {
           "id": "line-8d284d46b761ca0f",
           "names": {
-            "en": "Two Knights Defense, Knight Attack",
+            "en-US": "Two Knights Defense, Knight Attack",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque do Cavalo",
-            "es": "Defensa de los Dos Caballos, Ataque del Caballo"
+            "es-419": "Defensa de los Dos Caballos, Ataque del Caballo",
+            "en-GB": "Two Knights Defence, Knight Attack",
+            "es-ES": "Defensa de los Dos Caballos, Ataque del Caballo",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque do Cavalo",
+            "de": "Zweispringerspiel im Nachzug, Springerangriff",
+            "fr": "Défense des deux cavaliers, Attaque du cavalier",
+            "it": "Difesa dei due cavalli, Attacco del cavallo"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Knight Attack",
@@ -53,9 +83,15 @@
         {
           "id": "line-74055feb1aa8fffe",
           "names": {
-            "en": "Two Knights Defense, Traxler Counterattack",
+            "en-US": "Two Knights Defense, Traxler Counterattack",
             "pt-BR": "Defesa dos Dois Cavalos, Contra-ataque Traxler",
-            "es": "Defensa de los Dos Caballos, Contraataque Traxler"
+            "es-419": "Defensa de los Dos Caballos, Contraataque Traxler",
+            "en-GB": "Two Knights Defence, Traxler Counterattack",
+            "es-ES": "Defensa de los Dos Caballos, Contraataque Traxler",
+            "pt-PT": "Defesa dos Dois Cavalos, Contra-ataque Traxler",
+            "de": "Zweispringerspiel im Nachzug, Traxler-Gegenangriff",
+            "fr": "Défense des deux cavaliers, Contre-attaque Traxler",
+            "it": "Difesa dei due cavalli, Contrattacco Traxler"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Traxler Counterattack",
@@ -65,9 +101,15 @@
         {
           "id": "line-c5abe009f619b25b",
           "names": {
-            "en": "Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line",
+            "en-US": "Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line",
             "pt-BR": "Defesa dos Dois Cavalos, Contra-ataque Traxler, Linha do Sacrifício do Bispo",
-            "es": "Defensa de los Dos Caballos, Contraataque Traxler, Línea del Sacrificio del Alfil"
+            "es-419": "Defensa de los Dos Caballos, Contraataque Traxler, Línea del Sacrificio del Alfil",
+            "en-GB": "Two Knights Defence, Traxler Counterattack, Bishop Sacrifice Line",
+            "es-ES": "Defensa de los Dos Caballos, Contraataque Traxler, Línea del Sacrificio del Alfil",
+            "pt-PT": "Defesa dos Dois Cavalos, Contra-ataque Traxler, Linha do Sacrifício do Bispo",
+            "de": "Zweispringerspiel im Nachzug, Traxler-Gegenangriff, Läuferopfer-Abspiel",
+            "fr": "Défense des deux cavaliers, Contre-attaque Traxler, Ligne du sacrifice du fou",
+            "it": "Difesa dei due cavalli, Contrattacco Traxler, Linea del sacrificio d'alfiere"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line",
@@ -77,9 +119,15 @@
         {
           "id": "line-9e218e10e712c762",
           "names": {
-            "en": "Two Knights Defense, Traxler Variation, Trencianske-Teplice Gambit",
+            "en-US": "Two Knights Defense, Traxler Variation, Trencianske-Teplice Gambit",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Traxler, Gambito Trencianske-Teplice",
-            "es": "Defensa de los Dos Caballos, Variante Traxler, Gambito Trencianske-Teplice"
+            "es-419": "Defensa de los Dos Caballos, Variante Traxler, Gambito Trencianske-Teplice",
+            "en-GB": "Two Knights Defence, Traxler Variation, Trencianske-Teplice Gambit",
+            "es-ES": "Defensa de los Dos Caballos, Variante Traxler, Gambito Trencianske-Teplice",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Traxler, Gambito Trencianske-Teplice",
+            "de": "Zweispringerspiel im Nachzug, Traxler-Variante, Trencianske-Teplice-Gambit",
+            "fr": "Défense des deux cavaliers, Variante Traxler, Gambit Trencianske-Teplice",
+            "it": "Difesa dei due cavalli, Variante Traxler, Gambetto Trencianske-Teplice"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Traxler Variation, Trencianske-Teplice Gambit",
@@ -89,9 +137,15 @@
         {
           "id": "line-ac7dc24bc7a4a0e4",
           "names": {
-            "en": "Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line",
+            "en-US": "Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line",
             "pt-BR": "Defesa dos Dois Cavalos, Contra-ataque Traxler, Linha do Sacrifício do Cavalo",
-            "es": "Defensa de los Dos Caballos, Contraataque Traxler, Línea del Sacrificio del Caballo"
+            "es-419": "Defensa de los Dos Caballos, Contraataque Traxler, Línea del Sacrificio del Caballo",
+            "en-GB": "Two Knights Defence, Traxler Counterattack, Knight Sacrifice Line",
+            "es-ES": "Defensa de los Dos Caballos, Contraataque Traxler, Línea del Sacrificio del Caballo",
+            "pt-PT": "Defesa dos Dois Cavalos, Contra-ataque Traxler, Linha do Sacrifício do Cavalo",
+            "de": "Zweispringerspiel im Nachzug, Traxler-Gegenangriff, Springeropfer-Abspiel",
+            "fr": "Défense des deux cavaliers, Contre-attaque Traxler, Ligne du sacrifice du cavalier",
+            "it": "Difesa dei due cavalli, Contrattacco Traxler, Linea del sacrificio di cavallo"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line",
@@ -101,9 +155,15 @@
         {
           "id": "line-9e6fc3af6d0aff8d",
           "names": {
-            "en": "Two Knights Defense, Traxler Counterattack, King March Line",
+            "en-US": "Two Knights Defense, Traxler Counterattack, King March Line",
             "pt-BR": "Defesa dos Dois Cavalos, Contra-ataque Traxler, Linha da Marcha do Rei",
-            "es": "Defensa de los Dos Caballos, Contraataque Traxler, Línea de la Marcha del Rey"
+            "es-419": "Defensa de los Dos Caballos, Contraataque Traxler, Línea de la Marcha del Rey",
+            "en-GB": "Two Knights Defence, Traxler Counterattack, King March Line",
+            "es-ES": "Defensa de los Dos Caballos, Contraataque Traxler, Línea de la Marcha del Rey",
+            "pt-PT": "Defesa dos Dois Cavalos, Contra-ataque Traxler, Linha da Marcha do Rei",
+            "de": "Zweispringerspiel im Nachzug, Traxler-Gegenangriff, Königsmarsch-Abspiel",
+            "fr": "Défense des deux cavaliers, Contre-attaque Traxler, Ligne de la marche du roi",
+            "it": "Difesa dei due cavalli, Contrattacco Traxler, Linea della marcia del re"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Traxler Counterattack, King March Line",
@@ -113,9 +173,15 @@
         {
           "id": "line-269d072fddc91578",
           "names": {
-            "en": "Two Knights Defense, Ponziani-Steinitz Gambit",
+            "en-US": "Two Knights Defense, Ponziani-Steinitz Gambit",
             "pt-BR": "Defesa dos Dois Cavalos, Gambito Ponziani-Steinitz",
-            "es": "Defensa de los Dos Caballos, Gambito Ponziani-Steinitz"
+            "es-419": "Defensa de los Dos Caballos, Gambito Ponziani-Steinitz",
+            "en-GB": "Two Knights Defence, Ponziani-Steinitz Gambit",
+            "es-ES": "Defensa de los Dos Caballos, Gambito Ponziani-Steinitz",
+            "pt-PT": "Defesa dos Dois Cavalos, Gambito Ponziani-Steinitz",
+            "de": "Zweispringerspiel im Nachzug, Ponziani-Steinitz-Gambit",
+            "fr": "Défense des deux cavaliers, Gambit Ponziani-Steinitz",
+            "it": "Difesa dei due cavalli, Gambetto Ponziani-Steinitz"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Ponziani-Steinitz Gambit",
@@ -125,9 +191,15 @@
         {
           "id": "line-ca380c957d3875e0",
           "names": {
-            "en": "Two Knights Defense, Knight Attack, Normal Variation",
+            "en-US": "Two Knights Defense, Knight Attack, Normal Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque do Cavalo, Variante Normal",
-            "es": "Defensa de los Dos Caballos, Ataque del Caballo, Variante Normal"
+            "es-419": "Defensa de los Dos Caballos, Ataque del Caballo, Variante Normal",
+            "en-GB": "Two Knights Defence, Knight Attack, Normal Variation",
+            "es-ES": "Defensa de los Dos Caballos, Ataque del Caballo, Variante Normal",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque do Cavalo, Variante Normal",
+            "de": "Zweispringerspiel im Nachzug, Springerangriff, Normalvariante",
+            "fr": "Défense des deux cavaliers, Attaque du cavalier, Variante normale",
+            "it": "Difesa dei due cavalli, Attacco del cavallo, Variante normale"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Knight Attack, Normal Variation",
@@ -137,9 +209,15 @@
         {
           "id": "line-7ebe9964f8cbab4e",
           "names": {
-            "en": "Two Knights Defense, Polerio Defense",
+            "en-US": "Two Knights Defense, Polerio Defense",
             "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio",
-            "es": "Defensa de los Dos Caballos, Defensa Polerio"
+            "es-419": "Defensa de los Dos Caballos, Defensa Polerio",
+            "en-GB": "Two Knights Defence, Polerio Defence",
+            "es-ES": "Defensa de los Dos Caballos, Defensa Polerio",
+            "pt-PT": "Defesa dos Dois Cavalos, Defesa Polerio",
+            "de": "Zweispringerspiel im Nachzug, Polerio-Verteidigung",
+            "fr": "Défense des deux cavaliers, Défense Polerio",
+            "it": "Difesa dei due cavalli, Difesa Polerio"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense",
@@ -149,9 +227,15 @@
         {
           "id": "line-1b83d25529fcdce1",
           "names": {
-            "en": "Two Knights Defense, Polerio Defense, Bishop Check Line",
+            "en-US": "Two Knights Defense, Polerio Defense, Bishop Check Line",
             "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Linha do Xeque de Bispo",
-            "es": "Defensa de los Dos Caballos, Defensa Polerio, Línea del Jaque de Alfil"
+            "es-419": "Defensa de los Dos Caballos, Defensa Polerio, Línea del Jaque de Alfil",
+            "en-GB": "Two Knights Defence, Polerio Defence, Bishop Check Line",
+            "es-ES": "Defensa de los Dos Caballos, Defensa Polerio, Línea del Jaque de Alfil",
+            "pt-PT": "Defesa dos Dois Cavalos, Defesa Polerio, Linha do Xeque de Bispo",
+            "de": "Zweispringerspiel im Nachzug, Polerio-Verteidigung, Läuferschach-Abspiel",
+            "fr": "Défense des deux cavaliers, Défense Polerio, Ligne de l'échec du fou",
+            "it": "Difesa dei due cavalli, Difesa Polerio, Linea dello scacco d'alfiere"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Bishop Check Line",
@@ -161,9 +245,15 @@
         {
           "id": "line-e0034ef490d15d67",
           "names": {
-            "en": "Two Knights Defense",
+            "en-US": "Two Knights Defense",
             "pt-BR": "Defesa dos Dois Cavalos",
-            "es": "Defensa de los Dos Caballos"
+            "es-419": "Defensa de los Dos Caballos",
+            "en-GB": "Two Knights Defence",
+            "es-ES": "Defensa de los Dos Caballos",
+            "pt-PT": "Defesa dos Dois Cavalos",
+            "de": "Zweispringerspiel im Nachzug",
+            "fr": "Défense des deux cavaliers",
+            "it": "Difesa dei due cavalli"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense",
@@ -173,9 +263,15 @@
         {
           "id": "line-5af2eee6ad891f72",
           "names": {
-            "en": "Two Knights Defense, Polerio Defense, Suhle Defense",
+            "en-US": "Two Knights Defense, Polerio Defense, Suhle Defense",
             "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Defesa Suhle",
-            "es": "Defensa de los Dos Caballos, Defensa Polerio, Defensa Suhle"
+            "es-419": "Defensa de los Dos Caballos, Defensa Polerio, Defensa Suhle",
+            "en-GB": "Two Knights Defence, Polerio Defence, Suhle Defence",
+            "es-ES": "Defensa de los Dos Caballos, Defensa Polerio, Defensa Suhle",
+            "pt-PT": "Defesa dos Dois Cavalos, Defesa Polerio, Defesa Suhle",
+            "de": "Zweispringerspiel im Nachzug, Polerio-Verteidigung, Suhle-Verteidigung",
+            "fr": "Défense des deux cavaliers, Défense Polerio, Défense Suhle",
+            "it": "Difesa dei due cavalli, Difesa Polerio, Difesa Suhle"
           },
           "eco": "C59",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Suhle Defense",
@@ -185,9 +281,15 @@
         {
           "id": "line-80ed3b008a28e175",
           "names": {
-            "en": "Two Knights Defense, Knorre Variation",
+            "en-US": "Two Knights Defense, Knorre Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Knorre",
-            "es": "Defensa de los Dos Caballos, Variante Knorre"
+            "es-419": "Defensa de los Dos Caballos, Variante Knorre",
+            "en-GB": "Two Knights Defence, Knorre Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Knorre",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Knorre",
+            "de": "Zweispringerspiel im Nachzug, Knorre-Variante",
+            "fr": "Défense des deux cavaliers, Variante Knorre",
+            "it": "Difesa dei due cavalli, Variante Knorre"
           },
           "eco": "C59",
           "opening": "Italian Game: Two Knights Defense, Knorre Variation",
@@ -197,9 +299,15 @@
         {
           "id": "line-35d1b1e9aafddd88",
           "names": {
-            "en": "Two Knights Defense, Polerio Defense, Göring Variation",
+            "en-US": "Two Knights Defense, Polerio Defense, Göring Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Variante Göring",
-            "es": "Defensa de los Dos Caballos, Defensa Polerio, Variante Göring"
+            "es-419": "Defensa de los Dos Caballos, Defensa Polerio, Variante Göring",
+            "en-GB": "Two Knights Defence, Polerio Defence, Göring Variation",
+            "es-ES": "Defensa de los Dos Caballos, Defensa Polerio, Variante Göring",
+            "pt-PT": "Defesa dos Dois Cavalos, Defesa Polerio, Variante Göring",
+            "de": "Zweispringerspiel im Nachzug, Polerio-Verteidigung, Göring-Variante",
+            "fr": "Défense des deux cavaliers, Défense Polerio, Variante Göring",
+            "it": "Difesa dei due cavalli, Difesa Polerio, Variante Göring"
           },
           "eco": "C59",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Göring Variation",
@@ -209,9 +317,15 @@
         {
           "id": "line-d9a061268aff965a",
           "names": {
-            "en": "Two Knights Defense, Steinitz Variation",
+            "en-US": "Two Knights Defense, Steinitz Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Steinitz",
-            "es": "Defensa de los Dos Caballos, Variante Steinitz"
+            "es-419": "Defensa de los Dos Caballos, Variante Steinitz",
+            "en-GB": "Two Knights Defence, Steinitz Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Steinitz",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Steinitz",
+            "de": "Zweispringerspiel im Nachzug, Steinitz-Variante",
+            "fr": "Défense des deux cavaliers, Variante Steinitz",
+            "it": "Difesa dei due cavalli, Variante Steinitz"
           },
           "eco": "C59",
           "opening": "Italian Game: Two Knights Defense, Steinitz Variation",
@@ -221,9 +335,15 @@
         {
           "id": "line-a42cd26f5e152854",
           "names": {
-            "en": "Two Knights Defense, Polerio Defense, Bogoljubow Variation",
+            "en-US": "Two Knights Defense, Polerio Defense, Bogoljubow Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Variante Bogoljubow",
-            "es": "Defensa de los Dos Caballos, Defensa Polerio, Variante Bogoljubow"
+            "es-419": "Defensa de los Dos Caballos, Defensa Polerio, Variante Bogoljubow",
+            "en-GB": "Two Knights Defence, Polerio Defence, Bogoljubow Variation",
+            "es-ES": "Defensa de los Dos Caballos, Defensa Polerio, Variante Bogoljubow",
+            "pt-PT": "Defesa dos Dois Cavalos, Defesa Polerio, Variante Bogoljubow",
+            "de": "Zweispringerspiel im Nachzug, Polerio-Verteidigung, Bogoljubow-Variante",
+            "fr": "Défense des deux cavaliers, Défense Polerio, Variante Bogoljubow",
+            "it": "Difesa dei due cavalli, Difesa Polerio, Variante Bogoljubow"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Bogoljubow Variation",
@@ -233,9 +353,15 @@
         {
           "id": "line-eb5b32077939f5e2",
           "names": {
-            "en": "Two Knights Defense, Paoli Variation",
+            "en-US": "Two Knights Defense, Paoli Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Paoli",
-            "es": "Defensa de los Dos Caballos, Variante Paoli"
+            "es-419": "Defensa de los Dos Caballos, Variante Paoli",
+            "en-GB": "Two Knights Defence, Paoli Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Paoli",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Paoli",
+            "de": "Zweispringerspiel im Nachzug, Paoli-Variante",
+            "fr": "Défense des deux cavaliers, Variante Paoli",
+            "it": "Difesa dei due cavalli, Variante Paoli"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Paoli Variation",
@@ -245,9 +371,15 @@
         {
           "id": "line-b27c875d5b96a874",
           "names": {
-            "en": "Two Knights Defense, Colman Variation",
+            "en-US": "Two Knights Defense, Colman Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Colman",
-            "es": "Defensa de los Dos Caballos, Variante Colman"
+            "es-419": "Defensa de los Dos Caballos, Variante Colman",
+            "en-GB": "Two Knights Defence, Colman Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Colman",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Colman",
+            "de": "Zweispringerspiel im Nachzug, Colman-Variante",
+            "fr": "Défense des deux cavaliers, Variante Colman",
+            "it": "Difesa dei due cavalli, Variante Colman"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Colman Variation",
@@ -257,9 +389,15 @@
         {
           "id": "line-03875176e3a8526f",
           "names": {
-            "en": "Two Knights Defense, Blackburne Variation",
+            "en-US": "Two Knights Defense, Blackburne Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Blackburne",
-            "es": "Defensa de los Dos Caballos, Variante Blackburne"
+            "es-419": "Defensa de los Dos Caballos, Variante Blackburne",
+            "en-GB": "Two Knights Defence, Blackburne Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Blackburne",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Blackburne",
+            "de": "Zweispringerspiel im Nachzug, Blackburne-Variante",
+            "fr": "Défense des deux cavaliers, Variante Blackburne",
+            "it": "Difesa dei due cavalli, Variante Blackburne"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Blackburne Variation",
@@ -269,9 +407,15 @@
         {
           "id": "line-65cf9f8c74e1bdd2",
           "names": {
-            "en": "Two Knights Defense, Polerio Defense, Kieseritzky Variation",
+            "en-US": "Two Knights Defense, Polerio Defense, Kieseritzky Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Variante Kieseritzky",
-            "es": "Defensa de los Dos Caballos, Defensa Polerio, Variante Kieseritzky"
+            "es-419": "Defensa de los Dos Caballos, Defensa Polerio, Variante Kieseritzky",
+            "en-GB": "Two Knights Defence, Polerio Defence, Kieseritzky Variation",
+            "es-ES": "Defensa de los Dos Caballos, Defensa Polerio, Variante Kieseritzky",
+            "pt-PT": "Defesa dos Dois Cavalos, Defesa Polerio, Variante Kieseritzky",
+            "de": "Zweispringerspiel im Nachzug, Polerio-Verteidigung, Kieseritzky-Variante",
+            "fr": "Défense des deux cavaliers, Défense Polerio, Variante Kieseritzky",
+            "it": "Difesa dei due cavalli, Difesa Polerio, Variante Kieseritzky"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Kieseritzky Variation",
@@ -281,9 +425,15 @@
         {
           "id": "line-a696b8c0e4fb2897",
           "names": {
-            "en": "Two Knights Defense, Polerio Defense, Yankovich Variation",
+            "en-US": "Two Knights Defense, Polerio Defense, Yankovich Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Defesa Polerio, Variante Yankovich",
-            "es": "Defensa de los Dos Caballos, Defensa Polerio, Variante Yankovich"
+            "es-419": "Defensa de los Dos Caballos, Defensa Polerio, Variante Yankovich",
+            "en-GB": "Two Knights Defence, Polerio Defence, Yankovich Variation",
+            "es-ES": "Defensa de los Dos Caballos, Defensa Polerio, Variante Yankovich",
+            "pt-PT": "Defesa dos Dois Cavalos, Defesa Polerio, Variante Yankovich",
+            "de": "Zweispringerspiel im Nachzug, Polerio-Verteidigung, Yankovich-Variante",
+            "fr": "Défense des deux cavaliers, Défense Polerio, Variante Yankovich",
+            "it": "Difesa dei due cavalli, Difesa Polerio, Variante Yankovich"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Yankovich Variation",
@@ -293,9 +443,15 @@
         {
           "id": "line-095cefc34d76f6e3",
           "names": {
-            "en": "Two Knights Defense, Maróczy Variation",
+            "en-US": "Two Knights Defense, Maróczy Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Maróczy",
-            "es": "Defensa de los Dos Caballos, Variante Maróczy"
+            "es-419": "Defensa de los Dos Caballos, Variante Maróczy",
+            "en-GB": "Two Knights Defence, Maróczy Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Maróczy",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Maróczy",
+            "de": "Zweispringerspiel im Nachzug, Maróczy-Variante",
+            "fr": "Défense des deux cavaliers, Variante Maróczy",
+            "it": "Difesa dei due cavalli, Variante Maróczy"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Maróczy Variation",
@@ -305,9 +461,15 @@
         {
           "id": "line-a3d189dff965e581",
           "names": {
-            "en": "Two Knights Defense, Kloss Gambit",
+            "en-US": "Two Knights Defense, Kloss Gambit",
             "pt-BR": "Defesa dos Dois Cavalos, Gambito Kloss",
-            "es": "Defensa de los Dos Caballos, Gambito Kloss"
+            "es-419": "Defensa de los Dos Caballos, Gambito Kloss",
+            "en-GB": "Two Knights Defence, Kloss Gambit",
+            "es-ES": "Defensa de los Dos Caballos, Gambito Kloss",
+            "pt-PT": "Defesa dos Dois Cavalos, Gambito Kloss",
+            "de": "Zweispringerspiel im Nachzug, Kloss-Gambit",
+            "fr": "Défense des deux cavaliers, Gambit Kloss",
+            "it": "Difesa dei due cavalli, Gambetto Kloss"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Kloss Gambit",
@@ -317,9 +479,15 @@
         {
           "id": "line-9f8bb31652c1641c",
           "names": {
-            "en": "Two Knights Defense, Fritz Variation",
+            "en-US": "Two Knights Defense, Fritz Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Fritz",
-            "es": "Defensa de los Dos Caballos, Variante Fritz"
+            "es-419": "Defensa de los Dos Caballos, Variante Fritz",
+            "en-GB": "Two Knights Defence, Fritz Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Fritz",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Fritz",
+            "de": "Zweispringerspiel im Nachzug, Fritz-Variante",
+            "fr": "Défense des deux cavaliers, Variante Fritz",
+            "it": "Difesa dei due cavalli, Variante Fritz"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Fritz Variation",
@@ -329,9 +497,15 @@
         {
           "id": "line-22c8d095c971c94d",
           "names": {
-            "en": "Two Knights Defense, Fritz, Gruber Variation",
+            "en-US": "Two Knights Defense, Fritz, Gruber Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Fritz, Variante Gruber",
-            "es": "Defensa de los Dos Caballos, Fritz, Variante Gruber"
+            "es-419": "Defensa de los Dos Caballos, Fritz, Variante Gruber",
+            "en-GB": "Two Knights Defence, Fritz, Gruber Variation",
+            "es-ES": "Defensa de los Dos Caballos, Fritz, Variante Gruber",
+            "pt-PT": "Defesa dos Dois Cavalos, Fritz, Variante Gruber",
+            "de": "Zweispringerspiel im Nachzug, Fritz, Gruber-Variante",
+            "fr": "Défense des deux cavaliers, Fritz, Variante Gruber",
+            "it": "Difesa dei due cavalli, Fritz, Variante Gruber"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Fritz, Gruber Variation",
@@ -341,9 +515,15 @@
         {
           "id": "line-28118d0b26549d3e",
           "names": {
-            "en": "Two Knights Defense, Fried Liver Attack",
+            "en-US": "Two Knights Defense, Fried Liver Attack",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque Fígado Frito",
-            "es": "Defensa de los Dos Caballos, Ataque Hígado Frito"
+            "es-419": "Defensa de los Dos Caballos, Ataque Hígado Frito",
+            "en-GB": "Two Knights Defence, Fried Liver Attack",
+            "es-ES": "Defensa de los Dos Caballos, Ataque Hígado Frito",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque Fígado Frito",
+            "de": "Zweispringerspiel im Nachzug, Fegatello-Angriff",
+            "fr": "Défense des deux cavaliers, Attaque Fegatello",
+            "it": "Difesa dei due cavalli, Attacco Fegatello"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Fried Liver Attack",
@@ -353,9 +533,15 @@
         {
           "id": "line-c7421bf756d9926a",
           "names": {
-            "en": "Two Knights Defense, Fegatello Attack, Leonhardt Variation",
+            "en-US": "Two Knights Defense, Fegatello Attack, Leonhardt Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque Fegatello, Variante Leonhardt",
-            "es": "Defensa de los Dos Caballos, Ataque Fegatello, Variante Leonhardt"
+            "es-419": "Defensa de los Dos Caballos, Ataque Fegatello, Variante Leonhardt",
+            "en-GB": "Two Knights Defence, Fegatello Attack, Leonhardt Variation",
+            "es-ES": "Defensa de los Dos Caballos, Ataque Fegatello, Variante Leonhardt",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque Fegatello, Variante Leonhardt",
+            "de": "Zweispringerspiel im Nachzug, Fegatello-Angriff, Leonhardt-Variante",
+            "fr": "Défense des deux cavaliers, Attaque Fegatello, Variante Leonhardt",
+            "it": "Difesa dei due cavalli, Attacco Fegatello, Variante Leonhardt"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Fegatello Attack, Leonhardt Variation",
@@ -365,9 +551,15 @@
         {
           "id": "line-a9fbc0797b619c01",
           "names": {
-            "en": "Two Knights Defense, Lolli Attack",
+            "en-US": "Two Knights Defense, Lolli Attack",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque Lolli",
-            "es": "Defensa de los Dos Caballos, Ataque Lolli"
+            "es-419": "Defensa de los Dos Caballos, Ataque Lolli",
+            "en-GB": "Two Knights Defence, Lolli Attack",
+            "es-ES": "Defensa de los Dos Caballos, Ataque Lolli",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque Lolli",
+            "de": "Zweispringerspiel im Nachzug, Lolli-Angriff",
+            "fr": "Défense des deux cavaliers, Attaque Lolli",
+            "it": "Difesa dei due cavalli, Attacco Lolli"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Lolli Attack",
@@ -377,9 +569,15 @@
         {
           "id": "line-4172e24af11e3075",
           "names": {
-            "en": "Two Knights Defense, Pincus Variation",
+            "en-US": "Two Knights Defense, Pincus Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Pincus",
-            "es": "Defensa de los Dos Caballos, Variante Pincus"
+            "es-419": "Defensa de los Dos Caballos, Variante Pincus",
+            "en-GB": "Two Knights Defence, Pincus Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Pincus",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Pincus",
+            "de": "Zweispringerspiel im Nachzug, Pincus-Variante",
+            "fr": "Défense des deux cavaliers, Variante Pincus",
+            "it": "Difesa dei due cavalli, Variante Pincus"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Pincus Variation",
@@ -389,9 +587,15 @@
         {
           "id": "line-929545e80732f242",
           "names": {
-            "en": "Two Knights Defense, Ulvestad Variation",
+            "en-US": "Two Knights Defense, Ulvestad Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Ulvestad",
-            "es": "Defensa de los Dos Caballos, Variante Ulvestad"
+            "es-419": "Defensa de los Dos Caballos, Variante Ulvestad",
+            "en-GB": "Two Knights Defence, Ulvestad Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Ulvestad",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Ulvestad",
+            "de": "Zweispringerspiel im Nachzug, Ulvestad-Variante",
+            "fr": "Défense des deux cavaliers, Variante Ulvestad",
+            "it": "Difesa dei due cavalli, Variante Ulvestad"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Ulvestad Variation",
@@ -401,9 +605,15 @@
         {
           "id": "line-f7c2bfcef72a7331",
           "names": {
-            "en": "Two Knights Defense, Ulvestad Variation, Kurkin Gambit",
+            "en-US": "Two Knights Defense, Ulvestad Variation, Kurkin Gambit",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Ulvestad, Gambito Kurkin",
-            "es": "Defensa de los Dos Caballos, Variante Ulvestad, Gambito Kurkin"
+            "es-419": "Defensa de los Dos Caballos, Variante Ulvestad, Gambito Kurkin",
+            "en-GB": "Two Knights Defence, Ulvestad Variation, Kurkin Gambit",
+            "es-ES": "Defensa de los Dos Caballos, Variante Ulvestad, Gambito Kurkin",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Ulvestad, Gambito Kurkin",
+            "de": "Zweispringerspiel im Nachzug, Ulvestad-Variante, Kurkin-Gambit",
+            "fr": "Défense des deux cavaliers, Variante Ulvestad, Gambit Kurkin",
+            "it": "Difesa dei due cavalli, Variante Ulvestad, Gambetto Kurkin"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Ulvestad Variation, Kurkin Gambit",
@@ -413,9 +623,15 @@
         {
           "id": "line-97f3949ed77e5b1f",
           "names": {
-            "en": "Two Knights Defense",
+            "en-US": "Two Knights Defense",
             "pt-BR": "Defesa dos Dois Cavalos",
-            "es": "Defensa de los Dos Caballos"
+            "es-419": "Defensa de los Dos Caballos",
+            "en-GB": "Two Knights Defence",
+            "es-ES": "Defensa de los Dos Caballos",
+            "pt-PT": "Defesa dos Dois Cavalos",
+            "de": "Zweispringerspiel im Nachzug",
+            "fr": "Défense des deux cavaliers",
+            "it": "Difesa dei due cavalli"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense",
@@ -425,9 +641,15 @@
         {
           "id": "line-b9e7d38dccb3d11a",
           "names": {
-            "en": "Two Knights Defense, Modern Bishop's Opening",
+            "en-US": "Two Knights Defense, Modern Bishop's Opening",
             "pt-BR": "Defesa dos Dois Cavalos, Abertura do Bispo Moderna",
-            "es": "Defensa de los Dos Caballos, Apertura de Alfil Moderna"
+            "es-419": "Defensa de los Dos Caballos, Apertura de Alfil Moderna",
+            "en-GB": "Two Knights Defence, Modern Bishop's Opening",
+            "es-ES": "Defensa de los Dos Caballos, Apertura de Alfil Moderna",
+            "pt-PT": "Defesa dos Dois Cavalos, Abertura do Bispo Moderna",
+            "de": "Zweispringerspiel im Nachzug, Modernes Läuferspiel",
+            "fr": "Défense des deux cavaliers, Début du fou moderne",
+            "it": "Difesa dei due cavalli, Partita di alfiere moderna"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
@@ -437,9 +659,15 @@
         {
           "id": "line-eae69efa7261b24d",
           "names": {
-            "en": "Two Knights Defense, Modern Bishop's Opening",
+            "en-US": "Two Knights Defense, Modern Bishop's Opening",
             "pt-BR": "Defesa dos Dois Cavalos, Abertura do Bispo Moderna",
-            "es": "Defensa de los Dos Caballos, Apertura de Alfil Moderna"
+            "es-419": "Defensa de los Dos Caballos, Apertura de Alfil Moderna",
+            "en-GB": "Two Knights Defence, Modern Bishop's Opening",
+            "es-ES": "Defensa de los Dos Caballos, Apertura de Alfil Moderna",
+            "pt-PT": "Defesa dos Dois Cavalos, Abertura do Bispo Moderna",
+            "de": "Zweispringerspiel im Nachzug, Modernes Läuferspiel",
+            "fr": "Défense des deux cavaliers, Début du fou moderne",
+            "it": "Difesa dei due cavalli, Partita di alfiere moderna"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
@@ -449,9 +677,15 @@
         {
           "id": "line-b13be2d62ab7ff50",
           "names": {
-            "en": "Two Knights Defense, Modern Bishop's Opening",
+            "en-US": "Two Knights Defense, Modern Bishop's Opening",
             "pt-BR": "Defesa dos Dois Cavalos, Abertura do Bispo Moderna",
-            "es": "Defensa de los Dos Caballos, Apertura de Alfil Moderna"
+            "es-419": "Defensa de los Dos Caballos, Apertura de Alfil Moderna",
+            "en-GB": "Two Knights Defence, Modern Bishop's Opening",
+            "es-ES": "Defensa de los Dos Caballos, Apertura de Alfil Moderna",
+            "pt-PT": "Defesa dos Dois Cavalos, Abertura do Bispo Moderna",
+            "de": "Zweispringerspiel im Nachzug, Modernes Läuferspiel",
+            "fr": "Défense des deux cavaliers, Début du fou moderne",
+            "it": "Difesa dei due cavalli, Partita di alfiere moderna"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
@@ -461,9 +695,15 @@
         {
           "id": "line-522f637b9ed026f7",
           "names": {
-            "en": "Two Knights Defense, Open Variation",
+            "en-US": "Two Knights Defense, Open Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Aberta",
-            "es": "Defensa de los Dos Caballos, Variante Abierta"
+            "es-419": "Defensa de los Dos Caballos, Variante Abierta",
+            "en-GB": "Two Knights Defence, Open Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Abierta",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Aberta",
+            "de": "Zweispringerspiel im Nachzug, Offene Variante",
+            "fr": "Défense des deux cavaliers, Variante ouverte",
+            "it": "Difesa dei due cavalli, Variante aperta"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Open Variation",
@@ -473,9 +713,15 @@
         {
           "id": "line-1943306cac423756",
           "names": {
-            "en": "Two Knights Defense, Perreux Variation",
+            "en-US": "Two Knights Defense, Perreux Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Perreux",
-            "es": "Defensa de los Dos Caballos, Variante Perreux"
+            "es-419": "Defensa de los Dos Caballos, Variante Perreux",
+            "en-GB": "Two Knights Defence, Perreux Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Perreux",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Perreux",
+            "de": "Zweispringerspiel im Nachzug, Perreux-Variante",
+            "fr": "Défense des deux cavaliers, Variante Perreux",
+            "it": "Difesa dei due cavalli, Variante Perreux"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Perreux Variation",
@@ -485,9 +731,15 @@
         {
           "id": "line-69509bb1d4dd3e42",
           "names": {
-            "en": "Two Knights Defense, Max Lange Attack, Krause Variation",
+            "en-US": "Two Knights Defense, Max Lange Attack, Krause Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque Max Lange, Variante Krause",
-            "es": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Krause"
+            "es-419": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Krause",
+            "en-GB": "Two Knights Defence, Max Lange Attack, Krause Variation",
+            "es-ES": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Krause",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque Max Lange, Variante Krause",
+            "de": "Zweispringerspiel im Nachzug, Max-Lange-Angriff, Krause-Variante",
+            "fr": "Défense des deux cavaliers, Attaque Max Lange, Variante Krause",
+            "it": "Difesa dei due cavalli, Attacco Max Lange, Variante Krause"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Krause Variation",
@@ -497,9 +749,15 @@
         {
           "id": "line-a97a201652fb456a",
           "names": {
-            "en": "Two Knights Defense, Max Lange Attack, Rubinstein Variation",
+            "en-US": "Two Knights Defense, Max Lange Attack, Rubinstein Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque Max Lange, Variante Rubinstein",
-            "es": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Rubinstein"
+            "es-419": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Rubinstein",
+            "en-GB": "Two Knights Defence, Max Lange Attack, Rubinstein Variation",
+            "es-ES": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Rubinstein",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque Max Lange, Variante Rubinstein",
+            "de": "Zweispringerspiel im Nachzug, Max-Lange-Angriff, Rubinstein-Variante",
+            "fr": "Défense des deux cavaliers, Attaque Max Lange, Variante Rubinstein",
+            "it": "Difesa dei due cavalli, Attacco Max Lange, Variante Rubinstein"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Rubinstein Variation",
@@ -509,9 +767,15 @@
         {
           "id": "line-1eb03bc76867af2a",
           "names": {
-            "en": "Two Knights Defense, Max Lange Attack, Berger Variation",
+            "en-US": "Two Knights Defense, Max Lange Attack, Berger Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque Max Lange, Variante Berger",
-            "es": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Berger"
+            "es-419": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Berger",
+            "en-GB": "Two Knights Defence, Max Lange Attack, Berger Variation",
+            "es-ES": "Defensa de los Dos Caballos, Ataque Max Lange, Variante Berger",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque Max Lange, Variante Berger",
+            "de": "Zweispringerspiel im Nachzug, Max-Lange-Angriff, Berger-Variante",
+            "fr": "Défense des deux cavaliers, Attaque Max Lange, Variante Berger",
+            "it": "Difesa dei due cavalli, Attacco Max Lange, Variante Berger"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Berger Variation",
@@ -521,9 +785,15 @@
         {
           "id": "line-4ca98cf73196de46",
           "names": {
-            "en": "Two Knights Defense, Keidansky Variation",
+            "en-US": "Two Knights Defense, Keidansky Variation",
             "pt-BR": "Defesa dos Dois Cavalos, Variante Keidansky",
-            "es": "Defensa de los Dos Caballos, Variante Keidansky"
+            "es-419": "Defensa de los Dos Caballos, Variante Keidansky",
+            "en-GB": "Two Knights Defence, Keidansky Variation",
+            "es-ES": "Defensa de los Dos Caballos, Variante Keidansky",
+            "pt-PT": "Defesa dos Dois Cavalos, Variante Keidansky",
+            "de": "Zweispringerspiel im Nachzug, Keidansky-Variante",
+            "fr": "Défense des deux cavaliers, Variante Keidansky",
+            "it": "Difesa dei due cavalli, Variante Keidansky"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Keidansky Variation",
@@ -533,9 +803,15 @@
         {
           "id": "line-91cc850d5958e902",
           "names": {
-            "en": "Two Knights Defense, Max Lange Attack, Loman Defense",
+            "en-US": "Two Knights Defense, Max Lange Attack, Loman Defense",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque Max Lange, Defesa Loman",
-            "es": "Defensa de los Dos Caballos, Ataque Max Lange, Defensa Loman"
+            "es-419": "Defensa de los Dos Caballos, Ataque Max Lange, Defensa Loman",
+            "en-GB": "Two Knights Defence, Max Lange Attack, Loman Defence",
+            "es-ES": "Defensa de los Dos Caballos, Ataque Max Lange, Defensa Loman",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque Max Lange, Defesa Loman",
+            "de": "Zweispringerspiel im Nachzug, Max-Lange-Angriff, Loman-Verteidigung",
+            "fr": "Défense des deux cavaliers, Attaque Max Lange, Défense Loman",
+            "it": "Difesa dei due cavalli, Attacco Max Lange, Difesa Loman"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Loman Defense",
@@ -545,9 +821,15 @@
         {
           "id": "line-200a4d63bbd0a20a",
           "names": {
-            "en": "Two Knights Defense, Max Lange Attack",
+            "en-US": "Two Knights Defense, Max Lange Attack",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque Max Lange",
-            "es": "Defensa de los Dos Caballos, Ataque Max Lange"
+            "es-419": "Defensa de los Dos Caballos, Ataque Max Lange",
+            "en-GB": "Two Knights Defence, Max Lange Attack",
+            "es-ES": "Defensa de los Dos Caballos, Ataque Max Lange",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque Max Lange",
+            "de": "Zweispringerspiel im Nachzug, Max-Lange-Angriff",
+            "fr": "Défense des deux cavaliers, Attaque Max Lange",
+            "it": "Difesa dei due cavalli, Attacco Max Lange"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Max Lange Attack",
@@ -557,9 +839,15 @@
         {
           "id": "line-be420e7e87202a55",
           "names": {
-            "en": "Two Knights Defense, Yurdansky Attack",
+            "en-US": "Two Knights Defense, Yurdansky Attack",
             "pt-BR": "Defesa dos Dois Cavalos, Ataque Yurdansky",
-            "es": "Defensa de los Dos Caballos, Ataque Yurdansky"
+            "es-419": "Defensa de los Dos Caballos, Ataque Yurdansky",
+            "en-GB": "Two Knights Defence, Yurdansky Attack",
+            "es-ES": "Defensa de los Dos Caballos, Ataque Yurdansky",
+            "pt-PT": "Defesa dos Dois Cavalos, Ataque Yurdansky",
+            "de": "Zweispringerspiel im Nachzug, Yurdansky-Angriff",
+            "fr": "Défense des deux cavaliers, Attaque Yurdansky",
+            "it": "Difesa dei due cavalli, Attacco Yurdansky"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Yurdansky Attack",
@@ -570,17 +858,29 @@
     },
     {
       "names": {
-        "en": "Classical Variation",
+        "en-US": "Classical Variation",
         "pt-BR": "Variante Clássica",
-        "es": "Variante Clásica"
+        "es-419": "Variante Clásica",
+        "en-GB": "Classical Variation",
+        "es-ES": "Variante Clásica",
+        "pt-PT": "Variante Clássica",
+        "de": "Klassische Variante",
+        "fr": "Variante classique",
+        "it": "Variante classica"
       },
       "lines": [
         {
           "id": "line-c95031e36bab1bca",
           "names": {
-            "en": "Classical Variation, Albin Gambit",
+            "en-US": "Classical Variation, Albin Gambit",
             "pt-BR": "Variante Clássica, Gambito Albin",
-            "es": "Variante Clásica, Gambito Albin"
+            "es-419": "Variante Clásica, Gambito Albin",
+            "en-GB": "Classical Variation, Albin Gambit",
+            "es-ES": "Variante Clásica, Gambito Albin",
+            "pt-PT": "Variante Clássica, Gambito Albin",
+            "de": "Klassische Variante, Albin-Gambit",
+            "fr": "Variante classique, Gambit Albin",
+            "it": "Variante classica, Gambetto Albin"
           },
           "eco": "C50",
           "opening": "Italian Game: Classical Variation, Albin Gambit",
@@ -590,9 +890,15 @@
         {
           "id": "line-4de60f5bfaa402b4",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -602,9 +908,15 @@
         {
           "id": "line-8e0518e46ac5d588",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo, with a5",
+            "en-US": "Classical Variation, Giuoco Pianissimo, with a5",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo, com a5",
-            "es": "Variante Clásica, Giuoco Pianissimo, con a5"
+            "es-419": "Variante Clásica, Giuoco Pianissimo, con a5",
+            "en-GB": "Classical Variation, Giuoco Pianissimo, with a5",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo, con a5",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo, com a5",
+            "de": "Klassische Variante, Giuoco Pianissimo, mit a5",
+            "fr": "Variante classique, Giuoco pianissimo, avec a5",
+            "it": "Variante classica, Giuoco pianissimo, con a5"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a5",
@@ -614,9 +926,15 @@
         {
           "id": "line-75975ce3be525b80",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -626,9 +944,15 @@
         {
           "id": "line-42fd0757e4ed17f2",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -638,9 +962,15 @@
         {
           "id": "line-9e2cd5018a7b0d2b",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -650,9 +980,15 @@
         {
           "id": "line-bef93a610cdd9c43",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -662,9 +998,15 @@
         {
           "id": "line-fba1dfac840909d0",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -674,9 +1016,15 @@
         {
           "id": "line-5271c92b4d9f803d",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -686,9 +1034,15 @@
         {
           "id": "line-8c7cebdb88ecdb19",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -698,9 +1052,15 @@
         {
           "id": "line-6b29bd26a6ab2bb4",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -710,9 +1070,15 @@
         {
           "id": "line-fae99720e3be5319",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -722,9 +1088,15 @@
         {
           "id": "line-c3b556f8bc48372e",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -734,9 +1106,15 @@
         {
           "id": "line-09d37e44da9cde40",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo, with h6",
+            "en-US": "Classical Variation, Giuoco Pianissimo, with h6",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo, com h6",
-            "es": "Variante Clásica, Giuoco Pianissimo, con h6"
+            "es-419": "Variante Clásica, Giuoco Pianissimo, con h6",
+            "en-GB": "Classical Variation, Giuoco Pianissimo, with h6",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo, con h6",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo, com h6",
+            "de": "Klassische Variante, Giuoco Pianissimo, mit h6",
+            "fr": "Variante classique, Giuoco pianissimo, avec h6",
+            "it": "Variante classica, Giuoco pianissimo, con h6"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with h6",
@@ -746,9 +1124,15 @@
         {
           "id": "line-fcf3a244480da7a3",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -758,9 +1142,15 @@
         {
           "id": "line-c7361527ac0b6a99",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -770,9 +1160,15 @@
         {
           "id": "line-b2f446fed741acae",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -782,9 +1178,15 @@
         {
           "id": "line-43da6eda081ae301",
           "names": {
-            "en": "Classical Variation",
+            "en-US": "Classical Variation",
             "pt-BR": "Variante Clássica",
-            "es": "Variante Clásica"
+            "es-419": "Variante Clásica",
+            "en-GB": "Classical Variation",
+            "es-ES": "Variante Clásica",
+            "pt-PT": "Variante Clássica",
+            "de": "Klassische Variante",
+            "fr": "Variante classique",
+            "it": "Variante classica"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation",
@@ -794,9 +1196,15 @@
         {
           "id": "line-c4dff4b92727f3fa",
           "names": {
-            "en": "Classical Variation",
+            "en-US": "Classical Variation",
             "pt-BR": "Variante Clássica",
-            "es": "Variante Clásica"
+            "es-419": "Variante Clásica",
+            "en-GB": "Classical Variation",
+            "es-ES": "Variante Clásica",
+            "pt-PT": "Variante Clássica",
+            "de": "Klassische Variante",
+            "fr": "Variante classique",
+            "it": "Variante classica"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation",
@@ -806,9 +1214,15 @@
         {
           "id": "line-2be06894d8a8935d",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -818,9 +1232,15 @@
         {
           "id": "line-d15fb005ce63db6f",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo, with a6",
+            "en-US": "Classical Variation, Giuoco Pianissimo, with a6",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo, com a6",
-            "es": "Variante Clásica, Giuoco Pianissimo, con a6"
+            "es-419": "Variante Clásica, Giuoco Pianissimo, con a6",
+            "en-GB": "Classical Variation, Giuoco Pianissimo, with a6",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo, con a6",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo, com a6",
+            "de": "Klassische Variante, Giuoco Pianissimo, mit a6",
+            "fr": "Variante classique, Giuoco pianissimo, avec a6",
+            "it": "Variante classica, Giuoco pianissimo, con a6"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a6",
@@ -830,9 +1250,15 @@
         {
           "id": "line-810de248c7663e5c",
           "names": {
-            "en": "Classical Variation, with d5",
+            "en-US": "Classical Variation, with d5",
             "pt-BR": "Variante Clássica, com d5",
-            "es": "Variante Clásica, con d5"
+            "es-419": "Variante Clásica, con d5",
+            "en-GB": "Classical Variation, with d5",
+            "es-ES": "Variante Clásica, con d5",
+            "pt-PT": "Variante Clássica, com d5",
+            "de": "Klassische Variante, mit d5",
+            "fr": "Variante classique, avec d5",
+            "it": "Variante classica, con d5"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, with d5",
@@ -842,9 +1268,15 @@
         {
           "id": "line-21cd630f4f06c3ff",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -854,9 +1286,15 @@
         {
           "id": "line-877a2a41762b215c",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo",
+            "en-US": "Classical Variation, Giuoco Pianissimo",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo",
-            "es": "Variante Clásica, Giuoco Pianissimo"
+            "es-419": "Variante Clásica, Giuoco Pianissimo",
+            "en-GB": "Classical Variation, Giuoco Pianissimo",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo",
+            "de": "Klassische Variante, Giuoco Pianissimo",
+            "fr": "Variante classique, Giuoco pianissimo",
+            "it": "Variante classica, Giuoco pianissimo"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -866,9 +1304,15 @@
         {
           "id": "line-af43997229f9b69e",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo, with a6",
+            "en-US": "Classical Variation, Giuoco Pianissimo, with a6",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo, com a6",
-            "es": "Variante Clásica, Giuoco Pianissimo, con a6"
+            "es-419": "Variante Clásica, Giuoco Pianissimo, con a6",
+            "en-GB": "Classical Variation, Giuoco Pianissimo, with a6",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo, con a6",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo, com a6",
+            "de": "Klassische Variante, Giuoco Pianissimo, mit a6",
+            "fr": "Variante classique, Giuoco pianissimo, avec a6",
+            "it": "Variante classica, Giuoco pianissimo, con a6"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a6",
@@ -878,9 +1322,15 @@
         {
           "id": "line-1fe955ee37480fca",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo, Main Line",
+            "en-US": "Classical Variation, Giuoco Pianissimo, Main Line",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo, Linha Principal",
-            "es": "Variante Clásica, Giuoco Pianissimo, Línea Principal"
+            "es-419": "Variante Clásica, Giuoco Pianissimo, Línea Principal",
+            "en-GB": "Classical Variation, Giuoco Pianissimo, Main Line",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo, Línea Principal",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo, Linha Principal",
+            "de": "Klassische Variante, Giuoco Pianissimo, Hauptvariante",
+            "fr": "Variante classique, Giuoco pianissimo, Ligne principale",
+            "it": "Variante classica, Giuoco pianissimo, Linea principale"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, Main Line",
@@ -890,9 +1340,15 @@
         {
           "id": "line-be9bf55d5915e98c",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo, with a4 a5",
+            "en-US": "Classical Variation, Giuoco Pianissimo, with a4 a5",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo, com a4 a5",
-            "es": "Variante Clásica, Giuoco Pianissimo, con a4 a5"
+            "es-419": "Variante Clásica, Giuoco Pianissimo, con a4 a5",
+            "en-GB": "Classical Variation, Giuoco Pianissimo, with a4 a5",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo, con a4 a5",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo, com a4 a5",
+            "de": "Klassische Variante, Giuoco Pianissimo, mit a4 a5",
+            "fr": "Variante classique, Giuoco pianissimo, avec a4 a5",
+            "it": "Variante classica, Giuoco pianissimo, con a4 a5"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a4 a5",
@@ -902,9 +1358,15 @@
         {
           "id": "line-5c8606caa5e75c8a",
           "names": {
-            "en": "Classical Variation, Giuoco Pianissimo, Albin Variation",
+            "en-US": "Classical Variation, Giuoco Pianissimo, Albin Variation",
             "pt-BR": "Variante Clássica, Giuoco Pianissimo, Variante Albin",
-            "es": "Variante Clásica, Giuoco Pianissimo, Variante Albin"
+            "es-419": "Variante Clásica, Giuoco Pianissimo, Variante Albin",
+            "en-GB": "Classical Variation, Giuoco Pianissimo, Albin Variation",
+            "es-ES": "Variante Clásica, Giuoco Pianissimo, Variante Albin",
+            "pt-PT": "Variante Clássica, Giuoco Pianissimo, Variante Albin",
+            "de": "Klassische Variante, Giuoco Pianissimo, Albin-Variante",
+            "fr": "Variante classique, Giuoco pianissimo, Variante Albin",
+            "it": "Variante classica, Giuoco pianissimo, Variante Albin"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, Albin Variation",
@@ -914,9 +1376,15 @@
         {
           "id": "line-f73cb7044c6806e7",
           "names": {
-            "en": "Classical Variation, Center Attack",
+            "en-US": "Classical Variation, Center Attack",
             "pt-BR": "Variante Clássica, Ataque ao Centro",
-            "es": "Variante Clásica, Ataque al Centro"
+            "es-419": "Variante Clásica, Ataque al Centro",
+            "en-GB": "Classical Variation, Centre Attack",
+            "es-ES": "Variante Clásica, Ataque al Centro",
+            "pt-PT": "Variante Clássica, Ataque ao Centro",
+            "de": "Klassische Variante, Zentrumsangriff",
+            "fr": "Variante classique, Attaque au centre",
+            "it": "Variante classica, Attacco al centro"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Center Attack",
@@ -926,9 +1394,15 @@
         {
           "id": "line-7e08609551931a52",
           "names": {
-            "en": "Classical Variation, Greco Gambit, Dubov Italian",
+            "en-US": "Classical Variation, Greco Gambit, Dubov Italian",
             "pt-BR": "Variante Clássica, Gambito Greco, Italiana Dubov",
-            "es": "Variante Clásica, Gambito Greco, Italiana Dubov"
+            "es-419": "Variante Clásica, Gambito Greco, Italiana Dubov",
+            "en-GB": "Classical Variation, Greco Gambit, Dubov Italian",
+            "es-ES": "Variante Clásica, Gambito Greco, Italiana Dubov",
+            "pt-PT": "Variante Clássica, Gambito Greco, Italiana Dubov",
+            "de": "Klassische Variante, Greco-Gambit, Dubow-Italienisch",
+            "fr": "Variante classique, Gambit Greco, Italienne Doubov",
+            "it": "Variante classica, Gambetto Greco, Italiana Dubov"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Dubov Italian",
@@ -938,9 +1412,15 @@
         {
           "id": "line-57e4b673094638f6",
           "names": {
-            "en": "Classical Variation, Greco Gambit, Traditional Line",
+            "en-US": "Classical Variation, Greco Gambit, Traditional Line",
             "pt-BR": "Variante Clássica, Gambito Greco, Linha Tradicional",
-            "es": "Variante Clásica, Gambito Greco, Línea Tradicional"
+            "es-419": "Variante Clásica, Gambito Greco, Línea Tradicional",
+            "en-GB": "Classical Variation, Greco Gambit, Traditional Line",
+            "es-ES": "Variante Clásica, Gambito Greco, Línea Tradicional",
+            "pt-PT": "Variante Clássica, Gambito Greco, Linha Tradicional",
+            "de": "Klassische Variante, Greco-Gambit, Traditionelles Abspiel",
+            "fr": "Variante classique, Gambit Greco, Ligne traditionnelle",
+            "it": "Variante classica, Gambetto Greco, Linea tradizionale"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Traditional Line",
@@ -950,9 +1430,15 @@
         {
           "id": "line-3d2dcbf8a60c5395",
           "names": {
-            "en": "Classical Variation, Greco Gambit, Main Line",
+            "en-US": "Classical Variation, Greco Gambit, Main Line",
             "pt-BR": "Variante Clássica, Gambito Greco, Linha Principal",
-            "es": "Variante Clásica, Gambito Greco, Línea Principal"
+            "es-419": "Variante Clásica, Gambito Greco, Línea Principal",
+            "en-GB": "Classical Variation, Greco Gambit, Main Line",
+            "es-ES": "Variante Clásica, Gambito Greco, Línea Principal",
+            "pt-PT": "Variante Clássica, Gambito Greco, Linha Principal",
+            "de": "Klassische Variante, Greco-Gambit, Hauptvariante",
+            "fr": "Variante classique, Gambit Greco, Ligne principale",
+            "it": "Variante classica, Gambetto Greco, Linea principale"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Main Line",
@@ -962,9 +1448,15 @@
         {
           "id": "line-a119969db711b49d",
           "names": {
-            "en": "Classical Variation, Greco Gambit, Moeller-Therkatz Attack",
+            "en-US": "Classical Variation, Greco Gambit, Moeller-Therkatz Attack",
             "pt-BR": "Variante Clássica, Gambito Greco, Ataque Moeller-Therkatz",
-            "es": "Variante Clásica, Gambito Greco, Ataque Moeller-Therkatz"
+            "es-419": "Variante Clásica, Gambito Greco, Ataque Moeller-Therkatz",
+            "en-GB": "Classical Variation, Greco Gambit, Moeller-Therkatz Attack",
+            "es-ES": "Variante Clásica, Gambito Greco, Ataque Moeller-Therkatz",
+            "pt-PT": "Variante Clássica, Gambito Greco, Ataque Moeller-Therkatz",
+            "de": "Klassische Variante, Greco-Gambit, Moeller-Therkatz-Angriff",
+            "fr": "Variante classique, Gambit Greco, Attaque Moeller-Therkatz",
+            "it": "Variante classica, Gambetto Greco, Attacco Moeller-Therkatz"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Moeller-Therkatz Attack",
@@ -974,9 +1466,15 @@
         {
           "id": "line-334dcdcc6639e9c2",
           "names": {
-            "en": "Classical Variation, Greco Gambit, Moeller-Bayonet Attack",
+            "en-US": "Classical Variation, Greco Gambit, Moeller-Bayonet Attack",
             "pt-BR": "Variante Clássica, Gambito Greco, Ataque Moeller-Bayonet",
-            "es": "Variante Clásica, Gambito Greco, Ataque Moeller-Bayonet"
+            "es-419": "Variante Clásica, Gambito Greco, Ataque Moeller-Bayonet",
+            "en-GB": "Classical Variation, Greco Gambit, Moeller-Bayonet Attack",
+            "es-ES": "Variante Clásica, Gambito Greco, Ataque Moeller-Bayonet",
+            "pt-PT": "Variante Clássica, Gambito Greco, Ataque Moeller-Bayonet",
+            "de": "Klassische Variante, Greco-Gambit, Moeller-Bajonettangriff",
+            "fr": "Variante classique, Gambit Greco, Attaque Moeller à la baïonnette",
+            "it": "Variante classica, Gambetto Greco, Attacco Moeller alla baionetta"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Moeller-Bayonet Attack",
@@ -986,9 +1484,15 @@
         {
           "id": "line-a2e7c9c4f9a89e0a",
           "names": {
-            "en": "Classical Variation, Greco Gambit, Greco Variation",
+            "en-US": "Classical Variation, Greco Gambit, Greco Variation",
             "pt-BR": "Variante Clássica, Gambito Greco, Variante Greco",
-            "es": "Variante Clásica, Gambito Greco, Variante Greco"
+            "es-419": "Variante Clásica, Gambito Greco, Variante Greco",
+            "en-GB": "Classical Variation, Greco Gambit, Greco Variation",
+            "es-ES": "Variante Clásica, Gambito Greco, Variante Greco",
+            "pt-PT": "Variante Clássica, Gambito Greco, Variante Greco",
+            "de": "Klassische Variante, Greco-Gambit, Greco-Variante",
+            "fr": "Variante classique, Gambit Greco, Variante Greco",
+            "it": "Variante classica, Gambetto Greco, Variante Greco"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Greco Variation",
@@ -998,9 +1502,15 @@
         {
           "id": "line-0f4f088fcec3df6a",
           "names": {
-            "en": "Classical Variation, Greco Gambit, Modern Line",
+            "en-US": "Classical Variation, Greco Gambit, Modern Line",
             "pt-BR": "Variante Clássica, Gambito Greco, Linha Moderna",
-            "es": "Variante Clásica, Gambito Greco, Línea Moderna"
+            "es-419": "Variante Clásica, Gambito Greco, Línea Moderna",
+            "en-GB": "Classical Variation, Greco Gambit, Modern Line",
+            "es-ES": "Variante Clásica, Gambito Greco, Línea Moderna",
+            "pt-PT": "Variante Clássica, Gambito Greco, Linha Moderna",
+            "de": "Klassische Variante, Greco-Gambit, Modernes Abspiel",
+            "fr": "Variante classique, Gambit Greco, Ligne moderne",
+            "it": "Variante classica, Gambetto Greco, Linea moderna"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Modern Line",
@@ -1010,9 +1520,15 @@
         {
           "id": "line-68710104a6ef117e",
           "names": {
-            "en": "Classical Variation, Ghulam-Kassim Variation",
+            "en-US": "Classical Variation, Ghulam-Kassim Variation",
             "pt-BR": "Variante Clássica, Variante Ghulam-Kassim",
-            "es": "Variante Clásica, Variante Ghulam-Kassim"
+            "es-419": "Variante Clásica, Variante Ghulam-Kassim",
+            "en-GB": "Classical Variation, Ghulam-Kassim Variation",
+            "es-ES": "Variante Clásica, Variante Ghulam-Kassim",
+            "pt-PT": "Variante Clássica, Variante Ghulam-Kassim",
+            "de": "Klassische Variante, Ghulam-Kassim-Variante",
+            "fr": "Variante classique, Variante Ghulam-Kassim",
+            "it": "Variante classica, Variante Ghulam-Kassim"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Ghulam-Kassim Variation",
@@ -1022,9 +1538,15 @@
         {
           "id": "line-f39c3cbb266990d0",
           "names": {
-            "en": "Classical Variation, Greco Gambit, Modern Line",
+            "en-US": "Classical Variation, Greco Gambit, Modern Line",
             "pt-BR": "Variante Clássica, Gambito Greco, Linha Moderna",
-            "es": "Variante Clásica, Gambito Greco, Línea Moderna"
+            "es-419": "Variante Clásica, Gambito Greco, Línea Moderna",
+            "en-GB": "Classical Variation, Greco Gambit, Modern Line",
+            "es-ES": "Variante Clásica, Gambito Greco, Línea Moderna",
+            "pt-PT": "Variante Clássica, Gambito Greco, Linha Moderna",
+            "de": "Klassische Variante, Greco-Gambit, Modernes Abspiel",
+            "fr": "Variante classique, Gambit Greco, Ligne moderne",
+            "it": "Variante classica, Gambetto Greco, Linea moderna"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Modern Line",
@@ -1034,9 +1556,15 @@
         {
           "id": "line-4373bcea5273f79f",
           "names": {
-            "en": "Classical Variation, Greco Gambit, Anderssen Variation",
+            "en-US": "Classical Variation, Greco Gambit, Anderssen Variation",
             "pt-BR": "Variante Clássica, Gambito Greco, Variante Anderssen",
-            "es": "Variante Clásica, Gambito Greco, Variante Anderssen"
+            "es-419": "Variante Clásica, Gambito Greco, Variante Anderssen",
+            "en-GB": "Classical Variation, Greco Gambit, Anderssen Variation",
+            "es-ES": "Variante Clásica, Gambito Greco, Variante Anderssen",
+            "pt-PT": "Variante Clássica, Gambito Greco, Variante Anderssen",
+            "de": "Klassische Variante, Greco-Gambit, Anderssen-Variante",
+            "fr": "Variante classique, Gambit Greco, Variante Anderssen",
+            "it": "Variante classica, Gambetto Greco, Variante Anderssen"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Anderssen Variation",
@@ -1046,9 +1574,15 @@
         {
           "id": "line-f5eb7346117e90d9",
           "names": {
-            "en": "Classical Variation, Closed Variation",
+            "en-US": "Classical Variation, Closed Variation",
             "pt-BR": "Variante Clássica, Variante Fechada",
-            "es": "Variante Clásica, Variante Cerrada"
+            "es-419": "Variante Clásica, Variante Cerrada",
+            "en-GB": "Classical Variation, Closed Variation",
+            "es-ES": "Variante Clásica, Variante Cerrada",
+            "pt-PT": "Variante Clássica, Variante Fechada",
+            "de": "Klassische Variante, Geschlossene Variante",
+            "fr": "Variante classique, Variante fermée",
+            "it": "Variante classica, Variante chiusa"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, Closed Variation",
@@ -1058,9 +1592,15 @@
         {
           "id": "line-da0c6624cb39c957",
           "names": {
-            "en": "Classical Variation, Center Holding Variation",
+            "en-US": "Classical Variation, Center Holding Variation",
             "pt-BR": "Variante Clássica, Variante da Manutenção do Centro",
-            "es": "Variante Clásica, Variante del Mantenimiento del Centro"
+            "es-419": "Variante Clásica, Variante del Mantenimiento del Centro",
+            "en-GB": "Classical Variation, Centre Holding Variation",
+            "es-ES": "Variante Clásica, Variante del Mantenimiento del Centro",
+            "pt-PT": "Variante Clássica, Variante da Manutenção do Centro",
+            "de": "Klassische Variante, Zentrumshaltende Variante",
+            "fr": "Variante classique, Variante du maintien du centre",
+            "it": "Variante classica, Variante del mantenimento del centro"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, Center Holding Variation",
@@ -1070,9 +1610,15 @@
         {
           "id": "line-46780047e185447c",
           "names": {
-            "en": "Classical Variation, Mestel Variation",
+            "en-US": "Classical Variation, Mestel Variation",
             "pt-BR": "Variante Clássica, Variante Mestel",
-            "es": "Variante Clásica, Variante Mestel"
+            "es-419": "Variante Clásica, Variante Mestel",
+            "en-GB": "Classical Variation, Mestel Variation",
+            "es-ES": "Variante Clásica, Variante Mestel",
+            "pt-PT": "Variante Clássica, Variante Mestel",
+            "de": "Klassische Variante, Mestel-Variante",
+            "fr": "Variante classique, Variante Mestel",
+            "it": "Variante classica, Variante Mestel"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, Mestel Variation",
@@ -1082,9 +1628,15 @@
         {
           "id": "line-42d1c46af6298d5c",
           "names": {
-            "en": "Classical Variation, Tarrasch Variation",
+            "en-US": "Classical Variation, Tarrasch Variation",
             "pt-BR": "Variante Clássica, Variante Tarrasch",
-            "es": "Variante Clásica, Variante Tarrasch"
+            "es-419": "Variante Clásica, Variante Tarrasch",
+            "en-GB": "Classical Variation, Tarrasch Variation",
+            "es-ES": "Variante Clásica, Variante Tarrasch",
+            "pt-PT": "Variante Clássica, Variante Tarrasch",
+            "de": "Klassische Variante, Tarrasch-Variante",
+            "fr": "Variante classique, Variante Tarrasch",
+            "it": "Variante classica, Variante Tarrasch"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, Tarrasch Variation",
@@ -1094,9 +1646,15 @@
         {
           "id": "line-779e2a404b7d049f",
           "names": {
-            "en": "Classical Variation, Eisinger Variation",
+            "en-US": "Classical Variation, Eisinger Variation",
             "pt-BR": "Variante Clássica, Variante Eisinger",
-            "es": "Variante Clásica, Variante Eisinger"
+            "es-419": "Variante Clásica, Variante Eisinger",
+            "en-GB": "Classical Variation, Eisinger Variation",
+            "es-ES": "Variante Clásica, Variante Eisinger",
+            "pt-PT": "Variante Clássica, Variante Eisinger",
+            "de": "Klassische Variante, Eisinger-Variante",
+            "fr": "Variante classique, Variante Eisinger",
+            "it": "Variante classica, Variante Eisinger"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, Eisinger Variation",
@@ -1106,9 +1664,15 @@
         {
           "id": "line-522446fdd5f2f3ff",
           "names": {
-            "en": "Classical Variation, La Bourdonnais Variation",
+            "en-US": "Classical Variation, La Bourdonnais Variation",
             "pt-BR": "Variante Clássica, Variante La Bourdonnais",
-            "es": "Variante Clásica, Variante La Bourdonnais"
+            "es-419": "Variante Clásica, Variante La Bourdonnais",
+            "en-GB": "Classical Variation, La Bourdonnais Variation",
+            "es-ES": "Variante Clásica, Variante La Bourdonnais",
+            "pt-PT": "Variante Clássica, Variante La Bourdonnais",
+            "de": "Klassische Variante, La-Bourdonnais-Variante",
+            "fr": "Variante classique, Variante La Bourdonnais",
+            "it": "Variante classica, Variante La Bourdonnais"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, La Bourdonnais Variation",
@@ -1119,17 +1683,29 @@
     },
     {
       "names": {
-        "en": "Evans Gambit",
+        "en-US": "Evans Gambit",
         "pt-BR": "Gambito Evans",
-        "es": "Gambito Evans"
+        "es-419": "Gambito Evans",
+        "en-GB": "Evans Gambit",
+        "es-ES": "Gambito Evans",
+        "pt-PT": "Gambito Evans",
+        "de": "Evans-Gambit",
+        "fr": "Gambit Evans",
+        "it": "Gambetto Evans"
       },
       "lines": [
         {
           "id": "line-2ba0708ab80b9dbd",
           "names": {
-            "en": "Evans Gambit",
+            "en-US": "Evans Gambit",
             "pt-BR": "Gambito Evans",
-            "es": "Gambito Evans"
+            "es-419": "Gambito Evans",
+            "en-GB": "Evans Gambit",
+            "es-ES": "Gambito Evans",
+            "pt-PT": "Gambito Evans",
+            "de": "Evans-Gambit",
+            "fr": "Gambit Evans",
+            "it": "Gambetto Evans"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit",
@@ -1139,9 +1715,15 @@
         {
           "id": "line-c7c29e9c7ee5f1ef",
           "names": {
-            "en": "Evans Gambit, Main Line",
+            "en-US": "Evans Gambit, Main Line",
             "pt-BR": "Gambito Evans, Linha Principal",
-            "es": "Gambito Evans, Línea Principal"
+            "es-419": "Gambito Evans, Línea Principal",
+            "en-GB": "Evans Gambit, Main Line",
+            "es-ES": "Gambito Evans, Línea Principal",
+            "pt-PT": "Gambito Evans, Linha Principal",
+            "de": "Evans-Gambit, Hauptvariante",
+            "fr": "Gambit Evans, Ligne principale",
+            "it": "Gambetto Evans, Linea principale"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Main Line",
@@ -1151,9 +1733,15 @@
         {
           "id": "line-d3eb51442cd360d8",
           "names": {
-            "en": "Evans Gambit, Slow Variation",
+            "en-US": "Evans Gambit, Slow Variation",
             "pt-BR": "Gambito Evans, Variante Lenta",
-            "es": "Gambito Evans, Variante Lenta"
+            "es-419": "Gambito Evans, Variante Lenta",
+            "en-GB": "Evans Gambit, Slow Variation",
+            "es-ES": "Gambito Evans, Variante Lenta",
+            "pt-PT": "Gambito Evans, Variante Lenta",
+            "de": "Evans-Gambit, Langsame Variante",
+            "fr": "Gambit Evans, Variante lente",
+            "it": "Gambetto Evans, Variante lenta"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Slow Variation",
@@ -1163,9 +1751,15 @@
         {
           "id": "line-08524b9352754464",
           "names": {
-            "en": "Evans Gambit, Richardson Attack",
+            "en-US": "Evans Gambit, Richardson Attack",
             "pt-BR": "Gambito Evans, Ataque Richardson",
-            "es": "Gambito Evans, Ataque Richardson"
+            "es-419": "Gambito Evans, Ataque Richardson",
+            "en-GB": "Evans Gambit, Richardson Attack",
+            "es-ES": "Gambito Evans, Ataque Richardson",
+            "pt-PT": "Gambito Evans, Ataque Richardson",
+            "de": "Evans-Gambit, Richardson-Angriff",
+            "fr": "Gambit Evans, Attaque Richardson",
+            "it": "Gambetto Evans, Attacco Richardson"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Richardson Attack",
@@ -1175,9 +1769,15 @@
         {
           "id": "line-54233fff858d37dd",
           "names": {
-            "en": "Evans Gambit, Anderssen Defense",
+            "en-US": "Evans Gambit, Anderssen Defense",
             "pt-BR": "Gambito Evans, Defesa Anderssen",
-            "es": "Gambito Evans, Defensa Anderssen"
+            "es-419": "Gambito Evans, Defensa Anderssen",
+            "en-GB": "Evans Gambit, Anderssen Defence",
+            "es-ES": "Gambito Evans, Defensa Anderssen",
+            "pt-PT": "Gambito Evans, Defesa Anderssen",
+            "de": "Evans-Gambit, Anderssen-Verteidigung",
+            "fr": "Gambit Evans, Défense Anderssen",
+            "it": "Gambetto Evans, Difesa Anderssen"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Anderssen Defense",
@@ -1187,9 +1787,15 @@
         {
           "id": "line-c8f2fa3773cd8eea",
           "names": {
-            "en": "Evans Gambit",
+            "en-US": "Evans Gambit",
             "pt-BR": "Gambito Evans",
-            "es": "Gambito Evans"
+            "es-419": "Gambito Evans",
+            "en-GB": "Evans Gambit",
+            "es-ES": "Gambito Evans",
+            "pt-PT": "Gambito Evans",
+            "de": "Evans-Gambit",
+            "fr": "Gambit Evans",
+            "it": "Gambetto Evans"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit",
@@ -1199,9 +1805,15 @@
         {
           "id": "line-e1ed5775872dc060",
           "names": {
-            "en": "Evans Gambit, Lasker Defense",
+            "en-US": "Evans Gambit, Lasker Defense",
             "pt-BR": "Gambito Evans, Defesa Lasker",
-            "es": "Gambito Evans, Defensa Lasker"
+            "es-419": "Gambito Evans, Defensa Lasker",
+            "en-GB": "Evans Gambit, Lasker Defence",
+            "es-ES": "Gambito Evans, Defensa Lasker",
+            "pt-PT": "Gambito Evans, Defesa Lasker",
+            "de": "Evans-Gambit, Lasker-Verteidigung",
+            "fr": "Gambit Evans, Défense Lasker",
+            "it": "Gambetto Evans, Difesa Lasker"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Lasker Defense",
@@ -1211,9 +1823,15 @@
         {
           "id": "line-727ebcf917fbb0cf",
           "names": {
-            "en": "Evans Gambit, Sanders-Alapin Variation",
+            "en-US": "Evans Gambit, Sanders-Alapin Variation",
             "pt-BR": "Gambito Evans, Variante Sanders-Alapin",
-            "es": "Gambito Evans, Variante Sanders-Alapin"
+            "es-419": "Gambito Evans, Variante Sanders-Alapin",
+            "en-GB": "Evans Gambit, Sanders-Alapin Variation",
+            "es-ES": "Gambito Evans, Variante Sanders-Alapin",
+            "pt-PT": "Gambito Evans, Variante Sanders-Alapin",
+            "de": "Evans-Gambit, Sanders-Alapin-Variante",
+            "fr": "Gambit Evans, Variante Sanders-Alapin",
+            "it": "Gambetto Evans, Variante Sanders-Alapin"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Sanders-Alapin Variation",
@@ -1223,9 +1841,15 @@
         {
           "id": "line-46b5da34ce891a45",
           "names": {
-            "en": "Evans Gambit, Alapin-Steinitz Variation",
+            "en-US": "Evans Gambit, Alapin-Steinitz Variation",
             "pt-BR": "Gambito Evans, Variante Alapin-Steinitz",
-            "es": "Gambito Evans, Variante Alapin-Steinitz"
+            "es-419": "Gambito Evans, Variante Alapin-Steinitz",
+            "en-GB": "Evans Gambit, Alapin-Steinitz Variation",
+            "es-ES": "Gambito Evans, Variante Alapin-Steinitz",
+            "pt-PT": "Gambito Evans, Variante Alapin-Steinitz",
+            "de": "Evans-Gambit, Alapin-Steinitz-Variante",
+            "fr": "Gambit Evans, Variante Alapin-Steinitz",
+            "it": "Gambetto Evans, Variante Alapin-Steinitz"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Alapin-Steinitz Variation",
@@ -1235,9 +1859,15 @@
         {
           "id": "line-4ab75d3426df86b0",
           "names": {
-            "en": "Evans Gambit, Laroche Variation",
+            "en-US": "Evans Gambit, Laroche Variation",
             "pt-BR": "Gambito Evans, Variante Laroche",
-            "es": "Gambito Evans, Variante Laroche"
+            "es-419": "Gambito Evans, Variante Laroche",
+            "en-GB": "Evans Gambit, Laroche Variation",
+            "es-ES": "Gambito Evans, Variante Laroche",
+            "pt-PT": "Gambito Evans, Variante Laroche",
+            "de": "Evans-Gambit, Laroche-Variante",
+            "fr": "Gambit Evans, Variante Laroche",
+            "it": "Gambetto Evans, Variante Laroche"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Laroche Variation",
@@ -1247,9 +1877,15 @@
         {
           "id": "line-a8b6dae7f5d80413",
           "names": {
-            "en": "Evans Gambit, Leonhardt Countergambit",
+            "en-US": "Evans Gambit, Leonhardt Countergambit",
             "pt-BR": "Gambito Evans, Contragambito Leonhardt",
-            "es": "Gambito Evans, Contragambito Leonhardt"
+            "es-419": "Gambito Evans, Contragambito Leonhardt",
+            "en-GB": "Evans Gambit, Leonhardt Countergambit",
+            "es-ES": "Gambito Evans, Contragambito Leonhardt",
+            "pt-PT": "Gambito Evans, Contragambito Leonhardt",
+            "de": "Evans-Gambit, Leonhardt-Gegengambit",
+            "fr": "Gambit Evans, Contre-gambit Leonhardt",
+            "it": "Gambetto Evans, Controgambetto Leonhardt"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Leonhardt Countergambit",
@@ -1259,9 +1895,15 @@
         {
           "id": "line-b07e6a0bfbb6b741",
           "names": {
-            "en": "Evans Gambit, Bronstein Defense",
+            "en-US": "Evans Gambit, Bronstein Defense",
             "pt-BR": "Gambito Evans, Defesa Bronstein",
-            "es": "Gambito Evans, Defensa Bronstein"
+            "es-419": "Gambito Evans, Defensa Bronstein",
+            "en-GB": "Evans Gambit, Bronstein Defence",
+            "es-ES": "Gambito Evans, Defensa Bronstein",
+            "pt-PT": "Gambito Evans, Defesa Bronstein",
+            "de": "Evans-Gambit, Bronstein-Verteidigung",
+            "fr": "Gambit Evans, Défense Bronstein",
+            "it": "Gambetto Evans, Difesa Bronstein"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Bronstein Defense",
@@ -1271,9 +1913,15 @@
         {
           "id": "line-962059dfd461af7b",
           "names": {
-            "en": "Evans Gambit, Sokolsky Variation",
+            "en-US": "Evans Gambit, Sokolsky Variation",
             "pt-BR": "Gambito Evans, Variante Sokolsky",
-            "es": "Gambito Evans, Variante Sokolsky"
+            "es-419": "Gambito Evans, Variante Sokolsky",
+            "en-GB": "Evans Gambit, Sokolsky Variation",
+            "es-ES": "Gambito Evans, Variante Sokolsky",
+            "pt-PT": "Gambito Evans, Variante Sokolsky",
+            "de": "Evans-Gambit, Sokolski-Variante",
+            "fr": "Gambit Evans, Variante Sokolski",
+            "it": "Gambetto Evans, Variante Sokol'skij"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Sokolsky Variation",
@@ -1283,9 +1931,15 @@
         {
           "id": "line-362f79655cbf1f5c",
           "names": {
-            "en": "Evans Gambit, Tartakower Attack",
+            "en-US": "Evans Gambit, Tartakower Attack",
             "pt-BR": "Gambito Evans, Ataque Tartakower",
-            "es": "Gambito Evans, Ataque Tartakower"
+            "es-419": "Gambito Evans, Ataque Tartakower",
+            "en-GB": "Evans Gambit, Tartakower Attack",
+            "es-ES": "Gambito Evans, Ataque Tartakower",
+            "pt-PT": "Gambito Evans, Ataque Tartakower",
+            "de": "Evans-Gambit, Tartakower-Angriff",
+            "fr": "Gambit Evans, Attaque Tartakower",
+            "it": "Gambetto Evans, Attacco Tartakower"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Tartakower Attack",
@@ -1295,9 +1949,15 @@
         {
           "id": "line-e691ef6e02a0e322",
           "names": {
-            "en": "Evans Gambit, Levenfish Variation",
+            "en-US": "Evans Gambit, Levenfish Variation",
             "pt-BR": "Gambito Evans, Variante Levenfish",
-            "es": "Gambito Evans, Variante Levenfish"
+            "es-419": "Gambito Evans, Variante Levenfish",
+            "en-GB": "Evans Gambit, Levenfish Variation",
+            "es-ES": "Gambito Evans, Variante Levenfish",
+            "pt-PT": "Gambito Evans, Variante Levenfish",
+            "de": "Evans-Gambit, Lewenfisch-Variante",
+            "fr": "Gambit Evans, Variante Levenfiche",
+            "it": "Gambetto Evans, Variante Levenfiš"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Levenfish Variation",
@@ -1307,9 +1967,15 @@
         {
           "id": "line-adfa77453ff1dd03",
           "names": {
-            "en": "Evans Gambit, Pierce Defense",
+            "en-US": "Evans Gambit, Pierce Defense",
             "pt-BR": "Gambito Evans, Defesa Pierce",
-            "es": "Gambito Evans, Defensa Pierce"
+            "es-419": "Gambito Evans, Defensa Pierce",
+            "en-GB": "Evans Gambit, Pierce Defence",
+            "es-ES": "Gambito Evans, Defensa Pierce",
+            "pt-PT": "Gambito Evans, Defesa Pierce",
+            "de": "Evans-Gambit, Pierce-Verteidigung",
+            "fr": "Gambit Evans, Défense Pierce",
+            "it": "Gambetto Evans, Difesa Pierce"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Pierce Defense",
@@ -1319,9 +1985,15 @@
         {
           "id": "line-a0eb6c1f51c0c83b",
           "names": {
-            "en": "Evans Gambit, Mieses Defense",
+            "en-US": "Evans Gambit, Mieses Defense",
             "pt-BR": "Gambito Evans, Defesa Mieses",
-            "es": "Gambito Evans, Defensa Mieses"
+            "es-419": "Gambito Evans, Defensa Mieses",
+            "en-GB": "Evans Gambit, Mieses Defence",
+            "es-ES": "Gambito Evans, Defensa Mieses",
+            "pt-PT": "Gambito Evans, Defesa Mieses",
+            "de": "Evans-Gambit, Mieses-Verteidigung",
+            "fr": "Gambit Evans, Défense Mieses",
+            "it": "Gambetto Evans, Difesa Mieses"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Mieses Defense",
@@ -1331,9 +2003,15 @@
         {
           "id": "line-967a7524bee2f568",
           "names": {
-            "en": "Evans Gambit, Johner Defense",
+            "en-US": "Evans Gambit, Johner Defense",
             "pt-BR": "Gambito Evans, Defesa Johner",
-            "es": "Gambito Evans, Defensa Johner"
+            "es-419": "Gambito Evans, Defensa Johner",
+            "en-GB": "Evans Gambit, Johner Defence",
+            "es-ES": "Gambito Evans, Defensa Johner",
+            "pt-PT": "Gambito Evans, Defesa Johner",
+            "de": "Evans-Gambit, Johner-Verteidigung",
+            "fr": "Gambit Evans, Défense Johner",
+            "it": "Gambetto Evans, Difesa Johner"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Johner Defense",
@@ -1343,9 +2021,15 @@
         {
           "id": "line-c517cf629baa6102",
           "names": {
-            "en": "Evans Gambit, Dufresne Defense",
+            "en-US": "Evans Gambit, Dufresne Defense",
             "pt-BR": "Gambito Evans, Defesa Dufresne",
-            "es": "Gambito Evans, Defensa Dufresne"
+            "es-419": "Gambito Evans, Defensa Dufresne",
+            "en-GB": "Evans Gambit, Dufresne Defence",
+            "es-ES": "Gambito Evans, Defensa Dufresne",
+            "pt-PT": "Gambito Evans, Defesa Dufresne",
+            "de": "Evans-Gambit, Dufresne-Verteidigung",
+            "fr": "Gambit Evans, Défense Dufresne",
+            "it": "Gambetto Evans, Difesa Dufresne"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Dufresne Defense",
@@ -1355,9 +2039,15 @@
         {
           "id": "line-79dab878e2f0719b",
           "names": {
-            "en": "Evans Gambit, Waller Attack",
+            "en-US": "Evans Gambit, Waller Attack",
             "pt-BR": "Gambito Evans, Ataque Waller",
-            "es": "Gambito Evans, Ataque Waller"
+            "es-419": "Gambito Evans, Ataque Waller",
+            "en-GB": "Evans Gambit, Waller Attack",
+            "es-ES": "Gambito Evans, Ataque Waller",
+            "pt-PT": "Gambito Evans, Ataque Waller",
+            "de": "Evans-Gambit, Waller-Angriff",
+            "fr": "Gambit Evans, Attaque Waller",
+            "it": "Gambetto Evans, Attacco Waller"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Waller Attack",
@@ -1367,9 +2057,15 @@
         {
           "id": "line-1c9375ea79018a61",
           "names": {
-            "en": "Evans Gambit, Morphy Attack",
+            "en-US": "Evans Gambit, Morphy Attack",
             "pt-BR": "Gambito Evans, Ataque Morphy",
-            "es": "Gambito Evans, Ataque Morphy"
+            "es-419": "Gambito Evans, Ataque Morphy",
+            "en-GB": "Evans Gambit, Morphy Attack",
+            "es-ES": "Gambito Evans, Ataque Morphy",
+            "pt-PT": "Gambito Evans, Ataque Morphy",
+            "de": "Evans-Gambit, Morphy-Angriff",
+            "fr": "Gambit Evans, Attaque Morphy",
+            "it": "Gambetto Evans, Attacco Morphy"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Morphy Attack",
@@ -1379,9 +2075,15 @@
         {
           "id": "line-a54f78bc8e057ae1",
           "names": {
-            "en": "Evans Gambit, Compromised Defense",
+            "en-US": "Evans Gambit, Compromised Defense",
             "pt-BR": "Gambito Evans, Defesa Comprometida",
-            "es": "Gambito Evans, Defensa Comprometida"
+            "es-419": "Gambito Evans, Defensa Comprometida",
+            "en-GB": "Evans Gambit, Compromised Defence",
+            "es-ES": "Gambito Evans, Defensa Comprometida",
+            "pt-PT": "Gambito Evans, Defesa Comprometida",
+            "de": "Evans-Gambit, Kompromittierte Verteidigung",
+            "fr": "Gambit Evans, Défense compromise",
+            "it": "Gambetto Evans, Difesa compromessa"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Compromised Defense",
@@ -1391,9 +2093,15 @@
         {
           "id": "line-a15e825bed19c946",
           "names": {
-            "en": "Evans Gambit, Compromised Defense, Main Line",
+            "en-US": "Evans Gambit, Compromised Defense, Main Line",
             "pt-BR": "Gambito Evans, Defesa Comprometida, Linha Principal",
-            "es": "Gambito Evans, Defensa Comprometida, Línea Principal"
+            "es-419": "Gambito Evans, Defensa Comprometida, Línea Principal",
+            "en-GB": "Evans Gambit, Compromised Defence, Main Line",
+            "es-ES": "Gambito Evans, Defensa Comprometida, Línea Principal",
+            "pt-PT": "Gambito Evans, Defesa Comprometida, Linha Principal",
+            "de": "Evans-Gambit, Kompromittierte Verteidigung, Hauptvariante",
+            "fr": "Gambit Evans, Défense compromise, Ligne principale",
+            "it": "Gambetto Evans, Difesa compromessa, Linea principale"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Compromised Defense, Main Line",
@@ -1403,9 +2111,15 @@
         {
           "id": "line-a5a69dee7f91d23b",
           "names": {
-            "en": "Evans Gambit, Compromised Defense, Potter Variation",
+            "en-US": "Evans Gambit, Compromised Defense, Potter Variation",
             "pt-BR": "Gambito Evans, Defesa Comprometida, Variante Potter",
-            "es": "Gambito Evans, Defensa Comprometida, Variante Potter"
+            "es-419": "Gambito Evans, Defensa Comprometida, Variante Potter",
+            "en-GB": "Evans Gambit, Compromised Defence, Potter Variation",
+            "es-ES": "Gambito Evans, Defensa Comprometida, Variante Potter",
+            "pt-PT": "Gambito Evans, Defesa Comprometida, Variante Potter",
+            "de": "Evans-Gambit, Kompromittierte Verteidigung, Potter-Variante",
+            "fr": "Gambit Evans, Défense compromise, Variante Potter",
+            "it": "Gambetto Evans, Difesa compromessa, Variante Potter"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Compromised Defense, Potter Variation",
@@ -1415,9 +2129,15 @@
         {
           "id": "line-fe8f9d4ecdb7c8e2",
           "names": {
-            "en": "Evans Gambit, McDonnell Defense",
+            "en-US": "Evans Gambit, McDonnell Defense",
             "pt-BR": "Gambito Evans, Defesa McDonnell",
-            "es": "Gambito Evans, Defensa McDonnell"
+            "es-419": "Gambito Evans, Defensa McDonnell",
+            "en-GB": "Evans Gambit, McDonnell Defence",
+            "es-ES": "Gambito Evans, Defensa McDonnell",
+            "pt-PT": "Gambito Evans, Defesa McDonnell",
+            "de": "Evans-Gambit, McDonnell-Verteidigung",
+            "fr": "Gambit Evans, Défense McDonnell",
+            "it": "Gambetto Evans, Difesa McDonnell"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, McDonnell Defense",
@@ -1427,9 +2147,15 @@
         {
           "id": "line-52e0835f42d83702",
           "names": {
-            "en": "Evans Gambit, McDonnell Defense, Main Line",
+            "en-US": "Evans Gambit, McDonnell Defense, Main Line",
             "pt-BR": "Gambito Evans, Defesa McDonnell, Linha Principal",
-            "es": "Gambito Evans, Defensa McDonnell, Línea Principal"
+            "es-419": "Gambito Evans, Defensa McDonnell, Línea Principal",
+            "en-GB": "Evans Gambit, McDonnell Defence, Main Line",
+            "es-ES": "Gambito Evans, Defensa McDonnell, Línea Principal",
+            "pt-PT": "Gambito Evans, Defesa McDonnell, Linha Principal",
+            "de": "Evans-Gambit, McDonnell-Verteidigung, Hauptvariante",
+            "fr": "Gambit Evans, Défense McDonnell, Ligne principale",
+            "it": "Gambetto Evans, Difesa McDonnell, Linea principale"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, McDonnell Defense, Main Line",
@@ -1439,9 +2165,15 @@
         {
           "id": "line-ff6c2f408acd863a",
           "names": {
-            "en": "Evans Gambit",
+            "en-US": "Evans Gambit",
             "pt-BR": "Gambito Evans",
-            "es": "Gambito Evans"
+            "es-419": "Gambito Evans",
+            "en-GB": "Evans Gambit",
+            "es-ES": "Gambito Evans",
+            "pt-PT": "Gambito Evans",
+            "de": "Evans-Gambit",
+            "fr": "Gambit Evans",
+            "it": "Gambetto Evans"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit",
@@ -1451,9 +2183,15 @@
         {
           "id": "line-34ba2a4c2eb82b4a",
           "names": {
-            "en": "Evans Gambit, Fraser Attack",
+            "en-US": "Evans Gambit, Fraser Attack",
             "pt-BR": "Gambito Evans, Ataque Fraser",
-            "es": "Gambito Evans, Ataque Fraser"
+            "es-419": "Gambito Evans, Ataque Fraser",
+            "en-GB": "Evans Gambit, Fraser Attack",
+            "es-ES": "Gambito Evans, Ataque Fraser",
+            "pt-PT": "Gambito Evans, Ataque Fraser",
+            "de": "Evans-Gambit, Fraser-Angriff",
+            "fr": "Gambit Evans, Attaque Fraser",
+            "it": "Gambetto Evans, Attacco Fraser"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Fraser Attack",
@@ -1463,9 +2201,15 @@
         {
           "id": "line-80c3699e9bf1ba97",
           "names": {
-            "en": "Evans Gambit, Fraser-Mortimer Attack",
+            "en-US": "Evans Gambit, Fraser-Mortimer Attack",
             "pt-BR": "Gambito Evans, Ataque Fraser-Mortimer",
-            "es": "Gambito Evans, Ataque Fraser-Mortimer"
+            "es-419": "Gambito Evans, Ataque Fraser-Mortimer",
+            "en-GB": "Evans Gambit, Fraser-Mortimer Attack",
+            "es-ES": "Gambito Evans, Ataque Fraser-Mortimer",
+            "pt-PT": "Gambito Evans, Ataque Fraser-Mortimer",
+            "de": "Evans-Gambit, Fraser-Mortimer-Angriff",
+            "fr": "Gambit Evans, Attaque Fraser-Mortimer",
+            "it": "Gambetto Evans, Attacco Fraser-Mortimer"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Fraser-Mortimer Attack",
@@ -1475,9 +2219,15 @@
         {
           "id": "line-768537d94f6cd513",
           "names": {
-            "en": "Evans Gambit, Mortimer-Evans Gambit",
+            "en-US": "Evans Gambit, Mortimer-Evans Gambit",
             "pt-BR": "Gambito Evans, Gambito Mortimer-Evans",
-            "es": "Gambito Evans, Gambito Mortimer-Evans"
+            "es-419": "Gambito Evans, Gambito Mortimer-Evans",
+            "en-GB": "Evans Gambit, Mortimer-Evans Gambit",
+            "es-ES": "Gambito Evans, Gambito Mortimer-Evans",
+            "pt-PT": "Gambito Evans, Gambito Mortimer-Evans",
+            "de": "Evans-Gambit, Mortimer-Evans-Gambit",
+            "fr": "Gambit Evans, Gambit Mortimer-Evans",
+            "it": "Gambetto Evans, Gambetto Mortimer-Evans"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Mortimer-Evans Gambit",
@@ -1487,9 +2237,15 @@
         {
           "id": "line-5c21beecc77bea31",
           "names": {
-            "en": "Evans Gambit, Göring Attack",
+            "en-US": "Evans Gambit, Göring Attack",
             "pt-BR": "Gambito Evans, Ataque Göring",
-            "es": "Gambito Evans, Ataque Göring"
+            "es-419": "Gambito Evans, Ataque Göring",
+            "en-GB": "Evans Gambit, Göring Attack",
+            "es-ES": "Gambito Evans, Ataque Göring",
+            "pt-PT": "Gambito Evans, Ataque Göring",
+            "de": "Evans-Gambit, Göring-Angriff",
+            "fr": "Gambit Evans, Attaque Göring",
+            "it": "Gambetto Evans, Attacco Göring"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Göring Attack",
@@ -1499,9 +2255,15 @@
         {
           "id": "line-e7ee1ca6cd4cec26",
           "names": {
-            "en": "Evans Gambit, Steinitz Variation",
+            "en-US": "Evans Gambit, Steinitz Variation",
             "pt-BR": "Gambito Evans, Variante Steinitz",
-            "es": "Gambito Evans, Variante Steinitz"
+            "es-419": "Gambito Evans, Variante Steinitz",
+            "en-GB": "Evans Gambit, Steinitz Variation",
+            "es-ES": "Gambito Evans, Variante Steinitz",
+            "pt-PT": "Gambito Evans, Variante Steinitz",
+            "de": "Evans-Gambit, Steinitz-Variante",
+            "fr": "Gambit Evans, Variante Steinitz",
+            "it": "Gambetto Evans, Variante Steinitz"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Steinitz Variation",
@@ -1511,9 +2273,15 @@
         {
           "id": "line-9c5705110f1cf783",
           "names": {
-            "en": "Evans Gambit, Ulvestad Variation",
+            "en-US": "Evans Gambit, Ulvestad Variation",
             "pt-BR": "Gambito Evans, Variante Ulvestad",
-            "es": "Gambito Evans, Variante Ulvestad"
+            "es-419": "Gambito Evans, Variante Ulvestad",
+            "en-GB": "Evans Gambit, Ulvestad Variation",
+            "es-ES": "Gambito Evans, Variante Ulvestad",
+            "pt-PT": "Gambito Evans, Variante Ulvestad",
+            "de": "Evans-Gambit, Ulvestad-Variante",
+            "fr": "Gambit Evans, Variante Ulvestad",
+            "it": "Gambetto Evans, Variante Ulvestad"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Ulvestad Variation",
@@ -1523,9 +2291,15 @@
         {
           "id": "line-b5fafdcabff41d87",
           "names": {
-            "en": "Evans Gambit, Paulsen Variation",
+            "en-US": "Evans Gambit, Paulsen Variation",
             "pt-BR": "Gambito Evans, Variante Paulsen",
-            "es": "Gambito Evans, Variante Paulsen"
+            "es-419": "Gambito Evans, Variante Paulsen",
+            "en-GB": "Evans Gambit, Paulsen Variation",
+            "es-ES": "Gambito Evans, Variante Paulsen",
+            "pt-PT": "Gambito Evans, Variante Paulsen",
+            "de": "Evans-Gambit, Paulsen-Variante",
+            "fr": "Gambit Evans, Variante Paulsen",
+            "it": "Gambetto Evans, Variante Paulsen"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Paulsen Variation",
@@ -1535,9 +2309,15 @@
         {
           "id": "line-b8d0d7a1faf2835a",
           "names": {
-            "en": "Evans Gambit, Harding Variation",
+            "en-US": "Evans Gambit, Harding Variation",
             "pt-BR": "Gambito Evans, Variante Harding",
-            "es": "Gambito Evans, Variante Harding"
+            "es-419": "Gambito Evans, Variante Harding",
+            "en-GB": "Evans Gambit, Harding Variation",
+            "es-ES": "Gambito Evans, Variante Harding",
+            "pt-PT": "Gambito Evans, Variante Harding",
+            "de": "Evans-Gambit, Harding-Variante",
+            "fr": "Gambit Evans, Variante Harding",
+            "it": "Gambetto Evans, Variante Harding"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Harding Variation",
@@ -1547,9 +2327,15 @@
         {
           "id": "line-9ea810cf9a9f0590",
           "names": {
-            "en": "Evans Gambit, Stone-Ware Variation",
+            "en-US": "Evans Gambit, Stone-Ware Variation",
             "pt-BR": "Gambito Evans, Variante Stone-Ware",
-            "es": "Gambito Evans, Variante Stone-Ware"
+            "es-419": "Gambito Evans, Variante Stone-Ware",
+            "en-GB": "Evans Gambit, Stone-Ware Variation",
+            "es-ES": "Gambito Evans, Variante Stone-Ware",
+            "pt-PT": "Gambito Evans, Variante Stone-Ware",
+            "de": "Evans-Gambit, Stone-Ware-Variante",
+            "fr": "Gambit Evans, Variante Stone-Ware",
+            "it": "Gambetto Evans, Variante Stone-Ware"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Stone-Ware Variation",
@@ -1559,9 +2345,15 @@
         {
           "id": "line-8077cb72ee9a4723",
           "names": {
-            "en": "Evans Gambit, Anderssen Variation",
+            "en-US": "Evans Gambit, Anderssen Variation",
             "pt-BR": "Gambito Evans, Variante Anderssen",
-            "es": "Gambito Evans, Variante Anderssen"
+            "es-419": "Gambito Evans, Variante Anderssen",
+            "en-GB": "Evans Gambit, Anderssen Variation",
+            "es-ES": "Gambito Evans, Variante Anderssen",
+            "pt-PT": "Gambito Evans, Variante Anderssen",
+            "de": "Evans-Gambit, Anderssen-Variante",
+            "fr": "Gambit Evans, Variante Anderssen",
+            "it": "Gambetto Evans, Variante Anderssen"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Anderssen Variation",
@@ -1571,9 +2363,15 @@
         {
           "id": "line-bcb52b2ca3149f12",
           "names": {
-            "en": "Evans Gambit, Anderssen Variation, Cordel Line",
+            "en-US": "Evans Gambit, Anderssen Variation, Cordel Line",
             "pt-BR": "Gambito Evans, Variante Anderssen, Linha Cordel",
-            "es": "Gambito Evans, Variante Anderssen, Línea Cordel"
+            "es-419": "Gambito Evans, Variante Anderssen, Línea Cordel",
+            "en-GB": "Evans Gambit, Anderssen Variation, Cordel Line",
+            "es-ES": "Gambito Evans, Variante Anderssen, Línea Cordel",
+            "pt-PT": "Gambito Evans, Variante Anderssen, Linha Cordel",
+            "de": "Evans-Gambit, Anderssen-Variante, Cordel-Abspiel",
+            "fr": "Gambit Evans, Variante Anderssen, Ligne Cordel",
+            "it": "Gambetto Evans, Variante Anderssen, Linea Cordel"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Anderssen Variation, Cordel Line",
@@ -1583,9 +2381,15 @@
         {
           "id": "line-e84f2bedc64eb609",
           "names": {
-            "en": "Evans Gambit, Mayet Defense",
+            "en-US": "Evans Gambit, Mayet Defense",
             "pt-BR": "Gambito Evans, Defesa Mayet",
-            "es": "Gambito Evans, Defensa Mayet"
+            "es-419": "Gambito Evans, Defensa Mayet",
+            "en-GB": "Evans Gambit, Mayet Defence",
+            "es-ES": "Gambito Evans, Defensa Mayet",
+            "pt-PT": "Gambito Evans, Defesa Mayet",
+            "de": "Evans-Gambit, Mayet-Verteidigung",
+            "fr": "Gambit Evans, Défense Mayet",
+            "it": "Gambetto Evans, Difesa Mayet"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Mayet Defense",
@@ -1595,9 +2399,15 @@
         {
           "id": "line-683f95961095799c",
           "names": {
-            "en": "Evans Gambit, Fontaine Countergambit",
+            "en-US": "Evans Gambit, Fontaine Countergambit",
             "pt-BR": "Gambito Evans, Contragambito Fontaine",
-            "es": "Gambito Evans, Contragambito Fontaine"
+            "es-419": "Gambito Evans, Contragambito Fontaine",
+            "en-GB": "Evans Gambit, Fontaine Countergambit",
+            "es-ES": "Gambito Evans, Contragambito Fontaine",
+            "pt-PT": "Gambito Evans, Contragambito Fontaine",
+            "de": "Evans-Gambit, Fontaine-Gegengambit",
+            "fr": "Gambit Evans, Contre-gambit Fontaine",
+            "it": "Gambetto Evans, Controgambetto Fontaine"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Fontaine Countergambit",
@@ -1607,9 +2417,15 @@
         {
           "id": "line-9127d41994a21673",
           "names": {
-            "en": "Evans Gambit, Hein Countergambit",
+            "en-US": "Evans Gambit, Hein Countergambit",
             "pt-BR": "Gambito Evans, Contragambito Hein",
-            "es": "Gambito Evans, Contragambito Hein"
+            "es-419": "Gambito Evans, Contragambito Hein",
+            "en-GB": "Evans Gambit, Hein Countergambit",
+            "es-ES": "Gambito Evans, Contragambito Hein",
+            "pt-PT": "Gambito Evans, Contragambito Hein",
+            "de": "Evans-Gambit, Hein-Gegengambit",
+            "fr": "Gambit Evans, Contre-gambit Hein",
+            "it": "Gambetto Evans, Controgambetto Hein"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Hein Countergambit",
@@ -1620,17 +2436,29 @@
     },
     {
       "names": {
-        "en": "Scotch Gambit",
+        "en-US": "Scotch Gambit",
         "pt-BR": "Gambito Escocês",
-        "es": "Gambito Escocés"
+        "es-419": "Gambito Escocés",
+        "en-GB": "Scotch Gambit",
+        "es-ES": "Gambito Escocés",
+        "pt-PT": "Gambito Escocês",
+        "de": "Schottisches Gambit",
+        "fr": "Gambit écossais",
+        "it": "Gambetto scozzese"
       },
       "lines": [
         {
           "id": "line-66b415e454f00595",
           "names": {
-            "en": "Scotch Gambit, Max Lange Attack Accepted",
+            "en-US": "Scotch Gambit, Max Lange Attack Accepted",
             "pt-BR": "Gambito Escocês, Ataque Max Lange Aceito",
-            "es": "Gambito Escocés, Ataque Max Lange Aceptado"
+            "es-419": "Gambito Escocés, Ataque Max Lange Aceptado",
+            "en-GB": "Scotch Gambit, Max Lange Attack Accepted",
+            "es-ES": "Gambito Escocés, Ataque Max Lange Aceptado",
+            "pt-PT": "Gambito Escocês, Ataque Max Lange Aceito",
+            "de": "Schottisches Gambit, Angenommener Max-Lange-Angriff",
+            "fr": "Gambit écossais, Attaque Max Lange acceptée",
+            "it": "Gambetto scozzese, Attacco Max Lange accettato"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Max Lange Attack Accepted",
@@ -1640,9 +2468,15 @@
         {
           "id": "line-0a39498e01da1481",
           "names": {
-            "en": "Scotch Gambit, Walbrodt-Baird Gambit",
+            "en-US": "Scotch Gambit, Walbrodt-Baird Gambit",
             "pt-BR": "Gambito Escocês, Gambito Walbrodt-Baird",
-            "es": "Gambito Escocés, Gambito Walbrodt-Baird"
+            "es-419": "Gambito Escocés, Gambito Walbrodt-Baird",
+            "en-GB": "Scotch Gambit, Walbrodt-Baird Gambit",
+            "es-ES": "Gambito Escocés, Gambito Walbrodt-Baird",
+            "pt-PT": "Gambito Escocês, Gambito Walbrodt-Baird",
+            "de": "Schottisches Gambit, Walbrodt-Baird-Gambit",
+            "fr": "Gambit écossais, Gambit Walbrodt-Baird",
+            "it": "Gambetto scozzese, Gambetto Walbrodt-Baird"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Walbrodt-Baird Gambit",
@@ -1652,9 +2486,15 @@
         {
           "id": "line-2ccdf67595236330",
           "names": {
-            "en": "Scotch Gambit",
+            "en-US": "Scotch Gambit",
             "pt-BR": "Gambito Escocês",
-            "es": "Gambito Escocés"
+            "es-419": "Gambito Escocés",
+            "en-GB": "Scotch Gambit",
+            "es-ES": "Gambito Escocés",
+            "pt-PT": "Gambito Escocês",
+            "de": "Schottisches Gambit",
+            "fr": "Gambit écossais",
+            "it": "Gambetto scozzese"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit",
@@ -1664,9 +2504,15 @@
         {
           "id": "line-afae5549b3270f1b",
           "names": {
-            "en": "Scotch Gambit, Double Gambit Accepted",
+            "en-US": "Scotch Gambit, Double Gambit Accepted",
             "pt-BR": "Gambito Escocês, Gambito Duplo Aceito",
-            "es": "Gambito Escocés, Doble Gambito Aceptado"
+            "es-419": "Gambito Escocés, Doble Gambito Aceptado",
+            "en-GB": "Scotch Gambit, Double Gambit Accepted",
+            "es-ES": "Gambito Escocés, Doble Gambito Aceptado",
+            "pt-PT": "Gambito Escocês, Gambito Duplo Aceito",
+            "de": "Schottisches Gambit, Angenommenes Doppelgambit",
+            "fr": "Gambit écossais, Double gambit accepté",
+            "it": "Gambetto scozzese, Doppio gambetto accettato"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Double Gambit Accepted",
@@ -1676,9 +2522,15 @@
         {
           "id": "line-7bb4cbe0d2afaa65",
           "names": {
-            "en": "Scotch Gambit, Nakhmanson Gambit",
+            "en-US": "Scotch Gambit, Nakhmanson Gambit",
             "pt-BR": "Gambito Escocês, Gambito Nakhmanson",
-            "es": "Gambito Escocés, Gambito Nakhmanson"
+            "es-419": "Gambito Escocés, Gambito Nakhmanson",
+            "en-GB": "Scotch Gambit, Nakhmanson Gambit",
+            "es-ES": "Gambito Escocés, Gambito Nakhmanson",
+            "pt-PT": "Gambito Escocês, Gambito Nakhmanson",
+            "de": "Schottisches Gambit, Nakhmanson-Gambit",
+            "fr": "Gambit écossais, Gambit Nakhmanson",
+            "it": "Gambetto scozzese, Gambetto Nakhmanson"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Nakhmanson Gambit",
@@ -1688,9 +2540,15 @@
         {
           "id": "line-b94ec3c6cafefd15",
           "names": {
-            "en": "Scotch Gambit, Anderssen Attack",
+            "en-US": "Scotch Gambit, Anderssen Attack",
             "pt-BR": "Gambito Escocês, Ataque Anderssen",
-            "es": "Gambito Escocés, Ataque Anderssen"
+            "es-419": "Gambito Escocés, Ataque Anderssen",
+            "en-GB": "Scotch Gambit, Anderssen Attack",
+            "es-ES": "Gambito Escocés, Ataque Anderssen",
+            "pt-PT": "Gambito Escocês, Ataque Anderssen",
+            "de": "Schottisches Gambit, Anderssen-Angriff",
+            "fr": "Gambit écossais, Attaque Anderssen",
+            "it": "Gambetto scozzese, Attacco Anderssen"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Anderssen Attack",
@@ -1700,9 +2558,15 @@
         {
           "id": "line-aa76e94b69754612",
           "names": {
-            "en": "Scotch Gambit, Anderssen Attack, Main Line",
+            "en-US": "Scotch Gambit, Anderssen Attack, Main Line",
             "pt-BR": "Gambito Escocês, Ataque Anderssen, Linha Principal",
-            "es": "Gambito Escocés, Ataque Anderssen, Línea Principal"
+            "es-419": "Gambito Escocés, Ataque Anderssen, Línea Principal",
+            "en-GB": "Scotch Gambit, Anderssen Attack, Main Line",
+            "es-ES": "Gambito Escocés, Ataque Anderssen, Línea Principal",
+            "pt-PT": "Gambito Escocês, Ataque Anderssen, Linha Principal",
+            "de": "Schottisches Gambit, Anderssen-Angriff, Hauptvariante",
+            "fr": "Gambit écossais, Attaque Anderssen, Ligne principale",
+            "it": "Gambetto scozzese, Attacco Anderssen, Linea principale"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Anderssen Attack, Main Line",
@@ -1712,9 +2576,15 @@
         {
           "id": "line-08b84c4eb8152700",
           "names": {
-            "en": "Scotch Gambit, Max Lange Attack",
+            "en-US": "Scotch Gambit, Max Lange Attack",
             "pt-BR": "Gambito Escocês, Ataque Max Lange",
-            "es": "Gambito Escocés, Ataque Max Lange"
+            "es-419": "Gambito Escocés, Ataque Max Lange",
+            "en-GB": "Scotch Gambit, Max Lange Attack",
+            "es-ES": "Gambito Escocés, Ataque Max Lange",
+            "pt-PT": "Gambito Escocês, Ataque Max Lange",
+            "de": "Schottisches Gambit, Max-Lange-Angriff",
+            "fr": "Gambit écossais, Attaque Max Lange",
+            "it": "Gambetto scozzese, Attacco Max Lange"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Max Lange Attack",
@@ -1724,9 +2594,15 @@
         {
           "id": "line-82ef3f5625591a35",
           "names": {
-            "en": "Scotch Gambit, Max Lange Attack",
+            "en-US": "Scotch Gambit, Max Lange Attack",
             "pt-BR": "Gambito Escocês, Ataque Max Lange",
-            "es": "Gambito Escocés, Ataque Max Lange"
+            "es-419": "Gambito Escocés, Ataque Max Lange",
+            "en-GB": "Scotch Gambit, Max Lange Attack",
+            "es-ES": "Gambito Escocés, Ataque Max Lange",
+            "pt-PT": "Gambito Escocês, Ataque Max Lange",
+            "de": "Schottisches Gambit, Max-Lange-Angriff",
+            "fr": "Gambit écossais, Attaque Max Lange",
+            "it": "Gambetto scozzese, Attacco Max Lange"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Max Lange Attack",
@@ -1736,9 +2612,15 @@
         {
           "id": "line-63af37f86a3c7dfa",
           "names": {
-            "en": "Scotch Gambit, Max Lange Attack, Spielmann Defense",
+            "en-US": "Scotch Gambit, Max Lange Attack, Spielmann Defense",
             "pt-BR": "Gambito Escocês, Ataque Max Lange, Defesa Spielmann",
-            "es": "Gambito Escocés, Ataque Max Lange, Defensa Spielmann"
+            "es-419": "Gambito Escocés, Ataque Max Lange, Defensa Spielmann",
+            "en-GB": "Scotch Gambit, Max Lange Attack, Spielmann Defence",
+            "es-ES": "Gambito Escocés, Ataque Max Lange, Defensa Spielmann",
+            "pt-PT": "Gambito Escocês, Ataque Max Lange, Defesa Spielmann",
+            "de": "Schottisches Gambit, Max-Lange-Angriff, Spielmann-Verteidigung",
+            "fr": "Gambit écossais, Attaque Max Lange, Défense Spielmann",
+            "it": "Gambetto scozzese, Attacco Max Lange, Difesa Spielmann"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Max Lange Attack, Spielmann Defense",
@@ -1748,9 +2630,15 @@
         {
           "id": "line-90cb1b81586bc461",
           "names": {
-            "en": "Scotch Gambit, Max Lange Attack, Long Variation",
+            "en-US": "Scotch Gambit, Max Lange Attack, Long Variation",
             "pt-BR": "Gambito Escocês, Ataque Max Lange, Variante Longa",
-            "es": "Gambito Escocés, Ataque Max Lange, Variante Larga"
+            "es-419": "Gambito Escocés, Ataque Max Lange, Variante Larga",
+            "en-GB": "Scotch Gambit, Max Lange Attack, Long Variation",
+            "es-ES": "Gambito Escocés, Ataque Max Lange, Variante Larga",
+            "pt-PT": "Gambito Escocês, Ataque Max Lange, Variante Longa",
+            "de": "Schottisches Gambit, Max-Lange-Angriff, Lange Variante",
+            "fr": "Gambit écossais, Attaque Max Lange, Variante longue",
+            "it": "Gambetto scozzese, Attacco Max Lange, Variante lunga"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Max Lange Attack, Long Variation",
@@ -1760,9 +2648,15 @@
         {
           "id": "line-39b9d55bbd844a7b",
           "names": {
-            "en": "Scotch Gambit, de Riviere Defense",
+            "en-US": "Scotch Gambit, de Riviere Defense",
             "pt-BR": "Gambito Escocês, Defesa de Riviere",
-            "es": "Gambito Escocés, Defensa de Riviere"
+            "es-419": "Gambito Escocés, Defensa de Riviere",
+            "en-GB": "Scotch Gambit, de Riviere Defence",
+            "es-ES": "Gambito Escocés, Defensa de Riviere",
+            "pt-PT": "Gambito Escocês, Defesa de Riviere",
+            "de": "Schottisches Gambit, De-Riviere-Verteidigung",
+            "fr": "Gambit écossais, Défense de Rivière",
+            "it": "Gambetto scozzese, Difesa de Rivière"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, de Riviere Defense",
@@ -1772,9 +2666,15 @@
         {
           "id": "line-3b9eb9b2e02837d3",
           "names": {
-            "en": "Scotch Gambit, Canal Variation",
+            "en-US": "Scotch Gambit, Canal Variation",
             "pt-BR": "Gambito Escocês, Variante Canal",
-            "es": "Gambito Escocés, Variante Canal"
+            "es-419": "Gambito Escocés, Variante Canal",
+            "en-GB": "Scotch Gambit, Canal Variation",
+            "es-ES": "Gambito Escocés, Variante Canal",
+            "pt-PT": "Gambito Escocês, Variante Canal",
+            "de": "Schottisches Gambit, Canal-Variante",
+            "fr": "Gambit écossais, Variante Canal",
+            "it": "Gambetto scozzese, Variante Canal"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Canal Variation",
@@ -1784,9 +2684,15 @@
         {
           "id": "line-f8a0e54e0960139e",
           "names": {
-            "en": "Scotch Gambit, Janowski Defense",
+            "en-US": "Scotch Gambit, Janowski Defense",
             "pt-BR": "Gambito Escocês, Defesa Janowski",
-            "es": "Gambito Escocés, Defensa Janowski"
+            "es-419": "Gambito Escocés, Defensa Janowski",
+            "en-GB": "Scotch Gambit, Janowski Defence",
+            "es-ES": "Gambito Escocés, Defensa Janowski",
+            "pt-PT": "Gambito Escocês, Defesa Janowski",
+            "de": "Schottisches Gambit, Janowski-Verteidigung",
+            "fr": "Gambit écossais, Défense Janowski",
+            "it": "Gambetto scozzese, Difesa Janowski"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Janowski Defense",
@@ -1797,17 +2703,29 @@
     },
     {
       "names": {
-        "en": "Giuoco Piano",
+        "en-US": "Giuoco Piano",
         "pt-BR": "Giuoco Piano",
-        "es": "Giuoco Piano"
+        "es-419": "Giuoco Piano",
+        "en-GB": "Giuoco Piano",
+        "es-ES": "Giuoco Piano",
+        "pt-PT": "Giuoco Piano",
+        "de": "Giuoco Piano",
+        "fr": "Giuoco piano",
+        "it": "Giuoco piano"
       },
       "lines": [
         {
           "id": "line-f2d9351ce562edc0",
           "names": {
-            "en": "Giuoco Piano",
+            "en-US": "Giuoco Piano",
             "pt-BR": "Giuoco Piano",
-            "es": "Giuoco Piano"
+            "es-419": "Giuoco Piano",
+            "en-GB": "Giuoco Piano",
+            "es-ES": "Giuoco Piano",
+            "pt-PT": "Giuoco Piano",
+            "de": "Giuoco Piano",
+            "fr": "Giuoco piano",
+            "it": "Giuoco piano"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Piano",
@@ -1817,9 +2735,15 @@
         {
           "id": "line-f9fd00af5c52d0d9",
           "names": {
-            "en": "Giuoco Piano, Krause Variation",
+            "en-US": "Giuoco Piano, Krause Variation",
             "pt-BR": "Giuoco Piano, Variante Krause",
-            "es": "Giuoco Piano, Variante Krause"
+            "es-419": "Giuoco Piano, Variante Krause",
+            "en-GB": "Giuoco Piano, Krause Variation",
+            "es-ES": "Giuoco Piano, Variante Krause",
+            "pt-PT": "Giuoco Piano, Variante Krause",
+            "de": "Giuoco Piano, Krause-Variante",
+            "fr": "Giuoco piano, Variante Krause",
+            "it": "Giuoco piano, Variante Krause"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Krause Variation",
@@ -1829,9 +2753,15 @@
         {
           "id": "line-8964df6b426a4563",
           "names": {
-            "en": "Giuoco Piano, Cracow Variation",
+            "en-US": "Giuoco Piano, Cracow Variation",
             "pt-BR": "Giuoco Piano, Variante de Cracóvia",
-            "es": "Giuoco Piano, Variante de Cracovia"
+            "es-419": "Giuoco Piano, Variante de Cracovia",
+            "en-GB": "Giuoco Piano, Cracow Variation",
+            "es-ES": "Giuoco Piano, Variante de Cracovia",
+            "pt-PT": "Giuoco Piano, Variante de Cracóvia",
+            "de": "Giuoco Piano, Cracow-Variante",
+            "fr": "Giuoco piano, Variante Cracow",
+            "it": "Giuoco piano, Variante Cracow"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Cracow Variation",
@@ -1841,9 +2771,15 @@
         {
           "id": "line-c2652e6bef0a70b5",
           "names": {
-            "en": "Giuoco Piano, Greco's Attack",
+            "en-US": "Giuoco Piano, Greco's Attack",
             "pt-BR": "Giuoco Piano, Ataque Greco",
-            "es": "Giuoco Piano, Ataque Greco"
+            "es-419": "Giuoco Piano, Ataque Greco",
+            "en-GB": "Giuoco Piano, Greco's Attack",
+            "es-ES": "Giuoco Piano, Ataque Greco",
+            "pt-PT": "Giuoco Piano, Ataque Greco",
+            "de": "Giuoco Piano, Greco's-Angriff",
+            "fr": "Giuoco piano, Attaque Greco's",
+            "it": "Giuoco piano, Attacco Greco's"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Greco's Attack",
@@ -1853,9 +2789,15 @@
         {
           "id": "line-91700ee6d0ff6103",
           "names": {
-            "en": "Giuoco Piano, Steinitz Variation",
+            "en-US": "Giuoco Piano, Steinitz Variation",
             "pt-BR": "Giuoco Piano, Variante Steinitz",
-            "es": "Giuoco Piano, Variante Steinitz"
+            "es-419": "Giuoco Piano, Variante Steinitz",
+            "en-GB": "Giuoco Piano, Steinitz Variation",
+            "es-ES": "Giuoco Piano, Variante Steinitz",
+            "pt-PT": "Giuoco Piano, Variante Steinitz",
+            "de": "Giuoco Piano, Steinitz-Variante",
+            "fr": "Giuoco piano, Variante Steinitz",
+            "it": "Giuoco piano, Variante Steinitz"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Steinitz Variation",
@@ -1865,9 +2807,15 @@
         {
           "id": "line-c3e7041b4b06daac",
           "names": {
-            "en": "Giuoco Piano, Therkatz-Herzog Variation",
+            "en-US": "Giuoco Piano, Therkatz-Herzog Variation",
             "pt-BR": "Giuoco Piano, Variante Therkatz-Herzog",
-            "es": "Giuoco Piano, Variante Therkatz-Herzog"
+            "es-419": "Giuoco Piano, Variante Therkatz-Herzog",
+            "en-GB": "Giuoco Piano, Therkatz-Herzog Variation",
+            "es-ES": "Giuoco Piano, Variante Therkatz-Herzog",
+            "pt-PT": "Giuoco Piano, Variante Therkatz-Herzog",
+            "de": "Giuoco Piano, Therkatz-Herzog-Variante",
+            "fr": "Giuoco piano, Variante Therkatz-Herzog",
+            "it": "Giuoco piano, Variante Therkatz-Herzog"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Therkatz-Herzog Variation",
@@ -1877,9 +2825,15 @@
         {
           "id": "line-117e17b315ab294c",
           "names": {
-            "en": "Giuoco Piano, Aitken Variation",
+            "en-US": "Giuoco Piano, Aitken Variation",
             "pt-BR": "Giuoco Piano, Variante Aitken",
-            "es": "Giuoco Piano, Variante Aitken"
+            "es-419": "Giuoco Piano, Variante Aitken",
+            "en-GB": "Giuoco Piano, Aitken Variation",
+            "es-ES": "Giuoco Piano, Variante Aitken",
+            "pt-PT": "Giuoco Piano, Variante Aitken",
+            "de": "Giuoco Piano, Aitken-Variante",
+            "fr": "Giuoco piano, Variante Aitken",
+            "it": "Giuoco piano, Variante Aitken"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Aitken Variation",
@@ -1889,9 +2843,15 @@
         {
           "id": "line-09451e7558e302c0",
           "names": {
-            "en": "Giuoco Piano, Bernstein Variation",
+            "en-US": "Giuoco Piano, Bernstein Variation",
             "pt-BR": "Giuoco Piano, Variante Bernstein",
-            "es": "Giuoco Piano, Variante Bernstein"
+            "es-419": "Giuoco Piano, Variante Bernstein",
+            "en-GB": "Giuoco Piano, Bernstein Variation",
+            "es-ES": "Giuoco Piano, Variante Bernstein",
+            "pt-PT": "Giuoco Piano, Variante Bernstein",
+            "de": "Giuoco Piano, Bernstein-Variante",
+            "fr": "Giuoco piano, Variante Bernstein",
+            "it": "Giuoco piano, Variante Bernstein"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Bernstein Variation",
@@ -1901,9 +2861,15 @@
         {
           "id": "line-43e5c5b508876563",
           "names": {
-            "en": "Giuoco Piano, Holzhausen Attack",
+            "en-US": "Giuoco Piano, Holzhausen Attack",
             "pt-BR": "Giuoco Piano, Ataque Holzhausen",
-            "es": "Giuoco Piano, Ataque Holzhausen"
+            "es-419": "Giuoco Piano, Ataque Holzhausen",
+            "en-GB": "Giuoco Piano, Holzhausen Attack",
+            "es-ES": "Giuoco Piano, Ataque Holzhausen",
+            "pt-PT": "Giuoco Piano, Ataque Holzhausen",
+            "de": "Giuoco Piano, Holzhausen-Angriff",
+            "fr": "Giuoco piano, Attaque Holzhausen",
+            "it": "Giuoco piano, Attacco Holzhausen"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Holzhausen Attack",
@@ -1913,9 +2879,15 @@
         {
           "id": "line-63812fc27346ef9d",
           "names": {
-            "en": "Giuoco Piano, Rosentreter Variation",
+            "en-US": "Giuoco Piano, Rosentreter Variation",
             "pt-BR": "Giuoco Piano, Variante Rosentreter",
-            "es": "Giuoco Piano, Variante Rosentreter"
+            "es-419": "Giuoco Piano, Variante Rosentreter",
+            "en-GB": "Giuoco Piano, Rosentreter Variation",
+            "es-ES": "Giuoco Piano, Variante Rosentreter",
+            "pt-PT": "Giuoco Piano, Variante Rosentreter",
+            "de": "Giuoco Piano, Rosentreter-Variante",
+            "fr": "Giuoco piano, Variante Rosentreter",
+            "it": "Giuoco piano, Variante Rosentreter"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Rosentreter Variation",
@@ -1926,17 +2898,29 @@
     },
     {
       "names": {
-        "en": "Evans Gambit Declined",
+        "en-US": "Evans Gambit Declined",
         "pt-BR": "Gambito Evans Recusado",
-        "es": "Gambito Evans Rehusado"
+        "es-419": "Gambito Evans Rehusado",
+        "en-GB": "Evans Gambit Declined",
+        "es-ES": "Gambito Evans Rehusado",
+        "pt-PT": "Gambito Evans Recusado",
+        "de": "Abgelehntes Evans-Gambit",
+        "fr": "Gambit Evans refusé",
+        "it": "Gambetto Evans rifiutato"
       },
       "lines": [
         {
           "id": "line-95a11948e6d60129",
           "names": {
-            "en": "Evans Gambit Declined",
+            "en-US": "Evans Gambit Declined",
             "pt-BR": "Gambito Evans Recusado",
-            "es": "Gambito Evans Rehusado"
+            "es-419": "Gambito Evans Rehusado",
+            "en-GB": "Evans Gambit Declined",
+            "es-ES": "Gambito Evans Rehusado",
+            "pt-PT": "Gambito Evans Recusado",
+            "de": "Abgelehntes Evans-Gambit",
+            "fr": "Gambit Evans refusé",
+            "it": "Gambetto Evans rifiutato"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined",
@@ -1946,9 +2930,15 @@
         {
           "id": "line-542349a741677bcf",
           "names": {
-            "en": "Evans Gambit Declined, Cordel Variation",
+            "en-US": "Evans Gambit Declined, Cordel Variation",
             "pt-BR": "Gambito Evans Recusado, Variante Cordel",
-            "es": "Gambito Evans Rehusado, Variante Cordel"
+            "es-419": "Gambito Evans Rehusado, Variante Cordel",
+            "en-GB": "Evans Gambit Declined, Cordel Variation",
+            "es-ES": "Gambito Evans Rehusado, Variante Cordel",
+            "pt-PT": "Gambito Evans Recusado, Variante Cordel",
+            "de": "Abgelehntes Evans-Gambit, Cordel-Variante",
+            "fr": "Gambit Evans refusé, Variante Cordel",
+            "it": "Gambetto Evans rifiutato, Variante Cordel"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Cordel Variation",
@@ -1958,9 +2948,15 @@
         {
           "id": "line-47ae6d2786075bb2",
           "names": {
-            "en": "Evans Gambit Declined",
+            "en-US": "Evans Gambit Declined",
             "pt-BR": "Gambito Evans Recusado",
-            "es": "Gambito Evans Rehusado"
+            "es-419": "Gambito Evans Rehusado",
+            "en-GB": "Evans Gambit Declined",
+            "es-ES": "Gambito Evans Rehusado",
+            "pt-PT": "Gambito Evans Recusado",
+            "de": "Abgelehntes Evans-Gambit",
+            "fr": "Gambit Evans refusé",
+            "it": "Gambetto Evans rifiutato"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined",
@@ -1970,9 +2966,15 @@
         {
           "id": "line-dd9e6e59e1eafc70",
           "names": {
-            "en": "Evans Gambit Declined, Showalter Variation",
+            "en-US": "Evans Gambit Declined, Showalter Variation",
             "pt-BR": "Gambito Evans Recusado, Variante Showalter",
-            "es": "Gambito Evans Rehusado, Variante Showalter"
+            "es-419": "Gambito Evans Rehusado, Variante Showalter",
+            "en-GB": "Evans Gambit Declined, Showalter Variation",
+            "es-ES": "Gambito Evans Rehusado, Variante Showalter",
+            "pt-PT": "Gambito Evans Recusado, Variante Showalter",
+            "de": "Abgelehntes Evans-Gambit, Showalter-Variante",
+            "fr": "Gambit Evans refusé, Variante Showalter",
+            "it": "Gambetto Evans rifiutato, Variante Showalter"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Showalter Variation",
@@ -1982,9 +2984,15 @@
         {
           "id": "line-a049ea2959db0c92",
           "names": {
-            "en": "Evans Gambit Declined, Lange Variation",
+            "en-US": "Evans Gambit Declined, Lange Variation",
             "pt-BR": "Gambito Evans Recusado, Variante Lange",
-            "es": "Gambito Evans Rehusado, Variante Lange"
+            "es-419": "Gambito Evans Rehusado, Variante Lange",
+            "en-GB": "Evans Gambit Declined, Lange Variation",
+            "es-ES": "Gambito Evans Rehusado, Variante Lange",
+            "pt-PT": "Gambito Evans Recusado, Variante Lange",
+            "de": "Abgelehntes Evans-Gambit, Lange-Variante",
+            "fr": "Gambit Evans refusé, Variante Lange",
+            "it": "Gambetto Evans rifiutato, Variante Lange"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Lange Variation",
@@ -1994,9 +3002,15 @@
         {
           "id": "line-64fff6aee580d706",
           "names": {
-            "en": "Evans Gambit Declined, Pavlov Variation",
+            "en-US": "Evans Gambit Declined, Pavlov Variation",
             "pt-BR": "Gambito Evans Recusado, Variante Pavlov",
-            "es": "Gambito Evans Rehusado, Variante Pavlov"
+            "es-419": "Gambito Evans Rehusado, Variante Pavlov",
+            "en-GB": "Evans Gambit Declined, Pavlov Variation",
+            "es-ES": "Gambito Evans Rehusado, Variante Pavlov",
+            "pt-PT": "Gambito Evans Recusado, Variante Pavlov",
+            "de": "Abgelehntes Evans-Gambit, Pavlov-Variante",
+            "fr": "Gambit Evans refusé, Variante Pavlov",
+            "it": "Gambetto Evans rifiutato, Variante Pavlov"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Pavlov Variation",
@@ -2006,9 +3020,15 @@
         {
           "id": "line-9fbb4c8a57b950c4",
           "names": {
-            "en": "Evans Gambit Declined, Hirschbach Variation",
+            "en-US": "Evans Gambit Declined, Hirschbach Variation",
             "pt-BR": "Gambito Evans Recusado, Variante Hirschbach",
-            "es": "Gambito Evans Rehusado, Variante Hirschbach"
+            "es-419": "Gambito Evans Rehusado, Variante Hirschbach",
+            "en-GB": "Evans Gambit Declined, Hirschbach Variation",
+            "es-ES": "Gambito Evans Rehusado, Variante Hirschbach",
+            "pt-PT": "Gambito Evans Recusado, Variante Hirschbach",
+            "de": "Abgelehntes Evans-Gambit, Hirschbach-Variante",
+            "fr": "Gambit Evans refusé, Variante Hirschbach",
+            "it": "Gambetto Evans rifiutato, Variante Hirschbach"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Hirschbach Variation",
@@ -2018,9 +3038,15 @@
         {
           "id": "line-d50918eb704cbb2b",
           "names": {
-            "en": "Evans Gambit Declined, Vasquez Variation",
+            "en-US": "Evans Gambit Declined, Vasquez Variation",
             "pt-BR": "Gambito Evans Recusado, Variante Vasquez",
-            "es": "Gambito Evans Rehusado, Variante Vasquez"
+            "es-419": "Gambito Evans Rehusado, Variante Vasquez",
+            "en-GB": "Evans Gambit Declined, Vasquez Variation",
+            "es-ES": "Gambito Evans Rehusado, Variante Vasquez",
+            "pt-PT": "Gambito Evans Recusado, Variante Vasquez",
+            "de": "Abgelehntes Evans-Gambit, Vasquez-Variante",
+            "fr": "Gambit Evans refusé, Variante Vasquez",
+            "it": "Gambetto Evans rifiutato, Variante Vasquez"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Vasquez Variation",
@@ -2030,9 +3056,15 @@
         {
           "id": "line-35907ccafcf66a9b",
           "names": {
-            "en": "Evans Gambit Declined, Hicken Variation",
+            "en-US": "Evans Gambit Declined, Hicken Variation",
             "pt-BR": "Gambito Evans Recusado, Variante Hicken",
-            "es": "Gambito Evans Rehusado, Variante Hicken"
+            "es-419": "Gambito Evans Rehusado, Variante Hicken",
+            "en-GB": "Evans Gambit Declined, Hicken Variation",
+            "es-ES": "Gambito Evans Rehusado, Variante Hicken",
+            "pt-PT": "Gambito Evans Recusado, Variante Hicken",
+            "de": "Abgelehntes Evans-Gambit, Hicken-Variante",
+            "fr": "Gambit Evans refusé, Variante Hicken",
+            "it": "Gambetto Evans rifiutato, Variante Hicken"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Hicken Variation",
@@ -2043,17 +3075,29 @@
     },
     {
       "names": {
-        "en": "Giuoco Pianissimo",
+        "en-US": "Giuoco Pianissimo",
         "pt-BR": "Giuoco Pianissimo",
-        "es": "Giuoco Pianissimo"
+        "es-419": "Giuoco Pianissimo",
+        "en-GB": "Giuoco Pianissimo",
+        "es-ES": "Giuoco Pianissimo",
+        "pt-PT": "Giuoco Pianissimo",
+        "de": "Giuoco Pianissimo",
+        "fr": "Giuoco pianissimo",
+        "it": "Giuoco pianissimo"
       },
       "lines": [
         {
           "id": "line-d46bb1be5d824ce1",
           "names": {
-            "en": "Giuoco Pianissimo",
+            "en-US": "Giuoco Pianissimo",
             "pt-BR": "Giuoco Pianissimo",
-            "es": "Giuoco Pianissimo"
+            "es-419": "Giuoco Pianissimo",
+            "en-GB": "Giuoco Pianissimo",
+            "es-ES": "Giuoco Pianissimo",
+            "pt-PT": "Giuoco Pianissimo",
+            "de": "Giuoco Pianissimo",
+            "fr": "Giuoco pianissimo",
+            "it": "Giuoco pianissimo"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo",
@@ -2063,9 +3107,15 @@
         {
           "id": "line-811b0d2fee9bdb42",
           "names": {
-            "en": "Giuoco Pianissimo",
+            "en-US": "Giuoco Pianissimo",
             "pt-BR": "Giuoco Pianissimo",
-            "es": "Giuoco Pianissimo"
+            "es-419": "Giuoco Pianissimo",
+            "en-GB": "Giuoco Pianissimo",
+            "es-ES": "Giuoco Pianissimo",
+            "pt-PT": "Giuoco Pianissimo",
+            "de": "Giuoco Pianissimo",
+            "fr": "Giuoco pianissimo",
+            "it": "Giuoco pianissimo"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo",
@@ -2075,9 +3125,15 @@
         {
           "id": "line-514996f833de3d2c",
           "names": {
-            "en": "Giuoco Pianissimo",
+            "en-US": "Giuoco Pianissimo",
             "pt-BR": "Giuoco Pianissimo",
-            "es": "Giuoco Pianissimo"
+            "es-419": "Giuoco Pianissimo",
+            "en-GB": "Giuoco Pianissimo",
+            "es-ES": "Giuoco Pianissimo",
+            "pt-PT": "Giuoco Pianissimo",
+            "de": "Giuoco Pianissimo",
+            "fr": "Giuoco pianissimo",
+            "it": "Giuoco pianissimo"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo",
@@ -2087,9 +3143,15 @@
         {
           "id": "line-36b5c2588b124e11",
           "names": {
-            "en": "Giuoco Pianissimo, Italian Four Knights Variation",
+            "en-US": "Giuoco Pianissimo, Italian Four Knights Variation",
             "pt-BR": "Giuoco Pianissimo, Variante Italiana dos Quatro Cavalos",
-            "es": "Giuoco Pianissimo, Variante Italiana de los Cuatro Caballos"
+            "es-419": "Giuoco Pianissimo, Variante Italiana de los Cuatro Caballos",
+            "en-GB": "Giuoco Pianissimo, Italian Four Knights Variation",
+            "es-ES": "Giuoco Pianissimo, Variante Italiana de los Cuatro Caballos",
+            "pt-PT": "Giuoco Pianissimo, Variante Italiana dos Quatro Cavalos",
+            "de": "Giuoco Pianissimo, Italienische Vierspringervariante",
+            "fr": "Giuoco pianissimo, Variante italienne des quatre cavaliers",
+            "it": "Giuoco pianissimo, Variante italiana dei quattro cavalli"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo, Italian Four Knights Variation",
@@ -2099,9 +3161,15 @@
         {
           "id": "line-81ad368005fc695f",
           "names": {
-            "en": "Giuoco Pianissimo, Canal Variation",
+            "en-US": "Giuoco Pianissimo, Canal Variation",
             "pt-BR": "Giuoco Pianissimo, Variante Canal",
-            "es": "Giuoco Pianissimo, Variante Canal"
+            "es-419": "Giuoco Pianissimo, Variante Canal",
+            "en-GB": "Giuoco Pianissimo, Canal Variation",
+            "es-ES": "Giuoco Pianissimo, Variante Canal",
+            "pt-PT": "Giuoco Pianissimo, Variante Canal",
+            "de": "Giuoco Pianissimo, Canal-Variante",
+            "fr": "Giuoco pianissimo, Variante Canal",
+            "it": "Giuoco pianissimo, Variante Canal"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo, Canal Variation",
@@ -2111,9 +3179,15 @@
         {
           "id": "line-9bf3a00b1502e6a0",
           "names": {
-            "en": "Giuoco Pianissimo, Lucchini Gambit",
+            "en-US": "Giuoco Pianissimo, Lucchini Gambit",
             "pt-BR": "Giuoco Pianissimo, Gambito Lucchini",
-            "es": "Giuoco Pianissimo, Gambito Lucchini"
+            "es-419": "Giuoco Pianissimo, Gambito Lucchini",
+            "en-GB": "Giuoco Pianissimo, Lucchini Gambit",
+            "es-ES": "Giuoco Pianissimo, Gambito Lucchini",
+            "pt-PT": "Giuoco Pianissimo, Gambito Lucchini",
+            "de": "Giuoco Pianissimo, Lucchini-Gambit",
+            "fr": "Giuoco pianissimo, Gambit Lucchini",
+            "it": "Giuoco pianissimo, Gambetto Lucchini"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo, Lucchini Gambit",
@@ -2123,9 +3197,15 @@
         {
           "id": "line-a43c7f1897677475",
           "names": {
-            "en": "Giuoco Pianissimo, Dubois Variation",
+            "en-US": "Giuoco Pianissimo, Dubois Variation",
             "pt-BR": "Giuoco Pianissimo, Variante Dubois",
-            "es": "Giuoco Pianissimo, Variante Dubois"
+            "es-419": "Giuoco Pianissimo, Variante Dubois",
+            "en-GB": "Giuoco Pianissimo, Dubois Variation",
+            "es-ES": "Giuoco Pianissimo, Variante Dubois",
+            "pt-PT": "Giuoco Pianissimo, Variante Dubois",
+            "de": "Giuoco Pianissimo, Dubois-Variante",
+            "fr": "Giuoco pianissimo, Variante Dubois",
+            "it": "Giuoco pianissimo, Variante Dubois"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo, Dubois Variation",
@@ -2135,9 +3215,15 @@
         {
           "id": "line-d18e501abd0c0474",
           "names": {
-            "en": "Giuoco Pianissimo",
+            "en-US": "Giuoco Pianissimo",
             "pt-BR": "Giuoco Pianissimo",
-            "es": "Giuoco Pianissimo"
+            "es-419": "Giuoco Pianissimo",
+            "en-GB": "Giuoco Pianissimo",
+            "es-ES": "Giuoco Pianissimo",
+            "pt-PT": "Giuoco Pianissimo",
+            "de": "Giuoco Pianissimo",
+            "fr": "Giuoco pianissimo",
+            "it": "Giuoco pianissimo"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo",
@@ -2147,9 +3233,15 @@
         {
           "id": "line-fb5e461992906d92",
           "names": {
-            "en": "Giuoco Pianissimo, Normal",
+            "en-US": "Giuoco Pianissimo, Normal",
             "pt-BR": "Giuoco Pianissimo, Normal",
-            "es": "Giuoco Pianissimo, Normal"
+            "es-419": "Giuoco Pianissimo, Normal",
+            "en-GB": "Giuoco Pianissimo, Normal",
+            "es-ES": "Giuoco Pianissimo, Normal",
+            "pt-PT": "Giuoco Pianissimo, Normal",
+            "de": "Giuoco Pianissimo, Normal",
+            "fr": "Giuoco pianissimo, Normale",
+            "it": "Giuoco pianissimo, Normale"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo, Normal",
@@ -2160,17 +3252,29 @@
     },
     {
       "names": {
-        "en": "Hungarian Defense",
+        "en-US": "Hungarian Defense",
         "pt-BR": "Defesa Húngara",
-        "es": "Defensa Húngara"
+        "es-419": "Defensa Húngara",
+        "en-GB": "Hungarian Defence",
+        "es-ES": "Defensa Húngara",
+        "pt-PT": "Defesa Húngara",
+        "de": "Ungarische Verteidigung",
+        "fr": "Défense hongroise",
+        "it": "Difesa ungherese"
       },
       "lines": [
         {
           "id": "line-44502b1f08addaff",
           "names": {
-            "en": "Hungarian Defense",
+            "en-US": "Hungarian Defense",
             "pt-BR": "Defesa Húngara",
-            "es": "Defensa Húngara"
+            "es-419": "Defensa Húngara",
+            "en-GB": "Hungarian Defence",
+            "es-ES": "Defensa Húngara",
+            "pt-PT": "Defesa Húngara",
+            "de": "Ungarische Verteidigung",
+            "fr": "Défense hongroise",
+            "it": "Difesa ungherese"
           },
           "eco": "C50",
           "opening": "Italian Game: Hungarian Defense",
@@ -2180,9 +3284,15 @@
         {
           "id": "line-bafe0f570bdcff75",
           "names": {
-            "en": "Hungarian Defense, Tartakower Variation",
+            "en-US": "Hungarian Defense, Tartakower Variation",
             "pt-BR": "Defesa Húngara, Variante Tartakower",
-            "es": "Defensa Húngara, Variante Tartakower"
+            "es-419": "Defensa Húngara, Variante Tartakower",
+            "en-GB": "Hungarian Defence, Tartakower Variation",
+            "es-ES": "Defensa Húngara, Variante Tartakower",
+            "pt-PT": "Defesa Húngara, Variante Tartakower",
+            "de": "Ungarische Verteidigung, Tartakower-Variante",
+            "fr": "Défense hongroise, Variante Tartakower",
+            "it": "Difesa ungherese, Variante Tartakower"
           },
           "eco": "C50",
           "opening": "Italian Game: Hungarian Defense, Tartakower Variation",
@@ -2196,9 +3306,15 @@
     {
       "id": "line-231ad10f1825d882",
       "names": {
-        "en": "Anti-Fried Liver Defense",
+        "en-US": "Anti-Fried Liver Defense",
         "pt-BR": "Defesa Anti-Fígado Frito",
-        "es": "Defensa Anti-Hígado Frito"
+        "es-419": "Defensa Anti-Hígado Frito",
+        "en-GB": "Anti-Fried Liver Defence",
+        "es-ES": "Defensa Anti-Hígado Frito",
+        "pt-PT": "Defesa Anti-Fígado Frito",
+        "de": "Anti-Fegatello-Verteidigung",
+        "fr": "Défense anti-Fegatello",
+        "it": "Difesa anti-Fegatello"
       },
       "eco": "C50",
       "opening": "Italian Game: Anti-Fried Liver Defense",
@@ -2208,9 +3324,15 @@
     {
       "id": "line-12b289e03d2dc520",
       "names": {
-        "en": "Bird's Attack",
+        "en-US": "Bird's Attack",
         "pt-BR": "Ataque Bird",
-        "es": "Ataque Bird"
+        "es-419": "Ataque Bird",
+        "en-GB": "Bird's Attack",
+        "es-ES": "Ataque Bird",
+        "pt-PT": "Ataque Bird",
+        "de": "Bird-Angriff",
+        "fr": "Attaque Bird",
+        "it": "Attacco Bird"
       },
       "eco": "C53",
       "opening": "Italian Game: Bird's Attack",
@@ -2220,9 +3342,15 @@
     {
       "id": "line-30f17d6ab8cea10d",
       "names": {
-        "en": "Blackburne-Kostić Gambit",
+        "en-US": "Blackburne-Kostić Gambit",
         "pt-BR": "Gambito Blackburne-Kostić",
-        "es": "Gambito Blackburne-Kostić"
+        "es-419": "Gambito Blackburne-Kostić",
+        "en-GB": "Blackburne-Kostić Gambit",
+        "es-ES": "Gambito Blackburne-Kostić",
+        "pt-PT": "Gambito Blackburne-Kostić",
+        "de": "Blackburne-Kostić-Gambit",
+        "fr": "Gambit Blackburne-Kostić",
+        "it": "Gambetto Blackburne-Kostić"
       },
       "eco": "C50",
       "opening": "Italian Game: Blackburne-Kostić Gambit",
@@ -2232,9 +3360,15 @@
     {
       "id": "line-07577626f61cfe1e",
       "names": {
-        "en": "Deutz Gambit",
+        "en-US": "Deutz Gambit",
         "pt-BR": "Gambito Deutz",
-        "es": "Gambito Deutz"
+        "es-419": "Gambito Deutz",
+        "en-GB": "Deutz Gambit",
+        "es-ES": "Gambito Deutz",
+        "pt-PT": "Gambito Deutz",
+        "de": "Deutz-Gambit",
+        "fr": "Gambit Deutz",
+        "it": "Gambetto Deutz"
       },
       "eco": "C50",
       "opening": "Italian Game: Deutz Gambit",
@@ -2244,9 +3378,15 @@
     {
       "id": "line-7e74b6d6d13e5cf2",
       "names": {
-        "en": "Evans Gambit Accepted",
+        "en-US": "Evans Gambit Accepted",
         "pt-BR": "Gambito Evans Aceito",
-        "es": "Gambito Evans Aceptado"
+        "es-419": "Gambito Evans Aceptado",
+        "en-GB": "Evans Gambit Accepted",
+        "es-ES": "Gambito Evans Aceptado",
+        "pt-PT": "Gambito Evans Aceito",
+        "de": "Angenommenes Evans-Gambit",
+        "fr": "Gambit Evans accepté",
+        "it": "Gambetto Evans accettato"
       },
       "eco": "C51",
       "opening": "Italian Game: Evans Gambit Accepted",
@@ -2256,9 +3396,15 @@
     {
       "id": "line-6f1aae541f599327",
       "names": {
-        "en": "Jerome Gambit",
+        "en-US": "Jerome Gambit",
         "pt-BR": "Gambito Jerome",
-        "es": "Gambito Jerome"
+        "es-419": "Gambito Jerome",
+        "en-GB": "Jerome Gambit",
+        "es-ES": "Gambito Jerome",
+        "pt-PT": "Gambito Jerome",
+        "de": "Jerome-Gambit",
+        "fr": "Gambit Jerome",
+        "it": "Gambetto Jerome"
       },
       "eco": "C50",
       "opening": "Italian Game: Jerome Gambit",
@@ -2268,9 +3414,15 @@
     {
       "id": "line-162e68c940fe8ec7",
       "names": {
-        "en": "Italian Game",
+        "en-US": "Italian Game",
         "pt-BR": "Abertura Italiana",
-        "es": "Apertura Italiana"
+        "es-419": "Apertura Italiana",
+        "en-GB": "Italian Game",
+        "es-ES": "Apertura Italiana",
+        "pt-PT": "Abertura Italiana",
+        "de": "Italienische Partie",
+        "fr": "Partie italienne",
+        "it": "Partita italiana"
       },
       "eco": "C50",
       "opening": "Italian Game",
@@ -2280,9 +3432,15 @@
     {
       "id": "line-87e041dfcd4e5e9e",
       "names": {
-        "en": "Paris Defense",
+        "en-US": "Paris Defense",
         "pt-BR": "Defesa Parisiense",
-        "es": "Defensa Parisina"
+        "es-419": "Defensa Parisina",
+        "en-GB": "Paris Defence",
+        "es-ES": "Defensa Parisina",
+        "pt-PT": "Defesa Parisiense",
+        "de": "Pariser Verteidigung",
+        "fr": "Défense parisienne",
+        "it": "Difesa parigina"
       },
       "eco": "C50",
       "opening": "Italian Game: Paris Defense",
@@ -2292,9 +3450,15 @@
     {
       "id": "line-036e930e17c75002",
       "names": {
-        "en": "Rosentreter Gambit",
+        "en-US": "Rosentreter Gambit",
         "pt-BR": "Gambito Rosentreter",
-        "es": "Gambito Rosentreter"
+        "es-419": "Gambito Rosentreter",
+        "en-GB": "Rosentreter Gambit",
+        "es-ES": "Gambito Rosentreter",
+        "pt-PT": "Gambito Rosentreter",
+        "de": "Rosentreter-Gambit",
+        "fr": "Gambit Rosentreter",
+        "it": "Gambetto Rosentreter"
       },
       "eco": "C50",
       "opening": "Italian Game: Rosentreter Gambit",
@@ -2304,9 +3468,15 @@
     {
       "id": "line-f0cab1818ce2e60a",
       "names": {
-        "en": "Rousseau Gambit",
+        "en-US": "Rousseau Gambit",
         "pt-BR": "Gambito Rousseau",
-        "es": "Gambito Rousseau"
+        "es-419": "Gambito Rousseau",
+        "en-GB": "Rousseau Gambit",
+        "es-ES": "Gambito Rousseau",
+        "pt-PT": "Gambito Rousseau",
+        "de": "Gambit Rousseau",
+        "fr": "Gambit Rousseau",
+        "it": "Gambetto Rousseau"
       },
       "eco": "C50",
       "opening": "Italian Game: Rousseau Gambit",
@@ -2316,9 +3486,15 @@
     {
       "id": "line-400fd4ceb3a82234",
       "names": {
-        "en": "Scotch Invitation Declined",
+        "en-US": "Scotch Invitation Declined",
         "pt-BR": "Convite à Escocesa Recusado",
-        "es": "Invitación a la Escocesa Rehusada"
+        "es-419": "Invitación a la Escocesa Rehusada",
+        "en-GB": "Scotch Invitation Declined",
+        "es-ES": "Invitación a la Escocesa Rehusada",
+        "pt-PT": "Convite à Escocesa Recusado",
+        "de": "Abgelehnte Schottische Einladung",
+        "fr": "Invitation écossaise refusée",
+        "it": "Invito scozzese rifiutato"
       },
       "eco": "C56",
       "opening": "Italian Game: Scotch Invitation Declined",

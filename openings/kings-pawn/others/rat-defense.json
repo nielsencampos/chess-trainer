@@ -1,25 +1,43 @@
 {
   "id": "rat-defense",
   "names": {
-    "en": "Rat Defense",
+    "en-US": "Rat Defense",
     "pt-BR": "Defesa do Rato",
-    "es": "Defensa de la Rata"
+    "es-419": "Defensa de la Rata",
+    "en-GB": "Rat Defence",
+    "es-ES": "Defensa de la Rata",
+    "pt-PT": "Defesa do Rato",
+    "de": "Rattenverteidigung",
+    "fr": "Défense du rat",
+    "it": "Difesa del ratto"
   },
   "order": null,
   "variants": [
     {
       "names": {
-        "en": "English Rat",
+        "en-US": "English Rat",
         "pt-BR": "Rato Inglês",
-        "es": "Rata Inglesa"
+        "es-419": "Rata Inglesa",
+        "en-GB": "English Rat",
+        "es-ES": "Rata Inglesa",
+        "pt-PT": "Rato Inglês",
+        "de": "Englische Ratte",
+        "fr": "Rat anglais",
+        "it": "Ratto inglese"
       },
       "lines": [
         {
           "id": "line-8424941469ea3ac4",
           "names": {
-            "en": "English Rat",
+            "en-US": "English Rat",
             "pt-BR": "Rato Inglês",
-            "es": "Rata Inglesa"
+            "es-419": "Rata Inglesa",
+            "en-GB": "English Rat",
+            "es-ES": "Rata Inglesa",
+            "pt-PT": "Rato Inglês",
+            "de": "Englische Ratte",
+            "fr": "Rat anglais",
+            "it": "Ratto inglese"
           },
           "eco": "A41",
           "opening": "Rat Defense: English Rat",
@@ -29,9 +47,15 @@
         {
           "id": "line-20ab90c3766a08be",
           "names": {
-            "en": "English Rat, Pounds Gambit",
+            "en-US": "English Rat, Pounds Gambit",
             "pt-BR": "Rato Inglês, Gambito Pounds",
-            "es": "Rata Inglesa, Gambito Pounds"
+            "es-419": "Rata Inglesa, Gambito Pounds",
+            "en-GB": "English Rat, Pounds Gambit",
+            "es-ES": "Rata Inglesa, Gambito Pounds",
+            "pt-PT": "Rato Inglês, Gambito Pounds",
+            "de": "Englische Ratte, Pounds-Gambit",
+            "fr": "Rat anglais, Gambit Pounds",
+            "it": "Ratto inglese, Gambetto Pounds"
           },
           "eco": "A41",
           "opening": "Rat Defense: English Rat, Pounds Gambit",
@@ -41,9 +65,15 @@
         {
           "id": "line-53412ee6d30f2f4f",
           "names": {
-            "en": "English Rat, Lisbon Gambit",
+            "en-US": "English Rat, Lisbon Gambit",
             "pt-BR": "Rato Inglês, Gambito de Lisboa",
-            "es": "Rata Inglesa, Gambito de Lisboa"
+            "es-419": "Rata Inglesa, Gambito de Lisboa",
+            "en-GB": "English Rat, Lisbon Gambit",
+            "es-ES": "Rata Inglesa, Gambito de Lisboa",
+            "pt-PT": "Rato Inglês, Gambito de Lisboa",
+            "de": "Englische Ratte, Lissabonner Gambit",
+            "fr": "Rat anglais, Gambit de Lisbonne",
+            "it": "Ratto inglese, Gambetto di Lisbona"
           },
           "eco": "A41",
           "opening": "Rat Defense: English Rat, Lisbon Gambit",
@@ -57,9 +87,15 @@
     {
       "id": "line-77da22966180be6d",
       "names": {
-        "en": "Accelerated Gurgenidze",
+        "en-US": "Accelerated Gurgenidze",
         "pt-BR": "Gurgenidze Acelerada",
-        "es": "Gurgenidze Acelerada"
+        "es-419": "Gurgenidze Acelerada",
+        "en-GB": "Accelerated Gurgenidze",
+        "es-ES": "Gurgenidze Acelerada",
+        "pt-PT": "Gurgenidze Acelerada",
+        "de": "Beschleunigter Gurgenidse",
+        "fr": "Gurgenidze accéléré",
+        "it": "Gurgenidze accelerata"
       },
       "eco": "B06",
       "opening": "Rat Defense: Accelerated Gurgenidze",
@@ -69,9 +105,15 @@
     {
       "id": "line-2bdc57045c974188",
       "names": {
-        "en": "Antal Defense",
+        "en-US": "Antal Defense",
         "pt-BR": "Defesa Antal",
-        "es": "Defensa Antal"
+        "es-419": "Defensa Antal",
+        "en-GB": "Antal Defence",
+        "es-ES": "Defensa Antal",
+        "pt-PT": "Defesa Antal",
+        "de": "Antal-Verteidigung",
+        "fr": "Défense Antal",
+        "it": "Difesa Antal"
       },
       "eco": "B00",
       "opening": "Rat Defense: Antal Defense",
@@ -81,9 +123,15 @@
     {
       "id": "line-f038c81503d79246",
       "names": {
-        "en": "Balogh Defense",
+        "en-US": "Balogh Defense",
         "pt-BR": "Defesa Balogh",
-        "es": "Defensa Balogh"
+        "es-419": "Defensa Balogh",
+        "en-GB": "Balogh Defence",
+        "es-ES": "Defensa Balogh",
+        "pt-PT": "Defesa Balogh",
+        "de": "Balogh-Verteidigung",
+        "fr": "Défense Balogh",
+        "it": "Difesa Balogh"
       },
       "eco": "A82",
       "opening": "Rat Defense: Balogh Defense",
@@ -93,9 +141,15 @@
     {
       "id": "line-ec817c16132adbec",
       "names": {
-        "en": "Fuller Gambit",
+        "en-US": "Fuller Gambit",
         "pt-BR": "Gambito Fuller",
-        "es": "Gambito Fuller"
+        "es-419": "Gambito Fuller",
+        "en-GB": "Fuller Gambit",
+        "es-ES": "Gambito Fuller",
+        "pt-PT": "Gambito Fuller",
+        "de": "Fuller-Gambit",
+        "fr": "Gambit Fuller",
+        "it": "Gambetto Fuller"
       },
       "eco": "B00",
       "opening": "Rat Defense: Fuller Gambit",
@@ -105,9 +159,15 @@
     {
       "id": "line-88b88098ea6e7861",
       "names": {
-        "en": "Harmonist",
+        "en-US": "Harmonist",
         "pt-BR": "Harmonista",
-        "es": "Armonista"
+        "es-419": "Armonista",
+        "en-GB": "Harmonist",
+        "es-ES": "Armonista",
+        "pt-PT": "Harmonista",
+        "de": "Harmonist",
+        "fr": "Harmonist",
+        "it": "Harmonist"
       },
       "eco": "B00",
       "opening": "Rat Defense: Harmonist",
@@ -117,9 +177,15 @@
     {
       "id": "line-0e8f91e11cacd155",
       "names": {
-        "en": "Petruccioli Attack",
+        "en-US": "Petruccioli Attack",
         "pt-BR": "Ataque Petruccioli",
-        "es": "Ataque Petruccioli"
+        "es-419": "Ataque Petruccioli",
+        "en-GB": "Petruccioli Attack",
+        "es-ES": "Ataque Petruccioli",
+        "pt-PT": "Ataque Petruccioli",
+        "de": "Petruccioli-Angriff",
+        "fr": "Attaque Petruccioli",
+        "it": "Attacco Petruccioli"
       },
       "eco": "B00",
       "opening": "Rat Defense: Petruccioli Attack",
@@ -129,9 +195,15 @@
     {
       "id": "line-0e48b63e0b5fbb86",
       "names": {
-        "en": "Small Center Defense",
+        "en-US": "Small Center Defense",
         "pt-BR": "Defesa do Pequeno Centro",
-        "es": "Defensa del Pequeño Centro"
+        "es-419": "Defensa del Pequeño Centro",
+        "en-GB": "Small Centre Defence",
+        "es-ES": "Defensa del Pequeño Centro",
+        "pt-PT": "Defesa do Pequeno Centro",
+        "de": "Verteidigung mit kleinem Zentrum",
+        "fr": "Défense du petit centre",
+        "it": "Difesa del piccolo centro"
       },
       "eco": "C00",
       "opening": "Rat Defense: Small Center Defense",
@@ -141,9 +213,15 @@
     {
       "id": "line-f3c85bb62cdc6b6c",
       "names": {
-        "en": "Spike Attack",
+        "en-US": "Spike Attack",
         "pt-BR": "Ataque Espigão",
-        "es": "Ataque Púa"
+        "es-419": "Ataque Púa",
+        "en-GB": "Spike Attack",
+        "es-ES": "Ataque Púa",
+        "pt-PT": "Ataque Espigão",
+        "de": "Stachelangriff",
+        "fr": "Attaque de la pointe",
+        "it": "Attacco della punta"
       },
       "eco": "B00",
       "opening": "Rat Defense: Spike Attack",

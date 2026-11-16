@@ -9,7 +9,7 @@ from app.book.models import BookError
 from app.book.source import read_opening_files
 from app.book.sync import load_book, sync_catalog, sync_openings
 from app.config import Settings
-from app.db.connection import DatabaseError, apply_migrations, open_database
+from app.db.connection import MIGRATIONS_DIR, DatabaseError, apply_migrations, open_database
 from catalog.generate_openings import line_id_of, render
 from catalog.loader import index_by_position, load_catalog, source_commit
 from catalog.validate import name_coverage, validate
@@ -31,7 +31,7 @@ def line(line_id, moves, name="Line", **extra):
     """
     return {
         "id": line_id,
-        "names": {"en": name},
+        "names": {"en-US": name},
         "moves": moves,
         "source": "test",
         **extra,
@@ -47,7 +47,7 @@ def write_family(directory, family_id, *lines, name="Family"):
         *lines (dict): The family's lines.
         name (str): The family's English name.
     """
-    document = {"id": family_id, "names": {"en": name}, "lines": list(lines)}
+    document = {"id": family_id, "names": {"en-US": name}, "lines": list(lines)}
     (directory / f"{family_id}.json").write_text(json.dumps(document), encoding="utf-8")
 
 
@@ -114,9 +114,37 @@ def test_migrations_apply_once(tmp_path):
         tmp_path (Path): A temporary folder for this test.
     """
     database = open_database(tmp_path / "test.duckdb")
-    assert apply_migrations(database) == [1, 2, 3, 4, 5, 6]
+    assert apply_migrations(database) == [1, 2, 3, 4, 5, 6, 7]
     assert apply_migrations(database) == []
-    assert count(database, "schema_migrations") == 6
+    assert count(database, "schema_migrations") == 7
+    database.close()
+
+
+def test_the_locale_code_migration_renames_en_and_es(tmp_path):
+    """Names saved under en and es move to en-US and es-419, and none is lost.
+
+    Args:
+        tmp_path (Path): A temporary folder for this test.
+    """
+    before = tmp_path / "before"
+    before.mkdir()
+    for path in sorted(MIGRATIONS_DIR.glob("*.sql"))[:6]:
+        (before / path.name).write_text(path.read_text(encoding="utf-8"), encoding="utf-8")
+    database = open_database(tmp_path / "test.duckdb")
+    apply_migrations(database, before)
+    database.execute(
+        "INSERT INTO names VALUES ('variant', 'a', 'en', 'X'), ('variant', 'a', 'es', 'Equis'),"
+        " ('variant', 'a', 'pt-BR', 'Xis')"
+    )
+    database.execute(
+        "INSERT INTO variants VALUES ('a', 'r', NULL, NULL, '', [], '', 'test', true, ?)",
+        [json.dumps({"en": "V", "es": "Ve", "es-ES": "Ve"})],
+    )
+    assert apply_migrations(database) == [7]
+    rows = database.execute("SELECT locale, name FROM names ORDER BY locale").fetchall()
+    assert rows == [("en-US", "X"), ("es-419", "Equis"), ("pt-BR", "Xis")]
+    subgroup = json.loads(database.execute("SELECT subgroup_json FROM variants").fetchone()[0])
+    assert subgroup == {"en-US": "V", "es-419": "Ve", "es-ES": "Ve"}
     database.close()
 
 
@@ -312,11 +340,11 @@ def test_book_read_from_the_database(connection, openings):
     """
     sync_openings(connection, openings)
     book = load_book(connection)
-    assert book.repertoires["caro"].names == {"en": "Caro-Kann Defense"}
+    assert book.repertoires["caro"].names == {"en-US": "Caro-Kann Defense"}
     assert len(book.repertoires["caro"].variant_ids) == 2
     variant = book.variants["c2"]
     assert variant.eco == "B12"
-    assert variant.names == {"en": "Advance"}
+    assert variant.names == {"en-US": "Advance"}
     assert [move.san for move in variant.moves[chess.Board().epd()]] == ["e4"]
     assert variant.final_epd in variant.positions
     assert variant.final_epd not in variant.moves
@@ -333,8 +361,8 @@ def test_translated_names_load(connection, tmp_path):
     directory.mkdir()
     document = {
         "id": "x",
-        "names": {"en": "X", "pt-BR": "Xis"},
-        "lines": [{**line("x1", ["e4"]), "names": {"en": "L", "pt-BR": "Linha"}}],
+        "names": {"en-US": "X", "pt-BR": "Xis"},
+        "lines": [{**line("x1", ["e4"]), "names": {"en-US": "L", "pt-BR": "Linha"}}],
     }
     (directory / "x.json").write_text(json.dumps(document), encoding="utf-8")
     sync_openings(connection, directory)
@@ -347,16 +375,16 @@ def test_translated_names_load(connection, tmp_path):
     ("content", "message"),
     [
         ("not json", "invalid JSON"),
-        ('{"id": "other", "names": {"en": "X"}, "lines": []}', "match the file name"),
-        ('{"id": "bad", "names": {"en": "X"}, "lines": []}', "non-empty list"),
-        (json.dumps({"id": "bad", "names": {}, "lines": [line("a", ["e4"])]}), "'en'"),
+        ('{"id": "other", "names": {"en-US": "X"}, "lines": []}', "match the file name"),
+        ('{"id": "bad", "names": {"en-US": "X"}, "lines": []}', "non-empty list"),
+        (json.dumps({"id": "bad", "names": {}, "lines": [line("a", ["e4"])]}), "'en-US'"),
         (
             json.dumps(
-                {"id": "bad", "names": {"en": "X"}, "lines": [{"id": "a", "moves": ["e4"]}]}
+                {"id": "bad", "names": {"en-US": "X"}, "lines": [{"id": "a", "moves": ["e4"]}]}
             ),
             "'source'",
         ),
-        (json.dumps({"id": "bad", "names": {"en": "X"}, "lines": [line("a", [])]}), "'moves'"),
+        (json.dumps({"id": "bad", "names": {"en-US": "X"}, "lines": [line("a", [])]}), "'moves'"),
     ],
 )
 def test_invalid_file_fails_loudly(connection, tmp_path, content, message):
@@ -437,19 +465,19 @@ def test_groups_come_from_the_folders_and_subgroups_load(connection, tmp_path):
     (directory / "kings-pawn" / "others").mkdir(parents=True)
     document = {
         "id": "x",
-        "names": {"en": "X"},
+        "names": {"en-US": "X"},
         "order": 2,
-        "variants": [{"names": {"en": "V", "es": "Ve"}, "lines": [line("a", ["e4", "c5"])]}],
+        "variants": [{"names": {"en-US": "V", "es-419": "Ve"}, "lines": [line("a", ["e4", "c5"])]}],
         "lines": [line("b", ["e4", "c6"])],
     }
     (directory / "kings-pawn" / "x.json").write_text(json.dumps(document), encoding="utf-8")
-    rare = {"id": "y", "names": {"en": "Y"}, "order": None, "lines": [line("c", ["e4", "e5"])]}
+    rare = {"id": "y", "names": {"en-US": "Y"}, "order": None, "lines": [line("c", ["e4", "e5"])]}
     (directory / "kings-pawn" / "others" / "y.json").write_text(json.dumps(rare), encoding="utf-8")
     sync_openings(connection, directory)
     book = load_book(connection)
     assert (book.repertoires["x"].group, book.repertoires["x"].order) == ("kings-pawn", 2)
     assert (book.repertoires["y"].group, book.repertoires["y"].order) == ("kings-pawn", None)
-    assert book.variants["a"].subgroup == {"en": "V", "es": "Ve"}
+    assert book.variants["a"].subgroup == {"en-US": "V", "es-419": "Ve"}
     assert book.variants["b"].subgroup is None
 
 
@@ -462,7 +490,7 @@ def test_unknown_group_folder_fails(connection, tmp_path):
     """
     directory = tmp_path / "tree"
     (directory / "nope").mkdir(parents=True)
-    document = {"id": "x", "names": {"en": "X"}, "lines": [line("a", ["e4"])]}
+    document = {"id": "x", "names": {"en-US": "X"}, "lines": [line("a", ["e4"])]}
     (directory / "nope" / "x.json").write_text(json.dumps(document), encoding="utf-8")
     with pytest.raises(BookError, match="unknown group"):
         sync_openings(connection, directory)
@@ -555,9 +583,9 @@ def test_every_name_has_english_and_coverage_is_measured(committed):
         committed (list[OpeningFile]): The opening files in the repository.
     """
     coverage = name_coverage(committed)
-    assert coverage["en"]["lines"] == (3865, 3865)
-    assert coverage["en"]["families"] == (122, 122)
-    for locale in ("pt-BR", "es"):
+    assert coverage["en-US"]["lines"] == (3865, 3865)
+    assert coverage["en-US"]["families"] == (122, 122)
+    for locale in ("pt-BR", "es-419"):
         assert coverage[locale]["lines"][0] > 0
         assert coverage[locale]["families"][0] > 0
 

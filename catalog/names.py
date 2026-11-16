@@ -47,6 +47,7 @@ from catalog.translations import (
     Term,
     load_glossary,
     load_name_sources,
+    load_translate_words,
 )
 
 OPENINGS_DIR = ROOT / "openings"
@@ -66,6 +67,9 @@ SEPARATORS = (", ", ": ", " - ", " \u2013 ")  # The last is an en dash.
 NOT_IN_TITLES = re.compile(r"[#<>\[\]|{}]")
 DISAMBIGUATION = re.compile(r"\s*\([^()]*\)$")
 PLACEHOLDER = "{name}"
+# The same proper name with its words joined by hyphens, for compounds ("{name-}-Angriff" →
+# "Max-Lange-Angriff").
+HYPHENATED = "{name-}"
 # A cache entry: the English article, its Wikidata item, its articles by site and its labels.
 CacheEntry = dict | None
 
@@ -327,22 +331,50 @@ def wiki_name(entry: CacheEntry, locale: Locale, family: str | None = None) -> F
             if found.name.casefold().startswith(prefix.casefold()):
                 found = Found(found.name[len(prefix) :], found.url)
                 break
-    return found if found and found.name.strip() else None
+    if not found or not found.name.strip():
+        return None
+    # Labels, and what follows a family's name, are often in lower case ("gambit irlandais",
+    # "Difesa siciliana, variante Dragone"); a name starts with a capital.
+    return Found(found.name[:1].upper() + found.name[1:], found.url)
+
+
+def titled_for(entry: CacheEntry, english: str) -> bool:
+    """Whether an English Wikipedia article is titled for a name, give or take its spelling.
+
+    "Defence" and "Defense", dashes and hyphens, a possessive "'s" and case do not count.
+
+    Args:
+        entry (CacheEntry): The lookup's entry.
+        english (str): The book's English name.
+
+    Returns:
+        bool: True when the article's English title is that name.
+    """
+
+    def fold(text: str) -> str:
+        text = re.sub(r"[\u2010-\u2015-]", " ", text.casefold()).replace("'s ", " ")
+        return " ".join(text.replace("defence", "defense").split())
+
+    return entry is not None and fold(entry["sitelinks"].get("enwiki", "")) == fold(english)
 
 
 class Rules:
     """Builds a name from the glossary, segment by segment."""
 
-    def __init__(self, terms: dict[str, Term]) -> None:
+    def __init__(self, terms: dict[str, Term], translate: frozenset[str] = frozenset()) -> None:
         """Prepares the glossary's terms and templates.
 
         Args:
             terms (dict[str, Term]): The locale's glossary.
+            translate (frozenset[str]): Case-folded English words the language translates, never
+                kept as proper names.
         """
         self.exact: dict[str, str] = {}
         self.templates: list[tuple[re.Pattern[str], str]] = []
         for term in terms.values():
-            if PLACEHOLDER in term.term and PLACEHOLDER in term.translation:
+            if PLACEHOLDER in term.term and (
+                PLACEHOLDER in term.translation or HYPHENATED in term.translation
+            ):
                 before, _, after = term.term.partition(PLACEHOLDER)
                 pattern = re.escape(before) + r"(?P<name>.+?)" + re.escape(after)
                 self.templates.append((re.compile(pattern, re.IGNORECASE), term.translation))
@@ -350,11 +382,14 @@ class Rules:
                 self.exact[term.term.casefold()] = term.translation
         # The longest fixed text first: "{name} Countergambit" before "{name} Gambit".
         self.templates.sort(key=lambda item: -len(item[0].pattern))
-        self.words = {term for term in self.exact if " " not in term}
+        self.words = {term for term in self.exact if " " not in term} | translate
         self.kept: list[str] = []
 
     def _is_proper(self, text: str) -> bool:
-        """Whether a text reads as a proper name: capitalized words, none of them a term.
+        """Whether a text reads as a proper name: capitalized words, none of them a term or a label.
+
+        A word ending in a colon is a label of the name ("Accepted: Bogoljubow Defense"), never
+        part of a proper name.
 
         Args:
             text (str): The text `{name}` matched.
@@ -364,7 +399,9 @@ class Rules:
         """
         words = [word for word in re.split(r"[\s-]+", text) if word]
         return bool(words) and all(
-            (word[0].isupper() or word[0].isdigit()) and word.casefold() not in self.words
+            (word[0].isupper() or word[0].isdigit())
+            and word.casefold() not in self.words
+            and not word.endswith(":")
             for word in words
         )
 
@@ -383,7 +420,10 @@ class Rules:
             match = pattern.fullmatch(text)
             if match and self._is_proper(match["name"]):
                 self.kept.append(match["name"])
-                return translation.replace(PLACEHOLDER, match["name"])
+                hyphenated = "-".join(match["name"].split())
+                return translation.replace(HYPHENATED, hyphenated).replace(
+                    PLACEHOLDER, match["name"]
+                )
         return None
 
     def translate(self, english: str) -> str | None:
@@ -480,12 +520,12 @@ def _items(documents: dict[Path, dict]) -> list[Item]:
     families: list[Item] = []
     others: list[Item] = []
     for document in documents.values():
-        family_id, family_en = document["id"], document["names"]["en"]
+        family_id, family_en = document["id"], document["names"][DEFAULT_LOCALE]
         families.append(
             Item(("families", (family_id,)), family_en, family_en, family_id, document["names"])
         )
         for variant in document.get("variants", []):
-            english = variant["names"]["en"]
+            english = variant["names"][DEFAULT_LOCALE]
             others.append(
                 Item(
                     ("subgroups", (family_id, english)),
@@ -511,7 +551,7 @@ def _line_item(line: dict, family_id: str, family_en: str) -> Item:
     Returns:
         Item: The name.
     """
-    english = line["names"]["en"]
+    english = line["names"][DEFAULT_LOCALE]
     return Item(
         ("lines", (line["id"],)), english, f"{family_en}, {english}", family_id, line["names"]
     )
@@ -596,8 +636,12 @@ def fill_names(
     names_dir: Path = NAMES_DIR,
     machine_dir: Path = MACHINE_DIR,
     overwrite: bool = False,
+    registry: dict[str, Locale] | None = None,
 ) -> Report:
     """Fills a locale's opening names and records where each came from.
+
+    A reviewed locale of the same Wikipedia (es for es-ES, pt-BR for pt-PT) is followed where
+    its author kept another name than Wikipedia's, and gives Wikipedia's names its casing.
 
     Args:
         locale (Locale): The locale; not `en`, which is the source of every name.
@@ -608,6 +652,8 @@ def fill_names(
         names_dir (Path): The `i18n/names` folder.
         machine_dir (Path): The `i18n/machine` folder.
         overwrite (bool): Replace sourced names and those of a reviewed locale too.
+        registry (dict[str, Locale] | None): The locales, for the reviewed ones of the same
+            Wikipedia; None reads `i18n/locales.toml`.
 
     Returns:
         Report: What was done.
@@ -619,11 +665,22 @@ def fill_names(
     if locale.code == DEFAULT_LOCALE:
         raise ValueError(f"{DEFAULT_LOCALE} is the source of every name; there is nothing to fill")
     code = locale.code
+    siblings = [
+        other.code
+        for other in (load_locales() if registry is None else registry).values()
+        if other.reviewed
+        and other.code not in (code, DEFAULT_LOCALE)
+        and other.wikipedia == locale.wikipedia
+    ]
     paths = sorted(openings_dir.rglob("*.json"))
     documents = {path: json.loads(path.read_text(encoding="utf-8")) for path in paths}
     before = {path: render(document) for path, document in documents.items()}
     glossary = glossary_dir / f"{code}.toml"
-    rules = Rules(load_glossary(glossary) if glossary.exists() else {})
+    rules = (
+        Rules(load_glossary(glossary), load_translate_words(glossary))
+        if glossary.exists()
+        else Rules({})
+    )
     names_path = names_dir / f"{code}.toml"
     old = load_name_sources(names_path) if names_path.exists() else {}
     machine_path = machine_dir / f"{code}.toml"
@@ -635,6 +692,9 @@ def fill_names(
         item.family: cache.get(item.query) for item in items if item.key[0] == "families"
     }
     family_names = {document["id"]: document["names"] for document in documents.values()}
+    # An article that several families, or a subgroup or line and a family, redirect to is a
+    # broader one ("Borg Defense" -> "King's Pawn Game"): it names only what it is titled for.
+    family_articles = Counter(entry["item"] for entry in family_items.values() if entry)
     report = Report()
     sources: dict[NameKey, NameSource] = {}
     todo: dict[NameKey, str] = {}
@@ -645,13 +705,22 @@ def fill_names(
         found = None
         lookup = cache.get(item.query)
         if item.key[0] == "families":
-            found = wiki_name(lookup, locale)
-        elif lookup and (family_items[item.family] or {}).get("item") != lookup["item"]:
+            if lookup and (family_articles[lookup["item"]] < 2 or titled_for(lookup, item.english)):
+                found = wiki_name(lookup, locale)
+        elif (
+            lookup
+            and (family_items[item.family] or {}).get("item") != lookup["item"]
+            and (lookup["item"] not in family_articles or titled_for(lookup, item.english))
+        ):
             found = wiki_name(lookup, locale, family_names[item.family].get(code))
+        reviewed = [item.names[other] for other in siblings if item.names.get(other)]
+        if found and any(name.casefold() != found.name.casefold() for name in reviewed):
+            found = None  # The author of that locale chose another name than Wikipedia's.
         rule = rules.translate(item.english)
         kept = rules.kept
-        # Wikipedia's words in the book's title case: the current name, or else the rule's.
-        for cased in (current, rule):
+        # Wikipedia's words in the book's title case: the current name, the rule's, or the
+        # reviewed one of the same Wikipedia.
+        for cased in (current, rule, *reviewed):
             if found and cased and found.name.casefold() == cased.casefold():
                 found = Found(cased, found.url)
                 break

@@ -22,11 +22,16 @@ all = [
     # The Thanks section of the About page.
     "Niklas", "Fiekas", "Hernandez", "Marroquin", "Badrap",
     # The language links at the top of each document.
-    "English", "Português", "português", "Español", "español", "Brasil",
+    "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch", "Français", "Italiano",
 ]
-en = [
+en-US = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
     "es", "pt", "cp", "arg", "pgn", "uci", "san", "epd", "db-migration", "Versão", "Versión", "abajo", "abaixo",
+    # A quote of Mecking's nickname, kept in Portuguese.
+    "xadrez", "grande", "mestre",
+]
+en-GB = [
+    "untick", "unticked", "Untick",
     # A quote of Mecking's nickname, kept in Portuguese.
     "xadrez", "grande", "mestre",
 ]
@@ -37,7 +42,36 @@ pt-BR = [
     "issue",  # GitHub's word, linked
     "python", "chess", "result",  # the names python-chess and @badrap/result
 ]
-es = [
+de = [
+    "Streamer", "Youtuber", "Creator", "Campos", "ECO", "Partieformular", "FIDE-ID", "Elo-Zahl",
+    "FIDE-Meisterin", "FIDE-Weltmeister", "Merida-Figuren", "python-chess", "no", "Barbosa",
+    "Backend",  # the author's own words on the About page
+    "python", "chess", "result",  # the names python-chess and @badrap/result
+    "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+]
+fr = [
+    "streamer", "streamers", "Campos", "FFE", "précoup", "précoups", "Précoup", "ECO", "Flor",
+    "I'm", "Not", "memoriam", "Barbosa", "Florencia", "Molina",
+    "backend",  # the author's own words on the About page
+    "python", "chess", "result",  # the names python-chess and @badrap/result
+    "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+]
+it = [
+    "streamer", "Campos", "FSI", "ECO", "premossa", "premosse", "Premossa", "Flor", "bot", "Bot",
+    "Home", "Youtuber", "open", "source", "memoriam", "python-chess", "semimossa", "semimosse", "min",
+    "Luis", "Paulo", "Florencia", "Rafael", "Molina", "Barbosa",
+    "How", "to", "Win", "at", "I'm", "Not", "Speed", "Championship", "my", "queen",  # English titles
+    "backend",  # the author's own words on the About page
+    "python", "chess", "result",  # the names python-chess and @badrap/result
+    "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+]
+pt-PT = [
+    "streamer", "streamers", "azeri", "FPX", "pt", "min", "US", "Hans",
+    "backend",  # the author's own words on the About page
+    "python", "chess", "result",  # the names python-chess and @badrap/result
+    "Searching", "for",  # the film's original title
+]
+es-419 = [
     "streamer", "streamers", "premovimiento", "premovimientos", "Premovimiento",
     "semiprofesional", "semiprofesionales", "desincroniza", "min", "US", "Em",
     "xadrez", "um", "mestre",
@@ -46,16 +80,29 @@ es = [
     "issue",  # GitHub's word, linked
     "result",  # the name @badrap/result
 ]
+es-ES = [
+    "streamer", "streamers", "semiprofesional", "semiprofesionales", "desacompasa", "min", "US",
+    "xadrez", "um", "mestre",
+    "backend",  # the author's own words on the About page
+    "result",  # the name @badrap/result
+]
 
 [disabled]
 # LanguageTool rule ids that do not fit this project, for every language or one of them.
 all = []
-en = [
+en-US = [
     "ENGLISH_WORD_REPEAT_BEGINNING_RULE",  # i18n strings are separate texts
     "PRP_COMMA", "MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE", "COMMA_COMPOUND_SENTENCE_2",
     "BY_DEFAULT_COMMA", "NO_COMMA_BEFORE_SO", "THE_SUPERLATIVE",  # optional commas and style
     "ID_CASING",  # `id` is the field's name
     "EN_COMPOUNDS_AUTO_PLAY", "RECOMMENDED_COMPOUNDS",
+]
+en-GB = [
+    "ENGLISH_WORD_REPEAT_BEGINNING_RULE",  # i18n strings are separate texts
+    "PRP_COMMA", "MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE", "COMMA_COMPOUND_SENTENCE_2",
+    "BY_DEFAULT_COMMA", "NO_COMMA_BEFORE_SO", "THE_SUPERLATIVE",  # optional commas and style
+    "EN_COMPOUNDS_AUTO_PLAY", "RECOMMENDED_COMPOUNDS",
+    "OXFORD_SPELLING_Z_NOT_S",  # British "-ise" spelling, not Oxford "-ize", on purpose
 ]
 pt-BR = [
     "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
@@ -67,13 +114,32 @@ pt-BR = [
     "VERB_COMMA_CONJUNCTION",
     "NUMBER_ABREVIATION",  # "Nº" on the scoresheet
 ]
-es = []
+pt-PT = [
+    "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+    "PT_BARBARISMS_REPLACE_APP", "PT_BARBARISMS_REPLACE_RATING", "PT_BARBARISMS_REPLACE_SCRIPT",
+    # "Bot", "site", "online" and "internet" are the usual words in Portugal, set in plain type.
+    "BARBARISMS_PT_PT_V3", "PT_BARBARISMS_REPLACE_SITE",
+    # Style suggestions, not errors.
+    "PT_WORDINESS_REPLACE_AINDA_ESTÁ", "PT_WORDINESS_REPLACE_AINDA_ESTÃO",
+    "PT_WORDINESS_REPLACE_POR_CAUSA_DO", "PT_WORDINESS_REPLACE_A_NÃO_SER_QUE", "DEPOIS_DE_APÓS",
+    "VERB_COMMA_CONJUNCTION",
+]
+es-419 = []
+es-ES = []
+de = []
+fr = [
+    # Style suggestions, not errors.
+    "NOMBRES_EN_LETTRES_2", "REP_PENDANT", "PLACE_ADJ", "PAS_DE_VIRGULE",
+    "POINT", "POINTS_2",  # labels, not sentences
+    "D_N_E_OU_E",  # "Sorti de la théorie", a label
+]
+it = []
 
 [ignore]
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.
 # Fragments joined by the app (", +{seconds} s", "expected {expected}") and labels named in a
 # sentence read as errors on their own.
-en = [
+en-US = [
     { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
     { text = "expected", rule = "UPPERCASE_SENTENCE_START" },
     { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
@@ -96,8 +162,18 @@ pt-BR = [
     { text = "Este", rule = "AO90_CARDINAL_POINTS_CASING" },  # macOS's "Sobre Este Mac"
     { text = "to", rule = "DIACRITICS" },  # quoting the English error "Failed to execute"
     { text = "onde", rule = "CONFUSÃO_AONDE_ONDE" },  # "Para onde vim", the author's own words
+    { text = "Português", rule = "GENTILICOS_LINGUAS" },  # the language links: Português (Brasil) · Português (Portugal)
+    { text = "Italiano", rule = "GENTILICOS_LINGUAS" },  # the language links
 ]
-es = [
+pt-PT = [
+    { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
+    { text = "esperado", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "Nf3 .", rule = "SPACE_BEFORE_PUNCTUATION2" },
+    { text = ", Anular", rule = "UPPERCASE_AFTER_COMMA" },  # the "Anular lance" button
+    { text = "Português", rule = "GENTILICOS_LINGUAS" },  # the language links: Português (Brasil) · Português (Portugal)
+    { text = "Italiano", rule = "GENTILICOS_LINGUAS" },  # the language links
+]
+es-419 = [
     { text = "se", rule = "UPPERCASE_SENTENCE_START" },
     { text = "s", rule = "SINGLE_CHARACTER" },
     { text = "partidas", rule = "AGREEMENT_POSTPONED_ADJ" },
@@ -106,4 +182,32 @@ es = [
     { text = "Hernandez", rule = "ES_SIMPLE_REPLACE_SIMPLE_HERNANDEZ" },  # his name, as he signs it
     { rule = "PHRASE_REPETITION", text = "[chess.com](https://www.chess.com/) · [youtube.com/@chess](https://www.youtube.com/@chess) ·" },  # "Oh no, my queen!" is quoted in English
 ]
-
+es-ES = [
+    { text = "se", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "s", rule = "SINGLE_CHARACTER" },
+    { text = "partidas", rule = "AGREEMENT_POSTPONED_ADJ" },  # "Marca partidas para exportarlas"
+    { text = "Maestro", rule = "ES_QUESTION_MARK" },
+    { text = "Hernandez", rule = "ES_SIMPLE_REPLACE_SIMPLE_HERNANDEZ" },  # his name, as he signs it
+    { rule = "PHRASE_REPETITION", text = "[chess.com](https://www.chess.com/) · [youtube.com/@chess](https://www.youtube.com/@chess) ·" },  # "Oh no, my queen!" is quoted in English
+]
+de = [
+    { text = "Nf3", rule = "DE_SENTENCE_WHITESPACE" },
+    { text = "erwartet", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "Theorie", rule = "SENT_START_SIN_PLU" },  # "Theorie verlassen in Zug {move}", a chip
+    { text = "Sofort", rule = "DE_CASE" },  # the "Sofort" option, named in a sentence
+    { text = "Internationaler", rule = "DE_CASE" },  # the title Internationaler Meister
+    { text = "Internationale", rule = "DE_CASE" },  # the title Internationale Meisterin der Frauen
+    { text = "Das", rule = "DE_CASE" },  # the film "Das Königsspiel"
+    { text = "Roberto Molina", rule = "DE_MULTITOKEN_SPELLING_TWO" },  # his name, in a link
+]
+fr = [
+    { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
+    { text = "attendu", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "données", rule = "AGREEMENT_POSTPONED_ADJ" },  # "ingénieur données et backend", the author's words
+    { text = "hongroise", rule = "AGREEMENT_POSTPONED_ADJ" },  # "Grand maître hongroise": the title stays masculine
+    { text = "queen!", rule = "FRENCH_WHITESPACE" },  # "Oh no, my queen!" is quoted in English
+]
+it = [
+    { text = "attesa", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "@badrap", rule = "MORFOLOGIK_RULE_IT_IT" },  # the name @badrap/result
+]

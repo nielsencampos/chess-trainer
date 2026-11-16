@@ -1,5 +1,5 @@
-# The pt-BR and es UI is in its own language. Chess words players use as they are (blitz,
-# bullet, rating, streamer), names, PGN and SAN are fine; these English words are not.
+# The UI of every language but English is in its own language. Chess words players use as they are
+# (blitz, bullet, rating, streamer), names, PGN and SAN are fine; these English words are not.
 extends: existence
 message: "'%s' is English; use the word of this language."
 level: error

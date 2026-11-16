@@ -1,25 +1,43 @@
 {
   "id": "lion-defense",
   "names": {
-    "en": "Lion Defense",
+    "en-US": "Lion Defense",
     "pt-BR": "Defesa do Leão",
-    "es": "Defensa del León"
+    "es-419": "Defensa del León",
+    "en-GB": "Lion Defence",
+    "es-ES": "Defensa del León",
+    "pt-PT": "Defesa do Leão",
+    "de": "Löwenverteidigung",
+    "fr": "Défense du lion",
+    "it": "Difesa del leone"
   },
   "order": null,
   "variants": [
     {
       "names": {
-        "en": "Anti-Philidor",
+        "en-US": "Anti-Philidor",
         "pt-BR": "Anti-Philidor",
-        "es": "Anti-Philidor"
+        "es-419": "Anti-Philidor",
+        "en-GB": "Anti-Philidor",
+        "es-ES": "Anti-Philidor",
+        "pt-PT": "Anti-Philidor",
+        "de": "Anti-Philidor",
+        "fr": "Anti-Philidor",
+        "it": "Anti-Philidor"
       },
       "lines": [
         {
           "id": "line-021d1ed00574d266",
           "names": {
-            "en": "Anti-Philidor",
+            "en-US": "Anti-Philidor",
             "pt-BR": "Anti-Philidor",
-            "es": "Anti-Philidor"
+            "es-419": "Anti-Philidor",
+            "en-GB": "Anti-Philidor",
+            "es-ES": "Anti-Philidor",
+            "pt-PT": "Anti-Philidor",
+            "de": "Anti-Philidor",
+            "fr": "Anti-Philidor",
+            "it": "Anti-Philidor"
           },
           "eco": "B07",
           "opening": "Lion Defense: Anti-Philidor",
@@ -29,9 +47,15 @@
         {
           "id": "line-30d3c56c496adac8",
           "names": {
-            "en": "Anti-Philidor, Lion's Cave",
+            "en-US": "Anti-Philidor, Lion's Cave",
             "pt-BR": "Anti-Philidor, Caverna do Leão",
-            "es": "Anti-Philidor, Cueva del León"
+            "es-419": "Anti-Philidor, Cueva del León",
+            "en-GB": "Anti-Philidor, Lion's Cave",
+            "es-ES": "Anti-Philidor, Cueva del León",
+            "pt-PT": "Anti-Philidor, Caverna do Leão",
+            "de": "Anti-Philidor, Löwenhöhle",
+            "fr": "Anti-Philidor, Antre du lion",
+            "it": "Anti-Philidor, Tana del leone"
           },
           "eco": "B07",
           "opening": "Lion Defense: Anti-Philidor, Lion's Cave",
@@ -41,9 +65,15 @@
         {
           "id": "line-e4aef2d4b50537a6",
           "names": {
-            "en": "Anti-Philidor, Lion's Cave, Lion Claw Gambit",
+            "en-US": "Anti-Philidor, Lion's Cave, Lion Claw Gambit",
             "pt-BR": "Anti-Philidor, Caverna do Leão, Gambito Garra do Leão",
-            "es": "Anti-Philidor, Cueva del León, Gambito Garra del León"
+            "es-419": "Anti-Philidor, Cueva del León, Gambito Garra del León",
+            "en-GB": "Anti-Philidor, Lion's Cave, Lion Claw Gambit",
+            "es-ES": "Anti-Philidor, Cueva del León, Gambito Garra del León",
+            "pt-PT": "Anti-Philidor, Caverna do Leão, Gambito Garra do Leão",
+            "de": "Anti-Philidor, Löwenhöhle, Löwenkrallen-Gambit",
+            "fr": "Anti-Philidor, Antre du lion, Gambit de la griffe du lion",
+            "it": "Anti-Philidor, Tana del leone, Gambetto dell'artiglio del leone"
           },
           "eco": "B07",
           "opening": "Lion Defense: Anti-Philidor, Lion's Cave, Lion Claw Gambit",
@@ -57,9 +87,15 @@
     {
       "id": "line-35863d7b26b517cb",
       "names": {
-        "en": "Bayonet Attack",
+        "en-US": "Bayonet Attack",
         "pt-BR": "Ataque Baioneta",
-        "es": "Ataque Bayoneta"
+        "es-419": "Ataque Bayoneta",
+        "en-GB": "Bayonet Attack",
+        "es-ES": "Ataque Bayoneta",
+        "pt-PT": "Ataque Baioneta",
+        "de": "Bajonettangriff",
+        "fr": "Attaque à la baïonnette",
+        "it": "Attacco alla baionetta"
       },
       "eco": "B07",
       "opening": "Lion Defense: Bayonet Attack",
@@ -69,9 +105,15 @@
     {
       "id": "line-bd4ea88641b40878",
       "names": {
-        "en": "Lion's Jaw",
+        "en-US": "Lion's Jaw",
         "pt-BR": "Mandíbula do Leão",
-        "es": "Mandíbula del León"
+        "es-419": "Mandíbula del León",
+        "en-GB": "Lion's Jaw",
+        "es-ES": "Mandíbula del León",
+        "pt-PT": "Mandíbula do Leão",
+        "de": "Löwenkiefer",
+        "fr": "Mâchoire du lion",
+        "it": "Fauci del leone"
       },
       "eco": "B00",
       "opening": "Lion Defense: Lion's Jaw",
@@ -81,9 +123,15 @@
     {
       "id": "line-f30b52b4f0a7d18d",
       "names": {
-        "en": "Lion Defense",
+        "en-US": "Lion Defense",
         "pt-BR": "Defesa do Leão",
-        "es": "Defensa del León"
+        "es-419": "Defensa del León",
+        "en-GB": "Lion Defence",
+        "es-ES": "Defensa del León",
+        "pt-PT": "Defesa do Leão",
+        "de": "Löwenverteidigung",
+        "fr": "Défense du lion",
+        "it": "Difesa del leone"
       },
       "eco": "B07",
       "opening": "Lion Defense",

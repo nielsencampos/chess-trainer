@@ -1,25 +1,43 @@
 {
   "id": "richter-veresov-attack",
   "names": {
-    "en": "Richter-Veresov Attack",
+    "en-US": "Richter-Veresov Attack",
     "pt-BR": "Ataque Richter-Veresov",
-    "es": "Apertura Veresov"
+    "es-419": "Apertura Veresov",
+    "en-GB": "Richter–Veresov Attack",
+    "es-ES": "Apertura Veresov",
+    "pt-PT": "Ataque Richter-Veresov",
+    "de": "Weressow-Eröffnung",
+    "fr": "Attaque Richter-Veressov",
+    "it": "Partita Lewitzkij-Veresov"
   },
   "order": null,
   "variants": [
     {
       "names": {
-        "en": "Main",
+        "en-US": "Main",
         "pt-BR": "Principal",
-        "es": "Principal"
+        "es-419": "Principal",
+        "en-GB": "Main",
+        "es-ES": "Principal",
+        "pt-PT": "Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-b53faddbc8ffce77",
           "names": {
-            "en": "Richter-Veresov Attack",
+            "en-US": "Richter-Veresov Attack",
             "pt-BR": "Ataque Richter-Veresov",
-            "es": "Apertura Veresov"
+            "es-419": "Apertura Veresov",
+            "en-GB": "Richter-Veresov Attack",
+            "es-ES": "Ataque Richter-Veresov",
+            "pt-PT": "Ataque Richter-Veresov",
+            "de": "Richter-Weressow-Angriff",
+            "fr": "Attaque Richter-Veressov",
+            "it": "Attacco Richter-Veresov"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack",
@@ -29,9 +47,15 @@
         {
           "id": "line-e50a29fa08ee6373",
           "names": {
-            "en": "Richter-Veresov Attack",
+            "en-US": "Richter-Veresov Attack",
             "pt-BR": "Ataque Richter-Veresov",
-            "es": "Apertura Veresov"
+            "es-419": "Apertura Veresov",
+            "en-GB": "Richter-Veresov Attack",
+            "es-ES": "Ataque Richter-Veresov",
+            "pt-PT": "Ataque Richter-Veresov",
+            "de": "Richter-Weressow-Angriff",
+            "fr": "Attaque Richter-Veressov",
+            "it": "Attacco Richter-Veresov"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack",
@@ -42,17 +66,29 @@
     },
     {
       "names": {
-        "en": "Two Knights System",
+        "en-US": "Two Knights System",
         "pt-BR": "Sistema dos Dois Cavalos",
-        "es": "Sistema de los Dos Caballos"
+        "es-419": "Sistema de los Dos Caballos",
+        "en-GB": "Two Knights System",
+        "es-ES": "Sistema de los Dos Caballos",
+        "pt-PT": "Sistema dos Dois Cavalos",
+        "de": "Zweispringersystem",
+        "fr": "Système des deux cavaliers",
+        "it": "Sistema dei due cavalli"
       },
       "lines": [
         {
           "id": "line-340bcaaf475ab940",
           "names": {
-            "en": "Two Knights System",
+            "en-US": "Two Knights System",
             "pt-BR": "Sistema dos Dois Cavalos",
-            "es": "Sistema de los Dos Caballos"
+            "es-419": "Sistema de los Dos Caballos",
+            "en-GB": "Two Knights System",
+            "es-ES": "Sistema de los Dos Caballos",
+            "pt-PT": "Sistema dos Dois Cavalos",
+            "de": "Zweispringersystem",
+            "fr": "Système des deux cavaliers",
+            "it": "Sistema dei due cavalli"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack: Two Knights System",
@@ -62,9 +98,15 @@
         {
           "id": "line-c689323a7152bad3",
           "names": {
-            "en": "Two Knights System, Grünfeld Defense",
+            "en-US": "Two Knights System, Grünfeld Defense",
             "pt-BR": "Sistema dos Dois Cavalos, Defesa Grünfeld",
-            "es": "Sistema de los Dos Caballos, Defensa Grünfeld"
+            "es-419": "Sistema de los Dos Caballos, Defensa Grünfeld",
+            "en-GB": "Two Knights System, Grünfeld Defence",
+            "es-ES": "Sistema de los Dos Caballos, Defensa Grünfeld",
+            "pt-PT": "Sistema dos Dois Cavalos, Defesa Grünfeld",
+            "de": "Zweispringersystem, Grünfeld-Verteidigung",
+            "fr": "Système des deux cavaliers, Défense Grünfeld",
+            "it": "Sistema dei due cavalli, Difesa Grünfeld"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack: Two Knights System, Grünfeld Defense",
@@ -78,9 +120,15 @@
     {
       "id": "line-357cc21ae4658b3b",
       "names": {
-        "en": "Boyce Defense",
+        "en-US": "Boyce Defense",
         "pt-BR": "Defesa Boyce",
-        "es": "Defensa Boyce"
+        "es-419": "Defensa Boyce",
+        "en-GB": "Boyce Defence",
+        "es-ES": "Defensa Boyce",
+        "pt-PT": "Defesa Boyce",
+        "de": "Boyce-Verteidigung",
+        "fr": "Défense Boyce",
+        "it": "Difesa Boyce"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Boyce Defense",
@@ -90,9 +138,15 @@
     {
       "id": "line-255cb9fd9c0144c4",
       "names": {
-        "en": "Malich Gambit",
+        "en-US": "Malich Gambit",
         "pt-BR": "Gambito Malich",
-        "es": "Gambito Malich"
+        "es-419": "Gambito Malich",
+        "en-GB": "Malich Gambit",
+        "es-ES": "Gambito Malich",
+        "pt-PT": "Gambito Malich",
+        "de": "Malich-Gambit",
+        "fr": "Gambit Malich",
+        "it": "Gambetto Malich"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Malich Gambit",
@@ -102,9 +156,15 @@
     {
       "id": "line-73844e7b0bc504bb",
       "names": {
-        "en": "Richter Variation",
+        "en-US": "Richter Variation",
         "pt-BR": "Variante Richter",
-        "es": "Variante Richter"
+        "es-419": "Variante Richter",
+        "en-GB": "Richter Variation",
+        "es-ES": "Variante Richter",
+        "pt-PT": "Variante Richter",
+        "de": "Richter-Variante",
+        "fr": "Variante Richter",
+        "it": "Variante Richter"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Richter Variation",
@@ -114,9 +174,15 @@
     {
       "id": "line-f3efa8be3b1d52c6",
       "names": {
-        "en": "Veresov Variation",
+        "en-US": "Veresov Variation",
         "pt-BR": "Variante Veresov",
-        "es": "Variante Veresov"
+        "es-419": "Variante Veresov",
+        "en-GB": "Veresov Variation",
+        "es-ES": "Variante Veresov",
+        "pt-PT": "Variante Veresov",
+        "de": "Weressow-Variante",
+        "fr": "Variante Veressov",
+        "it": "Variante Veresov"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Veresov Variation",

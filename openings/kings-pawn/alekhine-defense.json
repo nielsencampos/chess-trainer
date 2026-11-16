@@ -1,25 +1,43 @@
 {
   "id": "alekhine-defense",
   "names": {
-    "en": "Alekhine Defense",
+    "en-US": "Alekhine Defense",
     "pt-BR": "Defesa Alekhine",
-    "es": "Defensa Alekhine"
+    "es-419": "Defensa Alekhine",
+    "en-GB": "Alekhine's Defence",
+    "es-ES": "Defensa Alekhine",
+    "pt-PT": "Defesa Alekhine",
+    "de": "Aljechin-Verteidigung",
+    "fr": "Défense Alekhine",
+    "it": "Difesa Alechin"
   },
   "order": 9,
   "variants": [
     {
       "names": {
-        "en": "Modern Variation",
+        "en-US": "Modern Variation",
         "pt-BR": "Variante Moderna",
-        "es": "Variante Moderna"
+        "es-419": "Variante Moderna",
+        "en-GB": "Modern Variation",
+        "es-ES": "Variante Moderna",
+        "pt-PT": "Variante Moderna",
+        "de": "Moderne Variante",
+        "fr": "Variante moderne",
+        "it": "Variante moderna"
       },
       "lines": [
         {
           "id": "line-c0f0dae204f2180b",
           "names": {
-            "en": "Modern Variation",
+            "en-US": "Modern Variation",
             "pt-BR": "Variante Moderna",
-            "es": "Variante Moderna"
+            "es-419": "Variante Moderna",
+            "en-GB": "Modern Variation",
+            "es-ES": "Variante Moderna",
+            "pt-PT": "Variante Moderna",
+            "de": "Moderne Variante",
+            "fr": "Variante moderne",
+            "it": "Variante moderna"
           },
           "eco": "B04",
           "opening": "Alekhine Defense: Modern Variation",
@@ -29,9 +47,15 @@
         {
           "id": "line-91d04cbd785d830d",
           "names": {
-            "en": "Modern Variation, Main Line",
+            "en-US": "Modern Variation, Main Line",
             "pt-BR": "Variante Moderna, Linha Principal",
-            "es": "Variante Moderna, Línea Principal"
+            "es-419": "Variante Moderna, Línea Principal",
+            "en-GB": "Modern Variation, Main Line",
+            "es-ES": "Variante Moderna, Línea Principal",
+            "pt-PT": "Variante Moderna, Linha Principal",
+            "de": "Moderne Variante, Hauptvariante",
+            "fr": "Variante moderne, Ligne principale",
+            "it": "Variante moderna, Linea principale"
           },
           "eco": "B05",
           "opening": "Alekhine Defense: Modern Variation, Main Line",
@@ -41,9 +65,15 @@
         {
           "id": "line-e372d1939f49a18b",
           "names": {
-            "en": "Modern Variation, Flohr Variation",
+            "en-US": "Modern Variation, Flohr Variation",
             "pt-BR": "Variante Moderna, Variante Flohr",
-            "es": "Variante Moderna, Variante Flohr"
+            "es-419": "Variante Moderna, Variante Flohr",
+            "en-GB": "Modern Variation, Flohr Variation",
+            "es-ES": "Variante Moderna, Variante Flohr",
+            "pt-PT": "Variante Moderna, Variante Flohr",
+            "de": "Moderne Variante, Flohr-Variante",
+            "fr": "Variante moderne, Variante Flohr",
+            "it": "Variante moderna, Variante Flohr"
           },
           "eco": "B05",
           "opening": "Alekhine Defense: Modern Variation, Flohr Variation",
@@ -53,9 +83,15 @@
         {
           "id": "line-1218ff6a99a56b99",
           "names": {
-            "en": "Modern Variation, Alekhine Variation",
+            "en-US": "Modern Variation, Alekhine Variation",
             "pt-BR": "Variante Moderna, Variante Alekhine",
-            "es": "Variante Moderna, Variante Alekhine"
+            "es-419": "Variante Moderna, Variante Alekhine",
+            "en-GB": "Modern Variation, Alekhine Variation",
+            "es-ES": "Variante Moderna, Variante Alekhine",
+            "pt-PT": "Variante Moderna, Variante Alekhine",
+            "de": "Moderne Variante, Aljechin-Variante",
+            "fr": "Variante moderne, Variante Alekhine",
+            "it": "Variante moderna, Variante Alechin"
           },
           "eco": "B05",
           "opening": "Alekhine Defense: Modern Variation, Alekhine Variation",
@@ -65,9 +101,15 @@
         {
           "id": "line-07a46d631d40a13c",
           "names": {
-            "en": "Modern Variation, Vitolins Attack",
+            "en-US": "Modern Variation, Vitolins Attack",
             "pt-BR": "Variante Moderna, Ataque Vitolins",
-            "es": "Variante Moderna, Ataque Vitolins"
+            "es-419": "Variante Moderna, Ataque Vitolins",
+            "en-GB": "Modern Variation, Vitolins Attack",
+            "es-ES": "Variante Moderna, Ataque Vitolins",
+            "pt-PT": "Variante Moderna, Ataque Vitolins",
+            "de": "Moderne Variante, Vitolins-Angriff",
+            "fr": "Variante moderne, Attaque Vitolins",
+            "it": "Variante moderna, Attacco Vitolins"
           },
           "eco": "B05",
           "opening": "Alekhine Defense: Modern Variation, Vitolins Attack",
@@ -77,9 +119,15 @@
         {
           "id": "line-823d8b72affbf213",
           "names": {
-            "en": "Modern Variation, Panov Variation",
+            "en-US": "Modern Variation, Panov Variation",
             "pt-BR": "Variante Moderna, Variante Panov",
-            "es": "Variante Moderna, Variante Panov"
+            "es-419": "Variante Moderna, Variante Panov",
+            "en-GB": "Modern Variation, Panov Variation",
+            "es-ES": "Variante Moderna, Variante Panov",
+            "pt-PT": "Variante Moderna, Variante Panov",
+            "de": "Moderne Variante, Panow-Variante",
+            "fr": "Variante moderne, Variante Panov",
+            "it": "Variante moderna, Variante Panov"
           },
           "eco": "B05",
           "opening": "Alekhine Defense: Modern Variation, Panov Variation",
@@ -89,9 +137,15 @@
         {
           "id": "line-ffb64b8337549cd3",
           "names": {
-            "en": "Modern Variation, Schmid Variation",
+            "en-US": "Modern Variation, Schmid Variation",
             "pt-BR": "Variante Moderna, Variante Schmid",
-            "es": "Variante Moderna, Variante Schmid"
+            "es-419": "Variante Moderna, Variante Schmid",
+            "en-GB": "Modern Variation, Schmid Variation",
+            "es-ES": "Variante Moderna, Variante Schmid",
+            "pt-PT": "Variante Moderna, Variante Schmid",
+            "de": "Moderne Variante, Schmid-Variante",
+            "fr": "Variante moderne, Variante Schmid",
+            "it": "Variante moderna, Variante Schmid"
           },
           "eco": "B04",
           "opening": "Alekhine Defense: Modern Variation, Schmid Variation",
@@ -101,9 +155,15 @@
         {
           "id": "line-9fd58e00f3312a2e",
           "names": {
-            "en": "Modern Variation, Larsen-Haakert Variation",
+            "en-US": "Modern Variation, Larsen-Haakert Variation",
             "pt-BR": "Variante Moderna, Variante Larsen-Haakert",
-            "es": "Variante Moderna, Variante Larsen-Haakert"
+            "es-419": "Variante Moderna, Variante Larsen-Haakert",
+            "en-GB": "Modern Variation, Larsen-Haakert Variation",
+            "es-ES": "Variante Moderna, Variante Larsen-Haakert",
+            "pt-PT": "Variante Moderna, Variante Larsen-Haakert",
+            "de": "Moderne Variante, Larsen-Haakert-Variante",
+            "fr": "Variante moderne, Variante Larsen-Haakert",
+            "it": "Variante moderna, Variante Larsen-Haakert"
           },
           "eco": "B04",
           "opening": "Alekhine Defense: Modern Variation, Larsen-Haakert Variation",
@@ -113,9 +173,15 @@
         {
           "id": "line-512871fa5af9834a",
           "names": {
-            "en": "Modern Variation, Larsen Variation",
+            "en-US": "Modern Variation, Larsen Variation",
             "pt-BR": "Variante Moderna, Variante Larsen",
-            "es": "Variante Moderna, Variante Larsen"
+            "es-419": "Variante Moderna, Variante Larsen",
+            "en-GB": "Modern Variation, Larsen Variation",
+            "es-ES": "Variante Moderna, Variante Larsen",
+            "pt-PT": "Variante Moderna, Variante Larsen",
+            "de": "Moderne Variante, Larsen-Variante",
+            "fr": "Variante moderne, Variante Larsen",
+            "it": "Variante moderna, Variante Larsen"
           },
           "eco": "B04",
           "opening": "Alekhine Defense: Modern Variation, Larsen Variation",
@@ -125,9 +191,15 @@
         {
           "id": "line-93b31773bf6ccf85",
           "names": {
-            "en": "Modern Variation, Alburt Variation",
+            "en-US": "Modern Variation, Alburt Variation",
             "pt-BR": "Variante Moderna, Variante Alburt",
-            "es": "Variante Moderna, Variante Alburt"
+            "es-419": "Variante Moderna, Variante Alburt",
+            "en-GB": "Modern Variation, Alburt Variation",
+            "es-ES": "Variante Moderna, Variante Alburt",
+            "pt-PT": "Variante Moderna, Variante Alburt",
+            "de": "Moderne Variante, Alburt-Variante",
+            "fr": "Variante moderne, Variante Alburt",
+            "it": "Variante moderna, Variante Alburt"
           },
           "eco": "B04",
           "opening": "Alekhine Defense: Modern Variation, Alburt Variation",
@@ -137,9 +209,15 @@
         {
           "id": "line-6e3dedc1cc5fa7b2",
           "names": {
-            "en": "Modern Variation, Keres Variation",
+            "en-US": "Modern Variation, Keres Variation",
             "pt-BR": "Variante Moderna, Variante Keres",
-            "es": "Variante Moderna, Variante Keres"
+            "es-419": "Variante Moderna, Variante Keres",
+            "en-GB": "Modern Variation, Keres Variation",
+            "es-ES": "Variante Moderna, Variante Keres",
+            "pt-PT": "Variante Moderna, Variante Keres",
+            "de": "Moderne Variante, Keres-Variante",
+            "fr": "Variante moderne, Variante Keres",
+            "it": "Variante moderna, Variante Keres"
           },
           "eco": "B04",
           "opening": "Alekhine Defense: Modern Variation, Keres Variation",
@@ -149,9 +227,15 @@
         {
           "id": "line-138e83e346305851",
           "names": {
-            "en": "Modern Variation, Alekhine Gambit",
+            "en-US": "Modern Variation, Alekhine Gambit",
             "pt-BR": "Variante Moderna, Gambito Alekhine",
-            "es": "Variante Moderna, Gambito Alekhine"
+            "es-419": "Variante Moderna, Gambito Alekhine",
+            "en-GB": "Modern Variation, Alekhine Gambit",
+            "es-ES": "Variante Moderna, Gambito Alekhine",
+            "pt-PT": "Variante Moderna, Gambito Alekhine",
+            "de": "Moderne Variante, Aljechin-Gambit",
+            "fr": "Variante moderne, Gambit Alekhine",
+            "it": "Variante moderna, Gambetto Alechin"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Modern Variation, Alekhine Gambit",
@@ -162,17 +246,29 @@
     },
     {
       "names": {
-        "en": "Four Pawns Attack",
+        "en-US": "Four Pawns Attack",
         "pt-BR": "Ataque dos Quatro Peões",
-        "es": "Ataque de los Cuatro Peones"
+        "es-419": "Ataque de los Cuatro Peones",
+        "en-GB": "Four Pawns Attack",
+        "es-ES": "Ataque de los Cuatro Peones",
+        "pt-PT": "Ataque dos Quatro Peões",
+        "de": "Vierbauernangriff",
+        "fr": "Attaque des quatre pions",
+        "it": "Attacco dei quattro pedoni"
       },
       "lines": [
         {
           "id": "line-4a20c87196aa812d",
           "names": {
-            "en": "Four Pawns Attack",
+            "en-US": "Four Pawns Attack",
             "pt-BR": "Ataque dos Quatro Peões",
-            "es": "Ataque de los Cuatro Peones"
+            "es-419": "Ataque de los Cuatro Peones",
+            "en-GB": "Four Pawns Attack",
+            "es-ES": "Ataque de los Cuatro Peones",
+            "pt-PT": "Ataque dos Quatro Peões",
+            "de": "Vierbauernangriff",
+            "fr": "Attaque des quatre pions",
+            "it": "Attacco dei quattro pedoni"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Four Pawns Attack",
@@ -182,9 +278,15 @@
         {
           "id": "line-013c85dc0935d392",
           "names": {
-            "en": "Four Pawns Attack, Trifunovic Variation",
+            "en-US": "Four Pawns Attack, Trifunovic Variation",
             "pt-BR": "Ataque dos Quatro Peões, Variante Trifunovic",
-            "es": "Ataque de los Cuatro Peones, Variante Trifunovic"
+            "es-419": "Ataque de los Cuatro Peones, Variante Trifunovic",
+            "en-GB": "Four Pawns Attack, Trifunovic Variation",
+            "es-ES": "Ataque de los Cuatro Peones, Variante Trifunovic",
+            "pt-PT": "Ataque dos Quatro Peões, Variante Trifunovic",
+            "de": "Vierbauernangriff, Trifunović-Variante",
+            "fr": "Attaque des quatre pions, Variante Trifunović",
+            "it": "Attacco dei quattro pedoni, Variante Trifunović"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Four Pawns Attack, Trifunovic Variation",
@@ -194,9 +296,15 @@
         {
           "id": "line-f456d04347a9f607",
           "names": {
-            "en": "Four Pawns Attack, Korchnoi Variation",
+            "en-US": "Four Pawns Attack, Korchnoi Variation",
             "pt-BR": "Ataque dos Quatro Peões, Variante Korchnoi",
-            "es": "Ataque de los Cuatro Peones, Variante Korchnoi"
+            "es-419": "Ataque de los Cuatro Peones, Variante Korchnoi",
+            "en-GB": "Four Pawns Attack, Korchnoi Variation",
+            "es-ES": "Ataque de los Cuatro Peones, Variante Korchnoi",
+            "pt-PT": "Ataque dos Quatro Peões, Variante Korchnoi",
+            "de": "Vierbauernangriff, Kortschnoi-Variante",
+            "fr": "Attaque des quatre pions, Variante Kortchnoï",
+            "it": "Attacco dei quattro pedoni, Variante Korčnoj"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Four Pawns Attack, Korchnoi Variation",
@@ -206,9 +314,15 @@
         {
           "id": "line-91775d032c5e797c",
           "names": {
-            "en": "Four Pawns Attack, Main Line",
+            "en-US": "Four Pawns Attack, Main Line",
             "pt-BR": "Ataque dos Quatro Peões, Linha Principal",
-            "es": "Ataque de los Cuatro Peones, Línea Principal"
+            "es-419": "Ataque de los Cuatro Peones, Línea Principal",
+            "en-GB": "Four Pawns Attack, Main Line",
+            "es-ES": "Ataque de los Cuatro Peones, Línea Principal",
+            "pt-PT": "Ataque dos Quatro Peões, Linha Principal",
+            "de": "Vierbauernangriff, Hauptvariante",
+            "fr": "Attaque des quatre pions, Ligne principale",
+            "it": "Attacco dei quattro pedoni, Linea principale"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Four Pawns Attack, Main Line",
@@ -218,9 +332,15 @@
         {
           "id": "line-71e54a3be1663b2c",
           "names": {
-            "en": "Four Pawns Attack, Tartakower Variation",
+            "en-US": "Four Pawns Attack, Tartakower Variation",
             "pt-BR": "Ataque dos Quatro Peões, Variante Tartakower",
-            "es": "Ataque de los Cuatro Peones, Variante Tartakower"
+            "es-419": "Ataque de los Cuatro Peones, Variante Tartakower",
+            "en-GB": "Four Pawns Attack, Tartakower Variation",
+            "es-ES": "Ataque de los Cuatro Peones, Variante Tartakower",
+            "pt-PT": "Ataque dos Quatro Peões, Variante Tartakower",
+            "de": "Vierbauernangriff, Tartakower-Variante",
+            "fr": "Attaque des quatre pions, Variante Tartakower",
+            "it": "Attacco dei quattro pedoni, Variante Tartakower"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Four Pawns Attack, Tartakower Variation",
@@ -230,9 +350,15 @@
         {
           "id": "line-189a635f420c8812",
           "names": {
-            "en": "Four Pawns Attack, Ilyin-Zhenevsky Variation",
+            "en-US": "Four Pawns Attack, Ilyin-Zhenevsky Variation",
             "pt-BR": "Ataque dos Quatro Peões, Variante Ilyin-Zhenevsky",
-            "es": "Ataque de los Cuatro Peones, Variante Ilyin-Zhenevsky"
+            "es-419": "Ataque de los Cuatro Peones, Variante Ilyin-Zhenevsky",
+            "en-GB": "Four Pawns Attack, Ilyin-Zhenevsky Variation",
+            "es-ES": "Ataque de los Cuatro Peones, Variante Ilyin-Zhenevsky",
+            "pt-PT": "Ataque dos Quatro Peões, Variante Ilyin-Zhenevsky",
+            "de": "Vierbauernangriff, Ilyin-Zhenevsky-Variante",
+            "fr": "Attaque des quatre pions, Variante Ilyin-Zhenevsky",
+            "it": "Attacco dei quattro pedoni, Variante Ilyin-Zhenevsky"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Four Pawns Attack, Ilyin-Zhenevsky Variation",
@@ -242,9 +368,15 @@
         {
           "id": "line-f698606d111770fa",
           "names": {
-            "en": "Four Pawns Attack, Cambridge Gambit",
+            "en-US": "Four Pawns Attack, Cambridge Gambit",
             "pt-BR": "Ataque dos Quatro Peões, Gambito Cambridge",
-            "es": "Ataque de los Cuatro Peones, Gambito Cambridge"
+            "es-419": "Ataque de los Cuatro Peones, Gambito Cambridge",
+            "en-GB": "Four Pawns Attack, Cambridge Gambit",
+            "es-ES": "Ataque de los Cuatro Peones, Gambito Cambridge",
+            "pt-PT": "Ataque dos Quatro Peões, Gambito Cambridge",
+            "de": "Vierbauernangriff, Cambridge-Gambit",
+            "fr": "Attaque des quatre pions, Gambit Cambridge",
+            "it": "Attacco dei quattro pedoni, Gambetto Cambridge"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Four Pawns Attack, Cambridge Gambit",
@@ -254,9 +386,15 @@
         {
           "id": "line-9eb9bb3fd0a03fe5",
           "names": {
-            "en": "Four Pawns Attack, Fianchetto Variation",
+            "en-US": "Four Pawns Attack, Fianchetto Variation",
             "pt-BR": "Ataque dos Quatro Peões, Variante do Fianqueto",
-            "es": "Ataque de los Cuatro Peones, Variante del Fianchetto"
+            "es-419": "Ataque de los Cuatro Peones, Variante del Fianchetto",
+            "en-GB": "Four Pawns Attack, Fianchetto Variation",
+            "es-ES": "Ataque de los Cuatro Peones, Variante del Fianchetto",
+            "pt-PT": "Ataque dos Quatro Peões, Variante do Fianqueto",
+            "de": "Vierbauernangriff, Fianchetto-Variante",
+            "fr": "Attaque des quatre pions, Variante du fianchetto",
+            "it": "Attacco dei quattro pedoni, Variante del fianchetto"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Four Pawns Attack, Fianchetto Variation",
@@ -267,17 +405,29 @@
     },
     {
       "names": {
-        "en": "Hunt Variation",
+        "en-US": "Hunt Variation",
         "pt-BR": "Variante Hunt",
-        "es": "Variante Hunt"
+        "es-419": "Variante Hunt",
+        "en-GB": "Hunt Variation",
+        "es-ES": "Variante Hunt",
+        "pt-PT": "Variante Hunt",
+        "de": "Hunt-Variante",
+        "fr": "Variante Hunt",
+        "it": "Variante Hunt"
       },
       "lines": [
         {
           "id": "line-44b6d6cbd57e8530",
           "names": {
-            "en": "Hunt Variation, Lasker Simul Gambit",
+            "en-US": "Hunt Variation, Lasker Simul Gambit",
             "pt-BR": "Variante Hunt, Gambito da Simultânea de Lasker",
-            "es": "Variante Hunt, Gambito de las Simultáneas de Lasker"
+            "es-419": "Variante Hunt, Gambito de las Simultáneas de Lasker",
+            "en-GB": "Hunt Variation, Lasker Simul Gambit",
+            "es-ES": "Variante Hunt, Gambito de las Simultáneas de Lasker",
+            "pt-PT": "Variante Hunt, Gambito da Simultânea de Lasker",
+            "de": "Hunt-Variante, Lasker-Simultangambit",
+            "fr": "Variante Hunt, Gambit de la simultanée Lasker",
+            "it": "Variante Hunt, Gambetto della simultanea Lasker"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Hunt Variation, Lasker Simul Gambit",
@@ -287,9 +437,15 @@
         {
           "id": "line-eb98198520aa2290",
           "names": {
-            "en": "Hunt Variation, Mikenas Gambit",
+            "en-US": "Hunt Variation, Mikenas Gambit",
             "pt-BR": "Variante Hunt, Gambito Mikenas",
-            "es": "Variante Hunt, Gambito Mikenas"
+            "es-419": "Variante Hunt, Gambito Mikenas",
+            "en-GB": "Hunt Variation, Mikenas Gambit",
+            "es-ES": "Variante Hunt, Gambito Mikenas",
+            "pt-PT": "Variante Hunt, Gambito Mikenas",
+            "de": "Hunt-Variante, Mikenas-Gambit",
+            "fr": "Variante Hunt, Gambit Mikenas",
+            "it": "Variante Hunt, Gambetto Mikenas"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Hunt Variation, Mikenas Gambit",
@@ -299,9 +455,15 @@
         {
           "id": "line-9ec78dd5fdf9538d",
           "names": {
-            "en": "Hunt Variation, Matsukevich Gambit",
+            "en-US": "Hunt Variation, Matsukevich Gambit",
             "pt-BR": "Variante Hunt, Gambito Matsukevich",
-            "es": "Variante Hunt, Gambito Matsukevich"
+            "es-419": "Variante Hunt, Gambito Matsukevich",
+            "en-GB": "Hunt Variation, Matsukevich Gambit",
+            "es-ES": "Variante Hunt, Gambito Matsukevich",
+            "pt-PT": "Variante Hunt, Gambito Matsukevich",
+            "de": "Hunt-Variante, Matsukevich-Gambit",
+            "fr": "Variante Hunt, Gambit Matsukevich",
+            "it": "Variante Hunt, Gambetto Matsukevich"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Hunt Variation, Matsukevich Gambit",
@@ -311,9 +473,15 @@
         {
           "id": "line-9fb2187ae81616f3",
           "names": {
-            "en": "Hunt Variation",
+            "en-US": "Hunt Variation",
             "pt-BR": "Variante Hunt",
-            "es": "Variante Hunt"
+            "es-419": "Variante Hunt",
+            "en-GB": "Hunt Variation",
+            "es-ES": "Variante Hunt",
+            "pt-PT": "Variante Hunt",
+            "de": "Hunt-Variante",
+            "fr": "Variante Hunt",
+            "it": "Variante Hunt"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Hunt Variation",
@@ -324,17 +492,29 @@
     },
     {
       "names": {
-        "en": "Main",
+        "en-US": "Main",
         "pt-BR": "Principal",
-        "es": "Principal"
+        "es-419": "Principal",
+        "en-GB": "Main",
+        "es-ES": "Principal",
+        "pt-PT": "Principal",
+        "de": "Hauptvariante",
+        "fr": "Ligne principale",
+        "it": "Linea principale"
       },
       "lines": [
         {
           "id": "line-ac2d7be8cbab9083",
           "names": {
-            "en": "Alekhine Defense",
+            "en-US": "Alekhine Defense",
             "pt-BR": "Defesa Alekhine",
-            "es": "Defensa Alekhine"
+            "es-419": "Defensa Alekhine",
+            "en-GB": "Alekhine Defence",
+            "es-ES": "Defensa Alekhine",
+            "pt-PT": "Defesa Alekhine",
+            "de": "Aljechin-Verteidigung",
+            "fr": "Défense Alekhine",
+            "it": "Difesa Alechin"
           },
           "eco": "B02",
           "opening": "Alekhine Defense",
@@ -344,9 +524,15 @@
         {
           "id": "line-920117263ab87f50",
           "names": {
-            "en": "Alekhine Defense",
+            "en-US": "Alekhine Defense",
             "pt-BR": "Defesa Alekhine",
-            "es": "Defensa Alekhine"
+            "es-419": "Defensa Alekhine",
+            "en-GB": "Alekhine Defence",
+            "es-ES": "Defensa Alekhine",
+            "pt-PT": "Defesa Alekhine",
+            "de": "Aljechin-Verteidigung",
+            "fr": "Défense Alekhine",
+            "it": "Difesa Alechin"
           },
           "eco": "B03",
           "opening": "Alekhine Defense",
@@ -356,9 +542,15 @@
         {
           "id": "line-c65ed176b4c87f7b",
           "names": {
-            "en": "Alekhine Defense",
+            "en-US": "Alekhine Defense",
             "pt-BR": "Defesa Alekhine",
-            "es": "Defensa Alekhine"
+            "es-419": "Defensa Alekhine",
+            "en-GB": "Alekhine Defence",
+            "es-ES": "Defensa Alekhine",
+            "pt-PT": "Defesa Alekhine",
+            "de": "Aljechin-Verteidigung",
+            "fr": "Défense Alekhine",
+            "it": "Difesa Alechin"
           },
           "eco": "B03",
           "opening": "Alekhine Defense",
@@ -368,9 +560,15 @@
         {
           "id": "line-e32e72efe88400c7",
           "names": {
-            "en": "Alekhine Defense",
+            "en-US": "Alekhine Defense",
             "pt-BR": "Defesa Alekhine",
-            "es": "Defensa Alekhine"
+            "es-419": "Defensa Alekhine",
+            "en-GB": "Alekhine Defence",
+            "es-ES": "Defensa Alekhine",
+            "pt-PT": "Defesa Alekhine",
+            "de": "Aljechin-Verteidigung",
+            "fr": "Défense Alekhine",
+            "it": "Difesa Alechin"
           },
           "eco": "B03",
           "opening": "Alekhine Defense",
@@ -381,17 +579,29 @@
     },
     {
       "names": {
-        "en": "Two Pawns Attack",
+        "en-US": "Two Pawns Attack",
         "pt-BR": "Ataque dos Dois Peões",
-        "es": "Ataque de los Dos Peones"
+        "es-419": "Ataque de los Dos Peones",
+        "en-GB": "Two Pawns Attack",
+        "es-ES": "Ataque de los Dos Peones",
+        "pt-PT": "Ataque dos Dois Peões",
+        "de": "Zweibauernangriff",
+        "fr": "Attaque des deux pions",
+        "it": "Attacco dei due pedoni"
       },
       "lines": [
         {
           "id": "line-97c146910efb5ab4",
           "names": {
-            "en": "Two Pawns Attack",
+            "en-US": "Two Pawns Attack",
             "pt-BR": "Ataque dos Dois Peões",
-            "es": "Ataque de los Dos Peones"
+            "es-419": "Ataque de los Dos Peones",
+            "en-GB": "Two Pawns Attack",
+            "es-ES": "Ataque de los Dos Peones",
+            "pt-PT": "Ataque dos Dois Peões",
+            "de": "Zweibauernangriff",
+            "fr": "Attaque des deux pions",
+            "it": "Attacco dei due pedoni"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Two Pawns Attack",
@@ -401,9 +611,15 @@
         {
           "id": "line-c7c5464e0c607153",
           "names": {
-            "en": "Two Pawns Attack, Tate Variation",
+            "en-US": "Two Pawns Attack, Tate Variation",
             "pt-BR": "Ataque dos Dois Peões, Variante Tate",
-            "es": "Ataque de los Dos Peones, Variante Tate"
+            "es-419": "Ataque de los Dos Peones, Variante Tate",
+            "en-GB": "Two Pawns Attack, Tate Variation",
+            "es-ES": "Ataque de los Dos Peones, Variante Tate",
+            "pt-PT": "Ataque dos Dois Peões, Variante Tate",
+            "de": "Zweibauernangriff, Tate-Variante",
+            "fr": "Attaque des deux pions, Variante Tate",
+            "it": "Attacco dei due pedoni, Variante Tate"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Two Pawns Attack, Tate Variation",
@@ -413,9 +629,15 @@
         {
           "id": "line-1927dc3d4c9e95c4",
           "names": {
-            "en": "Two Pawns Attack, Lasker Variation",
+            "en-US": "Two Pawns Attack, Lasker Variation",
             "pt-BR": "Ataque dos Dois Peões, Variante Lasker",
-            "es": "Ataque de los Dos Peones, Variante Lasker"
+            "es-419": "Ataque de los Dos Peones, Variante Lasker",
+            "en-GB": "Two Pawns Attack, Lasker Variation",
+            "es-ES": "Ataque de los Dos Peones, Variante Lasker",
+            "pt-PT": "Ataque dos Dois Peões, Variante Lasker",
+            "de": "Zweibauernangriff, Lasker-Variante",
+            "fr": "Attaque des deux pions, Variante Lasker",
+            "it": "Attacco dei due pedoni, Variante Lasker"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Two Pawns Attack, Lasker Variation",
@@ -425,9 +647,15 @@
         {
           "id": "line-aca13ebc881f2c3b",
           "names": {
-            "en": "Two Pawns Attack, Mikenas Variation",
+            "en-US": "Two Pawns Attack, Mikenas Variation",
             "pt-BR": "Ataque dos Dois Peões, Variante Mikenas",
-            "es": "Ataque de los Dos Peones, Variante Mikenas"
+            "es-419": "Ataque de los Dos Peones, Variante Mikenas",
+            "en-GB": "Two Pawns Attack, Mikenas Variation",
+            "es-ES": "Ataque de los Dos Peones, Variante Mikenas",
+            "pt-PT": "Ataque dos Dois Peões, Variante Mikenas",
+            "de": "Zweibauernangriff, Mikenas-Variante",
+            "fr": "Attaque des deux pions, Variante Mikenas",
+            "it": "Attacco dei due pedoni, Variante Mikenas"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Two Pawns Attack, Mikenas Variation",
@@ -438,17 +666,29 @@
     },
     {
       "names": {
-        "en": "Exchange Variation",
+        "en-US": "Exchange Variation",
         "pt-BR": "Variante da Troca",
-        "es": "Variante del Cambio"
+        "es-419": "Variante del Cambio",
+        "en-GB": "Exchange Variation",
+        "es-ES": "Variante del Cambio",
+        "pt-PT": "Variante da Troca",
+        "de": "Abtauschvariante",
+        "fr": "Variante d'échange",
+        "it": "Variante di cambio"
       },
       "lines": [
         {
           "id": "line-a178e02e658f4cb0",
           "names": {
-            "en": "Exchange Variation",
+            "en-US": "Exchange Variation",
             "pt-BR": "Variante da Troca",
-            "es": "Variante del Cambio"
+            "es-419": "Variante del Cambio",
+            "en-GB": "Exchange Variation",
+            "es-ES": "Variante del Cambio",
+            "pt-PT": "Variante da Troca",
+            "de": "Abtauschvariante",
+            "fr": "Variante d'échange",
+            "it": "Variante di cambio"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Exchange Variation",
@@ -458,9 +698,15 @@
         {
           "id": "line-c76446e2ab70043e",
           "names": {
-            "en": "Exchange Variation, Voronezh Variation",
+            "en-US": "Exchange Variation, Voronezh Variation",
             "pt-BR": "Variante da Troca, Variante Voronezh",
-            "es": "Variante del Cambio, Variante Voronezh"
+            "es-419": "Variante del Cambio, Variante Voronezh",
+            "en-GB": "Exchange Variation, Voronezh Variation",
+            "es-ES": "Variante del Cambio, Variante Voronezh",
+            "pt-PT": "Variante da Troca, Variante Voronezh",
+            "de": "Abtauschvariante, Woronesch-Variante",
+            "fr": "Variante d'échange, Variante de Voronej",
+            "it": "Variante di cambio, Variante di Voronež"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Exchange Variation, Voronezh Variation",
@@ -470,9 +716,15 @@
         {
           "id": "line-f649398c760344b5",
           "names": {
-            "en": "Exchange Variation, Karpov Variation",
+            "en-US": "Exchange Variation, Karpov Variation",
             "pt-BR": "Variante da Troca, Variante Karpov",
-            "es": "Variante del Cambio, Variante Karpov"
+            "es-419": "Variante del Cambio, Variante Karpov",
+            "en-GB": "Exchange Variation, Karpov Variation",
+            "es-ES": "Variante del Cambio, Variante Karpov",
+            "pt-PT": "Variante da Troca, Variante Karpov",
+            "de": "Abtauschvariante, Karpow-Variante",
+            "fr": "Variante d'échange, Variante Karpov",
+            "it": "Variante di cambio, Variante Karpov"
           },
           "eco": "B03",
           "opening": "Alekhine Defense: Exchange Variation, Karpov Variation",
@@ -483,17 +735,29 @@
     },
     {
       "names": {
-        "en": "Mokele Mbembe",
+        "en-US": "Mokele Mbembe",
         "pt-BR": "Mokele Mbembe",
-        "es": "Mokele Mbembe"
+        "es-419": "Mokele Mbembe",
+        "en-GB": "Mokele Mbembe",
+        "es-ES": "Mokele Mbembe",
+        "pt-PT": "Mokele Mbembe",
+        "de": "Mokele Mbembe",
+        "fr": "Mokele-mbembe",
+        "it": "Mokele-mbembe"
       },
       "lines": [
         {
           "id": "line-c975cc51a5b092fb",
           "names": {
-            "en": "Mokele Mbembe",
+            "en-US": "Mokele Mbembe",
             "pt-BR": "Mokele Mbembe",
-            "es": "Mokele Mbembe"
+            "es-419": "Mokele Mbembe",
+            "en-GB": "Mokele Mbembe",
+            "es-ES": "Mokele Mbembe",
+            "pt-PT": "Mokele Mbembe",
+            "de": "Mokele Mbembe",
+            "fr": "Mokele-mbembe",
+            "it": "Mokele-mbembe"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Mokele Mbembe",
@@ -503,9 +767,15 @@
         {
           "id": "line-0adbe777c6b4e4ce",
           "names": {
-            "en": "Mokele Mbembe, Vavra Defense",
+            "en-US": "Mokele Mbembe, Vavra Defense",
             "pt-BR": "Mokele Mbembe, Defesa Vavra",
-            "es": "Mokele Mbembe, Defensa Vavra"
+            "es-419": "Mokele Mbembe, Defensa Vavra",
+            "en-GB": "Mokele Mbembe, Vavra Defence",
+            "es-ES": "Mokele Mbembe, Defensa Vavra",
+            "pt-PT": "Mokele Mbembe, Defesa Vavra",
+            "de": "Mokele Mbembe, Vavra-Verteidigung",
+            "fr": "Mokele-mbembe, Défense Vavra",
+            "it": "Mokele-mbembe, Difesa Vavra"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Mokele Mbembe, Vavra Defense",
@@ -515,9 +785,15 @@
         {
           "id": "line-eb721f41404d99e5",
           "names": {
-            "en": "Mokele Mbembe, Modern Line",
+            "en-US": "Mokele Mbembe, Modern Line",
             "pt-BR": "Mokele Mbembe, Linha Moderna",
-            "es": "Mokele Mbembe, Línea Moderna"
+            "es-419": "Mokele Mbembe, Línea Moderna",
+            "en-GB": "Mokele Mbembe, Modern Line",
+            "es-ES": "Mokele Mbembe, Línea Moderna",
+            "pt-PT": "Mokele Mbembe, Linha Moderna",
+            "de": "Mokele Mbembe, Modernes Abspiel",
+            "fr": "Mokele-mbembe, Ligne moderne",
+            "it": "Mokele-mbembe, Linea moderna"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Mokele Mbembe, Modern Line",
@@ -528,17 +804,29 @@
     },
     {
       "names": {
-        "en": "Scandinavian Variation",
+        "en-US": "Scandinavian Variation",
         "pt-BR": "Variante Escandinava",
-        "es": "Variante Escandinava"
+        "es-419": "Variante Escandinava",
+        "en-GB": "Scandinavian Variation",
+        "es-ES": "Variante Escandinava",
+        "pt-PT": "Variante Escandinava",
+        "de": "Skandinavische Variante",
+        "fr": "Variante scandinave",
+        "it": "Variante scandinava"
       },
       "lines": [
         {
           "id": "line-bff355ef3a1570d8",
           "names": {
-            "en": "Scandinavian Variation",
+            "en-US": "Scandinavian Variation",
             "pt-BR": "Variante Escandinava",
-            "es": "Variante Escandinava"
+            "es-419": "Variante Escandinava",
+            "en-GB": "Scandinavian Variation",
+            "es-ES": "Variante Escandinava",
+            "pt-PT": "Variante Escandinava",
+            "de": "Skandinavische Variante",
+            "fr": "Variante scandinave",
+            "it": "Variante scandinava"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Scandinavian Variation",
@@ -548,9 +836,15 @@
         {
           "id": "line-d7d388f63b648f65",
           "names": {
-            "en": "Scandinavian Variation, Myers Gambit",
+            "en-US": "Scandinavian Variation, Myers Gambit",
             "pt-BR": "Variante Escandinava, Gambito Myers",
-            "es": "Variante Escandinava, Gambito Myers"
+            "es-419": "Variante Escandinava, Gambito Myers",
+            "en-GB": "Scandinavian Variation, Myers Gambit",
+            "es-ES": "Variante Escandinava, Gambito Myers",
+            "pt-PT": "Variante Escandinava, Gambito Myers",
+            "de": "Skandinavische Variante, Myers-Gambit",
+            "fr": "Variante scandinave, Gambit Myers",
+            "it": "Variante scandinava, Gambetto Myers"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Scandinavian Variation, Myers Gambit",
@@ -560,9 +854,15 @@
         {
           "id": "line-897d8b11d614ca50",
           "names": {
-            "en": "Scandinavian Variation, Geschev Gambit",
+            "en-US": "Scandinavian Variation, Geschev Gambit",
             "pt-BR": "Variante Escandinava, Gambito Geschev",
-            "es": "Variante Escandinava, Gambito Geschev"
+            "es-419": "Variante Escandinava, Gambito Geschev",
+            "en-GB": "Scandinavian Variation, Geschev Gambit",
+            "es-ES": "Variante Escandinava, Gambito Geschev",
+            "pt-PT": "Variante Escandinava, Gambito Geschev",
+            "de": "Skandinavische Variante, Geschev-Gambit",
+            "fr": "Variante scandinave, Gambit Geschev",
+            "it": "Variante scandinava, Gambetto Geschev"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Scandinavian Variation, Geschev Gambit",
@@ -573,17 +873,29 @@
     },
     {
       "names": {
-        "en": "Brooklyn Variation",
+        "en-US": "Brooklyn Variation",
         "pt-BR": "Variante Brooklyn",
-        "es": "Variante Brooklyn"
+        "es-419": "Variante Brooklyn",
+        "en-GB": "Brooklyn Variation",
+        "es-ES": "Variante Brooklyn",
+        "pt-PT": "Variante Brooklyn",
+        "de": "Brooklyn-Variante",
+        "fr": "Variante Brooklyn",
+        "it": "Variante Brooklyn"
       },
       "lines": [
         {
           "id": "line-23b7a540dee01dc6",
           "names": {
-            "en": "Brooklyn Variation",
+            "en-US": "Brooklyn Variation",
             "pt-BR": "Variante Brooklyn",
-            "es": "Variante Brooklyn"
+            "es-419": "Variante Brooklyn",
+            "en-GB": "Brooklyn Variation",
+            "es-ES": "Variante Brooklyn",
+            "pt-PT": "Variante Brooklyn",
+            "de": "Brooklyn-Variante",
+            "fr": "Variante Brooklyn",
+            "it": "Variante Brooklyn"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Brooklyn Variation",
@@ -593,9 +905,15 @@
         {
           "id": "line-0da605db1cb7add4",
           "names": {
-            "en": "Brooklyn Variation, Everglades Variation",
+            "en-US": "Brooklyn Variation, Everglades Variation",
             "pt-BR": "Variante Brooklyn, Variante Everglades",
-            "es": "Variante Brooklyn, Variante Everglades"
+            "es-419": "Variante Brooklyn, Variante Everglades",
+            "en-GB": "Brooklyn Variation, Everglades Variation",
+            "es-ES": "Variante Brooklyn, Variante Everglades",
+            "pt-PT": "Variante Brooklyn, Variante Everglades",
+            "de": "Brooklyn-Variante, Everglades-Variante",
+            "fr": "Variante Brooklyn, Variante Everglades",
+            "it": "Variante Brooklyn, Variante Everglades"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Brooklyn Variation, Everglades Variation",
@@ -606,17 +924,29 @@
     },
     {
       "names": {
-        "en": "Krejcik Variation",
+        "en-US": "Krejcik Variation",
         "pt-BR": "Variante Krejcik",
-        "es": "Variante Krejcik"
+        "es-419": "Variante Krejcik",
+        "en-GB": "Krejcik Variation",
+        "es-ES": "Variante Krejcik",
+        "pt-PT": "Variante Krejcik",
+        "de": "Krejcik-Variante",
+        "fr": "Variante Krejcik",
+        "it": "Variante Krejcik"
       },
       "lines": [
         {
           "id": "line-e61f9dfcc818684e",
           "names": {
-            "en": "Krejcik Variation",
+            "en-US": "Krejcik Variation",
             "pt-BR": "Variante Krejcik",
-            "es": "Variante Krejcik"
+            "es-419": "Variante Krejcik",
+            "en-GB": "Krejcik Variation",
+            "es-ES": "Variante Krejcik",
+            "pt-PT": "Variante Krejcik",
+            "de": "Krejcik-Variante",
+            "fr": "Variante Krejcik",
+            "it": "Variante Krejcik"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Krejcik Variation",
@@ -626,9 +956,15 @@
         {
           "id": "line-0dcdec4603325706",
           "names": {
-            "en": "Krejcik Variation, Krejcik Gambit",
+            "en-US": "Krejcik Variation, Krejcik Gambit",
             "pt-BR": "Variante Krejcik, Gambito Krejcik",
-            "es": "Variante Krejcik, Gambito Krejcik"
+            "es-419": "Variante Krejcik, Gambito Krejcik",
+            "en-GB": "Krejcik Variation, Krejcik Gambit",
+            "es-ES": "Variante Krejcik, Gambito Krejcik",
+            "pt-PT": "Variante Krejcik, Gambito Krejcik",
+            "de": "Krejcik-Variante, Krejcik-Gambit",
+            "fr": "Variante Krejcik, Gambit Krejcik",
+            "it": "Variante Krejcik, Gambetto Krejcik"
           },
           "eco": "B02",
           "opening": "Alekhine Defense: Krejcik Variation, Krejcik Gambit",
@@ -642,9 +978,15 @@
     {
       "id": "line-fff46f86c37ccccd",
       "names": {
-        "en": "Balogh Variation",
+        "en-US": "Balogh Variation",
         "pt-BR": "Variante Balogh",
-        "es": "Variante Balogh"
+        "es-419": "Variante Balogh",
+        "en-GB": "Balogh Variation",
+        "es-ES": "Variante Balogh",
+        "pt-PT": "Variante Balogh",
+        "de": "Balogh-Variante",
+        "fr": "Variante Balogh",
+        "it": "Variante Balogh"
       },
       "eco": "B03",
       "opening": "Alekhine Defense: Balogh Variation",
@@ -654,9 +996,15 @@
     {
       "id": "line-d8ed7eed9a54907b",
       "names": {
-        "en": "Buckley Attack",
+        "en-US": "Buckley Attack",
         "pt-BR": "Ataque Buckley",
-        "es": "Ataque Buckley"
+        "es-419": "Ataque Buckley",
+        "en-GB": "Buckley Attack",
+        "es-ES": "Ataque Buckley",
+        "pt-PT": "Ataque Buckley",
+        "de": "Buckley-Angriff",
+        "fr": "Attaque Buckley",
+        "it": "Attacco Buckley"
       },
       "eco": "B02",
       "opening": "Alekhine Defense: Buckley Attack",
@@ -666,9 +1014,15 @@
     {
       "id": "line-446e5410812bb4fc",
       "names": {
-        "en": "Kmoch Variation",
+        "en-US": "Kmoch Variation",
         "pt-BR": "Variante Kmoch",
-        "es": "Variante Kmoch"
+        "es-419": "Variante Kmoch",
+        "en-GB": "Kmoch Variation",
+        "es-ES": "Variante Kmoch",
+        "pt-PT": "Variante Kmoch",
+        "de": "Kmoch-Variante",
+        "fr": "Variante Kmoch",
+        "it": "Variante Kmoch"
       },
       "eco": "B02",
       "opening": "Alekhine Defense: Kmoch Variation",
@@ -678,9 +1032,15 @@
     {
       "id": "line-a6c5736c04a96a6d",
       "names": {
-        "en": "Maróczy Variation",
+        "en-US": "Maróczy Variation",
         "pt-BR": "Variante Maróczy",
-        "es": "Variante Maróczy"
+        "es-419": "Variante Maróczy",
+        "en-GB": "Maróczy Variation",
+        "es-ES": "Variante Maróczy",
+        "pt-PT": "Variante Maróczy",
+        "de": "Maróczy-Variante",
+        "fr": "Variante Maróczy",
+        "it": "Variante Maróczy"
       },
       "eco": "B02",
       "opening": "Alekhine Defense: Maróczy Variation",
@@ -690,9 +1050,15 @@
     {
       "id": "line-500a0b1995a1878d",
       "names": {
-        "en": "Normal Variation",
+        "en-US": "Normal Variation",
         "pt-BR": "Variante Normal",
-        "es": "Variante Normal"
+        "es-419": "Variante Normal",
+        "en-GB": "Normal Variation",
+        "es-ES": "Variante Normal",
+        "pt-PT": "Variante Normal",
+        "de": "Normalvariante",
+        "fr": "Variante normale",
+        "it": "Variante normale"
       },
       "eco": "B02",
       "opening": "Alekhine Defense: Normal Variation",
@@ -702,9 +1068,15 @@
     {
       "id": "line-36238aa9ae7ef4cf",
       "names": {
-        "en": "O'Sullivan Gambit",
+        "en-US": "O'Sullivan Gambit",
         "pt-BR": "Gambito O'Sullivan",
-        "es": "Gambito O'Sullivan"
+        "es-419": "Gambito O'Sullivan",
+        "en-GB": "O'Sullivan Gambit",
+        "es-ES": "Gambito O'Sullivan",
+        "pt-PT": "Gambito O'Sullivan",
+        "de": "O'Sullivan-Gambit",
+        "fr": "Gambit O'Sullivan",
+        "it": "Gambetto O'Sullivan"
       },
       "eco": "B03",
       "opening": "Alekhine Defense: O'Sullivan Gambit",
@@ -714,9 +1086,15 @@
     {
       "id": "line-578aa585dbffc937",
       "names": {
-        "en": "Spielmann Gambit",
+        "en-US": "Spielmann Gambit",
         "pt-BR": "Gambito Spielmann",
-        "es": "Gambito Spielmann"
+        "es-419": "Gambito Spielmann",
+        "en-GB": "Spielmann Gambit",
+        "es-ES": "Gambito Spielmann",
+        "pt-PT": "Gambito Spielmann",
+        "de": "Spielmann-Gambit",
+        "fr": "Gambit Spielmann",
+        "it": "Gambetto Spielmann"
       },
       "eco": "B02",
       "opening": "Alekhine Defense: Spielmann Gambit",
@@ -726,9 +1104,15 @@
     {
       "id": "line-714f4993c3e20a83",
       "names": {
-        "en": "Steiner Variation",
+        "en-US": "Steiner Variation",
         "pt-BR": "Variante Steiner",
-        "es": "Variante Steiner"
+        "es-419": "Variante Steiner",
+        "en-GB": "Steiner Variation",
+        "es-ES": "Variante Steiner",
+        "pt-PT": "Variante Steiner",
+        "de": "Steiner-Variante",
+        "fr": "Variante Steiner",
+        "it": "Variante Steiner"
       },
       "eco": "B02",
       "opening": "Alekhine Defense: Steiner Variation",
@@ -738,9 +1122,15 @@
     {
       "id": "line-7f81b680867e724e",
       "names": {
-        "en": "Sämisch Attack",
+        "en-US": "Sämisch Attack",
         "pt-BR": "Ataque Sämisch",
-        "es": "Ataque Sämisch"
+        "es-419": "Ataque Sämisch",
+        "en-GB": "Sämisch Attack",
+        "es-ES": "Ataque Sämisch",
+        "pt-PT": "Ataque Sämisch",
+        "de": "Sämisch-Angriff",
+        "fr": "Attaque Sämisch",
+        "it": "Attacco Sämisch"
       },
       "eco": "B02",
       "opening": "Alekhine Defense: Sämisch Attack",
@@ -750,9 +1140,15 @@
     {
       "id": "line-feb2753d262e0f2e",
       "names": {
-        "en": "The Squirrel",
+        "en-US": "The Squirrel",
         "pt-BR": "O Esquilo",
-        "es": "La Ardilla"
+        "es-419": "La Ardilla",
+        "en-GB": "The Squirrel",
+        "es-ES": "La Ardilla",
+        "pt-PT": "O Esquilo",
+        "de": "Das Eichhörnchen",
+        "fr": "L'Écureuil",
+        "it": "Lo Scoiattolo"
       },
       "eco": "B02",
       "opening": "Alekhine Defense: The Squirrel",
@@ -762,9 +1158,15 @@
     {
       "id": "line-caf3a3b2e200adfd",
       "names": {
-        "en": "Welling Variation",
+        "en-US": "Welling Variation",
         "pt-BR": "Variante Welling",
-        "es": "Variante Welling"
+        "es-419": "Variante Welling",
+        "en-GB": "Welling Variation",
+        "es-ES": "Variante Welling",
+        "pt-PT": "Variante Welling",
+        "de": "Welling-Variante",
+        "fr": "Variante Welling",
+        "it": "Variante Welling"
       },
       "eco": "B02",
       "opening": "Alekhine Defense: Welling Variation",

@@ -1,18 +1,30 @@
 {
   "id": "polish-defense",
   "names": {
-    "en": "Polish Defense",
+    "en-US": "Polish Defense",
     "pt-BR": "Defesa Polonesa",
-    "es": "Defensa Polaca"
+    "es-419": "Defensa Polaca",
+    "en-GB": "Polish Defense",
+    "es-ES": "Defensa Polaca",
+    "pt-PT": "Defesa Polaca",
+    "de": "Polnische Verteidigung",
+    "fr": "Défense polonaise",
+    "it": "Difesa polacca"
   },
   "order": null,
   "lines": [
     {
       "id": "line-cdbedae953594726",
       "names": {
-        "en": "Polish Defense",
+        "en-US": "Polish Defense",
         "pt-BR": "Defesa Polonesa",
-        "es": "Defensa Polaca"
+        "es-419": "Defensa Polaca",
+        "en-GB": "Polish Defence",
+        "es-ES": "Defensa Polaca",
+        "pt-PT": "Defesa Polaca",
+        "de": "Polnische Verteidigung",
+        "fr": "Défense polonaise",
+        "it": "Difesa polacca"
       },
       "eco": "A40",
       "opening": "Polish Defense",
@@ -22,9 +34,15 @@
     {
       "id": "line-238dec5c6fafdb98",
       "names": {
-        "en": "Spassky Gambit Accepted",
+        "en-US": "Spassky Gambit Accepted",
         "pt-BR": "Gambito Spassky Aceito",
-        "es": "Gambito Spassky Aceptado"
+        "es-419": "Gambito Spassky Aceptado",
+        "en-GB": "Spassky Gambit Accepted",
+        "es-ES": "Gambito Spassky Aceptado",
+        "pt-PT": "Gambito Spassky Aceito",
+        "de": "Angenommenes Spasski-Gambit",
+        "fr": "Gambit Spassky accepté",
+        "it": "Gambetto Spasskij accettato"
       },
       "eco": "A40",
       "opening": "Polish Defense: Spassky Gambit Accepted",

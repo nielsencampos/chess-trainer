@@ -1,25 +1,43 @@
 {
   "id": "tarrasch-defense",
   "names": {
-    "en": "Tarrasch Defense",
+    "en-US": "Tarrasch Defense",
     "pt-BR": "Defesa Tarrasch",
-    "es": "Defensa Tarrasch"
+    "es-419": "Defensa Tarrasch",
+    "en-GB": "Tarrasch Defense",
+    "es-ES": "Defensa Tarrasch",
+    "pt-PT": "Defesa Tarrasch",
+    "de": "Tarrasch-Verteidigung",
+    "fr": "Défense Tarrasch",
+    "it": "Difesa Tarrasch"
   },
   "order": 14,
   "variants": [
     {
       "names": {
-        "en": "Classical Variation",
+        "en-US": "Classical Variation",
         "pt-BR": "Variante Clássica",
-        "es": "Variante Clásica"
+        "es-419": "Variante Clásica",
+        "en-GB": "Classical Variation",
+        "es-ES": "Variante Clásica",
+        "pt-PT": "Variante Clássica",
+        "de": "Klassische Variante",
+        "fr": "Variante classique",
+        "it": "Variante classica"
       },
       "lines": [
         {
           "id": "line-8318bbc88af64cb6",
           "names": {
-            "en": "Classical Variation, Bogoljubow Variation",
+            "en-US": "Classical Variation, Bogoljubow Variation",
             "pt-BR": "Variante Clássica, Variante Bogoljubow",
-            "es": "Variante Clásica, Variante Bogoljubow"
+            "es-419": "Variante Clásica, Variante Bogoljubow",
+            "en-GB": "Classical Variation, Bogoljubow Variation",
+            "es-ES": "Variante Clásica, Variante Bogoljubow",
+            "pt-PT": "Variante Clássica, Variante Bogoljubow",
+            "de": "Klassische Variante, Bogoljubow-Variante",
+            "fr": "Variante classique, Variante Bogoljubow",
+            "it": "Variante classica, Variante Bogoljubow"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation, Bogoljubow Variation",
@@ -29,9 +47,15 @@
         {
           "id": "line-9980cbd40a56f24b",
           "names": {
-            "en": "Classical Variation",
+            "en-US": "Classical Variation",
             "pt-BR": "Variante Clássica",
-            "es": "Variante Clásica"
+            "es-419": "Variante Clásica",
+            "en-GB": "Classical Variation",
+            "es-ES": "Variante Clásica",
+            "pt-PT": "Variante Clássica",
+            "de": "Klassische Variante",
+            "fr": "Variante classique",
+            "it": "Variante classica"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation",
@@ -41,9 +65,15 @@
         {
           "id": "line-329aa1b32b8d0347",
           "names": {
-            "en": "Classical Variation, Carlsbad Variation",
+            "en-US": "Classical Variation, Carlsbad Variation",
             "pt-BR": "Variante Clássica, Variante Carlsbad",
-            "es": "Variante Clásica, Variante Carlsbad"
+            "es-419": "Variante Clásica, Variante Carlsbad",
+            "en-GB": "Classical Variation, Carlsbad Variation",
+            "es-ES": "Variante Clásica, Variante Carlsbad",
+            "pt-PT": "Variante Clássica, Variante Carlsbad",
+            "de": "Klassische Variante, Karlsbad-Variante",
+            "fr": "Variante classique, Variante Carlsbad",
+            "it": "Variante classica, Variante Carlsbad"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation, Carlsbad Variation",
@@ -53,9 +83,15 @@
         {
           "id": "line-2a5cc324126688a5",
           "names": {
-            "en": "Classical Variation, Endgame Variation",
+            "en-US": "Classical Variation, Endgame Variation",
             "pt-BR": "Variante Clássica, Variante do Final",
-            "es": "Variante Clásica, Variante del Final"
+            "es-419": "Variante Clásica, Variante del Final",
+            "en-GB": "Classical Variation, Endgame Variation",
+            "es-ES": "Variante Clásica, Variante del Final",
+            "pt-PT": "Variante Clássica, Variante do Final",
+            "de": "Klassische Variante, Endspielvariante",
+            "fr": "Variante classique, Variante de la finale",
+            "it": "Variante classica, Variante del finale"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation, Endgame Variation",
@@ -65,9 +101,15 @@
         {
           "id": "line-78bfbcd278a9c1e0",
           "names": {
-            "en": "Classical Variation, Advance Variation",
+            "en-US": "Classical Variation, Advance Variation",
             "pt-BR": "Variante Clássica, Variante do Avanço",
-            "es": "Variante Clásica, Variante del Avance"
+            "es-419": "Variante Clásica, Variante del Avance",
+            "en-GB": "Classical Variation, Advance Variation",
+            "es-ES": "Variante Clásica, Variante del Avance",
+            "pt-PT": "Variante Clássica, Variante do Avanço",
+            "de": "Klassische Variante, Vorstoßvariante",
+            "fr": "Variante classique, Variante d'avance",
+            "it": "Variante classica, Variante di spinta"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation, Advance Variation",
@@ -77,9 +119,15 @@
         {
           "id": "line-8c2e8f2480d0f58f",
           "names": {
-            "en": "Classical Variation, Petursson Variation",
+            "en-US": "Classical Variation, Petursson Variation",
             "pt-BR": "Variante Clássica, Variante Petursson",
-            "es": "Variante Clásica, Variante Petursson"
+            "es-419": "Variante Clásica, Variante Petursson",
+            "en-GB": "Classical Variation, Petursson Variation",
+            "es-ES": "Variante Clásica, Variante Petursson",
+            "pt-PT": "Variante Clássica, Variante Petursson",
+            "de": "Klassische Variante, Petursson-Variante",
+            "fr": "Variante classique, Variante Petursson",
+            "it": "Variante classica, Variante Petursson"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation, Petursson Variation",
@@ -89,9 +137,15 @@
         {
           "id": "line-0fef1303c2c512ad",
           "names": {
-            "en": "Classical Variation, Spassky Variation",
+            "en-US": "Classical Variation, Spassky Variation",
             "pt-BR": "Variante Clássica, Variante Spassky",
-            "es": "Variante Clásica, Variante Spassky"
+            "es-419": "Variante Clásica, Variante Spassky",
+            "en-GB": "Classical Variation, Spassky Variation",
+            "es-ES": "Variante Clásica, Variante Spassky",
+            "pt-PT": "Variante Clássica, Variante Spassky",
+            "de": "Klassische Variante, Spasski-Variante",
+            "fr": "Variante classique, Variante Spassky",
+            "it": "Variante classica, Variante Spasskij"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation, Spassky Variation",
@@ -101,9 +155,15 @@
         {
           "id": "line-23a7b2f900efa552",
           "names": {
-            "en": "Classical Variation, Main Line",
+            "en-US": "Classical Variation, Main Line",
             "pt-BR": "Variante Clássica, Linha Principal",
-            "es": "Variante Clásica, Línea Principal"
+            "es-419": "Variante Clásica, Línea Principal",
+            "en-GB": "Classical Variation, Main Line",
+            "es-ES": "Variante Clásica, Línea Principal",
+            "pt-PT": "Variante Clássica, Linha Principal",
+            "de": "Klassische Variante, Hauptvariante",
+            "fr": "Variante classique, Ligne principale",
+            "it": "Variante classica, Linea principale"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation, Main Line",
@@ -113,9 +173,15 @@
         {
           "id": "line-5b230be88a1ffbe3",
           "names": {
-            "en": "Classical Variation, Chandler Variation",
+            "en-US": "Classical Variation, Chandler Variation",
             "pt-BR": "Variante Clássica, Variante Chandler",
-            "es": "Variante Clásica, Variante Chandler"
+            "es-419": "Variante Clásica, Variante Chandler",
+            "en-GB": "Classical Variation, Chandler Variation",
+            "es-ES": "Variante Clásica, Variante Chandler",
+            "pt-PT": "Variante Clássica, Variante Chandler",
+            "de": "Klassische Variante, Chandler-Variante",
+            "fr": "Variante classique, Variante Chandler",
+            "it": "Variante classica, Variante Chandler"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation, Chandler Variation",
@@ -125,9 +191,15 @@
         {
           "id": "line-c58909cf15d1075a",
           "names": {
-            "en": "Classical Variation, Réti Variation",
+            "en-US": "Classical Variation, Réti Variation",
             "pt-BR": "Variante Clássica, Variante Réti",
-            "es": "Variante Clásica, Variante Réti"
+            "es-419": "Variante Clásica, Variante Réti",
+            "en-GB": "Classical Variation, Réti Variation",
+            "es-ES": "Variante Clásica, Variante Réti",
+            "pt-PT": "Variante Clássica, Variante Réti",
+            "de": "Klassische Variante, Réti-Variante",
+            "fr": "Variante classique, Variante Réti",
+            "it": "Variante classica, Variante Réti"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation, Réti Variation",
@@ -137,9 +209,15 @@
         {
           "id": "line-e33a6ab68a698b17",
           "names": {
-            "en": "Classical Variation, Classical Tarrasch Gambit",
+            "en-US": "Classical Variation, Classical Tarrasch Gambit",
             "pt-BR": "Variante Clássica, Gambito Tarrasch Clássico",
-            "es": "Variante Clásica, Gambito Tarrasch Clásico"
+            "es-419": "Variante Clásica, Gambito Tarrasch Clásico",
+            "en-GB": "Classical Variation, Classical Tarrasch Gambit",
+            "es-ES": "Variante Clásica, Gambito Tarrasch Clásico",
+            "pt-PT": "Variante Clássica, Gambito Tarrasch Clássico",
+            "de": "Klassische Variante, Klassisches Tarrasch-Gambit",
+            "fr": "Variante classique, Gambit Tarrasch classique",
+            "it": "Variante classica, Gambetto Tarrasch classico"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Classical Variation, Classical Tarrasch Gambit",
@@ -150,17 +228,29 @@
     },
     {
       "names": {
-        "en": "Prague Variation",
+        "en-US": "Prague Variation",
         "pt-BR": "Variante de Praga",
-        "es": "Variante de Praga"
+        "es-419": "Variante de Praga",
+        "en-GB": "Prague Variation",
+        "es-ES": "Variante de Praga",
+        "pt-PT": "Variante de Praga",
+        "de": "Prager Variante",
+        "fr": "Variante de Prague",
+        "it": "Variante di Praga"
       },
       "lines": [
         {
           "id": "line-6d3df8932f1755da",
           "names": {
-            "en": "Prague Variation",
+            "en-US": "Prague Variation",
             "pt-BR": "Variante de Praga",
-            "es": "Variante de Praga"
+            "es-419": "Variante de Praga",
+            "en-GB": "Prague Variation",
+            "es-ES": "Variante de Praga",
+            "pt-PT": "Variante de Praga",
+            "de": "Prager Variante",
+            "fr": "Variante de Prague",
+            "it": "Variante di Praga"
           },
           "eco": "D33",
           "opening": "Tarrasch Defense: Prague Variation",
@@ -170,9 +260,15 @@
         {
           "id": "line-1f51b390e8919aad",
           "names": {
-            "en": "Prague Variation, Main Line",
+            "en-US": "Prague Variation, Main Line",
             "pt-BR": "Variante de Praga, Linha Principal",
-            "es": "Variante de Praga, Línea Principal"
+            "es-419": "Variante de Praga, Línea Principal",
+            "en-GB": "Prague Variation, Main Line",
+            "es-ES": "Variante de Praga, Línea Principal",
+            "pt-PT": "Variante de Praga, Linha Principal",
+            "de": "Prager Variante, Hauptvariante",
+            "fr": "Variante de Prague, Ligne principale",
+            "it": "Variante di Praga, Linea principale"
           },
           "eco": "D34",
           "opening": "Tarrasch Defense: Prague Variation, Main Line",
@@ -183,17 +279,29 @@
     },
     {
       "names": {
-        "en": "Swedish Variation",
+        "en-US": "Swedish Variation",
         "pt-BR": "Variante Sueca",
-        "es": "Variante Sueca"
+        "es-419": "Variante Sueca",
+        "en-GB": "Swedish Variation",
+        "es-ES": "Variante Sueca",
+        "pt-PT": "Variante Sueca",
+        "de": "Schwedische Variante",
+        "fr": "Variante suédoise",
+        "it": "Variante svedese"
       },
       "lines": [
         {
           "id": "line-561bef33586a42f2",
           "names": {
-            "en": "Swedish Variation",
+            "en-US": "Swedish Variation",
             "pt-BR": "Variante Sueca",
-            "es": "Variante Sueca"
+            "es-419": "Variante Sueca",
+            "en-GB": "Swedish Variation",
+            "es-ES": "Variante Sueca",
+            "pt-PT": "Variante Sueca",
+            "de": "Schwedische Variante",
+            "fr": "Variante suédoise",
+            "it": "Variante svedese"
           },
           "eco": "D33",
           "opening": "Tarrasch Defense: Swedish Variation",
@@ -203,9 +311,15 @@
         {
           "id": "line-c9f46af0affbe9ac",
           "names": {
-            "en": "Swedish Variation, Central Break",
+            "en-US": "Swedish Variation, Central Break",
             "pt-BR": "Variante Sueca, Ruptura Central",
-            "es": "Variante Sueca, Ruptura Central"
+            "es-419": "Variante Sueca, Ruptura Central",
+            "en-GB": "Swedish Variation, Central Break",
+            "es-ES": "Variante Sueca, Ruptura Central",
+            "pt-PT": "Variante Sueca, Ruptura Central",
+            "de": "Schwedische Variante, Zentrumsdurchbruch",
+            "fr": "Variante suédoise, Rupture centrale",
+            "it": "Variante svedese, Rottura centrale"
           },
           "eco": "D33",
           "opening": "Tarrasch Defense: Swedish Variation, Central Break",
@@ -216,17 +330,29 @@
     },
     {
       "names": {
-        "en": "Symmetrical Variation",
+        "en-US": "Symmetrical Variation",
         "pt-BR": "Variante Simétrica",
-        "es": "Variante Simétrica"
+        "es-419": "Variante Simétrica",
+        "en-GB": "Symmetrical Variation",
+        "es-ES": "Variante Simétrica",
+        "pt-PT": "Variante Simétrica",
+        "de": "Symmetrische Variante",
+        "fr": "Variante symétrique",
+        "it": "Variante simmetrica"
       },
       "lines": [
         {
           "id": "line-c7b6a2340a5f4c8a",
           "names": {
-            "en": "Symmetrical Variation",
+            "en-US": "Symmetrical Variation",
             "pt-BR": "Variante Simétrica",
-            "es": "Variante Simétrica"
+            "es-419": "Variante Simétrica",
+            "en-GB": "Symmetrical Variation",
+            "es-ES": "Variante Simétrica",
+            "pt-PT": "Variante Simétrica",
+            "de": "Symmetrische Variante",
+            "fr": "Variante symétrique",
+            "it": "Variante simmetrica"
           },
           "eco": "D32",
           "opening": "Tarrasch Defense: Symmetrical Variation",
@@ -236,9 +362,15 @@
         {
           "id": "line-81786c950e10ca27",
           "names": {
-            "en": "Symmetrical Variation",
+            "en-US": "Symmetrical Variation",
             "pt-BR": "Variante Simétrica",
-            "es": "Variante Simétrica"
+            "es-419": "Variante Simétrica",
+            "en-GB": "Symmetrical Variation",
+            "es-ES": "Variante Simétrica",
+            "pt-PT": "Variante Simétrica",
+            "de": "Symmetrische Variante",
+            "fr": "Variante symétrique",
+            "it": "Variante simmetrica"
           },
           "eco": "D32",
           "opening": "Tarrasch Defense: Symmetrical Variation",
@@ -252,9 +384,15 @@
     {
       "id": "line-fd3c0e7327e6daa1",
       "names": {
-        "en": "Dubov Tarrasch",
+        "en-US": "Dubov Tarrasch",
         "pt-BR": "Tarrasch Dubov",
-        "es": "Tarrasch Dubov"
+        "es-419": "Tarrasch Dubov",
+        "en-GB": "Dubov Tarrasch",
+        "es-ES": "Tarrasch Dubov",
+        "pt-PT": "Tarrasch Dubov",
+        "de": "Dubow-Tarrasch",
+        "fr": "Tarrasch Doubov",
+        "it": "Tarrasch Dubov"
       },
       "eco": "D33",
       "opening": "Tarrasch Defense: Dubov Tarrasch",
@@ -264,9 +402,15 @@
     {
       "id": "line-1b9353547fa7925d",
       "names": {
-        "en": "Grünfeld Gambit",
+        "en-US": "Grünfeld Gambit",
         "pt-BR": "Gambito Grünfeld",
-        "es": "Gambito Grünfeld"
+        "es-419": "Gambito Grünfeld",
+        "en-GB": "Grünfeld Gambit",
+        "es-ES": "Gambito Grünfeld",
+        "pt-PT": "Gambito Grünfeld",
+        "de": "Grünfeld-Gambit",
+        "fr": "Gambit Grünfeld",
+        "it": "Gambetto Grünfeld"
       },
       "eco": "D32",
       "opening": "Tarrasch Defense: Grünfeld Gambit",
@@ -276,9 +420,15 @@
     {
       "id": "line-7c9e2f3bd63f5ab0",
       "names": {
-        "en": "Tarrasch Defense",
+        "en-US": "Tarrasch Defense",
         "pt-BR": "Defesa Tarrasch",
-        "es": "Defensa Tarrasch"
+        "es-419": "Defensa Tarrasch",
+        "en-GB": "Tarrasch Defence",
+        "es-ES": "Defensa Tarrasch",
+        "pt-PT": "Defesa Tarrasch",
+        "de": "Tarrasch-Verteidigung",
+        "fr": "Défense Tarrasch",
+        "it": "Difesa Tarrasch"
       },
       "eco": "D32",
       "opening": "Tarrasch Defense",
@@ -288,9 +438,15 @@
     {
       "id": "line-f12534b84fd3dede",
       "names": {
-        "en": "Marshall Gambit",
+        "en-US": "Marshall Gambit",
         "pt-BR": "Gambito Marshall",
-        "es": "Gambito Marshall"
+        "es-419": "Gambito Marshall",
+        "en-GB": "Marshall Gambit",
+        "es-ES": "Gambito Marshall",
+        "pt-PT": "Gambito Marshall",
+        "de": "Marshall-Gambit",
+        "fr": "Gambit Marshall",
+        "it": "Gambetto Marshall"
       },
       "eco": "D32",
       "opening": "Tarrasch Defense: Marshall Gambit",
@@ -300,9 +456,15 @@
     {
       "id": "line-e62a7e52acee2762",
       "names": {
-        "en": "Rubinstein System",
+        "en-US": "Rubinstein System",
         "pt-BR": "Sistema Rubinstein",
-        "es": "Sistema Rubinstein"
+        "es-419": "Sistema Rubinstein",
+        "en-GB": "Rubinstein System",
+        "es-ES": "Sistema Rubinstein",
+        "pt-PT": "Sistema Rubinstein",
+        "de": "Rubinstein-System",
+        "fr": "Système Rubinstein",
+        "it": "Sistema Rubinstein"
       },
       "eco": "D33",
       "opening": "Tarrasch Defense: Rubinstein System",
@@ -312,9 +474,15 @@
     {
       "id": "line-59eaac8a1810e726",
       "names": {
-        "en": "Schara Gambit",
+        "en-US": "Schara Gambit",
         "pt-BR": "Gambito Schara",
-        "es": "Gambito Schara"
+        "es-419": "Gambito Schara",
+        "en-GB": "Schara Gambit",
+        "es-ES": "Gambito Schara",
+        "pt-PT": "Gambito Schara",
+        "de": "Schara-Gambit",
+        "fr": "Gambit Schara",
+        "it": "Gambetto Schara"
       },
       "eco": "D32",
       "opening": "Tarrasch Defense: Schara Gambit",
@@ -324,9 +492,15 @@
     {
       "id": "line-e5ad7645ef63d20e",
       "names": {
-        "en": "Tarrasch Gambit",
+        "en-US": "Tarrasch Gambit",
         "pt-BR": "Gambito Tarrasch",
-        "es": "Gambito Tarrasch"
+        "es-419": "Gambito Tarrasch",
+        "en-GB": "Tarrasch Gambit",
+        "es-ES": "Gambito Tarrasch",
+        "pt-PT": "Gambito Tarrasch",
+        "de": "Tarrasch-Gambit",
+        "fr": "Gambit Tarrasch",
+        "it": "Gambetto Tarrasch"
       },
       "eco": "D32",
       "opening": "Tarrasch Defense: Tarrasch Gambit",
@@ -336,9 +510,15 @@
     {
       "id": "line-f1ce7fdf8935ab1d",
       "names": {
-        "en": "Two Knights Variation",
+        "en-US": "Two Knights Variation",
         "pt-BR": "Variante dos Dois Cavalos",
-        "es": "Variante de los Dos Caballos"
+        "es-419": "Variante de los Dos Caballos",
+        "en-GB": "Two Knights Variation",
+        "es-ES": "Variante de los Dos Caballos",
+        "pt-PT": "Variante dos Dois Cavalos",
+        "de": "Zweispringervariante",
+        "fr": "Variante des deux cavaliers",
+        "it": "Variante dei due cavalli"
       },
       "eco": "D32",
       "opening": "Tarrasch Defense: Two Knights Variation",
@@ -348,9 +528,15 @@
     {
       "id": "line-0f0596f6a9c0edea",
       "names": {
-        "en": "Wagner Variation",
+        "en-US": "Wagner Variation",
         "pt-BR": "Variante Wagner",
-        "es": "Variante Wagner"
+        "es-419": "Variante Wagner",
+        "en-GB": "Wagner Variation",
+        "es-ES": "Variante Wagner",
+        "pt-PT": "Variante Wagner",
+        "de": "Wagner-Variante",
+        "fr": "Variante Wagner",
+        "it": "Variante Wagner"
       },
       "eco": "D33",
       "opening": "Tarrasch Defense: Wagner Variation",
@@ -360,9 +546,15 @@
     {
       "id": "line-adaafabc150471e6",
       "names": {
-        "en": "von Hennig Gambit",
+        "en-US": "von Hennig Gambit",
         "pt-BR": "Gambito von Hennig",
-        "es": "Gambito von Hennig"
+        "es-419": "Gambito von Hennig",
+        "en-GB": "von Hennig Gambit",
+        "es-ES": "Gambito von Hennig",
+        "pt-PT": "Gambito von Hennig",
+        "de": "Von-Hennig-Gambit",
+        "fr": "Gambit von Hennig",
+        "it": "Gambetto von Hennig"
       },
       "eco": "D32",
       "opening": "Tarrasch Defense: von Hennig Gambit",

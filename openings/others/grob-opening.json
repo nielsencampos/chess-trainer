@@ -1,25 +1,43 @@
 {
   "id": "grob-opening",
   "names": {
-    "en": "Grob Opening",
+    "en-US": "Grob Opening",
     "pt-BR": "Ataque Grob",
-    "es": "Ataque Grob"
+    "es-419": "Ataque Grob",
+    "en-GB": "Grob's Attack",
+    "es-ES": "Ataque Grob",
+    "pt-PT": "Ataque Grob",
+    "de": "Grobs Angriff",
+    "fr": "Début Grob",
+    "it": "Attacco Grob"
   },
   "order": null,
   "variants": [
     {
       "names": {
-        "en": "Grob Gambit",
+        "en-US": "Grob Gambit",
         "pt-BR": "Gambito Grob",
-        "es": "Gambito Grob"
+        "es-419": "Gambito Grob",
+        "en-GB": "Grob Gambit",
+        "es-ES": "Gambito Grob",
+        "pt-PT": "Gambito Grob",
+        "de": "Grob-Gambit",
+        "fr": "Gambit Grob",
+        "it": "Gambetto Grob"
       },
       "lines": [
         {
           "id": "line-841bd623adade83e",
           "names": {
-            "en": "Grob Gambit",
+            "en-US": "Grob Gambit",
             "pt-BR": "Gambito Grob",
-            "es": "Gambito Grob"
+            "es-419": "Gambito Grob",
+            "en-GB": "Grob Gambit",
+            "es-ES": "Gambito Grob",
+            "pt-PT": "Gambito Grob",
+            "de": "Grob-Gambit",
+            "fr": "Gambit Grob",
+            "it": "Gambetto Grob"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit",
@@ -29,9 +47,15 @@
         {
           "id": "line-7eabc619949cc7ff",
           "names": {
-            "en": "Grob Gambit, Fritz Gambit",
+            "en-US": "Grob Gambit, Fritz Gambit",
             "pt-BR": "Gambito Grob, Gambito Fritz",
-            "es": "Gambito Grob, Gambito Fritz"
+            "es-419": "Gambito Grob, Gambito Fritz",
+            "en-GB": "Grob Gambit, Fritz Gambit",
+            "es-ES": "Gambito Grob, Gambito Fritz",
+            "pt-PT": "Gambito Grob, Gambito Fritz",
+            "de": "Grob-Gambit, Fritz-Gambit",
+            "fr": "Gambit Grob, Gambit Fritz",
+            "it": "Gambetto Grob, Gambetto Fritz"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Fritz Gambit",
@@ -41,9 +65,15 @@
         {
           "id": "line-8955ec9e73eae72d",
           "names": {
-            "en": "Grob Gambit, Fritz Gambit, Romford Countergambit",
+            "en-US": "Grob Gambit, Fritz Gambit, Romford Countergambit",
             "pt-BR": "Gambito Grob, Gambito Fritz, Contragambito Romford",
-            "es": "Gambito Grob, Gambito Fritz, Contragambito Romford"
+            "es-419": "Gambito Grob, Gambito Fritz, Contragambito Romford",
+            "en-GB": "Grob Gambit, Fritz Gambit, Romford Countergambit",
+            "es-ES": "Gambito Grob, Gambito Fritz, Contragambito Romford",
+            "pt-PT": "Gambito Grob, Gambito Fritz, Contragambito Romford",
+            "de": "Grob-Gambit, Fritz-Gambit, Romford-Gegengambit",
+            "fr": "Gambit Grob, Gambit Fritz, Contre-gambit Romford",
+            "it": "Gambetto Grob, Gambetto Fritz, Controgambetto Romford"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Fritz Gambit, Romford Countergambit",
@@ -53,9 +83,15 @@
         {
           "id": "line-55820be63a814fa9",
           "names": {
-            "en": "Grob Gambit, Richter-Grob Gambit",
+            "en-US": "Grob Gambit, Richter-Grob Gambit",
             "pt-BR": "Gambito Grob, Gambito Richter-Grob",
-            "es": "Gambito Grob, Gambito Richter-Grob"
+            "es-419": "Gambito Grob, Gambito Richter-Grob",
+            "en-GB": "Grob Gambit, Richter-Grob Gambit",
+            "es-ES": "Gambito Grob, Gambito Richter-Grob",
+            "pt-PT": "Gambito Grob, Gambito Richter-Grob",
+            "de": "Grob-Gambit, Richter-Grob-Gambit",
+            "fr": "Gambit Grob, Gambit Richter-Grob",
+            "it": "Gambetto Grob, Gambetto Richter-Grob"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Richter-Grob Gambit",
@@ -65,9 +101,15 @@
         {
           "id": "line-98fc7b7656a3dc54",
           "names": {
-            "en": "Grob Gambit, Keres Gambit",
+            "en-US": "Grob Gambit, Keres Gambit",
             "pt-BR": "Gambito Grob, Gambito Keres",
-            "es": "Gambito Grob, Gambito Keres"
+            "es-419": "Gambito Grob, Gambito Keres",
+            "en-GB": "Grob Gambit, Keres Gambit",
+            "es-ES": "Gambito Grob, Gambito Keres",
+            "pt-PT": "Gambito Grob, Gambito Keres",
+            "de": "Grob-Gambit, Keres-Gambit",
+            "fr": "Gambit Grob, Gambit Keres",
+            "it": "Gambetto Grob, Gambetto Keres"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Keres Gambit",
@@ -77,9 +119,15 @@
         {
           "id": "line-ce37b88e28dff550",
           "names": {
-            "en": "Grob Gambit, Basman Gambit",
+            "en-US": "Grob Gambit, Basman Gambit",
             "pt-BR": "Gambito Grob, Gambito Basman",
-            "es": "Gambito Grob, Gambito Basman"
+            "es-419": "Gambito Grob, Gambito Basman",
+            "en-GB": "Grob Gambit, Basman Gambit",
+            "es-ES": "Gambito Grob, Gambito Basman",
+            "pt-PT": "Gambito Grob, Gambito Basman",
+            "de": "Grob-Gambit, Basman-Gambit",
+            "fr": "Gambit Grob, Gambit Basman",
+            "it": "Gambetto Grob, Gambetto Basman"
           },
           "eco": "A00",
           "opening": "Grob Opening: Grob Gambit, Basman Gambit",
@@ -90,17 +138,29 @@
     },
     {
       "names": {
-        "en": "Zilbermints Gambit",
+        "en-US": "Zilbermints Gambit",
         "pt-BR": "Gambito Zilbermints",
-        "es": "Gambito Zilbermints"
+        "es-419": "Gambito Zilbermints",
+        "en-GB": "Zilbermints Gambit",
+        "es-ES": "Gambito Zilbermints",
+        "pt-PT": "Gambito Zilbermints",
+        "de": "Zilbermints-Gambit",
+        "fr": "Gambit Zilbermints",
+        "it": "Gambetto Zilbermints"
       },
       "lines": [
         {
           "id": "line-b73529759aa00b78",
           "names": {
-            "en": "Zilbermints Gambit",
+            "en-US": "Zilbermints Gambit",
             "pt-BR": "Gambito Zilbermints",
-            "es": "Gambito Zilbermints"
+            "es-419": "Gambito Zilbermints",
+            "en-GB": "Zilbermints Gambit",
+            "es-ES": "Gambito Zilbermints",
+            "pt-PT": "Gambito Zilbermints",
+            "de": "Zilbermints-Gambit",
+            "fr": "Gambit Zilbermints",
+            "it": "Gambetto Zilbermints"
           },
           "eco": "A00",
           "opening": "Grob Opening: Zilbermints Gambit",
@@ -110,9 +170,15 @@
         {
           "id": "line-e53962c8c5444a0b",
           "names": {
-            "en": "Zilbermints Gambit, Zilbermints-Hartlaub Gambit",
+            "en-US": "Zilbermints Gambit, Zilbermints-Hartlaub Gambit",
             "pt-BR": "Gambito Zilbermints, Gambito Zilbermints-Hartlaub",
-            "es": "Gambito Zilbermints, Gambito Zilbermints-Hartlaub"
+            "es-419": "Gambito Zilbermints, Gambito Zilbermints-Hartlaub",
+            "en-GB": "Zilbermints Gambit, Zilbermints-Hartlaub Gambit",
+            "es-ES": "Gambito Zilbermints, Gambito Zilbermints-Hartlaub",
+            "pt-PT": "Gambito Zilbermints, Gambito Zilbermints-Hartlaub",
+            "de": "Zilbermints-Gambit, Zilbermints-Hartlaub-Gambit",
+            "fr": "Gambit Zilbermints, Gambit Zilbermints-Hartlaub",
+            "it": "Gambetto Zilbermints, Gambetto Zilbermints-Hartlaub"
           },
           "eco": "A00",
           "opening": "Grob Opening: Zilbermints Gambit, Zilbermints-Hartlaub Gambit",
@@ -122,9 +188,15 @@
         {
           "id": "line-5a6fce580bce8c45",
           "names": {
-            "en": "Zilbermints Gambit, Schiller Defense",
+            "en-US": "Zilbermints Gambit, Schiller Defense",
             "pt-BR": "Gambito Zilbermints, Defesa Schiller",
-            "es": "Gambito Zilbermints, Defensa Schiller"
+            "es-419": "Gambito Zilbermints, Defensa Schiller",
+            "en-GB": "Zilbermints Gambit, Schiller Defence",
+            "es-ES": "Gambito Zilbermints, Defensa Schiller",
+            "pt-PT": "Gambito Zilbermints, Defesa Schiller",
+            "de": "Zilbermints-Gambit, Schiller-Verteidigung",
+            "fr": "Gambit Zilbermints, Défense Schiller",
+            "it": "Gambetto Zilbermints, Difesa Schiller"
           },
           "eco": "A00",
           "opening": "Grob Opening: Zilbermints Gambit, Schiller Defense",
@@ -135,17 +207,29 @@
     },
     {
       "names": {
-        "en": "Double Grob",
+        "en-US": "Double Grob",
         "pt-BR": "Grob Duplo",
-        "es": "Doble Grob"
+        "es-419": "Doble Grob",
+        "en-GB": "Double Grob",
+        "es-ES": "Doble Grob",
+        "pt-PT": "Grob Duplo",
+        "de": "Doppel-Grob",
+        "fr": "Double Grob",
+        "it": "Doppio Grob"
       },
       "lines": [
         {
           "id": "line-6f9b826650dfe708",
           "names": {
-            "en": "Double Grob",
+            "en-US": "Double Grob",
             "pt-BR": "Grob Duplo",
-            "es": "Doble Grob"
+            "es-419": "Doble Grob",
+            "en-GB": "Double Grob",
+            "es-ES": "Doble Grob",
+            "pt-PT": "Grob Duplo",
+            "de": "Doppel-Grob",
+            "fr": "Double Grob",
+            "it": "Doppio Grob"
           },
           "eco": "A00",
           "opening": "Grob Opening: Double Grob",
@@ -155,9 +239,15 @@
         {
           "id": "line-b0616ad7cb928890",
           "names": {
-            "en": "Double Grob, Coca-Cola Gambit",
+            "en-US": "Double Grob, Coca-Cola Gambit",
             "pt-BR": "Grob Duplo, Gambito Coca-Cola",
-            "es": "Doble Grob, Gambito Coca-Cola"
+            "es-419": "Doble Grob, Gambito Coca-Cola",
+            "en-GB": "Double Grob, Coca-Cola Gambit",
+            "es-ES": "Doble Grob, Gambito Coca-Cola",
+            "pt-PT": "Grob Duplo, Gambito Coca-Cola",
+            "de": "Doppel-Grob, Coca-Cola-Gambit",
+            "fr": "Double Grob, Gambit Coca-Cola",
+            "it": "Doppio Grob, Gambetto Coca-Cola"
           },
           "eco": "A00",
           "opening": "Grob Opening: Double Grob, Coca-Cola Gambit",
@@ -168,17 +258,29 @@
     },
     {
       "names": {
-        "en": "Keene Defense",
+        "en-US": "Keene Defense",
         "pt-BR": "Defesa Keene",
-        "es": "Defensa Keene"
+        "es-419": "Defensa Keene",
+        "en-GB": "Keene Defence",
+        "es-ES": "Defensa Keene",
+        "pt-PT": "Defesa Keene",
+        "de": "Keene-Verteidigung",
+        "fr": "Défense Keene",
+        "it": "Difesa Keene"
       },
       "lines": [
         {
           "id": "line-f922fbcb87007529",
           "names": {
-            "en": "Keene Defense",
+            "en-US": "Keene Defense",
             "pt-BR": "Defesa Keene",
-            "es": "Defensa Keene"
+            "es-419": "Defensa Keene",
+            "en-GB": "Keene Defence",
+            "es-ES": "Defensa Keene",
+            "pt-PT": "Defesa Keene",
+            "de": "Keene-Verteidigung",
+            "fr": "Défense Keene",
+            "it": "Difesa Keene"
           },
           "eco": "A00",
           "opening": "Grob Opening: Keene Defense",
@@ -188,9 +290,15 @@
         {
           "id": "line-683e7fd60fcff76c",
           "names": {
-            "en": "Keene Defense, Main Line",
+            "en-US": "Keene Defense, Main Line",
             "pt-BR": "Defesa Keene, Linha Principal",
-            "es": "Defensa Keene, Línea Principal"
+            "es-419": "Defensa Keene, Línea Principal",
+            "en-GB": "Keene Defence, Main Line",
+            "es-ES": "Defensa Keene, Línea Principal",
+            "pt-PT": "Defesa Keene, Linha Principal",
+            "de": "Keene-Verteidigung, Hauptvariante",
+            "fr": "Défense Keene, Ligne principale",
+            "it": "Difesa Keene, Linea principale"
           },
           "eco": "A00",
           "opening": "Grob Opening: Keene Defense, Main Line",
@@ -204,9 +312,15 @@
     {
       "id": "line-4bd54035c147dcc0",
       "names": {
-        "en": "Alessi Gambit",
+        "en-US": "Alessi Gambit",
         "pt-BR": "Gambito Alessi",
-        "es": "Gambito Alessi"
+        "es-419": "Gambito Alessi",
+        "en-GB": "Alessi Gambit",
+        "es-ES": "Gambito Alessi",
+        "pt-PT": "Gambito Alessi",
+        "de": "Alessi-Gambit",
+        "fr": "Gambit Alessi",
+        "it": "Gambetto Alessi"
       },
       "eco": "A00",
       "opening": "Grob Opening: Alessi Gambit",
@@ -216,9 +330,15 @@
     {
       "id": "line-ac37705eed54568c",
       "names": {
-        "en": "Grob Gambit Declined",
+        "en-US": "Grob Gambit Declined",
         "pt-BR": "Gambito Grob Recusado",
-        "es": "Gambito Grob Rehusado"
+        "es-419": "Gambito Grob Rehusado",
+        "en-GB": "Grob Gambit Declined",
+        "es-ES": "Gambito Grob Rehusado",
+        "pt-PT": "Gambito Grob Recusado",
+        "de": "Abgelehntes Grob-Gambit",
+        "fr": "Gambit Grob refusé",
+        "it": "Gambetto Grob rifiutato"
       },
       "eco": "A00",
       "opening": "Grob Opening: Grob Gambit Declined",
@@ -228,9 +348,15 @@
     {
       "id": "line-c449d5d685b9c820",
       "names": {
-        "en": "London Defense",
+        "en-US": "London Defense",
         "pt-BR": "Defesa London",
-        "es": "Defensa Londres"
+        "es-419": "Defensa Londres",
+        "en-GB": "London Defence",
+        "es-ES": "Defensa Londres",
+        "pt-PT": "Defesa Londres",
+        "de": "Londoner Verteidigung",
+        "fr": "Défense de Londres",
+        "it": "Difesa di Londra"
       },
       "eco": "A00",
       "opening": "Grob Opening: London Defense",
@@ -240,9 +366,15 @@
     {
       "id": "line-c24fd994b9eca95c",
       "names": {
-        "en": "Grob Opening",
+        "en-US": "Grob Opening",
         "pt-BR": "Ataque Grob",
-        "es": "Ataque Grob"
+        "es-419": "Ataque Grob",
+        "en-GB": "Grob Opening",
+        "es-ES": "Apertura Grob",
+        "pt-PT": "Abertura Grob",
+        "de": "Grob-Eröffnung",
+        "fr": "Ouverture Grob",
+        "it": "Apertura Grob"
       },
       "eco": "A00",
       "opening": "Grob Opening",
@@ -252,9 +384,15 @@
     {
       "id": "line-0d717a20d8dd5ec3",
       "names": {
-        "en": "Romford Countergambit",
+        "en-US": "Romford Countergambit",
         "pt-BR": "Contragambito Romford",
-        "es": "Contragambito Romford"
+        "es-419": "Contragambito Romford",
+        "en-GB": "Romford Countergambit",
+        "es-ES": "Contragambito Romford",
+        "pt-PT": "Contragambito Romford",
+        "de": "Romford-Gegengambit",
+        "fr": "Contre-gambit Romford",
+        "it": "Controgambetto Romford"
       },
       "eco": "A00",
       "opening": "Grob Opening: Romford Countergambit",
@@ -264,9 +402,15 @@
     {
       "id": "line-e67be590899a7b47",
       "names": {
-        "en": "Spike, Hurst Attack",
+        "en-US": "Spike, Hurst Attack",
         "pt-BR": "Espigão, Ataque Hurst",
-        "es": "Púa, Ataque Hurst"
+        "es-419": "Púa, Ataque Hurst",
+        "en-GB": "Spike, Hurst Attack",
+        "es-ES": "Púa, Ataque Hurst",
+        "pt-PT": "Espigão, Ataque Hurst",
+        "de": "Stachel, Hurst-Angriff",
+        "fr": "Pointe, Attaque Hurst",
+        "it": "Punta, Attacco Hurst"
       },
       "eco": "A00",
       "opening": "Grob Opening: Spike, Hurst Attack",
@@ -276,9 +420,15 @@
     {
       "id": "line-004832ebcc489a7c",
       "names": {
-        "en": "Spike Attack",
+        "en-US": "Spike Attack",
         "pt-BR": "Ataque Espigão",
-        "es": "Ataque Púa"
+        "es-419": "Ataque Púa",
+        "en-GB": "Spike Attack",
+        "es-ES": "Ataque Púa",
+        "pt-PT": "Ataque Espigão",
+        "de": "Stachelangriff",
+        "fr": "Attaque de la pointe",
+        "it": "Attacco della punta"
       },
       "eco": "A00",
       "opening": "Grob Opening: Spike Attack",

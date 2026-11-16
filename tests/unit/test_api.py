@@ -120,17 +120,17 @@ def test_repertoires_are_all_catalog_families(client):
     repertoires = client.get("/api/repertoires").json()["repertoires"]
     assert len(repertoires) == 122
     assert sum(len(r["variants"]) for r in repertoires) == 3865
-    caro = next(r for r in repertoires if r["names"]["en"] == "Caro-Kann Defense")
+    caro = next(r for r in repertoires if r["names"]["en-US"] == "Caro-Kann Defense")
     assert len(caro["variants"]) == 110
     assert (caro["group"], caro["order"]) == ("kings-pawn", 3)
-    assert repertoires[0]["names"]["en"] == "Sicilian Defense"
+    assert repertoires[0]["names"]["en-US"] == "Sicilian Defense"
     groups = [repertoire["group"] for repertoire in repertoires]
     assert groups == sorted(groups, key=["kings-pawn", "queens-pawn", "flank", "others"].index)
     line = next(v for v in caro["variants"] if v["pgn"] == SHORT_PGN)
-    assert line["subgroup"]["en"] == "Advance Variation"
+    assert line["subgroup"]["en-US"] == "Advance Variation"
     assert line["eco"] == "B12"
     assert line["opening"] == "Caro-Kann Defense: Advance Variation, Short Variation"
-    assert line["names"]["en"] == "Advance Variation, Short Variation"
+    assert line["names"]["en-US"] == "Advance Variation, Short Variation"
 
 
 def test_levels(client):
@@ -521,7 +521,7 @@ def test_exported_lines_keep_the_english_opening_name(client, ids):
         for variant in repertoire["variants"]
         if variant["variant_id"] == ids[SHORT_PGN]
     )
-    assert line["names"]["pt-BR"] != line["names"]["en"]
+    assert line["names"]["pt-BR"] != line["names"]["en-US"]
     text = client.post("/api/lines/export", json={"variant_ids": [ids[SHORT_PGN]]}).text
     assert f'[Opening "{line["opening"]}"]' in text
     assert line["names"]["pt-BR"] not in text

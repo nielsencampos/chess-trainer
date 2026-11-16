@@ -8,6 +8,7 @@ from pathlib import Path
 import chess
 
 from app.book.models import BookError, BookMoveRow
+from app.locales import DEFAULT_LOCALE
 
 GROUPS = ("kings-pawn", "queens-pawn", "flank", "others")
 
@@ -86,8 +87,8 @@ def _names(value: object, where: str) -> dict[str, str]:
     Raises:
         BookError: It is not an object with a non-empty `en`.
     """
-    if not isinstance(value, dict) or not value.get("en"):
-        raise BookError(f"{where}: names must include a non-empty 'en'")
+    if not isinstance(value, dict) or not value.get(DEFAULT_LOCALE):
+        raise BookError(f"{where}: names must include a non-empty {DEFAULT_LOCALE!r}")
     return value
 
 
