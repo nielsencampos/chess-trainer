@@ -187,6 +187,68 @@ def test_a_take_back_during_the_bot_search_drops_its_move(tmp_path):
     assert session.is_user_turn
 
 
+def test_a_take_back_and_another_move_during_the_bot_search_drop_its_move(tmp_path):
+    """A take-back and a new move during the search bring the ply back: the old search is dropped.
+
+    Args:
+        tmp_path (Path): A folder for the database.
+    """
+    games = service(SlowEngine(), tmp_path, line("short", "e4"))
+    session = start(games, ["short"])
+
+    async def move_take_back_and_move():
+        first = asyncio.create_task(games.user_move(session.game_id, "d2d4", None, None, None))
+        await asyncio.sleep(0.01)  # the bot searches the position after 1.d4
+        games.take_back(session.game_id, 1, None, None)
+        second = asyncio.create_task(games.user_move(session.game_id, "e2e4", None, None, None))
+        return (await first)[3], (await second)[3]
+
+    first, second = asyncio.run(move_take_back_and_move())
+    assert first is None
+    assert second is not None
+    assert [record.san for record in session.moves] == ["e4", second.record.san]
+
+
+class SlowEvaluation(FakeEngine):
+    """The fake engine, with an evaluation that takes a moment, as a bot deviation's search does."""
+
+    async def evaluate(self, board, time_s, root_moves=None):
+        """Waits, then evaluates as the fake engine.
+
+        Args:
+            board (chess.Board): The position.
+            time_s (float): Ignored.
+            root_moves (Sequence[chess.Move] | None): The moves to choose from, if given.
+
+        Returns:
+            The fake engine's evaluation.
+        """
+        await asyncio.sleep(0.05)
+        return await super().evaluate(board, time_s, root_moves)
+
+
+def test_a_take_back_during_a_bot_deviation_search_drops_its_move(tmp_path):
+    """A take-back while the bot looks for a deviation undoes the move, and the search is dropped.
+
+    Args:
+        tmp_path (Path): A folder for the database.
+    """
+    games = service(SlowEvaluation(), tmp_path, line("main", MAIN))
+    session = start(games, ["main"])
+    assert play(games, session, "e4").record.san == "e5"  # move 1: no roll
+
+    async def move_and_take_back():
+        task = asyncio.create_task(games.user_move(session.game_id, "g1f3", None, None, None))
+        await asyncio.sleep(0.01)  # move 2: the die hits, the bot evaluates its options
+        games.take_back(session.game_id, 3, None, None)
+        return await task
+
+    _, _, _, reply = asyncio.run(move_and_take_back())
+    assert reply is None
+    assert [record.san for record in session.moves] == ["e4", "e5"]
+    assert session.bot_deviation is None
+
+
 def test_the_bot_rolls_only_from_its_move_and_never_before(engine, tmp_path):
     """Before the chosen move the bot follows its line; from it, a hit makes it deviate.
 
