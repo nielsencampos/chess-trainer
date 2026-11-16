@@ -352,6 +352,8 @@ export class SetupCard {
    */
   async chooseSaved(gameId, ply) {
     await this.setMode("saved");
+    // The game may have been deleted while its review was open: then nothing is picked.
+    if (!this.savedGames.some((game) => game.game_id === gameId)) return;
     this.savedGameId = gameId;
     this.renderSavedGames();
     if (ply > 0) byId("from-saved-ply").value = String(ply);

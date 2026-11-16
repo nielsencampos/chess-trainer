@@ -248,8 +248,9 @@ export class Review {
     byId("review-prev").disabled = node === null;
     byId("review-next").disabled = node ? node.next === null : last === null;
     byId("review-last").disabled = node === last;
-    // A game can only be continued from its own moves, not from a variation.
-    byId("review-play").disabled = node !== null && !node.main;
+    // A game can only be continued from its own moves, not from a variation, and not from before
+    // its first move: ply 0 means "the end of the game" to New Game and to the server.
+    byId("review-play").disabled = node === null || !node.main;
   }
 
   /**

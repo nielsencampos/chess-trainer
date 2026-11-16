@@ -207,3 +207,87 @@ def test_the_new_game_modes_stay_on_one_line_in_german(context):
     spans = page.locator("#setup-card .segmented.fit span")
     heights = {round(box["height"]) for box in (spans.nth(i).bounding_box() for i in range(3))}
     assert len(heights) == 1, heights
+
+
+def import_and_view(page: Page, prefix: str) -> str:
+    """Imports a game with clocks under a new name and opens its review.
+
+    Args:
+        page (Page): The page.
+        prefix (str): The start of the White player's name.
+
+    Returns:
+        str: The White player's name.
+    """
+    name = f"{prefix}{uuid.uuid4().hex}"
+    import_pgn(page, ANNOTATED.format(name=name))
+    page.locator("#tab-saved").click()
+    page.locator("#saved-search").fill(name)
+    page.locator(".saved-game", has_text=name).locator(".view-button").click()
+    expect(page.locator("#bottom-name")).to_have_text(name)
+    return name
+
+
+def test_play_from_here_is_off_before_the_first_move(page: Page):
+    """At the start of a review there is no move to play from (ply 0 would mean the game's end).
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
+    page.goto("/")
+    import_and_view(page, "Start")
+    page.keyboard.press("Home")
+    expect(page.locator("#review-play")).to_be_disabled()
+    page.keyboard.press("ArrowRight")
+    expect(page.locator("#review-play")).to_be_enabled()
+
+
+def test_a_slow_review_answer_does_not_replace_a_newer_one(page: Page):
+    """Opening game A, then game B before A's answer arrives, keeps B on the board.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
+    page.goto("/")
+    first = import_and_view(page, "First")
+    page.keyboard.press("Escape")
+    held = []
+
+    def hold(route):
+        """Keeps the first review request waiting until the test releases it; lets others go.
+
+        Args:
+            route (Route): The request.
+        """
+        if held:
+            route.continue_()
+        else:
+            held.append(route)
+
+    page.route("**/api/games/*/review", hold)  # A's answer waits until released
+    with page.expect_request("**/api/games/*/review"):
+        page.locator(".saved-game", has_text=first).locator(".view-button").click()
+    second = import_and_view(page, "Second")
+    assert len(held) == 1
+    with page.expect_response("**/api/games/*/review"):
+        held[0].continue_()
+    page.evaluate("() => new Promise((resolve) => setTimeout(resolve, 100))")  # A's answer is read
+    expect(page.locator("#bottom-name")).to_have_text(second)
+
+
+def test_play_from_here_after_deleting_the_reviewed_game_picks_nothing(page: Page):
+    """A game deleted while its review is open is not picked in New Game, and nothing fails.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+    """
+    page.goto("/")
+    name = import_and_view(page, "Deleted")
+    page.keyboard.press("End")
+    page.locator(".saved-game", has_text=name).locator("input[type=checkbox]").check()
+    page.locator("#saved-delete").click()
+    page.locator("#saved-delete").click()
+    expect(page.locator(".saved-game", has_text=name)).to_have_count(0)
+    page.locator("#review-play").click()
+    expect(page.locator("#from-saved-list input:checked")).to_have_count(0)
+    expect(page.locator("#play")).to_be_disabled()
