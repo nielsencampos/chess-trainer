@@ -260,6 +260,7 @@
   "help.eval.title": "Vurderingen her er enkel",
   "help.eval.text": "Vurderingsstolpen kommer fra en rask sjekk med Stockfish og er bare et hint. Trekk-ikonene (beste trekk, feil, bukk…) er klassifiseringen fra nettstedet partiet kommer fra, lest fra PGN-en: appen beregner ingen av dem. For en ekte analyse eksporterer du PGN og analyserer den på Chess.com, Lichess eller et annet analyseverktøy.",
   "desktop.launchError": "Chess Trainer kunne ikke starte. Et annet program bruker kanskje port {port}, eller databasen kunne ikke åpnes. Detaljene står i loggen: {log}",
+  "desktop.starting": "Chess Trainer starter… Første gang forberedes åpningsboken, og det kan ta opptil ett minutt.",
   "help.start.title": "Start et parti",
   "help.start.opening": "Åpning: velg farge og kryss av åpningene og variantene du vil øve på. Hver avkrysset variant har like stor sjanse til å bli trukket. Et trekk fra en variant du ikke krysset av, regnes som å forlate teorien.",
   "help.start.saved": "Lagret parti: tren varianten fra et parti du har spilt eller importert, så trekkene kontrolleres, eller spill videre fra hvilken som helst stilling i det.",

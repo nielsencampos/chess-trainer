@@ -260,6 +260,7 @@
   "help.eval.title": "De evaluatie hier is eenvoudig",
   "help.eval.text": "De evaluatiebalk komt uit een snelle controle door Stockfish en is alleen een hint. De zetpictogrammen (beste zet, fout, blunder…) zijn de indeling van de site waar de partij vandaan komt, gelezen uit de PGN: de app berekent er geen. Voor een echte analyse exporteer je de PGN en analyseer je die op Chess.com, Lichess of met een ander analyseprogramma.",
   "desktop.launchError": "Chess Trainer kon niet starten. Misschien gebruikt een ander programma poort {port}, of kon de database niet worden geopend. De details staan in het logbestand: {log}",
+  "desktop.starting": "Chess Trainer wordt gestart… Bij de eerste start wordt het openingsboek voorbereid; dat kan tot een minuut duren.",
   "help.start.title": "Een partij beginnen",
   "help.start.opening": "Opening: kies je kleur en vink de openingen en varianten aan die je wilt trainen. Elke aangevinkte variant heeft evenveel kans om geloot te worden. Een zet spelen uit een variant die je niet hebt aangevinkt, telt als het verlaten van de theorie.",
   "help.start.saved": "Opgeslagen partij: train de lijn van een partij die je hebt gespeeld of geïmporteerd, zodat je zetten worden gecontroleerd, of speel verder vanuit elke stelling ervan.",

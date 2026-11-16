@@ -261,6 +261,7 @@
   "help.eval.title": "La evaluación aquí es básica",
   "help.eval.text": "La barra de evaluación sale de una revisión rápida de Stockfish y es solo una pista. Los iconos de las jugadas (mejor jugada, error, error garrafal…) son la clasificación del sitio de donde vino la partida, leída de su PGN: la app no calcula ninguno. Para un análisis de verdad, exporta el PGN y analízalo en Chess.com, Lichess u otra herramienta de análisis.",
   "desktop.launchError": "Chess Trainer no pudo iniciar. Otro programa puede estar usando el puerto {port}, o no se pudo abrir la base de datos. Los detalles están en el registro: {log}",
+  "desktop.starting": "Iniciando Chess Trainer… La primera vez prepara el libro de aperturas y puede tardar hasta un minuto.",
   "help.start.title": "Empezar una partida",
   "help.start.opening": "Apertura: elige tu color y marca las aperturas y variantes que quieres practicar. Cada variante marcada tiene la misma probabilidad de salir. Jugar una jugada de una variante que no marcaste cuenta como salir de la teoría.",
   "help.start.saved": "Partida guardada: entrena la línea de una partida que jugaste o importaste, con tus jugadas comprobadas, o sigue jugando desde cualquiera de sus posiciones.",

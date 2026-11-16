@@ -260,6 +260,7 @@
   "help.eval.title": "The evaluation here is basic",
   "help.eval.text": "The evaluation bar comes from a quick Stockfish check and is only a hint. The move icons (best move, mistake, blunder…) are the classification of the site the game came from, read from its PGN: the app computes none. For a real analysis, export the PGN and analyze it on Chess.com, Lichess or another analysis tool.",
   "desktop.launchError": "Chess Trainer could not start. Another program may be using port {port}, or the database could not be opened. The details are in the log: {log}",
+  "desktop.starting": "Starting Chess Trainer… The first start prepares the opening book and can take up to a minute.",
   "help.start.title": "Start a game",
   "help.start.opening": "Opening: pick your color and tick the openings and variations to drill. Each ticked variation has the same chance of being drawn. Playing a move from a variation you did not tick counts as leaving theory.",
   "help.start.saved": "Saved game: train the line of a game you played or imported, so its moves are checked, or play on from any of its positions.",
