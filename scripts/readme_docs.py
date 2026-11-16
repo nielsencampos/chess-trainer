@@ -15,6 +15,7 @@ or a string; a test fails while the files are out of date.
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -63,9 +64,15 @@ def anchor(heading: str) -> str:
         heading (str): The heading's text.
 
     Returns:
-        str: Lowercase, without punctuation, with hyphens for spaces.
+        str: Lowercase, with hyphens for spaces, keeping only letters (with their combining
+            marks, as in Devanagari), digits, `_` and `-`.
     """
-    return re.sub(r"[^\w\- ]", "", heading.strip().lower()).replace(" ", "-")
+    kept = (
+        char
+        for char in heading.strip().lower()
+        if char in " -" or unicodedata.category(char)[0] in "LMN" or char == "_"
+    )
+    return "".join(kept).replace(" ", "-")
 
 
 def _fill(text: str, locale: str, texts: dict[str, str]) -> str:

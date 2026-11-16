@@ -2,6 +2,7 @@
 
 import json
 import re
+import unicodedata
 
 import pytest
 
@@ -80,3 +81,57 @@ def test_relative_links_work(doc: str, locale: str):
         if anchor and linked.suffix == ".md":
             headings = re.findall(r"^#+ (.*)$", linked.read_text(encoding="utf-8"), re.MULTILINE)
             assert anchor in {readme_docs.anchor(h) for h in headings}, f"{path.name}: {target}"
+
+
+def _flanks(text: str, start: int, end: int) -> tuple[bool, bool]:
+    """Whether a run of `*` can open and close emphasis, by CommonMark's flanking rules.
+
+    Args:
+        text (str): The text.
+        start (int): Where the run starts.
+        end (int): Where it ends.
+
+    Returns:
+        tuple[bool, bool]: Left-flanking (it can open) and right-flanking (it can close).
+    """
+    before = text[start - 1] if start else " "
+    after = text[end] if end < len(text) else " "
+
+    def punct(char: str) -> bool:
+        """Whether a character is punctuation or a symbol.
+
+        Args:
+            char (str): The character.
+
+        Returns:
+            bool: True for Unicode categories P and S.
+        """
+        return unicodedata.category(char)[0] in "PS"
+
+    left = not after.isspace() and (not punct(after) or before.isspace() or punct(before))
+    right = not before.isspace() and (not punct(before) or after.isspace() or punct(after))
+    return left, right
+
+
+@pytest.mark.parametrize("path", sorted(readme_docs.SOURCE.glob("*.json")), ids=lambda p: p.stem)
+def test_bold_and_italics_open_and_close(path):
+    """Every `**` and `*` of a string opens or closes as meant, CJK punctuation included.
+
+    A closing `**` after punctuation, such as a full-width colon, and before a letter stays as
+    text on GitHub.
+
+    Args:
+        path (Path): An `i18n/docs/{locale}.json` file.
+    """
+    for key, text in json.loads(path.read_text(encoding="utf-8")).items():
+        prose = re.sub(r"`[^`]*`", "`x`", text)
+        runs = list(re.finditer(r"\*+", prose))
+        for marker in ("**", "*"):
+            mine = [run for run in runs if run.group() == marker]
+            assert all(len(run.group()) <= 2 for run in runs), (key, prose)
+            for n, run in enumerate(mine):
+                left, right = _flanks(prose, run.start(), run.end())
+                assert right if n % 2 else left, (
+                    key,
+                    prose[max(0, run.start() - 15) : run.end() + 15],
+                )
