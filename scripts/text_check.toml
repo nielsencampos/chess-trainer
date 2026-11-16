@@ -24,7 +24,7 @@ all = [
     "Niklas", "Fiekas", "Hernandez", "Marroquin", "Badrap",
     # The language links at the top of each document.
     "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch", "Français", "Italiano",
-    "Türkçe", "Polski", "Nederlands", "Bahasa", "Indonesia", "Tiếng", "Việt", "Svenska", "Dansk", "Norsk", "bokmål", "Suomi",
+    "Türkçe", "Polski", "Nederlands", "Bahasa", "Indonesia", "Tiếng", "Việt", "Svenska", "Dansk", "Norsk", "bokmål", "Suomi", "Русский", "Українська",
 ]
 en-US = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
@@ -130,6 +130,18 @@ es-ES = [
     "result",  # the name @badrap/result
 ]
 
+ru = [
+    "премув", "премувы", "Премув",  # premove, the word of the Russian Wikipedia's chess glossary
+    "полуход", "полухода", "полуходов",  # ply, a chess term
+    "Кампос", "бэкенда", "шахматист-любитель", "шахматистов-любителей",  # the author's own words
+    "Крикором",  # Krikor, the name
+]
+uk = [
+    "премув", "премуви", "Премув",  # premove
+    "півхід", "півходи", "півходів", "півходу",  # ply, a chess term
+    "Крикором",  # Krikor, the name
+]
+
 [disabled]
 # LanguageTool rule ids that do not fit this project, for every language or one of them.
 all = []
@@ -183,6 +195,11 @@ pl = [
 nl = []
 sv = []
 da = []
+ru = [
+    "DoubleNOT",  # the Help title and the text after it are separate strings
+    "OPREDELENIA",  # a style suggestion, not an error
+]
+uk = []
 
 [ignore]
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.
@@ -285,4 +302,18 @@ sv = [
 ]
 da = [
     { text = "forventet", rule = "UPPERCASE_SENTENCE_START" },  # "expected {expected}", a fragment
+]
+ru = [
+    { text = "ожидался", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
+]
+uk = [
+    { text = "очікувався", rule = "UPPERCASE_SENTENCE_START" },
+    { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
+    { text = "Кf3", rule = "UK_MIXED_ALPHABETS" },  # the knight move in Ukrainian letters
+    # The piece letters of the move notation (notation.pieces).
+    { text = "Кр", rule = "MORFOLOGIK_RULE_UK_UA" },
+    { text = "Ф", rule = "MORFOLOGIK_RULE_UK_UA" },
+    { text = "К", rule = "MORFOLOGIK_RULE_UK_UA" },
+    { text = "П", rule = "MORFOLOGIK_RULE_UK_UA" },
 ]
