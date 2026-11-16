@@ -82,6 +82,7 @@
   "import.remote.nothing": "这段时间没有对局。",
   "import.remote.busy": "正在获取对局…",
   "import.remote.truncated": "只获取了这段时间最新的 {max} 局对局。",
+  "import.truncated": "只读取了文本中的前 {max} 盘对局。",
   "import.remote.error.bad_username": "这不是有效的用户名。",
   "import.remote.error.user_not_found": "这个网站上没有这个名字的棋手。",
   "import.remote.error.rate_limited": "网站要求放慢速度。请一分钟后再试。",

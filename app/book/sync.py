@@ -114,6 +114,14 @@ def sync_openings(connection: duckdb.DuckDBPyConnection, directory: Path) -> lis
             )
         for family_id in removed:
             connection.execute("DELETE FROM repertoires WHERE repertoire_id = ?", [family_id])
+        # The names of what is written again are replaced as a whole, so a name taken out of a
+        # file falls back to en-US. A line taken out keeps its names: saved games show them.
+        for kind in ("repertoire", "variant"):
+            ids = sorted({entity_id for row_kind, entity_id, _, _ in name_rows if row_kind == kind})
+            connection.execute(
+                "DELETE FROM names WHERE entity_type = ? AND list_contains(?, entity_id)",
+                [kind, ids],
+            )
         _insert_many(connection, "INSERT OR REPLACE INTO repertoires VALUES", 7, repertoire_rows)
         _insert_many(connection, "INSERT OR REPLACE INTO variants VALUES", 10, variant_rows)
         _insert_many(connection, "INSERT OR REPLACE INTO names VALUES", 4, name_rows)

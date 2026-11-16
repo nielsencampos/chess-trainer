@@ -106,9 +106,12 @@ def _all_nodes(node: chess.pgn.GameNode) -> Iterator[chess.pgn.GameNode]:
     Yields:
         chess.pgn.GameNode: The root, then each node under it.
     """
-    yield node
-    for child in node.variations:
-        yield from _all_nodes(child)
+    # A stack, not recursion: a game of about 1000 plies would pass Python's recursion limit.
+    stack = [node]
+    while stack:
+        current = stack.pop()
+        yield current
+        stack.extend(reversed(current.variations))
 
 
 def content_hash(white: str, black: str, date: str, ucis: tuple[str, ...]) -> str:
@@ -207,7 +210,7 @@ def _read_one(
 
 def read_pgn_text(
     text: str, opening_names: Mapping[str, tuple[str, str]]
-) -> tuple[list[ImportedGame], list[ImportError_]]:
+) -> tuple[list[ImportedGame], list[ImportError_], bool]:
     """Reads every game of a PGN text, up to `MAX_GAMES`. A bad game never stops the others.
 
     Args:
@@ -215,13 +218,18 @@ def read_pgn_text(
         opening_names (Mapping[str, tuple[str, str]]): Position (EPD) -> (ECO, catalog name).
 
     Returns:
-        tuple[list[ImportedGame], list[ImportError_]]: The games read and the ones refused.
+        tuple[list[ImportedGame], list[ImportError_], bool]: The games read, the ones refused,
+            and whether the text had more than `MAX_GAMES` games, the rest left out.
     """
     games: list[ImportedGame] = []
     errors: list[ImportError_] = []
     handle = io.StringIO(text)
     index = 0
-    while (game := chess.pgn.read_game(handle)) is not None and index < MAX_GAMES:
+    truncated = False
+    while (game := chess.pgn.read_game(handle)) is not None:
+        if index == MAX_GAMES:
+            truncated = True
+            break
         index += 1
         label = f"{game.headers.get('White', '?')} - {game.headers.get('Black', '?')}"
         outcome = _read_one(game, opening_names)
@@ -229,4 +237,4 @@ def read_pgn_text(
             games.append(outcome)
         else:
             errors.append(ImportError_(index, label, outcome[0], outcome[1]))
-    return games, errors
+    return games, errors, truncated

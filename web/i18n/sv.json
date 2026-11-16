@@ -83,6 +83,7 @@
   "import.remote.nothing": "Inga partier under den här perioden.",
   "import.remote.busy": "Hämtar partier…",
   "import.remote.truncated": "Bara periodens {max} senaste partier hämtades.",
+  "import.truncated": "Bara de första {max} partierna i texten lästes.",
   "import.remote.error.bad_username": "Det är inget giltigt användarnamn.",
   "import.remote.error.user_not_found": "Ingen spelare med det namnet på den här webbplatsen.",
   "import.remote.error.rate_limited": "Webbplatsen bad om ett lugnare tempo. Försök igen om en minut.",
