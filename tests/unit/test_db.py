@@ -371,6 +371,31 @@ def test_translated_names_load(connection, tmp_path):
     assert book.variants["x1"].names["pt-BR"] == "Linha"
 
 
+def test_a_name_taken_out_of_a_file_falls_back_to_english(connection, tmp_path):
+    """A translated name removed from an opening file is gone from the database after a sync.
+
+    Args:
+        connection (duckdb.DuckDBPyConnection): An empty, migrated database.
+        tmp_path (Path): A temporary folder for this test.
+    """
+    directory = tmp_path / "translated"
+    directory.mkdir()
+    document = {
+        "id": "x",
+        "names": {"en-US": "X", "de": "Iks"},
+        "lines": [{**line("x1", ["e4"]), "names": {"en-US": "L", "de": "Linie"}}],
+    }
+    (directory / "x.json").write_text(json.dumps(document), encoding="utf-8")
+    sync_openings(connection, directory)
+    document["names"] = {"en-US": "X"}
+    document["lines"][0]["names"] = {"en-US": "L"}
+    (directory / "x.json").write_text(json.dumps(document), encoding="utf-8")
+    sync_openings(connection, directory)
+    book = load_book(connection)
+    assert "de" not in book.repertoires["x"].names
+    assert "de" not in book.variants["x1"].names
+
+
 @pytest.mark.parametrize(
     ("content", "message"),
     [
