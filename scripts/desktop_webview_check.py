@@ -191,8 +191,12 @@ def main(out_dir: Path) -> int:
         )
         text = str(document.string() or "") if document else ""
         result["pdf_pages"] = document.pageCount() if document else 0
+        # A variant of English (en-GB) has only the keys it changes; the rest falls back to en.
+        english = json.loads((ROOT / "web" / "i18n" / "en.json").read_text(encoding="utf-8"))
         headings = [
-            json.loads(path.read_text(encoding="utf-8"))["sheet.heading"]
+            json.loads(path.read_text(encoding="utf-8")).get(
+                "sheet.heading", english["sheet.heading"]
+            )
             for path in (ROOT / "web" / "i18n").glob("*.json")
         ]
 
