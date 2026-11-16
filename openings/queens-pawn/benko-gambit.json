@@ -18,7 +18,9 @@
     "sv": "Benkogambit",
     "da": "Benkogambit",
     "nb": "Benkögambit",
-    "fi": "Benkő-gambiitti"
+    "fi": "Benkő-gambiitti",
+    "ru": "Волжский гамбит",
+    "uk": "Волзький гамбіт"
   },
   "order": 11,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Antagen: Jugoslaviskt",
         "da": "Modtaget: Jugoslavisk",
         "nb": "Mottatt: Jugoslavisk",
-        "fi": "Hyväksytty: Jugoslavialainen"
+        "fi": "Hyväksytty: Jugoslavialainen",
+        "ru": "Принятый: Югославский",
+        "uk": "Прийнятий: Югославський"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Antagen: Jugoslaviskt",
             "da": "Modtaget: Jugoslavisk",
             "nb": "Mottatt: Jugoslavisk",
-            "fi": "Hyväksytty: Jugoslavialainen"
+            "fi": "Hyväksytty: Jugoslavialainen",
+            "ru": "Принятый: Югославский",
+            "uk": "Прийнятий: Югославський"
           },
           "eco": "A59",
           "opening": "Benko Gambit Accepted: Yugoslav",
@@ -91,7 +97,9 @@
             "sv": "Antagen: Jugoslaviskt",
             "da": "Modtaget: Jugoslavisk",
             "nb": "Mottatt: Jugoslavisk",
-            "fi": "Hyväksytty: Jugoslavialainen"
+            "fi": "Hyväksytty: Jugoslavialainen",
+            "ru": "Принятый: Югославский",
+            "uk": "Прийнятий: Югославський"
           },
           "eco": "A59",
           "opening": "Benko Gambit Accepted: Yugoslav",
@@ -119,7 +127,9 @@
         "sv": "Huvud",
         "da": "Hoved",
         "nb": "Hoved",
-        "fi": "Pää"
+        "fi": "Pää",
+        "ru": "Основной",
+        "uk": "Основний"
       },
       "lines": [
         {
@@ -142,7 +152,9 @@
             "sv": "Benkogambit",
             "da": "Benkogambit",
             "nb": "Benkogambit",
-            "fi": "Benko-gambiitti"
+            "fi": "Benko-gambiitti",
+            "ru": "Гамбит Бенко",
+            "uk": "Гамбіт Бенко"
           },
           "eco": "A57",
           "opening": "Benko Gambit",
@@ -169,7 +181,9 @@
             "sv": "Benkogambit",
             "da": "Benkogambit",
             "nb": "Benkogambit",
-            "fi": "Benko-gambiitti"
+            "fi": "Benko-gambiitti",
+            "ru": "Гамбит Бенко",
+            "uk": "Гамбіт Бенко"
           },
           "eco": "A59",
           "opening": "Benko Gambit",
@@ -200,7 +214,9 @@
         "sv": "Antagen",
         "da": "Modtaget",
         "nb": "Mottatt",
-        "fi": "Hyväksytty"
+        "fi": "Hyväksytty",
+        "ru": "Принятый",
+        "uk": "Прийнятий"
       },
       "eco": "A57",
       "opening": "Benko Gambit Accepted",
@@ -227,7 +243,9 @@
         "sv": "Antagen: Centrumstormvarianten",
         "da": "Modtaget: Centrumstormvarianten",
         "nb": "Mottatt: Sentrumsstormvarianten",
-        "fi": "Hyväksytty: Keskustan rynnäkkömuunnelma"
+        "fi": "Hyväksytty: Keskustan rynnäkkömuunnelma",
+        "ru": "Принятый: Вариант с центральным штурмом",
+        "uk": "Прийнятий: Варіант з центральним штурмом"
       },
       "eco": "A58",
       "opening": "Benko Gambit Accepted: Central Storming Variation",
@@ -254,7 +272,9 @@
         "sv": "Antagen: Dlugyvarianten",
         "da": "Modtaget: Dlugyvarianten",
         "nb": "Mottatt: Dlugyvarianten",
-        "fi": "Hyväksytty: Dlugy-muunnelma"
+        "fi": "Hyväksytty: Dlugy-muunnelma",
+        "ru": "Принятый: Вариант Длуги",
+        "uk": "Прийнятий: Варіант Длугі"
       },
       "eco": "A57",
       "opening": "Benko Gambit Accepted: Dlugy Variation",
@@ -281,7 +301,9 @@
         "sv": "Antagen: Fianchettovarianten",
         "da": "Modtaget: Fianchettovarianten",
         "nb": "Mottatt: Fianchettovarianten",
-        "fi": "Hyväksytty: Fiankettomuunnelma"
+        "fi": "Hyväksytty: Fiankettomuunnelma",
+        "ru": "Принятый: Вариант с фианкетто",
+        "uk": "Прийнятий: Варіант з фіанкето"
       },
       "eco": "A58",
       "opening": "Benko Gambit Accepted: Fianchetto Variation",
@@ -308,7 +330,9 @@
         "sv": "Antagen: Helt antagna varianten",
         "da": "Modtaget: Helt modtaget variant",
         "nb": "Mottatt: Helt mottatt variant",
-        "fi": "Hyväksytty: Täysin hyväksytty muunnelma"
+        "fi": "Hyväksytty: Täysin hyväksytty muunnelma",
+        "ru": "Принятый: Вариант с полным принятием",
+        "uk": "Прийнятий: Варіант з повним прийняттям"
       },
       "eco": "A58",
       "opening": "Benko Gambit Accepted: Fully Accepted Variation",
@@ -335,7 +359,9 @@
         "sv": "Antagen: Kungspromenadvarianten",
         "da": "Modtaget: Kongevandringsvarianten",
         "nb": "Mottatt: Kongevandringsvarianten",
-        "fi": "Hyväksytty: Kuningaskävelymuunnelma"
+        "fi": "Hyväksytty: Kuningaskävelymuunnelma",
+        "ru": "Принятый: Вариант с походом короля",
+        "uk": "Прийнятий: Варіант з походом короля"
       },
       "eco": "A59",
       "opening": "Benko Gambit Accepted: King Walk Variation",
@@ -362,7 +388,9 @@
         "sv": "Antagen: Moderna varianten",
         "da": "Modtaget: Moderne variant",
         "nb": "Mottatt: Moderne variant",
-        "fi": "Hyväksytty: Moderni muunnelma"
+        "fi": "Hyväksytty: Moderni muunnelma",
+        "ru": "Принятый: Современный вариант",
+        "uk": "Прийнятий: Сучасний варіант"
       },
       "eco": "A57",
       "opening": "Benko Gambit Accepted: Modern Variation",
@@ -389,7 +417,9 @@
         "sv": "Antagen: Bondeåterlämningsvarianten",
         "da": "Modtaget: Bondetilbagegivelsesvarianten",
         "nb": "Mottatt: Bondetilbakeleveringvarianten",
-        "fi": "Hyväksytty: Sotilaanpalautusmuunnelma"
+        "fi": "Hyväksytty: Sotilaanpalautusmuunnelma",
+        "ru": "Принятый: Вариант с возвратом пешки",
+        "uk": "Прийнятий: Варіант з поверненням пішака"
       },
       "eco": "A57",
       "opening": "Benko Gambit Accepted: Pawn Return Variation",
@@ -416,7 +446,9 @@
         "sv": "Avböjd: Löparattacken",
         "da": "Afslået: Løberangrebet",
         "nb": "Avslått: Løperangrepet",
-        "fi": "Hylätty: Lähettihyökkäys"
+        "fi": "Hylätty: Lähettihyökkäys",
+        "ru": "Отказанный: Атака слона",
+        "uk": "Відхилений: Атака слона"
       },
       "eco": "A57",
       "opening": "Benko Gambit Declined: Bishop Attack",
@@ -443,7 +475,9 @@
         "sv": "Avböjd: Hjørringmotgambit",
         "da": "Afslået: Hjørringmodgambit",
         "nb": "Avslått: Hjørringmotgambit",
-        "fi": "Hylätty: Hjørring-vastagambiitti"
+        "fi": "Hylätty: Hjørring-vastagambiitti",
+        "ru": "Отказанный: Хьёррингский контргамбит",
+        "uk": "Відхилений: Г'єррінгський контргамбіт"
       },
       "eco": "A57",
       "opening": "Benko Gambit Declined: Hjørring Countergambit",
@@ -470,7 +504,9 @@
         "sv": "Avböjd: Huvudvariant",
         "da": "Afslået: Hovedvariant",
         "nb": "Avslått: Hovedvariant",
-        "fi": "Hylätty: Päämuunnelma"
+        "fi": "Hylätty: Päämuunnelma",
+        "ru": "Отказанный: Основной вариант",
+        "uk": "Відхилений: Основний варіант"
       },
       "eco": "A57",
       "opening": "Benko Gambit Declined: Main Line",
@@ -497,7 +533,9 @@
         "sv": "Avböjd: Pseudo-Sämisch",
         "da": "Afslået: Pseudo-Sämisch",
         "nb": "Avslått: Pseudo-Sämisch",
-        "fi": "Hylätty: Pseudo-Sämisch"
+        "fi": "Hylätty: Pseudo-Sämisch",
+        "ru": "Отказанный: Псевдо-Земиш",
+        "uk": "Відхилений: Псевдо-Земіш"
       },
       "eco": "A57",
       "opening": "Benko Gambit Declined: Pseudo-Sämisch",
@@ -524,7 +562,9 @@
         "sv": "Avböjd: Lugna varianten",
         "da": "Afslået: Rolig variant",
         "nb": "Avslått: Rolig variant",
-        "fi": "Hylätty: Rauhallinen linja"
+        "fi": "Hylätty: Rauhallinen linja",
+        "ru": "Отказанный: Спокойная линия",
+        "uk": "Відхилений: Спокійна лінія"
       },
       "eco": "A57",
       "opening": "Benko Gambit Declined: Quiet Line",
@@ -551,7 +591,9 @@
         "sv": "Avböjd: Sosonkovarianten",
         "da": "Afslået: Sosonkovarianten",
         "nb": "Avslått: Sosonkovarianten",
-        "fi": "Hylätty: Sosonko-muunnelma"
+        "fi": "Hylätty: Sosonko-muunnelma",
+        "ru": "Отказанный: Вариант Сосонко",
+        "uk": "Відхилений: Варіант Сосонка"
       },
       "eco": "A57",
       "opening": "Benko Gambit Declined: Sosonko Variation",
@@ -578,7 +620,9 @@
         "sv": "Fianchettovarianten",
         "da": "Fianchettovarianten",
         "nb": "Fianchettovarianten",
-        "fi": "Fiankettomuunnelma"
+        "fi": "Fiankettomuunnelma",
+        "ru": "Вариант с фианкетто",
+        "uk": "Варіант з фіанкето"
       },
       "eco": "A58",
       "opening": "Benko Gambit: Fianchetto Variation",
@@ -605,7 +649,9 @@
         "sv": "Mutkinmotgambit",
         "da": "Mutkinmodgambit",
         "nb": "Mutkinmotgambit",
-        "fi": "Mutkin-vastagambiitti"
+        "fi": "Mutkin-vastagambiitti",
+        "ru": "Контргамбит Муткина",
+        "uk": "Контргамбіт Муткіна"
       },
       "eco": "A57",
       "opening": "Benko Gambit: Mutkin Countergambit",
@@ -632,7 +678,9 @@
         "sv": "Nd2varianten",
         "da": "Nd2varianten",
         "nb": "Nd2varianten",
-        "fi": "Nd2-muunnelma"
+        "fi": "Nd2-muunnelma",
+        "ru": "Вариант с Nd2",
+        "uk": "Варіант з Nd2"
       },
       "eco": "A58",
       "opening": "Benko Gambit: Nd2 Variation",
@@ -659,7 +707,9 @@
         "sv": "Nescafe Frappeattacken",
         "da": "Nescafe Frappeangrebet",
         "nb": "Nescafe Frappeangrepet",
-        "fi": "Nescafe Frappe-hyökkäys"
+        "fi": "Nescafe Frappe-hyökkäys",
+        "ru": "Атака «Нескафе фраппе»",
+        "uk": "Атака «Нескафе фрапе»"
       },
       "eco": "A57",
       "opening": "Benko Gambit: Nescafe Frappe Attack",
@@ -686,7 +736,9 @@
         "sv": "Zaitsevsystemet",
         "da": "Zaitsevsystemet",
         "nb": "Zaitsevsystemet",
-        "fi": "Zaitsev-systeemi"
+        "fi": "Zaitsev-systeemi",
+        "ru": "Система Зайцева",
+        "uk": "Система Зайцева"
       },
       "eco": "A57",
       "opening": "Benko Gambit: Zaitsev System",
@@ -713,7 +765,9 @@
         "sv": "Zaitsevvarianten, Nescafe Frappeattacken",
         "da": "Zaitsevvarianten, Nescafe Frappeangrebet",
         "nb": "Zaitsevvarianten, Nescafe Frappeangrepet",
-        "fi": "Zaitsev-muunnelma, Nescafe Frappe-hyökkäys"
+        "fi": "Zaitsev-muunnelma, Nescafe Frappe-hyökkäys",
+        "ru": "Вариант Зайцева, Атака «Нескафе фраппе»",
+        "uk": "Варіант Зайцева, Атака «Нескафе фрапе»"
       },
       "eco": "A57",
       "opening": "Benko Gambit: Zaitsev Variation, Nescafe Frappe Attack",

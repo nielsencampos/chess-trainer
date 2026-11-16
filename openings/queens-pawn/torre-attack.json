@@ -18,7 +18,9 @@
     "sv": "Torreattacken",
     "da": "Torreangrebet",
     "nb": "Torreangrepet",
-    "fi": "Torre-hyökkäys"
+    "fi": "Torre-hyökkäys",
+    "ru": "Атака Торре",
+    "uk": "Атака Торре"
   },
   "order": 16,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Klassiska försvaret",
         "da": "Klassisk forsvar",
         "nb": "Klassisk forsvar",
-        "fi": "Klassinen puolustus"
+        "fi": "Klassinen puolustus",
+        "ru": "Классическая защита",
+        "uk": "Класичний захист"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Klassiska försvaret",
             "da": "Klassisk forsvar",
             "nb": "Klassisk forsvar",
-            "fi": "Klassinen puolustus"
+            "fi": "Klassinen puolustus",
+            "ru": "Классическая защита",
+            "uk": "Класичний захист"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense",
@@ -91,7 +97,9 @@
             "sv": "Klassiska försvaret, Petrosiangambit",
             "da": "Klassisk forsvar, Petrosiangambit",
             "nb": "Klassisk forsvar, Petrosiangambit",
-            "fi": "Klassinen puolustus, Petrosian-gambiitti"
+            "fi": "Klassinen puolustus, Petrosian-gambiitti",
+            "ru": "Классическая защита, Гамбит Петросяна",
+            "uk": "Класичний захист, Гамбіт Петросяна"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense, Petrosian Gambit",
@@ -118,7 +126,9 @@
             "sv": "Klassiska försvaret, Nimzowitschvarianten",
             "da": "Klassisk forsvar, Nimzowitschvarianten",
             "nb": "Klassisk forsvar, Nimzowitschvarianten",
-            "fi": "Klassinen puolustus, Nimzowitsch-muunnelma"
+            "fi": "Klassinen puolustus, Nimzowitsch-muunnelma",
+            "ru": "Классическая защита, Вариант Нимцовича",
+            "uk": "Класичний захист, Варіант Німцовича"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense, Nimzowitsch Variation",
@@ -146,7 +156,9 @@
         "sv": "Fianchettoförsvaret",
         "da": "Fianchettoforsvaret",
         "nb": "Fianchettoforsvaret",
-        "fi": "Fiankettopuolustus"
+        "fi": "Fiankettopuolustus",
+        "ru": "Защита с фианкетто",
+        "uk": "Захист з фіанкето"
       },
       "lines": [
         {
@@ -169,7 +181,9 @@
             "sv": "Fianchettoförsvaret",
             "da": "Fianchettoforsvaret",
             "nb": "Fianchettoforsvaret",
-            "fi": "Fiankettopuolustus"
+            "fi": "Fiankettopuolustus",
+            "ru": "Защита с фианкетто",
+            "uk": "Захист з фіанкето"
           },
           "eco": "A48",
           "opening": "Torre Attack: Fianchetto Defense",
@@ -196,7 +210,9 @@
             "sv": "Fianchettoförsvaret, Euwevarianten",
             "da": "Fianchettoforsvaret, Euwevarianten",
             "nb": "Fianchettoforsvaret, Euwevarianten",
-            "fi": "Fiankettopuolustus, Euwe-muunnelma"
+            "fi": "Fiankettopuolustus, Euwe-muunnelma",
+            "ru": "Защита с фианкетто, Вариант Эйве",
+            "uk": "Захист з фіанкето, Варіант Ейве"
           },
           "eco": "A48",
           "opening": "Torre Attack: Fianchetto Defense, Euwe Variation",
@@ -227,7 +243,9 @@
         "sv": "Wagnergambit",
         "da": "Wagnergambit",
         "nb": "Wagnergambit",
-        "fi": "Wagner-gambiitti"
+        "fi": "Wagner-gambiitti",
+        "ru": "Гамбит Вагнера",
+        "uk": "Гамбіт Вагнера"
       },
       "eco": "A46",
       "opening": "Torre Attack: Wagner Gambit",

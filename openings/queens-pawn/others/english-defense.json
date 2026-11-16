@@ -18,7 +18,9 @@
     "fi": "Englantilainen puolustus",
     "sv": "Engelska försvaret",
     "da": "Engelsk forsvar",
-    "nb": "Engelsk forsvar"
+    "nb": "Engelsk forsvar",
+    "ru": "Английская защита",
+    "uk": "Англійський захист"
   },
   "order": null,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Huvud",
         "da": "Hoved",
         "nb": "Hoved",
-        "fi": "Pää"
+        "fi": "Pää",
+        "ru": "Основной",
+        "uk": "Основний"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Engelska försvaret",
             "da": "Engelsk forsvar",
             "nb": "Engelsk forsvar",
-            "fi": "Englantilainen puolustus"
+            "fi": "Englantilainen puolustus",
+            "ru": "Английская защита",
+            "uk": "Англійський захист"
           },
           "eco": "A40",
           "opening": "English Defense",
@@ -91,7 +97,9 @@
             "sv": "Engelska försvaret",
             "da": "Engelsk forsvar",
             "nb": "Engelsk forsvar",
-            "fi": "Englantilainen puolustus"
+            "fi": "Englantilainen puolustus",
+            "ru": "Английская защита",
+            "uk": "Англійський захист"
           },
           "eco": "A40",
           "opening": "English Defense",
@@ -122,7 +130,9 @@
         "sv": "Eastbournegambit",
         "da": "Eastbournegambit",
         "nb": "Eastbournegambit",
-        "fi": "Eastbourne-gambiitti"
+        "fi": "Eastbourne-gambiitti",
+        "ru": "Истборнский гамбит",
+        "uk": "Істборнський гамбіт"
       },
       "eco": "A40",
       "opening": "English Defense: Eastbourne Gambit",
@@ -149,7 +159,9 @@
         "sv": "Hartlaubgambit antagen",
         "da": "Hartlaubgambit modtaget",
         "nb": "Hartlaubgambit mottatt",
-        "fi": "Hartlaub-gambiitti hyväksytty"
+        "fi": "Hartlaub-gambiitti hyväksytty",
+        "ru": "Принятый гамбит Хартлауба",
+        "uk": "Прийнятий гамбіт Гартлауба"
       },
       "eco": "A40",
       "opening": "English Defense: Hartlaub Gambit Accepted",
@@ -176,7 +188,9 @@
         "sv": "Hartlaubgambit avböjd",
         "da": "Hartlaubgambit afslået",
         "nb": "Hartlaubgambit avslått",
-        "fi": "Hartlaub-gambiitti hylätty"
+        "fi": "Hartlaub-gambiitti hylätty",
+        "ru": "Отказанный гамбит Хартлауба",
+        "uk": "Відхилений гамбіт Гартлауба"
       },
       "eco": "A40",
       "opening": "English Defense: Hartlaub Gambit Declined",
@@ -203,7 +217,9 @@
         "sv": "Perrinvarianten",
         "da": "Perrinvarianten",
         "nb": "Perrinvarianten",
-        "fi": "Perrin-muunnelma"
+        "fi": "Perrin-muunnelma",
+        "ru": "Вариант Перрена",
+        "uk": "Варіант Перрена"
       },
       "eco": "A40",
       "opening": "English Defense: Perrin Variation",
@@ -230,7 +246,9 @@
         "sv": "Poligambit",
         "da": "Poligambit",
         "nb": "Poligambit",
-        "fi": "Poli-gambiitti"
+        "fi": "Poli-gambiitti",
+        "ru": "Гамбит Поли",
+        "uk": "Гамбіт Полі"
       },
       "eco": "A40",
       "opening": "English Defense: Poli Gambit",

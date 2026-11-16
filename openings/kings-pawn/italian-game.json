@@ -18,7 +18,9 @@
     "sv": "Italiensk öppning",
     "nb": "Italiensk åpning",
     "fi": "Italialainen peli",
-    "da": "Italiensk parti"
+    "da": "Italiensk parti",
+    "ru": "Итальянская партия",
+    "uk": "Італійська партія"
   },
   "order": 5,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Tvåspringarförsvaret",
         "da": "Tospringerforsvaret",
         "nb": "Tospringerforsvaret",
-        "fi": "Kaksiratsupuolustus"
+        "fi": "Kaksiratsupuolustus",
+        "ru": "Защита двух коней",
+        "uk": "Захист двох коней"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Tvåspringarförsvaret",
             "da": "Tospringerforsvaret",
             "nb": "Tospringerforsvaret",
-            "fi": "Kaksiratsupuolustus"
+            "fi": "Kaksiratsupuolustus",
+            "ru": "Защита двух коней",
+            "uk": "Захист двох коней"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense",
@@ -91,7 +97,9 @@
             "sv": "Tvåspringarförsvaret",
             "da": "Tospringerforsvaret",
             "nb": "Tospringerforsvaret",
-            "fi": "Kaksiratsupuolustus"
+            "fi": "Kaksiratsupuolustus",
+            "ru": "Защита двух коней",
+            "uk": "Захист двох коней"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense",
@@ -118,7 +126,9 @@
             "sv": "Tvåspringarförsvaret, Springarattacken",
             "da": "Tospringerforsvaret, Springerangrebet",
             "nb": "Tospringerforsvaret, Springerangrepet",
-            "fi": "Kaksiratsupuolustus, Ratsuhyökkäys"
+            "fi": "Kaksiratsupuolustus, Ratsuhyökkäys",
+            "ru": "Защита двух коней, Атака коня",
+            "uk": "Захист двох коней, Атака коня"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Knight Attack",
@@ -145,7 +155,9 @@
             "sv": "Tvåspringarförsvaret, Traxlermotattacken",
             "da": "Tospringerforsvaret, Traxlermodangrebet",
             "nb": "Tospringerforsvaret, Traxlermotangrepet",
-            "fi": "Kaksiratsupuolustus, Traxler-vastahyökkäys"
+            "fi": "Kaksiratsupuolustus, Traxler-vastahyökkäys",
+            "ru": "Защита двух коней, Контратака Тракслера",
+            "uk": "Захист двох коней, Контратака Тракслера"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Traxler Counterattack",
@@ -172,7 +184,9 @@
             "sv": "Tvåspringarförsvaret, Traxlermotattacken, Löparoffervarianten",
             "da": "Tospringerforsvaret, Traxlermodangrebet, Løberoffervarianten",
             "nb": "Tospringerforsvaret, Traxlermotangrepet, Løperoffervarianten",
-            "fi": "Kaksiratsupuolustus, Traxler-vastahyökkäys, Lähettiuhrauslinja"
+            "fi": "Kaksiratsupuolustus, Traxler-vastahyökkäys, Lähettiuhrauslinja",
+            "ru": "Защита двух коней, Контратака Тракслера, Линия с жертвой слона",
+            "uk": "Захист двох коней, Контратака Тракслера, Лінія з жертвою слона"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line",
@@ -199,7 +213,9 @@
             "sv": "Tvåspringarförsvaret, Traxlervarianten, Trencianske-Teplicegambit",
             "da": "Tospringerforsvaret, Traxlervarianten, Trencianske-Teplicegambit",
             "nb": "Tospringerforsvaret, Traxlervarianten, Trencianske-Teplicegambit",
-            "fi": "Kaksiratsupuolustus, Traxler-muunnelma, Trencianske-Teplice-gambiitti"
+            "fi": "Kaksiratsupuolustus, Traxler-muunnelma, Trencianske-Teplice-gambiitti",
+            "ru": "Защита двух коней, Вариант Тракслера, Тренчьянске-теплицкий гамбит",
+            "uk": "Захист двох коней, Варіант Тракслера, Тренчанське-теплицький гамбіт"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Traxler Variation, Trencianske-Teplice Gambit",
@@ -226,7 +242,9 @@
             "sv": "Tvåspringarförsvaret, Traxlermotattacken, Springaroffervarianten",
             "da": "Tospringerforsvaret, Traxlermodangrebet, Springeroffervarianten",
             "nb": "Tospringerforsvaret, Traxlermotangrepet, Springeroffervarianten",
-            "fi": "Kaksiratsupuolustus, Traxler-vastahyökkäys, Ratsu-uhrauslinja"
+            "fi": "Kaksiratsupuolustus, Traxler-vastahyökkäys, Ratsu-uhrauslinja",
+            "ru": "Защита двух коней, Контратака Тракслера, Линия с жертвой коня",
+            "uk": "Захист двох коней, Контратака Тракслера, Лінія з жертвою коня"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line",
@@ -253,7 +271,9 @@
             "sv": "Tvåspringarförsvaret, Traxlermotattacken, Kungsmarschvarianten",
             "da": "Tospringerforsvaret, Traxlermodangrebet, Kongemarchvarianten",
             "nb": "Tospringerforsvaret, Traxlermotangrepet, Kongemarsjvarianten",
-            "fi": "Kaksiratsupuolustus, Traxler-vastahyökkäys, Kuningasmarssilinja"
+            "fi": "Kaksiratsupuolustus, Traxler-vastahyökkäys, Kuningasmarssilinja",
+            "ru": "Защита двух коней, Контратака Тракслера, Линия с походом короля",
+            "uk": "Захист двох коней, Контратака Тракслера, Лінія з походом короля"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Traxler Counterattack, King March Line",
@@ -280,7 +300,9 @@
             "sv": "Tvåspringarförsvaret, Ponziani-Steinitzgambit",
             "da": "Tospringerforsvaret, Ponziani-Steinitzgambit",
             "nb": "Tospringerforsvaret, Ponziani-Steinitzgambit",
-            "fi": "Kaksiratsupuolustus, Ponziani-Steinitz-gambiitti"
+            "fi": "Kaksiratsupuolustus, Ponziani-Steinitz-gambiitti",
+            "ru": "Защита двух коней, Гамбит Понциани-Стейница",
+            "uk": "Захист двох коней, Гамбіт Понціані-Стейніца"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Ponziani-Steinitz Gambit",
@@ -307,7 +329,9 @@
             "sv": "Tvåspringarförsvaret, Springarattacken, Normala varianten",
             "da": "Tospringerforsvaret, Springerangrebet, Normal variant",
             "nb": "Tospringerforsvaret, Springerangrepet, Normal variant",
-            "fi": "Kaksiratsupuolustus, Ratsuhyökkäys, Normaali muunnelma"
+            "fi": "Kaksiratsupuolustus, Ratsuhyökkäys, Normaali muunnelma",
+            "ru": "Защита двух коней, Атака коня, Обычный вариант",
+            "uk": "Захист двох коней, Атака коня, Звичайний варіант"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Knight Attack, Normal Variation",
@@ -334,7 +358,9 @@
             "sv": "Tvåspringarförsvaret, Polerioförsvaret",
             "da": "Tospringerforsvaret, Polerioforsvaret",
             "nb": "Tospringerforsvaret, Polerioforsvaret",
-            "fi": "Kaksiratsupuolustus, Polerio-puolustus"
+            "fi": "Kaksiratsupuolustus, Polerio-puolustus",
+            "ru": "Защита двух коней, Защита Полерио",
+            "uk": "Захист двох коней, Захист Полеріо"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense",
@@ -361,7 +387,9 @@
             "sv": "Tvåspringarförsvaret, Polerioförsvaret, Löparschackvarianten",
             "da": "Tospringerforsvaret, Polerioforsvaret, Løberskakvarianten",
             "nb": "Tospringerforsvaret, Polerioforsvaret, Løpersjakkvarianten",
-            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Lähettishakkilinja"
+            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Lähettishakkilinja",
+            "ru": "Защита двух коней, Защита Полерио, Линия с шахом слоном",
+            "uk": "Захист двох коней, Захист Полеріо, Лінія з шахом слоном"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Bishop Check Line",
@@ -388,7 +416,9 @@
             "sv": "Tvåspringarförsvaret",
             "da": "Tospringerforsvaret",
             "nb": "Tospringerforsvaret",
-            "fi": "Kaksiratsupuolustus"
+            "fi": "Kaksiratsupuolustus",
+            "ru": "Защита двух коней",
+            "uk": "Захист двох коней"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense",
@@ -415,7 +445,9 @@
             "sv": "Tvåspringarförsvaret, Polerioförsvaret, Suhleförsvaret",
             "da": "Tospringerforsvaret, Polerioforsvaret, Suhleforsvaret",
             "nb": "Tospringerforsvaret, Polerioforsvaret, Suhleforsvaret",
-            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Suhle-puolustus"
+            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Suhle-puolustus",
+            "ru": "Защита двух коней, Защита Полерио, Защита Зуле",
+            "uk": "Захист двох коней, Захист Полеріо, Захист Зуле"
           },
           "eco": "C59",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Suhle Defense",
@@ -442,7 +474,9 @@
             "sv": "Tvåspringarförsvaret, Knorrevarianten",
             "da": "Tospringerforsvaret, Knorrevarianten",
             "nb": "Tospringerforsvaret, Knorrevarianten",
-            "fi": "Kaksiratsupuolustus, Knorre-muunnelma"
+            "fi": "Kaksiratsupuolustus, Knorre-muunnelma",
+            "ru": "Защита двух коней, Вариант Кнорре",
+            "uk": "Захист двох коней, Варіант Кнорре"
           },
           "eco": "C59",
           "opening": "Italian Game: Two Knights Defense, Knorre Variation",
@@ -469,7 +503,9 @@
             "sv": "Tvåspringarförsvaret, Polerioförsvaret, Göringvarianten",
             "da": "Tospringerforsvaret, Polerioforsvaret, Göringvarianten",
             "nb": "Tospringerforsvaret, Polerioforsvaret, Göringvarianten",
-            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Göring-muunnelma"
+            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Göring-muunnelma",
+            "ru": "Защита двух коней, Защита Полерио, Вариант Гёринга",
+            "uk": "Захист двох коней, Захист Полеріо, Варіант Герінга"
           },
           "eco": "C59",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Göring Variation",
@@ -496,7 +532,9 @@
             "sv": "Tvåspringarförsvaret, Steinitzvarianten",
             "da": "Tospringerforsvaret, Steinitzvarianten",
             "nb": "Tospringerforsvaret, Steinitzvarianten",
-            "fi": "Kaksiratsupuolustus, Steinitz-muunnelma"
+            "fi": "Kaksiratsupuolustus, Steinitz-muunnelma",
+            "ru": "Защита двух коней, Вариант Стейница",
+            "uk": "Захист двох коней, Варіант Стейніца"
           },
           "eco": "C59",
           "opening": "Italian Game: Two Knights Defense, Steinitz Variation",
@@ -523,7 +561,9 @@
             "sv": "Tvåspringarförsvaret, Polerioförsvaret, Bogoljubowvarianten",
             "da": "Tospringerforsvaret, Polerioforsvaret, Bogoljubowvarianten",
             "nb": "Tospringerforsvaret, Polerioforsvaret, Bogoljubowvarianten",
-            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Bogoljubow-muunnelma"
+            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Bogoljubow-muunnelma",
+            "ru": "Защита двух коней, Защита Полерио, Вариант Боголюбова",
+            "uk": "Захист двох коней, Захист Полеріо, Варіант Боголюбова"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Bogoljubow Variation",
@@ -550,7 +590,9 @@
             "sv": "Tvåspringarförsvaret, Paolivarianten",
             "da": "Tospringerforsvaret, Paolivarianten",
             "nb": "Tospringerforsvaret, Paolivarianten",
-            "fi": "Kaksiratsupuolustus, Paoli-muunnelma"
+            "fi": "Kaksiratsupuolustus, Paoli-muunnelma",
+            "ru": "Защита двух коней, Вариант Паоли",
+            "uk": "Захист двох коней, Варіант Паолі"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Paoli Variation",
@@ -577,7 +619,9 @@
             "sv": "Tvåspringarförsvaret, Colmanvarianten",
             "da": "Tospringerforsvaret, Colmanvarianten",
             "nb": "Tospringerforsvaret, Colmanvarianten",
-            "fi": "Kaksiratsupuolustus, Colman-muunnelma"
+            "fi": "Kaksiratsupuolustus, Colman-muunnelma",
+            "ru": "Защита двух коней, Вариант Колмана",
+            "uk": "Захист двох коней, Варіант Колмана"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Colman Variation",
@@ -604,7 +648,9 @@
             "sv": "Tvåspringarförsvaret, Blackburnevarianten",
             "da": "Tospringerforsvaret, Blackburnevarianten",
             "nb": "Tospringerforsvaret, Blackburnevarianten",
-            "fi": "Kaksiratsupuolustus, Blackburne-muunnelma"
+            "fi": "Kaksiratsupuolustus, Blackburne-muunnelma",
+            "ru": "Защита двух коней, Вариант Блэкберна",
+            "uk": "Захист двох коней, Варіант Блекберна"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Blackburne Variation",
@@ -631,7 +677,9 @@
             "sv": "Tvåspringarförsvaret, Polerioförsvaret, Kieseritzkyvarianten",
             "da": "Tospringerforsvaret, Polerioforsvaret, Kieseritzkyvarianten",
             "nb": "Tospringerforsvaret, Polerioforsvaret, Kieseritzkyvarianten",
-            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Kieseritzky-muunnelma"
+            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Kieseritzky-muunnelma",
+            "ru": "Защита двух коней, Защита Полерио, Вариант Кизерицкого",
+            "uk": "Захист двох коней, Захист Полеріо, Варіант Кізерицького"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Kieseritzky Variation",
@@ -658,7 +706,9 @@
             "sv": "Tvåspringarförsvaret, Polerioförsvaret, Yankovichvarianten",
             "da": "Tospringerforsvaret, Polerioforsvaret, Yankovichvarianten",
             "nb": "Tospringerforsvaret, Polerioforsvaret, Yankovichvarianten",
-            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Yankovich-muunnelma"
+            "fi": "Kaksiratsupuolustus, Polerio-puolustus, Yankovich-muunnelma",
+            "ru": "Защита двух коней, Защита Полерио, Вариант Янковича",
+            "uk": "Захист двох коней, Захист Полеріо, Варіант Янковича"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Polerio Defense, Yankovich Variation",
@@ -685,7 +735,9 @@
             "sv": "Tvåspringarförsvaret, Maróczyvarianten",
             "da": "Tospringerforsvaret, Maróczyvarianten",
             "nb": "Tospringerforsvaret, Maróczyvarianten",
-            "fi": "Kaksiratsupuolustus, Maróczy-muunnelma"
+            "fi": "Kaksiratsupuolustus, Maróczy-muunnelma",
+            "ru": "Защита двух коней, Вариант Мароци",
+            "uk": "Захист двох коней, Варіант Мароці"
           },
           "eco": "C58",
           "opening": "Italian Game: Two Knights Defense, Maróczy Variation",
@@ -712,7 +764,9 @@
             "sv": "Tvåspringarförsvaret, Klossgambit",
             "da": "Tospringerforsvaret, Klossgambit",
             "nb": "Tospringerforsvaret, Klossgambit",
-            "fi": "Kaksiratsupuolustus, Kloss-gambiitti"
+            "fi": "Kaksiratsupuolustus, Kloss-gambiitti",
+            "ru": "Защита двух коней, Гамбит Клосса",
+            "uk": "Захист двох коней, Гамбіт Клосса"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Kloss Gambit",
@@ -739,7 +793,9 @@
             "sv": "Tvåspringarförsvaret, Fritzvarianten",
             "da": "Tospringerforsvaret, Fritzvarianten",
             "nb": "Tospringerforsvaret, Fritzvarianten",
-            "fi": "Kaksiratsupuolustus, Fritz-muunnelma"
+            "fi": "Kaksiratsupuolustus, Fritz-muunnelma",
+            "ru": "Защита двух коней, Вариант Фрица",
+            "uk": "Захист двох коней, Варіант Фріца"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Fritz Variation",
@@ -766,7 +822,9 @@
             "sv": "Tvåspringarförsvaret, Fritz, Grubervarianten",
             "da": "Tospringerforsvaret, Fritz, Grubervarianten",
             "nb": "Tospringerforsvaret, Fritz, Grubervarianten",
-            "fi": "Kaksiratsupuolustus, Fritz, Gruber-muunnelma"
+            "fi": "Kaksiratsupuolustus, Fritz, Gruber-muunnelma",
+            "ru": "Защита двух коней, Фриц, Вариант Грубера",
+            "uk": "Захист двох коней, Фріц, Варіант Грубера"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Fritz, Gruber Variation",
@@ -793,7 +851,9 @@
             "sv": "Tvåspringarförsvaret, Fried Liver-attacken",
             "da": "Tospringerforsvaret, Fried Liver-angrebet",
             "nb": "Tospringerforsvaret, Fried Liver-angrepet",
-            "fi": "Kaksiratsupuolustus, Fried Liver-hyökkäys"
+            "fi": "Kaksiratsupuolustus, Fried Liver-hyökkäys",
+            "ru": "Защита двух коней, Атака «Жареная печень»",
+            "uk": "Захист двох коней, Атака «Смажена печінка»"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Fried Liver Attack",
@@ -820,7 +880,9 @@
             "sv": "Tvåspringarförsvaret, Fegatelloattacken, Leonhardtvarianten",
             "da": "Tospringerforsvaret, Fegatelloangrebet, Leonhardtvarianten",
             "nb": "Tospringerforsvaret, Fegatelloangrepet, Leonhardtvarianten",
-            "fi": "Kaksiratsupuolustus, Fegatello-hyökkäys, Leonhardt-muunnelma"
+            "fi": "Kaksiratsupuolustus, Fegatello-hyökkäys, Leonhardt-muunnelma",
+            "ru": "Защита двух коней, Атака «Фегателло», Вариант Леонхардта",
+            "uk": "Захист двох коней, Атака «Фегателло», Варіант Леонгардта"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Fegatello Attack, Leonhardt Variation",
@@ -847,7 +909,9 @@
             "sv": "Tvåspringarförsvaret, Lolliattacken",
             "da": "Tospringerforsvaret, Lolliangrebet",
             "nb": "Tospringerforsvaret, Lolliangrepet",
-            "fi": "Kaksiratsupuolustus, Lolli-hyökkäys"
+            "fi": "Kaksiratsupuolustus, Lolli-hyökkäys",
+            "ru": "Защита двух коней, Атака Лолли",
+            "uk": "Захист двох коней, Атака Лоллі"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Lolli Attack",
@@ -874,7 +938,9 @@
             "sv": "Tvåspringarförsvaret, Pincusvarianten",
             "da": "Tospringerforsvaret, Pincusvarianten",
             "nb": "Tospringerforsvaret, Pincusvarianten",
-            "fi": "Kaksiratsupuolustus, Pincus-muunnelma"
+            "fi": "Kaksiratsupuolustus, Pincus-muunnelma",
+            "ru": "Защита двух коней, Вариант Пинкуса",
+            "uk": "Захист двох коней, Варіант Пінкуса"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Pincus Variation",
@@ -901,7 +967,9 @@
             "sv": "Tvåspringarförsvaret, Ulvestadvarianten",
             "da": "Tospringerforsvaret, Ulvestadvarianten",
             "nb": "Tospringerforsvaret, Ulvestadvarianten",
-            "fi": "Kaksiratsupuolustus, Ulvestad-muunnelma"
+            "fi": "Kaksiratsupuolustus, Ulvestad-muunnelma",
+            "ru": "Защита двух коней, Вариант Ульвестада",
+            "uk": "Захист двох коней, Варіант Ульвестада"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Ulvestad Variation",
@@ -928,7 +996,9 @@
             "sv": "Tvåspringarförsvaret, Ulvestadvarianten, Kurkingambit",
             "da": "Tospringerforsvaret, Ulvestadvarianten, Kurkingambit",
             "nb": "Tospringerforsvaret, Ulvestadvarianten, Kurkingambit",
-            "fi": "Kaksiratsupuolustus, Ulvestad-muunnelma, Kurkin-gambiitti"
+            "fi": "Kaksiratsupuolustus, Ulvestad-muunnelma, Kurkin-gambiitti",
+            "ru": "Защита двух коней, Вариант Ульвестада, Гамбит Куркина",
+            "uk": "Захист двох коней, Варіант Ульвестада, Гамбіт Куркіна"
           },
           "eco": "C57",
           "opening": "Italian Game: Two Knights Defense, Ulvestad Variation, Kurkin Gambit",
@@ -955,7 +1025,9 @@
             "sv": "Tvåspringarförsvaret",
             "da": "Tospringerforsvaret",
             "nb": "Tospringerforsvaret",
-            "fi": "Kaksiratsupuolustus"
+            "fi": "Kaksiratsupuolustus",
+            "ru": "Защита двух коней",
+            "uk": "Захист двох коней"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense",
@@ -982,7 +1054,9 @@
             "sv": "Tvåspringarförsvaret, Moderna löparöppningen",
             "da": "Tospringerforsvaret, Moderne løberåbning",
             "nb": "Tospringerforsvaret, Moderne løperåpning",
-            "fi": "Kaksiratsupuolustus, Moderni lähettiavaus"
+            "fi": "Kaksiratsupuolustus, Moderni lähettiavaus",
+            "ru": "Защита двух коней, Современное начало слона",
+            "uk": "Захист двох коней, Сучасний початок слона"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
@@ -1009,7 +1083,9 @@
             "sv": "Tvåspringarförsvaret, Moderna löparöppningen",
             "da": "Tospringerforsvaret, Moderne løberåbning",
             "nb": "Tospringerforsvaret, Moderne løperåpning",
-            "fi": "Kaksiratsupuolustus, Moderni lähettiavaus"
+            "fi": "Kaksiratsupuolustus, Moderni lähettiavaus",
+            "ru": "Защита двух коней, Современное начало слона",
+            "uk": "Захист двох коней, Сучасний початок слона"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
@@ -1036,7 +1112,9 @@
             "sv": "Tvåspringarförsvaret, Moderna löparöppningen",
             "da": "Tospringerforsvaret, Moderne løberåbning",
             "nb": "Tospringerforsvaret, Moderne løperåpning",
-            "fi": "Kaksiratsupuolustus, Moderni lähettiavaus"
+            "fi": "Kaksiratsupuolustus, Moderni lähettiavaus",
+            "ru": "Защита двух коней, Современное начало слона",
+            "uk": "Захист двох коней, Сучасний початок слона"
           },
           "eco": "C55",
           "opening": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
@@ -1063,7 +1141,9 @@
             "sv": "Tvåspringarförsvaret, Öppna varianten",
             "da": "Tospringerforsvaret, Åben variant",
             "nb": "Tospringerforsvaret, Åpen variant",
-            "fi": "Kaksiratsupuolustus, Avoin muunnelma"
+            "fi": "Kaksiratsupuolustus, Avoin muunnelma",
+            "ru": "Защита двух коней, Открытый вариант",
+            "uk": "Захист двох коней, Відкритий варіант"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Open Variation",
@@ -1090,7 +1170,9 @@
             "sv": "Tvåspringarförsvaret, Perreuxvarianten",
             "da": "Tospringerforsvaret, Perreuxvarianten",
             "nb": "Tospringerforsvaret, Perreuxvarianten",
-            "fi": "Kaksiratsupuolustus, Perreux-muunnelma"
+            "fi": "Kaksiratsupuolustus, Perreux-muunnelma",
+            "ru": "Защита двух коней, Вариант Перрё",
+            "uk": "Захист двох коней, Варіант Перре"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Perreux Variation",
@@ -1117,7 +1199,9 @@
             "sv": "Tvåspringarförsvaret, Max Langeattacken, Krausevarianten",
             "da": "Tospringerforsvaret, Max Langeangrebet, Krausevarianten",
             "nb": "Tospringerforsvaret, Max Langeangrepet, Krausevarianten",
-            "fi": "Kaksiratsupuolustus, Max Lange-hyökkäys, Krause-muunnelma"
+            "fi": "Kaksiratsupuolustus, Max Lange-hyökkäys, Krause-muunnelma",
+            "ru": "Защита двух коней, Атака Макса Ланге, Вариант Краузе",
+            "uk": "Захист двох коней, Атака Макса Ланге, Варіант Краузе"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Krause Variation",
@@ -1144,7 +1228,9 @@
             "sv": "Tvåspringarförsvaret, Max Langeattacken, Rubinsteinvarianten",
             "da": "Tospringerforsvaret, Max Langeangrebet, Rubinsteinvarianten",
             "nb": "Tospringerforsvaret, Max Langeangrepet, Rubinsteinvarianten",
-            "fi": "Kaksiratsupuolustus, Max Lange-hyökkäys, Rubinstein-muunnelma"
+            "fi": "Kaksiratsupuolustus, Max Lange-hyökkäys, Rubinstein-muunnelma",
+            "ru": "Защита двух коней, Атака Макса Ланге, Вариант Рубинштейна",
+            "uk": "Захист двох коней, Атака Макса Ланге, Варіант Рубінштейна"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Rubinstein Variation",
@@ -1171,7 +1257,9 @@
             "sv": "Tvåspringarförsvaret, Max Langeattacken, Bergervarianten",
             "da": "Tospringerforsvaret, Max Langeangrebet, Bergervarianten",
             "nb": "Tospringerforsvaret, Max Langeangrepet, Bergervarianten",
-            "fi": "Kaksiratsupuolustus, Max Lange-hyökkäys, Berger-muunnelma"
+            "fi": "Kaksiratsupuolustus, Max Lange-hyökkäys, Berger-muunnelma",
+            "ru": "Защита двух коней, Атака Макса Ланге, Вариант Бергера",
+            "uk": "Захист двох коней, Атака Макса Ланге, Варіант Бергера"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Berger Variation",
@@ -1198,7 +1286,9 @@
             "sv": "Tvåspringarförsvaret, Keidanskyvarianten",
             "da": "Tospringerforsvaret, Keidanskyvarianten",
             "nb": "Tospringerforsvaret, Keidanskyvarianten",
-            "fi": "Kaksiratsupuolustus, Keidansky-muunnelma"
+            "fi": "Kaksiratsupuolustus, Keidansky-muunnelma",
+            "ru": "Защита двух коней, Вариант Кейданского",
+            "uk": "Захист двох коней, Варіант Кейданського"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Keidansky Variation",
@@ -1225,7 +1315,9 @@
             "sv": "Tvåspringarförsvaret, Max Langeattacken, Lomanförsvaret",
             "da": "Tospringerforsvaret, Max Langeangrebet, Lomanforsvaret",
             "nb": "Tospringerforsvaret, Max Langeangrepet, Lomanforsvaret",
-            "fi": "Kaksiratsupuolustus, Max Lange-hyökkäys, Loman-puolustus"
+            "fi": "Kaksiratsupuolustus, Max Lange-hyökkäys, Loman-puolustus",
+            "ru": "Защита двух коней, Атака Макса Ланге, Защита Ломана",
+            "uk": "Захист двох коней, Атака Макса Ланге, Захист Ломана"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Max Lange Attack, Loman Defense",
@@ -1252,7 +1344,9 @@
             "sv": "Tvåspringarförsvaret, Max Langeattacken",
             "da": "Tospringerforsvaret, Max Langeangrebet",
             "nb": "Tospringerforsvaret, Max Langeangrepet",
-            "fi": "Kaksiratsupuolustus, Max Lange-hyökkäys"
+            "fi": "Kaksiratsupuolustus, Max Lange-hyökkäys",
+            "ru": "Защита двух коней, Атака Макса Ланге",
+            "uk": "Захист двох коней, Атака Макса Ланге"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Max Lange Attack",
@@ -1279,7 +1373,9 @@
             "sv": "Tvåspringarförsvaret, Yurdanskyattacken",
             "da": "Tospringerforsvaret, Yurdanskyangrebet",
             "nb": "Tospringerforsvaret, Yurdanskyangrepet",
-            "fi": "Kaksiratsupuolustus, Yurdansky-hyökkäys"
+            "fi": "Kaksiratsupuolustus, Yurdansky-hyökkäys",
+            "ru": "Защита двух коней, Атака Юрданского",
+            "uk": "Захист двох коней, Атака Юрданського"
           },
           "eco": "C56",
           "opening": "Italian Game: Two Knights Defense, Yurdansky Attack",
@@ -1307,7 +1403,9 @@
         "sv": "Klassiska varianten",
         "da": "Klassisk variant",
         "nb": "Klassisk variant",
-        "fi": "Klassinen muunnelma"
+        "fi": "Klassinen muunnelma",
+        "ru": "Классический вариант",
+        "uk": "Класичний варіант"
       },
       "lines": [
         {
@@ -1330,7 +1428,9 @@
             "sv": "Klassiska varianten, Albingambit",
             "da": "Klassisk variant, Albingambit",
             "nb": "Klassisk variant, Albingambit",
-            "fi": "Klassinen muunnelma, Albin-gambiitti"
+            "fi": "Klassinen muunnelma, Albin-gambiitti",
+            "ru": "Классический вариант, Гамбит Альбина",
+            "uk": "Класичний варіант, Гамбіт Альбіна"
           },
           "eco": "C50",
           "opening": "Italian Game: Classical Variation, Albin Gambit",
@@ -1357,7 +1457,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1384,7 +1486,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo, med a5",
             "da": "Klassisk variant, Giuoco Pianissimo, med a5",
             "nb": "Klassisk variant, Giuoco Pianissimo, med a5",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo, jossa a5"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo, jossa a5",
+            "ru": "Классический вариант, Джуоко пианиссимо, с a5",
+            "uk": "Класичний варіант, Джуоко піаніссімо, з a5"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a5",
@@ -1411,7 +1515,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1438,7 +1544,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1465,7 +1573,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1492,7 +1602,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1519,7 +1631,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1546,7 +1660,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1573,7 +1689,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1600,7 +1718,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1627,7 +1747,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1654,7 +1776,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1681,7 +1805,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo, med h6",
             "da": "Klassisk variant, Giuoco Pianissimo, med h6",
             "nb": "Klassisk variant, Giuoco Pianissimo, med h6",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo, jossa h6"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo, jossa h6",
+            "ru": "Классический вариант, Джуоко пианиссимо, с h6",
+            "uk": "Класичний варіант, Джуоко піаніссімо, з h6"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with h6",
@@ -1708,7 +1834,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1735,7 +1863,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1762,7 +1892,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1789,7 +1921,9 @@
             "sv": "Klassiska varianten",
             "da": "Klassisk variant",
             "nb": "Klassisk variant",
-            "fi": "Klassinen muunnelma"
+            "fi": "Klassinen muunnelma",
+            "ru": "Классический вариант",
+            "uk": "Класичний варіант"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation",
@@ -1816,7 +1950,9 @@
             "sv": "Klassiska varianten",
             "da": "Klassisk variant",
             "nb": "Klassisk variant",
-            "fi": "Klassinen muunnelma"
+            "fi": "Klassinen muunnelma",
+            "ru": "Классический вариант",
+            "uk": "Класичний варіант"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation",
@@ -1843,7 +1979,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1870,7 +2008,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo, med a6",
             "da": "Klassisk variant, Giuoco Pianissimo, med a6",
             "nb": "Klassisk variant, Giuoco Pianissimo, med a6",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo, jossa a6"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo, jossa a6",
+            "ru": "Классический вариант, Джуоко пианиссимо, с a6",
+            "uk": "Класичний варіант, Джуоко піаніссімо, з a6"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a6",
@@ -1897,7 +2037,9 @@
             "sv": "Klassiska varianten, med d5",
             "da": "Klassisk variant, med d5",
             "nb": "Klassisk variant, med d5",
-            "fi": "Klassinen muunnelma, jossa d5"
+            "fi": "Klassinen muunnelma, jossa d5",
+            "ru": "Классический вариант, с d5",
+            "uk": "Класичний варіант, з d5"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, with d5",
@@ -1924,7 +2066,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1951,7 +2095,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo",
             "da": "Klassisk variant, Giuoco Pianissimo",
             "nb": "Klassisk variant, Giuoco Pianissimo",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo",
+            "ru": "Классический вариант, Джуоко пианиссимо",
+            "uk": "Класичний варіант, Джуоко піаніссімо"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo",
@@ -1978,7 +2124,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo, med a6",
             "da": "Klassisk variant, Giuoco Pianissimo, med a6",
             "nb": "Klassisk variant, Giuoco Pianissimo, med a6",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo, jossa a6"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo, jossa a6",
+            "ru": "Классический вариант, Джуоко пианиссимо, с a6",
+            "uk": "Класичний варіант, Джуоко піаніссімо, з a6"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a6",
@@ -2005,7 +2153,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo, Huvudvariant",
             "da": "Klassisk variant, Giuoco Pianissimo, Hovedvariant",
             "nb": "Klassisk variant, Giuoco Pianissimo, Hovedvariant",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo, Päämuunnelma"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo, Päämuunnelma",
+            "ru": "Классический вариант, Джуоко пианиссимо, Основной вариант",
+            "uk": "Класичний варіант, Джуоко піаніссімо, Основний варіант"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, Main Line",
@@ -2032,7 +2182,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo, med a4 a5",
             "da": "Klassisk variant, Giuoco Pianissimo, med a4 a5",
             "nb": "Klassisk variant, Giuoco Pianissimo, med a4 a5",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo, jossa a4 a5"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo, jossa a4 a5",
+            "ru": "Классический вариант, Джуоко пианиссимо, с a4 a5",
+            "uk": "Класичний варіант, Джуоко піаніссімо, з a4 a5"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, with a4 a5",
@@ -2059,7 +2211,9 @@
             "sv": "Klassiska varianten, Giuoco Pianissimo, Albinvarianten",
             "da": "Klassisk variant, Giuoco Pianissimo, Albinvarianten",
             "nb": "Klassisk variant, Giuoco Pianissimo, Albinvarianten",
-            "fi": "Klassinen muunnelma, Giuoco Pianissimo, Albin-muunnelma"
+            "fi": "Klassinen muunnelma, Giuoco Pianissimo, Albin-muunnelma",
+            "ru": "Классический вариант, Джуоко пианиссимо, Вариант Альбина",
+            "uk": "Класичний варіант, Джуоко піаніссімо, Варіант Альбіна"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Giuoco Pianissimo, Albin Variation",
@@ -2086,7 +2240,9 @@
             "sv": "Klassiska varianten, Centrumattacken",
             "da": "Klassisk variant, Centerangrebet",
             "nb": "Klassisk variant, Sentrumangrepet",
-            "fi": "Klassinen muunnelma, Keskushyökkäys"
+            "fi": "Klassinen muunnelma, Keskushyökkäys",
+            "ru": "Классический вариант, Центральная атака",
+            "uk": "Класичний варіант, Центральна атака"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Center Attack",
@@ -2113,7 +2269,9 @@
             "sv": "Klassiska varianten, Grecogambit, Dubovs italienska",
             "da": "Klassisk variant, Grecogambit, Dubovs italienske",
             "nb": "Klassisk variant, Grecogambit, Dubovs italienske",
-            "fi": "Klassinen muunnelma, Greco-gambiitti, Dubovin italialainen"
+            "fi": "Klassinen muunnelma, Greco-gambiitti, Dubovin italialainen",
+            "ru": "Классический вариант, Гамбит Греко, Итальянская Дубова",
+            "uk": "Класичний варіант, Гамбіт Греко, Італійська Дубова"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Dubov Italian",
@@ -2140,7 +2298,9 @@
             "sv": "Klassiska varianten, Grecogambit, Traditionella varianten",
             "da": "Klassisk variant, Grecogambit, Traditionel variant",
             "nb": "Klassisk variant, Grecogambit, Tradisjonell variant",
-            "fi": "Klassinen muunnelma, Greco-gambiitti, Perinteinen linja"
+            "fi": "Klassinen muunnelma, Greco-gambiitti, Perinteinen linja",
+            "ru": "Классический вариант, Гамбит Греко, Традиционная линия",
+            "uk": "Класичний варіант, Гамбіт Греко, Традиційна лінія"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Traditional Line",
@@ -2167,7 +2327,9 @@
             "sv": "Klassiska varianten, Grecogambit, Huvudvariant",
             "da": "Klassisk variant, Grecogambit, Hovedvariant",
             "nb": "Klassisk variant, Grecogambit, Hovedvariant",
-            "fi": "Klassinen muunnelma, Greco-gambiitti, Päämuunnelma"
+            "fi": "Klassinen muunnelma, Greco-gambiitti, Päämuunnelma",
+            "ru": "Классический вариант, Гамбит Греко, Основной вариант",
+            "uk": "Класичний варіант, Гамбіт Греко, Основний варіант"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Main Line",
@@ -2194,7 +2356,9 @@
             "sv": "Klassiska varianten, Grecogambit, Moeller-Therkatzattacken",
             "da": "Klassisk variant, Grecogambit, Moeller-Therkatzangrebet",
             "nb": "Klassisk variant, Grecogambit, Moeller-Therkatzangrepet",
-            "fi": "Klassinen muunnelma, Greco-gambiitti, Moeller-Therkatz-hyökkäys"
+            "fi": "Klassinen muunnelma, Greco-gambiitti, Moeller-Therkatz-hyökkäys",
+            "ru": "Классический вариант, Гамбит Греко, Атака Мёллера-Теркаца",
+            "uk": "Класичний варіант, Гамбіт Греко, Атака Меллера-Теркаца"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Moeller-Therkatz Attack",
@@ -2221,7 +2385,9 @@
             "sv": "Klassiska varianten, Grecogambit, Moeller-bajonettattacken",
             "da": "Klassisk variant, Grecogambit, Moeller-bajonetangrebet",
             "nb": "Klassisk variant, Grecogambit, Moeller-bajonettangrepet",
-            "fi": "Klassinen muunnelma, Greco-gambiitti, Moeller-pistinhyökkäys"
+            "fi": "Klassinen muunnelma, Greco-gambiitti, Moeller-pistinhyökkäys",
+            "ru": "Классический вариант, Гамбит Греко, Атака Мёллера со штыком",
+            "uk": "Класичний варіант, Гамбіт Греко, Атака Меллера з багнетом"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Moeller-Bayonet Attack",
@@ -2248,7 +2414,9 @@
             "sv": "Klassiska varianten, Grecogambit, Grecovarianten",
             "da": "Klassisk variant, Grecogambit, Grecovarianten",
             "nb": "Klassisk variant, Grecogambit, Grecovarianten",
-            "fi": "Klassinen muunnelma, Greco-gambiitti, Greco-muunnelma"
+            "fi": "Klassinen muunnelma, Greco-gambiitti, Greco-muunnelma",
+            "ru": "Классический вариант, Гамбит Греко, Вариант Греко",
+            "uk": "Класичний варіант, Гамбіт Греко, Варіант Греко"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Greco Variation",
@@ -2275,7 +2443,9 @@
             "sv": "Klassiska varianten, Grecogambit, Moderna varianten",
             "da": "Klassisk variant, Grecogambit, Moderne variant",
             "nb": "Klassisk variant, Grecogambit, Moderne variant",
-            "fi": "Klassinen muunnelma, Greco-gambiitti, Moderni linja"
+            "fi": "Klassinen muunnelma, Greco-gambiitti, Moderni linja",
+            "ru": "Классический вариант, Гамбит Греко, Современная линия",
+            "uk": "Класичний варіант, Гамбіт Греко, Сучасна лінія"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Modern Line",
@@ -2302,7 +2472,9 @@
             "sv": "Klassiska varianten, Ghulam-Kassimvarianten",
             "da": "Klassisk variant, Ghulam-Kassimvarianten",
             "nb": "Klassisk variant, Ghulam-Kassimvarianten",
-            "fi": "Klassinen muunnelma, Ghulam-Kassim-muunnelma"
+            "fi": "Klassinen muunnelma, Ghulam-Kassim-muunnelma",
+            "ru": "Классический вариант, Вариант Гулама-Касима",
+            "uk": "Класичний варіант, Варіант Гулама-Касима"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Ghulam-Kassim Variation",
@@ -2329,7 +2501,9 @@
             "sv": "Klassiska varianten, Grecogambit, Moderna varianten",
             "da": "Klassisk variant, Grecogambit, Moderne variant",
             "nb": "Klassisk variant, Grecogambit, Moderne variant",
-            "fi": "Klassinen muunnelma, Greco-gambiitti, Moderni linja"
+            "fi": "Klassinen muunnelma, Greco-gambiitti, Moderni linja",
+            "ru": "Классический вариант, Гамбит Греко, Современная линия",
+            "uk": "Класичний варіант, Гамбіт Греко, Сучасна лінія"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Modern Line",
@@ -2356,7 +2530,9 @@
             "sv": "Klassiska varianten, Grecogambit, Anderssenvarianten",
             "da": "Klassisk variant, Grecogambit, Anderssenvarianten",
             "nb": "Klassisk variant, Grecogambit, Anderssenvarianten",
-            "fi": "Klassinen muunnelma, Greco-gambiitti, Anderssen-muunnelma"
+            "fi": "Klassinen muunnelma, Greco-gambiitti, Anderssen-muunnelma",
+            "ru": "Классический вариант, Гамбит Греко, Вариант Андерсена",
+            "uk": "Класичний варіант, Гамбіт Греко, Варіант Андерсена"
           },
           "eco": "C54",
           "opening": "Italian Game: Classical Variation, Greco Gambit, Anderssen Variation",
@@ -2383,7 +2559,9 @@
             "sv": "Klassiska varianten, Stängda varianten",
             "da": "Klassisk variant, Lukket variant",
             "nb": "Klassisk variant, Lukket variant",
-            "fi": "Klassinen muunnelma, Suljettu muunnelma"
+            "fi": "Klassinen muunnelma, Suljettu muunnelma",
+            "ru": "Классический вариант, Закрытый вариант",
+            "uk": "Класичний варіант, Закритий варіант"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, Closed Variation",
@@ -2410,7 +2588,9 @@
             "sv": "Klassiska varianten, Centrumhållningsvarianten",
             "da": "Klassisk variant, Centerfastholdelsesvarianten",
             "nb": "Klassisk variant, Sentrumholdingsvarianten",
-            "fi": "Klassinen muunnelma, Keskuksenpitomuunnelma"
+            "fi": "Klassinen muunnelma, Keskuksenpitomuunnelma",
+            "ru": "Классический вариант, Вариант с удержанием центра",
+            "uk": "Класичний варіант, Варіант з утриманням центру"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, Center Holding Variation",
@@ -2437,7 +2617,9 @@
             "sv": "Klassiska varianten, Mestelvarianten",
             "da": "Klassisk variant, Mestelvarianten",
             "nb": "Klassisk variant, Mestelvarianten",
-            "fi": "Klassinen muunnelma, Mestel-muunnelma"
+            "fi": "Klassinen muunnelma, Mestel-muunnelma",
+            "ru": "Классический вариант, Вариант Местела",
+            "uk": "Класичний варіант, Варіант Местела"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, Mestel Variation",
@@ -2464,7 +2646,9 @@
             "sv": "Klassiska varianten, Tarraschvarianten",
             "da": "Klassisk variant, Tarraschvarianten",
             "nb": "Klassisk variant, Tarraschvarianten",
-            "fi": "Klassinen muunnelma, Tarrasch-muunnelma"
+            "fi": "Klassinen muunnelma, Tarrasch-muunnelma",
+            "ru": "Классический вариант, Вариант Тарраша",
+            "uk": "Класичний варіант, Варіант Тарраша"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, Tarrasch Variation",
@@ -2491,7 +2675,9 @@
             "sv": "Klassiska varianten, Eisingervarianten",
             "da": "Klassisk variant, Eisingervarianten",
             "nb": "Klassisk variant, Eisingervarianten",
-            "fi": "Klassinen muunnelma, Eisinger-muunnelma"
+            "fi": "Klassinen muunnelma, Eisinger-muunnelma",
+            "ru": "Классический вариант, Вариант Айзингера",
+            "uk": "Класичний варіант, Варіант Айзінгера"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, Eisinger Variation",
@@ -2518,7 +2704,9 @@
             "sv": "Klassiska varianten, La Bourdonnaisvarianten",
             "da": "Klassisk variant, La Bourdonnaisvarianten",
             "nb": "Klassisk variant, La Bourdonnaisvarianten",
-            "fi": "Klassinen muunnelma, La Bourdonnais-muunnelma"
+            "fi": "Klassinen muunnelma, La Bourdonnais-muunnelma",
+            "ru": "Классический вариант, Вариант Лабурдоне",
+            "uk": "Класичний варіант, Варіант Лабурдоне"
           },
           "eco": "C53",
           "opening": "Italian Game: Classical Variation, La Bourdonnais Variation",
@@ -2546,7 +2734,9 @@
         "sv": "Evansgambit",
         "da": "Evansgambit",
         "nb": "Evansgambit",
-        "fi": "Evans-gambiitti"
+        "fi": "Evans-gambiitti",
+        "ru": "Гамбит Эванса",
+        "uk": "Гамбіт Еванса"
       },
       "lines": [
         {
@@ -2569,7 +2759,9 @@
             "sv": "Evansgambit",
             "da": "Evansgambit",
             "nb": "Evansgambit",
-            "fi": "Evans-gambiitti"
+            "fi": "Evans-gambiitti",
+            "ru": "Гамбит Эванса",
+            "uk": "Гамбіт Еванса"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit",
@@ -2596,7 +2788,9 @@
             "sv": "Evansgambit, Huvudvariant",
             "da": "Evansgambit, Hovedvariant",
             "nb": "Evansgambit, Hovedvariant",
-            "fi": "Evans-gambiitti, Päämuunnelma"
+            "fi": "Evans-gambiitti, Päämuunnelma",
+            "ru": "Гамбит Эванса, Основной вариант",
+            "uk": "Гамбіт Еванса, Основний варіант"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Main Line",
@@ -2623,7 +2817,9 @@
             "sv": "Evansgambit, Långsamma varianten",
             "da": "Evansgambit, Langsom variant",
             "nb": "Evansgambit, Langsom variant",
-            "fi": "Evans-gambiitti, Hidas muunnelma"
+            "fi": "Evans-gambiitti, Hidas muunnelma",
+            "ru": "Гамбит Эванса, Медленный вариант",
+            "uk": "Гамбіт Еванса, Повільний варіант"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Slow Variation",
@@ -2650,7 +2846,9 @@
             "sv": "Evansgambit, Richardsonattacken",
             "da": "Evansgambit, Richardsonangrebet",
             "nb": "Evansgambit, Richardsonangrepet",
-            "fi": "Evans-gambiitti, Richardson-hyökkäys"
+            "fi": "Evans-gambiitti, Richardson-hyökkäys",
+            "ru": "Гамбит Эванса, Атака Ричардсона",
+            "uk": "Гамбіт Еванса, Атака Річардсона"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Richardson Attack",
@@ -2677,7 +2875,9 @@
             "sv": "Evansgambit, Anderssenförsvaret",
             "da": "Evansgambit, Anderssenforsvaret",
             "nb": "Evansgambit, Anderssenforsvaret",
-            "fi": "Evans-gambiitti, Anderssen-puolustus"
+            "fi": "Evans-gambiitti, Anderssen-puolustus",
+            "ru": "Гамбит Эванса, Защита Андерсена",
+            "uk": "Гамбіт Еванса, Захист Андерсена"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Anderssen Defense",
@@ -2704,7 +2904,9 @@
             "sv": "Evansgambit",
             "da": "Evansgambit",
             "nb": "Evansgambit",
-            "fi": "Evans-gambiitti"
+            "fi": "Evans-gambiitti",
+            "ru": "Гамбит Эванса",
+            "uk": "Гамбіт Еванса"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit",
@@ -2731,7 +2933,9 @@
             "sv": "Evansgambit, Laskerförsvaret",
             "da": "Evansgambit, Laskerforsvaret",
             "nb": "Evansgambit, Laskerforsvaret",
-            "fi": "Evans-gambiitti, Lasker-puolustus"
+            "fi": "Evans-gambiitti, Lasker-puolustus",
+            "ru": "Гамбит Эванса, Защита Ласкера",
+            "uk": "Гамбіт Еванса, Захист Ласкера"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Lasker Defense",
@@ -2758,7 +2962,9 @@
             "sv": "Evansgambit, Sanders-Alapinvarianten",
             "da": "Evansgambit, Sanders-Alapinvarianten",
             "nb": "Evansgambit, Sanders-Alapinvarianten",
-            "fi": "Evans-gambiitti, Sanders-Alapin-muunnelma"
+            "fi": "Evans-gambiitti, Sanders-Alapin-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Сандерса-Алапина",
+            "uk": "Гамбіт Еванса, Варіант Сандерса-Алапіна"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Sanders-Alapin Variation",
@@ -2785,7 +2991,9 @@
             "sv": "Evansgambit, Alapin-Steinitzvarianten",
             "da": "Evansgambit, Alapin-Steinitzvarianten",
             "nb": "Evansgambit, Alapin-Steinitzvarianten",
-            "fi": "Evans-gambiitti, Alapin-Steinitz-muunnelma"
+            "fi": "Evans-gambiitti, Alapin-Steinitz-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Алапина-Стейница",
+            "uk": "Гамбіт Еванса, Варіант Алапіна-Стейніца"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Alapin-Steinitz Variation",
@@ -2812,7 +3020,9 @@
             "sv": "Evansgambit, Larochevarianten",
             "da": "Evansgambit, Larochevarianten",
             "nb": "Evansgambit, Larochevarianten",
-            "fi": "Evans-gambiitti, Laroche-muunnelma"
+            "fi": "Evans-gambiitti, Laroche-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Ларош",
+            "uk": "Гамбіт Еванса, Варіант Ларош"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Laroche Variation",
@@ -2839,7 +3049,9 @@
             "sv": "Evansgambit, Leonhardtmotgambit",
             "da": "Evansgambit, Leonhardtmodgambit",
             "nb": "Evansgambit, Leonhardtmotgambit",
-            "fi": "Evans-gambiitti, Leonhardt-vastagambiitti"
+            "fi": "Evans-gambiitti, Leonhardt-vastagambiitti",
+            "ru": "Гамбит Эванса, Контргамбит Леонхардта",
+            "uk": "Гамбіт Еванса, Контргамбіт Леонгардта"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Leonhardt Countergambit",
@@ -2866,7 +3078,9 @@
             "sv": "Evansgambit, Bronsteinförsvaret",
             "da": "Evansgambit, Bronsteinforsvaret",
             "nb": "Evansgambit, Bronsteinforsvaret",
-            "fi": "Evans-gambiitti, Bronstein-puolustus"
+            "fi": "Evans-gambiitti, Bronstein-puolustus",
+            "ru": "Гамбит Эванса, Защита Бронштейна",
+            "uk": "Гамбіт Еванса, Захист Бронштейна"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Bronstein Defense",
@@ -2893,7 +3107,9 @@
             "sv": "Evansgambit, Sokolskyvarianten",
             "da": "Evansgambit, Sokolskyvarianten",
             "nb": "Evansgambit, Sokolskyvarianten",
-            "fi": "Evans-gambiitti, Sokolsky-muunnelma"
+            "fi": "Evans-gambiitti, Sokolsky-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Сокольского",
+            "uk": "Гамбіт Еванса, Варіант Сокольського"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Sokolsky Variation",
@@ -2920,7 +3136,9 @@
             "sv": "Evansgambit, Tartakowerattacken",
             "da": "Evansgambit, Tartakowerangrebet",
             "nb": "Evansgambit, Tartakowerangrepet",
-            "fi": "Evans-gambiitti, Tartakower-hyökkäys"
+            "fi": "Evans-gambiitti, Tartakower-hyökkäys",
+            "ru": "Гамбит Эванса, Атака Тартаковера",
+            "uk": "Гамбіт Еванса, Атака Тартаковера"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Tartakower Attack",
@@ -2947,7 +3165,9 @@
             "sv": "Evansgambit, Levenfishvarianten",
             "da": "Evansgambit, Levenfishvarianten",
             "nb": "Evansgambit, Levenfishvarianten",
-            "fi": "Evans-gambiitti, Levenfish-muunnelma"
+            "fi": "Evans-gambiitti, Levenfish-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Левенфиша",
+            "uk": "Гамбіт Еванса, Варіант Левенфіша"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Levenfish Variation",
@@ -2974,7 +3194,9 @@
             "sv": "Evansgambit, Pierceförsvaret",
             "da": "Evansgambit, Pierceforsvaret",
             "nb": "Evansgambit, Pierceforsvaret",
-            "fi": "Evans-gambiitti, Pierce-puolustus"
+            "fi": "Evans-gambiitti, Pierce-puolustus",
+            "ru": "Гамбит Эванса, Защита Пирса",
+            "uk": "Гамбіт Еванса, Захист Пірса"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Pierce Defense",
@@ -3001,7 +3223,9 @@
             "sv": "Evansgambit, Miesesförsvaret",
             "da": "Evansgambit, Miesesforsvaret",
             "nb": "Evansgambit, Miesesforsvaret",
-            "fi": "Evans-gambiitti, Mieses-puolustus"
+            "fi": "Evans-gambiitti, Mieses-puolustus",
+            "ru": "Гамбит Эванса, Защита Мизеса",
+            "uk": "Гамбіт Еванса, Захист Мізеса"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Mieses Defense",
@@ -3028,7 +3252,9 @@
             "sv": "Evansgambit, Johnerförsvaret",
             "da": "Evansgambit, Johnerforsvaret",
             "nb": "Evansgambit, Johnerforsvaret",
-            "fi": "Evans-gambiitti, Johner-puolustus"
+            "fi": "Evans-gambiitti, Johner-puolustus",
+            "ru": "Гамбит Эванса, Защита Йонера",
+            "uk": "Гамбіт Еванса, Захист Йонера"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Johner Defense",
@@ -3055,7 +3281,9 @@
             "sv": "Evansgambit, Dufresneförsvaret",
             "da": "Evansgambit, Dufresneforsvaret",
             "nb": "Evansgambit, Dufresneforsvaret",
-            "fi": "Evans-gambiitti, Dufresne-puolustus"
+            "fi": "Evans-gambiitti, Dufresne-puolustus",
+            "ru": "Гамбит Эванса, Защита Дюфрена",
+            "uk": "Гамбіт Еванса, Захист Дюфрена"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Dufresne Defense",
@@ -3082,7 +3310,9 @@
             "sv": "Evansgambit, Wallerattacken",
             "da": "Evansgambit, Wallerangrebet",
             "nb": "Evansgambit, Wallerangrepet",
-            "fi": "Evans-gambiitti, Waller-hyökkäys"
+            "fi": "Evans-gambiitti, Waller-hyökkäys",
+            "ru": "Гамбит Эванса, Атака Уоллера",
+            "uk": "Гамбіт Еванса, Атака Воллера"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Waller Attack",
@@ -3109,7 +3339,9 @@
             "sv": "Evansgambit, Morphyattacken",
             "da": "Evansgambit, Morphyangrebet",
             "nb": "Evansgambit, Morphyangrepet",
-            "fi": "Evans-gambiitti, Morphy-hyökkäys"
+            "fi": "Evans-gambiitti, Morphy-hyökkäys",
+            "ru": "Гамбит Эванса, Атака Морфи",
+            "uk": "Гамбіт Еванса, Атака Морфі"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Morphy Attack",
@@ -3136,7 +3368,9 @@
             "sv": "Evansgambit, Komprometterade försvaret",
             "da": "Evansgambit, Kompromitteret forsvar",
             "nb": "Evansgambit, Kompromittert forsvar",
-            "fi": "Evans-gambiitti, Kompromissipuolustus"
+            "fi": "Evans-gambiitti, Kompromissipuolustus",
+            "ru": "Гамбит Эванса, Компрометированная защита",
+            "uk": "Гамбіт Еванса, Скомпрометований захист"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Compromised Defense",
@@ -3163,7 +3397,9 @@
             "sv": "Evansgambit, Komprometterade försvaret, Huvudvariant",
             "da": "Evansgambit, Kompromitteret forsvar, Hovedvariant",
             "nb": "Evansgambit, Kompromittert forsvar, Hovedvariant",
-            "fi": "Evans-gambiitti, Kompromissipuolustus, Päämuunnelma"
+            "fi": "Evans-gambiitti, Kompromissipuolustus, Päämuunnelma",
+            "ru": "Гамбит Эванса, Компрометированная защита, Основной вариант",
+            "uk": "Гамбіт Еванса, Скомпрометований захист, Основний варіант"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Compromised Defense, Main Line",
@@ -3190,7 +3426,9 @@
             "sv": "Evansgambit, Komprometterade försvaret, Pottervarianten",
             "da": "Evansgambit, Kompromitteret forsvar, Pottervarianten",
             "nb": "Evansgambit, Kompromittert forsvar, Pottervarianten",
-            "fi": "Evans-gambiitti, Kompromissipuolustus, Potter-muunnelma"
+            "fi": "Evans-gambiitti, Kompromissipuolustus, Potter-muunnelma",
+            "ru": "Гамбит Эванса, Компрометированная защита, Вариант Поттера",
+            "uk": "Гамбіт Еванса, Скомпрометований захист, Варіант Поттера"
           },
           "eco": "C52",
           "opening": "Italian Game: Evans Gambit, Compromised Defense, Potter Variation",
@@ -3217,7 +3455,9 @@
             "sv": "Evansgambit, McDonnellförsvaret",
             "da": "Evansgambit, McDonnellforsvaret",
             "nb": "Evansgambit, McDonnellforsvaret",
-            "fi": "Evans-gambiitti, McDonnell-puolustus"
+            "fi": "Evans-gambiitti, McDonnell-puolustus",
+            "ru": "Гамбит Эванса, Защита Макдоннелла",
+            "uk": "Гамбіт Еванса, Захист Макдоннелла"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, McDonnell Defense",
@@ -3244,7 +3484,9 @@
             "sv": "Evansgambit, McDonnellförsvaret, Huvudvariant",
             "da": "Evansgambit, McDonnellforsvaret, Hovedvariant",
             "nb": "Evansgambit, McDonnellforsvaret, Hovedvariant",
-            "fi": "Evans-gambiitti, McDonnell-puolustus, Päämuunnelma"
+            "fi": "Evans-gambiitti, McDonnell-puolustus, Päämuunnelma",
+            "ru": "Гамбит Эванса, Защита Макдоннелла, Основной вариант",
+            "uk": "Гамбіт Еванса, Захист Макдоннелла, Основний варіант"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, McDonnell Defense, Main Line",
@@ -3271,7 +3513,9 @@
             "sv": "Evansgambit",
             "da": "Evansgambit",
             "nb": "Evansgambit",
-            "fi": "Evans-gambiitti"
+            "fi": "Evans-gambiitti",
+            "ru": "Гамбит Эванса",
+            "uk": "Гамбіт Еванса"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit",
@@ -3298,7 +3542,9 @@
             "sv": "Evansgambit, Fraserattacken",
             "da": "Evansgambit, Fraserangrebet",
             "nb": "Evansgambit, Fraserangrepet",
-            "fi": "Evans-gambiitti, Fraser-hyökkäys"
+            "fi": "Evans-gambiitti, Fraser-hyökkäys",
+            "ru": "Гамбит Эванса, Атака Фрейзера",
+            "uk": "Гамбіт Еванса, Атака Фрейзера"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Fraser Attack",
@@ -3325,7 +3571,9 @@
             "sv": "Evansgambit, Fraser-Mortimerattacken",
             "da": "Evansgambit, Fraser-Mortimerangrebet",
             "nb": "Evansgambit, Fraser-Mortimerangrepet",
-            "fi": "Evans-gambiitti, Fraser-Mortimer-hyökkäys"
+            "fi": "Evans-gambiitti, Fraser-Mortimer-hyökkäys",
+            "ru": "Гамбит Эванса, Атака Фрейзера-Мортимера",
+            "uk": "Гамбіт Еванса, Атака Фрейзера-Мортімера"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Fraser-Mortimer Attack",
@@ -3352,7 +3600,9 @@
             "sv": "Evansgambit, Mortimer-Evansgambit",
             "da": "Evansgambit, Mortimer-Evansgambit",
             "nb": "Evansgambit, Mortimer-Evansgambit",
-            "fi": "Evans-gambiitti, Mortimer-Evans-gambiitti"
+            "fi": "Evans-gambiitti, Mortimer-Evans-gambiitti",
+            "ru": "Гамбит Эванса, Гамбит Мортимера-Эванса",
+            "uk": "Гамбіт Еванса, Гамбіт Мортімера-Еванса"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Mortimer-Evans Gambit",
@@ -3379,7 +3629,9 @@
             "sv": "Evansgambit, Göringattacken",
             "da": "Evansgambit, Göringangrebet",
             "nb": "Evansgambit, Göringangrepet",
-            "fi": "Evans-gambiitti, Göring-hyökkäys"
+            "fi": "Evans-gambiitti, Göring-hyökkäys",
+            "ru": "Гамбит Эванса, Атака Гёринга",
+            "uk": "Гамбіт Еванса, Атака Герінга"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Göring Attack",
@@ -3406,7 +3658,9 @@
             "sv": "Evansgambit, Steinitzvarianten",
             "da": "Evansgambit, Steinitzvarianten",
             "nb": "Evansgambit, Steinitzvarianten",
-            "fi": "Evans-gambiitti, Steinitz-muunnelma"
+            "fi": "Evans-gambiitti, Steinitz-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Стейница",
+            "uk": "Гамбіт Еванса, Варіант Стейніца"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Steinitz Variation",
@@ -3433,7 +3687,9 @@
             "sv": "Evansgambit, Ulvestadvarianten",
             "da": "Evansgambit, Ulvestadvarianten",
             "nb": "Evansgambit, Ulvestadvarianten",
-            "fi": "Evans-gambiitti, Ulvestad-muunnelma"
+            "fi": "Evans-gambiitti, Ulvestad-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Ульвестада",
+            "uk": "Гамбіт Еванса, Варіант Ульвестада"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Ulvestad Variation",
@@ -3460,7 +3716,9 @@
             "sv": "Evansgambit, Paulsenvarianten",
             "da": "Evansgambit, Paulsenvarianten",
             "nb": "Evansgambit, Paulsenvarianten",
-            "fi": "Evans-gambiitti, Paulsen-muunnelma"
+            "fi": "Evans-gambiitti, Paulsen-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Паульсена",
+            "uk": "Гамбіт Еванса, Варіант Паульсена"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Paulsen Variation",
@@ -3487,7 +3745,9 @@
             "sv": "Evansgambit, Hardingvarianten",
             "da": "Evansgambit, Hardingvarianten",
             "nb": "Evansgambit, Hardingvarianten",
-            "fi": "Evans-gambiitti, Harding-muunnelma"
+            "fi": "Evans-gambiitti, Harding-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Хардинга",
+            "uk": "Гамбіт Еванса, Варіант Гардінга"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Harding Variation",
@@ -3514,7 +3774,9 @@
             "sv": "Evansgambit, Stone-Warevarianten",
             "da": "Evansgambit, Stone-Warevarianten",
             "nb": "Evansgambit, Stone-Warevarianten",
-            "fi": "Evans-gambiitti, Stone-Ware-muunnelma"
+            "fi": "Evans-gambiitti, Stone-Ware-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Стоуна-Уэра",
+            "uk": "Гамбіт Еванса, Варіант Стоуна-Уера"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Stone-Ware Variation",
@@ -3541,7 +3803,9 @@
             "sv": "Evansgambit, Anderssenvarianten",
             "da": "Evansgambit, Anderssenvarianten",
             "nb": "Evansgambit, Anderssenvarianten",
-            "fi": "Evans-gambiitti, Anderssen-muunnelma"
+            "fi": "Evans-gambiitti, Anderssen-muunnelma",
+            "ru": "Гамбит Эванса, Вариант Андерсена",
+            "uk": "Гамбіт Еванса, Варіант Андерсена"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Anderssen Variation",
@@ -3568,7 +3832,9 @@
             "sv": "Evansgambit, Anderssenvarianten, Cordelvarianten",
             "da": "Evansgambit, Anderssenvarianten, Cordelvarianten",
             "nb": "Evansgambit, Anderssenvarianten, Cordelvarianten",
-            "fi": "Evans-gambiitti, Anderssen-muunnelma, Cordel-linja"
+            "fi": "Evans-gambiitti, Anderssen-muunnelma, Cordel-linja",
+            "ru": "Гамбит Эванса, Вариант Андерсена, Линия Корделя",
+            "uk": "Гамбіт Еванса, Варіант Андерсена, Лінія Корделя"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Anderssen Variation, Cordel Line",
@@ -3595,7 +3861,9 @@
             "sv": "Evansgambit, Mayetförsvaret",
             "da": "Evansgambit, Mayetforsvaret",
             "nb": "Evansgambit, Mayetforsvaret",
-            "fi": "Evans-gambiitti, Mayet-puolustus"
+            "fi": "Evans-gambiitti, Mayet-puolustus",
+            "ru": "Гамбит Эванса, Защита Майета",
+            "uk": "Гамбіт Еванса, Захист Майєта"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Mayet Defense",
@@ -3622,7 +3890,9 @@
             "sv": "Evansgambit, Fontainemotgambit",
             "da": "Evansgambit, Fontainemodgambit",
             "nb": "Evansgambit, Fontainemotgambit",
-            "fi": "Evans-gambiitti, Fontaine-vastagambiitti"
+            "fi": "Evans-gambiitti, Fontaine-vastagambiitti",
+            "ru": "Гамбит Эванса, Контргамбит Фонтена",
+            "uk": "Гамбіт Еванса, Контргамбіт Фонтена"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Fontaine Countergambit",
@@ -3649,7 +3919,9 @@
             "sv": "Evansgambit, Heinmotgambit",
             "da": "Evansgambit, Heinmodgambit",
             "nb": "Evansgambit, Heinmotgambit",
-            "fi": "Evans-gambiitti, Hein-vastagambiitti"
+            "fi": "Evans-gambiitti, Hein-vastagambiitti",
+            "ru": "Гамбит Эванса, Контргамбит Хайна",
+            "uk": "Гамбіт Еванса, Контргамбіт Гайна"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit, Hein Countergambit",
@@ -3677,7 +3949,9 @@
         "sv": "Skotska gambiten",
         "da": "Skotsk gambit",
         "nb": "Skotsk gambit",
-        "fi": "Skotlantilainen gambiitti"
+        "fi": "Skotlantilainen gambiitti",
+        "ru": "Шотландский гамбит",
+        "uk": "Шотландський гамбіт"
       },
       "lines": [
         {
@@ -3700,7 +3974,9 @@
             "sv": "Skotska gambiten, Max Langeattacken antagen",
             "da": "Skotsk gambit, Max Langeangrebet modtaget",
             "nb": "Skotsk gambit, Max Langeangrepet mottatt",
-            "fi": "Skotlantilainen gambiitti, Max Lange-hyökkäys hyväksytty"
+            "fi": "Skotlantilainen gambiitti, Max Lange-hyökkäys hyväksytty",
+            "ru": "Шотландский гамбит, Принятая атака Макса Ланге",
+            "uk": "Шотландський гамбіт, Прийнята атака Макса Ланге"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Max Lange Attack Accepted",
@@ -3727,7 +4003,9 @@
             "sv": "Skotska gambiten, Walbrodt-Bairdgambit",
             "da": "Skotsk gambit, Walbrodt-Bairdgambit",
             "nb": "Skotsk gambit, Walbrodt-Bairdgambit",
-            "fi": "Skotlantilainen gambiitti, Walbrodt-Baird-gambiitti"
+            "fi": "Skotlantilainen gambiitti, Walbrodt-Baird-gambiitti",
+            "ru": "Шотландский гамбит, Гамбит Вальбродта-Бэрда",
+            "uk": "Шотландський гамбіт, Гамбіт Вальбродта-Берда"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Walbrodt-Baird Gambit",
@@ -3754,7 +4032,9 @@
             "sv": "Skotska gambiten",
             "da": "Skotsk gambit",
             "nb": "Skotsk gambit",
-            "fi": "Skotlantilainen gambiitti"
+            "fi": "Skotlantilainen gambiitti",
+            "ru": "Шотландский гамбит",
+            "uk": "Шотландський гамбіт"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit",
@@ -3781,7 +4061,9 @@
             "sv": "Skotska gambiten, Dubbelgambit antagen",
             "da": "Skotsk gambit, Dobbeltgambit modtaget",
             "nb": "Skotsk gambit, Dobbeltgambit mottatt",
-            "fi": "Skotlantilainen gambiitti, Kaksoisgambiitti hyväksytty"
+            "fi": "Skotlantilainen gambiitti, Kaksoisgambiitti hyväksytty",
+            "ru": "Шотландский гамбит, Принятый двойной гамбит",
+            "uk": "Шотландський гамбіт, Прийнятий подвійний гамбіт"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Double Gambit Accepted",
@@ -3808,7 +4090,9 @@
             "sv": "Skotska gambiten, Nakhmansongambit",
             "da": "Skotsk gambit, Nakhmansongambit",
             "nb": "Skotsk gambit, Nakhmansongambit",
-            "fi": "Skotlantilainen gambiitti, Nakhmanson-gambiitti"
+            "fi": "Skotlantilainen gambiitti, Nakhmanson-gambiitti",
+            "ru": "Шотландский гамбит, Гамбит Нахмансона",
+            "uk": "Шотландський гамбіт, Гамбіт Нахмансона"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Nakhmanson Gambit",
@@ -3835,7 +4119,9 @@
             "sv": "Skotska gambiten, Anderssenattacken",
             "da": "Skotsk gambit, Anderssenangrebet",
             "nb": "Skotsk gambit, Anderssenangrepet",
-            "fi": "Skotlantilainen gambiitti, Anderssen-hyökkäys"
+            "fi": "Skotlantilainen gambiitti, Anderssen-hyökkäys",
+            "ru": "Шотландский гамбит, Атака Андерсена",
+            "uk": "Шотландський гамбіт, Атака Андерсена"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Anderssen Attack",
@@ -3862,7 +4148,9 @@
             "sv": "Skotska gambiten, Anderssenattacken, Huvudvariant",
             "da": "Skotsk gambit, Anderssenangrebet, Hovedvariant",
             "nb": "Skotsk gambit, Anderssenangrepet, Hovedvariant",
-            "fi": "Skotlantilainen gambiitti, Anderssen-hyökkäys, Päämuunnelma"
+            "fi": "Skotlantilainen gambiitti, Anderssen-hyökkäys, Päämuunnelma",
+            "ru": "Шотландский гамбит, Атака Андерсена, Основной вариант",
+            "uk": "Шотландський гамбіт, Атака Андерсена, Основний варіант"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Anderssen Attack, Main Line",
@@ -3889,7 +4177,9 @@
             "sv": "Skotska gambiten, Max Langeattacken",
             "da": "Skotsk gambit, Max Langeangrebet",
             "nb": "Skotsk gambit, Max Langeangrepet",
-            "fi": "Skotlantilainen gambiitti, Max Lange-hyökkäys"
+            "fi": "Skotlantilainen gambiitti, Max Lange-hyökkäys",
+            "ru": "Шотландский гамбит, Атака Макса Ланге",
+            "uk": "Шотландський гамбіт, Атака Макса Ланге"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Max Lange Attack",
@@ -3916,7 +4206,9 @@
             "sv": "Skotska gambiten, Max Langeattacken",
             "da": "Skotsk gambit, Max Langeangrebet",
             "nb": "Skotsk gambit, Max Langeangrepet",
-            "fi": "Skotlantilainen gambiitti, Max Lange-hyökkäys"
+            "fi": "Skotlantilainen gambiitti, Max Lange-hyökkäys",
+            "ru": "Шотландский гамбит, Атака Макса Ланге",
+            "uk": "Шотландський гамбіт, Атака Макса Ланге"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Max Lange Attack",
@@ -3943,7 +4235,9 @@
             "sv": "Skotska gambiten, Max Langeattacken, Spielmannförsvaret",
             "da": "Skotsk gambit, Max Langeangrebet, Spielmannforsvaret",
             "nb": "Skotsk gambit, Max Langeangrepet, Spielmannforsvaret",
-            "fi": "Skotlantilainen gambiitti, Max Lange-hyökkäys, Spielmann-puolustus"
+            "fi": "Skotlantilainen gambiitti, Max Lange-hyökkäys, Spielmann-puolustus",
+            "ru": "Шотландский гамбит, Атака Макса Ланге, Защита Шпильмана",
+            "uk": "Шотландський гамбіт, Атака Макса Ланге, Захист Шпільмана"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Max Lange Attack, Spielmann Defense",
@@ -3970,7 +4264,9 @@
             "sv": "Skotska gambiten, Max Langeattacken, Långa varianten",
             "da": "Skotsk gambit, Max Langeangrebet, Lang variant",
             "nb": "Skotsk gambit, Max Langeangrepet, Lang variant",
-            "fi": "Skotlantilainen gambiitti, Max Lange-hyökkäys, Pitkä muunnelma"
+            "fi": "Skotlantilainen gambiitti, Max Lange-hyökkäys, Pitkä muunnelma",
+            "ru": "Шотландский гамбит, Атака Макса Ланге, Длинный вариант",
+            "uk": "Шотландський гамбіт, Атака Макса Ланге, Довгий варіант"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Max Lange Attack, Long Variation",
@@ -3997,7 +4293,9 @@
             "sv": "Skotska gambiten, de Riviere-försvaret",
             "da": "Skotsk gambit, de Riviere-forsvaret",
             "nb": "Skotsk gambit, de Riviere-forsvaret",
-            "fi": "Skotlantilainen gambiitti, de Riviere-puolustus"
+            "fi": "Skotlantilainen gambiitti, de Riviere-puolustus",
+            "ru": "Шотландский гамбит, Защита де Ривьера",
+            "uk": "Шотландський гамбіт, Захист де Рів'єра"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, de Riviere Defense",
@@ -4024,7 +4322,9 @@
             "sv": "Skotska gambiten, Canalvarianten",
             "da": "Skotsk gambit, Canalvarianten",
             "nb": "Skotsk gambit, Canalvarianten",
-            "fi": "Skotlantilainen gambiitti, Canal-muunnelma"
+            "fi": "Skotlantilainen gambiitti, Canal-muunnelma",
+            "ru": "Шотландский гамбит, Вариант Канала",
+            "uk": "Шотландський гамбіт, Варіант Канала"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Canal Variation",
@@ -4051,7 +4351,9 @@
             "sv": "Skotska gambiten, Janowskiförsvaret",
             "da": "Skotsk gambit, Janowskiforsvaret",
             "nb": "Skotsk gambit, Janowskiforsvaret",
-            "fi": "Skotlantilainen gambiitti, Janowski-puolustus"
+            "fi": "Skotlantilainen gambiitti, Janowski-puolustus",
+            "ru": "Шотландский гамбит, Защита Яновского",
+            "uk": "Шотландський гамбіт, Захист Яновського"
           },
           "eco": "C56",
           "opening": "Italian Game: Scotch Gambit, Janowski Defense",
@@ -4079,7 +4381,9 @@
         "sv": "Giuoco Piano",
         "da": "Giuoco Piano",
         "nb": "Giuoco Piano",
-        "fi": "Giuoco Piano"
+        "fi": "Giuoco Piano",
+        "ru": "Джуоко пиано",
+        "uk": "Джуоко піано"
       },
       "lines": [
         {
@@ -4102,7 +4406,9 @@
             "sv": "Giuoco Piano",
             "da": "Giuoco Piano",
             "nb": "Giuoco Piano",
-            "fi": "Giuoco Piano"
+            "fi": "Giuoco Piano",
+            "ru": "Джуоко пиано",
+            "uk": "Джуоко піано"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Piano",
@@ -4129,7 +4435,9 @@
             "sv": "Giuoco Piano, Krausevarianten",
             "da": "Giuoco Piano, Krausevarianten",
             "nb": "Giuoco Piano, Krausevarianten",
-            "fi": "Giuoco Piano, Krause-muunnelma"
+            "fi": "Giuoco Piano, Krause-muunnelma",
+            "ru": "Джуоко пиано, Вариант Краузе",
+            "uk": "Джуоко піано, Варіант Краузе"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Krause Variation",
@@ -4156,7 +4464,9 @@
             "sv": "Giuoco Piano, Cracowvarianten",
             "da": "Giuoco Piano, Cracowvarianten",
             "nb": "Giuoco Piano, Cracowvarianten",
-            "fi": "Giuoco Piano, Cracow-muunnelma"
+            "fi": "Giuoco Piano, Cracow-muunnelma",
+            "ru": "Джуоко пиано, Краковский вариант",
+            "uk": "Джуоко піано, Краківський варіант"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Cracow Variation",
@@ -4183,7 +4493,9 @@
             "sv": "Giuoco Piano, Greco'sattacken",
             "da": "Giuoco Piano, Greco'sangrebet",
             "nb": "Giuoco Piano, Greco'sangrepet",
-            "fi": "Giuoco Piano, Greco's-hyökkäys"
+            "fi": "Giuoco Piano, Greco's-hyökkäys",
+            "ru": "Джуоко пиано, Атака Греко",
+            "uk": "Джуоко піано, Атака Греко"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Greco's Attack",
@@ -4210,7 +4522,9 @@
             "sv": "Giuoco Piano, Steinitzvarianten",
             "da": "Giuoco Piano, Steinitzvarianten",
             "nb": "Giuoco Piano, Steinitzvarianten",
-            "fi": "Giuoco Piano, Steinitz-muunnelma"
+            "fi": "Giuoco Piano, Steinitz-muunnelma",
+            "ru": "Джуоко пиано, Вариант Стейница",
+            "uk": "Джуоко піано, Варіант Стейніца"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Steinitz Variation",
@@ -4237,7 +4551,9 @@
             "sv": "Giuoco Piano, Therkatz-Herzogvarianten",
             "da": "Giuoco Piano, Therkatz-Herzogvarianten",
             "nb": "Giuoco Piano, Therkatz-Herzogvarianten",
-            "fi": "Giuoco Piano, Therkatz-Herzog-muunnelma"
+            "fi": "Giuoco Piano, Therkatz-Herzog-muunnelma",
+            "ru": "Джуоко пиано, Вариант Теркаца-Херцога",
+            "uk": "Джуоко піано, Варіант Теркаца-Герцога"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Therkatz-Herzog Variation",
@@ -4264,7 +4580,9 @@
             "sv": "Giuoco Piano, Aitkenvarianten",
             "da": "Giuoco Piano, Aitkenvarianten",
             "nb": "Giuoco Piano, Aitkenvarianten",
-            "fi": "Giuoco Piano, Aitken-muunnelma"
+            "fi": "Giuoco Piano, Aitken-muunnelma",
+            "ru": "Джуоко пиано, Вариант Эйткена",
+            "uk": "Джуоко піано, Варіант Ейткена"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Aitken Variation",
@@ -4291,7 +4609,9 @@
             "sv": "Giuoco Piano, Bernsteinvarianten",
             "da": "Giuoco Piano, Bernsteinvarianten",
             "nb": "Giuoco Piano, Bernsteinvarianten",
-            "fi": "Giuoco Piano, Bernstein-muunnelma"
+            "fi": "Giuoco Piano, Bernstein-muunnelma",
+            "ru": "Джуоко пиано, Вариант Бернштейна",
+            "uk": "Джуоко піано, Варіант Бернштейна"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Bernstein Variation",
@@ -4318,7 +4638,9 @@
             "sv": "Giuoco Piano, Holzhausenattacken",
             "da": "Giuoco Piano, Holzhausenangrebet",
             "nb": "Giuoco Piano, Holzhausenangrepet",
-            "fi": "Giuoco Piano, Holzhausen-hyökkäys"
+            "fi": "Giuoco Piano, Holzhausen-hyökkäys",
+            "ru": "Джуоко пиано, Атака Хольцхаузена",
+            "uk": "Джуоко піано, Атака Гольцгаузена"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Holzhausen Attack",
@@ -4345,7 +4667,9 @@
             "sv": "Giuoco Piano, Rosentretervarianten",
             "da": "Giuoco Piano, Rosentretervarianten",
             "nb": "Giuoco Piano, Rosentretervarianten",
-            "fi": "Giuoco Piano, Rosentreter-muunnelma"
+            "fi": "Giuoco Piano, Rosentreter-muunnelma",
+            "ru": "Джуоко пиано, Вариант Розентретера",
+            "uk": "Джуоко піано, Варіант Розентретера"
           },
           "eco": "C54",
           "opening": "Italian Game: Giuoco Piano, Rosentreter Variation",
@@ -4373,7 +4697,9 @@
         "sv": "Evansgambit avböjd",
         "da": "Evansgambit afslået",
         "nb": "Evansgambit avslått",
-        "fi": "Evans-gambiitti hylätty"
+        "fi": "Evans-gambiitti hylätty",
+        "ru": "Отказанный гамбит Эванса",
+        "uk": "Відхилений гамбіт Еванса"
       },
       "lines": [
         {
@@ -4396,7 +4722,9 @@
             "sv": "Evansgambit avböjd",
             "da": "Evansgambit afslået",
             "nb": "Evansgambit avslått",
-            "fi": "Evans-gambiitti hylätty"
+            "fi": "Evans-gambiitti hylätty",
+            "ru": "Отказанный гамбит Эванса",
+            "uk": "Відхилений гамбіт Еванса"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined",
@@ -4423,7 +4751,9 @@
             "sv": "Evansgambit avböjd, Cordelvarianten",
             "da": "Evansgambit afslået, Cordelvarianten",
             "nb": "Evansgambit avslått, Cordelvarianten",
-            "fi": "Evans-gambiitti hylätty, Cordel-muunnelma"
+            "fi": "Evans-gambiitti hylätty, Cordel-muunnelma",
+            "ru": "Отказанный гамбит Эванса, Вариант Корделя",
+            "uk": "Відхилений гамбіт Еванса, Варіант Корделя"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Cordel Variation",
@@ -4450,7 +4780,9 @@
             "sv": "Evansgambit avböjd",
             "da": "Evansgambit afslået",
             "nb": "Evansgambit avslått",
-            "fi": "Evans-gambiitti hylätty"
+            "fi": "Evans-gambiitti hylätty",
+            "ru": "Отказанный гамбит Эванса",
+            "uk": "Відхилений гамбіт Еванса"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined",
@@ -4477,7 +4809,9 @@
             "sv": "Evansgambit avböjd, Showaltervarianten",
             "da": "Evansgambit afslået, Showaltervarianten",
             "nb": "Evansgambit avslått, Showaltervarianten",
-            "fi": "Evans-gambiitti hylätty, Showalter-muunnelma"
+            "fi": "Evans-gambiitti hylätty, Showalter-muunnelma",
+            "ru": "Отказанный гамбит Эванса, Вариант Шоуолтера",
+            "uk": "Відхилений гамбіт Еванса, Варіант Шоуолтера"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Showalter Variation",
@@ -4504,7 +4838,9 @@
             "sv": "Evansgambit avböjd, Langevarianten",
             "da": "Evansgambit afslået, Langevarianten",
             "nb": "Evansgambit avslått, Langevarianten",
-            "fi": "Evans-gambiitti hylätty, Lange-muunnelma"
+            "fi": "Evans-gambiitti hylätty, Lange-muunnelma",
+            "ru": "Отказанный гамбит Эванса, Вариант Ланге",
+            "uk": "Відхилений гамбіт Еванса, Варіант Ланге"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Lange Variation",
@@ -4531,7 +4867,9 @@
             "sv": "Evansgambit avböjd, Pavlovvarianten",
             "da": "Evansgambit afslået, Pavlovvarianten",
             "nb": "Evansgambit avslått, Pavlovvarianten",
-            "fi": "Evans-gambiitti hylätty, Pavlov-muunnelma"
+            "fi": "Evans-gambiitti hylätty, Pavlov-muunnelma",
+            "ru": "Отказанный гамбит Эванса, Вариант Павлова",
+            "uk": "Відхилений гамбіт Еванса, Варіант Павлова"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Pavlov Variation",
@@ -4558,7 +4896,9 @@
             "sv": "Evansgambit avböjd, Hirschbachvarianten",
             "da": "Evansgambit afslået, Hirschbachvarianten",
             "nb": "Evansgambit avslått, Hirschbachvarianten",
-            "fi": "Evans-gambiitti hylätty, Hirschbach-muunnelma"
+            "fi": "Evans-gambiitti hylätty, Hirschbach-muunnelma",
+            "ru": "Отказанный гамбит Эванса, Вариант Хиршбаха",
+            "uk": "Відхилений гамбіт Еванса, Варіант Гіршбаха"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Hirschbach Variation",
@@ -4585,7 +4925,9 @@
             "sv": "Evansgambit avböjd, Vasquezvarianten",
             "da": "Evansgambit afslået, Vasquezvarianten",
             "nb": "Evansgambit avslått, Vasquezvarianten",
-            "fi": "Evans-gambiitti hylätty, Vasquez-muunnelma"
+            "fi": "Evans-gambiitti hylätty, Vasquez-muunnelma",
+            "ru": "Отказанный гамбит Эванса, Вариант Васкеса",
+            "uk": "Відхилений гамбіт Еванса, Варіант Васкеса"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Vasquez Variation",
@@ -4612,7 +4954,9 @@
             "sv": "Evansgambit avböjd, Hickenvarianten",
             "da": "Evansgambit afslået, Hickenvarianten",
             "nb": "Evansgambit avslått, Hickenvarianten",
-            "fi": "Evans-gambiitti hylätty, Hicken-muunnelma"
+            "fi": "Evans-gambiitti hylätty, Hicken-muunnelma",
+            "ru": "Отказанный гамбит Эванса, Вариант Хиккена",
+            "uk": "Відхилений гамбіт Еванса, Варіант Гіккена"
           },
           "eco": "C51",
           "opening": "Italian Game: Evans Gambit Declined, Hicken Variation",
@@ -4640,7 +4984,9 @@
         "sv": "Giuoco Pianissimo",
         "da": "Giuoco Pianissimo",
         "nb": "Giuoco Pianissimo",
-        "fi": "Giuoco Pianissimo"
+        "fi": "Giuoco Pianissimo",
+        "ru": "Джуоко пианиссимо",
+        "uk": "Джуоко піаніссімо"
       },
       "lines": [
         {
@@ -4663,7 +5009,9 @@
             "sv": "Giuoco Pianissimo",
             "da": "Giuoco Pianissimo",
             "nb": "Giuoco Pianissimo",
-            "fi": "Giuoco Pianissimo"
+            "fi": "Giuoco Pianissimo",
+            "ru": "Джуоко пианиссимо",
+            "uk": "Джуоко піаніссімо"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo",
@@ -4690,7 +5038,9 @@
             "sv": "Giuoco Pianissimo",
             "da": "Giuoco Pianissimo",
             "nb": "Giuoco Pianissimo",
-            "fi": "Giuoco Pianissimo"
+            "fi": "Giuoco Pianissimo",
+            "ru": "Джуоко пианиссимо",
+            "uk": "Джуоко піаніссімо"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo",
@@ -4717,7 +5067,9 @@
             "sv": "Giuoco Pianissimo",
             "da": "Giuoco Pianissimo",
             "nb": "Giuoco Pianissimo",
-            "fi": "Giuoco Pianissimo"
+            "fi": "Giuoco Pianissimo",
+            "ru": "Джуоко пианиссимо",
+            "uk": "Джуоко піаніссімо"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo",
@@ -4744,7 +5096,9 @@
             "sv": "Giuoco Pianissimo, Italienska fyrspringarvarianten",
             "da": "Giuoco Pianissimo, Italiensk firespringervariant",
             "nb": "Giuoco Pianissimo, Italiensk firespringervariant",
-            "fi": "Giuoco Pianissimo, Italialainen neliratsumuunnelma"
+            "fi": "Giuoco Pianissimo, Italialainen neliratsumuunnelma",
+            "ru": "Джуоко пианиссимо, Итальянский вариант четырёх коней",
+            "uk": "Джуоко піаніссімо, Італійський варіант чотирьох коней"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo, Italian Four Knights Variation",
@@ -4771,7 +5125,9 @@
             "sv": "Giuoco Pianissimo, Canalvarianten",
             "da": "Giuoco Pianissimo, Canalvarianten",
             "nb": "Giuoco Pianissimo, Canalvarianten",
-            "fi": "Giuoco Pianissimo, Canal-muunnelma"
+            "fi": "Giuoco Pianissimo, Canal-muunnelma",
+            "ru": "Джуоко пианиссимо, Вариант Канала",
+            "uk": "Джуоко піаніссімо, Варіант Канала"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo, Canal Variation",
@@ -4798,7 +5154,9 @@
             "sv": "Giuoco Pianissimo, Lucchinigambit",
             "da": "Giuoco Pianissimo, Lucchinigambit",
             "nb": "Giuoco Pianissimo, Lucchinigambit",
-            "fi": "Giuoco Pianissimo, Lucchini-gambiitti"
+            "fi": "Giuoco Pianissimo, Lucchini-gambiitti",
+            "ru": "Джуоко пианиссимо, Гамбит Луккини",
+            "uk": "Джуоко піаніссімо, Гамбіт Луккіні"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo, Lucchini Gambit",
@@ -4825,7 +5183,9 @@
             "sv": "Giuoco Pianissimo, Duboisvarianten",
             "da": "Giuoco Pianissimo, Duboisvarianten",
             "nb": "Giuoco Pianissimo, Duboisvarianten",
-            "fi": "Giuoco Pianissimo, Dubois-muunnelma"
+            "fi": "Giuoco Pianissimo, Dubois-muunnelma",
+            "ru": "Джуоко пианиссимо, Вариант Дюбуа",
+            "uk": "Джуоко піаніссімо, Варіант Дюбуа"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo, Dubois Variation",
@@ -4852,7 +5212,9 @@
             "sv": "Giuoco Pianissimo",
             "da": "Giuoco Pianissimo",
             "nb": "Giuoco Pianissimo",
-            "fi": "Giuoco Pianissimo"
+            "fi": "Giuoco Pianissimo",
+            "ru": "Джуоко пианиссимо",
+            "uk": "Джуоко піаніссімо"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo",
@@ -4879,7 +5241,9 @@
             "sv": "Giuoco Pianissimo, Normal",
             "da": "Giuoco Pianissimo, Normal",
             "nb": "Giuoco Pianissimo, Normal",
-            "fi": "Giuoco Pianissimo, Normaali"
+            "fi": "Giuoco Pianissimo, Normaali",
+            "ru": "Джуоко пианиссимо, Обычный",
+            "uk": "Джуоко піаніссімо, Звичайний"
           },
           "eco": "C50",
           "opening": "Italian Game: Giuoco Pianissimo, Normal",
@@ -4907,7 +5271,9 @@
         "sv": "Ungerska försvaret",
         "da": "Ungarsk forsvar",
         "nb": "Ungarsk forsvar",
-        "fi": "Unkarilainen puolustus"
+        "fi": "Unkarilainen puolustus",
+        "ru": "Венгерская защита",
+        "uk": "Угорський захист"
       },
       "lines": [
         {
@@ -4930,7 +5296,9 @@
             "sv": "Ungerska försvaret",
             "da": "Ungarsk forsvar",
             "nb": "Ungarsk forsvar",
-            "fi": "Unkarilainen puolustus"
+            "fi": "Unkarilainen puolustus",
+            "ru": "Венгерская защита",
+            "uk": "Угорський захист"
           },
           "eco": "C50",
           "opening": "Italian Game: Hungarian Defense",
@@ -4957,7 +5325,9 @@
             "sv": "Ungerska försvaret, Tartakowervarianten",
             "da": "Ungarsk forsvar, Tartakowervarianten",
             "nb": "Ungarsk forsvar, Tartakowervarianten",
-            "fi": "Unkarilainen puolustus, Tartakower-muunnelma"
+            "fi": "Unkarilainen puolustus, Tartakower-muunnelma",
+            "ru": "Венгерская защита, Вариант Тартаковера",
+            "uk": "Угорський захист, Варіант Тартаковера"
           },
           "eco": "C50",
           "opening": "Italian Game: Hungarian Defense, Tartakower Variation",
@@ -4988,7 +5358,9 @@
         "sv": "Anti-Fried Liver-försvaret",
         "da": "Anti-Fried Liver-forsvaret",
         "nb": "Anti-Fried Liver-forsvaret",
-        "fi": "Anti-Fried Liver-puolustus"
+        "fi": "Anti-Fried Liver-puolustus",
+        "ru": "Защита «Анти-жареная печень»",
+        "uk": "Захист «Анти-смажена печінка»"
       },
       "eco": "C50",
       "opening": "Italian Game: Anti-Fried Liver Defense",
@@ -5015,7 +5387,9 @@
         "sv": "Birdattacken",
         "da": "Birdangrebet",
         "nb": "Birdangrepet",
-        "fi": "Bird-hyökkäys"
+        "fi": "Bird-hyökkäys",
+        "ru": "Атака Берда",
+        "uk": "Атака Берда"
       },
       "eco": "C53",
       "opening": "Italian Game: Bird's Attack",
@@ -5042,7 +5416,9 @@
         "sv": "Blackburne-Kostićgambit",
         "da": "Blackburne-Kostićgambit",
         "nb": "Blackburne-Kostićgambit",
-        "fi": "Blackburne-Kostić-gambiitti"
+        "fi": "Blackburne-Kostić-gambiitti",
+        "ru": "Гамбит Блэкберна-Костича",
+        "uk": "Гамбіт Блекберна-Костича"
       },
       "eco": "C50",
       "opening": "Italian Game: Blackburne-Kostić Gambit",
@@ -5069,7 +5445,9 @@
         "sv": "Deutzgambit",
         "da": "Deutzgambit",
         "nb": "Deutzgambit",
-        "fi": "Deutz-gambiitti"
+        "fi": "Deutz-gambiitti",
+        "ru": "Дойцский гамбит",
+        "uk": "Дойцький гамбіт"
       },
       "eco": "C50",
       "opening": "Italian Game: Deutz Gambit",
@@ -5096,7 +5474,9 @@
         "sv": "Evansgambit antagen",
         "da": "Evansgambit modtaget",
         "nb": "Evansgambit mottatt",
-        "fi": "Evans-gambiitti hyväksytty"
+        "fi": "Evans-gambiitti hyväksytty",
+        "ru": "Принятый гамбит Эванса",
+        "uk": "Прийнятий гамбіт Еванса"
       },
       "eco": "C51",
       "opening": "Italian Game: Evans Gambit Accepted",
@@ -5123,7 +5503,9 @@
         "sv": "Jeromegambit",
         "da": "Jeromegambit",
         "nb": "Jeromegambit",
-        "fi": "Jerome-gambiitti"
+        "fi": "Jerome-gambiitti",
+        "ru": "Гамбит Джерома",
+        "uk": "Гамбіт Джерома"
       },
       "eco": "C50",
       "opening": "Italian Game: Jerome Gambit",
@@ -5150,7 +5532,9 @@
         "sv": "Italienska partiet",
         "da": "Italiensk parti",
         "nb": "Italiensk parti",
-        "fi": "Italialainen peli"
+        "fi": "Italialainen peli",
+        "ru": "Итальянская партия",
+        "uk": "Італійська партія"
       },
       "eco": "C50",
       "opening": "Italian Game",
@@ -5177,7 +5561,9 @@
         "sv": "Parisförsvaret",
         "da": "Parisforsvaret",
         "nb": "Parisforsvaret",
-        "fi": "Pariisilainen puolustus"
+        "fi": "Pariisilainen puolustus",
+        "ru": "Парижская защита",
+        "uk": "Паризький захист"
       },
       "eco": "C50",
       "opening": "Italian Game: Paris Defense",
@@ -5204,7 +5590,9 @@
         "sv": "Rosentretergambit",
         "da": "Rosentretergambit",
         "nb": "Rosentretergambit",
-        "fi": "Rosentreter-gambiitti"
+        "fi": "Rosentreter-gambiitti",
+        "ru": "Гамбит Розентретера",
+        "uk": "Гамбіт Розентретера"
       },
       "eco": "C50",
       "opening": "Italian Game: Rosentreter Gambit",
@@ -5231,7 +5619,9 @@
         "sv": "Rousseaugambit",
         "da": "Rousseaugambit",
         "nb": "Rousseaugambit",
-        "fi": "Rousseaun gambiitti"
+        "fi": "Rousseaun gambiitti",
+        "ru": "Гамбит Руссо",
+        "uk": "Гамбіт Руссо"
       },
       "eco": "C50",
       "opening": "Italian Game: Rousseau Gambit",
@@ -5258,7 +5648,9 @@
         "sv": "Inbjudan till skotskt avböjd",
         "da": "Invitation til skotsk afslået",
         "nb": "Invitasjon til skotsk avslått",
-        "fi": "Kutsu skotlantilaiseen hylätty"
+        "fi": "Kutsu skotlantilaiseen hylätty",
+        "ru": "Отказанное приглашение к шотландской",
+        "uk": "Відхилене запрошення до шотландської"
       },
       "eco": "C56",
       "opening": "Italian Game: Scotch Invitation Declined",

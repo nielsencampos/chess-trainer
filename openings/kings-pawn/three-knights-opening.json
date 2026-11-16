@@ -18,7 +18,9 @@
     "fi": "Kolmiratsupeli",
     "sv": "Trespringaröppningen",
     "da": "Trespringeråbningen",
-    "nb": "Trespringeråpningen"
+    "nb": "Trespringeråpningen",
+    "ru": "Дебют трёх коней",
+    "uk": "Дебют трьох коней"
   },
   "order": 16,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Huvud",
         "da": "Hoved",
         "nb": "Hoved",
-        "fi": "Pää"
+        "fi": "Pää",
+        "ru": "Основной",
+        "uk": "Основний"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Trespringaröppningen",
             "da": "Trespringeråbningen",
             "nb": "Trespringeråpningen",
-            "fi": "Kolmiratsuavaus"
+            "fi": "Kolmiratsuavaus",
+            "ru": "Дебют трёх коней",
+            "uk": "Дебют трьох коней"
           },
           "eco": "C46",
           "opening": "Three Knights Opening",
@@ -91,7 +97,9 @@
             "sv": "Trespringaröppningen",
             "da": "Trespringeråbningen",
             "nb": "Trespringeråpningen",
-            "fi": "Kolmiratsuavaus"
+            "fi": "Kolmiratsuavaus",
+            "ru": "Дебют трёх коней",
+            "uk": "Дебют трьох коней"
           },
           "eco": "C46",
           "opening": "Three Knights Opening",
@@ -122,7 +130,9 @@
         "sv": "Schlechtervarianten",
         "da": "Schlechtervarianten",
         "nb": "Schlechtervarianten",
-        "fi": "Schlechter-muunnelma"
+        "fi": "Schlechter-muunnelma",
+        "ru": "Вариант Шлехтера",
+        "uk": "Варіант Шлехтера"
       },
       "eco": "C46",
       "opening": "Three Knights Opening: Schlechter Variation",
@@ -149,7 +159,9 @@
         "sv": "Steinitzförsvaret",
         "da": "Steinitzforsvaret",
         "nb": "Steinitzforsvaret",
-        "fi": "Steinitz-puolustus"
+        "fi": "Steinitz-puolustus",
+        "ru": "Защита Стейница",
+        "uk": "Захист Стейніца"
       },
       "eco": "C46",
       "opening": "Three Knights Opening: Steinitz Defense",
@@ -176,7 +188,9 @@
         "sv": "Steinitz-Rosenthalvarianten",
         "da": "Steinitz-Rosenthalvarianten",
         "nb": "Steinitz-Rosenthalvarianten",
-        "fi": "Steinitz-Rosenthal-muunnelma"
+        "fi": "Steinitz-Rosenthal-muunnelma",
+        "ru": "Вариант Стейница-Розенталя",
+        "uk": "Варіант Стейніца-Розенталя"
       },
       "eco": "C46",
       "opening": "Three Knights Opening: Steinitz-Rosenthal Variation",
@@ -203,7 +217,9 @@
         "sv": "Winawerförsvaret",
         "da": "Winawerforsvaret",
         "nb": "Winawerforsvaret",
-        "fi": "Winawer-puolustus"
+        "fi": "Winawer-puolustus",
+        "ru": "Защита Винавера",
+        "uk": "Захист Вінавера"
       },
       "eco": "C46",
       "opening": "Three Knights Opening: Winawer Defense",

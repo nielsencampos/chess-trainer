@@ -18,7 +18,9 @@
     "sv": "Benkös öppning",
     "nb": "Benkös åpning",
     "fi": "Benkőn avaus",
-    "da": "Ungarsk åbning"
+    "da": "Ungarsk åbning",
+    "ru": "Староиндийское начало",
+    "uk": "Староіндійський початок"
   },
   "order": null,
   "lines": [
@@ -42,7 +44,9 @@
         "sv": "Astengambit",
         "da": "Astengambit",
         "nb": "Astengambit",
-        "fi": "Asten-gambiitti"
+        "fi": "Asten-gambiitti",
+        "ru": "Гамбит Астена",
+        "uk": "Гамбіт Астена"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Asten Gambit",
@@ -69,7 +73,9 @@
         "sv": "Burkgambit",
         "da": "Burkgambit",
         "nb": "Burkgambit",
-        "fi": "Burk-gambiitti"
+        "fi": "Burk-gambiitti",
+        "ru": "Гамбит Бёрка",
+        "uk": "Гамбіт Берка"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Burk Gambit",
@@ -96,7 +102,9 @@
         "sv": "Bückergambit",
         "da": "Bückergambit",
         "nb": "Bückergambit",
-        "fi": "Bücker-gambiitti"
+        "fi": "Bücker-gambiitti",
+        "ru": "Гамбит Бюккера",
+        "uk": "Гамбіт Бюккера"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Bücker Gambit",
@@ -123,7 +131,9 @@
         "sv": "Katalanska uppställningen",
         "da": "Katalansk opstilling",
         "nb": "Katalansk oppstilling",
-        "fi": "Katalonialainen asetelma"
+        "fi": "Katalonialainen asetelma",
+        "ru": "Каталонское построение",
+        "uk": "Каталонська побудова"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Catalan Formation",
@@ -150,7 +160,9 @@
         "sv": "Holländska försvaret",
         "da": "Hollandsk forsvar",
         "nb": "Hollandsk forsvar",
-        "fi": "Hollantilainen puolustus"
+        "fi": "Hollantilainen puolustus",
+        "ru": "Голландская защита",
+        "uk": "Голландський захист"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Dutch Defense",
@@ -177,7 +189,9 @@
         "sv": "Indiska försvaret",
         "da": "Indisk forsvar",
         "nb": "Indisk forsvar",
-        "fi": "Intialainen puolustus"
+        "fi": "Intialainen puolustus",
+        "ru": "Индийская защита",
+        "uk": "Індійський захист"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Indian Defense",
@@ -204,7 +218,9 @@
         "sv": "Ungerska öppningen",
         "da": "Ungarsk åbning",
         "nb": "Ungarsk åpning",
-        "fi": "Unkarilainen avaus"
+        "fi": "Unkarilainen avaus",
+        "ru": "Венгерское начало",
+        "uk": "Угорський початок"
       },
       "eco": "A00",
       "opening": "Hungarian Opening",
@@ -231,7 +247,9 @@
         "sv": "Myersförsvaret",
         "da": "Myersforsvaret",
         "nb": "Myersforsvaret",
-        "fi": "Myers-puolustus"
+        "fi": "Myers-puolustus",
+        "ru": "Защита Майерса",
+        "uk": "Захист Маєрса"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Myers Defense",
@@ -258,7 +276,9 @@
         "sv": "Pachmangambit",
         "da": "Pachmangambit",
         "nb": "Pachmangambit",
-        "fi": "Pachman-gambiitti"
+        "fi": "Pachman-gambiitti",
+        "ru": "Гамбит Пахмана",
+        "uk": "Гамбіт Пахмана"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Pachman Gambit",
@@ -285,7 +305,9 @@
         "sv": "Parisgambit",
         "da": "Parisgambit",
         "nb": "Parisgambit",
-        "fi": "Pariisilainen gambiitti"
+        "fi": "Pariisilainen gambiitti",
+        "ru": "Парижский гамбит",
+        "uk": "Паризький гамбіт"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Paris Gambit",
@@ -312,7 +334,9 @@
         "sv": "Alekhine med ombytta färger",
         "da": "Alekhine med byttede farver",
         "nb": "Alekhine med byttede farger",
-        "fi": "Alekhine käänteisin värein"
+        "fi": "Alekhine käänteisin värein",
+        "ru": "Алехин наоборот",
+        "uk": "Алехін навпаки"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Reversed Alekhine",
@@ -339,7 +363,9 @@
         "sv": "Brooklynförsvaret med ombytta färger, Brooklyn Benkogambit",
         "da": "Brooklynforsvaret med byttede farver, Brooklyn Benkogambit",
         "nb": "Brooklynforsvaret med byttede farger, Brooklyn Benkogambit",
-        "fi": "Brooklyn-puolustus käänteisin värein, Brooklyn Benko-gambiitti"
+        "fi": "Brooklyn-puolustus käänteisin värein, Brooklyn Benko-gambiitti",
+        "ru": "Защита «Бруклин наоборот», Гамбит «Бруклинский Бенко»",
+        "uk": "Захист «Бруклін навпаки», Гамбіт «Бруклінський Бенко»"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Reversed Brooklyn Defense, Brooklyn Benko Gambit",
@@ -366,7 +392,9 @@
         "sv": "Moderna försvaret med ombytta färger",
         "da": "Moderne forsvar med byttede farver",
         "nb": "Moderne forsvar med byttede farger",
-        "fi": "Moderni puolustus käänteisin värein"
+        "fi": "Moderni puolustus käänteisin värein",
+        "ru": "Защита «Современная наоборот»",
+        "uk": "Захист «Сучасний навпаки»"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Reversed Modern Defense",
@@ -393,7 +421,9 @@
         "sv": "Norska försvaret med ombytta färger",
         "da": "Norsk forsvar med byttede farver",
         "nb": "Norsk forsvar med byttede farger",
-        "fi": "Norjalainen puolustus käänteisin värein"
+        "fi": "Norjalainen puolustus käänteisin värein",
+        "ru": "Защита «Норвежская наоборот»",
+        "uk": "Захист «Норвезький навпаки»"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Reversed Norwegian Defense",
@@ -420,7 +450,9 @@
         "sv": "Inbjudan till sicilianskt",
         "da": "Invitation til siciliansk",
         "nb": "Invitasjon til siciliansk",
-        "fi": "Kutsu sisilialaiseen"
+        "fi": "Kutsu sisilialaiseen",
+        "ru": "Приглашение к сицилианской",
+        "uk": "Запрошення до сицилійського"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Sicilian Invitation",
@@ -447,7 +479,9 @@
         "sv": "Slaviska uppställningen",
         "da": "Slavisk opstilling",
         "nb": "Slavisk oppstilling",
-        "fi": "Slaavilainen asetelma"
+        "fi": "Slaavilainen asetelma",
+        "ru": "Славянское построение",
+        "uk": "Слов'янська побудова"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Slav Formation",
@@ -474,7 +508,9 @@
         "sv": "Symmetriska varianten",
         "da": "Symmetrisk variant",
         "nb": "Symmetrisk variant",
-        "fi": "Symmetrinen muunnelma"
+        "fi": "Symmetrinen muunnelma",
+        "ru": "Симметричный вариант",
+        "uk": "Симетричний варіант"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Symmetrical Variation",
@@ -501,7 +537,9 @@
         "sv": "Van Kuijkgambit",
         "da": "Van Kuijkgambit",
         "nb": "Van Kuijkgambit",
-        "fi": "Van Kuijk-gambiitti"
+        "fi": "Van Kuijk-gambiitti",
+        "ru": "Гамбит ван Кёйка",
+        "uk": "Гамбіт ван Кейка"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Van Kuijk Gambit",
@@ -528,7 +566,9 @@
         "sv": "Wiedenhagen-Betagambit",
         "da": "Wiedenhagen-Betagambit",
         "nb": "Wiedenhagen-Betagambit",
-        "fi": "Wiedenhagen-Beta-gambiitti"
+        "fi": "Wiedenhagen-Beta-gambiitti",
+        "ru": "Гамбит «Вайденхаген-Бета»",
+        "uk": "Гамбіт «Вайденгаген-Бета»"
       },
       "eco": "A07",
       "opening": "Hungarian Opening: Wiedenhagen-Beta Gambit",
@@ -555,7 +595,9 @@
         "sv": "Winterberggambit",
         "da": "Winterberggambit",
         "nb": "Winterberggambit",
-        "fi": "Winterberg-gambiitti"
+        "fi": "Winterberg-gambiitti",
+        "ru": "Гамбит Винтерберга",
+        "uk": "Гамбіт Вінтерберга"
       },
       "eco": "A00",
       "opening": "Hungarian Opening: Winterberg Gambit",

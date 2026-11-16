@@ -18,7 +18,9 @@
     "sv": "Råttförsvaret",
     "da": "Rotteforsvaret",
     "nb": "Rotteforsvaret",
-    "fi": "Rottapuolustus"
+    "fi": "Rottapuolustus",
+    "ru": "Защита «Крыса»",
+    "uk": "Захист «Щур»"
   },
   "order": null,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Engelsk råtta",
         "da": "Engelsk rotte",
         "nb": "Engelsk rotte",
-        "fi": "Englantilainen rotta"
+        "fi": "Englantilainen rotta",
+        "ru": "Английская крыса",
+        "uk": "Англійський щур"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Engelsk råtta",
             "da": "Engelsk rotte",
             "nb": "Engelsk rotte",
-            "fi": "Englantilainen rotta"
+            "fi": "Englantilainen rotta",
+            "ru": "Английская крыса",
+            "uk": "Англійський щур"
           },
           "eco": "A41",
           "opening": "Rat Defense: English Rat",
@@ -91,7 +97,9 @@
             "sv": "Engelsk råtta, Poundsgambit",
             "da": "Engelsk rotte, Poundsgambit",
             "nb": "Engelsk rotte, Poundsgambit",
-            "fi": "Englantilainen rotta, Pounds-gambiitti"
+            "fi": "Englantilainen rotta, Pounds-gambiitti",
+            "ru": "Английская крыса, Гамбит Паундса",
+            "uk": "Англійський щур, Гамбіт Паундса"
           },
           "eco": "A41",
           "opening": "Rat Defense: English Rat, Pounds Gambit",
@@ -118,7 +126,9 @@
             "sv": "Engelsk råtta, Lissabongambit",
             "da": "Engelsk rotte, Lissabongambit",
             "nb": "Engelsk rotte, Lisboagambit",
-            "fi": "Englantilainen rotta, Lissabon-gambiitti"
+            "fi": "Englantilainen rotta, Lissabon-gambiitti",
+            "ru": "Английская крыса, Лиссабонский гамбит",
+            "uk": "Англійський щур, Лісабонський гамбіт"
           },
           "eco": "A41",
           "opening": "Rat Defense: English Rat, Lisbon Gambit",
@@ -149,7 +159,9 @@
         "sv": "Accelererad Gurgenidze",
         "da": "Accelereret Gurgenidze",
         "nb": "Akselerert Gurgenidze",
-        "fi": "Nopeutettu Gurgenidze"
+        "fi": "Nopeutettu Gurgenidze",
+        "ru": "Ускоренный вариант Гургенидзе",
+        "uk": "Прискорений варіант Гургенідзе"
       },
       "eco": "B06",
       "opening": "Rat Defense: Accelerated Gurgenidze",
@@ -176,7 +188,9 @@
         "sv": "Antalförsvaret",
         "da": "Antalforsvaret",
         "nb": "Antalforsvaret",
-        "fi": "Antal-puolustus"
+        "fi": "Antal-puolustus",
+        "ru": "Защита Антала",
+        "uk": "Захист Антала"
       },
       "eco": "B00",
       "opening": "Rat Defense: Antal Defense",
@@ -203,7 +217,9 @@
         "sv": "Baloghförsvaret",
         "da": "Baloghforsvaret",
         "nb": "Baloghforsvaret",
-        "fi": "Balogh-puolustus"
+        "fi": "Balogh-puolustus",
+        "ru": "Защита Балога",
+        "uk": "Захист Балога"
       },
       "eco": "A82",
       "opening": "Rat Defense: Balogh Defense",
@@ -230,7 +246,9 @@
         "sv": "Fullergambit",
         "da": "Fullergambit",
         "nb": "Fullergambit",
-        "fi": "Fuller-gambiitti"
+        "fi": "Fuller-gambiitti",
+        "ru": "Гамбит Фуллера",
+        "uk": "Гамбіт Фуллера"
       },
       "eco": "B00",
       "opening": "Rat Defense: Fuller Gambit",
@@ -257,7 +275,9 @@
         "sv": "Harmonist",
         "da": "Harmonist",
         "nb": "Harmonist",
-        "fi": "Harmonist"
+        "fi": "Harmonist",
+        "ru": "Гармонист",
+        "uk": "Гармоніст"
       },
       "eco": "B00",
       "opening": "Rat Defense: Harmonist",
@@ -284,7 +304,9 @@
         "sv": "Petruccioliattacken",
         "da": "Petruccioliangrebet",
         "nb": "Petruccioliangrepet",
-        "fi": "Petruccioli-hyökkäys"
+        "fi": "Petruccioli-hyökkäys",
+        "ru": "Атака Петруччоли",
+        "uk": "Атака Петруччолі"
       },
       "eco": "B00",
       "opening": "Rat Defense: Petruccioli Attack",
@@ -311,7 +333,9 @@
         "sv": "Lillcentrumförsvaret",
         "da": "Lillecenterforsvaret",
         "nb": "Lillesentrumforsvaret",
-        "fi": "Pikkukeskuspuolustus"
+        "fi": "Pikkukeskuspuolustus",
+        "ru": "Защита с малым центром",
+        "uk": "Захист з малим центром"
       },
       "eco": "C00",
       "opening": "Rat Defense: Small Center Defense",
@@ -338,7 +362,9 @@
         "sv": "Spikattacken",
         "da": "Spydangrebet",
         "nb": "Spydangrepet",
-        "fi": "Piikkihyökkäys"
+        "fi": "Piikkihyökkäys",
+        "ru": "Атака «Шип»",
+        "uk": "Атака «Шип»"
       },
       "eco": "B00",
       "opening": "Rat Defense: Spike Attack",

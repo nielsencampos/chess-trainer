@@ -18,7 +18,9 @@
     "sv": "Kungsgambit",
     "nb": "Kongegambit",
     "fi": "Kuningasgambiitti",
-    "da": "Kongegambit"
+    "da": "Kongegambit",
+    "ru": "Королевский гамбит",
+    "uk": "Королівський гамбіт"
   },
   "order": 13,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Antagen: Löpargambit",
         "da": "Modtaget: Løbergambit",
         "nb": "Mottatt: Løpergambit",
-        "fi": "Hyväksytty: Lähettigambiitti"
+        "fi": "Hyväksytty: Lähettigambiitti",
+        "ru": "Принятый: Гамбит слона",
+        "uk": "Прийнятий: Гамбіт слона"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Antagen: Löpargambit",
             "da": "Modtaget: Løbergambit",
             "nb": "Mottatt: Løpergambit",
-            "fi": "Hyväksytty: Lähettigambiitti"
+            "fi": "Hyväksytty: Lähettigambiitti",
+            "ru": "Принятый: Гамбит слона",
+            "uk": "Прийнятий: Гамбіт слона"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit",
@@ -91,7 +97,9 @@
             "sv": "Antagen: Löpargambit, Maurianförsvaret",
             "da": "Modtaget: Løbergambit, Maurianforsvaret",
             "nb": "Mottatt: Løpergambit, Maurianforsvaret",
-            "fi": "Hyväksytty: Lähettigambiitti, Maurian-puolustus"
+            "fi": "Hyväksytty: Lähettigambiitti, Maurian-puolustus",
+            "ru": "Принятый: Гамбит слона, Защита Мориана",
+            "uk": "Прийнятий: Гамбіт слона, Захист Моріана"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Maurian Defense",
@@ -118,7 +126,9 @@
             "sv": "Antagen: Löpargambit, Steinitzförsvaret",
             "da": "Modtaget: Løbergambit, Steinitzforsvaret",
             "nb": "Mottatt: Løpergambit, Steinitzforsvaret",
-            "fi": "Hyväksytty: Lähettigambiitti, Steinitz-puolustus"
+            "fi": "Hyväksytty: Lähettigambiitti, Steinitz-puolustus",
+            "ru": "Принятый: Гамбит слона, Защита Стейница",
+            "uk": "Прийнятий: Гамбіт слона, Захист Стейніца"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Steinitz Defense",
@@ -145,7 +155,9 @@
             "sv": "Antagen: Löpargambit, Cozioförsvaret",
             "da": "Modtaget: Løbergambit, Cozioforsvaret",
             "nb": "Mottatt: Løpergambit, Cozioforsvaret",
-            "fi": "Hyväksytty: Lähettigambiitti, Cozio-puolustus"
+            "fi": "Hyväksytty: Lähettigambiitti, Cozio-puolustus",
+            "ru": "Принятый: Гамбит слона, Защита Козио",
+            "uk": "Прийнятий: Гамбіт слона, Захист Коціо"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Cozio Defense",
@@ -172,7 +184,9 @@
             "sv": "Antagen: Löpargambit, Bogoljubowvarianten",
             "da": "Modtaget: Løbergambit, Bogoljubowvarianten",
             "nb": "Mottatt: Løpergambit, Bogoljubowvarianten",
-            "fi": "Hyväksytty: Lähettigambiitti, Bogoljubow-muunnelma"
+            "fi": "Hyväksytty: Lähettigambiitti, Bogoljubow-muunnelma",
+            "ru": "Принятый: Гамбит слона, Вариант Боголюбова",
+            "uk": "Прийнятий: Гамбіт слона, Варіант Боголюбова"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bogoljubow Variation",
@@ -199,7 +213,9 @@
             "sv": "Antagen: Löpargambit, Paulsenattacken",
             "da": "Modtaget: Løbergambit, Paulsenangrebet",
             "nb": "Mottatt: Løpergambit, Paulsenangrepet",
-            "fi": "Hyväksytty: Lähettigambiitti, Paulsen-hyökkäys"
+            "fi": "Hyväksytty: Lähettigambiitti, Paulsen-hyökkäys",
+            "ru": "Принятый: Гамбит слона, Атака Паульсена",
+            "uk": "Прийнятий: Гамбіт слона, Атака Паульсена"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Paulsen Attack",
@@ -226,7 +242,9 @@
             "sv": "Antagen: Löpargambit, Bogoljubowförsvaret",
             "da": "Modtaget: Løbergambit, Bogoljubowforsvaret",
             "nb": "Mottatt: Løpergambit, Bogoljubowforsvaret",
-            "fi": "Hyväksytty: Lähettigambiitti, Bogoljubow-puolustus"
+            "fi": "Hyväksytty: Lähettigambiitti, Bogoljubow-puolustus",
+            "ru": "Принятый: Гамбит слона, Защита Боголюбова",
+            "uk": "Прийнятий: Гамбіт слона, Захист Боголюбова"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bogoljubow Defense",
@@ -253,7 +271,9 @@
             "sv": "Antagen: Löpargambit, Grecovarianten",
             "da": "Modtaget: Løbergambit, Grecovarianten",
             "nb": "Mottatt: Løpergambit, Grecovarianten",
-            "fi": "Hyväksytty: Lähettigambiitti, Greco-muunnelma"
+            "fi": "Hyväksytty: Lähettigambiitti, Greco-muunnelma",
+            "ru": "Принятый: Гамбит слона, Вариант Греко",
+            "uk": "Прийнятий: Гамбіт слона, Варіант Греко"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Greco Variation",
@@ -280,7 +300,9 @@
             "sv": "Antagen: Löpargambit, Bodenvarianten",
             "da": "Modtaget: Løbergambit, Bodenvarianten",
             "nb": "Mottatt: Løpergambit, Bodenvarianten",
-            "fi": "Hyväksytty: Lähettigambiitti, Boden-muunnelma"
+            "fi": "Hyväksytty: Lähettigambiitti, Boden-muunnelma",
+            "ru": "Принятый: Гамбит слона, Вариант Бодена",
+            "uk": "Прийнятий: Гамбіт слона, Варіант Бодена"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Boden Variation",
@@ -307,7 +329,9 @@
             "sv": "Antagen: Löpargambit, Klassiska försvaret",
             "da": "Modtaget: Løbergambit, Klassisk forsvar",
             "nb": "Mottatt: Løpergambit, Klassisk forsvar",
-            "fi": "Hyväksytty: Lähettigambiitti, Klassinen puolustus"
+            "fi": "Hyväksytty: Lähettigambiitti, Klassinen puolustus",
+            "ru": "Принятый: Гамбит слона, Классическая защита",
+            "uk": "Прийнятий: Гамбіт слона, Класичний захист"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Classical Defense",
@@ -334,7 +358,9 @@
             "sv": "Antagen: Löpargambit, Första Jaenisch-varianten",
             "da": "Modtaget: Løbergambit, Første Jaenisch-varianten",
             "nb": "Mottatt: Løpergambit, Første Jaenisch-varianten",
-            "fi": "Hyväksytty: Lähettigambiitti, Ensimmäinen Jaenisch-muunnelma"
+            "fi": "Hyväksytty: Lähettigambiitti, Ensimmäinen Jaenisch-muunnelma",
+            "ru": "Принятый: Гамбит слона, Первый вариант Яниша",
+            "uk": "Прийнятий: Гамбіт слона, Перший варіант Яніша"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, First Jaenisch Variation",
@@ -361,7 +387,9 @@
             "sv": "Antagen: Löpargambit, Bryanmotgambit",
             "da": "Modtaget: Løbergambit, Bryanmodgambit",
             "nb": "Mottatt: Løpergambit, Bryanmotgambit",
-            "fi": "Hyväksytty: Lähettigambiitti, Bryan-vastagambiitti"
+            "fi": "Hyväksytty: Lähettigambiitti, Bryan-vastagambiitti",
+            "ru": "Принятый: Гамбит слона, Контргамбит Брайана",
+            "uk": "Прийнятий: Гамбіт слона, Контргамбіт Браяна"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bryan Countergambit",
@@ -388,7 +416,9 @@
             "sv": "Antagen: Löpargambit, Chigorin'sattacken",
             "da": "Modtaget: Løbergambit, Chigorin'sangrebet",
             "nb": "Mottatt: Løpergambit, Chigorin'sangrepet",
-            "fi": "Hyväksytty: Lähettigambiitti, Chigorin's-hyökkäys"
+            "fi": "Hyväksytty: Lähettigambiitti, Chigorin's-hyökkäys",
+            "ru": "Принятый: Гамбит слона, Атака Чигорина",
+            "uk": "Прийнятий: Гамбіт слона, Атака Чигоріна"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Chigorin's Attack",
@@ -415,7 +445,9 @@
             "sv": "Antagen: Löpargambit, Coziovarianten",
             "da": "Modtaget: Løbergambit, Coziovarianten",
             "nb": "Mottatt: Løpergambit, Coziovarianten",
-            "fi": "Hyväksytty: Lähettigambiitti, Cozio-muunnelma"
+            "fi": "Hyväksytty: Lähettigambiitti, Cozio-muunnelma",
+            "ru": "Принятый: Гамбит слона, Вариант Козио",
+            "uk": "Прийнятий: Гамбіт слона, Варіант Коціо"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Cozio Variation",
@@ -442,7 +474,9 @@
             "sv": "Antagen: Löpargambit, Lopezvarianten",
             "da": "Modtaget: Løbergambit, Lopezvarianten",
             "nb": "Mottatt: Løpergambit, Lopezvarianten",
-            "fi": "Hyväksytty: Lähettigambiitti, Lopez-muunnelma"
+            "fi": "Hyväksytty: Lähettigambiitti, Lopez-muunnelma",
+            "ru": "Принятый: Гамбит слона, Вариант Лопеса",
+            "uk": "Прийнятий: Гамбіт слона, Варіант Лопеса"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Lopez Variation",
@@ -469,7 +503,9 @@
             "sv": "Antagen: Löpargambit, McDonnellattacken",
             "da": "Modtaget: Løbergambit, McDonnellangrebet",
             "nb": "Mottatt: Løpergambit, McDonnellangrepet",
-            "fi": "Hyväksytty: Lähettigambiitti, McDonnell-hyökkäys"
+            "fi": "Hyväksytty: Lähettigambiitti, McDonnell-hyökkäys",
+            "ru": "Принятый: Гамбит слона, Атака Макдоннелла",
+            "uk": "Прийнятий: Гамбіт слона, Атака Макдоннелла"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, McDonnell Attack",
@@ -496,7 +532,9 @@
             "sv": "Antagen: Löpargambit, Grimmattacken",
             "da": "Modtaget: Løbergambit, Grimmangrebet",
             "nb": "Mottatt: Løpergambit, Grimmangrepet",
-            "fi": "Hyväksytty: Lähettigambiitti, Grimm-hyökkäys"
+            "fi": "Hyväksytty: Lähettigambiitti, Grimm-hyökkäys",
+            "ru": "Принятый: Гамбит слона, Атака Гримма",
+            "uk": "Прийнятий: Гамбіт слона, Атака Грімма"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Grimm Attack",
@@ -523,7 +561,9 @@
             "sv": "Antagen: Löpargambit, McDonnellattacken",
             "da": "Modtaget: Løbergambit, McDonnellangrebet",
             "nb": "Mottatt: Løpergambit, McDonnellangrepet",
-            "fi": "Hyväksytty: Lähettigambiitti, McDonnell-hyökkäys"
+            "fi": "Hyväksytty: Lähettigambiitti, McDonnell-hyökkäys",
+            "ru": "Принятый: Гамбит слона, Атака Макдоннелла",
+            "uk": "Прийнятий: Гамбіт слона, Атака Макдоннелла"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, McDonnell Attack",
@@ -550,7 +590,9 @@
             "sv": "Antagen: Löpargambit, Fraservarianten",
             "da": "Modtaget: Løbergambit, Fraservarianten",
             "nb": "Mottatt: Løpergambit, Fraservarianten",
-            "fi": "Hyväksytty: Lähettigambiitti, Fraser-muunnelma"
+            "fi": "Hyväksytty: Lähettigambiitti, Fraser-muunnelma",
+            "ru": "Принятый: Гамбит слона, Вариант Фрейзера",
+            "uk": "Прийнятий: Гамбіт слона, Варіант Фрейзера"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Fraser Variation",
@@ -577,7 +619,9 @@
             "sv": "Antagen: Löpargambit, Klassiska försvaret, Cozioattacken",
             "da": "Modtaget: Løbergambit, Klassisk forsvar, Cozioangrebet",
             "nb": "Mottatt: Løpergambit, Klassisk forsvar, Cozioangrepet",
-            "fi": "Hyväksytty: Lähettigambiitti, Klassinen puolustus, Cozio-hyökkäys"
+            "fi": "Hyväksytty: Lähettigambiitti, Klassinen puolustus, Cozio-hyökkäys",
+            "ru": "Принятый: Гамбит слона, Классическая защита, Атака Козио",
+            "uk": "Прийнятий: Гамбіт слона, Класичний захист, Атака Коціо"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Classical Defense, Cozio Attack",
@@ -604,7 +648,9 @@
             "sv": "Antagen: Löpargambit, Kieseritzkygambit",
             "da": "Modtaget: Løbergambit, Kieseritzkygambit",
             "nb": "Mottatt: Løpergambit, Kieseritzkygambit",
-            "fi": "Hyväksytty: Lähettigambiitti, Kieseritzky-gambiitti"
+            "fi": "Hyväksytty: Lähettigambiitti, Kieseritzky-gambiitti",
+            "ru": "Принятый: Гамбит слона, Гамбит Кизерицкого",
+            "uk": "Прийнятий: Гамбіт слона, Гамбіт Кізерицького"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Kieseritzky Gambit",
@@ -631,7 +677,9 @@
             "sv": "Antagen: Löpargambit, Lopezförsvaret",
             "da": "Modtaget: Løbergambit, Lopezforsvaret",
             "nb": "Mottatt: Løpergambit, Lopezforsvaret",
-            "fi": "Hyväksytty: Lähettigambiitti, Lopez-puolustus"
+            "fi": "Hyväksytty: Lähettigambiitti, Lopez-puolustus",
+            "ru": "Принятый: Гамбит слона, Защита Лопеса",
+            "uk": "Прийнятий: Гамбіт слона, Захист Лопеса"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Lopez Defense",
@@ -658,7 +706,9 @@
             "sv": "Antagen: Löpargambit, Bledowvarianten",
             "da": "Modtaget: Løbergambit, Bledowvarianten",
             "nb": "Mottatt: Løpergambit, Bledowvarianten",
-            "fi": "Hyväksytty: Lähettigambiitti, Bledow-muunnelma"
+            "fi": "Hyväksytty: Lähettigambiitti, Bledow-muunnelma",
+            "ru": "Принятый: Гамбит слона, Вариант Бледова",
+            "uk": "Прийнятий: Гамбіт слона, Варіант Бледова"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bledow Variation",
@@ -685,7 +735,9 @@
             "sv": "Antagen: Löpargambit, Bledowmotgambit",
             "da": "Modtaget: Løbergambit, Bledowmodgambit",
             "nb": "Mottatt: Løpergambit, Bledowmotgambit",
-            "fi": "Hyväksytty: Lähettigambiitti, Bledow-vastagambiitti"
+            "fi": "Hyväksytty: Lähettigambiitti, Bledow-vastagambiitti",
+            "ru": "Принятый: Гамбит слона, Контргамбит Бледова",
+            "uk": "Прийнятий: Гамбіт слона, Контргамбіт Бледова"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bledow Countergambit",
@@ -712,7 +764,9 @@
             "sv": "Antagen: Löpargambit, Boren-Svenoniusvarianten",
             "da": "Modtaget: Løbergambit, Boren-Svenoniusvarianten",
             "nb": "Mottatt: Løpergambit, Boren-Svenoniusvarianten",
-            "fi": "Hyväksytty: Lähettigambiitti, Boren-Svenonius-muunnelma"
+            "fi": "Hyväksytty: Lähettigambiitti, Boren-Svenonius-muunnelma",
+            "ru": "Принятый: Гамбит слона, Вариант Борена-Свенониуса",
+            "uk": "Прийнятий: Гамбіт слона, Варіант Борена-Свеноніуса"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Boren-Svenonius Variation",
@@ -739,7 +793,9 @@
             "sv": "Antagen: Löpargambit, Anderssenvarianten",
             "da": "Modtaget: Løbergambit, Anderssenvarianten",
             "nb": "Mottatt: Løpergambit, Anderssenvarianten",
-            "fi": "Hyväksytty: Lähettigambiitti, Anderssen-muunnelma"
+            "fi": "Hyväksytty: Lähettigambiitti, Anderssen-muunnelma",
+            "ru": "Принятый: Гамбит слона, Вариант Андерсена",
+            "uk": "Прийнятий: Гамбіт слона, Варіант Андерсена"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Anderssen Variation",
@@ -766,7 +822,9 @@
             "sv": "Antagen: Löpargambit, Gianutiogambit",
             "da": "Modtaget: Løbergambit, Gianutiogambit",
             "nb": "Mottatt: Løpergambit, Gianutiogambit",
-            "fi": "Hyväksytty: Lähettigambiitti, Gianutio-gambiitti"
+            "fi": "Hyväksytty: Lähettigambiitti, Gianutio-gambiitti",
+            "ru": "Принятый: Гамбит слона, Гамбит Джанутио",
+            "uk": "Прийнятий: Гамбіт слона, Гамбіт Джануціо"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Gianutio Gambit",
@@ -793,7 +851,9 @@
             "sv": "Antagen: Löpargambit, Anderssenförsvaret",
             "da": "Modtaget: Løbergambit, Anderssenforsvaret",
             "nb": "Mottatt: Løpergambit, Anderssenforsvaret",
-            "fi": "Hyväksytty: Lähettigambiitti, Anderssen-puolustus"
+            "fi": "Hyväksytty: Lähettigambiitti, Anderssen-puolustus",
+            "ru": "Принятый: Гамбит слона, Защита Андерсена",
+            "uk": "Прийнятий: Гамбіт слона, Захист Андерсена"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Anderssen Defense",
@@ -821,7 +881,9 @@
         "sv": "Avböjd: Falkbeermotgambit",
         "da": "Afslået: Falkbeermodgambit",
         "nb": "Avslått: Falkbeermotgambit",
-        "fi": "Hylätty: Falkbeer-vastagambiitti"
+        "fi": "Hylätty: Falkbeer-vastagambiitti",
+        "ru": "Отказанный: Контргамбит Фалькбеера",
+        "uk": "Відхилений: Контргамбіт Фалькбеера"
       },
       "lines": [
         {
@@ -844,7 +906,9 @@
             "sv": "Avböjd: Falkbeermotgambit",
             "da": "Afslået: Falkbeermodgambit",
             "nb": "Avslått: Falkbeermotgambit",
-            "fi": "Hylätty: Falkbeer-vastagambiitti"
+            "fi": "Hylätty: Falkbeer-vastagambiitti",
+            "ru": "Отказанный: Контргамбит Фалькбеера",
+            "uk": "Відхилений: Контргамбіт Фалькбеера"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit",
@@ -871,7 +935,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Milner-Barryvarianten",
             "da": "Afslået: Falkbeermodgambit, Milner-Barryvarianten",
             "nb": "Avslått: Falkbeermotgambit, Milner-Barryvarianten",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Milner-Barry-muunnelma"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Milner-Barry-muunnelma",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Вариант Милнера-Барри",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Варіант Мілнера-Баррі"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Milner-Barry Variation",
@@ -898,7 +964,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Blackburneattacken",
             "da": "Afslået: Falkbeermodgambit, Blackburneangrebet",
             "nb": "Avslått: Falkbeermotgambit, Blackburneangrepet",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Blackburne-hyökkäys"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Blackburne-hyökkäys",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Атака Блэкберна",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Атака Блекберна"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Blackburne Attack",
@@ -925,7 +993,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Hinrichsengambit",
             "da": "Afslået: Falkbeermodgambit, Hinrichsengambit",
             "nb": "Avslått: Falkbeermotgambit, Hinrichsengambit",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Hinrichsen-gambiitti"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Hinrichsen-gambiitti",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Гамбит Хинриксена",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Гамбіт Гінріксена"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Hinrichsen Gambit",
@@ -952,7 +1022,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Milesgambit",
             "da": "Afslået: Falkbeermodgambit, Milesgambit",
             "nb": "Avslått: Falkbeermotgambit, Milesgambit",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Miles-gambiitti"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Miles-gambiitti",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Гамбит Майлса",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Гамбіт Майлса"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Miles Gambit",
@@ -979,7 +1051,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Nimzowitsch-Marshallmotgambit",
             "da": "Afslået: Falkbeermodgambit, Nimzowitsch-Marshallmodgambit",
             "nb": "Avslått: Falkbeermotgambit, Nimzowitsch-Marshallmotgambit",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Nimzowitsch-Marshall-vastagambiitti"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Nimzowitsch-Marshall-vastagambiitti",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Контргамбит Нимцовича-Маршалла",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Контргамбіт Німцовича-Маршалла"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit",
@@ -1006,7 +1080,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Picklergambit",
             "da": "Afslået: Falkbeermodgambit, Picklergambit",
             "nb": "Avslått: Falkbeermotgambit, Picklergambit",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Pickler-gambiitti"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Pickler-gambiitti",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Гамбит Пиклера",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Гамбіт Піклера"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Pickler Gambit",
@@ -1033,7 +1109,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Stauntonvarianten",
             "da": "Afslået: Falkbeermodgambit, Stauntonvarianten",
             "nb": "Avslått: Falkbeermotgambit, Stauntonvarianten",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Staunton-linja"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Staunton-linja",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Линия Стаунтона",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Лінія Стаунтона"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Staunton Line",
@@ -1060,7 +1138,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Anderssenattacken",
             "da": "Afslået: Falkbeermodgambit, Anderssenangrebet",
             "nb": "Avslått: Falkbeermotgambit, Anderssenangrepet",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Anderssen-hyökkäys"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Anderssen-hyökkäys",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Атака Андерсена",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Атака Андерсена"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Anderssen Attack",
@@ -1087,7 +1167,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Rubinsteinvarianten",
             "da": "Afslået: Falkbeermodgambit, Rubinsteinvarianten",
             "nb": "Avslått: Falkbeermotgambit, Rubinsteinvarianten",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Rubinstein-muunnelma"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Rubinstein-muunnelma",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Вариант Рубинштейна",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Варіант Рубінштейна"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Rubinstein Variation",
@@ -1114,7 +1196,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Charousekgambit",
             "da": "Afslået: Falkbeermodgambit, Charousekgambit",
             "nb": "Avslått: Falkbeermotgambit, Charousekgambit",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Гамбит Харузека",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Гамбіт Харузека"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
@@ -1141,7 +1225,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Charousekgambit, Keresvarianten",
             "da": "Afslået: Falkbeermodgambit, Charousekgambit, Keresvarianten",
             "nb": "Avslått: Falkbeermotgambit, Charousekgambit, Keresvarianten",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti, Keres-muunnelma"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti, Keres-muunnelma",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Гамбит Харузека, Вариант Кереса",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Гамбіт Харузека, Варіант Кереса"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation",
@@ -1168,7 +1254,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Charousekgambit, Gamla varianten",
             "da": "Afslået: Falkbeermodgambit, Charousekgambit, Gammel variant",
             "nb": "Avslått: Falkbeermotgambit, Charousekgambit, Gammel variant",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti, Vanha linja"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti, Vanha linja",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Гамбит Харузека, Старая линия",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Гамбіт Харузека, Стара лінія"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Old Line",
@@ -1195,7 +1283,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Charousekgambit antagen",
             "da": "Afslået: Falkbeermodgambit, Charousekgambit modtaget",
             "nb": "Avslått: Falkbeermotgambit, Charousekgambit mottatt",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti hyväksytty"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti hyväksytty",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Принятый гамбит Харузека",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Прийнятий гамбіт Харузека"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit Accepted",
@@ -1222,7 +1312,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Alapinvarianten",
             "da": "Afslået: Falkbeermodgambit, Alapinvarianten",
             "nb": "Avslått: Falkbeermotgambit, Alapinvarianten",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Alapin-muunnelma"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Alapin-muunnelma",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Вариант Алапина",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Варіант Алапіна"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Alapin Variation",
@@ -1249,7 +1341,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Charousekgambit, Huvudvariant",
             "da": "Afslået: Falkbeermodgambit, Charousekgambit, Hovedvariant",
             "nb": "Avslått: Falkbeermotgambit, Charousekgambit, Hovedvariant",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti, Päämuunnelma"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti, Päämuunnelma",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Гамбит Харузека, Основной вариант",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Гамбіт Харузека, Основний варіант"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Main Line",
@@ -1276,7 +1370,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Tarraschvarianten",
             "da": "Afslået: Falkbeermodgambit, Tarraschvarianten",
             "nb": "Avslått: Falkbeermotgambit, Tarraschvarianten",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Tarrasch-muunnelma"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Tarrasch-muunnelma",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Вариант Тарраша",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Варіант Тарраша"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Tarrasch Variation",
@@ -1303,7 +1399,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Charousekgambit",
             "da": "Afslået: Falkbeermodgambit, Charousekgambit",
             "nb": "Avslått: Falkbeermotgambit, Charousekgambit",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-gambiitti",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Гамбит Харузека",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Гамбіт Харузека"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
@@ -1330,7 +1428,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Charousekvarianten",
             "da": "Afslået: Falkbeermodgambit, Charousekvarianten",
             "nb": "Avslått: Falkbeermotgambit, Charousekvarianten",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-muunnelma"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Charousek-muunnelma",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Вариант Харузека",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Варіант Харузека"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Variation",
@@ -1357,7 +1457,9 @@
             "sv": "Avböjd: Falkbeermotgambit, Modern övergång",
             "da": "Afslået: Falkbeermodgambit, Moderne overgang",
             "nb": "Avslått: Falkbeermotgambit, Moderne overgang",
-            "fi": "Hylätty: Falkbeer-vastagambiitti, Moderni siirtymä"
+            "fi": "Hylätty: Falkbeer-vastagambiitti, Moderni siirtymä",
+            "ru": "Отказанный: Контргамбит Фалькбеера, Современный переход",
+            "uk": "Відхилений: Контргамбіт Фалькбеера, Сучасний перехід"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Modern Transfer",
@@ -1385,7 +1487,9 @@
         "sv": "Antagen: Kieseritzkygambit",
         "da": "Modtaget: Kieseritzkygambit",
         "nb": "Mottatt: Kieseritzkygambit",
-        "fi": "Hyväksytty: Kieseritzky-gambiitti"
+        "fi": "Hyväksytty: Kieseritzky-gambiitti",
+        "ru": "Принятый: Гамбит Кизерицкого",
+        "uk": "Прийнятий: Гамбіт Кізерицького"
       },
       "lines": [
         {
@@ -1408,7 +1512,9 @@
             "sv": "Antagen: Kieseritzkygambit",
             "da": "Modtaget: Kieseritzkygambit",
             "nb": "Mottatt: Kieseritzkygambit",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti",
+            "ru": "Принятый: Гамбит Кизерицкого",
+            "uk": "Прийнятий: Гамбіт Кізерицького"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit",
@@ -1435,7 +1541,9 @@
             "sv": "Antagen: Kieseritzkygambit, Paulsenförsvaret",
             "da": "Modtaget: Kieseritzkygambit, Paulsenforsvaret",
             "nb": "Mottatt: Kieseritzkygambit, Paulsenforsvaret",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Paulsen-puolustus"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Paulsen-puolustus",
+            "ru": "Принятый: Гамбит Кизерицкого, Защита Паульсена",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Захист Паульсена"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense",
@@ -1462,7 +1570,9 @@
             "sv": "Antagen: Kieseritzkygambit, Neumannförsvaret",
             "da": "Modtaget: Kieseritzkygambit, Neumannforsvaret",
             "nb": "Mottatt: Kieseritzkygambit, Neumannforsvaret",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Neumann-puolustus"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Neumann-puolustus",
+            "ru": "Принятый: Гамбит Кизерицкого, Защита Ноймана",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Захист Ноймана"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Neumann Defense",
@@ -1489,7 +1599,9 @@
             "sv": "Antagen: Kieseritzkygambit, Berlinförsvaret",
             "da": "Modtaget: Kieseritzkygambit, Berlinerforsvaret",
             "nb": "Mottatt: Kieseritzkygambit, Berlinerforsvaret",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Berliiniläinen puolustus"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Berliiniläinen puolustus",
+            "ru": "Принятый: Гамбит Кизерицкого, Берлинская защита",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Берлінський захист"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense",
@@ -1516,7 +1628,9 @@
             "sv": "Antagen: Kieseritzkygambit, Anderssenförsvaret",
             "da": "Modtaget: Kieseritzkygambit, Anderssenforsvaret",
             "nb": "Mottatt: Kieseritzkygambit, Anderssenforsvaret",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Anderssen-puolustus"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Anderssen-puolustus",
+            "ru": "Принятый: Гамбит Кизерицкого, Защита Андерсена",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Захист Андерсена"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Anderssen Defense",
@@ -1543,7 +1657,9 @@
             "sv": "Antagen: Kieseritzkygambit, Ricegambit",
             "da": "Modtaget: Kieseritzkygambit, Ricegambit",
             "nb": "Mottatt: Kieseritzkygambit, Ricegambit",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Rice-gambiitti"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Rice-gambiitti",
+            "ru": "Принятый: Гамбит Кизерицкого, Гамбит Райса",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Гамбіт Райса"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Rice Gambit",
@@ -1570,7 +1686,9 @@
             "sv": "Antagen: Kieseritzkygambit, Anderssen-Cordelgambit",
             "da": "Modtaget: Kieseritzkygambit, Anderssen-Cordelgambit",
             "nb": "Mottatt: Kieseritzkygambit, Anderssen-Cordelgambit",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Anderssen-Cordel-gambiitti"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Anderssen-Cordel-gambiitti",
+            "ru": "Принятый: Гамбит Кизерицкого, Гамбит Андерсена-Корделя",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Гамбіт Андерсена-Корделя"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit",
@@ -1597,7 +1715,9 @@
             "sv": "Antagen: Kieseritzkygambit, Paulsenförsvaret uppskjuten",
             "da": "Modtaget: Kieseritzkygambit, Paulsenforsvaret udskudt",
             "nb": "Mottatt: Kieseritzkygambit, Paulsenforsvaret utsatt",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Paulsen-puolustus viivästetty"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Paulsen-puolustus viivästetty",
+            "ru": "Принятый: Гамбит Кизерицкого, Отложенная защита Паульсена",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Відкладений захист Паульсена"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense Deferred",
@@ -1624,7 +1744,9 @@
             "sv": "Antagen: Kieseritzkygambit, Berlinförsvaret, de Riviere-varianten",
             "da": "Modtaget: Kieseritzkygambit, Berlinerforsvaret, de Riviere-varianten",
             "nb": "Mottatt: Kieseritzkygambit, Berlinerforsvaret, de Riviere-varianten",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Berliiniläinen puolustus, de Riviere-muunnelma"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Berliiniläinen puolustus, de Riviere-muunnelma",
+            "ru": "Принятый: Гамбит Кизерицкого, Берлинская защита, Вариант де Ривьера",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Берлінський захист, Варіант де Рів'єра"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, de Riviere Variation",
@@ -1651,7 +1773,9 @@
             "sv": "Antagen: Kieseritzkygambit, Berlinförsvaret, Rubinsteinvarianten",
             "da": "Modtaget: Kieseritzkygambit, Berlinerforsvaret, Rubinsteinvarianten",
             "nb": "Mottatt: Kieseritzkygambit, Berlinerforsvaret, Rubinsteinvarianten",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Berliiniläinen puolustus, Rubinstein-muunnelma"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Berliiniläinen puolustus, Rubinstein-muunnelma",
+            "ru": "Принятый: Гамбит Кизерицкого, Берлинская защита, Вариант Рубинштейна",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Берлінський захист, Варіант Рубінштейна"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, Rubinstein Variation",
@@ -1678,7 +1802,9 @@
             "sv": "Antagen: Kieseritzkygambit, Rosenthalförsvaret",
             "da": "Modtaget: Kieseritzkygambit, Rosenthalforsvaret",
             "nb": "Mottatt: Kieseritzkygambit, Rosenthalforsvaret",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Rosenthal-puolustus"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Rosenthal-puolustus",
+            "ru": "Принятый: Гамбит Кизерицкого, Защита Розенталя",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Захист Розенталя"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Rosenthal Defense",
@@ -1705,7 +1831,9 @@
             "sv": "Antagen: Kieseritzkygambit, Brentanoförsvaret",
             "da": "Modtaget: Kieseritzkygambit, Brentanoforsvaret",
             "nb": "Mottatt: Kieseritzkygambit, Brentanoforsvaret",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Brentano-puolustus"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Brentano-puolustus",
+            "ru": "Принятый: Гамбит Кизерицкого, Защита Брентано",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Захист Брентано"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense",
@@ -1732,7 +1860,9 @@
             "sv": "Antagen: Kieseritzkygambit, Brentanoförsvaret",
             "da": "Modtaget: Kieseritzkygambit, Brentanoforsvaret",
             "nb": "Mottatt: Kieseritzkygambit, Brentanoforsvaret",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Brentano-puolustus"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Brentano-puolustus",
+            "ru": "Принятый: Гамбит Кизерицкого, Защита Брентано",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Захист Брентано"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense",
@@ -1759,7 +1889,9 @@
             "sv": "Antagen: Kieseritzkygambit, Brentanoförsvaret, Carovarianten",
             "da": "Modtaget: Kieseritzkygambit, Brentanoforsvaret, Carovarianten",
             "nb": "Mottatt: Kieseritzkygambit, Brentanoforsvaret, Carovarianten",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Brentano-puolustus, Caro-muunnelma"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Brentano-puolustus, Caro-muunnelma",
+            "ru": "Принятый: Гамбит Кизерицкого, Защита Брентано, Вариант Каро",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Захист Брентано, Варіант Каро"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense, Caro Variation",
@@ -1786,7 +1918,9 @@
             "sv": "Antagen: Kieseritzkygambit, Kolischförsvaret",
             "da": "Modtaget: Kieseritzkygambit, Kolischforsvaret",
             "nb": "Mottatt: Kieseritzkygambit, Kolischforsvaret",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Kolisch-puolustus"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Kolisch-puolustus",
+            "ru": "Принятый: Гамбит Кизерицкого, Защита Колиша",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Захист Коліша"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Kolisch Defense",
@@ -1813,7 +1947,9 @@
             "sv": "Antagen: Kieseritzkygambit, Långa piskan",
             "da": "Modtaget: Kieseritzkygambit, Lang pisk",
             "nb": "Mottatt: Kieseritzkygambit, Lang pisk",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Pitkä piiska"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Pitkä piiska",
+            "ru": "Принятый: Гамбит Кизерицкого, Длинный кнут",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Довгий батіг"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Long Whip",
@@ -1840,7 +1976,9 @@
             "sv": "Antagen: Kieseritzkygambit, Cottergambit",
             "da": "Modtaget: Kieseritzkygambit, Cottergambit",
             "nb": "Mottatt: Kieseritzkygambit, Cottergambit",
-            "fi": "Hyväksytty: Kieseritzky-gambiitti, Cotter-gambiitti"
+            "fi": "Hyväksytty: Kieseritzky-gambiitti, Cotter-gambiitti",
+            "ru": "Принятый: Гамбит Кизерицкого, Гамбит Коттера",
+            "uk": "Прийнятий: Гамбіт Кізерицького, Гамбіт Коттера"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Cotter Gambit",
@@ -1868,7 +2006,9 @@
         "sv": "Antagen: Salviogambit",
         "da": "Modtaget: Salviogambit",
         "nb": "Mottatt: Salviogambit",
-        "fi": "Hyväksytty: Salvio-gambiitti"
+        "fi": "Hyväksytty: Salvio-gambiitti",
+        "ru": "Принятый: Гамбит Сальвио",
+        "uk": "Прийнятий: Гамбіт Сальвіо"
       },
       "lines": [
         {
@@ -1891,7 +2031,9 @@
             "sv": "Antagen: Salviogambit",
             "da": "Modtaget: Salviogambit",
             "nb": "Mottatt: Salviogambit",
-            "fi": "Hyväksytty: Salvio-gambiitti"
+            "fi": "Hyväksytty: Salvio-gambiitti",
+            "ru": "Принятый: Гамбит Сальвио",
+            "uk": "Прийнятий: Гамбіт Сальвіо"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit",
@@ -1918,7 +2060,9 @@
             "sv": "Antagen: Salviogambit, Wienervarianten",
             "da": "Modtaget: Salviogambit, Wienervarianten",
             "nb": "Mottatt: Salviogambit, Wienervarianten",
-            "fi": "Hyväksytty: Salvio-gambiitti, Wieniläinen muunnelma"
+            "fi": "Hyväksytty: Salvio-gambiitti, Wieniläinen muunnelma",
+            "ru": "Принятый: Гамбит Сальвио, Венский вариант",
+            "uk": "Прийнятий: Гамбіт Сальвіо, Віденський варіант"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Viennese Variation",
@@ -1945,7 +2089,9 @@
             "sv": "Antagen: Salviogambit, Santa Mariaförsvaret",
             "da": "Modtaget: Salviogambit, Santa Mariaforsvaret",
             "nb": "Mottatt: Salviogambit, Santa Mariaforsvaret",
-            "fi": "Hyväksytty: Salvio-gambiitti, Santa Maria-puolustus"
+            "fi": "Hyväksytty: Salvio-gambiitti, Santa Maria-puolustus",
+            "ru": "Принятый: Гамбит Сальвио, Защита «Санта-Мария»",
+            "uk": "Прийнятий: Гамбіт Сальвіо, Захист «Санта-Марія»"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Santa Maria Defense",
@@ -1972,7 +2118,9 @@
             "sv": "Antagen: Salviogambit, Silberschmidtförsvaret",
             "da": "Modtaget: Salviogambit, Silberschmidtforsvaret",
             "nb": "Mottatt: Salviogambit, Silberschmidtforsvaret",
-            "fi": "Hyväksytty: Salvio-gambiitti, Silberschmidt-puolustus"
+            "fi": "Hyväksytty: Salvio-gambiitti, Silberschmidt-puolustus",
+            "ru": "Принятый: Гамбит Сальвио, Защита Зильбершмидта",
+            "uk": "Прийнятий: Гамбіт Сальвіо, Захист Зільбершмідта"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Silberschmidt Defense",
@@ -1999,7 +2147,9 @@
             "sv": "Antagen: Salviogambit, Anderssenmotattacken",
             "da": "Modtaget: Salviogambit, Anderssenmodangrebet",
             "nb": "Mottatt: Salviogambit, Anderssenmotangrepet",
-            "fi": "Hyväksytty: Salvio-gambiitti, Anderssen-vastahyökkäys"
+            "fi": "Hyväksytty: Salvio-gambiitti, Anderssen-vastahyökkäys",
+            "ru": "Принятый: Гамбит Сальвио, Контратака Андерсена",
+            "uk": "Прийнятий: Гамбіт Сальвіо, Контратака Андерсена"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Anderssen Counterattack",
@@ -2026,7 +2176,9 @@
             "sv": "Antagen: Salviogambit, Cochranegambit",
             "da": "Modtaget: Salviogambit, Cochranegambit",
             "nb": "Mottatt: Salviogambit, Cochranegambit",
-            "fi": "Hyväksytty: Salvio-gambiitti, Cochrane-gambiitti"
+            "fi": "Hyväksytty: Salvio-gambiitti, Cochrane-gambiitti",
+            "ru": "Принятый: Гамбит Сальвио, Гамбит Кохрена",
+            "uk": "Прийнятий: Гамбіт Сальвіо, Гамбіт Кохрена"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Cochrane Gambit",
@@ -2054,7 +2206,9 @@
         "sv": "Avböjd: Klassiska varianten",
         "da": "Afslået: Klassisk variant",
         "nb": "Avslått: Klassisk variant",
-        "fi": "Hylätty: Klassinen muunnelma"
+        "fi": "Hylätty: Klassinen muunnelma",
+        "ru": "Отказанный: Классический вариант",
+        "uk": "Відхилений: Класичний варіант"
       },
       "lines": [
         {
@@ -2077,7 +2231,9 @@
             "sv": "Avböjd: Klassiska varianten",
             "da": "Afslået: Klassisk variant",
             "nb": "Avslått: Klassisk variant",
-            "fi": "Hylätty: Klassinen muunnelma"
+            "fi": "Hylätty: Klassinen muunnelma",
+            "ru": "Отказанный: Классический вариант",
+            "uk": "Відхилений: Класичний варіант"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation",
@@ -2104,7 +2260,9 @@
             "sv": "Avböjd: Klassiska varianten, Rotlewimotgambit",
             "da": "Afslået: Klassisk variant, Rotlewimodgambit",
             "nb": "Avslått: Klassisk variant, Rotlewimotgambit",
-            "fi": "Hylätty: Klassinen muunnelma, Rotlewi-vastagambiitti"
+            "fi": "Hylätty: Klassinen muunnelma, Rotlewi-vastagambiitti",
+            "ru": "Отказанный: Классический вариант, Контргамбит Ротлеви",
+            "uk": "Відхилений: Класичний варіант, Контргамбіт Ротлеві"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Rotlewi Countergambit",
@@ -2131,7 +2289,9 @@
             "sv": "Avböjd: Klassiska varianten",
             "da": "Afslået: Klassisk variant",
             "nb": "Avslått: Klassisk variant",
-            "fi": "Hylätty: Klassinen muunnelma"
+            "fi": "Hylätty: Klassinen muunnelma",
+            "ru": "Отказанный: Классический вариант",
+            "uk": "Відхилений: Класичний варіант"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation",
@@ -2158,7 +2318,9 @@
             "sv": "Avböjd: Klassiska varianten, Euweattacken",
             "da": "Afslået: Klassisk variant, Euweangrebet",
             "nb": "Avslått: Klassisk variant, Euweangrepet",
-            "fi": "Hylätty: Klassinen muunnelma, Euwe-hyökkäys"
+            "fi": "Hylätty: Klassinen muunnelma, Euwe-hyökkäys",
+            "ru": "Отказанный: Классический вариант, Атака Эйве",
+            "uk": "Відхилений: Класичний варіант, Атака Ейве"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Euwe Attack",
@@ -2185,7 +2347,9 @@
             "sv": "Avböjd: Klassiska varianten, Rubinsteinmotgambit",
             "da": "Afslået: Klassisk variant, Rubinsteinmodgambit",
             "nb": "Avslått: Klassisk variant, Rubinsteinmotgambit",
-            "fi": "Hylätty: Klassinen muunnelma, Rubinstein-vastagambiitti"
+            "fi": "Hylätty: Klassinen muunnelma, Rubinstein-vastagambiitti",
+            "ru": "Отказанный: Классический вариант, Контргамбит Рубинштейна",
+            "uk": "Відхилений: Класичний варіант, Контргамбіт Рубінштейна"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Rubinstein Countergambit",
@@ -2212,7 +2376,9 @@
             "sv": "Avböjd: Klassiska varianten, Walthoffenattacken",
             "da": "Afslået: Klassisk variant, Walthoffenangrebet",
             "nb": "Avslått: Klassisk variant, Walthoffenangrepet",
-            "fi": "Hylätty: Klassinen muunnelma, Walthoffen-hyökkäys"
+            "fi": "Hylätty: Klassinen muunnelma, Walthoffen-hyökkäys",
+            "ru": "Отказанный: Классический вариант, Атака Вальтхофена",
+            "uk": "Відхилений: Класичний варіант, Атака Вальтгофена"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Walthoffen Attack",
@@ -2240,7 +2406,9 @@
         "sv": "Avböjd: Panteldakismotgambit",
         "da": "Afslået: Panteldakismodgambit",
         "nb": "Avslått: Panteldakismotgambit",
-        "fi": "Hylätty: Panteldakis-vastagambiitti"
+        "fi": "Hylätty: Panteldakis-vastagambiitti",
+        "ru": "Отказанный: Контргамбит Пантелдакиса",
+        "uk": "Відхилений: Контргамбіт Пантелдакіса"
       },
       "lines": [
         {
@@ -2263,7 +2431,9 @@
             "sv": "Avböjd: Panteldakismotgambit",
             "da": "Afslået: Panteldakismodgambit",
             "nb": "Avslått: Panteldakismotgambit",
-            "fi": "Hylätty: Panteldakis-vastagambiitti"
+            "fi": "Hylätty: Panteldakis-vastagambiitti",
+            "ru": "Отказанный: Контргамбит Пантелдакиса",
+            "uk": "Відхилений: Контргамбіт Пантелдакіса"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit",
@@ -2290,7 +2460,9 @@
             "sv": "Avböjd: Panteldakismotgambit, Schiller'sförsvaret",
             "da": "Afslået: Panteldakismodgambit, Schiller'sforsvaret",
             "nb": "Avslått: Panteldakismotgambit, Schiller'sforsvaret",
-            "fi": "Hylätty: Panteldakis-vastagambiitti, Schiller's-puolustus"
+            "fi": "Hylätty: Panteldakis-vastagambiitti, Schiller's-puolustus",
+            "ru": "Отказанный: Контргамбит Пантелдакиса, Защита Шиллера",
+            "uk": "Відхилений: Контргамбіт Пантелдакіса, Захист Шиллера"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Schiller's Defense",
@@ -2317,7 +2489,9 @@
             "sv": "Avböjd: Panteldakismotgambit, Grecovarianten",
             "da": "Afslået: Panteldakismodgambit, Grecovarianten",
             "nb": "Avslått: Panteldakismotgambit, Grecovarianten",
-            "fi": "Hylätty: Panteldakis-vastagambiitti, Greco-muunnelma"
+            "fi": "Hylätty: Panteldakis-vastagambiitti, Greco-muunnelma",
+            "ru": "Отказанный: Контргамбит Пантелдакиса, Вариант Греко",
+            "uk": "Відхилений: Контргамбіт Пантелдакіса, Варіант Греко"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Greco Variation",
@@ -2344,7 +2518,9 @@
             "sv": "Avböjd: Panteldakismotgambit, Symmetriska varianten",
             "da": "Afslået: Panteldakismodgambit, Symmetrisk variant",
             "nb": "Avslått: Panteldakismotgambit, Symmetrisk variant",
-            "fi": "Hylätty: Panteldakis-vastagambiitti, Symmetrinen muunnelma"
+            "fi": "Hylätty: Panteldakis-vastagambiitti, Symmetrinen muunnelma",
+            "ru": "Отказанный: Контргамбит Пантелдакиса, Симметричный вариант",
+            "uk": "Відхилений: Контргамбіт Пантелдакіса, Симетричний варіант"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Symmetrical Variation",
@@ -2371,7 +2547,9 @@
             "sv": "Avböjd: Panteldakismotgambit, Shirazivarianten",
             "da": "Afslået: Panteldakismodgambit, Shirazivarianten",
             "nb": "Avslått: Panteldakismotgambit, Shirazivarianten",
-            "fi": "Hylätty: Panteldakis-vastagambiitti, Shirazi-linja"
+            "fi": "Hylätty: Panteldakis-vastagambiitti, Shirazi-linja",
+            "ru": "Отказанный: Контргамбит Пантелдакиса, Линия Ширази",
+            "uk": "Відхилений: Контргамбіт Пантелдакіса, Лінія Ширазі"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Shirazi Line",
@@ -2398,7 +2576,9 @@
             "sv": "Avböjd: Panteldakismotgambit, Bondeoffervarianten",
             "da": "Afslået: Panteldakismodgambit, Bondeoffervarianten",
             "nb": "Avslått: Panteldakismotgambit, Bondeoffervarianten",
-            "fi": "Hylätty: Panteldakis-vastagambiitti, Sotilasuhrauslinja"
+            "fi": "Hylätty: Panteldakis-vastagambiitti, Sotilasuhrauslinja",
+            "ru": "Отказанный: Контргамбит Пантелдакиса, Линия с жертвой пешки",
+            "uk": "Відхилений: Контргамбіт Пантелдакіса, Лінія з жертвою пішака"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Pawn Sacrifice Line",
@@ -2426,7 +2606,9 @@
         "sv": "Antagen: Allgaier",
         "da": "Modtaget: Allgaier",
         "nb": "Mottatt: Allgaier",
-        "fi": "Hyväksytty: Allgaier"
+        "fi": "Hyväksytty: Allgaier",
+        "ru": "Принятый: Альгайер",
+        "uk": "Прийнятий: Альгайєр"
       },
       "lines": [
         {
@@ -2449,7 +2631,9 @@
             "sv": "Antagen: Allgaier, Schlechterförsvaret",
             "da": "Modtaget: Allgaier, Schlechterforsvaret",
             "nb": "Mottatt: Allgaier, Schlechterforsvaret",
-            "fi": "Hyväksytty: Allgaier, Schlechter-puolustus"
+            "fi": "Hyväksytty: Allgaier, Schlechter-puolustus",
+            "ru": "Принятый: Альгайер, Защита Шлехтера",
+            "uk": "Прийнятий: Альгайєр, Захист Шлехтера"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Schlechter Defense",
@@ -2476,7 +2660,9 @@
             "sv": "Antagen: Allgaier, Urusovattacken",
             "da": "Modtaget: Allgaier, Urusovangrebet",
             "nb": "Mottatt: Allgaier, Urusovangrepet",
-            "fi": "Hyväksytty: Allgaier, Urusov-hyökkäys"
+            "fi": "Hyväksytty: Allgaier, Urusov-hyökkäys",
+            "ru": "Принятый: Альгайер, Атака Урусова",
+            "uk": "Прийнятий: Альгайєр, Атака Урусова"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Urusov Attack",
@@ -2503,7 +2689,9 @@
             "sv": "Antagen: Allgaier, Blackburnegambit",
             "da": "Modtaget: Allgaier, Blackburnegambit",
             "nb": "Mottatt: Allgaier, Blackburnegambit",
-            "fi": "Hyväksytty: Allgaier, Blackburne-gambiitti"
+            "fi": "Hyväksytty: Allgaier, Blackburne-gambiitti",
+            "ru": "Принятый: Альгайер, Гамбит Блэкберна",
+            "uk": "Прийнятий: Альгайєр, Гамбіт Блекберна"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Blackburne Gambit",
@@ -2530,7 +2718,9 @@
             "sv": "Antagen: Allgaier, Hornyförsvaret",
             "da": "Modtaget: Allgaier, Hornyforsvaret",
             "nb": "Mottatt: Allgaier, Hornyforsvaret",
-            "fi": "Hyväksytty: Allgaier, Horny-puolustus"
+            "fi": "Hyväksytty: Allgaier, Horny-puolustus",
+            "ru": "Принятый: Альгайер, Защита Хорни",
+            "uk": "Прийнятий: Альгайєр, Захист Горні"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Horny Defense",
@@ -2557,7 +2747,9 @@
             "sv": "Antagen: Allgaier, Cookvarianten",
             "da": "Modtaget: Allgaier, Cookvarianten",
             "nb": "Mottatt: Allgaier, Cookvarianten",
-            "fi": "Hyväksytty: Allgaier, Cook-muunnelma"
+            "fi": "Hyväksytty: Allgaier, Cook-muunnelma",
+            "ru": "Принятый: Альгайер, Вариант Кука",
+            "uk": "Прийнятий: Альгайєр, Варіант Кука"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Cook Variation",
@@ -2585,7 +2777,9 @@
         "sv": "Antagen: Dubbel-Muziogambit",
         "da": "Modtaget: Dobbelt-Muziogambit",
         "nb": "Mottatt: Dobbelt-Muziogambit",
-        "fi": "Hyväksytty: Kaksois-Muzio-gambiitti"
+        "fi": "Hyväksytty: Kaksois-Muzio-gambiitti",
+        "ru": "Принятый: Двойной гамбит Муцио",
+        "uk": "Прийнятий: Подвійний гамбіт Муціо"
       },
       "lines": [
         {
@@ -2608,7 +2802,9 @@
             "sv": "Antagen: Dubbel-Muziogambit, Younggambit",
             "da": "Modtaget: Dobbelt-Muziogambit, Younggambit",
             "nb": "Mottatt: Dobbelt-Muziogambit, Younggambit",
-            "fi": "Hyväksytty: Kaksois-Muzio-gambiitti, Young-gambiitti"
+            "fi": "Hyväksytty: Kaksois-Muzio-gambiitti, Young-gambiitti",
+            "ru": "Принятый: Двойной гамбит Муцио, Гамбит Янга",
+            "uk": "Прийнятий: Подвійний гамбіт Муціо, Гамбіт Янга"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Young Gambit",
@@ -2635,7 +2831,9 @@
             "sv": "Antagen: Dubbel-Muziogambit, Bellogambit",
             "da": "Modtaget: Dobbelt-Muziogambit, Bellogambit",
             "nb": "Mottatt: Dobbelt-Muziogambit, Bellogambit",
-            "fi": "Hyväksytty: Kaksois-Muzio-gambiitti, Bello-gambiitti"
+            "fi": "Hyväksytty: Kaksois-Muzio-gambiitti, Bello-gambiitti",
+            "ru": "Принятый: Двойной гамбит Муцио, Гамбит Белло",
+            "uk": "Прийнятий: Подвійний гамбіт Муціо, Гамбіт Белло"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Bello Gambit",
@@ -2662,7 +2860,9 @@
             "sv": "Antagen: Dubbel-Muziogambit, Baldwingambit",
             "da": "Modtaget: Dobbelt-Muziogambit, Baldwingambit",
             "nb": "Mottatt: Dobbelt-Muziogambit, Baldwingambit",
-            "fi": "Hyväksytty: Kaksois-Muzio-gambiitti, Baldwin-gambiitti"
+            "fi": "Hyväksytty: Kaksois-Muzio-gambiitti, Baldwin-gambiitti",
+            "ru": "Принятый: Двойной гамбит Муцио, Гамбит Болдуина",
+            "uk": "Прийнятий: Подвійний гамбіт Муціо, Гамбіт Болдуїна"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Baldwin Gambit",
@@ -2689,7 +2889,9 @@
             "sv": "Antagen: Dubbel-Muziogambit",
             "da": "Modtaget: Dobbelt-Muziogambit",
             "nb": "Mottatt: Dobbelt-Muziogambit",
-            "fi": "Hyväksytty: Kaksois-Muzio-gambiitti"
+            "fi": "Hyväksytty: Kaksois-Muzio-gambiitti",
+            "ru": "Принятый: Двойной гамбит Муцио",
+            "uk": "Прийнятий: Подвійний гамбіт Муціо"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit",
@@ -2716,7 +2918,9 @@
             "sv": "Antagen: Dubbel-Muziogambit, Paulsenförsvaret",
             "da": "Modtaget: Dobbelt-Muziogambit, Paulsenforsvaret",
             "nb": "Mottatt: Dobbelt-Muziogambit, Paulsenforsvaret",
-            "fi": "Hyväksytty: Kaksois-Muzio-gambiitti, Paulsen-puolustus"
+            "fi": "Hyväksytty: Kaksois-Muzio-gambiitti, Paulsen-puolustus",
+            "ru": "Принятый: Двойной гамбит Муцио, Защита Паульсена",
+            "uk": "Прийнятий: Подвійний гамбіт Муціо, Захист Паульсена"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Paulsen Defense",
@@ -2744,7 +2948,9 @@
         "sv": "Antagen: Muziogambit",
         "da": "Modtaget: Muziogambit",
         "nb": "Mottatt: Muziogambit",
-        "fi": "Hyväksytty: Muzio-gambiitti"
+        "fi": "Hyväksytty: Muzio-gambiitti",
+        "ru": "Принятый: Гамбит Муцио",
+        "uk": "Прийнятий: Гамбіт Муціо"
       },
       "lines": [
         {
@@ -2767,7 +2973,9 @@
             "sv": "Antagen: Muziogambit, Vilda Muzio-gambit",
             "da": "Modtaget: Muziogambit, Vild Muzio-gambit",
             "nb": "Mottatt: Muziogambit, Vill Muzio-gambit",
-            "fi": "Hyväksytty: Muzio-gambiitti, Villi Muzio-gambiitti"
+            "fi": "Hyväksytty: Muzio-gambiitti, Villi Muzio-gambiitti",
+            "ru": "Принятый: Гамбит Муцио, Дикий гамбит Муцио",
+            "uk": "Прийнятий: Гамбіт Муціо, Дикий гамбіт Муціо"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Wild Muzio Gambit",
@@ -2794,7 +3002,9 @@
             "sv": "Antagen: Muziogambit, Kling och Horwitz-motattacken",
             "da": "Modtaget: Muziogambit, Kling og Horwitz-modangrebet",
             "nb": "Mottatt: Muziogambit, Kling og Horwitz-motangrepet",
-            "fi": "Hyväksytty: Muzio-gambiitti, Kling ja Horwitz-vastahyökkäys"
+            "fi": "Hyväksytty: Muzio-gambiitti, Kling ja Horwitz-vastahyökkäys",
+            "ru": "Принятый: Гамбит Муцио, Контратака Клинга и Горвица",
+            "uk": "Прийнятий: Гамбіт Муціо, Контратака Клінга і Горвіца"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Kling and Horwitz Counterattack",
@@ -2821,7 +3031,9 @@
             "sv": "Antagen: Muziogambit, Brentanoförsvaret",
             "da": "Modtaget: Muziogambit, Brentanoforsvaret",
             "nb": "Mottatt: Muziogambit, Brentanoforsvaret",
-            "fi": "Hyväksytty: Muzio-gambiitti, Brentano-puolustus"
+            "fi": "Hyväksytty: Muzio-gambiitti, Brentano-puolustus",
+            "ru": "Принятый: Гамбит Муцио, Защита Брентано",
+            "uk": "Прийнятий: Гамбіт Муціо, Захист Брентано"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Brentano Defense",
@@ -2848,7 +3060,9 @@
             "sv": "Antagen: Muziogambit, Hollowayförsvaret",
             "da": "Modtaget: Muziogambit, Hollowayforsvaret",
             "nb": "Mottatt: Muziogambit, Hollowayforsvaret",
-            "fi": "Hyväksytty: Muzio-gambiitti, Holloway-puolustus"
+            "fi": "Hyväksytty: Muzio-gambiitti, Holloway-puolustus",
+            "ru": "Принятый: Гамбит Муцио, Защита Холлоуэя",
+            "uk": "Прийнятий: Гамбіт Муціо, Захист Голловея"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Holloway Defense",
@@ -2875,7 +3089,9 @@
             "sv": "Antagen: Muziogambit, Sarrattförsvaret",
             "da": "Modtaget: Muziogambit, Sarrattforsvaret",
             "nb": "Mottatt: Muziogambit, Sarrattforsvaret",
-            "fi": "Hyväksytty: Muzio-gambiitti, Sarratt-puolustus"
+            "fi": "Hyväksytty: Muzio-gambiitti, Sarratt-puolustus",
+            "ru": "Принятый: Гамбит Муцио, Защита Сарратта",
+            "uk": "Прийнятий: Гамбіт Муціо, Захист Сарратта"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Sarratt Defense",
@@ -2903,7 +3119,9 @@
         "sv": "Antagen: Cunninghamförsvaret",
         "da": "Modtaget: Cunninghamforsvaret",
         "nb": "Mottatt: Cunninghamforsvaret",
-        "fi": "Hyväksytty: Cunningham-puolustus"
+        "fi": "Hyväksytty: Cunningham-puolustus",
+        "ru": "Принятый: Защита Каннингема",
+        "uk": "Прийнятий: Захист Каннінгема"
       },
       "lines": [
         {
@@ -2926,7 +3144,9 @@
             "sv": "Antagen: Cunninghamförsvaret",
             "da": "Modtaget: Cunninghamforsvaret",
             "nb": "Mottatt: Cunninghamforsvaret",
-            "fi": "Hyväksytty: Cunningham-puolustus"
+            "fi": "Hyväksytty: Cunningham-puolustus",
+            "ru": "Принятый: Защита Каннингема",
+            "uk": "Прийнятий: Захист Каннінгема"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense",
@@ -2953,7 +3173,9 @@
             "sv": "Antagen: Cunninghamförsvaret, Bertingambit",
             "da": "Modtaget: Cunninghamforsvaret, Bertingambit",
             "nb": "Mottatt: Cunninghamforsvaret, Bertingambit",
-            "fi": "Hyväksytty: Cunningham-puolustus, Bertin-gambiitti"
+            "fi": "Hyväksytty: Cunningham-puolustus, Bertin-gambiitti",
+            "ru": "Принятый: Защита Каннингема, Гамбит Бертена",
+            "uk": "Прийнятий: Захист Каннінгема, Гамбіт Бертена"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense, Bertin Gambit",
@@ -2980,7 +3202,9 @@
             "sv": "Antagen: Cunninghamförsvaret, Bertingambit",
             "da": "Modtaget: Cunninghamforsvaret, Bertingambit",
             "nb": "Mottatt: Cunninghamforsvaret, Bertingambit",
-            "fi": "Hyväksytty: Cunningham-puolustus, Bertin-gambiitti"
+            "fi": "Hyväksytty: Cunningham-puolustus, Bertin-gambiitti",
+            "ru": "Принятый: Защита Каннингема, Гамбит Бертена",
+            "uk": "Прийнятий: Захист Каннінгема, Гамбіт Бертена"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense, Bertin Gambit",
@@ -3007,7 +3231,9 @@
             "sv": "Antagen: Cunninghamförsvaret, McCormickförsvaret",
             "da": "Modtaget: Cunninghamforsvaret, McCormickforsvaret",
             "nb": "Mottatt: Cunninghamforsvaret, McCormickforsvaret",
-            "fi": "Hyväksytty: Cunningham-puolustus, McCormick-puolustus"
+            "fi": "Hyväksytty: Cunningham-puolustus, McCormick-puolustus",
+            "ru": "Принятый: Защита Каннингема, Защита Маккормика",
+            "uk": "Прийнятий: Захист Каннінгема, Захист Маккорміка"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense, McCormick Defense",
@@ -3035,7 +3261,9 @@
         "sv": "Antagen: Kieseritzky",
         "da": "Modtaget: Kieseritzky",
         "nb": "Mottatt: Kieseritzky",
-        "fi": "Hyväksytty: Kieseritzky"
+        "fi": "Hyväksytty: Kieseritzky",
+        "ru": "Принятый: Кизерицкий",
+        "uk": "Прийнятий: Кізерицький"
       },
       "lines": [
         {
@@ -3058,7 +3286,9 @@
             "sv": "Antagen: Kieseritzky, Polerioförsvaret",
             "da": "Modtaget: Kieseritzky, Polerioforsvaret",
             "nb": "Mottatt: Kieseritzky, Polerioforsvaret",
-            "fi": "Hyväksytty: Kieseritzky, Polerio-puolustus"
+            "fi": "Hyväksytty: Kieseritzky, Polerio-puolustus",
+            "ru": "Принятый: Кизерицкий, Защита Полерио",
+            "uk": "Прийнятий: Кізерицький, Захист Полеріо"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Polerio Defense",
@@ -3085,7 +3315,9 @@
             "sv": "Antagen: Kieseritzky, Ricegambit",
             "da": "Modtaget: Kieseritzky, Ricegambit",
             "nb": "Mottatt: Kieseritzky, Ricegambit",
-            "fi": "Hyväksytty: Kieseritzky, Rice-gambiitti"
+            "fi": "Hyväksytty: Kieseritzky, Rice-gambiitti",
+            "ru": "Принятый: Кизерицкий, Гамбит Райса",
+            "uk": "Прийнятий: Кізерицький, Гамбіт Райса"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Rice Gambit",
@@ -3112,7 +3344,9 @@
             "sv": "Antagen: Kieseritzky, Salvioförsvaret, Coziovarianten",
             "da": "Modtaget: Kieseritzky, Salvioforsvaret, Coziovarianten",
             "nb": "Mottatt: Kieseritzky, Salvioforsvaret, Coziovarianten",
-            "fi": "Hyväksytty: Kieseritzky, Salvio-puolustus, Cozio-muunnelma"
+            "fi": "Hyväksytty: Kieseritzky, Salvio-puolustus, Cozio-muunnelma",
+            "ru": "Принятый: Кизерицкий, Защита Сальвио, Вариант Козио",
+            "uk": "Прийнятий: Кізерицький, Захист Сальвіо, Варіант Коціо"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Salvio Defense, Cozio Variation",
@@ -3139,7 +3373,9 @@
             "sv": "Antagen: Kieseritzky, Långa piskförsvaret, Jaenischvarianten",
             "da": "Modtaget: Kieseritzky, Lang piskforsvar, Jaenischvarianten",
             "nb": "Mottatt: Kieseritzky, Lang piskforsvar, Jaenischvarianten",
-            "fi": "Hyväksytty: Kieseritzky, Pitkä piiskapuolustus, Jaenisch-muunnelma"
+            "fi": "Hyväksytty: Kieseritzky, Pitkä piiskapuolustus, Jaenisch-muunnelma",
+            "ru": "Принятый: Кизерицкий, Защита «Длинный кнут», Вариант Яниша",
+            "uk": "Прийнятий: Кізерицький, Захист «Довгий батіг», Варіант Яніша"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Long Whip Defense, Jaenisch Variation",
@@ -3167,7 +3403,9 @@
         "sv": "Antagen: Kungsspringargambit",
         "da": "Modtaget: Kongespringergambit",
         "nb": "Mottatt: Kongespringergambit",
-        "fi": "Hyväksytty: Kuningasratsugambiitti"
+        "fi": "Hyväksytty: Kuningasratsugambiitti",
+        "ru": "Принятый: Гамбит королевского коня",
+        "uk": "Прийнятий: Гамбіт королівського коня"
       },
       "lines": [
         {
@@ -3190,7 +3428,9 @@
             "sv": "Antagen: Kungsspringargambit",
             "da": "Modtaget: Kongespringergambit",
             "nb": "Mottatt: Kongespringergambit",
-            "fi": "Hyväksytty: Kuningasratsugambiitti"
+            "fi": "Hyväksytty: Kuningasratsugambiitti",
+            "ru": "Принятый: Гамбит королевского коня",
+            "uk": "Прийнятий: Гамбіт королівського коня"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -3217,7 +3457,9 @@
             "sv": "Antagen: Kungsspringargambit",
             "da": "Modtaget: Kongespringergambit",
             "nb": "Mottatt: Kongespringergambit",
-            "fi": "Hyväksytty: Kuningasratsugambiitti"
+            "fi": "Hyväksytty: Kuningasratsugambiitti",
+            "ru": "Принятый: Гамбит королевского коня",
+            "uk": "Прийнятий: Гамбіт королівського коня"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -3244,7 +3486,9 @@
             "sv": "Antagen: Kungsspringargambit",
             "da": "Modtaget: Kongespringergambit",
             "nb": "Mottatt: Kongespringergambit",
-            "fi": "Hyväksytty: Kuningasratsugambiitti"
+            "fi": "Hyväksytty: Kuningasratsugambiitti",
+            "ru": "Принятый: Гамбит королевского коня",
+            "uk": "Прийнятий: Гамбіт королівського коня"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -3271,7 +3515,9 @@
             "sv": "Antagen: Kungsspringargambit",
             "da": "Modtaget: Kongespringergambit",
             "nb": "Mottatt: Kongespringergambit",
-            "fi": "Hyväksytty: Kuningasratsugambiitti"
+            "fi": "Hyväksytty: Kuningasratsugambiitti",
+            "ru": "Принятый: Гамбит королевского коня",
+            "uk": "Прийнятий: Гамбіт королівського коня"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -3299,7 +3545,9 @@
         "sv": "Antagen: Rosentretergambit",
         "da": "Modtaget: Rosentretergambit",
         "nb": "Mottatt: Rosentretergambit",
-        "fi": "Hyväksytty: Rosentreter-gambiitti"
+        "fi": "Hyväksytty: Rosentreter-gambiitti",
+        "ru": "Принятый: Гамбит Розентретера",
+        "uk": "Прийнятий: Гамбіт Розентретера"
       },
       "lines": [
         {
@@ -3322,7 +3570,9 @@
             "sv": "Antagen: Rosentretergambit",
             "da": "Modtaget: Rosentretergambit",
             "nb": "Mottatt: Rosentretergambit",
-            "fi": "Hyväksytty: Rosentreter-gambiitti"
+            "fi": "Hyväksytty: Rosentreter-gambiitti",
+            "ru": "Принятый: Гамбит Розентретера",
+            "uk": "Прийнятий: Гамбіт Розентретера"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit",
@@ -3349,7 +3599,9 @@
             "sv": "Antagen: Rosentretergambit, Testavarianten",
             "da": "Modtaget: Rosentretergambit, Testavarianten",
             "nb": "Mottatt: Rosentretergambit, Testavarianten",
-            "fi": "Hyväksytty: Rosentreter-gambiitti, Testa-muunnelma"
+            "fi": "Hyväksytty: Rosentreter-gambiitti, Testa-muunnelma",
+            "ru": "Принятый: Гамбит Розентретера, Вариант Тесты",
+            "uk": "Прийнятий: Гамбіт Розентретера, Варіант Тести"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit, Testa Variation",
@@ -3376,7 +3628,9 @@
             "sv": "Antagen: Rosentretergambit, Sörensengambit",
             "da": "Modtaget: Rosentretergambit, Sörensengambit",
             "nb": "Mottatt: Rosentretergambit, Sörensengambit",
-            "fi": "Hyväksytty: Rosentreter-gambiitti, Sörensen-gambiitti"
+            "fi": "Hyväksytty: Rosentreter-gambiitti, Sörensen-gambiitti",
+            "ru": "Принятый: Гамбит Розентретера, Гамбит Сёренсена",
+            "uk": "Прийнятий: Гамбіт Розентретера, Гамбіт Серенсена"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit, Sörensen Gambit",
@@ -3403,7 +3657,9 @@
             "sv": "Antagen: Rosentretergambit, Birdgambit",
             "da": "Modtaget: Rosentretergambit, Birdgambit",
             "nb": "Mottatt: Rosentretergambit, Birdgambit",
-            "fi": "Hyväksytty: Rosentreter-gambiitti, Bird-gambiitti"
+            "fi": "Hyväksytty: Rosentreter-gambiitti, Bird-gambiitti",
+            "ru": "Принятый: Гамбит Розентретера, Гамбит Берда",
+            "uk": "Прийнятий: Гамбіт Розентретера, Гамбіт Берда"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit, Bird Gambit",
@@ -3431,7 +3687,9 @@
         "sv": "Avböjd: klassiskt",
         "da": "Afslået: klassisk",
         "nb": "Avslått: klassisk",
-        "fi": "Hylätty: klassinen"
+        "fi": "Hylätty: klassinen",
+        "ru": "Отказанный: Классический",
+        "uk": "Відхилений: Класичний"
       },
       "lines": [
         {
@@ -3454,7 +3712,9 @@
             "sv": "Avböjd: klassiskt, Hanhamvarianten",
             "da": "Afslået: klassisk, Hanhamvarianten",
             "nb": "Avslått: klassisk, Hanhamvarianten",
-            "fi": "Hylätty: klassinen, Hanham-muunnelma"
+            "fi": "Hylätty: klassinen, Hanham-muunnelma",
+            "ru": "Отказанный: Классический, Вариант Хэнхема",
+            "uk": "Відхилений: Класичний, Варіант Генгема"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Hanham Variation",
@@ -3481,7 +3741,9 @@
             "sv": "Avböjd: klassiskt, Rétivarianten",
             "da": "Afslået: klassisk, Rétivarianten",
             "nb": "Avslått: klassisk, Rétivarianten",
-            "fi": "Hylätty: klassinen, Réti-muunnelma"
+            "fi": "Hylätty: klassinen, Réti-muunnelma",
+            "ru": "Отказанный: Классический, Вариант Рети",
+            "uk": "Відхилений: Класичний, Варіант Реті"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Réti Variation",
@@ -3508,7 +3770,9 @@
             "sv": "Avböjd: klassiskt, Soldatenkovvarianten",
             "da": "Afslået: klassisk, Soldatenkovvarianten",
             "nb": "Avslått: klassisk, Soldatenkovvarianten",
-            "fi": "Hylätty: klassinen, Soldatenkov-muunnelma"
+            "fi": "Hylätty: klassinen, Soldatenkov-muunnelma",
+            "ru": "Отказанный: Классический, Вариант Солдатенкова",
+            "uk": "Відхилений: Класичний, Варіант Солдатенкова"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Soldatenkov Variation",
@@ -3535,7 +3799,9 @@
             "sv": "Avböjd: klassiskt, Svenoniusvarianten",
             "da": "Afslået: klassisk, Svenoniusvarianten",
             "nb": "Avslått: klassisk, Svenoniusvarianten",
-            "fi": "Hylätty: klassinen, Svenonius-muunnelma"
+            "fi": "Hylätty: klassinen, Svenonius-muunnelma",
+            "ru": "Отказанный: Классический, Вариант Свенониуса",
+            "uk": "Відхилений: Класичний, Варіант Свеноніуса"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Svenonius Variation",
@@ -3563,7 +3829,9 @@
         "sv": "Antagen: Allgaiergambit",
         "da": "Modtaget: Allgaiergambit",
         "nb": "Mottatt: Allgaiergambit",
-        "fi": "Hyväksytty: Allgaier-gambiitti"
+        "fi": "Hyväksytty: Allgaier-gambiitti",
+        "ru": "Принятый: Гамбит Альгайера",
+        "uk": "Прийнятий: Гамбіт Альгайєра"
       },
       "lines": [
         {
@@ -3586,7 +3854,9 @@
             "sv": "Antagen: Allgaiergambit",
             "da": "Modtaget: Allgaiergambit",
             "nb": "Mottatt: Allgaiergambit",
-            "fi": "Hyväksytty: Allgaier-gambiitti"
+            "fi": "Hyväksytty: Allgaier-gambiitti",
+            "ru": "Принятый: Гамбит Альгайера",
+            "uk": "Прийнятий: Гамбіт Альгайєра"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier Gambit",
@@ -3613,7 +3883,9 @@
             "sv": "Antagen: Allgaiergambit, Urusovattacken",
             "da": "Modtaget: Allgaiergambit, Urusovangrebet",
             "nb": "Mottatt: Allgaiergambit, Urusovangrepet",
-            "fi": "Hyväksytty: Allgaier-gambiitti, Urusov-hyökkäys"
+            "fi": "Hyväksytty: Allgaier-gambiitti, Urusov-hyökkäys",
+            "ru": "Принятый: Гамбит Альгайера, Атака Урусова",
+            "uk": "Прийнятий: Гамбіт Альгайєра, Атака Урусова"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier Gambit, Urusov Attack",
@@ -3640,7 +3912,9 @@
             "sv": "Antagen: Allgaiergambit, Thoroldattacken",
             "da": "Modtaget: Allgaiergambit, Thoroldangrebet",
             "nb": "Mottatt: Allgaiergambit, Thoroldangrepet",
-            "fi": "Hyväksytty: Allgaier-gambiitti, Thorold-hyökkäys"
+            "fi": "Hyväksytty: Allgaier-gambiitti, Thorold-hyökkäys",
+            "ru": "Принятый: Гамбит Альгайера, Атака Торольда",
+            "uk": "Прийнятий: Гамбіт Альгайєра, Атака Торольда"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier Gambit, Thorold Attack",
@@ -3668,7 +3942,9 @@
         "sv": "Antagen: Fischerförsvaret",
         "da": "Modtaget: Fischerforsvaret",
         "nb": "Mottatt: Fischerforsvaret",
-        "fi": "Hyväksytty: Fischer-puolustus"
+        "fi": "Hyväksytty: Fischer-puolustus",
+        "ru": "Принятый: Защита Фишера",
+        "uk": "Прийнятий: Захист Фішера"
       },
       "lines": [
         {
@@ -3691,7 +3967,9 @@
             "sv": "Antagen: Fischerförsvaret",
             "da": "Modtaget: Fischerforsvaret",
             "nb": "Mottatt: Fischerforsvaret",
-            "fi": "Hyväksytty: Fischer-puolustus"
+            "fi": "Hyväksytty: Fischer-puolustus",
+            "ru": "Принятый: Защита Фишера",
+            "uk": "Прийнятий: Захист Фішера"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Fischer Defense",
@@ -3718,7 +3996,9 @@
             "sv": "Antagen: Fischerförsvaret, Schuldergambit",
             "da": "Modtaget: Fischerforsvaret, Schuldergambit",
             "nb": "Mottatt: Fischerforsvaret, Schuldergambit",
-            "fi": "Hyväksytty: Fischer-puolustus, Schulder-gambiitti"
+            "fi": "Hyväksytty: Fischer-puolustus, Schulder-gambiitti",
+            "ru": "Принятый: Защита Фишера, Гамбит Шульдера",
+            "uk": "Прийнятий: Захист Фішера, Гамбіт Шульдера"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Fischer Defense, Schulder Gambit",
@@ -3745,7 +4025,9 @@
             "sv": "Antagen: Fischerförsvaret, Spanska varianten",
             "da": "Modtaget: Fischerforsvaret, Spansk variant",
             "nb": "Mottatt: Fischerforsvaret, Spansk variant",
-            "fi": "Hyväksytty: Fischer-puolustus, Espanjalainen muunnelma"
+            "fi": "Hyväksytty: Fischer-puolustus, Espanjalainen muunnelma",
+            "ru": "Принятый: Защита Фишера, Испанский вариант",
+            "uk": "Прийнятий: Захист Фішера, Іспанський варіант"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Fischer Defense, Spanish Variation",
@@ -3773,7 +4055,9 @@
         "sv": "Avböjd: Norwaldevarianten",
         "da": "Afslået: Norwaldevarianten",
         "nb": "Avslått: Norwaldevarianten",
-        "fi": "Hylätty: Norwalde-muunnelma"
+        "fi": "Hylätty: Norwalde-muunnelma",
+        "ru": "Отказанный: Норвальдский вариант",
+        "uk": "Відхилений: Норвальдський варіант"
       },
       "lines": [
         {
@@ -3796,7 +4080,9 @@
             "sv": "Avböjd: Norwaldevarianten",
             "da": "Afslået: Norwaldevarianten",
             "nb": "Avslått: Norwaldevarianten",
-            "fi": "Hylätty: Norwalde-muunnelma"
+            "fi": "Hylätty: Norwalde-muunnelma",
+            "ru": "Отказанный: Норвальдский вариант",
+            "uk": "Відхилений: Норвальдський варіант"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Norwalde Variation",
@@ -3823,7 +4109,9 @@
             "sv": "Avböjd: Norwaldevarianten, Bückergambit",
             "da": "Afslået: Norwaldevarianten, Bückergambit",
             "nb": "Avslått: Norwaldevarianten, Bückergambit",
-            "fi": "Hylätty: Norwalde-muunnelma, Bücker-gambiitti"
+            "fi": "Hylätty: Norwalde-muunnelma, Bücker-gambiitti",
+            "ru": "Отказанный: Норвальдский вариант, Гамбит Бюккера",
+            "uk": "Відхилений: Норвальдський варіант, Гамбіт Бюккера"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Norwalde Variation, Bücker Gambit",
@@ -3850,7 +4138,9 @@
             "sv": "Avböjd: Norwaldevarianten, Schubertvarianten",
             "da": "Afslået: Norwaldevarianten, Schubertvarianten",
             "nb": "Avslått: Norwaldevarianten, Schubertvarianten",
-            "fi": "Hylätty: Norwalde-muunnelma, Schubert-muunnelma"
+            "fi": "Hylätty: Norwalde-muunnelma, Schubert-muunnelma",
+            "ru": "Отказанный: Норвальдский вариант, Вариант Шуберта",
+            "uk": "Відхилений: Норвальдський варіант, Варіант Шуберта"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Norwalde Variation, Schubert Variation",
@@ -3878,7 +4168,9 @@
         "sv": "Antagen: Abbaziaförsvaret",
         "da": "Modtaget: Abbaziaforsvaret",
         "nb": "Mottatt: Abbaziaforsvaret",
-        "fi": "Hyväksytty: Abbazia-puolustus"
+        "fi": "Hyväksytty: Abbazia-puolustus",
+        "ru": "Принятый: Защита Аббации",
+        "uk": "Прийнятий: Захист Аббації"
       },
       "lines": [
         {
@@ -3901,7 +4193,9 @@
             "sv": "Antagen: Abbaziaförsvaret",
             "da": "Modtaget: Abbaziaforsvaret",
             "nb": "Mottatt: Abbaziaforsvaret",
-            "fi": "Hyväksytty: Abbazia-puolustus"
+            "fi": "Hyväksytty: Abbazia-puolustus",
+            "ru": "Принятый: Защита Аббации",
+            "uk": "Прийнятий: Захист Аббації"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Abbazia Defense",
@@ -3928,7 +4222,9 @@
             "sv": "Antagen: Abbaziaförsvaret, Huvudvariant",
             "da": "Modtaget: Abbaziaforsvaret, Hovedvariant",
             "nb": "Mottatt: Abbaziaforsvaret, Hovedvariant",
-            "fi": "Hyväksytty: Abbazia-puolustus, Päämuunnelma"
+            "fi": "Hyväksytty: Abbazia-puolustus, Päämuunnelma",
+            "ru": "Принятый: Защита Аббации, Основной вариант",
+            "uk": "Прийнятий: Захист Аббації, Основний варіант"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Abbazia Defense, Main Line",
@@ -3956,7 +4252,9 @@
         "sv": "Antagen: Ghulam-Kassimgambit",
         "da": "Modtaget: Ghulam-Kassimgambit",
         "nb": "Mottatt: Ghulam-Kassimgambit",
-        "fi": "Hyväksytty: Ghulam-Kassim-gambiitti"
+        "fi": "Hyväksytty: Ghulam-Kassim-gambiitti",
+        "ru": "Принятый: Гамбит Гулама-Касима",
+        "uk": "Прийнятий: Гамбіт Гулама-Касима"
       },
       "lines": [
         {
@@ -3979,7 +4277,9 @@
             "sv": "Antagen: Ghulam-Kassimgambit",
             "da": "Modtaget: Ghulam-Kassimgambit",
             "nb": "Mottatt: Ghulam-Kassimgambit",
-            "fi": "Hyväksytty: Ghulam-Kassim-gambiitti"
+            "fi": "Hyväksytty: Ghulam-Kassim-gambiitti",
+            "ru": "Принятый: Гамбит Гулама-Касима",
+            "uk": "Прийнятий: Гамбіт Гулама-Касима"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Ghulam-Kassim Gambit",
@@ -4006,7 +4306,9 @@
             "sv": "Antagen: Ghulam-Kassimgambit",
             "da": "Modtaget: Ghulam-Kassimgambit",
             "nb": "Mottatt: Ghulam-Kassimgambit",
-            "fi": "Hyväksytty: Ghulam-Kassim-gambiitti"
+            "fi": "Hyväksytty: Ghulam-Kassim-gambiitti",
+            "ru": "Принятый: Гамбит Гулама-Касима",
+            "uk": "Прийнятий: Гамбіт Гулама-Касима"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Ghulam-Kassim Gambit",
@@ -4034,7 +4336,9 @@
         "sv": "Antagen: Grecogambit",
         "da": "Modtaget: Grecogambit",
         "nb": "Mottatt: Grecogambit",
-        "fi": "Hyväksytty: Greco-gambiitti"
+        "fi": "Hyväksytty: Greco-gambiitti",
+        "ru": "Принятый: Гамбит Греко",
+        "uk": "Прийнятий: Гамбіт Греко"
       },
       "lines": [
         {
@@ -4057,7 +4361,9 @@
             "sv": "Antagen: Grecogambit",
             "da": "Modtaget: Grecogambit",
             "nb": "Mottatt: Grecogambit",
-            "fi": "Hyväksytty: Greco-gambiitti"
+            "fi": "Hyväksytty: Greco-gambiitti",
+            "ru": "Принятый: Гамбит Греко",
+            "uk": "Прийнятий: Гамбіт Греко"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Greco Gambit",
@@ -4084,7 +4390,9 @@
             "sv": "Antagen: Grecogambit",
             "da": "Modtaget: Grecogambit",
             "nb": "Mottatt: Grecogambit",
-            "fi": "Hyväksytty: Greco-gambiitti"
+            "fi": "Hyväksytty: Greco-gambiitti",
+            "ru": "Принятый: Гамбит Греко",
+            "uk": "Прийнятий: Гамбіт Греко"
           },
           "eco": "C38",
           "opening": "King's Gambit Accepted: Greco Gambit",
@@ -4112,7 +4420,9 @@
         "sv": "Antagen: Lolligambit",
         "da": "Modtaget: Lolligambit",
         "nb": "Mottatt: Lolligambit",
-        "fi": "Hyväksytty: Lolli-gambiitti"
+        "fi": "Hyväksytty: Lolli-gambiitti",
+        "ru": "Принятый: Гамбит Лолли",
+        "uk": "Прийнятий: Гамбіт Лоллі"
       },
       "lines": [
         {
@@ -4135,7 +4445,9 @@
             "sv": "Antagen: Lolligambit",
             "da": "Modtaget: Lolligambit",
             "nb": "Mottatt: Lolligambit",
-            "fi": "Hyväksytty: Lolli-gambiitti"
+            "fi": "Hyväksytty: Lolli-gambiitti",
+            "ru": "Принятый: Гамбит Лолли",
+            "uk": "Прийнятий: Гамбіт Лоллі"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Lolli Gambit",
@@ -4162,7 +4474,9 @@
             "sv": "Antagen: Lolligambit, Youngvarianten",
             "da": "Modtaget: Lolligambit, Youngvarianten",
             "nb": "Mottatt: Lolligambit, Youngvarianten",
-            "fi": "Hyväksytty: Lolli-gambiitti, Young-muunnelma"
+            "fi": "Hyväksytty: Lolli-gambiitti, Young-muunnelma",
+            "ru": "Принятый: Гамбит Лолли, Вариант Янга",
+            "uk": "Прийнятий: Гамбіт Лоллі, Варіант Янга"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Lolli Gambit, Young Variation",
@@ -4190,7 +4504,9 @@
         "sv": "Antagen: Moderna försvaret",
         "da": "Modtaget: Moderne forsvar",
         "nb": "Mottatt: Moderne forsvar",
-        "fi": "Hyväksytty: Moderni puolustus"
+        "fi": "Hyväksytty: Moderni puolustus",
+        "ru": "Принятый: Современная защита",
+        "uk": "Прийнятий: Сучасний захист"
       },
       "lines": [
         {
@@ -4213,7 +4529,9 @@
             "sv": "Antagen: Moderna försvaret",
             "da": "Modtaget: Moderne forsvar",
             "nb": "Mottatt: Moderne forsvar",
-            "fi": "Hyväksytty: Moderni puolustus"
+            "fi": "Hyväksytty: Moderni puolustus",
+            "ru": "Принятый: Современная защита",
+            "uk": "Прийнятий: Сучасний захист"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Modern Defense",
@@ -4240,7 +4558,9 @@
             "sv": "Antagen: Moderna försvaret",
             "da": "Modtaget: Moderne forsvar",
             "nb": "Mottatt: Moderne forsvar",
-            "fi": "Hyväksytty: Moderni puolustus"
+            "fi": "Hyväksytty: Moderni puolustus",
+            "ru": "Принятый: Современная защита",
+            "uk": "Прийнятий: Сучасний захист"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Modern Defense",
@@ -4268,7 +4588,9 @@
         "sv": "Antagen: Philidorgambit",
         "da": "Modtaget: Philidorgambit",
         "nb": "Mottatt: Philidorgambit",
-        "fi": "Hyväksytty: Philidor-gambiitti"
+        "fi": "Hyväksytty: Philidor-gambiitti",
+        "ru": "Принятый: Гамбит Филидора",
+        "uk": "Прийнятий: Гамбіт Філідора"
       },
       "lines": [
         {
@@ -4291,7 +4613,9 @@
             "sv": "Antagen: Philidorgambit",
             "da": "Modtaget: Philidorgambit",
             "nb": "Mottatt: Philidorgambit",
-            "fi": "Hyväksytty: Philidor-gambiitti"
+            "fi": "Hyväksytty: Philidor-gambiitti",
+            "ru": "Принятый: Гамбит Филидора",
+            "uk": "Прийнятий: Гамбіт Філідора"
           },
           "eco": "C38",
           "opening": "King's Gambit Accepted: Philidor Gambit",
@@ -4318,7 +4642,9 @@
             "sv": "Antagen: Philidorgambit, Schultzvarianten",
             "da": "Modtaget: Philidorgambit, Schultzvarianten",
             "nb": "Mottatt: Philidorgambit, Schultzvarianten",
-            "fi": "Hyväksytty: Philidor-gambiitti, Schultz-muunnelma"
+            "fi": "Hyväksytty: Philidor-gambiitti, Schultz-muunnelma",
+            "ru": "Принятый: Гамбит Филидора, Вариант Шульца",
+            "uk": "Прийнятий: Гамбіт Філідора, Варіант Шульца"
           },
           "eco": "C38",
           "opening": "King's Gambit Accepted: Philidor Gambit, Schultz Variation",
@@ -4346,7 +4672,9 @@
         "sv": "Antagen: Schalloppförsvaret",
         "da": "Modtaget: Schalloppforsvaret",
         "nb": "Mottatt: Schalloppforsvaret",
-        "fi": "Hyväksytty: Schallopp-puolustus"
+        "fi": "Hyväksytty: Schallopp-puolustus",
+        "ru": "Принятый: Защита Шаллопа",
+        "uk": "Прийнятий: Захист Шаллопа"
       },
       "lines": [
         {
@@ -4369,7 +4697,9 @@
             "sv": "Antagen: Schalloppförsvaret",
             "da": "Modtaget: Schalloppforsvaret",
             "nb": "Mottatt: Schalloppforsvaret",
-            "fi": "Hyväksytty: Schallopp-puolustus"
+            "fi": "Hyväksytty: Schallopp-puolustus",
+            "ru": "Принятый: Защита Шаллопа",
+            "uk": "Прийнятий: Захист Шаллопа"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Schallopp Defense",
@@ -4396,7 +4726,9 @@
             "sv": "Antagen: Schalloppförsvaret, Tasjkentattacken",
             "da": "Modtaget: Schalloppforsvaret, Tasjkentangrebet",
             "nb": "Mottatt: Schalloppforsvaret, Tasjkentangrepet",
-            "fi": "Hyväksytty: Schallopp-puolustus, Taškent-hyökkäys"
+            "fi": "Hyväksytty: Schallopp-puolustus, Taškent-hyökkäys",
+            "ru": "Принятый: Защита Шаллопа, Ташкентская атака",
+            "uk": "Прийнятий: Захист Шаллопа, Ташкентська атака"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Schallopp Defense, Tashkent Attack",
@@ -4424,7 +4756,9 @@
         "sv": "Antagen: Schuriggambit",
         "da": "Modtaget: Schuriggambit",
         "nb": "Mottatt: Schuriggambit",
-        "fi": "Hyväksytty: Schurig-gambiitti"
+        "fi": "Hyväksytty: Schurig-gambiitti",
+        "ru": "Принятый: Гамбит Шурига",
+        "uk": "Прийнятий: Гамбіт Шуріга"
       },
       "lines": [
         {
@@ -4447,7 +4781,9 @@
             "sv": "Antagen: Schuriggambit, med Bb5",
             "da": "Modtaget: Schuriggambit, med Bb5",
             "nb": "Mottatt: Schuriggambit, med Bb5",
-            "fi": "Hyväksytty: Schurig-gambiitti, jossa Bb5"
+            "fi": "Hyväksytty: Schurig-gambiitti, jossa Bb5",
+            "ru": "Принятый: Гамбит Шурига, с Bb5",
+            "uk": "Прийнятий: Гамбіт Шуріга, з Bb5"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Schurig Gambit, with Bb5",
@@ -4474,7 +4810,9 @@
             "sv": "Antagen: Schuriggambit, med Bd3",
             "da": "Modtaget: Schuriggambit, med Bd3",
             "nb": "Mottatt: Schuriggambit, med Bd3",
-            "fi": "Hyväksytty: Schurig-gambiitti, jossa Bd3"
+            "fi": "Hyväksytty: Schurig-gambiitti, jossa Bd3",
+            "ru": "Принятый: Гамбит Шурига, с Bd3",
+            "uk": "Прийнятий: Гамбіт Шуріга, з Bd3"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Schurig Gambit, with Bd3",
@@ -4502,7 +4840,9 @@
         "sv": "Antagen: Tartakowergambit",
         "da": "Modtaget: Tartakowergambit",
         "nb": "Mottatt: Tartakowergambit",
-        "fi": "Hyväksytty: Tartakower-gambiitti"
+        "fi": "Hyväksytty: Tartakower-gambiitti",
+        "ru": "Принятый: Гамбит Тартаковера",
+        "uk": "Прийнятий: Гамбіт Тартаковера"
       },
       "lines": [
         {
@@ -4525,7 +4865,9 @@
             "sv": "Antagen: Tartakowergambit",
             "da": "Modtaget: Tartakowergambit",
             "nb": "Mottatt: Tartakowergambit",
-            "fi": "Hyväksytty: Tartakower-gambiitti"
+            "fi": "Hyväksytty: Tartakower-gambiitti",
+            "ru": "Принятый: Гамбит Тартаковера",
+            "uk": "Прийнятий: Гамбіт Тартаковера"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Tartakower Gambit",
@@ -4552,7 +4894,9 @@
             "sv": "Antagen: Tartakowergambit, Weissförsvaret",
             "da": "Modtaget: Tartakowergambit, Weissforsvaret",
             "nb": "Mottatt: Tartakowergambit, Weissforsvaret",
-            "fi": "Hyväksytty: Tartakower-gambiitti, Weiss-puolustus"
+            "fi": "Hyväksytty: Tartakower-gambiitti, Weiss-puolustus",
+            "ru": "Принятый: Гамбит Тартаковера, Защита Вейса",
+            "uk": "Прийнятий: Гамбіт Тартаковера, Захист Вейса"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Tartakower Gambit, Weiss Defense",
@@ -4580,7 +4924,9 @@
         "sv": "Avböjd: Keene'sförsvaret",
         "da": "Afslået: Keene'sforsvaret",
         "nb": "Avslått: Keene'sforsvaret",
-        "fi": "Hylätty: Keene's-puolustus"
+        "fi": "Hylätty: Keene's-puolustus",
+        "ru": "Отказанный: Защита Кина",
+        "uk": "Відхилений: Захист Кіна"
       },
       "lines": [
         {
@@ -4603,7 +4949,9 @@
             "sv": "Avböjd: Keene'sförsvaret",
             "da": "Afslået: Keene'sforsvaret",
             "nb": "Avslått: Keene'sforsvaret",
-            "fi": "Hylätty: Keene's-puolustus"
+            "fi": "Hylätty: Keene's-puolustus",
+            "ru": "Отказанный: Защита Кина",
+            "uk": "Відхилений: Захист Кіна"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Keene's Defense",
@@ -4630,7 +4978,9 @@
             "sv": "Avböjd: Keene'sförsvaret",
             "da": "Afslået: Keene'sforsvaret",
             "nb": "Avslått: Keene'sforsvaret",
-            "fi": "Hylätty: Keene's-puolustus"
+            "fi": "Hylätty: Keene's-puolustus",
+            "ru": "Отказанный: Защита Кина",
+            "uk": "Відхилений: Захист Кіна"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Keene's Defense",
@@ -4661,7 +5011,9 @@
         "sv": "Antagen",
         "da": "Modtaget",
         "nb": "Mottatt",
-        "fi": "Hyväksytty"
+        "fi": "Hyväksytty",
+        "ru": "Принятый",
+        "uk": "Прийнятий"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted",
@@ -4688,7 +5040,9 @@
         "sv": "Antagen: Australiska gambiten",
         "da": "Modtaget: Australsk gambit",
         "nb": "Mottatt: Australsk gambit",
-        "fi": "Hyväksytty: Australialainen gambiitti"
+        "fi": "Hyväksytty: Australialainen gambiitti",
+        "ru": "Принятый: Австралийский гамбит",
+        "uk": "Прийнятий: Австралійський гамбіт"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Australian Gambit",
@@ -4715,7 +5069,9 @@
         "sv": "Antagen: Basmangambit",
         "da": "Modtaget: Basmangambit",
         "nb": "Mottatt: Basmangambit",
-        "fi": "Hyväksytty: Basman-gambiitti"
+        "fi": "Hyväksytty: Basman-gambiitti",
+        "ru": "Принятый: Гамбит Басмана",
+        "uk": "Прийнятий: Гамбіт Басмана"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Basman Gambit",
@@ -4742,7 +5098,9 @@
         "sv": "Antagen: Beckerförsvaret",
         "da": "Modtaget: Beckerforsvaret",
         "nb": "Mottatt: Beckerforsvaret",
-        "fi": "Hyväksytty: Becker-puolustus"
+        "fi": "Hyväksytty: Becker-puolustus",
+        "ru": "Принятый: Защита Беккера",
+        "uk": "Прийнятий: Захист Беккера"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Becker Defense",
@@ -4769,7 +5127,9 @@
         "sv": "Antagen: Blachlygambit",
         "da": "Modtaget: Blachlygambit",
         "nb": "Mottatt: Blachlygambit",
-        "fi": "Hyväksytty: Blachly-gambiitti"
+        "fi": "Hyväksytty: Blachly-gambiitti",
+        "ru": "Принятый: Гамбит Блэчли",
+        "uk": "Прийнятий: Гамбіт Блечлі"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Blachly Gambit",
@@ -4796,7 +5156,9 @@
         "sv": "Antagen: Bonsch-Osmolovskyvarianten",
         "da": "Modtaget: Bonsch-Osmolovskyvarianten",
         "nb": "Mottatt: Bonsch-Osmolovskyvarianten",
-        "fi": "Hyväksytty: Bonsch-Osmolovsky-muunnelma"
+        "fi": "Hyväksytty: Bonsch-Osmolovsky-muunnelma",
+        "ru": "Принятый: Вариант Бонч-Осмоловского",
+        "uk": "Прийнятий: Варіант Бонч-Осмоловського"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Bonsch-Osmolovsky Variation",
@@ -4823,7 +5185,9 @@
         "sv": "Antagen: Breyergambit",
         "da": "Modtaget: Breyergambit",
         "nb": "Mottatt: Breyergambit",
-        "fi": "Hyväksytty: Breyer-gambiitti"
+        "fi": "Hyväksytty: Breyer-gambiitti",
+        "ru": "Принятый: Гамбит Брейера",
+        "uk": "Прийнятий: Гамбіт Брейєра"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Breyer Gambit",
@@ -4850,7 +5214,9 @@
         "sv": "Antagen: Carreragambit",
         "da": "Modtaget: Carreragambit",
         "nb": "Mottatt: Carreragambit",
-        "fi": "Hyväksytty: Carrera-gambiitti"
+        "fi": "Hyväksytty: Carrera-gambiitti",
+        "ru": "Принятый: Гамбит Карреры",
+        "uk": "Прийнятий: Гамбіт Каррери"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Carrera Gambit",
@@ -4877,7 +5243,9 @@
         "sv": "Antagen: Dodovarianten",
         "da": "Modtaget: Dodovarianten",
         "nb": "Mottatt: Dodovarianten",
-        "fi": "Hyväksytty: Dodo-muunnelma"
+        "fi": "Hyväksytty: Dodo-muunnelma",
+        "ru": "Принятый: Вариант «Додо»",
+        "uk": "Прийнятий: Варіант «Додо»"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Dodo Variation",
@@ -4904,7 +5272,9 @@
         "sv": "Antagen: Eisenbergvarianten",
         "da": "Modtaget: Eisenbergvarianten",
         "nb": "Mottatt: Eisenbergvarianten",
-        "fi": "Hyväksytty: Eisenberg-muunnelma"
+        "fi": "Hyväksytty: Eisenberg-muunnelma",
+        "ru": "Принятый: Вариант Айзенберга",
+        "uk": "Прийнятий: Варіант Айзенберга"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Eisenberg Variation",
@@ -4931,7 +5301,9 @@
         "sv": "Antagen: Gagagambit",
         "da": "Modtaget: Gagagambit",
         "nb": "Mottatt: Gagagambit",
-        "fi": "Hyväksytty: Gaga-gambiitti"
+        "fi": "Hyväksytty: Gaga-gambiitti",
+        "ru": "Принятый: Гамбит «Гага»",
+        "uk": "Прийнятий: Гамбіт «Гага»"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Gaga Gambit",
@@ -4958,7 +5330,9 @@
         "sv": "Antagen: Gianutiomotgambit",
         "da": "Modtaget: Gianutiomodgambit",
         "nb": "Mottatt: Gianutiomotgambit",
-        "fi": "Hyväksytty: Gianutio-vastagambiitti"
+        "fi": "Hyväksytty: Gianutio-vastagambiitti",
+        "ru": "Принятый: Контргамбит Джанутио",
+        "uk": "Прийнятий: Контргамбіт Джануціо"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Gianutio Countergambit",
@@ -4985,7 +5359,9 @@
         "sv": "Antagen: Hansteingambit",
         "da": "Modtaget: Hansteingambit",
         "nb": "Mottatt: Hansteingambit",
-        "fi": "Hyväksytty: Hanstein-gambiitti"
+        "fi": "Hyväksytty: Hanstein-gambiitti",
+        "ru": "Принятый: Гамбит Ганштейна",
+        "uk": "Прийнятий: Гамбіт Ганштейна"
       },
       "eco": "C38",
       "opening": "King's Gambit Accepted: Hanstein Gambit",
@@ -5012,7 +5388,9 @@
         "sv": "Antagen: Kotovgambit",
         "da": "Modtaget: Kotovgambit",
         "nb": "Mottatt: Kotovgambit",
-        "fi": "Hyväksytty: Kotov-gambiitti"
+        "fi": "Hyväksytty: Kotov-gambiitti",
+        "ru": "Принятый: Гамбит Котова",
+        "uk": "Прийнятий: Гамбіт Котова"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Kotov Gambit",
@@ -5039,7 +5417,9 @@
         "sv": "Antagen: Lopez-Gianutiomotgambit, Heinvarianten",
         "da": "Modtaget: Lopez-Gianutiomodgambit, Heinvarianten",
         "nb": "Mottatt: Lopez-Gianutiomotgambit, Heinvarianten",
-        "fi": "Hyväksytty: Lopez-Gianutio-vastagambiitti, Hein-muunnelma"
+        "fi": "Hyväksytty: Lopez-Gianutio-vastagambiitti, Hein-muunnelma",
+        "ru": "Принятый: Контргамбит Лопеса-Джанутио, Вариант Хайна",
+        "uk": "Прийнятий: Контргамбіт Лопеса-Джануціо, Варіант Гайна"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Lopez-Gianutio Countergambit, Hein Variation",
@@ -5066,7 +5446,9 @@
         "sv": "Antagen: MacLeodförsvaret",
         "da": "Modtaget: MacLeodforsvaret",
         "nb": "Mottatt: MacLeodforsvaret",
-        "fi": "Hyväksytty: MacLeod-puolustus"
+        "fi": "Hyväksytty: MacLeod-puolustus",
+        "ru": "Принятый: Защита Маклеода",
+        "uk": "Прийнятий: Захист Маклеода"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: MacLeod Defense",
@@ -5093,7 +5475,9 @@
         "sv": "Antagen: Mason-Keresgambit",
         "da": "Modtaget: Mason-Keresgambit",
         "nb": "Mottatt: Mason-Keresgambit",
-        "fi": "Hyväksytty: Mason-Keres-gambiitti"
+        "fi": "Hyväksytty: Mason-Keres-gambiitti",
+        "ru": "Принятый: Гамбит Мейсона-Кереса",
+        "uk": "Прийнятий: Гамбіт Мейсона-Кереса"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Mason-Keres Gambit",
@@ -5120,7 +5504,9 @@
         "sv": "Antagen: Mayetgambit",
         "da": "Modtaget: Mayetgambit",
         "nb": "Mottatt: Mayetgambit",
-        "fi": "Hyväksytty: Mayet-gambiitti"
+        "fi": "Hyväksytty: Mayet-gambiitti",
+        "ru": "Принятый: Гамбит Майета",
+        "uk": "Прийнятий: Гамбіт Майєта"
       },
       "eco": "C38",
       "opening": "King's Gambit Accepted: Mayet Gambit",
@@ -5147,7 +5533,9 @@
         "sv": "Antagen: McDonnellgambit",
         "da": "Modtaget: McDonnellgambit",
         "nb": "Mottatt: McDonnellgambit",
-        "fi": "Hyväksytty: McDonnell-gambiitti"
+        "fi": "Hyväksytty: McDonnell-gambiitti",
+        "ru": "Принятый: Гамбит Макдоннелла",
+        "uk": "Прийнятий: Гамбіт Макдоннелла"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: McDonnell Gambit",
@@ -5174,7 +5562,9 @@
         "sv": "Antagen: Middletonmotgambit",
         "da": "Modtaget: Middletonmodgambit",
         "nb": "Mottatt: Middletonmotgambit",
-        "fi": "Hyväksytty: Middleton-vastagambiitti"
+        "fi": "Hyväksytty: Middleton-vastagambiitti",
+        "ru": "Принятый: Контргамбит Миддлтона",
+        "uk": "Прийнятий: Контргамбіт Міддлтона"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Middleton Countergambit",
@@ -5201,7 +5591,9 @@
         "sv": "Antagen: Muziogambit antagen, Fromförsvaret",
         "da": "Modtaget: Muziogambit modtaget, Fromforsvaret",
         "nb": "Mottatt: Muziogambit mottatt, Fromforsvaret",
-        "fi": "Hyväksytty: Muzio-gambiitti hyväksytty, From-puolustus"
+        "fi": "Hyväksytty: Muzio-gambiitti hyväksytty, From-puolustus",
+        "ru": "Принятый: Принятый гамбит Муцио, Защита Фрома",
+        "uk": "Прийнятий: Прийнятий гамбіт Муціо, Захист Фрома"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Muzio Gambit Accepted, From's Defense",
@@ -5228,7 +5620,9 @@
         "sv": "Antagen: Orsinigambit",
         "da": "Modtaget: Orsinigambit",
         "nb": "Mottatt: Orsinigambit",
-        "fi": "Hyväksytty: Orsini-gambiitti"
+        "fi": "Hyväksytty: Orsini-gambiitti",
+        "ru": "Принятый: Гамбит Орсини",
+        "uk": "Прийнятий: Гамбіт Орсіні"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Orsini Gambit",
@@ -5255,7 +5649,9 @@
         "sv": "Antagen: Parisgambit",
         "da": "Modtaget: Parisgambit",
         "nb": "Mottatt: Parisgambit",
-        "fi": "Hyväksytty: Pariisilainen gambiitti"
+        "fi": "Hyväksytty: Pariisilainen gambiitti",
+        "ru": "Принятый: Парижский гамбит",
+        "uk": "Прийнятий: Паризький гамбіт"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Paris Gambit",
@@ -5282,7 +5678,9 @@
         "sv": "Antagen: Quaadegambit",
         "da": "Modtaget: Quaadegambit",
         "nb": "Mottatt: Quaadegambit",
-        "fi": "Hyväksytty: Quaade-gambiitti"
+        "fi": "Hyväksytty: Quaade-gambiitti",
+        "ru": "Принятый: Гамбит Кваде",
+        "uk": "Прийнятий: Гамбіт Кваде"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Quaade Gambit",
@@ -5309,7 +5707,9 @@
         "sv": "Antagen: Silberschmidtgambit",
         "da": "Modtaget: Silberschmidtgambit",
         "nb": "Mottatt: Silberschmidtgambit",
-        "fi": "Hyväksytty: Silberschmidt-gambiitti"
+        "fi": "Hyväksytty: Silberschmidt-gambiitti",
+        "ru": "Принятый: Гамбит Зильбершмидта",
+        "uk": "Прийнятий: Гамбіт Зільбершмідта"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Silberschmidt Gambit",
@@ -5336,7 +5736,9 @@
         "sv": "Antagen: Stammagambit",
         "da": "Modtaget: Stammagambit",
         "nb": "Mottatt: Stammagambit",
-        "fi": "Hyväksytty: Stamma-gambiitti"
+        "fi": "Hyväksytty: Stamma-gambiitti",
+        "ru": "Принятый: Гамбит Стаммы",
+        "uk": "Прийнятий: Гамбіт Стамми"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Stamma Gambit",
@@ -5363,7 +5765,9 @@
         "sv": "Antagen: Sörensengambit",
         "da": "Modtaget: Sörensengambit",
         "nb": "Mottatt: Sörensengambit",
-        "fi": "Hyväksytty: Sörensen-gambiitti"
+        "fi": "Hyväksytty: Sörensen-gambiitti",
+        "ru": "Принятый: Гамбит Сёренсена",
+        "uk": "Прийнятий: Гамбіт Серенсена"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Sörensen Gambit",
@@ -5390,7 +5794,9 @@
         "sv": "Antagen: Traditionella varianten",
         "da": "Modtaget: Traditionel variant",
         "nb": "Mottatt: Tradisjonell variant",
-        "fi": "Hyväksytty: Perinteinen muunnelma"
+        "fi": "Hyväksytty: Perinteinen muunnelma",
+        "ru": "Принятый: Традиционный вариант",
+        "uk": "Прийнятий: Традиційний варіант"
       },
       "eco": "C38",
       "opening": "King's Gambit Accepted: Traditional Variation",
@@ -5417,7 +5823,9 @@
         "sv": "Antagen: Hjulbuske",
         "da": "Modtaget: Steppeløber",
         "nb": "Mottatt: Steppeløper",
-        "fi": "Hyväksytty: Arokierijä"
+        "fi": "Hyväksytty: Arokierijä",
+        "ru": "Принятый: Перекати-поле",
+        "uk": "Прийнятий: Перекотиполе"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Tumbleweed",
@@ -5444,7 +5852,9 @@
         "sv": "Antagen: Villemsongambit",
         "da": "Modtaget: Villemsongambit",
         "nb": "Mottatt: Villemsongambit",
-        "fi": "Hyväksytty: Villemson-gambiitti"
+        "fi": "Hyväksytty: Villemson-gambiitti",
+        "ru": "Принятый: Гамбит Виллемсона",
+        "uk": "Прийнятий: Гамбіт Віллемсона"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Villemson Gambit",
@@ -5471,7 +5881,9 @@
         "sv": "Antagen: Wagenbachförsvaret",
         "da": "Modtaget: Wagenbachforsvaret",
         "nb": "Mottatt: Wagenbachforsvaret",
-        "fi": "Hyväksytty: Wagenbach-puolustus"
+        "fi": "Hyväksytty: Wagenbach-puolustus",
+        "ru": "Принятый: Защита Вагенбаха",
+        "uk": "Прийнятий: Захист Вагенбаха"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Wagenbach Defense",
@@ -5498,7 +5910,9 @@
         "sv": "Avböjd: Falkbeermotgambit antagen",
         "da": "Afslået: Falkbeermodgambit modtaget",
         "nb": "Avslått: Falkbeermotgambit mottatt",
-        "fi": "Hylätty: Falkbeer-vastagambiitti hyväksytty"
+        "fi": "Hylätty: Falkbeer-vastagambiitti hyväksytty",
+        "ru": "Отказанный: Принятый контргамбит Фалькбеера",
+        "uk": "Відхилений: Прийнятий контргамбіт Фалькбеера"
       },
       "eco": "C31",
       "opening": "King's Gambit Declined: Falkbeer Countergambit Accepted",
@@ -5525,7 +5939,9 @@
         "sv": "Avböjd: Hobbs-Zilbermintsgambit",
         "da": "Afslået: Hobbs-Zilbermintsgambit",
         "nb": "Avslått: Hobbs-Zilbermintsgambit",
-        "fi": "Hylätty: Hobbs-Zilbermints-gambiitti"
+        "fi": "Hylätty: Hobbs-Zilbermints-gambiitti",
+        "ru": "Отказанный: Гамбит Хоббса-Зильберминца",
+        "uk": "Відхилений: Гамбіт Гоббса-Зільбермінца"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Hobbs-Zilbermints Gambit",
@@ -5552,7 +5968,9 @@
         "sv": "Avböjd: Keeneförsvaret",
         "da": "Afslået: Keeneforsvaret",
         "nb": "Avslått: Keeneforsvaret",
-        "fi": "Hylätty: Keene-puolustus"
+        "fi": "Hylätty: Keene-puolustus",
+        "ru": "Отказанный: Защита Кина",
+        "uk": "Відхилений: Захист Кіна"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Keene Defense",
@@ -5579,7 +5997,9 @@
         "sv": "Avböjd: Mafiaförsvaret",
         "da": "Afslået: Mafiaforsvaret",
         "nb": "Avslått: Mafiaforsvaret",
-        "fi": "Hylätty: Mafia-puolustus"
+        "fi": "Hylätty: Mafia-puolustus",
+        "ru": "Отказанный: Защита «Мафия»",
+        "uk": "Відхилений: Захист «Мафія»"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Mafia Defense",
@@ -5606,7 +6026,9 @@
         "sv": "Avböjd: Milesförsvaret",
         "da": "Afslået: Milesforsvaret",
         "nb": "Avslått: Milesforsvaret",
-        "fi": "Hylätty: Miles-puolustus"
+        "fi": "Hylätty: Miles-puolustus",
+        "ru": "Отказанный: Защита Майлса",
+        "uk": "Відхилений: Захист Майлса"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Miles Defense",
@@ -5633,7 +6055,9 @@
         "sv": "Avböjd: Petrovförsvaret",
         "da": "Afslået: Petrovforsvaret",
         "nb": "Avslått: Petrovforsvaret",
-        "fi": "Hylätty: Petrov-puolustus"
+        "fi": "Hylätty: Petrov-puolustus",
+        "ru": "Отказанный: Защита Петрова",
+        "uk": "Відхилений: Захист Петрова"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Petrov's Defense",
@@ -5660,7 +6084,9 @@
         "sv": "Avböjd: Damspringarförsvaret",
         "da": "Afslået: Dronningespringerforsvaret",
         "nb": "Avslått: Dronningspringerforsvaret",
-        "fi": "Hylätty: Kuningatarratsupuolustus"
+        "fi": "Hylätty: Kuningatarratsupuolustus",
+        "ru": "Отказанный: Защита ферзевого коня",
+        "uk": "Відхилений: Захист ферзевого коня"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Queen's Knight Defense",
@@ -5687,7 +6113,9 @@
         "sv": "Avböjd: Senechaudmotgambit",
         "da": "Afslået: Senechaudmodgambit",
         "nb": "Avslått: Senechaudmotgambit",
-        "fi": "Hylätty: Senechaud-vastagambiitti"
+        "fi": "Hylätty: Senechaud-vastagambiitti",
+        "ru": "Отказанный: Контргамбит Сеншо",
+        "uk": "Відхилений: Контргамбіт Сеншо"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Senechaud Countergambit",
@@ -5714,7 +6142,9 @@
         "sv": "Avböjd: Soller-Zilbermintsgambit",
         "da": "Afslået: Soller-Zilbermintsgambit",
         "nb": "Avslått: Soller-Zilbermintsgambit",
-        "fi": "Hylätty: Soller-Zilbermints-gambiitti"
+        "fi": "Hylätty: Soller-Zilbermints-gambiitti",
+        "ru": "Отказанный: Гамбит Соллера-Зильберминца",
+        "uk": "Відхилений: Гамбіт Соллера-Зільбермінца"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Soller-Zilbermints Gambit",
@@ -5741,7 +6171,9 @@
         "sv": "Avböjd: Zilbermints-dubbelmotgambit",
         "da": "Afslået: Zilbermints-dobbeltmodgambit",
         "nb": "Avslått: Zilbermints-dobbeltmotgambit",
-        "fi": "Hylätty: Zilbermints-kaksoisvastagambiitti"
+        "fi": "Hylätty: Zilbermints-kaksoisvastagambiitti",
+        "ru": "Отказанный: Двойной контргамбит Зильберминца",
+        "uk": "Відхилений: Подвійний контргамбіт Зільбермінца"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Zilbermints Double Countergambit",
@@ -5768,7 +6200,9 @@
         "sv": "Avböjd: Zilbermints-dubbelgambit",
         "da": "Afslået: Zilbermints-dobbeltgambit",
         "nb": "Avslått: Zilbermints-dobbeltgambit",
-        "fi": "Hylätty: Zilbermints-kaksoisgambiitti"
+        "fi": "Hylätty: Zilbermints-kaksoisgambiitti",
+        "ru": "Отказанный: Двойной гамбит Зильберминца",
+        "uk": "Відхилений: Подвійний гамбіт Зільбермінца"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Zilbermints Double Gambit",
@@ -5795,7 +6229,9 @@
         "sv": "Kungsgambit",
         "da": "Kongegambit",
         "nb": "Kongegambit",
-        "fi": "Kuningasgambiitti"
+        "fi": "Kuningasgambiitti",
+        "ru": "Гамбит короля",
+        "uk": "Гамбіт короля"
       },
       "eco": "C30",
       "opening": "King's Gambit",

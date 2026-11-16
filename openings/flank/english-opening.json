@@ -18,7 +18,9 @@
     "sv": "Engelskt parti",
     "nb": "Engelsk åpning",
     "fi": "Englantilainen avaus",
-    "da": "Engelsk åbning"
+    "da": "Engelsk åbning",
+    "ru": "Английское начало",
+    "uk": "Англійський початок"
   },
   "order": 1,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Kungsengelska varianten",
         "da": "Kongeengelsk variant",
         "nb": "Kongeengelsk variant",
-        "fi": "Kuningasenglantilainen muunnelma"
+        "fi": "Kuningasenglantilainen muunnelma",
+        "ru": "Королевский английский вариант",
+        "uk": "Королівський англійський варіант"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Kungsengelska varianten",
             "da": "Kongeengelsk variant",
             "nb": "Kongeengelsk variant",
-            "fi": "Kuningasenglantilainen muunnelma"
+            "fi": "Kuningasenglantilainen muunnelma",
+            "ru": "Королевский английский вариант",
+            "uk": "Королівський англійський варіант"
           },
           "eco": "A20",
           "opening": "English Opening: King's English Variation",
@@ -91,7 +97,9 @@
             "sv": "Kungsengelska varianten, Sicilianskt med ombytta färger",
             "da": "Kongeengelsk variant, Siciliansk med byttede farver",
             "nb": "Kongeengelsk variant, Siciliansk med byttede farger",
-            "fi": "Kuningasenglantilainen muunnelma, Sisilialainen käänteisin värein"
+            "fi": "Kuningasenglantilainen muunnelma, Sisilialainen käänteisin värein",
+            "ru": "Королевский английский вариант, Сицилианская наоборот",
+            "uk": "Королівський англійський варіант, Сицилійський навпаки"
           },
           "eco": "A21",
           "opening": "English Opening: King's English Variation, Reversed Sicilian",
@@ -118,7 +126,9 @@
             "sv": "Kungsengelska varianten, Kramnik-Shirovmotattacken",
             "da": "Kongeengelsk variant, Kramnik-Shirovmodangrebet",
             "nb": "Kongeengelsk variant, Kramnik-Shirovmotangrepet",
-            "fi": "Kuningasenglantilainen muunnelma, Kramnik-Shirov-vastahyökkäys"
+            "fi": "Kuningasenglantilainen muunnelma, Kramnik-Shirov-vastahyökkäys",
+            "ru": "Королевский английский вариант, Контратака Крамника-Широва",
+            "uk": "Королівський англійський варіант, Контратака Крамника-Широва"
           },
           "eco": "A21",
           "opening": "English Opening: King's English Variation, Kramnik-Shirov Counterattack",
@@ -145,7 +155,9 @@
             "sv": "Kungsengelska varianten, Stängt sicilianskt med ombytta färger",
             "da": "Kongeengelsk variant, Lukket siciliansk med byttede farver",
             "nb": "Kongeengelsk variant, Lukket siciliansk med byttede farger",
-            "fi": "Kuningasenglantilainen muunnelma, Suljettu sisilialainen käänteisin värein"
+            "fi": "Kuningasenglantilainen muunnelma, Suljettu sisilialainen käänteisin värein",
+            "ru": "Королевский английский вариант, Закрытая сицилианская наоборот",
+            "uk": "Королівський англійський варіант, Закритий сицилійський навпаки"
           },
           "eco": "A25",
           "opening": "English Opening: King's English Variation, Reversed Closed Sicilian",
@@ -172,7 +184,9 @@
             "sv": "Kungsengelska varianten, Trespringarsystemet",
             "da": "Kongeengelsk variant, Trespringersystemet",
             "nb": "Kongeengelsk variant, Trespringersystemet",
-            "fi": "Kuningasenglantilainen muunnelma, Kolmiratsusysteemi"
+            "fi": "Kuningasenglantilainen muunnelma, Kolmiratsusysteemi",
+            "ru": "Королевский английский вариант, Система трёх коней",
+            "uk": "Королівський англійський варіант, Система трьох коней"
           },
           "eco": "A27",
           "opening": "English Opening: King's English Variation, Three Knights System",
@@ -199,7 +213,9 @@
             "sv": "Kungsengelska varianten, Trogerförsvaret",
             "da": "Kongeengelsk variant, Trogerforsvaret",
             "nb": "Kongeengelsk variant, Trogerforsvaret",
-            "fi": "Kuningasenglantilainen muunnelma, Troger-puolustus"
+            "fi": "Kuningasenglantilainen muunnelma, Troger-puolustus",
+            "ru": "Королевский английский вариант, Защита Трёгера",
+            "uk": "Королівський англійський варіант, Захист Трегера"
           },
           "eco": "A21",
           "opening": "English Opening: King's English Variation, Troger Defense",
@@ -226,7 +242,9 @@
             "sv": "Kungsengelska varianten, Taimanovvarianten",
             "da": "Kongeengelsk variant, Taimanovvarianten",
             "nb": "Kongeengelsk variant, Taimanovvarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Taimanov-muunnelma"
+            "fi": "Kuningasenglantilainen muunnelma, Taimanov-muunnelma",
+            "ru": "Королевский английский вариант, Вариант Тайманова",
+            "uk": "Королівський англійський варіант, Варіант Тайманова"
           },
           "eco": "A25",
           "opening": "English Opening: King's English Variation, Taimanov Variation",
@@ -253,7 +271,9 @@
             "sv": "Kungsengelska varianten, Ungerska attacken",
             "da": "Kongeengelsk variant, Ungarsk angreb",
             "nb": "Kongeengelsk variant, Ungarsk angrep",
-            "fi": "Kuningasenglantilainen muunnelma, Unkarilainen hyökkäys"
+            "fi": "Kuningasenglantilainen muunnelma, Unkarilainen hyökkäys",
+            "ru": "Королевский английский вариант, Венгерская атака",
+            "uk": "Королівський англійський варіант, Угорська атака"
           },
           "eco": "A25",
           "opening": "English Opening: King's English Variation, Hungarian Attack",
@@ -280,7 +300,9 @@
             "sv": "Kungsengelska varianten, Stängda systemet",
             "da": "Kongeengelsk variant, Lukket system",
             "nb": "Kongeengelsk variant, Lukket system",
-            "fi": "Kuningasenglantilainen muunnelma, Suljettu systeemi"
+            "fi": "Kuningasenglantilainen muunnelma, Suljettu systeemi",
+            "ru": "Королевский английский вариант, Закрытая система",
+            "uk": "Королівський англійський варіант, Закрита система"
           },
           "eco": "A25",
           "opening": "English Opening: King's English Variation, Closed System",
@@ -307,7 +329,9 @@
             "sv": "Kungsengelska varianten, Stängda systemet, Full symmetri",
             "da": "Kongeengelsk variant, Lukket system, Fuld symmetri",
             "nb": "Kongeengelsk variant, Lukket system, Full symmetri",
-            "fi": "Kuningasenglantilainen muunnelma, Suljettu systeemi, Täysi symmetria"
+            "fi": "Kuningasenglantilainen muunnelma, Suljettu systeemi, Täysi symmetria",
+            "ru": "Королевский английский вариант, Закрытая система, Полная симметрия",
+            "uk": "Королівський англійський варіант, Закрита система, Повна симетрія"
           },
           "eco": "A26",
           "opening": "English Opening: King's English Variation, Closed System, Full Symmetry",
@@ -334,7 +358,9 @@
             "sv": "Kungsengelska varianten, Botvinniksystemet",
             "da": "Kongeengelsk variant, Botvinniksystemet",
             "nb": "Kongeengelsk variant, Botvinniksystemet",
-            "fi": "Kuningasenglantilainen muunnelma, Botvinnik-systeemi"
+            "fi": "Kuningasenglantilainen muunnelma, Botvinnik-systeemi",
+            "ru": "Королевский английский вариант, Система Ботвинника",
+            "uk": "Королівський англійський варіант, Система Ботвинника"
           },
           "eco": "A26",
           "opening": "English Opening: King's English Variation, Botvinnik System",
@@ -361,7 +387,9 @@
             "sv": "Kungsengelska varianten, Bremen-Hortvarianten",
             "da": "Kongeengelsk variant, Bremen-Hortvarianten",
             "nb": "Kongeengelsk variant, Bremen-Hortvarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Bremen-Hort-muunnelma"
+            "fi": "Kuningasenglantilainen muunnelma, Bremen-Hort-muunnelma",
+            "ru": "Королевский английский вариант, Вариант Бремена-Хорта",
+            "uk": "Королівський англійський варіант, Варіант Бремена-Горта"
           },
           "eco": "A25",
           "opening": "English Opening: King's English Variation, Bremen-Hort Variation",
@@ -388,7 +416,9 @@
             "sv": "Kungsengelska varianten, Tvåspringarvarianten",
             "da": "Kongeengelsk variant, Tospringervarianten",
             "nb": "Kongeengelsk variant, Tospringervarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma"
+            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma",
+            "ru": "Королевский английский вариант, Вариант двух коней",
+            "uk": "Королівський англійський варіант, Варіант двох коней"
           },
           "eco": "A22",
           "opening": "English Opening: King's English Variation, Two Knights Variation",
@@ -415,7 +445,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten",
             "da": "Kongeengelsk variant, Firespringervarianten",
             "nb": "Kongeengelsk variant, Firespringervarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma",
+            "ru": "Королевский английский вариант, Вариант четырёх коней",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней"
           },
           "eco": "A28",
           "opening": "English Opening: King's English Variation, Four Knights Variation",
@@ -442,7 +474,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Korchnoivarianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Korchnoivarianten",
             "nb": "Kongeengelsk variant, Firespringervarianten, Korchnoivarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Korchnoi-linja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Korchnoi-linja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия Корчного",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія Корчного"
           },
           "eco": "A28",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Korchnoi Line",
@@ -469,7 +503,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Flexibla varianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Fleksibel variant",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fleksibel variant",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Joustava linja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Joustava linja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Гибкая линия",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Гнучка лінія"
           },
           "eco": "A28",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Flexible Line",
@@ -496,7 +532,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Bradley Beachvarianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Bradley Beachvarianten",
             "nb": "Kongeengelsk variant, Firespringervarianten, Bradley Beachvarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Bradley Beach-muunnelma"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Bradley Beach-muunnelma",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Вариант «Брэдли-Бич»",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Варіант «Бредлі-Біч»"
           },
           "eco": "A28",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Bradley Beach Variation",
@@ -523,7 +561,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten",
             "da": "Kongeengelsk variant, Firespringervarianten",
             "nb": "Kongeengelsk variant, Firespringervarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma",
+            "ru": "Королевский английский вариант, Вариант четырёх коней",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней"
           },
           "eco": "A28",
           "opening": "English Opening: King's English Variation, Four Knights Variation",
@@ -550,7 +590,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Lugna varianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Rolig variant",
             "nb": "Kongeengelsk variant, Firespringervarianten, Rolig variant",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Rauhallinen linja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Rauhallinen linja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Спокойная линия",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Спокійна лінія"
           },
           "eco": "A28",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Quiet Line",
@@ -577,7 +619,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Lugna varianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Rolig variant",
             "nb": "Kongeengelsk variant, Firespringervarianten, Rolig variant",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Rauhallinen linja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Rauhallinen linja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Спокойная линия",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Спокійна лінія"
           },
           "eco": "A28",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Quiet Line",
@@ -604,7 +648,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Lugna varianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Rolig variant",
             "nb": "Kongeengelsk variant, Firespringervarianten, Rolig variant",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Rauhallinen linja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Rauhallinen linja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Спокойная линия",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Спокійна лінія"
           },
           "eco": "A28",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Quiet Line",
@@ -631,7 +677,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
@@ -658,7 +706,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
@@ -685,7 +735,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
@@ -712,7 +764,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten, med .. d6",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med .. d6",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med .. d6",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa .. d6"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa .. d6",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто, с .. d6",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето, з .. d6"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6",
@@ -739,7 +793,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten, med .. d6",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med .. d6",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med .. d6",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa .. d6"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa .. d6",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто, с .. d6",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето, з .. d6"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6",
@@ -766,7 +822,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten, med .. d6, a6",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med .. d6, a6",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med .. d6, a6",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa .. d6, a6"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa .. d6, a6",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто, с .. d6, a6",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето, з .. d6, a6"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, a6",
@@ -793,7 +851,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten, med .. d6, h6",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med .. d6, h6",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med .. d6, h6",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa .. d6, h6"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa .. d6, h6",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто, с .. d6, h6",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето, з .. d6, h6"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, h6",
@@ -820,7 +880,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten, med Bc5",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med Bc5",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med Bc5",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa Bc5"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa Bc5",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто, с Bc5",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето, з Bc5"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with Bc5",
@@ -847,7 +909,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten, med Nb6",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med Nb6",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med Nb6",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa Nb6"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa Nb6",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто, с Nb6",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето, з Nb6"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with Nb6",
@@ -874,7 +938,9 @@
             "sv": "Kungsengelska varianten, Bellongambit",
             "da": "Kongeengelsk variant, Bellongambit",
             "nb": "Kongeengelsk variant, Bellongambit",
-            "fi": "Kuningasenglantilainen muunnelma, Bellon-gambiitti"
+            "fi": "Kuningasenglantilainen muunnelma, Bellon-gambiitti",
+            "ru": "Королевский английский вариант, Гамбит Бельона",
+            "uk": "Королівський англійський варіант, Гамбіт Бельона"
           },
           "eco": "A22",
           "opening": "English Opening: King's English Variation, Bellon Gambit",
@@ -901,7 +967,9 @@
             "sv": "Kungsengelska varianten, Adhibangambit",
             "da": "Kongeengelsk variant, Adhibangambit",
             "nb": "Kongeengelsk variant, Adhibangambit",
-            "fi": "Kuningasenglantilainen muunnelma, Adhiban-gambiitti"
+            "fi": "Kuningasenglantilainen muunnelma, Adhiban-gambiitti",
+            "ru": "Королевский английский вариант, Гамбит Адхибана",
+            "uk": "Королівський англійський варіант, Гамбіт Адхібана"
           },
           "eco": "A22",
           "opening": "English Opening: King's English Variation, Adhiban Gambit",
@@ -928,7 +996,9 @@
             "sv": "Kungsengelska varianten, Tvåspringarvarianten, Smyslovsystemet",
             "da": "Kongeengelsk variant, Tospringervarianten, Smyslovsystemet",
             "nb": "Kongeengelsk variant, Tospringervarianten, Smyslovsystemet",
-            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma, Smyslov-systeemi"
+            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma, Smyslov-systeemi",
+            "ru": "Королевский английский вариант, Вариант двух коней, Система Смыслова",
+            "uk": "Королівський англійський варіант, Варіант двох коней, Система Смислова"
           },
           "eco": "A22",
           "opening": "English Opening: King's English Variation, Two Knights Variation, Smyslov System",
@@ -955,7 +1025,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten, Fördröjt .. Nc6",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, Forsinket .. Nc6",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, Forsinket .. Nc6",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, Viivästetty .. Nc6"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, Viivästetty .. Nc6",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто, Отложенный .. Nc6",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето, Відкладений .. Nc6"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, Delayed .. Nc6",
@@ -982,7 +1054,9 @@
             "sv": "Kungsengelska varianten, Stängt sicilianskt med ombytta färger",
             "da": "Kongeengelsk variant, Lukket siciliansk med byttede farver",
             "nb": "Kongeengelsk variant, Lukket siciliansk med byttede farger",
-            "fi": "Kuningasenglantilainen muunnelma, Suljettu sisilialainen käänteisin värein"
+            "fi": "Kuningasenglantilainen muunnelma, Suljettu sisilialainen käänteisin värein",
+            "ru": "Королевский английский вариант, Закрытая сицилианская наоборот",
+            "uk": "Королівський англійський варіант, Закритий сицилійський навпаки"
           },
           "eco": "A25",
           "opening": "English Opening: King's English Variation, Reversed Closed Sicilian",
@@ -1009,7 +1083,9 @@
             "sv": "Kungsengelska varianten, Tvåspringarvarianten, Keresvarianten",
             "da": "Kongeengelsk variant, Tospringervarianten, Keresvarianten",
             "nb": "Kongeengelsk variant, Tospringervarianten, Keresvarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma, Keres-muunnelma"
+            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma, Keres-muunnelma",
+            "ru": "Королевский английский вариант, Вариант двух коней, Вариант Кереса",
+            "uk": "Королівський англійський варіант, Варіант двох коней, Варіант Кереса"
           },
           "eco": "A23",
           "opening": "English Opening: King's English Variation, Two Knights Variation, Keres Variation",
@@ -1036,7 +1112,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten, med .. d6, Be7",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med .. d6, Be7",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten, med .. d6, Be7",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa .. d6, Be7"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja, jossa .. d6, Be7",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто, с .. d6, Be7",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето, з .. d6, Be7"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, Be7",
@@ -1063,7 +1141,9 @@
             "sv": "Kungsengelska varianten, Tvåspringarvarianten, Keresvarianten",
             "da": "Kongeengelsk variant, Tospringervarianten, Keresvarianten",
             "nb": "Kongeengelsk variant, Tospringervarianten, Keresvarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma, Keres-muunnelma"
+            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma, Keres-muunnelma",
+            "ru": "Королевский английский вариант, Вариант двух коней, Вариант Кереса",
+            "uk": "Королівський англійський варіант, Варіант двох коней, Варіант Кереса"
           },
           "eco": "A23",
           "opening": "English Opening: King's English Variation, Two Knights Variation, Keres Variation",
@@ -1090,7 +1170,9 @@
             "sv": "Kungsengelska varianten, Tvåspringarvarianten, Drake med ombytta färger",
             "da": "Kongeengelsk variant, Tospringervarianten, Drage med byttede farver",
             "nb": "Kongeengelsk variant, Tospringervarianten, Drage med byttede farger",
-            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma, Lohikäärme käänteisin värein"
+            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma, Lohikäärme käänteisin värein",
+            "ru": "Королевский английский вариант, Вариант двух коней, Дракон наоборот",
+            "uk": "Королівський англійський варіант, Варіант двох коней, Дракон навпаки"
           },
           "eco": "A22",
           "opening": "English Opening: King's English Variation, Two Knights Variation, Reversed Dragon",
@@ -1117,7 +1199,9 @@
             "sv": "Kungsengelska varianten, Tvåspringarvarianten, Fianchettovarianten",
             "da": "Kongeengelsk variant, Tospringervarianten, Fianchettovarianten",
             "nb": "Kongeengelsk variant, Tospringervarianten, Fianchettovarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma, Fiankettolinja"
+            "fi": "Kuningasenglantilainen muunnelma, Kaksiratsumuunnelma, Fiankettolinja",
+            "ru": "Королевский английский вариант, Вариант двух коней, Линия с фианкетто",
+            "uk": "Королівський англійський варіант, Варіант двох коней, Лінія з фіанкето"
           },
           "eco": "A24",
           "opening": "English Opening: King's English Variation, Two Knights Variation, Fianchetto Line",
@@ -1144,7 +1228,9 @@
             "sv": "Kungsengelska varianten",
             "da": "Kongeengelsk variant",
             "nb": "Kongeengelsk variant",
-            "fi": "Kuningasenglantilainen muunnelma"
+            "fi": "Kuningasenglantilainen muunnelma",
+            "ru": "Королевский английский вариант",
+            "uk": "Королівський англійський варіант"
           },
           "eco": "A21",
           "opening": "English Opening: King's English Variation",
@@ -1171,7 +1257,9 @@
             "sv": "Kungsengelska varianten, Smyslovförsvaret",
             "da": "Kongeengelsk variant, Smyslovforsvaret",
             "nb": "Kongeengelsk variant, Smyslovforsvaret",
-            "fi": "Kuningasenglantilainen muunnelma, Smyslov-puolustus"
+            "fi": "Kuningasenglantilainen muunnelma, Smyslov-puolustus",
+            "ru": "Королевский английский вариант, Защита Смыслова",
+            "uk": "Королівський англійський варіант, Захист Смислова"
           },
           "eco": "A21",
           "opening": "English Opening: King's English Variation, Smyslov Defense",
@@ -1198,7 +1286,9 @@
             "sv": "Kungsengelska varianten, Keresförsvaret",
             "da": "Kongeengelsk variant, Keresforsvaret",
             "nb": "Kongeengelsk variant, Keresforsvaret",
-            "fi": "Kuningasenglantilainen muunnelma, Keres-puolustus"
+            "fi": "Kuningasenglantilainen muunnelma, Keres-puolustus",
+            "ru": "Королевский английский вариант, Защита Кереса",
+            "uk": "Королівський англійський варіант, Захист Кереса"
           },
           "eco": "A21",
           "opening": "English Opening: King's English Variation, Keres Defense",
@@ -1225,7 +1315,9 @@
             "sv": "Kungsengelska varianten, Nimzowitschvarianten",
             "da": "Kongeengelsk variant, Nimzowitschvarianten",
             "nb": "Kongeengelsk variant, Nimzowitschvarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Nimzowitsch-muunnelma"
+            "fi": "Kuningasenglantilainen muunnelma, Nimzowitsch-muunnelma",
+            "ru": "Королевский английский вариант, Вариант Нимцовича",
+            "uk": "Королівський англійський варіант, Варіант Німцовича"
           },
           "eco": "A20",
           "opening": "English Opening: King's English Variation, Nimzowitsch Variation",
@@ -1252,7 +1344,9 @@
             "sv": "Kungsengelska varianten, Nimzowitsch-Flohrvarianten",
             "da": "Kongeengelsk variant, Nimzowitsch-Flohrvarianten",
             "nb": "Kongeengelsk variant, Nimzowitsch-Flohrvarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Nimzowitsch-Flohr-muunnelma"
+            "fi": "Kuningasenglantilainen muunnelma, Nimzowitsch-Flohr-muunnelma",
+            "ru": "Королевский английский вариант, Вариант Нимцовича-Флора",
+            "uk": "Королівський англійський варіант, Варіант Німцовича-Флора"
           },
           "eco": "A20",
           "opening": "English Opening: King's English Variation, Nimzowitsch-Flohr Variation",
@@ -1279,7 +1373,9 @@
             "sv": "Kungsengelska varianten, Kahiko-Hulagambit",
             "da": "Kongeengelsk variant, Kahiko-Hulagambit",
             "nb": "Kongeengelsk variant, Kahiko-Hulagambit",
-            "fi": "Kuningasenglantilainen muunnelma, Kahiko-Hula-gambiitti"
+            "fi": "Kuningasenglantilainen muunnelma, Kahiko-Hula-gambiitti",
+            "ru": "Королевский английский вариант, Гамбит «Кахико-Хула»",
+            "uk": "Королівський англійський варіант, Гамбіт «Кагіко-Гула»"
           },
           "eco": "A20",
           "opening": "English Opening: King's English Variation, Kahiko-Hula Gambit",
@@ -1306,7 +1402,9 @@
             "sv": "Kungsengelska varianten, Stängt sicilianskt med ombytta färger",
             "da": "Kongeengelsk variant, Lukket siciliansk med byttede farver",
             "nb": "Kongeengelsk variant, Lukket siciliansk med byttede farger",
-            "fi": "Kuningasenglantilainen muunnelma, Suljettu sisilialainen käänteisin värein"
+            "fi": "Kuningasenglantilainen muunnelma, Suljettu sisilialainen käänteisin värein",
+            "ru": "Королевский английский вариант, Закрытая сицилианская наоборот",
+            "uk": "Королівський англійський варіант, Закритий сицилійський навпаки"
           },
           "eco": "A25",
           "opening": "English Opening: King's English Variation, Reversed Closed Sicilian",
@@ -1333,7 +1431,9 @@
             "sv": "Kungsengelska varianten, Stängt sicilianskt med ombytta färger",
             "da": "Kongeengelsk variant, Lukket siciliansk med byttede farver",
             "nb": "Kongeengelsk variant, Lukket siciliansk med byttede farger",
-            "fi": "Kuningasenglantilainen muunnelma, Suljettu sisilialainen käänteisin värein"
+            "fi": "Kuningasenglantilainen muunnelma, Suljettu sisilialainen käänteisin värein",
+            "ru": "Королевский английский вариант, Закрытая сицилианская наоборот",
+            "uk": "Королівський англійський варіант, Закритий сицилійський навпаки"
           },
           "eco": "A25",
           "opening": "English Opening: King's English Variation, Reversed Closed Sicilian",
@@ -1360,7 +1460,9 @@
             "sv": "Kungsengelska varianten, Stängt sicilianskt med ombytta färger",
             "da": "Kongeengelsk variant, Lukket siciliansk med byttede farver",
             "nb": "Kongeengelsk variant, Lukket siciliansk med byttede farger",
-            "fi": "Kuningasenglantilainen muunnelma, Suljettu sisilialainen käänteisin värein"
+            "fi": "Kuningasenglantilainen muunnelma, Suljettu sisilialainen käänteisin värein",
+            "ru": "Королевский английский вариант, Закрытая сицилианская наоборот",
+            "uk": "Королівський англійський варіант, Закритий сицилійський навпаки"
           },
           "eco": "A25",
           "opening": "English Opening: King's English Variation, Reversed Closed Sicilian",
@@ -1387,7 +1489,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
@@ -1414,7 +1518,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
@@ -1441,7 +1547,9 @@
             "sv": "Kungsengelska varianten, Fyrspringarvarianten, Fianchettovarianten",
             "da": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
             "nb": "Kongeengelsk variant, Firespringervarianten, Fianchettovarianten",
-            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja"
+            "fi": "Kuningasenglantilainen muunnelma, Neliratsumuunnelma, Fiankettolinja",
+            "ru": "Королевский английский вариант, Вариант четырёх коней, Линия с фианкетто",
+            "uk": "Королівський англійський варіант, Варіант чотирьох коней, Лінія з фіанкето"
           },
           "eco": "A29",
           "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line",
@@ -1468,7 +1576,9 @@
             "sv": "Kungsengelska varianten, Botvinniksystemet, Taggiga bondepassagesystemet",
             "da": "Kongeengelsk variant, Botvinniksystemet, Tornet bondepassagesystem",
             "nb": "Kongeengelsk variant, Botvinniksystemet, Tornete bondepassasjesystem",
-            "fi": "Kuningasenglantilainen muunnelma, Botvinnik-systeemi, Piikikäs sotilassolasysteemi"
+            "fi": "Kuningasenglantilainen muunnelma, Botvinnik-systeemi, Piikikäs sotilassolasysteemi",
+            "ru": "Королевский английский вариант, Система Ботвинника, Система «Колючий пешечный проход»",
+            "uk": "Королівський англійський варіант, Система Ботвинника, Система «Колючий пішаковий прохід»"
           },
           "eco": "A10",
           "opening": "English Opening: King's English Variation, Botvinnik System, Prickly Pawn Pass System",
@@ -1496,7 +1606,9 @@
         "sv": "Symmetriska varianten",
         "da": "Symmetrisk variant",
         "nb": "Symmetrisk variant",
-        "fi": "Symmetrinen muunnelma"
+        "fi": "Symmetrinen muunnelma",
+        "ru": "Симметричный вариант",
+        "uk": "Симетричний варіант"
       },
       "lines": [
         {
@@ -1519,7 +1631,9 @@
             "sv": "Symmetriska varianten, Fianchettovarianten",
             "da": "Symmetrisk variant, Fianchettovarianten",
             "nb": "Symmetrisk variant, Fianchettovarianten",
-            "fi": "Symmetrinen muunnelma, Fiankettomuunnelma"
+            "fi": "Symmetrinen muunnelma, Fiankettomuunnelma",
+            "ru": "Симметричный вариант, Вариант с фианкетто",
+            "uk": "Симетричний варіант, Варіант з фіанкето"
           },
           "eco": "A34",
           "opening": "English Opening: Symmetrical Variation, Fianchetto Variation",
@@ -1546,7 +1660,9 @@
             "sv": "Symmetriska varianten, Rubinsteinvarianten",
             "da": "Symmetrisk variant, Rubinsteinvarianten",
             "nb": "Symmetrisk variant, Rubinsteinvarianten",
-            "fi": "Symmetrinen muunnelma, Rubinstein-muunnelma"
+            "fi": "Symmetrinen muunnelma, Rubinstein-muunnelma",
+            "ru": "Симметричный вариант, Вариант Рубинштейна",
+            "uk": "Симетричний варіант, Варіант Рубінштейна"
           },
           "eco": "A34",
           "opening": "English Opening: Symmetrical Variation, Rubinstein Variation",
@@ -1573,7 +1689,9 @@
             "sv": "Symmetriska varianten, Fullsymmetrivarianten",
             "da": "Symmetrisk variant, Fuldsymmetrivarianten",
             "nb": "Symmetrisk variant, Fullsymmetrivarianten",
-            "fi": "Symmetrinen muunnelma, Täyssymmetrialinja"
+            "fi": "Symmetrinen muunnelma, Täyssymmetrialinja",
+            "ru": "Симметричный вариант, Линия с полной симметрией",
+            "uk": "Симетричний варіант, Лінія з повною симетрією"
           },
           "eco": "A38",
           "opening": "English Opening: Symmetrical Variation, Full Symmetry Line",
@@ -1600,7 +1718,9 @@
             "sv": "Symmetriska varianten, Meckingvarianten",
             "da": "Symmetrisk variant, Meckingvarianten",
             "nb": "Symmetrisk variant, Meckingvarianten",
-            "fi": "Symmetrinen muunnelma, Mecking-muunnelma"
+            "fi": "Symmetrinen muunnelma, Mecking-muunnelma",
+            "ru": "Симметричный вариант, Вариант Мекинга",
+            "uk": "Симетричний варіант, Варіант Мекінга"
           },
           "eco": "A39",
           "opening": "English Opening: Symmetrical Variation, Mecking Variation",
@@ -1627,7 +1747,9 @@
             "sv": "Symmetriska varianten, Duchampvarianten",
             "da": "Symmetrisk variant, Duchampvarianten",
             "nb": "Symmetrisk variant, Duchampvarianten",
-            "fi": "Symmetrinen muunnelma, Duchamp-muunnelma"
+            "fi": "Symmetrinen muunnelma, Duchamp-muunnelma",
+            "ru": "Симметричный вариант, Вариант Дюшана",
+            "uk": "Симетричний варіант, Варіант Дюшана"
           },
           "eco": "A38",
           "opening": "English Opening: Symmetrical Variation, Duchamp Variation",
@@ -1654,7 +1776,9 @@
             "sv": "Symmetriska varianten, Anti-Benonivarianten",
             "da": "Symmetrisk variant, Anti-Benonivarianten",
             "nb": "Symmetrisk variant, Anti-Benonivarianten",
-            "fi": "Symmetrinen muunnelma, Anti-Benoni-muunnelma"
+            "fi": "Symmetrinen muunnelma, Anti-Benoni-muunnelma",
+            "ru": "Симметричный вариант, Вариант «Анти-Бенони»",
+            "uk": "Симетричний варіант, Варіант «Анти-Беноні»"
           },
           "eco": "A31",
           "opening": "English Opening: Symmetrical Variation, Anti-Benoni Variation",
@@ -1681,7 +1805,9 @@
             "sv": "Symmetriska varianten",
             "da": "Symmetrisk variant",
             "nb": "Symmetrisk variant",
-            "fi": "Symmetrinen muunnelma"
+            "fi": "Symmetrinen muunnelma",
+            "ru": "Симметричный вариант",
+            "uk": "Симетричний варіант"
           },
           "eco": "A30",
           "opening": "English Opening: Symmetrical Variation",
@@ -1708,7 +1834,9 @@
             "sv": "Symmetriska varianten, Normala varianten",
             "da": "Symmetrisk variant, Normal variant",
             "nb": "Symmetrisk variant, Normal variant",
-            "fi": "Symmetrinen muunnelma, Normaali muunnelma"
+            "fi": "Symmetrinen muunnelma, Normaali muunnelma",
+            "ru": "Симметричный вариант, Обычный вариант",
+            "uk": "Симетричний варіант, Звичайний варіант"
           },
           "eco": "A34",
           "opening": "English Opening: Symmetrical Variation, Normal Variation",
@@ -1735,7 +1863,9 @@
             "sv": "Symmetriska varianten, Tvåspringarvarianten",
             "da": "Symmetrisk variant, Tospringervarianten",
             "nb": "Symmetrisk variant, Tospringervarianten",
-            "fi": "Symmetrinen muunnelma, Kaksiratsumuunnelma"
+            "fi": "Symmetrinen muunnelma, Kaksiratsumuunnelma",
+            "ru": "Симметричный вариант, Вариант двух коней",
+            "uk": "Симетричний варіант, Варіант двох коней"
           },
           "eco": "A35",
           "opening": "English Opening: Symmetrical Variation, Two Knights Variation",
@@ -1762,7 +1892,9 @@
             "sv": "Symmetriska varianten, Tvåspringarspel, Fianchettovarianten",
             "da": "Symmetrisk variant, Tospringerspil, Fianchettovarianten",
             "nb": "Symmetrisk variant, Tospringerspill, Fianchettovarianten",
-            "fi": "Symmetrinen muunnelma, Kaksiratsupeli, Fiankettomuunnelma"
+            "fi": "Symmetrinen muunnelma, Kaksiratsupeli, Fiankettomuunnelma",
+            "ru": "Симметричный вариант, Два коня, Вариант с фианкетто",
+            "uk": "Симетричний варіант, Два коні, Варіант з фіанкето"
           },
           "eco": "A36",
           "opening": "English Opening: Symmetrical Variation, Two Knights, Fianchetto Variation",
@@ -1789,7 +1921,9 @@
             "sv": "Symmetriska varianten, Trespringarspel, Fianchettovarianten",
             "da": "Symmetrisk variant, Trespringerspil, Fianchettovarianten",
             "nb": "Symmetrisk variant, Trespringerspill, Fianchettovarianten",
-            "fi": "Symmetrinen muunnelma, Kolmiratsupeli, Fiankettomuunnelma"
+            "fi": "Symmetrinen muunnelma, Kolmiratsupeli, Fiankettomuunnelma",
+            "ru": "Симметричный вариант, Три коня, Вариант с фианкетто",
+            "uk": "Симетричний варіант, Три коні, Варіант з фіанкето"
           },
           "eco": "A37",
           "opening": "English Opening: Symmetrical Variation, Three Knights, Fianchetto Variation",
@@ -1816,7 +1950,9 @@
             "sv": "Symmetriska varianten, Dubbelfianchetto",
             "da": "Symmetrisk variant, Dobbeltfianchetto",
             "nb": "Symmetrisk variant, Dobbeltfianchetto",
-            "fi": "Symmetrinen muunnelma, Kaksoisfianketto"
+            "fi": "Symmetrinen muunnelma, Kaksoisfianketto",
+            "ru": "Симметричный вариант, Двойное фианкетто",
+            "uk": "Симетричний варіант, Подвійне фіанкето"
           },
           "eco": "A38",
           "opening": "English Opening: Symmetrical Variation, Double Fianchetto",
@@ -1843,7 +1979,9 @@
             "sv": "Symmetriska varianten, Botvinniksystemet med ombytta färger, med Nf3",
             "da": "Symmetrisk variant, Botvinniksystemet med byttede farver, med Nf3",
             "nb": "Symmetrisk variant, Botvinniksystemet med byttede farger, med Nf3",
-            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3"
+            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3",
+            "ru": "Симметричный вариант, Система Ботвинника с переменой цвета, с Nf3",
+            "uk": "Симетричний варіант, Система Ботвинника зі зміною кольору, з Nf3"
           },
           "eco": "A37",
           "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
@@ -1870,7 +2008,9 @@
             "sv": "Symmetriska varianten, Botvinniksystemet med ombytta färger, med Nf3",
             "da": "Symmetrisk variant, Botvinniksystemet med byttede farver, med Nf3",
             "nb": "Symmetrisk variant, Botvinniksystemet med byttede farger, med Nf3",
-            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3"
+            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3",
+            "ru": "Симметричный вариант, Система Ботвинника с переменой цвета, с Nf3",
+            "uk": "Симетричний варіант, Система Ботвинника зі зміною кольору, з Nf3"
           },
           "eco": "A37",
           "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
@@ -1897,7 +2037,9 @@
             "sv": "Symmetriska varianten, Botvinniksystemet med ombytta färger, med Nf3",
             "da": "Symmetrisk variant, Botvinniksystemet med byttede farver, med Nf3",
             "nb": "Symmetrisk variant, Botvinniksystemet med byttede farger, med Nf3",
-            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3"
+            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3",
+            "ru": "Симметричный вариант, Система Ботвинника с переменой цвета, с Nf3",
+            "uk": "Симетричний варіант, Система Ботвинника зі зміною кольору, з Nf3"
           },
           "eco": "A37",
           "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
@@ -1924,7 +2066,9 @@
             "sv": "Symmetriska varianten, Botvinniksystemet med ombytta färger, med Nf3",
             "da": "Symmetrisk variant, Botvinniksystemet med byttede farver, med Nf3",
             "nb": "Symmetrisk variant, Botvinniksystemet med byttede farger, med Nf3",
-            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3"
+            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3",
+            "ru": "Симметричный вариант, Система Ботвинника с переменой цвета, с Nf3",
+            "uk": "Симетричний варіант, Система Ботвинника зі зміною кольору, з Nf3"
           },
           "eco": "A37",
           "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
@@ -1951,7 +2095,9 @@
             "sv": "Symmetriska varianten, Botvinniksystemet med ombytta färger, med Nf3",
             "da": "Symmetrisk variant, Botvinniksystemet med byttede farver, med Nf3",
             "nb": "Symmetrisk variant, Botvinniksystemet med byttede farger, med Nf3",
-            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3"
+            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3",
+            "ru": "Симметричный вариант, Система Ботвинника с переменой цвета, с Nf3",
+            "uk": "Симетричний варіант, Система Ботвинника зі зміною кольору, з Nf3"
           },
           "eco": "A37",
           "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
@@ -1978,7 +2124,9 @@
             "sv": "Symmetriska varianten, Botvinniksystemet med ombytta färger, med Nf3",
             "da": "Symmetrisk variant, Botvinniksystemet med byttede farver, med Nf3",
             "nb": "Symmetrisk variant, Botvinniksystemet med byttede farger, med Nf3",
-            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3"
+            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa Nf3",
+            "ru": "Симметричный вариант, Система Ботвинника с переменой цвета, с Nf3",
+            "uk": "Симетричний варіант, Система Ботвинника зі зміною кольору, з Nf3"
           },
           "eco": "A37",
           "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3",
@@ -2005,7 +2153,9 @@
             "sv": "Symmetriska varianten, Botvinniksystemet med ombytta färger, med e3",
             "da": "Symmetrisk variant, Botvinniksystemet med byttede farver, med e3",
             "nb": "Symmetrisk variant, Botvinniksystemet med byttede farger, med e3",
-            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa e3"
+            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi käänteisin värein, jossa e3",
+            "ru": "Симметричный вариант, Система Ботвинника с переменой цвета, с e3",
+            "uk": "Симетричний варіант, Система Ботвинника зі зміною кольору, з e3"
           },
           "eco": "A36",
           "opening": "English Opening: Symmetrical Variation, Botvinnik System Reversed, with e3",
@@ -2032,7 +2182,9 @@
             "sv": "Symmetriska varianten, Trespringarvarianten",
             "da": "Symmetrisk variant, Trespringervarianten",
             "nb": "Symmetrisk variant, Trespringervarianten",
-            "fi": "Symmetrinen muunnelma, Kolmiratsumuunnelma"
+            "fi": "Symmetrinen muunnelma, Kolmiratsumuunnelma",
+            "ru": "Симметричный вариант, Вариант трёх коней",
+            "uk": "Симетричний варіант, Варіант трьох коней"
           },
           "eco": "A34",
           "opening": "English Opening: Symmetrical Variation, Three Knights Variation",
@@ -2059,7 +2211,9 @@
             "sv": "Symmetriska varianten",
             "da": "Symmetrisk variant",
             "nb": "Symmetrisk variant",
-            "fi": "Symmetrinen muunnelma"
+            "fi": "Symmetrinen muunnelma",
+            "ru": "Симметричный вариант",
+            "uk": "Симетричний варіант"
           },
           "eco": "A35",
           "opening": "English Opening: Symmetrical Variation",
@@ -2086,7 +2240,9 @@
             "sv": "Symmetriska varianten",
             "da": "Symmetrisk variant",
             "nb": "Symmetrisk variant",
-            "fi": "Symmetrinen muunnelma"
+            "fi": "Symmetrinen muunnelma",
+            "ru": "Симметричный вариант",
+            "uk": "Симетричний варіант"
           },
           "eco": "A30",
           "opening": "English Opening: Symmetrical Variation",
@@ -2113,7 +2269,9 @@
             "sv": "Symmetriska varianten, Trespringarspel, Fianchettovarianten",
             "da": "Symmetrisk variant, Trespringerspil, Fianchettovarianten",
             "nb": "Symmetrisk variant, Trespringerspill, Fianchettovarianten",
-            "fi": "Symmetrinen muunnelma, Kolmiratsupeli, Fiankettomuunnelma"
+            "fi": "Symmetrinen muunnelma, Kolmiratsupeli, Fiankettomuunnelma",
+            "ru": "Симметричный вариант, Три коня, Вариант с фианкетто",
+            "uk": "Симетричний варіант, Три коні, Варіант з фіанкето"
           },
           "eco": "A37",
           "opening": "English Opening: Symmetrical Variation, Three Knights, Fianchetto Variation",
@@ -2140,7 +2298,9 @@
             "sv": "Symmetriska varianten, Trespringarspel, Fianchettovarianten",
             "da": "Symmetrisk variant, Trespringerspil, Fianchettovarianten",
             "nb": "Symmetrisk variant, Trespringerspill, Fianchettovarianten",
-            "fi": "Symmetrinen muunnelma, Kolmiratsupeli, Fiankettomuunnelma"
+            "fi": "Symmetrinen muunnelma, Kolmiratsupeli, Fiankettomuunnelma",
+            "ru": "Симметричный вариант, Три коня, Вариант с фианкетто",
+            "uk": "Симетричний варіант, Три коні, Варіант з фіанкето"
           },
           "eco": "A37",
           "opening": "English Opening: Symmetrical Variation, Three Knights, Fianchetto Variation",
@@ -2167,7 +2327,9 @@
             "sv": "Symmetriska varianten, Fyrspringarvarianten",
             "da": "Symmetrisk variant, Firespringervarianten",
             "nb": "Symmetrisk variant, Firespringervarianten",
-            "fi": "Symmetrinen muunnelma, Neliratsumuunnelma"
+            "fi": "Symmetrinen muunnelma, Neliratsumuunnelma",
+            "ru": "Симметричный вариант, Вариант четырёх коней",
+            "uk": "Симетричний варіант, Варіант чотирьох коней"
           },
           "eco": "A35",
           "opening": "English Opening: Symmetrical Variation, Four Knights Variation",
@@ -2194,7 +2356,9 @@
             "sv": "Symmetriska varianten",
             "da": "Symmetrisk variant",
             "nb": "Symmetrisk variant",
-            "fi": "Symmetrinen muunnelma"
+            "fi": "Symmetrinen muunnelma",
+            "ru": "Симметричный вариант",
+            "uk": "Симетричний варіант"
           },
           "eco": "A34",
           "opening": "English Opening: Symmetrical Variation",
@@ -2221,7 +2385,9 @@
             "sv": "Symmetriska varianten, Fyrspringarvarianten, Keres-Parmasystemet",
             "da": "Symmetrisk variant, Firespringervarianten, Keres-Parmasystemet",
             "nb": "Symmetrisk variant, Firespringervarianten, Keres-Parmasystemet",
-            "fi": "Symmetrinen muunnelma, Neliratsumuunnelma, Keres-Parma-systeemi"
+            "fi": "Symmetrinen muunnelma, Neliratsumuunnelma, Keres-Parma-systeemi",
+            "ru": "Симметричный вариант, Вариант четырёх коней, Система Кереса-Пармы",
+            "uk": "Симетричний варіант, Варіант чотирьох коней, Система Кереса-Парми"
           },
           "eco": "A35",
           "opening": "English Opening: Symmetrical Variation, Four Knights Variation, Keres-Parma System",
@@ -2248,7 +2414,9 @@
             "sv": "Symmetriska varianten, Rubinsteinvarianten",
             "da": "Symmetrisk variant, Rubinsteinvarianten",
             "nb": "Symmetrisk variant, Rubinsteinvarianten",
-            "fi": "Symmetrinen muunnelma, Rubinstein-muunnelma"
+            "fi": "Symmetrinen muunnelma, Rubinstein-muunnelma",
+            "ru": "Симметричный вариант, Вариант Рубинштейна",
+            "uk": "Симетричний варіант, Варіант Рубінштейна"
           },
           "eco": "A34",
           "opening": "English Opening: Symmetrical Variation, Rubinstein Variation",
@@ -2275,7 +2443,9 @@
             "sv": "Symmetriska varianten, Napolitanogambit",
             "da": "Symmetrisk variant, Napolitanogambit",
             "nb": "Symmetrisk variant, Napolitanogambit",
-            "fi": "Symmetrinen muunnelma, Napolitano-gambiitti"
+            "fi": "Symmetrinen muunnelma, Napolitano-gambiitti",
+            "ru": "Симметричный вариант, Гамбит Наполитано",
+            "uk": "Симетричний варіант, Гамбіт Наполітано"
           },
           "eco": "A30",
           "opening": "English Opening: Symmetrical Variation, Napolitano Gambit",
@@ -2302,7 +2472,9 @@
             "sv": "Symmetriska varianten, Botvinniksystemet",
             "da": "Symmetrisk variant, Botvinniksystemet",
             "nb": "Symmetrisk variant, Botvinniksystemet",
-            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi"
+            "fi": "Symmetrinen muunnelma, Botvinnik-systeemi",
+            "ru": "Симметричный вариант, Система Ботвинника",
+            "uk": "Симетричний варіант, Система Ботвинника"
           },
           "eco": "A36",
           "opening": "English Opening: Symmetrical Variation, Botvinnik System",
@@ -2329,7 +2501,9 @@
             "sv": "Symmetriska varianten, Ultrasymmetriska varianten",
             "da": "Symmetrisk variant, Ultrasymmetrisk variant",
             "nb": "Symmetrisk variant, Ultrasymmetrisk variant",
-            "fi": "Symmetrinen muunnelma, Ultrasymmetrinen muunnelma"
+            "fi": "Symmetrinen muunnelma, Ultrasymmetrinen muunnelma",
+            "ru": "Симметричный вариант, Сверхсимметричный вариант",
+            "uk": "Симетричний варіант, Надсиметричний варіант"
           },
           "eco": "A36",
           "opening": "English Opening: Symmetrical Variation, Ultra-Symmetrical Variation",
@@ -2356,7 +2530,9 @@
             "sv": "Symmetriska varianten, Anti-Benonivarianten, Gellervarianten",
             "da": "Symmetrisk variant, Anti-Benonivarianten, Gellervarianten",
             "nb": "Symmetrisk variant, Anti-Benonivarianten, Gellervarianten",
-            "fi": "Symmetrinen muunnelma, Anti-Benoni-muunnelma, Geller-muunnelma"
+            "fi": "Symmetrinen muunnelma, Anti-Benoni-muunnelma, Geller-muunnelma",
+            "ru": "Симметричный вариант, Вариант «Анти-Бенони», Вариант Геллера",
+            "uk": "Симетричний варіант, Варіант «Анти-Беноні», Варіант Геллера"
           },
           "eco": "A33",
           "opening": "English Opening: Symmetrical Variation, Anti-Benoni Variation, Geller Variation",
@@ -2383,7 +2559,9 @@
             "sv": "Symmetriska varianten, Anti-Benonivarianten, Spielmannförsvaret",
             "da": "Symmetrisk variant, Anti-Benonivarianten, Spielmannforsvaret",
             "nb": "Symmetrisk variant, Anti-Benonivarianten, Spielmannforsvaret",
-            "fi": "Symmetrinen muunnelma, Anti-Benoni-muunnelma, Spielmann-puolustus"
+            "fi": "Symmetrinen muunnelma, Anti-Benoni-muunnelma, Spielmann-puolustus",
+            "ru": "Симметричный вариант, Вариант «Анти-Бенони», Защита Шпильмана",
+            "uk": "Симетричний варіант, Варіант «Анти-Беноні», Захист Шпільмана"
           },
           "eco": "A33",
           "opening": "English Opening: Symmetrical Variation, Anti-Benoni Variation, Spielmann Defense",
@@ -2410,7 +2588,9 @@
             "sv": "Symmetriska varianten, Igelkottförsvaret",
             "da": "Symmetrisk variant, Pindsvineforsvaret",
             "nb": "Symmetrisk variant, Pinnsvinforsvaret",
-            "fi": "Symmetrinen muunnelma, Siilipuolustus"
+            "fi": "Symmetrinen muunnelma, Siilipuolustus",
+            "ru": "Симметричный вариант, Защита «Ёж»",
+            "uk": "Симетричний варіант, Захист «Їжак»"
           },
           "eco": "A30",
           "opening": "English Opening: Symmetrical Variation, Hedgehog Defense",
@@ -2437,7 +2617,9 @@
             "sv": "Symmetriska varianten, Anti-Benonivarianten, Spielmannförsvaret",
             "da": "Symmetrisk variant, Anti-Benonivarianten, Spielmannforsvaret",
             "nb": "Symmetrisk variant, Anti-Benonivarianten, Spielmannforsvaret",
-            "fi": "Symmetrinen muunnelma, Anti-Benoni-muunnelma, Spielmann-puolustus"
+            "fi": "Symmetrinen muunnelma, Anti-Benoni-muunnelma, Spielmann-puolustus",
+            "ru": "Симметричный вариант, Вариант «Анти-Бенони», Защита Шпильмана",
+            "uk": "Симетричний варіант, Варіант «Анти-Беноні», Захист Шпільмана"
           },
           "eco": "A32",
           "opening": "English Opening: Symmetrical Variation, Anti-Benoni Variation, Spielmann Defense",
@@ -2464,7 +2646,9 @@
             "sv": "Symmetriska varianten, Anti-Benonivarianten, Kasparov-Vaganiangambit",
             "da": "Symmetrisk variant, Anti-Benonivarianten, Kasparov-Vaganiangambit",
             "nb": "Symmetrisk variant, Anti-Benonivarianten, Kasparov-Vaganiangambit",
-            "fi": "Symmetrinen muunnelma, Anti-Benoni-muunnelma, Kasparov-Vaganian-gambiitti"
+            "fi": "Symmetrinen muunnelma, Anti-Benoni-muunnelma, Kasparov-Vaganian-gambiitti",
+            "ru": "Симметричный вариант, Вариант «Анти-Бенони», Гамбит Каспарова-Ваганяна",
+            "uk": "Симетричний варіант, Варіант «Анти-Беноні», Гамбіт Каспарова-Ваганяна"
           },
           "eco": "A31",
           "opening": "English Opening: Symmetrical Variation, Anti-Benoni Variation, Kasparov-Vaganian Gambit",
@@ -2492,7 +2676,9 @@
         "sv": "Engelsk-indiska försvaret",
         "da": "Engelsk-indisk forsvar",
         "nb": "Engelsk-indisk forsvar",
-        "fi": "Englantilais-intialainen puolustus"
+        "fi": "Englantilais-intialainen puolustus",
+        "ru": "Англо-индийская защита",
+        "uk": "Англо-індійський захист"
       },
       "lines": [
         {
@@ -2515,7 +2701,9 @@
             "sv": "Engelsk-indiska försvaret",
             "da": "Engelsk-indisk forsvar",
             "nb": "Engelsk-indisk forsvar",
-            "fi": "Englantilais-intialainen puolustus"
+            "fi": "Englantilais-intialainen puolustus",
+            "ru": "Англо-индийская защита",
+            "uk": "Англо-індійський захист"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense",
@@ -2542,7 +2730,9 @@
             "sv": "Engelsk-indiska försvaret, Damspringarvarianten",
             "da": "Engelsk-indisk forsvar, Dronningespringervarianten",
             "nb": "Engelsk-indisk forsvar, Dronningspringervarianten",
-            "fi": "Englantilais-intialainen puolustus, Kuningatarratsumuunnelma"
+            "fi": "Englantilais-intialainen puolustus, Kuningatarratsumuunnelma",
+            "ru": "Англо-индийская защита, Вариант ферзевого коня",
+            "uk": "Англо-індійський захист, Варіант ферзевого коня"
           },
           "eco": "A16",
           "opening": "English Opening: Anglo-Indian Defense, Queen's Knight Variation",
@@ -2569,7 +2759,9 @@
             "sv": "Engelsk-indiska försvaret, Anglo-Grünfeldvarianten",
             "da": "Engelsk-indisk forsvar, Anglo-Grünfeldvarianten",
             "nb": "Engelsk-indisk forsvar, Anglo-Grünfeldvarianten",
-            "fi": "Englantilais-intialainen puolustus, Anglo-Grünfeld-muunnelma"
+            "fi": "Englantilais-intialainen puolustus, Anglo-Grünfeld-muunnelma",
+            "ru": "Англо-индийская защита, Вариант «Англо-Грюнфельд»",
+            "uk": "Англо-індійський захист, Варіант «Англо-Ґрюнфельд»"
           },
           "eco": "A16",
           "opening": "English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation",
@@ -2596,7 +2788,9 @@
             "sv": "Engelsk-indiska försvaret",
             "da": "Engelsk-indisk forsvar",
             "nb": "Engelsk-indisk forsvar",
-            "fi": "Englantilais-intialainen puolustus"
+            "fi": "Englantilais-intialainen puolustus",
+            "ru": "Англо-индийская защита",
+            "uk": "Англо-індійський захист"
           },
           "eco": "A17",
           "opening": "English Opening: Anglo-Indian Defense",
@@ -2623,7 +2817,9 @@
             "sv": "Engelsk-indiska försvaret, Anglo-Grünfeldvarianten",
             "da": "Engelsk-indisk forsvar, Anglo-Grünfeldvarianten",
             "nb": "Engelsk-indisk forsvar, Anglo-Grünfeldvarianten",
-            "fi": "Englantilais-intialainen puolustus, Anglo-Grünfeld-muunnelma"
+            "fi": "Englantilais-intialainen puolustus, Anglo-Grünfeld-muunnelma",
+            "ru": "Англо-индийская защита, Вариант «Англо-Грюнфельд»",
+            "uk": "Англо-індійський захист, Варіант «Англо-Ґрюнфельд»"
           },
           "eco": "A16",
           "opening": "English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation",
@@ -2650,7 +2846,9 @@
             "sv": "Engelsk-indiska försvaret, Anglo-Grünfeldvarianten",
             "da": "Engelsk-indisk forsvar, Anglo-Grünfeldvarianten",
             "nb": "Engelsk-indisk forsvar, Anglo-Grünfeldvarianten",
-            "fi": "Englantilais-intialainen puolustus, Anglo-Grünfeld-muunnelma"
+            "fi": "Englantilais-intialainen puolustus, Anglo-Grünfeld-muunnelma",
+            "ru": "Англо-индийская защита, Вариант «Англо-Грюнфельд»",
+            "uk": "Англо-індійський захист, Варіант «Англо-Ґрюнфельд»"
           },
           "eco": "A16",
           "opening": "English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation",
@@ -2677,7 +2875,9 @@
             "sv": "Engelsk-indiska försvaret, Anglo-Grünfeldvarianten",
             "da": "Engelsk-indisk forsvar, Anglo-Grünfeldvarianten",
             "nb": "Engelsk-indisk forsvar, Anglo-Grünfeldvarianten",
-            "fi": "Englantilais-intialainen puolustus, Anglo-Grünfeld-muunnelma"
+            "fi": "Englantilais-intialainen puolustus, Anglo-Grünfeld-muunnelma",
+            "ru": "Англо-индийская защита, Вариант «Англо-Грюнфельд»",
+            "uk": "Англо-індійський захист, Варіант «Англо-Ґрюнфельд»"
           },
           "eco": "A16",
           "opening": "English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation",
@@ -2704,7 +2904,9 @@
             "sv": "Engelsk-indiska försvaret, Igelkottsystemet",
             "da": "Engelsk-indisk forsvar, Pindsvinesystemet",
             "nb": "Engelsk-indisk forsvar, Pinnsvinsystemet",
-            "fi": "Englantilais-intialainen puolustus, Siilisysteemi"
+            "fi": "Englantilais-intialainen puolustus, Siilisysteemi",
+            "ru": "Англо-индийская защита, Система «Ёж»",
+            "uk": "Англо-індійський захист, Система «Їжак»"
           },
           "eco": "A17",
           "opening": "English Opening: Anglo-Indian Defense, Hedgehog System",
@@ -2731,7 +2933,9 @@
             "sv": "Engelsk-indiska försvaret, Nimzo-engelskt",
             "da": "Engelsk-indisk forsvar, Nimzo-engelsk",
             "nb": "Engelsk-indisk forsvar, Nimzo-engelsk",
-            "fi": "Englantilais-intialainen puolustus, Nimzo-englantilainen"
+            "fi": "Englantilais-intialainen puolustus, Nimzo-englantilainen",
+            "ru": "Англо-индийская защита, Нимцо-английский",
+            "uk": "Англо-індійський захист, Німцо-англійський"
           },
           "eco": "A17",
           "opening": "English Opening: Anglo-Indian Defense, Nimzo-English",
@@ -2758,7 +2962,9 @@
             "sv": "Engelsk-indiska försvaret, Anti-Anti-Grünfeld",
             "da": "Engelsk-indisk forsvar, Anti-Anti-Grünfeld",
             "nb": "Engelsk-indisk forsvar, Anti-Anti-Grünfeld",
-            "fi": "Englantilais-intialainen puolustus, Anti-Anti-Grünfeld"
+            "fi": "Englantilais-intialainen puolustus, Anti-Anti-Grünfeld",
+            "ru": "Англо-индийская защита, Анти-анти-Грюнфельд",
+            "uk": "Англо-індійський захист, Анти-анти-Ґрюнфельд"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, Anti-Anti-Grünfeld",
@@ -2785,7 +2991,9 @@
             "sv": "Engelsk-indiska försvaret, Kungsspringarvarianten",
             "da": "Engelsk-indisk forsvar, Kongespringervarianten",
             "nb": "Engelsk-indisk forsvar, Kongespringervarianten",
-            "fi": "Englantilais-intialainen puolustus, Kuningasratsumuunnelma"
+            "fi": "Englantilais-intialainen puolustus, Kuningasratsumuunnelma",
+            "ru": "Англо-индийская защита, Вариант королевского коня",
+            "uk": "Англо-індійський захист, Варіант королівського коня"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, King's Knight Variation",
@@ -2812,7 +3020,9 @@
             "sv": "Engelsk-indiska försvaret, Damindiska uppställningen",
             "da": "Engelsk-indisk forsvar, Dronningindisk opstilling",
             "nb": "Engelsk-indisk forsvar, Dronningindisk oppstilling",
-            "fi": "Englantilais-intialainen puolustus, Kuningatarintialainen asetelma"
+            "fi": "Englantilais-intialainen puolustus, Kuningatarintialainen asetelma",
+            "ru": "Англо-индийская защита, Новоиндийское построение",
+            "uk": "Англо-індійський захист, Новоіндійська побудова"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, Queen's Indian Formation",
@@ -2839,7 +3049,9 @@
             "sv": "Engelsk-indiska försvaret, Skandinaviska försvaret",
             "da": "Engelsk-indisk forsvar, Skandinavisk forsvar",
             "nb": "Engelsk-indisk forsvar, Skandinavisk forsvar",
-            "fi": "Englantilais-intialainen puolustus, Skandinaavinen puolustus"
+            "fi": "Englantilais-intialainen puolustus, Skandinaavinen puolustus",
+            "ru": "Англо-индийская защита, Скандинавская защита",
+            "uk": "Англо-індійський захист, Скандинавський захист"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, Scandinavian Defense",
@@ -2866,7 +3078,9 @@
             "sv": "Engelsk-indiska försvaret, Skandinaviska försvaret, Avbytesvarianten",
             "da": "Engelsk-indisk forsvar, Skandinavisk forsvar, Afbytningsvarianten",
             "nb": "Engelsk-indisk forsvar, Skandinavisk forsvar, Avbyttevarianten",
-            "fi": "Englantilais-intialainen puolustus, Skandinaavinen puolustus, Vaihtomuunnelma"
+            "fi": "Englantilais-intialainen puolustus, Skandinaavinen puolustus, Vaihtomuunnelma",
+            "ru": "Англо-индийская защита, Скандинавская защита, Разменный вариант",
+            "uk": "Англо-індійський захист, Скандинавський захист, Розмінний варіант"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, Scandinavian Defense, Exchange Variation",
@@ -2893,7 +3107,9 @@
             "sv": "Engelsk-indiska försvaret, Gammalindiska uppställningen",
             "da": "Engelsk-indisk forsvar, Gammelindisk opstilling",
             "nb": "Engelsk-indisk forsvar, Gammelindisk oppstilling",
-            "fi": "Englantilais-intialainen puolustus, Vanhaintialainen asetelma"
+            "fi": "Englantilais-intialainen puolustus, Vanhaintialainen asetelma",
+            "ru": "Англо-индийская защита, Староиндийское построение",
+            "uk": "Англо-індійський захист, Староіндійська побудова"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, Old Indian Formation",
@@ -2920,7 +3136,9 @@
             "sv": "Engelsk-indiska försvaret, Kungsindiska uppställningen",
             "da": "Engelsk-indisk forsvar, Kongeindisk opstilling",
             "nb": "Engelsk-indisk forsvar, Kongeindisk oppstilling",
-            "fi": "Englantilais-intialainen puolustus, Kuningasintialainen asetelma"
+            "fi": "Englantilais-intialainen puolustus, Kuningasintialainen asetelma",
+            "ru": "Англо-индийская защита, Староиндийское построение",
+            "uk": "Англо-індійський захист, Староіндійська побудова"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, King's Indian Formation",
@@ -2947,7 +3165,9 @@
             "sv": "Engelsk-indiska försvaret, Kungsindiska uppställningen, Dubbelfianchetto",
             "da": "Engelsk-indisk forsvar, Kongeindisk opstilling, Dobbeltfianchetto",
             "nb": "Engelsk-indisk forsvar, Kongeindisk oppstilling, Dobbeltfianchetto",
-            "fi": "Englantilais-intialainen puolustus, Kuningasintialainen asetelma, Kaksoisfianketto"
+            "fi": "Englantilais-intialainen puolustus, Kuningasintialainen asetelma, Kaksoisfianketto",
+            "ru": "Англо-индийская защита, Староиндийское построение, Двойное фианкетто",
+            "uk": "Англо-індійський захист, Староіндійська побудова, Подвійне фіанкето"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, King's Indian Formation, Double Fianchetto",
@@ -2974,7 +3194,9 @@
             "sv": "Engelsk-indiska försvaret, Slaviska uppställningen",
             "da": "Engelsk-indisk forsvar, Slavisk opstilling",
             "nb": "Engelsk-indisk forsvar, Slavisk oppstilling",
-            "fi": "Englantilais-intialainen puolustus, Slaavilainen asetelma"
+            "fi": "Englantilais-intialainen puolustus, Slaavilainen asetelma",
+            "ru": "Англо-индийская защита, Славянское построение",
+            "uk": "Англо-індійський захист, Слов'янська побудова"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, Slav Formation",
@@ -3001,7 +3223,9 @@
             "sv": "Engelsk-indiska försvaret, Grünfelduppställningen",
             "da": "Engelsk-indisk forsvar, Grünfeldopstillingen",
             "nb": "Engelsk-indisk forsvar, Grünfeldoppstillingen",
-            "fi": "Englantilais-intialainen puolustus, Grünfeld-asetelma"
+            "fi": "Englantilais-intialainen puolustus, Grünfeld-asetelma",
+            "ru": "Англо-индийская защита, Построение Грюнфельда",
+            "uk": "Англо-індійський захист, Побудова Ґрюнфельда"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, Grünfeld Formation",
@@ -3028,7 +3252,9 @@
             "sv": "Engelsk-indiska försvaret, Zvjaginsev-Krasenkowattacken",
             "da": "Engelsk-indisk forsvar, Zvjaginsev-Krasenkowangrebet",
             "nb": "Engelsk-indisk forsvar, Zvjaginsev-Krasenkowangrepet",
-            "fi": "Englantilais-intialainen puolustus, Zvjaginsev-Krasenkow-hyökkäys"
+            "fi": "Englantilais-intialainen puolustus, Zvjaginsev-Krasenkow-hyökkäys",
+            "ru": "Англо-индийская защита, Атака Звягинцева-Красенкова",
+            "uk": "Англо-індійський захист, Атака Звягінцева-Красенкова"
           },
           "eco": "A17",
           "opening": "English Opening: Anglo-Indian Defense, Zvjaginsev-Krasenkow Attack",
@@ -3055,7 +3281,9 @@
             "sv": "Engelsk-indiska försvaret, Damindiska uppställningen",
             "da": "Engelsk-indisk forsvar, Dronningindisk opstilling",
             "nb": "Engelsk-indisk forsvar, Dronningindisk oppstilling",
-            "fi": "Englantilais-intialainen puolustus, Kuningatarintialainen asetelma"
+            "fi": "Englantilais-intialainen puolustus, Kuningatarintialainen asetelma",
+            "ru": "Англо-индийская защита, Новоиндийское построение",
+            "uk": "Англо-індійський захист, Новоіндійська побудова"
           },
           "eco": "A17",
           "opening": "English Opening: Anglo-Indian Defense, Queen's Indian Formation",
@@ -3082,7 +3310,9 @@
             "sv": "Engelsk-indiska försvaret, Damindiska varianten",
             "da": "Engelsk-indisk forsvar, Dronningindisk variant",
             "nb": "Engelsk-indisk forsvar, Dronningindisk variant",
-            "fi": "Englantilais-intialainen puolustus, Kuningatarintialainen muunnelma"
+            "fi": "Englantilais-intialainen puolustus, Kuningatarintialainen muunnelma",
+            "ru": "Англо-индийская защита, Новоиндийский вариант",
+            "uk": "Англо-індійський захист, Новоіндійський варіант"
           },
           "eco": "A17",
           "opening": "English Opening: Anglo-Indian Defense, Queen's Indian Variation",
@@ -3109,7 +3339,9 @@
             "sv": "Engelsk-indiska försvaret, Flohr-Mikenas-Carlsvarianten, Neigambit",
             "da": "Engelsk-indisk forsvar, Flohr-Mikenas-Carlsvarianten, Neigambit",
             "nb": "Engelsk-indisk forsvar, Flohr-Mikenas-Carlsvarianten, Neigambit",
-            "fi": "Englantilais-intialainen puolustus, Flohr-Mikenas-Carls-muunnelma, Nei-gambiitti"
+            "fi": "Englantilais-intialainen puolustus, Flohr-Mikenas-Carls-muunnelma, Nei-gambiitti",
+            "ru": "Англо-индийская защита, Вариант Флора-Микенаса-Карлса, Гамбит Нея",
+            "uk": "Англо-індійський захист, Варіант Флора-Мікенаса-Карлса, Гамбіт Нея"
           },
           "eco": "A19",
           "opening": "English Opening: Anglo-Indian Defense, Flohr-Mikenas-Carls Variation, Nei Gambit",
@@ -3136,7 +3368,9 @@
             "sv": "Engelsk-indiska försvaret, Romanishinvarianten",
             "da": "Engelsk-indisk forsvar, Romanishinvarianten",
             "nb": "Engelsk-indisk forsvar, Romanishinvarianten",
-            "fi": "Englantilais-intialainen puolustus, Romanishin-muunnelma"
+            "fi": "Englantilais-intialainen puolustus, Romanishin-muunnelma",
+            "ru": "Англо-индийская защита, Вариант Романишина",
+            "uk": "Англо-індійський захист, Варіант Романишина"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, Romanishin Variation",
@@ -3163,7 +3397,9 @@
             "sv": "Engelsk-indiska försvaret, Damindiska uppställningen",
             "da": "Engelsk-indisk forsvar, Dronningindisk opstilling",
             "nb": "Engelsk-indisk forsvar, Dronningindisk oppstilling",
-            "fi": "Englantilais-intialainen puolustus, Kuningatarintialainen asetelma"
+            "fi": "Englantilais-intialainen puolustus, Kuningatarintialainen asetelma",
+            "ru": "Англо-индийская защита, Новоиндийское построение",
+            "uk": "Англо-індійський захист, Новоіндійська побудова"
           },
           "eco": "A15",
           "opening": "English Opening: Anglo-Indian Defense, Queen's Indian Formation",
@@ -3191,7 +3427,9 @@
         "sv": "Agincourtförsvaret",
         "da": "Agincourtforsvaret",
         "nb": "Agincourtforsvaret",
-        "fi": "Agincourt-puolustus"
+        "fi": "Agincourt-puolustus",
+        "ru": "Защита «Азенкур»",
+        "uk": "Захист «Азенкур»"
       },
       "lines": [
         {
@@ -3214,7 +3452,9 @@
             "sv": "Agincourtförsvaret, Neokatalanskt avböjd",
             "da": "Agincourtforsvaret, Neokatalansk afslået",
             "nb": "Agincourtforsvaret, Neokatalansk avslått",
-            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty"
+            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty",
+            "ru": "Защита «Азенкур», Отказанный неокаталонский",
+            "uk": "Захист «Азенкур», Відхилений неокаталонський"
           },
           "eco": "A14",
           "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
@@ -3241,7 +3481,9 @@
             "sv": "Agincourtförsvaret, Neokatalanskt avböjd",
             "da": "Agincourtforsvaret, Neokatalansk afslået",
             "nb": "Agincourtforsvaret, Neokatalansk avslått",
-            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty"
+            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty",
+            "ru": "Защита «Азенкур», Отказанный неокаталонский",
+            "uk": "Захист «Азенкур», Відхилений неокаталонський"
           },
           "eco": "A14",
           "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
@@ -3268,7 +3510,9 @@
             "sv": "Agincourtförsvaret, Neokatalanskt avböjd",
             "da": "Agincourtforsvaret, Neokatalansk afslået",
             "nb": "Agincourtforsvaret, Neokatalansk avslått",
-            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty"
+            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty",
+            "ru": "Защита «Азенкур», Отказанный неокаталонский",
+            "uk": "Захист «Азенкур», Відхилений неокаталонський"
           },
           "eco": "A14",
           "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
@@ -3295,7 +3539,9 @@
             "sv": "Agincourtförsvaret, Neokatalanskt avböjd",
             "da": "Agincourtforsvaret, Neokatalansk afslået",
             "nb": "Agincourtforsvaret, Neokatalansk avslått",
-            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty"
+            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty",
+            "ru": "Защита «Азенкур», Отказанный неокаталонский",
+            "uk": "Захист «Азенкур», Відхилений неокаталонський"
           },
           "eco": "A14",
           "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
@@ -3322,7 +3568,9 @@
             "sv": "Agincourtförsvaret",
             "da": "Agincourtforsvaret",
             "nb": "Agincourtforsvaret",
-            "fi": "Agincourt-puolustus"
+            "fi": "Agincourt-puolustus",
+            "ru": "Защита «Азенкур»",
+            "uk": "Захист «Азенкур»"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense",
@@ -3349,7 +3597,9 @@
             "sv": "Agincourtförsvaret",
             "da": "Agincourtforsvaret",
             "nb": "Agincourtforsvaret",
-            "fi": "Agincourt-puolustus"
+            "fi": "Agincourt-puolustus",
+            "ru": "Защита «Азенкур»",
+            "uk": "Захист «Азенкур»"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense",
@@ -3376,7 +3626,9 @@
             "sv": "Agincourtförsvaret, Wimpysystemet",
             "da": "Agincourtforsvaret, Wimpysystemet",
             "nb": "Agincourtforsvaret, Wimpysystemet",
-            "fi": "Agincourt-puolustus, Wimpy-systeemi"
+            "fi": "Agincourt-puolustus, Wimpy-systeemi",
+            "ru": "Защита «Азенкур», Система «Слабак»",
+            "uk": "Захист «Азенкур», Система «Слабак»"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense, Wimpy System",
@@ -3403,7 +3655,9 @@
             "sv": "Agincourtförsvaret, Katalanska försvaret, Halvslaviska försvaret",
             "da": "Agincourtforsvaret, Katalansk forsvar, Halvslavisk forsvar",
             "nb": "Agincourtforsvaret, Katalansk forsvar, Halvslavisk forsvar",
-            "fi": "Agincourt-puolustus, Katalonialainen puolustus, Semi-slaavilainen puolustus"
+            "fi": "Agincourt-puolustus, Katalonialainen puolustus, Semi-slaavilainen puolustus",
+            "ru": "Защита «Азенкур», Каталонская защита, Полуславянская защита",
+            "uk": "Захист «Азенкур», Каталонський захист, Напівслов'янський захист"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense, Catalan Defense, Semi-Slav Defense",
@@ -3430,7 +3684,9 @@
             "sv": "Agincourtförsvaret, Katalanska försvaret antagen",
             "da": "Agincourtforsvaret, Katalansk forsvar modtaget",
             "nb": "Agincourtforsvaret, Katalansk forsvar mottatt",
-            "fi": "Agincourt-puolustus, Katalonialainen puolustus hyväksytty"
+            "fi": "Agincourt-puolustus, Katalonialainen puolustus hyväksytty",
+            "ru": "Защита «Азенкур», Принятая каталонская защита",
+            "uk": "Захист «Азенкур», Прийнятий каталонський захист"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense, Catalan Defense Accepted",
@@ -3457,7 +3713,9 @@
             "sv": "Agincourtförsvaret",
             "da": "Agincourtforsvaret",
             "nb": "Agincourtforsvaret",
-            "fi": "Agincourt-puolustus"
+            "fi": "Agincourt-puolustus",
+            "ru": "Защита «Азенкур»",
+            "uk": "Захист «Азенкур»"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense",
@@ -3484,7 +3742,9 @@
             "sv": "Agincourtförsvaret",
             "da": "Agincourtforsvaret",
             "nb": "Agincourtforsvaret",
-            "fi": "Agincourt-puolustus"
+            "fi": "Agincourt-puolustus",
+            "ru": "Защита «Азенкур»",
+            "uk": "Захист «Азенкур»"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense",
@@ -3511,7 +3771,9 @@
             "sv": "Agincourtförsvaret",
             "da": "Agincourtforsvaret",
             "nb": "Agincourtforsvaret",
-            "fi": "Agincourt-puolustus"
+            "fi": "Agincourt-puolustus",
+            "ru": "Защита «Азенкур»",
+            "uk": "Захист «Азенкур»"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense",
@@ -3538,7 +3800,9 @@
             "sv": "Agincourtförsvaret, Bogoljubowförsvaret",
             "da": "Agincourtforsvaret, Bogoljubowforsvaret",
             "nb": "Agincourtforsvaret, Bogoljubowforsvaret",
-            "fi": "Agincourt-puolustus, Bogoljubow-puolustus"
+            "fi": "Agincourt-puolustus, Bogoljubow-puolustus",
+            "ru": "Защита «Азенкур», Защита Боголюбова",
+            "uk": "Захист «Азенкур», Захист Боголюбова"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense, Bogoljubow Defense",
@@ -3565,7 +3829,9 @@
             "sv": "Agincourtförsvaret, Neokatalanskt avböjd",
             "da": "Agincourtforsvaret, Neokatalansk afslået",
             "nb": "Agincourtforsvaret, Neokatalansk avslått",
-            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty"
+            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty",
+            "ru": "Защита «Азенкур», Отказанный неокаталонский",
+            "uk": "Захист «Азенкур», Відхилений неокаталонський"
           },
           "eco": "A14",
           "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
@@ -3592,7 +3858,9 @@
             "sv": "Agincourtförsvaret, Neokatalanskt avböjd",
             "da": "Agincourtforsvaret, Neokatalansk afslået",
             "nb": "Agincourtforsvaret, Neokatalansk avslått",
-            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty"
+            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty",
+            "ru": "Защита «Азенкур», Отказанный неокаталонский",
+            "uk": "Захист «Азенкур», Відхилений неокаталонський"
           },
           "eco": "A14",
           "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined",
@@ -3619,7 +3887,9 @@
             "sv": "Agincourtförsvaret, Keresförsvaret",
             "da": "Agincourtforsvaret, Keresforsvaret",
             "nb": "Agincourtforsvaret, Keresforsvaret",
-            "fi": "Agincourt-puolustus, Keres-puolustus"
+            "fi": "Agincourt-puolustus, Keres-puolustus",
+            "ru": "Защита «Азенкур», Защита Кереса",
+            "uk": "Захист «Азенкур», Захист Кереса"
           },
           "eco": "A14",
           "opening": "English Opening: Agincourt Defense, Keres Defense",
@@ -3646,7 +3916,9 @@
             "sv": "Agincourtförsvaret, Neokatalanskt avböjd, Tidigt b3",
             "da": "Agincourtforsvaret, Neokatalansk afslået, Tidligt b3",
             "nb": "Agincourtforsvaret, Neokatalansk avslått, Tidlig b3",
-            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty, Varhainen b3"
+            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty, Varhainen b3",
+            "ru": "Защита «Азенкур», Отказанный неокаталонский, Ранний b3",
+            "uk": "Захист «Азенкур», Відхилений неокаталонський, Ранній b3"
           },
           "eco": "A14",
           "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined, Early b3",
@@ -3673,7 +3945,9 @@
             "sv": "Agincourtförsvaret, Neokatalanskt avböjd, Tidigt b3",
             "da": "Agincourtforsvaret, Neokatalansk afslået, Tidligt b3",
             "nb": "Agincourtforsvaret, Neokatalansk avslått, Tidlig b3",
-            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty, Varhainen b3"
+            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty, Varhainen b3",
+            "ru": "Защита «Азенкур», Отказанный неокаталонский, Ранний b3",
+            "uk": "Захист «Азенкур», Відхилений неокаталонський, Ранній b3"
           },
           "eco": "A14",
           "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined, Early b3",
@@ -3700,7 +3974,9 @@
             "sv": "Agincourtförsvaret, Neokatalanskt avböjd, Tidigt b3",
             "da": "Agincourtforsvaret, Neokatalansk afslået, Tidligt b3",
             "nb": "Agincourtforsvaret, Neokatalansk avslått, Tidlig b3",
-            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty, Varhainen b3"
+            "fi": "Agincourt-puolustus, Uuskatalonialainen hylätty, Varhainen b3",
+            "ru": "Защита «Азенкур», Отказанный неокаталонский, Ранний b3",
+            "uk": "Захист «Азенкур», Відхилений неокаталонський, Ранній b3"
           },
           "eco": "A14",
           "opening": "English Opening: Agincourt Defense, Neo-Catalan Declined, Early b3",
@@ -3727,7 +4003,9 @@
             "sv": "Agincourtförsvaret, Tarraschförsvaret",
             "da": "Agincourtforsvaret, Tarraschforsvaret",
             "nb": "Agincourtforsvaret, Tarraschforsvaret",
-            "fi": "Agincourt-puolustus, Tarrasch-puolustus"
+            "fi": "Agincourt-puolustus, Tarrasch-puolustus",
+            "ru": "Защита «Азенкур», Защита Тарраша",
+            "uk": "Захист «Азенкур», Захист Тарраша"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense, Tarrasch Defense",
@@ -3754,7 +4032,9 @@
             "sv": "Agincourtförsvaret, Katalanska försvaret",
             "da": "Agincourtforsvaret, Katalansk forsvar",
             "nb": "Agincourtforsvaret, Katalansk forsvar",
-            "fi": "Agincourt-puolustus, Katalonialainen puolustus"
+            "fi": "Agincourt-puolustus, Katalonialainen puolustus",
+            "ru": "Защита «Азенкур», Каталонская защита",
+            "uk": "Захист «Азенкур», Каталонський захист"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense, Catalan Defense",
@@ -3781,7 +4061,9 @@
             "sv": "Agincourtförsvaret, Katalanska försvaret",
             "da": "Agincourtforsvaret, Katalansk forsvar",
             "nb": "Agincourtforsvaret, Katalansk forsvar",
-            "fi": "Agincourt-puolustus, Katalonialainen puolustus"
+            "fi": "Agincourt-puolustus, Katalonialainen puolustus",
+            "ru": "Защита «Азенкур», Каталонская защита",
+            "uk": "Захист «Азенкур», Каталонський захист"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense, Catalan Defense",
@@ -3808,7 +4090,9 @@
             "sv": "Agincourtförsvaret, Kurajicaförsvaret",
             "da": "Agincourtforsvaret, Kurajicaforsvaret",
             "nb": "Agincourtforsvaret, Kurajicaforsvaret",
-            "fi": "Agincourt-puolustus, Kurajica-puolustus"
+            "fi": "Agincourt-puolustus, Kurajica-puolustus",
+            "ru": "Защита «Азенкур», Защита Кураицы",
+            "uk": "Захист «Азенкур», Захист Кураїци"
           },
           "eco": "A13",
           "opening": "English Opening: Agincourt Defense, Kurajica Defense",
@@ -3836,7 +4120,9 @@
         "sv": "Engelsk-skandinaviska försvaret",
         "da": "Engelsk-skandinavisk forsvar",
         "nb": "Engelsk-skandinavisk forsvar",
-        "fi": "Englantilais-skandinaavinen puolustus"
+        "fi": "Englantilais-skandinaavinen puolustus",
+        "ru": "Англо-скандинавская защита",
+        "uk": "Англо-скандинавський захист"
       },
       "lines": [
         {
@@ -3859,7 +4145,9 @@
             "sv": "Engelsk-skandinaviska försvaret",
             "da": "Engelsk-skandinavisk forsvar",
             "nb": "Engelsk-skandinavisk forsvar",
-            "fi": "Englantilais-skandinaavinen puolustus"
+            "fi": "Englantilais-skandinaavinen puolustus",
+            "ru": "Англо-скандинавская защита",
+            "uk": "Англо-скандинавський захист"
           },
           "eco": "A10",
           "opening": "English Opening: Anglo-Scandinavian Defense",
@@ -3886,7 +4174,9 @@
             "sv": "Engelsk-skandinaviska försvaret, Schulzgambit",
             "da": "Engelsk-skandinavisk forsvar, Schulzgambit",
             "nb": "Engelsk-skandinavisk forsvar, Schulzgambit",
-            "fi": "Englantilais-skandinaavinen puolustus, Schulz-gambiitti"
+            "fi": "Englantilais-skandinaavinen puolustus, Schulz-gambiitti",
+            "ru": "Англо-скандинавская защита, Гамбит Шульца",
+            "uk": "Англо-скандинавський захист, Гамбіт Шульца"
           },
           "eco": "A10",
           "opening": "English Opening: Anglo-Scandinavian Defense, Schulz Gambit",
@@ -3913,7 +4203,9 @@
             "sv": "Engelsk-skandinaviska försvaret, Malvinasvarianten",
             "da": "Engelsk-skandinavisk forsvar, Malvinasvarianten",
             "nb": "Engelsk-skandinavisk forsvar, Malvinasvarianten",
-            "fi": "Englantilais-skandinaavinen puolustus, Malvinas-muunnelma"
+            "fi": "Englantilais-skandinaavinen puolustus, Malvinas-muunnelma",
+            "ru": "Англо-скандинавская защита, Вариант «Мальвинас»",
+            "uk": "Англо-скандинавський захист, Варіант «Мальвінас»"
           },
           "eco": "A10",
           "opening": "English Opening: Anglo-Scandinavian Defense, Malvinas Variation",
@@ -3940,7 +4232,9 @@
             "sv": "Engelsk-skandinaviska försvaret, Löhngambit",
             "da": "Engelsk-skandinavisk forsvar, Löhngambit",
             "nb": "Engelsk-skandinavisk forsvar, Löhngambit",
-            "fi": "Englantilais-skandinaavinen puolustus, Löhn-gambiitti"
+            "fi": "Englantilais-skandinaavinen puolustus, Löhn-gambiitti",
+            "ru": "Англо-скандинавская защита, Гамбит Лёна",
+            "uk": "Англо-скандинавський захист, Гамбіт Льона"
           },
           "eco": "A10",
           "opening": "English Opening: Anglo-Scandinavian Defense, Löhn Gambit",
@@ -3968,7 +4262,9 @@
         "sv": "Mikenas-Carlsvarianten",
         "da": "Mikenas-Carlsvarianten",
         "nb": "Mikenas-Carlsvarianten",
-        "fi": "Mikenas-Carls-muunnelma"
+        "fi": "Mikenas-Carls-muunnelma",
+        "ru": "Вариант Микенаса-Карлса",
+        "uk": "Варіант Мікенаса-Карлса"
       },
       "lines": [
         {
@@ -3991,7 +4287,9 @@
             "sv": "Mikenas-Carlsvarianten",
             "da": "Mikenas-Carlsvarianten",
             "nb": "Mikenas-Carlsvarianten",
-            "fi": "Mikenas-Carls-muunnelma"
+            "fi": "Mikenas-Carls-muunnelma",
+            "ru": "Вариант Микенаса-Карлса",
+            "uk": "Варіант Мікенаса-Карлса"
           },
           "eco": "A18",
           "opening": "English Opening: Mikenas-Carls Variation",
@@ -4018,7 +4316,9 @@
             "sv": "Mikenas-Carlsvarianten",
             "da": "Mikenas-Carlsvarianten",
             "nb": "Mikenas-Carlsvarianten",
-            "fi": "Mikenas-Carls-muunnelma"
+            "fi": "Mikenas-Carls-muunnelma",
+            "ru": "Вариант Микенаса-Карлса",
+            "uk": "Варіант Мікенаса-Карлса"
           },
           "eco": "A18",
           "opening": "English Opening: Mikenas-Carls Variation",
@@ -4045,7 +4345,9 @@
             "sv": "Mikenas-Carlsvarianten",
             "da": "Mikenas-Carlsvarianten",
             "nb": "Mikenas-Carlsvarianten",
-            "fi": "Mikenas-Carls-muunnelma"
+            "fi": "Mikenas-Carls-muunnelma",
+            "ru": "Вариант Микенаса-Карлса",
+            "uk": "Варіант Мікенаса-Карлса"
           },
           "eco": "A18",
           "opening": "English Opening: Mikenas-Carls Variation",
@@ -4073,7 +4375,9 @@
         "sv": "Engelsk-holländska försvaret",
         "da": "Engelsk-hollandsk forsvar",
         "nb": "Engelsk-hollandsk forsvar",
-        "fi": "Englantilais-hollantilainen puolustus"
+        "fi": "Englantilais-hollantilainen puolustus",
+        "ru": "Англо-голландская защита",
+        "uk": "Англо-голландський захист"
       },
       "lines": [
         {
@@ -4096,7 +4400,9 @@
             "sv": "Engelsk-holländska försvaret",
             "da": "Engelsk-hollandsk forsvar",
             "nb": "Engelsk-hollandsk forsvar",
-            "fi": "Englantilais-hollantilainen puolustus"
+            "fi": "Englantilais-hollantilainen puolustus",
+            "ru": "Англо-голландская защита",
+            "uk": "Англо-голландський захист"
           },
           "eco": "A10",
           "opening": "English Opening: Anglo-Dutch Defense",
@@ -4123,7 +4429,9 @@
             "sv": "Engelsk-holländska försvaret, Hickmanngambit",
             "da": "Engelsk-hollandsk forsvar, Hickmanngambit",
             "nb": "Engelsk-hollandsk forsvar, Hickmanngambit",
-            "fi": "Englantilais-hollantilainen puolustus, Hickmann-gambiitti"
+            "fi": "Englantilais-hollantilainen puolustus, Hickmann-gambiitti",
+            "ru": "Англо-голландская защита, Гамбит Хикмана",
+            "uk": "Англо-голландський захист, Гамбіт Гікмана"
           },
           "eco": "A10",
           "opening": "English Opening: Anglo-Dutch Defense, Hickmann Gambit",
@@ -4151,7 +4459,9 @@
         "sv": "Engelsk-holländska varianten",
         "da": "Engelsk-hollandsk variant",
         "nb": "Engelsk-hollandsk variant",
-        "fi": "Englantilais-hollantilainen muunnelma"
+        "fi": "Englantilais-hollantilainen muunnelma",
+        "ru": "Англо-голландский вариант",
+        "uk": "Англо-голландський варіант"
       },
       "lines": [
         {
@@ -4174,7 +4484,9 @@
             "sv": "Engelsk-holländska varianten, Ferencgambit",
             "da": "Engelsk-hollandsk variant, Ferencgambit",
             "nb": "Engelsk-hollandsk variant, Ferencgambit",
-            "fi": "Englantilais-hollantilainen muunnelma, Ferenc-gambiitti"
+            "fi": "Englantilais-hollantilainen muunnelma, Ferenc-gambiitti",
+            "ru": "Англо-голландский вариант, Гамбит Ференца",
+            "uk": "Англо-голландський варіант, Гамбіт Ференца"
           },
           "eco": "A10",
           "opening": "English Opening: Anglo-Dutch Variation, Ferenc Gambit",
@@ -4201,7 +4513,9 @@
             "sv": "Engelsk-holländska varianten, Chabanongambit",
             "da": "Engelsk-hollandsk variant, Chabanongambit",
             "nb": "Engelsk-hollandsk variant, Chabanongambit",
-            "fi": "Englantilais-hollantilainen muunnelma, Chabanon-gambiitti"
+            "fi": "Englantilais-hollantilainen muunnelma, Chabanon-gambiitti",
+            "ru": "Англо-голландский вариант, Гамбит Шабанона",
+            "uk": "Англо-голландський варіант, Гамбіт Шабанона"
           },
           "eco": "A10",
           "opening": "English Opening: Anglo-Dutch Variation, Chabanon Gambit",
@@ -4229,7 +4543,9 @@
         "sv": "Anglo-Grünfeldförsvaret",
         "da": "Anglo-Grünfeldforsvaret",
         "nb": "Anglo-Grünfeldforsvaret",
-        "fi": "Anglo-Grünfeld-puolustus"
+        "fi": "Anglo-Grünfeld-puolustus",
+        "ru": "Защита «Англо-Грюнфельд»",
+        "uk": "Захист «Англо-Ґрюнфельд»"
       },
       "lines": [
         {
@@ -4252,7 +4568,9 @@
             "sv": "Anglo-Grünfeldförsvaret",
             "da": "Anglo-Grünfeldforsvaret",
             "nb": "Anglo-Grünfeldforsvaret",
-            "fi": "Anglo-Grünfeld-puolustus"
+            "fi": "Anglo-Grünfeld-puolustus",
+            "ru": "Защита «Англо-Грюнфельд»",
+            "uk": "Захист «Англо-Ґрюнфельд»"
           },
           "eco": "A16",
           "opening": "English Opening: Anglo-Grünfeld Defense",
@@ -4279,7 +4597,9 @@
             "sv": "Anglo-Grünfeldförsvaret, Korchnoivarianten",
             "da": "Anglo-Grünfeldforsvaret, Korchnoivarianten",
             "nb": "Anglo-Grünfeldforsvaret, Korchnoivarianten",
-            "fi": "Anglo-Grünfeld-puolustus, Korchnoi-muunnelma"
+            "fi": "Anglo-Grünfeld-puolustus, Korchnoi-muunnelma",
+            "ru": "Защита «Англо-Грюнфельд», Вариант Корчного",
+            "uk": "Захист «Англо-Ґрюнфельд», Варіант Корчного"
           },
           "eco": "A16",
           "opening": "English Opening: Anglo-Grünfeld Defense, Korchnoi Variation",
@@ -4307,7 +4627,9 @@
         "sv": "Stängd",
         "da": "Lukket",
         "nb": "Lukket",
-        "fi": "Suljettu"
+        "fi": "Suljettu",
+        "ru": "Закрытый",
+        "uk": "Закритий"
       },
       "lines": [
         {
@@ -4330,7 +4652,9 @@
             "sv": "Stängd, Taimanovvarianten",
             "da": "Lukket, Taimanovvarianten",
             "nb": "Lukket, Taimanovvarianten",
-            "fi": "Suljettu, Taimanov-muunnelma"
+            "fi": "Suljettu, Taimanov-muunnelma",
+            "ru": "Закрытый, Вариант Тайманова",
+            "uk": "Закритий, Варіант Тайманова"
           },
           "eco": "A25",
           "opening": "English Opening: Closed, Taimanov Variation",
@@ -4357,7 +4681,9 @@
             "sv": "Stängd, Taimanovvarianten",
             "da": "Lukket, Taimanovvarianten",
             "nb": "Lukket, Taimanovvarianten",
-            "fi": "Suljettu, Taimanov-muunnelma"
+            "fi": "Suljettu, Taimanov-muunnelma",
+            "ru": "Закрытый, Вариант Тайманова",
+            "uk": "Закритий, Варіант Тайманова"
           },
           "eco": "A25",
           "opening": "English Opening: Closed, Taimanov Variation",
@@ -4385,7 +4711,9 @@
         "sv": "Kungsengelska",
         "da": "Kongeengelsk",
         "nb": "Kongeengelsk",
-        "fi": "Kuningasenglantilainen"
+        "fi": "Kuningasenglantilainen",
+        "ru": "Королевский английский",
+        "uk": "Королівський англійський"
       },
       "lines": [
         {
@@ -4408,7 +4736,9 @@
             "sv": "Kungsengelska, Erbenheimergambit",
             "da": "Kongeengelsk, Erbenheimergambit",
             "nb": "Kongeengelsk, Erbenheimergambit",
-            "fi": "Kuningasenglantilainen, Erbenheimer-gambiitti"
+            "fi": "Kuningasenglantilainen, Erbenheimer-gambiitti",
+            "ru": "Королевский английский, Эрбенхаймский гамбит",
+            "uk": "Королівський англійський, Ербенгаймський гамбіт"
           },
           "eco": "A22",
           "opening": "English Opening: King's English, Erbenheimer Gambit",
@@ -4435,7 +4765,9 @@
             "sv": "Kungsengelska, Mazedonisch",
             "da": "Kongeengelsk, Mazedonisch",
             "nb": "Kongeengelsk, Mazedonisch",
-            "fi": "Kuningasenglantilainen, Mazedonisch"
+            "fi": "Kuningasenglantilainen, Mazedonisch",
+            "ru": "Королевский английский, Македонский",
+            "uk": "Королівський англійський, Македонський"
           },
           "eco": "A22",
           "opening": "English Opening: King's English, Mazedonisch",
@@ -4466,7 +4798,9 @@
         "sv": "Achilles-Omegagambit",
         "da": "Achilles-Omegagambit",
         "nb": "Achilles-Omegagambit",
-        "fi": "Achilles-Omega-gambiitti"
+        "fi": "Achilles-Omega-gambiitti",
+        "ru": "Гамбит «Ахиллес-Омега»",
+        "uk": "Гамбіт «Ахіллес-Омега»"
       },
       "eco": "A10",
       "opening": "English Opening: Achilles-Omega Gambit",
@@ -4493,7 +4827,9 @@
         "sv": "Adorjanförsvaret",
         "da": "Adorjanforsvaret",
         "nb": "Adorjanforsvaret",
-        "fi": "Adorjan-puolustus"
+        "fi": "Adorjan-puolustus",
+        "ru": "Защита Адорьяна",
+        "uk": "Захист Адор'яна"
       },
       "eco": "A10",
       "opening": "English Opening: Adorjan Defense",
@@ -4520,7 +4856,9 @@
         "sv": "Engelsk-litauiska varianten",
         "da": "Engelsk-litauisk variant",
         "nb": "Engelsk-litauisk variant",
-        "fi": "Englantilais-liettualainen muunnelma"
+        "fi": "Englantilais-liettualainen muunnelma",
+        "ru": "Англо-литовский вариант",
+        "uk": "Англо-литовський варіант"
       },
       "eco": "A10",
       "opening": "English Opening: Anglo-Lithuanian Variation",
@@ -4547,7 +4885,9 @@
         "sv": "Carls-Bremensystemet",
         "da": "Carls-Bremensystemet",
         "nb": "Carls-Bremensystemet",
-        "fi": "Carls-Bremen-systeemi"
+        "fi": "Carls-Bremen-systeemi",
+        "ru": "Система Карлса-Бремена",
+        "uk": "Система Карлса-Бремена"
       },
       "eco": "A22",
       "opening": "English Opening: Carls-Bremen System",
@@ -4574,7 +4914,9 @@
         "sv": "Caro-Kann-försvarssystemet",
         "da": "Caro-Kann-forsvarssystemet",
         "nb": "Caro-Kann-forsvarssystemet",
-        "fi": "Caro-Kann-puolustussysteemi"
+        "fi": "Caro-Kann-puolustussysteemi",
+        "ru": "Защитная система Каро-Канн",
+        "uk": "Захисна система Каро-Канн"
       },
       "eco": "A11",
       "opening": "English Opening: Caro-Kann Defensive System",
@@ -4601,7 +4943,9 @@
         "sv": "Borrvarianten",
         "da": "Borvarianten",
         "nb": "Borvarianten",
-        "fi": "Poramuunnelma"
+        "fi": "Poramuunnelma",
+        "ru": "Вариант «Дрель»",
+        "uk": "Варіант «Дриль»"
       },
       "eco": "A20",
       "opening": "English Opening: Drill Variation",
@@ -4628,7 +4972,9 @@
         "sv": "Fyrspringarsystemet, Nimzowitschvarianten",
         "da": "Firespringersystemet, Nimzowitschvarianten",
         "nb": "Firespringersystemet, Nimzowitschvarianten",
-        "fi": "Neliratsusysteemi, Nimzowitsch-muunnelma"
+        "fi": "Neliratsusysteemi, Nimzowitsch-muunnelma",
+        "ru": "Система четырёх коней, Вариант Нимцовича",
+        "uk": "Система чотирьох коней, Варіант Німцовича"
       },
       "eco": "A28",
       "opening": "English Opening: Four Knights System, Nimzowitsch Variation",
@@ -4655,7 +5001,9 @@
         "sv": "Stora ormvarianten",
         "da": "Stor slangevariant",
         "nb": "Stor slangevariant",
-        "fi": "Suuri käärmemuunnelma"
+        "fi": "Suuri käärmemuunnelma",
+        "ru": "Вариант «Большая змея»",
+        "uk": "Варіант «Велика змія»"
       },
       "eco": "A10",
       "opening": "English Opening: Great Snake Variation",
@@ -4682,7 +5030,9 @@
         "sv": "Jaenischgambit",
         "da": "Jaenischgambit",
         "nb": "Jaenischgambit",
-        "fi": "Jaenisch-gambiitti"
+        "fi": "Jaenisch-gambiitti",
+        "ru": "Гамбит Яниша",
+        "uk": "Гамбіт Яніша"
       },
       "eco": "A10",
       "opening": "English Opening: Jaenisch Gambit",
@@ -4709,7 +5059,9 @@
         "sv": "Engelska öppningen",
         "da": "Engelsk åbning",
         "nb": "Engelsk åpning",
-        "fi": "Englantilainen avaus"
+        "fi": "Englantilainen avaus",
+        "ru": "Английское начало",
+        "uk": "Англійський початок"
       },
       "eco": "A10",
       "opening": "English Opening",
@@ -4736,7 +5088,9 @@
         "sv": "Mikenas-Carls, Sicilianskt",
         "da": "Mikenas-Carls, Siciliansk",
         "nb": "Mikenas-Carls, Siciliansk",
-        "fi": "Mikenas-Carls, Sisilialainen"
+        "fi": "Mikenas-Carls, Sisilialainen",
+        "ru": "Микенас-Карлс, Сицилианский",
+        "uk": "Мікенас-Карлс, Сицилійський"
       },
       "eco": "A19",
       "opening": "English Opening: Mikenas-Carls, Sicilian",
@@ -4763,7 +5117,9 @@
         "sv": "Myersförsvaret",
         "da": "Myersforsvaret",
         "nb": "Myersforsvaret",
-        "fi": "Myers-puolustus"
+        "fi": "Myers-puolustus",
+        "ru": "Защита Майерса",
+        "uk": "Захист Маєрса"
       },
       "eco": "A10",
       "opening": "English Opening: Myers Defense",
@@ -4790,7 +5146,9 @@
         "sv": "Myersgambit",
         "da": "Myersgambit",
         "nb": "Myersgambit",
-        "fi": "Myers-gambiitti"
+        "fi": "Myers-gambiitti",
+        "ru": "Гамбит Майерса",
+        "uk": "Гамбіт Маєрса"
       },
       "eco": "A10",
       "opening": "English Opening: Myers Gambit",
@@ -4817,7 +5175,9 @@
         "sv": "Neokatalanskt",
         "da": "Neokatalansk",
         "nb": "Neokatalansk",
-        "fi": "Uuskatalonialainen"
+        "fi": "Uuskatalonialainen",
+        "ru": "Неокаталонский",
+        "uk": "Неокаталонський"
       },
       "eco": "A13",
       "opening": "English Opening: Neo-Catalan",
@@ -4844,7 +5204,9 @@
         "sv": "Neokatalanskt avböjd",
         "da": "Neokatalansk afslået",
         "nb": "Neokatalansk avslått",
-        "fi": "Uuskatalonialainen hylätty"
+        "fi": "Uuskatalonialainen hylätty",
+        "ru": "Отказанный неокаталонский",
+        "uk": "Відхилений неокаталонський"
       },
       "eco": "A13",
       "opening": "English Opening: Neo-Catalan Declined",
@@ -4871,7 +5233,9 @@
         "sv": "Piggsvinvarianten",
         "da": "Hulepindsvinvarianten",
         "nb": "Hulepinnsvinvarianten",
-        "fi": "Piikkisikamuunnelma"
+        "fi": "Piikkisikamuunnelma",
+        "ru": "Вариант «Дикобраз»",
+        "uk": "Варіант «Дикобраз»"
       },
       "eco": "A10",
       "opening": "English Opening: Porcupine Variation",
@@ -4898,7 +5262,9 @@
         "sv": "Romanishingambit",
         "da": "Romanishingambit",
         "nb": "Romanishingambit",
-        "fi": "Romanishin-gambiitti"
+        "fi": "Romanishin-gambiitti",
+        "ru": "Гамбит Романишина",
+        "uk": "Гамбіт Романишина"
       },
       "eco": "A13",
       "opening": "English Opening: Romanishin Gambit",
@@ -4925,7 +5291,9 @@
         "sv": "Symmetriskt, Igelkott, Flexibla uppställningen",
         "da": "Symmetrisk, Pindsvin, Fleksibel opstilling",
         "nb": "Symmetrisk, Pinnsvin, Fleksibel oppstilling",
-        "fi": "Symmetrinen, Siili, Joustava asetelma"
+        "fi": "Symmetrinen, Siili, Joustava asetelma",
+        "ru": "Симметричный, Ёж, Гибкое построение",
+        "uk": "Симетричний, Їжак, Гнучка побудова"
       },
       "eco": "A30",
       "opening": "English Opening: Symmetrical, Hedgehog, Flexible Formation",
@@ -4952,7 +5320,9 @@
         "sv": "Valen",
         "da": "Hvalen",
         "nb": "Hvalen",
-        "fi": "Valas"
+        "fi": "Valas",
+        "ru": "Кит",
+        "uk": "Кит"
       },
       "eco": "C20",
       "opening": "English Opening: The Whale",
@@ -4979,7 +5349,9 @@
         "sv": "Wadegambit",
         "da": "Wadegambit",
         "nb": "Wadegambit",
-        "fi": "Wade-gambiitti"
+        "fi": "Wade-gambiitti",
+        "ru": "Гамбит Уэйда",
+        "uk": "Гамбіт Вейда"
       },
       "eco": "A10",
       "opening": "English Opening: Wade Gambit",
@@ -5006,7 +5378,9 @@
         "sv": "Flygelgambit",
         "da": "Fløjgambit",
         "nb": "Fløygambit",
-        "fi": "Sivustagambiitti"
+        "fi": "Sivustagambiitti",
+        "ru": "Фланговый гамбит",
+        "uk": "Фланговий гамбіт"
       },
       "eco": "A30",
       "opening": "English Opening: Wing Gambit",
@@ -5033,7 +5407,9 @@
         "sv": "Zilbermintsgambit",
         "da": "Zilbermintsgambit",
         "nb": "Zilbermintsgambit",
-        "fi": "Zilbermints-gambiitti"
+        "fi": "Zilbermints-gambiitti",
+        "ru": "Гамбит Зильберминца",
+        "uk": "Гамбіт Зільбермінца"
       },
       "eco": "A10",
       "opening": "English Opening: Zilbermints Gambit",
