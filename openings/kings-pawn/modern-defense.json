@@ -18,7 +18,9 @@
     "sv": "Moderna försvaret",
     "nb": "Moderne forsvar",
     "fi": "Moderni puolustus",
-    "da": "Moderne forsvar"
+    "da": "Moderne forsvar",
+    "ru": "Защита Робача",
+    "uk": "Сучасний захист"
   },
   "order": 8,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Semi-Averbakhvarianten",
         "da": "Semi-Averbakhvarianten",
         "nb": "Semi-Averbakhvarianten",
-        "fi": "Semi-Averbakh-muunnelma"
+        "fi": "Semi-Averbakh-muunnelma",
+        "ru": "Вариант «Полу-Авербах»",
+        "uk": "Варіант «Напів-Авербах»"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Semi-Averbakhvarianten, Pterodaktylvarianten",
             "da": "Semi-Averbakhvarianten, Pterodaktylvarianten",
             "nb": "Semi-Averbakhvarianten, Pterodaktylvarianten",
-            "fi": "Semi-Averbakh-muunnelma, Pterodaktyylimuunnelma"
+            "fi": "Semi-Averbakh-muunnelma, Pterodaktyylimuunnelma",
+            "ru": "Вариант «Полу-Авербах», Вариант «Птеродактиль»",
+            "uk": "Варіант «Напів-Авербах», Варіант «Птеродактиль»"
           },
           "eco": "A04",
           "opening": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation",
@@ -91,7 +97,9 @@
             "sv": "Semi-Averbakhvarianten, Polska varianten",
             "da": "Semi-Averbakhvarianten, Polsk variant",
             "nb": "Semi-Averbakhvarianten, Polsk variant",
-            "fi": "Semi-Averbakh-muunnelma, Puolalainen muunnelma"
+            "fi": "Semi-Averbakh-muunnelma, Puolalainen muunnelma",
+            "ru": "Вариант «Полу-Авербах», Польский вариант",
+            "uk": "Варіант «Напів-Авербах», Польський варіант"
           },
           "eco": "A04",
           "opening": "Modern Defense: Semi-Averbakh Variation, Polish Variation",
@@ -118,7 +126,9 @@
             "sv": "Semi-Averbakhvarianten, Pterodaktylvarianten antagen",
             "da": "Semi-Averbakhvarianten, Pterodaktylvarianten modtaget",
             "nb": "Semi-Averbakhvarianten, Pterodaktylvarianten mottatt",
-            "fi": "Semi-Averbakh-muunnelma, Pterodaktyylimuunnelma hyväksytty"
+            "fi": "Semi-Averbakh-muunnelma, Pterodaktyylimuunnelma hyväksytty",
+            "ru": "Вариант «Полу-Авербах», Принятый вариант «Птеродактиль»",
+            "uk": "Варіант «Напів-Авербах», Прийнятий варіант «Птеродактиль»"
           },
           "eco": "A04",
           "opening": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation Accepted",
@@ -145,7 +155,9 @@
             "sv": "Semi-Averbakhvarianten, Pterodaktylvarianten avböjd",
             "da": "Semi-Averbakhvarianten, Pterodaktylvarianten afslået",
             "nb": "Semi-Averbakhvarianten, Pterodaktylvarianten avslått",
-            "fi": "Semi-Averbakh-muunnelma, Pterodaktyylimuunnelma hylätty"
+            "fi": "Semi-Averbakh-muunnelma, Pterodaktyylimuunnelma hylätty",
+            "ru": "Вариант «Полу-Авербах», Отказанный вариант «Птеродактиль»",
+            "uk": "Варіант «Напів-Авербах», Відхилений варіант «Птеродактиль»"
           },
           "eco": "B06",
           "opening": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation Declined",
@@ -173,7 +185,9 @@
         "sv": "Löparattacken",
         "da": "Løberangrebet",
         "nb": "Løperangrepet",
-        "fi": "Lähettihyökkäys"
+        "fi": "Lähettihyökkäys",
+        "ru": "Атака слона",
+        "uk": "Атака слона"
       },
       "lines": [
         {
@@ -196,7 +210,9 @@
             "sv": "Löparattacken, Apstjärten",
             "da": "Løberangrebet, Abebagen",
             "nb": "Løperangrepet, Apestumpen",
-            "fi": "Lähettihyökkäys, Apinan takapuoli"
+            "fi": "Lähettihyökkäys, Apinan takapuoli",
+            "ru": "Атака слона, Обезьяний зад",
+            "uk": "Атака слона, Мавпячий зад"
           },
           "eco": "B06",
           "opening": "Modern Defense: Bishop Attack, Monkey's Bum",
@@ -223,7 +239,9 @@
             "sv": "Löparattacken",
             "da": "Løberangrebet",
             "nb": "Løperangrepet",
-            "fi": "Lähettihyökkäys"
+            "fi": "Lähettihyökkäys",
+            "ru": "Атака слона",
+            "uk": "Атака слона"
           },
           "eco": "B06",
           "opening": "Modern Defense: Bishop Attack",
@@ -250,7 +268,9 @@
             "sv": "Löparattacken, Bückergambit",
             "da": "Løberangrebet, Bückergambit",
             "nb": "Løperangrepet, Bückergambit",
-            "fi": "Lähettihyökkäys, Bücker-gambiitti"
+            "fi": "Lähettihyökkäys, Bücker-gambiitti",
+            "ru": "Атака слона, Гамбит Бюккера",
+            "uk": "Атака слона, Гамбіт Бюккера"
           },
           "eco": "B06",
           "opening": "Modern Defense: Bishop Attack, Bücker Gambit",
@@ -278,7 +298,9 @@
         "sv": "Huvud",
         "da": "Hoved",
         "nb": "Hoved",
-        "fi": "Pää"
+        "fi": "Pää",
+        "ru": "Основной",
+        "uk": "Основний"
       },
       "lines": [
         {
@@ -301,7 +323,9 @@
             "sv": "Moderna försvaret",
             "da": "Moderne forsvar",
             "nb": "Moderne forsvar",
-            "fi": "Moderni puolustus"
+            "fi": "Moderni puolustus",
+            "ru": "Современная защита",
+            "uk": "Сучасний захист"
           },
           "eco": "A41",
           "opening": "Modern Defense",
@@ -328,7 +352,9 @@
             "sv": "Moderna försvaret",
             "da": "Moderne forsvar",
             "nb": "Moderne forsvar",
-            "fi": "Moderni puolustus"
+            "fi": "Moderni puolustus",
+            "ru": "Современная защита",
+            "uk": "Сучасний захист"
           },
           "eco": "B06",
           "opening": "Modern Defense",
@@ -355,7 +381,9 @@
             "sv": "Moderna försvaret",
             "da": "Moderne forsvar",
             "nb": "Moderne forsvar",
-            "fi": "Moderni puolustus"
+            "fi": "Moderni puolustus",
+            "ru": "Современная защита",
+            "uk": "Сучасний захист"
           },
           "eco": "B06",
           "opening": "Modern Defense",
@@ -383,7 +411,9 @@
         "sv": "Tvåspringarvarianten",
         "da": "Tospringervarianten",
         "nb": "Tospringervarianten",
-        "fi": "Kaksiratsumuunnelma"
+        "fi": "Kaksiratsumuunnelma",
+        "ru": "Вариант двух коней",
+        "uk": "Варіант двох коней"
       },
       "lines": [
         {
@@ -406,7 +436,9 @@
             "sv": "Tvåspringarvarianten, Suttlesvarianten",
             "da": "Tospringervarianten, Suttlesvarianten",
             "nb": "Tospringervarianten, Suttlesvarianten",
-            "fi": "Kaksiratsumuunnelma, Suttles-muunnelma"
+            "fi": "Kaksiratsumuunnelma, Suttles-muunnelma",
+            "ru": "Вариант двух коней, Вариант Саттлса",
+            "uk": "Варіант двох коней, Варіант Саттлса"
           },
           "eco": "B06",
           "opening": "Modern Defense: Two Knights Variation, Suttles Variation",
@@ -433,7 +465,9 @@
             "sv": "Tvåspringarvarianten",
             "da": "Tospringervarianten",
             "nb": "Tospringervarianten",
-            "fi": "Kaksiratsumuunnelma"
+            "fi": "Kaksiratsumuunnelma",
+            "ru": "Вариант двух коней",
+            "uk": "Варіант двох коней"
           },
           "eco": "B06",
           "opening": "Modern Defense: Two Knights Variation",
@@ -460,7 +494,9 @@
             "sv": "Tvåspringarvarianten, Suttlesvarianten, Talgambit",
             "da": "Tospringervarianten, Suttlesvarianten, Talgambit",
             "nb": "Tospringervarianten, Suttlesvarianten, Talgambit",
-            "fi": "Kaksiratsumuunnelma, Suttles-muunnelma, Tal-gambiitti"
+            "fi": "Kaksiratsumuunnelma, Suttles-muunnelma, Tal-gambiitti",
+            "ru": "Вариант двух коней, Вариант Саттлса, Гамбит Таля",
+            "uk": "Варіант двох коней, Варіант Саттлса, Гамбіт Таля"
           },
           "eco": "B06",
           "opening": "Modern Defense: Two Knights Variation, Suttles Variation, Tal Gambit",
@@ -488,7 +524,9 @@
         "sv": "Ödleförsvaret",
         "da": "Firbenforsvaret",
         "nb": "Øgleforsvaret",
-        "fi": "Liskopuolustus"
+        "fi": "Liskopuolustus",
+        "ru": "Защита «Ящерица»",
+        "uk": "Захист «Ящірка»"
       },
       "lines": [
         {
@@ -511,7 +549,9 @@
             "sv": "Ödleförsvaret, Pirc-Diemergambit",
             "da": "Firbenforsvaret, Pirc-Diemergambit",
             "nb": "Øgleforsvaret, Pirc-Diemergambit",
-            "fi": "Liskopuolustus, Pirc-Diemer-gambiitti"
+            "fi": "Liskopuolustus, Pirc-Diemer-gambiitti",
+            "ru": "Защита «Ящерица», Гамбит Пирца-Димера",
+            "uk": "Захист «Ящірка», Гамбіт Пірца-Дімера"
           },
           "eco": "A40",
           "opening": "Modern Defense: Lizard Defense, Pirc-Diemer Gambit",
@@ -538,7 +578,9 @@
             "sv": "Ödleförsvaret, Mittenbergergambit",
             "da": "Firbenforsvaret, Mittenbergergambit",
             "nb": "Øgleforsvaret, Mittenbergergambit",
-            "fi": "Liskopuolustus, Mittenberger-gambiitti"
+            "fi": "Liskopuolustus, Mittenberger-gambiitti",
+            "ru": "Защита «Ящерица», Гамбит Миттенбергера",
+            "uk": "Захист «Ящірка», Гамбіт Міттенбергера"
           },
           "eco": "B06",
           "opening": "Modern Defense: Lizard Defense, Mittenberger Gambit",
@@ -566,7 +608,9 @@
         "sv": "Mongredienförsvaret",
         "da": "Mongredienforsvaret",
         "nb": "Mongredienforsvaret",
-        "fi": "Mongredien-puolustus"
+        "fi": "Mongredien-puolustus",
+        "ru": "Защита Монгредьена",
+        "uk": "Захист Монгредьєна"
       },
       "lines": [
         {
@@ -589,7 +633,9 @@
             "sv": "Mongredienförsvaret, med Nc3",
             "da": "Mongredienforsvaret, med Nc3",
             "nb": "Mongredienforsvaret, med Nc3",
-            "fi": "Mongredien-puolustus, jossa Nc3"
+            "fi": "Mongredien-puolustus, jossa Nc3",
+            "ru": "Защита Монгредьена, с Nc3",
+            "uk": "Захист Монгредьєна, з Nc3"
           },
           "eco": "B06",
           "opening": "Modern Defense: Mongredien Defense, with Nc3",
@@ -616,7 +662,9 @@
             "sv": "Mongredienförsvaret, med Nf3",
             "da": "Mongredienforsvaret, med Nf3",
             "nb": "Mongredienforsvaret, med Nf3",
-            "fi": "Mongredien-puolustus, jossa Nf3"
+            "fi": "Mongredien-puolustus, jossa Nf3",
+            "ru": "Защита Монгредьена, с Nf3",
+            "uk": "Захист Монгредьєна, з Nf3"
           },
           "eco": "B06",
           "opening": "Modern Defense: Mongredien Defense, with Nf3",
@@ -644,7 +692,9 @@
         "sv": "Norska försvaret",
         "da": "Norsk forsvar",
         "nb": "Norsk forsvar",
-        "fi": "Norjalainen puolustus"
+        "fi": "Norjalainen puolustus",
+        "ru": "Норвежская защита",
+        "uk": "Норвезький захист"
       },
       "lines": [
         {
@@ -667,7 +717,9 @@
             "sv": "Norska försvaret",
             "da": "Norsk forsvar",
             "nb": "Norsk forsvar",
-            "fi": "Norjalainen puolustus"
+            "fi": "Norjalainen puolustus",
+            "ru": "Норвежская защита",
+            "uk": "Норвезький захист"
           },
           "eco": "B06",
           "opening": "Modern Defense: Norwegian Defense",
@@ -694,7 +746,9 @@
             "sv": "Norska försvaret, Norska gambiten",
             "da": "Norsk forsvar, Norsk gambit",
             "nb": "Norsk forsvar, Norsk gambit",
-            "fi": "Norjalainen puolustus, Norjalainen gambiitti"
+            "fi": "Norjalainen puolustus, Norjalainen gambiitti",
+            "ru": "Норвежская защита, Норвежский гамбит",
+            "uk": "Норвезький захист, Норвезький гамбіт"
           },
           "eco": "B06",
           "opening": "Modern Defense: Norwegian Defense, Norwegian Gambit",
@@ -725,7 +779,9 @@
         "sv": "Anti-modern",
         "da": "Anti-moderne",
         "nb": "Anti-moderne",
-        "fi": "Anti-moderni"
+        "fi": "Anti-moderni",
+        "ru": "Анти-современный",
+        "uk": "Анти-сучасний"
       },
       "eco": "B06",
       "opening": "Modern Defense: Anti-Modern",
@@ -752,7 +808,9 @@
         "sv": "Averbakhsystemet",
         "da": "Averbakhsystemet",
         "nb": "Averbakhsystemet",
-        "fi": "Averbakh-systeemi"
+        "fi": "Averbakh-systeemi",
+        "ru": "Система Авербаха",
+        "uk": "Система Авербаха"
       },
       "eco": "A42",
       "opening": "Modern Defense: Averbakh System",
@@ -779,7 +837,9 @@
         "sv": "Averbakhvarianten, Pseudo-Sämisch",
         "da": "Averbakhvarianten, Pseudo-Sämisch",
         "nb": "Averbakhvarianten, Pseudo-Sämisch",
-        "fi": "Averbakh-muunnelma, Pseudo-Sämisch"
+        "fi": "Averbakh-muunnelma, Pseudo-Sämisch",
+        "ru": "Вариант Авербаха, Псевдо-Земиш",
+        "uk": "Варіант Авербаха, Псевдо-Земіш"
       },
       "eco": "A42",
       "opening": "Modern Defense: Averbakh Variation, Pseudo-Sämisch",
@@ -806,7 +866,9 @@
         "sv": "Beefeatervarianten",
         "da": "Beefeatervarianten",
         "nb": "Beefeatervarianten",
-        "fi": "Beefeater-muunnelma"
+        "fi": "Beefeater-muunnelma",
+        "ru": "Вариант «Бифитер»",
+        "uk": "Варіант «Біфітер»"
       },
       "eco": "A40",
       "opening": "Modern Defense: Beefeater Variation",
@@ -833,7 +895,9 @@
         "sv": "Dunworthyvarianten",
         "da": "Dunworthyvarianten",
         "nb": "Dunworthyvarianten",
-        "fi": "Dunworthy-muunnelma"
+        "fi": "Dunworthy-muunnelma",
+        "ru": "Вариант Данворти",
+        "uk": "Варіант Данворті"
       },
       "eco": "B06",
       "opening": "Modern Defense: Dunworthy Variation",
@@ -860,7 +924,9 @@
         "sv": "Fianchettogambit",
         "da": "Fianchettogambit",
         "nb": "Fianchettogambit",
-        "fi": "Fiankettogambiitti"
+        "fi": "Fiankettogambiitti",
+        "ru": "Гамбит с фианкетто",
+        "uk": "Гамбіт з фіанкето"
       },
       "eco": "B06",
       "opening": "Modern Defense: Fianchetto Gambit",
@@ -887,7 +953,9 @@
         "sv": "Gellersystemet",
         "da": "Gellersystemet",
         "nb": "Gellersystemet",
-        "fi": "Geller-systeemi"
+        "fi": "Geller-systeemi",
+        "ru": "Система Геллера",
+        "uk": "Система Геллера"
       },
       "eco": "B07",
       "opening": "Modern Defense: Geller's System",
@@ -914,7 +982,9 @@
         "sv": "Gurgenidzeförsvaret",
         "da": "Gurgenidzeforsvaret",
         "nb": "Gurgenidzeforsvaret",
-        "fi": "Gurgenidze-puolustus"
+        "fi": "Gurgenidze-puolustus",
+        "ru": "Защита Гургенидзе",
+        "uk": "Захист Гургенідзе"
       },
       "eco": "B06",
       "opening": "Modern Defense: Gurgenidze Defense",
@@ -941,7 +1011,9 @@
         "sv": "Kotovvarianten",
         "da": "Kotovvarianten",
         "nb": "Kotovvarianten",
-        "fi": "Kotov-muunnelma"
+        "fi": "Kotov-muunnelma",
+        "ru": "Вариант Котова",
+        "uk": "Варіант Котова"
       },
       "eco": "A42",
       "opening": "Modern Defense: Kotov Variation",
@@ -968,7 +1040,9 @@
         "sv": "Masurgambit",
         "da": "Masurgambit",
         "nb": "Masurgambit",
-        "fi": "Masur-gambiitti"
+        "fi": "Masur-gambiitti",
+        "ru": "Гамбит Мазура",
+        "uk": "Гамбіт Мазура"
       },
       "eco": "B06",
       "opening": "Modern Defense: Masur Gambit",
@@ -995,7 +1069,9 @@
         "sv": "Modern pterodaktyl",
         "da": "Moderne pterodaktyl",
         "nb": "Moderne pterodaktyl",
-        "fi": "Moderni pterodaktyyli"
+        "fi": "Moderni pterodaktyyli",
+        "ru": "Современный птеродактиль",
+        "uk": "Сучасний птеродактиль"
       },
       "eco": "B06",
       "opening": "Modern Defense: Modern Pterodactyl",
@@ -1022,7 +1098,9 @@
         "sv": "Neomoderna försvaret",
         "da": "Neomoderne forsvar",
         "nb": "Neomoderne forsvar",
-        "fi": "Uusmoderni puolustus"
+        "fi": "Uusmoderni puolustus",
+        "ru": "Неосовременная защита",
+        "uk": "Неосучасний захист"
       },
       "eco": "A41",
       "opening": "Modern Defense: Neo-Modern Defense",
@@ -1049,7 +1127,9 @@
         "sv": "Pseudo-österrikiska attacken",
         "da": "Pseudo-østrigsk angreb",
         "nb": "Pseudo-østerriksk angrep",
-        "fi": "Pseudoitävaltalainen hyökkäys"
+        "fi": "Pseudoitävaltalainen hyökkäys",
+        "ru": "Псевдо-австрийская атака",
+        "uk": "Псевдо-австрійська атака"
       },
       "eco": "B06",
       "opening": "Modern Defense: Pseudo-Austrian Attack",
@@ -1076,7 +1156,9 @@
         "sv": "Pterodaktylvarianten",
         "da": "Pterodaktylvarianten",
         "nb": "Pterodaktylvarianten",
-        "fi": "Pterodaktyylimuunnelma"
+        "fi": "Pterodaktyylimuunnelma",
+        "ru": "Вариант «Птеродактиль»",
+        "uk": "Варіант «Птеродактиль»"
       },
       "eco": "B27",
       "opening": "Modern Defense: Pterodactyl Variation",
@@ -1103,7 +1185,9 @@
         "sv": "Randspringervarianten",
         "da": "Randspringervarianten",
         "nb": "Randspringervarianten",
-        "fi": "Randspringer-muunnelma"
+        "fi": "Randspringer-muunnelma",
+        "ru": "Вариант «Рандшпрингер»",
+        "uk": "Варіант «Рандшпрінгер»"
       },
       "eco": "A42",
       "opening": "Modern Defense: Randspringer Variation",
@@ -1130,7 +1214,9 @@
         "sv": "Standardförsvaret",
         "da": "Standardforsvaret",
         "nb": "Standardforsvaret",
-        "fi": "Vakiopuolustus"
+        "fi": "Vakiopuolustus",
+        "ru": "Стандартная защита",
+        "uk": "Стандартний захист"
       },
       "eco": "B06",
       "opening": "Modern Defense: Standard Defense",
@@ -1157,7 +1243,9 @@
         "sv": "Standardvarianten",
         "da": "Standardvarianten",
         "nb": "Standardvarianten",
-        "fi": "Vakiolinja"
+        "fi": "Vakiolinja",
+        "ru": "Стандартная линия",
+        "uk": "Стандартна лінія"
       },
       "eco": "B06",
       "opening": "Modern Defense: Standard Line",
@@ -1184,7 +1272,9 @@
         "sv": "Trebondeattacken",
         "da": "Trebondeangrebet",
         "nb": "Trebondeangrepet",
-        "fi": "Kolmen sotilaan hyökkäys"
+        "fi": "Kolmen sotilaan hyökkäys",
+        "ru": "Атака трёх пешек",
+        "uk": "Атака трьох пішаків"
       },
       "eco": "B06",
       "opening": "Modern Defense: Three Pawns Attack",
@@ -1211,7 +1301,9 @@
         "sv": "Westermanngambit",
         "da": "Westermanngambit",
         "nb": "Westermanngambit",
-        "fi": "Westermann-gambiitti"
+        "fi": "Westermann-gambiitti",
+        "ru": "Гамбит Вестерманна",
+        "uk": "Гамбіт Вестерманна"
       },
       "eco": "B06",
       "opening": "Modern Defense: Westermann Gambit",
@@ -1238,7 +1330,9 @@
         "sv": "Vindgambit",
         "da": "Vindgambit",
         "nb": "Vindgambit",
-        "fi": "Tuuligambiitti"
+        "fi": "Tuuligambiitti",
+        "ru": "Гамбит «Ветер»",
+        "uk": "Гамбіт «Вітер»"
       },
       "eco": "B06",
       "opening": "Modern Defense: Wind Gambit",

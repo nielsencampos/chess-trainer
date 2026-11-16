@@ -1,5 +1,6 @@
 """Language picker (brief §8): switching redraws the page in place and is kept after a reload."""
 
+import pytest
 from playwright.sync_api import Page, expect
 
 from tests.e2e.conftest import click_move, play, wait_for_ply, wait_for_your_move
@@ -32,8 +33,10 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
             "Polski",
             "Português (Brasil)",
             "Português (Portugal)",
+            "Русский",
             "Svenska",
             "Türkçe",
+            "Українська",
             "Tiếng Việt",
         ]
     )
@@ -61,6 +64,32 @@ def test_a_latin_extended_language_loads_its_font_subset(page: Page):
         }"""
     )
     assert "Familjen Grotesk" in loaded
+
+
+@pytest.mark.parametrize("locale, scoresheet", [("ru", "Бланк"), ("uk", "Бланк")])
+def test_a_cyrillic_language_loads_its_font_subsets(page: Page, locale: str, scoresheet: str):
+    """Russian and Ukrainian text uses Commissioner and JetBrains Mono's Cyrillic faces.
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        locale (str): A Cyrillic locale.
+        scoresheet (str): Its name of the Scoresheet menu item.
+    """
+    page.goto("/")
+    page.locator("#locale-picker").select_option(locale)
+    expect(page.locator("html")).to_have_attribute("lang", locale)
+    expect(page.locator("#tab-scoresheet")).to_have_text(scoresheet)
+    loaded = page.evaluate(
+        """async () => {
+          await document.fonts.load('16px "JetBrains Mono"', "\\u0416");
+          await document.fonts.ready;
+          return [...document.fonts]
+            .filter((face) => face.status === "loaded" && face.unicodeRange.startsWith("U+301,"))
+            .map((face) => face.family);
+        }"""
+    )
+    assert "Commissioner" in loaded
+    assert "JetBrains Mono" in loaded
 
 
 def test_switching_language_is_kept_after_a_reload(page: Page):

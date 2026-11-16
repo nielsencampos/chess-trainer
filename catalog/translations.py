@@ -4,7 +4,9 @@
 Wikipedia or Wikidata page each came from, or `machine = true` when none was found, and the words
 the UI must not use for that term (`avoid`), plus an optional top-level `translate` list: words
 of the English opening names that the language translates, so a glossary rule never keeps them as
-proper names, and a `[[pieces]]` table: the letter of each piece in that language, for the
+proper names, an optional top-level `keep_names = false` for a language that writes proper names
+in its own script (Russian "Найдорф"), so a rule never keeps an English one, and a `[[pieces]]`
+table: the letter of each piece in that language, for the
 "local letters" move notation (#53).
 `i18n/names/{locale}.toml` records, for each localized family, subgroup and line name in
 `openings/`, where it came from: a Wikipedia or Wikidata page (`source`), the glossary, segment
@@ -173,7 +175,7 @@ def load_glossary(path: Path) -> dict[str, Term]:
     """
     with path.open("rb") as handle:
         document = tomllib.load(handle)
-    if unknown := set(document) - {"terms", "translate", "pieces"}:
+    if unknown := set(document) - {"terms", "translate", "keep_names", "pieces"}:
         raise TranslationError(f"{path.name}: unknown tables or keys {sorted(unknown)}")
     rows = document.get("terms", [])
     terms: dict[str, Term] = {}
@@ -222,6 +224,28 @@ def load_translate_words(path: Path) -> frozenset[str]:
     if len(set(folded)) != len(folded):
         raise TranslationError(f"{where} repeats a word")
     return frozenset(folded)
+
+
+def load_keep_names(path: Path) -> bool:
+    """Reads a glossary's `keep_names`: whether a rule may keep an English proper name as it is.
+
+    A language that writes proper names in its own script ("Найдорф" for Najdorf) sets it to
+    false, so every name with a proper name goes to machine translation.
+
+    Args:
+        path (Path): An `i18n/glossary/{locale}.toml` file.
+
+    Returns:
+        bool: The value; true when the file does not set it.
+
+    Raises:
+        TranslationError: The value is not a boolean.
+    """
+    with path.open("rb") as handle:
+        keep = tomllib.load(handle).get("keep_names", True)
+    if not isinstance(keep, bool):
+        raise TranslationError(f"{path.name}: keep_names must be true or false")
+    return keep
 
 
 def load_piece_letters(path: Path) -> dict[str, str]:
@@ -277,6 +301,7 @@ def glossary_problems(directory: Path = GLOSSARY_DIR) -> list[str]:
         try:
             glossaries[path.stem] = load_glossary(path)
             load_translate_words(path)
+            load_keep_names(path)
             load_piece_letters(path)
         except TranslationError as error:
             problems.append(str(error))

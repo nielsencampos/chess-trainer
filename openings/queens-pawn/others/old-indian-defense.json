@@ -18,7 +18,9 @@
     "sv": "Gammalindiskt försvar",
     "fi": "Vanhaintialainen puolustus",
     "da": "Gammelindisk forsvar",
-    "nb": "Gammelindisk forsvar"
+    "nb": "Gammelindisk forsvar",
+    "ru": "Индийская защита",
+    "uk": "Індійський захист"
   },
   "order": null,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Janowskivarianten",
         "da": "Janowskivarianten",
         "nb": "Janowskivarianten",
-        "fi": "Janowski-muunnelma"
+        "fi": "Janowski-muunnelma",
+        "ru": "Вариант Яновского",
+        "uk": "Варіант Яновського"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Janowskivarianten",
             "da": "Janowskivarianten",
             "nb": "Janowskivarianten",
-            "fi": "Janowski-muunnelma"
+            "fi": "Janowski-muunnelma",
+            "ru": "Вариант Яновского",
+            "uk": "Варіант Яновського"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Janowski Variation",
@@ -91,7 +97,9 @@
             "sv": "Janowskivarianten, Grinberggambit",
             "da": "Janowskivarianten, Grinberggambit",
             "nb": "Janowskivarianten, Grinberggambit",
-            "fi": "Janowski-muunnelma, Grinberg-gambiitti"
+            "fi": "Janowski-muunnelma, Grinberg-gambiitti",
+            "ru": "Вариант Яновского, Гамбит Гринберга",
+            "uk": "Варіант Яновського, Гамбіт Грінберга"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Janowski Variation, Grinberg Gambit",
@@ -118,7 +126,9 @@
             "sv": "Janowskivarianten, Huvudvariant",
             "da": "Janowskivarianten, Hovedvariant",
             "nb": "Janowskivarianten, Hovedvariant",
-            "fi": "Janowski-muunnelma, Päämuunnelma"
+            "fi": "Janowski-muunnelma, Päämuunnelma",
+            "ru": "Вариант Яновского, Основной вариант",
+            "uk": "Варіант Яновського, Основний варіант"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Janowski Variation, Main Line",
@@ -145,7 +155,9 @@
             "sv": "Janowskivarianten, Fianchettovarianten",
             "da": "Janowskivarianten, Fianchettovarianten",
             "nb": "Janowskivarianten, Fianchettovarianten",
-            "fi": "Janowski-muunnelma, Fiankettomuunnelma"
+            "fi": "Janowski-muunnelma, Fiankettomuunnelma",
+            "ru": "Вариант Яновского, Вариант с фианкетто",
+            "uk": "Варіант Яновського, Варіант з фіанкето"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Janowski Variation, Fianchetto Variation",
@@ -173,7 +185,9 @@
         "sv": "Tjeckiska varianten",
         "da": "Tjekkisk variant",
         "nb": "Tsjekkisk variant",
-        "fi": "Tšekkiläinen muunnelma"
+        "fi": "Tšekkiläinen muunnelma",
+        "ru": "Чешский вариант",
+        "uk": "Чеський варіант"
       },
       "lines": [
         {
@@ -196,7 +210,9 @@
             "sv": "Tjeckiska varianten, med Nc3",
             "da": "Tjekkisk variant, med Nc3",
             "nb": "Tsjekkisk variant, med Nc3",
-            "fi": "Tšekkiläinen muunnelma, jossa Nc3"
+            "fi": "Tšekkiläinen muunnelma, jossa Nc3",
+            "ru": "Чешский вариант, с Nc3",
+            "uk": "Чеський варіант, з Nc3"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Czech Variation, with Nc3",
@@ -223,7 +239,9 @@
             "sv": "Tjeckiska varianten, med Nf3",
             "da": "Tjekkisk variant, med Nf3",
             "nb": "Tsjekkisk variant, med Nf3",
-            "fi": "Tšekkiläinen muunnelma, jossa Nf3"
+            "fi": "Tšekkiläinen muunnelma, jossa Nf3",
+            "ru": "Чешский вариант, с Nf3",
+            "uk": "Чеський варіант, з Nf3"
           },
           "eco": "A53",
           "opening": "Old Indian Defense: Czech Variation, with Nf3",
@@ -251,7 +269,9 @@
         "sv": "Huvud",
         "da": "Hoved",
         "nb": "Hoved",
-        "fi": "Pää"
+        "fi": "Pää",
+        "ru": "Основной",
+        "uk": "Основний"
       },
       "lines": [
         {
@@ -274,7 +294,9 @@
             "sv": "Gammalindiska försvaret",
             "da": "Gammelindisk forsvar",
             "nb": "Gammelindisk forsvar",
-            "fi": "Vanhaintialainen puolustus"
+            "fi": "Vanhaintialainen puolustus",
+            "ru": "Староиндийская защита",
+            "uk": "Староіндійський захист"
           },
           "eco": "A53",
           "opening": "Old Indian Defense",
@@ -301,7 +323,9 @@
             "sv": "Gammalindiska försvaret",
             "da": "Gammelindisk forsvar",
             "nb": "Gammelindisk forsvar",
-            "fi": "Vanhaintialainen puolustus"
+            "fi": "Vanhaintialainen puolustus",
+            "ru": "Староиндийская защита",
+            "uk": "Староіндійський захист"
           },
           "eco": "A41",
           "opening": "Old Indian Defense",
@@ -332,7 +356,9 @@
         "sv": "Gammelgibbongambit",
         "da": "Gammelgibbongambit",
         "nb": "Gammelgibbongambit",
-        "fi": "Vanhagibbonigambiitti"
+        "fi": "Vanhagibbonigambiitti",
+        "ru": "Гамбит «Старый гиббон»",
+        "uk": "Гамбіт «Старий гібон»"
       },
       "eco": "A53",
       "opening": "Old Indian Defense: Aged Gibbon Gambit",
@@ -359,7 +385,9 @@
         "sv": "Duz-Khotimirskyvarianten",
         "da": "Duz-Khotimirskyvarianten",
         "nb": "Duz-Khotimirskyvarianten",
-        "fi": "Duz-Khotimirsky-muunnelma"
+        "fi": "Duz-Khotimirsky-muunnelma",
+        "ru": "Вариант Дуз-Хотимирского",
+        "uk": "Варіант Дуз-Хотимирського"
       },
       "eco": "A54",
       "opening": "Old Indian Defense: Duz-Khotimirsky Variation",
@@ -386,7 +414,9 @@
         "sv": "Normala varianten",
         "da": "Normal variant",
         "nb": "Normal variant",
-        "fi": "Normaali muunnelma"
+        "fi": "Normaali muunnelma",
+        "ru": "Обычный вариант",
+        "uk": "Звичайний варіант"
       },
       "eco": "A55",
       "opening": "Old Indian Defense: Normal Variation",
@@ -413,7 +443,9 @@
         "sv": "Tartakower-indiskt",
         "da": "Tartakower-indisk",
         "nb": "Tartakower-indisk",
-        "fi": "Tartakower-intialainen"
+        "fi": "Tartakower-intialainen",
+        "ru": "Индийская Тартаковера",
+        "uk": "Індійський Тартаковера"
       },
       "eco": "A54",
       "opening": "Old Indian Defense: Tartakower-Indian",
@@ -440,7 +472,9 @@
         "sv": "Tvåspringarvarianten",
         "da": "Tospringervarianten",
         "nb": "Tospringervarianten",
-        "fi": "Kaksiratsumuunnelma"
+        "fi": "Kaksiratsumuunnelma",
+        "ru": "Вариант двух коней",
+        "uk": "Варіант двох коней"
       },
       "eco": "A54",
       "opening": "Old Indian Defense: Two Knights Variation",
@@ -467,7 +501,9 @@
         "sv": "Ukrainska varianten",
         "da": "Ukrainsk variant",
         "nb": "Ukrainsk variant",
-        "fi": "Ukrainalainen muunnelma"
+        "fi": "Ukrainalainen muunnelma",
+        "ru": "Украинский вариант",
+        "uk": "Український варіант"
       },
       "eco": "A54",
       "opening": "Old Indian Defense: Ukrainian Variation",

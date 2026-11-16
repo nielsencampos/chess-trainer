@@ -18,7 +18,9 @@
     "sv": "Katalanskt parti",
     "fi": "Katalonialainen avaus",
     "da": "Katalansk åbning",
-    "nb": "Katalansk åpning"
+    "nb": "Katalansk åpning",
+    "ru": "Каталонское начало",
+    "uk": "Каталонський початок"
   },
   "order": 8,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Stängd",
         "da": "Lukket",
         "nb": "Lukket",
-        "fi": "Suljettu"
+        "fi": "Suljettu",
+        "ru": "Закрытый",
+        "uk": "Закритий"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "E06",
           "opening": "Catalan Opening: Closed",
@@ -91,7 +97,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "E06",
           "opening": "Catalan Opening: Closed",
@@ -118,7 +126,9 @@
             "sv": "Stängd, Huvudvariant",
             "da": "Lukket, Hovedvariant",
             "nb": "Lukket, Hovedvariant",
-            "fi": "Suljettu, Päämuunnelma"
+            "fi": "Suljettu, Päämuunnelma",
+            "ru": "Закрытый, Основной вариант",
+            "uk": "Закритий, Основний варіант"
           },
           "eco": "E09",
           "opening": "Catalan Opening: Closed, Main Line",
@@ -145,7 +155,9 @@
             "sv": "Stängd, Huvudvariant",
             "da": "Lukket, Hovedvariant",
             "nb": "Lukket, Hovedvariant",
-            "fi": "Suljettu, Päämuunnelma"
+            "fi": "Suljettu, Päämuunnelma",
+            "ru": "Закрытый, Основной вариант",
+            "uk": "Закритий, Основний варіант"
           },
           "eco": "E09",
           "opening": "Catalan Opening: Closed, Main Line",
@@ -172,7 +184,9 @@
             "sv": "Stängd, Huvudvariant",
             "da": "Lukket, Hovedvariant",
             "nb": "Lukket, Hovedvariant",
-            "fi": "Suljettu, Päämuunnelma"
+            "fi": "Suljettu, Päämuunnelma",
+            "ru": "Закрытый, Основной вариант",
+            "uk": "Закритий, Основний варіант"
           },
           "eco": "E09",
           "opening": "Catalan Opening: Closed, Main Line",
@@ -199,7 +213,9 @@
             "sv": "Stängd, Spasskygambit",
             "da": "Lukket, Spasskygambit",
             "nb": "Lukket, Spasskygambit",
-            "fi": "Suljettu, Spassky-gambiitti"
+            "fi": "Suljettu, Spassky-gambiitti",
+            "ru": "Закрытый, Гамбит Спасского",
+            "uk": "Закритий, Гамбіт Спаського"
           },
           "eco": "E08",
           "opening": "Catalan Opening: Closed, Spassky Gambit",
@@ -226,7 +242,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "E06",
           "opening": "Catalan Opening: Closed",
@@ -253,7 +271,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "E07",
           "opening": "Catalan Opening: Closed",
@@ -280,7 +300,9 @@
             "sv": "Stängd, Botvinnikvarianten",
             "da": "Lukket, Botvinnikvarianten",
             "nb": "Lukket, Botvinnikvarianten",
-            "fi": "Suljettu, Botvinnik-muunnelma"
+            "fi": "Suljettu, Botvinnik-muunnelma",
+            "ru": "Закрытый, Вариант Ботвинника",
+            "uk": "Закритий, Варіант Ботвинника"
           },
           "eco": "E07",
           "opening": "Catalan Opening: Closed, Botvinnik Variation",
@@ -307,7 +329,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "E08",
           "opening": "Catalan Opening: Closed",
@@ -334,7 +358,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "E08",
           "opening": "Catalan Opening: Closed",
@@ -361,7 +387,9 @@
             "sv": "Stängd, Sokolskyvarianten",
             "da": "Lukket, Sokolskyvarianten",
             "nb": "Lukket, Sokolskyvarianten",
-            "fi": "Suljettu, Sokolsky-muunnelma"
+            "fi": "Suljettu, Sokolsky-muunnelma",
+            "ru": "Закрытый, Вариант Сокольского",
+            "uk": "Закритий, Варіант Сокольського"
           },
           "eco": "E09",
           "opening": "Catalan Opening: Closed, Sokolsky Variation",
@@ -388,7 +416,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "E08",
           "opening": "Catalan Opening: Closed",
@@ -415,7 +445,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "E08",
           "opening": "Catalan Opening: Closed",
@@ -442,7 +474,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "E06",
           "opening": "Catalan Opening: Closed",
@@ -469,7 +503,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "E08",
           "opening": "Catalan Opening: Closed",
@@ -496,7 +532,9 @@
             "sv": "Stängd, Zagoryanskyvarianten",
             "da": "Lukket, Zagoryanskyvarianten",
             "nb": "Lukket, Zagoryanskyvarianten",
-            "fi": "Suljettu, Zagoryansky-muunnelma"
+            "fi": "Suljettu, Zagoryansky-muunnelma",
+            "ru": "Закрытый, Вариант Загорянского",
+            "uk": "Закритий, Варіант Загорянського"
           },
           "eco": "E08",
           "opening": "Catalan Opening: Closed, Zagoryansky Variation",
@@ -524,7 +562,9 @@
         "sv": "Öppna försvaret",
         "da": "Åbent forsvar",
         "nb": "Åpent forsvar",
-        "fi": "Avoin puolustus"
+        "fi": "Avoin puolustus",
+        "ru": "Открытая защита",
+        "uk": "Відкритий захист"
       },
       "lines": [
         {
@@ -547,7 +587,9 @@
             "sv": "Öppna försvaret, Klassiska varianten",
             "da": "Åbent forsvar, Klassisk variant",
             "nb": "Åpent forsvar, Klassisk variant",
-            "fi": "Avoin puolustus, Klassinen linja"
+            "fi": "Avoin puolustus, Klassinen linja",
+            "ru": "Открытая защита, Классическая линия",
+            "uk": "Відкритий захист, Класична лінія"
           },
           "eco": "E05",
           "opening": "Catalan Opening: Open Defense, Classical Line",
@@ -574,7 +616,9 @@
             "sv": "Öppna försvaret",
             "da": "Åbent forsvar",
             "nb": "Åpent forsvar",
-            "fi": "Avoin puolustus"
+            "fi": "Avoin puolustus",
+            "ru": "Открытая защита",
+            "uk": "Відкритий захист"
           },
           "eco": "E04",
           "opening": "Catalan Opening: Open Defense",
@@ -601,7 +645,9 @@
             "sv": "Öppna försvaret",
             "da": "Åbent forsvar",
             "nb": "Åpent forsvar",
-            "fi": "Avoin puolustus"
+            "fi": "Avoin puolustus",
+            "ru": "Открытая защита",
+            "uk": "Відкритий захист"
           },
           "eco": "E01",
           "opening": "Catalan Opening: Open Defense",
@@ -628,7 +674,9 @@
             "sv": "Öppna försvaret",
             "da": "Åbent forsvar",
             "nb": "Åpent forsvar",
-            "fi": "Avoin puolustus"
+            "fi": "Avoin puolustus",
+            "ru": "Открытая защита",
+            "uk": "Відкритий захист"
           },
           "eco": "E02",
           "opening": "Catalan Opening: Open Defense",
@@ -655,7 +703,9 @@
             "sv": "Öppna försvaret",
             "da": "Åbent forsvar",
             "nb": "Åpent forsvar",
-            "fi": "Avoin puolustus"
+            "fi": "Avoin puolustus",
+            "ru": "Открытая защита",
+            "uk": "Відкритий захист"
           },
           "eco": "E04",
           "opening": "Catalan Opening: Open Defense",
@@ -682,7 +732,9 @@
             "sv": "Öppna försvaret, Klassiska varianten",
             "da": "Åbent forsvar, Klassisk variant",
             "nb": "Åpent forsvar, Klassisk variant",
-            "fi": "Avoin puolustus, Klassinen linja"
+            "fi": "Avoin puolustus, Klassinen linja",
+            "ru": "Открытая защита, Классическая линия",
+            "uk": "Відкритий захист, Класична лінія"
           },
           "eco": "E05",
           "opening": "Catalan Opening: Open Defense, Classical Line",
@@ -709,7 +761,9 @@
             "sv": "Öppna försvaret, Moderna skarpa varianten",
             "da": "Åbent forsvar, Moderne skarp variant",
             "nb": "Åpent forsvar, Moderne skarp variant",
-            "fi": "Avoin puolustus, Moderni terävä muunnelma"
+            "fi": "Avoin puolustus, Moderni terävä muunnelma",
+            "ru": "Открытая защита, Современный острый вариант",
+            "uk": "Відкритий захист, Сучасний гострий варіант"
           },
           "eco": "E04",
           "opening": "Catalan Opening: Open Defense, Modern Sharp Variation",
@@ -736,7 +790,9 @@
             "sv": "Öppna försvaret",
             "da": "Åbent forsvar",
             "nb": "Åpent forsvar",
-            "fi": "Avoin puolustus"
+            "fi": "Avoin puolustus",
+            "ru": "Открытая защита",
+            "uk": "Відкритий захист"
           },
           "eco": "E03",
           "opening": "Catalan Opening: Open Defense",
@@ -763,7 +819,9 @@
             "sv": "Öppna försvaret, Alekhinevarianten",
             "da": "Åbent forsvar, Alekhinevarianten",
             "nb": "Åpent forsvar, Alekhinevarianten",
-            "fi": "Avoin puolustus, Alekhine-muunnelma"
+            "fi": "Avoin puolustus, Alekhine-muunnelma",
+            "ru": "Открытая защита, Вариант Алехина",
+            "uk": "Відкритий захист, Варіант Алехіна"
           },
           "eco": "E03",
           "opening": "Catalan Opening: Open Defense, Alekhine Variation",
@@ -791,7 +849,9 @@
         "sv": "Stängda varianten",
         "da": "Lukket variant",
         "nb": "Lukket variant",
-        "fi": "Suljettu muunnelma"
+        "fi": "Suljettu muunnelma",
+        "ru": "Закрытый вариант",
+        "uk": "Закритий варіант"
       },
       "lines": [
         {
@@ -814,7 +874,9 @@
             "sv": "Stängda varianten, Traditionella varianten",
             "da": "Lukket variant, Traditionel variant",
             "nb": "Lukket variant, Tradisjonell variant",
-            "fi": "Suljettu muunnelma, Perinteinen muunnelma"
+            "fi": "Suljettu muunnelma, Perinteinen muunnelma",
+            "ru": "Закрытый вариант, Традиционный вариант",
+            "uk": "Закритий варіант, Традиційний варіант"
           },
           "eco": "E09",
           "opening": "Catalan Opening: Closed Variation, Traditional Variation",
@@ -841,7 +903,9 @@
             "sv": "Stängda varianten, Rabinovichvarianten",
             "da": "Lukket variant, Rabinovichvarianten",
             "nb": "Lukket variant, Rabinovichvarianten",
-            "fi": "Suljettu muunnelma, Rabinovich-muunnelma"
+            "fi": "Suljettu muunnelma, Rabinovich-muunnelma",
+            "ru": "Закрытый вариант, Вариант Рабиновича",
+            "uk": "Закритий варіант, Варіант Рабиновича"
           },
           "eco": "E09",
           "opening": "Catalan Opening: Closed Variation, Rabinovich Variation",
@@ -869,7 +933,9 @@
         "sv": "Huvud",
         "da": "Hoved",
         "nb": "Hoved",
-        "fi": "Pää"
+        "fi": "Pää",
+        "ru": "Основной",
+        "uk": "Основний"
       },
       "lines": [
         {
@@ -892,7 +958,9 @@
             "sv": "Katalanska öppningen",
             "da": "Katalansk åbning",
             "nb": "Katalansk åpning",
-            "fi": "Katalonialainen avaus"
+            "fi": "Katalonialainen avaus",
+            "ru": "Каталонское начало",
+            "uk": "Каталонський початок"
           },
           "eco": "E00",
           "opening": "Catalan Opening",
@@ -919,7 +987,9 @@
             "sv": "Katalanska öppningen",
             "da": "Katalansk åbning",
             "nb": "Katalansk åpning",
-            "fi": "Katalonialainen avaus"
+            "fi": "Katalonialainen avaus",
+            "ru": "Каталонское начало",
+            "uk": "Каталонський початок"
           },
           "eco": "E00",
           "opening": "Catalan Opening",
@@ -950,7 +1020,9 @@
         "sv": "Ungerska gambiten",
         "da": "Ungarsk gambit",
         "nb": "Ungarsk gambit",
-        "fi": "Unkarilainen gambiitti"
+        "fi": "Unkarilainen gambiitti",
+        "ru": "Венгерский гамбит",
+        "uk": "Угорський гамбіт"
       },
       "eco": "E00",
       "opening": "Catalan Opening: Hungarian Gambit",
@@ -977,7 +1049,9 @@
         "sv": "Tarraschförsvaret",
         "da": "Tarraschforsvaret",
         "nb": "Tarraschforsvaret",
-        "fi": "Tarrasch-puolustus"
+        "fi": "Tarrasch-puolustus",
+        "ru": "Защита Тарраша",
+        "uk": "Захист Тарраша"
       },
       "eco": "E01",
       "opening": "Catalan Opening: Tarrasch Defense",

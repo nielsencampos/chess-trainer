@@ -1,0 +1,517 @@
+# Chess glossary: Ukrainian (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
+# from the Ukrainian Wikipedia (`source`) or, when no page names it, `machine = true` with a `note`.
+# `avoid` lists the words the UI must not use for the term. The reader is addressed as "ви",
+# lowercase. Ukrainian writes proper names in Cyrillic ("Найдорф"), and an opening named after a
+# person takes the name in the genitive after the noun ("Варіант Найдорфа"), so no rule keeps an
+# English proper name (`keep_names = false`). Every glossary has the terms of en-US.toml (#34).
+
+# Proper names are written in Cyrillic: a glossary rule never keeps an English one (brief §8).
+keep_names = false
+
+[[terms]]
+term = "chess"
+translation = "шахи"
+source = "https://uk.wikipedia.org/wiki/Шахи"
+
+[[terms]]
+term = "piece"
+translation = "фігура"
+source = "https://uk.wikipedia.org/wiki/Фігура_(шахи)"
+
+[[terms]]
+term = "king"
+translation = "король"
+source = "https://uk.wikipedia.org/wiki/Король_(шахи)"
+
+[[terms]]
+term = "queen"
+translation = "ферзь"
+source = "https://uk.wikipedia.org/wiki/Ферзь"
+avoid = ["королева", "королеви", "королеву", "королевою"]
+
+[[terms]]
+term = "rook"
+translation = "тура"
+source = "https://uk.wikipedia.org/wiki/Тура"
+avoid = ["ладья"]
+
+[[terms]]
+term = "pawn"
+translation = "пішак"
+source = "https://uk.wikipedia.org/wiki/Пішак"
+
+[[terms]]
+term = "board"
+translation = "шахівниця"
+source = "https://uk.wikipedia.org/wiki/Шахівниця"
+
+[[terms]]
+term = "square"
+translation = "поле"
+source = "https://uk.wikipedia.org/wiki/Шахівниця"
+note = "Wikipedia uses both \"поле\" and \"клітинка\"; the UI uses \"поле\"."
+avoid = ["клітинка", "клітинки", "клітинку"]
+
+[[terms]]
+term = "White"
+translation = "білі"
+source = "https://uk.wikipedia.org/wiki/Шахи"
+note = "The players are \"білі\" and \"чорні\"."
+
+[[terms]]
+term = "Black"
+translation = "чорні"
+source = "https://uk.wikipedia.org/wiki/Шахи"
+note = "The players are \"білі\" and \"чорні\"."
+
+[[terms]]
+term = "game"
+translation = "партія"
+source = "https://uk.wikipedia.org/wiki/Шахи"
+
+[[terms]]
+term = "move"
+translation = "хід"
+source = "https://uk.wikipedia.org/wiki/Правила_шахів"
+
+[[terms]]
+term = "ply"
+translation = "півхід"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "premove"
+translation = "премув"
+machine = true
+note = "No Wikipedia page names it. The word of the Russian Wikipedia's chess glossary, as Ukrainian players use it."
+
+[[terms]]
+term = "take back"
+translation = "повернути хід"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "castling"
+translation = "рокірування"
+source = "https://uk.wikipedia.org/wiki/Рокірування"
+
+[[terms]]
+term = "check"
+translation = "шах"
+source = "https://uk.wikipedia.org/wiki/Шах_(шахи)"
+
+[[terms]]
+term = "checkmate"
+translation = "мат"
+source = "https://uk.wikipedia.org/wiki/Мат_(шахи)"
+
+[[terms]]
+term = "stalemate"
+translation = "пат"
+source = "https://uk.wikipedia.org/wiki/Пат"
+
+[[terms]]
+term = "draw"
+translation = "нічия"
+source = "https://uk.wikipedia.org/wiki/Нічия_(шахи)"
+
+[[terms]]
+term = "resign"
+translation = "здатися"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "insufficient material"
+translation = "недостатньо матеріалу"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "потрійне повторення позиції"
+source = "https://uk.wikipedia.org/wiki/Потрійне_повторення_позиції"
+
+[[terms]]
+term = "fivefold repetition"
+translation = "п'ятиразове повторення позиції"
+machine = true
+note = "No Wikipedia page names it. Follows \"потрійне повторення позиції\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "правило п'ятдесяти ходів"
+source = "https://uk.wikipedia.org/wiki/Правило_п'ятдесяти_ходів"
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "правило сімдесяти п'яти ходів"
+machine = true
+note = "No Wikipedia page names it. Follows \"правило п'ятдесяти ходів\"."
+
+[[terms]]
+term = "opening"
+translation = "дебют"
+source = "https://uk.wikipedia.org/wiki/Шаховий_дебют"
+
+[[terms]]
+term = "variation"
+translation = "варіант"
+source = "https://uk.wikipedia.org/wiki/Варіант_(шахи)"
+
+[[terms]]
+term = "line"
+translation = "лінія"
+machine = true
+note = "No Wikipedia page names a line of a repertoire; repertoire trainers call it \"лінія\"."
+
+[[terms]]
+term = "theory"
+translation = "теорія"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "book move"
+translation = "книжковий хід"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "deviation"
+translation = "відхилення"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "шаховий рушій"
+source = "https://uk.wikipedia.org/wiki/Шаховий_рушій"
+
+[[terms]]
+term = "computer"
+translation = "комп'ютер"
+source = "https://uk.wikipedia.org/wiki/Комп'ютер"
+
+[[terms]]
+term = "evaluation"
+translation = "оцінка"
+source = "https://uk.wikipedia.org/wiki/Оцінка_позиції"
+
+[[terms]]
+term = "analysis"
+translation = "аналіз"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "блискучий хід"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "найкращий хід"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "чудовий хід"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "неточність"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "помилка"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "промах"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "груба помилка"
+machine = true
+note = "No Wikipedia page names it. The word of the Ukrainian Lichess."
+
+[[terms]]
+term = "time control"
+translation = "контроль часу"
+source = "https://uk.wikipedia.org/wiki/Контроль_часу"
+
+[[terms]]
+term = "chess clock"
+translation = "шаховий годинник"
+source = "https://uk.wikipedia.org/wiki/Шаховий_годинник"
+
+[[terms]]
+term = "increment"
+translation = "додавання часу"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "delay"
+translation = "затримка"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "bullet"
+translation = "куля"
+machine = true
+note = "No Wikipedia page names it. The word of the Ukrainian Lichess."
+
+[[terms]]
+term = "blitz"
+translation = "бліц"
+source = "https://uk.wikipedia.org/wiki/Бліц"
+
+[[terms]]
+term = "rapid"
+translation = "рапід"
+source = "https://uk.wikipedia.org/wiki/Швидкі_шахи"
+note = "The article calls rapid chess \"рапід\" too."
+
+[[terms]]
+term = "classical"
+translation = "класика"
+machine = true
+note = "No Wikipedia page names it. A group of time controls in New Game."
+
+[[terms]]
+term = "scoresheet"
+translation = "бланк"
+machine = true
+note = "No Wikipedia page names it. Short for \"бланк запису партії\"."
+
+[[terms]]
+term = "arbiter"
+translation = "арбітр"
+source = "https://uk.wikipedia.org/wiki/Арбітр"
+
+[[terms]]
+term = "rating"
+translation = "рейтинг"
+source = "https://uk.wikipedia.org/wiki/Рейтинг_Ело"
+
+[[terms]]
+term = "grandmaster"
+translation = "гросмейстер"
+source = "https://uk.wikipedia.org/wiki/Гросмейстер"
+
+[[terms]]
+term = "International Master"
+translation = "міжнародний майстер"
+source = "https://uk.wikipedia.org/wiki/Міжнародний_майстер"
+
+[[terms]]
+term = "Woman International Master"
+translation = "міжнародний майстер серед жінок"
+machine = true
+note = "No Wikipedia page names it. Follows \"міжнародний майстер\"."
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "майстер ФІДЕ серед жінок"
+source = "https://uk.wikipedia.org/wiki/Майстер_ФІДЕ"
+note = "The article gives the women's rating threshold of the title."
+
+[[terms]]
+term = "Chess960"
+translation = "Chess960"
+source = "https://uk.wikipedia.org/wiki/Шахи-960"
+note = "Wikipedia's title is \"Шахи-960\"; Chess960 is the mode's name in the app."
+
+[[terms]]
+term = "correspondence chess"
+translation = "гра за листуванням"
+source = "https://uk.wikipedia.org/wiki/Гра_за_листуванням"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "шахова олімпіада"
+source = "https://uk.wikipedia.org/wiki/Шахова_олімпіада"
+
+[[terms]]
+term = "touch-move rule"
+translation = "правило «торкнувся — ходи»"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "capture"
+translation = "взяття"
+source = "https://uk.wikipedia.org/wiki/Правила_шахів"
+
+[[terms]]
+term = "tactics"
+translation = "тактика"
+source = "https://uk.wikipedia.org/wiki/Тактика_(шахи)"
+
+[[terms]]
+term = "strategy"
+translation = "стратегія"
+source = "https://uk.wikipedia.org/wiki/Стратегія_(шахи)"
+
+[[terms]]
+term = "sacrifice"
+translation = "жертва"
+source = "https://uk.wikipedia.org/wiki/Жертва_(шахи)"
+
+[[terms]]
+term = "trap"
+translation = "пастка"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "gambit"
+translation = "гамбіт"
+source = "https://uk.wikipedia.org/wiki/Гамбіт"
+
+[[terms]]
+term = "King's Pawn"
+translation = "королівський пішак"
+machine = true
+note = "No Wikipedia page names it. The group of openings after 1.e4."
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "ферзевий пішак"
+source = "https://uk.wikipedia.org/wiki/Дебют_ферзевих_пішаків"
+note = "The group of openings after 1.d4."
+
+[[terms]]
+term = "flank"
+translation = "фланг"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "starting position"
+translation = "початкова позиція"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "шаховий вундеркінд"
+source = "https://uk.wikipedia.org/wiki/Вундеркінд"
+
+[[terms]]
+term = "{name} Variation"
+translation = "Варіант {name}"
+source = "https://uk.wikipedia.org/wiki/Варіант_(шахи)"
+note = "For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Варіант Найдорфа\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Defense"
+translation = "Захист {name}"
+source = "https://uk.wikipedia.org/wiki/Захист_Каро—Канн"
+note = "For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Захист Алехіна\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "Гамбіт {name}"
+source = "https://uk.wikipedia.org/wiki/Гамбіт"
+note = "For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Гамбіт Еванса\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "Контргамбіт {name}"
+source = "https://uk.wikipedia.org/wiki/Контргамбіт"
+note = "For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Контргамбіт Фалькбеера\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Attack"
+translation = "Атака {name}"
+source = "https://uk.wikipedia.org/wiki/Атака_(шахи)"
+note = "For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Атака Маршалла\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "Контратака {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Контратака Маршалла\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Opening"
+translation = "Дебют {name}"
+source = "https://uk.wikipedia.org/wiki/Шаховий_дебют"
+note = "For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Дебют Берда\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} System"
+translation = "Система {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Система Колле\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Line"
+translation = "Лінія {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Лінія Карпова\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Formation"
+translation = "Побудова {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Побудова Мароці\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Trap"
+translation = "Пастка {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Cyrillic, in the genitive (\"Пастка Легаля\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "Main Line"
+translation = "Основний варіант"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8)."
+
+[[pieces]]
+piece = "K"
+letter = "Кр"
+source = "https://uk.wikipedia.org/wiki/Алгебраїчна_нотація"
+
+[[pieces]]
+piece = "Q"
+letter = "Ф"
+source = "https://uk.wikipedia.org/wiki/Алгебраїчна_нотація"
+
+[[pieces]]
+piece = "R"
+letter = "Т"
+source = "https://uk.wikipedia.org/wiki/Алгебраїчна_нотація"
+
+[[pieces]]
+piece = "B"
+letter = "С"
+source = "https://uk.wikipedia.org/wiki/Алгебраїчна_нотація"
+
+[[pieces]]
+piece = "N"
+letter = "К"
+source = "https://uk.wikipedia.org/wiki/Алгебраїчна_нотація"
+
+[[pieces]]
+piece = "P"
+letter = "П"
+source = "https://uk.wikipedia.org/wiki/Алгебраїчна_нотація"
+note = "Ukrainian notation writes no pawn letter; \"(П)\" is the table's. SAN never writes it either: a pawn move is only its square."

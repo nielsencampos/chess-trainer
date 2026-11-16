@@ -18,7 +18,9 @@
     "sv": "Ryskt parti",
     "nb": "Russisk forsvar",
     "fi": "Venäläinen peli",
-    "da": "Petrovforsvaret"
+    "da": "Petrovforsvaret",
+    "ru": "Русская партия",
+    "uk": "Російська партія"
   },
   "order": 10,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Klassiska attacken",
         "da": "Klassisk angreb",
         "nb": "Klassisk angrep",
-        "fi": "Klassinen hyökkäys"
+        "fi": "Klassinen hyökkäys",
+        "ru": "Классическая атака",
+        "uk": "Класична атака"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Klassiska attacken",
             "da": "Klassisk angreb",
             "nb": "Klassisk angrep",
-            "fi": "Klassinen hyökkäys"
+            "fi": "Klassinen hyökkäys",
+            "ru": "Классическая атака",
+            "uk": "Класична атака"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack",
@@ -91,7 +97,9 @@
             "sv": "Klassiska attacken, Stängda varianten",
             "da": "Klassisk angreb, Lukket variant",
             "nb": "Klassisk angrep, Lukket variant",
-            "fi": "Klassinen hyökkäys, Suljettu muunnelma"
+            "fi": "Klassinen hyökkäys, Suljettu muunnelma",
+            "ru": "Классическая атака, Закрытый вариант",
+            "uk": "Класична атака, Закритий варіант"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Closed Variation",
@@ -118,7 +126,9 @@
             "sv": "Klassiska attacken, Marshallvarianten",
             "da": "Klassisk angreb, Marshallvarianten",
             "nb": "Klassisk angrep, Marshallvarianten",
-            "fi": "Klassinen hyökkäys, Marshall-muunnelma"
+            "fi": "Klassinen hyökkäys, Marshall-muunnelma",
+            "ru": "Классическая атака, Вариант Маршалла",
+            "uk": "Класична атака, Варіант Маршалла"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Marshall Variation",
@@ -145,7 +155,9 @@
             "sv": "Klassiska attacken, Tarraschvarianten",
             "da": "Klassisk angreb, Tarraschvarianten",
             "nb": "Klassisk angrep, Tarraschvarianten",
-            "fi": "Klassinen hyökkäys, Tarrasch-muunnelma"
+            "fi": "Klassinen hyökkäys, Tarrasch-muunnelma",
+            "ru": "Классическая атака, Вариант Тарраша",
+            "uk": "Класична атака, Варіант Тарраша"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Tarrasch Variation",
@@ -172,7 +184,9 @@
             "sv": "Klassiska attacken, Marshallfällan",
             "da": "Klassisk angreb, Marshallfælden",
             "nb": "Klassisk angrep, Marshallfellen",
-            "fi": "Klassinen hyökkäys, Marshall-ansa"
+            "fi": "Klassinen hyökkäys, Marshall-ansa",
+            "ru": "Классическая атака, Ловушка Маршалла",
+            "uk": "Класична атака, Пастка Маршалла"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Marshall Trap",
@@ -199,7 +213,9 @@
             "sv": "Klassiska attacken, Stauntonvarianten",
             "da": "Klassisk angreb, Stauntonvarianten",
             "nb": "Klassisk angrep, Stauntonvarianten",
-            "fi": "Klassinen hyökkäys, Staunton-muunnelma"
+            "fi": "Klassinen hyökkäys, Staunton-muunnelma",
+            "ru": "Классическая атака, Вариант Стаунтона",
+            "uk": "Класична атака, Варіант Стаунтона"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Staunton Variation",
@@ -226,7 +242,9 @@
             "sv": "Klassiska attacken, Marshallvarianten, Kinesiska gambiten",
             "da": "Klassisk angreb, Marshallvarianten, Kinesisk gambit",
             "nb": "Klassisk angrep, Marshallvarianten, Kinesisk gambit",
-            "fi": "Klassinen hyökkäys, Marshall-muunnelma, Kiinalainen gambiitti"
+            "fi": "Klassinen hyökkäys, Marshall-muunnelma, Kiinalainen gambiitti",
+            "ru": "Классическая атака, Вариант Маршалла, Китайский гамбит",
+            "uk": "Класична атака, Варіант Маршалла, Китайський гамбіт"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Marshall Variation, Chinese Gambit",
@@ -253,7 +271,9 @@
             "sv": "Klassiska attacken, Chigorinvarianten",
             "da": "Klassisk angreb, Chigorinvarianten",
             "nb": "Klassisk angrep, Chigorinvarianten",
-            "fi": "Klassinen hyökkäys, Chigorin-muunnelma"
+            "fi": "Klassinen hyökkäys, Chigorin-muunnelma",
+            "ru": "Классическая атака, Вариант Чигорина",
+            "uk": "Класична атака, Варіант Чигоріна"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Chigorin Variation",
@@ -280,7 +300,9 @@
             "sv": "Klassiska attacken, Bergervarianten",
             "da": "Klassisk angreb, Bergervarianten",
             "nb": "Klassisk angrep, Bergervarianten",
-            "fi": "Klassinen hyökkäys, Berger-muunnelma"
+            "fi": "Klassinen hyökkäys, Berger-muunnelma",
+            "ru": "Классическая атака, Вариант Бергера",
+            "uk": "Класична атака, Варіант Бергера"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Berger Variation",
@@ -307,7 +329,9 @@
             "sv": "Klassiska attacken, Maróczyvarianten",
             "da": "Klassisk angreb, Maróczyvarianten",
             "nb": "Klassisk angrep, Maróczyvarianten",
-            "fi": "Klassinen hyökkäys, Maróczy-muunnelma"
+            "fi": "Klassinen hyökkäys, Maróczy-muunnelma",
+            "ru": "Классическая атака, Вариант Мароци",
+            "uk": "Класична атака, Варіант Мароці"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Maróczy Variation",
@@ -334,7 +358,9 @@
             "sv": "Klassiska attacken, Masonvarianten",
             "da": "Klassisk angreb, Masonvarianten",
             "nb": "Klassisk angrep, Masonvarianten",
-            "fi": "Klassinen hyökkäys, Mason-muunnelma"
+            "fi": "Klassinen hyökkäys, Mason-muunnelma",
+            "ru": "Классическая атака, Вариант Мейсона",
+            "uk": "Класична атака, Варіант Мейсона"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Mason Variation",
@@ -361,7 +387,9 @@
             "sv": "Klassiska attacken, Mason-Showaltervarianten",
             "da": "Klassisk angreb, Mason-Showaltervarianten",
             "nb": "Klassisk angrep, Mason-Showaltervarianten",
-            "fi": "Klassinen hyökkäys, Mason-Showalter-muunnelma"
+            "fi": "Klassinen hyökkäys, Mason-Showalter-muunnelma",
+            "ru": "Классическая атака, Вариант Мейсона-Шоуолтера",
+            "uk": "Класична атака, Варіант Мейсона-Шоуолтера"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Mason-Showalter Variation",
@@ -388,7 +416,9 @@
             "sv": "Klassiska attacken, Krausevarianten",
             "da": "Klassisk angreb, Krausevarianten",
             "nb": "Klassisk angrep, Krausevarianten",
-            "fi": "Klassinen hyökkäys, Krause-muunnelma"
+            "fi": "Klassinen hyökkäys, Krause-muunnelma",
+            "ru": "Классическая атака, Вариант Краузе",
+            "uk": "Класична атака, Варіант Краузе"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Krause Variation",
@@ -415,7 +445,9 @@
             "sv": "Klassiska attacken, Jaenischvarianten",
             "da": "Klassisk angreb, Jaenischvarianten",
             "nb": "Klassisk angrep, Jaenischvarianten",
-            "fi": "Klassinen hyökkäys, Jaenisch-muunnelma"
+            "fi": "Klassinen hyökkäys, Jaenisch-muunnelma",
+            "ru": "Классическая атака, Вариант Яниша",
+            "uk": "Класична атака, Варіант Яніша"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Jaenisch Variation",
@@ -442,7 +474,9 @@
             "sv": "Klassiska attacken, Chigorinvarianten, Huvudvariant",
             "da": "Klassisk angreb, Chigorinvarianten, Hovedvariant",
             "nb": "Klassisk angrep, Chigorinvarianten, Hovedvariant",
-            "fi": "Klassinen hyökkäys, Chigorin-muunnelma, Päämuunnelma"
+            "fi": "Klassinen hyökkäys, Chigorin-muunnelma, Päämuunnelma",
+            "ru": "Классическая атака, Вариант Чигорина, Основной вариант",
+            "uk": "Класична атака, Варіант Чигоріна, Основний варіант"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Chigorin Variation, Main Line",
@@ -469,7 +503,9 @@
             "sv": "Klassiska attacken, Chigorinvarianten, Browneattacken",
             "da": "Klassisk angreb, Chigorinvarianten, Browneangrebet",
             "nb": "Klassisk angrep, Chigorinvarianten, Browneangrepet",
-            "fi": "Klassinen hyökkäys, Chigorin-muunnelma, Browne-hyökkäys"
+            "fi": "Klassinen hyökkäys, Chigorin-muunnelma, Browne-hyökkäys",
+            "ru": "Классическая атака, Вариант Чигорина, Атака Брауна",
+            "uk": "Класична атака, Варіант Чигоріна, Атака Брауна"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Chigorin Variation, Browne Attack",
@@ -497,7 +533,9 @@
         "sv": "Moderna attacken",
         "da": "Moderne angreb",
         "nb": "Moderne angrep",
-        "fi": "Moderni hyökkäys"
+        "fi": "Moderni hyökkäys",
+        "ru": "Современная атака",
+        "uk": "Сучасна атака"
       },
       "lines": [
         {
@@ -520,7 +558,9 @@
             "sv": "Moderna attacken",
             "da": "Moderne angreb",
             "nb": "Moderne angrep",
-            "fi": "Moderni hyökkäys"
+            "fi": "Moderni hyökkäys",
+            "ru": "Современная атака",
+            "uk": "Сучасна атака"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack",
@@ -547,7 +587,9 @@
             "sv": "Moderna attacken, Centrumvarianten",
             "da": "Moderne angreb, Centervarianten",
             "nb": "Moderne angrep, Sentrumvarianten",
-            "fi": "Moderni hyökkäys, Keskusmuunnelma"
+            "fi": "Moderni hyökkäys, Keskusmuunnelma",
+            "ru": "Современная атака, Центральный вариант",
+            "uk": "Сучасна атака, Центральний варіант"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Center Variation",
@@ -574,7 +616,9 @@
             "sv": "Moderna attacken, Murreyvarianten",
             "da": "Moderne angreb, Murreyvarianten",
             "nb": "Moderne angrep, Murreyvarianten",
-            "fi": "Moderni hyökkäys, Murrey-muunnelma"
+            "fi": "Moderni hyökkäys, Murrey-muunnelma",
+            "ru": "Современная атака, Вариант Мюррея",
+            "uk": "Сучасна атака, Варіант Мюррея"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Murrey Variation",
@@ -601,7 +645,9 @@
             "sv": "Moderna attacken, Trifunovicvarianten",
             "da": "Moderne angreb, Trifunovicvarianten",
             "nb": "Moderne angrep, Trifunovicvarianten",
-            "fi": "Moderni hyökkäys, Trifunovic-muunnelma"
+            "fi": "Moderni hyökkäys, Trifunovic-muunnelma",
+            "ru": "Современная атака, Вариант Трифуновича",
+            "uk": "Сучасна атака, Варіант Трифуновича"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Trifunovic Variation",
@@ -628,7 +674,9 @@
             "sv": "Moderna attacken, Symmetriska varianten",
             "da": "Moderne angreb, Symmetrisk variant",
             "nb": "Moderne angrep, Symmetrisk variant",
-            "fi": "Moderni hyökkäys, Symmetrinen muunnelma"
+            "fi": "Moderni hyökkäys, Symmetrinen muunnelma",
+            "ru": "Современная атака, Симметричный вариант",
+            "uk": "Сучасна атака, Симетричний варіант"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Symmetrical Variation",
@@ -655,7 +703,9 @@
             "sv": "Moderna attacken",
             "da": "Moderne angreb",
             "nb": "Moderne angrep",
-            "fi": "Moderni hyökkäys"
+            "fi": "Moderni hyökkäys",
+            "ru": "Современная атака",
+            "uk": "Сучасна атака"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack",
@@ -682,7 +732,9 @@
             "sv": "Moderna attacken, Talgambit",
             "da": "Moderne angreb, Talgambit",
             "nb": "Moderne angrep, Talgambit",
-            "fi": "Moderni hyökkäys, Tal-gambiitti"
+            "fi": "Moderni hyökkäys, Tal-gambiitti",
+            "ru": "Современная атака, Гамбит Таля",
+            "uk": "Сучасна атака, Гамбіт Таля"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Tal Gambit",
@@ -709,7 +761,9 @@
             "sv": "Moderna attacken, Steinitzvarianten",
             "da": "Moderne angreb, Steinitzvarianten",
             "nb": "Moderne angrep, Steinitzvarianten",
-            "fi": "Moderni hyökkäys, Steinitz-muunnelma"
+            "fi": "Moderni hyökkäys, Steinitz-muunnelma",
+            "ru": "Современная атака, Вариант Стейница",
+            "uk": "Сучасна атака, Варіант Стейніца"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Steinitz Variation",
@@ -736,7 +790,9 @@
             "sv": "Moderna attacken, Bardelebenvarianten",
             "da": "Moderne angreb, Bardelebenvarianten",
             "nb": "Moderne angrep, Bardelebenvarianten",
-            "fi": "Moderni hyökkäys, Bardeleben-muunnelma"
+            "fi": "Moderni hyökkäys, Bardeleben-muunnelma",
+            "ru": "Современная атака, Вариант Барделебена",
+            "uk": "Сучасна атака, Варіант Барделебена"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Bardeleben Variation",
@@ -763,7 +819,9 @@
             "sv": "Moderna attacken, Centrumattacken",
             "da": "Moderne angreb, Centerangrebet",
             "nb": "Moderne angrep, Sentrumangrepet",
-            "fi": "Moderni hyökkäys, Keskushyökkäys"
+            "fi": "Moderni hyökkäys, Keskushyökkäys",
+            "ru": "Современная атака, Центральная атака",
+            "uk": "Сучасна атака, Центральна атака"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Center Attack",
@@ -791,7 +849,9 @@
         "sv": "Huvud",
         "da": "Hoved",
         "nb": "Hoved",
-        "fi": "Pää"
+        "fi": "Pää",
+        "ru": "Основной",
+        "uk": "Основний"
       },
       "lines": [
         {
@@ -814,7 +874,9 @@
             "sv": "Petrovförsvaret",
             "da": "Petrovforsvaret",
             "nb": "Petrovforsvaret",
-            "fi": "Petrov-puolustus"
+            "fi": "Petrov-puolustus",
+            "ru": "Защита Петрова",
+            "uk": "Захист Петрова"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -841,7 +903,9 @@
             "sv": "Petrovförsvaret",
             "da": "Petrovforsvaret",
             "nb": "Petrovforsvaret",
-            "fi": "Petrov-puolustus"
+            "fi": "Petrov-puolustus",
+            "ru": "Защита Петрова",
+            "uk": "Захист Петрова"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -868,7 +932,9 @@
             "sv": "Petrovförsvaret",
             "da": "Petrovforsvaret",
             "nb": "Petrovforsvaret",
-            "fi": "Petrov-puolustus"
+            "fi": "Petrov-puolustus",
+            "ru": "Защита Петрова",
+            "uk": "Захист Петрова"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -895,7 +961,9 @@
             "sv": "Petrovförsvaret",
             "da": "Petrovforsvaret",
             "nb": "Petrovforsvaret",
-            "fi": "Petrov-puolustus"
+            "fi": "Petrov-puolustus",
+            "ru": "Защита Петрова",
+            "uk": "Захист Петрова"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -922,7 +990,9 @@
             "sv": "Petrovförsvaret",
             "da": "Petrovforsvaret",
             "nb": "Petrovforsvaret",
-            "fi": "Petrov-puolustus"
+            "fi": "Petrov-puolustus",
+            "ru": "Защита Петрова",
+            "uk": "Захист Петрова"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -950,7 +1020,9 @@
         "sv": "Cochranegambit",
         "da": "Cochranegambit",
         "nb": "Cochranegambit",
-        "fi": "Cochrane-gambiitti"
+        "fi": "Cochrane-gambiitti",
+        "ru": "Гамбит Кохрена",
+        "uk": "Гамбіт Кохрена"
       },
       "lines": [
         {
@@ -973,7 +1045,9 @@
             "sv": "Cochranegambit",
             "da": "Cochranegambit",
             "nb": "Cochranegambit",
-            "fi": "Cochrane-gambiitti"
+            "fi": "Cochrane-gambiitti",
+            "ru": "Гамбит Кохрена",
+            "uk": "Гамбіт Кохрена"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Cochrane Gambit",
@@ -1000,7 +1074,9 @@
             "sv": "Cochranegambit, Löparschackvarianten",
             "da": "Cochranegambit, Løberskakvarianten",
             "nb": "Cochranegambit, Løpersjakkvarianten",
-            "fi": "Cochrane-gambiitti, Lähettishakkilinja"
+            "fi": "Cochrane-gambiitti, Lähettishakkilinja",
+            "ru": "Гамбит Кохрена, Линия с шахом слоном",
+            "uk": "Гамбіт Кохрена, Лінія з шахом слоном"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Cochrane Gambit, Bishop Check Line",
@@ -1027,7 +1103,9 @@
             "sv": "Cochranegambit, Centrumvarianten",
             "da": "Cochranegambit, Centervarianten",
             "nb": "Cochranegambit, Sentrumvarianten",
-            "fi": "Cochrane-gambiitti, Keskusmuunnelma"
+            "fi": "Cochrane-gambiitti, Keskusmuunnelma",
+            "ru": "Гамбит Кохрена, Центральный вариант",
+            "uk": "Гамбіт Кохрена, Центральний варіант"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Cochrane Gambit, Center Variation",
@@ -1055,7 +1133,9 @@
         "sv": "Staffordgambit antagen",
         "da": "Staffordgambit modtaget",
         "nb": "Staffordgambit mottatt",
-        "fi": "Stafford-gambiitti hyväksytty"
+        "fi": "Stafford-gambiitti hyväksytty",
+        "ru": "Принятый гамбит Стаффорда",
+        "uk": "Прийнятий гамбіт Стаффорда"
       },
       "lines": [
         {
@@ -1078,7 +1158,9 @@
             "sv": "Staffordgambit antagen",
             "da": "Staffordgambit modtaget",
             "nb": "Staffordgambit mottatt",
-            "fi": "Stafford-gambiitti hyväksytty"
+            "fi": "Stafford-gambiitti hyväksytty",
+            "ru": "Принятый гамбит Стаффорда",
+            "uk": "Прийнятий гамбіт Стаффорда"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Stafford Gambit Accepted",
@@ -1105,7 +1187,9 @@
             "sv": "Staffordgambit antagen",
             "da": "Staffordgambit modtaget",
             "nb": "Staffordgambit mottatt",
-            "fi": "Stafford-gambiitti hyväksytty"
+            "fi": "Stafford-gambiitti hyväksytty",
+            "ru": "Принятый гамбит Стаффорда",
+            "uk": "Прийнятий гамбіт Стаффорда"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Stafford Gambit Accepted",
@@ -1132,7 +1216,9 @@
             "sv": "Staffordgambit antagen",
             "da": "Staffordgambit modtaget",
             "nb": "Staffordgambit mottatt",
-            "fi": "Stafford-gambiitti hyväksytty"
+            "fi": "Stafford-gambiitti hyväksytty",
+            "ru": "Принятый гамбит Стаффорда",
+            "uk": "Прийнятий гамбіт Стаффорда"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Stafford Gambit Accepted",
@@ -1160,7 +1246,9 @@
         "sv": "Damianovarianten",
         "da": "Damianovarianten",
         "nb": "Damianovarianten",
-        "fi": "Damiano-muunnelma"
+        "fi": "Damiano-muunnelma",
+        "ru": "Вариант Дамиано",
+        "uk": "Варіант Даміано"
       },
       "lines": [
         {
@@ -1183,7 +1271,9 @@
             "sv": "Damianovarianten",
             "da": "Damianovarianten",
             "nb": "Damianovarianten",
-            "fi": "Damiano-muunnelma"
+            "fi": "Damiano-muunnelma",
+            "ru": "Вариант Дамиано",
+            "uk": "Варіант Даміано"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Damiano Variation",
@@ -1210,7 +1300,9 @@
             "sv": "Damianovarianten, Kholmovgambit",
             "da": "Damianovarianten, Kholmovgambit",
             "nb": "Damianovarianten, Kholmovgambit",
-            "fi": "Damiano-muunnelma, Kholmov-gambiitti"
+            "fi": "Damiano-muunnelma, Kholmov-gambiitti",
+            "ru": "Вариант Дамиано, Гамбит Холмова",
+            "uk": "Варіант Даміано, Гамбіт Холмова"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Damiano Variation, Kholmov Gambit",
@@ -1241,7 +1333,9 @@
         "sv": "Cozioattacken",
         "da": "Cozioangrebet",
         "nb": "Cozioangrepet",
-        "fi": "Cozio-hyökkäys"
+        "fi": "Cozio-hyökkäys",
+        "ru": "Атака Козио",
+        "uk": "Атака Коціо"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Cozio Attack",
@@ -1268,7 +1362,9 @@
         "sv": "Franska attacken",
         "da": "Fransk angreb",
         "nb": "Fransk angrep",
-        "fi": "Ranskalainen hyökkäys"
+        "fi": "Ranskalainen hyökkäys",
+        "ru": "Французская атака",
+        "uk": "Французька атака"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: French Attack",
@@ -1295,7 +1391,9 @@
         "sv": "Italienska varianten",
         "da": "Italiensk variant",
         "nb": "Italiensk variant",
-        "fi": "Italialainen muunnelma"
+        "fi": "Italialainen muunnelma",
+        "ru": "Итальянский вариант",
+        "uk": "Італійський варіант"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Italian Variation",
@@ -1322,7 +1420,9 @@
         "sv": "Karklins-Martinovskyvarianten",
         "da": "Karklins-Martinovskyvarianten",
         "nb": "Karklins-Martinovskyvarianten",
-        "fi": "Karklins-Martinovsky-muunnelma"
+        "fi": "Karklins-Martinovsky-muunnelma",
+        "ru": "Вариант Карклинса-Мартиновского",
+        "uk": "Варіант Карклінса-Мартиновського"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Karklins-Martinovsky Variation",
@@ -1349,7 +1449,9 @@
         "sv": "Kaufmannattacken",
         "da": "Kaufmannangrebet",
         "nb": "Kaufmannangrepet",
-        "fi": "Kaufmann-hyökkäys"
+        "fi": "Kaufmann-hyökkäys",
+        "ru": "Атака Кауфмана",
+        "uk": "Атака Кауфмана"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Kaufmann Attack",
@@ -1376,7 +1478,9 @@
         "sv": "Millennieattacken",
         "da": "Millenniumangrebet",
         "nb": "Millenniumangrepet",
-        "fi": "Vuosituhathyökkäys"
+        "fi": "Vuosituhathyökkäys",
+        "ru": "Атака «Миллениум»",
+        "uk": "Атака «Міленіум»"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Millennium Attack",
@@ -1403,7 +1507,9 @@
         "sv": "Moodygambit",
         "da": "Moodygambit",
         "nb": "Moodygambit",
-        "fi": "Moody-gambiitti"
+        "fi": "Moody-gambiitti",
+        "ru": "Гамбит Муди",
+        "uk": "Гамбіт Муді"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Moody Gambit",
@@ -1430,7 +1536,9 @@
         "sv": "Nimzowitschattacken",
         "da": "Nimzowitschangrebet",
         "nb": "Nimzowitschangrepet",
-        "fi": "Nimzowitsch-hyökkäys"
+        "fi": "Nimzowitsch-hyökkäys",
+        "ru": "Атака Нимцовича",
+        "uk": "Атака Німцовича"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Nimzowitsch Attack",
@@ -1457,7 +1565,9 @@
         "sv": "Paulsenattacken",
         "da": "Paulsenangrebet",
         "nb": "Paulsenangrepet",
-        "fi": "Paulsen-hyökkäys"
+        "fi": "Paulsen-hyökkäys",
+        "ru": "Атака Паульсена",
+        "uk": "Атака Паульсена"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Paulsen Attack",
@@ -1484,7 +1594,9 @@
         "sv": "Staffordgambit",
         "da": "Staffordgambit",
         "nb": "Staffordgambit",
-        "fi": "Stafford-gambiitti"
+        "fi": "Stafford-gambiitti",
+        "ru": "Гамбит Стаффорда",
+        "uk": "Гамбіт Стаффорда"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Stafford Gambit",
@@ -1511,7 +1623,9 @@
         "sv": "Trespringarspel",
         "da": "Trespringerspil",
         "nb": "Trespringerspill",
-        "fi": "Kolmiratsupeli"
+        "fi": "Kolmiratsupeli",
+        "ru": "Дебют трёх коней",
+        "uk": "Дебют трьох коней"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Three Knights Game",

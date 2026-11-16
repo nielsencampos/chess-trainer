@@ -152,3 +152,19 @@ direction = "ltr"
 scripts = ["latin", "latin-ext"]
 vale = ["ChessTrainer", "Fi", "GlossaryFi", "UI"]
 reviewed = false
+
+[locales.ru]
+direction = "ltr"
+# Latin for the names the UI keeps (Stockfish, PGN, Chess960).
+scripts = ["latin", "cyrillic"]
+languagetool = "ru-RU"
+vale = ["ChessTrainer", "Ru", "GlossaryRu", "UI"]
+reviewed = false
+
+[locales.uk]
+direction = "ltr"
+# Latin for the names the UI keeps (Stockfish, PGN, Chess960).
+scripts = ["latin", "cyrillic"]
+languagetool = "uk-UA"
+vale = ["ChessTrainer", "Uk", "GlossaryUk", "UI"]
+reviewed = false

@@ -1,0 +1,17 @@
+# ru speaks to the reader as "вы", lowercase, never "ты" or the capitalized "Вы".
+extends: existence
+message: "Use 'вы' (lowercase) as the form of address, not '%s'."
+level: error
+ignorecase: false
+tokens:
+  - '[Тт]ы'
+  - '[Тт]ебя'
+  - '[Тт]ебе'
+  - '[Тт]обой'
+  - '[Тт]вой'
+  - '[Тт]воя'
+  - '[Тт]воё'
+  - '[Тт]вои'
+  - '(?<=[,;:]\s)Вы'
+  - '(?<=[,;:]\s)Вас'
+  - '(?<=[,;:]\s)Вам'

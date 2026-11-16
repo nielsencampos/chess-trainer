@@ -18,7 +18,9 @@
     "sv": "Kungsbondespel",
     "nb": "Kongebondeåpning",
     "fi": "Kuningassotilaspelit",
-    "da": "Kongebondespil"
+    "da": "Kongebondespil",
+    "ru": "Дебют королевской пешки",
+    "uk": "Дебют королівського пішака"
   },
   "order": 23,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Tayleröppningen",
         "da": "Tayleråbningen",
         "nb": "Tayleråpningen",
-        "fi": "Tayler-avaus"
+        "fi": "Tayler-avaus",
+        "ru": "Дебют Тейлера",
+        "uk": "Дебют Тейлера"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Tayleröppningen",
             "da": "Tayleråbningen",
             "nb": "Tayleråpningen",
-            "fi": "Tayler-avaus"
+            "fi": "Tayler-avaus",
+            "ru": "Дебют Тейлера",
+            "uk": "Дебют Тейлера"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening",
@@ -91,7 +97,9 @@
             "sv": "Tayleröppningen, Omvänd Hanham",
             "da": "Tayleråbningen, Omvendt Hanham",
             "nb": "Tayleråpningen, Omvendt Hanham",
-            "fi": "Tayler-avaus, Käänteinen Hanham"
+            "fi": "Tayler-avaus, Käänteinen Hanham",
+            "ru": "Дебют Тейлера, Хэнхем наоборот",
+            "uk": "Дебют Тейлера, Генгем навпаки"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening, Inverted Hanham",
@@ -118,7 +126,9 @@
             "sv": "Tayleröppningen",
             "da": "Tayleråbningen",
             "nb": "Tayleråpningen",
-            "fi": "Tayler-avaus"
+            "fi": "Tayler-avaus",
+            "ru": "Дебют Тейлера",
+            "uk": "Дебют Тейлера"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening",
@@ -145,7 +155,9 @@
             "sv": "Tayleröppningen, Basmangambit",
             "da": "Tayleråbningen, Basmangambit",
             "nb": "Tayleråpningen, Basmangambit",
-            "fi": "Tayler-avaus, Basman-gambiitti"
+            "fi": "Tayler-avaus, Basman-gambiitti",
+            "ru": "Дебют Тейлера, Гамбит Басмана",
+            "uk": "Дебют Тейлера, Гамбіт Басмана"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening, Basman Gambit",
@@ -173,7 +185,9 @@
         "sv": "Damianoförsvaret",
         "da": "Damianoforsvaret",
         "nb": "Damianoforsvaret",
-        "fi": "Damiano-puolustus"
+        "fi": "Damiano-puolustus",
+        "ru": "Защита Дамиано",
+        "uk": "Захист Даміано"
       },
       "lines": [
         {
@@ -196,7 +210,9 @@
             "sv": "Damianoförsvaret",
             "da": "Damianoforsvaret",
             "nb": "Damianoforsvaret",
-            "fi": "Damiano-puolustus"
+            "fi": "Damiano-puolustus",
+            "ru": "Защита Дамиано",
+            "uk": "Захист Даміано"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Damiano Defense",
@@ -223,7 +239,9 @@
             "sv": "Damianoförsvaret, Damianogambit, Chigoringambit",
             "da": "Damianoforsvaret, Damianogambit, Chigoringambit",
             "nb": "Damianoforsvaret, Damianogambit, Chigoringambit",
-            "fi": "Damiano-puolustus, Damiano-gambiitti, Chigorin-gambiitti"
+            "fi": "Damiano-puolustus, Damiano-gambiitti, Chigorin-gambiitti",
+            "ru": "Защита Дамиано, Гамбит Дамиано, Гамбит Чигорина",
+            "uk": "Захист Даміано, Гамбіт Даміано, Гамбіт Чигоріна"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Damiano Defense, Damiano Gambit, Chigorin Gambit",
@@ -250,7 +268,9 @@
             "sv": "Damianoförsvaret, Damianogambit",
             "da": "Damianoforsvaret, Damianogambit",
             "nb": "Damianoforsvaret, Damianogambit",
-            "fi": "Damiano-puolustus, Damiano-gambiitti"
+            "fi": "Damiano-puolustus, Damiano-gambiitti",
+            "ru": "Защита Дамиано, Гамбит Дамиано",
+            "uk": "Захист Даміано, Гамбіт Даміано"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Damiano Defense, Damiano Gambit",
@@ -278,7 +298,9 @@
         "sv": "MacLeodattacken",
         "da": "MacLeodangrebet",
         "nb": "MacLeodangrepet",
-        "fi": "MacLeod-hyökkäys"
+        "fi": "MacLeod-hyökkäys",
+        "ru": "Атака Маклеода",
+        "uk": "Атака Маклеода"
       },
       "lines": [
         {
@@ -301,7 +323,9 @@
             "sv": "MacLeodattacken",
             "da": "MacLeodangrebet",
             "nb": "MacLeodangrepet",
-            "fi": "MacLeod-hyökkäys"
+            "fi": "MacLeod-hyökkäys",
+            "ru": "Атака Маклеода",
+            "uk": "Атака Маклеода"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: MacLeod Attack",
@@ -328,7 +352,9 @@
             "sv": "MacLeodattacken, Norwaldegambit",
             "da": "MacLeodangrebet, Norwaldegambit",
             "nb": "MacLeodangrepet, Norwaldegambit",
-            "fi": "MacLeod-hyökkäys, Norwalde-gambiitti"
+            "fi": "MacLeod-hyökkäys, Norwalde-gambiitti",
+            "ru": "Атака Маклеода, Норвальдский гамбит",
+            "uk": "Атака Маклеода, Норвальдський гамбіт"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: MacLeod Attack, Norwalde Gambit",
@@ -355,7 +381,9 @@
             "sv": "MacLeodattacken, Lasagambit",
             "da": "MacLeodangrebet, Lasagambit",
             "nb": "MacLeodangrepet, Lasagambit",
-            "fi": "MacLeod-hyökkäys, Lasa-gambiitti"
+            "fi": "MacLeod-hyökkäys, Lasa-gambiitti",
+            "ru": "Атака Маклеода, Гамбит Лазы",
+            "uk": "Атака Маклеода, Гамбіт Ласи"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: MacLeod Attack, Lasa Gambit",
@@ -383,7 +411,9 @@
         "sv": "Vilsna damattacken",
         "da": "Egensindig dronningangreb",
         "nb": "Egenrådig dronningangrep",
-        "fi": "Harhaileva kuningatarhyökkäys"
+        "fi": "Harhaileva kuningatarhyökkäys",
+        "ru": "Атака «Своенравный ферзь»",
+        "uk": "Атака «Норовливий ферзь»"
       },
       "lines": [
         {
@@ -406,7 +436,9 @@
             "sv": "Vilsna damattacken",
             "da": "Egensindig dronningangreb",
             "nb": "Egenrådig dronningangrep",
-            "fi": "Harhaileva kuningatarhyökkäys"
+            "fi": "Harhaileva kuningatarhyökkäys",
+            "ru": "Атака «Своенравный ферзь»",
+            "uk": "Атака «Норовливий ферзь»"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Wayward Queen Attack",
@@ -433,7 +465,9 @@
             "sv": "Vilsna damattacken, Mellongambit",
             "da": "Egensindig dronningangreb, Mellongambit",
             "nb": "Egenrådig dronningangrep, Mellongambit",
-            "fi": "Harhaileva kuningatarhyökkäys, Mellon-gambiitti"
+            "fi": "Harhaileva kuningatarhyökkäys, Mellon-gambiitti",
+            "ru": "Атака «Своенравный ферзь», Гамбит Меллона",
+            "uk": "Атака «Норовливий ферзь», Гамбіт Меллона"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Wayward Queen Attack, Mellon Gambit",
@@ -460,7 +494,9 @@
             "sv": "Vilsna damattacken, Barnmotgambit",
             "da": "Egensindig dronningangreb, Børnemodgambit",
             "nb": "Egenrådig dronningangrep, Barnemotgambit",
-            "fi": "Harhaileva kuningatarhyökkäys, Lapsivastagambiitti"
+            "fi": "Harhaileva kuningatarhyökkäys, Lapsivastagambiitti",
+            "ru": "Атака «Своенравный ферзь», Контргамбит «Детский»",
+            "uk": "Атака «Норовливий ферзь», Контргамбіт «Дитячий»"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Wayward Queen Attack, Kiddie Countergambit",
@@ -488,7 +524,9 @@
         "sv": "Busch-Gassgambit",
         "da": "Busch-Gassgambit",
         "nb": "Busch-Gassgambit",
-        "fi": "Busch-Gass-gambiitti"
+        "fi": "Busch-Gass-gambiitti",
+        "ru": "Гамбит Буша-Гасса",
+        "uk": "Гамбіт Буша-Гасса"
       },
       "lines": [
         {
@@ -511,7 +549,9 @@
             "sv": "Busch-Gassgambit",
             "da": "Busch-Gassgambit",
             "nb": "Busch-Gassgambit",
-            "fi": "Busch-Gass-gambiitti"
+            "fi": "Busch-Gass-gambiitti",
+            "ru": "Гамбит Буша-Гасса",
+            "uk": "Гамбіт Буша-Гасса"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Busch-Gass Gambit",
@@ -538,7 +578,9 @@
             "sv": "Busch-Gassgambit, Chiodinigambit",
             "da": "Busch-Gassgambit, Chiodinigambit",
             "nb": "Busch-Gassgambit, Chiodinigambit",
-            "fi": "Busch-Gass-gambiitti, Chiodini-gambiitti"
+            "fi": "Busch-Gass-gambiitti, Chiodini-gambiitti",
+            "ru": "Гамбит Буша-Гасса, Гамбит Кьодини",
+            "uk": "Гамбіт Буша-Гасса, Гамбіт К'одіні"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Busch-Gass Gambit, Chiodini Gambit",
@@ -566,7 +608,9 @@
         "sv": "Musselvarianten",
         "da": "Muslingvarianten",
         "nb": "Muslingvarianten",
-        "fi": "Simpukkamuunnelma"
+        "fi": "Simpukkamuunnelma",
+        "ru": "Вариант «Моллюск»",
+        "uk": "Варіант «Молюск»"
       },
       "lines": [
         {
@@ -589,7 +633,9 @@
             "sv": "Musselvarianten, Radischgambit",
             "da": "Muslingvarianten, Radischgambit",
             "nb": "Muslingvarianten, Radischgambit",
-            "fi": "Simpukkamuunnelma, Radisch-gambiitti"
+            "fi": "Simpukkamuunnelma, Radisch-gambiitti",
+            "ru": "Вариант «Моллюск», Гамбит Радиша",
+            "uk": "Варіант «Молюск», Гамбіт Радіша"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Clam Variation, Radisch Gambit",
@@ -616,7 +662,9 @@
             "sv": "Musselvarianten, Kungsgambit med ombytta färger",
             "da": "Muslingvarianten, Kongegambit med byttede farver",
             "nb": "Muslingvarianten, Kongegambit med byttede farger",
-            "fi": "Simpukkamuunnelma, Kuningasgambiitti käänteisin värein"
+            "fi": "Simpukkamuunnelma, Kuningasgambiitti käänteisin värein",
+            "ru": "Вариант «Моллюск», Королевский гамбит с переменой цвета",
+            "uk": "Варіант «Молюск», Королівський гамбіт зі зміною кольору"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Clam Variation, King's Gambit Reversed",
@@ -644,7 +692,9 @@
         "sv": "Kungshuvudöppningen",
         "da": "Kongehovedåbningen",
         "nb": "Kongehodeåpningen",
-        "fi": "Kuninkaanpääavaus"
+        "fi": "Kuninkaanpääavaus",
+        "ru": "Дебют «Королевская голова»",
+        "uk": "Дебют «Королівська голова»"
       },
       "lines": [
         {
@@ -667,7 +717,9 @@
             "sv": "Kungshuvudöppningen",
             "da": "Kongehovedåbningen",
             "nb": "Kongehodeåpningen",
-            "fi": "Kuninkaanpääavaus"
+            "fi": "Kuninkaanpääavaus",
+            "ru": "Дебют «Королевская голова»",
+            "uk": "Дебют «Королівська голова»"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: King's Head Opening",
@@ -694,7 +746,9 @@
             "sv": "Kungshuvudöppningen",
             "da": "Kongehovedåbningen",
             "nb": "Kongehodeåpningen",
-            "fi": "Kuninkaanpääavaus"
+            "fi": "Kuninkaanpääavaus",
+            "ru": "Дебют «Королевская голова»",
+            "uk": "Дебют «Королівська голова»"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: King's Head Opening",
@@ -722,7 +776,9 @@
         "sv": "Huvud",
         "da": "Hoved",
         "nb": "Hoved",
-        "fi": "Pää"
+        "fi": "Pää",
+        "ru": "Основной",
+        "uk": "Основний"
       },
       "lines": [
         {
@@ -745,7 +801,9 @@
             "sv": "Kungsbondespel",
             "da": "Kongebondespil",
             "nb": "Kongebondespill",
-            "fi": "Kuningassotilaspeli"
+            "fi": "Kuningassotilaspeli",
+            "ru": "Дебют королевской пешки",
+            "uk": "Дебют королівського пішака"
           },
           "eco": "B00",
           "opening": "King's Pawn Game",
@@ -772,7 +830,9 @@
             "sv": "Kungsbondespel",
             "da": "Kongebondespil",
             "nb": "Kongebondespill",
-            "fi": "Kuningassotilaspeli"
+            "fi": "Kuningassotilaspeli",
+            "ru": "Дебют королевской пешки",
+            "uk": "Дебют королівського пішака"
           },
           "eco": "C20",
           "opening": "King's Pawn Game",
@@ -803,7 +863,9 @@
         "sv": "Alapinöppningen",
         "da": "Alapinåbningen",
         "nb": "Alapinåpningen",
-        "fi": "Alapin-avaus"
+        "fi": "Alapin-avaus",
+        "ru": "Дебют Алапина",
+        "uk": "Дебют Алапіна"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Alapin Opening",
@@ -830,7 +892,9 @@
         "sv": "Bayerska gambiten",
         "da": "Bayersk gambit",
         "nb": "Bayersk gambit",
-        "fi": "Baijerilainen gambiitti"
+        "fi": "Baijerilainen gambiitti",
+        "ru": "Баварский гамбит",
+        "uk": "Баварський гамбіт"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Bavarian Gambit",
@@ -857,7 +921,9 @@
         "sv": "Beyergambit",
         "da": "Beyergambit",
         "nb": "Beyergambit",
-        "fi": "Beyer-gambiitti"
+        "fi": "Beyer-gambiitti",
+        "ru": "Гамбит Байера",
+        "uk": "Гамбіт Байєра"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Beyer Gambit",
@@ -884,7 +950,9 @@
         "sv": "Dresdenöppningen",
         "da": "Dresdenåbningen",
         "nb": "Dresdenåpningen",
-        "fi": "Dresden-avaus"
+        "fi": "Dresden-avaus",
+        "ru": "Дрезденское начало",
+        "uk": "Дрезденський початок"
       },
       "eco": "C44",
       "opening": "King's Pawn Game: Dresden Opening",
@@ -911,7 +979,9 @@
         "sv": "Gunderamförsvaret, Gunderamgambit",
         "da": "Gunderamforsvaret, Gunderamgambit",
         "nb": "Gunderamforsvaret, Gunderamgambit",
-        "fi": "Gunderam-puolustus, Gunderam-gambiitti"
+        "fi": "Gunderam-puolustus, Gunderam-gambiitti",
+        "ru": "Защита Гундерама, Гамбит Гундерама",
+        "uk": "Захист Гундерама, Гамбіт Гундерама"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: Gunderam Defense, Gunderam Gambit",
@@ -938,7 +1008,9 @@
         "sv": "Gunderamgambit",
         "da": "Gunderamgambit",
         "nb": "Gunderamgambit",
-        "fi": "Gunderam-gambiitti"
+        "fi": "Gunderam-gambiitti",
+        "ru": "Гамбит Гундерама",
+        "uk": "Гамбіт Гундерама"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: Gunderam Gambit",
@@ -965,7 +1037,9 @@
         "sv": "Kungsbondeöppningen",
         "da": "Kongebondeåbningen",
         "nb": "Kongebondeåpningen",
-        "fi": "Kuningassotilasavaus"
+        "fi": "Kuningassotilasavaus",
+        "ru": "Дебют королевской пешки",
+        "uk": "Дебют королівського пішака"
       },
       "eco": "C20",
       "opening": "King's Pawn Opening",
@@ -992,7 +1066,9 @@
         "sv": "Kungsbondeöppningen: Speers",
         "da": "Kongebondeåbningen: Speers",
         "nb": "Kongebondeåpningen: Speers",
-        "fi": "Kuningassotilasavaus: Speers"
+        "fi": "Kuningassotilasavaus: Speers",
+        "ru": "Дебют королевской пешки: Спирс",
+        "uk": "Дебют королівського пішака: Спірс"
       },
       "eco": "C20",
       "opening": "King's Pawn Opening: Speers",
@@ -1019,7 +1095,9 @@
         "sv": "Kungsbondeöppningen: Van Hooydoongambit",
         "da": "Kongebondeåbningen: Van Hooydoongambit",
         "nb": "Kongebondeåpningen: Van Hooydoongambit",
-        "fi": "Kuningassotilasavaus: Van Hooydoon-gambiitti"
+        "fi": "Kuningassotilasavaus: Van Hooydoon-gambiitti",
+        "ru": "Дебют королевской пешки: Гамбит ван Хойдона",
+        "uk": "Дебют королівського пішака: Гамбіт ван Гойдона"
       },
       "eco": "C20",
       "opening": "King's Pawn Opening: Van Hooydoon Gambit",
@@ -1046,7 +1124,9 @@
         "sv": "La Bourdonnaisgambit",
         "da": "La Bourdonnaisgambit",
         "nb": "La Bourdonnaisgambit",
-        "fi": "La Bourdonnais-gambiitti"
+        "fi": "La Bourdonnais-gambiitti",
+        "ru": "Гамбит Лабурдоне",
+        "uk": "Гамбіт Лабурдоне"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: La Bourdonnais Gambit",
@@ -1073,7 +1153,9 @@
         "sv": "Leonardisvarianten",
         "da": "Leonardisvarianten",
         "nb": "Leonardisvarianten",
-        "fi": "Leonardis-muunnelma"
+        "fi": "Leonardis-muunnelma",
+        "ru": "Вариант Леонардиса",
+        "uk": "Варіант Леонардіса"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Leonardis Variation",
@@ -1100,7 +1182,9 @@
         "sv": "Maróczyförsvaret",
         "da": "Maróczyforsvaret",
         "nb": "Maróczyforsvaret",
-        "fi": "Maróczy-puolustus"
+        "fi": "Maróczy-puolustus",
+        "ru": "Защита Мароци",
+        "uk": "Захист Мароці"
       },
       "eco": "B07",
       "opening": "King's Pawn Game: Maróczy Defense",
@@ -1127,7 +1211,9 @@
         "sv": "McConnellförsvaret",
         "da": "McConnellforsvaret",
         "nb": "McConnellforsvaret",
-        "fi": "McConnell-puolustus"
+        "fi": "McConnell-puolustus",
+        "ru": "Защита Макконнелла",
+        "uk": "Захист Макконнелла"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: McConnell Defense",
@@ -1154,7 +1240,9 @@
         "sv": "Mengariniöppningen",
         "da": "Mengariniåbningen",
         "nb": "Mengariniåpningen",
-        "fi": "Mengarini-avaus"
+        "fi": "Mengarini-avaus",
+        "ru": "Дебют Менгарини",
+        "uk": "Дебют Менгаріні"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Mengarini's Opening",
@@ -1181,7 +1269,9 @@
         "sv": "Napoleonattacken",
         "da": "Napoleonangrebet",
         "nb": "Napoleonangrepet",
-        "fi": "Napoleon-hyökkäys"
+        "fi": "Napoleon-hyökkäys",
+        "ru": "Атака Наполеона",
+        "uk": "Атака Наполеона"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Napoleon Attack",
@@ -1208,7 +1298,9 @@
         "sv": "Pachman-flygelgambit",
         "da": "Pachman-fløjgambit",
         "nb": "Pachman-fløygambit",
-        "fi": "Pachman-sivustagambiitti"
+        "fi": "Pachman-sivustagambiitti",
+        "ru": "Фланговый гамбит Пахмана",
+        "uk": "Фланговий гамбіт Пахмана"
       },
       "eco": "C44",
       "opening": "King's Pawn Game: Pachman Wing Gambit",
@@ -1235,7 +1327,9 @@
         "sv": "Philidorgambit",
         "da": "Philidorgambit",
         "nb": "Philidorgambit",
-        "fi": "Philidor-gambiitti"
+        "fi": "Philidor-gambiitti",
+        "ru": "Гамбит Филидора",
+        "uk": "Гамбіт Філідора"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Philidor Gambit",
@@ -1262,7 +1356,9 @@
         "sv": "Schulze-Müllergambit",
         "da": "Schulze-Müllergambit",
         "nb": "Schulze-Müllergambit",
-        "fi": "Schulze-Müller-gambiitti"
+        "fi": "Schulze-Müller-gambiitti",
+        "ru": "Гамбит Шульце-Мюллера",
+        "uk": "Гамбіт Шульце-Мюллера"
       },
       "eco": "C44",
       "opening": "King's Pawn Game: Schulze-Müller Gambit",
@@ -1289,7 +1385,9 @@
         "sv": "Sköldpaddsöppningen",
         "da": "Skildpaddeåbningen",
         "nb": "Skilpaddeåpningen",
-        "fi": "Kilpikonna-avaus"
+        "fi": "Kilpikonna-avaus",
+        "ru": "Дебют «Черепаха»",
+        "uk": "Дебют «Черепаха»"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Tortoise Opening",
@@ -1316,7 +1414,9 @@
         "sv": "Webergambit",
         "da": "Webergambit",
         "nb": "Webergambit",
-        "fi": "Weber-gambiitti"
+        "fi": "Weber-gambiitti",
+        "ru": "Гамбит Вебера",
+        "uk": "Гамбіт Вебера"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Weber Gambit",

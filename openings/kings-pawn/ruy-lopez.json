@@ -18,7 +18,9 @@
     "sv": "Spanskt parti",
     "da": "Spansk",
     "nb": "Spansk åpning",
-    "fi": "Espanjalainen peli"
+    "fi": "Espanjalainen peli",
+    "ru": "Испанская партия",
+    "uk": "Іспанська партія"
   },
   "order": 4,
   "variants": [
@@ -41,7 +43,9 @@
         "sv": "Stängd",
         "da": "Lukket",
         "nb": "Lukket",
-        "fi": "Suljettu"
+        "fi": "Suljettu",
+        "ru": "Закрытый",
+        "uk": "Закритий"
       },
       "lines": [
         {
@@ -64,7 +68,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed",
@@ -91,7 +97,9 @@
             "sv": "Stängd, Fördröjt avbyte",
             "da": "Lukket, Forsinket afbytning",
             "nb": "Lukket, Forsinket avbytte",
-            "fi": "Suljettu, Viivästetty vaihto"
+            "fi": "Suljettu, Viivästetty vaihto",
+            "ru": "Закрытый, Отложенный размен",
+            "uk": "Закритий, Відкладений розмін"
           },
           "eco": "C85",
           "opening": "Ruy Lopez: Closed, Delayed Exchange",
@@ -118,7 +126,9 @@
             "sv": "Stängd, Morphyattacken",
             "da": "Lukket, Morphyangrebet",
             "nb": "Lukket, Morphyangrepet",
-            "fi": "Suljettu, Morphy-hyökkäys"
+            "fi": "Suljettu, Morphy-hyökkäys",
+            "ru": "Закрытый, Атака Морфи",
+            "uk": "Закритий, Атака Морфі"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Morphy Attack",
@@ -145,7 +155,9 @@
             "sv": "Stängd, Worrallattacken",
             "da": "Lukket, Worrallangrebet",
             "nb": "Lukket, Worrallangrepet",
-            "fi": "Suljettu, Worrall-hyökkäys"
+            "fi": "Suljettu, Worrall-hyökkäys",
+            "ru": "Закрытый, Атака Уоррэлла",
+            "uk": "Закритий, Атака Воррелла"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack",
@@ -172,7 +184,9 @@
             "sv": "Stängd, Worrallattacken, Rockadvarianten",
             "da": "Lukket, Worrallangrebet, Rokadevarianten",
             "nb": "Lukket, Worrallangrepet, Rokadevarianten",
-            "fi": "Suljettu, Worrall-hyökkäys, Tornituslinja"
+            "fi": "Suljettu, Worrall-hyökkäys, Tornituslinja",
+            "ru": "Закрытый, Атака Уоррэлла, Линия с рокировкой",
+            "uk": "Закритий, Атака Воррелла, Лінія з рокіруванням"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack, Castling Line",
@@ -199,7 +213,9 @@
             "sv": "Stängd, Worrallattacken, Fördröjda rockadvarianten",
             "da": "Lukket, Worrallangrebet, Forsinket rokadevariant",
             "nb": "Lukket, Worrallangrepet, Forsinket rokadevariant",
-            "fi": "Suljettu, Worrall-hyökkäys, Viivästetty tornituslinja"
+            "fi": "Suljettu, Worrall-hyökkäys, Viivästetty tornituslinja",
+            "ru": "Закрытый, Атака Уоррэлла, Линия с отложенной рокировкой",
+            "uk": "Закритий, Атака Воррелла, Лінія з відкладеним рокіруванням"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack, Delayed Castling Line",
@@ -226,7 +242,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed",
@@ -253,7 +271,9 @@
             "sv": "Stängd, Trajkovicmotattacken",
             "da": "Lukket, Trajkovicmodangrebet",
             "nb": "Lukket, Trajkovicmotangrepet",
-            "fi": "Suljettu, Trajkovic-vastahyökkäys"
+            "fi": "Suljettu, Trajkovic-vastahyökkäys",
+            "ru": "Закрытый, Контратака Трайковича",
+            "uk": "Закритий, Контратака Трайковича"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Trajkovic Counterattack",
@@ -280,7 +300,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed",
@@ -307,7 +329,9 @@
             "sv": "Stängd, Anti-Marshall",
             "da": "Lukket, Anti-Marshall",
             "nb": "Lukket, Anti-Marshall",
-            "fi": "Suljettu, Anti-Marshall"
+            "fi": "Suljettu, Anti-Marshall",
+            "ru": "Закрытый, Анти-Маршалл",
+            "uk": "Закритий, Анти-Маршалл"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Anti-Marshall",
@@ -334,7 +358,9 @@
             "sv": "Stängd, Pilnikvarianten",
             "da": "Lukket, Pilnikvarianten",
             "nb": "Lukket, Pilnikvarianten",
-            "fi": "Suljettu, Pilnik-muunnelma"
+            "fi": "Suljettu, Pilnik-muunnelma",
+            "ru": "Закрытый, Вариант Пильника",
+            "uk": "Закритий, Варіант Пільника"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed, Pilnik Variation",
@@ -361,7 +387,9 @@
             "sv": "Stängd, Alekhinegambit",
             "da": "Lukket, Alekhinegambit",
             "nb": "Lukket, Alekhinegambit",
-            "fi": "Suljettu, Alekhine-gambiitti"
+            "fi": "Suljettu, Alekhine-gambiitti",
+            "ru": "Закрытый, Гамбит Алехина",
+            "uk": "Закритий, Гамбіт Алехіна"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Alekhine Gambit",
@@ -388,7 +416,9 @@
             "sv": "Stängd, Ballavarianten",
             "da": "Lukket, Ballavarianten",
             "nb": "Lukket, Ballavarianten",
-            "fi": "Suljettu, Balla-muunnelma"
+            "fi": "Suljettu, Balla-muunnelma",
+            "ru": "Закрытый, Вариант Баллы",
+            "uk": "Закритий, Варіант Балли"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Balla Variation",
@@ -415,7 +445,9 @@
             "sv": "Stängd, Leonhardtvarianten",
             "da": "Lukket, Leonhardtvarianten",
             "nb": "Lukket, Leonhardtvarianten",
-            "fi": "Suljettu, Leonhardt-muunnelma"
+            "fi": "Suljettu, Leonhardt-muunnelma",
+            "ru": "Закрытый, Вариант Леонхардта",
+            "uk": "Закритий, Варіант Леонгардта"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Leonhardt Variation",
@@ -442,7 +474,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed",
@@ -469,7 +503,9 @@
             "sv": "Stängd, Lutikovvarianten",
             "da": "Lukket, Lutikovvarianten",
             "nb": "Lukket, Lutikovvarianten",
-            "fi": "Suljettu, Lutikov-muunnelma"
+            "fi": "Suljettu, Lutikov-muunnelma",
+            "ru": "Закрытый, Вариант Лутикова",
+            "uk": "Закритий, Варіант Лутікова"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed, Lutikov Variation",
@@ -496,7 +532,9 @@
             "sv": "Stängd, Suetinvarianten",
             "da": "Lukket, Suetinvarianten",
             "nb": "Lukket, Suetinvarianten",
-            "fi": "Suljettu, Suetin-muunnelma"
+            "fi": "Suljettu, Suetin-muunnelma",
+            "ru": "Закрытый, Вариант Суэтина",
+            "uk": "Закритий, Варіант Суетіна"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed, Suetin Variation",
@@ -523,7 +561,9 @@
             "sv": "Stängd, Yatesvarianten",
             "da": "Lukket, Yatesvarianten",
             "nb": "Lukket, Yatesvarianten",
-            "fi": "Suljettu, Yates-muunnelma"
+            "fi": "Suljettu, Yates-muunnelma",
+            "ru": "Закрытый, Вариант Йейтса",
+            "uk": "Закритий, Варіант Йейтса"
           },
           "eco": "C91",
           "opening": "Ruy Lopez: Closed, Yates Variation",
@@ -550,7 +590,9 @@
             "sv": "Stängd, Bogoljubowvarianten",
             "da": "Lukket, Bogoljubowvarianten",
             "nb": "Lukket, Bogoljubowvarianten",
-            "fi": "Suljettu, Bogoljubow-muunnelma"
+            "fi": "Suljettu, Bogoljubow-muunnelma",
+            "ru": "Закрытый, Вариант Боголюбова",
+            "uk": "Закритий, Варіант Боголюбова"
           },
           "eco": "C91",
           "opening": "Ruy Lopez: Closed, Bogoljubow Variation",
@@ -577,7 +619,9 @@
             "sv": "Stängd, Yatesvarianten, Korta attacken",
             "da": "Lukket, Yatesvarianten, Kort angreb",
             "nb": "Lukket, Yatesvarianten, Kort angrep",
-            "fi": "Suljettu, Yates-muunnelma, Lyhyt hyökkäys"
+            "fi": "Suljettu, Yates-muunnelma, Lyhyt hyökkäys",
+            "ru": "Закрытый, Вариант Йейтса, Короткая атака",
+            "uk": "Закритий, Варіант Йейтса, Коротка атака"
           },
           "eco": "C91",
           "opening": "Ruy Lopez: Closed, Yates Variation, Short Attack",
@@ -604,7 +648,9 @@
             "sv": "Stängd",
             "da": "Lukket",
             "nb": "Lukket",
-            "fi": "Suljettu"
+            "fi": "Suljettu",
+            "ru": "Закрытый",
+            "uk": "Закритий"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed",
@@ -631,7 +677,9 @@
             "sv": "Stängd, Flohrsystemet",
             "da": "Lukket, Flohrsystemet",
             "nb": "Lukket, Flohrsystemet",
-            "fi": "Suljettu, Flohr-systeemi"
+            "fi": "Suljettu, Flohr-systeemi",
+            "ru": "Закрытый, Система Флора",
+            "uk": "Закритий, Система Флора"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Flohr System",
@@ -658,7 +706,9 @@
             "sv": "Stängd, Smyslov-Breyer-Zaitsev-hybrid",
             "da": "Lukket, Smyslov-Breyer-Zaitsev-hybrid",
             "nb": "Lukket, Smyslov-Breyer-Zaitsev-hybrid",
-            "fi": "Suljettu, Smyslov–Breyer–Zaitsev-hybridi"
+            "fi": "Suljettu, Smyslov–Breyer–Zaitsev-hybridi",
+            "ru": "Закрытый, Гибрид Смыслова-Брейера-Зайцева",
+            "uk": "Закритий, Гібрид Смислова-Брейєра-Зайцева"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Smyslov-Breyer-Zaitsev Hybrid",
@@ -685,7 +735,9 @@
             "sv": "Stängd, Kholmovvarianten",
             "da": "Lukket, Kholmovvarianten",
             "nb": "Lukket, Kholmovvarianten",
-            "fi": "Suljettu, Kholmov-muunnelma"
+            "fi": "Suljettu, Kholmov-muunnelma",
+            "ru": "Закрытый, Вариант Холмова",
+            "uk": "Закритий, Варіант Холмова"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Kholmov Variation",
@@ -712,7 +764,9 @@
             "sv": "Stängd, Chigorinförsvaret",
             "da": "Lukket, Chigorinforsvaret",
             "nb": "Lukket, Chigorinforsvaret",
-            "fi": "Suljettu, Chigorin-puolustus"
+            "fi": "Suljettu, Chigorin-puolustus",
+            "ru": "Закрытый, Защита Чигорина",
+            "uk": "Закритий, Захист Чигоріна"
           },
           "eco": "C97",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -739,7 +793,9 @@
             "sv": "Stängd, Chigorinförsvaret",
             "da": "Lukket, Chigorinforsvaret",
             "nb": "Lukket, Chigorinforsvaret",
-            "fi": "Suljettu, Chigorin-puolustus"
+            "fi": "Suljettu, Chigorin-puolustus",
+            "ru": "Закрытый, Защита Чигорина",
+            "uk": "Закритий, Захист Чигоріна"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -766,7 +822,9 @@
             "sv": "Stängd, Chigorinförsvaret",
             "da": "Lukket, Chigorinforsvaret",
             "nb": "Lukket, Chigorinforsvaret",
-            "fi": "Suljettu, Chigorin-puolustus"
+            "fi": "Suljettu, Chigorin-puolustus",
+            "ru": "Закрытый, Защита Чигорина",
+            "uk": "Закритий, Захист Чигоріна"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -793,7 +851,9 @@
             "sv": "Stängd, Borisenkovarianten",
             "da": "Lukket, Borisenkovarianten",
             "nb": "Lukket, Borisenkovarianten",
-            "fi": "Suljettu, Borisenko-muunnelma"
+            "fi": "Suljettu, Borisenko-muunnelma",
+            "ru": "Закрытый, Вариант Борисенко",
+            "uk": "Закритий, Варіант Борисенка"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Borisenko Variation",
@@ -820,7 +880,9 @@
             "sv": "Stängd, Keresförsvaret",
             "da": "Lukket, Keresforsvaret",
             "nb": "Lukket, Keresforsvaret",
-            "fi": "Suljettu, Keres-puolustus"
+            "fi": "Suljettu, Keres-puolustus",
+            "ru": "Закрытый, Защита Кереса",
+            "uk": "Закритий, Захист Кереса"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Keres Defense",
@@ -847,7 +909,9 @@
             "sv": "Stängd, Chigorinförsvaret",
             "da": "Lukket, Chigorinforsvaret",
             "nb": "Lukket, Chigorinforsvaret",
-            "fi": "Suljettu, Chigorin-puolustus"
+            "fi": "Suljettu, Chigorin-puolustus",
+            "ru": "Закрытый, Защита Чигорина",
+            "uk": "Закритий, Захист Чигоріна"
           },
           "eco": "C97",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -874,7 +938,9 @@
             "sv": "Stängd, Chigorin, Jugoslaviska systemet",
             "da": "Lukket, Chigorin, Jugoslavisk system",
             "nb": "Lukket, Chigorin, Jugoslavisk system",
-            "fi": "Suljettu, Chigorin, Jugoslavialainen systeemi"
+            "fi": "Suljettu, Chigorin, Jugoslavialainen systeemi",
+            "ru": "Закрытый, Чигорин, Югославская система",
+            "uk": "Закритий, Чигорін, Югославська система"
           },
           "eco": "C97",
           "opening": "Ruy Lopez: Closed, Chigorin, Yugoslav System",
@@ -901,7 +967,9 @@
             "sv": "Stängd, Chigorinförsvaret",
             "da": "Lukket, Chigorinforsvaret",
             "nb": "Lukket, Chigorinforsvaret",
-            "fi": "Suljettu, Chigorin-puolustus"
+            "fi": "Suljettu, Chigorin-puolustus",
+            "ru": "Закрытый, Защита Чигорина",
+            "uk": "Закритий, Захист Чигоріна"
           },
           "eco": "C98",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -928,7 +996,9 @@
             "sv": "Stängd, Chigorinförsvaret",
             "da": "Lukket, Chigorinforsvaret",
             "nb": "Lukket, Chigorinforsvaret",
-            "fi": "Suljettu, Chigorin-puolustus"
+            "fi": "Suljettu, Chigorin-puolustus",
+            "ru": "Закрытый, Защита Чигорина",
+            "uk": "Закритий, Захист Чигоріна"
           },
           "eco": "C98",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -955,7 +1025,9 @@
             "sv": "Stängd, Chigorinförsvaret, Panovsystemet",
             "da": "Lukket, Chigorinforsvaret, Panovsystemet",
             "nb": "Lukket, Chigorinforsvaret, Panovsystemet",
-            "fi": "Suljettu, Chigorin-puolustus, Panov-systeemi"
+            "fi": "Suljettu, Chigorin-puolustus, Panov-systeemi",
+            "ru": "Закрытый, Защита Чигорина, Система Панова",
+            "uk": "Закритий, Захист Чигоріна, Система Панова"
           },
           "eco": "C99",
           "opening": "Ruy Lopez: Closed, Chigorin Defense, Panov System",
@@ -982,7 +1054,9 @@
             "sv": "Stängd, Rossolimoförsvaret",
             "da": "Lukket, Rossolimoforsvaret",
             "nb": "Lukket, Rossolimoforsvaret",
-            "fi": "Suljettu, Rossolimo-puolustus"
+            "fi": "Suljettu, Rossolimo-puolustus",
+            "ru": "Закрытый, Защита Россолимо",
+            "uk": "Закритий, Захист Россолімо"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Rossolimo Defense",
@@ -1009,7 +1083,9 @@
             "sv": "Stängd, Chigorinförsvaret, Gajewskigambit",
             "da": "Lukket, Chigorinforsvaret, Gajewskigambit",
             "nb": "Lukket, Chigorinforsvaret, Gajewskigambit",
-            "fi": "Suljettu, Chigorin-puolustus, Gajewski-gambiitti"
+            "fi": "Suljettu, Chigorin-puolustus, Gajewski-gambiitti",
+            "ru": "Закрытый, Защита Чигорина, Гамбит Гаевского",
+            "uk": "Закритий, Захист Чигоріна, Гамбіт Гаєвського"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Chigorin Defense, Gajewski Gambit",
@@ -1036,7 +1112,9 @@
             "sv": "Stängd, Breyerförsvaret",
             "da": "Lukket, Breyerforsvaret",
             "nb": "Lukket, Breyerforsvaret",
-            "fi": "Suljettu, Breyer-puolustus"
+            "fi": "Suljettu, Breyer-puolustus",
+            "ru": "Закрытый, Защита Брейера",
+            "uk": "Закритий, Захист Брейєра"
           },
           "eco": "C94",
           "opening": "Ruy Lopez: Closed, Breyer Defense",
@@ -1063,7 +1141,9 @@
             "sv": "Stängd, Breyerförsvaret, Lugna varianten",
             "da": "Lukket, Breyerforsvaret, Rolig variant",
             "nb": "Lukket, Breyerforsvaret, Rolig variant",
-            "fi": "Suljettu, Breyer-puolustus, Rauhallinen muunnelma"
+            "fi": "Suljettu, Breyer-puolustus, Rauhallinen muunnelma",
+            "ru": "Закрытый, Защита Брейера, Спокойный вариант",
+            "uk": "Закритий, Захист Брейєра, Спокійний варіант"
           },
           "eco": "C94",
           "opening": "Ruy Lopez: Closed, Breyer Defense, Quiet Variation",
@@ -1090,7 +1170,9 @@
             "sv": "Stängd, Breyer",
             "da": "Lukket, Breyer",
             "nb": "Lukket, Breyer",
-            "fi": "Suljettu, Breyer"
+            "fi": "Suljettu, Breyer",
+            "ru": "Закрытый, Брейер",
+            "uk": "Закритий, Брейєр"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer",
@@ -1117,7 +1199,9 @@
             "sv": "Stängd, Breyerförsvaret, Zaitsevhybrid",
             "da": "Lukket, Breyerforsvaret, Zaitsev-hybrid",
             "nb": "Lukket, Breyerforsvaret, Zaitsev-hybrid",
-            "fi": "Suljettu, Breyer-puolustus, Zaitsev-hybridi"
+            "fi": "Suljettu, Breyer-puolustus, Zaitsev-hybridi",
+            "ru": "Закрытый, Защита Брейера, Гибрид Зайцева",
+            "uk": "Закритий, Захист Брейєра, Гібрид Зайцева"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer Defense, Zaitsev Hybrid",
@@ -1144,7 +1228,9 @@
             "sv": "Stängd, Breyerförsvaret",
             "da": "Lukket, Breyerforsvaret",
             "nb": "Lukket, Breyerforsvaret",
-            "fi": "Suljettu, Breyer-puolustus"
+            "fi": "Suljettu, Breyer-puolustus",
+            "ru": "Закрытый, Защита Брейера",
+            "uk": "Закритий, Захист Брейєра"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer Defense",
@@ -1171,7 +1257,9 @@
             "sv": "Stängd, Breyerförsvaret",
             "da": "Lukket, Breyerforsvaret",
             "nb": "Lukket, Breyerforsvaret",
-            "fi": "Suljettu, Breyer-puolustus"
+            "fi": "Suljettu, Breyer-puolustus",
+            "ru": "Закрытый, Защита Брейера",
+            "uk": "Закритий, Захист Брейєра"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer Defense",
@@ -1198,7 +1286,9 @@
             "sv": "Stängd, Karpovvarianten",
             "da": "Lukket, Karpovvarianten",
             "nb": "Lukket, Karpovvarianten",
-            "fi": "Suljettu, Karpov-muunnelma"
+            "fi": "Suljettu, Karpov-muunnelma",
+            "ru": "Закрытый, Вариант Карпова",
+            "uk": "Закритий, Варіант Карпова"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Karpov Variation",
@@ -1225,7 +1315,9 @@
             "sv": "Stängd, Zaitsevsystemet",
             "da": "Lukket, Zaitsevsystemet",
             "nb": "Lukket, Zaitsevsystemet",
-            "fi": "Suljettu, Zaitsev-systeemi"
+            "fi": "Suljettu, Zaitsev-systeemi",
+            "ru": "Закрытый, Система Зайцева",
+            "uk": "Закритий, Система Зайцева"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Zaitsev System",
@@ -1252,7 +1344,9 @@
             "sv": "Stängd, Smyslovförsvaret",
             "da": "Lukket, Smyslovforsvaret",
             "nb": "Lukket, Smyslovforsvaret",
-            "fi": "Suljettu, Smyslov-puolustus"
+            "fi": "Suljettu, Smyslov-puolustus",
+            "ru": "Закрытый, Защита Смыслова",
+            "uk": "Закритий, Захист Смислова"
           },
           "eco": "C93",
           "opening": "Ruy Lopez: Closed, Smyslov Defense",
@@ -1279,7 +1373,9 @@
             "sv": "Stängd, Rosenattacken",
             "da": "Lukket, Rosenangrebet",
             "nb": "Lukket, Rosenangrepet",
-            "fi": "Suljettu, Rosen-hyökkäys"
+            "fi": "Suljettu, Rosen-hyökkäys",
+            "ru": "Закрытый, Атака Розена",
+            "uk": "Закритий, Атака Розена"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Rosen Attack",
@@ -1306,7 +1402,9 @@
             "sv": "Stängd, Averbakhvarianten",
             "da": "Lukket, Averbakhvarianten",
             "nb": "Lukket, Averbakhvarianten",
-            "fi": "Suljettu, Averbakh-muunnelma"
+            "fi": "Suljettu, Averbakh-muunnelma",
+            "ru": "Закрытый, Вариант Авербаха",
+            "uk": "Закритий, Варіант Авербаха"
           },
           "eco": "C87",
           "opening": "Ruy Lopez: Closed, Averbakh Variation",
@@ -1333,7 +1431,9 @@
             "sv": "Stängd, Martinezvarianten",
             "da": "Lukket, Martinezvarianten",
             "nb": "Lukket, Martinezvarianten",
-            "fi": "Suljettu, Martinez-muunnelma"
+            "fi": "Suljettu, Martinez-muunnelma",
+            "ru": "Закрытый, Вариант Мартинеса",
+            "uk": "Закритий, Варіант Мартінеса"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Martinez Variation",
@@ -1360,7 +1460,9 @@
             "sv": "Stängd, Centrumattacken",
             "da": "Lukket, Centerangrebet",
             "nb": "Lukket, Sentrumangrepet",
-            "fi": "Suljettu, Keskushyökkäys"
+            "fi": "Suljettu, Keskushyökkäys",
+            "ru": "Закрытый, Центральная атака",
+            "uk": "Закритий, Центральна атака"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Center Attack",
@@ -1387,7 +1489,9 @@
             "sv": "Stängd, Baskiska gambiten",
             "da": "Lukket, Baskisk gambit",
             "nb": "Lukket, Baskisk gambit",
-            "fi": "Suljettu, Baskilainen gambiitti"
+            "fi": "Suljettu, Baskilainen gambiitti",
+            "ru": "Закрытый, Баскский гамбит",
+            "uk": "Закритий, Баскський гамбіт"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Basque Gambit",
@@ -1414,7 +1518,9 @@
             "sv": "Stängd, Centrumattacken, Baskiska gambiten",
             "da": "Lukket, Centerangrebet, Baskisk gambit",
             "nb": "Lukket, Sentrumangrepet, Baskisk gambit",
-            "fi": "Suljettu, Keskushyökkäys, Baskilainen gambiitti"
+            "fi": "Suljettu, Keskushyökkäys, Baskilainen gambiitti",
+            "ru": "Закрытый, Центральная атака, Баскский гамбит",
+            "uk": "Закритий, Центральна атака, Баскський гамбіт"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Center Attack, Basque Gambit",
@@ -1441,7 +1547,9 @@
             "sv": "Stängd, Worrallattacken, Rockadvarianten",
             "da": "Lukket, Worrallangrebet, Rokadevarianten",
             "nb": "Lukket, Worrallangrepet, Rokadevarianten",
-            "fi": "Suljettu, Worrall-hyökkäys, Tornituslinja"
+            "fi": "Suljettu, Worrall-hyökkäys, Tornituslinja",
+            "ru": "Закрытый, Атака Уоррэлла, Линия с рокировкой",
+            "uk": "Закритий, Атака Воррелла, Лінія з рокіруванням"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack, Castling Line",
@@ -1468,7 +1576,9 @@
             "sv": "Stängd, Kecskemetvarianten",
             "da": "Lukket, Kecskemetvarianten",
             "nb": "Lukket, Kecskemetvarianten",
-            "fi": "Suljettu, Kecskemet-muunnelma"
+            "fi": "Suljettu, Kecskemet-muunnelma",
+            "ru": "Закрытый, Кечкеметский вариант",
+            "uk": "Закритий, Кечкеметський варіант"
           },
           "eco": "C72",
           "opening": "Ruy Lopez: Closed, Kecskemet Variation",
@@ -1496,7 +1606,9 @@
         "sv": "Morphyförsvaret",
         "da": "Morphyforsvaret",
         "nb": "Morphyforsvaret",
-        "fi": "Morphy-puolustus"
+        "fi": "Morphy-puolustus",
+        "ru": "Защита Морфи",
+        "uk": "Захист Морфі"
       },
       "lines": [
         {
@@ -1519,7 +1631,9 @@
             "sv": "Morphyförsvaret",
             "da": "Morphyforsvaret",
             "nb": "Morphyforsvaret",
-            "fi": "Morphy-puolustus"
+            "fi": "Morphy-puolustus",
+            "ru": "Защита Морфи",
+            "uk": "Захист Морфі"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense",
@@ -1546,7 +1660,9 @@
             "sv": "Morphyförsvaret, Alapin'sförsvaret uppskjuten",
             "da": "Morphyforsvaret, Alapin'sforsvaret udskudt",
             "nb": "Morphyforsvaret, Alapin'sforsvaret utsatt",
-            "fi": "Morphy-puolustus, Alapin's-puolustus viivästetty"
+            "fi": "Morphy-puolustus, Alapin's-puolustus viivästetty",
+            "ru": "Защита Морфи, Отложенная защита Алапина",
+            "uk": "Захист Морфі, Відкладений захист Алапіна"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Alapin's Defense Deferred",
@@ -1573,7 +1689,9 @@
             "sv": "Morphyförsvaret, Klassiska försvaret uppskjuten",
             "da": "Morphyforsvaret, Klassisk forsvar udskudt",
             "nb": "Morphyforsvaret, Klassisk forsvar utsatt",
-            "fi": "Morphy-puolustus, Klassinen puolustus viivästetty"
+            "fi": "Morphy-puolustus, Klassinen puolustus viivästetty",
+            "ru": "Защита Морфи, Отложенная классическая защита",
+            "uk": "Захист Морфі, Відкладений класичний захист"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
@@ -1600,7 +1718,9 @@
             "sv": "Morphyförsvaret, Bayreuthvarianten",
             "da": "Morphyforsvaret, Bayreuthvarianten",
             "nb": "Morphyforsvaret, Bayreuthvarianten",
-            "fi": "Morphy-puolustus, Bayreuth-muunnelma"
+            "fi": "Morphy-puolustus, Bayreuth-muunnelma",
+            "ru": "Защита Морфи, Байройтский вариант",
+            "uk": "Захист Морфі, Байройтський варіант"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Bayreuth Variation",
@@ -1627,7 +1747,9 @@
             "sv": "Morphyförsvaret, Tarraschvarianten",
             "da": "Morphyforsvaret, Tarraschvarianten",
             "nb": "Morphyforsvaret, Tarraschvarianten",
-            "fi": "Morphy-puolustus, Tarrasch-muunnelma"
+            "fi": "Morphy-puolustus, Tarrasch-muunnelma",
+            "ru": "Защита Морфи, Вариант Тарраша",
+            "uk": "Захист Морфі, Варіант Тарраша"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Tarrasch Variation",
@@ -1654,7 +1776,9 @@
             "sv": "Morphyförsvaret",
             "da": "Morphyforsvaret",
             "nb": "Morphyforsvaret",
-            "fi": "Morphy-puolustus"
+            "fi": "Morphy-puolustus",
+            "ru": "Защита Морфи",
+            "uk": "Захист Морфі"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense",
@@ -1681,7 +1805,9 @@
             "sv": "Morphyförsvaret, Møllervarianten",
             "da": "Morphyforsvaret, Møllervarianten",
             "nb": "Morphyforsvaret, Møllervarianten",
-            "fi": "Morphy-puolustus, Møller-muunnelma"
+            "fi": "Morphy-puolustus, Møller-muunnelma",
+            "ru": "Защита Морфи, Вариант Мёллера",
+            "uk": "Захист Морфі, Варіант Меллера"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Møller Variation",
@@ -1708,7 +1834,9 @@
             "sv": "Morphyförsvaret, Tartakowervarianten",
             "da": "Morphyforsvaret, Tartakowervarianten",
             "nb": "Morphyforsvaret, Tartakowervarianten",
-            "fi": "Morphy-puolustus, Tartakower-muunnelma"
+            "fi": "Morphy-puolustus, Tartakower-muunnelma",
+            "ru": "Защита Морфи, Вариант Тартаковера",
+            "uk": "Захист Морфі, Варіант Тартаковера"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Morphy Defense, Tartakower Variation",
@@ -1735,7 +1863,9 @@
             "sv": "Morphyförsvaret, Archangelskvarianten",
             "da": "Morphyforsvaret, Arkhangelskvarianten",
             "nb": "Morphyforsvaret, Arkhangelskvarianten",
-            "fi": "Morphy-puolustus, Arkangeli-muunnelma"
+            "fi": "Morphy-puolustus, Arkangeli-muunnelma",
+            "ru": "Защита Морфи, Архангельский вариант",
+            "uk": "Захист Морфі, Архангельський варіант"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Arkhangelsk Variation",
@@ -1762,7 +1892,9 @@
             "sv": "Morphyförsvaret, Neo-Archangelskvarianten",
             "da": "Morphyforsvaret, Neo-Arkhangelskvarianten",
             "nb": "Morphyforsvaret, Neo-Arkhangelskvarianten",
-            "fi": "Morphy-puolustus, Neo-Arkangeli-muunnelma"
+            "fi": "Morphy-puolustus, Neo-Arkangeli-muunnelma",
+            "ru": "Защита Морфи, Неоархангельский вариант",
+            "uk": "Захист Морфі, Неоархангельський варіант"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Neo-Arkhangelsk Variation",
@@ -1789,7 +1921,9 @@
             "sv": "Morphyförsvaret, Flygelattacken",
             "da": "Morphyforsvaret, Fløjangrebet",
             "nb": "Morphyforsvaret, Fløyangrepet",
-            "fi": "Morphy-puolustus, Sivustahyökkäys"
+            "fi": "Morphy-puolustus, Sivustahyökkäys",
+            "ru": "Защита Морфи, Фланговая атака",
+            "uk": "Захист Морфі, Флангова атака"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Wing Attack",
@@ -1816,7 +1950,9 @@
             "sv": "Morphyförsvaret",
             "da": "Morphyforsvaret",
             "nb": "Morphyforsvaret",
-            "fi": "Morphy-puolustus"
+            "fi": "Morphy-puolustus",
+            "ru": "Защита Морфи",
+            "uk": "Захист Морфі"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense",
@@ -1843,7 +1979,9 @@
             "sv": "Morphyförsvaret, Steinitz uppskjuten",
             "da": "Morphyforsvaret, Steinitz udskudt",
             "nb": "Morphyforsvaret, Steinitz utsatt",
-            "fi": "Morphy-puolustus, Steinitz viivästetty"
+            "fi": "Morphy-puolustus, Steinitz viivästetty",
+            "ru": "Защита Морфи, Отложенный Стейниц",
+            "uk": "Захист Морфі, Відкладений Стейніц"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Morphy Defense, Steinitz Deferred",
@@ -1870,7 +2008,9 @@
             "sv": "Morphyförsvaret, Steinitz uppskjuten",
             "da": "Morphyforsvaret, Steinitz udskudt",
             "nb": "Morphyforsvaret, Steinitz utsatt",
-            "fi": "Morphy-puolustus, Steinitz viivästetty"
+            "fi": "Morphy-puolustus, Steinitz viivästetty",
+            "ru": "Защита Морфи, Отложенный Стейниц",
+            "uk": "Захист Морфі, Відкладений Стейніц"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Morphy Defense, Steinitz Deferred",
@@ -1897,7 +2037,9 @@
             "sv": "Morphyförsvaret, Wormaldattacken",
             "da": "Morphyforsvaret, Wormaldangrebet",
             "nb": "Morphyforsvaret, Wormaldangrepet",
-            "fi": "Morphy-puolustus, Wormald-hyökkäys"
+            "fi": "Morphy-puolustus, Wormald-hyökkäys",
+            "ru": "Защита Морфи, Атака Вормальда",
+            "uk": "Захист Морфі, Атака Вормальда"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Wormald Attack",
@@ -1924,7 +2066,9 @@
             "sv": "Morphyförsvaret, Jaffegambit",
             "da": "Morphyforsvaret, Jaffegambit",
             "nb": "Morphyforsvaret, Jaffegambit",
-            "fi": "Morphy-puolustus, Jaffe-gambiitti"
+            "fi": "Morphy-puolustus, Jaffe-gambiitti",
+            "ru": "Защита Морфи, Гамбит Джаффе",
+            "uk": "Захист Морфі, Гамбіт Джаффе"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Jaffe Gambit",
@@ -1951,7 +2095,9 @@
             "sv": "Morphyförsvaret, Anderssenvarianten",
             "da": "Morphyforsvaret, Anderssenvarianten",
             "nb": "Morphyforsvaret, Anderssenvarianten",
-            "fi": "Morphy-puolustus, Anderssen-muunnelma"
+            "fi": "Morphy-puolustus, Anderssen-muunnelma",
+            "ru": "Защита Морфи, Вариант Андерсена",
+            "uk": "Захист Морфі, Варіант Андерсена"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Anderssen Variation",
@@ -1978,7 +2124,9 @@
             "sv": "Morphyförsvaret, Durasvarianten",
             "da": "Morphyforsvaret, Durasvarianten",
             "nb": "Morphyforsvaret, Durasvarianten",
-            "fi": "Morphy-puolustus, Duras-muunnelma"
+            "fi": "Morphy-puolustus, Duras-muunnelma",
+            "ru": "Защита Морфи, Вариант Дураса",
+            "uk": "Захист Морфі, Варіант Дураса"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Duras Variation",
@@ -2005,7 +2153,9 @@
             "sv": "Morphyförsvaret, Mackenzievarianten",
             "da": "Morphyforsvaret, Mackenzievarianten",
             "nb": "Morphyforsvaret, Mackenzievarianten",
-            "fi": "Morphy-puolustus, Mackenzie-muunnelma"
+            "fi": "Morphy-puolustus, Mackenzie-muunnelma",
+            "ru": "Защита Морфи, Вариант Маккензи",
+            "uk": "Захист Морфі, Варіант Маккензі"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Mackenzie Variation",
@@ -2032,7 +2182,9 @@
             "sv": "Morphyförsvaret, Cozioförsvaret",
             "da": "Morphyforsvaret, Cozioforsvaret",
             "nb": "Morphyforsvaret, Cozioforsvaret",
-            "fi": "Morphy-puolustus, Cozio-puolustus"
+            "fi": "Morphy-puolustus, Cozio-puolustus",
+            "ru": "Защита Морфи, Защита Козио",
+            "uk": "Захист Морфі, Захист Коціо"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Cozio Defense",
@@ -2059,7 +2211,9 @@
             "sv": "Morphyförsvaret, Carovarianten",
             "da": "Morphyforsvaret, Carovarianten",
             "nb": "Morphyforsvaret, Carovarianten",
-            "fi": "Morphy-puolustus, Caro-muunnelma"
+            "fi": "Morphy-puolustus, Caro-muunnelma",
+            "ru": "Защита Морфи, Вариант Каро",
+            "uk": "Захист Морфі, Варіант Каро"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Caro Variation",
@@ -2086,7 +2240,9 @@
             "sv": "Morphyförsvaret, Grazvarianten",
             "da": "Morphyforsvaret, Grazvarianten",
             "nb": "Morphyforsvaret, Grazvarianten",
-            "fi": "Morphy-puolustus, Graz-muunnelma"
+            "fi": "Morphy-puolustus, Graz-muunnelma",
+            "ru": "Защита Морфи, Грацский вариант",
+            "uk": "Захист Морфі, Грацький варіант"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Graz Variation",
@@ -2113,7 +2269,9 @@
             "sv": "Morphyförsvaret, Norska varianten",
             "da": "Morphyforsvaret, Norsk variant",
             "nb": "Morphyforsvaret, Norsk variant",
-            "fi": "Morphy-puolustus, Norjalainen muunnelma"
+            "fi": "Morphy-puolustus, Norjalainen muunnelma",
+            "ru": "Защита Морфи, Норвежский вариант",
+            "uk": "Захист Морфі, Норвезький варіант"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Norwegian Variation",
@@ -2140,7 +2298,9 @@
             "sv": "Morphyförsvaret, Norska varianten, Näktergalgambit",
             "da": "Morphyforsvaret, Norsk variant, Nattergalgambit",
             "nb": "Morphyforsvaret, Norsk variant, Nattergalgambit",
-            "fi": "Morphy-puolustus, Norjalainen muunnelma, Satakieligambiitti"
+            "fi": "Morphy-puolustus, Norjalainen muunnelma, Satakieligambiitti",
+            "ru": "Защита Морфи, Норвежский вариант, Гамбит «Соловей»",
+            "uk": "Захист Морфі, Норвезький варіант, Гамбіт «Соловей»"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Norwegian Variation, Nightingale Gambit",
@@ -2167,7 +2327,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus",
+            "ru": "Защита Морфи, Современная защита Стейница",
+            "uk": "Захист Морфі, Сучасний захист Стейніца"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -2194,7 +2356,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus",
+            "ru": "Защита Морфи, Современная защита Стейница",
+            "uk": "Захист Морфі, Сучасний захист Стейніца"
           },
           "eco": "C73",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -2221,7 +2385,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus",
+            "ru": "Защита Морфи, Современная защита Стейница",
+            "uk": "Захист Морфі, Сучасний захист Стейніца"
           },
           "eco": "C73",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -2248,7 +2414,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus",
+            "ru": "Защита Морфи, Современная защита Стейница",
+            "uk": "Захист Морфі, Сучасний захист Стейніца"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -2275,7 +2443,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus",
+            "ru": "Защита Морфи, Современная защита Стейница",
+            "uk": "Захист Морфі, Сучасний захист Стейніца"
           },
           "eco": "C72",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -2302,7 +2472,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus",
+            "ru": "Защита Морфи, Современная защита Стейница",
+            "uk": "Захист Морфі, Сучасний захист Стейніца"
           },
           "eco": "C74",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -2329,7 +2501,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus",
+            "ru": "Защита Морфи, Современная защита Стейница",
+            "uk": "Захист Морфі, Сучасний захист Стейніца"
           },
           "eco": "C75",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -2356,7 +2530,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus",
+            "ru": "Защита Морфи, Современная защита Стейница",
+            "uk": "Захист Морфі, Сучасний захист Стейніца"
           },
           "eco": "C75",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -2383,7 +2559,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret, Siestavarianten",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret, Siestavarianten",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret, Siestavarianten",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus, Siesta-muunnelma"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus, Siesta-muunnelma",
+            "ru": "Защита Морфи, Современная защита Стейница, Вариант «Сиеста»",
+            "uk": "Захист Морфі, Сучасний захист Стейніца, Варіант «Сієста»"
           },
           "eco": "C74",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Siesta Variation",
@@ -2410,7 +2588,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus",
+            "ru": "Защита Морфи, Современная защита Стейница",
+            "uk": "Захист Морфі, Сучасний захист Стейніца"
           },
           "eco": "C74",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -2437,7 +2617,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus",
+            "ru": "Защита Морфи, Современная защита Стейница",
+            "uk": "Захист Морфі, Сучасний захист Стейніца"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -2464,7 +2646,9 @@
             "sv": "Morphyförsvaret, Schliemannförsvaret uppskjuten",
             "da": "Morphyforsvaret, Schliemannforsvaret udskudt",
             "nb": "Morphyforsvaret, Schliemannforsvaret utsatt",
-            "fi": "Morphy-puolustus, Schliemann-puolustus viivästetty"
+            "fi": "Morphy-puolustus, Schliemann-puolustus viivästetty",
+            "ru": "Защита Морфи, Отложенная защита Шлимана",
+            "uk": "Захист Морфі, Відкладений захист Шлімана"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
@@ -2491,7 +2675,9 @@
             "sv": "Morphyförsvaret, Schliemannförsvaret uppskjuten, Jaenischgambit uppskjuten",
             "da": "Morphyforsvaret, Schliemannforsvaret udskudt, Jaenischgambit udskudt",
             "nb": "Morphyforsvaret, Schliemannforsvaret utsatt, Jaenischgambit utsatt",
-            "fi": "Morphy-puolustus, Schliemann-puolustus viivästetty, Jaenisch-gambiitti viivästetty"
+            "fi": "Morphy-puolustus, Schliemann-puolustus viivästetty, Jaenisch-gambiitti viivästetty",
+            "ru": "Защита Морфи, Отложенная защита Шлимана, Отложенный гамбит Яниша",
+            "uk": "Захист Морфі, Відкладений захист Шлімана, Відкладений гамбіт Яніша"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
@@ -2518,7 +2704,9 @@
             "sv": "Morphyförsvaret, Fianchettoförsvaret uppskjuten",
             "da": "Morphyforsvaret, Fianchettoforsvaret udskudt",
             "nb": "Morphyforsvaret, Fianchettoforsvaret utsatt",
-            "fi": "Morphy-puolustus, Fiankettopuolustus viivästetty"
+            "fi": "Morphy-puolustus, Fiankettopuolustus viivästetty",
+            "ru": "Защита Морфи, Отложенная защита с фианкетто",
+            "uk": "Захист Морфі, Відкладений захист з фіанкето"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Fianchetto Defense Deferred",
@@ -2545,7 +2733,9 @@
             "sv": "Morphyförsvaret, Moderna Steinitz-försvaret, Fianchettovarianten",
             "da": "Morphyforsvaret, Moderne Steinitz-forsvaret, Fianchettovarianten",
             "nb": "Morphyforsvaret, Moderne Steinitz-forsvaret, Fianchettovarianten",
-            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus, Fiankettomuunnelma"
+            "fi": "Morphy-puolustus, Moderni Steinitz-puolustus, Fiankettomuunnelma",
+            "ru": "Защита Морфи, Современная защита Стейница, Вариант с фианкетто",
+            "uk": "Захист Морфі, Сучасний захист Стейніца, Варіант з фіанкето"
           },
           "eco": "C76",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Fianchetto Variation",
@@ -2573,7 +2763,9 @@
         "sv": "Öppen",
         "da": "Åben",
         "nb": "Åpen",
-        "fi": "Avoin"
+        "fi": "Avoin",
+        "ru": "Открытый",
+        "uk": "Відкритий"
       },
       "lines": [
         {
@@ -2596,7 +2788,9 @@
             "sv": "Öppen",
             "da": "Åben",
             "nb": "Åpen",
-            "fi": "Avoin"
+            "fi": "Avoin",
+            "ru": "Открытый",
+            "uk": "Відкритий"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -2623,7 +2817,9 @@
             "sv": "Öppen, Knorrevarianten",
             "da": "Åben, Knorrevarianten",
             "nb": "Åpen, Knorrevarianten",
-            "fi": "Avoin, Knorre-muunnelma"
+            "fi": "Avoin, Knorre-muunnelma",
+            "ru": "Открытый, Вариант Кнорре",
+            "uk": "Відкритий, Варіант Кнорре"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Knorre Variation",
@@ -2650,7 +2846,9 @@
             "sv": "Öppen, Skipworthgambit",
             "da": "Åben, Skipworthgambit",
             "nb": "Åpen, Skipworthgambit",
-            "fi": "Avoin, Skipworth-gambiitti"
+            "fi": "Avoin, Skipworth-gambiitti",
+            "ru": "Открытый, Гамбит Скипворта",
+            "uk": "Відкритий, Гамбіт Скіпворта"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Skipworth Gambit",
@@ -2677,7 +2875,9 @@
             "sv": "Öppen",
             "da": "Åben",
             "nb": "Åpen",
-            "fi": "Avoin"
+            "fi": "Avoin",
+            "ru": "Открытый",
+            "uk": "Відкритий"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -2704,7 +2904,9 @@
             "sv": "Öppen, Klassiska försvaret, Huvudvariant",
             "da": "Åben, Klassisk forsvar, Hovedvariant",
             "nb": "Åpen, Klassisk forsvar, Hovedvariant",
-            "fi": "Avoin, Klassinen puolustus, Päämuunnelma"
+            "fi": "Avoin, Klassinen puolustus, Päämuunnelma",
+            "ru": "Открытый, Классическая защита, Основной вариант",
+            "uk": "Відкритий, Класичний захист, Основний варіант"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
@@ -2731,7 +2933,9 @@
             "sv": "Öppen",
             "da": "Åben",
             "nb": "Åpen",
-            "fi": "Avoin"
+            "fi": "Avoin",
+            "ru": "Открытый",
+            "uk": "Відкритий"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -2758,7 +2962,9 @@
             "sv": "Öppen, Schlechterförsvaret",
             "da": "Åben, Schlechterforsvaret",
             "nb": "Åpen, Schlechterforsvaret",
-            "fi": "Avoin, Schlechter-puolustus"
+            "fi": "Avoin, Schlechter-puolustus",
+            "ru": "Открытый, Защита Шлехтера",
+            "uk": "Відкритий, Захист Шлехтера"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Schlechter Defense",
@@ -2785,7 +2991,9 @@
             "sv": "Öppen, Bergervarianten",
             "da": "Åben, Bergervarianten",
             "nb": "Åpen, Bergervarianten",
-            "fi": "Avoin, Berger-muunnelma"
+            "fi": "Avoin, Berger-muunnelma",
+            "ru": "Открытый, Вариант Бергера",
+            "uk": "Відкритий, Варіант Бергера"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Berger Variation",
@@ -2812,7 +3020,9 @@
             "sv": "Öppen, Harksengambit",
             "da": "Åben, Harksengambit",
             "nb": "Åpen, Harksengambit",
-            "fi": "Avoin, Harksen-gambiitti"
+            "fi": "Avoin, Harksen-gambiitti",
+            "ru": "Открытый, Гамбит Харксена",
+            "uk": "Відкритий, Гамбіт Гарксена"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Harksen Gambit",
@@ -2839,7 +3049,9 @@
             "sv": "Öppen",
             "da": "Åben",
             "nb": "Åpen",
-            "fi": "Avoin"
+            "fi": "Avoin",
+            "ru": "Открытый",
+            "uk": "Відкритий"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -2866,7 +3078,9 @@
             "sv": "Öppen, Huvudvariant",
             "da": "Åben, Hovedvariant",
             "nb": "Åpen, Hovedvariant",
-            "fi": "Avoin, Päämuunnelma"
+            "fi": "Avoin, Päämuunnelma",
+            "ru": "Открытый, Основной вариант",
+            "uk": "Відкритий, Основний варіант"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Main Line",
@@ -2893,7 +3107,9 @@
             "sv": "Öppen, Bernsteinvarianten",
             "da": "Åben, Bernsteinvarianten",
             "nb": "Åpen, Bernsteinvarianten",
-            "fi": "Avoin, Bernstein-muunnelma"
+            "fi": "Avoin, Bernstein-muunnelma",
+            "ru": "Открытый, Вариант Бернштейна",
+            "uk": "Відкритий, Варіант Бернштейна"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Bernstein Variation",
@@ -2920,7 +3136,9 @@
             "sv": "Öppen, Bernsteinvarianten, Luthervarianten",
             "da": "Åben, Bernsteinvarianten, Luthervarianten",
             "nb": "Åpen, Bernsteinvarianten, Luthervarianten",
-            "fi": "Avoin, Bernstein-muunnelma, Luther-linja"
+            "fi": "Avoin, Bernstein-muunnelma, Luther-linja",
+            "ru": "Открытый, Вариант Бернштейна, Линия Лютера",
+            "uk": "Відкритий, Варіант Бернштейна, Лінія Лютера"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Bernstein Variation, Luther Line",
@@ -2947,7 +3165,9 @@
             "sv": "Öppen, Klassiska försvaret",
             "da": "Åben, Klassisk forsvar",
             "nb": "Åpen, Klassisk forsvar",
-            "fi": "Avoin, Klassinen puolustus"
+            "fi": "Avoin, Klassinen puolustus",
+            "ru": "Открытый, Классическая защита",
+            "uk": "Відкритий, Класичний захист"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Classical Defense",
@@ -2974,7 +3194,9 @@
             "sv": "Öppen, Karpovgambit",
             "da": "Åben, Karpovgambit",
             "nb": "Åpen, Karpovgambit",
-            "fi": "Avoin, Karpov-gambiitti"
+            "fi": "Avoin, Karpov-gambiitti",
+            "ru": "Открытый, Гамбит Карпова",
+            "uk": "Відкритий, Гамбіт Карпова"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Karpov Gambit",
@@ -3001,7 +3223,9 @@
             "sv": "Öppen, Howellattacken",
             "da": "Åben, Howellangrebet",
             "nb": "Åpen, Howellangrepet",
-            "fi": "Avoin, Howell-hyökkäys"
+            "fi": "Avoin, Howell-hyökkäys",
+            "ru": "Открытый, Атака Хауэлла",
+            "uk": "Відкритий, Атака Гавелла"
           },
           "eco": "C81",
           "opening": "Ruy Lopez: Open, Howell Attack",
@@ -3028,7 +3252,9 @@
             "sv": "Öppen, Howellattacken, Ekstromvarianten",
             "da": "Åben, Howellangrebet, Ekstromvarianten",
             "nb": "Åpen, Howellangrepet, Ekstromvarianten",
-            "fi": "Avoin, Howell-hyökkäys, Ekstrom-muunnelma"
+            "fi": "Avoin, Howell-hyökkäys, Ekstrom-muunnelma",
+            "ru": "Открытый, Атака Хауэлла, Вариант Экстрёма",
+            "uk": "Відкритий, Атака Гавелла, Варіант Екстрема"
           },
           "eco": "C81",
           "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
@@ -3055,7 +3281,9 @@
             "sv": "Öppen, Howellattacken",
             "da": "Åben, Howellangrebet",
             "nb": "Åpen, Howellangrepet",
-            "fi": "Avoin, Howell-hyökkäys"
+            "fi": "Avoin, Howell-hyökkäys",
+            "ru": "Открытый, Атака Хауэлла",
+            "uk": "Відкритий, Атака Гавелла"
           },
           "eco": "C81",
           "opening": "Ruy Lopez: Open, Howell Attack",
@@ -3082,7 +3310,9 @@
             "sv": "Öppen",
             "da": "Åben",
             "nb": "Åpen",
-            "fi": "Avoin"
+            "fi": "Avoin",
+            "ru": "Открытый",
+            "uk": "Відкритий"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open",
@@ -3109,7 +3339,9 @@
             "sv": "Öppen, Italienska varianten",
             "da": "Åben, Italiensk variant",
             "nb": "Åpen, Italiensk variant",
-            "fi": "Avoin, Italialainen muunnelma"
+            "fi": "Avoin, Italialainen muunnelma",
+            "ru": "Открытый, Итальянский вариант",
+            "uk": "Відкритий, Італійський варіант"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Italian Variation",
@@ -3136,7 +3368,9 @@
             "sv": "Öppen, St. Petersburgvarianten",
             "da": "Åben, St. Petersburgvarianten",
             "nb": "Åpen, St. Petersburgvarianten",
-            "fi": "Avoin, St. Petersburg-muunnelma"
+            "fi": "Avoin, St. Petersburg-muunnelma",
+            "ru": "Открытый, Петербургский вариант",
+            "uk": "Відкритий, Петербурзький варіант"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, St. Petersburg Variation",
@@ -3163,7 +3397,9 @@
             "sv": "Öppen, Dilworthvarianten",
             "da": "Åben, Dilworthvarianten",
             "nb": "Åpen, Dilworthvarianten",
-            "fi": "Avoin, Dilworth-muunnelma"
+            "fi": "Avoin, Dilworth-muunnelma",
+            "ru": "Открытый, Вариант Дилворта",
+            "uk": "Відкритий, Варіант Ділворта"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Dilworth Variation",
@@ -3190,7 +3426,9 @@
             "sv": "Öppen, Motzkoattacken",
             "da": "Åben, Motzkoangrebet",
             "nb": "Åpen, Motzkoangrepet",
-            "fi": "Avoin, Motzko-hyökkäys"
+            "fi": "Avoin, Motzko-hyökkäys",
+            "ru": "Открытый, Атака Моцко",
+            "uk": "Відкритий, Атака Моцка"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Motzko Attack",
@@ -3217,7 +3455,9 @@
             "sv": "Öppen, Motzkoattacken, Nenarokovvarianten",
             "da": "Åben, Motzkoangrebet, Nenarokovvarianten",
             "nb": "Åpen, Motzkoangrepet, Nenarokovvarianten",
-            "fi": "Avoin, Motzko-hyökkäys, Nenarokov-muunnelma"
+            "fi": "Avoin, Motzko-hyökkäys, Nenarokov-muunnelma",
+            "ru": "Открытый, Атака Моцко, Вариант Ненарокова",
+            "uk": "Відкритий, Атака Моцка, Варіант Ненарокова"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Motzko Attack, Nenarokov Variation",
@@ -3244,7 +3484,9 @@
             "sv": "Öppen, Klassiska försvaret",
             "da": "Åben, Klassisk forsvar",
             "nb": "Åpen, Klassisk forsvar",
-            "fi": "Avoin, Klassinen puolustus"
+            "fi": "Avoin, Klassinen puolustus",
+            "ru": "Открытый, Классическая защита",
+            "uk": "Відкритий, Класичний захист"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Classical Defense",
@@ -3271,7 +3513,9 @@
             "sv": "Öppen, Malkinvarianten",
             "da": "Åben, Malkinvarianten",
             "nb": "Åpen, Malkinvarianten",
-            "fi": "Avoin, Malkin-muunnelma"
+            "fi": "Avoin, Malkin-muunnelma",
+            "ru": "Открытый, Вариант Малкина",
+            "uk": "Відкритий, Варіант Малкіна"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Malkin Variation",
@@ -3298,7 +3542,9 @@
             "sv": "Öppen, Breslauvarianten",
             "da": "Åben, Breslauvarianten",
             "nb": "Åpen, Breslauvarianten",
-            "fi": "Avoin, Breslau-muunnelma"
+            "fi": "Avoin, Breslau-muunnelma",
+            "ru": "Открытый, Бреславльский вариант",
+            "uk": "Відкритий, Бреславльський варіант"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Breslau Variation",
@@ -3325,7 +3571,9 @@
             "sv": "Öppen, Tarraschfällan",
             "da": "Åben, Tarraschfælden",
             "nb": "Åpen, Tarraschfellen",
-            "fi": "Avoin, Tarrasch-ansa"
+            "fi": "Avoin, Tarrasch-ansa",
+            "ru": "Открытый, Ловушка Тарраша",
+            "uk": "Відкритий, Пастка Тарраша"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Tarrasch Trap",
@@ -3352,7 +3600,9 @@
             "sv": "Öppen, Berlinvarianten",
             "da": "Åben, Berlinervarianten",
             "nb": "Åpen, Berlinervarianten",
-            "fi": "Avoin, Berliiniläinen muunnelma"
+            "fi": "Avoin, Berliiniläinen muunnelma",
+            "ru": "Открытый, Берлинский вариант",
+            "uk": "Відкритий, Берлінський варіант"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Berlin Variation",
@@ -3379,7 +3629,9 @@
             "sv": "Öppen, Zukertortvarianten",
             "da": "Åben, Zukertortvarianten",
             "nb": "Åpen, Zukertortvarianten",
-            "fi": "Avoin, Zukertort-muunnelma"
+            "fi": "Avoin, Zukertort-muunnelma",
+            "ru": "Открытый, Вариант Цукерторта",
+            "uk": "Відкритий, Варіант Цукерторта"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Zukertort Variation",
@@ -3406,7 +3658,9 @@
             "sv": "Öppen, Friessattacken",
             "da": "Åben, Friessangrebet",
             "nb": "Åpen, Friessangrepet",
-            "fi": "Avoin, Friess-hyökkäys"
+            "fi": "Avoin, Friess-hyökkäys",
+            "ru": "Открытый, Атака Фриса",
+            "uk": "Відкритий, Атака Фріса"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Friess Attack",
@@ -3433,7 +3687,9 @@
             "sv": "Öppen, Richtervarianten",
             "da": "Åben, Richtervarianten",
             "nb": "Åpen, Richtervarianten",
-            "fi": "Avoin, Richter-muunnelma"
+            "fi": "Avoin, Richter-muunnelma",
+            "ru": "Открытый, Вариант Рихтера",
+            "uk": "Відкритий, Варіант Ріхтера"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Richter Variation",
@@ -3460,7 +3716,9 @@
             "sv": "Öppen, Rigavarianten",
             "da": "Åben, Rigavarianten",
             "nb": "Åpen, Rigavarianten",
-            "fi": "Avoin, Riga-muunnelma"
+            "fi": "Avoin, Riga-muunnelma",
+            "ru": "Открытый, Рижский вариант",
+            "uk": "Відкритий, Ризький варіант"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Riga Variation",
@@ -3488,7 +3746,9 @@
         "nb": "Berlinerforsvaret",
         "sv": "Berlinförsvaret",
         "da": "Berlinerforsvaret",
-        "fi": "Berliiniläinen puolustus"
+        "fi": "Berliiniläinen puolustus",
+        "ru": "Берлинская защита",
+        "uk": "Берлінський захист"
       },
       "lines": [
         {
@@ -3511,7 +3771,9 @@
             "nb": "Berlinerforsvaret",
             "sv": "Berlinförsvaret",
             "da": "Berlinerforsvaret",
-            "fi": "Berliiniläinen puolustus"
+            "fi": "Berliiniläinen puolustus",
+            "ru": "Берлинская защита",
+            "uk": "Берлінський захист"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense",
@@ -3538,7 +3800,9 @@
             "nb": "Berlinerforsvaret",
             "sv": "Berlinförsvaret",
             "da": "Berlinerforsvaret",
-            "fi": "Berliiniläinen puolustus"
+            "fi": "Berliiniläinen puolustus",
+            "ru": "Берлинская защита",
+            "uk": "Берлінський захист"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense",
@@ -3565,7 +3829,9 @@
             "sv": "Berlinförsvaret, Beverwijkvarianten",
             "da": "Berlinerforsvaret, Beverwijkvarianten",
             "nb": "Berlinerforsvaret, Beverwijkvarianten",
-            "fi": "Berliiniläinen puolustus, Beverwijk-muunnelma"
+            "fi": "Berliiniläinen puolustus, Beverwijk-muunnelma",
+            "ru": "Берлинская защита, Бевервейкский вариант",
+            "uk": "Берлінський захист, Бевервейкський варіант"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Beverwijk Variation",
@@ -3592,7 +3858,9 @@
             "sv": "Berlinförsvaret, Metspövarianten",
             "da": "Berlinerforsvaret, Fiskestangvarianten",
             "nb": "Berlinerforsvaret, Fiskestangvarianten",
-            "fi": "Berliiniläinen puolustus, Onkivapamuunnelma"
+            "fi": "Berliiniläinen puolustus, Onkivapamuunnelma",
+            "ru": "Берлинская защита, Вариант «Удочка»",
+            "uk": "Берлінський захист, Варіант «Вудка»"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Fishing Pole Variation",
@@ -3619,7 +3887,9 @@
             "sv": "Berlinförsvaret, Riogambit antagen",
             "da": "Berlinerforsvaret, Riogambit modtaget",
             "nb": "Berlinerforsvaret, Riogambit mottatt",
-            "fi": "Berliiniläinen puolustus, Rio-gambiitti hyväksytty"
+            "fi": "Berliiniläinen puolustus, Rio-gambiitti hyväksytty",
+            "ru": "Берлинская защита, Принятый гамбит Рио",
+            "uk": "Берлінський захист, Прийнятий гамбіт Ріо"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rio Gambit Accepted",
@@ -3646,7 +3916,9 @@
             "sv": "Berlinförsvaret, Rio de Janeiro-varianten",
             "da": "Berlinerforsvaret, Rio de Janeiro-varianten",
             "nb": "Berlinerforsvaret, Rio de Janeiro-varianten",
-            "fi": "Berliiniläinen puolustus, Rio de Janeiro-muunnelma"
+            "fi": "Berliiniläinen puolustus, Rio de Janeiro-muunnelma",
+            "ru": "Берлинская защита, Вариант «Рио-де-Жанейро»",
+            "uk": "Берлінський захист, Варіант «Ріо-де-Жанейро»"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
@@ -3673,7 +3945,9 @@
             "sv": "Berlinförsvaret, Rio de Janeiro-varianten",
             "da": "Berlinerforsvaret, Rio de Janeiro-varianten",
             "nb": "Berlinerforsvaret, Rio de Janeiro-varianten",
-            "fi": "Berliiniläinen puolustus, Rio de Janeiro-muunnelma"
+            "fi": "Berliiniläinen puolustus, Rio de Janeiro-muunnelma",
+            "ru": "Берлинская защита, Вариант «Рио-де-Жанейро»",
+            "uk": "Берлінський захист, Варіант «Ріо-де-Жанейро»"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
@@ -3700,7 +3974,9 @@
             "sv": "Berlinförsvaret, Winawerattacken",
             "da": "Berlinerforsvaret, Winawerangrebet",
             "nb": "Berlinerforsvaret, Winawerangrepet",
-            "fi": "Berliiniläinen puolustus, Winawer-hyökkäys"
+            "fi": "Berliiniläinen puolustus, Winawer-hyökkäys",
+            "ru": "Берлинская защита, Атака Винавера",
+            "uk": "Берлінський захист, Атака Вінавера"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Winawer Attack",
@@ -3727,7 +4003,9 @@
             "sv": "Berlinförsvaret, Pillsburyvarianten",
             "da": "Berlinerforsvaret, Pillsburyvarianten",
             "nb": "Berlinerforsvaret, Pillsburyvarianten",
-            "fi": "Berliiniläinen puolustus, Pillsbury-muunnelma"
+            "fi": "Berliiniläinen puolustus, Pillsbury-muunnelma",
+            "ru": "Берлинская защита, Вариант Пильсбери",
+            "uk": "Берлінський захист, Варіант Пілсбері"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Pillsbury Variation",
@@ -3754,7 +4032,9 @@
             "sv": "Berlinförsvaret, Zukertortvarianten",
             "da": "Berlinerforsvaret, Zukertortvarianten",
             "nb": "Berlinerforsvaret, Zukertortvarianten",
-            "fi": "Berliiniläinen puolustus, Zukertort-muunnelma"
+            "fi": "Berliiniläinen puolustus, Zukertort-muunnelma",
+            "ru": "Берлинская защита, Вариант Цукерторта",
+            "uk": "Берлінський захист, Варіант Цукерторта"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Zukertort Variation",
@@ -3781,7 +4061,9 @@
             "sv": "Berlinförsvaret, Cordelvarianten",
             "da": "Berlinerforsvaret, Cordelvarianten",
             "nb": "Berlinerforsvaret, Cordelvarianten",
-            "fi": "Berliiniläinen puolustus, Cordel-muunnelma"
+            "fi": "Berliiniläinen puolustus, Cordel-muunnelma",
+            "ru": "Берлинская защита, Вариант Корделя",
+            "uk": "Берлінський захист, Варіант Корделя"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Cordel Variation",
@@ -3808,7 +4090,9 @@
             "sv": "Berlinförsvaret, Trifunovicvarianten",
             "da": "Berlinerforsvaret, Trifunovicvarianten",
             "nb": "Berlinerforsvaret, Trifunovicvarianten",
-            "fi": "Berliiniläinen puolustus, Trifunovic-muunnelma"
+            "fi": "Berliiniläinen puolustus, Trifunovic-muunnelma",
+            "ru": "Берлинская защита, Вариант Трифуновича",
+            "uk": "Берлінський захист, Варіант Трифуновича"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Trifunovic Variation",
@@ -3835,7 +4119,9 @@
             "sv": "Berlinförsvaret, Minckwitzvarianten",
             "da": "Berlinerforsvaret, Minckwitzvarianten",
             "nb": "Berlinerforsvaret, Minckwitzvarianten",
-            "fi": "Berliiniläinen puolustus, Minckwitz-muunnelma"
+            "fi": "Berliiniläinen puolustus, Minckwitz-muunnelma",
+            "ru": "Берлинская защита, Вариант Минквица",
+            "uk": "Берлінський захист, Варіант Мінквіца"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Minckwitz Variation",
@@ -3862,7 +4148,9 @@
             "sv": "Berlinförsvaret, l'Hermet-varianten",
             "da": "Berlinerforsvaret, l'Hermet-varianten",
             "nb": "Berlinerforsvaret, l'Hermet-varianten",
-            "fi": "Berliiniläinen puolustus, l'Hermet-muunnelma"
+            "fi": "Berliiniläinen puolustus, l'Hermet-muunnelma",
+            "ru": "Берлинская защита, Вариант Эрме",
+            "uk": "Берлінський захист, Варіант Ерме"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation",
@@ -3889,7 +4177,9 @@
             "sv": "Berlinförsvaret, l'Hermet-varianten, Westerinenvarianten",
             "da": "Berlinerforsvaret, l'Hermet-varianten, Westerinenvarianten",
             "nb": "Berlinerforsvaret, l'Hermet-varianten, Westerinenvarianten",
-            "fi": "Berliiniläinen puolustus, l'Hermet-muunnelma, Westerinen-linja"
+            "fi": "Berliiniläinen puolustus, l'Hermet-muunnelma, Westerinen-linja",
+            "ru": "Берлинская защита, Вариант Эрме, Линия Вестеринена",
+            "uk": "Берлінський захист, Варіант Ерме, Лінія Вестерінена"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation, Westerinen Line",
@@ -3916,7 +4206,9 @@
             "sv": "Berlinförsvaret, l'Hermet-varianten, Berlinmursförsvaret",
             "da": "Berlinerforsvaret, l'Hermet-varianten, Berlinmurforsvaret",
             "nb": "Berlinerforsvaret, l'Hermet-varianten, Berlinmurforsvaret",
-            "fi": "Berliiniläinen puolustus, l'Hermet-muunnelma, Berliinin muuripuolustus"
+            "fi": "Berliiniläinen puolustus, l'Hermet-muunnelma, Berliinin muuripuolustus",
+            "ru": "Берлинская защита, Вариант Эрме, Защита «Берлинская стена»",
+            "uk": "Берлінський захист, Варіант Ерме, Захист «Берлінська стіна»"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense",
@@ -3943,7 +4235,9 @@
             "sv": "Berlinförsvaret, Berlinmuren",
             "da": "Berlinerforsvaret, Berlinmuren",
             "nb": "Berlinerforsvaret, Berlinmuren",
-            "fi": "Berliiniläinen puolustus, Berliinin muuri"
+            "fi": "Berliiniläinen puolustus, Berliinin muuri",
+            "ru": "Берлинская защита, Берлинская стена",
+            "uk": "Берлінський захист, Берлінська стіна"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Berlin Wall",
@@ -3970,7 +4264,9 @@
             "sv": "Berlinförsvaret, Rosenthalvarianten",
             "da": "Berlinerforsvaret, Rosenthalvarianten",
             "nb": "Berlinerforsvaret, Rosenthalvarianten",
-            "fi": "Berliiniläinen puolustus, Rosenthal-muunnelma"
+            "fi": "Berliiniläinen puolustus, Rosenthal-muunnelma",
+            "ru": "Берлинская защита, Вариант Розенталя",
+            "uk": "Берлінський захист, Варіант Розенталя"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rosenthal Variation",
@@ -3997,7 +4293,9 @@
             "sv": "Berlinförsvaret, Förbättrade Steinitz-försvaret",
             "da": "Berlinerforsvaret, Forbedret Steinitz-forsvaret",
             "nb": "Berlinerforsvaret, Forbedret Steinitz-forsvaret",
-            "fi": "Berliiniläinen puolustus, Parannettu Steinitz-puolustus"
+            "fi": "Berliiniläinen puolustus, Parannettu Steinitz-puolustus",
+            "ru": "Берлинская защита, Улучшенная защита Стейница",
+            "uk": "Берлінський захист, Покращений захист Стейніца"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Improved Steinitz Defense",
@@ -4024,7 +4322,9 @@
             "sv": "Berlinförsvaret, Igelkottvarianten",
             "da": "Berlinerforsvaret, Pindsvinevarianten",
             "nb": "Berlinerforsvaret, Pinnsvinvarianten",
-            "fi": "Berliiniläinen puolustus, Siilimuunnelma"
+            "fi": "Berliiniläinen puolustus, Siilimuunnelma",
+            "ru": "Берлинская защита, Вариант «Ёж»",
+            "uk": "Берлінський захист, Варіант «Їжак»"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Hedgehog Variation",
@@ -4051,7 +4351,9 @@
             "sv": "Berlinförsvaret, Stängda Bernstein-varianten",
             "da": "Berlinerforsvaret, Lukket Bernstein-varianten",
             "nb": "Berlinerforsvaret, Lukket Bernstein-varianten",
-            "fi": "Berliiniläinen puolustus, Suljettu Bernstein-muunnelma"
+            "fi": "Berliiniläinen puolustus, Suljettu Bernstein-muunnelma",
+            "ru": "Берлинская защита, Закрытый вариант Бернштейна",
+            "uk": "Берлінський захист, Закритий варіант Бернштейна"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Closed Bernstein Variation",
@@ -4078,7 +4380,9 @@
             "sv": "Berlinförsvaret, Stängda Showalter-varianten",
             "da": "Berlinerforsvaret, Lukket Showalter-varianten",
             "nb": "Berlinerforsvaret, Lukket Showalter-varianten",
-            "fi": "Berliiniläinen puolustus, Suljettu Showalter-muunnelma"
+            "fi": "Berliiniläinen puolustus, Suljettu Showalter-muunnelma",
+            "ru": "Берлинская защита, Закрытый вариант Шоуолтера",
+            "uk": "Берлінський захист, Закритий варіант Шоуолтера"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Closed Showalter Variation",
@@ -4105,7 +4409,9 @@
             "sv": "Berlinförsvaret, Stängda Wolf-varianten",
             "da": "Berlinerforsvaret, Lukket Wolf-varianten",
             "nb": "Berlinerforsvaret, Lukket Wolf-varianten",
-            "fi": "Berliiniläinen puolustus, Suljettu Wolf-muunnelma"
+            "fi": "Berliiniläinen puolustus, Suljettu Wolf-muunnelma",
+            "ru": "Берлинская защита, Закрытый вариант Вольфа",
+            "uk": "Берлінський захист, Закритий варіант Вольфа"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Closed Wolf Variation",
@@ -4132,7 +4438,9 @@
             "sv": "Berlinförsvaret, Anti-Berlinvarianten",
             "da": "Berlinerforsvaret, Anti-Berlinervarianten",
             "nb": "Berlinerforsvaret, Anti-Berlinervarianten",
-            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma"
+            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma",
+            "ru": "Берлинская защита, Вариант «Анти-Берлин»",
+            "uk": "Берлінський захист, Варіант «Анти-Берлін»"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation",
@@ -4159,7 +4467,9 @@
             "sv": "Berlinförsvaret, Anti-Berlinvarianten, Kaufmannvarianten",
             "da": "Berlinerforsvaret, Anti-Berlinervarianten, Kaufmannvarianten",
             "nb": "Berlinerforsvaret, Anti-Berlinervarianten, Kaufmannvarianten",
-            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma, Kaufmann-muunnelma"
+            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma, Kaufmann-muunnelma",
+            "ru": "Берлинская защита, Вариант «Анти-Берлин», Вариант Кауфмана",
+            "uk": "Берлінський захист, Варіант «Анти-Берлін», Варіант Кауфмана"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Kaufmann Variation",
@@ -4186,7 +4496,9 @@
             "sv": "Berlinförsvaret, Anti-Berlinvarianten, Mortimervarianten",
             "da": "Berlinerforsvaret, Anti-Berlinervarianten, Mortimervarianten",
             "nb": "Berlinerforsvaret, Anti-Berlinervarianten, Mortimervarianten",
-            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma, Mortimer-muunnelma"
+            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma, Mortimer-muunnelma",
+            "ru": "Берлинская защита, Вариант «Анти-Берлин», Вариант Мортимера",
+            "uk": "Берлінський захист, Варіант «Анти-Берлін», Варіант Мортімера"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Variation",
@@ -4213,7 +4525,9 @@
             "sv": "Berlinförsvaret, Anti-Berlinvarianten, Mortimerfällan",
             "da": "Berlinerforsvaret, Anti-Berlinervarianten, Mortimerfælden",
             "nb": "Berlinerforsvaret, Anti-Berlinervarianten, Mortimerfellen",
-            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma, Mortimer-ansa"
+            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma, Mortimer-ansa",
+            "ru": "Берлинская защита, Вариант «Анти-Берлин», Ловушка Мортимера",
+            "uk": "Берлінський захист, Варіант «Анти-Берлін», Пастка Мортімера"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Trap",
@@ -4240,7 +4554,9 @@
             "sv": "Berlinförsvaret, Anti-Berlinvarianten, Anderssenvarianten",
             "da": "Berlinerforsvaret, Anti-Berlinervarianten, Anderssenvarianten",
             "nb": "Berlinerforsvaret, Anti-Berlinervarianten, Anderssenvarianten",
-            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma, Anderssen-muunnelma"
+            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma, Anderssen-muunnelma",
+            "ru": "Берлинская защита, Вариант «Анти-Берлин», Вариант Андерсена",
+            "uk": "Берлінський захист, Варіант «Анти-Берлін», Варіант Андерсена"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Anderssen Variation",
@@ -4267,7 +4583,9 @@
             "sv": "Berlinförsvaret, Anti-Berlinvarianten, Durasvarianten",
             "da": "Berlinerforsvaret, Anti-Berlinervarianten, Durasvarianten",
             "nb": "Berlinerforsvaret, Anti-Berlinervarianten, Durasvarianten",
-            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma, Duras-muunnelma"
+            "fi": "Berliiniläinen puolustus, Anti-Berliini-muunnelma, Duras-muunnelma",
+            "ru": "Берлинская защита, Вариант «Анти-Берлин», Вариант Дураса",
+            "uk": "Берлінський захист, Варіант «Анти-Берлін», Варіант Дураса"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Duras Variation",
@@ -4294,7 +4612,9 @@
             "sv": "Berlinförsvaret, Nyholmattacken",
             "da": "Berlinerforsvaret, Nyholmangrebet",
             "nb": "Berlinerforsvaret, Nyholmangrepet",
-            "fi": "Berliiniläinen puolustus, Nyholm-hyökkäys"
+            "fi": "Berliiniläinen puolustus, Nyholm-hyökkäys",
+            "ru": "Берлинская защита, Атака Нюхольма",
+            "uk": "Берлінський захист, Атака Нюгольма"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Nyholm Attack",
@@ -4321,7 +4641,9 @@
             "sv": "Berlinförsvaret, Tarraschfällan",
             "da": "Berlinerforsvaret, Tarraschfælden",
             "nb": "Berlinerforsvaret, Tarraschfellen",
-            "fi": "Berliiniläinen puolustus, Tarrasch-ansa"
+            "fi": "Berliiniläinen puolustus, Tarrasch-ansa",
+            "ru": "Берлинская защита, Ловушка Тарраша",
+            "uk": "Берлінський захист, Пастка Тарраша"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Tarrasch Trap",
@@ -4349,7 +4671,9 @@
         "sv": "Avbytesvarianten",
         "da": "Afbytningsvarianten",
         "nb": "Avbyttevarianten",
-        "fi": "Vaihtomuunnelma"
+        "fi": "Vaihtomuunnelma",
+        "ru": "Разменный вариант",
+        "uk": "Розмінний варіант"
       },
       "lines": [
         {
@@ -4372,7 +4696,9 @@
             "sv": "Avbytesvarianten",
             "da": "Afbytningsvarianten",
             "nb": "Avbyttevarianten",
-            "fi": "Vaihtomuunnelma"
+            "fi": "Vaihtomuunnelma",
+            "ru": "Разменный вариант",
+            "uk": "Розмінний варіант"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation",
@@ -4399,7 +4725,9 @@
             "sv": "Avbytesvarianten, Lutikovvarianten",
             "da": "Afbytningsvarianten, Lutikovvarianten",
             "nb": "Avbyttevarianten, Lutikovvarianten",
-            "fi": "Vaihtomuunnelma, Lutikov-muunnelma"
+            "fi": "Vaihtomuunnelma, Lutikov-muunnelma",
+            "ru": "Разменный вариант, Вариант Лутикова",
+            "uk": "Розмінний варіант, Варіант Лутікова"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
@@ -4426,7 +4754,9 @@
             "sv": "Avbytesvarianten, Keresvarianten",
             "da": "Afbytningsvarianten, Keresvarianten",
             "nb": "Avbyttevarianten, Keresvarianten",
-            "fi": "Vaihtomuunnelma, Keres-muunnelma"
+            "fi": "Vaihtomuunnelma, Keres-muunnelma",
+            "ru": "Разменный вариант, Вариант Кереса",
+            "uk": "Розмінний варіант, Варіант Кереса"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
@@ -4453,7 +4783,9 @@
             "sv": "Avbytesvarianten, Romanovskyvarianten",
             "da": "Afbytningsvarianten, Romanovskyvarianten",
             "nb": "Avbyttevarianten, Romanovskyvarianten",
-            "fi": "Vaihtomuunnelma, Romanovsky-muunnelma"
+            "fi": "Vaihtomuunnelma, Romanovsky-muunnelma",
+            "ru": "Разменный вариант, Вариант Романовского",
+            "uk": "Розмінний варіант, Варіант Романовського"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
@@ -4480,7 +4812,9 @@
             "sv": "Avbytesvarianten, Normala varianten",
             "da": "Afbytningsvarianten, Normal variant",
             "nb": "Avbyttevarianten, Normal variant",
-            "fi": "Vaihtomuunnelma, Normaali muunnelma"
+            "fi": "Vaihtomuunnelma, Normaali muunnelma",
+            "ru": "Разменный вариант, Обычный вариант",
+            "uk": "Розмінний варіант, Звичайний варіант"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
@@ -4507,7 +4841,9 @@
             "sv": "Avbytesvarianten, Kungslöparvarianten",
             "da": "Afbytningsvarianten, Kongeløbervarianten",
             "nb": "Avbyttevarianten, Kongeløpervarianten",
-            "fi": "Vaihtomuunnelma, Kuningaslähettimuunnelma"
+            "fi": "Vaihtomuunnelma, Kuningaslähettimuunnelma",
+            "ru": "Разменный вариант, Вариант королевского слона",
+            "uk": "Розмінний варіант, Варіант королівського слона"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
@@ -4534,7 +4870,9 @@
             "sv": "Avbytesvarianten, Alapingambit",
             "da": "Afbytningsvarianten, Alapingambit",
             "nb": "Avbyttevarianten, Alapingambit",
-            "fi": "Vaihtomuunnelma, Alapin-gambiitti"
+            "fi": "Vaihtomuunnelma, Alapin-gambiitti",
+            "ru": "Разменный вариант, Гамбит Алапина",
+            "uk": "Розмінний варіант, Гамбіт Алапіна"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
@@ -4561,7 +4899,9 @@
             "sv": "Avbytesvarianten, Bronsteinvarianten",
             "da": "Afbytningsvarianten, Bronsteinvarianten",
             "nb": "Avbyttevarianten, Bronsteinvarianten",
-            "fi": "Vaihtomuunnelma, Bronstein-muunnelma"
+            "fi": "Vaihtomuunnelma, Bronstein-muunnelma",
+            "ru": "Разменный вариант, Вариант Бронштейна",
+            "uk": "Розмінний варіант, Варіант Бронштейна"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
@@ -4588,7 +4928,9 @@
             "sv": "Avbytesvarianten, Gligoricvarianten",
             "da": "Afbytningsvarianten, Gligoricvarianten",
             "nb": "Avbyttevarianten, Gligoricvarianten",
-            "fi": "Vaihtomuunnelma, Gligoric-muunnelma"
+            "fi": "Vaihtomuunnelma, Gligoric-muunnelma",
+            "ru": "Разменный вариант, Вариант Глигорича",
+            "uk": "Розмінний варіант, Варіант Глігорича"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
@@ -4615,7 +4957,9 @@
             "sv": "Avbytesvarianten, Alekhinevarianten",
             "da": "Afbytningsvarianten, Alekhinevarianten",
             "nb": "Avbyttevarianten, Alekhinevarianten",
-            "fi": "Vaihtomuunnelma, Alekhine-muunnelma"
+            "fi": "Vaihtomuunnelma, Alekhine-muunnelma",
+            "ru": "Разменный вариант, Вариант Алехина",
+            "uk": "Розмінний варіант, Варіант Алехіна"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Alekhine Variation",
@@ -4643,7 +4987,9 @@
         "sv": "Marshallattacken",
         "da": "Marshallangrebet",
         "nb": "Marshallangrepet",
-        "fi": "Marshallin gambiitti"
+        "fi": "Marshallin gambiitti",
+        "ru": "Контратака Маршалла",
+        "uk": "Атака Маршалла"
       },
       "lines": [
         {
@@ -4666,7 +5012,9 @@
             "sv": "Marshallattacken",
             "da": "Marshallangrebet",
             "nb": "Marshallangrepet",
-            "fi": "Marshallin gambiitti"
+            "fi": "Marshallin gambiitti",
+            "ru": "Контратака Маршалла",
+            "uk": "Атака Маршалла"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack",
@@ -4693,7 +5041,9 @@
             "sv": "Marshallattacken, Ursprungliga Marshall-attacken",
             "da": "Marshallangrebet, Oprindelig Marshall-angrebet",
             "nb": "Marshallangrepet, Opprinnelig Marshall-angrepet",
-            "fi": "Marshall-hyökkäys, Alkuperäinen Marshall-hyökkäys"
+            "fi": "Marshall-hyökkäys, Alkuperäinen Marshall-hyökkäys",
+            "ru": "Атака Маршалла, Первоначальная атака Маршалла",
+            "uk": "Атака Маршалла, Початкова атака Маршалла"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Original Marshall Attack",
@@ -4720,7 +5070,9 @@
             "sv": "Marshallattacken, Moderna varianten",
             "da": "Marshallangrebet, Moderne variant",
             "nb": "Marshallangrepet, Moderne variant",
-            "fi": "Marshall-hyökkäys, Moderni muunnelma"
+            "fi": "Marshall-hyökkäys, Moderni muunnelma",
+            "ru": "Атака Маршалла, Современный вариант",
+            "uk": "Атака Маршалла, Сучасний варіант"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Modern Variation",
@@ -4747,7 +5099,9 @@
             "sv": "Marshallattacken, Re3varianten",
             "da": "Marshallangrebet, Re3varianten",
             "nb": "Marshallangrepet, Re3varianten",
-            "fi": "Marshall-hyökkäys, Re3-muunnelma"
+            "fi": "Marshall-hyökkäys, Re3-muunnelma",
+            "ru": "Атака Маршалла, Вариант с Re3",
+            "uk": "Атака Маршалла, Варіант з Re3"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Re3 Variation",
@@ -4774,7 +5128,9 @@
             "sv": "Marshallattacken, Huvudvariant",
             "da": "Marshallangrebet, Hovedvariant",
             "nb": "Marshallangrepet, Hovedvariant",
-            "fi": "Marshall-hyökkäys, Päämuunnelma"
+            "fi": "Marshall-hyökkäys, Päämuunnelma",
+            "ru": "Атака Маршалла, Основной вариант",
+            "uk": "Атака Маршалла, Основний варіант"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Main Line",
@@ -4801,7 +5157,9 @@
             "sv": "Marshallattacken, Moderna huvudvarianten",
             "da": "Marshallangrebet, Moderne hovedvariant",
             "nb": "Marshallangrepet, Moderne hovedvariant",
-            "fi": "Marshall-hyökkäys, Moderni päälinja"
+            "fi": "Marshall-hyökkäys, Moderni päälinja",
+            "ru": "Атака Маршалла, Современная основная линия",
+            "uk": "Атака Маршалла, Сучасна основна лінія"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Modern Main Line",
@@ -4828,7 +5186,9 @@
             "sv": "Marshallattacken, Huvudvariant, Spasskyvarianten",
             "da": "Marshallangrebet, Hovedvariant, Spasskyvarianten",
             "nb": "Marshallangrepet, Hovedvariant, Spasskyvarianten",
-            "fi": "Marshall-hyökkäys, Päämuunnelma, Spassky-muunnelma"
+            "fi": "Marshall-hyökkäys, Päämuunnelma, Spassky-muunnelma",
+            "ru": "Атака Маршалла, Основной вариант, Вариант Спасского",
+            "uk": "Атака Маршалла, Основний варіант, Варіант Спаського"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Main Line, Spassky Variation",
@@ -4855,7 +5215,9 @@
             "sv": "Marshallattacken",
             "da": "Marshallangrebet",
             "nb": "Marshallangrepet",
-            "fi": "Marshallin gambiitti"
+            "fi": "Marshallin gambiitti",
+            "ru": "Контратака Маршалла",
+            "uk": "Атака Маршалла"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack",
@@ -4882,7 +5244,9 @@
             "sv": "Marshallattacken, Steinervarianten",
             "da": "Marshallangrebet, Steinervarianten",
             "nb": "Marshallangrepet, Steinervarianten",
-            "fi": "Marshall-hyökkäys, Steiner-muunnelma"
+            "fi": "Marshall-hyökkäys, Steiner-muunnelma",
+            "ru": "Атака Маршалла, Вариант Штейнера",
+            "uk": "Атака Маршалла, Варіант Штейнера"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Steiner Variation",
@@ -4910,7 +5274,9 @@
         "sv": "Schliemannförsvaret",
         "da": "Schliemannforsvaret",
         "nb": "Schliemannforsvaret",
-        "fi": "Schliemann-puolustus"
+        "fi": "Schliemann-puolustus",
+        "ru": "Защита Шлимана",
+        "uk": "Захист Шлімана"
       },
       "lines": [
         {
@@ -4933,7 +5299,9 @@
             "sv": "Schliemannförsvaret",
             "da": "Schliemannforsvaret",
             "nb": "Schliemannforsvaret",
-            "fi": "Schliemann-puolustus"
+            "fi": "Schliemann-puolustus",
+            "ru": "Защита Шлимана",
+            "uk": "Захист Шлімана"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense",
@@ -4960,7 +5328,9 @@
             "sv": "Schliemannförsvaret, Avbytesvarianten",
             "da": "Schliemannforsvaret, Afbytningsvarianten",
             "nb": "Schliemannforsvaret, Avbyttevarianten",
-            "fi": "Schliemann-puolustus, Vaihtomuunnelma"
+            "fi": "Schliemann-puolustus, Vaihtomuunnelma",
+            "ru": "Защита Шлимана, Разменный вариант",
+            "uk": "Захист Шлімана, Розмінний варіант"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Exchange Variation",
@@ -4987,7 +5357,9 @@
             "sv": "Schliemannförsvaret, Dyckhoffvarianten",
             "da": "Schliemannforsvaret, Dyckhoffvarianten",
             "nb": "Schliemannforsvaret, Dyckhoffvarianten",
-            "fi": "Schliemann-puolustus, Dyckhoff-muunnelma"
+            "fi": "Schliemann-puolustus, Dyckhoff-muunnelma",
+            "ru": "Защита Шлимана, Вариант Дикхоффа",
+            "uk": "Захист Шлімана, Варіант Дікгоффа"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
@@ -5014,7 +5386,9 @@
             "sv": "Schliemannförsvaret, Kostićförsvaret",
             "da": "Schliemannforsvaret, Kostićforsvaret",
             "nb": "Schliemannforsvaret, Kostićforsvaret",
-            "fi": "Schliemann-puolustus, Kostić-puolustus"
+            "fi": "Schliemann-puolustus, Kostić-puolustus",
+            "ru": "Защита Шлимана, Защита Костича",
+            "uk": "Захист Шлімана, Захист Костича"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Kostić Defense",
@@ -5041,7 +5415,9 @@
             "sv": "Schliemannförsvaret, Tartakowervarianten",
             "da": "Schliemannforsvaret, Tartakowervarianten",
             "nb": "Schliemannforsvaret, Tartakowervarianten",
-            "fi": "Schliemann-puolustus, Tartakower-muunnelma"
+            "fi": "Schliemann-puolustus, Tartakower-muunnelma",
+            "ru": "Защита Шлимана, Вариант Тартаковера",
+            "uk": "Захист Шлімана, Варіант Тартаковера"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
@@ -5068,7 +5444,9 @@
             "sv": "Schliemannförsvaret, Möhringvarianten",
             "da": "Schliemannforsvaret, Möhringvarianten",
             "nb": "Schliemannforsvaret, Möhringvarianten",
-            "fi": "Schliemann-puolustus, Möhring-muunnelma"
+            "fi": "Schliemann-puolustus, Möhring-muunnelma",
+            "ru": "Защита Шлимана, Вариант Мёринга",
+            "uk": "Захист Шлімана, Варіант Мерінга"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
@@ -5095,7 +5473,9 @@
             "sv": "Schliemannförsvaret, Klassiska varianten",
             "da": "Schliemannforsvaret, Klassisk variant",
             "nb": "Schliemannforsvaret, Klassisk variant",
-            "fi": "Schliemann-puolustus, Klassinen muunnelma"
+            "fi": "Schliemann-puolustus, Klassinen muunnelma",
+            "ru": "Защита Шлимана, Классический вариант",
+            "uk": "Захист Шлімана, Класичний варіант"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
@@ -5122,7 +5502,9 @@
             "sv": "Schliemannförsvaret, Schönemannattacken",
             "da": "Schliemannforsvaret, Schönemannangrebet",
             "nb": "Schliemannforsvaret, Schönemannangrepet",
-            "fi": "Schliemann-puolustus, Schönemann-hyökkäys"
+            "fi": "Schliemann-puolustus, Schönemann-hyökkäys",
+            "ru": "Защита Шлимана, Атака Шёнемана",
+            "uk": "Захист Шлімана, Атака Шенемана"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
@@ -5149,7 +5531,9 @@
             "sv": "Schliemannförsvaret, Jaenischgambit antagen",
             "da": "Schliemannforsvaret, Jaenischgambit modtaget",
             "nb": "Schliemannforsvaret, Jaenischgambit mottatt",
-            "fi": "Schliemann-puolustus, Jaenisch-gambiitti hyväksytty"
+            "fi": "Schliemann-puolustus, Jaenisch-gambiitti hyväksytty",
+            "ru": "Защита Шлимана, Принятый гамбит Яниша",
+            "uk": "Захист Шлімана, Прийнятий гамбіт Яніша"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
@@ -5177,7 +5561,9 @@
         "sv": "Klassiska varianten",
         "da": "Klassisk variant",
         "nb": "Klassisk variant",
-        "fi": "Klassinen muunnelma"
+        "fi": "Klassinen muunnelma",
+        "ru": "Классический вариант",
+        "uk": "Класичний варіант"
       },
       "lines": [
         {
@@ -5200,7 +5586,9 @@
             "sv": "Klassiska varianten",
             "da": "Klassisk variant",
             "nb": "Klassisk variant",
-            "fi": "Klassinen muunnelma"
+            "fi": "Klassinen muunnelma",
+            "ru": "Классический вариант",
+            "uk": "Класичний варіант"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation",
@@ -5227,7 +5615,9 @@
             "sv": "Klassiska varianten, Spanska flygelgambit",
             "da": "Klassisk variant, Spansk fløjgambit",
             "nb": "Klassisk variant, Spansk fløygambit",
-            "fi": "Klassinen muunnelma, Espanjalainen sivustagambiitti"
+            "fi": "Klassinen muunnelma, Espanjalainen sivustagambiitti",
+            "ru": "Классический вариант, Испанский фланговый гамбит",
+            "uk": "Класичний варіант, Іспанський фланговий гамбіт"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
@@ -5254,7 +5644,9 @@
             "sv": "Klassiska varianten, Centrala varianten",
             "da": "Klassisk variant, Central variant",
             "nb": "Klassisk variant, Sentral variant",
-            "fi": "Klassinen muunnelma, Keskeinen muunnelma"
+            "fi": "Klassinen muunnelma, Keskeinen muunnelma",
+            "ru": "Классический вариант, Центральный вариант",
+            "uk": "Класичний варіант, Центральний варіант"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Central Variation",
@@ -5281,7 +5673,9 @@
             "sv": "Klassiska varianten, Charousekvarianten",
             "da": "Klassisk variant, Charousekvarianten",
             "nb": "Klassisk variant, Charousekvarianten",
-            "fi": "Klassinen muunnelma, Charousek-muunnelma"
+            "fi": "Klassinen muunnelma, Charousek-muunnelma",
+            "ru": "Классический вариант, Вариант Харузека",
+            "uk": "Класичний варіант, Варіант Харузека"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Charousek Variation",
@@ -5308,7 +5702,9 @@
             "sv": "Klassiska varianten, Konikowskigambit",
             "da": "Klassisk variant, Konikowskigambit",
             "nb": "Klassisk variant, Konikowskigambit",
-            "fi": "Klassinen muunnelma, Konikowski-gambiitti"
+            "fi": "Klassinen muunnelma, Konikowski-gambiitti",
+            "ru": "Классический вариант, Гамбит Кониковского",
+            "uk": "Класичний варіант, Гамбіт Коніковського"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Konikowski Gambit",
@@ -5335,7 +5731,9 @@
             "sv": "Klassiska varianten, Cordelgambit",
             "da": "Klassisk variant, Cordelgambit",
             "nb": "Klassisk variant, Cordelgambit",
-            "fi": "Klassinen muunnelma, Cordel-gambiitti"
+            "fi": "Klassinen muunnelma, Cordel-gambiitti",
+            "ru": "Классический вариант, Гамбит Корделя",
+            "uk": "Класичний варіант, Гамбіт Корделя"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
@@ -5362,7 +5760,9 @@
             "sv": "Klassiska varianten, Zukertortgambit",
             "da": "Klassisk variant, Zukertortgambit",
             "nb": "Klassisk variant, Zukertortgambit",
-            "fi": "Klassinen muunnelma, Zukertort-gambiitti"
+            "fi": "Klassinen muunnelma, Zukertort-gambiitti",
+            "ru": "Классический вариант, Гамбит Цукерторта",
+            "uk": "Класичний варіант, Гамбіт Цукерторта"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Classical Variation, Zukertort Gambit",
@@ -5389,7 +5789,9 @@
             "sv": "Klassiska varianten, Moderna huvudvarianten",
             "da": "Klassisk variant, Moderne hovedvariant",
             "nb": "Klassisk variant, Moderne hovedvariant",
-            "fi": "Klassinen muunnelma, Moderni päälinja"
+            "fi": "Klassinen muunnelma, Moderni päälinja",
+            "ru": "Классический вариант, Современная основная линия",
+            "uk": "Класичний варіант, Сучасна основна лінія"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Modern Main Line",
@@ -5417,7 +5819,9 @@
         "sv": "Steinitzförsvaret",
         "da": "Steinitzforsvaret",
         "nb": "Steinitzforsvaret",
-        "fi": "Steinitz-puolustus"
+        "fi": "Steinitz-puolustus",
+        "ru": "Защита Стейница",
+        "uk": "Захист Стейніца"
       },
       "lines": [
         {
@@ -5440,7 +5844,9 @@
             "sv": "Steinitzförsvaret",
             "da": "Steinitzforsvaret",
             "nb": "Steinitzforsvaret",
-            "fi": "Steinitz-puolustus"
+            "fi": "Steinitz-puolustus",
+            "ru": "Защита Стейница",
+            "uk": "Захист Стейніца"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense",
@@ -5467,7 +5873,9 @@
             "sv": "Steinitzförsvaret",
             "da": "Steinitzforsvaret",
             "nb": "Steinitzforsvaret",
-            "fi": "Steinitz-puolustus"
+            "fi": "Steinitz-puolustus",
+            "ru": "Защита Стейница",
+            "uk": "Захист Стейніца"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense",
@@ -5494,7 +5902,9 @@
             "sv": "Steinitzförsvaret, Nimzowitschattacken",
             "da": "Steinitzforsvaret, Nimzowitschangrebet",
             "nb": "Steinitzforsvaret, Nimzowitschangrepet",
-            "fi": "Steinitz-puolustus, Nimzowitsch-hyökkäys"
+            "fi": "Steinitz-puolustus, Nimzowitsch-hyökkäys",
+            "ru": "Защита Стейница, Атака Нимцовича",
+            "uk": "Захист Стейніца, Атака Німцовича"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
@@ -5521,7 +5931,9 @@
             "sv": "Steinitzförsvaret, Semi-Durasvarianten",
             "da": "Steinitzforsvaret, Semi-Durasvarianten",
             "nb": "Steinitzforsvaret, Semi-Durasvarianten",
-            "fi": "Steinitz-puolustus, Semi-Duras-muunnelma"
+            "fi": "Steinitz-puolustus, Semi-Duras-muunnelma",
+            "ru": "Защита Стейница, Вариант «Полу-Дурас»",
+            "uk": "Захист Стейніца, Варіант «Напів-Дурас»"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
@@ -5548,7 +5960,9 @@
             "sv": "Steinitzförsvaret, Centrumgambit",
             "da": "Steinitzforsvaret, Centergambit",
             "nb": "Steinitzforsvaret, Sentrumgambit",
-            "fi": "Steinitz-puolustus, Keskusgambiitti"
+            "fi": "Steinitz-puolustus, Keskusgambiitti",
+            "ru": "Защита Стейница, Центральный гамбит",
+            "uk": "Захист Стейніца, Центральний гамбіт"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
@@ -5576,7 +5990,9 @@
         "sv": "Klassiska försvaret",
         "da": "Klassisk forsvar",
         "nb": "Klassisk forsvar",
-        "fi": "Klassinen puolustus"
+        "fi": "Klassinen puolustus",
+        "ru": "Классическая защита",
+        "uk": "Класичний захист"
       },
       "lines": [
         {
@@ -5599,7 +6015,9 @@
             "sv": "Klassiska försvaret, Zaitsevvarianten",
             "da": "Klassisk forsvar, Zaitsevvarianten",
             "nb": "Klassisk forsvar, Zaitsevvarianten",
-            "fi": "Klassinen puolustus, Zaitsev-muunnelma"
+            "fi": "Klassinen puolustus, Zaitsev-muunnelma",
+            "ru": "Классическая защита, Вариант Зайцева",
+            "uk": "Класичний захист, Варіант Зайцева"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
@@ -5626,7 +6044,9 @@
             "sv": "Klassiska försvaret, Bodenvarianten",
             "da": "Klassisk forsvar, Bodenvarianten",
             "nb": "Klassisk forsvar, Bodenvarianten",
-            "fi": "Klassinen puolustus, Boden-muunnelma"
+            "fi": "Klassinen puolustus, Boden-muunnelma",
+            "ru": "Классическая защита, Вариант Бодена",
+            "uk": "Класичний захист, Варіант Бодена"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Defense, Boden Variation",
@@ -5653,7 +6073,9 @@
             "sv": "Klassiska försvaret, Beneluxvarianten",
             "da": "Klassisk forsvar, Beneluxvarianten",
             "nb": "Klassisk forsvar, Beneluxvarianten",
-            "fi": "Klassinen puolustus, Benelux-muunnelma"
+            "fi": "Klassinen puolustus, Benelux-muunnelma",
+            "ru": "Классическая защита, Вариант «Бенилюкс»",
+            "uk": "Класичний захист, Варіант «Бенілюкс»"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Defense, Benelux Variation",
@@ -5681,7 +6103,9 @@
         "sv": "Cozioförsvaret",
         "da": "Cozioforsvaret",
         "nb": "Cozioforsvaret",
-        "fi": "Cozio-puolustus"
+        "fi": "Cozio-puolustus",
+        "ru": "Защита Козио",
+        "uk": "Захист Коціо"
       },
       "lines": [
         {
@@ -5704,7 +6128,9 @@
             "sv": "Cozioförsvaret",
             "da": "Cozioforsvaret",
             "nb": "Cozioforsvaret",
-            "fi": "Cozio-puolustus"
+            "fi": "Cozio-puolustus",
+            "ru": "Защита Козио",
+            "uk": "Захист Коціо"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Cozio Defense",
@@ -5731,7 +6157,9 @@
             "sv": "Cozioförsvaret, Paulsenvarianten",
             "da": "Cozioforsvaret, Paulsenvarianten",
             "nb": "Cozioforsvaret, Paulsenvarianten",
-            "fi": "Cozio-puolustus, Paulsen-muunnelma"
+            "fi": "Cozio-puolustus, Paulsen-muunnelma",
+            "ru": "Защита Козио, Вариант Паульсена",
+            "uk": "Захист Коціо, Варіант Паульсена"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
@@ -5758,7 +6186,9 @@
             "sv": "Cozioförsvaret, Tartakowergambit",
             "da": "Cozioforsvaret, Tartakowergambit",
             "nb": "Cozioforsvaret, Tartakowergambit",
-            "fi": "Cozio-puolustus, Tartakower-gambiitti"
+            "fi": "Cozio-puolustus, Tartakower-gambiitti",
+            "ru": "Защита Козио, Гамбит Тартаковера",
+            "uk": "Захист Коціо, Гамбіт Тартаковера"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
@@ -5786,7 +6216,9 @@
         "sv": "Spanska motgambiten",
         "da": "Spansk modgambit",
         "nb": "Spansk motgambit",
-        "fi": "Espanjalainen vastagambiitti"
+        "fi": "Espanjalainen vastagambiitti",
+        "ru": "Испанский контргамбит",
+        "uk": "Іспанський контргамбіт"
       },
       "lines": [
         {
@@ -5809,7 +6241,9 @@
             "sv": "Spanska motgambiten",
             "da": "Spansk modgambit",
             "nb": "Spansk motgambit",
-            "fi": "Espanjalainen vastagambiitti"
+            "fi": "Espanjalainen vastagambiitti",
+            "ru": "Испанский контргамбит",
+            "uk": "Іспанський контргамбіт"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Spanish Countergambit",
@@ -5836,7 +6270,9 @@
             "sv": "Spanska motgambiten, Hardinggambit",
             "da": "Spansk modgambit, Hardinggambit",
             "nb": "Spansk motgambit, Hardinggambit",
-            "fi": "Espanjalainen vastagambiitti, Harding-gambiitti"
+            "fi": "Espanjalainen vastagambiitti, Harding-gambiitti",
+            "ru": "Испанский контргамбит, Гамбит Хардинга",
+            "uk": "Іспанський контргамбіт, Гамбіт Гардінга"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
@@ -5863,7 +6299,9 @@
             "sv": "Spanska motgambiten, Hardingmotgambit, Frickegambit",
             "da": "Spansk modgambit, Hardingmodgambit, Frickegambit",
             "nb": "Spansk motgambit, Hardingmotgambit, Frickegambit",
-            "fi": "Espanjalainen vastagambiitti, Harding-vastagambiitti, Fricke-gambiitti"
+            "fi": "Espanjalainen vastagambiitti, Harding-vastagambiitti, Fricke-gambiitti",
+            "ru": "Испанский контргамбит, Контргамбит Хардинга, Гамбит Фрикке",
+            "uk": "Іспанський контргамбіт, Контргамбіт Гардінга, Гамбіт Фрікке"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
@@ -5891,7 +6329,9 @@
         "sv": "Alapinförsvaret",
         "da": "Alapinforsvaret",
         "nb": "Alapinforsvaret",
-        "fi": "Alapin-puolustus"
+        "fi": "Alapin-puolustus",
+        "ru": "Защита Алапина",
+        "uk": "Захист Алапіна"
       },
       "lines": [
         {
@@ -5914,7 +6354,9 @@
             "sv": "Alapinförsvaret",
             "da": "Alapinforsvaret",
             "nb": "Alapinforsvaret",
-            "fi": "Alapin-puolustus"
+            "fi": "Alapin-puolustus",
+            "ru": "Защита Алапина",
+            "uk": "Захист Алапіна"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Alapin Defense",
@@ -5941,7 +6383,9 @@
             "sv": "Alapinförsvaret, Alapingambit",
             "da": "Alapinforsvaret, Alapingambit",
             "nb": "Alapinforsvaret, Alapingambit",
-            "fi": "Alapin-puolustus, Alapin-gambiitti"
+            "fi": "Alapin-puolustus, Alapin-gambiitti",
+            "ru": "Защита Алапина, Гамбит Алапина",
+            "uk": "Захист Алапіна, Гамбіт Алапіна"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
@@ -5969,7 +6413,9 @@
         "sv": "Birdvarianten",
         "da": "Birdvarianten",
         "nb": "Birdvarianten",
-        "fi": "Bird-muunnelma"
+        "fi": "Bird-muunnelma",
+        "ru": "Вариант Берда",
+        "uk": "Варіант Берда"
       },
       "lines": [
         {
@@ -5992,7 +6438,9 @@
             "sv": "Birdvarianten",
             "da": "Birdvarianten",
             "nb": "Birdvarianten",
-            "fi": "Bird-muunnelma"
+            "fi": "Bird-muunnelma",
+            "ru": "Вариант Берда",
+            "uk": "Варіант Берда"
           },
           "eco": "C61",
           "opening": "Ruy Lopez: Bird Variation",
@@ -6019,7 +6467,9 @@
             "sv": "Birdvarianten, Paulsenvarianten",
             "da": "Birdvarianten, Paulsenvarianten",
             "nb": "Birdvarianten, Paulsenvarianten",
-            "fi": "Bird-muunnelma, Paulsen-muunnelma"
+            "fi": "Bird-muunnelma, Paulsen-muunnelma",
+            "ru": "Вариант Берда, Вариант Паульсена",
+            "uk": "Варіант Берда, Варіант Паульсена"
           },
           "eco": "C61",
           "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
@@ -6047,7 +6497,9 @@
         "sv": "Fianchettoförsvaret",
         "da": "Fianchettoforsvaret",
         "nb": "Fianchettoforsvaret",
-        "fi": "Fiankettopuolustus"
+        "fi": "Fiankettopuolustus",
+        "ru": "Защита с фианкетто",
+        "uk": "Захист з фіанкето"
       },
       "lines": [
         {
@@ -6070,7 +6522,9 @@
             "sv": "Fianchettoförsvaret",
             "da": "Fianchettoforsvaret",
             "nb": "Fianchettoforsvaret",
-            "fi": "Fiankettopuolustus"
+            "fi": "Fiankettopuolustus",
+            "ru": "Защита с фианкетто",
+            "uk": "Захист з фіанкето"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Fianchetto Defense",
@@ -6097,7 +6551,9 @@
             "sv": "Fianchettoförsvaret, Kevitzgambit",
             "da": "Fianchettoforsvaret, Kevitzgambit",
             "nb": "Fianchettoforsvaret, Kevitzgambit",
-            "fi": "Fiankettopuolustus, Kevitz-gambiitti"
+            "fi": "Fiankettopuolustus, Kevitz-gambiitti",
+            "ru": "Защита с фианкетто, Гамбит Кевица",
+            "uk": "Захист з фіанкето, Гамбіт Кевіца"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
@@ -6125,7 +6581,9 @@
         "sv": "Noas ark-fällan",
         "da": "Noahs ark-fælden",
         "nb": "Noahs ark-fellen",
-        "fi": "Nooan arkkiansa"
+        "fi": "Nooan arkkiansa",
+        "ru": "Ловушка «Ноев ковчег»",
+        "uk": "Пастка «Ноїв ковчег»"
       },
       "lines": [
         {
@@ -6148,7 +6606,9 @@
             "sv": "Noas ark-fällan",
             "da": "Noahs ark-fælden",
             "nb": "Noahs ark-fellen",
-            "fi": "Nooan arkkiansa"
+            "fi": "Nooan arkkiansa",
+            "ru": "Ловушка «Ноев ковчег»",
+            "uk": "Пастка «Ноїв ковчег»"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Noah's Ark Trap",
@@ -6175,7 +6635,9 @@
             "sv": "Noas ark-fällan",
             "da": "Noahs ark-fælden",
             "nb": "Noahs ark-fellen",
-            "fi": "Nooan arkkiansa"
+            "fi": "Nooan arkkiansa",
+            "ru": "Ловушка «Ноев ковчег»",
+            "uk": "Пастка «Ноїв ковчег»"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Noah's Ark Trap",
@@ -6203,7 +6665,9 @@
         "sv": "Öppna berlinerförsvaret",
         "da": "Åben berlinerforsvar",
         "nb": "Åpen berlinerforsvar",
-        "fi": "Avoin berliiniläinen puolustus"
+        "fi": "Avoin berliiniläinen puolustus",
+        "ru": "Открытая берлинская защита",
+        "uk": "Відкритий берлінський захист"
       },
       "lines": [
         {
@@ -6226,7 +6690,9 @@
             "sv": "Öppna berlinerförsvaret, Showaltervarianten",
             "da": "Åben berlinerforsvar, Showaltervarianten",
             "nb": "Åpen berlinerforsvar, Showaltervarianten",
-            "fi": "Avoin berliiniläinen puolustus, Showalter-muunnelma"
+            "fi": "Avoin berliiniläinen puolustus, Showalter-muunnelma",
+            "ru": "Открытая берлинская защита, Вариант Шоуолтера",
+            "uk": "Відкритий берлінський захист, Варіант Шоуолтера"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Open Berlin Defense, Showalter Variation",
@@ -6253,7 +6719,9 @@
             "sv": "Öppna berlinerförsvaret, l'Hermet-varianten",
             "da": "Åben berlinerforsvar, l'Hermet-varianten",
             "nb": "Åpen berlinerforsvar, l'Hermet-varianten",
-            "fi": "Avoin berliiniläinen puolustus, l'Hermet-muunnelma"
+            "fi": "Avoin berliiniläinen puolustus, l'Hermet-muunnelma",
+            "ru": "Открытая берлинская защита, Вариант Эрме",
+            "uk": "Відкритий берлінський захист, Варіант Ерме"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Open Berlin Defense, l'Hermet Variation",
@@ -6281,7 +6749,9 @@
         "sv": "Steinitzförsvaret uppskjuten",
         "da": "Steinitzforsvaret udskudt",
         "nb": "Steinitzforsvaret utsatt",
-        "fi": "Steinitz-puolustus viivästetty"
+        "fi": "Steinitz-puolustus viivästetty",
+        "ru": "Отложенная защита Стейница",
+        "uk": "Відкладений захист Стейніца"
       },
       "lines": [
         {
@@ -6304,7 +6774,9 @@
             "sv": "Steinitzförsvaret uppskjuten, Lipnitskyvarianten",
             "da": "Steinitzforsvaret udskudt, Lipnitskyvarianten",
             "nb": "Steinitzforsvaret utsatt, Lipnitskyvarianten",
-            "fi": "Steinitz-puolustus viivästetty, Lipnitsky-muunnelma"
+            "fi": "Steinitz-puolustus viivästetty, Lipnitsky-muunnelma",
+            "ru": "Отложенная защита Стейница, Вариант Липницкого",
+            "uk": "Відкладений захист Стейніца, Варіант Ліпницького"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Steinitz Defense Deferred, Lipnitsky Variation",
@@ -6331,7 +6803,9 @@
             "sv": "Steinitzförsvaret uppskjuten, Boleslavskyvarianten",
             "da": "Steinitzforsvaret udskudt, Boleslavskyvarianten",
             "nb": "Steinitzforsvaret utsatt, Boleslavskyvarianten",
-            "fi": "Steinitz-puolustus viivästetty, Boleslavsky-muunnelma"
+            "fi": "Steinitz-puolustus viivästetty, Boleslavsky-muunnelma",
+            "ru": "Отложенная защита Стейница, Вариант Болеславского",
+            "uk": "Відкладений захист Стейніца, Варіант Болеславського"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Steinitz Defense Deferred, Boleslavsky Variation",
@@ -6362,7 +6836,9 @@
         "sv": "Birdförsvaret uppskjuten",
         "da": "Birdforsvaret udskudt",
         "nb": "Birdforsvaret utsatt",
-        "fi": "Bird-puolustus viivästetty"
+        "fi": "Bird-puolustus viivästetty",
+        "ru": "Отложенная защита Берда",
+        "uk": "Відкладений захист Берда"
       },
       "eco": "C70",
       "opening": "Ruy Lopez: Bird's Defense Deferred",
@@ -6389,7 +6865,9 @@
         "sv": "Brentanogambit",
         "da": "Brentanogambit",
         "nb": "Brentanogambit",
-        "fi": "Brentano-gambiitti"
+        "fi": "Brentano-gambiitti",
+        "ru": "Гамбит Брентано",
+        "uk": "Гамбіт Брентано"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Brentano Gambit",
@@ -6416,7 +6894,9 @@
         "sv": "Brixvarianten",
         "da": "Brixvarianten",
         "nb": "Brixvarianten",
-        "fi": "Brix-muunnelma"
+        "fi": "Brix-muunnelma",
+        "ru": "Вариант Брикса",
+        "uk": "Варіант Брікса"
       },
       "eco": "C78",
       "opening": "Ruy Lopez: Brix Variation",
@@ -6443,7 +6923,9 @@
         "sv": "Bulgariska varianten",
         "da": "Bulgarsk variant",
         "nb": "Bulgarsk variant",
-        "fi": "Bulgarialainen muunnelma"
+        "fi": "Bulgarialainen muunnelma",
+        "ru": "Болгарский вариант",
+        "uk": "Болгарський варіант"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Bulgarian Variation",
@@ -6470,7 +6952,9 @@
         "sv": "Centrala motgambiten",
         "da": "Central modgambit",
         "nb": "Sentral motgambit",
-        "fi": "Keskeinen vastagambiitti"
+        "fi": "Keskeinen vastagambiitti",
+        "ru": "Центральный контргамбит",
+        "uk": "Центральний контргамбіт"
       },
       "eco": "C78",
       "opening": "Ruy Lopez: Central Countergambit",
@@ -6497,7 +6981,9 @@
         "sv": "Stängda berlinerförsvaret, Chigorinvarianten",
         "da": "Lukket berlinerforsvar, Chigorinvarianten",
         "nb": "Lukket berlinerforsvar, Chigorinvarianten",
-        "fi": "Suljettu berliiniläinen puolustus, Chigorin-muunnelma"
+        "fi": "Suljettu berliiniläinen puolustus, Chigorin-muunnelma",
+        "ru": "Закрытая берлинская защита, Вариант Чигорина",
+        "uk": "Закритий берлінський захист, Варіант Чигоріна"
       },
       "eco": "C66",
       "opening": "Ruy Lopez: Closed Berlin Defense, Chigorin Variation",
@@ -6524,7 +7010,9 @@
         "sv": "Avbyte, Alekhinevarianten",
         "da": "Afbytning, Alekhinevarianten",
         "nb": "Avbytte, Alekhinevarianten",
-        "fi": "Vaihto, Alekhine-muunnelma"
+        "fi": "Vaihto, Alekhine-muunnelma",
+        "ru": "Разменный, Вариант Алехина",
+        "uk": "Розмінний, Варіант Алехіна"
       },
       "eco": "C68",
       "opening": "Ruy Lopez: Exchange, Alekhine Variation",
@@ -6551,7 +7039,9 @@
         "sv": "Halloweenattacken",
         "da": "Halloweenangrebet",
         "nb": "Halloweenangrepet",
-        "fi": "Halloween-hyökkäys"
+        "fi": "Halloween-hyökkäys",
+        "ru": "Атака «Хэллоуин»",
+        "uk": "Атака «Гелловін»"
       },
       "eco": "C65",
       "opening": "Ruy Lopez: Halloween Attack",
@@ -6578,7 +7068,9 @@
         "sv": "Lucenavarianten",
         "da": "Lucenavarianten",
         "nb": "Lucenavarianten",
-        "fi": "Lucena-muunnelma"
+        "fi": "Lucena-muunnelma",
+        "ru": "Вариант Лусены",
+        "uk": "Варіант Лусени"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Lucena Variation",
@@ -6605,7 +7097,9 @@
         "sv": "Ruy Lopez",
         "da": "Ruy Lopez",
         "nb": "Ruy Lopez",
-        "fi": "Ruy Lopez"
+        "fi": "Ruy Lopez",
+        "ru": "Испанская партия",
+        "uk": "Іспанська партія"
       },
       "eco": "C60",
       "opening": "Ruy Lopez",
@@ -6632,7 +7126,9 @@
         "sv": "Nürnbergvarianten",
         "da": "Nürnbergvarianten",
         "nb": "Nürnbergvarianten",
-        "fi": "Nürnberg-muunnelma"
+        "fi": "Nürnberg-muunnelma",
+        "ru": "Нюрнбергский вариант",
+        "uk": "Нюрнберзький варіант"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Nürnberg Variation",
@@ -6659,7 +7155,9 @@
         "sv": "Pollockförsvaret",
         "da": "Pollockforsvaret",
         "nb": "Pollockforsvaret",
-        "fi": "Pollock-puolustus"
+        "fi": "Pollock-puolustus",
+        "ru": "Защита Поллока",
+        "uk": "Захист Поллока"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Pollock Defense",
@@ -6686,7 +7184,9 @@
         "sv": "Rabinovichvarianten",
         "da": "Rabinovichvarianten",
         "nb": "Rabinovichvarianten",
-        "fi": "Rabinovich-muunnelma"
+        "fi": "Rabinovich-muunnelma",
+        "ru": "Вариант Рабиновича",
+        "uk": "Варіант Рабиновича"
       },
       "eco": "C78",
       "opening": "Ruy Lopez: Rabinovich Variation",
@@ -6713,7 +7213,9 @@
         "sv": "Reträttvarianten",
         "da": "Tilbagetrækningsvarianten",
         "nb": "Tilbaketrekningsvarianten",
-        "fi": "Perääntymismuunnelma"
+        "fi": "Perääntymismuunnelma",
+        "ru": "Вариант с отступлением",
+        "uk": "Варіант з відступом"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Retreat Variation",
@@ -6740,7 +7242,9 @@
         "sv": "Rotary-Albanygambit",
         "da": "Rotary-Albanygambit",
         "nb": "Rotary-Albanygambit",
-        "fi": "Rotary-Albany-gambiitti"
+        "fi": "Rotary-Albany-gambiitti",
+        "ru": "Гамбит «Ротари-Олбани»",
+        "uk": "Гамбіт «Ротарі-Олбані»"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Rotary-Albany Gambit",
@@ -6767,7 +7271,9 @@
         "sv": "Vinogradovvarianten",
         "da": "Vinogradovvarianten",
         "nb": "Vinogradovvarianten",
-        "fi": "Vinogradov-muunnelma"
+        "fi": "Vinogradov-muunnelma",
+        "ru": "Вариант Виноградова",
+        "uk": "Варіант Виноградова"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Vinogradov Variation",
@@ -6794,7 +7300,9 @@
         "sv": "Wormaldattacken, Grünfeldvarianten",
         "da": "Wormaldangrebet, Grünfeldvarianten",
         "nb": "Wormaldangrepet, Grünfeldvarianten",
-        "fi": "Wormald-hyökkäys, Grünfeld-muunnelma"
+        "fi": "Wormald-hyökkäys, Grünfeld-muunnelma",
+        "ru": "Атака Вормальда, Вариант Грюнфельда",
+        "uk": "Атака Вормальда, Варіант Ґрюнфельда"
       },
       "eco": "C77",
       "opening": "Ruy Lopez: Wormald Attack, Grünfeld Variation",
