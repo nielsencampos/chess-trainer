@@ -9,7 +9,12 @@
     "pt-PT": "Ataque Torre",
     "de": "Torre-Angriff",
     "fr": "Attaque Torre",
-    "it": "Attacco Torre"
+    "it": "Attacco Torre",
+    "tr": "Torre Akını",
+    "pl": "Atak Torre",
+    "nl": "Torreaanval",
+    "id": "Serangan Torre",
+    "vi": "Tấn công Torre"
   },
   "order": 16,
   "variants": [
@@ -23,7 +28,12 @@
         "pt-PT": "Defesa Clássica",
         "de": "Klassische Verteidigung",
         "fr": "Défense classique",
-        "it": "Difesa classica"
+        "it": "Difesa classica",
+        "tr": "Klasik Savunma",
+        "nl": "Klassieke verdediging",
+        "id": "Pertahanan Klasik",
+        "vi": "Phòng thủ cổ điển",
+        "pl": "Obrona klasyczna"
       },
       "lines": [
         {
@@ -37,7 +47,12 @@
             "pt-PT": "Defesa Clássica",
             "de": "Klassische Verteidigung",
             "fr": "Défense classique",
-            "it": "Difesa classica"
+            "it": "Difesa classica",
+            "tr": "Klasik Savunma",
+            "nl": "Klassieke verdediging",
+            "id": "Pertahanan Klasik",
+            "vi": "Phòng thủ cổ điển",
+            "pl": "Obrona klasyczna"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense",
@@ -55,7 +70,12 @@
             "pt-PT": "Defesa Clássica, Gambito Petrosian",
             "de": "Klassische Verteidigung, Petrosjan-Gambit",
             "fr": "Défense classique, Gambit Petrossian",
-            "it": "Difesa classica, Gambetto Petrosyan"
+            "it": "Difesa classica, Gambetto Petrosyan",
+            "tr": "Klasik Savunma, Petrosian Gambiti",
+            "nl": "Klassieke verdediging, Petrosiangambiet",
+            "id": "Pertahanan Klasik, Gambit Petrosian",
+            "vi": "Phòng thủ cổ điển, Gambit Petrosian",
+            "pl": "Obrona klasyczna, Gambit Petrosian"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense, Petrosian Gambit",
@@ -73,7 +93,12 @@
             "pt-PT": "Defesa Clássica, Variante Nimzowitsch",
             "de": "Klassische Verteidigung, Nimzowitsch-Variante",
             "fr": "Défense classique, Variante Nimzowitsch",
-            "it": "Difesa classica, Variante Nimzowitsch"
+            "it": "Difesa classica, Variante Nimzowitsch",
+            "tr": "Klasik Savunma, Nimzowitsch Varyantı",
+            "nl": "Klassieke verdediging, Nimzowitschvariant",
+            "id": "Pertahanan Klasik, Variasi Nimzowitsch",
+            "vi": "Phòng thủ cổ điển, Phương án Nimzowitsch",
+            "pl": "Obrona klasyczna, Wariant Nimzowitsch"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense, Nimzowitsch Variation",
@@ -92,7 +117,12 @@
         "pt-PT": "Defesa do Fianqueto",
         "de": "Fianchetto-Verteidigung",
         "fr": "Défense en fianchetto",
-        "it": "Difesa in fianchetto"
+        "it": "Difesa in fianchetto",
+        "tr": "Fianchetto Savunması",
+        "nl": "Fianchettoverdediging",
+        "id": "Pertahanan Fianchetto",
+        "vi": "Phòng thủ fianchetto",
+        "pl": "Obrona z fianchettem"
       },
       "lines": [
         {
@@ -106,7 +136,12 @@
             "pt-PT": "Defesa do Fianqueto",
             "de": "Fianchetto-Verteidigung",
             "fr": "Défense en fianchetto",
-            "it": "Difesa in fianchetto"
+            "it": "Difesa in fianchetto",
+            "tr": "Fianchetto Savunması",
+            "nl": "Fianchettoverdediging",
+            "id": "Pertahanan Fianchetto",
+            "vi": "Phòng thủ fianchetto",
+            "pl": "Obrona z fianchettem"
           },
           "eco": "A48",
           "opening": "Torre Attack: Fianchetto Defense",
@@ -124,7 +159,12 @@
             "pt-PT": "Defesa do Fianqueto, Variante Euwe",
             "de": "Fianchetto-Verteidigung, Euwe-Variante",
             "fr": "Défense en fianchetto, Variante Euwe",
-            "it": "Difesa in fianchetto, Variante Euwe"
+            "it": "Difesa in fianchetto, Variante Euwe",
+            "tr": "Fianchetto Savunması, Euwe Varyantı",
+            "nl": "Fianchettoverdediging, Euwevariant",
+            "id": "Pertahanan Fianchetto, Variasi Euwe",
+            "vi": "Phòng thủ fianchetto, Phương án Euwe",
+            "pl": "Obrona z fianchettem, Wariant Euwe"
           },
           "eco": "A48",
           "opening": "Torre Attack: Fianchetto Defense, Euwe Variation",
@@ -146,7 +186,12 @@
         "pt-PT": "Gambito Wagner",
         "de": "Wagner-Gambit",
         "fr": "Gambit Wagner",
-        "it": "Gambetto Wagner"
+        "it": "Gambetto Wagner",
+        "tr": "Wagner Gambiti",
+        "pl": "Gambit Wagner",
+        "nl": "Wagnergambiet",
+        "id": "Gambit Wagner",
+        "vi": "Gambit Wagner"
       },
       "eco": "A46",
       "opening": "Torre Attack: Wagner Gambit",

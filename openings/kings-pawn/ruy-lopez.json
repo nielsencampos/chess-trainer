@@ -9,7 +9,12 @@
     "pt-PT": "Abertura Ruy López",
     "de": "Spanische Partie",
     "fr": "Partie espagnole",
-    "it": "Partita spagnola"
+    "it": "Partita spagnola",
+    "tr": "İspanyol Açılışı",
+    "pl": "Partia hiszpańska",
+    "nl": "Spaans",
+    "vi": "Ván cờ Tây Ban Nha",
+    "id": "Ruy Lopez"
   },
   "order": 4,
   "variants": [
@@ -23,7 +28,12 @@
         "pt-PT": "Fechada",
         "de": "Geschlossen",
         "fr": "Fermée",
-        "it": "Chiusa"
+        "it": "Chiusa",
+        "tr": "Kapalı",
+        "nl": "Gesloten",
+        "id": "Tertutup",
+        "vi": "Đóng",
+        "pl": "Zamknięty"
       },
       "lines": [
         {
@@ -37,7 +47,12 @@
             "pt-PT": "Fechada",
             "de": "Geschlossen",
             "fr": "Fermée",
-            "it": "Chiusa"
+            "it": "Chiusa",
+            "tr": "Kapalı",
+            "nl": "Gesloten",
+            "id": "Tertutup",
+            "vi": "Đóng",
+            "pl": "Zamknięty"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed",
@@ -55,7 +70,12 @@
             "pt-PT": "Fechada, Troca Adiada",
             "de": "Geschlossen, Verzögerter Abtausch",
             "fr": "Fermée, Échange retardé",
-            "it": "Chiusa, Cambio ritardato"
+            "it": "Chiusa, Cambio ritardato",
+            "tr": "Kapalı, Gecikmeli Değişim",
+            "nl": "Gesloten, Uitgestelde ruil",
+            "id": "Tertutup, Pertukaran Tertunda",
+            "vi": "Đóng, Đổi quân muộn",
+            "pl": "Zamknięty, Opóźniona wymiana"
           },
           "eco": "C85",
           "opening": "Ruy Lopez: Closed, Delayed Exchange",
@@ -73,7 +93,12 @@
             "pt-PT": "Fechada, Ataque Morphy",
             "de": "Geschlossen, Morphy-Angriff",
             "fr": "Fermée, Attaque Morphy",
-            "it": "Chiusa, Attacco Morphy"
+            "it": "Chiusa, Attacco Morphy",
+            "tr": "Kapalı, Morphy Akını",
+            "nl": "Gesloten, Morphyaanval",
+            "id": "Tertutup, Serangan Morphy",
+            "vi": "Đóng, Tấn công Morphy",
+            "pl": "Zamknięty, Atak Morphy"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Morphy Attack",
@@ -91,7 +116,12 @@
             "pt-PT": "Fechada, Ataque Worrall",
             "de": "Geschlossen, Worrall-Angriff",
             "fr": "Fermée, Attaque Worrall",
-            "it": "Chiusa, Attacco Worrall"
+            "it": "Chiusa, Attacco Worrall",
+            "tr": "Kapalı, Worrall Akını",
+            "nl": "Gesloten, Worrallaanval",
+            "id": "Tertutup, Serangan Worrall",
+            "vi": "Đóng, Tấn công Worrall",
+            "pl": "Zamknięty, Atak Worrall"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack",
@@ -109,7 +139,12 @@
             "pt-PT": "Fechada, Ataque Worrall, Linha do Roque",
             "de": "Geschlossen, Worrall-Angriff, Rochade-Abspiel",
             "fr": "Fermée, Attaque Worrall, Ligne du roque",
-            "it": "Chiusa, Attacco Worrall, Linea dell'arrocco"
+            "it": "Chiusa, Attacco Worrall, Linea dell'arrocco",
+            "tr": "Kapalı, Worrall Akını, Rok Hattı",
+            "nl": "Gesloten, Worrallaanval, Rokadelijn",
+            "id": "Tertutup, Serangan Worrall, Lini Rokade",
+            "vi": "Đóng, Tấn công Worrall, Diễn biến nhập thành",
+            "pl": "Zamknięty, Atak Worrall, Linia roszady"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack, Castling Line",
@@ -127,7 +162,12 @@
             "pt-PT": "Fechada, Ataque Worrall, Linha do Roque Adiado",
             "de": "Geschlossen, Worrall-Angriff, Abspiel mit verzögerter Rochade",
             "fr": "Fermée, Attaque Worrall, Ligne du roque retardé",
-            "it": "Chiusa, Attacco Worrall, Linea dell'arrocco ritardato"
+            "it": "Chiusa, Attacco Worrall, Linea dell'arrocco ritardato",
+            "tr": "Kapalı, Worrall Akını, Gecikmeli Rok Hattı",
+            "nl": "Gesloten, Worrallaanval, Uitgestelde rokade-lijn",
+            "id": "Tertutup, Serangan Worrall, Lini Rokade Tertunda",
+            "vi": "Đóng, Tấn công Worrall, Diễn biến nhập thành muộn",
+            "pl": "Zamknięty, Atak Worrall, Linia z opóźnioną roszadą"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack, Delayed Castling Line",
@@ -145,7 +185,12 @@
             "pt-PT": "Fechada",
             "de": "Geschlossen",
             "fr": "Fermée",
-            "it": "Chiusa"
+            "it": "Chiusa",
+            "tr": "Kapalı",
+            "nl": "Gesloten",
+            "id": "Tertutup",
+            "vi": "Đóng",
+            "pl": "Zamknięty"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed",
@@ -163,7 +208,12 @@
             "pt-PT": "Fechada, Contra-ataque Trajkovic",
             "de": "Geschlossen, Trajkovic-Gegenangriff",
             "fr": "Fermée, Contre-attaque Trajkovic",
-            "it": "Chiusa, Contrattacco Trajkovic"
+            "it": "Chiusa, Contrattacco Trajkovic",
+            "tr": "Kapalı, Trajkovic Karşı Akını",
+            "nl": "Gesloten, Trajkovictegenaanval",
+            "id": "Tertutup, Serangan Balik Trajkovic",
+            "vi": "Đóng, Phản công Trajkovic",
+            "pl": "Zamknięty, Kontratak Trajkovic"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Trajkovic Counterattack",
@@ -181,7 +231,12 @@
             "pt-PT": "Fechada",
             "de": "Geschlossen",
             "fr": "Fermée",
-            "it": "Chiusa"
+            "it": "Chiusa",
+            "tr": "Kapalı",
+            "nl": "Gesloten",
+            "id": "Tertutup",
+            "vi": "Đóng",
+            "pl": "Zamknięty"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed",
@@ -199,7 +254,12 @@
             "pt-PT": "Fechada, Anti-Marshall",
             "de": "Geschlossen, Anti-Marshall",
             "fr": "Fermée, Anti-Marshall",
-            "it": "Chiusa, Anti-Marshall"
+            "it": "Chiusa, Anti-Marshall",
+            "tr": "Kapalı, Anti-Marshall",
+            "nl": "Gesloten, Anti-Marshall",
+            "id": "Tertutup, Anti-Marshall",
+            "vi": "Đóng, Anti-Marshall",
+            "pl": "Zamknięty, Anti-Marshall"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Anti-Marshall",
@@ -217,7 +277,12 @@
             "pt-PT": "Fechada, Variante Pilnik",
             "de": "Geschlossen, Pilnik-Variante",
             "fr": "Fermée, Variante Pilnik",
-            "it": "Chiusa, Variante Pilnik"
+            "it": "Chiusa, Variante Pilnik",
+            "tr": "Kapalı, Pilnik Varyantı",
+            "nl": "Gesloten, Pilnikvariant",
+            "id": "Tertutup, Variasi Pilnik",
+            "vi": "Đóng, Phương án Pilnik",
+            "pl": "Zamknięty, Wariant Pilnik"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed, Pilnik Variation",
@@ -235,7 +300,12 @@
             "pt-PT": "Fechada, Gambito Alekhine",
             "de": "Geschlossen, Aljechin-Gambit",
             "fr": "Fermée, Gambit Alekhine",
-            "it": "Chiusa, Gambetto Alechin"
+            "it": "Chiusa, Gambetto Alechin",
+            "tr": "Kapalı, Alekhine Gambiti",
+            "nl": "Gesloten, Alekhinegambiet",
+            "id": "Tertutup, Gambit Alekhine",
+            "vi": "Đóng, Gambit Alekhine",
+            "pl": "Zamknięty, Gambit Alekhine"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Alekhine Gambit",
@@ -253,7 +323,12 @@
             "pt-PT": "Fechada, Variante Balla",
             "de": "Geschlossen, Balla-Variante",
             "fr": "Fermée, Variante Balla",
-            "it": "Chiusa, Variante Balla"
+            "it": "Chiusa, Variante Balla",
+            "tr": "Kapalı, Balla Varyantı",
+            "nl": "Gesloten, Ballavariant",
+            "id": "Tertutup, Variasi Balla",
+            "vi": "Đóng, Phương án Balla",
+            "pl": "Zamknięty, Wariant Balla"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Balla Variation",
@@ -271,7 +346,12 @@
             "pt-PT": "Fechada, Variante Leonhardt",
             "de": "Geschlossen, Leonhardt-Variante",
             "fr": "Fermée, Variante Leonhardt",
-            "it": "Chiusa, Variante Leonhardt"
+            "it": "Chiusa, Variante Leonhardt",
+            "tr": "Kapalı, Leonhardt Varyantı",
+            "nl": "Gesloten, Leonhardtvariant",
+            "id": "Tertutup, Variasi Leonhardt",
+            "vi": "Đóng, Phương án Leonhardt",
+            "pl": "Zamknięty, Wariant Leonhardt"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Leonhardt Variation",
@@ -289,7 +369,12 @@
             "pt-PT": "Fechada",
             "de": "Geschlossen",
             "fr": "Fermée",
-            "it": "Chiusa"
+            "it": "Chiusa",
+            "tr": "Kapalı",
+            "nl": "Gesloten",
+            "id": "Tertutup",
+            "vi": "Đóng",
+            "pl": "Zamknięty"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed",
@@ -307,7 +392,12 @@
             "pt-PT": "Fechada, Variante Lutikov",
             "de": "Geschlossen, Lutikow-Variante",
             "fr": "Fermée, Variante Loutikov",
-            "it": "Chiusa, Variante Lutikov"
+            "it": "Chiusa, Variante Lutikov",
+            "tr": "Kapalı, Lutikov Varyantı",
+            "nl": "Gesloten, Lutikovvariant",
+            "id": "Tertutup, Variasi Lutikov",
+            "vi": "Đóng, Phương án Lutikov",
+            "pl": "Zamknięty, Wariant Lutikov"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed, Lutikov Variation",
@@ -325,7 +415,12 @@
             "pt-PT": "Fechada, Variante Suetin",
             "de": "Geschlossen, Suetin-Variante",
             "fr": "Fermée, Variante Suetin",
-            "it": "Chiusa, Variante Suetin"
+            "it": "Chiusa, Variante Suetin",
+            "tr": "Kapalı, Suetin Varyantı",
+            "nl": "Gesloten, Suetinvariant",
+            "id": "Tertutup, Variasi Suetin",
+            "vi": "Đóng, Phương án Suetin",
+            "pl": "Zamknięty, Wariant Suetin"
           },
           "eco": "C90",
           "opening": "Ruy Lopez: Closed, Suetin Variation",
@@ -343,7 +438,12 @@
             "pt-PT": "Fechada, Variante Yates",
             "de": "Geschlossen, Yates-Variante",
             "fr": "Fermée, Variante Yates",
-            "it": "Chiusa, Variante Yates"
+            "it": "Chiusa, Variante Yates",
+            "tr": "Kapalı, Yates Varyantı",
+            "nl": "Gesloten, Yatesvariant",
+            "id": "Tertutup, Variasi Yates",
+            "vi": "Đóng, Phương án Yates",
+            "pl": "Zamknięty, Wariant Yates"
           },
           "eco": "C91",
           "opening": "Ruy Lopez: Closed, Yates Variation",
@@ -361,7 +461,12 @@
             "pt-PT": "Fechada, Variante Bogoljubow",
             "de": "Geschlossen, Bogoljubow-Variante",
             "fr": "Fermée, Variante Bogoljubow",
-            "it": "Chiusa, Variante Bogoljubow"
+            "it": "Chiusa, Variante Bogoljubow",
+            "tr": "Kapalı, Bogoljubow Varyantı",
+            "nl": "Gesloten, Bogoljubowvariant",
+            "id": "Tertutup, Variasi Bogoljubow",
+            "vi": "Đóng, Phương án Bogoljubow",
+            "pl": "Zamknięty, Wariant Bogoljubow"
           },
           "eco": "C91",
           "opening": "Ruy Lopez: Closed, Bogoljubow Variation",
@@ -379,7 +484,12 @@
             "pt-PT": "Fechada, Variante Yates, Ataque Short",
             "de": "Geschlossen, Yates-Variante, Short-Angriff",
             "fr": "Fermée, Variante Yates, Attaque Short",
-            "it": "Chiusa, Variante Yates, Attacco Short"
+            "it": "Chiusa, Variante Yates, Attacco Short",
+            "tr": "Kapalı, Yates Varyantı, Kısa Akın",
+            "nl": "Gesloten, Yatesvariant, Korte aanval",
+            "id": "Tertutup, Variasi Yates, Serangan Pendek",
+            "vi": "Đóng, Phương án Yates, Tấn công ngắn",
+            "pl": "Zamknięty, Wariant Yates, Atak krótki"
           },
           "eco": "C91",
           "opening": "Ruy Lopez: Closed, Yates Variation, Short Attack",
@@ -397,7 +507,12 @@
             "pt-PT": "Fechada",
             "de": "Geschlossen",
             "fr": "Fermée",
-            "it": "Chiusa"
+            "it": "Chiusa",
+            "tr": "Kapalı",
+            "nl": "Gesloten",
+            "id": "Tertutup",
+            "vi": "Đóng",
+            "pl": "Zamknięty"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed",
@@ -415,7 +530,12 @@
             "pt-PT": "Fechada, Sistema Flohr",
             "de": "Geschlossen, Flohr-System",
             "fr": "Fermée, Système Flohr",
-            "it": "Chiusa, Sistema Flohr"
+            "it": "Chiusa, Sistema Flohr",
+            "tr": "Kapalı, Flohr Sistemi",
+            "nl": "Gesloten, Flohrsysteem",
+            "id": "Tertutup, Sistem Flohr",
+            "vi": "Đóng, Hệ thống Flohr",
+            "pl": "Zamknięty, System Flohr"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Flohr System",
@@ -433,7 +553,12 @@
             "pt-PT": "Fechada, Híbrido Smyslov-Breyer-Zaitsev",
             "de": "Geschlossen, Smyslow-Breyer-Saizew-Hybrid",
             "fr": "Fermée, Hybride Smyslov-Breyer-Zaïtsev",
-            "it": "Chiusa, Ibrido Smyslov-Breyer-Zajcev"
+            "it": "Chiusa, Ibrido Smyslov-Breyer-Zajcev",
+            "tr": "Kapalı, Smyslov-Breyer-Zaitsev Melezi",
+            "nl": "Gesloten, Smyslov-Breyer-Zaitsev-hybride",
+            "id": "Tertutup, Hibrida Smyslov-Breyer-Zaitsev",
+            "vi": "Đóng, Lai Smyslov-Breyer-Zaitsev",
+            "pl": "Zamknięty, Hybryda Smysłowa-Breyera-Zajcewa"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Smyslov-Breyer-Zaitsev Hybrid",
@@ -451,7 +576,12 @@
             "pt-PT": "Fechada, Variante Kholmov",
             "de": "Geschlossen, Cholmow-Variante",
             "fr": "Fermée, Variante Kholmov",
-            "it": "Chiusa, Variante Cholmov"
+            "it": "Chiusa, Variante Cholmov",
+            "tr": "Kapalı, Kholmov Varyantı",
+            "nl": "Gesloten, Kholmovvariant",
+            "id": "Tertutup, Variasi Kholmov",
+            "vi": "Đóng, Phương án Kholmov",
+            "pl": "Zamknięty, Wariant Kholmov"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Kholmov Variation",
@@ -469,7 +599,12 @@
             "pt-PT": "Fechada, Defesa Chigorin",
             "de": "Geschlossen, Tschigorin-Verteidigung",
             "fr": "Fermée, Défense Tchigorine",
-            "it": "Chiusa, Difesa Čigorin"
+            "it": "Chiusa, Difesa Čigorin",
+            "tr": "Kapalı, Chigorin Savunması",
+            "nl": "Gesloten, Chigorinverdediging",
+            "id": "Tertutup, Pertahanan Chigorin",
+            "vi": "Đóng, Phòng thủ Chigorin",
+            "pl": "Zamknięty, Obrona Chigorin"
           },
           "eco": "C97",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -487,7 +622,12 @@
             "pt-PT": "Fechada, Defesa Chigorin",
             "de": "Geschlossen, Tschigorin-Verteidigung",
             "fr": "Fermée, Défense Tchigorine",
-            "it": "Chiusa, Difesa Čigorin"
+            "it": "Chiusa, Difesa Čigorin",
+            "tr": "Kapalı, Chigorin Savunması",
+            "nl": "Gesloten, Chigorinverdediging",
+            "id": "Tertutup, Pertahanan Chigorin",
+            "vi": "Đóng, Phòng thủ Chigorin",
+            "pl": "Zamknięty, Obrona Chigorin"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -505,7 +645,12 @@
             "pt-PT": "Fechada, Defesa Chigorin",
             "de": "Geschlossen, Tschigorin-Verteidigung",
             "fr": "Fermée, Défense Tchigorine",
-            "it": "Chiusa, Difesa Čigorin"
+            "it": "Chiusa, Difesa Čigorin",
+            "tr": "Kapalı, Chigorin Savunması",
+            "nl": "Gesloten, Chigorinverdediging",
+            "id": "Tertutup, Pertahanan Chigorin",
+            "vi": "Đóng, Phòng thủ Chigorin",
+            "pl": "Zamknięty, Obrona Chigorin"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -523,7 +668,12 @@
             "pt-PT": "Fechada, Variante Borisenko",
             "de": "Geschlossen, Borisenko-Variante",
             "fr": "Fermée, Variante Borisenko",
-            "it": "Chiusa, Variante Borisenko"
+            "it": "Chiusa, Variante Borisenko",
+            "tr": "Kapalı, Borisenko Varyantı",
+            "nl": "Gesloten, Borisenkovariant",
+            "id": "Tertutup, Variasi Borisenko",
+            "vi": "Đóng, Phương án Borisenko",
+            "pl": "Zamknięty, Wariant Borisenko"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Borisenko Variation",
@@ -541,7 +691,12 @@
             "pt-PT": "Fechada, Defesa Keres",
             "de": "Geschlossen, Keres-Verteidigung",
             "fr": "Fermée, Défense Keres",
-            "it": "Chiusa, Difesa Keres"
+            "it": "Chiusa, Difesa Keres",
+            "tr": "Kapalı, Keres Savunması",
+            "nl": "Gesloten, Keresverdediging",
+            "id": "Tertutup, Pertahanan Keres",
+            "vi": "Đóng, Phòng thủ Keres",
+            "pl": "Zamknięty, Obrona Keres"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Keres Defense",
@@ -559,7 +714,12 @@
             "pt-PT": "Fechada, Defesa Chigorin",
             "de": "Geschlossen, Tschigorin-Verteidigung",
             "fr": "Fermée, Défense Tchigorine",
-            "it": "Chiusa, Difesa Čigorin"
+            "it": "Chiusa, Difesa Čigorin",
+            "tr": "Kapalı, Chigorin Savunması",
+            "nl": "Gesloten, Chigorinverdediging",
+            "id": "Tertutup, Pertahanan Chigorin",
+            "vi": "Đóng, Phòng thủ Chigorin",
+            "pl": "Zamknięty, Obrona Chigorin"
           },
           "eco": "C97",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -577,7 +737,12 @@
             "pt-PT": "Fechada, Chigorin, Sistema Jugoslavo",
             "de": "Geschlossen, Tschigorin, Jugoslawisches System",
             "fr": "Fermée, Tchigorine, Système yougoslave",
-            "it": "Chiusa, Čigorin, Sistema iugoslavo"
+            "it": "Chiusa, Čigorin, Sistema iugoslavo",
+            "tr": "Kapalı, Chigorin, Yugoslav Sistemi",
+            "nl": "Gesloten, Chigorin, Joegoslavisch systeem",
+            "id": "Tertutup, Chigorin, Sistem Yugoslavia",
+            "vi": "Đóng, Chigorin, Hệ thống Nam Tư",
+            "pl": "Zamknięty, Chigorin, System jugosłowiański"
           },
           "eco": "C97",
           "opening": "Ruy Lopez: Closed, Chigorin, Yugoslav System",
@@ -595,7 +760,12 @@
             "pt-PT": "Fechada, Defesa Chigorin",
             "de": "Geschlossen, Tschigorin-Verteidigung",
             "fr": "Fermée, Défense Tchigorine",
-            "it": "Chiusa, Difesa Čigorin"
+            "it": "Chiusa, Difesa Čigorin",
+            "tr": "Kapalı, Chigorin Savunması",
+            "nl": "Gesloten, Chigorinverdediging",
+            "id": "Tertutup, Pertahanan Chigorin",
+            "vi": "Đóng, Phòng thủ Chigorin",
+            "pl": "Zamknięty, Obrona Chigorin"
           },
           "eco": "C98",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -613,7 +783,12 @@
             "pt-PT": "Fechada, Defesa Chigorin",
             "de": "Geschlossen, Tschigorin-Verteidigung",
             "fr": "Fermée, Défense Tchigorine",
-            "it": "Chiusa, Difesa Čigorin"
+            "it": "Chiusa, Difesa Čigorin",
+            "tr": "Kapalı, Chigorin Savunması",
+            "nl": "Gesloten, Chigorinverdediging",
+            "id": "Tertutup, Pertahanan Chigorin",
+            "vi": "Đóng, Phòng thủ Chigorin",
+            "pl": "Zamknięty, Obrona Chigorin"
           },
           "eco": "C98",
           "opening": "Ruy Lopez: Closed, Chigorin Defense",
@@ -631,7 +806,12 @@
             "pt-PT": "Fechada, Defesa Chigorin, Sistema Panov",
             "de": "Geschlossen, Tschigorin-Verteidigung, Panow-System",
             "fr": "Fermée, Défense Tchigorine, Système Panov",
-            "it": "Chiusa, Difesa Čigorin, Sistema Panov"
+            "it": "Chiusa, Difesa Čigorin, Sistema Panov",
+            "tr": "Kapalı, Chigorin Savunması, Panov Sistemi",
+            "nl": "Gesloten, Chigorinverdediging, Panovsysteem",
+            "id": "Tertutup, Pertahanan Chigorin, Sistem Panov",
+            "vi": "Đóng, Phòng thủ Chigorin, Hệ thống Panov",
+            "pl": "Zamknięty, Obrona Chigorin, System Panov"
           },
           "eco": "C99",
           "opening": "Ruy Lopez: Closed, Chigorin Defense, Panov System",
@@ -649,7 +829,12 @@
             "pt-PT": "Fechada, Defesa Rossolimo",
             "de": "Geschlossen, Rossolimo-Verteidigung",
             "fr": "Fermée, Défense Rossolimo",
-            "it": "Chiusa, Difesa Rossolimo"
+            "it": "Chiusa, Difesa Rossolimo",
+            "tr": "Kapalı, Rossolimo Savunması",
+            "nl": "Gesloten, Rossolimoverdediging",
+            "id": "Tertutup, Pertahanan Rossolimo",
+            "vi": "Đóng, Phòng thủ Rossolimo",
+            "pl": "Zamknięty, Obrona Rossolimo"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Rossolimo Defense",
@@ -667,7 +852,12 @@
             "pt-PT": "Fechada, Defesa Chigorin, Gambito Gajewski",
             "de": "Geschlossen, Tschigorin-Verteidigung, Gajewski-Gambit",
             "fr": "Fermée, Défense Tchigorine, Gambit Gajewski",
-            "it": "Chiusa, Difesa Čigorin, Gambetto Gajewski"
+            "it": "Chiusa, Difesa Čigorin, Gambetto Gajewski",
+            "tr": "Kapalı, Chigorin Savunması, Gajewski Gambiti",
+            "nl": "Gesloten, Chigorinverdediging, Gajewskigambiet",
+            "id": "Tertutup, Pertahanan Chigorin, Gambit Gajewski",
+            "vi": "Đóng, Phòng thủ Chigorin, Gambit Gajewski",
+            "pl": "Zamknięty, Obrona Chigorin, Gambit Gajewski"
           },
           "eco": "C96",
           "opening": "Ruy Lopez: Closed, Chigorin Defense, Gajewski Gambit",
@@ -685,7 +875,12 @@
             "pt-PT": "Fechada, Defesa Breyer",
             "de": "Geschlossen, Breyer-Verteidigung",
             "fr": "Fermée, Défense Breyer",
-            "it": "Chiusa, Difesa Breyer"
+            "it": "Chiusa, Difesa Breyer",
+            "tr": "Kapalı, Breyer Savunması",
+            "nl": "Gesloten, Breyerverdediging",
+            "id": "Tertutup, Pertahanan Breyer",
+            "vi": "Đóng, Phòng thủ Breyer",
+            "pl": "Zamknięty, Obrona Breyer"
           },
           "eco": "C94",
           "opening": "Ruy Lopez: Closed, Breyer Defense",
@@ -703,7 +898,12 @@
             "pt-PT": "Fechada, Defesa Breyer, Variante Tranquila",
             "de": "Geschlossen, Breyer-Verteidigung, Ruhige Variante",
             "fr": "Fermée, Défense Breyer, Variante tranquille",
-            "it": "Chiusa, Difesa Breyer, Variante tranquilla"
+            "it": "Chiusa, Difesa Breyer, Variante tranquilla",
+            "tr": "Kapalı, Breyer Savunması, Sakin Varyant",
+            "nl": "Gesloten, Breyerverdediging, Rustige variant",
+            "id": "Tertutup, Pertahanan Breyer, Variasi Tenang",
+            "vi": "Đóng, Phòng thủ Breyer, Phương án êm",
+            "pl": "Zamknięty, Obrona Breyer, Wariant spokojny"
           },
           "eco": "C94",
           "opening": "Ruy Lopez: Closed, Breyer Defense, Quiet Variation",
@@ -721,7 +921,12 @@
             "pt-PT": "Fechada, Breyer",
             "de": "Geschlossen, Breyer",
             "fr": "Fermée, Breyer",
-            "it": "Chiusa, Breyer"
+            "it": "Chiusa, Breyer",
+            "tr": "Kapalı, Breyer",
+            "nl": "Gesloten, Breyer",
+            "id": "Tertutup, Breyer",
+            "vi": "Đóng, Breyer",
+            "pl": "Zamknięty, Breyer"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer",
@@ -739,7 +944,12 @@
             "pt-PT": "Fechada, Defesa Breyer, Híbrido Zaitsev",
             "de": "Geschlossen, Breyer-Verteidigung, Saizew-Hybrid",
             "fr": "Fermée, Défense Breyer, Hybride Zaïtsev",
-            "it": "Chiusa, Difesa Breyer, Ibrido Zajcev"
+            "it": "Chiusa, Difesa Breyer, Ibrido Zajcev",
+            "tr": "Kapalı, Breyer Savunması, Zaitsev Melezi",
+            "nl": "Gesloten, Breyerverdediging, Zaitsev-hybride",
+            "id": "Tertutup, Pertahanan Breyer, Hibrida Zaitsev",
+            "vi": "Đóng, Phòng thủ Breyer, Lai Zaitsev",
+            "pl": "Zamknięty, Obrona Breyer, Hybryda Zajcewa"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer Defense, Zaitsev Hybrid",
@@ -757,7 +967,12 @@
             "pt-PT": "Fechada, Defesa Breyer",
             "de": "Geschlossen, Breyer-Verteidigung",
             "fr": "Fermée, Défense Breyer",
-            "it": "Chiusa, Difesa Breyer"
+            "it": "Chiusa, Difesa Breyer",
+            "tr": "Kapalı, Breyer Savunması",
+            "nl": "Gesloten, Breyerverdediging",
+            "id": "Tertutup, Pertahanan Breyer",
+            "vi": "Đóng, Phòng thủ Breyer",
+            "pl": "Zamknięty, Obrona Breyer"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer Defense",
@@ -775,7 +990,12 @@
             "pt-PT": "Fechada, Defesa Breyer",
             "de": "Geschlossen, Breyer-Verteidigung",
             "fr": "Fermée, Défense Breyer",
-            "it": "Chiusa, Difesa Breyer"
+            "it": "Chiusa, Difesa Breyer",
+            "tr": "Kapalı, Breyer Savunması",
+            "nl": "Gesloten, Breyerverdediging",
+            "id": "Tertutup, Pertahanan Breyer",
+            "vi": "Đóng, Phòng thủ Breyer",
+            "pl": "Zamknięty, Obrona Breyer"
           },
           "eco": "C95",
           "opening": "Ruy Lopez: Closed, Breyer Defense",
@@ -793,7 +1013,12 @@
             "pt-PT": "Fechada, Variante Karpov",
             "de": "Geschlossen, Karpow-Variante",
             "fr": "Fermée, Variante Karpov",
-            "it": "Chiusa, Variante Karpov"
+            "it": "Chiusa, Variante Karpov",
+            "tr": "Kapalı, Karpov Varyantı",
+            "nl": "Gesloten, Karpovvariant",
+            "id": "Tertutup, Variasi Karpov",
+            "vi": "Đóng, Phương án Karpov",
+            "pl": "Zamknięty, Wariant Karpov"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Karpov Variation",
@@ -811,7 +1036,12 @@
             "pt-PT": "Fechada, Sistema Zaitsev",
             "de": "Geschlossen, Saizew-System",
             "fr": "Fermée, Système Zaïtsev",
-            "it": "Chiusa, Sistema Zajcev"
+            "it": "Chiusa, Sistema Zajcev",
+            "tr": "Kapalı, Zaitsev Sistemi",
+            "nl": "Gesloten, Zaitsevsysteem",
+            "id": "Tertutup, Sistem Zaitsev",
+            "vi": "Đóng, Hệ thống Zaitsev",
+            "pl": "Zamknięty, System Zaitsev"
           },
           "eco": "C92",
           "opening": "Ruy Lopez: Closed, Zaitsev System",
@@ -829,7 +1059,12 @@
             "pt-PT": "Fechada, Defesa Smyslov",
             "de": "Geschlossen, Smyslow-Verteidigung",
             "fr": "Fermée, Défense Smyslov",
-            "it": "Chiusa, Difesa Smyslov"
+            "it": "Chiusa, Difesa Smyslov",
+            "tr": "Kapalı, Smyslov Savunması",
+            "nl": "Gesloten, Smyslovverdediging",
+            "id": "Tertutup, Pertahanan Smyslov",
+            "vi": "Đóng, Phòng thủ Smyslov",
+            "pl": "Zamknięty, Obrona Smyslov"
           },
           "eco": "C93",
           "opening": "Ruy Lopez: Closed, Smyslov Defense",
@@ -847,7 +1082,12 @@
             "pt-PT": "Fechada, Ataque Rosen",
             "de": "Geschlossen, Rosen-Angriff",
             "fr": "Fermée, Attaque Rosen",
-            "it": "Chiusa, Attacco Rosen"
+            "it": "Chiusa, Attacco Rosen",
+            "tr": "Kapalı, Rosen Akını",
+            "nl": "Gesloten, Rosenaanval",
+            "id": "Tertutup, Serangan Rosen",
+            "vi": "Đóng, Tấn công Rosen",
+            "pl": "Zamknięty, Atak Rosen"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Closed, Rosen Attack",
@@ -865,7 +1105,12 @@
             "pt-PT": "Fechada, Variante Averbakh",
             "de": "Geschlossen, Awerbach-Variante",
             "fr": "Fermée, Variante Averbakh",
-            "it": "Chiusa, Variante Averbach"
+            "it": "Chiusa, Variante Averbach",
+            "tr": "Kapalı, Averbakh Varyantı",
+            "nl": "Gesloten, Averbakhvariant",
+            "id": "Tertutup, Variasi Averbakh",
+            "vi": "Đóng, Phương án Averbakh",
+            "pl": "Zamknięty, Wariant Averbakh"
           },
           "eco": "C87",
           "opening": "Ruy Lopez: Closed, Averbakh Variation",
@@ -883,7 +1128,12 @@
             "pt-PT": "Fechada, Variante Martinez",
             "de": "Geschlossen, Martinez-Variante",
             "fr": "Fermée, Variante Martinez",
-            "it": "Chiusa, Variante Martinez"
+            "it": "Chiusa, Variante Martinez",
+            "tr": "Kapalı, Martinez Varyantı",
+            "nl": "Gesloten, Martinezvariant",
+            "id": "Tertutup, Variasi Martinez",
+            "vi": "Đóng, Phương án Martinez",
+            "pl": "Zamknięty, Wariant Martinez"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Martinez Variation",
@@ -901,7 +1151,12 @@
             "pt-PT": "Fechada, Ataque ao Centro",
             "de": "Geschlossen, Zentrumsangriff",
             "fr": "Fermée, Attaque au centre",
-            "it": "Chiusa, Attacco al centro"
+            "it": "Chiusa, Attacco al centro",
+            "tr": "Kapalı, Merkez Akını",
+            "nl": "Gesloten, Centrumaanval",
+            "id": "Tertutup, Serangan Pusat",
+            "vi": "Đóng, Tấn công trung tâm",
+            "pl": "Zamknięty, Atak centralny"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Center Attack",
@@ -919,7 +1174,12 @@
             "pt-PT": "Fechada, Gambito Basca",
             "de": "Geschlossen, Baskisches Gambit",
             "fr": "Fermée, Gambit basque",
-            "it": "Chiusa, Gambetto basco"
+            "it": "Chiusa, Gambetto basco",
+            "tr": "Kapalı, Bask Gambiti",
+            "nl": "Gesloten, Baskisch gambiet",
+            "id": "Tertutup, Gambit Basque",
+            "vi": "Đóng, Gambit Basque",
+            "pl": "Zamknięty, Gambit baskijski"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Basque Gambit",
@@ -937,7 +1197,12 @@
             "pt-PT": "Fechada, Ataque ao Centro, Gambito Basca",
             "de": "Geschlossen, Zentrumsangriff, Baskisches Gambit",
             "fr": "Fermée, Attaque au centre, Gambit basque",
-            "it": "Chiusa, Attacco al centro, Gambetto basco"
+            "it": "Chiusa, Attacco al centro, Gambetto basco",
+            "tr": "Kapalı, Merkez Akını, Bask Gambiti",
+            "nl": "Gesloten, Centrumaanval, Baskisch gambiet",
+            "id": "Tertutup, Serangan Pusat, Gambit Basque",
+            "vi": "Đóng, Tấn công trung tâm, Gambit Basque",
+            "pl": "Zamknięty, Atak centralny, Gambit baskijski"
           },
           "eco": "C84",
           "opening": "Ruy Lopez: Closed, Center Attack, Basque Gambit",
@@ -955,7 +1220,12 @@
             "pt-PT": "Fechada, Ataque Worrall, Linha do Roque",
             "de": "Geschlossen, Worrall-Angriff, Rochade-Abspiel",
             "fr": "Fermée, Attaque Worrall, Ligne du roque",
-            "it": "Chiusa, Attacco Worrall, Linea dell'arrocco"
+            "it": "Chiusa, Attacco Worrall, Linea dell'arrocco",
+            "tr": "Kapalı, Worrall Akını, Rok Hattı",
+            "nl": "Gesloten, Worrallaanval, Rokadelijn",
+            "id": "Tertutup, Serangan Worrall, Lini Rokade",
+            "vi": "Đóng, Tấn công Worrall, Diễn biến nhập thành",
+            "pl": "Zamknięty, Atak Worrall, Linia roszady"
           },
           "eco": "C86",
           "opening": "Ruy Lopez: Closed, Worrall Attack, Castling Line",
@@ -973,7 +1243,12 @@
             "pt-PT": "Fechada, Variante Kecskemet",
             "de": "Geschlossen, Kecskemet-Variante",
             "fr": "Fermée, Variante Kecskemet",
-            "it": "Chiusa, Variante Kecskemet"
+            "it": "Chiusa, Variante Kecskemet",
+            "tr": "Kapalı, Kecskemet Varyantı",
+            "nl": "Gesloten, Kecskemetvariant",
+            "id": "Tertutup, Variasi Kecskemet",
+            "vi": "Đóng, Phương án Kecskemet",
+            "pl": "Zamknięty, Wariant Kecskemet"
           },
           "eco": "C72",
           "opening": "Ruy Lopez: Closed, Kecskemet Variation",
@@ -992,7 +1267,12 @@
         "pt-PT": "Defesa Morphy",
         "de": "Morphy-Verteidigung",
         "fr": "Défense Morphy",
-        "it": "Difesa Morphy"
+        "it": "Difesa Morphy",
+        "tr": "Morphy Savunması",
+        "pl": "Obrona Morphy",
+        "nl": "Morphyverdediging",
+        "id": "Pertahanan Morphy",
+        "vi": "Phòng thủ Morphy"
       },
       "lines": [
         {
@@ -1006,7 +1286,12 @@
             "pt-PT": "Defesa Morphy",
             "de": "Morphy-Verteidigung",
             "fr": "Défense Morphy",
-            "it": "Difesa Morphy"
+            "it": "Difesa Morphy",
+            "tr": "Morphy Savunması",
+            "pl": "Obrona Morphy",
+            "nl": "Morphyverdediging",
+            "id": "Pertahanan Morphy",
+            "vi": "Phòng thủ Morphy"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense",
@@ -1024,7 +1309,12 @@
             "pt-PT": "Defesa Morphy, Defesa Alapin Adiada",
             "de": "Morphy-Verteidigung, Aufgeschobene Alapin-Verteidigung",
             "fr": "Défense Morphy, Défense Alapine différée",
-            "it": "Difesa Morphy, Difesa Alapin differita"
+            "it": "Difesa Morphy, Difesa Alapin differita",
+            "tr": "Morphy Savunması, Gecikmeli Alapin's Savunması",
+            "nl": "Morphyverdediging, Alapin'sverdediging uitgesteld",
+            "id": "Pertahanan Morphy, Pertahanan Alapin's Ditunda",
+            "vi": "Phòng thủ Morphy, Phòng thủ Alapin's hoãn lại",
+            "pl": "Obrona Morphy, Obrona Alapin's odroczona"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Alapin's Defense Deferred",
@@ -1042,7 +1332,12 @@
             "pt-PT": "Defesa Morphy, Defesa Clássica Adiada",
             "de": "Morphy-Verteidigung, Aufgeschobene Klassische Verteidigung",
             "fr": "Défense Morphy, Défense classique différée",
-            "it": "Difesa Morphy, Difesa classica differita"
+            "it": "Difesa Morphy, Difesa classica differita",
+            "tr": "Morphy Savunması, Gecikmeli Klasik Savunma",
+            "nl": "Morphyverdediging, Klassieke verdediging uitgesteld",
+            "id": "Pertahanan Morphy, Pertahanan Klasik Ditunda",
+            "vi": "Phòng thủ Morphy, Phòng thủ cổ điển hoãn lại",
+            "pl": "Obrona Morphy, Obrona klasyczna odroczona"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
@@ -1060,7 +1355,12 @@
             "pt-PT": "Defesa Morphy, Variante Bayreuth",
             "de": "Morphy-Verteidigung, Bayreuth-Variante",
             "fr": "Défense Morphy, Variante Bayreuth",
-            "it": "Difesa Morphy, Variante Bayreuth"
+            "it": "Difesa Morphy, Variante Bayreuth",
+            "tr": "Morphy Savunması, Bayreuth Varyantı",
+            "pl": "Obrona Morphy, Wariant Bayreuth",
+            "nl": "Morphyverdediging, Bayreuthvariant",
+            "id": "Pertahanan Morphy, Variasi Bayreuth",
+            "vi": "Phòng thủ Morphy, Phương án Bayreuth"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Bayreuth Variation",
@@ -1078,7 +1378,12 @@
             "pt-PT": "Defesa Morphy, Variante Tarrasch",
             "de": "Morphy-Verteidigung, Tarrasch-Variante",
             "fr": "Défense Morphy, Variante Tarrasch",
-            "it": "Difesa Morphy, Variante Tarrasch"
+            "it": "Difesa Morphy, Variante Tarrasch",
+            "tr": "Morphy Savunması, Tarrasch Varyantı",
+            "pl": "Obrona Morphy, Wariant Tarrasch",
+            "nl": "Morphyverdediging, Tarraschvariant",
+            "id": "Pertahanan Morphy, Variasi Tarrasch",
+            "vi": "Phòng thủ Morphy, Phương án Tarrasch"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Tarrasch Variation",
@@ -1096,7 +1401,12 @@
             "pt-PT": "Defesa Morphy",
             "de": "Morphy-Verteidigung",
             "fr": "Défense Morphy",
-            "it": "Difesa Morphy"
+            "it": "Difesa Morphy",
+            "tr": "Morphy Savunması",
+            "pl": "Obrona Morphy",
+            "nl": "Morphyverdediging",
+            "id": "Pertahanan Morphy",
+            "vi": "Phòng thủ Morphy"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense",
@@ -1114,7 +1424,12 @@
             "pt-PT": "Defesa Morphy, Variante Møller",
             "de": "Morphy-Verteidigung, Møller-Variante",
             "fr": "Défense Morphy, Variante Møller",
-            "it": "Difesa Morphy, Variante Møller"
+            "it": "Difesa Morphy, Variante Møller",
+            "tr": "Morphy Savunması, Møller Varyantı",
+            "pl": "Obrona Morphy, Wariant Møller",
+            "nl": "Morphyverdediging, Møllervariant",
+            "id": "Pertahanan Morphy, Variasi Møller",
+            "vi": "Phòng thủ Morphy, Phương án Møller"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Møller Variation",
@@ -1132,7 +1447,12 @@
             "pt-PT": "Defesa Morphy, Variante Tartakower",
             "de": "Morphy-Verteidigung, Tartakower-Variante",
             "fr": "Défense Morphy, Variante Tartakower",
-            "it": "Difesa Morphy, Variante Tartakower"
+            "it": "Difesa Morphy, Variante Tartakower",
+            "tr": "Morphy Savunması, Tartakower Varyantı",
+            "pl": "Obrona Morphy, Wariant Tartakower",
+            "nl": "Morphyverdediging, Tartakowervariant",
+            "id": "Pertahanan Morphy, Variasi Tartakower",
+            "vi": "Phòng thủ Morphy, Phương án Tartakower"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Morphy Defense, Tartakower Variation",
@@ -1150,7 +1470,12 @@
             "pt-PT": "Defesa Morphy, Variante Arkhangelsk",
             "de": "Morphy-Verteidigung, Archangelsk-Variante",
             "fr": "Défense Morphy, Variante d'Arkhangelsk",
-            "it": "Difesa Morphy, Variante di Arcangelo"
+            "it": "Difesa Morphy, Variante di Arcangelo",
+            "tr": "Morphy Savunması, Arhangelsk Varyantı",
+            "nl": "Morphyverdediging, Archangelskvariant",
+            "id": "Pertahanan Morphy, Variasi Arkhangelsk",
+            "vi": "Phòng thủ Morphy, Phương án Arkhangelsk",
+            "pl": "Obrona Morphy, Wariant archangielski"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Arkhangelsk Variation",
@@ -1168,7 +1493,12 @@
             "pt-PT": "Defesa Morphy, Variante Neo-Arkhangelsk",
             "de": "Morphy-Verteidigung, Neo-Archangelsk-Variante",
             "fr": "Défense Morphy, Variante néo-Arkhangelsk",
-            "it": "Difesa Morphy, Variante neo-Arcangelo"
+            "it": "Difesa Morphy, Variante neo-Arcangelo",
+            "tr": "Morphy Savunması, Neo-Arhangelsk Varyantı",
+            "nl": "Morphyverdediging, Neo-Archangelskvariant",
+            "id": "Pertahanan Morphy, Variasi Neo-Arkhangelsk",
+            "vi": "Phòng thủ Morphy, Phương án Arkhangelsk mới",
+            "pl": "Obrona Morphy, Wariant neoarchangielski"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Neo-Arkhangelsk Variation",
@@ -1186,7 +1516,12 @@
             "pt-PT": "Defesa Morphy, Ataque de Ala",
             "de": "Morphy-Verteidigung, Flügelangriff",
             "fr": "Défense Morphy, Attaque à l'aile",
-            "it": "Difesa Morphy, Attacco d'ala"
+            "it": "Difesa Morphy, Attacco d'ala",
+            "tr": "Morphy Savunması, Kanat Akını",
+            "nl": "Morphyverdediging, Vleugelaanval",
+            "id": "Pertahanan Morphy, Serangan Sayap",
+            "vi": "Phòng thủ Morphy, Tấn công cánh",
+            "pl": "Obrona Morphy, Atak skrzydłowy"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense, Wing Attack",
@@ -1204,7 +1539,12 @@
             "pt-PT": "Defesa Morphy",
             "de": "Morphy-Verteidigung",
             "fr": "Défense Morphy",
-            "it": "Difesa Morphy"
+            "it": "Difesa Morphy",
+            "tr": "Morphy Savunması",
+            "pl": "Obrona Morphy",
+            "nl": "Morphyverdediging",
+            "id": "Pertahanan Morphy",
+            "vi": "Phòng thủ Morphy"
           },
           "eco": "C78",
           "opening": "Ruy Lopez: Morphy Defense",
@@ -1222,7 +1562,12 @@
             "pt-PT": "Defesa Morphy, Steinitz Adiada",
             "de": "Morphy-Verteidigung, Aufgeschobener Steinitz",
             "fr": "Défense Morphy, Steinitz différée",
-            "it": "Difesa Morphy, Steinitz differita"
+            "it": "Difesa Morphy, Steinitz differita",
+            "tr": "Morphy Savunması, Gecikmeli Steinitz",
+            "nl": "Morphyverdediging, Steinitz uitgesteld",
+            "id": "Pertahanan Morphy, Steinitz Ditunda",
+            "vi": "Phòng thủ Morphy, Steinitz hoãn lại",
+            "pl": "Obrona Morphy, Steinitz odroczony"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Morphy Defense, Steinitz Deferred",
@@ -1240,7 +1585,12 @@
             "pt-PT": "Defesa Morphy, Steinitz Adiada",
             "de": "Morphy-Verteidigung, Aufgeschobener Steinitz",
             "fr": "Défense Morphy, Steinitz différée",
-            "it": "Difesa Morphy, Steinitz differita"
+            "it": "Difesa Morphy, Steinitz differita",
+            "tr": "Morphy Savunması, Gecikmeli Steinitz",
+            "nl": "Morphyverdediging, Steinitz uitgesteld",
+            "id": "Pertahanan Morphy, Steinitz Ditunda",
+            "vi": "Phòng thủ Morphy, Steinitz hoãn lại",
+            "pl": "Obrona Morphy, Steinitz odroczony"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Morphy Defense, Steinitz Deferred",
@@ -1258,7 +1608,12 @@
             "pt-PT": "Defesa Morphy, Ataque Wormald",
             "de": "Morphy-Verteidigung, Wormald-Angriff",
             "fr": "Défense Morphy, Attaque Wormald",
-            "it": "Difesa Morphy, Attacco Wormald"
+            "it": "Difesa Morphy, Attacco Wormald",
+            "tr": "Morphy Savunması, Wormald Akını",
+            "pl": "Obrona Morphy, Atak Wormald",
+            "nl": "Morphyverdediging, Wormaldaanval",
+            "id": "Pertahanan Morphy, Serangan Wormald",
+            "vi": "Phòng thủ Morphy, Tấn công Wormald"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Wormald Attack",
@@ -1276,7 +1631,12 @@
             "pt-PT": "Defesa Morphy, Gambito Jaffe",
             "de": "Morphy-Verteidigung, Jaffe-Gambit",
             "fr": "Défense Morphy, Gambit Jaffe",
-            "it": "Difesa Morphy, Gambetto Jaffe"
+            "it": "Difesa Morphy, Gambetto Jaffe",
+            "tr": "Morphy Savunması, Jaffe Gambiti",
+            "pl": "Obrona Morphy, Gambit Jaffe",
+            "nl": "Morphyverdediging, Jaffegambiet",
+            "id": "Pertahanan Morphy, Gambit Jaffe",
+            "vi": "Phòng thủ Morphy, Gambit Jaffe"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Jaffe Gambit",
@@ -1294,7 +1654,12 @@
             "pt-PT": "Defesa Morphy, Variante Anderssen",
             "de": "Morphy-Verteidigung, Anderssen-Variante",
             "fr": "Défense Morphy, Variante Anderssen",
-            "it": "Difesa Morphy, Variante Anderssen"
+            "it": "Difesa Morphy, Variante Anderssen",
+            "tr": "Morphy Savunması, Anderssen Varyantı",
+            "pl": "Obrona Morphy, Wariant Anderssen",
+            "nl": "Morphyverdediging, Anderssenvariant",
+            "id": "Pertahanan Morphy, Variasi Anderssen",
+            "vi": "Phòng thủ Morphy, Phương án Anderssen"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Anderssen Variation",
@@ -1312,7 +1677,12 @@
             "pt-PT": "Defesa Morphy, Variante Duras",
             "de": "Morphy-Verteidigung, Duras-Variante",
             "fr": "Défense Morphy, Variante Duras",
-            "it": "Difesa Morphy, Variante Duras"
+            "it": "Difesa Morphy, Variante Duras",
+            "tr": "Morphy Savunması, Duras Varyantı",
+            "pl": "Obrona Morphy, Wariant Duras",
+            "nl": "Morphyverdediging, Durasvariant",
+            "id": "Pertahanan Morphy, Variasi Duras",
+            "vi": "Phòng thủ Morphy, Phương án Duras"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Duras Variation",
@@ -1330,7 +1700,12 @@
             "pt-PT": "Defesa Morphy, Variante Mackenzie",
             "de": "Morphy-Verteidigung, Mackenzie-Variante",
             "fr": "Défense Morphy, Variante Mackenzie",
-            "it": "Difesa Morphy, Variante Mackenzie"
+            "it": "Difesa Morphy, Variante Mackenzie",
+            "tr": "Morphy Savunması, Mackenzie Varyantı",
+            "pl": "Obrona Morphy, Wariant Mackenzie",
+            "nl": "Morphyverdediging, Mackenzievariant",
+            "id": "Pertahanan Morphy, Variasi Mackenzie",
+            "vi": "Phòng thủ Morphy, Phương án Mackenzie"
           },
           "eco": "C77",
           "opening": "Ruy Lopez: Morphy Defense, Mackenzie Variation",
@@ -1348,7 +1723,12 @@
             "pt-PT": "Defesa Morphy, Defesa Cozio",
             "de": "Morphy-Verteidigung, Cozio-Verteidigung",
             "fr": "Défense Morphy, Défense Cozio",
-            "it": "Difesa Morphy, Difesa Cozio"
+            "it": "Difesa Morphy, Difesa Cozio",
+            "tr": "Morphy Savunması, Cozio Savunması",
+            "pl": "Obrona Morphy, Obrona Cozio",
+            "nl": "Morphyverdediging, Cozioverdediging",
+            "id": "Pertahanan Morphy, Pertahanan Cozio",
+            "vi": "Phòng thủ Morphy, Phòng thủ Cozio"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Cozio Defense",
@@ -1366,7 +1746,12 @@
             "pt-PT": "Defesa Morphy, Variante Caro",
             "de": "Morphy-Verteidigung, Caro-Variante",
             "fr": "Défense Morphy, Variante Caro",
-            "it": "Difesa Morphy, Variante Caro"
+            "it": "Difesa Morphy, Variante Caro",
+            "tr": "Morphy Savunması, Caro Varyantı",
+            "pl": "Obrona Morphy, Wariant Caro",
+            "nl": "Morphyverdediging, Carovariant",
+            "id": "Pertahanan Morphy, Variasi Caro",
+            "vi": "Phòng thủ Morphy, Phương án Caro"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Caro Variation",
@@ -1384,7 +1769,12 @@
             "pt-PT": "Defesa Morphy, Variante Graz",
             "de": "Morphy-Verteidigung, Graz-Variante",
             "fr": "Défense Morphy, Variante Graz",
-            "it": "Difesa Morphy, Variante Graz"
+            "it": "Difesa Morphy, Variante Graz",
+            "tr": "Morphy Savunması, Graz Varyantı",
+            "pl": "Obrona Morphy, Wariant Graz",
+            "nl": "Morphyverdediging, Grazvariant",
+            "id": "Pertahanan Morphy, Variasi Graz",
+            "vi": "Phòng thủ Morphy, Phương án Graz"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Graz Variation",
@@ -1402,7 +1792,12 @@
             "pt-PT": "Defesa Morphy, Variante Norueguesa",
             "de": "Morphy-Verteidigung, Norwegische Variante",
             "fr": "Défense Morphy, Variante norvégienne",
-            "it": "Difesa Morphy, Variante norvegese"
+            "it": "Difesa Morphy, Variante norvegese",
+            "tr": "Morphy Savunması, Norveç Varyantı",
+            "nl": "Morphyverdediging, Noorse variant",
+            "id": "Pertahanan Morphy, Variasi Norwegia",
+            "vi": "Phòng thủ Morphy, Phương án Na Uy",
+            "pl": "Obrona Morphy, Wariant norweski"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Norwegian Variation",
@@ -1420,7 +1815,12 @@
             "pt-PT": "Defesa Morphy, Variante Norueguesa, Gambito Rouxinol",
             "de": "Morphy-Verteidigung, Norwegische Variante, Nachtigall-Gambit",
             "fr": "Défense Morphy, Variante norvégienne, Gambit du rossignol",
-            "it": "Difesa Morphy, Variante norvegese, Gambetto dell'usignolo"
+            "it": "Difesa Morphy, Variante norvegese, Gambetto dell'usignolo",
+            "tr": "Morphy Savunması, Norveç Varyantı, Bülbül Gambiti",
+            "nl": "Morphyverdediging, Noorse variant, Nachtegaalgambiet",
+            "id": "Pertahanan Morphy, Variasi Norwegia, Gambit Bulbul",
+            "vi": "Phòng thủ Morphy, Phương án Na Uy, Gambit chim sơn ca",
+            "pl": "Obrona Morphy, Wariant norweski, Gambit słowika"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Norwegian Variation, Nightingale Gambit",
@@ -1438,7 +1838,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung",
             "fr": "Défense Morphy, Défense Steinitz moderne",
-            "it": "Difesa Morphy, Difesa Steinitz moderna"
+            "it": "Difesa Morphy, Difesa Steinitz moderna",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1456,7 +1861,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung",
             "fr": "Défense Morphy, Défense Steinitz moderne",
-            "it": "Difesa Morphy, Difesa Steinitz moderna"
+            "it": "Difesa Morphy, Difesa Steinitz moderna",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna"
           },
           "eco": "C73",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1474,7 +1884,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung",
             "fr": "Défense Morphy, Défense Steinitz moderne",
-            "it": "Difesa Morphy, Difesa Steinitz moderna"
+            "it": "Difesa Morphy, Difesa Steinitz moderna",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna"
           },
           "eco": "C73",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1492,7 +1907,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung",
             "fr": "Défense Morphy, Défense Steinitz moderne",
-            "it": "Difesa Morphy, Difesa Steinitz moderna"
+            "it": "Difesa Morphy, Difesa Steinitz moderna",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1510,7 +1930,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung",
             "fr": "Défense Morphy, Défense Steinitz moderne",
-            "it": "Difesa Morphy, Difesa Steinitz moderna"
+            "it": "Difesa Morphy, Difesa Steinitz moderna",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna"
           },
           "eco": "C72",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1528,7 +1953,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung",
             "fr": "Défense Morphy, Défense Steinitz moderne",
-            "it": "Difesa Morphy, Difesa Steinitz moderna"
+            "it": "Difesa Morphy, Difesa Steinitz moderna",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna"
           },
           "eco": "C74",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1546,7 +1976,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung",
             "fr": "Défense Morphy, Défense Steinitz moderne",
-            "it": "Difesa Morphy, Difesa Steinitz moderna"
+            "it": "Difesa Morphy, Difesa Steinitz moderna",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna"
           },
           "eco": "C75",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1564,7 +1999,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung",
             "fr": "Défense Morphy, Défense Steinitz moderne",
-            "it": "Difesa Morphy, Difesa Steinitz moderna"
+            "it": "Difesa Morphy, Difesa Steinitz moderna",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna"
           },
           "eco": "C75",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1582,7 +2022,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna, Variante Siesta",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung, Siesta-Variante",
             "fr": "Défense Morphy, Défense Steinitz moderne, Variante Siesta",
-            "it": "Difesa Morphy, Difesa Steinitz moderna, Variante Siesta"
+            "it": "Difesa Morphy, Difesa Steinitz moderna, Variante Siesta",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması, Siesta Varyantı",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging, Siestavariant",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern, Variasi Siesta",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại, Phương án Siesta",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna, Wariant Siesta"
           },
           "eco": "C74",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Siesta Variation",
@@ -1600,7 +2045,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung",
             "fr": "Défense Morphy, Défense Steinitz moderne",
-            "it": "Difesa Morphy, Difesa Steinitz moderna"
+            "it": "Difesa Morphy, Difesa Steinitz moderna",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna"
           },
           "eco": "C74",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1618,7 +2068,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung",
             "fr": "Défense Morphy, Défense Steinitz moderne",
-            "it": "Difesa Morphy, Difesa Steinitz moderna"
+            "it": "Difesa Morphy, Difesa Steinitz moderna",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
@@ -1636,7 +2091,12 @@
             "pt-PT": "Defesa Morphy, Defesa Schliemann Adiada",
             "de": "Morphy-Verteidigung, Aufgeschobene Schliemann-Verteidigung",
             "fr": "Défense Morphy, Défense Schliemann différée",
-            "it": "Difesa Morphy, Difesa Schliemann differita"
+            "it": "Difesa Morphy, Difesa Schliemann differita",
+            "tr": "Morphy Savunması, Gecikmeli Schliemann Savunması",
+            "nl": "Morphyverdediging, Schliemannverdediging uitgesteld",
+            "id": "Pertahanan Morphy, Pertahanan Schliemann Ditunda",
+            "vi": "Phòng thủ Morphy, Phòng thủ Schliemann hoãn lại",
+            "pl": "Obrona Morphy, Obrona Schliemann odroczona"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
@@ -1654,7 +2114,12 @@
             "pt-PT": "Defesa Morphy, Defesa Schliemann Adiada, Gambito Jaenisch Adiado",
             "de": "Morphy-Verteidigung, Aufgeschobene Schliemann-Verteidigung, Aufgeschobenes Jaenisch-Gambit",
             "fr": "Défense Morphy, Défense Schliemann différée, Gambit Jaenisch différé",
-            "it": "Difesa Morphy, Difesa Schliemann differita, Gambetto Jaenisch differito"
+            "it": "Difesa Morphy, Difesa Schliemann differita, Gambetto Jaenisch differito",
+            "tr": "Morphy Savunması, Gecikmeli Schliemann Savunması, Gecikmeli Jaenisch Gambiti",
+            "nl": "Morphyverdediging, Schliemannverdediging uitgesteld, Jaenischgambiet uitgesteld",
+            "id": "Pertahanan Morphy, Pertahanan Schliemann Ditunda, Gambit Jaenisch Ditunda",
+            "vi": "Phòng thủ Morphy, Phòng thủ Schliemann hoãn lại, Gambit Jaenisch hoãn lại",
+            "pl": "Obrona Morphy, Obrona Schliemann odroczona, Gambit Jaenisch odroczony"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
@@ -1672,7 +2137,12 @@
             "pt-PT": "Defesa Morphy, Defesa do Fianqueto Adiada",
             "de": "Morphy-Verteidigung, Aufgeschobene Fianchetto-Verteidigung",
             "fr": "Défense Morphy, Défense en fianchetto différée",
-            "it": "Difesa Morphy, Difesa in fianchetto differita"
+            "it": "Difesa Morphy, Difesa in fianchetto differita",
+            "tr": "Morphy Savunması, Gecikmeli Fianchetto Savunması",
+            "nl": "Morphyverdediging, Fianchettoverdediging uitgesteld",
+            "id": "Pertahanan Morphy, Pertahanan Fianchetto Ditunda",
+            "vi": "Phòng thủ Morphy, Phòng thủ fianchetto hoãn lại",
+            "pl": "Obrona Morphy, Obrona z fianchettem odroczona"
           },
           "eco": "C70",
           "opening": "Ruy Lopez: Morphy Defense, Fianchetto Defense Deferred",
@@ -1690,7 +2160,12 @@
             "pt-PT": "Defesa Morphy, Defesa Steinitz Moderna, Variante do Fianqueto",
             "de": "Morphy-Verteidigung, Moderne Steinitz-Verteidigung, Fianchetto-Variante",
             "fr": "Défense Morphy, Défense Steinitz moderne, Variante du fianchetto",
-            "it": "Difesa Morphy, Difesa Steinitz moderna, Variante del fianchetto"
+            "it": "Difesa Morphy, Difesa Steinitz moderna, Variante del fianchetto",
+            "tr": "Morphy Savunması, Modern Steinitz Savunması, Fianchetto Varyantı",
+            "nl": "Morphyverdediging, Moderne Steinitz-verdediging, Fianchettovariant",
+            "id": "Pertahanan Morphy, Pertahanan Steinitz Modern, Variasi Fianchetto",
+            "vi": "Phòng thủ Morphy, Phòng thủ Steinitz hiện đại, Phương án fianchetto",
+            "pl": "Obrona Morphy, Obrona Steinitza nowoczesna, Wariant z fianchettem"
           },
           "eco": "C76",
           "opening": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Fianchetto Variation",
@@ -1709,7 +2184,12 @@
         "pt-PT": "Aberta",
         "de": "Offen",
         "fr": "Ouverte",
-        "it": "Aperta"
+        "it": "Aperta",
+        "tr": "Açık",
+        "nl": "Open",
+        "id": "Terbuka",
+        "vi": "Mở",
+        "pl": "Otwarty"
       },
       "lines": [
         {
@@ -1723,7 +2203,12 @@
             "pt-PT": "Aberta",
             "de": "Offen",
             "fr": "Ouverte",
-            "it": "Aperta"
+            "it": "Aperta",
+            "tr": "Açık",
+            "nl": "Open",
+            "id": "Terbuka",
+            "vi": "Mở",
+            "pl": "Otwarty"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -1741,7 +2226,12 @@
             "pt-PT": "Aberta, Variante Knorre",
             "de": "Offen, Knorre-Variante",
             "fr": "Ouverte, Variante Knorre",
-            "it": "Aperta, Variante Knorre"
+            "it": "Aperta, Variante Knorre",
+            "tr": "Açık, Knorre Varyantı",
+            "nl": "Open, Knorrevariant",
+            "id": "Terbuka, Variasi Knorre",
+            "vi": "Mở, Phương án Knorre",
+            "pl": "Otwarty, Wariant Knorre"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Knorre Variation",
@@ -1759,7 +2249,12 @@
             "pt-PT": "Aberta, Gambito Skipworth",
             "de": "Offen, Skipworth-Gambit",
             "fr": "Ouverte, Gambit Skipworth",
-            "it": "Aperta, Gambetto Skipworth"
+            "it": "Aperta, Gambetto Skipworth",
+            "tr": "Açık, Skipworth Gambiti",
+            "nl": "Open, Skipworthgambiet",
+            "id": "Terbuka, Gambit Skipworth",
+            "vi": "Mở, Gambit Skipworth",
+            "pl": "Otwarty, Gambit Skipworth"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Skipworth Gambit",
@@ -1777,7 +2272,12 @@
             "pt-PT": "Aberta",
             "de": "Offen",
             "fr": "Ouverte",
-            "it": "Aperta"
+            "it": "Aperta",
+            "tr": "Açık",
+            "nl": "Open",
+            "id": "Terbuka",
+            "vi": "Mở",
+            "pl": "Otwarty"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -1795,7 +2295,12 @@
             "pt-PT": "Aberta, Defesa Clássica, Linha Principal",
             "de": "Offen, Klassische Verteidigung, Hauptvariante",
             "fr": "Ouverte, Défense classique, Ligne principale",
-            "it": "Aperta, Difesa classica, Linea principale"
+            "it": "Aperta, Difesa classica, Linea principale",
+            "tr": "Açık, Klasik Savunma, Ana Hat",
+            "nl": "Open, Klassieke verdediging, Hoofdvariant",
+            "id": "Terbuka, Pertahanan Klasik, Lini Utama",
+            "vi": "Mở, Phòng thủ cổ điển, Phương án chính",
+            "pl": "Otwarty, Obrona klasyczna, Wariant główny"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
@@ -1813,7 +2318,12 @@
             "pt-PT": "Aberta",
             "de": "Offen",
             "fr": "Ouverte",
-            "it": "Aperta"
+            "it": "Aperta",
+            "tr": "Açık",
+            "nl": "Open",
+            "id": "Terbuka",
+            "vi": "Mở",
+            "pl": "Otwarty"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -1831,7 +2341,12 @@
             "pt-PT": "Aberta, Defesa Schlechter",
             "de": "Offen, Schlechter-Verteidigung",
             "fr": "Ouverte, Défense Schlechter",
-            "it": "Aperta, Difesa Schlechter"
+            "it": "Aperta, Difesa Schlechter",
+            "tr": "Açık, Schlechter Savunması",
+            "nl": "Open, Schlechterverdediging",
+            "id": "Terbuka, Pertahanan Schlechter",
+            "vi": "Mở, Phòng thủ Schlechter",
+            "pl": "Otwarty, Obrona Schlechter"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Schlechter Defense",
@@ -1849,7 +2364,12 @@
             "pt-PT": "Aberta, Variante Berger",
             "de": "Offen, Berger-Variante",
             "fr": "Ouverte, Variante Berger",
-            "it": "Aperta, Variante Berger"
+            "it": "Aperta, Variante Berger",
+            "tr": "Açık, Berger Varyantı",
+            "nl": "Open, Bergervariant",
+            "id": "Terbuka, Variasi Berger",
+            "vi": "Mở, Phương án Berger",
+            "pl": "Otwarty, Wariant Berger"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Berger Variation",
@@ -1867,7 +2387,12 @@
             "pt-PT": "Aberta, Gambito Harksen",
             "de": "Offen, Harksen-Gambit",
             "fr": "Ouverte, Gambit Harksen",
-            "it": "Aperta, Gambetto Harksen"
+            "it": "Aperta, Gambetto Harksen",
+            "tr": "Açık, Harksen Gambiti",
+            "nl": "Open, Harksengambiet",
+            "id": "Terbuka, Gambit Harksen",
+            "vi": "Mở, Gambit Harksen",
+            "pl": "Otwarty, Gambit Harksen"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Harksen Gambit",
@@ -1885,7 +2410,12 @@
             "pt-PT": "Aberta",
             "de": "Offen",
             "fr": "Ouverte",
-            "it": "Aperta"
+            "it": "Aperta",
+            "tr": "Açık",
+            "nl": "Open",
+            "id": "Terbuka",
+            "vi": "Mở",
+            "pl": "Otwarty"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open",
@@ -1903,7 +2433,12 @@
             "pt-PT": "Aberta, Linha Principal",
             "de": "Offen, Hauptvariante",
             "fr": "Ouverte, Ligne principale",
-            "it": "Aperta, Linea principale"
+            "it": "Aperta, Linea principale",
+            "tr": "Açık, Ana Hat",
+            "nl": "Open, Hoofdvariant",
+            "id": "Terbuka, Lini Utama",
+            "vi": "Mở, Phương án chính",
+            "pl": "Otwarty, Wariant główny"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Main Line",
@@ -1921,7 +2456,12 @@
             "pt-PT": "Aberta, Variante Bernstein",
             "de": "Offen, Bernstein-Variante",
             "fr": "Ouverte, Variante Bernstein",
-            "it": "Aperta, Variante Bernstein"
+            "it": "Aperta, Variante Bernstein",
+            "tr": "Açık, Bernstein Varyantı",
+            "nl": "Open, Bernsteinvariant",
+            "id": "Terbuka, Variasi Bernstein",
+            "vi": "Mở, Phương án Bernstein",
+            "pl": "Otwarty, Wariant Bernstein"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Bernstein Variation",
@@ -1939,7 +2479,12 @@
             "pt-PT": "Aberta, Variante Bernstein, Linha Luther",
             "de": "Offen, Bernstein-Variante, Luther-Abspiel",
             "fr": "Ouverte, Variante Bernstein, Ligne Luther",
-            "it": "Aperta, Variante Bernstein, Linea Luther"
+            "it": "Aperta, Variante Bernstein, Linea Luther",
+            "tr": "Açık, Bernstein Varyantı, Luther Hattı",
+            "nl": "Open, Bernsteinvariant, Lutherlijn",
+            "id": "Terbuka, Variasi Bernstein, Lini Luther",
+            "vi": "Mở, Phương án Bernstein, Diễn biến Luther",
+            "pl": "Otwarty, Wariant Bernstein, Linia Luther"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Bernstein Variation, Luther Line",
@@ -1957,7 +2502,12 @@
             "pt-PT": "Aberta, Defesa Clássica",
             "de": "Offen, Klassische Verteidigung",
             "fr": "Ouverte, Défense classique",
-            "it": "Aperta, Difesa classica"
+            "it": "Aperta, Difesa classica",
+            "tr": "Açık, Klasik Savunma",
+            "nl": "Open, Klassieke verdediging",
+            "id": "Terbuka, Pertahanan Klasik",
+            "vi": "Mở, Phòng thủ cổ điển",
+            "pl": "Otwarty, Obrona klasyczna"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Classical Defense",
@@ -1975,7 +2525,12 @@
             "pt-PT": "Aberta, Gambito Karpov",
             "de": "Offen, Karpow-Gambit",
             "fr": "Ouverte, Gambit Karpov",
-            "it": "Aperta, Gambetto Karpov"
+            "it": "Aperta, Gambetto Karpov",
+            "tr": "Açık, Karpov Gambiti",
+            "nl": "Open, Karpovgambiet",
+            "id": "Terbuka, Gambit Karpov",
+            "vi": "Mở, Gambit Karpov",
+            "pl": "Otwarty, Gambit Karpov"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Karpov Gambit",
@@ -1993,7 +2548,12 @@
             "pt-PT": "Aberta, Ataque Howell",
             "de": "Offen, Howell-Angriff",
             "fr": "Ouverte, Attaque Howell",
-            "it": "Aperta, Attacco Howell"
+            "it": "Aperta, Attacco Howell",
+            "tr": "Açık, Howell Akını",
+            "nl": "Open, Howellaanval",
+            "id": "Terbuka, Serangan Howell",
+            "vi": "Mở, Tấn công Howell",
+            "pl": "Otwarty, Atak Howell"
           },
           "eco": "C81",
           "opening": "Ruy Lopez: Open, Howell Attack",
@@ -2011,7 +2571,12 @@
             "pt-PT": "Aberta, Ataque Howell, Variante Ekstrom",
             "de": "Offen, Howell-Angriff, Ekström-Variante",
             "fr": "Ouverte, Attaque Howell, Variante Ekström",
-            "it": "Aperta, Attacco Howell, Variante Ekström"
+            "it": "Aperta, Attacco Howell, Variante Ekström",
+            "tr": "Açık, Howell Akını, Ekstrom Varyantı",
+            "nl": "Open, Howellaanval, Ekstromvariant",
+            "id": "Terbuka, Serangan Howell, Variasi Ekstrom",
+            "vi": "Mở, Tấn công Howell, Phương án Ekstrom",
+            "pl": "Otwarty, Atak Howell, Wariant Ekstrom"
           },
           "eco": "C81",
           "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
@@ -2029,7 +2594,12 @@
             "pt-PT": "Aberta, Ataque Howell",
             "de": "Offen, Howell-Angriff",
             "fr": "Ouverte, Attaque Howell",
-            "it": "Aperta, Attacco Howell"
+            "it": "Aperta, Attacco Howell",
+            "tr": "Açık, Howell Akını",
+            "nl": "Open, Howellaanval",
+            "id": "Terbuka, Serangan Howell",
+            "vi": "Mở, Tấn công Howell",
+            "pl": "Otwarty, Atak Howell"
           },
           "eco": "C81",
           "opening": "Ruy Lopez: Open, Howell Attack",
@@ -2047,7 +2617,12 @@
             "pt-PT": "Aberta",
             "de": "Offen",
             "fr": "Ouverte",
-            "it": "Aperta"
+            "it": "Aperta",
+            "tr": "Açık",
+            "nl": "Open",
+            "id": "Terbuka",
+            "vi": "Mở",
+            "pl": "Otwarty"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open",
@@ -2065,7 +2640,12 @@
             "pt-PT": "Aberta, Variante Italiana",
             "de": "Offen, Italienische Variante",
             "fr": "Ouverte, Variante italienne",
-            "it": "Aperta, Variante italiana"
+            "it": "Aperta, Variante italiana",
+            "tr": "Açık, İtalyan Varyantı",
+            "nl": "Open, Italiaanse variant",
+            "id": "Terbuka, Variasi Italia",
+            "vi": "Mở, Phương án Italia",
+            "pl": "Otwarty, Wariant włoski"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Italian Variation",
@@ -2083,7 +2663,12 @@
             "pt-PT": "Aberta, Variante St. Petersburg",
             "de": "Offen, St.-Petersburg-Variante",
             "fr": "Ouverte, Variante St. Petersburg",
-            "it": "Aperta, Variante St. Petersburg"
+            "it": "Aperta, Variante St. Petersburg",
+            "tr": "Açık, St. Petersburg Varyantı",
+            "nl": "Open, St. Petersburgvariant",
+            "id": "Terbuka, Variasi St. Petersburg",
+            "vi": "Mở, Phương án St. Petersburg",
+            "pl": "Otwarty, Wariant St. Petersburg"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, St. Petersburg Variation",
@@ -2101,7 +2686,12 @@
             "pt-PT": "Aberta, Variante Dilworth",
             "de": "Offen, Dilworth-Variante",
             "fr": "Ouverte, Variante Dilworth",
-            "it": "Aperta, Variante Dilworth"
+            "it": "Aperta, Variante Dilworth",
+            "tr": "Açık, Dilworth Varyantı",
+            "nl": "Open, Dilworthvariant",
+            "id": "Terbuka, Variasi Dilworth",
+            "vi": "Mở, Phương án Dilworth",
+            "pl": "Otwarty, Wariant Dilworth"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Dilworth Variation",
@@ -2119,7 +2709,12 @@
             "pt-PT": "Aberta, Ataque Motzko",
             "de": "Offen, Motzko-Angriff",
             "fr": "Ouverte, Attaque Motzko",
-            "it": "Aperta, Attacco Motzko"
+            "it": "Aperta, Attacco Motzko",
+            "tr": "Açık, Motzko Akını",
+            "nl": "Open, Motzkoaanval",
+            "id": "Terbuka, Serangan Motzko",
+            "vi": "Mở, Tấn công Motzko",
+            "pl": "Otwarty, Atak Motzko"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Motzko Attack",
@@ -2137,7 +2732,12 @@
             "pt-PT": "Aberta, Ataque Motzko, Variante Nenarokov",
             "de": "Offen, Motzko-Angriff, Nenarokov-Variante",
             "fr": "Ouverte, Attaque Motzko, Variante Nenarokov",
-            "it": "Aperta, Attacco Motzko, Variante Nenarokov"
+            "it": "Aperta, Attacco Motzko, Variante Nenarokov",
+            "tr": "Açık, Motzko Akını, Nenarokov Varyantı",
+            "nl": "Open, Motzkoaanval, Nenarokovvariant",
+            "id": "Terbuka, Serangan Motzko, Variasi Nenarokov",
+            "vi": "Mở, Tấn công Motzko, Phương án Nenarokov",
+            "pl": "Otwarty, Atak Motzko, Wariant Nenarokov"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Motzko Attack, Nenarokov Variation",
@@ -2155,7 +2755,12 @@
             "pt-PT": "Aberta, Defesa Clássica",
             "de": "Offen, Klassische Verteidigung",
             "fr": "Ouverte, Défense classique",
-            "it": "Aperta, Difesa classica"
+            "it": "Aperta, Difesa classica",
+            "tr": "Açık, Klasik Savunma",
+            "nl": "Open, Klassieke verdediging",
+            "id": "Terbuka, Pertahanan Klasik",
+            "vi": "Mở, Phòng thủ cổ điển",
+            "pl": "Otwarty, Obrona klasyczna"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Classical Defense",
@@ -2173,7 +2778,12 @@
             "pt-PT": "Aberta, Variante Malkin",
             "de": "Offen, Malkin-Variante",
             "fr": "Ouverte, Variante Malkin",
-            "it": "Aperta, Variante Malkin"
+            "it": "Aperta, Variante Malkin",
+            "tr": "Açık, Malkin Varyantı",
+            "nl": "Open, Malkinvariant",
+            "id": "Terbuka, Variasi Malkin",
+            "vi": "Mở, Phương án Malkin",
+            "pl": "Otwarty, Wariant Malkin"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Malkin Variation",
@@ -2191,7 +2801,12 @@
             "pt-PT": "Aberta, Variante Breslau",
             "de": "Offen, Breslau-Variante",
             "fr": "Ouverte, Variante Breslau",
-            "it": "Aperta, Variante Breslau"
+            "it": "Aperta, Variante Breslau",
+            "tr": "Açık, Breslau Varyantı",
+            "nl": "Open, Breslauvariant",
+            "id": "Terbuka, Variasi Breslau",
+            "vi": "Mở, Phương án Breslau",
+            "pl": "Otwarty, Wariant Breslau"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Breslau Variation",
@@ -2209,7 +2824,12 @@
             "pt-PT": "Aberta, Armadilha Tarrasch",
             "de": "Offen, Tarrasch-Falle",
             "fr": "Ouverte, Piège Tarrasch",
-            "it": "Aperta, Trappola Tarrasch"
+            "it": "Aperta, Trappola Tarrasch",
+            "tr": "Açık, Tarrasch Tuzağı",
+            "nl": "Open, Tarraschval",
+            "id": "Terbuka, Jebakan Tarrasch",
+            "vi": "Mở, Bẫy Tarrasch",
+            "pl": "Otwarty, Pułapka Tarrasch"
           },
           "eco": "C83",
           "opening": "Ruy Lopez: Open, Tarrasch Trap",
@@ -2227,7 +2847,12 @@
             "pt-PT": "Aberta, Variante Berlinense",
             "de": "Offen, Berliner Variante",
             "fr": "Ouverte, Variante berlinoise",
-            "it": "Aperta, Variante berlinese"
+            "it": "Aperta, Variante berlinese",
+            "tr": "Açık, Berlin Varyantı",
+            "nl": "Open, Berlijnse variant",
+            "id": "Terbuka, Variasi Berlin",
+            "vi": "Mở, Phương án Berlin",
+            "pl": "Otwarty, Wariant berliński"
           },
           "eco": "C82",
           "opening": "Ruy Lopez: Open, Berlin Variation",
@@ -2245,7 +2870,12 @@
             "pt-PT": "Aberta, Variante Zukertort",
             "de": "Offen, Zukertort-Variante",
             "fr": "Ouverte, Variante Zukertort",
-            "it": "Aperta, Variante Zukertort"
+            "it": "Aperta, Variante Zukertort",
+            "tr": "Açık, Zukertort Varyantı",
+            "nl": "Open, Zukertortvariant",
+            "id": "Terbuka, Variasi Zukertort",
+            "vi": "Mở, Phương án Zukertort",
+            "pl": "Otwarty, Wariant Zukertort"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Zukertort Variation",
@@ -2263,7 +2893,12 @@
             "pt-PT": "Aberta, Ataque Friess",
             "de": "Offen, Friess-Angriff",
             "fr": "Ouverte, Attaque Friess",
-            "it": "Aperta, Attacco Friess"
+            "it": "Aperta, Attacco Friess",
+            "tr": "Açık, Friess Akını",
+            "nl": "Open, Friessaanval",
+            "id": "Terbuka, Serangan Friess",
+            "vi": "Mở, Tấn công Friess",
+            "pl": "Otwarty, Atak Friess"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Friess Attack",
@@ -2281,7 +2916,12 @@
             "pt-PT": "Aberta, Variante Richter",
             "de": "Offen, Richter-Variante",
             "fr": "Ouverte, Variante Richter",
-            "it": "Aperta, Variante Richter"
+            "it": "Aperta, Variante Richter",
+            "tr": "Açık, Richter Varyantı",
+            "nl": "Open, Richtervariant",
+            "id": "Terbuka, Variasi Richter",
+            "vi": "Mở, Phương án Richter",
+            "pl": "Otwarty, Wariant Richter"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Richter Variation",
@@ -2299,7 +2939,12 @@
             "pt-PT": "Aberta, Variante Riga",
             "de": "Offen, Riga-Variante",
             "fr": "Ouverte, Variante Riga",
-            "it": "Aperta, Variante Riga"
+            "it": "Aperta, Variante Riga",
+            "tr": "Açık, Riga Varyantı",
+            "nl": "Open, Rigavariant",
+            "id": "Terbuka, Variasi Riga",
+            "vi": "Mở, Phương án Riga",
+            "pl": "Otwarty, Wariant Riga"
           },
           "eco": "C80",
           "opening": "Ruy Lopez: Open, Riga Variation",
@@ -2318,7 +2963,12 @@
         "pt-PT": "Defesa Berlinense",
         "de": "Berliner Verteidigung",
         "fr": "Défense berlinoise",
-        "it": "Difesa berlinese"
+        "it": "Difesa berlinese",
+        "nl": "Berlijnse verdediging",
+        "tr": "Berlin Savunması",
+        "id": "Pertahanan Berlin",
+        "vi": "Phòng thủ Berlin",
+        "pl": "Obrona berlińska"
       },
       "lines": [
         {
@@ -2332,7 +2982,12 @@
             "pt-PT": "Defesa Berlinense",
             "de": "Berliner Verteidigung",
             "fr": "Défense berlinoise",
-            "it": "Difesa berlinese"
+            "it": "Difesa berlinese",
+            "nl": "Berlijnse verdediging",
+            "tr": "Berlin Savunması",
+            "id": "Pertahanan Berlin",
+            "vi": "Phòng thủ Berlin",
+            "pl": "Obrona berlińska"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense",
@@ -2350,7 +3005,12 @@
             "pt-PT": "Defesa Berlinense",
             "de": "Berliner Verteidigung",
             "fr": "Défense berlinoise",
-            "it": "Difesa berlinese"
+            "it": "Difesa berlinese",
+            "nl": "Berlijnse verdediging",
+            "tr": "Berlin Savunması",
+            "id": "Pertahanan Berlin",
+            "vi": "Phòng thủ Berlin",
+            "pl": "Obrona berlińska"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense",
@@ -2368,7 +3028,12 @@
             "pt-PT": "Defesa Berlinense, Variante Beverwijk",
             "de": "Berliner Verteidigung, Beverwijk-Variante",
             "fr": "Défense berlinoise, Variante Beverwijk",
-            "it": "Difesa berlinese, Variante Beverwijk"
+            "it": "Difesa berlinese, Variante Beverwijk",
+            "tr": "Berlin Savunması, Beverwijk Varyantı",
+            "nl": "Berlijnse verdediging, Beverwijkvariant",
+            "id": "Pertahanan Berlin, Variasi Beverwijk",
+            "vi": "Phòng thủ Berlin, Phương án Beverwijk",
+            "pl": "Obrona berlińska, Wariant Beverwijk"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Beverwijk Variation",
@@ -2386,7 +3051,12 @@
             "pt-PT": "Defesa Berlinense, Variante Vara de Pescar",
             "de": "Berliner Verteidigung, Angelruten-Variante",
             "fr": "Défense berlinoise, Variante de la canne à pêche",
-            "it": "Difesa berlinese, Variante della canna da pesca"
+            "it": "Difesa berlinese, Variante della canna da pesca",
+            "tr": "Berlin Savunması, Olta Varyantı",
+            "nl": "Berlijnse verdediging, Hengelvariant",
+            "id": "Pertahanan Berlin, Variasi Joran",
+            "vi": "Phòng thủ Berlin, Phương án cần câu",
+            "pl": "Obrona berlińska, Wariant wędki"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Fishing Pole Variation",
@@ -2404,7 +3074,12 @@
             "pt-PT": "Defesa Berlinense, Gambito Rio Aceito",
             "de": "Berliner Verteidigung, Angenommenes Rio-Gambit",
             "fr": "Défense berlinoise, Gambit Rio accepté",
-            "it": "Difesa berlinese, Gambetto Rio accettato"
+            "it": "Difesa berlinese, Gambetto Rio accettato",
+            "tr": "Berlin Savunması, Kabul Edilmiş Rio Gambiti",
+            "nl": "Berlijnse verdediging, Riogambiet aangenomen",
+            "id": "Pertahanan Berlin, Gambit Rio Diterima",
+            "vi": "Phòng thủ Berlin, Gambit Rio chấp nhận",
+            "pl": "Obrona berlińska, Gambit Rio przyjęty"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rio Gambit Accepted",
@@ -2422,7 +3097,12 @@
             "pt-PT": "Defesa Berlinense, Variante Rio de Janeiro",
             "de": "Berliner Verteidigung, Rio-de-Janeiro-Variante",
             "fr": "Défense berlinoise, Variante de Rio de Janeiro",
-            "it": "Difesa berlinese, Variante di Rio de Janeiro"
+            "it": "Difesa berlinese, Variante di Rio de Janeiro",
+            "tr": "Berlin Savunması, Rio de Janeiro Varyantı",
+            "nl": "Berlijnse verdediging, Rio de Janeiro-variant",
+            "id": "Pertahanan Berlin, Variasi Rio de Janeiro",
+            "vi": "Phòng thủ Berlin, Phương án Rio de Janeiro",
+            "pl": "Obrona berlińska, Wariant z Rio de Janeiro"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
@@ -2440,7 +3120,12 @@
             "pt-PT": "Defesa Berlinense, Variante Rio de Janeiro",
             "de": "Berliner Verteidigung, Rio-de-Janeiro-Variante",
             "fr": "Défense berlinoise, Variante de Rio de Janeiro",
-            "it": "Difesa berlinese, Variante di Rio de Janeiro"
+            "it": "Difesa berlinese, Variante di Rio de Janeiro",
+            "tr": "Berlin Savunması, Rio de Janeiro Varyantı",
+            "nl": "Berlijnse verdediging, Rio de Janeiro-variant",
+            "id": "Pertahanan Berlin, Variasi Rio de Janeiro",
+            "vi": "Phòng thủ Berlin, Phương án Rio de Janeiro",
+            "pl": "Obrona berlińska, Wariant z Rio de Janeiro"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
@@ -2458,7 +3143,12 @@
             "pt-PT": "Defesa Berlinense, Ataque Winawer",
             "de": "Berliner Verteidigung, Winawer-Angriff",
             "fr": "Défense berlinoise, Attaque Winawer",
-            "it": "Difesa berlinese, Attacco Winawer"
+            "it": "Difesa berlinese, Attacco Winawer",
+            "tr": "Berlin Savunması, Winawer Akını",
+            "nl": "Berlijnse verdediging, Winaweraanval",
+            "id": "Pertahanan Berlin, Serangan Winawer",
+            "vi": "Phòng thủ Berlin, Tấn công Winawer",
+            "pl": "Obrona berlińska, Atak Winawer"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Winawer Attack",
@@ -2476,7 +3166,12 @@
             "pt-PT": "Defesa Berlinense, Variante Pillsbury",
             "de": "Berliner Verteidigung, Pillsbury-Variante",
             "fr": "Défense berlinoise, Variante Pillsbury",
-            "it": "Difesa berlinese, Variante Pillsbury"
+            "it": "Difesa berlinese, Variante Pillsbury",
+            "tr": "Berlin Savunması, Pillsbury Varyantı",
+            "nl": "Berlijnse verdediging, Pillsburyvariant",
+            "id": "Pertahanan Berlin, Variasi Pillsbury",
+            "vi": "Phòng thủ Berlin, Phương án Pillsbury",
+            "pl": "Obrona berlińska, Wariant Pillsbury"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Pillsbury Variation",
@@ -2494,7 +3189,12 @@
             "pt-PT": "Defesa Berlinense, Variante Zukertort",
             "de": "Berliner Verteidigung, Zukertort-Variante",
             "fr": "Défense berlinoise, Variante Zukertort",
-            "it": "Difesa berlinese, Variante Zukertort"
+            "it": "Difesa berlinese, Variante Zukertort",
+            "tr": "Berlin Savunması, Zukertort Varyantı",
+            "nl": "Berlijnse verdediging, Zukertortvariant",
+            "id": "Pertahanan Berlin, Variasi Zukertort",
+            "vi": "Phòng thủ Berlin, Phương án Zukertort",
+            "pl": "Obrona berlińska, Wariant Zukertort"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Zukertort Variation",
@@ -2512,7 +3212,12 @@
             "pt-PT": "Defesa Berlinense, Variante Cordel",
             "de": "Berliner Verteidigung, Cordel-Variante",
             "fr": "Défense berlinoise, Variante Cordel",
-            "it": "Difesa berlinese, Variante Cordel"
+            "it": "Difesa berlinese, Variante Cordel",
+            "tr": "Berlin Savunması, Cordel Varyantı",
+            "nl": "Berlijnse verdediging, Cordelvariant",
+            "id": "Pertahanan Berlin, Variasi Cordel",
+            "vi": "Phòng thủ Berlin, Phương án Cordel",
+            "pl": "Obrona berlińska, Wariant Cordel"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Cordel Variation",
@@ -2530,7 +3235,12 @@
             "pt-PT": "Defesa Berlinense, Variante Trifunovic",
             "de": "Berliner Verteidigung, Trifunović-Variante",
             "fr": "Défense berlinoise, Variante Trifunović",
-            "it": "Difesa berlinese, Variante Trifunović"
+            "it": "Difesa berlinese, Variante Trifunović",
+            "tr": "Berlin Savunması, Trifunovic Varyantı",
+            "nl": "Berlijnse verdediging, Trifunovicvariant",
+            "id": "Pertahanan Berlin, Variasi Trifunovic",
+            "vi": "Phòng thủ Berlin, Phương án Trifunovic",
+            "pl": "Obrona berlińska, Wariant Trifunovic"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Trifunovic Variation",
@@ -2548,7 +3258,12 @@
             "pt-PT": "Defesa Berlinense, Variante Minckwitz",
             "de": "Berliner Verteidigung, Minckwitz-Variante",
             "fr": "Défense berlinoise, Variante Minckwitz",
-            "it": "Difesa berlinese, Variante Minckwitz"
+            "it": "Difesa berlinese, Variante Minckwitz",
+            "tr": "Berlin Savunması, Minckwitz Varyantı",
+            "nl": "Berlijnse verdediging, Minckwitzvariant",
+            "id": "Pertahanan Berlin, Variasi Minckwitz",
+            "vi": "Phòng thủ Berlin, Phương án Minckwitz",
+            "pl": "Obrona berlińska, Wariant Minckwitz"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Minckwitz Variation",
@@ -2566,7 +3281,12 @@
             "pt-PT": "Defesa Berlinense, Variante l'Hermet",
             "de": "Berliner Verteidigung, L’Hermet-Variante",
             "fr": "Défense berlinoise, Variante l'Hermet",
-            "it": "Difesa berlinese, Variante l'Hermet"
+            "it": "Difesa berlinese, Variante l'Hermet",
+            "tr": "Berlin Savunması, l'Hermet Varyantı",
+            "nl": "Berlijnse verdediging, l'Hermet-variant",
+            "id": "Pertahanan Berlin, Variasi l'Hermet",
+            "vi": "Phòng thủ Berlin, Phương án l'Hermet",
+            "pl": "Obrona berlińska, Wariant l'Hermeta"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation",
@@ -2584,7 +3304,12 @@
             "pt-PT": "Defesa Berlinense, Variante l'Hermet, Linha Westerinen",
             "de": "Berliner Verteidigung, L’Hermet-Variante, Westerinen-Abspiel",
             "fr": "Défense berlinoise, Variante l'Hermet, Ligne Westerinen",
-            "it": "Difesa berlinese, Variante l'Hermet, Linea Westerinen"
+            "it": "Difesa berlinese, Variante l'Hermet, Linea Westerinen",
+            "tr": "Berlin Savunması, l'Hermet Varyantı, Westerinen Hattı",
+            "nl": "Berlijnse verdediging, l'Hermet-variant, Westerinenlijn",
+            "id": "Pertahanan Berlin, Variasi l'Hermet, Lini Westerinen",
+            "vi": "Phòng thủ Berlin, Phương án l'Hermet, Diễn biến Westerinen",
+            "pl": "Obrona berlińska, Wariant l'Hermeta, Linia Westerinen"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation, Westerinen Line",
@@ -2602,7 +3327,12 @@
             "pt-PT": "Defesa Berlinense, Variante l'Hermet, Defesa Muralha de Berlim",
             "de": "Berliner Verteidigung, L’Hermet-Variante, Berliner-Mauer-Verteidigung",
             "fr": "Défense berlinoise, Variante l'Hermet, Défense du mur de Berlin",
-            "it": "Difesa berlinese, Variante l'Hermet, Difesa del muro di Berlino"
+            "it": "Difesa berlinese, Variante l'Hermet, Difesa del muro di Berlino",
+            "tr": "Berlin Savunması, l'Hermet Varyantı, Berlin Duvarı Savunması",
+            "nl": "Berlijnse verdediging, l'Hermet-variant, Berlijnse Muur-verdediging",
+            "id": "Pertahanan Berlin, Variasi l'Hermet, Pertahanan Tembok Berlin",
+            "vi": "Phòng thủ Berlin, Phương án l'Hermet, Phòng thủ bức tường Berlin",
+            "pl": "Obrona berlińska, Wariant l'Hermeta, Obrona muru berlińskiego"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense",
@@ -2620,7 +3350,12 @@
             "pt-PT": "Defesa Berlinense, Muralha de Berlim",
             "de": "Berliner Verteidigung, Berliner Mauer",
             "fr": "Défense berlinoise, Mur de Berlin",
-            "it": "Difesa berlinese, Muro di Berlino"
+            "it": "Difesa berlinese, Muro di Berlino",
+            "tr": "Berlin Savunması, Berlin Duvarı",
+            "nl": "Berlijnse verdediging, Berlijnse Muur",
+            "id": "Pertahanan Berlin, Tembok Berlin",
+            "vi": "Phòng thủ Berlin, Bức tường Berlin",
+            "pl": "Obrona berlińska, Mur berliński"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Berlin Wall",
@@ -2638,7 +3373,12 @@
             "pt-PT": "Defesa Berlinense, Variante Rosenthal",
             "de": "Berliner Verteidigung, Rosenthal-Variante",
             "fr": "Défense berlinoise, Variante Rosenthal",
-            "it": "Difesa berlinese, Variante Rosenthal"
+            "it": "Difesa berlinese, Variante Rosenthal",
+            "tr": "Berlin Savunması, Rosenthal Varyantı",
+            "nl": "Berlijnse verdediging, Rosenthalvariant",
+            "id": "Pertahanan Berlin, Variasi Rosenthal",
+            "vi": "Phòng thủ Berlin, Phương án Rosenthal",
+            "pl": "Obrona berlińska, Wariant Rosenthal"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Berlin Defense, Rosenthal Variation",
@@ -2656,7 +3396,12 @@
             "pt-PT": "Defesa Berlinense, Defesa Steinitz Melhorada",
             "de": "Berliner Verteidigung, Verbesserte Steinitz-Verteidigung",
             "fr": "Défense berlinoise, Défense Steinitz améliorée",
-            "it": "Difesa berlinese, Difesa Steinitz migliorata"
+            "it": "Difesa berlinese, Difesa Steinitz migliorata",
+            "tr": "Berlin Savunması, Geliştirilmiş Steinitz Savunması",
+            "nl": "Berlijnse verdediging, Verbeterde Steinitz-verdediging",
+            "id": "Pertahanan Berlin, Pertahanan Steinitz yang Diperbaiki",
+            "vi": "Phòng thủ Berlin, Phòng thủ Steinitz cải tiến",
+            "pl": "Obrona berlińska, Obrona Steinitza ulepszona"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Improved Steinitz Defense",
@@ -2674,7 +3419,12 @@
             "pt-PT": "Defesa Berlinense, Variante Ouriço",
             "de": "Berliner Verteidigung, Igelvariante",
             "fr": "Défense berlinoise, Variante du hérisson",
-            "it": "Difesa berlinese, Variante del riccio"
+            "it": "Difesa berlinese, Variante del riccio",
+            "tr": "Berlin Savunması, Kirpi Varyantı",
+            "nl": "Berlijnse verdediging, Egelvariant",
+            "id": "Pertahanan Berlin, Variasi Landak",
+            "vi": "Phòng thủ Berlin, Phương án con nhím",
+            "pl": "Obrona berlińska, Wariant jeża"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Hedgehog Variation",
@@ -2692,7 +3442,12 @@
             "pt-PT": "Defesa Berlinense, Variante Bernstein Fechada",
             "de": "Berliner Verteidigung, Geschlossene Bernstein-Variante",
             "fr": "Défense berlinoise, Variante Bernstein fermée",
-            "it": "Difesa berlinese, Variante Bernstein chiusa"
+            "it": "Difesa berlinese, Variante Bernstein chiusa",
+            "tr": "Berlin Savunması, Kapalı Bernstein Varyantı",
+            "nl": "Berlijnse verdediging, Gesloten Bernstein-variant",
+            "id": "Pertahanan Berlin, Variasi Bernstein Tertutup",
+            "vi": "Phòng thủ Berlin, Phương án Bernstein đóng",
+            "pl": "Obrona berlińska, Wariant Bernsteina zamknięty"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Closed Bernstein Variation",
@@ -2710,7 +3465,12 @@
             "pt-PT": "Defesa Berlinense, Variante Showalter Fechada",
             "de": "Berliner Verteidigung, Geschlossene Showalter-Variante",
             "fr": "Défense berlinoise, Variante Showalter fermée",
-            "it": "Difesa berlinese, Variante Showalter chiusa"
+            "it": "Difesa berlinese, Variante Showalter chiusa",
+            "tr": "Berlin Savunması, Kapalı Showalter Varyantı",
+            "nl": "Berlijnse verdediging, Gesloten Showalter-variant",
+            "id": "Pertahanan Berlin, Variasi Showalter Tertutup",
+            "vi": "Phòng thủ Berlin, Phương án Showalter đóng",
+            "pl": "Obrona berlińska, Wariant Showaltera zamknięty"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Closed Showalter Variation",
@@ -2728,7 +3488,12 @@
             "pt-PT": "Defesa Berlinense, Variante Wolf Fechada",
             "de": "Berliner Verteidigung, Geschlossene Wolf-Variante",
             "fr": "Défense berlinoise, Variante Wolf fermée",
-            "it": "Difesa berlinese, Variante Wolf chiusa"
+            "it": "Difesa berlinese, Variante Wolf chiusa",
+            "tr": "Berlin Savunması, Kapalı Wolf Varyantı",
+            "nl": "Berlijnse verdediging, Gesloten Wolf-variant",
+            "id": "Pertahanan Berlin, Variasi Wolf Tertutup",
+            "vi": "Phòng thủ Berlin, Phương án Wolf đóng",
+            "pl": "Obrona berlińska, Wariant Wolfa zamknięty"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Closed Wolf Variation",
@@ -2746,7 +3511,12 @@
             "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense",
             "de": "Berliner Verteidigung, Anti-Berliner Variante",
             "fr": "Défense berlinoise, Variante anti-berlinoise",
-            "it": "Difesa berlinese, Variante anti-berlinese"
+            "it": "Difesa berlinese, Variante anti-berlinese",
+            "tr": "Berlin Savunması, Anti-Berlin Varyantı",
+            "nl": "Berlijnse verdediging, Anti-Berlijnvariant",
+            "id": "Pertahanan Berlin, Variasi Anti-Berlin",
+            "vi": "Phòng thủ Berlin, Phương án chống Berlin",
+            "pl": "Obrona berlińska, Wariant antyberliński"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation",
@@ -2764,7 +3534,12 @@
             "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense, Variante Kaufmann",
             "de": "Berliner Verteidigung, Anti-Berliner Variante, Kaufmann-Variante",
             "fr": "Défense berlinoise, Variante anti-berlinoise, Variante Kaufmann",
-            "it": "Difesa berlinese, Variante anti-berlinese, Variante Kaufmann"
+            "it": "Difesa berlinese, Variante anti-berlinese, Variante Kaufmann",
+            "tr": "Berlin Savunması, Anti-Berlin Varyantı, Kaufmann Varyantı",
+            "nl": "Berlijnse verdediging, Anti-Berlijnvariant, Kaufmannvariant",
+            "id": "Pertahanan Berlin, Variasi Anti-Berlin, Variasi Kaufmann",
+            "vi": "Phòng thủ Berlin, Phương án chống Berlin, Phương án Kaufmann",
+            "pl": "Obrona berlińska, Wariant antyberliński, Wariant Kaufmann"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Kaufmann Variation",
@@ -2782,7 +3557,12 @@
             "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense, Variante Mortimer",
             "de": "Berliner Verteidigung, Anti-Berliner Variante, Mortimer-Variante",
             "fr": "Défense berlinoise, Variante anti-berlinoise, Variante Mortimer",
-            "it": "Difesa berlinese, Variante anti-berlinese, Variante Mortimer"
+            "it": "Difesa berlinese, Variante anti-berlinese, Variante Mortimer",
+            "tr": "Berlin Savunması, Anti-Berlin Varyantı, Mortimer Varyantı",
+            "nl": "Berlijnse verdediging, Anti-Berlijnvariant, Mortimervariant",
+            "id": "Pertahanan Berlin, Variasi Anti-Berlin, Variasi Mortimer",
+            "vi": "Phòng thủ Berlin, Phương án chống Berlin, Phương án Mortimer",
+            "pl": "Obrona berlińska, Wariant antyberliński, Wariant Mortimer"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Variation",
@@ -2800,7 +3580,12 @@
             "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense, Armadilha Mortimer",
             "de": "Berliner Verteidigung, Anti-Berliner Variante, Mortimer-Falle",
             "fr": "Défense berlinoise, Variante anti-berlinoise, Piège Mortimer",
-            "it": "Difesa berlinese, Variante anti-berlinese, Trappola Mortimer"
+            "it": "Difesa berlinese, Variante anti-berlinese, Trappola Mortimer",
+            "tr": "Berlin Savunması, Anti-Berlin Varyantı, Mortimer Tuzağı",
+            "nl": "Berlijnse verdediging, Anti-Berlijnvariant, Mortimerval",
+            "id": "Pertahanan Berlin, Variasi Anti-Berlin, Jebakan Mortimer",
+            "vi": "Phòng thủ Berlin, Phương án chống Berlin, Bẫy Mortimer",
+            "pl": "Obrona berlińska, Wariant antyberliński, Pułapka Mortimer"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Trap",
@@ -2818,7 +3603,12 @@
             "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense, Variante Anderssen",
             "de": "Berliner Verteidigung, Anti-Berliner Variante, Anderssen-Variante",
             "fr": "Défense berlinoise, Variante anti-berlinoise, Variante Anderssen",
-            "it": "Difesa berlinese, Variante anti-berlinese, Variante Anderssen"
+            "it": "Difesa berlinese, Variante anti-berlinese, Variante Anderssen",
+            "tr": "Berlin Savunması, Anti-Berlin Varyantı, Anderssen Varyantı",
+            "nl": "Berlijnse verdediging, Anti-Berlijnvariant, Anderssenvariant",
+            "id": "Pertahanan Berlin, Variasi Anti-Berlin, Variasi Anderssen",
+            "vi": "Phòng thủ Berlin, Phương án chống Berlin, Phương án Anderssen",
+            "pl": "Obrona berlińska, Wariant antyberliński, Wariant Anderssen"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Anderssen Variation",
@@ -2836,7 +3626,12 @@
             "pt-PT": "Defesa Berlinense, Variante Anti-Berlinense, Variante Duras",
             "de": "Berliner Verteidigung, Anti-Berliner Variante, Duras-Variante",
             "fr": "Défense berlinoise, Variante anti-berlinoise, Variante Duras",
-            "it": "Difesa berlinese, Variante anti-berlinese, Variante Duras"
+            "it": "Difesa berlinese, Variante anti-berlinese, Variante Duras",
+            "tr": "Berlin Savunması, Anti-Berlin Varyantı, Duras Varyantı",
+            "nl": "Berlijnse verdediging, Anti-Berlijnvariant, Durasvariant",
+            "id": "Pertahanan Berlin, Variasi Anti-Berlin, Variasi Duras",
+            "vi": "Phòng thủ Berlin, Phương án chống Berlin, Phương án Duras",
+            "pl": "Obrona berlińska, Wariant antyberliński, Wariant Duras"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Duras Variation",
@@ -2854,7 +3649,12 @@
             "pt-PT": "Defesa Berlinense, Ataque Nyholm",
             "de": "Berliner Verteidigung, Nyholm-Angriff",
             "fr": "Défense berlinoise, Attaque Nyholm",
-            "it": "Difesa berlinese, Attacco Nyholm"
+            "it": "Difesa berlinese, Attacco Nyholm",
+            "tr": "Berlin Savunması, Nyholm Akını",
+            "nl": "Berlijnse verdediging, Nyholmaanval",
+            "id": "Pertahanan Berlin, Serangan Nyholm",
+            "vi": "Phòng thủ Berlin, Tấn công Nyholm",
+            "pl": "Obrona berlińska, Atak Nyholm"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Berlin Defense, Nyholm Attack",
@@ -2872,7 +3672,12 @@
             "pt-PT": "Defesa Berlinense, Armadilha Tarrasch",
             "de": "Berliner Verteidigung, Tarrasch-Falle",
             "fr": "Défense berlinoise, Piège Tarrasch",
-            "it": "Difesa berlinese, Trappola Tarrasch"
+            "it": "Difesa berlinese, Trappola Tarrasch",
+            "tr": "Berlin Savunması, Tarrasch Tuzağı",
+            "nl": "Berlijnse verdediging, Tarraschval",
+            "id": "Pertahanan Berlin, Jebakan Tarrasch",
+            "vi": "Phòng thủ Berlin, Bẫy Tarrasch",
+            "pl": "Obrona berlińska, Pułapka Tarrasch"
           },
           "eco": "C66",
           "opening": "Ruy Lopez: Berlin Defense, Tarrasch Trap",
@@ -2891,7 +3696,12 @@
         "pt-PT": "Variante da Troca",
         "de": "Abtauschvariante",
         "fr": "Variante d'échange",
-        "it": "Variante di cambio"
+        "it": "Variante di cambio",
+        "tr": "Değişim Varyantı",
+        "nl": "Ruilvariant",
+        "id": "Variasi Pertukaran",
+        "vi": "Phương án đổi quân",
+        "pl": "Wariant wymienny"
       },
       "lines": [
         {
@@ -2905,7 +3715,12 @@
             "pt-PT": "Variante da Troca",
             "de": "Abtauschvariante",
             "fr": "Variante d'échange",
-            "it": "Variante di cambio"
+            "it": "Variante di cambio",
+            "tr": "Değişim Varyantı",
+            "nl": "Ruilvariant",
+            "id": "Variasi Pertukaran",
+            "vi": "Phương án đổi quân",
+            "pl": "Wariant wymienny"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation",
@@ -2923,7 +3738,12 @@
             "pt-PT": "Variante da Troca, Variante Lutikov",
             "de": "Abtauschvariante, Lutikow-Variante",
             "fr": "Variante d'échange, Variante Loutikov",
-            "it": "Variante di cambio, Variante Lutikov"
+            "it": "Variante di cambio, Variante Lutikov",
+            "tr": "Değişim Varyantı, Lutikov Varyantı",
+            "nl": "Ruilvariant, Lutikovvariant",
+            "id": "Variasi Pertukaran, Variasi Lutikov",
+            "vi": "Phương án đổi quân, Phương án Lutikov",
+            "pl": "Wariant wymienny, Wariant Lutikov"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
@@ -2941,7 +3761,12 @@
             "pt-PT": "Variante da Troca, Variante Keres",
             "de": "Abtauschvariante, Keres-Variante",
             "fr": "Variante d'échange, Variante Keres",
-            "it": "Variante di cambio, Variante Keres"
+            "it": "Variante di cambio, Variante Keres",
+            "tr": "Değişim Varyantı, Keres Varyantı",
+            "nl": "Ruilvariant, Keresvariant",
+            "id": "Variasi Pertukaran, Variasi Keres",
+            "vi": "Phương án đổi quân, Phương án Keres",
+            "pl": "Wariant wymienny, Wariant Keres"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
@@ -2959,7 +3784,12 @@
             "pt-PT": "Variante da Troca, Variante Romanovsky",
             "de": "Abtauschvariante, Romanowski-Variante",
             "fr": "Variante d'échange, Variante Romanovski",
-            "it": "Variante di cambio, Variante Romanovskij"
+            "it": "Variante di cambio, Variante Romanovskij",
+            "tr": "Değişim Varyantı, Romanovsky Varyantı",
+            "nl": "Ruilvariant, Romanovskyvariant",
+            "id": "Variasi Pertukaran, Variasi Romanovsky",
+            "vi": "Phương án đổi quân, Phương án Romanovsky",
+            "pl": "Wariant wymienny, Wariant Romanovsky"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
@@ -2977,7 +3807,12 @@
             "pt-PT": "Variante da Troca, Variante Normal",
             "de": "Abtauschvariante, Normalvariante",
             "fr": "Variante d'échange, Variante normale",
-            "it": "Variante di cambio, Variante normale"
+            "it": "Variante di cambio, Variante normale",
+            "tr": "Değişim Varyantı, Normal Varyant",
+            "nl": "Ruilvariant, Normale variant",
+            "id": "Variasi Pertukaran, Variasi Normal",
+            "vi": "Phương án đổi quân, Phương án thông thường",
+            "pl": "Wariant wymienny, Wariant normalny"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
@@ -2995,7 +3830,12 @@
             "pt-PT": "Variante da Troca, Variante do Bispo do Rei",
             "de": "Abtauschvariante, Königsläufer-Variante",
             "fr": "Variante d'échange, Variante du fou-roi",
-            "it": "Variante di cambio, Variante dell'alfiere di re"
+            "it": "Variante di cambio, Variante dell'alfiere di re",
+            "tr": "Değişim Varyantı, Şah Fili Varyantı",
+            "nl": "Ruilvariant, Koningslopervariant",
+            "id": "Variasi Pertukaran, Variasi Gajah Raja",
+            "vi": "Phương án đổi quân, Phương án Tượng Vua",
+            "pl": "Wariant wymienny, Wariant gońca królewskiego"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
@@ -3013,7 +3853,12 @@
             "pt-PT": "Variante da Troca, Gambito Alapin",
             "de": "Abtauschvariante, Alapin-Gambit",
             "fr": "Variante d'échange, Gambit Alapin",
-            "it": "Variante di cambio, Gambetto Alapin"
+            "it": "Variante di cambio, Gambetto Alapin",
+            "tr": "Değişim Varyantı, Alapin Gambiti",
+            "nl": "Ruilvariant, Alapingambiet",
+            "id": "Variasi Pertukaran, Gambit Alapin",
+            "vi": "Phương án đổi quân, Gambit Alapin",
+            "pl": "Wariant wymienny, Gambit Alapin"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
@@ -3031,7 +3876,12 @@
             "pt-PT": "Variante da Troca, Variante Bronstein",
             "de": "Abtauschvariante, Bronstein-Variante",
             "fr": "Variante d'échange, Variante Bronstein",
-            "it": "Variante di cambio, Variante Bronstein"
+            "it": "Variante di cambio, Variante Bronstein",
+            "tr": "Değişim Varyantı, Bronstein Varyantı",
+            "nl": "Ruilvariant, Bronsteinvariant",
+            "id": "Variasi Pertukaran, Variasi Bronstein",
+            "vi": "Phương án đổi quân, Phương án Bronstein",
+            "pl": "Wariant wymienny, Wariant Bronstein"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
@@ -3049,7 +3899,12 @@
             "pt-PT": "Variante da Troca, Variante Gligoric",
             "de": "Abtauschvariante, Gligorić-Variante",
             "fr": "Variante d'échange, Variante Gligorić",
-            "it": "Variante di cambio, Variante Gligorić"
+            "it": "Variante di cambio, Variante Gligorić",
+            "tr": "Değişim Varyantı, Gligoric Varyantı",
+            "nl": "Ruilvariant, Gligoricvariant",
+            "id": "Variasi Pertukaran, Variasi Gligoric",
+            "vi": "Phương án đổi quân, Phương án Gligoric",
+            "pl": "Wariant wymienny, Wariant Gligoric"
           },
           "eco": "C69",
           "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
@@ -3067,7 +3922,12 @@
             "pt-PT": "Variante da Troca, Variante Alekhine",
             "de": "Abtauschvariante, Aljechin-Variante",
             "fr": "Variante d'échange, Variante Alekhine",
-            "it": "Variante di cambio, Variante Alechin"
+            "it": "Variante di cambio, Variante Alechin",
+            "tr": "Değişim Varyantı, Alekhine Varyantı",
+            "nl": "Ruilvariant, Alekhinevariant",
+            "id": "Variasi Pertukaran, Variasi Alekhine",
+            "vi": "Phương án đổi quân, Phương án Alekhine",
+            "pl": "Wariant wymienny, Wariant Alekhine"
           },
           "eco": "C68",
           "opening": "Ruy Lopez: Exchange Variation, Alekhine Variation",
@@ -3086,7 +3946,12 @@
         "pt-PT": "Ataque Marshall",
         "de": "Marshall-Angriff",
         "fr": "Gambit Marshall",
-        "it": "Attacco Marshall"
+        "it": "Attacco Marshall",
+        "tr": "Marshall Akını",
+        "pl": "Atak Marshall",
+        "nl": "Marshallgambiet",
+        "id": "Serangan Marshall",
+        "vi": "Tấn công Marshall"
       },
       "lines": [
         {
@@ -3100,7 +3965,12 @@
             "pt-PT": "Ataque Marshall",
             "de": "Marshall-Angriff",
             "fr": "Gambit Marshall",
-            "it": "Attacco Marshall"
+            "it": "Attacco Marshall",
+            "tr": "Marshall Akını",
+            "pl": "Atak Marshall",
+            "nl": "Marshallgambiet",
+            "id": "Serangan Marshall",
+            "vi": "Tấn công Marshall"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack",
@@ -3118,7 +3988,12 @@
             "pt-PT": "Ataque Marshall, Ataque Original Marshall",
             "de": "Marshall-Angriff, Ursprünglicher Marshall-Angriff",
             "fr": "Attaque Marshall, Attaque Marshall originale",
-            "it": "Attacco Marshall, Attacco Marshall originale"
+            "it": "Attacco Marshall, Attacco Marshall originale",
+            "tr": "Marshall Akını, Orijinal Marshall Akını",
+            "nl": "Marshallaanval, Oorspronkelijke Marshall-aanval",
+            "id": "Serangan Marshall, Serangan Marshall Asli",
+            "vi": "Tấn công Marshall, Tấn công Marshall nguyên bản",
+            "pl": "Atak Marshall, Atak Marshalla oryginalny"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Original Marshall Attack",
@@ -3136,7 +4011,12 @@
             "pt-PT": "Ataque Marshall, Variante Moderna",
             "de": "Marshall-Angriff, Moderne Variante",
             "fr": "Attaque Marshall, Variante moderne",
-            "it": "Attacco Marshall, Variante moderna"
+            "it": "Attacco Marshall, Variante moderna",
+            "tr": "Marshall Akını, Modern Varyant",
+            "nl": "Marshallaanval, Moderne variant",
+            "id": "Serangan Marshall, Variasi Modern",
+            "vi": "Tấn công Marshall, Phương án hiện đại",
+            "pl": "Atak Marshall, Wariant nowoczesny"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Modern Variation",
@@ -3154,7 +4034,12 @@
             "pt-PT": "Ataque Marshall, Variante Re3",
             "de": "Marshall-Angriff, Re3-Variante",
             "fr": "Attaque Marshall, Variante Re3",
-            "it": "Attacco Marshall, Variante Re3"
+            "it": "Attacco Marshall, Variante Re3",
+            "tr": "Marshall Akını, Re3 Varyantı",
+            "pl": "Atak Marshall, Wariant Re3",
+            "nl": "Marshallaanval, Re3variant",
+            "id": "Serangan Marshall, Variasi Re3",
+            "vi": "Tấn công Marshall, Phương án Re3"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Re3 Variation",
@@ -3172,7 +4057,12 @@
             "pt-PT": "Ataque Marshall, Linha Principal",
             "de": "Marshall-Angriff, Hauptvariante",
             "fr": "Attaque Marshall, Ligne principale",
-            "it": "Attacco Marshall, Linea principale"
+            "it": "Attacco Marshall, Linea principale",
+            "tr": "Marshall Akını, Ana Hat",
+            "pl": "Atak Marshall, Wariant główny",
+            "nl": "Marshallaanval, Hoofdvariant",
+            "id": "Serangan Marshall, Lini Utama",
+            "vi": "Tấn công Marshall, Phương án chính"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Main Line",
@@ -3190,7 +4080,12 @@
             "pt-PT": "Ataque Marshall, Linha Principal Moderna",
             "de": "Marshall-Angriff, Moderne Hauptvariante",
             "fr": "Attaque Marshall, Ligne principale moderne",
-            "it": "Attacco Marshall, Linea principale moderna"
+            "it": "Attacco Marshall, Linea principale moderna",
+            "tr": "Marshall Akını, Modern Ana Hat",
+            "nl": "Marshallaanval, Moderne hoofdlijn",
+            "id": "Serangan Marshall, Lini Utama Modern",
+            "vi": "Tấn công Marshall, Diễn biến chính hiện đại",
+            "pl": "Atak Marshall, Linia główna nowoczesna"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Modern Main Line",
@@ -3208,7 +4103,12 @@
             "pt-PT": "Ataque Marshall, Linha Principal, Variante Spassky",
             "de": "Marshall-Angriff, Hauptvariante, Spasski-Variante",
             "fr": "Attaque Marshall, Ligne principale, Variante Spassky",
-            "it": "Attacco Marshall, Linea principale, Variante Spasskij"
+            "it": "Attacco Marshall, Linea principale, Variante Spasskij",
+            "tr": "Marshall Akını, Ana Hat, Spassky Varyantı",
+            "pl": "Atak Marshall, Wariant główny, Wariant Spassky",
+            "nl": "Marshallaanval, Hoofdvariant, Spasskyvariant",
+            "id": "Serangan Marshall, Lini Utama, Variasi Spassky",
+            "vi": "Tấn công Marshall, Phương án chính, Phương án Spassky"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Main Line, Spassky Variation",
@@ -3226,7 +4126,12 @@
             "pt-PT": "Ataque Marshall",
             "de": "Marshall-Angriff",
             "fr": "Gambit Marshall",
-            "it": "Attacco Marshall"
+            "it": "Attacco Marshall",
+            "tr": "Marshall Akını",
+            "pl": "Atak Marshall",
+            "nl": "Marshallgambiet",
+            "id": "Serangan Marshall",
+            "vi": "Tấn công Marshall"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack",
@@ -3244,7 +4149,12 @@
             "pt-PT": "Ataque Marshall, Variante Steiner",
             "de": "Marshall-Angriff, Steiner-Variante",
             "fr": "Attaque Marshall, Variante Steiner",
-            "it": "Attacco Marshall, Variante Steiner"
+            "it": "Attacco Marshall, Variante Steiner",
+            "tr": "Marshall Akını, Steiner Varyantı",
+            "pl": "Atak Marshall, Wariant Steiner",
+            "nl": "Marshallaanval, Steinervariant",
+            "id": "Serangan Marshall, Variasi Steiner",
+            "vi": "Tấn công Marshall, Phương án Steiner"
           },
           "eco": "C89",
           "opening": "Ruy Lopez: Marshall Attack, Steiner Variation",
@@ -3263,7 +4173,12 @@
         "pt-PT": "Defesa Schliemann",
         "de": "Schliemann-Verteidigung",
         "fr": "Défense Schliemann",
-        "it": "Difesa Schliemann"
+        "it": "Difesa Schliemann",
+        "tr": "Schliemann Savunması",
+        "pl": "Obrona Schliemann",
+        "nl": "Schliemannverdediging",
+        "id": "Pertahanan Schliemann",
+        "vi": "Phòng thủ Schliemann"
       },
       "lines": [
         {
@@ -3277,7 +4192,12 @@
             "pt-PT": "Defesa Schliemann",
             "de": "Schliemann-Verteidigung",
             "fr": "Défense Schliemann",
-            "it": "Difesa Schliemann"
+            "it": "Difesa Schliemann",
+            "tr": "Schliemann Savunması",
+            "pl": "Obrona Schliemann",
+            "nl": "Schliemannverdediging",
+            "id": "Pertahanan Schliemann",
+            "vi": "Phòng thủ Schliemann"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense",
@@ -3295,7 +4215,12 @@
             "pt-PT": "Defesa Schliemann, Variante da Troca",
             "de": "Schliemann-Verteidigung, Abtauschvariante",
             "fr": "Défense Schliemann, Variante d'échange",
-            "it": "Difesa Schliemann, Variante di cambio"
+            "it": "Difesa Schliemann, Variante di cambio",
+            "tr": "Schliemann Savunması, Değişim Varyantı",
+            "nl": "Schliemannverdediging, Ruilvariant",
+            "id": "Pertahanan Schliemann, Variasi Pertukaran",
+            "vi": "Phòng thủ Schliemann, Phương án đổi quân",
+            "pl": "Obrona Schliemann, Wariant wymienny"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Exchange Variation",
@@ -3313,7 +4238,12 @@
             "pt-PT": "Defesa Schliemann, Variante Dyckhoff",
             "de": "Schliemann-Verteidigung, Dyckhoff-Variante",
             "fr": "Défense Schliemann, Variante Dyckhoff",
-            "it": "Difesa Schliemann, Variante Dyckhoff"
+            "it": "Difesa Schliemann, Variante Dyckhoff",
+            "tr": "Schliemann Savunması, Dyckhoff Varyantı",
+            "pl": "Obrona Schliemann, Wariant Dyckhoff",
+            "nl": "Schliemannverdediging, Dyckhoffvariant",
+            "id": "Pertahanan Schliemann, Variasi Dyckhoff",
+            "vi": "Phòng thủ Schliemann, Phương án Dyckhoff"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
@@ -3331,7 +4261,12 @@
             "pt-PT": "Defesa Schliemann, Defesa Kostić",
             "de": "Schliemann-Verteidigung, Kostić-Verteidigung",
             "fr": "Défense Schliemann, Défense Kostić",
-            "it": "Difesa Schliemann, Difesa Kostić"
+            "it": "Difesa Schliemann, Difesa Kostić",
+            "tr": "Schliemann Savunması, Kostić Savunması",
+            "pl": "Obrona Schliemann, Obrona Kostić",
+            "nl": "Schliemannverdediging, Kostićverdediging",
+            "id": "Pertahanan Schliemann, Pertahanan Kostić",
+            "vi": "Phòng thủ Schliemann, Phòng thủ Kostić"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Kostić Defense",
@@ -3349,7 +4284,12 @@
             "pt-PT": "Defesa Schliemann, Variante Tartakower",
             "de": "Schliemann-Verteidigung, Tartakower-Variante",
             "fr": "Défense Schliemann, Variante Tartakower",
-            "it": "Difesa Schliemann, Variante Tartakower"
+            "it": "Difesa Schliemann, Variante Tartakower",
+            "tr": "Schliemann Savunması, Tartakower Varyantı",
+            "pl": "Obrona Schliemann, Wariant Tartakower",
+            "nl": "Schliemannverdediging, Tartakowervariant",
+            "id": "Pertahanan Schliemann, Variasi Tartakower",
+            "vi": "Phòng thủ Schliemann, Phương án Tartakower"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
@@ -3367,7 +4307,12 @@
             "pt-PT": "Defesa Schliemann, Variante Möhring",
             "de": "Schliemann-Verteidigung, Möhring-Variante",
             "fr": "Défense Schliemann, Variante Möhring",
-            "it": "Difesa Schliemann, Variante Möhring"
+            "it": "Difesa Schliemann, Variante Möhring",
+            "tr": "Schliemann Savunması, Möhring Varyantı",
+            "pl": "Obrona Schliemann, Wariant Möhring",
+            "nl": "Schliemannverdediging, Möhringvariant",
+            "id": "Pertahanan Schliemann, Variasi Möhring",
+            "vi": "Phòng thủ Schliemann, Phương án Möhring"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
@@ -3385,7 +4330,12 @@
             "pt-PT": "Defesa Schliemann, Variante Clássica",
             "de": "Schliemann-Verteidigung, Klassische Variante",
             "fr": "Défense Schliemann, Variante classique",
-            "it": "Difesa Schliemann, Variante classica"
+            "it": "Difesa Schliemann, Variante classica",
+            "tr": "Schliemann Savunması, Klasik Varyant",
+            "nl": "Schliemannverdediging, Klassieke variant",
+            "id": "Pertahanan Schliemann, Variasi Klasik",
+            "vi": "Phòng thủ Schliemann, Phương án cổ điển",
+            "pl": "Obrona Schliemann, Wariant klasyczny"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
@@ -3403,7 +4353,12 @@
             "pt-PT": "Defesa Schliemann, Ataque Schönemann",
             "de": "Schliemann-Verteidigung, Schönemann-Angriff",
             "fr": "Défense Schliemann, Attaque Schönemann",
-            "it": "Difesa Schliemann, Attacco Schönemann"
+            "it": "Difesa Schliemann, Attacco Schönemann",
+            "tr": "Schliemann Savunması, Schönemann Akını",
+            "pl": "Obrona Schliemann, Atak Schönemann",
+            "nl": "Schliemannverdediging, Schönemannaanval",
+            "id": "Pertahanan Schliemann, Serangan Schönemann",
+            "vi": "Phòng thủ Schliemann, Tấn công Schönemann"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
@@ -3421,7 +4376,12 @@
             "pt-PT": "Defesa Schliemann, Gambito Jaenisch Aceito",
             "de": "Schliemann-Verteidigung, Angenommenes Jaenisch-Gambit",
             "fr": "Défense Schliemann, Gambit Jaenisch accepté",
-            "it": "Difesa Schliemann, Gambetto Jaenisch accettato"
+            "it": "Difesa Schliemann, Gambetto Jaenisch accettato",
+            "tr": "Schliemann Savunması, Kabul Edilmiş Jaenisch Gambiti",
+            "nl": "Schliemannverdediging, Jaenischgambiet aangenomen",
+            "id": "Pertahanan Schliemann, Gambit Jaenisch Diterima",
+            "vi": "Phòng thủ Schliemann, Gambit Jaenisch chấp nhận",
+            "pl": "Obrona Schliemann, Gambit Jaenisch przyjęty"
           },
           "eco": "C63",
           "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
@@ -3440,7 +4400,12 @@
         "pt-PT": "Variante Clássica",
         "de": "Klassische Variante",
         "fr": "Variante classique",
-        "it": "Variante classica"
+        "it": "Variante classica",
+        "tr": "Klasik Varyant",
+        "nl": "Klassieke variant",
+        "id": "Variasi Klasik",
+        "vi": "Phương án cổ điển",
+        "pl": "Wariant klasyczny"
       },
       "lines": [
         {
@@ -3454,7 +4419,12 @@
             "pt-PT": "Variante Clássica",
             "de": "Klassische Variante",
             "fr": "Variante classique",
-            "it": "Variante classica"
+            "it": "Variante classica",
+            "tr": "Klasik Varyant",
+            "nl": "Klassieke variant",
+            "id": "Variasi Klasik",
+            "vi": "Phương án cổ điển",
+            "pl": "Wariant klasyczny"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation",
@@ -3472,7 +4442,12 @@
             "pt-PT": "Variante Clássica, Gambito da Ala Espanhol",
             "de": "Klassische Variante, Spanisches Flügelgambit",
             "fr": "Variante classique, Gambit de l'aile espagnol",
-            "it": "Variante classica, Gambetto dell'ala spagnolo"
+            "it": "Variante classica, Gambetto dell'ala spagnolo",
+            "tr": "Klasik Varyant, İspanyol Kanat Gambiti",
+            "nl": "Klassieke variant, Spaanse vleugelgambiet",
+            "id": "Variasi Klasik, Gambit Sayap Spanyol",
+            "vi": "Phương án cổ điển, Gambit cánh Tây Ban Nha",
+            "pl": "Wariant klasyczny, Gambit skrzydłowy hiszpański"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
@@ -3490,7 +4465,12 @@
             "pt-PT": "Variante Clássica, Variante Central",
             "de": "Klassische Variante, Zentralvariante",
             "fr": "Variante classique, Variante centrale",
-            "it": "Variante classica, Variante centrale"
+            "it": "Variante classica, Variante centrale",
+            "tr": "Klasik Varyant, Merkez Varyantı",
+            "nl": "Klassieke variant, Centrale variant",
+            "id": "Variasi Klasik, Variasi Tengah",
+            "vi": "Phương án cổ điển, Phương án trung tâm",
+            "pl": "Wariant klasyczny, Wariant centralny"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Central Variation",
@@ -3508,7 +4488,12 @@
             "pt-PT": "Variante Clássica, Variante Charousek",
             "de": "Klassische Variante, Charousek-Variante",
             "fr": "Variante classique, Variante Charousek",
-            "it": "Variante classica, Variante Charousek"
+            "it": "Variante classica, Variante Charousek",
+            "tr": "Klasik Varyant, Charousek Varyantı",
+            "nl": "Klassieke variant, Charousekvariant",
+            "id": "Variasi Klasik, Variasi Charousek",
+            "vi": "Phương án cổ điển, Phương án Charousek",
+            "pl": "Wariant klasyczny, Wariant Charousek"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Charousek Variation",
@@ -3526,7 +4511,12 @@
             "pt-PT": "Variante Clássica, Gambito Konikowski",
             "de": "Klassische Variante, Konikowski-Gambit",
             "fr": "Variante classique, Gambit Konikowski",
-            "it": "Variante classica, Gambetto Konikowski"
+            "it": "Variante classica, Gambetto Konikowski",
+            "tr": "Klasik Varyant, Konikowski Gambiti",
+            "nl": "Klassieke variant, Konikowskigambiet",
+            "id": "Variasi Klasik, Gambit Konikowski",
+            "vi": "Phương án cổ điển, Gambit Konikowski",
+            "pl": "Wariant klasyczny, Gambit Konikowski"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Konikowski Gambit",
@@ -3544,7 +4534,12 @@
             "pt-PT": "Variante Clássica, Gambito Cordel",
             "de": "Klassische Variante, Cordel-Gambit",
             "fr": "Variante classique, Gambit Cordel",
-            "it": "Variante classica, Gambetto Cordel"
+            "it": "Variante classica, Gambetto Cordel",
+            "tr": "Klasik Varyant, Cordel Gambiti",
+            "nl": "Klassieke variant, Cordelgambiet",
+            "id": "Variasi Klasik, Gambit Cordel",
+            "vi": "Phương án cổ điển, Gambit Cordel",
+            "pl": "Wariant klasyczny, Gambit Cordel"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
@@ -3562,7 +4557,12 @@
             "pt-PT": "Variante Clássica, Gambito Zukertort",
             "de": "Klassische Variante, Zukertort-Gambit",
             "fr": "Variante classique, Gambit Zukertort",
-            "it": "Variante classica, Gambetto Zukertort"
+            "it": "Variante classica, Gambetto Zukertort",
+            "tr": "Klasik Varyant, Zukertort Gambiti",
+            "nl": "Klassieke variant, Zukertortgambiet",
+            "id": "Variasi Klasik, Gambit Zukertort",
+            "vi": "Phương án cổ điển, Gambit Zukertort",
+            "pl": "Wariant klasyczny, Gambit Zukertort"
           },
           "eco": "C65",
           "opening": "Ruy Lopez: Classical Variation, Zukertort Gambit",
@@ -3580,7 +4580,12 @@
             "pt-PT": "Variante Clássica, Linha Principal Moderna",
             "de": "Klassische Variante, Moderne Hauptvariante",
             "fr": "Variante classique, Ligne principale moderne",
-            "it": "Variante classica, Linea principale moderna"
+            "it": "Variante classica, Linea principale moderna",
+            "tr": "Klasik Varyant, Modern Ana Hat",
+            "nl": "Klassieke variant, Moderne hoofdlijn",
+            "id": "Variasi Klasik, Lini Utama Modern",
+            "vi": "Phương án cổ điển, Diễn biến chính hiện đại",
+            "pl": "Wariant klasyczny, Linia główna nowoczesna"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Variation, Modern Main Line",
@@ -3599,7 +4604,12 @@
         "pt-PT": "Defesa Steinitz",
         "de": "Steinitz-Verteidigung",
         "fr": "Défense Steinitz",
-        "it": "Difesa Steinitz"
+        "it": "Difesa Steinitz",
+        "tr": "Steinitz Savunması",
+        "pl": "Obrona Steinitz",
+        "nl": "Steinitzverdediging",
+        "id": "Pertahanan Steinitz",
+        "vi": "Phòng thủ Steinitz"
       },
       "lines": [
         {
@@ -3613,7 +4623,12 @@
             "pt-PT": "Defesa Steinitz",
             "de": "Steinitz-Verteidigung",
             "fr": "Défense Steinitz",
-            "it": "Difesa Steinitz"
+            "it": "Difesa Steinitz",
+            "tr": "Steinitz Savunması",
+            "pl": "Obrona Steinitz",
+            "nl": "Steinitzverdediging",
+            "id": "Pertahanan Steinitz",
+            "vi": "Phòng thủ Steinitz"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense",
@@ -3631,7 +4646,12 @@
             "pt-PT": "Defesa Steinitz",
             "de": "Steinitz-Verteidigung",
             "fr": "Défense Steinitz",
-            "it": "Difesa Steinitz"
+            "it": "Difesa Steinitz",
+            "tr": "Steinitz Savunması",
+            "pl": "Obrona Steinitz",
+            "nl": "Steinitzverdediging",
+            "id": "Pertahanan Steinitz",
+            "vi": "Phòng thủ Steinitz"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense",
@@ -3649,7 +4669,12 @@
             "pt-PT": "Defesa Steinitz, Ataque Nimzowitsch",
             "de": "Steinitz-Verteidigung, Nimzowitsch-Angriff",
             "fr": "Défense Steinitz, Attaque Nimzowitsch",
-            "it": "Difesa Steinitz, Attacco Nimzowitsch"
+            "it": "Difesa Steinitz, Attacco Nimzowitsch",
+            "tr": "Steinitz Savunması, Nimzowitsch Akını",
+            "pl": "Obrona Steinitz, Atak Nimzowitsch",
+            "nl": "Steinitzverdediging, Nimzowitschaanval",
+            "id": "Pertahanan Steinitz, Serangan Nimzowitsch",
+            "vi": "Phòng thủ Steinitz, Tấn công Nimzowitsch"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
@@ -3667,7 +4692,12 @@
             "pt-PT": "Defesa Steinitz, Variante Semi-Duras",
             "de": "Steinitz-Verteidigung, Halb-Duras-Variante",
             "fr": "Défense Steinitz, Variante semi-Duras",
-            "it": "Difesa Steinitz, Variante semi-Duras"
+            "it": "Difesa Steinitz, Variante semi-Duras",
+            "tr": "Steinitz Savunması, Yarı Duras Varyantı",
+            "nl": "Steinitzverdediging, Semi-Durasvariant",
+            "id": "Pertahanan Steinitz, Variasi Semi-Duras",
+            "vi": "Phòng thủ Steinitz, Phương án bán Duras",
+            "pl": "Obrona Steinitz, Wariant pół-Durasa"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
@@ -3685,7 +4715,12 @@
             "pt-PT": "Defesa Steinitz, Gambito do Centro",
             "de": "Steinitz-Verteidigung, Mittelgambit",
             "fr": "Défense Steinitz, Gambit du centre",
-            "it": "Difesa Steinitz, Gambetto del centro"
+            "it": "Difesa Steinitz, Gambetto del centro",
+            "tr": "Steinitz Savunması, Merkez Gambiti",
+            "nl": "Steinitzverdediging, Centrumgambiet",
+            "id": "Pertahanan Steinitz, Gambit Pusat",
+            "vi": "Phòng thủ Steinitz, Gambit trung tâm",
+            "pl": "Obrona Steinitz, Gambit centralny"
           },
           "eco": "C62",
           "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
@@ -3704,7 +4739,12 @@
         "pt-PT": "Defesa Clássica",
         "de": "Klassische Verteidigung",
         "fr": "Défense classique",
-        "it": "Difesa classica"
+        "it": "Difesa classica",
+        "tr": "Klasik Savunma",
+        "nl": "Klassieke verdediging",
+        "id": "Pertahanan Klasik",
+        "vi": "Phòng thủ cổ điển",
+        "pl": "Obrona klasyczna"
       },
       "lines": [
         {
@@ -3718,7 +4758,12 @@
             "pt-PT": "Defesa Clássica, Variante Zaitsev",
             "de": "Klassische Verteidigung, Saizew-Variante",
             "fr": "Défense classique, Variante Zaïtsev",
-            "it": "Difesa classica, Variante Zajcev"
+            "it": "Difesa classica, Variante Zajcev",
+            "tr": "Klasik Savunma, Zaitsev Varyantı",
+            "nl": "Klassieke verdediging, Zaitsevvariant",
+            "id": "Pertahanan Klasik, Variasi Zaitsev",
+            "vi": "Phòng thủ cổ điển, Phương án Zaitsev",
+            "pl": "Obrona klasyczna, Wariant Zaitsev"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
@@ -3736,7 +4781,12 @@
             "pt-PT": "Defesa Clássica, Variante Boden",
             "de": "Klassische Verteidigung, Boden-Variante",
             "fr": "Défense classique, Variante Boden",
-            "it": "Difesa classica, Variante Boden"
+            "it": "Difesa classica, Variante Boden",
+            "tr": "Klasik Savunma, Boden Varyantı",
+            "nl": "Klassieke verdediging, Bodenvariant",
+            "id": "Pertahanan Klasik, Variasi Boden",
+            "vi": "Phòng thủ cổ điển, Phương án Boden",
+            "pl": "Obrona klasyczna, Wariant Boden"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Defense, Boden Variation",
@@ -3754,7 +4804,12 @@
             "pt-PT": "Defesa Clássica, Variante Benelux",
             "de": "Klassische Verteidigung, Benelux-Variante",
             "fr": "Défense classique, Variante Benelux",
-            "it": "Difesa classica, Variante Benelux"
+            "it": "Difesa classica, Variante Benelux",
+            "tr": "Klasik Savunma, Benelux Varyantı",
+            "nl": "Klassieke verdediging, Beneluxvariant",
+            "id": "Pertahanan Klasik, Variasi Benelux",
+            "vi": "Phòng thủ cổ điển, Phương án Benelux",
+            "pl": "Obrona klasyczna, Wariant Benelux"
           },
           "eco": "C64",
           "opening": "Ruy Lopez: Classical Defense, Benelux Variation",
@@ -3773,7 +4828,12 @@
         "pt-PT": "Defesa Cozio",
         "de": "Cozio-Verteidigung",
         "fr": "Défense Cozio",
-        "it": "Difesa Cozio"
+        "it": "Difesa Cozio",
+        "tr": "Cozio Savunması",
+        "pl": "Obrona Cozio",
+        "nl": "Cozioverdediging",
+        "id": "Pertahanan Cozio",
+        "vi": "Phòng thủ Cozio"
       },
       "lines": [
         {
@@ -3787,7 +4847,12 @@
             "pt-PT": "Defesa Cozio",
             "de": "Cozio-Verteidigung",
             "fr": "Défense Cozio",
-            "it": "Difesa Cozio"
+            "it": "Difesa Cozio",
+            "tr": "Cozio Savunması",
+            "pl": "Obrona Cozio",
+            "nl": "Cozioverdediging",
+            "id": "Pertahanan Cozio",
+            "vi": "Phòng thủ Cozio"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Cozio Defense",
@@ -3805,7 +4870,12 @@
             "pt-PT": "Defesa Cozio, Variante Paulsen",
             "de": "Cozio-Verteidigung, Paulsen-Variante",
             "fr": "Défense Cozio, Variante Paulsen",
-            "it": "Difesa Cozio, Variante Paulsen"
+            "it": "Difesa Cozio, Variante Paulsen",
+            "tr": "Cozio Savunması, Paulsen Varyantı",
+            "pl": "Obrona Cozio, Wariant Paulsen",
+            "nl": "Cozioverdediging, Paulsenvariant",
+            "id": "Pertahanan Cozio, Variasi Paulsen",
+            "vi": "Phòng thủ Cozio, Phương án Paulsen"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
@@ -3823,7 +4893,12 @@
             "pt-PT": "Defesa Cozio, Gambito Tartakower",
             "de": "Cozio-Verteidigung, Tartakower-Gambit",
             "fr": "Défense Cozio, Gambit Tartakower",
-            "it": "Difesa Cozio, Gambetto Tartakower"
+            "it": "Difesa Cozio, Gambetto Tartakower",
+            "tr": "Cozio Savunması, Tartakower Gambiti",
+            "pl": "Obrona Cozio, Gambit Tartakower",
+            "nl": "Cozioverdediging, Tartakowergambiet",
+            "id": "Pertahanan Cozio, Gambit Tartakower",
+            "vi": "Phòng thủ Cozio, Gambit Tartakower"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
@@ -3842,7 +4917,12 @@
         "pt-PT": "Contragambito Espanhol",
         "de": "Spanisches Gegengambit",
         "fr": "Contre-gambit espagnol",
-        "it": "Controgambetto spagnolo"
+        "it": "Controgambetto spagnolo",
+        "tr": "İspanyol Karşı Gambiti",
+        "nl": "Spaans tegengambiet",
+        "id": "Gambit Balasan Spanyol",
+        "vi": "Phản gambit Tây Ban Nha",
+        "pl": "Kontrgambit hiszpański"
       },
       "lines": [
         {
@@ -3856,7 +4936,12 @@
             "pt-PT": "Contragambito Espanhol",
             "de": "Spanisches Gegengambit",
             "fr": "Contre-gambit espagnol",
-            "it": "Controgambetto spagnolo"
+            "it": "Controgambetto spagnolo",
+            "tr": "İspanyol Karşı Gambiti",
+            "nl": "Spaans tegengambiet",
+            "id": "Gambit Balasan Spanyol",
+            "vi": "Phản gambit Tây Ban Nha",
+            "pl": "Kontrgambit hiszpański"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Spanish Countergambit",
@@ -3874,7 +4959,12 @@
             "pt-PT": "Contragambito Espanhol, Gambito Harding",
             "de": "Spanisches Gegengambit, Harding-Gambit",
             "fr": "Contre-gambit espagnol, Gambit Harding",
-            "it": "Controgambetto spagnolo, Gambetto Harding"
+            "it": "Controgambetto spagnolo, Gambetto Harding",
+            "tr": "İspanyol Karşı Gambiti, Harding Gambiti",
+            "nl": "Spaans tegengambiet, Hardinggambiet",
+            "id": "Gambit Balasan Spanyol, Gambit Harding",
+            "vi": "Phản gambit Tây Ban Nha, Gambit Harding",
+            "pl": "Kontrgambit hiszpański, Gambit Harding"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
@@ -3892,7 +4982,12 @@
             "pt-PT": "Contragambito Espanhol, Contragambito Harding, Gambito Fricke",
             "de": "Spanisches Gegengambit, Harding-Gegengambit, Fricke-Gambit",
             "fr": "Contre-gambit espagnol, Contre-gambit Harding, Gambit Fricke",
-            "it": "Controgambetto spagnolo, Controgambetto Harding, Gambetto Fricke"
+            "it": "Controgambetto spagnolo, Controgambetto Harding, Gambetto Fricke",
+            "tr": "İspanyol Karşı Gambiti, Harding Karşı Gambiti, Fricke Gambiti",
+            "nl": "Spaans tegengambiet, Hardingtegengambiet, Frickegambiet",
+            "id": "Gambit Balasan Spanyol, Gambit Balasan Harding, Gambit Fricke",
+            "vi": "Phản gambit Tây Ban Nha, Phản gambit Harding, Gambit Fricke",
+            "pl": "Kontrgambit hiszpański, Kontrgambit Harding, Gambit Fricke"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
@@ -3911,7 +5006,12 @@
         "pt-PT": "Defesa Alapin",
         "de": "Alapin-Verteidigung",
         "fr": "Défense Alapin",
-        "it": "Difesa Alapin"
+        "it": "Difesa Alapin",
+        "tr": "Alapin Savunması",
+        "pl": "Obrona Alapin",
+        "nl": "Alapinverdediging",
+        "id": "Pertahanan Alapin",
+        "vi": "Phòng thủ Alapin"
       },
       "lines": [
         {
@@ -3925,7 +5025,12 @@
             "pt-PT": "Defesa Alapin",
             "de": "Alapin-Verteidigung",
             "fr": "Défense Alapin",
-            "it": "Difesa Alapin"
+            "it": "Difesa Alapin",
+            "tr": "Alapin Savunması",
+            "pl": "Obrona Alapin",
+            "nl": "Alapinverdediging",
+            "id": "Pertahanan Alapin",
+            "vi": "Phòng thủ Alapin"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Alapin Defense",
@@ -3943,7 +5048,12 @@
             "pt-PT": "Defesa Alapin, Gambito Alapin",
             "de": "Alapin-Verteidigung, Alapin-Gambit",
             "fr": "Défense Alapin, Gambit Alapin",
-            "it": "Difesa Alapin, Gambetto Alapin"
+            "it": "Difesa Alapin, Gambetto Alapin",
+            "tr": "Alapin Savunması, Alapin Gambiti",
+            "pl": "Obrona Alapin, Gambit Alapin",
+            "nl": "Alapinverdediging, Alapingambiet",
+            "id": "Pertahanan Alapin, Gambit Alapin",
+            "vi": "Phòng thủ Alapin, Gambit Alapin"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
@@ -3962,7 +5072,12 @@
         "pt-PT": "Variante Bird",
         "de": "Bird-Variante",
         "fr": "Variante Bird",
-        "it": "Variante Bird"
+        "it": "Variante Bird",
+        "tr": "Bird Varyantı",
+        "pl": "Wariant Bird",
+        "nl": "Birdvariant",
+        "id": "Variasi Bird",
+        "vi": "Phương án Bird"
       },
       "lines": [
         {
@@ -3976,7 +5091,12 @@
             "pt-PT": "Variante Bird",
             "de": "Bird-Variante",
             "fr": "Variante Bird",
-            "it": "Variante Bird"
+            "it": "Variante Bird",
+            "tr": "Bird Varyantı",
+            "pl": "Wariant Bird",
+            "nl": "Birdvariant",
+            "id": "Variasi Bird",
+            "vi": "Phương án Bird"
           },
           "eco": "C61",
           "opening": "Ruy Lopez: Bird Variation",
@@ -3994,7 +5114,12 @@
             "pt-PT": "Variante Bird, Variante Paulsen",
             "de": "Bird-Variante, Paulsen-Variante",
             "fr": "Variante Bird, Variante Paulsen",
-            "it": "Variante Bird, Variante Paulsen"
+            "it": "Variante Bird, Variante Paulsen",
+            "tr": "Bird Varyantı, Paulsen Varyantı",
+            "pl": "Wariant Bird, Wariant Paulsen",
+            "nl": "Birdvariant, Paulsenvariant",
+            "id": "Variasi Bird, Variasi Paulsen",
+            "vi": "Phương án Bird, Phương án Paulsen"
           },
           "eco": "C61",
           "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
@@ -4013,7 +5138,12 @@
         "pt-PT": "Defesa do Fianqueto",
         "de": "Fianchetto-Verteidigung",
         "fr": "Défense en fianchetto",
-        "it": "Difesa in fianchetto"
+        "it": "Difesa in fianchetto",
+        "tr": "Fianchetto Savunması",
+        "nl": "Fianchettoverdediging",
+        "id": "Pertahanan Fianchetto",
+        "vi": "Phòng thủ fianchetto",
+        "pl": "Obrona z fianchettem"
       },
       "lines": [
         {
@@ -4027,7 +5157,12 @@
             "pt-PT": "Defesa do Fianqueto",
             "de": "Fianchetto-Verteidigung",
             "fr": "Défense en fianchetto",
-            "it": "Difesa in fianchetto"
+            "it": "Difesa in fianchetto",
+            "tr": "Fianchetto Savunması",
+            "nl": "Fianchettoverdediging",
+            "id": "Pertahanan Fianchetto",
+            "vi": "Phòng thủ fianchetto",
+            "pl": "Obrona z fianchettem"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Fianchetto Defense",
@@ -4045,7 +5180,12 @@
             "pt-PT": "Defesa do Fianqueto, Gambito Kevitz",
             "de": "Fianchetto-Verteidigung, Kevitz-Gambit",
             "fr": "Défense en fianchetto, Gambit Kevitz",
-            "it": "Difesa in fianchetto, Gambetto Kevitz"
+            "it": "Difesa in fianchetto, Gambetto Kevitz",
+            "tr": "Fianchetto Savunması, Kevitz Gambiti",
+            "nl": "Fianchettoverdediging, Kevitzgambiet",
+            "id": "Pertahanan Fianchetto, Gambit Kevitz",
+            "vi": "Phòng thủ fianchetto, Gambit Kevitz",
+            "pl": "Obrona z fianchettem, Gambit Kevitz"
           },
           "eco": "C60",
           "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
@@ -4064,7 +5204,12 @@
         "pt-PT": "Armadilha da Arca de Noé",
         "de": "Arche-Noah-Falle",
         "fr": "Piège de l'arche de Noé",
-        "it": "Trappola dell'arca di Noè"
+        "it": "Trappola dell'arca di Noè",
+        "vi": "Bẫy Noah's Ark",
+        "tr": "Nuh'un Gemisi Tuzağı",
+        "nl": "Ark van Noach-val",
+        "id": "Jebakan Bahtera Nuh",
+        "pl": "Pułapka arki Noego"
       },
       "lines": [
         {
@@ -4078,7 +5223,12 @@
             "pt-PT": "Armadilha da Arca de Noé",
             "de": "Arche-Noah-Falle",
             "fr": "Piège de l'arche de Noé",
-            "it": "Trappola dell'arca di Noè"
+            "it": "Trappola dell'arca di Noè",
+            "vi": "Bẫy Noah's Ark",
+            "tr": "Nuh'un Gemisi Tuzağı",
+            "nl": "Ark van Noach-val",
+            "id": "Jebakan Bahtera Nuh",
+            "pl": "Pułapka arki Noego"
           },
           "eco": "C88",
           "opening": "Ruy Lopez: Noah's Ark Trap",
@@ -4096,7 +5246,12 @@
             "pt-PT": "Armadilha da Arca de Noé",
             "de": "Arche-Noah-Falle",
             "fr": "Piège de l'arche de Noé",
-            "it": "Trappola dell'arca di Noè"
+            "it": "Trappola dell'arca di Noè",
+            "vi": "Bẫy Noah's Ark",
+            "tr": "Nuh'un Gemisi Tuzağı",
+            "nl": "Ark van Noach-val",
+            "id": "Jebakan Bahtera Nuh",
+            "pl": "Pułapka arki Noego"
           },
           "eco": "C71",
           "opening": "Ruy Lopez: Noah's Ark Trap",
@@ -4115,7 +5270,12 @@
         "pt-PT": "Defesa Berlinense Aberta",
         "de": "Offene Berliner Verteidigung",
         "fr": "Défense berlinoise ouverte",
-        "it": "Difesa berlinese aperta"
+        "it": "Difesa berlinese aperta",
+        "tr": "Açık Berlin Savunması",
+        "nl": "Open Berlijnse verdediging",
+        "id": "Pertahanan Berlin Terbuka",
+        "vi": "Phòng thủ Berlin mở",
+        "pl": "Obrona berlińska otwarta"
       },
       "lines": [
         {
@@ -4129,7 +5289,12 @@
             "pt-PT": "Defesa Berlinense Aberta, Variante Showalter",
             "de": "Offene Berliner Verteidigung, Showalter-Variante",
             "fr": "Défense berlinoise ouverte, Variante Showalter",
-            "it": "Difesa berlinese aperta, Variante Showalter"
+            "it": "Difesa berlinese aperta, Variante Showalter",
+            "tr": "Açık Berlin Savunması, Showalter Varyantı",
+            "nl": "Open Berlijnse verdediging, Showaltervariant",
+            "id": "Pertahanan Berlin Terbuka, Variasi Showalter",
+            "vi": "Phòng thủ Berlin mở, Phương án Showalter",
+            "pl": "Obrona berlińska otwarta, Wariant Showalter"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Open Berlin Defense, Showalter Variation",
@@ -4147,7 +5312,12 @@
             "pt-PT": "Defesa Berlinense Aberta, Variante l'Hermet",
             "de": "Offene Berliner Verteidigung, L’Hermet-Variante",
             "fr": "Défense berlinoise ouverte, Variante l'Hermet",
-            "it": "Difesa berlinese aperta, Variante l'Hermet"
+            "it": "Difesa berlinese aperta, Variante l'Hermet",
+            "tr": "Açık Berlin Savunması, l'Hermet Varyantı",
+            "nl": "Open Berlijnse verdediging, l'Hermet-variant",
+            "id": "Pertahanan Berlin Terbuka, Variasi l'Hermet",
+            "vi": "Phòng thủ Berlin mở, Phương án l'Hermet",
+            "pl": "Obrona berlińska otwarta, Wariant l'Hermeta"
           },
           "eco": "C67",
           "opening": "Ruy Lopez: Open Berlin Defense, l'Hermet Variation",
@@ -4166,7 +5336,12 @@
         "pt-PT": "Defesa Steinitz Adiada",
         "de": "Aufgeschobene Steinitz-Verteidigung",
         "fr": "Défense Steinitz différée",
-        "it": "Difesa Steinitz differita"
+        "it": "Difesa Steinitz differita",
+        "tr": "Gecikmeli Steinitz Savunması",
+        "nl": "Steinitzverdediging uitgesteld",
+        "id": "Pertahanan Steinitz Ditunda",
+        "vi": "Phòng thủ Steinitz hoãn lại",
+        "pl": "Obrona Steinitz odroczona"
       },
       "lines": [
         {
@@ -4180,7 +5355,12 @@
             "pt-PT": "Defesa Steinitz Adiada, Variante Lipnitsky",
             "de": "Aufgeschobene Steinitz-Verteidigung, Lipnizki-Variante",
             "fr": "Défense Steinitz différée, Variante Lipnitski",
-            "it": "Difesa Steinitz differita, Variante Lipnickij"
+            "it": "Difesa Steinitz differita, Variante Lipnickij",
+            "tr": "Gecikmeli Steinitz Savunması, Lipnitsky Varyantı",
+            "nl": "Steinitzverdediging uitgesteld, Lipnitskyvariant",
+            "id": "Pertahanan Steinitz Ditunda, Variasi Lipnitsky",
+            "vi": "Phòng thủ Steinitz hoãn lại, Phương án Lipnitsky",
+            "pl": "Obrona Steinitz odroczona, Wariant Lipnitsky"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Steinitz Defense Deferred, Lipnitsky Variation",
@@ -4198,7 +5378,12 @@
             "pt-PT": "Defesa Steinitz Adiada, Variante Boleslavsky",
             "de": "Aufgeschobene Steinitz-Verteidigung, Boleslawski-Variante",
             "fr": "Défense Steinitz différée, Variante Boleslavski",
-            "it": "Difesa Steinitz differita, Variante Boleslavskij"
+            "it": "Difesa Steinitz differita, Variante Boleslavskij",
+            "tr": "Gecikmeli Steinitz Savunması, Boleslavsky Varyantı",
+            "nl": "Steinitzverdediging uitgesteld, Boleslavskyvariant",
+            "id": "Pertahanan Steinitz Ditunda, Variasi Boleslavsky",
+            "vi": "Phòng thủ Steinitz hoãn lại, Phương án Boleslavsky",
+            "pl": "Obrona Steinitz odroczona, Wariant Boleslavsky"
           },
           "eco": "C79",
           "opening": "Ruy Lopez: Steinitz Defense Deferred, Boleslavsky Variation",
@@ -4220,7 +5405,12 @@
         "pt-PT": "Defesa Bird Adiada",
         "de": "Aufgeschobene Bird-Verteidigung",
         "fr": "Défense Bird différée",
-        "it": "Difesa Bird differita"
+        "it": "Difesa Bird differita",
+        "tr": "Gecikmeli Bird Savunması",
+        "nl": "Birdverdediging uitgesteld",
+        "id": "Pertahanan Bird Ditunda",
+        "vi": "Phòng thủ Bird hoãn lại",
+        "pl": "Obrona Birda odroczona"
       },
       "eco": "C70",
       "opening": "Ruy Lopez: Bird's Defense Deferred",
@@ -4238,7 +5428,12 @@
         "pt-PT": "Gambito Brentano",
         "de": "Brentano-Gambit",
         "fr": "Gambit Brentano",
-        "it": "Gambetto Brentano"
+        "it": "Gambetto Brentano",
+        "tr": "Brentano Gambiti",
+        "pl": "Gambit Brentano",
+        "nl": "Brentanogambiet",
+        "id": "Gambit Brentano",
+        "vi": "Gambit Brentano"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Brentano Gambit",
@@ -4256,7 +5451,12 @@
         "pt-PT": "Variante Brix",
         "de": "Brix-Variante",
         "fr": "Variante Brix",
-        "it": "Variante Brix"
+        "it": "Variante Brix",
+        "tr": "Brix Varyantı",
+        "pl": "Wariant Brix",
+        "nl": "Brixvariant",
+        "id": "Variasi Brix",
+        "vi": "Phương án Brix"
       },
       "eco": "C78",
       "opening": "Ruy Lopez: Brix Variation",
@@ -4274,7 +5474,12 @@
         "pt-PT": "Variante Búlgara",
         "de": "Bulgarische Variante",
         "fr": "Variante bulgare",
-        "it": "Variante bulgara"
+        "it": "Variante bulgara",
+        "tr": "Bulgar Varyantı",
+        "nl": "Bulgaarse variant",
+        "id": "Variasi Bulgaria",
+        "vi": "Phương án Bulgaria",
+        "pl": "Wariant bułgarski"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Bulgarian Variation",
@@ -4292,7 +5497,12 @@
         "pt-PT": "Contragambito Central",
         "de": "Zentrales Gegengambit",
         "fr": "Contre-gambit central",
-        "it": "Controgambetto centrale"
+        "it": "Controgambetto centrale",
+        "tr": "Merkez Karşı Gambiti",
+        "nl": "Centraal tegengambiet",
+        "id": "Gambit Balasan Tengah",
+        "vi": "Phản gambit trung tâm",
+        "pl": "Kontrgambit centralny"
       },
       "eco": "C78",
       "opening": "Ruy Lopez: Central Countergambit",
@@ -4310,7 +5520,12 @@
         "pt-PT": "Defesa Berlinense Fechada, Variante Chigorin",
         "de": "Geschlossene Berliner Verteidigung, Tschigorin-Variante",
         "fr": "Défense berlinoise fermée, Variante Tchigorine",
-        "it": "Difesa berlinese chiusa, Variante Čigorin"
+        "it": "Difesa berlinese chiusa, Variante Čigorin",
+        "tr": "Kapalı Berlin Savunması, Chigorin Varyantı",
+        "nl": "Gesloten Berlijnse verdediging, Chigorinvariant",
+        "id": "Pertahanan Berlin Tertutup, Variasi Chigorin",
+        "vi": "Phòng thủ Berlin đóng, Phương án Chigorin",
+        "pl": "Obrona berlińska zamknięta, Wariant Chigorin"
       },
       "eco": "C66",
       "opening": "Ruy Lopez: Closed Berlin Defense, Chigorin Variation",
@@ -4328,7 +5543,12 @@
         "pt-PT": "Troca, Variante Alekhine",
         "de": "Abtausch, Aljechin-Variante",
         "fr": "Échange, Variante Alekhine",
-        "it": "Cambio, Variante Alechin"
+        "it": "Cambio, Variante Alechin",
+        "tr": "Değişim, Alekhine Varyantı",
+        "nl": "Ruil, Alekhinevariant",
+        "id": "Pertukaran, Variasi Alekhine",
+        "vi": "Đổi quân, Phương án Alekhine",
+        "pl": "Wymienny, Wariant Alekhine"
       },
       "eco": "C68",
       "opening": "Ruy Lopez: Exchange, Alekhine Variation",
@@ -4346,7 +5566,12 @@
         "pt-PT": "Ataque Halloween",
         "de": "Halloween-Angriff",
         "fr": "Attaque Halloween",
-        "it": "Attacco Halloween"
+        "it": "Attacco Halloween",
+        "tr": "Halloween Akını",
+        "pl": "Atak Halloween",
+        "nl": "Halloweenaanval",
+        "id": "Serangan Halloween",
+        "vi": "Tấn công Halloween"
       },
       "eco": "C65",
       "opening": "Ruy Lopez: Halloween Attack",
@@ -4364,7 +5589,12 @@
         "pt-PT": "Variante Lucena",
         "de": "Lucena-Variante",
         "fr": "Variante Lucena",
-        "it": "Variante Lucena"
+        "it": "Variante Lucena",
+        "tr": "Lucena Varyantı",
+        "pl": "Wariant Lucena",
+        "nl": "Lucenavariant",
+        "id": "Variasi Lucena",
+        "vi": "Phương án Lucena"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Lucena Variation",
@@ -4382,7 +5612,12 @@
         "pt-PT": "Ruy López",
         "de": "Spanische Partie",
         "fr": "Partie espagnole",
-        "it": "Partita spagnola"
+        "it": "Partita spagnola",
+        "tr": "Ruy Lopez",
+        "nl": "Ruy Lopez",
+        "id": "Ruy Lopez",
+        "vi": "Ruy Lopez",
+        "pl": "Ruy Lopez"
       },
       "eco": "C60",
       "opening": "Ruy Lopez",
@@ -4400,7 +5635,12 @@
         "pt-PT": "Variante Nürnberg",
         "de": "Nürnberg-Variante",
         "fr": "Variante Nürnberg",
-        "it": "Variante Nürnberg"
+        "it": "Variante Nürnberg",
+        "tr": "Nürnberg Varyantı",
+        "pl": "Wariant Nürnberg",
+        "nl": "Nürnbergvariant",
+        "id": "Variasi Nürnberg",
+        "vi": "Phương án Nürnberg"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Nürnberg Variation",
@@ -4418,7 +5658,12 @@
         "pt-PT": "Defesa Pollock",
         "de": "Pollock-Verteidigung",
         "fr": "Défense Pollock",
-        "it": "Difesa Pollock"
+        "it": "Difesa Pollock",
+        "tr": "Pollock Savunması",
+        "pl": "Obrona Pollock",
+        "nl": "Pollockverdediging",
+        "id": "Pertahanan Pollock",
+        "vi": "Phòng thủ Pollock"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Pollock Defense",
@@ -4436,7 +5681,12 @@
         "pt-PT": "Variante Rabinovich",
         "de": "Rabinowitsch-Variante",
         "fr": "Variante Rabinovitch",
-        "it": "Variante Rabinovič"
+        "it": "Variante Rabinovič",
+        "tr": "Rabinovich Varyantı",
+        "pl": "Wariant Rabinovich",
+        "nl": "Rabinovichvariant",
+        "id": "Variasi Rabinovich",
+        "vi": "Phương án Rabinovich"
       },
       "eco": "C78",
       "opening": "Ruy Lopez: Rabinovich Variation",
@@ -4454,7 +5704,12 @@
         "pt-PT": "Variante da Retirada",
         "de": "Rückzugsvariante",
         "fr": "Variante de la retraite",
-        "it": "Variante della ritirata"
+        "it": "Variante della ritirata",
+        "tr": "Geri Çekilme Varyantı",
+        "nl": "Terugtochtvariant",
+        "id": "Variasi Mundur",
+        "vi": "Phương án rút lui",
+        "pl": "Wariant odwrotu"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Retreat Variation",
@@ -4472,7 +5727,12 @@
         "pt-PT": "Gambito Rotary-Albany",
         "de": "Rotary-Albany-Gambit",
         "fr": "Gambit Rotary-Albany",
-        "it": "Gambetto Rotary-Albany"
+        "it": "Gambetto Rotary-Albany",
+        "tr": "Rotary-Albany Gambiti",
+        "pl": "Gambit Rotary-Albany",
+        "nl": "Rotary-Albanygambiet",
+        "id": "Gambit Rotary-Albany",
+        "vi": "Gambit Rotary-Albany"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Rotary-Albany Gambit",
@@ -4490,7 +5750,12 @@
         "pt-PT": "Variante Vinogradov",
         "de": "Winogradow-Variante",
         "fr": "Variante Vinogradov",
-        "it": "Variante Vinogradov"
+        "it": "Variante Vinogradov",
+        "tr": "Vinogradov Varyantı",
+        "pl": "Wariant Vinogradov",
+        "nl": "Vinogradovvariant",
+        "id": "Variasi Vinogradov",
+        "vi": "Phương án Vinogradov"
       },
       "eco": "C60",
       "opening": "Ruy Lopez: Vinogradov Variation",
@@ -4508,7 +5773,12 @@
         "pt-PT": "Ataque Wormald, Variante Grünfeld",
         "de": "Wormald-Angriff, Grünfeld-Variante",
         "fr": "Attaque Wormald, Variante Grünfeld",
-        "it": "Attacco Wormald, Variante Grünfeld"
+        "it": "Attacco Wormald, Variante Grünfeld",
+        "tr": "Wormald Akını, Grünfeld Varyantı",
+        "pl": "Atak Wormald, Wariant Grünfeld",
+        "nl": "Wormaldaanval, Grünfeldvariant",
+        "id": "Serangan Wormald, Variasi Grünfeld",
+        "vi": "Tấn công Wormald, Phương án Grünfeld"
       },
       "eco": "C77",
       "opening": "Ruy Lopez: Wormald Attack, Grünfeld Variation",

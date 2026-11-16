@@ -9,7 +9,12 @@
     "pt-PT": "Gambito do Rei",
     "de": "Königsgambit",
     "fr": "Gambit du roi",
-    "it": "Gambetto di re"
+    "it": "Gambetto di re",
+    "tr": "Şah Gambiti",
+    "pl": "Gambit królewski",
+    "nl": "Koningsgambiet",
+    "vi": "Gambit Vua",
+    "id": "Gambit Raja"
   },
   "order": 13,
   "variants": [
@@ -23,7 +28,12 @@
         "pt-PT": "Aceito: Gambito do Bispo",
         "de": "Angenommen: Läufergambit",
         "fr": "Accepté: Gambit du fou",
-        "it": "Accettato: Gambetto dell'alfiere"
+        "it": "Accettato: Gambetto dell'alfiere",
+        "tr": "Kabul Edilmiş: Fil Gambiti",
+        "nl": "Aangenomen: Lopergambiet",
+        "id": "Diterima: Gambit Gajah",
+        "vi": "Chấp nhận: Gambit Tượng",
+        "pl": "Przyjęty: Gambit gońca"
       },
       "lines": [
         {
@@ -37,7 +47,12 @@
             "pt-PT": "Aceito: Gambito do Bispo",
             "de": "Angenommen: Läufergambit",
             "fr": "Accepté: Gambit du fou",
-            "it": "Accettato: Gambetto dell'alfiere"
+            "it": "Accettato: Gambetto dell'alfiere",
+            "tr": "Kabul Edilmiş: Fil Gambiti",
+            "nl": "Aangenomen: Lopergambiet",
+            "id": "Diterima: Gambit Gajah",
+            "vi": "Chấp nhận: Gambit Tượng",
+            "pl": "Przyjęty: Gambit gońca"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit",
@@ -55,7 +70,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Defesa Maurian",
             "de": "Angenommen: Läufergambit, Maurian-Verteidigung",
             "fr": "Accepté: Gambit du fou, Défense Maurian",
-            "it": "Accettato: Gambetto dell'alfiere, Difesa Maurian"
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Maurian",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Maurian Savunması",
+            "nl": "Aangenomen: Lopergambiet, Maurianverdediging",
+            "id": "Diterima: Gambit Gajah, Pertahanan Maurian",
+            "vi": "Chấp nhận: Gambit Tượng, Phòng thủ Maurian",
+            "pl": "Przyjęty: Gambit gońca, Obrona Maurian"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Maurian Defense",
@@ -73,7 +93,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Defesa Steinitz",
             "de": "Angenommen: Läufergambit, Steinitz-Verteidigung",
             "fr": "Accepté: Gambit du fou, Défense Steinitz",
-            "it": "Accettato: Gambetto dell'alfiere, Difesa Steinitz"
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Steinitz",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Steinitz Savunması",
+            "nl": "Aangenomen: Lopergambiet, Steinitzverdediging",
+            "id": "Diterima: Gambit Gajah, Pertahanan Steinitz",
+            "vi": "Chấp nhận: Gambit Tượng, Phòng thủ Steinitz",
+            "pl": "Przyjęty: Gambit gońca, Obrona Steinitz"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Steinitz Defense",
@@ -91,7 +116,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Defesa Cozio",
             "de": "Angenommen: Läufergambit, Cozio-Verteidigung",
             "fr": "Accepté: Gambit du fou, Défense Cozio",
-            "it": "Accettato: Gambetto dell'alfiere, Difesa Cozio"
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Cozio",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Cozio Savunması",
+            "nl": "Aangenomen: Lopergambiet, Cozioverdediging",
+            "id": "Diterima: Gambit Gajah, Pertahanan Cozio",
+            "vi": "Chấp nhận: Gambit Tượng, Phòng thủ Cozio",
+            "pl": "Przyjęty: Gambit gońca, Obrona Cozio"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Cozio Defense",
@@ -109,7 +139,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Variante Bogoljubow",
             "de": "Angenommen: Läufergambit, Bogoljubow-Variante",
             "fr": "Accepté: Gambit du fou, Variante Bogoljubow",
-            "it": "Accettato: Gambetto dell'alfiere, Variante Bogoljubow"
+            "it": "Accettato: Gambetto dell'alfiere, Variante Bogoljubow",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Bogoljubow Varyantı",
+            "nl": "Aangenomen: Lopergambiet, Bogoljubowvariant",
+            "id": "Diterima: Gambit Gajah, Variasi Bogoljubow",
+            "vi": "Chấp nhận: Gambit Tượng, Phương án Bogoljubow",
+            "pl": "Przyjęty: Gambit gońca, Wariant Bogoljubow"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bogoljubow Variation",
@@ -127,7 +162,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Ataque Paulsen",
             "de": "Angenommen: Läufergambit, Paulsen-Angriff",
             "fr": "Accepté: Gambit du fou, Attaque Paulsen",
-            "it": "Accettato: Gambetto dell'alfiere, Attacco Paulsen"
+            "it": "Accettato: Gambetto dell'alfiere, Attacco Paulsen",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Paulsen Akını",
+            "nl": "Aangenomen: Lopergambiet, Paulsenaanval",
+            "id": "Diterima: Gambit Gajah, Serangan Paulsen",
+            "vi": "Chấp nhận: Gambit Tượng, Tấn công Paulsen",
+            "pl": "Przyjęty: Gambit gońca, Atak Paulsen"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Paulsen Attack",
@@ -145,7 +185,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Defesa Bogoljubow",
             "de": "Angenommen: Läufergambit, Bogoljubow-Verteidigung",
             "fr": "Accepté: Gambit du fou, Défense Bogoljubow",
-            "it": "Accettato: Gambetto dell'alfiere, Difesa Bogoljubow"
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Bogoljubow",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Bogoljubow Savunması",
+            "nl": "Aangenomen: Lopergambiet, Bogoljubowverdediging",
+            "id": "Diterima: Gambit Gajah, Pertahanan Bogoljubow",
+            "vi": "Chấp nhận: Gambit Tượng, Phòng thủ Bogoljubow",
+            "pl": "Przyjęty: Gambit gońca, Obrona Bogoljubow"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bogoljubow Defense",
@@ -163,7 +208,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Variante Greco",
             "de": "Angenommen: Läufergambit, Greco-Variante",
             "fr": "Accepté: Gambit du fou, Variante Greco",
-            "it": "Accettato: Gambetto dell'alfiere, Variante Greco"
+            "it": "Accettato: Gambetto dell'alfiere, Variante Greco",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Greco Varyantı",
+            "nl": "Aangenomen: Lopergambiet, Grecovariant",
+            "id": "Diterima: Gambit Gajah, Variasi Greco",
+            "vi": "Chấp nhận: Gambit Tượng, Phương án Greco",
+            "pl": "Przyjęty: Gambit gońca, Wariant Greco"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Greco Variation",
@@ -181,7 +231,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Variante Boden",
             "de": "Angenommen: Läufergambit, Boden-Variante",
             "fr": "Accepté: Gambit du fou, Variante Boden",
-            "it": "Accettato: Gambetto dell'alfiere, Variante Boden"
+            "it": "Accettato: Gambetto dell'alfiere, Variante Boden",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Boden Varyantı",
+            "nl": "Aangenomen: Lopergambiet, Bodenvariant",
+            "id": "Diterima: Gambit Gajah, Variasi Boden",
+            "vi": "Chấp nhận: Gambit Tượng, Phương án Boden",
+            "pl": "Przyjęty: Gambit gońca, Wariant Boden"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Boden Variation",
@@ -199,7 +254,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Defesa Clássica",
             "de": "Angenommen: Läufergambit, Klassische Verteidigung",
             "fr": "Accepté: Gambit du fou, Défense classique",
-            "it": "Accettato: Gambetto dell'alfiere, Difesa classica"
+            "it": "Accettato: Gambetto dell'alfiere, Difesa classica",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Klasik Savunma",
+            "nl": "Aangenomen: Lopergambiet, Klassieke verdediging",
+            "id": "Diterima: Gambit Gajah, Pertahanan Klasik",
+            "vi": "Chấp nhận: Gambit Tượng, Phòng thủ cổ điển",
+            "pl": "Przyjęty: Gambit gońca, Obrona klasyczna"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Classical Defense",
@@ -217,7 +277,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Primeira Variante Jaenisch",
             "de": "Angenommen: Läufergambit, Erste Jaenisch-Variante",
             "fr": "Accepté: Gambit du fou, Première variante Jaenisch",
-            "it": "Accettato: Gambetto dell'alfiere, Prima variante Jaenisch"
+            "it": "Accettato: Gambetto dell'alfiere, Prima variante Jaenisch",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Birinci Jaenisch Varyantı",
+            "nl": "Aangenomen: Lopergambiet, Eerste Jaenisch-variant",
+            "id": "Diterima: Gambit Gajah, Variasi Jaenisch Pertama",
+            "vi": "Chấp nhận: Gambit Tượng, Phương án Jaenisch thứ nhất",
+            "pl": "Przyjęty: Gambit gońca, Wariant pierwszy Jaenischa"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, First Jaenisch Variation",
@@ -235,7 +300,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Contragambito Bryan",
             "de": "Angenommen: Läufergambit, Bryan-Gegengambit",
             "fr": "Accepté: Gambit du fou, Contre-gambit Bryan",
-            "it": "Accettato: Gambetto dell'alfiere, Controgambetto Bryan"
+            "it": "Accettato: Gambetto dell'alfiere, Controgambetto Bryan",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Bryan Karşı Gambiti",
+            "nl": "Aangenomen: Lopergambiet, Bryantegengambiet",
+            "id": "Diterima: Gambit Gajah, Gambit Balasan Bryan",
+            "vi": "Chấp nhận: Gambit Tượng, Phản gambit Bryan",
+            "pl": "Przyjęty: Gambit gońca, Kontrgambit Bryan"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bryan Countergambit",
@@ -253,7 +323,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Ataque Chigorin",
             "de": "Angenommen: Läufergambit, Chigorin's-Angriff",
             "fr": "Accepté: Gambit du fou, Attaque Chigorin's",
-            "it": "Accettato: Gambetto dell'alfiere, Attacco Chigorin's"
+            "it": "Accettato: Gambetto dell'alfiere, Attacco Chigorin's",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Chigorin's Akını",
+            "nl": "Aangenomen: Lopergambiet, Chigorin'saanval",
+            "id": "Diterima: Gambit Gajah, Serangan Chigorin's",
+            "vi": "Chấp nhận: Gambit Tượng, Tấn công Chigorin's",
+            "pl": "Przyjęty: Gambit gońca, Atak Chigorin's"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Chigorin's Attack",
@@ -271,7 +346,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Variante Cozio",
             "de": "Angenommen: Läufergambit, Cozio-Variante",
             "fr": "Accepté: Gambit du fou, Variante Cozio",
-            "it": "Accettato: Gambetto dell'alfiere, Variante Cozio"
+            "it": "Accettato: Gambetto dell'alfiere, Variante Cozio",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Cozio Varyantı",
+            "nl": "Aangenomen: Lopergambiet, Coziovariant",
+            "id": "Diterima: Gambit Gajah, Variasi Cozio",
+            "vi": "Chấp nhận: Gambit Tượng, Phương án Cozio",
+            "pl": "Przyjęty: Gambit gońca, Wariant Cozio"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Cozio Variation",
@@ -289,7 +369,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Variante Lopez",
             "de": "Angenommen: Läufergambit, Lopez-Variante",
             "fr": "Accepté: Gambit du fou, Variante Lopez",
-            "it": "Accettato: Gambetto dell'alfiere, Variante Lopez"
+            "it": "Accettato: Gambetto dell'alfiere, Variante Lopez",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Lopez Varyantı",
+            "nl": "Aangenomen: Lopergambiet, Lopezvariant",
+            "id": "Diterima: Gambit Gajah, Variasi Lopez",
+            "vi": "Chấp nhận: Gambit Tượng, Phương án Lopez",
+            "pl": "Przyjęty: Gambit gońca, Wariant Lopez"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Lopez Variation",
@@ -307,7 +392,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Ataque McDonnell",
             "de": "Angenommen: Läufergambit, McDonnell-Angriff",
             "fr": "Accepté: Gambit du fou, Attaque McDonnell",
-            "it": "Accettato: Gambetto dell'alfiere, Attacco McDonnell"
+            "it": "Accettato: Gambetto dell'alfiere, Attacco McDonnell",
+            "tr": "Kabul Edilmiş: Fil Gambiti, McDonnell Akını",
+            "nl": "Aangenomen: Lopergambiet, McDonnellaanval",
+            "id": "Diterima: Gambit Gajah, Serangan McDonnell",
+            "vi": "Chấp nhận: Gambit Tượng, Tấn công McDonnell",
+            "pl": "Przyjęty: Gambit gońca, Atak McDonnell"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, McDonnell Attack",
@@ -325,7 +415,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Ataque Grimm",
             "de": "Angenommen: Läufergambit, Grimm-Angriff",
             "fr": "Accepté: Gambit du fou, Attaque Grimm",
-            "it": "Accettato: Gambetto dell'alfiere, Attacco Grimm"
+            "it": "Accettato: Gambetto dell'alfiere, Attacco Grimm",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Grimm Akını",
+            "nl": "Aangenomen: Lopergambiet, Grimmaanval",
+            "id": "Diterima: Gambit Gajah, Serangan Grimm",
+            "vi": "Chấp nhận: Gambit Tượng, Tấn công Grimm",
+            "pl": "Przyjęty: Gambit gońca, Atak Grimm"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Grimm Attack",
@@ -343,7 +438,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Ataque McDonnell",
             "de": "Angenommen: Läufergambit, McDonnell-Angriff",
             "fr": "Accepté: Gambit du fou, Attaque McDonnell",
-            "it": "Accettato: Gambetto dell'alfiere, Attacco McDonnell"
+            "it": "Accettato: Gambetto dell'alfiere, Attacco McDonnell",
+            "tr": "Kabul Edilmiş: Fil Gambiti, McDonnell Akını",
+            "nl": "Aangenomen: Lopergambiet, McDonnellaanval",
+            "id": "Diterima: Gambit Gajah, Serangan McDonnell",
+            "vi": "Chấp nhận: Gambit Tượng, Tấn công McDonnell",
+            "pl": "Przyjęty: Gambit gońca, Atak McDonnell"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, McDonnell Attack",
@@ -361,7 +461,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Variante Fraser",
             "de": "Angenommen: Läufergambit, Fraser-Variante",
             "fr": "Accepté: Gambit du fou, Variante Fraser",
-            "it": "Accettato: Gambetto dell'alfiere, Variante Fraser"
+            "it": "Accettato: Gambetto dell'alfiere, Variante Fraser",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Fraser Varyantı",
+            "nl": "Aangenomen: Lopergambiet, Fraservariant",
+            "id": "Diterima: Gambit Gajah, Variasi Fraser",
+            "vi": "Chấp nhận: Gambit Tượng, Phương án Fraser",
+            "pl": "Przyjęty: Gambit gońca, Wariant Fraser"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Fraser Variation",
@@ -379,7 +484,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Defesa Clássica, Ataque Cozio",
             "de": "Angenommen: Läufergambit, Klassische Verteidigung, Cozio-Angriff",
             "fr": "Accepté: Gambit du fou, Défense classique, Attaque Cozio",
-            "it": "Accettato: Gambetto dell'alfiere, Difesa classica, Attacco Cozio"
+            "it": "Accettato: Gambetto dell'alfiere, Difesa classica, Attacco Cozio",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Klasik Savunma, Cozio Akını",
+            "nl": "Aangenomen: Lopergambiet, Klassieke verdediging, Cozioaanval",
+            "id": "Diterima: Gambit Gajah, Pertahanan Klasik, Serangan Cozio",
+            "vi": "Chấp nhận: Gambit Tượng, Phòng thủ cổ điển, Tấn công Cozio",
+            "pl": "Przyjęty: Gambit gońca, Obrona klasyczna, Atak Cozio"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Classical Defense, Cozio Attack",
@@ -397,7 +507,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Gambito Kieseritzky",
             "de": "Angenommen: Läufergambit, Kieseritzky-Gambit",
             "fr": "Accepté: Gambit du fou, Gambit Kieseritzky",
-            "it": "Accettato: Gambetto dell'alfiere, Gambetto Kieseritzky"
+            "it": "Accettato: Gambetto dell'alfiere, Gambetto Kieseritzky",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Kieseritzky Gambiti",
+            "nl": "Aangenomen: Lopergambiet, Kieseritzkygambiet",
+            "id": "Diterima: Gambit Gajah, Gambit Kieseritzky",
+            "vi": "Chấp nhận: Gambit Tượng, Gambit Kieseritzky",
+            "pl": "Przyjęty: Gambit gońca, Gambit Kieseritzky"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Kieseritzky Gambit",
@@ -415,7 +530,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Defesa Lopez",
             "de": "Angenommen: Läufergambit, Lopez-Verteidigung",
             "fr": "Accepté: Gambit du fou, Défense Lopez",
-            "it": "Accettato: Gambetto dell'alfiere, Difesa Lopez"
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Lopez",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Lopez Savunması",
+            "nl": "Aangenomen: Lopergambiet, Lopezverdediging",
+            "id": "Diterima: Gambit Gajah, Pertahanan Lopez",
+            "vi": "Chấp nhận: Gambit Tượng, Phòng thủ Lopez",
+            "pl": "Przyjęty: Gambit gońca, Obrona Lopez"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Lopez Defense",
@@ -433,7 +553,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Variante Bledow",
             "de": "Angenommen: Läufergambit, Bledow-Variante",
             "fr": "Accepté: Gambit du fou, Variante Bledow",
-            "it": "Accettato: Gambetto dell'alfiere, Variante Bledow"
+            "it": "Accettato: Gambetto dell'alfiere, Variante Bledow",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Bledow Varyantı",
+            "nl": "Aangenomen: Lopergambiet, Bledowvariant",
+            "id": "Diterima: Gambit Gajah, Variasi Bledow",
+            "vi": "Chấp nhận: Gambit Tượng, Phương án Bledow",
+            "pl": "Przyjęty: Gambit gońca, Wariant Bledow"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bledow Variation",
@@ -451,7 +576,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Contragambito Bledow",
             "de": "Angenommen: Läufergambit, Bledow-Gegengambit",
             "fr": "Accepté: Gambit du fou, Contre-gambit Bledow",
-            "it": "Accettato: Gambetto dell'alfiere, Controgambetto Bledow"
+            "it": "Accettato: Gambetto dell'alfiere, Controgambetto Bledow",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Bledow Karşı Gambiti",
+            "nl": "Aangenomen: Lopergambiet, Bledowtegengambiet",
+            "id": "Diterima: Gambit Gajah, Gambit Balasan Bledow",
+            "vi": "Chấp nhận: Gambit Tượng, Phản gambit Bledow",
+            "pl": "Przyjęty: Gambit gońca, Kontrgambit Bledow"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Bledow Countergambit",
@@ -469,7 +599,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Variante Boren-Svenonius",
             "de": "Angenommen: Läufergambit, Boren-Svenonius-Variante",
             "fr": "Accepté: Gambit du fou, Variante Boren-Svenonius",
-            "it": "Accettato: Gambetto dell'alfiere, Variante Boren-Svenonius"
+            "it": "Accettato: Gambetto dell'alfiere, Variante Boren-Svenonius",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Boren-Svenonius Varyantı",
+            "nl": "Aangenomen: Lopergambiet, Boren-Svenoniusvariant",
+            "id": "Diterima: Gambit Gajah, Variasi Boren-Svenonius",
+            "vi": "Chấp nhận: Gambit Tượng, Phương án Boren-Svenonius",
+            "pl": "Przyjęty: Gambit gońca, Wariant Boren-Svenonius"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Boren-Svenonius Variation",
@@ -487,7 +622,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Variante Anderssen",
             "de": "Angenommen: Läufergambit, Anderssen-Variante",
             "fr": "Accepté: Gambit du fou, Variante Anderssen",
-            "it": "Accettato: Gambetto dell'alfiere, Variante Anderssen"
+            "it": "Accettato: Gambetto dell'alfiere, Variante Anderssen",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Anderssen Varyantı",
+            "nl": "Aangenomen: Lopergambiet, Anderssenvariant",
+            "id": "Diterima: Gambit Gajah, Variasi Anderssen",
+            "vi": "Chấp nhận: Gambit Tượng, Phương án Anderssen",
+            "pl": "Przyjęty: Gambit gońca, Wariant Anderssen"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Anderssen Variation",
@@ -505,7 +645,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Gambito Gianutio",
             "de": "Angenommen: Läufergambit, Gianutio-Gambit",
             "fr": "Accepté: Gambit du fou, Gambit Gianutio",
-            "it": "Accettato: Gambetto dell'alfiere, Gambetto Gianutio"
+            "it": "Accettato: Gambetto dell'alfiere, Gambetto Gianutio",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Gianutio Gambiti",
+            "nl": "Aangenomen: Lopergambiet, Gianutiogambiet",
+            "id": "Diterima: Gambit Gajah, Gambit Gianutio",
+            "vi": "Chấp nhận: Gambit Tượng, Gambit Gianutio",
+            "pl": "Przyjęty: Gambit gońca, Gambit Gianutio"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Gianutio Gambit",
@@ -523,7 +668,12 @@
             "pt-PT": "Aceito: Gambito do Bispo, Defesa Anderssen",
             "de": "Angenommen: Läufergambit, Anderssen-Verteidigung",
             "fr": "Accepté: Gambit du fou, Défense Anderssen",
-            "it": "Accettato: Gambetto dell'alfiere, Difesa Anderssen"
+            "it": "Accettato: Gambetto dell'alfiere, Difesa Anderssen",
+            "tr": "Kabul Edilmiş: Fil Gambiti, Anderssen Savunması",
+            "nl": "Aangenomen: Lopergambiet, Anderssenverdediging",
+            "id": "Diterima: Gambit Gajah, Pertahanan Anderssen",
+            "vi": "Chấp nhận: Gambit Tượng, Phòng thủ Anderssen",
+            "pl": "Przyjęty: Gambit gońca, Obrona Anderssen"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Bishop's Gambit, Anderssen Defense",
@@ -542,7 +692,12 @@
         "pt-PT": "Recusado: Contragambito Falkbeer",
         "de": "Abgelehnt: Falkbeer-Gegengambit",
         "fr": "Refusé: Contre-gambit Falkbeer",
-        "it": "Rifiutato: Controgambetto Falkbeer"
+        "it": "Rifiutato: Controgambetto Falkbeer",
+        "tr": "Reddedilmiş: Falkbeer Karşı Gambiti",
+        "nl": "Geweigerd: Falkbeertegengambiet",
+        "id": "Ditolak: Gambit Balasan Falkbeer",
+        "vi": "Từ chối: Phản gambit Falkbeer",
+        "pl": "Odrzucony: Kontrgambit Falkbeer"
       },
       "lines": [
         {
@@ -556,7 +711,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer",
             "de": "Abgelehnt: Falkbeer-Gegengambit",
             "fr": "Refusé: Contre-gambit Falkbeer",
-            "it": "Rifiutato: Controgambetto Falkbeer"
+            "it": "Rifiutato: Controgambetto Falkbeer",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti",
+            "nl": "Geweigerd: Falkbeertegengambiet",
+            "id": "Ditolak: Gambit Balasan Falkbeer",
+            "vi": "Từ chối: Phản gambit Falkbeer",
+            "pl": "Odrzucony: Kontrgambit Falkbeer"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit",
@@ -574,7 +734,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Variante Milner-Barry",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Milner-Barry-Variante",
             "fr": "Refusé: Contre-gambit Falkbeer, Variante Milner-Barry",
-            "it": "Rifiutato: Controgambetto Falkbeer, Variante Milner-Barry"
+            "it": "Rifiutato: Controgambetto Falkbeer, Variante Milner-Barry",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Milner-Barry Varyantı",
+            "nl": "Geweigerd: Falkbeertegengambiet, Milner-Barryvariant",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Variasi Milner-Barry",
+            "vi": "Từ chối: Phản gambit Falkbeer, Phương án Milner-Barry",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Wariant Milner-Barry"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Milner-Barry Variation",
@@ -592,7 +757,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Ataque Blackburne",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Blackburne-Angriff",
             "fr": "Refusé: Contre-gambit Falkbeer, Attaque Blackburne",
-            "it": "Rifiutato: Controgambetto Falkbeer, Attacco Blackburne"
+            "it": "Rifiutato: Controgambetto Falkbeer, Attacco Blackburne",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Blackburne Akını",
+            "nl": "Geweigerd: Falkbeertegengambiet, Blackburneaanval",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Serangan Blackburne",
+            "vi": "Từ chối: Phản gambit Falkbeer, Tấn công Blackburne",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Atak Blackburne"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Blackburne Attack",
@@ -610,7 +780,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Hinrichsen",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Hinrichsen-Gambit",
             "fr": "Refusé: Contre-gambit Falkbeer, Gambit Hinrichsen",
-            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Hinrichsen"
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Hinrichsen",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Hinrichsen Gambiti",
+            "nl": "Geweigerd: Falkbeertegengambiet, Hinrichsengambiet",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Gambit Hinrichsen",
+            "vi": "Từ chối: Phản gambit Falkbeer, Gambit Hinrichsen",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Gambit Hinrichsen"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Hinrichsen Gambit",
@@ -628,7 +803,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Miles",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Miles-Gambit",
             "fr": "Refusé: Contre-gambit Falkbeer, Gambit Miles",
-            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Miles"
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Miles",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Miles Gambiti",
+            "nl": "Geweigerd: Falkbeertegengambiet, Milesgambiet",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Gambit Miles",
+            "vi": "Từ chối: Phản gambit Falkbeer, Gambit Miles",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Gambit Miles"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Miles Gambit",
@@ -646,7 +826,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Contragambito Nimzowitsch-Marshall",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Nimzowitsch-Marshall-Gegengambit",
             "fr": "Refusé: Contre-gambit Falkbeer, Contre-gambit Nimzowitsch-Marshall",
-            "it": "Rifiutato: Controgambetto Falkbeer, Controgambetto Nimzowitsch-Marshall"
+            "it": "Rifiutato: Controgambetto Falkbeer, Controgambetto Nimzowitsch-Marshall",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Nimzowitsch-Marshall Karşı Gambiti",
+            "nl": "Geweigerd: Falkbeertegengambiet, Nimzowitsch-Marshalltegengambiet",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Gambit Balasan Nimzowitsch-Marshall",
+            "vi": "Từ chối: Phản gambit Falkbeer, Phản gambit Nimzowitsch-Marshall",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Kontrgambit Nimzowitsch-Marshall"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit",
@@ -664,7 +849,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Pickler",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Pickler-Gambit",
             "fr": "Refusé: Contre-gambit Falkbeer, Gambit Pickler",
-            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Pickler"
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Pickler",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Pickler Gambiti",
+            "nl": "Geweigerd: Falkbeertegengambiet, Picklergambiet",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Gambit Pickler",
+            "vi": "Từ chối: Phản gambit Falkbeer, Gambit Pickler",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Gambit Pickler"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Pickler Gambit",
@@ -682,7 +872,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Linha Staunton",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Staunton-Abspiel",
             "fr": "Refusé: Contre-gambit Falkbeer, Ligne Staunton",
-            "it": "Rifiutato: Controgambetto Falkbeer, Linea Staunton"
+            "it": "Rifiutato: Controgambetto Falkbeer, Linea Staunton",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Staunton Hattı",
+            "nl": "Geweigerd: Falkbeertegengambiet, Stauntonlijn",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Lini Staunton",
+            "vi": "Từ chối: Phản gambit Falkbeer, Diễn biến Staunton",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Linia Staunton"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Staunton Line",
@@ -700,7 +895,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Ataque Anderssen",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Anderssen-Angriff",
             "fr": "Refusé: Contre-gambit Falkbeer, Attaque Anderssen",
-            "it": "Rifiutato: Controgambetto Falkbeer, Attacco Anderssen"
+            "it": "Rifiutato: Controgambetto Falkbeer, Attacco Anderssen",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Anderssen Akını",
+            "nl": "Geweigerd: Falkbeertegengambiet, Anderssenaanval",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Serangan Anderssen",
+            "vi": "Từ chối: Phản gambit Falkbeer, Tấn công Anderssen",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Atak Anderssen"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Anderssen Attack",
@@ -718,7 +918,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Variante Rubinstein",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Rubinstein-Variante",
             "fr": "Refusé: Contre-gambit Falkbeer, Variante Rubinstein",
-            "it": "Rifiutato: Controgambetto Falkbeer, Variante Rubinstein"
+            "it": "Rifiutato: Controgambetto Falkbeer, Variante Rubinstein",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Rubinstein Varyantı",
+            "nl": "Geweigerd: Falkbeertegengambiet, Rubinsteinvariant",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Variasi Rubinstein",
+            "vi": "Từ chối: Phản gambit Falkbeer, Phương án Rubinstein",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Wariant Rubinstein"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Rubinstein Variation",
@@ -736,7 +941,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit",
             "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek",
-            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek"
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Charousek Gambiti",
+            "nl": "Geweigerd: Falkbeertegengambiet, Charousekgambiet",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Gambit Charousek",
+            "vi": "Từ chối: Phản gambit Falkbeer, Gambit Charousek",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Gambit Charousek"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
@@ -754,7 +964,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek, Variante Keres",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit, Keres-Variante",
             "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek, Variante Keres",
-            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek, Variante Keres"
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek, Variante Keres",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Charousek Gambiti, Keres Varyantı",
+            "nl": "Geweigerd: Falkbeertegengambiet, Charousekgambiet, Keresvariant",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Gambit Charousek, Variasi Keres",
+            "vi": "Từ chối: Phản gambit Falkbeer, Gambit Charousek, Phương án Keres",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Gambit Charousek, Wariant Keres"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation",
@@ -772,7 +987,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek, Linha Antiga",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit, Altes Abspiel",
             "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek, Ancienne ligne",
-            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek, Vecchia linea"
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek, Vecchia linea",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Charousek Gambiti, Eski Hat",
+            "nl": "Geweigerd: Falkbeertegengambiet, Charousekgambiet, Oude lijn",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Gambit Charousek, Lini Lama",
+            "vi": "Từ chối: Phản gambit Falkbeer, Gambit Charousek, Diễn biến cũ",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Gambit Charousek, Linia stara"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Old Line",
@@ -790,7 +1010,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek Aceito",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Angenommenes Charousek-Gambit",
             "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek accepté",
-            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek accettato"
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek accettato",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Kabul Edilmiş Charousek Gambiti",
+            "nl": "Geweigerd: Falkbeertegengambiet, Charousekgambiet aangenomen",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Gambit Charousek Diterima",
+            "vi": "Từ chối: Phản gambit Falkbeer, Gambit Charousek chấp nhận",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Gambit Charousek przyjęty"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit Accepted",
@@ -808,7 +1033,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Variante Alapin",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Alapin-Variante",
             "fr": "Refusé: Contre-gambit Falkbeer, Variante Alapin",
-            "it": "Rifiutato: Controgambetto Falkbeer, Variante Alapin"
+            "it": "Rifiutato: Controgambetto Falkbeer, Variante Alapin",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Alapin Varyantı",
+            "nl": "Geweigerd: Falkbeertegengambiet, Alapinvariant",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Variasi Alapin",
+            "vi": "Từ chối: Phản gambit Falkbeer, Phương án Alapin",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Wariant Alapin"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Alapin Variation",
@@ -826,7 +1056,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek, Linha Principal",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit, Hauptvariante",
             "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek, Ligne principale",
-            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek, Linea principale"
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek, Linea principale",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Charousek Gambiti, Ana Hat",
+            "nl": "Geweigerd: Falkbeertegengambiet, Charousekgambiet, Hoofdvariant",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Gambit Charousek, Lini Utama",
+            "vi": "Từ chối: Phản gambit Falkbeer, Gambit Charousek, Phương án chính",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Gambit Charousek, Wariant główny"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Main Line",
@@ -844,7 +1079,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Variante Tarrasch",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Tarrasch-Variante",
             "fr": "Refusé: Contre-gambit Falkbeer, Variante Tarrasch",
-            "it": "Rifiutato: Controgambetto Falkbeer, Variante Tarrasch"
+            "it": "Rifiutato: Controgambetto Falkbeer, Variante Tarrasch",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Tarrasch Varyantı",
+            "nl": "Geweigerd: Falkbeertegengambiet, Tarraschvariant",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Variasi Tarrasch",
+            "vi": "Từ chối: Phản gambit Falkbeer, Phương án Tarrasch",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Wariant Tarrasch"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Tarrasch Variation",
@@ -862,7 +1102,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Gambito Charousek",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Gambit",
             "fr": "Refusé: Contre-gambit Falkbeer, Gambit Charousek",
-            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek"
+            "it": "Rifiutato: Controgambetto Falkbeer, Gambetto Charousek",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Charousek Gambiti",
+            "nl": "Geweigerd: Falkbeertegengambiet, Charousekgambiet",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Gambit Charousek",
+            "vi": "Từ chối: Phản gambit Falkbeer, Gambit Charousek",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Gambit Charousek"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
@@ -880,7 +1125,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Variante Charousek",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Charousek-Variante",
             "fr": "Refusé: Contre-gambit Falkbeer, Variante Charousek",
-            "it": "Rifiutato: Controgambetto Falkbeer, Variante Charousek"
+            "it": "Rifiutato: Controgambetto Falkbeer, Variante Charousek",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Charousek Varyantı",
+            "nl": "Geweigerd: Falkbeertegengambiet, Charousekvariant",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Variasi Charousek",
+            "vi": "Từ chối: Phản gambit Falkbeer, Phương án Charousek",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Wariant Charousek"
           },
           "eco": "C32",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Charousek Variation",
@@ -898,7 +1148,12 @@
             "pt-PT": "Recusado: Contragambito Falkbeer, Transferência Moderna",
             "de": "Abgelehnt: Falkbeer-Gegengambit, Moderner Übergang",
             "fr": "Refusé: Contre-gambit Falkbeer, Transfert moderne",
-            "it": "Rifiutato: Controgambetto Falkbeer, Passaggio moderno"
+            "it": "Rifiutato: Controgambetto Falkbeer, Passaggio moderno",
+            "tr": "Reddedilmiş: Falkbeer Karşı Gambiti, Modern Geçiş",
+            "nl": "Geweigerd: Falkbeertegengambiet, Moderne overgang",
+            "id": "Ditolak: Gambit Balasan Falkbeer, Peralihan Modern",
+            "vi": "Từ chối: Phản gambit Falkbeer, Chuyển thế hiện đại",
+            "pl": "Odrzucony: Kontrgambit Falkbeer, Nowoczesne przejście"
           },
           "eco": "C31",
           "opening": "King's Gambit Declined: Falkbeer Countergambit, Modern Transfer",
@@ -917,7 +1172,12 @@
         "pt-PT": "Aceito: Gambito Kieseritzky",
         "de": "Angenommen: Kieseritzky-Gambit",
         "fr": "Accepté: Gambit Kieseritzky",
-        "it": "Accettato: Gambetto Kieseritzky"
+        "it": "Accettato: Gambetto Kieseritzky",
+        "tr": "Kabul Edilmiş: Kieseritzky Gambiti",
+        "nl": "Aangenomen: Kieseritzkygambiet",
+        "id": "Diterima: Gambit Kieseritzky",
+        "vi": "Chấp nhận: Gambit Kieseritzky",
+        "pl": "Przyjęty: Gambit Kieseritzky"
       },
       "lines": [
         {
@@ -931,7 +1191,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky",
             "de": "Angenommen: Kieseritzky-Gambit",
             "fr": "Accepté: Gambit Kieseritzky",
-            "it": "Accettato: Gambetto Kieseritzky"
+            "it": "Accettato: Gambetto Kieseritzky",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti",
+            "nl": "Aangenomen: Kieseritzkygambiet",
+            "id": "Diterima: Gambit Kieseritzky",
+            "vi": "Chấp nhận: Gambit Kieseritzky",
+            "pl": "Przyjęty: Gambit Kieseritzky"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit",
@@ -949,7 +1214,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Paulsen",
             "de": "Angenommen: Kieseritzky-Gambit, Paulsen-Verteidigung",
             "fr": "Accepté: Gambit Kieseritzky, Défense Paulsen",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa Paulsen"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Paulsen",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Paulsen Savunması",
+            "nl": "Aangenomen: Kieseritzkygambiet, Paulsenverdediging",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Paulsen",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Paulsen",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona Paulsen"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense",
@@ -967,7 +1237,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Neumann",
             "de": "Angenommen: Kieseritzky-Gambit, Neumann-Verteidigung",
             "fr": "Accepté: Gambit Kieseritzky, Défense Neumann",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa Neumann"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Neumann",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Neumann Savunması",
+            "nl": "Aangenomen: Kieseritzkygambiet, Neumannverdediging",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Neumann",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Neumann",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona Neumann"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Neumann Defense",
@@ -985,7 +1260,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Berlim",
             "de": "Angenommen: Kieseritzky-Gambit, Berliner Verteidigung",
             "fr": "Accepté: Gambit Kieseritzky, Défense berlinoise",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa berlinese"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa berlinese",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Berlin Savunması",
+            "nl": "Aangenomen: Kieseritzkygambiet, Berlijnse verdediging",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Berlin",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Berlin",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona berlińska"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense",
@@ -1003,7 +1283,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Anderssen",
             "de": "Angenommen: Kieseritzky-Gambit, Anderssen-Verteidigung",
             "fr": "Accepté: Gambit Kieseritzky, Défense Anderssen",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa Anderssen"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Anderssen",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Anderssen Savunması",
+            "nl": "Aangenomen: Kieseritzkygambiet, Anderssenverdediging",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Anderssen",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Anderssen",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona Anderssen"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Anderssen Defense",
@@ -1021,7 +1306,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Gambito Rice",
             "de": "Angenommen: Kieseritzky-Gambit, Rice-Gambit",
             "fr": "Accepté: Gambit Kieseritzky, Gambit Rice",
-            "it": "Accettato: Gambetto Kieseritzky, Gambetto Rice"
+            "it": "Accettato: Gambetto Kieseritzky, Gambetto Rice",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Rice Gambiti",
+            "nl": "Aangenomen: Kieseritzkygambiet, Ricegambiet",
+            "id": "Diterima: Gambit Kieseritzky, Gambit Rice",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Gambit Rice",
+            "pl": "Przyjęty: Gambit Kieseritzky, Gambit Rice"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Rice Gambit",
@@ -1039,7 +1329,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Gambito Anderssen-Cordel",
             "de": "Angenommen: Kieseritzky-Gambit, Anderssen-Cordel-Gambit",
             "fr": "Accepté: Gambit Kieseritzky, Gambit Anderssen-Cordel",
-            "it": "Accettato: Gambetto Kieseritzky, Gambetto Anderssen-Cordel"
+            "it": "Accettato: Gambetto Kieseritzky, Gambetto Anderssen-Cordel",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Anderssen-Cordel Gambiti",
+            "nl": "Aangenomen: Kieseritzkygambiet, Anderssen-Cordelgambiet",
+            "id": "Diterima: Gambit Kieseritzky, Gambit Anderssen-Cordel",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Gambit Anderssen-Cordel",
+            "pl": "Przyjęty: Gambit Kieseritzky, Gambit Anderssen-Cordel"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit",
@@ -1057,7 +1352,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Paulsen Adiada",
             "de": "Angenommen: Kieseritzky-Gambit, Aufgeschobene Paulsen-Verteidigung",
             "fr": "Accepté: Gambit Kieseritzky, Défense Paulsen différée",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa Paulsen differita"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Paulsen differita",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Gecikmeli Paulsen Savunması",
+            "nl": "Aangenomen: Kieseritzkygambiet, Paulsenverdediging uitgesteld",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Paulsen Ditunda",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Paulsen hoãn lại",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona Paulsen odroczona"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense Deferred",
@@ -1075,7 +1375,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Berlim, Variante de Riviere",
             "de": "Angenommen: Kieseritzky-Gambit, Berliner Verteidigung, De-Riviere-Variante",
             "fr": "Accepté: Gambit Kieseritzky, Défense berlinoise, Variante de Rivière",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa berlinese, Variante de Rivière"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa berlinese, Variante de Rivière",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Berlin Savunması, de Riviere Varyantı",
+            "nl": "Aangenomen: Kieseritzkygambiet, Berlijnse verdediging, De Rivière-variant",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Berlin, Variasi de Riviere",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Berlin, Phương án de Riviere",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona berlińska, Wariant de Riviere'a"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, de Riviere Variation",
@@ -1093,7 +1398,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Berlim, Variante Rubinstein",
             "de": "Angenommen: Kieseritzky-Gambit, Berliner Verteidigung, Rubinstein-Variante",
             "fr": "Accepté: Gambit Kieseritzky, Défense berlinoise, Variante Rubinstein",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa berlinese, Variante Rubinstein"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa berlinese, Variante Rubinstein",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Berlin Savunması, Rubinstein Varyantı",
+            "nl": "Aangenomen: Kieseritzkygambiet, Berlijnse verdediging, Rubinsteinvariant",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Berlin, Variasi Rubinstein",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Berlin, Phương án Rubinstein",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona berlińska, Wariant Rubinstein"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, Rubinstein Variation",
@@ -1111,7 +1421,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Rosenthal",
             "de": "Angenommen: Kieseritzky-Gambit, Rosenthal-Verteidigung",
             "fr": "Accepté: Gambit Kieseritzky, Défense Rosenthal",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa Rosenthal"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Rosenthal",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Rosenthal Savunması",
+            "nl": "Aangenomen: Kieseritzkygambiet, Rosenthalverdediging",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Rosenthal",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Rosenthal",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona Rosenthal"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Rosenthal Defense",
@@ -1129,7 +1444,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Brentano",
             "de": "Angenommen: Kieseritzky-Gambit, Brentano-Verteidigung",
             "fr": "Accepté: Gambit Kieseritzky, Défense Brentano",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa Brentano"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Brentano",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Brentano Savunması",
+            "nl": "Aangenomen: Kieseritzkygambiet, Brentanoverdediging",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Brentano",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Brentano",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona Brentano"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense",
@@ -1147,7 +1467,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Brentano",
             "de": "Angenommen: Kieseritzky-Gambit, Brentano-Verteidigung",
             "fr": "Accepté: Gambit Kieseritzky, Défense Brentano",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa Brentano"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Brentano",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Brentano Savunması",
+            "nl": "Aangenomen: Kieseritzkygambiet, Brentanoverdediging",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Brentano",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Brentano",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona Brentano"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense",
@@ -1165,7 +1490,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Brentano, Variante Caro",
             "de": "Angenommen: Kieseritzky-Gambit, Brentano-Verteidigung, Caro-Variante",
             "fr": "Accepté: Gambit Kieseritzky, Défense Brentano, Variante Caro",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa Brentano, Variante Caro"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Brentano, Variante Caro",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Brentano Savunması, Caro Varyantı",
+            "nl": "Aangenomen: Kieseritzkygambiet, Brentanoverdediging, Carovariant",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Brentano, Variasi Caro",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Brentano, Phương án Caro",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona Brentano, Wariant Caro"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense, Caro Variation",
@@ -1183,7 +1513,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Defesa Kolisch",
             "de": "Angenommen: Kieseritzky-Gambit, Kolisch-Verteidigung",
             "fr": "Accepté: Gambit Kieseritzky, Défense Kolisch",
-            "it": "Accettato: Gambetto Kieseritzky, Difesa Kolisch"
+            "it": "Accettato: Gambetto Kieseritzky, Difesa Kolisch",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Kolisch Savunması",
+            "nl": "Aangenomen: Kieseritzkygambiet, Kolischverdediging",
+            "id": "Diterima: Gambit Kieseritzky, Pertahanan Kolisch",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Phòng thủ Kolisch",
+            "pl": "Przyjęty: Gambit Kieseritzky, Obrona Kolisch"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Kolisch Defense",
@@ -1201,7 +1536,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Chicote Longo",
             "de": "Angenommen: Kieseritzky-Gambit, Lange Peitsche",
             "fr": "Accepté: Gambit Kieseritzky, Long fouet",
-            "it": "Accettato: Gambetto Kieseritzky, Frusta lunga"
+            "it": "Accettato: Gambetto Kieseritzky, Frusta lunga",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Uzun Kırbaç",
+            "nl": "Aangenomen: Kieseritzkygambiet, Lange zweep",
+            "id": "Diterima: Gambit Kieseritzky, Cambuk Panjang",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Roi dài",
+            "pl": "Przyjęty: Gambit Kieseritzky, Długi bat"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Long Whip",
@@ -1219,7 +1559,12 @@
             "pt-PT": "Aceito: Gambito Kieseritzky, Gambito Cotter",
             "de": "Angenommen: Kieseritzky-Gambit, Cotter-Gambit",
             "fr": "Accepté: Gambit Kieseritzky, Gambit Cotter",
-            "it": "Accettato: Gambetto Kieseritzky, Gambetto Cotter"
+            "it": "Accettato: Gambetto Kieseritzky, Gambetto Cotter",
+            "tr": "Kabul Edilmiş: Kieseritzky Gambiti, Cotter Gambiti",
+            "nl": "Aangenomen: Kieseritzkygambiet, Cottergambiet",
+            "id": "Diterima: Gambit Kieseritzky, Gambit Cotter",
+            "vi": "Chấp nhận: Gambit Kieseritzky, Gambit Cotter",
+            "pl": "Przyjęty: Gambit Kieseritzky, Gambit Cotter"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky Gambit, Cotter Gambit",
@@ -1238,7 +1583,12 @@
         "pt-PT": "Aceito: Gambito Salvio",
         "de": "Angenommen: Salvio-Gambit",
         "fr": "Accepté: Gambit Salvio",
-        "it": "Accettato: Gambetto Salvio"
+        "it": "Accettato: Gambetto Salvio",
+        "tr": "Kabul Edilmiş: Salvio Gambiti",
+        "nl": "Aangenomen: Salviogambiet",
+        "id": "Diterima: Gambit Salvio",
+        "vi": "Chấp nhận: Gambit Salvio",
+        "pl": "Przyjęty: Gambit Salvio"
       },
       "lines": [
         {
@@ -1252,7 +1602,12 @@
             "pt-PT": "Aceito: Gambito Salvio",
             "de": "Angenommen: Salvio-Gambit",
             "fr": "Accepté: Gambit Salvio",
-            "it": "Accettato: Gambetto Salvio"
+            "it": "Accettato: Gambetto Salvio",
+            "tr": "Kabul Edilmiş: Salvio Gambiti",
+            "nl": "Aangenomen: Salviogambiet",
+            "id": "Diterima: Gambit Salvio",
+            "vi": "Chấp nhận: Gambit Salvio",
+            "pl": "Przyjęty: Gambit Salvio"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit",
@@ -1270,7 +1625,12 @@
             "pt-PT": "Aceito: Gambito Salvio, Variante Vienense",
             "de": "Angenommen: Salvio-Gambit, Wiener Variante",
             "fr": "Accepté: Gambit Salvio, Variante viennoise",
-            "it": "Accettato: Gambetto Salvio, Variante viennese"
+            "it": "Accettato: Gambetto Salvio, Variante viennese",
+            "tr": "Kabul Edilmiş: Salvio Gambiti, Viyana Varyantı",
+            "nl": "Aangenomen: Salviogambiet, Weense variant",
+            "id": "Diterima: Gambit Salvio, Variasi Wina",
+            "vi": "Chấp nhận: Gambit Salvio, Phương án Viên",
+            "pl": "Przyjęty: Gambit Salvio, Wariant wiedeński"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Viennese Variation",
@@ -1288,7 +1648,12 @@
             "pt-PT": "Aceito: Gambito Salvio, Defesa Santa Maria",
             "de": "Angenommen: Salvio-Gambit, Santa-Maria-Verteidigung",
             "fr": "Accepté: Gambit Salvio, Défense Santa Maria",
-            "it": "Accettato: Gambetto Salvio, Difesa Santa Maria"
+            "it": "Accettato: Gambetto Salvio, Difesa Santa Maria",
+            "tr": "Kabul Edilmiş: Salvio Gambiti, Santa Maria Savunması",
+            "nl": "Aangenomen: Salviogambiet, Santa Mariaverdediging",
+            "id": "Diterima: Gambit Salvio, Pertahanan Santa Maria",
+            "vi": "Chấp nhận: Gambit Salvio, Phòng thủ Santa Maria",
+            "pl": "Przyjęty: Gambit Salvio, Obrona Santa Maria"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Santa Maria Defense",
@@ -1306,7 +1671,12 @@
             "pt-PT": "Aceito: Gambito Salvio, Defesa Silberschmidt",
             "de": "Angenommen: Salvio-Gambit, Silberschmidt-Verteidigung",
             "fr": "Accepté: Gambit Salvio, Défense Silberschmidt",
-            "it": "Accettato: Gambetto Salvio, Difesa Silberschmidt"
+            "it": "Accettato: Gambetto Salvio, Difesa Silberschmidt",
+            "tr": "Kabul Edilmiş: Salvio Gambiti, Silberschmidt Savunması",
+            "nl": "Aangenomen: Salviogambiet, Silberschmidtverdediging",
+            "id": "Diterima: Gambit Salvio, Pertahanan Silberschmidt",
+            "vi": "Chấp nhận: Gambit Salvio, Phòng thủ Silberschmidt",
+            "pl": "Przyjęty: Gambit Salvio, Obrona Silberschmidt"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Silberschmidt Defense",
@@ -1324,7 +1694,12 @@
             "pt-PT": "Aceito: Gambito Salvio, Contra-ataque Anderssen",
             "de": "Angenommen: Salvio-Gambit, Anderssen-Gegenangriff",
             "fr": "Accepté: Gambit Salvio, Contre-attaque Anderssen",
-            "it": "Accettato: Gambetto Salvio, Contrattacco Anderssen"
+            "it": "Accettato: Gambetto Salvio, Contrattacco Anderssen",
+            "tr": "Kabul Edilmiş: Salvio Gambiti, Anderssen Karşı Akını",
+            "nl": "Aangenomen: Salviogambiet, Anderssentegenaanval",
+            "id": "Diterima: Gambit Salvio, Serangan Balik Anderssen",
+            "vi": "Chấp nhận: Gambit Salvio, Phản công Anderssen",
+            "pl": "Przyjęty: Gambit Salvio, Kontratak Anderssen"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Anderssen Counterattack",
@@ -1342,7 +1717,12 @@
             "pt-PT": "Aceito: Gambito Salvio, Gambito Cochrane",
             "de": "Angenommen: Salvio-Gambit, Cochrane-Gambit",
             "fr": "Accepté: Gambit Salvio, Gambit Cochrane",
-            "it": "Accettato: Gambetto Salvio, Gambetto Cochrane"
+            "it": "Accettato: Gambetto Salvio, Gambetto Cochrane",
+            "tr": "Kabul Edilmiş: Salvio Gambiti, Cochrane Gambiti",
+            "nl": "Aangenomen: Salviogambiet, Cochranegambiet",
+            "id": "Diterima: Gambit Salvio, Gambit Cochrane",
+            "vi": "Chấp nhận: Gambit Salvio, Gambit Cochrane",
+            "pl": "Przyjęty: Gambit Salvio, Gambit Cochrane"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Salvio Gambit, Cochrane Gambit",
@@ -1361,7 +1741,12 @@
         "pt-PT": "Recusado: Variante Clássica",
         "de": "Abgelehnt: Klassische Variante",
         "fr": "Refusé: Variante classique",
-        "it": "Rifiutato: Variante classica"
+        "it": "Rifiutato: Variante classica",
+        "tr": "Reddedilmiş: Klasik Varyant",
+        "nl": "Geweigerd: Klassieke variant",
+        "id": "Ditolak: Variasi Klasik",
+        "vi": "Từ chối: Phương án cổ điển",
+        "pl": "Odrzucony: Wariant klasyczny"
       },
       "lines": [
         {
@@ -1375,7 +1760,12 @@
             "pt-PT": "Recusado: Variante Clássica",
             "de": "Abgelehnt: Klassische Variante",
             "fr": "Refusé: Variante classique",
-            "it": "Rifiutato: Variante classica"
+            "it": "Rifiutato: Variante classica",
+            "tr": "Reddedilmiş: Klasik Varyant",
+            "nl": "Geweigerd: Klassieke variant",
+            "id": "Ditolak: Variasi Klasik",
+            "vi": "Từ chối: Phương án cổ điển",
+            "pl": "Odrzucony: Wariant klasyczny"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation",
@@ -1393,7 +1783,12 @@
             "pt-PT": "Recusado: Variante Clássica, Contragambito Rotlewi",
             "de": "Abgelehnt: Klassische Variante, Rotlewi-Gegengambit",
             "fr": "Refusé: Variante classique, Contre-gambit Rotlewi",
-            "it": "Rifiutato: Variante classica, Controgambetto Rotlewi"
+            "it": "Rifiutato: Variante classica, Controgambetto Rotlewi",
+            "tr": "Reddedilmiş: Klasik Varyant, Rotlewi Karşı Gambiti",
+            "nl": "Geweigerd: Klassieke variant, Rotlewitegengambiet",
+            "id": "Ditolak: Variasi Klasik, Gambit Balasan Rotlewi",
+            "vi": "Từ chối: Phương án cổ điển, Phản gambit Rotlewi",
+            "pl": "Odrzucony: Wariant klasyczny, Kontrgambit Rotlewi"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Rotlewi Countergambit",
@@ -1411,7 +1806,12 @@
             "pt-PT": "Recusado: Variante Clássica",
             "de": "Abgelehnt: Klassische Variante",
             "fr": "Refusé: Variante classique",
-            "it": "Rifiutato: Variante classica"
+            "it": "Rifiutato: Variante classica",
+            "tr": "Reddedilmiş: Klasik Varyant",
+            "nl": "Geweigerd: Klassieke variant",
+            "id": "Ditolak: Variasi Klasik",
+            "vi": "Từ chối: Phương án cổ điển",
+            "pl": "Odrzucony: Wariant klasyczny"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation",
@@ -1429,7 +1829,12 @@
             "pt-PT": "Recusado: Variante Clássica, Ataque Euwe",
             "de": "Abgelehnt: Klassische Variante, Euwe-Angriff",
             "fr": "Refusé: Variante classique, Attaque Euwe",
-            "it": "Rifiutato: Variante classica, Attacco Euwe"
+            "it": "Rifiutato: Variante classica, Attacco Euwe",
+            "tr": "Reddedilmiş: Klasik Varyant, Euwe Akını",
+            "nl": "Geweigerd: Klassieke variant, Euweaanval",
+            "id": "Ditolak: Variasi Klasik, Serangan Euwe",
+            "vi": "Từ chối: Phương án cổ điển, Tấn công Euwe",
+            "pl": "Odrzucony: Wariant klasyczny, Atak Euwe"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Euwe Attack",
@@ -1447,7 +1852,12 @@
             "pt-PT": "Recusado: Variante Clássica, Contragambito Rubinstein",
             "de": "Abgelehnt: Klassische Variante, Rubinstein-Gegengambit",
             "fr": "Refusé: Variante classique, Contre-gambit Rubinstein",
-            "it": "Rifiutato: Variante classica, Controgambetto Rubinstein"
+            "it": "Rifiutato: Variante classica, Controgambetto Rubinstein",
+            "tr": "Reddedilmiş: Klasik Varyant, Rubinstein Karşı Gambiti",
+            "nl": "Geweigerd: Klassieke variant, Rubinsteintegengambiet",
+            "id": "Ditolak: Variasi Klasik, Gambit Balasan Rubinstein",
+            "vi": "Từ chối: Phương án cổ điển, Phản gambit Rubinstein",
+            "pl": "Odrzucony: Wariant klasyczny, Kontrgambit Rubinstein"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Rubinstein Countergambit",
@@ -1465,7 +1875,12 @@
             "pt-PT": "Recusado: Variante Clássica, Ataque Walthoffen",
             "de": "Abgelehnt: Klassische Variante, Walthoffen-Angriff",
             "fr": "Refusé: Variante classique, Attaque Walthoffen",
-            "it": "Rifiutato: Variante classica, Attacco Walthoffen"
+            "it": "Rifiutato: Variante classica, Attacco Walthoffen",
+            "tr": "Reddedilmiş: Klasik Varyant, Walthoffen Akını",
+            "nl": "Geweigerd: Klassieke variant, Walthoffenaanval",
+            "id": "Ditolak: Variasi Klasik, Serangan Walthoffen",
+            "vi": "Từ chối: Phương án cổ điển, Tấn công Walthoffen",
+            "pl": "Odrzucony: Wariant klasyczny, Atak Walthoffen"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical Variation, Walthoffen Attack",
@@ -1484,7 +1899,12 @@
         "pt-PT": "Recusado: Contragambito Panteldakis",
         "de": "Abgelehnt: Panteldakis-Gegengambit",
         "fr": "Refusé: Contre-gambit Panteldakis",
-        "it": "Rifiutato: Controgambetto Panteldakis"
+        "it": "Rifiutato: Controgambetto Panteldakis",
+        "tr": "Reddedilmiş: Panteldakis Karşı Gambiti",
+        "nl": "Geweigerd: Panteldakistegengambiet",
+        "id": "Ditolak: Gambit Balasan Panteldakis",
+        "vi": "Từ chối: Phản gambit Panteldakis",
+        "pl": "Odrzucony: Kontrgambit Panteldakis"
       },
       "lines": [
         {
@@ -1498,7 +1918,12 @@
             "pt-PT": "Recusado: Contragambito Panteldakis",
             "de": "Abgelehnt: Panteldakis-Gegengambit",
             "fr": "Refusé: Contre-gambit Panteldakis",
-            "it": "Rifiutato: Controgambetto Panteldakis"
+            "it": "Rifiutato: Controgambetto Panteldakis",
+            "tr": "Reddedilmiş: Panteldakis Karşı Gambiti",
+            "nl": "Geweigerd: Panteldakistegengambiet",
+            "id": "Ditolak: Gambit Balasan Panteldakis",
+            "vi": "Từ chối: Phản gambit Panteldakis",
+            "pl": "Odrzucony: Kontrgambit Panteldakis"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit",
@@ -1516,7 +1941,12 @@
             "pt-PT": "Recusado: Contragambito Panteldakis, Defesa Schiller",
             "de": "Abgelehnt: Panteldakis-Gegengambit, Schiller's-Verteidigung",
             "fr": "Refusé: Contre-gambit Panteldakis, Défense Schiller's",
-            "it": "Rifiutato: Controgambetto Panteldakis, Difesa Schiller's"
+            "it": "Rifiutato: Controgambetto Panteldakis, Difesa Schiller's",
+            "tr": "Reddedilmiş: Panteldakis Karşı Gambiti, Schiller's Savunması",
+            "nl": "Geweigerd: Panteldakistegengambiet, Schiller'sverdediging",
+            "id": "Ditolak: Gambit Balasan Panteldakis, Pertahanan Schiller's",
+            "vi": "Từ chối: Phản gambit Panteldakis, Phòng thủ Schiller's",
+            "pl": "Odrzucony: Kontrgambit Panteldakis, Obrona Schiller's"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Schiller's Defense",
@@ -1534,7 +1964,12 @@
             "pt-PT": "Recusado: Contragambito Panteldakis, Variante Greco",
             "de": "Abgelehnt: Panteldakis-Gegengambit, Greco-Variante",
             "fr": "Refusé: Contre-gambit Panteldakis, Variante Greco",
-            "it": "Rifiutato: Controgambetto Panteldakis, Variante Greco"
+            "it": "Rifiutato: Controgambetto Panteldakis, Variante Greco",
+            "tr": "Reddedilmiş: Panteldakis Karşı Gambiti, Greco Varyantı",
+            "nl": "Geweigerd: Panteldakistegengambiet, Grecovariant",
+            "id": "Ditolak: Gambit Balasan Panteldakis, Variasi Greco",
+            "vi": "Từ chối: Phản gambit Panteldakis, Phương án Greco",
+            "pl": "Odrzucony: Kontrgambit Panteldakis, Wariant Greco"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Greco Variation",
@@ -1552,7 +1987,12 @@
             "pt-PT": "Recusado: Contragambito Panteldakis, Variante Simétrica",
             "de": "Abgelehnt: Panteldakis-Gegengambit, Symmetrische Variante",
             "fr": "Refusé: Contre-gambit Panteldakis, Variante symétrique",
-            "it": "Rifiutato: Controgambetto Panteldakis, Variante simmetrica"
+            "it": "Rifiutato: Controgambetto Panteldakis, Variante simmetrica",
+            "tr": "Reddedilmiş: Panteldakis Karşı Gambiti, Simetrik Varyant",
+            "nl": "Geweigerd: Panteldakistegengambiet, Symmetrische variant",
+            "id": "Ditolak: Gambit Balasan Panteldakis, Variasi Simetris",
+            "vi": "Từ chối: Phản gambit Panteldakis, Phương án đối xứng",
+            "pl": "Odrzucony: Kontrgambit Panteldakis, Wariant symetryczny"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Symmetrical Variation",
@@ -1570,7 +2010,12 @@
             "pt-PT": "Recusado: Contragambito Panteldakis, Linha Shirazi",
             "de": "Abgelehnt: Panteldakis-Gegengambit, Shirazi-Abspiel",
             "fr": "Refusé: Contre-gambit Panteldakis, Ligne Shirazi",
-            "it": "Rifiutato: Controgambetto Panteldakis, Linea Shirazi"
+            "it": "Rifiutato: Controgambetto Panteldakis, Linea Shirazi",
+            "tr": "Reddedilmiş: Panteldakis Karşı Gambiti, Shirazi Hattı",
+            "nl": "Geweigerd: Panteldakistegengambiet, Shirazilijn",
+            "id": "Ditolak: Gambit Balasan Panteldakis, Lini Shirazi",
+            "vi": "Từ chối: Phản gambit Panteldakis, Diễn biến Shirazi",
+            "pl": "Odrzucony: Kontrgambit Panteldakis, Linia Shirazi"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Shirazi Line",
@@ -1588,7 +2033,12 @@
             "pt-PT": "Recusado: Contragambito Panteldakis, Linha do Sacrifício de Peão",
             "de": "Abgelehnt: Panteldakis-Gegengambit, Bauernopfer-Abspiel",
             "fr": "Refusé: Contre-gambit Panteldakis, Ligne du sacrifice de pion",
-            "it": "Rifiutato: Controgambetto Panteldakis, Linea del sacrificio di pedone"
+            "it": "Rifiutato: Controgambetto Panteldakis, Linea del sacrificio di pedone",
+            "tr": "Reddedilmiş: Panteldakis Karşı Gambiti, Piyon Fedası Hattı",
+            "nl": "Geweigerd: Panteldakistegengambiet, Pionofferlijn",
+            "id": "Ditolak: Gambit Balasan Panteldakis, Lini Pengorbanan Bidak",
+            "vi": "Từ chối: Phản gambit Panteldakis, Diễn biến thí Tốt",
+            "pl": "Odrzucony: Kontrgambit Panteldakis, Linia ofiary piona"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Panteldakis Countergambit, Pawn Sacrifice Line",
@@ -1607,7 +2057,12 @@
         "pt-PT": "Aceito: Allgaier",
         "de": "Angenommen: Allgaier",
         "fr": "Accepté: Allgaier",
-        "it": "Accettato: Allgaier"
+        "it": "Accettato: Allgaier",
+        "tr": "Kabul Edilmiş: Allgaier",
+        "nl": "Aangenomen: Allgaier",
+        "id": "Diterima: Allgaier",
+        "vi": "Chấp nhận: Allgaier",
+        "pl": "Przyjęty: Allgaier"
       },
       "lines": [
         {
@@ -1621,7 +2076,12 @@
             "pt-PT": "Aceito: Allgaier, Defesa Schlechter",
             "de": "Angenommen: Allgaier, Schlechter-Verteidigung",
             "fr": "Accepté: Allgaier, Défense Schlechter",
-            "it": "Accettato: Allgaier, Difesa Schlechter"
+            "it": "Accettato: Allgaier, Difesa Schlechter",
+            "tr": "Kabul Edilmiş: Allgaier, Schlechter Savunması",
+            "nl": "Aangenomen: Allgaier, Schlechterverdediging",
+            "id": "Diterima: Allgaier, Pertahanan Schlechter",
+            "vi": "Chấp nhận: Allgaier, Phòng thủ Schlechter",
+            "pl": "Przyjęty: Allgaier, Obrona Schlechter"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Schlechter Defense",
@@ -1639,7 +2099,12 @@
             "pt-PT": "Aceito: Allgaier, Ataque Urusov",
             "de": "Angenommen: Allgaier, Urussow-Angriff",
             "fr": "Accepté: Allgaier, Attaque Ourousov",
-            "it": "Accettato: Allgaier, Attacco Urusov"
+            "it": "Accettato: Allgaier, Attacco Urusov",
+            "tr": "Kabul Edilmiş: Allgaier, Urusov Akını",
+            "nl": "Aangenomen: Allgaier, Urusovaanval",
+            "id": "Diterima: Allgaier, Serangan Urusov",
+            "vi": "Chấp nhận: Allgaier, Tấn công Urusov",
+            "pl": "Przyjęty: Allgaier, Atak Urusov"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Urusov Attack",
@@ -1657,7 +2122,12 @@
             "pt-PT": "Aceito: Allgaier, Gambito Blackburne",
             "de": "Angenommen: Allgaier, Blackburne-Gambit",
             "fr": "Accepté: Allgaier, Gambit Blackburne",
-            "it": "Accettato: Allgaier, Gambetto Blackburne"
+            "it": "Accettato: Allgaier, Gambetto Blackburne",
+            "tr": "Kabul Edilmiş: Allgaier, Blackburne Gambiti",
+            "nl": "Aangenomen: Allgaier, Blackburnegambiet",
+            "id": "Diterima: Allgaier, Gambit Blackburne",
+            "vi": "Chấp nhận: Allgaier, Gambit Blackburne",
+            "pl": "Przyjęty: Allgaier, Gambit Blackburne"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Blackburne Gambit",
@@ -1675,7 +2145,12 @@
             "pt-PT": "Aceito: Allgaier, Defesa Horny",
             "de": "Angenommen: Allgaier, Horny-Verteidigung",
             "fr": "Accepté: Allgaier, Défense Horny",
-            "it": "Accettato: Allgaier, Difesa Horny"
+            "it": "Accettato: Allgaier, Difesa Horny",
+            "tr": "Kabul Edilmiş: Allgaier, Horny Savunması",
+            "nl": "Aangenomen: Allgaier, Hornyverdediging",
+            "id": "Diterima: Allgaier, Pertahanan Horny",
+            "vi": "Chấp nhận: Allgaier, Phòng thủ Horny",
+            "pl": "Przyjęty: Allgaier, Obrona Horny"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Horny Defense",
@@ -1693,7 +2168,12 @@
             "pt-PT": "Aceito: Allgaier, Variante Cook",
             "de": "Angenommen: Allgaier, Cook-Variante",
             "fr": "Accepté: Allgaier, Variante Cook",
-            "it": "Accettato: Allgaier, Variante Cook"
+            "it": "Accettato: Allgaier, Variante Cook",
+            "tr": "Kabul Edilmiş: Allgaier, Cook Varyantı",
+            "nl": "Aangenomen: Allgaier, Cookvariant",
+            "id": "Diterima: Allgaier, Variasi Cook",
+            "vi": "Chấp nhận: Allgaier, Phương án Cook",
+            "pl": "Przyjęty: Allgaier, Wariant Cook"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier, Cook Variation",
@@ -1712,7 +2192,12 @@
         "pt-PT": "Aceito: Gambito Muzio Duplo",
         "de": "Angenommen: Doppeltes Muzio-Gambit",
         "fr": "Accepté: Double gambit Muzio",
-        "it": "Accettato: Doppio gambetto Muzio"
+        "it": "Accettato: Doppio gambetto Muzio",
+        "tr": "Kabul Edilmiş: Çifte Muzio Gambiti",
+        "nl": "Aangenomen: Dubbel Muzio-gambiet",
+        "id": "Diterima: Gambit Muzio Ganda",
+        "vi": "Chấp nhận: Gambit Muzio kép",
+        "pl": "Przyjęty: Gambit podwójny Muzio"
       },
       "lines": [
         {
@@ -1726,7 +2211,12 @@
             "pt-PT": "Aceito: Gambito Muzio Duplo, Gambito Young",
             "de": "Angenommen: Doppeltes Muzio-Gambit, Young-Gambit",
             "fr": "Accepté: Double gambit Muzio, Gambit Young",
-            "it": "Accettato: Doppio gambetto Muzio, Gambetto Young"
+            "it": "Accettato: Doppio gambetto Muzio, Gambetto Young",
+            "tr": "Kabul Edilmiş: Çifte Muzio Gambiti, Young Gambiti",
+            "nl": "Aangenomen: Dubbel Muzio-gambiet, Younggambiet",
+            "id": "Diterima: Gambit Muzio Ganda, Gambit Young",
+            "vi": "Chấp nhận: Gambit Muzio kép, Gambit Young",
+            "pl": "Przyjęty: Gambit podwójny Muzio, Gambit Young"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Young Gambit",
@@ -1744,7 +2234,12 @@
             "pt-PT": "Aceito: Gambito Muzio Duplo, Gambito Bello",
             "de": "Angenommen: Doppeltes Muzio-Gambit, Bello-Gambit",
             "fr": "Accepté: Double gambit Muzio, Gambit Bello",
-            "it": "Accettato: Doppio gambetto Muzio, Gambetto Bello"
+            "it": "Accettato: Doppio gambetto Muzio, Gambetto Bello",
+            "tr": "Kabul Edilmiş: Çifte Muzio Gambiti, Bello Gambiti",
+            "nl": "Aangenomen: Dubbel Muzio-gambiet, Bellogambiet",
+            "id": "Diterima: Gambit Muzio Ganda, Gambit Bello",
+            "vi": "Chấp nhận: Gambit Muzio kép, Gambit Bello",
+            "pl": "Przyjęty: Gambit podwójny Muzio, Gambit Bello"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Bello Gambit",
@@ -1762,7 +2257,12 @@
             "pt-PT": "Aceito: Gambito Muzio Duplo, Gambito Baldwin",
             "de": "Angenommen: Doppeltes Muzio-Gambit, Baldwin-Gambit",
             "fr": "Accepté: Double gambit Muzio, Gambit Baldwin",
-            "it": "Accettato: Doppio gambetto Muzio, Gambetto Baldwin"
+            "it": "Accettato: Doppio gambetto Muzio, Gambetto Baldwin",
+            "tr": "Kabul Edilmiş: Çifte Muzio Gambiti, Baldwin Gambiti",
+            "nl": "Aangenomen: Dubbel Muzio-gambiet, Baldwingambiet",
+            "id": "Diterima: Gambit Muzio Ganda, Gambit Baldwin",
+            "vi": "Chấp nhận: Gambit Muzio kép, Gambit Baldwin",
+            "pl": "Przyjęty: Gambit podwójny Muzio, Gambit Baldwin"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Baldwin Gambit",
@@ -1780,7 +2280,12 @@
             "pt-PT": "Aceito: Gambito Muzio Duplo",
             "de": "Angenommen: Doppeltes Muzio-Gambit",
             "fr": "Accepté: Double gambit Muzio",
-            "it": "Accettato: Doppio gambetto Muzio"
+            "it": "Accettato: Doppio gambetto Muzio",
+            "tr": "Kabul Edilmiş: Çifte Muzio Gambiti",
+            "nl": "Aangenomen: Dubbel Muzio-gambiet",
+            "id": "Diterima: Gambit Muzio Ganda",
+            "vi": "Chấp nhận: Gambit Muzio kép",
+            "pl": "Przyjęty: Gambit podwójny Muzio"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit",
@@ -1798,7 +2303,12 @@
             "pt-PT": "Aceito: Gambito Muzio Duplo, Defesa Paulsen",
             "de": "Angenommen: Doppeltes Muzio-Gambit, Paulsen-Verteidigung",
             "fr": "Accepté: Double gambit Muzio, Défense Paulsen",
-            "it": "Accettato: Doppio gambetto Muzio, Difesa Paulsen"
+            "it": "Accettato: Doppio gambetto Muzio, Difesa Paulsen",
+            "tr": "Kabul Edilmiş: Çifte Muzio Gambiti, Paulsen Savunması",
+            "nl": "Aangenomen: Dubbel Muzio-gambiet, Paulsenverdediging",
+            "id": "Diterima: Gambit Muzio Ganda, Pertahanan Paulsen",
+            "vi": "Chấp nhận: Gambit Muzio kép, Phòng thủ Paulsen",
+            "pl": "Przyjęty: Gambit podwójny Muzio, Obrona Paulsen"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Double Muzio Gambit, Paulsen Defense",
@@ -1817,7 +2327,12 @@
         "pt-PT": "Aceito: Gambito Muzio",
         "de": "Angenommen: Muzio-Gambit",
         "fr": "Accepté: Gambit Muzio",
-        "it": "Accettato: Gambetto Muzio"
+        "it": "Accettato: Gambetto Muzio",
+        "tr": "Kabul Edilmiş: Muzio Gambiti",
+        "nl": "Aangenomen: Muziogambiet",
+        "id": "Diterima: Gambit Muzio",
+        "vi": "Chấp nhận: Gambit Muzio",
+        "pl": "Przyjęty: Gambit Muzio"
       },
       "lines": [
         {
@@ -1831,7 +2346,12 @@
             "pt-PT": "Aceito: Gambito Muzio, Gambito Muzio Selvagem",
             "de": "Angenommen: Muzio-Gambit, Wildes Muzio-Gambit",
             "fr": "Accepté: Gambit Muzio, Gambit Muzio sauvage",
-            "it": "Accettato: Gambetto Muzio, Gambetto Muzio selvaggio"
+            "it": "Accettato: Gambetto Muzio, Gambetto Muzio selvaggio",
+            "tr": "Kabul Edilmiş: Muzio Gambiti, Vahşi Muzio Gambiti",
+            "nl": "Aangenomen: Muziogambiet, Wilde Muzio-gambiet",
+            "id": "Diterima: Gambit Muzio, Gambit Muzio Liar",
+            "vi": "Chấp nhận: Gambit Muzio, Gambit Muzio hoang dã",
+            "pl": "Przyjęty: Gambit Muzio, Gambit dziki Muzio"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Wild Muzio Gambit",
@@ -1849,7 +2369,12 @@
             "pt-PT": "Aceito: Gambito Muzio, Contra-ataque Kling e Horwitz",
             "de": "Angenommen: Muzio-Gambit, Kling-und-Horwitz-Gegenangriff",
             "fr": "Accepté: Gambit Muzio, Contre-attaque Kling et Horwitz",
-            "it": "Accettato: Gambetto Muzio, Contrattacco Kling e Horwitz"
+            "it": "Accettato: Gambetto Muzio, Contrattacco Kling e Horwitz",
+            "tr": "Kabul Edilmiş: Muzio Gambiti, Kling ve Horwitz Karşı Akını",
+            "nl": "Aangenomen: Muziogambiet, Kling en Horwitz-tegenaanval",
+            "id": "Diterima: Gambit Muzio, Serangan Balik Kling dan Horwitz",
+            "vi": "Chấp nhận: Gambit Muzio, Phản công Kling và Horwitz",
+            "pl": "Przyjęty: Gambit Muzio, Kontratak Klinga i Horwitza"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Kling and Horwitz Counterattack",
@@ -1867,7 +2392,12 @@
             "pt-PT": "Aceito: Gambito Muzio, Defesa Brentano",
             "de": "Angenommen: Muzio-Gambit, Brentano-Verteidigung",
             "fr": "Accepté: Gambit Muzio, Défense Brentano",
-            "it": "Accettato: Gambetto Muzio, Difesa Brentano"
+            "it": "Accettato: Gambetto Muzio, Difesa Brentano",
+            "tr": "Kabul Edilmiş: Muzio Gambiti, Brentano Savunması",
+            "nl": "Aangenomen: Muziogambiet, Brentanoverdediging",
+            "id": "Diterima: Gambit Muzio, Pertahanan Brentano",
+            "vi": "Chấp nhận: Gambit Muzio, Phòng thủ Brentano",
+            "pl": "Przyjęty: Gambit Muzio, Obrona Brentano"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Brentano Defense",
@@ -1885,7 +2415,12 @@
             "pt-PT": "Aceito: Gambito Muzio, Defesa Holloway",
             "de": "Angenommen: Muzio-Gambit, Holloway-Verteidigung",
             "fr": "Accepté: Gambit Muzio, Défense Holloway",
-            "it": "Accettato: Gambetto Muzio, Difesa Holloway"
+            "it": "Accettato: Gambetto Muzio, Difesa Holloway",
+            "tr": "Kabul Edilmiş: Muzio Gambiti, Holloway Savunması",
+            "nl": "Aangenomen: Muziogambiet, Hollowayverdediging",
+            "id": "Diterima: Gambit Muzio, Pertahanan Holloway",
+            "vi": "Chấp nhận: Gambit Muzio, Phòng thủ Holloway",
+            "pl": "Przyjęty: Gambit Muzio, Obrona Holloway"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Holloway Defense",
@@ -1903,7 +2438,12 @@
             "pt-PT": "Aceito: Gambito Muzio, Defesa Sarratt",
             "de": "Angenommen: Muzio-Gambit, Sarratt-Verteidigung",
             "fr": "Accepté: Gambit Muzio, Défense Sarratt",
-            "it": "Accettato: Gambetto Muzio, Difesa Sarratt"
+            "it": "Accettato: Gambetto Muzio, Difesa Sarratt",
+            "tr": "Kabul Edilmiş: Muzio Gambiti, Sarratt Savunması",
+            "nl": "Aangenomen: Muziogambiet, Sarrattverdediging",
+            "id": "Diterima: Gambit Muzio, Pertahanan Sarratt",
+            "vi": "Chấp nhận: Gambit Muzio, Phòng thủ Sarratt",
+            "pl": "Przyjęty: Gambit Muzio, Obrona Sarratt"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Muzio Gambit, Sarratt Defense",
@@ -1922,7 +2462,12 @@
         "pt-PT": "Aceito: Defesa Cunningham",
         "de": "Angenommen: Cunningham-Verteidigung",
         "fr": "Accepté: Défense Cunningham",
-        "it": "Accettato: Difesa Cunningham"
+        "it": "Accettato: Difesa Cunningham",
+        "tr": "Kabul Edilmiş: Cunningham Savunması",
+        "nl": "Aangenomen: Cunninghamverdediging",
+        "id": "Diterima: Pertahanan Cunningham",
+        "vi": "Chấp nhận: Phòng thủ Cunningham",
+        "pl": "Przyjęty: Obrona Cunningham"
       },
       "lines": [
         {
@@ -1936,7 +2481,12 @@
             "pt-PT": "Aceito: Defesa Cunningham",
             "de": "Angenommen: Cunningham-Verteidigung",
             "fr": "Accepté: Défense Cunningham",
-            "it": "Accettato: Difesa Cunningham"
+            "it": "Accettato: Difesa Cunningham",
+            "tr": "Kabul Edilmiş: Cunningham Savunması",
+            "nl": "Aangenomen: Cunninghamverdediging",
+            "id": "Diterima: Pertahanan Cunningham",
+            "vi": "Chấp nhận: Phòng thủ Cunningham",
+            "pl": "Przyjęty: Obrona Cunningham"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense",
@@ -1954,7 +2504,12 @@
             "pt-PT": "Aceito: Defesa Cunningham, Gambito Bertin",
             "de": "Angenommen: Cunningham-Verteidigung, Bertin-Gambit",
             "fr": "Accepté: Défense Cunningham, Gambit Bertin",
-            "it": "Accettato: Difesa Cunningham, Gambetto Bertin"
+            "it": "Accettato: Difesa Cunningham, Gambetto Bertin",
+            "tr": "Kabul Edilmiş: Cunningham Savunması, Bertin Gambiti",
+            "nl": "Aangenomen: Cunninghamverdediging, Bertingambiet",
+            "id": "Diterima: Pertahanan Cunningham, Gambit Bertin",
+            "vi": "Chấp nhận: Phòng thủ Cunningham, Gambit Bertin",
+            "pl": "Przyjęty: Obrona Cunningham, Gambit Bertin"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense, Bertin Gambit",
@@ -1972,7 +2527,12 @@
             "pt-PT": "Aceito: Defesa Cunningham, Gambito Bertin",
             "de": "Angenommen: Cunningham-Verteidigung, Bertin-Gambit",
             "fr": "Accepté: Défense Cunningham, Gambit Bertin",
-            "it": "Accettato: Difesa Cunningham, Gambetto Bertin"
+            "it": "Accettato: Difesa Cunningham, Gambetto Bertin",
+            "tr": "Kabul Edilmiş: Cunningham Savunması, Bertin Gambiti",
+            "nl": "Aangenomen: Cunninghamverdediging, Bertingambiet",
+            "id": "Diterima: Pertahanan Cunningham, Gambit Bertin",
+            "vi": "Chấp nhận: Phòng thủ Cunningham, Gambit Bertin",
+            "pl": "Przyjęty: Obrona Cunningham, Gambit Bertin"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense, Bertin Gambit",
@@ -1990,7 +2550,12 @@
             "pt-PT": "Aceito: Defesa Cunningham, Defesa McCormick",
             "de": "Angenommen: Cunningham-Verteidigung, McCormick-Verteidigung",
             "fr": "Accepté: Défense Cunningham, Défense McCormick",
-            "it": "Accettato: Difesa Cunningham, Difesa McCormick"
+            "it": "Accettato: Difesa Cunningham, Difesa McCormick",
+            "tr": "Kabul Edilmiş: Cunningham Savunması, McCormick Savunması",
+            "nl": "Aangenomen: Cunninghamverdediging, McCormickverdediging",
+            "id": "Diterima: Pertahanan Cunningham, Pertahanan McCormick",
+            "vi": "Chấp nhận: Phòng thủ Cunningham, Phòng thủ McCormick",
+            "pl": "Przyjęty: Obrona Cunningham, Obrona McCormick"
           },
           "eco": "C35",
           "opening": "King's Gambit Accepted: Cunningham Defense, McCormick Defense",
@@ -2009,7 +2574,12 @@
         "pt-PT": "Aceito: Kieseritzky",
         "de": "Angenommen: Kieseritzky",
         "fr": "Accepté: Kieseritzky",
-        "it": "Accettato: Kieseritzky"
+        "it": "Accettato: Kieseritzky",
+        "tr": "Kabul Edilmiş: Kieseritzky",
+        "nl": "Aangenomen: Kieseritzky",
+        "id": "Diterima: Kieseritzky",
+        "vi": "Chấp nhận: Kieseritzky",
+        "pl": "Przyjęty: Kieseritzky"
       },
       "lines": [
         {
@@ -2023,7 +2593,12 @@
             "pt-PT": "Aceito: Kieseritzky, Defesa Polerio",
             "de": "Angenommen: Kieseritzky, Polerio-Verteidigung",
             "fr": "Accepté: Kieseritzky, Défense Polerio",
-            "it": "Accettato: Kieseritzky, Difesa Polerio"
+            "it": "Accettato: Kieseritzky, Difesa Polerio",
+            "tr": "Kabul Edilmiş: Kieseritzky, Polerio Savunması",
+            "nl": "Aangenomen: Kieseritzky, Polerioverdediging",
+            "id": "Diterima: Kieseritzky, Pertahanan Polerio",
+            "vi": "Chấp nhận: Kieseritzky, Phòng thủ Polerio",
+            "pl": "Przyjęty: Kieseritzky, Obrona Polerio"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Polerio Defense",
@@ -2041,7 +2616,12 @@
             "pt-PT": "Aceito: Kieseritzky, Gambito Rice",
             "de": "Angenommen: Kieseritzky, Rice-Gambit",
             "fr": "Accepté: Kieseritzky, Gambit Rice",
-            "it": "Accettato: Kieseritzky, Gambetto Rice"
+            "it": "Accettato: Kieseritzky, Gambetto Rice",
+            "tr": "Kabul Edilmiş: Kieseritzky, Rice Gambiti",
+            "nl": "Aangenomen: Kieseritzky, Ricegambiet",
+            "id": "Diterima: Kieseritzky, Gambit Rice",
+            "vi": "Chấp nhận: Kieseritzky, Gambit Rice",
+            "pl": "Przyjęty: Kieseritzky, Gambit Rice"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Rice Gambit",
@@ -2059,7 +2639,12 @@
             "pt-PT": "Aceito: Kieseritzky, Defesa Salvio, Variante Cozio",
             "de": "Angenommen: Kieseritzky, Salvio-Verteidigung, Cozio-Variante",
             "fr": "Accepté: Kieseritzky, Défense Salvio, Variante Cozio",
-            "it": "Accettato: Kieseritzky, Difesa Salvio, Variante Cozio"
+            "it": "Accettato: Kieseritzky, Difesa Salvio, Variante Cozio",
+            "tr": "Kabul Edilmiş: Kieseritzky, Salvio Savunması, Cozio Varyantı",
+            "nl": "Aangenomen: Kieseritzky, Salvioverdediging, Coziovariant",
+            "id": "Diterima: Kieseritzky, Pertahanan Salvio, Variasi Cozio",
+            "vi": "Chấp nhận: Kieseritzky, Phòng thủ Salvio, Phương án Cozio",
+            "pl": "Przyjęty: Kieseritzky, Obrona Salvio, Wariant Cozio"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Salvio Defense, Cozio Variation",
@@ -2077,7 +2662,12 @@
             "pt-PT": "Aceito: Kieseritzky, Defesa do Chicote Longo, Variante Jaenisch",
             "de": "Angenommen: Kieseritzky, Lange-Peitsche-Verteidigung, Jaenisch-Variante",
             "fr": "Accepté: Kieseritzky, Défense du long fouet, Variante Jaenisch",
-            "it": "Accettato: Kieseritzky, Difesa della frusta lunga, Variante Jaenisch"
+            "it": "Accettato: Kieseritzky, Difesa della frusta lunga, Variante Jaenisch",
+            "tr": "Kabul Edilmiş: Kieseritzky, Uzun Kırbaç Savunması, Jaenisch Varyantı",
+            "nl": "Aangenomen: Kieseritzky, Lange zweep-verdediging, Jaenischvariant",
+            "id": "Diterima: Kieseritzky, Pertahanan Cambuk Panjang, Variasi Jaenisch",
+            "vi": "Chấp nhận: Kieseritzky, Phòng thủ roi dài, Phương án Jaenisch",
+            "pl": "Przyjęty: Kieseritzky, Obrona długiego bata, Wariant Jaenisch"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Kieseritzky, Long Whip Defense, Jaenisch Variation",
@@ -2096,7 +2686,12 @@
         "pt-PT": "Aceito: Gambito do Cavalo do Rei",
         "de": "Angenommen: Königsspringergambit",
         "fr": "Accepté: Gambit du cavalier-roi",
-        "it": "Accettato: Gambetto del cavallo di re"
+        "it": "Accettato: Gambetto del cavallo di re",
+        "tr": "Kabul Edilmiş: Şah Atı Gambiti",
+        "nl": "Aangenomen: Koningspaardgambiet",
+        "id": "Diterima: Gambit Kuda Raja",
+        "vi": "Chấp nhận: Gambit Mã Vua",
+        "pl": "Przyjęty: Gambit skoczka królewskiego"
       },
       "lines": [
         {
@@ -2110,7 +2705,12 @@
             "pt-PT": "Aceito: Gambito do Cavalo do Rei",
             "de": "Angenommen: Königsspringergambit",
             "fr": "Accepté: Gambit du cavalier-roi",
-            "it": "Accettato: Gambetto del cavallo di re"
+            "it": "Accettato: Gambetto del cavallo di re",
+            "tr": "Kabul Edilmiş: Şah Atı Gambiti",
+            "nl": "Aangenomen: Koningspaardgambiet",
+            "id": "Diterima: Gambit Kuda Raja",
+            "vi": "Chấp nhận: Gambit Mã Vua",
+            "pl": "Przyjęty: Gambit skoczka królewskiego"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -2128,7 +2728,12 @@
             "pt-PT": "Aceito: Gambito do Cavalo do Rei",
             "de": "Angenommen: Königsspringergambit",
             "fr": "Accepté: Gambit du cavalier-roi",
-            "it": "Accettato: Gambetto del cavallo di re"
+            "it": "Accettato: Gambetto del cavallo di re",
+            "tr": "Kabul Edilmiş: Şah Atı Gambiti",
+            "nl": "Aangenomen: Koningspaardgambiet",
+            "id": "Diterima: Gambit Kuda Raja",
+            "vi": "Chấp nhận: Gambit Mã Vua",
+            "pl": "Przyjęty: Gambit skoczka królewskiego"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -2146,7 +2751,12 @@
             "pt-PT": "Aceito: Gambito do Cavalo do Rei",
             "de": "Angenommen: Königsspringergambit",
             "fr": "Accepté: Gambit du cavalier-roi",
-            "it": "Accettato: Gambetto del cavallo di re"
+            "it": "Accettato: Gambetto del cavallo di re",
+            "tr": "Kabul Edilmiş: Şah Atı Gambiti",
+            "nl": "Aangenomen: Koningspaardgambiet",
+            "id": "Diterima: Gambit Kuda Raja",
+            "vi": "Chấp nhận: Gambit Mã Vua",
+            "pl": "Przyjęty: Gambit skoczka królewskiego"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -2164,7 +2774,12 @@
             "pt-PT": "Aceito: Gambito do Cavalo do Rei",
             "de": "Angenommen: Königsspringergambit",
             "fr": "Accepté: Gambit du cavalier-roi",
-            "it": "Accettato: Gambetto del cavallo di re"
+            "it": "Accettato: Gambetto del cavallo di re",
+            "tr": "Kabul Edilmiş: Şah Atı Gambiti",
+            "nl": "Aangenomen: Koningspaardgambiet",
+            "id": "Diterima: Gambit Kuda Raja",
+            "vi": "Chấp nhận: Gambit Mã Vua",
+            "pl": "Przyjęty: Gambit skoczka królewskiego"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: King's Knight's Gambit",
@@ -2183,7 +2798,12 @@
         "pt-PT": "Aceito: Gambito Rosentreter",
         "de": "Angenommen: Rosentreter-Gambit",
         "fr": "Accepté: Gambit Rosentreter",
-        "it": "Accettato: Gambetto Rosentreter"
+        "it": "Accettato: Gambetto Rosentreter",
+        "tr": "Kabul Edilmiş: Rosentreter Gambiti",
+        "nl": "Aangenomen: Rosentretergambiet",
+        "id": "Diterima: Gambit Rosentreter",
+        "vi": "Chấp nhận: Gambit Rosentreter",
+        "pl": "Przyjęty: Gambit Rosentreter"
       },
       "lines": [
         {
@@ -2197,7 +2817,12 @@
             "pt-PT": "Aceito: Gambito Rosentreter",
             "de": "Angenommen: Rosentreter-Gambit",
             "fr": "Accepté: Gambit Rosentreter",
-            "it": "Accettato: Gambetto Rosentreter"
+            "it": "Accettato: Gambetto Rosentreter",
+            "tr": "Kabul Edilmiş: Rosentreter Gambiti",
+            "nl": "Aangenomen: Rosentretergambiet",
+            "id": "Diterima: Gambit Rosentreter",
+            "vi": "Chấp nhận: Gambit Rosentreter",
+            "pl": "Przyjęty: Gambit Rosentreter"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit",
@@ -2215,7 +2840,12 @@
             "pt-PT": "Aceito: Gambito Rosentreter, Variante Testa",
             "de": "Angenommen: Rosentreter-Gambit, Testa-Variante",
             "fr": "Accepté: Gambit Rosentreter, Variante Testa",
-            "it": "Accettato: Gambetto Rosentreter, Variante Testa"
+            "it": "Accettato: Gambetto Rosentreter, Variante Testa",
+            "tr": "Kabul Edilmiş: Rosentreter Gambiti, Testa Varyantı",
+            "nl": "Aangenomen: Rosentretergambiet, Testavariant",
+            "id": "Diterima: Gambit Rosentreter, Variasi Testa",
+            "vi": "Chấp nhận: Gambit Rosentreter, Phương án Testa",
+            "pl": "Przyjęty: Gambit Rosentreter, Wariant Testa"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit, Testa Variation",
@@ -2233,7 +2863,12 @@
             "pt-PT": "Aceito: Gambito Rosentreter, Gambito Sörensen",
             "de": "Angenommen: Rosentreter-Gambit, Sörensen-Gambit",
             "fr": "Accepté: Gambit Rosentreter, Gambit Sörensen",
-            "it": "Accettato: Gambetto Rosentreter, Gambetto Sörensen"
+            "it": "Accettato: Gambetto Rosentreter, Gambetto Sörensen",
+            "tr": "Kabul Edilmiş: Rosentreter Gambiti, Sörensen Gambiti",
+            "nl": "Aangenomen: Rosentretergambiet, Sörensengambiet",
+            "id": "Diterima: Gambit Rosentreter, Gambit Sörensen",
+            "vi": "Chấp nhận: Gambit Rosentreter, Gambit Sörensen",
+            "pl": "Przyjęty: Gambit Rosentreter, Gambit Sörensen"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit, Sörensen Gambit",
@@ -2251,7 +2886,12 @@
             "pt-PT": "Aceito: Gambito Rosentreter, Gambito Bird",
             "de": "Angenommen: Rosentreter-Gambit, Bird-Gambit",
             "fr": "Accepté: Gambit Rosentreter, Gambit Bird",
-            "it": "Accettato: Gambetto Rosentreter, Gambetto Bird"
+            "it": "Accettato: Gambetto Rosentreter, Gambetto Bird",
+            "tr": "Kabul Edilmiş: Rosentreter Gambiti, Bird Gambiti",
+            "nl": "Aangenomen: Rosentretergambiet, Birdgambiet",
+            "id": "Diterima: Gambit Rosentreter, Gambit Bird",
+            "vi": "Chấp nhận: Gambit Rosentreter, Gambit Bird",
+            "pl": "Przyjęty: Gambit Rosentreter, Gambit Bird"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Rosentreter Gambit, Bird Gambit",
@@ -2270,7 +2910,12 @@
         "pt-PT": "Recusado: Clássica",
         "de": "Abgelehnt: Klassisch",
         "fr": "Refusé: Classique",
-        "it": "Rifiutato: Classica"
+        "it": "Rifiutato: Classica",
+        "tr": "Reddedilmiş: klasik",
+        "nl": "Geweigerd: klassiek",
+        "id": "Ditolak: klasik",
+        "vi": "Từ chối: cờ tiêu chuẩn",
+        "pl": "Odrzucony: klasyczne"
       },
       "lines": [
         {
@@ -2284,7 +2929,12 @@
             "pt-PT": "Recusado: Clássica, Variante Hanham",
             "de": "Abgelehnt: Klassisch, Hanham-Variante",
             "fr": "Refusé: Classique, Variante Hanham",
-            "it": "Rifiutato: Classica, Variante Hanham"
+            "it": "Rifiutato: Classica, Variante Hanham",
+            "tr": "Reddedilmiş: klasik, Hanham Varyantı",
+            "nl": "Geweigerd: klassiek, Hanhamvariant",
+            "id": "Ditolak: klasik, Variasi Hanham",
+            "vi": "Từ chối: cờ tiêu chuẩn, Phương án Hanham",
+            "pl": "Odrzucony: klasyczne, Wariant Hanham"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Hanham Variation",
@@ -2302,7 +2952,12 @@
             "pt-PT": "Recusado: Clássica, Variante Réti",
             "de": "Abgelehnt: Klassisch, Réti-Variante",
             "fr": "Refusé: Classique, Variante Réti",
-            "it": "Rifiutato: Classica, Variante Réti"
+            "it": "Rifiutato: Classica, Variante Réti",
+            "tr": "Reddedilmiş: klasik, Réti Varyantı",
+            "nl": "Geweigerd: klassiek, Rétivariant",
+            "id": "Ditolak: klasik, Variasi Réti",
+            "vi": "Từ chối: cờ tiêu chuẩn, Phương án Réti",
+            "pl": "Odrzucony: klasyczne, Wariant Réti"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Réti Variation",
@@ -2320,7 +2975,12 @@
             "pt-PT": "Recusado: Clássica, Variante Soldatenkov",
             "de": "Abgelehnt: Klassisch, Soldatenkov-Variante",
             "fr": "Refusé: Classique, Variante Soldatenkov",
-            "it": "Rifiutato: Classica, Variante Soldatenkov"
+            "it": "Rifiutato: Classica, Variante Soldatenkov",
+            "tr": "Reddedilmiş: klasik, Soldatenkov Varyantı",
+            "nl": "Geweigerd: klassiek, Soldatenkovvariant",
+            "id": "Ditolak: klasik, Variasi Soldatenkov",
+            "vi": "Từ chối: cờ tiêu chuẩn, Phương án Soldatenkov",
+            "pl": "Odrzucony: klasyczne, Wariant Soldatenkov"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Soldatenkov Variation",
@@ -2338,7 +2998,12 @@
             "pt-PT": "Recusado: Clássica, Variante Svenonius",
             "de": "Abgelehnt: Klassisch, Svenonius-Variante",
             "fr": "Refusé: Classique, Variante Svenonius",
-            "it": "Rifiutato: Classica, Variante Svenonius"
+            "it": "Rifiutato: Classica, Variante Svenonius",
+            "tr": "Reddedilmiş: klasik, Svenonius Varyantı",
+            "nl": "Geweigerd: klassiek, Svenoniusvariant",
+            "id": "Ditolak: klasik, Variasi Svenonius",
+            "vi": "Từ chối: cờ tiêu chuẩn, Phương án Svenonius",
+            "pl": "Odrzucony: klasyczne, Wariant Svenonius"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Classical, Svenonius Variation",
@@ -2357,7 +3022,12 @@
         "pt-PT": "Aceito: Gambito Allgaier",
         "de": "Angenommen: Allgaier-Gambit",
         "fr": "Accepté: Gambit Allgaier",
-        "it": "Accettato: Gambetto Allgaier"
+        "it": "Accettato: Gambetto Allgaier",
+        "tr": "Kabul Edilmiş: Allgaier Gambiti",
+        "nl": "Aangenomen: Allgaiergambiet",
+        "id": "Diterima: Gambit Allgaier",
+        "vi": "Chấp nhận: Gambit Allgaier",
+        "pl": "Przyjęty: Gambit Allgaier"
       },
       "lines": [
         {
@@ -2371,7 +3041,12 @@
             "pt-PT": "Aceito: Gambito Allgaier",
             "de": "Angenommen: Allgaier-Gambit",
             "fr": "Accepté: Gambit Allgaier",
-            "it": "Accettato: Gambetto Allgaier"
+            "it": "Accettato: Gambetto Allgaier",
+            "tr": "Kabul Edilmiş: Allgaier Gambiti",
+            "nl": "Aangenomen: Allgaiergambiet",
+            "id": "Diterima: Gambit Allgaier",
+            "vi": "Chấp nhận: Gambit Allgaier",
+            "pl": "Przyjęty: Gambit Allgaier"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier Gambit",
@@ -2389,7 +3064,12 @@
             "pt-PT": "Aceito: Gambito Allgaier, Ataque Urusov",
             "de": "Angenommen: Allgaier-Gambit, Urussow-Angriff",
             "fr": "Accepté: Gambit Allgaier, Attaque Ourousov",
-            "it": "Accettato: Gambetto Allgaier, Attacco Urusov"
+            "it": "Accettato: Gambetto Allgaier, Attacco Urusov",
+            "tr": "Kabul Edilmiş: Allgaier Gambiti, Urusov Akını",
+            "nl": "Aangenomen: Allgaiergambiet, Urusovaanval",
+            "id": "Diterima: Gambit Allgaier, Serangan Urusov",
+            "vi": "Chấp nhận: Gambit Allgaier, Tấn công Urusov",
+            "pl": "Przyjęty: Gambit Allgaier, Atak Urusov"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier Gambit, Urusov Attack",
@@ -2407,7 +3087,12 @@
             "pt-PT": "Aceito: Gambito Allgaier, Ataque Thorold",
             "de": "Angenommen: Allgaier-Gambit, Thorold-Angriff",
             "fr": "Accepté: Gambit Allgaier, Attaque Thorold",
-            "it": "Accettato: Gambetto Allgaier, Attacco Thorold"
+            "it": "Accettato: Gambetto Allgaier, Attacco Thorold",
+            "tr": "Kabul Edilmiş: Allgaier Gambiti, Thorold Akını",
+            "nl": "Aangenomen: Allgaiergambiet, Thoroldaanval",
+            "id": "Diterima: Gambit Allgaier, Serangan Thorold",
+            "vi": "Chấp nhận: Gambit Allgaier, Tấn công Thorold",
+            "pl": "Przyjęty: Gambit Allgaier, Atak Thorold"
           },
           "eco": "C39",
           "opening": "King's Gambit Accepted: Allgaier Gambit, Thorold Attack",
@@ -2426,7 +3111,12 @@
         "pt-PT": "Aceito: Defesa Fischer",
         "de": "Angenommen: Fischer-Verteidigung",
         "fr": "Accepté: Défense Fischer",
-        "it": "Accettato: Difesa Fischer"
+        "it": "Accettato: Difesa Fischer",
+        "tr": "Kabul Edilmiş: Fischer Savunması",
+        "nl": "Aangenomen: Fischerverdediging",
+        "id": "Diterima: Pertahanan Fischer",
+        "vi": "Chấp nhận: Phòng thủ Fischer",
+        "pl": "Przyjęty: Obrona Fischer"
       },
       "lines": [
         {
@@ -2440,7 +3130,12 @@
             "pt-PT": "Aceito: Defesa Fischer",
             "de": "Angenommen: Fischer-Verteidigung",
             "fr": "Accepté: Défense Fischer",
-            "it": "Accettato: Difesa Fischer"
+            "it": "Accettato: Difesa Fischer",
+            "tr": "Kabul Edilmiş: Fischer Savunması",
+            "nl": "Aangenomen: Fischerverdediging",
+            "id": "Diterima: Pertahanan Fischer",
+            "vi": "Chấp nhận: Phòng thủ Fischer",
+            "pl": "Przyjęty: Obrona Fischer"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Fischer Defense",
@@ -2458,7 +3153,12 @@
             "pt-PT": "Aceito: Defesa Fischer, Gambito Schulder",
             "de": "Angenommen: Fischer-Verteidigung, Schulder-Gambit",
             "fr": "Accepté: Défense Fischer, Gambit Schulder",
-            "it": "Accettato: Difesa Fischer, Gambetto Schulder"
+            "it": "Accettato: Difesa Fischer, Gambetto Schulder",
+            "tr": "Kabul Edilmiş: Fischer Savunması, Schulder Gambiti",
+            "nl": "Aangenomen: Fischerverdediging, Schuldergambiet",
+            "id": "Diterima: Pertahanan Fischer, Gambit Schulder",
+            "vi": "Chấp nhận: Phòng thủ Fischer, Gambit Schulder",
+            "pl": "Przyjęty: Obrona Fischer, Gambit Schulder"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Fischer Defense, Schulder Gambit",
@@ -2476,7 +3176,12 @@
             "pt-PT": "Aceito: Defesa Fischer, Variante Espanhola",
             "de": "Angenommen: Fischer-Verteidigung, Spanische Variante",
             "fr": "Accepté: Défense Fischer, Variante espagnole",
-            "it": "Accettato: Difesa Fischer, Variante spagnola"
+            "it": "Accettato: Difesa Fischer, Variante spagnola",
+            "tr": "Kabul Edilmiş: Fischer Savunması, İspanyol Varyantı",
+            "nl": "Aangenomen: Fischerverdediging, Spaanse variant",
+            "id": "Diterima: Pertahanan Fischer, Variasi Spanyol",
+            "vi": "Chấp nhận: Phòng thủ Fischer, Phương án Tây Ban Nha",
+            "pl": "Przyjęty: Obrona Fischer, Wariant hiszpański"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Fischer Defense, Spanish Variation",
@@ -2495,7 +3200,12 @@
         "pt-PT": "Recusado: Variante Norwalde",
         "de": "Abgelehnt: Norwalde-Variante",
         "fr": "Refusé: Variante Norwalde",
-        "it": "Rifiutato: Variante Norwalde"
+        "it": "Rifiutato: Variante Norwalde",
+        "tr": "Reddedilmiş: Norwalde Varyantı",
+        "nl": "Geweigerd: Norwaldevariant",
+        "id": "Ditolak: Variasi Norwalde",
+        "vi": "Từ chối: Phương án Norwalde",
+        "pl": "Odrzucony: Wariant Norwalde"
       },
       "lines": [
         {
@@ -2509,7 +3219,12 @@
             "pt-PT": "Recusado: Variante Norwalde",
             "de": "Abgelehnt: Norwalde-Variante",
             "fr": "Refusé: Variante Norwalde",
-            "it": "Rifiutato: Variante Norwalde"
+            "it": "Rifiutato: Variante Norwalde",
+            "tr": "Reddedilmiş: Norwalde Varyantı",
+            "nl": "Geweigerd: Norwaldevariant",
+            "id": "Ditolak: Variasi Norwalde",
+            "vi": "Từ chối: Phương án Norwalde",
+            "pl": "Odrzucony: Wariant Norwalde"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Norwalde Variation",
@@ -2527,7 +3242,12 @@
             "pt-PT": "Recusado: Variante Norwalde, Gambito Bücker",
             "de": "Abgelehnt: Norwalde-Variante, Bücker-Gambit",
             "fr": "Refusé: Variante Norwalde, Gambit Bücker",
-            "it": "Rifiutato: Variante Norwalde, Gambetto Bücker"
+            "it": "Rifiutato: Variante Norwalde, Gambetto Bücker",
+            "tr": "Reddedilmiş: Norwalde Varyantı, Bücker Gambiti",
+            "nl": "Geweigerd: Norwaldevariant, Bückergambiet",
+            "id": "Ditolak: Variasi Norwalde, Gambit Bücker",
+            "vi": "Từ chối: Phương án Norwalde, Gambit Bücker",
+            "pl": "Odrzucony: Wariant Norwalde, Gambit Bücker"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Norwalde Variation, Bücker Gambit",
@@ -2545,7 +3265,12 @@
             "pt-PT": "Recusado: Variante Norwalde, Variante Schubert",
             "de": "Abgelehnt: Norwalde-Variante, Schubert-Variante",
             "fr": "Refusé: Variante Norwalde, Variante Schubert",
-            "it": "Rifiutato: Variante Norwalde, Variante Schubert"
+            "it": "Rifiutato: Variante Norwalde, Variante Schubert",
+            "tr": "Reddedilmiş: Norwalde Varyantı, Schubert Varyantı",
+            "nl": "Geweigerd: Norwaldevariant, Schubertvariant",
+            "id": "Ditolak: Variasi Norwalde, Variasi Schubert",
+            "vi": "Từ chối: Phương án Norwalde, Phương án Schubert",
+            "pl": "Odrzucony: Wariant Norwalde, Wariant Schubert"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Norwalde Variation, Schubert Variation",
@@ -2564,7 +3289,12 @@
         "pt-PT": "Aceito: Defesa Abbazia",
         "de": "Angenommen: Abbazia-Verteidigung",
         "fr": "Accepté: Défense Abbazia",
-        "it": "Accettato: Difesa Abbazia"
+        "it": "Accettato: Difesa Abbazia",
+        "tr": "Kabul Edilmiş: Abbazia Savunması",
+        "nl": "Aangenomen: Abbaziaverdediging",
+        "id": "Diterima: Pertahanan Abbazia",
+        "vi": "Chấp nhận: Phòng thủ Abbazia",
+        "pl": "Przyjęty: Obrona Abbazia"
       },
       "lines": [
         {
@@ -2578,7 +3308,12 @@
             "pt-PT": "Aceito: Defesa Abbazia",
             "de": "Angenommen: Abbazia-Verteidigung",
             "fr": "Accepté: Défense Abbazia",
-            "it": "Accettato: Difesa Abbazia"
+            "it": "Accettato: Difesa Abbazia",
+            "tr": "Kabul Edilmiş: Abbazia Savunması",
+            "nl": "Aangenomen: Abbaziaverdediging",
+            "id": "Diterima: Pertahanan Abbazia",
+            "vi": "Chấp nhận: Phòng thủ Abbazia",
+            "pl": "Przyjęty: Obrona Abbazia"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Abbazia Defense",
@@ -2596,7 +3331,12 @@
             "pt-PT": "Aceito: Defesa Abbazia, Linha Principal",
             "de": "Angenommen: Abbazia-Verteidigung, Hauptvariante",
             "fr": "Accepté: Défense Abbazia, Ligne principale",
-            "it": "Accettato: Difesa Abbazia, Linea principale"
+            "it": "Accettato: Difesa Abbazia, Linea principale",
+            "tr": "Kabul Edilmiş: Abbazia Savunması, Ana Hat",
+            "nl": "Aangenomen: Abbaziaverdediging, Hoofdvariant",
+            "id": "Diterima: Pertahanan Abbazia, Lini Utama",
+            "vi": "Chấp nhận: Phòng thủ Abbazia, Phương án chính",
+            "pl": "Przyjęty: Obrona Abbazia, Wariant główny"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Abbazia Defense, Main Line",
@@ -2615,7 +3355,12 @@
         "pt-PT": "Aceito: Gambito Ghulam-Kassim",
         "de": "Angenommen: Ghulam-Kassim-Gambit",
         "fr": "Accepté: Gambit Ghulam-Kassim",
-        "it": "Accettato: Gambetto Ghulam-Kassim"
+        "it": "Accettato: Gambetto Ghulam-Kassim",
+        "tr": "Kabul Edilmiş: Ghulam-Kassim Gambiti",
+        "nl": "Aangenomen: Ghulam-Kassimgambiet",
+        "id": "Diterima: Gambit Ghulam-Kassim",
+        "vi": "Chấp nhận: Gambit Ghulam-Kassim",
+        "pl": "Przyjęty: Gambit Ghulam-Kassim"
       },
       "lines": [
         {
@@ -2629,7 +3374,12 @@
             "pt-PT": "Aceito: Gambito Ghulam-Kassim",
             "de": "Angenommen: Ghulam-Kassim-Gambit",
             "fr": "Accepté: Gambit Ghulam-Kassim",
-            "it": "Accettato: Gambetto Ghulam-Kassim"
+            "it": "Accettato: Gambetto Ghulam-Kassim",
+            "tr": "Kabul Edilmiş: Ghulam-Kassim Gambiti",
+            "nl": "Aangenomen: Ghulam-Kassimgambiet",
+            "id": "Diterima: Gambit Ghulam-Kassim",
+            "vi": "Chấp nhận: Gambit Ghulam-Kassim",
+            "pl": "Przyjęty: Gambit Ghulam-Kassim"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Ghulam-Kassim Gambit",
@@ -2647,7 +3397,12 @@
             "pt-PT": "Aceito: Gambito Ghulam-Kassim",
             "de": "Angenommen: Ghulam-Kassim-Gambit",
             "fr": "Accepté: Gambit Ghulam-Kassim",
-            "it": "Accettato: Gambetto Ghulam-Kassim"
+            "it": "Accettato: Gambetto Ghulam-Kassim",
+            "tr": "Kabul Edilmiş: Ghulam-Kassim Gambiti",
+            "nl": "Aangenomen: Ghulam-Kassimgambiet",
+            "id": "Diterima: Gambit Ghulam-Kassim",
+            "vi": "Chấp nhận: Gambit Ghulam-Kassim",
+            "pl": "Przyjęty: Gambit Ghulam-Kassim"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Ghulam-Kassim Gambit",
@@ -2666,7 +3421,12 @@
         "pt-PT": "Aceito: Gambito Greco",
         "de": "Angenommen: Greco-Gambit",
         "fr": "Accepté: Gambit Greco",
-        "it": "Accettato: Gambetto Greco"
+        "it": "Accettato: Gambetto Greco",
+        "tr": "Kabul Edilmiş: Greco Gambiti",
+        "nl": "Aangenomen: Grecogambiet",
+        "id": "Diterima: Gambit Greco",
+        "vi": "Chấp nhận: Gambit Greco",
+        "pl": "Przyjęty: Gambit Greco"
       },
       "lines": [
         {
@@ -2680,7 +3440,12 @@
             "pt-PT": "Aceito: Gambito Greco",
             "de": "Angenommen: Greco-Gambit",
             "fr": "Accepté: Gambit Greco",
-            "it": "Accettato: Gambetto Greco"
+            "it": "Accettato: Gambetto Greco",
+            "tr": "Kabul Edilmiş: Greco Gambiti",
+            "nl": "Aangenomen: Grecogambiet",
+            "id": "Diterima: Gambit Greco",
+            "vi": "Chấp nhận: Gambit Greco",
+            "pl": "Przyjęty: Gambit Greco"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Greco Gambit",
@@ -2698,7 +3463,12 @@
             "pt-PT": "Aceito: Gambito Greco",
             "de": "Angenommen: Greco-Gambit",
             "fr": "Accepté: Gambit Greco",
-            "it": "Accettato: Gambetto Greco"
+            "it": "Accettato: Gambetto Greco",
+            "tr": "Kabul Edilmiş: Greco Gambiti",
+            "nl": "Aangenomen: Grecogambiet",
+            "id": "Diterima: Gambit Greco",
+            "vi": "Chấp nhận: Gambit Greco",
+            "pl": "Przyjęty: Gambit Greco"
           },
           "eco": "C38",
           "opening": "King's Gambit Accepted: Greco Gambit",
@@ -2717,7 +3487,12 @@
         "pt-PT": "Aceito: Gambito Lolli",
         "de": "Angenommen: Lolli-Gambit",
         "fr": "Accepté: Gambit Lolli",
-        "it": "Accettato: Gambetto Lolli"
+        "it": "Accettato: Gambetto Lolli",
+        "tr": "Kabul Edilmiş: Lolli Gambiti",
+        "nl": "Aangenomen: Lolligambiet",
+        "id": "Diterima: Gambit Lolli",
+        "vi": "Chấp nhận: Gambit Lolli",
+        "pl": "Przyjęty: Gambit Lolli"
       },
       "lines": [
         {
@@ -2731,7 +3506,12 @@
             "pt-PT": "Aceito: Gambito Lolli",
             "de": "Angenommen: Lolli-Gambit",
             "fr": "Accepté: Gambit Lolli",
-            "it": "Accettato: Gambetto Lolli"
+            "it": "Accettato: Gambetto Lolli",
+            "tr": "Kabul Edilmiş: Lolli Gambiti",
+            "nl": "Aangenomen: Lolligambiet",
+            "id": "Diterima: Gambit Lolli",
+            "vi": "Chấp nhận: Gambit Lolli",
+            "pl": "Przyjęty: Gambit Lolli"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Lolli Gambit",
@@ -2749,7 +3529,12 @@
             "pt-PT": "Aceito: Gambito Lolli, Variante Young",
             "de": "Angenommen: Lolli-Gambit, Young-Variante",
             "fr": "Accepté: Gambit Lolli, Variante Young",
-            "it": "Accettato: Gambetto Lolli, Variante Young"
+            "it": "Accettato: Gambetto Lolli, Variante Young",
+            "tr": "Kabul Edilmiş: Lolli Gambiti, Young Varyantı",
+            "nl": "Aangenomen: Lolligambiet, Youngvariant",
+            "id": "Diterima: Gambit Lolli, Variasi Young",
+            "vi": "Chấp nhận: Gambit Lolli, Phương án Young",
+            "pl": "Przyjęty: Gambit Lolli, Wariant Young"
           },
           "eco": "C37",
           "opening": "King's Gambit Accepted: Lolli Gambit, Young Variation",
@@ -2768,7 +3553,12 @@
         "pt-PT": "Aceito: Defesa Moderna",
         "de": "Angenommen: Moderne Verteidigung",
         "fr": "Accepté: Défense moderne",
-        "it": "Accettato: Difesa moderna"
+        "it": "Accettato: Difesa moderna",
+        "tr": "Kabul Edilmiş: Modern Savunma",
+        "nl": "Aangenomen: Moderne verdediging",
+        "id": "Diterima: Pertahanan Modern",
+        "vi": "Chấp nhận: Phòng thủ hiện đại",
+        "pl": "Przyjęty: Obrona nowoczesna"
       },
       "lines": [
         {
@@ -2782,7 +3572,12 @@
             "pt-PT": "Aceito: Defesa Moderna",
             "de": "Angenommen: Moderne Verteidigung",
             "fr": "Accepté: Défense moderne",
-            "it": "Accettato: Difesa moderna"
+            "it": "Accettato: Difesa moderna",
+            "tr": "Kabul Edilmiş: Modern Savunma",
+            "nl": "Aangenomen: Moderne verdediging",
+            "id": "Diterima: Pertahanan Modern",
+            "vi": "Chấp nhận: Phòng thủ hiện đại",
+            "pl": "Przyjęty: Obrona nowoczesna"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Modern Defense",
@@ -2800,7 +3595,12 @@
             "pt-PT": "Aceito: Defesa Moderna",
             "de": "Angenommen: Moderne Verteidigung",
             "fr": "Accepté: Défense moderne",
-            "it": "Accettato: Difesa moderna"
+            "it": "Accettato: Difesa moderna",
+            "tr": "Kabul Edilmiş: Modern Savunma",
+            "nl": "Aangenomen: Moderne verdediging",
+            "id": "Diterima: Pertahanan Modern",
+            "vi": "Chấp nhận: Phòng thủ hiện đại",
+            "pl": "Przyjęty: Obrona nowoczesna"
           },
           "eco": "C36",
           "opening": "King's Gambit Accepted: Modern Defense",
@@ -2819,7 +3619,12 @@
         "pt-PT": "Aceito: Gambito Philidor",
         "de": "Angenommen: Philidor-Gambit",
         "fr": "Accepté: Gambit Philidor",
-        "it": "Accettato: Gambetto Philidor"
+        "it": "Accettato: Gambetto Philidor",
+        "tr": "Kabul Edilmiş: Philidor Gambiti",
+        "nl": "Aangenomen: Philidorgambiet",
+        "id": "Diterima: Gambit Philidor",
+        "vi": "Chấp nhận: Gambit Philidor",
+        "pl": "Przyjęty: Gambit Philidor"
       },
       "lines": [
         {
@@ -2833,7 +3638,12 @@
             "pt-PT": "Aceito: Gambito Philidor",
             "de": "Angenommen: Philidor-Gambit",
             "fr": "Accepté: Gambit Philidor",
-            "it": "Accettato: Gambetto Philidor"
+            "it": "Accettato: Gambetto Philidor",
+            "tr": "Kabul Edilmiş: Philidor Gambiti",
+            "nl": "Aangenomen: Philidorgambiet",
+            "id": "Diterima: Gambit Philidor",
+            "vi": "Chấp nhận: Gambit Philidor",
+            "pl": "Przyjęty: Gambit Philidor"
           },
           "eco": "C38",
           "opening": "King's Gambit Accepted: Philidor Gambit",
@@ -2851,7 +3661,12 @@
             "pt-PT": "Aceito: Gambito Philidor, Variante Schultz",
             "de": "Angenommen: Philidor-Gambit, Schultz-Variante",
             "fr": "Accepté: Gambit Philidor, Variante Schultz",
-            "it": "Accettato: Gambetto Philidor, Variante Schultz"
+            "it": "Accettato: Gambetto Philidor, Variante Schultz",
+            "tr": "Kabul Edilmiş: Philidor Gambiti, Schultz Varyantı",
+            "nl": "Aangenomen: Philidorgambiet, Schultzvariant",
+            "id": "Diterima: Gambit Philidor, Variasi Schultz",
+            "vi": "Chấp nhận: Gambit Philidor, Phương án Schultz",
+            "pl": "Przyjęty: Gambit Philidor, Wariant Schultz"
           },
           "eco": "C38",
           "opening": "King's Gambit Accepted: Philidor Gambit, Schultz Variation",
@@ -2870,7 +3685,12 @@
         "pt-PT": "Aceito: Defesa Schallopp",
         "de": "Angenommen: Schallopp-Verteidigung",
         "fr": "Accepté: Défense Schallopp",
-        "it": "Accettato: Difesa Schallopp"
+        "it": "Accettato: Difesa Schallopp",
+        "tr": "Kabul Edilmiş: Schallopp Savunması",
+        "nl": "Aangenomen: Schalloppverdediging",
+        "id": "Diterima: Pertahanan Schallopp",
+        "vi": "Chấp nhận: Phòng thủ Schallopp",
+        "pl": "Przyjęty: Obrona Schallopp"
       },
       "lines": [
         {
@@ -2884,7 +3704,12 @@
             "pt-PT": "Aceito: Defesa Schallopp",
             "de": "Angenommen: Schallopp-Verteidigung",
             "fr": "Accepté: Défense Schallopp",
-            "it": "Accettato: Difesa Schallopp"
+            "it": "Accettato: Difesa Schallopp",
+            "tr": "Kabul Edilmiş: Schallopp Savunması",
+            "nl": "Aangenomen: Schalloppverdediging",
+            "id": "Diterima: Pertahanan Schallopp",
+            "vi": "Chấp nhận: Phòng thủ Schallopp",
+            "pl": "Przyjęty: Obrona Schallopp"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Schallopp Defense",
@@ -2902,7 +3727,12 @@
             "pt-PT": "Aceito: Defesa Schallopp, Ataque Tashkent",
             "de": "Angenommen: Schallopp-Verteidigung, Taschkenter Angriff",
             "fr": "Accepté: Défense Schallopp, Attaque de Tachkent",
-            "it": "Accettato: Difesa Schallopp, Attacco di Taškent"
+            "it": "Accettato: Difesa Schallopp, Attacco di Taškent",
+            "tr": "Kabul Edilmiş: Schallopp Savunması, Taşkent Akını",
+            "nl": "Aangenomen: Schalloppverdediging, Tasjkentaanval",
+            "id": "Diterima: Pertahanan Schallopp, Serangan Tashkent",
+            "vi": "Chấp nhận: Phòng thủ Schallopp, Tấn công Tashkent",
+            "pl": "Przyjęty: Obrona Schallopp, Atak taszkiencki"
           },
           "eco": "C34",
           "opening": "King's Gambit Accepted: Schallopp Defense, Tashkent Attack",
@@ -2921,7 +3751,12 @@
         "pt-PT": "Aceito: Gambito Schurig",
         "de": "Angenommen: Schurig-Gambit",
         "fr": "Accepté: Gambit Schurig",
-        "it": "Accettato: Gambetto Schurig"
+        "it": "Accettato: Gambetto Schurig",
+        "tr": "Kabul Edilmiş: Schurig Gambiti",
+        "nl": "Aangenomen: Schuriggambiet",
+        "id": "Diterima: Gambit Schurig",
+        "vi": "Chấp nhận: Gambit Schurig",
+        "pl": "Przyjęty: Gambit Schurig"
       },
       "lines": [
         {
@@ -2935,7 +3770,12 @@
             "pt-PT": "Aceito: Gambito Schurig, com Bb5",
             "de": "Angenommen: Schurig-Gambit, mit Bb5",
             "fr": "Accepté: Gambit Schurig, avec Bb5",
-            "it": "Accettato: Gambetto Schurig, con Bb5"
+            "it": "Accettato: Gambetto Schurig, con Bb5",
+            "tr": "Kabul Edilmiş: Schurig Gambiti, Bb5 ile",
+            "nl": "Aangenomen: Schuriggambiet, met Bb5",
+            "id": "Diterima: Gambit Schurig, dengan Bb5",
+            "vi": "Chấp nhận: Gambit Schurig, với Bb5",
+            "pl": "Przyjęty: Gambit Schurig, z Bb5"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Schurig Gambit, with Bb5",
@@ -2953,7 +3793,12 @@
             "pt-PT": "Aceito: Gambito Schurig, com Bd3",
             "de": "Angenommen: Schurig-Gambit, mit Bd3",
             "fr": "Accepté: Gambit Schurig, avec Bd3",
-            "it": "Accettato: Gambetto Schurig, con Bd3"
+            "it": "Accettato: Gambetto Schurig, con Bd3",
+            "tr": "Kabul Edilmiş: Schurig Gambiti, Bd3 ile",
+            "nl": "Aangenomen: Schuriggambiet, met Bd3",
+            "id": "Diterima: Gambit Schurig, dengan Bd3",
+            "vi": "Chấp nhận: Gambit Schurig, với Bd3",
+            "pl": "Przyjęty: Gambit Schurig, z Bd3"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Schurig Gambit, with Bd3",
@@ -2972,7 +3817,12 @@
         "pt-PT": "Aceito: Gambito Tartakower",
         "de": "Angenommen: Tartakower-Gambit",
         "fr": "Accepté: Gambit Tartakower",
-        "it": "Accettato: Gambetto Tartakower"
+        "it": "Accettato: Gambetto Tartakower",
+        "tr": "Kabul Edilmiş: Tartakower Gambiti",
+        "nl": "Aangenomen: Tartakowergambiet",
+        "id": "Diterima: Gambit Tartakower",
+        "vi": "Chấp nhận: Gambit Tartakower",
+        "pl": "Przyjęty: Gambit Tartakower"
       },
       "lines": [
         {
@@ -2986,7 +3836,12 @@
             "pt-PT": "Aceito: Gambito Tartakower",
             "de": "Angenommen: Tartakower-Gambit",
             "fr": "Accepté: Gambit Tartakower",
-            "it": "Accettato: Gambetto Tartakower"
+            "it": "Accettato: Gambetto Tartakower",
+            "tr": "Kabul Edilmiş: Tartakower Gambiti",
+            "nl": "Aangenomen: Tartakowergambiet",
+            "id": "Diterima: Gambit Tartakower",
+            "vi": "Chấp nhận: Gambit Tartakower",
+            "pl": "Przyjęty: Gambit Tartakower"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Tartakower Gambit",
@@ -3004,7 +3859,12 @@
             "pt-PT": "Aceito: Gambito Tartakower, Defesa Weiss",
             "de": "Angenommen: Tartakower-Gambit, Weiss-Verteidigung",
             "fr": "Accepté: Gambit Tartakower, Défense Weiss",
-            "it": "Accettato: Gambetto Tartakower, Difesa Weiss"
+            "it": "Accettato: Gambetto Tartakower, Difesa Weiss",
+            "tr": "Kabul Edilmiş: Tartakower Gambiti, Weiss Savunması",
+            "nl": "Aangenomen: Tartakowergambiet, Weissverdediging",
+            "id": "Diterima: Gambit Tartakower, Pertahanan Weiss",
+            "vi": "Chấp nhận: Gambit Tartakower, Phòng thủ Weiss",
+            "pl": "Przyjęty: Gambit Tartakower, Obrona Weiss"
           },
           "eco": "C33",
           "opening": "King's Gambit Accepted: Tartakower Gambit, Weiss Defense",
@@ -3023,7 +3883,12 @@
         "pt-PT": "Recusado: Defesa Keene",
         "de": "Abgelehnt: Keene's-Verteidigung",
         "fr": "Refusé: Défense Keene's",
-        "it": "Rifiutato: Difesa Keene's"
+        "it": "Rifiutato: Difesa Keene's",
+        "tr": "Reddedilmiş: Keene's Savunması",
+        "nl": "Geweigerd: Keene'sverdediging",
+        "id": "Ditolak: Pertahanan Keene's",
+        "vi": "Từ chối: Phòng thủ Keene's",
+        "pl": "Odrzucony: Obrona Keene's"
       },
       "lines": [
         {
@@ -3037,7 +3902,12 @@
             "pt-PT": "Recusado: Defesa Keene",
             "de": "Abgelehnt: Keene's-Verteidigung",
             "fr": "Refusé: Défense Keene's",
-            "it": "Rifiutato: Difesa Keene's"
+            "it": "Rifiutato: Difesa Keene's",
+            "tr": "Reddedilmiş: Keene's Savunması",
+            "nl": "Geweigerd: Keene'sverdediging",
+            "id": "Ditolak: Pertahanan Keene's",
+            "vi": "Từ chối: Phòng thủ Keene's",
+            "pl": "Odrzucony: Obrona Keene's"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Keene's Defense",
@@ -3055,7 +3925,12 @@
             "pt-PT": "Recusado: Defesa Keene",
             "de": "Abgelehnt: Keene's-Verteidigung",
             "fr": "Refusé: Défense Keene's",
-            "it": "Rifiutato: Difesa Keene's"
+            "it": "Rifiutato: Difesa Keene's",
+            "tr": "Reddedilmiş: Keene's Savunması",
+            "nl": "Geweigerd: Keene'sverdediging",
+            "id": "Ditolak: Pertahanan Keene's",
+            "vi": "Từ chối: Phòng thủ Keene's",
+            "pl": "Odrzucony: Obrona Keene's"
           },
           "eco": "C30",
           "opening": "King's Gambit Declined: Keene's Defense",
@@ -3077,7 +3952,12 @@
         "pt-PT": "Aceito",
         "de": "Angenommen",
         "fr": "Accepté",
-        "it": "Accettato"
+        "it": "Accettato",
+        "tr": "Kabul Edilmiş",
+        "nl": "Aangenomen",
+        "id": "Diterima",
+        "vi": "Chấp nhận",
+        "pl": "Przyjęty"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted",
@@ -3095,7 +3975,12 @@
         "pt-PT": "Aceito: Gambito Australiano",
         "de": "Angenommen: Australisches Gambit",
         "fr": "Accepté: Gambit australien",
-        "it": "Accettato: Gambetto australiano"
+        "it": "Accettato: Gambetto australiano",
+        "tr": "Kabul Edilmiş: Avustralya Gambiti",
+        "nl": "Aangenomen: Australisch gambiet",
+        "id": "Diterima: Gambit Australia",
+        "vi": "Chấp nhận: Gambit Úc",
+        "pl": "Przyjęty: Gambit australijski"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Australian Gambit",
@@ -3113,7 +3998,12 @@
         "pt-PT": "Aceito: Gambito Basman",
         "de": "Angenommen: Basman-Gambit",
         "fr": "Accepté: Gambit Basman",
-        "it": "Accettato: Gambetto Basman"
+        "it": "Accettato: Gambetto Basman",
+        "tr": "Kabul Edilmiş: Basman Gambiti",
+        "nl": "Aangenomen: Basmangambiet",
+        "id": "Diterima: Gambit Basman",
+        "vi": "Chấp nhận: Gambit Basman",
+        "pl": "Przyjęty: Gambit Basman"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Basman Gambit",
@@ -3131,7 +4021,12 @@
         "pt-PT": "Aceito: Defesa Becker",
         "de": "Angenommen: Becker-Verteidigung",
         "fr": "Accepté: Défense Becker",
-        "it": "Accettato: Difesa Becker"
+        "it": "Accettato: Difesa Becker",
+        "tr": "Kabul Edilmiş: Becker Savunması",
+        "nl": "Aangenomen: Beckerverdediging",
+        "id": "Diterima: Pertahanan Becker",
+        "vi": "Chấp nhận: Phòng thủ Becker",
+        "pl": "Przyjęty: Obrona Becker"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Becker Defense",
@@ -3149,7 +4044,12 @@
         "pt-PT": "Aceito: Gambito Blachly",
         "de": "Angenommen: Blachly-Gambit",
         "fr": "Accepté: Gambit Blachly",
-        "it": "Accettato: Gambetto Blachly"
+        "it": "Accettato: Gambetto Blachly",
+        "tr": "Kabul Edilmiş: Blachly Gambiti",
+        "nl": "Aangenomen: Blachlygambiet",
+        "id": "Diterima: Gambit Blachly",
+        "vi": "Chấp nhận: Gambit Blachly",
+        "pl": "Przyjęty: Gambit Blachly"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Blachly Gambit",
@@ -3167,7 +4067,12 @@
         "pt-PT": "Aceito: Variante Bonsch-Osmolovsky",
         "de": "Angenommen: Bonsch-Osmolovsky-Variante",
         "fr": "Accepté: Variante Bonsch-Osmolovsky",
-        "it": "Accettato: Variante Bonsch-Osmolovsky"
+        "it": "Accettato: Variante Bonsch-Osmolovsky",
+        "tr": "Kabul Edilmiş: Bonsch-Osmolovsky Varyantı",
+        "nl": "Aangenomen: Bonsch-Osmolovskyvariant",
+        "id": "Diterima: Variasi Bonsch-Osmolovsky",
+        "vi": "Chấp nhận: Phương án Bonsch-Osmolovsky",
+        "pl": "Przyjęty: Wariant Bonsch-Osmolovsky"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Bonsch-Osmolovsky Variation",
@@ -3185,7 +4090,12 @@
         "pt-PT": "Aceito: Gambito Breyer",
         "de": "Angenommen: Breyer-Gambit",
         "fr": "Accepté: Gambit Breyer",
-        "it": "Accettato: Gambetto Breyer"
+        "it": "Accettato: Gambetto Breyer",
+        "tr": "Kabul Edilmiş: Breyer Gambiti",
+        "nl": "Aangenomen: Breyergambiet",
+        "id": "Diterima: Gambit Breyer",
+        "vi": "Chấp nhận: Gambit Breyer",
+        "pl": "Przyjęty: Gambit Breyer"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Breyer Gambit",
@@ -3203,7 +4113,12 @@
         "pt-PT": "Aceito: Gambito Carrera",
         "de": "Angenommen: Carrera-Gambit",
         "fr": "Accepté: Gambit Carrera",
-        "it": "Accettato: Gambetto Carrera"
+        "it": "Accettato: Gambetto Carrera",
+        "tr": "Kabul Edilmiş: Carrera Gambiti",
+        "nl": "Aangenomen: Carreragambiet",
+        "id": "Diterima: Gambit Carrera",
+        "vi": "Chấp nhận: Gambit Carrera",
+        "pl": "Przyjęty: Gambit Carrera"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Carrera Gambit",
@@ -3221,7 +4136,12 @@
         "pt-PT": "Aceito: Variante Dodó",
         "de": "Angenommen: Dodo-Variante",
         "fr": "Accepté: Variante Dodo",
-        "it": "Accettato: Variante Dodo"
+        "it": "Accettato: Variante Dodo",
+        "tr": "Kabul Edilmiş: Dodo Varyantı",
+        "nl": "Aangenomen: Dodovariant",
+        "id": "Diterima: Variasi Dodo",
+        "vi": "Chấp nhận: Phương án Dodo",
+        "pl": "Przyjęty: Wariant Dodo"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Dodo Variation",
@@ -3239,7 +4159,12 @@
         "pt-PT": "Aceito: Variante Eisenberg",
         "de": "Angenommen: Eisenberg-Variante",
         "fr": "Accepté: Variante Eisenberg",
-        "it": "Accettato: Variante Eisenberg"
+        "it": "Accettato: Variante Eisenberg",
+        "tr": "Kabul Edilmiş: Eisenberg Varyantı",
+        "nl": "Aangenomen: Eisenbergvariant",
+        "id": "Diterima: Variasi Eisenberg",
+        "vi": "Chấp nhận: Phương án Eisenberg",
+        "pl": "Przyjęty: Wariant Eisenberg"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Eisenberg Variation",
@@ -3257,7 +4182,12 @@
         "pt-PT": "Aceito: Gambito Gaga",
         "de": "Angenommen: Gaga-Gambit",
         "fr": "Accepté: Gambit Gaga",
-        "it": "Accettato: Gambetto Gaga"
+        "it": "Accettato: Gambetto Gaga",
+        "tr": "Kabul Edilmiş: Gaga Gambiti",
+        "nl": "Aangenomen: Gagagambiet",
+        "id": "Diterima: Gambit Gaga",
+        "vi": "Chấp nhận: Gambit Gaga",
+        "pl": "Przyjęty: Gambit Gaga"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Gaga Gambit",
@@ -3275,7 +4205,12 @@
         "pt-PT": "Aceito: Contragambito Gianutio",
         "de": "Angenommen: Gianutio-Gegengambit",
         "fr": "Accepté: Contre-gambit Gianutio",
-        "it": "Accettato: Controgambetto Gianutio"
+        "it": "Accettato: Controgambetto Gianutio",
+        "tr": "Kabul Edilmiş: Gianutio Karşı Gambiti",
+        "nl": "Aangenomen: Gianutiotegengambiet",
+        "id": "Diterima: Gambit Balasan Gianutio",
+        "vi": "Chấp nhận: Phản gambit Gianutio",
+        "pl": "Przyjęty: Kontrgambit Gianutio"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Gianutio Countergambit",
@@ -3293,7 +4228,12 @@
         "pt-PT": "Aceito: Gambito Hanstein",
         "de": "Angenommen: Hanstein-Gambit",
         "fr": "Accepté: Gambit Hanstein",
-        "it": "Accettato: Gambetto Hanstein"
+        "it": "Accettato: Gambetto Hanstein",
+        "tr": "Kabul Edilmiş: Hanstein Gambiti",
+        "nl": "Aangenomen: Hansteingambiet",
+        "id": "Diterima: Gambit Hanstein",
+        "vi": "Chấp nhận: Gambit Hanstein",
+        "pl": "Przyjęty: Gambit Hanstein"
       },
       "eco": "C38",
       "opening": "King's Gambit Accepted: Hanstein Gambit",
@@ -3311,7 +4251,12 @@
         "pt-PT": "Aceito: Gambito Kotov",
         "de": "Angenommen: Kotow-Gambit",
         "fr": "Accepté: Gambit Kotov",
-        "it": "Accettato: Gambetto Kotov"
+        "it": "Accettato: Gambetto Kotov",
+        "tr": "Kabul Edilmiş: Kotov Gambiti",
+        "nl": "Aangenomen: Kotovgambiet",
+        "id": "Diterima: Gambit Kotov",
+        "vi": "Chấp nhận: Gambit Kotov",
+        "pl": "Przyjęty: Gambit Kotov"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Kotov Gambit",
@@ -3329,7 +4274,12 @@
         "pt-PT": "Aceito: Contragambito Lopez-Gianutio, Variante Hein",
         "de": "Angenommen: Lopez-Gianutio-Gegengambit, Hein-Variante",
         "fr": "Accepté: Contre-gambit Lopez-Gianutio, Variante Hein",
-        "it": "Accettato: Controgambetto Lopez-Gianutio, Variante Hein"
+        "it": "Accettato: Controgambetto Lopez-Gianutio, Variante Hein",
+        "tr": "Kabul Edilmiş: Lopez-Gianutio Karşı Gambiti, Hein Varyantı",
+        "nl": "Aangenomen: Lopez-Gianutiotegengambiet, Heinvariant",
+        "id": "Diterima: Gambit Balasan Lopez-Gianutio, Variasi Hein",
+        "vi": "Chấp nhận: Phản gambit Lopez-Gianutio, Phương án Hein",
+        "pl": "Przyjęty: Kontrgambit Lopez-Gianutio, Wariant Hein"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Lopez-Gianutio Countergambit, Hein Variation",
@@ -3347,7 +4297,12 @@
         "pt-PT": "Aceito: Defesa MacLeod",
         "de": "Angenommen: MacLeod-Verteidigung",
         "fr": "Accepté: Défense MacLeod",
-        "it": "Accettato: Difesa MacLeod"
+        "it": "Accettato: Difesa MacLeod",
+        "tr": "Kabul Edilmiş: MacLeod Savunması",
+        "nl": "Aangenomen: MacLeodverdediging",
+        "id": "Diterima: Pertahanan MacLeod",
+        "vi": "Chấp nhận: Phòng thủ MacLeod",
+        "pl": "Przyjęty: Obrona MacLeod"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: MacLeod Defense",
@@ -3365,7 +4320,12 @@
         "pt-PT": "Aceito: Gambito Mason-Keres",
         "de": "Angenommen: Mason-Keres-Gambit",
         "fr": "Accepté: Gambit Mason-Keres",
-        "it": "Accettato: Gambetto Mason-Keres"
+        "it": "Accettato: Gambetto Mason-Keres",
+        "tr": "Kabul Edilmiş: Mason-Keres Gambiti",
+        "nl": "Aangenomen: Mason-Keresgambiet",
+        "id": "Diterima: Gambit Mason-Keres",
+        "vi": "Chấp nhận: Gambit Mason-Keres",
+        "pl": "Przyjęty: Gambit Mason-Keres"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Mason-Keres Gambit",
@@ -3383,7 +4343,12 @@
         "pt-PT": "Aceito: Gambito Mayet",
         "de": "Angenommen: Mayet-Gambit",
         "fr": "Accepté: Gambit Mayet",
-        "it": "Accettato: Gambetto Mayet"
+        "it": "Accettato: Gambetto Mayet",
+        "tr": "Kabul Edilmiş: Mayet Gambiti",
+        "nl": "Aangenomen: Mayetgambiet",
+        "id": "Diterima: Gambit Mayet",
+        "vi": "Chấp nhận: Gambit Mayet",
+        "pl": "Przyjęty: Gambit Mayet"
       },
       "eco": "C38",
       "opening": "King's Gambit Accepted: Mayet Gambit",
@@ -3401,7 +4366,12 @@
         "pt-PT": "Aceito: Gambito McDonnell",
         "de": "Angenommen: McDonnell-Gambit",
         "fr": "Accepté: Gambit McDonnell",
-        "it": "Accettato: Gambetto McDonnell"
+        "it": "Accettato: Gambetto McDonnell",
+        "tr": "Kabul Edilmiş: McDonnell Gambiti",
+        "nl": "Aangenomen: McDonnellgambiet",
+        "id": "Diterima: Gambit McDonnell",
+        "vi": "Chấp nhận: Gambit McDonnell",
+        "pl": "Przyjęty: Gambit McDonnell"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: McDonnell Gambit",
@@ -3419,7 +4389,12 @@
         "pt-PT": "Aceito: Contragambito Middleton",
         "de": "Angenommen: Middleton-Gegengambit",
         "fr": "Accepté: Contre-gambit Middleton",
-        "it": "Accettato: Controgambetto Middleton"
+        "it": "Accettato: Controgambetto Middleton",
+        "tr": "Kabul Edilmiş: Middleton Karşı Gambiti",
+        "nl": "Aangenomen: Middletontegengambiet",
+        "id": "Diterima: Gambit Balasan Middleton",
+        "vi": "Chấp nhận: Phản gambit Middleton",
+        "pl": "Przyjęty: Kontrgambit Middleton"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Middleton Countergambit",
@@ -3437,7 +4412,12 @@
         "pt-PT": "Aceito: Gambito Muzio Aceito, Defesa From",
         "de": "Angenommen: Angenommenes Muzio-Gambit, From-Verteidigung",
         "fr": "Accepté: Gambit Muzio accepté, Défense From",
-        "it": "Accettato: Gambetto Muzio accettato, Difesa From"
+        "it": "Accettato: Gambetto Muzio accettato, Difesa From",
+        "tr": "Kabul Edilmiş: Kabul Edilmiş Muzio Gambiti, From Savunması",
+        "nl": "Aangenomen: Muziogambiet aangenomen, Fromverdediging",
+        "id": "Diterima: Gambit Muzio Diterima, Pertahanan From",
+        "vi": "Chấp nhận: Gambit Muzio chấp nhận, Phòng thủ From",
+        "pl": "Przyjęty: Gambit Muzio przyjęty, Obrona Froma"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Muzio Gambit Accepted, From's Defense",
@@ -3455,7 +4435,12 @@
         "pt-PT": "Aceito: Gambito Orsini",
         "de": "Angenommen: Orsini-Gambit",
         "fr": "Accepté: Gambit Orsini",
-        "it": "Accettato: Gambetto Orsini"
+        "it": "Accettato: Gambetto Orsini",
+        "tr": "Kabul Edilmiş: Orsini Gambiti",
+        "nl": "Aangenomen: Orsinigambiet",
+        "id": "Diterima: Gambit Orsini",
+        "vi": "Chấp nhận: Gambit Orsini",
+        "pl": "Przyjęty: Gambit Orsini"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Orsini Gambit",
@@ -3473,7 +4458,12 @@
         "pt-PT": "Aceito: Gambito Parisiense",
         "de": "Angenommen: Pariser Gambit",
         "fr": "Accepté: Gambit parisien",
-        "it": "Accettato: Gambetto parigino"
+        "it": "Accettato: Gambetto parigino",
+        "tr": "Kabul Edilmiş: Paris Gambiti",
+        "nl": "Aangenomen: Parijs gambiet",
+        "id": "Diterima: Gambit Paris",
+        "vi": "Chấp nhận: Gambit Paris",
+        "pl": "Przyjęty: Gambit paryski"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Paris Gambit",
@@ -3491,7 +4481,12 @@
         "pt-PT": "Aceito: Gambito Quaade",
         "de": "Angenommen: Quaade-Gambit",
         "fr": "Accepté: Gambit Quaade",
-        "it": "Accettato: Gambetto Quaade"
+        "it": "Accettato: Gambetto Quaade",
+        "tr": "Kabul Edilmiş: Quaade Gambiti",
+        "nl": "Aangenomen: Quaadegambiet",
+        "id": "Diterima: Gambit Quaade",
+        "vi": "Chấp nhận: Gambit Quaade",
+        "pl": "Przyjęty: Gambit Quaade"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Quaade Gambit",
@@ -3509,7 +4504,12 @@
         "pt-PT": "Aceito: Gambito Silberschmidt",
         "de": "Angenommen: Silberschmidt-Gambit",
         "fr": "Accepté: Gambit Silberschmidt",
-        "it": "Accettato: Gambetto Silberschmidt"
+        "it": "Accettato: Gambetto Silberschmidt",
+        "tr": "Kabul Edilmiş: Silberschmidt Gambiti",
+        "nl": "Aangenomen: Silberschmidtgambiet",
+        "id": "Diterima: Gambit Silberschmidt",
+        "vi": "Chấp nhận: Gambit Silberschmidt",
+        "pl": "Przyjęty: Gambit Silberschmidt"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Silberschmidt Gambit",
@@ -3527,7 +4527,12 @@
         "pt-PT": "Aceito: Gambito Stamma",
         "de": "Angenommen: Stamma-Gambit",
         "fr": "Accepté: Gambit Stamma",
-        "it": "Accettato: Gambetto Stamma"
+        "it": "Accettato: Gambetto Stamma",
+        "tr": "Kabul Edilmiş: Stamma Gambiti",
+        "nl": "Aangenomen: Stammagambiet",
+        "id": "Diterima: Gambit Stamma",
+        "vi": "Chấp nhận: Gambit Stamma",
+        "pl": "Przyjęty: Gambit Stamma"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Stamma Gambit",
@@ -3545,7 +4550,12 @@
         "pt-PT": "Aceito: Gambito Sörensen",
         "de": "Angenommen: Sörensen-Gambit",
         "fr": "Accepté: Gambit Sörensen",
-        "it": "Accettato: Gambetto Sörensen"
+        "it": "Accettato: Gambetto Sörensen",
+        "tr": "Kabul Edilmiş: Sörensen Gambiti",
+        "nl": "Aangenomen: Sörensengambiet",
+        "id": "Diterima: Gambit Sörensen",
+        "vi": "Chấp nhận: Gambit Sörensen",
+        "pl": "Przyjęty: Gambit Sörensen"
       },
       "eco": "C37",
       "opening": "King's Gambit Accepted: Sörensen Gambit",
@@ -3563,7 +4573,12 @@
         "pt-PT": "Aceito: Variante Tradicional",
         "de": "Angenommen: Traditionelle Variante",
         "fr": "Accepté: Variante traditionnelle",
-        "it": "Accettato: Variante tradizionale"
+        "it": "Accettato: Variante tradizionale",
+        "tr": "Kabul Edilmiş: Geleneksel Varyant",
+        "nl": "Aangenomen: Traditionele variant",
+        "id": "Diterima: Variasi Tradisional",
+        "vi": "Chấp nhận: Phương án truyền thống",
+        "pl": "Przyjęty: Wariant tradycyjny"
       },
       "eco": "C38",
       "opening": "King's Gambit Accepted: Traditional Variation",
@@ -3581,7 +4596,12 @@
         "pt-PT": "Aceito: Bola de Feno",
         "de": "Angenommen: Tumbleweed",
         "fr": "Accepté: Tumbleweed",
-        "it": "Accettato: Tumbleweed"
+        "it": "Accettato: Tumbleweed",
+        "tr": "Kabul Edilmiş: Çalı Topu",
+        "nl": "Aangenomen: Steppenroller",
+        "id": "Diterima: Rumput Gelinding",
+        "vi": "Chấp nhận: Cỏ lăn",
+        "pl": "Przyjęty: Biegacz stepowy"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Tumbleweed",
@@ -3599,7 +4619,12 @@
         "pt-PT": "Aceito: Gambito Villemson",
         "de": "Angenommen: Villemson-Gambit",
         "fr": "Accepté: Gambit Villemson",
-        "it": "Accettato: Gambetto Villemson"
+        "it": "Accettato: Gambetto Villemson",
+        "tr": "Kabul Edilmiş: Villemson Gambiti",
+        "nl": "Aangenomen: Villemsongambiet",
+        "id": "Diterima: Gambit Villemson",
+        "vi": "Chấp nhận: Gambit Villemson",
+        "pl": "Przyjęty: Gambit Villemson"
       },
       "eco": "C33",
       "opening": "King's Gambit Accepted: Villemson Gambit",
@@ -3617,7 +4642,12 @@
         "pt-PT": "Aceito: Defesa Wagenbach",
         "de": "Angenommen: Wagenbach-Verteidigung",
         "fr": "Accepté: Défense Wagenbach",
-        "it": "Accettato: Difesa Wagenbach"
+        "it": "Accettato: Difesa Wagenbach",
+        "tr": "Kabul Edilmiş: Wagenbach Savunması",
+        "nl": "Aangenomen: Wagenbachverdediging",
+        "id": "Diterima: Pertahanan Wagenbach",
+        "vi": "Chấp nhận: Phòng thủ Wagenbach",
+        "pl": "Przyjęty: Obrona Wagenbach"
       },
       "eco": "C34",
       "opening": "King's Gambit Accepted: Wagenbach Defense",
@@ -3635,7 +4665,12 @@
         "pt-PT": "Recusado: Contragambito Falkbeer Aceito",
         "de": "Abgelehnt: Angenommenes Falkbeer-Gegengambit",
         "fr": "Refusé: Contre-gambit Falkbeer accepté",
-        "it": "Rifiutato: Controgambetto Falkbeer accettato"
+        "it": "Rifiutato: Controgambetto Falkbeer accettato",
+        "tr": "Reddedilmiş: Kabul Edilmiş Falkbeer Karşı Gambiti",
+        "nl": "Geweigerd: Falkbeertegengambiet aangenomen",
+        "id": "Ditolak: Gambit Balasan Falkbeer Diterima",
+        "vi": "Từ chối: Phản gambit Falkbeer chấp nhận",
+        "pl": "Odrzucony: Kontrgambit Falkbeer przyjęty"
       },
       "eco": "C31",
       "opening": "King's Gambit Declined: Falkbeer Countergambit Accepted",
@@ -3653,7 +4688,12 @@
         "pt-PT": "Recusado: Gambito Hobbs-Zilbermints",
         "de": "Abgelehnt: Hobbs-Zilbermints-Gambit",
         "fr": "Refusé: Gambit Hobbs-Zilbermints",
-        "it": "Rifiutato: Gambetto Hobbs-Zilbermints"
+        "it": "Rifiutato: Gambetto Hobbs-Zilbermints",
+        "tr": "Reddedilmiş: Hobbs-Zilbermints Gambiti",
+        "nl": "Geweigerd: Hobbs-Zilbermintsgambiet",
+        "id": "Ditolak: Gambit Hobbs-Zilbermints",
+        "vi": "Từ chối: Gambit Hobbs-Zilbermints",
+        "pl": "Odrzucony: Gambit Hobbs-Zilbermints"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Hobbs-Zilbermints Gambit",
@@ -3671,7 +4711,12 @@
         "pt-PT": "Recusado: Defesa Keene",
         "de": "Abgelehnt: Keene-Verteidigung",
         "fr": "Refusé: Défense Keene",
-        "it": "Rifiutato: Difesa Keene"
+        "it": "Rifiutato: Difesa Keene",
+        "tr": "Reddedilmiş: Keene Savunması",
+        "nl": "Geweigerd: Keeneverdediging",
+        "id": "Ditolak: Pertahanan Keene",
+        "vi": "Từ chối: Phòng thủ Keene",
+        "pl": "Odrzucony: Obrona Keene"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Keene Defense",
@@ -3689,7 +4734,12 @@
         "pt-PT": "Recusado: Defesa Máfia",
         "de": "Abgelehnt: Mafia-Verteidigung",
         "fr": "Refusé: Défense Mafia",
-        "it": "Rifiutato: Difesa Mafia"
+        "it": "Rifiutato: Difesa Mafia",
+        "tr": "Reddedilmiş: Mafia Savunması",
+        "nl": "Geweigerd: Mafiaverdediging",
+        "id": "Ditolak: Pertahanan Mafia",
+        "vi": "Từ chối: Phòng thủ Mafia",
+        "pl": "Odrzucony: Obrona Mafia"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Mafia Defense",
@@ -3707,7 +4757,12 @@
         "pt-PT": "Recusado: Defesa Miles",
         "de": "Abgelehnt: Miles-Verteidigung",
         "fr": "Refusé: Défense Miles",
-        "it": "Rifiutato: Difesa Miles"
+        "it": "Rifiutato: Difesa Miles",
+        "tr": "Reddedilmiş: Miles Savunması",
+        "nl": "Geweigerd: Milesverdediging",
+        "id": "Ditolak: Pertahanan Miles",
+        "vi": "Từ chối: Phòng thủ Miles",
+        "pl": "Odrzucony: Obrona Miles"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Miles Defense",
@@ -3725,7 +4780,12 @@
         "pt-PT": "Recusado: Defesa Petroff",
         "de": "Abgelehnt: Russische Verteidigung",
         "fr": "Refusé: Défense russe",
-        "it": "Rifiutato: Difesa russa"
+        "it": "Rifiutato: Difesa russa",
+        "tr": "Reddedilmiş: Petrov Savunması",
+        "nl": "Geweigerd: Petrovverdediging",
+        "id": "Ditolak: Pertahanan Petrov",
+        "vi": "Từ chối: Phòng thủ Petrov",
+        "pl": "Odrzucony: Obrona Petrowa"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Petrov's Defense",
@@ -3743,7 +4803,12 @@
         "pt-PT": "Recusado: Defesa do Cavalo da Dama",
         "de": "Abgelehnt: Damenspringer-Verteidigung",
         "fr": "Refusé: Défense du cavalier-dame",
-        "it": "Rifiutato: Difesa del cavallo di donna"
+        "it": "Rifiutato: Difesa del cavallo di donna",
+        "tr": "Reddedilmiş: Vezir Atı Savunması",
+        "nl": "Geweigerd: Damepaardverdediging",
+        "id": "Ditolak: Pertahanan Kuda Menteri",
+        "vi": "Từ chối: Phòng thủ Mã Hậu",
+        "pl": "Odrzucony: Obrona skoczka hetmańskiego"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Queen's Knight Defense",
@@ -3761,7 +4826,12 @@
         "pt-PT": "Recusado: Contragambito Senechaud",
         "de": "Abgelehnt: Senechaud-Gegengambit",
         "fr": "Refusé: Contre-gambit Senechaud",
-        "it": "Rifiutato: Controgambetto Senechaud"
+        "it": "Rifiutato: Controgambetto Senechaud",
+        "tr": "Reddedilmiş: Senechaud Karşı Gambiti",
+        "nl": "Geweigerd: Senechaudtegengambiet",
+        "id": "Ditolak: Gambit Balasan Senechaud",
+        "vi": "Từ chối: Phản gambit Senechaud",
+        "pl": "Odrzucony: Kontrgambit Senechaud"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Senechaud Countergambit",
@@ -3779,7 +4849,12 @@
         "pt-PT": "Recusado: Gambito Soller-Zilbermints",
         "de": "Abgelehnt: Soller-Zilbermints-Gambit",
         "fr": "Refusé: Gambit Soller-Zilbermints",
-        "it": "Rifiutato: Gambetto Soller-Zilbermints"
+        "it": "Rifiutato: Gambetto Soller-Zilbermints",
+        "tr": "Reddedilmiş: Soller-Zilbermints Gambiti",
+        "nl": "Geweigerd: Soller-Zilbermintsgambiet",
+        "id": "Ditolak: Gambit Soller-Zilbermints",
+        "vi": "Từ chối: Gambit Soller-Zilbermints",
+        "pl": "Odrzucony: Gambit Soller-Zilbermints"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Soller-Zilbermints Gambit",
@@ -3797,7 +4872,12 @@
         "pt-PT": "Recusado: Contragambito Duplo Zilbermints",
         "de": "Abgelehnt: Zilbermints-Doppelgegengambit",
         "fr": "Refusé: Double contre-gambit Zilbermints",
-        "it": "Rifiutato: Doppio controgambetto Zilbermints"
+        "it": "Rifiutato: Doppio controgambetto Zilbermints",
+        "tr": "Reddedilmiş: Zilbermints Çifte Karşı Gambiti",
+        "nl": "Geweigerd: Zilbermints dubbeltegengambiet",
+        "id": "Ditolak: Gambit Balasan Ganda Zilbermints",
+        "vi": "Từ chối: Phản gambit kép Zilbermints",
+        "pl": "Odrzucony: Kontrgambit podwójny Zilbermintsa"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Zilbermints Double Countergambit",
@@ -3815,7 +4895,12 @@
         "pt-PT": "Recusado: Gambito Duplo Zilbermints",
         "de": "Abgelehnt: Zilbermints-Doppelgambit",
         "fr": "Refusé: Double gambit Zilbermints",
-        "it": "Rifiutato: Doppio gambetto Zilbermints"
+        "it": "Rifiutato: Doppio gambetto Zilbermints",
+        "tr": "Reddedilmiş: Zilbermints Çifte Gambiti",
+        "nl": "Geweigerd: Zilbermints dubbelgambiet",
+        "id": "Ditolak: Gambit Ganda Zilbermints",
+        "vi": "Từ chối: Gambit kép Zilbermints",
+        "pl": "Odrzucony: Gambit podwójny Zilbermintsa"
       },
       "eco": "C30",
       "opening": "King's Gambit Declined: Zilbermints Double Gambit",
@@ -3833,7 +4918,12 @@
         "pt-PT": "Gambito do Rei",
         "de": "Königsgambit",
         "fr": "Gambit du roi",
-        "it": "Gambetto di re"
+        "it": "Gambetto di re",
+        "tr": "Şah Gambiti",
+        "nl": "Koningsgambiet",
+        "id": "Gambit Raja",
+        "vi": "Gambit Vua",
+        "pl": "Gambit królewski"
       },
       "eco": "C30",
       "opening": "King's Gambit",
