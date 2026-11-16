@@ -530,6 +530,58 @@ def test_a_game_whose_line_is_gone_goes_on_after_a_restart(database_path):
         assert body["bot_move"]["source"] == "engine"
 
 
+def test_a_move_after_a_restart_needs_no_reload(database_path):
+    """A tab left open across a restart can go on playing: the active game is read back.
+
+    Args:
+        database_path (Path): This test's copy of the database.
+    """
+    with app_on(database_path) as client:
+        active = start(client, time_control="none")["state"]["game_id"]
+    with app_on(database_path) as client:
+        response = client.post(f"/api/games/{active}/moves", json={"uci": "e2e4"})
+        assert response.status_code == 200
+
+
+REPEATED = """[White "Ana"]
+[Black "Bia"]
+[Result "*"]
+
+1. Nf3 Nf6 2. Ng1 Ng8 3. e4 e5 4. d4 *
+"""
+
+FOOLS_MATE = """[White "Ana"]
+[Black "Bia"]
+[Result "0-1"]
+
+1. f3 e5 2. g4 Qh4# 0-1
+"""
+
+
+def test_from_position_replays_the_games_moves_when_a_position_repeats(client):
+    """From position follows the game's moves, not the first move seen in a repeated position.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
+    game_id = imported_id(client, REPEATED)
+    assert new_from(client, game_id, upto_ply=6, mode="position").status_code == 201
+    game = client.get("/api/games/active").json()["game"]
+    assert [move["san"] for move in game["moves"]][:6] == ["Nf3", "Nf6", "Ng1", "Ng8", "e4", "e5"]
+
+
+def test_a_refused_start_leaves_the_active_game(client):
+    """Starting from a position that already ended the game is refused and abandons nothing.
+
+    Args:
+        client (TestClient): The API on a fresh copy of the database, with the fake engine.
+    """
+    active = start(client)["state"]["game_id"]
+    game_id = imported_id(client, FOOLS_MATE)
+    assert new_from(client, game_id, upto_ply=4, mode="position").status_code == 422
+    assert client.get("/api/games/active").json()["game"]["state"]["game_id"] == active
+
+
 @pytest.mark.parametrize(
     "options",
     [{"upto_ply": 99}, {"game_id": "nope"}],

@@ -12,6 +12,7 @@ from app.engine.levels import Level
 from app.game.service import GameService
 from app.game.session import BotDeviationSetup, GameSession, Selection
 from app.game.store import GameStore, restore_session
+from tests.conftest import FakeEngine
 
 MAIN = "e4 e5 Nf3 Nc6 Bb5 a6 Ba4"
 SIDELINE = "e4 e5 Nf3 Nf6"
@@ -124,6 +125,66 @@ def play(games: GameService, session: GameSession, san: str):
     uci = session.board.parse_san(san).uci()
     _, _, _, reply = asyncio.run(games.user_move(session.game_id, uci, None, None, None))
     return reply
+
+
+class SlowEngine(FakeEngine):
+    """The fake engine, with a search that takes a moment, so requests can overlap it."""
+
+    async def play(self, board, level, max_time_s=None):
+        """Waits, then plays as the fake engine.
+
+        Args:
+            board (chess.Board): The position.
+            level (Level): Ignored.
+            max_time_s (float | None): Recorded.
+
+        Returns:
+            chess.Move: The move.
+        """
+        await asyncio.sleep(0.05)
+        return await super().play(board, level, max_time_s)
+
+
+def test_a_resume_during_the_bot_search_does_not_play_twice(tmp_path):
+    """A reload while the bot searches waits for its move instead of playing another one.
+
+    Args:
+        tmp_path (Path): A folder for the database.
+    """
+    games = service(SlowEngine(), tmp_path, line("short", "e4"))
+    session = start(games, ["short"])
+
+    async def move_and_reload():
+        task = asyncio.create_task(games.user_move(session.game_id, "e2e4", None, None, None))
+        await asyncio.sleep(0.01)
+        await games.resume_active()
+        return await task
+
+    _, _, _, reply = asyncio.run(move_and_reload())
+    assert reply is not None
+    assert [record.by for record in session.moves] == ["user", "bot"]
+    assert session.is_user_turn
+
+
+def test_a_take_back_during_the_bot_search_drops_its_move(tmp_path):
+    """A take-back while the bot searches undoes the user's move, and the search is dropped.
+
+    Args:
+        tmp_path (Path): A folder for the database.
+    """
+    games = service(SlowEngine(), tmp_path, line("short", "e4"))
+    session = start(games, ["short"])
+
+    async def move_and_take_back():
+        task = asyncio.create_task(games.user_move(session.game_id, "e2e4", None, None, None))
+        await asyncio.sleep(0.01)
+        games.take_back(session.game_id, 1, None, None)
+        return await task
+
+    _, _, _, reply = asyncio.run(move_and_take_back())
+    assert reply is None
+    assert session.ply == 0
+    assert session.is_user_turn
 
 
 def test_the_bot_rolls_only_from_its_move_and_never_before(engine, tmp_path):
