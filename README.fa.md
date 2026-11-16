@@ -10,7 +10,7 @@
 
 > این ترجمه ماشینی است و هنوز بازبینی نشده است. از اصلاحات استقبال می‌کنیم: [پیشنهاد اصلاح](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=fa)
 
-مربی شطرنج محلی: با تنظیمات واقعی ساعت با Stockfish بازی کنید، گشایش‌هایتان را در برابر رباتی تمرین کنید که از کتاب پیروی می‌کند و نشان می‌دهد کجا از نظریه خارج شدید، و بازی‌هایتان را از PGN، Chess.com یا Lichess با نوار ارزیابی مرور کنید. Chess960 هم دارد. چندزبانه، به‌صورت یک ایمیج Docker یا یک برنامه دسکتاپ برای Linux،‏ Windows و macOS. روی رایانه خودتان (amd64 یا arm64) اجرا می‌شود، بدون حساب کاربری و بدون نیاز به اینترنت برای بازی.
+مربی گشایش که روی رایانه خودتان اجرا می‌شود: یک ربات رپرتوار شما را بازی می‌کند، وقتی نظریه تمام شود Stockfish ادامه می‌دهد، و هر بازی برای مرور ذخیره می‌شود. ساعت واقعی، Chess960، وارد کردن از PGN، Chess.com و Lichess. چندزبانه. Docker یا برنامه دسکتاپ، بدون حساب کاربری. روی Linux،‏ Windows و macOS (amd64 یا arm64) کار می‌کند، بدون نیاز به اینترنت برای بازی.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

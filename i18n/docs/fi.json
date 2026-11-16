@@ -1,6 +1,6 @@
 {
   "readme.logo": "Chess Trainerin logo: neljä shakkilaudan ruutua, joissa C, T, kynä ja kello",
-  "readme.intro": "Paikallinen shakkivalmentaja: pelaa Stockfishia vastaan oikeilla kelloasetuksilla, harjoittele avauksiasi bottia vastaan, joka seuraa kirjaa ja näyttää, missä poistuit teoriasta, ja käy pelisi läpi PGN:stä, Chess.comista tai Lichessistä arviopalkin kanssa. Chess960 mukana. Monikielinen, yhtenä Docker-imagena tai työpöytäsovelluksena Linuxille, Windowsille ja macOS:lle. Se toimii omalla koneellasi (amd64 tai arm64) ilman tiliä ja ilman internetiä pelaamiseen.",
+  "readme.intro": "Avausvalmentaja, jota käytät omalla koneellasi: botti pelaa repertuaariasi, Stockfish jatkaa, kun teoria loppuu, ja jokainen peli tallennetaan läpikäyntiä varten. Oikeat kellot, Chess960, tuonti PGN:stä, Chess.comista ja Lichessistä. Monikielinen. Docker tai työpöytäsovellus, ilman tiliä. Toimii Linuxissa, Windowsissa ja macOS:ssä (amd64 tai arm64) ilman internetiä pelaamiseen.",
   "readme.reviewed": "Vain Yhdysvaltain englanti, Brasilian portugali ja Latinalaisen Amerikan espanja on tarkistettu. Kaikki muut kielet, myös brittienglanti, ovat konekäännöksiä eikä niitä ole tarkistettu. Korjaukset ovat tervetulleita: avaa [Translation fix -issue]({fix}).",
   "readme.run.title": "Käynnistys",
   "readme.run.needs": "Tarvitset Dockerin ja Composen.",

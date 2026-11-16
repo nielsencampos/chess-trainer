@@ -1,6 +1,6 @@
 {
   "readme.logo": "Chess Trainer のロゴ：C と T、ペン、時計が描かれた盤の 4 マス",
-  "readme.intro": "ローカルで動くチェストレーナー：本物の時計設定で Stockfish と対局し、定跡書に従って定跡から外れた場所を示すボットを相手にオープニングを練習し、PGN、Chess.com、Lichess の対局を評価バー付きで振り返れます。Chess960 にも対応。多言語に対応し、1 つの Docker イメージとしても、Linux、Windows、macOS 用のデスクトップアプリとしても使えます。自分のマシン（amd64 または arm64）で動き、対局にアカウントもインターネットも要りません。",
+  "readme.intro": "自分のマシンで動くオープニングトレーナー：ボットがレパートリーどおりに指し、定跡が終わると Stockfish が引き継ぎ、すべての対局は振り返り用に保存されます。本物の対局時計、Chess960、PGN・Chess.com・Lichess からのインポート。多言語対応。Docker またはデスクトップアプリで、アカウント不要。Linux、Windows、macOS（amd64 または arm64）で動き、対局にインターネットは要りません。",
   "readme.reviewed": "確認済みなのは米国英語、ブラジル・ポルトガル語、中南米スペイン語だけです。英国英語を含むほかの言語はすべて機械翻訳で、確認されていません。修正を歓迎します：[Translation fix issue]({fix}) を作成してください。",
   "readme.run.title": "起動",
   "readme.run.needs": "Compose 付きの Docker が必要です。",

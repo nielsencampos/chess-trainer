@@ -10,7 +10,7 @@
 
 > Bản dịch này được tạo bằng máy và chưa được duyệt lại. Rất hoan nghênh các góp ý sửa lỗi: [đề xuất sửa](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=vi)
 
-Phần mềm luyện cờ chạy trên máy: chơi với Stockfish bằng các thiết lập đồng hồ thật, luyện khai cuộc với một bot đi theo sách và đánh dấu chỗ bạn rời lý thuyết, và xem lại các ván cờ từ PGN, Chess.com hoặc Lichess với thanh đánh giá. Có cả Chess960. Đa ngôn ngữ, dưới dạng một image Docker hoặc ứng dụng máy tính cho Linux, Windows và macOS. Chạy trên máy của bạn (amd64 hoặc arm64), không cần tài khoản và không cần internet để chơi.
+Phần mềm luyện khai cuộc chạy trên máy tính của bạn: một bot chơi theo bộ khai cuộc của bạn, Stockfish tiếp quản khi hết lý thuyết, và mọi ván cờ đều được lưu để xem lại. Đồng hồ thật, Chess960, nhập từ PGN, Chess.com và Lichess. Đa ngôn ngữ. Docker hoặc ứng dụng máy tính, không cần tài khoản. Hoạt động trên Linux, Windows và macOS (amd64 hoặc arm64), không cần internet để chơi.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

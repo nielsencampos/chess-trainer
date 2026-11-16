@@ -10,7 +10,7 @@
 
 > Bu çeviri makine tarafından yapıldı ve gözden geçirilmedi. Düzeltmeler memnuniyetle karşılanır: [düzeltme önerin](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=tr)
 
-Yerel satranç antrenörü: gerçek saat ayarlarıyla Stockfish'e karşı oynayın, açılışlarınızı kitabı izleyen ve teoriden nerede çıktığınızı gösteren bir bota karşı çalışın, PGN, Chess.com veya Lichess'ten gelen oyunlarınızı değerlendirme çubuğuyla inceleyin. Chess960 dahil. Çok dilli; tek bir Docker imajı ya da Linux, Windows ve macOS için bir masaüstü uygulaması olarak. Kendi makinenizde (amd64 veya arm64) çalışır; oynamak için hesap ve internet gerekmez.
+Kendi bilgisayarınızda çalışan açılış antrenörü: bir bot repertuvarınızı oynar, teori bittiğinde Stockfish devralır ve her oyun incelemek için kaydedilir. Gerçek saatler, Chess960, PGN, Chess.com ve Lichess'ten içe aktarma. Çok dilli. Docker ya da masaüstü uygulaması, hesap gerekmez. Linux, Windows ve macOS'ta (amd64 veya arm64) çalışır; oynamak için internete ihtiyaç duymaz.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)

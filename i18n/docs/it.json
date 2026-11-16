@@ -1,6 +1,6 @@
 {
   "readme.logo": "Logo di Chess Trainer: quattro case della scacchiera con C, T, una penna e un orologio",
-  "readme.intro": "Allenatore di scacchi locale: gioca contro Stockfish con cadenze reali dell'orologio, allena le tue aperture contro un bot che segue il libro e segnala dove sei uscito dalla teoria, e rivedi le tue partite da PGN, Chess.com o Lichess con una barra di valutazione. Chess960 incluso. Multilingue, come un'immagine Docker o un'app desktop per Linux, Windows e macOS. Funziona sul tuo computer (amd64 o arm64), senza account e senza internet per giocare.",
+  "readme.intro": "Allenatore di aperture che gira sul tuo computer: un bot gioca il tuo repertorio, Stockfish subentra quando finisce la teoria e ogni partita viene salvata per rivederla. Orologi veri, Chess960, importazione da PGN, Chess.com e Lichess. Multilingue. Docker o app desktop, senza account. Funziona su Linux, Windows e macOS (amd64 o arm64), senza internet per giocare.",
   "readme.reviewed": "Solo l'inglese degli Stati Uniti, il portoghese del Brasile e lo spagnolo dell'America Latina sono revisionati. Tutte le altre lingue, inglese britannico compreso, sono tradotte automaticamente e non revisionate. Le correzioni sono benvenute: apri una [issue Translation fix]({fix}).",
   "readme.run.title": "Avvio",
   "readme.run.needs": "Ti serve Docker con Compose.",
