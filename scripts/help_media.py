@@ -24,7 +24,7 @@ from app.locales import load_locales
 
 VIEWPORT = {"width": 1280, "height": 720}
 WIDTH = 960  # Largest output width; the help column is narrower, so this stays sharp.
-SIDEBAR = 380  # The left bar's default width, cropped out of the pictures of the board.
+SIDEBAR = 380  # The menu bar's default width, cropped out of the pictures of the board.
 QUALITY = 80
 LINE = "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. O-O O-O 6. d3"
 OUT = Path(__file__).resolve().parent.parent / "web" / "help"
@@ -83,14 +83,18 @@ def frame(page: Page, board_only: bool = True) -> Image.Image:
 
     Args:
         page (Page): The page.
-        board_only (bool): Crop out the left bar, so the board shows larger.
+        board_only (bool): Crop out the menu bar, so the board shows larger. It sits at the
+            start of the line: on the left, or on the right in a right-to-left language.
 
     Returns:
         Image.Image: The frame.
     """
     image = Image.open(io.BytesIO(page.screenshot())).convert("RGB")
     if board_only:
-        image = image.crop((SIDEBAR, 0, image.width, image.height))
+        if page.evaluate("document.documentElement.dir") == "rtl":
+            image = image.crop((0, 0, image.width - SIDEBAR, image.height))
+        else:
+            image = image.crop((SIDEBAR, 0, image.width, image.height))
     if image.width <= WIDTH:
         return image
     height = round(image.height * WIDTH / image.width)
@@ -246,7 +250,11 @@ def main() -> None:
     """Captures the pictures of every language."""
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--base-url", default="http://127.0.0.1:8000")
-    base_url = parser.parse_args().base_url.rstrip("/")
+    parser.add_argument(
+        "--locale", action="append", choices=LOCALES, help="only this language (repeatable)"
+    )
+    args = parser.parse_args()
+    base_url = args.base_url.rstrip("/")
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch()
 
@@ -267,7 +275,7 @@ def main() -> None:
             )
             return context.new_page()
 
-        for locale in LOCALES:
+        for locale in args.locale or LOCALES:
             capture_locale(new_page, base_url, locale)
         browser.close()
 
