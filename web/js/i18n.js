@@ -16,6 +16,8 @@ let own = {};
 let locale = DEFAULT_LOCALE;
 // Bumped on every switch, so a slow file that arrives after a newer choice is ignored.
 let loading = 0;
+/** @type {Promise<{code: string, name: string, dir: string}[]> | null} The registry's list, once. */
+let localeList = null;
 
 /** @type {Set<() => void>} */
 const listeners = new Set();
@@ -52,12 +54,24 @@ async function load(requested) {
       chosen = DEFAULT_LOCALE;
     }
   }
+  const direction = await localeDirection(chosen);
   if (ticket !== loading) return false;
   own = mine;
   strings = { ...fallback, ...own };
   locale = chosen;
   document.documentElement.lang = locale;
+  document.documentElement.dir = direction;
   return true;
+}
+
+/**
+ * A language's text direction, from the locale registry through `/api/locales` (brief §8).
+ * @param {string} code  The language code.
+ * @returns {Promise<string>} `rtl` or `ltr`; `ltr` when the list cannot be loaded.
+ */
+async function localeDirection(code) {
+  const locales = await availableLocales().catch(() => []);
+  return locales.find((item) => item.code === code)?.dir === "rtl" ? "rtl" : "ltr";
 }
 
 /**
@@ -103,6 +117,15 @@ export function getLocale() {
 }
 
 /**
+ * The language in use, for formatting dates and numbers: always with Western digits (0-9), which
+ * the move numbers, clocks and board coordinates use too, also in Arabic and Persian (#37).
+ * @returns {string} Its code with the Latin numbering system, such as `ar-u-nu-latn`.
+ */
+export function getFormatLocale() {
+  return `${locale}-u-nu-latn`;
+}
+
+/**
  * Called after every language switch, to draw again what a module rendered with `t()`.
  * @param {() => void} listener  Draws the module's text again.
  * @returns {void}
@@ -124,13 +147,21 @@ export function localize(element, render) {
 }
 
 /**
- * The languages that have a file in web/i18n, each named in its own language.
- * @returns {Promise<{code: string, name: string}[]>} The languages, English first.
+ * The languages that have a file in web/i18n, each named in its own language with its text
+ * direction. Asked once; a failed request is asked again next time.
+ * @returns {Promise<{code: string, name: string, dir: string}[]>} The languages, English first.
  */
 export async function availableLocales() {
-  const response = await fetch("api/locales");
-  if (!response.ok) return [{ code: DEFAULT_LOCALE, name: t("locale.name") }];
-  return (await response.json()).locales;
+  localeList ??= fetch("api/locales").then(async (response) => {
+    if (!response.ok) throw new Error("cannot load the list of languages");
+    return (await response.json()).locales;
+  });
+  try {
+    return [...(await localeList)];
+  } catch (error) {
+    localeList = null;
+    throw error;
+  }
 }
 
 /**

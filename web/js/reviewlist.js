@@ -115,6 +115,7 @@ function hasExtras(move) {
 function numberCell(text) {
   const cell = document.createElement("div");
   cell.className = "number";
+  cell.dir = "ltr";
   cell.textContent = text;
   return cell;
 }
@@ -244,6 +245,7 @@ function appendLine(parent, line, current) {
     if (white || index === 0) {
       const number = document.createElement("span");
       number.className = "variation-number";
+      number.dir = "ltr";
       number.textContent = `${Math.ceil(move.ply / 2)}${white ? "." : "…"}`;
       parent.append(number);
     }

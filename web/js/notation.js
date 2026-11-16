@@ -138,12 +138,15 @@ export function sanElement(san, shown = notation) {
 }
 
 /**
- * The moves of a book line, `1.e4 e5 2.Nf3`, drawn in a notation, numbers as they are.
+ * The moves of a book line, `1.e4 e5 2.Nf3`, drawn in a notation, numbers as they are. Like PGN,
+ * the line reads left to right in every language, isolated from the text around it (#37).
  * @param {string} pgn  The line's moves, in English SAN with move numbers.
- * @returns {DocumentFragment} The moves.
+ * @returns {HTMLSpanElement} The moves.
  */
 export function lineElement(pgn) {
-  const fragment = document.createDocumentFragment();
+  const fragment = document.createElement("span");
+  fragment.className = "notation-line";
+  fragment.dir = "ltr";
   pgn.split(" ").forEach((token, index) => {
     if (index > 0) fragment.append(" ");
     const [, number, san] = /^(\d+\.(?:\.\.)?)?(.*)$/.exec(token) ?? [];

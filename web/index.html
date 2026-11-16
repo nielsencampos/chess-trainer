@@ -247,9 +247,10 @@
         <section class="board-column">
         <div class="player">
           <span id="top-name" class="player-name"></span>
-          <span id="top-clock" class="clock" hidden></span>
+          <span id="top-clock" class="clock" dir="ltr" hidden></span>
         </div>
-        <div class="board-holder">
+        <!-- The board and the eval bar never mirror: files run a to h left to right (#37). -->
+        <div class="board-holder" dir="ltr">
           <div id="eval-bar" class="eval-bar" hidden>
             <div id="eval-fill" class="eval-fill"></div>
             <span id="eval-label" class="eval-label bottom"></span>
@@ -258,7 +259,7 @@
         </div>
         <div class="player">
           <span id="bottom-name" class="player-name"></span>
-          <span id="bottom-clock" class="clock" hidden></span>
+          <span id="bottom-clock" class="clock" dir="ltr" hidden></span>
         </div>
         <div id="chips" class="chips" aria-live="polite"></div>
       </section>
@@ -650,7 +651,8 @@
               <span class="hint" data-i18n="sheet.printHint"></span>
             </div>
           </div>
-          <div id="sheet-frame" class="sheet-frame">
+          <!-- The printed scoresheet stays left to right, like the moves written on it (#37). -->
+          <div id="sheet-frame" class="sheet-frame" dir="ltr">
             <div class="sheet">
             <header class="sheet-head">
               <img class="sheet-logo" src="logo.svg" alt="Chess Trainer" width="64" height="64" />

@@ -57,6 +57,8 @@ function numbered(ply, san) {
   const number = Math.ceil(ply / 2);
   const played = document.createElement("span");
   played.className = "played";
+  // "12. Nf3" reads left to right in a right-to-left language too (#37).
+  played.dir = "ltr";
   played.tabIndex = 0;
   played.dataset.tip = "";
   played.append(ply % 2 === 1 ? `${number}. ` : `${number}... `, sanElement(san));
