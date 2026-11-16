@@ -160,9 +160,10 @@ source = "https://he.wikipedia.org/wiki/פתיחה_(שחמט)"
 
 [[terms]]
 term = "variation"
-translation = "וריאנט"
-machine = true
-note = "No Wikipedia page names it."
+translation = "וריאציה"
+source = "https://he.wikipedia.org/wiki/פתיחה_ספרדית,_וריאצית_ההחלפה"
+note = "As the article's title writes it (\"וריאצית ההחלפה\")."
+avoid = ["וריאנט"]
 
 [[terms]]
 term = "line"
@@ -423,9 +424,9 @@ source = "https://he.wikipedia.org/wiki/ילד_פלא_בשחמט"
 
 [[terms]]
 term = "{name} Variation"
-translation = "וריאנט {name}"
-machine = true
-note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+translation = "וריאצית {name}"
+source = "https://he.wikipedia.org/wiki/פתיחה_ספרדית,_וריאצית_ההחלפה"
+note = "The article's \"וריאצית ההחלפה\", the construct state. For opening names, segment by segment (brief §8); {name} is the proper name written in Hebrew letters (\"נאידורף\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
 
 [[terms]]
 term = "{name} Defense"
