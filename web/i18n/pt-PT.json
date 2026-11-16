@@ -260,6 +260,8 @@
   "help.fairPlay.text": "Não use o Chess Trainer, nem nenhum outro motor de xadrez, durante uma partida contra outra pessoa, online ou ao tabuleiro. Isso é batota, e o Chess.com, o Lichess e a FIDE proíbem-no. Treine antes e depois das partidas, nunca durante.",
   "help.eval.title": "A avaliação aqui é simples",
   "help.eval.text": "A barra de avaliação resulta de uma verificação rápida do Stockfish e é apenas uma pista. Os ícones dos lances (melhor lance, erro, erro grave…) são a classificação do site de onde veio a partida, lida do seu PGN: a aplicação não calcula nenhum. Para uma análise a sério, exporte o PGN e analise-o no Chess.com, no Lichess ou noutra ferramenta de análise.",
+  "desktop.launchError": "O Chess Trainer não conseguiu arrancar. Outro programa pode estar a usar a porta {port}, ou não foi possível abrir a base de dados. Os detalhes estão no registo: {log}",
+  "desktop.starting": "A iniciar o Chess Trainer… O primeiro arranque prepara o livro de aberturas e pode demorar até um minuto.",
   "help.start.title": "Começar uma partida",
   "help.start.opening": "Abertura: escolha a cor e marque as aberturas e variantes a treinar. Cada variante marcada tem a mesma probabilidade de sair. Jogar um lance de uma variante não marcada conta como sair da teoria.",
   "help.start.saved": "Partida guardada: treine a linha de uma partida já disputada ou importada, com os lances verificados, ou continue a jogar a partir de qualquer uma das suas posições.",

@@ -256,6 +256,8 @@
   "help.fairPlay.text": "与他人对局时，无论在网上还是在棋盘前，都不要使用 Chess Trainer 或任何引擎。那是作弊，Chess.com、Lichess 和 FIDE 都禁止。在对局之前和之后练习，绝不要在对局中。",
   "help.eval.title": "这里的评估很基础",
   "help.eval.text": "评估条来自 Stockfish 的快速检查，只是一个提示。着法图标（最佳着法、错着、漏着…）是对局来源网站的分类，从其 PGN 中读取：本应用不计算任何图标。要做真正的分析，请导出 PGN，在 Chess.com、Lichess 或其他分析工具中分析。",
+  "desktop.launchError": "Chess Trainer 无法启动。可能有其他程序正在使用端口 {port}，或者无法打开数据库。详细信息见日志：{log}",
+  "desktop.starting": "正在启动 Chess Trainer… 首次启动会准备开局库，最多可能需要一分钟。",
   "help.start.title": "开始对局",
   "help.start.opening": "开局：选择你的颜色，勾选要操练的开局和变着。每个勾选的变着被抽中的机会相同。走出你没有勾选的变着中的一步，算作离开理论。",
   "help.start.saved": "已保存的对局：练习你下过或导入的一局对局的变化，让它的着法得到检查；或者从它的任意局面接着下。",

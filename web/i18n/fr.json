@@ -260,6 +260,8 @@
   "help.fairPlay.text": "N'utilisez pas Chess Trainer, ni aucun autre moteur, pendant une partie contre une autre personne, en ligne ou sur l'échiquier. C'est de la triche, et Chess.com, Lichess et la FIDE l'interdisent. Entraînez-vous avant et après vos parties, jamais pendant.",
   "help.eval.title": "L'évaluation est sommaire",
   "help.eval.text": "La barre d'évaluation vient d'un examen rapide par Stockfish et n'est qu'une indication. Les icônes des coups (meilleur coup, erreur, gaffe…) sont le classement du site d'où vient la partie, lu dans son PGN : l'application n'en calcule aucune. Pour une vraie analyse, exportez le PGN et analysez-le sur Chess.com, sur Lichess ou avec un autre outil d'analyse.",
+  "desktop.launchError": "Chess Trainer n'a pas pu démarrer. Un autre programme utilise peut-être le port {port}, ou la base de données n'a pas pu être ouverte. Les détails sont dans le journal : {log}",
+  "desktop.starting": "Démarrage de Chess Trainer… Le premier démarrage prépare le répertoire d'ouvertures et peut prendre jusqu'à une minute.",
   "help.start.title": "Commencer une partie",
   "help.start.opening": "Ouverture : choisissez votre couleur et cochez les ouvertures et variantes à travailler. Chaque variante cochée a la même probabilité d'être tirée. Jouer un coup d'une variante que vous n'avez pas cochée compte comme une sortie de la théorie.",
   "help.start.saved": "Partie enregistrée : travaillez la ligne d'une partie que vous avez jouée ou importée, avec vos coups vérifiés, ou continuez à jouer à partir de n'importe laquelle de ses positions.",
