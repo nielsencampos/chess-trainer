@@ -14,7 +14,11 @@
     "pl": "Obrona Benoni",
     "nl": "Benoni",
     "id": "Pertahanan Benoni",
-    "vi": "Phòng thủ Benoni"
+    "vi": "Phòng thủ Benoni",
+    "sv": "Benoniförsvaret",
+    "da": "Benoniforsvaret",
+    "nb": "Benoni",
+    "fi": "Benoni-puolustus"
   },
   "order": 10,
   "variants": [
@@ -33,7 +37,11 @@
         "nl": "Klassieke variant",
         "id": "Variasi Klasik",
         "vi": "Phương án cổ điển",
-        "pl": "Wariant klasyczny"
+        "pl": "Wariant klasyczny",
+        "sv": "Klassiska varianten",
+        "da": "Klassisk variant",
+        "nb": "Klassisk variant",
+        "fi": "Klassinen muunnelma"
       },
       "lines": [
         {
@@ -52,7 +60,11 @@
             "nl": "Klassieke variant",
             "id": "Variasi Klasik",
             "vi": "Phương án cổ điển",
-            "pl": "Wariant klasyczny"
+            "pl": "Wariant klasyczny",
+            "sv": "Klassiska varianten",
+            "da": "Klassisk variant",
+            "nb": "Klassisk variant",
+            "fi": "Klassinen muunnelma"
           },
           "eco": "A72",
           "opening": "Benoni Defense: Classical Variation",
@@ -75,7 +87,11 @@
             "nl": "Klassieke variant, Hoofdvariant",
             "id": "Variasi Klasik, Lini Utama",
             "vi": "Phương án cổ điển, Phương án chính",
-            "pl": "Wariant klasyczny, Wariant główny"
+            "pl": "Wariant klasyczny, Wariant główny",
+            "sv": "Klassiska varianten, Huvudvariant",
+            "da": "Klassisk variant, Hovedvariant",
+            "nb": "Klassisk variant, Hovedvariant",
+            "fi": "Klassinen muunnelma, Päämuunnelma"
           },
           "eco": "A73",
           "opening": "Benoni Defense: Classical Variation, Main Line",
@@ -98,7 +114,11 @@
             "nl": "Klassieke variant, Czerniakverdediging",
             "id": "Variasi Klasik, Pertahanan Czerniak",
             "vi": "Phương án cổ điển, Phòng thủ Czerniak",
-            "pl": "Wariant klasyczny, Obrona Czerniak"
+            "pl": "Wariant klasyczny, Obrona Czerniak",
+            "sv": "Klassiska varianten, Czerniakförsvaret",
+            "da": "Klassisk variant, Czerniakforsvaret",
+            "nb": "Klassisk variant, Czerniakforsvaret",
+            "fi": "Klassinen muunnelma, Czerniak-puolustus"
           },
           "eco": "A76",
           "opening": "Benoni Defense: Classical Variation, Czerniak Defense",
@@ -121,7 +141,11 @@
             "nl": "Klassieke variant, Czerniakverdediging, Tallijn",
             "id": "Variasi Klasik, Pertahanan Czerniak, Lini Tal",
             "vi": "Phương án cổ điển, Phòng thủ Czerniak, Diễn biến Tal",
-            "pl": "Wariant klasyczny, Obrona Czerniak, Linia Tal"
+            "pl": "Wariant klasyczny, Obrona Czerniak, Linia Tal",
+            "sv": "Klassiska varianten, Czerniakförsvaret, Talvarianten",
+            "da": "Klassisk variant, Czerniakforsvaret, Talvarianten",
+            "nb": "Klassisk variant, Czerniakforsvaret, Talvarianten",
+            "fi": "Klassinen muunnelma, Czerniak-puolustus, Tal-linja"
           },
           "eco": "A77",
           "opening": "Benoni Defense: Classical Variation, Czerniak Defense, Tal Line",
@@ -144,7 +168,11 @@
             "nl": "Klassieke variant, Czerniakverdediging",
             "id": "Variasi Klasik, Pertahanan Czerniak",
             "vi": "Phương án cổ điển, Phòng thủ Czerniak",
-            "pl": "Wariant klasyczny, Obrona Czerniak"
+            "pl": "Wariant klasyczny, Obrona Czerniak",
+            "sv": "Klassiska varianten, Czerniakförsvaret",
+            "da": "Klassisk variant, Czerniakforsvaret",
+            "nb": "Klassisk variant, Czerniakforsvaret",
+            "fi": "Klassinen muunnelma, Czerniak-puolustus"
           },
           "eco": "A79",
           "opening": "Benoni Defense: Classical Variation, Czerniak Defense",
@@ -167,7 +195,11 @@
             "nl": "Klassieke variant, Czerniakverdediging, Tallijn",
             "id": "Variasi Klasik, Pertahanan Czerniak, Lini Tal",
             "vi": "Phương án cổ điển, Phòng thủ Czerniak, Diễn biến Tal",
-            "pl": "Wariant klasyczny, Obrona Czerniak, Linia Tal"
+            "pl": "Wariant klasyczny, Obrona Czerniak, Linia Tal",
+            "sv": "Klassiska varianten, Czerniakförsvaret, Talvarianten",
+            "da": "Klassisk variant, Czerniakforsvaret, Talvarianten",
+            "nb": "Klassisk variant, Czerniakforsvaret, Talvarianten",
+            "fi": "Klassinen muunnelma, Czerniak-puolustus, Tal-linja"
           },
           "eco": "A77",
           "opening": "Benoni Defense: Classical Variation, Czerniak Defense, Tal Line",
@@ -190,7 +222,11 @@
             "nl": "Klassieke variant, Volledige lijn",
             "id": "Variasi Klasik, Lini Penuh",
             "vi": "Phương án cổ điển, Diễn biến đầy đủ",
-            "pl": "Wariant klasyczny, Linia pełna"
+            "pl": "Wariant klasyczny, Linia pełna",
+            "sv": "Klassiska varianten, Fullständiga varianten",
+            "da": "Klassisk variant, Fuldstændig variant",
+            "nb": "Klassisk variant, Fullstendig variant",
+            "fi": "Klassinen muunnelma, Täydellinen linja"
           },
           "eco": "A74",
           "opening": "Benoni Defense: Classical Variation, Full Line",
@@ -213,7 +249,11 @@
             "nl": "Klassieke variant",
             "id": "Variasi Klasik",
             "vi": "Phương án cổ điển",
-            "pl": "Wariant klasyczny"
+            "pl": "Wariant klasyczny",
+            "sv": "Klassiska varianten",
+            "da": "Klassisk variant",
+            "nb": "Klassisk variant",
+            "fi": "Klassinen muunnelma"
           },
           "eco": "A70",
           "opening": "Benoni Defense: Classical Variation",
@@ -236,7 +276,11 @@
             "nl": "Klassieke variant, Traditionele variant",
             "id": "Variasi Klasik, Variasi Tradisional",
             "vi": "Phương án cổ điển, Phương án truyền thống",
-            "pl": "Wariant klasyczny, Wariant tradycyjny"
+            "pl": "Wariant klasyczny, Wariant tradycyjny",
+            "sv": "Klassiska varianten, Traditionella varianten",
+            "da": "Klassisk variant, Traditionel variant",
+            "nb": "Klassisk variant, Tradisjonell variant",
+            "fi": "Klassinen muunnelma, Perinteinen muunnelma"
           },
           "eco": "A70",
           "opening": "Benoni Defense: Classical Variation, Traditional Variation",
@@ -259,7 +303,11 @@
             "nl": "Klassieke variant, Czerniakverdediging",
             "id": "Variasi Klasik, Pertahanan Czerniak",
             "vi": "Phương án cổ điển, Phòng thủ Czerniak",
-            "pl": "Wariant klasyczny, Obrona Czerniak"
+            "pl": "Wariant klasyczny, Obrona Czerniak",
+            "sv": "Klassiska varianten, Czerniakförsvaret",
+            "da": "Klassisk variant, Czerniakforsvaret",
+            "nb": "Klassisk variant, Czerniakforsvaret",
+            "fi": "Klassinen muunnelma, Czerniak-puolustus"
           },
           "eco": "A78",
           "opening": "Benoni Defense: Classical Variation, Czerniak Defense",
@@ -282,7 +330,11 @@
             "nl": "Klassieke variant, Argentijnse tegenaanval",
             "id": "Variasi Klasik, Serangan Balik Argentina",
             "vi": "Phương án cổ điển, Phản công Argentina",
-            "pl": "Wariant klasyczny, Kontratak argentyński"
+            "pl": "Wariant klasyczny, Kontratak argentyński",
+            "sv": "Klassiska varianten, Argentinska motattacken",
+            "da": "Klassisk variant, Argentinsk modangreb",
+            "nb": "Klassisk variant, Argentinsk motangrep",
+            "fi": "Klassinen muunnelma, Argentiinalainen vastahyökkäys"
           },
           "eco": "A75",
           "opening": "Benoni Defense: Classical Variation, Argentine Counterattack",
@@ -305,7 +357,11 @@
             "nl": "Klassieke variant, Averbakh-Grivasaanval",
             "id": "Variasi Klasik, Serangan Averbakh-Grivas",
             "vi": "Phương án cổ điển, Tấn công Averbakh-Grivas",
-            "pl": "Wariant klasyczny, Atak Averbakh-Grivas"
+            "pl": "Wariant klasyczny, Atak Averbakh-Grivas",
+            "sv": "Klassiska varianten, Averbakh-Grivasattacken",
+            "da": "Klassisk variant, Averbakh-Grivasangrebet",
+            "nb": "Klassisk variant, Averbakh-Grivasangrepet",
+            "fi": "Klassinen muunnelma, Averbakh-Grivas-hyökkäys"
           },
           "eco": "A71",
           "opening": "Benoni Defense: Classical Variation, Averbakh-Grivas Attack",
@@ -328,7 +384,11 @@
             "nl": "Klassieke variant, New York-variant",
             "id": "Variasi Klasik, Variasi New York",
             "vi": "Phương án cổ điển, Phương án New York",
-            "pl": "Wariant klasyczny, Wariant nowojorski"
+            "pl": "Wariant klasyczny, Wariant nowojorski",
+            "sv": "Klassiska varianten, New York-varianten",
+            "da": "Klassisk variant, New York-varianten",
+            "nb": "Klassisk variant, New York-varianten",
+            "fi": "Klassinen muunnelma, New York-muunnelma"
           },
           "eco": "A70",
           "opening": "Benoni Defense: Classical Variation, New York Variation",
@@ -352,7 +412,11 @@
         "nl": "Koningspionlijn",
         "id": "Lini Bidak Raja",
         "vi": "Diễn biến Tốt Vua",
-        "pl": "Linia piona królewskiego"
+        "pl": "Linia piona królewskiego",
+        "sv": "Kungsbondevarianten",
+        "da": "Kongebondevarianten",
+        "nb": "Kongebondevarianten",
+        "fi": "Kuningassotilaslinja"
       },
       "lines": [
         {
@@ -371,7 +435,11 @@
             "nl": "Koningspionlijn",
             "id": "Lini Bidak Raja",
             "vi": "Diễn biến Tốt Vua",
-            "pl": "Linia piona królewskiego"
+            "pl": "Linia piona królewskiego",
+            "sv": "Kungsbondevarianten",
+            "da": "Kongebondevarianten",
+            "nb": "Kongebondevarianten",
+            "fi": "Kuningassotilaslinja"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line",
@@ -394,7 +462,11 @@
             "nl": "Koningspionlijn",
             "id": "Lini Bidak Raja",
             "vi": "Diễn biến Tốt Vua",
-            "pl": "Linia piona królewskiego"
+            "pl": "Linia piona królewskiego",
+            "sv": "Kungsbondevarianten",
+            "da": "Kongebondevarianten",
+            "nb": "Kongebondevarianten",
+            "fi": "Kuningassotilaslinja"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line",
@@ -417,7 +489,11 @@
             "nl": "Koningspionlijn, met Be3",
             "id": "Lini Bidak Raja, dengan Be3",
             "vi": "Diễn biến Tốt Vua, với Be3",
-            "pl": "Linia piona królewskiego, z Be3"
+            "pl": "Linia piona królewskiego, z Be3",
+            "sv": "Kungsbondevarianten, med Be3",
+            "da": "Kongebondevarianten, med Be3",
+            "nb": "Kongebondevarianten, med Be3",
+            "fi": "Kuningassotilaslinja, jossa Be3"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Be3",
@@ -440,7 +516,11 @@
             "nl": "Koningspionlijn, met Bg5",
             "id": "Lini Bidak Raja, dengan Bg5",
             "vi": "Diễn biến Tốt Vua, với Bg5",
-            "pl": "Linia piona królewskiego, z Bg5"
+            "pl": "Linia piona królewskiego, z Bg5",
+            "sv": "Kungsbondevarianten, med Bg5",
+            "da": "Kongebondevarianten, med Bg5",
+            "nb": "Kongebondevarianten, med Bg5",
+            "fi": "Kuningassotilaslinja, jossa Bg5"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Bg5",
@@ -463,7 +543,11 @@
             "nl": "Koningspionlijn, met Nge2",
             "id": "Lini Bidak Raja, dengan Nge2",
             "vi": "Diễn biến Tốt Vua, với Nge2",
-            "pl": "Linia piona królewskiego, z Nge2"
+            "pl": "Linia piona królewskiego, z Nge2",
+            "sv": "Kungsbondevarianten, med Nge2",
+            "da": "Kongebondevarianten, med Nge2",
+            "nb": "Kongebondevarianten, med Nge2",
+            "fi": "Kuningassotilaslinja, jossa Nge2"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Nge2",
@@ -486,7 +570,11 @@
             "nl": "Koningspionlijn, met Bg5",
             "id": "Lini Bidak Raja, dengan Bg5",
             "vi": "Diễn biến Tốt Vua, với Bg5",
-            "pl": "Linia piona królewskiego, z Bg5"
+            "pl": "Linia piona królewskiego, z Bg5",
+            "sv": "Kungsbondevarianten, med Bg5",
+            "da": "Kongebondevarianten, med Bg5",
+            "nb": "Kongebondevarianten, med Bg5",
+            "fi": "Kuningassotilaslinja, jossa Bg5"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Bg5",
@@ -509,7 +597,11 @@
             "nl": "Koningspionlijn, met Bg5",
             "id": "Lini Bidak Raja, dengan Bg5",
             "vi": "Diễn biến Tốt Vua, với Bg5",
-            "pl": "Linia piona królewskiego, z Bg5"
+            "pl": "Linia piona królewskiego, z Bg5",
+            "sv": "Kungsbondevarianten, med Bg5",
+            "da": "Kongebondevarianten, med Bg5",
+            "nb": "Kongebondevarianten, med Bg5",
+            "fi": "Kuningassotilaslinja, jossa Bg5"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Bg5",
@@ -532,7 +624,11 @@
             "nl": "Koningspionlijn, met Nge2",
             "id": "Lini Bidak Raja, dengan Nge2",
             "vi": "Diễn biến Tốt Vua, với Nge2",
-            "pl": "Linia piona królewskiego, z Nge2"
+            "pl": "Linia piona królewskiego, z Nge2",
+            "sv": "Kungsbondevarianten, med Nge2",
+            "da": "Kongebondevarianten, med Nge2",
+            "nb": "Kongebondevarianten, med Nge2",
+            "fi": "Kuningassotilaslinja, jossa Nge2"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line, with Nge2",
@@ -555,7 +651,11 @@
             "nl": "Koningspionlijn",
             "id": "Lini Bidak Raja",
             "vi": "Diễn biến Tốt Vua",
-            "pl": "Linia piona królewskiego"
+            "pl": "Linia piona królewskiego",
+            "sv": "Kungsbondevarianten",
+            "da": "Kongebondevarianten",
+            "nb": "Kongebondevarianten",
+            "fi": "Kuningassotilaslinja"
           },
           "eco": "A65",
           "opening": "Benoni Defense: King's Pawn Line",
@@ -579,7 +679,11 @@
         "nl": "Vierpionnenaanval",
         "id": "Serangan Empat Bidak",
         "vi": "Tấn công bốn Tốt",
-        "pl": "Atak czterech pionów"
+        "pl": "Atak czterech pionów",
+        "sv": "Fyrbondeattacken",
+        "da": "Firebondeangrebet",
+        "nb": "Firebondeangrepet",
+        "fi": "Neljän sotilaan hyökkäys"
       },
       "lines": [
         {
@@ -598,7 +702,11 @@
             "nl": "Vierpionnenaanval",
             "id": "Serangan Empat Bidak",
             "vi": "Tấn công bốn Tốt",
-            "pl": "Atak czterech pionów"
+            "pl": "Atak czterech pionów",
+            "sv": "Fyrbondeattacken",
+            "da": "Firebondeangrebet",
+            "nb": "Firebondeangrepet",
+            "fi": "Neljän sotilaan hyökkäys"
           },
           "eco": "A68",
           "opening": "Benoni Defense: Four Pawns Attack",
@@ -621,7 +729,11 @@
             "nl": "Vierpionnenaanval",
             "id": "Serangan Empat Bidak",
             "vi": "Tấn công bốn Tốt",
-            "pl": "Atak czterech pionów"
+            "pl": "Atak czterech pionów",
+            "sv": "Fyrbondeattacken",
+            "da": "Firebondeangrebet",
+            "nb": "Firebondeangrepet",
+            "fi": "Neljän sotilaan hyökkäys"
           },
           "eco": "A68",
           "opening": "Benoni Defense: Four Pawns Attack",
@@ -644,7 +756,11 @@
             "nl": "Vierpionnenaanval, Hoofdvariant",
             "id": "Serangan Empat Bidak, Lini Utama",
             "vi": "Tấn công bốn Tốt, Phương án chính",
-            "pl": "Atak czterech pionów, Wariant główny"
+            "pl": "Atak czterech pionów, Wariant główny",
+            "sv": "Fyrbondeattacken, Huvudvariant",
+            "da": "Firebondeangrebet, Hovedvariant",
+            "nb": "Firebondeangrepet, Hovedvariant",
+            "fi": "Neljän sotilaan hyökkäys, Päämuunnelma"
           },
           "eco": "A69",
           "opening": "Benoni Defense: Four Pawns Attack, Main Line",
@@ -667,7 +783,11 @@
             "nl": "Vierpionnenaanval, Hoofdvariant",
             "id": "Serangan Empat Bidak, Lini Utama",
             "vi": "Tấn công bốn Tốt, Phương án chính",
-            "pl": "Atak czterech pionów, Wariant główny"
+            "pl": "Atak czterech pionów, Wariant główny",
+            "sv": "Fyrbondeattacken, Huvudvariant",
+            "da": "Firebondeangrebet, Hovedvariant",
+            "nb": "Firebondeangrepet, Hovedvariant",
+            "fi": "Neljän sotilaan hyökkäys, Päämuunnelma"
           },
           "eco": "A69",
           "opening": "Benoni Defense: Four Pawns Attack, Main Line",
@@ -690,7 +810,11 @@
             "nl": "Vierpionnenaanval, Hoofdvariant",
             "id": "Serangan Empat Bidak, Lini Utama",
             "vi": "Tấn công bốn Tốt, Phương án chính",
-            "pl": "Atak czterech pionów, Wariant główny"
+            "pl": "Atak czterech pionów, Wariant główny",
+            "sv": "Fyrbondeattacken, Huvudvariant",
+            "da": "Firebondeangrebet, Hovedvariant",
+            "nb": "Firebondeangrepet, Hovedvariant",
+            "fi": "Neljän sotilaan hyökkäys, Päämuunnelma"
           },
           "eco": "A69",
           "opening": "Benoni Defense: Four Pawns Attack, Main Line",
@@ -713,7 +837,11 @@
             "nl": "Vierpionnenaanval, Hoofdvariant",
             "id": "Serangan Empat Bidak, Lini Utama",
             "vi": "Tấn công bốn Tốt, Phương án chính",
-            "pl": "Atak czterech pionów, Wariant główny"
+            "pl": "Atak czterech pionów, Wariant główny",
+            "sv": "Fyrbondeattacken, Huvudvariant",
+            "da": "Firebondeangrebet, Hovedvariant",
+            "nb": "Firebondeangrepet, Hovedvariant",
+            "fi": "Neljän sotilaan hyökkäys, Päämuunnelma"
           },
           "eco": "A69",
           "opening": "Benoni Defense: Four Pawns Attack, Main Line",
@@ -737,7 +865,11 @@
         "nl": "Oude Benoni",
         "id": "Benoni Lama",
         "vi": "Benoni cổ",
-        "pl": "Stare Benoni"
+        "pl": "Stare Benoni",
+        "sv": "Gammal Benoni",
+        "da": "Gammel Benoni",
+        "nb": "Gammel Benoni",
+        "fi": "Vanha Benoni"
       },
       "lines": [
         {
@@ -756,7 +888,11 @@
             "nl": "Oude Benoni",
             "id": "Benoni Lama",
             "vi": "Benoni cổ",
-            "pl": "Stare Benoni"
+            "pl": "Stare Benoni",
+            "sv": "Gammal Benoni",
+            "da": "Gammel Benoni",
+            "nb": "Gammel Benoni",
+            "fi": "Vanha Benoni"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Old Benoni",
@@ -779,7 +915,11 @@
             "nl": "Oude Benoni",
             "id": "Benoni Lama",
             "vi": "Benoni cổ",
-            "pl": "Stare Benoni"
+            "pl": "Stare Benoni",
+            "sv": "Gammal Benoni",
+            "da": "Gammel Benoni",
+            "nb": "Gammel Benoni",
+            "fi": "Vanha Benoni"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Old Benoni",
@@ -802,7 +942,11 @@
             "nl": "Oude Benoni",
             "id": "Benoni Lama",
             "vi": "Benoni cổ",
-            "pl": "Stare Benoni"
+            "pl": "Stare Benoni",
+            "sv": "Gammal Benoni",
+            "da": "Gammel Benoni",
+            "nb": "Gammel Benoni",
+            "fi": "Vanha Benoni"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Old Benoni",
@@ -825,7 +969,11 @@
             "nl": "Oude Benoni, Schmidvariant",
             "id": "Benoni Lama, Variasi Schmid",
             "vi": "Benoni cổ, Phương án Schmid",
-            "pl": "Stare Benoni, Wariant Schmid"
+            "pl": "Stare Benoni, Wariant Schmid",
+            "sv": "Gammal Benoni, Schmidvarianten",
+            "da": "Gammel Benoni, Schmidvarianten",
+            "nb": "Gammel Benoni, Schmidvarianten",
+            "fi": "Vanha Benoni, Schmid-muunnelma"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Old Benoni, Schmid Variation",
@@ -848,7 +996,11 @@
             "nl": "Oude Benoni",
             "id": "Benoni Lama",
             "vi": "Benoni cổ",
-            "pl": "Stare Benoni"
+            "pl": "Stare Benoni",
+            "sv": "Gammal Benoni",
+            "da": "Gammel Benoni",
+            "nb": "Gammel Benoni",
+            "fi": "Vanha Benoni"
           },
           "eco": "A44",
           "opening": "Benoni Defense: Old Benoni",
@@ -871,7 +1023,11 @@
             "nl": "Oude Benoni, Mujannahopstelling",
             "id": "Benoni Lama, Formasi Mujannah",
             "vi": "Benoni cổ, Thế trận Mujannah",
-            "pl": "Stare Benoni, Formacja Mujannah"
+            "pl": "Stare Benoni, Formacja Mujannah",
+            "sv": "Gammal Benoni, Mujannahuppställningen",
+            "da": "Gammel Benoni, Mujannahopstillingen",
+            "nb": "Gammel Benoni, Mujannahoppstillingen",
+            "fi": "Vanha Benoni, Mujannah-asetelma"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Old Benoni, Mujannah Formation",
@@ -895,7 +1051,11 @@
         "nl": "Fianchettovariant",
         "id": "Variasi Fianchetto",
         "vi": "Phương án fianchetto",
-        "pl": "Wariant z fianchettem"
+        "pl": "Wariant z fianchettem",
+        "sv": "Fianchettovarianten",
+        "da": "Fianchettovarianten",
+        "nb": "Fianchettovarianten",
+        "fi": "Fiankettomuunnelma"
       },
       "lines": [
         {
@@ -914,7 +1074,11 @@
             "nl": "Fianchettovariant",
             "id": "Variasi Fianchetto",
             "vi": "Phương án fianchetto",
-            "pl": "Wariant z fianchettem"
+            "pl": "Wariant z fianchettem",
+            "sv": "Fianchettovarianten",
+            "da": "Fianchettovarianten",
+            "nb": "Fianchettovarianten",
+            "fi": "Fiankettomuunnelma"
           },
           "eco": "A61",
           "opening": "Benoni Defense: Fianchetto Variation",
@@ -937,7 +1101,11 @@
             "nl": "Fianchettovariant",
             "id": "Variasi Fianchetto",
             "vi": "Phương án fianchetto",
-            "pl": "Wariant z fianchettem"
+            "pl": "Wariant z fianchettem",
+            "sv": "Fianchettovarianten",
+            "da": "Fianchettovarianten",
+            "nb": "Fianchettovarianten",
+            "fi": "Fiankettomuunnelma"
           },
           "eco": "A62",
           "opening": "Benoni Defense: Fianchetto Variation",
@@ -960,7 +1128,11 @@
             "nl": "Fianchettovariant, Hastingsverdediging",
             "id": "Variasi Fianchetto, Pertahanan Hastings",
             "vi": "Phương án fianchetto, Phòng thủ Hastings",
-            "pl": "Wariant z fianchettem, Obrona Hastings"
+            "pl": "Wariant z fianchettem, Obrona Hastings",
+            "sv": "Fianchettovarianten, Hastingsförsvaret",
+            "da": "Fianchettovarianten, Hastingsforsvaret",
+            "nb": "Fianchettovarianten, Hastingsforsvaret",
+            "fi": "Fiankettomuunnelma, Hastings-puolustus"
           },
           "eco": "A63",
           "opening": "Benoni Defense: Fianchetto Variation, Hastings Defense",
@@ -983,7 +1155,11 @@
             "nl": "Fianchettovariant, Hastingsverdediging, Hoofdvariant",
             "id": "Variasi Fianchetto, Pertahanan Hastings, Lini Utama",
             "vi": "Phương án fianchetto, Phòng thủ Hastings, Phương án chính",
-            "pl": "Wariant z fianchettem, Obrona Hastings, Wariant główny"
+            "pl": "Wariant z fianchettem, Obrona Hastings, Wariant główny",
+            "sv": "Fianchettovarianten, Hastingsförsvaret, Huvudvariant",
+            "da": "Fianchettovarianten, Hastingsforsvaret, Hovedvariant",
+            "nb": "Fianchettovarianten, Hastingsforsvaret, Hovedvariant",
+            "fi": "Fiankettomuunnelma, Hastings-puolustus, Päämuunnelma"
           },
           "eco": "A64",
           "opening": "Benoni Defense: Fianchetto Variation, Hastings Defense, Main Line",
@@ -1007,7 +1183,11 @@
         "pl": "Gambit Zilbermints-Benoni",
         "nl": "Zilbermints-Benonigambiet",
         "id": "Gambit Zilbermints-Benoni",
-        "vi": "Gambit Zilbermints-Benoni"
+        "vi": "Gambit Zilbermints-Benoni",
+        "sv": "Zilbermints-Benonigambit",
+        "da": "Zilbermints-Benonigambit",
+        "nb": "Zilbermints-Benonigambit",
+        "fi": "Zilbermints-Benoni-gambiitti"
       },
       "lines": [
         {
@@ -1026,7 +1206,11 @@
             "pl": "Gambit Zilbermints-Benoni",
             "nl": "Zilbermints-Benonigambiet",
             "id": "Gambit Zilbermints-Benoni",
-            "vi": "Gambit Zilbermints-Benoni"
+            "vi": "Gambit Zilbermints-Benoni",
+            "sv": "Zilbermints-Benonigambit",
+            "da": "Zilbermints-Benonigambit",
+            "nb": "Zilbermints-Benonigambit",
+            "fi": "Zilbermints-Benoni-gambiitti"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Zilbermints-Benoni Gambit",
@@ -1049,7 +1233,11 @@
             "pl": "Gambit Zilbermints-Benoni, Kontrgambit Tamarkin",
             "nl": "Zilbermints-Benonigambiet, Tamarkintegengambiet",
             "id": "Gambit Zilbermints-Benoni, Gambit Balasan Tamarkin",
-            "vi": "Gambit Zilbermints-Benoni, Phản gambit Tamarkin"
+            "vi": "Gambit Zilbermints-Benoni, Phản gambit Tamarkin",
+            "sv": "Zilbermints-Benonigambit, Tamarkinmotgambit",
+            "da": "Zilbermints-Benonigambit, Tamarkinmodgambit",
+            "nb": "Zilbermints-Benonigambit, Tamarkinmotgambit",
+            "fi": "Zilbermints-Benoni-gambiitti, Tamarkin-vastagambiitti"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Zilbermints-Benoni Gambit, Tamarkin Countergambit",
@@ -1072,7 +1260,11 @@
             "pl": "Gambit Zilbermints-Benoni",
             "nl": "Zilbermints-Benonigambiet",
             "id": "Gambit Zilbermints-Benoni",
-            "vi": "Gambit Zilbermints-Benoni"
+            "vi": "Gambit Zilbermints-Benoni",
+            "sv": "Zilbermints-Benonigambit",
+            "da": "Zilbermints-Benonigambit",
+            "nb": "Zilbermints-Benonigambit",
+            "fi": "Zilbermints-Benoni-gambiitti"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Zilbermints-Benoni Gambit",
@@ -1096,7 +1288,11 @@
         "nl": "Benoni-Indische verdediging",
         "id": "Pertahanan Benoni-India",
         "vi": "Phòng thủ Benoni-Ấn Độ",
-        "pl": "Obrona benoni-indyjska"
+        "pl": "Obrona benoni-indyjska",
+        "sv": "Benoni-indiska försvaret",
+        "da": "Benoni-indisk forsvar",
+        "nb": "Benoni-indisk forsvar",
+        "fi": "Benoni-intialainen puolustus"
       },
       "lines": [
         {
@@ -1115,7 +1311,11 @@
             "nl": "Benoni-Indische verdediging",
             "id": "Pertahanan Benoni-India",
             "vi": "Phòng thủ Benoni-Ấn Độ",
-            "pl": "Obrona benoni-indyjska"
+            "pl": "Obrona benoni-indyjska",
+            "sv": "Benoni-indiska försvaret",
+            "da": "Benoni-indisk forsvar",
+            "nb": "Benoni-indisk forsvar",
+            "fi": "Benoni-intialainen puolustus"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Benoni-Indian Defense",
@@ -1138,7 +1338,11 @@
             "nl": "Benoni-Indische verdediging, Koningsvleugelzettenvolgorde",
             "id": "Pertahanan Benoni-India, Urutan Langkah Sayap Raja",
             "vi": "Phòng thủ Benoni-Ấn Độ, Thứ tự nước đi cánh Vua",
-            "pl": "Obrona benoni-indyjska, Kolejność posunięć na skrzydle królewskim"
+            "pl": "Obrona benoni-indyjska, Kolejność posunięć na skrzydle królewskim",
+            "sv": "Benoni-indiska försvaret, Kungsflygeldragordning",
+            "da": "Benoni-indisk forsvar, Kongefløjstrækfølge",
+            "nb": "Benoni-indisk forsvar, Kongefløytrekkfølge",
+            "fi": "Benoni-intialainen puolustus, Kuningassivustan siirtojärjestys"
           },
           "eco": "A43",
           "opening": "Benoni Defense: Benoni-Indian Defense, Kingside Move Order",
@@ -1162,7 +1366,11 @@
         "nl": "Hoofdvariant",
         "id": "Utama",
         "vi": "Chính",
-        "pl": "Główny"
+        "pl": "Główny",
+        "sv": "Huvud",
+        "da": "Hoved",
+        "nb": "Hoved",
+        "fi": "Pää"
       },
       "lines": [
         {
@@ -1181,7 +1389,11 @@
             "pl": "Obrona Benoni",
             "nl": "Benoniverdediging",
             "id": "Pertahanan Benoni",
-            "vi": "Phòng thủ Benoni"
+            "vi": "Phòng thủ Benoni",
+            "sv": "Benoniförsvaret",
+            "da": "Benoniforsvaret",
+            "nb": "Benoniforsvaret",
+            "fi": "Benoni-puolustus"
           },
           "eco": "A56",
           "opening": "Benoni Defense",
@@ -1204,7 +1416,11 @@
             "pl": "Obrona Benoni",
             "nl": "Benoniverdediging",
             "id": "Pertahanan Benoni",
-            "vi": "Phòng thủ Benoni"
+            "vi": "Phòng thủ Benoni",
+            "sv": "Benoniförsvaret",
+            "da": "Benoniforsvaret",
+            "nb": "Benoniforsvaret",
+            "fi": "Benoni-puolustus"
           },
           "eco": "A61",
           "opening": "Benoni Defense",
@@ -1228,7 +1444,11 @@
         "nl": "Moderne variant",
         "id": "Variasi Modern",
         "vi": "Phương án hiện đại",
-        "pl": "Wariant nowoczesny"
+        "pl": "Wariant nowoczesny",
+        "sv": "Moderna varianten",
+        "da": "Moderne variant",
+        "nb": "Moderne variant",
+        "fi": "Moderni muunnelma"
       },
       "lines": [
         {
@@ -1247,7 +1467,11 @@
             "nl": "Moderne variant",
             "id": "Variasi Modern",
             "vi": "Phương án hiện đại",
-            "pl": "Wariant nowoczesny"
+            "pl": "Wariant nowoczesny",
+            "sv": "Moderna varianten",
+            "da": "Moderne variant",
+            "nb": "Moderne variant",
+            "fi": "Moderni muunnelma"
           },
           "eco": "A60",
           "opening": "Benoni Defense: Modern Variation",
@@ -1270,7 +1494,11 @@
             "nl": "Moderne variant, Slangenvariant",
             "id": "Variasi Modern, Variasi Ular",
             "vi": "Phương án hiện đại, Phương án con rắn",
-            "pl": "Wariant nowoczesny, Wariant węża"
+            "pl": "Wariant nowoczesny, Wariant węża",
+            "sv": "Moderna varianten, Ormvarianten",
+            "da": "Moderne variant, Slangevarianten",
+            "nb": "Moderne variant, Slangevarianten",
+            "fi": "Moderni muunnelma, Käärmemuunnelma"
           },
           "eco": "A60",
           "opening": "Benoni Defense: Modern Variation, Snake Variation",
@@ -1297,7 +1525,11 @@
         "pl": "Gambit Benoni, Obrona Schlenker",
         "nl": "Benonigambiet, Schlenkerverdediging",
         "id": "Gambit Benoni, Pertahanan Schlenker",
-        "vi": "Gambit Benoni, Phòng thủ Schlenker"
+        "vi": "Gambit Benoni, Phòng thủ Schlenker",
+        "sv": "Benonigambit, Schlenkerförsvaret",
+        "da": "Benonigambit, Schlenkerforsvaret",
+        "nb": "Benonigambit, Schlenkerforsvaret",
+        "fi": "Benoni-gambiitti, Schlenker-puolustus"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Benoni Gambit, Schlenker Defense",
@@ -1320,7 +1552,11 @@
         "nl": "Benonigambiet aangenomen",
         "id": "Gambit Benoni Diterima",
         "vi": "Gambit Benoni chấp nhận",
-        "pl": "Gambit Benoni przyjęty"
+        "pl": "Gambit Benoni przyjęty",
+        "sv": "Benonigambit antagen",
+        "da": "Benonigambit modtaget",
+        "nb": "Benonigambit mottatt",
+        "fi": "Benoni-gambiitti hyväksytty"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Benoni Gambit Accepted",
@@ -1343,7 +1579,11 @@
         "pl": "Gambit Benoni-Staunton",
         "nl": "Benoni-Stauntongambiet",
         "id": "Gambit Benoni-Staunton",
-        "vi": "Gambit Benoni-Staunton"
+        "vi": "Gambit Benoni-Staunton",
+        "sv": "Benoni-Stauntongambit",
+        "da": "Benoni-Stauntongambit",
+        "nb": "Benoni-Stauntongambit",
+        "fi": "Benoni-Staunton-gambiitti"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Benoni-Staunton Gambit",
@@ -1366,7 +1606,11 @@
         "nl": "Aalscholvergambiet",
         "id": "Gambit Kormoran",
         "vi": "Gambit chim cốc",
-        "pl": "Gambit kormorana"
+        "pl": "Gambit kormorana",
+        "sv": "Skarvgambit",
+        "da": "Skarvgambit",
+        "nb": "Skarvgambit",
+        "fi": "Merimetsogambiitti"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Cormorant Gambit",
@@ -1389,7 +1633,11 @@
         "nl": "Tsjechische Benoni-verdediging",
         "id": "Pertahanan Benoni Ceko",
         "vi": "Phòng thủ Benoni Séc",
-        "pl": "Obrona czeska Benoni"
+        "pl": "Obrona czeska Benoni",
+        "sv": "Tjeckiska Benoni-försvaret",
+        "da": "Tjekkisk Benoni-forsvaret",
+        "nb": "Tsjekkisk Benoni-forsvaret",
+        "fi": "Tšekkiläinen Benoni-puolustus"
       },
       "eco": "A56",
       "opening": "Benoni Defense: Czech Benoni Defense",
@@ -1412,7 +1660,11 @@
         "nl": "Frans-Siciliaanse hybride",
         "id": "Hibrida Prancis-Sisilia",
         "vi": "Lai Pháp-Sicilia",
-        "pl": "Hybryda francusko-sycylijska"
+        "pl": "Hybryda francusko-sycylijska",
+        "sv": "Fransk-siciliansk hybrid",
+        "da": "Fransk-siciliansk hybrid",
+        "nb": "Fransk-siciliansk hybrid",
+        "fi": "Ranskalais-sisilialainen hybridi"
       },
       "eco": "A40",
       "opening": "Benoni Defense: Franco-Sicilian Hybrid",
@@ -1435,7 +1687,11 @@
         "nl": "Franse Benoni",
         "id": "Benoni Prancis",
         "vi": "Benoni Pháp",
-        "pl": "Benoni francuskie"
+        "pl": "Benoni francuskie",
+        "sv": "Fransk Benoni",
+        "da": "Fransk Benoni",
+        "nb": "Fransk Benoni",
+        "fi": "Ranskalainen Benoni"
       },
       "eco": "A43",
       "opening": "Benoni Defense: French Benoni",
@@ -1458,7 +1714,11 @@
         "nl": "Havikvariant",
         "id": "Variasi Elang",
         "vi": "Phương án diều hâu",
-        "pl": "Wariant jastrzębia"
+        "pl": "Wariant jastrzębia",
+        "sv": "Hökvarianten",
+        "da": "Høgevarianten",
+        "nb": "Haukvarianten",
+        "fi": "Haukkamuunnelma"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Hawk Variation",
@@ -1481,7 +1741,11 @@
         "pl": "System Hromádka",
         "nl": "Hromádkasysteem",
         "id": "Sistem Hromádka",
-        "vi": "Hệ thống Hromádka"
+        "vi": "Hệ thống Hromádka",
+        "sv": "Hromádkasystemet",
+        "da": "Hromádkasystemet",
+        "nb": "Hromádkasystemet",
+        "fi": "Hromádka-systeemi"
       },
       "eco": "A56",
       "opening": "Benoni Defense: Hromádka System",
@@ -1504,7 +1768,11 @@
         "nl": "Koningsindisch systeem",
         "id": "Sistem India Raja",
         "vi": "Hệ thống Ấn Độ Vua",
-        "pl": "System królewsko-indyjski"
+        "pl": "System królewsko-indyjski",
+        "sv": "Kungsindiska systemet",
+        "da": "Kongeindisk system",
+        "nb": "Kongeindisk system",
+        "fi": "Kuningasintialainen systeemi"
       },
       "eco": "A56",
       "opening": "Benoni Defense: King's Indian System",
@@ -1527,7 +1795,11 @@
         "nl": "Paardensprongvariant",
         "id": "Variasi Tur Kuda",
         "vi": "Phương án hành trình quân Mã",
-        "pl": "Wariant konika szachowego"
+        "pl": "Wariant konika szachowego",
+        "sv": "Springarvandringsvarianten",
+        "da": "Springerturvarianten",
+        "nb": "Springerturvarianten",
+        "fi": "Ratsunkierrosmuunnelma"
       },
       "eco": "A61",
       "opening": "Benoni Defense: Knight's Tour Variation",
@@ -1550,7 +1822,11 @@
         "pl": "Wariant Mikenas",
         "nl": "Mikenasvariant",
         "id": "Variasi Mikenas",
-        "vi": "Phương án Mikenas"
+        "vi": "Phương án Mikenas",
+        "sv": "Mikenasvarianten",
+        "da": "Mikenasvarianten",
+        "nb": "Mikenasvarianten",
+        "fi": "Mikenas-muunnelma"
       },
       "eco": "A66",
       "opening": "Benoni Defense: Mikenas Variation",
@@ -1573,7 +1849,11 @@
         "nl": "Pionnenstormvariant",
         "id": "Variasi Badai Bidak",
         "vi": "Phương án bão Tốt",
-        "pl": "Wariant szturmu pionów"
+        "pl": "Wariant szturmu pionów",
+        "sv": "Bondestormvarianten",
+        "da": "Bondestormvarianten",
+        "nb": "Bondestormvarianten",
+        "fi": "Sotilasmyrskymuunnelma"
       },
       "eco": "A66",
       "opening": "Benoni Defense: Pawn Storm Variation",
@@ -1596,7 +1876,11 @@
         "nl": "Semi-Benoni",
         "id": "Semi-Benoni",
         "vi": "Bán Benoni",
-        "pl": "Pół-Benoni"
+        "pl": "Pół-Benoni",
+        "sv": "Semi-Benoni",
+        "da": "Semi-Benoni",
+        "nb": "Semi-Benoni",
+        "fi": "Semi-Benoni"
       },
       "eco": "A44",
       "opening": "Benoni Defense: Semi-Benoni",
@@ -1619,7 +1903,11 @@
         "nl": "Slakkenvariant",
         "id": "Variasi Siput",
         "vi": "Phương án ốc sên",
-        "pl": "Wariant ślimaka"
+        "pl": "Wariant ślimaka",
+        "sv": "Snigelvarianten",
+        "da": "Sneglevarianten",
+        "nb": "Sneglevarianten",
+        "fi": "Etanamuunnelma"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Snail Variation",
@@ -1642,7 +1930,11 @@
         "pl": "Wariant Taimanov",
         "nl": "Taimanovvariant",
         "id": "Variasi Taimanov",
-        "vi": "Phương án Taimanov"
+        "vi": "Phương án Taimanov",
+        "sv": "Taimanovvarianten",
+        "da": "Taimanovvarianten",
+        "nb": "Taimanovvarianten",
+        "fi": "Taimanov-muunnelma"
       },
       "eco": "A67",
       "opening": "Benoni Defense: Taimanov Variation",
@@ -1665,7 +1957,11 @@
         "pl": "Wariant Uhlmann",
         "nl": "Uhlmannvariant",
         "id": "Variasi Uhlmann",
-        "vi": "Phương án Uhlmann"
+        "vi": "Phương án Uhlmann",
+        "sv": "Uhlmannvarianten",
+        "da": "Uhlmannvarianten",
+        "nb": "Uhlmannvarianten",
+        "fi": "Uhlmann-muunnelma"
       },
       "eco": "A61",
       "opening": "Benoni Defense: Uhlmann Variation",
@@ -1688,7 +1984,11 @@
         "pl": "Wariant Weenink",
         "nl": "Weeninkvariant",
         "id": "Variasi Weenink",
-        "vi": "Phương án Weenink"
+        "vi": "Phương án Weenink",
+        "sv": "Weeninkvarianten",
+        "da": "Weeninkvarianten",
+        "nb": "Weeninkvarianten",
+        "fi": "Weenink-muunnelma"
       },
       "eco": "A56",
       "opening": "Benoni Defense: Weenink Variation",
@@ -1711,7 +2011,11 @@
         "nl": "Woozle",
         "id": "Woozle",
         "vi": "Woozle",
-        "pl": "Woozle"
+        "pl": "Woozle",
+        "sv": "Woozle",
+        "da": "Woozle",
+        "nb": "Woozle",
+        "fi": "Woozle"
       },
       "eco": "A43",
       "opening": "Benoni Defense: Woozle",

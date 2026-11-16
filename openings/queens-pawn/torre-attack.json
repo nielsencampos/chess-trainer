@@ -14,7 +14,11 @@
     "pl": "Atak Torre",
     "nl": "Torreaanval",
     "id": "Serangan Torre",
-    "vi": "Tấn công Torre"
+    "vi": "Tấn công Torre",
+    "sv": "Torreattacken",
+    "da": "Torreangrebet",
+    "nb": "Torreangrepet",
+    "fi": "Torre-hyökkäys"
   },
   "order": 16,
   "variants": [
@@ -33,7 +37,11 @@
         "nl": "Klassieke verdediging",
         "id": "Pertahanan Klasik",
         "vi": "Phòng thủ cổ điển",
-        "pl": "Obrona klasyczna"
+        "pl": "Obrona klasyczna",
+        "sv": "Klassiska försvaret",
+        "da": "Klassisk forsvar",
+        "nb": "Klassisk forsvar",
+        "fi": "Klassinen puolustus"
       },
       "lines": [
         {
@@ -52,7 +60,11 @@
             "nl": "Klassieke verdediging",
             "id": "Pertahanan Klasik",
             "vi": "Phòng thủ cổ điển",
-            "pl": "Obrona klasyczna"
+            "pl": "Obrona klasyczna",
+            "sv": "Klassiska försvaret",
+            "da": "Klassisk forsvar",
+            "nb": "Klassisk forsvar",
+            "fi": "Klassinen puolustus"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense",
@@ -75,7 +87,11 @@
             "nl": "Klassieke verdediging, Petrosiangambiet",
             "id": "Pertahanan Klasik, Gambit Petrosian",
             "vi": "Phòng thủ cổ điển, Gambit Petrosian",
-            "pl": "Obrona klasyczna, Gambit Petrosian"
+            "pl": "Obrona klasyczna, Gambit Petrosian",
+            "sv": "Klassiska försvaret, Petrosiangambit",
+            "da": "Klassisk forsvar, Petrosiangambit",
+            "nb": "Klassisk forsvar, Petrosiangambit",
+            "fi": "Klassinen puolustus, Petrosian-gambiitti"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense, Petrosian Gambit",
@@ -98,7 +114,11 @@
             "nl": "Klassieke verdediging, Nimzowitschvariant",
             "id": "Pertahanan Klasik, Variasi Nimzowitsch",
             "vi": "Phòng thủ cổ điển, Phương án Nimzowitsch",
-            "pl": "Obrona klasyczna, Wariant Nimzowitsch"
+            "pl": "Obrona klasyczna, Wariant Nimzowitsch",
+            "sv": "Klassiska försvaret, Nimzowitschvarianten",
+            "da": "Klassisk forsvar, Nimzowitschvarianten",
+            "nb": "Klassisk forsvar, Nimzowitschvarianten",
+            "fi": "Klassinen puolustus, Nimzowitsch-muunnelma"
           },
           "eco": "A46",
           "opening": "Torre Attack: Classical Defense, Nimzowitsch Variation",
@@ -122,7 +142,11 @@
         "nl": "Fianchettoverdediging",
         "id": "Pertahanan Fianchetto",
         "vi": "Phòng thủ fianchetto",
-        "pl": "Obrona z fianchettem"
+        "pl": "Obrona z fianchettem",
+        "sv": "Fianchettoförsvaret",
+        "da": "Fianchettoforsvaret",
+        "nb": "Fianchettoforsvaret",
+        "fi": "Fiankettopuolustus"
       },
       "lines": [
         {
@@ -141,7 +165,11 @@
             "nl": "Fianchettoverdediging",
             "id": "Pertahanan Fianchetto",
             "vi": "Phòng thủ fianchetto",
-            "pl": "Obrona z fianchettem"
+            "pl": "Obrona z fianchettem",
+            "sv": "Fianchettoförsvaret",
+            "da": "Fianchettoforsvaret",
+            "nb": "Fianchettoforsvaret",
+            "fi": "Fiankettopuolustus"
           },
           "eco": "A48",
           "opening": "Torre Attack: Fianchetto Defense",
@@ -164,7 +192,11 @@
             "nl": "Fianchettoverdediging, Euwevariant",
             "id": "Pertahanan Fianchetto, Variasi Euwe",
             "vi": "Phòng thủ fianchetto, Phương án Euwe",
-            "pl": "Obrona z fianchettem, Wariant Euwe"
+            "pl": "Obrona z fianchettem, Wariant Euwe",
+            "sv": "Fianchettoförsvaret, Euwevarianten",
+            "da": "Fianchettoforsvaret, Euwevarianten",
+            "nb": "Fianchettoforsvaret, Euwevarianten",
+            "fi": "Fiankettopuolustus, Euwe-muunnelma"
           },
           "eco": "A48",
           "opening": "Torre Attack: Fianchetto Defense, Euwe Variation",
@@ -191,7 +223,11 @@
         "pl": "Gambit Wagner",
         "nl": "Wagnergambiet",
         "id": "Gambit Wagner",
-        "vi": "Gambit Wagner"
+        "vi": "Gambit Wagner",
+        "sv": "Wagnergambit",
+        "da": "Wagnergambit",
+        "nb": "Wagnergambit",
+        "fi": "Wagner-gambiitti"
       },
       "eco": "A46",
       "opening": "Torre Attack: Wagner Gambit",

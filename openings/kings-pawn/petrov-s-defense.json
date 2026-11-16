@@ -14,7 +14,11 @@
     "pl": "Obrona rosyjska",
     "nl": "Russisch",
     "vi": "Phòng thủ Petrov",
-    "id": "Pertahanan Petrov"
+    "id": "Pertahanan Petrov",
+    "sv": "Ryskt parti",
+    "nb": "Russisk forsvar",
+    "fi": "Venäläinen peli",
+    "da": "Petrovforsvaret"
   },
   "order": 10,
   "variants": [
@@ -33,7 +37,11 @@
         "nl": "Klassieke aanval",
         "id": "Serangan Klasik",
         "vi": "Tấn công cổ điển",
-        "pl": "Atak klasyczny"
+        "pl": "Atak klasyczny",
+        "sv": "Klassiska attacken",
+        "da": "Klassisk angreb",
+        "nb": "Klassisk angrep",
+        "fi": "Klassinen hyökkäys"
       },
       "lines": [
         {
@@ -52,7 +60,11 @@
             "nl": "Klassieke aanval",
             "id": "Serangan Klasik",
             "vi": "Tấn công cổ điển",
-            "pl": "Atak klasyczny"
+            "pl": "Atak klasyczny",
+            "sv": "Klassiska attacken",
+            "da": "Klassisk angreb",
+            "nb": "Klassisk angrep",
+            "fi": "Klassinen hyökkäys"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack",
@@ -75,7 +87,11 @@
             "nl": "Klassieke aanval, Gesloten variant",
             "id": "Serangan Klasik, Variasi Tertutup",
             "vi": "Tấn công cổ điển, Phương án đóng",
-            "pl": "Atak klasyczny, Wariant zamknięty"
+            "pl": "Atak klasyczny, Wariant zamknięty",
+            "sv": "Klassiska attacken, Stängda varianten",
+            "da": "Klassisk angreb, Lukket variant",
+            "nb": "Klassisk angrep, Lukket variant",
+            "fi": "Klassinen hyökkäys, Suljettu muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Closed Variation",
@@ -98,7 +114,11 @@
             "nl": "Klassieke aanval, Marshallvariant",
             "id": "Serangan Klasik, Variasi Marshall",
             "vi": "Tấn công cổ điển, Phương án Marshall",
-            "pl": "Atak klasyczny, Wariant Marshall"
+            "pl": "Atak klasyczny, Wariant Marshall",
+            "sv": "Klassiska attacken, Marshallvarianten",
+            "da": "Klassisk angreb, Marshallvarianten",
+            "nb": "Klassisk angrep, Marshallvarianten",
+            "fi": "Klassinen hyökkäys, Marshall-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Marshall Variation",
@@ -121,7 +141,11 @@
             "nl": "Klassieke aanval, Tarraschvariant",
             "id": "Serangan Klasik, Variasi Tarrasch",
             "vi": "Tấn công cổ điển, Phương án Tarrasch",
-            "pl": "Atak klasyczny, Wariant Tarrasch"
+            "pl": "Atak klasyczny, Wariant Tarrasch",
+            "sv": "Klassiska attacken, Tarraschvarianten",
+            "da": "Klassisk angreb, Tarraschvarianten",
+            "nb": "Klassisk angrep, Tarraschvarianten",
+            "fi": "Klassinen hyökkäys, Tarrasch-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Tarrasch Variation",
@@ -144,7 +168,11 @@
             "nl": "Klassieke aanval, Marshallval",
             "id": "Serangan Klasik, Jebakan Marshall",
             "vi": "Tấn công cổ điển, Bẫy Marshall",
-            "pl": "Atak klasyczny, Pułapka Marshall"
+            "pl": "Atak klasyczny, Pułapka Marshall",
+            "sv": "Klassiska attacken, Marshallfällan",
+            "da": "Klassisk angreb, Marshallfælden",
+            "nb": "Klassisk angrep, Marshallfellen",
+            "fi": "Klassinen hyökkäys, Marshall-ansa"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Marshall Trap",
@@ -167,7 +195,11 @@
             "nl": "Klassieke aanval, Stauntonvariant",
             "id": "Serangan Klasik, Variasi Staunton",
             "vi": "Tấn công cổ điển, Phương án Staunton",
-            "pl": "Atak klasyczny, Wariant Staunton"
+            "pl": "Atak klasyczny, Wariant Staunton",
+            "sv": "Klassiska attacken, Stauntonvarianten",
+            "da": "Klassisk angreb, Stauntonvarianten",
+            "nb": "Klassisk angrep, Stauntonvarianten",
+            "fi": "Klassinen hyökkäys, Staunton-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Staunton Variation",
@@ -190,7 +222,11 @@
             "nl": "Klassieke aanval, Marshallvariant, Chinees gambiet",
             "id": "Serangan Klasik, Variasi Marshall, Gambit Tiongkok",
             "vi": "Tấn công cổ điển, Phương án Marshall, Gambit Trung Quốc",
-            "pl": "Atak klasyczny, Wariant Marshall, Gambit chiński"
+            "pl": "Atak klasyczny, Wariant Marshall, Gambit chiński",
+            "sv": "Klassiska attacken, Marshallvarianten, Kinesiska gambiten",
+            "da": "Klassisk angreb, Marshallvarianten, Kinesisk gambit",
+            "nb": "Klassisk angrep, Marshallvarianten, Kinesisk gambit",
+            "fi": "Klassinen hyökkäys, Marshall-muunnelma, Kiinalainen gambiitti"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Marshall Variation, Chinese Gambit",
@@ -213,7 +249,11 @@
             "nl": "Klassieke aanval, Chigorinvariant",
             "id": "Serangan Klasik, Variasi Chigorin",
             "vi": "Tấn công cổ điển, Phương án Chigorin",
-            "pl": "Atak klasyczny, Wariant Chigorin"
+            "pl": "Atak klasyczny, Wariant Chigorin",
+            "sv": "Klassiska attacken, Chigorinvarianten",
+            "da": "Klassisk angreb, Chigorinvarianten",
+            "nb": "Klassisk angrep, Chigorinvarianten",
+            "fi": "Klassinen hyökkäys, Chigorin-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Chigorin Variation",
@@ -236,7 +276,11 @@
             "nl": "Klassieke aanval, Bergervariant",
             "id": "Serangan Klasik, Variasi Berger",
             "vi": "Tấn công cổ điển, Phương án Berger",
-            "pl": "Atak klasyczny, Wariant Berger"
+            "pl": "Atak klasyczny, Wariant Berger",
+            "sv": "Klassiska attacken, Bergervarianten",
+            "da": "Klassisk angreb, Bergervarianten",
+            "nb": "Klassisk angrep, Bergervarianten",
+            "fi": "Klassinen hyökkäys, Berger-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Berger Variation",
@@ -259,7 +303,11 @@
             "nl": "Klassieke aanval, Maróczyvariant",
             "id": "Serangan Klasik, Variasi Maróczy",
             "vi": "Tấn công cổ điển, Phương án Maróczy",
-            "pl": "Atak klasyczny, Wariant Maróczy"
+            "pl": "Atak klasyczny, Wariant Maróczy",
+            "sv": "Klassiska attacken, Maróczyvarianten",
+            "da": "Klassisk angreb, Maróczyvarianten",
+            "nb": "Klassisk angrep, Maróczyvarianten",
+            "fi": "Klassinen hyökkäys, Maróczy-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Maróczy Variation",
@@ -282,7 +330,11 @@
             "nl": "Klassieke aanval, Masonvariant",
             "id": "Serangan Klasik, Variasi Mason",
             "vi": "Tấn công cổ điển, Phương án Mason",
-            "pl": "Atak klasyczny, Wariant Mason"
+            "pl": "Atak klasyczny, Wariant Mason",
+            "sv": "Klassiska attacken, Masonvarianten",
+            "da": "Klassisk angreb, Masonvarianten",
+            "nb": "Klassisk angrep, Masonvarianten",
+            "fi": "Klassinen hyökkäys, Mason-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Mason Variation",
@@ -305,7 +357,11 @@
             "nl": "Klassieke aanval, Mason-Showaltervariant",
             "id": "Serangan Klasik, Variasi Mason-Showalter",
             "vi": "Tấn công cổ điển, Phương án Mason-Showalter",
-            "pl": "Atak klasyczny, Wariant Mason-Showalter"
+            "pl": "Atak klasyczny, Wariant Mason-Showalter",
+            "sv": "Klassiska attacken, Mason-Showaltervarianten",
+            "da": "Klassisk angreb, Mason-Showaltervarianten",
+            "nb": "Klassisk angrep, Mason-Showaltervarianten",
+            "fi": "Klassinen hyökkäys, Mason-Showalter-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Mason-Showalter Variation",
@@ -328,7 +384,11 @@
             "nl": "Klassieke aanval, Krausevariant",
             "id": "Serangan Klasik, Variasi Krause",
             "vi": "Tấn công cổ điển, Phương án Krause",
-            "pl": "Atak klasyczny, Wariant Krause"
+            "pl": "Atak klasyczny, Wariant Krause",
+            "sv": "Klassiska attacken, Krausevarianten",
+            "da": "Klassisk angreb, Krausevarianten",
+            "nb": "Klassisk angrep, Krausevarianten",
+            "fi": "Klassinen hyökkäys, Krause-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Krause Variation",
@@ -351,7 +411,11 @@
             "nl": "Klassieke aanval, Jaenischvariant",
             "id": "Serangan Klasik, Variasi Jaenisch",
             "vi": "Tấn công cổ điển, Phương án Jaenisch",
-            "pl": "Atak klasyczny, Wariant Jaenisch"
+            "pl": "Atak klasyczny, Wariant Jaenisch",
+            "sv": "Klassiska attacken, Jaenischvarianten",
+            "da": "Klassisk angreb, Jaenischvarianten",
+            "nb": "Klassisk angrep, Jaenischvarianten",
+            "fi": "Klassinen hyökkäys, Jaenisch-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Jaenisch Variation",
@@ -374,7 +438,11 @@
             "nl": "Klassieke aanval, Chigorinvariant, Hoofdvariant",
             "id": "Serangan Klasik, Variasi Chigorin, Lini Utama",
             "vi": "Tấn công cổ điển, Phương án Chigorin, Phương án chính",
-            "pl": "Atak klasyczny, Wariant Chigorin, Wariant główny"
+            "pl": "Atak klasyczny, Wariant Chigorin, Wariant główny",
+            "sv": "Klassiska attacken, Chigorinvarianten, Huvudvariant",
+            "da": "Klassisk angreb, Chigorinvarianten, Hovedvariant",
+            "nb": "Klassisk angrep, Chigorinvarianten, Hovedvariant",
+            "fi": "Klassinen hyökkäys, Chigorin-muunnelma, Päämuunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Chigorin Variation, Main Line",
@@ -397,7 +465,11 @@
             "nl": "Klassieke aanval, Chigorinvariant, Browneaanval",
             "id": "Serangan Klasik, Variasi Chigorin, Serangan Browne",
             "vi": "Tấn công cổ điển, Phương án Chigorin, Tấn công Browne",
-            "pl": "Atak klasyczny, Wariant Chigorin, Atak Browne"
+            "pl": "Atak klasyczny, Wariant Chigorin, Atak Browne",
+            "sv": "Klassiska attacken, Chigorinvarianten, Browneattacken",
+            "da": "Klassisk angreb, Chigorinvarianten, Browneangrebet",
+            "nb": "Klassisk angrep, Chigorinvarianten, Browneangrepet",
+            "fi": "Klassinen hyökkäys, Chigorin-muunnelma, Browne-hyökkäys"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Classical Attack, Chigorin Variation, Browne Attack",
@@ -421,7 +493,11 @@
         "nl": "Moderne aanval",
         "id": "Serangan Modern",
         "vi": "Tấn công hiện đại",
-        "pl": "Atak nowoczesny"
+        "pl": "Atak nowoczesny",
+        "sv": "Moderna attacken",
+        "da": "Moderne angreb",
+        "nb": "Moderne angrep",
+        "fi": "Moderni hyökkäys"
       },
       "lines": [
         {
@@ -440,7 +516,11 @@
             "nl": "Moderne aanval",
             "id": "Serangan Modern",
             "vi": "Tấn công hiện đại",
-            "pl": "Atak nowoczesny"
+            "pl": "Atak nowoczesny",
+            "sv": "Moderna attacken",
+            "da": "Moderne angreb",
+            "nb": "Moderne angrep",
+            "fi": "Moderni hyökkäys"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack",
@@ -463,7 +543,11 @@
             "nl": "Moderne aanval, Centrumvariant",
             "id": "Serangan Modern, Variasi Pusat",
             "vi": "Tấn công hiện đại, Phương án trung tâm",
-            "pl": "Atak nowoczesny, Wariant centralny"
+            "pl": "Atak nowoczesny, Wariant centralny",
+            "sv": "Moderna attacken, Centrumvarianten",
+            "da": "Moderne angreb, Centervarianten",
+            "nb": "Moderne angrep, Sentrumvarianten",
+            "fi": "Moderni hyökkäys, Keskusmuunnelma"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Center Variation",
@@ -486,7 +570,11 @@
             "nl": "Moderne aanval, Murreyvariant",
             "id": "Serangan Modern, Variasi Murrey",
             "vi": "Tấn công hiện đại, Phương án Murrey",
-            "pl": "Atak nowoczesny, Wariant Murrey"
+            "pl": "Atak nowoczesny, Wariant Murrey",
+            "sv": "Moderna attacken, Murreyvarianten",
+            "da": "Moderne angreb, Murreyvarianten",
+            "nb": "Moderne angrep, Murreyvarianten",
+            "fi": "Moderni hyökkäys, Murrey-muunnelma"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Murrey Variation",
@@ -509,7 +597,11 @@
             "nl": "Moderne aanval, Trifunovicvariant",
             "id": "Serangan Modern, Variasi Trifunovic",
             "vi": "Tấn công hiện đại, Phương án Trifunovic",
-            "pl": "Atak nowoczesny, Wariant Trifunovic"
+            "pl": "Atak nowoczesny, Wariant Trifunovic",
+            "sv": "Moderna attacken, Trifunovicvarianten",
+            "da": "Moderne angreb, Trifunovicvarianten",
+            "nb": "Moderne angrep, Trifunovicvarianten",
+            "fi": "Moderni hyökkäys, Trifunovic-muunnelma"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Trifunovic Variation",
@@ -532,7 +624,11 @@
             "nl": "Moderne aanval, Symmetrische variant",
             "id": "Serangan Modern, Variasi Simetris",
             "vi": "Tấn công hiện đại, Phương án đối xứng",
-            "pl": "Atak nowoczesny, Wariant symetryczny"
+            "pl": "Atak nowoczesny, Wariant symetryczny",
+            "sv": "Moderna attacken, Symmetriska varianten",
+            "da": "Moderne angreb, Symmetrisk variant",
+            "nb": "Moderne angrep, Symmetrisk variant",
+            "fi": "Moderni hyökkäys, Symmetrinen muunnelma"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Symmetrical Variation",
@@ -555,7 +651,11 @@
             "nl": "Moderne aanval",
             "id": "Serangan Modern",
             "vi": "Tấn công hiện đại",
-            "pl": "Atak nowoczesny"
+            "pl": "Atak nowoczesny",
+            "sv": "Moderna attacken",
+            "da": "Moderne angreb",
+            "nb": "Moderne angrep",
+            "fi": "Moderni hyökkäys"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack",
@@ -578,7 +678,11 @@
             "nl": "Moderne aanval, Talgambiet",
             "id": "Serangan Modern, Gambit Tal",
             "vi": "Tấn công hiện đại, Gambit Tal",
-            "pl": "Atak nowoczesny, Gambit Tal"
+            "pl": "Atak nowoczesny, Gambit Tal",
+            "sv": "Moderna attacken, Talgambit",
+            "da": "Moderne angreb, Talgambit",
+            "nb": "Moderne angrep, Talgambit",
+            "fi": "Moderni hyökkäys, Tal-gambiitti"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Tal Gambit",
@@ -601,7 +705,11 @@
             "nl": "Moderne aanval, Steinitzvariant",
             "id": "Serangan Modern, Variasi Steinitz",
             "vi": "Tấn công hiện đại, Phương án Steinitz",
-            "pl": "Atak nowoczesny, Wariant Steinitz"
+            "pl": "Atak nowoczesny, Wariant Steinitz",
+            "sv": "Moderna attacken, Steinitzvarianten",
+            "da": "Moderne angreb, Steinitzvarianten",
+            "nb": "Moderne angrep, Steinitzvarianten",
+            "fi": "Moderni hyökkäys, Steinitz-muunnelma"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Steinitz Variation",
@@ -624,7 +732,11 @@
             "nl": "Moderne aanval, Bardelebenvariant",
             "id": "Serangan Modern, Variasi Bardeleben",
             "vi": "Tấn công hiện đại, Phương án Bardeleben",
-            "pl": "Atak nowoczesny, Wariant Bardeleben"
+            "pl": "Atak nowoczesny, Wariant Bardeleben",
+            "sv": "Moderna attacken, Bardelebenvarianten",
+            "da": "Moderne angreb, Bardelebenvarianten",
+            "nb": "Moderne angrep, Bardelebenvarianten",
+            "fi": "Moderni hyökkäys, Bardeleben-muunnelma"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Bardeleben Variation",
@@ -647,7 +759,11 @@
             "nl": "Moderne aanval, Centrumaanval",
             "id": "Serangan Modern, Serangan Pusat",
             "vi": "Tấn công hiện đại, Tấn công trung tâm",
-            "pl": "Atak nowoczesny, Atak centralny"
+            "pl": "Atak nowoczesny, Atak centralny",
+            "sv": "Moderna attacken, Centrumattacken",
+            "da": "Moderne angreb, Centerangrebet",
+            "nb": "Moderne angrep, Sentrumangrepet",
+            "fi": "Moderni hyökkäys, Keskushyökkäys"
           },
           "eco": "C43",
           "opening": "Petrov's Defense: Modern Attack, Center Attack",
@@ -671,7 +787,11 @@
         "nl": "Hoofdvariant",
         "id": "Utama",
         "vi": "Chính",
-        "pl": "Główny"
+        "pl": "Główny",
+        "sv": "Huvud",
+        "da": "Hoved",
+        "nb": "Hoved",
+        "fi": "Pää"
       },
       "lines": [
         {
@@ -690,7 +810,11 @@
             "nl": "Petrovverdediging",
             "id": "Pertahanan Petrov",
             "vi": "Phòng thủ Petrov",
-            "pl": "Obrona Petrowa"
+            "pl": "Obrona Petrowa",
+            "sv": "Petrovförsvaret",
+            "da": "Petrovforsvaret",
+            "nb": "Petrovforsvaret",
+            "fi": "Petrov-puolustus"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -713,7 +837,11 @@
             "nl": "Petrovverdediging",
             "id": "Pertahanan Petrov",
             "vi": "Phòng thủ Petrov",
-            "pl": "Obrona Petrowa"
+            "pl": "Obrona Petrowa",
+            "sv": "Petrovförsvaret",
+            "da": "Petrovforsvaret",
+            "nb": "Petrovforsvaret",
+            "fi": "Petrov-puolustus"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -736,7 +864,11 @@
             "nl": "Petrovverdediging",
             "id": "Pertahanan Petrov",
             "vi": "Phòng thủ Petrov",
-            "pl": "Obrona Petrowa"
+            "pl": "Obrona Petrowa",
+            "sv": "Petrovförsvaret",
+            "da": "Petrovforsvaret",
+            "nb": "Petrovforsvaret",
+            "fi": "Petrov-puolustus"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -759,7 +891,11 @@
             "nl": "Petrovverdediging",
             "id": "Pertahanan Petrov",
             "vi": "Phòng thủ Petrov",
-            "pl": "Obrona Petrowa"
+            "pl": "Obrona Petrowa",
+            "sv": "Petrovförsvaret",
+            "da": "Petrovforsvaret",
+            "nb": "Petrovforsvaret",
+            "fi": "Petrov-puolustus"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -782,7 +918,11 @@
             "nl": "Petrovverdediging",
             "id": "Pertahanan Petrov",
             "vi": "Phòng thủ Petrov",
-            "pl": "Obrona Petrowa"
+            "pl": "Obrona Petrowa",
+            "sv": "Petrovförsvaret",
+            "da": "Petrovforsvaret",
+            "nb": "Petrovforsvaret",
+            "fi": "Petrov-puolustus"
           },
           "eco": "C42",
           "opening": "Petrov's Defense",
@@ -806,7 +946,11 @@
         "pl": "Gambit Cochrane",
         "nl": "Cochranegambiet",
         "id": "Gambit Cochrane",
-        "vi": "Gambit Cochrane"
+        "vi": "Gambit Cochrane",
+        "sv": "Cochranegambit",
+        "da": "Cochranegambit",
+        "nb": "Cochranegambit",
+        "fi": "Cochrane-gambiitti"
       },
       "lines": [
         {
@@ -825,7 +969,11 @@
             "pl": "Gambit Cochrane",
             "nl": "Cochranegambiet",
             "id": "Gambit Cochrane",
-            "vi": "Gambit Cochrane"
+            "vi": "Gambit Cochrane",
+            "sv": "Cochranegambit",
+            "da": "Cochranegambit",
+            "nb": "Cochranegambit",
+            "fi": "Cochrane-gambiitti"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Cochrane Gambit",
@@ -848,7 +996,11 @@
             "nl": "Cochranegambiet, Loperschaaklijn",
             "id": "Gambit Cochrane, Lini Sekak Gajah",
             "vi": "Gambit Cochrane, Diễn biến Tượng chiếu",
-            "pl": "Gambit Cochrane, Linia szacha gońcem"
+            "pl": "Gambit Cochrane, Linia szacha gońcem",
+            "sv": "Cochranegambit, Löparschackvarianten",
+            "da": "Cochranegambit, Løberskakvarianten",
+            "nb": "Cochranegambit, Løpersjakkvarianten",
+            "fi": "Cochrane-gambiitti, Lähettishakkilinja"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Cochrane Gambit, Bishop Check Line",
@@ -871,7 +1023,11 @@
             "nl": "Cochranegambiet, Centrumvariant",
             "id": "Gambit Cochrane, Variasi Pusat",
             "vi": "Gambit Cochrane, Phương án trung tâm",
-            "pl": "Gambit Cochrane, Wariant centralny"
+            "pl": "Gambit Cochrane, Wariant centralny",
+            "sv": "Cochranegambit, Centrumvarianten",
+            "da": "Cochranegambit, Centervarianten",
+            "nb": "Cochranegambit, Sentrumvarianten",
+            "fi": "Cochrane-gambiitti, Keskusmuunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Cochrane Gambit, Center Variation",
@@ -895,7 +1051,11 @@
         "nl": "Staffordgambiet aangenomen",
         "id": "Gambit Stafford Diterima",
         "vi": "Gambit Stafford chấp nhận",
-        "pl": "Gambit Stafford przyjęty"
+        "pl": "Gambit Stafford przyjęty",
+        "sv": "Staffordgambit antagen",
+        "da": "Staffordgambit modtaget",
+        "nb": "Staffordgambit mottatt",
+        "fi": "Stafford-gambiitti hyväksytty"
       },
       "lines": [
         {
@@ -914,7 +1074,11 @@
             "nl": "Staffordgambiet aangenomen",
             "id": "Gambit Stafford Diterima",
             "vi": "Gambit Stafford chấp nhận",
-            "pl": "Gambit Stafford przyjęty"
+            "pl": "Gambit Stafford przyjęty",
+            "sv": "Staffordgambit antagen",
+            "da": "Staffordgambit modtaget",
+            "nb": "Staffordgambit mottatt",
+            "fi": "Stafford-gambiitti hyväksytty"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Stafford Gambit Accepted",
@@ -937,7 +1101,11 @@
             "nl": "Staffordgambiet aangenomen",
             "id": "Gambit Stafford Diterima",
             "vi": "Gambit Stafford chấp nhận",
-            "pl": "Gambit Stafford przyjęty"
+            "pl": "Gambit Stafford przyjęty",
+            "sv": "Staffordgambit antagen",
+            "da": "Staffordgambit modtaget",
+            "nb": "Staffordgambit mottatt",
+            "fi": "Stafford-gambiitti hyväksytty"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Stafford Gambit Accepted",
@@ -960,7 +1128,11 @@
             "nl": "Staffordgambiet aangenomen",
             "id": "Gambit Stafford Diterima",
             "vi": "Gambit Stafford chấp nhận",
-            "pl": "Gambit Stafford przyjęty"
+            "pl": "Gambit Stafford przyjęty",
+            "sv": "Staffordgambit antagen",
+            "da": "Staffordgambit modtaget",
+            "nb": "Staffordgambit mottatt",
+            "fi": "Stafford-gambiitti hyväksytty"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Stafford Gambit Accepted",
@@ -984,7 +1156,11 @@
         "pl": "Wariant Damiano",
         "nl": "Damianovariant",
         "id": "Variasi Damiano",
-        "vi": "Phương án Damiano"
+        "vi": "Phương án Damiano",
+        "sv": "Damianovarianten",
+        "da": "Damianovarianten",
+        "nb": "Damianovarianten",
+        "fi": "Damiano-muunnelma"
       },
       "lines": [
         {
@@ -1003,7 +1179,11 @@
             "pl": "Wariant Damiano",
             "nl": "Damianovariant",
             "id": "Variasi Damiano",
-            "vi": "Phương án Damiano"
+            "vi": "Phương án Damiano",
+            "sv": "Damianovarianten",
+            "da": "Damianovarianten",
+            "nb": "Damianovarianten",
+            "fi": "Damiano-muunnelma"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Damiano Variation",
@@ -1026,7 +1206,11 @@
             "pl": "Wariant Damiano, Gambit Kholmov",
             "nl": "Damianovariant, Kholmovgambiet",
             "id": "Variasi Damiano, Gambit Kholmov",
-            "vi": "Phương án Damiano, Gambit Kholmov"
+            "vi": "Phương án Damiano, Gambit Kholmov",
+            "sv": "Damianovarianten, Kholmovgambit",
+            "da": "Damianovarianten, Kholmovgambit",
+            "nb": "Damianovarianten, Kholmovgambit",
+            "fi": "Damiano-muunnelma, Kholmov-gambiitti"
           },
           "eco": "C42",
           "opening": "Petrov's Defense: Damiano Variation, Kholmov Gambit",
@@ -1053,7 +1237,11 @@
         "pl": "Atak Cozio",
         "nl": "Cozioaanval",
         "id": "Serangan Cozio",
-        "vi": "Tấn công Cozio"
+        "vi": "Tấn công Cozio",
+        "sv": "Cozioattacken",
+        "da": "Cozioangrebet",
+        "nb": "Cozioangrepet",
+        "fi": "Cozio-hyökkäys"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Cozio Attack",
@@ -1076,7 +1264,11 @@
         "nl": "Franse aanval",
         "id": "Serangan Prancis",
         "vi": "Tấn công Pháp",
-        "pl": "Atak francuski"
+        "pl": "Atak francuski",
+        "sv": "Franska attacken",
+        "da": "Fransk angreb",
+        "nb": "Fransk angrep",
+        "fi": "Ranskalainen hyökkäys"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: French Attack",
@@ -1099,7 +1291,11 @@
         "nl": "Italiaanse variant",
         "id": "Variasi Italia",
         "vi": "Phương án Italia",
-        "pl": "Wariant włoski"
+        "pl": "Wariant włoski",
+        "sv": "Italienska varianten",
+        "da": "Italiensk variant",
+        "nb": "Italiensk variant",
+        "fi": "Italialainen muunnelma"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Italian Variation",
@@ -1122,7 +1318,11 @@
         "pl": "Wariant Karklins-Martinovsky",
         "nl": "Karklins-Martinovskyvariant",
         "id": "Variasi Karklins-Martinovsky",
-        "vi": "Phương án Karklins-Martinovsky"
+        "vi": "Phương án Karklins-Martinovsky",
+        "sv": "Karklins-Martinovskyvarianten",
+        "da": "Karklins-Martinovskyvarianten",
+        "nb": "Karklins-Martinovskyvarianten",
+        "fi": "Karklins-Martinovsky-muunnelma"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Karklins-Martinovsky Variation",
@@ -1145,7 +1345,11 @@
         "pl": "Atak Kaufmann",
         "nl": "Kaufmannaanval",
         "id": "Serangan Kaufmann",
-        "vi": "Tấn công Kaufmann"
+        "vi": "Tấn công Kaufmann",
+        "sv": "Kaufmannattacken",
+        "da": "Kaufmannangrebet",
+        "nb": "Kaufmannangrepet",
+        "fi": "Kaufmann-hyökkäys"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Kaufmann Attack",
@@ -1168,7 +1372,11 @@
         "nl": "Millenniumaanval",
         "id": "Serangan Milenium",
         "vi": "Tấn công thiên niên kỷ",
-        "pl": "Atak milenijny"
+        "pl": "Atak milenijny",
+        "sv": "Millennieattacken",
+        "da": "Millenniumangrebet",
+        "nb": "Millenniumangrepet",
+        "fi": "Vuosituhathyökkäys"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Millennium Attack",
@@ -1191,7 +1399,11 @@
         "pl": "Gambit Moody",
         "nl": "Moodygambiet",
         "id": "Gambit Moody",
-        "vi": "Gambit Moody"
+        "vi": "Gambit Moody",
+        "sv": "Moodygambit",
+        "da": "Moodygambit",
+        "nb": "Moodygambit",
+        "fi": "Moody-gambiitti"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Moody Gambit",
@@ -1214,7 +1426,11 @@
         "pl": "Atak Nimzowitsch",
         "nl": "Nimzowitschaanval",
         "id": "Serangan Nimzowitsch",
-        "vi": "Tấn công Nimzowitsch"
+        "vi": "Tấn công Nimzowitsch",
+        "sv": "Nimzowitschattacken",
+        "da": "Nimzowitschangrebet",
+        "nb": "Nimzowitschangrepet",
+        "fi": "Nimzowitsch-hyökkäys"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Nimzowitsch Attack",
@@ -1237,7 +1453,11 @@
         "pl": "Atak Paulsen",
         "nl": "Paulsenaanval",
         "id": "Serangan Paulsen",
-        "vi": "Tấn công Paulsen"
+        "vi": "Tấn công Paulsen",
+        "sv": "Paulsenattacken",
+        "da": "Paulsenangrebet",
+        "nb": "Paulsenangrepet",
+        "fi": "Paulsen-hyökkäys"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Paulsen Attack",
@@ -1260,7 +1480,11 @@
         "pl": "Gambit Stafford",
         "nl": "Staffordgambiet",
         "id": "Gambit Stafford",
-        "vi": "Gambit Stafford"
+        "vi": "Gambit Stafford",
+        "sv": "Staffordgambit",
+        "da": "Staffordgambit",
+        "nb": "Staffordgambit",
+        "fi": "Stafford-gambiitti"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Stafford Gambit",
@@ -1283,7 +1507,11 @@
         "nl": "Driepaardenspel",
         "id": "Permainan Tiga Kuda",
         "vi": "Ván cờ ba Mã",
-        "pl": "Partia trzech skoczków"
+        "pl": "Partia trzech skoczków",
+        "sv": "Trespringarspel",
+        "da": "Trespringerspil",
+        "nb": "Trespringerspill",
+        "fi": "Kolmiratsupeli"
       },
       "eco": "C42",
       "opening": "Petrov's Defense: Three Knights Game",

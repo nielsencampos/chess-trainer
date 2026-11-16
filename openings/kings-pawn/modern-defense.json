@@ -14,7 +14,11 @@
     "pl": "Obrona Robatscha",
     "nl": "Koningsfianchetto",
     "id": "Pertahanan Modern",
-    "vi": "Phòng thủ hiện đại"
+    "vi": "Phòng thủ hiện đại",
+    "sv": "Moderna försvaret",
+    "nb": "Moderne forsvar",
+    "fi": "Moderni puolustus",
+    "da": "Moderne forsvar"
   },
   "order": 8,
   "variants": [
@@ -33,7 +37,11 @@
         "nl": "Semi-Averbakhvariant",
         "id": "Variasi Semi-Averbakh",
         "vi": "Phương án bán Averbakh",
-        "pl": "Wariant pół-Awerbacha"
+        "pl": "Wariant pół-Awerbacha",
+        "sv": "Semi-Averbakhvarianten",
+        "da": "Semi-Averbakhvarianten",
+        "nb": "Semi-Averbakhvarianten",
+        "fi": "Semi-Averbakh-muunnelma"
       },
       "lines": [
         {
@@ -52,7 +60,11 @@
             "nl": "Semi-Averbakhvariant, Pterodactylusvariant",
             "id": "Variasi Semi-Averbakh, Variasi Pterodaktil",
             "vi": "Phương án bán Averbakh, Phương án thằn lằn bay",
-            "pl": "Wariant pół-Awerbacha, Wariant pterodaktyla"
+            "pl": "Wariant pół-Awerbacha, Wariant pterodaktyla",
+            "sv": "Semi-Averbakhvarianten, Pterodaktylvarianten",
+            "da": "Semi-Averbakhvarianten, Pterodaktylvarianten",
+            "nb": "Semi-Averbakhvarianten, Pterodaktylvarianten",
+            "fi": "Semi-Averbakh-muunnelma, Pterodaktyylimuunnelma"
           },
           "eco": "A04",
           "opening": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation",
@@ -75,7 +87,11 @@
             "nl": "Semi-Averbakhvariant, Poolse variant",
             "id": "Variasi Semi-Averbakh, Variasi Polandia",
             "vi": "Phương án bán Averbakh, Phương án Ba Lan",
-            "pl": "Wariant pół-Awerbacha, Wariant polski"
+            "pl": "Wariant pół-Awerbacha, Wariant polski",
+            "sv": "Semi-Averbakhvarianten, Polska varianten",
+            "da": "Semi-Averbakhvarianten, Polsk variant",
+            "nb": "Semi-Averbakhvarianten, Polsk variant",
+            "fi": "Semi-Averbakh-muunnelma, Puolalainen muunnelma"
           },
           "eco": "A04",
           "opening": "Modern Defense: Semi-Averbakh Variation, Polish Variation",
@@ -98,7 +114,11 @@
             "nl": "Semi-Averbakhvariant, Pterodactylusvariant aangenomen",
             "id": "Variasi Semi-Averbakh, Variasi Pterodaktil Diterima",
             "vi": "Phương án bán Averbakh, Phương án thằn lằn bay chấp nhận",
-            "pl": "Wariant pół-Awerbacha, Wariant pterodaktyla przyjęty"
+            "pl": "Wariant pół-Awerbacha, Wariant pterodaktyla przyjęty",
+            "sv": "Semi-Averbakhvarianten, Pterodaktylvarianten antagen",
+            "da": "Semi-Averbakhvarianten, Pterodaktylvarianten modtaget",
+            "nb": "Semi-Averbakhvarianten, Pterodaktylvarianten mottatt",
+            "fi": "Semi-Averbakh-muunnelma, Pterodaktyylimuunnelma hyväksytty"
           },
           "eco": "A04",
           "opening": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation Accepted",
@@ -121,7 +141,11 @@
             "nl": "Semi-Averbakhvariant, Pterodactylusvariant geweigerd",
             "id": "Variasi Semi-Averbakh, Variasi Pterodaktil Ditolak",
             "vi": "Phương án bán Averbakh, Phương án thằn lằn bay từ chối",
-            "pl": "Wariant pół-Awerbacha, Wariant pterodaktyla odrzucony"
+            "pl": "Wariant pół-Awerbacha, Wariant pterodaktyla odrzucony",
+            "sv": "Semi-Averbakhvarianten, Pterodaktylvarianten avböjd",
+            "da": "Semi-Averbakhvarianten, Pterodaktylvarianten afslået",
+            "nb": "Semi-Averbakhvarianten, Pterodaktylvarianten avslått",
+            "fi": "Semi-Averbakh-muunnelma, Pterodaktyylimuunnelma hylätty"
           },
           "eco": "B06",
           "opening": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation Declined",
@@ -145,7 +169,11 @@
         "nl": "Loperaanval",
         "id": "Serangan Gajah",
         "vi": "Tấn công Tượng",
-        "pl": "Atak gońca"
+        "pl": "Atak gońca",
+        "sv": "Löparattacken",
+        "da": "Løberangrebet",
+        "nb": "Løperangrepet",
+        "fi": "Lähettihyökkäys"
       },
       "lines": [
         {
@@ -164,7 +192,11 @@
             "nl": "Loperaanval, Apenbips",
             "id": "Serangan Gajah, Pantat Monyet",
             "vi": "Tấn công Tượng, Mông khỉ",
-            "pl": "Atak gońca, Małpi tyłek"
+            "pl": "Atak gońca, Małpi tyłek",
+            "sv": "Löparattacken, Apstjärten",
+            "da": "Løberangrebet, Abebagen",
+            "nb": "Løperangrepet, Apestumpen",
+            "fi": "Lähettihyökkäys, Apinan takapuoli"
           },
           "eco": "B06",
           "opening": "Modern Defense: Bishop Attack, Monkey's Bum",
@@ -187,7 +219,11 @@
             "nl": "Loperaanval",
             "id": "Serangan Gajah",
             "vi": "Tấn công Tượng",
-            "pl": "Atak gońca"
+            "pl": "Atak gońca",
+            "sv": "Löparattacken",
+            "da": "Løberangrebet",
+            "nb": "Løperangrepet",
+            "fi": "Lähettihyökkäys"
           },
           "eco": "B06",
           "opening": "Modern Defense: Bishop Attack",
@@ -210,7 +246,11 @@
             "nl": "Loperaanval, Bückergambiet",
             "id": "Serangan Gajah, Gambit Bücker",
             "vi": "Tấn công Tượng, Gambit Bücker",
-            "pl": "Atak gońca, Gambit Bücker"
+            "pl": "Atak gońca, Gambit Bücker",
+            "sv": "Löparattacken, Bückergambit",
+            "da": "Løberangrebet, Bückergambit",
+            "nb": "Løperangrepet, Bückergambit",
+            "fi": "Lähettihyökkäys, Bücker-gambiitti"
           },
           "eco": "B06",
           "opening": "Modern Defense: Bishop Attack, Bücker Gambit",
@@ -234,7 +274,11 @@
         "nl": "Hoofdvariant",
         "id": "Utama",
         "vi": "Chính",
-        "pl": "Główny"
+        "pl": "Główny",
+        "sv": "Huvud",
+        "da": "Hoved",
+        "nb": "Hoved",
+        "fi": "Pää"
       },
       "lines": [
         {
@@ -253,7 +297,11 @@
             "nl": "Moderne verdediging",
             "id": "Pertahanan Modern",
             "vi": "Phòng thủ hiện đại",
-            "pl": "Obrona nowoczesna"
+            "pl": "Obrona nowoczesna",
+            "sv": "Moderna försvaret",
+            "da": "Moderne forsvar",
+            "nb": "Moderne forsvar",
+            "fi": "Moderni puolustus"
           },
           "eco": "A41",
           "opening": "Modern Defense",
@@ -276,7 +324,11 @@
             "nl": "Moderne verdediging",
             "id": "Pertahanan Modern",
             "vi": "Phòng thủ hiện đại",
-            "pl": "Obrona nowoczesna"
+            "pl": "Obrona nowoczesna",
+            "sv": "Moderna försvaret",
+            "da": "Moderne forsvar",
+            "nb": "Moderne forsvar",
+            "fi": "Moderni puolustus"
           },
           "eco": "B06",
           "opening": "Modern Defense",
@@ -299,7 +351,11 @@
             "nl": "Moderne verdediging",
             "id": "Pertahanan Modern",
             "vi": "Phòng thủ hiện đại",
-            "pl": "Obrona nowoczesna"
+            "pl": "Obrona nowoczesna",
+            "sv": "Moderna försvaret",
+            "da": "Moderne forsvar",
+            "nb": "Moderne forsvar",
+            "fi": "Moderni puolustus"
           },
           "eco": "B06",
           "opening": "Modern Defense",
@@ -323,7 +379,11 @@
         "nl": "Tweepaardenvariant",
         "id": "Variasi Dua Kuda",
         "vi": "Phương án hai Mã",
-        "pl": "Wariant dwóch skoczków"
+        "pl": "Wariant dwóch skoczków",
+        "sv": "Tvåspringarvarianten",
+        "da": "Tospringervarianten",
+        "nb": "Tospringervarianten",
+        "fi": "Kaksiratsumuunnelma"
       },
       "lines": [
         {
@@ -342,7 +402,11 @@
             "nl": "Tweepaardenvariant, Suttlesvariant",
             "id": "Variasi Dua Kuda, Variasi Suttles",
             "vi": "Phương án hai Mã, Phương án Suttles",
-            "pl": "Wariant dwóch skoczków, Wariant Suttles"
+            "pl": "Wariant dwóch skoczków, Wariant Suttles",
+            "sv": "Tvåspringarvarianten, Suttlesvarianten",
+            "da": "Tospringervarianten, Suttlesvarianten",
+            "nb": "Tospringervarianten, Suttlesvarianten",
+            "fi": "Kaksiratsumuunnelma, Suttles-muunnelma"
           },
           "eco": "B06",
           "opening": "Modern Defense: Two Knights Variation, Suttles Variation",
@@ -365,7 +429,11 @@
             "nl": "Tweepaardenvariant",
             "id": "Variasi Dua Kuda",
             "vi": "Phương án hai Mã",
-            "pl": "Wariant dwóch skoczków"
+            "pl": "Wariant dwóch skoczków",
+            "sv": "Tvåspringarvarianten",
+            "da": "Tospringervarianten",
+            "nb": "Tospringervarianten",
+            "fi": "Kaksiratsumuunnelma"
           },
           "eco": "B06",
           "opening": "Modern Defense: Two Knights Variation",
@@ -388,7 +456,11 @@
             "nl": "Tweepaardenvariant, Suttlesvariant, Talgambiet",
             "id": "Variasi Dua Kuda, Variasi Suttles, Gambit Tal",
             "vi": "Phương án hai Mã, Phương án Suttles, Gambit Tal",
-            "pl": "Wariant dwóch skoczków, Wariant Suttles, Gambit Tal"
+            "pl": "Wariant dwóch skoczków, Wariant Suttles, Gambit Tal",
+            "sv": "Tvåspringarvarianten, Suttlesvarianten, Talgambit",
+            "da": "Tospringervarianten, Suttlesvarianten, Talgambit",
+            "nb": "Tospringervarianten, Suttlesvarianten, Talgambit",
+            "fi": "Kaksiratsumuunnelma, Suttles-muunnelma, Tal-gambiitti"
           },
           "eco": "B06",
           "opening": "Modern Defense: Two Knights Variation, Suttles Variation, Tal Gambit",
@@ -412,7 +484,11 @@
         "nl": "Hagedisverdediging",
         "id": "Pertahanan Kadal",
         "vi": "Phòng thủ thằn lằn",
-        "pl": "Obrona jaszczurki"
+        "pl": "Obrona jaszczurki",
+        "sv": "Ödleförsvaret",
+        "da": "Firbenforsvaret",
+        "nb": "Øgleforsvaret",
+        "fi": "Liskopuolustus"
       },
       "lines": [
         {
@@ -431,7 +507,11 @@
             "nl": "Hagedisverdediging, Pirc-Diemergambiet",
             "id": "Pertahanan Kadal, Gambit Pirc-Diemer",
             "vi": "Phòng thủ thằn lằn, Gambit Pirc-Diemer",
-            "pl": "Obrona jaszczurki, Gambit Pirc-Diemer"
+            "pl": "Obrona jaszczurki, Gambit Pirc-Diemer",
+            "sv": "Ödleförsvaret, Pirc-Diemergambit",
+            "da": "Firbenforsvaret, Pirc-Diemergambit",
+            "nb": "Øgleforsvaret, Pirc-Diemergambit",
+            "fi": "Liskopuolustus, Pirc-Diemer-gambiitti"
           },
           "eco": "A40",
           "opening": "Modern Defense: Lizard Defense, Pirc-Diemer Gambit",
@@ -454,7 +534,11 @@
             "nl": "Hagedisverdediging, Mittenbergergambiet",
             "id": "Pertahanan Kadal, Gambit Mittenberger",
             "vi": "Phòng thủ thằn lằn, Gambit Mittenberger",
-            "pl": "Obrona jaszczurki, Gambit Mittenberger"
+            "pl": "Obrona jaszczurki, Gambit Mittenberger",
+            "sv": "Ödleförsvaret, Mittenbergergambit",
+            "da": "Firbenforsvaret, Mittenbergergambit",
+            "nb": "Øgleforsvaret, Mittenbergergambit",
+            "fi": "Liskopuolustus, Mittenberger-gambiitti"
           },
           "eco": "B06",
           "opening": "Modern Defense: Lizard Defense, Mittenberger Gambit",
@@ -478,7 +562,11 @@
         "pl": "Obrona Mongredien",
         "nl": "Mongredienverdediging",
         "id": "Pertahanan Mongredien",
-        "vi": "Phòng thủ Mongredien"
+        "vi": "Phòng thủ Mongredien",
+        "sv": "Mongredienförsvaret",
+        "da": "Mongredienforsvaret",
+        "nb": "Mongredienforsvaret",
+        "fi": "Mongredien-puolustus"
       },
       "lines": [
         {
@@ -497,7 +585,11 @@
             "nl": "Mongredienverdediging, met Nc3",
             "id": "Pertahanan Mongredien, dengan Nc3",
             "vi": "Phòng thủ Mongredien, với Nc3",
-            "pl": "Obrona Mongredien, z Nc3"
+            "pl": "Obrona Mongredien, z Nc3",
+            "sv": "Mongredienförsvaret, med Nc3",
+            "da": "Mongredienforsvaret, med Nc3",
+            "nb": "Mongredienforsvaret, med Nc3",
+            "fi": "Mongredien-puolustus, jossa Nc3"
           },
           "eco": "B06",
           "opening": "Modern Defense: Mongredien Defense, with Nc3",
@@ -520,7 +612,11 @@
             "nl": "Mongredienverdediging, met Nf3",
             "id": "Pertahanan Mongredien, dengan Nf3",
             "vi": "Phòng thủ Mongredien, với Nf3",
-            "pl": "Obrona Mongredien, z Nf3"
+            "pl": "Obrona Mongredien, z Nf3",
+            "sv": "Mongredienförsvaret, med Nf3",
+            "da": "Mongredienforsvaret, med Nf3",
+            "nb": "Mongredienforsvaret, med Nf3",
+            "fi": "Mongredien-puolustus, jossa Nf3"
           },
           "eco": "B06",
           "opening": "Modern Defense: Mongredien Defense, with Nf3",
@@ -544,7 +640,11 @@
         "nl": "Noorse verdediging",
         "id": "Pertahanan Norwegia",
         "vi": "Phòng thủ Na Uy",
-        "pl": "Obrona norweska"
+        "pl": "Obrona norweska",
+        "sv": "Norska försvaret",
+        "da": "Norsk forsvar",
+        "nb": "Norsk forsvar",
+        "fi": "Norjalainen puolustus"
       },
       "lines": [
         {
@@ -563,7 +663,11 @@
             "nl": "Noorse verdediging",
             "id": "Pertahanan Norwegia",
             "vi": "Phòng thủ Na Uy",
-            "pl": "Obrona norweska"
+            "pl": "Obrona norweska",
+            "sv": "Norska försvaret",
+            "da": "Norsk forsvar",
+            "nb": "Norsk forsvar",
+            "fi": "Norjalainen puolustus"
           },
           "eco": "B06",
           "opening": "Modern Defense: Norwegian Defense",
@@ -586,7 +690,11 @@
             "nl": "Noorse verdediging, Noors gambiet",
             "id": "Pertahanan Norwegia, Gambit Norwegia",
             "vi": "Phòng thủ Na Uy, Gambit Na Uy",
-            "pl": "Obrona norweska, Gambit norweski"
+            "pl": "Obrona norweska, Gambit norweski",
+            "sv": "Norska försvaret, Norska gambiten",
+            "da": "Norsk forsvar, Norsk gambit",
+            "nb": "Norsk forsvar, Norsk gambit",
+            "fi": "Norjalainen puolustus, Norjalainen gambiitti"
           },
           "eco": "B06",
           "opening": "Modern Defense: Norwegian Defense, Norwegian Gambit",
@@ -613,7 +721,11 @@
         "nl": "Anti-Modern",
         "id": "Anti-Modern",
         "vi": "Chống hiện đại",
-        "pl": "Przeciw nowoczesnej"
+        "pl": "Przeciw nowoczesnej",
+        "sv": "Anti-modern",
+        "da": "Anti-moderne",
+        "nb": "Anti-moderne",
+        "fi": "Anti-moderni"
       },
       "eco": "B06",
       "opening": "Modern Defense: Anti-Modern",
@@ -636,7 +748,11 @@
         "pl": "System Averbakh",
         "nl": "Averbakhsysteem",
         "id": "Sistem Averbakh",
-        "vi": "Hệ thống Averbakh"
+        "vi": "Hệ thống Averbakh",
+        "sv": "Averbakhsystemet",
+        "da": "Averbakhsystemet",
+        "nb": "Averbakhsystemet",
+        "fi": "Averbakh-systeemi"
       },
       "eco": "A42",
       "opening": "Modern Defense: Averbakh System",
@@ -659,7 +775,11 @@
         "nl": "Averbakhvariant, Pseudo-Sämisch",
         "id": "Variasi Averbakh, Sämisch Semu",
         "vi": "Phương án Averbakh, Sämisch giả",
-        "pl": "Wariant Averbakh, Pseudo-Sämisch"
+        "pl": "Wariant Averbakh, Pseudo-Sämisch",
+        "sv": "Averbakhvarianten, Pseudo-Sämisch",
+        "da": "Averbakhvarianten, Pseudo-Sämisch",
+        "nb": "Averbakhvarianten, Pseudo-Sämisch",
+        "fi": "Averbakh-muunnelma, Pseudo-Sämisch"
       },
       "eco": "A42",
       "opening": "Modern Defense: Averbakh Variation, Pseudo-Sämisch",
@@ -682,7 +802,11 @@
         "pl": "Wariant Beefeater",
         "nl": "Beefeatervariant",
         "id": "Variasi Beefeater",
-        "vi": "Phương án Beefeater"
+        "vi": "Phương án Beefeater",
+        "sv": "Beefeatervarianten",
+        "da": "Beefeatervarianten",
+        "nb": "Beefeatervarianten",
+        "fi": "Beefeater-muunnelma"
       },
       "eco": "A40",
       "opening": "Modern Defense: Beefeater Variation",
@@ -705,7 +829,11 @@
         "pl": "Wariant Dunworthy",
         "nl": "Dunworthyvariant",
         "id": "Variasi Dunworthy",
-        "vi": "Phương án Dunworthy"
+        "vi": "Phương án Dunworthy",
+        "sv": "Dunworthyvarianten",
+        "da": "Dunworthyvarianten",
+        "nb": "Dunworthyvarianten",
+        "fi": "Dunworthy-muunnelma"
       },
       "eco": "B06",
       "opening": "Modern Defense: Dunworthy Variation",
@@ -728,7 +856,11 @@
         "nl": "Fianchettogambiet",
         "id": "Gambit Fianchetto",
         "vi": "Gambit fianchetto",
-        "pl": "Gambit z fianchettem"
+        "pl": "Gambit z fianchettem",
+        "sv": "Fianchettogambit",
+        "da": "Fianchettogambit",
+        "nb": "Fianchettogambit",
+        "fi": "Fiankettogambiitti"
       },
       "eco": "B06",
       "opening": "Modern Defense: Fianchetto Gambit",
@@ -751,7 +883,11 @@
         "nl": "Gellersysteem",
         "id": "Sistem Geller",
         "vi": "Hệ thống Geller",
-        "pl": "System Gellera"
+        "pl": "System Gellera",
+        "sv": "Gellersystemet",
+        "da": "Gellersystemet",
+        "nb": "Gellersystemet",
+        "fi": "Geller-systeemi"
       },
       "eco": "B07",
       "opening": "Modern Defense: Geller's System",
@@ -774,7 +910,11 @@
         "pl": "Obrona Gurgenidze",
         "nl": "Gurgenidzeverdediging",
         "id": "Pertahanan Gurgenidze",
-        "vi": "Phòng thủ Gurgenidze"
+        "vi": "Phòng thủ Gurgenidze",
+        "sv": "Gurgenidzeförsvaret",
+        "da": "Gurgenidzeforsvaret",
+        "nb": "Gurgenidzeforsvaret",
+        "fi": "Gurgenidze-puolustus"
       },
       "eco": "B06",
       "opening": "Modern Defense: Gurgenidze Defense",
@@ -797,7 +937,11 @@
         "pl": "Wariant Kotov",
         "nl": "Kotovvariant",
         "id": "Variasi Kotov",
-        "vi": "Phương án Kotov"
+        "vi": "Phương án Kotov",
+        "sv": "Kotovvarianten",
+        "da": "Kotovvarianten",
+        "nb": "Kotovvarianten",
+        "fi": "Kotov-muunnelma"
       },
       "eco": "A42",
       "opening": "Modern Defense: Kotov Variation",
@@ -820,7 +964,11 @@
         "pl": "Gambit Masur",
         "nl": "Masurgambiet",
         "id": "Gambit Masur",
-        "vi": "Gambit Masur"
+        "vi": "Gambit Masur",
+        "sv": "Masurgambit",
+        "da": "Masurgambit",
+        "nb": "Masurgambit",
+        "fi": "Masur-gambiitti"
       },
       "eco": "B06",
       "opening": "Modern Defense: Masur Gambit",
@@ -843,7 +991,11 @@
         "nl": "Moderne Pterodactylus",
         "id": "Pterodaktil Modern",
         "vi": "Thằn lằn bay hiện đại",
-        "pl": "Pterodaktyl nowoczesny"
+        "pl": "Pterodaktyl nowoczesny",
+        "sv": "Modern pterodaktyl",
+        "da": "Moderne pterodaktyl",
+        "nb": "Moderne pterodaktyl",
+        "fi": "Moderni pterodaktyyli"
       },
       "eco": "B06",
       "opening": "Modern Defense: Modern Pterodactyl",
@@ -866,7 +1018,11 @@
         "nl": "Neomoderne verdediging",
         "id": "Pertahanan Neo-Modern",
         "vi": "Phòng thủ tân hiện đại",
-        "pl": "Obrona neonowoczesna"
+        "pl": "Obrona neonowoczesna",
+        "sv": "Neomoderna försvaret",
+        "da": "Neomoderne forsvar",
+        "nb": "Neomoderne forsvar",
+        "fi": "Uusmoderni puolustus"
       },
       "eco": "A41",
       "opening": "Modern Defense: Neo-Modern Defense",
@@ -889,7 +1045,11 @@
         "nl": "Pseudo-Oostenrijkse aanval",
         "id": "Serangan Austria Semu",
         "vi": "Tấn công Áo giả",
-        "pl": "Atak pseudoaustriacki"
+        "pl": "Atak pseudoaustriacki",
+        "sv": "Pseudo-österrikiska attacken",
+        "da": "Pseudo-østrigsk angreb",
+        "nb": "Pseudo-østerriksk angrep",
+        "fi": "Pseudoitävaltalainen hyökkäys"
       },
       "eco": "B06",
       "opening": "Modern Defense: Pseudo-Austrian Attack",
@@ -912,7 +1072,11 @@
         "nl": "Pterodactylusvariant",
         "id": "Variasi Pterodaktil",
         "vi": "Phương án thằn lằn bay",
-        "pl": "Wariant pterodaktyla"
+        "pl": "Wariant pterodaktyla",
+        "sv": "Pterodaktylvarianten",
+        "da": "Pterodaktylvarianten",
+        "nb": "Pterodaktylvarianten",
+        "fi": "Pterodaktyylimuunnelma"
       },
       "eco": "B27",
       "opening": "Modern Defense: Pterodactyl Variation",
@@ -935,7 +1099,11 @@
         "pl": "Wariant Randspringer",
         "nl": "Randspringervariant",
         "id": "Variasi Randspringer",
-        "vi": "Phương án Randspringer"
+        "vi": "Phương án Randspringer",
+        "sv": "Randspringervarianten",
+        "da": "Randspringervarianten",
+        "nb": "Randspringervarianten",
+        "fi": "Randspringer-muunnelma"
       },
       "eco": "A42",
       "opening": "Modern Defense: Randspringer Variation",
@@ -958,7 +1126,11 @@
         "nl": "Standaardverdediging",
         "id": "Pertahanan Standar",
         "vi": "Phòng thủ tiêu chuẩn",
-        "pl": "Obrona standardowa"
+        "pl": "Obrona standardowa",
+        "sv": "Standardförsvaret",
+        "da": "Standardforsvaret",
+        "nb": "Standardforsvaret",
+        "fi": "Vakiopuolustus"
       },
       "eco": "B06",
       "opening": "Modern Defense: Standard Defense",
@@ -981,7 +1153,11 @@
         "nl": "Standaardlijn",
         "id": "Lini Standar",
         "vi": "Diễn biến tiêu chuẩn",
-        "pl": "Linia standardowa"
+        "pl": "Linia standardowa",
+        "sv": "Standardvarianten",
+        "da": "Standardvarianten",
+        "nb": "Standardvarianten",
+        "fi": "Vakiolinja"
       },
       "eco": "B06",
       "opening": "Modern Defense: Standard Line",
@@ -1004,7 +1180,11 @@
         "nl": "Driepionnenaanval",
         "id": "Serangan Tiga Bidak",
         "vi": "Tấn công ba Tốt",
-        "pl": "Atak trzech pionów"
+        "pl": "Atak trzech pionów",
+        "sv": "Trebondeattacken",
+        "da": "Trebondeangrebet",
+        "nb": "Trebondeangrepet",
+        "fi": "Kolmen sotilaan hyökkäys"
       },
       "eco": "B06",
       "opening": "Modern Defense: Three Pawns Attack",
@@ -1027,7 +1207,11 @@
         "pl": "Gambit Westermann",
         "nl": "Westermanngambiet",
         "id": "Gambit Westermann",
-        "vi": "Gambit Westermann"
+        "vi": "Gambit Westermann",
+        "sv": "Westermanngambit",
+        "da": "Westermanngambit",
+        "nb": "Westermanngambit",
+        "fi": "Westermann-gambiitti"
       },
       "eco": "B06",
       "opening": "Modern Defense: Westermann Gambit",
@@ -1050,7 +1234,11 @@
         "nl": "Windgambiet",
         "id": "Gambit Angin",
         "vi": "Gambit gió",
-        "pl": "Gambit wiatru"
+        "pl": "Gambit wiatru",
+        "sv": "Vindgambit",
+        "da": "Vindgambit",
+        "nb": "Vindgambit",
+        "fi": "Tuuligambiitti"
       },
       "eco": "B06",
       "opening": "Modern Defense: Wind Gambit",

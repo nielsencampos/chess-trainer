@@ -14,7 +14,11 @@
     "nl": "Richter-Veresovvariant",
     "pl": "Atak Richter-Veresov",
     "id": "Serangan Richter-Veresov",
-    "vi": "Tấn công Richter-Veresov"
+    "vi": "Tấn công Richter-Veresov",
+    "sv": "Richter-Veresovattacken",
+    "da": "Richter-Veresovangrebet",
+    "nb": "Richter-Veresovangrepet",
+    "fi": "Richter–Veresov-hyökkäys"
   },
   "order": null,
   "variants": [
@@ -33,7 +37,11 @@
         "nl": "Hoofdvariant",
         "id": "Utama",
         "vi": "Chính",
-        "pl": "Główny"
+        "pl": "Główny",
+        "sv": "Huvud",
+        "da": "Hoved",
+        "nb": "Hoved",
+        "fi": "Pää"
       },
       "lines": [
         {
@@ -52,7 +60,11 @@
             "pl": "Atak Richter-Veresov",
             "nl": "Richter-Veresovaanval",
             "id": "Serangan Richter-Veresov",
-            "vi": "Tấn công Richter-Veresov"
+            "vi": "Tấn công Richter-Veresov",
+            "sv": "Richter-Veresovattacken",
+            "da": "Richter-Veresovangrebet",
+            "nb": "Richter-Veresovangrepet",
+            "fi": "Richter-Veresov-hyökkäys"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack",
@@ -75,7 +87,11 @@
             "pl": "Atak Richter-Veresov",
             "nl": "Richter-Veresovaanval",
             "id": "Serangan Richter-Veresov",
-            "vi": "Tấn công Richter-Veresov"
+            "vi": "Tấn công Richter-Veresov",
+            "sv": "Richter-Veresovattacken",
+            "da": "Richter-Veresovangrebet",
+            "nb": "Richter-Veresovangrepet",
+            "fi": "Richter-Veresov-hyökkäys"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack",
@@ -99,7 +115,11 @@
         "nl": "Tweepaardensysteem",
         "id": "Sistem Dua Kuda",
         "vi": "Hệ thống hai Mã",
-        "pl": "System dwóch skoczków"
+        "pl": "System dwóch skoczków",
+        "sv": "Tvåspringarsystemet",
+        "da": "Tospringersystemet",
+        "nb": "Tospringersystemet",
+        "fi": "Kaksiratsusysteemi"
       },
       "lines": [
         {
@@ -118,7 +138,11 @@
             "nl": "Tweepaardensysteem",
             "id": "Sistem Dua Kuda",
             "vi": "Hệ thống hai Mã",
-            "pl": "System dwóch skoczków"
+            "pl": "System dwóch skoczków",
+            "sv": "Tvåspringarsystemet",
+            "da": "Tospringersystemet",
+            "nb": "Tospringersystemet",
+            "fi": "Kaksiratsusysteemi"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack: Two Knights System",
@@ -141,7 +165,11 @@
             "nl": "Tweepaardensysteem, Grünfeldverdediging",
             "id": "Sistem Dua Kuda, Pertahanan Grünfeld",
             "vi": "Hệ thống hai Mã, Phòng thủ Grünfeld",
-            "pl": "System dwóch skoczków, Obrona Grünfeld"
+            "pl": "System dwóch skoczków, Obrona Grünfeld",
+            "sv": "Tvåspringarsystemet, Grünfeldförsvaret",
+            "da": "Tospringersystemet, Grünfeldforsvaret",
+            "nb": "Tospringersystemet, Grünfeldforsvaret",
+            "fi": "Kaksiratsusysteemi, Grünfeld-puolustus"
           },
           "eco": "D01",
           "opening": "Richter-Veresov Attack: Two Knights System, Grünfeld Defense",
@@ -168,7 +196,11 @@
         "pl": "Obrona Boyce",
         "nl": "Boyceverdediging",
         "id": "Pertahanan Boyce",
-        "vi": "Phòng thủ Boyce"
+        "vi": "Phòng thủ Boyce",
+        "sv": "Boyceförsvaret",
+        "da": "Boyceforsvaret",
+        "nb": "Boyceforsvaret",
+        "fi": "Boyce-puolustus"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Boyce Defense",
@@ -191,7 +223,11 @@
         "pl": "Gambit Malich",
         "nl": "Malichgambiet",
         "id": "Gambit Malich",
-        "vi": "Gambit Malich"
+        "vi": "Gambit Malich",
+        "sv": "Malichgambit",
+        "da": "Malichgambit",
+        "nb": "Malichgambit",
+        "fi": "Malich-gambiitti"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Malich Gambit",
@@ -214,7 +250,11 @@
         "pl": "Wariant Richter",
         "nl": "Richtervariant",
         "id": "Variasi Richter",
-        "vi": "Phương án Richter"
+        "vi": "Phương án Richter",
+        "sv": "Richtervarianten",
+        "da": "Richtervarianten",
+        "nb": "Richtervarianten",
+        "fi": "Richter-muunnelma"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Richter Variation",
@@ -237,7 +277,11 @@
         "pl": "Wariant Veresov",
         "nl": "Veresovvariant",
         "id": "Variasi Veresov",
-        "vi": "Phương án Veresov"
+        "vi": "Phương án Veresov",
+        "sv": "Veresovvarianten",
+        "da": "Veresovvarianten",
+        "nb": "Veresovvarianten",
+        "fi": "Veresov-muunnelma"
       },
       "eco": "D01",
       "opening": "Richter-Veresov Attack: Veresov Variation",

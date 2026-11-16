@@ -14,7 +14,11 @@
     "nl": "Driepaardenopening",
     "id": "Pembukaan Tiga Kuda",
     "vi": "Khai cuộc ba Mã",
-    "pl": "Otwarcie trzech skoczków"
+    "pl": "Otwarcie trzech skoczków",
+    "fi": "Kolmiratsupeli",
+    "sv": "Trespringaröppningen",
+    "da": "Trespringeråbningen",
+    "nb": "Trespringeråpningen"
   },
   "order": 16,
   "variants": [
@@ -33,7 +37,11 @@
         "nl": "Hoofdvariant",
         "id": "Utama",
         "vi": "Chính",
-        "pl": "Główny"
+        "pl": "Główny",
+        "sv": "Huvud",
+        "da": "Hoved",
+        "nb": "Hoved",
+        "fi": "Pää"
       },
       "lines": [
         {
@@ -52,7 +60,11 @@
             "nl": "Driepaardenopening",
             "id": "Pembukaan Tiga Kuda",
             "vi": "Khai cuộc ba Mã",
-            "pl": "Otwarcie trzech skoczków"
+            "pl": "Otwarcie trzech skoczków",
+            "sv": "Trespringaröppningen",
+            "da": "Trespringeråbningen",
+            "nb": "Trespringeråpningen",
+            "fi": "Kolmiratsuavaus"
           },
           "eco": "C46",
           "opening": "Three Knights Opening",
@@ -75,7 +87,11 @@
             "nl": "Driepaardenopening",
             "id": "Pembukaan Tiga Kuda",
             "vi": "Khai cuộc ba Mã",
-            "pl": "Otwarcie trzech skoczków"
+            "pl": "Otwarcie trzech skoczków",
+            "sv": "Trespringaröppningen",
+            "da": "Trespringeråbningen",
+            "nb": "Trespringeråpningen",
+            "fi": "Kolmiratsuavaus"
           },
           "eco": "C46",
           "opening": "Three Knights Opening",
@@ -102,7 +118,11 @@
         "pl": "Wariant Schlechter",
         "nl": "Schlechtervariant",
         "id": "Variasi Schlechter",
-        "vi": "Phương án Schlechter"
+        "vi": "Phương án Schlechter",
+        "sv": "Schlechtervarianten",
+        "da": "Schlechtervarianten",
+        "nb": "Schlechtervarianten",
+        "fi": "Schlechter-muunnelma"
       },
       "eco": "C46",
       "opening": "Three Knights Opening: Schlechter Variation",
@@ -125,7 +145,11 @@
         "pl": "Obrona Steinitz",
         "nl": "Steinitzverdediging",
         "id": "Pertahanan Steinitz",
-        "vi": "Phòng thủ Steinitz"
+        "vi": "Phòng thủ Steinitz",
+        "sv": "Steinitzförsvaret",
+        "da": "Steinitzforsvaret",
+        "nb": "Steinitzforsvaret",
+        "fi": "Steinitz-puolustus"
       },
       "eco": "C46",
       "opening": "Three Knights Opening: Steinitz Defense",
@@ -148,7 +172,11 @@
         "pl": "Wariant Steinitz-Rosenthal",
         "nl": "Steinitz-Rosenthalvariant",
         "id": "Variasi Steinitz-Rosenthal",
-        "vi": "Phương án Steinitz-Rosenthal"
+        "vi": "Phương án Steinitz-Rosenthal",
+        "sv": "Steinitz-Rosenthalvarianten",
+        "da": "Steinitz-Rosenthalvarianten",
+        "nb": "Steinitz-Rosenthalvarianten",
+        "fi": "Steinitz-Rosenthal-muunnelma"
       },
       "eco": "C46",
       "opening": "Three Knights Opening: Steinitz-Rosenthal Variation",
@@ -171,7 +199,11 @@
         "pl": "Obrona Winawer",
         "nl": "Winawerverdediging",
         "id": "Pertahanan Winawer",
-        "vi": "Phòng thủ Winawer"
+        "vi": "Phòng thủ Winawer",
+        "sv": "Winawerförsvaret",
+        "da": "Winawerforsvaret",
+        "nb": "Winawerforsvaret",
+        "fi": "Winawer-puolustus"
       },
       "eco": "C46",
       "opening": "Three Knights Opening: Winawer Defense",

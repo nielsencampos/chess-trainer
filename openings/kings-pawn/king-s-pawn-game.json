@@ -14,7 +14,11 @@
     "pl": "Otwarcie pionem królewskim",
     "nl": "Koningspionopening",
     "id": "Permainan Bidak Raja",
-    "vi": "Ván cờ Tốt Vua"
+    "vi": "Ván cờ Tốt Vua",
+    "sv": "Kungsbondespel",
+    "nb": "Kongebondeåpning",
+    "fi": "Kuningassotilaspelit",
+    "da": "Kongebondespil"
   },
   "order": 23,
   "variants": [
@@ -33,7 +37,11 @@
         "pl": "Otwarcie Tayler",
         "nl": "Tayleropening",
         "id": "Pembukaan Tayler",
-        "vi": "Khai cuộc Tayler"
+        "vi": "Khai cuộc Tayler",
+        "sv": "Tayleröppningen",
+        "da": "Tayleråbningen",
+        "nb": "Tayleråpningen",
+        "fi": "Tayler-avaus"
       },
       "lines": [
         {
@@ -52,7 +60,11 @@
             "pl": "Otwarcie Tayler",
             "nl": "Tayleropening",
             "id": "Pembukaan Tayler",
-            "vi": "Khai cuộc Tayler"
+            "vi": "Khai cuộc Tayler",
+            "sv": "Tayleröppningen",
+            "da": "Tayleråbningen",
+            "nb": "Tayleråpningen",
+            "fi": "Tayler-avaus"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening",
@@ -75,7 +87,11 @@
             "nl": "Tayleropening, Omgekeerde Hanham",
             "id": "Pembukaan Tayler, Hanham Terbalik",
             "vi": "Khai cuộc Tayler, Hanham đảo ngược",
-            "pl": "Otwarcie Tayler, Odwrócony Hanham"
+            "pl": "Otwarcie Tayler, Odwrócony Hanham",
+            "sv": "Tayleröppningen, Omvänd Hanham",
+            "da": "Tayleråbningen, Omvendt Hanham",
+            "nb": "Tayleråpningen, Omvendt Hanham",
+            "fi": "Tayler-avaus, Käänteinen Hanham"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening, Inverted Hanham",
@@ -98,7 +114,11 @@
             "pl": "Otwarcie Tayler",
             "nl": "Tayleropening",
             "id": "Pembukaan Tayler",
-            "vi": "Khai cuộc Tayler"
+            "vi": "Khai cuộc Tayler",
+            "sv": "Tayleröppningen",
+            "da": "Tayleråbningen",
+            "nb": "Tayleråpningen",
+            "fi": "Tayler-avaus"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening",
@@ -121,7 +141,11 @@
             "pl": "Otwarcie Tayler, Gambit Basman",
             "nl": "Tayleropening, Basmangambiet",
             "id": "Pembukaan Tayler, Gambit Basman",
-            "vi": "Khai cuộc Tayler, Gambit Basman"
+            "vi": "Khai cuộc Tayler, Gambit Basman",
+            "sv": "Tayleröppningen, Basmangambit",
+            "da": "Tayleråbningen, Basmangambit",
+            "nb": "Tayleråpningen, Basmangambit",
+            "fi": "Tayler-avaus, Basman-gambiitti"
           },
           "eco": "C44",
           "opening": "King's Pawn Game: Tayler Opening, Basman Gambit",
@@ -145,7 +169,11 @@
         "pl": "Obrona Damiano",
         "nl": "Damianoverdediging",
         "id": "Pertahanan Damiano",
-        "vi": "Phòng thủ Damiano"
+        "vi": "Phòng thủ Damiano",
+        "sv": "Damianoförsvaret",
+        "da": "Damianoforsvaret",
+        "nb": "Damianoforsvaret",
+        "fi": "Damiano-puolustus"
       },
       "lines": [
         {
@@ -164,7 +192,11 @@
             "pl": "Obrona Damiano",
             "nl": "Damianoverdediging",
             "id": "Pertahanan Damiano",
-            "vi": "Phòng thủ Damiano"
+            "vi": "Phòng thủ Damiano",
+            "sv": "Damianoförsvaret",
+            "da": "Damianoforsvaret",
+            "nb": "Damianoforsvaret",
+            "fi": "Damiano-puolustus"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Damiano Defense",
@@ -187,7 +219,11 @@
             "pl": "Obrona Damiano, Gambit Damiano, Gambit Chigorin",
             "nl": "Damianoverdediging, Damianogambiet, Chigoringambiet",
             "id": "Pertahanan Damiano, Gambit Damiano, Gambit Chigorin",
-            "vi": "Phòng thủ Damiano, Gambit Damiano, Gambit Chigorin"
+            "vi": "Phòng thủ Damiano, Gambit Damiano, Gambit Chigorin",
+            "sv": "Damianoförsvaret, Damianogambit, Chigoringambit",
+            "da": "Damianoforsvaret, Damianogambit, Chigoringambit",
+            "nb": "Damianoforsvaret, Damianogambit, Chigoringambit",
+            "fi": "Damiano-puolustus, Damiano-gambiitti, Chigorin-gambiitti"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Damiano Defense, Damiano Gambit, Chigorin Gambit",
@@ -210,7 +246,11 @@
             "pl": "Obrona Damiano, Gambit Damiano",
             "nl": "Damianoverdediging, Damianogambiet",
             "id": "Pertahanan Damiano, Gambit Damiano",
-            "vi": "Phòng thủ Damiano, Gambit Damiano"
+            "vi": "Phòng thủ Damiano, Gambit Damiano",
+            "sv": "Damianoförsvaret, Damianogambit",
+            "da": "Damianoforsvaret, Damianogambit",
+            "nb": "Damianoforsvaret, Damianogambit",
+            "fi": "Damiano-puolustus, Damiano-gambiitti"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Damiano Defense, Damiano Gambit",
@@ -234,7 +274,11 @@
         "pl": "Atak MacLeod",
         "nl": "MacLeodaanval",
         "id": "Serangan MacLeod",
-        "vi": "Tấn công MacLeod"
+        "vi": "Tấn công MacLeod",
+        "sv": "MacLeodattacken",
+        "da": "MacLeodangrebet",
+        "nb": "MacLeodangrepet",
+        "fi": "MacLeod-hyökkäys"
       },
       "lines": [
         {
@@ -253,7 +297,11 @@
             "pl": "Atak MacLeod",
             "nl": "MacLeodaanval",
             "id": "Serangan MacLeod",
-            "vi": "Tấn công MacLeod"
+            "vi": "Tấn công MacLeod",
+            "sv": "MacLeodattacken",
+            "da": "MacLeodangrebet",
+            "nb": "MacLeodangrepet",
+            "fi": "MacLeod-hyökkäys"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: MacLeod Attack",
@@ -276,7 +324,11 @@
             "pl": "Atak MacLeod, Gambit Norwalde",
             "nl": "MacLeodaanval, Norwaldegambiet",
             "id": "Serangan MacLeod, Gambit Norwalde",
-            "vi": "Tấn công MacLeod, Gambit Norwalde"
+            "vi": "Tấn công MacLeod, Gambit Norwalde",
+            "sv": "MacLeodattacken, Norwaldegambit",
+            "da": "MacLeodangrebet, Norwaldegambit",
+            "nb": "MacLeodangrepet, Norwaldegambit",
+            "fi": "MacLeod-hyökkäys, Norwalde-gambiitti"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: MacLeod Attack, Norwalde Gambit",
@@ -299,7 +351,11 @@
             "pl": "Atak MacLeod, Gambit Lasa",
             "nl": "MacLeodaanval, Lasagambiet",
             "id": "Serangan MacLeod, Gambit Lasa",
-            "vi": "Tấn công MacLeod, Gambit Lasa"
+            "vi": "Tấn công MacLeod, Gambit Lasa",
+            "sv": "MacLeodattacken, Lasagambit",
+            "da": "MacLeodangrebet, Lasagambit",
+            "nb": "MacLeodangrepet, Lasagambit",
+            "fi": "MacLeod-hyökkäys, Lasa-gambiitti"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: MacLeod Attack, Lasa Gambit",
@@ -323,7 +379,11 @@
         "nl": "Dwalende dame-aanval",
         "id": "Serangan Menteri Nakal",
         "vi": "Tấn công Hậu lang thang",
-        "pl": "Atak zbłąkanego hetmana"
+        "pl": "Atak zbłąkanego hetmana",
+        "sv": "Vilsna damattacken",
+        "da": "Egensindig dronningangreb",
+        "nb": "Egenrådig dronningangrep",
+        "fi": "Harhaileva kuningatarhyökkäys"
       },
       "lines": [
         {
@@ -342,7 +402,11 @@
             "nl": "Dwalende dame-aanval",
             "id": "Serangan Menteri Nakal",
             "vi": "Tấn công Hậu lang thang",
-            "pl": "Atak zbłąkanego hetmana"
+            "pl": "Atak zbłąkanego hetmana",
+            "sv": "Vilsna damattacken",
+            "da": "Egensindig dronningangreb",
+            "nb": "Egenrådig dronningangrep",
+            "fi": "Harhaileva kuningatarhyökkäys"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Wayward Queen Attack",
@@ -365,7 +429,11 @@
             "nl": "Dwalende dame-aanval, Mellongambiet",
             "id": "Serangan Menteri Nakal, Gambit Mellon",
             "vi": "Tấn công Hậu lang thang, Gambit Mellon",
-            "pl": "Atak zbłąkanego hetmana, Gambit Mellon"
+            "pl": "Atak zbłąkanego hetmana, Gambit Mellon",
+            "sv": "Vilsna damattacken, Mellongambit",
+            "da": "Egensindig dronningangreb, Mellongambit",
+            "nb": "Egenrådig dronningangrep, Mellongambit",
+            "fi": "Harhaileva kuningatarhyökkäys, Mellon-gambiitti"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Wayward Queen Attack, Mellon Gambit",
@@ -388,7 +456,11 @@
             "nl": "Dwalende dame-aanval, Kindertegengambiet",
             "id": "Serangan Menteri Nakal, Gambit Balasan Anak-Anak",
             "vi": "Tấn công Hậu lang thang, Phản gambit trẻ con",
-            "pl": "Atak zbłąkanego hetmana, Kontrgambit dziecięcy"
+            "pl": "Atak zbłąkanego hetmana, Kontrgambit dziecięcy",
+            "sv": "Vilsna damattacken, Barnmotgambit",
+            "da": "Egensindig dronningangreb, Børnemodgambit",
+            "nb": "Egenrådig dronningangrep, Barnemotgambit",
+            "fi": "Harhaileva kuningatarhyökkäys, Lapsivastagambiitti"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Wayward Queen Attack, Kiddie Countergambit",
@@ -412,7 +484,11 @@
         "pl": "Gambit Busch-Gass",
         "nl": "Busch-Gassgambiet",
         "id": "Gambit Busch-Gass",
-        "vi": "Gambit Busch-Gass"
+        "vi": "Gambit Busch-Gass",
+        "sv": "Busch-Gassgambit",
+        "da": "Busch-Gassgambit",
+        "nb": "Busch-Gassgambit",
+        "fi": "Busch-Gass-gambiitti"
       },
       "lines": [
         {
@@ -431,7 +507,11 @@
             "pl": "Gambit Busch-Gass",
             "nl": "Busch-Gassgambiet",
             "id": "Gambit Busch-Gass",
-            "vi": "Gambit Busch-Gass"
+            "vi": "Gambit Busch-Gass",
+            "sv": "Busch-Gassgambit",
+            "da": "Busch-Gassgambit",
+            "nb": "Busch-Gassgambit",
+            "fi": "Busch-Gass-gambiitti"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Busch-Gass Gambit",
@@ -454,7 +534,11 @@
             "pl": "Gambit Busch-Gass, Gambit Chiodini",
             "nl": "Busch-Gassgambiet, Chiodinigambiet",
             "id": "Gambit Busch-Gass, Gambit Chiodini",
-            "vi": "Gambit Busch-Gass, Gambit Chiodini"
+            "vi": "Gambit Busch-Gass, Gambit Chiodini",
+            "sv": "Busch-Gassgambit, Chiodinigambit",
+            "da": "Busch-Gassgambit, Chiodinigambit",
+            "nb": "Busch-Gassgambit, Chiodinigambit",
+            "fi": "Busch-Gass-gambiitti, Chiodini-gambiitti"
           },
           "eco": "C40",
           "opening": "King's Pawn Game: Busch-Gass Gambit, Chiodini Gambit",
@@ -478,7 +562,11 @@
         "nl": "Mosselvariant",
         "id": "Variasi Kerang",
         "vi": "Phương án con trai",
-        "pl": "Wariant małży"
+        "pl": "Wariant małży",
+        "sv": "Musselvarianten",
+        "da": "Muslingvarianten",
+        "nb": "Muslingvarianten",
+        "fi": "Simpukkamuunnelma"
       },
       "lines": [
         {
@@ -497,7 +585,11 @@
             "nl": "Mosselvariant, Radischgambiet",
             "id": "Variasi Kerang, Gambit Radisch",
             "vi": "Phương án con trai, Gambit Radisch",
-            "pl": "Wariant małży, Gambit Radisch"
+            "pl": "Wariant małży, Gambit Radisch",
+            "sv": "Musselvarianten, Radischgambit",
+            "da": "Muslingvarianten, Radischgambit",
+            "nb": "Muslingvarianten, Radischgambit",
+            "fi": "Simpukkamuunnelma, Radisch-gambiitti"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Clam Variation, Radisch Gambit",
@@ -520,7 +612,11 @@
             "nl": "Mosselvariant, Koningsgambiet met omgekeerde kleuren",
             "id": "Variasi Kerang, Gambit Raja Terbalik",
             "vi": "Phương án con trai, Gambit Vua đảo màu",
-            "pl": "Wariant małży, Gambit królewski z odwróconymi kolorami"
+            "pl": "Wariant małży, Gambit królewski z odwróconymi kolorami",
+            "sv": "Musselvarianten, Kungsgambit med ombytta färger",
+            "da": "Muslingvarianten, Kongegambit med byttede farver",
+            "nb": "Muslingvarianten, Kongegambit med byttede farger",
+            "fi": "Simpukkamuunnelma, Kuningasgambiitti käänteisin värein"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: Clam Variation, King's Gambit Reversed",
@@ -544,7 +640,11 @@
         "nl": "Koningskopopening",
         "id": "Pembukaan Kepala Raja",
         "vi": "Khai cuộc đầu Vua",
-        "pl": "Otwarcie głowy króla"
+        "pl": "Otwarcie głowy króla",
+        "sv": "Kungshuvudöppningen",
+        "da": "Kongehovedåbningen",
+        "nb": "Kongehodeåpningen",
+        "fi": "Kuninkaanpääavaus"
       },
       "lines": [
         {
@@ -563,7 +663,11 @@
             "nl": "Koningskopopening",
             "id": "Pembukaan Kepala Raja",
             "vi": "Khai cuộc đầu Vua",
-            "pl": "Otwarcie głowy króla"
+            "pl": "Otwarcie głowy króla",
+            "sv": "Kungshuvudöppningen",
+            "da": "Kongehovedåbningen",
+            "nb": "Kongehodeåpningen",
+            "fi": "Kuninkaanpääavaus"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: King's Head Opening",
@@ -586,7 +690,11 @@
             "nl": "Koningskopopening",
             "id": "Pembukaan Kepala Raja",
             "vi": "Khai cuộc đầu Vua",
-            "pl": "Otwarcie głowy króla"
+            "pl": "Otwarcie głowy króla",
+            "sv": "Kungshuvudöppningen",
+            "da": "Kongehovedåbningen",
+            "nb": "Kongehodeåpningen",
+            "fi": "Kuninkaanpääavaus"
           },
           "eco": "C20",
           "opening": "King's Pawn Game: King's Head Opening",
@@ -610,7 +718,11 @@
         "nl": "Hoofdvariant",
         "id": "Utama",
         "vi": "Chính",
-        "pl": "Główny"
+        "pl": "Główny",
+        "sv": "Huvud",
+        "da": "Hoved",
+        "nb": "Hoved",
+        "fi": "Pää"
       },
       "lines": [
         {
@@ -629,7 +741,11 @@
             "nl": "Koningspionspel",
             "id": "Permainan Bidak Raja",
             "vi": "Ván cờ Tốt Vua",
-            "pl": "Partia piona królewskiego"
+            "pl": "Partia piona królewskiego",
+            "sv": "Kungsbondespel",
+            "da": "Kongebondespil",
+            "nb": "Kongebondespill",
+            "fi": "Kuningassotilaspeli"
           },
           "eco": "B00",
           "opening": "King's Pawn Game",
@@ -652,7 +768,11 @@
             "nl": "Koningspionspel",
             "id": "Permainan Bidak Raja",
             "vi": "Ván cờ Tốt Vua",
-            "pl": "Partia piona królewskiego"
+            "pl": "Partia piona królewskiego",
+            "sv": "Kungsbondespel",
+            "da": "Kongebondespil",
+            "nb": "Kongebondespill",
+            "fi": "Kuningassotilaspeli"
           },
           "eco": "C20",
           "opening": "King's Pawn Game",
@@ -679,7 +799,11 @@
         "pl": "Otwarcie Alapin",
         "nl": "Alapinopening",
         "id": "Pembukaan Alapin",
-        "vi": "Khai cuộc Alapin"
+        "vi": "Khai cuộc Alapin",
+        "sv": "Alapinöppningen",
+        "da": "Alapinåbningen",
+        "nb": "Alapinåpningen",
+        "fi": "Alapin-avaus"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Alapin Opening",
@@ -702,7 +826,11 @@
         "nl": "Beiers gambiet",
         "id": "Gambit Bavaria",
         "vi": "Gambit Bayern",
-        "pl": "Gambit bawarski"
+        "pl": "Gambit bawarski",
+        "sv": "Bayerska gambiten",
+        "da": "Bayersk gambit",
+        "nb": "Bayersk gambit",
+        "fi": "Baijerilainen gambiitti"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Bavarian Gambit",
@@ -725,7 +853,11 @@
         "pl": "Gambit Beyer",
         "nl": "Beyergambiet",
         "id": "Gambit Beyer",
-        "vi": "Gambit Beyer"
+        "vi": "Gambit Beyer",
+        "sv": "Beyergambit",
+        "da": "Beyergambit",
+        "nb": "Beyergambit",
+        "fi": "Beyer-gambiitti"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Beyer Gambit",
@@ -748,7 +880,11 @@
         "nl": "Dresdense opening",
         "id": "Pembukaan Dresden",
         "vi": "Khai cuộc Dresden",
-        "pl": "Otwarcie drezdeńskie"
+        "pl": "Otwarcie drezdeńskie",
+        "sv": "Dresdenöppningen",
+        "da": "Dresdenåbningen",
+        "nb": "Dresdenåpningen",
+        "fi": "Dresden-avaus"
       },
       "eco": "C44",
       "opening": "King's Pawn Game: Dresden Opening",
@@ -771,7 +907,11 @@
         "pl": "Obrona Gunderam, Gambit Gunderam",
         "nl": "Gunderamverdediging, Gunderamgambiet",
         "id": "Pertahanan Gunderam, Gambit Gunderam",
-        "vi": "Phòng thủ Gunderam, Gambit Gunderam"
+        "vi": "Phòng thủ Gunderam, Gambit Gunderam",
+        "sv": "Gunderamförsvaret, Gunderamgambit",
+        "da": "Gunderamforsvaret, Gunderamgambit",
+        "nb": "Gunderamforsvaret, Gunderamgambit",
+        "fi": "Gunderam-puolustus, Gunderam-gambiitti"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: Gunderam Defense, Gunderam Gambit",
@@ -794,7 +934,11 @@
         "pl": "Gambit Gunderam",
         "nl": "Gunderamgambiet",
         "id": "Gambit Gunderam",
-        "vi": "Gambit Gunderam"
+        "vi": "Gambit Gunderam",
+        "sv": "Gunderamgambit",
+        "da": "Gunderamgambit",
+        "nb": "Gunderamgambit",
+        "fi": "Gunderam-gambiitti"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: Gunderam Gambit",
@@ -817,7 +961,11 @@
         "nl": "Koningspionopening",
         "id": "Pembukaan Bidak Raja",
         "vi": "Khai cuộc Tốt Vua",
-        "pl": "Otwarcie piona królewskiego"
+        "pl": "Otwarcie piona królewskiego",
+        "sv": "Kungsbondeöppningen",
+        "da": "Kongebondeåbningen",
+        "nb": "Kongebondeåpningen",
+        "fi": "Kuningassotilasavaus"
       },
       "eco": "C20",
       "opening": "King's Pawn Opening",
@@ -840,7 +988,11 @@
         "nl": "Koningspionopening: Speers",
         "id": "Pembukaan Bidak Raja: Speers",
         "vi": "Khai cuộc Tốt Vua: Speers",
-        "pl": "Otwarcie piona królewskiego: Speers"
+        "pl": "Otwarcie piona królewskiego: Speers",
+        "sv": "Kungsbondeöppningen: Speers",
+        "da": "Kongebondeåbningen: Speers",
+        "nb": "Kongebondeåpningen: Speers",
+        "fi": "Kuningassotilasavaus: Speers"
       },
       "eco": "C20",
       "opening": "King's Pawn Opening: Speers",
@@ -863,7 +1015,11 @@
         "nl": "Koningspionopening: Van Hooydoongambiet",
         "id": "Pembukaan Bidak Raja: Gambit Van Hooydoon",
         "vi": "Khai cuộc Tốt Vua: Gambit Van Hooydoon",
-        "pl": "Otwarcie piona królewskiego: Gambit Van Hooydoon"
+        "pl": "Otwarcie piona królewskiego: Gambit Van Hooydoon",
+        "sv": "Kungsbondeöppningen: Van Hooydoongambit",
+        "da": "Kongebondeåbningen: Van Hooydoongambit",
+        "nb": "Kongebondeåpningen: Van Hooydoongambit",
+        "fi": "Kuningassotilasavaus: Van Hooydoon-gambiitti"
       },
       "eco": "C20",
       "opening": "King's Pawn Opening: Van Hooydoon Gambit",
@@ -886,7 +1042,11 @@
         "pl": "Gambit La Bourdonnais",
         "nl": "La Bourdonnaisgambiet",
         "id": "Gambit La Bourdonnais",
-        "vi": "Gambit La Bourdonnais"
+        "vi": "Gambit La Bourdonnais",
+        "sv": "La Bourdonnaisgambit",
+        "da": "La Bourdonnaisgambit",
+        "nb": "La Bourdonnaisgambit",
+        "fi": "La Bourdonnais-gambiitti"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: La Bourdonnais Gambit",
@@ -909,7 +1069,11 @@
         "pl": "Wariant Leonardis",
         "nl": "Leonardisvariant",
         "id": "Variasi Leonardis",
-        "vi": "Phương án Leonardis"
+        "vi": "Phương án Leonardis",
+        "sv": "Leonardisvarianten",
+        "da": "Leonardisvarianten",
+        "nb": "Leonardisvarianten",
+        "fi": "Leonardis-muunnelma"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Leonardis Variation",
@@ -932,7 +1096,11 @@
         "pl": "Obrona Maróczy",
         "nl": "Maróczyverdediging",
         "id": "Pertahanan Maróczy",
-        "vi": "Phòng thủ Maróczy"
+        "vi": "Phòng thủ Maróczy",
+        "sv": "Maróczyförsvaret",
+        "da": "Maróczyforsvaret",
+        "nb": "Maróczyforsvaret",
+        "fi": "Maróczy-puolustus"
       },
       "eco": "B07",
       "opening": "King's Pawn Game: Maróczy Defense",
@@ -955,7 +1123,11 @@
         "pl": "Obrona McConnell",
         "nl": "McConnellverdediging",
         "id": "Pertahanan McConnell",
-        "vi": "Phòng thủ McConnell"
+        "vi": "Phòng thủ McConnell",
+        "sv": "McConnellförsvaret",
+        "da": "McConnellforsvaret",
+        "nb": "McConnellforsvaret",
+        "fi": "McConnell-puolustus"
       },
       "eco": "C40",
       "opening": "King's Pawn Game: McConnell Defense",
@@ -978,7 +1150,11 @@
         "nl": "Mengariniopening",
         "id": "Pembukaan Mengarini",
         "vi": "Khai cuộc Mengarini",
-        "pl": "Otwarcie Mengariniego"
+        "pl": "Otwarcie Mengariniego",
+        "sv": "Mengariniöppningen",
+        "da": "Mengariniåbningen",
+        "nb": "Mengariniåpningen",
+        "fi": "Mengarini-avaus"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Mengarini's Opening",
@@ -1001,7 +1177,11 @@
         "nl": "Napoleonaanval",
         "id": "Serangan Napoleon",
         "vi": "Tấn công Napoléon",
-        "pl": "Atak Napoleona"
+        "pl": "Atak Napoleona",
+        "sv": "Napoleonattacken",
+        "da": "Napoleonangrebet",
+        "nb": "Napoleonangrepet",
+        "fi": "Napoleon-hyökkäys"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Napoleon Attack",
@@ -1024,7 +1204,11 @@
         "nl": "Pachman-vleugelgambiet",
         "id": "Gambit Sayap Pachman",
         "vi": "Gambit cánh Pachman",
-        "pl": "Gambit skrzydłowy Pachmana"
+        "pl": "Gambit skrzydłowy Pachmana",
+        "sv": "Pachman-flygelgambit",
+        "da": "Pachman-fløjgambit",
+        "nb": "Pachman-fløygambit",
+        "fi": "Pachman-sivustagambiitti"
       },
       "eco": "C44",
       "opening": "King's Pawn Game: Pachman Wing Gambit",
@@ -1047,7 +1231,11 @@
         "pl": "Gambit Philidor",
         "nl": "Philidorgambiet",
         "id": "Gambit Philidor",
-        "vi": "Gambit Philidor"
+        "vi": "Gambit Philidor",
+        "sv": "Philidorgambit",
+        "da": "Philidorgambit",
+        "nb": "Philidorgambit",
+        "fi": "Philidor-gambiitti"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Philidor Gambit",
@@ -1070,7 +1258,11 @@
         "pl": "Gambit Schulze-Müller",
         "nl": "Schulze-Müllergambiet",
         "id": "Gambit Schulze-Müller",
-        "vi": "Gambit Schulze-Müller"
+        "vi": "Gambit Schulze-Müller",
+        "sv": "Schulze-Müllergambit",
+        "da": "Schulze-Müllergambit",
+        "nb": "Schulze-Müllergambit",
+        "fi": "Schulze-Müller-gambiitti"
       },
       "eco": "C44",
       "opening": "King's Pawn Game: Schulze-Müller Gambit",
@@ -1093,7 +1285,11 @@
         "nl": "Schildpadopening",
         "id": "Pembukaan Kura-Kura",
         "vi": "Khai cuộc con rùa",
-        "pl": "Otwarcie żółwia"
+        "pl": "Otwarcie żółwia",
+        "sv": "Sköldpaddsöppningen",
+        "da": "Skildpaddeåbningen",
+        "nb": "Skilpaddeåpningen",
+        "fi": "Kilpikonna-avaus"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Tortoise Opening",
@@ -1116,7 +1312,11 @@
         "pl": "Gambit Weber",
         "nl": "Webergambiet",
         "id": "Gambit Weber",
-        "vi": "Gambit Weber"
+        "vi": "Gambit Weber",
+        "sv": "Webergambit",
+        "da": "Webergambit",
+        "nb": "Webergambit",
+        "fi": "Weber-gambiitti"
       },
       "eco": "C20",
       "opening": "King's Pawn Game: Weber Gambit",
