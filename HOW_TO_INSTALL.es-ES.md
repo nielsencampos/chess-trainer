@@ -83,7 +83,7 @@ El programa y tus datos están separados: instalar una versión nueva o quitar e
 ### Haz una copia de seguridad
 
 1. Cierra Chess Trainer. Mientras está abierto, los cambios recientes siguen en un archivo aparte, `chess-trainer.duckdb.wal`, y una copia solo de la base no los tendría.
-2. Copia toda la carpeta `chess-trainer` de la tabla a un memoria USB, una carpeta en la nube u otro disco.
+2. Copia toda la carpeta `chess-trainer` de la tabla a una memoria USB, una carpeta en la nube u otro disco.
 
 Para restaurarla, cierra Chess Trainer y vuelve a poner la carpeta en el mismo lugar. El archivo de la base funciona en cualquier sistema, así que también sirve para llevar tus partidas a otro ordenador. Una base de la versión Docker (`data/chess-trainer.duckdb`) se puede copiar igual.
 

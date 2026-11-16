@@ -79,7 +79,7 @@
   "install.data.apart": "El programa y tus datos están separados: instalar una versión nueva o quitar el programa no toca tus partidas.",
   "install.backup.title": "Haz una copia de seguridad",
   "install.backup.close": "Cierra Chess Trainer. Mientras está abierto, los cambios recientes siguen en un archivo aparte, `chess-trainer.duckdb.wal`, y una copia solo de la base no los tendría.",
-  "install.backup.copy": "Copia toda la carpeta `chess-trainer` de la tabla a un memoria USB, una carpeta en la nube u otro disco.",
+  "install.backup.copy": "Copia toda la carpeta `chess-trainer` de la tabla a una memoria USB, una carpeta en la nube u otro disco.",
   "install.backup.restore": "Para restaurarla, cierra Chess Trainer y vuelve a poner la carpeta en el mismo lugar. El archivo de la base funciona en cualquier sistema, así que también sirve para llevar tus partidas a otro ordenador. Una base de la versión Docker (`data/chess-trainer.duckdb`) se puede copiar igual.",
   "install.update.title": "Actualiza",
   "install.update.text": "Descarga la versión nueva e instálala igual, en lugar de la anterior (Windows: ejecuta el instalador nuevo; macOS: sustituye la aplicación en Aplicaciones; Linux: ejecuta `./install.sh` desde la carpeta nueva). Tus partidas siguen donde están.",

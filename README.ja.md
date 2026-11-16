@@ -20,7 +20,7 @@
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 確認済みなのは米国英語、ブラジル・ポルトガル語、中南米スペイン語だけです。英国英語を含むほかの言語はすべて機械翻訳で、確認されていません。修正を歓迎します：[Translation fix issue](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=ja) を作成してください。
@@ -65,7 +65,7 @@ docker run -d --init --name chess-trainer -p 127.0.0.1:8000:8000 \
 - **時計**：バレット、DGT 3000 の時計のブリッツ、ラピッド、クラシカル設定、または時計なし。
 - **Chess960**：960 通りの初期配置から 1 つを抽選するか、その FEN を貼り付けて、Stockfish と対局します。
 - **保存した対局**：すべての対局が保存されます。絞り込み、PGN への書き出し、1 手ずつの振り返り、任意の手からの新しい対局の開始ができます（Chess960 の対局からはまだ不可）。
-- **取り込み**：PGN を貼り付ける、ファイルをアップロードする、または Chess.com や Lichess からプレーヤーの公開対局を取得します。振り返りでは PGN の評価、分類、消費時間、コメント、変化手順を表示します。
+- **取り込み**：PGN を貼り付ける、ファイルをアップロードする、または Chess.com や Lichess からプレーヤーの公開対局を取得します。振り返り画面には PGN の評価、分類、消費時間、コメント、変化手順を表示します。
 - **評価バー**：振り返り中と対局の終わりに表示される Stockfish の評価値です。簡単な確認であって、完全な解析ではありません。解析には PGN を Chess.com や Lichess に書き出してください。
 - **スコアシート**：公式のものを手本にした印刷用の A4 スコアシートで、長い対局で手を手書きで記録できます。公式のスコアシートではなく、練習専用です。
 - **ヘルプ**：各画面の使い方。アプリのメニューにあります。

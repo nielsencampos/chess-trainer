@@ -20,7 +20,7 @@ Phần mềm luyện cờ chạy trên máy: chơi với Stockfish bằng các t
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 Chỉ tiếng Anh Mỹ, tiếng Bồ Đào Nha Brazil và tiếng Tây Ban Nha Mỹ Latinh đã được duyệt lại. Mọi ngôn ngữ khác, kể cả tiếng Anh Anh, đều do máy dịch và chưa được duyệt lại. Rất hoan nghênh các góp ý sửa lỗi: hãy mở một [issue Translation fix](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=vi).

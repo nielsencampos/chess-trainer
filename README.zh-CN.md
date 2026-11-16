@@ -20,7 +20,7 @@
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 只有美式英语、巴西葡萄牙语和拉丁美洲西班牙语经过审校。其他所有语言（包括英式英语）都是机器翻译，未经审校。欢迎指正：请提交 [Translation fix issue](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=zh-CN)。

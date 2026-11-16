@@ -20,7 +20,7 @@ Local chess trainer: play Stockfish with real clock presets, drill your openings
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 Only US English, Brazilian Portuguese and Latin American Spanish are reviewed. Every other language, English (UK) included, is machine-made and unreviewed. Corrections are welcome. Open a [Translation fix issue](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=en-GB).
@@ -76,7 +76,7 @@ Chess Trainer is for training. Never use it, or any engine, during a game agains
 
 ## The book
 
-The bot's book is in `openings/`, one JSON file per opening family, loaded into DuckDB on start (a few seconds the first time). It starts with all 3,865 lines of the [Lichess openings catalog](https://github.com/lichess-org/chess-openings). Any line plays with either colour. The catalog lists named positions, not recommended replies, so lines are often short and the engine plays on from there. They can be extended by pull request, recording the source. The format is in [the brief, §6](docs/PROJECT_BRIEF.md).
+The bot's book is in `openings/`, one JSON file per opening family, loaded into DuckDB on start (a few seconds the first time). It starts with all 3,865 lines of the [Lichess openings catalogue](https://github.com/lichess-org/chess-openings). Any line plays with either colour. The catalogue lists named positions, not recommended replies, so lines are often short and the engine plays on from there. They can be extended by pull request, recording the source. The format is in [the brief, §6](docs/PROJECT_BRIEF.md).
 
 The database lives in `./data`, which the container writes as UID 1000. To back it up, stop the app and copy the file. Every move is saved there, so an unfinished game continues when you open the page again, even after a restart. Clocks stop while the app is closed.
 

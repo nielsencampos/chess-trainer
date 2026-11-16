@@ -23,14 +23,14 @@ Ouvrez la [page des Releases](https://github.com/nielsencampos/chess-trainer/rel
 
 Vous ne savez pas quel Mac vous avez ? Ouvrez le menu Apple → **À propos de ce Mac**. « Puce : Apple M… » signifie puce Apple ; « Processeur : Intel » signifie Intel.
 
-Le téléchargement fait environ 100 à 300 Mo, car il inclut le moteur d'échecs Stockfish.
+Le téléchargement fait entre 100 et 300 Mo, car il inclut le moteur d'échecs Stockfish.
 
 ## 2. Installer et ouvrir
 
 ### Windows
 
 1. Double-cliquez sur **chess-trainer-…-windows-x64-setup.exe** dans votre dossier Téléchargements.
-2. Windows peut afficher **« Windows a protégé votre ordinateur »** (SmartScreen). Ce message apparaît parce que le programme est récent et n'est pas signé par un certificat payant, pas parce qu'il pose problème. Cliquez sur **Informations complémentaires**, puis sur **Exécuter quand même**.
+2. Windows peut afficher **« Windows a protégé votre ordinateur »** (SmartScreen). Ce message apparaît parce que le programme est récent et n'est pas signé par un certificat payant, pas parce qu'il a un défaut. Cliquez sur **Informations complémentaires**, puis sur **Exécuter quand même**.
 3. Suivez l'installateur. Il ne demande pas de mot de passe administrateur et ajoute **Chess Trainer** au menu Démarrer (et au bureau, si vous cochez la case).
 4. Ouvrez **Chess Trainer** depuis le menu Démarrer.
 
@@ -89,7 +89,7 @@ Pour restaurer, fermez Chess Trainer et remettez le dossier au même endroit. Le
 
 ## Mettre à jour
 
-Téléchargez la nouvelle version et installez-la de la même façon, à la place de l'ancien programme (Windows : lancez le nouvel installateur ; macOS : remplacez l'application dans Applications ; Linux : lancez `./install.sh` depuis le nouveau dossier). Vos parties restent où elles sont.
+Téléchargez la nouvelle version et installez-la de la même manière, à la place de l'ancien programme (Windows : lancez le nouvel installateur ; macOS : remplacez l'application dans Applications ; Linux : lancez `./install.sh` depuis le nouveau dossier). Vos parties restent où elles sont.
 
 ## Désinstaller
 

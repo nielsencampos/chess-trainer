@@ -28,6 +28,8 @@ all = [
     "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch", "Français", "Italiano",
     "Türkçe", "Polski", "Nederlands", "Bahasa", "Indonesia", "Tiếng", "Việt", "Svenska", "Dansk", "Norsk", "bokmål", "Suomi", "Русский", "Українська",
     "日本語", "한국어", "العربية", "فارسی", "עברית",
+    # README and HOW_TO_INSTALL in every language: badges, Windows' quoted error, GitHub and tool words.
+    "Ruff", "CI", "Claude", "UID", "loopback", "Loopback", "launcher", "Failed", "execute", "script", "Mac", "Ctrl", "M1", "M2", "M3", "WebView", "token", "issue", "pull", "request", "Translation", "fix", "Desktop", "Chip", "brief", "build", "log", "amd", "GPL-3.0", "GPL-", "GPL-3",
 ]
 en-US = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
@@ -39,6 +41,8 @@ en-GB = [
     "untick", "unticked", "Untick",
     # A quote of Mecking's nickname, kept in Portuguese.
     "xadrez", "grande", "mestre",
+    # The network word in the README.
+    "loopback",
 ]
 pt-BR = [
     "streamer", "streamers", "azerbaijano", "pt", "En",
@@ -54,6 +58,8 @@ de = [
     "Backend",  # the author's own words on the About page
     "python", "chess", "result",  # the names python-chess and @badrap/result
     "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+    # README and HOW_TO_INSTALL (#58).
+    "GitHub-Ratenlimit", "notarisiert", "Pull-Request", "rechtsklicke", "Rechtsklicke",
 ]
 fr = [
     "streamer", "streamers", "Campos", "FFE", "précoup", "précoups", "Précoup", "ECO", "Flor",
@@ -79,6 +85,8 @@ pl = [
     "python", "chess", "result",  # the names python-chess and @badrap/result
     "Searching", "for",  # the film's original title
     "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+    # README and HOW_TO_INSTALL (#58): inflected names.
+    "Dockera", "Stockfishem", "notaryzowana",
 ]
 nl = [
     "zettenlijst", "evaluatiebalk", "schaakengine", "stuksymbolen", "figurines", "Figurines",
@@ -87,6 +95,8 @@ nl = [
     "backend-engineer",  # the author's own words on the About page
     "python", "chess", "result",  # the names python-chess and @badrap/result
     "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+    # README and HOW_TO_INSTALL (#58): compounds with names, and loanwords.
+    "3000-klok", "64-bits", "A4-notatieformulier", "Apple-chip", "blitz-", "rapid-", "botniveaus", "Chess960-partij", "cloudmap", "Desktop-app", "Docker-image", "Docker-versie", "Evaluatiebalk", "fix-issue", "gegevensmap", "genotariseerd", "GitHub-limiet", "Hulp-scherm", "Intel-processor", "Linux-arm64-binary", "Releases-pagina", "Stockfish-release", "usb-stick", "X11-bureaublad", "zijvarianten",
 ]
 sv = [
     "patt", "Onoggrannhet", "pjässymboler", "50-dragsregeln", "75-dragsregeln", "FIDE-id",
@@ -98,6 +108,8 @@ sv = [
     "backendingenjör",  # the author's own words on the About page
     "python", "chess", "result", "badrap",  # the names python-chess and @badrap/result
     "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+    # README and HOW_TO_INSTALL (#58): compounds and loanwords.
+    "API-anrop", "Apple-chip", "briefen", "projektbriefen", "Chess960-parti", "Docker-avbildning", "Docker-versionen", "JSON-fil", "kontrollklicka", "molnmapp", "notariserad", "ogranskade", "Skrivbordsapp", "snabbschack-", "Stockfishs", "Stockfish-versionen", "utskrivbart",
 ]
 da = [
     "bot", "Bot", "botten", "Botten", "bottens", "Bottens", "briksymboler", "femfoldig",
@@ -110,12 +122,16 @@ da = [
     "backendingeniør",  # the author's own words on the About page
     "python", "chess", "result", "badrap",  # the names python-chess and @badrap/result
     "xadrez", "um", "grande", "mestre",  # a quote of Mecking's book
+    # README and HOW_TO_INSTALL (#58): compounds and loanwords.
+    "briefen", "projektbriefen", "ctrl-klik", "Docker-image", "Docker-versionen", "HDMI-port", "JSON-fil", "maskinoversat", "notariseret", "Stockfish-udgave", "Trinene", "udviklerkonto", "urindstillinger", "velkomne",
 ]
 pt-PT = [
     "streamer", "streamers", "azeri", "FPX", "pt", "min", "US", "Hans",
     "backend",  # the author's own words on the About page
     "python", "chess", "result",  # the names python-chess and @badrap/result
     "Searching", "for",  # the film's original title
+    # README and HOW_TO_INSTALL (#58).
+    "notarizada", "semirrápidas",
 ]
 es-419 = [
     "streamer", "streamers", "premovimiento", "premovimientos", "Premovimiento",
@@ -138,11 +154,15 @@ ru = [
     "полуход", "полухода", "полуходов",  # ply, a chess term
     "Кампос", "бэкенда", "шахматист-любитель", "шахматистов-любителей",  # the author's own words
     "Крикором",  # Krikor, the name
+    # The project brief, in the README (#58).
+    "брифе",
 ]
 uk = [
     "премув", "премуви", "Премув",  # premove
     "півхід", "півходи", "півходів", "півходу",  # ply, a chess term
     "Крикором",  # Krikor, the name
+    # The project brief and megabytes, in the README (#58).
+    "брифі", "МБ",
 ]
 
 [disabled]
@@ -181,6 +201,8 @@ pt-PT = [
     "PT_WORDINESS_REPLACE_AINDA_ESTÁ", "PT_WORDINESS_REPLACE_AINDA_ESTÃO",
     "PT_WORDINESS_REPLACE_POR_CAUSA_DO", "PT_WORDINESS_REPLACE_A_NÃO_SER_QUE", "DEPOIS_DE_APÓS",
     "VERB_COMMA_CONJUNCTION",
+    # "zip" is the file type's name.
+    "PT_BARBARISMS_REPLACE_ZIP",
 ]
 es-419 = []
 es-ES = []
@@ -194,6 +216,8 @@ fr = [
 it = []
 pl = [
     "ZDANIA_ZLOZONE",  # UI labels named in a sentence ("Odznacz Pokaż posunięcia") read as verbs
+    # macOS, GitHuba and 1280x720 are written as they are.
+    "NIETYPOWA_KOMBINACJA_DUZYCH_I_MALYCH_LITER", "MNOZENIE",
 ]
 nl = []
 sv = []
@@ -237,6 +261,8 @@ pt-BR = [
     { text = "Português", rule = "GENTILICOS_LINGUAS" },  # the language links: Português (Brasil) · Português (Portugal)
     { text = "Italiano", rule = "GENTILICOS_LINGUAS" },  # the language links
     { text = "Cf3", rule = "CHEMICAL_FORMULAS_TYPOGRAPHY" },  # a move in Portuguese letters
+    # "quem fez e por quê", at the end of the clause
+    { text = "por quê", rule = "POR_QUE_PORQUE" },
 ]
 pt-PT = [
     { text = ",", rule = "UNLIKELY_OPENING_PUNCTUATION" },
@@ -246,6 +272,8 @@ pt-PT = [
     { text = "Cf3", rule = "CHEMICAL_FORMULAS_TYPOGRAPHY" },  # a move in Portuguese letters
     { text = "Português", rule = "GENTILICOS_LINGUAS" },  # the language links: Português (Brasil) · Português (Portugal)
     { text = "Italiano", rule = "GENTILICOS_LINGUAS" },  # the language links
+    # README and HOW_TO_INSTALL (#58): "quem a fez e porquê", Mac names and the quoted Windows error
+    { text = "porquê", rule = "POR_QUE_PORQUE" }, { text = "chip Apple", rule = "GENERAL_GENDER_AGREEMENT_ERRORS" }, { text = "processador Intel", rule = "GENERAL_GENDER_AGREEMENT_ERRORS" }, { text = "to execute", rule = "VERBO_HIFENIZADOR_VERBOS_2" },
 ]
 es-419 = [
     { text = "se", rule = "UPPERCASE_SENTENCE_START" },
@@ -273,6 +301,8 @@ de = [
     { text = "Internationale", rule = "DE_CASE" },  # the title Internationale Meisterin der Frauen
     { text = "Das", rule = "DE_CASE" },  # the film "Das Königsspiel"
     { text = "Roberto Molina", rule = "DE_MULTITOKEN_SPELLING_TWO" },  # his name, in a link
+    # Windows labels quoted as they are: "Weitere Informationen", and the ellipsis of "Extract all…"
+    { text = "Weitere", rule = "DE_CASE" }, { text = "…", rule = "AUSLASSUNGSPUNKTE_LEERZEICHEN" }, { text = "und", rule = "UPPERCASE_SENTENCE_START" },
 ]
 fr = [
     { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
@@ -281,6 +311,8 @@ fr = [
     { text = "données", rule = "AGREEMENT_POSTPONED_ADJ" },  # "ingénieur données et backend", the author's words
     { text = "hongroise", rule = "AGREEMENT_POSTPONED_ADJ" },  # "Grand maître hongroise": the title stays masculine
     { text = "queen!", rule = "FRENCH_WHITESPACE" },  # "Oh no, my queen!" is quoted in English
+    # the labels "Exécuter quand même" and "Ouvrir quand même"
+    { text = "quand même", rule = "REP_QUAND_MEME" },
 ]
 it = [
     { text = "attesa", rule = "UPPERCASE_SENTENCE_START" },
@@ -299,12 +331,16 @@ nl = [
     { text = "pat", rule = "PAT" },  # stalemate
     { text = "um", rule = "NL_SIMPLE_REPLACE_UM" },  # a quote of Mecking's book
     { text = "Oh", rule = "NL_SIMPLE_REPLACE_OH" },  # "Oh no, my queen!" is quoted in English
+    # the Windows button "OK"
+    { text = "OK**, en", rule = "NL_SIMPLE_REPLACE_OK__EN" },
 ]
 sv = [
     { text = "väntat", rule = "UPPERCASE_SENTENCE_START" },  # "expected {expected}", a fragment
     { text = "kommer", rule = "UPPERCASE_SENTENCE_START" },  # after "…)", not a sentence start
     # "Vasyl" (Ivanchuk), flagged together with the Wikipedia link before it.
     { text = "[sv.wikipedia.org/wiki/Şähriyar_Mämmädyarov](https://sv.wikipedia.org/wiki/%C5%9E%C3%A4hriyar_M%C3%A4mm%C3%A4dyarov)\n- **Vasyl", rule = "HUNSPELL_RULE" },
+    # after the Windows label "Extrahera alla…"
+    { text = "och", rule = "UPPERCASE_SENTENCE_START" },
 ]
 da = [
     { text = "forventet", rule = "UPPERCASE_SENTENCE_START" },  # "expected {expected}", a fragment
@@ -312,6 +348,8 @@ da = [
 ru = [
     { text = "ожидался", rule = "UPPERCASE_SENTENCE_START" },
     { text = "Nf3", rule = "SENTENCE_WHITESPACE" },
+    # the Windows label "Извлечь все…"
+    { text = "Извлечь", rule = "DotOrCase" },
 ]
 uk = [
     { text = "очікувався", rule = "UPPERCASE_SENTENCE_START" },
@@ -322,4 +360,8 @@ uk = [
     { text = "Ф", rule = "MORFOLOGIK_RULE_UK_UA" },
     { text = "К", rule = "MORFOLOGIK_RULE_UK_UA" },
     { text = "П", rule = "MORFOLOGIK_RULE_UK_UA" },
+]
+en-GB = [
+    # "the applications menu"
+    { text = "applications", rule = "POSSESSIVE_APOSTROPHE" },
 ]

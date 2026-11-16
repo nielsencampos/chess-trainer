@@ -20,7 +20,7 @@ Pelatih catur lokal: bermain melawan Stockfish dengan pengaturan jam sungguhan, 
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 Hanya bahasa Inggris AS, Portugis Brasil, dan Spanyol Amerika Latin yang sudah ditinjau. Semua bahasa lain, termasuk Inggris Britania, diterjemahkan oleh mesin dan belum ditinjau. Koreksi sangat diterima: buka [issue Translation fix](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=id).

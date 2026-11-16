@@ -20,7 +20,7 @@ Treinador local de xadrez: jogue contra o Stockfish com os relógios a sério, t
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 Só o inglês dos EUA, o português do Brasil e o espanhol da América Latina são revistos. Os restantes idiomas, inglês do Reino Unido incluído, são traduções automáticas e não foram revistos. Para sugerir uma correção, abra uma [issue de correção de tradução](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=pt-PT).
@@ -47,7 +47,7 @@ docker run -d --init --name chess-trainer -p 127.0.0.1:8000:8000 \
 
 A aplicação só é publicada no loopback, porque não tem início de sessão. Para a abrir noutro dispositivo, defina `CHESS_TRAINER_BIND=0.0.0.0`, numa rede de confiança, e indique em `CHESS_TRAINER_ALLOWED_HOSTS` os nomes com que a vai abrir (como `192.168.0.10,chess.lan`): caso contrário, a aplicação só responde a `localhost` e `127.0.0.1`. `CHESS_TRAINER_PORT` muda a porta.
 
-**Aplicação para computador (pré-visualização):** a mesma aplicação numa janela própria, sem Docker, para Windows, macOS e Linux. Para a transferir e instalar, consulte [HOW_TO_INSTALL.pt-PT.md](HOW_TO_INSTALL.pt-PT.md); a forma como é feita está em [desktop/](desktop/README.md). O Docker continua a ser a forma de referência.
+**Aplicação para computador (pré-visualização):** a mesma aplicação numa janela própria, sem Docker, para Windows, macOS e Linux. Para a transferir e instalar, consulte [HOW_TO_INSTALL.pt-PT.md](HOW_TO_INSTALL.pt-PT.md); como é feita está em [desktop/](desktop/README.md). O Docker continua a ser a forma de referência.
 
 ## Como funciona
 
@@ -65,14 +65,14 @@ Além das aberturas:
 - **Relógios:** bullet, e os de blitz, semirrápidas e clássicas de um relógio DGT 3000, ou sem relógio.
 - **Chess960:** sorteie uma das 960 posições iniciais, ou cole o FEN, e jogue contra o Stockfish.
 - **Partidas guardadas:** todas as partidas ficam guardadas. Filtre-as, exporte-as em PGN, reveja-as lance a lance, ou comece uma nova partida a partir de qualquer lance (ainda não a partir de uma partida Chess960).
-- **Importação:** cole PGN, carregue um ficheiro, ou obtenha as partidas públicas de um jogador no Chess.com ou no Lichess. A revisão mostra as avaliações, classificações, relógios, comentários e variantes do PGN.
+- **Importação:** cole PGN ou carregue um ficheiro, e obtenha as partidas públicas de um jogador no Chess.com e no Lichess. A revisão mostra as avaliações, classificações, relógios, comentários e variantes do PGN.
 - **Barra de avaliação:** a avaliação do Stockfish na revisão e no fim da partida. É uma verificação rápida, não uma análise completa: para isso, exporte o PGN para o Chess.com ou o Lichess.
 - **Folha de anotação:** uma folha de anotação A4 para imprimir, inspirada numa oficial, para anotar os lances à mão em partidas longas. Não é uma folha oficial: serve só para treino.
 - **Ajuda:** como usar cada ecrã, no menu da aplicação.
 
 O Chess Trainer é para treinar. Nunca o use, nem qualquer motor de xadrez, durante uma partida contra outra pessoa.
 
-**Estado atual:** o livro e as partidas estão no DuckDB (`data/chess-trainer.duckdb`). Os níveis do bot são provisórios. A interface está em 27 idiomas. O que vem a seguir está no [brief do projeto](docs/PROJECT_BRIEF.md), em inglês.
+**Estado atual:** o livro e as partidas estão no DuckDB (`data/chess-trainer.duckdb`). Os níveis do bot são provisórios. A interface está em 27 idiomas. Os próximos passos estão no [brief do projeto](docs/PROJECT_BRIEF.md), em inglês.
 
 ## O livro
 
@@ -82,7 +82,7 @@ A base de dados fica em `./data`, onde o contentor escreve como UID 1000. Para f
 
 ## Para atualizar o Stockfish
 
-A imagem usa a versão oficial mais recente do Stockfish no momento do build. Para atualizar:
+A imagem usa a versão oficial mais recente do Stockfish no momento em que a imagem é gerada. Para atualizar:
 
 ```bash
 docker compose build --pull
@@ -95,7 +95,7 @@ Para fixar uma versão (`sf_19` ou mais recente; as anteriores não têm binári
 STOCKFISH_VERSION=sf_19 docker compose build
 ```
 
-A versão em uso aparece no rodapé da página e em `/api/health`. Se o build indicar o limite de pedidos do GitHub, aguarde uma hora: o limite é de 60 pedidos à API por hora sem token.
+A versão em uso aparece no rodapé da página e em `/api/health`. Se a geração da imagem indicar o limite de pedidos do GitHub, aguarde uma hora: o limite é de 60 pedidos à API por hora sem token.
 
 ## Para desenvolver
 

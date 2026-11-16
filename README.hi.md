@@ -20,7 +20,7 @@
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 केवल अमेरिकी अंग्रेज़ी, ब्राज़ीली पुर्तगाली और लैटिन अमेरिकी स्पेनिश की समीक्षा हुई है। बाक़ी सभी भाषाएँ, ब्रिटिश अंग्रेज़ी समेत, मशीन से अनूदित हैं और उनकी समीक्षा नहीं हुई है। सुधारों का स्वागत है: एक [Translation fix issue](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=hi) खोलें।

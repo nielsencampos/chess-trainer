@@ -18,7 +18,7 @@ Treinador local de xadrez: jogue contra o Stockfish com os relógios de verdade,
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 Só o inglês dos EUA, o português do Brasil e o espanhol da América Latina são revisados. Os outros idiomas, inglês do Reino Unido incluído, são traduções automáticas e não foram revisados. Para sugerir uma correção, abra uma [issue de correção de tradução](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=pt-BR).
@@ -63,7 +63,7 @@ Além das aberturas:
 - **Relógios:** bullet, e os de blitz, rápido e clássico de um relógio DGT 3000, ou sem relógio.
 - **Chess960:** sorteie uma das 960 posições iniciais, ou cole o FEN dela, e jogue contra o Stockfish.
 - **Partidas salvas:** todas as partidas ficam salvas, com filtros, exportação em PGN, revisão lance a lance e nova partida a partir de qualquer lance (ainda não de uma partida Chess960).
-- **Importação:** PGN colado, de arquivo ou das partidas públicas de um jogador no Chess.com ou no Lichess. A revisão mostra as avaliações, classificações, relógios, comentários e variantes do PGN.
+- **Importação:** PGN colado ou de arquivo, e as partidas públicas de um jogador no Chess.com e no Lichess. A revisão mostra as avaliações, classificações, relógios, comentários e variantes do PGN.
 - **Barra de avaliação:** a avaliação do Stockfish na revisão e no fim da partida. É uma checagem rápida: para uma análise completa, exporte o PGN para o Chess.com ou o Lichess.
 - **Planilha:** uma planilha de anotação A4 para imprimir, inspirada numa oficial, para anotar seus lances à mão em partidas longas. Não é uma planilha oficial: é só para treino.
 - **Ajuda:** como usar cada tela, no menu do app.
@@ -80,7 +80,7 @@ O banco fica em `./data`, que o contêiner grava como UID 1000. Para fazer backu
 
 ## Para atualizar o Stockfish
 
-A imagem usa a última versão oficial do Stockfish na hora do build. Para atualizar:
+A imagem usa a última versão oficial do Stockfish na hora de gerar a imagem. Para atualizar:
 
 ```bash
 docker compose build --pull
@@ -93,7 +93,7 @@ Para fixar uma versão (`sf_19` ou mais nova; as anteriores não têm binário u
 STOCKFISH_VERSION=sf_19 docker compose build
 ```
 
-A versão em uso aparece no rodapé da página e em `/api/health`. Se o build acusar o limite de requisições do GitHub, espere uma hora: o limite é de 60 requisições à API por hora sem token.
+A versão em uso aparece no rodapé da página e em `/api/health`. Se a geração da imagem acusar o limite de requisições do GitHub, espere uma hora: o limite é de 60 requisições à API por hora sem token.
 
 ## Para desenvolver
 

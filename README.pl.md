@@ -10,7 +10,7 @@
 
 > To tłumaczenie zostało wykonane maszynowo i nie zostało sprawdzone. Poprawki są mile widziane: [zaproponuj poprawkę](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=pl)
 
-Lokalny trener szachowy: graj ze Stockfishem z prawdziwymi ustawieniami zegara, ćwicz otwarcia z botem, który trzyma się książki i pokazuje, gdzie wyszedłeś z teorii, i przeglądaj swoje partie z PGN, Chess.com lub Lichess z paskiem oceny. Chess960 w zestawie. W 27 językach, wszystko w jednym obrazie Dockera. Działa na twoim komputerze (amd64 lub arm64), bez konta i bez internetu do gry.
+Lokalny trener szachowy: graj ze Stockfishem z prawdziwymi ustawieniami zegara, ćwicz otwarcia z botem, który trzyma się książki i pokazuje, gdzie wyszedłeś z teorii, i przeglądaj swoje partie z PGN, Chess.com lub Lichess z paskiem oceny. Chess960 w zestawie. W 27 językach i w jednym obrazie Dockera. Działa na twoim komputerze (amd64 lub arm64), bez konta i bez internetu do gry.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)
 [![Desktop](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/desktop.yml)
@@ -20,7 +20,7 @@ Lokalny trener szachowy: graj ze Stockfishem z prawdziwymi ustawieniami zegara, 
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 Sprawdzone są tylko angielski (USA), portugalski (Brazylia) i hiszpański (Ameryka Łacińska). Wszystkie inne języki, w tym angielski brytyjski, są tłumaczone maszynowo i niesprawdzone. Poprawki są mile widziane: otwórz [zgłoszenie Translation fix](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=pl).
@@ -66,19 +66,19 @@ Poza otwarciami:
 - **Chess960:** wylosuj jedną z 960 pozycji początkowych albo wklej jej FEN i zagraj ze Stockfishem.
 - **Zapisane partie:** każda partia jest zapisywana. Filtruj je, eksportuj do PGN, przeglądaj posunięcie po posunięciu albo zacznij nową partię od dowolnego ich posunięcia (jeszcze nie z partii Chess960).
 - **Import:** wklej PGN, wyślij plik albo pobierz publiczne partie gracza z Chess.com lub Lichess. Przegląd pokazuje oceny, klasyfikacje, czasy, komentarze i warianty poboczne z PGN.
-- **Pasek oceny:** ocena Stockfisha podczas przeglądania i na końcu partii. To szybkie sprawdzenie, nie pełna analiza: do tego wyeksportuj PGN do Chess.com lub Lichess.
+- **Pasek oceny:** ocena Stockfisha podczas przeglądania i na końcu partii. To szybkie sprawdzenie, a nie pełna analiza: do tego wyeksportuj PGN do Chess.com lub Lichess.
 - **Blankiet partii:** blankiet partii A4 do wydruku, wzorowany na oficjalnym, do ręcznego zapisywania posunięć w długich partiach. To nie jest oficjalny blankiet: służy tylko do treningu.
 - **Pomoc:** jak korzystać z każdego ekranu, w menu aplikacji.
 
-Chess Trainer służy do treningu. Nigdy nie używaj go, ani żadnego silnika szachowego, podczas partii z inną osobą.
+Chess Trainer służy do treningu. Nigdy nie używaj go ani żadnego silnika szachowego podczas partii z inną osobą.
 
 **Obecny stan:** książka i partie są w DuckDB (`data/chess-trainer.duckdb`). Poziomy bota są tymczasowe. Interfejs jest w 27 językach. Co dalej, opisuje [brief projektu](docs/PROJECT_BRIEF.md), po angielsku.
 
 ## Książka
 
-Książka bota jest w `openings/`, jeden plik JSON na rodzinę otwarć, ładowany do DuckDB przy starcie (za pierwszym razem kilka sekund). Zaczyna się od wszystkich 3865 linii [katalogu otwarć Lichess](https://github.com/lichess-org/chess-openings). Każdą linię można grać obydwoma kolorami. Katalog wymienia nazwane pozycje, nie zalecane odpowiedzi, więc linie są często krótkie, a silnik szachowy gra dalej od tego miejsca. Można je rozszerzać przez pull request, podając źródło. Format jest opisany [w briefie, §6](docs/PROJECT_BRIEF.md).
+Książka bota jest w `openings/`, jeden plik JSON na rodzinę otwarć, ładowany do DuckDB przy starcie (za pierwszym razem kilka sekund). Zaczyna się od wszystkich 3865 linii [katalogu otwarć Lichess](https://github.com/lichess-org/chess-openings). Każdą linię można grać obydwoma kolorami. Katalog wymienia nazwane pozycje, a nie zalecane odpowiedzi, więc linie są często krótkie, a silnik szachowy gra dalej od tego miejsca. Można je rozszerzać przez pull request, podając źródło. Format jest opisany [w briefie, §6](docs/PROJECT_BRIEF.md).
 
-Baza danych jest w `./data`, do którego kontener zapisuje jako UID 1000. Aby zrobić kopię zapasową, zatrzymaj aplikację i skopiuj plik. Każde posunięcie jest tam zapisywane, więc niedokończona partia trwa dalej, gdy znowu otworzysz stronę, nawet po restarcie. Zegary stoją, gdy aplikacja jest zamknięta.
+Baza danych jest w `./data`, do którego kontener zapisuje jako UID 1000. Aby zrobić kopię zapasową, zatrzymaj aplikację i skopiuj plik. Każde posunięcie jest tam zapisywane, więc niedokończona partia toczy się dalej, gdy znowu otworzysz stronę, nawet po restarcie. Zegary stoją, gdy aplikacja jest zamknięta.
 
 ## Aktualizacja Stockfisha
 
@@ -89,7 +89,7 @@ docker compose build --pull
 docker compose up -d
 ```
 
-Aby przypiąć wersję (`sf_19` lub nowszą; starsze wydania nie mają binariów uniwersalnych ani dla Linuxa arm64):
+Aby przypiąć wersję (`sf_19` lub nowszą; starsze wydania nie mają plików binarnych w wersji uniwersalnej ani dla Linuxa arm64):
 
 ```bash
 STOCKFISH_VERSION=sf_19 docker compose build

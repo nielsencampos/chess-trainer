@@ -1,7 +1,7 @@
 {
   "readme.logo": "Logo van Chess Trainer: vier velden van een schaakbord met C, T, een pen en een klok",
   "readme.intro": "Lokale schaaktrainer: speel tegen Stockfish met echte klokinstellingen, oefen je openingen tegen een bot die het boek volgt en aangeeft waar je de theorie verliet, en bekijk je partijen uit PGN, Chess.com of Lichess terug met een evaluatiebalk. Inclusief Chess960. In {count} talen, alles in één Docker-image. Het draait op je eigen machine (amd64 of arm64), zonder account en zonder internet om te spelen.",
-  "readme.reviewed": "Alleen Amerikaans Engels, Braziliaans Portugees en Latijns-Amerikaans Spaans zijn nagekeken. Alle andere talen, Brits Engels inbegrepen, zijn machinaal vertaald en niet nagekeken. Verbeteringen zijn welkom: open een [Translation fix-issue]({fix}).",
+  "readme.reviewed": "Alleen Amerikaans-Engels, Braziliaans-Portugees en Latijns-Amerikaans Spaans zijn nagekeken. Alle andere talen, Brits-Engels inbegrepen, zijn machinaal vertaald en niet nagekeken. Verbeteringen zijn welkom: open een [Translation fix-issue]({fix}).",
   "readme.run.title": "Starten",
   "readme.run.needs": "Je hebt Docker met Compose nodig.",
   "readme.run.open": "Open <http://127.0.0.1:8000>.",
@@ -29,7 +29,7 @@
   "readme.book.text": "Het boek van de bot staat in `openings/`, één JSON-bestand per openingsfamilie, dat bij het starten in DuckDB geladen wordt (de eerste keer een paar seconden). Het begint met alle 3.865 lijnen van de [openingscatalogus van Lichess](https://github.com/lichess-org/chess-openings). Elke lijn kun je met beide kleuren spelen. De catalogus noemt stellingen met een naam, geen aanbevolen antwoorden, dus lijnen zijn vaak kort en de schaakengine speelt vanaf daar verder. Ze kunnen via een pull request worden uitgebreid, met vermelding van de bron. Het formaat staat [in de brief, §6](docs/PROJECT_BRIEF.md).",
   "readme.book.data": "De database staat in `./data`, waar de container als UID 1000 in schrijft. Stop de app en kopieer het bestand om een back-up te maken. Elke zet wordt daar opgeslagen, dus een onafgemaakte partij gaat verder als je de pagina opnieuw opent, ook na een herstart. De klokken staan stil zolang de app dicht is.",
   "readme.stockfish.title": "Stockfish bijwerken",
-  "readme.stockfish.latest": "De image gebruikt bij het bouwen de nieuwste officiële Stockfish-release. Om bij te werken:",
+  "readme.stockfish.latest": "Het image gebruikt bij het bouwen de nieuwste officiële Stockfish-release. Om bij te werken:",
   "readme.stockfish.pin": "Om een versie vast te zetten (`sf_19` of nieuwer; oudere releases hebben geen universele of Linux-arm64-binary):",
   "readme.stockfish.version": "De draaiende versie staat in de voettekst van de pagina en op `/api/health`. Meldt de build een GitHub-limiet, wacht dan een uur: zonder token is de limiet 60 API-verzoeken per uur.",
   "readme.develop.title": "Ontwikkelen",

@@ -21,7 +21,7 @@ Chess Trainer är ett gratisprogram som körs på din egen dator. Det behöver i
 
 **Vad du behöver:** vilken dator som helst från det här århundradet. Har den en HDMI-port och ingen bildrörsskärm så fungerar det. Exakt: ett av systemen ovan, 64-bitars, och en skärm på minst 1280x720.
 
-Osäker på vilken Mac du har? Öppna Apple-menyn → **Om den här datorn**. "Chip: Apple M…" betyder Apple-chip; "Processor: Intel" betyder Intel.
+Osäker på vilken Mac du har? Öppna Apple-menyn → **Om den här datorn**. Står det Apple M1, M2 eller liknande vid "Chip" har du ett Apple-chip; står det Intel vid "Processor" har du Intel.
 
 Nedladdningen är ungefär 100 till 300 MB, eftersom den innehåller schackmotorn Stockfish.
 

@@ -18,7 +18,7 @@ Local chess trainer: play Stockfish with real clock presets, drill your openings
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 Only US English, Brazilian Portuguese and Latin American Spanish are reviewed. Every other language, English (UK) included, is machine-made and unreviewed. Corrections are welcome. Open a [Translation fix issue](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=en-US).

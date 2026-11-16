@@ -20,7 +20,7 @@ Entraîneur d'échecs local : jouez contre Stockfish avec de vraies cadences de 
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 Seuls l'anglais des États-Unis, le portugais du Brésil et l'espagnol d'Amérique latine sont relus. Toutes les autres langues, anglais britannique compris, sont traduites automatiquement et non relues. Les corrections sont les bienvenues : ouvrez une [issue Translation fix](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=fr).

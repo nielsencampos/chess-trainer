@@ -20,7 +20,7 @@ Allenatore di scacchi locale: gioca contro Stockfish con cadenze reali dell'orol
 [![Stockfish](https://img.shields.io/badge/Stockfish-latest-lightgrey.svg)](https://stockfishchess.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-claude--code-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 Solo l'inglese degli Stati Uniti, il portoghese del Brasile e lo spagnolo dell'America Latina sono revisionati. Tutte le altre lingue, inglese britannico compreso, sono tradotte automaticamente e non revisionate. Le correzioni sono benvenute: apri una [issue Translation fix](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=it).
@@ -62,7 +62,7 @@ Togliere la spunta a "Mostra le mosse" nasconde la lista delle mosse e il nome d
 
 Oltre le aperture:
 
-- **Orologi:** bullet, e le cadenze blitz, rapid e classica di un orologio DGT 3000, o nessun orologio.
+- **Orologi:** bullet, e le cadenze blitz, rapida e classica di un orologio DGT 3000, o nessun orologio.
 - **Chess960:** estrai una delle 960 posizioni iniziali, o incolla la sua FEN, e gioca contro Stockfish.
 - **Partite salvate:** ogni partita viene salvata. Filtrale, esportale in PGN, rivedile mossa per mossa, o inizia una nuova partita da una qualsiasi delle loro mosse (non ancora da una partita Chess960).
 - **Importazione:** incolla un PGN, carica un file, o prendi le partite pubbliche di un giocatore da Chess.com o Lichess. La revisione mostra valutazioni, classificazioni, tempi, commenti e varianti del PGN.

@@ -21,7 +21,7 @@ Apri la [pagina delle Releases](https://github.com/nielsencampos/chess-trainer/r
 
 **Cosa ti serve:** un qualsiasi computer di questo secolo. Se ha una porta HDMI e non un monitor a tubo catodico, funziona. Per essere precisi: uno dei sistemi qui sopra, a 64 bit, e uno schermo di almeno 1280x720.
 
-Non sai quale Mac hai? Apri il menu Apple → **Informazioni su questo Mac**. "Chip: Apple M…" vuol dire chip Apple; "Processore: Intel" vuol dire Intel.
+Non sai quale Mac hai? Apri il menu Apple → **Informazioni su questo Mac**. Se vedi "Chip: Apple M…", hai un chip Apple; se vedi "Processore: Intel", hai un Intel.
 
 Il download è di circa 100-300 MB, perché include il motore scacchistico Stockfish.
 
@@ -36,7 +36,7 @@ Il download è di circa 100-300 MB, perché include il motore scacchistico Stock
 
 Se la finestra resta vuota, installa il **Microsoft Edge WebView2 Runtime** gratuito dal sito di Microsoft (Windows 11 e Windows 10 aggiornato ce l'hanno già).
 
-**Senza installare:** il file `chess-trainer-…-windows-x64.zip` contiene lo stesso programma. Fai clic destro → **Estrai tutto…**, poi apri **chess-trainer.exe** nella cartella estratta. Se dice *Failed to execute script 'launcher'*, elimina la cartella estratta, fai clic destro sullo zip → **Proprietà** → spunta **Annulla blocco** → **OK**, ed estrailo di nuovo.
+**Senza installare:** il file `chess-trainer-…-windows-x64.zip` contiene lo stesso programma. Fai clic destro → **Estrai tutto…**, poi apri **chess-trainer.exe** nella cartella estratta. Se dice *Failed to execute script 'launcher'*, elimina la cartella estratta, fai clic destro sul file zip → **Proprietà** → spunta **Annulla blocco** → **OK**, ed estrailo di nuovo.
 
 ### macOS
 

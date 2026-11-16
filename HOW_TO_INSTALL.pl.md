@@ -17,9 +17,9 @@ Otwórz [stronę Releases](https://github.com/nielsencampos/chess-trainer/releas
 | Windows 10 lub 11 | `chess-trainer-…-windows-x64-setup.exe` |
 | Mac z czipem Apple (M1, M2, M3…), macOS 11 Big Sur lub nowszy | `chess-trainer-…-macos-arm64.zip` |
 | Mac z procesorem Intel, macOS 11 Big Sur lub nowszy | `chess-trainer-…-macos-intel.zip` |
-| Linux (Ubuntu 22.04 lub nowszy, albo podobny) | `chess-trainer-…-linux-x86_64.tar.gz` |
+| Linux (Ubuntu 22.04 lub nowszy albo podobny) | `chess-trainer-…-linux-x86_64.tar.gz` |
 
-**Czego potrzebujesz:** dowolnego komputera z tego wieku. Jeśli ma złącze HDMI i nie ma monitora kineskopowego, zadziała. Dokładnie: jeden z systemów powyżej, 64-bitowy, i ekran co najmniej 1280x720.
+**Wymagania:** dowolny komputer z tego wieku. Jeśli ma złącze HDMI i nie ma monitora kineskopowego, zadziała. Dokładnie: jeden z systemów powyżej, 64-bitowy, i ekran co najmniej 1280x720.
 
 Nie wiesz, jakiego masz Maca? Otwórz menu Apple → **Ten Mac**. "Czip: Apple M…" oznacza czip Apple; "Procesor: Intel" oznacza Intel.
 
@@ -29,7 +29,7 @@ Pobieranie ma około 100–300 MB, bo zawiera silnik szachowy Stockfish.
 
 ### Windows
 
-1. Kliknij dwukrotnie **chess-trainer-…-windows-x64-setup.exe** w folderze Pobrane.
+1. Kliknij dwukrotnie **chess-trainer-…-windows-x64-setup.exe** w folderze „Pobrane”.
 2. Windows może pokazać **"System Windows ochronił ten komputer"** (SmartScreen). Pojawia się to, bo program jest nowy i nie jest podpisany płatnym certyfikatem, a nie dlatego, że coś z nim jest nie tak. Kliknij **Więcej informacji**, a potem **Uruchom mimo to**.
 3. Postępuj zgodnie z instalatorem. Nie wymaga hasła administratora i dodaje **Chess Trainer** do menu Start (oraz na pulpit, jeśli zaznaczysz to pole).
 4. Otwórz **Chess Trainer** z menu Start.
@@ -40,11 +40,11 @@ Jeśli okno pozostaje puste, zainstaluj darmowy **Microsoft Edge WebView2 Runtim
 
 ### macOS
 
-1. Kliknij dwukrotnie plik zip w folderze Pobrane (Safari mogło go już rozpakować). Otrzymasz **Chess Trainer**.
+1. Kliknij dwukrotnie plik zip w folderze „Pobrane” (Safari mogło go już rozpakować). Otrzymasz **Chess Trainer**.
 2. Przeciągnij **Chess Trainer** do folderu **Aplikacje**.
 3. Kliknij go dwukrotnie. Za pierwszym razem macOS powie, że nie może zweryfikować aplikacji, bo nie jest notaryzowana przez Apple (to wymaga płatnego konta dewelopera). Aby mimo to ją otworzyć:
    - **macOS 15 Sequoia lub nowszy:** kliknij **Gotowe**. Otwórz **Ustawienia systemowe** → **Prywatność i ochrona**, przewiń do komunikatu o "Chess Trainer" i kliknij **Otwórz mimo to**. Wpisz hasło i ponownie kliknij **Otwórz mimo to**.
-   - **macOS 14 Sonoma lub starszy:** kliknij **Chess Trainer** w Aplikacjach z wciśniętym klawiszem Control (albo prawym przyciskiem) → **Otwórz** → **Otwórz**.
+   - **macOS 14 Sonoma lub starszy:** kliknij **Chess Trainer** w Aplikacjach ze wciśniętym klawiszem Control (albo prawym przyciskiem) → **Otwórz** → **Otwórz**.
 
    macOS zapamięta twój wybór; od tej pory aplikacja otwiera się normalnie.
 
