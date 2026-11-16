@@ -18,7 +18,13 @@ PLACEHOLDER = re.compile(r"\{(\w+)\}")
 # The cardinal plural forms (CLDR's, as the browser's Intl.PluralRules names them) of the languages
 # whose forms for the counts the app shows are not `one` and `other`. French, Spanish, Italian and
 # Portuguese also have `many`, but only for millions, which no count here reaches.
-PLURALS = {"pl": {"one", "few", "many", "other"}, "id": {"other"}, "vi": {"other"}}
+PLURALS = {
+    "pl": {"one", "few", "many", "other"},
+    "ru": {"one", "few", "many", "other"},
+    "uk": {"one", "few", "many", "other"},
+    "id": {"other"},
+    "vi": {"other"},
+}
 
 
 def load(code: str) -> dict[str, str]:
