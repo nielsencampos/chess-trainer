@@ -14,7 +14,7 @@ Chess Trainer is for practice: drill your openings against a bot that plays your
 
 > **The evaluation here is basic**
 >
-> The evaluation bar and the move icons (best move, mistake, blunder…) come from a quick Stockfish check and are only a hint. For a real analysis, export the PGN and analyse it on Chess.com, Lichess or another analysis tool.
+> The evaluation bar comes from a quick Stockfish check and is only a hint. The move icons (best move, mistake, blunder…) are the classification of the site the game came from, read from its PGN: the app computes none. For a real analysis, export the PGN and analyse it on Chess.com, Lichess or another analysis tool.
 
 ## Start a game
 

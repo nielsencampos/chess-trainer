@@ -14,7 +14,7 @@ Chess Trainer służy do ćwiczeń: trenuj swoje otwarcia przeciwko botowi, któ
 
 > **Ocena jest tu podstawowa**
 >
-> Pasek oceny i ikony posunięć (najlepsze posunięcie, błąd, poważny błąd…) pochodzą z szybkiego sprawdzenia przez Stockfish i są tylko wskazówką. Do prawdziwej analizy wyeksportuj PGN i przeanalizuj go na Chess.com, Lichess albo w innym narzędziu do analizy.
+> Pasek oceny pochodzi z szybkiego sprawdzenia przez Stockfish i jest tylko wskazówką. Ikony posunięć (najlepsze posunięcie, błąd, poważny błąd…) to klasyfikacja serwisu, z którego pochodzi partia, odczytana z jej PGN: aplikacja sama ich nie oblicza. Do prawdziwej analizy wyeksportuj PGN i przeanalizuj go na Chess.com, Lichess albo w innym narzędziu do analizy.
 
 ## Zacznij partię
 

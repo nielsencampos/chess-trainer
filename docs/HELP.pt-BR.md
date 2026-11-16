@@ -14,7 +14,7 @@ O Chess Trainer é para treinar: pratique suas aberturas contra um bot que joga 
 
 > **A avaliação aqui é simples**
 >
-> A barra de avaliação e os ícones dos lances (melhor lance, erro, capivarada…) vêm de uma checagem rápida do Stockfish e são só uma dica. Para uma análise de verdade, exporte o PGN e analise no Chess.com, no Lichess ou em outra ferramenta de análise.
+> A barra de avaliação vem de uma checagem rápida do Stockfish e é só uma dica. Os ícones dos lances (melhor lance, erro, capivarada…) são a classificação do site de onde a partida veio, lida do PGN: o app não calcula nenhum. Para uma análise de verdade, exporte o PGN e analise no Chess.com, no Lichess ou em outra ferramenta de análise.
 
 ## Começar uma partida
 

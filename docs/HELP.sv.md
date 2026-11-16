@@ -14,7 +14,7 @@ Chess Trainer är till för träning: nöt in dina öppningar mot en bot som spe
 
 > **Bedömningen här är enkel**
 >
-> Bedömningsstapeln och dragikonerna (bästa drag, misstag, grovt misstag…) kommer från en snabb kontroll med Stockfish och är bara en fingervisning. För en riktig analys exporterar du PGN och analyserar den på Chess.com, Lichess eller ett annat analysverktyg.
+> Bedömningsstapeln kommer från en snabb kontroll med Stockfish och är bara en fingervisning. Dragikonerna, som bästa drag, misstag och grovt misstag, är klassificeringen från sajten som partiet kommer från, läst ur dess PGN: appen räknar inte fram någon. För en riktig analys exporterar du PGN och analyserar den på Chess.com, Lichess eller ett annat analysverktyg.
 
 ## Starta ett parti
 

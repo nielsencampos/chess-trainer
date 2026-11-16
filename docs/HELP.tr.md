@@ -14,7 +14,7 @@ Chess Trainer pratik içindir: hatlarınızı oynayan bir bota karşı açılı�
 
 > **Buradaki değerlendirme basittir**
 >
-> Değerlendirme çubuğu ve hamle simgeleri (en iyi hamle, hata, büyük hata…) Stockfish'in hızlı bir kontrolünden gelir ve yalnızca bir ipucudur. Gerçek bir analiz için PGN'yi dışa aktarın ve Chess.com, Lichess ya da başka bir analiz aracında analiz edin.
+> Değerlendirme çubuğu Stockfish'in hızlı bir kontrolünden gelir ve yalnızca bir ipucudur. Hamle simgeleri (en iyi hamle, hata, büyük hata…) oyunun geldiği sitenin sınıflandırmasıdır ve PGN'sinden okunur: uygulama hiçbirini hesaplamaz. Gerçek bir analiz için PGN'yi dışa aktarın ve Chess.com, Lichess ya da başka bir analiz aracında analiz edin.
 
 ## Bir oyun başlatın
 

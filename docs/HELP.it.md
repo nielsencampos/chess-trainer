@@ -14,7 +14,7 @@ Chess Trainer serve ad allenarsi: esercita le tue aperture contro un bot che gio
 
 > **La valutazione qui è semplice**
 >
-> La barra di valutazione e le icone delle mosse (mossa migliore, errore, errore grave e così via) vengono da un rapido controllo di Stockfish e sono solo un indizio. Per un'analisi vera, esporta il PGN e analizzalo su Chess.com, su Lichess o con un altro strumento di analisi.
+> La barra di valutazione viene da un rapido controllo di Stockfish ed è solo un indizio. Le icone delle mosse (mossa migliore, errore, errore grave e così via) sono la classificazione del sito da cui viene la partita, letta dal suo PGN: l'app non ne calcola nessuna. Per un'analisi vera, esporta il PGN e analizzalo su Chess.com, su Lichess o con un altro strumento di analisi.
 
 ## Iniziare una partita
 
