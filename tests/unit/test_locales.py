@@ -21,6 +21,22 @@ FACE = re.compile(
     r".*?unicode-range: ([^;]+);",
     re.S,
 )
+# Scripts drawn by the system's fonts, not vendored ones, and the code points they cover: CJK
+# fonts are tens of MB (brief §4.1). Hangul Jamo and syllables, CJK symbols and punctuation,
+# kana, Han (with extension A and the compatibility forms), and the halfwidth and fullwidth forms.
+SYSTEM_SCRIPTS = {
+    "cjk": [
+        (0x1100, 0x11FF),
+        (0x3000, 0x30FF),
+        (0x3130, 0x318F),
+        (0x31F0, 0x31FF),
+        (0x3400, 0x4DBF),
+        (0x4E00, 0x9FFF),
+        (0xAC00, 0xD7AF),
+        (0xF900, 0xFAFF),
+        (0xFF00, 0xFFEF),
+    ]
+}
 GOOD = """
 [locales.en-US]
 direction = "ltr"
@@ -83,6 +99,7 @@ def test_the_wikipedia_language_defaults_to_the_code_s_first_part(tmp_path):
         ("reviewed = true", 'reviewed = true\nfallback = "pt-BR"'),
         ("reviewed = true", 'reviewed = true\nvale = "UI"'),
         ("reviewed = true", 'reviewed = true\nwikipedia = "PT BR"'),
+        ("reviewed = true", 'reviewed = true\nwikipedia_variant = "zh CN"'),
         ("[locales.en-US]", "[locales.de]"),
     ],
 )
@@ -145,7 +162,7 @@ def test_every_script_of_a_locale_has_its_fonts():
     """Each script a locale lists has a UI and a mono face, with its file and a unicode-range."""
     faces = font_faces()
     for code, locale in load_locales().items():
-        for script in locale.scripts:
+        for script in set(locale.scripts) - set(SYSTEM_SCRIPTS):
             for family in (ui_font(script), mono_font(script)):
                 assert (family, script) in faces, f"{code}: no {family} face for {script}"
 
@@ -159,10 +176,22 @@ def test_the_fonts_of_a_locale_s_scripts_cover_its_text(code):
     """
     faces = font_faces()
     spans = [
-        span for script in load_locales()[code].scripts for span in faces[ui_font(script), script]
+        span
+        for script in load_locales()[code].scripts
+        for span in SYSTEM_SCRIPTS.get(script) or faces[ui_font(script), script]
     ]
     text = "".join(json.loads((I18N_DIR / f"{code}.json").read_text(encoding="utf-8")).values())
     # Letters and marks only: symbols such as an emoji come from the system's emoji font.
     letters = {char for char in text if unicodedata.category(char)[0] in "LM"}
     missing = {char for char in letters if not any(low <= ord(char) <= high for low, high in spans)}
     assert not missing, f"{code}: letters outside its scripts' fonts: {sorted(missing)}"
+
+
+def test_a_cjk_locale_has_a_system_font_chain():
+    """A locale whose text is CJK gets a chain of system fonts for its `lang` in tokens.css."""
+    css = (WEB / "css" / "tokens.css").read_text(encoding="utf-8")
+    for code, locale in load_locales().items():
+        if "cjk" in locale.scripts:
+            rule = re.search(rf":root:lang\({re.escape(code)}\) {{\s*--font-cjk: ([^;]+);", css)
+            assert rule, f"{code}: no --font-cjk chain in tokens.css"
+            assert rule.group(1).count('"') >= 6, f"{code}: the chain needs a font per system"
