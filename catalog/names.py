@@ -63,7 +63,8 @@ CHUNK = 500
 # HTTP statuses that mean "slow down" or "try later", and how often to try again.
 RETRY_STATUSES = {429, 503}
 RETRIES = 6
-SEPARATORS = (", ", ": ", " - ", " \u2013 ")  # The last is an en dash.
+# An en dash, and the Arabic comma, which the Arabic and Persian Wikipedias write in titles.
+SEPARATORS = (", ", ": ", " - ", " \u2013 ", "\u060c ")
 # Characters a Wikipedia title cannot have.
 NOT_IN_TITLES = re.compile(r"[#<>\[\]|{}]")
 DISAMBIGUATION = re.compile(r"\s*\([^()]*\)$")

@@ -501,6 +501,19 @@ def test_a_wikidata_label_starts_with_a_capital():
     assert found.name == "Variante Dragão"  # What follows the family's name, with a capital.
 
 
+def test_an_arabic_comma_separates_the_family_s_name():
+    """The Arabic and Persian Wikipedias write "، " between the family's name and the line's."""
+    persian = Locale("fa", "rtl", ("arabic",), None, (), False, "fa")
+    titled = {
+        "item": "Q9",
+        "sitelinks": {"fawiki": "دفاع سیسیلی، شاخه نایدورف"},
+        "labels": {},
+    }
+    found = wiki_name(titled, persian, "دفاع سیسیلی")
+    assert found is not None
+    assert found.name == "شاخه نایدورف"
+
+
 def test_a_label_copied_from_english_gives_no_name():
     """Another language's label that is only the English name is no translation."""
     entry = {
