@@ -263,7 +263,7 @@
   "help.eval.title": "Die Bewertung hier ist einfach",
   "help.eval.text": "Der Bewertungsbalken stammt aus einer schnellen Prüfung durch Stockfish und ist nur ein Hinweis. Die Symbole an den Zügen (bester Zug, Fehler, Patzer …) sind die Einstufung der Seite, von der die Partie kommt, gelesen aus ihrer PGN: Die App berechnet keines davon. Für eine echte Analyse exportiere die PGN und analysiere sie auf Chess.com, auf Lichess oder mit einem anderen Analysewerkzeug.",
   "desktop.launchError": "Chess Trainer konnte nicht starten. Vielleicht nutzt ein anderes Programm den Port {port}, oder die Datenbank ließ sich nicht öffnen. Die Einzelheiten stehen im Protokoll: {log}",
-  "desktop.starting": "Chess Trainer startet. Beim ersten Start wird das Eröffnungsbuch vorbereitet, das kann bis zu einer Minute dauern.",
+  "desktop.starting": "Chess Trainer startet… Beim ersten Start wird das Eröffnungsbuch vorbereitet, das kann bis zu einer Minute dauern.",
   "help.start.title": "Eine Partie beginnen",
   "help.start.opening": "Eröffnung: Wähle deine Farbe und markiere die Eröffnungen und Varianten, die du üben willst. Jede markierte Variante kommt mit derselben Wahrscheinlichkeit dran. Ein Zug aus einer Variante, die du nicht markiert hast, zählt als Verlassen der Theorie.",
   "help.start.saved": "Gespeichert: Trainiere das Abspiel einer Partie, die du gespielt oder importiert hast, wobei deine Züge geprüft werden, oder spiel ab einer ihrer Stellungen weiter.",
