@@ -8,6 +8,8 @@
 
 [English (US)](README.md) · [English (UK)](README.en-GB.md) · [Español (Latinoamérica)](README.es-419.md) · [Español (España)](README.es-ES.md) · [Português (Portugal)](README.pt-PT.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Türkçe](README.tr.md) · [Polski](README.pl.md) · [Nederlands](README.nl.md) · [Bahasa Indonesia](README.id.md) · [Tiếng Việt](README.vi.md) · [Svenska](README.sv.md) · [Dansk](README.da.md) · [Norsk bokmål](README.nb.md) · [Suomi](README.fi.md) · [Русский](README.ru.md) · [Українська](README.uk.md) · [हिन्दी](README.hi.md) · [中文（简体）](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [العربية](README.ar.md) · [فارسی](README.fa.md) · [עברית](README.he.md)
 
+> Correções são bem-vindas: [sugira uma correção](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=pt-BR)
+
 Treinador local de xadrez: jogue contra o Stockfish com os relógios de verdade, pratique suas aberturas contra um bot que segue o livro e mostra onde você saiu da teoria, e revise suas partidas de PGN, Chess.com ou Lichess com barra de avaliação. Tem Chess960. Em 27 idiomas, tudo numa imagem Docker. Roda na sua máquina (amd64 ou arm64), sem conta e sem precisar de internet para jogar.
 
 [![CI](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/nielsencampos/chess-trainer/actions/workflows/ci.yml)

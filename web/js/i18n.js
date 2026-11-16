@@ -66,7 +66,7 @@ async function load(requested) {
   locale = chosen;
   document.documentElement.lang = locale;
   document.documentElement.dir = direction;
-  // Help and About say when the language is machine-made and unreviewed, with a link to fix it.
+  // Help and About invite corrections, and say when the language is machine-made and unreviewed.
   const unreviewed = locales.find((item) => item.code === chosen)?.reviewed === false;
   document.documentElement.toggleAttribute("data-unreviewed", unreviewed);
   for (const link of document.querySelectorAll("a[data-fix-link]")) {

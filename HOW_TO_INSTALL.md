@@ -4,6 +4,8 @@
 
 [English (UK)](HOW_TO_INSTALL.en-GB.md) · [Português (Brasil)](HOW_TO_INSTALL.pt-BR.md) · [Español (Latinoamérica)](HOW_TO_INSTALL.es-419.md) · [Español (España)](HOW_TO_INSTALL.es-ES.md) · [Português (Portugal)](HOW_TO_INSTALL.pt-PT.md) · [Deutsch](HOW_TO_INSTALL.de.md) · [Français](HOW_TO_INSTALL.fr.md) · [Italiano](HOW_TO_INSTALL.it.md) · [Türkçe](HOW_TO_INSTALL.tr.md) · [Polski](HOW_TO_INSTALL.pl.md) · [Nederlands](HOW_TO_INSTALL.nl.md) · [Bahasa Indonesia](HOW_TO_INSTALL.id.md) · [Tiếng Việt](HOW_TO_INSTALL.vi.md) · [Svenska](HOW_TO_INSTALL.sv.md) · [Dansk](HOW_TO_INSTALL.da.md) · [Norsk bokmål](HOW_TO_INSTALL.nb.md) · [Suomi](HOW_TO_INSTALL.fi.md) · [Русский](HOW_TO_INSTALL.ru.md) · [Українська](HOW_TO_INSTALL.uk.md) · [हिन्दी](HOW_TO_INSTALL.hi.md) · [中文（简体）](HOW_TO_INSTALL.zh-CN.md) · [日本語](HOW_TO_INSTALL.ja.md) · [한국어](HOW_TO_INSTALL.ko.md) · [العربية](HOW_TO_INSTALL.ar.md) · [فارسی](HOW_TO_INSTALL.fa.md) · [עברית](HOW_TO_INSTALL.he.md)
 
+> Corrections are welcome: [suggest a correction](https://github.com/nielsencampos/chess-trainer/issues/new?template=translation-fix.yml&language=en-US)
+
 Chess Trainer is a free program that runs on your own computer. It needs no account and no internet to play. These steps take about five minutes.
 
 ## 1. Download

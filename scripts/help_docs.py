@@ -148,19 +148,20 @@ def _other_languages(locale: str, page: str) -> str:
 
 
 def unreviewed_notice(locale: str) -> list[str]:
-    """The notice of a machine-made, unreviewed language, as the Help and About pages show it.
+    """The translation notice, as the Help and About pages show it.
+
+    Every language invites corrections; a machine-made, unreviewed one also says so.
 
     Args:
         locale (str): The language.
 
     Returns:
-        list[str]: A quoted line and a blank one, or nothing when the author reviews it.
+        list[str]: A quoted line and a blank one.
     """
-    if load_locales()[locale].reviewed:
-        return []
     strings = _strings(locale)
+    key = "notice.corrections" if load_locales()[locale].reviewed else "notice.unreviewed"
     link = f"[{strings['notice.unreviewed.link']}]({FIX_URL}&language={locale})"
-    return [f"> {strings['notice.unreviewed']} {link}", ""]
+    return [f"> {strings[key]} {link}", ""]
 
 
 def _tidy(lines: list[str]) -> str:

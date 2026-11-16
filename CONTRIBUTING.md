@@ -67,8 +67,9 @@ What differs per language is data, described in
 - `i18n/docs/{locale}.json`: the README and install guide of that language, written into
   `README.{locale}.md` and `HOW_TO_INSTALL.{locale}.md` by `uv run python scripts/readme_docs.py`.
 
-A machine-made language says it is unreviewed, in its own words, on the Help and About screens and
-at the top of its docs, with a link to the Translation fix form for that language.
+Every language invites corrections, in its own words, on the Help and About screens and at the top
+of its docs, with a link to the Translation fix form for that language. A machine-made language
+also says it is unreviewed.
 
 Look up a chess term or an opening name in that language's Wikipedia first, and translate by
 machine only what it does not have. The fallback is always English (US).

@@ -3,9 +3,10 @@
 Each doc has one template, `i18n/docs/<DOC>.md`, which holds what is the same in every language
 (tables, commands, links, file names), and every language has its strings in
 `i18n/docs/{locale}.json`. A `{{key}}` in a template is that string; `{{languages}}` is the list of
-the other languages and `{{notice}}` the notice of a machine-made language (brief §8). A string
-may name per-language targets: `{help}`, `{about}`, `{install}`, `{run}` (the README's Run
-section), `{fix}` (the Translation fix form for that language) and `{count}` (how many languages).
+the other languages and `{{notice}}` the translation notice (corrections are welcome; a
+machine-made language also says it is unreviewed, brief §8). A string may name per-language
+targets: `{help}`, `{about}`, `{install}`, `{run}` (the README's Run section), `{fix}` (the
+Translation fix form for that language) and `{count}` (how many languages).
 Like the UI, a language without a key shows the `en-US` text. Run it after changing a template
 or a string; a test fails while the files are out of date.
 
