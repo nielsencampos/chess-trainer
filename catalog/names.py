@@ -46,6 +46,7 @@ from catalog.translations import (
     NameSource,
     Term,
     load_glossary,
+    load_keep_names,
     load_name_sources,
     load_translate_words,
 )
@@ -397,13 +398,20 @@ def titled_for(entry: CacheEntry, english: str) -> bool:
 class Rules:
     """Builds a name from the glossary, segment by segment."""
 
-    def __init__(self, terms: dict[str, Term], translate: frozenset[str] = frozenset()) -> None:
+    def __init__(
+        self,
+        terms: dict[str, Term],
+        translate: frozenset[str] = frozenset(),
+        keep_names: bool = True,
+    ) -> None:
         """Prepares the glossary's terms and templates.
 
         Args:
             terms (dict[str, Term]): The locale's glossary.
             translate (frozenset[str]): Case-folded English words the language translates, never
                 kept as proper names.
+            keep_names (bool): Whether a `{name}` template may keep an English proper name; false
+                for a language that writes them in its own script, where only exact terms apply.
         """
         self.exact: dict[str, str] = {}
         self.templates: list[tuple[re.Pattern[str], str]] = []
@@ -416,6 +424,8 @@ class Rules:
                 self.templates.append((re.compile(pattern, re.IGNORECASE), term.translation))
             elif PLACEHOLDER not in term.term:
                 self.exact[term.term.casefold()] = term.translation
+        if not keep_names:
+            self.templates.clear()
         # The longest fixed text first: "{name} Countergambit" before "{name} Gambit".
         self.templates.sort(key=lambda item: -len(item[0].pattern))
         self.words = {term for term in self.exact if " " not in term} | translate
@@ -713,7 +723,7 @@ def fill_names(
     before = {path: render(document) for path, document in documents.items()}
     glossary = glossary_dir / f"{code}.toml"
     rules = (
-        Rules(load_glossary(glossary), load_translate_words(glossary))
+        Rules(load_glossary(glossary), load_translate_words(glossary), load_keep_names(glossary))
         if glossary.exists()
         else Rules({})
     )

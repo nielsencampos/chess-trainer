@@ -23,6 +23,7 @@ from catalog.names import (
 from catalog.translations import (
     TranslationError,
     load_glossary,
+    load_keep_names,
     load_name_sources,
     load_translate_words,
     localized_names,
@@ -525,6 +526,39 @@ def test_translate_words_are_never_kept_as_proper_names(tmp_path):
     assert rules.translate("Exchange Attack") is None
     assert rules.translate("King's Attack") is None
     assert rules.translate("Panov-Exchange Attack") is None
+
+
+def test_keep_names_false_never_keeps_a_proper_name(tmp_path):
+    """With `keep_names = false`, only exact terms build a name; the rest is machine-translated.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    path = tmp_path / "ru.toml"
+    path.write_text(
+        "keep_names = false\n"
+        '[[terms]]\nterm = "{name} Attack"\ntranslation = "Атака {name}"\nmachine = true\n'
+        '[[terms]]\nterm = "Main Line"\ntranslation = "Главная линия"\nmachine = true\n',
+        encoding="utf-8",
+    )
+    assert load_keep_names(path) is False
+    rules = Rules(load_glossary(path), load_translate_words(path), load_keep_names(path))
+    assert rules.translate("Panov Attack") is None
+    assert rules.translate("Main Line") == "Главная линия"
+
+
+def test_keep_names_is_a_boolean(tmp_path):
+    """`keep_names` defaults to true and must be a boolean.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    path = tmp_path / "pt-BR.toml"
+    path.write_text(GLOSSARY, encoding="utf-8")
+    assert load_keep_names(path) is True
+    path.write_text('keep_names = "no"\n' + GLOSSARY, encoding="utf-8")
+    with pytest.raises(TranslationError):
+        load_keep_names(path)
 
 
 @pytest.mark.parametrize(

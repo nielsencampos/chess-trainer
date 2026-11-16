@@ -144,9 +144,7 @@ def test_the_fonts_of_a_locale_s_scripts_cover_its_text(code):
     """
     faces = font_faces()
     spans = [
-        span
-        for script in load_locales()[code].scripts
-        for span in faces[ui_font(script), script]
+        span for script in load_locales()[code].scripts for span in faces[ui_font(script), script]
     ]
     text = "".join(json.loads((I18N_DIR / f"{code}.json").read_text(encoding="utf-8")).values())
     # Letters and marks only: symbols such as an emoji come from the system's emoji font.

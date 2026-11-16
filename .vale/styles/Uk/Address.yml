@@ -1,0 +1,17 @@
+# uk speaks to the reader as "ви", lowercase, never "ти" or the capitalized "Ви".
+extends: existence
+message: "Use 'ви' (lowercase) as the form of address, not '%s'."
+level: error
+ignorecase: false
+tokens:
+  - '[Тт]и'
+  - '[Тт]ебе'
+  - '[Тт]обі'
+  - '[Тт]обою'
+  - '[Тт]вій'
+  - '[Тт]воя'
+  - '[Тт]воє'
+  - '[Тт]вої'
+  - '(?<=[,;:]\s)Ви'
+  - '(?<=[,;:]\s)Вас'
+  - '(?<=[,;:]\s)Вам'
