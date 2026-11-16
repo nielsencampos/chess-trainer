@@ -14,7 +14,7 @@ Chess Trainer untuk berlatih: latih pembukaan Anda melawan bot yang memainkan li
 
 > **Evaluasi di sini sederhana**
 >
-> Bilah evaluasi dan ikon langkah (langkah terbaik, kesalahan, blunder…) berasal dari pemeriksaan cepat Stockfish dan hanya petunjuk. Untuk analisis sungguhan, ekspor PGN dan analisis di Chess.com, Lichess atau alat analisis lain.
+> Bilah evaluasi berasal dari pemeriksaan cepat Stockfish dan hanya petunjuk. Ikon langkah (langkah terbaik, kesalahan, blunder…) adalah klasifikasi dari situs asal partai, dibaca dari PGN-nya: aplikasi tidak menghitung satu pun. Untuk analisis sungguhan, ekspor PGN dan analisis di Chess.com, Lichess atau alat analisis lain.
 
 ## Mulai permainan
 

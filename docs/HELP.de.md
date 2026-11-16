@@ -14,7 +14,7 @@ Chess Trainer ist zum Üben da: Trainiere deine Eröffnungen gegen einen Bot, de
 
 > **Die Bewertung hier ist einfach**
 >
-> Der Bewertungsbalken und die Symbole an den Zügen (bester Zug, Fehler, Patzer …) stammen aus einer schnellen Prüfung durch Stockfish und sind nur ein Hinweis. Für eine echte Analyse exportiere die PGN und analysiere sie auf Chess.com, auf Lichess oder mit einem anderen Analysewerkzeug.
+> Der Bewertungsbalken stammt aus einer schnellen Prüfung durch Stockfish und ist nur ein Hinweis. Die Symbole an den Zügen (bester Zug, Fehler, Patzer …) sind die Einstufung der Seite, von der die Partie kommt, gelesen aus ihrer PGN: Die App berechnet keines davon. Für eine echte Analyse exportiere die PGN und analysiere sie auf Chess.com, auf Lichess oder mit einem anderen Analysewerkzeug.
 
 ## Eine Partie beginnen
 

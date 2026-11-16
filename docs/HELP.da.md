@@ -14,7 +14,7 @@ Chess Trainer er til træning: øv dine åbninger mod en bot, der spiller dine v
 
 > **Vurderingen her er enkel**
 >
-> Vurderingsbjælken og træk-ikonerne (bedste træk, fejl, brøler…) kommer fra et hurtigt tjek med Stockfish og er kun et fingerpeg. For en rigtig analyse eksporterer du PGN og analyserer den på Chess.com, Lichess eller et andet analyseværktøj.
+> Vurderingsbjælken kommer fra et hurtigt tjek med Stockfish og er kun et fingerpeg. Træk-ikonerne (bedste træk, fejl, brøler…) er klassificeringen fra det site, partiet kommer fra, læst fra dets PGN: appen beregner ingen af dem. For en rigtig analyse eksporterer du PGN og analyserer den på Chess.com, Lichess eller et andet analyseværktøj.
 
 ## Start et parti
 

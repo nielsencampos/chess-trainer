@@ -14,7 +14,7 @@ Chess Trainer is om te oefenen: train je openingen tegen een bot die jouw lijnen
 
 > **De evaluatie hier is eenvoudig**
 >
-> De evaluatiebalk en de zetpictogrammen (beste zet, fout, blunder…) komen uit een snelle controle door Stockfish en zijn alleen een hint. Voor een echte analyse exporteer je de PGN en analyseer je die op Chess.com, Lichess of met een ander analyseprogramma.
+> De evaluatiebalk komt uit een snelle controle door Stockfish en is alleen een hint. De zetpictogrammen (beste zet, fout, blunder…) zijn de indeling van de site waar de partij vandaan komt, gelezen uit de PGN: de app berekent er geen. Voor een echte analyse exporteer je de PGN en analyseer je die op Chess.com, Lichess of met een ander analyseprogramma.
 
 ## Een partij beginnen
 

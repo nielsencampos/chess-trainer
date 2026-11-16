@@ -14,7 +14,7 @@ Chess Trainer sert à s'entraîner : travaillez vos ouvertures contre un bot qui
 
 > **L'évaluation est sommaire**
 >
-> La barre d'évaluation et les icônes des coups (meilleur coup, erreur, gaffe…) viennent d'un examen rapide par Stockfish et ne sont qu'une indication. Pour une vraie analyse, exportez le PGN et analysez-le sur Chess.com, sur Lichess ou avec un autre outil d'analyse.
+> La barre d'évaluation vient d'un examen rapide par Stockfish et n'est qu'une indication. Les icônes des coups (meilleur coup, erreur, gaffe…) sont le classement du site d'où vient la partie, lu dans son PGN : l'application n'en calcule aucune. Pour une vraie analyse, exportez le PGN et analysez-le sur Chess.com, sur Lichess ou avec un autre outil d'analyse.
 
 ## Commencer une partie
 

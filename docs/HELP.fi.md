@@ -14,7 +14,7 @@ Chess Trainer on harjoittelua varten: harjoittele avauksiasi bottia vastaan, jok
 
 > **Arvio on tässä yksinkertainen**
 >
-> Arviopalkki ja siirtojen kuvakkeet (paras siirto, virhe, munaus…) tulevat Stockfishin nopeasta tarkistuksesta ja ovat vain vihje. Kunnollista analyysiä varten vie PGN ja analysoi se Chess.comissa, Lichessissä tai muulla analyysityökalulla.
+> Arviopalkki tulee Stockfishin nopeasta tarkistuksesta ja on vain vihje. Siirtojen kuvakkeet (paras siirto, virhe, munaus…) ovat sen sivuston luokittelu, jolta peli on peräisin, luettuna sen PGN:stä: sovellus ei laske niistä yhtäkään. Kunnollista analyysiä varten vie PGN ja analysoi se Chess.comissa, Lichessissä tai muulla analyysityökalulla.
 
 ## Aloita peli
 

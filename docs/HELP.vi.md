@@ -14,7 +14,7 @@ Chess Trainer dùng để luyện tập: luyện khai cuộc của bạn với m
 
 > **Đánh giá ở đây chỉ là cơ bản**
 >
-> Thanh đánh giá và các biểu tượng nước đi (nước đi tốt nhất, sai lầm, sai lầm nghiêm trọng…) đến từ một lần kiểm tra nhanh của Stockfish và chỉ là gợi ý. Để phân tích thật sự, hãy xuất PGN và phân tích trên Chess.com, Lichess hoặc một công cụ phân tích khác.
+> Thanh đánh giá đến từ một lần kiểm tra nhanh của Stockfish và chỉ là gợi ý. Các biểu tượng nước đi (nước đi tốt nhất, sai lầm, sai lầm nghiêm trọng…) là cách phân loại của trang web mà ván cờ đến từ đó, đọc từ PGN của nó: ứng dụng không tự tính biểu tượng nào. Để phân tích thật sự, hãy xuất PGN và phân tích trên Chess.com, Lichess hoặc một công cụ phân tích khác.
 
 ## Bắt đầu một ván cờ
 
