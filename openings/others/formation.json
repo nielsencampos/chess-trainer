@@ -14,7 +14,11 @@
     "nl": "Opstelling",
     "id": "Formasi",
     "vi": "Thế trận",
-    "pl": "Formacja"
+    "pl": "Formacja",
+    "sv": "Uppställning",
+    "da": "Opstilling",
+    "nb": "Oppstilling",
+    "fi": "Asetelma"
   },
   "order": null,
   "lines": [
@@ -34,7 +38,11 @@
         "nl": "Nijlpaardaanval",
         "id": "Serangan Kuda Nil",
         "vi": "Tấn công Hippopotamus",
-        "pl": "Atak hipopotama"
+        "pl": "Atak hipopotama",
+        "sv": "Flodhästattacken",
+        "da": "Flodhestangrebet",
+        "nb": "Flodhestangrepet",
+        "fi": "Virtahepohyökkäys"
       },
       "eco": "A00",
       "opening": "Formation: Hippopotamus Attack",
@@ -57,7 +65,11 @@
         "nl": "Verlegen aanval",
         "id": "Serangan Malu-Malu",
         "vi": "Tấn công rụt rè",
-        "pl": "Atak nieśmiały"
+        "pl": "Atak nieśmiały",
+        "sv": "Blyga attacken",
+        "da": "Genert angreb",
+        "nb": "Sjenert angrep",
+        "fi": "Ujo hyökkäys"
       },
       "eco": "A00",
       "opening": "Formation: Shy Attack",

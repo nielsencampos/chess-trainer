@@ -14,7 +14,11 @@
     "nl": "Rattenverdediging",
     "id": "Pertahanan Tikus",
     "vi": "Phòng thủ con chuột",
-    "pl": "Obrona szczura"
+    "pl": "Obrona szczura",
+    "sv": "Råttförsvaret",
+    "da": "Rotteforsvaret",
+    "nb": "Rotteforsvaret",
+    "fi": "Rottapuolustus"
   },
   "order": null,
   "variants": [
@@ -33,7 +37,11 @@
         "nl": "Engelse rat",
         "id": "Tikus Inggris",
         "vi": "Con chuột Anh",
-        "pl": "Szczur angielski"
+        "pl": "Szczur angielski",
+        "sv": "Engelsk råtta",
+        "da": "Engelsk rotte",
+        "nb": "Engelsk rotte",
+        "fi": "Englantilainen rotta"
       },
       "lines": [
         {
@@ -52,7 +60,11 @@
             "nl": "Engelse rat",
             "id": "Tikus Inggris",
             "vi": "Con chuột Anh",
-            "pl": "Szczur angielski"
+            "pl": "Szczur angielski",
+            "sv": "Engelsk råtta",
+            "da": "Engelsk rotte",
+            "nb": "Engelsk rotte",
+            "fi": "Englantilainen rotta"
           },
           "eco": "A41",
           "opening": "Rat Defense: English Rat",
@@ -75,7 +87,11 @@
             "nl": "Engelse rat, Poundsgambiet",
             "id": "Tikus Inggris, Gambit Pounds",
             "vi": "Con chuột Anh, Gambit Pounds",
-            "pl": "Szczur angielski, Gambit Pounds"
+            "pl": "Szczur angielski, Gambit Pounds",
+            "sv": "Engelsk råtta, Poundsgambit",
+            "da": "Engelsk rotte, Poundsgambit",
+            "nb": "Engelsk rotte, Poundsgambit",
+            "fi": "Englantilainen rotta, Pounds-gambiitti"
           },
           "eco": "A41",
           "opening": "Rat Defense: English Rat, Pounds Gambit",
@@ -98,7 +114,11 @@
             "nl": "Engelse rat, Lissabongambiet",
             "id": "Tikus Inggris, Gambit Lisboa",
             "vi": "Con chuột Anh, Gambit Lisboa",
-            "pl": "Szczur angielski, Gambit lizboński"
+            "pl": "Szczur angielski, Gambit lizboński",
+            "sv": "Engelsk råtta, Lissabongambit",
+            "da": "Engelsk rotte, Lissabongambit",
+            "nb": "Engelsk rotte, Lisboagambit",
+            "fi": "Englantilainen rotta, Lissabon-gambiitti"
           },
           "eco": "A41",
           "opening": "Rat Defense: English Rat, Lisbon Gambit",
@@ -125,7 +145,11 @@
         "nl": "Versnelde Gurgenidze",
         "id": "Gurgenidze Dipercepat",
         "vi": "Gurgenidze tăng tốc",
-        "pl": "Gurgenidze przyspieszony"
+        "pl": "Gurgenidze przyspieszony",
+        "sv": "Accelererad Gurgenidze",
+        "da": "Accelereret Gurgenidze",
+        "nb": "Akselerert Gurgenidze",
+        "fi": "Nopeutettu Gurgenidze"
       },
       "eco": "B06",
       "opening": "Rat Defense: Accelerated Gurgenidze",
@@ -148,7 +172,11 @@
         "pl": "Obrona Antal",
         "nl": "Antalverdediging",
         "id": "Pertahanan Antal",
-        "vi": "Phòng thủ Antal"
+        "vi": "Phòng thủ Antal",
+        "sv": "Antalförsvaret",
+        "da": "Antalforsvaret",
+        "nb": "Antalforsvaret",
+        "fi": "Antal-puolustus"
       },
       "eco": "B00",
       "opening": "Rat Defense: Antal Defense",
@@ -171,7 +199,11 @@
         "pl": "Obrona Balogh",
         "nl": "Baloghverdediging",
         "id": "Pertahanan Balogh",
-        "vi": "Phòng thủ Balogh"
+        "vi": "Phòng thủ Balogh",
+        "sv": "Baloghförsvaret",
+        "da": "Baloghforsvaret",
+        "nb": "Baloghforsvaret",
+        "fi": "Balogh-puolustus"
       },
       "eco": "A82",
       "opening": "Rat Defense: Balogh Defense",
@@ -194,7 +226,11 @@
         "pl": "Gambit Fuller",
         "nl": "Fullergambiet",
         "id": "Gambit Fuller",
-        "vi": "Gambit Fuller"
+        "vi": "Gambit Fuller",
+        "sv": "Fullergambit",
+        "da": "Fullergambit",
+        "nb": "Fullergambit",
+        "fi": "Fuller-gambiitti"
       },
       "eco": "B00",
       "opening": "Rat Defense: Fuller Gambit",
@@ -217,7 +253,11 @@
         "nl": "Harmonist",
         "id": "Harmonist",
         "vi": "Harmonist",
-        "pl": "Harmonist"
+        "pl": "Harmonist",
+        "sv": "Harmonist",
+        "da": "Harmonist",
+        "nb": "Harmonist",
+        "fi": "Harmonist"
       },
       "eco": "B00",
       "opening": "Rat Defense: Harmonist",
@@ -240,7 +280,11 @@
         "pl": "Atak Petruccioli",
         "nl": "Petruccioliaanval",
         "id": "Serangan Petruccioli",
-        "vi": "Tấn công Petruccioli"
+        "vi": "Tấn công Petruccioli",
+        "sv": "Petruccioliattacken",
+        "da": "Petruccioliangrebet",
+        "nb": "Petruccioliangrepet",
+        "fi": "Petruccioli-hyökkäys"
       },
       "eco": "B00",
       "opening": "Rat Defense: Petruccioli Attack",
@@ -263,7 +307,11 @@
         "nl": "Kleincentrumverdediging",
         "id": "Pertahanan Pusat Kecil",
         "vi": "Phòng thủ trung tâm nhỏ",
-        "pl": "Obrona małego centrum"
+        "pl": "Obrona małego centrum",
+        "sv": "Lillcentrumförsvaret",
+        "da": "Lillecenterforsvaret",
+        "nb": "Lillesentrumforsvaret",
+        "fi": "Pikkukeskuspuolustus"
       },
       "eco": "C00",
       "opening": "Rat Defense: Small Center Defense",
@@ -286,7 +334,11 @@
         "nl": "Spijkeraanval",
         "id": "Serangan Paku",
         "vi": "Tấn công đinh",
-        "pl": "Atak kolca"
+        "pl": "Atak kolca",
+        "sv": "Spikattacken",
+        "da": "Spydangrebet",
+        "nb": "Spydangrepet",
+        "fi": "Piikkihyökkäys"
       },
       "eco": "B00",
       "opening": "Rat Defense: Spike Attack",

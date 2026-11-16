@@ -14,7 +14,11 @@
     "pl": "Otwarcie Van Geet",
     "nl": "Van Geetopening",
     "id": "Pembukaan Van Geet",
-    "vi": "Khai cuộc Van Geet"
+    "vi": "Khai cuộc Van Geet",
+    "sv": "Dunsts öppning",
+    "da": "Van Geetåbningen",
+    "nb": "Sleipneråpningen",
+    "fi": "Dunstin avaus"
   },
   "order": null,
   "variants": [
@@ -33,7 +37,11 @@
         "pl": "Obrona Grünfeld",
         "nl": "Grünfeldverdediging",
         "id": "Pertahanan Grünfeld",
-        "vi": "Phòng thủ Grünfeld"
+        "vi": "Phòng thủ Grünfeld",
+        "sv": "Grünfeldförsvaret",
+        "da": "Grünfeldforsvaret",
+        "nb": "Grünfeldforsvaret",
+        "fi": "Grünfeld-puolustus"
       },
       "lines": [
         {
@@ -52,7 +60,11 @@
             "pl": "Obrona Grünfeld",
             "nl": "Grünfeldverdediging",
             "id": "Pertahanan Grünfeld",
-            "vi": "Phòng thủ Grünfeld"
+            "vi": "Phòng thủ Grünfeld",
+            "sv": "Grünfeldförsvaret",
+            "da": "Grünfeldforsvaret",
+            "nb": "Grünfeldforsvaret",
+            "fi": "Grünfeld-puolustus"
           },
           "eco": "B01",
           "opening": "Van Geet Opening: Grünfeld Defense",
@@ -75,7 +87,11 @@
             "pl": "Obrona Grünfeld, Gambit Steiner",
             "nl": "Grünfeldverdediging, Steinergambiet",
             "id": "Pertahanan Grünfeld, Gambit Steiner",
-            "vi": "Phòng thủ Grünfeld, Gambit Steiner"
+            "vi": "Phòng thủ Grünfeld, Gambit Steiner",
+            "sv": "Grünfeldförsvaret, Steinergambit",
+            "da": "Grünfeldforsvaret, Steinergambit",
+            "nb": "Grünfeldforsvaret, Steinergambit",
+            "fi": "Grünfeld-puolustus, Steiner-gambiitti"
           },
           "eco": "C31",
           "opening": "Van Geet Opening: Grünfeld Defense, Steiner Gambit",
@@ -99,7 +115,11 @@
         "pl": "Gambit Pfeiffer",
         "nl": "Pfeiffergambiet",
         "id": "Gambit Pfeiffer",
-        "vi": "Gambit Pfeiffer"
+        "vi": "Gambit Pfeiffer",
+        "sv": "Pfeiffergambit",
+        "da": "Pfeiffergambit",
+        "nb": "Pfeiffergambit",
+        "fi": "Pfeiffer-gambiitti"
       },
       "lines": [
         {
@@ -118,7 +138,11 @@
             "pl": "Gambit Pfeiffer",
             "nl": "Pfeiffergambiet",
             "id": "Gambit Pfeiffer",
-            "vi": "Gambit Pfeiffer"
+            "vi": "Gambit Pfeiffer",
+            "sv": "Pfeiffergambit",
+            "da": "Pfeiffergambit",
+            "nb": "Pfeiffergambit",
+            "fi": "Pfeiffer-gambiitti"
           },
           "eco": "A00",
           "opening": "Van Geet Opening: Pfeiffer Gambit",
@@ -141,7 +165,11 @@
             "pl": "Gambit Pfeiffer, Kontrgambit Sleipnir",
             "nl": "Pfeiffergambiet, Sleipnirtegengambiet",
             "id": "Gambit Pfeiffer, Gambit Balasan Sleipnir",
-            "vi": "Gambit Pfeiffer, Phản gambit Sleipnir"
+            "vi": "Gambit Pfeiffer, Phản gambit Sleipnir",
+            "sv": "Pfeiffergambit, Sleipnirmotgambit",
+            "da": "Pfeiffergambit, Sleipnirmodgambit",
+            "nb": "Pfeiffergambit, Sleipnirmotgambit",
+            "fi": "Pfeiffer-gambiitti, Sleipnir-vastagambiitti"
           },
           "eco": "A00",
           "opening": "Van Geet Opening: Pfeiffer Gambit, Sleipnir Countergambit",
@@ -168,7 +196,11 @@
         "pl": "Wariant Battambang",
         "nl": "Battambangvariant",
         "id": "Variasi Battambang",
-        "vi": "Phương án Battambang"
+        "vi": "Phương án Battambang",
+        "sv": "Battambangvarianten",
+        "da": "Battambangvarianten",
+        "nb": "Battambangvarianten",
+        "fi": "Battambang-muunnelma"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Battambang Variation",
@@ -191,7 +223,11 @@
         "nl": "Berlijns gambiet",
         "id": "Gambit Berlin",
         "vi": "Gambit Berlin",
-        "pl": "Gambit berliński"
+        "pl": "Gambit berliński",
+        "sv": "Berlingambit",
+        "da": "Berlinergambit",
+        "nb": "Berlinergambit",
+        "fi": "Berliiniläinen gambiitti"
       },
       "eco": "B00",
       "opening": "Van Geet Opening: Berlin Gambit",
@@ -214,7 +250,11 @@
         "pl": "Gambit Billockus-Johansen",
         "nl": "Billockus-Johansengambiet",
         "id": "Gambit Billockus-Johansen",
-        "vi": "Gambit Billockus-Johansen"
+        "vi": "Gambit Billockus-Johansen",
+        "sv": "Billockus-Johansengambit",
+        "da": "Billockus-Johansengambit",
+        "nb": "Billockus-Johansengambit",
+        "fi": "Billockus-Johansen-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Billockus-Johansen Gambit",
@@ -237,7 +277,11 @@
         "pl": "Gambit Damhaug",
         "nl": "Damhauggambiet",
         "id": "Gambit Damhaug",
-        "vi": "Gambit Damhaug"
+        "vi": "Gambit Damhaug",
+        "sv": "Damhauggambit",
+        "da": "Damhauggambit",
+        "nb": "Damhauggambit",
+        "fi": "Damhaug-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Damhaug Gambit",
@@ -260,7 +304,11 @@
         "pl": "Gambit Dougherty",
         "nl": "Doughertygambiet",
         "id": "Gambit Dougherty",
-        "vi": "Gambit Dougherty"
+        "vi": "Gambit Dougherty",
+        "sv": "Doughertygambit",
+        "da": "Doughertygambit",
+        "nb": "Doughertygambit",
+        "fi": "Dougherty-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Dougherty Gambit",
@@ -283,7 +331,11 @@
         "pl": "Gambit Dunst-Perrenet",
         "nl": "Dunst-Perrenetgambiet",
         "id": "Gambit Dunst-Perrenet",
-        "vi": "Gambit Dunst-Perrenet"
+        "vi": "Gambit Dunst-Perrenet",
+        "sv": "Dunst-Perrenetgambit",
+        "da": "Dunst-Perrenetgambit",
+        "nb": "Dunst-Perrenetgambit",
+        "fi": "Dunst-Perrenet-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Dunst-Perrenet Gambit",
@@ -306,7 +358,11 @@
         "pl": "Gambit Düsseldorf",
         "nl": "Düsseldorfgambiet",
         "id": "Gambit Düsseldorf",
-        "vi": "Gambit Düsseldorf"
+        "vi": "Gambit Düsseldorf",
+        "sv": "Düsseldorfgambit",
+        "da": "Düsseldorfgambit",
+        "nb": "Düsseldorfgambit",
+        "fi": "Düsseldorf-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Düsseldorf Gambit",
@@ -329,7 +385,11 @@
         "pl": "Gambit Gladbacher",
         "nl": "Gladbachergambiet",
         "id": "Gambit Gladbacher",
-        "vi": "Gambit Gladbacher"
+        "vi": "Gambit Gladbacher",
+        "sv": "Gladbachergambit",
+        "da": "Gladbachergambit",
+        "nb": "Gladbachergambit",
+        "fi": "Gladbacher-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Gladbacher Gambit",
@@ -352,7 +412,11 @@
         "pl": "Gambit Hector",
         "nl": "Hectorgambiet",
         "id": "Gambit Hector",
-        "vi": "Gambit Hector"
+        "vi": "Gambit Hector",
+        "sv": "Hectorgambit",
+        "da": "Hectorgambit",
+        "nb": "Hectorgambit",
+        "fi": "Hector-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Hector Gambit",
@@ -375,7 +439,11 @@
         "pl": "Gambit Hergert",
         "nl": "Hergertgambiet",
         "id": "Gambit Hergert",
-        "vi": "Gambit Hergert"
+        "vi": "Gambit Hergert",
+        "sv": "Hergertgambit",
+        "da": "Hergertgambit",
+        "nb": "Hergertgambit",
+        "fi": "Hergert-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Hergert Gambit",
@@ -398,7 +466,11 @@
         "pl": "Gambit Hulsemann",
         "nl": "Hulsemanngambiet",
         "id": "Gambit Hulsemann",
-        "vi": "Gambit Hulsemann"
+        "vi": "Gambit Hulsemann",
+        "sv": "Hulsemanngambit",
+        "da": "Hulsemanngambit",
+        "nb": "Hulsemanngambit",
+        "fi": "Hulsemann-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Hulsemann Gambit",
@@ -421,7 +493,11 @@
         "pl": "Gambit Jendrossek",
         "nl": "Jendrossekgambiet",
         "id": "Gambit Jendrossek",
-        "vi": "Gambit Jendrossek"
+        "vi": "Gambit Jendrossek",
+        "sv": "Jendrossekgambit",
+        "da": "Jendrossekgambit",
+        "nb": "Jendrossekgambit",
+        "fi": "Jendrossek-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Jendrossek Gambit",
@@ -444,7 +520,11 @@
         "pl": "Gambit Kluever",
         "nl": "Kluevergambiet",
         "id": "Gambit Kluever",
-        "vi": "Gambit Kluever"
+        "vi": "Gambit Kluever",
+        "sv": "Kluevergambit",
+        "da": "Kluevergambit",
+        "nb": "Kluevergambit",
+        "fi": "Kluever-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Kluever Gambit",
@@ -467,7 +547,11 @@
         "pl": "Gambit Laroche",
         "nl": "Larochegambiet",
         "id": "Gambit Laroche",
-        "vi": "Gambit Laroche"
+        "vi": "Gambit Laroche",
+        "sv": "Larochegambit",
+        "da": "Larochegambit",
+        "nb": "Larochegambit",
+        "fi": "Laroche-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Laroche Gambit",
@@ -490,7 +574,11 @@
         "pl": "Gambit Liebig",
         "nl": "Liebiggambiet",
         "id": "Gambit Liebig",
-        "vi": "Gambit Liebig"
+        "vi": "Gambit Liebig",
+        "sv": "Liebiggambit",
+        "da": "Liebiggambit",
+        "nb": "Liebiggambit",
+        "fi": "Liebig-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Liebig Gambit",
@@ -513,7 +601,11 @@
         "pl": "Otwarcie Van Geet",
         "nl": "Van Geetopening",
         "id": "Pembukaan Van Geet",
-        "vi": "Khai cuộc Van Geet"
+        "vi": "Khai cuộc Van Geet",
+        "sv": "Van Geetöppningen",
+        "da": "Van Geetåbningen",
+        "nb": "Van Geetåpningen",
+        "fi": "Van Geet-avaus"
       },
       "eco": "A00",
       "opening": "Van Geet Opening",
@@ -536,7 +628,11 @@
         "pl": "Gambit Melleby",
         "nl": "Mellebygambiet",
         "id": "Gambit Melleby",
-        "vi": "Gambit Melleby"
+        "vi": "Gambit Melleby",
+        "sv": "Mellebygambit",
+        "da": "Mellebygambit",
+        "nb": "Mellebygambit",
+        "fi": "Melleby-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Melleby Gambit",
@@ -559,7 +655,11 @@
         "pl": "Atak Myers",
         "nl": "Myersaanval",
         "id": "Serangan Myers",
-        "vi": "Tấn công Myers"
+        "vi": "Tấn công Myers",
+        "sv": "Myersattacken",
+        "da": "Myersangrebet",
+        "nb": "Myersangrepet",
+        "fi": "Myers-hyökkäys"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Myers Attack",
@@ -582,7 +682,11 @@
         "nl": "Napoleonaanval",
         "id": "Serangan Napoleon",
         "vi": "Tấn công Napoléon",
-        "pl": "Atak Napoleona"
+        "pl": "Atak Napoleona",
+        "sv": "Napoleonattacken",
+        "da": "Napoleonangrebet",
+        "nb": "Napoleonangrepet",
+        "fi": "Napoleon-hyökkäys"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Napoleon Attack",
@@ -605,7 +709,11 @@
         "nl": "Novosibirskvariant",
         "id": "Variasi Novosibirsk",
         "vi": "Phương án Novosibirsk",
-        "pl": "Wariant nowosybirski"
+        "pl": "Wariant nowosybirski",
+        "sv": "Novosibirskvarianten",
+        "da": "Novosibirskvarianten",
+        "nb": "Novosibirskvarianten",
+        "fi": "Novosibirsk-muunnelma"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Novosibirsk Variation",
@@ -628,7 +736,11 @@
         "pl": "Gambit Nowokunski",
         "nl": "Nowokunskigambiet",
         "id": "Gambit Nowokunski",
-        "vi": "Gambit Nowokunski"
+        "vi": "Gambit Nowokunski",
+        "sv": "Nowokunskigambit",
+        "da": "Nowokunskigambit",
+        "nb": "Nowokunskigambit",
+        "fi": "Nowokunski-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Nowokunski Gambit",
@@ -651,7 +763,11 @@
         "nl": "Nimzowitsch met omgekeerde kleuren",
         "id": "Nimzowitsch Terbalik",
         "vi": "Nimzowitsch đảo màu",
-        "pl": "Nimzowitsch z odwróconymi kolorami"
+        "pl": "Nimzowitsch z odwróconymi kolorami",
+        "sv": "Nimzowitsch med ombytta färger",
+        "da": "Nimzowitsch med byttede farver",
+        "nb": "Nimzowitsch med byttede farger",
+        "fi": "Nimzowitsch käänteisin värein"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Reversed Nimzowitsch",
@@ -674,7 +790,11 @@
         "nl": "Scandinavisch met omgekeerde kleuren",
         "id": "Skandinavia Terbalik",
         "vi": "Scandinavia đảo màu",
-        "pl": "Skandynawska z odwróconymi kolorami"
+        "pl": "Skandynawska z odwróconymi kolorami",
+        "sv": "Skandinaviskt med ombytta färger",
+        "da": "Skandinavisk med byttede farver",
+        "nb": "Skandinavisk med byttede farger",
+        "fi": "Skandinaavinen käänteisin värein"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Reversed Scandinavian",
@@ -697,7 +817,11 @@
         "nl": "Siciliaanse tweepaarden",
         "id": "Dua Kuda Sisilia",
         "vi": "Hai Mã Sicilia",
-        "pl": "Sycylijska dwóch skoczków"
+        "pl": "Sycylijska dwóch skoczków",
+        "sv": "Sicilianskt tvåspringarspel",
+        "da": "Siciliansk tospringerspil",
+        "nb": "Siciliansk tospringerspill",
+        "fi": "Sisilialainen kaksiratsupeli"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Sicilian Two Knights",
@@ -720,7 +844,11 @@
         "pl": "Gambit Sleipnir",
         "nl": "Sleipnirgambiet",
         "id": "Gambit Sleipnir",
-        "vi": "Gambit Sleipnir"
+        "vi": "Gambit Sleipnir",
+        "sv": "Sleipnirgambit",
+        "da": "Sleipnirgambit",
+        "nb": "Sleipnirgambit",
+        "fi": "Sleipnir-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Sleipnir Gambit",
@@ -743,7 +871,11 @@
         "pl": "Atak Twyble",
         "nl": "Twybleaanval",
         "id": "Serangan Twyble",
-        "vi": "Tấn công Twyble"
+        "vi": "Tấn công Twyble",
+        "sv": "Twybleattacken",
+        "da": "Twybleangrebet",
+        "nb": "Twybleangrepet",
+        "fi": "Twyble-hyökkäys"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Twyble Attack",
@@ -766,7 +898,11 @@
         "pl": "Gambit Tübingen",
         "nl": "Tübingengambiet",
         "id": "Gambit Tübingen",
-        "vi": "Gambit Tübingen"
+        "vi": "Gambit Tübingen",
+        "sv": "Tübingengambit",
+        "da": "Tübingengambit",
+        "nb": "Tübingengambit",
+        "fi": "Tübingen-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Tübingen Gambit",
@@ -789,7 +925,11 @@
         "nl": "Venezolaanse variant",
         "id": "Variasi Venezuela",
         "vi": "Phương án Venezuela",
-        "pl": "Wariant wenezuelski"
+        "pl": "Wariant wenezuelski",
+        "sv": "Venezuelanska varianten",
+        "da": "Venezuelansk variant",
+        "nb": "Venezuelansk variant",
+        "fi": "Venezuelalainen muunnelma"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Venezolana Variation",
@@ -812,7 +952,11 @@
         "pl": "Gambit Warsteiner",
         "nl": "Warsteinergambiet",
         "id": "Gambit Warsteiner",
-        "vi": "Gambit Warsteiner"
+        "vi": "Gambit Warsteiner",
+        "sv": "Warsteinergambit",
+        "da": "Warsteinergambit",
+        "nb": "Warsteinergambit",
+        "fi": "Warsteiner-gambiitti"
       },
       "eco": "A00",
       "opening": "Van Geet Opening: Warsteiner Gambit",

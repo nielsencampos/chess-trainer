@@ -1,0 +1,10 @@
+# sv speaks to the reader as "du", never the formal "ni" or "er".
+extends: existence
+message: "Use 'du' as the form of address, not '%s'."
+level: error
+ignorecase: true
+tokens:
+  - ni
+  - er
+  - era
+  - ert

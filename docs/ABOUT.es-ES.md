@@ -2,7 +2,7 @@
 
 # Acerca de Chess Trainer
 
-[English (US)](ABOUT.md) · [English (UK)](ABOUT.en-GB.md) · [Português (Brasil)](ABOUT.pt-BR.md) · [Español (Latinoamérica)](ABOUT.es-419.md) · [Português (Portugal)](ABOUT.pt-PT.md) · [Deutsch](ABOUT.de.md) · [Français](ABOUT.fr.md) · [Italiano](ABOUT.it.md) · [Türkçe](ABOUT.tr.md) · [Polski](ABOUT.pl.md) · [Nederlands](ABOUT.nl.md) · [Bahasa Indonesia](ABOUT.id.md) · [Tiếng Việt](ABOUT.vi.md)
+[English (US)](ABOUT.md) · [English (UK)](ABOUT.en-GB.md) · [Português (Brasil)](ABOUT.pt-BR.md) · [Español (Latinoamérica)](ABOUT.es-419.md) · [Português (Portugal)](ABOUT.pt-PT.md) · [Deutsch](ABOUT.de.md) · [Français](ABOUT.fr.md) · [Italiano](ABOUT.it.md) · [Türkçe](ABOUT.tr.md) · [Polski](ABOUT.pl.md) · [Nederlands](ABOUT.nl.md) · [Bahasa Indonesia](ABOUT.id.md) · [Tiếng Việt](ABOUT.vi.md) · [Svenska](ABOUT.sv.md) · [Dansk](ABOUT.da.md) · [Norsk bokmål](ABOUT.nb.md) · [Suomi](ABOUT.fi.md)
 
 ## Quién lo ha hecho
 

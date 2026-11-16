@@ -1,0 +1,561 @@
+# Chess glossary: Norwegian (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
+# from the Norwegian Wikipedia or Wikidata (`source`) or, when no page names it, `machine = true`
+# with a `note`. `avoid` lists the words the UI must not use for the term. Norwegian Bokmål (the
+# Norwegian Wikipedia, no.wikipedia.org) joins a name and the word after it, in the definite form
+# ("Tarraschforsvaret"); the reader is addressed as "du". Surnames stay as the book spells them
+# ("Chigorin", "Najdorf") unless Wikipedia names the opening. Every glossary has the terms of
+# en-US.toml (#56).
+
+# English words of the opening names this language translates: a glossary rule never
+# keeps them as proper names, so names with one go to machine translation (brief §8).
+translate = [
+    "Accelerated", "Advance", "Aged", "Alien", "Amazon", "American", "Amsterdam", "Anderssen's",
+    "Apocalypse", "Arctic", "Argentine", "Argentinian", "Ark", "Arkhangelsk", "Armenian", "Attack",
+    "Australian", "Austrian", "Baltic", "Banker", "Basque", "Battery", "Bavarian", "Bayonet",
+    "Beginner's", "Belgrade", "Berlin", "Big", "Bird's", "Bishop", "Bishop's", "Blackmar's",
+    "Blockade", "Bouncing", "Brick", "Brigg's", "Brussels", "Budapest", "Bulgarian", "Carlsbad",
+    "Catalan", "Cavalry", "Center", "Central", "Chameleon", "Cheese", "Chelyabinsk", "Chinese",
+    "Clam", "Clamp", "Closed", "Cobra", "Cologne", "Compromised", "Copenhagen", "Corkscrew",
+    "Cormorant", "Counterthrust", "Crab", "Crawly", "Creepy", "Crocodile", "Czech", "Danish",
+    "Declined", "Defensive", "Deferred", "Delayed", "Development", "Doll", "Double", "Dracula",
+    "Dragon", "Dresden", "Drill", "Drunken", "Duck", "Dutch", "Dynamic", "East", "Edge",
+    "Edinburgh", "Elbow", "Elephant", "Endgame", "England", "English", "Exchange", "Fianchetto",
+    "Fingerslip", "Finnish", "First", "Fishing", "Flexible", "Florentine", "Fluid", "Forcing",
+    "Forgotten", "Four", "Fox", "French", "Fried", "From's", "Full", "Fully", "Geller's", "Gent",
+    "German", "Gibbon", "Giraffe", "Global", "Gossip", "Goteborg", "Great", "Hammer", "Hawk", "Hay",
+    "Head", "Hedgehog", "Hillbilly", "Hippopotamus", "Horsefly", "Hungarian", "Icelandic",
+    "Improved", "Indian", "Inner", "Intermezzo", "Irish", "Italian", "Kangaroo", "Kazakh", "Kiddie",
+    "King's", "Kingfisher", "Kingside", "Knight", "Knight's", "Knights", "Kramnik's", "Latvian",
+    "Lemming", "Leningrad", "Lesser", "Lion", "Lisbon", "Lithuanian", "Liver", "Lizard", "Lobster",
+    "London", "Long", "Lusophobe", "Mad", "Main", "Martian", "Meadow", "Mediterranean",
+    "Mengarini's", "Mexican", "Millennium", "Modern", "Mongoose", "Moscow", "Mosquito", "Napoleon",
+    "Neo", "Netherlands", "New", "Nightingale", "Noah's", "Normal", "Norwegian", "Novosibirsk",
+    "Old", "Open", "Original", "Orthodox", "Outflank", "Paleface", "Paris", "Patrick's", "Pawns",
+    "Penguin", "Perseus", "Petrov's", "Pin", "Podebrady", "Pole", "Polish", "Porcupine",
+    "Portuguese", "Positional", "Prague", "Primitive", "Provincial", "Pseudo", "Pterodactyl",
+    "Push", "Pyrenees", "Queen's", "Queenside", "Quiet", "Rare", "Rat", "Retreat", "Reversed",
+    "Romanian", "Rooks", "Russian", "Saragossa", "Scandinavian", "Schwarz's", "Scotch", "Second",
+    "Semi", "Seville", "Sharp", "Short", "Shuffle", "Shy", "Siberian", "Sicilian", "Simagin's",
+    "Simul", "Six", "Slav", "Slow", "Small", "Snail", "Snake", "Sodium", "Sokolov's", "Spanish",
+    "Spike", "Standard", "Stockholm", "Swap", "Swedish", "Swiss", "Symmetric", "Symmetrical",
+    "Symmetry", "Tashkent", "Three", "Timman's", "Toilet", "Tortoise", "Tour", "Traditional",
+    "Transpositional", "Two", "Ukrainian", "Ultra", "Ulysses", "Unicorn", "Valencia", "Valencian",
+    "Venezolana", "Venice", "Vienna", "Viennese", "Voronezh", "Vulture", "Warsaw", "Wasp", "West",
+    "Wild", "Wind", "Wing", "Woodchuck", "Wuss", "Yepishin's", "Yerevan", "Yugoslav", "Zurich",
+]
+
+[[terms]]
+term = "chess"
+translation = "sjakk"
+source = "https://no.wikipedia.org/wiki/Sjakk"
+
+[[terms]]
+term = "piece"
+translation = "brikke"
+source = "https://no.wikipedia.org/wiki/Sjakkbrikke"
+
+[[terms]]
+term = "king"
+translation = "konge"
+source = "https://no.wikipedia.org/wiki/Konge_(sjakk)"
+
+[[terms]]
+term = "queen"
+translation = "dronning"
+source = "https://no.wikipedia.org/wiki/Dronning_(sjakk)"
+
+[[terms]]
+term = "rook"
+translation = "tårn"
+source = "https://no.wikipedia.org/wiki/Tårn_(sjakk)"
+
+[[terms]]
+term = "pawn"
+translation = "bonde"
+source = "https://no.wikipedia.org/wiki/Bonde_(sjakk)"
+
+[[terms]]
+term = "board"
+translation = "sjakkbrett"
+source = "https://no.wikipedia.org/wiki/Sjakkbrett"
+
+[[terms]]
+term = "square"
+translation = "felt"
+source = "https://no.wikipedia.org/wiki/Sjakknotasjon"
+
+[[terms]]
+term = "White"
+translation = "hvit"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Black"
+translation = "svart"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "game"
+translation = "parti"
+source = "https://no.wikipedia.org/wiki/Sjakknotasjon"
+
+[[terms]]
+term = "move"
+translation = "trekk"
+source = "https://no.wikipedia.org/wiki/Sjakknotasjon"
+
+[[terms]]
+term = "ply"
+translation = "halvtrekk"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "premove"
+translation = "forhåndstrekk"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "take back"
+translation = "ta tilbake trekk"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "castling"
+translation = "rokade"
+source = "https://no.wikipedia.org/wiki/Rokade"
+
+[[terms]]
+term = "check"
+translation = "sjakk"
+machine = true
+note = "No Wikipedia page names it. The same word as the game."
+
+[[terms]]
+term = "checkmate"
+translation = "sjakkmatt"
+source = "https://no.wikipedia.org/wiki/Sjakkmatt"
+
+[[terms]]
+term = "stalemate"
+translation = "patt"
+source = "https://no.wikipedia.org/wiki/Patt"
+
+[[terms]]
+term = "draw"
+translation = "remis"
+source = "https://no.wikipedia.org/wiki/Remis"
+avoid = ["uavgjort"]
+
+[[terms]]
+term = "resign"
+translation = "gi opp"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "insufficient material"
+translation = "utilstrekkelig materiell"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "trekkgjentakelse"
+source = "https://no.wikipedia.org/wiki/Trekkgjentakelse"
+note = "The article's name; it is the threefold rule."
+
+[[terms]]
+term = "fivefold repetition"
+translation = "femdobbel trekkgjentakelse"
+machine = true
+note = "No Wikipedia page names it. Follows \"trekkgjentakelse\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "femtitrekksregelen"
+source = "https://no.wikipedia.org/wiki/Femtitrekksregelen"
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "syttifemtrekksregelen"
+machine = true
+note = "No Wikipedia page names it. Follows \"femtitrekksregelen\"."
+
+[[terms]]
+term = "opening"
+translation = "åpning"
+source = "https://no.wikipedia.org/wiki/Sjakkåpning"
+
+[[terms]]
+term = "variation"
+translation = "variant"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "line"
+translation = "variant"
+machine = true
+note = "No Wikipedia page names it. \"Linje\" is a file of the board in Norwegian chess, so a line is a variant too."
+
+[[terms]]
+term = "theory"
+translation = "teori"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "book move"
+translation = "teoritrekk"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "deviation"
+translation = "avvik"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "sjakkmotor"
+source = "https://www.wikidata.org/wiki/Q1248874"
+note = "The Wikidata label; the Norwegian Wikipedia has no article."
+
+[[terms]]
+term = "computer"
+translation = "datamaskin"
+source = "https://no.wikipedia.org/wiki/Datamaskin"
+
+[[terms]]
+term = "evaluation"
+translation = "vurdering"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "analysis"
+translation = "analyse"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "briljant trekk"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "beste trekk"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "flott trekk"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "unøyaktighet"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "feil"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "forspilt sjanse"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "bukk"
+source = "https://www.wikidata.org/wiki/Q426625"
+note = "The Wikidata label; the Norwegian Wikipedia has no article."
+
+[[terms]]
+term = "time control"
+translation = "betenkningstid"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess clock"
+translation = "sjakkur"
+source = "https://no.wikipedia.org/wiki/Sjakkur"
+
+[[terms]]
+term = "increment"
+translation = "tillegg"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "delay"
+translation = "forsinkelse"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "bullet"
+translation = "bullet"
+machine = true
+note = "No Wikipedia page names it; the international word."
+
+[[terms]]
+term = "blitz"
+translation = "lynsjakk"
+source = "https://no.wikipedia.org/wiki/Lynsjakk"
+
+[[terms]]
+term = "rapid"
+translation = "hurtigsjakk"
+source = "https://no.wikipedia.org/wiki/Hurtigsjakk"
+
+[[terms]]
+term = "classical"
+translation = "klassisk"
+machine = true
+note = "No Wikipedia page; a group of time controls in New Game."
+
+[[terms]]
+term = "scoresheet"
+translation = "noteringsskjema"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "arbiter"
+translation = "dommer"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "rating"
+translation = "rating"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "grandmaster"
+translation = "stormester"
+source = "https://no.wikipedia.org/wiki/Stormester_i_sjakk"
+note = "Wikipedia's title is \"Stormester i sjakk\"."
+
+[[terms]]
+term = "International Master"
+translation = "internasjonal mester"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Woman International Master"
+translation = "internasjonal mester for kvinner"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "FIDE-mester for kvinner"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Chess960"
+translation = "Chess960"
+source = "https://no.wikipedia.org/wiki/Fischersjakk"
+note = "Wikipedia's title is \"Fischersjakk\"; Chess960 is the mode's name in the app."
+
+[[terms]]
+term = "correspondence chess"
+translation = "fjernsjakk"
+source = "https://no.wikipedia.org/wiki/Fjernsjakk"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "sjakkolympiade"
+source = "https://no.wikipedia.org/wiki/Sjakk-OL"
+note = "Wikipedia's title is \"Sjakk-OL\"."
+
+[[terms]]
+term = "touch-move rule"
+translation = "berørt brikke skal flyttes"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "capture"
+translation = "slå"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "tactics"
+translation = "taktikk"
+source = "https://no.wikipedia.org/wiki/Taktikk_(sjakk)"
+
+[[terms]]
+term = "strategy"
+translation = "strategi"
+source = "https://no.wikipedia.org/wiki/Strategi_(sjakk)"
+
+[[terms]]
+term = "sacrifice"
+translation = "offer"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "trap"
+translation = "felle"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "gambit"
+translation = "gambit"
+source = "https://no.wikipedia.org/wiki/Gambit"
+
+[[terms]]
+term = "King's Pawn"
+translation = "kongebonde"
+source = "https://no.wikipedia.org/wiki/Kongebondeåpning"
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "dronningbonde"
+source = "https://no.wikipedia.org/wiki/Dronningbondespill"
+
+[[terms]]
+term = "flank"
+translation = "flanke"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "starting position"
+translation = "utgangsstilling"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "vidunderbarn"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "{name} Variation"
+translation = "{name}varianten"
+machine = true
+note = "No Wikipedia page names it. Follows \"Tarraschforsvaret\": the name and the word joined, in the definite form; the rule keeps a multi-word name with spaces. For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Defense"
+translation = "{name}forsvaret"
+source = "https://no.wikipedia.org/wiki/Tarraschforsvaret"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "{name}gambit"
+source = "https://no.wikipedia.org/wiki/Benkögambit"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "{name}motgambit"
+machine = true
+note = "No Wikipedia page names it. Follows \"Benkögambit\". For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Attack"
+translation = "{name}angrepet"
+machine = true
+note = "No Wikipedia page names it. Follows \"Tarraschforsvaret\". For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "{name}motangrepet"
+machine = true
+note = "No Wikipedia page names it. Follows \"Tarraschforsvaret\". For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Opening"
+translation = "{name}åpningen"
+source = "https://no.wikipedia.org/wiki/Sleipneråpningen"
+note = "For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} System"
+translation = "{name}systemet"
+machine = true
+note = "No Wikipedia page names it. Follows \"Tarraschforsvaret\". For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Line"
+translation = "{name}varianten"
+machine = true
+note = "No Wikipedia page names it. A line is a variant in Norwegian (see \"line\"). For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Formation"
+translation = "{name}oppstillingen"
+machine = true
+note = "No Wikipedia page names it. Follows \"Tarraschforsvaret\". For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "{name} Trap"
+translation = "{name}fellen"
+machine = true
+note = "No Wikipedia page names it. Follows \"Tarraschforsvaret\". For opening names, segment by segment (brief §8); {name} is a proper name kept as it is."
+
+[[terms]]
+term = "Main Line"
+translation = "Hovedvariant"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8);"
+
+[[pieces]]
+piece = "K"
+letter = "K"
+source = "https://no.wikipedia.org/wiki/Sjakknotasjon"
+
+[[pieces]]
+piece = "Q"
+letter = "D"
+source = "https://no.wikipedia.org/wiki/Sjakknotasjon"
+
+[[pieces]]
+piece = "R"
+letter = "T"
+source = "https://no.wikipedia.org/wiki/Sjakknotasjon"
+
+[[pieces]]
+piece = "B"
+letter = "L"
+source = "https://no.wikipedia.org/wiki/Sjakknotasjon"
+
+[[pieces]]
+piece = "N"
+letter = "S"
+source = "https://no.wikipedia.org/wiki/Sjakknotasjon"
+
+[[pieces]]
+piece = "P"
+letter = "B"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The Norwegian article gives the pawn no letter; SAN never writes it: a pawn move is only its square."
