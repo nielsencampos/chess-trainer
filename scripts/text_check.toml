@@ -203,6 +203,9 @@ ru = [
     "OPREDELENIA",  # a style suggestion, not an error
 ]
 uk = []
+fa = [
+    "PERSIAN_WORD_REPEAT_BEGINNING_RULE",  # i18n strings are separate texts
+]
 
 [ignore]
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.

@@ -202,11 +202,11 @@ reviewed = false
 
 # Arabic: machine-made, unreviewed, right to left. Instructions in the masculine singular
 # imperative, as software in Arabic does. Digits stay Western (0-9), as on the board and in PGN.
+# LanguageTool's Arabic speller flags every Latin word, link and proper name: left out.
 [locales.ar]
 direction = "rtl"
 # Latin for the names the UI keeps (Stockfish, PGN, Chess960).
 scripts = ["latin", "arabic"]
-languagetool = "ar"
 vale = ["ChessTrainer", "Ar", "GlossaryAr", "UI"]
 reviewed = false
 
