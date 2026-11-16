@@ -45,7 +45,7 @@ Testing:
 - Book: uv run python -m catalog.validate
 - Spelling and text: uv run codespell; scripts/languagetool.sh --background && uv run python
   scripts/check_text.py (needs Java 17+); scripts/vale.sh
-- Engine: scripts/extract-stockfish.sh, then STOCKFISH_PATH=.cache/stockfish uv run pytest -m engine
+- Engine: scripts/extract-stockfish.sh (Linux) or python3 docker/fetch_stockfish.py desktop, then STOCKFISH_PATH=.cache/stockfish uv run pytest -m engine
 - Image: scripts/smoke.sh chess-trainer:local
 - Browser: while the project is in development the app's data is disposable, so rebuild and
   restart the app on port 8000 and test against it, with no separate container:

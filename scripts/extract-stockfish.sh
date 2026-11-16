@@ -3,6 +3,11 @@
 # Usage: scripts/extract-stockfish.sh [IMAGE]
 set -euo pipefail
 
+# The image's binary is built for Linux: on macOS or Windows it would not run.
+if [[ "$(uname -s)" != Linux ]]; then
+  echo "The image's Stockfish runs on Linux only; use: python3 docker/fetch_stockfish.py desktop" >&2
+  exit 1
+fi
 image="${1:-chess-trainer:local}"
 mkdir -p .cache
 container="$(docker create "$image")"
