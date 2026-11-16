@@ -2,9 +2,9 @@
 # Runs Vale with the project's style (.vale.ini) on the docs, the README and the UI strings.
 #
 # Downloads the pinned Vale release for this system into .cache/bin once, checking it against the
-# release's checksums. The UI strings and the README's pt-BR and es sections are exported to
-# .cache/vale first (scripts/check_text.py --export), so each gets the rules of its language, as
-# i18n/locales.toml lists them; a language without Vale styles there is skipped.
+# release's checksums. The UI strings are exported to .cache/vale first (scripts/check_text.py
+# --export), so each language gets its rules, as i18n/locales.toml lists them; a language without
+# Vale styles there is skipped. Each doc gets the rules of the language in its name (.vale.ini).
 #
 #   scripts/vale.sh
 set -euo pipefail
@@ -37,5 +37,5 @@ fi
 
 rm -rf .cache/vale
 uv run python scripts/check_text.py --export .cache/vale
-"$BIN" --config=.cache/vale/vale.ini --output=line docs/*.md HOW_TO_INSTALL*.md README.md .cache/vale/*.md
+"$BIN" --config=.cache/vale/vale.ini --output=line docs/*.md HOW_TO_INSTALL*.md README*.md .cache/vale/*.md
 echo "No style errors."
