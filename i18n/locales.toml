@@ -124,3 +124,31 @@ direction = "ltr"
 scripts = ["latin", "latin-ext", "vietnamese"]
 vale = ["ChessTrainer", "Vi", "GlossaryVi", "UI"]
 reviewed = false
+
+[locales.sv]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "sv"
+vale = ["ChessTrainer", "Sv", "GlossarySv", "UI"]
+reviewed = false
+
+[locales.da]
+direction = "ltr"
+scripts = ["latin"]
+languagetool = "da-DK"
+vale = ["ChessTrainer", "Da", "GlossaryDa", "UI"]
+reviewed = false
+
+[locales.nb]
+direction = "ltr"
+scripts = ["latin"]
+vale = ["ChessTrainer", "Nb", "GlossaryNb", "UI"]
+wikipedia = "no"
+reviewed = false
+
+[locales.fi]
+direction = "ltr"
+# "Azerbaidžanilainen": š and ž of loanwords and transliterated names are latin-ext.
+scripts = ["latin", "latin-ext"]
+vale = ["ChessTrainer", "Fi", "GlossaryFi", "UI"]
+reviewed = false

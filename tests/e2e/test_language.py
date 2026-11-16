@@ -18,17 +18,21 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
     expect(options).to_have_text(
         [
             "English (US)",
+            "Dansk",
             "Deutsch",
             "English (UK)",
             "Español (Latinoamérica)",
             "Español (España)",
+            "Suomi",
             "Français",
             "Bahasa Indonesia",
             "Italiano",
+            "Norsk bokmål",
             "Nederlands",
             "Polski",
             "Português (Brasil)",
             "Português (Portugal)",
+            "Svenska",
             "Türkçe",
             "Tiếng Việt",
         ]
