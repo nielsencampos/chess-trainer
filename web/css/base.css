@@ -123,6 +123,13 @@ select {
   inset-inline-end: calc(var(--movebar-width) - 4px);
 }
 
+/* Korean writes spaces between words, but a browser may break a line between any two Hangul
+   syllables; keep words whole, as Korean text is set (#36). Chinese and Japanese break between
+   characters, as they should. */
+:lang(ko) {
+  word-break: keep-all;
+}
+
 body.is-resizing {
   cursor: col-resize;
   user-select: none;

@@ -29,6 +29,8 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
             "हिन्दी",
             "Bahasa Indonesia",
             "Italiano",
+            "日本語",
+            "한국어",
             "Norsk bokmål",
             "Nederlands",
             "Polski",
@@ -39,6 +41,7 @@ def test_picker_lists_each_language_in_its_own_name(page: Page):
             "Türkçe",
             "Українська",
             "Tiếng Việt",
+            "中文（简体）",  # noqa: RUF001  (Chinese writes full-width parentheses)
         ]
     )
     expect(page.locator("#locale-picker")).to_have_value("en-US")
@@ -113,6 +116,39 @@ def test_hindi_loads_its_devanagari_font(page: Page):
         }"""
     )
     assert "Noto Sans Devanagari" in loaded
+
+
+@pytest.mark.parametrize(
+    ("locale", "tab", "font"),
+    [
+        ("zh-CN", "记录纸", "Noto Sans CJK SC"),
+        ("ja", "スコアシート", "Noto Sans CJK JP"),
+        ("ko", "기보지", "Noto Sans CJK KR"),
+    ],
+)
+def test_a_cjk_language_takes_its_system_font_chain(page: Page, locale: str, tab: str, font: str):
+    """CJK text takes the system fonts of its language, after the vendored Latin ones.
+
+    Han characters differ per language, so the chain follows the page's `lang` (brief §4.1).
+
+    Args:
+        page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
+        locale (str): The CJK locale.
+        tab (str): The Scoresheet menu entry in that language.
+        font (str): The Linux font of its chain.
+    """
+    page.goto("/")
+    page.locator("#locale-picker").select_option(locale)
+    expect(page.locator("html")).to_have_attribute("lang", locale)
+    expect(page.locator("#tab-scoresheet")).to_have_text(tab)
+    families = page.evaluate(
+        """() => [document.body, document.querySelector(".clock")]
+          .filter(Boolean).map((element) => getComputedStyle(element).fontFamily)"""
+    )
+    assert families, "no element to read the fonts from"
+    for family in families:
+        assert font in family, family
+    assert families[0].index("Familjen Grotesk") < families[0].index(font)
 
 
 def test_switching_language_is_kept_after_a_reload(page: Page):

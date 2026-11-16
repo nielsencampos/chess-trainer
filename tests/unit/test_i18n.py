@@ -24,6 +24,9 @@ PLURALS = {
     "uk": {"one", "few", "many", "other"},
     "id": {"other"},
     "vi": {"other"},
+    "zh-CN": {"other"},
+    "ja": {"other"},
+    "ko": {"other"},
 }
 
 

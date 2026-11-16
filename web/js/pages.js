@@ -34,6 +34,9 @@ export function localizeHelpImages() {
   }
 }
 
+/** Wikipedias with language variants, opened at the variant of the locale (`zh-cn`). */
+const VARIANT_WIKIPEDIAS = new Set(["zh"]);
+
 /**
  * Points each Wikipedia link of the About page at the article in the chosen language, falling
  * back to English and then to the other languages that have one, and keeps it following the
@@ -52,7 +55,12 @@ export function localizeWikiLinks() {
     localize(anchor, () => {
       const wanted = getLocale().split("-")[0].toLowerCase();
       const lang = [wanted, "en", ...Object.keys(titles)].find((code) => titles[code]) ?? "en";
-      const path = `${lang}.wikipedia.org/wiki/${(titles[lang] ?? "").replaceAll(" ", "_")}`;
+      // A Wikipedia that writes its language in more than one way (zh: Traditional and
+      // Simplified) shows the article in the locale's variant at its own path, as the
+      // registry's `wikipedia_variant` says for the opening names (zh.wikipedia.org/zh-cn/…).
+      const variant =
+        VARIANT_WIKIPEDIAS.has(lang) && lang === wanted ? getLocale().toLowerCase() : "wiki";
+      const path = `${lang}.wikipedia.org/${variant}/${(titles[lang] ?? "").replaceAll(" ", "_")}`;
       anchor.href = `https://${encodeURI(path)}`;
       anchor.textContent = path;
     });

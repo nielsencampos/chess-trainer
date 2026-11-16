@@ -175,3 +175,27 @@ direction = "ltr"
 scripts = ["latin", "devanagari"]
 vale = ["ChessTrainer", "Hi", "GlossaryHi", "UI"]
 reviewed = false
+
+[locales.zh-CN]
+direction = "ltr"
+# Latin for the names the UI keeps (Stockfish, PGN, Chess960); the CJK text uses the system's
+# fonts (brief §4.1). zh.wikipedia's titles mix Traditional and Simplified Chinese. LanguageTool's
+# Chinese rules misread the chess words "着" (a move) and "步" (a count of moves): left out.
+scripts = ["latin", "cjk"]
+vale = ["ChessTrainer", "ZhCN", "GlossaryZhCN", "UI"]
+wikipedia_variant = "zh-cn"
+reviewed = false
+
+[locales.ja]
+direction = "ltr"
+scripts = ["latin", "cjk"]
+languagetool = "ja-JP"
+vale = ["ChessTrainer", "Ja", "GlossaryJa", "UI"]
+reviewed = false
+
+[locales.ko]
+direction = "ltr"
+# LanguageTool has no Korean.
+scripts = ["latin", "cjk"]
+vale = ["ChessTrainer", "Ko", "GlossaryKo", "UI"]
+reviewed = false
