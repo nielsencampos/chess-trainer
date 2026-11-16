@@ -48,6 +48,11 @@
   border-radius: 8px;
 }
 
+/* Columns sized to their labels, so a long one ("Gespeicherte Partie") does not wrap. */
+.segmented.fit {
+  grid-auto-columns: auto;
+}
+
 .segmented label {
   position: relative;
   cursor: pointer;

@@ -3,7 +3,7 @@
 
 import { api } from "./api.js";
 import { getFormatLocale, localize, onLocaleChange, t } from "./i18n.js";
-import { openingName, savedGameDate, savedGameSearchText } from "./opening-names.js";
+import { openingName, savedGameDate, savedGameSearchText, setDetails } from "./opening-names.js";
 import { OpeningTree } from "./opening-tree.js";
 import { levelLabel } from "./levels.js";
 import { sanText } from "./notation.js";
@@ -105,7 +105,8 @@ export class SetupCard {
     const fromSelect = byId("deviate-from");
     for (const move of DEVIATE_FROM) fromSelect.add(new Option(String(move), String(move)));
     const chanceSelect = byId("deviate-chance");
-    for (const chance of DEVIATE_CHANCE) chanceSelect.add(new Option(`${chance}%`, String(chance)));
+    for (const chance of DEVIATE_CHANCE) chanceSelect.add(new Option("", String(chance)));
+    this.renderOptions(); // again, now that the chances are there to name
     byId("opt-deviate").checked = getPref("deviate", false);
     fromSelect.value = String(getPref("deviateFrom", 3));
     if (fromSelect.value === "") fromSelect.value = "3";
@@ -168,6 +169,9 @@ export class SetupCard {
     }
     const noClock = [...timeSelect.options].find((option) => option.value === this.timeControls.no_clock);
     if (noClock) noClock.text = t("setup.noClock");
+    // In the language's own form: 30 %, %30.
+    const percent = new Intl.NumberFormat(getFormatLocale(), { style: "percent" });
+    for (const option of byId("deviate-chance").options) option.text = percent.format(Number(option.value) / 100);
   }
 
   /**
@@ -406,12 +410,12 @@ export class SetupCard {
     const details = document.createElement("span");
     details.className = "variant-moves";
     const who = game.source === "imported" ? `${game.white} - ${game.black}` : t(`setup.${game.user_color}`);
-    details.textContent = [
+    setDetails(details, [
       savedGameDate(game, getFormatLocale(), false),
       who,
       t("saved.plies", { count: game.plies }),
       ...(game.chess960 ? [t("fromSaved.chess960")] : []),
-    ].join(" · ");
+    ]);
     text.append(name, details);
     label.append(box, text);
     return label;

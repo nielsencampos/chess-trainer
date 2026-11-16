@@ -5,7 +5,7 @@
 import { ApiError, api } from "./api.js";
 import { saveFile } from "./download.js";
 import { getFormatLocale, localize, onLocaleChange, t } from "./i18n.js";
-import { openingName, savedGameDate, savedGameSearchText } from "./opening-names.js";
+import { openingName, savedGameDate, savedGameSearchText, setDetails } from "./opening-names.js";
 import { showPage } from "./pages.js";
 
 /**
@@ -349,7 +349,8 @@ export class SavedGames {
     const details = document.createElement("span");
     details.className = "variant-moves";
     const imported = game.source === "imported";
-    details.textContent = (
+    setDetails(
+      details,
       imported
         ? [
             t("saved.imported"),
@@ -362,8 +363,8 @@ export class SavedGames {
             t(`setup.${game.user_color}`),
             game.time_control === "none" ? t("setup.noClock") : this.timeLabel(game.time_control),
             t("saved.plies", { count: game.plies }),
-          ]
-    ).join(" · ");
+          ],
+    );
     text.append(name, details);
 
     const result = document.createElement("span");

@@ -137,3 +137,73 @@ def test_clear_keeps_the_opening_tree_open(page: Page):
     page.locator("#clear-selection").click()
     expect(page.locator("#selected-total")).to_have_text("0 selected")
     expect(caro).to_have_attribute("open", "")
+
+
+def open_in(context, locale: str) -> Page:
+    """A page with the UI in a language.
+
+    Args:
+        context (BrowserContext): The browser context.
+        locale (str): The UI language.
+
+    Returns:
+        Page: The page, loaded.
+    """
+    page = context.new_page()
+    page.add_init_script(
+        f"localStorage.setItem('chess-trainer.prefs', JSON.stringify({{locale: '{locale}'}}))"
+    )
+    page.goto("/")
+    page.wait_for_function("(code) => document.documentElement.lang === code", arg=locale)
+    return page
+
+
+def test_persian_dates_are_gregorian(context):
+    """Persian shows dates in the Gregorian calendar, with Western digits, like every language.
+
+    Args:
+        context (BrowserContext): The browser context.
+    """
+    page = open_in(context, "fa")
+    name = f"Dated{uuid.uuid4().hex}"
+    import_pgn_quietly(page, DATED.format(name=name))
+    page.locator("#tab-saved").click()
+    page.locator("#saved-search").fill(name)
+    expect(page.locator(".saved-game", has_text=name)).to_contain_text("2024")
+
+
+def import_pgn_quietly(page: Page, text: str) -> None:
+    """Imports one game in any language, waiting for the list instead of the English summary.
+
+    Args:
+        page (Page): The page.
+        text (str): The PGN.
+    """
+    page.locator("#tab-import").click()
+    page.locator("#import-text").fill(text)
+    page.locator("#import-paste").click()
+    expect(page.locator("#import-summary")).not_to_be_empty()
+
+
+def test_the_bot_deviation_chance_is_written_as_the_language_writes_percents(context):
+    """Turkish puts the percent sign first; English after the number.
+
+    Args:
+        context (BrowserContext): The browser context.
+    """
+    page = open_in(context, "tr")
+    expect(page.locator("#deviate-chance option").first).to_have_text("%20")
+    page.locator("#locale-picker").select_option("en-US")
+    expect(page.locator("#deviate-chance option").first).to_have_text("20%")
+
+
+def test_the_new_game_modes_stay_on_one_line_in_german(context):
+    """A long mode name ("Gespeicherte Partie") does not wrap to a second line.
+
+    Args:
+        context (BrowserContext): The browser context.
+    """
+    page = open_in(context, "de")
+    spans = page.locator("#setup-card .segmented.fit span")
+    heights = {round(box["height"]) for box in (spans.nth(i).bounding_box() for i in range(3))}
+    assert len(heights) == 1, heights

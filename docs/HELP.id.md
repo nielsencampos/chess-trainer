@@ -19,7 +19,7 @@ Chess Trainer untuk berlatih: latih pembukaan Anda melawan bot yang memainkan li
 ## Mulai permainan
 
 - Pembukaan: pilih warna Anda dan centang pembukaan dan variasi yang ingin dilatih. Setiap variasi yang dicentang memiliki peluang yang sama untuk terpilih. Memainkan langkah dari variasi yang tidak Anda centang dihitung sebagai keluar dari teori.
-- Permainan tersimpan: latih lini dari permainan yang Anda mainkan atau impor, sehingga langkah-langkahnya diperiksa, atau terus bermain dari posisi mana pun di dalamnya.
+- Tersimpan: latih lini dari permainan yang Anda mainkan atau impor, sehingga langkah-langkahnya diperiksa, atau terus bermain dari posisi mana pun di dalamnya.
 - Chess960: acak posisi awal atau tempel FEN salah satu dari 960 posisi. Untuk rokade, klik raja lalu sebuah kotak di antara raja dan benteng, atau benteng itu sendiri.
 - Tingkat bot: rating di samping setiap tingkat bersifat nominal, pada skala Stockfish sendiri, dan belum diukur. Itu bukan rating Chess.com atau Lichess.
 - Kontrol waktu: pengaturan jam turnamen sungguhan, dari bullet sampai klasik, atau tanpa jam. Waktu respons bot adalah Manusiawi, yang memakai jamnya seperti manusia, atau Seketika.

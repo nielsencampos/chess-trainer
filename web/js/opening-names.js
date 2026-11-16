@@ -79,3 +79,21 @@ export function savedGameDate(game, locale, withTime) {
   if (game.source === "imported") return date.toLocaleDateString(locale, { timeZone: "UTC" });
   return withTime ? date.toLocaleString(locale) : date.toLocaleDateString(locale);
 }
+
+/**
+ * Writes a saved game's details: the parts joined by " · ", each isolated (`<bdi>`), so a date,
+ * the players' names or a count keep their own direction and the dots stay between them in a
+ * right-to-left language too.
+ * @param {HTMLElement} element  The details' element.
+ * @param {string[]} parts  The parts, in reading order.
+ * @returns {void}
+ */
+export function setDetails(element, parts) {
+  element.replaceChildren(
+    ...parts.flatMap((part, index) => {
+      const isolated = document.createElement("bdi");
+      isolated.textContent = part;
+      return index === 0 ? [isolated] : [" · ", isolated];
+    }),
+  );
+}

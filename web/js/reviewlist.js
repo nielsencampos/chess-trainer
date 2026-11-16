@@ -2,7 +2,7 @@
 // move (the site's classification icon, a symbol, the time it took), the comments and the side
 // variations, which are shown in full rows under the move they branch off.
 
-import { t } from "./i18n.js";
+import { getFormatLocale, t } from "./i18n.js";
 import { moveIcon } from "./icons.js";
 import { sanElement } from "./notation.js";
 
@@ -50,11 +50,19 @@ export function linkMoves(moves) {
 /**
  * Formats the time a move took.
  * @param {number} ms  Milliseconds.
- * @returns {string} Such as `4.2s`, `35s` or `2:05`.
+ * @returns {string} Such as `4.2s`, `35s` or `2:05`, in the language's number format (`4,2 s`).
  */
 function formatSpent(ms) {
-  if (ms < 10_000) return `${(ms / 1000).toFixed(1)}s`;
-  if (ms < 60_000) return `${Math.round(ms / 1000)}s`;
+  if (ms < 60_000) {
+    const digits = ms < 10_000 ? 1 : 0;
+    return new Intl.NumberFormat(getFormatLocale(), {
+      style: "unit",
+      unit: "second",
+      unitDisplay: "narrow",
+      minimumFractionDigits: digits,
+      maximumFractionDigits: digits,
+    }).format(digits ? ms / 1000 : Math.round(ms / 1000));
+  }
   const seconds = Math.round(ms / 1000);
   return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
 }
