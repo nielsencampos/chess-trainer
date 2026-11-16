@@ -28,9 +28,29 @@
   --target: rgba(20, 40, 20, 0.28);
   --check: rgba(214, 40, 30, 0.75);
 
-  --font-ui: "Familjen Grotesk", "Commissioner", "Noto Sans Devanagari", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", "Noto Sans Devanagari", ui-monospace, monospace;
+  /* The system's CJK font for the page's language (#36), after the vendored fonts, so Latin
+     letters and digits in a CJK line still come from Familjen Grotesk and JetBrains Mono. */
+  --font-cjk: system-ui;
+  --font-ui: "Familjen Grotesk", "Commissioner", "Noto Sans Devanagari", var(--font-cjk), system-ui,
+    sans-serif;
+  --font-mono: "JetBrains Mono", "Noto Sans Devanagari", var(--font-cjk), ui-monospace, monospace;
   --radius: 10px;
+}
+
+/* CJK fonts are tens of MB, so they are not vendored: each language gets a chain of the fonts
+   macOS, Windows and Linux ship, in that order (brief §4.1). Han characters are drawn differently
+   in each language, so the chain follows the page's `lang`, which i18n.js sets. */
+:root:lang(zh-CN) {
+  --font-cjk: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei",
+    "Noto Sans CJK SC", "Source Han Sans SC", "Noto Sans SC", "WenQuanYi Micro Hei";
+}
+:root:lang(ja) {
+  --font-cjk: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Meiryo UI", "Meiryo",
+    "Noto Sans CJK JP", "Source Han Sans JP", "Noto Sans JP", "IPAexGothic";
+}
+:root:lang(ko) {
+  --font-cjk: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", "Source Han Sans KR",
+    "Noto Sans KR", "NanumGothic";
 }
 
 @media (prefers-color-scheme: dark) {

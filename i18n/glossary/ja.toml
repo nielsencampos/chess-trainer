@@ -1,0 +1,539 @@
+# Chess glossary: Japanese (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
+# from the Japanese Wikipedia (`source`) or, when no page names it, `machine = true` with a `note`.
+# `avoid` lists the words the UI must not use for the term. The UI speaks in the polite です・ます
+# form and does not address the reader as "あなた". The Japanese Wikipedia writes opening names as
+# the English ones in katakana, their words joined by "・" ("フレンチ・ディフェンス"), proper names
+# too ("ナイドルフ・ヴァリエーション"), so no rule keeps an English proper name (`keep_names =
+# false`). Chess terms are the chess ones, not shogi's ("チェック", not "王手"). Digits stay Western
+# (0-9). Moves keep the English piece letters (K Q R B N), as en.wikipedia's table gives them (#36).
+
+# Proper names are written in katakana: a glossary rule never keeps an English one (brief §8).
+keep_names = false
+
+[[terms]]
+term = "chess"
+translation = "チェス"
+source = "https://ja.wikipedia.org/wiki/チェス"
+avoid = ["西洋将棋"]
+
+[[terms]]
+term = "piece"
+translation = "駒"
+source = "https://ja.wikipedia.org/wiki/駒_(チェス)"
+
+[[terms]]
+term = "king"
+translation = "キング"
+source = "https://ja.wikipedia.org/wiki/キング_(チェス)"
+avoid = ["王将", "玉将"]
+
+[[terms]]
+term = "queen"
+translation = "クイーン"
+source = "https://ja.wikipedia.org/wiki/クイーン_(チェス)"
+avoid = ["クィーン"]
+
+[[terms]]
+term = "rook"
+translation = "ルーク"
+source = "https://ja.wikipedia.org/wiki/ルーク"
+
+[[terms]]
+term = "pawn"
+translation = "ポーン"
+source = "https://ja.wikipedia.org/wiki/ポーン"
+
+[[terms]]
+term = "board"
+translation = "盤"
+source = "https://ja.wikipedia.org/wiki/チェスボード"
+note = "Short for \"チェス盤\", the article's other name."
+
+[[terms]]
+term = "square"
+translation = "マス"
+source = "https://ja.wikipedia.org/wiki/チェス"
+note = "The article's \"64マス\"."
+
+[[terms]]
+term = "White"
+translation = "白"
+source = "https://ja.wikipedia.org/wiki/チェス"
+
+[[terms]]
+term = "Black"
+translation = "黒"
+source = "https://ja.wikipedia.org/wiki/チェス"
+
+[[terms]]
+term = "game"
+translation = "対局"
+source = "https://ja.wikipedia.org/wiki/対局時計"
+note = "The word of \"対局時計\"; a game of chess is \"一局\"."
+
+[[terms]]
+term = "move"
+translation = "手"
+source = "https://ja.wikipedia.org/wiki/50手ルール"
+
+[[terms]]
+term = "ply"
+translation = "半手"
+machine = true
+note = "No Wikipedia page names it: one side's move."
+
+[[terms]]
+term = "premove"
+translation = "プレムーブ"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "take back"
+translation = "待った"
+machine = true
+note = "No Wikipedia page names it; the everyday word for taking a move back."
+
+[[terms]]
+term = "castling"
+translation = "キャスリング"
+source = "https://ja.wikipedia.org/wiki/キャスリング"
+
+[[terms]]
+term = "check"
+translation = "チェック"
+source = "https://ja.wikipedia.org/wiki/王手"
+note = "The article's name for it in chess; \"王手\" is the shogi term."
+avoid = ["王手"]
+
+[[terms]]
+term = "checkmate"
+translation = "チェックメイト"
+source = "https://ja.wikipedia.org/wiki/詰み"
+note = "The article's name for it in chess; \"詰み\" is the shogi term."
+
+[[terms]]
+term = "stalemate"
+translation = "ステイルメイト"
+source = "https://ja.wikipedia.org/wiki/ステイルメイト"
+avoid = ["ステールメイト"]
+
+[[terms]]
+term = "draw"
+translation = "引き分け"
+source = "https://ja.wikipedia.org/wiki/チェス"
+
+[[terms]]
+term = "resign"
+translation = "投了"
+source = "https://ja.wikipedia.org/wiki/投了"
+
+[[terms]]
+term = "insufficient material"
+translation = "戦力不足"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "3回同一局面"
+source = "https://ja.wikipedia.org/wiki/千日手"
+note = "The article's \"同一の局面が3回生じる\"; \"千日手\" is the shogi term."
+avoid = ["千日手"]
+
+[[terms]]
+term = "fivefold repetition"
+translation = "5回同一局面"
+machine = true
+note = "No Wikipedia page names it; the form of \"3回同一局面\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "50手ルール"
+source = "https://ja.wikipedia.org/wiki/50手ルール"
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "75手ルール"
+machine = true
+note = "No Wikipedia page names it; the form of \"50手ルール\"."
+
+[[terms]]
+term = "opening"
+translation = "オープニング"
+source = "https://ja.wikipedia.org/wiki/オープニング_(チェス)"
+
+[[terms]]
+term = "variation"
+translation = "ヴァリエーション"
+source = "https://ja.wikipedia.org/wiki/ナイドルフ・ヴァリエーション"
+avoid = ["バリエーション"]
+
+[[terms]]
+term = "line"
+translation = "ライン"
+machine = true
+note = "No Wikipedia page names it: a line of the book, transliterated."
+
+[[terms]]
+term = "theory"
+translation = "定跡"
+machine = true
+note = "No Wikipedia page names it in chess; the word of the book \"定跡と戦い方\" cited by ja.wikipedia."
+
+[[terms]]
+term = "book move"
+translation = "定跡手"
+machine = true
+note = "No Wikipedia page names it; the form of \"定跡\"."
+
+[[terms]]
+term = "deviation"
+translation = "定跡外れ"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "チェスエンジン"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "computer"
+translation = "コンピュータ"
+source = "https://ja.wikipedia.org/wiki/コンピュータ"
+
+[[terms]]
+term = "evaluation"
+translation = "評価値"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "analysis"
+translation = "解析"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "妙手"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "最善手"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "好手"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "緩手"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "悪手"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "見逃し"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "大悪手"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "time control"
+translation = "持ち時間"
+source = "https://ja.wikipedia.org/wiki/持ち時間"
+
+[[terms]]
+term = "chess clock"
+translation = "対局時計"
+source = "https://ja.wikipedia.org/wiki/対局時計"
+
+[[terms]]
+term = "increment"
+translation = "加算時間"
+machine = true
+note = "No Wikipedia page names it: the seconds added after each move."
+
+[[terms]]
+term = "delay"
+translation = "ディレイ"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "bullet"
+translation = "バレット"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "blitz"
+translation = "ブリッツ"
+source = "https://ja.wikipedia.org/wiki/早指しチェス"
+
+[[terms]]
+term = "rapid"
+translation = "ラピッド"
+source = "https://ja.wikipedia.org/wiki/早指しチェス"
+
+[[terms]]
+term = "classical"
+translation = "クラシカル"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "scoresheet"
+translation = "スコアシート"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "arbiter"
+translation = "アービター"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "rating"
+translation = "レーティング"
+source = "https://ja.wikipedia.org/wiki/イロレーティング"
+
+[[terms]]
+term = "grandmaster"
+translation = "グランドマスター"
+source = "https://ja.wikipedia.org/wiki/グランドマスター_(チェス)"
+
+[[terms]]
+term = "International Master"
+translation = "インターナショナルマスター"
+source = "https://ja.wikipedia.org/wiki/チェス"
+note = "The article's table of titles."
+
+[[terms]]
+term = "Woman International Master"
+translation = "女性インターナショナルマスター"
+machine = true
+note = "No Wikipedia page names it; the form of \"インターナショナルマスター\"."
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "女性FIDEマスター"
+machine = true
+note = "No Wikipedia page names it; the form of the article's \"FIDEマスター\"."
+
+[[terms]]
+term = "Chess960"
+translation = "チェス960"
+source = "https://ja.wikipedia.org/wiki/チェス960"
+
+[[terms]]
+term = "correspondence chess"
+translation = "通信チェス"
+source = "https://ja.wikipedia.org/wiki/通信チェス"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "チェス・オリンピアード"
+source = "https://ja.wikipedia.org/wiki/チェス・オリンピアード"
+
+[[terms]]
+term = "touch-move rule"
+translation = "タッチムーブ"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "capture"
+translation = "取る"
+source = "https://ja.wikipedia.org/wiki/チェス"
+note = "The article's verb: \"敵の駒を取った駒\"."
+
+[[terms]]
+term = "tactics"
+translation = "戦術"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "strategy"
+translation = "戦略"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "sacrifice"
+translation = "サクリファイス"
+source = "https://ja.wikipedia.org/wiki/サクリファイス_(チェス)"
+
+[[terms]]
+term = "trap"
+translation = "トラップ"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "gambit"
+translation = "ギャンビット"
+source = "https://ja.wikipedia.org/wiki/ギャンビット"
+
+[[terms]]
+term = "King's Pawn"
+translation = "キングズ・ポーン"
+machine = true
+note = "No Wikipedia page names it; the form of \"キングズ・ギャンビット\"."
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "クイーンズ・ポーン"
+machine = true
+note = "No Wikipedia page names it; the form of \"クイーンズ・ギャンビット\"."
+
+[[terms]]
+term = "flank"
+translation = "フランク"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "starting position"
+translation = "初期配置"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "チェスの神童"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "{name} Variation"
+translation = "{name}・ヴァリエーション"
+source = "https://ja.wikipedia.org/wiki/ナイドルフ・ヴァリエーション"
+note = "The article's \"ナイドルフ・ヴァリエーション\". For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Defense"
+translation = "{name}・ディフェンス"
+source = "https://ja.wikipedia.org/wiki/フレンチ・ディフェンス"
+note = "The article's \"フレンチ・ディフェンス\". For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "{name}・ギャンビット"
+source = "https://ja.wikipedia.org/wiki/キングズ・ギャンビット"
+note = "The article's \"キングズ・ギャンビット\". For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "{name}・カウンターギャンビット"
+machine = true
+note = "No Wikipedia page names it; the form of \"ギャンビット\". For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Attack"
+translation = "{name}・アタック"
+source = "https://ja.wikipedia.org/wiki/キングズ・インディアン・アタック"
+note = "The article's \"キングズ・インディアン・アタック\". For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "{name}・カウンターアタック"
+machine = true
+note = "No Wikipedia page names it; the form of \"アタック\". For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Opening"
+translation = "{name}・オープニング"
+source = "https://ja.wikipedia.org/wiki/バード・オープニング"
+note = "The article's \"バード・オープニング\". For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} System"
+translation = "{name}・システム"
+source = "https://ja.wikipedia.org/wiki/ロンドンシステム"
+note = "The article's \"ロンドンシステム\", with the \"・\" of the other names. For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Line"
+translation = "{name}・ライン"
+machine = true
+note = "No Wikipedia page names it; transliterated. For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Formation"
+translation = "{name}・フォーメーション"
+machine = true
+note = "No Wikipedia page names it; transliterated. For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Trap"
+translation = "{name}・トラップ"
+machine = true
+note = "No Wikipedia page names it; transliterated. For opening names, segment by segment (brief §8); {name} is the proper name in katakana (\"ナイドルフ\"), its words joined by \"・\". keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "Main Line"
+translation = "メインライン"
+machine = true
+note = "No Wikipedia page names it; transliterated. For opening names, segment by segment (brief §8)."
+
+# Piece letters for the "local letters" notation (#53): the English ones, so "local
+# letters" shows what "English letters" does. PGN and stored moves stay English.
+
+[[pieces]]
+piece = "K"
+letter = "K"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's letter for Japanese: the English initial, with the katakana name (キング, クイーン, ルーク, ビショップ, ナイト, ポーン). The Japanese Wikipedia has no algebraic notation article."
+
+[[pieces]]
+piece = "Q"
+letter = "Q"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's letter for Japanese: the English initial, with the katakana name (キング, クイーン, ルーク, ビショップ, ナイト, ポーン). The Japanese Wikipedia has no algebraic notation article."
+
+[[pieces]]
+piece = "R"
+letter = "R"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's letter for Japanese: the English initial, with the katakana name (キング, クイーン, ルーク, ビショップ, ナイト, ポーン). The Japanese Wikipedia has no algebraic notation article."
+
+[[pieces]]
+piece = "B"
+letter = "B"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's letter for Japanese: the English initial, with the katakana name (キング, クイーン, ルーク, ビショップ, ナイト, ポーン). The Japanese Wikipedia has no algebraic notation article."
+
+[[pieces]]
+piece = "N"
+letter = "N"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's letter for Japanese: the English initial, with the katakana name (キング, クイーン, ルーク, ビショップ, ナイト, ポーン). The Japanese Wikipedia has no algebraic notation article."
+
+[[pieces]]
+piece = "P"
+letter = "P"
+source = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Piece_names_in_various_languages"
+note = "The table's letter for Japanese: the English initial, with the katakana name (キング, クイーン, ルーク, ビショップ, ナイト, ポーン). The Japanese Wikipedia has no algebraic notation article. SAN never writes a pawn letter."

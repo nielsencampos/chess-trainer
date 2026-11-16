@@ -7,6 +7,8 @@ all = [
     # The product, its tools and the systems it runs on.
     "Chess", "Trainer", "Stockfish", "DuckDB", "FastAPI", "Uvicorn", "PyInstaller", "pywebview", "codespell", "glibc",
     "platformdirs", "chessops", "JSDoc", "pytest", "uv", "Familjen", "Grotesk", "Noto", "SmartScreen",
+    # The system CJK fonts (brief §4.1).
+    "PingFang", "YaHei", "Hiragino", "Yu", "Meiryo", "Malgun",
     "WebView2", "Safari", "Compose", "Fontsource", "README", "HOW_TO_INSTALL", "Releases", "Assets", "Runtime",
     "arm64", "amd64", "zip", "Merida", "Lichess", "Chessmaster", "SNES", "CBX",
     # Chess terms and abbreviations.
@@ -25,6 +27,7 @@ all = [
     # The language links at the top of each document.
     "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch", "Français", "Italiano",
     "Türkçe", "Polski", "Nederlands", "Bahasa", "Indonesia", "Tiếng", "Việt", "Svenska", "Dansk", "Norsk", "bokmål", "Suomi", "Русский", "Українська",
+    "日本語", "한국어",
 ]
 en-US = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",

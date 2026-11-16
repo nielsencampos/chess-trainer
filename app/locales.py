@@ -14,7 +14,15 @@ DEFAULT_LOCALE = "en-US"
 REGISTRY_FILE = Path(__file__).parent.parent / "i18n" / "locales.toml"
 DIRECTIONS = ("ltr", "rtl")
 SCRIPTS = ("latin", "latin-ext", "vietnamese", "cyrillic", "devanagari", "cjk", "arabic", "hebrew")
-FIELDS = {"direction", "scripts", "languagetool", "vale", "wikipedia", "reviewed"}
+FIELDS = {
+    "direction",
+    "scripts",
+    "languagetool",
+    "vale",
+    "wikipedia",
+    "wikipedia_variant",
+    "reviewed",
+}
 
 
 @dataclass(frozen=True)
@@ -30,6 +38,9 @@ class Locale:
         reviewed (bool): True when the author reviews it.
         wikipedia (str): Its Wikipedia's language code, for the opening names (`pt` for
             pt.wikipedia.org); by default the code's first part, lowercase.
+        wikipedia_variant (str | None): The variant its Wikipedia shows titles in, for a
+            Wikipedia that writes a language in more than one way (`zh-cn`, Simplified Chinese
+            of the Chinese Wikipedia); None takes the titles as they are.
     """
 
     code: str
@@ -39,6 +50,7 @@ class Locale:
     vale: tuple[str, ...]
     reviewed: bool
     wikipedia: str
+    wikipedia_variant: str | None = None
 
 
 def load_locales(path: Path = REGISTRY_FILE) -> dict[str, Locale]:
@@ -75,6 +87,11 @@ def load_locales(path: Path = REGISTRY_FILE) -> dict[str, Locale]:
         wikipedia = entry.get("wikipedia", code.split("-")[0].lower())
         if not isinstance(wikipedia, str) or not re.fullmatch(r"[a-z][a-z0-9-]*", wikipedia):
             raise ValueError(f"{where}: wikipedia must be a Wikipedia language code, or left out")
+        variant = entry.get("wikipedia_variant")
+        if variant is not None and (
+            not isinstance(variant, str) or not re.fullmatch(r"[a-z]+(-[a-z]+)*", variant)
+        ):
+            raise ValueError(f"{where}: wikipedia_variant must be a variant code, or left out")
         if not isinstance(entry.get("reviewed"), bool):
             raise ValueError(f"{where}: reviewed must be true or false")
         locales[code] = Locale(
@@ -85,6 +102,7 @@ def load_locales(path: Path = REGISTRY_FILE) -> dict[str, Locale]:
             vale=tuple(vale),
             reviewed=entry["reviewed"],
             wikipedia=wikipedia,
+            wikipedia_variant=variant,
         )
     if DEFAULT_LOCALE not in locales:
         raise ValueError(f"{path}: the fallback locale {DEFAULT_LOCALE!r} is missing")
