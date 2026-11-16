@@ -1,0 +1,11 @@
+# fi speaks to the reader as "sinä", never the formal "te" and its forms.
+extends: existence
+message: "Use 'sinä' as the form of address, not '%s'."
+level: error
+ignorecase: true
+tokens:
+  - te
+  - teidän
+  - teitä
+  - teille
+  - teillä

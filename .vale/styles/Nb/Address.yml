@@ -1,0 +1,10 @@
+# nb speaks to the reader as "du", never the formal "De", "Dem" or "Deres" (mid-sentence: at the
+# start of a sentence they are "they", "them" and "their").
+extends: existence
+message: "Use 'du' as the form of address, not '%s'."
+level: error
+ignorecase: false
+tokens:
+  - (?<=[\p{Ll},] )De
+  - (?<=[\p{Ll},] )Dem
+  - (?<=[\p{Ll},] )Deres
