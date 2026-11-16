@@ -21,7 +21,7 @@ if [[ ! -x "$BIN" ]] || ! "$BIN" --version | grep -q " $VERSION$"; then
     Linux-aarch64 | Linux-arm64) asset="Linux_arm64.tar.gz" ;;
     Darwin-x86_64) asset="macOS_64-bit.tar.gz" ;;
     Darwin-arm64) asset="macOS_arm64.tar.gz" ;;
-    *) echo "No Vale release for $(uname -s) $(uname -m)" >&2; exit 1 ;;
+    *) echo "No Vale release for $(uname -s) $(uname -m) here; on Windows, run this in WSL" >&2; exit 1 ;;
   esac
   tmp="$(mktemp -d)"
   trap 'rm -rf "$tmp"' EXIT

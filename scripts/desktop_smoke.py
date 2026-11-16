@@ -1,4 +1,7 @@
-"""Smoke check of a desktop build: start it, ask the health endpoint, check it stays up, close it.
+"""Smoke check of a desktop build: it serves, stays up and its window shows the app.
+
+Starts it, asks the health endpoint, checks it stays up and that its window left the starting
+page for the app (a line in the app's log), then closes it.
 
 Usage: python scripts/desktop_smoke.py EXECUTABLE
 
@@ -40,9 +43,38 @@ def health() -> dict | None:
         return None
 
 
+SHOWN = "the window shows the app"  # logged by desktop/launcher.py after loading the app's page
+
+
+def log_path() -> Path:
+    """The app's log file on this system.
+
+    Returns:
+        Path: The file, which may not exist yet.
+    """
+    return Path(os.path.expanduser(LOGS.get(sys.platform, "")))
+
+
+def log_since(offset: int) -> str:
+    """The app's log written after a point.
+
+    Args:
+        offset (int): The log's size in bytes at that point.
+
+    Returns:
+        str: The text, empty if there is no log.
+    """
+    log = log_path()
+    if not log.is_file():
+        return ""
+    with log.open("rb") as file:
+        file.seek(offset)
+        return file.read().decode("utf-8", errors="replace")
+
+
 def print_log() -> None:
     """Prints the end of the app's log, if there is one."""
-    log = Path(os.path.expanduser(LOGS.get(sys.platform, "")))
+    log = log_path()
     if log.is_file():
         print(f"--- {log} ---")
         print("\n".join(log.read_text(encoding="utf-8", errors="replace").splitlines()[-60:]))
@@ -60,6 +92,8 @@ def main(executable: str) -> int:
     if health() is not None:
         print(f"something already answers on {URL}")
         return 1
+    log = log_path()
+    offset = log.stat().st_size if log.is_file() else 0
     process = subprocess.Popen([executable])
     try:
         deadline = time.monotonic() + START_TIMEOUT_S
@@ -86,7 +120,11 @@ def main(executable: str) -> int:
             print(f"the app exited with code {process.returncode} after serving")
             print_log()
             return 1
-        print("ok: the app serves and stays up")
+        if SHOWN not in log_since(offset):
+            print("the window did not leave the starting page for the app")
+            print_log()
+            return 1
+        print("ok: the app serves, stays up and its window shows it")
         return 0
     finally:
         if process.poll() is None:

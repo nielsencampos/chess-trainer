@@ -5,8 +5,9 @@
 # Usage: scripts/tag_matches_version.sh v1.0.0
 set -euo pipefail
 
-app=$(sed -n 's/^__version__ = "\(.*\)"$/\1/p' app/__init__.py)
-project=$(sed -n 's/^version = "\(.*\)"$/\1/p' pyproject.toml)
+# tr: Git on Windows may check the files out with CRLF line ends, which `"$` would not match.
+app=$(tr -d '\r' < app/__init__.py | sed -n 's/^__version__ = "\(.*\)"$/\1/p')
+project=$(tr -d '\r' < pyproject.toml | sed -n 's/^version = "\(.*\)"$/\1/p')
 tag=${1#v}
 tag=${tag%%-*}
 if [[ "$app" != "$tag" || "$project" != "$tag" ]]; then

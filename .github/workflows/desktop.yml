@@ -2,8 +2,11 @@ name: Desktop
 
 # Builds the desktop app on Linux, Windows and macOS (Apple Silicon and Intel) and checks that
 # each build starts. On a version tag (v1.2.3, or v1.2.3-rc1 for a prerelease) it uploads the
-# packages to a draft GitHub Release, which is published by hand.
+# packages to a draft GitHub Release, which is published by hand. Weekly, like weekly.yml, it
+# builds with the newest Stockfish release, so a renamed release asset is caught before a tag.
 on:
+  schedule:
+    - cron: "0 6 * * 1"
   push:
     branches: [main]
     tags: ["v*"]
@@ -16,6 +19,8 @@ on:
       # What the spec bundles or reads: a move or rename there breaks the package.
       - app/__init__.py
       - app/config.py
+      - app/locales.py  # the launcher imports it, and app.main, before the window shows the app
+      - app/main.py
       - app/db/**
       - i18n/locales.toml
       - catalog/**

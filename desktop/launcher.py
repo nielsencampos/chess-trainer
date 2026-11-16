@@ -185,6 +185,8 @@ def main() -> None:
     log = data_dir / f"{APP_NAME}.log"
     linux = sys.platform == "linux"
     started: dict = {}  # the server and its thread, when this launch started them
+    closed = threading.Event()  # the window closed, perhaps while the server was still starting
+    booted = threading.Event()  # boot() is done, so `started` is final
 
     def boot(window: webview.Window) -> None:
         """Starts the server while the window says so, then shows the app or what failed.
@@ -201,16 +203,24 @@ def main() -> None:
         try:
             if not running_here(port):
                 started["server"], started["thread"] = start_server(port)
+            if closed.is_set():
+                return  # closed while starting: main() stops the server
+            window.load_url(f"http://{HOST}:{port}/")
+            if linux:
+                from desktop.qt_window import connect_hooks
+
+                connect_hooks(window)
+            logging.info("the window shows the app")  # scripts/desktop_smoke.py waits for this
         except LaunchError:
             # A windowed build has no console: say so in the window, and log the details.
             logging.exception("the app could not start")
-            window.load_html(message_page("desktop.launchError", port, log))
-            return
-        window.load_url(f"http://{HOST}:{port}/")
-        if linux:
-            from desktop.qt_window import connect_hooks
-
-            connect_hooks(window)
+            if not closed.is_set():
+                window.load_html(message_page("desktop.launchError", port, log))
+        except Exception:
+            # The window closed between the check and the call. Logged, as there is no console.
+            logging.exception("the window could not show the app")
+        finally:
+            booted.set()
 
     # On Linux our own Qt handlers save downloads and print (desktop/qt_window.py).
     webview.settings["ALLOW_DOWNLOADS"] = not linux
@@ -236,6 +246,8 @@ def main() -> None:
         # (System.Drawing.Icon reads .ico only); macOS takes it from the .app.
         icon=str(BUNDLE / "desktop" / "icon.png") if linux else None,
     )
+    closed.set()
+    booted.wait()  # a first start may still be loading the book; then it stops cleanly
     if "server" in started:
         started["server"].should_exit = True  # the lifespan stops Stockfish, closes the database
         started["thread"].join(10)

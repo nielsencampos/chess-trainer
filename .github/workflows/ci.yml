@@ -88,8 +88,10 @@ jobs:
         run: |
           uv run playwright install --with-deps chromium
           docker run -d --name app -p 127.0.0.1:8000:8000 chess-trainer:local
-          for _ in $(seq 1 30); do
-            curl -fsS http://127.0.0.1:8000/api/health && break
+          # The first start loads the book into a new database (about 30 s on arm64; smoke.sh).
+          for _ in $(seq 1 120); do
+            curl -fsS http://127.0.0.1:8000/api/health > /dev/null && break
             sleep 1
           done
+          curl -fsS http://127.0.0.1:8000/api/health > /dev/null  # fails the step if not ready
           E2E_BASE_URL=http://127.0.0.1:8000 uv run pytest -m e2e
