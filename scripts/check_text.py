@@ -65,7 +65,7 @@ class Text:
 
     Attributes:
         where: The file, or the file and the i18n key, for the report.
-        lang: The app's locale code (`en`, `pt-BR`, `es`).
+        lang: The app's locale code (`en-US`, `pt-BR`, `es-419`).
         parts: The text as chunks, in order.
         first_line: The file line the text starts on.
         keys: For an i18n file, each string's key and its offset in the text.
@@ -177,6 +177,11 @@ def book_words() -> set[str]:
     words: set[str] = set()
 
     def walk(node: object) -> None:
+        """Adds the words of every `names` object under a node.
+
+        Args:
+            node: A parsed JSON value.
+        """
         if isinstance(node, dict):
             for key, value in node.items():
                 if key == "names" and isinstance(value, dict):

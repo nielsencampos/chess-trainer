@@ -7,7 +7,6 @@ recorded yet.
 Usage: uv run python -m catalog.validate [OPENINGS_DIR]
 """
 
-import json
 import sys
 from pathlib import Path
 
@@ -66,13 +65,15 @@ def name_coverage(files: list[OpeningFile]) -> dict[str, dict[str, tuple[int, in
     Returns:
         dict[str, dict[str, tuple[int, int]]]: Locale -> kind -> (named, total).
     """
+    # One subgroup per family and English name, as the name sources count them: two families can
+    # have a subgroup of the same name.
     subgroups = {
-        json.dumps(line.subgroup, sort_keys=True)
+        (opening_file.family_id, line.subgroup[DEFAULT_LOCALE]): line.subgroup
         for opening_file in files
         for line in opening_file.lines
         if line.subgroup
     }
-    subgroup_names = [json.loads(item) for item in subgroups]
+    subgroup_names = list(subgroups.values())
     line_names = [line.names for opening_file in files for line in opening_file.lines]
     family_names = [opening_file.names for opening_file in files]
     return {

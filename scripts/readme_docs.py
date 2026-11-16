@@ -22,7 +22,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from app.locales import DEFAULT_LOCALE  # noqa: E402  (after the path to the repository)
-from scripts.help_docs import FIX_URL, LOCALES, _strings, doc_path, unreviewed_notice  # noqa: E402
+from scripts.help_docs import (  # noqa: E402
+    FIX_URL,
+    LOCALES,
+    doc_path,
+    language_links,
+    unreviewed_notice,
+)
 
 SOURCE = ROOT / "i18n" / "docs"
 DOCS = ("README", "HOW_TO_INSTALL")
@@ -108,11 +114,7 @@ def _languages(doc: str, locale: str) -> str:
     Returns:
         str: The links, separated by dots.
     """
-    return " · ".join(
-        f"[{_strings(code)['locale.name']}]({path_of(doc, code).name})"
-        for code in LOCALES
-        if code != locale
-    )
+    return language_links(locale, lambda code: path_of(doc, code))
 
 
 def render(doc: str, locale: str) -> str:

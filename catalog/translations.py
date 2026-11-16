@@ -26,7 +26,6 @@ from app.locales import DEFAULT_LOCALE
 ROOT = Path(__file__).parent.parent
 GLOSSARY_DIR = ROOT / "i18n" / "glossary"
 NAMES_DIR = ROOT / "i18n" / "names"
-# A page of any language's Wikipedia, or a Wikidata item.
 # A Wikipedia article, at /wiki/ or at a variant's path (zh.wikipedia.org/zh-cn/…), or a Wikidata
 # item.
 SOURCE_URL = re.compile(
@@ -54,7 +53,7 @@ class Term:
     """One row of a glossary.
 
     Attributes:
-        term (str): The English term, as in the `en` glossary.
+        term (str): The English term, as in the `en-US` glossary.
         translation (str): The term in the glossary's language.
         origin (str): `source` or `machine`.
         source (str | None): The Wikipedia or Wikidata URL, for `source`.

@@ -2,7 +2,7 @@
 
 Direction, scripts, LanguageTool code, Vale styles, Wikipedia language and whether the
 author reviews it are parameters here, so adding a language is data, not code. The fallback
-is always `en`.
+is always `en-US`.
 """
 
 import re
@@ -64,7 +64,7 @@ def load_locales(path: Path = REGISTRY_FILE) -> dict[str, Locale]:
 
     Raises:
         ValueError: A table has an unknown or missing field, or a value that is not allowed,
-            or `en` is missing.
+            or `en-US` is missing.
     """
     with path.open("rb") as handle:
         raw = tomllib.load(handle).get("locales", {})

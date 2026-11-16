@@ -10,6 +10,7 @@ strings; a test fails while the files are out of date.
 
 import json
 import sys
+from collections.abc import Callable
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import quote
@@ -131,6 +132,23 @@ def _strings(locale: str) -> dict[str, str]:
     return {**english, **own}
 
 
+def language_links(locale: str, path_of: Callable[[str], Path]) -> str:
+    """The links to the same doc in the other languages, each named in its own language.
+
+    Args:
+        locale (str): The language of the doc being written.
+        path_of (Callable[[str], Path]): The doc's file in a language.
+
+    Returns:
+        str: The links, separated by dots, in the registry's order.
+    """
+    return " · ".join(
+        f"[{_strings(code)['locale.name']}]({path_of(code).name})"
+        for code in LOCALES
+        if code != locale
+    )
+
+
 def _other_languages(locale: str, page: str) -> str:
     """The links to the same page in the other languages.
 
@@ -141,10 +159,7 @@ def _other_languages(locale: str, page: str) -> str:
     Returns:
         str: The links, separated by dots.
     """
-    names = {code: _strings(code)["locale.name"] for code in LOCALES}
-    return " · ".join(
-        f"[{names[code]}]({doc_path(code, page).name})" for code in LOCALES if code != locale
-    )
+    return language_links(locale, lambda code: doc_path(code, page))
 
 
 def unreviewed_notice(locale: str) -> list[str]:
