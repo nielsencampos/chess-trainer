@@ -10,10 +10,13 @@ from app.locales import DEFAULT_LOCALE, load_locales
 from catalog.translations import (
     GLOSSARY_DIR,
     NAMES_DIR,
+    PIECES,
+    ROOT,
     TranslationError,
     glossary_problems,
     load_glossary,
     load_name_sources,
+    load_piece_letters,
     localized_names,
     name_origins,
     name_source_problems,
@@ -303,3 +306,90 @@ def test_validate_reports_the_origins_per_locale(tmp_path):
         line.startswith("INVALID") and "no-such-family" in line
         for line in translation_report(BOOK, tmp_path)
     )
+
+
+# The Russian piece letters, the king with two: escaped, as they look like Latin letters.
+RUSSIAN = "\u041a\u0440 \u0424 \u041b \u0421 \u041a \u041f"
+PIECE_SOURCE = "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)"
+
+
+def pieces(letters: str, **extra: str) -> str:
+    """Builds the `[[pieces]]` rows of a glossary.
+
+    Args:
+        letters (str): The letters of K, Q, R, B, N and P, separated by spaces.
+        **extra (str): Raw text appended to the first row.
+
+    Returns:
+        str: The rows.
+    """
+    rows = []
+    for index, (piece, letter) in enumerate(zip(PIECES, letters.split(), strict=True)):
+        row = f'[[pieces]]\npiece = "{piece}"\nletter = "{letter}"\nsource = "{PIECE_SOURCE}"\n'
+        rows.append(row + (extra.get("first", "") if index == 0 else ""))
+    return "".join(rows)
+
+
+def test_every_glossary_has_the_piece_letters_of_its_language():
+    """Every glossary has a letter for each piece; spot-check pt-BR and de against Wikipedia."""
+    for path in GLOSSARY_DIR.glob("*.toml"):
+        assert list(load_piece_letters(path)) == list(PIECES), path.name
+    assert "".join(load_piece_letters(GLOSSARY_DIR / "pt-BR.toml").values()) == "RDTBCP"
+    assert "".join(load_piece_letters(GLOSSARY_DIR / "de.toml").values()) == "KDTLSB"
+
+
+def test_piece_letters_may_have_more_than_one_character(tmp_path):
+    """A multi-letter piece (the Russian king) loads.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    path = write(tmp_path / "pt-BR.toml", pieces(RUSSIAN))
+    assert load_piece_letters(path)["K"] == RUSSIAN.split()[0]
+
+
+def test_a_glossary_without_piece_letters_has_none(tmp_path):
+    """No `[[pieces]]` table means English letters on screen.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+    """
+    path = write(
+        tmp_path / "pt-BR.toml", glossary(['term = "check"\ntranslation = "xeque"\nmachine = true'])
+    )
+    assert load_piece_letters(path) == {}
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        pieces("R D T B C P").replace('piece = "P"', 'piece = "X"'),  # not a piece
+        pieces("R D T B C P").replace('piece = "P"', 'piece = "K"'),  # K twice
+        pieces("R D T B C P").split('[[pieces]]\npiece = "P"')[0],  # P missing
+        pieces("R D T B C P").replace('letter = "C"', 'letter = "C C"'),  # a space
+        pieces("R D T B C P", first="machine = true\n"),  # two origins
+        pieces("R D T B C P", first='color = "white"\n'),  # unknown field
+    ],
+)
+def test_bad_piece_letters_fail(tmp_path, text):
+    """A bad `[[pieces]]` table is refused.
+
+    Args:
+        tmp_path (Path): A temporary folder.
+        text (str): The table.
+    """
+    with pytest.raises(TranslationError):
+        load_piece_letters(write(tmp_path / "pt-BR.toml", text))
+
+
+@pytest.mark.parametrize("path", sorted(GLOSSARY_DIR.glob("*.toml")), ids=lambda path: path.stem)
+def test_the_ui_file_has_the_glossary_piece_letters(path):
+    """The browser reads piece letters from the UI file (`notation.pieces`): as in the glossary.
+
+    Args:
+        path (Path): A glossary.
+    """
+    web = ROOT / "web" / "i18n"
+    strings = json.loads((web / f"{DEFAULT_LOCALE}.json").read_text(encoding="utf-8"))
+    strings |= json.loads((web / f"{path.stem}.json").read_text(encoding="utf-8"))
+    assert strings["notation.pieces"].split() == list(load_piece_letters(path).values())
