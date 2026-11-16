@@ -5,7 +5,7 @@
 import { ApiError, api } from "./api.js";
 import { saveFile } from "./download.js";
 import { getFormatLocale, localize, onLocaleChange, t } from "./i18n.js";
-import { openingName, openingSearchText } from "./opening-names.js";
+import { openingName, savedGameDate, savedGameSearchText } from "./opening-names.js";
 import { showPage } from "./pages.js";
 
 /**
@@ -255,11 +255,14 @@ export class SavedGames {
       (game) =>
         (!color || game.user_color === color) &&
         (!result || game.result === result) &&
-        (!query || openingSearchText(game).includes(query)),
+        (!query || savedGameSearchText(game).includes(query)),
     );
   }
 
-  /** Draws the list, the select-all box, the count and the buttons. */
+  /**
+   * Draws the list, the select-all box, the count and the buttons.
+   * @returns {void}
+   */
   render() {
     const visible = this.visibleGames();
     byId("saved-list").replaceChildren(...visible.map((game) => this.row(game)));
@@ -277,7 +280,10 @@ export class SavedGames {
     this.resetDelete();
   }
 
-  /** Deleting needs a second click within 3 s, like resigning; it cannot be undone. */
+  /**
+   * Deleting needs a second click within 3 s, like resigning; it cannot be undone.
+   * @returns {void}
+   */
   onDeleteClick() {
     const button = byId("saved-delete");
     if (!button.classList.contains("confirming")) {
@@ -289,7 +295,10 @@ export class SavedGames {
     void this.deleteSelected();
   }
 
-  /** Puts the Delete button back to its first state, with the selection's count. */
+  /**
+   * Puts the Delete button back to its first state, with the selection's count.
+   * @returns {void}
+   */
   resetDelete() {
     clearTimeout(this.deleteTimer);
     const button = byId("saved-delete");
@@ -344,12 +353,12 @@ export class SavedGames {
       imported
         ? [
             t("saved.imported"),
-            new Date(game.started_at).toLocaleDateString(getFormatLocale(), { timeZone: "UTC" }),
+            savedGameDate(game, getFormatLocale(), false),
             `${game.white} - ${game.black}`,
             t("saved.plies", { count: game.plies }),
           ]
         : [
-            new Date(game.started_at).toLocaleString(getFormatLocale()),
+            savedGameDate(game, getFormatLocale(), true),
             t(`setup.${game.user_color}`),
             game.time_control === "none" ? t("setup.noClock") : this.timeLabel(game.time_control),
             t("saved.plies", { count: game.plies }),

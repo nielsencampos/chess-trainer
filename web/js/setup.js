@@ -3,7 +3,7 @@
 
 import { api } from "./api.js";
 import { getFormatLocale, localize, onLocaleChange, t } from "./i18n.js";
-import { openingName, openingSearchText } from "./opening-names.js";
+import { openingName, savedGameDate, savedGameSearchText } from "./opening-names.js";
 import { OpeningTree } from "./opening-tree.js";
 import { levelLabel } from "./levels.js";
 import { sanText } from "./notation.js";
@@ -83,6 +83,7 @@ export class SetupCard {
     const levelSelect = byId("level");
     for (const key of levels) levelSelect.add(new Option("", key));
     levelSelect.value = getPref("level", defaultLevel);
+    if (levelSelect.value === "") levelSelect.value = defaultLevel; // A removed one was saved.
 
     this.timeControls = timeControls;
     const timeSelect = byId("time-control");
@@ -97,8 +98,8 @@ export class SetupCard {
     timeSelect.value = getPref("timeControl", timeControls.default);
     if (timeSelect.value === "") timeSelect.value = timeControls.default; // A removed one was saved.
 
-    this.setRadio("color", getPref("color", "white"));
-    this.setRadio("pace", getPref("pace", "human"));
+    this.setRadio("color", getPref("color", "white"), "white");
+    this.setRadio("pace", getPref("pace", "human"), "human");
     byId("opt-warning").checked = getPref("warning", true);
     byId("opt-premoves").checked = getPref("premoves", true);
     const fromSelect = byId("deviate-from");
@@ -153,7 +154,10 @@ export class SetupCard {
     onLocaleChange(() => this.relocalize());
   }
 
-  /** Writes the level and clock names, which change with the language. */
+  /**
+   * Writes the level and clock names, which change with the language.
+   * @returns {void}
+   */
   renderOptions() {
     for (const option of byId("level").options) option.text = levelLabel(option.value);
     const timeSelect = byId("time-control");
@@ -166,7 +170,10 @@ export class SetupCard {
     if (noClock) noClock.text = t("setup.noClock");
   }
 
-  /** Draws again, in the language just chosen, everything the setup wrote with `t()`. */
+  /**
+   * Draws again, in the language just chosen, everything the setup wrote with `t()`.
+   * @returns {void}
+   */
   relocalize() {
     this.renderOptions();
     this.tree.relocalize();
@@ -226,13 +233,17 @@ export class SetupCard {
   }
 
   /**
-   * Checks the radio button with a value.
+   * Checks the radio button with a value, or the fallback's when no button has it (a value
+   * saved by an older version).
    * @param {string} name  The radio group.
    * @param {string} value  The value to check.
+   * @param {string} fallback  The value to check instead.
    * @returns {void}
    */
-  setRadio(name, value) {
-    for (const radio of radios(`input[name="${name}"]`)) radio.checked = radio.value === value;
+  setRadio(name, value, fallback) {
+    const group = [...radios(`input[name="${name}"]`)];
+    const known = group.some((radio) => radio.value === value);
+    for (const radio of group) radio.checked = radio.value === (known ? value : fallback);
   }
 
   /**
@@ -282,7 +293,10 @@ export class SetupCard {
     this.onColorChange(this.color);
   }
 
-  /** Writes the Chess960 position's number. */
+  /**
+   * Writes the Chess960 position's number.
+   * @returns {void}
+   */
   renderChess960Number() {
     if (!this.chess960) return;
     byId("chess960-number").textContent = t("chess960.position", { number: this.chess960.position });
@@ -307,7 +321,7 @@ export class SetupCard {
   async setMode(mode) {
     const changed = mode !== this.mode;
     this.mode = mode;
-    this.setRadio("new-mode", mode);
+    this.setRadio("new-mode", mode, mode);
     byId("openings-field").hidden = mode !== "opening";
     byId("from-saved").hidden = mode !== "saved";
     byId("chess960").hidden = mode !== "chess960";
@@ -337,11 +351,14 @@ export class SetupCard {
     this.savedGameId = gameId;
     this.renderSavedGames();
     if (ply > 0) byId("from-saved-ply").value = String(ply);
-    this.setRadio("from-mode", "position");
+    this.setRadio("from-mode", "position", "position");
     this.renderFromSavedHelp();
   }
 
-  /** Explains the chosen way to start from a saved game. */
+  /**
+   * Explains the chosen way to start from a saved game.
+   * @returns {void}
+   */
   renderFromSavedHelp() {
     const mode = this.radioValue("from-mode");
     byId("from-saved-help").textContent = t(
@@ -349,14 +366,13 @@ export class SetupCard {
     );
   }
 
-  /** Lists the saved games that match the search. */
+  /**
+   * Lists the saved games that match the search.
+   * @returns {void}
+   */
   renderSavedGames() {
     const query = byId("from-saved-search").value.trim().toLowerCase();
-    const games = this.savedGames.filter(
-      (game) =>
-        !query ||
-        `${openingSearchText(game)} ${game.white ?? ""} ${game.black ?? ""}`.toLowerCase().includes(query),
-    );
+    const games = this.savedGames.filter((game) => !query || savedGameSearchText(game).includes(query));
     byId("from-saved-list").replaceChildren(...games.map((game) => this.savedGameRow(game)));
     byId("from-saved-empty").hidden = this.savedGames.length > 0;
     this.renderPlyOptions();
@@ -391,7 +407,7 @@ export class SetupCard {
     details.className = "variant-moves";
     const who = game.source === "imported" ? `${game.white} - ${game.black}` : t(`setup.${game.user_color}`);
     details.textContent = [
-      new Date(game.started_at).toLocaleDateString(getFormatLocale()),
+      savedGameDate(game, getFormatLocale(), false),
       who,
       t("saved.plies", { count: game.plies }),
       ...(game.chess960 ? [t("fromSaved.chess960")] : []),
@@ -401,7 +417,10 @@ export class SetupCard {
     return label;
   }
 
-  /** Lists the chosen game's moves to start from, the end first. */
+  /**
+   * Lists the chosen game's moves to start from, the end first.
+   * @returns {void}
+   */
   renderPlyOptions() {
     const select = byId("from-saved-ply");
     select.replaceChildren();
@@ -416,7 +435,10 @@ export class SetupCard {
     });
   }
 
-  /** Enables Play once the mode has what it needs, and says what is missing. */
+  /**
+   * Enables Play once the mode has what it needs, and says what is missing.
+   * @returns {void}
+   */
   updateSelectionState() {
     let ready = this.tree.selected.size > 0;
     let hint = "setup.selectOne";
@@ -464,7 +486,10 @@ export class SetupCard {
     };
   }
 
-  /** Shows the bot deviation option, and its two choices while it is on; not for Chess960. */
+  /**
+   * Shows the bot deviation option, and its two choices while it is on; not for Chess960.
+   * @returns {void}
+   */
   renderDeviate() {
     const available = this.mode !== "chess960";
     byId("deviate-toggle").hidden = !available;

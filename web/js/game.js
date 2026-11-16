@@ -128,7 +128,10 @@ export class GameController {
     this.renderChips();
   }
 
-  /** Drops the queued premove, if any. */
+  /**
+   * Drops the queued premove, if any.
+   * @returns {void}
+   */
   clearPremove() {
     this.premove = null;
     this.board.setPremoveSquares([]);
@@ -143,7 +146,10 @@ export class GameController {
     return this.setup?.premoves ? this.userColor : null;
   }
 
-  /** Plays the queued premove if it is legal now, and drops it otherwise. */
+  /**
+   * Plays the queued premove if it is legal now, and drops it otherwise.
+   * @returns {void}
+   */
   playPremove() {
     const queued = this.premove;
     if (!queued) return;
@@ -222,8 +228,12 @@ export class GameController {
     if (generation !== this.generation) return;
     if (setup.from_game?.mode === "position") {
       // The board starts with the game's moves, which is the same as continuing a saved game.
-      const { game } = await api.activeGame();
-      if (generation === this.generation) this.resume(game, setup.clock);
+      try {
+        const { game } = await api.activeGame();
+        if (generation === this.generation) this.resume(game, setup.clock);
+      } catch (error) {
+        if (generation === this.generation) this.onServerError(error);
+      }
       return;
     }
     this.gameId = response.state.game_id;
@@ -339,7 +349,10 @@ export class GameController {
     this.beginUserTurn();
   }
 
-  /** Lets the user move and starts timing the move. */
+  /**
+   * Lets the user move and starts timing the move.
+   * @returns {void}
+   */
   beginUserTurn() {
     this.botThinking = false;
     this.turnStartedAt = performance.now();
@@ -484,6 +497,7 @@ export class GameController {
   /**
    * Shows Take back only without premoves (with them, a move queued for the reply is the way
    * to play fast), enabled while the bot's reply is not shown yet.
+   * @returns {void}
    */
   renderTakeBack() {
     const button = byId("take-back");
@@ -535,7 +549,10 @@ export class GameController {
     this.beginUserTurn();
   }
 
-  /** Resign needs a second click within 3 s to confirm. */
+  /**
+   * Resign needs a second click within 3 s to confirm.
+   * @returns {void}
+   */
   onResignClick() {
     const button = byId("resign");
     if (!button.classList.contains("confirming")) {
@@ -548,7 +565,10 @@ export class GameController {
     void this.endWith((gameId) => api.resign(gameId));
   }
 
-  /** Puts the Resign button back to its first state. */
+  /**
+   * Puts the Resign button back to its first state.
+   * @returns {void}
+   */
   resetResign() {
     clearTimeout(this.resignTimer);
     const button = byId("resign");
@@ -598,7 +618,10 @@ export class GameController {
     }
   }
 
-  /** Stops everything that runs during a game: clocks, bot, premove and input. */
+  /**
+   * Stops everything that runs during a game: clocks, bot, premove and input.
+   * @returns {void}
+   */
   markOver() {
     this.takeBackable = null;
     this.renderTakeBack();
@@ -656,6 +679,7 @@ export class GameController {
   /**
    * After a game, the left column is the menu again and the board keeps the final position.
    * No item is active: clicking any of them leaves the game.
+   * @returns {void}
    */
   showMenu() {
     this.ended = true;
@@ -664,7 +688,10 @@ export class GameController {
     for (const tab of document.querySelectorAll("#sidebar-tabs .tab")) tab.classList.remove("active");
   }
 
-  /** Leaves a finished game for another screen of the menu. */
+  /**
+   * Leaves a finished game for another screen of the menu.
+   * @returns {void}
+   */
   leaveGame() {
     if (!this.ended) return;
     this.ended = false;
@@ -699,13 +726,19 @@ export class GameController {
     this.showMenu();
   }
 
-  /** Writes the server-error texts in the current language. */
+  /**
+   * Writes the server-error texts in the current language.
+   * @returns {void}
+   */
   renderFailure() {
     byId("game-error").textContent = t("game.serverError");
     byId("end-result").textContent = t("chip.gameOver");
   }
 
-  /** Draws again, in the language just chosen, what the game shows around the board. */
+  /**
+   * Draws again, in the language just chosen, what the game shows around the board.
+   * @returns {void}
+   */
   relocalize() {
     this.renderNames(this.setup);
     this.renderOpening();
@@ -724,6 +757,7 @@ export class GameController {
   /**
    * With "Show moves" off, the opening name and the move list, with their headings, are hidden
    * while a game is played. Everything shows again at the end of the game, and outside games.
+   * @returns {void}
    */
   applyShowMoves() {
     const playing = this.setup !== null && !this.over;
@@ -734,7 +768,10 @@ export class GameController {
     byId("moves-box").hidden = hidden;
   }
 
-  /** Writes the opening name, or that there is none yet. */
+  /**
+   * Writes the opening name, or that there is none yet.
+   * @returns {void}
+   */
   renderOpening() {
     byId("opening-name").textContent =
       this.opening
@@ -742,7 +779,10 @@ export class GameController {
         : t("moves.noOpening");
   }
 
-  /** Draws the move list, with theory marks unless the warning is off or there is no book. */
+  /**
+   * Draws the move list, with theory marks unless the warning is off or there is no book.
+   * @returns {void}
+   */
   renderMoves() {
     // Without a book, no move is in or out of theory.
     const showMarks = (this.setup?.warning ?? true) && !this.setup?.chess960;
@@ -761,7 +801,10 @@ export class GameController {
     byId("bottom-name").textContent = t("player.you");
   }
 
-  /** Draws both clocks, or hides them without a clock. */
+  /**
+   * Draws both clocks, or hides them without a clock.
+   * @returns {void}
+   */
   renderClocks() {
     const top = byId("top-clock");
     const bottom = byId("bottom-clock");
@@ -786,7 +829,10 @@ export class GameController {
     element.classList.toggle("low", remaining < this.clocks.lowTime);
   }
 
-  /** Draws the status chips under the board: turn, theory, check and premove. */
+  /**
+   * Draws the status chips under the board: turn, theory, check and premove.
+   * @returns {void}
+   */
   renderChips() {
     /** @type {[string, string][]} */
     const chips = [];

@@ -15,6 +15,7 @@ const parts = new Map();
 /**
  * Learns, from the book, which family and line names each catalog name is made of.
  * @param {import("./setup.js").RepertoireInfo[]} repertoires  The book, as the server sends it.
+ * @returns {void}
  */
 export function indexOpenings(repertoires) {
   for (const repertoire of repertoires) {
@@ -53,11 +54,28 @@ export function openingName(name) {
 }
 
 /**
- * What a search over saved games looks in: the ECO and the opening in English and as shown.
- * @param {{eco?: string | null, opening?: string | null}} game  A saved game.
+ * What a search over saved games looks in, in Saved games and in New Game alike: the ECO, the
+ * opening in English and as shown, and an imported game's players.
+ * @param {{eco?: string | null, opening?: string | null, white?: string | null, black?: string | null}} game
+ *   A saved game.
  * @returns {string} The text, lowercase.
  */
-export function openingSearchText(game) {
+export function savedGameSearchText(game) {
   const opening = game.opening ?? "";
-  return `${game.eco ?? ""} ${opening} ${opening ? openingName(opening) : ""}`.toLowerCase();
+  const names = `${opening} ${opening ? openingName(opening) : ""}`;
+  return `${game.eco ?? ""} ${names} ${game.white ?? ""} ${game.black ?? ""}`.toLowerCase();
+}
+
+/**
+ * The date a saved game shows. An imported game has only the day its PGN gives, stored as
+ * midnight UTC, so it is shown in UTC; a game played here shows its local date and time.
+ * @param {{source: string, started_at: string}} game  A saved game.
+ * @param {string} locale  The locale to format in.
+ * @param {boolean} withTime  Whether a game played here also shows the time.
+ * @returns {string} The date.
+ */
+export function savedGameDate(game, locale, withTime) {
+  const date = new Date(game.started_at);
+  if (game.source === "imported") return date.toLocaleDateString(locale, { timeZone: "UTC" });
+  return withTime ? date.toLocaleString(locale) : date.toLocaleDateString(locale);
 }

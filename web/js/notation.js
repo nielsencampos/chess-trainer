@@ -10,7 +10,7 @@ import { getPref, setPref } from "./prefs.js";
 /** The notations, in the picker's order; the quick switch cycles through them in this order. */
 export const NOTATIONS = /** @type {Notation[]} */ (["local", "english", "figurines"]);
 /** The notation of a browser that has not chosen one. */
-export const DEFAULT_NOTATION = /** @type {Notation} */ ("figurines");
+const DEFAULT_NOTATION = /** @type {Notation} */ ("figurines");
 /** The English SAN letters, in the order of the `notation.pieces` key. */
 const PIECES = ["K", "Q", "R", "B", "N", "P"];
 // A piece letter: the first one of a piece move, or the one after "=" of a promotion.
@@ -73,7 +73,7 @@ function localLetters() {
  * @param {string} san  The move in English SAN.
  * @returns {string} The move with the language's piece letters.
  */
-export function localSan(san) {
+function localSan(san) {
   const letters = localLetters();
   return san.replace(PIECE_LETTER, (piece) => letters[piece]);
 }
@@ -215,7 +215,10 @@ function showTip(move) {
   tip.style.top = `${above >= 4 ? above : box.bottom + 6}px`;
 }
 
-/** Hides the tip. */
+/**
+ * Hides the tip.
+ * @returns {void}
+ */
 function hideTip() {
   if (tip) tip.hidden = true;
 }

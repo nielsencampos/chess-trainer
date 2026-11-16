@@ -15,10 +15,9 @@ import { sanElement } from "./notation.js";
  * @param {HTMLElement} container  The list's element.
  * @param {PlyView[]} plies  The moves, in order.
  * @param {boolean} showTheoryMarks  False hides marks while the out-of-theory warning is off.
- * @param {number} [currentPly]  In a review, the move being shown; scrolls to it.
  * @returns {void}
  */
-export function renderMoveList(container, plies, showTheoryMarks, currentPly) {
+export function renderMoveList(container, plies, showTheoryMarks) {
   const fragment = document.createDocumentFragment();
   for (let index = 0; index < plies.length; index += 2) {
     const number = document.createElement("div");
@@ -28,24 +27,21 @@ export function renderMoveList(container, plies, showTheoryMarks, currentPly) {
     number.dir = "ltr";
     fragment.append(
       number,
-      moveCell(plies[index], showTheoryMarks, index + 1, currentPly),
-      moveCell(plies[index + 1], showTheoryMarks, index + 2, currentPly),
+      moveCell(plies[index], showTheoryMarks),
+      moveCell(plies[index + 1], showTheoryMarks),
     );
   }
   container.replaceChildren(fragment);
-  if (currentPly === undefined) container.scrollTop = container.scrollHeight;
-  else container.querySelector(".current")?.scrollIntoView({ block: "nearest" });
+  container.scrollTop = container.scrollHeight;
 }
 
 /**
  * Draws one move of the list.
  * @param {PlyView | undefined} ply  The move, or undefined for an empty cell.
  * @param {boolean} showTheoryMarks  Whether to mark book moves and deviations.
- * @param {number} number  The move's ply.
- * @param {number} [currentPly]  In a review, the move being shown.
  * @returns {HTMLDivElement} The cell.
  */
-function moveCell(ply, showTheoryMarks, number, currentPly) {
+function moveCell(ply, showTheoryMarks) {
   const cell = document.createElement("div");
   cell.className = "move";
   if (!ply) return cell;
@@ -56,10 +52,6 @@ function moveCell(ply, showTheoryMarks, number, currentPly) {
   // Keyboard focus shows the move in the other notations, as hover does.
   cell.tabIndex = 0;
   cell.dataset.tip = "";
-  if (currentPly !== undefined) {
-    cell.dataset.ply = String(number);
-    cell.classList.toggle("current", number === currentPly);
-  }
   if (showTheoryMarks) {
     if (ply.deviation || ply.botDeviation) {
       const title = t(ply.deviation ? "icon.deviation" : "icon.botDeviation");

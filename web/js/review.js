@@ -43,6 +43,9 @@ export class Review {
     this.nodes = [];
     this.flipped = false;
     this.hasClocks = false;
+    // Bumped by each open and close: an answer that arrives after a newer one, or after the
+    // review closed (a new game started), is dropped.
+    this.ticket = 0;
     this.evalBar = new EvalBar();
 
     byId("review-first").addEventListener("click", () => this.goTo(FIRST, true));
@@ -79,7 +82,7 @@ export class Review {
    * @returns {Promise<void>}
    */
   async openGame(gameId) {
-    this.show(await api.reviewGame(gameId), gameId);
+    await this.open(() => api.reviewGame(gameId), gameId);
   }
 
   /**
@@ -88,7 +91,26 @@ export class Review {
    * @returns {Promise<void>}
    */
   async openLine(variantId) {
-    this.show(await api.reviewLine(variantId), null);
+    await this.open(() => api.reviewLine(variantId), null);
+  }
+
+  /**
+   * Fetches a review and shows it, unless another open or a close came first.
+   * @param {() => Promise<any>} fetchReview  Asks the server for the review.
+   * @param {string | null} gameId  The saved game's id, or null for a book line.
+   * @returns {Promise<void>}
+   */
+  async open(fetchReview, gameId) {
+    this.ticket += 1;
+    const ticket = this.ticket;
+    let data;
+    try {
+      data = await fetchReview();
+    } catch (error) {
+      console.error("review failed", error); // The list stays as it was; nothing to show.
+      return;
+    }
+    if (ticket === this.ticket) this.show(data, gameId);
   }
 
   /**
@@ -119,14 +141,20 @@ export class Review {
     this.goTo(this.lastPly);
   }
 
-  /** Writes the opening name of the game or line. */
+  /**
+   * Writes the opening name of the game or line.
+   * @returns {void}
+   */
   renderOpening() {
     byId("opening-name").textContent = this.data.opening
       ? t("moves.openingName", { eco: this.data.eco ?? "", name: openingName(this.data.opening) })
       : t("moves.noOpening");
   }
 
-  /** Draws again, in the language just chosen, the review around the board. */
+  /**
+   * Draws again, in the language just chosen, the review around the board.
+   * @returns {void}
+   */
   relocalize() {
     this.renderOpening();
     this.renderNames();
@@ -136,6 +164,7 @@ export class Review {
   /**
    * Writes the players' names on the side of their color. A game played here shows "You" and the
    * bot as during the game, in the chosen language; an imported one, the names in its PGN.
+   * @returns {void}
    */
   renderNames() {
     let white = this.data.white ?? t("setup.white");
@@ -151,7 +180,10 @@ export class Review {
     byId("top-name").textContent = this.flipped ? white : black;
   }
 
-  /** Turns the board around. */
+  /**
+   * Turns the board around.
+   * @returns {void}
+   */
   flip() {
     this.flipped = !this.flipped;
     this.board.setOrientation(this.flipped ? "b" : "w");
@@ -171,12 +203,18 @@ export class Review {
     this.select(clamped === FIRST ? null : this.data.moves[clamped - 1], audible);
   }
 
-  /** Shows the move before, in the line being followed. */
+  /**
+   * Shows the move before, in the line being followed.
+   * @returns {void}
+   */
   back() {
     if (this.node) this.select(this.node.prev, true);
   }
 
-  /** Shows the move after, in the line being followed. */
+  /**
+   * Shows the move after, in the line being followed.
+   * @returns {void}
+   */
   forward() {
     const next = this.node ? this.node.next : (this.data?.moves[0] ?? null);
     if (next) this.select(next, true);
@@ -248,7 +286,7 @@ export class Review {
    * @returns {void}
    */
   onKey(event) {
-    if (!this.active) return;
+    if (!this.active || event.defaultPrevented) return; // e.g. an arrow key on a bar's resizer
     const target = /** @type {HTMLElement} */ (event.target);
     if (["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName)) return;
     if (event.key === "ArrowLeft") this.back();
@@ -260,13 +298,18 @@ export class Review {
     event.preventDefault();
   }
 
-  /** Closes the review and gives the board back. */
+  /**
+   * Closes the review and gives the board back.
+   * @returns {void}
+   */
   close() {
+    this.ticket += 1;
     if (!this.active) return;
     this.active = false;
     this.evalBar.hide();
     this.data = null;
     byId("review-bar").hidden = true;
+    for (const id of ["top-clock", "bottom-clock"]) byId(id).hidden = true;
     this.onClose();
   }
 }
