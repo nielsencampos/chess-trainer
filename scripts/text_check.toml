@@ -27,7 +27,7 @@ all = [
     # The language links at the top of each document.
     "English", "Português", "português", "Español", "español", "Brasil", "UK", "Latinoamérica", "España", "Portugal", "Deutsch", "Français", "Italiano",
     "Türkçe", "Polski", "Nederlands", "Bahasa", "Indonesia", "Tiếng", "Việt", "Svenska", "Dansk", "Norsk", "bokmål", "Suomi", "Русский", "Українська",
-    "日本語", "한국어",
+    "日本語", "한국어", "العربية", "فارسی", "עברית",
 ]
 en-US = [
     "untick", "unticked", "Untick", "vendored", "misclick", "loopback", "healthcheck", "movetime",
@@ -203,6 +203,9 @@ ru = [
     "OPREDELENIA",  # a style suggestion, not an error
 ]
 uk = []
+fa = [
+    "PERSIAN_WORD_REPEAT_BEGINNING_RULE",  # i18n strings are separate texts
+]
 
 [ignore]
 # One flagged text in one language, optionally for one rule: { text = "...", rule = "..." }.

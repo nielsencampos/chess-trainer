@@ -183,7 +183,8 @@
   font-size: 8pt;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
   transform: scale(var(--sheet-scale));
-  /* Physical: transform-origin has no logical keyword. Revisit with right-to-left (#37). */
+  /* Physical: transform-origin has no logical keyword. The sheet's frame is always left to
+     right (#37), so the sheet shrinks toward its left edge in every language. */
   transform-origin: top left;
 }
 

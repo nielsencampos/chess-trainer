@@ -24,6 +24,8 @@ export function renderMoveList(container, plies, showTheoryMarks, currentPly) {
     const number = document.createElement("div");
     number.className = "number";
     number.textContent = `${index / 2 + 1}.`;
+    // "12." keeps its dot after the number in a right-to-left language too (#37).
+    number.dir = "ltr";
     fragment.append(
       number,
       moveCell(plies[index], showTheoryMarks, index + 1, currentPly),

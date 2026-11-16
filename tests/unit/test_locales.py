@@ -12,12 +12,17 @@ from app.locales import DEFAULT_LOCALE, load_locales
 WEB = Path(__file__).parent.parent.parent / "web"
 I18N_DIR = WEB / "i18n"
 # The UI font of a script: Familjen Grotesk has no Cyrillic, so Commissioner draws it, and no
-# Devanagari, so Noto Sans Devanagari draws it (brief §4.1).
-UI_FONT = {"cyrillic": "commissioner", "devanagari": "noto-sans-devanagari"}
-# The mono font of a script: JetBrains Mono has no Devanagari either.
-MONO_FONT = {"devanagari": "noto-sans-devanagari"}
+# Devanagari, Arabic or Hebrew, so Noto Sans draws them (brief §4.1).
+NOTO = {
+    "devanagari": "noto-sans-devanagari",
+    "arabic": "noto-sans-arabic",
+    "hebrew": "noto-sans-hebrew",
+}
+UI_FONT = {"cyrillic": "commissioner", **NOTO}
+# The mono font of a script: JetBrains Mono has none of those three either.
+MONO_FONT = NOTO
 FACE = re.compile(
-    r'url\("\.\./fonts/(familjen-grotesk|commissioner|noto-sans-devanagari|jetbrains-mono)-([a-z-]+)-(\d+)-normal\.woff2"\)'
+    r'url\("\.\./fonts/(familjen-grotesk|commissioner|noto-sans-(?:devanagari|arabic|hebrew)|jetbrains-mono)-([a-z-]+)-(\d+)-normal\.woff2"\)'
     r".*?unicode-range: ([^;]+);",
     re.S,
 )

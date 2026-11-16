@@ -1,0 +1,8 @@
+# ar gives instructions in the masculine singular imperative ("اختر"), as software in Arabic does:
+# no feminine, plural or honorific address ("أنتِ", "أنتم", "حضرتك").
+extends: existence
+message: "Use the masculine singular imperative, as Arabic software does, not '%s'."
+level: error
+nonword: true
+tokens:
+  - '(?:^|(?<=[\s"«(]))(?:أنتِ|أنتم|أنتن|حضرتك|حضرتكم|سيادتك)(?=[\s,.!?؟،؛:"»)]|$)'

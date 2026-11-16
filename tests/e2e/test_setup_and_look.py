@@ -337,6 +337,9 @@ def test_bot_deviation_option_shows_its_choices(page: Page):
         page (Page): A fresh page at 1280x720; an uncaught page error fails the test.
     """
     page.goto("/")
+    # New Game sets the checkbox from the saved preferences once it has loaded the book: wait
+    # for that, or a click before it is undone.
+    expect(page.locator("#openings .opening").first).to_be_visible()
     expect(page.locator("#deviate-options")).to_be_hidden()
     page.locator("#opt-deviate").check()
     expect(page.locator("#deviate-options")).to_be_visible()

@@ -42,7 +42,7 @@ async function initLocalePicker() {
   const select = byId("locale-picker");
   const locales = await availableLocales().catch(() => []);
   if (!locales.some((item) => item.code === getLocale())) {
-    locales.unshift({ code: getLocale(), name: t("locale.name") });
+    locales.unshift({ code: getLocale(), name: t("locale.name"), dir: document.documentElement.dir || "ltr" });
   }
   for (const { code, name } of locales) select.add(new Option(name, code));
   select.value = getLocale();

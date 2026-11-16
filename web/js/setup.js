@@ -2,7 +2,7 @@
 // level, clock, pace and options.
 
 import { api } from "./api.js";
-import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
+import { getFormatLocale, localize, onLocaleChange, t } from "./i18n.js";
 import { openingName, openingSearchText } from "./opening-names.js";
 import { OpeningTree } from "./opening-tree.js";
 import { levelLabel } from "./levels.js";
@@ -391,7 +391,7 @@ export class SetupCard {
     details.className = "variant-moves";
     const who = game.source === "imported" ? `${game.white} - ${game.black}` : t(`setup.${game.user_color}`);
     details.textContent = [
-      new Date(game.started_at).toLocaleDateString(getLocale()),
+      new Date(game.started_at).toLocaleDateString(getFormatLocale()),
       who,
       t("saved.plies", { count: game.plies }),
       ...(game.chess960 ? [t("fromSaved.chess960")] : []),

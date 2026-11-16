@@ -501,6 +501,19 @@ def test_a_wikidata_label_starts_with_a_capital():
     assert found.name == "Variante Dragão"  # What follows the family's name, with a capital.
 
 
+def test_an_arabic_comma_separates_the_family_s_name():
+    """The Arabic and Persian Wikipedias write "، " between the family's name and the line's."""
+    persian = Locale("fa", "rtl", ("arabic",), None, (), False, "fa")
+    titled = {
+        "item": "Q9",
+        "sitelinks": {"fawiki": "دفاع سیسیلی، شاخه نایدورف"},
+        "labels": {},
+    }
+    found = wiki_name(titled, persian, "دفاع سیسیلی")
+    assert found is not None
+    assert found.name == "شاخه نایدورف"
+
+
 def test_a_label_copied_from_english_gives_no_name():
     """Another language's label that is only the English name is no translation."""
     entry = {
@@ -747,3 +760,34 @@ def test_a_variant_locale_skips_the_bare_language_label():
     entry = {"title": "X", "item": "Q2", "sitelinks": {}, "labels": {"zh": "馬"}}
     chinese = Locale("zh-CN", "ltr", ("cjk",), None, (), False, "zh", "zh-cn")
     assert names_module.wiki_name(entry, chinese) is None
+
+
+def test_a_rejected_page_gives_no_name(repo):
+    """A page recorded as naming an item wrongly is never its source, now or on the next run.
+
+    Args:
+        repo (Path): The test folder.
+    """
+    run(repo, FakeRemote(LOOKUPS))
+    path = repo / "names" / "pt-BR.toml"
+    family = json.loads((repo / "openings" / "caro-kann-defense.json").read_text(encoding="utf-8"))
+    family["variants"][0]["names"]["pt-BR"] = "Ataque Panov"
+    write_family(repo, family)
+    text = path.read_text(encoding="utf-8").replace(
+        '[subgroups.caro-kann-defense."Panov Attack"]\n'
+        'name = "Ataque Panov-Botvinnik"\n'
+        'source = "https://www.wikidata.org/wiki/Q2"',
+        '[subgroups.caro-kann-defense."Panov Attack"]\n'
+        'name = "Ataque Panov"\n'
+        "machine = true\n"
+        'note = "The label names another opening."\n'
+        'rejected = "https://www.wikidata.org/wiki/Q2"',
+    )
+    path.write_text(text, encoding="utf-8")
+    for _ in range(2):
+        run(repo, FakeRemote(LOOKUPS))
+        panov = load_name_sources(path)[("subgroups", ("caro-kann-defense", "Panov Attack"))]
+        # The glossary builds it now; the label is not taken back.
+        assert (panov.name, panov.origin) == ("Ataque Panov", "rule")
+        assert panov.rejected == "https://www.wikidata.org/wiki/Q2"
+    assert names(repo)[("subgroups", ("caro-kann-defense", "Panov Attack"))] == "Ataque Panov"

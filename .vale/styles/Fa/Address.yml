@@ -1,0 +1,7 @@
+# fa speaks to the reader as "شما", never the familiar "تو".
+extends: existence
+message: "Use 'شما' as the form of address, not '%s'."
+level: error
+nonword: true
+tokens:
+  - '(?:^|(?<=[\s"«(]))(?:تو|ترا|تورا)(?=[\s,.!?؟،؛:"»)]|$)'

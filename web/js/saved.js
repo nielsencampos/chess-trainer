@@ -4,7 +4,7 @@
 
 import { ApiError, api } from "./api.js";
 import { saveFile } from "./download.js";
-import { getLocale, localize, onLocaleChange, t } from "./i18n.js";
+import { getFormatLocale, localize, onLocaleChange, t } from "./i18n.js";
 import { openingName, openingSearchText } from "./opening-names.js";
 import { showPage } from "./pages.js";
 
@@ -344,12 +344,12 @@ export class SavedGames {
       imported
         ? [
             t("saved.imported"),
-            new Date(game.started_at).toLocaleDateString(getLocale(), { timeZone: "UTC" }),
+            new Date(game.started_at).toLocaleDateString(getFormatLocale(), { timeZone: "UTC" }),
             `${game.white} - ${game.black}`,
             t("saved.plies", { count: game.plies }),
           ]
         : [
-            new Date(game.started_at).toLocaleString(getLocale()),
+            new Date(game.started_at).toLocaleString(getFormatLocale()),
             t(`setup.${game.user_color}`),
             game.time_control === "none" ? t("setup.noClock") : this.timeLabel(game.time_control),
             t("saved.plies", { count: game.plies }),

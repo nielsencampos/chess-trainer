@@ -32,7 +32,7 @@ import urllib.parse
 import urllib.request
 from collections import Counter
 from collections.abc import Iterable
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from pathlib import Path
 from typing import Protocol
 
@@ -63,7 +63,8 @@ CHUNK = 500
 # HTTP statuses that mean "slow down" or "try later", and how often to try again.
 RETRY_STATUSES = {429, 503}
 RETRIES = 6
-SEPARATORS = (", ", ": ", " - ", " \u2013 ")  # The last is an en dash.
+# An en dash, and the Arabic comma, which the Arabic and Persian Wikipedias write in titles.
+SEPARATORS = (", ", ": ", " - ", " \u2013 ", "\u060c ")
 # Characters a Wikipedia title cannot have.
 NOT_IN_TITLES = re.compile(r"[#<>\[\]|{}]")
 DISAMBIGUATION = re.compile(r"\s*\([^()]*\)$")
@@ -744,7 +745,8 @@ def write_sources(path: Path, sources: dict[NameKey, NameSource], locale: str) -
     """
     lines = [
         f"# Where each {locale} opening name in openings/ came from (brief §8). Written by",
-        f"# `uv run python -m catalog.names {locale}`; a `note` can be added by hand.",
+        f"# `uv run python -m catalog.names {locale}`; a `note`, and a `rejected` page that names",
+        "# an item wrongly, can be added by hand.",
     ]
     for key, source in sources.items():
         lines += ["", f"[{label(key)}]", f"name = {_quote(source.name)}"]
@@ -754,6 +756,8 @@ def write_sources(path: Path, sources: dict[NameKey, NameSource], locale: str) -
             lines.append(f"{source.origin} = true")
         if source.note:
             lines.append(f"note = {_quote(source.note)}")
+        if source.rejected:
+            lines.append(f"rejected = {_quote(source.rejected)}")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -834,6 +838,8 @@ def fill_names(
     for item in items:
         current = item.names.get(code)
         entry = old.get(item.key)
+        # A page recorded as naming the item wrongly is never its source, whatever its name.
+        rejected = entry.rejected if entry else None
         entry = entry if entry and current is not None and entry.name == current else None
         found = None
         lookup = cache.get(item.query)
@@ -851,6 +857,8 @@ def fill_names(
                 family_names[item.family].get(code),
                 english=(item.english, item.query),
             )
+        if found and found.url == rejected:
+            found = None
         reviewed = [item.names[other] for other in siblings if item.names.get(other)]
         if found and any(name.casefold() != found.name.casefold() for name in reviewed):
             found = None  # The author of that locale chose another name than Wikipedia's.
@@ -909,6 +917,9 @@ def fill_names(
         sources[item.key] = new
         report.counts[new.origin] += 1
 
+    for key, source in sources.items():
+        if (before_entry := old.get(key)) and before_entry.rejected and not source.rejected:
+            sources[key] = replace(source, rejected=before_entry.rejected)
     for path, document in documents.items():
         text = render(document)
         if text != before[path]:

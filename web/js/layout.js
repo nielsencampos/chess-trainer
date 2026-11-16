@@ -43,6 +43,17 @@ const BARS = [
 const byId = (id) => /** @type {any} */ (document.getElementById(id));
 
 /**
+ * Whether a bar sits on the left of the screen. The "left" bar (the menu) is the one at the start
+ * of the line, so in a right-to-left language it sits on the right (brief §8, #37); the keys keep
+ * their names, which the stored preferences use.
+ * @param {SideBar} bar  The bar.
+ * @returns {boolean} True when the bar is on the left.
+ */
+function onLeft(bar) {
+  return (bar.key === "left") === (document.documentElement.dir !== "rtl");
+}
+
+/**
  * Keeps a stored width inside the bar's limits.
  * @param {SideBar} bar  The bar.
  * @param {unknown} width  The stored width, possibly missing or not a number.
@@ -81,7 +92,7 @@ export function initLayout() {
     handle.hidden = hidden;
     handle.setAttribute("aria-valuenow", String(width));
     const toggle = byId(bar.toggle);
-    toggle.textContent = (bar.key === "left") !== hidden ? "◀" : "▶";
+    toggle.textContent = onLeft(bar) !== hidden ? "◀" : "▶";
     const label = t(hidden ? `layout.show.${bar.key}` : `layout.hide.${bar.key}`);
     toggle.title = label;
     toggle.setAttribute("aria-label", label);
@@ -114,7 +125,7 @@ export function initLayout() {
     });
     handle.addEventListener("pointermove", (/** @type {PointerEvent} */ event) => {
       if (!handle.hasPointerCapture(event.pointerId)) return;
-      resize(bar, bar.key === "left" ? event.clientX : window.innerWidth - event.clientX);
+      resize(bar, onLeft(bar) ? event.clientX : window.innerWidth - event.clientX);
     });
     /** Ends a drag. */
     const stop = () => document.body.classList.remove("is-resizing");
@@ -122,8 +133,8 @@ export function initLayout() {
     handle.addEventListener("pointercancel", stop);
     handle.addEventListener("dblclick", () => resize(bar, bar.initial));
     handle.addEventListener("keydown", (/** @type {KeyboardEvent} */ event) => {
-      const grow = bar.key === "left" ? "ArrowRight" : "ArrowLeft";
-      const shrink = bar.key === "left" ? "ArrowLeft" : "ArrowRight";
+      const grow = onLeft(bar) ? "ArrowRight" : "ArrowLeft";
+      const shrink = onLeft(bar) ? "ArrowLeft" : "ArrowRight";
       if (event.key === grow) resize(bar, state[bar.key].width + KEY_STEP_PX);
       else if (event.key === shrink) resize(bar, state[bar.key].width - KEY_STEP_PX);
       else return;

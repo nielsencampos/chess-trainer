@@ -1,0 +1,531 @@
+# Chess glossary: Persian (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
+# from the Persian Wikipedia or Wikidata (`source`) or, when no page names it, `machine = true` with
+# a `note`. `avoid` lists the words the UI must not use for the term. The reader is addressed as
+# "شما". The Persian Wikipedia writes proper names in Persian letters ("شاخه نایدورف"), so no rule
+# keeps an English proper name (`keep_names = false`). Digits stay Western (0-9), as on the board
+# (#37). Moves keep the English piece letters, as fa.wikipedia's notation article writes them.
+
+# Proper names are written in Persian letters: a glossary rule never keeps an English one (brief §8).
+keep_names = false
+
+[[terms]]
+term = "chess"
+translation = "شطرنج"
+source = "https://fa.wikipedia.org/wiki/شطرنج"
+
+[[terms]]
+term = "piece"
+translation = "مهره"
+source = "https://fa.wikipedia.org/wiki/مهره‌های_شطرنج"
+
+[[terms]]
+term = "king"
+translation = "شاه"
+source = "https://fa.wikipedia.org/wiki/شاه_(شطرنج)"
+
+[[terms]]
+term = "queen"
+translation = "وزیر"
+source = "https://fa.wikipedia.org/wiki/وزیر_(شطرنج)"
+
+[[terms]]
+term = "rook"
+translation = "رخ"
+source = "https://fa.wikipedia.org/wiki/رخ_(شطرنج)"
+note = "The article's title; \"قلعه\" is the other name, and the name of castling."
+
+[[terms]]
+term = "pawn"
+translation = "پیاده"
+source = "https://fa.wikipedia.org/wiki/پیاده_(شطرنج)"
+note = "The article's title; the notation article also says \"سرباز\"."
+
+[[terms]]
+term = "board"
+translation = "صفحه"
+source = "https://fa.wikipedia.org/wiki/صفحه_شطرنج"
+
+[[terms]]
+term = "square"
+translation = "خانه"
+source = "https://fa.wikipedia.org/wiki/نشانه‌گذاری_جبری_شطرنج"
+note = "As the notation article names a square (\"خانه e5\")."
+
+[[terms]]
+term = "White"
+translation = "سفید"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Black"
+translation = "سیاه"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "game"
+translation = "بازی"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "move"
+translation = "حرکت"
+source = "https://fa.wikipedia.org/wiki/قانون_پنجاه_حرکت"
+note = "As the article's title writes it."
+
+[[terms]]
+term = "ply"
+translation = "نیم‌حرکت"
+machine = true
+note = "No Wikipedia page names it. Half a move: one side's move."
+
+[[terms]]
+term = "premove"
+translation = "پیش‌حرکت"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "take back"
+translation = "پس گرفتن حرکت"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "castling"
+translation = "قلعه‌رفتن"
+source = "https://fa.wikipedia.org/wiki/قلعه_(شطرنج)"
+note = "The notation article's \"قلعه رفتن\"; the article's title is only \"قلعه\"."
+
+[[terms]]
+term = "check"
+translation = "کیش"
+source = "https://fa.wikipedia.org/wiki/کیش_(شطرنج)"
+
+[[terms]]
+term = "checkmate"
+translation = "کیش‌مات"
+source = "https://fa.wikipedia.org/wiki/کیش‌مات"
+note = "Written as the article's title, with a zero-width non-joiner."
+
+[[terms]]
+term = "stalemate"
+translation = "پات"
+source = "https://fa.wikipedia.org/wiki/پات"
+
+[[terms]]
+term = "draw"
+translation = "تساوی"
+source = "https://fa.wikipedia.org/wiki/تساوی_(شطرنج)"
+
+[[terms]]
+term = "resign"
+translation = "تسلیم"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "insufficient material"
+translation = "مهره ناکافی"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "تکرار سه‌گانه"
+source = "https://fa.wikipedia.org/wiki/تکرار_سه‌گانه_(شطرنج)"
+
+[[terms]]
+term = "fivefold repetition"
+translation = "تکرار پنج‌گانه"
+machine = true
+note = "No Wikipedia page names it. The form of \"تکرار سه‌گانه\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "قانون پنجاه حرکت"
+source = "https://fa.wikipedia.org/wiki/قانون_پنجاه_حرکت"
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "قانون هفتاد و پنج حرکت"
+machine = true
+note = "No Wikipedia page names it. The form of \"قانون پنجاه حرکت\"."
+
+[[terms]]
+term = "opening"
+translation = "گشایش"
+source = "https://fa.wikipedia.org/wiki/گشایش_(شطرنج)"
+
+[[terms]]
+term = "variation"
+translation = "شاخه"
+source = "https://fa.wikipedia.org/wiki/دفاع_سیسیلی،_شاخه_نایدورف"
+note = "As the article's title writes it (\"شاخه نایدورف\")."
+
+[[terms]]
+term = "line"
+translation = "خط"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "theory"
+translation = "نظریه"
+source = "https://fa.wikipedia.org/wiki/نظریه_شطرنج"
+
+[[terms]]
+term = "book move"
+translation = "حرکت کتابی"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "deviation"
+translation = "انحراف"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "موتور شطرنج"
+source = "https://fa.wikipedia.org/wiki/موتور_شطرنج"
+
+[[terms]]
+term = "computer"
+translation = "رایانه"
+source = "https://fa.wikipedia.org/wiki/رایانه"
+avoid = ["کامپیوتر"]
+
+[[terms]]
+term = "evaluation"
+translation = "ارزیابی"
+source = "https://fa.wikipedia.org/wiki/تابع_ارزیابی"
+
+[[terms]]
+term = "analysis"
+translation = "تحلیل"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "حرکت درخشان"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "بهترین حرکت"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "حرکت عالی"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "بی‌دقتی"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "اشتباه"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "فرصت ازدست‌رفته"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "اشتباه آشکار"
+source = "https://fa.wikipedia.org/wiki/اشتباه_آشکار_(شطرنج)"
+
+[[terms]]
+term = "time control"
+translation = "کنترل زمان"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess clock"
+translation = "ساعت شطرنج"
+source = "https://fa.wikipedia.org/wiki/ساعت_شطرنج"
+
+[[terms]]
+term = "increment"
+translation = "افزایش زمان"
+machine = true
+note = "No Wikipedia page names it. The time added after each move."
+
+[[terms]]
+term = "delay"
+translation = "تأخیر"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "bullet"
+translation = "بولت"
+machine = true
+note = "No Wikipedia page names it. Transliterated, as Persian chess sites write it."
+
+[[terms]]
+term = "blitz"
+translation = "بلیتس"
+machine = true
+note = "No Wikipedia page names it. Transliterated, as Persian chess sites write it."
+
+[[terms]]
+term = "rapid"
+translation = "سریع"
+source = "https://fa.wikipedia.org/wiki/شطرنج_سرعتی"
+note = "The article (\"شطرنج سرعتی\") covers every fast time control; \"سریع\" is the rapid one."
+
+[[terms]]
+term = "classical"
+translation = "کلاسیک"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "scoresheet"
+translation = "برگه ثبت حرکات"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "arbiter"
+translation = "داور"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "rating"
+translation = "رده‌بندی"
+source = "https://fa.wikipedia.org/wiki/رده‌بندی_الو"
+
+[[terms]]
+term = "grandmaster"
+translation = "استادبزرگ"
+source = "https://fa.wikipedia.org/wiki/استادبزرگ_شطرنج"
+note = "Written as one word, as the article's title."
+
+[[terms]]
+term = "International Master"
+translation = "استاد بین‌المللی"
+source = "https://fa.wikipedia.org/wiki/عنوان‌های_فیده"
+
+[[terms]]
+term = "Woman International Master"
+translation = "استاد بین‌المللی زنان"
+source = "https://fa.wikipedia.org/wiki/عنوان‌های_فیده"
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "استاد فیده زنان"
+source = "https://fa.wikipedia.org/wiki/عنوان‌های_فیده"
+
+[[terms]]
+term = "Chess960"
+translation = "شطرنج 960"
+source = "https://fa.wikipedia.org/wiki/شطرنج۹۶۰"
+note = "The article's title with Western digits, as the UI writes every number (#37)."
+
+[[terms]]
+term = "correspondence chess"
+translation = "شطرنج مکاتبه‌ای"
+source = "https://fa.wikipedia.org/wiki/شطرنج_مکاتبه‌ای"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "المپیاد شطرنج"
+source = "https://fa.wikipedia.org/wiki/المپیاد_شطرنج"
+
+[[terms]]
+term = "touch-move rule"
+translation = "قانون دست‌زدن"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "capture"
+translation = "گرفتن"
+source = "https://fa.wikipedia.org/wiki/نشانه‌گذاری_جبری_شطرنج"
+note = "As the notation article says a piece is taken (\"گرفته شده\")."
+
+[[terms]]
+term = "tactics"
+translation = "تاکتیک"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "strategy"
+translation = "استراتژی"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "sacrifice"
+translation = "قربانی"
+source = "https://fa.wikipedia.org/wiki/قربانی_(شطرنج)"
+
+[[terms]]
+term = "trap"
+translation = "تله"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "gambit"
+translation = "گامبی"
+source = "https://fa.wikipedia.org/wiki/گامبی"
+
+[[terms]]
+term = "King's Pawn"
+translation = "پیاده شاه"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "پیاده وزیر"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "flank"
+translation = "جناح"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "starting position"
+translation = "وضعیت آغازین"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "نابغه شطرنج"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "{name} Variation"
+translation = "شاخه {name}"
+source = "https://fa.wikipedia.org/wiki/دفاع_سیسیلی،_شاخه_نایدورف"
+note = "The article's \"شاخه نایدورف\". For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Defense"
+translation = "دفاع {name}"
+source = "https://fa.wikipedia.org/wiki/دفاع_فرانسوی"
+note = "The article's \"دفاع فرانسوی\". For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "گامبی {name}"
+source = "https://fa.wikipedia.org/wiki/گامبی_شاه"
+note = "The article's \"گامبی شاه\". For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "ضدگامبی {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Attack"
+translation = "حمله {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "ضدحمله {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Opening"
+translation = "گشایش {name}"
+source = "https://fa.wikipedia.org/wiki/گشایش_(شطرنج)"
+note = "For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} System"
+translation = "سیستم {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Line"
+translation = "خط {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Formation"
+translation = "آرایش {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Trap"
+translation = "تله {name}"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name written in Persian letters (\"نایدورف\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "Main Line"
+translation = "خط اصلی"
+machine = true
+note = "No Wikipedia page names it."
+
+[[pieces]]
+piece = "K"
+letter = "K"
+source = "https://fa.wikipedia.org/wiki/نشانه‌گذاری_جبری_شطرنج"
+note = "The Persian Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
+
+[[pieces]]
+piece = "Q"
+letter = "Q"
+source = "https://fa.wikipedia.org/wiki/نشانه‌گذاری_جبری_شطرنج"
+note = "The Persian Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
+
+[[pieces]]
+piece = "R"
+letter = "R"
+source = "https://fa.wikipedia.org/wiki/نشانه‌گذاری_جبری_شطرنج"
+note = "The Persian Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
+
+[[pieces]]
+piece = "B"
+letter = "B"
+source = "https://fa.wikipedia.org/wiki/نشانه‌گذاری_جبری_شطرنج"
+note = "The Persian Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
+
+[[pieces]]
+piece = "N"
+letter = "N"
+source = "https://fa.wikipedia.org/wiki/نشانه‌گذاری_جبری_شطرنج"
+note = "The Persian Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
+
+[[pieces]]
+piece = "P"
+letter = "P"
+source = "https://fa.wikipedia.org/wiki/نشانه‌گذاری_جبری_شطرنج"
+note = "The Persian Wikipedia's notation article writes moves with the English letters (\"Be5\", \"Nf3\") and no pawn letter."
