@@ -1,0 +1,10 @@
+# ja does not address the reader with a pronoun: no "あなた", "君" or "お前".
+extends: existence
+message: "Leave the reader unnamed, as Japanese UIs do: not '%s'."
+level: error
+nonword: true
+tokens:
+  - 'あなた'
+  - '貴方'
+  - 'お前'
+  - 'きみ'

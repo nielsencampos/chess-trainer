@@ -27,8 +27,11 @@ ROOT = Path(__file__).parent.parent
 GLOSSARY_DIR = ROOT / "i18n" / "glossary"
 NAMES_DIR = ROOT / "i18n" / "names"
 # A page of any language's Wikipedia, or a Wikidata item.
+# A Wikipedia article, at /wiki/ or at a variant's path (zh.wikipedia.org/zh-cn/…), or a Wikidata
+# item.
 SOURCE_URL = re.compile(
-    r"^https://(?:[a-z0-9-]+\.(?:m\.)?wikipedia\.org/wiki/|www\.wikidata\.org/wiki/)\S+$"
+    r"^https://(?:[a-z0-9-]+\.(?:m\.)?wikipedia\.org/(?:wiki|[a-z]+-[a-z]+)/|www\.wikidata\.org/wiki/)"
+    r"\S+$"
 )
 ORIGINS = ("source", "rule", "machine")
 GLOSSARY_FIELDS = {"term", "translation", "source", "machine", "note", "avoid"}

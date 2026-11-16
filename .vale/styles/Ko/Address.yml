@@ -1,0 +1,8 @@
+# ko does not address the reader as "당신" or "너" (and their forms).
+extends: existence
+message: "Leave the reader unnamed, as Korean UIs do: not '%s'."
+level: error
+nonword: true
+tokens:
+  - '당신'
+  - '(?:^|(?<=[\s"“(]))(?:너|너는|너의|네가|너를|너에게)(?=[\s,.!?;:"”)]|$)'

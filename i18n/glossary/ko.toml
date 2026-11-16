@@ -1,0 +1,523 @@
+# Chess glossary: Korean (brief §8). Machine-made and unreviewed: the terms of en-US.toml, each
+# from the Korean Wikipedia (`source`) or, when no page names it, `machine = true` with a `note`.
+# `avoid` lists the words the UI must not use for the term. The UI speaks in the formal 합니다 form
+# (requests in -하세요) and does not address the reader as "당신" or "너". The Korean Wikipedia
+# writes opening names as the English ones in Hangul ("프렌치 디펜스"), proper names too ("드래곤
+# 바리에이션"), so no rule keeps an English proper name (`keep_names = false`). Digits stay Western
+# (0-9). Moves keep the English piece letters (K Q R B N), as ko.wikipedia's notation article
+# writes them (#36).
+
+# Proper names are written in Hangul: a glossary rule never keeps an English one (brief §8).
+keep_names = false
+
+[[terms]]
+term = "chess"
+translation = "체스"
+source = "https://ko.wikipedia.org/wiki/체스"
+avoid = ["서양장기"]
+
+[[terms]]
+term = "piece"
+translation = "기물"
+source = "https://ko.wikipedia.org/wiki/체스_기물"
+
+[[terms]]
+term = "king"
+translation = "킹"
+source = "https://ko.wikipedia.org/wiki/킹_(체스)"
+
+[[terms]]
+term = "queen"
+translation = "퀸"
+source = "https://ko.wikipedia.org/wiki/퀸_(체스)"
+
+[[terms]]
+term = "rook"
+translation = "룩"
+source = "https://ko.wikipedia.org/wiki/룩_(체스)"
+
+[[terms]]
+term = "pawn"
+translation = "폰"
+source = "https://ko.wikipedia.org/wiki/폰_(체스)"
+
+[[terms]]
+term = "board"
+translation = "체스판"
+source = "https://ko.wikipedia.org/wiki/체스판"
+
+[[terms]]
+term = "square"
+translation = "칸"
+source = "https://ko.wikipedia.org/wiki/체스"
+note = "The article's \"64칸\"."
+
+[[terms]]
+term = "White"
+translation = "백"
+source = "https://ko.wikipedia.org/wiki/체스"
+
+[[terms]]
+term = "Black"
+translation = "흑"
+source = "https://ko.wikipedia.org/wiki/체스"
+
+[[terms]]
+term = "game"
+translation = "대국"
+source = "https://ko.wikipedia.org/wiki/대국_시계"
+note = "The word of \"대국 시계\"."
+
+[[terms]]
+term = "move"
+translation = "수"
+source = "https://ko.wikipedia.org/wiki/대수기보법"
+note = "The article's \"수를 기록\"."
+
+[[terms]]
+term = "ply"
+translation = "반수"
+machine = true
+note = "No Wikipedia page names it: one side's move."
+
+[[terms]]
+term = "premove"
+translation = "프리무브"
+source = "https://ko.wikipedia.org/wiki/프리무브"
+
+[[terms]]
+term = "take back"
+translation = "무르기"
+machine = true
+note = "No Wikipedia page names it; the everyday word."
+
+[[terms]]
+term = "castling"
+translation = "캐슬링"
+source = "https://ko.wikipedia.org/wiki/캐슬링"
+
+[[terms]]
+term = "check"
+translation = "체크"
+source = "https://ko.wikipedia.org/wiki/체크_(체스)"
+
+[[terms]]
+term = "checkmate"
+translation = "체크메이트"
+source = "https://ko.wikipedia.org/wiki/체크메이트"
+
+[[terms]]
+term = "stalemate"
+translation = "스테일메이트"
+source = "https://ko.wikipedia.org/wiki/스테일메이트"
+
+[[terms]]
+term = "draw"
+translation = "무승부"
+source = "https://ko.wikipedia.org/wiki/화국"
+note = "Wikidata's label; the article's title is \"화국\"."
+
+[[terms]]
+term = "resign"
+translation = "기권"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "insufficient material"
+translation = "기물 부족"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "동형반복"
+source = "https://ko.wikipedia.org/wiki/동형반복"
+
+[[terms]]
+term = "fivefold repetition"
+translation = "5회 동형반복"
+machine = true
+note = "No Wikipedia page names it; the form of \"동형반복\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "50수 규칙"
+source = "https://ko.wikipedia.org/wiki/50수_규칙"
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "75수 규칙"
+machine = true
+note = "No Wikipedia page names it; the form of \"50수 규칙\"."
+
+[[terms]]
+term = "opening"
+translation = "오프닝"
+source = "https://ko.wikipedia.org/wiki/체스_오프닝"
+
+[[terms]]
+term = "variation"
+translation = "바리에이션"
+source = "https://ko.wikipedia.org/wiki/시실리안_디펜스,_드래곤_바리에이션"
+note = "The titles of the ko.wikipedia variation articles."
+
+[[terms]]
+term = "line"
+translation = "라인"
+source = "https://ko.wikipedia.org/wiki/퀸스_갬빗"
+note = "The article's \"주요 라인\"."
+
+[[terms]]
+term = "theory"
+translation = "이론"
+source = "https://ko.wikipedia.org/wiki/체스_이론"
+
+[[terms]]
+term = "book move"
+translation = "정석 수"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "deviation"
+translation = "이탈"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "체스 엔진"
+source = "https://ko.wikipedia.org/wiki/체스_엔진"
+
+[[terms]]
+term = "computer"
+translation = "컴퓨터"
+source = "https://ko.wikipedia.org/wiki/컴퓨터"
+
+[[terms]]
+term = "evaluation"
+translation = "평가"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "analysis"
+translation = "분석"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "묘수"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "최선의 수"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "좋은 수"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "부정확한 수"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "실수"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "놓친 수"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "대실수"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "time control"
+translation = "대국 시간 설정"
+source = "https://ko.wikipedia.org/wiki/대국_시간_설정"
+
+[[terms]]
+term = "chess clock"
+translation = "대국 시계"
+source = "https://ko.wikipedia.org/wiki/대국_시계"
+
+[[terms]]
+term = "increment"
+translation = "추가 시간"
+machine = true
+note = "No Wikipedia page names it: the seconds added after each move."
+
+[[terms]]
+term = "delay"
+translation = "딜레이"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "bullet"
+translation = "불릿"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "blitz"
+translation = "블리츠"
+source = "https://ko.wikipedia.org/wiki/속기_체스"
+
+[[terms]]
+term = "rapid"
+translation = "래피드"
+source = "https://ko.wikipedia.org/wiki/속기_체스"
+
+[[terms]]
+term = "classical"
+translation = "클래시컬"
+machine = true
+note = "No Wikipedia page names it; transliterated."
+
+[[terms]]
+term = "scoresheet"
+translation = "기보지"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "arbiter"
+translation = "심판"
+source = "https://ko.wikipedia.org/wiki/체스_심판"
+
+[[terms]]
+term = "rating"
+translation = "레이팅"
+source = "https://ko.wikipedia.org/wiki/엘로_평점_시스템"
+
+[[terms]]
+term = "grandmaster"
+translation = "그랜드마스터"
+source = "https://ko.wikipedia.org/wiki/그랜드마스터_(체스)"
+
+[[terms]]
+term = "International Master"
+translation = "인터내셔널 마스터"
+machine = true
+note = "No Wikipedia page names it; Wikidata's label is spelled \"인터네셔널 마스터\"."
+
+[[terms]]
+term = "Woman International Master"
+translation = "여자 인터내셔널 마스터"
+machine = true
+note = "No Wikipedia page names it; the form of \"인터내셔널 마스터\"."
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "여자 FIDE 마스터"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Chess960"
+translation = "체스960"
+source = "https://ko.wikipedia.org/wiki/체스960"
+
+[[terms]]
+term = "correspondence chess"
+translation = "우편 체스"
+source = "https://ko.wikipedia.org/wiki/우편_체스"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "체스 올림피아드"
+source = "https://ko.wikipedia.org/wiki/체스_올림피아드"
+
+[[terms]]
+term = "touch-move rule"
+translation = "터치무브 규칙"
+source = "https://ko.wikipedia.org/wiki/터치무브_규칙"
+
+[[terms]]
+term = "capture"
+translation = "잡기"
+source = "https://ko.wikipedia.org/wiki/대수기보법"
+
+[[terms]]
+term = "tactics"
+translation = "전술"
+source = "https://ko.wikipedia.org/wiki/체스_전술"
+
+[[terms]]
+term = "strategy"
+translation = "전략"
+source = "https://ko.wikipedia.org/wiki/체스_전략"
+
+[[terms]]
+term = "sacrifice"
+translation = "희생"
+source = "https://ko.wikipedia.org/wiki/희생_(체스)"
+
+[[terms]]
+term = "trap"
+translation = "함정"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "gambit"
+translation = "갬빗"
+source = "https://ko.wikipedia.org/wiki/갬빗"
+
+[[terms]]
+term = "King's Pawn"
+translation = "킹스 폰"
+source = "https://ko.wikipedia.org/wiki/킹스_폰_오프닝"
+note = "The article's \"킹스 폰 오프닝\"."
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "퀸스 폰"
+source = "https://ko.wikipedia.org/wiki/퀸스_폰_오프닝"
+note = "The article's \"퀸스 폰 오프닝\"."
+
+[[terms]]
+term = "flank"
+translation = "플랭크"
+source = "https://ko.wikipedia.org/wiki/플랭크_오프닝"
+note = "The article's \"플랭크 오프닝\"."
+
+[[terms]]
+term = "starting position"
+translation = "초기 배치"
+source = "https://ko.wikipedia.org/wiki/체스"
+
+[[terms]]
+term = "chess prodigy"
+translation = "체스 신동"
+source = "https://ko.wikipedia.org/wiki/체스_신동"
+
+[[terms]]
+term = "{name} Variation"
+translation = "{name} 바리에이션"
+source = "https://ko.wikipedia.org/wiki/시실리안_디펜스,_드래곤_바리에이션"
+note = "The article's \"드래곤 바리에이션\". For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Defense"
+translation = "{name} 디펜스"
+source = "https://ko.wikipedia.org/wiki/프렌치_디펜스"
+note = "The article's \"프렌치 디펜스\". For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "{name} 갬빗"
+source = "https://ko.wikipedia.org/wiki/킹스_갬빗"
+note = "The article's \"킹스 갬빗\". For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "{name} 카운터갬빗"
+source = "https://ko.wikipedia.org/wiki/퀸스_갬빗"
+note = "The article's \"알빈 카운터갬빗\". For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Attack"
+translation = "{name} 어택"
+source = "https://ko.wikipedia.org/wiki/킹스_인디언_어택"
+note = "The article's \"킹스 인디언 어택\". For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "{name} 카운터어택"
+machine = true
+note = "No Wikipedia page names it; the form of \"어택\". For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Opening"
+translation = "{name} 오프닝"
+source = "https://ko.wikipedia.org/wiki/버즈_오프닝"
+note = "The article's \"버즈 오프닝\". For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} System"
+translation = "{name} 시스템"
+source = "https://ko.wikipedia.org/wiki/런던_시스템"
+note = "The article's \"런던 시스템\". For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Line"
+translation = "{name} 라인"
+machine = true
+note = "No Wikipedia page names it; transliterated. For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Formation"
+translation = "{name} 포메이션"
+machine = true
+note = "No Wikipedia page names it; transliterated. For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Trap"
+translation = "{name} 트랩"
+machine = true
+note = "No Wikipedia page names it; transliterated. For opening names, segment by segment (brief §8); {name} is the proper name in Hangul (\"나이도프\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "Main Line"
+translation = "메인 라인"
+machine = true
+note = "No Wikipedia page names it; transliterated. For opening names, segment by segment (brief §8)."
+
+# Piece letters for the "local letters" notation (#53): the English ones, so "local
+# letters" shows what "English letters" does. PGN and stored moves stay English.
+
+[[pieces]]
+piece = "K"
+letter = "K"
+source = "https://ko.wikipedia.org/wiki/대수기보법"
+note = "ko.wikipedia's notation article gives the English letters: \"킹에 K, 퀸에 Q, 룩에 R, 비숍에 B, 나이트에 N\"."
+
+[[pieces]]
+piece = "Q"
+letter = "Q"
+source = "https://ko.wikipedia.org/wiki/대수기보법"
+note = "ko.wikipedia's notation article gives the English letters: \"킹에 K, 퀸에 Q, 룩에 R, 비숍에 B, 나이트에 N\"."
+
+[[pieces]]
+piece = "R"
+letter = "R"
+source = "https://ko.wikipedia.org/wiki/대수기보법"
+note = "ko.wikipedia's notation article gives the English letters: \"킹에 K, 퀸에 Q, 룩에 R, 비숍에 B, 나이트에 N\"."
+
+[[pieces]]
+piece = "B"
+letter = "B"
+source = "https://ko.wikipedia.org/wiki/대수기보법"
+note = "ko.wikipedia's notation article gives the English letters: \"킹에 K, 퀸에 Q, 룩에 R, 비숍에 B, 나이트에 N\"."
+
+[[pieces]]
+piece = "N"
+letter = "N"
+source = "https://ko.wikipedia.org/wiki/대수기보법"
+note = "ko.wikipedia's notation article gives the English letters: \"킹에 K, 퀸에 Q, 룩에 R, 비숍에 B, 나이트에 N\"."
+
+[[pieces]]
+piece = "P"
+letter = "P"
+source = "https://ko.wikipedia.org/wiki/대수기보법"
+note = "ko.wikipedia's notation article gives the English letters: \"킹에 K, 퀸에 Q, 룩에 R, 비숍에 B, 나이트에 N\". SAN never writes a pawn letter."

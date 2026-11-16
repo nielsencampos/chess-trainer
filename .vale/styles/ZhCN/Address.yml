@@ -1,0 +1,7 @@
+# zh-CN speaks to the reader as "你", never "您".
+extends: existence
+message: "Use '你' as the form of address, not '%s'."
+level: error
+nonword: true
+tokens:
+  - '您'

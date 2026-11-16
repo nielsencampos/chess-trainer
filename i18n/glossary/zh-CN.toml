@@ -1,0 +1,536 @@
+# Chess glossary: Simplified Chinese, China (brief §8). Machine-made and unreviewed: the terms of
+# en-US.toml, each from the Chinese Wikipedia in its zh-cn variant (`source`) or, when no page
+# names it, `machine = true` with a `note`. `avoid` lists the words the UI must not use for the
+# term. The reader is addressed as "你". The Chinese Wikipedia translates opening names ("法兰西
+# 防御", "王翼弃兵") and writes proper names in Chinese characters ("纳依道夫变着"), so no rule keeps
+# an English proper name (`keep_names = false`). Digits stay Western (0-9). Moves keep the
+# English piece letters (K Q R B N), as zh.wikipedia's notation article writes them (#36).
+
+# Proper names are written in Chinese characters: a glossary rule never keeps an English one.
+keep_names = false
+
+[[terms]]
+term = "chess"
+translation = "国际象棋"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋"
+avoid = ["西洋棋"]
+
+[[terms]]
+term = "piece"
+translation = "棋子"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋棋子"
+
+[[terms]]
+term = "king"
+translation = "王"
+source = "https://zh.wikipedia.org/zh-cn/王_(国际象棋)"
+avoid = ["国王"]
+
+[[terms]]
+term = "queen"
+translation = "后"
+source = "https://zh.wikipedia.org/zh-cn/后_(国际象棋)"
+avoid = ["皇后"]
+
+[[terms]]
+term = "rook"
+translation = "车"
+source = "https://zh.wikipedia.org/zh-cn/车_(国际象棋)"
+avoid = ["城堡"]
+
+[[terms]]
+term = "pawn"
+translation = "兵"
+source = "https://zh.wikipedia.org/zh-cn/兵_(国际象棋)"
+
+[[terms]]
+term = "board"
+translation = "棋盘"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋"
+
+[[terms]]
+term = "square"
+translation = "格"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋"
+note = "The article's \"64格\"."
+
+[[terms]]
+term = "White"
+translation = "白方"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋"
+
+[[terms]]
+term = "Black"
+translation = "黑方"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋"
+
+[[terms]]
+term = "game"
+translation = "对局"
+source = "https://zh.wikipedia.org/zh-cn/欠行"
+
+[[terms]]
+term = "move"
+translation = "着"
+source = "https://zh.wikipedia.org/zh-cn/纳依道夫变着"
+note = "One side's move, as in \"变着\"; a count of moves is \"步\" (\"50步规则\")."
+
+[[terms]]
+term = "ply"
+translation = "半回合"
+machine = true
+note = "No Wikipedia page names it: one side's move."
+
+[[terms]]
+term = "premove"
+translation = "预走"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "take back"
+translation = "悔棋"
+machine = true
+note = "No Wikipedia page names it; the everyday word."
+
+[[terms]]
+term = "castling"
+translation = "王车易位"
+source = "https://zh.wikipedia.org/zh-cn/王车易位"
+
+[[terms]]
+term = "check"
+translation = "将军"
+source = "https://zh.wikipedia.org/zh-cn/将军_(国际象棋)"
+
+[[terms]]
+term = "checkmate"
+translation = "将死"
+source = "https://zh.wikipedia.org/zh-cn/将死"
+
+[[terms]]
+term = "stalemate"
+translation = "逼和"
+source = "https://zh.wikipedia.org/zh-cn/欠行"
+note = "The article's name for it in chess; \"欠行\", its title, is the general term."
+
+[[terms]]
+term = "draw"
+translation = "和棋"
+source = "https://zh.wikipedia.org/zh-cn/欠行"
+note = "The article's word for the result."
+
+[[terms]]
+term = "resign"
+translation = "认输"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "insufficient material"
+translation = "子力不足"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "threefold repetition"
+translation = "三次重复"
+source = "https://zh.wikipedia.org/zh-cn/三次重复"
+
+[[terms]]
+term = "fivefold repetition"
+translation = "五次重复"
+machine = true
+note = "No Wikipedia page names it; the form of \"三次重复\"."
+
+[[terms]]
+term = "fifty-move rule"
+translation = "50步规则"
+source = "https://zh.wikipedia.org/zh-cn/50步规则"
+
+[[terms]]
+term = "seventy-five-move rule"
+translation = "75步规则"
+machine = true
+note = "No Wikipedia page names it; the form of \"50步规则\"."
+
+[[terms]]
+term = "opening"
+translation = "开局"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋开局"
+
+[[terms]]
+term = "variation"
+translation = "变着"
+source = "https://zh.wikipedia.org/zh-cn/纳依道夫变着"
+note = "The titles of the zh.wikipedia variation articles."
+avoid = ["变例"]
+
+[[terms]]
+term = "line"
+translation = "变化"
+machine = true
+note = "No Wikipedia page names it: a line of the book."
+
+[[terms]]
+term = "theory"
+translation = "理论"
+machine = true
+note = "No Wikipedia page names it; \"开局理论\" is opening theory."
+
+[[terms]]
+term = "book move"
+translation = "谱着"
+machine = true
+note = "No Wikipedia page names it: a move of the book."
+
+[[terms]]
+term = "deviation"
+translation = "偏离"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess engine"
+translation = "国际象棋引擎"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "computer"
+translation = "电脑"
+source = "https://zh.wikipedia.org/zh-cn/电子计算机"
+note = "The everyday word rather than the title \"电子计算机\"."
+
+[[terms]]
+term = "evaluation"
+translation = "评估"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "analysis"
+translation = "分析"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "brilliant move"
+translation = "妙着"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "best move"
+translation = "最佳着法"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "great move"
+translation = "好棋"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "inaccuracy"
+translation = "欠准确"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "mistake"
+translation = "错着"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "miss"
+translation = "错失"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "blunder"
+translation = "漏着"
+machine = true
+note = "A move label in the style of Chess.com's; no Wikipedia page names it."
+
+[[terms]]
+term = "time control"
+translation = "用时规则"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess clock"
+translation = "棋钟"
+source = "https://zh.wikipedia.org/zh-cn/棋鐘"
+
+[[terms]]
+term = "increment"
+translation = "加秒"
+machine = true
+note = "No Wikipedia page names it: the seconds added after each move."
+
+[[terms]]
+term = "delay"
+translation = "延时"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "bullet"
+translation = "超快棋"
+machine = true
+note = "No Wikipedia page names it; the form of \"快棋\"."
+
+[[terms]]
+term = "blitz"
+translation = "闪电棋"
+source = "https://zh.wikipedia.org/zh-cn/快棋_(国际象棋)"
+
+[[terms]]
+term = "rapid"
+translation = "快棋"
+source = "https://zh.wikipedia.org/zh-cn/快棋_(国际象棋)"
+
+[[terms]]
+term = "classical"
+translation = "慢棋"
+machine = true
+note = "No Wikipedia page names it; the opposite of \"快棋\"."
+
+[[terms]]
+term = "scoresheet"
+translation = "记录纸"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "arbiter"
+translation = "裁判"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "rating"
+translation = "等级分"
+source = "https://zh.wikipedia.org/zh-cn/等级分"
+
+[[terms]]
+term = "grandmaster"
+translation = "特级大师"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋特级大师"
+
+[[terms]]
+term = "International Master"
+translation = "国际大师"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Woman International Master"
+translation = "女子国际大师"
+machine = true
+note = "No Wikipedia page names it; the form of \"国际大师\"."
+
+[[terms]]
+term = "Woman FIDE Master"
+translation = "女子棋联大师"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "Chess960"
+translation = "Chess960"
+machine = true
+note = "Chess960 is the mode's name in the app; zh.wikipedia's article is \"菲舍尔任意制象棋\"."
+
+[[terms]]
+term = "correspondence chess"
+translation = "通讯棋"
+source = "https://zh.wikipedia.org/zh-cn/通讯棋"
+
+[[terms]]
+term = "Chess Olympiad"
+translation = "国际象棋奥林匹克"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋奥林匹克"
+
+[[terms]]
+term = "touch-move rule"
+translation = "摸子走子"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "capture"
+translation = "吃子"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋"
+
+[[terms]]
+term = "tactics"
+translation = "战术"
+source = "https://zh.wikipedia.org/zh-cn/国际象棋战术"
+
+[[terms]]
+term = "strategy"
+translation = "策略"
+source = "https://zh.wikipedia.org/zh-cn/策略_(国际象棋)"
+
+[[terms]]
+term = "sacrifice"
+translation = "弃子"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "trap"
+translation = "陷阱"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "gambit"
+translation = "弃兵"
+source = "https://zh.wikipedia.org/zh-cn/弃兵"
+
+[[terms]]
+term = "King's Pawn"
+translation = "王兵"
+source = "https://zh.wikipedia.org/zh-cn/王兵开局"
+note = "The article's \"王兵开局\"."
+
+[[terms]]
+term = "Queen's Pawn"
+translation = "后兵"
+source = "https://zh.wikipedia.org/zh-cn/后兵開局"
+note = "The article's \"后兵开局\"."
+
+[[terms]]
+term = "flank"
+translation = "侧翼"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "starting position"
+translation = "初始局面"
+machine = true
+note = "No Wikipedia page names it."
+
+[[terms]]
+term = "chess prodigy"
+translation = "国际象棋神童"
+source = "https://zh.wikipedia.org/zh-cn/神童"
+
+[[terms]]
+term = "{name} Variation"
+translation = "{name}变着"
+source = "https://zh.wikipedia.org/zh-cn/纳依道夫变着"
+note = "The article's \"纳依道夫变着\". For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Defense"
+translation = "{name}防御"
+source = "https://zh.wikipedia.org/zh-cn/法兰西防御"
+note = "The article's \"法兰西防御\". For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Gambit"
+translation = "{name}弃兵"
+source = "https://zh.wikipedia.org/zh-cn/王翼弃兵"
+note = "The article's \"王翼弃兵\". For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Countergambit"
+translation = "{name}反弃兵"
+machine = true
+note = "No Wikipedia page names it; the form of \"弃兵\". For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Attack"
+translation = "{name}进攻"
+source = "https://zh.wikipedia.org/zh-cn/王翼印度进攻"
+note = "The article's \"王翼印度进攻\". For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Counterattack"
+translation = "{name}反击"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Opening"
+translation = "{name}开局"
+source = "https://zh.wikipedia.org/zh-cn/伯德开局"
+note = "The article's \"伯德开局\". For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} System"
+translation = "{name}系统"
+source = "https://zh.wikipedia.org/zh-cn/伦敦系统"
+note = "The article's \"伦敦系统\". For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Line"
+translation = "{name}变化"
+machine = true
+note = "No Wikipedia page names it; the form of \"line\". For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Formation"
+translation = "{name}阵型"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "{name} Trap"
+translation = "{name}陷阱"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8); {name} is the proper name in Chinese characters (\"纳依道夫\"). keep_names = false, so no rule builds such a name: machine translation follows this form."
+
+[[terms]]
+term = "Main Line"
+translation = "主线"
+machine = true
+note = "No Wikipedia page names it. For opening names, segment by segment (brief §8)."
+
+# Piece letters for the "local letters" notation (#53): the English ones, so "local
+# letters" shows what "English letters" does. PGN and stored moves stay English.
+
+[[pieces]]
+piece = "K"
+letter = "K"
+source = "https://zh.wikipedia.org/zh-cn/代数记谱法"
+note = "zh.wikipedia's notation article gives the English letters: \"国际流行的是英文对应单词的首字母\"."
+
+[[pieces]]
+piece = "Q"
+letter = "Q"
+source = "https://zh.wikipedia.org/zh-cn/代数记谱法"
+note = "zh.wikipedia's notation article gives the English letters: \"国际流行的是英文对应单词的首字母\"."
+
+[[pieces]]
+piece = "R"
+letter = "R"
+source = "https://zh.wikipedia.org/zh-cn/代数记谱法"
+note = "zh.wikipedia's notation article gives the English letters: \"国际流行的是英文对应单词的首字母\"."
+
+[[pieces]]
+piece = "B"
+letter = "B"
+source = "https://zh.wikipedia.org/zh-cn/代数记谱法"
+note = "zh.wikipedia's notation article gives the English letters: \"国际流行的是英文对应单词的首字母\"."
+
+[[pieces]]
+piece = "N"
+letter = "N"
+source = "https://zh.wikipedia.org/zh-cn/代数记谱法"
+note = "zh.wikipedia's notation article gives the English letters: \"国际流行的是英文对应单词的首字母\"."
+
+[[pieces]]
+piece = "P"
+letter = "P"
+source = "https://zh.wikipedia.org/zh-cn/代数记谱法"
+note = "zh.wikipedia's notation article gives the English letters: \"国际流行的是英文对应单词的首字母\". SAN never writes a pawn letter."
