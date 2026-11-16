@@ -85,7 +85,7 @@ def _names(value: object, where: str) -> dict[str, str]:
         dict[str, str]: The names by locale.
 
     Raises:
-        BookError: It is not an object with a non-empty `en`.
+        BookError: It is not an object with a non-empty `en-US`.
     """
     if not isinstance(value, dict) or not value.get(DEFAULT_LOCALE):
         raise BookError(f"{where}: names must include a non-empty {DEFAULT_LOCALE!r}")

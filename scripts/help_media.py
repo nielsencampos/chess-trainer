@@ -20,7 +20,7 @@ from PIL import Image
 from playwright.sync_api import Page, sync_playwright
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from app.locales import load_locales
+from scripts.help_docs import LOCALES  # every UI language, in the registry's order
 
 VIEWPORT = {"width": 1280, "height": 720}
 WIDTH = 960  # Largest output width; the help column is narrower, so this stays sharp.
@@ -28,9 +28,6 @@ SIDEBAR = 380  # The menu bar's default width, cropped out of the pictures of th
 QUALITY = 80
 LINE = "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. O-O O-O 6. d3"
 OUT = Path(__file__).resolve().parent.parent / "web" / "help"
-LOCALES = [  # Every UI language, in the registry's order.
-    code for code in load_locales() if (OUT.parent / "i18n" / f"{code}.json").is_file()
-]
 
 
 def fetch_json(url: str, method: str = "GET") -> dict:
@@ -243,7 +240,7 @@ def capture_locale(new_page: Callable[[dict], Page], base_url: str, locale: str)
         page.locator("#review-next").click()
     page.wait_for_timeout(2500)
     save(out / "review.webp", [frame(page)])
-    page.close()
+    page.context.close()  # the page and its context, opened by new_page
 
 
 def main() -> None:

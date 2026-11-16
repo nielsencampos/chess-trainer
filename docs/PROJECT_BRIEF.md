@@ -178,7 +178,7 @@ File format:
 - `moves` is a flat list of SAN moves. There are no side variations: an alternative is another line, so each one has the same chance in the draw.
 
 **Lichess catalog** (`lichess-org/chess-openings`, CC0), pinned in `catalog/`, is **reference only**. The bot does not play from it. It is used to:
-1. Seed `openings/` once, with `catalog/generate_openings.py`.
+1. Seed `openings/` once (done on 2026-11-07; the seed script was removed in #59, and `catalog/generate_openings.py` keeps only the line id rule and the JSON layout of the opening files).
 2. Validate `eco` and `opening`, matching by position (EPD), because catalog names repeat and lines transpose (`catalog/validate.py`).
 3. Name any position: during and after the game, show the name of the last named position reached, even outside the selected lines.
 

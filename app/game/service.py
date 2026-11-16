@@ -185,6 +185,7 @@ class GameService:
 
         Raises:
             InvalidSetupError: The setup is invalid.
+            EngineUnavailableError: The bot plays first and the engine cannot answer.
         """
         if chess960_position is not None and (from_game is not None or variant_ids):
             raise InvalidSetupError("a Chess960 game has no opening lines")

@@ -779,7 +779,7 @@ def fill_names(
     its author kept another name than Wikipedia's, and gives Wikipedia's names its casing.
 
     Args:
-        locale (Locale): The locale; not `en`, which is the source of every name.
+        locale (Locale): The locale; not `en-US`, which is the source of every name.
         cache (WikipediaCache): The lookups.
         openings_dir (Path): The `openings/` folder.
         glossary_dir (Path): The `i18n/glossary` folder; a locale without a glossary has no
@@ -794,7 +794,7 @@ def fill_names(
         Report: What was done.
 
     Raises:
-        ValueError: The locale is `en`.
+        ValueError: The locale is `en-US`.
         OfflineError: A lookup is not in the cache and the cache has no remote.
     """
     if locale.code == DEFAULT_LOCALE:
@@ -942,7 +942,7 @@ def main(argv: list[str] | None = None) -> int:
         int: The exit code: 0, or 1 when a lookup is missing offline.
     """
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("locale", help="a locale of i18n/locales.toml, not en")
+    parser.add_argument("locale", help="a locale of i18n/locales.toml, not en-US")
     parser.add_argument(
         "--overwrite", action="store_true", help="replace sourced and reviewed names"
     )

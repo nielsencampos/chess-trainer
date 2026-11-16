@@ -19,7 +19,7 @@ if [[ ! -f "$DIR/languagetool-server.jar" ]]; then
   mkdir -p "$ROOT/.cache"
   zip="$ROOT/.cache/LanguageTool-$VERSION.zip"
   curl -fsSL -o "$zip" "https://languagetool.org/download/LanguageTool-$VERSION.zip"
-  echo "$SHA256  $zip" | sha256sum -c --quiet
+  echo "$SHA256  $zip" | shasum -a 256 -c --quiet  # shasum: on Linux and macOS alike
   unzip -q "$zip" -d "$ROOT/.cache"
   rm "$zip"
 fi
