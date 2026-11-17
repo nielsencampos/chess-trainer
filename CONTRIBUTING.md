@@ -88,6 +88,10 @@ code, commits and docs stay in English.
 ## Pull requests
 
 Keep them small, one subject each, with small commits. Describe what changed and how to test it.
+
+While you work on an issue, keep it current: tick each checkbox once its item is pushed (edit only
+that line), note an item that moves to another issue and add it there, comment the author's
+decisions and link each pull request, and tick the issue in its epic once it closes.
 By contributing, you agree that your work is licensed under GPL-3.0, like the project.
 
 ## Code of Conduct

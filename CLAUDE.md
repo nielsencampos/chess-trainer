@@ -65,6 +65,9 @@ the smallest supported screen, and mobile is out of scope.
 - JS: ES modules, and JSDoc (description, `@param`, `@returns`) on every function, method and class.
 - Small commits. One phase at a time; at the end of each, report what changed, how to test it
   and what was left for later.
+- Keep the issue current while working on it: tick each checkbox once its item is pushed (edit
+  only that line), note an item that moves to another issue and add it there, comment the
+  author's decisions and link each PR, and tick the issue in its epic once it closes.
 
 ## Book rules
 
