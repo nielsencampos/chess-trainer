@@ -60,7 +60,7 @@ jobs:
       VERSION: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || 'dev' }}
     steps:
       - uses: actions/checkout@v7
-      - uses: astral-sh/setup-uv@v10.3.3
+      - uses: astral-sh/setup-uv@v10.4.0
       - name: The tag matches the app's version
         if: env.VERSION != 'dev'
         run: scripts/tag_matches_version.sh "$VERSION"
