@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
-      - uses: astral-sh/setup-uv@v10.3.3
+      - uses: astral-sh/setup-uv@v10.4.0
       - run: uv sync --frozen
       - name: Lint
         run: |
@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
-      - uses: astral-sh/setup-uv@v10.3.3
+      - uses: astral-sh/setup-uv@v10.4.0
       - run: uv sync --frozen
       - uses: actions/setup-java@v6
         with:
@@ -77,7 +77,7 @@ jobs:
             -t chess-trainer:local .
       - name: Smoke test
         run: scripts/smoke.sh chess-trainer:local
-      - uses: astral-sh/setup-uv@v10.3.3
+      - uses: astral-sh/setup-uv@v10.4.0
       - name: Engine tests against the real binary
         run: |
           uv sync --frozen
